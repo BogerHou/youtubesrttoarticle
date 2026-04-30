@@ -1,0 +1,5138 @@
+1
+00:00:00,080 --> 00:00:02,960
+The PM job can become a little too internal,  
+
+2
+00:00:02,960 --> 00:00:07,160
+influencing my stakeholders and getting 
+alignment and all these things. But if you  
+
+3
+00:00:07,160 --> 00:00:10,840
+can't sell or support your own product, 
+I don't trust you to build the product.
+
+4
+00:00:10,840 --> 00:00:13,240
+You think every PM should keep a decision log?
+
+5
+00:00:13,240 --> 00:00:17,320
+We all talk about product sense. To me, it's 
+just a fancy way of saying you can make good  
+
+6
+00:00:17,320 --> 00:00:23,480
+decisions with insufficient data. PMs need 
+as many reps as possible in making decisions,  
+
+7
+00:00:23,480 --> 00:00:28,280
+documenting the rationale behind those decisions, 
+and then crucially seeing the outcome of them.
+
+8
+00:00:28,280 --> 00:00:31,800
+We have a lot of interesting approaches to 
+hiring, including this idea of a unsell email.
+
+9
+00:00:31,800 --> 00:00:36,840
+When you get to offer stage, I send an email 
+and I say all the terrible things that are  
+
+10
+00:00:36,840 --> 00:00:41,000
+probably going to reinforce their fears. 
+If you can tell them that upfront and they  
+
+11
+00:00:41,000 --> 00:00:45,800
+can read that whole email and still be equally 
+excited to join you, find yourself a A+ hire.
+
+12
+00:00:45,800 --> 00:00:49,880
+I'm curious if you found any 
+interesting uses of AI in your work.
+
+13
+00:00:49,880 --> 00:01:00,160
+We are not even beneath the dust on the surface 
+when it comes to what's going to change.
+
+14
+00:01:00,160 --> 00:01:05,480
+Today, my guest is Kevin Yien. Kevin leads product 
+for merchant experiences at Stripe. Before that,  
+
+15
+00:01:05,480 --> 00:01:09,200
+he built the restaurant business 
+and the ecosystem teams at Square,  
+
+16
+00:01:09,200 --> 00:01:13,560
+and most recently was head of product and 
+design at Mutiny. He also makes ice cream and,  
+
+17
+00:01:13,560 --> 00:01:17,440
+as you'll hear in there conversation, was a pretty 
+competitive eater for some part of his life. 
+
+18
+00:01:17,440 --> 00:01:22,480
+In our conversation, Kevin shares a ton of 
+unique and insightful perspectives on how to  
+
+19
+00:01:22,480 --> 00:01:26,640
+be a successful product manager, including 
+how to get into product management, how to  
+
+20
+00:01:26,640 --> 00:01:30,800
+improve your relationship with your engineers 
+and designers, bunch of advice on hiring, why  
+
+21
+00:01:30,800 --> 00:01:36,080
+you should keep a decision log, how to automate 
+your customer research, plus a ton of really  
+
+22
+00:01:36,080 --> 00:01:42,280
+powerful stories around failure and AI and career.
+This episode is for anyone looking to become a  
+
+23
+00:01:42,280 --> 00:01:47,280
+better leader, thinker, and builder of products. 
+If you enjoy this podcast, don't forget to  
+
+24
+00:01:47,280 --> 00:01:51,240
+subscribe and follow in your favorite podcasting 
+app or YouTube. It's the best way to avoid  
+
+25
+00:01:51,240 --> 00:01:59,840
+missing feature episodes, and it helps the podcast 
+tremendously. With that, I bring you Kevin Yien. 
+
+26
+00:02:00,600 --> 00:02:03,920
+Kevin, thank you so much for being 
+here and welcome to the podcast.
+
+27
+00:02:03,920 --> 00:02:05,760
+Thanks, Lenny. I am humbled to be here.
+
+28
+00:02:05,760 --> 00:02:08,640
+I've been a big fan of yours from afar. 
+I've been following you on Twitter for a  
+
+29
+00:02:08,640 --> 00:02:11,200
+long time. You have a very distinct 
+profile photo that I feel like you  
+
+30
+00:02:11,200 --> 00:02:15,680
+maybe haven't changed for a long time. 
+How long have you had this profile?
+
+31
+00:02:15,680 --> 00:02:24,600
+Oh gosh, probably 2011 or 2012. The story 
+behind that is I was inspired actually by  
+
+32
+00:02:24,600 --> 00:02:29,960
+Chris Dixon's avatar at the time and I 
+wanted something really similar to it,  
+
+33
+00:02:29,960 --> 00:02:34,960
+but I couldn't figure out how to. Luckily, I 
+was dating a designer at the time, and so she  
+
+34
+00:02:34,960 --> 00:02:40,200
+made me that sort of custom pick that has been 
+my profile since then, and she's now my wife.
+
+35
+00:02:40,200 --> 00:02:43,560
+Oh my god. Funny enough, I had a 
+startup idea once where it's like  
+
+36
+00:02:43,560 --> 00:02:47,480
+a profile picture as a service business 
+where there's these three tiers where  
+
+37
+00:02:47,480 --> 00:02:49,920
+it's like one has automated, 
+one has someone illustrates,  
+
+38
+00:02:49,920 --> 00:02:55,480
+and one is a professional photo. It feels 
+like everyone profile photos are so important.
+
+39
+00:02:55,480 --> 00:02:55,760
+True.
+
+40
+00:02:55,760 --> 00:02:59,000
+But I never follow through. 
+Probably not a good business anyway.
+
+41
+00:02:59,000 --> 00:03:00,400
+Yeah, but a good idea, a good tool.
+
+42
+00:03:00,400 --> 00:03:03,040
+Good idea. Thank you. Thank 
+you for making me feel better. 
+
+43
+00:03:03,040 --> 00:03:06,200
+I've been looking forward to this 
+conversation for a long time. As I said,  
+
+44
+00:03:06,200 --> 00:03:10,320
+I've been a big fan of yours for a long time. 
+Something that I've noticed about you is you  
+
+45
+00:03:10,320 --> 00:03:14,400
+have a lot of really unique perspectives on 
+a lot of different things, and in particular,  
+
+46
+00:03:14,400 --> 00:03:17,800
+product management, how to be successful as 
+a PM, how to get into product management,  
+
+47
+00:03:17,800 --> 00:03:21,160
+things like that. So I thought it'd be fun 
+to start there talking through some of these  
+
+48
+00:03:21,160 --> 00:03:25,120
+things that I've heard you talk about and then 
+get into some very tactical stuff that you found  
+
+49
+00:03:25,120 --> 00:03:31,280
+to be useful in your product management career.
+The first thing that I've heard you talk about  
+
+50
+00:03:31,280 --> 00:03:36,720
+is that you discourage people from going 
+straight into product management. If they  
+
+51
+00:03:36,720 --> 00:03:40,920
+want to become product managers, you encourage 
+them to start somewhere else first. Why is that?  
+
+52
+00:03:40,920 --> 00:03:45,440
+Where do you think people should start? 
+Talk about this insight that you've had.
+
+53
+00:03:45,440 --> 00:03:52,600
+Yeah, so follow me on the detour to science 
+world temporarily. If we all remember high  
+
+54
+00:03:52,600 --> 00:03:59,240
+school science classes, there was this concept 
+of potential and kinetic energy. There's so many  
+
+55
+00:03:59,240 --> 00:04:04,800
+different definitions for product management, but 
+the one that I have come to myself that I really  
+
+56
+00:04:04,800 --> 00:04:10,880
+like is, when you are building a product, 
+you have this team, engineers, designers,  
+
+57
+00:04:10,880 --> 00:04:16,880
+so much potential. The purpose of product 
+management, not the person, but the practice,  
+
+58
+00:04:16,880 --> 00:04:22,880
+is to convert that potential into as much 
+realized value for someone as possible,  
+
+59
+00:04:22,880 --> 00:04:29,800
+right? Minimum loss. When you're just getting 
+started with a new product, the people that should  
+
+60
+00:04:29,800 --> 00:04:33,880
+be doing that are the people who are building 
+it. That's an engineer, that's a designer,  
+
+61
+00:04:33,880 --> 00:04:40,120
+that's a sales person or a support person. They're 
+the front line of the smallest loop possible  
+
+62
+00:04:40,120 --> 00:04:46,800
+to get something going, and it's through those 
+practices that I think you're able to get the most  
+
+63
+00:04:46,800 --> 00:04:51,680
+exposure to what it takes to build a good product.
+And then from there, that's your foundation.  
+
+64
+00:04:51,680 --> 00:04:55,840
+That's the unique perspective that you 
+bring and allows you then to actually  
+
+65
+00:04:55,840 --> 00:05:01,800
+take on a "role" of product manager in a good, 
+unique, insightful way. That's sort of like the  
+
+66
+00:05:01,800 --> 00:05:06,320
+foundation. There's a lot more to unpack behind 
+that comparison, but that's where it comes from.
+
+67
+00:05:06,320 --> 00:05:10,360
+I love that. I'd love to unpack it further. 
+
+68
+00:05:10,360 --> 00:05:15,440
+This episode is brought to you by 
+BuildBetter.AI. Back in 2020 when AI  
+
+69
+00:05:15,440 --> 00:05:21,240
+was just a toy, BuildBetter bet that it could 
+cut down on a product teams' operational BS.  
+
+70
+00:05:21,240 --> 00:05:28,160
+Fast-forward to today, 23,000 product teams 
+use purpose-built AI in BuildBetter every day. 
+
+71
+00:05:28,160 --> 00:05:33,600
+First, BuildBetter uses custom models to turn 
+unstructured data like product and sales calls,  
+
+72
+00:05:33,600 --> 00:05:38,920
+support tickets, internal communications, and 
+surveys into structured insights. It's like having  
+
+73
+00:05:38,920 --> 00:05:44,520
+a dedicated data science team. Second, BuildBetter 
+runs those structured insights into workflows,  
+
+74
+00:05:44,520 --> 00:05:49,880
+like weekly reports about customer issues, 
+context-aware PRDs, and user research document  
+
+75
+00:05:49,880 --> 00:05:54,120
+with citations. It even turns standups 
+into action items that automatically get  
+
+76
+00:05:54,120 --> 00:05:59,080
+assigned and shared into your tools. Plus, 
+with unlimited seat pricing on all plans,  
+
+77
+00:05:59,080 --> 00:06:05,200
+BuildBetter ensures everyone at your company has 
+access to this knowledge. Truly, no data silos. 
+
+78
+00:06:05,200 --> 00:06:10,360
+In a world of AI demos over promising and 
+under delivering, see why BuildBetter has a  
+
+79
+00:06:10,360 --> 00:06:17,000
+93% subscription retention. Get a personalized 
+demo and use code LENNY for $100 credit if  
+
+80
+00:06:17,000 --> 00:06:25,120
+you sign up now at buildbetter.ai/lenny.
+I'm excited to chat with Christina Gilbert,  
+
+81
+00:06:25,120 --> 00:06:29,960
+the founder of OneSchema, one of our 
+longtime podcast sponsors. Hi, Christina.
+
+82
+00:06:29,960 --> 00:06:31,960
+Yes, thank you for having me on, Lenny.
+
+83
+00:06:31,960 --> 00:06:37,600
+What is the latest with OneSchema? I know you now 
+work with some of my favorite companies like Ramp,  
+
+84
+00:06:37,600 --> 00:06:41,640
+Vanta, Scale, and Watershed. I heard 
+that you just launched a new product  
+
+85
+00:06:41,640 --> 00:06:47,520
+to help product teams import CSVs from 
+especially tricky systems like ERPs.
+
+86
+00:06:47,520 --> 00:06:51,480
+Yes, so we just launched OneSchema FileFeeds, 
+which allows you to build an integration with  
+
+87
+00:06:51,480 --> 00:06:57,200
+any system in 15 minutes as long as you can export 
+a CSV to an SFTP folder. We see our customers all  
+
+88
+00:06:57,200 --> 00:07:01,520
+the time getting stuck with hacks and workarounds. 
+And the product teams that we work with don't have  
+
+89
+00:07:01,520 --> 00:07:05,320
+to turn down prospects because their systems 
+are too hard to integrate with. We allow our  
+
+90
+00:07:05,320 --> 00:07:09,280
+customers to offer thousands of integrations 
+without involving their engineering team at all.
+
+91
+00:07:09,280 --> 00:07:12,680
+I can tell you that if my team had 
+to build integrations like this,  
+
+92
+00:07:12,680 --> 00:07:16,160
+how nice would it be to be able to take 
+this off my roadmap and instead use  
+
+93
+00:07:16,160 --> 00:07:20,960
+something like OneSchema and not just to 
+build it but also to maintain it forever.
+
+94
+00:07:20,960 --> 00:07:24,760
+Absolutely, Lenny. We've heard so many 
+four stories of multi-day outages from  
+
+95
+00:07:24,760 --> 00:07:29,200
+even just a handful of bad records. We have 
+laser-focused on integration reliability to  
+
+96
+00:07:29,200 --> 00:07:32,880
+help teams end all of those distractions 
+that come up with integrations. We have  
+
+97
+00:07:32,880 --> 00:07:36,240
+a built-in validation layer that stops 
+any bad data from entering your system,  
+
+98
+00:07:36,240 --> 00:07:40,520
+and OneSchema will notify your team 
+immediately of any data that looks incorrect.
+
+99
+00:07:40,520 --> 00:07:44,600
+I know that importing incorrect data can 
+cause all kinds of pain for your customers  
+
+100
+00:07:44,600 --> 00:07:49,160
+and quickly lose their trust. Christina, thank 
+you for joining us. If you want to learn more,  
+
+101
+00:07:49,160 --> 00:07:56,720
+head on over to oneschema.co. That's oneschema.co.
+Every PM has their definition of what is product  
+
+102
+00:07:56,720 --> 00:08:01,920
+management, and I have one that I'm trying to 
+find exactly what I wrote, but essentially,  
+
+103
+00:08:01,920 --> 00:08:06,840
+it's to marshal the resources of your team to 
+solve customer problems and drive business impact  
+
+104
+00:08:06,840 --> 00:08:10,200
+most efficiently, something like that. And I feel 
+like it's very aligned with your perspective,  
+
+105
+00:08:10,200 --> 00:08:16,000
+but I really love this view of it's unlocking the 
+potential energy of the team. Not just marshaling  
+
+106
+00:08:16,000 --> 00:08:20,800
+the resources of a team, but it's there, and your 
+job is to maximize their effort. And this is why  
+
+107
+00:08:20,800 --> 00:08:24,320
+when people say, "I hate product managers. I 
+don't want any product managers at my team.  
+
+108
+00:08:24,320 --> 00:08:28,440
+We don't need product managers here," I feel 
+like that's often because you've had a bad  
+
+109
+00:08:28,440 --> 00:08:34,520
+PM. Good PMs make you better and make your life 
+better, allow you to do the work you want to do  
+
+110
+00:08:34,520 --> 00:08:38,560
+and they take all the stuff you don't want to do, 
+make sure the stuff you're doing is worthwhile. 
+
+111
+00:08:38,560 --> 00:08:41,360
+Is there anything more you 
+want to add along those lines?
+
+112
+00:08:41,360 --> 00:08:48,920
+To elaborate on that, I think the broader point is 
+that truly not every team needs a product manager,  
+
+113
+00:08:48,920 --> 00:08:54,760
+but the activities, the outcome that one would 
+drive needs to get done no matter what. And in  
+
+114
+00:08:54,760 --> 00:08:59,560
+some cases, this is why the prototypical companies 
+that everyone references when they say, "They  
+
+115
+00:08:59,560 --> 00:09:04,520
+never had product managers, look at how successful 
+they are," they're all building for themselves.  
+
+116
+00:09:04,520 --> 00:09:11,280
+Stripe, Twilio, Figma, designers for designers, 
+engineers for engineers. When you are the  
+
+117
+00:09:11,280 --> 00:09:16,840
+customer, why the heck do you need someone else 
+to help do the things that let you make decisions  
+
+118
+00:09:16,840 --> 00:09:23,880
+on what to build? But if you are not the customer, 
+if you're working in a particularly complex space,  
+
+119
+00:09:23,880 --> 00:09:29,640
+if there's something that you, as the person that 
+could build the product, feel you don't have,  
+
+120
+00:09:29,640 --> 00:09:34,520
+that's when you can essentially delegate that 
+responsibility to someone else to say, "Hey,  
+
+121
+00:09:34,520 --> 00:09:39,760
+let me do the things I'm really good at and you 
+do something that I need to get my job done." 
+
+122
+00:09:39,760 --> 00:09:44,600
+So it's that sort of relationship that I think 
+is often missing in the discourse. I think it  
+
+123
+00:09:44,600 --> 00:09:51,120
+would alleviate a lot of the, "We don't want 
+PMs. PM is useless" or, "PM's one of the best  
+
+124
+00:09:51,120 --> 00:09:55,760
+thing since [inaudible 00:09:52]," which they're 
+not. It's just a manifestation of that problem.
+
+125
+00:09:55,760 --> 00:09:59,000
+Yeah. Just to build on that, we're going on a 
+tangent, but I think that's really interesting.  
+
+126
+00:09:59,000 --> 00:10:02,720
+I think there's another element of that, SNAP 
+actually is another example where they waited,  
+
+127
+00:10:02,720 --> 00:10:07,400
+I think, until they had 200 people before they 
+hired their first PM. To me, that's an example  
+
+128
+00:10:07,400 --> 00:10:11,560
+of other people were doing the PM job. As you 
+said, there's PM activity, someone's doing them,  
+
+129
+00:10:11,560 --> 00:10:17,120
+lining people, prioritizing, making sure things 
+are clear, making sure people aren't surprised,  
+
+130
+00:10:17,120 --> 00:10:21,400
+all these things PMs do. Someone's doing 
+that, and my feeling is like, "Okay,  
+
+131
+00:10:21,400 --> 00:10:25,480
+your designers may love doing that, great. Let 
+them do it." If your engineers that have a lot  
+
+132
+00:10:25,480 --> 00:10:29,680
+of product sense may want to do that, great.
+But there's some point they either is like,  
+
+133
+00:10:29,680 --> 00:10:32,640
+"Forget it. I just want to code. I want to build 
+that. I want to be sitting around in meetings  
+
+134
+00:10:32,640 --> 00:10:38,280
+all day," or they just aren't as good as things 
+are scaling. And so it's kind of like, if your  
+
+135
+00:10:38,280 --> 00:10:42,560
+engineers, designers want to do it and are good 
+at it, great. You don't need PMs for a long time.  
+
+136
+00:10:42,560 --> 00:10:46,600
+Oftentimes they're not good at it or they don't 
+want to be sitting in doing all these PM things.
+
+137
+00:10:46,600 --> 00:10:48,200
+Yep, precisely.
+
+138
+00:10:48,200 --> 00:10:51,640
+Okay, so going back to the question 
+of... So your advice is don't go  
+
+139
+00:10:51,640 --> 00:10:54,600
+straight into product management if you 
+want to become a great PM. Where do you  
+
+140
+00:10:54,600 --> 00:10:58,840
+think people should start if they can? 
+What are some options you recommend?
+
+141
+00:10:58,840 --> 00:11:05,880
+The best way to think about this, in my opinion, 
+is who were the people that you would be taking  
+
+142
+00:11:05,880 --> 00:11:12,080
+the PM responsibilities from and then do those 
+jobs? And so for me, the sort of foundational  
+
+143
+00:11:12,080 --> 00:11:20,640
+three are going to be engineer, designer 
+or salesperson. I think sales also gets not  
+
+144
+00:11:20,640 --> 00:11:26,960
+a bad rep, but a misrepresented reputation 
+in tech where all they care about is quota,  
+
+145
+00:11:26,960 --> 00:11:33,160
+it's just about numbers, et cetera. In reality, 
+the best salespeople are the best listeners,  
+
+146
+00:11:33,160 --> 00:11:39,680
+the best people at understanding the problem that 
+the customer is having and then translating that  
+
+147
+00:11:39,680 --> 00:11:45,440
+into what you can do for them. And so if 
+you get really good at having those calls,  
+
+148
+00:11:45,440 --> 00:11:51,280
+getting told no a lot, and being able to translate 
+that, I mean, why would you not want to start  
+
+149
+00:11:51,280 --> 00:11:56,080
+there and then eventually move into something like 
+product? So that's the foundational three for me.
+
+150
+00:11:56,080 --> 00:12:00,800
+So your advice is essentially if you want to 
+be a PM, start as a designer or an engineer  
+
+151
+00:12:00,800 --> 00:12:06,360
+or a salesperson. I was an engineer, so this is 
+exactly the path I went on. And I think there's  
+
+152
+00:12:07,760 --> 00:12:11,200
+an element of you start there and then you 
+realize you're never going to be as amazing  
+
+153
+00:12:11,200 --> 00:12:14,440
+as the other people at that role and you're 
+like, "Okay, maybe I should explore this other  
+
+154
+00:12:14,440 --> 00:12:17,600
+thing," because I was like, "I'm never going 
+to be an amazing engineer. I'm good enough."
+
+155
+00:12:17,600 --> 00:12:17,920
+Totally.
+
+156
+00:12:17,920 --> 00:12:21,640
+I'm like, "I'm pretty good at this 
+other stuff. Let's explore that."
+
+157
+00:12:21,640 --> 00:12:26,560
+The one thing that I might tack on there, because 
+this could lead to a negative perception, is,  
+
+158
+00:12:26,560 --> 00:12:31,080
+"Well, I'm never going to be a world-class 
+engineer, world-class designer or et cetera, and  
+
+159
+00:12:31,080 --> 00:12:35,760
+so let me settle for being a PM." That 
+could be the conclusion you arrive at,  
+
+160
+00:12:35,760 --> 00:12:41,160
+but I think a better way of framing it is, "I'm 
+okay at those things. I'm potentially world-class  
+
+161
+00:12:41,160 --> 00:12:44,640
+at this other thing. Let me see what it 
+feels like to double down on this area."
+
+162
+00:12:44,640 --> 00:12:45,080
+Absolutely.
+
+163
+00:12:45,080 --> 00:12:47,680
+And I think that's just a good framing.
+
+164
+00:12:47,680 --> 00:12:53,320
+Okay, so let's talk about another insight and 
+piece of advice that you have, is that you think  
+
+165
+00:12:53,320 --> 00:12:58,920
+that great PMs need to be great writers. I think 
+a lot of people don't necessarily think this. I  
+
+166
+00:12:58,920 --> 00:13:03,360
+think people may probably think, "If I'm an okay 
+writer, I can probably be really successful PM."  
+
+167
+00:13:03,360 --> 00:13:07,640
+Talk about why you think it's so important to be 
+a really great writer to be a really great PM.
+
+168
+00:13:07,640 --> 00:13:13,640
+It's actually shocking for me to hear that 
+this isn't commonplace sort of acceptance,  
+
+169
+00:13:13,640 --> 00:13:23,200
+but the place that this comes from for me is, 
+writing is clarity at scale, and a key component  
+
+170
+00:13:23,200 --> 00:13:30,080
+to a PM's job is creating clarity both internally 
+and externally, but it is both sides of that that  
+
+171
+00:13:30,080 --> 00:13:36,640
+I think often get lost. A lot of times the 
+PM job can become a little too internal,  
+
+172
+00:13:36,640 --> 00:13:42,280
+and it's about influencing my stakeholders and 
+getting alignment and all these things. Don't get  
+
+173
+00:13:42,280 --> 00:13:45,800
+me wrong, all that's very important. You should 
+write your PRDs, they should be super crisp,  
+
+174
+00:13:45,800 --> 00:13:52,400
+they should articulate things really well, but I'm 
+not saying that every PM needs to be a marketer  
+
+175
+00:13:52,400 --> 00:13:58,400
+or a world-class copywriter, but you should be 
+able to write really compelling messaging in the  
+
+176
+00:13:58,400 --> 00:14:03,200
+voice of the person that you're trying to serve. 
+And I'm working backwards from the beliefs that,  
+
+177
+00:14:03,200 --> 00:14:06,400
+if you can't sell or support your 
+own product, I don't trust you to  
+
+178
+00:14:06,400 --> 00:14:11,160
+build the product. And so that's where I think 
+writing is the foundational component there.
+
+179
+00:14:11,160 --> 00:14:14,200
+There's a few quotes I say often on this 
+podcast just because they always come to  
+
+180
+00:14:14,200 --> 00:14:18,600
+mind. One is by Joan Didion who said that, "I 
+don't know what I think until I've written it  
+
+181
+00:14:18,600 --> 00:14:23,280
+down." And that's what I find with writing 
+where I need to actually write it down for  
+
+182
+00:14:23,280 --> 00:14:26,560
+me to really understand what the heck 
+I'm thinking to really crystallize it.
+
+183
+00:14:26,560 --> 00:14:32,760
+Yeah, and I think writing is, it's 
+both a mechanism for translating what  
+
+184
+00:14:32,760 --> 00:14:38,360
+you're trying to think into that thought 
+into what you're actually trying to do,  
+
+185
+00:14:38,360 --> 00:14:44,640
+but then it needs additional revs to be 
+properly consumed by everyone else. And  
+
+186
+00:14:44,640 --> 00:14:50,560
+that's I think the really hard part that a lot of 
+folks don't do the extra mile effort to take on.
+
+187
+00:14:50,560 --> 00:14:54,640
+And this to your earlier point of a job of PM 
+is to unlock this potential energy of your team,  
+
+188
+00:14:54,640 --> 00:14:59,240
+of the various resources you have 
+and obviously having everyone aligned  
+
+189
+00:14:59,240 --> 00:15:02,720
+behind a very, like, "This is what we 
+are doing and everyone understanding  
+
+190
+00:15:02,720 --> 00:15:06,480
+it" and it being very clear 
+is really powerful there. 
+
+191
+00:15:06,480 --> 00:15:09,560
+Okay. So this begs the question, how does 
+one become a great writer? What helped  
+
+192
+00:15:09,560 --> 00:15:14,120
+you become a better writer? How do you feel 
+about your ability to write at this point?
+
+193
+00:15:14,640 --> 00:15:15,186
+Oh man.
+
+194
+00:15:15,186 --> 00:15:16,640
+Any advise on becoming better?
+
+195
+00:15:16,640 --> 00:15:22,280
+I'll start with a slightly cheeky comment, which 
+is, I think some of this is changing with the  
+
+196
+00:15:22,280 --> 00:15:28,240
+advent of large language models and the ability 
+to actually just mimic someone else's tone. But  
+
+197
+00:15:28,240 --> 00:15:34,880
+I take inspiration from the camp of Anthony 
+Bourdain, and he has, I'm going to butcher the  
+
+198
+00:15:34,880 --> 00:15:40,960
+exact quote but it's something like, "If you want 
+to know how to make good food, you have to eat a  
+
+199
+00:15:40,960 --> 00:15:47,960
+lot of food, and you have to be willing to have 
+a bad meal every now and again." And so for me,  
+
+200
+00:15:47,960 --> 00:15:53,680
+good writing comes from consuming as much good 
+writing as possible. Sometimes you'll read  
+
+201
+00:15:53,680 --> 00:15:57,680
+something and say, "That was actually absolute 
+fresh." But that's okay, you have to be willing to  
+
+202
+00:15:57,680 --> 00:16:03,560
+take on some of that stuff. But the more you index 
+towards developing your own taste for what you  
+
+203
+00:16:03,560 --> 00:16:09,520
+think is good by consuming others, then you can 
+shift into producing your own and then comparing  
+
+204
+00:16:09,520 --> 00:16:14,200
+them and riffing it off other people. So I think 
+that's sort of the cycle that I've gone through.
+
+205
+00:16:14,200 --> 00:16:19,680
+I have a friend who's a very good writer and a 
+poet and helped me develop my writing early on,  
+
+206
+00:16:19,680 --> 00:16:23,560
+Vanessa, and she said exactly the same 
+thing. Just to become a better writer,  
+
+207
+00:16:23,560 --> 00:16:29,120
+read beautiful writing, and it just kind of 
+infuses you or your brain. In your experience,  
+
+208
+00:16:29,120 --> 00:16:32,720
+is there anything you read, anything you 
+found really effective? Anything that you  
+
+209
+00:16:32,720 --> 00:16:36,800
+think influenced the way you write 
+or think that people can check out?
+
+210
+00:16:36,800 --> 00:16:41,920
+I explicitly do not mean read a bunch of 
+other PM artifacts. You're not going to  
+
+211
+00:16:41,920 --> 00:16:47,400
+become a better writer by reading PRDs 
+or whatever it is or support articles.  
+
+212
+00:16:47,400 --> 00:16:54,640
+It needs to be writing that compels. That's 
+the theme I would go back to because that's  
+
+213
+00:16:54,640 --> 00:16:59,840
+what you're trying to do at the end of the day.
+And when I say compels, I mean it pushes you to  
+
+214
+00:16:59,840 --> 00:17:04,560
+action. Because if you read something and you're 
+like, "Oh, that's interesting," that's not enough.  
+
+215
+00:17:04,560 --> 00:17:09,960
+You need to be able to give someone something that 
+then allows them to do something differently. And  
+
+216
+00:17:09,960 --> 00:17:16,560
+so the things for me that have been best... 
+Obviously there's all the Paul Graham essays,  
+
+217
+00:17:16,560 --> 00:17:24,800
+I think his writing is very succinct, very clear, 
+that's not novel. I learned a lot by finding  
+
+218
+00:17:24,800 --> 00:17:30,600
+specific voices back in the day on Twitter, and it 
+wasn't always what they were posting on Twitter,  
+
+219
+00:17:30,600 --> 00:17:36,040
+but if they wrote an essay or a post, that would 
+be their crispus thinking. And so you can use  
+
+220
+00:17:36,040 --> 00:17:42,120
+these broadcast channels to find where their 
+golden nuggets are, but then spend time with  
+
+221
+00:17:42,120 --> 00:17:45,920
+those instead and don't worry about all 
+the additional noise that comes with it.
+
+222
+00:17:45,920 --> 00:17:49,200
+Paul Graham actually, you mentioned him, he 
+has a great piece on how to become a good,  
+
+223
+00:17:49,200 --> 00:17:51,840
+that we'll link to, where basically his advice is,  
+
+224
+00:17:51,840 --> 00:17:56,000
+write the way you talk. Just keep it really 
+simple and really regular. And so we'll link  
+
+225
+00:17:56,000 --> 00:17:58,960
+to that. Is there anything else along these 
+lines of writing that you'd recommend for  
+
+226
+00:17:58,960 --> 00:18:02,760
+folks that are like, "Okay, I need to 
+become a great writer. How do I do this?"?
+
+227
+00:18:02,760 --> 00:18:09,560
+Actually along the lines of write how you 
+talk, there's this concept of cadence that  
+
+228
+00:18:09,560 --> 00:18:15,120
+I think is really important when it comes 
+to internal writing. There's probably some  
+
+229
+00:18:15,120 --> 00:18:21,360
+very good article about this, but it's the idea 
+that if you only write in a monotonous cadence,  
+
+230
+00:18:21,360 --> 00:18:27,240
+either all really short sentences or all really 
+long sentences, then your brain just tunes out  
+
+231
+00:18:27,240 --> 00:18:32,200
+eventually. And so you have to interrupt the 
+pattern intentionally, and so you go short-long,  
+
+232
+00:18:32,200 --> 00:18:36,240
+long-short, whatever it is, but there's a 
+few various specific things that you can  
+
+233
+00:18:36,240 --> 00:18:43,560
+do that allow someone to just roll through 
+a post or something when you write that way.
+
+234
+00:18:43,560 --> 00:18:46,840
+Along those lines, there's a book that I just 
+found to make sure I had the right title called  
+
+235
+00:18:46,840 --> 00:18:52,480
+Several Short Sentences About Writing that is 
+really helpful along these lines. And the whole  
+
+236
+00:18:52,480 --> 00:18:58,840
+book is very short sentences and it teaches you 
+to write very short sentences because once you're  
+
+237
+00:18:58,840 --> 00:19:03,200
+good at that, you can get better writing longer 
+sentences. And so we'll link to that too. It's  
+
+238
+00:19:03,200 --> 00:19:08,680
+like a really good book that I have two copies 
+around my house that I kind of poke at sometimes.
+
+239
+00:19:08,680 --> 00:19:11,000
+Nice. I'll have [inaudible 00:19:09] too.
+
+240
+00:19:11,000 --> 00:19:16,280
+Okay. Another area that you have a really 
+clever insight into is how the PM role fits  
+
+241
+00:19:16,280 --> 00:19:19,640
+with engineering design. We've talked about this 
+a little bit, but you have a really clever way  
+
+242
+00:19:19,640 --> 00:19:24,480
+of just thinking about how these roles interact 
+and who's responsible for what. Talk about that.
+
+243
+00:19:24,480 --> 00:19:32,040
+So this description came from writing 
+PRDs at Square. I think there was a lot  
+
+244
+00:19:32,040 --> 00:19:36,440
+of confusion from my team specifically 
+when I joined them. For what it's worth,  
+
+245
+00:19:36,440 --> 00:19:41,640
+it was new product line, three engineers, three 
+designers, there was nothing but a slide deck.
+
+246
+00:19:41,640 --> 00:19:43,760
+Three engineers and three designers?
+
+247
+00:19:43,760 --> 00:19:51,440
+The best ratio ever. This is a whole other thing. 
+Most people, I would say, under invest in design,  
+
+248
+00:19:51,440 --> 00:19:59,000
+point-blank. When you get to a certain scale, 
+maybe things change, but truly I don't think most  
+
+249
+00:19:59,000 --> 00:20:04,440
+teams have experienced what it feels like 
+to have a really high design ratio and what  
+
+250
+00:20:04,440 --> 00:20:09,960
+that actually does to the quality of the 
+work and the quality of the thinking. So  
+
+251
+00:20:09,960 --> 00:20:14,920
+shout out to designers. We need more, 
+is the short version. And I would  
+
+252
+00:20:14,920 --> 00:20:18,680
+rather hire an incremental designer 
+than PM almost any day of the week.
+
+253
+00:20:18,680 --> 00:20:21,520
+Wow. I've never experienced 
+this ratio. Incredible.
+
+254
+00:20:21,520 --> 00:20:25,320
+Yes, I was very lucky. Shout out to Bruce 
+Bell, who was my manager at the time,  
+
+255
+00:20:25,320 --> 00:20:31,880
+who was an ex designer, at the time, 
+GM, and declared that starting ratio. 
+
+256
+00:20:31,880 --> 00:20:38,800
+So anyways, with that setup, they all had sort 
+of an opinion. They had seen PRDs in the past,  
+
+257
+00:20:38,800 --> 00:20:42,760
+they weren't quite sure what the purpose of it 
+actually was because they had designs already.  
+
+258
+00:20:42,760 --> 00:20:48,520
+They had something to start from. And when I 
+came in and talked to everyone and figured out  
+
+259
+00:20:48,520 --> 00:20:52,720
+where we needed to be in a year's time, I was 
+like, "Okay, here's how I think it. Let me know  
+
+260
+00:20:52,720 --> 00:20:57,800
+if you agree." And this is a whole other concept, 
+which is, the best way to get feedback from people  
+
+261
+00:20:57,800 --> 00:21:01,600
+is not by asking what they think, but to put 
+something concrete in front of them and then  
+
+262
+00:21:01,600 --> 00:21:08,000
+have them react to it, right? So chewing fork.
+And so my description is, PM should be doing  
+
+263
+00:21:08,000 --> 00:21:14,040
+everything in their power to draw the perimeter of 
+the space, of the problem space. And it's within  
+
+264
+00:21:14,040 --> 00:21:18,440
+that, eng, design, everyone else that you're 
+working with, they can go as crazy as they want,  
+
+265
+00:21:18,440 --> 00:21:22,320
+push up against the bounds and it's 
+fill the box to its maximum capacity,  
+
+266
+00:21:22,320 --> 00:21:26,680
+but you've now applied the constraints that allow 
+you to actually have productive conversations. 
+
+267
+00:21:26,680 --> 00:21:30,520
+On the other end of the spectrum though, I 
+think there's a lot of folks who think, "Oh,  
+
+268
+00:21:30,520 --> 00:21:36,440
+PMs are just strategy high in the clouds. 
+All they do is kick things off." You need  
+
+269
+00:21:36,440 --> 00:21:41,720
+to be obsessed about the final deliverable 
+and whether or not value is actually getting  
+
+270
+00:21:41,720 --> 00:21:46,560
+to the customer. I have a really trite 
+example of this if you want to go down it.
+
+271
+00:21:46,560 --> 00:21:47,120
+Please.
+
+272
+00:21:47,120 --> 00:21:55,000
+But the key point I want to make is, I think 
+it is tempting when we think about engineering  
+
+273
+00:21:55,000 --> 00:22:01,520
+product and design to draw these really clear swim 
+lanes and say, "You do X. I do Y. Don't tread on  
+
+274
+00:22:01,520 --> 00:22:07,600
+my area." But you need these murky overlaps 
+in order to build something really good. 
+
+275
+00:22:07,600 --> 00:22:12,440
+And so even if the engineers are going to build 
+a better product than you and the designers are  
+
+276
+00:22:12,440 --> 00:22:16,000
+going to design something better than you, you 
+need to come with a strong opinion and you need to  
+
+277
+00:22:16,000 --> 00:22:21,080
+do the legwork to get their trust so they actually 
+care about your opinion in the first place. 
+
+278
+00:22:21,080 --> 00:22:27,680
+So time for a mini story. So Square, we're 
+building a point of sale for restaurants. If  
+
+279
+00:22:27,680 --> 00:22:33,040
+you've ever seen one of these in a restaurant, 
+there's this sort of grid of tiles that they tap  
+
+280
+00:22:33,040 --> 00:22:38,960
+to enter your order when you're sitting down for 
+dinner. We were developing one, and there's this  
+
+281
+00:22:38,960 --> 00:22:44,960
+concept of a menu group. So it's a little box, you 
+tap on it and then it pops the screen in so you go  
+
+282
+00:22:44,960 --> 00:22:49,960
+to the next level of the hierarchy. So example 
+would be you have a wine button, you tap it,  
+
+283
+00:22:49,960 --> 00:22:55,360
+and you see your reds, whites, et cetera.
+If you think about the people that we were  
+
+284
+00:22:55,360 --> 00:23:01,600
+trying to serve, there's the restaurants that 
+were coming from a really old legacy system. And  
+
+285
+00:23:01,600 --> 00:23:06,280
+if you've seen a bartender tap on one of these, 
+I mean it is muscle memory to the max. They're  
+
+286
+00:23:06,280 --> 00:23:11,880
+not even looking at the thing and just punching 
+in the order blindfolded, and it's rapid fast. 
+
+287
+00:23:11,880 --> 00:23:16,000
+On the other hand, you have people who 
+are entering the workforce the first time,  
+
+288
+00:23:16,000 --> 00:23:20,640
+they've never used a point of sale. And so 
+we have to serve both of these equally. Well,  
+
+289
+00:23:20,640 --> 00:23:25,920
+how do you deal with that level of speed but also 
+the ease of use that anyone can learn it for the  
+
+290
+00:23:25,920 --> 00:23:30,120
+first time? And so there was this interaction 
+that we really cared about, which was, when you  
+
+291
+00:23:30,120 --> 00:23:36,200
+tap on a menu group, what's the animation to pop 
+you into that next level? This seems like such  
+
+292
+00:23:36,200 --> 00:23:41,920
+a small thing, but it made the difference in how 
+easy it was to adopt for a lot of the restaurants. 
+
+293
+00:23:41,920 --> 00:23:49,160
+And so a designer and myself spent literally an 
+entire week just fine-tuning how many milliseconds  
+
+294
+00:23:49,160 --> 00:23:54,640
+it would take to pop in and out so that it felt 
+right. And we actually brought in servers and  
+
+295
+00:23:54,640 --> 00:23:58,680
+bartenders to play with the prototypes we 
+had on iPads and be like, "Here's an order.  
+
+296
+00:23:58,680 --> 00:24:03,400
+Pop it in." And we would see where they 
+would sort of flinch or hesitate because  
+
+297
+00:24:03,400 --> 00:24:07,640
+the animation was too slow and they thought, "I 
+can't tap it yet," or something related to that. 
+
+298
+00:24:07,640 --> 00:24:13,440
+And so it's easy, I think, for a PM to say, 
+"That's not my responsibility. I define the  
+
+299
+00:24:13,440 --> 00:24:18,880
+requirements. Have a menu group that goes 
+to the next level, design or engineer,  
+
+300
+00:24:18,880 --> 00:24:24,360
+figure it out." No way. That's fully on you, 
+and you better be involved in those details.
+
+301
+00:24:24,360 --> 00:24:27,880
+I love this. There's two directions I want 
+to go. So there's the drawing the perimeter,  
+
+302
+00:24:27,880 --> 00:24:31,320
+and then there's this paying attention to the 
+final deliverable and keeping the borrow really  
+
+303
+00:24:31,320 --> 00:24:37,520
+high, which I love and I totally agree with both.
+In terms of this animation, people hearing this,  
+
+304
+00:24:37,520 --> 00:24:42,480
+that our PMs are going to be like, "How do you 
+have time to spend a week on animation for one  
+
+305
+00:24:42,480 --> 00:24:46,280
+little product? I have so much to do. I get to 
+hit some goals, drive some numbers. I have people  
+
+306
+00:24:46,280 --> 00:24:51,640
+waiting for me." Maybe because Square is like 
+this, once you deploy, it's harder to change and  
+
+307
+00:24:51,640 --> 00:24:56,840
+it's like a big deal to ship. But I'm curious if 
+you have any advice or things you've learned about  
+
+308
+00:24:56,840 --> 00:25:02,120
+how to create space for that sort of thing to 
+create time to spend a week on this animation? Or  
+
+309
+00:25:02,120 --> 00:25:07,760
+was it just obvious to everyone, "We need to spend 
+as much time as we can"? Top down, everyone knew.
+
+310
+00:25:07,760 --> 00:25:10,280
+I definitely don't think 
+it was obvious to everyone,  
+
+311
+00:25:10,280 --> 00:25:15,400
+and I can definitely say that because we 
+were given a pretty strict deadline that  
+
+312
+00:25:15,400 --> 00:25:23,240
+we needed to launch by and I pushed it out three 
+times. That's not because of this one animation,  
+
+313
+00:25:23,240 --> 00:25:28,720
+but it's because of a series of decisions where 
+we said, "This is what we believe we need to ship,  
+
+314
+00:25:28,720 --> 00:25:34,320
+and this matters much more than hitting 
+some artificial external GA date." 
+
+315
+00:25:35,600 --> 00:25:43,520
+There's this other aspect that I think PMs like 
+to feel good about how busy they are and they're  
+
+316
+00:25:43,520 --> 00:25:47,560
+like, "I'm involved in so many processes and 
+I have to talk to this person and talk to that  
+
+317
+00:25:47,560 --> 00:25:55,240
+person." All that might be true, but I think 
+there needs to be a calibration or at least  
+
+318
+00:25:55,240 --> 00:25:59,920
+a spring-cleaning of, "What's everything I'm 
+doing?" and how much do these things actually  
+
+319
+00:25:59,920 --> 00:26:06,400
+matter to getting value to a customer. Because as 
+a company gets bigger, as teams get more complex,  
+
+320
+00:26:06,400 --> 00:26:11,760
+it's very easy and natural to spend more time 
+on things that are internally-focused and not  
+
+321
+00:26:11,760 --> 00:26:17,080
+externally-focused. I think we just all have 
+to have sensitive antenna to that so that we  
+
+322
+00:26:17,080 --> 00:26:23,840
+don't fall prey to, "Well, the way that my job is 
+described is to do these things," but really it's  
+
+323
+00:26:23,840 --> 00:26:29,240
+the outcome again of put something in a customer's 
+hands that's also a problem, and it's amazing.
+
+324
+00:26:29,240 --> 00:26:34,720
+Reminds me of your now colleague Jeff 
+Weinstein's advice he got from one of  
+
+325
+00:26:34,720 --> 00:26:39,240
+the Coulsons where they came to him and 
+they're like, "You're world-class at doing  
+
+326
+00:26:39,240 --> 00:26:43,840
+the second and third most important 
+things and you're not focusing on the  
+
+327
+00:26:43,840 --> 00:26:47,240
+most important thing because it's so hard, 
+and that's something you need to work on."
+
+328
+00:26:47,240 --> 00:26:53,720
+Totally. I will say so one on that, the CEO 
+at Mutiny, Charlie, she always repeated to  
+
+329
+00:26:53,720 --> 00:26:59,120
+me nonstop, "Keep the main thing the main 
+thing" and would just say it ad nauseum,  
+
+330
+00:26:59,120 --> 00:27:07,080
+and I'm really glad that she did. The 
+one excuse I don't want to give folks is,  
+
+331
+00:27:07,080 --> 00:27:13,680
+as you progress in your career, you have to walk 
+and chew gum at the same time. You can't say,  
+
+332
+00:27:13,680 --> 00:27:19,880
+"Oh, I'm only focused on this thing over here, so 
+other folks handle that." You do have to figure  
+
+333
+00:27:19,880 --> 00:27:25,760
+out how to do a little bit more at the same 
+time, but prioritization does play a factor.
+
+334
+00:27:25,760 --> 00:27:29,960
+There's a framework [inaudible 00:27:27] suggested 
+that I really like, the LNO framework. I forget  
+
+335
+00:27:29,960 --> 00:27:34,120
+exactly what the LNO stands for, but leverage 
+something something. And we'll link to it in  
+
+336
+00:27:34,120 --> 00:27:38,120
+the show notes that gives you some advice on 
+how to prioritize your time based on the stuff.
+
+337
+00:27:38,120 --> 00:27:39,120
+Totally.
+
+338
+00:27:39,120 --> 00:27:42,120
+Okay. So I guess in the case of 
+pushing back to create space,  
+
+339
+00:27:42,120 --> 00:27:44,880
+this was just you as a product leader 
+recognizing, "This is really important  
+
+340
+00:27:44,880 --> 00:27:50,360
+to get right. I will convince people 
+we need to make more time for that."
+
+341
+00:27:50,360 --> 00:27:54,840
+I don't want to make it seem like it 
+was me against everyone because that  
+
+342
+00:27:54,840 --> 00:27:58,440
+was definitely not the case. 
+I think the starting engineers  
+
+343
+00:27:58,440 --> 00:28:04,360
+and designers on that team really cared about 
+the quality of what they built too. That's a  
+
+344
+00:28:04,360 --> 00:28:11,320
+pretty structural DNA for a team as well. If 
+you don't start with that, and as a comparison,  
+
+345
+00:28:11,320 --> 00:28:19,200
+you have a team that really prides themselves 
+on shipping fast and meeting deadlines really  
+
+346
+00:28:19,200 --> 00:28:23,960
+prescriptively, you might end up in a different 
+world or your role as a PM might be a little bit  
+
+347
+00:28:23,960 --> 00:28:28,680
+more challenging if you want to push on this 
+stuff. So I do think you have to take into  
+
+348
+00:28:28,680 --> 00:28:35,280
+account what is the DNA of the team. And then can 
+you exploit that? Which I was able to do. Or do  
+
+349
+00:28:35,280 --> 00:28:41,600
+you actually have some change management to put 
+into effect if you believe that it's worthwhile?
+
+350
+00:28:41,600 --> 00:28:45,120
+Let's go back to the perimeter, drawing the 
+perimeter concept to make that a little more  
+
+351
+00:28:45,120 --> 00:28:50,920
+real for people. So your advice here is the role 
+of a PM, part of your main job, especially when  
+
+352
+00:28:50,920 --> 00:28:54,840
+it comes to engineers and design is to draw the 
+perimeter for the team. Can you make that a little  
+
+353
+00:28:54,840 --> 00:28:58,360
+more real? What's an example of that maybe from 
+something you worked on? What does that look like?
+
+354
+00:28:58,360 --> 00:29:04,240
+Totally. The best word to describe the perimeter 
+is just constraints. At the end of the day,  
+
+355
+00:29:04,240 --> 00:29:09,960
+you should be adding as many constraints 
+as reasonable in order to let engineers  
+
+356
+00:29:09,960 --> 00:29:15,600
+and designers come up with the most creative 
+solutions for whatever you're trying to do. 
+
+357
+00:29:15,600 --> 00:29:19,800
+And so again, if we just stay focused on this 
+point of sale example, one constraint would be,  
+
+358
+00:29:19,800 --> 00:29:23,480
+"Who the hell are we serving? Are we trying 
+to go after sit-down restaurants that are  
+
+359
+00:29:23,480 --> 00:29:28,200
+serving five different courses and have 
+a 200 item wine list? Or are we trying  
+
+360
+00:29:28,200 --> 00:29:33,960
+to serve the taco truck?" Those will lead to 
+very different spaces. And if you leave both on  
+
+361
+00:29:33,960 --> 00:29:39,640
+the table, the lack of that constraint makes 
+designing a good solution that much harder,  
+
+362
+00:29:39,640 --> 00:29:45,400
+that there instances where you actually can't 
+apply that many constraints. But I bet that  
+
+363
+00:29:45,400 --> 00:29:50,840
+if you push on enough different axes, you 
+eventually scope it down to a point where  
+
+364
+00:29:50,840 --> 00:29:55,120
+it feels really good for the team. It's 
+just about how do you remove decisions,  
+
+365
+00:29:55,120 --> 00:30:00,520
+right? Because this I think is maybe a trite 
+phrase, but the best decision is no decision.  
+
+366
+00:30:00,520 --> 00:30:04,520
+If you don't even have to think about the 
+decision, the team is that much more effective.
+
+367
+00:30:04,520 --> 00:30:08,440
+So yo give people a few maybe even pointers of, 
+"I need to create more constraints maybe for my  
+
+368
+00:30:08,440 --> 00:30:12,640
+team to help them go crazy, but within 
+this box that we all agree on," so you  
+
+369
+00:30:12,640 --> 00:30:16,360
+mentioned make sure the user's clear of who 
+you're designing for. Is there anything else,  
+
+370
+00:30:16,360 --> 00:30:20,360
+just thinking about maybe the PRD someone's trying 
+to write to help create this constraint? What  
+
+371
+00:30:20,360 --> 00:30:25,120
+other maybe bullet points, sections would 
+you imagine or do you find useful to add?
+
+372
+00:30:25,120 --> 00:30:29,560
+So beyond customer 
+segment/like-what-their-specific-role is,  
+
+373
+00:30:29,560 --> 00:30:33,160
+I think another one would be, we can 
+loosely call it, jobs to be done,  
+
+374
+00:30:33,160 --> 00:30:36,040
+even though I know that's becoming 
+an increasingly loaded term.
+
+375
+00:30:36,040 --> 00:30:37,020
+Yeah, it's great.
+
+376
+00:30:37,020 --> 00:30:41,320
+But what's the thing they're trying to do and 
+how many different pathways are you willing  
+
+377
+00:30:41,320 --> 00:30:46,280
+to entertain around it? That's another one 
+that I would think about. Depending on what  
+
+378
+00:30:46,280 --> 00:30:52,000
+you're building, there's availability. So 
+do you care about desktop web, mobile web,  
+
+379
+00:30:52,000 --> 00:31:01,360
+native mobile, et cetera? And maybe another one 
+to think through just as an example would be,  
+
+380
+00:31:01,360 --> 00:31:06,200
+this is probably getting closer to what a lot 
+of people think about in terms of principles,  
+
+381
+00:31:06,200 --> 00:31:14,720
+but what are the things that you want to be 
+known for when you ship a product? One example  
+
+382
+00:31:14,720 --> 00:31:21,960
+there might be speed. And so if you say speed 
+is more important than consistency of data,  
+
+383
+00:31:21,960 --> 00:31:25,200
+that's a huge tradeoff and constraint 
+that you can give the team." Oh my god,  
+
+384
+00:31:25,200 --> 00:31:30,200
+if an engineer hears I don't need real time 
+consistency of data, I can do so much cool  
+
+385
+00:31:30,200 --> 00:31:35,440
+stuff and easily accomplish that speed thing." 
+And so that's just a very technical example maybe.
+
+386
+00:31:35,440 --> 00:31:38,680
+Awesome. Okay, I'm glad I followed up on that. 
+There's a couple more things you mentioned that  
+
+387
+00:31:38,680 --> 00:31:43,600
+I want to come back to real quick. The first 
+is this tuning fork idea. I completely agree,  
+
+388
+00:31:43,600 --> 00:31:47,360
+this point you made, that the best way to get 
+feedback from your team is to take a first pass  
+
+389
+00:31:47,360 --> 00:31:53,400
+at it, and here's a rough quick draft. I find with 
+design, especially if you design something ugly,  
+
+390
+00:31:53,400 --> 00:31:57,040
+designers are often like, "Let me make that 
+better. We can't stand this thing." Is there  
+
+391
+00:31:57,560 --> 00:32:03,560
+anything else you want to add there? Just this 
+idea of tuning fork as a feedback strategy.
+
+392
+00:32:03,560 --> 00:32:10,960
+Okay, there's two areas we can go deeper on 
+here. One is in how you get the feedback. So  
+
+393
+00:32:10,960 --> 00:32:16,480
+this is definitely a Square-ism, I think it was 
+probably adopted from Amazon, which is around  
+
+394
+00:32:16,480 --> 00:32:24,120
+the silent read of documents. When you are all so 
+busy and someone's like, "I wrote a doc," you send  
+
+395
+00:32:24,120 --> 00:32:30,640
+it into the Slack ecosystem and everyone goes, 
+"Please give feedback." You have so much going  
+
+396
+00:32:30,640 --> 00:32:35,000
+on... You'll be lucky to maybe get a response. 
+Maybe there's one or two people that chime in. 
+
+397
+00:32:35,000 --> 00:32:42,800
+And so even though we hate meetings and we love 
+asynchronous, there is a lot of value to saying,  
+
+398
+00:32:42,800 --> 00:32:50,200
+"I need 20 minutes of focused time to interrogate 
+something that I've done. We're not going to  
+
+399
+00:32:50,200 --> 00:32:55,800
+talk. I'm literally going to force us into a 
+room or Zoom. You're going to read this doc,  
+
+400
+00:32:55,800 --> 00:32:59,920
+I'm going to watch you comment on it in 
+real time. I'm going to respond to your  
+
+401
+00:32:59,920 --> 00:33:03,760
+comments in real time. And at the end of 
+this thing I'm going to have enough really  
+
+402
+00:33:03,760 --> 00:33:08,560
+good input that I can do a huge rub on 
+this thing and get to the next phase."
+
+403
+00:33:08,560 --> 00:33:12,520
+I love that. So it's basically instead of, 
+"Hey, I'm sending you this doc to go review,  
+
+404
+00:33:12,520 --> 00:33:16,360
+give me feedback," it's, "I'm going to schedule a 
+meeting, and the meeting is for you to spend time  
+
+405
+00:33:16,360 --> 00:33:19,840
+reviewing this doc and giving me feedback 
+and then maybe we could talk about it."
+
+406
+00:33:19,840 --> 00:33:23,960
+Yep. And I think a lot of people are going to 
+hate hearing that because like, "Oh my god,  
+
+407
+00:33:23,960 --> 00:33:28,040
+I have so many meetings already. Why do I want 
+another meeting that isn't even a meeting?"  
+
+408
+00:33:28,040 --> 00:33:33,760
+But that's the best kind then, because 
+it's actual work getting done, right? And  
+
+409
+00:33:33,760 --> 00:33:37,240
+maybe you carve out two minutes at the end 
+for one really immediate discussion topic  
+
+410
+00:33:37,240 --> 00:33:44,080
+or something. But I don't think we give 
+enough space in any type of meeting for  
+
+411
+00:33:44,080 --> 00:33:49,560
+people to actually think. And when you are just 
+staring at a doc with your camera off and the  
+
+412
+00:33:49,560 --> 00:33:55,480
+only expectation is to engage with that thing, 
+thoughts are a little bit better and crisper.
+
+413
+00:33:55,480 --> 00:33:58,920
+And I think with this idea, if someone says, 
+"I want a meeting where you just sit and review  
+
+414
+00:33:58,920 --> 00:34:02,440
+this doc," you could always say, "Let me just 
+review it asynchronously. I'll give you feedback,  
+
+415
+00:34:02,440 --> 00:34:07,640
+I promise. Give me 24 hours." Right? It's 
+not like they have to come to this meeting.
+
+416
+00:34:07,640 --> 00:34:10,280
+Although I would urge you to 
+make them come to the meeting.
+
+417
+00:34:10,280 --> 00:34:14,320
+Okay, say more there, because you 
+find that that's a lot more effective.
+
+418
+00:34:14,320 --> 00:34:17,960
+I think there's two sneaky things 
+hiding behind that. One is the, "Yeah,  
+
+419
+00:34:17,960 --> 00:34:22,120
+I'll get to this in the next 24 hours." 
+Maybe they don't. Maybe you've really  
+
+420
+00:34:22,120 --> 00:34:27,880
+trust that person and they're the exception. 
+But beyond that, there is something else to  
+
+421
+00:34:27,880 --> 00:34:32,360
+the real time interaction that can happen when 
+you're commenting and responding on a dock at  
+
+422
+00:34:32,360 --> 00:34:39,200
+the same time. I think this is the part that 
+often gets lost, which is the latency between a  
+
+423
+00:34:39,200 --> 00:34:46,480
+comments or question and a quick follow-up from 
+the author just pushes that cycle speed really  
+
+424
+00:34:46,480 --> 00:34:51,040
+long in a way that doesn't need to be. And so when 
+people are trying to find how do you move faster,  
+
+425
+00:34:51,040 --> 00:34:57,120
+this actually is one of those very good 
+examples of moving slower to move faster.
+
+426
+00:34:57,120 --> 00:35:02,800
+It reminds me Claire Vo, I think it was her 
+phrase of moving one clock speed faster,  
+
+427
+00:35:02,800 --> 00:35:06,920
+and just like that's the way you speed up a 
+company is try to move one clock speed faster,  
+
+428
+00:35:06,920 --> 00:35:13,160
+which in this case is just reduce the time 
+between feedback and iteration. I love it. 
+
+429
+00:35:13,160 --> 00:35:17,360
+Okay, I want to shift to talking 
+about a few very tactical things  
+
+430
+00:35:17,360 --> 00:35:21,600
+that you've found really helpful in your 
+PM career and something you recommend  
+
+431
+00:35:21,600 --> 00:35:27,880
+to other product teams. The first is 
+something you call a decision log. You  
+
+432
+00:35:27,880 --> 00:35:32,680
+think every PM should keep a decision log. Talk 
+about what that is and why that's powerful.
+
+433
+00:35:32,680 --> 00:35:36,200
+I will say there's two different decision 
+logs we could talk about. We'll focus on the  
+
+434
+00:35:36,200 --> 00:35:41,920
+former though. The latter is just as you're 
+making decisions within your job, you should  
+
+435
+00:35:41,920 --> 00:35:47,240
+document those within a PRD. Make sure everyone 
+knows. It's just a silly, very small thing,  
+
+436
+00:35:47,240 --> 00:35:50,600
+but I think every PM should do it.
+The other decision log though that  
+
+437
+00:35:50,600 --> 00:35:57,640
+I think is quite critical is if 
+we zoom out for a second, every  
+
+438
+00:35:58,720 --> 00:36:06,440
+person has something that they can do to 
+slightly increment in their craft. Sprinters  
+
+439
+00:36:06,440 --> 00:36:11,360
+have certain exercises that they do. There's 
+something beautiful about pianists and piano  
+
+440
+00:36:11,360 --> 00:36:17,920
+scales where it doesn't matter if you are just 
+learning the piano or you are a 30-year veteran,  
+
+441
+00:36:17,920 --> 00:36:21,200
+you're still doing your scales, and 
+it's because it lays the foundation  
+
+442
+00:36:21,200 --> 00:36:26,080
+for everything else that you need to do.
+And so we all talk about product sense. It's this  
+
+443
+00:36:26,080 --> 00:36:31,240
+super mystical thing that no one knows how to get 
+better at. To me, it's just a fancy way of saying  
+
+444
+00:36:31,240 --> 00:36:38,080
+you can make good decisions with insufficient 
+data, and the core of that is decisions. And  
+
+445
+00:36:38,080 --> 00:36:45,880
+so PMs need as many reps as possible in making 
+decisions, documenting the rationale behind those  
+
+446
+00:36:45,880 --> 00:36:52,840
+decisions, and then crucially seeing the outcome 
+of them. And so the natural followup would be,  
+
+447
+00:36:52,840 --> 00:36:57,600
+"Well, I only have to make X decisions in my 
+job. How the hell do I make more of them?"  
+
+448
+00:36:57,600 --> 00:37:01,360
+Look around you. There's other teams that are 
+making decisions. What would you do if you  
+
+449
+00:37:01,360 --> 00:37:05,920
+were in that position with the information 
+you have? Great, write it down. Say why. 
+
+450
+00:37:05,920 --> 00:37:10,160
+There's other companies that are doing crazy 
+things. What are they doing? What would you  
+
+451
+00:37:10,160 --> 00:37:13,960
+do if you were responsible for the roadmap? 
+Write it down. A year later, see what they've  
+
+452
+00:37:13,960 --> 00:37:19,640
+shipped. You can just do this for anyone. 
+It's free, and no one takes the time to do it,  
+
+453
+00:37:19,640 --> 00:37:24,480
+but that's how I think you get better at actually 
+making decisions, is just doing more of them.
+
+454
+00:37:24,480 --> 00:37:29,160
+Hearing you describe this, it feels like, 
+"Obviously yes, why aren't we doing this?  
+
+455
+00:37:29,160 --> 00:37:35,080
+How else can we get better if we're not reflecting 
+back on the decisions we've made? And realizing,  
+
+456
+00:37:35,080 --> 00:37:39,680
+"Hey, I made a bunch of bad decisions, but 
+I'm always so confident in my decision still,  
+
+457
+00:37:39,680 --> 00:37:43,960
+maybe shouldn't be. So I guess first of 
+all, do you actually do this? How often  
+
+458
+00:37:43,960 --> 00:37:50,440
+do you do this? And is there an example of you 
+learning something from your own decision log?
+
+459
+00:37:50,440 --> 00:37:56,600
+Many. And many of them because it was a wrong 
+decision. But yes, I do keep a decision log.  
+
+460
+00:37:56,600 --> 00:38:02,520
+I have a separate sort of practice where it's 
+just a daily log, which is everyone wants the  
+
+461
+00:38:02,520 --> 00:38:07,440
+perfect note-taking system. To me, the best 
+note-taking system is inspired by... What is  
+
+462
+00:38:07,440 --> 00:38:15,280
+it called? big ass text file, BATF. There's a 
+funny blog post from 2001 on it, but it's just,  
+
+463
+00:38:15,280 --> 00:38:21,160
+you write everything that happens to you in a day 
+in a bolded list and it's all in one big note.  
+
+464
+00:38:21,160 --> 00:38:26,560
+That way you can command F it, do whatever you 
+want. The way that I keep track of it is I do a  
+
+465
+00:38:26,560 --> 00:38:32,000
+little hashtag decision and then write things down 
+just as I think about them. And then I'll have a  
+
+466
+00:38:32,000 --> 00:38:39,720
+reminder to comb back through on some cadence.
+And so I'll first use a positive example, which  
+
+467
+00:38:39,720 --> 00:38:47,480
+is a funny one. So if you rewind to, I don't even 
+know what year, but Shopify had just launched Shop  
+
+468
+00:38:47,480 --> 00:38:55,520
+app, their consumer application for what started 
+as tracking your order when you bought something  
+
+469
+00:38:55,520 --> 00:39:00,440
+from a Shopify customer and then it's evolved 
+into a full-blown Amazon competitor, where you can  
+
+470
+00:39:00,440 --> 00:39:05,520
+actually find merchants and buy things through it.
+When they first launched it though, I was like,  
+
+471
+00:39:05,520 --> 00:39:12,160
+"Oh my God, this is so brilliant. They have 
+completely hijacked this specific loop for  
+
+472
+00:39:12,160 --> 00:39:18,400
+consumer buying behavior via this very unassuming 
+thing, which is package tracking." And so that  
+
+473
+00:39:18,400 --> 00:39:23,720
+morning I was like, "Whatever, I'm going to 
+quickly draw a diagram of this flywheel that  
+
+474
+00:39:23,720 --> 00:39:29,280
+I think Amazon owns today. I'm going to show 
+how Shopify is slowly planting their little  
+
+475
+00:39:29,280 --> 00:39:34,360
+seed to take over this and how Shop app fits 
+into it." I tweeted out. And then I don't know,  
+
+476
+00:39:34,360 --> 00:39:38,760
+that day there must have been 60 Shopify 
+employees that followed me. I was like,  
+
+477
+00:39:38,760 --> 00:39:42,640
+"What the hell is this guy talking about?"
+And so funny enough, fast-forward,  
+
+478
+00:39:42,640 --> 00:39:46,680
+I've talked to some of the folks that worked on it 
+and they're like, "Yeah, nailed it. Here's what we  
+
+479
+00:39:46,680 --> 00:39:52,720
+were thinking. Here's why." It's no longer secret 
+sauce. But that was a really interesting example  
+
+480
+00:39:52,720 --> 00:39:59,280
+of both doing a decision log, putting my rationale 
+down on paper. In this case, broadcasting it out,  
+
+481
+00:39:59,280 --> 00:40:03,040
+but then having that be a mechanism for 
+it making its way back to me to actually  
+
+482
+00:40:03,040 --> 00:40:07,560
+better understand why did they make the decision 
+versus what I thought, because the reasons were  
+
+483
+00:40:07,560 --> 00:40:12,840
+a little bit different, but the outcome was 
+the same. So that's one interesting example.
+
+484
+00:40:12,840 --> 00:40:17,120
+It's an amazing story. You doing this 
+explains why you've been so successful.  
+
+485
+00:40:17,120 --> 00:40:21,360
+I could see how this all connects 
+now. I think for a lot of people,  
+
+486
+00:40:21,360 --> 00:40:25,000
+they would want to build this habit. 
+Clearly there's a lot of value here,  
+
+487
+00:40:25,000 --> 00:40:30,640
+but they just don't because they got a lot of 
+other things going on or it's just like this new  
+
+488
+00:40:30,640 --> 00:40:35,040
+thing they have to start doing. Is there anything 
+that helped you adopt this practice of this daily  
+
+489
+00:40:36,080 --> 00:40:40,800
+log/decision log that you think might be helpful 
+to folks to motivate them to give this a shot?
+
+490
+00:40:40,800 --> 00:40:48,120
+This is probably just general advice on building 
+any habit, which is start small and just force  
+
+491
+00:40:48,120 --> 00:40:56,000
+yourself to do it. And there's that old saying 
+around, how do you start running as a hobby? You  
+
+492
+00:40:56,000 --> 00:41:00,680
+don't do it by saying, "I'm going to run a mile 
+every day." You do it by putting your sneakers at  
+
+493
+00:41:00,680 --> 00:41:04,520
+the foot of your bed unless you take your shoes 
+off inside, then you put it at the front door,  
+
+494
+00:41:04,520 --> 00:41:09,760
+you have your shorts ready to go and you're 
+like, "I commit to putting on my shorts.  
+
+495
+00:41:09,760 --> 00:41:14,280
+And if I decide after getting dressed to go 
+run, that I still don't want to go run. Okay,  
+
+496
+00:41:14,280 --> 00:41:18,200
+fine." But you build up to that thing.
+I think decision logs are the lightest  
+
+497
+00:41:18,200 --> 00:41:23,280
+weight thing possible. And so you can start super 
+easy by saying, "You know what? Every Sunday  
+
+498
+00:41:23,280 --> 00:41:29,200
+morning I'm going to scroll through Twitter, I'm 
+going to check out Hacker News, whatever it is,  
+
+499
+00:41:29,200 --> 00:41:33,240
+I'm going to see something interesting and 
+I'm going to make a bet. I'm going to place  
+
+500
+00:41:33,240 --> 00:41:37,720
+my decision on this thing." Write it down, 
+and then set a calendar invite in X weeks,  
+
+501
+00:41:37,720 --> 00:41:44,240
+X months to see what plays out. And that's all 
+it is, right? 10 minutes once a week, super easy.  
+
+502
+00:41:44,240 --> 00:41:48,000
+And then over time you can crank it up. And then 
+eventually you're just constantly writing these  
+
+503
+00:41:48,000 --> 00:41:52,840
+decisions down and then it's like feeding its 
+way back into you. It becomes second nature.
+
+504
+00:41:52,840 --> 00:41:57,440
+And you're touching on something that there's 
+been a little bit of talk on this podcast  
+
+505
+00:41:57,440 --> 00:42:01,240
+and newsletter post about this idea of 
+to get better product sense and product  
+
+506
+00:42:01,240 --> 00:42:05,560
+taste and also just decision making this 
+case, one of the best strategies is to  
+
+507
+00:42:05,560 --> 00:42:09,240
+simulate other people's decisions and 
+simulate what they're thinking through  
+
+508
+00:42:09,240 --> 00:42:12,480
+and predict what they're going to do, 
+which is what you're describing here.
+
+509
+00:42:12,480 --> 00:42:17,520
+Totally. I do want to apply a pretty 
+severe caveat here though, which is,  
+
+510
+00:42:17,520 --> 00:42:25,360
+a decision log is not a replacement for building 
+products. It's a additional complimentary thing  
+
+511
+00:42:25,360 --> 00:42:30,880
+that you can be doing on your own. But if you 
+think that you can just sit back in your chair,  
+
+512
+00:42:30,880 --> 00:42:33,640
+look out at the market, make 
+a bunch of calls and be like,  
+
+513
+00:42:33,640 --> 00:42:37,960
+"Look at how smart I'm getting without 
+actually being hands-on with building  
+
+514
+00:42:37,960 --> 00:42:42,000
+a product," you're not actually going to get 
+any better. So I just want to interject that
+
+515
+00:42:42,000 --> 00:42:44,680
+Amazing caveat, very important. Don't 
+just sit and read Hacker News and  
+
+516
+00:42:44,680 --> 00:42:49,080
+think you're going to be become an 
+amazing founder or product leader. 
+
+517
+00:42:49,080 --> 00:42:54,840
+This episode is brought to you by Eppo. Eppo is a 
+next generation A/B testing and feature management  
+
+518
+00:42:54,840 --> 00:43:00,800
+platform built by alums of Airbnb and Snowflake 
+for modern growth teams. Companies like Twitch,  
+
+519
+00:43:00,800 --> 00:43:05,640
+Miro, ClickUp, and DraftKings rely 
+on Eppo to power their experiments. 
+
+520
+00:43:05,640 --> 00:43:10,000
+Experimentation is increasingly essential 
+for driving growth and for understanding the  
+
+521
+00:43:10,000 --> 00:43:14,680
+performance of new features. And Eppo helps 
+you increase experimentation velocity while  
+
+522
+00:43:14,680 --> 00:43:20,360
+unlocking rigorous deep analysis in a way that no 
+other commercial tool does. When I was at Airbnb,  
+
+523
+00:43:20,360 --> 00:43:23,440
+one of the things that I left most 
+was our experimentation platform,  
+
+524
+00:43:23,440 --> 00:43:27,720
+where I could set up experiments easily, 
+troubleshoot issues, and analyze performance  
+
+525
+00:43:27,720 --> 00:43:32,520
+all on my own. Eppo does all that and more with 
+advanced statistical methods that can help you  
+
+526
+00:43:32,520 --> 00:43:37,680
+shape weeks off experiment time and accessible 
+UI for diving deeper into performance and out  
+
+527
+00:43:37,680 --> 00:43:42,280
+of the box reporting that helps you avoid 
+annoying, prolonged and analytics cycles. 
+
+528
+00:43:42,280 --> 00:43:45,640
+Eppo also makes it easy for you to share 
+experiment insights with your team,  
+
+529
+00:43:45,640 --> 00:43:51,880
+sparking new ideas for the A/B testing flywheel. 
+Eppo powers experimentation across every use case,  
+
+530
+00:43:51,880 --> 00:43:57,160
+including product, growth, machine learning, 
+monetization, and email marketing. Check out  
+
+531
+00:43:57,160 --> 00:44:07,560
+Eppo at get eppo.com/lenny and 10X your 
+experiment velocity. That's get eppo.com/lenny. 
+
+532
+00:44:07,560 --> 00:44:12,240
+If someone wants to try this idea of a daily log, 
+what is it exactly? Say decision log or daily log,  
+
+533
+00:44:12,240 --> 00:44:17,480
+is it just things that happen today and 
+then hashtag, "Here's a decision I made,  
+
+534
+00:44:17,480 --> 00:44:21,240
+or here's a decision I think Shopify will 
+make in the future"? Is that the format?
+
+535
+00:44:21,240 --> 00:44:25,680
+Yeah, it depends on how far you want to go down 
+productivity and notetaking as to rabbit holes,  
+
+536
+00:44:25,680 --> 00:44:30,080
+but let's start basic. This is not what I do, 
+but I think it's the easiest place to start.  
+
+537
+00:44:30,080 --> 00:44:36,960
+Spin up a Google doc or a Notion page, just call 
+it daily log and then bullet point out the date  
+
+538
+00:44:36,960 --> 00:44:40,520
+of today. And then as you're going through 
+your day, you have a meeting, just type in  
+
+539
+00:44:40,520 --> 00:44:44,760
+the meeting name. If there's a takeaway, put it 
+under there. If there's a decision you can make,  
+
+540
+00:44:44,760 --> 00:44:50,400
+do hashtag decision. And in this case, say, 
+"Shopify launch Shop app. I think this is their  
+
+541
+00:44:50,400 --> 00:44:58,813
+way to take over the fulfillment to buying 
+behavior loop. The reason for that is X, Y,  
+
+542
+00:44:58,813 --> 00:45:02,360
+Z." Follow up on this in six months 
+and then set your calendar invite.
+
+543
+00:45:02,360 --> 00:45:06,840
+Awesome. So as motivation for listeners to try 
+this sort of thing, just look at the success Kevin  
+
+544
+00:45:06,840 --> 00:45:11,640
+has had as in his career and how insightful 
+he has been so far and will continue to be.  
+
+545
+00:45:11,640 --> 00:45:16,440
+And this is how these happen. This is how your 
+mind learns to see things in a really unique,  
+
+546
+00:45:16,440 --> 00:45:20,240
+interesting way. So I know you're modest 
+and aren't going to take any credit,  
+
+547
+00:45:20,240 --> 00:45:24,480
+but I'm just saying this is how you 
+get better, is trying stuff like this.
+
+548
+00:45:24,480 --> 00:45:27,760
+Footnote, correlation versus 
+causation. It's all put out there.
+
+549
+00:45:27,760 --> 00:45:33,029
+Could be all genes. Could be completely unrelated 
+to anything you've done entire life, I suspect.
+
+550
+00:45:33,029 --> 00:45:35,080
+Could just be me being very 
+lucky, I'll put that out there.
+
+551
+00:45:35,080 --> 00:45:40,480
+Could also be luck. Okay, so something I 
+wanted to touch on with this decision log idea,  
+
+552
+00:45:40,480 --> 00:45:44,440
+and it's a segue to talking about hiring, 
+is I think interviewing is also really good  
+
+553
+00:45:44,440 --> 00:45:48,560
+opportunity to try some like this. I feel like 
+people interview lots of people. They think  
+
+554
+00:45:48,560 --> 00:45:51,200
+they know what they're looking for. They think 
+they've made all these decisions. They think  
+
+555
+00:45:51,200 --> 00:45:55,800
+they have these amazing interview questions that 
+are going to help them see really good signal,  
+
+556
+00:45:55,800 --> 00:45:59,400
+but you never actually go back and see, 
+"Was I right? Should we have hired that  
+
+557
+00:45:59,400 --> 00:46:03,800
+person? Did this person work out? Was that 
+question asked them at all inform? Was it  
+
+558
+00:46:03,800 --> 00:46:08,480
+at all a leading indicator of anything?" And 
+I feel like this is a really good method for  
+
+559
+00:46:08,480 --> 00:46:12,520
+improving your interviewing abilities, is 
+like, "Here's the questions asked. Here's  
+
+560
+00:46:12,520 --> 00:46:16,825
+what I decided. Here's what I think," and then a 
+year later look back, "Was that actually right?"
+
+561
+00:46:16,825 --> 00:46:21,880
+Yeah, totally. I think some of the best companies 
+actually do have a practice around this where  
+
+562
+00:46:21,880 --> 00:46:31,560
+they have a 6, 12, 18 month check-in on new 
+hires and they then compare their performance  
+
+563
+00:46:31,560 --> 00:46:38,960
+against level hired at and then review against 
+the scorecards. It's a pretty laborious process.  
+
+564
+00:46:38,960 --> 00:46:44,720
+So startups aren't probably going to do it 
+in the same amount of rigor, but it shows  
+
+565
+00:46:44,720 --> 00:46:50,720
+you so much about the holes in your interviewing 
+process. So I definitely plus one of that one.
+
+566
+00:46:50,720 --> 00:46:53,960
+I love that. Oh my god, that puts 
+all this pressure on your score,  
+
+567
+00:46:53,960 --> 00:46:57,120
+which is great. So that's actually a segue 
+talking about hiring. There's a couple more  
+
+568
+00:46:57,120 --> 00:47:01,280
+tactics that I've seen you be really good 
+at. So one is just hiring in general. You  
+
+569
+00:47:01,280 --> 00:47:04,680
+have a lot of interesting approaches to 
+hiring, including this idea of a unsell  
+
+570
+00:47:04,680 --> 00:47:08,400
+email where you try to convince someone not 
+to join your company. Talk about that and why  
+
+571
+00:47:08,400 --> 00:47:11,800
+you think that's effective and then anything 
+else along the lines of hiring you've learned.
+
+572
+00:47:11,800 --> 00:47:17,520
+I'll say the idea of the unsell email came 
+from a place of failure, which is at Square  
+
+573
+00:47:17,520 --> 00:47:23,920
+I had shifted into a position where I had to hire 
+a lot of people really quickly. And through that,  
+
+574
+00:47:23,920 --> 00:47:29,640
+as a fairly new hiring manager, you're like, "All 
+right, great. I've been told the goal is to hire  
+
+575
+00:47:29,640 --> 00:47:34,280
+fast." Okay, you give me a metric, you're 
+going to go after it. So you do your best  
+
+576
+00:47:34,280 --> 00:47:39,840
+to get as many people in the door as possible. 
+When you're talking to your recruiting partner,  
+
+577
+00:47:39,840 --> 00:47:44,760
+they're incentivized to increase pass through 
+rates, offer to close rates, all these other  
+
+578
+00:47:44,760 --> 00:47:48,240
+things, and so they're like, "Yeah, this 
+person's really good." And you listen. "Yeah,  
+
+579
+00:47:48,240 --> 00:47:51,800
+they are pretty good, aren't they?" Even though 
+there's a sneaking suspicion that maybe they're  
+
+580
+00:47:51,800 --> 00:47:56,840
+not the right fit, but you move forward anyways.
+So fast-forward, there's a few folks I bring on,  
+
+581
+00:47:57,440 --> 00:48:04,680
+and within six months they come to me and they're 
+like, "This is not at all what I thought I was  
+
+582
+00:48:04,680 --> 00:48:08,840
+going to do. This is not the environment I thought 
+I was going to walk into. You didn't warn me about  
+
+583
+00:48:08,840 --> 00:48:14,560
+this, that and the other. I feel terrible. How do 
+I prevent this?" And the reason it's bad is not  
+
+584
+00:48:14,560 --> 00:48:20,120
+just because they feel surprised, but because 
+then, either one, they decide to leave, two,  
+
+585
+00:48:20,120 --> 00:48:25,240
+they're not performing because it's not the 
+right role or environment for them, or three,  
+
+586
+00:48:25,240 --> 00:48:29,640
+maybe the company is still good, but that 
+role isn't. And so they immediately try to  
+
+587
+00:48:29,640 --> 00:48:33,160
+do internal mobility or something to another 
+team, which then leaves you with the same  
+
+588
+00:48:33,160 --> 00:48:39,800
+hole. So all of those bad outcomes. [inaudible 
+00:48:37] "How do I prevent this?" Well, I just  
+
+589
+00:48:39,800 --> 00:48:44,480
+got to front load all the gnarly stuff they're 
+going to find out in their first six months. 
+
+590
+00:48:44,480 --> 00:48:49,280
+And so the practice I started developing is 
+you go through the whole interview process.  
+
+591
+00:48:49,280 --> 00:48:56,880
+During that period, you're collecting all these 
+little concerns, fears, anxieties that they're not  
+
+592
+00:48:56,880 --> 00:49:02,080
+explicitly saying, but they're definitely hinting 
+at. You got to be pretty honest with yourself  
+
+593
+00:49:02,080 --> 00:49:08,000
+about which ones are real. But then when you get 
+to offer stage, I send an email with no more than  
+
+594
+00:49:08,000 --> 00:49:13,800
+eight bullet points and I say all the terrible 
+things that are probably going to reinforce their  
+
+595
+00:49:13,800 --> 00:49:19,440
+fears. I'm pretty candid about, "This is what 
+it's like here." Maybe one example would be,  
+
+596
+00:49:19,440 --> 00:49:26,080
+"Hey, I'm a parent and I'm worried about 
+work-life balance." Maybe they don't say that  
+
+597
+00:49:26,080 --> 00:49:30,880
+explicitly in the interview process, but you get 
+a feeling for it. And I get that as a parent too. 
+
+598
+00:49:31,600 --> 00:49:36,440
+So if I'm at a startup, I'll be really clear 
+and I'll say, "You know what? We are a series  
+
+599
+00:49:36,440 --> 00:49:42,000
+A startup. We are pushing really hard at 
+product-market fit. The expectation here  
+
+600
+00:49:42,000 --> 00:49:47,600
+is going to be that you're online at 10:00, 
+that you can occasionally hop on a meeting  
+
+601
+00:49:47,600 --> 00:49:53,840
+on a Saturday or Sunday." And if you can tell 
+them that upfront and they can read that whole  
+
+602
+00:49:53,840 --> 00:49:58,640
+email and still be equally excited to join, 
+you find yourself an A+ hire. But if they  
+
+603
+00:49:58,640 --> 00:50:03,400
+read that and they're like," I don't know 
+anymore," it's way better to say, "Great,  
+
+604
+00:50:03,400 --> 00:50:08,200
+this is not a good fit. Let's go our separate 
+ways" than have them leave after six months. 
+
+605
+00:50:08,200 --> 00:50:13,120
+When I first instituted this, I lost 
+30% of candidates at offer stage.
+
+606
+00:50:13,120 --> 00:50:13,640
+Oh wow.
+
+607
+00:50:13,640 --> 00:50:18,320
+Which drove my recruiting partners insane because 
+they look terrible. Their manager is like,  
+
+608
+00:50:18,320 --> 00:50:21,560
+"What the hell are you doing? You're losing 
+everyone at the very end." And so they ask,  
+
+609
+00:50:21,560 --> 00:50:24,120
+"Can you either not send this thing?" Or,  
+
+610
+00:50:24,120 --> 00:50:27,640
+"Can you send it at the very beginning?" And 
+my answer is no, because I don't know what  
+
+611
+00:50:27,640 --> 00:50:32,160
+they're afraid of yet. I have to go through 
+the whole process to actually understand the  
+
+612
+00:50:32,160 --> 00:50:36,800
+thing that's going to potentially make them 
+say no, and that's really crucial I think.
+
+613
+00:50:36,800 --> 00:50:41,400
+But once you hear it again, this 
+is such an obviously good idea,  
+
+614
+00:50:41,400 --> 00:50:46,560
+clearly not an easy thing to do. In 
+this case where recruiters were upset,  
+
+615
+00:50:46,560 --> 00:50:52,560
+is it just get buy-in from folks above, like, 
+"Okay, this sucks for them, but at a macro level,  
+
+616
+00:50:52,560 --> 00:50:55,400
+this is good for the business" and they're 
+like, "All right, let's keep doing it"?
+
+617
+00:50:55,400 --> 00:50:58,560
+At Square, at least, when I first started doing 
+it, luckily I had a very good relationship with  
+
+618
+00:50:58,560 --> 00:51:05,000
+them. So that's a good starting point. This is 
+maybe going to come across a little bit flippant,  
+
+619
+00:51:05,000 --> 00:51:10,040
+but they can't stop you from sending an email 
+technically. So I'm just going to send the  
+
+620
+00:51:10,040 --> 00:51:16,640
+email. And if someone really wants to come and 
+say, "This is bad for business," whatever it is,  
+
+621
+00:51:16,640 --> 00:51:21,720
+I have very strong reasons for why that's not 
+the case. And now I've done it so many times,  
+
+622
+00:51:21,720 --> 00:51:26,560
+at least, that I can point to very clear 
+proof points on why this is the right path.
+
+623
+00:51:27,560 --> 00:51:32,880
+In theory, the incentives would be aligned where 
+the recruiter success matters. It's based on,  
+
+624
+00:51:32,880 --> 00:51:35,640
+did they actually have a good time? Did 
+they stay? Did they have good impact?
+
+625
+00:51:35,640 --> 00:51:35,900
+Totally.
+
+626
+00:51:35,900 --> 00:51:39,120
+But since they're not, obviously 
+incentives aren't right.
+
+627
+00:51:39,120 --> 00:51:46,880
+I think some companies have shifted on that, 
+where recruiters and salespeople are compensated  
+
+628
+00:51:46,880 --> 00:51:51,440
+sometimes in similar ways in terms of quota 
+and whatnot. And so they'll hold the recruiter  
+
+629
+00:51:51,440 --> 00:51:58,760
+accountable to six, 12 post offer tenure before 
+they say, "Oh yeah, you successfully landed this  
+
+630
+00:51:58,760 --> 00:52:03,720
+role." So you can tweak the incentive structure 
+a little bit, but not everyone does that.
+
+631
+00:52:03,720 --> 00:52:08,320
+Okay. So the advice here is to end up with 
+better people that end up being successful  
+
+632
+00:52:08,320 --> 00:52:14,480
+and happy. Keep track of the things that will 
+probably be painful for them at the company,  
+
+633
+00:52:14,480 --> 00:52:19,680
+and then craft an email that shares upfront, 
+"Here's what made be a problem if you join,  
+
+634
+00:52:19,680 --> 00:52:22,600
+and I just want to be very upfront 
+about it." I think you actually  
+
+635
+00:52:22,600 --> 00:52:25,360
+shared a template of one of these 
+emails in one of your blog posts.
+
+636
+00:52:25,360 --> 00:52:29,840
+Yep, that's right. I have a fairly 
+real one in [inaudible 00:52:30].
+
+637
+00:52:29,840 --> 00:52:33,080
+Is there anything else hiring-wise? I 
+know there's probably infinite things  
+
+638
+00:52:33,080 --> 00:52:35,080
+that you've done, but is there anything 
+else you think might be worth sharing  
+
+639
+00:52:35,080 --> 00:52:39,320
+of things you've learned to be more 
+successful at hiring awesome people?
+
+640
+00:52:39,320 --> 00:52:44,120
+One final note I'll make on unsell email is it's 
+not as if you just send the email and then they  
+
+641
+00:52:44,120 --> 00:52:52,760
+either say yes or no. Most of the time they will 
+say, "Thank you. I am cool with six of these.  
+
+642
+00:52:52,760 --> 00:52:58,440
+This one freaks me out. Can we talk more?" 
+Definitely. And I think this is where hiring  
+
+643
+00:52:58,440 --> 00:53:04,760
+managers have an incredible responsibility that 
+sometimes isn't taken as seriously as it should,  
+
+644
+00:53:04,760 --> 00:53:09,680
+which is, when you are working with 
+someone to get them to join or to offer,  
+
+645
+00:53:10,320 --> 00:53:15,160
+you need to bend to do whatever it takes 
+for them. And so if they're like, "Hey,  
+
+646
+00:53:15,160 --> 00:53:18,480
+the only time I can talk is tonight at 
+11 o'clock after my kids go to bed." 
+
+647
+00:53:18,480 --> 00:53:21,760
+"No problem. Here's my phone number, let's hop 
+on. I will walk you through whatever you want  
+
+648
+00:53:21,760 --> 00:53:28,040
+to talk about." That sort of has to be the 
+place you get to for really strong hires.  
+
+649
+00:53:28,040 --> 00:53:33,920
+So that's just one other thing I'll say.
+The meta point around that is you need to  
+
+650
+00:53:33,920 --> 00:53:38,520
+be really invested in the candidates. This 
+probably does change at a certain scale,  
+
+651
+00:53:38,520 --> 00:53:44,360
+like if you're "organization" is hiring a hundred 
+engineers or whatever, you have process around it,  
+
+652
+00:53:44,360 --> 00:53:49,600
+you have pipelines, there's a machine at that 
+point, but I do think the direct hiring managers  
+
+653
+00:53:49,600 --> 00:53:54,320
+have a responsibility to be really involved in 
+every individual, because there's no one who's  
+
+654
+00:53:55,680 --> 00:54:01,280
+directly hiring a hundred people. It's always 
+within a number that I think you can take on.
+
+655
+00:54:01,280 --> 00:54:05,120
+Okay, so this is the final tactic that I heard 
+you're amazing at, which is automating user  
+
+656
+00:54:05,120 --> 00:54:09,960
+research. On the surface this sounds amazing. "I'm 
+going to automate my user research. It's going to  
+
+657
+00:54:09,960 --> 00:54:13,520
+be amazing. So great." Talk about why you find 
+this really powerful and important. And then how  
+
+658
+00:54:13,520 --> 00:54:17,440
+do you actually do this? How do you automate user 
+research? How have you done this on your teams?
+
+659
+00:54:17,440 --> 00:54:23,360
+Let's start from why this even matters. 
+I think a lot of folks, going back to  
+
+660
+00:54:23,360 --> 00:54:28,480
+what is the point of product management, I 
+think there's a similar overlap with UXR,  
+
+661
+00:54:28,480 --> 00:54:33,880
+like user experience research, and people 
+will say, "Well, if they're doing research,  
+
+662
+00:54:33,880 --> 00:54:39,480
+what do I need to do? I should just be consuming 
+what they're producing to help with that." 
+
+663
+00:54:39,480 --> 00:54:45,040
+I know PM should settle for looking through 
+bent glass in my opinion because whether  
+
+664
+00:54:45,040 --> 00:54:49,560
+it's a research report, whether it's 
+something a salesperson is telling you,  
+
+665
+00:54:49,560 --> 00:54:56,320
+whether it's market research, don't care, 
+it's been processed by someone, and PMs  
+
+666
+00:54:56,920 --> 00:55:03,160
+need direct exposure to raw material. End of 
+story. And so that's where I think you just need  
+
+667
+00:55:03,160 --> 00:55:08,520
+to constantly be talking to or interacting with 
+whoever is your customer. That's the foundation. 
+
+668
+00:55:08,520 --> 00:55:13,800
+So okay, if we all agree on that, then the 
+question is, "Well, I don't have time. It's  
+
+669
+00:55:13,800 --> 00:55:20,920
+so hard. How do I find them? My customer success 
+manager says I can't talk to the client." If you  
+
+670
+00:55:20,920 --> 00:55:27,040
+are in a situation where the product manager 
+is literally not allowed to talk to a customer,  
+
+671
+00:55:27,040 --> 00:55:31,600
+there is something structurally wrong and that 
+needs to be fixed first. So I'm going to ignore  
+
+672
+00:55:31,600 --> 00:55:36,120
+that one for now just because that's a whole 
+other rabbit hole, but you need to fix that  
+
+673
+00:55:36,120 --> 00:55:41,080
+in order to even get close to the next thing.
+Okay, now the excuse is going to be, "Well,  
+
+674
+00:55:41,080 --> 00:55:46,880
+I don't have time. I don't want to run a program. 
+I don't want to have to query and look up and  
+
+675
+00:55:46,880 --> 00:55:51,280
+send out emails every week." There's so 
+many good resources out there right now,  
+
+676
+00:55:51,280 --> 00:55:56,480
+and I think that there are... I'll speak 
+mainly from a B2B sense. I think B2C, slightly  
+
+677
+00:55:56,480 --> 00:56:02,400
+different story, I don't have as much experience 
+there. But B2B, the two things I will say, one is,  
+
+678
+00:56:02,400 --> 00:56:05,600
+there's this thing called userinterviews.com. 
+Shout out to them. They're pretty much user  
+
+679
+00:56:05,600 --> 00:56:13,560
+testing but explicitly focused on B2B and you can 
+put in super clear criteria on the type of people  
+
+680
+00:56:13,560 --> 00:56:17,840
+you want to talk to. They do the heavy lifting 
+and sourcing it, and then you just review and say,  
+
+681
+00:56:17,840 --> 00:56:22,280
+"Yes, yes. No, no," and you can have a steady 
+stream of the exact ICP, you want to go after.  
+
+682
+00:56:22,280 --> 00:56:28,720
+ICP is ideal customer profile that you want to go 
+after just coming to you automatically. Amazing. 
+
+683
+00:56:28,720 --> 00:56:33,280
+The next one though, it depends on whether 
+or not you have this tooling in place,  
+
+684
+00:56:33,280 --> 00:56:39,360
+but the broader theme behind this next category 
+is your sales team is a research team, and if you  
+
+685
+00:56:39,360 --> 00:56:44,960
+don't view them that way, you are missing out on 
+half the value. And so there's tools like Gong,  
+
+686
+00:56:44,960 --> 00:56:51,520
+which do call recordings, and you can set 
+up filters and alerts for specific terms,  
+
+687
+00:56:51,520 --> 00:56:55,920
+phrases, competitors, whatever you want. I 
+don't care what PM you are in the team. You  
+
+688
+00:56:55,920 --> 00:57:00,360
+can find the terms that are associated with what 
+you care about the most. Those then get pushed  
+
+689
+00:57:00,360 --> 00:57:06,320
+automatically to a Slack channel or otherwise. And 
+then you can set up workflows either via Zappy or  
+
+690
+00:57:06,320 --> 00:57:11,800
+something else to say, "Who was the customer? 
+Pull their email, put that into a sequence,  
+
+691
+00:57:11,800 --> 00:57:17,120
+drop in my Calendly" and you just have interviews 
+showing up automatically on your calendar. I will  
+
+692
+00:57:17,120 --> 00:57:21,520
+say I cannot take credit for this. Shout 
+out to Beth Hills who was a PM that hired  
+
+693
+00:57:21,520 --> 00:57:28,880
+at Mutiny. She is the queen of automating customer 
+research and built an amazing system around this.
+
+694
+00:57:28,880 --> 00:57:33,000
+So the way it works is you set a 
+term for like, I don't know, POS,  
+
+695
+00:57:33,000 --> 00:57:39,240
+point of sale, something in Gong, and if 
+somebody says that or has an issue there,  
+
+696
+00:57:39,240 --> 00:57:42,760
+talk about again how that schedules 
+a meeting with you potentially.
+
+697
+00:57:42,760 --> 00:57:49,960
+Yes. So Gong has an integration with Slack. 
+You set up this alert, it posts to Slack  
+
+698
+00:57:49,960 --> 00:57:55,720
+the excerpt of the transcript where it was 
+mentioned along with the user or customer  
+
+699
+00:57:55,720 --> 00:58:02,720
+name. So in this case, it'll be Lenny's 
+Burger shop. lenny@lennysburgershop.com,  
+
+700
+00:58:02,720 --> 00:58:10,480
+and then you can set up a Zapier to take every 
+new Slack post from that and then send using,  
+
+701
+00:58:10,480 --> 00:58:16,800
+I don't know, customer.io in email to 
+that person using that field. And then  
+
+702
+00:58:16,800 --> 00:58:21,760
+in that template of the email, drop in your 
+Calendly specifically for user research.
+
+703
+00:58:21,760 --> 00:58:28,040
+Wow, that is genius. I love that. There's 
+another similar tactic that Teresa Torres  
+
+704
+00:58:28,040 --> 00:58:31,240
+shared on the podcast in one of the earlier 
+episodes where you have a little popup on your  
+
+705
+00:58:31,240 --> 00:58:36,760
+homepage asking people, "Hey, do you want to talk? 
+We'd love to hear feedback on our product. Click  
+
+706
+00:58:36,760 --> 00:58:40,512
+here if you want to give us some feedback," 
+and then that schedules Calendly on the PMs.
+
+707
+00:58:40,512 --> 00:58:40,520
+Totally.
+
+708
+00:58:40,520 --> 00:58:46,360
+PM's calendar. So you mentioned Gong, 
+customer.io. There's some tools here.  
+
+709
+00:58:47,520 --> 00:58:52,880
+Zapier obviously. Is there anything else you 
+find useful to help automate the sort of stuff?
+
+710
+00:58:52,880 --> 00:58:56,040
+If I take a step back from the automation side  
+
+711
+00:58:56,840 --> 00:59:04,440
+or maybe straddle it, depending on the type of 
+business you're in, there's ideally people talking  
+
+712
+00:59:04,440 --> 00:59:11,640
+about you somewhere, right? It's either happening 
+on Reddit or Twitter or on some forum or your  
+
+713
+00:59:11,640 --> 00:59:17,040
+support forum. There is a community, there's 
+a destination somewhere. And if there isn't,  
+
+714
+00:59:17,040 --> 00:59:21,720
+then I don't know, that's too bad. Maybe you 
+don't have product-market fit. If you can  
+
+715
+00:59:21,720 --> 00:59:27,760
+take advantage of that, you can usually set up 
+something. And if it's not a Gong or a Zapier,  
+
+716
+00:59:27,760 --> 00:59:31,440
+maybe it needs to be just a custom script that 
+you write or you sit down with an engineer to  
+
+717
+00:59:31,440 --> 00:59:36,520
+say like, "How do we set up alerting around this 
+thing so that I know when things are happening?" 
+
+718
+00:59:36,520 --> 00:59:43,160
+I think you can't use the effort required 
+to do that as an excuse to not be talking  
+
+719
+00:59:43,160 --> 00:59:47,800
+to your customers more frequently. Because 
+again, if we go back to a product manager  
+
+720
+00:59:47,800 --> 00:59:52,960
+should be trying to convert this potential into 
+kinetic energy, part of that understanding and  
+
+721
+00:59:52,960 --> 00:59:59,640
+part of knowing the constraints you can apply is 
+just living in that world as much as possible. 
+
+722
+00:59:59,640 --> 01:00:06,280
+The best comparison I can give is, there 
+is a world of difference between reading  
+
+723
+01:00:06,280 --> 01:00:14,480
+a report about a lime cook and then standing 
+with a lime cook. You will just pick up on  
+
+724
+01:00:14,480 --> 01:00:20,760
+so many ancillary aspects of what their life 
+is like that cannot possibly be communicated  
+
+725
+01:00:20,760 --> 01:00:27,240
+in a report. You owe it to yourself as a PM 
+to be exposed to those things all the time.
+
+726
+01:00:27,240 --> 01:00:31,800
+In my experience, every time I talk 
+to a customer, I'm always reminded,  
+
+727
+01:00:31,800 --> 01:00:36,720
+"Why have I not been doing this more? How can 
+I not be doing this? It's absurd that I haven't  
+
+728
+01:00:36,720 --> 01:00:40,200
+done this," like every time you actually 
+do it. But until you do that, you're like,  
+
+729
+01:00:40,200 --> 01:00:45,720
+"No, no, I know what they want. I'm reading all 
+the customer service talent issues, I'm reading  
+
+730
+01:00:45,720 --> 01:00:51,040
+their emails, I get it." Until you actually talk 
+to them, you're like, "Oh wow, I had no idea." 
+
+731
+01:00:51,040 --> 01:00:55,400
+I love that your advice is like, 
+the tactics you're sharing aren't,  
+
+732
+01:00:55,400 --> 01:00:58,560
+"Here's how you get a bunch of feedback." 
+From your users, it's like, "Here's how  
+
+733
+01:00:58,560 --> 01:01:02,800
+you actually get to talk to the right users." 
+It's like in the end of the funnel talking to  
+
+734
+01:01:02,800 --> 01:01:07,440
+a potential customer. It's not just reading 
+a cool... some feedback that they shared.
+
+735
+01:01:07,440 --> 01:01:16,720
+That's right. I think just like the last 
+point on this one is when you join a new  
+
+736
+01:01:16,720 --> 01:01:22,040
+team or start a new role, every PM 
+is budding with energy to do this,  
+
+737
+01:01:22,040 --> 01:01:25,520
+"Of course I'm going to talk to my users." 
+But then you reach a point where you go,  
+
+738
+01:01:25,520 --> 01:01:30,840
+"No, I know them inside and out. I don't need 
+to talk to them anymore. I can write a PRD in  
+
+739
+01:01:30,840 --> 01:01:37,400
+my sleep. And I'm so busy doing both, product 
+improvements, maintenance, annual planning,  
+
+740
+01:01:37,400 --> 01:01:43,720
+something else.I can use my intuition from the 
+hundred interviews I've already done. I don't  
+
+741
+01:01:43,720 --> 01:01:49,960
+need to do one more interview." And that is a 
+very tempting lie to tell yourself because the  
+
+742
+01:01:49,960 --> 01:01:56,000
+world is changing, their lives are changing, 
+and you need to constantly be exposed to those  
+
+743
+01:01:56,000 --> 01:02:00,920
+little micro changes in their lives in order to 
+build the product that they'll eventually need.
+
+744
+01:02:00,920 --> 01:02:05,120
+The best explanation I've heard of this is 
+actually from your new boss, Patrick Collison,  
+
+745
+01:02:05,120 --> 01:02:08,960
+boss's boss's boss, I don't know how far 
+away you're from him, where he talks about  
+
+746
+01:02:08,960 --> 01:02:13,680
+user research and where it fits in. And the way he 
+described it is, instead of doing user research,  
+
+747
+01:02:13,680 --> 01:02:18,080
+talking to customers, informing what to build, 
+it's talking to user, talking to customers  
+
+748
+01:02:18,080 --> 01:02:22,920
+informs your mental of what the customer 
+needs and then that informs what to build.
+
+749
+01:02:22,920 --> 01:02:24,720
+100%.
+
+750
+01:02:24,720 --> 01:02:28,360
+Beautiful way to think about it.
+Okay, so I'm going to take us to a  
+
+751
+01:02:28,360 --> 01:02:34,760
+couple recurring themes of this podcast, a couple 
+corners of this room that we have. First of all,  
+
+752
+01:02:34,760 --> 01:02:39,680
+I want to go to AI corner, so let's walk 
+over there. Hello, AI corner. I'm curious  
+
+753
+01:02:39,680 --> 01:02:46,280
+if you've found any interesting uses 
+of AI in your work or in your life.
+
+754
+01:02:46,280 --> 01:02:50,120
+There's plenty in work. I don't know if 
+any of them are interesting or novel. I  
+
+755
+01:02:50,120 --> 01:02:54,200
+feel like everyone's just figuring it out in 
+real time together. So I'll actually take us  
+
+756
+01:02:54,200 --> 01:02:59,680
+in a slightly different direction. And this may 
+be isn't directly useful to product managers,  
+
+757
+01:02:59,680 --> 01:03:06,200
+but I think it's a really good story.
+So when Midjourney V1 was released,  
+
+758
+01:03:06,200 --> 01:03:12,320
+if we can remember that far back, it 
+was at least I got beta access on a  
+
+759
+01:03:12,320 --> 01:03:18,800
+Saturday. And for what's worth, I have three 
+daughters, one of them's seven years old,  
+
+760
+01:03:18,800 --> 01:03:23,240
+and so her and I were awake. We were waiting for 
+the other two to wake up and I was like, "Oh,  
+
+761
+01:03:24,120 --> 01:03:29,240
+I have this cool new thing. Do you want to play 
+with me?" And she goes, "Of course." So we log in,  
+
+762
+01:03:29,240 --> 01:03:35,280
+we create an account and I type in the first 
+prompt, image gets generated, it's like a rainbow  
+
+763
+01:03:35,280 --> 01:03:39,960
+or something. And then I ask her, "Do you want to 
+try it?" She goes, "Of course." So she types in  
+
+764
+01:03:39,960 --> 01:03:48,720
+unicorn prancing in a field and it generates this 
+hideous looking demented unicorn with two rear  
+
+765
+01:03:48,720 --> 01:03:55,120
+ends and a demon flying over it. And I'm appalled 
+at first thinking that she's going to feel really  
+
+766
+01:03:55,120 --> 01:04:03,920
+bad about what she got shown, but instead I 
+look over and she's in awe. She is amazed. 
+
+767
+01:04:03,920 --> 01:04:07,000
+And then she turns to me and 
+she goes, "Did I draw that?" 
+
+768
+01:04:08,240 --> 01:04:13,400
+"Yeah, I guess you did." And the thing that 
+I got hung up on was that she used the word  
+
+769
+01:04:13,400 --> 01:04:20,840
+draw. She didn't say, "Oh, I enter a prompt and 
+the LLM produced this thing," or whatever weird  
+
+770
+01:04:20,840 --> 01:04:27,880
+terminology that all of us use. It's like, "Did I 
+draw that?" I don't know when it clicked for me,  
+
+771
+01:04:27,880 --> 01:04:34,040
+but at some point in time after that I was 
+like, "The concept of these image generation  
+
+772
+01:04:34,040 --> 01:04:42,080
+models is the same as a crayon to her. There is 
+no difference in her mind." And that is an insane  
+
+773
+01:04:42,080 --> 01:04:49,320
+change that I can't even comprehend. And so for 
+me that's just been I think an experience that  
+
+774
+01:04:49,320 --> 01:04:53,800
+I go back to when I think about people asking, 
+"What do you think AI is going to do and what's  
+
+775
+01:04:53,800 --> 01:05:00,840
+the next thing? And is it chat or is it something 
+else?" I cannot comprehend what a child who grew  
+
+776
+01:05:00,840 --> 01:05:07,320
+up with a crayon of an LLM is going to think 
+is a good product in 20 years. I need to start  
+
+777
+01:05:07,320 --> 01:05:12,960
+crying. But goddammit, I have no freaking clue.
+And so I think I have a cheat code actually as  
+
+778
+01:05:12,960 --> 01:05:20,040
+a parent, because I get to see how they evolve 
+and use these tools in real time. But all I can  
+
+779
+01:05:20,040 --> 01:05:29,440
+say is we are not even beneath the dust on the 
+surface when it comes to what's going to change.
+
+780
+01:05:29,440 --> 01:05:33,320
+Wow, that is an amazing story, it gave 
+me tingles. It makes me think a little  
+
+781
+01:05:33,320 --> 01:05:39,720
+bit about how we used to code in binary 
+and then assembly and now it's Java,  
+
+782
+01:05:39,720 --> 01:05:47,520
+and then I don't know, all the languages, 
+Python. And now it's like AI, LLM generating  
+
+783
+01:05:47,520 --> 01:05:52,000
+code and it's the same thing for drawing 
+potentially. It used to be sticks on a cave  
+
+784
+01:05:52,000 --> 01:05:58,960
+and then became crayons and pens and iPads 
+and all that stuff. And now it's again LLMs,  
+
+785
+01:05:58,960 --> 01:06:06,120
+so that's pretty bonkers. Amazing story. Thanks 
+for sharing that. Useful to PMs and non PMs alike. 
+
+786
+01:06:06,120 --> 01:06:10,920
+Okay, I'm going to take you to another 
+recurring corner/segment of the podcast,  
+
+787
+01:06:10,920 --> 01:06:18,800
+fail corner. I'm curious if there's a story 
+of failure that you can share of something  
+
+788
+01:06:18,800 --> 01:06:25,160
+that didn't go the way you wanted and still 
+had a positive impact on your life or career?
+
+789
+01:06:25,160 --> 01:06:32,120
+Well, there's countless stories of failure, 
+but I'll choose the one that I think I've had  
+
+790
+01:06:32,120 --> 01:06:39,280
+to reference the most with people and has been 
+to date the most difficult one to really talk  
+
+791
+01:06:39,280 --> 01:06:44,240
+about. I'm on the other end of it, and so now it's 
+very easy, but it took several years to get there. 
+
+792
+01:06:44,240 --> 01:06:51,520
+So context, I'm [inaudible 01:06:47] my way 
+to PM, I land my first official, by title,  
+
+793
+01:06:51,520 --> 01:06:58,600
+PM job at a startup. I made it. I've arrived. 
+I'm officially a product manager. And we go up,  
+
+794
+01:06:58,600 --> 01:07:04,680
+we go down, all the things happen. Fast-forward, 
+the company is really struggling and so we go  
+
+795
+01:07:04,680 --> 01:07:13,240
+through a series of rolling layoffs and I'm round 
+4 something. At that point in time, my wife was  
+
+796
+01:07:13,240 --> 01:07:20,800
+nine months pregnant with our first child, and 
+so I am freaking out. There is the personal side  
+
+797
+01:07:20,800 --> 01:07:25,520
+that I'm worried about, but then there's also 
+my identity that has been completely crushed,  
+
+798
+01:07:26,160 --> 01:07:31,840
+because in the moment all I could think was, 
+"I thought I was a product manager. This is  
+
+799
+01:07:31,840 --> 01:07:42,720
+evidence I am not," and I couldn't get past that.
+And so for what it's worth, this is the one post I  
+
+800
+01:07:42,720 --> 01:07:48,080
+have on my website that I actually feel really, 
+really proud of. It's called Finding Swagger. I  
+
+801
+01:07:48,080 --> 01:07:55,440
+can talk about why it's titled that way, but it's 
+the thing that I really wrote more for myself  
+
+802
+01:07:55,960 --> 01:08:01,480
+because it's a good reminder to me every 
+time I fall into this mentality again,  
+
+803
+01:08:01,480 --> 01:08:11,600
+because that may have been the first time that I 
+really had the feelings of, "I'm not worth it" or,  
+
+804
+01:08:11,600 --> 01:08:16,880
+"I'm not meant to be this person," but it's 
+recurred several times since then over the past  
+
+805
+01:08:16,880 --> 01:08:25,600
+decade. And when I read back through my mentality 
+of how I got to the other end of it, it helps  
+
+806
+01:08:25,600 --> 01:08:31,760
+even myself sort of get back on the horse.
+So okay, I get laid off, I'm distraught, I have  
+
+807
+01:08:31,760 --> 01:08:37,440
+no purpose, I'm nothing. And it was through a lot 
+of reflection, a lot of conversation with friends  
+
+808
+01:08:37,440 --> 01:08:48,240
+and my wife where you eventually need to convince 
+yourself that there is a difference between you  
+
+809
+01:08:48,240 --> 01:08:55,080
+not being good at something and a business or 
+company not needing that thing at a particular  
+
+810
+01:08:55,080 --> 01:09:01,920
+moment in time, or you being very good at 
+something but not in the way that a company needs. 
+
+811
+01:09:01,920 --> 01:09:07,880
+And so I think once I was able to get to that, 
+Square for me was the immediate subsequent role  
+
+812
+01:09:07,880 --> 01:09:15,080
+that I took on. And I went into that thing just 
+full steam ahead, I'm going to prove myself. "I  
+
+813
+01:09:15,080 --> 01:09:20,400
+know I'm good," because I think I'm good, "and I 
+am going to prove the hell out of that" mainly to  
+
+814
+01:09:20,400 --> 01:09:26,000
+myself, but ideally to other people too.
+I think you shouldn't do things for  
+
+815
+01:09:26,000 --> 01:09:32,240
+other people for validation, but the initial 
+success I got to see in launching a product,  
+
+816
+01:09:32,240 --> 01:09:38,600
+gaining the trust of my peers, having something 
+that restaurants were texting me about, saying,  
+
+817
+01:09:38,600 --> 01:09:43,560
+"I can start my restaurant because of this. 
+I didn't go down during rush hour because of  
+
+818
+01:09:43,560 --> 01:09:49,360
+this," that gave me the validation to say, 
+"Okay, I am competent at this thing called  
+
+819
+01:09:49,360 --> 01:09:52,960
+product management." And then from there you 
+can continue to build and continue to grow. 
+
+820
+01:09:52,960 --> 01:09:57,640
+But I think right now, the market's weird, right? 
+The market's wonky. There's a lot of really good  
+
+821
+01:09:57,640 --> 01:10:05,240
+talent that is just getting hit over sideways. 
+I have a lot of friends that are having the same  
+
+822
+01:10:05,240 --> 01:10:10,160
+mental conversations around, "Well, I guess 
+I'm just not worth it. I guess I wasn't cut  
+
+823
+01:10:10,160 --> 01:10:16,800
+out actually to do this job, do this role, be of 
+this purpose." In some cases, maybe that's true  
+
+824
+01:10:16,800 --> 01:10:22,080
+and you can sort of have a career transition or a 
+pivot in your life, but I think it's worthwhile to  
+
+825
+01:10:22,080 --> 01:10:28,480
+reflect on what are the things that were in your 
+control that you can now change moving forward?  
+
+826
+01:10:28,480 --> 01:10:34,800
+And then what are the things that were truly out 
+of your control that you can now apply to find  
+
+827
+01:10:34,800 --> 01:10:41,320
+a better fit? And that's one of the big things 
+that I've been able to, I think, come around to. 
+
+828
+01:10:41,320 --> 01:10:49,080
+And it's really hard because early on I think 
+it's very tempting to associate a lot of different  
+
+829
+01:10:49,080 --> 01:10:54,960
+things with your identity. You're like, "I'm 
+a startup guy. I'm a PM, I'm a fast whatever,  
+
+830
+01:10:54,960 --> 01:11:01,840
+I'm a fast thinker." And when an event happens 
+that pokes at that part of your identity,  
+
+831
+01:11:01,840 --> 01:11:11,160
+the rest of it crumbles. And so long story short, 
+I think it's really important for folks to use  
+
+832
+01:11:11,160 --> 01:11:16,840
+these moments where it feels bad and feels like 
+a failure to reevaluate what parts are actually  
+
+833
+01:11:16,840 --> 01:11:23,120
+part of your identity and which parts are in 
+your control to change in whatever you do next.
+
+834
+01:11:23,120 --> 01:11:28,560
+Wow, what an important and great story. As 
+you mentioned, a lot of people are dealing  
+
+835
+01:11:28,560 --> 01:11:33,280
+with finding it hard to find a new gig and a 
+bunch of layoffs. I think this is going to help  
+
+836
+01:11:33,280 --> 01:11:38,160
+a lot of people. The two categories you shared I 
+think are especially powerful. So the advice here  
+
+837
+01:11:38,160 --> 01:11:43,880
+is just separate, "This company just doesn't 
+need someone with my skills right now" from,  
+
+838
+01:11:43,880 --> 01:11:47,400
+"I'm not good at these skills." Can you just 
+share those two kind of things that might  
+
+839
+01:11:47,400 --> 01:11:51,960
+be true that you may not be recognizing 
+about why they maybe laid you off again?
+
+840
+01:11:51,960 --> 01:11:56,520
+Totally. So one is the business just doesn't have 
+a need for you. They got ahead of their skis and  
+
+841
+01:11:56,520 --> 01:12:02,120
+that's their fault. They probably admit that, 
+but that's not up to you. The second one though  
+
+842
+01:12:02,120 --> 01:12:10,200
+is my skills and the way that company operates 
+are not compatible. This one I think is really,  
+
+843
+01:12:10,200 --> 01:12:14,680
+really important because I've seen so many 
+times where there's been a PM engineer,  
+
+844
+01:12:14,680 --> 01:12:20,080
+designer, whatever role, they 
+cannot make it work at company A,  
+
+845
+01:12:20,080 --> 01:12:26,120
+and then you see them five years later just 
+killing it in company B and you're like,  
+
+846
+01:12:26,120 --> 01:12:32,600
+"Did they change as a person? Did they get super 
+good at what they were bad at before?" Maybe a  
+
+847
+01:12:32,600 --> 01:12:36,880
+little bit, but honestly it was just a change 
+in environment. And when you find the right  
+
+848
+01:12:36,880 --> 01:12:41,560
+environment in the right role, you just flourish.
+And I think this is actually... Sorry,  
+
+849
+01:12:41,560 --> 01:12:44,520
+we'll go back to hiring for just 
+a moment or at least management.
+
+850
+01:12:44,520 --> 01:12:45,200
+Please.
+
+851
+01:12:45,200 --> 01:12:51,360
+This is why performance conversations 
+can always feel so difficult because  
+
+852
+01:12:51,360 --> 01:12:56,640
+it seems like you're telling someone you 
+are bad, and as the recipient you're like,  
+
+853
+01:12:56,640 --> 01:13:04,520
+"I am bad." No one wants to hear that. But the 
+reality is, you are not bad. It is that maybe  
+
+854
+01:13:04,520 --> 01:13:09,280
+the way that your environment is working, 
+the machine that you exist as a part of,  
+
+855
+01:13:09,280 --> 01:13:16,000
+is not the kind that you thrive in. And 
+so it's within your control to decide,  
+
+856
+01:13:16,000 --> 01:13:21,160
+"I'm going to change how I work to fit 
+that environment" or, "I'm going to find  
+
+857
+01:13:21,160 --> 01:13:26,440
+a different environment that actually fits the 
+way I work much better." And that's empowering.
+
+858
+01:13:26,440 --> 01:13:31,120
+I think that also applies a lot to interviewing. 
+A lot of times you interview, don't get the job,  
+
+859
+01:13:31,120 --> 01:13:35,600
+and you exactly feel like, "Oh, I'm just not 
+good enough." But really that company's way of  
+
+860
+01:13:35,600 --> 01:13:40,040
+working just may not gel with the way you operate. 
+Like Uber operates very differently from Airbnb,  
+
+861
+01:13:40,040 --> 01:13:45,120
+operates very differently from Google. And so it's 
+not that necessarily something you're doing wrong,  
+
+862
+01:13:45,120 --> 01:13:47,800
+they just don't think you're fit.
+And this connects to something. I  
+
+863
+01:13:47,800 --> 01:13:54,400
+just had another guest on the podcast. He was a 
+brain science dude, and he talks about how every  
+
+864
+01:13:54,400 --> 01:14:00,200
+company has this kind of habitat. What habitat 
+are you creating for your employees to enable  
+
+865
+01:14:00,200 --> 01:14:04,280
+them to think differently or to be shut down 
+and not feel like they can be creative or try  
+
+866
+01:14:04,280 --> 01:14:09,760
+big things or not? And basically, the way 
+he just kind of to leverage that metaphor,  
+
+867
+01:14:09,760 --> 01:14:16,200
+like you may be a palm tree and you're trying to 
+join Antarctica and it's not going to go well.
+
+868
+01:14:16,200 --> 01:14:16,880
+Totally.
+
+869
+01:14:16,880 --> 01:14:21,960
+You got to find Palm Springs or some hard 
+place. Kevin, this has been amazing. Okay,  
+
+870
+01:14:21,960 --> 01:14:25,360
+so before we get to very exciting lightning 
+round, is there anything else that you  
+
+871
+01:14:25,360 --> 01:14:30,280
+think is important or valuable to share, 
+leave listeners with? And if not, absolutely.
+
+872
+01:14:30,280 --> 01:14:32,680
+I think we'll probably find 
+ourselves on interesting  
+
+873
+01:14:32,680 --> 01:14:35,120
+detours to the lightning round, so let's roll in.
+
+874
+01:14:35,120 --> 01:14:39,240
+Kevin, with that, we've reached our very 
+exciting lightning round. Are you ready?
+
+875
+01:14:39,240 --> 01:14:40,480
+Hell, yeah. Let's do it.
+
+876
+01:14:40,480 --> 01:14:43,280
+Let's do it. Question one, 
+what are two or three books  
+
+877
+01:14:43,280 --> 01:14:45,960
+that you've recommended most to other people?
+
+878
+01:14:45,960 --> 01:14:51,880
+I'll start by saying the type of book by 
+volume that I read and get the most joy  
+
+879
+01:14:51,880 --> 01:14:59,360
+from are autobiographies and memoirs. 
+It is just the ultimate cheat code to  
+
+880
+01:14:59,360 --> 01:15:04,720
+spend time with people that you respect, 
+are interested by, or want to learn from. 
+
+881
+01:15:05,360 --> 01:15:13,440
+Could you imagine what it would take in real 
+life to sit down with Albert Einstein for 50  
+
+882
+01:15:13,440 --> 01:15:19,480
+hours and just have him talk to you about 
+his life? Impossible. But you can read  
+
+883
+01:15:19,480 --> 01:15:23,000
+and pretty much get the same thing.
+So anyways, strong requirement or a  
+
+884
+01:15:23,000 --> 01:15:27,920
+strong suggestion, go read autobiographies 
+and memoirs of people that you respect,  
+
+885
+01:15:27,920 --> 01:15:34,240
+mostly for their mental model and way to approach 
+thinking, less about specific things. But the one  
+
+886
+01:15:34,240 --> 01:15:40,360
+book that I read without fail every year has a 
+very misleading title. It's called The Courage  
+
+887
+01:15:40,360 --> 01:15:46,160
+to Be Disliked. I think it's been mentioned 
+previously on the podcast, but it covers...  
+
+888
+01:15:46,160 --> 01:15:51,520
+It's a very Socratic method style, so it's about 
+a philosopher and a young person, and it tries  
+
+889
+01:15:51,520 --> 01:15:57,160
+to teach you the ways of Adlerian psychology, 
+which is sort of counter to Jungian theory. 
+
+890
+01:15:58,160 --> 01:16:03,920
+The reason I really like it is because it 
+makes me uncomfortable. So the whole premise,  
+
+891
+01:16:03,920 --> 01:16:12,160
+in my opinion, behind the book and other in 
+psychology is focus on what you control. That's  
+
+892
+01:16:12,160 --> 01:16:16,520
+the one line. Don't worry about everything 
+else. Don't worry about what other people  
+
+893
+01:16:16,520 --> 01:16:20,440
+think. Don't worry about what other people 
+do. You cannot control those. You focus on  
+
+894
+01:16:20,440 --> 01:16:25,520
+yourself and you focus on the actions you can 
+take. And be the person that you think will  
+
+895
+01:16:25,520 --> 01:16:31,680
+attract other people, that you want to be around.
+There's some really pointed notes in there that  
+
+896
+01:16:31,680 --> 01:16:36,800
+I'm like, "Ha-ha-ha-ha. I don't fully agree 
+with that one," but it always pushes me to  
+
+897
+01:16:36,800 --> 01:16:42,840
+question something about what I believe. And 
+so in every physical copy of a book I have,  
+
+898
+01:16:42,840 --> 01:16:49,480
+I write the date that I started reading it 
+again. The front inside cover of this book,  
+
+899
+01:16:49,480 --> 01:16:55,080
+I think it's been seven or eight years at this 
+point that I've read it every single year.
+
+900
+01:16:55,080 --> 01:16:59,200
+Wow. It's like a decision logging 
+in another context almost.
+
+901
+01:16:59,200 --> 01:17:03,320
+Yeah, a little bit. I would say the other 
+book I was going to mention is The Paper  
+
+902
+01:17:03,320 --> 01:17:09,560
+Menagerie. This actually shout out to 
+Sean Rose for... I've never met him,  
+
+903
+01:17:09,560 --> 01:17:14,400
+but I really appreciate Sean. He was one 
+of the early, if not, first PMs of Slack,  
+
+904
+01:17:14,400 --> 01:17:20,920
+and he used to be really loud on Twitter 
+in a very good way, and I think I learned  
+
+905
+01:17:20,920 --> 01:17:24,840
+a ton from stuff that he would post. But one 
+of the things that he posted was this book.  
+
+906
+01:17:26,080 --> 01:17:33,600
+It is just the most beautiful collection of 
+essays that span sci-fi and fantasy. And so  
+
+907
+01:17:33,600 --> 01:17:39,480
+if you're into that kind of stuff, if you like 
+exhalation, then Paper Menagerie is even better.
+
+908
+01:17:39,480 --> 01:17:43,600
+Oh, shit. Guess I got to add this 
+book to my list. I do love exhalation.
+
+909
+01:17:43,600 --> 01:17:44,360
+There you go.
+
+910
+01:17:44,360 --> 01:17:48,800
+Oh, man, this job is tough. I get to learn all 
+these amazing books and then I got to read them,  
+
+911
+01:17:48,800 --> 01:17:52,800
+but I don't have time. Hard.
+Speaking of more time,  
+
+912
+01:17:52,800 --> 01:17:57,440
+next question. Do you have any favorite recent 
+movies or TV shows that you really enjoyed?
+
+913
+01:17:57,440 --> 01:18:04,640
+There's less time for either these days. I 
+will say not novel, the Bear holds a very  
+
+914
+01:18:04,640 --> 01:18:08,240
+special place in my heart right now, both 
+because I worked in restaurants and I got  
+
+915
+01:18:08,240 --> 01:18:13,800
+to build for them. And so seeing the details that 
+they do actually gives me a lot of anxiety, but I  
+
+916
+01:18:13,800 --> 01:18:18,480
+really appreciate the craft they put into it.
+The other show, actually, I think this is the  
+
+917
+01:18:18,480 --> 01:18:26,840
+first time, Physical 100. So this is a Netflix 
+show. It's a Korean show about a hundred different  
+
+918
+01:18:26,840 --> 01:18:32,120
+bodybuilders, athletes, what have you, on who 
+has the optimum physique or whatever. I don't  
+
+919
+01:18:32,120 --> 01:18:38,800
+really care about that part. The two things I 
+love about the show are, one, it's ridiculous  
+
+920
+01:18:38,800 --> 01:18:43,600
+what people are capable of. You see what they can 
+physically do and you're like, "Oh my God, that's  
+
+921
+01:18:43,600 --> 01:18:49,600
+amazing what they can put their minds to." The 
+other part though, and this is maybe a trend of  
+
+922
+01:18:49,600 --> 01:18:59,400
+Korean shows that I've noticed, is the amount of 
+respect they have in this competition is bar none.  
+
+923
+01:18:59,400 --> 01:19:07,760
+You have this guy who is historically famous, 
+was the top champion in judo or something, and  
+
+924
+01:19:07,760 --> 01:19:14,400
+you have all these other athletes that are 15, 20 
+years younger, and they're bowing and just humble  
+
+925
+01:19:14,400 --> 01:19:20,560
+to compete against the guy. I kind of wish that 
+more American Joes had that level of respect as  
+
+926
+01:19:20,560 --> 01:19:24,720
+opposed to just trying to find the most conflict. 
+There's something that I really like about that.
+
+927
+01:19:25,480 --> 01:19:30,480
+That's beautiful. I've started that show, but I 
+haven't continued it, so I'm going to revisit it.
+
+928
+01:19:30,480 --> 01:19:30,680
+Cool.
+
+929
+01:19:30,680 --> 01:19:34,320
+Do you have a favorite product that you've 
+recently discovered that you really like?
+
+930
+01:19:34,320 --> 01:19:39,120
+We got a really old 2002 Jeep 
+to work on with my daughters,  
+
+931
+01:19:39,120 --> 01:19:46,680
+just like a true junker. And as a result of that, 
+we're repairing it. We're taking off the rust,  
+
+932
+01:19:46,680 --> 01:19:51,760
+replacing parts, and so there's these little 
+magnetic trays that you can hold screws and  
+
+933
+01:19:51,760 --> 01:19:54,640
+nails and whatnot, so they don't go 
+flying and rolling around everywhere.  
+
+934
+01:19:55,920 --> 01:20:01,520
+It's stupidly useful when you're working on a 
+car. And the girls love it because they can use  
+
+935
+01:20:01,520 --> 01:20:06,240
+it for other things like collecting hair clips 
+or whatever else. So magnetic trays, shout out. 
+
+936
+01:20:06,240 --> 01:20:11,840
+And then selfishly, I will say my buddy 
+Arjun Mahanti has an app called Circuit.  
+
+937
+01:20:11,840 --> 01:20:19,000
+If you search the app store for Circuit, like 
+C-I-R-C-U-I-T, HIIT timer, it's such a delightful  
+
+938
+01:20:19,000 --> 01:20:24,920
+little app that lets you track Tabata sex or 
+whatever else to just get a little workout in.
+
+939
+01:20:24,920 --> 01:20:28,520
+Super cool. Magnetic tray is not boring 
+at all. That is extremely cool and it  
+
+940
+01:20:28,520 --> 01:20:31,840
+has a really cool story too. Do you 
+have a favorite life motto that you  
+
+941
+01:20:31,840 --> 01:20:36,320
+often come back to and find useful to share 
+with friends and family in work or in life?
+
+942
+01:20:36,320 --> 01:20:40,120
+I think we've actually maybe touched on both 
+of these. I'll cheat and I'll pull one from  
+
+943
+01:20:40,120 --> 01:20:45,200
+maybe each parent so that in case they see this, 
+they don't feel like I'm favoring one of them. 
+
+944
+01:20:45,200 --> 01:20:49,400
+So my mom's side, I think something that 
+she would always repeat to me growing up  
+
+945
+01:20:49,400 --> 01:20:56,160
+is everything happens for a reason. I hated that 
+growing up because she only said it when something  
+
+946
+01:20:56,160 --> 01:21:01,000
+bad would happen. Something bad happens, she goes, 
+"Everything happens for a reason," and I'm like,  
+
+947
+01:21:01,000 --> 01:21:07,520
+"No, it doesn't. Life just sucks." And to no 
+surprise at this point in the conversation,  
+
+948
+01:21:07,520 --> 01:21:13,120
+I've now grown to really, really appreciate 
+that piece of advice because what it's  
+
+949
+01:21:13,120 --> 01:21:18,200
+actually trying to communicate is, when 
+something happens, good or bad, frankly,  
+
+950
+01:21:18,200 --> 01:21:25,040
+don't dwell on it. That's the past. Focus on what 
+you want to do and then just move towards that.  
+
+951
+01:21:25,040 --> 01:21:29,200
+And then in most cases, you'll be 
+able to look back in one, five,  
+
+952
+01:21:29,200 --> 01:21:36,040
+10 years and connect the dots in a way where 
+the story makes sense in your mind. And so just  
+
+953
+01:21:36,040 --> 01:21:42,400
+having that shift in perspective I think has 
+helped me a lot to not overreact to anything  
+
+954
+01:21:42,400 --> 01:21:51,280
+that happens in my life. So that's one side.
+And then on my dad's side, so the funny origins of  
+
+955
+01:21:51,280 --> 01:21:57,960
+this, unsurprising to anyone with Asian parents, 
+I'm a spunky little 7-year-old, I come home with  
+
+956
+01:21:57,960 --> 01:22:03,360
+my math test one day. I got 97%. I think that's 
+pretty good. I go show it to my dad with beaming  
+
+957
+01:22:03,360 --> 01:22:09,920
+eyes and pride. He sort of stares down his 
+nose at it, looks at me, "Where's my other 3%?"
+
+958
+01:22:09,920 --> 01:22:10,540
+Oh, my God.
+
+959
+01:22:10,540 --> 01:22:18,240
+I'm just distraught and I sulk away. I'm very 
+sad. I study hard. I do the next math test,  
+
+960
+01:22:18,240 --> 01:22:24,360
+I get 100% yes. All right, dad's approval, here 
+we come. I come flying back, I put the test in his  
+
+961
+01:22:24,360 --> 01:22:31,440
+hands, he stares down his nose at it, looks at me, 
+"Where's my other 3%?" I'm so confused. I'm like,  
+
+962
+01:22:31,440 --> 01:22:37,520
+"I got 100 out of 100. I have no clue what you're 
+talking about." He just looks me down the eye and  
+
+963
+01:22:37,520 --> 01:22:45,200
+goes, "Who said a hundred is the most you can 
+get?" At that age, I literally had no clue what  
+
+964
+01:22:45,200 --> 01:22:49,800
+he was talking about. And he had to reframe 
+it for me in the moment around like, "Well,  
+
+965
+01:22:49,800 --> 01:22:54,720
+was there extra credit? Can you just write 
+your own problems to challenge yourself more?  
+
+966
+01:22:54,720 --> 01:22:59,160
+Could you have given yourself another test? And 
+maybe the teacher won't give you credit, but you  
+
+967
+01:22:59,160 --> 01:23:05,720
+give yourself credit for doing additional work."
+I think I carry that theme forward where there's  
+
+968
+01:23:05,720 --> 01:23:10,800
+this weird transition we all go through 
+from childhood to adulthood where we no  
+
+969
+01:23:10,800 --> 01:23:17,360
+longer receive homework, we're responsible for 
+defining the work that we do. And when you do  
+
+970
+01:23:17,360 --> 01:23:24,440
+that, if all you do is the minimum of what 
+defined the 100% of what your job requires,  
+
+971
+01:23:25,400 --> 01:23:29,800
+you'll never grow. And so it's up 
+to you to actually find what is  
+
+972
+01:23:29,800 --> 01:23:35,200
+the additional 3%? There's always three 
+more percent. So that's my dad's lesson.
+
+973
+01:23:35,200 --> 01:23:38,200
+Kevin, you're blowing my mind. 
+There's so many great stories,  
+
+974
+01:23:38,200 --> 01:23:42,040
+you're just full of them. And I feel 
+like this lesson also applies really  
+
+975
+01:23:42,040 --> 01:23:45,200
+well to product and building 
+product and founding companies.
+
+976
+01:23:46,400 --> 01:23:46,760
+Totally.
+
+977
+01:23:46,760 --> 01:23:53,080
+Just pushing further than people expect and making 
+it a lot more delightful than the minimum bar. 
+
+978
+01:23:53,080 --> 01:23:57,680
+Final question, speaking of things that maybe 
+people don't expect and may not understand is  
+
+979
+01:23:57,680 --> 01:24:01,840
+possible, looking at you, nobody would've 
+guessed that you're a competitive eater  
+
+980
+01:24:01,840 --> 01:24:08,040
+at some point in your life. As a final 
+question, tell us about this part of your  
+
+981
+01:24:08,040 --> 01:24:12,640
+life. What did you eat? How does this 
+work? How far did you get in this path?
+
+982
+01:24:12,640 --> 01:24:16,680
+It's probably misleading to say that I 
+was a true competitive eater. I wasn't  
+
+983
+01:24:16,680 --> 01:24:21,498
+on the circuit with a... I forget 
+his name, but Johnny Chestnut.
+
+984
+01:24:21,498 --> 01:24:22,720
+[inaudible 01:24:21]. Oh yeah, Chestnut
+
+985
+01:24:22,720 --> 01:24:26,000
+Back in the day, that's like the OG competitive 
+eater on the hotdog circuit, I guess.
+
+986
+01:24:26,000 --> 01:24:26,160
+Right.
+
+987
+01:24:26,160 --> 01:24:30,680
+For me it was more eating challenges. 
+And so whenever I would travel,  
+
+988
+01:24:30,680 --> 01:24:35,800
+I would find the local eating challenge, whether 
+it was time-based, volume-based, something else,  
+
+989
+01:24:35,800 --> 01:24:41,080
+and just try to see what I could push my body 
+to do. I was blessed with a great metabolism,  
+
+990
+01:24:41,080 --> 01:24:46,080
+so I never really had to worry too much 
+about anything else. And the origin,  
+
+991
+01:24:46,080 --> 01:24:49,560
+the first moment of this was when I was 14,  
+
+992
+01:24:49,560 --> 01:24:54,440
+my sister was going to college in Minnesota and 
+there's this steakhouse up there called Manny's,  
+
+993
+01:24:55,080 --> 01:25:01,400
+which is where the Vikings Frontline goes to after 
+every game. And they have this ridiculous 97 ounce  
+
+994
+01:25:01,400 --> 01:25:06,440
+order house. I don't know how many pounds that 
+is, but it's too much meat for a human to consume.
+
+995
+01:25:06,440 --> 01:25:07,600
+97 ounce.
+
+996
+01:25:07,600 --> 01:25:14,280
+97 ounces, yeah. And so I sit down, I order it 
+thinking, "This is going to be great." They put  
+
+997
+01:25:14,280 --> 01:25:22,440
+it in front of me, it's a monster. You have to 
+eat in under an hour. And so 45 minutes into it,  
+
+998
+01:25:22,440 --> 01:25:29,760
+I'm halfway through and about to die. And the 
+catch is, if you finish it in under an hour,  
+
+999
+01:25:29,760 --> 01:25:39,400
+you get it for free. And so my dad again leans in 
+and goes, "You can't afford not to finish this." 
+
+1000
+01:25:39,400 --> 01:25:45,560
+And so, "Message received, sir." Hunker down. 
+I plowed the other half in 15 minutes. I then  
+
+1001
+01:25:45,560 --> 01:25:50,320
+slept for I think three days afterwards. 
+But after that I was like, "Oh my God,  
+
+1002
+01:25:50,320 --> 01:25:53,720
+if I could do that, what else could I 
+do?" And so, [inaudible 01:25:54] carried  
+
+1003
+01:25:53,720 --> 01:25:58,520
+for, I don't know, nearly a decade of 
+trying to do these interesting challenges.
+
+1004
+01:25:58,520 --> 01:26:02,640
+Wow. I don't know how that's physically 
+possible, but clearly you did it. 
+
+1005
+01:26:02,640 --> 01:26:07,440
+Kevin, this has been wonderful. I think there's 
+so many lessons here for people in so many ways,  
+
+1006
+01:26:07,440 --> 01:26:12,000
+life and work and parenting. Two final questions, 
+where can folks find you online if they want  
+
+1007
+01:26:12,000 --> 01:26:17,040
+to follow you and learn more from you over 
+time? And how can listeners be useful to you?
+
+1008
+01:26:17,040 --> 01:26:23,560
+I'm on Twitter, just @kevinyien. Technically, I'm 
+on LinkedIn. I don't post over there. I probably  
+
+1009
+01:26:23,560 --> 01:26:29,800
+should. I hear it's very good. But that's where 
+you can find me. Also, my website. I don't write  
+
+1010
+01:26:29,800 --> 01:26:35,120
+that often, and I don't have an RSS feed, which 
+has always been on my backlog, and I'm always too  
+
+1011
+01:26:35,120 --> 01:26:39,920
+lazy to do. But one day I will add it.
+One quick note, I'll actually make on  
+
+1012
+01:26:39,920 --> 01:26:46,760
+websites. So on one hand, I love all the 
+different website builders that exist.  
+
+1013
+01:26:46,760 --> 01:26:54,720
+It's amazing what we've enabled anyone to be 
+able to do. There is something really special  
+
+1014
+01:26:54,720 --> 01:26:59,080
+about having your corner of the internet 
+that you built sort of hand by hand,  
+
+1015
+01:26:59,080 --> 01:27:05,160
+line by line. And so my website is, it's 
+a GitHub page. It's hosts on GitHub pages,  
+
+1016
+01:27:05,160 --> 01:27:12,760
+but it's just raw HTML, CSS, nothing fancy. I 
+get so much joy every year just doing a slight  
+
+1017
+01:27:12,760 --> 01:27:18,280
+tweak or cleaning of it. And so I really do 
+recommend that for anyone with the curiosity  
+
+1018
+01:27:18,280 --> 01:27:22,840
+and the desire to buy your domain, even if 
+you're never going to write anything on it,  
+
+1019
+01:27:22,840 --> 01:27:28,080
+you're never going to share it out, just own 
+a little piece of the internet. It feels good.
+
+1020
+01:27:28,080 --> 01:27:30,360
+I love that. I didn't know that 
+about your website. And I could  
+
+1021
+01:27:30,360 --> 01:27:35,320
+see it now as I go there. It's .html, 
+which you don't see as much anymore.
+
+1022
+01:27:35,320 --> 01:27:37,220
+Exactly. [inaudible 01:27:37].
+
+1023
+01:27:37,220 --> 01:27:39,360
+And then... Yeah, can listeners be useful to you.
+
+1024
+01:27:39,360 --> 01:27:44,000
+This is going to sound trite, and it has 
+nothing to do with product necessarily,  
+
+1025
+01:27:44,000 --> 01:27:49,560
+just be kind. Make for a nicer world, right? 
+Say thank you a little bit more often. Hold  
+
+1026
+01:27:49,560 --> 01:27:53,880
+the door open a little more often. 
+Wave if you cut someone off in a car.  
+
+1027
+01:27:54,600 --> 01:28:01,800
+I think there is a temptation and incentive 
+structure to create conflict intention.  
+
+1028
+01:28:01,800 --> 01:28:06,880
+And in most cases, the world would just 
+benefit from a little bit more kindness.
+
+1029
+01:28:06,880 --> 01:28:09,080
+What an incredibly beautiful way its ended. Kevin,  
+
+1030
+01:28:09,080 --> 01:28:13,160
+this was so much fun. I'm so glad we did 
+this. Thank you so much for coming on.
+
+1031
+01:28:13,160 --> 01:28:14,560
+Thank you for having me.
+
+1032
+01:28:14,560 --> 01:28:17,160
+Bye, everyone.
+Thank you so much  
+
+1033
+01:28:17,160 --> 01:28:21,560
+for listening. If you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+1034
+01:28:21,560 --> 01:28:26,400
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating  
+
+1035
+01:28:26,400 --> 01:28:31,400
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+1036
+01:28:31,400 --> 01:28:40,000
+past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

@@ -1,0 +1,3648 @@
+1
+00:00:00,040 --> 00:00:04,760
+Your name has come up more times than almost 
+any other product person when I ask people  
+
+2
+00:00:04,760 --> 00:00:11,080
+for their favorite product leaders in Asia.
+I created a career growth framework for product  
+
+3
+00:00:11,080 --> 00:00:16,680
+managers, which comprises of three things. 
+What you produce, what you bring to the table,  
+
+4
+00:00:16,680 --> 00:00:19,640
+and what's your operating model.
+Your advice is early in your career,  
+
+5
+00:00:19,640 --> 00:00:24,480
+focus on just getting stuff out and done.
+Can you show me your last PRD? Can you show me  
+
+6
+00:00:24,480 --> 00:00:30,040
+the last product note that you sent? Can you show 
+me the product strategy doc? You must have that  
+
+7
+00:00:30,040 --> 00:00:36,320
+impact through the artifacts that you work on.
+I'm curious what you found most impedes people's  
+
+8
+00:00:36,320 --> 00:00:39,000
+career growth.
+How you view change,  
+
+9
+00:00:39,000 --> 00:00:44,120
+whether you are focusing on things you control, 
+and third is how you see yourself. The moment  
+
+10
+00:00:44,120 --> 00:00:52,200
+you are able to correct those stories, you 
+may be back on the growth path again.
+ 
+
+11
+00:00:52,200 --> 00:00:57,400
+Today, my guest is Vikrama Dhiman. Vikrama 
+heads all things product at Gojek, including  
+
+12
+00:00:57,400 --> 00:01:02,920
+product management, design, program management, 
+research and insights with teams across India,  
+
+13
+00:01:02,920 --> 00:01:08,880
+Singapore and Indonesia. He has previously worked 
+at companies like Directi, Airtel, MakeMyTrip and  
+
+14
+00:01:08,880 --> 00:01:13,800
+WizIQ and is among the most well-known product 
+leaders in Asia. When I asked people who their  
+
+15
+00:01:13,800 --> 00:01:18,520
+favorite product leader is in Asia, Vikrama's 
+name has come up almost more than anyone  
+
+16
+00:01:18,520 --> 00:01:24,080
+else's. We chat about how to move into product 
+management, how to be a great product manager,  
+
+17
+00:01:24,080 --> 00:01:28,600
+how product managers often shoot themselves 
+in the foot, and so much more. With that,  
+
+18
+00:01:28,600 --> 00:01:34,240
+I bring you Vikrama Dhiman after a short word 
+from our sponsors. And if you enjoy this podcast,  
+
+19
+00:01:34,240 --> 00:01:38,560
+don't forget to subscribe and follow it in your 
+favorite podcasting app or YouTube. It's the  
+
+20
+00:01:38,560 --> 00:01:44,960
+best way to avoid missing future episodes 
+and it helps the podcast tremendously.
+ 
+
+21
+00:01:44,960 --> 00:01:49,720
+This episode is brought to you by Uizard, 
+empowering product leaders to ideate and  
+
+22
+00:01:49,720 --> 00:01:55,600
+iterate faster than ever before with the power 
+of AI. As a product manager, I often spend  
+
+23
+00:01:55,600 --> 00:02:00,640
+hours taking screenshots and then annotating 
+them with feedback for my team. With Uizard,  
+
+24
+00:02:00,640 --> 00:02:07,120
+I can simply upload my screenshot and Uizard's 
+AI will turn them into a fully editable UI design  
+
+25
+00:02:07,120 --> 00:02:11,760
+that I can then take, make tweaks to, and then 
+share with my teams in minutes. And when I want  
+
+26
+00:02:11,760 --> 00:02:16,640
+to get really creative and explore totally new 
+ways to improve our product experience, I can use  
+
+27
+00:02:16,640 --> 00:02:22,320
+Uizard's AI to generate new design concepts from 
+simple text prompts and turn them into interactive  
+
+28
+00:02:22,320 --> 00:02:29,240
+prototypes effortlessly. There's a reason that 
+over 2.6 million people have trusted Uizard to  
+
+29
+00:02:29,240 --> 00:02:34,840
+accelerate every phase of their product life cycle 
+and speed up time to market. Developers can even  
+
+30
+00:02:34,840 --> 00:02:40,760
+export UI components to React and CSS to speed up 
+their development. Uizard's drag and drop editor  
+
+31
+00:02:40,760 --> 00:02:45,160
+is super easy to use and you can collaborate 
+in real time with your entire team. Even your  
+
+32
+00:02:45,160 --> 00:02:50,560
+CEO and customer service teams can contribute.
+Unlock all of Uizard's game-changing AI-powered  
+
+33
+00:02:50,560 --> 00:02:59,440
+features and more with 25% off Uizard's Pro 
+annual plan. Visit U-I-Z-A-R-D.io/lenny and  
+
+34
+00:02:59,440 --> 00:03:08,280
+use code Lenny to check out today. That's 
+U-I-Z-A-R-D.io/lenny. This episode is brought  
+
+35
+00:03:08,280 --> 00:03:13,680
+to you by Webflow. We're all friends here, 
+so let's be real for a second. We all know  
+
+36
+00:03:13,680 --> 00:03:18,720
+that your website shouldn't be a static asset, 
+it should be a dynamic part of your strategy  
+
+37
+00:03:18,720 --> 00:03:25,480
+that drives conversions. That's business 101. 
+But here's a number for you. 54% of leaders  
+
+38
+00:03:25,480 --> 00:03:29,760
+say web updates take too long, that's 
+over half of you listening right now.  
+
+39
+00:03:30,720 --> 00:03:36,040
+That's where Webflow comes in. Their visual-first 
+platform allows you to build, launch, and optimize  
+
+40
+00:03:36,040 --> 00:03:41,520
+web pages fast. That means you can set ambitious 
+business goals and your site can rise to the  
+
+41
+00:03:41,520 --> 00:03:47,760
+challenge. Learn how teams like Dropbox, Ideo 
+and Orangetheory trust Webflow to achieve their  
+
+42
+00:03:47,760 --> 00:03:58,520
+most ambitious goals today at webflow.com.
+Vikrama, thank you so much for being here and  
+
+43
+00:03:58,520 --> 00:04:01,120
+welcome to the podcast.
+Thank you for inviting me,  
+
+44
+00:04:01,120 --> 00:04:05,960
+Lenny. I'm very excited to be here.
+So as you know and hopefully as listeners know,  
+
+45
+00:04:05,960 --> 00:04:11,760
+I'm on this quest to meet the most insightful 
+product leaders from all over the world and  
+
+46
+00:04:11,760 --> 00:04:16,800
+your name has come up more times than almost any 
+other product person when I ask people for their  
+
+47
+00:04:16,800 --> 00:04:23,120
+favorite product leaders in Asia. And you're also 
+the third guest from Gojek, so there's definitely  
+
+48
+00:04:23,120 --> 00:04:29,920
+something in the water over there and I want to 
+talk about that. To just dive right in, you have a  
+
+49
+00:04:29,920 --> 00:04:36,120
+very strong reputation for building incredibly 
+strong product talent and also design talent,  
+
+50
+00:04:36,120 --> 00:04:41,640
+and also helping people transition from other 
+roles into product management, which a lot of  
+
+51
+00:04:41,640 --> 00:04:46,120
+people listening to this podcast dream to do. So 
+I'm going to ask a bunch of questions around this  
+
+52
+00:04:46,120 --> 00:04:48,720
+area. How does that sound?
+Sounds good.
+ 
+
+53
+00:04:48,720 --> 00:04:53,360
+Okay. First question is just when you 
+think back to the people that have done  
+
+54
+00:04:53,360 --> 00:05:00,080
+best in the product management role 
+and have had a rapid career rise, what  
+
+55
+00:05:00,080 --> 00:05:05,800
+are some of the most common traits or behaviors 
+or habits that you find in these people?
+ 
+
+56
+00:05:05,800 --> 00:05:10,280
+Over the last decade and a half, I've had 
+the opportunity to work with some really  
+
+57
+00:05:10,280 --> 00:05:15,400
+strong product managers, learn from strong 
+product managers, and some of them have had  
+
+58
+00:05:15,400 --> 00:05:20,240
+rapid career growth. When I was younger and I was 
+starting off, I used to think it's all about the  
+
+59
+00:05:20,240 --> 00:05:24,760
+product. If you've got a really cool product 
+to work on, your growth's guaranteed. And if  
+
+60
+00:05:24,760 --> 00:05:29,280
+you got really a product which no one cares 
+about or a stream which no one cares about,  
+
+61
+00:05:29,280 --> 00:05:35,320
+then your growth is going to be slightly slower. 
+But as I started seeing more and more product  
+
+62
+00:05:35,320 --> 00:05:43,720
+managers at their craft, I saw that working on a 
+cool product area is not the only thing. In fact,  
+
+63
+00:05:43,720 --> 00:05:48,480
+sometimes some product managers would come 
+back and complain that despite their product  
+
+64
+00:05:48,480 --> 00:05:53,560
+doing really well, they've not really grown.
+And while some other product managers whose  
+
+65
+00:05:53,560 --> 00:05:59,920
+product didn't have the impact really grew. And 
+as I started looking at it and as I started making  
+
+66
+00:05:59,920 --> 00:06:05,240
+notes, as I started talking to other product 
+leaders, what I discovered was that the really  
+
+67
+00:06:05,240 --> 00:06:11,000
+strong product managers who were also growing 
+in their careers did some things differently.  
+
+68
+00:06:11,000 --> 00:06:18,080
+And based on that, I created a career growth 
+framework for product managers, which comprises  
+
+69
+00:06:18,080 --> 00:06:26,880
+of three things, and I call it three W's. So 
+what you produce, what you bring to the table,  
+
+70
+00:06:26,880 --> 00:06:35,120
+and what's your operating model? The really strong 
+product managers are good at usually two of the  
+
+71
+00:06:35,120 --> 00:06:42,200
+three things. The ones who rise and when they 
+are rising, they are performing well on all the  
+
+72
+00:06:42,200 --> 00:06:49,600
+three access. So if you would like, let's talk a 
+little bit more about each one of these W's.
+ 
+
+73
+00:06:49,600 --> 00:06:53,080
+Yeah, I would love to. I love that you put 
+the word what at the top and that makes it  
+
+74
+00:06:53,080 --> 00:07:00,000
+the three W's, which is clever because I 
+find even if the acronym is not necessary,  
+
+75
+00:07:00,000 --> 00:07:03,800
+it's really helpful to help people remember 
+so I totally respect what you did there. So  
+
+76
+00:07:03,800 --> 00:07:08,600
+the three is what you produce, what you bring 
+to the table and what your operating model is.  
+
+77
+00:07:08,600 --> 00:07:09,760
+Is that right?
+Yes, absolute.
+ 
+
+78
+00:07:09,760 --> 00:07:16,400
+Okay, cool. Yeah, let's talk about these.
+So what you produce, a lot of people index on the  
+
+79
+00:07:16,400 --> 00:07:23,280
+impact while and they start thinking about goals, 
+they start thinking about direction and they start  
+
+80
+00:07:23,280 --> 00:07:29,760
+thinking about strategy. While it is important to 
+know at what stage of the career you are and what  
+
+81
+00:07:29,760 --> 00:07:35,920
+kind of a product that you are working on, the 
+very first thing that anyone, when you're starting  
+
+82
+00:07:35,920 --> 00:07:41,960
+off, produces is outputs, okay? The output can 
+be launching a product, it can be analyzing  
+
+83
+00:07:41,960 --> 00:07:49,200
+and running an experiment, and it could even be 
+just being a part of the team and contributing  
+
+84
+00:07:49,200 --> 00:07:55,920
+to a go-to market strategy. So focus on that 
+output significantly. As you get comfortable  
+
+85
+00:07:55,920 --> 00:07:59,440
+with output and you start getting comfortable 
+with working with different stakeholders,  
+
+86
+00:08:00,280 --> 00:08:07,480
+you start controlling what outputs are necessary, 
+which is when you move to the outcomes. Outcomes  
+
+87
+00:08:07,480 --> 00:08:14,360
+are product areas, goals that you can own and 
+or collaborate with other stakeholders on.
+ 
+
+88
+00:08:14,360 --> 00:08:19,760
+And when you start figuring out which outcomes are 
+necessary, that is when you move to the leadership  
+
+89
+00:08:19,760 --> 00:08:26,280
+and directional areas. The mistake that I 
+see a lot of product managers make is they  
+
+90
+00:08:26,280 --> 00:08:31,760
+start operating in either output or outcomes. 
+And when you are transitioning to outcomes,  
+
+91
+00:08:31,760 --> 00:08:37,880
+it's very important that you continue to still 
+hone your craft on outputs. For instance,  
+
+92
+00:08:37,880 --> 00:08:43,000
+do you just give up on the go-to-market strategy 
+or do you start making product nodes which are  
+
+93
+00:08:43,000 --> 00:08:49,280
+then picked up by marketing people and are able 
+to be used to create that go-to-market strategy?  
+
+94
+00:08:49,280 --> 00:08:55,520
+You always, always have to have the output 
+and outcome even when you're moving up the  
+
+95
+00:08:56,320 --> 00:09:02,080
+so-called career management ladder. So that is 
+very, very critical that as you are producing,  
+
+96
+00:09:02,080 --> 00:09:07,040
+even when you are at the senior most levels, 
+don't forget your IC roots, don't forget the  
+
+97
+00:09:07,040 --> 00:09:13,440
+IC component. And sometimes it is necessary to 
+just pull up your sleeves and go back and keep  
+
+98
+00:09:13,440 --> 00:09:20,040
+working on those things. That also gives you a 
+lot of creds with others in the team as well.
+ 
+
+99
+00:09:20,040 --> 00:09:25,440
+So highlighting one insight here is that a lot 
+of advice you hear about how to do well in your  
+
+100
+00:09:25,440 --> 00:09:29,640
+career, which you pointed out at the beginning 
+here, is it's not just not immediately drive  
+
+101
+00:09:29,640 --> 00:09:34,640
+impact. That's not necessarily what you need to 
+obsess over, which is actually what I recommend  
+
+102
+00:09:34,640 --> 00:09:38,680
+to people is just find ways to have impact. So 
+this is really interesting. Your advice is early  
+
+103
+00:09:38,680 --> 00:09:43,520
+in your career, focus on just getting stuff out 
+and done. Don't so obsess with the impact. Can you  
+
+104
+00:09:43,520 --> 00:09:48,040
+talk more about just what, when you say output, 
+what are you describing there? Is it just ship  
+
+105
+00:09:48,040 --> 00:09:55,520
+products and be helpful and produce something?
+Absolutely. So outputs is shipping products,  
+
+106
+00:09:55,520 --> 00:10:03,560
+but it also comes in smaller things. For instance, 
+if you are sourcing content for your homepage,  
+
+107
+00:10:03,560 --> 00:10:08,240
+what are the different avenues that you can 
+source content from? What is the easiest to  
+
+108
+00:10:08,240 --> 00:10:15,040
+source? What is the most difficult to source? 
+Just ranking it all in that order goes a long  
+
+109
+00:10:15,040 --> 00:10:20,560
+way. And one of the product managers actually did 
+that yesterday and I went, wow, it just made my  
+
+110
+00:10:20,560 --> 00:10:27,240
+life so much simpler. And not just my life but 
+so many other people's lives so much simpler,  
+
+111
+00:10:27,240 --> 00:10:33,600
+and we were able to take that specific output 
+and use it as part of our overall strategy. If  
+
+112
+00:10:33,600 --> 00:10:38,160
+that PM would have obsessed about the overall 
+content strategy, overall how we are going to  
+
+113
+00:10:38,160 --> 00:10:43,560
+do it versus just how we are going to be sourcing 
+it, they would have indexed on something bigger  
+
+114
+00:10:43,560 --> 00:10:48,000
+and maybe would have not even been able to make 
+that impact. But now, they were able to show  
+
+115
+00:10:48,000 --> 00:10:54,240
+something which was a small part, which was an 
+output, but it fell into the overall outcome.
+ 
+
+116
+00:10:54,240 --> 00:10:59,320
+The way I think about what you're describing, 
+which I actually 100% agree with, is when you're  
+
+117
+00:10:59,320 --> 00:11:04,600
+starting out in your careers, execution is where 
+you need to deliver. People just want you to get  
+
+118
+00:11:04,600 --> 00:11:08,760
+stuff done when you're just starting out. It's 
+not like help us define our strategy and vision  
+
+119
+00:11:08,760 --> 00:11:13,440
+for the next three years. We just have stuff we 
+need done. Can you help us get it done? Well,  
+
+120
+00:11:13,440 --> 00:11:19,160
+yes. And then essentially the advice is as you get 
+more senior, you'll have more opportunity to think  
+
+121
+00:11:19,160 --> 00:11:25,120
+about strategy and what to build versus just 
+how to build it and actually execute on it.
+ 
+
+122
+00:11:25,120 --> 00:11:30,840
+Absolutely. So focus on outputs at the 
+start of your careers and don't forget  
+
+123
+00:11:30,840 --> 00:11:34,880
+outputs even when you grow in your career.
+So along those lines, just to close the thread  
+
+124
+00:11:34,880 --> 00:11:41,320
+on this idea, it's still helpful if you work on 
+something that does have impact that matters,  
+
+125
+00:11:41,320 --> 00:11:45,600
+right? How important is that? And you said that 
+you've seen successful product managers work on  
+
+126
+00:11:45,600 --> 00:11:51,040
+things that aren't as impactful and still do 
+really well, but I guess would your advice be  
+
+127
+00:11:51,040 --> 00:11:55,760
+tried [inaudible 00:11:52] be in a place that 
+is going to drive more impact versus it's not  
+
+128
+00:11:55,760 --> 00:12:00,360
+actually that important in the early career?
+So I'll give you my example. In one of my  
+
+129
+00:12:00,360 --> 00:12:06,320
+previous roles, there were two product areas 
+that were important for the organization. My  
+
+130
+00:12:06,320 --> 00:12:13,280
+product area ended up being the center and focus 
+of the organization, yet the product manager who  
+
+131
+00:12:13,280 --> 00:12:19,240
+was chosen to lead the area when it became big 
+wasn't me. It was someone else. At that time,  
+
+132
+00:12:19,240 --> 00:12:25,160
+I really felt very bad that okay, why did that 
+happen? But now when I look back, I can see why  
+
+133
+00:12:25,160 --> 00:12:32,600
+that happened because that product manager was 
+so much better at the overall craft of output,  
+
+134
+00:12:32,600 --> 00:12:37,440
+yet when they were focusing on outcome, we're 
+not forgetting the output as well. So they were  
+
+135
+00:12:37,440 --> 00:12:42,600
+just better at me on launching products, they were 
+better at me on working with design, in producing  
+
+136
+00:12:42,600 --> 00:12:49,800
+design artwork, and they were definitely better 
+than me in running the experiments as well.
+ 
+
+137
+00:12:49,800 --> 00:12:56,160
+I love that. Yeah, basically when you're just 
+starting out, just execute well, execute smoothly,  
+
+138
+00:12:56,160 --> 00:12:59,560
+ship things on time. I'm going to say a few 
+things, but I'm curious what else comes to  
+
+139
+00:12:59,560 --> 00:13:03,400
+mind here of just what does good output look 
+like? Is it do things that are helpful to your  
+
+140
+00:13:03,400 --> 00:13:10,440
+team and manager, ship things on time, bug-free, 
+have a clean road map, everyone's aligned behind,  
+
+141
+00:13:10,440 --> 00:13:13,520
+[inaudible 00:13:11] deadlines, things like 
+that. I guess what else along those lines  
+
+142
+00:13:13,520 --> 00:13:16,880
+should people be like, "Okay, here's what 
+I should be doing to have good outputs?"
+ 
+
+143
+00:13:16,880 --> 00:13:22,080
+Some of the things that I think are useful. 
+So first, what's output? Output is something  
+
+144
+00:13:22,080 --> 00:13:27,120
+which is very tangibly defined, which 
+doesn't take too much of your time, effort,  
+
+145
+00:13:27,120 --> 00:13:34,800
+and energy to visualize and think and strategize 
+over and you are able to quickly get moving on.  
+
+146
+00:13:36,320 --> 00:13:42,000
+Go and ask your product leader, go and ask other 
+leaders on what are the areas they are blocked on.  
+
+147
+00:13:42,000 --> 00:13:48,360
+Sometimes they will be blocked on, "Hey, I need 
+to prepare this brief for this particular summit",  
+
+148
+00:13:48,360 --> 00:13:56,280
+"I need to prepare this particular slide for a 
+leadership review", "I need to prepare a review,  
+
+149
+00:13:56,280 --> 00:14:03,560
+I need to prepare a review which has to be done 
+with the legal." You can volunteer and definitely  
+
+150
+00:14:03,560 --> 00:14:08,640
+own and deliver the first drafts of those even 
+if the final draft is not something that you  
+
+151
+00:14:08,640 --> 00:14:13,800
+own. That's a simple example of an output, which 
+I feel a lot of people miss because they want to  
+
+152
+00:14:13,800 --> 00:14:18,520
+be focusing on the bigger strategic pieces.
+It's basically be useful. That's the way I always  
+
+153
+00:14:18,520 --> 00:14:23,360
+like to talk about this, just like your job as a 
+PM is be useful, make your team more effective,  
+
+154
+00:14:23,360 --> 00:14:27,720
+help your company be more successful. Just find 
+ways to be useful to everyone around you.
+ 
+
+155
+00:14:27,720 --> 00:14:36,080
+Absolutely. And be useful in doing the small 
+things which make an impact and also contribute to  
+
+156
+00:14:36,080 --> 00:14:44,280
+your learning versus being useful in areas which 
+you think the mini CEO should be working on.
+ 
+
+157
+00:14:44,280 --> 00:14:47,880
+Right. There's all this talk about 
+being an empowered product manager,  
+
+158
+00:14:47,880 --> 00:14:51,440
+building empowered product teams. I think 
+there's an important nuance. When you're  
+
+159
+00:14:51,440 --> 00:14:56,240
+just starting out, you haven't earned the right 
+to inform strategy and vision people. Why would  
+
+160
+00:14:56,240 --> 00:15:01,200
+people follow you at this point? We just need 
+to get stuff done, so that comes over time.
+ 
+
+161
+00:15:01,200 --> 00:15:06,200
+Absolutely. And it's not just when you are 
+starting off or when you are young. Even with if  
+
+162
+00:15:06,200 --> 00:15:11,160
+you are senior and you're starting off with a new 
+team, even if you're starting with a new company,  
+
+163
+00:15:11,160 --> 00:15:17,560
+you need to have that mindset. And sometimes 
+you will not know the best. And we'll talk  
+
+164
+00:15:17,560 --> 00:15:23,920
+more about how to, what is your operating model, 
+which is how you work with others. It's a very,  
+
+165
+00:15:23,920 --> 00:15:30,680
+very important thing for you to know 
+that you are one part of the cog wheel,  
+
+166
+00:15:30,680 --> 00:15:35,560
+you're not the entire wheel yourself. And a 
+lot of the folklore around product managers  
+
+167
+00:15:35,560 --> 00:15:40,040
+can make you confused, especially when 
+you're starting off in your career.
+ 
+
+168
+00:15:40,040 --> 00:15:46,200
+I love it. Okay, let's keep going. Number two.
+Number two is what you bring to the table. Now,  
+
+169
+00:15:46,200 --> 00:15:53,920
+I think how I describe that is what is your impact 
+on impact? So the first access is impact, but you  
+
+170
+00:15:53,920 --> 00:15:59,280
+also need to have an impact on impact. And this 
+is what I had missed a lot in my early career,  
+
+171
+00:15:59,280 --> 00:16:03,760
+that you put the coolest product areas, your 
+product area is successful and that automatically  
+
+172
+00:16:03,760 --> 00:16:09,800
+guarantees your growth. It doesn't. You have to 
+also show that yes, you were a useful contributor  
+
+173
+00:16:09,800 --> 00:16:15,960
+to having that particular impact. The simplest 
+thing on this is that is your PRD quality good  
+
+174
+00:16:15,960 --> 00:16:21,560
+enough? Are you writing that the draft notes 
+that go and circulate to the care teams, to  
+
+175
+00:16:21,560 --> 00:16:28,120
+the marketing teams and so on? Are you making sure 
+that you are deriving from the strategy that has  
+
+176
+00:16:28,120 --> 00:16:36,520
+been shaped or you're constantly just pushing back 
+on the strategy? Similarly, you also how you are  
+
+177
+00:16:36,520 --> 00:16:41,520
+drafting the north stars, how you are working on 
+the experiments, how you're working on the data,  
+
+178
+00:16:41,520 --> 00:16:44,880
+how you're working on the metrics.
+All these things take time, effort,  
+
+179
+00:16:44,880 --> 00:16:51,680
+and energy. And I know there is some literature 
+and there are some operating models where people  
+
+180
+00:16:51,680 --> 00:16:58,200
+are working only at strategy levels while all of 
+these execution of these artifacts is being done  
+
+181
+00:16:58,200 --> 00:17:03,160
+by some other people. I don't think, especially 
+when you are starting off, that's a very,  
+
+182
+00:17:03,160 --> 00:17:08,520
+very good thing. Even when you are mid-senior, I 
+don't think that's a very, very good thing. You  
+
+183
+00:17:08,520 --> 00:17:14,160
+have to have to be able to produce these artifacts 
+which are product artifacts. Even if there are  
+
+184
+00:17:14,160 --> 00:17:19,800
+people in strategy creating their artifacts, 
+even if design is coming up with a design brief,  
+
+185
+00:17:19,800 --> 00:17:26,920
+you need to have a cohesive product strategy 
+or product PRD and work backwards from PRD and  
+
+186
+00:17:26,920 --> 00:17:33,080
+product knows yourself. These things are 
+important to show you are progressing on  
+
+187
+00:17:33,080 --> 00:17:40,960
+four pillars, which is data and metrics, design 
+and research, technology skills, and strategy.
+ 
+
+188
+00:17:40,960 --> 00:17:46,560
+Product managers constantly are evaluated on 
+this when you interview, but you also have to  
+
+189
+00:17:46,560 --> 00:17:52,080
+demonstrate these on the jobs. And the best way 
+to demonstrate these is through the artifacts,  
+
+190
+00:17:52,080 --> 00:17:58,840
+through the notes that you are sending. So you 
+must have that impact to impact through the  
+
+191
+00:17:58,840 --> 00:18:05,120
+artifacts that you work on. For a lot of product 
+managers, when I ask, "Hey, I was working on this  
+
+192
+00:18:05,120 --> 00:18:11,080
+very impactful area. I'm not able to have the 
+impact on my career, what is missing?" And when  
+
+193
+00:18:11,080 --> 00:18:17,120
+I go and ask, "Can you show me your last PRD? Can 
+you show me the last product note that you sent?  
+
+194
+00:18:17,120 --> 00:18:22,880
+Can you show me the product strategy doc that you 
+have or collaborated on? Can you show me the brief  
+
+195
+00:18:22,880 --> 00:18:29,120
+that you sent to the design team on the problems 
+and the ranking of those problems?" Usually,  
+
+196
+00:18:29,120 --> 00:18:35,360
+you'll find something or the other missing.
+In cases that those are bad, you will find that  
+
+197
+00:18:35,360 --> 00:18:40,880
+the pre-iteration planning, pre-sprint plannings 
+are not running properly. You will find that the  
+
+198
+00:18:40,880 --> 00:18:46,840
+Jira storyboards are very empty and there's just 
+a title in the subject and nothing gets described  
+
+199
+00:18:46,840 --> 00:18:51,560
+and so on. So you'll miss all these pieces. 
+So these are the things which you bring to  
+
+200
+00:18:51,560 --> 00:18:58,840
+the table and it's very, very important that 
+you work on these aspects as well. Finally,  
+
+201
+00:18:58,840 --> 00:19:04,640
+we have what's your operating model, which 
+I feel is the most important thing which  
+
+202
+00:19:04,640 --> 00:19:09,920
+you have to have to focus if you are going 
+from mid-senior to senior level. This is  
+
+203
+00:19:09,920 --> 00:19:16,040
+essentially about communication, collaboration, 
+organizational skills and community skills.
+ 
+
+204
+00:19:16,040 --> 00:19:24,760
+And across product managers, again, because of the 
+folklore of mini CEO and others, I see that a lot  
+
+205
+00:19:24,760 --> 00:19:31,640
+of people get carried away in the way they operate 
+as product managers with other stakeholders. There  
+
+206
+00:19:31,640 --> 00:19:39,760
+are three tenets that I define in working well 
+as a product manager with others. Number one is  
+
+207
+00:19:39,760 --> 00:19:47,840
+raise difficult issues without being difficult 
+to work with. Bring out important topics without  
+
+208
+00:19:47,840 --> 00:19:53,960
+drawing importance to yourself. And finally, 
+you are in charge of getting the decisions  
+
+209
+00:19:53,960 --> 00:20:02,000
+made and not making all the decisions yourself. 
+I think as long as you follow these three tenets,  
+
+210
+00:20:02,000 --> 00:20:11,920
+you will have a successful relationship across 
+stakeholders. These three tenets are easy to say,  
+
+211
+00:20:11,920 --> 00:20:19,560
+but they become very, very hard to embody and 
+display on a day-to-day basis. But this is  
+
+212
+00:20:19,560 --> 00:20:25,080
+essentially going to be your struggle no matter at 
+what level of product management you are operating  
+
+213
+00:20:25,080 --> 00:20:29,960
+at in your career or within your company.
+First of all, can you just repeat them? Because  
+
+214
+00:20:29,960 --> 00:20:33,160
+I think this is... Essentially, 
+it's like a mantra that PMs can  
+
+215
+00:20:33,160 --> 00:20:38,720
+think back to of, "Am I doing these things?"
+So the three things which are very important for  
+
+216
+00:20:38,720 --> 00:20:46,120
+product managers to work with others and other 
+stakeholders are raise difficult issues without  
+
+217
+00:20:46,120 --> 00:20:53,920
+being difficult to work with, bring out important 
+topics without drawing importance to yourself,  
+
+218
+00:20:53,920 --> 00:21:02,560
+and be able to get decisions made without 
+having to make all the decisions yourself.
+ 
+
+219
+00:21:02,560 --> 00:21:05,920
+I like this list a lot. It reminds me, 
+there's this product leader I worked  
+
+220
+00:21:05,920 --> 00:21:13,480
+with who their team got pushed to do a bunch 
+of stupid stuff. And he realized later that,  
+
+221
+00:21:13,480 --> 00:21:20,120
+"Hey, it's actually my job to have pushed back on 
+doing this stuff." He was the head of product for  
+
+222
+00:21:20,120 --> 00:21:26,160
+this business unit and he realized, "Oh, I see. 
+That's actually what I should be doing now that  
+
+223
+00:21:26,160 --> 00:21:30,840
+I'm in this role." And you sometimes forget 
+that one, you have that influence. And two,  
+
+224
+00:21:31,520 --> 00:21:36,800
+that's something you should be doing.
+Absolutely, absolutely. It's always within  
+
+225
+00:21:36,800 --> 00:21:43,240
+your control and it's always the things that are 
+within your control that you should be controlling  
+
+226
+00:21:43,240 --> 00:21:48,960
+rather than focusing on the things that are not 
+within your control and obsessing about those.
+ 
+
+227
+00:21:48,960 --> 00:21:53,200
+I'm so aligned with the way you think about all 
+these things. Coming back to the second actually,  
+
+228
+00:21:53,200 --> 00:21:58,240
+just to give people something they can do with 
+this trait. So the way I think about what you  
+
+229
+00:21:58,240 --> 00:22:03,240
+described, and correct me if I'm misinterpreting 
+it, is there's a detail-oriented-ness,  
+
+230
+00:22:03,240 --> 00:22:09,200
+high quality-ness to the way that you should 
+be crafting all the documents/artifacts you're  
+
+231
+00:22:09,200 --> 00:22:14,040
+creating, your one-pagers/PRDs, your roadmaps, 
+your strategy docs, just like they should be  
+
+232
+00:22:14,040 --> 00:22:22,200
+really high quality. So along those lines, if 
+you're an ICPM trying to get better at this stuff,  
+
+233
+00:22:22,200 --> 00:22:25,960
+how have you found is the best way to level 
+up in these things? Is it working with your  
+
+234
+00:22:25,960 --> 00:22:30,880
+manager and getting feedback? Is it peers? 
+What helps somebody get better at the quality  
+
+235
+00:22:30,880 --> 00:22:37,440
+and yeah, the quality of these documents?
+What you bring to the table is one of the most  
+
+236
+00:22:37,440 --> 00:22:44,880
+misunderstood attributes and aspects of product 
+management. On one end, you could get around and  
+
+237
+00:22:44,880 --> 00:22:52,040
+say, "Here is my PRD, here is my JIRA board, here 
+are my stories, here is my pre-sprint planning or  
+
+238
+00:22:52,040 --> 00:22:58,040
+pre-iteration planning document" and go. It's not 
+just about the spread and the width of the things  
+
+239
+00:22:58,040 --> 00:23:03,120
+that you're doing, but it's also about the depth 
+of those things as well. Some product managers,  
+
+240
+00:23:03,120 --> 00:23:07,080
+what they bring to the table is arguments, 
+what they bring to the table are debates,  
+
+241
+00:23:07,080 --> 00:23:12,920
+what they bring to the table are pushbacks, while 
+others are able to channelize the questions,  
+
+242
+00:23:12,920 --> 00:23:19,880
+channelize the inputs, channelize the direction 
+and convert that into strategic choices which can  
+
+243
+00:23:19,880 --> 00:23:24,360
+then shape discussions, which can then 
+shape direction. Be the latter and you  
+
+244
+00:23:24,360 --> 00:23:28,440
+will rise faster in your career.
+So you have these three buckets of  
+
+245
+00:23:29,280 --> 00:23:32,840
+what you produce, what you bring to the 
+table, and what your operating model is,  
+
+246
+00:23:32,840 --> 00:23:37,240
+the three W's. So let try to summarize and see 
+what I missed and then we'll move on. So one is  
+
+247
+00:23:37,240 --> 00:23:42,520
+just focus on executing, getting things done 
+that are helpful to your team, your company,  
+
+248
+00:23:42,520 --> 00:23:48,240
+your manager, and focus on just getting stuff out. 
+Not so much in necessarily in strategy. Even when  
+
+249
+00:23:48,240 --> 00:23:54,520
+you're a manager and a leader and a VP, just like 
+you're still responsible for producing things, not  
+
+250
+00:23:54,520 --> 00:24:00,920
+just telling people and being wise. Two, what you 
+bring to the table, my takeaway here is produce  
+
+251
+00:24:00,920 --> 00:24:06,800
+high quality artifacts that raise the bar.
+The way I think about this is as a PM,  
+
+252
+00:24:06,800 --> 00:24:12,440
+you want to have this aura of I got this. People 
+put something on your plate, you want to feel like  
+
+253
+00:24:12,440 --> 00:24:16,440
+Lenny's got this, I'm not going to have to worry. 
+It's going to be forgotten and I know it's going  
+
+254
+00:24:16,440 --> 00:24:22,040
+to be done well. And then the third piece is this 
+idea of an operating model. Basically just make  
+
+255
+00:24:22,040 --> 00:24:28,120
+sure decisions are being made. It's not about you 
+that you're pushing back on bad ideas. Is there  
+
+256
+00:24:28,120 --> 00:24:34,560
+anything else I missed before we move on?
+No. I think the art of pushback is another  
+
+257
+00:24:34,560 --> 00:24:43,160
+important factor because if you're pushing back 
+a lot and the way you are pushing back matters a  
+
+258
+00:24:43,160 --> 00:24:50,400
+lot as well. Just don't be someone who's seen as 
+an obstacle and a hindrance and as someone who's  
+
+259
+00:24:50,400 --> 00:24:56,360
+just very difficult to work with, but rather 
+see as someone who's able to actually add value  
+
+260
+00:24:56,360 --> 00:25:03,840
+to whatever your leader, your stakeholders, 
+your product area demands and you are able  
+
+261
+00:25:03,840 --> 00:25:10,640
+to advance the product and the direction and 
+execution forward. Once you do that, I think  
+
+262
+00:25:10,640 --> 00:25:17,000
+keeping that as the intent and ensuring that your 
+team is getting unblocked and not getting to do  
+
+263
+00:25:17,000 --> 00:25:24,640
+work on anything which is stupid or is likely 
+to be changed, then you've really got it.
+ 
+
+264
+00:25:24,640 --> 00:25:28,600
+Do you have any advice for how to pushback 
+in a way, the way you describe it is not  
+
+265
+00:25:28,600 --> 00:25:33,080
+to be difficult to work with or without seeking 
+importance? I guess is there words or phrases or  
+
+266
+00:25:33,080 --> 00:25:38,040
+approaches you found are effective for pushing 
+back against ideas that you disagree with?
+ 
+
+267
+00:25:38,040 --> 00:25:47,160
+What I've seen that people who do pushback 
+very successfully and are still considered  
+
+268
+00:25:47,160 --> 00:25:57,440
+not difficult to work with, they are also able 
+to bring the tempo of the conversation to a more  
+
+269
+00:25:57,440 --> 00:26:04,000
+logical space from an emotional space. I think 
+that's such a useful skill and I sometimes am  
+
+270
+00:26:04,000 --> 00:26:11,000
+guilty of operating on a slightly emotional note, 
+which is useful. Sometimes you need a war cry,  
+
+271
+00:26:11,000 --> 00:26:18,960
+you need a high pitch, you need execution on war 
+footing. All that is fine, but it's only fine in  
+
+272
+00:26:18,960 --> 00:26:24,200
+some cases. In other cases, it's always very 
+important that you're able to bring it down to  
+
+273
+00:26:24,200 --> 00:26:32,400
+the logical space so that a logical and a little 
+more equal footing of the discussion can happen.  
+
+274
+00:26:32,400 --> 00:26:40,360
+And a lot of this is something that leaders need 
+to ensure is happening, but product managers and  
+
+275
+00:26:40,360 --> 00:26:47,040
+product leaders who are working with executives 
+who are able to bring this tempo down and bring  
+
+276
+00:26:47,040 --> 00:26:52,040
+it to a little more logical space will also 
+do far better in their careers and they'll  
+
+277
+00:26:52,040 --> 00:26:56,680
+also have a lot more rapid career growth.
+So let's talk about the flip side of rapid  
+
+278
+00:26:56,680 --> 00:27:02,400
+career growth, which is career growth that 
+stalls. And I'm curious what you've found  
+
+279
+00:27:02,400 --> 00:27:09,440
+most impedes people's career growth. What do 
+PMs do that shoot themselves in the foot and  
+
+280
+00:27:09,440 --> 00:27:15,480
+slow their career? Any pitfalls do you find 
+are important to try to watch out for?
+ 
+
+281
+00:27:15,480 --> 00:27:21,640
+I think part of it is on a lot of us in product 
+leadership space. We've not done a very good job  
+
+282
+00:27:21,640 --> 00:27:28,160
+in defining rubrics, growth frameworks and so on. 
+But even in places where growth frameworks exist,  
+
+283
+00:27:28,800 --> 00:27:36,880
+like three W's, what I've seen is that clean 
+mindset shifts and changes can enable faster  
+
+284
+00:27:36,880 --> 00:27:45,040
+growth, but those mindset and changes also 
+can hinder your growth, right? So the first  
+
+285
+00:27:45,040 --> 00:27:50,000
+thing is whether you are focusing on things you 
+control or whether you're focusing on things that  
+
+286
+00:27:50,000 --> 00:27:56,000
+are beyond your control. Second, what's your 
+relationship with change? And third is how you  
+
+287
+00:27:56,000 --> 00:28:02,040
+see yourself. The third is very, very powerful 
+and we'll talk about that as well. The first  
+
+288
+00:28:02,040 --> 00:28:09,000
+is what you control. If you drew an access of 
+what you control and what you cannot control,  
+
+289
+00:28:09,000 --> 00:28:14,600
+as you're starting your career, most of the work 
+that you're doing is in what you control, right?
+ 
+
+290
+00:28:14,600 --> 00:28:19,080
+You are very obsessed with feedback, you're very 
+obsessed with, "Okay, can I do this?" "Can I do  
+
+291
+00:28:19,080 --> 00:28:24,080
+this?" "Okay, I'll probably not do this. I'll 
+probably do this", and so on. You're not worrying  
+
+292
+00:28:24,080 --> 00:28:32,480
+about the overall corporate strategy, you're 
+not looking at what the competitors are doing,  
+
+293
+00:28:32,480 --> 00:28:38,040
+what is their market cap and all those things. 
+You're focused a lot on your craft, you're focused  
+
+294
+00:28:38,040 --> 00:28:44,640
+on a lot on your output and you're focused on how 
+you are growing. As you start becoming mid-senior,  
+
+295
+00:28:44,640 --> 00:28:53,680
+I see the conversation shifts from what can I 
+do, how am I learning, how am I growing, to why  
+
+296
+00:28:53,680 --> 00:29:00,120
+is the organization not doing this for me? Why 
+can that stakeholder not change this thing about  
+
+297
+00:29:00,120 --> 00:29:06,200
+themselves? Why do I not get to work on projects 
+like this? Things which start going outside your  
+
+298
+00:29:06,200 --> 00:29:12,240
+control. And it is very, very important that 
+you keep your focus no matter what stage of  
+
+299
+00:29:12,240 --> 00:29:21,720
+career you get into what you can control.
+And again, it's easy to say that everything in  
+
+300
+00:29:21,720 --> 00:29:26,840
+universe should be in your control. It doesn't 
+happen like that, but a large number of things  
+
+301
+00:29:26,840 --> 00:29:34,480
+that impact your career are within your control. 
+And go back to the three W's that we spoke about,  
+
+302
+00:29:34,480 --> 00:29:40,040
+what you work on, what you produce or what do 
+you bring to the table, and what's your operating  
+
+303
+00:29:40,040 --> 00:29:46,040
+model? And there is tons to do on data, tons to 
+do on technology, tons to do on communication,  
+
+304
+00:29:46,040 --> 00:29:52,840
+collaboration, design and research, strategy 
+and community. And you can spend years and years  
+
+305
+00:29:52,840 --> 00:30:00,440
+and years crafting those things. Focus on those 
+things, growth will happen at every single stage.  
+
+306
+00:30:00,440 --> 00:30:06,120
+The second aspect of it is your relationship 
+with change. Again, when you are younger,  
+
+307
+00:30:06,120 --> 00:30:11,920
+when you're starting off, rate of change is 
+crazy. You are growing almost every six months.  
+
+308
+00:30:11,920 --> 00:30:15,840
+You are picking up skills and experimentation, 
+you're picking up skills in how to analyze.
+ 
+
+309
+00:30:15,840 --> 00:30:20,160
+You're picking up skills in how to work with 
+different kind of stakeholders. And since the  
+
+310
+00:30:20,160 --> 00:30:26,040
+rate of change of your skills is high, 
+your rate of growth is also high. Again,  
+
+311
+00:30:26,040 --> 00:30:32,160
+as you start becoming mid-senior, I start seeing 
+conversations on, "Okay, maybe I should not do  
+
+312
+00:30:32,160 --> 00:30:37,520
+that. Maybe I should not take on this product. I 
+don't know what it means for my career. I don't  
+
+313
+00:30:37,520 --> 00:30:44,000
+know what it means for my growth" and so on. 
+So your rate of change slows down. So it's very  
+
+314
+00:30:44,000 --> 00:30:51,360
+important that as you get to mid-senior level, 
+you are constantly checking on what you can do  
+
+315
+00:30:51,360 --> 00:30:58,160
+to keep increasing your rate of change. And 
+one of the simplest things that you can do is  
+
+316
+00:30:58,160 --> 00:31:07,920
+if you think you are four on data, figure out who. 
+And you may be four on data out of five in data.  
+
+317
+00:31:07,920 --> 00:31:12,840
+Within your organization, start benchmarking 
+yourself with the best in the industry.
+ 
+
+318
+00:31:12,840 --> 00:31:17,800
+You'll automatically see that your scale drops 
+and as your scale drops, you start seeing  
+
+319
+00:31:17,800 --> 00:31:23,320
+what you need to improve and do. If you start 
+seeing that on communication and collaboration,  
+
+320
+00:31:23,320 --> 00:31:29,360
+you're reaching four out of five within the PMR, 
+start mapping yourself to other stakeholders in  
+
+321
+00:31:29,360 --> 00:31:34,960
+other functions. Again, your score will fall in 
+your eyes and you will start figuring out what are  
+
+322
+00:31:34,960 --> 00:31:42,640
+the things that you can do as well. So keep your 
+focus on rate of change and rate of growth will  
+
+323
+00:31:42,640 --> 00:31:48,360
+automatically take care of itself. Sometimes 
+it also involves changing your team or even  
+
+324
+00:31:48,360 --> 00:31:52,720
+changing your company, but those should be the 
+last results. There are significant things that  
+
+325
+00:31:52,720 --> 00:31:59,080
+you can do within that as well. One of the final 
+things that I see which limits you, especially as  
+
+326
+00:31:59,080 --> 00:32:04,320
+you start growing in your career and you reach 
+mid-senior levels is how you see yourself.
+ 
+
+327
+00:32:04,320 --> 00:32:09,280
+I see a lot of product... And I've been guilty of 
+that. When I see that a lot of product managers,  
+
+328
+00:32:09,280 --> 00:32:14,280
+that's included me at some stage, doing these 
+things, people will come back and say, "Oh,  
+
+329
+00:32:14,280 --> 00:32:21,880
+I am a very high agency PM" or, "I'm a very 
+collaborative PM." Earlier on, I used to think  
+
+330
+00:32:21,880 --> 00:32:27,080
+that okay, I need to give this kind of work to 
+these product managers. I need to fit them with  
+
+331
+00:32:27,080 --> 00:32:32,160
+these kind of team, these kind of work areas, 
+these kind of opportunities. But then I started  
+
+332
+00:32:32,160 --> 00:32:38,640
+understanding these things are not just signaling, 
+they are also anti-signaling. They are like, "Oh,  
+
+333
+00:32:38,640 --> 00:32:46,880
+I'm high agency. So it's sometimes okay if 
+I'm little brash, if I cut corners somewhere,  
+
+334
+00:32:46,880 --> 00:32:55,200
+if I sometimes come across as a little 
+rude to some people" and so on, right?
+ 
+
+335
+00:32:55,200 --> 00:33:00,560
+Similarly, if I'm seen as a hyper-collaborative 
+person, so it's okay if sometimes I'm not very  
+
+336
+00:33:00,560 --> 00:33:06,880
+decisive, if I'm not moving fast and so on 
+because I'm this kind of a PM. So it's very  
+
+337
+00:33:06,880 --> 00:33:14,440
+important that you check for what are the stories 
+that you're telling yourself because those stories  
+
+338
+00:33:14,440 --> 00:33:20,760
+are defining you at a basic level, which is 
+then very hard to correct through frameworks  
+
+339
+00:33:20,760 --> 00:33:26,520
+and structures. So figure out what is the story 
+that you are telling yourself. If you are not  
+
+340
+00:33:26,520 --> 00:33:32,240
+able to figure that out, talk to the people you 
+trust so that they can tell you that as well,  
+
+341
+00:33:32,240 --> 00:33:36,320
+and then correct those stories. And the 
+moment you are able to correct those stories,  
+
+342
+00:33:36,320 --> 00:33:43,040
+you may be back on the growth path again.
+Wow, there's so much meat and wisdom in what  
+
+343
+00:33:43,040 --> 00:33:46,240
+you just shared. I want to go in so 
+many different directions. Maybe just  
+
+344
+00:33:46,240 --> 00:33:50,440
+to follow on this last thread, did you go 
+through something like that yourself where  
+
+345
+00:33:50,440 --> 00:33:55,000
+you have this sense of yourself that hindered 
+you? Okay, awesome. You're nodding your head,  
+
+346
+00:33:55,000 --> 00:34:01,400
+if you're not on YouTube. Can you share that?
+Yeah. So I'll give an example of when I joined  
+
+347
+00:34:01,400 --> 00:34:09,240
+Gojek. The very first thing that I learned in my 
+career was SQL and Oracle. And I was very proud  
+
+348
+00:34:09,240 --> 00:34:15,200
+of the fact that my data skills are awesome and I 
+know several frameworks and I know several tools  
+
+349
+00:34:15,200 --> 00:34:22,400
+and so on. And when I joined Gojek and I saw one 
+of your guests, Crystal, and I saw the work that  
+
+350
+00:34:22,400 --> 00:34:30,160
+she was doing and her team was doing and I just 
+immediately was like, "Yeah, no, this is not...  
+
+351
+00:34:30,160 --> 00:34:38,600
+I'm nowhere near", right? And similarly, I also 
+thought that my communication skills are really  
+
+352
+00:34:38,600 --> 00:34:46,120
+good and my product strategy skills are very good, 
+but then I worked with people like Dito and people  
+
+353
+00:34:46,120 --> 00:34:54,280
+like Sidu who was so good at their craft that it 
+challenged me to see that okay, what is it that  
+
+354
+00:34:54,280 --> 00:35:01,440
+I am missing? What is it that I am doing wrong?
+And it auto-calibrated me in my eyes on where it  
+
+355
+00:35:01,440 --> 00:35:07,440
+was, but that also created a hunger in me that 
+this is what I need to fix. And I immediately  
+
+356
+00:35:07,440 --> 00:35:12,440
+corrected my assessment of myself that I'm 
+not the strongest product manager on data.  
+
+357
+00:35:12,440 --> 00:35:17,240
+I'm not the one who knows all the strategy 
+pieces or even strategy frameworks or how  
+
+358
+00:35:17,240 --> 00:35:23,640
+to bring everything to a strategy point of view 
+or communicate it from an effective perspective.  
+
+359
+00:35:23,640 --> 00:35:32,840
+And then I started framing I'm still in a learning 
+phase. When I see that I'm not in that phase now,  
+
+360
+00:35:32,840 --> 00:35:38,280
+I try and make myself humble by interacting 
+with people who are far smarter than me on  
+
+361
+00:35:38,280 --> 00:35:44,920
+different scale or reading different books, 
+or watching podcasts like yourselves. And  
+
+362
+00:35:44,920 --> 00:35:51,320
+that keeps you grounded on the fact that okay, 
+you are always learning. And I also found that  
+
+363
+00:35:51,960 --> 00:35:58,720
+seeing yourself as someone who's a learner 
+is an enabling story to tell yourself, okay?
+ 
+
+364
+00:35:58,720 --> 00:36:04,000
+It may not be the most exciting story, it may 
+not be the most memorable story about yourself,  
+
+365
+00:36:04,000 --> 00:36:09,840
+but it is definitely one of the enabling stories 
+as well. Similarly, I think one other thing that  
+
+366
+00:36:09,840 --> 00:36:19,800
+I used to say about myself was more that I'm very 
+high agency PM. But as I started working more in  
+
+367
+00:36:19,800 --> 00:36:27,560
+Southeast Asia, I learned that mindfulness 
+is also very, very important, that not every  
+
+368
+00:36:28,440 --> 00:36:37,960
+team, not every culture will work with you in a 
+very hyper aggressive style. But you still need to  
+
+369
+00:36:37,960 --> 00:36:43,320
+get the work done. And I'm still learning on that 
+and therefore, I've started using a word, I don't  
+
+370
+00:36:43,320 --> 00:36:50,200
+want to be a high agency person, I want to be a 
+mindful agency person. And so these terms are very  
+
+371
+00:36:50,200 --> 00:36:55,560
+important because these are the stories that you 
+keep telling yourself and these also then start  
+
+372
+00:36:55,560 --> 00:37:02,960
+shaping your behavior. I do feel that I have a lot 
+to do, I have a lot to learn on these skills, but  
+
+373
+00:37:02,960 --> 00:37:09,520
+these things definitely keep you grounded and you 
+keep coming back to the learning phase again.
+ 
+
+374
+00:37:09,520 --> 00:37:14,720
+It's interesting that when you saw Crystal being 
+incredibly good at working with data, you just  
+
+375
+00:37:14,720 --> 00:37:20,000
+realized, "Hey, maybe I'm actually not very good 
+at this." And your reaction wasn't, "God damn it,  
+
+376
+00:37:20,000 --> 00:37:24,000
+I'm really screwed and this is really depressing 
+me", it's, "No, instead I'm going to try to get  
+
+377
+00:37:24,000 --> 00:37:27,640
+better at this." And that reminds me some 
+of the feedback I get with this podcast,  
+
+378
+00:37:27,640 --> 00:37:32,280
+those people are like, "Man, these people are 
+so good, I'm never going to be this good. It  
+
+379
+00:37:32,920 --> 00:37:38,320
+discourages me from thinking I will ever be 
+super successful in this career." Clearly,  
+
+380
+00:37:38,320 --> 00:37:43,760
+you have a different approach. Do you have 
+advice or guidance to folks that are sometimes  
+
+381
+00:37:43,760 --> 00:37:49,200
+discouraged seeing people being so incredible 
+and helping them actually continue to level up in  
+
+382
+00:37:49,200 --> 00:37:54,560
+this rate of change you talked about versus just 
+like, "Nope, I'm never going to be that good?"
+ 
+
+383
+00:37:54,560 --> 00:38:04,440
+I think as product managers it becomes difficult 
+because a lot of your growth is being determined  
+
+384
+00:38:04,440 --> 00:38:13,480
+because of feedback of others. And because product 
+management is so ambiguous and still not defined,  
+
+385
+00:38:13,480 --> 00:38:19,080
+the stakeholders can also give feedback on 
+variety of dimensions. Some of them may not even  
+
+386
+00:38:19,080 --> 00:38:23,960
+be important enough to give feedback on, but they 
+are important enough for them and so therefore,  
+
+387
+00:38:23,960 --> 00:38:29,720
+they give you feedback. And therefore, you 
+have to shape that feedback in. But you also  
+
+388
+00:38:29,720 --> 00:38:34,720
+have to consider that there are these eight 
+access that we spoke about, the data access,  
+
+389
+00:38:34,720 --> 00:38:40,560
+the design and research access, the technology 
+access, the strategy access, communication access,  
+
+390
+00:38:40,560 --> 00:38:45,000
+collaboration access, organizational skills 
+access, and the community access. You need  
+
+391
+00:38:45,000 --> 00:38:51,360
+to channelize feedback into okay, is this an 
+area that you are targeting for growth or not?
+ 
+
+392
+00:38:51,360 --> 00:38:58,200
+And one of the most important things that I 
+learned was that when I joined Gojek or even  
+
+393
+00:38:58,200 --> 00:39:02,920
+earlier, there would be so many different areas 
+that I needed to improve on and still need to  
+
+394
+00:39:02,920 --> 00:39:07,320
+improve on. You can't improve on every single 
+area. That's what overwhelms you. You need  
+
+395
+00:39:07,320 --> 00:39:13,240
+to pick which is the area which is the maximum 
+leverage for you and improve on that particular  
+
+396
+00:39:13,240 --> 00:39:18,120
+aspect and then move on to the next area, then 
+move on to the next area and so on. Obviously,  
+
+397
+00:39:18,120 --> 00:39:22,400
+if you are floundering in something, if you're 
+really negative in something, then you fix that  
+
+398
+00:39:22,400 --> 00:39:28,080
+first because that will give you the highest 
+leverage. But if you are picking up data and  
+
+399
+00:39:28,080 --> 00:39:33,120
+design and strategy and technology all at the 
+same time, that's when you'll overwhelm you.
+ 
+
+400
+00:39:33,120 --> 00:39:37,600
+So to summarize the advice there is one, 
+be actually very open to feedback you're  
+
+401
+00:39:37,600 --> 00:39:42,760
+getting. It's easy to say that, it's hard 
+to actually listen to people criticizing  
+
+402
+00:39:42,760 --> 00:39:48,560
+you and act on it. So I think that's an 
+important takeaway here is just actually,  
+
+403
+00:39:49,320 --> 00:39:53,880
+feedback is a gift and actually understand that 
+and try to act on it. I have a great interview  
+
+404
+00:39:53,880 --> 00:40:00,600
+with Jules Walter who's a PM at Google now, and he 
+has this awesome quote about how whenever people  
+
+405
+00:40:00,600 --> 00:40:05,720
+give him hard feedback, it's like internally he's 
+just melting, but that's externally he's like,  
+
+406
+00:40:05,720 --> 00:40:10,120
+"Thank you so much for that feedback, I 
+really appreciate it. It's very valuable."
+ 
+
+407
+00:40:10,120 --> 00:40:14,080
+And so that's a good way to get people to keep 
+giving feedback. Okay. And then the other piece  
+
+408
+00:40:14,080 --> 00:40:18,120
+of advice you just shared there is pick a focus 
+area. Like say you're getting all this feedback,  
+
+409
+00:40:18,120 --> 00:40:24,400
+your strategy isn't amazing, your PRDs aren't 
+great, just find one thing to focus on. And I  
+
+410
+00:40:24,400 --> 00:40:28,120
+don't know, do you try to do somewhat 
+quarter? Somewhat year? Do you have a  
+
+411
+00:40:28,120 --> 00:40:34,640
+heuristic of how long to spend on one thing?
+So different skills take different time and how  
+
+412
+00:40:34,640 --> 00:40:40,760
+you are progressing also depends a lot as 
+well. For skills which are softer in nature  
+
+413
+00:40:40,760 --> 00:40:45,840
+like communication and collaboration and 
+community, those are skills that you will  
+
+414
+00:40:45,840 --> 00:40:52,240
+work on all your life. You'll never achieve 
+anywhere near two or five on five on those  
+
+415
+00:40:52,240 --> 00:40:56,680
+ever. There'll always be something that you 
+will miss, there will always be a new context,  
+
+416
+00:40:56,680 --> 00:41:02,320
+there'll always be a new set of stakeholders, 
+new company cultures that you have to adapt to.  
+
+417
+00:41:02,320 --> 00:41:08,600
+For others, you have to see that what gives you 
+the maximum leverage in your career. When you're  
+
+418
+00:41:08,600 --> 00:41:15,240
+starting off, my recommendation is that you 
+pick between data and tech one, and definitely  
+
+419
+00:41:15,240 --> 00:41:20,960
+one on design and research and strategy.
+So usually, that's the combo that I recommend.  
+
+420
+00:41:20,960 --> 00:41:26,560
+My advice is if you're coming from design and 
+research background, then you pick data or tech.  
+
+421
+00:41:26,560 --> 00:41:31,880
+If you're coming from a data or tech background, 
+then you pick design and research, and that gives  
+
+422
+00:41:31,880 --> 00:41:37,480
+you the maximum leverage because that's a skill 
+that you will necessarily not have developed over  
+
+423
+00:41:37,480 --> 00:41:43,520
+the years. Once you've demonstrated on two of 
+these three, between data, tech and design and  
+
+424
+00:41:43,520 --> 00:41:50,800
+research, then you start focusing on strategy. 
+We've had great success at Gojek in transitioning  
+
+425
+00:41:50,800 --> 00:41:56,080
+a lot of product managers, especially in 
+Indonesia, using this framework. And it's  
+
+426
+00:41:56,080 --> 00:42:00,920
+produced a lot of good product managers for us.
+Well, let's actually follow that thread. That's  
+
+427
+00:42:00,920 --> 00:42:07,880
+really interesting. And so the approach is you 
+have this access of skillsets and you pick,  
+
+428
+00:42:07,880 --> 00:42:12,760
+for this person moving from say customer service 
+to product, here's the two things you need to  
+
+429
+00:42:12,760 --> 00:42:20,880
+focus on. Can you talk more about that?
+Yeah. For instance, we recently had two PMs,  
+
+430
+00:42:20,880 --> 00:42:26,560
+one who came from a growth background. This is 
+actually [inaudible 00:42:24]'s team. And one  
+
+431
+00:42:26,560 --> 00:42:33,160
+from a research background. And with both of them, 
+we use very different tactics. So we gave one of  
+
+432
+00:42:33,160 --> 00:42:41,640
+finding driver redesign, which was very much a 
+very design-focused product, but we still had them  
+
+433
+00:42:41,640 --> 00:42:47,560
+leverage their data skills because we were able 
+to create a PRD with incredible amount of data on  
+
+434
+00:42:47,560 --> 00:42:54,800
+exactly what different segments of customers we're 
+doing. And that then we worked with designers on  
+
+435
+00:42:54,800 --> 00:43:00,120
+what the designs and the framework for that will 
+be. And even now, Lenny, if you will come and see  
+
+436
+00:43:00,120 --> 00:43:06,120
+our finding driver redesign next time you are 
+in Asia, it's a piece of art. And if you would  
+
+437
+00:43:06,120 --> 00:43:10,280
+see that that was worked on by a product 
+manager who actually came from a growth and  
+
+438
+00:43:10,280 --> 00:43:17,000
+data background, that makes it even more special.
+Similarly, the PM who transitioned from research,  
+
+439
+00:43:17,000 --> 00:43:21,680
+I kept giving feedback on technology and data 
+skills are the ones that we need to check. And  
+
+440
+00:43:21,680 --> 00:43:27,800
+I need to hear from engineers that yes, they're 
+able to work with her very strongly. And once  
+
+441
+00:43:27,800 --> 00:43:33,840
+she was able to do that, she's recently turned 
+a very heated question on one of the features  
+
+442
+00:43:33,840 --> 00:43:42,080
+that we were doing into a full-blown solution 
+with designs, with trade-offs and everything,  
+
+443
+00:43:42,080 --> 00:43:49,600
+and able to now convert it into a question for 
+leadership on how we should be approaching this  
+
+444
+00:43:49,600 --> 00:43:56,560
+particular product and direction. So I think 
+that's proven successful as well. Similarly,  
+
+445
+00:43:56,560 --> 00:44:02,440
+there's another person who took risk who 
+was originally from research and again,  
+
+446
+00:44:02,440 --> 00:44:09,080
+worked a lot on our products, including our 
+enterprise product. And she's doing an amazing job  
+
+447
+00:44:09,080 --> 00:44:14,520
+as well. Again, going through that path of okay, 
+these are the things that you need to leverage.
+ 
+
+448
+00:44:14,520 --> 00:44:20,680
+The only watch-out is that it doesn't work out 
+always. In some cases, some PMs will pick these  
+
+449
+00:44:20,680 --> 00:44:27,120
+things up fast, and it also makes a big difference 
+if you are transitioning when you are slightly  
+
+450
+00:44:27,120 --> 00:44:32,600
+younger in your career. If you are already senior 
+in a function and then you are transitioning,  
+
+451
+00:44:32,600 --> 00:44:38,520
+sometimes it can take a lot of time in 
+transitioning and picking up those skills.  
+
+452
+00:44:38,520 --> 00:44:44,560
+But it's definitely doable if you get a very 
+strong product leader working with you who's  
+
+453
+00:44:44,560 --> 00:44:52,120
+able to shape those skills for you. So it's 
+sometimes okay to go a little slow when you're  
+
+454
+00:44:52,120 --> 00:44:56,760
+transitioning so that you're able to go faster 
+later rather than getting faster somewhere and  
+
+455
+00:44:56,760 --> 00:45:02,840
+then being stuck there for a while.
+This episode is brought to you by Coda,  
+
+456
+00:45:02,840 --> 00:45:09,040
+and I mean that literally. I use Coda every day 
+to help me plan each episode of this very podcast.  
+
+457
+00:45:09,040 --> 00:45:13,720
+It's where I keep my content calendar, my guest 
+research, and also the questions that I plan to  
+
+458
+00:45:13,720 --> 00:45:18,440
+ask each guest. Also, during the recording itself, 
+I have a Coda page up to remind myself what I  
+
+459
+00:45:18,440 --> 00:45:24,400
+want to talk about. Coda is an all-in-one platform 
+that combines the best of documents, spreadsheets,  
+
+460
+00:45:24,400 --> 00:45:30,440
+and apps to help you and your team get more done. 
+Now is the perfect time to get started with Coda,  
+
+461
+00:45:30,440 --> 00:45:35,680
+especially its extensive planning capabilities. 
+With Coda, you can stay aligned and ship faster  
+
+462
+00:45:35,680 --> 00:45:41,400
+by managing your planning cycles in one location. 
+You can set and measure OKRs with full visibility  
+
+463
+00:45:41,400 --> 00:45:46,400
+across teams and stakeholders. You can map 
+dependencies, create progress visualizations,  
+
+464
+00:45:46,400 --> 00:45:51,560
+and identify risk areas. Plus, you can access 
+hundreds of pressure-tested templates for  
+
+465
+00:45:51,560 --> 00:45:56,320
+everything from roadmap strategy 
+to final decision-making to PRDs.
+ 
+
+466
+00:45:56,320 --> 00:46:01,720
+If you want a platform that empowers your team 
+to strategize, plan and track goals together,  
+
+467
+00:46:01,720 --> 00:46:06,280
+you can get started with Coda today for free. And 
+if you want to see for yourself why product teams  
+
+468
+00:46:06,280 --> 00:46:11,160
+at high-growth companies like Pinterest, Figma 
+and Qualtrics run on Coda, take advantage of the  
+
+469
+00:46:11,160 --> 00:46:17,320
+special limited-time offer just for startups. 
+Head over to coda.io/lenny to sign up and get  
+
+470
+00:46:17,320 --> 00:46:26,920
+$1,000 in credit. That's C-O-D-A.io/lenny to 
+sign up and get $1,000 in credit. Coda.io/lenny.
+ 
+
+471
+00:46:28,960 --> 00:46:33,480
+Something that you mentioned earlier that I wanted 
+to come back to is this confusion about what the  
+
+472
+00:46:33,480 --> 00:46:40,800
+PM role is and how that trips people up in being 
+successful in the role and continuing to thrive  
+
+473
+00:46:40,800 --> 00:46:43,760
+in the role. You mentioned this to me offline too, 
+that this is just something you deal with a lot,  
+
+474
+00:46:43,760 --> 00:46:47,240
+just this frustration of what the hell is 
+this job? What am I actually responsible  
+
+475
+00:46:47,240 --> 00:46:52,120
+for? What am I not? What do you find is helpful in 
+helping people work through that, get past that,  
+
+476
+00:46:52,120 --> 00:46:56,520
+not make that a big blocker in their career, 
+not knowing exactly what the PM role is?
+ 
+
+477
+00:46:56,520 --> 00:47:02,680
+I think we've been in technology product for 
+several decades now, but we are still figuring out  
+
+478
+00:47:02,680 --> 00:47:12,320
+what an exact definition of product management is. 
+And even the strongest definitions are slightly  
+
+479
+00:47:12,320 --> 00:47:20,880
+principled and philosophical in nature, they're 
+not very concrete, and that also means that every  
+
+480
+00:47:20,880 --> 00:47:24,400
+and different technology companies have gone 
+through different journeys and they've defined  
+
+481
+00:47:24,400 --> 00:47:29,280
+the roles very, very differently. And even within 
+a very large company, you will see that different  
+
+482
+00:47:29,280 --> 00:47:34,440
+teams, different divisions are approaching 
+the roles very, very differently as well.
+ 
+
+483
+00:47:34,440 --> 00:47:40,280
+And on top of that, what that does is that 
+not only internally the product managers  
+
+484
+00:47:40,280 --> 00:47:45,880
+are figuring this out, their managers, their 
+leaders are figuring these things out for them,  
+
+485
+00:47:45,880 --> 00:47:51,560
+but the other stakeholders who have to work with 
+these product managers are also confused and they  
+
+486
+00:47:51,560 --> 00:47:56,320
+don't know what to expect. And the number 
+one question I get from stakeholders is,  
+
+487
+00:47:56,320 --> 00:48:01,880
+is a product manager expected to do this? Because 
+they also don't know, okay, is this expected  
+
+488
+00:48:01,880 --> 00:48:07,440
+from a product manager or not? And my general 
+answer to that is, if this is something which  
+
+489
+00:48:07,440 --> 00:48:12,360
+is blocking the progress on the product, then 
+yes, the product manager should work on that.
+ 
+
+490
+00:48:12,360 --> 00:48:17,960
+Love that.
+But that works if the product managers  
+
+491
+00:48:17,960 --> 00:48:22,400
+have had some training and they have had some 
+training in working with different stakeholders  
+
+492
+00:48:22,400 --> 00:48:28,400
+and they have had something on the job. What I've 
+figured out is that there are certain functions  
+
+493
+00:48:28,400 --> 00:48:34,000
+and there are certain disciplines which you can't 
+define, but you can only become better at with  
+
+494
+00:48:34,000 --> 00:48:40,080
+practice. For instance, what is an actor or what 
+is a dancer? Right? So these are things that you  
+
+495
+00:48:40,080 --> 00:48:47,560
+will get better at as you become skilled at it. 
+And earlier, these things used to be looked at  
+
+496
+00:48:47,560 --> 00:48:52,880
+as something which is very artistic, only the 
+people who are talented or only specific kind  
+
+497
+00:48:52,880 --> 00:48:57,640
+of people can do it. But now, each one of those 
+has become [inaudible 00:48:57] and frameworks as  
+
+498
+00:48:57,640 --> 00:49:01,320
+well. So there are courses on filmmaking, 
+there are courses on acting, there are  
+
+499
+00:49:01,320 --> 00:49:07,880
+courses on dancing and so on. And similarly, 
+product management is that space as well.
+ 
+
+500
+00:49:07,880 --> 00:49:12,880
+So you have to understand there's an art to it 
+and there's a science to it, but you can use  
+
+501
+00:49:12,880 --> 00:49:20,160
+the science to figure out the art. So that's the 
+philosophical side of it. The second side of it  
+
+502
+00:49:20,160 --> 00:49:26,440
+is what we spoke about earlier that instead 
+of figuring out what is product management,  
+
+503
+00:49:26,440 --> 00:49:31,480
+figure out what's your contribution, what's your 
+output and figure out are you contributing on  
+
+504
+00:49:31,480 --> 00:49:39,560
+these access on data, on design, on technology and 
+on strategy. And one of my favorite things is that  
+
+505
+00:49:39,560 --> 00:49:47,600
+if you created these four circles of strategy, of 
+technology, of design and of data, and you created  
+
+506
+00:49:47,600 --> 00:49:53,640
+a product management circle which encircles each 
+one of these, so you are the only discipline,  
+
+507
+00:49:53,640 --> 00:49:59,080
+which is the co-collaborator for all of these 
+disciplines and tying all these things out.
+ 
+
+508
+00:49:59,080 --> 00:50:05,400
+So it's not about you standing alone, it's you 
+always collaborating and pairing with someone  
+
+509
+00:50:05,400 --> 00:50:09,920
+else. But you are the only one who's pairing 
+with everyone else and therefore, you have that  
+
+510
+00:50:09,920 --> 00:50:17,560
+unique insight which no one else in the team will 
+have. That role can be played by someone else,  
+
+511
+00:50:17,560 --> 00:50:21,960
+it doesn't necessarily need to be called a 
+product manager. But if you are being called a  
+
+512
+00:50:21,960 --> 00:50:26,640
+product manager, you figure out the [inaudible 
+00:50:24] the time piece that you are. And  
+
+513
+00:50:27,640 --> 00:50:33,640
+when you are added to the team, you must dream 
+the team's overall contribution, overall energy  
+
+514
+00:50:33,640 --> 00:50:39,960
+and overall output up and not down.
+I love that. Something I always tell  
+
+515
+00:50:39,960 --> 00:50:47,680
+people is the PM doesn't necessarily have the 
+magical skills other team members don't have,  
+
+516
+00:50:47,680 --> 00:50:54,320
+it's that they don't also have another job. 
+Engineers may do a great job at being the PM,  
+
+517
+00:50:54,320 --> 00:50:59,760
+they just also have to build and code. And they 
+don't have time to do all the things that a PM  
+
+518
+00:50:59,760 --> 00:51:04,640
+has to do, and a designer is in the same way, 
+a researcher or data person. And so oftentimes,  
+
+519
+00:51:04,640 --> 00:51:10,240
+that's just like there's this person that has the 
+time to do all these glue, work things between  
+
+520
+00:51:10,240 --> 00:51:16,600
+teams. And the great PMs also are very good 
+at these skills that help you do these things,  
+
+521
+00:51:16,600 --> 00:51:22,600
+but it doesn't mean other people can't do them.
+You see yourself as playing a role and not your  
+
+522
+00:51:22,600 --> 00:51:26,840
+title and not your function, and 
+that just clarifies a lot of things  
+
+523
+00:51:26,840 --> 00:51:33,000
+for people. And different people will play 
+different roles. And depending on the kind  
+
+524
+00:51:33,000 --> 00:51:39,880
+of a PM you are, are you in a specific domain 
+or you are slightly generalist, the role that  
+
+525
+00:51:39,880 --> 00:51:43,640
+you will be playing in different teams can be 
+different and the variety of roles that you  
+
+526
+00:51:43,640 --> 00:51:50,560
+can play makes you a better product manager.
+I love that. You've mentioned these four access  
+
+527
+00:51:50,560 --> 00:51:54,680
+attributes of great product managers, overall 
+product managers. Let's just spend a little time  
+
+528
+00:51:54,680 --> 00:52:01,680
+here. So you say basically the things you need 
+to be doing and good at, data, design/research  
+
+529
+00:52:01,680 --> 00:52:08,040
+technology, strategy, and then you also mentioned 
+collaboration and communication. Maybe you're-
+ 
+
+530
+00:52:08,040 --> 00:52:16,960
+Yeah, organizational skills and community. I think 
+those are very, very important because one of the  
+
+531
+00:52:16,960 --> 00:52:22,520
+things and one of the things which one of the 
+product managers works with me continues to say,  
+
+532
+00:52:22,520 --> 00:52:31,240
+and I really plus on that a lot, is that product 
+manager is the all community enabler in the team,  
+
+533
+00:52:31,240 --> 00:52:37,160
+in the organization. And that community is the 
+software aspect which ties everyone together  
+
+534
+00:52:37,160 --> 00:52:43,360
+towards a common mission of delivering 
+an output. And that I think is a very,  
+
+535
+00:52:43,360 --> 00:52:52,120
+very important goal in today's context, especially 
+for teams which are becoming more remote or  
+
+536
+00:52:52,120 --> 00:52:58,440
+teams where people are not co-located or they're 
+distributed. That community aspect becomes a very,  
+
+537
+00:52:58,440 --> 00:53:05,000
+very important part that product managers need 
+to focus on and bring and channelize as well.
+ 
+
+538
+00:53:05,000 --> 00:53:10,120
+So let's just quickly describe each of these 
+attributes. I imagine people might be thinking,  
+
+539
+00:53:10,120 --> 00:53:15,200
+"Okay, what should I get better at as a PM?" 
+And this is an awesome list. Each company has  
+
+540
+00:53:15,200 --> 00:53:18,360
+their own career ladders and attributes and 
+things like that, but not a lot of companies  
+
+541
+00:53:18,360 --> 00:53:22,800
+don't. So I think for people that are trying 
+to figure out where do I need to get better,  
+
+542
+00:53:22,800 --> 00:53:28,000
+I think this is a really cool list. Can you just 
+maybe just a sentence explanation of each of these  
+
+543
+00:53:28,000 --> 00:53:34,000
+attributes and skillsets that a PM needs?
+So each one of those skills, like the most  
+
+544
+00:53:34,000 --> 00:53:40,400
+growth ladders, what they will do, is they will 
+have say for data, they will have level one,  
+
+545
+00:53:40,400 --> 00:53:43,160
+exhibits these traits. Level two, 
+exhibits this trait. Level three,  
+
+546
+00:53:43,160 --> 00:53:49,440
+exhibits this trait. Level four and level five and 
+so on. That's how they'll describe it. But five  
+
+547
+00:53:49,440 --> 00:53:55,160
+is absolute ninja level data quality, like you 
+could probably do a data startup of your own.
+ 
+
+548
+00:53:55,160 --> 00:54:02,200
+Like Crystal basically?
+Crystal. And level zero is someone who cannot  
+
+549
+00:54:02,200 --> 00:54:08,560
+even basically define the basic metrics for this 
+particular product and won't be able to figure out  
+
+550
+00:54:10,200 --> 00:54:15,200
+is this particular thing impacting orders or 
+users or revenue. And so you'll really not be  
+
+551
+00:54:15,200 --> 00:54:21,760
+able to figure even that piece out. Similarly, 
+on design and research, for product managers,  
+
+552
+00:54:21,760 --> 00:54:27,200
+we focus a lot more on problems and are you able 
+to identify problems from a user's perspective.  
+
+553
+00:54:27,200 --> 00:54:32,880
+That's at level zero. And level five will be 
+somebody who's able to define the user problems  
+
+554
+00:54:32,880 --> 00:54:39,880
+but is also able to tie them to business roles as 
+well. So that makes it the holistic. Similarly,  
+
+555
+00:54:39,880 --> 00:54:48,240
+on technology, it's one of the skills which is 
+relatively easier to define where you don't have  
+
+556
+00:54:48,240 --> 00:54:53,280
+any tech understanding. If somebody asked you 
+what is HTTP or API or internet and you'll be  
+
+557
+00:54:53,280 --> 00:54:58,400
+like, "Okay, I don't know what it is."
+And while on the other end, you are able  
+
+558
+00:54:58,400 --> 00:55:06,000
+to have deep debates and could probably write 
+technology design documents yourself as well.  
+
+559
+00:55:06,000 --> 00:55:10,160
+I think sometimes people get confused between 
+data science. And in different organizations,  
+
+560
+00:55:10,160 --> 00:55:15,360
+I see data science bucketed either in data or 
+in technology. Either is fine as long as you are  
+
+561
+00:55:15,360 --> 00:55:21,240
+clear on what your organization's framework is. 
+Similarly then, there is strategy. Strategy is I  
+
+562
+00:55:21,240 --> 00:55:27,280
+think another area in product management which 
+gets very confusing because there is obviously  
+
+563
+00:55:27,280 --> 00:55:31,400
+corporate strategy, there is business strategy, 
+there's pricing strategy, there's strategy  
+
+564
+00:55:31,400 --> 00:55:39,440
+everywhere. Product strategy for me is where you 
+are able to define that while somebody defines  
+
+565
+00:55:39,440 --> 00:55:44,160
+that this is the mountain that you're going to 
+climb, but okay, how are you going to climb that  
+
+566
+00:55:44,160 --> 00:55:49,760
+mountain is basically the product strategy piece.
+So you are not in charge of okay, are you focused  
+
+567
+00:55:49,760 --> 00:55:55,400
+on growth? Are you focused on revenue? Are you 
+focused on profitability? That's someone's choice.  
+
+568
+00:55:55,400 --> 00:56:00,000
+Are you going to pick this country? Are you going 
+to pick that country? But once that is picked,  
+
+569
+00:56:00,000 --> 00:56:04,920
+what are the user segments that you're going 
+to focus on? What are the needs of those user  
+
+570
+00:56:04,920 --> 00:56:10,400
+segments? How are we going to figure out what 
+the right product for them will be? What is  
+
+571
+00:56:10,400 --> 00:56:14,920
+the order in which we are going to work on 
+that? That whole piece of product strategy  
+
+572
+00:56:14,920 --> 00:56:20,360
+is with the product managers. And again, in 
+the first case, you are basically going to  
+
+573
+00:56:20,360 --> 00:56:25,880
+rely on everyone to tell you, do this, do this, 
+do this. In second and in the level five cases,  
+
+574
+00:56:25,880 --> 00:56:33,160
+you are able to articulate a very coherent 
+product strategy at a broad level as well.
+ 
+
+575
+00:56:33,160 --> 00:56:37,920
+Amazing, thanks for sharing that. I think for 
+people that are trying to craft career ladder  
+
+576
+00:56:37,920 --> 00:56:41,760
+for product managers, this could help inform 
+the way they think about this. By the way,  
+
+577
+00:56:41,760 --> 00:56:46,240
+when we mentioned Crystal, for folks that have 
+no idea who we're talking about, she was a early  
+
+578
+00:56:46,240 --> 00:56:50,840
+head of growth at Gojek back in the day. She 
+was a previous guest on the podcast. I always  
+
+579
+00:56:50,840 --> 00:56:55,040
+forget how to pronounce her last name exactly, 
+but I think it's Widjaja, Crystal Widjaja.
+ 
+
+580
+00:56:55,040 --> 00:56:58,160
+Widjaja.
+Widjaja? Okay, okay. Great. Going  
+
+581
+00:56:58,160 --> 00:57:05,160
+in a different direction, we're going to move to 
+contrarian corner. I'm curious if there's anything  
+
+582
+00:57:05,160 --> 00:57:12,120
+that you believe that other people wouldn't 
+agree with or generally just don't believe?
+ 
+
+583
+00:57:12,120 --> 00:57:19,000
+I used to think intent is the most important 
+thing, right? And when I was starting off,  
+
+584
+00:57:19,000 --> 00:57:24,840
+that used to be the advice that as long as your 
+intent is right, even if some of your words are  
+
+585
+00:57:24,840 --> 00:57:31,600
+not landing, even if some of the comms are 
+not landing, that will work out. What I've  
+
+586
+00:57:31,600 --> 00:57:39,120
+seen is that it's not enough. Your actions, your 
+behavior, and the way you communicate, the way  
+
+587
+00:57:39,120 --> 00:57:49,960
+you collaborate, that also has to communicate 
+and show who you are as well. So intent is  
+
+588
+00:57:49,960 --> 00:57:58,320
+not enough. And that's a thing which I think a 
+lot of people in my age group just don't get,  
+
+589
+00:57:58,320 --> 00:58:08,360
+but people who are slightly starting off their 
+career, it resonates well with them. Second thing  
+
+590
+00:58:08,360 --> 00:58:14,320
+I think where I feel that it's become, I don't 
+know, is it contrarian or it's become politically  
+
+591
+00:58:14,320 --> 00:58:23,240
+incorrect, is that you still need to put in 
+the effort and our number of hours is effort.
+ 
+
+592
+00:58:23,240 --> 00:58:28,960
+And I think that's one thing which has become 
+very politically incorrect to say over the years  
+
+593
+00:58:28,960 --> 00:58:34,760
+when I was younger, it was the norm that 
+yes, you will have to put in the effort,  
+
+594
+00:58:34,760 --> 00:58:39,560
+you will have to put in the hours to grow 
+and improve your skills. And it's not even  
+
+595
+00:58:39,560 --> 00:58:44,920
+about your growth in the company, it's just your 
+own growth. You have to spend the time, effort,  
+
+596
+00:58:44,920 --> 00:58:54,880
+and energy into growing. I think a lot of that 
+is getting lost in the debates between complete  
+
+597
+00:58:54,880 --> 00:59:05,160
+workaholism and just being not very serious about 
+your growth at all. So I think those are the two  
+
+598
+00:59:05,160 --> 00:59:14,040
+that I find myself having to explain myself 
+again and again and why I feel this way.
+ 
+
+599
+00:59:14,040 --> 00:59:19,880
+I completely agree with that. I find a hugely 
+strong correlation between hours you put into the  
+
+600
+00:59:19,880 --> 00:59:26,040
+work you do and success. And I think there's been 
+a return to okay, working hard is really important  
+
+601
+00:59:26,600 --> 00:59:32,000
+and you shouldn't be afraid of promoting working 
+really hard. So we've actually gone through  
+
+602
+00:59:32,000 --> 00:59:36,200
+everything that I wanted to ask you. Before we 
+get to our very exciting lightning round, is there  
+
+603
+00:59:36,200 --> 00:59:41,080
+anything else you wanted to share or is there 
+anything you want to leave listeners with?
+ 
+
+604
+00:59:41,080 --> 00:59:49,360
+No, I think it has been great talking to. I hope 
+it was useful to people. I've tried to keep it  
+
+605
+00:59:49,360 --> 00:59:59,400
+real, but also in takeaway format. And if there 
+are any questions that you have that I feel I  
+
+606
+00:59:59,400 --> 01:00:03,840
+have not answered, I'm happy to answer them.
+Okay, amazing. Well, we'll have people post in  
+
+607
+01:00:03,840 --> 01:00:09,520
+the comments if there's anything else they would 
+love to ask you. With that, we've reached our very  
+
+608
+01:00:09,520 --> 01:00:14,000
+exciting lightning round. Are you ready?
+Yes.
+ 
+
+609
+01:00:14,000 --> 01:00:19,600
+First question, what are two or three books 
+that you've recommended most to other people?
+ 
+
+610
+01:00:19,600 --> 01:00:26,040
+The first book is a book which I feel is not 
+quoted enough in product management community,  
+
+611
+01:00:26,040 --> 01:00:32,720
+is a book called Small Data by Martin Lindstrom. 
+This is a person who was an advertiser or  
+
+612
+01:00:32,720 --> 01:00:40,480
+marketeer who would go and make campaigns for big 
+brands in different countries, and so would have  
+
+613
+01:00:40,480 --> 01:00:50,640
+usually very short time to get the pulse of that 
+space and design a campaign around it. And how he  
+
+614
+01:00:50,640 --> 01:00:57,960
+got insights very quickly from, and what are some 
+of the takeaways that are there for people working  
+
+615
+01:00:57,960 --> 01:01:02,960
+in product space, not just product managers, 
+but designers, researchers, strategy people,  
+
+616
+01:01:02,960 --> 01:01:10,040
+anyone really, I can't recommend that book more. 
+And I've cited that book a lot internally.
+ 
+
+617
+01:01:10,040 --> 01:01:19,680
+The second book that I recommend is Adam Grant's 
+Originals. I think it's a very important book.  
+
+618
+01:01:19,680 --> 01:01:26,920
+It changed a lot of things. When I spoke about 
+that I was going through this crisis of, oh,  
+
+619
+01:01:26,920 --> 01:01:33,000
+I'm behind so many things after joining Gojek, 
+Originals was one book that I read which really,  
+
+620
+01:01:33,000 --> 01:01:40,840
+really helped me think about my growth and 
+how I see myself. And anyone who is stuck or  
+
+621
+01:01:40,840 --> 01:01:48,200
+anyone who feels they are superstars, they are 
+the innovators of the century kind of a thing,  
+
+622
+01:01:48,200 --> 01:01:56,000
+it's a book that gives you a very good reality 
+check. And the third book that I recommend  
+
+623
+01:01:56,000 --> 01:02:04,560
+is definitely Daniel Kahneman's Thinking, Fast 
+and Slow. I think especially the thinking slow  
+
+624
+01:02:04,560 --> 01:02:14,760
+part becomes very, very important piece as well.
+And the reason why change is hard, the reason why  
+
+625
+01:02:14,760 --> 01:02:19,920
+feedback is hard is because we are used 
+to thinking fast and we are not used to  
+
+626
+01:02:19,920 --> 01:02:26,120
+thinking slow. While if you actually think slow, 
+you'll actually welcome change and growth.
+ 
+
+627
+01:02:26,120 --> 01:02:30,040
+Amazing. That book's come up a bunch actually 
+recently on the podcast and it is always sitting  
+
+628
+01:02:30,040 --> 01:02:37,160
+under my laptop, holding up my laptop for these 
+interviews. So I fully agree. Next question,  
+
+629
+01:02:37,160 --> 01:02:41,400
+do you have a favorite recent movie or 
+TV show that you've really enjoyed?
+ 
+
+630
+01:02:41,400 --> 01:02:52,320
+I haven't seen a lot of movies recently, I think. 
+But while I was on the flight back from Dubai,  
+
+631
+01:02:52,320 --> 01:03:03,440
+I saw Miss Congeniality again and I really, really 
+enjoyed it. I thought it's a very fun movie,  
+
+632
+01:03:03,440 --> 01:03:11,600
+but also had a pretty good message. I know 
+it's probably not the movie which anyone would  
+
+633
+01:03:11,600 --> 01:03:18,600
+want to cited, but I think it's sometimes 
+good to just watch good entertainment.
+ 
+
+634
+01:03:18,600 --> 01:03:23,440
+That's quite the contrarian pick. Yeah, nobody 
+has cited this movie, Miss Congeniality. This is  
+
+635
+01:03:23,440 --> 01:03:27,640
+a first, but I love it. It's way out there. 
+I would never would've expected this.
+ 
+
+636
+01:03:27,640 --> 01:03:34,520
+In terms of TV shows, I think the show that 
+I really go back to all the time is Schitt's  
+
+637
+01:03:34,520 --> 01:03:40,840
+Creek. I think it's a show which operates at so 
+many different levels without taking itself that  
+
+638
+01:03:40,840 --> 01:03:49,080
+seriously, and it just lands. And especially as 
+a product manager and as a leader who obsesses a  
+
+639
+01:03:49,080 --> 01:03:55,720
+lot about diversity, I think it did a fantastic 
+job in showing different sides of motherhood,  
+
+640
+01:03:56,360 --> 01:04:04,520
+of the LGBTQIA communities, and also 
+teenage girls figuring themselves out  
+
+641
+01:04:04,520 --> 01:04:09,000
+as well. I think it did a fantastic job.
+Do you have a favorite interview question that  
+
+642
+01:04:09,000 --> 01:04:13,440
+you like to ask candidates when you're 
+hiring product managers especially?
+ 
+
+643
+01:04:13,440 --> 01:04:24,840
+So it's not really one question, but what I like 
+to do with them is to brainstorm choices on an  
+
+644
+01:04:24,840 --> 01:04:30,520
+actual product. And I'll typically pick up a 
+product that they use most often and then I  
+
+645
+01:04:30,520 --> 01:04:35,720
+will be like, "Okay, what if this product were to 
+do this? Then what do you think, it makes sense?  
+
+646
+01:04:35,720 --> 01:04:40,520
+Don't think it makes sense? What about this? 
+Okay, how would it evolve in six months? What  
+
+647
+01:04:40,520 --> 01:04:46,480
+would happen in 12 months and so on?" I think it 
+gives you a far better insight into how would it  
+
+648
+01:04:46,480 --> 01:04:55,920
+be on working with them on a real case. And you 
+also keep... And what I like about it is that you  
+
+649
+01:04:55,920 --> 01:05:05,040
+can keep going back deeper into it and develop 
+it together. So I typically try and pick product  
+
+650
+01:05:05,040 --> 01:05:13,920
+that I will also not have very strong opinions on 
+so that it can become a two-way conversation.
+ 
+
+651
+01:05:13,920 --> 01:05:18,320
+What do you actually look for in an answer that 
+tells you, "Okay, this candidate is amazing"  
+
+652
+01:05:18,320 --> 01:05:24,120
+versus flags that are like, "Hmm, maybe not?"
+There are some obvious check marks that are they  
+
+653
+01:05:24,120 --> 01:05:29,320
+able to first abstract out and figure out what 
+the overall goals for the product are, who the  
+
+654
+01:05:29,320 --> 01:05:37,480
+users for that product are, what would they be 
+focusing on right now, whether this will align  
+
+655
+01:05:37,480 --> 01:05:45,520
+with that or not. And then a reason backwards that 
+okay, maybe this may not work, but something on  
+
+656
+01:05:45,520 --> 01:05:51,040
+these lines. Are you obsessed about this feature 
+or are you obsessed about okay, what this enables  
+
+657
+01:05:51,040 --> 01:05:56,720
+you to do? So if this is what it enables you 
+to do, then are you okay with considering some  
+
+658
+01:05:56,720 --> 01:06:04,120
+other options and so on? So I think that's the 
+direction which usually goes in the right way.
+ 
+
+659
+01:06:04,120 --> 01:06:08,040
+Is there a favorite product you've recently 
+discovered that you really love?
+ 
+
+660
+01:06:08,040 --> 01:06:16,760
+So the reason why I've not watched a lot of drama 
+or TV recently is because I've discovered these  
+
+661
+01:06:16,760 --> 01:06:25,560
+short video apps through Instagram and all 
+of these apps, they dub Chinese TV serials  
+
+662
+01:06:26,480 --> 01:06:32,360
+into English or there will be subtitles in English 
+and they are delivered in TikTok style two-minute  
+
+663
+01:06:32,360 --> 01:06:38,200
+videos. And it's a masterstroke in how the 
+series are constructed. The first few episodes,  
+
+664
+01:06:38,200 --> 01:06:43,920
+which is like 10 episodes which is about 
+10 to 15 minutes, sets up the story in  
+
+665
+01:06:43,920 --> 01:06:52,600
+such a way that you have to unlock the next 10.
+And these videos are quite expensive. They end up,  
+
+666
+01:06:52,600 --> 01:07:00,240
+one series takes more than the entire cost of 
+monthly cost of Netflix to view. But it's just  
+
+667
+01:07:00,240 --> 01:07:06,000
+amazing how the whole product has been put, 
+how all these products have been put together  
+
+668
+01:07:06,000 --> 01:07:11,960
+on unlocking the lamification aspects of it, the 
+storytelling aspects of it, the content cutting  
+
+669
+01:07:11,960 --> 01:07:21,920
+part of it, and even the selection of the stories 
+part of it. And what I'm told is that once I've  
+
+670
+01:07:21,920 --> 01:07:27,680
+learned about it, I've also been reading about 
+it, they're actually companies which are able to  
+
+671
+01:07:27,680 --> 01:07:34,600
+give you tools of where you can construct this 
+app yourself. And multiple people, two-people,  
+
+672
+01:07:34,600 --> 01:07:41,080
+three-people companies are churning these out 
+and earning a lot of profit from it as well.
+ 
+
+673
+01:07:41,080 --> 01:07:43,680
+What is this called for people 
+that want to check this out?
+ 
+
+674
+01:07:43,680 --> 01:07:48,520
+So you can start with DramaBox, you can start 
+with [inaudible 01:07:47] Reels and so on.  
+
+675
+01:07:48,520 --> 01:07:52,920
+And there are multiple of these. And those 
+of you who are very familiar with TikTok,  
+
+676
+01:07:52,920 --> 01:07:56,880
+you would've seen that some of these show 
+you the first 10 episodes on TikTok and then  
+
+677
+01:07:56,880 --> 01:08:06,080
+they take you to their app to view the rest.
+Wow. I love so many unusual contrarian pieces of  
+
+678
+01:08:06,080 --> 01:08:11,360
+advice here, I love it. Two more questions. 
+Do you have a favorite life motto that you  
+
+679
+01:08:11,360 --> 01:08:15,440
+often come back to, share with friends 
+or family, either in work or in life?
+ 
+
+680
+01:08:15,440 --> 01:08:26,240
+For me, the most important thing has been that 
+I started my career very late in tech. I was  
+
+681
+01:08:26,240 --> 01:08:34,000
+already 25. For the first several years, I worked 
+in a small [inaudible 01:08:32] town in India. I  
+
+682
+01:08:34,000 --> 01:08:44,120
+came to Delhi only in 2013, and I joined Gojek 
+in 2018. I think I've done reasonably well for  
+
+683
+01:08:44,120 --> 01:08:54,040
+myself. And it's never late to do or what do you 
+want to do and what do you want to be. I think  
+
+684
+01:08:54,040 --> 01:09:01,360
+that's the thing that I really, really believe in 
+and I also advise in. Especially as the world is  
+
+685
+01:09:01,360 --> 01:09:13,120
+aging and a lot of people are thinking about it, 
+I would say that it's not too late ever. You can  
+
+686
+01:09:13,120 --> 01:09:19,800
+be and do what you want right now.
+So good. It's not too late. I really,  
+
+687
+01:09:19,800 --> 01:09:24,840
+really like that advice. My wife is an 
+illustrator designer. She has a book she  
+
+688
+01:09:24,840 --> 01:09:28,480
+put out called Am I Overthinking This? It's in my 
+background somewhere there. And she has a chart  
+
+689
+01:09:28,480 --> 01:09:32,480
+that communicates that exact message in a really 
+cute way, and we'll try to link to it in the show  
+
+690
+01:09:32,480 --> 01:09:37,040
+notes. Final question. You live in Singapore, 
+I know you travel a lot. But if someone were to  
+
+691
+01:09:37,040 --> 01:09:45,000
+come to Singapore, is there a food that you think 
+they need to try that's unique to Singapore?
+ 
+
+692
+01:09:45,000 --> 01:09:49,960
+Singapore? There are multiple. So Singapore is 
+a melting pot of different cultures. There are  
+
+693
+01:09:49,960 --> 01:09:58,520
+four official languages. And the only thing I 
+will advise is depending on your taste buds,  
+
+694
+01:09:58,520 --> 01:10:06,440
+whatever you want to do, you should go and visit 
+a Hawker Center. And it's an amazing experience in  
+
+695
+01:10:06,440 --> 01:10:11,360
+itself. And those of you who've seen Crazy Rich 
+Asians, the first thing they do when they land  
+
+696
+01:10:11,360 --> 01:10:18,680
+in Singapore is go to the Hawker Center. So it's 
+an experience of its kind. And if you are looking  
+
+697
+01:10:18,680 --> 01:10:25,640
+for a specific recommendation, go to Lau Pa Sat. 
+If you are a fan of Indian, you'll get that. If  
+
+698
+01:10:25,640 --> 01:10:30,400
+you're a fan of Malay cuisine, you'll get that. 
+If you're a fan of Singaporean Chinese, you'll  
+
+699
+01:10:30,400 --> 01:10:39,480
+get that. So you pick what works for you.
+I love that. Vikrama, I feel like we've produced  
+
+700
+01:10:39,480 --> 01:10:44,360
+both a lot of output and we're going to have 
+really great outcomes from our conversation.  
+
+701
+01:10:44,360 --> 01:10:48,840
+Thank you so much for being here. Two final 
+questions. Where can folks find you online if  
+
+702
+01:10:48,840 --> 01:10:51,360
+they want to reach out and follow-up 
+on any of the stuff we talked about?  
+
+703
+01:10:51,360 --> 01:10:56,120
+And how can listeners be useful to you?
+Thank you, Lenny. It's been great talking to  
+
+704
+01:10:56,120 --> 01:11:01,380
+you as well. Hopefully, this turns out well. You 
+can reach out to me either on LinkedIn, Vikrama  
+
+705
+01:11:01,380 --> 01:11:10,240
+Dhiman, or you can reach out on Twitter. Twitter 
+works better. And the listeners can be useful to  
+
+706
+01:11:10,240 --> 01:11:19,560
+me by, well, just sharing whatever they feel. And 
+I continuously follow a lot of people, a lot of  
+
+707
+01:11:19,560 --> 01:11:26,160
+people who are not yet famous. Just tell me what 
+your story is, just tell me what you are working  
+
+708
+01:11:26,160 --> 01:11:32,920
+on. And as long as you are passionate about it, 
+I will try and find time. Maybe I cannot talk to  
+
+709
+01:11:32,920 --> 01:11:38,880
+everyone, but I'll definitely try and find to chat 
+with you and listen out and support or connect  
+
+710
+01:11:38,880 --> 01:11:45,840
+you to someone who can help support you.
+That's a very generous offer, I think a lot  
+
+711
+01:11:45,840 --> 01:11:51,360
+of people are going to take you up on that. 
+Vikrama, thank you so much for being here.
+ 
+
+712
+01:11:51,360 --> 01:11:55,240
+Thank you so much, Lenny.
+Bye, everyone.
+ 
+
+713
+01:11:55,800 --> 01:11:59,440
+Thank you so much for listening. If you found 
+this valuable, you can subscribe to the show  
+
+714
+01:11:59,440 --> 01:12:05,200
+on Apple Podcasts, Spotify, or your favorite 
+podcast app. Also, please consider giving us a  
+
+715
+01:12:05,200 --> 01:12:10,320
+rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+
+716
+01:12:10,320 --> 01:12:18,600
+all past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

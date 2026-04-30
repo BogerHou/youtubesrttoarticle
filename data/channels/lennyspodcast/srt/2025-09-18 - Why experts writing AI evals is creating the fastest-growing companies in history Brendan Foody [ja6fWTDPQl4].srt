@@ -1,0 +1,3431 @@
+1
+00:00:00,080 --> 00:00:05,680
+The wealthiest companies in the world are willing to spend whatever it takes to improve model capabilities.
+
+2
+00:00:05,680 --> 00:00:07,919
+>> We are entering the era of evals.
+
+3
+00:00:07,919 --> 00:00:10,880
+>> We started working with all of the top AI labs.
+
+4
+00:00:10,880 --> 00:00:12,800
+What the labs need is a labor marketplace.
+
+5
+00:00:12,800 --> 00:00:17,520
+They actually need extraordinary professionals that can measure model capabilities.
+
+6
+00:00:17,520 --> 00:00:20,560
+>> You found this pocket maybe the biggest business opportunity in history.
+
+7
+00:00:20,560 --> 00:00:25,760
+>> We grew from 1 to 400 million in revenue run rate in 16 months.
+
+8
+00:00:25,760 --> 00:00:27,920
+Fastest ascent in history.
+
+9
+00:00:27,920 --> 00:00:29,840
+Why is this so valuable?
+
+10
+00:00:29,840 --> 00:00:35,280
+>> The market is bound by the amount of things where humans can do something that models can't.
+
+11
+00:00:35,280 --> 00:00:43,920
+The lab's primary bottleneck to improve models is how they can effectively have some way of measuring what success looks like for the model.
+
+12
+00:00:43,920 --> 00:00:45,360
+>> There's this tweet that you retweeted.
+
+13
+00:00:45,360 --> 00:00:49,840
+If you really think about it, we were put on Earth to create reinforcement learning training data for labs.
+
+14
+00:00:49,840 --> 00:00:57,920
+It's highly likely that the entire economy will become an RL environment machine building out all of these worlds and contexts.
+
+15
+00:00:57,920 --> 00:01:03,680
+And I think the narrative in AI over the last 3 years has almost entirely been one of job displacement.
+
+16
+00:01:03,680 --> 00:01:08,640
+But very few companies and people have talked about this new category of jobs that's being created.
+
+17
+00:01:08,640 --> 00:01:12,880
+>> I talked to a lot of people about what should I be studying, where should I be getting better,
+
+18
+00:01:12,880 --> 00:01:15,840
+>> how can they leverage this technology to do so much more.
+
+19
+00:01:15,840 --> 00:01:24,159
+We'll give people interviews where we say, "Use whatever tools are available to build a website and let's see what product you're able to build in an hour."
+
+20
+00:01:24,159 --> 00:01:28,080
+Today, my guest is Brendan Foody, CEO and co-founder of Merkor.
+
+21
+00:01:28,080 --> 00:01:35,600
+Merkor is the fastest growing company in history to go from 1 to $500 million in revenue.
+
+22
+00:01:35,600 --> 00:01:39,040
+They did this in 17 months, less than a year and a half.
+
+23
+00:01:39,040 --> 00:01:41,920
+Brendan is also the youngest Unicorn founder ever.
+
+24
+00:01:41,920 --> 00:01:45,920
+They just raised $und00 million at $2 billion valuation.
+
+25
+00:01:45,920 --> 00:01:52,320
+Merkore, if you haven't heard of them, helps AI labs and AI companies hire experts to help them train their models using AI.
+
+26
+00:01:52,320 --> 00:01:54,079
+They've never had a customer turn.
+
+27
+00:01:54,079 --> 00:01:59,280
+Their net retention is over 1,600% and they're on a 9 figure revenue run rate.
+
+28
+00:01:59,280 --> 00:02:04,479
+In our conversation, we talk about the increasing value and importance of eval.
+
+29
+00:02:04,479 --> 00:02:09,440
+landscape of AI training companies like Merkor and why they've become so important and valuable.
+
+30
+00:02:09,440 --> 00:02:11,440
+How Brennan discovered this opportunity.
+
+31
+00:02:11,440 --> 00:02:14,000
+His insights on what product market fit looks like.
+
+32
+00:02:14,000 --> 00:02:19,599
+The core tenants he's instilled within his organization that have allowed him to build the fastest growing company in history.
+
+33
+00:02:19,599 --> 00:02:22,480
+What people writing evals for labs are actually doing day-to-day.
+
+34
+00:02:22,480 --> 00:02:25,840
+Which skills and jobs are going to last the longest with the rise of AI?
+
+35
+00:02:25,840 --> 00:02:30,000
+Why he doesn't think we'll see AGI or super intelligence anytime soon?
+
+36
+00:02:30,000 --> 00:02:31,120
+And so much more.
+
+37
+00:02:31,120 --> 00:02:32,480
+This episode is incredible.
+
+38
+00:02:32,480 --> 00:02:33,599
+You need to hear this.
+
+39
+00:02:33,599 --> 00:02:38,239
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+40
+00:02:38,239 --> 00:02:39,680
+It helps tremendously.
+
+41
+00:02:39,680 --> 00:02:47,040
+Also, if you become an annual subscriber of my newsletter, you get 15 incredible products for free for 1 year,
+
+42
+00:02:47,040 --> 00:02:51,519
+including lovable, replet, bolt, nad, linear, superhuman, descript, whisper flow, gamma,
+
+43
+00:02:51,519 --> 00:02:55,040
+perplexity, warp, granola, magic patterns, raycast, chappd, and mobin.
+
+44
+00:02:55,040 --> 00:02:58,080
+Check it out at lenniesnewsletter.com and click product pass.
+
+45
+00:02:58,080 --> 00:03:01,360
+With that, I bring you Brendan Foodie.
+
+46
+00:03:01,360 --> 00:03:04,239
+This episode is brought to you by work OS.
+
+47
+00:03:04,239 --> 00:03:12,800
+If you're building a SAS app, at some point your customers will start asking for enterprise features like SAML authentication and skim provisioning.
+
+48
+00:03:12,800 --> 00:03:18,480
+That's where work OS comes in, making it fast and painless to add enterprise features to your app.
+
+49
+00:03:18,480 --> 00:03:23,920
+Their APIs are easy to understand so that you can ship quickly and get back to building other features.
+
+50
+00:03:23,920 --> 00:03:30,799
+Today, hundreds of companies are already powered by work OS, including ones you probably know like Verscell,
+
+51
+00:03:30,799 --> 00:03:32,560
+Web Flow, and Loom.
+
+52
+00:03:32,560 --> 00:03:37,920
+Work OS also recently acquired Warrant, the fine grain authorization service.
+
+53
+00:03:37,920 --> 00:03:43,280
+Warrant's product is based on a groundbreaking authorization system called Zanzibar,
+
+54
+00:03:43,280 --> 00:03:47,599
+which was originally designed for Google to power Google Docs and YouTube.
+
+55
+00:03:47,599 --> 00:03:55,680
+This enables fast authorization checks at enormous scale while maintaining a flexible model that can be adapted to even the most complex use cases.
+
+56
+00:03:55,680 --> 00:04:02,080
+If you're currently looking to build role-based access control or other enterprise features like single signon,
+
+57
+00:04:02,080 --> 00:04:05,760
+skim or user management, you should consider work OS.
+
+58
+00:04:05,760 --> 00:04:12,400
+It's a drop-in replacement for Ozero and supports up to 1 million monthly active users for free.
+
+59
+00:04:12,400 --> 00:04:15,439
+Check it out at workos.com to learn more.
+
+60
+00:04:15,439 --> 00:04:18,799
+That's work os.com.
+
+61
+00:04:18,799 --> 00:04:21,519
+You fell in love with building products for a reason.
+
+62
+00:04:21,519 --> 00:04:25,600
+But sometimes the day-to-day reality is a little different than you imagined.
+
+63
+00:04:25,600 --> 00:04:32,800
+Instead of dreaming up big ideas, talking to customers, and crafting a strategy, you're drowning in spreadsheets and roadmap updates,
+
+64
+00:04:32,800 --> 00:04:36,000
+and you're spending your days basically putting out fires.
+
+65
+00:04:36,000 --> 00:04:38,080
+A better way is possible.
+
+66
+00:04:38,080 --> 00:04:45,360
+Introducing Jira product discovery, the new prioritization and road mapping tool built for product teams by Atlassian.
+
+67
+00:04:45,360 --> 00:04:52,080
+With Jira product discovery, you can gather all your product ideas and insights in one place and prioritize confidently,
+
+68
+00:04:52,080 --> 00:04:54,800
+finally replacing those endless spreadsheets.
+
+69
+00:04:54,800 --> 00:04:58,800
+Create and share custom product road maps with any stakeholder in seconds.
+
+70
+00:04:58,800 --> 00:05:05,199
+And it's all built on Jira, where your engineering team is already working, so true collaboration is finally possible.
+
+71
+00:05:05,199 --> 00:05:09,120
+Great products are built by great teams, not just engineers.
+
+72
+00:05:09,120 --> 00:05:13,039
+Sales, support, leadership, even Greg from finance.
+
+73
+00:05:13,039 --> 00:05:18,479
+Anyone that you want can contribute ideas, feedback, and insights in Jira product discovery for free.
+
+74
+00:05:18,479 --> 00:05:19,360
+No catch.
+
+75
+00:05:19,360 --> 00:05:21,680
+And it's only $10 a month for you.
+
+76
+00:05:21,680 --> 00:05:25,199
+Say goodbye to your spreadsheets and the never-ending alignment efforts.
+
+77
+00:05:25,199 --> 00:05:28,320
+The old way of doing product management is over.
+
+78
+00:05:28,320 --> 00:05:31,360
+Rediscover what's possible with Jira product discovery.
+
+79
+00:05:31,360 --> 00:05:35,039
+Try it for free at atlassian.com/lenny.
+
+80
+00:05:35,039 --> 00:05:38,360
+That's atlassian.com/lenny.
+
+81
+00:05:42,080 --> 00:05:44,080
+Brendan, thank you so much for being here.
+
+82
+00:05:44,080 --> 00:05:45,840
+Welcome to the podcast.
+
+83
+00:05:45,840 --> 00:05:47,360
+>> Thank you so much for having me, Lenny.
+
+84
+00:05:47,360 --> 00:05:51,199
+I'm a huge fan and so excited to have a conversation.
+
+85
+00:05:51,199 --> 00:05:53,280
+>> I'm really excited to have this conversation as well.
+
+86
+00:05:53,280 --> 00:05:54,560
+I'm a huge fan of yours.
+
+87
+00:05:54,560 --> 00:05:57,680
+I'm excited for more people to learn about you and what you're building.
+
+88
+00:05:57,680 --> 00:06:03,360
+I want to start with uh a tweet that you have pinned at the top of your Twitter feed right now.
+
+89
+00:06:03,360 --> 00:06:04,319
+And here's the tweet.
+
+90
+00:06:04,319 --> 00:06:10,720
+Quote, "We are now working with six out of the magnificent seven all of the top five AI labs,
+
+91
+00:06:10,720 --> 00:06:13,360
+most of the AI application layer companies.
+
+92
+00:06:13,360 --> 00:06:16,080
+One trend is common across every customer.
+
+93
+00:06:16,080 --> 00:06:19,120
+We're entering the era of evals."
+
+94
+00:06:19,120 --> 00:06:22,639
+The reason this caught my attention is that's one of the most recurring trends on this podcast.
+
+95
+00:06:22,639 --> 00:06:28,800
+people talking about the increasing value of learning how to do eval well and the value of evals for companies.
+
+96
+00:06:28,800 --> 00:06:32,560
+Uh feels like still people don't know what the hell this is, what we're talking about,
+
+97
+00:06:32,560 --> 00:06:34,160
+why this is so important.
+
+98
+00:06:34,160 --> 00:06:39,840
+Talk about just what you think people are still missing, what they need to know, what this era of eval means.
+
+99
+00:06:39,840 --> 00:06:45,280
+If the model is the product, then the eval is the product requirement document.
+
+100
+00:06:45,280 --> 00:06:53,120
+And the way that researchers day-to-day looks is that they'll run dozens of experiments where they'll make small improvements on an eval set.
+
+101
+00:06:53,120 --> 00:06:58,319
+And reinforcement learning is becoming so effective that once they have an EVL, they can hill climb it.
+
+102
+00:06:58,319 --> 00:06:58,560
+Right?
+
+103
+00:06:58,560 --> 00:07:03,440
+If you look at just how fast people were able to saturate Olympiad math once they focused on it,
+
+104
+00:07:03,440 --> 00:07:06,800
+how fast we're even saturating Sweetbench once we focus on it.
+
+105
+00:07:06,800 --> 00:07:16,000
+And so in many ways the barrier to applying agents the entire economy to automate every workflow is how do we
+
+106
+00:07:16,000 --> 00:07:16,960
+measure success?
+
+107
+00:07:16,960 --> 00:07:24,960
+How do we evalore is obviously a huge part of doing.
+
+108
+00:07:24,960 --> 00:07:29,840
+So people hearing this are like okay okay I got to really pay attention to this eval stuff.
+
+109
+00:07:29,840 --> 00:07:33,840
+Any advice about learning how to do this well?
+
+110
+00:07:33,840 --> 00:07:36,400
+What companies that are doing this well are doing differently?
+
+111
+00:07:36,400 --> 00:07:39,280
+like help people get better at this thing.
+
+112
+00:07:39,280 --> 00:07:51,199
+>> Yeah, I think that for enterprises especially the core way to think about it is how can they build a test or systematic way to measure how well AI
+
+113
+00:07:51,199 --> 00:07:53,120
+automates their core value chain.
+
+114
+00:07:53,120 --> 00:08:03,520
+So if it's an architecture firm that's producing you know these like architecture diagrams of uh what they provide to their end customer like how
+
+115
+00:08:03,520 --> 00:08:12,960
+can they effectively measure that right and each company has its own value chain uh or maybe a handful of them if it's a multi-product company uh and just
+
+116
+00:08:12,960 --> 00:08:21,120
+thinking about how they measure that um is the prerequisite to really effectively applying AI throughout their entire business.
+
+117
+00:08:21,120 --> 00:08:29,520
+I saw you talking about this on the No Priors podcast with Sarah and Ilad and I don't know if it was after this or before this but Sarah tweeted evals equals your new marketing.
+
+118
+00:08:29,520 --> 00:08:30,720
+What do you what does that mean?
+
+119
+00:08:30,720 --> 00:08:32,080
+What do you think she's saying there?
+
+120
+00:08:32,080 --> 00:08:32,320
+>> Yeah.
+
+121
+00:08:32,320 --> 00:08:37,760
+Well, it ties to what I said earlier about how if the model is the product, evals are the PRD,
+
+122
+00:08:37,760 --> 00:08:40,880
+but also subsequently the sales collateral, right?
+
+123
+00:08:40,880 --> 00:08:47,360
+Because like eval are what you give to researchers to show them what they uh should be building and going on,
+
+124
+00:08:47,360 --> 00:08:51,360
+but they're also the way that you demonstrate the efficacy of capabilities.
+
+125
+00:08:51,360 --> 00:08:58,080
+And historically, everyone's been pointing to these academic evals of PhD level reasoning with GPQA,
+
+126
+00:08:58,080 --> 00:09:00,959
+humanities last exam or Olympiad math.
+
+127
+00:09:00,959 --> 00:09:11,519
+Now it's moving towards the capabilities that people practically care about of how do we get models to automate the way that we build a software platform or automate the way
+
+128
+00:09:11,519 --> 00:09:14,800
+that we do an investment banking uh analysis.
+
+129
+00:09:14,800 --> 00:09:26,720
+Uh and I think labs will increasingly use labs as well as application layer companies will increasingly use eval to demonstrate the capabilities of their models and their products.
+
+130
+00:09:26,720 --> 00:09:27,200
+>> Okay.
+
+131
+00:09:27,200 --> 00:09:32,959
+So, let's kind of build on this and zoom out a little bit and talk about the landscape of the market that you're in.
+
+132
+00:09:32,959 --> 00:09:35,920
+And I was just reflecting on this as I was preparing for this conversation.
+
+133
+00:09:35,920 --> 00:09:39,760
+If you think about the companies growing faster than any company's ever grown in history,
+
+134
+00:09:39,760 --> 00:09:41,279
+there's essentially three buckets.
+
+135
+00:09:41,279 --> 00:09:43,360
+There's the foundational model companies.
+
+136
+00:09:43,360 --> 00:09:48,399
+There's VIP coding apps, cursor, and lovable and bolt and replet and all zero.
+
+137
+00:09:48,399 --> 00:09:52,160
+And then there's data labeling data companies like you.
+
+138
+00:09:52,160 --> 00:09:54,240
+So, I've had the CEO of Handshake on the podcast.
+
+139
+00:09:54,240 --> 00:09:56,080
+I have the CEO of Scale coming on.
+
+140
+00:09:56,080 --> 00:09:58,320
+There's also Serge, there's you guys.
+
+141
+00:09:58,320 --> 00:10:06,160
+Help us just understand the landscape of what this is all about because I think people don't really know what the hell is going on and see all these companies growing like crazy.
+
+142
+00:10:06,160 --> 00:10:16,959
+>> Yeah, I'll give a little bit of the origin story incorporated in that and how it sort of frames the landscape because when we started the company uh I met my co-founders in when we were 14 years old.
+
+143
+00:10:16,959 --> 00:10:20,079
+Uh we started the company together when we were 19.
+
+144
+00:10:20,079 --> 00:10:27,760
+Initially hire in January 2023, initially hiring people internationally, matching them with our friends and automating all the processes of how we did that.
+
+145
+00:10:27,760 --> 00:10:32,640
+So similar to how a human would review a resume, conduct an interview and decided to hire.
+
+146
+00:10:32,640 --> 00:10:40,240
+We automated all of those processes with LMS, bootstrapped the company to a million-doll revenue run rate before we dropped out of college.
+
+147
+00:10:40,240 --> 00:10:49,279
+And then uh a handful of other things happened, but we met OpenAI and we saw that there was this enormous transition in the human
+
+148
+00:10:49,279 --> 00:11:00,000
+data market where it was moving away from this crowdsourcing problem of how do you find low and medium skilled people that can write barely grammatically correct sentences for
+
+149
+00:11:00,000 --> 00:11:04,640
+early versions of LLMs and moving towards this sourcing and vetting problem.
+
+150
+00:11:04,640 --> 00:11:10,800
+How do we source and assess the best professionals, the experienced fang software engineers,
+
+151
+00:11:10,800 --> 00:11:20,240
+the uh investment bankers and doctors and lawyers that can actually help to evaluate and interpret all the capabilities that people want
+
+152
+00:11:20,240 --> 00:11:21,440
+models to have.
+
+153
+00:11:21,440 --> 00:11:25,920
+So from there we uh started working with all of the top AI labs.
+
+154
+00:11:25,920 --> 00:11:32,240
+We grew from 1 to 400 million in revenue run rate in uh 16 months.
+
+155
+00:11:32,240 --> 00:11:36,480
+and it's been an extraordinary journey um and super exciting.
+
+156
+00:11:36,480 --> 00:11:38,399
+>> Okay, first of all, that is out of control.
+
+157
+00:11:38,399 --> 00:11:41,600
+I don't know if people have unders I think this is the first time you're sharing that number.
+
+158
+00:11:41,600 --> 00:11:49,920
+I know recording this you'll have announced it by now, but >> uh 1 to400 million in revenue in 16 months.
+
+159
+00:11:49,920 --> 00:11:50,640
+>> Exactly.
+
+160
+00:11:50,640 --> 00:11:57,440
+So fastest ascent uh in history uh which is an exciting statistic we're we're very proud of.
+
+161
+00:11:57,440 --> 00:12:00,240
+>> Okay, so something big is happening here.
+
+162
+00:12:00,240 --> 00:12:02,880
+Uh why is this so valuable?
+
+163
+00:12:02,880 --> 00:12:04,000
+What is going on here?
+
+164
+00:12:04,000 --> 00:12:15,279
+So it's just to try to summarize what you guys do simply is you help f hire people for labs to train help them train their models and you help them find not just generalist uh
+
+165
+00:12:15,279 --> 00:12:21,279
+labor but experts helping them with very specific gaps in the models knowledge.
+
+166
+00:12:21,279 --> 00:12:22,480
+>> Yeah, precisely.
+
+167
+00:12:22,480 --> 00:12:33,040
+And so it really ties to your first question around the era of evals that's framing all of this which is that the lab's primary bottleneck to
+
+168
+00:12:33,040 --> 00:12:43,600
+being able to improve models is how they can effectively have some way of measuring what success looks like for for the model both to use it as the eval
+
+169
+00:12:43,600 --> 00:12:52,880
+for you know the test that they're measuring their progress against as well as the verifiers in an RL environment to then uh reward the model improve capab capabilities,
+
+170
+00:12:52,880 --> 00:12:53,600
+etc.
+
+171
+00:12:53,600 --> 00:13:00,160
+Um, and they need this across every domain for every capability that models don't know how to use.
+
+172
+00:13:00,160 --> 00:13:10,000
+Um, and the wealthiest companies in the world are willing to spend whatever it takes to improve model capabilities where Merore is sitting at the forefront uh,
+
+173
+00:13:10,000 --> 00:13:12,000
+and sort of the primary bottleneck.
+
+174
+00:13:12,000 --> 00:13:12,399
+>> Okay.
+
+175
+00:13:12,399 --> 00:13:14,160
+What are these people actually doing?
+
+176
+00:13:14,160 --> 00:13:19,760
+So, what's an example of a kind of person that is sought after and then what are they doing like sitting there at the computer?
+
+177
+00:13:19,760 --> 00:13:26,399
+Effectively, the market is bound by the amount of things where humans can do something that models can't.
+
+178
+00:13:26,399 --> 00:13:28,160
+So, I'll make that very concrete.
+
+179
+00:13:28,160 --> 00:13:37,920
+Say you have a model that you want to write like a red line for a contract in the way that a lawyer would and it makes a handful of mistakes,
+
+180
+00:13:37,920 --> 00:13:40,639
+misses a bunch of key points in doing so.
+
+181
+00:13:40,639 --> 00:13:52,079
+What you could do is have a lawyer create a rubric similar to how a professor might create a rubric to create a deliverable for what are the things we want the model to be able to do um so it can effectively
+
+182
+00:13:52,079 --> 00:14:03,600
+score that right like you know plus however much of it identifies this or you know xyz key point and that's really the foundation to measuring what does
+
+183
+00:14:03,600 --> 00:14:13,040
+progress look like for models you know is this model achieving the capabilities that these professionals want as as well as how do we use this as training data
+
+184
+00:14:13,040 --> 00:14:19,519
+to reward and to reinforce a lot of the capabilities that people want models to achieve.
+
+185
+00:14:19,519 --> 00:14:19,760
+>> Okay.
+
+186
+00:14:19,760 --> 00:14:23,839
+So they're essentially writing evals just to connect it back to original conversation.
+
+187
+00:14:23,839 --> 00:14:24,320
+>> Exactly.
+
+188
+00:14:24,320 --> 00:14:28,880
+Well, well that's an interesting thing is everyone talks about RL environment.
+
+189
+00:14:28,880 --> 00:14:32,880
+I feel like the two like hot button things are like RL environments and eval.
+
+190
+00:14:32,880 --> 00:14:37,920
+But one thing like Andre Karpathy tweeted about a bunch is there there's not actually a nuance.
+
+191
+00:14:37,920 --> 00:14:39,360
+It's in in the data type.
+
+192
+00:14:39,360 --> 00:14:44,320
+It's more just a different semantic way of what uh describing what it's being used for.
+
+193
+00:14:44,320 --> 00:14:54,639
+Uh but ultimately it's just some stasis point for like how do you measure what good looks like and you can use that either as the benchmark to you know the sales collateral as Sarah was saying
+
+194
+00:14:54,639 --> 00:15:04,959
+to say here is why our model is the best model in the world and here's the capabilities that we've been working towards or you can use it on the post- training side to reward certain model
+
+195
+00:15:04,959 --> 00:15:08,160
+trajectories and achieve those capabilities.
+
+196
+00:15:08,160 --> 00:15:08,320
+>> Okay.
+
+197
+00:15:08,320 --> 00:15:08,480
+Okay.
+
+198
+00:15:08,480 --> 00:15:16,959
+So, say this lawyer, so this person is writing here's what a great red line contract looks like and here's the rubric of what excellent is.
+
+199
+00:15:16,959 --> 00:15:22,880
+And then are they also providing data like actual examples of redline documents as a part of that?
+
+200
+00:15:22,880 --> 00:15:23,519
+>> They may.
+
+201
+00:15:23,519 --> 00:15:28,959
+So the data landscape historically has included two kinds of data.
+
+202
+00:15:28,959 --> 00:15:32,399
+The first is supervised fine-tuning data which is input output.
+
+203
+00:15:32,399 --> 00:15:36,720
+When people think about like fine-tuning in the historical sense, that's what it is.
+
+204
+00:15:36,720 --> 00:15:40,320
+The second is RHF where the model will generate a couple of examples.
+
+205
+00:15:40,320 --> 00:15:43,839
+We'll choose you know which is the most popular example.
+
+206
+00:15:43,839 --> 00:15:51,279
+What everyone is generally moving towards is reinforcement learning from AI feedback instead of human feedback.
+
+207
+00:15:51,279 --> 00:15:58,160
+Uh where you have instead the human defines some sort of success criteria, some way to measure that and examples in code.
+
+208
+00:15:58,160 --> 00:16:00,000
+It could be a unit test, right?
+
+209
+00:16:00,000 --> 00:16:02,800
+We can scalably measure success in other domains.
+
+210
+00:16:02,800 --> 00:16:12,079
+could be a rubric and then you use that to incentivize model capabilities and it's far more scalable and data efficient and
+
+211
+00:16:12,079 --> 00:16:23,920
+so that's why uh a lot of you know the broader trend in the market across the board is moving towards RLIF uh to both eval models as well as improved capabilities.
+
+212
+00:16:23,920 --> 00:16:28,399
+>> I had the uh one of the co-founders of Enthropic on he uh did said exactly the same thing.
+
+213
+00:16:28,399 --> 00:16:32,399
+That's what they've done at Anthropic is move towards AIdriven reinforcement learning.
+
+214
+00:16:32,399 --> 00:16:39,680
+So essentially, if I can understand this correctly, I I'm I'm the lay person here trying to understand this on behalf of the audience.
+
+215
+00:16:39,680 --> 00:16:43,839
+Uh so essentially a lawyer is like here's what correct looks like for redlinining.
+
+216
+00:16:43,839 --> 00:16:55,519
+And then it's AI is just on its own almost just like here's all the I'm going to try to get this I'm going to try to improve on this and I know if I'm get heading in the right direction based on this eval I've been given.
+
+217
+00:16:55,519 --> 00:16:56,240
+>> Exactly.
+
+218
+00:16:56,240 --> 00:17:06,959
+applying all of the criteria of what good looks like similar to how you know the TA might apply the professor's criteria of does the uh you know students response meet this criteria or
+
+219
+00:17:06,959 --> 00:17:10,079
+this criteria plus however many points etc.
+
+220
+00:17:10,079 --> 00:17:10,480
+>> Awesome.
+
+221
+00:17:10,480 --> 00:17:14,079
+Okay, let me shift to talking about the broader labor market here.
+
+222
+00:17:14,079 --> 00:17:17,039
+So there's kind of two parts to this question as as we talk about this.
+
+223
+00:17:17,039 --> 00:17:19,120
+One is just how long will we need to do this?
+
+224
+00:17:19,120 --> 00:17:22,720
+Is there a point where we don't need like you guys grew so incredibly fast.
+
+225
+00:17:22,720 --> 00:17:26,480
+Is there a point of like okay we don't need humans are we're c tapped out.
+
+226
+00:17:26,480 --> 00:17:29,120
+Uh so let's start there and then I'll ask a broader question.
+
+227
+00:17:29,120 --> 00:17:36,160
+>> So the key question is how long there's going to be things in the economy that humans can do that AI can't do.
+
+228
+00:17:36,160 --> 00:17:44,480
+And I think there's certainly a bucket of people that say we're going to have super intelligence within three years and we you know humans won't play a role in the economy.
+
+229
+00:17:44,480 --> 00:17:46,799
+Uh and that's one school of thought.
+
+230
+00:17:46,799 --> 00:17:48,240
+Our perspective is very different.
+
+231
+00:17:48,240 --> 00:17:54,080
+Our perspective is that these models are extraordinary and automating a lot of things very quickly,
+
+232
+00:17:54,080 --> 00:17:56,000
+but there's a lot of things that they're horrible at.
+
+233
+00:17:56,000 --> 00:17:59,039
+Like even still, it can't schedule time on my calendar.
+
+234
+00:17:59,039 --> 00:18:00,640
+It can't draft emails for me.
+
+235
+00:18:00,640 --> 00:18:03,039
+It can't use basic tools.
+
+236
+00:18:03,039 --> 00:18:05,280
+And we need evals for everything.
+
+237
+00:18:05,280 --> 00:18:12,559
+For everything that the models can't do, we need, you know, evals for the tool use, evals for the long horizon reasoning.
+
+238
+00:18:12,559 --> 00:18:18,480
+Like imagine in 10 years when we want models to be able to go out and build a startup for 30 days.
+
+239
+00:18:18,480 --> 00:18:21,360
+Like we need evals for that to effectively reward it.
+
+240
+00:18:21,360 --> 00:18:32,559
+And I think that that road to improving models uh will last for as long as there is anything in the economy that humans can do which models can't.
+
+241
+00:18:32,559 --> 00:18:36,240
+Uh and be huge portion of what the future of work looks like.
+
+242
+00:18:36,240 --> 00:18:40,240
+Um and so our our mission is creating the future of work.
+
+243
+00:18:40,240 --> 00:18:49,039
+And I I think that this is a really exciting industry in giving us a glimpse into the direction that everything is headed towards.
+
+244
+00:18:49,039 --> 00:18:49,360
+>> Yeah.
+
+245
+00:18:49,360 --> 00:18:52,880
+There's this tweet that you retweeted that I want to ask you about.
+
+246
+00:18:52,880 --> 00:18:59,039
+>> If you really think about it, we were put on Earth to create reinforcement learning training data for labs.
+
+247
+00:18:59,039 --> 00:19:00,000
+>> Yeah.
+
+248
+00:19:00,000 --> 00:19:00,480
+>> What is that?
+
+249
+00:19:00,480 --> 00:19:01,280
+What does that mean to you?
+
+250
+00:19:01,280 --> 00:19:02,799
+What is that what is this person implying?
+
+251
+00:19:02,799 --> 00:19:06,320
+And it's basically what you're saying is we're just helping train models.
+
+252
+00:19:06,320 --> 00:19:12,240
+It it speaks to conversations I've had with a lot of researchers and executives at top labs,
+
+253
+00:19:12,240 --> 00:19:20,720
+which is that it's highly likely that the entire economy will become an RL environment machine building out all of these,
+
+254
+00:19:20,720 --> 00:19:27,760
+you know, worlds and contexts uh for us to then have, you know, rubrics or other kinds of verifiers.
+
+255
+00:19:27,760 --> 00:19:37,919
+Um, and that is really exciting in so many ways because I I think like let's let's draw an analog to other revolutions where when
+
+256
+00:19:37,919 --> 00:19:42,320
+we had the industrial re revolution, everyone was freaking out about losing their jobs.
+
+257
+00:19:42,320 --> 00:19:45,600
+But there was this whole new class of jobs of how do we build the machines?
+
+258
+00:19:45,600 --> 00:19:46,880
+How do we have knowledge work?
+
+259
+00:19:46,880 --> 00:19:48,720
+How do we, you know, create everything new?
+
+260
+00:19:48,720 --> 00:19:55,039
+And I think that the narrative in AI over the last three years has almost entirely been oneup job displacement,
+
+261
+00:19:55,039 --> 00:19:55,520
+right?
+
+262
+00:19:55,520 --> 00:20:06,640
+Uh sure there's like chatbt is growing fast and it's very cool and everyone loves using it for but from an economic standpoint people talking a lot about job displacement but very few companies and people have talked about
+
+263
+00:20:06,640 --> 00:20:17,679
+this new category of jobs that's being created uh and what that's going to mean and how people can prepare and upskill for that and I think that the most exciting thing possible is creating that
+
+264
+00:20:17,679 --> 00:20:22,480
+future of how do humans fit into the economy and how will that evolve over time.
+
+265
+00:20:22,480 --> 00:20:26,080
+I talk to a lot of people about just like what should I be studying?
+
+266
+00:20:26,080 --> 00:20:28,159
+Where should I be getting better?
+
+267
+00:20:28,159 --> 00:20:32,559
+Uh people in school right now are just like what is even going to be valuable in the future.
+
+268
+00:20:32,559 --> 00:20:36,799
+You're at the center of a lot of just what jobs are most in demand?
+
+269
+00:20:36,799 --> 00:20:38,640
+What how hiring is evolving?
+
+270
+00:20:38,640 --> 00:20:40,480
+So let me just ask you a very concrete question.
+
+271
+00:20:40,480 --> 00:20:47,679
+What jobs do you think will remain in the future slash what skills are still worth investing in for younger people especially?
+
+272
+00:20:47,679 --> 00:20:58,480
+In terms of jobs, I would respond with a category of things that have very elastic demand are going to be super exciting because when we make people 10 times more productive,
+
+273
+00:20:58,480 --> 00:21:02,720
+we'll build 10 times if not a hundred times as much software as an example, right?
+
+274
+00:21:02,720 --> 00:21:08,799
+And so I think the product managers that can now do so much more are going to be extremely well positioned.
+
+275
+00:21:08,799 --> 00:21:16,480
+In so far as the skills, I think it's people that can leverage AI to to do whatever their day-to-day workflows are.
+
+276
+00:21:16,480 --> 00:21:27,120
+Like I have had a couple conversations with teachers where they get my thoughts on how they should be assessing their students cuz you know we originally started out curating all of these AI interviews and
+
+277
+00:21:27,120 --> 00:21:39,039
+assessments for people and have thought about this immensely and what we realized is that you don't want to fight against them using the models right it's sort of similar to like when the calculator come out you came out you
+
+278
+00:21:39,039 --> 00:21:50,880
+don't want to give people all this this arithmetic homework of like how do you you get them to do it and and not use the calculator you want to tell them use the tools and let's see what you can do and so we'll give people interviews
+
+279
+00:21:50,880 --> 00:22:02,640
+where we say use chatbt and codeax use cloud code use whatever tool cursor and whatever tools are available to build a website and and let's see what product you're able to build in an hour and so I
+
+280
+00:22:02,640 --> 00:22:13,679
+think that I give that an example in so far as talent assessment because I think it pertains also to the skills that people should be honing in on of how can they leverage this technology to do so
+
+281
+00:22:13,679 --> 00:22:17,520
+much more in whatever industry or vertical they're operating in.
+
+282
+00:22:17,520 --> 00:22:25,200
+>> When you talk about elastic being elastic, is it like generalist being good at just a bunch of different things or or what what do you say what do you mean when you think elastic?
+
+283
+00:22:25,200 --> 00:22:30,080
+>> So I more mean how much capacity for demand there is in that industry.
+
+284
+00:22:30,080 --> 00:22:38,240
+So I I'll give a couple of examples like in accounting I think realistically we only need so much accounting in the world,
+
+285
+00:22:38,240 --> 00:22:38,559
+right?
+
+286
+00:22:38,559 --> 00:22:50,320
+like maybe there's areas where we can do more and that'll be good but but it doesn't feel like the world needs 100 times more accounting on the other hand in software development right like I
+
+287
+00:22:50,320 --> 00:23:00,080
+think we can ship 100 times more features for our products move 100 times faster build so much more there's just it feels like there's unlimited demand
+
+288
+00:23:00,080 --> 00:23:10,320
+for the industry and I think um Mark and tweeted about this recently that software is the most elastic industry of all where when we increase productivity,
+
+289
+00:23:10,320 --> 00:23:12,159
+there's so much more that will be built.
+
+290
+00:23:12,159 --> 00:23:15,360
+Um, and it's definitely characteristic of a lot of other domains as well.
+
+291
+00:23:15,360 --> 00:23:21,200
+And so I would I would focus on those domains where if we make everyone 10 times more productive,
+
+292
+00:23:21,200 --> 00:23:23,919
+that'll increase demand, not reduce it.
+
+293
+00:23:23,919 --> 00:23:24,159
+>> Okay.
+
+294
+00:23:24,159 --> 00:23:27,440
+So you're you're in the bucket of learn to code still useful as a skill.
+
+295
+00:23:27,440 --> 00:23:28,480
+Take computer science.
+
+296
+00:23:28,480 --> 00:23:29,120
+Okay.
+
+297
+00:23:29,120 --> 00:23:37,600
+And so in terms of elastic categories of jobs, sounds like engineering, product management is in that bucket.
+
+298
+00:23:37,600 --> 00:23:40,000
+Great to a lot of people listening to those PMs.
+
+299
+00:23:40,000 --> 00:23:44,880
+Uh what else like design user re I don't know what else do you feel is in that bucket from what you've seen?
+
+300
+00:23:44,880 --> 00:23:54,159
+>> Yeah, I think that there's a lot of things or the whole value chain of uh building companies as a lot of these like variable costs uh even large
+
+301
+00:23:54,159 --> 00:23:57,760
+portions of like operations or or consulting, right?
+
+302
+00:23:57,760 --> 00:24:02,400
+Like imagine if we could have 10 times as many Mckenzie consultants.
+
+303
+00:24:02,400 --> 00:24:07,360
+what would be possible in so far as the research we could do, the analysis, etc.
+
+304
+00:24:07,360 --> 00:24:17,120
+Um, but I think the companies and people that are going to succeed are those that lean into this narrative of abundance of how do we do so much more rather than fighting back
+
+305
+00:24:17,120 --> 00:24:20,640
+against it of how do we try to stop displacement.
+
+306
+00:24:20,640 --> 00:24:25,120
+So along those lines, I think about your second bucket, which is the people that will be most successful.
+
+307
+00:24:25,120 --> 00:24:34,159
+It's not like a specific skill, but it's being good with AI, using AI to become more become better at what you're already doing.
+
+308
+00:24:34,159 --> 00:24:39,279
+This reminds me of Elon's whole thing with Neurolink, which if if I don't know if this is how he put it,
+
+309
+00:24:39,279 --> 00:24:46,240
+but the way I've always heard it is he wanted to build Neurolink because in the future when AGI and super intelligence is around,
+
+310
+00:24:46,240 --> 00:24:47,279
+we need a way to compete.
+
+311
+00:24:47,279 --> 00:24:52,000
+And the best way to compete is plug our brains into a super intelligence so we have a chance.
+
+312
+00:24:52,000 --> 00:24:54,320
+And it feels like that's what AI is like.
+
+313
+00:24:54,320 --> 00:24:58,320
+Getting good at AI tools is essentially is having the super >> superpower.
+
+314
+00:24:58,320 --> 00:25:04,080
+Fi >> figuring out how to leverage them and incorporate it will will definitely be of paramount importance.
+
+315
+00:25:04,080 --> 00:25:04,400
+>> Yeah.
+
+316
+00:25:04,400 --> 00:25:06,320
+Just comes back to this almost cliche quote now.
+
+317
+00:25:06,320 --> 00:25:08,159
+It's uh AI won't replace you.
+
+318
+00:25:08,159 --> 00:25:10,480
+People that are really good with AI will replace you.
+
+319
+00:25:10,480 --> 00:25:12,320
+>> I think I think it's totally spoton.
+
+320
+00:25:12,320 --> 00:25:20,400
+Um, and I've definitely seen this at the enterprise level as well, where there are certain enterprises we talk to that are almost like fearful,
+
+321
+00:25:20,400 --> 00:25:28,480
+not wanting to engage, not wanting to, you know, eval their businesses because that'll provide the evidence that their value chain is being automated.
+
+322
+00:25:28,480 --> 00:25:33,600
+And there's others that I I mean, literally like, you know, some of the most recognized,
+
+323
+00:25:33,600 --> 00:25:37,200
+sophisticated Fortune 500 businesses that that have this mentality.
+
+324
+00:25:37,200 --> 00:25:44,240
+there's others that are leaning into it of if we have the ability to do 10 or 100 times more,
+
+325
+00:25:44,240 --> 00:25:54,880
+what will that mean and how do we lean into that future because there's so many things that are going to change over the next 10 years and I think those are the kinds of businesses that are going to be successful.
+
+326
+00:25:54,880 --> 00:25:56,799
+Let's talk about labor markets more broadly.
+
+327
+00:25:56,799 --> 00:26:04,080
+You you guys So, it's interesting though you started not feeding people to AI labs, not training models.
+
+328
+00:26:04,080 --> 00:26:07,440
+It was just like help people find jobs, help companies hire and then you're like, "Oh,
+
+329
+00:26:07,440 --> 00:26:07,679
+wow.
+
+330
+00:26:07,679 --> 00:26:08,720
+This whole opportunity."
+
+331
+00:26:08,720 --> 00:26:12,799
+You have this really interesting view on the future of just labor markets and hiring.
+
+332
+00:26:12,799 --> 00:26:14,240
+Talk about that.
+
+333
+00:26:14,240 --> 00:26:15,520
+Yeah, it's interesting.
+
+334
+00:26:15,520 --> 00:26:25,440
+I remember when we started the company, as I mentioned, we were 19 and just had this like gut intuition that it felt so wildly inefficient that labor markets
+
+335
+00:26:25,440 --> 00:26:26,799
+are so disagregated.
+
+336
+00:26:26,799 --> 00:26:33,440
+And what I mean by that is when we would hire someone internationally, they would apply to a dozen jobs.
+
+337
+00:26:33,440 --> 00:26:40,559
+When we as a company in the Bay Area were considering candidates, we would consider a fraction of a percent of candidates that were available in the market.
+
+338
+00:26:40,559 --> 00:26:48,000
+And the reason for that is that there is this matching problem that everyone's solving manually where they'll manually review resumeums,
+
+339
+00:26:48,000 --> 00:26:51,600
+they'll manually conduct interviews and manually decide who to hire.
+
+340
+00:26:51,600 --> 00:27:02,799
+But when we're able to automate that matching problem at the cost of software, it makes way for this global unified labor market that every candidate applies to.
+
+341
+00:27:02,799 --> 00:27:07,679
+and every company hires from facilitating a perfect flow of information in the economy.
+
+342
+00:27:07,679 --> 00:27:12,960
+Um, and I think that that future is undoubtedly what we're heading towards.
+
+343
+00:27:12,960 --> 00:27:19,039
+But what we've realized over time is that the nature of work is also changing dramatically.
+
+344
+00:27:19,039 --> 00:27:25,679
+And part of building that future over a 10-year time horizon is is like creating that future of work.
+
+345
+00:27:25,679 --> 00:27:34,960
+um and all the more tactical things we do and building these incredible data sets across evals and RL environments for our customers.
+
+346
+00:27:34,960 --> 00:27:40,400
+The way that I what I've seen in how hiring has changed, I'm doing research on this with with a partner Gnome.
+
+347
+00:27:40,400 --> 00:27:45,440
+Um it's so much easier to apply for companies that everyone's just applying now to hundreds of companies.
+
+348
+00:27:45,440 --> 00:27:53,919
+AI is just making it easy to adjust their resumes and cover letters and like and make it feel like oh I applied to more course very specifically but it was one of 100 places.
+
+349
+00:27:53,919 --> 00:27:57,840
+And then on the flip side, hiring managers are getting flooded with applications.
+
+350
+00:27:57,840 --> 00:28:00,399
+And so now they need AI to filter.
+
+351
+00:28:00,399 --> 00:28:06,960
+So even if we didn't want to get to this place, we're almost being pushed into this direction of so much volume on both sides,
+
+352
+00:28:06,960 --> 00:28:11,039
+we need something really smart at filtering and helping us hire and select.
+
+353
+00:28:11,039 --> 00:28:13,600
+And this is exactly what you guys have been building for a long time.
+
+354
+00:28:13,600 --> 00:28:14,320
+>> Precisely.
+
+355
+00:28:14,320 --> 00:28:14,799
+Yeah.
+
+356
+00:28:14,799 --> 00:28:23,919
+And the fascinating thing like a lot of people ask are we do we think about ourselves as a labor marketplace or do we think about ourselves as a data company?
+
+357
+00:28:23,919 --> 00:28:34,480
+And I think that the reason it's an interesting question is our realization on the from what the labs need is that they actually need a labor marketplace.
+
+358
+00:28:34,480 --> 00:28:37,679
+They actually need these exceptionally highc caliber people.
+
+359
+00:28:37,679 --> 00:28:42,880
+And of course we'll you know layer on some project management and some software platform associated with it.
+
+360
+00:28:42,880 --> 00:28:54,799
+The really core thing that they want is how do they find these extraordinary professionals across all these different domains that can measure model capabilities and work to build that
+
+361
+00:28:54,799 --> 00:28:56,799
+future work together.
+
+362
+00:28:56,799 --> 00:28:59,200
+This episode is brought to you by Interpret.
+
+363
+00:28:59,200 --> 00:29:04,480
+Interpret is a customer intelligence platform used by leading CX and product orgs like Canva,
+
+364
+00:29:04,480 --> 00:29:11,200
+Notion, Perplexity, Strava, Hinge, and Linear to leverage the voice of the customer and build best-in-class products.
+
+365
+00:29:11,200 --> 00:29:21,760
+Interpret unifies all customer conversations in real time from gong recordings to Zenesk tickets to Twitter threads and makes it available for your team for analysis and for action.
+
+366
+00:29:21,760 --> 00:29:32,960
+What makes Interpret unique is its ability to build and update a customerspecific knowledge graph that provides the most granular and accurate categorization of all customer feedback and connects that
+
+367
+00:29:32,960 --> 00:29:36,399
+customer feedback to critical metrics like revenue and seesat.
+
+368
+00:29:36,399 --> 00:29:45,120
+If modernizing your voice of customer program to a generational upgrade is a 2025 priority like customer- ccentric industry leaders like Canva,
+
+369
+00:29:45,120 --> 00:29:50,799
+notion, perplexity, and linear, reach out to the team at interpret.com/lenny.
+
+370
+00:29:50,799 --> 00:29:54,760
+That's n tre.com/lenny.
+
+371
+00:29:56,000 --> 00:29:59,279
+Going back to just how this all works and what you guys do for models.
+
+372
+00:29:59,279 --> 00:30:10,559
+I was talking to a friend who had a ankle sprain or his foot was hurting and he got an X-ray and he fed the X-ray into Chad BT and then asked him like give me this specific X-ray and he's like okay
+
+373
+00:30:10,559 --> 00:30:11,039
+sure.
+
+374
+00:30:11,039 --> 00:30:13,120
+And then it gave him here's what you have.
+
+375
+00:30:13,120 --> 00:30:13,919
+And he was talking to me.
+
+376
+00:30:13,919 --> 00:30:19,039
+He's like, how did what is out there in the on the internet that trained this model to know this stuff.
+
+377
+00:30:19,039 --> 00:30:27,120
+And I was like, no, it's actually somebody sitting there helping the model understand this once they recognize it doesn't fully understand this.
+
+378
+00:30:27,120 --> 00:30:29,679
+Like humans are actually helping them learn these things.
+
+379
+00:30:29,679 --> 00:30:30,240
+Exactly.
+
+380
+00:30:30,240 --> 00:30:40,480
+Well, so the way it works um at least what most people's understanding is there's a a lot of complexity in how the models work is that pre-training gets a lot of the
+
+381
+00:30:40,480 --> 00:30:51,600
+knowledge into the model of what are all the different things that sort of seen in the world and then post-training and reinforcement learning is for all the reasoning of what are the pieces of knowledge that are accurate,
+
+382
+00:30:51,600 --> 00:30:56,480
+what are inaccurate and what to prioritize uh at any given time to make a decision.
+
+383
+00:30:56,480 --> 00:31:06,720
+And so behind that there would have been radiologists that uh worked on the post-training data set to create some stasis point for here's the diagnosis and rewards and penalties associated
+
+384
+00:31:06,720 --> 00:31:07,360
+with it.
+
+385
+00:31:07,360 --> 00:31:14,720
+And it's really the quality of those people that went into the quality of the decision and recommendation that chat GBT ultimately made.
+
+386
+00:31:14,720 --> 00:31:19,200
+>> So let's let's actually follow that thread because that's really interesting and I don't know how many people understand it.
+
+387
+00:31:19,200 --> 00:31:20,559
+I sort of understand it.
+
+388
+00:31:20,559 --> 00:31:23,440
+So the work that you do and these experts do is postraining.
+
+389
+00:31:23,440 --> 00:31:26,559
+It's not feeding data into the model that it's trained on.
+
+390
+00:31:26,559 --> 00:31:30,080
+It's we have this model GBT5 now here's all the things it's missing.
+
+391
+00:31:30,080 --> 00:31:31,440
+Let's add to it.
+
+392
+00:31:31,440 --> 00:31:32,080
+>> Exactly.
+
+393
+00:31:32,080 --> 00:31:32,480
+Yeah.
+
+394
+00:31:32,480 --> 00:31:44,320
+It it's really unlocking allowing the model to focus on all the right tokens from pre-training all the right things in model context upweing the effective reasoning chains um to
+
+395
+00:31:44,320 --> 00:31:47,919
+enable the models to reason better in a more generalized way.
+
+396
+00:31:47,919 --> 00:31:51,840
+What's the scale of people just working on the stuff is like thousands, tens of thousands,
+
+397
+00:31:51,840 --> 00:31:56,960
+hundreds of thousands, >> tens of thousands at any given time, hundreds of thousands more generally.
+
+398
+00:31:56,960 --> 00:32:02,480
+Um, I mean it's it's huge and the most exciting thing is that it's growing really quickly.
+
+399
+00:32:02,480 --> 00:32:13,200
+I I mean I think that to your question also about the competitive landscape historically there were all these crowdsourcing companies that would get these super high volumes of
+
+400
+00:32:13,200 --> 00:32:14,320
+lowskilled people.
+
+401
+00:32:14,320 --> 00:32:18,720
+I think like scale and surge were the primary companies that pioneered that industry.
+
+402
+00:32:18,720 --> 00:32:27,679
+A and then in this transition to higher skilled labor, what people realized is that actually you can go a lot further um with just getting higher caliber people
+
+403
+00:32:27,679 --> 00:32:35,600
+uh even in smaller amounts initially uh and now subsequently scaling that back up uh once they're able to meet the quality bar.
+
+404
+00:32:35,600 --> 00:32:46,080
+And I think that there's a bunch of companies that after our success and very rapid revenue growth that start sort of started uh early last year have chased after that.
+
+405
+00:32:46,080 --> 00:32:47,919
+Um which which makes sense, right?
+
+406
+00:32:47,919 --> 00:32:51,440
+And and seeing that uh the market was changing very quickly.
+
+407
+00:32:51,440 --> 00:32:56,159
+We were taking off and uh trying to pursue a similar thesis on the market.
+
+408
+00:32:56,159 --> 00:32:56,799
+>> It's interesting.
+
+409
+00:32:56,799 --> 00:33:07,919
+There's always been these companies, Alphasites and uh GLG that like sort of did this before AI or is like pay to connect to an expert and ask them questions about stuff and essentially okay it turns out this is
+
+410
+00:33:07,919 --> 00:33:09,360
+really useful for for models.
+
+411
+00:33:09,360 --> 00:33:11,200
+We don't need the person in the middle.
+
+412
+00:33:11,200 --> 00:33:11,760
+>> Exactly.
+
+413
+00:33:11,760 --> 00:33:12,080
+Yeah.
+
+414
+00:33:12,080 --> 00:33:22,559
+Well, but one core difference is that alpha sites would generally be a one-off call versus a lot of our work is really hiring people for projects,
+
+415
+00:33:22,559 --> 00:33:22,880
+right?
+
+416
+00:33:22,880 --> 00:33:26,799
+of how do they work on something for a longer period of time?
+
+417
+00:33:26,799 --> 00:33:38,320
+Um, and so that uh that's I think one of the reasons that some of the traditional expert networks have struggled to get into this and also how do you like retain those people um and think about
+
+418
+00:33:38,320 --> 00:33:49,679
+all the incentives where it actually looks more similar in some ways to one of the traditional labor marketplaces of an Uber or Door Dash just with much higher skilled talent that's treated
+
+419
+00:33:49,679 --> 00:33:50,640
+exceptionally well.
+
+420
+00:33:50,640 --> 00:33:53,039
+It's such a good opportunity for me to learn so much about this.
+
+421
+00:33:53,039 --> 00:33:57,200
+So, I'm just I'm gonna ask questions that are so interesting to me.
+
+422
+00:33:57,200 --> 00:34:05,760
+Uh, how much of the expert is f are focused on specific concrete knowledge versus personality and like softer skills?
+
+423
+00:34:05,760 --> 00:34:09,040
+How much of is like here's how you do an exam, here's how you do an X-ray?
+
+424
+00:34:09,040 --> 00:34:10,079
+It depends on the lab.
+
+425
+00:34:10,079 --> 00:34:11,040
+It's a lot of both.
+
+426
+00:34:11,040 --> 00:34:21,280
+I think that previously it might have been more softer skills, but now a lot of the labs are focused on their business models of what are the
+
+427
+00:34:21,280 --> 00:34:26,320
+economically valuable capabilities that drive revenue and leaning a lot into these professional domains.
+
+428
+00:34:26,320 --> 00:34:31,200
+Um, but I think the creative side is also still really important to everyone.
+
+429
+00:34:31,200 --> 00:34:34,000
+Um, and so we're seeing a meaningful amount of both.
+
+430
+00:34:34,000 --> 00:34:42,639
+Like we hired all the people from the Harvard Lampoon a couple months ago, their comedy club to help with making models funnier.
+
+431
+00:34:42,639 --> 00:34:51,679
+Uh and so do all sorts of stuff like that, hiring Emmy award-winning screenwriters and uh everything across the board on creative capabilities that you'd look for.
+
+432
+00:34:51,679 --> 00:34:52,879
+>> That is amazing.
+
+433
+00:34:52,879 --> 00:34:54,480
+What a cool story.
+
+434
+00:34:54,480 --> 00:34:56,480
+>> Yeah, >> I'm excited for this to kick in.
+
+435
+00:34:56,480 --> 00:34:57,839
+How fast do these things turn around?
+
+436
+00:34:57,839 --> 00:35:01,280
+Like say you hire this team, like how fast are we going to see the impact potential?
+
+437
+00:35:01,280 --> 00:35:01,920
+Is it like months?
+
+438
+00:35:01,920 --> 00:35:03,040
+Is it years?
+
+439
+00:35:03,040 --> 00:35:12,640
+Well, so it depends because some models uh or some labs will release iteratively where they'll just improve the model behind the scenes uh sort of every >> without announcing a new model.
+
+440
+00:35:12,640 --> 00:35:13,520
+>> Exactly.
+
+441
+00:35:13,520 --> 00:35:17,040
+Sort of every couple of weeks versus others do these big releases.
+
+442
+00:35:17,040 --> 00:35:18,720
+Um and so it depends a lot.
+
+443
+00:35:18,720 --> 00:35:20,079
+We're behind all of them.
+
+444
+00:35:20,079 --> 00:35:21,920
+But the I mean we move really fast.
+
+445
+00:35:21,920 --> 00:35:31,839
+It would be a customer gives us a request of we need these you know award-winning screenwriters and within 24 hours we'll turn around um the experts.
+
+446
+00:35:31,839 --> 00:35:42,079
+And there's also this really interesting dynamic where in a set of a 100 people that we hire oftent times the top 10% of people will drive majority of
+
+447
+00:35:42,079 --> 00:35:43,440
+the model improvement.
+
+448
+00:35:43,440 --> 00:35:51,520
+It's sort of like a company right if you have a 100 person company oftentimes the top 10% of the company uh will will drive majority of of the impact.
+
+449
+00:35:51,520 --> 00:36:03,359
+And what that means is that when we're able to build proprietary advantages in identifying who are those top 10% of people both in so far as how do we have them on our platform but also identify and match
+
+450
+00:36:03,359 --> 00:36:04,560
+them effectively.
+
+451
+00:36:04,560 --> 00:36:09,040
+It creates so much value for customers that it's difficult to compete against.
+
+452
+00:36:09,040 --> 00:36:19,280
+And so really does tie back to the founding thesis of the company which is like you know how do we find these extraordinary people and identify them um so that we can reliably
+
+453
+00:36:19,280 --> 00:36:25,119
+deliver these top 10% or top 10x experiences for our customers.
+
+454
+00:36:25,119 --> 00:36:36,079
+So on that so is the idea you hire uh Jane she's incredible at coding and she now works for Anthropic and that's her full-time job doing this or is this like a part-time thing?
+
+455
+00:36:36,079 --> 00:36:37,839
+Is this a project thing mostly?
+
+456
+00:36:37,839 --> 00:36:41,200
+It it would sometimes be part-time, sometimes it would be full-time.
+
+457
+00:36:41,200 --> 00:36:49,680
+Um, I would say most often it's part-time where it's like, you know, someone might work at uh Fang Company where they're undermployed,
+
+458
+00:36:49,680 --> 00:36:53,359
+maybe one of the ones that's moving slower where they have an extra 20 hours a week.
+
+459
+00:36:53,359 --> 00:37:01,839
+Uh, and then they're able to do this on the side or, you know, uh, whatever the equivalent is sort of across a bunch of different industries.
+
+460
+00:37:01,839 --> 00:37:08,160
+But we also do a lot of um you know 40hour a week uh roles as well.
+
+461
+00:37:08,160 --> 00:37:09,599
+>> And these how much are they making?
+
+462
+00:37:09,599 --> 00:37:13,760
+Is it like like meaningful enough for fang engineer to spend time on this?
+
+463
+00:37:13,760 --> 00:37:14,800
+>> Yeah, very meaningful.
+
+464
+00:37:14,800 --> 00:37:25,520
+I mean so our median pay rate in the marketplace is $95 an hour, but it can flex up well up into like $500 an hour um based on the depth of someone's expertise.
+
+465
+00:37:25,520 --> 00:37:34,880
+And one thing that highlights this difference relative to a lot of the crowdsourcing companies is if you look at the economics of the crowd sourcing companies oftent times they would pay
+
+466
+00:37:34,880 --> 00:37:38,880
+like $30 an hour to talent as sort of the average.
+
+467
+00:37:38,880 --> 00:37:46,480
+Um, and so think about the, you know, people that you can hire, uh, the undergrads for $30 an hour versus the,
+
+468
+00:37:46,480 --> 00:37:51,760
+you know, Goldman, the Mckenzie analysts, the, uh, Fang software engineers.
+
+469
+00:37:51,760 --> 00:37:57,680
+And ultimately, it comes down to what are the capabilities that labs want their models to have.
+
+470
+00:37:57,680 --> 00:38:01,839
+Uh, and it much more falls in the latter bucket than the former one.
+
+471
+00:38:01,839 --> 00:38:08,240
+I know there's only so much you can talk about with this stuff, but so Enthropic Claude has been so good at coding,
+
+472
+00:38:08,240 --> 00:38:10,880
+so much better historically than other models.
+
+473
+00:38:10,880 --> 00:38:15,040
+I also use it for writing, giving feedback on writing.
+
+474
+00:38:15,040 --> 00:38:19,520
+What is it that allowed them to get so good at this and continue to be so good at this?
+
+475
+00:38:19,520 --> 00:38:29,599
+Well, I I can't go too much into detail about uh customer work, but I think that it's this trend of reinforcement learning and being very
+
+476
+00:38:29,599 --> 00:38:34,800
+thoughtful about defining the right rewards um that we're really seeing across the board.
+
+477
+00:38:34,800 --> 00:38:40,560
+Um and how we can, you know, mitigate reward hacking, set up the right rewards.
+
+478
+00:38:40,560 --> 00:38:42,480
+Um that's super impactful.
+
+479
+00:38:42,480 --> 00:38:44,880
+>> Evals, again, eval is all you need.
+
+480
+00:38:44,880 --> 00:38:46,000
+Back to evals.
+
+481
+00:38:46,000 --> 00:38:50,400
+I one of my favorite quotes from customers is that models are only as good as their evals.
+
+482
+00:38:50,400 --> 00:38:52,880
+Um which has always held true.
+
+483
+00:38:52,880 --> 00:38:55,119
+>> I think Greg Greg Brockman tweeted this once.
+
+484
+00:38:55,119 --> 00:38:56,640
+Evals are all you need.
+
+485
+00:38:56,640 --> 00:38:57,040
+>> Yeah.
+
+486
+00:38:57,040 --> 00:38:58,320
+No, truly.
+
+487
+00:38:58,320 --> 00:39:01,119
+>> Let's talk about Marcore a little bit more.
+
+488
+00:39:01,119 --> 00:39:08,000
+One of the maybe I not even maybe I believe uh the data tells us it's the fastest growing company in history.
+
+489
+00:39:08,000 --> 00:39:08,880
+>> Yeah.
+
+490
+00:39:08,880 --> 00:39:12,800
+>> I want to understand what you did to make this happen.
+
+491
+00:39:12,800 --> 00:39:20,480
+So let me just ask what do you think are some of the core tenants of how you built Mor that most contributed to being this successful?
+
+492
+00:39:20,480 --> 00:39:27,760
+>> I think the most important thing is looking at the leading indicators in fastmoving markets.
+
+493
+00:39:27,760 --> 00:39:38,480
+Like I remember when I used to think everyone in venture talks about the why now and I used to think about the why now of how from a product standpoint less from a market
+
+494
+00:39:38,480 --> 00:39:44,640
+standpoint of like now we can automate the way that we review resumeums or the way that we conduct interviews etc.
+
+495
+00:39:44,640 --> 00:39:51,200
+But ultimately like there is this legacy market that's you know has all these incumbents and it's relatively stagnant.
+
+496
+00:39:51,200 --> 00:39:57,040
+What what matters a ton is actually figuring out what are the new markets the new pockets of demand.
+
+497
+00:39:57,040 --> 00:40:06,960
+um that are changing very quickly where the wealthiest customers in the world are willing to pay whatever it takes to improve model capabilities and how do we
+
+498
+00:40:06,960 --> 00:40:17,359
+focus on the leading indicators of those markets to make sure that we have the best solution for the flagship customers um you know in the market and optimize
+
+499
+00:40:17,359 --> 00:40:18,480
+everything around that.
+
+500
+00:40:18,480 --> 00:40:22,800
+Uh and that's what I found has been most impactful in building the business.
+
+501
+00:40:22,800 --> 00:40:25,760
+I I think that's maybe that's one thing is like leading indicators in markets.
+
+502
+00:40:25,760 --> 00:40:30,000
+If I had to choose another, it's customer obsession.
+
+503
+00:40:30,000 --> 00:40:37,520
+Like we have had for the last we're starting to like have a couple of uh product managers help out with go to market,
+
+504
+00:40:37,520 --> 00:40:41,839
+but like for the last year and a half of the business, we've had no one in sales and marketing.
+
+505
+00:40:41,839 --> 00:40:52,720
+And so we're we're sort of like immature from a sales and marketing standpoint because we focused 100% of company resources on how do we build great products and experiences for our customers.
+
+506
+00:40:52,720 --> 00:41:02,400
+Um you know just getting word of mouth the the people that have worked with us at other businesses want to keep working with us um and leaning into creating those great experiences.
+
+507
+00:41:02,400 --> 00:41:03,920
+And so that's where I spend all my time.
+
+508
+00:41:03,920 --> 00:41:14,640
+And I think that some founders can get caught up in like how do they get really good at marketing before they've figured out the thing that really drives um a lot of customer
+
+509
+00:41:14,640 --> 00:41:20,240
+love um and creates the six-star experiences that um you're used to building.
+
+510
+00:41:20,240 --> 00:41:26,160
+>> I want to go back to that first point which is like okay you found this pocket maybe the biggest business opportunity in history.
+
+511
+00:41:26,160 --> 00:41:31,040
+>> How did you first find what was that moment of like wait this could be this could be really big.
+
+512
+00:41:31,040 --> 00:41:32,800
+So there's some crazy stories here.
+
+513
+00:41:32,800 --> 00:41:40,960
+Um I remember we started the company as I mentioned in January 2023 and then in August 2023 when I was still in college,
+
+514
+00:41:40,960 --> 00:41:50,800
+one of our customers introduced us to the co-founders of XAI uh over a Zoom call saying how we had these really smart Indian software engineers that were
+
+515
+00:41:50,800 --> 00:41:52,319
+great at math and coding.
+
+516
+00:41:52,319 --> 00:41:59,599
+So we met them and we explained how the software engineers we had were really good at math and coding because they weren't distracted by all the humanities.
+
+517
+00:41:59,599 --> 00:42:03,599
+they didn't have to study history and English and all these other things and they loved it,
+
+518
+00:42:03,599 --> 00:42:03,760
+right?
+
+519
+00:42:03,760 --> 00:42:12,560
+So, they had us in uh two days later to the Tesla office and we met the entire XAI co-founding team except for Elon while I was still a
+
+520
+00:42:12,560 --> 00:42:13,839
+college student, right?
+
+521
+00:42:13,839 --> 00:42:24,400
+Uh and XAI was just getting started at that point and they were super excited about our focus on the quality of the experts and so while they were still doing pre-training,
+
+522
+00:42:24,400 --> 00:42:29,119
+they weren't ready for human data at the time and we didn't um start working with them at that point.
+
+523
+00:42:29,119 --> 00:42:38,160
+We just knew from that point forward before we even dropped out that the market was about to change radically and we needed to be at the frontier of that.
+
+524
+00:42:38,160 --> 00:42:49,760
+And so then fast forward a few months, one of the crowdsourcing players came to us and actually used our platform to hire over a thousand people where it was this very interesting experience because
+
+525
+00:42:49,760 --> 00:42:58,880
+we started getting flooded with support tickets about how those people weren't getting paid and we obviously felt horrible because we had referred them to this opportunity.
+
+526
+00:42:58,880 --> 00:43:01,200
+It was this like reputable company.
+
+527
+00:43:01,200 --> 00:43:12,400
+Um, and we realized that a lot of the incumbents were resting on their loyal laurels with respect to what was needed in the
+
+528
+00:43:12,400 --> 00:43:23,440
+experiences they were creating for talent in their marketplaces to help improve models and and there was this opportunity to work directly with the labs in a way that,
+
+529
+00:43:23,440 --> 00:43:30,880
+you know, kept the like dignity of the experts in the marketplace, paid them extremely well and sort of uh cut out the middlemen.
+
+530
+00:43:30,880 --> 00:43:35,520
+And um and so we started doing that in May of last year.
+
+531
+00:43:35,520 --> 00:43:37,920
+Um and then the the rest is history.
+
+532
+00:43:37,920 --> 00:43:39,359
+>> Wow.
+
+533
+00:43:39,359 --> 00:43:42,240
+Hundreds of millions of dollars in revenue since.
+
+534
+00:43:42,240 --> 00:43:47,599
+So what I'm hearing here is you were very open to looking for pull.
+
+535
+00:43:47,599 --> 00:43:48,640
+You saw some pull.
+
+536
+00:43:48,640 --> 00:43:53,359
+You explored it and then you once you saw that there was something really meaningful there,
+
+537
+00:43:53,359 --> 00:43:57,599
+you just went deep on making that an incredible experience as amazing as possible.
+
+538
+00:43:57,599 --> 00:43:58,000
+>> Exactly.
+
+539
+00:43:58,000 --> 00:44:06,160
+I think like if I had to distill it into advice for founders, one thing I've realized is that I spent a lot of time trying to like force product market fit.
+
+540
+00:44:06,160 --> 00:44:08,000
+And in some ways like you should be persistent.
+
+541
+00:44:08,000 --> 00:44:13,200
+You should like have these thesis that you have conviction about how the world will change.
+
+542
+00:44:13,200 --> 00:44:20,960
+But sometimes you just need to like sort of hear it from the market uh and like know that it's there.
+
+543
+00:44:20,960 --> 00:44:29,359
+pole uh to to know the right places to focus because if it's difficult to sell if it's extremely difficult to sell the marginal customer,
+
+544
+00:44:29,359 --> 00:44:31,839
+you're not going to be able to grow a huge business.
+
+545
+00:44:31,839 --> 00:44:38,400
+What you actually need to find is the customer that's surprisingly easy to sell into where you're going to be able to grow with them.
+
+546
+00:44:38,400 --> 00:44:40,400
+You know that it's a large pain point.
+
+547
+00:44:40,400 --> 00:44:46,240
+And so it's it's some combination of being stubborn with respect to your thesis around how the world will change,
+
+548
+00:44:46,240 --> 00:44:55,040
+but also very open-minded with respect to exactly what form that takes uh and how the markets developing and how your company will fit into it.
+
+549
+00:44:55,040 --> 00:44:56,640
+>> That's an amazing insight.
+
+550
+00:44:56,640 --> 00:45:07,040
+In the moments you described is felt like it was a combination of this XAI meeting feeling like oh wow they really really want this thing that we sort of have we're not doing an amazing job and then it's a thousand people hired in the
+
+551
+00:45:07,040 --> 00:45:07,520
+platform.
+
+552
+00:45:07,520 --> 00:45:09,359
+Was it those two moments that are like, "Wow."
+
+553
+00:45:09,359 --> 00:45:09,680
+>> Exactly.
+
+554
+00:45:09,680 --> 00:45:12,640
+And those happened, keep in mind, while we were a seed company, right?
+
+555
+00:45:12,640 --> 00:45:15,520
+Well, so the first one was before we even raised Eddie Seed funding.
+
+556
+00:45:15,520 --> 00:45:21,920
+We were totally bootstrapped because we bootstrapped the company to a million dollar revenue run rate and have always remained super capital efficient.
+
+557
+00:45:21,920 --> 00:45:23,200
+Like we've we've never burned money.
+
+558
+00:45:23,200 --> 00:45:25,280
+We've we're lifetime profitable.
+
+559
+00:45:25,280 --> 00:45:36,160
+Um and then in we raised our seed round in September from general catalyst and it it was the other experience after we raised our seed round where we really knew that
+
+560
+00:45:36,160 --> 00:45:39,280
+there was an enormous amount of demand in this market.
+
+561
+00:45:39,280 --> 00:45:50,800
+Uh where we saw the volume right and we saw that the incumbents were sort of sleeping with respect to how the market was changing and the kinds of people that were needed to make that change happen.
+
+562
+00:45:50,800 --> 00:45:53,599
+>> It's one thing to see this opportunity and start to execute on it.
+
+563
+00:45:53,599 --> 00:45:57,839
+it's another to actually succeed at this scale and consistently win.
+
+564
+00:45:57,839 --> 00:46:01,280
+You guys have very specific values within the business.
+
+565
+00:46:01,280 --> 00:46:01,920
+Talk about those.
+
+566
+00:46:01,920 --> 00:46:04,240
+It feels like that's a big part of your success, too.
+
+567
+00:46:04,240 --> 00:46:05,280
+>> It totally is.
+
+568
+00:46:05,280 --> 00:46:10,079
+Um, so I'll I'll give the three and maybe a brief story associated with each of them.
+
+569
+00:46:10,079 --> 00:46:19,040
+So, the first one is having a can do attitude, which everyone gives me a little bit of of a hard time for because it's it's sort of a a funny saying,
+
+570
+00:46:19,040 --> 00:46:29,839
+but we've always set these ridiculously ambitious goals and and somehow the trajectory of the company forms around those goals where I remember when we were talking to
+
+571
+00:46:29,839 --> 00:46:39,839
+Benchmark uh before they let our series A, we were at 1.5 million in run rate and I said we'd be at 50 million in run rate by the end of the year and they said we were absolutely insane.
+
+572
+00:46:39,839 --> 00:46:51,520
+right as anyone anyone would and plus or minus two weeks we hit it right uh and then we've now well blown past um you know the tracking to 500 million in run rate
+
+573
+00:46:51,520 --> 00:47:02,880
+which was initially our goal for this year and so setting these in incredibly ambitious goals with respect to the revenue scale of the business the caliber of experiences for talent all all those dimensions is super important
+
+574
+00:47:02,880 --> 00:47:10,480
+to first have a can do attitude uh the second thing is really high standards which is who we hire and what we expect of them.
+
+575
+00:47:10,480 --> 00:47:18,880
+Um like we have an incredibly high hiring bar where we hire tons of former founders um people that have incredible experiences.
+
+576
+00:47:18,880 --> 00:47:22,880
+We just hired uh or partnered with Sundep Jane who joined us as president.
+
+577
+00:47:22,880 --> 00:47:34,319
+He was previously the chief product officer and chief technology officer at Uber and you know joined our our uh small uh relatively small in the grand scheme of things company to help scale up all the
+
+578
+00:47:34,319 --> 00:47:38,400
+processes where Uber is of course the largest labor marketplace in the world.
+
+579
+00:47:38,400 --> 00:47:41,359
+So super high standards is of paramount importance.
+
+580
+00:47:41,359 --> 00:47:46,640
+And then the third one that we really lean on significantly is intensity.
+
+581
+00:47:46,640 --> 00:47:53,599
+In that if you look at the early cultures of businesses of the legendary companies thinking of Meta,
+
+582
+00:47:53,599 --> 00:48:04,079
+Google, they have these incredible intense early stage cultures of people just moving heaven and earth and doing whatever it takes to push the frontier of model capabilities.
+
+583
+00:48:04,079 --> 00:48:13,920
+And so ve still very much output oriented of what do people achieve rather than input oriented of the specific hours they work but recognizing that um it takes a lot
+
+584
+00:48:13,920 --> 00:48:18,319
+to build a legendary business and that's ultimately what we're optimizing for.
+
+585
+00:48:18,319 --> 00:48:20,000
+>> I could see why this works.
+
+586
+00:48:20,000 --> 00:48:23,280
+Can do attitude plus high standards plus intensity.
+
+587
+00:48:23,280 --> 00:48:26,240
+Uh I could see how that leads to success.
+
+588
+00:48:26,240 --> 00:48:32,400
+There's a lot of talk these days about this uh 699 culture working six days a week 9:00 am to 900 pm.
+
+589
+00:48:32,400 --> 00:48:34,319
+You know, a lot of people are like, why?
+
+590
+00:48:34,319 --> 00:48:35,359
+That's terrible.
+
+591
+00:48:35,359 --> 00:48:36,960
+Why would you make people do that?
+
+592
+00:48:36,960 --> 00:48:41,280
+But at the same time, I'm just constantly hearing this from the most successful AI companies.
+
+593
+00:48:41,280 --> 00:48:44,000
+This is just the way in it is to be successful.
+
+594
+00:48:44,000 --> 00:48:45,520
+Things are moving so fast.
+
+595
+00:48:45,520 --> 00:48:48,559
+This is a an opportunity you'll never see again.
+
+596
+00:48:48,559 --> 00:48:50,240
+Just talk about your thoughts on that.
+
+597
+00:48:50,240 --> 00:48:50,480
+>> Yeah.
+
+598
+00:48:50,480 --> 00:48:53,760
+Well, to clarify, we don't we've never mandated hours.
+
+599
+00:48:53,760 --> 00:48:59,839
+It's more been a byproduct of people that care a lot where we care a lot about the trajectory of the business.
+
+600
+00:48:59,839 --> 00:49:06,800
+And so a lot of people come into the office and stay late, but uh you know if they need to leave early and get dinner with their kids or,
+
+601
+00:49:06,800 --> 00:49:10,480
+you know, travel on the weekend, of course, that's totally fine.
+
+602
+00:49:10,480 --> 00:49:16,240
+And and for us, it's it's much more about finding people have a lot of ownership and are really bought in.
+
+603
+00:49:16,240 --> 00:49:19,520
+uh less so about the specific hours in the office.
+
+604
+00:49:19,520 --> 00:49:24,319
+Even though we found that oftentimes it's the people that are most bought in, not always,
+
+605
+00:49:24,319 --> 00:49:29,839
+but oftentimes it's the people that are most bought in that, you know, sort of burn the the midnight oil with us.
+
+606
+00:49:29,839 --> 00:49:34,079
+>> When you say high standards, is there something you could share that gives us an example what you mean there?
+
+607
+00:49:34,079 --> 00:49:37,440
+Because a lot of people are think they have high standards and they don't.
+
+608
+00:49:37,440 --> 00:49:45,040
+>> If you are very patient, there's always some trade-off between speed and quality when hiring.
+
+609
+00:49:45,040 --> 00:49:56,880
+Uh and I remember especially for our first 10 people, we were just so patient and disciplined about finding some of the best people in the world like you know half of them are for our
+
+610
+00:49:56,880 --> 00:49:59,359
+our second employee Sid as an example.
+
+611
+00:49:59,359 --> 00:50:09,200
+our second employee in the in the US said was previously the head of growth at scale you know when who joined us when we were a seedstage company uh Daniel who joined us was previously uh
+
+612
+00:50:09,200 --> 00:50:18,640
+scaled two consumer apps to over 100,000 users um and all sorts of just like extraordinary backgrounds um of our
+
+613
+00:50:18,640 --> 00:50:30,000
+first 10 hires uh and I think that that initial talent density shaped so much of what the rest of the org looks like as you scale it up >> I know you also have this perspective
+
+614
+00:50:30,000 --> 00:50:38,240
+that uh people talk about waiting to hire hiring really slowly, but >> it's actually not necessarily the right advice.
+
+615
+00:50:38,240 --> 00:50:39,359
+Talk about that.
+
+616
+00:50:39,359 --> 00:50:41,200
+>> It's painful because it's a double-edged sword.
+
+617
+00:50:41,200 --> 00:50:47,920
+Like on one hand, I'm thrilled that our first 10 people are like so phenomenal, and I think that that has paid dividends for the business.
+
+618
+00:50:47,920 --> 00:50:57,359
+But on the other hand, I think that companies do get to the point where you just need to hire really fast and and there are some things where you need a lot of
+
+619
+00:50:57,359 --> 00:50:58,480
+people to do them.
+
+620
+00:50:58,480 --> 00:51:09,680
+and the you need to recognize that you know there's going to be some variance associated with hiring um but but moving quickly is the priority and I think that in some ways
+
+621
+00:51:09,680 --> 00:51:19,119
+we move too slowly with how we scaled out the team and so the benefit is that everyone is extraordinary we have this super high bar and and we want to
+
+622
+00:51:19,119 --> 00:51:29,200
+maintain that over time um but I I think the downside is that uh you know while the company has grown incredibly quickly we we likely could have grown even
+
+623
+00:51:29,200 --> 00:51:37,520
+faster uh if we had moved a little bit more quickly um with especially ramping from call like 10 to 100 people.
+
+624
+00:51:37,520 --> 00:51:37,760
+>> Okay.
+
+625
+00:51:37,760 --> 00:51:45,040
+I was going to ask so it sounds like the first 10 be very careful take your time 10 to 100 maybe speed up a bit.
+
+626
+00:51:45,040 --> 00:51:45,520
+>> Yes.
+
+627
+00:51:45,520 --> 00:51:48,319
+Though I wouldn't say it's necessarily 10.
+
+628
+00:51:48,319 --> 00:51:52,319
+It's determined by the point where you know it's really working.
+
+629
+00:51:52,319 --> 00:51:59,440
+Uh, and that's I know that's still not like a bright line, but it's like once you know that there's so much more demand than you can handle,
+
+630
+00:51:59,440 --> 00:52:03,839
+that's when you want to step on the gas and optimize for for speed in a lot of ways.
+
+631
+00:52:03,839 --> 00:52:10,160
+Um, but I I think especially until then, it's important to be patient, be disciplined.
+
+632
+00:52:10,160 --> 00:52:12,720
+Uh, get the best people is always important.
+
+633
+00:52:12,720 --> 00:52:18,880
+Um, but uh speed becomes more important once you once you find the market opportunity,
+
+634
+00:52:18,880 --> 00:52:20,480
+the market vacuum.
+
+635
+00:52:20,480 --> 00:52:24,400
+You've I know you've started a couple companies in the past, much smaller scale.
+
+636
+00:52:24,400 --> 00:52:35,599
+Uh in this new role as CEO of this massive hyperrowth company, what's what surprised you most about where you spend the time most or just what the role include in involves
+
+637
+00:52:35,599 --> 00:52:38,800
+because a lot of people want to start companies dream about being in your shoes.
+
+638
+00:52:38,800 --> 00:52:42,480
+What do they maybe not understanding about where you a lot of your time goes?
+
+639
+00:52:42,480 --> 00:52:44,880
+>> Yeah, it it's actually not too surprising.
+
+640
+00:52:44,880 --> 00:52:50,559
+like the top two buckets are always working on hiring uh and time with customers.
+
+641
+00:52:50,559 --> 00:53:00,400
+Uh how do I really deeply understand what customers need and how we can support them and then how do I build the team and a lot of the processes around that.
+
+642
+00:53:00,400 --> 00:53:10,720
+Of course, there's all the ad hoc things I didn't expect of, you know, dealing with the the people questions of how do we set up our levels and our our comp bands and
+
+643
+00:53:10,720 --> 00:53:11,359
+all of that.
+
+644
+00:53:11,359 --> 00:53:14,319
+Uh which you sort of learn as you scale a business.
+
+645
+00:53:14,319 --> 00:53:24,960
+Um but but I think that the core places that I spend my time are in line with what I expected as well as what I love doing.
+
+646
+00:53:24,960 --> 00:53:27,839
+Um which is very fortunate.
+
+647
+00:53:27,839 --> 00:53:32,720
+>> So these two companies you've started in the past, >> maybe share what they were because they're fun.
+
+648
+00:53:32,720 --> 00:53:35,280
+And then what how did they help you be successful in this?
+
+649
+00:53:35,280 --> 00:53:38,000
+Like what's something that they taught you that helped you in your current role?
+
+650
+00:53:38,000 --> 00:53:38,240
+>> Yeah.
+
+651
+00:53:38,240 --> 00:53:42,400
+So I'll uh there's been like a dozen, but I'll I'll choose my my favorite two.
+
+652
+00:53:42,400 --> 00:53:50,559
+So, when I was in eighth grade, I started Doughnut Dynasty where I saw that Safeway donuts were selling for $5 a dozen.
+
+653
+00:53:50,559 --> 00:53:55,359
+And I was amazed because I felt like as an eighth grader, this was such a incredible deal.
+
+654
+00:53:55,359 --> 00:54:04,640
+And so, I started to bike down to Safeway, buy Safeway Donuts for $5 a dozen, and then uh go back to my middle school and then sell them for $2 each,
+
+655
+00:54:04,640 --> 00:54:06,880
+running really good margins, of course.
+
+656
+00:54:06,880 --> 00:54:09,760
+Uh it sold out super quickly, and so then I need to scale up.
+
+657
+00:54:09,760 --> 00:54:16,640
+So, I would pay my mom $20 to drive me in her minivan uh down to Safeway, buy 10 dozen donuts,
+
+658
+00:54:16,640 --> 00:54:18,880
+go to my middle school, sell them all out.
+
+659
+00:54:18,880 --> 00:54:25,520
+Uh, and then the school tried to shut me down and so because I was selling like food on school campus,
+
+660
+00:54:25,520 --> 00:54:29,599
+which they didn't like, uh, so they had me in the principal's office asking me to not do that.
+
+661
+00:54:29,599 --> 00:54:36,720
+And then I moved my doughnut stand over 50 feet so it was off school campus saying that they they could no longer,
+
+662
+00:54:36,720 --> 00:54:37,920
+you know, police me.
+
+663
+00:54:37,920 --> 00:54:42,240
+I remember we had competitors pop up where the competitors were charging.
+
+664
+00:54:42,240 --> 00:54:49,920
+They bought these Chucks donuts which if anyone in in the Bay Area knows are uh you know higherend donuts than Safeway donuts,
+
+665
+00:54:49,920 --> 00:54:51,359
+but they have a higher cost basis.
+
+666
+00:54:51,359 --> 00:54:53,680
+They cost a dollar um per.
+
+667
+00:54:53,680 --> 00:55:01,599
+And so I dropped my prices to $1 for two weeks to run them out of business before I before I knew uh what anti-competitive practices were.
+
+668
+00:55:01,599 --> 00:55:11,520
+And I' I'd hire all my friends, paying my friends in donuts because uh you know they perceived the donuts as as $2 each where they could sell them throughout the school uh and I could have a lower
+
+669
+00:55:11,520 --> 00:55:12,319
+cost basis on them.
+
+670
+00:55:12,319 --> 00:55:21,359
+So I had all of these like fun experiences and selling to and then I could talk more about my high school business as well which was uh more significant scale.
+
+671
+00:55:21,359 --> 00:55:24,960
+But I think the takeaway from that was just like you can just do things.
+
+672
+00:55:24,960 --> 00:55:34,480
+Like so many people have ideas, but the barrier to more companies being built I think is just initiative and taking the steps to build
+
+673
+00:55:34,480 --> 00:55:42,240
+the product or experience that customers want um and investing the time and the ambition to scale that up.
+
+674
+00:55:42,240 --> 00:55:51,760
+Um, and so I think it was really getting reps of that um that enabled me to realize that that I should do it later on uh at a much larger scale.
+
+675
+00:55:51,760 --> 00:55:52,400
+>> Amazing story.
+
+676
+00:55:52,400 --> 00:55:56,160
+I love how wholesome that is versus like drugs donuts.
+
+677
+00:55:56,160 --> 00:55:57,359
+>> Then my mom was very worried.
+
+678
+00:55:57,359 --> 00:55:59,920
+She was like, "Oh, are is there any pot of these donuts?"
+
+679
+00:55:59,920 --> 00:56:00,720
+I was like, "No, mom.
+
+680
+00:56:00,720 --> 00:56:04,880
+I assure you these these are are pure donuts."
+
+681
+00:56:04,880 --> 00:56:07,359
+>> I love that you paid your mom $20 to try.
+
+682
+00:56:07,359 --> 00:56:08,000
+>> Yeah.
+
+683
+00:56:08,000 --> 00:56:08,880
+She was adamant.
+
+684
+00:56:08,880 --> 00:56:13,040
+She it couldn't be, you know, a handout that she was taking her time to drive me.
+
+685
+00:56:13,040 --> 00:56:15,680
+So, she needed to make a little bit of money off of it.
+
+686
+00:56:15,680 --> 00:56:20,640
+We haggled over her title where eventually she wanted to be head of global operations,
+
+687
+00:56:20,640 --> 00:56:22,640
+which we found very entertaining.
+
+688
+00:56:22,640 --> 00:56:24,960
+>> I hope that's on her LinkedIn.
+
+689
+00:56:24,960 --> 00:56:25,440
+>> Not yet.
+
+690
+00:56:25,440 --> 00:56:26,880
+Maybe she'll have to add it.
+
+691
+00:56:26,880 --> 00:56:29,200
+>> And so, you said that you've started a dozen companies.
+
+692
+00:56:29,200 --> 00:56:29,839
+>> Yeah.
+
+693
+00:56:29,839 --> 00:56:30,240
+>> Wow.
+
+694
+00:56:30,240 --> 00:56:30,640
+Okay.
+
+695
+00:56:30,640 --> 00:56:39,119
+Well, a dozen projects, but I I think there were it was that and then my AWS company uh were the two that that I sort of scaled up.
+
+696
+00:56:39,119 --> 00:56:42,079
+>> What's the story behind Merkore as as the name?
+
+697
+00:56:42,079 --> 00:56:45,680
+>> Meror means marketplace in Latin or to buy, sell, trade.
+
+698
+00:56:45,680 --> 00:56:51,680
+And we want to build the largest marketplace in the world, the marketplace for how everyone finds jobs.
+
+699
+00:56:51,680 --> 00:56:55,839
+Um and and that was really the the draw to it.
+
+700
+00:56:55,839 --> 00:56:57,119
+>> Okay, maybe a last question.
+
+701
+00:56:57,119 --> 00:57:02,319
+And this is going back to earlier in discussion because it's something I've been thinking about as we're talking.
+
+702
+00:57:02,319 --> 00:57:09,520
+There's been this shift from data as kind of the the fuel for models and now it's experts.
+
+703
+00:57:09,520 --> 00:57:15,440
+Do you think there's a next step or is this just like will take us to AGI super intelligence?
+
+704
+00:57:15,440 --> 00:57:19,680
+I don't think it's necessarily changing from data to experts as experts.
+
+705
+00:57:19,680 --> 00:57:30,960
+It's more just the paradigm of realizing that labs need this close collaboration um with experts to help understand what are the evals that they're building and
+
+706
+00:57:30,960 --> 00:57:33,359
+how can they push the frontier.
+
+707
+00:57:33,359 --> 00:57:41,040
+But I think it's very clear that eval are evergreen that so long as we want to improve models,
+
+708
+00:57:41,040 --> 00:57:50,880
+we'll needs we'll need experts to create evals for them and to create the post- training data for them to learn those capabilities and of course there might be changes in the
+
+709
+00:57:50,880 --> 00:58:01,920
+exact way that people do training with RL or otherwise but they will always need an eval to measure what does success look like across every domain that they want to build.
+
+710
+00:58:01,920 --> 00:58:02,079
+>> Okay.
+
+711
+00:58:02,079 --> 00:58:02,240
+Okay.
+
+712
+00:58:02,240 --> 00:58:07,119
+So then then building on that, a question that comes up a lot these days is uh and I know we're talking about fun stuff,
+
+713
+00:58:07,119 --> 00:58:09,520
+but I'm getting to serious stuff again.
+
+714
+00:58:09,520 --> 00:58:12,880
+Um scaling laws and just like progression of model intelligence.
+
+715
+00:58:12,880 --> 00:58:15,680
+A lot of people are feeling like I don't know, it's slowing down.
+
+716
+00:58:15,680 --> 00:58:19,280
+We're not going to really get to super intelligence at this rate.
+
+717
+00:58:19,280 --> 00:58:20,880
+What is your sense?
+
+718
+00:58:20,880 --> 00:58:22,000
+>> I totally agree with that.
+
+719
+00:58:22,000 --> 00:58:29,440
+Like I don't think it's I I know there's been some executives at big labs that say we'll have super intelligence in three years,
+
+720
+00:58:29,440 --> 00:58:31,920
+but I think the truth is that it's a longer road.
+
+721
+00:58:31,920 --> 00:58:35,200
+And that's not to diminish from how extraordinary the models are.
+
+722
+00:58:35,200 --> 00:58:42,880
+Like I think we'll be able to automate a majority of of knowledge work tasks uh in in the next 10 years for sure.
+
+723
+00:58:42,880 --> 00:58:51,280
+Uh but that long road is paved with all of the evals that help to make those capabilities possible.
+
+724
+00:58:51,280 --> 00:58:57,200
+And it's not going to be, you know, 10x more pre-training data that gets those capabilities.
+
+725
+00:58:57,200 --> 00:59:05,040
+It's much more going to be all of the host training data sets that are far more data efficient and thoughtful that help us get there.
+
+726
+00:59:05,040 --> 00:59:14,319
+David Sax tweeted this interesting point that like the situation we're in now is almost the best case scenario where AI is not in this fast takeoff to super intelligence.
+
+727
+00:59:14,319 --> 00:59:17,680
+There's a lot of competitors kind of keeping each other in check.
+
+728
+00:59:17,680 --> 00:59:26,079
+uh models are already very valuable and only getting valuable more valuable, but there's not just this like winner super intelligence taking over the world situation.
+
+729
+00:59:26,079 --> 00:59:27,280
+>> Yeah, I think that's true.
+
+730
+00:59:27,280 --> 00:59:34,799
+I think a lot of the super intelligence fear-mongering is probably overrated, but at the same time,
+
+731
+00:59:34,799 --> 00:59:40,319
+a lot of people's framing around that is even if there's a 5 to 10% chance of this P doom,
+
+732
+00:59:40,319 --> 00:59:43,440
+then we should be careful, which which seems logical.
+
+733
+00:59:43,440 --> 00:59:54,559
+Um, but I think that it's going to be an extraordinary 10 years for all of Silicon Valley and and all of the world as this technology is able to create
+
+734
+00:59:54,559 --> 01:00:06,079
+abundance and giving everyone better medical treatment, you know, the best access to legal recommendations and the ability to build great products more than we've ever seen before.
+
+735
+01:00:06,079 --> 01:00:08,480
+>> And education feels like is transforming.
+
+736
+01:00:08,480 --> 01:00:09,119
+>> Absolutely.
+
+737
+01:00:09,119 --> 01:00:09,440
+Right.
+
+738
+01:00:09,440 --> 01:00:20,079
+Like I I even have felt bits of this over the last 10 years where like I remember ever my my parents would give me a hard time for not going to classes in college and I'd be like
+
+739
+01:00:20,079 --> 01:00:22,000
+well there's way better lectures on YouTube.
+
+740
+01:00:22,000 --> 01:00:23,440
+Why not just listen there?
+
+741
+01:00:23,440 --> 01:00:33,599
+But I can only imagine as the models get extremely good at conveying information better than the best professor what that'll mean,
+
+742
+01:00:33,599 --> 01:00:33,920
+right?
+
+743
+01:00:33,920 --> 01:00:41,920
+And and access to all sorts of information um to better forward humanity and and upskill everyone.
+
+744
+01:00:41,920 --> 01:00:44,400
+>> So I'll use that as a segue to a final question.
+
+745
+01:00:44,400 --> 01:00:48,400
+Uh I'm going to take us to AI corner which is a recurring segment on the podcast.
+
+746
+01:00:48,400 --> 01:00:52,720
+What's some way that you personally use AI to do better work to help you in life?
+
+747
+01:00:52,720 --> 01:00:53,520
+Well, let's see.
+
+748
+01:00:53,520 --> 01:00:56,960
+I use it a lot to write documents as you would expect.
+
+749
+01:00:56,960 --> 01:01:00,880
+Um, I also talk to it to get advice on problems.
+
+750
+01:01:00,880 --> 01:01:04,640
+Like I find it helpful to just reason through almost as a thought partner.
+
+751
+01:01:04,640 --> 01:01:07,520
+Uh, because yeah, I I don't know.
+
+752
+01:01:07,520 --> 01:01:11,440
+I I find I I think better sometimes when I'm talking something through.
+
+753
+01:01:11,440 --> 01:01:15,760
+Uh, but I can't talk through everything uh with colleagues or people around me.
+
+754
+01:01:15,760 --> 01:01:19,040
+>> And so this is like chat GPT voice mode mostly or something else.
+
+755
+01:01:19,040 --> 01:01:20,400
+>> I like chatt voice mode a lot.
+
+756
+01:01:20,400 --> 01:01:25,440
+There's still room for improvement, but I I am very excited about the future of voice.
+
+757
+01:01:25,440 --> 01:01:26,559
+>> Let me show you something I built.
+
+758
+01:01:26,559 --> 01:01:30,799
+Actually, that I wasn't planning to talk about this, but there's this uh guy, Eric Antinau,
+
+759
+01:01:30,799 --> 01:01:34,079
+who recommended by a lot of people to get him on this podcast.
+
+760
+01:01:34,079 --> 01:01:37,839
+He's this creative uh product person that's kind of under the radar now.
+
+761
+01:01:37,839 --> 01:01:39,040
+He's at Facebook for a long time.
+
+762
+01:01:39,040 --> 01:01:46,240
+He built this project called Parrot GPT, which is you put uh you basically put JBT into a stuffed animal to talk to it.
+
+763
+01:01:46,240 --> 01:01:48,400
+So, built built a little wise owl.
+
+764
+01:01:48,400 --> 01:01:56,240
+I don't have it on right now, but basically you sew in a little speaker right here and you put a little magnet underneath and you can put on your shoulder and then you just talk to it.
+
+765
+01:01:56,240 --> 01:01:56,720
+>> So cute.
+
+766
+01:01:56,720 --> 01:01:57,200
+Wow.
+
+767
+01:01:57,200 --> 01:01:57,760
+I love it.
+
+768
+01:01:57,760 --> 01:01:58,799
+I'll have to get one of those.
+
+769
+01:01:58,799 --> 01:02:06,319
+You know, I've because I have like a some of the voice assistants in my apartment, but I really want a chatbt voice assistant.
+
+770
+01:02:06,319 --> 01:02:09,920
+And so I'm excited for >> I was just thinking that >> like Yeah.
+
+771
+01:02:09,920 --> 01:02:10,720
+Just come on.
+
+772
+01:02:10,720 --> 01:02:14,240
+Why can't we have Chat GPT voice just sitting around listening to us all the time?
+
+773
+01:02:14,240 --> 01:02:17,119
+And you can't on your phone because it goes to sleep and it's like hello.
+
+774
+01:02:17,119 --> 01:02:17,440
+What?
+
+775
+01:02:17,440 --> 01:02:17,839
+No.
+
+776
+01:02:17,839 --> 01:02:18,319
+Exactly.
+
+777
+01:02:18,319 --> 01:02:18,559
+Yeah.
+
+778
+01:02:18,559 --> 01:02:18,720
+>> Yeah.
+
+779
+01:02:18,720 --> 01:02:20,000
+So, it's kind of what this is trying to be.
+
+780
+01:02:20,000 --> 01:02:23,599
+Well, like there's a Kickstarter he started that welding too that you could help you out.
+
+781
+01:02:23,599 --> 01:02:24,880
+>> It's really easy.
+
+782
+01:02:24,880 --> 01:02:32,319
+>> Uh Brendan, is there anything else that you wanted to share or touch on or maybe leave listeners with before we get to a very exciting lighting round?
+
+783
+01:02:32,319 --> 01:02:36,880
+>> Tying to the point around initiative and that you can just do do things.
+
+784
+01:02:36,880 --> 01:02:46,880
+I encourage everyone, especially with AI and it being so much easier to build, just take the initiative to to go out and build products and talk with
+
+785
+01:02:46,880 --> 01:02:56,400
+customers and take that leap of faith because I think that that is in so many ways the largest barrier to more innovation in the economy um in any way
+
+786
+01:02:56,400 --> 01:02:58,559
+that um we can support that.
+
+787
+01:02:58,559 --> 01:03:05,119
+Yeah, there's so many people that just uh nothing, let's not bash the podcast, but just listen to podcasts,
+
+788
+01:03:05,119 --> 01:03:08,880
+read posts, just keep reading and listening and don't do anything with that information.
+
+789
+01:03:08,880 --> 01:03:12,240
+And there's never been an easier time to actually build stuff and try stuff.
+
+790
+01:03:12,240 --> 01:03:12,640
+Totally.
+
+791
+01:03:12,640 --> 01:03:14,319
+>> So, definitely take that advice.
+
+792
+01:03:14,319 --> 01:03:15,760
+Just you can do things.
+
+793
+01:03:15,760 --> 01:03:21,119
+You can move your doughut stand 50 feet and >> get out of their jurisdiction.
+
+794
+01:03:21,119 --> 01:03:21,440
+>> Yeah.
+
+795
+01:03:21,440 --> 01:03:24,240
+>> Okay, Brennan, with that, we've reached our very exciting lightning round.
+
+796
+01:03:24,240 --> 01:03:25,359
+I've got five questions for you.
+
+797
+01:03:25,359 --> 01:03:26,319
+Are you ready?
+
+798
+01:03:26,319 --> 01:03:27,359
+>> All set.
+
+799
+01:03:27,359 --> 01:03:31,520
+What are two or three books that you find yourself recommending most to other people?
+
+800
+01:03:31,520 --> 01:03:31,920
+>> Let's see.
+
+801
+01:03:31,920 --> 01:03:37,280
+I would say in order high output management is a phenomenal book on running companies.
+
+802
+01:03:37,280 --> 01:03:40,640
+Second is 0ero to1 uh which of course is a classic.
+
+803
+01:03:40,640 --> 01:03:46,720
+And then third is shoe dog where I just find it to be a really inspirational story.
+
+804
+01:03:46,720 --> 01:03:49,599
+>> What is a recent movie or TV show you've really enjoyed?
+
+805
+01:03:49,599 --> 01:03:51,920
+>> I really liked Oenheimer.
+
+806
+01:03:51,920 --> 01:03:54,000
+My favorite TV show of all time is Suits.
+
+807
+01:03:54,000 --> 01:03:58,559
+Uh, so I know not not recent, but if I had to choose a recent one, probably Oppenheimer.
+
+808
+01:03:58,559 --> 01:03:59,359
+>> Very cool.
+
+809
+01:03:59,359 --> 01:03:59,760
+Suits.
+
+810
+01:03:59,760 --> 01:04:01,920
+First time someone's mentioned that.
+
+811
+01:04:01,920 --> 01:04:05,200
+>> Favorite product you recently discovered that you really love.
+
+812
+01:04:05,200 --> 01:04:08,480
+>> I love using codecs, like the new version.
+
+813
+01:04:08,480 --> 01:04:12,079
+Uh, I I know it's it's sort of new in in terms of version.
+
+814
+01:04:12,079 --> 01:04:17,119
+Uh, yeah, I think it's it's incredible and just a huge huge improvement.
+
+815
+01:04:17,119 --> 01:04:19,119
+Um, so yeah.
+
+816
+01:04:19,119 --> 01:04:25,440
+Do you have a life motto that you find yourself coming back to, sharing with folks, finding useful in work or in life?
+
+817
+01:04:25,440 --> 01:04:30,000
+>> I think it's you can just do stuff you know what we were talking about earlier.
+
+818
+01:04:30,000 --> 01:04:31,920
+Uh take the leap of faith.
+
+819
+01:04:31,920 --> 01:04:34,640
+>> I thought you were going to say can do which is in your Twitter profile.
+
+820
+01:04:34,640 --> 01:04:35,359
+>> Can't do as well.
+
+821
+01:04:35,359 --> 01:04:36,480
+Yeah.
+
+822
+01:04:36,480 --> 01:04:37,599
+>> Two great ones.
+
+823
+01:04:37,599 --> 01:04:38,799
+Final question.
+
+824
+01:04:38,799 --> 01:04:46,880
+So I we were chatting before this about things that we could talk about and you shared this interesting thing that uh you haven't shared anywhere else which is that you're dyslexic.
+
+825
+01:04:46,880 --> 01:04:47,760
+>> Yep.
+
+826
+01:04:47,760 --> 01:04:55,200
+Why don't you share why don't you share that with folks and just how do you get around that having built the fastest growing company in history?
+
+827
+01:04:55,200 --> 01:04:59,119
+>> I don't hide it at all like I think a lot of my colleagues know.
+
+828
+01:04:59,119 --> 01:05:08,880
+Um and I think on one hand it definitely makes it difficult to go through a thousand emails a day or or read every document that I'm supposed to.
+
+829
+01:05:08,880 --> 01:05:15,520
+But on the other hand, I feel like it helps me to think a little bit differently, to be more creative,
+
+830
+01:05:15,520 --> 01:05:20,240
+and perhaps see the ways that markets are changing that not everyone sees.
+
+831
+01:05:20,240 --> 01:05:24,319
+Um, and so it it's turned out okay so far.
+
+832
+01:05:24,319 --> 01:05:35,599
+And so, uh, you know, I I try to I think one thing it's it's helped me realize from a management standpoint is that we focus much more on how we can leverage people's strengths rather than
+
+833
+01:05:35,599 --> 01:05:37,200
+helping to improve weaknesses.
+
+834
+01:05:37,200 --> 01:05:46,000
+because there's some things that I'm not great at and I'll I'll never be the best in the world at and and there's others that I can hopefully refine and strive to be.
+
+835
+01:05:46,000 --> 01:05:52,960
+>> That's such a also recurring theme on this podcast of just focusing on strengths and not over not focusing over all your focus on weaknesses.
+
+836
+01:05:52,960 --> 01:05:54,480
+Uh Brandon, this was incredible.
+
+837
+01:05:54,480 --> 01:05:55,280
+I learned so much.
+
+838
+01:05:55,280 --> 01:05:58,240
+I have I have a billion more questions, but you got to do.
+
+839
+01:05:58,240 --> 01:05:59,839
+Uh two final questions.
+
+840
+01:05:59,839 --> 01:06:04,160
+What should people know about what you're doing and roles you're hiring for?
+
+841
+01:06:04,160 --> 01:06:06,160
+And then how can listeners be useful to you?
+
+842
+01:06:06,160 --> 01:06:06,640
+>> Absolutely.
+
+843
+01:06:06,640 --> 01:06:09,839
+We're hiring a ton uh across the board on our team.
+
+844
+01:06:09,839 --> 01:06:16,480
+We're hiring strategic project leads on our operations team, software engineers and our engineering team as well as researchers.
+
+845
+01:06:16,480 --> 01:06:20,799
+And so please go to mercur.com and we would love to work with you.
+
+846
+01:06:20,799 --> 01:06:23,760
+Um and that's the largest way that you can help us.
+
+847
+01:06:23,760 --> 01:06:25,359
+Share it with your friends as well.
+
+848
+01:06:25,359 --> 01:06:30,960
+Uh over half of people in our marketplace come from referrals uh because we have a platform of people that love us.
+
+849
+01:06:30,960 --> 01:06:37,839
+And so, uh, any jobs that you want to apply to or send your friends to, uh, we would love to have you.
+
+850
+01:06:37,839 --> 01:06:39,760
+>> Brendan, thank you so much for joining me.
+
+851
+01:06:39,760 --> 01:06:41,200
+>> Thank you for having me.
+
+852
+01:06:41,200 --> 01:06:43,280
+Bye, everyone.
+
+853
+01:06:43,280 --> 01:06:44,640
+Thank you so much for listening.
+
+854
+01:06:44,640 --> 01:06:49,039
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+855
+01:06:49,039 --> 01:06:51,119
+or your favorite podcast app.
+
+856
+01:06:51,119 --> 01:06:57,440
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+857
+01:06:57,440 --> 01:07:02,880
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+858
+01:07:02,880 --> 01:07:06,599
+See you in the next episode.

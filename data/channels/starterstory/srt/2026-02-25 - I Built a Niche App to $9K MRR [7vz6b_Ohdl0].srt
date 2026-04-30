@@ -1,0 +1,871 @@
+1
+00:00:00,080 --> 00:00:05,359
+Everyone thinks you need a huge idea to make money, but Jonathan did the opposite.
+
+2
+00:00:05,359 --> 00:00:09,360
+His tiny open source project makes $9,000 a month.
+
+3
+00:00:09,360 --> 00:00:12,719
+>> This one post got us thousands of users in one day.
+
+4
+00:00:12,719 --> 00:00:14,240
+>> His approach is genius.
+
+5
+00:00:14,240 --> 00:00:16,880
+He did not build something that works for everyone.
+
+6
+00:00:16,880 --> 00:00:20,960
+Instead, he built something with just one type of person in mind.
+
+7
+00:00:20,960 --> 00:00:23,359
+>> I built this app specifically for developers.
+
+8
+00:00:23,359 --> 00:00:26,480
+>> So, I invited Jonathan onto the channel to break it all down for me.
+
+9
+00:00:26,480 --> 00:00:31,599
+And in this episode, we'll get into what developers get wrong about building profitable products,
+
+10
+00:00:31,599 --> 00:00:40,320
+the one piece of content that got him thousands of users overnight, and the five steps that you should take if you're a developer building stuff in 2026.
+
+11
+00:00:40,320 --> 00:00:41,680
+All right, let's get into it.
+
+12
+00:00:41,680 --> 00:00:45,760
+I'm Pat Walls and this is Starter Story.
+
+13
+00:00:45,760 --> 00:00:52,320
+All right, real quick before we dive in, Jonathan is about to break down how he built and found customers for his SAS.
+
+14
+00:00:52,320 --> 00:00:58,800
+If you're trying to figure out how to find customers for your app, [music] well, I have an ideas template that I think might help you out.
+
+15
+00:00:58,800 --> 00:01:02,879
+You can grab it right now at the link in the description, but more on that later.
+
+16
+00:01:02,879 --> 00:01:04,159
+Let's get into the episode.
+
+17
+00:01:04,159 --> 00:01:06,000
+All right, Jonathan, welcome to the channel.
+
+18
+00:01:06,000 --> 00:01:08,479
+Tell me about who you are, what you built, and what's your story.
+
+19
+00:01:08,479 --> 00:01:10,159
+>> Hi, I'm Jonathan Fishner.
+
+20
+00:01:10,159 --> 00:01:12,720
+I'm a developer and I'm the co-founder of Charardb.
+
+21
+00:01:12,720 --> 00:01:16,479
+Chardb is an open- source database visualization for developers.
+
+22
+00:01:16,479 --> 00:01:26,720
+We launched the office source uh 16 months ago and lately we just make about 9,000 in MR and today I'm excited to share more about that with you.
+
+23
+00:01:26,720 --> 00:01:27,040
+>> All right.
+
+24
+00:01:27,040 --> 00:01:30,080
+Well, developer products I'm excited to talk about today.
+
+25
+00:01:30,080 --> 00:01:33,280
+Something that I'm passionate about and I think a lot of people watching will enjoy.
+
+26
+00:01:33,280 --> 00:01:37,920
+But before we do that, can you just explain a little bit more about what your product does and how it works?
+
+27
+00:01:37,920 --> 00:01:38,400
+Yeah.
+
+28
+00:01:38,400 --> 00:01:47,759
+So the core product is an open source self-hosted the developers like can just install locally on their uh machines and basically visualize their database.
+
+29
+00:01:47,759 --> 00:01:56,320
+On top of that we have the paid cloud version that's the hosted version that we provide in charb and the cloud version is where we basically monetize.
+
+30
+00:01:56,320 --> 00:02:06,560
+So developers find chardb and through github as we an open source and use it for free and once they uh become to be more streamlined on their workflow they
+
+31
+00:02:06,560 --> 00:02:08,720
+decided to jump on the paid plans.
+
+32
+00:02:08,720 --> 00:02:14,160
+So this is our github charb chardb and we just passed 21,000 stars on github.
+
+33
+00:02:14,160 --> 00:02:15,280
+Here is the analytics.
+
+34
+00:02:15,280 --> 00:02:24,959
+We had passed in during the year uh 250,000 uh developers that use the product in the revenue side and we passed uh n almost 9,400.
+
+35
+00:02:24,959 --> 00:02:25,440
+>> Okay, cool.
+
+36
+00:02:25,440 --> 00:02:33,440
+Well, one thing I'm curious about is there's a lot of developers watching this right now looking for developer tools that maybe they could build or just something that they can build.
+
+37
+00:02:33,440 --> 00:02:36,800
+I know there's a ton of developer tools out there that are making millions of dollars.
+
+38
+00:02:36,800 --> 00:02:40,800
+Cursor, cloud code, that's like the big examples, but there's tons tons of stuff out there doing well.
+
+39
+00:02:40,800 --> 00:02:45,280
+For developers who are watching this right now, my question to you is how did you come up with this idea?
+
+40
+00:02:45,280 --> 00:02:50,239
+How did you come across something that had the potential to have hundreds of thousands of downloads by developers?
+
+41
+00:02:50,239 --> 00:02:51,040
+How did it start?
+
+42
+00:02:51,040 --> 00:03:00,879
+In the beginning, Charlie B, we started like uh with a different idea and we thought about like trying like to build a database clients that incubate AI into that.
+
+43
+00:03:00,879 --> 00:03:09,599
+So we started that direction and we had like a big stop because people don't really adopt that that product needed to provide like access.
+
+44
+00:03:09,599 --> 00:03:19,519
+They needed to credentials to connect to your database to run all those queries and you need to install something on your machine and without any credibility and trust from the engineers we said like all right it's
+
+45
+00:03:19,519 --> 00:03:20,480
+too tough.
+
+46
+00:03:20,480 --> 00:03:26,959
+So that way we saw about like all right I think let's start charb it's going to take your database and make it into a chart.
+
+47
+00:03:26,959 --> 00:03:28,080
+Uh simple as that.
+
+48
+00:03:28,080 --> 00:03:39,200
+The two things that I think made it work is one the product chartb it's much more visual and easy to people to see the value right away and it's giving like a better
+
+49
+00:03:39,200 --> 00:03:42,959
+wow effect and the second thing is reduction of the friction.
+
+50
+00:03:42,959 --> 00:03:48,239
+So let's say you don't need to provide any access and you don't need to install a new software on your machine.
+
+51
+00:03:48,239 --> 00:03:53,840
+So reducing that friction really helped to provide engagement from developers.
+
+52
+00:03:53,840 --> 00:03:54,400
+>> Okay, cool.
+
+53
+00:03:54,400 --> 00:04:04,560
+So the idea took a little bit of a pivot u and you found some things that clearly resonated or you you came up with some ideas on what was going to resonate more with developers.
+
+54
+00:04:04,560 --> 00:04:06,480
+The next thing that I want to talk about is growth.
+
+55
+00:04:06,480 --> 00:04:11,840
+Anybody can release a code repository or a package on GitHub or online.
+
+56
+00:04:11,840 --> 00:04:13,200
+It costs nothing to do that.
+
+57
+00:04:13,200 --> 00:04:17,519
+There are thousands if not millions of unused software online.
+
+58
+00:04:17,519 --> 00:04:19,600
+Clearly that wasn't the case for yours.
+
+59
+00:04:19,600 --> 00:04:22,400
+So how did you get visibility and how did you grow chart DB?
+
+60
+00:04:22,400 --> 00:04:27,680
+>> I would say that uh um the growth for chart DB started with launch on archer news.
+
+61
+00:04:27,680 --> 00:04:29,919
+Uh that got us like for the front [music] page.
+
+62
+00:04:29,919 --> 00:04:41,759
+So we started like developing chart DB and after three weeks of development we decided to go for lunch and we did some preparation and then we decide all right let's uh choose a day and put oursel like as a
+
+63
+00:04:41,759 --> 00:04:42,639
+show.
+
+64
+00:04:42,639 --> 00:04:46,560
+This show got working and blow up to get to the front page.
+
+65
+00:04:46,560 --> 00:04:51,360
+what gave us uh thousands of engineers on the same day landing on our product.
+
+66
+00:04:51,360 --> 00:04:58,479
+>> I think it's just amazing that one post on one platform can essentially catapult your business.
+
+67
+00:04:58,479 --> 00:05:03,840
+It's not going to make a million dollars overnight, but it can be the one thing that can change your life essentially.
+
+68
+00:05:03,840 --> 00:05:07,039
+What do you think worked about that Hacker News post?
+
+69
+00:05:07,039 --> 00:05:10,880
+If you were to do it again, what would advice would you give someone who's launching on Hacker News?
+
+70
+00:05:10,880 --> 00:05:13,440
+>> Yeah, so I think like a few few things.
+
+71
+00:05:13,440 --> 00:05:20,320
+So developers really appreciate open source because they can test it with no like really sign up and things that they don't like.
+
+72
+00:05:20,320 --> 00:05:26,320
+And I think the second thing is like if you provide something unique they never saw before.
+
+73
+00:05:26,320 --> 00:05:32,400
+I think that's something that like if you have a wedge that like it's very unique to what you're trying to solve,
+
+74
+00:05:32,400 --> 00:05:38,240
+they will provide appreciation with their upvote and those up votes will bring you to the homepage.
+
+75
+00:05:38,240 --> 00:05:44,533
+And the homepage is where so many developers every day going and checking those launches.
+
+76
+00:05:44,533 --> 00:05:50,560
+[music] >> Before we get back into the episode, I want to talk to those of you who want to build something but don't know what yet.
+
+77
+00:05:50,560 --> 00:05:53,919
+My best advice is don't start coding just yet.
+
+78
+00:05:53,919 --> 00:06:00,240
+The best businesses actually [music] solve problems that are hiding in plain sight right in front of you right now.
+
+79
+00:06:00,240 --> 00:06:03,759
+And this is why I created the free business idea template.
+
+80
+00:06:03,759 --> 00:06:10,960
+It's our guide that walks you through the seven proven methods to find real problems that real people will actually pay you to solve.
+
+81
+00:06:10,960 --> 00:06:18,800
+Inside, you will learn how to spot 21 different problems in your daily life, how to validate how painful those problems actually are,
+
+82
+00:06:18,800 --> 00:06:23,039
+and finally, how to pick the one that makes sense for you to build right [music] now.
+
+83
+00:06:23,039 --> 00:06:28,319
+In less than 30 minutes, this might completely change how you think about business ideas.
+
+84
+00:06:28,319 --> 00:06:33,659
+So, if you're ready, just head to that link right down there in the description to grab the template for free.
+
+85
+00:06:33,659 --> 00:06:35,600
+[music] All right, let's get back to the episode.
+
+86
+00:06:35,600 --> 00:06:40,160
+I mean, I this space of building for developers, I just think there's so much opportunity here.
+
+87
+00:06:40,160 --> 00:06:44,240
+You know, there's a recent obviously the big one in the space right now is Clawed Bot.
+
+88
+00:06:44,240 --> 00:06:47,199
+It got hundreds of thousands of stars within a week.
+
+89
+00:06:47,199 --> 00:06:49,280
+This is what's possible with building developer tools.
+
+90
+00:06:49,280 --> 00:06:50,880
+I just think it's an amazing space.
+
+91
+00:06:50,880 --> 00:06:51,600
+So, I'm curious.
+
+92
+00:06:51,600 --> 00:06:56,720
+If you were to start over, you obviously have a business that you're going to run now and you were going to start a new developer tool.
+
+93
+00:06:56,720 --> 00:07:02,479
+What would be your like playbook for finding an idea, building it, getting validation and turning into a business?
+
+94
+00:07:02,479 --> 00:07:02,720
+>> Yeah.
+
+95
+00:07:02,720 --> 00:07:06,319
+So, I would start with like be the user or ideally it's for yourself.
+
+96
+00:07:06,319 --> 00:07:11,599
+So, if it's for yourself, something that you see the value right away, you really understand how to do it.
+
+97
+00:07:11,599 --> 00:07:14,720
+Uh because you got experience around what you do.
+
+98
+00:07:14,720 --> 00:07:23,280
+For example, in Charb, we find out that you wants to visualize something very simple like I want an erd and I want to look good that I can interact with that.
+
+99
+00:07:23,280 --> 00:07:32,160
+that is something that just like very specific thing about that specific value that I can start from and get something super cool out of it.
+
+100
+00:07:32,160 --> 00:07:37,919
+So step two I think design for constraint not for ideal every persona have their constraints.
+
+101
+00:07:37,919 --> 00:07:48,880
+Uh for example developers they're really prefer self-hosted tools that they can test and check on their local environment instead of uh going through any kind of uh signup wall.
+
+102
+00:07:48,880 --> 00:07:57,360
+So I think like reducing that friction as we talked before that's why Charlie B had no sign up no sales calls you don't need to provide any credentials.
+
+103
+00:07:57,360 --> 00:08:07,520
+Step three I would say start with a wedge and not from the full vision starting from something that like people will appreciate and see the value out of it right away and then evolve that based on
+
+104
+00:08:07,520 --> 00:08:08,400
+their feedback.
+
+105
+00:08:08,400 --> 00:08:13,919
+That's the like the right path like how to go and continue to build uh in small iterations.
+
+106
+00:08:13,919 --> 00:08:14,160
+Okay.
+
+107
+00:08:14,160 --> 00:08:18,400
+So the next step is going to be let usage to let you what to monetize.
+
+108
+00:08:18,400 --> 00:08:20,720
+So in the beginning we didn't uh monetize at all.
+
+109
+00:08:20,720 --> 00:08:25,520
+It's just like providing the tool with the utility in a way that [music] you can do it by yourself.
+
+110
+00:08:25,520 --> 00:08:35,599
+Then like people started to ask to work with their team and then we needed to provide a more complex real-time collaboration and we understood there is like something very complex to support.
+
+111
+00:08:35,599 --> 00:08:39,279
+So that's probably how we going to start to monetize.
+
+112
+00:08:39,279 --> 00:08:43,039
+So monetization should not be a guess and should be response to your behavior.
+
+113
+00:08:43,039 --> 00:08:50,640
+And we watched our users and how people using Chardb over the time and based on their patterns and how they emerge their patterns.
+
+114
+00:08:50,640 --> 00:08:54,399
+We started like to understand how to take it from there and how to charge for it.
+
+115
+00:08:54,399 --> 00:08:58,240
+And the last thing is like you want to market where the ICP lives.
+
+116
+00:08:58,240 --> 00:09:06,240
+So distribution should feel natural and we didn't look for uh invent any new channels and we show out where developers already are.
+
+117
+00:09:06,240 --> 00:09:15,360
+So GitHub and archer news and also Reddit in self-hosted and subreddits that where the developer used to be and internal teams sharing between them.
+
+118
+00:09:15,360 --> 00:09:26,880
+So the final takeaway I would say though pick the persona and remove aggressively all the friction as much as possible and be obsessed with one core value until you really see the adoption and it feel
+
+119
+00:09:26,880 --> 00:09:27,680
+effortless.
+
+120
+00:09:27,680 --> 00:09:29,279
+>> Okay, thanks for sharing the playbook.
+
+121
+00:09:29,279 --> 00:09:29,680
+That's amazing.
+
+122
+00:09:29,680 --> 00:09:32,399
+I think there's so much opportunity to build in developer tools.
+
+123
+00:09:32,399 --> 00:09:38,160
+if you can just build something that's useful for developers there there's often a business behind it which I think is super cool.
+
+124
+00:09:38,160 --> 00:09:42,880
+One thing that I wanted to understand from you a little bit more is how your product even works.
+
+125
+00:09:42,880 --> 00:09:50,560
+I know it's like a visualization tool for charts chart DB but would you be able to just show a quick demo of how it works uh and what it does.
+
+126
+00:09:50,560 --> 00:09:50,880
+>> Okay.
+
+127
+00:09:50,880 --> 00:09:51,760
+Yeah, absolutely.
+
+128
+00:09:51,760 --> 00:09:52,399
+So let's start.
+
+129
+00:09:52,399 --> 00:09:56,959
+Even in the homepage we see the visualization and it's live and you can like embedded it.
+
+130
+00:09:56,959 --> 00:10:01,040
+Once you going to the tool itself, let's say that you wants to bring your database.
+
+131
+00:10:01,040 --> 00:10:02,560
+You choose your platform.
+
+132
+00:10:02,560 --> 00:10:04,959
+You're taking one query that is the smart query.
+
+133
+00:10:04,959 --> 00:10:06,959
+Running into it one of your database clients.
+
+134
+00:10:06,959 --> 00:10:09,519
+I'm connecting here to the database called Pokémon DB.
+
+135
+00:10:09,519 --> 00:10:11,440
+Running the query that got from Charb.
+
+136
+00:10:11,440 --> 00:10:12,720
+Copy the JSON.
+
+137
+00:10:12,720 --> 00:10:14,880
+Paste it over here and just click on import.
+
+138
+00:10:14,880 --> 00:10:22,240
+Basically, that's going to show me the entire database already how it looks connecting between the tables and everything.
+
+139
+00:10:22,240 --> 00:10:33,120
+Once I click I can see all the relationship how they got connected between tables like types move Pokemon moves whatever etc and start to iterate in it like let's say I want to add a field or anything I can
+
+140
+00:10:33,120 --> 00:10:36,880
+see that differences between the database and my development.
+
+141
+00:10:36,880 --> 00:10:37,360
+Okay, cool.
+
+142
+00:10:37,360 --> 00:10:38,399
+Well, thanks for sharing that.
+
+143
+00:10:38,399 --> 00:10:40,000
+Super cool looking tool.
+
+144
+00:10:40,000 --> 00:10:40,720
+Very visual.
+
+145
+00:10:40,720 --> 00:10:41,360
+I love that.
+
+146
+00:10:41,360 --> 00:10:43,440
+On a similar note, I'm curious how you built it.
+
+147
+00:10:43,440 --> 00:10:44,560
+What's your tech stack?
+
+148
+00:10:44,560 --> 00:10:48,640
+What are all the open source languages that you used to build this and maintain it?
+
+149
+00:10:48,640 --> 00:10:49,040
+>> Yeah.
+
+150
+00:10:49,040 --> 00:10:50,480
+So, everything is React.
+
+151
+00:10:50,480 --> 00:10:56,317
+We're using React Bite and uh NodeJS, Tailwind, and React Flow for the canvas and all the entities.
+
+152
+00:10:56,317 --> 00:11:00,720
+[music] Um that's for the development side from what we used to build it with.
+
+153
+00:11:00,720 --> 00:11:02,640
+So, we're using all the time code.
+
+154
+00:11:02,640 --> 00:11:05,040
+We're using the max uh 200 per months.
+
+155
+00:11:05,040 --> 00:11:07,200
+We started to use a tricom account.
+
+156
+00:11:07,200 --> 00:11:11,760
+It's providing a compliance for big clients that's starting to come up and ask for sock 2.
+
+157
+00:11:11,760 --> 00:11:13,040
+It cost 500 a month.
+
+158
+00:11:13,040 --> 00:11:24,720
+Chap and uh the API for our AI assistant is cost 20 bucks for the subscription and 50 bucks around that and the API tokens recent for sending the transactional emails uh that
+
+159
+00:11:24,720 --> 00:11:26,320
+we send for people that sign up.
+
+160
+00:11:26,320 --> 00:11:30,959
+AWS is where we have the cloud hosting so cost 600 a month.
+
+161
+00:11:30,959 --> 00:11:32,320
+Chart mobile is free.
+
+162
+00:11:32,320 --> 00:11:39,600
+Pomon analytics is for an analytics and it's called 25 per months and framer is 30 bucks per month for the marketing website.
+
+163
+00:11:39,600 --> 00:11:48,240
+We're using stripe so transactional fee based on the subscriptions and Chris for uh interaction with the users and having the chat to communicate quickly with
+
+164
+00:11:48,240 --> 00:11:48,640
+them.
+
+165
+00:11:48,640 --> 00:11:57,040
+We're using hhref uh for SEO and getting keywords and how to increase our marketing and uh uh organic marketing.
+
+166
+00:11:57,040 --> 00:12:00,800
+>> Thanks for sharing that last question that we ask every founder who comes on.
+
+167
+00:12:00,800 --> 00:12:10,560
+Jonathan, if you could stand on young Jonathan's shoulders before you got started and you could give him some advice or advice for anyone watching this who's a developer who wants to have
+
+168
+00:12:10,560 --> 00:12:14,320
+their own projects and earn money from their own projects, what would it be?
+
+169
+00:12:14,320 --> 00:12:14,560
+>> Yeah.
+
+170
+00:12:14,560 --> 00:12:25,279
+So, I will tell myself like to pick one core value and defend it and like aggressively everything start working when we double down once we focus entirely on making database
+
+171
+00:12:25,279 --> 00:12:28,399
+visualization obvious and ignore everything else.
+
+172
+00:12:28,399 --> 00:12:35,200
+Like that's what I would say like double down on what you really feel it's working and you see the traction coming up.
+
+173
+00:12:35,200 --> 00:12:46,240
+>> I think there's a lot to learn from that is a lot of developers who want to build they want to build everything and it has the SAS and it has all these elements but you can start with one wedge and do one thing really well like database visualization which is not something
+
+174
+00:12:46,240 --> 00:12:48,240
+that I even knew was a product before.
+
+175
+00:12:48,240 --> 00:12:54,720
+This is super cool and shows you if you can narrow down like you said do one thing and do it really really well you can have a business.
+
+176
+00:12:54,720 --> 00:12:58,160
+So, thanks for coming on and sharing and looking forward to seeing the growth.
+
+177
+00:12:58,160 --> 00:12:58,800
+>> Thank you so much.
+
+178
+00:12:58,800 --> 00:12:59,839
+Appreciate it.
+
+179
+00:12:59,839 --> 00:13:02,240
+>> All right, producer Gus, what did you think?
+
+180
+00:13:02,240 --> 00:13:11,519
+>> Yeah, I think my first takeaway is I think it's really cool how you built this tool [music] that's like just for like developers.
+
+181
+00:13:11,519 --> 00:13:12,959
+That's kind of my takeaway, right?
+
+182
+00:13:12,959 --> 00:13:15,600
+I'm not a developer, so I'm not like really in that world.
+
+183
+00:13:15,600 --> 00:13:24,349
+But my takeaway is like he knew that so [music] well that he could like almost predict like what issues they would face or like what they would complain about.
+
+184
+00:13:24,349 --> 00:13:28,880
+[music] And so that's my takeaway is like building stuff in spaces that you know about.
+
+185
+00:13:28,880 --> 00:13:29,120
+>> Yeah.
+
+186
+00:13:29,120 --> 00:13:40,800
+I mean he not to get too technical, he basically what he knew was this like really kind of niche SQL query where you could get the whole schema of
+
+187
+00:13:40,800 --> 00:13:43,760
+the database and then they turned it into something visual.
+
+188
+00:13:43,760 --> 00:13:46,240
+It's too niche to even talk about right now.
+
+189
+00:13:46,240 --> 00:13:49,360
+It's it's just so but it but as you're saying it's crazy.
+
+190
+00:13:49,360 --> 00:13:55,360
+You can take one tiny idea which is so niche and that can be a business that makes $10,000 a month,
+
+191
+00:13:55,360 --> 00:13:55,600
+right?
+
+192
+00:13:55,600 --> 00:13:57,279
+And this his business is going to grow.
+
+193
+00:13:57,279 --> 00:13:59,199
+he's going to launch other products.
+
+194
+00:13:59,199 --> 00:14:10,480
+That's the power of, you know, you see this the Claude bot, you know, that's been taken off right now that was downloaded and that was downloaded millions and millions of times in a matter of weeks.
+
+195
+00:14:10,480 --> 00:14:14,720
+That is how huge developer tools are because they're free to download.
+
+196
+00:14:14,720 --> 00:14:16,959
+They're free to try and that's what he basically did.
+
+197
+00:14:16,959 --> 00:14:20,079
+And then he built a little monetization back on the back end of it.
+
+198
+00:14:20,079 --> 00:14:21,760
+This costs no money to do.
+
+199
+00:14:21,760 --> 00:14:24,000
+There's a lot of developers watching this.
+
+200
+00:14:24,000 --> 00:14:28,639
+It's just it blows my mind how much what you can do with one tiny idea.
+
+201
+00:14:28,639 --> 00:14:29,040
+>> Totally.
+
+202
+00:14:29,040 --> 00:14:32,880
+And I think sometimes the developer stuff, like I said, because I'm not one, I'm kind of like,
+
+203
+00:14:32,880 --> 00:14:35,839
+why would people pay for something they can download for free?
+
+204
+00:14:35,839 --> 00:14:41,600
+But he did a good job explaining like the developers in this case were like the entry point to [music] people that would pay for it.
+
+205
+00:14:41,600 --> 00:14:51,600
+And so it I think yeah underestimating the size of like how many developers out there are like I don't know really interested in finding new and interesting tools that solve one problem kind of thing.
+
+206
+00:14:51,600 --> 00:14:59,760
+I think it's interesting what he said, which is that the idea he had before the developer tool was the SQL AI rapper thing that didn't work out.
+
+207
+00:14:59,760 --> 00:15:04,560
+It's funny because I see that a lot of developers try to build that idea, that doesn't mean it was necessarily bad.
+
+208
+00:15:04,560 --> 00:15:08,160
+It was necessary to build that thing that didn't work and then they pivoted.
+
+209
+00:15:08,160 --> 00:15:12,560
+So, my shameless plug is for you to join Starter Story Build and build something.
+
+210
+00:15:12,560 --> 00:15:17,279
+Even if you know it's not going to be successful, like the AI database rapper that clearly didn't work for him,
+
+211
+00:15:17,279 --> 00:15:18,480
+still get it out there.
+
+212
+00:15:18,480 --> 00:15:19,600
+Join Starter Story Build.
+
+213
+00:15:19,600 --> 00:15:20,720
+Click that link below.
+
+214
+00:15:20,720 --> 00:15:23,680
+build something and launch it in a couple days and get that validation now.
+
+215
+00:15:23,680 --> 00:15:24,720
+What are you waiting for?
+
+216
+00:15:24,720 --> 00:15:25,120
+All right, guys.
+
+217
+00:15:25,120 --> 00:15:26,160
+I'll see you in the next one.
+
+218
+00:15:26,160 --> 00:15:29,160
+Peace.

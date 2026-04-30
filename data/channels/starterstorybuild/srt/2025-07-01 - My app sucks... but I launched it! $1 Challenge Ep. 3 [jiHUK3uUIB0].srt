@@ -1,0 +1,659 @@
+1
+00:00:00,640 --> 00:00:04,400
+Okay, to be honest, I don't really even want to post this.
+
+2
+00:00:04,400 --> 00:00:12,719
+Since the last video we published, uh, which is probably going on two weeks now, I have been hard at work trying to figure out how to make this app come to life.
+
+3
+00:00:12,719 --> 00:00:14,240
+And I've been reading your comments.
+
+4
+00:00:14,240 --> 00:00:17,680
+I've been posting a little bit on Twitter about my building process.
+
+5
+00:00:17,680 --> 00:00:24,960
+And and the reason I don't want to post this video is because it's the first version is actually ready.
+
+6
+00:00:24,960 --> 00:00:26,080
+It's on the app store.
+
+7
+00:00:26,080 --> 00:00:35,120
+or it's on a test flight thing which I it's been a hard time I've been trying to figure out how to explain that and I can actually give it to people to give it to people
+
+8
+00:00:35,120 --> 00:00:37,040
+watching uh for users.
+
+9
+00:00:37,040 --> 00:00:42,960
+So in this video I'm just going to do a quick recap of what I've been doing for the past couple weeks,
+
+10
+00:00:42,960 --> 00:00:46,960
+how I've changed up my building process, what I've learned about building mobile apps,
+
+11
+00:00:46,960 --> 00:00:50,960
+and by the end of the video you're going to find out how you can become one of my test users.
+
+12
+00:00:50,960 --> 00:00:52,399
+So thanks for being here.
+
+13
+00:00:52,399 --> 00:00:53,440
+Let's get into it.
+
+14
+00:00:53,440 --> 00:00:58,320
+And so what I decided to do is I switched over my development to claude.
+
+15
+00:00:58,320 --> 00:01:08,000
+I think somebody in the YouTube comments had said something like I don't know claude was the better coding model better than chat GBT and that incursor
+
+16
+00:01:08,000 --> 00:01:19,439
+itself before I was using like instead of selecting a specific model to use I was just doing auto and someone had mentioned in the YouTube comments that maybe that was a bad approach.
+
+17
+00:01:19,439 --> 00:01:21,280
+So I don't know I don't know how right that is.
+
+18
+00:01:21,280 --> 00:01:32,560
+I'm sure there's people who have built amazing apps on auto mode, but I switched over to Cloud Force on it and then I started using Cloud AI to help me prompt and put it into cursor to help me
+
+19
+00:01:32,560 --> 00:01:33,360
+build.
+
+20
+00:01:33,360 --> 00:01:40,560
+And so what I wanted to show you here on this screen is how many super super super micro steps I actually took.
+
+21
+00:01:40,560 --> 00:01:44,320
+And so I won't obviously show you this these entire threads.
+
+22
+00:01:44,320 --> 00:01:46,880
+This isn't a video where you're going to watch me code something.
+
+23
+00:01:46,880 --> 00:01:58,320
+or in each of these conversations are so many threads where I'm asking Claude to break down how to build a specific feature or explain something to me in really tiny micro
+
+24
+00:01:58,320 --> 00:02:04,479
+steps so that I could take that prompt and put it into cursor and help me build a specific feature.
+
+25
+00:02:04,479 --> 00:02:14,720
+And the reason that I have five of these is because some of these threads would get so long that the thread would start to get really laggy and ultimately not start to work.
+
+26
+00:02:14,720 --> 00:02:19,440
+I think in this one it's I hit a limit that said, "Yep, your conversation has reached the length limit.
+
+27
+00:02:19,440 --> 00:02:21,440
+Try shortening it or starting a new one."
+
+28
+00:02:21,440 --> 00:02:32,080
+And so, yeah, just to kind of take you through what I was doing, I would literally give cursor the log of my terminal of what it was kind of spitting out,
+
+29
+00:02:32,080 --> 00:02:33,120
+put it in here.
+
+30
+00:02:33,120 --> 00:02:39,920
+I would copy and paste everything in like my app.tsx file, which is where all the code lives.
+
+31
+00:02:39,920 --> 00:02:41,760
+And I would say, "Okay, this is the code.
+
+32
+00:02:41,760 --> 00:02:43,360
+Can you explain what might be going on?
+
+33
+00:02:43,360 --> 00:02:50,400
+and explain what might be happening and it would break it down for me and it would give me the exact prompt to put into cursor.
+
+34
+00:02:50,400 --> 00:02:52,319
+It would show me the issue.
+
+35
+00:02:52,319 --> 00:02:58,400
+Sometimes I really would kind of my head would start to hurt as I was like kind of trying to follow along.
+
+36
+00:02:58,400 --> 00:03:04,080
+But yeah, that's that's the biggest thing I learned especially as a beginner and especially for you beginners that are watching.
+
+37
+00:03:04,080 --> 00:03:06,480
+It took me probably 10 times longer.
+
+38
+00:03:06,480 --> 00:03:08,560
+I'm sure there's an easier way to do it.
+
+39
+00:03:08,560 --> 00:03:12,159
+you know, since I started building this, like this thing called Claude Code came out,
+
+40
+00:03:12,159 --> 00:03:15,680
+which apparently writes code for you without you even prompting it.
+
+41
+00:03:15,680 --> 00:03:21,200
+And so, it does feel like a little bit I'm in the stone ages of using Claude and Cursor.
+
+42
+00:03:21,200 --> 00:03:29,920
+But regardless, if you're starting at a place like me, I think the best thing you can do is to break it down into micro steps and keep telling Claude,
+
+43
+00:03:29,920 --> 00:03:34,959
+"Hey, break this down into even more micro steps because I don't understand what's going on."
+
+44
+00:03:34,959 --> 00:03:39,200
+I did feel like a little silly like having to break down really basic things.
+
+45
+00:03:39,200 --> 00:03:42,959
+But the more that I did that, the more confident I got in what I was doing.
+
+46
+00:03:42,959 --> 00:03:49,200
+And honestly, the less things broke or if it did break, I was just going one step back to fix and not,
+
+47
+00:03:49,200 --> 00:03:55,200
+you know, five or 10 or or really sometimes before I I didn't even know what broke.
+
+48
+00:03:55,200 --> 00:03:57,760
+So that that's like my biggest piece of advice there.
+
+49
+00:03:57,760 --> 00:04:02,239
+Okay, we're going to get to my app in just a second, but just to show you like where I was,
+
+50
+00:04:02,239 --> 00:04:05,120
+just so you can understand a little bit of, you know, how I got here.
+
+51
+00:04:05,120 --> 00:04:10,000
+So, when I posted this a while back, I think my the original idea I had for my app was the more I'm like,
+
+52
+00:04:10,000 --> 00:04:11,599
+"Oh my god, this is so dumb."
+
+53
+00:04:11,599 --> 00:04:16,959
+But anyway, it's a step counting app, and I had this original idea of counting my daily steps,
+
+54
+00:04:16,959 --> 00:04:19,519
+my weekly steps, and my monthly steps.
+
+55
+00:04:19,519 --> 00:04:21,919
+And that sounded all fine and good.
+
+56
+00:04:21,919 --> 00:04:31,680
+And the secondary feature was to have this sort of like habit tracker grid where I would over the course of a month you could see whether you walked 10k more steps or not.
+
+57
+00:04:31,680 --> 00:04:36,560
+And the idea was to like visualize over the course of a month how many steps you walked.
+
+58
+00:04:36,560 --> 00:04:41,280
+And again, this all sounds like really awesome, but the biggest issue that I ran into,
+
+59
+00:04:41,280 --> 00:04:45,520
+and I'm sure there's a workaround, and if you do know a workaround, leave it in the comments,
+
+60
+00:04:45,520 --> 00:04:50,720
+was that syncing to, in my case, Apple Health data was just like really challenging.
+
+61
+00:04:50,720 --> 00:04:58,560
+And so, it could only sync really for the last 7 days accurately, and then anything before that or anything beyond the 7-day scope,
+
+62
+00:04:58,560 --> 00:05:00,639
+it would really start to get wonky.
+
+63
+00:05:00,639 --> 00:05:05,199
+And so, what I eventually landed on was like a weekly habit tracker.
+
+64
+00:05:05,199 --> 00:05:08,720
+I don't Let me see if I could quickly find what this looked like.
+
+65
+00:05:08,720 --> 00:05:18,320
+I ended up on a weekly habit tracker that looked something like this where I had the big steps up top and then like a weekly view of whether or
+
+66
+00:05:18,320 --> 00:05:20,479
+not I hit 10K or more steps.
+
+67
+00:05:20,479 --> 00:05:24,160
+But the more I thought about that, the more I was like, I don't know.
+
+68
+00:05:24,160 --> 00:05:32,400
+Basically, this acted more just like a checkbox than like a real app or a real habit tracker that sort of looks backwards.
+
+69
+00:05:32,400 --> 00:05:36,800
+And so I rearranged my app to become something a little bit different.
+
+70
+00:05:36,800 --> 00:05:38,639
+And let me just walk you through this quick.
+
+71
+00:05:38,639 --> 00:05:42,720
+This is a little boring, but you know, I had that idea and then I was like, okay, I want to change this.
+
+72
+00:05:42,720 --> 00:05:45,840
+So I took a screenshot and said, I want to delete this.
+
+73
+00:05:45,840 --> 00:05:52,479
+And then it gave me the step to delete that, which took me to, you know, this step, you know,
+
+74
+00:05:52,479 --> 00:05:53,280
+just did one thing.
+
+75
+00:05:53,280 --> 00:05:54,320
+It deleted it.
+
+76
+00:05:54,320 --> 00:05:57,520
+And then I wanted it to add an additional thing and it added that thing.
+
+77
+00:05:57,520 --> 00:06:03,680
+And so you can see that I'm slowly like building out the features of this app, you know,
+
+78
+00:06:03,680 --> 00:06:06,960
+and so again, back to the idea of building in micro steps.
+
+79
+00:06:06,960 --> 00:06:08,240
+I think that's really important.
+
+80
+00:06:08,240 --> 00:06:15,600
+And then, you know, the last thing I did was I I really chatted with Claude to like help it help me ideulate on what I was doing.
+
+81
+00:06:15,600 --> 00:06:17,600
+I would explain the idea I had.
+
+82
+00:06:17,600 --> 00:06:24,319
+I would kind of write it in plain language and it did a really good job of like understanding what I was trying to do and building out the features for me.
+
+83
+00:06:24,319 --> 00:06:25,759
+Okay, almost to the big reveal.
+
+84
+00:06:25,759 --> 00:06:27,840
+So, that feature was gone.
+
+85
+00:06:27,840 --> 00:06:34,960
+I took this other I posted this other photo just a couple days ago saying like, "You spent way too long vibe coding the most basic app in the world."
+
+86
+00:06:34,960 --> 00:06:42,080
+And that's kind of where I'm at today is I kind of feel like this is so basic that I'm even scared to show it or display it.
+
+87
+00:06:42,080 --> 00:06:48,080
+But I learned from a lot of people who have come on to Starter Story and all the entrepreneurs and people that I follow online.
+
+88
+00:06:48,080 --> 00:06:52,240
+I think there's a saying like if you're not embarrassed by the first version, you've launched too late.
+
+89
+00:06:52,240 --> 00:06:54,560
+And yeah, so I kind of gave this update.
+
+90
+00:06:54,560 --> 00:06:58,000
+I did another video update with a lot of good news and bad news.
+
+91
+00:06:58,000 --> 00:07:00,160
+Essentially saying that this is the slow version.
+
+92
+00:07:00,160 --> 00:07:08,080
+I'm building the slow way and and today I'm finally ready to reveal that my app is actually in the app store.
+
+93
+00:07:08,080 --> 00:07:08,800
+It works.
+
+94
+00:07:08,800 --> 00:07:10,319
+I've installed it on my phone.
+
+95
+00:07:10,319 --> 00:07:18,319
+I'll show it to you here in a second and I'll explain a little bit of a process that again I just had Claude explain to me how to do it.
+
+96
+00:07:18,319 --> 00:07:19,919
+I took screenshots of the image.
+
+97
+00:07:19,919 --> 00:07:22,800
+It told me exactly what to click and gave me descriptions.
+
+98
+00:07:22,800 --> 00:07:30,880
+I've basically used AI to do this whole thing, which is so crazy because I just would have never thought that I would get to a place where it could do it for me.
+
+99
+00:07:30,880 --> 00:07:34,479
+Let me show you the app and then and then I'll tell you a little bit of how you can how you can download it.
+
+100
+00:07:34,479 --> 00:07:40,639
+So, let me open up the terminal here and I'll let me open up first the iOS simulator.
+
+101
+00:07:40,639 --> 00:07:41,599
+So, this is cool.
+
+102
+00:07:41,599 --> 00:07:47,759
+You know, I never in a million years would I have been able to just start this and I'll probably fix these errors here and it feels a little bit secondhand.
+
+103
+00:07:47,759 --> 00:07:49,520
+So, let me open up the simulator.
+
+104
+00:07:49,520 --> 00:07:51,680
+It should open it up on this screen.
+
+105
+00:07:51,680 --> 00:07:52,560
+Here we go.
+
+106
+00:07:52,560 --> 00:07:54,160
+And here's the app in a second.
+
+107
+00:07:54,160 --> 00:07:55,440
+And then let me just explain the features.
+
+108
+00:07:55,440 --> 00:07:58,479
+Again, I feel so embarrassed even to be showing you this, but that's okay.
+
+109
+00:07:58,479 --> 00:08:01,280
+It's okay that it sucks and it's okay even if you don't want to use it.
+
+110
+00:08:01,280 --> 00:08:04,400
+But the point is that it works for me and I think it's pretty cool.
+
+111
+00:08:04,400 --> 00:08:04,639
+Okay.
+
+112
+00:08:04,639 --> 00:08:06,240
+And it looks so basic, too.
+
+113
+00:08:06,240 --> 00:08:06,479
+Okay.
+
+114
+00:08:06,479 --> 00:08:09,039
+So, as you saw there, there's a couple things happening on the screen.
+
+115
+00:08:09,039 --> 00:08:10,800
+I really simplified this.
+
+116
+00:08:10,800 --> 00:08:13,919
+I feel so embarrassed even like talking about it and having to like explain it.
+
+117
+00:08:13,919 --> 00:08:15,520
+Right now, it syncs with your iPhone.
+
+118
+00:08:15,520 --> 00:08:17,440
+You just have to allow the steps to work.
+
+119
+00:08:17,440 --> 00:08:21,039
+And up at the top, it accurately displays how many steps you've taken.
+
+120
+00:08:21,039 --> 00:08:26,800
+I've tested it a couple times and instead of sort of a habit tracker, I got this idea.
+
+121
+00:08:26,800 --> 00:08:31,680
+A lot of people on X will do this like what their progress is towards like an ultimate goal.
+
+122
+00:08:31,680 --> 00:08:34,320
+In his case, he's building towards a million ARR.
+
+123
+00:08:34,320 --> 00:08:38,880
+A lot of people do this for, you know, for a lot of things that they're kind of gunning for.
+
+124
+00:08:38,880 --> 00:08:47,360
+And I thought, okay, that could be cool on a daily basis to see what is my progress as I track towards 10K or more steps.
+
+125
+00:08:47,360 --> 00:08:51,120
+And so when you open the app, let me close it and I'll open it again.
+
+126
+00:08:51,120 --> 00:08:56,480
+When you open the app, what it'll do, it'll open up your step count at the top.
+
+127
+00:08:56,480 --> 00:09:03,839
+And then this these little squares will sort of fill in depending on how many steps you've taken towards 10K.
+
+128
+00:09:03,839 --> 00:09:06,000
+And so in this case, this is the example.
+
+129
+00:09:06,000 --> 00:09:07,760
+This isn't real real steps.
+
+130
+00:09:07,760 --> 00:09:08,720
+It's just a placeholder.
+
+131
+00:09:08,720 --> 00:09:12,720
+I've only taken or in this example, I've taken 5,432 steps.
+
+132
+00:09:12,720 --> 00:09:17,760
+And these green boxes fill into the five because that's sort of the the progress that I made.
+
+133
+00:09:17,760 --> 00:09:22,959
+And then at the bottom, it'll tell you how many steps you have left to hit 10K.
+
+134
+00:09:22,959 --> 00:09:26,800
+And a just a slight encouraging message to say like almost there.
+
+135
+00:09:26,800 --> 00:09:27,600
+And that's the app.
+
+136
+00:09:27,600 --> 00:09:31,920
+So, let me show you what it looks like on my phone on my real phone here.
+
+137
+00:09:31,920 --> 00:09:33,440
+Let me close this one.
+
+138
+00:09:33,440 --> 00:09:35,600
+I can mirror my phone.
+
+139
+00:09:35,600 --> 00:09:36,959
+Forgive all my apps.
+
+140
+00:09:36,959 --> 00:09:38,320
+So, it's in test flight.
+
+141
+00:09:38,320 --> 00:09:39,600
+It's actually working.
+
+142
+00:09:39,600 --> 00:09:42,000
+When I click in, I have not taken a lot of steps today.
+
+143
+00:09:42,000 --> 00:09:43,440
+Okay, I'm a little embarrassed.
+
+144
+00:09:43,440 --> 00:09:49,279
+I've only taken 840, but you can see that it's working accurately because I haven't hit 1,000.
+
+145
+00:09:49,279 --> 00:09:50,720
+This is not green.
+
+146
+00:09:50,720 --> 00:09:53,600
+And so, it still tells me how many steps I have to go.
+
+147
+00:09:53,600 --> 00:09:55,360
+And almost there.
+
+148
+00:09:55,360 --> 00:09:56,160
+And that's it.
+
+149
+00:09:56,160 --> 00:09:56,720
+All right.
+
+150
+00:09:56,720 --> 00:10:02,240
+If you made it to the end of this video, I want to invite you to be a test user of my app.
+
+151
+00:10:02,240 --> 00:10:05,680
+So, head to the form in the description.
+
+152
+00:10:05,680 --> 00:10:07,920
+Uh, all I need is your name and your email.
+
+153
+00:10:07,920 --> 00:10:12,320
+If you're one of the first hundred people to sign up, I'll send you an email and have you download and test my app.
+
+154
+00:10:12,320 --> 00:10:16,079
+I'm really nervous, honestly, about putting this out there into the world.
+
+155
+00:10:16,079 --> 00:10:17,279
+I don't think it's very good.
+
+156
+00:10:17,279 --> 00:10:21,839
+Uh even though it's something that I think I would like and I think I would enjoy and use every day.
+
+157
+00:10:21,839 --> 00:10:29,680
+Uh it feels really nerve-wracking to get feedback from real people like you, but that's the only way I'm ever going to know if it's worth anything.
+
+158
+00:10:29,680 --> 00:10:35,839
+So once again, head to the form in the description to sign up to be a beta user for my app.
+
+159
+00:10:35,839 --> 00:10:39,680
+And in the second link in the description, you're going to find a link to starter story build.
+
+160
+00:10:39,680 --> 00:10:47,200
+That is our platform for helping beginners like me, maybe beginners like you, learn how to use AI to actually build something that works.
+
+161
+00:10:47,200 --> 00:10:54,320
+You can build a web app, you can build a mobile app, and I've used some of the things in there to honestly help me uh build this app.
+
+162
+00:10:54,320 --> 00:10:55,680
+So, thanks for being here.
+
+163
+00:10:55,680 --> 00:10:58,480
+Thanks for the support, and now the real work begins.
+
+164
+00:10:58,480 --> 00:10:59,920
+All right, talk to you next time.
+
+165
+00:10:59,920 --> 00:11:02,920
+Peace.

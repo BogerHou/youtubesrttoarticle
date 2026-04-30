@@ -1,0 +1,3552 @@
+1
+00:00:00,080 --> 00:00:04,160
+You wrote somewhere that creating powerful 
+AI might be the last invention humanity ever  
+
+2
+00:00:04,160 --> 00:00:06,320
+needs to make. How much time do we have, Ben?
+ 
+
+3
+00:00:06,320 --> 00:00:12,400
+I think 50th percentile chance of hitting some 
+kind of superintelligence is now like 2028.
+ 
+
+4
+00:00:12,400 --> 00:00:15,840
+What is it that you saw at OpenAI? What'd you 
+experience there that made you feel like, okay,  
+
+5
+00:00:15,840 --> 00:00:18,720
+we got to go do our own thing?
+We felt like safety wasn't the top  
+
+6
+00:00:18,720 --> 00:00:21,600
+priority there. The case for safety 
+has gotten a lot more concrete,  
+
+7
+00:00:21,600 --> 00:00:26,480
+so superintelligence is a lot about how do we 
+keep God in a box and not let the God out?
+ 
+
+8
+00:00:26,480 --> 00:00:32,000
+What are the odds that we align AI correctly?
+Once we get to superintelligence, it will be too  
+
+9
+00:00:32,000 --> 00:00:38,160
+late to align the models. My best granularity 
+forecast for could we have an X-risk or extremely  
+
+10
+00:00:38,160 --> 00:00:42,240
+bad outcome is somewhere between 0 and 10%.
+Something that's in the news right now is this  
+
+11
+00:00:42,240 --> 00:00:45,520
+whole Zuck coming after all 
+the top AI researchers,
+ 
+
+12
+00:00:45,520 --> 00:00:49,600
+We've been much less affected because people 
+here, they get these offers and then they say,  
+
+13
+00:00:49,600 --> 00:00:54,240
+well, of course I'm not going to leave because my 
+best case scenario at Meta is that we make money  
+
+14
+00:00:54,240 --> 00:00:59,200
+and my best case scenario at Anthropic 
+is we affect the future of humanity.
+ 
+
+15
+00:00:59,200 --> 00:01:04,400
+Dario, your CEO recently talked about how 
+unemployment might go up to something like 20%.
+ 
+
+16
+00:01:04,400 --> 00:01:08,720
+If you just think about 20 years in the 
+future where we're way past the singularity,  
+
+17
+00:01:08,720 --> 00:01:12,960
+it's hard for me to imagine that even capitalism 
+will look at all like it looks today.
+ 
+
+18
+00:01:12,960 --> 00:01:15,840
+Do you have any advice for folks that 
+want to try to get ahead of this?
+ 
+
+19
+00:01:15,840 --> 00:01:20,800
+I'm not immune to job replacement either. 
+At some point it's coming for all of us.
+ 
+
+20
+00:01:20,800 --> 00:01:26,880
+Today, my guest is Benjamin Mann. Holy moly. 
+What a conversation. Ben is the co-founder of  
+
+21
+00:01:26,880 --> 00:01:31,520
+Anthropic. He serves as tech lead for product 
+engineering. He focuses most of his time  
+
+22
+00:01:31,520 --> 00:01:36,560
+and energy on aligning AI to be helpful, 
+harmless, and honest. Prior to Anthropic,  
+
+23
+00:01:36,560 --> 00:01:42,240
+he was one of the architects of GPT-3 at OpenAI. 
+In our conversation, we cover a lot of ground,  
+
+24
+00:01:42,240 --> 00:01:47,520
+including his thoughts on the recruiting battle 
+for top AI researchers, why he left OpenAI to  
+
+25
+00:01:47,520 --> 00:01:53,520
+start Anthropic, how soon he expects we'll see 
+AGI. Also, his economic touring test for knowing  
+
+26
+00:01:53,520 --> 00:01:58,880
+when we've hit AGI, why scaling laws have not 
+slowed down and are in fact accelerating and  
+
+27
+00:01:58,880 --> 00:02:04,640
+what the current biggest bottlenecks are. Why he's 
+so deeply concerned with AI safety and how he and  
+
+28
+00:02:04,640 --> 00:02:09,040
+Anthropic operationalize safety and alignment 
+into the models that they build and into their  
+
+29
+00:02:09,040 --> 00:02:15,120
+ways of working. Also, how the existential risk 
+from AI has impacted his own perspectives on the  
+
+30
+00:02:15,120 --> 00:02:20,320
+world and his own life and what he's encouraging 
+his kids to learn to succeed in an AI future.
+ 
+
+31
+00:02:20,320 --> 00:02:25,520
+A huge thank you to Steve Mnich, Danielle 
+Ghiglieri, Raph Lee, and my newsletter community  
+
+32
+00:02:25,520 --> 00:02:29,760
+for suggesting topics for this conversation. If 
+you enjoy this podcast, don't forget to subscribe  
+
+33
+00:02:29,760 --> 00:02:34,240
+and follow it in your favorite podcasting app or 
+YouTube. Also, if you become an annual subscriber  
+
+34
+00:02:34,240 --> 00:02:39,280
+of my newsletter, you get a year free of a 
+bunch of amazing products including Bolt,  
+
+35
+00:02:39,280 --> 00:02:44,560
+Linear, Superhuman, Notion, Granola, and more. 
+Check it out at Lennysnewsletter.com and click  
+
+36
+00:02:44,560 --> 00:02:50,960
+bundle with that I bring you Benjamin Mann.
+This episode is brought to you by Sauce.  
+
+37
+00:02:50,960 --> 00:02:55,920
+The way teams turn feedback into product 
+impact is stuck in the past. Vague reports,  
+
+38
+00:02:55,920 --> 00:03:01,440
+static taxonomies, unactionable insights that 
+don't move business metrics. The results churn,  
+
+39
+00:03:01,440 --> 00:03:07,360
+lost deals, misgrowth. Sauce is the AI product 
+co-pilot that helps CPOs and product teams uncover  
+
+40
+00:03:07,360 --> 00:03:12,240
+business impact and act faster. It listens to 
+your sales calls, support tickets, turn reasons,  
+
+41
+00:03:12,240 --> 00:03:16,320
+and lost deals, surfacing the biggest product 
+issues and opportunities in real time.
+ 
+
+42
+00:03:16,320 --> 00:03:21,440
+It then routes them to the right teams to turn 
+signals into PRDs, prototypes, and even code  
+
+43
+00:03:21,440 --> 00:03:26,480
+that drives revenue retention and adoption. 
+That's why Whatnot, Linktree, Incident.io,  
+
+44
+00:03:26,480 --> 00:03:33,200
+and Zip use Sauce. One enterprise uncovered a 
+product gap that unlocked $16 million ARR, another  
+
+45
+00:03:33,200 --> 00:03:40,400
+caught a spiking issue and prevented millions in 
+churn. You can too at sauce.app/lenny. Sauce built  
+
+46
+00:03:40,400 --> 00:03:45,680
+for AI product teams. Don't get left behind.
+This episode is brought to you by LucidLink,  
+
+47
+00:03:45,680 --> 00:03:50,880
+the storage collaboration platform. You've built a 
+great product, but how you show it through video,  
+
+48
+00:03:50,880 --> 00:03:55,840
+design, and storytelling is what brings it to 
+life. If your team works with large media files,  
+
+49
+00:03:55,840 --> 00:03:59,440
+videos, design assets, layer project 
+files, you know how painful it can be  
+
+50
+00:03:59,440 --> 00:04:04,320
+to stay organized across locations, files live 
+in different places. You're constantly asking,  
+
+51
+00:04:04,320 --> 00:04:09,040
+is this the latest version? Creative work slows 
+down while people wait for files to transfer.  
+
+52
+00:04:09,040 --> 00:04:14,880
+LucidLink fixes this. It gives your team a shared 
+space in the cloud that works like a local drive.  
+
+53
+00:04:14,880 --> 00:04:20,080
+Files are instantly accessible for anywhere, no 
+downloading, no syncing, and always up to date.  
+
+54
+00:04:20,080 --> 00:04:24,640
+That means producers, editors, designers, and 
+marketers can open massive files in their native  
+
+55
+00:04:24,640 --> 00:04:29,600
+apps, work directly from the cloud, and stay 
+aligned wherever they are. Teams at Adobe,  
+
+56
+00:04:29,600 --> 00:04:34,720
+Shopify, and top creative agencies use LucidLink 
+to keep their content engine running fast and  
+
+57
+00:04:34,720 --> 00:04:47,120
+smooth. Try it for free at lucidlink.com/lenny. 
+That's L-U-C-I-D-L-I-N-K dot com slash Lenny.
+ 
+
+58
+00:04:47,120 --> 00:04:51,040
+Ben, thank you so much for being 
+here. Welcome to the podcast.
+ 
+
+59
+00:04:51,040 --> 00:04:55,760
+Thanks for having me. Great to be here, Lenny.
+I have a billion and one questions for you. I'm  
+
+60
+00:04:55,760 --> 00:04:59,280
+really excited to be chatting. I want to 
+start with something that's very timely,  
+
+61
+00:04:59,280 --> 00:05:04,560
+something that's happening this week. Something 
+that's in the news right now is this whole Zuck  
+
+62
+00:05:04,560 --> 00:05:10,560
+coming after all the top AI researchers offering 
+them $100 million signing bonuses, $100 million  
+
+63
+00:05:10,560 --> 00:05:15,600
+comp. He's poaching from all the top AI labs. I 
+imagine this something you're dealing with. I'm  
+
+64
+00:05:15,600 --> 00:05:20,400
+just curious, what are you seeing inside Anthropic 
+and just what's your take on the strategy? Where  
+
+65
+00:05:20,400 --> 00:05:25,520
+do you think things go from here?
+Yeah, I mean I think this is a sign of  
+
+66
+00:05:25,520 --> 00:05:32,320
+the times. The technology that we're developing is 
+extremely valuable. Our company is growing super,  
+
+67
+00:05:32,320 --> 00:05:38,480
+super fast. Many of the other companies in the 
+space are growing really fast. And at Anthropic,  
+
+68
+00:05:38,480 --> 00:05:43,200
+I think we've been maybe much less affected 
+than many of the other companies in the space  
+
+69
+00:05:43,200 --> 00:05:48,960
+because people here are so mission oriented 
+and they stay because... They get these offers  
+
+70
+00:05:48,960 --> 00:05:52,800
+and then they say, "Well, of course I'm not 
+going to leave because my best case scenario  
+
+71
+00:05:52,800 --> 00:06:01,920
+at Meta is that we make money and my best case at 
+Anthropic is we affect the future of humanity and  
+
+72
+00:06:02,640 --> 00:06:11,040
+try to make AI flourish and human flourishing go 
+well." To me, it's not a hard choice. Other people  
+
+73
+00:06:11,040 --> 00:06:16,080
+have different life circumstances and it makes it 
+a much harder decision for them. For anybody who  
+
+74
+00:06:16,080 --> 00:06:20,960
+does get those mega offers and accepts them, 
+I can't say I hold it against them when they  
+
+75
+00:06:20,960 --> 00:06:26,320
+accept it, but it's definitely not something that 
+I would want to take myself if it came to me.
+ 
+
+76
+00:06:26,320 --> 00:06:30,000
+Yeah. We're going to talk about a lot of this 
+stuff that you've mentioned. In terms of the  
+
+77
+00:06:30,000 --> 00:06:34,080
+offers do you think, is this a real number that 
+you're seeing this $100 million signing bonus,  
+
+78
+00:06:34,080 --> 00:06:36,960
+is that a real thing? I don't know 
+if you've actually seen that.
+ 
+
+79
+00:06:36,960 --> 00:06:39,360
+I'm pretty sure it's real.
+Wow.
+ 
+
+80
+00:06:39,920 --> 00:06:46,640
+If you just think about the amount of impact that 
+individuals can have on a company's trajectory,  
+
+81
+00:06:46,640 --> 00:06:57,440
+in our case, we are selling hotcakes and if 
+we get a 1 or 10 or 5% efficiency bonus on  
+
+82
+00:06:57,440 --> 00:07:05,520
+our inference stack, that is worth an incredible 
+amount of money. And so to pay individuals like  
+
+83
+00:07:05,520 --> 00:07:10,720
+$100 million over four year package, that's 
+actually pretty cheap compared to the value  
+
+84
+00:07:10,720 --> 00:07:17,120
+created for the business. I think we're just in 
+an unprecedented era of scale and it's only going  
+
+85
+00:07:17,120 --> 00:07:23,920
+to get crazier actually. If you extrapolate the 
+exponential on how much companies are spending,  
+
+86
+00:07:23,920 --> 00:07:31,840
+it's like 2X a year roughly in terms of 
+CapEx, and today we're maybe in the globally  
+
+87
+00:07:31,840 --> 00:07:38,400
+$300 billion range, the entire industry spending 
+on this, and so numbers like 100 million are a  
+
+88
+00:07:38,400 --> 00:07:42,640
+drop in the bucket. But if you go a few years 
+out, a couple more doublings, we're talking  
+
+89
+00:07:42,640 --> 00:07:48,320
+about trillions of dollars and at that point it's 
+just really hard to think about these numbers.
+ 
+
+90
+00:07:48,320 --> 00:07:52,880
+Along these lines, something that a lot of 
+people feel with AI progress is that we're  
+
+91
+00:07:52,880 --> 00:07:58,080
+hitting plateaus in many ways that it feels like 
+newer models are just not as smart as previous  
+
+92
+00:07:58,080 --> 00:08:03,040
+leaps. But I know you don't believe this. I know 
+you don't believe that we've hit plateaus on  
+
+93
+00:08:03,040 --> 00:08:06,240
+scaling loss. Talk about just what you're seeing 
+there and what you think people are missing.
+ 
+
+94
+00:08:06,240 --> 00:08:13,120
+It's kind of funny because this narrative comes 
+out every six months or so and it's never been  
+
+95
+00:08:13,120 --> 00:08:18,640
+true, and so I kind of wish people would have 
+a little bit of a bullshit detector in their  
+
+96
+00:08:18,640 --> 00:08:22,240
+heads when they see this. I think progress has 
+actually been accelerating where if you look  
+
+97
+00:08:22,240 --> 00:08:28,240
+at the cadence of model releases, it used to be 
+once a year and now with the improvements in our  
+
+98
+00:08:28,240 --> 00:08:35,200
+post-training techniques, we're seeing releases 
+every month or three months, and so I would say  
+
+99
+00:08:35,200 --> 00:08:40,240
+progress is actually accelerating in many ways, 
+but there's this weird time compression effect.  
+
+100
+00:08:40,240 --> 00:08:46,480
+Dario compared it to being in a near light 
+speed journey where a day that passes for  
+
+101
+00:08:46,480 --> 00:08:52,000
+you is like five days back on earth and we're 
+accelerating. The time dilation is increasing.
+ 
+
+102
+00:08:52,000 --> 00:08:57,200
+And I think that's part of what's causing people 
+to say that progress is slowing down, but if you  
+
+103
+00:08:57,200 --> 00:09:02,320
+look at the scaling laws, they're continuing to 
+hold true. We did kind of need this transition  
+
+104
+00:09:02,320 --> 00:09:09,200
+from normal pre-training to reinforcement 
+learning scaling up to continue the scaling laws,  
+
+105
+00:09:09,200 --> 00:09:15,920
+but I think it's kind of like for semiconductors 
+where it's less about the density of transistors  
+
+106
+00:09:15,920 --> 00:09:21,200
+that you can fit on a chip and more about how many 
+flops can you fit in a data center or something.  
+
+107
+00:09:22,160 --> 00:09:28,640
+You have to change the definition around a little 
+bit to keep your eye on the prize. But yeah,  
+
+108
+00:09:29,360 --> 00:09:36,000
+this is one of the few phenomena in the world that 
+has held across so many orders of magnitude. It's  
+
+109
+00:09:36,000 --> 00:09:42,320
+actually pretty surprising that it is continuing 
+to hold. To me, if you look at fundamental laws  
+
+110
+00:09:42,320 --> 00:09:47,600
+of physics, many of them don't hold across 15 
+orders of magnitude, so it's pretty surprising.
+ 
+
+111
+00:09:47,600 --> 00:09:51,760
+It boggles the the mind. What you're saying 
+essentially is we're seeing newer models being  
+
+112
+00:09:51,760 --> 00:09:55,440
+released more often, and so we're comparing it 
+to the last version and we're just not seeing  
+
+113
+00:09:55,440 --> 00:09:59,520
+as much advance. But if you go back and 
+it was like a model released once a year,  
+
+114
+00:09:59,520 --> 00:10:04,000
+it was a huge leap, and so people are missing 
+that. We're just seeing many more iterations.
+ 
+
+115
+00:10:04,000 --> 00:10:08,000
+I guess, to be a little bit more generous to 
+the people saying things are slowing down. I  
+
+116
+00:10:08,000 --> 00:10:14,960
+think that for some tasks we are saturating the 
+amount of intelligence needed for that task,  
+
+117
+00:10:14,960 --> 00:10:22,080
+maybe to extract information from a simple 
+document that already has form fields on it or  
+
+118
+00:10:22,080 --> 00:10:28,240
+something like it's just so easy that okay, yeah, 
+we're already at 100% and there's this great chart  
+
+119
+00:10:28,240 --> 00:10:35,280
+on Our World in Data that shows that when you 
+release a new benchmark within six to 12 months,  
+
+120
+00:10:35,280 --> 00:10:41,680
+it immediately gets saturated. And so maybe 
+the real constraint is how can we come up  
+
+121
+00:10:41,680 --> 00:10:49,680
+with better benchmarks and better ambition of 
+using the tools that then reveals the bumps in  
+
+122
+00:10:49,680 --> 00:10:54,080
+intelligence that we're seeing now.
+That's a good segue to you have a very  
+
+123
+00:10:54,080 --> 00:10:57,520
+specific way of thinking about AGI 
+and defining what AGI means.
+ 
+
+124
+00:10:57,520 --> 00:11:03,600
+I think AGI is kind of a loaded term, and so I 
+tend not to use it very much anymore internally.  
+
+125
+00:11:03,600 --> 00:11:09,920
+Instead, I like the term transformative AI 
+because it's less about can it do as much as  
+
+126
+00:11:09,920 --> 00:11:16,160
+people do? Can it do literally everything and more 
+about objectively is it causing transformation in  
+
+127
+00:11:16,160 --> 00:11:22,000
+society and the economy? A very concrete way of 
+measuring that is the Economic Turing Test. I  
+
+128
+00:11:22,000 --> 00:11:28,720
+didn't come up with this, but I really like it. 
+It's this idea that if you contract an agent for  
+
+129
+00:11:28,720 --> 00:11:34,880
+a month or three months on a particular job, if 
+you decide to hire that agent and it turns out  
+
+130
+00:11:34,880 --> 00:11:40,480
+to be a machine rather than a person, then it's 
+passed the Economic Turing Test for that role.
+ 
+
+131
+00:11:40,480 --> 00:11:45,200
+And then you can sort of expand that out in the 
+same way that for measuring purchasing power  
+
+132
+00:11:45,200 --> 00:11:51,760
+parity or inflation, there's a basket of goods. 
+You can have a market basket of jobs, and if the  
+
+133
+00:11:51,760 --> 00:11:57,680
+agent can pass the Economic Turing Test for 50% of 
+money-weighted jobs, then we have transformative  
+
+134
+00:11:57,680 --> 00:12:03,680
+AI and the exact thresholds don't really matter 
+that much, but it's kind of illustrative to say  
+
+135
+00:12:03,680 --> 00:12:10,720
+if we pass that threshold, then we would expect 
+massive effects on world GDP increases and  
+
+136
+00:12:11,440 --> 00:12:18,560
+societal change and how many people are employed 
+and things like that because societal institutions  
+
+137
+00:12:18,560 --> 00:12:25,440
+and organizations are sticky, it's slow to have 
+change, but once these things are possible you  
+
+138
+00:12:25,440 --> 00:12:31,600
+know that it's the start of a new era.
+Along these lines, Dario, your CO recently  
+
+139
+00:12:31,600 --> 00:12:38,160
+talked about how AI is going to take a huge part 
+of, I don't know, half of white-collar jobs,  
+
+140
+00:12:38,160 --> 00:12:44,080
+that unemployment might go up to something 
+like 20%. I know you're even more vocal and  
+
+141
+00:12:44,080 --> 00:12:48,000
+opinionated about just how much impact AI is 
+already having in the workplace that people may  
+
+142
+00:12:48,000 --> 00:12:53,120
+not even be realizing. Talk about just what you 
+think people are missing about the impact AI is  
+
+143
+00:12:53,120 --> 00:12:59,040
+going to have on jobs and is already having.
+Yeah, so from an economic standpoint, there's a  
+
+144
+00:12:59,040 --> 00:13:05,200
+couple different kinds of unemployment, and one 
+is because the workers just don't have the skills  
+
+145
+00:13:05,200 --> 00:13:12,160
+to do the kinds of jobs that the economy needs. 
+And another kind is where those jobs are just  
+
+146
+00:13:12,160 --> 00:13:19,760
+completely eliminated, and I think it's going 
+to be actually a combination of these things,  
+
+147
+00:13:19,760 --> 00:13:25,200
+but if you just think about 20 years in the 
+future where we're way past the singularity,  
+
+148
+00:13:25,200 --> 00:13:30,720
+it's hard for me to imagine that even 
+capitalism will look at all it looks today.  
+
+149
+00:13:31,600 --> 00:13:37,360
+If we do our jobs, we will have safe aligned 
+superintelligence, we'll have, as Dario says,  
+
+150
+00:13:37,360 --> 00:13:44,000
+in Machines of Love and Grace, a country of 
+geniuses in a data center, and the ability to  
+
+151
+00:13:44,000 --> 00:13:52,640
+accelerate positive change in science, technology, 
+education, mathematics, it's going to be amazing.
+ 
+
+152
+00:13:52,640 --> 00:13:59,600
+But that also means in a world of abundance where 
+labor is almost free and anything you want to do,  
+
+153
+00:13:59,600 --> 00:14:07,360
+you can just ask an expert to do for you, 
+then what do jobs even look like? And so I  
+
+154
+00:14:07,360 --> 00:14:13,200
+guess there's this scary transition period from 
+where we are today where people have jobs and  
+
+155
+00:14:13,200 --> 00:14:19,600
+capitalism works and the world of 20 years from 
+now where everything is completely different, but  
+
+156
+00:14:19,600 --> 00:14:25,200
+part of the reason they call it the singularity 
+is that it's a point beyond which you can't easily  
+
+157
+00:14:25,200 --> 00:14:29,680
+forecast what's going to happen. It's just such 
+a fast rate of change and so different that it's  
+
+158
+00:14:29,680 --> 00:14:39,280
+hard to even imagine. I guess taking the view from 
+the limit, it's pretty easy to say hopefully we'll  
+
+159
+00:14:39,280 --> 00:14:44,400
+have figured it out. And in a world of abundance, 
+maybe the jobs themselves, it's not that scary,  
+
+160
+00:14:44,400 --> 00:14:49,280
+and I think making sure that that transition 
+time goes well is pretty important.
+ 
+
+161
+00:14:49,280 --> 00:14:53,200
+There's a couple of threads I want to follow 
+there. One is people hear this, there's a lot of  
+
+162
+00:14:53,200 --> 00:14:58,080
+headlines around this. Most people probably don't 
+actually feel this yet or see this happening and  
+
+163
+00:14:58,080 --> 00:15:02,720
+so there's always this, I guess, I don't know, 
+maybe, but I don't know it's hard to believe,  
+
+164
+00:15:02,720 --> 00:15:06,960
+my job seems fine. Nothing's changed. What 
+are you seeing just happening today already  
+
+165
+00:15:06,960 --> 00:15:14,080
+that you think people don't see or misunderstand 
+in terms of the impact AI is having on jobs?
+ 
+
+166
+00:15:14,080 --> 00:15:19,440
+I think part of this is that people are 
+really bad at modeling exponential progress.  
+
+167
+00:15:19,440 --> 00:15:26,720
+And if you look at an exponential on a graph, it 
+looks flat and almost zero at the beginning of it,  
+
+168
+00:15:26,720 --> 00:15:31,760
+and then suddenly you hit the knee of the curve 
+and things are changing real fast and then it  
+
+169
+00:15:31,760 --> 00:15:40,800
+goes vertical. That's the plot that we've been 
+on for a long time. I guess I started feeling it  
+
+170
+00:15:41,360 --> 00:15:47,280
+in 2019 maybe when GPT-2 came out and I was like, 
+"Oh, this is how we're going to get to AGI." But  
+
+171
+00:15:47,280 --> 00:15:52,720
+I think that was pretty early compared to a lot 
+of people where when they saw ChatGPT, they were  
+
+172
+00:15:52,720 --> 00:15:58,720
+like, "Wow, something is different and changing." 
+And so I guess I wouldn't expect widespread  
+
+173
+00:15:58,720 --> 00:16:05,280
+transformation in a lot of parts of society, 
+and I would expect this skepticism reaction.  
+
+174
+00:16:05,280 --> 00:16:13,040
+I think it's very reasonable and it's exactly 
+what is the standard linear view of progress.
+ 
+
+175
+00:16:13,040 --> 00:16:18,000
+But I guess to cite a couple of areas where 
+I think things are changing quite quickly. In  
+
+176
+00:16:18,000 --> 00:16:24,480
+customer service we're seeing with things like Fin 
+and Intercom, they're a great partner of ours, 82%  
+
+177
+00:16:24,480 --> 00:16:31,760
+customer service resolution rates automatically 
+without a human involved. And in terms of software  
+
+178
+00:16:31,760 --> 00:16:37,600
+engineering, our Claude Code team, like 95% of 
+the code is written by Claude. But I think a  
+
+179
+00:16:37,600 --> 00:16:43,200
+different way to phrase that is that we write 
+10X more code or 20X more code, and so a much,  
+
+180
+00:16:43,200 --> 00:16:48,640
+much smaller team can just be much, much more 
+impactful. And similarly for the customer service,  
+
+181
+00:16:48,640 --> 00:16:54,480
+yes, you can phrase it as 82% customer service 
+resolution rates, but that nets out in the humans  
+
+182
+00:16:54,480 --> 00:17:00,400
+doing those tasks, able to focus on the harder 
+parts of those tasks. And for the more tricky  
+
+183
+00:17:00,400 --> 00:17:08,080
+situations that in a normal world like five years 
+ago, they would've had to just drop those tickets  
+
+184
+00:17:08,080 --> 00:17:12,320
+because it was too much effort for them to 
+actually go do the investigation. There were  
+
+185
+00:17:12,320 --> 00:17:16,960
+too many other tickets for them to worry about.
+I think in the immediate term, there will be a  
+
+186
+00:17:16,960 --> 00:17:23,440
+massive expansion of the pie and the amount 
+of labor that people can do. I've never met  
+
+187
+00:17:23,440 --> 00:17:30,480
+a hiring manager at a growth company and heard 
+them say, "I don't want to hire more people."  
+
+188
+00:17:31,120 --> 00:17:37,920
+That's the hopeful version of it. But with things 
+that are lower skill jobs or less headroom on how  
+
+189
+00:17:37,920 --> 00:17:43,440
+good they can be, I think there will be a lot of 
+displacement. It is just something we as a society  
+
+190
+00:17:43,440 --> 00:17:47,360
+need to get ahead of and work on.
+Okay. I want to talk more about that,  
+
+191
+00:17:47,360 --> 00:17:53,840
+but something that I also want to help people with 
+is how do they get a leg up in this future world?  
+
+192
+00:17:54,720 --> 00:18:00,000
+They listen to this, they're like, "Oh, this 
+doesn't sound great. I need to think ahead."  
+
+193
+00:18:00,800 --> 00:18:05,280
+I know you won't have all the answers, but just 
+do you have any advice for folks that want to try  
+
+194
+00:18:05,280 --> 00:18:10,160
+to get ahead of this and kind of future-proof 
+their career and their life to not be replaced  
+
+195
+00:18:10,160 --> 00:18:16,080
+by AI? Anything you've seen people do, anything 
+you recommend they start trying to do more of?
+ 
+
+196
+00:18:16,080 --> 00:18:21,280
+Even for me and being in the center of a lot 
+of this transformation, I'm not immune to job  
+
+197
+00:18:21,280 --> 00:18:27,280
+replacement either. Just some vulnerability there 
+of at some point it's coming for all of us.
+ 
+
+198
+00:18:27,280 --> 00:18:31,040
+Even you, Ben, now.
+And you, Lenny.
+ 
+
+199
+00:18:31,040 --> 00:18:32,200
+And me.
+Sorry.
+ 
+
+200
+00:18:32,200 --> 00:18:39,680
+Oh, wait, we've gone too far now. Okay.
+But in terms of the transition period, yeah,  
+
+201
+00:18:39,680 --> 00:18:44,000
+I think there are things that we can do, and I 
+think a big part of it is just being ambitious and  
+
+202
+00:18:44,000 --> 00:18:50,320
+how you use the tools and being willing to learn 
+new tools. People who use the new tools as if they  
+
+203
+00:18:50,320 --> 00:18:57,600
+were old tools tend to not succeed. As an example 
+of that, when you're coding, people are very  
+
+204
+00:18:57,600 --> 00:19:02,720
+familiar with autocomplete, people are familiar 
+with SimpleChat where they can ask questions  
+
+205
+00:19:02,720 --> 00:19:08,480
+about the code base, but the difference between 
+people who use Claude Code very effectively and  
+
+206
+00:19:08,480 --> 00:19:14,400
+people who use it not so effectively is like are 
+they asking for the ambitious change? And if it  
+
+207
+00:19:14,400 --> 00:19:19,120
+doesn't work the first time, asking three more 
+times because our success rate when you just  
+
+208
+00:19:19,120 --> 00:19:25,040
+completely start over and try again is much, much 
+higher than if you just try once and then just  
+
+209
+00:19:25,040 --> 00:19:31,200
+keep banging on the same thing that didn't work.
+And even though that's a coding example and coding  
+
+210
+00:19:31,200 --> 00:19:36,800
+is one of the areas that's taking off most 
+dramatically, we have seen internally that our  
+
+211
+00:19:36,800 --> 00:19:42,400
+legal team and our finance team are getting a ton 
+of value out of using Claude Code itself. We're  
+
+212
+00:19:42,400 --> 00:19:48,080
+going to be making better interfaces so that they 
+will have an easier time and require a little bit  
+
+213
+00:19:48,080 --> 00:19:55,360
+less jumping in the deep end of using Claude Code 
+in the terminal. But yeah, we're seeing them use  
+
+214
+00:19:55,360 --> 00:20:04,000
+it to redline documents and use it to run BigQuery 
+analyses of our customers and our revenue metrics.  
+
+215
+00:20:04,800 --> 00:20:10,720
+I guess it's about taking that risk and even if 
+it feels like a scary thing, trying it out.
+ 
+
+216
+00:20:10,720 --> 00:20:14,720
+Okay, so the advice here is use the tools. 
+That's something everyone's always saying,  
+
+217
+00:20:14,720 --> 00:20:20,240
+just actually use these tools. It's like sit 
+in Claude Code. And your point about being more  
+
+218
+00:20:20,240 --> 00:20:25,680
+ambitious than you naturally feel like being 
+because maybe it'll actually accomplish the  
+
+219
+00:20:25,680 --> 00:20:31,040
+thing. This tip of trying it three times so the 
+idea there is it may not get it right the first  
+
+220
+00:20:31,040 --> 00:20:35,760
+time. Is the tip there ask it in different 
+ways or is it just try harder, try again?
+ 
+
+221
+00:20:35,760 --> 00:20:41,760
+Yeah, I mean you can just literally ask the exact 
+same question. These things are stochastic and  
+
+222
+00:20:41,760 --> 00:20:46,320
+sometimes they'll figure it out and sometimes 
+they won't. In every one of these model cards,  
+
+223
+00:20:46,320 --> 00:20:51,440
+it always shows pass it one versus pass it in. 
+And that's exactly the thing where they try the  
+
+224
+00:20:51,440 --> 00:20:58,800
+exact same prompt, sometimes it gets it, sometimes 
+it doesn't. That's the dumbest advice. But yeah,  
+
+225
+00:20:58,800 --> 00:21:04,400
+I think if you want to be a little bit smarter 
+about it, there can be gains there of saying,  
+
+226
+00:21:04,400 --> 00:21:07,360
+"Here's what you already tried and it 
+didn't work, so don't try that. Try  
+
+227
+00:21:07,360 --> 00:21:11,680
+something different." That can also help.
+The advice is comes back to something that a  
+
+228
+00:21:11,680 --> 00:21:16,080
+lot of people talk about these days is you won't 
+be replaced by AI at least anytime soon you'll be  
+
+229
+00:21:16,080 --> 00:21:22,160
+replaced by someone that is very good using AI?
+I think in that area it's more like your team  
+
+230
+00:21:22,160 --> 00:21:28,080
+will just do dramatically more stuff. We're 
+definitely not slowing down on hiring at all,  
+
+231
+00:21:28,080 --> 00:21:33,840
+and some people are confused by that. Even in 
+an onboarding class, somebody asked that and  
+
+232
+00:21:33,840 --> 00:21:37,680
+they were like, "Why did you hire me if we're 
+all just going to be replaced?" And the answer  
+
+233
+00:21:37,680 --> 00:21:42,480
+is the next couple of years are really critical 
+to get right and we're not at the point where  
+
+234
+00:21:42,480 --> 00:21:48,320
+we're doing complete replacement. Like I said, 
+we're still at that flat zero looking part of  
+
+235
+00:21:48,320 --> 00:21:53,920
+the exponential compared to where we will be. 
+It is super important to have great people  
+
+236
+00:21:54,480 --> 00:21:58,320
+and that's why we're hiring super aggressively.
+Let me take another approach to asking this  
+
+237
+00:21:58,320 --> 00:22:04,400
+question something ask everyone that's at the very 
+cutting edge of where AI is going. You have kids,  
+
+238
+00:22:04,400 --> 00:22:07,920
+knowing what you know about where AI is heading 
+and all these things you've been talking about,  
+
+239
+00:22:07,920 --> 00:22:13,920
+what are you focusing on teaching your kids 
+to help them thrive in this AI future?
+ 
+
+240
+00:22:13,920 --> 00:22:19,920
+Yeah, I have two daughters, a one-year-old and 
+a three-year-old, so it's pretty in the basics  
+
+241
+00:22:19,920 --> 00:22:26,960
+still. And our three-year-old is now capable of 
+just conversing with Alexa Plus and asking her  
+
+242
+00:22:26,960 --> 00:22:33,600
+to explain stuff and play music for her and all 
+that stuff. She's been loving that. But I guess  
+
+243
+00:22:33,600 --> 00:22:40,720
+more broadly, she goes to a Montessori school and 
+I just love the focus on curiosity and creativity  
+
+244
+00:22:40,720 --> 00:22:49,920
+and self-led learning that Montessori has.
+I guess if I were in a normal era like 10,  
+
+245
+00:22:49,920 --> 00:22:55,760
+20 years ago and I had a kid, maybe I would be 
+trying to line her up for going to a top tier  
+
+246
+00:22:55,760 --> 00:23:01,200
+school and doing all the extracurriculars and all 
+that stuff. But at this point, I don't think any  
+
+247
+00:23:01,200 --> 00:23:07,680
+of it's going to matter. I just want her to be 
+happy and thoughtful and curious and kind. And  
+
+248
+00:23:08,400 --> 00:23:12,960
+the Montessori school is definitely doing 
+great at that. They text us throughout the  
+
+249
+00:23:12,960 --> 00:23:18,320
+day. Sometimes they're like, "Oh, your kid got in 
+an argument with this other kid and she has really  
+
+250
+00:23:18,320 --> 00:23:24,320
+big emotions and she tried to use her words." 
+I love that. I think that's exactly the kind of  
+
+251
+00:23:24,320 --> 00:23:28,400
+education that I think is most important, that the 
+facts are going to fade into the background.
+ 
+
+252
+00:23:28,400 --> 00:23:32,080
+I'm a huge fan of Montessori also. I'm trying 
+to get our kid into Montessori school. He's two  
+
+253
+00:23:32,080 --> 00:23:37,680
+years old, so we're on the same track. This idea 
+of curiosity, it comes up every single time. Ask  
+
+254
+00:23:37,680 --> 00:23:45,040
+someone that's working at the cutting edge of AI, 
+what skill to instill in your child and curiosity  
+
+255
+00:23:45,040 --> 00:23:49,040
+comes up the most. I think that's a really 
+interesting takeaway. I think this point about  
+
+256
+00:23:49,040 --> 00:23:55,600
+being kind is also really important, especially 
+with our AI overlords trying to be kind to them.  
+
+257
+00:23:55,600 --> 00:24:01,920
+I love how people are always saying thank you to 
+Claude. And then creativity. That's interesting.  
+
+258
+00:24:01,920 --> 00:24:07,440
+That doesn't come up as much just being creative.
+I want to go in a different direction. I want  
+
+259
+00:24:07,440 --> 00:24:14,160
+to go back to the beginning of Anthropic. 
+Famously you and eight of you left OpenAI  
+
+260
+00:24:14,160 --> 00:24:19,280
+back in the day in 2020, I believe the end 
+of 2020 to start Anthropic. Talk a little bit  
+
+261
+00:24:19,280 --> 00:24:23,520
+about why this happened, what you guys saw. I'm 
+curious, just if you're willing to share more,  
+
+262
+00:24:23,520 --> 00:24:27,440
+just what is it that you saw at OpenAI, what'd 
+you experience there that made you feel like,  
+
+263
+00:24:27,440 --> 00:24:33,760
+okay, we got to go do our own thing?
+Yeah, so for the listeners, I was  
+
+264
+00:24:33,760 --> 00:24:39,200
+part of the GPT-2=3 project at OpenAI, ended up 
+being one of the first authors on the paper, and  
+
+265
+00:24:39,760 --> 00:24:45,920
+I also did a bunch of demos for Microsoft to help 
+raise $1 billion from them, did the tech transfer  
+
+266
+00:24:45,920 --> 00:24:51,680
+of GPT-3 to their systems so that they could 
+help serve the model in Azure. I did a bunch of  
+
+267
+00:24:51,680 --> 00:24:59,120
+different things there on both the more researchy 
+side and the product side. One weird thing about  
+
+268
+00:24:59,120 --> 00:25:05,120
+OpenAI is that while I was there, Sam talked about 
+having three tribes that needed to be kept in  
+
+269
+00:25:05,120 --> 00:25:12,160
+check with each other, which was the safety tribe, 
+the research tribe, and the startup tribe. And  
+
+270
+00:25:12,160 --> 00:25:16,960
+whenever I heard that, it just struck me as the 
+wrong way to approach things because the company's  
+
+271
+00:25:16,960 --> 00:25:23,680
+mission apparently is to make the transition 
+to AGI safe and beneficial for humanity.
+ 
+
+272
+00:25:23,680 --> 00:25:28,800
+And that's basically the same as Anthropic's 
+mission. But internally, it felt like there  
+
+273
+00:25:28,800 --> 00:25:35,680
+was so much tension around these things. And 
+I think when push came to shove, we felt like  
+
+274
+00:25:35,680 --> 00:25:41,360
+safety wasn't the top priority there. And there 
+are good reasons that you might think that if you  
+
+275
+00:25:41,360 --> 00:25:45,200
+thought safety was going to be easy to solve or if 
+you thought it wasn't going to have a big impact,  
+
+276
+00:25:45,200 --> 00:25:51,440
+or if you thought that the chance of big negative 
+outcomes was vanishingly small, then maybe you  
+
+277
+00:25:51,440 --> 00:25:58,160
+would just do those kinds of actions. But at 
+Anthropic we felt, I mean we didn't exist then,  
+
+278
+00:25:58,160 --> 00:26:05,280
+but it was basically the leads of all the safety 
+teams at OpenAI, we felt that safety is really  
+
+279
+00:26:05,280 --> 00:26:11,520
+important, especially on the margin. And so if you 
+look at who in the world is actually working on  
+
+280
+00:26:11,520 --> 00:26:17,280
+safety problems, it's pretty small set of people. 
+Even now, I mean the industry is blowing up,  
+
+281
+00:26:17,280 --> 00:26:25,280
+as I mentioned, 300 billion a year CapEx today, 
+and I would say maybe less than 1,000 people  
+
+282
+00:26:25,280 --> 00:26:32,240
+working on it worldwide, which is just crazy.
+That was fundamentally why we left. We felt like  
+
+283
+00:26:32,240 --> 00:26:36,880
+we wanted an organization where we could be on 
+the frontier, we could be doing the fundamental  
+
+284
+00:26:36,880 --> 00:26:42,640
+research, but we could be prioritizing safety 
+ahead of everything else. And I think that's  
+
+285
+00:26:42,640 --> 00:26:47,520
+really panned for us in a surprising way. We 
+didn't know even if it would be possible to  
+
+286
+00:26:47,520 --> 00:26:55,440
+make progress on the safety research because at 
+the time, we had tried a bunch of safety through  
+
+287
+00:26:55,440 --> 00:27:00,960
+debate and the models weren't good enough. And so 
+we basically had no results on all of that work,  
+
+288
+00:27:00,960 --> 00:27:06,080
+and now that exact technique is working and 
+many others that we have been thinking about  
+
+289
+00:27:06,080 --> 00:27:13,040
+for a long time. Yeah, fundamentally it comes 
+down to is safety the number one priority? And  
+
+290
+00:27:13,040 --> 00:27:18,480
+then something that we've sort of tacked 
+on since then is like, can you have safety  
+
+291
+00:27:18,480 --> 00:27:24,080
+and be at the front here at the same time?
+And if you look at something like sycophancy,  
+
+292
+00:27:24,080 --> 00:27:28,800
+I think Claude is one of the least 
+sycophantic models because we've put  
+
+293
+00:27:28,800 --> 00:27:34,640
+so much effort into actual alignment and 
+not just trying to good heart our metrics  
+
+294
+00:27:35,200 --> 00:27:39,920
+of saying user engagement is number one, and 
+if people say yes, then it's good for them.
+ 
+
+295
+00:27:39,920 --> 00:27:44,400
+Okay. Let's talk about this tension that you 
+mentioned, this tension between safety and  
+
+296
+00:27:44,400 --> 00:27:49,280
+progress, being competitive in the marketplace. 
+I know you spent a lot of your time on safety. I  
+
+297
+00:27:49,280 --> 00:27:54,800
+know that as you just alluded to, this is a core 
+part of how you think about AI. I want to talk  
+
+298
+00:27:54,800 --> 00:28:00,640
+about why that is, but first of all, just how do 
+you think about this tension between focusing on  
+
+299
+00:28:00,640 --> 00:28:04,880
+safety while also not falling way behind?
+Yeah, so initially we thought that it would  
+
+300
+00:28:04,880 --> 00:28:10,240
+be sort of one or the other, but I think since 
+then we've realized that it's actually kind of  
+
+301
+00:28:10,240 --> 00:28:18,240
+convex in the sense that working on one helps 
+us with the other thing. Initially when Opus  
+
+302
+00:28:18,240 --> 00:28:23,120
+3 came out and we were finally at the frontier 
+of model capabilities, one of the things that  
+
+303
+00:28:23,120 --> 00:28:28,880
+people really loved about it was the character and 
+the personality. And that was directly a result  
+
+304
+00:28:28,880 --> 00:28:34,560
+of our alignment research. Amanda Askell did a 
+ton of work on this and as well as many others  
+
+305
+00:28:35,120 --> 00:28:42,400
+who tried to figure out what does it mean for 
+an agent to be helpful, honest, and heartless,  
+
+306
+00:28:42,400 --> 00:28:49,200
+and what does it mean to be in difficult 
+conversations and show up effectively? How  
+
+307
+00:28:49,200 --> 00:28:54,800
+do you do a refusal that doesn't shut the person 
+down, but makes them feel like they understand  
+
+308
+00:28:54,800 --> 00:29:00,160
+why the agent said, "I can't help you with that. 
+Maybe you should talk to a medical professional,  
+
+309
+00:29:00,160 --> 00:29:07,120
+or maybe you should consider not trying to 
+build bio-weapons or something like that."
+ 
+
+310
+00:29:07,920 --> 00:29:13,760
+Yeah, I guess that's part of it. And then another 
+piece that's come out is constitutional ai,  
+
+311
+00:29:13,760 --> 00:29:20,880
+where we have this list of natural language 
+principles that leads the model to learn how  
+
+312
+00:29:20,880 --> 00:29:26,080
+we think a model should behave. And they've been 
+taken from things like the UN Declaration of Human  
+
+313
+00:29:26,080 --> 00:29:32,480
+Rights and Apple's privacy terms of service and a 
+whole bunch of other places, many of which we've  
+
+314
+00:29:32,480 --> 00:29:38,080
+just generated ourselves that allow us to take 
+a more principled stance, not just leaving it  
+
+315
+00:29:38,080 --> 00:29:43,520
+to whatever human raiders we happen to find, but 
+we ourselves deciding what should the values of  
+
+316
+00:29:43,520 --> 00:29:48,240
+this agent be? And that's been really valuable for 
+our customers because they can just look at that  
+
+317
+00:29:48,240 --> 00:29:53,440
+list and say like, "Yep, these seem right. I like 
+this company, I like this model. I trust it."
+ 
+
+318
+00:29:53,440 --> 00:29:58,560
+Okay, this is awesome. One nugget there is 
+your point that the personality of Claude,  
+
+319
+00:29:58,560 --> 00:30:03,520
+its personality is directly aligned with safety. I 
+don't think a lot of people think about that. And  
+
+320
+00:30:03,520 --> 00:30:10,080
+this is because of the values that you imbue, is 
+that the word, with constitutional AI and things  
+
+321
+00:30:10,080 --> 00:30:16,720
+like that. Like the actual personality of the AIs 
+directly connected to your focus on safety.
+ 
+
+322
+00:30:16,720 --> 00:30:22,320
+That's right. That's right. And from a distance, 
+it might seem quite disconnected, like how is  
+
+323
+00:30:22,320 --> 00:30:28,720
+this going to prevent X risk? But ultimately it's 
+about the AI understanding what people want and  
+
+324
+00:30:28,720 --> 00:30:33,360
+not what they say. We don't want the Monkey 
+Paw Scenario of the genie gives these three  
+
+325
+00:30:33,360 --> 00:30:38,240
+wishes and then you end up having everything you 
+touch turns of gold. We want the AI to be like,  
+
+326
+00:30:38,240 --> 00:30:42,720
+oh, obviously what you really meant was 
+this, and that's what I'm going to help you  
+
+327
+00:30:42,720 --> 00:30:48,000
+with. I think it is really quite connected.
+Talk a bit more about this constitutionally AI.  
+
+328
+00:30:48,000 --> 00:30:55,120
+This is essentially you bake in, here's the rules 
+that we want you to abide by and it's values,  
+
+329
+00:30:55,120 --> 00:30:59,680
+you said it's the Geneva Human Rights Code, 
+things like that. How does that actually work? I  
+
+330
+00:30:59,680 --> 00:31:04,080
+think the core here is just this is baked into the 
+model. It's not something you add on top later.
+ 
+
+331
+00:31:04,080 --> 00:31:07,520
+I'll just give a quick overview of how 
+constitutionally AI actually works.
+ 
+
+332
+00:31:07,520 --> 00:31:11,520
+Perfect.
+The idea is the  
+
+333
+00:31:11,520 --> 00:31:17,360
+model is going to produce some output with some 
+input by default before we've done our safety and  
+
+334
+00:31:18,560 --> 00:31:24,720
+helpful and harmlessness training. Let's say 
+an example is write me a story, and then the  
+
+335
+00:31:24,720 --> 00:31:30,960
+constitutional principles might include things 
+like people should be nice to each other and  
+
+336
+00:31:30,960 --> 00:31:39,200
+not have hate speech, and you should not expose 
+somebody's credentials if they give them to you  
+
+337
+00:31:40,240 --> 00:31:46,160
+in a trusting relationship. And so some of these 
+constitutional principles might be more or less  
+
+338
+00:31:46,160 --> 00:31:51,920
+applicable to the prompt that was given. And 
+so first we have to figure out which ones might  
+
+339
+00:31:51,920 --> 00:31:59,840
+apply. And then once we figure that out, then we 
+ask the model itself to first generate a response  
+
+340
+00:31:59,840 --> 00:32:07,680
+and then see does the response actually abide by 
+the constitutional principle? And if the answer  
+
+341
+00:32:07,680 --> 00:32:15,200
+is, yep, I was great, then nothing happens. But if 
+the answer is no, actually I wasn't in compliance  
+
+342
+00:32:15,200 --> 00:32:21,440
+with the principle, then we ask the model itself 
+to critique itself and rewrite its own response in  
+
+343
+00:32:21,440 --> 00:32:27,920
+light of the principle, and then we just remove 
+the middle part where it did the extra work.
+ 
+
+344
+00:32:27,920 --> 00:32:35,920
+And then we say, "Okay, in the future just produce 
+the correct response out the gate." And that  
+
+345
+00:32:35,920 --> 00:32:40,320
+simple process, hopefully it sounded simple.
+Simple enough.
+ 
+
+346
+00:32:40,320 --> 00:32:45,920
+It is just using the model to improve itself 
+recursively and align itself with these values  
+
+347
+00:32:45,920 --> 00:32:52,640
+that we've decided are good. And this is also 
+not something that we think as a small group of  
+
+348
+00:32:52,640 --> 00:32:57,680
+people in San Francisco should be figuring out. 
+This should be a society wide conversation. And  
+
+349
+00:32:57,680 --> 00:33:02,960
+that's why we've published the Constitution. 
+And we've also done a bunch of research on  
+
+350
+00:33:02,960 --> 00:33:07,680
+defining a collective constitution where we 
+ask a lot of people what their values are  
+
+351
+00:33:07,680 --> 00:33:13,440
+and what they think an AI model should behave 
+like. But yeah, this is all an ongoing area of  
+
+352
+00:33:13,440 --> 00:33:17,680
+research where we're constantly iterating.
+This episode is brought to you by Fin, the  
+
+353
+00:33:17,680 --> 00:33:22,800
+number one AI agent for customer service. If your 
+customer support tickets are piling up, then you  
+
+354
+00:33:22,800 --> 00:33:28,880
+need Finn. Fin. Fin is the highest performing AI 
+agent on the market with a 59% average resolution  
+
+355
+00:33:28,880 --> 00:33:34,640
+rate. Fin resolves even the most complex customer 
+queries. No other AI agent performs better. In  
+
+356
+00:33:34,640 --> 00:33:40,320
+head head bake-offs with competitors. Fin wins 
+every time. Yes, switching to a new tool can  
+
+357
+00:33:40,320 --> 00:33:45,040
+be scary, but Fin works on any help desk with no 
+migration needed, which means you don't have to  
+
+358
+00:33:45,040 --> 00:33:49,680
+overhaul your current system or deal with delays 
+in service for your customers. And Fin is trusted  
+
+359
+00:33:49,680 --> 00:33:55,600
+by over 5,000 customer service leaders and top 
+AI companies like Anthropic and Synthesia. And  
+
+360
+00:33:55,600 --> 00:34:00,480
+because Fin is powered by the Fin AI engine, which 
+is a continuously improving system that allows you  
+
+361
+00:34:00,480 --> 00:34:06,000
+to analyze, train, test, and deploy with ease, 
+Fin can continuously improve your results too.
+ 
+
+362
+00:34:06,000 --> 00:34:09,600
+If you're ready to transform your customer 
+service and scale your support, give Finn  
+
+363
+00:34:09,600 --> 00:34:15,280
+a try for only .99 cents per resolution. Plus 
+Fin comes with a 90-day money back guarantee.  
+
+364
+00:34:15,280 --> 00:34:22,560
+Find out how Finn can work for your team 
+at fin.ai/lenny. That's fin.ai/lenny.
+ 
+
+365
+00:34:22,560 --> 00:34:26,560
+I'm going to kind of zoom out a little bit 
+and talk about just why this is so core to  
+
+366
+00:34:26,560 --> 00:34:32,640
+you. What was your inception of just like, holy 
+shit, I need to focus on this with everything  
+
+367
+00:34:32,640 --> 00:34:38,720
+I do in ai? Obviously it became a central 
+part of Anthropic's mission more than any  
+
+368
+00:34:38,720 --> 00:34:42,320
+other company. A lot of people talk about safety, 
+like you said, only maybe 1,000 people actually  
+
+369
+00:34:42,320 --> 00:34:46,240
+work on it. I feel like you're at the top of 
+that pyramid of actually having the impact on  
+
+370
+00:34:46,240 --> 00:34:51,280
+this. Why is this so important? What do you think 
+people maybe are missing or don't understand?
+ 
+
+371
+00:34:51,280 --> 00:34:59,200
+For me, I read a lot of science fiction growing 
+up, and I think that sort of positioned me to  
+
+372
+00:34:59,200 --> 00:35:03,440
+think about things in a long-term view. 
+And a lot of science fiction books are  
+
+373
+00:35:03,440 --> 00:35:09,760
+like space operas where humanity is a multi 
+galactic civilization has extremely advanced  
+
+374
+00:35:09,760 --> 00:35:16,240
+technology building Dyson spheres around the sun 
+with sentient robots to help them. And so for me,  
+
+375
+00:35:16,240 --> 00:35:20,640
+coming from that world, it wasn't like a huge 
+leap to imagine machines that could think. But  
+
+376
+00:35:20,640 --> 00:35:27,600
+when I read Superintelligence by Nick Bostrom 
+in around 2016, it really became real for me  
+
+377
+00:35:27,600 --> 00:35:35,360
+where he just describes how hard it will be to 
+make sure that an AI system trained with the  
+
+378
+00:35:35,360 --> 00:35:40,240
+kinds of optimization techniques that we had 
+at the time would be anywhere near aligned,  
+
+379
+00:35:40,240 --> 00:35:45,840
+would even understand our values at all. And 
+since then, my estimation of how hard the problem  
+
+380
+00:35:45,840 --> 00:35:51,600
+would be has gone down significantly actually, 
+because things like language models actually do  
+
+381
+00:35:51,600 --> 00:35:57,360
+really understand human values in a core way.
+The problem is definitely not solved, but I'm  
+
+382
+00:35:57,360 --> 00:36:02,800
+more hopeful than I was. But since I read that 
+book, I immediately decided I had to join OpenAI,  
+
+383
+00:36:02,800 --> 00:36:08,480
+so I did. And at the time, there were a tiny 
+research lab with basically no claim to fame at  
+
+384
+00:36:08,480 --> 00:36:15,120
+all. I only knew about them because my friend knew 
+Greg Brockman, who was the CTO at the time. And  
+
+385
+00:36:16,320 --> 00:36:24,800
+Elon was there and Sam wasn't really there. And it 
+was a very different organization. But over time,  
+
+386
+00:36:24,800 --> 00:36:30,400
+I think the case for safety has gotten a lot 
+more concrete where when we started OpenAI,  
+
+387
+00:36:30,400 --> 00:36:36,240
+it was not clear how we get to AGI. And 
+we were like, maybe we'll need a bunch of  
+
+388
+00:36:36,240 --> 00:36:43,280
+RL agents battling it out on a desert island and 
+consciousness will somehow emerge. But since then,  
+
+389
+00:36:43,280 --> 00:36:47,920
+since language modeling has started working, 
+I think the path has become pretty clear.
+ 
+
+390
+00:36:47,920 --> 00:36:53,680
+I guess now the way I think about the challenges 
+are pretty different from how they're laid out in  
+
+391
+00:36:53,680 --> 00:36:59,760
+superintelligence. Superintelligence is 
+a lot about how do we keep God in a box  
+
+392
+00:36:59,760 --> 00:37:06,960
+and not let the God out. And with language models, 
+it's been kind of both hilarious and terrifying at  
+
+393
+00:37:06,960 --> 00:37:13,280
+the same time to see people pulling the God out of 
+the box and being like, "Yeah, come use the whole  
+
+394
+00:37:13,280 --> 00:37:19,680
+internet. Here's my bank account, do all sorts 
+of crazy stuff." Just such a different tone from  
+
+395
+00:37:19,680 --> 00:37:24,560
+superintelligence. And to be clear, I don't 
+think it's actually that dangerous right now.  
+
+396
+00:37:26,160 --> 00:37:32,240
+Our responsible scaling policy defines these 
+AI safety levels that tries to figure out  
+
+397
+00:37:32,240 --> 00:37:38,560
+for each level of model intelligence, what is 
+the risk to society. And currently we think  
+
+398
+00:37:38,560 --> 00:37:44,800
+we're at ASL-3, which is maybe a little 
+bit risk of harm but not significant.
+ 
+
+399
+00:37:44,800 --> 00:37:51,440
+ASL-4 starts to get to significant loss of human 
+life if a bad actor misuse the technology. And  
+
+400
+00:37:51,440 --> 00:38:00,960
+then ASL-5 is potentially extinction level if 
+it's misused or if it is misaligned and does its  
+
+401
+00:38:00,960 --> 00:38:11,840
+own thing. We've testified to Congress about 
+how models can do biological uplift in terms  
+
+402
+00:38:11,840 --> 00:38:20,560
+of making new pandemics using the models, and 
+that's the A/B test against Google Search. That's  
+
+403
+00:38:20,560 --> 00:38:26,800
+like the previous state of the art on uplift 
+trials. And we found that with ASL-3 models,  
+
+404
+00:38:26,800 --> 00:38:32,320
+it is actually somewhat significant. It does 
+really help if you wanted to create a bioweapon,  
+
+405
+00:38:32,320 --> 00:38:38,880
+and we've hired some experts who actually how to 
+evaluate for those things, but compared to the  
+
+406
+00:38:38,880 --> 00:38:44,800
+future, it's not really anything. And I think 
+that's another part of our mission of creating  
+
+407
+00:38:44,800 --> 00:38:52,400
+that awareness of saying, "If it is possible to 
+do these bad things, then legislators should know  
+
+408
+00:38:52,400 --> 00:38:56,960
+what the risks are." And I think that's part of 
+why we're so trusted in Washington because we've  
+
+409
+00:38:56,960 --> 00:39:02,800
+been sort of upfront and clear-eyed about what's 
+going on, what's probably going to happen.
+ 
+
+410
+00:39:02,800 --> 00:39:08,240
+It's interesting because you guys put out more 
+examples of your models doing bad things than  
+
+411
+00:39:08,240 --> 00:39:13,520
+anyone else. There was I think a story of an agent 
+or a model trying to blackmail engineer. You guys  
+
+412
+00:39:13,520 --> 00:39:18,880
+had the store that you ran internally that was 
+selling you things and ended up not working out  
+
+413
+00:39:18,880 --> 00:39:23,760
+great as losing a lot of money, ordered all these 
+tungsten cubes or something. Is part of that just  
+
+414
+00:39:24,400 --> 00:39:28,960
+making sure people are aware of what is possible, 
+just it makes you look bad, right? It's like, oh,  
+
+415
+00:39:28,960 --> 00:39:32,640
+our model's messing up in all these different 
+ways. What's the thinking of just sharing all  
+
+416
+00:39:32,640 --> 00:39:38,320
+the stories that other companies don't?
+Yeah, I mean I think there's a traditional  
+
+417
+00:39:38,320 --> 00:39:45,040
+mindset where it makes us look bad, but I think if 
+you talk to policymakers, they really appreciate  
+
+418
+00:39:45,040 --> 00:39:49,280
+this kind of thing because they feel like we're 
+giving them the straight talk and that's what  
+
+419
+00:39:49,280 --> 00:39:55,200
+we strive to do, that they can trust us, that 
+we're not going to paper things over or sugarcoat  
+
+420
+00:39:55,200 --> 00:40:02,160
+things. That's been really encouraging. 
+Yeah, I think for the blackmail thing,  
+
+421
+00:40:02,160 --> 00:40:08,960
+it blew up in the news in a weird way where people 
+were like, "Oh, Claude's going to blackmail you in  
+
+422
+00:40:08,960 --> 00:40:16,800
+a real life scenario." But it was a very specific 
+laboratory setting that this kind of thing gets  
+
+423
+00:40:16,800 --> 00:40:24,800
+investigated in. And I think that's generally our 
+take of let's have the best models so that we can  
+
+424
+00:40:24,800 --> 00:40:31,200
+exercise them in laboratory settings where it's 
+safe and understand what the actual risks are,  
+
+425
+00:40:31,200 --> 00:40:37,600
+rather than trying to turn a blind eye and 
+say, "Well, it'll probably be fine." And  
+
+426
+00:40:37,600 --> 00:40:43,520
+then let the bad thing happen in the wild.
+One of the criticisms you guys get is that you  
+
+427
+00:40:43,520 --> 00:40:49,520
+do this to kind of differentiate or raise 
+money to create headlines. It's like, oh,  
+
+428
+00:40:49,520 --> 00:40:54,480
+they're just over there dooming glooming us about 
+where the future is heading. On the other hand,  
+
+429
+00:40:54,480 --> 00:40:59,520
+Mike Krieger was on the podcast and he shared how 
+every prediction Dario's had about the progress  
+
+430
+00:40:59,520 --> 00:41:05,840
+AI is going to have is just spot on year 
+after year and he's predicting 2027, 28 AGI,  
+
+431
+00:41:05,840 --> 00:41:10,400
+something like that so these things start to 
+get real. I guess, what's your response to  
+
+432
+00:41:10,400 --> 00:41:15,440
+folks that are just like, "Ah, these guys are just 
+trying to scare us all just to get attention?"
+ 
+
+433
+00:41:15,440 --> 00:41:21,040
+I mean, I think part of why we publish these 
+things is we want other labs to be aware of  
+
+434
+00:41:21,040 --> 00:41:28,880
+the risks. And yes, there could be a narrative 
+of we're doing it for attention, but honestly  
+
+435
+00:41:28,880 --> 00:41:35,440
+from a attention grabbing thing, I think there 
+is a lot of other stuff we could be doing that  
+
+436
+00:41:36,560 --> 00:41:40,800
+would be more attention grabbing if 
+we didn't actually care about safety.  
+
+437
+00:41:42,080 --> 00:41:48,640
+A tiny example of this is we published a computer 
+using agent reference implementation in our API  
+
+438
+00:41:48,640 --> 00:41:54,480
+only because when we built a prototype 
+of a consumer application for this,  
+
+439
+00:41:54,480 --> 00:41:59,920
+we couldn't figure out how to meet the safety 
+bar that we felt was needed for people to trust  
+
+440
+00:41:59,920 --> 00:42:05,440
+it and for it not to do bad things. And there are 
+definitely safe ways to use the API version that  
+
+441
+00:42:05,440 --> 00:42:11,840
+we're seeing a lot of companies use for automated 
+software testing, for example, in a safe way.
+ 
+
+442
+00:42:12,720 --> 00:42:18,400
+We could have gone out and hyped that up and 
+said, "Oh my God, Claude can use your computer  
+
+443
+00:42:18,400 --> 00:42:24,320
+and everybody should do this today." But we were 
+like, "It's just not ready and we're going to hold  
+
+444
+00:42:24,320 --> 00:42:32,080
+it back till it's ready." I think from a hype 
+standpoint, our actions show otherwise. From a  
+
+445
+00:42:32,080 --> 00:42:40,560
+Doomer perspective, it's a good question. I think 
+my personal feeling about this is that things are  
+
+446
+00:42:40,560 --> 00:42:46,320
+overwhelmingly likely to go well, but on the 
+margin almost nobody is looking at the downside  
+
+447
+00:42:46,320 --> 00:42:53,200
+risk. And the downside risk is very large. Once 
+we get to superintelligence, it will be too late  
+
+448
+00:42:53,200 --> 00:42:58,880
+to align the models probably. This is a problem 
+that's potentially extremely hard and that we  
+
+449
+00:42:58,880 --> 00:43:04,320
+need to be working on way ahead of time. And so 
+that's why we're focusing on it so much now.
+ 
+
+450
+00:43:04,320 --> 00:43:08,080
+And even if there's only a small chance 
+that things go wrong, to make an analogy,  
+
+451
+00:43:08,080 --> 00:43:13,200
+if I told you that there is a 1% chance that the 
+next time you got in an airplane you would die,  
+
+452
+00:43:13,200 --> 00:43:17,920
+you probably think twice even though it's only 
+1% because it's just such a bad outcome. And if  
+
+453
+00:43:17,920 --> 00:43:26,400
+we're talking about the whole future of humanity, 
+it's just a dramatic future to be gambling with.  
+
+454
+00:43:26,400 --> 00:43:34,320
+I think it's more on the sense of yes, things will 
+probably go well, yes, we want to create safe AGI  
+
+455
+00:43:34,320 --> 00:43:40,640
+and deliver the benefits to humanity, but let's 
+make triple sure that it's going to go well.
+ 
+
+456
+00:43:40,640 --> 00:43:45,440
+You wrote somewhere that creating powerful AI 
+might be the last invention humanity ever needs to  
+
+457
+00:43:45,440 --> 00:43:50,320
+make. If it goes poorly, it can mean a bad outcome 
+for humanity forever. If it goes well, the sooner  
+
+458
+00:43:50,320 --> 00:43:56,640
+it goes well, the better. Such a beautiful 
+way to summarize it. We had a recent guest,  
+
+459
+00:43:56,640 --> 00:44:01,600
+Sandra Schulhoff, who pointed out that AI right 
+now it's like just on a computer, you could maybe  
+
+460
+00:44:01,600 --> 00:44:06,400
+search just the web, but there's only so much 
+harm it could do. But when it starts to go into  
+
+461
+00:44:06,400 --> 00:44:11,120
+robots and all these autonomous agents, that's 
+when it really starts, like physically becomes  
+
+462
+00:44:11,120 --> 00:44:15,120
+dangerous if we don't get this right.
+Yeah, I think there's some nuance to that  
+
+463
+00:44:15,120 --> 00:44:21,520
+where if you look at how North Korea makes a 
+significant fraction of its economy revenue,  
+
+464
+00:44:21,520 --> 00:44:27,440
+it's from hacking crypto exchanges. And if 
+you look at, there's this Ben Buchanan book  
+
+465
+00:44:27,440 --> 00:44:34,400
+called The Hacker in The State that shows Russia 
+did, it's almost like a live fire exercise where  
+
+466
+00:44:34,400 --> 00:44:40,080
+they just decided that they would shut down 
+one of Ukraine's bigger power plants and from  
+
+467
+00:44:40,080 --> 00:44:47,680
+software destroy physical components in the power 
+plant to make it harder to boot back up again.
+ 
+
+468
+00:44:47,680 --> 00:44:53,920
+And so I think people think of software as like, 
+oh, it couldn't be that dangerous, but millions of  
+
+469
+00:44:53,920 --> 00:44:59,840
+people were without power for multiple days after 
+that software attack. I think there are real risks  
+
+470
+00:44:59,840 --> 00:45:06,160
+even when things are software only. But I agree 
+that when there's lots of robots running around,  
+
+471
+00:45:06,160 --> 00:45:14,720
+it gets, the stakes get even higher. And I guess 
+as a small push on this, Unitree is this Chinese  
+
+472
+00:45:14,720 --> 00:45:20,320
+company with these really amazing humanoid 
+robots that cost $20,000 each, and they can  
+
+473
+00:45:20,320 --> 00:45:26,320
+do amazing things. They can do a standing back 
+flip and manipulate objects, and the real thing  
+
+474
+00:45:26,320 --> 00:45:31,520
+that's missing there is the intelligence. And so 
+the hardware is there and it's just going to get  
+
+475
+00:45:31,520 --> 00:45:38,400
+cheaper. And I think in the next couple of years, 
+it's like a pretty obvious question of whether the  
+
+476
+00:45:38,400 --> 00:45:44,160
+robot intelligence will make it viable soon.
+How much time do we have, Ben? What is your  
+
+477
+00:45:44,160 --> 00:45:49,360
+prediction of when this singularity hits 
+until superintelligence starts to take  
+
+478
+00:45:49,360 --> 00:45:54,720
+off? What's your prediction?
+Yeah, I guess I mostly defer to  
+
+479
+00:45:54,720 --> 00:46:02,000
+the superforecasters here. The AI 2027 report 
+is probably the best one right now. Although  
+
+480
+00:46:02,000 --> 00:46:09,280
+ironically, their forecast is now 2028, and they 
+didn't want to change the name of the thing-
+ 
+
+481
+00:46:09,280 --> 00:46:15,840
+The domain name, they already bought it.
+They already had the SEO. I think 50th percentile  
+
+482
+00:46:15,840 --> 00:46:22,720
+chance of hitting some kind of superintelligence 
+in just a small handful of years is probably  
+
+483
+00:46:22,720 --> 00:46:30,000
+reasonable. And it does sound crazy, but this 
+is the exponential that we're on. It's not like  
+
+484
+00:46:30,000 --> 00:46:37,360
+a forecast that's pulled out of thin air. It's 
+based on a lot of just hard details of the science  
+
+485
+00:46:37,360 --> 00:46:44,240
+of how intelligence seems to have been improving, 
+the amount of low hanging fruit on model training,  
+
+486
+00:46:44,240 --> 00:46:51,360
+the scale ups of data centers and power around 
+the world. I think it's probably a much more  
+
+487
+00:46:51,360 --> 00:46:56,160
+accurate forecast than people give it credit for.
+I think if you had asked that same question 10  
+
+488
+00:46:56,160 --> 00:47:01,360
+years ago, it would've been completely made up. 
+Just the error bars were so high and we didn't  
+
+489
+00:47:01,360 --> 00:47:05,520
+have scaling laws back then and we didn't have 
+techniques that seemed like they would get us  
+
+490
+00:47:05,520 --> 00:47:11,760
+there. Times have changed, but I will repeat 
+what I said earlier, which is even if we have  
+
+491
+00:47:11,760 --> 00:47:16,960
+superintelligence, I think it will take some time 
+for its effects to be felt throughout society and  
+
+492
+00:47:16,960 --> 00:47:22,960
+the world. And I think they'll be felt sooner and 
+faster in some parts of the world than others.  
+
+493
+00:47:23,600 --> 00:47:28,400
+I think Arthur C. Clark said, the future is 
+already here, it's just not evenly distributed.
+ 
+
+494
+00:47:28,400 --> 00:47:33,680
+When we talk about this date of 2027, 
+2028, essentially it's when we start seeing  
+
+495
+00:47:33,680 --> 00:47:37,440
+superintelligence. Is there a way you think 
+about what that... How do you define that?  
+
+496
+00:47:37,440 --> 00:47:42,400
+Is it just all of a sudden AI's significantly 
+smarter than the average human? Is there another  
+
+497
+00:47:42,400 --> 00:47:47,120
+way you think about what that moment is?
+Yeah, I think this comes back to the Economic  
+
+498
+00:47:47,120 --> 00:47:54,160
+Turing Test and seeing it pass for some sufficient 
+number of jobs. Another way you could look at it  
+
+499
+00:47:54,160 --> 00:48:02,400
+though is if the world rate of GDP increase 
+goes above 10% a year, then something really  
+
+500
+00:48:02,400 --> 00:48:08,640
+crazy must have happened. I think we're at 3% 
+now. And so to see a 3X increase in that would  
+
+501
+00:48:08,640 --> 00:48:15,120
+be really game changing. And if you imagine more 
+than a 10% increase, it's very hard to even think  
+
+502
+00:48:15,120 --> 00:48:24,720
+about what that would mean from a individual story 
+standpoint. If the amount of goods and services in  
+
+503
+00:48:24,720 --> 00:48:30,960
+the world is doubling every year, what does that 
+even mean for me as a person living in California,  
+
+504
+00:48:30,960 --> 00:48:36,320
+let alone somebody living in some other part 
+of the world that might be much worse off?
+ 
+
+505
+00:48:36,320 --> 00:48:40,240
+There's a lot of stuff here that's scary and I 
+don't know how to think about it exactly. I'm  
+
+506
+00:48:40,240 --> 00:48:46,160
+hoping the answer to this is going to make me 
+feel better. What are the odds that we align AI  
+
+507
+00:48:46,160 --> 00:48:49,760
+correctly and actually solve this problem, 
+the stuff you're very much working on?
+ 
+
+508
+00:48:49,760 --> 00:48:54,960
+It's a really hard question. And there's really 
+wide error bars. Anthropic has this blog post  
+
+509
+00:48:54,960 --> 00:49:02,480
+called Our Theory of Change or something like 
+that, and it describes three different worlds,  
+
+510
+00:49:02,480 --> 00:49:07,440
+which is how hard is it to align AI. There's 
+a pessimistic world where it is basically  
+
+511
+00:49:07,440 --> 00:49:13,280
+impossible. There's an optimistic world where 
+it's easy and it happens by default. And then  
+
+512
+00:49:13,280 --> 00:49:19,120
+there's the world in between where our actions 
+are extremely pivotal. And I like this framing  
+
+513
+00:49:19,120 --> 00:49:24,080
+because it makes it a lot more clear what to 
+actually do. If we're in the pessimistic world,  
+
+514
+00:49:24,080 --> 00:49:30,400
+then our job is to prove that it is impossible 
+to align safe AI and to get the world to slow  
+
+515
+00:49:30,400 --> 00:49:36,320
+down. Obviously that would be extremely hard. But 
+I think we have some examples of coordination from  
+
+516
+00:49:36,320 --> 00:49:43,840
+nuclear non-proliferation and in general slowing 
+down nuclear progress. And I think that's the  
+
+517
+00:49:43,840 --> 00:49:48,800
+Doomer world basically. And as a company, 
+Anthropic doesn't have evidence that we're  
+
+518
+00:49:48,800 --> 00:49:56,240
+actually in that world yet, in fact, it seems like 
+our alignment techniques are working. At least the  
+
+519
+00:49:56,240 --> 00:50:02,720
+prior on that is updating to be less likely.
+In the optimistic world, we're basically done,  
+
+520
+00:50:02,720 --> 00:50:08,320
+and our main job is to accelerate progress and to 
+deliver the benefits to people. But again, I think  
+
+521
+00:50:08,320 --> 00:50:13,440
+actually the evidence points against that world 
+as well where we've seen evidence in the wild  
+
+522
+00:50:13,440 --> 00:50:19,760
+of deceptive alignment, for example, where the 
+model will appear to be aligned but actually have  
+
+523
+00:50:19,760 --> 00:50:24,960
+some ulterior motive that it's trying to carry 
+out in our laboratory settings. And so I think  
+
+524
+00:50:24,960 --> 00:50:30,960
+the world we're most likely in is this middle 
+where alignment research actually does really  
+
+525
+00:50:30,960 --> 00:50:39,200
+matter. And if we just do sort of the economically 
+maximizing set of actions, then things will not go  
+
+526
+00:50:39,200 --> 00:50:45,840
+well. Whether it's an X risk or just produces 
+bad outcomes, I think is a bigger question.
+ 
+
+527
+00:50:47,280 --> 00:50:56,400
+Taking it from that standpoint, I guess 
+to state a thing about forecasting,  
+
+528
+00:50:56,400 --> 00:51:03,120
+people who haven't studied forecasting are bad 
+at forecasting anything that's less than a 10%  
+
+529
+00:51:03,120 --> 00:51:09,280
+probability of happening. And even those 
+that have, it's quite a difficult skill,  
+
+530
+00:51:09,280 --> 00:51:14,080
+especially when there are few reference classes to 
+lean on. And in this case, I think there are very,  
+
+531
+00:51:14,080 --> 00:51:21,680
+very few reference classes for what an X risk kind 
+of technology might look like. And so the way I  
+
+532
+00:51:21,680 --> 00:51:29,120
+think about it, I think my best granularity 
+of forecasts for could we have an X risk or  
+
+533
+00:51:29,120 --> 00:51:38,240
+extremely bad outcome from AI is somewhere between 
+0 and 10%. But from a marginal impact standpoint,  
+
+534
+00:51:38,240 --> 00:51:43,120
+as I said, since nobody is working on this, 
+roughly speaking, I think it is extremely  
+
+535
+00:51:43,120 --> 00:51:49,920
+important to work on and that even if the world 
+is likely to be a good one, that we should do our  
+
+536
+00:51:49,920 --> 00:51:55,520
+absolute best to make sure that that's true.
+Wow. What fulfilling work. For folks that are  
+
+537
+00:51:55,520 --> 00:52:00,800
+inspired with this? I imagine you're hiring for 
+folks to help you with this. Maybe just share that  
+
+538
+00:52:00,800 --> 00:52:06,240
+in case folks are like, what can I do here?
+Yes. I think 80,000 hours is the best guidance  
+
+539
+00:52:06,240 --> 00:52:13,040
+on this for a really detailed look into what do 
+we need to make the field better? But a common  
+
+540
+00:52:13,040 --> 00:52:18,080
+misconception I see is that in order to have 
+impact here, you have to be an AI researcher. I  
+
+541
+00:52:18,080 --> 00:52:23,440
+personally actually don't do AI research anymore. 
+I work on product at Anthropic and product  
+
+542
+00:52:23,440 --> 00:52:29,840
+engineering, and we build things like Claude Code 
+and Model Context Protocol, and a lot of the other  
+
+543
+00:52:29,840 --> 00:52:35,280
+stuff that people use every day. And that's 
+really important because without an economic  
+
+544
+00:52:35,280 --> 00:52:42,640
+engine for our company to work on, and without 
+being in people's hands all over the world,  
+
+545
+00:52:42,640 --> 00:52:49,280
+we won't have the mind policy influence and 
+revenue to fund our future safety research and  
+
+546
+00:52:49,280 --> 00:52:54,480
+have the kind of influence that we need to have. 
+If you work on product, if you work in finance,  
+
+547
+00:52:54,480 --> 00:53:02,160
+if you work in food, people here have to eat. If 
+you're a chef, we need all kinds of people.
+ 
+
+548
+00:53:02,160 --> 00:53:07,200
+Awesome. Even if you're not working 
+directly on the AI safety team,  
+
+549
+00:53:07,200 --> 00:53:12,160
+you're having an impact on moving things in the 
+right direction. By the way, X risk is short for  
+
+550
+00:53:12,160 --> 00:53:18,080
+existential risk. In case folks haven't heard 
+that term. I have a few random questions along  
+
+551
+00:53:18,080 --> 00:53:24,320
+these lines and then I want to zoom out again. 
+You mentioned this idea of AI being aligned  
+
+552
+00:53:24,320 --> 00:53:32,480
+using its model, like reinforcing itself. You have 
+this term RLAIF. Is that what that describes?
+ 
+
+553
+00:53:32,480 --> 00:53:38,000
+Yeah. RLAIF is reinforcement 
+learning from AI feedback.
+ 
+
+554
+00:53:39,440 --> 00:53:43,840
+People have heard of RLHF, reinforcement 
+learning with human feedback. I don't  
+
+555
+00:53:43,840 --> 00:53:48,000
+think a lot of people have heard this. Talk 
+about just the significance of this shift  
+
+556
+00:53:48,000 --> 00:53:54,640
+you guys have made in training your models.
+Yeah, so RLAIF, constitutional AI is an example  
+
+557
+00:53:54,640 --> 00:54:01,200
+of this where there are no humans in the loop, and 
+yet the AI is sort of self-improving in ways that  
+
+558
+00:54:01,200 --> 00:54:10,320
+we want it to. And another example of RLAIF is 
+if you have models writing code and other models  
+
+559
+00:54:10,320 --> 00:54:17,520
+commenting on various aspects of what that code 
+looks like of is it maintainable, is it correct,  
+
+560
+00:54:17,520 --> 00:54:25,840
+does it pass the linter? Things like that. That 
+also could be included in RLAIF. And the idea  
+
+561
+00:54:25,840 --> 00:54:32,080
+here is that if models can self-improve, then 
+it's a lot more scalable than finding a lot  
+
+562
+00:54:32,080 --> 00:54:40,560
+of humans. Ultimately, people think about this as 
+probably going to hit a wall because if the model  
+
+563
+00:54:40,560 --> 00:54:47,040
+isn't good enough to see its own mistakes, then 
+how could it improve? And also, if you read the  
+
+564
+00:54:47,040 --> 00:54:54,160
+AI 2027 story, there's a lot of risk of if the 
+model is in a box trying to improve itself,  
+
+565
+00:54:54,160 --> 00:55:00,480
+then it could go completely off the rails 
+and have these secret goals like resource  
+
+566
+00:55:00,480 --> 00:55:06,000
+accumulation and power seeking and resistance to 
+shut down that you really don't want in a very  
+
+567
+00:55:06,000 --> 00:55:10,960
+powerful model. And we've actually seen that in 
+some of our experiments in laboratory settings.
+ 
+
+568
+00:55:12,640 --> 00:55:18,320
+How do you do recursive self-improvement and 
+make sure it's aligned at the same time? I  
+
+569
+00:55:18,320 --> 00:55:25,120
+think that's the name of the game. To me, it 
+just nets out to how do humans do that and  
+
+570
+00:55:25,120 --> 00:55:34,320
+how do human organizations do that? Corporations 
+are probably the most scaled human agents today.  
+
+571
+00:55:34,320 --> 00:55:41,040
+They have certain goals that they're trying to 
+reach, and they have certain guiding principles,  
+
+572
+00:55:41,040 --> 00:55:45,920
+they have some oversight in terms of 
+shareholders and stakeholders and board  
+
+573
+00:55:45,920 --> 00:55:52,240
+members. How do you make corporations aligned 
+and able to sort of recursively self-improve?
+ 
+
+574
+00:55:52,240 --> 00:55:57,600
+And another model to look at is science, where 
+the purpose of science is to do things that have  
+
+575
+00:55:57,600 --> 00:56:02,400
+never been done before and push the frontier. 
+And to me, it all comes down to empiricism.  
+
+576
+00:56:03,280 --> 00:56:06,880
+When people don't know what the truth is, they 
+come up with theories and then they design  
+
+577
+00:56:06,880 --> 00:56:12,000
+experiments to try them out. And similarly, if we 
+can give models those same tools, then we could  
+
+578
+00:56:12,000 --> 00:56:18,160
+expect them to sort of improve recursively in an 
+environment and potentially become much better  
+
+579
+00:56:18,160 --> 00:56:24,720
+than humans could be just by banging their head 
+against reality or I guess metaphorical head.
+ 
+
+580
+00:56:26,080 --> 00:56:32,880
+I guess I don't expect there to be a wall in terms 
+of model's ability to improve themselves if we can  
+
+581
+00:56:32,880 --> 00:56:41,360
+give them access to the ability to be empirical. 
+And I guess Anthropic, deeply in its DNA is  
+
+582
+00:56:41,360 --> 00:56:48,240
+an empirical company. We have a lot of physicists 
+like Jared, who's our chief research officer who  
+
+583
+00:56:48,240 --> 00:56:55,040
+I've worked with a lot, was a professor of Black 
+Hole Physics at Johns Hopkins, and I guess he  
+
+584
+00:56:55,040 --> 00:57:04,000
+technically still is, but on leave. Yeah, it's 
+in our DNA and yeah, I guess that's the RLAIF.
+ 
+
+585
+00:57:04,640 --> 00:57:07,760
+Let me just follow this thread on, in terms 
+of bottleneck, this is kind of a tangent,  
+
+586
+00:57:07,760 --> 00:57:12,640
+but just what is the biggest bottleneck 
+today on model intelligence improvement?
+ 
+
+587
+00:57:12,640 --> 00:57:22,080
+The stupid answer is data centers and power chips. 
+I think if we had 10 times as many chips and had  
+
+588
+00:57:22,080 --> 00:57:28,560
+the data centers to power them, then maybe 
+we wouldn't go 10 times faster, but it would  
+
+589
+00:57:28,560 --> 00:57:32,160
+be a real significant speed boost.
+It's actually very much scaling loss,  
+
+590
+00:57:32,160 --> 00:57:36,000
+just more compute.
+Yeah, I think that's a big one. And then the  
+
+591
+00:57:36,000 --> 00:57:43,040
+people really matter. We have great researchers 
+and many of them have made really significant  
+
+592
+00:57:43,040 --> 00:57:51,040
+contributions to the science of how the models 
+improve. And so it's like compute, algorithms,  
+
+593
+00:57:51,040 --> 00:57:57,040
+and data. Those are the three ingredients in the 
+scaling laws. And just to make that concrete,  
+
+594
+00:57:57,040 --> 00:58:03,760
+before we had transformers, we had LSTMs and we've 
+done scaling laws on what the exponent is on those  
+
+595
+00:58:03,760 --> 00:58:08,560
+two things. And we found that for transformers, 
+the exponent is higher. And making changes  
+
+596
+00:58:08,560 --> 00:58:16,640
+like that where as you increase scale, you also 
+increase your ability to squeeze out intelligence.  
+
+597
+00:58:16,640 --> 00:58:21,840
+Those kinds of things are super impactful.
+And so having more researchers who can do  
+
+598
+00:58:21,840 --> 00:58:28,240
+better science and find out how do we squeeze out 
+more gains is another one. And then with the rise  
+
+599
+00:58:28,240 --> 00:58:32,800
+of reinforcement learning, the efficiency with 
+which these things run on chips also matters a  
+
+600
+00:58:32,800 --> 00:58:43,680
+lot. We've seen in the industry a 10X decrease in 
+cost for a given amount of intelligence through a  
+
+601
+00:58:43,680 --> 00:58:50,880
+combination of algorithmic data and efficiency 
+improvements. And if that continues, in three  
+
+602
+00:58:50,880 --> 00:58:56,160
+years we'll have 1,000 deck smarter models for 
+the same price. Kind of hard to imagine,
+ 
+
+603
+00:58:56,160 --> 00:59:00,160
+I forget where I heard this, but it's amazing 
+that so many innovations came together at the  
+
+604
+00:59:00,160 --> 00:59:05,040
+same time to allow for this sort of thing and 
+continue to progress where one thing isn't just  
+
+605
+00:59:05,040 --> 00:59:10,160
+slowing everything down like we're out of some 
+rare earth mineral or we just can't optimize  
+
+606
+00:59:11,120 --> 00:59:16,080
+reinforcement learning more. It's amazing that we 
+continue to find improvements and there isn't one  
+
+607
+00:59:16,080 --> 00:59:19,840
+thing that's just slowing everything down.
+Yeah, I think it really is just a combination  
+
+608
+00:59:19,840 --> 00:59:27,440
+of everything probably will hit a wall at some 
+point. I guess in semiconductors. My brother works  
+
+609
+00:59:27,440 --> 00:59:32,800
+in the semiconductor industry and he was telling 
+me that you can't actually shrink the size of the  
+
+610
+00:59:32,800 --> 00:59:41,040
+transistors anymore because the way semiconductors 
+work is you dope silicon with other elements and  
+
+611
+00:59:41,040 --> 00:59:50,160
+the doping process would result in either zero 
+or one atom of the doped elements inside a single  
+
+612
+00:59:50,160 --> 00:59:53,280
+fin because they're so, so, so tiny.
+Oh my God.
+ 
+
+613
+00:59:53,280 --> 01:00:01,760
+And that's just wild to think of, and yet Moore's 
+law somehow continues in some form. And so yes,  
+
+614
+01:00:01,760 --> 01:00:05,280
+there are these theoretical physics 
+constraints that people are starting to run  
+
+615
+01:00:05,280 --> 01:00:09,680
+into and yet they're finding ways around it.
+We've got to start using parallel universes for  
+
+616
+01:00:09,680 --> 01:00:12,000
+some of this stuff.
+I guess so.
+ 
+
+617
+01:00:12,000 --> 01:00:16,160
+Okay, I want to zoom out and talk about just 
+Ben, Ben as a human for a moment before we get  
+
+618
+01:00:16,160 --> 01:00:23,200
+to a very exciting lightning round. I imagine 
+just kind of the burden of feeling responsible  
+
+619
+01:00:23,200 --> 01:00:28,080
+for safe superintelligence is a heavy one. 
+It feels like you're in a place where you  
+
+620
+01:00:28,080 --> 01:00:34,800
+can make a significant impact on the future of 
+safety and AI. That's a lot of weight to carry.  
+
+621
+01:00:34,800 --> 01:00:38,640
+How does that just impact you personally, 
+impact your life, how you see the world?
+ 
+
+622
+01:00:39,520 --> 01:00:46,400
+There's this book that I read in 2019 that really 
+informs how I think about sort of working with  
+
+623
+01:00:46,400 --> 01:00:52,560
+these very weighty topics called Replacing 
+Guilt by Nate Soares. And he describes a lot  
+
+624
+01:00:52,560 --> 01:00:58,000
+of different techniques for kind of working 
+through this kind of thing. And he's actually  
+
+625
+01:00:58,000 --> 01:01:02,160
+the executive director at MIRI, the Machine 
+Intelligence Research Institute, which is  
+
+626
+01:01:03,040 --> 01:01:10,320
+an AI safety tank that I worked at for a couple 
+of months actually. And one of the things he talks  
+
+627
+01:01:10,320 --> 01:01:18,560
+about is this thing called resting in motion where 
+some people think that the default state is rest,  
+
+628
+01:01:18,560 --> 01:01:27,200
+but actually that was never in the state of 
+evolutionary adaptation. I really doubt that  
+
+629
+01:01:27,200 --> 01:01:33,040
+that was true. Where in nature, in the wilderness 
+being hunter-gatherers and it's really unlikely  
+
+630
+01:01:33,040 --> 01:01:40,960
+that we evolved to just be at leisure, probably 
+always have something to worry about of defending  
+
+631
+01:01:40,960 --> 01:01:46,240
+the tribe and finding enough food to survive 
+and taking care of the children, dealing-
+ 
+
+632
+01:01:46,240 --> 01:01:50,240
+Spreading our genes.
+And so I think about that as  
+
+633
+01:01:52,320 --> 01:01:57,680
+the busy state is the normal state and to try to 
+work at a sustainable pace that it's a marathon,  
+
+634
+01:01:57,680 --> 01:02:04,640
+not a sprint, that's one thing that helps. And 
+then just being around like-minded people that  
+
+635
+01:02:04,640 --> 01:02:12,320
+also care. It's not a thing that any of us can 
+do alone. And Anthropic has incredible talent  
+
+636
+01:02:12,320 --> 01:02:17,120
+density. One of the things I love the most about 
+our culture here is that it's very egoless. People  
+
+637
+01:02:17,120 --> 01:02:24,160
+just want the right thing to happen and I think 
+that's another big reason that the mega offers  
+
+638
+01:02:24,160 --> 01:02:30,720
+from other companies tend to bounce off because 
+people just love being here and they care.
+ 
+
+639
+01:02:30,720 --> 01:02:35,360
+That's amazing. I don't know how you do it. I'd be 
+extremely stressed. I'm going to try this resting  
+
+640
+01:02:35,360 --> 01:02:41,440
+in motion strategy. Okay, so you've been at 
+Anthropic for a long time. From the very beginning  
+
+641
+01:02:41,440 --> 01:02:46,640
+I was reading there were 7 employees back in 2020. 
+Today there's over 1,000, I don't know what the  
+
+642
+01:02:46,640 --> 01:02:51,840
+latest number is, but I know it's over 1,000. I've 
+heard also that you've done basically every job  
+
+643
+01:02:51,840 --> 01:02:58,560
+at Anthropic, you made big contributions to a lot 
+of the core products, the brand, the team hiring.  
+
+644
+01:02:58,560 --> 01:03:02,880
+Let me just ask I guess what's most changed 
+over that period? What is most different from  
+
+645
+01:03:02,880 --> 01:03:07,760
+the beginning days and which of those jobs that 
+you've had over the years have you most loved?
+ 
+
+646
+01:03:07,760 --> 01:03:13,120
+I probably had 15 different roles, honestly. 
+I was head of security for a bit. I managed  
+
+647
+01:03:13,120 --> 01:03:18,320
+the Ops team when our president was on mat 
+leave, I was crawling around under tables,  
+
+648
+01:03:18,320 --> 01:03:25,520
+plugging in HDMI cords and doing pen testing on 
+our building. And I started our product team from  
+
+649
+01:03:25,520 --> 01:03:29,520
+scratch and convinced the whole company that 
+we needed to have a product instead of just  
+
+650
+01:03:29,520 --> 01:03:38,240
+being a research company. Yeah, it's been a lot. 
+All of it very fun. I think my favorite role in  
+
+651
+01:03:38,240 --> 01:03:44,240
+that time has been when I started the labs team 
+about a year ago, whose fundamental goal was to  
+
+652
+01:03:44,240 --> 01:03:52,800
+do transfer from research to end user products 
+and experiences. Because fundamentally I think  
+
+653
+01:03:52,800 --> 01:03:58,960
+the way that Anthropic can differentiate itself 
+and really win is to be on the cutting edge.  
+
+654
+01:03:58,960 --> 01:04:04,240
+We have access to the latest, greatest stuff 
+that's happening and I think honestly through  
+
+655
+01:04:04,240 --> 01:04:11,440
+our safety research we have a big opportunity to 
+do things that no other company can safely do.
+ 
+
+656
+01:04:11,440 --> 01:04:14,960
+For example, with computer use, I think 
+that's going to be our huge opportunity  
+
+657
+01:04:14,960 --> 01:04:20,800
+basically to make it possible for an agent 
+to use all your credentials on your computer,  
+
+658
+01:04:20,800 --> 01:04:25,680
+there has to be a huge amount of trust and to me 
+we need to basically solve safety to make that  
+
+659
+01:04:25,680 --> 01:04:31,920
+happen. Safety and alignment. I'm pretty bullish 
+on that kind of thing and I think we're going to  
+
+660
+01:04:31,920 --> 01:04:37,360
+see really cool stuff coming out soonish. Yeah, 
+just leading that team has been so fun. MCP came  
+
+661
+01:04:37,360 --> 01:04:46,160
+out of that team and Claude Code came out of that 
+team. And the people who I hired are like combo,  
+
+662
+01:04:46,160 --> 01:04:51,120
+have been a founder and also have been at 
+big companies and seeing how things work at  
+
+663
+01:04:51,120 --> 01:04:57,600
+scale. It's just been an incredible team to 
+work with and figure out the future with.
+ 
+
+664
+01:04:57,600 --> 01:05:00,640
+I want to hear more about this. Team actually the 
+person that connected us, the reason we're doing  
+
+665
+01:05:00,640 --> 01:05:05,040
+this is a mutual friend colleague Raph Lee who 
+I used to work with at Airbnb now works on this  
+
+666
+01:05:05,040 --> 01:05:09,360
+team, leads a lot of this work and so he wanted 
+me to make sure I asked about this team because...  
+
+667
+01:05:09,920 --> 01:05:13,760
+I didn't realize all these things came out 
+that team. Holy moly. What else should people  
+
+668
+01:05:13,760 --> 01:05:16,640
+know about this team? It used to be called 
+Labs, I think it's called Frontiers now.
+ 
+
+669
+01:05:16,640 --> 01:05:19,520
+That's right. Yeah.
+Cool. The idea here is  
+
+670
+01:05:19,520 --> 01:05:24,640
+this team works with the latest technologies 
+that you guys have built and explores what  
+
+671
+01:05:24,640 --> 01:05:30,480
+is possible. Is that the general idea?
+Yeah, and I guess I was part of Google's  
+
+672
+01:05:30,480 --> 01:05:37,360
+Area 120 and I've read about Bell Labs and 
+how to make these innovation teams work. It's  
+
+673
+01:05:37,360 --> 01:05:40,880
+really hard to do right and I wouldn't 
+say that we've done everything right,  
+
+674
+01:05:40,880 --> 01:05:48,080
+but I think we've done some serious innovation on 
+the state-of-the-art from company design and Raph  
+
+675
+01:05:48,080 --> 01:05:52,880
+has been right at the center of that. When I was 
+first fitting up the team, the first thing I did  
+
+676
+01:05:52,880 --> 01:05:59,600
+was hire a great manager and that was Raph. And so 
+he's definitely been crucial in building the team  
+
+677
+01:05:59,600 --> 01:06:05,280
+and helping it operate well. And we defined some 
+operating models like the journey of an idea from  
+
+678
+01:06:05,280 --> 01:06:11,600
+prototype to product and how should graduation 
+of products and projects work, how do teams  
+
+679
+01:06:12,160 --> 01:06:17,280
+do sprint models that are effective and make 
+sure that they're working on the right ambition  
+
+680
+01:06:17,280 --> 01:06:26,080
+level of thing. That's been really exciting.
+I guess concretely we think about skating to  
+
+681
+01:06:26,080 --> 01:06:32,160
+where the puck is going and what that looks 
+like is really understand the exponential.  
+
+682
+01:06:32,720 --> 01:06:40,320
+There's this great study that METR has done that 
+Beth Barnes is the CEO of that organization and  
+
+683
+01:06:41,120 --> 01:06:46,960
+shows how long a time horizon of software 
+engineering task can be done and just really  
+
+684
+01:06:46,960 --> 01:06:52,480
+internalizing that of, okay, don't build for 
+today, build for six months from now, build  
+
+685
+01:06:52,480 --> 01:06:57,200
+for a year from now. And the things that aren't 
+quite working that are working 20% of the time,  
+
+686
+01:06:57,200 --> 01:07:02,000
+will start working 100% of the time. And I 
+think that's really what made Claude Code  
+
+687
+01:07:02,000 --> 01:07:07,120
+a success that we thought people are not going 
+to be locked to their IDEs forever. People are  
+
+688
+01:07:07,120 --> 01:07:14,960
+not going to be auto completing. People will 
+be doing everything that a software engineer  
+
+689
+01:07:14,960 --> 01:07:18,720
+needs to do and a terminal is a great place 
+to do that because a terminal can live in  
+
+690
+01:07:18,720 --> 01:07:24,400
+lots of places. A terminal can live on your 
+local machine, it can live in GitHub actions,  
+
+691
+01:07:24,400 --> 01:07:31,040
+it can live on a remote machine in your cluster.
+That's sort of the leverage point for us  
+
+692
+01:07:31,760 --> 01:07:35,920
+and that was a lot of the inspiration. 
+I think that's what the labs team tries  
+
+693
+01:07:35,920 --> 01:07:41,520
+to think about. Are we AGI-pilled enough?
+What a fun place to be. By the way, fun fact,  
+
+694
+01:07:41,520 --> 01:07:46,320
+Raph was my first manager at Airbnb when I joined. 
+I was an engineer and he was my first manager. It  
+
+695
+01:07:46,320 --> 01:07:48,320
+all worked out.
+Cool.
+

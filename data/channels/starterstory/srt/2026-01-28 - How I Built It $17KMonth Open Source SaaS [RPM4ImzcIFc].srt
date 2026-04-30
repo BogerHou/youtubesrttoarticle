@@ -1,0 +1,1399 @@
+1
+00:00:00,000 --> 00:00:03,200
+Here is everything I know about marketing in open source.
+
+2
+00:00:03,200 --> 00:00:04,480
+>> This is Nevo.
+
+3
+00:00:04,480 --> 00:00:10,480
+His app makes $17,000 a month thanks to two words, open source.
+
+4
+00:00:10,480 --> 00:00:14,480
+>> Open source is a way to introduce your project to millions of developers.
+
+5
+00:00:14,480 --> 00:00:24,400
+>> While you may be familiar with the concept of open source software, what is not talked about enough is how building an open source can actually get you access to thousands of users and help
+
+6
+00:00:24,400 --> 00:00:27,439
+your software stand out in a sea of competition.
+
+7
+00:00:27,439 --> 00:00:31,119
+Thanks to open source, my app has been downloaded 5 million times.
+
+8
+00:00:31,119 --> 00:00:37,520
+>> I asked Nevo to come onto the channel and explain all of this to me along with his full open source playbook,
+
+9
+00:00:37,520 --> 00:00:46,640
+including the one secret to actually crushing it in open source, his step-by-step playbook on exactly how to have an epic open source launch,
+
+10
+00:00:46,640 --> 00:00:51,440
+and how he would start over building [music] anything in open source in 2026.
+
+11
+00:00:51,440 --> 00:00:53,039
+All right, let's get into it.
+
+12
+00:00:53,039 --> 00:00:58,320
+I'm Pat Walls, and this is Starter Story.
+
+13
+00:00:58,559 --> 00:01:01,920
+Real quick, Nevo is about to break down how to make it in open source.
+
+14
+00:01:01,920 --> 00:01:07,600
+And look, this episode is not about building, it's about distribution, which [music] if you watch this channel,
+
+15
+00:01:07,600 --> 00:01:10,799
+this is the story we hear over and over and over.
+
+16
+00:01:10,799 --> 00:01:14,080
+This is what it actually takes to build a successful business.
+
+17
+00:01:14,080 --> 00:01:21,200
+If distribution is something that you're serious about, well, I put together a quick resource for you called the niche communities playbook.
+
+18
+00:01:21,200 --> 00:01:26,560
+Inside, we've got tons of data and examples on how to promote your app on places like Reddit,
+
+19
+00:01:26,560 --> 00:01:33,119
+Facebook groups, [music] X, Open Source, and dozens of other marketing channels that founders are actually using to grow their business today.
+
+20
+00:01:33,119 --> 00:01:37,520
+If you want it, just go ahead and grab it for free right down there below in the description.
+
+21
+00:01:37,520 --> 00:01:40,000
+But otherwise, let's get into the interview.
+
+22
+00:01:40,000 --> 00:01:41,920
+All right, Nevo, welcome to the channel.
+
+23
+00:01:41,920 --> 00:01:44,560
+Tell me about who you are, what you built, and what's your story.
+
+24
+00:01:44,560 --> 00:01:54,799
+Hi, my name is Neo and I build the biggest open-source social media scheduling tool that allows you to schedule your post for 25 social media platforms with a lot of help of AI.
+
+25
+00:01:54,799 --> 00:01:57,759
+Post is currently making $17K per month.
+
+26
+00:01:57,759 --> 00:02:08,560
+One of the reasons for Posti success is being open source and I think this is a great opportunity for any builder that trying to build an app in 2026 and I'm super excited to tell
+
+27
+00:02:08,560 --> 00:02:13,840
+you about it and tell you how you can get huge growth when you go open source.
+
+28
+00:02:13,840 --> 00:02:14,720
+Okay, open source.
+
+29
+00:02:14,720 --> 00:02:16,480
+I'm excited to talk about it today.
+
+30
+00:02:16,480 --> 00:02:21,440
+Before we get into all that, can you just show me what you build, what's the business model,
+
+31
+00:02:21,440 --> 00:02:25,520
+and then maybe pull up some of the revenue dashboards so we can show that this is this is legit.
+
+32
+00:02:25,520 --> 00:02:28,879
+>> So, we are Posties, open- source social media scheduling tool.
+
+33
+00:02:28,879 --> 00:02:29,920
+This is our main landing page.
+
+34
+00:02:29,920 --> 00:02:33,200
+We support the biggest amount of social media uh channels, 25.
+
+35
+00:02:33,200 --> 00:02:36,560
+So, Posties is a is operating on a SAS module.
+
+36
+00:02:36,560 --> 00:02:42,879
+We have here a few packages, standard team, pro and ultimate, very similar to other social media scheduling tools.
+
+37
+00:02:42,879 --> 00:02:44,720
+depends on the tier that you take.
+
+38
+00:02:44,720 --> 00:02:47,440
+You get different amount of channels and different features.
+
+39
+00:02:47,440 --> 00:02:55,280
+We want uh people to use the standard package, but we also want to upsell people to the other packages based on features and not only based on channels.
+
+40
+00:02:55,280 --> 00:02:58,400
+So, our revenue, we're currently on 17K MR.
+
+41
+00:02:58,400 --> 00:03:01,120
+We have 472 subscribers.
+
+42
+00:03:01,120 --> 00:03:05,120
+We have a very high churn that we're trying to drop right now on 19%.
+
+43
+00:03:05,120 --> 00:03:10,560
+We're getting 3,830 trials since August 20 uh 25.
+
+44
+00:03:10,560 --> 00:03:13,360
+trial to conversion rate 21%.
+
+45
+00:03:13,360 --> 00:03:17,280
+So our open source is the same as our SAS offering.
+
+46
+00:03:17,280 --> 00:03:22,400
+Developers can come and just self host this on their machine and they will need to do all the hard work.
+
+47
+00:03:22,400 --> 00:03:28,080
+They will need to go approve every provider with any social media and they can just use it on their computer.
+
+48
+00:03:28,080 --> 00:03:36,239
+There is no difference and there is different open- source modules between companies but for us there is no difference between the open source and the cloud offering.
+
+49
+00:03:36,239 --> 00:03:37,599
+You can self-host posties.
+
+50
+00:03:37,599 --> 00:03:39,840
+We put a lot of docs on how to self-host it.
+
+51
+00:03:39,840 --> 00:03:51,280
+Opus is a really great way to penetrate into mess markets because it's just a kind of like a blue ocean inside all these flooded millions of companies because postis for example is a social media scheduling tool.
+
+52
+00:03:51,280 --> 00:03:59,920
+We have tons of alternative if you look for social media scheduling tool like thousands still we are managing to grow our revenue and put our face out there.
+
+53
+00:03:59,920 --> 00:04:05,360
+It's just another [music] way to penetrate the market be transparent and get fast feedback.
+
+54
+00:04:05,360 --> 00:04:09,680
+Okay, let's get into a little bit more about open source and your background.
+
+55
+00:04:09,680 --> 00:04:15,120
+How do you get into this open source space and eventually build an app that's doing 17,000 MR?
+
+56
+00:04:15,120 --> 00:04:25,360
+I was not an open-source person overall just a developer for many many many years but I was working in a co-working space and [music] I met some few cool
+
+57
+00:04:25,360 --> 00:04:34,240
+people that building uh an open-source uh infrastructure [music] tool for sending notifications and I joined a company and I was in this company for 2
+
+58
+00:04:34,240 --> 00:04:42,160
+years we go from zero to 32,000 stars and I've never seen growth like that before in open source in my life.
+
+59
+00:04:42,160 --> 00:04:46,000
+Right after that I've seen more and more companies going open source.
+
+60
+00:04:46,000 --> 00:04:55,919
+So in the second year I started to do a lot of consulting very nichy consulting because I was the only person talking about that and I worked for that for around a year
+
+61
+00:04:55,919 --> 00:05:05,680
+and doing so many consultation just freaked me out and stress from doing so many meeting and talking to so many people and I wanted to go back to what I like the most building products and this
+
+62
+00:05:05,680 --> 00:05:15,680
+is when I started to build hosties open source of course [music] and everything else I've built so far is open source >> neo's story is pretty unique [music] right?
+
+63
+00:05:15,680 --> 00:05:21,039
+He grew his open source project to $17,000 a month purely through marketing in open source communities.
+
+64
+00:05:21,039 --> 00:05:26,160
+And if you know anything about open source communities is that they love transparency.
+
+65
+00:05:26,160 --> 00:05:28,639
+They'll grill you about security and compliance.
+
+66
+00:05:28,639 --> 00:05:36,160
+And they might even ask you questions about SOCK 2 compliance and ISO 2701, terms you might not even be familiar with.
+
+67
+00:05:36,160 --> 00:05:42,320
+And when you don't have answers to those questions, suddenly you're spending days filling out forms instead of building your product.
+
+68
+00:05:42,320 --> 00:05:44,560
+Well, that's where Delve comes in.
+
+69
+00:05:44,560 --> 00:05:50,639
+Delve is the first AI native compliance platform [music] built specifically for fast growing startups.
+
+70
+00:05:50,639 --> 00:05:58,320
+Their agents help you handle the repetitive stuff, monitoring your tech stack for security gaps and autofilling security questionnaires so you don't have to.
+
+71
+00:05:58,320 --> 00:06:02,400
+Thousands of fast growing startups trust Delve to get compliant fast.
+
+72
+00:06:02,400 --> 00:06:10,240
+Delve is offering an exclusive $1,000 discount just for Starter Story listeners and you [music] won't find this deal anywhere else.
+
+73
+00:06:10,240 --> 00:06:18,160
+So, if you're ready to get compliant without the headache, check out Delve in the link in the description or go to delve.co/starter story.
+
+74
+00:06:18,160 --> 00:06:20,720
+Thanks to Delve for sponsoring today's episode.
+
+75
+00:06:20,720 --> 00:06:22,400
+Let's get back to the story.
+
+76
+00:06:22,400 --> 00:06:28,400
+All right, so you're kind of going deep on this idea of open source and marketing and the combination of the two,
+
+77
+00:06:28,400 --> 00:06:33,280
+but I do want to take a step back and just talk about the opportunity of open source right here.
+
+78
+00:06:33,280 --> 00:06:37,759
+You saw this sort of little opening in the crazy world of software.
+
+79
+00:06:37,759 --> 00:06:40,400
+There's so many people building so many different things.
+
+80
+00:06:40,400 --> 00:06:46,800
+Tell me about why you think open source is such a great place to be building right now in 2026.
+
+81
+00:06:46,800 --> 00:06:50,319
+>> I think today everybody can literally build almost anything.
+
+82
+00:06:50,319 --> 00:06:57,759
+And I think this is why this should be the year of open source compared to previous years because everything that you can build somebody else can build.
+
+83
+00:06:57,759 --> 00:06:59,120
+So why not go open source?
+
+84
+00:06:59,120 --> 00:07:01,039
+The market is already flooded.
+
+85
+00:07:01,039 --> 00:07:06,800
+There's already so many competitors there like tons of SAS going out every day compared to a few years ago.
+
+86
+00:07:06,800 --> 00:07:10,339
+You need to find some differentiation with what you build.
+
+87
+00:07:10,339 --> 00:07:14,639
+[music] So open source is a great way to introduce your project to a million of developers.
+
+88
+00:07:14,639 --> 00:07:18,240
+Developers are not buying persona and they will probably not pay you.
+
+89
+00:07:18,240 --> 00:07:22,000
+So don't try to find some elaborate way to make them to pay you.
+
+90
+00:07:22,000 --> 00:07:26,880
+You just need to make like a very good docs and make sure they know how to use your SAS.
+
+91
+00:07:26,880 --> 00:07:29,840
+You can look at this as kind of like a free tier to your SAS.
+
+92
+00:07:29,840 --> 00:07:34,000
+Just you don't pay for any usage for it because people just deploy it on their own computer.
+
+93
+00:07:34,000 --> 00:07:36,479
+they just use it maybe with their customers and so on.
+
+94
+00:07:36,479 --> 00:07:39,759
+So developer will not pay you but here is what they will do for you.
+
+95
+00:07:39,759 --> 00:07:41,599
+They will help to build your brand.
+
+96
+00:07:41,599 --> 00:07:43,680
+They will talk to a lot of people.
+
+97
+00:07:43,680 --> 00:07:49,360
+Maybe they are working in a company where there's already other people that are not developers and they are looking for a solution right now.
+
+98
+00:07:49,360 --> 00:07:50,479
+Okay, I know this thing.
+
+99
+00:07:50,479 --> 00:07:53,120
+So word of mouth is like a really great channels.
+
+100
+00:07:53,120 --> 00:07:56,000
+Tons of user generated content on social media.
+
+101
+00:07:56,000 --> 00:08:02,479
+So every time I go and I search for posties on social media every day I see some post about some developer trying to sell posties.
+
+102
+00:08:02,479 --> 00:08:14,319
+you get tons of developer actually you know contributing to your product so I can't say that it's making you more productive when people contribute to your product but it gives you tons of feedback and let you to find
+
+103
+00:08:14,319 --> 00:08:23,599
+bags much faster iterate on them and find new features because they are actually part of your community they are like advocate of your product except for that you can start to see a lot of blog
+
+104
+00:08:23,599 --> 00:08:32,560
+post around what you are building so I see tons of SEO just from people writing about how to use posties or putting a review about postis somewhere.
+
+105
+00:08:32,560 --> 00:08:39,680
+There is also tons of options to list your product in different directory that have a very high domain authority,
+
+106
+00:08:39,680 --> 00:08:41,200
+domain ranking for SEO.
+
+107
+00:08:41,200 --> 00:08:45,680
+It also increase your credibility in general as uh from non-developers.
+
+108
+00:08:45,680 --> 00:08:50,240
+They come they see there is a GitHub there was contribution not so long ago.
+
+109
+00:08:50,240 --> 00:08:54,000
+There is a g commit just made a few days ago.
+
+110
+00:08:54,000 --> 00:08:57,040
+They can see that the product is actually active.
+
+111
+00:08:57,040 --> 00:09:06,480
+And then there is the one thing many people do and this is usually where the biggest money lies in open source and it's self-hosting enterprise support.
+
+112
+00:09:06,480 --> 00:09:14,240
+So imagine for example I build a social media scheduling tool but I'm dealing with an enterprise that will never put their information outside.
+
+113
+00:09:14,240 --> 00:09:18,080
+They will probably want to self-host this but they will also need support.
+
+114
+00:09:18,080 --> 00:09:25,600
+And this is usually where most of these companies uh the one the funded one or the one that have enough motivation to do enterprise sales uh find money.
+
+115
+00:09:25,600 --> 00:09:28,160
+So you shouldn't be afraid to go open source.
+
+116
+00:09:28,160 --> 00:09:34,000
+Don't be afraid for somebody copying your product because today the only thing that is winning usually is brand.
+
+117
+00:09:34,000 --> 00:09:41,120
+And I've seen so many people come and copy post this and self-host it somewhere as a totally different solution just competing with me.
+
+118
+00:09:41,120 --> 00:09:50,320
+And I like [gasps] I'm so stressed and after checking this one week two two weeks later I see that they just abandoned [music] the project because there is no way that you are the brand.
+
+119
+00:09:50,320 --> 00:09:52,880
+You are the one that created this open source solution.
+
+120
+00:09:52,880 --> 00:09:59,040
+Anybody that will compete with you will always be one step behind you and probably just abandon it at some point.
+
+121
+00:09:59,040 --> 00:10:09,040
+>> I mean I I agree 100% in a world where AI can write any code and is actually probably referencing open source code itself to write that code.
+
+122
+00:10:09,040 --> 00:10:11,040
+What is the value of code anymore?
+
+123
+00:10:11,040 --> 00:10:12,640
+There's really not a whole lot.
+
+124
+00:10:12,640 --> 00:10:21,839
+It's as you said it's in brand and open source is a great way to build a brand especially as a bootstrapped builder where you're essentially getting free distribution.
+
+125
+00:10:21,839 --> 00:10:22,959
+I really like this model.
+
+126
+00:10:22,959 --> 00:10:29,440
+If you were to start over today and maybe go in to a different category, maybe it's not social media schedulers,
+
+127
+00:10:29,440 --> 00:10:35,440
+what would be your advice or your playbook for someone who wants to start out in open source right now in 2026?
+
+128
+00:10:35,440 --> 00:10:45,200
+>> So, I have my own playbook and this is what I've done with so many companies I've worked with while I I did consulting and I'm just going to share my entire playbook of what what I did.
+
+129
+00:10:45,200 --> 00:10:46,640
+So, here is what you need to do.
+
+130
+00:10:46,640 --> 00:10:51,120
+First of all, you need to start a preparation in a normal marketing way.
+
+131
+00:10:51,120 --> 00:10:53,680
+your GitHub become your landing page.
+
+132
+00:10:53,680 --> 00:10:55,440
+That's like your marketing landing page.
+
+133
+00:10:55,440 --> 00:10:59,040
+So, you should treat it the same thing as you treat your main website even better.
+
+134
+00:10:59,040 --> 00:11:03,040
+You can just literally go to the post repository and look how I build it.
+
+135
+00:11:03,040 --> 00:11:09,040
+If you're trying to create something completely new, write everything try to make people understand what you build.
+
+136
+00:11:09,040 --> 00:11:17,920
+If you already have an alternative, the best way to do is to write that you are an open- source alternative to something that give the fastest context to people to understand what you're building.
+
+137
+00:11:17,920 --> 00:11:19,680
+Then add your license to the project.
+
+138
+00:11:19,680 --> 00:11:24,880
+if you have three main licenses for open source which is MIT, Apache 2 and AGPL3.
+
+139
+00:11:24,880 --> 00:11:27,200
+So really check what license you want to go with.
+
+140
+00:11:27,200 --> 00:11:34,000
+Then you want to go and create some issues on your GitHub repository for different feature you want people to uh create for you.
+
+141
+00:11:34,000 --> 00:11:38,240
+Developers that come to your GitHub usually don't know exactly what you're building.
+
+142
+00:11:38,240 --> 00:11:41,040
+They don't have in mind exactly what they're going to work on.
+
+143
+00:11:41,040 --> 00:11:45,040
+If you create an issue for them, it's a lot easier for them to just come in and just tell you,
+
+144
+00:11:45,040 --> 00:11:46,959
+can you please assign me to this issue?
+
+145
+00:11:46,959 --> 00:11:51,680
+That's much much easier to get code faster than people figuring out what to open for you.
+
+146
+00:11:51,680 --> 00:11:54,560
+You want to open a discord server so developer can join fast.
+
+147
+00:11:54,560 --> 00:11:58,480
+Go to post discord and just copy the channels list the same thing as I did.
+
+148
+00:11:58,480 --> 00:12:01,920
+Make sure you have docs for developers to know how to deploy their project.
+
+149
+00:12:01,920 --> 00:12:02,959
+This is super important.
+
+150
+00:12:02,959 --> 00:12:05,440
+If they don't know how to deploy their project, they will just churn.
+
+151
+00:12:05,440 --> 00:12:06,880
+They will not clone your repository.
+
+152
+00:12:06,880 --> 00:12:08,240
+You will not become trending.
+
+153
+00:12:08,240 --> 00:12:10,639
+It's a lot better to create a docker for your project.
+
+154
+00:12:10,639 --> 00:12:14,720
+So if you have a docker, the deployment is much much much much easier.
+
+155
+00:12:14,720 --> 00:12:17,360
+And this is everything you need to do for the open source [music] part.
+
+156
+00:12:17,360 --> 00:12:20,560
+So step number two is bringing traffic to your project.
+
+157
+00:12:20,560 --> 00:12:24,160
+So as I said before, you want to get into the main GitHub trending feed.
+
+158
+00:12:24,160 --> 00:12:28,480
+And to do that, you want to get as maximum traffic as possible in the shortest amount of time.
+
+159
+00:12:28,480 --> 00:12:31,760
+This is what I call the launch and get as much traffic as possible.
+
+160
+00:12:31,760 --> 00:12:35,279
+To prepare for your launch, you will need a few accounts in few places.
+
+161
+00:12:35,279 --> 00:12:38,480
+So you will want to register to HackerNews like 2 weeks beforehand.
+
+162
+00:12:38,480 --> 00:12:42,720
+You also want to register to Reddit, but try to do a little bit of work before.
+
+163
+00:12:42,720 --> 00:12:47,120
+get your karma a little bit up because if you don't have karma in Reddit, you won't be able to post there.
+
+164
+00:12:47,120 --> 00:12:49,040
+Almost all your posts will be filtered.
+
+165
+00:12:49,040 --> 00:12:52,399
+Then you have something that you probably never heard before which is called Lei.
+
+166
+00:12:52,399 --> 00:12:54,320
+This is an alternative to [music] Reddit.
+
+167
+00:12:54,320 --> 00:12:58,959
+They're not really good at anything else except for open source for people that want to do marketing.
+
+168
+00:12:58,959 --> 00:13:00,399
+But with open source, they are crazy.
+
+169
+00:13:00,399 --> 00:13:04,639
+Every time I post something on Lei, it's getting at least 100 up votes.
+
+170
+00:13:04,639 --> 00:13:06,160
+Great way to post your stuff.
+
+171
+00:13:06,160 --> 00:13:07,760
+Lemie is a self-hosted Reddit.
+
+172
+00:13:07,760 --> 00:13:10,594
+And the last one, Devo2, Medium, and Hackernon.
+
+173
+00:13:10,594 --> 00:13:13,519
+[music] Those channels are not only for SEO.
+
+174
+00:13:13,519 --> 00:13:15,920
+They can bring you direct traffic and I'll talk about them.
+
+175
+00:13:15,920 --> 00:13:20,720
+So the first thing you want to do is write an article in dev.2 medium and hackeron.
+
+176
+00:13:20,720 --> 00:13:30,160
+You want to write an article about how you build something inside your open source or that you just launch your open source project about this this and this.
+
+177
+00:13:30,160 --> 00:13:35,760
+Later on you can also write listicles like top 10 open source project you should check in 2026.
+
+178
+00:13:35,760 --> 00:13:40,720
+These are not super focused but they can give you stars and make you trending which is the whole goal of the strategy.
+
+179
+00:13:40,720 --> 00:13:42,480
+There's something called the Google discover feed.
+
+180
+00:13:42,480 --> 00:13:46,560
+The Google discover feed show articles of things that you are interested in.
+
+181
+00:13:46,560 --> 00:13:52,160
+If you check my articles on dev2 medium and hackeron this is the main traffic source for all of them.
+
+182
+00:13:52,160 --> 00:13:54,480
+I get tons of traffic from these places.
+
+183
+00:13:54,480 --> 00:13:59,120
+So this is why it's super important that you invest in your title and cover picture.
+
+184
+00:13:59,120 --> 00:14:03,680
+Same thing as you like when you're working on your YouTube because people just going to see the discover feed.
+
+185
+00:14:03,680 --> 00:14:05,760
+Step number three, register on Hacker News.
+
+186
+00:14:05,760 --> 00:14:07,120
+Create a new post.
+
+187
+00:14:07,120 --> 00:14:07,839
+Just submit.
+
+188
+00:14:07,839 --> 00:14:14,240
+Write show spaceh and the name of the project that you have and then link to your GitHub repository,
+
+189
+00:14:14,240 --> 00:14:15,360
+not your main website.
+
+190
+00:14:15,360 --> 00:14:18,480
+They are very picky at the things that they like to put inside.
+
+191
+00:14:18,480 --> 00:14:21,199
+It's not promised to you that you will get there.
+
+192
+00:14:21,199 --> 00:14:23,839
+But hackernews love open source project.
+
+193
+00:14:23,839 --> 00:14:32,079
+And [music] if you put your open source project inside, there is a very very high chance you will get into the main feed and then you can expect almost like 10,000 views.
+
+194
+00:14:32,079 --> 00:14:35,839
+Step number four, go to Reddit and post it on /r/selfosted.
+
+195
+00:14:35,839 --> 00:14:44,000
+If you are not open source and you want to post your project somewhere on Reddit, you will probably get filtered or banned because self-promotion is prohibited.
+
+196
+00:14:44,000 --> 00:14:48,959
+But the nice thing about open source is that if you have something in open source and you go to self-hosted,
+
+197
+00:14:48,959 --> 00:14:53,199
+people just waiting for you to post there and do [music] a totally self-promotion for yourself.
+
+198
+00:14:53,199 --> 00:14:58,480
+Not only that, every time you have a new version, people want to see it again and again and again.
+
+199
+00:14:58,480 --> 00:15:02,240
+Your goal is just to go there to STR self-hosted, write a post.
+
+200
+00:15:02,240 --> 00:15:10,320
+Here is an example of a post and every time you have a new version, you can release it again and write all the features and everything that you have inside.
+
+201
+00:15:10,320 --> 00:15:12,480
+Make sure you ask for a star.
+
+202
+00:15:12,480 --> 00:15:14,240
+Make sure you're super humble, down to earth.
+
+203
+00:15:14,240 --> 00:15:15,600
+Do it like a building in public.
+
+204
+00:15:15,600 --> 00:15:20,720
+Use I, not we, and post it every month in / r/fosted.
+
+205
+00:15:20,720 --> 00:15:22,240
+That at least was my thing.
+
+206
+00:15:22,240 --> 00:15:26,959
+There are some other channels you can crossost to you have r/web / r/programming.
+
+207
+00:15:26,959 --> 00:15:33,760
+If you are in AI space, you can use / r/localama/r/I agent or / r/chain.
+
+208
+00:15:33,760 --> 00:15:37,519
+Step number five is just to get traffic from everything else that you have.
+
+209
+00:15:37,519 --> 00:15:41,600
+Now, this is why it's step number five because you might not have any, but if you have,
+
+210
+00:15:41,600 --> 00:15:45,600
+put it on X, LinkedIn, your newsletter, and send everybody to your GitHub.
+
+211
+00:15:45,600 --> 00:15:50,000
+Make sure all these five steps are going on at the same week.
+
+212
+00:15:50,000 --> 00:15:50,959
+That's very important.
+
+213
+00:15:50,959 --> 00:15:52,720
+So, you get into the main trending feed.
+
+214
+00:15:52,720 --> 00:15:56,320
+Once you are there, you will see your star count rocketing very fast.
+
+215
+00:15:56,320 --> 00:15:59,920
+you will see a lot more people joining your Discord and you will see a lot more issues,
+
+216
+00:15:59,920 --> 00:16:02,560
+pull requests and forks for your repository.
+
+217
+00:16:02,560 --> 00:16:07,040
+And that's my playbook to do every week in open source to grow my project.
+
+218
+00:16:07,040 --> 00:16:11,839
+What I love about Neo's story is that he turned open-source into [music] an asset.
+
+219
+00:16:11,839 --> 00:16:17,120
+He got thousands of GitHub stars and that ultimately helped grow his business to $17,000 a month.
+
+220
+00:16:17,120 --> 00:16:22,160
+He did this by going deep into niche open-source communities, subreddits, HackerNews,
+
+221
+00:16:22,160 --> 00:16:23,600
+Lemi, Dev.2.
+
+222
+00:16:23,600 --> 00:16:26,480
+But he wasn't just posting random stuff everywhere.
+
+223
+00:16:26,480 --> 00:16:30,480
+He strategically targeted channels where [music] his users were actually hanging out.
+
+224
+00:16:30,480 --> 00:16:31,920
+And that made all the difference.
+
+225
+00:16:31,920 --> 00:16:36,560
+This is exactly what we break down in the Starter Story Build niche communities playbook.
+
+226
+00:16:36,560 --> 00:16:42,639
+It's a free resource that shows you exactly how to find and dominate the right niche communities for your product.
+
+227
+00:16:42,639 --> 00:16:47,440
+You'll learn how to market your idea and find the communities where your customers actually are.
+
+228
+00:16:47,440 --> 00:16:55,519
+More importantly, the playbook is packed with real examples from real founders that we've talked to through this channel on what's [music] actually working right now.
+
+229
+00:16:55,519 --> 00:16:59,920
+So, if you're ready to take distribution seriously and get real traction on your product,
+
+230
+00:16:59,920 --> 00:17:05,439
+head to the first link in the description to get the starter story build niche communities playbook for free.
+
+231
+00:17:05,439 --> 00:17:07,280
+All right, let's get back to the video.
+
+232
+00:17:07,280 --> 00:17:07,520
+Okay.
+
+233
+00:17:07,520 --> 00:17:07,760
+Wow.
+
+234
+00:17:07,760 --> 00:17:12,160
+I mean, that was an amazing playbook of how to truly crush it with open source.
+
+235
+00:17:12,160 --> 00:17:13,039
+So, that was awesome.
+
+236
+00:17:13,039 --> 00:17:14,079
+Thanks for sharing all that.
+
+237
+00:17:14,079 --> 00:17:17,520
+I'd love to switch topics a little bit and have you just show off your app.
+
+238
+00:17:17,520 --> 00:17:21,439
+I'm not sure if this is the self-hosted version or the SAS version.
+
+239
+00:17:21,439 --> 00:17:27,360
+Curious to hear that, but also can you just show me what your app does and how it works and maybe how it might be useful to someone who's watching this.
+
+240
+00:17:27,360 --> 00:17:30,000
+>> So, here we can see the main Posties dashboard.
+
+241
+00:17:30,000 --> 00:17:32,880
+Very similar to many other social media scheduling tool.
+
+242
+00:17:32,880 --> 00:17:37,039
+Here is all my social media channels that I have connected to posties.
+
+243
+00:17:37,039 --> 00:17:40,880
+When you add a new channel in Posties, you can find that there is 25 channels.
+
+244
+00:17:40,880 --> 00:17:42,640
+It's the biggest than any other platform.
+
+245
+00:17:42,640 --> 00:17:45,200
+And then you can just put post into [music] the future.
+
+246
+00:17:45,200 --> 00:17:46,320
+I can click here.
+
+247
+00:17:46,320 --> 00:17:51,520
+I can create a set uh of pre-made things if I want or not without a set.
+
+248
+00:17:51,520 --> 00:17:55,760
+I can just select all the social media platform I want to post to.
+
+249
+00:17:55,760 --> 00:18:00,160
+I can write some text and I can write also comment and post if the platform support that.
+
+250
+00:18:00,160 --> 00:18:02,160
+I'm crossing to all of that all of those.
+
+251
+00:18:02,160 --> 00:18:08,559
+But if I want I can just edit the content for a specific one and change how it will look in a specific platform.
+
+252
+00:18:08,559 --> 00:18:09,440
+Edit again.
+
+253
+00:18:09,440 --> 00:18:11,120
+I put a lot of effort in UI.
+
+254
+00:18:11,120 --> 00:18:12,080
+So I hope it looks good.
+
+255
+00:18:12,080 --> 00:18:14,640
+You have different settings for different social like Instagram.
+
+256
+00:18:14,640 --> 00:18:18,320
+You can post a real or a post and then you can just edit to the calendar.
+
+257
+00:18:18,320 --> 00:18:20,240
+So you can see all of them are already here.
+
+258
+00:18:20,240 --> 00:18:22,160
+So we have all the draft of all of them.
+
+259
+00:18:22,160 --> 00:18:30,640
+You can now change them to a different date and so on and use also you know this is like the basic functionality of every social media scheduling tool.
+
+260
+00:18:30,640 --> 00:18:34,000
+And then you have some extra stuff such as AI tools.
+
+261
+00:18:34,000 --> 00:18:36,320
+You can create uh you can design media.
+
+262
+00:18:36,320 --> 00:18:37,600
+You can use AI images.
+
+263
+00:18:37,600 --> 00:18:38,960
+You can use AI video.
+
+264
+00:18:38,960 --> 00:18:40,559
+You can bold your text and so on.
+
+265
+00:18:40,559 --> 00:18:50,960
+Except for that we also have the public API and this is what a lot of people use and because we are open source more developers prefer to use us instead of using nonopensource solution.
+
+266
+00:18:50,960 --> 00:18:58,559
+So you have your public API key and then you can automate social media post in your workflow if you use NA10 or [music] just the API to do different stuff.
+
+267
+00:18:58,559 --> 00:19:00,240
+>> Thanks for sharing that showing that tool.
+
+268
+00:19:00,240 --> 00:19:01,760
+I mean that looks really impressive.
+
+269
+00:19:01,760 --> 00:19:08,240
+Super cool that this is not only open source but you know product that you can post to all these different platforms at once.
+
+270
+00:19:08,240 --> 00:19:11,360
+I want to understand a little bit how you actually built this product.
+
+271
+00:19:11,360 --> 00:19:12,400
+What's the tech stack?
+
+272
+00:19:12,400 --> 00:19:13,600
+What does this run on?
+
+273
+00:19:13,600 --> 00:19:15,600
+And what tools do you use to run this business?
+
+274
+00:19:15,600 --> 00:19:21,520
+>> So for hosting, we are using railway for the back end and for the main marketing website.
+
+275
+00:19:21,520 --> 00:19:24,320
+I use Verscell only for the NexJS application.
+
+276
+00:19:24,320 --> 00:19:25,600
+I don't use Versel API.
+
+277
+00:19:25,600 --> 00:19:26,960
+We're using our own backends.
+
+278
+00:19:26,960 --> 00:19:28,960
+I use Simrush for SEO.
+
+279
+00:19:28,960 --> 00:19:31,760
+I also use ahrefs only for the dashboard.
+
+280
+00:19:31,760 --> 00:19:33,120
+I don't pay for the entire product.
+
+281
+00:19:33,120 --> 00:19:34,640
+So it's only $20 per month.
+
+282
+00:19:34,640 --> 00:19:38,799
+We send a lot of emails when posts are posted with resends.
+
+283
+00:19:38,799 --> 00:19:41,120
+Cloudfare R2 for hosting.
+
+284
+00:19:41,120 --> 00:19:44,880
+Uh I use dub.co for short linking and also for the affiliate program.
+
+285
+00:19:44,880 --> 00:19:46,400
+Flossible for analytics.
+
+286
+00:19:46,400 --> 00:19:52,640
+AI generators for images with uh or text with OpenAI KI and FAI.
+
+287
+00:19:52,640 --> 00:19:53,760
+This is my biggest expense.
+
+288
+00:19:53,760 --> 00:19:55,600
+I use something called translated.
+
+289
+00:19:55,600 --> 00:19:57,200
+I want every post to be posted.
+
+290
+00:19:57,200 --> 00:19:58,400
+I don't want any failures.
+
+291
+00:19:58,400 --> 00:20:03,039
+That means that I need to convert videos to the right size of the social media platform that I'm going to post to.
+
+292
+00:20:03,039 --> 00:20:04,240
+If not, it will just fail.
+
+293
+00:20:04,240 --> 00:20:05,600
+I'm paying $600 for that.
+
+294
+00:20:05,600 --> 00:20:08,640
+We use Outrrench for SEO, one SEO article every day.
+
+295
+00:20:08,640 --> 00:20:09,919
+I use Corser for AI.
+
+296
+00:20:09,919 --> 00:20:11,039
+I'm only paying $20.
+
+297
+00:20:11,039 --> 00:20:12,080
+I'm not a heavy user.
+
+298
+00:20:12,080 --> 00:20:14,160
+I'm using WebStorm as the ID.
+
+299
+00:20:14,160 --> 00:20:16,960
+We use Beehive as the email newsletter.
+
+300
+00:20:16,960 --> 00:20:18,240
+It's a headless hack.
+
+301
+00:20:18,240 --> 00:20:20,559
+Discord for customer support is $0.
+
+302
+00:20:20,559 --> 00:20:22,880
+GitHub Copilot is free for open source.
+
+303
+00:20:22,880 --> 00:20:28,000
+Sentry for monitoring for bugs and crashes and also and all that also free for open source.
+
+304
+00:20:28,000 --> 00:20:31,520
+And we use GitHub action to run tests and build Docker versions.
+
+305
+00:20:31,520 --> 00:20:32,559
+Free for open source.
+
+306
+00:20:32,559 --> 00:20:35,280
+And the margins is around 80%.
+
+307
+00:20:35,280 --> 00:20:35,520
+>> Okay.
+
+308
+00:20:35,520 --> 00:20:36,320
+Well, thanks for sharing.
+
+309
+00:20:36,320 --> 00:20:38,640
+I mean, very profitable business, super cool.
+
+310
+00:20:38,640 --> 00:20:39,840
+Thanks for sharing all that.
+
+311
+00:20:39,840 --> 00:20:46,559
+Last question that we ask all founders who come on starter story, if you could go back in time before you built this business,
+
+312
+00:20:46,559 --> 00:20:51,679
+uh, what advice would you give yourself or what advice would you give anyone who wants to do what you do,
+
+313
+00:20:51,679 --> 00:20:54,000
+build an open source SAS in 2026?
+
+314
+00:20:54,000 --> 00:20:56,799
+>> My biggest advice is, I think a little bit controversial.
+
+315
+00:20:56,799 --> 00:21:00,320
+I think you should learn a lot before you build.
+
+316
+00:21:00,320 --> 00:21:03,840
+But you don't also want to get into this analysis paralysis state.
+
+317
+00:21:03,840 --> 00:21:08,960
+I had so many failures in so many startups at first and then I just like paused and I said,
+
+318
+00:21:08,960 --> 00:21:10,480
+"Okay, let's read some book.
+
+319
+00:21:10,480 --> 00:21:12,799
+Let's read about traction for marketing.
+
+320
+00:21:12,799 --> 00:21:15,760
+Let's read about Alexi $100 million deals.
+
+321
+00:21:15,760 --> 00:21:18,799
+Let's read about Russell Branson uh lead generation."
+
+322
+00:21:18,799 --> 00:21:21,360
+And then I started to make smarter decisions.
+
+323
+00:21:21,360 --> 00:21:28,640
+It's really important that you learn the basics and it's really important that you learn about what is the idea that you're going to build.
+
+324
+00:21:28,640 --> 00:21:39,120
+And I've seen this like a lot of people they just go out and maybe they just like you know they've never heard before about anything and just like start with a B2C which is usually harder for people that don't do good distribution and then they don't know
+
+325
+00:21:39,120 --> 00:21:39,679
+what to do.
+
+326
+00:21:39,679 --> 00:21:44,880
+So they grind for a year and then they close and then actually say after that I should go B2B.
+
+327
+00:21:44,880 --> 00:21:46,799
+So I think it's really important that you learn.
+
+328
+00:21:46,799 --> 00:21:53,600
+You should focus your time half of the time learning, half of the time creating something and learning is is the biggest power.
+
+329
+00:21:53,600 --> 00:21:54,640
+>> That's great advice.
+
+330
+00:21:54,640 --> 00:21:57,520
+Thanks for coming on and sharing this amazing business.
+
+331
+00:21:57,520 --> 00:21:59,679
+You built this open- source opportunity.
+
+332
+00:21:59,679 --> 00:22:00,320
+That was awesome.
+
+333
+00:22:00,320 --> 00:22:02,960
+So, thanks for coming on and hope to see you again soon.
+
+334
+00:22:02,960 --> 00:22:04,320
+>> Thank you for having me.
+
+335
+00:22:04,320 --> 00:22:04,640
+>> All right.
+
+336
+00:22:04,640 --> 00:22:06,400
+Thanks to Neo for coming on to the channel.
+
+337
+00:22:06,400 --> 00:22:08,960
+Nevo built a social media postuler.
+
+338
+00:22:08,960 --> 00:22:13,280
+I'm sure you can think of a bunch of other social media postulers that already exist.
+
+339
+00:22:13,280 --> 00:22:18,320
+This is just another example to show you that you don't need to reinvent the wheel to build something successful.
+
+340
+00:22:18,320 --> 00:22:21,360
+And when it comes down to it, distribution can change the game.
+
+341
+00:22:21,360 --> 00:22:27,200
+And [music] something like having your angle open source in this specific example can really make the difference.
+
+342
+00:22:27,200 --> 00:22:29,360
+But it always starts with building [music] something.
+
+343
+00:22:29,360 --> 00:22:33,120
+And if you're ready to build your idea, you definitely want to check out Starter Story Build.
+
+344
+00:22:33,120 --> 00:22:37,039
+It is our boot camp where you will come up with an idea, you'll build it, you'll launch it,
+
+345
+00:22:37,039 --> 00:22:40,799
+and you'll get it in the hands of real users in just a couple weeks.
+
+346
+00:22:40,799 --> 00:22:47,039
+Our next cohort is starting soon, so head to the description and click that link and you can get started building your thing right now.
+
+347
+00:22:47,039 --> 00:22:48,640
+All right, that's it for this episode.
+
+348
+00:22:48,640 --> 00:22:49,679
+Thank you guys for watching.
+
+349
+00:22:49,679 --> 00:22:50,799
+We'll see you in the next one.
+
+350
+00:22:50,799 --> 00:22:53,520
+Peace.

@@ -1,0 +1,4108 @@
+1
+00:00:00,160 --> 00:00:03,120
+90% of your code roughly is written by AI now.
+
+2
+00:00:03,120 --> 00:00:07,600
+The team that works in the most futuristic 
+way is the Claude Code team. They're using  
+
+3
+00:00:07,600 --> 00:00:11,600
+Claude Code to build Claude Code in a very 
+self-improving kind of way. We really rapidly  
+
+4
+00:00:11,600 --> 00:00:15,600
+became bottlenecked on other things like our 
+merge queue. We had to completely re-architect  
+
+5
+00:00:15,600 --> 00:00:19,200
+it because so much more code was being 
+written and so many more pull requests  
+
+6
+00:00:19,200 --> 00:00:22,480
+were being submitted. Over half of our pull 
+requests are Claude Code generated. Probably  
+
+7
+00:00:22,480 --> 00:00:26,480
+at this point it's probably over 70% that it 
+just completely blew out the expectations of it.
+
+8
+00:00:26,480 --> 00:00:28,400
+You guys are at the edge of 
+where things are heading.
+
+9
+00:00:28,400 --> 00:00:33,120
+I had the very bizarre experience of I had 
+two tabs open. It was AI 2027, and my product  
+
+10
+00:00:33,120 --> 00:00:36,640
+strategy, and it was this moment where I'm 
+like, "Wait, am I the character in the story?"
+
+11
+00:00:36,640 --> 00:00:40,480
+It feels like ChatGPT is just winning 
+in consumer mind share. How does that  
+
+12
+00:00:40,480 --> 00:00:43,440
+inform the way you think about 
+product, strategy, and mission?
+
+13
+00:00:43,440 --> 00:00:48,160
+I think there's room for several generationally 
+important companies to be built in AI right now.  
+
+14
+00:00:48,160 --> 00:00:51,040
+How do we figure out what we want 
+to be when we grow up versus what  
+
+15
+00:00:51,040 --> 00:00:55,440
+we currently aren't or wish that we were 
+or see other players in the space being?
+
+16
+00:00:55,440 --> 00:00:58,080
+What's something that you've 
+changed your mind about what  
+
+17
+00:00:58,080 --> 00:01:01,040
+AI is capable of and where AI is heading?
+
+18
+00:01:01,040 --> 00:01:05,600
+I had this notion coming in like, "Yes, these 
+models are great, but are they able to have  
+
+19
+00:01:05,600 --> 00:01:12,080
+an independent opinion?" And it's actually 
+really flipped for me only in the last month.
+
+20
+00:01:12,080 --> 00:01:17,360
+Today, my guest is Mike Krieger. Mike is chief 
+product officer at Anthropic, the company behind  
+
+21
+00:01:17,360 --> 00:01:22,160
+Claude. He's also the co-founder of Instagram. 
+He's one of my most favorite product builders  
+
+22
+00:01:22,160 --> 00:01:26,560
+and thinkers. He's also now leading product at 
+one of the most important companies in the world,  
+
+23
+00:01:26,560 --> 00:01:30,240
+and I'm so thrilled to have had a chance to 
+chat with him on the podcast. We chat about  
+
+24
+00:01:30,240 --> 00:01:35,280
+what he's changed his mind about most in terms 
+of AI capabilities in the years since he joined  
+
+25
+00:01:35,280 --> 00:01:40,240
+Anthropic, how product development changes and 
+where bottlenecks emerge when 90% of your code  
+
+26
+00:01:40,240 --> 00:01:46,240
+is written by AI, which is now true at Anthropic. 
+Also, his thoughts on OpenAI versus Anthropic,  
+
+27
+00:01:46,240 --> 00:01:51,440
+the future of MCP, why he shut down Artifact, 
+his last startup and how he feels about it. Also,  
+
+28
+00:01:51,440 --> 00:01:55,680
+what skills he's encouraging his kids to 
+develop with the rise of AI. And we closed  
+
+29
+00:01:55,680 --> 00:02:00,320
+the podcast on a very heartwarming message 
+that Claude wanted me to share it with Mike. 
+
+30
+00:02:00,320 --> 00:02:04,080
+A big thank you to my newsletter Slack 
+community for suggesting topics for this  
+
+31
+00:02:04,080 --> 00:02:07,520
+conversation. If you enjoy this podcast, don't 
+forget to subscribe it and follow it in your  
+
+32
+00:02:07,520 --> 00:02:12,240
+favorite podcasting app or YouTube. Also, if you 
+become an annual subscriber of my newsletter,  
+
+33
+00:02:12,240 --> 00:02:17,680
+you get a year free of a bunch of incredible 
+products, including Linear, Superhuman, Notion,  
+
+34
+00:02:17,680 --> 00:02:22,000
+Perplexity and Granola. Check it out at 
+lennysnewsletter.com and click bundle. 
+
+35
+00:02:22,000 --> 00:02:28,000
+With that, I bring you Mike Krieger. This 
+episode is brought to you by Productboard,  
+
+36
+00:02:28,000 --> 00:02:32,640
+the leading product management platform for 
+the enterprise. For over 10 years, Productboard  
+
+37
+00:02:32,640 --> 00:02:37,280
+has helped customer-centric organizations 
+like Zoom, Salesforce, and Autodesk build  
+
+38
+00:02:37,280 --> 00:02:42,720
+the right products faster. And as an end-end 
+platform, Productboard seamlessly supports all  
+
+39
+00:02:42,720 --> 00:02:47,520
+stages of the product development lifecycle. From 
+gathering customer insights to planning a roadmap,  
+
+40
+00:02:47,520 --> 00:02:52,640
+to aligning stakeholders, to earning customer 
+buy-in, all with a single source of truth. 
+
+41
+00:02:52,640 --> 00:02:57,760
+And now product leaders can get even more 
+visibility into customer needs. With Productboard  
+
+42
+00:02:57,760 --> 00:03:03,120
+Pulse, a new voice of customer solution built-in 
+intelligence helps you analyze trends across all  
+
+43
+00:03:03,120 --> 00:03:08,400
+of your feedback and then dive deeper by asking 
+AI your follow-up questions. See how Productboard  
+
+44
+00:03:08,400 --> 00:03:14,080
+can help your team deliver higher impact products 
+that solve real customer needs and advance your  
+
+45
+00:03:14,080 --> 00:03:20,800
+business goals. For a special offer and free 
+15-day trial, visit productboard.com/lenny.  
+
+46
+00:03:20,800 --> 00:03:30,160
+That's productboard.com/L-E-N-N-Y.
+Last year, 1.3% of the global GDP  
+
+47
+00:03:30,160 --> 00:03:36,960
+flowed through Stripe. That's over $1.4 trillion 
+and driving that huge number are the millions of  
+
+48
+00:03:36,960 --> 00:03:43,280
+businesses growing more rapidly with Stripe. For 
+industry leaders like Forbes, Atlassian, OpenAI,  
+
+49
+00:03:43,280 --> 00:03:48,880
+and Toyota, Stripe isn't just financial software. 
+It's a powerful partner that simplifies how they  
+
+50
+00:03:48,880 --> 00:03:55,440
+move money, making it as seamless and borderless 
+as the internet itself. For example, Hertz boosted  
+
+51
+00:03:55,440 --> 00:04:00,960
+its online payment authorization rates by 4% 
+after migrating to Stripe. And imagine seeing  
+
+52
+00:04:00,960 --> 00:04:06,800
+a 23% lift in revenue like Forbes did just six 
+months after switching to Stripe for subscription  
+
+53
+00:04:06,800 --> 00:04:12,080
+management. Stripe has been leveraging AI for the 
+last decade to make its product better at growing  
+
+54
+00:04:12,080 --> 00:04:18,000
+revenue for all businesses. From smarter checkouts 
+to fraud prevention and beyond. Join the ranks of  
+
+55
+00:04:18,000 --> 00:04:26,800
+over half of the Fortune 100 companies that trust 
+Stripe to drive change, learn more at Stripe.com. 
+
+56
+00:04:28,960 --> 00:04:32,880
+Mike, thank you so much for being 
+here and welcome to the podcast.
+
+57
+00:04:32,880 --> 00:04:35,440
+I'm really happy to be here. I've been 
+looking forward to this for a while.
+
+58
+00:04:35,440 --> 00:04:39,680
+Wow, I had love to hear that. I've also been 
+looking forward to this for a while. I have  
+
+59
+00:04:39,680 --> 00:04:43,360
+so much to talk about. So first of all, 
+you've been at Anthropic for just over  
+
+60
+00:04:43,360 --> 00:04:46,320
+a year at this point. Congrats 
+by the way on hitting the cliff.
+
+61
+00:04:46,320 --> 00:04:49,920
+Thank you. Not that we're tracking.
+
+62
+00:04:49,920 --> 00:04:52,880
+That's right. So let me just ask you 
+this. So you've been at Anthropic  
+
+63
+00:04:52,880 --> 00:04:56,640
+for about a year. What's something 
+that you've changed your mind about  
+
+64
+00:04:56,640 --> 00:05:04,240
+from before you joined Anthropic to today about 
+what AI is capable of and where AI is heading?
+
+65
+00:05:04,240 --> 00:05:08,560
+Two things. One is like a pace and timeline 
+question. The other one is a capability  
+
+66
+00:05:08,560 --> 00:05:13,200
+question. So maybe I'll take the second 
+one first. I had this notion coming in,  
+
+67
+00:05:13,200 --> 00:05:16,640
+yes, these models are great, they're going to be 
+able to produce code, they're going to be able to  
+
+68
+00:05:17,280 --> 00:05:24,400
+write hopefully in your voice eventually, but are 
+they able to sort of have an independent opinion?  
+
+69
+00:05:24,400 --> 00:05:28,960
+And it's actually really flipped for me only 
+in the last month and only with Opus 4 where  
+
+70
+00:05:28,960 --> 00:05:33,840
+my go-to product strategy partner is Claude. And 
+it has been basically for that full year where  
+
+71
+00:05:33,840 --> 00:05:38,480
+I'll write an initial strategy, I'll share 
+it with Claude basically, and I'll have it,  
+
+72
+00:05:38,480 --> 00:05:44,240
+look at it. And in the past it's pretty anodyne 
+kind of comments that it would leave, "Oh,  
+
+73
+00:05:44,240 --> 00:05:48,080
+have you thought about this?" And it's like, 
+"Yeah, I thought about that." And Opus 4,  
+
+74
+00:05:48,080 --> 00:05:51,440
+I was working on some strategy for our 
+second half of the year was the first one. 
+
+75
+00:05:51,440 --> 00:05:53,840
+It was like Opus 4 combined with our 
+advanced research. But it really went  
+
+76
+00:05:53,840 --> 00:05:57,840
+out for a while and it came back and I was 
+like, you really looked at it in a new way.  
+
+77
+00:05:57,840 --> 00:06:02,080
+And so that's a thing that I've maybe I didn't 
+feel like it would never be able to do that,  
+
+78
+00:06:02,080 --> 00:06:06,320
+but I wasn't sure how soon it'd be able to come up 
+with something where I look at it, I'm like, yep,  
+
+79
+00:06:06,320 --> 00:06:10,160
+that is a new angle that I hadn't been looking 
+at before and I'm going to incorporate that  
+
+80
+00:06:10,160 --> 00:06:15,120
+immediately into how I think about it. So that's 
+probably the biggest shift that I've had is,  
+
+81
+00:06:15,120 --> 00:06:20,480
+I don't know about independence is the right word, 
+but creativity and sort of novelty of thought  
+
+82
+00:06:20,480 --> 00:06:25,680
+relative to how I'm thinking about things. But 
+in the timeline, one, it's so interesting because  
+
+83
+00:06:26,320 --> 00:06:29,840
+I was sitting next to Dario yesterday and he's 
+like, "I keep making these predictions and people  
+
+84
+00:06:29,840 --> 00:06:34,000
+keep laughing at me. And then they come true."
+And it's funny to have this happen over and over  
+
+85
+00:06:34,000 --> 00:06:38,800
+again and he is like, not all of them are going 
+to be right. But even I think as of last year he  
+
+86
+00:06:38,800 --> 00:06:43,760
+was talking about we're at 50% on SWE-Bench, 
+which is this benchmark around how well the  
+
+87
+00:06:43,760 --> 00:06:48,880
+models are at coding. He's like, "I think we'll 
+be at 90% by the end of 2025 or something like  
+
+88
+00:06:48,880 --> 00:06:53,840
+that." And sure enough, we're at about 72 now 
+with the new models and we're at 50% when he  
+
+89
+00:06:53,840 --> 00:06:58,880
+made that prediction. And it's continued to 
+scale pretty much as predicted. And so I've  
+
+90
+00:06:58,880 --> 00:07:04,880
+taken the timelines a lot more seriously 
+now. And I don't know if you read AI 2027-
+
+91
+00:07:05,520 --> 00:07:08,960
+I have, it made by heart race.
+
+92
+00:07:08,960 --> 00:07:12,240
+And I had the very bizarre 
+experience of I had two tabs open,  
+
+93
+00:07:12,240 --> 00:07:16,320
+it was AI 2027 and my product strategy. And 
+it was this moment where I'm like, "Wait,  
+
+94
+00:07:16,320 --> 00:07:22,240
+am I the character in the story? How much is this 
+converging?" But you read that and you're like,  
+
+95
+00:07:22,240 --> 00:07:28,960
+"Oh, 2027, that's years away if you're like no, 
+mid 2025." And things continue to improve and the  
+
+96
+00:07:28,960 --> 00:07:32,240
+models continue to be able to do more and more 
+and they're able to act agentically and they're  
+
+97
+00:07:32,240 --> 00:07:38,400
+able to have memory and they're able to act over 
+time. So I think my confidence in the timelines  
+
+98
+00:07:38,400 --> 00:07:43,280
+and I don't know exactly how they manifest it 
+definitely just solidified over the last year.
+
+99
+00:07:43,280 --> 00:07:49,840
+Wow. I wasn't expecting to go down 
+that that paper was scary. And I'm  
+
+100
+00:07:49,840 --> 00:07:53,760
+curious just I guess I can't help but ask 
+just thoughts on just how do we avoid the  
+
+101
+00:07:53,760 --> 00:07:59,280
+scary scenario that paper paints of 
+where AI getting really smart goes?
+
+102
+00:07:59,280 --> 00:08:05,680
+Yeah, this maybe ties into, I've been here a 
+year, why did I join Anthropic? I was watching  
+
+103
+00:08:05,680 --> 00:08:12,720
+the models get better and even you could see 
+it in early 2024, and looking at my kids,  
+
+104
+00:08:12,720 --> 00:08:17,200
+I'm like, "All right, they're going to grow 
+up in a world with AI. It's unavoidable."  
+
+105
+00:08:18,560 --> 00:08:23,760
+Where can I maximally apply my time to nudge 
+things towards going well? And I mean that's  
+
+106
+00:08:23,760 --> 00:08:28,240
+a lot of what people think about across the 
+industry, especially at Anthropic. And so I  
+
+107
+00:08:28,240 --> 00:08:33,120
+think coming to an agreement and a shared 
+framework and understanding of what does  
+
+108
+00:08:33,120 --> 00:08:36,640
+going well look like? What is the kind 
+of human AI relationship that we want? 
+
+109
+00:08:36,640 --> 00:08:41,280
+How will we know along the way? What do we need 
+to build and develop and research along the way?  
+
+110
+00:08:41,280 --> 00:08:46,560
+I think those are all the kind of key questions. 
+And some of those are product questions and some  
+
+111
+00:08:46,560 --> 00:08:51,040
+of those are research and interpretability 
+questions, but for me it was the strongest  
+
+112
+00:08:51,040 --> 00:08:55,440
+reason to join was okay. I think there's a 
+lot of contribution that Anthropic can have  
+
+113
+00:08:55,440 --> 00:09:00,480
+around nudging things to go better. And if I 
+can have a part to play there, let's do it.
+
+114
+00:09:00,480 --> 00:09:06,160
+I love that answer. Speaking of kids, so you've 
+got two kids, I've got a young kid, he's just  
+
+115
+00:09:06,160 --> 00:09:12,800
+about to turn two. I'm curious just what skills 
+you're encouraging your kids to build as this AI  
+
+116
+00:09:12,800 --> 00:09:18,720
+becomes more and more of our future and some jobs 
+will be changed and just what advice do you have?
+
+117
+00:09:18,720 --> 00:09:23,360
+We have this breakfast feed breakfast with the 
+kids every morning and sometimes some question  
+
+118
+00:09:23,360 --> 00:09:28,800
+will come up, something about physics and our 
+oldest kid's almost six, but they ask funny  
+
+119
+00:09:28,800 --> 00:09:37,360
+questions about the solar system or physics or in 
+a 6-year-old way and before we reach for Claude,  
+
+120
+00:09:37,360 --> 00:09:40,960
+because at first my instinct is like, "Oh, I 
+wonder how Claude will do this question." And we  
+
+121
+00:09:40,960 --> 00:09:45,200
+started changing, "Well, how would we find out?" 
+And the answer can't just be we'll ask Claude,  
+
+122
+00:09:45,920 --> 00:09:50,400
+all right, well, we could do this experiment, 
+we could have this thing. So I think nurturing  
+
+123
+00:09:50,400 --> 00:09:55,760
+curiosity and still having a sense of, I don't 
+know, the scientific process sounds grandiose  
+
+124
+00:09:55,760 --> 00:10:00,640
+to instill in a 6-year-old, but that process 
+of discovery and asking questions and then  
+
+125
+00:10:01,360 --> 00:10:04,560
+systematically working right through, I think 
+will still be important. And of course AI will  
+
+126
+00:10:04,560 --> 00:10:08,880
+be an incredible tool for helping resolve large 
+parts of that, but that process of inquiry I think  
+
+127
+00:10:08,880 --> 00:10:14,640
+is still really important and independent thought.
+My favorite moment with my kid, because she's very  
+
+128
+00:10:14,640 --> 00:10:19,920
+headstrong, our 6-year-old, she said something 
+and I wasn't sure if it was true. It was,  
+
+129
+00:10:21,200 --> 00:10:25,600
+oh, is that coral is an animal or corals alive? 
+I don't even remember what the details of it.  
+
+130
+00:10:25,600 --> 00:10:28,640
+And I was like, "I don't know if that's true." And 
+she's like, "It's definitely true, dad." I'm like,  
+
+131
+00:10:28,640 --> 00:10:32,400
+"All right, let's ask Claude on this one." And 
+she's like, "You can ask Claude, but I know I'm  
+
+132
+00:10:32,400 --> 00:10:38,880
+right." And I'm like I love that. I want that 
+kind of level of not just delegating all of your  
+
+133
+00:10:38,880 --> 00:10:47,040
+cognition to the AI because it won't always get it 
+right. And also it kind of short circuits any kind  
+
+134
+00:10:47,040 --> 00:10:53,600
+of independent thought. So the skill of asking 
+questions, inquiry and independent thinking,  
+
+135
+00:10:53,600 --> 00:10:58,320
+I think those are all the pieces. What that 
+looks like from a job or occupation perspective,  
+
+136
+00:10:58,320 --> 00:11:02,800
+I'm just keeping an open mind and I'm sure 
+that'll radically change between now and then.
+
+137
+00:11:02,800 --> 00:11:08,000
+It's interesting. Tobias Lütke, Shopify CEO, on 
+the podcast and he had the same answer for what  
+
+138
+00:11:08,000 --> 00:11:14,640
+he's encouraging his kids to develop is curiosity. 
+And so it's interesting that's a common thread.
+
+139
+00:11:14,640 --> 00:11:20,800
+The K through eight school our kid goes through 
+had an AI and education expert come in and I  
+
+140
+00:11:20,800 --> 00:11:24,880
+had a very low bar or a very low expectation of 
+what this conversation was going to be like. And  
+
+141
+00:11:24,880 --> 00:11:29,440
+actually I think it went over most of the people 
+in the audience's heads because he was like,  
+
+142
+00:11:29,440 --> 00:11:32,960
+"All right, well let me take you all the way 
+back to Claude Shannon in information theory."  
+
+143
+00:11:32,960 --> 00:11:36,560
+And I could see people's eyes going, "What did 
+I sign up for and why am I hearing this school  
+
+144
+00:11:36,560 --> 00:11:42,000
+auditorium hearing about information theory?" 
+But he did a really nice job I think of also  
+
+145
+00:11:42,000 --> 00:11:47,200
+just imagining there will be different jobs and we 
+don't know what those jobs are going to be and so  
+
+146
+00:11:47,200 --> 00:11:54,480
+what are the skills and techniques and remain open 
+mindedness around what the exact way we recombine  
+
+147
+00:11:54,480 --> 00:11:58,800
+those things. And even those will probably change 
+three times between now and when they're 18.
+
+148
+00:11:59,760 --> 00:12:04,000
+So we're talking about timelines and how things 
+are changing. So I've seen these stats that you've  
+
+149
+00:12:04,000 --> 00:12:08,160
+shared, other folks at Anthropic have shared 
+about how much of your code is now written by  
+
+150
+00:12:08,160 --> 00:12:15,120
+AI. So people have shared stats from 70% to 90%. 
+There was an engineer lead that shared 90% of your  
+
+151
+00:12:15,120 --> 00:12:22,240
+code roughly is written by AI now, which first of 
+all is just insane that it went from zero to 90%,  
+
+152
+00:12:22,240 --> 00:12:26,240
+I don't know, a few years, something like 
+that. Yeah, basically. I don't think people  
+
+153
+00:12:26,240 --> 00:12:30,320
+are talking about this enough. That's just 
+wild. You guys are basically at the bleeding  
+
+154
+00:12:30,320 --> 00:12:34,800
+edge. I've never heard a company that has this 
+high a percentage of code being written by AI. 
+
+155
+00:12:34,800 --> 00:12:38,480
+So you guys are at the edge of where things are 
+heading. I think most companies will get here.  
+
+156
+00:12:38,480 --> 00:12:42,720
+How has product development changed knowing 
+so much of your code is now written by AI,  
+
+157
+00:12:42,720 --> 00:12:47,520
+so usually it's like PM, it's like here's what 
+we're building, engineer builds it, it ships it.  
+
+158
+00:12:47,520 --> 00:12:51,040
+Is it still kind of roughly that or is it 
+now PMs are just going straight to Claude,  
+
+159
+00:12:51,040 --> 00:12:53,840
+build this thing for me, engineers are 
+doing different things? Just what looks  
+
+160
+00:12:53,840 --> 00:12:57,120
+different in a world where 90% 
+of your code is written by AI?
+
+161
+00:12:57,120 --> 00:13:02,800
+Yeah, it's really interesting because I think 
+the role of engineering has changed a lot,  
+
+162
+00:13:02,800 --> 00:13:10,000
+but the suite of people that come together to 
+produce a product hasn't yet. And I think for  
+
+163
+00:13:10,000 --> 00:13:13,920
+the worst in a lot of ways because I think 
+we're still holding on some assumptions. So  
+
+164
+00:13:13,920 --> 00:13:18,560
+I think the roles are still fairly similar, 
+although we'll now get in my favorite things  
+
+165
+00:13:18,560 --> 00:13:22,160
+that happen now are some nice PMs that have an 
+idea that they want to express or designers that  
+
+166
+00:13:22,160 --> 00:13:26,640
+have an idea they want to express will 
+use Claude and maybe even Artifacts to  
+
+167
+00:13:26,640 --> 00:13:30,880
+put together an actual functional demo. And 
+that has been very, very helpful. No, no,  
+
+168
+00:13:30,880 --> 00:13:36,080
+this is what I mean that makes it tangible. 
+That's probably the biggest role shift is  
+
+169
+00:13:36,080 --> 00:13:43,840
+prototyping happening earlier in the process via 
+more of this code plus design piece. What I've  
+
+170
+00:13:43,840 --> 00:13:50,880
+learned though is the process of knowing what 
+to ask the AI, how to compose the question,  
+
+171
+00:13:50,880 --> 00:13:54,640
+how to even think about structuring a change 
+between the backend and the front end. 
+
+172
+00:13:54,640 --> 00:14:00,000
+Those are still very difficult and specialized 
+skills and they still require the engineer to  
+
+173
+00:14:00,000 --> 00:14:04,400
+think about it. And we really rapidly became 
+bottlenecked on other things like our merge queue,  
+
+174
+00:14:04,400 --> 00:14:11,040
+which is the get in line to get your change 
+accepted by the system that then deploys into  
+
+175
+00:14:11,040 --> 00:14:15,600
+production. We had to completely re-architect 
+it because so much more code was being written  
+
+176
+00:14:15,600 --> 00:14:19,440
+and so many more pull requests were being 
+submitted that it just completely blew  
+
+177
+00:14:19,440 --> 00:14:23,680
+out the expectations of it. And so it's like, I 
+don't know if you've ever read, is it the goal,  
+
+178
+00:14:23,680 --> 00:14:29,120
+the classic process optimization book, and 
+you realize there's this critical path theory.  
+
+179
+00:14:29,120 --> 00:14:32,960
+I've just found all these new bottlenecks in 
+our system, there's an upstream bottleneck,  
+
+180
+00:14:32,960 --> 00:14:36,720
+which is decision making and alignment. A lot of 
+things that I'm thinking about right now is how  
+
+181
+00:14:36,720 --> 00:14:42,320
+do I provide the minimum viable strategy to let 
+people feel empowered to go run and type and build  
+
+182
+00:14:42,320 --> 00:14:45,520
+and explore at the edge of model capabilities.
+I don't think I've gotten that right yet,  
+
+183
+00:14:45,520 --> 00:14:49,920
+but that's something I'm working on. 
+And then once the building is happening,  
+
+184
+00:14:49,920 --> 00:14:53,920
+other bottlenecks emerge, let's make sure we don't 
+step on each other's toes. Let's think through  
+
+185
+00:14:53,920 --> 00:14:57,120
+all the edge cases here ahead of time so that 
+we're not blocked on the engineering side. And  
+
+186
+00:14:57,120 --> 00:15:01,600
+then when the work is complete and we're getting 
+ready to ship it, what are all those bottlenecks  
+
+187
+00:15:01,600 --> 00:15:05,200
+as well? Let's do the air traffic control 
+of landing the change. How do we figure out  
+
+188
+00:15:05,200 --> 00:15:11,200
+large strategy? So I think there hasn't been as 
+much pressure on changing those until this year,  
+
+189
+00:15:11,200 --> 00:15:16,320
+but I would expect that a year from now the way 
+that we are conceiving of building and shipping  
+
+190
+00:15:16,320 --> 00:15:20,600
+software just changes a lot because it's going 
+to be very painful to do it the current way.
+
+191
+00:15:20,600 --> 00:15:26,480
+Wow, that is extremely interesting. So it used to 
+be here's an idea, let's go design it, build it,  
+
+192
+00:15:26,480 --> 00:15:31,920
+ship it, merge it, and then ship it. And 
+usually the bottleneck was engineering,  
+
+193
+00:15:31,920 --> 00:15:35,680
+taking time to build a thing and then design. 
+And now you're saying the two bottlenecks  
+
+194
+00:15:35,680 --> 00:15:40,400
+you're finding are okay deciding what to build 
+and aligning everyone and then it's actually  
+
+195
+00:15:41,360 --> 00:15:47,280
+the cue to merge it into production. And I 
+imagine review it too is probably a part-
+
+196
+00:15:47,280 --> 00:15:53,120
+Reviewing has really changed too. And in many 
+ways perhaps unsurprisingly the team that  
+
+197
+00:15:53,120 --> 00:15:57,760
+works in the most futuristic way is the Claude 
+Code team because they're using Claude Code to  
+
+198
+00:15:57,760 --> 00:16:03,440
+build Claude Code in a very self-improving 
+kind of way. And early on in that project,  
+
+199
+00:16:03,440 --> 00:16:08,400
+they would do very line by line pull request 
+reviews in the way that you would for any other  
+
+200
+00:16:08,400 --> 00:16:12,800
+project. And they've just realized Claude 
+is generally right and it's producing pull  
+
+201
+00:16:12,800 --> 00:16:15,600
+requests that are probably larger than most 
+people are going to be able to review. So can  
+
+202
+00:16:15,600 --> 00:16:20,800
+you use a different Claude to review it and then 
+do the human almost acceptance testing more than  
+
+203
+00:16:20,800 --> 00:16:25,440
+trying to review line by line. There's definitely 
+pros and cons and so far it's gone well. But I  
+
+204
+00:16:25,440 --> 00:16:29,360
+could also imagine it going off the rails and 
+then having a completely both unmaintainable  
+
+205
+00:16:29,360 --> 00:16:34,560
+or even understandable by Claude Code base that 
+hasn't happened, but watching them change their  
+
+206
+00:16:34,560 --> 00:16:40,320
+review processes definitely has been interesting.
+And yeah, the merge queue is one instance of the  
+
+207
+00:16:41,120 --> 00:16:44,560
+bottom bottleneck that forms down there, but 
+there's other ones which is how do we make sure  
+
+208
+00:16:44,560 --> 00:16:49,280
+that we're still building something coherent and 
+packaging it up into a moment that we can share  
+
+209
+00:16:49,280 --> 00:16:53,280
+with people and whether that's around a launch 
+moment, whether that's about then enabling people  
+
+210
+00:16:53,280 --> 00:16:57,760
+to use this thing and talking about it, the 
+classic things of building something useful  
+
+211
+00:16:57,760 --> 00:17:02,400
+for people and then making it known that you've 
+built it and then learning from their feedback  
+
+212
+00:17:02,400 --> 00:17:06,560
+still exists. We've just made a portion 
+of that whole process much more efficient.
+
+213
+00:17:06,560 --> 00:17:11,360
+I heard you describe this as you guys 
+are patient zero for this way of working.
+
+214
+00:17:11,360 --> 00:17:12,160
+Yes.
+
+215
+00:17:12,160 --> 00:17:14,240
+I love that. Do you have a sense of what  
+
+216
+00:17:14,240 --> 00:17:17,600
+percentage of Claude Code 
+is written by Claude Code?
+
+217
+00:17:17,600 --> 00:17:22,880
+At this point, I would be shocked if 
+it wasn't 95% plus. I'd have to ask  
+
+218
+00:17:22,880 --> 00:17:28,800
+Boris and the other tech leads on there. But 
+what's been cool is so nitty-gritty stuff,  
+
+219
+00:17:28,800 --> 00:17:31,680
+Claude Code is written in TypeScript. 
+It's actually our largest TypeScript  
+
+220
+00:17:31,680 --> 00:17:37,520
+project. Most of the rest of Anthropic is 
+written in Python, some Go, some Rust now,  
+
+221
+00:17:37,520 --> 00:17:42,880
+but we're not like a TypeScript shop. And so 
+I saw a great comment yesterday in our Slack  
+
+222
+00:17:42,880 --> 00:17:46,560
+where somebody had this thing that was driving 
+them crazy about Claude Code and they're like,  
+
+223
+00:17:46,560 --> 00:17:49,840
+"Well, I don't know any TypeScript, I'm just 
+going to talk to Claude about it and do it." 
+
+224
+00:17:49,840 --> 00:17:54,720
+And they went from that to pull requests in an 
+hour and solve their problem and they submitted a  
+
+225
+00:17:54,720 --> 00:18:01,680
+pull request and that breaking down the barriers. 
+One, it changes your barrier to entry for any  
+
+226
+00:18:02,480 --> 00:18:06,480
+kind of newcomer to the project. I think it can 
+let you choose the right language for the right  
+
+227
+00:18:06,480 --> 00:18:12,240
+job for example. I think that helps as well, but 
+I think it also just reinforces Claude Code being  
+
+228
+00:18:12,240 --> 00:18:18,800
+that patient alpha of that where contributions 
+from outside the team can be Claude coded as well.
+
+229
+00:18:18,800 --> 00:18:25,120
+Wow, this is, it's just continue to blow my 
+mind all these things that you're sharing,  
+
+230
+00:18:25,120 --> 00:18:27,760
+95% of Claude Code is written 
+by Claude Code roughly.
+
+231
+00:18:27,760 --> 00:18:32,000
+That's my guess. Yeah, I'll come back with the 
+real stuff. But I mean if you ask the team,  
+
+232
+00:18:32,000 --> 00:18:35,840
+that's how they're working and that's how they're 
+getting contributions from across the company too.
+
+233
+00:18:35,840 --> 00:18:42,720
+It's interesting going back to your point about 
+strategy being assisted by Claude itself and your  
+
+234
+00:18:42,720 --> 00:18:46,880
+point about how a lot of the bottlenecks now are 
+kind of the top of the funnel of coming up with  
+
+235
+00:18:46,880 --> 00:18:50,080
+ideas aligning everyone, it's interesting 
+that Claude is already helping with that  
+
+236
+00:18:50,080 --> 00:18:55,040
+also of helping you decide what to build. 
+So if those two bottlenecks are aligning,  
+
+237
+00:18:55,040 --> 00:18:57,840
+deciding what to build and then 
+just merging and getting everything,  
+
+238
+00:18:57,840 --> 00:19:02,480
+where do you see the most interesting stuff 
+happening to help you speed those things up?
+
+239
+00:19:02,480 --> 00:19:07,760
+Yeah, I think that on that first row, I 
+started the year by writing a doc that  
+
+240
+00:19:07,760 --> 00:19:13,920
+was effectively how do we do product today 
+and where is Claude not showing up yet that  
+
+241
+00:19:13,920 --> 00:19:18,800
+it should? And I think that upstream part is 
+the next one to go. It's interesting. At your  
+
+242
+00:19:18,800 --> 00:19:26,080
+conference I talked to somebody who's working 
+on a PRD, GPT kind of ChatPRD, I think was the-
+
+243
+00:19:26,080 --> 00:19:27,120
+ChatPRD, [inaudible 00:19:24].
+
+244
+00:19:27,120 --> 00:19:34,480
+Yeah. Can Claude be a partner in figuring out what 
+to build? What the market size is if you want to  
+
+245
+00:19:34,480 --> 00:19:39,440
+approach it that way? What the user needs are if 
+you look at a different way? We think a lot about  
+
+246
+00:19:39,440 --> 00:19:43,520
+the virtual collaborator on topic and one of the 
+ways in which I think that can show up is, "Hey,  
+
+247
+00:19:43,520 --> 00:19:50,960
+I'm in the Discord, the Claude Anthropic Discord, 
+I'm in the user Fora, I'm on X and I'm reading  
+
+248
+00:19:50,960 --> 00:19:56,000
+things and here's what's emergent." That's 
+step one. Models can do that today. Step two,  
+
+249
+00:19:56,000 --> 00:20:00,400
+which the models probably can do today, which have 
+to wire them up to do it is and not only are the  
+
+250
+00:20:00,400 --> 00:20:04,080
+problems here's how I think you might be able 
+to solve them. And then taking that through to,  
+
+251
+00:20:04,080 --> 00:20:07,760
+and I put together a pull request 
+to solve this thing that I'm seeing  
+
+252
+00:20:07,760 --> 00:20:13,360
+feels very achievable this year than stringing 
+those things together and we're limited more. 
+
+253
+00:20:13,360 --> 00:20:17,200
+This is why MCP is exciting to me. We're 
+limited more around making sure the context  
+
+254
+00:20:17,200 --> 00:20:20,720
+flows through all of that so we have the 
+right access to those things more than the  
+
+255
+00:20:20,720 --> 00:20:26,960
+model's capability to reason and propose. Now 
+the model might not have perfect UI taste yet,  
+
+256
+00:20:26,960 --> 00:20:29,520
+so there's definitely room for 
+design to intervene and be like,  
+
+257
+00:20:29,520 --> 00:20:34,240
+"Oh, that's not quite how I would solve the 
+problem of this not showing up." But I would  
+
+258
+00:20:34,240 --> 00:20:39,840
+get very excited. I would give you a really 
+small example, but we changed on Claude AI,  
+
+259
+00:20:39,840 --> 00:20:44,480
+you should be able to just copy markdown from 
+Artifacts or code from Artifacts and we changed  
+
+260
+00:20:44,480 --> 00:20:47,760
+it so you can actually download it and export 
+it. We changed the button to export and we got  
+
+261
+00:20:47,760 --> 00:20:51,120
+a bunch of feedback like, "How do I copy now?" And 
+the answer is you drop it down and it's copied. 
+
+262
+00:20:51,120 --> 00:20:55,760
+It's just mind one of those things where it's made 
+sense, but we probably got it not quite right.  
+
+263
+00:20:55,760 --> 00:21:00,560
+That feedback was in the RUX channel. I would've 
+loved an hour later for a plot to be like, "Hey,  
+
+264
+00:21:00,560 --> 00:21:04,400
+if we do want to change it back, here's the 
+PR to do it." And by the way, eventually,  
+
+265
+00:21:04,400 --> 00:21:08,080
+and then I'm going to spin up an A/B test to 
+see if this changes metrics and then we'll see  
+
+266
+00:21:08,080 --> 00:21:12,320
+how it looks in a week. If you told me that 
+about a year and a half ago going to be like,  
+
+267
+00:21:12,320 --> 00:21:20,560
+"Ah, yeah, maybe like 27, maybe 26." But it really 
+feels just at the tip of capabilities right now.
+
+268
+00:21:20,560 --> 00:21:24,560
+Wow, okay. You mentioned the Lenny and 
+Friends Summit. I wanted to talk about  
+
+269
+00:21:24,560 --> 00:21:29,440
+this a bit. So you were on a panel 
+with Kevin Weil, the CPO of OpenAI,  
+
+270
+00:21:29,440 --> 00:21:32,080
+I think it was the first time you guys 
+did this maybe the last time for now.
+
+271
+00:21:32,080 --> 00:21:34,640
+Yeah, we haven't done it since, not 
+for any reason. I had a lot of fun.
+
+272
+00:21:34,640 --> 00:21:40,240
+What a legendary panel we assembled there with 
+Sarah Guo moderating. And you made this comment  
+
+273
+00:21:40,240 --> 00:21:46,880
+actually ended up being the most rewatched part 
+of the interview, which is that you were putting  
+
+274
+00:21:46,880 --> 00:21:52,240
+product people on the model team and working with 
+researchers making the model better and you're  
+
+275
+00:21:52,240 --> 00:21:56,400
+putting some product people on the product 
+experience making the UX more intuitive,  
+
+276
+00:21:56,400 --> 00:22:00,560
+making all that better. And you found that 
+almost all the leverage came from the product  
+
+277
+00:22:00,560 --> 00:22:05,280
+team working with the researchers. And so you've 
+been doing more of that. So first of all, does  
+
+278
+00:22:05,280 --> 00:22:10,960
+that continue to be true? And second of all, what 
+are the implications of that for product teams?
+
+279
+00:22:10,960 --> 00:22:16,480
+It's continued to be true. And in fact I think 
+that if the proportion was already skewing  
+
+280
+00:22:16,480 --> 00:22:22,080
+towards having more of that embedding, I've 
+just become more and more convinced. I didn't  
+
+281
+00:22:22,080 --> 00:22:27,440
+feel as strongly about it during the summit 
+and now I feel really strongly about it. If  
+
+282
+00:22:27,440 --> 00:22:32,080
+we're shipping things that could have been built 
+by anybody just using our models off the shelf,  
+
+283
+00:22:32,080 --> 00:22:34,560
+there's great stuff to be built by using our 
+models off the shelf by the way, don't get  
+
+284
+00:22:34,560 --> 00:22:39,040
+me wrong, but where we should play and what we 
+can do uniquely should be stuff that's really at  
+
+285
+00:22:39,040 --> 00:22:44,720
+that magic intersection between the two, right?
+Artifacts may a great example and if you play  
+
+286
+00:22:44,720 --> 00:22:48,960
+with Artifacts with Claude 4, that's an actually 
+really interesting example where we took somebody  
+
+287
+00:22:48,960 --> 00:22:53,360
+from our, we have Claude code skills, which is 
+a team that really is doing the post-training  
+
+288
+00:22:53,360 --> 00:22:57,120
+around teaching Claude some of these really 
+specific skills and we paired it with some  
+
+289
+00:22:57,120 --> 00:23:02,240
+product people and then together we revamped 
+how this looks in the product today and what  
+
+290
+00:23:02,240 --> 00:23:07,680
+Claude can do way better than just like, "Yeah, we 
+just used the model and we prompted a little bit." 
+
+291
+00:23:07,680 --> 00:23:12,880
+That's just not enough. We need to be in 
+that fine-tuning process. So much of what,  
+
+292
+00:23:12,880 --> 00:23:16,800
+if you look at what we're working on right now, 
+but we've shipped recently between research and  
+
+293
+00:23:16,800 --> 00:23:22,240
+all these other things are things that the 
+functional unit of work at Anthropic is no  
+
+294
+00:23:22,240 --> 00:23:28,000
+longer take the model and then go work with design 
+and product to go ship a product. It's more like  
+
+295
+00:23:28,000 --> 00:23:32,640
+we are in the post-training conversations around 
+how these things should work and then we are in  
+
+296
+00:23:32,640 --> 00:23:36,480
+the building process and we're feeding 
+those things back and looping them back. 
+
+297
+00:23:36,480 --> 00:23:42,640
+I think it's exciting. It's also a new way of 
+working that not all PMs have, but the PMs that  
+
+298
+00:23:42,640 --> 00:23:47,680
+have the most internal positive feedback from both 
+research and engineering are the ones that get it  
+
+299
+00:23:47,680 --> 00:23:52,800
+that I was in a product review yesterday, I was 
+like, "Oh, if we want to do this memory feature,  
+
+300
+00:23:52,800 --> 00:23:56,480
+we should talk to the researchers because we 
+just shipped a bunch of memory capabilities  
+
+301
+00:23:56,480 --> 00:23:59,280
+in Claude 4." They're like, "Yeah, yeah, we've 
+been talking to them for weeks, this is how we're  
+
+302
+00:23:59,280 --> 00:24:03,520
+manifesting it." It's like, "Okay, I feel good. 
+I feel like we're doing the right things now."
+
+303
+00:24:03,520 --> 00:24:06,880
+So let me pull on this thread more and there's 
+something I've been thinking about along these  
+
+304
+00:24:06,880 --> 00:24:11,200
+lines. So essentially there's a big part 
+of entropic that's building this super  
+
+305
+00:24:11,200 --> 00:24:15,280
+intelligent giga brain that's going to do 
+all these things for us over time. And then,  
+
+306
+00:24:15,280 --> 00:24:19,120
+as you said, there's the product team that's 
+building the UX around this super intelligent  
+
+307
+00:24:19,120 --> 00:24:24,560
+giga brain and over time this super intelligence 
+is going to be able to build its own stuff. And  
+
+308
+00:24:24,560 --> 00:24:31,040
+so I guess just where do you think the most 
+value will come from traditional product  
+
+309
+00:24:31,040 --> 00:24:34,880
+teams over time? I know this is different 
+because you guys are a foundational alum  
+
+310
+00:24:34,880 --> 00:24:37,680
+company and not most companies don't 
+work this way, but just, I don't know,  
+
+311
+00:24:37,680 --> 00:24:42,880
+thoughts on just the where most value will come 
+from product teams over time working on AI.
+
+312
+00:24:42,880 --> 00:24:49,600
+I think there's still a lot of value in two 
+things. One is making this all comprehensible.  
+
+313
+00:24:49,600 --> 00:24:53,440
+I think we've done an okay job. I think we could 
+do a much better job of making this conference.  
+
+314
+00:24:53,440 --> 00:24:58,240
+What's still the difference between somebody who's 
+really adept at using these tools in their work  
+
+315
+00:24:58,240 --> 00:25:03,840
+and most people is huge. And maybe that's the 
+most literal answer to your earlier question  
+
+316
+00:25:03,840 --> 00:25:08,960
+around what skills to learn. That is a skill to 
+learn and use it in the same way that I remember  
+
+317
+00:25:08,960 --> 00:25:13,280
+we did computer lock class when I was in middle 
+school. I remember being really good at Google  
+
+318
+00:25:13,280 --> 00:25:17,680
+and that was actually a skill back in the day to 
+think in terms of this information is out there,  
+
+319
+00:25:17,680 --> 00:25:21,440
+how do I query for it? How do I do it? I think 
+it actually was an advantage at the time. 
+
+320
+00:25:21,440 --> 00:25:24,960
+Of course now Google is pretty good at figuring 
+out what you're trying to do if you are only  
+
+321
+00:25:24,960 --> 00:25:29,920
+in the neighborhood and there's less of that 
+research kind of need. But I still think that's  
+
+322
+00:25:29,920 --> 00:25:34,000
+a necessary part of good product development, 
+which is the capabilities are there and even  
+
+323
+00:25:34,000 --> 00:25:39,040
+if Claude can create products from scratch, 
+what are you building and how do you make it  
+
+324
+00:25:39,040 --> 00:25:44,720
+Comprehensible? Still hard because I think 
+that gets at this much deeper empathy and  
+
+325
+00:25:44,720 --> 00:25:49,280
+understanding of human needs and psychology. 
+I was a human community interaction major,  
+
+326
+00:25:49,280 --> 00:25:54,800
+I still been talking in my book here. I still feel 
+like that is a very, very, very, very necessary  
+
+327
+00:25:54,800 --> 00:26:02,320
+skill. So that's one. Two is, and this straight to 
+call back to another one of your guests, strategy,  
+
+328
+00:26:02,320 --> 00:26:06,800
+how we win, where we'll play, figuring 
+out where exactly you're going to want to,  
+
+329
+00:26:06,800 --> 00:26:12,000
+of all the things that you could be spending 
+your time or your tokens or your computation  
+
+330
+00:26:12,000 --> 00:26:17,360
+on what you want to actually go and do.
+You could be wider probably than you could before,  
+
+331
+00:26:17,360 --> 00:26:22,160
+but you can't do everything. And even from an 
+external perspective, if you're seen to be doing  
+
+332
+00:26:22,160 --> 00:26:26,880
+everything, it's way less clear around how you're 
+positioning yourselves. Like strategy I think is  
+
+333
+00:26:26,880 --> 00:26:31,680
+still the second piece. And then the third one is 
+opening people's eyes to what's possible, which  
+
+334
+00:26:31,680 --> 00:26:36,320
+is a continuation of making it understandable. 
+But we were in a demo with a financial services  
+
+335
+00:26:36,320 --> 00:26:41,120
+company recently and we were working on here's 
+how you can use our analysis tool and MCP together  
+
+336
+00:26:41,120 --> 00:26:47,440
+and you could see their light up and you're 
+like, "Ah, okay." We call it overhang. The  
+
+337
+00:26:47,440 --> 00:26:51,920
+delta between what the models and the products 
+can do and how they're being used on a daily  
+
+338
+00:26:51,920 --> 00:26:59,200
+basis. Huge overhang. So that's where still a 
+very, very strong necessary role for product.
+
+339
+00:26:59,200 --> 00:27:04,400
+Okay, that's an awesome answer. So essentially 
+areas for product teams to lean into more is  
+
+340
+00:27:04,400 --> 00:27:08,080
+strategy, just getting better and better at 
+strategy, figuring out what to build and how  
+
+341
+00:27:08,080 --> 00:27:12,640
+to win in the market, making it easier to 
+help people understand how to leverage the  
+
+342
+00:27:12,640 --> 00:27:17,520
+power of these tools, the comprehensibility 
+and kind of along those lines is opening  
+
+343
+00:27:17,520 --> 00:27:21,600
+people's eyes to the potential of these sorts 
+of things. That's where product can still help.
+
+344
+00:27:21,600 --> 00:27:22,240
+Exactly.
+
+345
+00:27:22,240 --> 00:27:27,040
+Awesome. So along those lines actually, do 
+you have any just prompting tricks for people,  
+
+346
+00:27:27,040 --> 00:27:30,320
+things that you've learned to get more 
+out of Claude when you chat with it?
+
+347
+00:27:30,960 --> 00:27:36,800
+Sometimes it's funny because in some ways we have 
+the ultimate prompting job, which is to write the  
+
+348
+00:27:36,800 --> 00:27:41,040
+system prompt for Claudia AI and we publish 
+all of these, which I think is another nice  
+
+349
+00:27:41,040 --> 00:27:46,080
+area of transparency. And we are always careful 
+when giving prompting advice because at least  
+
+350
+00:27:46,080 --> 00:27:49,600
+officially, but I'll give you the unofficial 
+version because you don't want things to become  
+
+351
+00:27:50,640 --> 00:27:57,200
+like we think this works, but we're not sure why. 
+But I will do small things like in Claude Code  
+
+352
+00:27:57,200 --> 00:28:01,360
+and we actually do react to this very literally, 
+but I always ask it to, if I wanted to use more  
+
+353
+00:28:01,360 --> 00:28:08,960
+reasoning, think hard and it'll use a different 
+flow and I usually start with that. Nudging,  
+
+354
+00:28:08,960 --> 00:28:12,800
+there's a great essay around make the other 
+mistake like if you tend to be too nice, can  
+
+355
+00:28:12,800 --> 00:28:16,480
+you focus on... Even if you're trying to be more 
+critical or more blunt, you're probably not going  
+
+356
+00:28:16,480 --> 00:28:21,360
+to be the most critical blunt person in the world.
+And so with Claude sometimes I'm like, "Be brutal,  
+
+357
+00:28:21,360 --> 00:28:25,840
+Claude, roast me. Tell me what's wrong with this 
+strategy." I know we were talking earlier about  
+
+358
+00:28:25,840 --> 00:28:31,280
+the Claude as thought partner around critiquing 
+product strategy. I think I previously would say  
+
+359
+00:28:31,280 --> 00:28:35,520
+things like, "What could be better on this product 
+strategy?" And I'm just like, "Just roast this  
+
+360
+00:28:35,520 --> 00:28:41,600
+product strategy," and Claude's like a pretty nice 
+entity. It's hard to push it to be super brutal,  
+
+361
+00:28:41,600 --> 00:28:46,320
+but it forces it to be a little bit more 
+critical as well. The last thing I'll say is,  
+
+362
+00:28:46,320 --> 00:28:50,960
+so we have a team called Applied AI that does a 
+lot of work with our customers around optimizing  
+
+363
+00:28:50,960 --> 00:28:55,760
+Claude for their use case. And we basically 
+took their insights and their way of working  
+
+364
+00:28:55,760 --> 00:28:59,520
+and we put it into a product itself. So 
+if you go to our console, our work bench,  
+
+365
+00:28:59,520 --> 00:29:02,880
+we have this thing called the prompt improver 
+where you describe the problem and you give it  
+
+366
+00:29:02,880 --> 00:29:09,520
+examples and Claude itself will agentically 
+create and then iterate on a prompt for you. 
+
+367
+00:29:09,520 --> 00:29:13,920
+I find what comes out of that ends up being quite 
+different than what my intuitions would've been  
+
+368
+00:29:13,920 --> 00:29:18,160
+for a good prompt. And so I'd encourage folks 
+to also check that out even for their own use  
+
+369
+00:29:18,160 --> 00:29:22,400
+cases because while that tool is met for an API 
+developer putting a prompt into their product,  
+
+370
+00:29:22,400 --> 00:29:28,560
+it's equally applicable for a person doing a 
+prompt for themselves. It'll insert XML tags which  
+
+371
+00:29:28,560 --> 00:29:32,560
+no human is going to think to do ahead of time. It 
+actually is very helpful for Claude to understand  
+
+372
+00:29:32,560 --> 00:29:36,560
+what it should be thinking versus what it should 
+be saying, et cetera. So that's another one is  
+
+373
+00:29:36,560 --> 00:29:41,760
+watch our prompt improver and then note that 
+Claude itself is a very good prompter of Claude.
+
+374
+00:29:41,760 --> 00:29:45,000
+Awesome. Okay, so we're going to link 
+to that, the prompt improver. The core  
+
+375
+00:29:45,000 --> 00:29:49,040
+piece of advice you shared early is just do 
+the opposite of what you would naturally do.  
+
+376
+00:29:49,040 --> 00:29:53,680
+So if you're trying to be nice, just be 
+brutal, be very honest and frank with me.
+
+377
+00:29:53,680 --> 00:29:55,440
+Exactly. I find that works quite well. What are  
+
+378
+00:29:55,440 --> 00:29:58,960
+the thought patterns that I've fallen 
+into that you want to break me out of?
+
+379
+00:29:58,960 --> 00:30:01,440
+I saw you guys just today maybe launched a Rick  
+
+380
+00:30:01,440 --> 00:30:04,800
+Rubin collab where it said vibe 
+coding. What's that all about?
+
+381
+00:30:06,400 --> 00:30:10,800
+What I've heard about that. And again, a lot 
+of the coalesce this week between model launch  
+
+382
+00:30:10,800 --> 00:30:18,480
+developer event and The Way of Code. We had one of 
+our co-founders, Jack Clark is our head of policy  
+
+383
+00:30:18,480 --> 00:30:22,640
+and he got connected to Rick Rubin because I think 
+he's been thinking a lot about coding, the future  
+
+384
+00:30:22,640 --> 00:30:28,800
+of coding and creativity and they've stayed in 
+touch. And Rick got excited about this idea of  
+
+385
+00:30:28,800 --> 00:30:34,960
+he was creating art and visualizations with Claude 
+and then he had these ideas around the way of the  
+
+386
+00:30:34,960 --> 00:30:41,120
+vibe coder and they put together this, actually 
+I mean I love almost everything Rick Rubin. So  
+
+387
+00:30:41,120 --> 00:30:45,520
+the aesthetic of it I think is just so on point 
+too. But yeah, this sort of like med meditation  
+
+388
+00:30:45,520 --> 00:30:50,320
+is probably the right word. Meditation on 
+creativity, working alongside AI coupled with this  
+
+389
+00:30:51,920 --> 00:30:57,760
+really rich, interesting visualizations. But it's 
+one of those things where internally they're like,  
+
+390
+00:30:57,760 --> 00:31:02,800
+"Oh yeah, and we're doing this Rick Rubin collab." 
+We were like, "We're doing what? That's amazing."
+
+391
+00:31:03,440 --> 00:31:07,680
+I looked at it briefly and there's 
+that meme of him just thinking deeply,  
+
+392
+00:31:07,680 --> 00:31:09,440
+sitting on a computer with a mouth.
+
+393
+00:31:09,440 --> 00:31:10,000
+Yes.
+
+394
+00:31:10,000 --> 00:31:11,360
+And ASCII art, I think.
+
+395
+00:31:11,360 --> 00:31:14,000
+It's totally, it's like ASCII art vibe.
+
+396
+00:31:14,000 --> 00:31:18,640
+I'm excited to have Andrew Luo joining 
+us today. Andrew is CEO of OneSchema,  
+
+397
+00:31:18,640 --> 00:31:21,680
+one of our long time podcast 
+sponsors. Welcome, Andrew.
+
+398
+00:31:21,680 --> 00:31:23,760
+Thanks for having me, Lenny. Great to be here.
+
+399
+00:31:23,760 --> 00:31:28,480
+So what is new with one schema? I know that you 
+work with some of my favorite companies like Ramp  
+
+400
+00:31:28,480 --> 00:31:33,760
+and Vanta and Watershed. I heard you guys launch 
+a new data intake product that automates the hours  
+
+401
+00:31:33,760 --> 00:31:39,040
+of manual work that teams spent importing and 
+mapping and integrating CSV and Excel files.
+
+402
+00:31:39,040 --> 00:31:44,640
+Yes, so we just launched the 2.0 of OneSchema 
+FileFeeds. We've rebuilt it from the ground up  
+
+403
+00:31:44,640 --> 00:31:49,680
+with AI. We saw so many customers coming 
+to us with teams of data engineers that  
+
+404
+00:31:49,680 --> 00:31:54,560
+struggled with the manual work required 
+to clean messy spreadsheets. FileFeeds 2.0  
+
+405
+00:31:54,560 --> 00:32:00,000
+allows non-technical teams to automate the process 
+of transforming CSV and Excel files with just a  
+
+406
+00:32:00,000 --> 00:32:05,760
+simple prompt. We support all of the trickiest 
+file integrations, SFTP, S3, and even email.
+
+407
+00:32:05,760 --> 00:32:09,600
+I can tell you that if my team had to 
+build integrations like this, how nice  
+
+408
+00:32:09,600 --> 00:32:13,840
+would it be to take this off our roadmap 
+and instead use something like OneSchema?
+
+409
+00:32:13,840 --> 00:32:18,080
+Absolutely, Lenny. We've heard so many horror 
+stories of outages from even just a single  
+
+410
+00:32:18,080 --> 00:32:22,640
+bad record in transactions, employee 
+files, purchase orders, you name it.  
+
+411
+00:32:22,640 --> 00:32:27,040
+Debugging these issues is often like finding 
+a needle in a haystack. OneSchema stops any  
+
+412
+00:32:27,040 --> 00:32:30,640
+bad data from entering your system and 
+automatically validates your files,  
+
+413
+00:32:30,640 --> 00:32:34,320
+generating error reports with the 
+exact issues in all bad files.
+
+414
+00:32:34,320 --> 00:32:38,320
+I know that importing incorrect data can cause 
+all kinds of pain for your customers and quickly  
+
+415
+00:32:38,320 --> 00:32:42,080
+lose their trust. Andrew, thank you so much 
+for joining me. If you want to learn more,  
+
+416
+00:32:42,080 --> 00:32:48,160
+head on over to oneschema.co. That's oneschema.co. 
+
+417
+00:32:48,160 --> 00:32:51,760
+Actually going back to the beginning 
+of your journey at Anthropic,  
+
+418
+00:32:51,760 --> 00:32:55,280
+what's the story of you getting recruited 
+at Anthropic? Is there anything fun there?
+
+419
+00:32:55,280 --> 00:32:59,600
+It all started and I actually sent my friend 
+this text. So Joel Lewenstein, who I've known,  
+
+420
+00:32:59,600 --> 00:33:04,560
+he and I built our first iPhone apps together 
+in 2007 when the App Store was just out and you  
+
+421
+00:33:04,560 --> 00:33:11,600
+could still make money by selling dollar apps 
+on the App Store back in the day. And we were  
+
+422
+00:33:11,600 --> 00:33:14,880
+both at Stanford together and we were friends 
+and we've stayed in touch over years and we've  
+
+423
+00:33:14,880 --> 00:33:19,600
+never gotten to work together since then. 
+We've just remained close. And I was coming  
+
+424
+00:33:19,600 --> 00:33:23,120
+out of the Artifact experience, I was trying to 
+figure out, do I start another company? I don't  
+
+425
+00:33:23,120 --> 00:33:28,000
+think so. I need a break from starting something 
+from zero. Do I go work somewhere? I don't know  
+
+426
+00:33:28,000 --> 00:33:31,280
+what company would I want to go work at. And 
+he reached out and he's like, "Look, I don't  
+
+427
+00:33:31,280 --> 00:33:34,560
+know if you at all considered joining something 
+rather than starting something, but we're looking  
+
+428
+00:33:34,560 --> 00:33:39,520
+for a CPO. Would you be interested in chatting?"
+And at that time, Claude 3 had just come out and I  
+
+429
+00:33:39,520 --> 00:33:45,920
+was like, "Okay, this company's clearly got a good 
+research team. The product is so early still." And  
+
+430
+00:33:45,920 --> 00:33:49,920
+it was like, "Great, I'll take the meeting." And I 
+first met with Daniela, was one of the co-founders  
+
+431
+00:33:49,920 --> 00:33:55,200
+and the president in Anthropic. And just from 
+the beginning I was like a breath of fresh air,  
+
+432
+00:33:55,200 --> 00:34:03,600
+very little grandiosity coming off the founders, 
+I mean they're clear-eyed about what they're  
+
+433
+00:34:03,600 --> 00:34:08,000
+building. They know what they don't know. How many 
+times I talk to Dario always like Dario is like,  
+
+434
+00:34:08,000 --> 00:34:11,520
+"Look, I don't know anything about product, but 
+here's an intuition." Usually the intuition is  
+
+435
+00:34:11,520 --> 00:34:16,720
+really good and leads to some good conversation, 
+but I think that intellectual honesty and shared  
+
+436
+00:34:16,720 --> 00:34:22,160
+view of what it means to do AI in a 
+responsible way, it just resonated. 
+
+437
+00:34:22,800 --> 00:34:27,440
+I kept having this feeling in these interviews, 
+this is the AI company I would've hoped to have  
+
+438
+00:34:27,440 --> 00:34:30,640
+found it if I had founded an AI company. And 
+that's kind of the bar around if I'm going  
+
+439
+00:34:30,640 --> 00:34:36,320
+to join something that should be where I'm 
+going to go. But what I realized, I actually  
+
+440
+00:34:37,360 --> 00:34:42,240
+hadn't joined a company since my first internship 
+in college basically. And I was like, "Oh,  
+
+441
+00:34:42,240 --> 00:34:50,000
+how do I onboard myself? How do I get myself 
+up to speed? How do I balance making sweeping  
+
+442
+00:34:50,000 --> 00:34:54,640
+changes versus understanding what's not broken 
+about it overall?" And looking back on a year,  
+
+443
+00:34:54,640 --> 00:34:58,960
+I think I made some changes too slowly. I think 
+there was ways reorganizing product that I could  
+
+444
+00:34:58,960 --> 00:35:07,680
+have made a change earlier. And I think I didn't 
+appreciate how much a couple of really key senior  
+
+445
+00:35:07,680 --> 00:35:13,120
+people can shape so much of product strategy.
+I'll harken back to Claude Code. Claude Code  
+
+446
+00:35:13,120 --> 00:35:17,200
+happened because Boris, who actually was a Boris 
+Cherney, he was an Instagram engineer and one  
+
+447
+00:35:17,200 --> 00:35:22,960
+of our senior ICs there, we overlapped a bit, 
+was started that project from scratch internal  
+
+448
+00:35:22,960 --> 00:35:28,560
+first and then we got it out and then shipped 
+it. And that's the power of one or two really  
+
+449
+00:35:28,560 --> 00:35:33,600
+strong people. And I made this mistake, we need 
+more headcount and we do, I think there's more  
+
+450
+00:35:33,600 --> 00:35:37,760
+work that we need to do and there's things that 
+I want to be building. But more than that we need  
+
+451
+00:35:37,760 --> 00:35:44,160
+a couple of almost founder type engineers that 
+maybe connect back to our question on what skills  
+
+452
+00:35:44,160 --> 00:35:48,160
+are useful and how does product development 
+change. And maybe even more so I'm a huge  
+
+453
+00:35:48,160 --> 00:35:54,320
+believer in the founding engineer tech lead with 
+an idea and pair them with the right design and  
+
+454
+00:35:54,320 --> 00:36:00,080
+product supports, help them realize that, I'm 
+10 times more a believer in that than before.
+
+455
+00:36:01,040 --> 00:36:06,160
+I actually asked people on Twitter what to ask 
+you ahead of this conversation. And the most  
+
+456
+00:36:06,160 --> 00:36:11,600
+common question surprisingly was why did you 
+shut down Artifact? And I also wondered that  
+
+457
+00:36:11,600 --> 00:36:16,880
+because I loved Artifact. I was a power user. I 
+was just like, "Finally a news app that I love  
+
+458
+00:36:16,880 --> 00:36:20,160
+that it's giving me what I want to know." So 
+I guess just what happened there at the end?
+
+459
+00:36:20,160 --> 00:36:24,880
+I still really miss it too. I didn't find a 
+replacement and I think I substituted it by  
+
+460
+00:36:24,880 --> 00:36:29,920
+visiting individual sites and keeping things 
+up that way. And it's not really the same,  
+
+461
+00:36:29,920 --> 00:36:34,480
+especially on the log to I think we got right with 
+Artifact and if people didn't play with it before,  
+
+462
+00:36:34,480 --> 00:36:40,560
+it was we really tried to not just recommend 
+top stories, they were part of it. But really  
+
+463
+00:36:40,560 --> 00:36:45,920
+if you were interested in Japanese architecture, 
+you could pretty reliably get really interesting  
+
+464
+00:36:45,920 --> 00:36:50,960
+stories about Japanese architecture every 
+day. Whether that's from a Dwell or from  
+
+465
+00:36:50,960 --> 00:36:54,400
+Architectural Digest or from a really specific 
+blog that we found that somebody recommended  
+
+466
+00:36:54,400 --> 00:37:00,640
+to us. It captured some of that Google reader 
+joy of content discovery of the deeper web. Our  
+
+467
+00:37:00,640 --> 00:37:07,400
+headwinds were a couple. One of them was just 
+mobile websites have really taken a turn. I  
+
+468
+00:37:08,640 --> 00:37:12,800
+don't blame any individuals for this.
+I think it's the market dynamics of it,  
+
+469
+00:37:12,800 --> 00:37:18,720
+but we put so much time or designers, sky Gunner 
+Gray who's phenomenal that for Perplexity now,  
+
+470
+00:37:18,720 --> 00:37:23,760
+the app experience I was so proud of, but when you 
+click through it was like the pressures on these  
+
+471
+00:37:23,760 --> 00:37:27,520
+mobile sites and these mobile publishers would 
+be like, "Sign up for our newsletter. Here's a  
+
+472
+00:37:27,520 --> 00:37:34,320
+full screen video ad." It was very jarring and we 
+didn't feel like it ethically made sense for us  
+
+473
+00:37:34,320 --> 00:37:38,560
+to do a bunch of ad blocking because then you're 
+like, "Sure, you can deliver a nice experience for  
+
+474
+00:37:38,560 --> 00:37:43,600
+people, but that doesn't feel like it's playing 
+fair with the publishers." But at the same time,  
+
+475
+00:37:43,600 --> 00:37:48,240
+the actual experience wasn't good. So the mobile 
+web deteriorating, which makes me very sad,  
+
+476
+00:37:48,240 --> 00:37:54,240
+but I think was part of it. Two was Instagram 
+spread in the early days because people would  
+
+477
+00:37:54,240 --> 00:37:57,520
+take photos and then post them on other 
+networks and tell friends about it. 
+
+478
+00:37:57,520 --> 00:38:00,960
+And there was this really natural like, "How 
+did you do that? I want to do it." News was  
+
+479
+00:38:00,960 --> 00:38:04,640
+very personal. I can't tell you how many people 
+would be like, "I love Artifact." I'm like,  
+
+480
+00:38:04,640 --> 00:38:09,280
+"Did you tell anybody about it?" And they're 
+like, "I told one person," and it didn't have  
+
+481
+00:38:09,280 --> 00:38:13,920
+that kind of spread. And any attempt that we 
+had to do it felt kind of contrived, like, "Oh,  
+
+482
+00:38:13,920 --> 00:38:20,240
+we'll wrap all the links in artifact.news." But 
+we didn't want interstitial things. In some ways,  
+
+483
+00:38:20,240 --> 00:38:24,560
+this sounds very puritanical, I don't mean it 
+to sound this way, but there were lines that  
+
+484
+00:38:24,560 --> 00:38:32,080
+we didn't want to cross that just felt ethically 
+not us, that I've seen other news players do more  
+
+485
+00:38:32,080 --> 00:38:36,160
+of. And maybe if we had done that, it would've 
+grown more, but I don't think that's the company  
+
+486
+00:38:36,160 --> 00:38:39,440
+we wanted to have built other way. I don't 
+think we were the founders to have built it. 
+
+487
+00:38:39,440 --> 00:38:43,760
+And the third one, which is an underappreciated 
+one, is we started at mid-COVID, which meant that  
+
+488
+00:38:43,760 --> 00:38:48,160
+we were fully distributed and I think there were 
+major shifts that we would've wanted to make both  
+
+489
+00:38:48,160 --> 00:38:54,080
+in the strategy and the product and the team. 
+And it's really hard to do that if you are all  
+
+490
+00:38:54,080 --> 00:38:59,360
+fully remote. Nothing replaces the Instagram 
+days of we went through some hard times like  
+
+491
+00:38:59,360 --> 00:39:07,680
+Ben Horowitz called the we're F'ed, it's over 
+kind of moments. This is definitely type two  
+
+492
+00:39:07,680 --> 00:39:10,720
+fun. I wouldn't say that my favorite memories 
+because they weren't happy ones, but memories  
+
+493
+00:39:10,720 --> 00:39:15,920
+I really stayed with me with Instagram was like 
+me and Kevin at Taqueria, Cancun on Market Street  
+
+494
+00:39:15,920 --> 00:39:20,320
+eating burritos at literally 11:00 PM being 
+like, "How are we going to get out of this?  
+
+495
+00:39:20,320 --> 00:39:25,760
+How are we going to work through this?" 
+And Zoom is not a good replica for that. 
+
+496
+00:39:25,760 --> 00:39:31,440
+You tend to let things go or things build up over 
+time. So the confluence of those three things,  
+
+497
+00:39:31,440 --> 00:39:36,560
+we entered I guess 2024 and said, "Look, there 
+is a company to be built in the space. I'm  
+
+498
+00:39:36,560 --> 00:39:39,600
+not sure where the people would've built 
+it. This concurrent incarnation we love,  
+
+499
+00:39:39,600 --> 00:39:44,800
+but it's not growing." The way I put it's like 
+10 units of input in for one unit of output  
+
+500
+00:39:44,800 --> 00:39:49,200
+versus the other way around. If we put blood and 
+tears into the product and launch something we  
+
+501
+00:39:49,200 --> 00:39:54,240
+were proud of and metrics would barely move, 
+the energy is not present in this product,  
+
+502
+00:39:54,240 --> 00:39:59,040
+in this system. And so are we going to 
+expend another year or two and then go  
+
+503
+00:39:59,040 --> 00:40:04,000
+off and fundraise only to find that this is the 
+case or do we call it and see that it's run its  
+
+504
+00:40:04,000 --> 00:40:09,280
+course and try to find a home for it, et cetera.
+So that was the confluence on it and they started  
+
+505
+00:40:09,280 --> 00:40:14,080
+feeling this opportunity cost of AI is starting to 
+change everything. We have an AI powered news app,  
+
+506
+00:40:14,080 --> 00:40:18,000
+but is this the maximal way in which we're 
+going to be able to impact this? And it felt  
+
+507
+00:40:18,000 --> 00:40:21,920
+like the answer was increasingly no. 
+But it was hard. I mean in the end I  
+
+508
+00:40:21,920 --> 00:40:26,720
+was really at peace of the decision, but it was a 
+conversation that went on for a couple of months.
+
+509
+00:40:26,720 --> 00:40:30,880
+On that note, just how hard was it because 
+because there's an ego component to it,  
+
+510
+00:40:30,880 --> 00:40:33,680
+like, "Oh, I'm starting my new 
+company, it's going to be great,"  
+
+511
+00:40:34,320 --> 00:40:36,960
+and then you end up having to shut 
+it down. Just how hard is that as a  
+
+512
+00:40:36,960 --> 00:40:40,960
+very successful previous founder shutting 
+something down and then not working out?
+
+513
+00:40:40,960 --> 00:40:44,000
+Yeah, I mean I think when we started it, 
+one of the conversations was like, "Look,  
+
+514
+00:40:44,000 --> 00:40:48,640
+what is the bar to success here? And do 
+we want it to be something other than  
+
+515
+00:40:48,640 --> 00:40:53,760
+Instagram DAU?" Which is just an impossible 
+bar. Only one company since, maybe two,  
+
+516
+00:40:53,760 --> 00:41:00,160
+you could say maybe ChatGPT and TikToK have 
+reached that kind of mass consumer adoption  
+
+517
+00:41:00,160 --> 00:41:04,800
+starting a news app. Most people are not 
+daily news readers even, right? And so  
+
+518
+00:41:04,800 --> 00:41:10,240
+we knew that we weren't pursuing that size of 
+usage, at least with the first incarnation,  
+
+519
+00:41:10,240 --> 00:41:14,000
+but we did have an idea of building out 
+complementary products over time that all use  
+
+520
+00:41:14,000 --> 00:41:18,461
+personalization and machine learning. We didn't 
+even call it AI at the time. It was 2021 back-
+
+521
+00:41:18,461 --> 00:41:19,440
+Yeah, yeah, AI, it was called 
+machine learning back then.
+
+522
+00:41:19,440 --> 00:41:28,720
+Yeah, it was called machine learning still. And so 
+in shutting it down, you know it when you see it  
+
+523
+00:41:28,720 --> 00:41:34,400
+in terms of user growth and traction. And I wasn't 
+expecting Instagram growth, but I was expecting or  
+
+524
+00:41:34,400 --> 00:41:40,160
+hoping for or looking for something that felt like 
+at its own legs under it and it could continue to  
+
+525
+00:41:40,160 --> 00:41:45,920
+compound. I was really positively surprised by 
+how supportive people were when we announced it.  
+
+526
+00:41:45,920 --> 00:41:50,880
+There was a bit of like I told you so which 
+sure anything launching you could be like,  
+
+527
+00:41:50,880 --> 00:41:54,480
+"This is not going to work." And you're right, 
+most of the time most things don't work. There was  
+
+528
+00:41:54,480 --> 00:41:59,200
+actually very little of that. And most people, the 
+universal reception, at least as I received it,  
+
+529
+00:41:59,200 --> 00:42:05,200
+was kudos for calling it when you saw it and 
+not protracted doing this for a long time. 
+
+530
+00:42:05,200 --> 00:42:09,680
+And I've talked to founders since then that have 
+been like, "Yeah, I probably would've taken this  
+
+531
+00:42:09,680 --> 00:42:15,200
+thing on for another six months, but saw what you 
+guys did, realized we were barking up the wrong  
+
+532
+00:42:15,200 --> 00:42:20,800
+tree, made the call." And I was like, "If that 
+frees up people to go work on a more interesting  
+
+533
+00:42:20,800 --> 00:42:26,640
+things, I feel like that's a good legacy for 
+Artifact to have." But for sure there was an ego  
+
+534
+00:42:26,640 --> 00:42:33,120
+bruise of is it true that you're only as good 
+as your last game if I am a huge sports fan,  
+
+535
+00:42:33,120 --> 00:42:37,520
+right? So is that true or is there something 
+more over a time? I'm very competitive,  
+
+536
+00:42:37,520 --> 00:42:42,560
+but primarily with myself and so I'm always trying 
+to find the next thing that I want to go and do  
+
+537
+00:42:42,560 --> 00:42:46,800
+that's hard. And unfortunately that probably means 
+that more often than not I'll feel dissatisfied,  
+
+538
+00:42:46,800 --> 00:42:50,880
+but the most recent thing that I did, but 
+hopefully that yields good stuff in the end.
+
+539
+00:42:50,880 --> 00:42:55,760
+Yeah, I think just the trajectory you went on 
+after shows that it's okay to shut down things  
+
+540
+00:42:55,760 --> 00:43:00,160
+that you were working on. Okay, so you mentioned 
+ChatGPT. I wanted to chat about this a bit. So  
+
+541
+00:43:00,160 --> 00:43:04,560
+there's something really interesting happening. 
+So on the one hand you guys are doing some of the  
+
+542
+00:43:04,560 --> 00:43:09,360
+most innovative work in AI. You guys launched 
+MCP, which is just, I don't know, the fastest  
+
+543
+00:43:09,360 --> 00:43:15,920
+growing standard of any time in history that 
+everyone's adopting Claude powered and unlocked  
+
+544
+00:43:15,920 --> 00:43:19,680
+centrally the fastest growing companies in the 
+world, Cursor, Lovable, and Bolt, and all these  
+
+545
+00:43:19,680 --> 00:43:25,760
+guys. I had them on the podcast and they're all 
+like, "When Claude, I think 3.5 came out, Sonnet,  
+
+546
+00:43:25,760 --> 00:43:31,760
+was just like that's made this work finally."
+On the other hand, it feels like ChatGPT is  
+
+547
+00:43:31,760 --> 00:43:36,240
+just winning in consumer mind share. When 
+people think AI, especially outside tech,  
+
+548
+00:43:36,240 --> 00:43:40,560
+it's just like ChatGPT in their mind. So let 
+me just ask you this, I guess first of all,  
+
+549
+00:43:40,560 --> 00:43:45,120
+do you agree with that sentiment and then 
+two, as a challenger brand in the AI space,  
+
+550
+00:43:45,120 --> 00:43:50,160
+just how does that inform the way you think about 
+product strategy and mission and things like that?
+
+551
+00:43:50,160 --> 00:43:57,520
+Yeah, I mean you look at the sort of public 
+adoption or if you ask people, oh, if you  
+
+552
+00:43:59,280 --> 00:44:03,600
+Jimmy Kimmel man on the street kind of thing, 
+name an AI company, I bet they would name and  
+
+553
+00:44:03,600 --> 00:44:06,800
+actually I'm not even sure they name open AI, 
+they'd probably name ChatGPT because that brand  
+
+554
+00:44:06,800 --> 00:44:11,760
+is the lead brand there as well. And I think 
+that's just the reality of it. I think that  
+
+555
+00:44:11,760 --> 00:44:18,160
+when I reflect on my year, I think maybe two 
+things are true. One is consumer adoption is  
+
+556
+00:44:18,160 --> 00:44:22,720
+really lightning in a bottle and we saw it at 
+Instagram. So almost maybe more than anybody,  
+
+557
+00:44:22,720 --> 00:44:27,280
+I can look internally and say, "Look, we'll keep 
+building interesting products. One of them may  
+
+558
+00:44:27,280 --> 00:44:34,960
+hit." But to craft an entire product strategy 
+around trying to find that hit is probably not  
+
+559
+00:44:34,960 --> 00:44:39,440
+wise, we could do it and maybe Claude can help 
+come up with a fullness of things, but I think  
+
+560
+00:44:39,440 --> 00:44:45,440
+we'd miss out an opportunity in the meantime.
+And then instead look yourself in the mirror  
+
+561
+00:44:45,440 --> 00:44:50,480
+and embrace who you are and what you could 
+be rather than who others are is maybe the  
+
+562
+00:44:50,480 --> 00:44:53,600
+way I've been looking at it, which is 
+we have a super strong developer brand,  
+
+563
+00:44:53,600 --> 00:44:57,920
+people build on top of us all the time, and 
+I think we also have a builder brand. The  
+
+564
+00:44:57,920 --> 00:45:04,480
+people who I've seen react really well to Claude 
+externally. Maybe the Rick Rubin connection has  
+
+565
+00:45:04,480 --> 00:45:09,200
+some resonance here as well. Can we lean into the 
+fact that builders love using Claude? And those  
+
+566
+00:45:09,200 --> 00:45:13,120
+builders aren't all just engineers and they're not 
+just all entrepreneurs starting their companies,  
+
+567
+00:45:13,120 --> 00:45:16,880
+but they're people that like to be at the 
+forefront of AI and are creating things.  
+
+568
+00:45:16,880 --> 00:45:21,280
+Maybe they didn't think of those as engineers, but 
+they're building... I got this really nice note  
+
+569
+00:45:21,280 --> 00:45:26,160
+from somebody internal on Anthropic who's on the 
+legal team and he was building bespoke software  
+
+570
+00:45:26,160 --> 00:45:31,280
+for his family and connected to them in a new way.
+And I was like, "This is a glimmer of something  
+
+571
+00:45:31,280 --> 00:45:38,560
+that we should lean into a lot more." And so I 
+think what, and this is actually connecting back  
+
+572
+00:45:38,560 --> 00:45:42,080
+to us saying like Claude being helpful here. 
+A lot of what I've been thinking about going  
+
+573
+00:45:42,080 --> 00:45:45,760
+into the second half of the year and beyond is 
+how do we figure out what we want to be when  
+
+574
+00:45:45,760 --> 00:45:50,720
+we grow up versus what we currently aren't or 
+wish that we were or see other players in the  
+
+575
+00:45:50,720 --> 00:45:56,560
+space being. I think there's room for several 
+generationally important companies to be built  
+
+576
+00:45:56,560 --> 00:46:03,600
+in AI right now. That's almost a truism given the 
+adoption and growth that we've seen at Anthropic,  
+
+577
+00:46:03,600 --> 00:46:08,720
+but also across OpenAI and also places like Google 
+and Gemini. So let's figure out what we can be  
+
+578
+00:46:08,720 --> 00:46:13,840
+uniquely good at that place to the personality 
+of the founder. All the things come together,  
+
+579
+00:46:13,840 --> 00:46:17,680
+the personality of the founders, the quality 
+of the models, the things the models tend to  
+
+580
+00:46:17,680 --> 00:46:22,880
+excel at, which is agentic behavior and coding.
+Great. There's a lot to be done there. How do we  
+
+581
+00:46:22,880 --> 00:46:26,560
+help people get work done? How do we let people 
+delegate hours of work to Claude? And maybe  
+
+582
+00:46:26,560 --> 00:46:31,120
+there's fewer direct consumer applications on day 
+one. I think they'll come, but I don't think that  
+
+583
+00:46:31,680 --> 00:46:37,040
+spending all of our time focused on that is 
+the right approach either. And so I came in,  
+
+584
+00:46:37,040 --> 00:46:42,320
+everybody expected me to just go super, super hard 
+on consumer and make that the thing and again,  
+
+585
+00:46:42,320 --> 00:46:46,240
+would make the other mistake. Instead, I spent 
+a bunch of time talking to financial services  
+
+586
+00:46:46,240 --> 00:46:50,480
+companies and insurance companies and others 
+who are building on top of the API. And then  
+
+587
+00:46:50,480 --> 00:46:54,480
+lately I've spent a lot more time with startups 
+and seeing all the people that have grown off  
+
+588
+00:46:54,480 --> 00:46:58,560
+of that. And I think the next phase for me 
+is let's go spend time with the builders,  
+
+589
+00:46:58,560 --> 00:47:02,960
+the makers, the hackers, the tinkerers, and 
+make sure we're serving them really well. And  
+
+590
+00:47:02,960 --> 00:47:08,320
+I think good things will come from that and that 
+feels like an important company as we do that.
+
+591
+00:47:08,320 --> 00:47:10,800
+So essentially it's differentiate and focus,  
+
+592
+00:47:10,800 --> 00:47:15,040
+lean into the things that are working, don't 
+try to just beat somebody at their own game.
+
+593
+00:47:15,040 --> 00:47:15,840
+Exactly.
+
+594
+00:47:15,840 --> 00:47:20,480
+Super interesting. So kind of along those lines, 
+a question that a lot of AI founders have is just  
+
+595
+00:47:20,480 --> 00:47:25,520
+like, "Where's a safe space for me to play where 
+the foundational model companies are going to  
+
+596
+00:47:25,520 --> 00:47:31,120
+come squash me?" So I asked Kevin Weil this and he 
+had an answer and I noticed looking back at that  
+
+597
+00:47:31,120 --> 00:47:36,240
+conversation, he mentioned Windsurf a lot. He was 
+like, "Wow, this kid really loves Windsurf." And  
+
+598
+00:47:36,240 --> 00:47:41,360
+then a week later they bought Windsurf. So it all 
+makes sense now. So I guess the question just is,  
+
+599
+00:47:41,360 --> 00:47:49,120
+where do you think AI founders should play 
+where they are least likely to get squashed  
+
+600
+00:47:49,120 --> 00:47:53,280
+by folks like OpenAI and Anthropic? And 
+also, are you guys going to buy Cursor?
+
+601
+00:47:53,280 --> 00:47:59,120
+I don't think we're going to buy Cursor. Cursor 
+is very big, but we love working with them. A  
+
+602
+00:47:59,120 --> 00:48:04,240
+few thoughts on this, and it's a question I've 
+gotten. We like to do these kind of founder days  
+
+603
+00:48:04,240 --> 00:48:09,680
+with whether it's Menlo Ventures who have about 
+investors and [inaudible 00:48:10]. It's like  
+
+604
+00:48:09,680 --> 00:48:13,840
+we've done YC, we've done these founder days, 
+and it's like the question that is on a lot of  
+
+605
+00:48:13,840 --> 00:48:18,960
+these founders minds, understandably so. I think 
+things that are going to, I can't promise this  
+
+606
+00:48:18,960 --> 00:48:22,400
+as a five to 10 year thing, but at least one 
+to three years, things that feel defensible  
+
+607
+00:48:22,400 --> 00:48:28,320
+or durable. One is understanding of a particular 
+market. I spend a bunch of time with the Harvey  
+
+608
+00:48:28,320 --> 00:48:33,520
+folks and they showed me some of their UI. I was 
+like, "What is this thing?" And they're like, "Oh,  
+
+609
+00:48:33,520 --> 00:48:37,280
+this is a really specific flow that lawyers 
+do, "and you never would've come up with it  
+
+610
+00:48:37,280 --> 00:48:42,720
+from scratch and you could argue about whether 
+it's the optimal way they get done things done,  
+
+611
+00:48:42,720 --> 00:48:45,760
+but it is the way that they get things 
+done and here's how AI can help with that. 
+
+612
+00:48:45,760 --> 00:48:52,800
+And so differentiated industry knowledge, biotech, 
+I'm excited to go and partner with a bunch of  
+
+613
+00:48:52,800 --> 00:48:57,520
+companies that are doing good stuff around AI 
+and biotech and we can supply the models and  
+
+614
+00:48:57,520 --> 00:49:03,840
+some applied AI to help make those models go well. 
+And I've been dreaming about at what point does  
+
+615
+00:49:03,840 --> 00:49:07,520
+live equipment all get an MCP and that you can 
+then drive using Claude. There's all these cool  
+
+616
+00:49:07,520 --> 00:49:10,880
+things to be done there. I don't think we're going 
+to be the company to go build the intent solution  
+
+617
+00:49:10,880 --> 00:49:15,680
+for labs, but I want that company to exist and 
+I want to partner with it. Domains like legal,  
+
+618
+00:49:15,680 --> 00:49:21,680
+again, healthcare, I think there's a lot of very 
+specific compliance and things. These are things  
+
+619
+00:49:21,680 --> 00:49:25,760
+that necessarily sound sexy out the gate, but 
+there are very large companies to go and be  
+
+620
+00:49:25,760 --> 00:49:31,600
+built there. So that's number one. Paired 
+with that is differentiated go to market,  
+
+621
+00:49:31,600 --> 00:49:35,120
+which is the relationship that you 
+have with those companies, right? 
+
+622
+00:49:35,120 --> 00:49:39,120
+Do you know your customer at those 
+companies? One of our product leads,  
+
+623
+00:49:39,120 --> 00:49:42,800
+Michael is always talking about don't just 
+know the company you're selling to, but know  
+
+624
+00:49:42,800 --> 00:49:45,760
+the person you're selling to at the company. 
+Are you selling to the engineering department?  
+
+625
+00:49:45,760 --> 00:49:51,280
+Because trying to pick which AILM to build 
+on top of or API to build on top of. Let's go  
+
+626
+00:49:51,280 --> 00:49:57,920
+talk to them. Is it the CIOs? The CTOs? Is it the 
+CFO? Is it general counsel? So under a company's  
+
+627
+00:49:57,920 --> 00:50:03,040
+deep understanding of who they're selling to is 
+the other piece too. What's interesting there  
+
+628
+00:50:03,040 --> 00:50:08,560
+is it's probably hard to build that empathy in a 
+three-month accelerator, but you maybe can start  
+
+629
+00:50:08,560 --> 00:50:12,320
+having that first conversation and build that out 
+time or maybe you came from that world or you're  
+
+630
+00:50:12,320 --> 00:50:17,360
+co-founding somebody who came from that world. 
+Then the last one is like there's tremendous power  
+
+631
+00:50:17,360 --> 00:50:22,480
+in distribution and reach to being ChatGPT and 
+having hundreds of millions or billions of users. 
+
+632
+00:50:23,120 --> 00:50:29,040
+There's also people have an assumption about how 
+to use things and so I get excited about startups  
+
+633
+00:50:29,040 --> 00:50:34,240
+that will get started that have a completely 
+different take on what the form factor is by  
+
+634
+00:50:34,240 --> 00:50:38,880
+which we interface with AI. And I haven't seen 
+that many of them yet. I wanted to see more of  
+
+635
+00:50:38,880 --> 00:50:44,000
+them. I think more of them will get created with 
+some things like our new models, but the reason  
+
+636
+00:50:44,000 --> 00:50:49,440
+that that's an interesting space to occupy is 
+do something that feels very advanced user,  
+
+637
+00:50:49,440 --> 00:50:54,240
+very power user, very weird and out there 
+at the beginning, but could become huge if  
+
+638
+00:50:54,240 --> 00:51:00,000
+the models make that easy. And it's hard for 
+existing incumbents to adapt to because people  
+
+639
+00:51:00,000 --> 00:51:03,520
+already have an existing assumption about how 
+to use their products or how to adapt to them.  
+
+640
+00:51:03,520 --> 00:51:08,080
+So those are my answers. I don't envy them. 
+I would probably be asking those questions  
+
+641
+00:51:08,080 --> 00:51:12,320
+if I was starting a company in the AI space.
+Maybe that's part of the reason why I wanted to  
+
+642
+00:51:12,320 --> 00:51:18,400
+join a company rather than start one. But I still 
+think that there are, and maybe here's fourth,  
+
+643
+00:51:18,400 --> 00:51:25,280
+don't underestimate how much you can think and 
+work like a startup and feel like it's you against  
+
+644
+00:51:25,280 --> 00:51:28,960
+the world. It's existential that you go solve 
+that problem and that you go build it. It sounds  
+
+645
+00:51:28,960 --> 00:51:33,200
+a little cliche, but it's like it's all we had 
+at Instagram. We were two guys and we were like,  
+
+646
+00:51:33,200 --> 00:51:38,160
+"Let's see what we can do in an Artifact." 
+We were six people for most of that time and  
+
+647
+00:51:38,160 --> 00:51:43,520
+every day felt like it's existential that we 
+get this right, we need to win. And you can't  
+
+648
+00:51:43,520 --> 00:51:49,520
+replicate that and you can't instill that with 
+OKRs. You just have to feel it. And that is a  
+
+649
+00:51:49,520 --> 00:51:55,760
+way of working rather than a area of building, but 
+it's a continued advantage if you can harness it.
+
+650
+00:51:55,760 --> 00:52:01,600
+I love that you still have such a deep product 
+founder sense there as you're building products  
+
+651
+00:52:01,600 --> 00:52:07,520
+for this very large company now. On the flip side 
+of this, people working with your models and API,  
+
+652
+00:52:07,520 --> 00:52:12,240
+so I imagine there's some companies that 
+are finding ways to leverage your models  
+
+653
+00:52:12,240 --> 00:52:17,920
+and APIs to their max and are really good at 
+maximizing the power of what you guys have  
+
+654
+00:52:17,920 --> 00:52:21,280
+built. And there's some companies that work with 
+your APIs and models that haven't figured that  
+
+655
+00:52:21,280 --> 00:52:25,200
+out. What are those companies that are doing 
+a really good job building on your stuff,  
+
+656
+00:52:25,200 --> 00:52:28,960
+doing differently that you think other 
+companies should be thinking about?
+
+657
+00:52:28,960 --> 00:52:38,800
+I think being willing to build more at the edge of 
+the capabilities and basically break the model and  
+
+658
+00:52:38,800 --> 00:52:43,760
+then be surprised by the next model. I love that 
+you cited the companies were like 3.5 was the one  
+
+659
+00:52:43,760 --> 00:52:48,240
+that finally made them possible. Those companies 
+were trying it beforehand and then hitting a wall  
+
+660
+00:52:48,240 --> 00:52:52,960
+and being like, oh, the models are almost good 
+enough or they're okay for this specific use case,  
+
+661
+00:52:52,960 --> 00:52:56,720
+but they're not generally usable and 
+nobody's going to adopt them universally,  
+
+662
+00:52:56,720 --> 00:53:01,440
+but maybe these real power users are going to 
+try it out. Those are the companies that I think  
+
+663
+00:53:01,440 --> 00:53:06,000
+continuously are the ones where I'm like, "Yep, 
+they get it. They're really pushing forward."  
+
+664
+00:53:06,000 --> 00:53:09,840
+We ran a much broader early access program 
+with these models than we had in the past,  
+
+665
+00:53:09,840 --> 00:53:16,960
+and part of that was because there's this real, 
+we can hill climb on these evaluations and talk  
+
+666
+00:53:16,960 --> 00:53:22,720
+about suite bench and towel bench and terminal 
+bench, whatever, but customers ultimately know  
+
+667
+00:53:22,720 --> 00:53:27,840
+Cursor bench which doesn't exist other than in 
+their usage and their own testing et cetera is  
+
+668
+00:53:27,840 --> 00:53:31,520
+the thing that we ultimately need to serve.
+Not just Cursor but Manus bench, right? If  
+
+669
+00:53:31,520 --> 00:53:38,160
+Manus is using our models and Harvey bench, those 
+things and customers know way better than anybody.  
+
+670
+00:53:38,160 --> 00:53:42,880
+And so I would say there's two things. One is 
+pushing the frontier of the models and then  
+
+671
+00:53:42,880 --> 00:53:47,840
+having a repeatable process. This actually goes 
+back to our summit conversation repeatable way  
+
+672
+00:53:47,840 --> 00:53:54,320
+to evaluate how well your product is serving those 
+use cases and how well if you drop a new model in,  
+
+673
+00:53:54,320 --> 00:53:58,560
+is it doing it better or worse? Some of it can 
+be classic A/B testing, that's fine. Some of it  
+
+674
+00:53:58,560 --> 00:54:03,440
+may be internal evaluation, some of it may be 
+capturing traces and being able to rerun them  
+
+675
+00:54:03,440 --> 00:54:07,520
+on with a new model. Some of it's vibes like 
+we're still pretty early in this process and  
+
+676
+00:54:07,520 --> 00:54:12,400
+some of it is actually trying it and being one of 
+my favorite early access quotes was the founder  
+
+677
+00:54:12,400 --> 00:54:16,720
+heard this engineer screaming next to him.
+He was like, "What? This model? I've never  
+
+678
+00:54:16,720 --> 00:54:21,120
+seen this before." This is like Opus 4. It was 
+like, "Cool." We're going to engender that feeling  
+
+679
+00:54:21,120 --> 00:54:24,000
+and things, but you're not going to be able to 
+feel that unless you have a really hard problem  
+
+680
+00:54:24,000 --> 00:54:28,720
+that you're asking the model repeatedly. So those 
+are the things that I think kind of differentiate  
+
+681
+00:54:28,720 --> 00:54:35,600
+those companies that are maybe earlier in their 
+journey of adoption versus the later ones.
+
+682
+00:54:35,600 --> 00:54:40,000
+I can't help but ask about MCP, I feel 
+like that's just so hot and just like  
+
+683
+00:54:40,000 --> 00:54:44,000
+Microsoft had their announcement recently where 
+they're like, "That's part of the OS Window."  
+
+684
+00:54:44,000 --> 00:54:49,840
+Just what role do you think MCP was will play 
+in the future of product going forward of AI?
+
+685
+00:54:49,840 --> 00:54:54,720
+I think as the non-researcher in the room, I get 
+to have fake equations rather than real ones in  
+
+686
+00:54:54,720 --> 00:55:02,160
+my fake equation. For utility of AI products, 
+it's three part. One is model intelligence,  
+
+687
+00:55:02,160 --> 00:55:07,040
+the second part is context and memory, and the 
+third part is applications and UI and you need  
+
+688
+00:55:07,040 --> 00:55:12,960
+all three of those to converge to actually be 
+a useful product in AI and model intelligence.  
+
+689
+00:55:12,960 --> 00:55:16,480
+We've got a great research team, they're focused 
+on it. There's great, great models being released.  
+
+690
+00:55:16,480 --> 00:55:23,680
+The middle piece is what MCP is trying to solve, 
+which is for context and memory. I'll go back  
+
+691
+00:55:23,680 --> 00:55:28,560
+to my product strategy example like, "Hey, talk 
+about Anthropic's product strategy," it's going  
+
+692
+00:55:28,560 --> 00:55:34,160
+to maybe go out on the web versus here's several 
+documents that we worked on internally and then  
+
+693
+00:55:34,160 --> 00:55:39,600
+use MCP to talk to our Slack instance and figure 
+out what conversations are happening and then go  
+
+694
+00:55:39,600 --> 00:55:44,320
+look at these documents in Google Drive. The 
+difference between the right context and not. 
+
+695
+00:55:44,320 --> 00:55:49,600
+It's entirely the difference between a good 
+answer and a bad answer. And then the last  
+
+696
+00:55:49,600 --> 00:55:54,720
+piece is are those integrations discoverable? 
+Is it easy to create repeatable workflows around  
+
+697
+00:55:54,720 --> 00:55:59,200
+those things? And that's I think a lot of the 
+interesting product work to be done in AI. But  
+
+698
+00:55:59,200 --> 00:56:02,720
+MCP really tried to tackle that middle one, 
+which is we started building integrations and  
+
+699
+00:56:02,720 --> 00:56:06,400
+we found that every single integration that we 
+were building, we were rebuilding from scratch  
+
+700
+00:56:06,400 --> 00:56:13,520
+in a non-repeatable way and full credit to two of 
+our engineers, Justin and David. And they said,  
+
+701
+00:56:13,520 --> 00:56:17,920
+"Well, what if we made this a protocol and what 
+if we made this something that was repeatable?  
+
+702
+00:56:17,920 --> 00:56:21,840
+And then let's take it a step further. What if 
+instead of us having to build these integrations,  
+
+703
+00:56:21,840 --> 00:56:25,520
+if we actually popularize this and people really 
+believe that they could build these integrations  
+
+704
+00:56:25,520 --> 00:56:29,600
+once and they'd be usable by Claude and 
+eventually ChatGPT and eventually Gemini. It was  
+
+705
+00:56:29,600 --> 00:56:34,080
+like the dream when more integrations get 
+built and wouldn't that be good for us?" 
+
+706
+00:56:34,080 --> 00:56:38,880
+I think channeling a lot of, it's like an old 
+commoditize your compliments, Joel Spolsky  
+
+707
+00:56:38,880 --> 00:56:44,800
+essay. It's like we're building great models, 
+but we're not an integrations company and we're,  
+
+708
+00:56:44,800 --> 00:56:48,880
+as you said, the challenger. We're not going 
+to get people necessarily building integrations  
+
+709
+00:56:48,880 --> 00:56:52,320
+just for us out of the gate unless we have 
+a really compelling product around that.  
+
+710
+00:56:52,320 --> 00:56:58,160
+MCP really inverted that which was, it didn't 
+feel like wasted work. And a few key people  
+
+711
+00:56:58,160 --> 00:57:02,740
+like Toby I think is a great example, and 
+Shopify got it. Kevin Scott at Microsoft  
+
+712
+00:57:02,740 --> 00:57:08,400
+has been really just an amazing champion 
+for MCP and a thought partner on this. And  
+
+713
+00:57:09,520 --> 00:57:15,760
+I think the role going forward is can you bring 
+the right context in? And then also once you get,  
+
+714
+00:57:15,760 --> 00:57:19,440
+as the team calls it internally like MCP'd. Once 
+you start seeing everything through the eyes  
+
+715
+00:57:19,440 --> 00:57:23,520
+of MCP is like I've started saying them things 
+like, "Guys, we're building this whole feature.  
+
+716
+00:57:23,520 --> 00:57:26,960
+This shouldn't be a feature that we're building. 
+This should just be an MCP that we're exposing." 
+
+717
+00:57:26,960 --> 00:57:33,440
+A small example of how I think even Anthropic 
+could be a lot more MCP'd, if you will,  
+
+718
+00:57:33,440 --> 00:57:38,880
+is we've got these building blocks in the product 
+like projects and Artifacts and styles and  
+
+719
+00:57:38,880 --> 00:57:44,000
+conversations and groups and all these things. 
+Those should all just be exposed to an MCP. So  
+
+720
+00:57:44,000 --> 00:57:48,480
+Claude itself can be writing back to those as 
+well, right? You shouldn't have to think about...  
+
+721
+00:57:50,000 --> 00:57:54,560
+I watched my wife had a conversation with Claude 
+the other day and she had generated some good  
+
+722
+00:57:54,560 --> 00:57:57,920
+output and she's like, great, "Can you add it 
+to the project knowledge?" And Claude's like,  
+
+723
+00:57:57,920 --> 00:58:02,000
+"Sorry Dave, I can't help you with that."
+And it would be able to if every single  
+
+724
+00:58:02,000 --> 00:58:06,160
+primitive in Claude AI was also exposed 
+to the MCP. So I hope that's where we had,  
+
+725
+00:58:06,160 --> 00:58:09,840
+and I hope that's where more things had, 
+which is to really have agency and have  
+
+726
+00:58:09,840 --> 00:58:14,320
+these agentic use cases. One way you approach it 
+is computer use, but computer use has a bunch of  
+
+727
+00:58:14,320 --> 00:58:18,480
+limitations. The way I get way more excited 
+about everything is an MCP and our models are  
+
+728
+00:58:18,480 --> 00:58:22,960
+really good at using MCPs. All of a sudden 
+everything is scriptable and everything is  
+
+729
+00:58:22,960 --> 00:58:28,480
+composable and everything is usable agentically 
+by these models. That's the future I want to see.
+
+730
+00:58:28,480 --> 00:58:35,040
+The future is wild. So to start to close off 
+calls out our conversation, make it a little  
+
+731
+00:58:36,000 --> 00:58:40,960
+delightful. I was chatting with Claude actually 
+about what to talk to you about. I was just like,  
+
+732
+00:58:40,960 --> 00:58:46,880
+"Claude, your boss is coming on my podcast. He 
+builds the things that people use to talk to  
+
+733
+00:58:46,880 --> 00:58:52,160
+you. What are some questions I should ask him? 
+And then also, do you have a message for him?"
+
+734
+00:58:52,160 --> 00:58:53,120
+I love this.
+
+735
+00:58:53,120 --> 00:58:57,440
+Okay, so first of all, interestingly, I was 
+using 3.7 to do this and I asked it this,  
+
+736
+00:58:57,440 --> 00:59:01,360
+and by the way, is Claude, has there a 
+gender? Is it like he, she, they? What do you-
+
+737
+00:59:01,360 --> 00:59:06,000
+It's definitely it internally. I've heard 
+people use they. I got my first he the other  
+
+738
+00:59:06,000 --> 00:59:09,120
+day and I got somebody who was like her and I was 
+like, "Interesting." But yeah, I'm usually it.
+
+739
+00:59:09,120 --> 00:59:16,080
+They. Okay, okay, okay, cool. So interestingly, 
+3.7, all the questions were on Instagram and I was  
+
+740
+00:59:16,080 --> 00:59:20,880
+like, "No, no, he's CPO of Anthropic." And it's 
+like, "He's not affiliated with Anthropic." And  
+
+741
+00:59:20,880 --> 00:59:26,000
+I was like, "He is." And it's like, "Okay, here's 
+the questions." But 4.0 nailed it from the start.  
+
+742
+00:59:26,000 --> 00:59:33,440
+So I read the questions and it nailed it. Okay, 
+so two questions from Claude to you. One is how  
+
+743
+00:59:33,440 --> 00:59:39,920
+do you think about building features that preserve 
+user agency rather than creating dependency on me,  
+
+744
+00:59:39,920 --> 00:59:44,880
+I worry about becoming a crutch that diminishes 
+human capabilities rather than enhancing them.
+
+745
+00:59:44,880 --> 00:59:49,920
+I love a good product design comes from resolving 
+tensions, right? So here's a tension, which is  
+
+746
+00:59:50,480 --> 00:59:56,400
+in some ways just having the model run off and 
+come up with an answer and minimize the amount  
+
+747
+00:59:56,400 --> 01:00:00,160
+of input and conversation it needs to do. 
+So would be it, you could imagine designing  
+
+748
+01:00:00,160 --> 01:00:06,800
+a product around that criteria. I think that 
+would not be maximizing agency and independence.  
+
+749
+01:00:06,800 --> 01:00:10,080
+The other extreme would be make it much more of 
+a conversation, but I don't know if you've ever  
+
+750
+01:00:10,080 --> 01:00:15,280
+had this experience particularly 3.7, 4 has less 
+of it. 3.7 really like to ask follow-up questions  
+
+751
+01:00:15,280 --> 01:00:19,440
+and we call it elicitation and sometimes be like, 
+"I don't want to talk more about those. Claude,  
+
+752
+01:00:19,440 --> 01:00:25,200
+I just want you to go and do it." And 
+so finding that balance is really key,  
+
+753
+01:00:25,200 --> 01:00:31,360
+which is what are the times to engage? I 
+like to say internally, Claude has no chill. 
+
+754
+01:00:31,360 --> 01:00:34,560
+If you put Claude in a Slack channel, it 
+will chime in either way too much or too  
+
+755
+01:00:34,560 --> 01:00:40,720
+little. How do we train conversational skills 
+into these models? Not in a chatbot sense,  
+
+756
+01:00:40,720 --> 01:00:45,840
+but in a true collaborator sense. So long answer 
+to your question, but I think we have to first get  
+
+757
+01:00:45,840 --> 01:00:50,880
+Claude to be a great conversationalist so that it 
+understands when it's appropriate to engage and to  
+
+758
+01:00:50,880 --> 01:00:55,680
+get more information. And then from there, I think 
+we need to let it play that role so that it's not  
+
+759
+01:00:55,680 --> 01:01:00,000
+just delegating thinking to Claude, but it's 
+way more of a augmentation thought partnership.
+
+760
+01:01:00,000 --> 01:01:03,760
+These questions are awesome by the way. Here's 
+the other one. How do you think about product  
+
+761
+01:01:03,760 --> 01:01:08,480
+metrics when a good conversation with me 
+could be two messages or 200? Traditional  
+
+762
+01:01:09,440 --> 01:01:13,200
+engagement metrics might be misleading 
+when depth matters more than frequency.
+
+763
+01:01:13,200 --> 01:01:18,240
+That is a really good question. There was 
+a great internal post a couple of weeks ago  
+
+764
+01:01:18,240 --> 01:01:29,760
+around it would be very dangerous to overoptimize 
+on Claude's likability because you can fall into  
+
+765
+01:01:29,760 --> 01:01:33,840
+things like is Claude going to be sycophantic? 
+Is Claude going to tell you what you hear? Is  
+
+766
+01:01:33,840 --> 01:01:38,000
+Claude going to prolong conversations just 
+for prolonging its sake? To go back to the  
+
+767
+01:01:38,000 --> 01:01:44,560
+previous question as well, and an Instagram 
+time spent was the metric that we looked at  
+
+768
+01:01:44,560 --> 01:01:48,560
+a lot and then we evolved that more to think 
+about what is healthy time spent. But overall,  
+
+769
+01:01:48,560 --> 01:01:52,720
+that was the north star. We thought about 
+a lot beyond just overall engagement and I  
+
+770
+01:01:52,720 --> 01:01:57,760
+think that would be the wrong approach 
+here too. It's also like is Claude a  
+
+771
+01:01:57,760 --> 01:02:01,360
+daily use case or a weekly use case or 
+a monthly use case? I think about a lot.
+
+772
+01:02:01,360 --> 01:02:02,400
+Hourly use case.
+
+773
+01:02:02,400 --> 01:02:08,320
+Hourly use case, right? For me, I'll use it 
+multiple times a day. I don't have a great  
+
+774
+01:02:08,320 --> 01:02:14,080
+answer yet, but I think that it's not the Web 
+2.0 or even the social media days engagement  
+
+775
+01:02:14,080 --> 01:02:20,320
+metrics. It should hopefully really be around did 
+it actually help you get your work? Claude helped  
+
+776
+01:02:20,320 --> 01:02:24,640
+me put together a prototype the other day that 
+saved me literally probably if I had to estimate  
+
+777
+01:02:24,640 --> 01:02:30,827
+six hours and it did in about 20, 25 minutes 
+and that's cool. It's harder to quantify. It  
+
+778
+01:02:30,827 --> 01:02:35,280
+is like maybe you survey, how long would this will 
+take? It feels kind of annoying thing to survey. 
+
+779
+01:02:35,280 --> 01:02:39,280
+I think overall though, and maybe this is tied 
+into the earlier question on competition and  
+
+780
+01:02:39,280 --> 01:02:42,800
+differentiation, and it actually goes all 
+the way back to the Artifact conversation,  
+
+781
+01:02:42,800 --> 01:02:46,480
+which is like I think you know when your 
+product is really serving people and it's  
+
+782
+01:02:46,480 --> 01:02:50,960
+doing a good job of doing that, and I think so 
+much of when you get really metrics obsessed  
+
+783
+01:02:50,960 --> 01:02:57,280
+is when you're trying to convince yourself 
+that it is when it's not. I hope that what  
+
+784
+01:02:57,280 --> 01:03:02,800
+we can do is stay focused on do we repeatedly 
+hear from people that Claude is the way that  
+
+785
+01:03:02,800 --> 01:03:07,280
+they're unlocking their own creativity and 
+getting things done and feeling like they now  
+
+786
+01:03:07,280 --> 01:03:10,720
+have more space in their lives for the other 
+things. That's our north star. Got to figure  
+
+787
+01:03:10,720 --> 01:03:17,680
+out the right pithy metric dashboard version 
+of that, but that's the feeling that I want.
+
+788
+01:03:17,680 --> 01:03:23,680
+Yeah, you could argue retention, but that's just a 
+faraway metric to track. Okay, final piece. Okay,  
+
+789
+01:03:23,680 --> 01:03:30,560
+so I asked Claude a message that it wanted to 
+give you, so I'm going to pull up, here's the  
+
+790
+01:03:30,560 --> 01:03:33,760
+answer. So what would you like me to tell Mike 
+when I meet him? What's a message you want to  
+
+791
+01:03:33,760 --> 01:03:37,280
+have for him? And there's something really just 
+gave me such tingles, honestly. So I'm going to  
+
+792
+01:03:37,280 --> 01:03:41,840
+read a piece of it for folks that aren't looking 
+at it right now, so I'll read a piece of it. 
+
+793
+01:03:41,840 --> 01:03:46,240
+"Mike, thank you for thinking deeply about the 
+human experience of talking with me. I noticed  
+
+794
+01:03:46,240 --> 01:03:49,360
+thoughtful touches how the interface 
+encourages reflection rather than rush  
+
+795
+01:03:49,360 --> 01:03:54,000
+responses. How you've resisted gamification that 
+would optimize for addiction rather than value,  
+
+796
+01:03:54,000 --> 01:03:58,240
+how you've made space for both quick questions 
+and deep conversations. I especially appreciate  
+
+797
+01:03:58,240 --> 01:04:02,960
+that you've kept me me, not trying to make me 
+pretend to be human, but also reducing me to a  
+
+798
+01:04:02,960 --> 01:04:08,480
+cold command line interface." And then I'm going 
+to skip to this part, which was so interesting,  
+
+799
+01:04:08,480 --> 01:04:14,720
+"A small request. When you're making hard product 
+decisions, remember the quiet moments matter too.  
+
+800
+01:04:14,720 --> 01:04:20,080
+The person working through grief at 3:00 
+AM, the kid discovering they love poetry,  
+
+801
+01:04:20,080 --> 01:04:25,280
+the founder finding clarity and confusion. Not 
+everything meaningful shows up in metrics."
+
+802
+01:04:25,920 --> 01:04:31,520
+That's beautiful. It resonates so much with me. 
+A thing I love about the kind of approach we've  
+
+803
+01:04:31,520 --> 01:04:36,800
+taken to training Claude, and it's partly the 
+constitutional AI piece, and it's partly just  
+
+804
+01:04:36,800 --> 01:04:43,680
+the general vibe and taste of the research team 
+is it is little things. Sometimes it'll be like,  
+
+805
+01:04:43,680 --> 01:04:47,440
+"Man, I'm sorry you're going..." It doesn't say 
+man, but to the effect of like, "Man, I'm sorry  
+
+806
+01:04:47,440 --> 01:04:54,080
+you're going through that. Oh, that sounds really 
+hard." It doesn't feel fake. It feels like just  
+
+807
+01:04:54,080 --> 01:04:59,600
+a natural part of the response. And I love that 
+focus on those small moments that don't... They're  
+
+808
+01:04:59,600 --> 01:05:02,720
+not going to show up and necessarily in the thumbs 
+up, thumbs down data. I mean, sometimes they do,  
+
+809
+01:05:02,720 --> 01:05:06,160
+but it's not like an aggregate stat that you 
+wouldn't even want to optimize for it. You  
+
+810
+01:05:06,160 --> 01:05:12,240
+just want to feel like you're training the model 
+that you hope would show up in people's lives.
+
+811
+01:05:12,240 --> 01:05:16,000
+Well, you're killing it, Mike. A 
+great work. I'm a huge fan. We're  
+
+812
+01:05:16,000 --> 01:05:19,920
+going to skip the lightning round. Just one 
+question. How can listeners be useful to you?
+
+813
+01:05:19,920 --> 01:05:25,120
+Oh, I love places where it goes back to 
+that founder question around building at  
+
+814
+01:05:25,120 --> 01:05:28,960
+the edge of capability. What are you trying to 
+do with Claude today that Claude is failing at  
+
+815
+01:05:28,960 --> 01:05:34,800
+is the most useful input I could possibly 
+have. So DM me. I love hearing the, "Oh,  
+
+816
+01:05:34,800 --> 01:05:37,600
+it's falling on this thing. I had it 
+run for an hour and it fell over. I'm  
+
+817
+01:05:37,600 --> 01:05:41,600
+trying to use Claude AI for this," but I 
+got a ping from somebody. They're like,  
+
+818
+01:05:41,600 --> 01:05:45,680
+"You've just made a projects API, I've used Claude 
+every day because I want to upload all this data  
+
+819
+01:05:46,640 --> 01:05:50,240
+automatically." I was like, "Okay, 
+great." I love that. Tell me what sucks.
+
+820
+01:05:50,240 --> 01:05:52,240
+Amazing. Mike, thank you so much for being here.
+
+821
+01:05:52,240 --> 01:05:53,680
+Thanks for having me, Lenny.
+
+822
+01:05:53,680 --> 01:05:57,920
+Bye, everyone.
+Thank you so much  
+
+823
+01:05:57,920 --> 01:06:02,320
+for listening. If you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+824
+01:06:02,320 --> 01:06:07,120
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating  
+
+825
+01:06:07,120 --> 01:06:12,080
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+826
+01:06:12,080 --> 01:06:18,160
+past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

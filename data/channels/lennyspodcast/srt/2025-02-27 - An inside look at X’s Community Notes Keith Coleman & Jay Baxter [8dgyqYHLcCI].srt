@@ -1,0 +1,6040 @@
+1
+00:00:00,080 --> 00:00:04,640
+The work that you guys do has had such 
+a tremendous impact on the way the world  
+
+2
+00:00:04,640 --> 00:00:09,640
+works. I want to start with just giving people a 
+brief understanding of what is Community Notes.
+
+3
+00:00:09,640 --> 00:00:14,040
+Someone on X can see a post. If they think it's 
+misleading, they can propose a note that they  
+
+4
+00:00:14,040 --> 00:00:17,840
+think other people might find informative. 
+Other people can then rate that note.
+
+5
+00:00:17,840 --> 00:00:22,040
+We actually look for agreement from 
+people who have disagreed in the past.  
+
+6
+00:00:22,040 --> 00:00:26,360
+And what we see is when people actually 
+have that sort of surprising agreement,  
+
+7
+00:00:26,360 --> 00:00:31,080
+that's what makes the notes so neutral and 
+accurate and well- written, really, overall.
+
+8
+00:00:31,080 --> 00:00:32,920
+There's many people that are very polarized.  
+
+9
+00:00:32,920 --> 00:00:36,120
+How do you deal with people that 
+are super anti-vax, super Jan 6?
+
+10
+00:00:36,120 --> 00:00:42,000
+One philosophical thing that's important is 
+that we want all of humanity to participate  
+
+11
+00:00:42,000 --> 00:00:44,920
+and sometimes people are surprised 
+by that. We have all of humanity.  
+
+12
+00:00:44,920 --> 00:00:50,040
+We then have the data to understand what 
+notes will be helpful to actual humanity.  
+
+13
+00:00:50,040 --> 00:00:54,440
+Every post is eligible for notes. We 
+shouldn't exempt Elon. We shouldn't  
+
+14
+00:00:54,440 --> 00:00:58,200
+exempt government figures. We should be like 
+everyone... Even advertisers can get notes.
+
+15
+00:00:58,200 --> 00:01:03,880
+There have been external studies run by people 
+totally independent of us who have found that  
+
+16
+00:01:03,880 --> 00:01:08,720
+if you take a post with or without a Community 
+Note, that actually people's agreement with the  
+
+17
+00:01:08,720 --> 00:01:13,120
+core claims in the post does change if 
+they see it with a note versus without.
+
+18
+00:01:13,120 --> 00:01:15,360
+Is there anything else along 
+the lines of just working for  
+
+19
+00:01:15,360 --> 00:01:18,400
+Elon within an org Elon runs 
+that might surprise people?
+
+20
+00:01:18,400 --> 00:01:19,720
+If I were to start a company in that company,  
+
+21
+00:01:19,720 --> 00:01:24,800
+it would be even leaner than I would've made 
+it before. I've been amazed with just how much  
+
+22
+00:01:24,800 --> 00:01:29,920
+the team is able to accomplish with a small 
+group and I think because of a small group-
+
+23
+00:01:33,680 --> 00:01:38,280
+Today, my guests are Keith Coleman, Product 
+Lead for Community Notes, and Jay Baxter,  
+
+24
+00:01:38,280 --> 00:01:43,440
+Founding ML Engineer and Researcher for Community 
+Notes. This conversation may be my newest favorite  
+
+25
+00:01:43,440 --> 00:01:49,560
+podcast episode so far. Community Notes is one 
+of the most impactful and clever and, also,  
+
+26
+00:01:49,560 --> 00:01:55,280
+underappreciated products in the world right now.
+If you ever use X/Twitter and you see a note  
+
+27
+00:01:55,280 --> 00:02:00,080
+underneath a tweet correcting the misinformation 
+in that tweet, that is Community Notes.  
+
+28
+00:02:00,080 --> 00:02:04,120
+I've never heard a deep dive into the story 
+behind the product and the team that built it  
+
+29
+00:02:04,120 --> 00:02:08,960
+and I'm excited to bring you just that. We get 
+into the surprising origin story of the product,  
+
+30
+00:02:08,960 --> 00:02:13,520
+how the algorithm actually works, how the 
+algorithm emerged out of an internal contest  
+
+31
+00:02:13,520 --> 00:02:18,360
+within Twitter, the principles behind Community 
+Notes, and why staying true to them has been so  
+
+32
+00:02:18,360 --> 00:02:24,040
+key to its success. Also, how it survived four 
+different leaders, including Elon and Jack,  
+
+33
+00:02:24,040 --> 00:02:28,920
+and why it's now a big part of the solution to 
+solving misinformation on the internet. Including  
+
+34
+00:02:28,920 --> 00:02:33,600
+recently being adopted by Meta as their main 
+fact-checking tool. This is an incredibly special  
+
+35
+00:02:33,600 --> 00:02:37,480
+episode and I'm so excited to bring it to you.
+If you enjoy this podcast, don't forget to  
+
+36
+00:02:37,480 --> 00:02:40,800
+subscribe and follow it in your favorite 
+podcasting app or YouTube. Also,  
+
+37
+00:02:40,800 --> 00:02:46,600
+if you become a subscriber of my newsletter, you 
+now get a year free of Notion and Superhuman and  
+
+38
+00:02:46,600 --> 00:02:50,360
+Granola and Linear and Perplexity Pro. 
+Check that out at lennysnewsletter.com. 
+
+39
+00:02:51,680 --> 00:02:57,880
+With that, I bring you Keith Coleman and 
+Jay Baxter. This episode is brought to  
+
+40
+00:02:57,880 --> 00:03:03,480
+you by WorkOS. If you're building a SaaS app, at 
+some point, your customers will start asking for  
+
+41
+00:03:03,480 --> 00:03:09,960
+enterprise features like SAML Authentication and 
+SCIM Provisioning. That's where WorkOS comes in,  
+
+42
+00:03:09,960 --> 00:03:15,520
+making it fast and painless to add enterprise 
+features to your app. Their APIs are easy to  
+
+43
+00:03:15,520 --> 00:03:19,280
+understand so that you can ship quickly 
+and get back to building other features. 
+
+44
+00:03:19,280 --> 00:03:25,200
+Today, hundreds of companies are already powered 
+by WorkOS. Including ones you probably know like  
+
+45
+00:03:25,200 --> 00:03:32,440
+Vercel, Webflow, and Loom. WorkOS also recently 
+acquired Warrant, the Fine Grain Authorization  
+
+46
+00:03:32,440 --> 00:03:37,760
+service. Warrant's product is based on a 
+groundbreaking authorization system called  
+
+47
+00:03:37,760 --> 00:03:43,080
+Zanzibar, which was originally designed for 
+Google to power Google Docs and YouTube. This  
+
+48
+00:03:43,080 --> 00:03:47,960
+enables fast authorization checks at enormous 
+scale while maintaining a flexible model that  
+
+49
+00:03:47,960 --> 00:03:53,000
+can be adapted to even the most complex use cases.
+If you're currently looking to build role-based  
+
+50
+00:03:53,000 --> 00:03:59,160
+access control or other enterprise features 
+like single sign-on, SCIM, or user management,  
+
+51
+00:03:59,160 --> 00:04:05,280
+you should consider WorkOS. It's a drop-in 
+replacement for Auth0 and supports up to 1 million  
+
+52
+00:04:05,280 --> 00:04:15,640
+monthly active users for free. Check it out at 
+workos.com to learn more. That's workos.com. 
+
+53
+00:04:15,640 --> 00:04:20,240
+This episode is brought to you by Productboard, 
+the leading product management platform for the  
+
+54
+00:04:20,240 --> 00:04:25,680
+enterprise. For over 10 years, Productboard has 
+helped customer-centric organizations like Zoom,  
+
+55
+00:04:25,680 --> 00:04:30,720
+Salesforce, and Autodesk build the right 
+products faster. And as an end- to-end platform,  
+
+56
+00:04:30,720 --> 00:04:35,560
+Productboard seamlessly supports all stages of 
+the product development lifecycle from gathering  
+
+57
+00:04:35,560 --> 00:04:39,920
+customer insights, to planning a roadmap, to 
+aligning stakeholders, to earning customer  
+
+58
+00:04:39,920 --> 00:04:45,120
+buy-in, all with a single source of truth.
+And now, product leaders can get even more  
+
+59
+00:04:45,120 --> 00:04:51,000
+visibility into customer needs with Productboard 
+Pulse, a new voice of customer solution. Built-in  
+
+60
+00:04:51,000 --> 00:04:55,640
+intelligence helps you analyze trends across all 
+of your feedback and then dive deeper by asking  
+
+61
+00:04:55,640 --> 00:05:01,360
+AI your follow-up questions. See how Productboard 
+can help your team deliver higher-impact products  
+
+62
+00:05:01,360 --> 00:05:06,760
+that solve real customer needs and advance your 
+business goals. For a special offer and free  
+
+63
+00:05:06,760 --> 00:05:12,920
+15-day trial, visit productboard.com/lenny. 
+That's productboard.com/lenny. 
+
+64
+00:05:19,200 --> 00:05:23,000
+Keith and Jay, thank you so much for 
+being here. Welcome to the podcast.
+
+65
+00:05:23,000 --> 00:05:24,960
+It's great to be here. [inaudible 00:05:25].
+
+66
+00:05:24,960 --> 00:05:26,040
+Thanks for having us on.
+
+67
+00:05:26,040 --> 00:05:30,720
+It's so my pleasure. I'm so thrilled to be 
+having this conversation. The work that you  
+
+68
+00:05:30,720 --> 00:05:36,320
+guys do has had such a tremendous impact on 
+the way the world works. So many product teams  
+
+69
+00:05:36,320 --> 00:05:40,760
+are always talking about driving impact and 
+want to drive impact. You guys have actually  
+
+70
+00:05:40,760 --> 00:05:44,680
+built things that have changed the world 
+in meaningful ways and continue to do that.  
+
+71
+00:05:44,680 --> 00:05:48,200
+And I've never really heard the backstory 
+of how Community Notes came to be and how  
+
+72
+00:05:48,200 --> 00:05:52,760
+it works and all these things, so I'm really 
+appreciative of you guys making time to chat.
+
+73
+00:05:52,760 --> 00:05:57,760
+Yeah. First, thanks for saying that. That's 
+why we built this thing is to help people and  
+
+74
+00:05:57,760 --> 00:06:02,040
+it's great to hear it. It's great to see 
+people enjoying it and finding it useful.
+
+75
+00:06:02,040 --> 00:06:05,680
+I want to start with just giving 
+people a brief understanding of  
+
+76
+00:06:05,680 --> 00:06:10,280
+what is Community Notes. I think a 
+lot of people kind of heard about it,  
+
+77
+00:06:10,280 --> 00:06:14,040
+kind of maybe see it on X. As they scroll 
+through, they see these notes but they're like,  
+
+78
+00:06:14,040 --> 00:06:18,560
+"I don't actually know what this is." So can you 
+just briefly describe what is Community Notes?
+
+79
+00:06:18,560 --> 00:06:24,720
+Community Notes is a way for the people, like 
+the public, to add context to posts that might  
+
+80
+00:06:24,720 --> 00:06:31,560
+be misleading. The basic way it works is that 
+someone on X can see a post. If they think it's  
+
+81
+00:06:31,560 --> 00:06:36,240
+misleading, they can propose a note that they 
+think other people might find informative. Other  
+
+82
+00:06:36,240 --> 00:06:41,800
+people can then rate that note. And if the note 
+is found helpful by people who normally disagree  
+
+83
+00:06:41,800 --> 00:06:46,640
+with each other, indicating that it's probably 
+accurate, it's probably really neutrally-worded,  
+
+84
+00:06:46,640 --> 00:06:51,840
+it's probably informative, then it will show to 
+everyone on X. The goal is just to get people  
+
+85
+00:06:51,840 --> 00:06:56,760
+more information about what they're seeing so 
+they can make better decisions in their lives.
+
+86
+00:06:56,760 --> 00:06:59,360
+Amazing, and I think hearing this, it's  
+
+87
+00:07:00,400 --> 00:07:06,000
+absurd that this works. I think when 
+people originally heard this idea like,  
+
+88
+00:07:06,000 --> 00:07:11,400
+"No way this is going to work." And so, just 
+to dive a little bit deeper, can you give us  
+
+89
+00:07:12,440 --> 00:07:16,120
+a deeper understanding of how it actually works? 
+Because I think it's the algorithm that you guys  
+
+90
+00:07:16,120 --> 00:07:22,200
+designed that is so clever that allowed this to 
+work. So talk a little bit about that algorithm.
+
+91
+00:07:22,200 --> 00:07:27,160
+Yeah. So I think a key misunderstanding a lot 
+of people have if they haven't really dived  
+
+92
+00:07:27,160 --> 00:07:33,000
+into details, they just think that maybe someone 
+can write a note and it appears immediately or  
+
+93
+00:07:33,000 --> 00:07:37,880
+we're just taking a majority rules vote of 
+who thinks the note's good. I think both of  
+
+94
+00:07:37,880 --> 00:07:42,600
+those approaches would probably lead to biased or 
+inaccurate notes. I think the key thing, really,  
+
+95
+00:07:42,600 --> 00:07:48,480
+that we do is we actually look for agreement 
+from people who have disagreed in the past. 
+
+96
+00:07:48,480 --> 00:07:53,320
+And what we see is when people actually 
+have that sort of surprising agreement,  
+
+97
+00:07:53,320 --> 00:07:59,680
+that's what makes the notes so neutral and 
+accurate and well-written, really, overall.  
+
+98
+00:07:59,680 --> 00:08:06,720
+It's just that people who are very polarized, 
+overall, often can't find agreement when things  
+
+99
+00:08:06,720 --> 00:08:11,920
+aren't accurate, right? I think it also provides 
+some good anti-manipulation properties. I think  
+
+100
+00:08:11,920 --> 00:08:18,880
+people are often... If you said... I think back 
+in 2020 before we started building anything here,  
+
+101
+00:08:18,880 --> 00:08:22,640
+whether this could work at all, I think 
+a room of ML engineers would say, "Oh,  
+
+102
+00:08:22,640 --> 00:08:26,400
+you have to keep it closed source. People 
+are going to be manipulating this all the  
+
+103
+00:08:26,400 --> 00:08:29,680
+time. You have to use ground truth 
+labels from fact checkers. There's  
+
+104
+00:08:29,680 --> 00:08:36,320
+no way that you could bootstrap the system without 
+external labels." But it turns out that you can  
+
+105
+00:08:36,320 --> 00:08:40,920
+do that with this kind of bridging-based 
+agreement algorithm is what we call it.
+
+106
+00:08:40,920 --> 00:08:43,960
+Okay. So just to summarize and make it 
+super clear. It's basically people...  
+
+107
+00:08:43,960 --> 00:08:47,080
+Someone writes a note. This information 
+is fault... What's a good example,  
+
+108
+00:08:47,080 --> 00:08:49,640
+just as we talk about this, 
+like a classic example?
+
+109
+00:08:49,640 --> 00:08:55,080
+A really classic example is an AI generated 
+image or an out of context image like,  
+
+110
+00:08:55,080 --> 00:08:58,400
+"Look what's happening here." But 
+it's actually from five years ago  
+
+111
+00:08:58,400 --> 00:09:00,240
+in a different country and a 
+different topic or something-
+
+112
+00:09:00,240 --> 00:09:02,880
+Oh, man. I've seen this so many times 
+where it's like, "Look what's happening  
+
+113
+00:09:02,880 --> 00:09:06,320
+in San Francisco," and I'm like, "No, this 
+is a whole different city and that's not-"
+
+114
+00:09:06,320 --> 00:09:07,160
+Totally. Yeah.
+
+115
+00:09:07,160 --> 00:09:11,440
+Yeah. Okay. So someone posts this 
+AI image. Someone writes a note,  
+
+116
+00:09:11,440 --> 00:09:15,600
+"This is actually five years ago in 
+a different city," and this algorithm  
+
+117
+00:09:15,600 --> 00:09:23,720
+helps understand if this note is true 
+and it's just regular people doing this.
+
+118
+00:09:23,720 --> 00:09:29,600
+Yep. Regular people who have signed up to be 
+Community Notes contributors. So there are  
+
+119
+00:09:29,600 --> 00:09:34,560
+a few checks, like you do have to have a verified 
+phone number for instance. But yeah, at the end of  
+
+120
+00:09:34,560 --> 00:09:39,880
+the day, these are regular people. Not necessarily 
+professional fact checkers or anything like that.
+
+121
+00:09:39,880 --> 00:09:44,040
+And yeah, that was really important to us 
+too. There was a question at the beginning,  
+
+122
+00:09:44,040 --> 00:09:48,240
+to the point Jay was making of like, "Did 
+anyone think this was going to work?" Obviously,  
+
+123
+00:09:48,240 --> 00:09:52,800
+it was a crazy idea. We didn't know if 
+regular people were going to be able to do  
+
+124
+00:09:52,800 --> 00:09:57,880
+this task and certainly people had concerns 
+about whether they would do it effectively. 
+
+125
+00:09:57,880 --> 00:10:00,800
+Initially, some people inside the 
+company were suggesting like, "Hey,  
+
+126
+00:10:00,800 --> 00:10:06,360
+why don't you have journalists or some 
+select group be the first participants?"  
+
+127
+00:10:06,360 --> 00:10:10,520
+But very specifically we were like, "No. 
+We're trying to move away from the idea  
+
+128
+00:10:10,520 --> 00:10:14,960
+of curated editorial decisions being made 
+around this. This is supposed to be open  
+
+129
+00:10:14,960 --> 00:10:21,040
+to everyone." So we very intentionally 
+try to allow all humans in. People are  
+
+130
+00:10:21,040 --> 00:10:27,680
+randomly selected and that's important to it 
+feeling fair, feeling open, feeling trustable.
+
+131
+00:10:27,680 --> 00:10:32,440
+Yeah. And again, it's just like this sounds like 
+the holy grail of understanding what is true and  
+
+132
+00:10:32,440 --> 00:10:40,320
+it actually works. And works so well that Meta 
+recently, as you all know, decided to adopt this  
+
+133
+00:10:40,320 --> 00:10:46,600
+exact system for them instead of having tens 
+of thousands of fact checkers reviewing things.
+
+134
+00:10:46,600 --> 00:10:51,000
+One distinction that I would make, which maybe 
+can come off as nitpicky but I think is important,  
+
+135
+00:10:51,000 --> 00:10:56,640
+is Community Notes adds additional context. 
+It's not fact-checking necessarily,  
+
+136
+00:10:56,640 --> 00:11:01,600
+right? So there are cases where the post could 
+be true. But maybe, it's just misleading because  
+
+137
+00:11:01,600 --> 00:11:08,640
+there there's no context or there's missing 
+context. We cover those cases and I think  
+
+138
+00:11:08,640 --> 00:11:12,840
+that's an important distinction. We just have 
+the philosophy that users should be able to  
+
+139
+00:11:12,840 --> 00:11:18,040
+make up their own minds, right? Like, "Here's 
+extra context, take it or leave it," right?
+
+140
+00:11:18,040 --> 00:11:24,240
+Yeah. What I think about, you shared this with 
+me, this example of a picture with a cat and  
+
+141
+00:11:24,240 --> 00:11:29,440
+somebody's Community Note was just, "That's a 
+dog." Or is it the other way around or that's a-
+
+142
+00:11:29,440 --> 00:11:37,160
+Yeah. "A Palestinian boy shares his bread with 
+a dog," was the post and it's a picture of this  
+
+143
+00:11:37,160 --> 00:11:42,720
+cat. So obviously, this particular note is 
+not super necessary because it just says,  
+
+144
+00:11:42,720 --> 00:11:50,960
+"That's a cat," and links to a Wikipedia for cat. 
+It's a good example that the system is... This  
+
+145
+00:11:50,960 --> 00:11:55,120
+is not something a professional fact-checker or 
+whatever or you think would need fact-checking.  
+
+146
+00:11:55,120 --> 00:11:59,240
+But it's proof that the system is really 
+run by the users at the end of the day  
+
+147
+00:12:00,360 --> 00:12:06,840
+and adds some comic relief, I 
+guess. And the note is correct.
+
+148
+00:12:06,840 --> 00:12:07,860
+Okay. It's important.
+
+149
+00:12:07,860 --> 00:12:08,440
+Yeah.
+
+150
+00:12:08,440 --> 00:12:13,400
+When does a post get triggered to even 
+be considered for Community Note? Is  
+
+151
+00:12:13,400 --> 00:12:15,680
+there a threshold or is it just 
+you can write a Community Note on  
+
+152
+00:12:15,680 --> 00:12:18,640
+anything and people decide what they 
+would vote on? How does that work?
+
+153
+00:12:18,640 --> 00:12:24,680
+So every post is eligible for notes and that 
+was, again, another really important principle.  
+
+154
+00:12:24,680 --> 00:12:31,840
+It's like, "We shouldn't exempt Elon. We shouldn't 
+exempt government figures. We should..." Everyone,  
+
+155
+00:12:31,840 --> 00:12:35,360
+even advertisers, can get notes. So any 
+posts on the platform can get a note.  
+
+156
+00:12:35,360 --> 00:12:42,080
+And if you look in practice, you'll see notes 
+appearing on world leaders, on Elon, on ads,  
+
+157
+00:12:42,080 --> 00:12:48,160
+on media organizations, and on, obviously, just 
+regular people using social media. But yeah,  
+
+158
+00:12:48,160 --> 00:12:52,600
+the idea is really that it's an even 
+playing field. For a note to be proposed,  
+
+159
+00:12:52,600 --> 00:12:59,400
+the person proposing it has to have earned 
+the ability to write notes. So there is that  
+
+160
+00:12:59,400 --> 00:13:04,320
+aspect where you have to earn in to be able 
+to do this. And the way you earn that ability  
+
+161
+00:13:04,320 --> 00:13:09,080
+is through your ratings by demonstrating the 
+ability to help identify notes that are found  
+
+162
+00:13:09,080 --> 00:13:15,800
+helpful to a broad range of people. So basically, 
+if you have an ability to see and know, recognize  
+
+163
+00:13:15,800 --> 00:13:20,200
+what's helpful with a lot of people, then you 
+have the ability to start proposing notes.
+
+164
+00:13:20,200 --> 00:13:24,520
+I actually signed up to be on... What 
+do you call these people? Note take-
+
+165
+00:13:24,520 --> 00:13:25,640
+Contributors.
+
+166
+00:13:25,640 --> 00:13:28,580
+Okay. Contributors. Yeah. So I've 
+been rating. I haven't achieved-
+
+167
+00:13:28,580 --> 00:13:28,960
+Nice.
+
+168
+00:13:28,960 --> 00:13:30,880
+I can't write notes yet.
+
+169
+00:13:30,880 --> 00:13:33,600
+Yeah. It's not super easy. It takes some effort.
+
+170
+00:13:33,600 --> 00:13:36,400
+Are there stats you can share about the 
+scale of Community Notes at this point,  
+
+171
+00:13:36,400 --> 00:13:39,040
+especially things that might surprise people?
+
+172
+00:13:39,040 --> 00:13:44,720
+Yeah. I mean, the service is growing rapidly, 
+so there are hundreds of notes per day. And  
+
+173
+00:13:44,720 --> 00:13:49,080
+to put that into context, I saw some stats 
+recently from someone at UC Berkeley saying  
+
+174
+00:13:49,080 --> 00:13:54,360
+there was something like 10 traditional fact 
+checks a day. So in contrast, there's hundreds  
+
+175
+00:13:54,360 --> 00:14:00,360
+of notes a day that are getting shown. They 
+span a huge range of topics from, obviously,  
+
+176
+00:14:00,360 --> 00:14:07,280
+politics, news, out to entertainment, sports, 
+gaming. Just whatever is going on that day. 
+
+177
+00:14:07,280 --> 00:14:12,360
+In addition to there being hundreds of these 
+individual notes, they can also be matched  
+
+178
+00:14:12,360 --> 00:14:17,960
+to multiple posts. So if someone writes a note 
+on an image or a video, like let's say it's AI  
+
+179
+00:14:17,960 --> 00:14:23,400
+generated or something like that, that note 
+will automatically be matched to all posts  
+
+180
+00:14:23,400 --> 00:14:29,160
+that contain the same image. So you can have a 
+single note matching to thousands of posts. And  
+
+181
+00:14:29,160 --> 00:14:36,040
+over let's say the last year, 2024, we had 
+something like 95,000 notes that were seen  
+
+182
+00:14:36,040 --> 00:14:41,400
+about 30 billion times. That's more than double 
+the prior year. Prior year was something like  
+
+183
+00:14:41,400 --> 00:14:48,840
+37K notes seen 14 billion times. So that rate is 
+increasing dramatically when you think about 30  
+
+184
+00:14:48,840 --> 00:14:54,200
+billion views, that's a lot of information that 
+is getting out there that might not have been  
+
+185
+00:14:54,200 --> 00:15:00,280
+out there otherwise, which is pretty cool. 
+And part of the reason it is expanding like  
+
+186
+00:15:00,280 --> 00:15:06,560
+that is the contributor base is expanding. 
+There's something like 950,000 contributors  
+
+187
+00:15:06,560 --> 00:15:13,360
+around the world. That's nearing a million 
+people making this happen which is amazing.
+
+188
+00:15:13,360 --> 00:15:15,880
+Wow. And I'm one of those, 
+right? I count as a contributor?
+
+189
+00:15:15,880 --> 00:15:18,360
+Yeah. Yep. No. If you're signed 
+up as a contributor, you count.
+
+190
+00:15:18,360 --> 00:15:18,880
+Okay. Cool.
+
+191
+00:15:18,880 --> 00:15:23,720
+Then, there's more people on the waitlist too. 
+So there's plenty of headroom for more growth.  
+
+192
+00:15:23,720 --> 00:15:32,960
+Regarding the matching on media and URLs, I think 
+that's a huge way to get extra coverage. Also,  
+
+193
+00:15:32,960 --> 00:15:39,600
+I do think we've been very careful to make sure 
+that those matches are precise. Because I think  
+
+194
+00:15:39,600 --> 00:15:44,720
+one thing that people love about Community Notes 
+compared to other types of fact checking is that,  
+
+195
+00:15:44,720 --> 00:15:47,960
+actually, the notes are custom written 
+for the particular claim you're seeing,  
+
+196
+00:15:47,960 --> 00:15:52,240
+right? So often, a fact check warning 
+would just say something like,  
+
+197
+00:15:52,960 --> 00:15:58,920
+"Get the facts here." And then, there's a link 
+to some generic page about voting information,  
+
+198
+00:15:59,680 --> 00:16:06,520
+which is so not helpful to have the information 
+behind a click. So pulling the context up so  
+
+199
+00:16:06,520 --> 00:16:11,280
+that you have zero clicks that you need to 
+make and keeping it specific is so important.
+
+200
+00:16:11,280 --> 00:16:14,600
+One feature I love that I imagine you 
+guys thought deeply about is if I liked  
+
+201
+00:16:14,600 --> 00:16:17,920
+the post in the past, I get notified 
+later if a community note shows up,  
+
+202
+00:16:17,920 --> 00:16:21,920
+so that I'm not remembering 
+this false information.
+
+203
+00:16:21,920 --> 00:16:27,880
+Yeah. I mean, we try to make notes as fast as 
+we can, so we want them to appear instantly if  
+
+204
+00:16:27,880 --> 00:16:32,600
+possible. But inevitably, there's going to be 
+a time gap between when a post goes live and  
+
+205
+00:16:32,600 --> 00:16:35,200
+when people figure out what's going on and 
+when they get the note out there. And so,  
+
+206
+00:16:35,200 --> 00:16:39,800
+we send those notifications to 
+try to close that gap. And yeah,  
+
+207
+00:16:40,440 --> 00:16:44,920
+we get a lot of love for that. We see people take 
+screenshots and share them. They're excited about  
+
+208
+00:16:44,920 --> 00:16:50,240
+it. And it's also a pretty cool example 
+of something you can do on the internet,  
+
+209
+00:16:50,240 --> 00:16:55,280
+in the social media world that was difficult 
+in a print or standard news world where you  
+
+210
+00:16:55,280 --> 00:17:01,160
+would see maybe a correction the next day in a 
+corner of a paper that was hard to read. Here,  
+
+211
+00:17:01,160 --> 00:17:05,520
+you're getting a ping about it if you've 
+engaged with a post and note shows up.
+
+212
+00:17:05,520 --> 00:17:09,760
+One user feedback point is I'd 
+love the push to just tell me,  
+
+213
+00:17:09,760 --> 00:17:13,520
+"Here's what you got wrong." Because I find 
+that I actually have to go into it and read  
+
+214
+00:17:13,520 --> 00:17:19,760
+it and I feel like the push could just be like, 
+"Here's more context to this thing." You're like-
+
+215
+00:17:19,760 --> 00:17:20,680
+Agreed.
+
+216
+00:17:20,680 --> 00:17:22,391
+We'll go take a look at that-
+
+217
+00:17:22,391 --> 00:17:24,160
+There we go. Live user feedback.
+
+218
+00:17:24,160 --> 00:17:25,080
+Nice.
+
+219
+00:17:25,080 --> 00:17:27,760
+Okay. I want to get into the origin story 
+of this whole thing. But two more questions,  
+
+220
+00:17:27,760 --> 00:17:31,680
+because we're on this thread. One is 
+what's the the threshold for a note to  
+
+221
+00:17:31,680 --> 00:17:35,520
+show up on a note? Is that information 
+you can share, just how does that work?
+
+222
+00:17:35,520 --> 00:17:38,440
+So just because of the details 
+of the way the algorithm works,  
+
+223
+00:17:38,440 --> 00:17:43,600
+it uses this machine learning algorithm 
+called Matrix factorization where we fit  
+
+224
+00:17:43,600 --> 00:17:51,400
+it with Gradient Descent and whatnot. The 
+threshold is it's 0.4 on this made up scale-
+
+225
+00:17:51,400 --> 00:17:52,640
+0.4. Great.
+
+226
+00:17:52,640 --> 00:18:00,240
+Yeah. I mean, in practice, what it means is 
+basically a majority of people... If there  
+
+227
+00:18:00,240 --> 00:18:04,720
+is a polarized divide relevant to the notes. 
+Obviously, some notes are not about politics  
+
+228
+00:18:04,720 --> 00:18:10,600
+or something polarizing. But if there is, then 
+a sizable majority of people on both sides would  
+
+229
+00:18:10,600 --> 00:18:17,320
+generally need to find the note helpful. And 
+then, there are other rules that come into  
+
+230
+00:18:17,320 --> 00:18:23,520
+play beyond that main one. So even if it's above 
+that threshold, it might get filtered out if...  
+
+231
+00:18:24,040 --> 00:18:28,760
+There's a separate algorithm that's looking 
+at agreement between people's incorrect tags.  
+
+232
+00:18:29,320 --> 00:18:32,920
+So like maybe people found the 
+note helpful but incorrect,  
+
+233
+00:18:32,920 --> 00:18:37,840
+right? It happens. And in those cases, it doesn't 
+matter if it's above the helpfulness threshold.
+
+234
+00:18:37,840 --> 00:18:40,920
+This is probably the wrong way to think about it,  
+
+235
+00:18:40,920 --> 00:18:44,340
+but is it 40% of people that 
+normally disagree, agree-
+
+236
+00:18:44,340 --> 00:18:44,520
+No.
+
+237
+00:18:44,520 --> 00:18:44,797
+Okay. It's-
+
+238
+00:18:44,797 --> 00:18:48,040
+It means nothing like that. It's 
+just like on some arbitrary scale-
+
+239
+00:18:48,040 --> 00:18:48,680
+Okay.
+
+240
+00:18:48,680 --> 00:18:49,360
+Yeah.
+
+241
+00:18:49,360 --> 00:18:51,640
+Yeah. If we change random other 
+things about the algorithm,  
+
+242
+00:18:51,640 --> 00:18:58,040
+that number would also have to change to an 
+equally seemingly arbitrary number. We arrived at  
+
+243
+00:18:58,920 --> 00:19:03,920
+some numbers like that by gauging user feedback. 
+So we could share a lot of notes with people,  
+
+244
+00:19:03,920 --> 00:19:07,360
+get feedback on which ones are 
+helpful, and just a line emerged  
+
+245
+00:19:07,360 --> 00:19:13,480
+about indicating where things go from 
+questionable to pretty clearly helpful.
+
+246
+00:19:13,480 --> 00:19:17,360
+Yeah. And it is set right now, by 
+the way, to be really conservative,  
+
+247
+00:19:17,360 --> 00:19:23,960
+I think. We just are pretty particular about 
+quality and we really want note quality to  
+
+248
+00:19:23,960 --> 00:19:31,000
+be really high. I think Keith and I both 
+believe that we live or die based on the  
+
+249
+00:19:31,000 --> 00:19:37,800
+quality of the notes at the end of the day. So 
+we'd rather not show a note that maybe good,  
+
+250
+00:19:37,800 --> 00:19:41,000
+but we didn't have enough signal 
+on than the other way around.
+
+251
+00:19:41,000 --> 00:19:47,120
+That makes so much sense. I've never seen a 
+Community Note that is wrong and breaking that  
+
+252
+00:19:47,120 --> 00:19:52,080
+promise is a big deal. So I completely get 
+why you guys are super conservative there.  
+
+253
+00:19:52,080 --> 00:19:54,240
+Okay. Two more questions [inaudible 
+00:19:53] because I'm just curious.  
+
+254
+00:19:54,240 --> 00:19:57,000
+These weren't on my list of questions 
+to ask, but I feel like people wonder  
+
+255
+00:19:57,000 --> 00:20:02,640
+this. How many notes are written versus 
+end up showing up and triggering on a-
+
+256
+00:20:02,640 --> 00:20:10,440
+We probably show about 8% of notes that 
+get proposed. It's been between, let's say,  
+
+257
+00:20:10,440 --> 00:20:16,800
+7% and 10% or 11%, something like that over time. 
+The number can vary a little bit. And as Jay said,  
+
+258
+00:20:16,800 --> 00:20:22,480
+there are undoubtedly... And you can see it, 
+there's clearly more good notes than we show,  
+
+259
+00:20:22,480 --> 00:20:28,840
+but the goal is to hold a really high bar. We 
+want to show a note when it's going to be helpful,  
+
+260
+00:20:28,840 --> 00:20:34,360
+when it's not going to appear biased and undermine 
+trust in the system. We want these to be neutral,  
+
+261
+00:20:34,360 --> 00:20:41,120
+informative, helpful. And as Jay was saying, we 
+view the worst possible mistake as showing a bad  
+
+262
+00:20:41,120 --> 00:20:46,160
+note because that's going to undermine trust 
+and the trust is why people like the product. 
+
+263
+00:20:46,160 --> 00:20:52,640
+So yeah, the bar is there. And like I said, 
+there's clearly some in that remaining,  
+
+264
+00:20:52,640 --> 00:20:56,520
+let's call it 90%, that are good. And 
+then, there's a lot that are just not  
+
+265
+00:20:56,520 --> 00:21:01,680
+that great and there's some that are bad. 
+And if you write one of these ones that  
+
+266
+00:21:01,680 --> 00:21:07,240
+are bad which bad being defined as people who 
+normally disagree find the note not helpful,  
+
+267
+00:21:07,240 --> 00:21:12,600
+so it's like the inverse of the ones we show. 
+If you write one that people normally disagree,  
+
+268
+00:21:12,600 --> 00:21:15,800
+find not helpful, you actually will ultimately 
+lose your ability to write and have to earn  
+
+269
+00:21:15,800 --> 00:21:21,720
+it back. That other 90% is a mix. Sometimes 
+people look at the number, they're like, "Oh,  
+
+270
+00:21:21,720 --> 00:21:24,400
+why don't you show more?" It's like, "Well, 
+you probably actually don't really want us  
+
+271
+00:21:24,400 --> 00:21:31,320
+showing most of those." The gold here is that 
+the system is able to filter out the good ones.
+
+272
+00:21:31,320 --> 00:21:36,200
+That makes sense. Okay. One other question is 
+there's many people that are very polarized, like  
+
+273
+00:21:36,200 --> 00:21:41,840
+very disagreeable with a lot of things. How do 
+they filter into this algorithm? How do you deal  
+
+274
+00:21:41,840 --> 00:21:47,440
+with people that are super anti-vax, super Jan 
+6, like all these very extreme potential views?
+
+275
+00:21:47,440 --> 00:21:55,000
+If people really are so polarized that there isn't 
+agreement among people that typically disagree,  
+
+276
+00:21:55,000 --> 00:22:03,720
+it's possible that this is one of those notes that 
+might be correct, but it wouldn't be helpful to  
+
+277
+00:22:03,720 --> 00:22:11,520
+show as context. Maybe it's about a claim that 
+people have really entrenched opinions about and  
+
+278
+00:22:11,520 --> 00:22:18,680
+they've read hundreds of things about it already.
+Probably this is just not going to improve  
+
+279
+00:22:18,680 --> 00:22:23,160
+people's understanding. It's just not going to be 
+a helpful user experience. So it might not be the  
+
+280
+00:22:23,160 --> 00:22:28,320
+worst thing in those cases to not show the note. 
+People, a few years ago, were pretty pessimistic  
+
+281
+00:22:28,320 --> 00:22:34,720
+that maybe fact-checking never changes people's 
+understandings about what's true. Actually,  
+
+282
+00:22:34,720 --> 00:22:42,320
+there have been external studies run by people 
+totally independent of us who have found that if  
+
+283
+00:22:42,320 --> 00:22:47,720
+you take a community note or posts with or 
+without a community note... That actually,  
+
+284
+00:22:47,720 --> 00:22:52,200
+people's agreement with the core claims in 
+the post does change if they see it with  
+
+285
+00:22:52,200 --> 00:22:56,280
+the note versus without. So we are having an 
+impact on this thing that people previously  
+
+286
+00:22:56,280 --> 00:23:02,480
+thought was maybe not so easy to do.
+And so, it's nice to focus on the cases  
+
+287
+00:23:02,480 --> 00:23:06,600
+where there is the bridging agreement. I 
+would also say there is this reputation  
+
+288
+00:23:06,600 --> 00:23:12,840
+component to the algorithm as well. So if 
+you consistently rate notes in a way that  
+
+289
+00:23:12,840 --> 00:23:20,760
+is counter to the bridging-based consensus, then 
+we will stop counting your ratings. So if you're  
+
+290
+00:23:20,760 --> 00:23:26,440
+the kind of person who constantly rates bad 
+notes as helpful, we do filter you out. So  
+
+291
+00:23:26,440 --> 00:23:30,880
+there's a difference between those types of 
+people versus the good but polarized ones.
+
+292
+00:23:30,880 --> 00:23:37,440
+Yeah. I think one philosophical thing that's 
+important is that we want all of humanity to  
+
+293
+00:23:37,440 --> 00:23:41,040
+participate. And sometimes, people are surprised 
+by that. They'll be like, "Oh, aren't there  
+
+294
+00:23:41,040 --> 00:23:46,920
+people who shouldn't be doing this?", or like, 
+"Their thinking is so extreme or something,  
+
+295
+00:23:46,920 --> 00:23:51,600
+maybe they shouldn't participate." But our view 
+is it's actually we want to have all of humanity  
+
+296
+00:23:51,600 --> 00:23:56,440
+here. Because if we have all of humanity, 
+we then have the data to understand what  
+
+297
+00:23:56,440 --> 00:24:02,120
+notes will be helpful to actual humanity. 
+We can better model that better or better  
+
+298
+00:24:02,120 --> 00:24:07,120
+understand and better show those notes.
+So it's advantageous to have people who have all  
+
+299
+00:24:07,120 --> 00:24:15,000
+sorts of points of views and we don't expect that 
+every note will be loved by every single person.  
+
+300
+00:24:15,720 --> 00:24:23,040
+That's an impossible bar. But we do intend to show 
+the notes that 80% of people are going to read and  
+
+301
+00:24:23,040 --> 00:24:29,680
+say, "Wow. I'm glad I knew that." And so, in that 
+sense, it doesn't matter how maybe extreme someone  
+
+302
+00:24:29,680 --> 00:24:35,000
+views a person's views as. It's still great to 
+have them in the program. So no matter what your  
+
+303
+00:24:35,000 --> 00:24:39,320
+views are, please sign up and participate. 
+It helps identify what's really helpful.
+
+304
+00:24:39,320 --> 00:24:41,640
+Cool. And we'll link to people 
+if they want to actually sign up,  
+
+305
+00:24:41,640 --> 00:24:45,560
+so they know how to do this. Something 
+we didn't actually specify, these are  
+
+306
+00:24:45,560 --> 00:24:49,400
+all volunteers. No one's getting paid to 
+be doing these notes and voting, right?
+
+307
+00:24:49,400 --> 00:24:55,800
+Yeah. It's totally based on intrinsic motivation 
+and we think that's a great reason to be doing it.  
+
+308
+00:24:55,800 --> 00:25:00,240
+When you talk to the most active contributors, a 
+lot of them, they want to have better information  
+
+309
+00:25:00,240 --> 00:25:06,360
+out in the world and that's a great motivation. 
+So yeah, that's why they... If you think about,  
+
+310
+00:25:06,360 --> 00:25:13,880
+like for these people, the impact they can have 
+is nuts. So when we first launched US-wide,  
+
+311
+00:25:13,880 --> 00:25:21,000
+this was like in 2022, a note appeared on a 
+White House tweet and the White House deleted  
+
+312
+00:25:21,000 --> 00:25:27,080
+the tweet and reissued an updated statement.
+Imagine being the person who wrote that. You  
+
+313
+00:25:27,080 --> 00:25:34,160
+probably have 12 followers. Your posts 
+probably get a couple likes. And here,  
+
+314
+00:25:34,160 --> 00:25:40,240
+you just put a note on the White House and they 
+changed their public talking points based on what  
+
+315
+00:25:40,240 --> 00:25:47,840
+you did. That is an incredible amount of impact. 
+So you could see why people are motivated to do  
+
+316
+00:25:47,840 --> 00:25:52,480
+it when they care about what's going on 
+in the world. You don't have to be a big,  
+
+317
+00:25:52,480 --> 00:25:59,440
+well-known person to shape the discourse and 
+information flow in a way that's helpful.
+
+318
+00:25:59,440 --> 00:26:04,440
+It's insane. There's so much to love about 
+this. One is just the meritocracy of this  
+
+319
+00:26:04,440 --> 00:26:08,920
+whole operation of just anybody that 
+is true and correct can participate  
+
+320
+00:26:08,920 --> 00:26:13,120
+and have impact. Also, it just shows you 
+how much information we get that is just  
+
+321
+00:26:13,120 --> 00:26:17,880
+wrong. We had no idea how often we see 
+things that are wrong and now we do.
+
+322
+00:26:17,880 --> 00:26:20,800
+Working on this product has made 
+me realize just how many things  
+
+323
+00:26:20,800 --> 00:26:26,560
+I used to trust by default, that 
+now I look at more skeptically.
+
+324
+00:26:26,560 --> 00:26:31,520
+Definitely mean these days. Okay. Before we 
+get to the origin story, is there anything else  
+
+325
+00:26:31,520 --> 00:26:36,040
+along those lines you guys think might be really 
+important to share, that are really interesting?
+
+326
+00:26:36,040 --> 00:26:43,640
+Sure. I guess one other thing is that although 
+we don't actually use the fact that a post was  
+
+327
+00:26:43,640 --> 00:26:52,720
+noted in the core ranking algorithm, which we 
+think is a nice property. There is a really big  
+
+328
+00:26:52,720 --> 00:26:56,960
+impact just organically, meaning not from 
+the algorithm but just from user behavior,  
+
+329
+00:26:56,960 --> 00:27:01,360
+where people will like and re-share 
+or quote posts way less when-
+
+330
+00:27:01,360 --> 00:27:08,080
+Quote. Posts way less when notes are applied. I 
+don't know, for people out there who typically  
+
+331
+00:27:08,080 --> 00:27:15,520
+run A-B tests on big platforms, you may already be 
+familiar with this, but 1% is typically an awesome  
+
+332
+00:27:15,520 --> 00:27:23,840
+effect size for any algorithm change. We saw more 
+like 30 to 40% engagement rate drops for likes and  
+
+333
+00:27:23,840 --> 00:27:31,360
+reposts in A-B tests we were ran when showing a 
+post with or without a note, which is just crazy  
+
+334
+00:27:31,360 --> 00:27:38,400
+big. That's just an A-B test on the engagement 
+rate, so that's not the network effect. If you  
+
+335
+00:27:38,400 --> 00:27:46,960
+capture the overall network effect of how post 
+spread less by that person's repost, basically if  
+
+336
+00:27:46,960 --> 00:27:52,160
+you look top line with a difference in differences 
+approach, multiple different external research  
+
+337
+00:27:52,160 --> 00:27:59,120
+groups have both found consistently that there's 
+a 50 or 60% drop in total reposts, which is just  
+
+338
+00:27:59,120 --> 00:28:05,840
+nuts after a note is applied. It's having a 
+really big impact on spread actually, too.
+
+339
+00:28:05,840 --> 00:28:12,680
+That's so great to hear. It's what I would want 
+to see and it's incredible impact. Basically, an  
+
+340
+00:28:12,680 --> 00:28:17,640
+AI image of something false would just go crazy on 
+Twitter, and did before Community Notes came out,  
+
+341
+00:28:17,640 --> 00:28:21,480
+and now what you're saying is just adding that 
+context, not actually... Like you're saying,  
+
+342
+00:28:21,480 --> 00:28:25,920
+the algorithm doesn't demote it. If there's 
+something incorrect, it's just people are like,  
+
+343
+00:28:25,920 --> 00:28:28,600
+"Okay, this is false, why would I want 
+to retweet this?" That makes sense.
+
+344
+00:28:28,600 --> 00:28:29,060
+Correct.
+
+345
+00:28:29,060 --> 00:28:29,520
+Right.
+
+346
+00:28:29,520 --> 00:28:35,040
+Yeah, the notes just totally take the wind out 
+these stories. The thing will be going viral,  
+
+347
+00:28:35,040 --> 00:28:43,280
+note appears, resharing drops 50 to 60%, 
+and that's it. At 50 to 60% per generation,  
+
+348
+00:28:43,280 --> 00:28:45,680
+the virality quickly goes to zero.
+
+349
+00:28:45,680 --> 00:28:49,960
+By the way, I have very mixed 
+feelings about this next one,  
+
+350
+00:28:49,960 --> 00:28:55,680
+but authors become 80% more likely to decrease, 
+sorry, to delete their post after they get noted,  
+
+351
+00:28:55,680 --> 00:29:01,680
+which okay, that's great, because less 
+misinfo out there, but I'm pan about,  
+
+352
+00:29:01,680 --> 00:29:08,280
+because those are usually the best notes. If the 
+note was so just good that you had no other option  
+
+353
+00:29:08,280 --> 00:29:13,760
+but to delete your post, those notes don't 
+get seen by other people, right? Because-
+
+354
+00:29:13,760 --> 00:29:14,360
+That's hard.
+
+355
+00:29:14,360 --> 00:29:18,840
+There's an argument, by the way, that 
+seeing... Just because you might see  
+
+356
+00:29:18,840 --> 00:29:24,040
+the same misleading claim elsewhere off X, 
+or somewhere else on X, it might be good  
+
+357
+00:29:24,040 --> 00:29:28,760
+to actually show... Better to have seen the 
+post with the note than not see it at all.
+
+358
+00:29:28,760 --> 00:29:29,720
+Yeah.
+
+359
+00:29:29,720 --> 00:29:31,360
+Unsure about that claim.
+
+360
+00:29:31,360 --> 00:29:32,520
+That is so interesting.
+
+361
+00:29:32,520 --> 00:29:33,440
+Yeah.
+
+362
+00:29:33,440 --> 00:29:39,480
+Yeah, I'd be so sad if I was that community note 
+writer and just... Man, it's so good. They just  
+
+363
+00:29:39,480 --> 00:29:48,040
+can't even keep the post up. Okay. Coming back 
+from today's world, where this small amount of  
+
+364
+00:29:48,040 --> 00:29:53,920
+code is changing the way people understand the 
+world and what they believe, and making the White  
+
+365
+00:29:53,920 --> 00:29:59,800
+House rescind their announcements, zooming back to 
+the beginning of how this whole project started,  
+
+366
+00:29:59,800 --> 00:30:05,800
+what I heard just briefly is, Keith, you were 
+just tired of managing PMs, you wanted to just  
+
+367
+00:30:05,800 --> 00:30:11,080
+work on something yourself, you wanted to work 
+on something impactful away from corporate BS,  
+
+368
+00:30:11,080 --> 00:30:15,000
+and you basically just started looking for 
+something that was impactful, important,  
+
+369
+00:30:15,000 --> 00:30:19,240
+and you found this. Talk about just how it 
+all came to be at the beginnings of the story.
+
+370
+00:30:19,240 --> 00:30:23,200
+Yeah. I mean, for me, the beginnings 
+actually go back to why I joined,  
+
+371
+00:30:23,200 --> 00:30:27,800
+it was then, Twitter in 2016. I had a startup  
+
+372
+00:30:28,840 --> 00:30:37,520
+and we'd had some acquisition offers, and one of 
+them was from this company, Twitter. It was 2016,  
+
+373
+00:30:37,520 --> 00:30:43,480
+it was the middle of the election between 
+Donald Trump and Hillary Clinton, and there were  
+
+374
+00:30:43,480 --> 00:30:49,080
+something like three televised debates, but every 
+day, there was a debate happening on Twitter,  
+
+375
+00:30:49,080 --> 00:30:54,280
+and it was very clear, this is where people 
+are talking about these things that matter,  
+
+376
+00:30:54,280 --> 00:31:02,720
+where information is being shared, where ideas 
+are being formed. As a user, it was obvious that  
+
+377
+00:31:02,720 --> 00:31:08,400
+I could get good information there, but it 
+was also obvious that there was questionable  
+
+378
+00:31:08,400 --> 00:31:12,920
+information floating around. I remember just 
+looking, as an outsider, thinking like, "Wow,  
+
+379
+00:31:12,920 --> 00:31:18,240
+this is a really hard problem and it also seems 
+really important," so we ended up going to Twitter  
+
+380
+00:31:18,240 --> 00:31:23,320
+and the company was in a turnaround at that point.
+My first three years was just helping to get the  
+
+381
+00:31:23,320 --> 00:31:30,600
+company growing again, working on everything 
+that was the consumer product, getting user  
+
+382
+00:31:30,600 --> 00:31:36,560
+growth going back and people wanting to work 
+there again, et cetera, but a few years in, I  
+
+383
+00:31:36,560 --> 00:31:44,880
+was reflecting on what we had done. I think we had 
+done a lot of good work getting momentum going,  
+
+384
+00:31:45,880 --> 00:31:51,640
+and people in the us and in the industry had 
+tried things to deal with misleading information,  
+
+385
+00:31:51,640 --> 00:31:56,960
+but nothing was really working. It was obvious 
+nothing was working. Nothing could handle the  
+
+386
+00:31:56,960 --> 00:32:02,400
+scale of the problem, nothing could handle the 
+speed, and a lot of people just didn't trust the  
+
+387
+00:32:02,400 --> 00:32:07,840
+existing approaches. The existing approaches 
+were either fact-checkers or internal trust  
+
+388
+00:32:07,840 --> 00:32:13,120
+and safety teams making decisions about what 
+was or was not misleading. A lot of people  
+
+389
+00:32:13,120 --> 00:32:17,800
+just didn't want or trust that to be the way 
+this was decided, which is very reasonable. 
+
+390
+00:32:19,720 --> 00:32:27,840
+I'm looking at that, I was still managing a 
+large PM team. That's a whole story in itself.  
+
+391
+00:32:31,200 --> 00:32:37,400
+That job required a lot of energy in, and I didn't 
+feel like I always saw the output that I wanted  
+
+392
+00:32:37,400 --> 00:32:42,800
+to see from it. I didn't see the change in the 
+product I wanted to see and I was contemplating,  
+
+393
+00:32:42,800 --> 00:32:48,560
+"Should I go start a company? Should I do 
+something else?" And I kept coming back to this  
+
+394
+00:32:48,560 --> 00:32:54,960
+problem. I'm like, "Man, how is the world going to 
+deal with this information quality issue of what  
+
+395
+00:32:54,960 --> 00:33:02,040
+we get on social media?" Wherever get it. I'm at 
+this company where you can make a difference on  
+
+396
+00:33:02,040 --> 00:33:10,760
+this problem, why not go and try some crazy ideas 
+and see if one of them might work? I had a kid,  
+
+397
+00:33:10,760 --> 00:33:15,200
+I came back from paternity leave, I went to 
+my boss, Kayvon. I was like, "Hey, Kayvon.  
+
+398
+00:33:15,200 --> 00:33:20,920
+How about I just stop doing my job and I go work 
+on this instead? 'This' being trying some crazy  
+
+399
+00:33:20,920 --> 00:33:27,560
+ideas to see if we can deal with misleading info."
+He was stoked, so I went off and started working  
+
+400
+00:33:27,560 --> 00:33:35,280
+on that. It started with just reading any 
+research I could on the problem and existing  
+
+401
+00:33:35,280 --> 00:33:40,120
+solutions. What was or was not working, what 
+were the issues, and then into prototyping.  
+
+402
+00:33:40,120 --> 00:33:46,680
+Then it ultimately led to us building and 
+piloting this idea that became Community Notes.
+
+403
+00:33:46,680 --> 00:33:49,680
+Amazing. I have so many questions and we're 
+going to keep going through the story,  
+
+404
+00:33:49,680 --> 00:33:53,600
+but when you joined Twitter, what was 
+the... It was called Twitter. At this point,  
+
+405
+00:33:53,600 --> 00:33:59,440
+I'm going to try to call it X now, which I know 
+is important to your boss. What era of Twitter  
+
+406
+00:33:59,440 --> 00:34:05,440
+was it at that point? It was Kayvon joined and 
+who was the CEO? Because there's been many.
+
+407
+00:34:05,440 --> 00:34:11,840
+Okay, yeah. I came in December 2016, so Jack 
+had relatively recently come back as CEO to  
+
+408
+00:34:11,840 --> 00:34:15,840
+turn the company around, and just to give 
+you a sense of the state of the company,  
+
+409
+00:34:15,840 --> 00:34:19,880
+something like a third of employees were 
+leaving every year. Just imagine a third  
+
+410
+00:34:19,880 --> 00:34:27,400
+of your team gone every year. The stock was in 
+the toilet, the product was not really growing,  
+
+411
+00:34:27,920 --> 00:34:33,920
+so Jack was working on a turnaround 
+and Kayvon was there already. Kayvon  
+
+412
+00:34:33,920 --> 00:34:42,240
+was running Periscope with a bunch of video 
+stuff, and that group continued to... Jack was  
+
+413
+00:34:42,240 --> 00:34:50,160
+there up through the start of the Community 
+Notes, then Birdwatch Project, and... Yeah.
+
+414
+00:34:50,160 --> 00:34:52,760
+Okay, and it was called Birdwatch. I 
+don't think we've used that term yet,  
+
+415
+00:34:52,760 --> 00:34:55,280
+but that's an important point. It 
+was called Birdwatch initially.
+
+416
+00:34:55,280 --> 00:35:01,680
+Yeah. It was originally called Birdwatch 
+when we started the project, but obviously,  
+
+417
+00:35:01,680 --> 00:35:05,120
+somewhat famously the name changed along the way.
+
+418
+00:35:05,120 --> 00:35:07,800
+Yeah, maybe let's just tell that story real 
+quick, and I know we're zooming it forward,  
+
+419
+00:35:07,800 --> 00:35:12,000
+but just... I have this Twitter thread 
+that I saw between Jack and Elon when  
+
+420
+00:35:12,000 --> 00:35:16,880
+they're debating what to call it, and 
+Elon's like, "Birdwatch sounds creepy,  
+
+421
+00:35:16,880 --> 00:35:19,840
+I want to change it". Is there 
+anything there you can share?
+
+422
+00:35:19,840 --> 00:35:27,080
+Yeah, the story there... The story, that's funny. 
+Elon came in, acquired the company, and we had  
+
+423
+00:35:27,080 --> 00:35:31,000
+just launched the product relatively recently 
+in the US. It had been in pilot for a year,  
+
+424
+00:35:31,000 --> 00:35:40,600
+but we had just made it available US-wide, and I 
+guess he'd been seeing the notes. Soon after the  
+
+425
+00:35:40,600 --> 00:35:46,520
+exhibition, he DM'd me and he was like, "Hey, this 
+Community Notes thing is awesome," and I was like,  
+
+426
+00:35:46,520 --> 00:35:50,760
+"I'm glad you like it, let's talk," so we 
+talked the next day and he kept referring  
+
+427
+00:35:50,760 --> 00:35:57,640
+to it as "This Community Notes thing." I was 
+like, "It's interesting you keep calling it that,  
+
+428
+00:35:57,640 --> 00:36:04,200
+because that's actually the very first thing that 
+I called it." The very first figma mockup I made  
+
+429
+00:36:04,200 --> 00:36:10,560
+depicting this thing was called "Community Notes." 
+I don't know why, it just felt really natural,  
+
+430
+00:36:10,560 --> 00:36:17,480
+so that's the first prototype we had tested.
+Later, the project changed the same to Birdwatch,  
+
+431
+00:36:17,480 --> 00:36:24,680
+but Elon was like, "Hey, let's just call it 
+that." The next day, we just changed the name.  
+
+432
+00:36:27,880 --> 00:36:32,240
+It's always notable for the team when you 
+change the name, but really, the team was  
+
+433
+00:36:32,240 --> 00:36:37,640
+excited about it. I think it is a much more 
+understandable name. Jack has made fun of it,  
+
+434
+00:36:37,640 --> 00:36:41,360
+calling it "The ultimate Facebook 
+name," or something like that.
+
+435
+00:36:41,360 --> 00:36:43,400
+The most boring Facebook 
+name [inaudible 00:36:44].
+
+436
+00:36:43,400 --> 00:36:49,680
+Boring name, which is funny, because they're 
+now launching Community Notes. I think it is  
+
+437
+00:36:49,680 --> 00:36:53,840
+a very understandable, intuitive name, 
+and I think it has served the product  
+
+438
+00:36:53,840 --> 00:36:57,520
+really well. There's a reason it was 
+the name in the very first mockup.
+
+439
+00:36:57,520 --> 00:37:02,480
+Yeah, I think descriptive names just 
+makes sense. This connection with Elon,  
+
+440
+00:37:02,480 --> 00:37:06,360
+and I want to talk later about just how you've 
+dealt with so many strong personalities over and  
+
+441
+00:37:06,360 --> 00:37:12,240
+kept this alive throughout so many changes, but 
+before we get to that, you did something that I  
+
+442
+00:37:12,240 --> 00:37:18,040
+think a lot of product leaders, angel leaders, 
+just people that have managed people dream of  
+
+443
+00:37:18,040 --> 00:37:25,080
+give up all this power, in air quotes, and 
+career trajectory and influence and just,  
+
+444
+00:37:25,080 --> 00:37:28,520
+"Forget all that. I'm going to go back 
+to just building something awesome,  
+
+445
+00:37:28,520 --> 00:37:33,440
+small team." Is there any advice there that 
+you could share from that experience that you  
+
+446
+00:37:33,440 --> 00:37:38,320
+think might be helpful for other leaders to 
+share or to hear to help them maybe do that  
+
+447
+00:37:38,320 --> 00:37:42,880
+same jump? Because that's really difficult 
+in practice. Easy to talk about, hard to do.
+
+448
+00:37:42,880 --> 00:37:48,560
+Yeah, I think it is a difficult jump. I've done 
+it a bunch of times in my career and I've always  
+
+449
+00:37:48,560 --> 00:37:53,720
+been very happy with it, where I started with a 
+small team, that it grew into something bigger,  
+
+450
+00:37:53,720 --> 00:37:58,240
+and then I was like, "We're dealing 
+with a lot of big production stuff,  
+
+451
+00:37:58,240 --> 00:38:01,680
+team's really big. I want to go back to doing 
+something like crazy and new with a small team  
+
+452
+00:38:01,680 --> 00:38:08,200
+again." I've done that sawtooth leap a bunch of 
+times, but it can be hard, because certainly,  
+
+453
+00:38:08,200 --> 00:38:18,360
+the natural... The classic career path is, I don't 
+know, rewards or running a large organization or  
+
+454
+00:38:18,360 --> 00:38:23,280
+being a manager, or things like that, but I 
+think, at the end of the day, you got to work  
+
+455
+00:38:23,280 --> 00:38:29,040
+on stuff you love, you got to be having fun, 
+and I think people want to be having impact. 
+
+456
+00:38:29,640 --> 00:38:35,880
+I think there's one myth that can get in people's 
+ways. The idea that the more people you manage or  
+
+457
+00:38:35,880 --> 00:38:40,360
+the larger your scope is, the more impact you 
+have. I definitely do not think that is true.  
+
+458
+00:38:43,480 --> 00:38:49,800
+I mean, look at Community Notes for example. If 
+I had stayed running a large consumer PM team,  
+
+459
+00:38:49,800 --> 00:38:56,000
+what would I have produced? 16 more pages of 
+OKRs? I don't know, a bunch of documents? I  
+
+460
+00:38:56,000 --> 00:39:01,000
+think building Community Notes has had way 
+bigger impact on the world. It's become the  
+
+461
+00:39:01,000 --> 00:39:05,080
+industry standard for how to deal with this now, 
+which is super cool. People love it, it's the  
+
+462
+00:39:05,080 --> 00:39:13,120
+first thing that is plausibly dealing with the 
+internet-scale issue of information quality. I  
+
+463
+00:39:13,120 --> 00:39:16,760
+think it's unquestionably a bigger impact than 
+I would've had if I were just doing whatever,  
+
+464
+00:39:16,760 --> 00:39:21,960
+doing some standard management track thing like 
+I was doing before. I think that's true of so  
+
+465
+00:39:21,960 --> 00:39:30,800
+many other small companies and startups. Someone 
+screenshotted I think it's Blake Scholl's LinkedIn  
+
+466
+00:39:30,800 --> 00:39:37,960
+the other day. He went from director of coupons 
+or something to building the first supersonic-
+
+467
+00:39:38,800 --> 00:39:41,360
+Yeah, from Groupon.
+
+468
+00:39:41,360 --> 00:39:46,760
+Those stories are everywhere when you look, 
+so I definitely have found that, for me,  
+
+469
+00:39:46,760 --> 00:39:51,760
+I love building hands-on, I love trying crazy 
+new ideas. I love the zero-to-one experience.  
+
+470
+00:39:51,760 --> 00:39:59,520
+It's fun to scale things up too, and it can 
+be fun to operate at scale, but this team is  
+
+471
+00:39:59,520 --> 00:40:03,360
+a good example of one that operates at a very 
+large scale, but that is still very small.
+
+472
+00:40:03,360 --> 00:40:09,400
+Yeah, I think the way you guys operate is 
+what more and more companies are trying to do,  
+
+473
+00:40:09,400 --> 00:40:14,280
+remove middle management layers, create small 
+teams that just execute and build impact,  
+
+474
+00:40:14,280 --> 00:40:18,240
+just like Ics. Whenever I say IC, I 
+have a comment on YouTube, where like,  
+
+475
+00:40:18,240 --> 00:40:20,760
+"What is IC?" I'm just going to 
+explain, individual contributor,  
+
+476
+00:40:20,760 --> 00:40:26,960
+non-manager is when I say the word IC. Let me 
+follow this thread, and when I asked people about  
+
+477
+00:40:26,960 --> 00:40:33,680
+how you set up the team to operate effectively 
+and protect it initially, there's this term,  
+
+478
+00:40:33,680 --> 00:40:37,800
+"Thermal," that came up a lot. It was like a 
+thermal team, if that's how you describe it.
+
+479
+00:40:37,800 --> 00:40:38,200
+Yeah.
+
+480
+00:40:38,200 --> 00:40:39,440
+What is thermal?
+
+481
+00:40:39,440 --> 00:40:44,200
+Yeah, so anyone who's worked in a larger 
+company probably knows that things can get  
+
+482
+00:40:44,200 --> 00:40:49,440
+bureaucratic or bogged-down, decision-making can 
+be slow. There's these large planning cycles,  
+
+483
+00:40:49,440 --> 00:40:52,880
+people can try to take someone from 
+one team, move them to another at  
+
+484
+00:40:52,880 --> 00:40:57,040
+random arbitrary times that can disrupt 
+a project, all sorts of things like that.  
+
+485
+00:40:58,520 --> 00:41:02,800
+Our company, this is a number of years ago 
+when we started this project, we had a lot of  
+
+486
+00:41:02,800 --> 00:41:07,200
+founders in the company. Kayvon is an example 
+of founder who is helping to run the company,  
+
+487
+00:41:07,200 --> 00:41:13,200
+and he had this idea, "Hey, why don't 
+we create this program, call it Thermal,  
+
+488
+00:41:13,200 --> 00:41:18,480
+where we could have teams that were somewhat 
+isolated from that." They could run through their  
+
+489
+00:41:18,480 --> 00:41:24,000
+own process, they would have one clear owner. 
+The team would be entirely dedicated to that  
+
+490
+00:41:24,000 --> 00:41:30,720
+project and we would just repeatedly make funding 
+decisions as to whether to continue the effort.
+
+491
+00:41:31,280 --> 00:41:33,320
+Why was it called Thermal, by 
+the way? What was the idea there?
+
+492
+00:41:33,320 --> 00:41:42,040
+I think it was an old bird analogy of thermals 
+lifting the bird on their wings. Twitter 1.0  
+
+493
+00:41:42,040 --> 00:41:52,720
+obviously had a lot of bird analogies, bless its 
+heart, so that was one of them. I loved the idea,  
+
+494
+00:41:52,720 --> 00:41:58,880
+as someone who liked the startup environment, so 
+when we were starting this project, I was like,  
+
+495
+00:41:58,880 --> 00:42:02,720
+"Hey, Kayvon. Why don't we make this the 
+first Thermal project?" And he was like,  
+
+496
+00:42:02,720 --> 00:42:10,200
+"Yeah, let's do it," so we started with that 
+way of operating and it gave us, from day one,  
+
+497
+00:42:10,200 --> 00:42:15,240
+a lot of freedom and autonomy that I think 
+was really important to make the product work.
+
+498
+00:42:15,240 --> 00:42:18,320
+Just be very specific about it. What makes it a  
+
+499
+00:42:18,320 --> 00:42:21,840
+Thermal project? How do you set that 
+up? This is asking from perspective,  
+
+500
+00:42:21,840 --> 00:42:24,920
+if a company wants to build their own 
+something like this, what does that look like?
+
+501
+00:42:24,920 --> 00:42:31,200
+Yeah, I think there's a bunch of key attributes. 
+One key attribute is there's one clear driver of  
+
+502
+00:42:31,200 --> 00:42:36,440
+the project, who's effectively a founder. I guess 
+maybe you could have two or something, but really  
+
+503
+00:42:36,440 --> 00:42:43,440
+clear, there's driver of the project and also 
+there's one clear decision-maker that they go to.
+
+504
+00:42:43,440 --> 00:42:44,680
+Outside of the team?
+
+505
+00:42:44,680 --> 00:42:47,840
+Outside of the team. That was 
+true back when we started and  
+
+506
+00:42:47,840 --> 00:42:53,680
+it is true now. If we need something 
+or have a question about something,  
+
+507
+00:42:53,680 --> 00:42:57,880
+I talk to Elon. It was like that from 
+the beginning, it's like that now, and I  
+
+508
+00:42:57,880 --> 00:43:02,760
+think that's a big reason we're able to make 
+decisions effectively, quickly, in a simple way.
+
+509
+00:43:02,760 --> 00:43:06,320
+It probably has to be someone very 
+senior, not [inaudible 00:43:05] manager.
+
+510
+00:43:06,320 --> 00:43:11,640
+Someone senior who can make the decisions you need 
+made, whatever they are. I think that's really  
+
+511
+00:43:11,640 --> 00:43:18,440
+important, that clear decision-making structure. 
+Another was 100% focus, so everyone on the project  
+
+512
+00:43:18,440 --> 00:43:26,360
+is expected to be totally focused on it. A lot 
+of companies, it can be easy to have people's  
+
+513
+00:43:26,360 --> 00:43:34,880
+attention spread across a bunch of things, and 
+it makes it hard to get stuff done. You'll talk  
+
+514
+00:43:34,880 --> 00:43:38,440
+to whoever that person is, you'll ask them for 
+help on something, and they'll be like, "Yeah,  
+
+515
+00:43:38,440 --> 00:43:42,400
+I'll help you. I got to finish this thing, and 
+it'll take me a week or two and then I'll get  
+
+516
+00:43:42,400 --> 00:43:49,640
+to it." A week or two delay totally changes the 
+momentum of a project. When we were 100% focused,  
+
+517
+00:43:50,320 --> 00:43:53,640
+we talk in the morning, it's like, "Hey, Jay. 
+Why don't we try this thing in the algorithm?"  
+
+518
+00:43:53,640 --> 00:43:58,320
+He's like, "Yeah." Then that afternoon or 
+the next day, we're looking at results. 
+
+519
+00:43:59,160 --> 00:44:05,400
+Because of that total focus, the rate of 
+iteration goes way up. Then beyond that,  
+
+520
+00:44:05,400 --> 00:44:12,200
+there was also just the ability to use 
+whatever our own decision-making process  
+
+521
+00:44:12,200 --> 00:44:18,920
+was. We didn't need to write OKRs or... 
+For others standard practices. Obviously,  
+
+522
+00:44:18,920 --> 00:44:23,880
+we had to make sure we were responsibly building 
+the product and everything, but we didn't need to  
+
+523
+00:44:23,880 --> 00:44:30,320
+use the standard practices. I think that's another 
+great example, OKRs, I understand why they can be  
+
+524
+00:44:30,320 --> 00:44:37,800
+helpful, but they can also be not necessarily the 
+right cadence at which to set goals. I think it's  
+
+525
+00:44:37,800 --> 00:44:46,800
+really unclear that quarterly or annual goals 
+are actually the right pace. We would set the  
+
+526
+00:44:46,800 --> 00:44:51,200
+goal for the next milestone that mattered, and 
+we would work on that. We reached that milestone,  
+
+527
+00:44:51,200 --> 00:44:54,600
+we would have an idea of what was coming after, 
+and then when we hit that, we'd set the next  
+
+528
+00:44:54,600 --> 00:45:01,320
+milestone. Whether that was two weeks, a month, 
+three months, whatever it was. We set our own pace  
+
+529
+00:45:01,320 --> 00:45:06,280
+and goals at that pace, and that just I think is a 
+lot more natural for the development of something.
+
+530
+00:45:06,280 --> 00:45:10,600
+The whole OKR determination and 
+planning process took longer than  
+
+531
+00:45:10,600 --> 00:45:15,080
+it would take us to pick a goal and 
+then execute on it and finish it.
+
+532
+00:45:15,080 --> 00:45:19,240
+How big was the team early on that 
+you set up? How many engineers?
+
+533
+00:45:19,240 --> 00:45:26,080
+It started with just me and then, when we 
+decided to build the thing, we figured we  
+
+534
+00:45:26,080 --> 00:45:30,720
+needed about five. We wanted it to be as small as 
+we possibly could. It was clear we needed someone  
+
+535
+00:45:30,720 --> 00:45:36,640
+on ML doing scoring, it was clear we needed 
+someone to do some client engineering work,  
+
+536
+00:45:36,640 --> 00:45:43,280
+someone to do backend engineering work. There may 
+have been one or two other. We needed a designer  
+
+537
+00:45:43,280 --> 00:45:50,440
+and a researcher to help us understand the 
+customer base and make sure we were building the  
+
+538
+00:45:50,440 --> 00:45:55,560
+thing in a way that was actually going to resonate 
+with people. I think it was backend, frontend,  
+
+539
+00:45:57,280 --> 00:46:01,320
+ML, design research. That was the 
+original team, from what I remember.
+
+540
+00:46:01,320 --> 00:46:05,280
+Amazing. Basically, one of each function. 
+A question I have for Jay, actually,  
+
+541
+00:46:05,280 --> 00:46:10,960
+is there's all this talk of small teams 
+and moving fast, but sometimes you just  
+
+542
+00:46:10,960 --> 00:46:15,400
+need more engineers to build the thing. Is there 
+anything you've learned about just how to keep a  
+
+543
+00:46:15,400 --> 00:46:22,760
+team small while moving as fast as you are, 
+and not need or need to hire more engineers?
+
+544
+00:46:22,760 --> 00:46:28,040
+I think, in the beginning when we were iterating 
+on what should even the requirements be,  
+
+545
+00:46:28,840 --> 00:46:34,600
+it was definitely good to just have one 
+ML engineer, but I think, at some point,  
+
+546
+00:46:34,600 --> 00:46:40,760
+we got clear on what the goals of the algorithm 
+should really be and we tried... I think,  
+
+547
+00:46:40,760 --> 00:46:47,160
+at the very beginning, it wasn't clear that we 
+needed to build this bridging-based algorithm.  
+
+548
+00:46:47,160 --> 00:46:51,760
+The actual first algorithm that I put into 
+production was very focused on anti-manipulation.  
+
+549
+00:46:51,760 --> 00:46:58,360
+It was this page rank variant, but 
+it didn't solve the problem of bias,  
+
+550
+00:46:58,360 --> 00:47:04,480
+basically. If there are more users on one side, 
+a page rank type graph algorithm can actually  
+
+551
+00:47:04,480 --> 00:47:09,720
+amplify those biases. I think, after building 
+that prototype and getting data from that,  
+
+552
+00:47:09,720 --> 00:47:17,720
+it was clear that the bridging-based algorithm was 
+going to be the way that we needed to solve it,  
+
+553
+00:47:17,720 --> 00:47:26,920
+and at that point, basically I set up a 
+bake-off. Kind of a Kaggle competition or  
+
+554
+00:47:26,920 --> 00:47:34,120
+something. That was the key time where it was 
+really important to pull in other engineers.
+
+555
+00:47:34,120 --> 00:47:39,480
+That is such a cool story. I want to follow that 
+thread. Before we do that, you just mentioned you  
+
+556
+00:47:39,480 --> 00:47:44,120
+guys yell "Thermal." What does that mean? 
+Is that YOLO, like a version of... Okay.
+
+557
+00:47:44,120 --> 00:47:46,400
+We're just going to ship, 
+because we're thermal project.
+
+558
+00:47:46,400 --> 00:47:47,560
+Ship it.
+
+559
+00:47:47,560 --> 00:47:54,640
+Okay. Marketers, I know that you love [inaudible 
+00:47:52], so let me get right to the point. Wix  
+
+560
+00:47:54,640 --> 00:48:00,200
+Studio gives you everything you need to cater to 
+any client at any scale, all in one place. Here's  
+
+561
+00:48:00,200 --> 00:48:05,400
+how your workflow could look. Scale content with 
+dynamic pages and reusable assets effortlessly,  
+
+562
+00:48:05,400 --> 00:48:08,320
+fast-track projects with built-in 
+marketing integrations like Meta,  
+
+563
+00:48:08,320 --> 00:48:13,480
+CAPI, Zapier, Google Ads, and more. A-B 
+test landing pages in days, not weeks,  
+
+564
+00:48:13,480 --> 00:48:17,920
+with intuitive design tools, connected 
+tracking, and analytics tools, like Google  
+
+565
+00:48:17,920 --> 00:48:23,360
+Analytics and Semrush. Encapture key business 
+events without the hassle of manual setup,  
+
+566
+00:48:23,360 --> 00:48:27,080
+manage all your client's social media and 
+communications from a unified dashboard,  
+
+567
+00:48:27,080 --> 00:48:32,080
+then create, schedule, and post content across all 
+their channels. If you're working on content-rich  
+
+568
+00:48:32,080 --> 00:48:36,760
+sites, Wix Studio's No-Code CMS lets you build 
+and manage without touching the design. When  
+
+569
+00:48:36,760 --> 00:48:41,320
+you're ready for more, Wix Studio grows with you. 
+Add your own code, create custom integrations  
+
+570
+00:48:41,320 --> 00:48:46,760
+with Wix-made APIs, or leverage robust native 
+business solutions. Drive real client growth  
+
+571
+00:48:46,760 --> 00:48:53,440
+with Wix Studio. Go to Wixstudio.com.
+Okay, so coming back to this algorithm,  
+
+572
+00:48:53,440 --> 00:48:56,880
+this is actually really interesting, because I've 
+never heard any of this. I was going to ask just  
+
+573
+00:48:56,880 --> 00:49:02,400
+what inspired this actual algorithm, and you 
+basically did an internal competition amongst  
+
+574
+00:49:02,400 --> 00:49:09,200
+ML engineers to see who had the most successful 
+algorithm. Netflix-contest style, Kaggle style.
+
+575
+00:49:09,200 --> 00:49:17,360
+Yeah, yeah. This particular idea of finding 
+content that is liked by people on opposite  
+
+576
+00:49:17,360 --> 00:49:23,800
+sides of a polarized divider who typically 
+disagree, this was not an idea out of thin air.  
+
+577
+00:49:23,800 --> 00:49:29,880
+I think Keith had found some of Chris Bale's 
+work, he had made this list of accounts that  
+
+578
+00:49:29,880 --> 00:49:38,640
+were often liked by people who were on both 
+sides politically. There is other projects,  
+
+579
+00:49:38,640 --> 00:49:46,600
+like polls out there that look for agreement among 
+people who typically disagree, but I think that  
+
+580
+00:49:47,240 --> 00:49:52,680
+it wasn't obvious that our project definitely 
+needed to use that from the very beginning.  
+
+581
+00:49:54,400 --> 00:49:59,160
+When you implement it and compare it against 
+these other type... PageRank seems, obviously,  
+
+582
+00:49:59,160 --> 00:50:04,400
+it's designed to be manipulation-resistant. 
+Naturally, if you just have a voting ring  
+
+583
+00:50:04,400 --> 00:50:10,840
+of people who all vote themselves up, then 
+PageRank can filter that out very well, but  
+
+584
+00:50:10,840 --> 00:50:17,080
+that just wasn't the main attack vector, I guess.
+We had to get some real data from the pilot to  
+
+585
+00:50:17,080 --> 00:50:23,600
+realize that, "Okay, the real thing going 
+on here is people are polarized," so it  
+
+586
+00:50:23,600 --> 00:50:29,000
+was only once we got that, the real data 
+from the pilot, that I think it was clear  
+
+587
+00:50:29,000 --> 00:50:34,440
+that the bridging-based algorithm was 
+the direction we really needed to go.
+
+588
+00:50:34,440 --> 00:50:38,000
+I want to come back to the way you 
+operate the team. I hear that you  
+
+589
+00:50:38,000 --> 00:50:42,200
+run the whole team off a single Google 
+Doc that's like a four-year-old doc  
+
+590
+00:50:42,200 --> 00:50:46,680
+that you just keep adding goals 
+to, bullet points. Is that true?
+
+591
+00:50:46,680 --> 00:50:53,600
+There is a very long-running doc that has had to 
+be chopped and purged, because it was breaking  
+
+592
+00:50:53,600 --> 00:51:00,600
+Google Docs in Chrome at various points in time. 
+It's like a note-taking doc. It's really where we  
+
+593
+00:51:00,600 --> 00:51:06,000
+coordinate what we're doing. The team meets on 
+a daily basis, we spend whatever amount of time  
+
+594
+00:51:06,000 --> 00:51:12,280
+we need to get on the same page about what we're 
+building. We might talk about anything from what's  
+
+595
+00:51:12,280 --> 00:51:18,840
+most important right now to, "What should we work 
+on next?" To, "What are we trying to launch right  
+
+596
+00:51:18,840 --> 00:51:25,240
+now, and why is it not launched? What's in the 
+way of launching it?" We might review new modeling  
+
+597
+00:51:25,240 --> 00:51:31,200
+or scoring algorithm update and try to understand 
+what's working in it, what's not. We'll just cover  
+
+598
+00:51:31,200 --> 00:51:39,920
+whatever we want or whatever feels most important. 
+As you said, we set our goals very dynamically,  
+
+599
+00:51:39,920 --> 00:51:45,240
+so whatever seems like the most important thing 
+for us to work on now and next is what we spend  
+
+600
+00:51:45,240 --> 00:51:52,280
+our time on. I think that's served the project 
+really well versus feeling attached to some  
+
+601
+00:51:52,280 --> 00:51:56,840
+quarterly goals, or something. We'll look at, 
+"What is going to help people the most?" Or,  
+
+602
+00:51:56,840 --> 00:52:00,720
+"What's the biggest problem right now?" What 
+are either one of those? And we will go tackle  
+
+603
+00:52:00,720 --> 00:52:08,240
+it. We might change our roadmap multiple 
+times in two weeks based on what we see.
+
+604
+00:52:08,240 --> 00:52:11,480
+I'm hearing no Jira, no Asana, no Monday.com.
+
+605
+00:52:11,480 --> 00:52:12,160
+No.
+
+606
+00:52:12,160 --> 00:52:12,440
+Okay.
+
+607
+00:52:12,440 --> 00:52:17,280
+Yeah, I mean, we have to use Jira to coordinate 
+with some other teams. Sometimes when we file  
+
+608
+00:52:17,280 --> 00:52:22,880
+a request, we have to make a Jira ticket. 
+But no, I am not a fan of heavyweight task  
+
+609
+00:52:22,880 --> 00:52:27,840
+management. I love being on the same page, 
+being able to keep most things in my head,  
+
+610
+00:52:27,840 --> 00:52:33,480
+and having a really light way to write down the 
+things that the team can't keep in its head.
+
+611
+00:52:33,480 --> 00:52:40,480
+We did use Asana briefly, but my memory 
+of it is that you spent more time in the  
+
+612
+00:52:40,480 --> 00:52:45,840
+meeting grooming a backlog of 
+irrelevant stuff than actually  
+
+613
+00:52:45,840 --> 00:52:51,000
+talking about the proper priorities. I 
+think it's nice in the Google Doc that,  
+
+614
+00:52:51,000 --> 00:52:58,400
+if something becomes irrelevant, it can just fall 
+off without needing explicit backlog grooming.
+
+615
+00:52:58,400 --> 00:53:03,040
+Just to maybe summarize a little bit of how you 
+guys operate that might inspire other companies  
+
+616
+00:53:03,040 --> 00:53:08,560
+to set teams up like this, so I'm going to 
+go through a few things you shared. One is  
+
+617
+00:53:08,560 --> 00:53:12,720
+one person in charge of the team, like the 
+founder almost. They're basically the founder  
+
+618
+00:53:12,720 --> 00:53:18,480
+of the team. They have one very senior, 
+essentially, sponsor/decision-maker that  
+
+619
+00:53:18,480 --> 00:53:23,520
+they interface with. In your case, Elon, no big 
+deal. In other cases, it could be the CTO, CPO,  
+
+620
+00:53:23,520 --> 00:53:31,960
+someone like that. The team is focused 100% on its 
+product and goal. You keep the team very small,  
+
+621
+00:53:31,960 --> 00:53:37,040
+so you start with one person of each function. One 
+front-end engineer, back-end, ML person, designer,  
+
+622
+00:53:37,040 --> 00:53:46,520
+researcher, PM, and then Google Docs is almost 
+basically for your project management. Yeah,  
+
+623
+00:53:46,520 --> 00:53:50,280
+it's basically run with Google Docs, 
+stop, don't use big, complicated products.
+
+624
+00:53:50,280 --> 00:53:53,920
+I think that's a pretty good recipe. On 
+the Google Docs, people can do what they  
+
+625
+00:53:53,920 --> 00:53:59,080
+want. If they want to use thumbnails, go for 
+it. I think those first ingredients, really,  
+
+626
+00:53:59,080 --> 00:54:00,320
+are key structurally. Then beyond that, it's a 
+matter of having an ambitious goal that gets-
+
+627
+00:54:00,320 --> 00:54:02,840
+And then beyond that, it's a matter of having an  
+
+628
+00:54:02,840 --> 00:54:06,640
+ambitious goal that gets people 
+fired up to go do great work.
+
+629
+00:54:06,640 --> 00:54:10,400
+Yeah. Awesome. I think there's 
+a lot there that a lot of people  
+
+630
+00:54:10,400 --> 00:54:13,200
+think they should do when they set these 
+teams up, but they don't actually do,  
+
+631
+00:54:13,200 --> 00:54:17,720
+and it feels like each of these is just a really 
+key ingredient to it to actually succeeding.
+
+632
+00:54:17,720 --> 00:54:20,960
+It definitely really helped us 
+succeed. I don't know that the  
+
+633
+00:54:20,960 --> 00:54:24,360
+project would be here if it was 
+not for some of those elements.
+
+634
+00:54:24,360 --> 00:54:29,160
+That's a powerful statement. This thing that 
+has changed the way the world understands what  
+
+635
+00:54:29,160 --> 00:54:34,040
+is true would not have existed if you 
+didn't set it up in this specific way.
+
+636
+00:54:34,040 --> 00:54:40,320
+Yeah. I don't know if I would've 
+begun the project had I not known.  
+
+637
+00:54:40,320 --> 00:54:45,520
+We had that structure, that ability to 
+make decisions, the autonomy, the speed,  
+
+638
+00:54:45,520 --> 00:54:55,560
+the ability to go fast. We started with that 
+in 1.0 and it's been continued and if anything,  
+
+639
+00:54:55,560 --> 00:55:03,600
+furthered in X. X as a whole company operates 
+with a lot of those attributes, and I think it's  
+
+640
+00:55:03,600 --> 00:55:08,400
+one of the reasons the product is successful. 
+I think those are big reasons why at least,  
+
+641
+00:55:08,400 --> 00:55:15,720
+Jay can speak for himself, I have so much fun 
+working on this. I love working on it. It's  
+
+642
+00:55:15,720 --> 00:55:20,760
+great to wake up every day and solve these 
+problems. We get to do them efficiently,  
+
+643
+00:55:20,760 --> 00:55:25,080
+make decisions quickly, build stuff that 
+helps a lot of people. It's awesome.
+
+644
+00:55:25,080 --> 00:55:32,320
+This whether thermal or Elon way of operating 
+is definitely more fun and the fact that...  
+
+645
+00:55:32,320 --> 00:55:38,480
+That combined with the awesome mission is super 
+important for internal recruiting. I remember  
+
+646
+00:55:39,280 --> 00:55:45,400
+when I was first chatting to Keith about this 
+back in early 2020, I had another project. I  
+
+647
+00:55:46,200 --> 00:55:51,760
+worked on a few, but one was like personalize 
+the number of push notifications that we send,  
+
+648
+00:55:51,760 --> 00:56:02,680
+and it drove a lot of DAU without losing opt-outs 
+significantly. So that was setting me on track,  
+
+649
+00:56:02,680 --> 00:56:07,240
+or if I had kept working on that, I could have 
+probably gotten a promotion from that with low  
+
+650
+00:56:07,240 --> 00:56:12,920
+risk, or I could take this huge career... 
+It's not as big at a career risk as joining  
+
+651
+00:56:12,920 --> 00:56:17,400
+or founding an actual external startup, 
+but there is still career risk, I guess,  
+
+652
+00:56:17,400 --> 00:56:22,720
+in joining a team like this. I think all of 
+the same aspects of recruiting that apply to  
+
+653
+00:56:22,720 --> 00:56:30,080
+external startups and apply internally, and if 
+you can have an exciting vision, that is key.
+
+654
+00:56:30,080 --> 00:56:35,840
+Related to that and your list, Lenny, one 
+thing we missed that's super important  
+
+655
+00:56:35,840 --> 00:56:40,920
+is that on this project, and I think of 
+successful projects like it in startups,  
+
+656
+00:56:40,920 --> 00:56:49,080
+is that people are self-selecting to join. We 
+did not assign anyone to this project. People  
+
+657
+00:56:49,080 --> 00:56:55,440
+reached out to join or they applied to join the 
+job. I and the team interviewed every single  
+
+658
+00:56:55,440 --> 00:56:59,000
+person that joined the team and we were like, 
+"We want that person on the team. They want to  
+
+659
+00:56:59,000 --> 00:57:06,760
+be on the team." And so people are totally bought 
+in to the goal, mission, the way the team works,  
+
+660
+00:57:06,760 --> 00:57:10,200
+the other people they're going to be working 
+with. And that makes a huge difference. 
+
+661
+00:57:10,200 --> 00:57:15,680
+So a great time to do that is at the start of one 
+of these things. If you're going to try something  
+
+662
+00:57:15,680 --> 00:57:19,440
+crazy, it's going to be tough if you're just 
+assigning random people to it. But if you let  
+
+663
+00:57:19,440 --> 00:57:26,280
+people opt in and self-select much more likely to 
+be successful. And one thing that I have observed  
+
+664
+00:57:26,280 --> 00:57:32,800
+at X, which really surprised me was that this 
+is also possible at a large scale. One of the  
+
+665
+00:57:32,800 --> 00:57:37,520
+things that Elon did when he bought the company 
+was he basically asked people to self-select to  
+
+666
+00:57:37,520 --> 00:57:44,520
+stay. You had to click the button. And he sent 
+an email out that was like, "Hey, Twitter 2.0."
+
+667
+00:57:44,520 --> 00:57:45,640
+Fork in the road. Right? [inaudible 00:57:46]
+
+668
+00:57:45,640 --> 00:57:50,400
+Fork in the road. Fork in the road. 
+Exactly. He's like, "Twitter 2.0,  
+
+669
+00:57:50,400 --> 00:57:53,840
+now X, it's going to be hardcore. We're 
+going to do ambitious things. You're going  
+
+670
+00:57:53,840 --> 00:57:58,760
+to work your butt off." And you had 
+to click on the form and say, "Yes,  
+
+671
+00:57:58,760 --> 00:58:06,200
+I want to join." And I think that was really 
+important for the company because you want  
+
+672
+00:58:06,200 --> 00:58:09,520
+people to opt into that. You want the people 
+to be saying, "Yeah, that's what I want to  
+
+673
+00:58:09,520 --> 00:58:12,640
+do," and the company's going to be a lot 
+more successful. If people aren't sure,  
+
+674
+00:58:12,640 --> 00:58:17,640
+it's better for them probably to go do something 
+else and where they're naturally more aligned and  
+
+675
+00:58:17,640 --> 00:58:24,120
+happier. And I thought that was a great approach 
+to taking a large company and getting it down to  
+
+676
+00:58:24,120 --> 00:58:28,960
+people who are really excited about working 
+together on a mission. So for us, we did it  
+
+677
+00:58:28,960 --> 00:58:33,280
+from day one, which I think is an easy way to 
+do it, but it's possible to do it later as well.
+
+678
+00:58:33,280 --> 00:58:38,480
+I love that you described it as fun and I 
+think a lot of people when they see Elon  
+
+679
+00:58:38,480 --> 00:58:43,880
+laying off a bunch of people, being very 
+hardcore himself, people don't imagine it  
+
+680
+00:58:43,880 --> 00:58:48,160
+as a fun place to work. And it's clear 
+how much you guys love working on this,  
+
+681
+00:58:48,160 --> 00:58:52,960
+how fun it is and how interesting it is. And 
+it's interesting to hear that 'cause I think a  
+
+682
+00:58:52,960 --> 00:58:57,600
+lot of people don't feel that externally. Is there 
+anything else along the lines of just working for  
+
+683
+00:58:57,600 --> 00:59:02,320
+Elon within an org Elon runs that might surprise 
+people about just the way of working that's  
+
+684
+00:59:02,320 --> 00:59:07,640
+interesting or surprising or you think other 
+companies might want to think about adopting?
+
+685
+00:59:07,640 --> 00:59:16,920
+I've always liked lean teams, but my experience 
+at X has made me change the way I would think  
+
+686
+00:59:16,920 --> 00:59:20,320
+about running a future org-... If I were to start 
+a company and had to change the way I think about  
+
+687
+00:59:20,320 --> 00:59:25,240
+starting that company, I would be even leaner than 
+I would've made it before. I've been amazed with  
+
+688
+00:59:25,240 --> 00:59:31,240
+just how much the team is able to accomplish 
+with a small group. And I think because of  
+
+689
+00:59:31,240 --> 00:59:39,800
+a small group, shortly after the acquisition, we 
+had this product called Spaces. It had been in the  
+
+690
+00:59:39,800 --> 00:59:46,760
+product before, but it was pretty small scale, 
+and Elon wanted to run these large spaces. I  
+
+691
+00:59:46,760 --> 00:59:51,200
+forget who the first people he was going to bring 
+on were, but he was going to be there. Ultimately,  
+
+692
+00:59:51,200 --> 00:59:55,480
+these things have gone on to host politicians 
+and things like that, and he's like, "Guys,  
+
+693
+00:59:55,480 --> 00:59:59,600
+we got to scale this up." I forget the numbers.
+He's like, "We need to be able to scale a million  
+
+694
+00:59:59,600 --> 01:00:02,360
+people," or something like that. I'm getting 
+the numbers wrong. "You need to be able to scale  
+
+695
+01:00:02,360 --> 01:00:08,760
+way up." This is the kind of thing at 1.0 That 
+would've taken a year if it had ever happened,  
+
+696
+01:00:08,760 --> 01:00:16,760
+and the team did it in two or three weeks. And it 
+was really exciting and inspiring to see. I didn't  
+
+697
+01:00:16,760 --> 01:00:22,080
+work on that, but I watched it from the outside. 
+I'm like, "Wow, with this tiny team motivated  
+
+698
+01:00:22,080 --> 01:00:25,760
+behind a big goal that was like, 'Hey, guys, 
+it's not like, are we going to do this?' It's,  
+
+699
+01:00:25,760 --> 01:00:30,040
+'We are going to do this.'" They got it done in 
+two or three weeks. That must've felt amazing  
+
+700
+01:00:30,040 --> 01:00:35,560
+for them. It was certainly exciting to see. 
+But I've definitely come to appreciate just  
+
+701
+01:00:35,560 --> 01:00:42,640
+how lean something can be and not just get by 
+but actually thrive because it's that lean.
+
+702
+01:00:42,640 --> 01:00:45,600
+I think the point you made about 
+people opting into that is important,  
+
+703
+01:00:45,600 --> 01:00:48,040
+'cause I think a lot of people hearing 
+that would be like, "I would never want  
+
+704
+01:00:48,040 --> 01:00:53,520
+to be asked to build something like that in 
+two weeks." And I think a lot of people do,  
+
+705
+01:00:53,520 --> 01:00:57,680
+and we love that kind of experience, especially 
+working with the Elon, especially shipping  
+
+706
+01:00:57,680 --> 01:01:00,720
+something at that scale. But I think there's 
+an important element there of just like,  
+
+707
+01:01:00,720 --> 01:01:04,120
+"Okay, I don't want to do that. I have 
+other things to do in my life other than  
+
+708
+01:01:04,120 --> 01:01:09,880
+ship spaces." So I think that's a key point 
+you've raised of just there's an opt-in step.
+
+709
+01:01:09,880 --> 01:01:11,520
+Totally. I think the opt in is important,  
+
+710
+01:01:11,520 --> 01:01:15,280
+and it may even be that you want to opt in at 
+one point in your life, and maybe at another  
+
+711
+01:01:15,280 --> 01:01:20,320
+point in your life something else is better. 
+I think whatever it is you're choosing to do,  
+
+712
+01:01:20,320 --> 01:01:25,320
+it's nice to be opting in to feel like it's 
+aligned with how you want to spend your time.
+
+713
+01:01:25,320 --> 01:01:27,840
+Something on my mind, and I don't 
+know if you guys want to go here,  
+
+714
+01:01:27,840 --> 01:01:31,480
+but it's something I think a lot of 
+people think about is when Elon came in,  
+
+715
+01:01:31,480 --> 01:01:36,440
+he let go of 80% of folks. And everyone's just 
+like, "Twitter is dead. It's all going to fall  
+
+716
+01:01:36,440 --> 01:01:41,720
+apart. There's no way they can run this thing 
+with that small of a staff," and clearly they  
+
+717
+01:01:41,720 --> 01:01:47,200
+were wrong. Clearly, it's working great. 
+It's becoming a massive deal in the world  
+
+718
+01:01:47,200 --> 01:01:51,760
+and continues to grow. Is there anything 
+about that that you were surprised by  
+
+719
+01:01:51,760 --> 01:01:57,360
+or anything about just how it continues to 
+operate so well in spite of that big shift?
+
+720
+01:01:57,360 --> 01:02:07,600
+I think the leaner team, the reduced process in 
+bureaucracy is a big reason it does move as fast  
+
+721
+01:02:07,600 --> 01:02:20,720
+as it does. It's easier to get stuff done faster 
+here. Yeah. I think that shrinking is actually a  
+
+722
+01:02:20,720 --> 01:02:28,200
+big reason for the increased pace of launches, the 
+increased pace of experimentation. One thing that  
+
+723
+01:02:28,200 --> 01:02:34,080
+I noticed a result of that is the people who are 
+here, they seem to all really feel like owners.  
+
+724
+01:02:34,960 --> 01:02:40,720
+They take the sense of responsibility that an 
+owner takes in the product. They'll try to track  
+
+725
+01:02:40,720 --> 01:02:49,040
+down what's wrong, fix whatever is needed, jump 
+in to help build or fix, improve any system that  
+
+726
+01:02:49,040 --> 01:02:53,280
+needs help, even if it's outside of their space. 
+And there's the flip side of that too. For people  
+
+727
+01:02:53,280 --> 01:02:56,960
+who've worked at big companies, they may have 
+experienced this thing where there's like ano-...  
+
+728
+01:02:56,960 --> 01:03:03,240
+You want to change something in some other system 
+or product, and so you reach out to that team. And  
+
+729
+01:03:03,240 --> 01:03:07,160
+maybe they're a little resistant, they'll maybe be 
+like, "Oh, we'll get to that next quarter or so-
+
+730
+01:03:07,160 --> 01:03:08,840
+They have their own goals to 
+hit. Yeah. [inaudible 01:03:08]
+
+731
+01:03:08,840 --> 01:03:13,440
+Yeah. Exactly. They don't really necessarily want 
+to help you or they're busy. Here, you're like,  
+
+732
+01:03:13,440 --> 01:03:17,440
+"Hey, guys, we need to do this thing with that 
+other system you work on." And they're like,  
+
+733
+01:03:17,440 --> 01:03:23,280
+"Great! Here's the code. Here are the docs. 
+Send us the fab if you have any questions,  
+
+734
+01:03:23,280 --> 01:03:29,040
+and we'll get it in." And it's just the thing, you 
+can just jump in and get it done. And that kind  
+
+735
+01:03:29,040 --> 01:03:38,080
+of collaborative effort, like the sense of shared 
+ownership, I think from my experience came from or  
+
+736
+01:03:38,080 --> 01:03:43,200
+was a result of the shrinking of the team down to 
+people who wanted to be there and work together to  
+
+737
+01:03:43,200 --> 01:03:48,080
+build this thing. So I think that's been a really 
+positive impact. It's not always easy. Certainly,  
+
+738
+01:03:48,080 --> 01:03:53,440
+a lot of people have a lot of responsibilities, 
+but they're here because they're up for it.
+
+739
+01:03:53,440 --> 01:04:01,400
+Yeah. I think one other thing that's key is when 
+you are forced to have such a small team, well,  
+
+740
+01:04:01,400 --> 01:04:06,160
+this is important anyways, but deleting code is 
+more important than writing it a lot of the time.  
+
+741
+01:04:06,160 --> 01:04:12,000
+So I think so often maybe due to promotion 
+incentives or just regular human tendency,  
+
+742
+01:04:13,600 --> 01:04:20,320
+engineers have a tendency to add these little 
+incremental wins that actually add more of  
+
+743
+01:04:20,320 --> 01:04:24,480
+a long-term maintenance cost than is clear, 
+because you just run a little one month A-B test,  
+
+744
+01:04:24,480 --> 01:04:30,800
+you see this significant win and you don't 
+realize the maintenance burden you just added  
+
+745
+01:04:30,800 --> 01:04:36,040
+to your team for the rest of eternity until you 
+turn the thing off. So I think there's a lot  
+
+746
+01:04:36,040 --> 01:04:41,440
+to be gained and you get forced to do this, by 
+the way, when you have such a small team. It's  
+
+747
+01:04:41,440 --> 01:04:48,280
+just auditing parts of your system and deleting 
+the things where the maintenance cost is worse  
+
+748
+01:04:48,280 --> 01:04:56,680
+than the gains. So I think we did have to do 
+this across the company after the big layoffs,  
+
+749
+01:04:56,680 --> 01:05:02,680
+and systems are leaner now and they can 
+be worked on by fewer numbers of people.
+
+750
+01:05:02,680 --> 01:05:04,720
+That's an amazing point. I 
+remember Elon's being like,  
+
+751
+01:05:04,720 --> 01:05:07,200
+"Here, we have to throw away the whole 
+thing. We have to re-architect everything.  
+
+752
+01:05:07,200 --> 01:05:10,160
+It's stupid the way it's built." And 
+it sounds like that actually worked.
+
+753
+01:05:10,160 --> 01:05:10,880
+Yeah, so-
+
+754
+01:05:10,880 --> 01:05:11,440
+Well.
+
+755
+01:05:11,440 --> 01:05:14,840
+You don't have to rewrite everything 
+from scratch. Some things are good,  
+
+756
+01:05:14,840 --> 01:05:18,360
+I guess, to rewrite. But just 
+even deleting the unnecessary  
+
+757
+01:05:18,360 --> 01:05:23,160
+cruft and keeping the rest of 
+the core system, that's awesome.
+
+758
+01:05:23,160 --> 01:05:27,200
+I love that we're creating a formula to run 
+these sorts of companies and teams. There's  
+
+759
+01:05:27,200 --> 01:05:33,280
+so much here. I want to go back to the building of 
+the original product. I took us on a long tangent  
+
+760
+01:05:33,280 --> 01:05:39,680
+and an amazing tangent, but I heard a story 
+of when you launched Birdwatch at that point.  
+
+761
+01:05:39,680 --> 01:05:44,480
+You specifically wanted to keep expectations 
+very low and there was a GIF in the thing,  
+
+762
+01:05:44,480 --> 01:05:49,200
+and it just looked like clearly this is not ready 
+for prime time. Talk about just how you did that,  
+
+763
+01:05:49,200 --> 01:05:53,600
+how you launched it in a way where people 
+weren't like, "It's never going to work."
+
+764
+01:05:53,600 --> 01:05:58,880
+We were very disciplined, I guess you could 
+say, about having the product prove itself  
+
+765
+01:05:58,880 --> 01:06:08,120
+at every given point. When we built the first 
+mockups, these were just pictures of depicting  
+
+766
+01:06:08,120 --> 01:06:11,600
+what community notes might look like. We showed 
+those to people across the political spectrum.  
+
+767
+01:06:11,600 --> 01:06:15,840
+We saw, hey, people really like these. 
+Whether they're on the right or left,  
+
+768
+01:06:15,840 --> 01:06:20,360
+they seem very open to reading these community 
+notes even when they're critical to people of  
+
+769
+01:06:20,360 --> 01:06:24,440
+their own side. So we're like, "All right. That 
+gives us confidence that if we can build this,  
+
+770
+01:06:24,440 --> 01:06:28,680
+if we can actually make this as a reality, it's 
+going to work." Then there's a question of can we  
+
+771
+01:06:28,680 --> 01:06:35,680
+make it a reality? Will people in the real world 
+be able to write notes that are of this quality? 
+
+772
+01:06:35,680 --> 01:06:44,000
+And so we had an internal pilot test version of 
+this where you could write notes. And we first  
+
+773
+01:06:44,000 --> 01:06:50,720
+basically ran this through an Amazon MTurk type 
+of participant test just to see if you just put  
+
+774
+01:06:50,720 --> 01:06:57,920
+some normal people in there, will they be able to 
+write these notes? All those notes weren't good,  
+
+775
+01:06:57,920 --> 01:07:02,520
+but it was clear that there were people out there 
+who could write good notes. So then like, "Okay,  
+
+776
+01:07:02,520 --> 01:07:07,320
+this is possible. What will happen if we 
+actually do this out in the real world?  
+
+777
+01:07:07,320 --> 01:07:13,240
+And let's run a pilot and find out." And 
+so we took that pilot that we'd run the  
+
+778
+01:07:13,240 --> 01:07:21,600
+MTurk of test on, and we released it to at 
+first 1000 people, totally out in public,  
+
+779
+01:07:21,600 --> 01:07:27,400
+and we didn't know what was going to show up. You 
+could imagine the notes could have been terrible. 
+
+780
+01:07:27,400 --> 01:07:31,880
+And so we were talking, "Well, what do we do? 
+We're going to put this out there. Everyone's  
+
+781
+01:07:31,880 --> 01:07:35,800
+going to have all these questions. They're 
+probably going to be really skeptical, and  
+
+782
+01:07:35,800 --> 01:07:41,600
+we know it might be a total dumpster fire. And so 
+what do we do to set expectations appropriately?"  
+
+783
+01:07:41,600 --> 01:07:44,080
+We felt like we could probably get there in the 
+end, but we just didn't know what was going to  
+
+784
+01:07:44,080 --> 01:07:48,280
+happen at first. We wanted to set expectations, 
+and so we're like, "Well, why don't we just  
+
+785
+01:07:48,280 --> 01:07:51,680
+stick..." There's the page where you see a post 
+in the notes below. We're like, "Why don't we  
+
+786
+01:07:51,680 --> 01:08:00,360
+just stick a dumpster fire GIF on that page?" And 
+you go there, you're like, "Hey, anything you see  
+
+787
+01:08:00,360 --> 01:08:06,040
+below here might just be a total dumpster fire. 
+At least it would show we were aware of that as a  
+
+788
+01:08:06,040 --> 01:08:13,080
+possible risk." In the end, we did not do that. 
+It cracked me up, but we thought it was like-
+
+789
+01:08:13,080 --> 01:08:16,000
+Oh, you didn't actually launch. 
+Okay. That was just a concept. Okay.
+
+790
+01:08:16,000 --> 01:08:20,440
+We had mockups of it, and every time 
+I looked at the mockup, I laughed,  
+
+791
+01:08:20,440 --> 01:08:25,760
+but ultimately we had so much to explain on that 
+page, like, what is this thing and how does it  
+
+792
+01:08:25,760 --> 01:08:29,240
+work? Ultimately, we're like, "Okay, this is 
+probably going to distract from the point."  
+
+793
+01:08:29,960 --> 01:08:35,240
+So we pulled it. I wish maybe it had seen the 
+light of day at one point, but yeah, ultimately  
+
+794
+01:08:35,240 --> 01:08:39,320
+we kept it simple and we focused that page on 
+explaining what was going on here. But again,  
+
+795
+01:08:40,960 --> 01:08:48,000
+as has happened many times with the project, we 
+put the pilot out there and the notes were good. 
+
+796
+01:08:48,000 --> 01:08:51,840
+They weren't all good. It was a mixed 
+bag, but there was gold in there. And  
+
+797
+01:08:51,840 --> 01:08:55,440
+from the very early days with just 
+1000 contributors, it was obvious  
+
+798
+01:08:56,600 --> 01:09:01,480
+that people could write notes that were 
+informative, that were neutral, that spoke  
+
+799
+01:09:01,480 --> 01:09:08,440
+to controversial challenging topics, and that 
+if we could just identify those from the rest,  
+
+800
+01:09:08,440 --> 01:09:12,040
+this was going to work. It was going to 
+work as well as the very first mockups we  
+
+801
+01:09:12,040 --> 01:09:17,840
+had made. So that became the focus that is, 
+how do we sift out the gold from the rest?
+
+802
+01:09:19,520 --> 01:09:23,600
+I think you may have shared with this with me, 
+when someone noticed you guys were testing this  
+
+803
+01:09:23,600 --> 01:09:27,600
+and they took screenshots and tweeted it, 
+and I think Elon replied, "This is cool."
+
+804
+01:09:27,600 --> 01:09:32,640
+Yeah. Yeah. So in the very early days 
+when it was just a Figma prototype,  
+
+805
+01:09:32,640 --> 01:09:38,080
+we were running these usertesting.com on moderated 
+studies. I guess one of the participants sent  
+
+806
+01:09:38,080 --> 01:09:43,480
+one to an NBC reporter who wrote a bunch of 
+stories on it. Anyway, that day, there was  
+
+807
+01:09:43,480 --> 01:09:51,880
+a lot of chatter about it on the service, and 
+Elon... To put this back in time perspective,  
+
+808
+01:09:51,880 --> 01:09:59,680
+this is, I think, 2020, so two years before any 
+acquisition stuff happened, Elon is just a Twitter  
+
+809
+01:09:59,680 --> 01:10:06,720
+user building rockets and electric cars and other 
+cool stuff and stumbles on this thing that depicts  
+
+810
+01:10:06,720 --> 01:10:12,880
+the prototype that we've been testing. And he 
+writes back, "Definitely worth trying, IMO."  
+
+811
+01:10:12,880 --> 01:10:19,560
+And I remember thinking that was cool back then 
+and it's interesting to see, he's obviously had a  
+
+812
+01:10:19,560 --> 01:10:24,760
+very consistent point on it. I think the idea was 
+appealing and he has obviously been a big fan of  
+
+813
+01:10:24,760 --> 01:10:30,960
+it in the product and had been a big supporter 
+proponent. So yeah, it was cool that it came  
+
+814
+01:10:30,960 --> 01:10:36,600
+from... that support has been from the very early 
+days before he was ever involved in the company.
+
+815
+01:10:36,600 --> 01:10:38,840
+I love that moment. That must have felt really  
+
+816
+01:10:38,840 --> 01:10:42,720
+wild for Elon to be commenting on 
+this Figma prototype retesting.
+
+817
+01:10:42,720 --> 01:10:44,680
+It was cool. It was cool.
+
+818
+01:10:44,680 --> 01:10:51,440
+Oh, man. So when we were preparing for this 
+interview, I asked you guys what's the main  
+
+819
+01:10:51,440 --> 01:10:55,800
+thing you want to make sure people get and 
+understand about why community notes has been  
+
+820
+01:10:55,800 --> 01:11:02,200
+so effective? And Keith, you specifically said 
+that it was the principles behind how you wanted  
+
+821
+01:11:02,200 --> 01:11:07,040
+to approach this and how you continue to stick 
+to this throughout. And we'll talk about how  
+
+822
+01:11:07,040 --> 01:11:11,680
+you kept it alive throughout all these different 
+CO changes in leaders. But just talk about these  
+
+823
+01:11:11,680 --> 01:11:16,760
+principles, what the actual principles are 
+and why that was so key to it working out.
+
+824
+01:11:16,760 --> 01:11:22,200
+There are a number of principles that I think 
+when we first shared them with people at the  
+
+825
+01:11:22,200 --> 01:11:28,160
+company seemed maybe a little bit crazy. But 
+I think they are the reason the product works,  
+
+826
+01:11:28,160 --> 01:11:33,480
+and I think they've been very important, and we 
+do. We come back to them regularly, today, all  
+
+827
+01:11:33,480 --> 01:11:41,000
+the time. Probably the craziest one is just that 
+this thing is going to be the voice of the people.  
+
+828
+01:11:41,000 --> 01:11:46,240
+It's going to represent the voice of people. It's 
+not going to represent the company's voice. So it  
+
+829
+01:11:46,240 --> 01:11:51,640
+is not a tech company deciding what shows. It 
+is the people deciding what shows, and that  
+
+830
+01:11:51,640 --> 01:11:58,880
+had a lot of implications on the design. First of 
+all, we don't have a button that will change the  
+
+831
+01:11:58,880 --> 01:12:05,760
+status of a note. So if a note is showing because 
+the people have rated it and found it helpful,  
+
+832
+01:12:05,760 --> 01:12:10,800
+it is going to show. We can't change that.
+And that is the kind of thing that when we first  
+
+833
+01:12:10,800 --> 01:12:16,800
+propose this, that's unsettling to people. They're 
+like, "Wait, so something can go up and the  
+
+834
+01:12:16,800 --> 01:12:21,960
+company can't take it down, or can't change its 
+status, get it to stop showing." And we're like,  
+
+835
+01:12:21,960 --> 01:12:26,760
+"Yeah, and it has to work that well. If it doesn't 
+work well enough to do that, then it doesn't  
+
+836
+01:12:26,760 --> 01:12:32,240
+work." This is one of our key principles was, 
+if there's a problem with a note that's so bad,  
+
+837
+01:12:32,240 --> 01:12:37,000
+you want to do something about it's a problem 
+with the system. We need to redesign the system  
+
+838
+01:12:37,000 --> 01:12:43,800
+to be showing good notes. And so yeah, we had 
+to get everyone comfortable with the idea that  
+
+839
+01:12:43,800 --> 01:12:50,280
+there was no button to change the status of a 
+note. Similarly, as we talked about earlier,  
+
+840
+01:12:50,280 --> 01:12:55,120
+we wanted this to represent all of humanity.
+And so we didn't want to be arbiters of who  
+
+841
+01:12:56,120 --> 01:13:01,600
+can come in and be a contributor and who can't. 
+So we open it to everyone. You just have to meet a  
+
+842
+01:13:01,600 --> 01:13:05,840
+really basic objective criteria. You have to have 
+a verified phone to help reduce the likelihood of  
+
+843
+01:13:05,840 --> 01:13:12,160
+having bots or things like that participating. 
+But beyond that, it's random selection and it  
+
+844
+01:13:12,160 --> 01:13:17,680
+still is that way today. And again, that people 
+took some time to get people comfortable with  
+
+845
+01:13:17,680 --> 01:13:25,120
+it. But I think that the fact that this is the 
+voice of the people and reflects their output  
+
+846
+01:13:25,640 --> 01:13:31,560
+through an open and transparent process is 
+so key to both why it is good, why it works,  
+
+847
+01:13:31,560 --> 01:13:38,360
+but also why it's trusted. So that's 
+number one and I think will forever be  
+
+848
+01:13:38,360 --> 01:13:46,760
+the heart of the product. Another one that 
+people thought was crazy was transparency. 
+
+849
+01:13:49,200 --> 01:13:54,840
+The previous approaches to dealing with 
+misleading info, it felt to a lot of people,  
+
+850
+01:13:54,840 --> 01:14:02,440
+like black box tech companies or media companies 
+or leads or whatever making decisions. We're like,  
+
+851
+01:14:02,440 --> 01:14:05,880
+"People need to get comfortable with this. They 
+need to trust this. So the whole thing has to be  
+
+852
+01:14:05,880 --> 01:14:11,920
+out in the open." The code that decides what notes 
+share has to be out in the open. All of the data  
+
+853
+01:14:11,920 --> 01:14:17,200
+and ratings that make it happen have to be out 
+in the open. People should be able to take the  
+
+854
+01:14:17,200 --> 01:14:22,440
+code and data and replicate the whole service 
+and that we have done exactly what we've said  
+
+855
+01:14:22,440 --> 01:14:26,480
+we've done. And they should be able to audit 
+it. They should be able to go and look and say,  
+
+856
+01:14:26,480 --> 01:14:30,520
+"Hey, I think this part could be better."
+Or if they think we're biased, they should be able  
+
+857
+01:14:30,520 --> 01:14:35,920
+to work with the data and point it out. And if 
+people have good observations, that should factor  
+
+858
+01:14:35,920 --> 01:14:42,000
+back into the code. And this is, again, something 
+that's difficult to get people comfortable with,  
+
+859
+01:14:42,000 --> 01:14:45,800
+that everything is out there, you can't cover 
+anything up. But I think that's so essential to  
+
+860
+01:14:45,800 --> 01:14:55,000
+people trusting it. Yeah, we set these out on day 
+one. We go back to them constantly because we're  
+
+861
+01:14:56,360 --> 01:15:00,840
+always evolving the product, and we're always 
+like got to make sure every new change is open.  
+
+862
+01:15:00,840 --> 01:15:06,040
+Whenever we update the scoring system, there's an 
+update in GitHub when the data is published daily  
+
+863
+01:15:06,040 --> 01:15:11,800
+so you can download it. And so yeah, I think those 
+have been really essential to the thing working.
+
+864
+01:15:12,400 --> 01:15:19,040
+And by the way, these do not come without a 
+cost. It's actually really hard from an end  
+
+865
+01:15:19,040 --> 01:15:24,440
+perspective to actually open source the actual 
+algorithm that's running on the actual data.  
+
+866
+01:15:25,200 --> 01:15:28,960
+Because the way large-scale services 
+like this are usually architected does  
+
+867
+01:15:28,960 --> 01:15:36,880
+not naturally lend itself to being run as a 
+script by someone who's downloaded a TSV. So  
+
+868
+01:15:36,880 --> 01:15:42,080
+we actually have to take weird architectural 
+decisions to make this possible in a way that  
+
+869
+01:15:42,080 --> 01:15:45,200
+probably wouldn't have been if we didn't 
+start with this assumption from scratch.  
+
+870
+01:15:45,200 --> 01:15:49,120
+We would've had to maybe rewrite 
+the system to make it like this.
+
+871
+01:15:49,120 --> 01:15:50,440
+What's an example of that?
+
+872
+01:15:50,440 --> 01:15:55,400
+For instance, there's a matrix 
+factorization that we train. Usually, you  
+
+873
+01:15:55,400 --> 01:16:03,640
+would train a matrix factor... train your 
+ML model once and then serve it, I guess  
+
+874
+01:16:03,640 --> 01:16:11,120
+with a separate service. But we didn't want to 
+have people externally spinning up services to  
+
+875
+01:16:11,120 --> 01:16:18,360
+be able to replicate the system that we had. 
+So basically, I don't think it would've been  
+
+876
+01:16:18,360 --> 01:16:24,920
+actually very cool if we had open sourced the code 
+in a way that wasn't actually runnable, I guess,  
+
+877
+01:16:26,840 --> 01:16:31,760
+by someone just... At this point, you 
+can download Python code and run a  
+
+878
+01:16:31,760 --> 01:16:35,800
+script. You do need a lot of RAM right 
+now, but you can do it on one machine.
+
+879
+01:16:35,800 --> 01:16:37,720
+Okay. How much RAM are we talking about?
+
+880
+01:16:37,720 --> 01:16:39,868
+Oh, only like 500 gigs.
+
+881
+01:16:39,868 --> 01:16:40,280
+Okay. Okay. That's reasonable.
+
+882
+01:16:40,280 --> 01:16:45,640
+It'll take a day if you don't do anything 
+special to speed it up. Good to know, but yeah.
+
+883
+01:16:45,640 --> 01:16:46,040
+Cool.
+
+884
+01:16:46,040 --> 01:16:51,000
+Possible is the key thing, and people have 
+done it. Vitalik Buterin had a blog post  
+
+885
+01:16:51,000 --> 01:16:57,280
+where he talks about his explorations, making 
+sure the algorithm really does what it says  
+
+886
+01:16:57,280 --> 01:17:05,400
+it does. And I think just the fact that a 
+handful of people have done this, there's  
+
+887
+01:17:05,400 --> 01:17:11,720
+enough people who have done it that there's 
+someone you'd probably trust who's verified it.
+
+888
+01:17:11,720 --> 01:17:16,640
+And that's rolling out to Meta. No big deal. 
+I love just as you described these principles,  
+
+889
+01:17:16,640 --> 01:17:21,680
+just I could imagine a PM at a company being like, 
+"Okay, guys. Here, I want to do this project."  
+
+890
+01:17:23,000 --> 01:17:27,520
+There's so much idealism to it that rarely works 
+in real life; going to be open source. You're  
+
+891
+01:17:27,520 --> 01:17:31,080
+going to give it to everyone. We don't have actual 
+control over what it's going to do, don't worry  
+
+892
+01:17:31,080 --> 01:17:36,840
+about it. It's going to just change the way people 
+see this thing that we've been very careful about  
+
+893
+01:17:36,840 --> 01:17:42,320
+and then it works. And I think that's very rare 
+and it's really impressive. And what I'm hearing  
+
+894
+01:17:42,320 --> 01:17:47,880
+partly is that sticking to those principles was 
+actually really fundamental to it working and not  
+
+895
+01:17:49,640 --> 01:17:53,720
+bending over when someone's like, "No, no, no, 
+we can't do this. What if we change this part?"
+
+896
+01:17:53,720 --> 01:17:59,080
+I think if we had broken with any of those 
+principles, if there was anything black box,  
+
+897
+01:17:59,080 --> 01:18:04,440
+if there was whatever, the product would 
+be a lot harder to trust. And so I think  
+
+898
+01:18:04,440 --> 01:18:10,920
+it's because we've just stuck to them so 
+cleanly simply that people can trust it.
+
+899
+01:18:10,920 --> 01:18:15,560
+You've talked about a few moments when it 
+was like, wow, the White House changed their  
+
+900
+01:18:15,560 --> 01:18:20,200
+announcement because of the community note. We 
+talked about the dog is a cat. Are there any other  
+
+901
+01:18:20,200 --> 01:18:26,120
+moments that after you launched of, "Holy shit, 
+this is working? This is going to actually work."
+
+902
+01:18:26,120 --> 01:18:34,920
+All along, we saw it working. We wanted to 
+be confident whenever we expanded it to new  
+
+903
+01:18:34,920 --> 01:18:38,280
+audiences or new countries or whatever, we 
+wanted to be confident it was going to work.  
+
+904
+01:18:38,280 --> 01:18:44,600
+So maybe held our breath a little bit just 
+to see that it would do what we expected,  
+
+905
+01:18:44,600 --> 01:18:48,040
+but we always expected that. But 
+that said, there were definitely  
+
+906
+01:18:48,040 --> 01:18:54,720
+stress cases. The one that comes to mind 
+is the start of the Israel Hamas conflict  
+
+907
+01:18:55,840 --> 01:19:04,920
+in 2023 in October. That was probably the largest 
+deluge of misleading information I've ever seen  
+
+908
+01:19:04,920 --> 01:19:11,560
+shared on the internet at one time. It was 
+overwhelming. A number of photos and videos  
+
+909
+01:19:11,560 --> 01:19:19,280
+and whatever coming out related to that, it 
+was insane. And just to give you an example,  
+
+910
+01:19:19,840 --> 01:19:27,440
+I think it was first three days or something 
+of that conflict, we had 500 notes covering  
+
+911
+01:19:27,440 --> 01:19:35,400
+all sorts of different... out of context imagery.
+Someone would say, "Hey, this is happening here."  
+
+912
+01:19:35,400 --> 01:19:41,440
+It's actually from 2013 in Syria. There 
+were people making fake battle footage  
+
+913
+01:19:41,440 --> 01:19:45,320
+in the video game simulator Arma 
+3. So there were notes explaining,  
+
+914
+01:19:45,320 --> 01:19:51,200
+this stuff looked realistic. And unless you saw 
+the note, you wouldn't really know. There are all  
+
+915
+01:19:51,200 --> 01:19:57,280
+sorts of claims about what was going on in the 
+ground, and that was definitely... The product  
+
+916
+01:19:57,280 --> 01:20:02,680
+was still pretty new at that point. We'd expanded 
+in the U. S. less than a year before that. We had  
+
+917
+01:20:02,680 --> 01:20:09,880
+been rolling out throughout the world that year 
+and then this large event happened. And I felt  
+
+918
+01:20:09,880 --> 01:20:16,240
+like we were just enough prepared at the right 
+time for the system to be able to handle that. 
+
+919
+01:20:16,240 --> 01:20:20,600
+Probably one of the most important things we did 
+right before that was launch the ability to write  
+
+920
+01:20:20,600 --> 01:20:28,560
+notes on images and videos and have those matched 
+to other posts. I remember at that time thinking,  
+
+921
+01:20:29,440 --> 01:20:35,760
+"Wow, I'm glad we launched that feature a few 
+months ago versus still had it on the shelf,"  
+
+922
+01:20:35,760 --> 01:20:41,880
+because it was really important in that conflict. 
+And I think even it was just a few weeks before we  
+
+923
+01:20:41,880 --> 01:20:47,960
+had launched a major speed up in notes too. When 
+we first built the product, the number one focus  
+
+924
+01:20:47,960 --> 01:20:54,280
+was always quality. We knew that the product 
+would live and die by the quality of the notes.  
+
+925
+01:20:54,280 --> 01:20:57,920
+That was the thing we could never give up on. We 
+also knew it needed to deliver speed and scale,  
+
+926
+01:20:57,920 --> 01:21:00,400
+but we're like, "We will get the quality in the 
+right place, and we can speed it up and scale-
+
+927
+01:21:00,400 --> 01:21:05,240
+Get the quality in the right place and we can 
+speed it up and scale it out over time. And we  
+
+928
+01:21:05,240 --> 01:21:12,040
+had actually just launched a speed-up that took 
+three hours off the time it needed to go live,  
+
+929
+01:21:12,040 --> 01:21:16,080
+and it was I think a matter of weeks 
+before that conflict happened, so again,  
+
+930
+01:21:16,080 --> 01:21:20,640
+super glad that was out there. In the first 
+few days of the conflict the median time  
+
+931
+01:21:20,640 --> 01:21:24,560
+from a post going live to a note showing up 
+was five hours, which is like crazy fast.  
+
+932
+01:21:25,640 --> 01:21:28,760
+Typical fact checking is like two to 
+four, at least it's really common to  
+
+933
+01:21:28,760 --> 01:21:33,600
+see it take two to four days. These notes 
+were showing up in five hours and we're like,  
+
+934
+01:21:33,600 --> 01:21:40,200
+we are so glad we got those things out before this 
+happened, it made the service a lot more helpful.
+
+935
+01:21:40,200 --> 01:21:49,400
+One other thing that was, I think, nice to see 
+working then was, one criticism of Community  
+
+936
+01:21:49,400 --> 01:21:54,800
+Notes some people bring up is, well if you always 
+need agreement from people who typically disagree,  
+
+937
+01:21:54,800 --> 01:22:00,640
+then in these super polarized settings, 
+that conflict being probably number one,  
+
+938
+01:22:00,640 --> 01:22:07,200
+then you wouldn't see any notes. But actually 
+the reality was there were tons of notes about  
+
+939
+01:22:07,200 --> 01:22:15,320
+that conflict. So I think there was this 
+kind of nice property where actually,  
+
+940
+01:22:15,320 --> 01:22:18,720
+and maybe this is a surprising fact, that 
+there's more agreement out there across  
+
+941
+01:22:18,720 --> 01:22:24,520
+polarized divides than maybe conventional wisdom 
+says, and the places where people agreed were  
+
+942
+01:22:25,080 --> 01:22:30,440
+really objectively true and verifiable. I guess 
+maybe this is more true the more polarized the  
+
+943
+01:22:30,440 --> 01:22:38,760
+setting is, but where the agreement actually 
+lends you, and basically notes that are very  
+
+944
+01:22:38,760 --> 01:22:44,960
+neutrally written, very focused on the 
+facts and easy to verify information.
+
+945
+01:22:45,920 --> 01:22:52,440
+There's this talk for a while of just there's 
+no more facts, nobody believes there is a single  
+
+946
+01:22:52,440 --> 01:22:59,120
+true fact anymore, everything is subjective, and 
+I think Community Notes proves the opposite. Facts  
+
+947
+01:22:59,120 --> 01:23:03,720
+matter, there are facts that we can all agree 
+with even on the most controversial topics.
+
+948
+01:23:03,720 --> 01:23:11,040
+Yeah, we saw this really from day one, when 
+we would show those prototypes to people just  
+
+949
+01:23:11,040 --> 01:23:16,920
+depicting the idea, it was really obvious that 
+people cared more about, or they cared a lot  
+
+950
+01:23:16,920 --> 01:23:22,400
+about understanding reality and what was going on 
+and they were willing to disagree with their side,  
+
+951
+01:23:22,400 --> 01:23:28,360
+so to speak, to recognize that. And I think 
+that's not always that obvious to people.  
+
+952
+01:23:28,360 --> 01:23:31,960
+The world does feel really polarized, 
+but people definitely are willing to  
+
+953
+01:23:31,960 --> 01:23:38,720
+cross partisan boundaries to get to accurate 
+information and that's why the product works.
+
+954
+01:23:38,720 --> 01:23:45,000
+It feels like as we rely more and more on what we 
+know and understand about the world is becoming  
+
+955
+01:23:45,000 --> 01:23:53,480
+social media online and moving this quickly, it's 
+like I'm so thankful this exists because otherwise  
+
+956
+01:23:53,480 --> 01:24:01,360
+it'd just be, what do we trust anymore? This being 
+out aligns with we need this thing to exist at the  
+
+957
+01:24:01,360 --> 01:24:09,000
+same time. And it feels like at the same time 
+there's also people I just don't trust. I think  
+
+958
+01:24:09,000 --> 01:24:13,160
+people have shifted from I trust what I read to, 
+okay, I shouldn't just believe everything I'm  
+
+959
+01:24:13,160 --> 01:24:20,200
+reading. Is there anything there you're noticing 
+about just how people think about news they see  
+
+960
+01:24:20,200 --> 01:24:24,440
+and their shift of just like, I'm not going to 
+believe everything. Is there anything that you've  
+
+961
+01:24:24,440 --> 01:24:30,240
+noticed about just human behavior or just the 
+way we've shifted understanding what is true?
+
+962
+01:24:30,240 --> 01:24:36,640
+We haven't done any research to look broadly 
+at how people's perceptions are changing there,  
+
+963
+01:24:36,640 --> 01:24:43,840
+but I certainly have found myself that 
+particularly seeing notes, I am more  
+
+964
+01:24:43,840 --> 01:24:49,200
+skeptical about what I read at first, and I think 
+that's been helpful. And we hear that from people,  
+
+965
+01:24:49,200 --> 01:24:56,560
+that they think about things a bit more, and I 
+think that's a good secondary effect and benefit  
+
+966
+01:24:57,360 --> 01:25:02,640
+of something like this, which is the more you 
+see the patterns of how what you're reading can  
+
+967
+01:25:02,640 --> 01:25:09,320
+be wrong, the more you can thoughtfully question 
+it and try to get a better understanding of what's  
+
+968
+01:25:09,320 --> 01:25:14,440
+really going on. So historically I think this 
+was called media literacy, but basic idea of  
+
+969
+01:25:15,360 --> 01:25:20,800
+can you understand the ways in which things 
+can go wrong and try to cut them yourself.
+
+970
+01:25:21,360 --> 01:25:27,440
+Another aspect I think we help with that is 
+discovery of the Community Notes. I think often  
+
+971
+01:25:28,080 --> 01:25:32,080
+before Community Notes you could have just 
+been living in a little news filter bubble,  
+
+972
+01:25:32,080 --> 01:25:35,040
+or maybe there were fact checks 
+out there that you should have  
+
+973
+01:25:35,040 --> 01:25:40,880
+been reading but you weren't discovering 
+them. So the fact that the note applies,  
+
+974
+01:25:40,880 --> 01:25:46,360
+it is directly attached to the post and 
+visible by anyone who sees the post helps  
+
+975
+01:25:46,880 --> 01:25:51,960
+cross those filter bubbles and can kind of... 
+I think for some people it's the first time  
+
+976
+01:25:51,960 --> 01:25:59,640
+they've actually seen counter arguments to 
+claims made in their own little echo chamber.
+
+977
+01:25:59,640 --> 01:26:03,040
+That's incredible, yeah. I love the point 
+you're making about how it actually teaches  
+
+978
+01:26:03,040 --> 01:26:08,240
+people to be a little more skeptical of 
+the things they read. It's an education  
+
+979
+01:26:08,240 --> 01:26:13,440
+system more than just, here, this 
+one thing is wrong. I love that. 
+
+980
+01:26:13,440 --> 01:26:17,520
+Okay, just a few more questions. There 
+was an audience question asked on Twitter,  
+
+981
+01:26:17,520 --> 01:26:20,480
+we all asked on Twitter, "What do people 
+want to know about Community Notes?" one  
+
+982
+01:26:20,480 --> 01:26:26,680
+was actually why you guys switched to anonymous 
+contributors, what was the decision behind that?
+
+983
+01:26:26,680 --> 01:26:32,640
+Yeah, we had this pilot where we were 
+testing with a small number of contributors,  
+
+984
+01:26:32,640 --> 01:26:36,520
+a few thousand contributors, and we learned a 
+lot through that pilot. Probably the biggest  
+
+985
+01:26:36,520 --> 01:26:43,120
+thing we learned was related to anonymity 
+or pseudonymity of contributors. We had  
+
+986
+01:26:43,120 --> 01:26:48,000
+originally assumed that it was important that 
+people contribute under their real handle,  
+
+987
+01:26:48,000 --> 01:26:52,240
+or their real name, or whatever it was. 
+The first prototypes depicted that,  
+
+988
+01:26:52,240 --> 01:26:56,120
+we kind of thought that would be important 
+for people trusting the note, and actually  
+
+989
+01:26:56,120 --> 01:27:02,520
+it was totally wrong. The best option was 
+actually opposite of what we first tried. 
+
+990
+01:27:02,520 --> 01:27:09,880
+We found a few things. One, people were hesitant 
+to write a note on a controversial topic because  
+
+991
+01:27:09,880 --> 01:27:15,280
+they didn't want to get attacked or harassed 
+online. And so some people were comfortable  
+
+992
+01:27:15,280 --> 01:27:18,960
+doing this but others were not, and so it 
+meant there was more potential good notes  
+
+993
+01:27:18,960 --> 01:27:24,520
+to be written than were getting written, and 
+this was very clear feedback from the pilot. 
+
+994
+01:27:24,520 --> 01:27:31,600
+Two, and this is super interesting, people are 
+actually more willing to cross partisan boundaries  
+
+995
+01:27:31,600 --> 01:27:36,360
+when they are anonymous or pseudonymous 
+than when they are under their real name,  
+
+996
+01:27:36,360 --> 01:27:42,320
+and it intuitively makes a lot of sense. If 
+you publicly are using your name, you feel  
+
+997
+01:27:42,320 --> 01:27:48,560
+are affiliated with one side versus the other, 
+you might hesitate to be perceived as breaking  
+
+998
+01:27:48,560 --> 01:27:55,120
+with that side. But you may actually, for example, 
+find a note helpful that's critical of that side,  
+
+999
+01:27:55,120 --> 01:27:59,200
+and there's a bunch of studies that show when 
+people are anonymous, they're much more willing  
+
+1000
+01:27:59,200 --> 01:28:02,280
+to cross partisan boundaries and work with 
+the other side, agree with the other side,  
+
+1001
+01:28:02,280 --> 01:28:07,760
+and we saw that too. And so by allowing people 
+to be pseudonymous, you actually get more honest  
+
+1002
+01:28:07,760 --> 01:28:10,820
+answers about what they really think and 
+it helps find disagreement that really-
+
+1003
+01:28:10,820 --> 01:28:12,400
+That's so counterintuitive.
+
+1004
+01:28:12,400 --> 01:28:12,600
+Yes.
+
+1005
+01:28:12,600 --> 01:28:16,480
+You never hear the opposite always, and 
+it's so interesting it's the opposite.
+
+1006
+01:28:16,480 --> 01:28:17,080
+Yeah, yeah.
+
+1007
+01:28:17,080 --> 01:28:21,360
+I think the same principle applies 
+to making the likes private.
+
+1008
+01:28:21,360 --> 01:28:22,560
+I was just thinking that.
+
+1009
+01:28:22,560 --> 01:28:22,960
+Yeah.
+
+1010
+01:28:22,960 --> 01:28:27,480
+Yeah, I like a lot more stuff that's a little, 
+definitely, I wouldn't have liked, yeah.
+
+1011
+01:28:28,120 --> 01:28:34,800
+It allows freedom for honesty, which is pretty 
+great. And one of the criticisms of pseudonymity  
+
+1012
+01:28:34,800 --> 01:28:40,280
+is it can generate, maybe people have reached 
+the quality threshold that they put out there,  
+
+1013
+01:28:40,280 --> 01:28:43,560
+but we have so many quality mechanisms 
+in the system that that wasn't an issue,  
+
+1014
+01:28:43,560 --> 01:28:48,640
+so we could keep quality high 
+while opening up for that honesty.
+
+1015
+01:28:48,640 --> 01:28:52,800
+Another question, you touched on this a 
+little bit, which is around navigating  
+
+1016
+01:28:52,800 --> 01:28:58,920
+the existing trust and safety apparatus of 
+Twitter, which as you described, basically,  
+
+1017
+01:28:58,920 --> 01:29:06,480
+previously, it was like we make decisions on what 
+is true and not, and every company works this way,  
+
+1018
+01:29:06,480 --> 01:29:10,280
+you guys basically upended that like, here's a 
+completely different way, you have no control  
+
+1019
+01:29:10,280 --> 01:29:16,040
+over what we say is true or not. Talk about just 
+that experience of overcoming that, I imagine,  
+
+1020
+01:29:16,040 --> 01:29:20,760
+very difficult hurdle of like, okay, forget all 
+that, we're going to do it totally different.
+
+1021
+01:29:20,760 --> 01:29:24,240
+Yeah, it was definitely, what we were 
+proposing was very different. I will  
+
+1022
+01:29:24,240 --> 01:29:28,080
+say that I think people were sort of 
+open-minded to it, generally speaking,  
+
+1023
+01:29:28,960 --> 01:29:34,560
+and I think everyone had a sense that what was 
+being done at the time wasn't really working  
+
+1024
+01:29:34,560 --> 01:29:39,520
+that well or solving the problem, and people were 
+open to new ideas, so that's a good foundation. 
+
+1025
+01:29:39,520 --> 01:29:46,160
+But I think one thing we did that was probably 
+very helpful in that is we wanted the product to  
+
+1026
+01:29:46,160 --> 01:29:51,800
+prove itself at any point. First it had to prove 
+that people could possibly find notes helpful,  
+
+1027
+01:29:51,800 --> 01:29:55,880
+then it had to prove that people could possibly 
+write these notes that would be good quality. And  
+
+1028
+01:29:55,880 --> 01:30:03,880
+so anytime that we were proposing doing something 
+with the product, like running some research test,  
+
+1029
+01:30:03,880 --> 01:30:10,960
+or running the pilot, or expanding the pilot, 
+we always had the data that had convinced us  
+
+1030
+01:30:10,960 --> 01:30:17,120
+that that was a good decision, like we were 
+stepping into the next phase of expansion that  
+
+1031
+01:30:17,120 --> 01:30:25,840
+made sense. And so I think we probably rarely 
+proposed anything that seemed unwise, because  
+
+1032
+01:30:25,840 --> 01:30:32,840
+we were holding such a high bar for quality 
+ourselves, and I suspect that went a long way.
+
+1033
+01:30:32,840 --> 01:30:38,560
+So it's partly, what I'm hearing is, take it 
+step by step to prove this is actually working,  
+
+1034
+01:30:38,560 --> 01:30:42,560
+and partly be confident it is working to yourself  
+
+1035
+01:30:42,560 --> 01:30:46,760
+before you try to convince the trust 
+and safety team this is the way to go.
+
+1036
+01:30:46,760 --> 01:30:48,800
+Exactly.
+
+1037
+01:30:49,560 --> 01:30:55,320
+Was there a moment along that journey it 
+shifted from no way this is a thing to okay,  
+
+1038
+01:30:55,320 --> 01:30:59,640
+wow, let's actually consider this? 
+Or was it this very gradual process?
+
+1039
+01:30:59,640 --> 01:31:02,800
+Whether other people were saying 
+no way to wow, let's actually-
+
+1040
+01:31:02,800 --> 01:31:06,320
+Yeah, just internally of just like, okay, 
+we're going to actually stop this trust and  
+
+1041
+01:31:06,320 --> 01:31:11,880
+safety way of operating and instead rely on 
+Community Notes, was there a moment of like,  
+
+1042
+01:31:11,880 --> 01:31:15,440
+okay, let's actually make that switch, or was 
+that Elon actually, is that the big switch?
+
+1043
+01:31:15,440 --> 01:31:21,520
+The biggest change there happened in X, 
+the biggest changes prior to that were  
+
+1044
+01:31:21,520 --> 01:31:30,000
+just the decision to put this out there 
+and have it be operating in public at  
+
+1045
+01:31:30,000 --> 01:31:35,920
+first US wide scale. But yeah, then the 
+bigger switches came in the X period.
+
+1046
+01:31:35,920 --> 01:31:43,480
+I think even though there was original research 
+before Birdwatch had even started, or Community  
+
+1047
+01:31:43,480 --> 01:31:49,520
+Notes had even started, from external researchers 
+showing that crowdsourced fact-checkers,  
+
+1048
+01:31:50,640 --> 01:31:54,840
+laypeople can do about as well as fact-checkers 
+and actually the agreement rates were kind of  
+
+1049
+01:31:54,840 --> 01:31:59,320
+similar between the groups. I think even though 
+that research was out there, I think there were  
+
+1050
+01:31:59,320 --> 01:32:04,480
+definitely a lot of people who didn't really 
+believe it could work until it already worked.
+
+1051
+01:32:04,480 --> 01:32:09,160
+Basically prove it, prove that it works. Yeah, 
+that makes sense, versus just a bunch of docs  
+
+1052
+01:32:09,160 --> 01:32:13,720
+and strategy and thinking, it's just like, look, 
+it's actually working, you can see for yourself.
+
+1053
+01:32:13,720 --> 01:32:14,120
+Yeah.
+
+1054
+01:32:14,120 --> 01:32:19,880
+Makes sense. Okay, possibly last question, 
+we'll see which fractals of questions you  
+
+1055
+01:32:19,880 --> 01:32:25,560
+guys bring up here. I referenced this a couple 
+times, this incredible achievement of keeping  
+
+1056
+01:32:25,560 --> 01:32:32,720
+a project alive through Jack and then, I have 
+this note, and Kayvon running the show then,  
+
+1057
+01:32:32,720 --> 01:32:39,800
+and then Parag running Twitter, and then Elon, 
+and then Linda taking over as CEO, quite rare,  
+
+1058
+01:32:39,800 --> 01:32:47,480
+especially something this visible, this impactful 
+to everything that X is. Any lessons or keys to  
+
+1059
+01:32:47,480 --> 01:32:54,000
+that actually working, of this project surviving 
+throughout so many work changes and leaders?
+
+1060
+01:32:54,000 --> 01:33:00,080
+It definitely has been a crazy time to be building 
+something. It's been fun. The craziness has been  
+
+1061
+01:33:00,080 --> 01:33:10,760
+entertaining. I think one reason perhaps the 
+product has done so well and survived is the  
+
+1062
+01:33:10,760 --> 01:33:16,680
+nature of the product itself. It is designed 
+to produce information that is found helpful  
+
+1063
+01:33:16,680 --> 01:33:22,520
+by people who normally disagree. And so even 
+if you have CEOs or leaders who might disagree,  
+
+1064
+01:33:22,520 --> 01:33:25,040
+there's a good chance actually they'll find it 
+helpful, they'll be like, wow, this thing does  
+
+1065
+01:33:25,040 --> 01:33:29,040
+produce pretty useful output. So I think there's 
+something in the nature of the product itself,  
+
+1066
+01:33:29,040 --> 01:33:35,160
+that when people see it, whatever side they're 
+on, left, up, down, they're likely to find it  
+
+1067
+01:33:35,160 --> 01:33:41,800
+pretty helpful, so I do think that helps.
+I also think the team executed really well.  
+
+1068
+01:33:42,840 --> 01:33:49,760
+We had ambitious goals that were exciting, they 
+solved a real problem. This is a real problem  
+
+1069
+01:33:49,760 --> 01:33:57,600
+that matters in the world. At every step, as we 
+talked about, the product needed to prove itself,  
+
+1070
+01:33:57,600 --> 01:34:02,440
+and we would make sure it proved itself and we 
+would bring the results that convinced us and we'd  
+
+1071
+01:34:02,440 --> 01:34:07,120
+share those with people. And so they would say, 
+oh yeah, I agree, it kind of proved itself, let's  
+
+1072
+01:34:07,120 --> 01:34:13,480
+take the next leap. And we've done that all along 
+the way and we continue to operate that way, and  
+
+1073
+01:34:13,480 --> 01:34:23,720
+I think that focus on the outcome and goal that 
+matters, and executing against it, really helped. 
+
+1074
+01:34:24,360 --> 01:34:30,240
+The team did not get distracted by much all 
+through the period during which the acquisition  
+
+1075
+01:34:30,240 --> 01:34:35,680
+happened. There was a lot of opportunity for 
+distraction. This team was shipping every week,  
+
+1076
+01:34:35,680 --> 01:34:42,520
+we were super focused on the goal, let's make 
+this thing work, let's get these notes out there,  
+
+1077
+01:34:42,520 --> 01:34:49,200
+and I think people saw that execution 
+and were excited to support it.
+
+1078
+01:34:49,200 --> 01:34:51,800
+Yeah, like it's working, why would we 
+mess with that? And it's important,  
+
+1079
+01:34:51,800 --> 01:34:57,000
+and it keeps us from having to hire tens 
+of thousands of people to fact check.
+
+1080
+01:34:57,000 --> 01:35:02,400
+The interesting thing about that is no one 
+ever asked us or brought up or seemed to  
+
+1081
+01:35:02,400 --> 01:35:10,400
+care about anything related to cost savings in 
+this process. And I think that's an assumption  
+
+1082
+01:35:10,400 --> 01:35:13,840
+people have outside the company, that this 
+must have been a reason there was interest  
+
+1083
+01:35:13,840 --> 01:35:18,440
+in it. But that was never a goal, it was not at 
+all why the project was started, it was not why  
+
+1084
+01:35:18,440 --> 01:35:23,840
+people were excited about the project. And 
+I think that's also, for people outside who  
+
+1085
+01:35:23,840 --> 01:35:28,280
+maybe don't see the conversations, it's kind of 
+a heartening thing to know, is that the focus was  
+
+1086
+01:35:28,280 --> 01:35:34,240
+always on solving the problem. The other approach 
+is even if you had 10,000 people doing it,  
+
+1087
+01:35:35,280 --> 01:35:39,360
+the real issue is that they don't work that well 
+because they're not trusted or they don't scale  
+
+1088
+01:35:39,360 --> 01:35:47,040
+or they're too slow. And so the goal was really 
+always just help people stay informed at scale.  
+
+1089
+01:35:47,040 --> 01:35:51,800
+Let's build an internet scale solution to 
+an internet scale problem that people like.
+
+1090
+01:35:51,800 --> 01:35:55,720
+Something I heard about you, Keith, when I was 
+asking people about how this worked and why this  
+
+1091
+01:35:55,720 --> 01:36:03,000
+worked so well is that they describe you with 
+having a very low ego, and that allowed you to  
+
+1092
+01:36:03,000 --> 01:36:07,360
+give up this whole team and power and influence 
+and just the name, forget it, whatever you want,  
+
+1093
+01:36:07,360 --> 01:36:10,680
+we'll call it Community Notes, great. Is 
+there anything in there you can share of  
+
+1094
+01:36:10,680 --> 01:36:18,920
+just how you think about that and how important 
+that is as a product leader to have a low ego?
+
+1095
+01:36:19,480 --> 01:36:24,800
+For me, this project, I feel like I 
+get to do community service with this  
+
+1096
+01:36:24,800 --> 01:36:30,040
+project. I see my work as in service 
+of the people and the community,  
+
+1097
+01:36:30,040 --> 01:36:37,560
+and that's what motivates me. The only thing 
+that I care about is delivering the outcome  
+
+1098
+01:36:37,560 --> 01:36:44,600
+that the world finds helpful. And so in some 
+ways the project has not been about ego,  
+
+1099
+01:36:44,600 --> 01:36:49,400
+it's about truth-seeking, let's find... Not 
+truth in the sense of what information is true,  
+
+1100
+01:36:49,400 --> 01:36:57,520
+but let's find out what's actually going to make 
+this work. How does it need to be structured,  
+
+1101
+01:36:57,520 --> 01:37:03,160
+what should it be called? Whatever is going to 
+produce the best outcome is what we should do. So  
+
+1102
+01:37:03,160 --> 01:37:10,160
+I think I feel more attached to the product being 
+helpful than to anything else, and so to whatever  
+
+1103
+01:37:10,160 --> 01:37:15,080
+degree it might seem like low ego is probably more 
+a result of wanting to actually solve the problem.
+
+1104
+01:37:15,080 --> 01:37:18,080
+And I think partly what I'm hearing 
+is just if you win and succeed,  
+
+1105
+01:37:18,080 --> 01:37:20,480
+good things will happen, so focus on that.
+
+1106
+01:37:20,480 --> 01:37:24,200
+Certainly satisfying things will happen, it's 
+very satisfying to have people appreciate it.  
+
+1107
+01:37:24,200 --> 01:37:29,600
+It's satisfying that people on the left and 
+right love it. It's satisfying that even  
+
+1108
+01:37:29,600 --> 01:37:33,360
+people who receive notes, love notes, 
+and reach out to them and post them,  
+
+1109
+01:37:33,360 --> 01:37:38,960
+that's amazing, it feels so good 
+to have helped give people that,  
+
+1110
+01:37:38,960 --> 01:37:44,320
+and yeah, it's very motivating. It's a 
+great reason to wake up in the morning.
+
+1111
+01:37:44,320 --> 01:37:48,240
+It's absurd this has worked, but it's 
+also like of course this would work,  
+
+1112
+01:37:48,240 --> 01:37:50,911
+of course something like this should 
+work. It's like such interesting-
+
+1113
+01:37:50,911 --> 01:37:55,240
+It's the internet, it's of the 
+internet, that's why it works.
+
+1114
+01:37:55,240 --> 01:37:59,640
+Oh man. Where's Community Notes 
+going from here? What's happening,  
+
+1115
+01:37:59,640 --> 01:38:03,080
+where's it going, what's the future?
+
+1116
+01:38:03,080 --> 01:38:10,040
+We're always working on basically more better 
+notes faster. So there's clearly an opportunity  
+
+1117
+01:38:10,040 --> 01:38:15,680
+to get more notes out there, we want them to stay 
+as good or better than they are, we want to get  
+
+1118
+01:38:15,680 --> 01:38:21,880
+them there faster, so we're always working on core 
+product changes to help deliver that. Recently,  
+
+1119
+01:38:21,880 --> 01:38:27,360
+for example, we just released an update to 
+what we call the Community Notes bat signal,  
+
+1120
+01:38:27,360 --> 01:38:34,040
+or the ability to request a Community Note. So 
+anyone on X can say, "Hey, I think this post  
+
+1121
+01:38:34,040 --> 01:38:39,280
+needs a Community Note," and now they can even add 
+a source explaining why so that when a prospective  
+
+1122
+01:38:39,280 --> 01:38:44,400
+writer sees that it's much easier for them to 
+write a note. So we're always working on core  
+
+1123
+01:38:44,400 --> 01:38:51,000
+things like that, core algorithm improvements.
+I think there are also new frontiers that show a  
+
+1124
+01:38:51,000 --> 01:39:00,440
+lot of potential, AI and LLMs are one. It's easy 
+to imagine a lot of ways that AI could assist  
+
+1125
+01:39:00,440 --> 01:39:07,160
+the people in this task they're doing of trying 
+to get information out there quickly. And maybe  
+
+1126
+01:39:07,160 --> 01:39:13,680
+Jay should talk about the Supernotes work that 
+we've done with some folks outside the company.
+
+1127
+01:39:13,680 --> 01:39:21,200
+Yeah, so one cool thing about having public 
+data and code is that external researchers can  
+
+1128
+01:39:21,200 --> 01:39:30,760
+collaborate with you, and in this case Supernotes 
+had this idea that we can basically take existing  
+
+1129
+01:39:30,760 --> 01:39:37,240
+notes as input, existing proposed notes that 
+maybe they have some problem, maybe they have  
+
+1130
+01:39:37,240 --> 01:39:42,840
+part of the story, maybe they're worded in kind of 
+a biased way. Basically take all these in, have an  
+
+1131
+01:39:42,840 --> 01:39:52,160
+LLM generate a ton of different variants, and then 
+basically make the simulated jury to basically get  
+
+1132
+01:39:52,160 --> 01:39:57,080
+a representative group of contributors for 
+community notes who would be rating the note  
+
+1133
+01:39:57,080 --> 01:40:01,680
+and try to predict based on their past ratings 
+how they would rate these LLM generated notes.  
+
+1134
+01:40:01,680 --> 01:40:08,480
+And so this way you can actually, rather than just 
+having an LLM write a note from scratch and hoping  
+
+1135
+01:40:08,480 --> 01:40:15,560
+it's good, you can simulate the entire community 
+notes rating process and explicitly create notes  
+
+1136
+01:40:15,560 --> 01:40:22,120
+that are likely to be rated helpful by people.
+So I think ideas like that are very promising  
+
+1137
+01:40:22,120 --> 01:40:31,480
+for the future, and it's a nice way that LLMs 
+and humans can work together. Obviously agents  
+
+1138
+01:40:31,480 --> 01:40:39,920
+can browse the web too, and that's one way that 
+you could imagine agents assisting humans is maybe  
+
+1139
+01:40:39,920 --> 01:40:47,200
+checking whether a note is actually supported 
+by the source. Although then you get into things  
+
+1140
+01:40:47,200 --> 01:40:53,600
+like, well, are people going to actually be 
+as diligent? Right now I think raters are  
+
+1141
+01:40:53,600 --> 01:40:57,800
+very diligent because they know just some 
+Community Notes contributor wrote this like,  
+
+1142
+01:40:57,800 --> 01:41:05,400
+I better check this before I rate it helpful. But 
+hopefully we can design things in a way such that  
+
+1143
+01:41:05,400 --> 01:41:11,400
+people don't trust the output and actually verify 
+it themselves before issuing a helpful rating.
+
+1144
+01:41:11,400 --> 01:41:19,160
+Yeah, that is such an interesting area to explore 
+where you want to avoid AI hallucinating slop  
+
+1145
+01:41:19,160 --> 01:41:23,240
+versus make it easier and scale it even 
+further. What an interesting challenge.
+
+1146
+01:41:23,840 --> 01:41:28,280
+What's cool about this project, in addition 
+to the AI element, is that it's being done  
+
+1147
+01:41:28,280 --> 01:41:34,080
+outside the company. We talked earlier about the 
+open source transparency. The key reason we made  
+
+1148
+01:41:34,080 --> 01:41:38,520
+this all open source was so people could see 
+how it worked, but the dream is actually that,  
+
+1149
+01:41:38,520 --> 01:41:43,080
+it's not just that the contributions to 
+the notes and ratings are from the people,  
+
+1150
+01:41:43,080 --> 01:41:47,920
+but the dream is actually the product is built 
+by the people. What if the scoring algorithm  
+
+1151
+01:41:47,920 --> 01:41:53,480
+were significantly or entirely written by the 
+public? That would be incredible. And Supernotes  
+
+1152
+01:41:53,480 --> 01:41:59,400
+is probably the first very substantial potential 
+change in the algorithm of the way it works,  
+
+1153
+01:41:59,400 --> 01:42:05,080
+that was kind of coming from the outside 
+and plausibly could be part of the core,  
+
+1154
+01:42:05,080 --> 01:42:08,280
+so we'd love to see the product 
+go in that direction as well.
+
+1155
+01:42:08,280 --> 01:42:15,040
+Sweet, go Supernotes. Well guys, the 
+work you're doing is tremendous. This  
+
+1156
+01:42:15,040 --> 01:42:20,600
+is every product person's dream, I think to 
+work, on something like this. Small team,  
+
+1157
+01:42:20,600 --> 01:42:25,320
+lots of support, lots of impact, just 
+innately interesting, and so I think  
+
+1158
+01:42:25,320 --> 01:42:28,720
+this is going to inspire a lot of people.
+So let me just ask you, is there anything  
+
+1159
+01:42:28,720 --> 01:42:32,840
+else you wanted to share? Anything else you think 
+might be helpful for folks to leave them with?
+
+1160
+01:42:32,840 --> 01:42:36,960
+Sure, I guess one thing that just I thought was 
+interesting over the course of working on this  
+
+1161
+01:42:36,960 --> 01:42:43,560
+product is just there's... I think in a similar 
+way to how retweets originally were not something  
+
+1162
+01:42:43,560 --> 01:42:47,000
+Jack came up with, I think users just started 
+doing it and then it became a core part of the  
+
+1163
+01:42:47,000 --> 01:42:53,240
+product. There's a huge way already in which 
+there's just a lot of surprising things that  
+
+1164
+01:42:53,240 --> 01:42:56,680
+people wanted to use Community Notes for 
+that I don't think we really expected,  
+
+1165
+01:42:56,680 --> 01:43:04,160
+and it's kind of cool to see 
+those user desires emerge. 
+
+1166
+01:43:04,160 --> 01:43:12,080
+I think one example, I guess we had always been 
+imagining political type of misinformation,  
+
+1167
+01:43:12,080 --> 01:43:19,840
+but for whatever reason there's a lot of people 
+who love debating whether Messi or Ronaldo got  
+
+1168
+01:43:19,840 --> 01:43:27,320
+more goals. I guess it's kind of a funny 
+one. There's a community moderation aspect,  
+
+1169
+01:43:27,320 --> 01:43:33,840
+so I think we also thought that this would be 
+specifically for adding context to misleading  
+
+1170
+01:43:33,840 --> 01:43:40,840
+or potentially misleading information, but what 
+you can see is that there are some notes that go  
+
+1171
+01:43:40,840 --> 01:43:49,680
+beyond that towards calling out content that 
+they think is spammy or something. So I think  
+
+1172
+01:43:49,680 --> 01:43:57,640
+that's just another dimension in which commuted 
+notes is a product that's driven by the people.
+
+1173
+01:43:58,360 --> 01:44:03,400
+That's so beautiful, basically they're trying 
+to keep Twitter/X healthy and they're just like,  
+
+1174
+01:44:03,400 --> 01:44:05,720
+no, this should be taken down, this tweet of spam.
+
+1175
+01:44:05,720 --> 01:44:06,400
+Yeah.
+
+1176
+01:44:06,400 --> 01:44:10,560
+I love that. Is there an answer on the Messi 
+versus, who is the other soccer player?
+
+1177
+01:44:10,560 --> 01:44:11,160
+Ronaldo.
+
+1178
+01:44:11,160 --> 01:44:17,320
+Ronaldo, okay. Is there a definitive 
+fact there or is that just unknowable?
+
+1179
+01:44:17,320 --> 01:44:22,800
+Yeah, I guess that's an interesting one because 
+it's a case where raters are actually very  
+
+1180
+01:44:23,320 --> 01:44:28,080
+polarized. I guess it actually kind of fits 
+into the core algorithm where there's some  
+
+1181
+01:44:28,080 --> 01:44:34,140
+people who are just diehard Messi fans or Ronaldo 
+fans, just like they could be on politics, so we  
+
+1182
+01:44:34,140 --> 01:44:41,240
+actually specifically modeled that topic, as well 
+as some other topics, so we can estimate people's  
+
+1183
+01:44:41,240 --> 01:44:45,600
+opinion on that particular debate. It's kind 
+of funny that something like that would emerge.
+
+1184
+01:44:45,600 --> 01:44:50,840
+You're saying that's the most controversial 
+topic on X, Ronaldo versus Messi.
+
+1185
+01:44:50,840 --> 01:44:52,160
+That's a controversial one.
+
+1186
+01:44:52,160 --> 01:44:58,040
+Oh wow, who knew? Okay. Keith, is 
+there anything you wanted to add?
+
+1187
+01:44:58,040 --> 01:45:05,200
+Yeah, community Notes is cool itself, but I think 
+what it points to about society is actually even  
+
+1188
+01:45:05,200 --> 01:45:10,520
+bigger. Society often feels really polarized, 
+you hear people talk about it all the time,  
+
+1189
+01:45:10,520 --> 01:45:16,040
+no one can ever agree on anything, but actually 
+Community Note shows you people really can agree  
+
+1190
+01:45:16,040 --> 01:45:20,720
+on quite a lot. Even on super controversial 
+topics related to politics and everything,  
+
+1191
+01:45:20,720 --> 01:45:26,440
+there's a lot of agreement, that's why notes work.
+And I think that's a really big reason for  
+
+1192
+01:45:26,440 --> 01:45:30,880
+optimism about the world, is that while it 
+might feel polarized, there's probably like  
+
+1193
+01:45:30,880 --> 01:45:37,400
+an 80% set of people that agree on quite 
+a lot of things. And imagine if we could  
+
+1194
+01:45:37,400 --> 01:45:43,680
+use the same kind of approaches we use with 
+notes, but to find agreement on legislation,  
+
+1195
+01:45:43,680 --> 01:45:48,800
+or policies, or things like that that people 
+want the government or the world to do,  
+
+1196
+01:45:49,640 --> 01:45:53,800
+possibly we could get a lot more momentum 
+behind these ideas that the people really  
+
+1197
+01:45:53,800 --> 01:45:58,120
+want and everyone would be a lot happier. Maybe 
+10% of the people on the edges wouldn't be happy,  
+
+1198
+01:45:58,120 --> 01:46:02,880
+but I bet there's a lot of agreement that 
+we are not identifying, and if we did it,  
+
+1199
+01:46:02,880 --> 01:46:07,320
+we'd all be pretty happy. So I don't know, I 
+think it's easy for people to feel pessimistic  
+
+1200
+01:46:07,320 --> 01:46:12,680
+about the world, but I think this product is a 
+good reason to be optimistic about the future.
+
+1201
+01:46:12,680 --> 01:46:15,400
+What an incredible way to end it. I can also see,  
+
+1202
+01:46:15,400 --> 01:46:18,920
+Keith, why people want to join you and 
+work with you and work on this team.
+
+1203
+01:46:18,920 --> 01:46:22,000
+Appreciate it. If you do want to join,  
+
+1204
+01:46:22,000 --> 01:46:27,040
+we are hiring an ML engineer. You get to 
+work on these amazing problems with us and  
+
+1205
+01:46:27,040 --> 01:46:32,360
+have a lot of fun, so we're accepting 
+applications at x.com/communitynotes.
+
+1206
+01:46:32,360 --> 01:46:36,160
+Okay, great, I'm glad you gave the URL. 
+Oh man, you're about to get flooded. 
+
+1207
+01:46:36,160 --> 01:46:41,960
+Guys, thank you so much for doing this. Is 
+there anywhere other than that place to go off,  
+
+1208
+01:46:41,960 --> 01:46:45,440
+join the team as an ML engineer, is there 
+any other place you want to point people to,  
+
+1209
+01:46:45,440 --> 01:46:47,680
+either your socials or anything else?
+
+1210
+01:46:47,680 --> 01:46:54,320
+I'm KeithColeman on X, please reach out if 
+you have any feedback or want to help us out,  
+
+1211
+01:46:54,320 --> 01:46:58,880
+whether you may want to work here or want to do 
+something from the outside, we would love to talk.
+
+1212
+01:46:58,880 --> 01:47:06,360
+Yeah, I'm @ _JayBaxter_ at X. 
+Yeah, I think in particular,  
+
+1213
+01:47:06,360 --> 01:47:13,760
+besides just using Community Notes, it would 
+be great to get more substantial contributions,  
+
+1214
+01:47:14,280 --> 01:47:18,480
+pull requests, collaborate 
+on projects like Supernotes,  
+
+1215
+01:47:18,480 --> 01:47:22,200
+I think that's the most exciting type of 
+stuff if people do want to contribute.
+
+1216
+01:47:22,200 --> 01:47:27,400
+Ship some code guys. Amazing. Guys, 
+thank you so much for doing this.
+
+1217
+01:47:27,400 --> 01:47:28,920
+Thanks for having us, Lenny.
+
+1218
+01:47:28,920 --> 01:47:29,942
+Thank you, thank so much.
+
+1219
+01:47:29,942 --> 01:47:35,960
+It's my pleasure. Bye everyone. Thank you so 
+much for listening. If you found this valuable,  
+
+1220
+01:47:35,960 --> 01:47:41,640
+you can subscribe to the show on Apple Podcasts, 
+Spotify, or your favorite podcast app. Also,  
+
+1221
+01:47:41,640 --> 01:47:46,360
+please consider giving us a rating or leaving a 
+review as that really helps other listeners find  
+
+1222
+01:47:46,360 --> 01:47:52,200
+the podcast. You can find all past episodes or 
+learn more about the show at LennysPodcast.com.  
+
+1223
+01:47:52,960 --> 01:47:57,280
+See you in the next episode.
+

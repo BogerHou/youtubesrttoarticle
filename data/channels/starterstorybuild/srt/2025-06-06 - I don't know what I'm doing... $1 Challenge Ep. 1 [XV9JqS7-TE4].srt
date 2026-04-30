@@ -1,0 +1,2275 @@
+1
+00:00:00,080 --> 00:00:06,000
+Hey, this is Gus and you're watching the $1 challenge, where I, an absolute beginner,
+
+2
+00:00:06,000 --> 00:00:13,200
+do my best to use AI to come up with an idea, build an app, market it, get users, and hopefully make my first dollar online.
+
+3
+00:00:13,200 --> 00:00:22,640
+In this episode, you're going to watch me struggle, and I mean struggle, to use Chat GBT and cursor to help me build like the basic MVP of my app.
+
+4
+00:00:22,640 --> 00:00:31,519
+I think you're going to like this episode if you're a complete beginner and are just trying to figure out how do I use these tools to help me build anything.
+
+5
+00:00:31,519 --> 00:00:35,600
+And by the end of this video, you're going to see what my MVP looks like.
+
+6
+00:00:35,600 --> 00:00:37,040
+So, thanks for watching.
+
+7
+00:00:37,040 --> 00:00:41,280
+Like, subscribe, leave a comment, tell me what you would do differently, give me any tips.
+
+8
+00:00:41,280 --> 00:00:42,640
+Honestly, I'm open to it.
+
+9
+00:00:42,640 --> 00:00:43,760
+And I hope you enjoy this.
+
+10
+00:00:43,760 --> 00:00:45,760
+Let's get into the $1 challenge.
+
+11
+00:00:45,760 --> 00:00:48,640
+So, I'm really nervous to build this.
+
+12
+00:00:48,640 --> 00:00:57,680
+Outside of like a an hour or two of some online crash course I took on cursor, I have really never built anything substantial.
+
+13
+00:00:57,680 --> 00:01:06,799
+Okay, technically I built a URL generator and a timer app, but besides that, I have never built anything as substantial as a mobile app.
+
+14
+00:01:06,799 --> 00:01:10,720
+So, I'm really nervous to get started, but I've been watching Pat 100K challenge.
+
+15
+00:01:10,720 --> 00:01:18,000
+I've been following some other creators online and it seems like the best thing to do is just to jump right into AI and do it.
+
+16
+00:01:18,000 --> 00:01:20,400
+And so I'm gonna use Chad GBT.
+
+17
+00:01:20,400 --> 00:01:24,799
+I'm gonna use cursor and see where it goes.
+
+18
+00:01:24,799 --> 00:01:27,040
+So with that, let's get started.
+
+19
+00:01:27,040 --> 00:01:28,159
+I'm going to share my screen.
+
+20
+00:01:28,159 --> 00:01:29,840
+Let's get into Chad GBT.
+
+21
+00:01:29,840 --> 00:01:38,560
+So because I have no idea what I'm doing, I am going to kind of toggle between ChatGBT and cursor to try and build this mobile app.
+
+22
+00:01:38,560 --> 00:01:47,759
+So the only caveats obviously are I do have a Chad GBT pro subscription and I do subscribe to cursor but besides that that is all I have going for me.
+
+23
+00:01:47,759 --> 00:01:50,560
+So let's just start talking to Chad GBT and see what happens.
+
+24
+00:01:50,560 --> 00:02:01,200
+Hey I want your help building a mobile app blah planning designing coding testing iterating.
+
+25
+00:02:01,200 --> 00:02:03,360
+Okay so let's describe what this does.
+
+26
+00:02:03,360 --> 00:02:05,119
+I'm just let me copy this.
+
+27
+00:02:05,119 --> 00:02:07,280
+I'm going to copy this paste it here.
+
+28
+00:02:07,280 --> 00:02:07,920
+What does it do?
+
+29
+00:02:07,920 --> 00:02:12,239
+I am building a stepcounting app slashwalking app.
+
+30
+00:02:12,239 --> 00:02:18,720
+Maybe I want it to be the simplest step counting app in the world.
+
+31
+00:02:18,720 --> 00:02:22,400
+I got an idea to talk about where what it does or the core features.
+
+32
+00:02:22,400 --> 00:02:29,680
+And I know this is seems unrelated but this tweet got so many you know views that I think there's something here.
+
+33
+00:02:29,680 --> 00:02:34,160
+So this is a f a guy who tweeted I want a finance app with three numbers.
+
+34
+00:02:34,160 --> 00:02:38,160
+what I spent today, what I spent this week, and what I spent this month.
+
+35
+00:02:38,160 --> 00:02:42,959
+And so my remix on this is I want a walking app with three numbers.
+
+36
+00:02:42,959 --> 00:02:48,080
+How many steps I took today, how many steps I took this week, and how many steps I took this month.
+
+37
+00:02:48,080 --> 00:02:49,360
+I don't know if that's a good idea.
+
+38
+00:02:49,360 --> 00:02:56,000
+In my original video, you know, the video that we posted the other day, the idea I had was like a progress bar.
+
+39
+00:02:56,000 --> 00:02:58,480
+If you remember that video, if not, go back and watch it.
+
+40
+00:02:58,480 --> 00:03:04,800
+The the original idea was something like a walking app that shows like your progress over time.
+
+41
+00:03:04,800 --> 00:03:11,280
+An idea I had was something like an app that tracks like you walking across the country or something like that.
+
+42
+00:03:11,280 --> 00:03:15,519
+But the more I thought about that, the more I don't know, I wasn't that excited about it,
+
+43
+00:03:15,519 --> 00:03:18,000
+the more complicated maybe it felt.
+
+44
+00:03:18,000 --> 00:03:21,280
+And I was thinking about any like apps that I use.
+
+45
+00:03:21,280 --> 00:03:23,440
+I love that they're easy to understand.
+
+46
+00:03:23,440 --> 00:03:25,680
+I can almost see everything in one screen.
+
+47
+00:03:25,680 --> 00:03:30,239
+the apps that I use the least are the ones that are, you know, just more complicated.
+
+48
+00:03:30,239 --> 00:03:37,280
+And so, and because I'm a beginner, I feel like I just I really need to scale this down and and maybe I'll learn something and,
+
+49
+00:03:37,280 --> 00:03:43,519
+you know, grow it into something else, but to start off, I feel like I just want it to be really really simple.
+
+50
+00:03:43,519 --> 00:03:49,200
+And so, all that context is why I'm giving you all that context because when I say, you know,
+
+51
+00:03:49,200 --> 00:03:52,480
+what are the core features or what I want to include, this is what I'm thinking about.
+
+52
+00:03:52,480 --> 00:03:54,640
+And so, I have a few of the screenshots here that I took.
+
+53
+00:03:54,640 --> 00:03:57,760
+This is these are all like from this tweet or from the retweets.
+
+54
+00:03:57,760 --> 00:04:01,120
+Again, I know this is a finance app, so it's different, but you know, three numbers.
+
+55
+00:04:01,120 --> 00:04:02,400
+I think that's clean.
+
+56
+00:04:02,400 --> 00:04:04,159
+Something like this is really clean.
+
+57
+00:04:04,159 --> 00:04:07,200
+You know, spent today, average, like that's cool.
+
+58
+00:04:07,200 --> 00:04:10,640
+Or something simple like this, day, week, month, and instead of obviously the numbers,
+
+59
+00:04:10,640 --> 00:04:12,000
+it would be like the steps.
+
+60
+00:04:12,000 --> 00:04:15,280
+And so, with that in mind, I'm going to say what does it do?
+
+61
+00:04:15,280 --> 00:04:18,479
+The app tracks essentially three things.
+
+62
+00:04:18,479 --> 00:04:24,080
+How many steps I took today, how many steps I took this week, and how many steps I took this month.
+
+63
+00:04:24,080 --> 00:04:28,080
+And in case you're wondering what I'm doing here, I'm I'm using a tool called Whisper Flow.
+
+64
+00:04:28,080 --> 00:04:31,040
+It's so much easier just to speak in my opinion.
+
+65
+00:04:31,040 --> 00:04:34,160
+And so instead of like having to type all this out, free trick there.
+
+66
+00:04:34,160 --> 00:04:34,400
+Okay.
+
+67
+00:04:34,400 --> 00:04:36,240
+What core features do you want to include?
+
+68
+00:04:36,240 --> 00:04:39,840
+I guess that's that feels like a little bit of a repeat of the previous one.
+
+69
+00:04:39,840 --> 00:04:46,320
+But I'll say I want it to look and feel really clean and I want those three big metrics,
+
+70
+00:04:46,320 --> 00:04:47,120
+the screen.
+
+71
+00:04:47,120 --> 00:04:49,199
+Any examples or apps you want it to feel like?
+
+72
+00:04:49,199 --> 00:04:50,160
+Okay, great.
+
+73
+00:04:50,160 --> 00:04:55,520
+So, yes, I have I'll attach some screenshots and then let me grab this image.
+
+74
+00:04:55,520 --> 00:04:55,919
+Boom.
+
+75
+00:04:55,919 --> 00:04:56,240
+Okay.
+
+76
+00:04:56,240 --> 00:04:59,759
+Are there any other apps I want it to look like before I recorded this?
+
+77
+00:04:59,759 --> 00:05:05,360
+I actually took a bunch of notes on different apps, different walking apps, you know?
+
+78
+00:05:05,360 --> 00:05:11,919
+I don't want to waste time going into that, but if you look at all of these, they're really like colorful and really kind of complicated,
+
+79
+00:05:11,919 --> 00:05:16,160
+and I like them, I guess, but I really want to like scale it down.
+
+80
+00:05:16,160 --> 00:05:16,960
+I don't know why.
+
+81
+00:05:16,960 --> 00:05:19,919
+And maybe that's just the millennial in me that's like I want it simple.
+
+82
+00:05:19,919 --> 00:05:24,320
+I don't want it to look boring, but all of these are like pretty, you know, pretty intense.
+
+83
+00:05:24,320 --> 00:05:25,039
+So, just to show you.
+
+84
+00:05:25,039 --> 00:05:30,400
+So, steps and app predominate or whatever.
+
+85
+00:05:30,400 --> 00:05:31,199
+It's It looks cool.
+
+86
+00:05:31,199 --> 00:05:33,880
+It's just, you know, there's a lot going on here.
+
+87
+00:05:33,880 --> 00:05:37,360
+Calories calendar or like a, you know, habit.
+
+88
+00:05:37,360 --> 00:05:39,919
+That could be interesting to like input in there.
+
+89
+00:05:39,919 --> 00:05:41,840
+Maybe I'll add that feature later.
+
+90
+00:05:41,840 --> 00:05:45,199
+But I really, really want it to look like really clean.
+
+91
+00:05:45,199 --> 00:05:46,639
+I attached some screenshots.
+
+92
+00:05:46,639 --> 00:05:58,240
+Okay, the last thing I just want to remind it is let me remind it of a few things like I'm obviously building Chad PT building cursor and the only other thing that I do know is I know you can test apps with like expo
+
+93
+00:05:58,240 --> 00:06:00,479
+like this app called Expo Go.
+
+94
+00:06:00,479 --> 00:06:03,840
+In case you don't know what that is, I think I saw a guy named Jack Ficks.
+
+95
+00:06:03,840 --> 00:06:04,960
+Shout out Jack Ficks.
+
+96
+00:06:04,960 --> 00:06:09,280
+I think I saw him tweet something about this simple app, whatever.
+
+97
+00:06:09,280 --> 00:06:12,880
+And he said something about like he built it with Expo, something like that.
+
+98
+00:06:12,880 --> 00:06:17,039
+So here's how React Native Expo Go blah blah blah blah blah blah.
+
+99
+00:06:17,039 --> 00:06:18,240
+This is probably the tweet I saw.
+
+100
+00:06:18,240 --> 00:06:22,720
+So I'm going to say something else like just remember that I'm a beginner.
+
+101
+00:06:22,720 --> 00:06:31,120
+The only tools that I really know how to use kind of are JGBT cursor and I've heard of a tool called Expo Go,
+
+102
+00:06:31,120 --> 00:06:35,280
+which I think helps you preview your apps on your phone.
+
+103
+00:06:35,280 --> 00:06:35,680
+Perfect.
+
+104
+00:06:35,680 --> 00:06:37,039
+Thank you for the clear description.
+
+105
+00:06:37,039 --> 00:06:38,240
+You're off to a great start.
+
+106
+00:06:38,240 --> 00:06:39,360
+Blah blah blah.
+
+107
+00:06:39,360 --> 00:06:42,160
+Open cursor and run npx.
+
+108
+00:06:42,160 --> 00:06:43,600
+and then go into the project.
+
+109
+00:06:43,600 --> 00:06:44,800
+Launch it locally.
+
+110
+00:06:44,800 --> 00:06:46,240
+I'm going to start this.
+
+111
+00:06:46,240 --> 00:06:53,280
+And before I go in, I've heard of this and I'm I'm kind of referencing a lot of like starter story things obviously cuz this is like the experience I have.
+
+112
+00:06:53,280 --> 00:06:56,000
+I I know of a video.
+
+113
+00:06:56,000 --> 00:07:04,880
+I think it was this guy, but also this how I built this phone where it seems like I need to have some more like project planning.
+
+114
+00:07:04,880 --> 00:07:11,440
+So, I want to make sure that I have a really good plan that I can feed into cursor before we start building.
+
+115
+00:07:11,440 --> 00:07:14,000
+The tool that I've heard of is called code guide.
+
+116
+00:07:14,000 --> 00:07:17,199
+That's again from this guy in starter story who we just interviewed.
+
+117
+00:07:17,199 --> 00:07:18,639
+Project documentation.
+
+118
+00:07:18,639 --> 00:07:27,440
+I'm going to come back here and say before we begin, I want to make sure that when I really start to feed this into cursor that it doesn't go off the rails.
+
+119
+00:07:27,440 --> 00:07:32,880
+So, can we create like a project plan or something that I can share with cursor first?
+
+120
+00:07:32,880 --> 00:07:34,000
+Something like that.
+
+121
+00:07:34,000 --> 00:07:36,560
+Product product requirements documentation.
+
+122
+00:07:36,560 --> 00:07:37,120
+There we go.
+
+123
+00:07:37,120 --> 00:07:39,759
+App name step light or whatever you want to call it.
+
+124
+00:07:39,759 --> 00:07:41,599
+Build the simplest step counting app in the world.
+
+125
+00:07:41,599 --> 00:07:42,479
+Step taken today.
+
+126
+00:07:42,479 --> 00:07:42,880
+Blah blah.
+
+127
+00:07:42,880 --> 00:07:43,360
+No fluff.
+
+128
+00:07:43,360 --> 00:07:44,000
+No distractions.
+
+129
+00:07:44,000 --> 00:07:45,120
+Just clean minimal step.
+
+130
+00:07:45,120 --> 00:07:45,599
+That's funny.
+
+131
+00:07:45,599 --> 00:07:47,599
+Yeah, I want an easy way to give this to cursor.
+
+132
+00:07:47,599 --> 00:07:48,000
+That's funny.
+
+133
+00:07:48,000 --> 00:07:49,360
+Or should we go ahead and view these?
+
+134
+00:07:49,360 --> 00:07:50,639
+Okay, so it's thinking.
+
+135
+00:07:50,639 --> 00:07:55,360
+Yeah, I think eventually I'm going to obviously have to open up cursor and and really get this going.
+
+136
+00:07:55,360 --> 00:07:59,120
+Download this step counterp prd.ext.
+
+137
+00:07:59,120 --> 00:08:00,160
+I don't know what I'm doing.
+
+138
+00:08:00,160 --> 00:08:00,479
+I don't know.
+
+139
+00:08:00,479 --> 00:08:01,919
+I can obviously change this name later.
+
+140
+00:08:01,919 --> 00:08:03,440
+Easy walk or something like that.
+
+141
+00:08:03,440 --> 00:08:04,560
+easy steps.
+
+142
+00:08:04,560 --> 00:08:05,199
+Something like that.
+
+143
+00:08:05,199 --> 00:08:05,599
+I don't know.
+
+144
+00:08:05,599 --> 00:08:06,319
+We'll see.
+
+145
+00:08:06,319 --> 00:08:08,080
+So, let me copy this.
+
+146
+00:08:08,080 --> 00:08:08,960
+Ctrl + C.
+
+147
+00:08:08,960 --> 00:08:10,800
+Let's start setting this up in Cursor.
+
+148
+00:08:10,800 --> 00:08:15,520
+What no one tells you about building here is that it's really just like the step-by-step process.
+
+149
+00:08:15,520 --> 00:08:17,360
+It's a little slow, but okay.
+
+150
+00:08:17,360 --> 00:08:20,720
+Open up a terminal panel inside cursor and paste this.
+
+151
+00:08:20,720 --> 00:08:22,879
+If it asks for a template, choose blank.
+
+152
+00:08:22,879 --> 00:08:25,520
+Once it's done, go into your new project.
+
+153
+00:08:25,520 --> 00:08:26,800
+Start the app locally.
+
+154
+00:08:26,800 --> 00:08:28,400
+A QR code will appear.
+
+155
+00:08:28,400 --> 00:08:29,599
+Let me know once you've done it.
+
+156
+00:08:29,599 --> 00:08:30,080
+Okay.
+
+157
+00:08:30,080 --> 00:08:32,000
+So, open up the terminal.
+
+158
+00:08:32,000 --> 00:08:32,560
+Okay.
+
+159
+00:08:32,560 --> 00:08:35,839
+I'm gonna So you can see here some of the stuff I've I've done.
+
+160
+00:08:35,839 --> 00:08:37,440
+So I'm going to create a new folder.
+
+161
+00:08:37,440 --> 00:08:39,519
+Going to call it easyw walk or simple walk.
+
+162
+00:08:39,519 --> 00:08:40,000
+I don't know.
+
+163
+00:08:40,000 --> 00:08:42,560
+It's probably a stupid name, but So let's open it.
+
+164
+00:08:42,560 --> 00:08:43,680
+So what does it want me to do?
+
+165
+00:08:43,680 --> 00:08:45,839
+It wants me to open up a terminal.
+
+166
+00:08:45,839 --> 00:08:46,800
+So new terminal.
+
+167
+00:08:46,800 --> 00:08:51,040
+And I'm just going to let's just let's just trust trust in the AI.
+
+168
+00:08:51,040 --> 00:08:52,160
+Trust the AI.
+
+169
+00:08:52,160 --> 00:08:52,880
+Step counter.
+
+170
+00:08:52,880 --> 00:08:54,800
+Create Expo project using it.
+
+171
+00:08:54,800 --> 00:08:56,399
+Choose from all available templates.
+
+172
+00:08:56,399 --> 00:08:58,240
+Choose from downloading and extracting.
+
+173
+00:08:58,240 --> 00:09:02,480
+I don't even know what the hell it's doing right now, but downloaded and installed.
+
+174
+00:09:02,480 --> 00:09:02,959
+Okay.
+
+175
+00:09:02,959 --> 00:09:04,640
+If it asks for a template, choose blank.
+
+176
+00:09:04,640 --> 00:09:06,959
+Once it's done, go into a new project.
+
+177
+00:09:06,959 --> 00:09:07,519
+Okay.
+
+178
+00:09:07,519 --> 00:09:09,440
+Choose from all available templates.
+
+179
+00:09:09,440 --> 00:09:11,760
+Pass in the module not supported and leak memory.
+
+180
+00:09:11,760 --> 00:09:14,080
+Do not this means if you want a good one.
+
+181
+00:09:14,080 --> 00:09:15,440
+Okay, your project is ready.
+
+182
+00:09:15,440 --> 00:09:19,760
+So, let's do cd step counter and then run.
+
+183
+00:09:19,760 --> 00:09:21,120
+Start the app locally.
+
+184
+00:09:21,120 --> 00:09:21,519
+Boom.
+
+185
+00:09:21,519 --> 00:09:22,959
+Okay, I got a QR code.
+
+186
+00:09:22,959 --> 00:09:25,600
+Okay, so I do this is something I do know.
+
+187
+00:09:25,600 --> 00:09:28,480
+Let me know when you done this and then we'll move on to building the setup.
+
+188
+00:09:28,480 --> 00:09:29,440
+I jumped the gun.
+
+189
+00:09:29,440 --> 00:09:35,120
+So, I'm going to go back and I'm going to say, okay, I did all these steps and now I see a QR code.
+
+190
+00:09:35,120 --> 00:09:38,880
+I know that I can use the Expo app to click it or to take a picture of it.
+
+191
+00:09:38,880 --> 00:09:40,720
+Or is there way I can see it just locally?
+
+192
+00:09:40,720 --> 00:09:41,680
+Web is waiting.
+
+193
+00:09:41,680 --> 00:09:43,440
+Okay, what does this do?
+
+194
+00:09:43,440 --> 00:09:45,120
+Will it load anything?
+
+195
+00:09:45,120 --> 00:09:48,240
+Okay, something's loading here.
+
+196
+00:09:48,240 --> 00:09:52,959
+Okay, I think this is I think this means like the app like kind of works.
+
+197
+00:09:52,959 --> 00:09:58,959
+And I know that if I take a picture of this, if I So there's an app called Expo Go.
+
+198
+00:09:58,959 --> 00:10:00,640
+Let's see if I could take a picture.
+
+199
+00:10:00,640 --> 00:10:02,240
+Step counter.
+
+200
+00:10:02,240 --> 00:10:03,120
+Okay.
+
+201
+00:10:03,120 --> 00:10:06,080
+So, let me just say, so I'm I'm going to come back here.
+
+202
+00:10:06,080 --> 00:10:06,240
+Okay.
+
+203
+00:10:06,240 --> 00:10:07,760
+I took all these steps.
+
+204
+00:10:07,760 --> 00:10:12,560
+I opened it up on the Expo app and on my computer, and it just says welcome.
+
+205
+00:10:12,560 --> 00:10:15,120
+It looks like just the the bones of an app.
+
+206
+00:10:15,120 --> 00:10:20,560
+Again, I want to make sure that we feed cursor the product, the PRD document.
+
+207
+00:10:20,560 --> 00:10:22,480
+But I think this first step worked.
+
+208
+00:10:22,480 --> 00:10:24,320
+So I'm re resending that there.
+
+209
+00:10:24,320 --> 00:10:26,240
+So yeah, I I think this worked.
+
+210
+00:10:26,240 --> 00:10:31,920
+I think to kill the server if I'm not mistaken, you do control C and the server is stopped.
+
+211
+00:10:31,920 --> 00:10:34,880
+Okay, so step counter is there.
+
+212
+00:10:34,880 --> 00:10:35,920
+That's awesome.
+
+213
+00:10:35,920 --> 00:10:37,040
+Let's see what's happening.
+
+214
+00:10:37,040 --> 00:10:37,760
+Okay, perfect.
+
+215
+00:10:37,760 --> 00:10:38,880
+You nailed this first step.
+
+216
+00:10:38,880 --> 00:10:39,680
+Okay, what's next?
+
+217
+00:10:39,680 --> 00:10:41,279
+Tell Cursor what we're building.
+
+218
+00:10:41,279 --> 00:10:45,279
+Now that the project is set up and running, let's guide Cursor by feeding the thing you downloaded.
+
+219
+00:10:45,279 --> 00:10:46,560
+This will give her the context.
+
+220
+00:10:46,560 --> 00:10:48,640
+Open the PRD file in Turk.
+
+221
+00:10:48,640 --> 00:10:50,800
+How do I add something?
+
+222
+00:10:50,800 --> 00:10:51,760
+Let me just ask it.
+
+223
+00:10:51,760 --> 00:10:56,880
+I have a PRD document that I'm going to give you so you know what we're going to build.
+
+224
+00:10:56,880 --> 00:10:58,160
+How do I give this to you?
+
+225
+00:10:58,160 --> 00:11:02,079
+I'm sure I could just I'm sure that it's just like copy and paste it.
+
+226
+00:11:02,079 --> 00:11:02,720
+Yeah, dummy.
+
+227
+00:11:02,720 --> 00:11:03,839
+I don't know what I was thinking.
+
+228
+00:11:03,839 --> 00:11:04,640
+This is classic.
+
+229
+00:11:04,640 --> 00:11:06,079
+Just like overthinking it.
+
+230
+00:11:06,079 --> 00:11:07,440
+Okay, so copy.
+
+231
+00:11:07,440 --> 00:11:08,079
+Boom.
+
+232
+00:11:08,079 --> 00:11:09,680
+I'm going to say I'm going to use this.
+
+233
+00:11:09,680 --> 00:11:12,399
+Please use this as the foundation.
+
+234
+00:11:12,399 --> 00:11:15,279
+And then I'm going to open up that step counter again.
+
+235
+00:11:15,279 --> 00:11:16,800
+I'm going to copy and paste.
+
+236
+00:11:16,800 --> 00:11:17,680
+Copy it.
+
+237
+00:11:17,680 --> 00:11:18,000
+Boom.
+
+238
+00:11:18,000 --> 00:11:18,800
+Boom.
+
+239
+00:11:18,800 --> 00:11:20,760
+And I'm going to copy it at the bottom.
+
+240
+00:11:20,760 --> 00:11:22,800
+Hopefully hopefully this works.
+
+241
+00:11:22,800 --> 00:11:24,079
+So let's see what happens.
+
+242
+00:11:24,079 --> 00:11:25,920
+So I fed that into cursor.
+
+243
+00:11:25,920 --> 00:11:28,399
+This is maybe what they call vibe coding.
+
+244
+00:11:28,399 --> 00:11:29,200
+Okay.
+
+245
+00:11:29,200 --> 00:11:32,000
+So I'll help you build this.
+
+246
+00:11:32,000 --> 00:11:35,760
+Let's start by setting up the project and implementing phase.
+
+247
+00:11:35,760 --> 00:11:37,279
+I see there's a step counter directory.
+
+248
+00:11:37,279 --> 00:11:39,760
+Let me check if there's already an expo project.
+
+249
+00:11:39,760 --> 00:11:42,720
+Now we need to clean up the old tab navigation if we use them.
+
+250
+00:11:42,720 --> 00:11:43,040
+Okay.
+
+251
+00:11:43,040 --> 00:11:43,600
+Accept.
+
+252
+00:11:43,600 --> 00:11:52,000
+So, this is where I start to get a little honestly tripped up because I'm accepting these files and I'm I'm not honestly sure what it's doing fully.
+
+253
+00:11:52,000 --> 00:11:57,279
+Obviously, trusting it to build, I'll admit because I'm a little bit of an overinker.
+
+254
+00:11:57,279 --> 00:12:01,839
+This is where I start to get a little like I don't know nervous about what's happening.
+
+255
+00:12:01,839 --> 00:12:06,639
+So, I've made the following changes, created a clean blah blah blah.
+
+256
+00:12:06,639 --> 00:12:08,720
+You can now run the app on Expo Go.
+
+257
+00:12:08,720 --> 00:12:10,560
+The app will show three static numbers.
+
+258
+00:12:10,560 --> 00:12:15,040
+Before we proceed, I want to see what the app looks like in Expo Go.
+
+259
+00:12:15,040 --> 00:12:16,240
+So, show me how to do that.
+
+260
+00:12:16,240 --> 00:12:16,720
+Okay.
+
+261
+00:12:16,720 --> 00:12:18,560
+So, generating command run.
+
+262
+00:12:18,560 --> 00:12:22,399
+I know just enough to be like, you know, that I know how to like kind of do this.
+
+263
+00:12:22,399 --> 00:12:25,440
+So, let me take a picture and see what it shows me.
+
+264
+00:12:25,440 --> 00:12:26,800
+Oh, error.
+
+265
+00:12:26,800 --> 00:12:28,320
+Syntax error.
+
+266
+00:12:28,320 --> 00:12:30,079
+That doesn't look good, right?
+
+267
+00:12:30,079 --> 00:12:30,320
+Okay.
+
+268
+00:12:30,320 --> 00:12:33,279
+Let's see if I could open it on my computer on the web.
+
+269
+00:12:33,279 --> 00:12:36,160
+It's waiting, I think, cuz I'm not sure how.
+
+270
+00:12:36,160 --> 00:12:36,639
+Okay.
+
+271
+00:12:36,639 --> 00:12:40,079
+Well, it's not going to be able to show it here obviously cuz it's not on my phone.
+
+272
+00:12:40,079 --> 00:12:42,160
+How how how should I do this?
+
+273
+00:12:42,160 --> 00:12:48,079
+I'm going to just take a screenshot of this and I'm going to airdrop it to my computer.
+
+274
+00:12:48,079 --> 00:12:49,360
+Thank you, technology.
+
+275
+00:12:49,360 --> 00:12:50,000
+Awesome.
+
+276
+00:12:50,000 --> 00:12:51,760
+Okay, so this is going to be perfect.
+
+277
+00:12:51,760 --> 00:12:55,920
+So, I'm going to say when I opened up on Expo Go, I see this error.
+
+278
+00:12:55,920 --> 00:13:00,000
+I'm just going to say this is all I'm going to say, I guess, because I don't know what I'm doing.
+
+279
+00:13:00,000 --> 00:13:02,240
+And you're kind of I guess you're seeing what it's like, right?
+
+280
+00:13:02,240 --> 00:13:03,839
+Like what what this is like.
+
+281
+00:13:03,839 --> 00:13:04,639
+Thank you for sharing.
+
+282
+00:13:04,639 --> 00:13:07,600
+The issue is with the way the numbers are written in your code.
+
+283
+00:13:07,600 --> 00:13:09,279
+Okay, I'll fix this in your code.
+
+284
+00:13:09,279 --> 00:13:12,000
+Now the syntax error is now fixed.
+
+285
+00:13:12,000 --> 00:13:12,720
+Go ahead.
+
+286
+00:13:12,720 --> 00:13:15,440
+Okay, let me expo go reload.
+
+287
+00:13:15,440 --> 00:13:16,000
+I don't know.
+
+288
+00:13:16,000 --> 00:13:16,959
+I think that's the issue.
+
+289
+00:13:16,959 --> 00:13:18,639
+It's not It's not pulling up on my phone.
+
+290
+00:13:18,639 --> 00:13:19,040
+You're right.
+
+291
+00:13:19,040 --> 00:13:20,720
+After fixing blah blah blah.
+
+292
+00:13:20,720 --> 00:13:23,440
+Okay, let's just apply this maybe.
+
+293
+00:13:23,440 --> 00:13:24,320
+Yes.
+
+294
+00:13:24,320 --> 00:13:25,680
+Restart the command now.
+
+295
+00:13:25,680 --> 00:13:26,079
+Run.
+
+296
+00:13:26,079 --> 00:13:28,160
+Let's see what this buddy looks like.
+
+297
+00:13:28,160 --> 00:13:30,240
+So, take a screenshot.
+
+298
+00:13:30,240 --> 00:13:32,399
+It's downloading almost.
+
+299
+00:13:32,399 --> 00:13:37,040
+So, you can't really see, but I can kind of see where it would be.
+
+300
+00:13:37,040 --> 00:13:43,519
+So again, I'm going to take another screenshot and I'm gonna send this to my computer.
+
+301
+00:13:43,519 --> 00:13:44,639
+And there you go.
+
+302
+00:13:44,639 --> 00:13:45,279
+Boom.
+
+303
+00:13:45,279 --> 00:13:48,320
+And I'm going to say, let's look for it.
+
+304
+00:13:48,320 --> 00:13:50,320
+Desktop screenshot.
+
+305
+00:13:50,320 --> 00:13:52,720
+Here is what the current app looks like.
+
+306
+00:13:52,720 --> 00:13:53,519
+Please fix.
+
+307
+00:13:53,519 --> 00:14:01,199
+So yeah, I think what I'm doing here obviously is just doing some troubleshooting being displayed with a strikethrough effect theme text blah blah blah.
+
+308
+00:14:01,199 --> 00:14:02,560
+Let's fix this blah blah blah.
+
+309
+00:14:02,560 --> 00:14:03,040
+Okay.
+
+310
+00:14:03,040 --> 00:14:11,600
+So, as it's working in the background, I'm gonna see may maybe this is wrong to do, but replace the app.js with the screen.
+
+311
+00:14:11,600 --> 00:14:14,399
+So, I'm gonna try I'm gonna do a little bit of both here.
+
+312
+00:14:14,399 --> 00:14:17,040
+Um I don't even see where it says app.js, right?
+
+313
+00:14:17,040 --> 00:14:18,480
+Like, is that even in here?
+
+314
+00:14:18,480 --> 00:14:23,040
+So, let's let's actually see if it just did it without me needing to, you know, use chat GBT.
+
+315
+00:14:23,040 --> 00:14:25,040
+I need to restart the server again.
+
+316
+00:14:25,040 --> 00:14:26,000
+Okay, please.
+
+317
+00:14:26,000 --> 00:14:27,519
+Okay, let's restart this thing.
+
+318
+00:14:27,519 --> 00:14:29,279
+I think I just need to do this.
+
+319
+00:14:29,279 --> 00:14:31,600
+Let's see one more time what it looks like.
+
+320
+00:14:31,600 --> 00:14:34,000
+It's still showing that strikethrough effect.
+
+321
+00:14:34,000 --> 00:14:36,720
+So something something is still going wrong here.
+
+322
+00:14:36,720 --> 00:14:38,399
+Let me turn this off.
+
+323
+00:14:38,399 --> 00:14:41,360
+And I'm going to say I'm going to just follow Chad GBT.
+
+324
+00:14:41,360 --> 00:14:45,839
+So replace I'm going to say replace blah blah blah.
+
+325
+00:14:45,839 --> 00:14:51,519
+And then I'm going to copy this code directly in there and see what happens.
+
+326
+00:14:51,519 --> 00:14:58,560
+So again, I think I think I already mentioned this, but I think this is where I get a little like just I I continue to get mixed up cuz I'm like,
+
+327
+00:14:58,560 --> 00:15:00,079
+do I trust Chad CBT?
+
+328
+00:15:00,079 --> 00:15:02,639
+Do I just build only in cursor?
+
+329
+00:15:02,639 --> 00:15:07,920
+You know, I want this to remain pretty simple, but I'm feeling a little stuck.
+
+330
+00:15:07,920 --> 00:15:10,480
+So, let's see what happens as the app loads here.
+
+331
+00:15:10,480 --> 00:15:14,399
+Your main screen now matches your latest requirement this way or no.
+
+332
+00:15:14,399 --> 00:15:15,279
+Reload the app.
+
+333
+00:15:15,279 --> 00:15:17,040
+Okay, let's just accept.
+
+334
+00:15:17,040 --> 00:15:18,800
+Let's open up the terminal.
+
+335
+00:15:18,800 --> 00:15:21,199
+Let's copy this command.
+
+336
+00:15:21,199 --> 00:15:23,199
+Let's kill the server, I think.
+
+337
+00:15:23,199 --> 00:15:24,720
+Actually, let me just ask it to do it.
+
+338
+00:15:24,720 --> 00:15:27,120
+Let's start the server again so I can see what it looks like.
+
+339
+00:15:27,120 --> 00:15:29,040
+I think I'm getting a little stuck here.
+
+340
+00:15:29,040 --> 00:15:31,519
+run use port A2 instead.
+
+341
+00:15:31,519 --> 00:15:32,079
+Sure.
+
+342
+00:15:32,079 --> 00:15:34,079
+Okay, let's try this again.
+
+343
+00:15:34,079 --> 00:15:40,399
+So, taking a picture, opening up the step counter, and boom, not bad.
+
+344
+00:15:40,399 --> 00:15:41,839
+Let Let me screenshot that.
+
+345
+00:15:41,839 --> 00:15:45,839
+I mean, I want this to be obviously way bigger.
+
+346
+00:15:45,839 --> 00:15:48,480
+And I I guess I shouldn't say not bad.
+
+347
+00:15:48,480 --> 00:15:50,000
+It's not great.
+
+348
+00:15:50,000 --> 00:15:51,440
+Okay, that's the error.
+
+349
+00:15:51,440 --> 00:15:53,920
+And this is what it kind of looks like.
+
+350
+00:15:53,920 --> 00:15:54,399
+Oops.
+
+351
+00:15:54,399 --> 00:15:55,040
+Where'd it go?
+
+352
+00:15:55,040 --> 00:15:56,880
+Desktop screenshot.
+
+353
+00:15:56,880 --> 00:15:57,759
+Yeah.
+
+354
+00:15:57,759 --> 00:16:00,639
+So, I ate numbers on here.
+
+355
+00:16:00,639 --> 00:16:02,160
+Like, not really, I guess.
+
+356
+00:16:02,160 --> 00:16:03,120
+But that's where we're at.
+
+357
+00:16:03,120 --> 00:16:05,680
+So, I'm going to say, okay, this looks good.
+
+358
+00:16:05,680 --> 00:16:10,800
+Can we make just the numbers a lot bigger so that it doesn't look so small in the middle of the screen?
+
+359
+00:16:10,800 --> 00:16:12,240
+Okay, it's uploading.
+
+360
+00:16:12,240 --> 00:16:13,440
+Let's accept.
+
+361
+00:16:13,440 --> 00:16:15,120
+Okay, let's reload the app.
+
+362
+00:16:15,120 --> 00:16:16,639
+How do I reload this app?
+
+363
+00:16:16,639 --> 00:16:18,720
+I always do it and it like doesn't work.
+
+364
+00:16:18,720 --> 00:16:20,399
+I need to restart it again, man.
+
+365
+00:16:20,399 --> 00:16:21,920
+Let's restart the server again.
+
+366
+00:16:21,920 --> 00:16:28,959
+That's probably something I'm going to have to figure out is like how do I do this so I'm not like just constantly closing open closing open the server.
+
+367
+00:16:28,959 --> 00:16:30,880
+I don't know how to do that honestly.
+
+368
+00:16:30,880 --> 00:16:32,079
+So that'll be an issue.
+
+369
+00:16:32,079 --> 00:16:34,560
+Okay, let's open this again.
+
+370
+00:16:34,560 --> 00:16:35,440
+Boom.
+
+371
+00:16:35,440 --> 00:16:36,160
+Boom.
+
+372
+00:16:36,160 --> 00:16:37,279
+And awesome.
+
+373
+00:16:37,279 --> 00:16:38,160
+Way bigger.
+
+374
+00:16:38,160 --> 00:16:43,680
+So I'm going to share this screenshot with my computer screen again so you can see it.
+
+375
+00:16:43,680 --> 00:16:44,560
+And boom.
+
+376
+00:16:44,560 --> 00:16:47,040
+I mean is it beautiful?
+
+377
+00:16:47,040 --> 00:16:48,240
+I don't know.
+
+378
+00:16:48,240 --> 00:16:49,680
+Is it simple?
+
+379
+00:16:49,680 --> 00:16:50,560
+Absolutely.
+
+380
+00:16:50,560 --> 00:16:52,240
+So, month, week, day.
+
+381
+00:16:52,240 --> 00:16:55,279
+I probably want them flipped, but for now, that's good enough.
+
+382
+00:16:55,279 --> 00:16:56,000
+Oh, that's cool.
+
+383
+00:16:56,000 --> 00:17:03,839
+So, let me go back to chat and say, okay, I'm going to say after some prompting, this is where I've landed.
+
+384
+00:17:03,839 --> 00:17:05,039
+I kind of like it.
+
+385
+00:17:05,039 --> 00:17:10,000
+This probably won't be the final project or the final product, but this is where I'm at right now.
+
+386
+00:17:10,000 --> 00:17:11,039
+What is next?
+
+387
+00:17:11,039 --> 00:17:12,559
+Okay, that looks fantastic.
+
+388
+00:17:12,559 --> 00:17:14,480
+Of course, you think it looks fantastic, chat.
+
+389
+00:17:14,480 --> 00:17:16,319
+Thank you for your feedback.
+
+390
+00:17:16,319 --> 00:17:20,319
+Next step, add dynamic step step data with dummy numbers.
+
+391
+00:17:20,319 --> 00:17:25,919
+Before we get into the real step tracking, blah blah blah, let's simulate live step counts using dummy data.
+
+392
+00:17:25,919 --> 00:17:30,320
+This will let you learn how state works in React Native.
+
+393
+00:17:30,320 --> 00:17:32,559
+Test how the app would behave with real updates.
+
+394
+00:17:32,559 --> 00:17:35,440
+Goal: Use React state to simulate change sub counts.
+
+395
+00:17:35,440 --> 00:17:36,960
+You'll replace zer numbers.
+
+396
+00:17:36,960 --> 00:17:38,640
+Here's what to ask cursor next.
+
+397
+00:17:38,640 --> 00:17:39,440
+Replace this.
+
+398
+00:17:39,440 --> 00:17:42,960
+Replace the text in use these defaults.
+
+399
+00:17:42,960 --> 00:17:54,720
+show those values in the same layout format with the commas we'll hook in or if you want to paste in working code directly once you do this we'll decide together I'm just going to let's
+
+400
+00:17:54,720 --> 00:18:06,160
+just trust trust the AIS man that's the thing here so let me I think I need to kill this server right so controll C stop server okay boom I'm going to copy
+
+401
+00:18:06,160 --> 00:18:14,080
+that okay and then I'm going to copy the code in as well and let's see what happens.
+
+402
+00:18:14,080 --> 00:18:21,840
+So yeah, I think the the curious part about building with this AI stuff is just the the toggling back and forth or the trying to figure out like to be honest,
+
+403
+00:18:21,840 --> 00:18:25,120
+it's like just trying to figure out what the heck is happening, you know?
+
+404
+00:18:25,120 --> 00:18:31,039
+Like I don't know what a lot of this information honestly means.
+
+405
+00:18:31,039 --> 00:18:33,280
+I don't know what any of these folders really mean.
+
+406
+00:18:33,280 --> 00:18:34,480
+I know what read me is.
+
+407
+00:18:34,480 --> 00:18:36,320
+Like that's where the basic structure is.
+
+408
+00:18:36,320 --> 00:18:39,520
+Your app now uses React state for the step values with defaults.
+
+409
+00:18:39,520 --> 00:18:42,080
+The numbers are formatted with commas blah blah blah.
+
+410
+00:18:42,080 --> 00:18:43,120
+You can reload the expo.
+
+411
+00:18:43,120 --> 00:18:43,440
+Go.
+
+412
+00:18:43,440 --> 00:18:47,360
+Let me know when you want test changing the values or if you're ready to move on to the next step.
+
+413
+00:18:47,360 --> 00:18:48,240
+Okay.
+
+414
+00:18:48,240 --> 00:18:51,200
+So, I'm gonna open up a terminal.
+
+415
+00:18:51,200 --> 00:18:54,480
+I've done this enough times where I feel like I should know how to do this.
+
+416
+00:18:54,480 --> 00:18:55,520
+So, boom.
+
+417
+00:18:55,520 --> 00:18:55,919
+Yes.
+
+418
+00:18:55,919 --> 00:18:58,799
+I guess let's open it up one more time.
+
+419
+00:18:58,799 --> 00:18:59,280
+Okay.
+
+420
+00:18:59,280 --> 00:19:00,000
+I don't know.
+
+421
+00:19:00,000 --> 00:19:00,799
+I think it worked.
+
+422
+00:19:00,799 --> 00:19:01,600
+I can't tell.
+
+423
+00:19:01,600 --> 00:19:04,240
+Let's go ahead and let's see what it looks like on the web.
+
+424
+00:19:04,240 --> 00:19:05,520
+If I can even look at it.
+
+425
+00:19:05,520 --> 00:19:06,000
+Yeah.
+
+426
+00:19:06,000 --> 00:19:06,480
+Boom.
+
+427
+00:19:06,480 --> 00:19:06,720
+Okay.
+
+428
+00:19:06,720 --> 00:19:07,039
+Cool.
+
+429
+00:19:07,039 --> 00:19:09,120
+Now, I don't need to take screenshots on my phone, dummy.
+
+430
+00:19:09,120 --> 00:19:16,559
+And then I'm going to say your app cursor says cursor says what's next.
+
+431
+00:19:16,559 --> 00:19:21,919
+I'm going to have by the end of this I'm going to have like a billion screenshots of just numbers on my screen.
+
+432
+00:19:21,919 --> 00:19:23,520
+So I'm going to delete some pictures.
+
+433
+00:19:23,520 --> 00:19:23,919
+Amazing.
+
+434
+00:19:23,919 --> 00:19:25,120
+This is coming together beautifully.
+
+435
+00:19:25,120 --> 00:19:26,400
+You now have a clean design.
+
+436
+00:19:26,400 --> 00:19:26,960
+Blah.
+
+437
+00:19:26,960 --> 00:19:29,280
+You're officially past the hello world stage.
+
+438
+00:19:29,280 --> 00:19:29,840
+What's next?
+
+439
+00:19:29,840 --> 00:19:31,120
+You have two options.
+
+440
+00:19:31,120 --> 00:19:33,200
+Simulate live step changes.
+
+441
+00:19:33,200 --> 00:19:35,360
+This is great for testing UX flow.
+
+442
+00:19:35,360 --> 00:19:36,640
+Blah blah blah.
+
+443
+00:19:36,640 --> 00:19:39,600
+Ask cursor simul the step count increase every few seconds.
+
+444
+00:19:39,600 --> 00:19:43,919
+Option two hook into Apple data health advanced then integrate real step data.
+
+445
+00:19:43,919 --> 00:19:45,200
+Why do the go?
+
+446
+00:19:45,200 --> 00:19:45,840
+I don't know.
+
+447
+00:19:45,840 --> 00:19:47,280
+Let's do step one.
+
+448
+00:19:47,280 --> 00:19:48,480
+Let's keep it simple for now.
+
+449
+00:19:48,480 --> 00:19:48,799
+Perfect.
+
+450
+00:19:48,799 --> 00:19:49,919
+Keeping it simple as we go.
+
+451
+00:19:49,919 --> 00:19:52,559
+We'll simulate the step counts increasing over time.
+
+452
+00:19:52,559 --> 00:19:53,679
+Goal blah blah.
+
+453
+00:19:53,679 --> 00:19:57,280
+Add use effect and set interval step each time.
+
+454
+00:19:57,280 --> 00:19:59,840
+A little nervous to but let's do this.
+
+455
+00:19:59,840 --> 00:20:01,440
+And this will be the last step I take.
+
+456
+00:20:01,440 --> 00:20:04,720
+I'm going to go in cursor since it has the project right.
+
+457
+00:20:04,720 --> 00:20:04,960
+Okay.
+
+458
+00:20:04,960 --> 00:20:05,600
+Wait.
+
+459
+00:20:05,600 --> 00:20:08,080
+Let me know if you want to test changing the values.
+
+460
+00:20:08,080 --> 00:20:10,480
+Yeah, let's let's let's trust Chad GBT.
+
+461
+00:20:10,480 --> 00:20:12,240
+This is this is what I'm learning here.
+
+462
+00:20:12,240 --> 00:20:14,240
+Let's trust the process.
+
+463
+00:20:14,240 --> 00:20:16,160
+I'm gonna just keep doing what I'm doing.
+
+464
+00:20:16,160 --> 00:20:18,160
+It hasn't exactly failed me.
+
+465
+00:20:18,160 --> 00:20:18,960
+So, let's see.
+
+466
+00:20:18,960 --> 00:20:23,440
+And I think this will be the last step I take and then I'll do one more thing before we go.
+
+467
+00:20:23,440 --> 00:20:25,280
+So, it's generating something.
+
+468
+00:20:25,280 --> 00:20:30,240
+Once again, I'm not 100% sure exactly what it's generating, but let's see what happens.
+
+469
+00:20:30,240 --> 00:20:30,960
+Import.
+
+470
+00:20:30,960 --> 00:20:32,240
+Am I going to accept?
+
+471
+00:20:32,240 --> 00:20:33,200
+Sure.
+
+472
+00:20:33,200 --> 00:20:34,000
+Accept.
+
+473
+00:20:34,000 --> 00:20:38,320
+Your app will now automatically update the step counts every 3 seconds.
+
+474
+00:20:38,320 --> 00:20:39,600
+Reload the app.
+
+475
+00:20:39,600 --> 00:20:42,880
+Okay, so let's open up a new terminal.
+
+476
+00:20:42,880 --> 00:20:44,960
+Let's open up this.
+
+477
+00:20:44,960 --> 00:20:47,039
+Hopefully I'm not like messing all this up.
+
+478
+00:20:47,039 --> 00:20:49,360
+I don't know why it does that, but let's see.
+
+479
+00:20:49,360 --> 00:20:50,640
+Take another picture.
+
+480
+00:20:50,640 --> 00:20:51,440
+Open this up.
+
+481
+00:20:51,440 --> 00:20:53,760
+And it says it's supposed to simulate it, right?
+
+482
+00:20:53,760 --> 00:20:55,280
+Like changing every what?
+
+483
+00:20:55,280 --> 00:20:56,240
+3 seconds.
+
+484
+00:20:56,240 --> 00:20:57,640
+It updated.
+
+485
+00:20:57,640 --> 00:21:01,120
+9373 9385 9400.
+
+486
+00:21:01,120 --> 00:21:02,400
+I'm walking fast.
+
+487
+00:21:02,400 --> 00:21:03,919
+Okay, that's cool.
+
+488
+00:21:03,919 --> 00:21:04,559
+Awesome.
+
+489
+00:21:04,559 --> 00:21:07,840
+Okay, so I think I I think there's something weird.
+
+490
+00:21:07,840 --> 00:21:12,159
+I don't think it's tracking correctly, but Okay, I'm gonna say I'm gonna tell chat.
+
+491
+00:21:12,159 --> 00:21:16,400
+Okay, I pasted this into cursor and it looks like it is indeed working.
+
+492
+00:21:16,400 --> 00:21:19,600
+The numbers are ticking up every few seconds.
+
+493
+00:21:19,600 --> 00:21:22,400
+And honestly, I'm just going to paste the same thing into cursor.
+
+494
+00:21:22,400 --> 00:21:27,440
+I don't feel like this is the right way to do it, but now I'm going to kill this server.
+
+495
+00:21:27,440 --> 00:21:29,200
+Kill kill kill.
+
+496
+00:21:29,200 --> 00:21:29,679
+Boom.
+
+497
+00:21:29,679 --> 00:21:30,960
+Okay, that's great.
+
+498
+00:21:30,960 --> 00:21:32,480
+Okay, let me let's go back to chat.
+
+499
+00:21:32,480 --> 00:21:33,919
+Sorry, I'm all over the place here.
+
+500
+00:21:33,919 --> 00:21:34,960
+Just pasted it in.
+
+501
+00:21:34,960 --> 00:21:36,960
+I think this is going to be the last step I take.
+
+502
+00:21:36,960 --> 00:21:37,760
+That's great.
+
+503
+00:21:37,760 --> 00:21:40,320
+Blah blah blah blah blah blah blah blah.
+
+504
+00:21:40,320 --> 00:21:41,200
+You're really cool.
+
+505
+00:21:41,200 --> 00:21:42,880
+You're building an interactive app.
+
+506
+00:21:42,880 --> 00:21:43,360
+Awesome.
+
+507
+00:21:43,360 --> 00:21:44,559
+What's next?
+
+508
+00:21:44,559 --> 00:21:45,440
+Reset logic.
+
+509
+00:21:45,440 --> 00:21:46,559
+Add reset logic.
+
+510
+00:21:46,559 --> 00:21:49,679
+Let's make the counts reset based on real time.
+
+511
+00:21:49,679 --> 00:21:52,799
+Every Monday, every monthly steps on the first.
+
+512
+00:21:52,799 --> 00:21:53,679
+That makes sense.
+
+513
+00:21:53,679 --> 00:21:54,960
+We're not gonna do this yet.
+
+514
+00:21:54,960 --> 00:21:55,280
+Okay.
+
+515
+00:21:55,280 --> 00:21:56,320
+What is ch?
+
+516
+00:21:56,320 --> 00:21:56,880
+That's great.
+
+517
+00:21:56,880 --> 00:21:58,559
+You now have a live step counter.
+
+518
+00:21:58,559 --> 00:21:59,440
+Current features.
+
+519
+00:21:59,440 --> 00:22:03,919
+Next steps you might consider adding logic to reset integrate with real steps.
+
+520
+00:22:03,919 --> 00:22:04,720
+Polish the U.
+
+521
+00:22:04,720 --> 00:22:07,679
+It's funny that they're both saying the same thing.
+
+522
+00:22:07,679 --> 00:22:08,559
+And which is great.
+
+523
+00:22:08,559 --> 00:22:09,840
+I I think that's what I want.
+
+524
+00:22:09,840 --> 00:22:12,720
+Okay, I'm going to take a pause for now cuz it's about to be launch time.
+
+525
+00:22:12,720 --> 00:22:17,679
+How do I save this and make sure that when I return to this that it looks good?
+
+526
+00:22:17,679 --> 00:22:20,159
+I'm pretty sure I can just close it and it'll reopen.
+
+527
+00:22:20,159 --> 00:22:21,840
+I'm like 90% sure about that.
+
+528
+00:22:21,840 --> 00:22:24,720
+But yeah, autosaves blah blah blah.
+
+529
+00:22:24,720 --> 00:22:25,760
+No problem.
+
+530
+00:22:25,760 --> 00:22:28,400
+when you're ready to work again in your terminal.
+
+531
+00:22:28,400 --> 00:22:29,039
+Blah blah blah.
+
+532
+00:22:29,039 --> 00:22:30,720
+This will reopen the server.
+
+533
+00:22:30,720 --> 00:22:31,679
+Blah blah blah.
+
+534
+00:22:31,679 --> 00:22:32,960
+I don't need to back it up.
+
+535
+00:22:32,960 --> 00:22:35,600
+Okay, I'm gonna return to this.
+
+536
+00:22:35,600 --> 00:22:38,240
+So, I'm going to just close this.
+
+537
+00:22:38,240 --> 00:22:42,400
+And then, okay, the last thing I want to do, so I'm on Twitter.
+
+538
+00:22:42,400 --> 00:22:45,679
+I think part of the idea of this is like, okay, I'm building it.
+
+539
+00:22:45,679 --> 00:22:46,559
+Awesome.
+
+540
+00:22:46,559 --> 00:22:51,760
+But like, if I'm not telling anyone about it, then it's kind of pointless.
+
+541
+00:22:51,760 --> 00:22:58,480
+So, for the sake of building in public, I am going to post this on Twitter and just say,
+
+542
+00:22:58,480 --> 00:23:01,840
+so, you know, full transparency, it's today's June 2nd.
+
+543
+00:23:01,840 --> 00:23:06,480
+A while a while back, I started building this like I don't know, a couple weeks ago,
+
+544
+00:23:06,480 --> 00:23:08,480
+and life got crazy as it does.
+
+545
+00:23:08,480 --> 00:23:12,799
+And so, I I had this post that was just like, "Hey, I don't know what I'm doing, but I'm building it."
+
+546
+00:23:12,799 --> 00:23:14,320
+I sort of done a test video.
+
+547
+00:23:14,320 --> 00:23:15,280
+It sucked.
+
+548
+00:23:15,280 --> 00:23:22,960
+I tried to do this like walking app thing and it honestly I mean look at this This sucks too.
+
+549
+00:23:22,960 --> 00:23:25,039
+So I'm going to redo it.
+
+550
+00:23:25,039 --> 00:23:26,559
+I'm going to post again.
+
+551
+00:23:26,559 --> 00:23:35,120
+I'm going to say I'm going to jokingly say day 0.01 of building the next great walking
+
+552
+00:23:35,120 --> 00:23:35,840
+app.
+
+553
+00:23:35,840 --> 00:23:37,440
+Scrap the old thing.
+
+554
+00:23:37,440 --> 00:23:38,720
+Start it over.
+
+555
+00:23:38,720 --> 00:23:39,440
+But here we are.
+
+556
+00:23:39,440 --> 00:23:39,760
+All right.
+
+557
+00:23:39,760 --> 00:23:40,640
+I think that's it.
+
+558
+00:23:40,640 --> 00:23:41,679
+Let's post this.
+
+559
+00:23:41,679 --> 00:23:42,799
+And that's it.
+
+560
+00:23:42,799 --> 00:23:43,360
+Cool.
+
+561
+00:23:43,360 --> 00:23:44,000
+Wow.
+
+562
+00:23:44,000 --> 00:23:45,520
+about an hour of recording.
+
+563
+00:23:45,520 --> 00:23:49,039
+Thanks for being here at this early time.
+
+564
+00:23:49,039 --> 00:23:53,760
+So, if you want to give me a follow, follow me on Twitter, Gus-Tiffer.
+
+565
+00:23:53,760 --> 00:23:55,600
+You're going to see me try to build this thing.
+
+566
+00:23:55,600 --> 00:24:00,640
+I don't know how good it's going to be, but if you're looking for a walking app, DM me.
+
+567
+00:24:00,640 --> 00:24:03,440
+I'll probably figure some other marketing stuff out.
+
+568
+00:24:03,440 --> 00:24:04,880
+But that's all for now.
+
+569
+00:24:04,880 --> 00:24:11,960
+Thanks for being here and looking forward to seeing you in the next one.

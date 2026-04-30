@@ -1,0 +1,4226 @@
+1
+00:00:00,120 --> 00:00:04,280
+What if the product manager came to the 
+meeting with prototypes? What if you come  
+
+2
+00:00:04,280 --> 00:00:08,760
+to the design team and instead of a PRD, you 
+actually already have your mocks? With AI,  
+
+3
+00:00:08,760 --> 00:00:12,720
+it's super feasible for a product 
+manager to come to a meeting and say,  
+
+4
+00:00:12,720 --> 00:00:16,960
+hey, I already have some ideas here. I wanted to 
+mock them up this way. They're probably wrong,  
+
+5
+00:00:16,960 --> 00:00:20,760
+but at least the starting point now 
+looks a little bit higher resolution.
+
+6
+00:00:20,760 --> 00:00:24,840
+For people that want to say pivot 
+their career to be an AI PM,  
+
+7
+00:00:24,840 --> 00:00:27,120
+what helped you move in that direction?
+
+8
+00:00:27,120 --> 00:00:33,160
+It's almost counterintuitive, but I actually 
+think it's probably easier now to break into AI  
+
+9
+00:00:33,160 --> 00:00:36,960
+product management than it was before. There 
+are these incredible videos that are being  
+
+10
+00:00:36,960 --> 00:00:41,680
+put out right now on YouTube on how to build 
+an app in an hour, that would not have been  
+
+11
+00:00:41,680 --> 00:00:46,400
+possible even a year ago. Before you actually 
+probably needed to have more of a foundation  
+
+12
+00:00:46,400 --> 00:00:51,600
+and background in machine learning to get a shot 
+at one of these companies building AI products.
+
+13
+00:00:51,600 --> 00:00:57,080
+What have you seen separates the typical 
+AI product manager from say the top 5%?
+
+14
+00:00:57,080 --> 00:00:59,920
+Really the question you have to ask yourself is...
+
+15
+00:01:04,240 --> 00:01:09,280
+Today my guest is Aman Khan. Aman 
+is director of product at Arize AI,  
+
+16
+00:01:09,280 --> 00:01:14,080
+and over the course of his PM career, he's 
+focused on building products in the AI space,  
+
+17
+00:01:14,080 --> 00:01:20,160
+including at Spotify on the ML platform team and 
+roles at Cruise, Zipline and Apple. He's also  
+
+18
+00:01:20,160 --> 00:01:24,480
+very intentionally stayed an individual 
+contributor, which feels like a trend,  
+
+19
+00:01:24,480 --> 00:01:29,600
+especially with the rise of AI tooling making 
+PMs much more productive and companies cutting  
+
+20
+00:01:29,600 --> 00:01:34,640
+back on management layers. And so in our 
+conversation, we go deep on these two topics,  
+
+21
+00:01:34,640 --> 00:01:39,840
+how to get into AI and how to become an AI product 
+manager? What the different types of AI product  
+
+22
+00:01:39,840 --> 00:01:46,080
+managers are? How to thrive as an AI PM? And what 
+Aman has learned about how to be successful and  
+
+23
+00:01:46,080 --> 00:01:51,320
+continue his career as an individual contributor 
+PM long-term? When I asked people on Twitter and  
+
+24
+00:01:51,320 --> 00:01:56,920
+LinkedIn who their favorite individual contributor 
+product manager is, Aman was near the very top of  
+
+25
+00:01:56,920 --> 00:02:01,960
+the list and so I was really excited to get him 
+on the podcast and to learn from his experience. 
+
+26
+00:02:01,960 --> 00:02:04,920
+If you enjoy this podcast, don't forget to 
+subscribe and follow it in your favorite  
+
+27
+00:02:04,920 --> 00:02:08,520
+podcasting app or YouTube. It's the best 
+way to avoid missing future episodes and  
+
+28
+00:02:08,520 --> 00:02:17,000
+then helps the podcast tremendously. 
+With that, I bring you Aman Khan. 
+
+29
+00:02:17,000 --> 00:02:20,440
+Aman, thank you so much for being 
+here and welcome to the podcast.
+
+30
+00:02:20,440 --> 00:02:24,240
+Amazing. Thank you so much for having me, 
+Lenny. It is truly an honor to be here.
+
+31
+00:02:24,240 --> 00:02:28,000
+So let me give a little context on 
+this conversation. I put out a call  
+
+32
+00:02:28,000 --> 00:02:33,040
+on Twitter and LinkedIn asking people 
+for their favorite IC product managers,  
+
+33
+00:02:33,040 --> 00:02:37,040
+and you came up near the top of the 
+list across both Twitter and LinkedIn,  
+
+34
+00:02:37,040 --> 00:02:42,400
+so I knew that I needed to meet you. And you're 
+super interesting in a couple of ways. One is if  
+
+35
+00:02:42,400 --> 00:02:46,400
+I think about the Venn diagram of some of the 
+most interesting trends in product right now,  
+
+36
+00:02:46,400 --> 00:02:51,280
+you're kind of at the center of AI and 
+staying IC, an individual contributor,  
+
+37
+00:02:51,280 --> 00:02:57,480
+for a long time. And my sense is a lot of PMs are 
+thinking about how do I get into AI and how do I  
+
+38
+00:02:57,480 --> 00:03:05,160
+do more AI work. Two, there's this trend of just 
+ICs, super ICs, less managers, and you've been  
+
+39
+00:03:05,160 --> 00:03:09,160
+doing AI for a long time, you've been an IC for 
+basically your whole career very intentionally. 
+
+40
+00:03:09,160 --> 00:03:14,840
+So with that, there's a few things I want to 
+spend our time on. One is how to get into AI,  
+
+41
+00:03:14,840 --> 00:03:20,880
+how to become an AI PM essentially? Two is 
+how to thrive as an AI PM? And three is how  
+
+42
+00:03:20,880 --> 00:03:28,120
+to thrive as an IC outside of AI, but I know AI 
+plays into that? Broadly, how does that sound?
+
+43
+00:03:28,120 --> 00:03:32,760
+Yeah, that sounds great. I think that 
+was a crazy moment of just seeing  
+
+44
+00:03:32,760 --> 00:03:37,080
+how many people piled onto that, those 
+posts, and then some of our discussion  
+
+45
+00:03:37,080 --> 00:03:41,480
+back and forth on this thread. And 
+I thought it was super interesting,  
+
+46
+00:03:41,480 --> 00:03:48,400
+it was this combination of product and AI 
+where just happens to be, I think where the  
+
+47
+00:03:48,400 --> 00:03:54,360
+space is headed or what seems to be catching 
+so much attention. So yeah, I'm super excited  
+
+48
+00:03:54,360 --> 00:03:59,720
+to dive into that and try and share a little 
+bit that I've learned along the way as well.
+
+49
+00:04:00,480 --> 00:04:06,160
+This episode is brought to you by Pendo, the 
+only all-in-one product experience platform for  
+
+50
+00:04:06,160 --> 00:04:11,560
+any type of application. Tired of bouncing around 
+multiple tools to uncover what's really happening  
+
+51
+00:04:11,560 --> 00:04:17,040
+inside your product? With all the tools you need 
+in one simple to use platform, Pendo makes it easy  
+
+52
+00:04:17,040 --> 00:04:21,760
+to answer critical questions about how users are 
+engaging with your product and then turn those  
+
+53
+00:04:21,760 --> 00:04:27,320
+insights into action. Also, you can get your 
+users to do what you actually want them to do. 
+
+54
+00:04:27,320 --> 00:04:31,880
+First, Pendo is built around product analytics, 
+seeing what your users are actually doing in your  
+
+55
+00:04:31,880 --> 00:04:37,440
+apps so that you can optimize their experience. 
+Next, Pendo lets you deploy in-app guides that  
+
+56
+00:04:37,440 --> 00:04:42,640
+lead users through the actions that matter 
+most. Then, Pendo integrates user feedback so  
+
+57
+00:04:42,640 --> 00:04:47,320
+that you can capture and analyze what people 
+actually want. And the new thing in Pendo,  
+
+58
+00:04:47,320 --> 00:04:52,840
+session replays, a very cool way to visualize 
+user sessions. I'm not surprised at all that  
+
+59
+00:04:52,840 --> 00:04:58,360
+over 10,000 companies use it today.
+Visit Pendo.io/Lenny to create your  
+
+60
+00:04:58,360 --> 00:05:03,840
+free Pendo account today and start building better 
+experiences across every corner of your product.  
+
+61
+00:05:03,840 --> 00:05:08,640
+P.S. You want to take your product-led know-how 
+a step further, check out Pendo's lineup of free  
+
+62
+00:05:08,640 --> 00:05:13,560
+certification courses led by top product experts 
+and designed to help you grow and advance in your  
+
+63
+00:05:13,560 --> 00:05:21,200
+career. Learn more and experience the power 
+of the Pendo platform today at Pendo.io/Lenny. 
+
+64
+00:05:24,120 --> 00:05:28,800
+This episode is brought to you by Vanta. 
+When it comes to ensuring your company has  
+
+65
+00:05:28,800 --> 00:05:35,240
+top-notch security practices, things get 
+complicated fast. Now you can assess risk,  
+
+66
+00:05:35,240 --> 00:05:42,640
+secure the trust of your customers and automate 
+compliance For SOC II, ISO 27001, HIPAA and more,  
+
+67
+00:05:42,640 --> 00:05:48,360
+with a single platform, Vanta. Vanta's 
+market-leading trust management platform helps  
+
+68
+00:05:48,360 --> 00:05:54,280
+you continuously monitor compliance, alongside 
+reporting and tracking risk. Plus, you can save  
+
+69
+00:05:54,280 --> 00:06:00,160
+hours by completing security questionnaires with 
+Vanta AI. Join thousands of global companies  
+
+70
+00:06:00,160 --> 00:06:05,800
+that use Vanta to automate evidence collection, 
+unify risk management, and streamline security  
+
+71
+00:06:05,800 --> 00:06:17,360
+reviews. Get $1,000 off Vanta when you go to 
+vanta.com/Lenny. That's V-A-M-T-A.com/Lenny. 
+
+72
+00:06:17,360 --> 00:06:23,480
+Let's start with getting into AI PM, becoming an 
+AI PM. There's this term that we hear a lot in  
+
+73
+00:06:23,480 --> 00:06:27,840
+AI PM, it's like bootcamp certifications 
+become an AI PM. What's the simplest way  
+
+74
+00:06:27,840 --> 00:06:31,200
+for people to understand what that means 
+other than just it's a PM that works with  
+
+75
+00:06:31,200 --> 00:06:34,640
+AI? Is there something more concrete that 
+you think about when you see that title?
+
+76
+00:06:34,640 --> 00:06:41,000
+So product manager is responsible for 
+bringing together design, engineering,  
+
+77
+00:06:41,000 --> 00:06:46,520
+the biz dev people, operations, sales, what have 
+you at the organization and going and shipping  
+
+78
+00:06:46,520 --> 00:06:51,760
+impact. So you're responsible for representing the 
+customer and ultimately getting to a solution to  
+
+79
+00:06:51,760 --> 00:06:56,680
+solve their problems. I think in addition to 
+that, the AI component is, I really break it  
+
+80
+00:06:56,680 --> 00:07:03,920
+down into maybe three flavors of AI product 
+management. So the first is AI platform PMs,  
+
+81
+00:07:03,920 --> 00:07:10,600
+and that's kind of where I find myself. These are 
+people who are building tools for AI engineers.  
+
+82
+00:07:10,600 --> 00:07:17,680
+So for context, I work at a company called Arize. 
+We're a observability and evaluation platform for  
+
+83
+00:07:17,680 --> 00:07:22,000
+artificial intelligence. We've been around for 
+a few years, we started with machine learning  
+
+84
+00:07:22,000 --> 00:07:28,280
+and ranking, regression, classification models, 
+basically any recommender system or black box  
+
+85
+00:07:28,280 --> 00:07:32,640
+you might find in an application. And we've 
+slowly been translating and pivoting over  
+
+86
+00:07:32,640 --> 00:07:38,120
+into broadly speaking, any type of AI. These 
+days, it's a lot of large language models. 
+
+87
+00:07:38,120 --> 00:07:44,720
+And so I think that with the rise of all of these 
+tools that are being built on top of Open AI's  
+
+88
+00:07:44,720 --> 00:07:50,680
+APIs or Anthropic APIs, basically any tools 
+on top of the large language model providers,  
+
+89
+00:07:50,680 --> 00:07:56,240
+it's actually pretty clunky. These interfaces are 
+pretty new. We've only really had people building  
+
+90
+00:07:56,240 --> 00:08:01,280
+on top of large language models for a couple of 
+years, and so the whole space is really nascent  
+
+91
+00:08:01,280 --> 00:08:06,200
+and the tools that you would use to build on 
+top of and understand is my app doing the thing  
+
+92
+00:08:06,200 --> 00:08:12,440
+I expect it to do, is really, really early.
+So that's the space I'm focused on around  
+
+93
+00:08:12,440 --> 00:08:18,480
+enabling AI engineers to understand the impact. 
+And if you're an AI PM at another company,  
+
+94
+00:08:18,480 --> 00:08:23,760
+one of our customer companies, you understand 
+that when you go to leadership, that my app is  
+
+95
+00:08:23,760 --> 00:08:27,840
+actually doing something and doing what 
+I expect it to do on the end business. 
+
+96
+00:08:27,840 --> 00:08:34,080
+I think on top of that there's also AI product 
+PMs. And AI product PMs are really the flavor of  
+
+97
+00:08:34,080 --> 00:08:41,360
+PM where the core product is centered around AI. 
+And an example of that would actually be something  
+
+98
+00:08:41,360 --> 00:08:49,320
+like a ChatGPT. Actually, another good example 
+would be, you had Raiza on, and NotebookLM is a  
+
+99
+00:08:49,320 --> 00:08:55,520
+really great example of that too. What I mean 
+by that is, the core experience is enabled by  
+
+100
+00:08:55,520 --> 00:09:01,240
+the model underneath the hood. That's sort of 
+the secret sauce. You have these researchers  
+
+101
+00:09:01,240 --> 00:09:06,640
+and engineers really pushing the boundaries 
+of technology forward in AI and then your job  
+
+102
+00:09:06,640 --> 00:09:12,800
+is really to package that technology and make it 
+consumable for either a business or enterprise or  
+
+103
+00:09:12,800 --> 00:09:19,280
+a consumer to really utilize that tech in some 
+way. So that's sort of the AI powered PM role,  
+
+104
+00:09:19,280 --> 00:09:26,520
+where the core competency, the core tech is 
+really what you're packaging and distributing. 
+
+105
+00:09:26,520 --> 00:09:31,360
+I think the third type of PM here is really the 
+one we were talking about a little bit earlier,  
+
+106
+00:09:31,360 --> 00:09:37,800
+which is this concept of you're an AI powered 
+PM. And to that end, I think that you're going  
+
+107
+00:09:37,800 --> 00:09:43,520
+to be enabled by AI technology across the entire 
+stack of the role you might already be doing as a  
+
+108
+00:09:43,520 --> 00:09:47,400
+product manager. And we'll get into a little 
+bit what that means as well, have some ideas  
+
+109
+00:09:47,400 --> 00:09:54,200
+and thoughts around that. But really what an 
+AI powered product manager in my mind does is,  
+
+110
+00:09:54,200 --> 00:09:58,760
+you're not really responsible for building the 
+core model from the ground up. Maybe you don't  
+
+111
+00:09:58,760 --> 00:10:05,120
+have the access to the resources or research 
+teams that you might have a Google or Open AI,  
+
+112
+00:10:05,120 --> 00:10:10,480
+but you can still utilize large language 
+models, or models of any kind really, to build  
+
+113
+00:10:10,480 --> 00:10:15,360
+an experience that is best for your customers.
+And that's really I think where a lot of PMs  
+
+114
+00:10:15,360 --> 00:10:21,280
+will also start trending towards as AI becomes 
+more pervasive from a technology standpoint.  
+
+115
+00:10:21,280 --> 00:10:25,960
+It almost feels a little bit like AI will be as 
+common as the database to some degree for SaaS  
+
+116
+00:10:25,960 --> 00:10:31,640
+applications. And so I think that's really where 
+if you really break it down, I kind of see in the  
+
+117
+00:10:31,640 --> 00:10:38,800
+future, in the near future, most PMs are probably 
+going to be one flavor of an AI product manager,  
+
+118
+00:10:38,800 --> 00:10:43,800
+either building tools for other PMs or other 
+companies that are deploying AI. Maybe you're  
+
+119
+00:10:43,800 --> 00:10:49,400
+behind one of the cutting edge models that's 
+going to go and be the next NotebookLM,  
+
+120
+00:10:49,400 --> 00:10:55,440
+or you're building around a transformer of 
+some kind or a GPT model that's doing some  
+
+121
+00:10:55,440 --> 00:10:59,680
+part of the work that you would want 
+to do to solve a customer's problem.
+
+122
+00:10:59,680 --> 00:11:01,560
+Let's actually make it even more real,  
+
+123
+00:11:01,560 --> 00:11:06,760
+what are some tools you use in your PM 
+work to be more efficient and productive?
+
+124
+00:11:06,760 --> 00:11:11,760
+I'm obsessed with Cursor, I'm obsessed with 
+Replit. These are tools I use all the time  
+
+125
+00:11:11,760 --> 00:11:17,600
+to just really build a prototype and try to 
+understand myself what's possible. That is  
+
+126
+00:11:17,600 --> 00:11:22,480
+super enabling for a product manager to show up 
+with a functional prototype. It's not going to  
+
+127
+00:11:22,480 --> 00:11:27,240
+be the thing you go and ship in production, 
+but at least the buttons work and maybe it's  
+
+128
+00:11:27,240 --> 00:11:33,760
+wired up reasonably correctly to tell a story.
+There's a really great tool, a lot of folks might  
+
+129
+00:11:33,760 --> 00:11:41,800
+be familiar with Vercel if you're trying to create 
+a landing page. So Vercel now has a starting point  
+
+130
+00:11:41,800 --> 00:11:46,800
+called v0, which allows you to type in a prompt 
+and get a really beautiful landing page on top of  
+
+131
+00:11:46,800 --> 00:11:51,600
+that. And it doesn't have to be just a landing 
+page, if you prompt it correctly and iterate  
+
+132
+00:11:51,600 --> 00:11:56,240
+with it, you could actually get a pretty good 
+working UI as well. So I think that gives you  
+
+133
+00:11:56,240 --> 00:12:01,440
+a good starting point for some of those initial 
+mock-ups you might be having with the design team. 
+
+134
+00:12:01,440 --> 00:12:08,160
+I also think if you're designing interfaces, 
+you might want to use AI for graphic design.  
+
+135
+00:12:08,160 --> 00:12:11,800
+Perhaps you're trying to come up with a logo 
+or you're trying to come up with something  
+
+136
+00:12:11,800 --> 00:12:16,960
+that resembles almost like the user story you 
+want to tell in some way and make it like a  
+
+137
+00:12:16,960 --> 00:12:22,200
+visual user story. I think that becomes so much 
+more approachable with tools like Midjourney,  
+
+138
+00:12:22,200 --> 00:12:27,040
+or even DALL-E and it's really at your 
+fingertips to how well can you prompt  
+
+139
+00:12:27,040 --> 00:12:31,520
+this thing to get you the output that you want.
+So to me, it really depends. I think if you're an  
+
+140
+00:12:31,520 --> 00:12:37,960
+experiences company, you might trend a little 
+bit more visual tools, like image generation  
+
+141
+00:12:37,960 --> 00:12:43,560
+might be really powerful too. So that's one 
+example. And then I think even for 3D modeling,  
+
+142
+00:12:44,520 --> 00:12:48,840
+there's some emerging tools there. I'm definitely 
+not the expert on that domain, but there's a  
+
+143
+00:12:48,840 --> 00:12:54,120
+lot in terms of if you're building physical 
+products, that's gotten a lot easier as well.
+
+144
+00:12:54,120 --> 00:12:59,240
+Okay, awesome. I want to come back to where 
+we started here. So you've shared three types  
+
+145
+00:12:59,240 --> 00:13:04,160
+of AI product managers. We've been focusing 
+on the third, which I wanted to get to and I  
+
+146
+00:13:04,160 --> 00:13:08,880
+love that we went there, which is just how to be 
+more productive, efficient, better as a PM using  
+
+147
+00:13:08,880 --> 00:13:14,760
+all these amazing tools that now exist. The 
+first two are, just to refresh folks' memory,  
+
+148
+00:13:14,760 --> 00:13:18,560
+one is becoming basically an infrastructure 
+PM. That's something that you're doing,  
+
+149
+00:13:18,560 --> 00:13:24,200
+basically building the base models and 
+tools. And then the other is building the  
+
+150
+00:13:24,200 --> 00:13:29,120
+UX and actual consumer experience of a product 
+that happens to integrate AI to make it better. 
+
+151
+00:13:29,800 --> 00:13:34,040
+So I'm guessing when people think AI 
+PM, that's probably where they're like,  
+
+152
+00:13:34,040 --> 00:13:39,920
+I want to build products that deeply 
+integrate AI. For people that want to  
+
+153
+00:13:39,920 --> 00:13:47,120
+say pivot their career to be an AI PM, what 
+helped you move in that direction/what would  
+
+154
+00:13:47,120 --> 00:13:54,200
+you recommend folks try to do and learn to be 
+able to get a job in one of those two buckets?
+
+155
+00:13:54,200 --> 00:14:00,080
+I feel a little bit like an outsider on 
+the space myself. I wasn't related at all,  
+
+156
+00:14:00,080 --> 00:14:04,520
+the field I studied was mechanical engineering. 
+I didn't really take computer science courses,  
+
+157
+00:14:04,520 --> 00:14:10,840
+I had to learn a lot of that on my own. And I 
+didn't take machine learning or AI courses either,  
+
+158
+00:14:10,840 --> 00:14:16,800
+I don't have a PhD or master's in the subject. 
+But coming back to both types of product managers  
+
+159
+00:14:16,800 --> 00:14:23,440
+you just described, there's the AI PM who's 
+building infrastructure for other AI engineers,  
+
+160
+00:14:23,440 --> 00:14:28,320
+and there's the AI power product manager 
+who's building AI products really. 
+
+161
+00:14:28,320 --> 00:14:33,520
+And I think in both cases, you care about 
+the end customer. At the end of the day,  
+
+162
+00:14:33,520 --> 00:14:37,520
+you really want to be in love with the problem. 
+I know that you said that, that was a great,  
+
+163
+00:14:37,520 --> 00:14:43,560
+great quote in my mind as well of, if you're in 
+love with the problem, you are trying to push the  
+
+164
+00:14:43,560 --> 00:14:50,640
+boundaries of what's possible with technology to 
+solve that problem. And for me, I really became  
+
+165
+00:14:50,640 --> 00:14:56,400
+obsessed trying to help really technical users, 
+AI engineers, data scientists, with problems that  
+
+166
+00:14:56,400 --> 00:15:01,760
+I thought were not super challenging, like how do 
+I build a dashboard to understand how my model is  
+
+167
+00:15:01,760 --> 00:15:07,600
+working? That can't be that hard to do. And then 
+as you get deeper, the complexity starts to emerge  
+
+168
+00:15:07,600 --> 00:15:12,840
+in that part of the stack and you have to realize 
+you pushing, you're actually responsible for  
+
+169
+00:15:12,840 --> 00:15:18,360
+pushing technology forward in some ways. You're 
+trying to see what's possible and keep pushing the  
+
+170
+00:15:18,360 --> 00:15:24,920
+space forward to solve that customer problem.
+I think the same thing is true for AI product  
+
+171
+00:15:25,520 --> 00:15:31,600
+managers, meaning you're really trying to design 
+the best customer experience and really solve  
+
+172
+00:15:31,600 --> 00:15:37,720
+your customers' problems. And I think if you are 
+obsessed with that and you spend time just trying  
+
+173
+00:15:37,720 --> 00:15:43,200
+to realize, what would an ideal experience look 
+like that I'm trying to solve, you'll find tools  
+
+174
+00:15:43,200 --> 00:15:50,480
+along the way to help unbox really that problem.
+So I think if we take an example of that,  
+
+175
+00:15:50,480 --> 00:15:57,240
+let's imagine that you're working for a company 
+that might be having customers that have customer  
+
+176
+00:15:57,240 --> 00:16:01,320
+support problems or people coming in with 
+complaints. And when you think about the  
+
+177
+00:16:01,320 --> 00:16:08,120
+surface area of customer support, it's not that 
+great. You usually have to type in some questions  
+
+178
+00:16:08,120 --> 00:16:14,120
+with a chatbot that's routing perhaps incorrectly, 
+[inaudible 00:16:13] some document to go solve a  
+
+179
+00:16:14,120 --> 00:16:19,480
+problem. Or if you're trying to call in, you have 
+to describe your problem, but you're not really  
+
+180
+00:16:19,480 --> 00:16:25,400
+sure if you're being heard correctly. It might be 
+super long wait times. And if you're the product  
+
+181
+00:16:25,400 --> 00:16:31,320
+manager of that experience, I think an ideal 
+product experience really looks like a customer  
+
+182
+00:16:31,320 --> 00:16:37,680
+reaches you with a problem and you're able to 
+really solve that problem for them. And it doesn't  
+
+183
+00:16:37,680 --> 00:16:42,920
+really matter what's in between, you want to 
+reduce the friction of that as much as possible. 
+
+184
+00:16:42,920 --> 00:16:47,720
+And so now when you think, okay, let's assume 
+that I'm starting with a phone call, there's  
+
+185
+00:16:47,720 --> 00:16:52,160
+a ton of tools that are starting to emerge. And 
+I think a really cutting edge one from the last  
+
+186
+00:16:52,160 --> 00:16:58,080
+couple of weeks has been Open AI releasing 
+a real time API. And the real time API is  
+
+187
+00:16:58,080 --> 00:17:04,600
+basically a voice API where you can provide some 
+text and almost have this real time experience  
+
+188
+00:17:04,600 --> 00:17:10,720
+with a bot that is actually AI generated. And if 
+you're a consumer, you can even try that out in  
+
+189
+00:17:10,720 --> 00:17:16,120
+the application yourself. You can open up ChatGPT 
+and if you're a Plus subscriber, you can try this  
+
+190
+00:17:16,120 --> 00:17:21,200
+cutting edge sort of voice chatbot experience.
+And why is this interesting? Because if you're  
+
+191
+00:17:21,200 --> 00:17:26,160
+a consumer and you're trying out technology and 
+you're trying out AI technology and trying to  
+
+192
+00:17:26,160 --> 00:17:32,360
+push the boundaries of what's possible, I think 
+you can have that light bulb aha moment of,  
+
+193
+00:17:32,360 --> 00:17:37,440
+I can take this thing that kind of feels like 
+it's early but it could be something here,  
+
+194
+00:17:37,440 --> 00:17:41,720
+and go take it to my team and say maybe 
+it's possible for us to use this thing. 
+
+195
+00:17:41,720 --> 00:17:48,080
+And so I think that's really what this whole 
+space is about. I want to underscore that,  
+
+196
+00:17:48,920 --> 00:17:55,200
+you are really driven by your own curiosity. 
+And your curiosity can push you in a lot of  
+
+197
+00:17:55,200 --> 00:18:01,200
+different directions in terms of the types of 
+tools you might want to pick up for yourself or  
+
+198
+00:18:01,200 --> 00:18:08,120
+even implement in your own product. So I think it 
+truly is this opportunity for people to see what  
+
+199
+00:18:08,120 --> 00:18:14,800
+drives them and try and find the tools that 
+really help make that experience possible.
+
+200
+00:18:14,800 --> 00:18:20,440
+To pull on this thread a little bit more, say 
+someone wants to apply, I want to be an AI PM,  
+
+201
+00:18:20,440 --> 00:18:26,520
+there's two questions here. One is, what do you 
+recommend they specifically learn skill-wise,  
+
+202
+00:18:26,520 --> 00:18:33,920
+technical-wise, to have some chance at becoming 
+an AI PM? If that's a thing versus just like,  
+
+203
+00:18:33,920 --> 00:18:37,640
+hey, just you're a PM, build awesome 
+products and they happen to integrate  
+
+204
+00:18:37,640 --> 00:18:42,200
+AI. That might be the best solution. If 
+that's your advice, definitely say that.
+
+205
+00:18:42,200 --> 00:18:47,600
+I think you're hitting on something on 
+a point that's super relevant to today,  
+
+206
+00:18:47,600 --> 00:18:53,520
+which is it almost feels really competitive now 
+to be in tech and to be a product manager. And  
+
+207
+00:18:53,520 --> 00:19:00,840
+the struggle is really to your point, what 
+are the skills I should have to really even  
+
+208
+00:19:00,840 --> 00:19:05,320
+apply for this role in the first place? And 
+then how do I stand out as an applicant? I  
+
+209
+00:19:05,320 --> 00:19:12,000
+feel like these are maybe two distinct things.
+You want to start with a foundation of what is  
+
+210
+00:19:12,000 --> 00:19:17,560
+machine learning, what is AI? What's the 
+knowledge that has really powered this  
+
+211
+00:19:17,560 --> 00:19:22,000
+evolution in technology? And you want 
+to keep driving in that direction with  
+
+212
+00:19:22,000 --> 00:19:26,880
+what are your interests? So there's really two 
+dimensions, you're trying to understand, okay,  
+
+213
+00:19:26,880 --> 00:19:31,360
+what are the things I need to know, and then 
+how can I use that in the problems I'm trying  
+
+214
+00:19:31,360 --> 00:19:36,360
+to solve or the industries that interest me?
+So I think there's this propensity of you want  
+
+215
+00:19:36,360 --> 00:19:41,960
+to be driven by that curiosity. So you could 
+start with your fundamentals of looking at  
+
+216
+00:19:41,960 --> 00:19:47,200
+videos on YouTube of Andrej Karpathy talking 
+about the foundation of LLMs. It's this great  
+
+217
+00:19:47,200 --> 00:19:53,200
+amazing resource. He put out this video a 
+little while ago. It's about an hour long,  
+
+218
+00:19:53,200 --> 00:19:57,960
+but you could put it into NotebookLM, maybe get 
+a more succinct version. But the idea is that you  
+
+219
+00:19:57,960 --> 00:20:04,400
+can really understand the technology in terms of 
+how it works and what the boundaries are. And then  
+
+220
+00:20:04,400 --> 00:20:09,840
+I think that the other dimension is just trying 
+to use the tools to figure out yourself how can  
+
+221
+00:20:09,840 --> 00:20:13,960
+I push the boundaries of what's possible? So 
+I think the combination of those two things  
+
+222
+00:20:13,960 --> 00:20:20,480
+are really what drive the skill level here.
+Maybe to bring this back to an earlier point,  
+
+223
+00:20:20,480 --> 00:20:26,800
+there is no program, there's no college degree 
+on product management, so there definitely isn't  
+
+224
+00:20:26,800 --> 00:20:31,320
+a college degree on AI product management. 
+And so I think the way that you stand out  
+
+225
+00:20:31,320 --> 00:20:37,840
+is through showing interest in the space and 
+building your own skill set and skill stack  
+
+226
+00:20:37,840 --> 00:20:43,080
+around what is the foundation of AI and how do 
+I apply it to the industry I'm interested in? 
+
+227
+00:20:43,080 --> 00:20:49,080
+And that's actually related to the second point 
+of how do I stand out as an applicant? And it  
+
+228
+00:20:49,080 --> 00:20:54,440
+feels like this moment where you can actually 
+go and have almost like a portfolio of products  
+
+229
+00:20:54,440 --> 00:20:58,760
+that you've tried to build and maybe they're 
+just prototypes, but they really help you stand  
+
+230
+00:20:58,760 --> 00:21:04,320
+out to a hiring manager that might be deciding 
+who's the person I want to bring on board. 
+
+231
+00:21:04,320 --> 00:21:10,400
+And maybe to zoom out for a sec, as someone 
+who's been a part of the hiring process for  
+
+232
+00:21:10,400 --> 00:21:17,120
+AI PMs before, I think the hiring process is 
+really designed to understand three things  
+
+233
+00:21:17,120 --> 00:21:23,080
+about a person, and that's can this person 
+do the job I'm hiring them to do? Are they  
+
+234
+00:21:23,080 --> 00:21:28,680
+excited to do the work that we do here, and 
+do I like to work with them? And so I think  
+
+235
+00:21:28,680 --> 00:21:37,040
+by having this portfolio where if you have that 
+foundation of AI and ML of at least being able to  
+
+236
+00:21:37,040 --> 00:21:42,040
+describe what the technology can do, and then 
+you have this portfolio of products, you're  
+
+237
+00:21:42,040 --> 00:21:47,320
+actually answering both of those questions for 
+the hiring manager even before they talk to you. 
+
+238
+00:21:47,320 --> 00:21:52,440
+So you're shortcutting the process by showing 
+them how you think and how you like to spend  
+
+239
+00:21:52,440 --> 00:21:56,840
+time and what your interests are and hobbies 
+are. And then all you have to do is really  
+
+240
+00:21:56,840 --> 00:22:02,640
+nail that phone interview. And as long 
+as you match the culture of the company,  
+
+241
+00:22:02,640 --> 00:22:07,000
+I think you've actually shortcuted part one and 
+part two, which is what most interview processes  
+
+242
+00:22:07,000 --> 00:22:11,960
+are designed to do, which is why they're this 
+sort of, you have to go talk to three different  
+
+243
+00:22:11,960 --> 00:22:16,520
+people to see can you do marketing, can you do 
+engineering, can you do core product management? 
+
+244
+00:22:16,520 --> 00:22:21,080
+And so that's really my advice is really, 
+you could start with building your skill  
+
+245
+00:22:21,080 --> 00:22:27,480
+stack and starting with the foundation up, 
+let your curiosity drive you and then turn  
+
+246
+00:22:27,480 --> 00:22:31,120
+that into a portfolio that you can 
+use as an applicant to stand out.
+
+247
+00:22:31,120 --> 00:22:37,160
+So what I love about this is basically, I 
+wouldn't say the hack to get hired as an AI PM,  
+
+248
+00:22:37,160 --> 00:22:43,160
+but just the way you will come across 
+as clearly this person is worth paying  
+
+249
+00:22:43,160 --> 00:22:47,200
+attention to. You've actually built 
+things with AI like actual products,  
+
+250
+00:22:47,200 --> 00:22:52,480
+especially now that it's much easier to do as. 
+You can use tools like the ones you mentioned,  
+
+251
+00:22:52,480 --> 00:22:58,680
+Cursor, v0, Replit. You can storyboard out your 
+ideas using the stuff you mentioned, Midjourney,  
+
+252
+00:22:58,680 --> 00:23:03,000
+DALL-E and things like that. So I love that, 
+it's super tactical. So it's almost like if  
+
+253
+00:23:03,000 --> 00:23:08,000
+you're applying for an AI PM role and you 
+don't have products that you have built  
+
+254
+00:23:08,000 --> 00:23:11,880
+and ideally put out into the world, 
+you're not going to have a good time.
+
+255
+00:23:11,880 --> 00:23:19,120
+I actually think it's probably easier now to break 
+into AI product management than it was before. So  
+
+256
+00:23:19,120 --> 00:23:24,320
+let me hit on that point a little bit more, which 
+is before you actually probably needed to have  
+
+257
+00:23:24,320 --> 00:23:29,120
+more of a foundation and background in machine 
+learning to get a shot at one of these companies  
+
+258
+00:23:29,120 --> 00:23:36,280
+building AI products. They required a depth of 
+knowledge in machine learning and types of models,  
+
+259
+00:23:36,280 --> 00:23:41,280
+and you were probably more deeply involved in 
+what should the training data look like and the  
+
+260
+00:23:41,280 --> 00:23:46,200
+split of the data and how do I launch this thing 
+and all of this infrastructure. But really now,  
+
+261
+00:23:46,200 --> 00:23:52,880
+an AI product manager is someone who's building 
+experiences around or for other AI product people. 
+
+262
+00:23:52,880 --> 00:23:57,920
+And so an example there would be, there are 
+these incredible videos that are being put  
+
+263
+00:23:57,920 --> 00:24:05,960
+out right now on YouTube on how to build an 
+app in an hour. And I credit Greg Isenberg,  
+
+264
+00:24:05,960 --> 00:24:11,360
+he's really pioneered some of this 
+format of he'll show up and just like,  
+
+265
+00:24:11,360 --> 00:24:16,800
+here's how I built a product within 45 minutes 
+and how you use the same tools we just described. 
+
+266
+00:24:16,800 --> 00:24:21,720
+And I have this tongue in cheek example a little 
+bit too that's pretty relevant, which was I was  
+
+267
+00:24:21,720 --> 00:24:27,680
+trying to describe Replit to someone, to a friend 
+of mine, who actually was basically saying,  
+
+268
+00:24:28,480 --> 00:24:32,680
+I don't really have time to learn another tool 
+right now. It feels like there's so much in the  
+
+269
+00:24:32,680 --> 00:24:37,520
+space and I think there's really nothing better 
+than just showing someone what's possible. So  
+
+270
+00:24:37,520 --> 00:24:44,760
+I open up my phone and Replit, you can just go 
+to as a URL on your phone. And what you can do  
+
+271
+00:24:44,760 --> 00:24:49,560
+is type in a prompt to their Replit agent 
+and it will literally build a website for  
+
+272
+00:24:49,560 --> 00:24:55,400
+you and host it within a matter of seconds.
+And what's really funny is I just built this  
+
+273
+00:24:55,400 --> 00:25:00,080
+example of build me a signup page for this 
+newsletter. And it did actually a pretty  
+
+274
+00:25:00,080 --> 00:25:03,800
+reasonable job on first pass, but there's things 
+you want to do to keep iterating on it. So then  
+
+275
+00:25:04,360 --> 00:25:09,280
+it prompted again, oh, make it look a little bit 
+nicer, use these colors. And within five minutes,  
+
+276
+00:25:09,280 --> 00:25:13,280
+I had a working prototype for a signup 
+page that I built on my phone. That  
+
+277
+00:25:13,280 --> 00:25:18,360
+would not have been possible even a year ago.
+And I think the way that the technology is,  
+
+278
+00:25:18,360 --> 00:25:22,880
+trending is things will keep getting easier, 
+and as a product manager, your curiosity is  
+
+279
+00:25:22,880 --> 00:25:26,680
+going to keep pushing you forward so that 
+you can be the person out there saying, hey,  
+
+280
+00:25:26,680 --> 00:25:31,440
+did you see this cool thing that I just pulled 
+up? And you're really the one that's almost the  
+
+281
+00:25:31,440 --> 00:25:36,320
+expert on what's the cool new thing that you 
+can go and apply at your company. So I think  
+
+282
+00:25:36,320 --> 00:25:41,920
+that's really part of the role too, is being 
+interested, genuinely curious of the space too.
+
+283
+00:25:41,920 --> 00:25:45,560
+I'm really happy you shared that. And it reminds 
+me, I'm just going to go on a tangent here, I want  
+
+284
+00:25:45,560 --> 00:25:52,400
+to get your take on this, I had this kind of hot 
+take a month ago or so, there's this sense that  
+
+285
+00:25:52,400 --> 00:25:59,320
+as AI tooling emerged, that product managers are 
+screwed. Why do you need product managers when you  
+
+286
+00:25:59,320 --> 00:26:04,360
+could just build things, engineers could use all 
+these tools, designers? What's the point of a PM  
+
+287
+00:26:04,360 --> 00:26:10,440
+in a world where AI can just build things for you?
+And I realized it's exactly the opposite,  
+
+288
+00:26:10,440 --> 00:26:16,560
+that you may not need any other function if you 
+have a PM, because if you think about it, what  
+
+289
+00:26:16,560 --> 00:26:20,640
+are these AI tools amazing at? They're amazing 
+at building things. You tell them what to build,  
+
+290
+00:26:20,640 --> 00:26:25,800
+they build them. The hardest part becomes 
+knowing what to build, finding opportunities,  
+
+291
+00:26:25,800 --> 00:26:31,880
+problems people need solved, and then articulating 
+it very clearly to an AI tool, what to build. And  
+
+292
+00:26:31,880 --> 00:26:37,360
+then having the taste and sense of what is good 
+and great and what will work in the market. And  
+
+293
+00:26:37,360 --> 00:26:42,280
+that's exactly the job of a product manager.
+So I'm curious to hear your take if you agree  
+
+294
+00:26:42,280 --> 00:26:47,960
+with that, basically that PMs are the best 
+positioned function to thrive in this world?
+
+295
+00:26:47,960 --> 00:26:53,680
+Yeah, I totally believe that. I think that 
+there's a feeling that executives might have  
+
+296
+00:26:53,680 --> 00:26:59,760
+or VPs of companies might have of like we need 
+to get into AI, but the challenge is that there's  
+
+297
+00:26:59,760 --> 00:27:06,360
+this inclination towards doing the same thing 
+that's working so far. And so I think the role  
+
+298
+00:27:06,360 --> 00:27:12,880
+of an AI PM in this type of organization is really 
+to be the representative of how can we use these  
+
+299
+00:27:12,880 --> 00:27:18,960
+tools to their highest leverage. And so if you 
+combine the earlier notes of, you know what this  
+
+300
+00:27:18,960 --> 00:27:24,040
+technology is capable of, you know the customer 
+problems deeply, you're the representative of the  
+
+301
+00:27:24,040 --> 00:27:28,360
+customer at the company, you're really in the 
+best position to get the point across of what  
+
+302
+00:27:28,360 --> 00:27:35,160
+should go and get built. And I think that's a 
+really powerful position to be in at a company. 
+
+303
+00:27:35,160 --> 00:27:39,720
+And then I'll actually build on one of the 
+core product skill sets that you mentioned  
+
+304
+00:27:39,720 --> 00:27:46,080
+on your podcast too, which is influence. And what 
+these tools really allow you to do is up level,  
+
+305
+00:27:46,080 --> 00:27:51,200
+like max out that influence, meaning you can now 
+communicate ideas, coming back to the prototype  
+
+306
+00:27:51,200 --> 00:27:55,560
+note to design, you can communicate ideas to 
+engineering, and you can communicate ideas  
+
+307
+00:27:55,560 --> 00:28:00,160
+to the higher ups at the company around 
+what should go and get built. So I think  
+
+308
+00:28:01,080 --> 00:28:07,320
+when you're able to translate the idea to the 
+person that you're trying to communicate it to,  
+
+309
+00:28:07,320 --> 00:28:11,440
+these tools are really incredible at that. And 
+I think it allows an AI product manager to be  
+
+310
+00:28:11,440 --> 00:28:17,760
+super high leverage. So to me it's like, I totally 
+agree, being an AI product manager feels like the  
+
+311
+00:28:17,760 --> 00:28:23,280
+highest leverage position you could be in at the 
+company right now, especially in the age of AI.
+
+312
+00:28:23,280 --> 00:28:28,360
+Awesome. Okay, I'm glad we agree there. And what 
+you just mentioned, we were talking about Mihika  
+
+313
+00:28:28,360 --> 00:28:32,400
+before we started recording, and one of her 
+superpowers and we'll link to her episode  
+
+314
+00:28:32,400 --> 00:28:39,680
+is that she is designer engineer PM, she can 
+just do all of it. And that partly has been  
+
+315
+00:28:39,680 --> 00:28:44,520
+why she has been so successful at Figma 
+and influencing leadership to build these  
+
+316
+00:28:44,520 --> 00:28:48,480
+products that they were like, nah, I don't 
+know if we need a slides product. And so  
+
+317
+00:28:48,480 --> 00:28:54,080
+now everyone can be a Mihika basically that 
+you can build and design as a PM. So anyway,  
+
+318
+00:28:54,080 --> 00:28:59,480
+I think we've gone down that road far enough.
+I want to shift a little bit to talking about  
+
+319
+00:28:59,480 --> 00:29:05,400
+how to thrive as an AI PM. Say you got into 
+this role, you're building with AI tools,  
+
+320
+00:29:05,400 --> 00:29:11,600
+or you're building platforms for folks to build 
+on. Let me ask this, let me try it this way. What  
+
+321
+00:29:11,600 --> 00:29:20,280
+have you seen separates the typical AI product 
+manager from say the top 5% AI product managers?
+
+322
+00:29:20,280 --> 00:29:26,000
+We talked about what are AI product managers, 
+how do you build AI powered products around  
+
+323
+00:29:26,000 --> 00:29:30,360
+what the fundamental technology is? I think 
+there was this really interesting moment  
+
+324
+00:29:30,360 --> 00:29:37,320
+where about two years ago, actually almost 
+roughly to this time, ChatGPT launches,  
+
+325
+00:29:37,320 --> 00:29:44,280
+and I think everyone who tried it out was pretty 
+impressed by a couple of things. The interface was  
+
+326
+00:29:44,280 --> 00:29:48,800
+super easy to use, it felt really intuitive. 
+The model was pretty capable, it felt almost  
+
+327
+00:29:48,800 --> 00:29:52,960
+like human-like. Of course that was actually an 
+earlier model than what's even available today,  
+
+328
+00:29:52,960 --> 00:29:57,040
+and when you look back on it's almost like 
+looking at the old iPhone or something. You  
+
+329
+00:29:57,040 --> 00:30:00,680
+kind of have to have this moment of, wow, 
+that was really impressive at the time,  
+
+330
+00:30:00,680 --> 00:30:04,800
+but now if you try to use it, you're like, 
+this thing sucks. It doesn't even do half  
+
+331
+00:30:04,800 --> 00:30:09,640
+the stuff. You get conditioned to the 
+technology continuing to get better. 
+
+332
+00:30:09,640 --> 00:30:17,040
+But when that moment happened and it did kind of 
+feel like this iPhone moment around AI products,  
+
+333
+00:30:17,040 --> 00:30:25,280
+it was really interesting to see what happened 
+next. And what I mean by that is we sit in the  
+
+334
+00:30:25,280 --> 00:30:31,080
+landscape at a place where we get to see where a 
+lot of other companies are building. So we have  
+
+335
+00:30:31,080 --> 00:30:37,280
+customers that are super well known, household 
+brands, Spotify and Instacart and these sorts of  
+
+336
+00:30:37,280 --> 00:30:43,120
+companies that people love and use every single 
+day. And what ended up happening was we talked  
+
+337
+00:30:43,120 --> 00:30:48,280
+to a lot of folks of like, well, what are you 
+doing around building around this technology,  
+
+338
+00:30:48,280 --> 00:30:53,920
+this really game changing sort of shift 
+in AI? And the first thing that everyone  
+
+339
+00:30:53,920 --> 00:31:01,000
+seemed to build was actually another 
+ChatGPT, but on top of their own data. 
+
+340
+00:31:01,000 --> 00:31:06,000
+And for some reason everyone gravitated towards 
+this particular use cases. All the AI product  
+
+341
+00:31:06,000 --> 00:31:10,840
+managers I knew were like, oh, we're building an 
+internal chatbot on top of our knowledge base,  
+
+342
+00:31:10,840 --> 00:31:14,880
+and it's going to be able to answer questions 
+and it's going to be great. And when you look  
+
+343
+00:31:14,880 --> 00:31:22,080
+at the products that were built, how much usage 
+do they really have is I think not very well  
+
+344
+00:31:22,080 --> 00:31:28,000
+understood. Was that the right thing to do?
+So coming back to your earlier question,  
+
+345
+00:31:28,000 --> 00:31:37,520
+how do you go and thrive as, be a top 5% AI PM, 
+versus maybe an AI PM that isn't as stellar? I  
+
+346
+00:31:37,520 --> 00:31:42,280
+actually think it's coming back to that earlier 
+point of don't do what everyone else is doing.  
+
+347
+00:31:42,280 --> 00:31:47,360
+Just because it feels intuitive to go and 
+replicate this interface that feels really  
+
+348
+00:31:47,360 --> 00:31:53,040
+great and everyone's bought in because they're 
+familiar with it, you really have to think,  
+
+349
+00:31:53,040 --> 00:31:57,840
+is this the thing our business needs right now? 
+Is this the problem that we need to go and solve? 
+
+350
+00:31:58,360 --> 00:32:04,720
+And I think if you look deeper at that, you'll 
+actually find that the interface for AI might  
+
+351
+00:32:04,720 --> 00:32:09,880
+look really different. It won't necessarily look 
+like a chatbot. It might look like you're trying  
+
+352
+00:32:09,880 --> 00:32:15,440
+to optimize or speed up a part of the process that 
+humans have to do today that you can make their  
+
+353
+00:32:15,440 --> 00:32:21,000
+life easier. And for us, that was data analysis. 
+We have to look at a lot of data to make decisions  
+
+354
+00:32:21,000 --> 00:32:27,400
+within our own company and so we decided to try 
+to automate that. We did also ship a small chatbot  
+
+355
+00:32:27,400 --> 00:32:32,320
+just to understand how the tech work, but on top 
+of that, our interface around AI looks so, so  
+
+356
+00:32:32,320 --> 00:32:36,680
+different. And I think that a lot of the cutting 
+edge experiences around AI kind of look like that  
+
+357
+00:32:36,680 --> 00:32:41,680
+too. They don't really always resemble chatbots. 
+And I think that that's really the question  
+
+358
+00:32:41,680 --> 00:32:47,120
+you have to ask yourself is, what's the right 
+interface when I'm designing a product like this?
+
+359
+00:32:47,120 --> 00:32:53,160
+So what I'm hearing is, if your team is building 
+something that's very similar to some other,  
+
+360
+00:32:53,160 --> 00:32:56,880
+to a foundational models product 
+for example, probably a red flag,  
+
+361
+00:32:56,880 --> 00:33:00,920
+probably not going to be a huge opportunity. 
+So optimize for things that feel different  
+
+362
+00:33:00,920 --> 00:33:04,200
+and new. Anything else you want to 
+add there? Because I have a question.
+
+363
+00:33:04,200 --> 00:33:11,000
+Yeah, I think that's almost like a point of 
+what do people do for the last two years,  
+
+364
+00:33:11,000 --> 00:33:18,320
+and now there's this moment of this actually 
+happening again. And this moment is happening  
+
+365
+00:33:18,320 --> 00:33:27,280
+around the term of AI agents. I think if you 
+really look at it, I actually bring up Yuriy's  
+
+366
+00:33:27,280 --> 00:33:29,840
+point again because I was listening to that 
+episode, I thought that was so insightful of  
+
+367
+00:33:30,800 --> 00:33:35,440
+he gets so many emails every single day of, we're 
+AI for this, we're building an AI agent for that.  
+
+368
+00:33:35,440 --> 00:33:41,400
+But again, you're sort of trying to fit this 
+technology to solve a problem that, you're not  
+
+369
+00:33:41,400 --> 00:33:45,800
+really describing the problem. You're describing 
+the solution, an AI agent to do something. 
+
+370
+00:33:45,800 --> 00:33:52,440
+So if you look at it, I'd really ask yourself, 
+does it make sense to build an AI agent within  
+
+371
+00:33:52,440 --> 00:33:58,440
+our company or is it just better to allow 
+the foundation model companies to build this  
+
+372
+00:33:58,440 --> 00:34:04,320
+agentic layer within their technology? And 
+then your job is to make that experience so  
+
+373
+00:34:04,320 --> 00:34:09,280
+amazingly seamless in your existing product, that 
+it doesn't even feel like AI in the first place.  
+
+374
+00:34:09,280 --> 00:34:13,960
+And I think that's really powerful. That's the 
+area where product managers can truly innovate.  
+
+375
+00:34:13,960 --> 00:34:18,560
+Because let's be honest, you're probably not 
+going to have these cutting edge researchers  
+
+376
+00:34:18,560 --> 00:34:23,200
+that can go and design a model from the ground 
+up or maybe design some new technique to build  
+
+377
+00:34:23,200 --> 00:34:29,360
+a next agent framework. But what you can do 
+is take that technology and find a way to  
+
+378
+00:34:29,360 --> 00:34:35,680
+apply it in your organization, and that's where 
+I think the role of the AI PM really stands out.
+
+379
+00:34:35,680 --> 00:34:40,520
+This episode is brought to you by Paragon, the 
+developer platform for building native customer  
+
+380
+00:34:40,520 --> 00:34:45,600
+facing integrations with third party apps. Our 
+native integrations on your product roadmap,  
+
+381
+00:34:45,600 --> 00:34:50,000
+whether it's to ingest context from your 
+users' external data and documents, or to  
+
+382
+00:34:50,000 --> 00:34:54,840
+sync data and automate tasks across your users 
+other apps, integrations are mission-critical  
+
+383
+00:34:54,840 --> 00:34:59,880
+for B2B software products today. But building 
+these integrations in-house cost an average  
+
+384
+00:34:59,880 --> 00:35:04,480
+of three months of engineering according 
+to the 2024 State of Integration Survey,  
+
+385
+00:35:04,480 --> 00:35:09,040
+which results in difficult roadmap trade offs. 
+This is why engineering teams at Copy.ai,  
+
+386
+00:35:09,040 --> 00:35:16,120
+AI21, and over 100, other B2B SaaS companies use 
+Paragon so they can focus their efforts on core  
+
+387
+00:35:16,120 --> 00:35:22,200
+product features, not integrations. The result, 
+they've shipped integrations seven times faster,  
+
+388
+00:35:22,200 --> 00:35:26,680
+all while avoiding the never ending maintenance 
+that comes with rolling your own integrations. 
+
+389
+00:35:26,680 --> 00:35:32,080
+Visit useparagon.com/Lenny to see how 
+Paragon can help you accelerate your  
+
+390
+00:35:32,080 --> 00:35:37,160
+product's integration roadmap today and get 
+$1,000 in credit on their Pro and Enterprise  
+
+391
+00:35:37,160 --> 00:35:44,400
+plans. That's useP-A-R-A-G-O-N.com.
+I imagine a lot of product leaders  
+
+392
+00:35:44,400 --> 00:35:47,880
+are hearing this and be like, thank God 
+I need everyone on my team to hear this,  
+
+393
+00:35:47,880 --> 00:35:54,440
+because I am guessing every PM and every company 
+is looking and proposing all these ideas, all  
+
+394
+00:35:54,440 --> 00:35:58,640
+these AI based ideas just because it's like, oh, 
+we got to do AI. Here's an idea, here's an idea,  
+
+395
+00:35:58,640 --> 00:36:03,440
+and there's all these people chasing AI products. 
+And so I think this advice is really important,  
+
+396
+00:36:04,160 --> 00:36:08,800
+and this has come up a number of times, 
+people just try to keep reminding folks,  
+
+397
+00:36:08,800 --> 00:36:14,360
+focus on the problem you're solving and AI is a 
+tool to solve it, not AI for blank just because. 
+
+398
+00:36:14,360 --> 00:36:18,200
+How have you found ways to find really 
+interesting, actually good ideas for  
+
+399
+00:36:18,200 --> 00:36:22,000
+how to leverage AI within your company or 
+companies you've seen?? Is it hackathons?  
+
+400
+00:36:22,000 --> 00:36:27,840
+Is it like we have our goals and just make 
+sure there's AI parts to a solution? Is there  
+
+401
+00:36:27,840 --> 00:36:34,240
+anything practically that you find helpful 
+in finding good ideas that are AI oriented?
+
+402
+00:36:34,240 --> 00:36:42,120
+There's three things you could do in your company 
+that I think will really, if you try to implement  
+
+403
+00:36:42,120 --> 00:36:48,520
+this tomorrow, you'd probably start seeing 
+those ideas coming back. So the first one is,  
+
+404
+00:36:48,520 --> 00:36:54,960
+you actually brought up an earlier point of how 
+do I measure, what should I be measuring here?  
+
+405
+00:36:54,960 --> 00:37:00,800
+And I think that PMs gravitate towards metrics, 
+and I actually think that every AI PM actually  
+
+406
+00:37:00,800 --> 00:37:06,680
+needs a metric. And every PM within a business 
+is tasked with moving some business metric,  
+
+407
+00:37:06,680 --> 00:37:11,640
+but there actually isn't one for building 
+prototypes with AI. Which is really interesting,  
+
+408
+00:37:11,640 --> 00:37:16,480
+I've talked to so many companies and I'm like, 
+how do you measure what the impact is of AI within  
+
+409
+00:37:16,480 --> 00:37:19,600
+your business? They're like, oh, well we're 
+not expecting it to move a business metric,  
+
+410
+00:37:19,600 --> 00:37:24,560
+it's not moving revenue. So then how do you really 
+measure if what you're doing is working? And I  
+
+411
+00:37:24,560 --> 00:37:29,040
+think that's where you need a metric of how 
+many shots are you taking in the first place? 
+
+412
+00:37:29,040 --> 00:37:34,400
+And that kind of ties into the next point which 
+is ,I think hackathons are great. I think that  
+
+413
+00:37:34,400 --> 00:37:40,160
+getting people to be hands-on in the first 
+place, it really removes that feeling that  
+
+414
+00:37:40,160 --> 00:37:44,480
+this technology is not approachable. So 
+the goal is really to get everyone in the  
+
+415
+00:37:44,480 --> 00:37:47,840
+organization to try to use this thing. 
+And I think that's really actually a  
+
+416
+00:37:47,840 --> 00:37:55,200
+great position for an AI PM to be in as well.
+So oftentimes, I think there's this aversion  
+
+417
+00:37:55,200 --> 00:38:00,120
+sometimes to hackathons because it's taking away 
+from company time, but what you can do is try to  
+
+418
+00:38:00,120 --> 00:38:04,720
+come with some ideas of problems to be solved 
+and then see how can I use AI to actually solve  
+
+419
+00:38:04,720 --> 00:38:10,200
+those problems? What you're going to come 
+out with is maybe a list of 10 problems and  
+
+420
+00:38:10,200 --> 00:38:14,440
+nine of them you try to apply AI towards and it 
+doesn't work. It's like, this thing doesn't work  
+
+421
+00:38:14,440 --> 00:38:20,160
+as well as I thought it would, or it's like 
+you're trying to get a very specific answer,  
+
+422
+00:38:20,160 --> 00:38:26,560
+but AI doesn't actually do a good job of that.
+I actually have an example here of we actually  
+
+423
+00:38:26,560 --> 00:38:31,440
+did our own hackathon a couple of weeks ago, and 
+the engineering team had all these ideas and one  
+
+424
+00:38:31,440 --> 00:38:38,840
+of them was this Slackbot that actually alerted 
+a person that was on call for a problem. So we  
+
+425
+00:38:38,840 --> 00:38:43,240
+thought it was going to be so simple, if someone 
+posted on a support channel, hey, I'm having a  
+
+426
+00:38:43,240 --> 00:38:48,160
+problem with this thing, the Slackbot would take 
+that question and actually ping the right person.  
+
+427
+00:38:48,160 --> 00:38:51,360
+We thought, oh, this is going to be great. This 
+is a perfect use case for AI and we'll give access  
+
+428
+00:38:51,360 --> 00:38:55,680
+to this table and we'll look at problems, we'll 
+classify them, and then ping the right person. It  
+
+429
+00:38:55,680 --> 00:39:00,840
+turns out that's actually a really hard problem 
+to do, because there's so much context that is  
+
+430
+00:39:00,840 --> 00:39:06,040
+missing in, well, this person was working on this 
+problem two weeks ago, but now they're working on  
+
+431
+00:39:06,040 --> 00:39:11,720
+this other project and some other team took over.
+And I think the challenge there is really  
+
+432
+00:39:11,720 --> 00:39:16,800
+identifying the right problems to 
+solve in the first place. And a good  
+
+433
+00:39:16,800 --> 00:39:20,880
+intuition to build around that is through 
+hackathons, through coming with problems,  
+
+434
+00:39:20,880 --> 00:39:27,520
+and then seeing where the ideas actually stick 
+versus where they actually aren't super great. 
+
+435
+00:39:27,520 --> 00:39:35,040
+And then I think the last point here is 
+really obsessing about the details of the  
+
+436
+00:39:35,040 --> 00:39:40,640
+user experience in the first place. And you were 
+looking for problems to go and be solved with AI,  
+
+437
+00:39:40,640 --> 00:39:47,360
+but I think part of that is really looking at 
+what are successful AI products today? And you can  
+
+438
+00:39:47,360 --> 00:39:54,480
+probably try a few, name a few, but a good example 
+of that might be, and really if I zoom out,  
+
+439
+00:39:54,480 --> 00:40:01,800
+the goal is really to find experiences where AI 
+is actually magical and what do they get right. 
+
+440
+00:40:01,800 --> 00:40:08,480
+So an example of that might be there's this funny 
+anecdote of, what a lot of people are trying to do  
+
+441
+00:40:08,480 --> 00:40:17,560
+with AI is automate the job away entirely. And 
+there's this story of Betty Crocker actually  
+
+442
+00:40:17,560 --> 00:40:26,600
+launching this cake mix where all you have to do 
+is mix water and you could kind of bake a cake  
+
+443
+00:40:26,600 --> 00:40:30,760
+with just one ingredient. All you needed was this 
+cake mix. And it turns out that actually tanked  
+
+444
+00:40:30,760 --> 00:40:35,760
+their sales. So all you have to do is basically 
+change the instruction so that all you have to  
+
+445
+00:40:35,760 --> 00:40:41,920
+do is add eggs. And that one thing created this 
+effect where their sales skyrocketed, because they  
+
+446
+00:40:41,920 --> 00:40:47,680
+realize that customer actually wants to have 
+a little bit of control over the experience. 
+
+447
+00:40:47,680 --> 00:40:54,200
+And you can see that even now if you've been able 
+to take a Waymo or a self-driving car, the car is  
+
+448
+00:40:54,200 --> 00:40:58,720
+fully self-driving, but you can still control the 
+air conditioning, you can still control the music,  
+
+449
+00:40:58,720 --> 00:41:03,560
+and so you want to leave some knobs and levers 
+for your customer to feel like they're still  
+
+450
+00:41:03,560 --> 00:41:08,600
+in control of the experience. And that's 
+kind of like the Ikea effect applied to AI,  
+
+451
+00:41:08,600 --> 00:41:13,720
+people feel more empowered when they actually 
+have an impact on the end experience versus  
+
+452
+00:41:13,720 --> 00:41:17,240
+everything being taken care of them.
+So that's just one insight we realized  
+
+453
+00:41:17,240 --> 00:41:21,560
+from looking at successful AI products versus 
+ones that try to automate everything away. And  
+
+454
+00:41:21,560 --> 00:41:25,560
+I think if you're looking at the space, you're 
+going to find so many more examples like that.
+
+455
+00:41:25,560 --> 00:41:30,400
+That's such an important point, that even if 
+you can build a product that is fully automated,  
+
+456
+00:41:30,400 --> 00:41:33,800
+you may not want to. And that Betty 
+Crocker example is really interesting,  
+
+457
+00:41:33,800 --> 00:41:40,160
+it reminds me of Blue Apron and all these food 
+making. I have a friend who told me that he cooks,  
+
+458
+00:41:40,160 --> 00:41:42,840
+he's cooking a lot these days and 
+just finding all this time to cook,  
+
+459
+00:41:42,840 --> 00:41:48,240
+and then turns out he's using Blue Apron. 
+It feels to you like you're cooking and  
+
+460
+00:41:48,240 --> 00:41:54,240
+you can tell people, hey, I'm cooking 
+a lot, but it's not quite the same.
+
+461
+00:41:54,240 --> 00:41:59,000
+Yeah. But actually if you don't mind, I could 
+probe on that. That's a really interesting point  
+
+462
+00:41:59,000 --> 00:42:03,160
+with Blue Apron, because if you look at that 
+product, what's the problem that they're trying  
+
+463
+00:42:03,160 --> 00:42:12,720
+to solve? Are they trying to get people to be fed 
+or eat food? I don't think so actually. I think  
+
+464
+00:42:12,720 --> 00:42:15,920
+if you're really trying to solve that particular 
+problem, you'd probably build something closer  
+
+465
+00:42:15,920 --> 00:42:20,320
+to like DoorDash, which is just you press a 
+button and food shows up. And Blue Apron on  
+
+466
+00:42:20,320 --> 00:42:24,760
+the other hand, is trying to get people to feel 
+like they're getting closer to cooking or feeling  
+
+467
+00:42:24,760 --> 00:42:30,000
+closer to the experience of making something.
+And I think that's sort of what really  
+
+468
+00:42:30,000 --> 00:42:35,680
+amazing AI products do as well. They're 
+making your experience or the product,  
+
+469
+00:42:35,680 --> 00:42:40,960
+AI makes your product easier to use and it brings 
+the barrier to creation down. And I think that's  
+
+470
+00:42:40,960 --> 00:42:45,600
+really what it's good at, not necessarily 
+just trying to automate the problem away.
+
+471
+00:42:45,600 --> 00:42:49,320
+Such an important point. Again, coming 
+back to your main point here is just  
+
+472
+00:42:49,320 --> 00:42:54,360
+focus on the problem you're solving and 
+AI could help you solve it, may not. 
+
+473
+00:42:54,360 --> 00:43:00,520
+Okay, we went on a tangent from advice you 
+were sharing on what separates typical AI  
+
+474
+00:43:00,520 --> 00:43:08,840
+PMs from top 5% PMs, and what else 
+you got? What you got on that list?
+
+475
+00:43:08,840 --> 00:43:15,680
+Actually, I'll steal this one a little bit from 
+our friend Kevin Yien, who I think he had this  
+
+476
+00:43:15,680 --> 00:43:21,240
+advice when he was on your pod, which really 
+resonated with me actually at a personal level,  
+
+477
+00:43:21,240 --> 00:43:29,400
+which is you have to be able to walk and chew 
+gum. So as an AI PM, your job is not to go and  
+
+478
+00:43:29,400 --> 00:43:33,440
+ship AI products, it's to go solve customers' 
+problems. I think we've come back to that a  
+
+479
+00:43:33,440 --> 00:43:39,560
+little bit. But you're constantly going to be 
+pushed by your team and your company to go and  
+
+480
+00:43:39,560 --> 00:43:46,840
+solve a business metric, move a business metric 
+in some way. The goal though is to make space for  
+
+481
+00:43:46,840 --> 00:43:51,720
+the other things we were talking about, which 
+is prototyping, you trying the tools firsthand  
+
+482
+00:43:51,720 --> 00:43:59,200
+yourself, making space for your team to have 
+hackathons and try the tools themselves as well. 
+
+483
+00:43:59,200 --> 00:44:05,440
+Breaking down product experiences that are really 
+great. So as an example, we did a teardown of the  
+
+484
+00:44:05,440 --> 00:44:10,760
+NotebookLM product just yesterday as part of our 
+company. So we live-streamed it, and we're going  
+
+485
+00:44:10,760 --> 00:44:16,120
+to do this probably every week or two where we'll 
+take a cutting edge AI product and have a webinar  
+
+486
+00:44:16,120 --> 00:44:21,400
+around it and try to break down how it works. 
+And the goals there are to really understand  
+
+487
+00:44:21,400 --> 00:44:26,120
+the space better ourselves. But by the way, none 
+of those three things are going to move your KPI  
+
+488
+00:44:26,120 --> 00:44:32,160
+or business metric. So I think I come back to that 
+point of you have to be able to walk and chew gum.  
+
+489
+00:44:32,160 --> 00:44:39,080
+You have to continuously deliver customer value 
+while also creating space to iterate and fail and  
+
+490
+00:44:39,080 --> 00:44:44,280
+find the experiment that you tried to launch 
+and people really excited about may not work,  
+
+491
+00:44:44,280 --> 00:44:49,200
+but in the process, you learn something.
+And that's I think a really powerful takeaway,  
+
+492
+00:44:49,200 --> 00:44:56,520
+which is to really stand out as an AI PM, you have 
+to accept this technology is changing really fast.  
+
+493
+00:44:56,520 --> 00:45:01,120
+You might think it's going to do something great, 
+or maybe you have a bad product experience. I  
+
+494
+00:45:01,120 --> 00:45:07,680
+think you had a point earlier as well, which is to 
+be a really great chef, occasionally you're going  
+
+495
+00:45:07,680 --> 00:45:12,760
+to have a bad meal. I think that's going to be the 
+same thing here with your AI product diet. You're  
+
+496
+00:45:12,760 --> 00:45:17,600
+going to try some bad experiences, you're going 
+to have some failures, but the goal is to keep  
+
+497
+00:45:17,600 --> 00:45:22,880
+iterating. And that's how AI gets better, I think 
+that's how companies can deploy AI better too. 
+
+498
+00:45:22,880 --> 00:45:26,960
+So don't give up on the North 
+Star. Just find ways to make space  
+
+499
+00:45:27,560 --> 00:45:34,280
+to have AI propagate within your organization, 
+and I think really stellar AI PMs do that.
+
+500
+00:45:34,280 --> 00:45:37,240
+I feel like as a metaphor of walking 
+and chewing gum, doesn't communicate  
+
+501
+00:45:37,240 --> 00:45:43,160
+the difficulty of Kevin's, now that I think 
+about it, of what he's trying to describe.  
+
+502
+00:45:43,160 --> 00:45:47,960
+Doesn't feel hard to walk and chew gum, 
+I wonder what a better metaphor would be.
+
+503
+00:45:47,960 --> 00:45:49,954
+Yeah, well I think it's-
+
+504
+00:45:49,954 --> 00:45:54,120
+Dance and bubbles. Maybe gum bubbles and dance.
+
+505
+00:45:54,120 --> 00:45:58,680
+Yeah, I don't know why that is, that's 
+the expression, but it's always meant to  
+
+506
+00:45:58,680 --> 00:46:03,760
+describe something hard that you realize 
+you can't do more than one thing anyway.
+
+507
+00:46:03,760 --> 00:46:10,640
+Anyway, we don't want need to solve it right 
+now. So I want to talk about being an IC,  
+
+508
+00:46:10,640 --> 00:46:14,560
+being successful as an IC. Before we get to that, 
+is there anything else along these lines that you  
+
+509
+00:46:14,560 --> 00:46:19,360
+think would be really valuable to share or 
+get into about how to be successful as an  
+
+510
+00:46:19,360 --> 00:46:24,240
+AI PM specifically that we haven't touched on? 
+I know we've talked about a lot of things now.
+
+511
+00:46:24,240 --> 00:46:29,280
+Your organization might want to do something and 
+you're trying to get them to do something else,  
+
+512
+00:46:29,280 --> 00:46:34,080
+and that's really the challenge in this type 
+of role is, there is so much buzz, there is so  
+
+513
+00:46:34,080 --> 00:46:40,400
+much excitement around AI, that knowing what the 
+right thing to build is really what this job needs  
+
+514
+00:46:40,400 --> 00:46:45,840
+to convey. So I think when you take all of that 
+signal and you try and put it together and solve  
+
+515
+00:46:45,840 --> 00:46:50,800
+that customer problem, that's really what being a 
+successful AI PM is at the end of the day. I think  
+
+516
+00:46:50,800 --> 00:46:56,080
+that's the hard part about the job, but also 
+maybe the most important impactful part of it.
+
+517
+00:46:56,080 --> 00:47:03,600
+I love that. Okay, so let's put AI to the side for 
+a moment, but not totally off to the side. Imagine  
+
+518
+00:47:03,600 --> 00:47:08,320
+we're going to touch on it in this next area, 
+and this next area is talking about how to be  
+
+519
+00:47:08,320 --> 00:47:14,840
+a really successful IC. You've very consciously 
+decided to stay an individual contributor and  
+
+520
+00:47:14,840 --> 00:47:20,480
+not move up the ladder of product management 
+and director and VP and all these things. And  
+
+521
+00:47:20,480 --> 00:47:26,120
+there's a specific skill set that it takes to be 
+successful and to thrive as an IC PM. Most people  
+
+522
+00:47:26,120 --> 00:47:31,360
+either can't move up the chain and become really 
+successful ICs long-term, or they don't want to,  
+
+523
+00:47:31,360 --> 00:47:36,880
+or they don't even think it's an option. So here's 
+my question here. What are some of the biggest  
+
+524
+00:47:36,880 --> 00:47:44,680
+habits, mindsets, lessons you've learned about 
+how to be really successful as an IC long-term?
+
+525
+00:47:44,680 --> 00:47:49,680
+When I think about my own career journey 
+here, so much of that comes down to what  
+
+526
+00:47:49,680 --> 00:47:56,560
+drives you personally, and I'm just obsessed with 
+solving customers problems. And so to do that,  
+
+527
+00:47:57,360 --> 00:48:00,600
+that might mean I have to spend a lot more 
+time trying to get into the weeds and get  
+
+528
+00:48:00,600 --> 00:48:08,520
+into the details. So I think that there's 
+really three areas, three things that come  
+
+529
+00:48:08,520 --> 00:48:16,000
+back to me of what the hard part about being 
+an IC PM is and how you can break through that. 
+
+530
+00:48:16,600 --> 00:48:25,320
+I first want to set the tone a little bit which 
+is, being an IC PM is really hard. I made a point  
+
+531
+00:48:25,320 --> 00:48:29,240
+earlier of, it's become easier to break into 
+product management to some degree if you can  
+
+532
+00:48:29,240 --> 00:48:34,320
+use these tools, and now you have all these tools 
+at your disposal to go build the next prototype,  
+
+533
+00:48:34,320 --> 00:48:39,280
+but I think the bar just got higher for product 
+managers within a company and what the impact  
+
+534
+00:48:39,280 --> 00:48:45,840
+needs to be. And by the way, that's always going 
+to compete with being able to jump on a quick  
+
+535
+00:48:45,840 --> 00:48:52,400
+call last minute or try to unblock someone, or 
+have some internal stakeholder discussion to  
+
+536
+00:48:52,400 --> 00:48:59,520
+figure out what to go do next. And so I think the 
+challenge is, you have a really hard job, there's  
+
+537
+00:48:59,520 --> 00:49:04,440
+constant signal, things are constantly changing, 
+how do you really power through that? So I think  
+
+538
+00:49:04,440 --> 00:49:10,280
+that there's really three things I think about 
+there, which are energy, waiting versus wandering,  
+
+539
+00:49:10,280 --> 00:49:18,360
+and then amplifying the signal to make a decision.
+So maybe to even just kick off, energy, I really  
+
+540
+00:49:18,360 --> 00:49:24,320
+think about this as, this was maybe one of the 
+most important things I realized working with  
+
+541
+00:49:24,320 --> 00:49:30,480
+our CEO a little bit over a year ago, which was 
+energy can count a lot when you're not sure which  
+
+542
+00:49:30,480 --> 00:49:36,920
+direction to go. If you show up to a meeting 
+and you bring a little bit more of that energy,  
+
+543
+00:49:36,920 --> 00:49:41,680
+you'll find that a lot of friction tends to go 
+away, versus if you show up and you're a little  
+
+544
+00:49:41,680 --> 00:49:48,360
+bit down or a little bit not as enthused about 
+an idea, people pick up on that. And we're still  
+
+545
+00:49:48,360 --> 00:49:53,400
+dealing with people today, and I think that 
+even if you just change that mindset a little  
+
+546
+00:49:53,400 --> 00:49:57,560
+bit of bringing a little bit of that extra 
+energy, you'll find that that can actually  
+
+547
+00:49:57,560 --> 00:50:02,560
+break down barriers and the conversation feels 
+like it's flowing. It feels like a dinner table  
+
+548
+00:50:02,560 --> 00:50:07,320
+conversation versus a hard conversation, even 
+if it might be something about something tough. 
+
+549
+00:50:07,320 --> 00:50:14,840
+So I think to me, there's this concept of, 
+you might still be faced with this challenge  
+
+550
+00:50:14,840 --> 00:50:23,840
+of I'm not sure what the right decision is, and 
+I'm struggling to really do this analysis and  
+
+551
+00:50:23,840 --> 00:50:30,800
+really get something going. I think accepting 
+that that happens to everyone, it sort of feels  
+
+552
+00:50:30,800 --> 00:50:36,120
+like a product block as opposed to a writer's 
+block, if that makes sense. Where as a writer,  
+
+553
+00:50:36,120 --> 00:50:41,920
+you might be trying to get to that next paragraph, 
+and as a product manager, you're really trying to  
+
+554
+00:50:41,920 --> 00:50:47,320
+get to that next idea or that next milestone.
+So I can give you an example there as well,  
+
+555
+00:50:47,320 --> 00:50:53,840
+which is we had this moment a little over a year 
+ago where we were not sure which direction to take  
+
+556
+00:50:53,840 --> 00:50:59,880
+a product feature. And we were faced with 
+this decision that felt pretty existential,  
+
+557
+00:50:59,880 --> 00:51:07,880
+which is how much do we want to invest in LLMs 
+and the new wave of large language model tech  
+
+558
+00:51:07,880 --> 00:51:13,400
+versus what our existing customer base was. And 
+it wasn't immediately clear what the decision  
+
+559
+00:51:13,400 --> 00:51:20,000
+should be. And so the energy I just brought was, 
+I'm just going to be our outbound salesperson and  
+
+560
+00:51:20,000 --> 00:51:24,960
+just start writing LinkedIn messages to people 
+that have the title AI in their LinkedIn profile.  
+
+561
+00:51:24,960 --> 00:51:29,120
+So I just went on LinkedIn and literally just 
+started finding ways to get them on a phone call.  
+
+562
+00:51:29,120 --> 00:51:35,160
+So I'd write some copy and iterate on it, and 
+I had to sit with our sales team to understand  
+
+563
+00:51:35,160 --> 00:51:40,040
+how do you do this? I maxed out my five LinkedIn 
+messages a day, what are you trying to do here? 
+
+564
+00:51:40,040 --> 00:51:45,880
+And I think what that really accomplished was 
+sort of two things. One, I did learn a little  
+
+565
+00:51:45,880 --> 00:51:53,080
+bit of what goes into this role in terms of how 
+to message our problem and product more in a way  
+
+566
+00:51:53,080 --> 00:51:58,560
+that actually got people engaged? But two, it also 
+demonstrated to the team that I was willing to get  
+
+567
+00:51:58,560 --> 00:52:04,360
+into the details with them. I was willing to spend 
+time even when I was trying to push on our day job  
+
+568
+00:52:04,360 --> 00:52:09,960
+of building a product and keeping it growing. 
+And I think that counts for a lot when the team  
+
+569
+00:52:09,960 --> 00:52:15,040
+is already feeling like they're not sure which 
+direction to take something. And so just being  
+
+570
+00:52:15,040 --> 00:52:20,560
+that player coach and just having that mentality 
+of showing up, bringing the energy, can move the  
+
+571
+00:52:20,560 --> 00:52:25,720
+bar so much higher for the whole team to operate.
+So that's the example I give of, you're kind of  
+
+572
+00:52:25,720 --> 00:52:31,880
+like being LeBron James, you're coaching people, 
+you're drawing up the play, but you're also just  
+
+573
+00:52:31,880 --> 00:52:38,720
+trying to be as involved in all of the tough 
+stuff as well. And I see that happen, I think that  
+
+574
+00:52:38,720 --> 00:52:44,360
+really comes from leadership from our CEO as well, 
+he'll be tired, I can tell, but it's just when  
+
+575
+00:52:44,360 --> 00:52:48,640
+he shows up to a meeting, he just doesn't show 
+it. You just have to kind of bring that energy.
+
+576
+00:52:48,640 --> 00:52:50,840
+So what I'm hearing is there's 
+two things you're sharing here,  
+
+577
+00:52:50,840 --> 00:52:56,560
+which is awesome. So one is, there's actual 
+energy in a meeting of staying positive  
+
+578
+00:52:56,560 --> 00:53:01,520
+and energetic. And then two is actually 
+just doing the thing to figure help solve  
+
+579
+00:53:01,520 --> 00:53:07,000
+the problem, getting into sales, becoming 
+the salesperson potentially, reaching out,  
+
+580
+00:53:07,000 --> 00:53:11,120
+doing customer development in your own, kind of 
+going rogue a little bit. In that first bucket,  
+
+581
+00:53:11,120 --> 00:53:16,240
+what does it look like to bring the energy? 
+Is it just volume? Is it just being bright?
+
+582
+00:53:16,240 --> 00:53:20,200
+I actually think this depends a lot on the 
+person. I think that's actually a personal  
+
+583
+00:53:20,200 --> 00:53:26,800
+thing. So what I mean by that is, for 
+me, that might mean I'm showing up,  
+
+584
+00:53:26,800 --> 00:53:33,280
+I'm super enthused, I'm bringing my version of 
+energy. But to other people, that might mean  
+
+585
+00:53:33,280 --> 00:53:39,320
+smaller things like just asking how someone is 
+doing, trying to keep the tone of the meeting  
+
+586
+00:53:39,320 --> 00:53:44,480
+more positive, I think to some degree. So to 
+different people, that might resemble different  
+
+587
+00:53:44,480 --> 00:53:50,640
+things. But I actually think this comes back 
+a little bit to an earlier point of, humans  
+
+588
+00:53:50,640 --> 00:53:56,000
+are really good at picking up on these subtle 
+signals with other people. And you want to just  
+
+589
+00:53:56,000 --> 00:54:02,640
+be putting out this subtle energy where people 
+feel like you are engaged, you're in it 100%. 
+
+590
+00:54:02,640 --> 00:54:09,040
+So I think that's part of it, I think it's 
+the idea's for other people to feel like  
+
+591
+00:54:10,440 --> 00:54:13,840
+you're bringing the energy level of 
+the room up versus bringing it down.
+
+592
+00:54:13,840 --> 00:54:17,760
+I had a PM I was working with at one 
+point that is the epitome of that.  
+
+593
+00:54:17,760 --> 00:54:21,560
+Every meeting he walks into, he's 
+just like, solve some problems,  
+
+594
+00:54:21,560 --> 00:54:28,320
+let's do this. He comes in just positive and 
+energized and that just changes the whole feeling.
+
+595
+00:54:28,320 --> 00:54:32,960
+I remember this early Lyft anecdote, I have 
+some friends from the earlier days at Lyft,  
+
+596
+00:54:32,960 --> 00:54:38,080
+and I think this may have been in the self-driving 
+car division, but they would literally, I'm not  
+
+597
+00:54:38,080 --> 00:54:44,600
+even kidding, this was their ritual where they 
+would actually end the meetings with the phrase,  
+
+598
+00:54:44,600 --> 00:54:49,160
+make it happen. And I thought that was 
+so powerful, because it's so simple,  
+
+599
+00:54:49,160 --> 00:54:51,720
+but it's like, all right, we're going 
+to do this. It was one of their values,  
+
+600
+00:54:51,720 --> 00:54:55,760
+and we walk away from a decision 
+and we're going to make it happen. 
+
+601
+00:54:55,760 --> 00:55:00,080
+And I think even just as something as small 
+as that could be a contribution back to the  
+
+602
+00:55:00,080 --> 00:55:05,160
+culture for your team. And maybe there's 
+a point there of building culture too,  
+
+603
+00:55:05,160 --> 00:55:10,600
+you get to determine the culture of the people 
+around you. You get to build a culture of the team  
+
+604
+00:55:10,600 --> 00:55:15,120
+and that can really work its way up. There's top 
+down culture, there's values, but you get to kind  
+
+605
+00:55:15,120 --> 00:55:20,560
+of drive what people in the room are feeling. And 
+I think that's really, really powerful. Especially  
+
+606
+00:55:20,560 --> 00:55:26,520
+in the role of a PM where everyone looks to the 
+PM for making a decision or solving a problem,  
+
+607
+00:55:26,520 --> 00:55:31,280
+even if it's a tough one to make, but you get to 
+drive the energy that you're bringing to that.
+
+608
+00:55:32,520 --> 00:55:40,400
+Absolutely. Okay, so your first piece of advice 
+for doing well and thriving as an IC PM is  
+
+609
+00:55:40,400 --> 00:55:46,760
+essentially that energy can count for a lot. That 
+if things aren't actually going smoothly, you can  
+
+610
+00:55:46,760 --> 00:55:54,840
+pull people through that by bringing energy, which 
+is both meetings and being positive and energizing  
+
+611
+00:55:54,840 --> 00:56:01,320
+folks in discussions, and also just doing the 
+work yourself to get to the core problem and  
+
+612
+00:56:01,320 --> 00:56:07,680
+helping people see that you're actually putting 
+in your own effort and time to solve the problem.
+
+613
+00:56:07,680 --> 00:56:16,240
+Yeah, and even just to riff on that 
+second point, I think that there's this  
+
+614
+00:56:16,240 --> 00:56:22,960
+component of when you are doing the thing with 
+someone and you pair with them on a problem,  
+
+615
+00:56:22,960 --> 00:56:26,240
+you have a lot more empathy for what they 
+do as well, because they'll describe to you  
+
+616
+00:56:26,760 --> 00:56:32,200
+what's challenging or what's hard about that 
+job. And I think that there's this feeling that,  
+
+617
+00:56:32,200 --> 00:56:41,400
+at least teams I've been a part of, where there is 
+no job that isn't important. And so you as a PM,  
+
+618
+00:56:43,160 --> 00:56:48,680
+I think if you're spending that time with someone, 
+that means that you're learning something from  
+
+619
+00:56:48,680 --> 00:56:54,320
+them and you're learning, having empathy for what 
+they might be doing day in and day out, but you're  
+
+620
+00:56:54,320 --> 00:57:00,400
+also pushing back and contributing and trying to 
+make the whole team push along better as well.
+
+621
+00:57:00,400 --> 00:57:04,520
+Awesome. So let's keep talking about 
+other things you found helpful in  
+
+622
+00:57:04,520 --> 00:57:09,560
+helping you be really successful an IC PM. You 
+mentioned this term wandering versus waiting,  
+
+623
+00:57:09,560 --> 00:57:11,920
+maybe we go in that direction 
+or if there's anything else.
+
+624
+00:57:11,920 --> 00:57:18,320
+Actually, I think this one is so, so powerful, 
+which is the concept of waiting versus wandering.  
+
+625
+00:57:18,320 --> 00:57:25,000
+And to me, this is super relatable again from 
+the standpoint of trying to figure out what to  
+
+626
+00:57:25,000 --> 00:57:30,600
+go do next. So we talked about energy, bringing 
+energy, but that still doesn't actually solve the  
+
+627
+00:57:30,600 --> 00:57:35,800
+problem of where should we go. That's just the 
+latent energy you're going to bring to solving  
+
+628
+00:57:35,800 --> 00:57:41,640
+a problem. But at the end of the day, you as 
+the product manager have to figure out where  
+
+629
+00:57:41,640 --> 00:57:47,680
+do things go? What's the problem to be solved 
+and how do we solve it really for a customer? 
+
+630
+00:57:47,680 --> 00:57:56,240
+And there's this thought exercise, this zoom out 
+of, it kind of feels a little bit like if you're  
+
+631
+00:57:56,240 --> 00:58:02,000
+all at a camp where you're trying to figure 
+out, okay, where do we go send the scouts to go  
+
+632
+00:58:03,000 --> 00:58:10,440
+take the rest of the camp and move things along? 
+And there's definitely this inclination towards  
+
+633
+00:58:10,440 --> 00:58:16,400
+executives and companies, especially broader 
+companies, to do what's been working so far,  
+
+634
+00:58:16,400 --> 00:58:21,480
+and that can often mean let's just wait and see.
+And I think that's super interesting from the  
+
+635
+00:58:21,480 --> 00:58:28,480
+concept of AI, there's this feeling of should we 
+wait and see where things go or do we go and try  
+
+636
+00:58:28,480 --> 00:58:37,080
+and figure out what direction to move our team? 
+And most companies might lean towards waiting to  
+
+637
+00:58:37,080 --> 00:58:41,520
+see how things pan out. And we're seeing that even 
+with AI, they're like, oh, we'll just wait for the  
+
+638
+00:58:41,520 --> 00:58:46,400
+next Open AI model to come and then we'll go build 
+a product around that. I keep hearing that there's  
+
+639
+00:58:46,400 --> 00:58:51,920
+this rumor of some other model or we're going to 
+wait and see. But I think at the end of the day,  
+
+640
+00:58:52,560 --> 00:58:58,120
+there's times when waiting might make sense 
+to see what technologies get built initially,  
+
+641
+00:58:58,120 --> 00:59:03,680
+but then there's also this component of 
+wandering and trying to figure out where  
+
+642
+00:59:03,680 --> 00:59:11,000
+should we go? Where should we take the team?
+And to me, I actually think the role of a PM  
+
+643
+00:59:11,000 --> 00:59:17,840
+is to be that wanderer. And I have this story 
+of, there was this moment in the company's  
+
+644
+00:59:17,840 --> 00:59:23,880
+history where I was grabbing a beer with one 
+of our engineering managers and he was like,  
+
+645
+00:59:23,880 --> 00:59:29,560
+look man, I'd show up and I'm like, maybe I 
+wasn't bringing 100% of my energy at this end  
+
+646
+00:59:29,560 --> 00:59:35,400
+of the workday. And I was like, I'm just not 
+sure where to take things and what we're doing  
+
+647
+00:59:35,400 --> 00:59:40,880
+right now. And it was so interesting to hear 
+his perspective of, in his world, everything  
+
+648
+00:59:40,880 --> 00:59:45,240
+was actually going pretty reasonably well. It 
+was like, we kind of knew, he had his roadmap,  
+
+649
+00:59:45,240 --> 00:59:49,800
+he knew what to go build. He had the next feature, 
+the next three weeks of sprints planned out or  
+
+650
+00:59:49,800 --> 00:59:53,640
+something like this. And he was like, oh, the 
+team's actually doing really great, the morale is  
+
+651
+00:59:53,640 --> 01:00:01,680
+really high. And yet on the product side, we were 
+confused, we were really unsure about what to do. 
+
+652
+01:00:01,680 --> 01:00:08,800
+And I think it can be hard to be that wanderer. It 
+felt really tough to be out there in the unknown,  
+
+653
+01:00:08,800 --> 01:00:13,920
+just trying to find any sort of signal that we 
+could bring back and say, okay, here's where  
+
+654
+01:00:13,920 --> 01:00:20,560
+we need to go and take the next features and 
+the next part of the company. And that part  
+
+655
+01:00:21,280 --> 01:00:27,040
+was really tough, but I actually think that's 
+where, to an earlier part of the discussion,  
+
+656
+01:00:27,040 --> 01:00:34,760
+where an AI PM can really stand out is in being 
+a natural wanderer and naturally feeling a little  
+
+657
+01:00:34,760 --> 01:00:41,240
+bit like their role is to push the boundaries 
+of what the company thinks is even possible.  
+
+658
+01:00:41,240 --> 01:00:46,280
+And to do that, you sometimes have to be 
+in this space that feels really squishy. 
+
+659
+01:00:46,280 --> 01:00:51,200
+And I remember talking to our founders 
+of. I'm not sure what we should be going  
+
+660
+01:00:51,200 --> 01:00:55,400
+and doing next. And it was actually 
+really reassuring to hear from them.  
+
+661
+01:00:56,680 --> 01:01:01,840
+I remember having this conversation and 
+Aparna, our chief product officer was like,  
+
+662
+01:01:01,840 --> 01:01:07,400
+that's what building zero to one really feels 
+like. It kind of feels like you're not sure  
+
+663
+01:01:07,400 --> 01:01:14,520
+what the right decision is or where the right 
+direction to go is, but at the same time you  
+
+664
+01:01:14,520 --> 01:01:19,440
+know when you get there. And so you just have to 
+keep wandering and iterating until you feel that  
+
+665
+01:01:19,440 --> 01:01:26,040
+drag of the product pulling you in that direction.
+So I think there's just this feeling comfortable  
+
+666
+01:01:26,040 --> 01:01:31,040
+with not being sure what the right decision is and 
+just wandering and trying to figure things out,  
+
+667
+01:01:31,040 --> 01:01:35,040
+while the rest of the camp might have to wait 
+and see what that next move is. So that to  
+
+668
+01:01:35,040 --> 01:01:42,120
+me I thought was this really visceral feeling 
+of, where do we go? Where do we go from here?
+
+669
+01:01:42,120 --> 01:01:48,000
+My takeaway here is if you're feeling like you 
+have no idea where your product is going to go,  
+
+670
+01:01:48,000 --> 01:01:56,000
+maybe be okay with that. And in your experience, 
+you eventually find the path as you wander. And  
+
+671
+01:01:56,000 --> 01:02:01,240
+with AI tools making it much easier to prototype 
+and design an ideate, in theory it makes that  
+
+672
+01:02:01,240 --> 01:02:04,720
+a little less stressful because 
+you can actually just try stuff.
+
+673
+01:02:04,720 --> 01:02:10,720
+And I think that's the amplifying the signal with 
+through the noise with AI. The signal can be super  
+
+674
+01:02:10,720 --> 01:02:15,800
+sparse you get back at times too. And then what 
+you can do is there's really powerful tools,  
+
+675
+01:02:15,800 --> 01:02:23,280
+we use Gong for instance to understand what 
+are maybe prospects or really engineers,  
+
+676
+01:02:23,280 --> 01:02:27,560
+to me it's like potential customers, what are 
+they talking about? What is their pain point?  
+
+677
+01:02:27,560 --> 01:02:35,240
+And I can't go be in 100 meetings every single 
+week, but what I can do is take those transcripts,  
+
+678
+01:02:35,240 --> 01:02:39,200
+and we literally did this, we fed them into 
+some of these large language models that have  
+
+679
+01:02:39,200 --> 01:02:43,640
+super long context windows now. And what you can 
+do is actually pull out what's the most common  
+
+680
+01:02:43,640 --> 01:02:48,760
+problems that come up? Having a conversation 
+around that can be really powerful too. 
+
+681
+01:02:48,760 --> 01:02:52,560
+Now you can do it with voice too, so you can 
+pull all of that in. Maybe you want to turn  
+
+682
+01:02:52,560 --> 01:02:57,920
+it into a NotebookLM episode, but what you can do 
+is actually just find ways to find signal through  
+
+683
+01:02:57,920 --> 01:03:04,160
+the noise. And that kind of gives you an ability 
+to almost have a superpower, because you can be  
+
+684
+01:03:04,160 --> 01:03:11,520
+in so many places at once and use technology to 
+your advantage to get that signal back. So I would  
+
+685
+01:03:11,520 --> 01:03:18,680
+really try to find ways to scale yourself 
+up with AI and come back with that signal.
+
+686
+01:03:18,680 --> 01:03:23,600
+Anything else along these lines of things 
+that have helped you be really successful  
+
+687
+01:03:23,600 --> 01:03:28,280
+as we wrap up and approach our 
+very exciting lightning round?
+
+688
+01:03:28,280 --> 01:03:32,480
+Product management can feel pretty serious, 
+there's some big decisions that weigh on your  
+
+689
+01:03:32,480 --> 01:03:38,640
+shoulder. But honestly I remember having this 
+discussion with one of our board members actually,  
+
+690
+01:03:38,640 --> 01:03:42,320
+and he's a serial entrepreneur, he's taking 
+companies public, and it was like, what advice  
+
+691
+01:03:42,320 --> 01:03:48,160
+do you have for me as a PM early in this company? 
+And I was so surprised by the feedback he had,  
+
+692
+01:03:48,160 --> 01:03:54,680
+which was just have fun. And I think if you 
+let that drive you and you keep learning and  
+
+693
+01:03:54,680 --> 01:03:59,560
+you're keeping this curiosity and building 
+products for customers that you care about,  
+
+694
+01:03:59,560 --> 01:04:07,840
+it's just going to help you go so much further.
+And I just think it's just more fun to be high  
+
+695
+01:04:07,840 --> 01:04:13,560
+energy, it's just more fun to really care 
+about the thing that you're working on.  
+
+696
+01:04:13,560 --> 01:04:16,120
+And I think if you're constantly learning 
+and having fun, you're going to iterate  
+
+697
+01:04:16,120 --> 01:04:20,720
+so much faster too. So that's really my 
+note is, just have fun along the way,  
+
+698
+01:04:20,720 --> 01:04:25,720
+it really is about that journey. And sometimes 
+you're wandering, but have fun with that too.
+
+699
+01:04:25,720 --> 01:04:29,840
+I love that so much and it resonates 
+so deeply with me as I've shared a  
+
+700
+01:04:29,840 --> 01:04:32,720
+couple of times on this podcast to folks 
+that listen probably have heard this,  
+
+701
+01:04:32,720 --> 01:04:37,560
+but I'd have this little Post-it that I put right 
+in front of me as I do podcasts that just says,  
+
+702
+01:04:37,560 --> 01:04:40,960
+Have fun. And it's like the lamest little Post-It.
+
+703
+01:04:42,320 --> 01:04:45,280
+Is it really tore it up at 
+this point from, or is it like?
+
+704
+01:04:45,280 --> 01:04:50,000
+It's like I just bent a Post-it in half and just 
+road have fun on the edge and then it just sits  
+
+705
+01:04:50,000 --> 01:04:55,440
+here. I don't know, Post-its are meant to stick 
+to stuff, but this is how I decided to use it. 
+
+706
+01:04:55,440 --> 01:04:58,960
+This also came up recently in this episode that 
+I think is going to come out right before this  
+
+707
+01:04:58,960 --> 01:05:04,000
+around public speaking, this course that I took 
+Ultraspeaking, the biggest piece of advice they  
+
+708
+01:05:04,000 --> 01:05:09,760
+have is speaking should be fun. So just think 
+about how do you have fun while you're doing this,  
+
+709
+01:05:09,760 --> 01:05:14,840
+even though it feels really scary, and that 
+works really well. So I really love that.
+
+710
+01:05:14,840 --> 01:05:18,560
+It's just more fun than not having 
+fun. It's like a really silly line.
+
+711
+01:05:19,800 --> 01:05:24,480
+It is. And even if it's very stressful and scary,  
+
+712
+01:05:24,480 --> 01:05:29,360
+just reframing it too, how do I have 
+fun. Most cases, the end of the world,  
+
+713
+01:05:29,360 --> 01:05:34,560
+the end of my career, or the end of something 
+really serious, most of the time you can have fun.
+
+714
+01:05:34,560 --> 01:05:35,440
+Totally, yeah.
+
+715
+01:05:35,440 --> 01:05:42,880
+Awesome. Well Aman with that, we reached our 
+very exciting lightning round. Are you ready?
+
+716
+01:05:42,880 --> 01:05:43,640
+Ding, ding, ding.
+
+717
+01:05:44,520 --> 01:05:49,840
+There's a ding that comes that we overlay. So I 
+always have to resist not saying ding, ding, ding.
+
+718
+01:05:49,840 --> 01:05:53,160
+I know. Yep, I'm ready. Let's do it.
+
+719
+01:05:53,160 --> 01:05:57,000
+First question, what are two or three books 
+you've recommended most to other people?
+
+720
+01:05:57,000 --> 01:06:05,320
+I really love A Short History of Nearly Everything 
+by Bill Bryson. That book to me is so interesting  
+
+721
+01:06:05,320 --> 01:06:10,440
+because I'm a bit of a nerd around science, 
+I used to read a lot of fiction growing up  
+
+722
+01:06:10,440 --> 01:06:17,280
+too. And I think weirdly enough, Bill tells 
+this story of the history of science really  
+
+723
+01:06:17,280 --> 01:06:22,920
+and how we know the things that we know, and 
+he kind of tells it from the perspective of  
+
+724
+01:06:22,920 --> 01:06:27,600
+learning about the scientists that discovered 
+these things. So for instance, you learn that  
+
+725
+01:06:27,600 --> 01:06:34,320
+Newton was kind of an asshole to the co-workers 
+he had, or Darwin wasn't maybe perceived as such  
+
+726
+01:06:34,320 --> 01:06:39,640
+an amazing scientist at the time. And a lot 
+of these scientists, their discoveries don't  
+
+727
+01:06:39,640 --> 01:06:44,920
+become famous. It's almost like being an artist, 
+where you realize the relevance of a scientist's  
+
+728
+01:06:44,920 --> 01:06:49,920
+discovery years later at times. And people don't 
+get credit for things that they discovered. 
+
+729
+01:06:49,920 --> 01:06:59,360
+So to me, it was really interesting to one, read 
+more about the scale of the universe and how long  
+
+730
+01:06:59,360 --> 01:07:05,480
+we've been here. And I think it just puts a lot 
+of things into perspective of our time here,  
+
+731
+01:07:05,480 --> 01:07:10,680
+how we spend it. And even the age we're living 
+in now with AI, it's such a blip in the cosmic  
+
+732
+01:07:10,680 --> 01:07:15,000
+scale. And then you also get these really fun 
+anecdotes from scientists along the way. So  
+
+733
+01:07:15,000 --> 01:07:19,400
+that one I recommend to almost everyone, 
+because it's a pretty easy read as well. 
+
+734
+01:07:20,040 --> 01:07:25,000
+And then I think another one, which is 
+maybe a little bit more in the career lens,  
+
+735
+01:07:25,000 --> 01:07:32,360
+is this book called Designing Your Life, which is 
+written by actually one of the founders of IDEO,  
+
+736
+01:07:32,360 --> 01:07:38,480
+and these folks are Stanford professors in the 
+Design Lab. And what's really powerful about this  
+
+737
+01:07:38,480 --> 01:07:43,360
+for me is it's actually pretty practical. So it 
+comes with exercises that I remember I did myself  
+
+738
+01:07:43,360 --> 01:07:48,520
+as well when I wasn't sure which direction to go 
+in my career, that helped me really figure out,  
+
+739
+01:07:48,520 --> 01:07:53,160
+the most powerful exercise and take away from 
+this book for me was basically in the first  
+
+740
+01:07:53,160 --> 01:07:59,680
+or second chapter I think, you write out one 
+page on the meaning of work to you and what  
+
+741
+01:07:59,680 --> 01:08:04,240
+does work mean? Is it a way for me to make 
+money? Is it a way for me to feel fulfilled  
+
+742
+01:08:04,240 --> 01:08:10,040
+with what I do or how I spend my time? And then 
+you write out one page on the meaning of life. 
+
+743
+01:08:10,040 --> 01:08:15,120
+And what's really powerful is it's really, really 
+hard to do those two things, and then you have to  
+
+744
+01:08:15,120 --> 01:08:21,240
+find the overlap between the two. And I think that 
+exercise is so clarifying and I recommend it to  
+
+745
+01:08:21,240 --> 01:08:25,560
+anyone when they feel stuck in their career, 
+because it can at least, coming back to the  
+
+746
+01:08:25,560 --> 01:08:30,880
+energy point, can give you a direction to go even 
+if you're not sure how to get there just yet. 
+
+747
+01:08:30,880 --> 01:08:36,720
+And so I love both of those books because they're 
+really shifting from a perspective standpoint.
+
+748
+01:08:36,720 --> 01:08:40,560
+I love that second book, I read it and it was 
+really meaningful to me. But it's been long  
+
+749
+01:08:40,560 --> 01:08:44,760
+ago and I forgot it now, but I remember it was 
+really great. And so I'm glad you brought that  
+
+750
+01:08:44,760 --> 01:08:49,560
+up. Next question, do you have a favorite 
+recent movie or TV show you really enjoyed?
+
+751
+01:08:49,560 --> 01:08:54,360
+I don't usually binge watch TV. To be 
+honest, I am not a binge watcher. But  
+
+752
+01:08:54,360 --> 01:08:57,200
+it's been a little rainy in New York lately, 
+so we've had a little bit more time inside on  
+
+753
+01:08:57,200 --> 01:09:02,880
+weekends and I've been obsessed with the Tour de 
+France documentary on Netflix. I don't know if,  
+
+754
+01:09:02,880 --> 01:09:06,920
+have you've seen that? I don't even know if it 
+gets pushed up that highly in the Netflix algos,  
+
+755
+01:09:06,920 --> 01:09:11,920
+but I think it's super cool. One, I love 
+cycling, so for me it's like you really  
+
+756
+01:09:11,920 --> 01:09:16,360
+realize that competitive level of cycling is 
+just such another level that I even realized  
+
+757
+01:09:16,360 --> 01:09:22,240
+or gave credit to. And then two, coming back to 
+the characters in the story, I think they're all  
+
+758
+01:09:22,240 --> 01:09:28,480
+just so interesting to hear what motivates them 
+to be at this extremely high level. It's actually  
+
+759
+01:09:28,480 --> 01:09:33,960
+the same producers as Drive to Survive, which I 
+know people really got into as well around F1. 
+
+760
+01:09:33,960 --> 01:09:40,640
+But yeah, highly recommend it and it's intense. 
+I'm going to start there. I didn't realize what I  
+
+761
+01:09:40,640 --> 01:09:46,520
+was going to get to, but it just ramped up in more 
+and more intensity and yeah, really enjoyed it.
+
+762
+01:09:46,520 --> 01:09:48,400
+Is there a favorite product 
+you recently discovered that  
+
+763
+01:09:48,400 --> 01:09:52,160
+you love? Maybe an AI product, maybe not.
+
+764
+01:09:52,160 --> 01:09:56,760
+So I think we talked a little bit about AI 
+products that help you prototype. Replit is  
+
+765
+01:09:56,760 --> 01:10:04,080
+incredible, it's so easy to use, v0. And these are 
+all really, I think they create really polished  
+
+766
+01:10:04,080 --> 01:10:08,920
+products at the end of the day. But the product 
+that really, that I've been using and having a ton  
+
+767
+01:10:08,920 --> 01:10:15,080
+of fun with is Websim. I think it creates this 
+almost playful version of the prototype in the  
+
+768
+01:10:15,080 --> 01:10:19,480
+first place you might be trying to build, or just 
+something so crazy and wacky and zany that you're  
+
+769
+01:10:19,480 --> 01:10:26,720
+not even sure is possible. And it's so hard to 
+describe, I remember I saw a presentation from  
+
+770
+01:10:26,720 --> 01:10:33,360
+some of the founders at Websim at an AI meetup 
+here, and even they, when they were showing how  
+
+771
+01:10:33,360 --> 01:10:37,960
+to use the product, they literally just went on 
+Reddit and they were just looking at the Websim  
+
+772
+01:10:37,960 --> 01:10:44,400
+sub-Reddit that has so many posts on it, and the 
+presentation was just them looking at the top  
+
+773
+01:10:44,400 --> 01:10:51,840
+three or four and trying to describe what they 
+saw. So I've just been obsessed with it lately  
+
+774
+01:10:51,840 --> 01:10:59,120
+just to push the boundaries of what's possible.
+I also do have another product as well. Initially  
+
+775
+01:10:59,120 --> 01:11:01,560
+when I thought about this question, I 
+was like, what's the product I've been  
+
+776
+01:11:01,560 --> 01:11:08,000
+using the most lately? And this one's going to 
+sound kind of weird. But I'm a little bit old  
+
+777
+01:11:08,000 --> 01:11:16,560
+school and I actually like you, I like to write 
+notes in physical notebooks. And so I am always  
+
+778
+01:11:16,560 --> 01:11:22,280
+looking for like, oh, what's a really practical 
+notebook to use? And this was really weird,  
+
+779
+01:11:22,280 --> 01:11:29,440
+but I was recently given a notebook from actually 
+an AI meetup here, and I opened it and it's made  
+
+780
+01:11:29,440 --> 01:11:37,960
+from recycled apples. And when you open the 
+notebook, it smells like apples, which is really  
+
+781
+01:11:37,960 --> 01:11:42,960
+interesting because I didn't think that that would 
+impact me as much as it did. But it created this  
+
+782
+01:11:42,960 --> 01:11:48,280
+interesting feedback loop where I just really 
+love using the notebook, because when I open it,  
+
+783
+01:11:48,280 --> 01:11:52,040
+I have this positive experience immediately. 
+It's like sensory experience immediately that  
+
+784
+01:11:52,040 --> 01:11:56,800
+it's like, oh, it just smells so great. And then 
+you want to keep using it and coming back to it. 
+
+785
+01:11:56,800 --> 01:12:01,240
+So I thought that was really interesting to 
+create this feedback loop in my head of I  
+
+786
+01:12:01,240 --> 01:12:06,240
+enjoy using that notebook now. I'm not sure what 
+that means when I run out of papers in this one  
+
+787
+01:12:06,240 --> 01:12:10,240
+if I'm going to buy another, but that was really 
+funny. I didn't expect to like that one as much.
+
+788
+01:12:10,240 --> 01:12:13,640
+You're making me hungry, I can almost smell it.  
+
+789
+01:12:13,640 --> 01:12:16,400
+What is the brand of this notebook 
+in case folks want to look it up?
+
+790
+01:12:16,400 --> 01:12:22,280
+It's called Appeel, A-P-P-E-E-L.
+
+791
+01:12:22,280 --> 01:12:27,320
+Amazing. I need it, I need that. Two more 
+questions. Do you have a favorite life motto that  
+
+792
+01:12:27,320 --> 01:12:32,240
+you often come back to find useful in work or in 
+life? I feel like you're going to have a good one.
+
+793
+01:12:32,240 --> 01:12:37,800
+There is specifically one that I ended this 
+essay that I wrote a while back with called,  
+
+794
+01:12:37,800 --> 01:12:40,960
+I read a bunch of self-help books so you don't 
+have to, and I share it with my friends. It's  
+
+795
+01:12:40,960 --> 01:12:45,720
+literally just called that, that are not sure 
+what to do when they're in that next phase of  
+
+796
+01:12:45,720 --> 01:12:54,240
+their career as well. And the quote is from 
+Steve Jobs which is, "Your time is limited,  
+
+797
+01:12:54,240 --> 01:13:01,560
+so don't waste it living someone else's life."
+And I thought that was so powerful, because when  
+
+798
+01:13:01,560 --> 01:13:08,280
+you think about it, I feel like there's a lot of 
+career pressure for some people to get that next  
+
+799
+01:13:08,280 --> 01:13:16,000
+job or start a company or do something super 
+crazy. And at the same time, I think what's  
+
+800
+01:13:16,000 --> 01:13:23,440
+been really powerful for me has been to reassess 
+what my goals are and what life I want to live,  
+
+801
+01:13:23,440 --> 01:13:31,840
+and not feeling the feeling of what other people's 
+projections of that life are. And so that quote in  
+
+802
+01:13:31,840 --> 01:13:36,160
+particular has always been something I've come 
+back to, which is what sort of life do you want  
+
+803
+01:13:36,160 --> 01:13:41,320
+to live? And thinking about that really deeply 
+and making decisions along the way based on that.
+
+804
+01:13:41,840 --> 01:13:45,960
+I truly love that sentiment. And it came 
+up recently in another conversation with JM  
+
+805
+01:13:45,960 --> 01:13:52,320
+Nickels. But let's move on, actual final 
+question. So as I was researching you,  
+
+806
+01:13:52,320 --> 01:13:56,840
+I was Googling your name, and when I 
+Googled your name, there's a cricket  
+
+807
+01:13:56,840 --> 01:14:01,680
+player very prominently comes up. Curious 
+how much that bothers you that there's this  
+
+808
+01:14:01,680 --> 01:14:07,869
+cricket player that is number one on Google 
+in many ways? Tell us about how that feels.
+
+809
+01:14:07,869 --> 01:14:15,080
+Oh my God. This is going to sound crazy, but 
+literally, I was thinking about this yesterday.  
+
+810
+01:14:15,080 --> 01:14:23,520
+It's going to sound crazy. The immediate thought 
+that came to mind was, my parents really didn't  
+
+811
+01:14:23,520 --> 01:14:29,080
+optimize my name for SEO. And the only thing 
+I'm going to do now, and I think about when  
+
+812
+01:14:29,080 --> 01:14:35,000
+I have kids, they're going to have some unique 
+names, because it gets so much harder. You have  
+
+813
+01:14:35,000 --> 01:14:41,160
+to type in Aman Khan San Francisco or Berkeley 
+or something to get that to pop up. So yeah.
+
+814
+01:14:41,160 --> 01:14:43,960
+So it does bother you, is 
+the take away here. Okay.
+
+815
+01:14:43,960 --> 01:14:45,600
+We'll iterate all that for the next.
+
+816
+01:14:45,600 --> 01:14:49,800
+Or this is a goal, I feel like you 
+have the chance to beat this guy.
+
+817
+01:14:49,800 --> 01:14:56,480
+Totally, right? Or maybe another way to look 
+at it is if we still keep using search engines,  
+
+818
+01:14:56,480 --> 01:15:01,480
+and it's funny because my partner works at Google, 
+the future might look like what if we're using  
+
+819
+01:15:01,480 --> 01:15:06,400
+LLMs more? It kind of gives me a second shot here 
+to be part of the training data set in a way.
+
+820
+01:15:08,120 --> 01:15:12,480
+Amazing. I love the silver lining there. 
+Aman, this was amazing. I think this is  
+
+821
+01:15:12,480 --> 01:15:18,240
+going to be helpful to so many people trying 
+to get into AI, trying to thrive as an AI PM,  
+
+822
+01:15:18,240 --> 01:15:22,480
+or just wanting to stay down the IC 
+track. We went through so many things,  
+
+823
+01:15:23,320 --> 01:15:27,720
+my notes were very long and we touched 
+on basically everything. So thank you so  
+
+824
+01:15:27,720 --> 01:15:31,600
+much for being here. Two final questions. 
+Where can folks find you if they want to  
+
+825
+01:15:31,600 --> 01:15:35,520
+reach out and maybe follow up on some of this 
+stuff, and how can listeners be useful to you?
+
+826
+01:15:35,520 --> 01:15:38,560
+LinkedIn is probably the best 
+way. I'm not super active on X,  
+
+827
+01:15:38,560 --> 01:15:43,800
+though might spend a little bit more time there, 
+but LinkedIn easily. And then to that note,  
+
+828
+01:15:43,800 --> 01:15:48,840
+how can listeners be helpful? I think my goal 
+is to try to be as helpful for folks that are  
+
+829
+01:15:48,840 --> 01:15:52,560
+trying to figure out how to get to this next 
+part of their career, whether it's involving  
+
+830
+01:15:52,560 --> 01:15:57,040
+AI or they want to pivot into it or they want 
+to thrive as an AI product manager. So love to  
+
+831
+01:15:57,040 --> 01:16:02,440
+hear stories of people that are interested in 
+this part of their career or this career path. 
+
+832
+01:16:02,440 --> 01:16:08,880
+I think the thought I'll leave people with is 
+I'll respond to anyone that messages me, but  
+
+833
+01:16:08,880 --> 01:16:13,120
+I do have one condition there, which is if you're 
+cold emailing, cold messaging, kind of coming back  
+
+834
+01:16:13,120 --> 01:16:20,840
+to how to stand out, I think there was this note 
+from John Dory, spoke at the college I went to,  
+
+835
+01:16:20,840 --> 01:16:26,720
+and he put his email up on the board and his note 
+was, "I'll email anyone who emails me as long as  
+
+836
+01:16:26,720 --> 01:16:36,000
+you send me your top three favorite books, movies, 
+podcasts, or videos that impacted you in some way,  
+
+837
+01:16:36,000 --> 01:16:39,160
+and I'll do the same for you." And so I 
+actually did that, emailed him and got  
+
+838
+01:16:39,160 --> 01:16:45,480
+back his top three as well. So I want to carry 
+that forward and would love to hear from folks,  
+
+839
+01:16:45,480 --> 01:16:50,080
+send me your top three whatever pieces of content 
+they might be, and I'll do the same for you.
+
+840
+01:16:50,080 --> 01:16:54,840
+That's an amazing collection you're going to 
+build. I want to see all these things too.  
+
+841
+01:16:55,400 --> 01:16:57,520
+I love that idea. It's almost 
+like a mini lightning round,  
+
+842
+01:16:57,520 --> 01:17:02,240
+what a clever idea. Aman, thank 
+you so much for being here.
+
+843
+01:17:02,240 --> 01:17:05,560
+Thank you so much, Lenny. This has been 
+awesome. Really, really had fun with this one.
+
+844
+01:17:05,560 --> 01:17:10,880
+Same for me. Bye everyone.
+Thank you so much for listening. If  
+
+845
+01:17:10,880 --> 01:17:15,080
+you found this valuable, you can subscribe 
+to the show on Apple Podcasts, Spotify,  
+
+846
+01:17:15,080 --> 01:17:20,400
+or your favorite podcast app. Also, please 
+consider giving us a rating or leaving a review,  
+
+847
+01:17:20,400 --> 01:17:25,200
+as that really helps other listeners find 
+the podcast. You can find all past episodes  
+
+848
+01:17:25,200 --> 01:17:33,600
+or learn more about the show at 
+LennysPodcast.com. See you in the next episode.
+

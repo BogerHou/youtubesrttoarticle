@@ -1,0 +1,4335 @@
+1
+00:00:00,000 --> 00:00:03,040
+Survival of humanity depends on a successful AI.
+
+2
+00:00:03,040 --> 00:00:04,160
+Birth rates are going down.
+
+3
+00:00:04,160 --> 00:00:07,839
+If you have 60% of your population where you don't have enough people to take care of them,
+
+4
+00:00:07,839 --> 00:00:09,440
+that could cause a lot of human suffering.
+
+5
+00:00:09,440 --> 00:00:17,520
+When I got this new job, there is zero chance I would have been able to do it if AI wasn't there because I didn't know anything about so many domains that we were in.
+
+6
+00:00:17,520 --> 00:00:20,720
+>> A lot of companies are trying to adjust to this new world.
+
+7
+00:00:20,720 --> 00:00:24,640
+>> You have to know the difference between a mega trend and hype cycle.
+
+8
+00:00:24,640 --> 00:00:26,480
+When there's a mega trend, don't fight it.
+
+9
+00:00:26,480 --> 00:00:27,680
+AI is a mega trend.
+
+10
+00:00:27,680 --> 00:00:32,559
+one of the most foundational movements that we have seen in human history >> to turn Cisco from an older,
+
+11
+00:00:32,559 --> 00:00:36,079
+slower, more traditional enterprise to a very AI forward company.
+
+12
+00:00:36,079 --> 00:00:37,200
+This is very difficult to do.
+
+13
+00:00:37,200 --> 00:00:38,320
+>> AI is moving so fast.
+
+14
+00:00:38,320 --> 00:00:41,280
+One of the things I tell my team is fast forward 6 months from now.
+
+15
+00:00:41,280 --> 00:00:42,719
+Get prepared for that world.
+
+16
+00:00:42,719 --> 00:00:44,480
+>> You manage 30,000 people.
+
+17
+00:00:44,480 --> 00:00:49,840
+>> Every management book that you read will tell you praise in public, criticize in private.
+
+18
+00:00:49,840 --> 00:00:51,920
+I fundamentally disagree with that notion.
+
+19
+00:00:51,920 --> 00:00:59,359
+What you have to do is establish enough trust among the team so that you are comfortable critiquing and debating in public.
+
+20
+00:00:59,359 --> 00:01:02,480
+>> What's something that you wish you'd known before taking on this role?
+
+21
+00:01:02,480 --> 00:01:04,159
+>> Stamina trumps intellect.
+
+22
+00:01:04,159 --> 00:01:12,479
+It's very important to have smart people, but you can become smart if you have curiosity and hunger and staying power and persistence.
+
+23
+00:01:12,479 --> 00:01:15,760
+You can't teach hunger.
+
+24
+00:01:15,760 --> 00:01:20,159
+>> Today my guest is G2 Patel, chief product officer and president at Cisco.
+
+25
+00:01:20,159 --> 00:01:30,799
+Cisco is not a brand that mostly people think about when they think about AI, but not only are they a massive part of the AI infrastructure buildout that is happening right now all over the world.
+
+26
+00:01:30,799 --> 00:01:40,240
+What G2 has achieved internally at Cisco in terms of transforming their culture and ways of working to be AI first is something that most big company leaders only dream about.
+
+27
+00:01:40,240 --> 00:01:44,880
+G2 is also an incredible human with so much warmth and wisdom to share.
+
+28
+00:01:44,880 --> 00:01:47,200
+I am very excited to be sharing his story.
+
+29
+00:01:47,200 --> 00:01:54,320
+Don't forget to check out lennisprodpass.com for an incredible set of deals available exclusively to Lenny's newsletter subscribers.
+
+30
+00:01:54,320 --> 00:01:58,799
+Let's get into it after a short word from our wonderful sponsors.
+
+31
+00:01:58,799 --> 00:02:01,119
+Applications break in all kinds of ways.
+
+32
+00:02:01,119 --> 00:02:06,719
+Crashes, slowdowns, regressions, and the stuff that you only see once real users show up.
+
+33
+00:02:06,719 --> 00:02:08,479
+Sentry catches it all.
+
+34
+00:02:08,479 --> 00:02:18,160
+see what happened where and why down to the commit that introduced the error, the developer who shipped it and the exact line of code all in one connected view.
+
+35
+00:02:18,160 --> 00:02:22,959
+I have definitely tried the five tabs and Slack thread approach to debugging.
+
+36
+00:02:22,959 --> 00:02:24,319
+This is better.
+
+37
+00:02:24,319 --> 00:02:30,239
+Sentry shows you how the request moved, what ran, what slowed down, and what users saw.
+
+38
+00:02:30,239 --> 00:02:33,200
+Seir Centry's AI debugging agent takes it from there.
+
+39
+00:02:33,200 --> 00:02:39,440
+It uses all of that sentry context to tell you the root cause, suggest a fix, and even opens a PR for you.
+
+40
+00:02:39,440 --> 00:02:44,319
+It also reviews your PR and flags any breaking changes with fixes ready to go.
+
+41
+00:02:44,319 --> 00:02:52,400
+Try Sentry and Seir for free at centry.io/lenny and use code lenny for $100 in Sentry credits.
+
+42
+00:02:52,400 --> 00:02:55,879
+That's senry.io/lenny.
+
+43
+00:02:57,599 --> 00:03:04,239
+Your marketing website sets the tone for your brand and is the one touch point that every single one of your customers sees.
+
+44
+00:03:04,239 --> 00:03:08,800
+In today's age, if you're still having a hard time making small changes and simple updates to it,
+
+45
+00:03:08,800 --> 00:03:10,319
+you're doing something wrong.
+
+46
+00:03:10,319 --> 00:03:15,920
+That is why so many companies from earlystage startups to Fortune 500s, including companies like Door Dash,
+
+47
+00:03:15,920 --> 00:03:24,080
+Zapier, Perplexity, and 11 Labs turn to Framer, the website builder that turns your.com from a formality into a tool for growth.
+
+48
+00:03:24,080 --> 00:03:28,640
+Framework works like your team's favorite design tool and comes with real-time collaboration,
+
+49
+00:03:28,640 --> 00:03:35,680
+a robust CMS with everything you need for great SEO and advanced analytics that includes integrated AB testing.
+
+50
+00:03:35,680 --> 00:03:42,239
+Changes to your framer site go live to the web in seconds with a single click and without any help from engineering.
+
+51
+00:03:42,239 --> 00:03:47,040
+Whether you want to launch a new site, test a few landing pages, or migrate your full.com,
+
+52
+00:03:47,040 --> 00:03:55,599
+Framer has programs for startups, scale-ups, and large enterprises to make going from idea to live site as easy and fast as possible.
+
+53
+00:03:55,599 --> 00:03:59,519
+Learn how to turn your website into a growth engine from a framer expert.
+
+54
+00:03:59,519 --> 00:04:04,480
+Or just get started building for free today at framer.com/lenny.
+
+55
+00:04:04,480 --> 00:04:11,040
+And if you're a Lenny's product pass subscriber, you get an entire year of Framer Pro for free.
+
+56
+00:04:11,040 --> 00:04:13,680
+Check it out at framer.com/lenny.
+
+57
+00:04:13,680 --> 00:04:17,799
+Rules and restrictions may apply.
+
+58
+00:04:18,720 --> 00:04:22,320
+G2, thank you so much for being here and welcome to the podcast.
+
+59
+00:04:22,320 --> 00:04:23,520
+>> Lenny, I'm excited.
+
+60
+00:04:23,520 --> 00:04:24,320
+Good to see you.
+
+61
+00:04:24,320 --> 00:04:27,120
+>> The timing of this conversation is so amazing.
+
+62
+00:04:27,120 --> 00:04:33,840
+You're just coming off running the most insane assembling of AI thought leaders and tech leaders I've ever seen.
+
+63
+00:04:33,840 --> 00:04:37,759
+Let me just read a few of the names that you guys had at the summit that just happened a couple days ago.
+
+64
+00:04:37,759 --> 00:04:43,919
+Uh you had Jensen, you had Seam, and you had Mark Andre, you had Feay Lee, you had the CEO of Intel,
+
+65
+00:04:43,919 --> 00:04:47,120
+AWS, uh Mike Kger, Kevin Wheel.
+
+66
+00:04:47,120 --> 00:04:49,120
+Like that's just like a third of the guests you guys had.
+
+67
+00:04:49,120 --> 00:04:51,360
+I don't I don't know how you did this.
+
+68
+00:04:51,360 --> 00:04:55,120
+Um but it feels like you had this fire hose of information coming at you.
+
+69
+00:04:55,120 --> 00:04:57,360
+You interviewed a lot of these people on stage.
+
+70
+00:04:57,360 --> 00:05:04,880
+And so while it's fresh in your mind, I want to ask you after doing this summit, after hearing from these folks,
+
+71
+00:05:04,880 --> 00:05:13,840
+what's something that you've changed your mind about or what's just like an insight that has been lodged in your head ever since doing the summit?
+
+72
+00:05:13,840 --> 00:05:21,600
+It was an amazing thing to pull off because I I we never thought we'd be able to do it and we were really worried going into it thinking,
+
+73
+00:05:21,600 --> 00:05:31,199
+well, we're trying to do fireside chats for 12 hours and there's a capacity of human absorption that we're trying to challenge.
+
+74
+00:05:31,199 --> 00:05:33,360
+And so we tried to put a lot of breaks in there.
+
+75
+00:05:33,360 --> 00:05:34,560
+We started at 9:00 a.m.
+
+76
+00:05:34,560 --> 00:05:36,400
+and we ended at 9:00 p.m.
+
+77
+00:05:36,400 --> 00:05:46,560
+and we had a couple hour break in the middle, but everyone stayed and um and everyone was engaged and we could have gone until 11 and it would have been fine.
+
+78
+00:05:46,560 --> 00:05:52,960
+And it's because the quality of the conversations and the caliber of the guests that were there made a world of a difference.
+
+79
+00:05:52,960 --> 00:05:56,639
+Um what was the takeaway from it?
+
+80
+00:05:56,639 --> 00:05:57,759
+I'd say a few things.
+
+81
+00:05:57,759 --> 00:06:00,880
+One is, you know, the capabilities overhang is real.
+
+82
+00:06:00,880 --> 00:06:02,960
+I think there's more functionality.
+
+83
+00:06:02,960 --> 00:06:05,520
+We on one end there's kind of this paradox of progress.
+
+84
+00:06:05,520 --> 00:06:09,039
+On one end, we are like, you know, we're solving all these amazing problems with science.
+
+85
+00:06:09,039 --> 00:06:12,639
+On the other end, you talk to the enterprises, they're like we're struggling with adoption.
+
+86
+00:06:12,639 --> 00:06:17,520
+And I feel like there's a there's help that's going to be needed within organizations.
+
+87
+00:06:17,520 --> 00:06:28,560
+And the reason I we we pulled this thing together the goal was what is happening in the industry and how can we help customers make sure that they can make the most of it because we are in one of the most foundational
+
+88
+00:06:28,560 --> 00:06:34,639
+movements that we have seen in human history and uh it's we we we got to make sure that we make the most of it.
+
+89
+00:06:34,639 --> 00:06:37,759
+So that was one is the capabilities overhang is real.
+
+90
+00:06:37,759 --> 00:06:48,880
+The second area is I'd say that it's harder when you go beyond some of the most more obvious use cases like for example coding is a very very
+
+91
+00:06:48,880 --> 00:06:51,680
+good use case that you know you're starting to get a lot of success in.
+
+92
+00:06:51,680 --> 00:07:03,360
+I mean we just had our first product that we think we will be in the next 2 weeks 100% written with with AI right I don't think that's as easy when you go into every other function of the business and
+
+93
+00:07:03,360 --> 00:07:15,120
+that was actually very apparent that hey this is this is going to require some nuance and um understanding of how every business works and then the third one which is the a really interesting takeaway and Mark Andre talked about
+
+94
+00:07:15,120 --> 00:07:23,440
+this in your podcast a few days ago in fact when I talked to him I actually started with your podcast because it was so interesting And then we dug into it a little bit more,
+
+95
+00:07:23,440 --> 00:07:34,319
+but like and then you know Kevin Scott was was also talking about this, but this notion of the fact that birth rates are going down and we have a demographic shift that's happening in the world and there's going to be more
+
+96
+00:07:34,319 --> 00:07:38,960
+people that are in the older age bracket than than younger age bracket.
+
+97
+00:07:38,960 --> 00:07:42,639
+And those older people are going to need folks to take care of them.
+
+98
+00:07:42,639 --> 00:07:45,599
+And historically in society, that's actually always been the case.
+
+99
+00:07:45,599 --> 00:07:48,080
+But we might be at a point where that might not be the case.
+
+100
+00:07:48,080 --> 00:07:52,240
+And when that's not the case, you know, we worry about AI taking our jobs.
+
+101
+00:07:52,240 --> 00:07:59,919
+I think that survival of humanity depends on a successful AI because that's at at some point if you have,
+
+102
+00:07:59,919 --> 00:08:07,680
+you know, 60% of your population that's in a in a demographic where you don't have enough people to take care of them that that could cause a lot of human suffering.
+
+103
+00:08:07,680 --> 00:08:16,639
+So, I don't think people talk about this enough and that's something that we have to take a moment and digest that this is so important for our collective success um moving forward.
+
+104
+00:08:16,639 --> 00:08:25,680
+Something I was going to say during that uh my chat with Mark when he talked about that AI is basically coming just in time to save us because there aren't going to be enough people to do the jobs.
+
+105
+00:08:25,680 --> 00:08:32,959
+I was in my head I was thinking this is like another uh signal that we are in a simulation that things are working out just right for us.
+
+106
+00:08:32,959 --> 00:08:34,080
+What are the chances?
+
+107
+00:08:34,080 --> 00:08:38,959
+>> The older I get the more I believe that we are actually in a simulation.
+
+108
+00:08:38,959 --> 00:08:43,680
+>> You know I the first time I heard that concept um I thought it was such an absurd concept.
+
+109
+00:08:43,680 --> 00:08:46,720
+Now I'm like, you know, this is might actually be happening.
+
+110
+00:08:46,720 --> 00:08:47,279
+Never know.
+
+111
+00:08:47,279 --> 00:08:53,600
+>> Following this thread, a lot of companies are trying to adjust to this new world.
+
+112
+00:08:53,600 --> 00:08:56,640
+You are doing an incredible job at actually doing this.
+
+113
+00:08:56,640 --> 00:09:01,920
+We got connected through Kevin Wheel, who is former CPO at OpenAI, now head of science at OpenAI.
+
+114
+00:09:01,920 --> 00:09:08,080
+And the way he described it is the work that you have done to turn Cisco, the way he described it from an older,
+
+115
+00:09:08,080 --> 00:09:12,560
+slower, more traditional uh enterprise to a very AI forward company.
+
+116
+00:09:12,560 --> 00:09:13,920
+Uh, how many employees do you guys have?
+
+117
+00:09:13,920 --> 00:09:15,279
+You said 45,000.
+
+118
+00:09:15,279 --> 00:09:16,880
+>> We have 90,000 employees.
+
+119
+00:09:16,880 --> 00:09:18,480
+43,000 watch the stream.
+
+120
+00:09:18,480 --> 00:09:24,880
+>> So, the big question for you is like this is it feels like it's really working and this is very difficult to do at a company of that scale.
+
+121
+00:09:24,880 --> 00:09:27,920
+A lot of leaders are trying to make it work.
+
+122
+00:09:27,920 --> 00:09:36,240
+What are two or three things that you've done that you think have been most impactful and uh effective in helping Cisco lean into AI,
+
+123
+00:09:36,240 --> 00:09:39,760
+not be scared of it, not and actually, you know, embrace the future.
+
+124
+00:09:39,760 --> 00:09:42,959
+You know, innovation in my mind is a choice.
+
+125
+00:09:42,959 --> 00:09:46,320
+So like, you know, I I always find it interesting when people say, well, you know, you're a large company,
+
+126
+00:09:46,320 --> 00:09:47,040
+you can't innovate.
+
+127
+00:09:47,040 --> 00:09:48,399
+You're a small company, you can innovate.
+
+128
+00:09:48,399 --> 00:09:49,920
+It's like, no, it's it's just a choice.
+
+129
+00:09:49,920 --> 00:09:57,440
+Every day you come into work and you can choose to be thinking about being creative or you can choose to not be creative.
+
+130
+00:09:57,440 --> 00:09:59,440
+It's it's like a little binary.
+
+131
+00:09:59,440 --> 00:10:02,640
+It's a binary choice you can make every hour, right?
+
+132
+00:10:02,640 --> 00:10:04,240
+Every minute of every day.
+
+133
+00:10:04,240 --> 00:10:08,800
+And so we made that choice that says Cisco is going to be not just an iconic company.
+
+134
+00:10:08,800 --> 00:10:13,040
+And you know, Chuck Robbins, our CEO, says this very eloquently.
+
+135
+00:10:13,040 --> 00:10:16,000
+He's like, I want Cisco not just to be an iconic company.
+
+136
+00:10:16,000 --> 00:10:21,200
+I want Cisco to also be an iconic and innovative company.
+
+137
+00:10:21,200 --> 00:10:30,000
+And so we got to make sure that we are actually innovating with the set of constraints that we are dealt with.
+
+138
+00:10:30,000 --> 00:10:39,040
+You know like every company has their own set of constraints and we have our own set of constraints and we have to make sure that given those constraints we have to actually innovate really well.
+
+139
+00:10:39,040 --> 00:10:43,680
+Now what has what are the two or three things that have happened that have really helped us out.
+
+140
+00:10:43,680 --> 00:10:54,160
+One was um being very clear on what is up for debate and what is not up for debate because what can end up happening is you can always have a pocket veto in a large
+
+141
+00:10:54,160 --> 00:10:57,120
+company where if you ask enough number of people people say no.
+
+142
+00:10:57,120 --> 00:11:01,680
+If you're a large company you ask enough number of people someone's going to say no,
+
+143
+00:11:01,680 --> 00:11:02,480
+right?
+
+144
+00:11:02,480 --> 00:11:09,120
+And so when you have conviction about something that's happening that is going to be a bet that you need to place.
+
+145
+00:11:09,120 --> 00:11:13,519
+Like you know what what most people think in large companies is large companies don't experiment.
+
+146
+00:11:13,519 --> 00:11:15,360
+That is in fact not true.
+
+147
+00:11:15,360 --> 00:11:17,200
+Large companies experiment a lot.
+
+148
+00:11:17,200 --> 00:11:23,120
+What large companies don't do is when an experiment works they don't go all in and double down.
+
+149
+00:11:23,120 --> 00:11:25,600
+They try to keep hedging.
+
+150
+00:11:25,600 --> 00:11:26,800
+We didn't hedge on AI.
+
+151
+00:11:26,800 --> 00:11:29,920
+We we we said we're going to go all in.
+
+152
+00:11:29,920 --> 00:11:31,440
+That was number one.
+
+153
+00:11:31,440 --> 00:11:42,560
+What that meant was we had to get people to understand that their personal success and the success of the company are very aligned in us getting
+
+154
+00:11:42,560 --> 00:11:45,279
+dextrous with the use of AI.
+
+155
+00:11:45,279 --> 00:11:54,000
+That means that if they feel like for some reason AI is going to take their job or AI is going to be negative for them,
+
+156
+00:11:54,000 --> 00:11:56,720
+we had to reassure them that that was not the case.
+
+157
+00:11:56,720 --> 00:12:04,959
+But the reverse was guaranteed to be the case that if you didn't use AI, if you weren't going to be dextrous in whatever job function you're doing,
+
+158
+00:12:04,959 --> 00:12:08,560
+then your job is probably not going to be that relevant over here in the long run.
+
+159
+00:12:08,560 --> 00:12:16,079
+So that was the first thing that we did was that that was a I'm not a big fan of top down um hierarchy of going out and doing things.
+
+160
+00:12:16,079 --> 00:12:20,000
+In fact, I deep down inside I don't respect hierarchy as much.
+
+161
+00:12:20,000 --> 00:12:26,480
+I feel like it it can constrain you at times but I wanted to make sure on this one we were very very deliberate.
+
+162
+00:12:26,480 --> 00:12:29,200
+The entire company is on the same page.
+
+163
+00:12:29,200 --> 00:12:41,120
+We are an AI first company right and this happened we were kind of working towards it even prior to chat GPT but chat GPT became that seminal moment in uh November of 22
+
+164
+00:12:41,120 --> 00:12:42,079
+that we actually did that.
+
+165
+00:12:42,079 --> 00:12:42,720
+So that was one.
+
+166
+00:12:42,720 --> 00:12:49,279
+Number two was we had to make sure that we defined what success looked like.
+
+167
+00:12:49,279 --> 00:12:55,360
+The way that individual success was defined was everyone wanted to be a GM at Cisco.
+
+168
+00:12:55,360 --> 00:13:01,760
+They wanted to own their own FFTM, be a general manager cuz they felt like in order for me to move up the ranks,
+
+169
+00:13:01,760 --> 00:13:05,279
+I need to be a general manager, which means I need to have my own sales team.
+
+170
+00:13:05,279 --> 00:13:06,480
+I need to have my own marketing team.
+
+171
+00:13:06,480 --> 00:13:07,680
+I need to have my own product team.
+
+172
+00:13:07,680 --> 00:13:08,959
+I need to have my own engineering team.
+
+173
+00:13:08,959 --> 00:13:11,040
+I'm going to make sure I run my own silo.
+
+174
+00:13:11,040 --> 00:13:17,440
+And if you're a $40 billion business in product revenues, 45 billion, whatever um um we were at the time,
+
+175
+00:13:17,440 --> 00:13:27,040
+um and and then all of a sudden your goal is that you're going to just run a bunch of $40 million businesses and break it up into a series of $40
+
+176
+00:13:27,040 --> 00:13:28,720
+million businesses.
+
+177
+00:13:28,720 --> 00:13:30,880
+That's actually not a good thing for the company.
+
+178
+00:13:30,880 --> 00:13:38,320
+So, so the thing we did was we said we have to become not a holding company of 251 acquisitions and thousands of different products.
+
+179
+00:13:38,320 --> 00:13:49,600
+We have to become a platform company and the characteristic of the platform is you have to be tightly integrated where the customer feels the same emotion no matter what product of
+
+180
+00:13:49,600 --> 00:13:50,959
+ours they use.
+
+181
+00:13:50,959 --> 00:13:51,360
+Right?
+
+182
+00:13:51,360 --> 00:13:54,399
+There's the same set of expectations that can be served.
+
+183
+00:13:54,399 --> 00:13:57,680
+Reliability, trust, elegance and design.
+
+184
+00:13:57,680 --> 00:14:00,160
+Um solving a problem in the most efficient way.
+
+185
+00:14:00,160 --> 00:14:03,440
+Those are the things we we want to strive to do.
+
+186
+00:14:03,440 --> 00:14:10,560
+But you don't have to buy everything all at once because we also want to be realistic about the fact that not every customer only uses Cisco top to bottom.
+
+187
+00:14:10,560 --> 00:14:12,399
+There's there's an ecosystem.
+
+188
+00:14:12,399 --> 00:14:16,000
+So loosely coupled but tightly integrated.
+
+189
+00:14:16,000 --> 00:14:19,519
+You don't have to buy everything all at once, but boy, when you do buy two things together,
+
+190
+00:14:19,519 --> 00:14:21,279
+they work like magic.
+
+191
+00:14:21,279 --> 00:14:22,959
+So that was the second big thing we did.
+
+192
+00:14:22,959 --> 00:14:29,760
+And then the third one we did was we said, let's make sure that we have a mental model shift in the company.
+
+193
+00:14:29,760 --> 00:14:40,720
+And we did this about five five and a half years ago which when I first joined this was a very deliberate decision which was we cannot operate in a walled garden.
+
+194
+00:14:40,720 --> 00:14:51,519
+We have to make sure that we operate in an open ecosystem which means we have to be completely comfortable with having a competitor that we're going to partner with
+
+195
+00:14:51,519 --> 00:14:53,279
+and that's okay.
+
+196
+00:14:53,279 --> 00:14:58,720
+You know we don't have to think about this in a zero sum manner where in order for me to win someone has to lose.
+
+197
+00:14:58,720 --> 00:15:06,959
+we can partner because if we if a customer has made a choice of going with company A and company B and we happen to be one of those two companies,
+
+198
+00:15:06,959 --> 00:15:17,839
+we owe it to the customer to invest in their success in that other company because if the customer succeeds that success has a flowthrough rate to you that's going to be pretty high.
+
+199
+00:15:17,839 --> 00:15:27,600
+And so that's what we did and that I think that's been those principles of building great products but making sure that it operates like a platform and having an
+
+200
+00:15:27,600 --> 00:15:34,639
+open ecosystem I think has been kind of central and then not being confused about the fact that we'll be AI first from the top down.
+
+201
+00:15:34,639 --> 00:15:39,440
+>> I want to take a tangent and make sure people understand what Cisco even does these days.
+
+202
+00:15:39,440 --> 00:15:44,320
+I think as a a lay person, you'll think about Cisco and you're like, "Okay, they uh WebEx."
+
+203
+00:15:44,320 --> 00:15:44,800
+Yes.
+
+204
+00:15:44,800 --> 00:15:47,519
+They make maybe some routers.
+
+205
+00:15:47,519 --> 00:15:52,800
+You guys are key to this massive AI infrastructure buildout that's happening right now.
+
+206
+00:15:52,800 --> 00:15:54,639
+You're a major player in this.
+
+207
+00:15:54,639 --> 00:15:57,839
+I don't think people realize this, people listening to this podcast.
+
+208
+00:15:57,839 --> 00:16:03,360
+Give us just like a quick glimpse into how Cisco fits into this massive buildout and just like what is Cisco these days?
+
+209
+00:16:03,360 --> 00:16:06,800
+>> Cisco is a critical infrastructure company for the AI era.
+
+210
+00:16:06,800 --> 00:16:08,639
+What does that mean?
+
+211
+00:16:08,639 --> 00:16:11,279
+If you think about where the constraints are right now.
+
+212
+00:16:11,279 --> 00:16:15,920
+If you think that AI is going to be one of the biggest movements and then you ask yourself the question,
+
+213
+00:16:15,920 --> 00:16:23,519
+what could hold AI back, there's three things where we feel like we can have a direct impact that can hold AI back.
+
+214
+00:16:23,519 --> 00:16:26,320
+Number one is there's an infrastructure constraint.
+
+215
+00:16:26,320 --> 00:16:31,839
+There's just not enough power, compute, and network bandwidth in the world to go out and satiate the needs of AI.
+
+216
+00:16:31,839 --> 00:16:35,120
+Number two is there's a trust deficit.
+
+217
+00:16:35,120 --> 00:16:37,920
+If people don't trust these systems, they're not going to use them.
+
+218
+00:16:37,920 --> 00:16:41,199
+And right now there's a lot of mistrust in these systems.
+
+219
+00:16:41,199 --> 00:16:47,920
+You know, hallucination is a feature when you're writing poetry, but when you're trying to go out and run predictable systems,
+
+220
+00:16:47,920 --> 00:16:49,440
+uh hallucination can be a bad thing.
+
+221
+00:16:49,440 --> 00:16:52,000
+And these models are unpredictable.
+
+222
+00:16:52,000 --> 00:16:53,279
+They're non-deterministic.
+
+223
+00:16:53,279 --> 00:16:56,800
+And so they have to make sure that they have safety and security kind of factored into them.
+
+224
+00:16:56,800 --> 00:16:58,639
+And then the third area is a data gap.
+
+225
+00:16:58,639 --> 00:17:09,199
+Like so far we've trained these models with you know um human generated data publicly available on the internet but we are running out of human generated data publicly available on the internet
+
+226
+00:17:09,199 --> 00:17:19,520
+to train the models and every company is going to differentiate based on their own proprietary enterprise data being used to train the models synthetic data and machine data which is where the most
+
+227
+00:17:19,520 --> 00:17:30,320
+amount of growth is and the third category of machine data we can play a massive role in at Cisco so what does Cisco do Then if you think about a GPU,
+
+228
+00:17:30,320 --> 00:17:41,200
+which is what everyone now has is very clear because of the great job that Jensen has done that here is what a GPU's core contribution is to AI.
+
+229
+00:17:41,200 --> 00:17:46,240
+If these GPUs aren't together, you don't have AI.
+
+230
+00:17:46,240 --> 00:17:52,799
+Because it used to be that you could train a model on a single GPU, but then what happened was the model got too big to be put on a single GPU.
+
+231
+00:17:52,799 --> 00:17:56,799
+So then you had a server with eight GPUs that got connected together.
+
+232
+00:17:56,799 --> 00:17:58,559
+So you could train a model with eight GPUs.
+
+233
+00:17:58,559 --> 00:18:00,320
+But then that wasn't good enough.
+
+234
+00:18:00,320 --> 00:18:06,799
+So then what happened was you said I'm going to have a rack of servers that I'm going to network together.
+
+235
+00:18:06,799 --> 00:18:08,880
+That at some point wasn't big enough.
+
+236
+00:18:08,880 --> 00:18:13,919
+And so then they said, I'm going to have a cluster of racks that are connected together.
+
+237
+00:18:13,919 --> 00:18:16,880
+And those that connected together is the operative word.
+
+238
+00:18:16,880 --> 00:18:22,640
+That's what we end up doing is Nvidia makes the GPUs and we connect those GPUs together.
+
+239
+00:18:22,640 --> 00:18:24,640
+AMD makes the GPUs, we connect them together.
+
+240
+00:18:24,640 --> 00:18:34,799
+Now what's happened, Lenny, is you have these data centers that might be hundreds of kilometers apart that need to operate like one coherent cluster,
+
+241
+00:18:34,799 --> 00:18:36,640
+which means that they're completely in sync.
+
+242
+00:18:36,640 --> 00:18:40,640
+Every GPU is in sync with each other when you're doing a training run.
+
+243
+00:18:40,640 --> 00:18:48,799
+And that requires a very sophisticated set of technologies that we build to make sure that you could have two data centers 800 km apart,
+
+244
+00:18:48,799 --> 00:18:52,400
+but boy, they run like completely in sync with each other.
+
+245
+00:18:52,400 --> 00:18:53,679
+And that's what Cisco does.
+
+246
+00:18:53,679 --> 00:18:59,679
+We provide the networking, we provide the optics technology, we provide the safety and security technology,
+
+247
+00:18:59,679 --> 00:19:05,840
+we provide the observability, we provide um you know uh the um uh the data platform.
+
+248
+00:19:05,840 --> 00:19:10,640
+All of those things together for making sure that we provide critical infrastructure for the AI era.
+
+249
+00:19:10,640 --> 00:19:15,760
+So being on the inside of this massive investment that is happening across the world,
+
+250
+00:19:15,760 --> 00:19:25,520
+what do you think isn't being priced in into where things are heading into how much life will change or just like the scale of this of this buildout?
+
+251
+00:19:25,520 --> 00:19:28,799
+>> Years ago, I'd had a chance to meet with Ray Kerszswwell.
+
+252
+00:19:28,799 --> 00:19:37,039
+Um, you know, I was a chief scientist at Google for a while and I think he still is and he had talked about he was writing this book called um,
+
+253
+00:19:37,039 --> 00:19:38,559
+Live Long Enough to live forever.
+
+254
+00:19:38,559 --> 00:19:39,520
+And so I was talking to him.
+
+255
+00:19:39,520 --> 00:19:49,039
+I'm like, what is the impact to human population if all of a sudden you can have 15 generations living simultaneously because we have an indefinite span of life?
+
+256
+00:19:49,039 --> 00:19:52,320
+Cuz now all of a sudden, you know, everything has to change.
+
+257
+00:19:52,320 --> 00:19:54,640
+Like how does housing work, housing work?
+
+258
+00:19:54,640 --> 00:19:56,160
+How does agriculture work?
+
+259
+00:19:56,160 --> 00:19:57,760
+How does transportation work?
+
+260
+00:19:57,760 --> 00:20:00,400
+How does like everything changes?
+
+261
+00:20:00,400 --> 00:20:03,200
+And he looked at me and he he had the most profound answer.
+
+262
+00:20:03,200 --> 00:20:10,400
+And he said, you know, most people can't think exponentially because they always think exponentially maybe on a single dimension.
+
+263
+00:20:10,400 --> 00:20:20,240
+But what ends up happening in these things is you can sometimes you have to keep in mind that exponentiality happens across multiple
+
+264
+00:20:20,240 --> 00:20:21,360
+dimensions all at once.
+
+265
+00:20:21,360 --> 00:20:29,280
+If you do have an indefinite span of life, you have to assume that humans are creative enough that they're going to
+
+266
+00:20:29,280 --> 00:20:37,120
+find a way to have um 3-day crop cycle and they probably will have 5,000 story, you know,
+
+267
+00:20:37,120 --> 00:20:44,320
+skyscrapers and there will be a bunch of things in society that we have assumed are not solvable that will now be solvable.
+
+268
+00:20:44,320 --> 00:20:55,440
+So when you go back to your question and say what what changes in this entire equation that has not been factored in well I think today
+
+269
+00:20:55,440 --> 00:21:00,720
+AI is looked at largely as a productivity tool and an aggregation mechanism.
+
+270
+00:21:00,720 --> 00:21:11,039
+I have data all over and I'm going to be able to make sure that language can be used to compose the data in a way that I can give you Lenny the quest answer to the question that you're
+
+271
+00:21:11,039 --> 00:21:11,919
+looking for.
+
+272
+00:21:11,919 --> 00:21:17,360
+that I think is like the 0.00001% of the tip of the iceberg, right?
+
+273
+00:21:17,360 --> 00:21:29,120
+The reality is is we will have original insights generated that don't exist in the human corpus of knowledge and we will have the physical
+
+274
+00:21:29,120 --> 00:21:40,960
+world get augmented to language where capacity is augmented to humans and what we have to be a careful of is
+
+275
+00:21:40,960 --> 00:21:52,080
+that that capacity is working on behalf of humans but if that capacity is augmented to humans you can now do things that you really care to do and
+
+276
+00:21:52,080 --> 00:21:54,080
+not do things that you don't care to do.
+
+277
+00:21:54,080 --> 00:22:03,280
+And so like our biggest realization that we had when we were using codeex for example when we were writing you know code with um OpenAI's you know kind of
+
+278
+00:22:03,280 --> 00:22:12,240
+model and development tool was the first three months we were screwing around with this and then there was this light bulb that went off.
+
+279
+00:22:12,240 --> 00:22:16,400
+In fact, there was a forward deployed engineer from OpenAI that told us about this.
+
+280
+00:22:16,400 --> 00:22:22,320
+She's, hey, stop trying to think of this as a tool.
+
+281
+00:22:22,320 --> 00:22:33,280
+Think of this as a teammate that got added to your team and your framing will change and the way in which you actually use the technology will change.
+
+282
+00:22:33,280 --> 00:22:44,080
+And that that essentially if you compound that to how society operates that's going to be pretty profound as an implication while keeping in mind that these safety
+
+283
+00:22:44,080 --> 00:22:51,600
+and security risks are non-trivial and they're real and you can't be you know completely flippant about them
+
+284
+00:22:51,600 --> 00:23:03,120
+because how an AI identifies its own success and its own ambition will really matter and we have to make sure that we actually keep guard
+
+285
+00:23:03,120 --> 00:23:06,720
+rails around that because it is in service of humans.
+
+286
+00:23:06,720 --> 00:23:11,120
+It is not to go out and build a society by itself.
+
+287
+00:23:11,120 --> 00:23:17,679
+And I do think that that those are important kind of checks that you have checks and balances you have to keep in mind.
+
+288
+00:23:17,679 --> 00:23:27,919
+But the thing that people sometimes miss out in this very polarized narrative which is we are either going to have nothing to do in society or this is going to be completely useless as a piece of
+
+289
+00:23:27,919 --> 00:23:28,720
+technology.
+
+290
+00:23:28,720 --> 00:23:30,960
+I think that's not a helpful narrative.
+
+291
+00:23:30,960 --> 00:23:39,840
+In fact, what is helpful is saying as we reconstruct society for the next phase, how can we make sure that life gets infinitely better?
+
+292
+00:23:39,840 --> 00:23:42,880
+How can we make sure that diseases get solved?
+
+293
+00:23:42,880 --> 00:23:45,440
+How can we make sure that poverty gets eradicated?
+
+294
+00:23:45,440 --> 00:23:51,520
+How can we make sure that how people learn and find excitement and joy out of life gets compounded meaningfully?
+
+295
+00:23:51,520 --> 00:23:54,880
+If that happens, I think there's goodness that comes out of this.
+
+296
+00:23:54,880 --> 00:24:04,559
+A line that I often think about is Elon has had this uh thought that the best case scenario with AI because he was a very like AI doomer uh for a long time.
+
+297
+00:24:04,559 --> 00:24:10,480
+Uh and I think the reason he got leaned into AI is like I need to help steer this in a direction that isn't going to harm the world.
+
+298
+00:24:10,480 --> 00:24:19,600
+Uh the way he described it is the best case scenario for humanity is where the house cat where is just like okay nice just just keep sitting here with me and I'll take care of you.
+
+299
+00:24:19,600 --> 00:24:25,279
+But he, by the way, the thing the things that he is doing right now are nothing short of extraordinary.
+
+300
+00:24:25,279 --> 00:24:34,559
+And you know, for all the critique that one can have, like the the level of kind of deep thinking that's going on with his company,
+
+301
+00:24:34,559 --> 00:24:36,080
+it's it's just crazy.
+
+302
+00:24:36,080 --> 00:24:44,559
+>> So, as you've been uh thinking about where things are heading, I I I've been liking to ask this question with for people with kids.
+
+303
+00:24:44,559 --> 00:24:52,080
+Is there anything you're kind of shifting in how you raise your your daughter, keeping in mind where things are heading and like are there skills you're trying to instill in her,
+
+304
+00:24:52,080 --> 00:24:56,080
+values you're trying to instill in her that help her will help her thrive in this future?
+
+305
+00:24:56,080 --> 00:24:59,039
+>> We made a choice and I didn't know how that choice was going to go.
+
+306
+00:24:59,039 --> 00:25:00,799
+That was actually not even an active choice.
+
+307
+00:25:00,799 --> 00:25:02,080
+It was a passive choice.
+
+308
+00:25:02,080 --> 00:25:07,360
+Frankly, even might have been slightly intellectually lazy in the way that we did it,
+
+309
+00:25:07,360 --> 00:25:14,799
+but it actually worked out pretty well in the sense that we didn't really deprive her of the use of technology.
+
+310
+00:25:14,799 --> 00:25:18,960
+Like, it's a school of thought that says keep technology away from the kids for a while.
+
+311
+00:25:18,960 --> 00:25:20,480
+We didn't do that.
+
+312
+00:25:20,480 --> 00:25:28,720
+And frankly, I didn't know how it was going to work out because there are things about the way that the generation is,
+
+313
+00:25:28,720 --> 00:25:39,520
+and by the way, all of us, not just the new generation, but this kind of constantly being glued to your phone all the time and not being able to actually put that down and have a conversation,
+
+314
+00:25:39,520 --> 00:25:45,279
+um, you know, is I think it's an important skill in humans to have and preserve over time.
+
+315
+00:25:45,279 --> 00:25:56,240
+And in fact, as AI does more for us, we should be able to have more of this time where I don't have to worry about every notification that's coming on my phone every minute
+
+316
+00:25:56,240 --> 00:26:00,080
+of the day because maybe I can be more present in the moment that I'm in.
+
+317
+00:26:00,080 --> 00:26:10,080
+She just turned 15 and the night before she was turning 15, what I realized is she is so emotionally mature.
+
+318
+00:26:10,080 --> 00:26:19,360
+We were sitting down one night and she's like, "Hey, Dad, just so you know, um, I feel really good right now about having a very strong
+
+319
+00:26:19,360 --> 00:26:21,039
+value system."
+
+320
+00:26:21,039 --> 00:26:22,240
+I'm like, "Oh, okay.
+
+321
+00:26:22,240 --> 00:26:23,039
+What does that mean?"
+
+322
+00:26:23,039 --> 00:26:25,440
+And say more.
+
+323
+00:26:25,440 --> 00:26:34,320
+And she's like, "Well, can you name five things that you feel so convicted about that if the entire world disagreed with you,
+
+324
+00:26:34,320 --> 00:26:38,320
+this this is the day before she's turning 15, okay?
+
+325
+00:26:38,320 --> 00:26:45,120
+the entire world disagreed with you, you would still feel like you were right on that and that would not waver you.
+
+326
+00:26:45,120 --> 00:26:55,360
+She's like, I have a certain core set of things that I believe in where I am completely confident that if everyone disagreed with me,
+
+327
+00:26:55,360 --> 00:26:56,080
+I'm still good.
+
+328
+00:26:56,080 --> 00:27:02,240
+Now, by the way, I have to kind of coach her on the hey, when you get new data, be open-minded to changing your mind.
+
+329
+00:27:02,240 --> 00:27:11,760
+But it was actually a very interesting dynamic which is, you know, if we can have them be exposed to technology but have the right value system,
+
+330
+00:27:11,760 --> 00:27:15,200
+you might actually have the best of both worlds.
+
+331
+00:27:15,200 --> 00:27:17,919
+And um and you know, it's the day ain't over yet.
+
+332
+00:27:17,919 --> 00:27:18,559
+She's 15.
+
+333
+00:27:18,559 --> 00:27:24,080
+There's a lot of, you know, chances for her getting influenced by uh external factors and all of that.
+
+334
+00:27:24,080 --> 00:27:31,360
+But what you have to do is make sure that you instill the right values, but then also expose them to the reality of what the world is today.
+
+335
+00:27:31,360 --> 00:27:33,520
+uh and not completely insulate them from that.
+
+336
+00:27:33,520 --> 00:27:39,120
+And so I I the way that it worked out, it did end up end up working well.
+
+337
+00:27:39,120 --> 00:27:50,720
+And um we were lucky for no credit to us, she was she was able to use technology to get her EQ higher and higher and uh we were lucky on that
+
+338
+00:27:50,720 --> 00:27:53,039
+front and we know it can go sideways the other way too.
+
+339
+00:27:53,039 --> 00:28:01,039
+But I do feel like right now, at least for my one daughter, what we try to do is get her exposed to the technology,
+
+340
+00:28:01,039 --> 00:28:06,399
+but make sure that we focus a lot more on the values that we need to have that govern us on a day-to-day basis.
+
+341
+00:28:06,399 --> 00:28:13,039
+You know, kindness, you know, not being arrogant, uh, hard work, work ethic, those things matter.
+
+342
+00:28:13,039 --> 00:28:15,120
+And I don't think those are timeless in my mind.
+
+343
+00:28:15,120 --> 00:28:20,880
+I don't think those change because, you know, take risks, be creative, that kind of stuff.
+
+344
+00:28:20,880 --> 00:28:23,279
+GT, these are parenting goals as I hear this.
+
+345
+00:28:23,279 --> 00:28:24,240
+I have a two and a half-year-old.
+
+346
+00:28:24,240 --> 00:28:24,960
+Mr.
+
+347
+00:28:24,960 --> 00:28:28,240
+It sounds like you've you've done an amazing job raising your daughter.
+
+348
+00:28:28,240 --> 00:28:29,679
+>> I would take zero credit for it.
+
+349
+00:28:29,679 --> 00:28:35,520
+I think um I think she deserves a lot of credit for growing up to be who she's become.
+
+350
+00:28:35,520 --> 00:28:39,120
+>> And her mother, >> gota got to shout out mom.
+
+351
+00:28:39,120 --> 00:28:45,760
+>> Uh what's interesting is that uh I know anthropic is really big like this idea of values and just like how you operate.
+
+352
+00:28:45,760 --> 00:28:57,520
+Anthropic has this constitution they released of how the values essentially of Claude and it's so interesting how much similarity there is to how to raise a great person and to how to steer an AI
+
+353
+00:28:57,520 --> 00:28:58,320
+correctly.
+
+354
+00:28:58,320 --> 00:28:58,880
+>> That's right.
+
+355
+00:28:58,880 --> 00:29:09,440
+And and by the way it's um some of your beliefs and your system around you might change but values tend to be pretty longasting and
+
+356
+00:29:09,440 --> 00:29:11,840
+culture in a company tends to be pretty long-lasting.
+
+357
+00:29:11,840 --> 00:29:22,559
+like you know when we um Ben Horovitz talks about this very eloquently the culture is just a set of norms that a company actually it's not it's not a set of beliefs it's a set of behaviors that you exude within the
+
+358
+00:29:22,559 --> 00:29:32,880
+company and it's it's it's actually very very true because when things aren't going right how do people behave to go solve problems and come together um and
+
+359
+00:29:32,880 --> 00:29:44,799
+that actually forms your cultural norms and I think those cultural norms are it's very important to be intentional about it and as you have more automation in the Being intentional not just with humans but also with machines on what you want
+
+360
+00:29:44,799 --> 00:29:47,279
+to do to create the guardrails I think is pretty important.
+
+361
+00:29:47,279 --> 00:29:50,000
+>> I'm going to take us in a a different direction.
+
+362
+00:29:50,000 --> 00:29:55,279
+I talked to Aaron Levy your former boss at your dear friend.
+
+363
+00:29:55,279 --> 00:29:56,960
+>> Yeah >> and friend.
+
+364
+00:29:56,960 --> 00:29:58,960
+Uh so I asked him just what should I ask you about?
+
+365
+00:29:58,960 --> 00:30:03,279
+What's something that uh he learned from you that has stuck with him ever since working with you?
+
+366
+00:30:03,279 --> 00:30:11,840
+and he uh shared this concept of the right to win which he says has informed the way he thinks about strategy ever since.
+
+367
+00:30:11,840 --> 00:30:16,720
+Talk about what this is and how folks might use this when they're thinking about product strategy,
+
+368
+00:30:16,720 --> 00:30:18,159
+company strategy.
+
+369
+00:30:18,159 --> 00:30:26,480
+>> One of the things that we would always talk about is in the areas that we're going to participate,
+
+370
+00:30:26,480 --> 00:30:28,880
+do we have permission to play?
+
+371
+00:30:28,880 --> 00:30:36,880
+Every company, you know, has to make sure that the way in which they provide points of insertion and logical entry into a
+
+372
+00:30:36,880 --> 00:30:43,840
+market is a lot of times dependent on do you have the permission to play in that market?
+
+373
+00:30:43,840 --> 00:30:49,840
+Do you have an avenue to get to your to have a route to market to be able to take that product?
+
+374
+00:30:49,840 --> 00:30:58,080
+Just by building a product that is amazing in in some area, you you don't end up actually getting it to mass scale distribution.
+
+375
+00:30:58,080 --> 00:31:06,799
+And so one of the things that we would always do is ask ourselves the question, we're building this new category or we're building this new capability.
+
+376
+00:31:06,799 --> 00:31:13,279
+Is it going to be logical for people that box built it versus another company building it?
+
+377
+00:31:13,279 --> 00:31:18,640
+You know, is it is it going to be logical for people that Cisco built it versus another company building it?
+
+378
+00:31:18,640 --> 00:31:21,279
+So that's this notion of permission to play, the right to win.
+
+379
+00:31:21,279 --> 00:31:25,520
+Do we have a right to win in that area because we have permission to play?
+
+380
+00:31:25,520 --> 00:31:32,240
+And do we have the route to market to be able to take that product and get it to mass scale distribution?
+
+381
+00:31:32,240 --> 00:31:41,200
+And if you can do those things right, then actually your dollars that you expend on building product actually have an outsized return.
+
+382
+00:31:41,200 --> 00:31:49,600
+If not, then you can actually spend up spend end up spending a lot of money on product where the product people think ah these sales guys don't get it.
+
+383
+00:31:49,600 --> 00:31:50,720
+They don't know how to sell it.
+
+384
+00:31:50,720 --> 00:31:54,880
+Especially in enterprise software and the sales people think these product guys don't get it.
+
+385
+00:31:54,880 --> 00:31:56,559
+they don't know how to build it.
+
+386
+00:31:56,559 --> 00:32:08,080
+And so I think in order to stop that, what you have to do is you have to actually use your scale as an advantage and you have to use the areas where you've got the
+
+387
+00:32:08,080 --> 00:32:13,679
+ability to have permission to play where people feel like this is very logical for a company like Cisco.
+
+388
+00:32:13,679 --> 00:32:21,679
+Like when we say we're going to network the GPUs and make sure that we actually have a trusted system in AI,
+
+389
+00:32:21,679 --> 00:32:28,640
+that is not far-fetched for someone to go out and think about because it's a very natural thing for us to do because for the past 40 years,
+
+390
+00:32:28,640 --> 00:32:32,320
+we've been doing it for the rest of the infrastructure that was not AI.
+
+391
+00:32:32,320 --> 00:32:40,559
+And so that's not a far cry to say,"Okay, we'll now do it for AI, you know, and I think that was an area that Aaron and I spent um a fair and by the way,
+
+392
+00:32:40,559 --> 00:32:43,360
+you know, I'm glad that he he took that out of me."
+
+393
+00:32:43,360 --> 00:32:45,600
+There's so much I've learned from him.
+
+394
+00:32:45,600 --> 00:32:54,320
+The biggest area I've learned from him is you never give up and persistence beats intellect and stamina beats intellect any day of the week,
+
+395
+00:32:54,320 --> 00:32:54,960
+twice on Sunday.
+
+396
+00:32:54,960 --> 00:32:58,000
+And that that guy is as smart as they come.
+
+397
+00:32:58,000 --> 00:33:00,960
+But that is not the why that's not the biggest reason he's successful.
+
+398
+00:33:00,960 --> 00:33:07,519
+He's the biggest reason he's successful is he has an enormous amount of staying power in the game.
+
+399
+00:33:07,519 --> 00:33:11,440
+You know, going back to my daughter's comment of no matter what what everyone else says,
+
+400
+00:33:11,440 --> 00:33:17,440
+his convictions and belief, he will actually stick by them and actually get through um the hardest times.
+
+401
+00:33:17,440 --> 00:33:18,480
+>> I totally believe that.
+
+402
+00:33:18,480 --> 00:33:24,880
+I I feel like I'm not the smartest person in the room usually and uh I succeed in large part because I just work really hard.
+
+403
+00:33:24,880 --> 00:33:26,159
+>> You're pretty smart though.
+
+404
+00:33:26,159 --> 00:33:28,320
+Like I've I've been watching your podcast for a while.
+
+405
+00:33:28,320 --> 00:33:30,720
+like you've done a pretty amazing job.
+
+406
+00:33:30,720 --> 00:33:32,080
+>> I appreciate it.
+
+407
+00:33:32,080 --> 00:33:38,159
+So, in this um this permission to win concept, the reason I think it's so important is it's so easy to build stuff now.
+
+408
+00:33:38,159 --> 00:33:41,519
+Everyone's just building building building launching launching launching launching.
+
+409
+00:33:41,519 --> 00:33:47,279
+>> It feels like this is uh an increasingly important lever is why will we win in this space?
+
+410
+00:33:47,279 --> 00:33:57,440
+Um I'm curious if there's an example you can share either from Box or Cisco where it's just like okay this is like we're going to do this because we because we have the permission to to play here.
+
+411
+00:33:57,440 --> 00:34:06,320
+I agree with you in the sense that if if generating code is something that becomes abundant,
+
+412
+00:34:06,320 --> 00:34:11,520
+that doesn't mean you're going to have better technology just because you can generate a lot of code.
+
+413
+00:34:11,520 --> 00:34:14,240
+You still need human judgment.
+
+414
+00:34:14,240 --> 00:34:19,359
+You still need a level of intuition on what problems are the right ones to solve.
+
+415
+00:34:19,359 --> 00:34:30,800
+you still and yes AI can help you with all of that but it's not something that like that's where humans have a superpower they have instinct and they can actually make sure
+
+416
+00:34:30,800 --> 00:34:39,200
+that they can you know fulfill out a vision that says this is what I think this could be in in the fullness of time.
+
+417
+00:34:39,200 --> 00:34:41,280
+Um and so that that I think is pretty important.
+
+418
+00:34:41,280 --> 00:34:51,760
+So the more the easier it gets for us to get the bottlenecks out to generate code, the harder it gets for us to make sure that there's not AI
+
+419
+00:34:51,760 --> 00:35:01,119
+slop in the market and that we actually are very selective on what are the things that are going to be the most important things that solve the most important problems moving forward.
+
+420
+00:35:01,119 --> 00:35:12,000
+example of permission to play is I mean there's so many ideas at a company the size of Cisco we have constantly new
+
+421
+00:35:12,000 --> 00:35:23,359
+ideas that keep coming up you know and then in those new ideas that keep coming up people will always say oh my goodness this company is doing so well
+
+422
+00:35:23,359 --> 00:35:31,839
+we should just go into that market or we should just go into this market and 90% of the times 99% of the times I find myself saying no.
+
+423
+00:35:31,839 --> 00:35:37,119
+And the reason for that is you have to be extremely selective of where you expend your calories.
+
+424
+00:35:37,119 --> 00:35:44,000
+And that caloric expenditure is is where you know if you expend your calories in a very focused way,
+
+425
+00:35:44,000 --> 00:35:49,920
+the results you'll get from that focus area tend to be outsized and disproportionate.
+
+426
+00:35:49,920 --> 00:35:59,920
+If you dissipate that caloric burn across multitude of different areas, nothing gets enough girth to be able to go out and drive it
+
+427
+00:35:59,920 --> 00:36:00,800
+all the way through.
+
+428
+00:36:00,800 --> 00:36:10,160
+And and so like, you know, why are we not in business to consumer tech at Cisco, right?
+
+429
+00:36:10,160 --> 00:36:15,680
+Like why why are we not going out and building things that are um very very BTOC?
+
+430
+00:36:15,680 --> 00:36:20,880
+because I don't think we have a distribution channel that actually is within our DNA.
+
+431
+00:36:20,880 --> 00:36:23,839
+I don't think that we've got permission to play there.
+
+432
+00:36:23,839 --> 00:36:30,960
+That's an area where it would be extremely hard for people to grow that Cisco should be the one who's participating in that.
+
+433
+00:36:30,960 --> 00:36:31,839
+Now, can we do it?
+
+434
+00:36:31,839 --> 00:36:33,680
+Of course, we can do it.
+
+435
+00:36:33,680 --> 00:36:35,040
+Is that where we want to go?
+
+436
+00:36:35,040 --> 00:36:43,440
+Or do we want to go where there's so much opportunity in the areas where we can actually prosecute with with the um with the with the ability to have,
+
+437
+00:36:43,440 --> 00:36:51,040
+you know, operate from a position of strength that um you'll just get a much better return for the dollar that you invest.
+
+438
+00:36:51,040 --> 00:36:54,720
+You >> mentioned Aaron as a CEO that you learned a lot from.
+
+439
+00:36:54,720 --> 00:36:59,119
+I'm curious what other CEOs you've learned a lot from and what's what's something you learned from them.
+
+440
+00:36:59,119 --> 00:37:04,800
+Chuck Robbins is one of my favorite humans and not just because I work for him.
+
+441
+00:37:04,800 --> 00:37:08,960
+Uh I work for him because he's one of my favorite humans.
+
+442
+00:37:08,960 --> 00:37:14,800
+Um >> and what I've learned from him, he had this kind of great line.
+
+443
+00:37:14,800 --> 00:37:25,760
+There was this um you know piece of press that our our media is very s sensationalist in by by definition,
+
+444
+00:37:25,760 --> 00:37:26,079
+right?
+
+445
+00:37:26,079 --> 00:37:31,200
+like they will try to create a very polarized view about the world where there actually isn't one.
+
+446
+00:37:31,200 --> 00:37:36,240
+In most things in my life, things are not as extreme as you hear of the headlines of the media,
+
+447
+00:37:36,240 --> 00:37:39,599
+you know, uh it's somewhere in the middle, right?
+
+448
+00:37:39,599 --> 00:37:50,560
+And uh there was one time that there was this article that ran and it was about like you know giving me
+
+449
+00:37:50,560 --> 00:38:02,079
+an unnecessary amount of credit and frankly not giving Chuck as much credit about something that he has actually done like a lot of the movements that we've had internally
+
+450
+00:38:02,079 --> 00:38:09,920
+wouldn't have happened if he had not hired me and given me agency to go do the things that I needed to get done and he was very much completely in sync with
+
+451
+00:38:09,920 --> 00:38:12,000
+me on what needed to happen.
+
+452
+00:38:12,000 --> 00:38:17,760
+Um, and so, you know, I when I saw this article, I had no idea the report.
+
+453
+00:38:17,760 --> 00:38:18,400
+I I reached out.
+
+454
+00:38:18,400 --> 00:38:22,079
+I'm like, "Hey, I just want to let you know this was not me saying it's someone."
+
+455
+00:38:22,079 --> 00:38:24,880
+I g don't worry about it, man.
+
+456
+00:38:24,880 --> 00:38:32,960
+What I've learned in life is if you don't care about who gets the credit, you just go a lot farther in life.
+
+457
+00:38:32,960 --> 00:38:42,960
+And it's so profound, right, in so many ways that he's just way too confident to let anything.
+
+458
+00:38:42,960 --> 00:38:51,920
+And so the thing I've learned from Chuck is the importance of confidence and the importance of knowing what you're good at and what you're not good at.
+
+459
+00:38:51,920 --> 00:38:56,000
+And when you're not good, you're going to assemble a team of people around you.
+
+460
+00:38:56,000 --> 00:38:58,240
+He's just he's just masterful at that.
+
+461
+00:38:58,240 --> 00:38:59,040
+And it happens.
+
+462
+00:38:59,040 --> 00:39:01,920
+>> By the way, he's the he's the CEO of Cisco in case people >> That's right.
+
+463
+00:39:01,920 --> 00:39:03,040
+He's the CEO of Cisco.
+
+464
+00:39:03,040 --> 00:39:04,960
+He's the chair of the business round table.
+
+465
+00:39:04,960 --> 00:39:15,040
+Uh he's um very dear friend of mine and um and I feel like there's a lot to learn from that kind of mental model and mindset.
+
+466
+00:39:15,040 --> 00:39:20,320
+And I I I've been lucky enough Lenny that and this is just dumb luck.
+
+467
+00:39:20,320 --> 00:39:29,599
+The people that I've worked with and for are all very very close to me and I just don't let them go from my life.
+
+468
+00:39:29,599 --> 00:39:41,119
+And so one of the things for example is I worked with Aaron and then when I was leaving it was very emotional uh but I wanted to do something different but we committed to each other
+
+469
+00:39:41,119 --> 00:39:49,839
+that we're going to have dinner every 6 weeks and Aaron and there's another co-founder Jeff Kiser and I three of us every 6 weeks in Palo Alto we have
+
+470
+00:39:49,839 --> 00:40:00,560
+dinner you know and it's one of the most uh special things that I I still do and it's a tradition now it's been going on for 6 years And um and I love it,
+
+471
+00:40:00,560 --> 00:40:00,960
+you know.
+
+472
+00:40:00,960 --> 00:40:09,359
+Um you um you look at someone like Chuck, we have I I start with my day with talking to him in the morning.
+
+473
+00:40:09,359 --> 00:40:18,960
+We we text each other uh and then I end the day talking to him in the evening and we probably touch base at least four or five times a day.
+
+474
+00:40:18,960 --> 00:40:23,440
+They're not long conversations at all points in time, but we're constantly in contact with each other.
+
+475
+00:40:23,440 --> 00:40:26,640
+And I feel like that only happens when you've established enough trust.
+
+476
+00:40:26,640 --> 00:40:31,920
+There's my one my first boss when I moved to California's this guy named Rick Devonoodi.
+
+477
+00:40:31,920 --> 00:40:34,880
+Uh and then and there's another guy named Jeremy Burton.
+
+478
+00:40:34,880 --> 00:40:36,720
+You know, Rick Devonoodi is still my coach.
+
+479
+00:40:36,720 --> 00:40:38,640
+I see him every two weeks.
+
+480
+00:40:38,640 --> 00:40:46,480
+Jeremy is someone that's a very dear friend of mine and we're neighbors and we moved and bought a place next to his um just so that we could be close to him.
+
+481
+00:40:46,480 --> 00:40:54,480
+And these are like special people in your life that have enriched your life in very different ways that I I think you just have to make sure that you treasure.
+
+482
+00:40:54,480 --> 00:40:57,359
+Today's episode is brought to you by Samsara.
+
+483
+00:40:57,359 --> 00:41:02,960
+If you listen to this podcast, you know that we spend a lot of time talking about building things that sit on a screen.
+
+484
+00:41:02,960 --> 00:41:05,920
+Onboarding funnels, mobile apps, and checkout flows.
+
+485
+00:41:05,920 --> 00:41:08,800
+Samsara is building products for the physical world.
+
+486
+00:41:08,800 --> 00:41:16,640
+First responders racing to emergencies, truck drivers carrying critical supplies, construction workers building our cities and data centers.
+
+487
+00:41:16,640 --> 00:41:19,680
+These are people who put everything on the line every single day.
+
+488
+00:41:19,680 --> 00:41:22,240
+And Samsara's technology protects them.
+
+489
+00:41:22,240 --> 00:41:27,839
+Samsara is solving complex problems at the intersection of hardware, software, and edge AI.
+
+490
+00:41:27,839 --> 00:41:30,160
+And their AI doesn't just detect events.
+
+491
+00:41:30,160 --> 00:41:36,319
+It reasons about the intent and answers questions like, "Did that truck driver break abruptly because they were distracted,
+
+492
+00:41:36,319 --> 00:41:38,319
+or was that a heroic act?"
+
+493
+00:41:38,319 --> 00:41:44,960
+If you want to ground LLMs in messy real world telemetry or solve edge AI constraints at a planetary scale,
+
+494
+00:41:44,960 --> 00:41:47,040
+Samsara wants to talk to you.
+
+495
+00:41:47,040 --> 00:41:51,119
+If you like playing with enormous data sets, moving fast and working in small teams,
+
+496
+00:41:51,119 --> 00:41:55,520
+come help build the technology that makes the physical world safer and more efficient.
+
+497
+00:41:55,520 --> 00:41:58,800
+Visit samsara.com/lenny to learn more.
+
+498
+00:41:58,800 --> 00:42:02,200
+That's samsar.com/lenny.
+
+499
+00:42:03,119 --> 00:42:05,839
+So, you're currently CPO at Cisco.
+
+500
+00:42:05,839 --> 00:42:08,560
+you I think the team under you is it 25,000 people.
+
+501
+00:42:08,560 --> 00:42:09,839
+Is that the right number?
+
+502
+00:42:09,839 --> 00:42:12,640
+>> About 30,000 but um >> 30,000 people.
+
+503
+00:42:12,640 --> 00:42:13,119
+Okay.
+
+504
+00:42:13,119 --> 00:42:13,760
+>> Yeah.
+
+505
+00:42:13,760 --> 00:42:18,079
+>> What's what's something that you wish you'd known before taking on this role?
+
+506
+00:42:18,079 --> 00:42:26,880
+I don't know if it was I mean I instinctively kind of knew it but it was very very uh accentuated at Cisco because when you like you know when
+
+507
+00:42:26,880 --> 00:42:38,160
+people say oh is um is scale hard and my perspective has always been that the absence of scale is way harder
+
+508
+00:42:38,160 --> 00:42:39,200
+than scale.
+
+509
+00:42:39,200 --> 00:42:40,079
+What do I mean by that?
+
+510
+00:42:40,079 --> 00:42:50,400
+Like if I have a startup with three people and we need to prosecute another idea and that idea requires
+
+511
+00:42:50,400 --> 00:42:55,839
+um you know five people working on it, I have to go raise money, right?
+
+512
+00:42:55,839 --> 00:43:00,640
+Like it's it's an ent or I have to pivot my entire business.
+
+513
+00:43:00,640 --> 00:43:11,520
+If you have 30,000 people and you have an idea that requires five people, you just figure out a way that you allocate the dollars internally and say let's go prosecute this idea.
+
+514
+00:43:11,520 --> 00:43:22,000
+So in my mind, I always felt like absence of scale was way harder than the presence of scale and operating with within scale seemed like it was like yeah,
+
+515
+00:43:22,000 --> 00:43:23,599
+you have more opportunity to do it.
+
+516
+00:43:23,599 --> 00:43:33,599
+What I found over the years, not just at Cisco, but even when I because I ran a small startup in in um in Chicago for like 17
+
+517
+00:43:33,599 --> 00:43:43,359
+years before I moved over to the valley, what I found in the large companies is the communication framework and the lossiness of communication,
+
+518
+00:43:43,359 --> 00:43:51,119
+the telephone game, so to say, has a profoundly negative effect if you're not intentional about it and if you're not careful of it.
+
+519
+00:43:51,119 --> 00:43:54,640
+And there was this board member that we had.
+
+520
+00:43:54,640 --> 00:43:56,079
+There's a couple board members.
+
+521
+00:43:56,079 --> 00:43:58,960
+Um, you know, our lead director, Michael Capellis, is amazing.
+
+522
+00:43:58,960 --> 00:44:02,400
+Um, there's this other board member, you know, Kevin is amazing.
+
+523
+00:44:02,400 --> 00:44:07,200
+And then there's this one board member, West Bush, who we recently, um, you know, rolled off,
+
+524
+00:44:07,200 --> 00:44:09,359
+but he used to be on our board.
+
+525
+00:44:09,359 --> 00:44:11,760
+And when I got this job, he pulled me aside.
+
+526
+00:44:11,760 --> 00:44:13,440
+He's like, G, I'm going to tell you something.
+
+527
+00:44:13,440 --> 00:44:19,040
+I'm going to give you some advice and, um, take it or leave it, but I think it's going to be important for you to keep it in mind.
+
+528
+00:44:19,040 --> 00:44:19,520
+Like, what's that?
+
+529
+00:44:19,520 --> 00:44:30,160
+and he goes,"Whatever you do, um, don't think about your story of the company as a marketing exercise.
+
+530
+00:44:30,160 --> 00:44:41,359
+Think about it as the most intrinsic foundational exercise of the company and always be the custodian of the message.
+
+531
+00:44:41,359 --> 00:44:46,880
+Don't delegate that to someone else to give it because if you have three, four, five,
+
+532
+00:44:46,880 --> 00:44:52,079
+six, seven layers between you and the person who's actually doing the job in the front line.
+
+533
+00:44:52,079 --> 00:44:57,760
+What you don't want to do is play the telephone game and assume that people will just cascade it when you go to your team and then say,
+
+534
+00:44:57,760 --> 00:44:59,599
+"Okay, that team will cascade to the next team.
+
+535
+00:44:59,599 --> 00:45:02,160
+Cascade to the next team, cascade to the next team."
+
+536
+00:45:02,160 --> 00:45:09,680
+Every one of them will add a flavor with well-intentioned and then by the time it gets to the end,
+
+537
+00:45:09,680 --> 00:45:10,960
+people won't know what it is.
+
+538
+00:45:10,960 --> 00:45:13,839
+So, always own telling the story.
+
+539
+00:45:13,839 --> 00:45:17,440
+And I'm like, that seems like it's a lot because like we have a very broad portfolio.
+
+540
+00:45:17,440 --> 00:45:18,800
+We do all of these events.
+
+541
+00:45:18,800 --> 00:45:24,880
+It's, you know, like I'm going to have to set stand on stage for 90 minutes and just talk about he's like,
+
+542
+00:45:24,880 --> 00:45:26,400
+"Please do that.
+
+543
+00:45:26,400 --> 00:45:34,240
+Make sure you don't and and I initially the hidden benefit that came out of it that I did not realize is it massively,
+
+544
+00:45:34,240 --> 00:45:36,560
+Lenny simplified our business."
+
+545
+00:45:36,560 --> 00:45:38,400
+And you know why?
+
+546
+00:45:38,400 --> 00:45:46,400
+Because we have such a broad business with so many different industries, it's impossible for someone to be a deep expert in every single one of them across the board.
+
+547
+00:45:46,400 --> 00:45:49,359
+Like there's just way too much surface area.
+
+548
+00:45:49,359 --> 00:45:54,640
+But the things that we want to convey to the market that the market should take away from us.
+
+549
+00:45:54,640 --> 00:46:01,040
+If that story is not something that I understand well enough to be able to convey it,
+
+550
+00:46:01,040 --> 00:46:06,000
+how do I first expect 20,000 of my sellers to be able to go tell it to the market?
+
+551
+00:46:06,000 --> 00:46:11,760
+And how do I expect my customers to be able to digest that story?
+
+552
+00:46:11,760 --> 00:46:16,560
+There's zero chance that would happen, right?
+
+553
+00:46:16,560 --> 00:46:27,040
+And so that was my my kind of big takeaway from this, which is don't um delegate the storytelling.
+
+554
+00:46:27,040 --> 00:46:30,880
+And the storytelling is not a marketing exercise after you built the product.
+
+555
+00:46:30,880 --> 00:46:34,960
+The story is why you build the product to make the story come real.
+
+556
+00:46:34,960 --> 00:46:44,480
+And so make sure that the story is there first and then that story has evidence and proof based on the products that you're building.
+
+557
+00:46:44,480 --> 00:46:53,599
+I had a conversation with Matt Mc McInness who's COO now CPO at Ripling and a similar piece of advice which I think is also it's like a uh adjacent
+
+558
+00:46:53,599 --> 00:47:04,480
+advice which is the intensity of of an idea or or a plan drops at every level that it goes from CO to the next layer and layer and your job as a leader is to
+
+559
+00:47:04,480 --> 00:47:16,400
+maintain that intensity not to buffer it from the employees but to maintain exactly the same intensity and it feels like that's in addition to also just the keep the story the same like don't
+
+560
+00:47:16,400 --> 00:47:27,359
+filter it don't change it although your advice is even different just like you actually go to the team working on it and and tell the story yourself don't even >> I want to make sure that they hear it from me directly so that there's no lossiness
+
+561
+00:47:27,359 --> 00:47:38,560
+>> you know like we have this concept in networking called packet loss when you you know you actually send packets over a wire and you have a loss of packets then actually there's >> um um there's loss of data like you
+
+562
+00:47:38,560 --> 00:47:45,680
+don't want to have packet loss in your storytelling from you to the person on the front line because >> it's a direct Ethernet cat 5 connection.
+
+563
+00:47:45,680 --> 00:47:49,200
+>> This is this a direct connection and you know there's no packet loss on this one.
+
+564
+00:47:49,200 --> 00:47:52,319
+Like you you got to make sure it gets to the intended audience.
+
+565
+00:47:52,319 --> 00:47:58,480
+And I think the reason for that is as companies get large, they can lose touch with the front lines.
+
+566
+00:47:58,480 --> 00:48:04,400
+Like everyone gets really good with the math of the business, but they don't really always preserve the soul of the business.
+
+567
+00:48:04,400 --> 00:48:16,240
+And there's a lossiness that happens because you know if you have seven eight layers between you and the front line even the message that's coming back to you from them is actually getting lossy and so what you
+
+568
+00:48:16,240 --> 00:48:27,920
+have to do is just preserve and I think um what was said earlier about the intensity is the same way which is you got to preserve the intensity you got to preserve the sanctity of the message and you got to preserve the clarity of the
+
+569
+00:48:27,920 --> 00:48:39,280
+message so that everyone is clear on the direction we're going down and if you can stay clear and stay motivated about that direction and make sure that everyone's on the same page on what
+
+570
+00:48:39,280 --> 00:48:42,480
+needs to be done to execute, you will have success.
+
+571
+00:48:42,480 --> 00:48:45,520
+If not, you will actually have guaranteed failure.
+
+572
+00:48:45,520 --> 00:48:53,760
+>> How do you actually operationalize this without just uh being overloaded with work and constantly having to you know meet with every team and remind them of the story?
+
+573
+00:48:53,760 --> 00:49:02,240
+>> The first thing I feel is you have to have very clear thinking because the clarity of thought is what brings clarity of communication.
+
+574
+00:49:02,240 --> 00:49:12,319
+So you have to spend the time with your team in sweating the details on what what it is that you want to do and why you want to
+
+575
+00:49:12,319 --> 00:49:12,640
+do it.
+
+576
+00:49:12,640 --> 00:49:22,400
+The context of why is so lost uh and constantly reminding people why it's important and having the least
+
+577
+00:49:22,400 --> 00:49:27,040
+amount of asymmetry between the topmost layer in the organization and the bottommost layer is super.
+
+578
+00:49:27,040 --> 00:49:29,680
+Now by the way you know I'm a section 16 officer.
+
+579
+00:49:29,680 --> 00:49:37,920
+There are certain things that for example you're in a quiet period you can't go talk about to someone else during that time period like you you know but that's not allowed.
+
+580
+00:49:37,920 --> 00:49:46,000
+However, the most amount of context that you can provide them in the way that you can because you're allowed to,
+
+581
+00:49:46,000 --> 00:49:47,280
+the better off you are.
+
+582
+00:49:47,280 --> 00:49:50,160
+And always treat people like adults.
+
+583
+00:49:50,160 --> 00:50:00,880
+You know, like what I found is often times when you go into corporate environments, like people start becoming very sterile in the facts that they
+
+584
+00:50:00,880 --> 00:50:01,359
+provide.
+
+585
+00:50:01,359 --> 00:50:05,119
+And sometimes it's okay to just say, "Hey, we screwed up here.
+
+586
+00:50:05,119 --> 00:50:06,800
+This was really bad."
+
+587
+00:50:06,800 --> 00:50:16,079
+It's not meant to, you know, like one of the things that I found to be very counterintuitive because every management book that you read will tell
+
+588
+00:50:16,079 --> 00:50:17,040
+you otherwise.
+
+589
+00:50:17,040 --> 00:50:18,640
+What do they say?
+
+590
+00:50:18,640 --> 00:50:23,359
+Praise in public and criticize in private.
+
+591
+00:50:23,359 --> 00:50:26,960
+I fundamentally disagree with that notion.
+
+592
+00:50:26,960 --> 00:50:35,440
+I think what you have to do is establish enough trust among the team so that you are comfortable
+
+593
+00:50:35,440 --> 00:50:38,960
+critiquing and debating in public.
+
+594
+00:50:38,960 --> 00:50:44,960
+But when you're in private, take that moment to build the trust.
+
+595
+00:50:44,960 --> 00:50:55,440
+Because if you build that trust and you tell them that you've got their back and you create a level of safety there in public,
+
+596
+00:50:55,440 --> 00:50:57,920
+you don't want to be in a mode of posturing.
+
+597
+00:50:57,920 --> 00:51:00,319
+You want to be in a mode of problem solving.
+
+598
+00:51:00,319 --> 00:51:05,839
+When you're just giving people prefuncter compliments all the time and everything is just hunky dory,
+
+599
+00:51:05,839 --> 00:51:07,599
+rose color glass is great.
+
+600
+00:51:07,599 --> 00:51:12,480
+All your dashboards look green, but you're growing the business at like 1 and a.5%.
+
+601
+00:51:12,480 --> 00:51:14,400
+Like there's there's an asymmetry there.
+
+602
+00:51:14,400 --> 00:51:17,680
+something's broken, you know, it's like, what do we need to do over here?
+
+603
+00:51:17,680 --> 00:51:21,599
+And so, what I tend to do is use the exact opposite approach.
+
+604
+00:51:21,599 --> 00:51:26,800
+I tend to be very, very direct in public.
+
+605
+00:51:26,800 --> 00:51:28,880
+You know, be respectful, but be direct in public.
+
+606
+00:51:28,880 --> 00:51:30,079
+This is not working.
+
+607
+00:51:30,079 --> 00:51:31,839
+Let me tell you why it's not working.
+
+608
+00:51:31,839 --> 00:51:41,200
+We got to face the facts and then be very, very kind of um clear with people that you got their back in private.
+
+609
+00:51:41,200 --> 00:51:44,000
+And don't be stingy with words on that front, you know.
+
+610
+00:51:44,000 --> 00:51:50,559
+Um because I feel like some there are times when people are very stingy with words with people in private.
+
+611
+00:51:50,559 --> 00:51:52,079
+You can't be stingy with words over there.
+
+612
+00:51:52,079 --> 00:52:00,319
+And don't be don't be stingy with critique in public because I think people need to make sure that we're we're solving problems together.
+
+613
+00:52:00,319 --> 00:52:05,440
+And if we don't know the play that we're executing, if we don't know the things that we're going to need to do,
+
+614
+00:52:05,440 --> 00:52:09,839
+then then I I'm not really certain if you're making collective progress.
+
+615
+00:52:09,839 --> 00:52:14,400
+And I think it's not going to be fulfilling to either you or the recipient at some point.
+
+616
+00:52:14,400 --> 00:52:22,960
+And those those compliments will feel hollow because you didn't mean them because you to you you were trying to put it in between,
+
+617
+00:52:22,960 --> 00:52:27,200
+you know, like Ben Horwit says in hard things about hard things like you you have a sandwich.
+
+618
+00:52:27,200 --> 00:52:34,800
+You say something really nice to someone then you say something that's not really nice and then you put no just treat people like adults.
+
+619
+00:52:34,800 --> 00:52:36,319
+Tell them the facts.
+
+620
+00:52:36,319 --> 00:52:37,839
+Watch your tone.
+
+621
+00:52:37,839 --> 00:52:39,040
+I still have to work on that.
+
+622
+00:52:39,040 --> 00:52:49,839
+There are times when I get very passionate people think like you know but watch your tone and make sure that you debate conflict is a necessary condition of business but the
+
+623
+00:52:49,839 --> 00:52:58,880
+only way that you can have productive conflict is if you've established trust and the only way that you can establish trust is by making sure that you spend the time to establish the trust.
+
+624
+00:52:58,880 --> 00:53:07,040
+So spend the time to establish the trust but then focus on the best idea winning and actually having the debate.
+
+625
+00:53:07,040 --> 00:53:13,680
+Is there maybe one more lesson that you learned from this or I guess it's a something you wish you'd known before getting into this role?
+
+626
+00:53:13,680 --> 00:53:15,520
+Is there anything else that comes to mind?
+
+627
+00:53:15,520 --> 00:53:17,119
+>> I was an apps guy.
+
+628
+00:53:17,119 --> 00:53:19,359
+You know, I I operated in the apps layer.
+
+629
+00:53:19,359 --> 00:53:28,400
+I worked at Box and even when I was at EMC, I I was building apps that, you know, uh you build for the end user.
+
+630
+00:53:28,400 --> 00:53:31,680
+Infrastructure is a different game.
+
+631
+00:53:31,680 --> 00:53:38,079
+And the thing that I learned about infrastructure is you don't always get the glory,
+
+632
+00:53:38,079 --> 00:53:41,359
+but you always get the blame.
+
+633
+00:53:41,359 --> 00:53:42,319
+>> Perfect.
+
+634
+00:53:42,319 --> 00:53:50,240
+>> And and you have to be comfortable with the fact that you are working in a way that other people get the glory.
+
+635
+00:53:50,240 --> 00:53:56,880
+Great infrastructure companies, the application companies get the glory when they're running on that infrastructure,
+
+636
+00:53:56,880 --> 00:53:57,119
+you know.
+
+637
+00:53:57,119 --> 00:54:05,119
+And so you you have to be hardwired in infrastructure to orient on your ecosystem success,
+
+638
+00:54:05,119 --> 00:54:07,760
+not just your own success.
+
+639
+00:54:07,760 --> 00:54:18,319
+And that is probably one of the lessons that I learned at Cisco in a very stark way which I I didn't fully appreciate it until I got into the details of the infrastructure going wow if this thing
+
+640
+00:54:18,319 --> 00:54:30,240
+doesn't work you know like we were um uh every single time our infrastructure doesn't work this morning I was with um
+
+641
+00:54:30,240 --> 00:54:39,200
+with a medical institution and I was with a healthcare company this morning and they were telling me that you They were very complimentary.
+
+642
+00:54:39,200 --> 00:54:43,200
+They were thanking us on the partnership.
+
+643
+00:54:43,200 --> 00:54:46,640
+I I asked them, "Why do you why are you doubling down with us?"
+
+644
+00:54:46,640 --> 00:54:53,119
+And they're like, "Because when the infrastructure doesn't work, people die.
+
+645
+00:54:53,119 --> 00:54:55,200
+Someone doesn't get dialysis.
+
+646
+00:54:55,200 --> 00:54:58,079
+Someone doesn't get a surgery done.
+
+647
+00:54:58,079 --> 00:55:02,800
+And we need to make sure that we're working with someone with the infrastructure is working."
+
+648
+00:55:02,800 --> 00:55:10,240
+And so I feel like at that point in time, you can't be naval gazing too much about look how cool you are because you did something.
+
+649
+00:55:10,240 --> 00:55:20,800
+You have to just make sure that you're really immediately shifting your focus to what does the customer do and what does the ecosystem do with your infrastructure so that the outcome is
+
+650
+00:55:20,800 --> 00:55:23,920
+achieved and you have to get very outcome oriented.
+
+651
+00:55:23,920 --> 00:55:35,599
+Um, and I feel like that was something that I always intellectually knew, but I didn't fully realize it until I came here on how important of a mindset shift that is.
+
+652
+00:55:35,599 --> 00:55:37,359
+You are not talking about yourself.
+
+653
+00:55:37,359 --> 00:55:40,319
+You're talking about the system just working.
+
+654
+00:55:40,319 --> 00:55:44,400
+No one will come and tell you,"Hey, Ju, um, thank you so much.
+
+655
+00:55:44,400 --> 00:55:46,559
+My network worked today."
+
+656
+00:55:46,559 --> 00:55:47,359
+Right?
+
+657
+00:55:47,359 --> 00:55:51,200
+But the moment it doesn't work, they're going to call you and say, "You know what?
+
+658
+00:55:51,200 --> 00:55:58,319
+my network's not working and my people can't work and patients are dying in the hospital.
+
+659
+00:55:58,319 --> 00:56:00,240
+And I think you just have to be comfortable with that.
+
+660
+00:56:00,240 --> 00:56:05,680
+>> It's so interesting how this ad how this lesson connects so directly to the lesson you learned from Chuck,
+
+661
+00:56:05,680 --> 00:56:11,920
+the CEO of Cisco, which is don't don't expect the the praise and the credit.
+
+662
+00:56:11,920 --> 00:56:14,799
+You need to be comfortable with other people getting credit for your work.
+
+663
+00:56:14,799 --> 00:56:15,520
+>> That's right.
+
+664
+00:56:15,520 --> 00:56:22,240
+And by the way, it's not surprising given that he spent like I don't know 26 28 years over here.
+
+665
+00:56:22,240 --> 00:56:32,319
+Um like you know why that you know the he's he's conditioned with the fact that he's focused on other people succeeding from it
+
+666
+00:56:32,319 --> 00:56:34,000
+>> from his pit your work.
+
+667
+00:56:34,000 --> 00:56:42,559
+You know >> it feels like there's so many metaphors and uh corlaries to uh networking as a way to think about leadership and and living life.
+
+668
+00:56:42,559 --> 00:56:44,480
+>> It really is.
+
+669
+00:56:44,480 --> 00:56:48,400
+Oh man, I bet you guys have all kinds of examples.
+
+670
+00:56:48,400 --> 00:56:57,200
+>> We It's It's a good exercise to actually go through and uh create the coralary of um parallelism between life and networks.
+
+671
+00:56:57,200 --> 00:57:04,319
+>> I'm thinking about just like how many friends like Dunar's number like how many nodes can you have in a network before it starts to slow down?
+
+672
+00:57:04,319 --> 00:57:04,559
+>> Yeah.
+
+673
+00:57:04,559 --> 00:57:04,880
+Yeah.
+
+674
+00:57:04,880 --> 00:57:06,079
+>> Maybe 150.
+
+675
+00:57:06,079 --> 00:57:06,559
+Oh man.
+
+676
+00:57:06,559 --> 00:57:06,880
+Okay.
+
+677
+00:57:06,880 --> 00:57:09,920
+Anyway, I was I like that your mind's spinning.
+
+678
+00:57:09,920 --> 00:57:11,359
+>> I'm thinking like how many can you have?
+
+679
+00:57:11,359 --> 00:57:14,799
+I think more than 150 for sure.
+
+680
+00:57:14,799 --> 00:57:15,599
+I hope so.
+
+681
+00:57:15,599 --> 00:57:16,880
+I hope so.
+
+682
+00:57:16,880 --> 00:57:18,640
+Um, I also was thinking about Intel.
+
+683
+00:57:18,640 --> 00:57:23,040
+The whole Intel inside move was such a clever way to break through that where, you know,
+
+684
+00:57:23,040 --> 00:57:27,440
+no one had no Intel so they're just like slap a stick or Intel inside.
+
+685
+00:57:27,440 --> 00:57:31,520
+>> And by the way, they are um, you know, Lipu is a is a very dear friend.
+
+686
+00:57:31,520 --> 00:57:34,319
+Pat Gellzinger used to be my mentor at EMC.
+
+687
+00:57:34,319 --> 00:57:41,520
+Um, and so both those people that have had such a profound contribution to that industry in general.
+
+688
+00:57:41,520 --> 00:57:46,160
+um like when you start thinking about them, they are very very much on that on that mode.
+
+689
+00:57:46,160 --> 00:57:51,920
+>> I could see how you pulled together this uh insane collection of humans if you just feels like you're just friends with everybody.
+
+690
+00:57:51,920 --> 00:57:58,319
+>> I feel like it's life's too short not to be and I'm only friends with people that I feel are good human beings.
+
+691
+00:57:58,319 --> 00:58:03,680
+Like what I try not to do is I try to minimize my time, no matter how successful they are,
+
+692
+00:58:03,680 --> 00:58:08,079
+with people whose energy I don't vibe with because I think life's too short, you know.
+
+693
+00:58:08,079 --> 00:58:16,000
+And um in my mind, one of the most off-putting things is look, all of us have a healthy ego.
+
+694
+00:58:16,000 --> 00:58:19,839
+There are times when ego gets manifested with insecurity.
+
+695
+00:58:19,839 --> 00:58:27,280
+And you have to make sure that you're at least self-aware enough to know when your ego is starting to take over your behavior in a way that's counterproductive.
+
+696
+00:58:27,280 --> 00:58:29,440
+And all of those things are super important.
+
+697
+00:58:29,440 --> 00:58:36,880
+But what I think is extremely important is that you um like
+
+698
+00:58:36,880 --> 00:58:44,880
+it life is just fun to live when when you love the people you are around.
+
+699
+00:58:44,880 --> 00:58:55,599
+Can I digress for a second in this one story that I so I'll I'll tell you the story that was >> so my mother was um you know she passed away two and a half years ago but she
+
+700
+00:58:55,599 --> 00:59:05,520
+was extremely sick in the hospital for like um 8 weeks before she passed away and I was very close to my mom like that
+
+701
+00:59:05,520 --> 00:59:14,480
+she was my my everything you know and and we were only child I grew up with a rough childhood I had to you know my dad
+
+702
+00:59:14,480 --> 00:59:18,640
+was a highstakes kind of con man like Bernie Maid off.
+
+703
+00:59:18,640 --> 00:59:19,920
+I didn't want to be any part of that.
+
+704
+00:59:19,920 --> 00:59:25,520
+So I had actually left India come over here hadn't gone hadn't seen him and so he was very abusive to my mom.
+
+705
+00:59:25,520 --> 00:59:27,680
+like there was a bunch of that that had happened.
+
+706
+00:59:27,680 --> 00:59:32,880
+And so we had had a very, you know, kind of difficult early childhood life for me.
+
+707
+00:59:32,880 --> 00:59:40,240
+And her and I had bonded during that that time very very, you know, at a very deep level.
+
+708
+00:59:40,240 --> 00:59:48,640
+And so when she came came to America, um you know, we kind of she always wanted to have her own place,
+
+709
+00:59:48,640 --> 00:59:54,720
+but she kind of lived very close by and she was very dependent on me on you know, emotionally and in every way.
+
+710
+00:59:54,720 --> 01:00:04,160
+And so I had almost become a parent to her and at the last 8 weeks things flipped
+
+711
+01:00:04,160 --> 01:00:14,400
+and she was um she became a parent again and so we were you know kind of we were getting to the point where she was ending her journey
+
+712
+01:00:14,400 --> 01:00:22,079
+and I was sitting like 1:00 in the morning at the um at the bedside by her in the hospital.
+
+713
+01:00:22,079 --> 01:00:33,760
+I was living in the hospital at the time and she was sleeping and I was just crying profusely and she wakes up and she knows why I'm crying because she's going to be gone
+
+714
+01:00:33,760 --> 01:00:35,280
+soon.
+
+715
+01:00:35,280 --> 01:00:44,240
+And she looks at me, Lenny, and she's like all perplexed and she's like, "I had no idea that you loved me so much."
+
+716
+01:00:44,240 --> 01:00:52,319
+Now, by the way, this is like the most uh abnormal thing for me to hear because I'm like,
+
+717
+01:00:52,319 --> 01:00:53,520
+"What are you talking about, mom?"
+
+718
+01:00:53,520 --> 01:00:58,400
+Like, I like you're you're one of the most important people in my life.
+
+719
+01:00:58,400 --> 01:01:04,960
+And I was like, everything that I did was to make sure that my mom was okay.
+
+720
+01:01:04,960 --> 01:01:07,839
+Why did I why did it feel that way to her?
+
+721
+01:01:07,839 --> 01:01:10,720
+Because she didn't know how I was thinking.
+
+722
+01:01:10,720 --> 01:01:19,680
+And that kind of notion of people don't know what's going on in your mind is so important that my biggest lesson from that was don't be stingy with words.
+
+723
+01:01:19,680 --> 01:01:24,240
+Cuz even my mother that knows me inside and out didn't know how much I loved her.
+
+724
+01:01:24,240 --> 01:01:29,839
+That there's no chance that people in the business world are going to know how you feel if you're not explicit with them.
+
+725
+01:01:29,839 --> 01:01:35,520
+And so I'm actually very clear with people when I find them and when I find them rewarding,
+
+726
+01:01:35,520 --> 01:01:41,200
+I let them know how much they mean because I genuinely find a lot of energy coming out of that.
+
+727
+01:01:41,200 --> 01:01:46,000
+And we the circle of friends just keeps getting bigger and bigger and bigger.
+
+728
+01:01:46,000 --> 01:01:51,200
+And I I found that to be like a super rewarding thing in life.
+
+729
+01:01:51,200 --> 01:01:57,520
+And um and you're right, most of the people that were at the AI summit are are dear friends,
+
+730
+01:01:57,520 --> 01:02:01,440
+you know, and isn't that the just a better way to live life?
+
+731
+01:02:01,440 --> 01:02:09,520
+>> I've I think we've uncovered one of the secrets of your success, which is uh just tell people how you feel and help them see that you appreciate them.
+
+732
+01:02:09,520 --> 01:02:13,040
+Make it clear that you appreciate them, that you value them, which is a lot of people don't do.
+
+733
+01:02:13,040 --> 01:02:16,160
+They just kind of assume they know that, you know, that they like you.
+
+734
+01:02:16,160 --> 01:02:18,240
+>> And don't make it fake.
+
+735
+01:02:18,240 --> 01:02:19,119
+>> And don't make it fake.
+
+736
+01:02:19,119 --> 01:02:20,640
+Don't make it fake.
+
+737
+01:02:20,640 --> 01:02:23,200
+You know, if you don't love someone, don't tell them you love them.
+
+738
+01:02:23,200 --> 01:02:25,040
+It's like that's the other thing that I have.
+
+739
+01:02:25,040 --> 01:02:27,920
+But, you know, >> it's so interesting.
+
+740
+01:02:27,920 --> 01:02:35,839
+I just um we just did a little interview kind of thing with my mother-in-law meant for our our son,
+
+741
+01:02:35,839 --> 01:02:38,240
+just like for him to have when he's older.
+
+742
+01:02:38,240 --> 01:02:42,079
+Uh they just like interviewed her about her story and stuff and they asked her at the end of it,
+
+743
+01:02:42,079 --> 01:02:48,480
+"What's something you want Jude,"which is his name, to to to know, a lesson to learn from you?
+
+744
+01:02:48,480 --> 01:02:52,799
+And it's to just if you love someone, tell them you love them as much as you can.
+
+745
+01:02:52,799 --> 01:02:54,559
+>> Yeah, it's so true.
+
+746
+01:02:54,559 --> 01:02:57,040
+You're so intentional about the way in which you do these things.
+
+747
+01:02:57,040 --> 01:03:01,920
+I wish I'd done like a I should do that now that I think about it.
+
+748
+01:03:01,920 --> 01:03:06,880
+Like do a podcast for my daughter that's only for her when she gets older.
+
+749
+01:03:06,880 --> 01:03:08,240
+>> I'll send you these this group.
+
+750
+01:03:08,240 --> 01:03:08,799
+They do this.
+
+751
+01:03:08,799 --> 01:03:10,880
+I think they're in the Bay Area, but it's incredible.
+
+752
+01:03:10,880 --> 01:03:15,760
+It's like a whole documentary thing where they interview you, film all your life for a little bit,
+
+753
+01:03:15,760 --> 01:03:17,760
+and then make a whole documentary from >> Oh, really?
+
+754
+01:03:17,760 --> 01:03:18,160
+Oh wow.
+
+755
+01:03:18,160 --> 01:03:19,119
+I'd love that actually.
+
+756
+01:03:19,119 --> 01:03:19,520
+>> Yes.
+
+757
+01:03:19,520 --> 01:03:21,440
+Oh man, they're gonna get a lot of business right now.
+
+758
+01:03:21,440 --> 01:03:24,240
+>> There you go.
+
+759
+01:03:24,240 --> 01:03:28,640
+>> Let me end with a question around just your journey.
+
+760
+01:03:28,640 --> 01:03:32,160
+So today you lead product at a a 90,000 person company.
+
+761
+01:03:32,160 --> 01:03:34,799
+You managed 30,000 people.
+
+762
+01:03:34,799 --> 01:03:41,520
+Like you said, you you were grew up in in India and Bombay uh very far outside Silicon Valley.
+
+763
+01:03:41,520 --> 01:03:44,000
+A lot of people hearing this today are kind of in a similar boat.
+
+764
+01:03:44,000 --> 01:03:45,440
+They're way outside of the valley.
+
+765
+01:03:45,440 --> 01:03:55,440
+they're they're maybe they don't have a lot of obvious way to break in to they don't have a lot of opportunity and they see someone like you and that's their dream.
+
+766
+01:03:55,440 --> 01:04:00,160
+What would your advice be to someone in in that place right now?
+
+767
+01:04:00,160 --> 01:04:09,839
+The platform that you choose and the quality of problems that you pick to solve actually determine a lot of the path of success for you.
+
+768
+01:04:09,839 --> 01:04:19,920
+And typically like harder problems have a higher likelihood of success because the harder problems are the ones that attract better people
+
+769
+01:04:19,920 --> 01:04:20,799
+to that problem.
+
+770
+01:04:20,799 --> 01:04:22,400
+And business is a team sport.
+
+771
+01:04:22,400 --> 01:04:29,280
+And if you attract people to the the problems that are hard and important enough to solve,
+
+772
+01:04:29,280 --> 01:04:31,359
+then then you get the best team.
+
+773
+01:04:31,359 --> 01:04:34,400
+And when you get the best team, your odds of winning just go up exponentially.
+
+774
+01:04:34,400 --> 01:04:37,680
+So most people think, I'm going to go out and pick a easy enough problem to solve.
+
+775
+01:04:37,680 --> 01:04:44,720
+It's like you don't get the best team attracted to you to start up a lemonade stand.
+
+776
+01:04:44,720 --> 01:04:51,200
+Very important job, but that might not be the thing that actually gets the best team to come to you.
+
+777
+01:04:51,200 --> 01:04:54,720
+But if you actually pick a hard enough problem to solve, you'll get the best team to come.
+
+778
+01:04:54,720 --> 01:04:55,440
+So that's one.
+
+779
+01:04:55,440 --> 01:05:01,440
+Number two, I'd say that you can teach and learn a lot of things in life.
+
+780
+01:05:01,440 --> 01:05:06,400
+I don't think you can learn hunger, but you can't teach hunger.
+
+781
+01:05:06,400 --> 01:05:14,240
+So find what you're intrinsically hungry about and make sure that you try to pursue that area.
+
+782
+01:05:14,240 --> 01:05:16,480
+And that's different from passion about something.
+
+783
+01:05:16,480 --> 01:05:26,240
+It's like in everything that you do in work, you have to just understand the formula that there's going to be 30% of the stuff that you do at work that you're just going to hate.
+
+784
+01:05:26,240 --> 01:05:30,640
+And you have to get used to things that you hate that you have to do, you know.
+
+785
+01:05:30,640 --> 01:05:42,559
+Um but for the but find something that you're really hungry about that makes you want to come in um to work every day because the mission
+
+786
+01:05:42,559 --> 01:05:50,160
+is worth the um the expenditure of uh of energy that you're you're you're putting into it.
+
+787
+01:05:50,160 --> 01:05:57,039
+And I'll leave you with a story which was like I I hadn't gone to India in a long time.
+
+788
+01:05:57,039 --> 01:05:58,720
+When I left India I didn't go back.
+
+789
+01:05:58,720 --> 01:06:03,839
+I left in '91 and I hadn't gone back in any kind of meaningful way until 2017.
+
+790
+01:06:03,839 --> 01:06:14,960
+um you know because of all the trauma and childhood I was like you know I was uh for whatever reason I hadn't gone back but I I took my daughter and we went to Agra to see the Taj Mahal and we
+
+791
+01:06:14,960 --> 01:06:25,359
+went there and there was this tour guide his name was Raj and this tour guide was like he understood so much about the product that he was
+
+792
+01:06:25,359 --> 01:06:34,240
+selling which was the tour of the Taj Mahal I don't know if he was making this up or not but it sounded really good and he seemed like he was kind of early on it.
+
+793
+01:06:34,240 --> 01:06:42,240
+But when we were walking back, there's all these people and he would just start talking to them and he'd bust out in different languages.
+
+794
+01:06:42,240 --> 01:06:45,760
+You'd talk to someone in German, talk to someone in French, someone in Spanish, someone in Hindi,
+
+795
+01:06:45,760 --> 01:06:50,319
+someone in, you know, and at some point in time in Mandarin and at some point in time I kind of stop,
+
+796
+01:06:50,319 --> 01:06:51,760
+dude, how many languages do you speak?
+
+797
+01:06:51,760 --> 01:06:59,440
+He's like, "Oh, I speak like, I don't know, 12 or 14 or some ridiculous number, but I try to learn a new language every year."
+
+798
+01:06:59,440 --> 01:07:01,280
+I'm like, "Oh, why is that?"
+
+799
+01:07:01,280 --> 01:07:08,720
+And he goes, Well, I just want to honor the people that come here and not be presumptuous that they will speak in a language that I know.
+
+800
+01:07:08,720 --> 01:07:10,960
+I want to speak in their language.
+
+801
+01:07:10,960 --> 01:07:12,960
+And I'm thinking to myself, I was a box at the time.
+
+802
+01:07:12,960 --> 01:07:20,240
+I'm like, "This guy is smarter than every person on the executive team and probably just as smart as every salesperson we have,
+
+803
+01:07:20,240 --> 01:07:23,280
+but he's making $10 a day."
+
+804
+01:07:23,280 --> 01:07:26,640
+And all of us are enjoying this amazing life.
+
+805
+01:07:26,640 --> 01:07:30,559
+And it's because we have access to a platform and he doesn't.
+
+806
+01:07:30,559 --> 01:07:40,960
+So when people start confusing life thinking that everything that I've earned is because of my amazing abilities,
+
+807
+01:07:40,960 --> 01:07:45,520
+I always kind of question that because there's a lot of luck in this thing.
+
+808
+01:07:45,520 --> 01:07:56,720
+But when luck does present itself, be extremely prepared to capitalize on it and make sure that you pick the platform that can actually give you that springboard because platforms
+
+809
+01:07:56,720 --> 01:07:57,359
+really matter.
+
+810
+01:07:57,359 --> 01:08:07,520
+And if we like I had the platform and benefit of America of education of um of being in um in tech
+
+811
+01:08:07,520 --> 01:08:18,239
+of having great friends and mentors that all of those things created compounding value right but you we I intentionally sought out those platforms
+
+812
+01:08:18,239 --> 01:08:28,480
+seek out the platform be obsessed about being extremely prepared and don't be intellectually lazy.
+
+813
+01:08:28,480 --> 01:08:31,359
+Uh laziness is not a good trait.
+
+814
+01:08:31,359 --> 01:08:42,880
+Uh so do the preparation that's needed and then um you know just make sure that during that time period that you're doing if you build
+
+815
+01:08:42,880 --> 01:08:48,239
+a community around you of people that are vested in your success.
+
+816
+01:08:48,239 --> 01:08:54,640
+I think it's just be life is just a more fun way to live it rather than being the lone wolf that's going at it by themselves.
+
+817
+01:08:54,640 --> 01:09:05,199
+And that's why I always feel like making sure that you are expressive and communicative and don't try to carry the entire world's burden on your
+
+818
+01:09:05,199 --> 01:09:08,960
+shoulders, but actually share it with people with you.
+
+819
+01:09:08,960 --> 01:09:13,279
+The people that you share it with actually appreciate that you're sharing it with them.
+
+820
+01:09:13,279 --> 01:09:17,600
+And most people in the world love to help.
+
+821
+01:09:17,600 --> 01:09:21,920
+So ask for the help, but make sure that that help is not transactional.
+
+822
+01:09:21,920 --> 01:09:24,640
+Don't just go to them when you need something.
+
+823
+01:09:24,640 --> 01:09:28,080
+Actually try to add value first for a long enough amount of time.
+
+824
+01:09:28,080 --> 01:09:30,799
+Not because at some point you might need something from them.
+
+825
+01:09:30,799 --> 01:09:41,199
+Just hardwire yourself into adding value to others and then eventually that value starts showing up and life is just a better it's just better way to live life.
+
+826
+01:09:41,199 --> 01:09:45,839
+And I do feel like right now it's hard for kids getting into the workforce and all of that.
+
+827
+01:09:45,839 --> 01:09:57,679
+So don't lose hope and stay persistent and have stamina because um these things go up and down but if you kind of stick with it the people that have the most amount of persistence it's
+
+828
+01:09:57,679 --> 01:10:00,480
+very seldom that they don't end up winning.
+
+829
+01:10:00,480 --> 01:10:02,880
+something that comes to me as you share this this advice.
+
+830
+01:10:02,880 --> 01:10:11,760
+Uh Arnold Schwarzenegger has this book that he put out and I feel like the title of the book is the best piece of advice and the simplest way to describe how to be
+
+831
+01:10:11,760 --> 01:10:17,080
+successful in life which is be useful.
+
+832
+01:10:18,960 --> 01:10:21,840
+>> That is so good.
+
+833
+01:10:21,840 --> 01:10:23,679
+>> Gigi, this was incredible.
+
+834
+01:10:23,679 --> 01:10:25,920
+Is there anything that we didn't cover that you wanted to share?
+
+835
+01:10:25,920 --> 01:10:29,520
+Anything you want to leave listeners with before we get to our very exciting lightning round?
+
+836
+01:10:29,520 --> 01:10:34,080
+I think there's a framework that I use for great companies that might be worth kind of sharing with people.
+
+837
+01:10:34,080 --> 01:10:44,480
+Yes, there's a six-part framework um that I have which is like you know um in descending order of importance >> and um
+
+838
+01:10:44,480 --> 01:10:46,320
+on how to build great companies.
+
+839
+01:10:46,320 --> 01:10:47,920
+Uh this is >> amazing.
+
+840
+01:10:47,920 --> 01:10:49,360
+>> You you get it for free.
+
+841
+01:10:49,360 --> 01:10:53,280
+Um you you you get what you pay for it.
+
+842
+01:10:53,280 --> 01:10:54,880
+So that take it with a grain of salt.
+
+843
+01:10:54,880 --> 01:10:57,440
+But here's the way I think about it.
+
+844
+01:10:57,440 --> 01:11:00,960
+The most important thing is timing.
+
+845
+01:11:00,960 --> 01:11:02,480
+The six things you need in a company.
+
+846
+01:11:02,480 --> 01:11:04,320
+If you don't have all these six, you don't win.
+
+847
+01:11:04,320 --> 01:11:07,520
+But they're stackranked in descending order of importance.
+
+848
+01:11:07,520 --> 01:11:08,719
+But you have to have all six.
+
+849
+01:11:08,719 --> 01:11:09,920
+Number one is timing.
+
+850
+01:11:09,920 --> 01:11:11,440
+It's the most important.
+
+851
+01:11:11,440 --> 01:11:13,679
+It's the thing that you control the least.
+
+852
+01:11:13,679 --> 01:11:21,120
+And there's a lot of companies that have built amazing products, amazing services at the wrong time in the right market and not one.
+
+853
+01:11:21,120 --> 01:11:21,600
+Right?
+
+854
+01:11:21,600 --> 01:11:23,760
+And so timing really matters.
+
+855
+01:11:23,760 --> 01:11:27,440
+you don't control timing, but if you don't have timing, you don't win.
+
+856
+01:11:27,440 --> 01:11:29,360
+Number two is the market.
+
+857
+01:11:29,360 --> 01:11:33,840
+You have to be able to go after a large enough market a chunk at a time.
+
+858
+01:11:33,840 --> 01:11:37,920
+And if you don't, if you're not able to go out and prosecute a market a chunk at a time,
+
+859
+01:11:37,920 --> 01:11:41,760
+but make sure that that keeps getting bigger and bigger, uh it's very hard to win.
+
+860
+01:11:41,760 --> 01:11:47,280
+So market tends to be the second most important thing in my mind after timing.
+
+861
+01:11:47,280 --> 01:11:49,120
+The third one then is team.
+
+862
+01:11:49,120 --> 01:11:50,239
+You know, you have to have the right team.
+
+863
+01:11:50,239 --> 01:11:52,400
+And the team does not mean just people liking each other.
+
+864
+01:11:52,400 --> 01:11:54,640
+team means that it is actually well-rounded.
+
+865
+01:11:54,640 --> 01:12:02,000
+That means the things that you suck at, someone else is really good at and you've both accepted that of each other.
+
+866
+01:12:02,000 --> 01:12:13,280
+Like for example, I have a person that I never go to another job without and she is my partner in crime and um the reason I have her is because she is
+
+867
+01:12:13,280 --> 01:12:21,520
+so good at things that I'm not good at, you know, and so she's able to so we I any job I've taken since I've been working with her,
+
+868
+01:12:21,520 --> 01:12:23,600
+it's always it's a combined deal.
+
+869
+01:12:23,600 --> 01:12:26,640
+Like if we don't have two offers, we don't go right.
+
+870
+01:12:26,640 --> 01:12:28,800
+And so team is really important.
+
+871
+01:12:28,800 --> 01:12:34,159
+a well-rounded team where people understand how to um how to complement each other.
+
+872
+01:12:34,159 --> 01:12:37,600
+And by the way, in the team, sometimes people say,"Well, isn't team more important than market?"
+
+873
+01:12:37,600 --> 01:12:37,840
+No.
+
+874
+01:12:37,840 --> 01:12:41,679
+If you have a great market, mediocre team, team, the market pulls you up.
+
+875
+01:12:41,679 --> 01:12:46,000
+If you have a shitty market and a great team, the market drags you down.
+
+876
+01:12:46,000 --> 01:12:47,280
+The market always wins.
+
+877
+01:12:47,280 --> 01:12:48,000
+So, no.
+
+878
+01:12:48,000 --> 01:12:50,080
+Timing, market, team.
+
+879
+01:12:50,080 --> 01:12:52,000
+Number four is product.
+
+880
+01:12:52,000 --> 01:12:53,760
+I think product is the soul of a company.
+
+881
+01:12:53,760 --> 01:12:58,880
+That's the that's the place where people seek value is what are you delivering to me?
+
+882
+01:12:58,880 --> 01:13:00,239
+What problem are you solving to me?
+
+883
+01:13:00,239 --> 01:13:02,880
+Gets manifested through the delivery of a product.
+
+884
+01:13:02,880 --> 01:13:04,800
+So you have to make sure that you build a great product.
+
+885
+01:13:04,800 --> 01:13:08,719
+I actually think it's unethical to have a mediocre product sold in the market.
+
+886
+01:13:08,719 --> 01:13:11,040
+So timing, market, team, product.
+
+887
+01:13:11,040 --> 01:13:12,480
+Number five is brand.
+
+888
+01:13:12,480 --> 01:13:21,360
+I had a mentor one time um that told me Mark Lewis, he said, "John, don't ever go to a company uh who's lost their brand mojo because very hard to resurrect it back."
+
+889
+01:13:21,360 --> 01:13:27,360
+If they have lost their product and you can fix the product, but do you think Caiase is coming back?
+
+890
+01:13:27,360 --> 01:13:27,920
+No.
+
+891
+01:13:27,920 --> 01:13:31,840
+Like you know once you lose your brand, once you lose the trust, people don't come back to you that much.
+
+892
+01:13:31,840 --> 01:13:33,600
+So it's very hard to do.
+
+893
+01:13:33,600 --> 01:13:35,520
+And then number six is distribution.
+
+894
+01:13:35,520 --> 01:13:37,440
+Just because you build it, they will not come.
+
+895
+01:13:37,440 --> 01:13:47,280
+you have to make sure that you figure out a scaled mechanism of getting that that offering to uh to many many people and so timing
+
+896
+01:13:47,280 --> 01:13:52,159
+trumps market, market trumps team, team trumps product, product trumps brand, brand trumps distribution.
+
+897
+01:13:52,159 --> 01:13:54,080
+You don't have all six, you don't win.
+
+898
+01:13:54,080 --> 01:13:56,239
+>> What an amazing nugget to have at the end here.
+
+899
+01:13:56,239 --> 01:14:04,480
+Um just so I understand how you think about this is do you have like a template that you work through when you're thinking about a new business unit or a new product to launch?
+
+900
+01:14:04,480 --> 01:14:06,400
+Is it like what's is timing right?
+
+901
+01:14:06,400 --> 01:14:17,120
+is market what market do we start with how do you actually operationalize >> that's actually exactly like that I I will ask myself the question on is this the right time for us to go out and
+
+902
+01:14:17,120 --> 01:14:28,719
+double triple quadruple down we might still be in experimentation mode but do I need to double down on this right now because this might not manifest for another seven years and then it's going
+
+903
+01:14:28,719 --> 01:14:37,120
+to be too early and by the way you have to know the difference between a mega trend and a hype cycle When there's a mega trend,
+
+904
+01:14:37,120 --> 01:14:39,280
+don't fight don't fight it.
+
+905
+01:14:39,280 --> 01:14:47,280
+And don't succumb to the temptation of trying to go out and do vanity work for a hype cycle.
+
+906
+01:14:47,280 --> 01:14:49,360
+And there's a big difference between the two.
+
+907
+01:14:49,360 --> 01:14:53,920
+And and I think having that judgment, the older you get, the better that judgment gets.
+
+908
+01:14:53,920 --> 01:15:00,159
+It's just miles, but having that judgment is really important because you see a pattern recognition at some point.
+
+909
+01:15:00,159 --> 01:15:02,159
+>> I imagine AI mega trend.
+
+910
+01:15:02,159 --> 01:15:03,760
+>> AI is a mega trend.
+
+911
+01:15:03,760 --> 01:15:04,880
+uh in my mind.
+
+912
+01:15:04,880 --> 01:15:12,080
+Um and you know there's a bunch of hype cycles we've had where I don't I didn't never particularly subscribe to them.
+
+913
+01:15:12,080 --> 01:15:16,560
+And the easiest way for me to tell is the way it's described.
+
+914
+01:15:16,560 --> 01:15:25,280
+Is it easy to understand what this could do in its ultimate form for most people or do you need to have a PhD to understand what someone's saying?
+
+915
+01:15:25,280 --> 01:15:30,239
+When you feel like you need a PhD to understand what someone's saying, chances are it ain't going to be a mega trend.
+
+916
+01:15:30,239 --> 01:15:41,280
+Because by definition a mega trend is it's going to impact a large population of the world and if the if the thing is too complicated chances are it's not going to have that
+
+917
+01:15:41,280 --> 01:15:43,120
+level of effect outsiz effect.
+
+918
+01:15:43,120 --> 01:15:44,239
+>> That's an awesome heristic.
+
+919
+01:15:44,239 --> 01:15:46,960
+I imagine you're thinking web 3 is a classic example.
+
+920
+01:15:46,960 --> 01:15:47,199
+>> Yes.
+
+921
+01:15:47,199 --> 01:15:49,679
+Web 3 was the one that I actually cite all the time.
+
+922
+01:15:49,679 --> 01:15:55,840
+Like this is like I I couldn't understand what what it did and like all these people were kind of like oh web three web three.
+
+923
+01:15:55,840 --> 01:15:58,480
+I'm like I couldn't make a heads or tails out of a use case.
+
+924
+01:15:58,480 --> 01:16:10,159
+But with AI it's like you go to chat GPT you ask it a question you get an answer like I get this this is easy you know >> so going back to your framework just to kind of close the loop there it's really interesting that timing is the first
+
+925
+01:16:10,159 --> 01:16:21,840
+variable you look at this could be an amazing idea you got the right team uh amazing product that works really well but the timing may just not be right and no matter how awesome it is it's not it's not going to work
+
+926
+01:16:21,840 --> 01:16:31,199
+>> Steve Jobs put away the iPad because he thought that the iPhone was a better idea and timing wise is he actually made exactly the right call.
+
+927
+01:16:31,199 --> 01:16:36,239
+You know, uh the iPad became successful because of the iPhone success.
+
+928
+01:16:36,239 --> 01:16:43,199
+The reverse order might have not had the same effect, but he had to make sure that he focused on one thing and he actually puts the other.
+
+929
+01:16:43,199 --> 01:16:45,199
+He said, "The timing is not right, but I'm going to get back to it."
+
+930
+01:16:45,199 --> 01:16:48,880
+So, by the way, when timing is wrong, doesn't mean that you scrap the idea.
+
+931
+01:16:48,880 --> 01:16:50,880
+It just means that you might put it on ice for a bit.
+
+932
+01:16:50,880 --> 01:16:56,400
+>> There's a lot of that happening right now where people tried to do a thing and now AI actually makes it possible and now they're like, "Oh,
+
+933
+01:16:56,400 --> 01:16:56,880
+shit."
+
+934
+01:16:56,880 --> 01:16:58,640
+Yeah, >> it was way too early.
+
+935
+01:16:58,640 --> 01:17:05,199
+>> And the other thing you have to keep in mind is you have to also be good enough to know that when something is going to be ready in 6 months,
+
+936
+01:17:05,199 --> 01:17:08,320
+you can't think about where it's what it's doing today.
+
+937
+01:17:08,320 --> 01:17:10,000
+Like AI is moving so fast right now.
+
+938
+01:17:10,000 --> 01:17:17,600
+Like one of the things I tell my team is fast forward 6 months from now and anticipate what that's going to do and get prepared for that world.
+
+939
+01:17:17,600 --> 01:17:25,840
+Don't get prepared for the world of today thinking that you're not going to be able to get there because in 6 months think your assumption sets are going to be different.
+
+940
+01:17:25,840 --> 01:17:31,520
+And please don't actually then bias yourself with the assumption sets you have right now to not move forward.
+
+941
+01:17:31,520 --> 01:17:38,480
+Like one of the worst things I think companies do sometimes is they put too much emphasis only on solely on experience.
+
+942
+01:17:38,480 --> 01:17:45,360
+And I think experience is good but experience can actually be meaningfully bad in some areas where you get too biased.
+
+943
+01:17:45,360 --> 01:17:56,640
+And so you almost have to say that I have to have the ability to unlearn and combination of experience with complete inexperience is what creates the magic because the
+
+944
+01:17:56,640 --> 01:18:02,480
+inexperience allows you to ask questions that you might have never had with experience.
+
+945
+01:18:02,480 --> 01:18:10,480
+And the combo of those two gives you the best of the pattern recognition plus the charting new territory that's never been kind of walked on before.
+
+946
+01:18:10,480 --> 01:18:19,120
+Yeah, this is a trend I've been hearing on this podcast that people worry about young people and people graduating out of college right now and jobs and AI,
+
+947
+01:18:19,120 --> 01:18:27,840
+but they're the people that are most open-minded about what AI can do for them and how to harness AI and not code in the way people have always coded.
+
+948
+01:18:27,840 --> 01:18:29,920
+It's just like, okay, this is the way it works now.
+
+949
+01:18:29,920 --> 01:18:31,920
+>> Experience Lenny can jade us, right?
+
+950
+01:18:31,920 --> 01:18:36,239
+And I always when people say, oh, um, entry level people will never be hired again.
+
+951
+01:18:36,239 --> 01:18:45,679
+I mean that's the stupidest thing a company can do because now what you've done is you have completely shut the door to new fresh ideas like I cannot
+
+952
+01:18:45,679 --> 01:18:48,800
+think today the way I thought when I was 19.
+
+953
+01:18:48,800 --> 01:18:50,800
+There is just no way that I can do that.
+
+954
+01:18:50,800 --> 01:19:01,840
+But what I can try to do is I can try to make sure I surround myself with enough amount of my time to get exposed to that thinking and then couple it with what I know and maybe have something better than what either of those two
+
+955
+01:19:01,840 --> 01:19:04,159
+could have had by themselves.
+
+956
+01:19:04,159 --> 01:19:04,560
+>> Yes.
+
+957
+01:19:04,560 --> 01:19:06,159
+Yeah.
+
+958
+01:19:06,159 --> 01:19:09,679
+>> Well, with that, G2, we have reached our very exciting lightning round.
+
+959
+01:19:09,679 --> 01:19:10,800
+I've got five questions for you.
+
+960
+01:19:10,800 --> 01:19:11,199
+Are you ready?
+
+961
+01:19:11,199 --> 01:19:12,400
+>> All right.
+
+962
+01:19:12,400 --> 01:19:13,600
+>> First question.
+
+963
+01:19:13,600 --> 01:19:17,760
+What are two or three books that you find yourself recommending most to other people?
+
+964
+01:19:17,760 --> 01:19:22,960
+>> The Bible in tech in my mind is Innovator's Dilemma and Innovator Solutions from Clayton Christensen.
+
+965
+01:19:22,960 --> 01:19:29,679
+I think we you have to read that book and I' I'd say I'd recommend to people that read it every every few years.
+
+966
+01:19:29,679 --> 01:19:38,080
+And then the other one that I love is um Ben Horowitz's book hard thing about hard things really talks about how you manage your psychology when things get hard.
+
+967
+01:19:38,080 --> 01:19:49,360
+I think those are the ones I I I'm not a big believer that you keep reading like thousands of books all the time because I think like to me retention really matters and my brain's just not that big
+
+968
+01:19:49,360 --> 01:19:51,199
+that I can retain that much.
+
+969
+01:19:51,199 --> 01:19:58,880
+So, I tend to distill the essence of a few few things quite a bit more and at least as the older I've gotten,
+
+970
+01:19:58,880 --> 01:20:00,560
+I've actually used that pattern more.
+
+971
+01:20:00,560 --> 01:20:03,679
+>> Favorite recent movie or TV show that you have really enjoyed?
+
+972
+01:20:03,679 --> 01:20:08,880
+>> I don't remember the name of it, but the Brad Pitt F1 movie that I I saw that was pretty cool.
+
+973
+01:20:08,880 --> 01:20:11,520
+Um >> the Wait, it was a recent Brad Pitt movie.
+
+974
+01:20:11,520 --> 01:20:11,760
+>> Yeah.
+
+975
+01:20:11,760 --> 01:20:12,000
+Yeah.
+
+976
+01:20:12,000 --> 01:20:13,600
+The >> Was it um F1?
+
+977
+01:20:13,600 --> 01:20:15,040
+>> It was It was F1, I think.
+
+978
+01:20:15,040 --> 01:20:17,040
+I think it was called F1, but it was pretty cool.
+
+979
+01:20:17,040 --> 01:20:18,960
+Um nominated for best.
+
+980
+01:20:18,960 --> 01:20:26,800
+Zack Brown is a good friend of mine and we big supporters of McLaren and so >> it was actually pretty cool to watch that movie and >> Oh man,
+
+981
+01:20:26,800 --> 01:20:29,280
+I bet so many stories I haven't tapped into.
+
+982
+01:20:29,280 --> 01:20:29,760
+Okay.
+
+983
+01:20:29,760 --> 01:20:32,960
+Uh favorite product you recently discovered that you really love.
+
+984
+01:20:32,960 --> 01:20:43,199
+>> I mean it's cliche but I feel like what chat GPT Gemini and Claude have done um like it's it's changed lives.
+
+985
+01:20:43,199 --> 01:20:47,600
+It's changed my life and the way that I learn in some ridiculous ways.
+
+986
+01:20:47,600 --> 01:20:58,400
+So I I actually feel like when I got this new job to run all product for Cisco, there is zero chance I would have been able to do it if AI wasn't there
+
+987
+01:20:58,400 --> 01:21:08,239
+because I didn't know anything about so many domains that we were in and I had to get an accelerated you know uh
+
+988
+01:21:08,239 --> 01:21:20,000
+training course within a matter of 3 months and I mean I worked around the clock during that time but it would I could have worked around the clock without the tooling and I would have
+
+989
+01:21:20,000 --> 01:21:21,679
+been nowhere near as effective.
+
+990
+01:21:21,679 --> 01:21:31,840
+So I feel like those three have done an amazing thing and and and Grock even like you know um what you're seeing with Grock tied to Twitter is pretty amazing.
+
+991
+01:21:31,840 --> 01:21:34,000
+>> Wow, that's a profound statement.
+
+992
+01:21:34,000 --> 01:21:39,520
+I've never heard that before from someone at your level that you feel like you wouldn't be able to have done this job without AI.
+
+993
+01:21:39,520 --> 01:21:40,159
+>> It's your chance.
+
+994
+01:21:40,159 --> 01:21:44,400
+>> Especially for someone with the background in in networking and and hardware.
+
+995
+01:21:44,400 --> 01:21:44,719
+>> Yeah.
+
+996
+01:21:44,719 --> 01:21:46,320
+>> Uh that is so interesting.
+
+997
+01:21:46,320 --> 01:21:53,840
+It's amazing how just like at every level AI is helping like at the most bottom end and also in your level.
+
+998
+01:21:53,840 --> 01:22:05,440
+>> Most people don't like realize like I fundamentally believe this is the the reason that I'm able to enjoy some of the experiences I have like I I was lucky enough that we I'd made enough
+
+999
+01:22:05,440 --> 01:22:10,320
+money before this job that it was not that was not the thing that was actually holding us back.
+
+1000
+01:22:10,320 --> 01:22:19,120
+But the reason I'm able to experience some of the things that this job afforded me to experience um would have not even been remotely
+
+1001
+01:22:19,120 --> 01:22:21,360
+possible without AI.
+
+1002
+01:22:21,360 --> 01:22:23,520
+Like no chance that would have happened.
+
+1003
+01:22:23,520 --> 01:22:24,480
+>> Unreal.
+
+1004
+01:22:24,480 --> 01:22:25,920
+Okay, two more questions.
+
+1005
+01:22:25,920 --> 01:22:26,400
+>> Yeah.
+
+1006
+01:22:26,400 --> 01:22:30,000
+>> Do you have a favorite life motto that you often come back to in work your own life?
+
+1007
+01:22:30,000 --> 01:22:34,400
+You already shared a couple, but is there anything else or you want to double down on one you've already shared?
+
+1008
+01:22:34,400 --> 01:22:36,480
+>> Stamina trumps intellect.
+
+1009
+01:22:36,480 --> 01:22:46,000
+I feel like it's very important to have smart people, but you can become smart if you have curiosity and hunger and
+
+1010
+01:22:46,000 --> 01:22:47,760
+staying power and persistence.
+
+1011
+01:22:47,760 --> 01:22:58,880
+And so I think that trait of like learning to learn and constantly being hungry and having the stamina and persistence is far more important than the absolute
+
+1012
+01:22:58,880 --> 01:23:06,560
+measure of intellect that you might have because that is that is very very trainable and learnable over time and improvable over time.
+
+1013
+01:23:06,560 --> 01:23:11,040
+But hunger is very >> it's not teachable is what I found.
+
+1014
+01:23:11,040 --> 01:23:12,800
+>> I 100% agree with that.
+
+1015
+01:23:12,800 --> 01:23:18,400
+Interestingly, when you watch AI work, it's just like partly the reason it's so good is it just keeps trying.
+
+1016
+01:23:18,400 --> 01:23:20,239
+It's just like,"Okay, this didn't work.
+
+1017
+01:23:20,239 --> 01:23:20,960
+Let me keep going.
+
+1018
+01:23:20,960 --> 01:23:23,360
+What else can we just keep trying?
+
+1019
+01:23:23,360 --> 01:23:24,560
+I'll just give me half an hour.
+
+1020
+01:23:24,560 --> 01:23:26,480
+I'll figure this out."
+
+1021
+01:23:26,480 --> 01:23:26,800
+Okay.
+
+1022
+01:23:26,800 --> 01:23:27,920
+Uh, last question.
+
+1023
+01:23:27,920 --> 01:23:32,880
+So, when you were younger, you worked at Sizzler Steakhouse making $4 an hour is what I read.
+
+1024
+01:23:32,880 --> 01:23:34,639
+>> 225, not four.
+
+1025
+01:23:34,639 --> 01:23:38,480
+It was below minimum wage.
+
+1026
+01:23:38,480 --> 01:23:39,120
+>> 225.
+
+1027
+01:23:39,120 --> 01:23:40,159
+But, but we got tips.
+
+1028
+01:23:40,159 --> 01:23:40,880
+We got tips though.
+
+1029
+01:23:40,880 --> 01:23:41,840
+So that was nice.
+
+1030
+01:23:41,840 --> 01:23:43,040
+>> Okay, I see.
+
+1031
+01:23:43,040 --> 01:23:46,159
+Uh, did you have a favorite dish at Sizzler is my question.
+
+1032
+01:23:46,159 --> 01:23:48,960
+>> Yes, they used to have this Malibu chicken dish.
+
+1033
+01:23:48,960 --> 01:23:58,560
+It was like magic, but um and then um um it was it was probably I don't know if people know this and I know this is
+
+1034
+01:23:58,560 --> 01:24:03,040
+rapid fire, but I used to stutter when I started working at Sizzler.
+
+1035
+01:24:03,040 --> 01:24:09,600
+Sizzler is what allowed me to break out of my shell and not stutter because, you know,
+
+1036
+01:24:09,600 --> 01:24:10,960
+something changed in my brain.
+
+1037
+01:24:10,960 --> 01:24:16,000
+I'm like, I have to entertain people and if I don't, then they're not going to give me a good tip.
+
+1038
+01:24:16,000 --> 01:24:19,440
+And so, you the stuttering went away at Sizzler.
+
+1039
+01:24:19,440 --> 01:24:22,159
+And so, I have an immense debt of gratitude.
+
+1040
+01:24:22,159 --> 01:24:27,440
+And I think everyone should work in hospitality for a while in their younger years.
+
+1041
+01:24:27,440 --> 01:24:32,159
+Uh, and I'm I'm kind of sad that my daughter has no interest in doing that because I'm like,
+
+1042
+01:24:32,159 --> 01:24:35,760
+I wish she just worked as a waitress somewhere for a bit.
+
+1043
+01:24:35,760 --> 01:24:45,280
+And it's just so important to just there's so many lessons on, you know, I I I cleaned toilets at the restaurant.
+
+1044
+01:24:45,280 --> 01:24:46,800
+I actually washed dishes.
+
+1045
+01:24:46,800 --> 01:24:49,679
+I actually waited on tables.
+
+1046
+01:24:49,679 --> 01:24:53,760
+And it was it was the best experience I had.
+
+1047
+01:24:53,760 --> 01:24:57,040
+Like it it shaped me for what was to come.
+
+1048
+01:24:57,040 --> 01:24:58,880
+in the most profound way.
+
+1049
+01:24:58,880 --> 01:25:01,600
+>> G2, you're just endlessly full of of wisdom.
+
+1050
+01:25:01,600 --> 01:25:02,400
+Two final questions.
+
+1051
+01:25:02,400 --> 01:25:03,280
+Where can folks find you?
+
+1052
+01:25:03,280 --> 01:25:06,000
+Where do you want to point people to to learn more about you, what you're up to?
+
+1053
+01:25:06,000 --> 01:25:07,840
+And how can listeners be useful to you?
+
+1054
+01:25:07,840 --> 01:25:16,080
+>> Where you can find me is I I tend to a lot of people will ask, you know, the more um success you encounter,
+
+1055
+01:25:16,080 --> 01:25:20,800
+the more people want to get mentored by you and learn from the experiences you've had.
+
+1056
+01:25:20,800 --> 01:25:24,560
+And I I have run out of cycles to be able to do that on a one-on-one basis.
+
+1057
+01:25:24,560 --> 01:25:33,600
+So what I try to do is do a lot of that on LinkedIn um and Twitter, but largely I I do a lot of that on LinkedIn and so find me on LinkedIn.
+
+1058
+01:25:33,600 --> 01:25:40,000
+Um I I tend to be very open about um not just the work stuff but the non-work stuff.
+
+1059
+01:25:40,000 --> 01:25:42,400
+Um so do that.
+
+1060
+01:25:42,400 --> 01:25:46,800
+How can um people be useful to me?
+
+1061
+01:25:46,800 --> 01:25:47,760
+Was that the question?
+
+1062
+01:25:47,760 --> 01:25:48,639
+What was the last question?
+
+1063
+01:25:48,639 --> 01:25:50,560
+>> That is how can listeners be useful to you?
+
+1064
+01:25:50,560 --> 01:25:52,000
+>> How can listeners be useful to me?
+
+1065
+01:25:52,000 --> 01:26:01,920
+If there is um I would say that if you got something out of this session and if you get something out of whatever you learn from social media,
+
+1066
+01:26:01,920 --> 01:26:03,199
+just pay it forward.
+
+1067
+01:26:03,199 --> 01:26:06,480
+Um and help the next person out a little bit more.
+
+1068
+01:26:06,480 --> 01:26:15,280
+Um yesterday I was at a as a at a talk and someone pulled me aside and said, "Hey, I I saw your LinkedIn post about this.
+
+1069
+01:26:15,280 --> 01:26:17,600
+Don't be stingy with words."
+
+1070
+01:26:17,600 --> 01:26:26,639
+and Ju since then I've been going to see my parents once every uh two months or so in India and I when I see them I tell
+
+1071
+01:26:26,639 --> 01:26:36,960
+them that I love them all the time like literally um what what could be more rewarding to me
+
+1072
+01:26:36,960 --> 01:26:48,639
+than that like you know it was amazing that they were able to go out and have joy brought to their lives as a result of something they got inspired by something that I I learned in my life
+
+1073
+01:26:48,639 --> 01:26:51,679
+that's like paid forward.
+
+1074
+01:26:51,679 --> 01:26:55,040
+>> I'm excited to hear the stories that come out of this conversation.
+
+1075
+01:26:55,040 --> 01:26:56,960
+G2, thank you so much for being here.
+
+1076
+01:26:56,960 --> 01:26:58,080
+>> Thank you for having me.
+
+1077
+01:26:58,080 --> 01:26:58,560
+It was great.
+
+1078
+01:26:58,560 --> 01:27:00,080
+>> Bye everyone.
+
+1079
+01:27:00,080 --> 01:27:01,440
+Thank you so much for listening.
+
+1080
+01:27:01,440 --> 01:27:05,760
+If you found this valuable, you can subscribe to the show on Apple Podcast, Spotify,
+
+1081
+01:27:05,760 --> 01:27:07,920
+or your favorite podcast app.
+
+1082
+01:27:07,920 --> 01:27:14,000
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1083
+01:27:14,000 --> 01:27:19,440
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1084
+01:27:19,440 --> 01:27:23,239
+See you in the next episode.

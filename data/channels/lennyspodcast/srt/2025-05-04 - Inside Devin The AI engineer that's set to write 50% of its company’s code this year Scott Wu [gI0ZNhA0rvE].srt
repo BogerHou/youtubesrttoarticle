@@ -1,0 +1,5749 @@
+1
+00:00:00,000 --> 00:00:03,920
+Our whole team is only like 15 engineers a year. 
+We use a ton of Devin when we're building Devin.  
+
+2
+00:00:03,920 --> 00:00:07,760
+Most folks on the team are definitely working 
+with up to five Devins at once, and so Devin  
+
+3
+00:00:07,760 --> 00:00:12,800
+merges like several hundred pull requests into 
+production in the Devin code bases every month.
+
+4
+00:00:12,800 --> 00:00:16,720
+What percentage of your PRs are 
+Devin versus humans right now?
+
+5
+00:00:16,720 --> 00:00:19,040
+It's in the neighborhood of a quarter or so.
+
+6
+00:00:19,040 --> 00:00:21,200
+Where do you think this will 
+be at the end of the year?
+
+7
+00:00:21,200 --> 00:00:24,080
+Honestly, we expect it to be 
+a decent bit more than half.
+
+8
+00:00:24,080 --> 00:00:28,080
+You guys are so ahead of how 
+companies work with AI engineers.
+
+9
+00:00:28,080 --> 00:00:32,560
+AI is going to be the biggest technology 
+shift of our lives, so most of the big  
+
+10
+00:00:32,560 --> 00:00:36,560
+tech revolutions that we've had over the last 50 
+years, like personal computer, and the internet,  
+
+11
+00:00:36,560 --> 00:00:40,640
+and the mobile phone, they all had this big 
+hardware component that was a big part of the  
+
+12
+00:00:40,640 --> 00:00:44,720
+distribution. Folks who were building for those 
+industries kind of saw their market grow and grow  
+
+13
+00:00:44,720 --> 00:00:49,120
+and grow basically steadily year over year as the 
+number of people with mobile phones increased,  
+
+14
+00:00:49,120 --> 00:00:52,480
+right, as the number of people connected to the 
+internet increase. One of the things which is  
+
+15
+00:00:52,480 --> 00:00:57,760
+already I'd say different in AI, is just how 
+explosive the technology can be. There's no  
+
+16
+00:00:57,760 --> 00:01:01,920
+weight on hardware distribution. It means that 
+the space is just growing so exponentially.
+
+17
+00:01:01,920 --> 00:01:04,880
+How is the act of being an 
+engineer and building changing?
+
+18
+00:01:04,880 --> 00:01:07,840
+I think there's going to be way more programmers 
+and way more engineers a few years from now.  
+
+19
+00:01:07,840 --> 00:01:10,880
+Pretty quickly. The form factor of what it means 
+to be a programmer obviously is going to change,  
+
+20
+00:01:10,880 --> 00:01:13,360
+but at the end of the day, of course the 
+discipline is all about just being able  
+
+21
+00:01:13,360 --> 00:01:16,320
+to tell your computer what's do. And so in 
+that lens, I really think that programming  
+
+22
+00:01:16,320 --> 00:01:20,800
+is only going to become more and more 
+important as AI gets more powerful.
+
+23
+00:01:20,800 --> 00:01:24,800
+Today my guest is Scott Wu. Scott is 
+the co-founder and CEO of Cognition,  
+
+24
+00:01:24,800 --> 00:01:30,320
+which makes a product called Devin, the world's 
+first autonomous AI software engineer. Unlike  
+
+25
+00:01:30,320 --> 00:01:34,320
+other AI tools that I've highlighted on this 
+podcast, Devin is designed to act like an  
+
+26
+00:01:34,320 --> 00:01:38,960
+actual remote engineer that you chat with like you 
+would with any other human engineer through Slack  
+
+27
+00:01:38,960 --> 00:01:43,520
+or through its dedicated website. When Devin 
+launched about a year ago, it was very much a  
+
+28
+00:01:43,520 --> 00:01:47,680
+junior engineer. Over the past year, they've made 
+a lot of progress and Devin is now being used by  
+
+29
+00:01:47,680 --> 00:01:53,040
+tons of companies in production. We chatted about 
+how their engineering team of 15 uses Devins to  
+
+30
+00:01:53,040 --> 00:01:57,520
+build Devin, including how every engineer uses 
+about five Devins each to help them code and  
+
+31
+00:01:57,520 --> 00:02:02,880
+move faster. How a quarter of their pull requests 
+today are committed by Devins and that they expect  
+
+32
+00:02:02,880 --> 00:02:07,600
+this to be over 50% by the end of the year.
+We also talk about how Scott imagines software  
+
+33
+00:02:07,600 --> 00:02:12,400
+engineering is going to look in the future and how 
+the role of an engineer changes from a coder to an  
+
+34
+00:02:12,400 --> 00:02:16,880
+architect. We also get into the eight pivots that 
+they went through before landing on this path,  
+
+35
+00:02:16,880 --> 00:02:22,240
+why Scott believes AI tools like this will lead 
+to more engineer hiring versus less. Also where  
+
+36
+00:02:22,240 --> 00:02:26,880
+the name Devin comes from and so much more. 
+This episode is going to blow your mind. I  
+
+37
+00:02:26,880 --> 00:02:31,440
+highly recommend you listen to it if you're 
+at all interested about where engineering,  
+
+38
+00:02:31,440 --> 00:02:35,920
+product building, and AI is going. A huge 
+thank you to Claire Voue for suggesting a  
+
+39
+00:02:35,920 --> 00:02:39,520
+bunch of great questions for this conversation.
+If you enjoy this podcast, don't forget to  
+
+40
+00:02:39,520 --> 00:02:42,880
+subscribe and follow it in your favorite 
+podcasting app or YouTube. Also, if you  
+
+41
+00:02:42,880 --> 00:02:47,760
+become an annual subscriber of my newsletter, 
+you get a year free of Linear, Superhuman,  
+
+42
+00:02:47,760 --> 00:02:53,520
+Notion, Perplexity, and Granola. Check it out at 
+lenny'snewsletter.com and click bundle. With that,  
+
+43
+00:02:53,520 --> 00:03:00,160
+I bring you Scott Wu. This episode is brought 
+to you by Enterpret. Enterpret unifies all your  
+
+44
+00:03:00,160 --> 00:03:04,000
+customer interactions from Gong calls, 
+to Zendesk tickets, to Twitter threads,  
+
+45
+00:03:04,000 --> 00:03:08,880
+to app store reviews and makes it available for 
+analysis. It's trusted by leading product orgs  
+
+46
+00:03:08,880 --> 00:03:15,360
+like Canva, Notion, Loom, Linear, monday.com, and 
+Strava to bring the voice of the customer into  
+
+47
+00:03:15,360 --> 00:03:19,440
+the product development process, helping 
+you build best in class products faster. 
+
+48
+00:03:19,440 --> 00:03:24,160
+What makes Enterpret special is its ability to 
+build and update customer specific AI models  
+
+49
+00:03:24,160 --> 00:03:28,320
+that provide the most granular and accurate 
+insights into your business. Connect customer  
+
+50
+00:03:28,320 --> 00:03:33,120
+insights to revenue and operational data in your 
+CRM or data warehouse to map the business impact  
+
+51
+00:03:33,120 --> 00:03:39,040
+of each customer need and prioritize confidently 
+and empower your entire team to easily take action  
+
+52
+00:03:39,040 --> 00:03:44,880
+on use cases like win-loss analysis, critical 
+bug detection, and identifying drivers of churn  
+
+53
+00:03:44,880 --> 00:03:49,840
+with Enterpret's AI assistant Wisdom. Looking 
+to automate your feedback loops and prioritize  
+
+54
+00:03:49,840 --> 00:03:57,920
+your roadmap with confidence like Notion, Canva, 
+and Linear visit E-N-T-E-R-P-R-E-T.com/lenny to  
+
+55
+00:03:57,920 --> 00:04:02,480
+connect with the team and to get two free months 
+when you sign up for an annual plan. This is a  
+
+56
+00:04:02,480 --> 00:04:09,200
+limited time offer. That's enterpret.com/lenny. 
+Many of you are building AI products, which  
+
+57
+00:04:09,200 --> 00:04:15,120
+is why I'm very excited to chat with Brandon 
+Foo, Founder and CEO of Paragon. Hey Brandon.
+
+58
+00:04:15,120 --> 00:04:17,040
+Hey Lenny. Thanks for having me.
+
+59
+00:04:17,040 --> 00:04:21,760
+So integrations have become a big 
+deal for AI products. Why is that?
+
+60
+00:04:21,760 --> 00:04:25,280
+Integrations are mission-critical 
+for AI for two reasons. First,  
+
+61
+00:04:25,280 --> 00:04:30,000
+AI products need contacts from their customer's 
+business data such as Google Drive files,  
+
+62
+00:04:30,000 --> 00:04:36,240
+Slack messages or CRM records. Second, for AI 
+products to automate work on behalf of users,  
+
+63
+00:04:36,240 --> 00:04:40,560
+AI agents need to be able to take action 
+across these different third-party tools.
+
+64
+00:04:40,560 --> 00:04:42,560
+So where does Paragon fit into all this?
+
+65
+00:04:42,560 --> 00:04:46,000
+Well, these integrations are a pain to 
+build and that's why Paragon provides  
+
+66
+00:04:46,000 --> 00:04:50,560
+an embedded platform that enables engineers 
+to ship these product integrations in just  
+
+67
+00:04:50,560 --> 00:04:56,800
+days instead of months across every use case 
+from RAG data ingestion to agentic actions.
+
+68
+00:04:56,800 --> 00:04:58,240
+And I know from firsthand experience  
+
+69
+00:04:58,240 --> 00:05:01,760
+that maintenance is even harder than 
+just building it for the first time.
+
+70
+00:05:01,760 --> 00:05:06,560
+Exactly. We believe product teams should focus 
+engineering efforts and competitive advantages,  
+
+71
+00:05:06,560 --> 00:05:09,920
+not integrations. That's 
+why companies like You.com,  
+
+72
+00:05:09,920 --> 00:05:15,040
+AI21 and hundreds of others use Paragon 
+to accelerate their integration strategy.
+
+73
+00:05:15,040 --> 00:05:19,120
+If you want to avoid wasting months of engineering 
+on integrations that your customers need, check  
+
+74
+00:05:19,120 --> 00:05:29,600
+out paragon@useparagon.com/lenny. Scott, thank you 
+so much for being here and welcome to the podcast.
+
+75
+00:05:29,600 --> 00:05:31,280
+Thanks so much for having me. Excited to be on.
+
+76
+00:05:31,280 --> 00:05:35,440
+I'm really excited to have you here because you 
+are building and you've been building something  
+
+77
+00:05:35,440 --> 00:05:40,000
+that is very different from what a lot of other 
+AI companies have been doing for a long time,  
+
+78
+00:05:40,000 --> 00:05:44,640
+although they are starting to converge to where 
+you guys are now. We're going to talk about that  
+
+79
+00:05:44,640 --> 00:05:50,560
+and it's also just such a unique point in the 
+history of AI and just the journey of AI. And  
+
+80
+00:05:50,560 --> 00:05:54,960
+so it's really cool to be chatting right now. 
+And I feel like we're going to chat again in a  
+
+81
+00:05:54,960 --> 00:05:59,200
+few years and be like, wow, we were so right 
+about so much and so wrong about so much.
+
+82
+00:05:59,200 --> 00:06:00,000
+Yeah.
+
+83
+00:06:00,000 --> 00:06:03,920
+And so I'm excited to have you here. 
+Let's start with talking about Devin,  
+
+84
+00:06:03,920 --> 00:06:06,080
+giving people an understanding 
+of just what the heck Devin is,  
+
+85
+00:06:06,080 --> 00:06:10,640
+is the main product that you guys build. What 
+is the simplest way to understand what is Devin?
+
+86
+00:06:10,640 --> 00:06:14,080
+Absolutely. And so Devin is a fully autonomous 
+software engineer that is going to work on  
+
+87
+00:06:14,080 --> 00:06:18,160
+tasks end to end, and so there are a lot 
+of great tools for all parts of the stack  
+
+88
+00:06:18,160 --> 00:06:23,600
+of the AI code workflow. What Devin does 
+is it is a full asynchronous workflow,  
+
+89
+00:06:23,600 --> 00:06:28,240
+and so you can tag Devin on an issue in Slack, 
+you're talking about an issue and you tag Devin,  
+
+90
+00:06:28,240 --> 00:06:32,560
+you can tag Devin in Linear, you can have Devin 
+and Devin will make pull requests in your GitHub,  
+
+91
+00:06:32,560 --> 00:06:37,920
+and so it's very much built to work with 
+engineering teams as your junior engineer.
+
+92
+00:06:37,920 --> 00:06:42,240
+Amazing, okay. So I remember when you guys 
+launched this, there was this big pitch of  
+
+93
+00:06:42,240 --> 00:06:46,800
+this is your new AI engineer and it was 
+really good at a lot of stuff. It wasn't  
+
+94
+00:06:46,800 --> 00:06:50,480
+great at other things. It's been a year now 
+about since you guys launched, is that right?
+
+95
+00:06:50,480 --> 00:06:51,440
+Yeah, yeah.
+
+96
+00:06:51,440 --> 00:06:55,920
+What's the best way to think about the level 
+of seniority that engineer had back in the day  
+
+97
+00:06:55,920 --> 00:06:59,680
+when you guys launched and then the level 
+of seniority of engineer today if that's,  
+
+98
+00:06:59,680 --> 00:07:02,160
+I don't know, measure of how to think about Devin?
+
+99
+00:07:02,160 --> 00:07:05,680
+Yeah, and it's crazy to think about by the way, 
+because a year ago when we did the initial launch,  
+
+100
+00:07:05,680 --> 00:07:10,560
+I mean people didn't really believe that an 
+agent was possible. Right. And it was, I mean,  
+
+101
+00:07:10,560 --> 00:07:16,720
+it was a very different time. So like start 
+of 2024, things with model capabilities were  
+
+102
+00:07:16,720 --> 00:07:21,200
+definitely quite a bit earlier on, reasoning 
+especially was quite a bit earlier on.  
+
+103
+00:07:21,840 --> 00:07:27,200
+And yeah, I mean, in the time since then it's 
+obviously developed a lot. I think in terms of  
+
+104
+00:07:27,200 --> 00:07:31,520
+practical skills, there's some comparisons 
+we make. Sometimes we kind of say, well,  
+
+105
+00:07:31,520 --> 00:07:36,080
+when we got started it was kind of like a high 
+school CS student and then as time went on,  
+
+106
+00:07:36,080 --> 00:07:40,720
+it became more of a college intern and now it's 
+like a junior engineer. But I would say though  
+
+107
+00:07:40,720 --> 00:07:45,440
+that those are more rough guidelines because 
+I really like the phrase jagged intelligence  
+
+108
+00:07:45,440 --> 00:07:49,040
+for example, because obviously there are 
+certain things that it is much better at  
+
+109
+00:07:49,040 --> 00:07:52,080
+than a human. There are certain things 
+that it's much worse at than a human. 
+
+110
+00:07:52,080 --> 00:07:57,360
+And I think over the last year we've learned a 
+lot especially about not just coding agents but  
+
+111
+00:07:57,360 --> 00:08:02,720
+agents in general just really building out how 
+all of us should be working and interacting with  
+
+112
+00:08:02,720 --> 00:08:07,680
+agents as part of our flow. And so a lot of the 
+things that we built, I mean, there was no Slack,  
+
+113
+00:08:07,680 --> 00:08:12,720
+there was no GitHub integration, there was no 
+Linear, there was no interactive planning phase  
+
+114
+00:08:12,720 --> 00:08:18,000
+working back and forth. There was no way to touch 
+up Devin's code. And so a lot of the features that  
+
+115
+00:08:18,000 --> 00:08:22,560
+we've built on the product side since then have 
+really been about basically yeah, figuring out how  
+
+116
+00:08:22,560 --> 00:08:27,760
+to make working with Devin and handing off tasks 
+to Devin as smooth of an experience as possible.
+
+117
+00:08:27,760 --> 00:08:29,280
+That's so interesting. So a lot of the work has  
+
+118
+00:08:29,280 --> 00:08:32,720
+gone not into how do we just make 
+Devin the best possible engineer,  
+
+119
+00:08:32,720 --> 00:08:37,440
+but it's how to work with this new type of 
+entity that we haven't ever worked with.
+
+120
+00:08:37,440 --> 00:08:43,040
+I think it's a 50/50 of both. I think the 
+capabilities obviously have improved a ton  
+
+121
+00:08:43,040 --> 00:08:46,480
+and we've seen these get better and get 
+measurably better. But I think the other  
+
+122
+00:08:46,480 --> 00:08:50,720
+side of it is everything to do with yeah, really 
+the product interface and the tools and so on.  
+
+123
+00:08:50,720 --> 00:08:55,680
+And I think today folks generally know how 
+to use chatbots and to with chatbots, right,  
+
+124
+00:08:55,680 --> 00:09:01,680
+and that's an interface that people are familiar 
+with and obviously with agents it's still like  
+
+125
+00:09:01,680 --> 00:09:06,400
+a real curve, I think to learn how to use them 
+and how to get the most out of them. And so it's  
+
+126
+00:09:06,400 --> 00:09:10,480
+really exciting to see a lot of others starting 
+to build and do a lot more in the agent space as  
+
+127
+00:09:10,480 --> 00:09:14,880
+well. But I think this is the kind of thing that 
+we're all really figuring out together as a space.
+
+128
+00:09:14,880 --> 00:09:17,360
+What can you share about just 
+the scale of Devin at this point,  
+
+129
+00:09:17,360 --> 00:09:19,200
+whatever you're comfortable sharing,  
+
+130
+00:09:19,200 --> 00:09:24,080
+and then just where do you think the level of 
+Devin's coding abilities will be in a year?
+
+131
+00:09:24,080 --> 00:09:28,400
+So we work with companies of all 
+stages and sizes. On the smallest end,  
+
+132
+00:09:28,400 --> 00:09:33,360
+it goes to startups of just one or two people who 
+are using Devin to build out a lot of their kind  
+
+133
+00:09:33,360 --> 00:09:37,920
+of initial prototype or initial product 
+all the way up to big public companies,  
+
+134
+00:09:37,920 --> 00:09:42,080
+Fortune 100 companies or public banks 
+or things like that who are using Devin  
+
+135
+00:09:43,360 --> 00:09:48,640
+across their engineering teams. In general, we've 
+seen a huge range of the use cases there. And  
+
+136
+00:09:48,640 --> 00:09:51,680
+obviously the kinds of engineering work that 
+you're doing at a one or two person startup,  
+
+137
+00:09:51,680 --> 00:09:55,120
+they're very different from the kind of 
+work that you're doing at a public bank. 
+
+138
+00:09:55,120 --> 00:10:00,480
+But throughout it's all been basically yeah, 
+being that junior buddy of yours that makes  
+
+139
+00:10:00,480 --> 00:10:06,640
+you go faster and really multiplies you, I would 
+say. I think it can multiply you as an engineer  
+
+140
+00:10:06,640 --> 00:10:11,200
+obviously by just letting you work with your own 
+team of Devins instead of having to be kind of  
+
+141
+00:10:11,200 --> 00:10:15,120
+fully synchronous on a single task. And then 
+it's also kind of multiplying your team and  
+
+142
+00:10:15,120 --> 00:10:19,200
+multiplying your team's knowledge base because 
+Devin really accumulates a lot of the knowledge  
+
+143
+00:10:19,760 --> 00:10:23,760
+from working with every member of your team and 
+is able to bring that into each new session.
+
+144
+00:10:23,760 --> 00:10:26,640
+Awesome. We're going to show people how it 
+actually works later in the podcast. We're  
+
+145
+00:10:26,640 --> 00:10:29,680
+going to do a few live demos, but 
+let's actually go to the beginning  
+
+146
+00:10:29,680 --> 00:10:33,680
+of the journey. What's just the origin 
+story of Devin? How did this all begin?
+
+147
+00:10:33,680 --> 00:10:37,840
+The founding team, I mean most of us have known 
+each other for years and years and years actually.  
+
+148
+00:10:37,840 --> 00:10:41,360
+And for almost everyone, this is our first time 
+working together, but we've known each other a  
+
+149
+00:10:41,360 --> 00:10:47,680
+long time. And we all actually had our own kind of 
+journeys in AI for the last decade or so. And so  
+
+150
+00:10:47,680 --> 00:10:53,600
+for myself, I ran a company before this called 
+Lunchclub, which was an AI for a professional  
+
+151
+00:10:53,600 --> 00:10:58,720
+networking product and I ran that for about five 
+years. And one of my co-founders, Steven was one  
+
+152
+00:10:58,720 --> 00:11:02,240
+of the first engineers at a company called Scale 
+AI, which has obviously grown a lot and done very  
+
+153
+00:11:02,240 --> 00:11:06,720
+well. My other co-founder Walden, was an early 
+engineer at a company called Cursor, which has  
+
+154
+00:11:06,720 --> 00:11:12,000
+also obviously grown a lot and done really well. 
+And our whole team was kind of like that. Many of  
+
+155
+00:11:12,000 --> 00:11:16,880
+us knew each other from competitive programming 
+and math competitions, but we had stayed very  
+
+156
+00:11:16,880 --> 00:11:22,240
+closely in touch in the decade since then and 
+we've all kind of all had our own journeys. 
+
+157
+00:11:22,240 --> 00:11:27,600
+And so we had one person who was running teams at 
+Neuro, we had one person who was at Waymo, someone  
+
+158
+00:11:27,600 --> 00:11:32,960
+who had their own YC tools startup for machine 
+learning, and we were really excited to build  
+
+159
+00:11:32,960 --> 00:11:39,200
+something together. And this was around late 2023, 
+so about a year and a half ago at this point. And  
+
+160
+00:11:39,200 --> 00:11:43,120
+yeah, when we got started, I mean I think there 
+were a couple of things that we felt really  
+
+161
+00:11:43,120 --> 00:11:48,640
+strongly about and one was that reinforcement 
+learning was really working and was going to be  
+
+162
+00:11:48,640 --> 00:11:55,840
+the next big paradigm shift in capabilities. Back 
+then it was the initial ChatGPT launch in 2022,  
+
+163
+00:11:55,840 --> 00:12:02,080
+and those models were, to first order were what 
+we would call imitation learning in AI, right,  
+
+164
+00:12:02,080 --> 00:12:06,640
+which is basically you have the model read all the 
+texts that you can find on the internet and then  
+
+165
+00:12:06,640 --> 00:12:12,000
+train it to talk like somebody on the internet 
+would talk. Right. And there are kind of obviously  
+
+166
+00:12:12,000 --> 00:12:16,160
+a lot more details on top of that, but that's kind 
+of the first order pass of what was really done. 
+
+167
+00:12:16,160 --> 00:12:20,560
+And it was amazing. Right. I mean, it passed 
+the churn test, it was able to respond and to  
+
+168
+00:12:20,560 --> 00:12:24,160
+have encyclopedic knowledge about a lot 
+of things. And I think this new paradigm  
+
+169
+00:12:24,160 --> 00:12:28,880
+which we've gotten into over this last year 
+or year and a half is really high compute RL,  
+
+170
+00:12:29,440 --> 00:12:35,040
+which is a very different paradigm, right, which 
+is basically the ability to go and do work on task  
+
+171
+00:12:35,040 --> 00:12:38,880
+and put something together and then be evaluated 
+on whether that was correct or incorrect and use  
+
+172
+00:12:38,880 --> 00:12:45,440
+that knowledge to decide what to do and to learn 
+from that. Right. And so we felt very strongly  
+
+173
+00:12:45,440 --> 00:12:50,320
+that that was going to happen. I think for us, 
+code was the natural thing to work on for a couple  
+
+174
+00:12:50,320 --> 00:12:55,040
+reasons. One, because we're all programmer nerds 
+ourselves, and so teaching AI to code is about as  
+
+175
+00:12:55,040 --> 00:12:59,840
+cool as it gets for us, but also because code 
+has this whole automated feedback loop, right,  
+
+176
+00:12:59,840 --> 00:13:04,560
+where you can run the code and that is the kind of 
+automated feedback that really feeds into the RL,  
+
+177
+00:13:04,560 --> 00:13:07,760
+which makes these models so great at coding.
+And then the other thing that we felt very  
+
+178
+00:13:07,760 --> 00:13:12,960
+strongly about was that the product experience was 
+going to shift from what I'll call text completion  
+
+179
+00:13:12,960 --> 00:13:19,520
+to agents basically. Right. And to first order, 
+I would kind of say there's been a lot of great  
+
+180
+00:13:19,520 --> 00:13:24,400
+experiences in text completion. It's been used for 
+marketing, it's been used for customer support,  
+
+181
+00:13:24,400 --> 00:13:30,400
+it's been used for education and in Coda obviously 
+as well. The GitHub copilot was kind of really the  
+
+182
+00:13:31,440 --> 00:13:37,440
+dominant product of that initial wave. Right.
+But I think that the big shift that we really  
+
+183
+00:13:37,440 --> 00:13:44,560
+felt we would see is moving from kind of this text 
+to text model to an actual autonomous system that  
+
+184
+00:13:44,560 --> 00:13:48,480
+can make decisions, that can interact with the 
+real world, that can take in feedback, that can  
+
+185
+00:13:48,480 --> 00:13:54,160
+iterate and take multiple steps to solve problems. 
+And now we call that agents, but that was what we  
+
+186
+00:13:54,160 --> 00:13:57,920
+were really excited about at the time. So it was 
+always coding, it was always agents. And in some  
+
+187
+00:13:57,920 --> 00:14:03,840
+ways that kind of feels like it should have been 
+cleared from the start. But even with that, I feel  
+
+188
+00:14:03,840 --> 00:14:08,640
+like we've pivoted eight times or something within 
+coding agents over the last year and a half, so.
+
+189
+00:14:08,640 --> 00:14:12,720
+I just noticed recently all the AI, 
+top AI companies sort of, not all,  
+
+190
+00:14:12,720 --> 00:14:16,960
+but many of them, the product 
+that is winning is different,  
+
+191
+00:14:16,960 --> 00:14:21,360
+has a different name from the company, 
+which is not typical, Cursors, Anysphere,  
+
+192
+00:14:21,360 --> 00:14:27,520
+Bolt, StackBlitz, you guys are Cognition Labs, 
+like V0 is Vercel. And it just tells me these  
+
+193
+00:14:27,520 --> 00:14:31,280
+all emerge later in the company's journey and 
+they tried a bunch of stuff and like, oh wow,  
+
+194
+00:14:31,280 --> 00:14:34,560
+this thing worked and it's so interesting that 
+it's so common amongst these top AI companies.
+
+195
+00:14:34,560 --> 00:14:38,560
+Yeah, and there's even, I mean OpenAI, 
+ChatGPT, Anthropic and Claude and Google. Yeah,  
+
+196
+00:14:38,560 --> 00:14:43,520
+it's funny. Yeah, yeah, I agree. So when we got 
+started, it wasn't even really a company. I mean,  
+
+197
+00:14:43,520 --> 00:14:49,440
+it was more like a project or a hackathon almost. 
+We got a bunch, we booked an Airbnb basically for  
+
+198
+00:14:49,440 --> 00:14:55,040
+a couple of weeks. This was around Thanksgiving 
+time and just got a bunch of people together who  
+
+199
+00:14:55,040 --> 00:14:59,040
+were just excited to hack on some projects 
+and build something cool. And it's funny,  
+
+200
+00:14:59,040 --> 00:15:05,120
+actually the first thing that we were building 
+for actually was more solving these more contest  
+
+201
+00:15:05,120 --> 00:15:09,360
+programming problems and using an agentic loop 
+to really do better on that. And so obviously  
+
+202
+00:15:09,360 --> 00:15:13,680
+if you run your code on the test cases, you 
+can evaluate, there's a lot of agentic work  
+
+203
+00:15:13,680 --> 00:15:18,160
+that you can do there to try and do better, and 
+that we spent some time on that initially. And  
+
+204
+00:15:18,160 --> 00:15:23,280
+then we've kind of gone from, I mean the story 
+of the whole company for us in some sense has  
+
+205
+00:15:23,280 --> 00:15:28,960
+been going from hacker house to hacker house.
+So after that we had another hacker house and  
+
+206
+00:15:28,960 --> 00:15:33,200
+that's where kind of some of the initial ideas 
+for Devin came and really building a software  
+
+207
+00:15:33,200 --> 00:15:37,440
+engineering agent and not just a coding agent 
+and having to interact with a lot of these tools,  
+
+208
+00:15:37,440 --> 00:15:43,360
+but even then there were so many iterations. And 
+even the idea of talking to Devin for example was  
+
+209
+00:15:43,360 --> 00:15:46,560
+like, it was something that we had to come up 
+with. Right. Initially, it was just like you  
+
+210
+00:15:46,560 --> 00:15:50,880
+hand off a task and then it works and then it 
+shows you this whole finished code. Right. And  
+
+211
+00:15:50,880 --> 00:15:54,800
+now obviously it's like you can jump in at 
+any time, you can get feedback on the plan,  
+
+212
+00:15:54,800 --> 00:15:58,960
+you guys can scope out the task together 
+when you're working with Devin. And a lot  
+
+213
+00:15:58,960 --> 00:16:03,040
+of these things we had to develop obviously, and 
+certainly we've learned a lot about the use cases,  
+
+214
+00:16:03,040 --> 00:16:07,200
+the form factor. We've made a lot of big 
+improvements and step function improvements  
+
+215
+00:16:07,200 --> 00:16:11,760
+on the capabilities and Devin's ability to 
+use tools and to bug and make decisions. 
+
+216
+00:16:11,760 --> 00:16:17,600
+And so it's yeah, it's been a fun journey. I mean, 
+I think I would say that the grounding question  
+
+217
+00:16:17,600 --> 00:16:22,640
+for us really, which is one that we think about 
+all the time, is really just what is the future of  
+
+218
+00:16:22,640 --> 00:16:28,480
+software engineering and how should we be working 
+with AI to write code? Because I think at the end  
+
+219
+00:16:28,480 --> 00:16:34,720
+of the day, of course that's what underlines 
+all of the product decisions that we make, so.
+
+220
+00:16:34,720 --> 00:16:37,040
+I like that you're asking the 
+juicy question I wanted to get  
+
+221
+00:16:37,040 --> 00:16:40,640
+to. Before I ask it just for the 
+history books, when did you guys  
+
+222
+00:16:40,640 --> 00:16:44,960
+start kind of hacking around and when did 
+Devin launch? How long was that period?
+
+223
+00:16:44,960 --> 00:16:50,160
+Yeah, so we started in November of 2023, which 
+was then yeah, just like hackathon mode. We  
+
+224
+00:16:50,160 --> 00:16:55,600
+officially made it into a company around the 
+start of 2024, and then our initial launch  
+
+225
+00:16:55,600 --> 00:17:01,360
+was in March. And so it was like nonstop, I mean 
+it's been nonstop for the entire last 17 months,  
+
+226
+00:17:01,360 --> 00:17:06,800
+but it's getting to the launch and then 
+obviously working with enterprises and  
+
+227
+00:17:06,800 --> 00:17:12,480
+developing the product a lot more, building it 
+and getting it to work for a lot of practical  
+
+228
+00:17:12,480 --> 00:17:19,520
+use cases and then making it fully available 
+self-serve in December of last year. And now  
+
+229
+00:17:19,520 --> 00:17:24,960
+we've rolled out 2.0 obviously just a few weeks 
+ago. And so it's been a very busy time for us.
+
+230
+00:17:24,960 --> 00:17:28,880
+Understatement of the century. Let me ask 
+this question because you touched on it a bit,  
+
+231
+00:17:28,880 --> 00:17:33,360
+this whole idea of Devin as a person and this 
+idea of creating a personality for Devin. It's  
+
+232
+00:17:33,360 --> 00:17:39,920
+unlike any other, I believe, AI app. No one else 
+has a name and you don't think of it as a person.  
+
+233
+00:17:39,920 --> 00:17:44,320
+What made you guys decide to go that approach and 
+just how do you design it to work well that way?
+
+234
+00:17:44,320 --> 00:17:48,560
+I would say it's a decision we're pretty proud 
+of, I would say. I mean, I think there's a lot  
+
+235
+00:17:48,560 --> 00:17:53,600
+of different product experiences out there, and 
+I think the thing that really makes Devin unique  
+
+236
+00:17:53,600 --> 00:17:58,560
+in what it does is that you can really hand off 
+and more and more what we've seen honestly is  
+
+237
+00:17:59,680 --> 00:18:06,000
+that I think a lot of kind of explaining the Devin 
+experience to folks is really just explain it as,  
+
+238
+00:18:06,000 --> 00:18:10,720
+yeah, this is your junior buddy. And that goes 
+for a lot of the parts of the flow where in  
+
+239
+00:18:10,720 --> 00:18:14,640
+the onboarding for example, initially I 
+would say we've definitely had a lot of  
+
+240
+00:18:14,640 --> 00:18:18,800
+users come in and just kind of see the blank 
+screen and not really know, or they'd ask,  
+
+241
+00:18:18,800 --> 00:18:22,000
+"Hey, I'm going to do this whole big 
+re-architecture, the whole code base." 
+
+242
+00:18:22,000 --> 00:18:26,960
+And basically what we've learned over time is 
+to basically get folks to think more like whoa,  
+
+243
+00:18:26,960 --> 00:18:32,560
+whoa, whoa, let's work on getting the repository 
+set up first. Let's make sure we hand Devin a  
+
+244
+00:18:32,560 --> 00:18:37,200
+couple one pointer tasks so it can get familiar 
+with the code base. Let's get it the thing. If  
+
+245
+00:18:37,200 --> 00:18:40,960
+Devin needs to be able to test the code or 
+run the linter or CI or things like that.  
+
+246
+00:18:40,960 --> 00:18:45,600
+Obviously we want to make sure Devin's got its 
+own virtual machine set up to be able to do that. 
+
+247
+00:18:45,600 --> 00:18:50,480
+And similarly, I think the usage pattern, 
+I think often it wasn't clear and obviously  
+
+248
+00:18:50,480 --> 00:18:55,920
+you can sit and just kind of watch Devin 
+do it action by action and work that way,  
+
+249
+00:18:55,920 --> 00:19:02,000
+but we found that the best workflow really as 
+a team building a lot of stuff was to work with  
+
+250
+00:19:02,000 --> 00:19:07,120
+multiple Devins and to run them asynchronously 
+and to kick them off and to only jump in basically  
+
+251
+00:19:07,120 --> 00:19:12,880
+as you needed to provide feedback or steer the 
+plan or anything like that. And so in many ways,  
+
+252
+00:19:12,880 --> 00:19:18,800
+I think Devin as a name really is our attempt 
+to kind of capture the soul of that as a product  
+
+253
+00:19:18,800 --> 00:19:25,520
+where it really is treating it like a bit more of 
+an autonomous entity that you can hand off tasks,  
+
+254
+00:19:25,520 --> 00:19:28,800
+that you can work with, that you should 
+be teaching and learning with over time.
+
+255
+00:19:28,800 --> 00:19:32,880
+I want to come back to an area you started 
+us down and then I took us away from which  
+
+256
+00:19:32,880 --> 00:19:38,000
+is impact on software engineering and how software 
+engineering is going to change. So there's kind of  
+
+257
+00:19:38,000 --> 00:19:44,320
+two parts to this. Just like when people are 
+using Devin today, say this year, how is the  
+
+258
+00:19:44,320 --> 00:19:49,120
+act of being an engineer and building changing 
+for those companies? What does that look like?
+
+259
+00:19:49,120 --> 00:19:53,040
+By the way, we're all software engineers 
+ourselves. It's like I'm a programmer  
+
+260
+00:19:53,040 --> 00:19:59,280
+by training and still a programmer at heart 
+certainly. And I think the way that we've always  
+
+261
+00:19:59,280 --> 00:20:03,840
+thought about it is there's layers of abstraction 
+and there's tools, and one way I would say it at  
+
+262
+00:20:03,840 --> 00:20:09,040
+a high level is kind of I think of AI in general 
+as, yeah, I mean computers are obviously getting  
+
+263
+00:20:09,040 --> 00:20:14,720
+more and more intelligence and are able to do 
+more and more and it's possible there may come  
+
+264
+00:20:14,720 --> 00:20:20,560
+a day where computers truly do everything that we 
+do and humans are not responsible for any of it. 
+
+265
+00:20:20,560 --> 00:20:27,360
+I don't expect that to come particularly soon, but 
+I guess what I would say is until that point, for  
+
+266
+00:20:27,360 --> 00:20:32,800
+as long as we're still part of the equation, one 
+of the most important things to do obviously is  
+
+267
+00:20:32,800 --> 00:20:37,360
+for us as humans is to instruct our computers on 
+what we want and what we want to build and what we  
+
+268
+00:20:37,360 --> 00:20:42,960
+want to do. Right. And software engineering is, we 
+think of it today obviously as Python and C++ and  
+
+269
+00:20:42,960 --> 00:20:46,400
+JavaScript and all these things, but at the end 
+of the day, of course the discipline is all about  
+
+270
+00:20:46,400 --> 00:20:50,560
+just being to tell your computer what to do. And 
+so in that lens, I really think that programming  
+
+271
+00:20:50,560 --> 00:20:56,640
+is, if anything, is only going to become more and 
+more important as AI gets more powerful. And I  
+
+272
+00:20:56,640 --> 00:21:03,120
+think the thing that's really exciting for us is 
+yeah, it's really seeing that kind of iterative  
+
+273
+00:21:03,120 --> 00:21:08,080
+transformation. And so you ask what things look 
+like today, and I would say, yeah, it really is  
+
+274
+00:21:08,080 --> 00:21:12,240
+like having a junior buddy or really a team of 
+junior buddies that you can work with. Right. 
+
+275
+00:21:12,240 --> 00:21:16,720
+And so every engineer on our team, we use a 
+ton of Devin when we're building Devin, and so  
+
+276
+00:21:16,720 --> 00:21:23,120
+Devin merges several hundred pull requests into 
+production in the Devin code bases every month,  
+
+277
+00:21:23,840 --> 00:21:27,600
+which is, I mean, our whole team is only 
+15 engineers, and so it's a pretty sizable  
+
+278
+00:21:27,600 --> 00:21:31,520
+fraction of all the code that we write. And the 
+way that we use it is basically, yeah, everyone's  
+
+279
+00:21:31,520 --> 00:21:36,160
+got their whole team of Devins. If you're going to 
+be looking through various issues, if you're going  
+
+280
+00:21:36,160 --> 00:21:39,440
+through feature requests, if you're going through 
+bugs, if you're going through new paradigms that  
+
+281
+00:21:39,440 --> 00:21:43,280
+you want to build, then it is naturally the case 
+that there's a lot of handoff points where you  
+
+282
+00:21:43,280 --> 00:21:47,840
+just say, "Hey, at Devin, here's what's going 
+on. Can you please take a pass at this?" Right. 
+
+283
+00:21:47,840 --> 00:21:52,720
+And sometimes Devin will be able to do the task 
+100% autonomously and just makes the PR and then  
+
+284
+00:21:52,720 --> 00:21:57,360
+you merge the PR and that's great. Sometimes 
+you want to be able to jump in for the 10 or  
+
+285
+00:21:57,360 --> 00:22:01,920
+20% that really needs your help. Maybe there's 
+a few details with how exactly you want to scope  
+
+286
+00:22:01,920 --> 00:22:06,000
+it or how you're architecting this feature, or 
+maybe you want to go and test the front end at  
+
+287
+00:22:06,000 --> 00:22:09,920
+the end yourself to make sure it looks exactly 
+the way that you want and give your one or two  
+
+288
+00:22:09,920 --> 00:22:14,960
+lines of feedback after that. Right. But a lot 
+of it is really yeah, is kind of like yeah,  
+
+289
+00:22:14,960 --> 00:22:20,480
+learning to work with Devin to be able to 
+just do more in parallel and build more.
+
+290
+00:22:20,480 --> 00:22:25,200
+What percentage of your PRs are 
+Devin versus humans right now?
+
+291
+00:22:25,200 --> 00:22:30,720
+Yeah, I'd have to look, but it's in the 
+neighborhood of a quarter or so of all of our-
+
+292
+00:22:30,720 --> 00:22:31,120
+Wow.
+
+293
+00:22:31,120 --> 00:22:32,560
+Yeah. Yeah.
+
+294
+00:22:32,560 --> 00:22:35,040
+And then what was it like six months ago?
+
+295
+00:22:35,040 --> 00:22:39,840
+Oh yeah, it's grown a ton for, I mean, we've seen 
+it grown exponentially internally ourselves as  
+
+296
+00:22:39,840 --> 00:22:44,720
+well. And so it's kind of an interesting one 
+where again, it's always both the capabilities  
+
+297
+00:22:44,720 --> 00:22:48,720
+and the product interface. And so I think 
+the intelligence has increased a lot. But  
+
+298
+00:22:48,720 --> 00:22:53,360
+the other thing of course is that we've spent 
+a lot of time in figuring out how to build and  
+
+299
+00:22:53,920 --> 00:23:00,480
+to really kind of build for an interface where 
+you can get Devin's value on tasks where Devin  
+
+300
+00:23:00,480 --> 00:23:05,200
+is able to do the 80 or 90%. And so Devin is 
+obviously not perfect and it'll make mistakes  
+
+301
+00:23:05,200 --> 00:23:09,760
+and so on. And a lot of the question is basically, 
+yeah, how do you scope out your initial task with  
+
+302
+00:23:09,760 --> 00:23:14,320
+Devin and then just kind of set Devin off and 
+have it go and do the things that you want do?  
+
+303
+00:23:14,320 --> 00:23:18,720
+How do you come in at the end and review and give 
+feedback? How do you make sure Devin learns over  
+
+304
+00:23:18,720 --> 00:23:24,400
+time? How are you able to kind of just check 
+in as needed and course correct if you want to?
+
+305
+00:23:24,400 --> 00:23:28,960
+Okay, so today about quarter of 
+your PRs are Devins. Where do you  
+
+306
+00:23:28,960 --> 00:23:31,680
+think this will be at the end of 
+the year? What would you guess?
+
+307
+00:23:31,680 --> 00:23:36,800
+I think by the end of this year, we expect it to 
+be more than half. And I mean, as time goes on,  
+
+308
+00:23:36,800 --> 00:23:41,200
+one of the things that we've seen is just 
+you're able to do more and more and more work  
+
+309
+00:23:41,920 --> 00:23:46,400
+asynchronously. Right. And you're able to hand off 
+more and more. I think the soul of programming,  
+
+310
+00:23:46,400 --> 00:23:51,840
+the soul of software engineering has really 
+been about through all the areas, not just now,  
+
+311
+00:23:51,840 --> 00:23:56,160
+but even when it was assembly, right, and even 
+when it was Pascal and even when it was punch  
+
+312
+00:23:56,160 --> 00:24:00,640
+cards or whatever, I think the soul of 
+it has really been basically just about  
+
+313
+00:24:00,640 --> 00:24:01,884
+defining the problem that you're facing 
+and really thinking through exactly...
+
+314
+00:24:01,884 --> 00:24:04,800
+... about defining the problem that you're facing 
+and really thinking through exactly what is the  
+
+315
+00:24:04,800 --> 00:24:09,040
+solution that you want to build. Thinking through 
+the architecture, thinking through the details,  
+
+316
+00:24:09,040 --> 00:24:14,240
+and really mapping out in your mind exactly what 
+you want to build basically and what you want to  
+
+317
+00:24:14,240 --> 00:24:19,440
+have your computer do. I think that's what makes 
+software engineering really great and I think  
+
+318
+00:24:19,440 --> 00:24:24,720
+that's the funnest part of software engineering.
+I think, at the same time, that's probably in  
+
+319
+00:24:24,720 --> 00:24:30,240
+the neighborhood of 10% of the average software 
+engineer's time, right? Because 90% of the time is  
+
+320
+00:24:30,240 --> 00:24:34,160
+you've got this Kubernetes error, then you've got 
+to debug, and you have to see what went wrong and  
+
+321
+00:24:34,160 --> 00:24:40,320
+the system crash, or you left some port open and 
+this is messing up, or there's a bug report that  
+
+322
+00:24:40,320 --> 00:24:44,160
+you have to take care of, or you've got to migrate 
+your code, or you got it upgraded to a new version  
+
+323
+00:24:44,160 --> 00:24:50,320
+or things like that. A lot more implementation.
+One of the ways that we've kind of thought  
+
+324
+00:24:50,320 --> 00:24:57,600
+about Devin in building Devin is really allowing 
+engineers to go from bricklayer to architect, so  
+
+325
+00:24:57,600 --> 00:25:03,520
+to speak. A lot of it is just getting to the point 
+where you can do the high-level directing and you  
+
+326
+00:25:03,520 --> 00:25:08,320
+can basically specify things exactly how you want. 
+I think it's very much about still having the  
+
+327
+00:25:08,320 --> 00:25:12,400
+human in control and having the human able to do 
+the full specification, but just multiplying the  
+
+328
+00:25:12,400 --> 00:25:18,640
+magnitude of what you can do and what you can 
+build in one day or one hour or however long.
+
+329
+00:25:18,640 --> 00:25:22,560
+In the future, say someone is trying 
+to get into software engineering,  
+
+330
+00:25:22,560 --> 00:25:25,520
+thinking about becoming an engineer, 
+first of all, do you think people  
+
+331
+00:25:25,520 --> 00:25:29,760
+should... Classic question everyone's getting 
+these days. Should you still learn to code?
+
+332
+00:25:29,760 --> 00:25:29,920
+Yeah.
+
+333
+00:25:30,560 --> 00:25:33,920
+I'd love your perspective there. And then 
+two, for people that are engineers today,  
+
+334
+00:25:33,920 --> 00:25:37,120
+what skills do you think will be 
+more and more important and then  
+
+335
+00:25:37,120 --> 00:25:40,960
+less important in this discussion of 
+moving from bricklayer to architect?
+
+336
+00:25:40,960 --> 00:25:45,360
+Yeah, for sure. I love this question. First of 
+all, the question of whether you should still  
+
+337
+00:25:45,360 --> 00:25:51,120
+learn to code, my answer would be absolutely 
+yes. I think, to a large extent, when you take  
+
+338
+00:25:51,120 --> 00:25:54,640
+computer science classes and when you learn these 
+fundamentals, sure you're learning a little bit  
+
+339
+00:25:54,640 --> 00:25:59,600
+about how a particular language is, syntax works 
+or something like that. But honestly, most of what  
+
+340
+00:25:59,600 --> 00:26:03,360
+you're learning really is about the ability 
+to logically break down problems for number  
+
+341
+00:26:03,360 --> 00:26:09,520
+one. And two, I would say is just the model of a 
+computer and a lot of these decisions and a lot  
+
+342
+00:26:09,520 --> 00:26:13,200
+of the abstractions that we've built over time.
+What is a database and how should you think about  
+
+343
+00:26:13,200 --> 00:26:18,640
+a database? What is a garbage collection system 
+and how do those work and all of these different  
+
+344
+00:26:18,640 --> 00:26:23,600
+pieces? The reason I think that's important 
+is because it's the same with a lot of these  
+
+345
+00:26:23,600 --> 00:26:29,120
+other... Arguably we've already gone through these 
+phases in programming and I think this next one is  
+
+346
+00:26:29,120 --> 00:26:34,480
+going to be somewhat faster and somewhat bigger, 
+but in many ways a similar flavor, which is when  
+
+347
+00:26:34,480 --> 00:26:38,800
+you work with Python today, obviously, a lot 
+of things are already abstracted away from you. 
+
+348
+00:26:38,800 --> 00:26:44,560
+In some sense, someone from 50 years ago might 
+already call Python. You just get to explain in  
+
+349
+00:26:44,560 --> 00:26:49,600
+English what you want and now the computer does 
+it for you. That's great and I think it's really  
+
+350
+00:26:49,600 --> 00:26:54,240
+powerful. It's opened it up. I mean, we have far 
+more programmers, obviously, than we ever have  
+
+351
+00:26:54,240 --> 00:27:00,000
+before because of that, but I would say certainly 
+as you're building your skills as an engineer, it  
+
+352
+00:27:00,000 --> 00:27:05,760
+really helps a lot to understand the abstractions 
+and to be able to peel the layers beneath. Folks  
+
+353
+00:27:05,760 --> 00:27:10,640
+will use assembly for example if they're really 
+performance optimizing a piece of code, but also  
+
+354
+00:27:11,280 --> 00:27:14,400
+in order to build good systems and to understand 
+these things, you certainly want to understand  
+
+355
+00:27:14,400 --> 00:27:21,200
+these abstractions of how does networking work.
+What is TCP/IP like exactly or what happens with  
+
+356
+00:27:21,200 --> 00:27:27,280
+this Python code when it gets interpreted or all 
+of these details. Similarly, I think we will get  
+
+357
+00:27:27,280 --> 00:27:31,520
+to a state where, with no experience at all, 
+you're going to be able to build some pretty  
+
+358
+00:27:31,520 --> 00:27:36,240
+cool stuff and to do some pretty amazing work 
+just by explaining what it is that you want. But  
+
+359
+00:27:36,240 --> 00:27:41,840
+I think that, for quite some time, you really want 
+to be able to think precisely about the details,  
+
+360
+00:27:41,840 --> 00:27:48,160
+to peel back the abstractions, to be very precise 
+about what it is that you want to build and how.
+
+361
+00:27:48,160 --> 00:27:53,600
+And then for skills that you think are 
+more and more valuable for engineers,  
+
+362
+00:27:53,600 --> 00:27:57,680
+where should engineers today be 
+leaning more and more into versus like,  
+
+363
+00:27:58,320 --> 00:28:00,160
+"Forget this. I don't need 
+to think about this anymore"?
+
+364
+00:28:00,160 --> 00:28:03,680
+For sure. I think architect... I mean, 
+we already have a term for architect and  
+
+365
+00:28:03,680 --> 00:28:12,480
+engineering and I think it is directionally the 
+right term. It's, I think, one thing to just do  
+
+366
+00:28:12,480 --> 00:28:16,960
+a routine implementation and write boilerplate 
+code and things like that. I would say that,  
+
+367
+00:28:17,840 --> 00:28:22,000
+in many ways, AI coding has already made us 
+much faster at that, but I think a lot of  
+
+368
+00:28:22,000 --> 00:28:27,200
+the core questions of understanding very complex 
+systems and working in the context of the whole  
+
+369
+00:28:27,200 --> 00:28:31,040
+company and thinking about the product that 
+you're building or the work that you're doing  
+
+370
+00:28:31,040 --> 00:28:34,080
+and understanding, "Okay, what are the 
+problems that we want to solve? How do  
+
+371
+00:28:34,080 --> 00:28:36,960
+we want to solve those problems? What 
+is exactly the solution that we want  
+
+372
+00:28:36,960 --> 00:28:40,480
+to build? What are all of these key decisions 
+and trade-offs that we're going to be making?" 
+
+373
+00:28:40,480 --> 00:28:44,720
+Basically, I think folks who are able to do that 
+really, really well are just going to be able to  
+
+374
+00:28:44,720 --> 00:28:50,800
+leverage themselves more and more. If anything, I 
+think there's going to be way more programmers and  
+
+375
+00:28:50,800 --> 00:28:55,200
+way more engineers a few years from now than 
+there are today. I think pretty quickly the  
+
+376
+00:28:55,200 --> 00:28:58,480
+form factor of what it means to be a programmer, 
+obviously, is going to change. And in some sense,  
+
+377
+00:28:58,480 --> 00:29:05,120
+it already has, but I think there's just going to 
+be so much more for us to build. Folks talk about  
+
+378
+00:29:05,120 --> 00:29:12,320
+Jevons Paradox all the time. I mean, software 
+is truly the shining example of Jevons Paradox,  
+
+379
+00:29:12,320 --> 00:29:17,280
+where we have always managed as a society 
+to find more and more things that we want  
+
+380
+00:29:17,280 --> 00:29:22,960
+to build software for and build more code for. I 
+really think there's a lot more out there to do.
+
+381
+00:29:22,960 --> 00:29:26,400
+For people that don't know Jevons 
+Paradox, can you briefly explain it?
+
+382
+00:29:26,400 --> 00:29:31,840
+Absolutely. Yeah. Jevons Paradox just says 
+that as the price of something goes down,  
+
+383
+00:29:31,840 --> 00:29:37,680
+it can still be the case that the total spend 
+on it actually goes up. You can think about this  
+
+384
+00:29:37,680 --> 00:29:42,000
+with money, you can think about this with time 
+or resources, but the direct version here is,  
+
+385
+00:29:42,000 --> 00:29:47,200
+I think, as it becomes easier and easier to 
+program and as programming becomes more and more  
+
+386
+00:29:47,200 --> 00:29:52,880
+effective, I think we're going to have a lot more 
+programmers. I think in a kind of zero-sum view,  
+
+387
+00:29:52,880 --> 00:29:56,640
+you might say, "Well, we're going to be 
+10 times faster at software engineering  
+
+388
+00:29:56,640 --> 00:30:00,080
+and it means that we're going to need 
+10 times fewer software engineers." But  
+
+389
+00:30:00,080 --> 00:30:03,760
+I think in practice, what really is going to 
+happen is actually we're going to build even  
+
+390
+00:30:03,760 --> 00:30:09,360
+more than 10 times as much code. And because all 
+of the work that we do is so capped, obviously,  
+
+391
+00:30:09,360 --> 00:30:13,440
+on our ability to actually build and execute 
+and iterate, we're going to have so many great  
+
+392
+00:30:13,440 --> 00:30:16,960
+ideas out there, we're going to have so many 
+great products out there. People are going to  
+
+393
+00:30:16,960 --> 00:30:22,320
+build a lot more personalized experiences, for 
+example, and there's going to be a lot to do.
+
+394
+00:30:22,320 --> 00:30:26,960
+Going back to the way you guys use Devin, you said 
+that every engineer has this fleet of Devins. How  
+
+395
+00:30:26,960 --> 00:30:32,880
+many Devins per engineer do you find most people 
+are working with these days at your company?
+
+396
+00:30:32,880 --> 00:30:37,600
+Yeah. It's very asynchronous. Obviously, 
+you can kick them up and start them up and  
+
+397
+00:30:37,600 --> 00:30:44,080
+shut them down basically as you see fit, but 
+most folks on the team are often working with  
+
+398
+00:30:44,080 --> 00:30:49,520
+up to five Devins at once, I would say. It's a 
+nice flow where you think through, "All right,  
+
+399
+00:30:49,520 --> 00:30:54,240
+what are the five things that we want to get 
+done today?" You have Devin one do number one,  
+
+400
+00:30:54,240 --> 00:31:02,160
+you have Devin two do number two, Devin three... 
+For what it's worth, I think it's taken us some  
+
+401
+00:31:02,160 --> 00:31:08,560
+time to adjust to it and get to the point 
+where it's really intuitive for us, but I  
+
+402
+00:31:08,560 --> 00:31:14,320
+think it's definitely a different experience where 
+you're handing off most things asynchronously. 
+
+403
+00:31:14,320 --> 00:31:20,800
+The goal for each of your tasks is to be there 
+for the parts that really need your expertise,  
+
+404
+00:31:20,800 --> 00:31:24,880
+either you really, really need to define exactly 
+what it is that you're solving for and what you're  
+
+405
+00:31:24,880 --> 00:31:30,640
+building or maybe some of the more complex 
+parts where you want to steer Devin towards,  
+
+406
+00:31:30,640 --> 00:31:33,680
+particularly what kinds of changes you want 
+to make. "I want the class to be set up this  
+
+407
+00:31:33,680 --> 00:31:38,560
+way and we should go and change all the 
+downstream references to this as well  
+
+408
+00:31:38,560 --> 00:31:43,440
+or whatever." But basically having Devin do 
+the bulk of the work asynchronously with you.
+
+409
+00:31:43,440 --> 00:31:46,000
+And then how many engineers 
+do you guys have roughly?
+
+410
+00:31:46,000 --> 00:31:48,400
+Yeah, our engineering team 
+today is about 15 people.
+
+411
+00:31:48,400 --> 00:31:49,720
+15. 15.
+
+412
+00:31:49,720 --> 00:31:50,400
+15, yeah.
+
+413
+00:31:50,400 --> 00:31:53,920
+Holy moly. Okay. And then 
+each one has five-ish Devins.
+
+414
+00:31:53,920 --> 00:31:54,800
+Yeah.
+
+415
+00:31:54,800 --> 00:31:58,000
+So there's five times the number 
+of Devins as engineers. What I  
+
+416
+00:31:58,000 --> 00:32:01,680
+love about this is just a glimpse 
+into where the future is going.  
+
+417
+00:32:01,680 --> 00:32:07,520
+You guys are so ahead of how companies work 
+with AI engineers. Seeing how you operate  
+
+418
+00:32:07,520 --> 00:32:11,760
+is going to be, as a sense, essentially 
+how most companies will end up operating.
+
+419
+00:32:11,760 --> 00:32:18,480
+Yeah. For what it's worth, we've already seen this 
+shift, I would say, ourselves where... In terms of  
+
+420
+00:32:18,480 --> 00:32:23,280
+the team, obviously, folks don't spend that much 
+of their time just writing out boilerplate or  
+
+421
+00:32:24,240 --> 00:32:31,360
+just doing pure implementation of features. People 
+get to spend much more of their time focused on  
+
+422
+00:32:31,360 --> 00:32:36,000
+really just thinking about the core questions 
+of, "How do we make Devin better? What is the  
+
+423
+00:32:36,000 --> 00:32:40,880
+right interface for Devin? What is the right flow 
+or the right set of features that's really going  
+
+424
+00:32:40,880 --> 00:32:45,440
+to make this as great of an experience 
+as possible?" That's how we like things.
+
+425
+00:32:46,080 --> 00:32:52,080
+When is the point you reach, where there's takeoff 
+of this being the by... Your Devin starts moving  
+
+426
+00:32:52,080 --> 00:32:56,000
+so much further ahead of everyone else. Once 
+you have enough Devins doing all these things,  
+
+427
+00:32:56,000 --> 00:33:00,080
+they're just like wherever and you're 10 
+years, 20 years, 30 years, 100 years ahead.
+
+428
+00:33:00,080 --> 00:33:06,240
+Honestly, as a community, I think all of 
+us as engineers around the world, I think,  
+
+429
+00:33:06,240 --> 00:33:10,720
+are going to have to think about this and build 
+for this and adapt to these new technologies.  
+
+430
+00:33:10,720 --> 00:33:15,920
+But what I would say is, I think more and 
+more... Especially as capabilities get better,  
+
+431
+00:33:15,920 --> 00:33:22,800
+but certainly even in studies say today, I think 
+more and more things are going to shift towards  
+
+432
+00:33:22,800 --> 00:33:28,720
+this asynchronous flow. And one of the reasons I 
+would say for that is in the real world, you're  
+
+433
+00:33:28,720 --> 00:33:35,040
+just capped by real world constraints. I think 
+that one way to put it is kind of like... Don't  
+
+434
+00:33:35,040 --> 00:33:40,400
+take these numbers exactly, but it's kind of like 
+the first order math of it is, of course, being  
+
+435
+00:33:40,400 --> 00:33:44,800
+able to write files or to complete this function 
+or complete this line or things like that. 
+
+436
+00:33:44,800 --> 00:33:49,920
+It helps a ton. It's a really great experience. 
+There's a lot of parts of building software that  
+
+437
+00:33:49,920 --> 00:33:54,000
+obviously are almost not that at all, right? If 
+you have a bug that you're trying to fix and so  
+
+438
+00:33:54,000 --> 00:33:59,760
+you spin up the local server, you click around 
+on your own product on the front end and try to  
+
+439
+00:33:59,760 --> 00:34:04,720
+reproduce the bug yourself. Once you have the 
+error, you take a look at Datadog and you see  
+
+440
+00:34:04,720 --> 00:34:09,440
+what happened and you try to find other errors 
+in the logs. You look at those files and you see  
+
+441
+00:34:09,440 --> 00:34:13,840
+what went wrong, you make some edits, maybe you 
+go and rerun the whole process again now that  
+
+442
+00:34:13,840 --> 00:34:19,520
+you make sure your change looks right. That's a 
+lot of what it means to be a software engineer.  
+
+443
+00:34:20,800 --> 00:34:25,200
+These are processes that take real time. I think 
+we're going to shift more and more towards this  
+
+444
+00:34:25,200 --> 00:34:32,400
+agentic workflow, because that's in some 
+ways the way to really get to that 200%,  
+
+445
+00:34:32,400 --> 00:34:38,880
+500%, 1000% gains that we'll be getting to with 
+software engineering over the next few years.
+
+446
+00:34:38,880 --> 00:34:43,360
+Enough talk. Let's show people what the heck 
+this actually looks like. You've got a couple  
+
+447
+00:34:43,360 --> 00:34:48,080
+demos prepped that show a few use cases 
+that you found helpful. You're going to  
+
+448
+00:34:48,080 --> 00:34:52,160
+pull up your screen and then we'll kick it 
+off and then we'll talk as it's happening.
+
+449
+00:34:52,160 --> 00:34:57,200
+Yeah. The whole process obviously of working 
+with Devin is working asynchronously.  
+
+450
+00:34:59,120 --> 00:35:03,200
+I thought it'd be cool for us to actually just 
+watch Devin a little bit in action and then we  
+
+451
+00:35:03,200 --> 00:35:07,280
+can go through some other examples of work that 
+Devin's done or things that Devin does for us,  
+
+452
+00:35:07,280 --> 00:35:13,200
+even on our team for example. But then we can 
+check back in asynchronously with our Devin after.
+
+453
+00:35:13,200 --> 00:35:13,520
+Let's do it.
+
+454
+00:35:13,520 --> 00:35:18,720
+I'll share this real quick. The key thing 
+that I would just emphasize here is a lot of  
+
+455
+00:35:18,720 --> 00:35:25,040
+it obviously is really just about thinking about 
+as a software engineer or as engineers ourselves  
+
+456
+00:35:25,040 --> 00:35:32,720
+or engineering teams, PMs, and so on. What are 
+the things that we would want to build that we  
+
+457
+00:35:32,720 --> 00:35:37,840
+would want to hand off? We have Devin set up with 
+our own Devin code base, for example, and so I'll  
+
+458
+00:35:37,840 --> 00:35:45,280
+go ahead and kick off with Devin for that. I'll 
+just say, "Devin, I'm on with my friend, Lenny."
+
+459
+00:35:45,280 --> 00:35:47,440
+Hi, Devin.
+
+460
+00:35:48,000 --> 00:35:59,280
+"Can you modify Devin web app two?" Let's feature 
+your newsletter as part of the Devin website.
+
+461
+00:35:59,280 --> 00:36:02,640
+Let's do it. On the real Devin website.
+
+462
+00:36:02,640 --> 00:36:04,480
+"Feature Lenny's site."
+
+463
+00:36:04,480 --> 00:36:06,320
+Yeah, lose all your features.
+
+464
+00:36:06,320 --> 00:36:09,360
+We're going to kick this off. As you 
+can see, Devin gets started instantly  
+
+465
+00:36:09,360 --> 00:36:13,120
+and goes ahead and responds. Again, 
+you can work with this asynchronously,  
+
+466
+00:36:13,120 --> 00:36:17,120
+you can work with it synchronously as well. For 
+this, we'll just kind of go in a little bit and  
+
+467
+00:36:17,120 --> 00:36:23,280
+see exactly what's going on. But as you can see 
+here, Devin's going through files and taking a  
+
+468
+00:36:23,280 --> 00:36:28,720
+look through a lot of stuff. We can follow here 
+basically as we need to and see what makes sense.  
+
+469
+00:36:28,720 --> 00:36:34,400
+You can see Devin's already called out a few 
+particular pieces where there's the sidebar,  
+
+470
+00:36:34,400 --> 00:36:40,320
+which we have implemented on the front end, and 
+there's pieces there. We're going to have a new  
+
+471
+00:36:40,320 --> 00:36:44,400
+component and that component's going to link to 
+Lenny's website. That all sounds good. Devin's  
+
+472
+00:36:44,400 --> 00:36:49,200
+asking us any questions if there's anything that 
+we have here. Same story here where you can let  
+
+473
+00:36:49,200 --> 00:36:56,960
+Devin make its own decisions and hand off, or 
+you can go ahead and give some more thoughts.  
+
+474
+00:36:57,920 --> 00:37:02,960
+Should the button open in a new tab or within an 
+application? I'll say let's open it in a new tab.
+
+475
+00:37:02,960 --> 00:37:05,360
+And you could answer these at any 
+point. Is it waiting for the answer?
+
+476
+00:37:05,360 --> 00:37:07,840
+You answer these at any point, 
+you can hand off, hand back off.
+
+477
+00:37:07,840 --> 00:37:08,560
+It's not going to be like,  
+
+478
+00:37:08,560 --> 00:37:11,440
+"Just god damn it. I just wrote it this 
+way. Why didn't you tell me earlier?"
+
+479
+00:37:11,440 --> 00:37:17,640
+That's right. One of the big pieces with 
+Devin is Devin will always be enthusiastic,  
+
+480
+00:37:17,640 --> 00:37:20,149
+will always be ready to put in the hours.
+
+481
+00:37:20,149 --> 00:37:24,160
+Thanks for changing scope. Thanks, Scott.
+
+482
+00:37:24,720 --> 00:37:27,920
+We'll give Devin a chance to work and it's 
+going to go through these files and it'll  
+
+483
+00:37:27,920 --> 00:37:31,840
+make a pull request for us and we'll see and 
+go from there. But I thought it'd be fun to  
+
+484
+00:37:31,840 --> 00:37:37,440
+show some other examples of Devin in action as 
+well. One of the examples actually this morning,  
+
+485
+00:37:37,440 --> 00:37:43,200
+which I just used Devin for, is I asked 
+Devin to help me brush my own facts up  
+
+486
+00:37:43,200 --> 00:37:49,520
+for this podcast. Obviously, a huge fan of the 
+podcast and the newsletter. I asked Devin, "Hey,  
+
+487
+00:37:49,520 --> 00:37:54,400
+Devin. I'm to be on the podcast. Could you please 
+research everything you can about him and make a  
+
+488
+00:37:54,400 --> 00:38:00,400
+nice website quiz for me so that I can make sure 
+I know my facts?" This was just this morning,  
+
+489
+00:38:00,400 --> 00:38:05,920
+I asked Devin to do this and I'll just show what 
+Devin did, it looks like. Went to Wikipedia first.  
+
+490
+00:38:05,920 --> 00:38:09,200
+Unfortunately, it's not a page in Wikipedia, 
+which is... Lenny, we will work on that.
+
+491
+00:38:09,200 --> 00:38:12,560
+I'm not a big enough deal yet.
+
+492
+00:38:12,560 --> 00:38:19,120
+They did you dirty. I mean, we need a page list. 
+And so then it went and found it on Spotify.
+
+493
+00:38:19,120 --> 00:38:21,040
+So you're watching what it's researching live?
+
+494
+00:38:21,040 --> 00:38:24,240
+Yeah, yeah, yeah. This was 
+this morning, obviously.
+
+495
+00:38:24,240 --> 00:38:29,600
+This is a playback of what Devin did. This is 
+part of Devin you could just watch what it did.
+
+496
+00:38:29,600 --> 00:38:33,600
+Yeah, yeah. Especially when you're building 
+engineering products or something like that, you  
+
+497
+00:38:33,600 --> 00:38:38,640
+can see each of the steps that Devin was doing, 
+or if Devin tested the code locally, obviously you  
+
+498
+00:38:38,640 --> 00:38:43,680
+want to be able to go and look and see what Devin 
+was cooking around with and testing or things  
+
+499
+00:38:43,680 --> 00:38:49,920
+like that. It found the newsletter. It's going and 
+looking at this and it's going and reading all of  
+
+500
+00:38:49,920 --> 00:38:54,800
+this. And then it says, "Okay, let's get started 
+with putting the code together." It says, "Hey,  
+
+501
+00:38:54,800 --> 00:39:00,080
+I've researched." It's going through and writing 
+all of this, putting the app together. It plays  
+
+502
+00:39:00,080 --> 00:39:06,300
+its own quiz itself. Actually, we should just play 
+this quiz actually. Let's see how much I know.
+
+503
+00:39:06,300 --> 00:39:06,320
+[inaudible 00:39:05]
+
+504
+00:39:06,320 --> 00:39:07,440
+What is the name?
+
+505
+00:39:08,560 --> 00:39:14,240
+What is the name of the podcast? Lenny's 
+Podcast. For people not watching,  
+
+506
+00:39:14,240 --> 00:39:17,360
+so to say, approximately how many 
+subscribers? A million. Very good.
+
+507
+00:39:17,360 --> 00:39:18,560
+Yeah. Yeah.
+
+508
+00:39:18,560 --> 00:39:22,400
+What are three main topics Lenny 
+is focused on? Oh, product, growth,  
+
+509
+00:39:22,400 --> 00:39:27,360
+and career. Very good. It's a good 
+quiz [inaudible 00:39:25] of people.
+
+510
+00:39:27,360 --> 00:39:27,670
+What does [inaudible 00:39:26] besides podcasting?
+
+511
+00:39:27,670 --> 00:39:30,000
+What does Lenny do besides podcasting?
+
+512
+00:39:30,000 --> 00:39:34,880
+I'd say writing, investing, and 
+advising. How often does Lenny-
+
+513
+00:39:34,880 --> 00:39:35,600
+[inaudible 00:39:35]
+
+514
+00:39:35,600 --> 00:39:36,640
+Once a week, right?
+
+515
+00:39:36,640 --> 00:39:37,360
+Once a week.
+
+516
+00:39:37,360 --> 00:39:40,640
+Yeah. We can go through all these 
+and do all these. I took this quiz,  
+
+517
+00:39:40,640 --> 00:39:42,880
+by the way, obviously, to make 
+sure that I was well-prepped,  
+
+518
+00:39:42,880 --> 00:39:46,160
+but this is kind of one of the more fun 
+examples, obviously, of [inaudible 00:39:46]
+
+519
+00:39:46,160 --> 00:39:50,000
+Scott, how many subscribers 
+do I have at my newsletter?
+
+520
+00:39:50,000 --> 00:39:51,680
+Over a million, actually.
+
+521
+00:39:51,680 --> 00:39:53,840
+[inaudible 00:39:52]
+
+522
+00:39:53,840 --> 00:40:00,480
+And then one last one I'll show and then maybe we 
+can come back to our initial run after. Like I was  
+
+523
+00:40:00,480 --> 00:40:05,840
+saying, a lot of this is really built to work with 
+all of the existing code workflows out there. For  
+
+524
+00:40:05,840 --> 00:40:13,200
+example, we were doing some exploration with the 
+DeepSeek repository on GitHub and we imported it  
+
+525
+00:40:13,200 --> 00:40:17,200
+into Devin and we got our own fork of it set up 
+in Devin. A couple of things I just wanted to  
+
+526
+00:40:17,200 --> 00:40:21,520
+show here. One is Devin sets up its whole wiki 
+with all of its internal understanding. When  
+
+527
+00:40:21,520 --> 00:40:26,560
+Devin indexes the code base, obviously, building 
+a representation of the code base and learning  
+
+528
+00:40:26,560 --> 00:40:32,000
+it and improving it over time is one of the big 
+things that Devin does. Funnily enough, we found  
+
+529
+00:40:32,000 --> 00:40:36,400
+that naturally humans really are interested to 
+understand this code base representation as well. 
+
+530
+00:40:37,840 --> 00:40:40,400
+Devin Wiki is something that we built 
+here and you can take a look at all  
+
+531
+00:40:40,400 --> 00:40:44,960
+these different pieces and see each of these 
+different things. Here are the FP8 operations,  
+
+532
+00:40:44,960 --> 00:40:48,720
+here's an SG [inaudible 00:40:46] integration. 
+There's diagrams of how the different layers  
+
+533
+00:40:48,720 --> 00:40:53,920
+are built and put together. There's deployment 
+operations. There's a lot of details about the  
+
+534
+00:40:53,920 --> 00:40:58,640
+architecture as well. You can ask questions 
+about it as well. For example, you can say,  
+
+535
+00:40:58,640 --> 00:41:04,960
+"How does DeepSeek handle multi-token prediction 
+designed for spec deck?" It'll go through and it's  
+
+536
+00:41:04,960 --> 00:41:09,600
+able to search through the entire code base and 
+give you an informed answer based off of that. 
+
+537
+00:41:10,240 --> 00:41:14,800
+We use this a lot. It helps when 
+you're scoping out a task for Devin  
+
+538
+00:41:14,800 --> 00:41:17,600
+and doing an initial prompt. It also 
+helps, obviously just in a vacuum,  
+
+539
+00:41:17,600 --> 00:41:19,760
+you often have questions about your 
+code base that are really nice.
+
+540
+00:41:20,800 --> 00:41:26,880
+This episode is brought to you by Attio, the 
+AI-native CRM. Attio is built to scale with  
+
+541
+00:41:26,880 --> 00:41:32,640
+your business from day one. Connect your email 
+and calendar and Attio instantly builds a CRM  
+
+542
+00:41:32,640 --> 00:41:37,360
+that matches your business model, with all of 
+your company's Contacts and interactions enriched  
+
+543
+00:41:37,360 --> 00:41:43,120
+with actionable insights. Sync in your product's 
+usage, billing info, or any other data sources  
+
+544
+00:41:43,120 --> 00:41:48,720
+and Attio's flexible data model will handle it 
+all without any rigid templates or workarounds. 
+
+545
+00:41:48,720 --> 00:41:54,560
+With Attio, AI isn't just a feature. It's the 
+foundation. You can do things like instantly  
+
+546
+00:41:54,560 --> 00:41:59,280
+prospect and route leads with research 
+agents, get real-time insights from AI  
+
+547
+00:41:59,280 --> 00:42:05,200
+using customer conversations, and build powerful 
+AI automations for your most complex workflows.  
+
+548
+00:42:05,200 --> 00:42:10,560
+Industry leaders like Flatfile, Replicate, and 
+Modal are already experiencing what's next for  
+
+549
+00:42:10,560 --> 00:42:21,440
+CRM. Go to A-T-T-I-O.com/lenny to get 15% off 
+your first year. That's A-T-T-I-O.com/lenny. 
+
+550
+00:42:21,440 --> 00:42:27,200
+Something that I've learned as I've been talking 
+to more and more AI building companies and apps  
+
+551
+00:42:27,200 --> 00:42:32,640
+is there's a big difference in how large of a 
+code base they could integrate into. That's a  
+
+552
+00:42:32,640 --> 00:42:36,960
+big deal for companies that are existing versus 
+startups, people that have large existing code  
+
+553
+00:42:36,960 --> 00:42:41,680
+base. How should people think about what 
+kind of code base Devin can plug into?
+
+554
+00:42:41,680 --> 00:42:46,560
+Yeah. We go all the way to the biggest code 
+base as possible. One way I'd kind of put it  
+
+555
+00:42:46,560 --> 00:42:52,960
+is how... The way that we as engineers would 
+think about a large code base is certainly  
+
+556
+00:42:52,960 --> 00:42:57,360
+when you're making changes or when you're 
+thinking about a particular task. You're not  
+
+557
+00:42:58,240 --> 00:43:02,720
+bringing in every single line of the code base 
+at once. You have a high level of traction that  
+
+558
+00:43:02,720 --> 00:43:07,200
+you're able to think about and look into and 
+then you're obviously able to zoom in and get  
+
+559
+00:43:07,200 --> 00:43:12,320
+to higher resolution on each of these different 
+things. Devin works in much the same way,  
+
+560
+00:43:12,320 --> 00:43:18,160
+where the first thing it'll do is it's going 
+to figure out the high level architecture of  
+
+561
+00:43:18,160 --> 00:43:23,680
+what's going on here and what this is built for 
+and so on. But within each of the components,  
+
+562
+00:43:23,680 --> 00:43:27,520
+it's obviously also going to be able to 
+zoom in and give some more detail about  
+
+563
+00:43:27,520 --> 00:43:32,880
+each of these. Here's FP8 to be float 16 
+and how exactly a lot of that is set up.  
+
+564
+00:43:32,880 --> 00:43:38,800
+Here's each of the different parts of the code 
+base. Similarly, we built this to be scalable.
+
+565
+00:43:38,800 --> 00:43:41,840
+It's essentially coming back to 
+the engineer as architect. Now,  
+
+566
+00:43:41,840 --> 00:43:46,640
+it's helping you understand the 
+architecture, kind of circling back to that.
+
+567
+00:43:46,640 --> 00:43:50,720
+Yeah. Yeah, exactly. One of the fun use cases that 
+we've seen actually with folks is they'll often  
+
+568
+00:43:50,720 --> 00:43:57,840
+actually get Devin's help to onboard new engineers 
+on the team. When you're new and you're joining,  
+
+569
+00:43:57,840 --> 00:44:00,960
+there's obviously a lot of questions that you 
+have about the code base or about how things are  
+
+570
+00:44:00,960 --> 00:44:05,760
+set up. It also sometimes can be a little bit 
+awkward to ask your mentor or your manager the  
+
+571
+00:44:05,760 --> 00:44:10,160
+questions and if you're worried that they're going 
+to be really dumb questions. It's nice to just be  
+
+572
+00:44:10,160 --> 00:44:14,880
+able to ask Devin and to go through Devin's wiki 
+and to understand these internal representations.
+
+573
+00:44:14,880 --> 00:44:18,240
+I think that's really interesting, because 
+it comes back to your point that Devin is  
+
+574
+00:44:18,240 --> 00:44:21,520
+not just a junior engineer. It's 
+what you call a jagged engineer.
+
+575
+00:44:21,520 --> 00:44:22,400
+A jagged intelligence.
+
+576
+00:44:22,400 --> 00:44:27,920
+A jagged intelligence, where it's almost like a 
+staff engineer at understanding the code base.  
+
+577
+00:44:27,920 --> 00:44:30,640
+Usually, you have to ask an engineer that's 
+been there a long time, " What does this do?  
+
+578
+00:44:30,640 --> 00:44:34,880
+Where is this thing? How does this work?" 
+It feels like Devin's very good at that.
+
+579
+00:44:34,880 --> 00:44:39,680
+Yeah. Yeah. Obviously, the retrieval 
+and processing a lot of code and a lot  
+
+580
+00:44:39,680 --> 00:44:45,360
+of tokens at once is something that language 
+models are really great at. Basically being  
+
+581
+00:44:45,360 --> 00:44:49,840
+able to get those gains in the places that you 
+need them is really great. Yeah. Sweet, cool.
+
+582
+00:44:49,840 --> 00:44:51,520
+All right. You got a couple more use?
+
+583
+00:44:51,520 --> 00:44:54,960
+Yeah. One last thought I'll show is just... 
+We just rolled this out last week actually,  
+
+584
+00:44:54,960 --> 00:45:00,960
+but it's a full Devin automation setup with 
+Linear. If you have tasks that you're doing  
+
+585
+00:45:00,960 --> 00:45:04,640
+on the DeepSeek repository, for example, and 
+it's all set up, all you have to do is you  
+
+586
+00:45:04,640 --> 00:45:10,000
+just add the Devin label and Devin will come 
+through and it'll give you this. It's going  
+
+587
+00:45:10,000 --> 00:45:13,760
+to give you its thoughts on what the tasks 
+looks like and you can take a look at each  
+
+588
+00:45:13,760 --> 00:45:18,400
+of the particular files that you see, or it'll 
+point out snippets that it thinks are important.  
+
+589
+00:45:19,360 --> 00:45:25,840
+From there, if you feel good about what was 
+built or the conclusions that we came to,  
+
+590
+00:45:25,840 --> 00:45:29,120
+then you can just start off the Devin session 
+that will go and actually do that work.
+
+591
+00:45:30,320 --> 00:45:33,760
+That is insane. That sounds 
+like such a simple idea,  
+
+592
+00:45:33,760 --> 00:45:37,600
+but essentially what you're saying 
+is there are tasks in Linear that  
+
+593
+00:45:37,600 --> 00:45:44,080
+are fixes and features and now Devin just 
+goes off and can just do them for you.
+
+594
+00:45:44,080 --> 00:45:50,160
+Yeah. Definitely it's a hands-on process. 
+You certainly want to be involved when Devin  
+
+595
+00:45:50,160 --> 00:45:53,440
+is scoping out the task or giving you its 
+thoughts. The nice thing, too, by the way,  
+
+596
+00:45:53,440 --> 00:46:00,080
+is Devin will give you its confidence level. 
+Here's how likely I am to really understand  
+
+597
+00:46:00,080 --> 00:46:06,480
+this piece or that piece or whatever, but it 
+helps make things a lot faster. To your point,  
+
+598
+00:46:07,920 --> 00:46:11,520
+a lot of product managers, for example, 
+obviously love to be able to use Devin  
+
+599
+00:46:11,520 --> 00:46:16,640
+in Linear to understand the code base better 
+or things like that. Claire Vo, for example,  
+
+600
+00:46:16,640 --> 00:46:24,080
+from LaunchDarkly is a big Devin user and she 
+loves basically going and scoping out tasks or  
+
+601
+00:46:24,080 --> 00:46:29,600
+asking data questions or asking, "Hey, what's 
+going on? Or is this merged into production  
+
+602
+00:46:29,600 --> 00:46:34,480
+yet? Or is this a feature flag right now? Or 
+what percent of people are getting this or  
+
+603
+00:46:34,480 --> 00:46:40,320
+that feature?" It's a clean way basically to 
+make that intelligence much more accessible.
+
+604
+00:46:40,320 --> 00:46:44,480
+I love, just with the integration with Linear, 
+that you can still keep it really simple.  
+
+605
+00:46:44,480 --> 00:46:50,000
+You add a little ticket like, "Hey, this link to 
+this home page, do this," and Devin will be really  
+
+606
+00:46:50,000 --> 00:46:53,680
+good at understanding what you mean and then show 
+you, "Here's what I'm thinking." Is this right?
+
+607
+00:46:53,680 --> 00:46:57,840
+Yeah. Yeah, cool. Okay. Yeah, Devin 
+did finish working. It seems like  
+
+608
+00:46:57,840 --> 00:47:00,320
+there's something going on with the 
+CI and it's debugging that right now,  
+
+609
+00:47:00,320 --> 00:47:04,080
+but it went ahead and put up the initial first 
+pass pull request and we can take a look.
+
+610
+00:47:04,800 --> 00:47:05,840
+Let's do it.
+
+611
+00:47:05,840 --> 00:47:07,360
+This is the Devin website, obviously,  
+
+612
+00:47:07,360 --> 00:47:11,120
+in this custom deploy and we have 
+Lenny's newsletter right here.
+
+613
+00:47:11,120 --> 00:47:15,520
+Let's ship this to production. 
+We won't be so confused.
+
+614
+00:47:15,520 --> 00:47:16,080
+Yeah.
+
+615
+00:47:16,080 --> 00:47:22,400
+That's amazing. Okay. Show it again real 
+quick. Just added it to the home page of Devin.
+
+616
+00:47:22,400 --> 00:47:24,960
+Yeah. Devin, obviously, has access to our Devin  
+
+617
+00:47:24,960 --> 00:47:28,320
+code base. It does a lot here and so it's 
+super familiar with all the pieces here.
+
+618
+00:47:28,320 --> 00:47:28,640
+Beautiful.
+
+619
+00:47:29,280 --> 00:47:32,560
+Yeah, I like how that looks. 
+We've got Devin search,  
+
+620
+00:47:32,560 --> 00:47:33,680
+we got Devin [inaudible 00:47:33], 
+and we've got Lenny's newsletter.
+
+621
+00:47:33,680 --> 00:47:37,440
+[inaudible 00:47:34]. You link to my 
+site. We'll get some PageRank going.
+
+622
+00:47:37,440 --> 00:47:39,600
+Yeah, yeah, yeah.
+
+623
+00:47:39,600 --> 00:47:45,120
+Okay. Is that a good example? Oh, there it is. 
+What a beautiful website for my newsletter. Is  
+
+624
+00:47:45,120 --> 00:47:48,240
+that just a good example of the kind 
+of thing Devin is very good at like,  
+
+625
+00:47:48,240 --> 00:47:51,280
+"Here's a very specific thing to change on 
+the website"? How does your people think  
+
+626
+00:47:51,280 --> 00:47:54,800
+about what Devin is very good at and 
+maybe where it starts to fall apart?
+
+627
+00:47:54,800 --> 00:48:00,000
+The way that we often describe it is, I 
+think, Devin is best when it is working  
+
+628
+00:48:00,000 --> 00:48:02,477
+on tasks that are well-defined. 
+One way to put it, you might...
+
+629
+00:48:02,477 --> 00:48:05,120
+On tasks that are well-defined. One way to 
+put it is, you want to be giving Devin tasks,  
+
+630
+00:48:05,120 --> 00:48:10,240
+not problems. And a lot of these things like 
+what you just saw, which was kind of like a quick  
+
+631
+00:48:10,240 --> 00:48:16,320
+front-end feature request or a bug fix or adding 
+testing and documentation or things like that. 
+
+632
+00:48:16,320 --> 00:48:21,200
+One of the things that makes a loop really 
+nice obviously is a quick way to iterate  
+
+633
+00:48:21,200 --> 00:48:24,800
+and test. And so with something like this, 
+obviously super easy for us, for example,  
+
+634
+00:48:24,800 --> 00:48:28,960
+to just go pull up the preview and see that 
+the link worked. Obviously it would be easy  
+
+635
+00:48:28,960 --> 00:48:33,440
+for Devin to do as well. Devin will often go 
+and log in to Devin and start a Devin session  
+
+636
+00:48:33,440 --> 00:48:38,960
+and make sure when it's working on our code 
+base, which is kind of hilarious. But yeah,  
+
+637
+00:48:38,960 --> 00:48:44,880
+you generally want something that is kind of easy 
+to verify and easy to test is the main thing. And  
+
+638
+00:48:44,880 --> 00:48:48,880
+you can work on bigger projects or bigger asks 
+as well, obviously. But in that case you should  
+
+639
+00:48:48,880 --> 00:48:55,040
+certainly expect to need to steer Devin more 
+to make sure it's going the right direction.
+
+640
+00:48:55,040 --> 00:48:56,560
+It's interesting because that's very similar to  
+
+641
+00:48:56,560 --> 00:49:00,320
+the way people talk about synthetic 
+data and reinforcement learning,  
+
+642
+00:49:00,320 --> 00:49:04,080
+creating data that's very easy. There's 
+a very definitive answer, yes and no.
+
+643
+00:49:04,080 --> 00:49:04,560
+Yeah.
+
+644
+00:49:04,560 --> 00:49:06,400
+It's very clear.
+
+645
+00:49:06,400 --> 00:49:07,040
+Yeah.
+
+646
+00:49:07,040 --> 00:49:09,680
+Okay. Let me ask you this 
+question. What's something  
+
+647
+00:49:09,680 --> 00:49:14,800
+that you guys debated a lot as you 
+were designing and building Devin?
+
+648
+00:49:14,800 --> 00:49:21,440
+I'll give a couple that comes to mind. 
+One I would say is a question of,  
+
+649
+00:49:21,440 --> 00:49:26,000
+I'll call it how opinionated we should be. We 
+had the workflows that we used to Devin for,  
+
+650
+00:49:26,000 --> 00:49:30,560
+which was very much as you can see for basically 
+integrating to our Slack and GitHub making pull  
+
+651
+00:49:30,560 --> 00:49:36,880
+requests for us in our repos, responding to issue 
+reports or things like that. And naturally we've  
+
+652
+00:49:36,880 --> 00:49:41,200
+had certainly a lot of other different things 
+that have come up that folks have tried. I mean,  
+
+653
+00:49:41,760 --> 00:49:47,600
+we have folks who order their DoorDash with Devin, 
+for example. Even we have folks, certainly a  
+
+654
+00:49:47,600 --> 00:49:53,120
+lot of people who are building cool websites 
+from scratch or working on things like that. 
+
+655
+00:49:53,120 --> 00:49:57,120
+Yeah, I mean it is been an interesting trade 
+off for us where I think the way that I would  
+
+656
+00:49:57,120 --> 00:50:03,360
+describe it is in our product, certainly the 
+large bulk of the features that we build are  
+
+657
+00:50:03,360 --> 00:50:09,120
+for this kind of making pull requests and 
+engineering teams use case. But I think  
+
+658
+00:50:09,680 --> 00:50:13,920
+basically our kind of general stance with all the 
+others is obviously if folks want to use Devin for  
+
+659
+00:50:13,920 --> 00:50:18,240
+that, that's great and we want to just make sure 
+that they're fully aware about the limitations  
+
+660
+00:50:18,240 --> 00:50:23,520
+and about where things can get caught up.
+It is funny with AI and especially because I would  
+
+661
+00:50:23,520 --> 00:50:29,760
+say one of, I would say the most common pieces of 
+advice out there I would say is focus on a really  
+
+662
+00:50:29,760 --> 00:50:35,440
+niche cohort. Do things that don't scale, make 
+one use case that's really great and then you grow  
+
+663
+00:50:35,440 --> 00:50:41,680
+from there. And I think that's great advice across 
+the board. But yeah, it's kind of interesting  
+
+664
+00:50:41,680 --> 00:50:46,720
+because I think with generative AI, you naturally 
+see this where a lot of product experiences can  
+
+665
+00:50:46,720 --> 00:50:51,600
+turn out to be more general. And so it's an 
+interesting trade-off for us. This is something  
+
+666
+00:50:51,600 --> 00:50:58,400
+that we still always go back and forth on and 
+how much do we want to do more to support all the  
+
+667
+00:50:58,400 --> 00:51:03,520
+other kind of use cases out there to handle other 
+things that folks might want to do with Devin. 
+
+668
+00:51:03,520 --> 00:51:10,400
+I think another one that comes to mind is how much 
+Devin should be, let's say a single comprehensive  
+
+669
+00:51:10,400 --> 00:51:15,680
+project experience versus a suite of tools. And 
+as you can see here, we have Devin search, we have  
+
+670
+00:51:15,680 --> 00:51:21,120
+Devin Wiki, we have the linear ticket scooping, 
+and certainly these tools interact with each  
+
+671
+00:51:21,120 --> 00:51:26,720
+other, but I think as time has gone on, we've seen 
+it more and more as really building this suite of  
+
+672
+00:51:26,720 --> 00:51:31,600
+tools. And I think the core agent experience and 
+the core kind of agent that will go off and build  
+
+673
+00:51:31,600 --> 00:51:36,560
+each of these build things for you, for example, 
+is always of course going to be that's Devin,  
+
+674
+00:51:36,560 --> 00:51:41,520
+and that is the core piece. I think that will 
+always be what's really special about our work.  
+
+675
+00:51:41,520 --> 00:51:50,320
+But I think that all of the other features out 
+there, there is a complex suite of work that's  
+
+676
+00:51:50,320 --> 00:51:54,880
+required for real-world software sharing and 
+engineering is just messy at the end of the day. 
+
+677
+00:51:54,880 --> 00:51:58,880
+And so I think there are a lot of different flows 
+and a lot of different use cases that makes sense.  
+
+678
+00:51:58,880 --> 00:52:04,560
+And an obvious thing to point out is you could ask 
+the same questions to Devin search as you could to  
+
+679
+00:52:04,560 --> 00:52:08,560
+Devin and Devin will go through and it'll do the 
+same thing. It'll go through and look through the  
+
+680
+00:52:08,560 --> 00:52:11,840
+files and give you an answer and stuff.
+But with that said, on the one hand,  
+
+681
+00:52:11,840 --> 00:52:15,120
+I think on the capability side, there's 
+certainly a lot you can do to really optimize  
+
+682
+00:52:15,120 --> 00:52:20,320
+things for very specifically question answer 
+about this repository and that made sense to  
+
+683
+00:52:20,320 --> 00:52:25,200
+really build into a specific kind feature.
+And then on the other side, I would say  
+
+684
+00:52:25,200 --> 00:52:31,760
+we found that users actually really, really 
+like having this access of control. Sometimes  
+
+685
+00:52:31,760 --> 00:52:35,680
+you have a task that you're thinking about, but 
+you actually don't want Devin to get started on  
+
+686
+00:52:35,680 --> 00:52:38,960
+the task just yet. You want to ask Devin and 
+understand what parts of the code base might  
+
+687
+00:52:38,960 --> 00:52:43,600
+be relevant. And so you want to be very direct 
+about saying, "This is just an ask and I just  
+
+688
+00:52:43,600 --> 00:52:47,920
+want to see the snippets of the code base that 
+relate," or, "I just want to look at the Wiki  
+
+689
+00:52:47,920 --> 00:52:52,320
+and understand the existing representation."
+And so it's on both the capabilities and on  
+
+690
+00:52:52,320 --> 00:52:57,520
+the UX side, we've found that that's kind 
+of what's naturally made sense over time.
+
+691
+00:52:57,520 --> 00:53:01,200
+Well, let's talk about the landscape then 
+of just other companies in the space,  
+
+692
+00:53:01,200 --> 00:53:04,240
+which is something a lot of people are always 
+thinking about. There's all these different  
+
+693
+00:53:04,240 --> 00:53:08,320
+approaches. You guys are going full on AI 
+engineer, there's obviously ID companies.  
+
+694
+00:53:08,320 --> 00:53:13,440
+There's also just models being built that are 
+really good at engineering. Everyone's kind of  
+
+695
+00:53:13,440 --> 00:53:17,280
+starting to build agents now. You guys are 
+ahead on this in a lot of ways. OpenAI just  
+
+696
+00:53:17,280 --> 00:53:22,480
+recently said they're going to build a software 
+engineering agent. Anthropics got something there.  
+
+697
+00:53:22,480 --> 00:53:26,720
+Cursor and Windsurf have their only agents and 
+Replit. Thoughts on just where you guys fit in  
+
+698
+00:53:26,720 --> 00:53:31,760
+the landscape and then how do you think you 
+win long term. How do you think about that?
+
+699
+00:53:31,760 --> 00:53:37,280
+Yeah, and for what it's worth, I think all 
+of these are incredible teams. I think really  
+
+700
+00:53:37,280 --> 00:53:41,200
+smart and really forward-thinking folks who are 
+building a lot of great products out there. And  
+
+701
+00:53:42,800 --> 00:53:48,880
+I think there's a lot to do honestly over the next 
+few years with the advent of AGI or whatever you  
+
+702
+00:53:48,880 --> 00:53:54,960
+want to call it. I think one of the quotes that 
+I love is in 2017, if you asked if we had AGI,  
+
+703
+00:53:54,960 --> 00:53:58,880
+the answer is no. And in 2025, if you ask if 
+we have AGI, the answer is, "Well, you have  
+
+704
+00:53:58,880 --> 00:54:05,280
+to define AGI. And it depends on your subject." 
+And I think it does get to the point of, I mean  
+
+705
+00:54:05,280 --> 00:54:11,040
+there is a lot of really amazing stuff happening. 
+I think that it's easy to underrate, I would say  
+
+706
+00:54:11,040 --> 00:54:16,720
+just how big of a shift it is that we're seeing 
+where I think there are a lot of great products  
+
+707
+00:54:16,720 --> 00:54:21,040
+out there, for example, over the last 10 years, 
+20 years, 30 years, that have made each of these  
+
+708
+00:54:22,800 --> 00:54:28,560
+different niches of the life cycle of building a 
+product a little bit easier, for example, right? 
+
+709
+00:54:28,560 --> 00:54:31,840
+There's great products out there for instant 
+response, there's great products out there for  
+
+710
+00:54:31,840 --> 00:54:35,440
+logging, there's great products out there for 
+billing, there's all of these different tools.  
+
+711
+00:54:36,240 --> 00:54:41,680
+And the obvious thing is what we're seeing 
+with AI is all of these spaces are going to  
+
+712
+00:54:41,680 --> 00:54:47,200
+be moving multiple times faster and it's going to 
+be like an order of magnitude shift, if anything. 
+
+713
+00:54:47,200 --> 00:54:53,200
+And so I think from our perspective, we've 
+obviously had a very specific lens that we've  
+
+714
+00:54:53,200 --> 00:54:58,640
+bet on this whole time, and that is autonomous 
+coding agents. And there's a lot of problems to  
+
+715
+00:54:58,640 --> 00:55:03,840
+solve there, to be honest, right? There's still 
+a ton to do on the core capabilities, certainly,  
+
+716
+00:55:03,840 --> 00:55:08,560
+and we see cases all the time where it's like, 
+wow, why did Devin make that decision? That seems,  
+
+717
+00:55:09,200 --> 00:55:14,880
+no human engineer would've ever done that. 
+There's all sorts of spots where, with the product  
+
+718
+00:55:14,880 --> 00:55:19,280
+interface, there's obviously a lot to think about.
+And I think it's by the way, not just a single  
+
+719
+00:55:19,280 --> 00:55:22,160
+thing that we're working towards, but 
+something that will change with every  
+
+720
+00:55:22,160 --> 00:55:28,160
+edition of capabilities. I kind of think of 
+it as there's 20 generations of agent product,  
+
+721
+00:55:28,160 --> 00:55:33,200
+agent coding experiences to come. I think the one 
+that we'll get to over the course of several years  
+
+722
+00:55:33,200 --> 00:55:37,040
+is probably something where you don't even look at 
+the code at all, right? And you're actually just  
+
+723
+00:55:37,040 --> 00:55:41,360
+looking at your own product and you're just able 
+to look and specify and say, "Hey, this button  
+
+724
+00:55:41,360 --> 00:55:46,320
+should be a little bit rounder. Let's do that. And 
+by the way, let's add a new tab here and maybe we  
+
+725
+00:55:46,320 --> 00:55:50,960
+should save this information. Let's start up a 
+database table and let's index it on X, Y, and Z  
+
+726
+00:55:50,960 --> 00:55:56,240
+columns." And you're just basically working with 
+your products in real time and having your agent  
+
+727
+00:55:56,240 --> 00:56:00,400
+build out those things for you. Obviously there's 
+going to be a lot of generations in between here  
+
+728
+00:56:00,400 --> 00:56:03,920
+and there, but I think the product experience 
+itself is going to change every single time. 
+
+729
+00:56:03,920 --> 00:56:07,680
+And then obviously there, there's all of the 
+practicality of just getting it out there in  
+
+730
+00:56:07,680 --> 00:56:14,560
+the world. And so folks obviously need to learn 
+how to use the new technology. There's a lot to  
+
+731
+00:56:14,560 --> 00:56:19,760
+do to deploy into all of the messiness of 
+real world software. There's a lot of COBOL  
+
+732
+00:56:19,760 --> 00:56:24,000
+out there still. There's a lot of FORTRAN 
+out there still. There's lots of kind of  
+
+733
+00:56:24,000 --> 00:56:30,400
+abstractions and details that folks have done.
+And so I think from our perspective, we have  
+
+734
+00:56:31,920 --> 00:56:37,120
+since the beginning have been laser-focused on 
+agentic coding, and that is the one thing that  
+
+735
+00:56:37,120 --> 00:56:41,680
+we've really believed in. It's the one thing that 
+we've designed for and that goes all the way to  
+
+736
+00:56:41,680 --> 00:56:47,040
+even the revenue model with ACUs and having the 
+usage-based setup. It does into obviously all  
+
+737
+00:56:47,040 --> 00:56:50,800
+the product experiences of thinking how, 
+okay, where do you want to talk to Devin?  
+
+738
+00:56:50,800 --> 00:56:54,640
+You want to be able to talk to Devin in Slack, 
+you want to be able to spin this up from your  
+
+739
+00:56:54,640 --> 00:56:58,640
+issue. You want to be able to all of these 
+things and then of course the capabilities. 
+
+740
+00:56:58,640 --> 00:57:04,640
+And so I don't think there's any one easy answer. 
+I think it's obviously a combination of things,  
+
+741
+00:57:04,640 --> 00:57:11,040
+but this has been the space that we've lived 
+in and spent all of our time in for the last  
+
+742
+00:57:11,040 --> 00:57:14,000
+year and a half, and it's going to be that 
+way for the next five or 10 years too.
+
+743
+00:57:14,560 --> 00:57:19,440
+Along these lines, a big question everyone 
+always has in AI's moats and defensibility,  
+
+744
+00:57:19,440 --> 00:57:21,680
+it's a question I've been asking 
+every founder that comes on. How  
+
+745
+00:57:21,680 --> 00:57:25,440
+do you just think about how to build a moat 
+in this space when it's so much easier to  
+
+746
+00:57:25,440 --> 00:57:30,400
+build and so much is built on these models 
+that are themselves advancing so quickly?
+
+747
+00:57:30,400 --> 00:57:36,480
+I'd give one slight tweak on that, which is 
+I think it's often less about moats and more  
+
+748
+00:57:36,480 --> 00:57:41,120
+about stickiness. And what I mean by that is 
+moats are in some sense, typically what folks  
+
+749
+00:57:41,120 --> 00:57:47,280
+mean by moats is something that means that a 
+competitor couldn't even enter the market. And  
+
+750
+00:57:47,280 --> 00:57:51,840
+I agree that at a high level, a lot of different 
+folks at different layers of the AI spectrum,  
+
+751
+00:57:52,800 --> 00:57:57,600
+the foundation labs or the application layer or so 
+on, I don't think there's any kind of hard barrier  
+
+752
+00:57:57,600 --> 00:58:01,760
+that would prevent others from entering. I think 
+what does exist is stickiness, which I would kind  
+
+753
+00:58:01,760 --> 00:58:06,320
+of define as once you have a product experience 
+that you really like, are you excited to keep  
+
+754
+00:58:06,320 --> 00:58:12,800
+using that experience or is there an effect where 
+it is just as easy from now on to just switch  
+
+755
+00:58:12,800 --> 00:58:18,080
+on to a new one and learn a new one and so on.
+And I think from that perspective, I think there's  
+
+756
+00:58:18,080 --> 00:58:22,400
+a few things that are really great about coding 
+agents in particular. One I would say is there  
+
+757
+00:58:22,400 --> 00:58:28,400
+is a lot of just inherent stickiness and learning 
+and buildup over time, which is that as you use  
+
+758
+00:58:28,400 --> 00:58:33,040
+Devin and as your whole team uses Devin, it's the 
+same thing with an engineer. If you're joining on  
+
+759
+00:58:33,040 --> 00:58:38,320
+day one versus you've been at the company for 
+five years, you wrote half the code yourself,  
+
+760
+00:58:38,320 --> 00:58:42,640
+you've touched every file you've built every 
+single piece, you know all the engineers. And  
+
+761
+00:58:42,640 --> 00:58:46,880
+so similarly, it's like Devin will really learn 
+and build its representation of your code base  
+
+762
+00:58:46,880 --> 00:58:51,440
+and of your stack and of your process over time 
+and will be able to do a lot more with that. 
+
+763
+00:58:51,440 --> 00:58:58,000
+And then the other piece of it, which I think is 
+really exciting I'd say is there really is a lot  
+
+764
+00:58:58,000 --> 00:59:04,480
+to do of what I would call a multiplayer aspect 
+of code, which if you think about it, is how a lot  
+
+765
+00:59:04,480 --> 00:59:10,080
+of things get done in the real world, certainly. 
+And so it's one thing to have your own experience,  
+
+766
+00:59:10,080 --> 00:59:14,640
+which you use yourself as just an engineer, but 
+for example, ourselves, we see this all the time  
+
+767
+00:59:14,640 --> 00:59:19,440
+where some engineers are working with Devin 
+and teaching Devin things and as I mentioned,  
+
+768
+00:59:19,440 --> 00:59:23,920
+folks will have Devin on board their new engineers 
+and kind of convey that knowledge to them. 
+
+769
+00:59:23,920 --> 00:59:28,640
+Or similarly, it's like I'll start a session 
+with Devin in Slack and I'll say, "Hey, it'd  
+
+770
+00:59:28,640 --> 00:59:33,040
+be cool if we could do this thing." And some other 
+engineer will chime in and say, "Oh, by the way,  
+
+771
+00:59:33,040 --> 00:59:37,760
+the reason we did it initially was X and Y." And 
+so Devin, just make sure when you do this change  
+
+772
+00:59:37,760 --> 00:59:42,560
+that you still support that workflow. And Devin 
+will say, "Okay, sounds great." Or Devin will  
+
+773
+00:59:42,560 --> 00:59:46,880
+make a PR, I'll be working with Devin, we'll make 
+pull requests and GitHub and somebody else will  
+
+774
+00:59:46,880 --> 00:59:52,400
+be reviewing that PR or give some comments and 
+Devin will work on that too. You'll be in linear. 
+
+775
+00:59:52,400 --> 00:59:59,040
+So all these kind of spaces, it really does just 
+kind of set up for an experience basically where  
+
+776
+00:59:59,040 --> 01:00:03,520
+Devin can just grow in the value that it can 
+provide for your whole work over time. And  
+
+777
+01:00:03,520 --> 01:00:09,520
+so I think from that perspective, if anything, 
+we want there to be a lot of innovation and a  
+
+778
+01:00:09,520 --> 01:00:14,560
+lot of new products and so on. I don't think 
+that the goal is to try to lock other people  
+
+779
+01:00:14,560 --> 01:00:18,320
+out of building. There's a lot of stuff 
+to build, and I think there's going to be  
+
+780
+01:00:18,320 --> 01:00:21,760
+a lot of different experiences. I think from 
+our perspective, what we think about is more  
+
+781
+01:00:21,760 --> 01:00:27,520
+like how can we make Devin more and more 
+and more useful as you're using it more?
+
+782
+01:00:27,520 --> 01:00:33,120
+It's very similar. We had Michael from Cursor, 
+the CF Cursor on the podcast, and he had a  
+
+783
+01:00:33,120 --> 01:00:37,440
+similar point of just he thinks moats are just 
+kind of like consumer, like Google is the way,  
+
+784
+01:00:37,440 --> 01:00:42,560
+he thinks it's like Google where people can 
+easily switch. You just have to stay the best,  
+
+785
+01:00:42,560 --> 01:00:47,200
+and that's the answer. And it feels like you're 
+adding to that of just like, but also if you can  
+
+786
+01:00:47,200 --> 01:00:52,000
+create some stickiness where it is very hard to 
+leave because it's so good at what it's doing  
+
+787
+01:00:52,000 --> 01:00:57,360
+and it's built knowledge and integrated to your 
+workflows and builds on that on that stickiness.
+
+788
+01:00:57,360 --> 01:01:02,400
+Yeah, and I think one of the things 
+that's nice about our space too is,  
+
+789
+01:01:02,400 --> 01:01:09,440
+software engineering for better for worse has a 
+very clear tie to value. And what it means is,  
+
+790
+01:01:09,440 --> 01:01:13,520
+I guess one way to put it is there 
+is always kind of a clear next level,  
+
+791
+01:01:13,520 --> 01:01:17,200
+at least for the next while. I think there 
+could be some point where you're just like,  
+
+792
+01:01:17,200 --> 01:01:20,720
+"All right, just build the entirety of YouTube 
+for me." And Devin just does the whole,  
+
+793
+01:01:20,720 --> 01:01:25,760
+it's like there's probably been a hundred million 
+hours of human engineering time building YouTube,  
+
+794
+01:01:25,760 --> 01:01:29,760
+building the algorithm, building all the 
+infrastructure, all of the, everything,  
+
+795
+01:01:29,760 --> 01:01:34,160
+every little detail. And maybe there's some 
+time where Devin just does that out of the box.  
+
+796
+01:01:34,720 --> 01:01:39,680
+That's obviously going to be a long time from now.
+I think on the interim, on every level in between,  
+
+797
+01:01:39,680 --> 01:01:46,400
+obviously it makes a difference the quality of 
+software engineering. And I think one of the cool  
+
+798
+01:01:46,400 --> 01:01:52,080
+things with developers obviously is developers 
+are really willing to learn new experiences and  
+
+799
+01:01:52,080 --> 01:01:56,320
+to put in effort if it means that they're able 
+to have a higher and higher quality experience.
+
+800
+01:01:57,200 --> 01:02:03,840
+Awesome. I'm going to spend a little time on 
+the tech that enables Devin. Without divulging  
+
+801
+01:02:03,840 --> 01:02:08,480
+trade secrets, just what allowed you to 
+make Devin so good? Was there an unlock  
+
+802
+01:02:08,480 --> 01:02:13,200
+with a certain model? Some folks have 
+shared three points on a 3.5 was a huge  
+
+803
+01:02:13,200 --> 01:02:17,520
+unlock for a lot of their products. 
+Just what's kind of the key to the  
+
+804
+01:02:17,520 --> 01:02:20,400
+way you've architected or built 
+Devin that makes it work so well?
+
+805
+01:02:20,400 --> 01:02:26,720
+We obviously, we've been betting on agents 
+for a long time. I think that agents were  
+
+806
+01:02:27,840 --> 01:02:34,000
+doable and workable a lot earlier than most folks 
+might've thought. But certainly I think as the  
+
+807
+01:02:34,000 --> 01:02:37,360
+community has really rallied around it, I mean 
+you see the impacts of that in the pre-training,  
+
+808
+01:02:37,360 --> 01:02:43,280
+you see the impacts of that in a lot of the work 
+that's done with these models. I actually don't  
+
+809
+01:02:43,280 --> 01:02:49,360
+think there's been any, from our perspective, I 
+don't think there's been any single step function  
+
+810
+01:02:49,360 --> 01:02:53,280
+based model shift or anything that has been kind 
+of like a night and day difference in Devin,  
+
+811
+01:02:53,280 --> 01:02:57,360
+but I certainly think that the curve of every 
+point on the chart, I mean there's a new model  
+
+812
+01:02:57,360 --> 01:03:04,000
+that comes out every week now has obviously made 
+a big difference in terms of what we've been  
+
+813
+01:03:04,000 --> 01:03:08,160
+able to do. And then obviously on top of that, 
+we work with the research teams at all these  
+
+814
+01:03:08,160 --> 01:03:14,320
+foundation labs to do a lot of our work on top.
+And so I think that my hot take here at which I  
+
+815
+01:03:14,320 --> 01:03:19,520
+would give is, I think in terms of base 
+intelligence, we're honestly basically  
+
+816
+01:03:19,520 --> 01:03:24,560
+already there. And I think a lot of what we 
+see actually and what we spend our time on  
+
+817
+01:03:25,200 --> 01:03:31,440
+is less so, obviously, we don't our own models 
+or things like that. It's less so increasing  
+
+818
+01:03:31,440 --> 01:03:36,720
+the base IQ of a model, for example, and more 
+about teaching it all of the idiosyncrasies of  
+
+819
+01:03:36,720 --> 01:03:41,600
+real-world engineering and thinking about 
+here's how you use Datadog and do this,  
+
+820
+01:03:41,600 --> 01:03:45,760
+and here's how you might diagnose this error and 
+here are the different things that you could run  
+
+821
+01:03:45,760 --> 01:03:50,000
+into and here's how you handle each of those. And 
+when you're ready, here's how you make GitHub PR. 
+
+822
+01:03:50,000 --> 01:03:53,840
+And this is true in engineering. It's 
+true in every other space as well. I mean,  
+
+823
+01:03:53,840 --> 01:04:00,560
+there's so much detail and idiosyncrasy to the 
+work that we all do obviously day to day. And a  
+
+824
+01:04:00,560 --> 01:04:06,080
+lot of it is kind of like teaching the model 
+to mirror the complexity of the real world,  
+
+825
+01:04:06,080 --> 01:04:12,960
+I would say, rather than getting it to some 
+higher fundamental level of problem solving,  
+
+826
+01:04:12,960 --> 01:04:15,600
+which I think the foundation labs 
+are doing a really great job.
+
+827
+01:04:15,600 --> 01:04:18,480
+There's something you shared when we 
+were chatting before we started recording  
+
+828
+01:04:18,480 --> 01:04:25,280
+around the growth of previous transformative 
+technologies were very hardware oriented and  
+
+829
+01:04:25,280 --> 01:04:29,840
+there was a limiting factor to their growth and 
+AI is not that. Can you just share that insight?
+
+830
+01:04:29,840 --> 01:04:36,960
+For a number of reasons? I think AI is going to 
+be the biggest technology shift of our lives,  
+
+831
+01:04:36,960 --> 01:04:42,000
+but I think one thing, which is what we were 
+just talking about before this, which is most  
+
+832
+01:04:42,000 --> 01:04:45,920
+of the big tech revolutions that we've had over 
+the last 50 years, I mean, I'm thinking about  
+
+833
+01:04:45,920 --> 01:04:52,080
+personal computer and the internet and the mobile 
+phone and stuff, they all had this big hardware  
+
+834
+01:04:52,080 --> 01:04:56,560
+component that was a big part of the distribution. 
+And so you had the internet, and initially it was  
+
+835
+01:04:56,560 --> 01:05:00,560
+just these universities that were talking with 
+one another, but obviously over time we got the  
+
+836
+01:05:00,560 --> 01:05:04,320
+whole world plugged into the internet and it took 
+years and years and years. Same thing was true  
+
+837
+01:05:04,320 --> 01:05:10,800
+with mobile phones. Same thing was true with PC.
+And the thing that's interesting about that in  
+
+838
+01:05:10,800 --> 01:05:13,920
+particular, which is I would say we're 
+already seeing the effects of that,  
+
+839
+01:05:13,920 --> 01:05:19,840
+is in these hardware distribution machines, 
+obviously there's a lot that depends on real  
+
+840
+01:05:19,840 --> 01:05:25,520
+time. And so folks who were building for those 
+industries saw their market grow and grow and  
+
+841
+01:05:25,520 --> 01:05:29,920
+grow basically steadily year over year as the 
+number of people with mobile phones increased,  
+
+842
+01:05:29,920 --> 01:05:35,600
+as the number of people connected to the internet 
+increased. And many of those businesses, it's  
+
+843
+01:05:35,600 --> 01:05:39,200
+still crazy to think, but many of those businesses 
+got started right in the beginning. I mean,  
+
+844
+01:05:39,200 --> 01:05:42,560
+Apple and Microsoft were started right around 
+the same time. And same is true for a lot of  
+
+845
+01:05:42,560 --> 01:05:49,200
+the great internet businesses or wherever, but 
+certainly it was something that touched whole  
+
+846
+01:05:49,200 --> 01:05:56,720
+world with time or a large fraction of the whole 
+world. And it had a really massive impact, but it  
+
+847
+01:05:56,720 --> 01:06:01,440
+took place over several years because of the time 
+that it took. And I think one of the things which  
+
+848
+01:06:01,440 --> 01:06:10,320
+is already I'd say different in AI, is just how 
+explosive the technology can be. Once AI could,  
+
+849
+01:06:10,320 --> 01:06:16,720
+and I think we're firmly past the inflection point 
+in AI code where it's, as an engineer, if you're  
+
+850
+01:06:16,720 --> 01:06:23,120
+not using AI at all to write code, I mean you're 
+falling behind honestly. And it is a technology  
+
+851
+01:06:23,120 --> 01:06:29,360
+that everyone should have and should be using, and 
+there's no kind of weight on hardware distribution  
+
+852
+01:06:29,360 --> 01:06:36,080
+that is causing that. It means that the space 
+is just growing so exponentially, basically.
+
+853
+01:06:36,080 --> 01:06:40,240
+Michael Ballin has this interesting point 
+that cliches are cliches because they're  
+
+854
+01:06:40,240 --> 01:06:44,640
+so true and that's why they're cliches. 
+I heard that a million times and I think  
+
+855
+01:06:44,640 --> 01:06:48,800
+it's like people hear this like, "Yeah, 
+yeah, I know," but it's actually insane  
+
+856
+01:06:48,800 --> 01:06:52,880
+what is happening. That's why you're 
+here to help us through this transition.
+
+857
+01:06:52,880 --> 01:06:58,000
+Yeah, no, I mean, it is a fun time and I think 
+there will be real investment and real work that  
+
+858
+01:06:58,000 --> 01:07:02,080
+it takes. But I think from the perspective of 
+us as engineers, for example, I think it just  
+
+859
+01:07:02,080 --> 01:07:10,320
+means it's so important to stay in the loop with 
+everything that's happening. And as we're seeing  
+
+860
+01:07:10,320 --> 01:07:14,560
+it's not only because of your learning and your 
+ability to work these technologies, but it's also  
+
+861
+01:07:14,560 --> 01:07:20,720
+about basically teaching the AI what there is 
+to know about your code base in order to make  
+
+862
+01:07:20,720 --> 01:07:26,080
+it really effective at building with you and doing 
+more of the things that you would want it to do.
+
+863
+01:07:26,080 --> 01:07:29,760
+So along those lines, for people 
+listening that they're like, "Hey,  
+
+864
+01:07:29,760 --> 01:07:35,360
+we should be using Devin at our company," what 
+are things you've found to be helpful in helping  
+
+865
+01:07:35,360 --> 01:07:41,840
+an engineer at a company get adoption and be able 
+to use Devin either culturally or logistically?
+
+866
+01:07:42,560 --> 01:07:46,240
+So a pattern which we often see with 
+folks is there will be a few folks  
+
+867
+01:07:46,240 --> 01:07:49,600
+at the team who are really excited 
+and want to try out the new thing,  
+
+868
+01:07:49,600 --> 01:07:55,040
+and they want to put in the investment and are 
+really excited to get it going. And they'll go  
+
+869
+01:07:55,040 --> 01:07:59,280
+through all the setup. They'll give Devin the 
+repos, they'll teach Devin how to run the lint  
+
+870
+01:07:59,280 --> 01:08:04,560
+and the CI and all of those details. And they'll 
+start off by giving it those initial tasks and  
+
+871
+01:08:05,360 --> 01:08:10,800
+help Devin build a foothold basically. And 
+as time goes on, eventually folks will see,  
+
+872
+01:08:10,800 --> 01:08:13,749
+"Wow, Devin's writing all these PRs, 
+Devin's doing this [inaudible 01:08:14].
+
+873
+01:08:13,749 --> 01:08:17,280
+Who's this Devin person that just joined 
+the company's just knocking out PRs?
+
+874
+01:08:17,280 --> 01:08:19,840
+Yeah. And they'll see that, and 
+then naturally they'll get on and  
+
+875
+01:08:19,840 --> 01:08:23,280
+they'll get an account. And one of the cool 
+things of course is by the time they join,  
+
+876
+01:08:23,280 --> 01:08:27,920
+Devin already knows a good amount of detail about 
+the repositories that they're already working in  
+
+877
+01:08:27,920 --> 01:08:32,640
+and they're working with that. And so one of the 
+really cool things which we often see is that the  
+
+878
+01:08:32,640 --> 01:08:37,120
+early adopters themselves can really pave the 
+way I think, for everyone else on the team. 
+
+879
+01:08:37,120 --> 01:08:42,000
+But yeah, I think the main thing I would just 
+kind of call out is it really does take, it's  
+
+880
+01:08:42,000 --> 01:08:47,200
+a very different product experience, and I think 
+for what it's worth, I think there's still a lot  
+
+881
+01:08:47,200 --> 01:08:54,320
+more that we can do to make it as intuitive and as 
+clear as possible to folks like how to use Devin  
+
+882
+01:08:54,320 --> 01:08:59,600
+and what the right steps are and how to really 
+maximize value out of Devin. But I think that,  
+
+883
+01:09:00,160 --> 01:09:05,280
+yeah, it's the kind of thing where if you put 
+in the investment and understand exactly what  
+
+884
+01:09:05,280 --> 01:09:10,880
+it takes to get Devin to be successful, we've 
+found ourselves that as time has gone on,  
+
+885
+01:09:10,880 --> 01:09:16,240
+we just use Devin more and more 
+and more with every next update.
+
+886
+01:09:16,240 --> 01:09:21,520
+So let me follow that thread. There is a 
+question I ask every AI app building founder,  
+
+887
+01:09:21,520 --> 01:09:26,480
+which is, if you could sit next to every new 
+user of Devin and whisper something in their  
+
+888
+01:09:26,480 --> 01:09:31,520
+ear to help them be successful with Devin, 
+one or two tips, what would those tips be?
+
+889
+01:09:31,520 --> 01:09:40,800
+I think the biggest thing I would say is it really 
+is just treat Devin like your new junior engineer.  
+
+890
+01:09:41,360 --> 01:09:47,440
+And I think that's the biggest thing. I think 
+folks come in and they see the blank page and they  
+
+891
+01:09:47,440 --> 01:09:53,440
+think of all sorts of various things that they 
+want to try out. They think of lots, where I think  
+
+892
+01:09:53,440 --> 01:09:59,440
+typically the flow that we see that works best is 
+obviously you can try demos and you can do things,  
+
+893
+01:09:59,440 --> 01:10:04,000
+but a lot of it is just like, "Yeah, let's figure 
+out what tickets we want to get done today or this  
+
+894
+01:10:04,000 --> 01:10:09,840
+week and let's have Devin get started on those 
+and let's start with the easier ones and then work  
+
+895
+01:10:09,840 --> 01:10:14,720
+with Devin and understand what things Devin needs 
+to get set up to be able to test its own code and  
+
+896
+01:10:14,720 --> 01:10:20,560
+do this well. And then let's scale up over time." 
+And then obviously as you work with your engineer,  
+
+897
+01:10:20,560 --> 01:10:25,840
+you understand better how to communicate 
+with them or what are the right tasks or  
+
+898
+01:10:25,840 --> 01:10:31,200
+projects to bring them in on. But I think 
+that really is the one-liner for us.
+
+899
+01:10:31,200 --> 01:10:34,160
+Okay. There's a question I'd be meeting 
+task. I just want to get back to this  
+
+900
+01:10:34,160 --> 01:10:39,760
+because it's something I think a lot about with 
+Devins. Everyone's going to have five Devins,  
+
+901
+01:10:39,760 --> 01:10:45,280
+let's say 10 Devins. Everyone's kind of turning 
+into basically an engine manager with a bunch of  
+
+902
+01:10:45,280 --> 01:10:50,720
+junior engineers, which isn't necessarily the best 
+job in the world because it's just a bunch of, at  
+
+903
+01:10:50,720 --> 01:10:55,360
+least you don't have to do performance reviews and 
+one-on-ones, but it's sitting around, checking a  
+
+904
+01:10:55,360 --> 01:11:00,880
+lot of PRs all day. There's a sense of you become 
+an architect, which is kind of what every engineer  
+
+905
+01:11:00,880 --> 01:11:04,000
+wants to become eventually, right? They're all, 
+"I just want to think about the architecture. I  
+
+906
+01:11:04,000 --> 01:11:09,360
+don't want to code all these stupid, fix bugs."
+So I get that there's a good side to that,  
+
+907
+01:11:09,360 --> 01:11:14,240
+but just I imagine you're thinking a lot about 
+this, just like how do you make life pleasant  
+
+908
+01:11:14,240 --> 01:11:19,600
+and fun and enjoyable as basically an engine 
+manager of say, 500 Devins in the future?
+
+909
+01:11:19,600 --> 01:11:23,280
+Yeah, I can just imagine the performance, 
+"Devin, you've done a really great job on  
+
+910
+01:11:23,280 --> 01:11:29,739
+your task, but I really would like you to be more 
+proactive in the team meetings." So what I'd say-
+
+911
+01:11:29,739 --> 01:11:29,760
+[inaudible 01:11:29].
+
+912
+01:11:29,760 --> 01:11:34,240
+It's funny actually because something that 
+in terms of the wording that we thought a  
+
+913
+01:11:34,240 --> 01:11:38,240
+lot about as well is just, we've used 
+the term manager of Devins in the past,  
+
+914
+01:11:38,240 --> 01:11:43,760
+which of course I think is a big part 
+of it. But I think that the only thing  
+
+915
+01:11:43,760 --> 01:11:49,440
+I would point out here is I think that the 
+bricklayer versus architect is closer to the  
+
+916
+01:11:49,440 --> 01:11:54,560
+experience than being a manager. Because I 
+think a lot of the difficulty of management  
+
+917
+01:11:54,560 --> 01:12:02,044
+or the reason that people shy away from it 
+is more because of a lot of the various.
+
+918
+01:12:02,044 --> 01:12:07,600
+... [inaudible 01:12:00] because of a lot of the 
+various, let's say... There's all of the context,  
+
+919
+01:12:07,600 --> 01:12:13,120
+and the ownership, and the responsibility 
+and stuff, and then there's also all of the  
+
+920
+01:12:13,120 --> 01:12:19,760
+emotional aspects of it. Where, I think working 
+with Devin is a little more like just being,  
+
+921
+01:12:22,880 --> 01:12:27,440
+more as having an interface to hand 
+off tasks and build tasks. And so,  
+
+922
+01:12:28,640 --> 01:12:37,280
+the parallel that I would draw is when we invented 
+Python, obviously... It's like, in many ways the  
+
+923
+01:12:37,280 --> 01:12:43,040
+description and the outlining of tasks, obviously 
+it was a different paradigm, but I think certainly  
+
+924
+01:12:43,040 --> 01:12:49,040
+it was nowhere near what folks typically 
+think of as management bureaucracy today. 
+
+925
+01:12:50,000 --> 01:12:58,320
+And I think that with Devin, a lot of it is just 
+like, it's more like finding the right levels of  
+
+926
+01:12:58,320 --> 01:13:03,920
+abstraction that you could work with Devin on, and 
+just finding the workflows that work really well,  
+
+927
+01:13:03,920 --> 01:13:10,800
+and the obvious thing to say here is, it's like 
+you can always have Devin take a first pass at  
+
+928
+01:13:10,800 --> 01:13:16,720
+things. And so you have Devin take the first 
+pass, if it's great, you merge it right away,  
+
+929
+01:13:16,720 --> 01:13:22,160
+if it needs some touch up, you can obviously 
+give that feedback, for example, but a lot of  
+
+930
+01:13:22,160 --> 01:13:29,520
+it is like, it's more about, basically making 
+Devin part of your flow than it losing control,  
+
+931
+01:13:29,520 --> 01:13:34,080
+which I think is the main thing that 
+folks are scared of with management.
+
+932
+01:13:34,080 --> 01:13:37,840
+Are you thinking about a manager Devin? 
+Like a Devin that manages other Devins?
+
+933
+01:13:37,840 --> 01:13:43,440
+Yeah, yeah. So, for what it's worth, Devin 
+can start other Devins through the API,  
+
+934
+01:13:43,440 --> 01:13:48,560
+right? And so, we've seen this happen quite 
+a bit of times, where naturally if you have  
+
+935
+01:13:48,560 --> 01:13:53,120
+some big tasks that you want to do, Devin will 
+do this all the time, it'll chunk up and then  
+
+936
+01:13:53,120 --> 01:13:55,920
+[inaudible 01:13:53] into smaller Devins. And 
+so, it's the kind of thing that you need to give  
+
+937
+01:13:55,920 --> 01:14:00,240
+Devin the credentials to be able to do that, it's 
+not currently something that is default enabled,  
+
+938
+01:14:00,800 --> 01:14:03,600
+but I can certainly imagine as time goes 
+on that there's more and more of that
+
+939
+01:14:03,600 --> 01:14:04,960
+Devins all the way down.
+
+940
+01:14:04,960 --> 01:14:09,440
+Yeah, yeah. I think the thing that's kind 
+interesting too is, with humans, the way I almost  
+
+941
+01:14:09,440 --> 01:14:18,080
+say it, in technical terms, it's like there's 
+this coupling of a context and a thread, and what  
+
+942
+01:14:18,080 --> 01:14:25,280
+I mean by that is basically, each human can only 
+operate a single threaded on the work that they  
+
+943
+01:14:25,280 --> 01:14:28,480
+do, and they have their set of context, and then 
+there's other humans obviously who can do other  
+
+944
+01:14:28,480 --> 01:14:33,600
+stuff at the same time, but they have their own 
+context. With agents, one of the cool things is  
+
+945
+01:14:33,600 --> 01:14:38,320
+you can have an agent that's doing multiple lines 
+of exploration at once, but is sharing all of the  
+
+946
+01:14:38,320 --> 01:14:45,040
+context of everything that they find, and so I 
+think that this is very early, and I think we'll  
+
+947
+01:14:45,040 --> 01:14:50,800
+see this, but folks obviously love to talk about 
+basically systems of agents communicating with  
+
+948
+01:14:50,800 --> 01:14:55,600
+one another, and I think that there will be a lot 
+of new paradigms to build for, once we get there.
+
+949
+01:14:55,600 --> 01:15:01,200
+And it's so interesting what you said about the 
+decision between having one Devin and only one  
+
+950
+01:15:01,200 --> 01:15:05,680
+Devin do all the things, and you just tell them 
+things and they fire off jobs versus you have  
+
+951
+01:15:05,680 --> 01:15:09,920
+five Devins, and they're each doing individual 
+things, it's such an interesting decision to make.
+
+952
+01:15:09,920 --> 01:15:12,320
+Yeah, yeah, yeah, for sure.
+
+953
+01:15:12,320 --> 01:15:15,920
+Okay, two more questions. Maybe the 
+most counterintuitive thing you've  
+
+954
+01:15:15,920 --> 01:15:21,360
+learned so far building Devin, that maybe goes 
+against startup wisdom, common startup wisdom?
+
+955
+01:15:21,360 --> 01:15:26,800
+Something I've thought about a lot lately as 
+we've built this is, this is not my first company,  
+
+956
+01:15:26,800 --> 01:15:32,720
+actually for a lot of us, it's not our first 
+company, I think of our 26 or 27 people total  
+
+957
+01:15:32,720 --> 01:15:38,480
+on the team, I think 18 of us have started our own 
+company before this. And yeah, one of the things  
+
+958
+01:15:38,480 --> 01:15:45,840
+I think about is, there's actually your point 
+about cliches I think really spoke to me as well,  
+
+959
+01:15:45,840 --> 01:15:50,080
+which is, there's the really common things 
+which you hear all the time in startups,  
+
+960
+01:15:50,080 --> 01:15:54,400
+where you're like, you got to move fast, or you 
+got to hire great people, it's like, okay, well,  
+
+961
+01:15:54,400 --> 01:16:01,200
+obviously you do, I wasn't planning on not hiring 
+great people, I wasn't planning on going slow. And  
+
+962
+01:16:01,200 --> 01:16:05,760
+similarly it's like, yeah, you really got to build 
+something that people want. And there's these  
+
+963
+01:16:05,760 --> 01:16:11,440
+three to five things which are always repeated, 
+and they're always the common wisdom in startups. 
+
+964
+01:16:11,440 --> 01:16:15,520
+And I definitely had this idea as a 
+founder, when I was starting initially,  
+
+965
+01:16:15,520 --> 01:16:20,080
+that, all right, so those are the three to five 
+basic things, but as you get really deep into it,  
+
+966
+01:16:20,080 --> 01:16:24,480
+you spend a lot of years into it, you learn 
+all of the thousands of other things that  
+
+967
+01:16:24,480 --> 01:16:31,200
+you have to learn to build a company. And I 
+think to some extent that's, of course, true,  
+
+968
+01:16:31,200 --> 01:16:36,320
+and there's lots of little details that you'll get 
+into with all these different things, including  
+
+969
+01:16:36,320 --> 01:16:41,840
+team building, and product, and strategy, and 
+engineering decision-making, and fundraising,  
+
+970
+01:16:42,720 --> 01:16:48,880
+and sales, and every other component. But I also 
+realized that as time has gone on, more and more,  
+
+971
+01:16:48,880 --> 01:16:54,480
+I felt like building companies well sometimes just 
+comes down to doing those three to five things  
+
+972
+01:16:54,480 --> 01:17:01,680
+just even more than you could possibly expect.
+And so, with us, it's like... And everyone says we  
+
+973
+01:17:01,680 --> 01:17:05,440
+go fast, but it's like, yeah, we had a hackathon 
+in November, we had another hackathon in December,  
+
+974
+01:17:05,440 --> 01:17:10,880
+we started the company officially in January, 
+we got the prototypes out to initial users in  
+
+975
+01:17:10,880 --> 01:17:14,960
+February, we did a launch in March, we got our 
+first customers in April... It's just like,  
+
+976
+01:17:14,960 --> 01:17:20,320
+basically truly pushing the pace in every 
+spot where we possibly could has really made a  
+
+977
+01:17:20,320 --> 01:17:24,480
+difference for us. And similarly, it's like, yeah, 
+everyone always says you should hire great people,  
+
+978
+01:17:24,480 --> 01:17:34,240
+but I think that the truth within that truth is 
+basically you should fight to all ends basically,  
+
+979
+01:17:35,040 --> 01:17:41,440
+to get the folks that you really want to bring 
+in. And one of my favorite stories to share is  
+
+980
+01:17:42,240 --> 01:17:46,720
+we had a candidate who came and interviewed, he 
+was a junior at MIT, so he was very, very young,  
+
+981
+01:17:46,720 --> 01:17:51,920
+and we gave him an interview, and he did way 
+better than almost any of the full-time candidates  
+
+982
+01:17:51,920 --> 01:17:55,360
+that we had ever talked to. And so, we said, hey, 
+what do you think about taking some time off of  
+
+983
+01:17:55,360 --> 01:17:59,040
+school and working with us and building out Devin?
+We really think you're just going to be able to  
+
+984
+01:17:59,040 --> 01:18:02,640
+come in and just have a ton of impact already 
+from day one. And he thought about it for a  
+
+985
+01:18:02,640 --> 01:18:08,240
+while, and he came back and he said, you know 
+what? I'm down, I want to do it, but my parents  
+
+986
+01:18:08,240 --> 01:18:13,280
+really want me to graduate from school, and I'm 
+just not sure there's a way to make it work. And  
+
+987
+01:18:13,280 --> 01:18:23,600
+so, we talked him more and just understood the 
+situation, and then we flew to North Carolina,  
+
+988
+01:18:23,600 --> 01:18:27,280
+went straight from the airport to his parents' 
+house, had dinner with him and his parents,  
+
+989
+01:18:27,280 --> 01:18:34,320
+we talked a lot, a really nice Gujarati family, we 
+gave them some gifts and just talked to them about  
+
+990
+01:18:34,320 --> 01:18:39,600
+it, and try to understand what would it take, and 
+what would we need to make work. And they just  
+
+991
+01:18:39,600 --> 01:18:43,760
+said, it sounds like a great opportunity, but 
+we really want our son to be able to graduate. 
+
+992
+01:18:45,120 --> 01:18:50,800
+And we talked that through and we figured out 
+a setup basically, where he could work for us  
+
+993
+01:18:50,800 --> 01:18:56,240
+essentially full time, but then come in for his 
+required classes, and do what he needed to do to  
+
+994
+01:18:56,240 --> 01:19:01,360
+get the diploma basically, but no more than that. 
+And we talked that through, and then we got to a  
+
+995
+01:19:01,360 --> 01:19:07,040
+point where everyone was happy with that, and then 
+went straight back to the airport and flew right  
+
+996
+01:19:07,040 --> 01:19:11,840
+back, basically. And that was the first and only 
+time that I've ever been in North Carolina, and it  
+
+997
+01:19:11,840 --> 01:19:16,800
+was just a great trip. And it is the kind of thing 
+where it's like, hiring great people is one thing,  
+
+998
+01:19:16,800 --> 01:19:23,760
+but truly just never giving up, and really giving 
+it everything that you can to make it work for  
+
+999
+01:19:23,760 --> 01:19:28,080
+people who really makes sense to be on the team. 
+And he's been with us on the team for over a year  
+
+1000
+01:19:28,080 --> 01:19:31,600
+now, and he's been an incredible, incredible 
+engineer, and we wouldn't be here without him. 
+
+1001
+01:19:31,600 --> 01:19:35,280
+And similarly, we had someone else who was 
+again, really, really talented candidate,  
+
+1002
+01:19:35,280 --> 01:19:40,080
+did amazingly well, very young, and had a lot 
+of great offers at a lot of other companies,  
+
+1003
+01:19:40,080 --> 01:19:44,800
+and we were talking to them about, he wanted 
+to start his own company someday as well,  
+
+1004
+01:19:44,800 --> 01:19:50,240
+and we were talking to him about certainly a lot 
+of the obvious things, which are having him meet  
+
+1005
+01:19:50,240 --> 01:19:55,520
+our investors, or get to do work with customers, 
+or see a lot of these other components so that  
+
+1006
+01:19:55,520 --> 01:19:59,840
+when the time came that he would have all the 
+experience he needed to start his own company.  
+
+1007
+01:19:59,840 --> 01:20:06,240
+But one of the other things that was big is he 
+was talking with a lot of great companies already,  
+
+1008
+01:20:06,240 --> 01:20:09,680
+he didn't want to burn any bridges, 
+and so we actually worked with him and  
+
+1009
+01:20:09,680 --> 01:20:14,080
+basically hand wrote all of his rejection 
+responses to each of the other companies,  
+
+1010
+01:20:14,080 --> 01:20:19,360
+and worked with him on it to say, here's how 
+you should say it in a way that's going to  
+
+1011
+01:20:19,360 --> 01:20:25,040
+come off as that you really did appreciate the 
+time with them, and that obviously you want to  
+
+1012
+01:20:25,040 --> 01:20:29,680
+remain close with them and stay in touch. And it 
+was the kind of thing obviously where it's like,  
+
+1013
+01:20:29,680 --> 01:20:35,200
+look, obviously our job is to make sure that he's 
+happy enough that he doesn't want to leave at any  
+
+1014
+01:20:35,200 --> 01:20:39,280
+time in the near future, but I think it's 
+the kind of thing where the way that you  
+
+1015
+01:20:39,280 --> 01:20:45,760
+put together a really, really great team is 
+by fighting for what's right for them too.
+
+1016
+01:20:45,760 --> 01:20:50,880
+Wow, those are incredible stories. And it 
+makes so real these, as you say, cliches,  
+
+1017
+01:20:50,880 --> 01:20:56,080
+hire the best people, this is what it sounds like 
+to hire the best people. This is what it takes.
+
+1018
+01:20:56,080 --> 01:21:01,520
+Yeah, no, and I was just saying, a 
+lot of things we've fought very hard  
+
+1019
+01:21:01,520 --> 01:21:06,800
+to just reimagine things from the ground up 
+because a lot of it really is just thinking  
+
+1020
+01:21:06,800 --> 01:21:12,000
+about where do we think the technology 
+is going over the next five, 10 years,  
+
+1021
+01:21:12,000 --> 01:21:15,440
+and what is the place that we 
+want to have in that future?
+
+1022
+01:21:15,440 --> 01:21:18,480
+I wonder if people are going to be 
+fighting for the best Devin someday.  
+
+1023
+01:21:18,480 --> 01:21:22,597
+They're just going to [inaudible 01:21:19] Devins.
+
+1024
+01:21:22,597 --> 01:21:22,602
+Yeah.
+
+1025
+01:21:22,602 --> 01:21:22,640
+They're [inaudible 01:21:22] so smart.
+
+1026
+01:21:22,640 --> 01:21:26,720
+I'll give you overtime pay, 
+benefits, free healthcare,  
+
+1027
+01:21:26,720 --> 01:21:28,600
+and everything, and then the Devin's like...
+
+1028
+01:21:28,600 --> 01:21:31,440
+Three Devins like Magic: The Gathering cards.
+
+1029
+01:21:31,440 --> 01:21:31,760
+Yeah.
+
+1030
+01:21:31,760 --> 01:21:35,760
+And then just going back to your three to five 
+things. So, essentially this is incredible advice,  
+
+1031
+01:21:35,760 --> 01:21:41,040
+essentially, it's like you always hear hire the 
+best people, move fast, build things people want.
+
+1032
+01:21:41,040 --> 01:21:46,960
+Yeah, build something people want, stay as 
+close as possible to your customers, and then  
+
+1033
+01:21:46,960 --> 01:21:51,280
+I think the other thing is just always think about 
+where things are going, not where they are today.  
+
+1034
+01:21:51,280 --> 01:21:58,240
+I feel like those are the five things, which is... 
+Especially in AI, with things moving so fast,  
+
+1035
+01:21:58,240 --> 01:22:02,480
+and there's so much great talent, I feel like a 
+lot of these are even more true, where it's like  
+
+1036
+01:22:03,440 --> 01:22:06,320
+it's not just thinking about where things are 
+going to be in 10 years, it's like thinking  
+
+1037
+01:22:06,320 --> 01:22:11,040
+about what's going to happen next week. And 
+obviously, things are moving very quickly,  
+
+1038
+01:22:11,040 --> 01:22:17,440
+and it is very hard to predict, but you really 
+have to be very rigorous with yourself, I'd say,  
+
+1039
+01:22:17,440 --> 01:22:25,040
+about thinking through those things and evaluating 
+all of the decisions that you make in that lens.
+
+1040
+01:22:25,040 --> 01:22:28,960
+And staying focused is the big takeaway 
+to me here, is it ends up feeling like  
+
+1041
+01:22:28,960 --> 01:22:31,680
+there's 1000 things you should do, 
+but it's always these five things.
+
+1042
+01:22:31,680 --> 01:22:33,200
+Yeah.
+
+1043
+01:22:33,200 --> 01:22:38,480
+Scott, we covered a lot of ground. We went through 
+every question I had, which is great, is there  
+
+1044
+01:22:38,480 --> 01:22:42,240
+anything else that you want to share? Anything 
+else you want to leave your listeners with, maybe  
+
+1045
+01:22:42,240 --> 01:22:49,120
+a final nugget or something really you want to 
+double down on that we said before we let you go?
+
+1046
+01:22:49,120 --> 01:22:53,920
+The biggest thing that comes to mind for me is 
+there's a lot of different perceptions about AI,  
+
+1047
+01:22:53,920 --> 01:23:00,800
+right? I think basically every emotion under the 
+sun right now. There's a lot of fear, for example,  
+
+1048
+01:23:00,800 --> 01:23:04,560
+there's also a lot of skepticism, and 
+we're very skeptical types as well,  
+
+1049
+01:23:04,560 --> 01:23:10,720
+and we always wanted to try it ourselves to really 
+see it and believe it. And I think the main thing  
+
+1050
+01:23:10,720 --> 01:23:16,720
+that comes to mind for me, is I'm honestly really 
+optimistic about what we're building here with AI,  
+
+1051
+01:23:17,360 --> 01:23:23,200
+not just with code and with Devin, but the whole 
+space, and everything that's getting done. And I  
+
+1052
+01:23:23,200 --> 01:23:28,560
+think one of the cool things that is really 
+actively happening is just the ability for  
+
+1053
+01:23:28,560 --> 01:23:32,800
+everyone to multiply themselves, and that's how 
+we've always thought about it, it's how we've  
+
+1054
+01:23:32,800 --> 01:23:39,840
+thought about what we're building. And I think 
+there is a lot more to do out there in the world,  
+
+1055
+01:23:39,840 --> 01:23:44,080
+I'm not too worried about us running 
+out of things to do, and from that lens,  
+
+1056
+01:23:45,440 --> 01:23:52,560
+I think that the thing that we've always been 
+most excited about is, how can we all do more?
+
+1057
+01:23:52,560 --> 01:23:55,680
+I hear you Scott. Well, with that optimism,  
+
+1058
+01:23:55,680 --> 01:23:58,960
+we've reached our very exciting 
+lightning round. Are you ready?
+
+1059
+01:23:58,960 --> 01:23:59,920
+Yeah, let's do it.
+
+1060
+01:23:59,920 --> 01:24:02,080
+Okay, here we go. First question,  
+
+1061
+01:24:02,080 --> 01:24:07,280
+what are two or three books that you find 
+yourself recommending most to other people?
+
+1062
+01:24:07,280 --> 01:24:13,200
+In terms of nonfiction, I think for folks in 
+startups, I think one of the things that I've  
+
+1063
+01:24:13,200 --> 01:24:17,840
+really enjoyed is just learning and understanding 
+the history of Silicon Valley. And it's all  
+
+1064
+01:24:17,840 --> 01:24:22,000
+of these things that we think about, somebody 
+invented them. It's one of the great realizations  
+
+1065
+01:24:22,000 --> 01:24:27,200
+I feel like, is somebody invented the idea of 
+a seed route, somebody invented the idea of  
+
+1066
+01:24:27,200 --> 01:24:31,840
+venture capital, somebody invented the idea of 
+product-market fit, and all of these different  
+
+1067
+01:24:31,840 --> 01:24:37,120
+principles that we talk about. And so, for that, 
+there's a book called The Power Law by Sebastian  
+
+1068
+01:24:37,120 --> 01:24:44,080
+Mallaby, which I really like. And basically, 
+it's just a tour of many of the great businesses  
+
+1069
+01:24:44,080 --> 01:24:48,480
+and the great products that have been built 
+over the last 60, 70 years in Silicon Valley,  
+
+1070
+01:24:48,480 --> 01:24:52,480
+which I really love. I think in terms of 
+fiction, I actually have always really liked  
+
+1071
+01:24:52,480 --> 01:24:57,600
+The Great Gatsby by F. Scott Fitzgerald, it's 
+one of my personal favorites as a fiction book.
+
+1072
+01:24:57,600 --> 01:25:01,360
+Do you have a favorite recent movie 
+or TV show that you've really enjoyed?
+
+1073
+01:25:01,360 --> 01:25:05,120
+I have to admit, I have not 
+watched... I can't think of  
+
+1074
+01:25:05,120 --> 01:25:08,400
+a single movie or TV show that I 
+have watched in the last while,  
+
+1075
+01:25:08,400 --> 01:25:17,200
+so I'm sure, I'm looking forward to 
+watching a lot of great ones post-AGI.
+
+1076
+01:25:17,200 --> 01:25:19,040
+That's got to be in the trailer, that's great,  
+
+1077
+01:25:19,040 --> 01:25:22,800
+I like that. And that just shows how hard 
+you're working, just how much shit is going on,  
+
+1078
+01:25:22,800 --> 01:25:27,200
+and how fast everything's moving. Do you have 
+a favorite product you've recently discovered  
+
+1079
+01:25:27,200 --> 01:25:32,320
+that you really love? Could be an app, could 
+be something physical, could be a toothbrush.
+
+1080
+01:25:32,320 --> 01:25:35,680
+One I would say is I got an Aura frame recently,  
+
+1081
+01:25:35,680 --> 01:25:40,640
+it's just like a frame that shows photos, and you 
+can show a new photo every day, or every hour,  
+
+1082
+01:25:40,640 --> 01:25:45,680
+or every 15 minutes, or whatever you like. 
+I've actually, I've really enjoyed it a lot,  
+
+1083
+01:25:45,680 --> 01:25:52,160
+I think it's a nice way to basically just have 
+a picture frame memories that come up. And then,  
+
+1084
+01:25:52,160 --> 01:25:58,080
+the other thing I would say as a general purpose 
+thing, it's not particularly new, but I would say,  
+
+1085
+01:25:58,080 --> 01:26:03,120
+I think AirPods are extremely well-built and 
+well-designed. And I realize now that it's like,  
+
+1086
+01:26:03,120 --> 01:26:09,120
+I basically use them for all... I'm taking calls 
+on a walk and I'm using AirPods, obviously I'm  
+
+1087
+01:26:09,680 --> 01:26:14,960
+doing work at my computer, at my desk, I'm 
+plugged into AirPods, and it works quite well,  
+
+1088
+01:26:14,960 --> 01:26:21,440
+honestly, for a lot of different situations, and 
+they're very comfortable, they're very consistent.
+
+1089
+01:26:21,440 --> 01:26:26,480
+I'm going to double down on the Aura frame, 
+I also, I got one of these for my mom and my  
+
+1090
+01:26:26,480 --> 01:26:31,200
+mother-in-law, and they're so great for just 
+sharing photos of your kids with your family.  
+
+1091
+01:26:31,200 --> 01:26:36,560
+And people have, they've heard of digital picture 
+frames, but the Aura just does it really well,  
+
+1092
+01:26:36,560 --> 01:26:39,360
+and it's really easy to add photos, 
+and they're just really nice looking.
+
+1093
+01:26:39,360 --> 01:26:43,440
+You can imagine not that long from now, 
+we'll have the Aura Frame except Studio  
+
+1094
+01:26:43,440 --> 01:26:46,960
+Ghiblifies every photo that you 
+have in it, and then it's... Yeah.
+
+1095
+01:26:46,960 --> 01:26:52,480
+Or just imagines things you've done that are 
+really cool. Look at my sweet life. Yeah. Cool.  
+
+1096
+01:26:52,480 --> 01:26:55,920
+And it's Aura, it's A-U-R-A, I believe is how 
+you spell it. Folks who want to check it out,  
+
+1097
+01:26:55,920 --> 01:27:01,440
+we'll link to it. Not affiliated. Okay, two 
+more questions. Do you have a favorite life  
+
+1098
+01:27:01,440 --> 01:27:05,920
+motto that you often come back to 
+and find useful in work or in life?
+
+1099
+01:27:05,920 --> 01:27:14,080
+Yeah, something I've thought about a lot is 
+a lot of the proverbs out there are actually  
+
+1100
+01:27:14,080 --> 01:27:18,000
+contradictions, right? It's like birds of a 
+feather, and then you also have opposites attract,  
+
+1101
+01:27:18,000 --> 01:27:23,200
+and you have all... And it's kind of funny, 
+because you feel that both of them are true,  
+
+1102
+01:27:23,200 --> 01:27:27,840
+and often they both are true, and a lot of it is 
+about understanding why. And one of those that  
+
+1103
+01:27:27,840 --> 01:27:37,040
+I feel like, especially in the world of startups 
+that I think about all the time is, I think it is  
+
+1104
+01:27:37,040 --> 01:27:42,960
+very important to be focused and driven, and to 
+really maximize your potential, and then at the  
+
+1105
+01:27:42,960 --> 01:27:50,080
+same time, it's also very important to not let 
+your own personal emotion get tied up in your  
+
+1106
+01:27:50,080 --> 01:27:54,800
+success or failure, and I think especially with 
+startups, because there's always ups and downs,  
+
+1107
+01:27:54,800 --> 01:28:00,800
+honestly, even in the most successful companies 
+ever, it's just like, it's a rocky road, there's  
+
+1108
+01:28:00,800 --> 01:28:06,720
+a lot that happens, and a lot that goes down.
+And I think one of the things which I've thought  
+
+1109
+01:28:06,720 --> 01:28:14,640
+a lot about is that somehow you really want to 
+do your best, and put everything you can into it,  
+
+1110
+01:28:14,640 --> 01:28:21,200
+and do everything you can to... Basically, you 
+want to put it all out on the field. But at the  
+
+1111
+01:28:21,200 --> 01:28:32,640
+same time, you want to be okay with both wins 
+and losses, and you want to be able to move on,  
+
+1112
+01:28:32,640 --> 01:28:37,840
+and go into the next one each time. 
+And something, yeah, it's funny,  
+
+1113
+01:28:37,840 --> 01:28:45,200
+but what I've found personally is that obviously 
+it's really important for your own emotional  
+
+1114
+01:28:45,200 --> 01:28:50,080
+state and mental state to be able to do that, and 
+we've had lots of mistakes, and I've had a lot. 
+
+1115
+01:28:50,720 --> 01:28:55,360
+I had my first company, which obviously, which was 
+cool, but there are a lot of tricky spots there,  
+
+1116
+01:28:55,360 --> 01:28:59,520
+and then over the course of Cognition, it 
+feels like it's been already eight years  
+
+1117
+01:28:59,520 --> 01:29:06,640
+compressed into one year, and it's still going 
+at that pace. But somehow it also actually makes  
+
+1118
+01:29:06,640 --> 01:29:13,600
+you more successful, I think, too. It's like, 
+you are just more able to give it your best,  
+
+1119
+01:29:14,480 --> 01:29:18,800
+and to do the things that will lead to success if 
+you're not tying it up in your own personal worth.
+
+1120
+01:29:19,440 --> 01:29:24,560
+That is so interesting, I just had a podcast 
+recording recently where with an executive coach,  
+
+1121
+01:29:24,560 --> 01:29:28,000
+Jerry Kelowna, that I think will come 
+out before this, might be after this,  
+
+1122
+01:29:28,000 --> 01:29:32,000
+that's one of his big pieces of 
+advice, and it's a very Buddhist  
+
+1123
+01:29:32,000 --> 01:29:35,760
+approach of just [inaudible 01:29:33] 
+and attaching to a certain outcome.
+
+1124
+01:29:35,760 --> 01:29:36,320
+Yeah.
+
+1125
+01:29:36,320 --> 01:29:39,680
+Okay. Final question, I'm curious if there's 
+a story here, but we could keep it short,  
+
+1126
+01:29:39,680 --> 01:29:42,400
+is there a story behind Devin as the name,  
+
+1127
+01:29:43,120 --> 01:29:47,600
+or is there another contender for 
+Devin being the [inaudible 01:29:48]?
+
+1128
+01:29:47,600 --> 01:29:53,760
+Devin was the name from pretty early on, we were 
+interested, we were working on coding agents from  
+
+1129
+01:29:53,760 --> 01:29:57,360
+the beginning, and my co-founders are Steven 
+and Walden, for example, and we had this idea,  
+
+1130
+01:29:57,360 --> 01:30:05,920
+all right, let's get started, and let's try 
+to expand the box as much as we can. So,  
+
+1131
+01:30:05,920 --> 01:30:09,280
+have everyone think out of the box and do their 
+own thing, and let's have everyone do their own  
+
+1132
+01:30:09,280 --> 01:30:14,160
+thing first for a bit, and then we'll consolidate 
+and take everything that we've learned. And so,  
+
+1133
+01:30:14,160 --> 01:30:18,080
+Walden made a virtual developer version 
+of him, which was called DevWalden,  
+
+1134
+01:30:18,080 --> 01:30:22,240
+and then Steven made one of him, which is called 
+DevSteven, and we had all these... And then we  
+
+1135
+01:30:22,240 --> 01:30:25,680
+were kind of combining it all into one thing, 
+and we're like, okay, you know? It's Devin.  
+
+1136
+01:30:25,680 --> 01:30:31,040
+And that was the thing. And so Devin was, yeah, 
+Devin stuck for us quite early on, I would say. 
+
+1137
+01:30:31,040 --> 01:30:36,080
+One thing which we did have a big decision on 
+though actually is what the image of Devin would  
+
+1138
+01:30:36,080 --> 01:30:41,120
+be. And so, as folks know, there's the hexagons 
+and then people have seen this more recently,  
+
+1139
+01:30:41,120 --> 01:30:46,320
+but there's actually also an otter, a 
+little otter with a laptop in its lap,  
+
+1140
+01:30:46,320 --> 01:30:53,280
+and that is Devin as well. And we had this debate 
+over what to go with, and what not to go with and  
+
+1141
+01:30:53,280 --> 01:31:01,840
+stuff, and it's been a while now, but somehow 
+we still have both the hexagons and the otter.
+
+1142
+01:31:01,840 --> 01:31:04,880
+You skipped over where the Devin, did 
+you have just have, it just came to you?
+
+1143
+01:31:04,880 --> 01:31:09,979
+Oh, so Devin is, it's a dev. Yeah.
+
+1144
+01:31:09,979 --> 01:31:10,000
+[inaudible 01:31:10].
+
+1145
+01:31:10,000 --> 01:31:13,520
+And so, it was kind of like, when 
+we were consolidating all the names,  
+
+1146
+01:31:13,520 --> 01:31:18,000
+it just seemed clear then that this would be the 
+universal dev that we all liked to work with.
+
+1147
+01:31:18,000 --> 01:31:18,280
+Wow.
+
+1148
+01:31:18,280 --> 01:31:18,560
+Yeah.
+
+1149
+01:31:18,560 --> 01:31:21,360
+Incredible. Scott, this was so much 
+fun. Oh my God, I learned a ton,  
+
+1150
+01:31:21,360 --> 01:31:24,720
+which is always a really good sign. Two 
+final questions, where can folks find  
+
+1151
+01:31:24,720 --> 01:31:29,600
+you/Devin/anything else you want to point them 
+to, and how can listeners be useful to you?
+
+1152
+01:31:29,600 --> 01:31:37,280
+Awesome. Yeah, no, we're at App.devin.ai, and 
+you can find us as well on Twitter or a lot of  
+
+1153
+01:31:37,280 --> 01:31:43,040
+other social media. We'd obviously love to hear 
+any feedback you have about the Devin product,  
+
+1154
+01:31:43,040 --> 01:31:47,440
+there's so much to figure out, 
+and I think the, like I said,  
+
+1155
+01:31:47,440 --> 01:31:51,440
+I think we're all still 20 steps away from 
+really the future of software engineering,  
+
+1156
+01:31:51,440 --> 01:31:56,960
+and so it really means a lot to hear what folks 
+think about the product as they're trying it out.  
+
+1157
+01:31:56,960 --> 01:32:00,400
+And so, please let us know anytime if there's 
+things that we can do to make it better.
+
+1158
+01:32:00,400 --> 01:32:02,160
+Scott, thank you so much for being here.
+
+1159
+01:32:02,160 --> 01:32:03,920
+Thank you so much for having 
+me. I had a great time.
+
+1160
+01:32:03,920 --> 01:32:08,400
+Me too. Bye everyone.
+Thank you so much for listening,  
+
+1161
+01:32:08,400 --> 01:32:12,720
+if you found this valuable, you can subscribe 
+to the show on Apple Podcasts, Spotify,  
+
+1162
+01:32:12,720 --> 01:32:18,000
+or your favorite podcast app. Also, please 
+consider giving us a rating or leaving a review,  
+
+1163
+01:32:18,000 --> 01:32:21,920
+as that really helps other listeners 
+find the podcast. You can find all  
+
+1164
+01:32:21,920 --> 01:32:29,440
+past episodes or learn more about the show at 
+LennysPodcast.com. See you in the next episode.
+

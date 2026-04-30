@@ -1,0 +1,979 @@
+1
+00:00:00,080 --> 00:00:03,439
+Last month, we made over $440K.
+
+2
+00:00:03,439 --> 00:00:09,519
+>> Meet Julian, a developer from Argentina who built an app that makes over $400,000 a month.
+
+3
+00:00:09,519 --> 00:00:11,280
+But it didn't start that way.
+
+4
+00:00:11,280 --> 00:00:17,279
+Before the success, Julian was a dude at the gym who discovered a different app that he thought was pretty cool.
+
+5
+00:00:17,279 --> 00:00:22,080
+However, instead of just using it himself, he thought, "What if I built something better?"
+
+6
+00:00:22,080 --> 00:00:23,840
+And that's exactly what he did.
+
+7
+00:00:23,840 --> 00:00:28,400
+He built an MVP, posted about it on Reddit, and the rest is history.
+
+8
+00:00:28,400 --> 00:00:31,920
+I posted this thread on how I build.
+
+9
+00:00:31,920 --> 00:00:33,840
+We got our first couple of thousand users.
+
+10
+00:00:33,840 --> 00:00:35,680
+I can't really remember, but it was a lot.
+
+11
+00:00:35,680 --> 00:00:39,200
+That was the biggest high probably I've ever had.
+
+12
+00:00:39,200 --> 00:00:46,000
+I brought Julian onto the channel to break down this story and how he actually built an app used by hundreds of thousands of people.
+
+13
+00:00:46,000 --> 00:00:50,480
+In this episode, we'll dive into the original app he cloned in just two months.
+
+14
+00:00:50,480 --> 00:00:59,760
+The simple Reddit strategy that got him his first users and product market fit and the marketing playbook that scaled his app to over $400,000 a month.
+
+15
+00:00:59,760 --> 00:01:00,640
+Let's dive in.
+
+16
+00:01:00,640 --> 00:01:05,559
+I'm Pat Walls and this is Starter Story.
+
+17
+00:01:06,560 --> 00:01:08,560
+All right, Julian, welcome to the channel.
+
+18
+00:01:08,560 --> 00:01:11,040
+Tell me about who you are, what you built, and what's your story.
+
+19
+00:01:11,040 --> 00:01:12,400
+>> Hey Pat, I'm Julian.
+
+20
+00:01:12,400 --> 00:01:20,720
+I'm one of the co-founders and developer of Gravel, an AI fitness app that provide smart workouts for the gym.
+
+21
+00:01:20,720 --> 00:01:26,720
+We launched around 2 years ago and now we have over 70,000 subscribers.
+
+22
+00:01:26,720 --> 00:01:30,400
+Last month we made over 440K.
+
+23
+00:01:30,400 --> 00:01:33,680
+>> Okay, over 400K with an app is insane.
+
+24
+00:01:33,680 --> 00:01:38,079
+We're going to get all into that, but before we do, I want to understand a little bit more about your background.
+
+25
+00:01:38,079 --> 00:01:39,920
+How do you even get into building an app?
+
+26
+00:01:39,920 --> 00:01:41,280
+>> I grew up in Argentina.
+
+27
+00:01:41,280 --> 00:01:43,759
+My dad used to own a fitness center.
+
+28
+00:01:43,759 --> 00:01:48,960
+I pretty much spent all my time outside of school just playing sports and at the gym.
+
+29
+00:01:48,960 --> 00:01:53,840
+I then got into software engineering and uh moved to Australia.
+
+30
+00:01:53,840 --> 00:02:01,360
+And yeah, here I worked from small startups to big tech companies like Atlassian, a few TV channels,
+
+31
+00:02:01,360 --> 00:02:03,119
+even an investment fund.
+
+32
+00:02:03,119 --> 00:02:10,479
+And around co my best friend and also our partner came up with the idea of starting a company.
+
+33
+00:02:10,479 --> 00:02:15,280
+It was like a at start a influencer marketing platform for mobile games.
+
+34
+00:02:15,280 --> 00:02:16,160
+That's how we started.
+
+35
+00:02:16,160 --> 00:02:23,360
+Fast forward a couple years, we ended up being some sort of a marketing agency which was something that I didn't sign up for.
+
+36
+00:02:23,360 --> 00:02:24,400
+Neither did the guys.
+
+37
+00:02:24,400 --> 00:02:28,879
+But the good thing is that we learned a lot about uh user acquisition and marketing,
+
+38
+00:02:28,879 --> 00:02:30,800
+but also what the numbers were.
+
+39
+00:02:30,800 --> 00:02:37,680
+So, in terms of revenue and after seeing some of those numbers, we obviously thought apps make a lot of money and especially fitness apps.
+
+40
+00:02:37,680 --> 00:02:43,760
+So, we kind of used our background to decide that we wanted to start our own app.
+
+41
+00:02:43,760 --> 00:02:44,879
+>> You had this business.
+
+42
+00:02:44,879 --> 00:02:46,239
+You started with partners.
+
+43
+00:02:46,239 --> 00:02:48,000
+It wasn't really what you wanted to build.
+
+44
+00:02:48,000 --> 00:02:49,760
+Maybe it wasn't fully scalable.
+
+45
+00:02:49,760 --> 00:02:53,840
+How does that turn into building an app that now makes over $400,000 a month?
+
+46
+00:02:53,840 --> 00:02:55,280
+>> The business wasn't doing great.
+
+47
+00:02:55,280 --> 00:03:03,599
+And because we transitioned into this kind of agency format, I had all this like energy for developing something that wasn't being used.
+
+48
+00:03:03,599 --> 00:03:07,120
+So, I started with a more like a workout tracker kind of app.
+
+49
+00:03:07,120 --> 00:03:09,840
+So apps like heavy, strong, that kind of thing.
+
+50
+00:03:09,840 --> 00:03:14,800
+But as I was building it, I noticed that okay, I'm not adding any value.
+
+51
+00:03:14,800 --> 00:03:17,519
+It just felt like copy of what they were doing.
+
+52
+00:03:17,519 --> 00:03:19,760
+And then it was one of my mates.
+
+53
+00:03:19,760 --> 00:03:21,040
+He showed me Fitbot.
+
+54
+00:03:21,040 --> 00:03:24,000
+And Fitbot is one of the biggest workout app.
+
+55
+00:03:24,000 --> 00:03:27,519
+And when he showed me the app, I was like, "Oh, like this is amazing."
+
+56
+00:03:27,519 --> 00:03:33,280
+Cuz it kind of provided you with workouts on the spot and you didn't really have to do anything else.
+
+57
+00:03:33,280 --> 00:03:35,599
+But then I started using it, doing some research.
+
+58
+00:03:35,599 --> 00:03:42,400
+I noticed that the workouts were weird and even a bit dangerous sometimes.
+
+59
+00:03:42,400 --> 00:03:47,920
+And like the more I used it, I was like, "Wow, okay, these workouts are actually bad."
+
+60
+00:03:47,920 --> 00:03:48,959
+That's what triggered me.
+
+61
+00:03:48,959 --> 00:03:51,360
+And then I was like, "Okay, this is it.
+
+62
+00:03:51,360 --> 00:03:58,560
+We need to build FitBot UI UX with an actual proper workout engine."
+
+63
+00:03:58,560 --> 00:04:01,680
+That's kind of when we went all in on building it.
+
+64
+00:04:01,680 --> 00:04:04,959
+>> Can you tell me a little bit more about how you built it and how long it took?
+
+65
+00:04:04,959 --> 00:04:09,760
+Initial MVP took around two to three months maybe.
+
+66
+00:04:09,760 --> 00:04:12,959
+We can split the MVP into two parts.
+
+67
+00:04:12,959 --> 00:04:16,400
+First part being pre FitBot and then after Fitbot.
+
+68
+00:04:16,400 --> 00:04:19,280
+The first part of the MVP was more of the tracker.
+
+69
+00:04:19,280 --> 00:04:23,759
+Then we transition into the Fitbot stuff and that's when things got trickier.
+
+70
+00:04:23,759 --> 00:04:28,160
+There's a lot of business logic around building custom workouts for people.
+
+71
+00:04:28,160 --> 00:04:31,199
+There's just a lot of different settings and combinations.
+
+72
+00:04:31,199 --> 00:04:35,919
+Things like equipment, things like your weekly goal, how often do you go to the gym,
+
+73
+00:04:35,919 --> 00:04:39,759
+are you consistent, uh your gender, your weight, your age.
+
+74
+00:04:39,759 --> 00:04:41,919
+There's just so many things to consider.
+
+75
+00:04:41,919 --> 00:04:45,520
+That was the definitely the the most challenging part.
+
+76
+00:04:45,520 --> 00:04:48,479
+>> Tell me about how you launched this, how you got your first customer.
+
+77
+00:04:48,479 --> 00:04:51,520
+What did you do to get this app off the ground and get into people's hands?
+
+78
+00:04:51,520 --> 00:04:55,840
+>> I'm a massive supporter of of Reddit as a distribution channel.
+
+79
+00:04:55,840 --> 00:04:59,360
+I posted this thread on how I built Gravel.
+
+80
+00:04:59,360 --> 00:05:04,080
+Back in the day, it was called Games AI and I shared kind of the technical specs around it.
+
+81
+00:05:04,080 --> 00:05:11,039
+It got over a couple hundred likes within the first couple hours and over 300,000 impressions.
+
+82
+00:05:11,039 --> 00:05:13,360
+Yeah, we got our first couple thousand us.
+
+83
+00:05:13,360 --> 00:05:15,120
+I can't really remember, but it was a lot.
+
+84
+00:05:15,120 --> 00:05:22,000
+We found out that because they're developers and they like tech and some of them might like going to the gym,
+
+85
+00:05:22,000 --> 00:05:23,919
+but they feel like it's a bit intimidating.
+
+86
+00:05:23,919 --> 00:05:26,800
+I feel like a lot of them were actually using the app.
+
+87
+00:05:26,800 --> 00:05:31,759
+And then we started getting feedback about like bugs and feature requests and were like,
+
+88
+00:05:31,759 --> 00:05:33,680
+"Okay, we were on to something."
+
+89
+00:05:33,680 --> 00:05:38,800
+And that was the final push that we needed cuz at this point the app was was free.
+
+90
+00:05:38,800 --> 00:05:45,280
+And we're like, "Okay, now we need to build like a serious business out of this and and try to start running some ads for it."
+
+91
+00:05:45,280 --> 00:05:49,680
+>> Okay, let's talk about something that is changing the game for builders right now.
+
+92
+00:05:49,680 --> 00:05:50,240
+AI.
+
+93
+00:05:50,240 --> 00:05:56,639
+Now, I know we talk about AI apps a lot on this channel, but I still get this question every day from builders.
+
+94
+00:05:56,639 --> 00:05:58,720
+Where do I even start?
+
+95
+00:05:58,720 --> 00:06:02,560
+That's where HubSpot for Startup's AI adoption playbook comes in handy.
+
+96
+00:06:02,560 --> 00:06:07,039
+It's a free guide with a three-step framework on how to use AI inside your business.
+
+97
+00:06:07,039 --> 00:06:13,600
+Inside, you'll learn how to spot AI opportunities in your workflow, implement AI without hiring expensive consultants,
+
+98
+00:06:13,600 --> 00:06:18,000
+and see the exact playbooks companies are using to get real results.
+
+99
+00:06:18,000 --> 00:06:23,199
+What's even cooler is it's sourced from executives at HubSpot, Enthropic, and Replet,
+
+100
+00:06:23,199 --> 00:06:26,160
+some of the biggest AI companies in the world right now.
+
+101
+00:06:26,160 --> 00:06:36,720
+My favorite part is inside the case studies where you will see exactly how one company booked 11,000 meetings and another resolved customer issues 39% faster using this
+
+102
+00:06:36,720 --> 00:06:37,360
+framework.
+
+103
+00:06:37,360 --> 00:06:40,240
+These are real numbers from real businesses.
+
+104
+00:06:40,240 --> 00:06:48,720
+So, if you're ready to get ahead in the AI race, download HubSpot for Startup's free AI adoption playbook at the first link in the description below.
+
+105
+00:06:48,720 --> 00:06:50,880
+Thank you to HubSpot for sponsoring this video.
+
+106
+00:06:50,880 --> 00:06:52,000
+Let's get back into it.
+
+107
+00:06:52,000 --> 00:06:55,840
+I'm sure that probably isn't what got you to over $400,000 a month.
+
+108
+00:06:55,840 --> 00:07:04,400
+So, what has been the actual distribution strategy or the secret sauce behind Gravel on how it grew to over $4 million a year?
+
+109
+00:07:04,400 --> 00:07:08,319
+>> For us, the bigger distribution was paid ads.
+
+110
+00:07:08,319 --> 00:07:13,919
+We started running ads as soon as we obviously added the subscription model.
+
+111
+00:07:13,919 --> 00:07:16,479
+I still remember like running our first app.
+
+112
+00:07:16,479 --> 00:07:21,680
+We got a subscription within the first 10 minutes of like activating the ads.
+
+113
+00:07:21,680 --> 00:07:25,440
+Yeah, that was the [music] biggest high probably I've ever had.
+
+114
+00:07:25,440 --> 00:07:28,240
+And after that, we translated the app to Spanish.
+
+115
+00:07:28,240 --> 00:07:30,639
+We started running ads on South America.
+
+116
+00:07:30,639 --> 00:07:33,520
+And we were spending less than 50 bucks a day on ads.
+
+117
+00:07:33,520 --> 00:07:37,759
+And that's what worked for us from the start up until this day.
+
+118
+00:07:37,759 --> 00:07:41,520
+The next question I have for you that I'm curious about is you've built this app.
+
+119
+00:07:41,520 --> 00:07:42,080
+It's huge.
+
+120
+00:07:42,080 --> 00:07:44,240
+It's doing over $400,000 a month.
+
+121
+00:07:44,240 --> 00:07:53,680
+What would be your top learnings or top tips for anyone building apps in 2025, specifically consumer apps or even uh fitness specific?
+
+122
+00:07:53,680 --> 00:07:58,560
+>> The tip number one for sure will be to validate before spending money on ads.
+
+123
+00:07:58,560 --> 00:08:04,319
+And when I say validate, it's not just that the product work, but also that people are willing to pay for it.
+
+124
+00:08:04,319 --> 00:08:05,919
+That's also something very important.
+
+125
+00:08:05,919 --> 00:08:17,680
+Tip number two would be and this is where we kind of got lucky because well I'm Spanish speaking and Matias as well so we're like it makes sense for us to translate it into Spanish and then
+
+126
+00:08:17,680 --> 00:08:27,919
+potentially running ads that are cheaper in in South America the US even though we all want to end up there and running ads there is expensive there's a lot of
+
+127
+00:08:27,919 --> 00:08:36,159
+competition tip three is start small you can pay influencers or content creator as low as 50 bucks for some piece of content.
+
+128
+00:08:36,159 --> 00:08:39,279
+You can use AI tools to create videos.
+
+129
+00:08:39,279 --> 00:08:44,159
+You can use Capkart to edit your own videos and you can get some pretty good results with that.
+
+130
+00:08:44,159 --> 00:08:47,120
+It's not as hard as you think to create an ad.
+
+131
+00:08:47,120 --> 00:08:49,120
+The hard thing is is creating the volume.
+
+132
+00:08:49,120 --> 00:08:52,240
+And tip four, like I said, UGC is king.
+
+133
+00:08:52,240 --> 00:08:56,800
+You'll see that most of the ads that work out there are UGC [music] content.
+
+134
+00:08:56,800 --> 00:09:02,640
+You'll seeing a lot of AI videos and that's cost of producing them is cheap and they're easy to test.
+
+135
+00:09:02,640 --> 00:09:04,800
+Last thing would be copy.
+
+136
+00:09:04,800 --> 00:09:05,920
+copy and copy.
+
+137
+00:09:05,920 --> 00:09:08,800
+Good thing about Meta Ads library is that it's all public.
+
+138
+00:09:08,800 --> 00:09:17,200
+You can go into any of your competitions dashboard and see, you know, which ads are working for them,
+
+139
+00:09:17,200 --> 00:09:20,800
+where they putting more money and yeah, there's no secret source there.
+
+140
+00:09:20,800 --> 00:09:24,399
+Just copy what works for them and start like that.
+
+141
+00:09:24,399 --> 00:09:25,920
+It'll probably work for you.
+
+142
+00:09:25,920 --> 00:09:27,680
+I would definitely start there.
+
+143
+00:09:27,680 --> 00:09:28,160
+>> Okay, cool.
+
+144
+00:09:28,160 --> 00:09:29,519
+Well, those tips were amazing.
+
+145
+00:09:29,519 --> 00:09:36,720
+I'd love if you could show us what your app does and give us a quick demo of how it works and how something like this could potentially make $400,000 a month.
+
+146
+00:09:36,720 --> 00:09:37,360
+>> This is our app.
+
+147
+00:09:37,360 --> 00:09:38,240
+This is Gravel.
+
+148
+00:09:38,240 --> 00:09:44,720
+We're an AI fitness app specifically designed for strength training and gym workouts.
+
+149
+00:09:44,720 --> 00:09:47,600
+This is the screen you'll see when you first download the app.
+
+150
+00:09:47,600 --> 00:09:49,279
+So, this is our landing screen.
+
+151
+00:09:49,279 --> 00:09:55,279
+We get your name and then we'll just go and ask you a series of questions like why you want to use a fitness app.
+
+152
+00:09:55,279 --> 00:09:57,040
+We ask you about your experience.
+
+153
+00:09:57,040 --> 00:09:58,880
+Let's say I'm an advanced user.
+
+154
+00:09:58,880 --> 00:10:05,279
+Depending on on your level, we'll ask more specific questions like what's your one rep max for certain exercises,
+
+155
+00:10:05,279 --> 00:10:12,320
+your goals, ask you about your training frequency, your working split, like we use AI here and there.
+
+156
+00:10:12,320 --> 00:10:16,720
+Make sure that you are showing the users that this is an AI app cuz that's sales.
+
+157
+00:10:16,720 --> 00:10:23,040
+Now, again, more questions specific to how you want to train excluded muscles and focus muscle help us,
+
+158
+00:10:23,040 --> 00:10:26,720
+you know, design the workout towards something that you kind of like.
+
+159
+00:10:26,720 --> 00:10:27,600
+Where do you train?
+
+160
+00:10:27,600 --> 00:10:31,920
+cuz like [snorts] I said, we adapt to your gyms and anywhere you train.
+
+161
+00:10:31,920 --> 00:10:35,040
+So, here is where you could create kind of that gym profile.
+
+162
+00:10:35,040 --> 00:10:40,720
+This kind of screen where we generate and show the user that we're generating a custom workout.
+
+163
+00:10:40,720 --> 00:10:44,880
+You get to this final screen where you get your plan kind of summary.
+
+164
+00:10:44,880 --> 00:10:45,600
+Here we go.
+
+165
+00:10:45,600 --> 00:10:48,320
+Hard payw wall before you sign in for the first time.
+
+166
+00:10:48,320 --> 00:10:52,000
+It's like how many users are actually going to pay before they actually see their product.
+
+167
+00:10:52,000 --> 00:10:54,320
+And the answer is a lot.
+
+168
+00:10:54,320 --> 00:10:56,480
+This is what you see when you first open the app.
+
+169
+00:10:56,480 --> 00:10:58,720
+The main thing is the workout card.
+
+170
+00:10:58,720 --> 00:11:00,079
+That's the main thing about the app.
+
+171
+00:11:00,079 --> 00:11:04,880
+That's 90% of your flow is going to be within the active workout.
+
+172
+00:11:04,880 --> 00:11:08,880
+Here you just get a list of exercises that you need to do.
+
+173
+00:11:08,880 --> 00:11:12,000
+From here on is like kind of works like a workout tracker.
+
+174
+00:11:12,000 --> 00:11:14,480
+We have proper content for every video.
+
+175
+00:11:14,480 --> 00:11:19,839
+We have a description and how to do each exercises.
+
+176
+00:11:19,839 --> 00:11:28,959
+And then we have a lot of smart AI features like you know if you sort exercises the weights are adjusted based on the order that there are.
+
+177
+00:11:28,959 --> 00:11:32,160
+The app is pretty complete in terms of everything you need to do at the gym.
+
+178
+00:11:32,160 --> 00:11:43,200
+Also things like recovery rate uh will tell you how tired or not your muscles are based on your previous workout and that includes external workouts from Apple Health,
+
+179
+00:11:43,200 --> 00:11:46,399
+from Straa, it could be runs, it could be anything.
+
+180
+00:11:46,399 --> 00:11:49,519
+We'll learn from that and we'll adapt your workouts accordingly.
+
+181
+00:11:49,519 --> 00:11:53,440
+And one of the important thing that we grew a lot with this and that was our support.
+
+182
+00:11:53,440 --> 00:12:04,959
+So we have a 247 support chat inside the app and that includes everything from articles to messages and we'll have someone reply an actual
+
+183
+00:12:04,959 --> 00:12:06,320
+person not an AI.
+
+184
+00:12:06,320 --> 00:12:08,720
+That's something that users value a lot.
+
+185
+00:12:08,720 --> 00:12:10,079
+That's pretty much it.
+
+186
+00:12:10,079 --> 00:12:12,880
+>> On a similar note I'm curious what's your tech stack?
+
+187
+00:12:12,880 --> 00:12:13,920
+How did you build this app?
+
+188
+00:12:13,920 --> 00:12:16,639
+We use uh React Native and Expo.
+
+189
+00:12:16,639 --> 00:12:20,800
+For the back end, I did.NET for most of the core functionality.
+
+190
+00:12:20,800 --> 00:12:25,120
+I've also used Next and React to build some like internal admin dashboards.
+
+191
+00:12:25,120 --> 00:12:36,480
+In terms of AI, so I try to stay kind of niche with the what I use cursor a lot, but I'm very specific which files to touch and don't let the AI just go [music] rogue
+
+192
+00:12:36,480 --> 00:12:37,120
+basically.
+
+193
+00:12:37,120 --> 00:12:37,519
+Yeah.
+
+194
+00:12:37,519 --> 00:12:41,760
+>> Hey guys, Julian here with a little async update from the future.
+
+195
+00:12:41,760 --> 00:12:47,920
+We finished recording the video and realized that we didn't really go into um numbers and financials of the business.
+
+196
+00:12:47,920 --> 00:12:51,519
+Obviously, very important for you to know and I'm also happy to share some of them.
+
+197
+00:12:51,519 --> 00:12:57,519
+Our expense number one is Meta and Tik Tok and then [music] maybe a little bit of Google,
+
+198
+00:12:57,519 --> 00:12:59,120
+maybe a little bit of Apple search.
+
+199
+00:12:59,120 --> 00:13:02,000
+I'd say a third is somehow accurate.
+
+200
+00:13:02,000 --> 00:13:03,279
+A third of our revenue that is.
+
+201
+00:13:03,279 --> 00:13:06,800
+This doesn't include making the ads but just the cost of running them.
+
+202
+00:13:06,800 --> 00:13:08,880
+Expense number two is salaries.
+
+203
+00:13:08,880 --> 00:13:12,320
+It was mainly just the three of us for a first year.
+
+204
+00:13:12,320 --> 00:13:17,200
+I did the development and then Matias and Aaron did the growth and ads.
+
+205
+00:13:17,200 --> 00:13:22,000
+Since then, we've grown the team to probably maybe 13 to 14 people, give or take.
+
+206
+00:13:22,000 --> 00:13:23,279
+There's some like part-times.
+
+207
+00:13:23,279 --> 00:13:24,399
+There's some contractors.
+
+208
+00:13:24,399 --> 00:13:28,560
+I'd say somewhere between 50 and [music] 80K.
+
+209
+00:13:28,560 --> 00:13:32,000
+Obviously, let's not forget the 15% from Apple.
+
+210
+00:13:32,000 --> 00:13:32,800
+Revenue cut.
+
+211
+00:13:32,800 --> 00:13:35,120
+It's a 1% clip from revenue as well.
+
+212
+00:13:35,120 --> 00:13:38,320
+We have MMPS, which is maybe a grand a month.
+
+213
+00:13:38,320 --> 00:13:45,600
+And then in terms of infrastructure for running the actual app like servers and AI bills and other tools,
+
+214
+00:13:45,600 --> 00:13:49,680
+I'd say around a grand a [music] month as well.
+
+215
+00:13:49,680 --> 00:13:54,079
+>> The last question that I want to ask you and what we ask all founders who come on Starter Story,
+
+216
+00:13:54,079 --> 00:13:57,760
+what would be your advice to anyone watching this right now that wants to build something?
+
+217
+00:13:57,760 --> 00:13:59,680
+>> Be proud of what you build.
+
+218
+00:13:59,680 --> 00:14:06,880
+Cuz at least for me, the motivation that comes from building something that I'm excited about can't be matched by anything else.
+
+219
+00:14:06,880 --> 00:14:11,920
+It's always easier to grind and work for zero dollars when you love what you're doing.
+
+220
+00:14:11,920 --> 00:14:15,839
+Another thing will be to keep pushing then don't give up too soon.
+
+221
+00:14:15,839 --> 00:14:16,800
+It's a long road.
+
+222
+00:14:16,800 --> 00:14:19,839
+So building it is just not even half of it.
+
+223
+00:14:19,839 --> 00:14:29,760
+Be ready to do all the hustling of you know the Reddit stuff that I did for example and then having ads that don't work and you're going to get some punches.
+
+224
+00:14:29,760 --> 00:14:32,240
+So you need to know that you just need to keep going.
+
+225
+00:14:32,240 --> 00:14:37,600
+And in saying that, it's also knowing when to when to give up actually when you're like,
+
+226
+00:14:37,600 --> 00:14:39,600
+"All right, this product doesn't work."
+
+227
+00:14:39,600 --> 00:14:41,199
+So that's also a very important thing.
+
+228
+00:14:41,199 --> 00:14:43,120
+In our case was our previous startup.
+
+229
+00:14:43,120 --> 00:14:46,560
+We probably dragged that for an extra year.
+
+230
+00:14:46,560 --> 00:14:50,320
+We should have probably called it days like way earlier.
+
+231
+00:14:50,320 --> 00:14:51,600
+>> Well, that's great advice.
+
+232
+00:14:51,600 --> 00:14:53,839
+Thank you, Julian, for coming on to the channel.
+
+233
+00:14:53,839 --> 00:14:54,560
+>> Thank you, Pat.
+
+234
+00:14:54,560 --> 00:14:55,440
+Thanks for the time.
+
+235
+00:14:55,440 --> 00:14:58,880
+>> What I love about Julian's story is his app is crushing it.
+
+236
+00:14:58,880 --> 00:15:03,760
+is making over $400,000 a month, but also it's something he's super passionate about.
+
+237
+00:15:03,760 --> 00:15:10,720
+Julian clearly loves fitness and working out, and how cool is it that you get to build an app that makes hundreds of thousands of people's lives better,
+
+238
+00:15:10,720 --> 00:15:12,399
+and it's something that you love, too.
+
+239
+00:15:12,399 --> 00:15:17,440
+That is exactly why we launched Starter Story Build so you can do the same in Starter Story Build.
+
+240
+00:15:17,440 --> 00:15:25,040
+We will help you ship your idea to the real world in just a couple weeks, as long as you are ready to actually launch your product.
+
+241
+00:15:25,040 --> 00:15:28,560
+So, if you are, head to the link in the description to check out Starter Story Build.
+
+242
+00:15:28,560 --> 00:15:30,560
+That's it for this episode of Starter Story.
+
+243
+00:15:30,560 --> 00:15:31,519
+Thank you guys for watching.
+
+244
+00:15:31,519 --> 00:15:32,720
+I'll see you in the next one.
+
+245
+00:15:32,720 --> 00:15:35,600
+Peace.

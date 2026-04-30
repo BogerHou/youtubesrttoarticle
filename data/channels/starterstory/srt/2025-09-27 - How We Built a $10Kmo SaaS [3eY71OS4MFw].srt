@@ -1,0 +1,899 @@
+1
+00:00:00,080 --> 00:00:01,839
+My name is Joseph and I'm Teimmo.
+
+2
+00:00:01,839 --> 00:00:04,240
+Together, we built Cedari to 10K MR.
+
+3
+00:00:04,240 --> 00:00:08,240
+>> These two guys met each other in a co-working space and decided to partner up.
+
+4
+00:00:08,240 --> 00:00:12,000
+But they were burned out by what I like to call builder's disease.
+
+5
+00:00:12,000 --> 00:00:15,280
+>> I quit my job and spent a whole year building without any traction.
+
+6
+00:00:15,280 --> 00:00:17,840
+>> So, they came up with a better strategy.
+
+7
+00:00:17,840 --> 00:00:20,640
+Get paid before building anything.
+
+8
+00:00:20,640 --> 00:00:24,320
+We made $500 before we wrote a single line of code.
+
+9
+00:00:24,320 --> 00:00:31,359
+So, I brought them both onto the channel to break down the exact validation strategy to not waste years on a dead product,
+
+10
+00:00:31,359 --> 00:00:37,040
+the deposit framework, which is how to ask for refundable deposit before you build anything,
+
+11
+00:00:37,040 --> 00:00:42,399
+and the exact fake landing page and demo they used that changed their business.
+
+12
+00:00:42,399 --> 00:00:47,520
+This video may rewire your brain on how to validate and build a startup today.
+
+13
+00:00:47,520 --> 00:00:51,600
+I'm Pat Walls and this is Starter Story.
+
+14
+00:00:51,600 --> 00:00:53,920
+All right, welcome Joseph and Teemo to the channel.
+
+15
+00:00:53,920 --> 00:00:56,800
+Tell me about who you guys are, what you built, and what's your story.
+
+16
+00:00:56,800 --> 00:00:57,680
+>> My name is Joseph.
+
+17
+00:00:57,680 --> 00:01:00,879
+I quit freelancing as a software engineer to start indie hacking.
+
+18
+00:01:00,879 --> 00:01:01,760
+>> And my name is Timu.
+
+19
+00:01:01,760 --> 00:01:06,000
+I live in Bangkok, and together we started Setai, which now makes 10K Mr.
+
+20
+00:01:06,000 --> 00:01:06,320
+All right.
+
+21
+00:01:06,320 --> 00:01:09,920
+Well, before we get into what you guys built, how you built it in this awesome story.
+
+22
+00:01:09,920 --> 00:01:12,320
+Can you just tell me about what Setter AI is?
+
+23
+00:01:12,320 --> 00:01:13,439
+What kind of app is this?
+
+24
+00:01:13,439 --> 00:01:13,760
+>> Setter.
+
+25
+00:01:13,760 --> 00:01:18,640
+AI is an AI appointment setter that follows up and qualifies with your leads instantly.
+
+26
+00:01:18,640 --> 00:01:21,280
+It's a high ticket agentic B2B SAS.
+
+27
+00:01:21,280 --> 00:01:26,080
+We have a pretty classical subscription model which starts at around $50 per month.
+
+28
+00:01:26,080 --> 00:01:32,240
+Some pay over 500 bucks and our biggest customer pay up to $5,000 per month.
+
+29
+00:01:32,240 --> 00:01:38,560
+We mainly target the solar industry, coaches, financial services anywhere to replace sales reps.
+
+30
+00:01:38,560 --> 00:01:38,799
+Okay.
+
+31
+00:01:38,799 --> 00:01:46,560
+So, one thing that I love about your guys' story is that you technically validated this idea before you built anything.
+
+32
+00:01:46,560 --> 00:01:47,360
+I think that's amazing.
+
+33
+00:01:47,360 --> 00:01:48,799
+I think there's a lot we can learn from that.
+
+34
+00:01:48,799 --> 00:01:50,320
+So, can you share with me how you did that?
+
+35
+00:01:50,320 --> 00:01:53,439
+How did you know you had a business before you even wrote a single line of code?
+
+36
+00:01:53,439 --> 00:01:55,680
+So, as soon as I had the idea, I set up a landing page.
+
+37
+00:01:55,680 --> 00:01:58,240
+I did it months prior to even starting the business.
+
+38
+00:01:58,240 --> 00:02:00,799
+The landing page was set up under a warm domain.
+
+39
+00:02:00,799 --> 00:02:05,840
+So, a domain from a different business that I've already owned and that has been indexed with Google already.
+
+40
+00:02:05,840 --> 00:02:10,160
+I created a completely fake demo for this product because the product wasn't there yet,
+
+41
+00:02:10,160 --> 00:02:11,520
+and put it on this landing page.
+
+42
+00:02:11,520 --> 00:02:18,480
+I think it's the most loweffort way to validate the idea because I wanted to find out if people would actually pay for this.
+
+43
+00:02:18,480 --> 00:02:22,959
+I knew building this AI caller, which was the initial idea, would require a lot of effort.
+
+44
+00:02:22,959 --> 00:02:26,800
+And for me, I just wanted to find out what would business owners pay for this.
+
+45
+00:02:26,800 --> 00:02:28,400
+So, would it be worth building?
+
+46
+00:02:28,400 --> 00:02:35,680
+>> It'd be awesome if you could actually show me this landing page right here, cuz I think this is super cool to just basically not actually write anything,
+
+47
+00:02:35,680 --> 00:02:39,920
+write any code, and just purely validate the idea with everything being faked.
+
+48
+00:02:39,920 --> 00:02:41,760
+something you could put together pretty quickly.
+
+49
+00:02:41,760 --> 00:02:43,840
+Could you actually show me that landing page?
+
+50
+00:02:43,840 --> 00:02:45,280
+>> So, this was the initial landing page.
+
+51
+00:02:45,280 --> 00:02:46,480
+Super super simple.
+
+52
+00:02:46,480 --> 00:02:51,360
+One H1 keyword and then the demo on the right side and then a book demo button.
+
+53
+00:02:51,360 --> 00:02:55,200
+There was really nothing else on this page and it ranked on Google with this.
+
+54
+00:02:55,200 --> 00:02:56,560
+So, this was version one.
+
+55
+00:02:56,560 --> 00:02:58,720
+I wanted to automate cold calls.
+
+56
+00:02:58,720 --> 00:03:04,159
+So, my idea was okay, let me put cold call automation as the H1 keyword.
+
+57
+00:03:04,159 --> 00:03:09,040
+So, I went to hrefs, found this keyword, saw it has search volume but no difficulty.
+
+58
+00:03:09,040 --> 00:03:11,120
+So, I put this as the H1 here.
+
+59
+00:03:11,120 --> 00:03:13,040
+This is the main keyword that Google will index.
+
+60
+00:03:13,040 --> 00:03:18,959
+And then I just put some like chip generated text here to like have some a little bit more text on the page.
+
+61
+00:03:18,959 --> 00:03:24,239
+Here's the demo is like a fake AI caller demo that I generated with 11 Labs.
+
+62
+00:03:24,239 --> 00:03:27,280
+So, yeah, the call to action is literally just a calendar link of mine.
+
+63
+00:03:27,280 --> 00:03:31,680
+If prospects see the video demo, then they would usually go and book a demo call after that.
+
+64
+00:03:31,680 --> 00:03:35,120
+And then I would chat with them about, okay, what do you actually need in your business?
+
+65
+00:03:35,120 --> 00:03:39,200
+So, one of the key elements here is getting this landing page indexed immediately.
+
+66
+00:03:39,200 --> 00:03:44,560
+And ideally, you have already a domain that is online of a previous startup of yours,
+
+67
+00:03:44,560 --> 00:03:47,920
+your personal page, whatever, a domain that is not brand new.
+
+68
+00:03:47,920 --> 00:03:52,720
+Once a page is created, you go to Google Search Console and request the indexing of that page.
+
+69
+00:03:52,720 --> 00:03:58,400
+That way, you make sure this page is literally indexed within 24 hours and people can find it on Google.
+
+70
+00:03:58,400 --> 00:03:58,640
+Okay.
+
+71
+00:03:58,640 --> 00:04:00,319
+I mean, that's amazing.
+
+72
+00:04:00,319 --> 00:04:05,599
+My question that I do still have is like how did you know it was validated?
+
+73
+00:04:05,599 --> 00:04:09,599
+Was there a specific number of traffic or booked calls?
+
+74
+00:04:09,599 --> 00:04:14,080
+Like what did that look like for you versus previous apps that weren't validated?
+
+75
+00:04:14,080 --> 00:04:17,919
+I think the only way to validate is when buyers swipe their credit card.
+
+76
+00:04:17,919 --> 00:04:25,600
+When we got our first uh Stripe payment of $500 before we even had a product, I knew this is validated.
+
+77
+00:04:25,600 --> 00:04:28,400
+And that happened in February 2024.
+
+78
+00:04:28,400 --> 00:04:33,600
+And I was surprised there was even a company with a billion dollar revenue booking a call with me.
+
+79
+00:04:33,600 --> 00:04:35,120
+For me, that was a clear sign.
+
+80
+00:04:35,120 --> 00:04:36,240
+That is insane.
+
+81
+00:04:36,240 --> 00:04:38,400
+Nobody else is doing this.
+
+82
+00:04:38,400 --> 00:04:40,320
+This is an underserved opportunity.
+
+83
+00:04:40,320 --> 00:04:47,280
+We should do this right now because if I can rank with a fake landing page for this keyword and this big company books a call with me,
+
+84
+00:04:47,280 --> 00:04:48,800
+I should do this opportunity.
+
+85
+00:04:48,800 --> 00:04:50,000
+Okay, this is amazing.
+
+86
+00:04:50,000 --> 00:04:51,759
+I love how you did this.
+
+87
+00:04:51,759 --> 00:04:54,639
+What I want to get from you is the validation playbook.
+
+88
+00:04:54,639 --> 00:05:00,639
+If you were starting over from scratch with a new product right now, what would be your playbook to validate before you build?
+
+89
+00:05:00,639 --> 00:05:01,919
+Step one, have a job.
+
+90
+00:05:01,919 --> 00:05:07,759
+I think the best pain point to find B2B ideas is not look around on Reddit or something because business owners,
+
+91
+00:05:07,759 --> 00:05:09,199
+frankly, they don't really check Reddit.
+
+92
+00:05:09,199 --> 00:05:13,199
+The best way to be in a business is having a job at some point of your life.
+
+93
+00:05:13,199 --> 00:05:21,840
+So, having a job, I think, is actually an absolute advantage compared to indie hackers or builders who never had a job because they don't really know all the processes that happen in a business.
+
+94
+00:05:21,840 --> 00:05:23,840
+Step number two, set up a landing page.
+
+95
+00:05:23,840 --> 00:05:25,520
+Do some basic SEO research.
+
+96
+00:05:25,520 --> 00:05:28,080
+Go to hrefs or go to any free SEO tool.
+
+97
+00:05:28,080 --> 00:05:30,639
+Search for keywords that buyers would search for.
+
+98
+00:05:30,639 --> 00:05:32,080
+Step three, set up a Calendarly link.
+
+99
+00:05:32,080 --> 00:05:33,360
+They see your face on a call.
+
+100
+00:05:33,360 --> 00:05:34,639
+They know you're a real human.
+
+101
+00:05:34,639 --> 00:05:35,440
+They trust you.
+
+102
+00:05:35,440 --> 00:05:41,039
+And then you try to close them on a call and try to swipe their credit card while you're on a sales call.
+
+103
+00:05:41,039 --> 00:05:43,440
+Step four, the deposit framework.
+
+104
+00:05:43,440 --> 00:05:46,080
+Don't say, "Please pay for my non-existing solution."
+
+105
+00:05:46,080 --> 00:05:48,800
+Or even make them pay monthly for something that is not there.
+
+106
+00:05:48,800 --> 00:05:55,840
+The better way is deliver as much value as you can and give them a 100% refundable deposit offer.
+
+107
+00:05:55,840 --> 00:05:58,160
+Say, for example, $500 you take down.
+
+108
+00:05:58,160 --> 00:06:02,000
+It's a onetime payment that you take and the buyer gets full access to your product.
+
+109
+00:06:02,000 --> 00:06:04,880
+Once it launches, you can also put some urgency in there.
+
+110
+00:06:04,880 --> 00:06:07,759
+For example, this secures you a spot in the first launch of the product.
+
+111
+00:06:07,759 --> 00:06:09,759
+Also, one big point, go high ticket.
+
+112
+00:06:09,759 --> 00:06:14,319
+If you go this route and do a do a call with the buyer, don't charge them $20 or something.
+
+113
+00:06:14,319 --> 00:06:17,199
+Charge them something serious so you know they are in.
+
+114
+00:06:17,199 --> 00:06:20,800
+Nothing validates your idea more than someone swiping their credit card.
+
+115
+00:06:20,800 --> 00:06:22,639
+Step five, give it some time to incubate.
+
+116
+00:06:22,639 --> 00:06:27,919
+So, if you go the SEO route, it's going to take a little bit of time, but you will get serious buyers because they search for a solution.
+
+117
+00:06:27,919 --> 00:06:30,000
+So, give it a little bit of time to incubate.
+
+118
+00:06:30,000 --> 00:06:34,479
+I love how Teemo shared the exact framework for how to validate before building.
+
+119
+00:06:34,479 --> 00:06:41,199
+Collecting cash before writing code is definitely the way to go, especially if you want to ship a successful app as a solo founder.
+
+120
+00:06:41,199 --> 00:06:45,840
+But when it comes to actually building the app, you might lose all momentum.
+
+121
+00:06:45,840 --> 00:06:53,759
+So many founders waste weeks, if not months, on the UI stage, tweaking spacing and buttons and second-guessing every layout at 1:00 a.m.
+
+122
+00:06:53,759 --> 00:06:54,479
+in the morning.
+
+123
+00:06:54,479 --> 00:06:56,720
+And that's where Mobin comes in.
+
+124
+00:06:56,720 --> 00:07:04,880
+And yes, they're today's sponsor, but honestly, they're one of my favorite tools for getting out of the design spiral fast and building something beautiful.
+
+125
+00:07:04,880 --> 00:07:09,680
+Mobin is basically a giant organized vault of realworld product designs.
+
+126
+00:07:09,680 --> 00:07:15,520
+actual apps, actual screens broken down by feature, flow, style, all of it.
+
+127
+00:07:15,520 --> 00:07:24,160
+So instead of guessing on how to design a pricing page or an onboarding flow, you can just see how the best apps in the world do it and build from that 10 times faster.
+
+128
+00:07:24,160 --> 00:07:29,199
+Mobin has personally saved me hours and honestly, it makes designing kind of fun again.
+
+129
+00:07:29,199 --> 00:07:33,120
+Just click the first link in the description if you want to check out Mobin right now.
+
+130
+00:07:33,120 --> 00:07:37,199
+They're offering starter story members 20% off their annual pro plan.
+
+131
+00:07:37,199 --> 00:07:40,080
+Huge thank you to Mobin for supporting this video.
+
+132
+00:07:40,080 --> 00:07:41,280
+Let's get back into it.
+
+133
+00:07:41,280 --> 00:07:42,800
+I'm also curious to hear from you guys.
+
+134
+00:07:42,800 --> 00:07:47,360
+You're busy building your business, but I'm sure you're seeing lots of other cool ideas you could be building right now.
+
+135
+00:07:47,360 --> 00:07:51,120
+What are some good ideas that you think are worth starting in 2025?
+
+136
+00:07:51,120 --> 00:07:57,280
+AI is super hot right now, and it opens up so many new opportunities and possibilities that haven't been there before,
+
+137
+00:07:57,280 --> 00:08:01,120
+but also opportunities to do something in completely new and different ways.
+
+138
+00:08:01,120 --> 00:08:05,199
+There are also so many non-technical people who want to build with AI.
+
+139
+00:08:05,199 --> 00:08:10,479
+So facilitating that for them, gluing softwares together or automating workflows is the play.
+
+140
+00:08:10,479 --> 00:08:13,520
+I think one idea from me, Lovable for mobile apps.
+
+141
+00:08:13,520 --> 00:08:23,680
+So Lovable is absolutely great for building simple web apps, landing pages, but I realized most internet users are on mobile and mobile apps are not as easy
+
+142
+00:08:23,680 --> 00:08:24,960
+to build as web apps.
+
+143
+00:08:24,960 --> 00:08:35,680
+So if someone can figure out a builder like lovable but for let's say swift apps I think that is one of the biggest opportunities you can go after and I think that could even be bigger than lovable itself which has
+
+144
+00:08:35,680 --> 00:08:37,360
+like a billion dollar valuation.
+
+145
+00:08:37,360 --> 00:08:40,080
+Okay so the next thing I I want to switch to is growth.
+
+146
+00:08:40,080 --> 00:08:48,800
+Obviously this validation strategy is a great way to get those first customers get that initial demand but then you need to sort of scale it and figure out a growth strategy.
+
+147
+00:08:48,800 --> 00:08:50,560
+So what did you guys do for setter?
+
+148
+00:08:50,560 --> 00:08:52,160
+>> We basically went purely inbound.
+
+149
+00:08:52,160 --> 00:09:00,160
+We figured to just double down on what works already and what validated the idea because that's where our first customers came from and that was SEO and content.
+
+150
+00:09:00,160 --> 00:09:07,839
+Once we launched our actual website for Seti within a week, we ranked on page one on Google and now ranked number one worldwide for this keyword.
+
+151
+00:09:07,839 --> 00:09:10,560
+The SEO growth came through main strategies.
+
+152
+00:09:10,560 --> 00:09:15,519
+First, building free tools that people can search up such as free sales script generator.
+
+153
+00:09:15,519 --> 00:09:20,560
+Second, log articles that compare to other big tools in the space.
+
+154
+00:09:20,560 --> 00:09:23,200
+for instance, something like HubSpot alternatives.
+
+155
+00:09:23,200 --> 00:09:28,320
+The third one, and that's a very underrated one, is definitely YouTube long format.
+
+156
+00:09:28,320 --> 00:09:34,000
+Most of the customers we closed came through watching at least one YouTube video before jumping on a call.
+
+157
+00:09:34,000 --> 00:09:38,800
+YouTube and watching long format content by nature has this high intent from the watcher,
+
+158
+00:09:38,800 --> 00:09:42,640
+but then also creates insane trust into your business already.
+
+159
+00:09:42,640 --> 00:09:45,120
+Also, it's the second biggest search engine after Google.
+
+160
+00:09:45,120 --> 00:09:46,000
+Think about that.
+
+161
+00:09:46,000 --> 00:09:46,240
+>> Okay.
+
+162
+00:09:46,240 --> 00:09:48,640
+Well, let's dive into some of the numbers behind the business.
+
+163
+00:09:48,640 --> 00:09:50,800
+I'm curious, how's this business doing financially?
+
+164
+00:09:50,800 --> 00:09:52,720
+What are some of the revenue profit that you could share?
+
+165
+00:09:52,720 --> 00:09:54,720
+>> Pretty much exactly 10K last month.
+
+166
+00:09:54,720 --> 00:09:58,240
+Uh we had higher months before, but August is always a slow month in B2B.
+
+167
+00:09:58,240 --> 00:10:02,640
+We had around 2,000 total signups of uh businesses.
+
+168
+00:10:02,640 --> 00:10:08,480
+Um we have focused more on the higher paying businesses because we saw lower churn with these.
+
+169
+00:10:08,480 --> 00:10:14,000
+So our paying customer number is only 38 but therefore these are like high value businesses.
+
+170
+00:10:14,000 --> 00:10:16,399
+We also applied to YC five times.
+
+171
+00:10:16,399 --> 00:10:19,920
+Uh we got one interview and we have not been selected yet.
+
+172
+00:10:19,920 --> 00:10:25,519
+Also, our channel on YouTube has 600 subs and uh we also got some acquisition offers recently that we are weighing.
+
+173
+00:10:25,519 --> 00:10:26,320
+Thanks for sharing that.
+
+174
+00:10:26,320 --> 00:10:29,360
+On that same note, I'd also love to hear about your tech stack.
+
+175
+00:10:29,360 --> 00:10:30,560
+How does this business run?
+
+176
+00:10:30,560 --> 00:10:33,519
+What's the stack you're using and what tools you use to run the business?
+
+177
+00:10:33,519 --> 00:10:40,720
+>> We use hrefs for SEO, use answer the public for YouTube video ideas, I use Zapier to automate tedious task.
+
+178
+00:10:40,720 --> 00:10:43,839
+I use Beehive for email automation and newsletters.
+
+179
+00:10:43,839 --> 00:10:46,160
+I use Calendarly to schedule appointments.
+
+180
+00:10:46,160 --> 00:10:52,560
+We use Webflow to host the landing page and the CMS and your businessnumber.com to buy phone numbers.
+
+181
+00:10:52,560 --> 00:10:56,800
+On the tech side, we have a pretty scalable and straightforward mainly serverless stack.
+
+182
+00:10:56,800 --> 00:10:59,279
+It's built on top of TypeScript and SWELGit.
+
+183
+00:10:59,279 --> 00:11:05,519
+The database is a Postgress host both on render and superbase which are combined at around $150 per month.
+
+184
+00:11:05,519 --> 00:11:11,040
+We use Puppeteer for browser automation and fall back to OpenAI for all of the AI stuff.
+
+185
+00:11:11,040 --> 00:11:13,600
+We also use things like the brand fetch API.
+
+186
+00:11:13,600 --> 00:11:15,200
+We use Plausible for analytics.
+
+187
+00:11:15,200 --> 00:11:20,800
+It's just $29 a month and just so much easier to use and better than Google Analytics in our opinion.
+
+188
+00:11:20,800 --> 00:11:23,440
+For development, we're hosted on Netlifi.
+
+189
+00:11:23,440 --> 00:11:26,320
+We use Cursor for AI assisted coding.
+
+190
+00:11:26,320 --> 00:11:26,720
+>> Cool.
+
+191
+00:11:26,720 --> 00:11:31,120
+And on that same note, what does it cost to run a B2B SAS like this?
+
+192
+00:11:31,120 --> 00:11:32,160
+What are the margins like?
+
+193
+00:11:32,160 --> 00:11:33,120
+>> The margins are great.
+
+194
+00:11:33,120 --> 00:11:35,680
+Without ads, it's 90 plus%.
+
+195
+00:11:35,680 --> 00:11:39,839
+Tried ads, hired some freelancers for some work, so it's more down to like 80%.
+
+196
+00:11:39,839 --> 00:11:49,839
+The highest cost per month is OpenAI API around $250 a month or hiring some Upwork freelancers here and there which can add up to $500 a month.
+
+197
+00:11:49,839 --> 00:11:51,200
+Well, thanks for sharing that.
+
+198
+00:11:51,200 --> 00:11:56,240
+The last question that I have for both of you is advice for anyone watching this channel.
+
+199
+00:11:56,240 --> 00:12:04,480
+If you were to start over today or if you could stand on the shoulders of Teemo and Joseph when they were just starting out trying to figure out how to do this thing online,
+
+200
+00:12:04,480 --> 00:12:05,600
+what would be your advice?
+
+201
+00:12:05,600 --> 00:12:06,800
+>> Charge early on.
+
+202
+00:12:06,800 --> 00:12:13,279
+Don't be afraid to charge because charging creates urgency and commitment not only from you but also your customer.
+
+203
+00:12:13,279 --> 00:12:14,399
+Go high ticket.
+
+204
+00:12:14,399 --> 00:12:15,839
+It makes your life easier.
+
+205
+00:12:15,839 --> 00:12:19,760
+Sell to rich people, they pay better is what Homozi likes to say.
+
+206
+00:12:19,760 --> 00:12:20,320
+>> Beautiful.
+
+207
+00:12:20,320 --> 00:12:21,760
+Thank you guys for coming on the channel.
+
+208
+00:12:21,760 --> 00:12:23,120
+I love the business you built.
+
+209
+00:12:23,120 --> 00:12:25,440
+You did it in just over a year, which is amazing.
+
+210
+00:12:25,440 --> 00:12:26,959
+I'm sure it's going to keep growing.
+
+211
+00:12:26,959 --> 00:12:28,720
+And uh you guys are awesome.
+
+212
+00:12:28,720 --> 00:12:29,680
+Thanks for coming on.
+
+213
+00:12:29,680 --> 00:12:30,720
+>> Thanks for having us, Pat.
+
+214
+00:12:30,720 --> 00:12:31,440
+>> Thank you.
+
+215
+00:12:31,440 --> 00:12:33,920
+>> Thank you to Joseph and Teemo for coming on to the channel.
+
+216
+00:12:33,920 --> 00:12:40,639
+I think what they did is a great example of how to build lean, successful apps that might change your life.
+
+217
+00:12:40,639 --> 00:12:44,880
+If you're looking to get started and do something similar yourself, well, I have something for you.
+
+218
+00:12:44,880 --> 00:12:50,800
+Starter Story Build is our program where you will go from an idea to a working app in less than 2 weeks.
+
+219
+00:12:50,800 --> 00:12:53,680
+Frankly, this wasn't possible before AI.
+
+220
+00:12:53,680 --> 00:12:59,279
+But now, with the right structure, you can do it even if you have a full-time job or no coding experience.
+
+221
+00:12:59,279 --> 00:13:03,279
+Just click the link in the description to start a story build if you want to learn more.
+
+222
+00:13:03,279 --> 00:13:05,200
+Otherwise, I hope you guys enjoyed this episode.
+
+223
+00:13:05,200 --> 00:13:06,639
+I'll see you in the next one.
+
+224
+00:13:06,639 --> 00:13:08,280
+Peace.
+
+225
+00:13:08,280 --> 00:13:11,780
+[Music]

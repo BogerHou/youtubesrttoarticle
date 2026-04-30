@@ -1,0 +1,4635 @@
+1
+00:00:00,000 --> 00:00:01,880
+This is 2014.
+
+2
+00:00:01,880 --> 00:00:03,320
+That was the year that Slack actually launched.
+
+3
+00:00:03,320 --> 00:00:08,080
+I was interviewed by MIT Technology Review and asked if we were working to improve Slack.
+
+4
+00:00:08,080 --> 00:00:14,760
+I said, "I feel like what we have right now is just a giant piece of [ __ ] It's just terrible and we should be humiliated that we offer this to the public."
+
+5
+00:00:14,760 --> 00:00:17,840
+To me, that was like, "You should be embarrassed.
+
+6
+00:00:17,840 --> 00:00:24,000
+If you can't see almost limitless opportunities to improve, then you shouldn't be designing a product."
+
+7
+00:00:24,000 --> 00:00:29,080
+>> Slack was famous for being one of the early consumerized B2B SaaS products.
+
+8
+00:00:29,080 --> 00:00:34,240
+>> At more than one company all hands, I made everyone in the company repeat [music] this as a chant.
+
+9
+00:00:34,240 --> 00:00:39,360
+In the long run, the measure of our success will be the amount of value that we create for customers.
+
+10
+00:00:39,360 --> 00:00:43,040
+And you can put effort into demonstrating that you have created [music] this value and stuff like that,
+
+11
+00:00:43,040 --> 00:00:45,520
+but there's no substitute for actually having created it.
+
+12
+00:00:45,520 --> 00:00:51,840
+>> Something else I heard that you often espouse is friction in the product experience is actually often a good thing.
+
+13
+00:00:51,840 --> 00:00:58,040
+>> It It became an assumption that you should always be trying to remove friction when the challenge is really comprehension.
+
+14
+00:00:58,040 --> 00:01:02,160
+If your software kind of stops me to and asks me to make a decision and I don't really understand it,
+
+15
+00:01:02,160 --> 00:01:03,240
+you make me feel stupid.
+
+16
+00:01:03,240 --> 00:01:08,775
+If people could get over the idea of reducing friction as a number one goal or reducing the number of clicks or taps or something,
+
+17
+00:01:08,775 --> 00:01:11,840
+[music] and instead focus on,"How can I make this simple?
+
+18
+00:01:11,840 --> 00:01:15,200
+How do I prevent people from having to think in order to use my software?"
+
+19
+00:01:15,200 --> 00:01:17,600
+>> You started two companies, both famously pivoted.
+
+20
+00:01:17,600 --> 00:01:19,920
+I imagine many people come to you for advice on pivoting.
+
+21
+00:01:19,920 --> 00:01:22,440
+>> The decision is about like, have you exhausted [music] the possibilities?
+
+22
+00:01:22,440 --> 00:01:29,800
+Creating the distance so that you can make an intellectual, rational decision about it rather than an emotional decision is essential.
+
+23
+00:01:29,800 --> 00:01:35,840
+And the reason I say you have to be coldly rational about it is because [music] it's [ __ ] humiliating.
+
+24
+00:01:35,960 --> 00:01:41,600
+Today my guest is Stewart Butterfield, a founder and product legend who rarely does podcasts.
+
+25
+00:01:41,600 --> 00:01:48,000
+Stewart founded Flickr and then Slack, which he sold to Salesforce in one of the biggest acquisitions in tech history at the time.
+
+26
+00:01:48,000 --> 00:01:51,640
+There is so much product and leadership wisdom locked away in his head.
+
+27
+00:01:51,640 --> 00:01:54,200
+I feel like our conversation just scratched the surface.
+
+28
+00:01:54,200 --> 00:02:03,240
+We chat about utility curves, something he calls the owner's delusion, a hilarious pattern he sees at companies he calls hyperrealistic work-like activities.
+
+29
+00:02:03,240 --> 00:02:09,036
+What he's learned about product and craft and taste and Parkinson's law, why you need to obsess with not making your users think,
+
+30
+00:02:09,036 --> 00:02:14,440
+[music] the backstory on his legendary "We Don't Sell Saddles Here" memo, and so much more.
+
+31
+00:02:14,440 --> 00:02:22,040
+A huge thank [music] you to Noah Weiss, Chris Cordell, Ali Rail, and Johnny Rodgers for suggesting [music] topics and questions for this conversation.
+
+32
+00:02:22,040 --> 00:02:27,120
+This is a really special one and I really hope to have Stewart back to delve even deeper.
+
+33
+00:02:27,120 --> 00:02:31,440
+If you enjoy this podcast, [music] don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+34
+00:02:31,440 --> 00:02:33,160
+It helps tremendously.
+
+35
+00:02:33,160 --> 00:02:41,080
+And if you become an annual subscriber of my newsletter, you get 17 incredible products for free for an entire year,
+
+36
+00:02:41,080 --> 00:02:46,080
+including Devon, lovable Repl it Bolt, Linear, Superhuman, Dscript, Perplexity, Warp,
+
+37
+00:02:46,080 --> 00:02:48,680
+Granola, Magic Patterns, Raycast, and Maven.
+
+38
+00:02:48,680 --> 00:02:51,720
+Head on over to lennysnewsletter.com and click product pass.
+
+39
+00:02:51,720 --> 00:02:57,120
+With that, I bring you Stewart Butterfield after a short word from our sponsors.
+
+40
+00:02:57,120 --> 00:02:58,400
+Here's a puzzle for you.
+
+41
+00:02:58,400 --> 00:03:05,080
+What do OpenAI, Cursor, Perplexity, Vercel, Plaid, and hundreds of other winning companies have in common?
+
+42
+00:03:05,080 --> 00:03:09,000
+The answer is they're all powered by today's sponsor, WorkOS.
+
+43
+00:03:09,000 --> 00:03:13,760
+If you're building software for enterprises, you've probably felt the pain of integrating single sign-on,
+
+44
+00:03:13,760 --> 00:03:18,680
+SCIM, RBAC, audit logs, and other features required by big customers.
+
+45
+00:03:18,680 --> 00:03:26,000
+WorkOS turns those deal blockers into drop-in APIs with a modern developer platform built specifically for B2B SaaS.
+
+46
+00:03:26,000 --> 00:03:31,440
+Whether you're a seed-stage startup trying to land your first enterprise customer or a unicorn expanding globally,
+
+47
+00:03:31,440 --> 00:03:36,120
+WorkOS is the fastest path to becoming enterprise-ready [music] and unlocking growth.
+
+48
+00:03:36,120 --> 00:03:38,920
+They're essentially Stripe for enterprise features.
+
+49
+00:03:38,920 --> 00:03:46,240
+Visit workos.com to get [music] started or just hit up their Slack support where they have real engineers in there who answer your questions super fast.
+
+50
+00:03:46,240 --> 00:03:53,520
+WorkOS allows you to build like the best with delightful APIs, comprehensive docs, and a smooth developer experience.
+
+51
+00:03:53,520 --> 00:03:57,960
+Go to workos.com to make your app enterprise-ready today.
+
+52
+00:03:57,960 --> 00:04:00,480
+This episode is brought to you by Metronome.
+
+53
+00:04:00,480 --> 00:04:03,040
+You just launched your new shiny AI product.
+
+54
+00:04:03,040 --> 00:04:07,560
+The new pricing page looks awesome, but behind it, >> [music] >> last-minute glue code,
+
+55
+00:04:07,560 --> 00:04:11,520
+messy spreadsheets, and running ad-hoc queries to figure out what to build.
+
+56
+00:04:11,520 --> 00:04:17,440
+Customers get invoices they can't understand, engineers are chasing billing bugs, finance can't close the books.
+
+57
+00:04:17,440 --> 00:04:22,640
+With Metronome, you hand it all off to the real-time billing infrastructure that just works.
+
+58
+00:04:22,640 --> 00:04:25,840
+Reliable, flexible, and built to grow with you.
+
+59
+00:04:25,840 --> 00:04:31,680
+Metronome turns raw usage events into accurate invoices, [music] gives customers bills they actually understand,
+
+60
+00:04:31,680 --> 00:04:34,560
+and keeps every team in sync in real time.
+
+61
+00:04:34,560 --> 00:04:40,120
+Whether you're launching usage-based pricing, managing enterprise contracts, or rolling out new AI services,
+
+62
+00:04:40,120 --> 00:04:44,560
+Metronome does the heavy lifting so that you can focus on your product, not your billing.
+
+63
+00:04:44,560 --> 00:04:48,960
+That's why some of the fastest-growing companies in the world, like OpenAI and Anthropic,
+
+64
+00:04:48,960 --> 00:04:51,080
+run their billing on Metronome.
+
+65
+00:04:51,080 --> 00:04:53,440
+Visit metronome.com to learn more.
+
+66
+00:04:53,440 --> 00:04:56,680
+That's metronome.com.
+
+67
+00:04:58,960 --> 00:05:02,800
+Stewart, thank you so much for being here and welcome to the podcast.
+
+68
+00:05:02,800 --> 00:05:04,240
+Thank you for having me.
+
+69
+00:05:04,240 --> 00:05:05,160
+I'm excited.
+
+70
+00:05:05,160 --> 00:05:06,080
+I'm even more excited.
+
+71
+00:05:06,080 --> 00:05:07,680
+I'm so honored to have you here.
+
+72
+00:05:07,680 --> 00:05:15,440
+I never told you this, but you've been towards the very top of my wish list of guests to have on this podcast ever since I started this podcast a few years ago.
+
+73
+00:05:15,440 --> 00:05:17,920
+So, I'm very excited that we're finally making this happen.
+
+74
+00:05:17,920 --> 00:05:20,080
+I have so many questions for you.
+
+75
+00:05:20,080 --> 00:05:23,160
+My first question is just what the heck are you up to these days?
+
+76
+00:05:23,160 --> 00:05:25,920
+I feel like ever since you left Slack, we haven't heard much from Stewart.
+
+77
+00:05:25,920 --> 00:05:27,040
+I'm curious what you're up to.
+
+78
+00:05:27,040 --> 00:05:28,320
+Hopefully you're just chilling.
+
+79
+00:05:28,320 --> 00:05:29,640
+I'm mostly just chilling.
+
+80
+00:05:29,640 --> 00:05:34,520
+I left Salesforce um 2 and 1/2 years ago and I have a 2 and 1/2 year old.
+
+81
+00:05:34,520 --> 00:05:38,760
+So, she was actually born 3 days after my my last day.
+
+82
+00:05:38,760 --> 00:05:45,680
+So, a lot of time with family and it's like an enormous privilege to be able to spend time with young kids while they're while they're young.
+
+83
+00:05:45,680 --> 00:05:50,280
+Um no new company to announce or anything like that.
+
+84
+00:05:50,280 --> 00:05:53,600
+Um I do get a lot of emails and texts.
+
+85
+00:05:53,600 --> 00:05:59,680
+Like basically like every 3 to 6 weeks there's this cycle because Cal Henderson, who's the CTO of Slack,
+
+86
+00:05:59,680 --> 00:06:05,680
+and who also we worked together on Flickr, so have worked together now for 23 years,
+
+87
+00:06:05,680 --> 00:06:10,440
+have been talking about what we want to do next um if there is something.
+
+88
+00:06:10,440 --> 00:06:18,400
+But you know, honestly, the the big challenge has been uh I think these things are kind of destroying the world.
+
+89
+00:06:18,400 --> 00:06:21,360
+Um and what we're good at is making software.
+
+90
+00:06:21,360 --> 00:06:26,680
+Um so, if you find some way to make software that helped people use their phones less often,
+
+91
+00:06:26,680 --> 00:06:31,280
+then that would be of a a big winner, but uh haven't come up with anything good.
+
+92
+00:06:31,280 --> 00:06:33,640
+A lot of philanthropic work.
+
+93
+00:06:33,640 --> 00:06:44,200
+Uh nothing to announce there yet, but there's like some cool um projects I'm working on and a lot of like just personal creative art projects and supporting other artists and and stuff
+
+94
+00:06:44,200 --> 00:06:44,960
+like that.
+
+95
+00:06:44,960 --> 00:06:53,480
+To prep for this chat, I talked to so many people that have worked with you over the years to try to figure out what you taught them about building product,
+
+96
+00:06:53,480 --> 00:06:57,720
+building teams, building companies that most stuck with them, that most helped them build amazing products.
+
+97
+00:06:57,720 --> 00:07:00,680
+The first is a is a concept called utility curves.
+
+98
+00:07:00,680 --> 00:07:03,920
+This came up a bunch across so many people that have worked with you.
+
+99
+00:07:03,920 --> 00:07:07,800
+Talk about what is a utility curve, how you think use that to build better products.
+
+100
+00:07:07,800 --> 00:07:12,880
+This is pretty easy cuz it's a very familiar S-curve where, you know, you have uh it's flat,
+
+101
+00:07:12,880 --> 00:07:17,040
+it starts arcing up, and then there's a really steep part, and then it levels off again.
+
+102
+00:07:17,040 --> 00:07:25,080
+And on the horizontal axis, uh you can think of cost or effort.
+
+103
+00:07:25,080 --> 00:07:29,080
+And on the vertical axis, it's value or convenience.
+
+104
+00:07:29,080 --> 00:07:31,600
+It kind of depends exactly what you're talking about.
+
+105
+00:07:31,600 --> 00:07:38,760
+But the idea is um the first bit of effort you put into something doesn't result in a huge amount of value,
+
+106
+00:07:38,760 --> 00:07:42,600
+and then there's some magic threshold where it produces an enormous amount of value,
+
+107
+00:07:42,600 --> 00:07:45,240
+and then continued investment doesn't really pay off.
+
+108
+00:07:45,240 --> 00:07:49,840
+The most basic example I can think of is let's say you're making a hammer.
+
+109
+00:07:49,840 --> 00:07:52,960
+And on that bottom axis, it's now quality.
+
+110
+00:07:52,960 --> 00:07:58,320
+And if the hammer uh has a handle that breaks with any impact, then it's totally useless.
+
+111
+00:07:58,320 --> 00:08:00,680
+And if you make it a little bit stronger, it's still pretty useless.
+
+112
+00:08:00,680 --> 00:08:05,080
+And it's kind of like junk junk junk junk junk, okay, good, great.
+
+113
+00:08:05,080 --> 00:08:06,640
+Then it doesn't matter anymore.
+
+114
+00:08:06,640 --> 00:08:12,880
+If you're making an app, okay, this app's going to have users, and so let's make a users table in a database,
+
+115
+00:08:12,880 --> 00:08:15,680
+and so far you have generated no value.
+
+116
+00:08:15,680 --> 00:08:22,520
+The reason I I felt like this was so important is because we would talk about like a feature.
+
+117
+00:08:22,520 --> 00:08:25,400
+Um and usually features are thought of as as binary.
+
+118
+00:08:25,400 --> 00:08:28,440
+Like you you either have this feature or you don't.
+
+119
+00:08:28,440 --> 00:08:39,320
+And so, the argument I guess was, have we just not invested enough in this, or have we got all the value or convenience or,
+
+120
+00:08:39,320 --> 00:08:41,960
+you know, quality or whatever that we could get out of this?
+
+121
+00:08:41,960 --> 00:08:45,480
+Um and and we could have admitted the point of diminishing returns and it just doesn't matter.
+
+122
+00:08:45,480 --> 00:08:54,120
+And I I think in many cases people will add a feature, it's not good enough, um and so people don't use it or appreciate it,
+
+123
+00:08:54,120 --> 00:08:58,760
+but now you've added some complexity to the app, and then people give up or take it back or,
+
+124
+00:08:58,760 --> 00:09:01,800
+you know, they tried something in in testing and they don't get the results they want,
+
+125
+00:09:01,800 --> 00:09:04,360
+and so they decide that this is a thing isn't worth doing.
+
+126
+00:09:04,360 --> 00:09:11,280
+And so, we would try to really investigate and and decide whether we were on the first shallow part of the curve,
+
+127
+00:09:11,280 --> 00:09:15,320
+the second shallow part of the curve, or we were, you know, we're just coming up to it.
+
+128
+00:09:15,320 --> 00:09:23,440
+So, I think it's a lot easier to understand the value of this when you're talking about a specific app and a and a specific uh feature.
+
+129
+00:09:23,440 --> 00:09:30,720
+But um I think it was ultimately helpful in getting people to like understand whether something was was worth it or not.
+
+130
+00:09:30,720 --> 00:09:34,080
+Okay, so just to mirror back what I'm hearing, there's kind of this if you visualize this curve,
+
+131
+00:09:34,080 --> 00:09:36,240
+at the bottom it's like, "I don't even know what this is."
+
+132
+00:09:36,240 --> 00:09:38,840
+And then up the curve is like, "Okay, I sort of get it."
+
+133
+00:09:38,840 --> 00:09:42,880
+And then at the top is, "Okay, I can't live without this now that I understand what this is for."
+
+134
+00:09:42,880 --> 00:09:48,280
+It feels like it's like a really it's a different way of thinking about getting to the aha moment for someone where they see,
+
+135
+00:09:48,280 --> 00:09:49,240
+"Okay, saved items.
+
+136
+00:09:49,240 --> 00:09:49,760
+I get it.
+
+137
+00:09:49,760 --> 00:09:51,600
+I need to use this constantly."
+
+138
+00:09:51,600 --> 00:09:55,040
+So, it feels like this works both for a specific feature and also just for Slack.
+
+139
+00:09:55,040 --> 00:10:00,720
+Like getting people to even understand, "Here's what Slack can do for you and then now I can't live without Slack.
+
+140
+00:10:00,720 --> 00:10:10,640
+And essentially this is a lens you use to figure out where to spend product resources because if you don't get up that curve to I get it and I can't live without it,
+
+141
+00:10:10,640 --> 00:10:11,920
+nothing else matters.
+
+142
+00:10:11,920 --> 00:10:13,560
+Is that the way is that the framework?
+
+143
+00:10:13,560 --> 00:10:14,200
+Yeah, yeah.
+
+144
+00:10:14,200 --> 00:10:22,120
+And I think then you layer on another concept like the um >> [snorts] >> Bezos used the term divine discontent.
+
+145
+00:10:22,120 --> 00:10:33,720
+Uh the line actually moves because once people are familiar with a piece of software or the way a feature is implemented or something like that,
+
+146
+00:10:33,720 --> 00:10:38,280
+their standards go up and so the there's like this competition.
+
+147
+00:10:38,280 --> 00:10:43,520
+And again, this axis can be utility is the best general term for it, but it could be quality,
+
+148
+00:10:43,520 --> 00:10:47,920
+convenience, um speed, it could be any any number of things.
+
+149
+00:10:47,920 --> 00:10:58,800
+But as you improve your search capability or if as as you improve your login experience or your forget experience or your checkout experience
+
+150
+00:10:58,800 --> 00:11:04,040
+or whatever, everyone else's as well and so there's this continued investment.
+
+151
+00:11:04,040 --> 00:11:13,760
+And when you know, forget about thinking about a new feature, you're looking at how the product works overall and usually things get kind of implemented once and then
+
+152
+00:11:13,760 --> 00:11:17,440
+if they're lucky, they get improved upon periodically.
+
+153
+00:11:17,440 --> 00:11:23,200
+Most things get improved upon very infrequently and some things get improved upon never.
+
+154
+00:11:23,200 --> 00:11:30,320
+And you know, just I'm going to give an example at the absolute extreme cuz I don't actually don't know how long this has been,
+
+155
+00:11:30,320 --> 00:11:39,720
+but I try not to criticize other people's software so much because I'm very familiar with the tradeoffs and prioritization and how hard it can be and blah blah blah blah.
+
+156
+00:11:39,720 --> 00:11:44,160
+But okay, so it most people have the Gmail calendar app on their phone.
+
+157
+00:11:44,160 --> 00:11:46,200
+I travel a fair bit.
+
+158
+00:11:46,200 --> 00:11:52,040
+I'm mostly in the Eastern time zone, sometimes in Mountain time, sometimes in Pacific,
+
+159
+00:11:52,040 --> 00:11:58,200
+sometimes in English time and sometimes in uh Japan, Central Europe.
+
+160
+00:11:58,200 --> 00:12:06,400
+There's like a you know, maybe 10 time zones, 12 time zones um that I would ever choose.
+
+161
+00:12:06,400 --> 00:12:13,040
+When you uh hit the option to set the time zone on an event in Google Calendar on the iOS app,
+
+162
+00:12:13,040 --> 00:12:16,800
+it presents all the time zones in the world in alphabetical order.
+
+163
+00:12:16,800 --> 00:12:24,000
+And that's like the I mean, there's probably worse orderings, but that it doesn't there's no value in that.
+
+164
+00:12:24,000 --> 00:12:31,000
+Um and even when you start searching, um it still presents them in alphabetical order by country with that term.
+
+165
+00:12:31,000 --> 00:12:36,040
+So, if I'm in California and I'm trying to set an appointment for next week when I'm back in New York,
+
+166
+00:12:36,040 --> 00:12:40,360
+and I type in e a s t, then I get a bunch of garbage.
+
+167
+00:12:40,360 --> 00:12:43,120
+Okay, East ern e r n.
+
+168
+00:12:43,120 --> 00:12:47,000
+And then the first one is Eastern Australia, New South Wales.
+
+169
+00:12:47,000 --> 00:12:49,240
+Um and then Eastern Australia, Queensland.
+
+170
+00:12:49,240 --> 00:12:53,920
+And then Eastern Australia, Daylight Savings and Eastern Australia, Standard Time.
+
+171
+00:12:53,920 --> 00:13:00,120
+And then you're like, well, [ __ ] What I I can't remember which one is Daylight Savings and which one is Standard Time and we know what.
+
+172
+00:13:00,120 --> 00:13:02,080
+I could keep going like this for a while.
+
+173
+00:13:02,080 --> 00:13:08,200
+This is an app that's used by at least hundreds of millions of people, presumably every single Google employee.
+
+174
+00:13:08,200 --> 00:13:10,160
+It's bananas how bad it is.
+
+175
+00:13:10,160 --> 00:13:14,120
+There's so many like there's all these clever things you could do.
+
+176
+00:13:14,120 --> 00:13:20,839
+Like you know me, I'm on the West Coast, first option should be the East Coast and vice versa.
+
+177
+00:13:20,839 --> 00:13:26,040
+But it definitely shouldn't be that every time zone is presented with equal you know,
+
+178
+00:13:26,040 --> 00:13:27,560
+value.
+
+179
+00:13:27,560 --> 00:13:30,920
+There's I don't even know, but like a couple hundred time zones.
+
+180
+00:13:30,920 --> 00:13:34,760
+I grew up in Canada, there's a Newfoundland has its own time zone which is offset by half an hour.
+
+181
+00:13:34,760 --> 00:13:39,280
+The population of Newfoundland is about half a million people, not that many people go to visit Newfoundland,
+
+182
+00:13:39,280 --> 00:13:42,080
+maybe a million people in all of history.
+
+183
+00:13:42,080 --> 00:13:44,760
+So like a million and a half out of 8 billion people.
+
+184
+00:13:44,760 --> 00:13:51,560
+And there's Newfoundland, you know, like the same with China time which is like 25% of the world's population and this stuff.
+
+185
+00:13:51,560 --> 00:14:01,360
+Anyway, I and that was a little bit longer than I intended to go on this example, but it is um uh it's crazy cuz no one's going to
+
+186
+00:14:01,360 --> 00:14:10,920
+switch to Gmail or to to G Suite Google Calendar from Outlook Exchange because the time zone picker is good.
+
+187
+00:14:10,920 --> 00:14:13,800
+So and maybe in some sense, it doesn't matter.
+
+188
+00:14:13,800 --> 00:14:20,959
+But at the same time, there's a real value in in delighting customers and there's an emotional connection that they form or don't form.
+
+189
+00:14:20,959 --> 00:14:28,600
+Um And in some cases that could be really positive like they would recommend it and when they switch companies or decide to start their own company,
+
+190
+00:14:28,600 --> 00:14:33,200
+they're going to choose to use this product or advocate for it because of that emotional connection.
+
+191
+00:14:33,200 --> 00:14:40,720
+And vice versa, they'll also be like, I hate this thing, it drives me bananas, I really think we should stop using it or you know,
+
+192
+00:14:40,720 --> 00:14:42,760
+advocate for the alternative.
+
+193
+00:14:42,760 --> 00:14:47,480
+Uh and I I think people just don't appreciate or come back to those things often enough.
+
+194
+00:14:47,480 --> 00:14:51,720
+And then there's this category of like really essential parts of the app.
+
+195
+00:14:51,720 --> 00:15:02,000
+Again, like account creation, sign up, forgot password, you know, things like that that for most organizations very infrequently
+
+196
+00:15:02,000 --> 00:15:11,520
+get a lot of love and and iteration and improvement despite the fact that the kind of the quality bar has gone up across the board and it continually goes up.
+
+197
+00:15:11,520 --> 00:15:15,520
+>> Let's go down that rabbit hole a little bit more around delight and craft.
+
+198
+00:15:15,520 --> 00:15:21,600
+Slack was famous for being one of the early, let's say, consumerized B2B SaaS products.
+
+199
+00:15:21,600 --> 00:15:26,240
+Slack leaned into delight and experience and craft and a great experience.
+
+200
+00:15:26,240 --> 00:15:33,560
+And you just as a product leader, I'd say is are known as as very taste forward, very craft oriented leader,
+
+201
+00:15:33,560 --> 00:15:36,560
+which is pretty rare and I think continues to be rare.
+
+202
+00:15:36,560 --> 00:15:38,000
+So, there's a few things I want to talk about here.
+
+203
+00:15:38,000 --> 00:15:40,240
+One is uh taste.
+
+204
+00:15:40,240 --> 00:15:46,280
+I heard at a talk you gave at a really unique you gave a talk on taste and you have a really unique perspective on just what taste is,
+
+205
+00:15:46,280 --> 00:15:47,920
+what product taste looks like.
+
+206
+00:15:47,920 --> 00:15:48,920
+Can you share that?
+
+207
+00:15:48,920 --> 00:15:56,240
+There is a lot of, you know, going back to the utility curves again, people who are obsessed with this one little thing and you know,
+
+208
+00:15:56,240 --> 00:16:01,400
+keep on adding more and more detail improvements beyond the point where it makes much of a difference.
+
+209
+00:16:01,400 --> 00:16:03,720
+But um I guess a couple things about taste.
+
+210
+00:16:03,720 --> 00:16:06,720
+So, one is can you learn to develop it?
+
+211
+00:16:06,720 --> 00:16:13,800
+I think so because like the word literally comes from experiencing food and putting stuff in your mouth.
+
+212
+00:16:13,800 --> 00:16:16,560
+And can people become better chefs with training?
+
+213
+00:16:16,560 --> 00:16:18,079
+Yes, absolutely.
+
+214
+00:16:18,079 --> 00:16:26,560
+Undoubtedly some people have a natural advantage or or you know, born with this ability to make discernments that are difficult for other people to make and stuff like that,
+
+215
+00:16:26,560 --> 00:16:29,400
+but you can definitely practice and you can definitely get better.
+
+216
+00:16:29,400 --> 00:16:37,600
+The second thing I'd say is um you can create a real advantage for yourself, for your product,
+
+217
+00:16:37,600 --> 00:16:44,480
+for your company um by leaning into it because most people don't have good taste and don't invest.
+
+218
+00:16:44,480 --> 00:16:51,839
+And so, you're probably familiar with the again, Jeff Bezos line, your margin is my opportunity.
+
+219
+00:16:51,839 --> 00:16:54,440
+Um and pretty obvious what he meant by that.
+
+220
+00:16:54,440 --> 00:16:59,440
+I would tell the story at Slack over and over again and actually made it part of the new hire welcome.
+
+221
+00:16:59,440 --> 00:17:09,280
+So, uh I'm I'm going I'm in Vancouver at our Vancouver office and I'm going for a walk with Brandon Velestuk who's our um at the time creative director for product development.
+
+222
+00:17:09,280 --> 00:17:10,760
+I think that was his title.
+
+223
+00:17:10,760 --> 00:17:13,880
+And uh we're in the Yaletown neighborhood in Vancouver.
+
+224
+00:17:13,880 --> 00:17:18,040
+So, there's like really narrow sidewalks cuz it used to be a warehouse district and now it's like,
+
+225
+00:17:18,040 --> 00:17:22,199
+you know, fancy restaurants and nail salons and geeks and stuff.
+
+226
+00:17:22,199 --> 00:17:24,839
+And as it does in Vancouver, it starts to rain.
+
+227
+00:17:24,839 --> 00:17:26,520
+We don't have umbrellas.
+
+228
+00:17:26,520 --> 00:17:35,520
+We're walking back to the office and most people have umbrellas and we're you know, kind of on these narrow sidewalks with people coming towards us with umbrellas.
+
+229
+00:17:35,520 --> 00:17:39,840
+And we noticed how few people would move their umbrella out of the way.
+
+230
+00:17:39,840 --> 00:17:48,760
+And of course, you know, the other person their umbrella, the pokey bits are exactly at eye level for for people walking towards them and we would get like,
+
+231
+00:17:48,760 --> 00:17:53,960
+you know, forced off the sidewalk or like having to duck down or whatever.
+
+232
+00:17:53,960 --> 00:18:00,640
+And we it became a game where we were guessing, is this person going to tilt their umbrella out of the way so we can pass or not?
+
+233
+00:18:00,640 --> 00:18:05,000
+And something like 1/3 of the people would do it.
+
+234
+00:18:05,000 --> 00:18:13,160
+And we had this conversation about it where it's like, okay, I can think of three reasons why people wouldn't do it.
+
+235
+00:18:13,160 --> 00:18:23,560
+One is they have very few avenues in their life to exercise power and this is one of them and they're just like want to get out there and dominate people and cause
+
+236
+00:18:23,560 --> 00:18:24,200
+suffering.
+
+237
+00:18:24,200 --> 00:18:28,679
+So, shouldn't ascribe to malice that which can be ascribed to ignorance.
+
+238
+00:18:28,679 --> 00:18:34,200
+And so, that's probably you know, probably is the explanation for a tiny tiny tiny percentage of people.
+
+239
+00:18:34,200 --> 00:18:36,720
+But the other two explanations aren't that great either.
+
+240
+00:18:36,720 --> 00:18:45,080
+One is that uh they see it's happening, they see they're pushing other people off the sidewalk or poking them in the eye or whatever and they're just like,
+
+241
+00:18:45,080 --> 00:18:46,080
+[ __ ] that's too bad.
+
+242
+00:18:46,080 --> 00:18:50,560
+I you know, I wish there was something I could do about that, but I can't think of anything.
+
+243
+00:18:50,560 --> 00:18:53,240
+And the last reason is they just don't notice at all.
+
+244
+00:18:53,240 --> 00:18:59,679
+But they're just oblivious to their impact on on other people and they're they're so in their head.
+
+245
+00:18:59,679 --> 00:19:03,120
+And I can't really think of any other explanations for it besides that.
+
+246
+00:19:03,120 --> 00:19:08,480
+And so we would say at Slack like tilting your umbrella is our opportunity.
+
+247
+00:19:08,480 --> 00:19:18,000
+You know, that's not a great rephrase of the your margin is my opportunity, but your failure to really be considerate and uh
+
+248
+00:19:18,000 --> 00:19:27,040
+exercise this courtesy and really be empathic about other people's experience is an an advantage you can create a critical advantage.
+
+249
+00:19:27,040 --> 00:19:36,960
+And I think that there's many reasons why Slack was successful at the moment it was successful and I think we had a bunch of really wonderful tailwinds and and all of that stuff,
+
+250
+00:19:36,960 --> 00:19:47,600
+but it wouldn't have grown the way it did without those little conveniences which caused people to form an emotional connection because a lot of our growth came from you know,
+
+251
+00:19:47,600 --> 00:19:53,720
+startup A uses Slack and then someone leaves startup A for startup B and startup B doesn't use Slack yet,
+
+252
+00:19:53,720 --> 00:19:57,520
+and they would be like, "Oh my god, you guys, you really get This is This is so good.
+
+253
+00:19:57,520 --> 00:19:58,720
+You've got to try it."
+
+254
+00:19:58,720 --> 00:20:06,920
+And uh And the the spread was driven by that cross-pollination and and people really genuinely advocating for it.
+
+255
+00:20:06,920 --> 00:20:08,960
+That is an amazing metaphor.
+
+256
+00:20:08,960 --> 00:20:13,480
+I I >> [laughter] >> I love that one moment became like a value of product craftsmanship,
+
+257
+00:20:13,480 --> 00:20:18,600
+but it's like >> totally irrelevant business like is not a very common use case, and on you know,
+
+258
+00:20:18,600 --> 00:20:20,760
+company swag and and stuff like that.
+
+259
+00:20:20,760 --> 00:20:25,920
+Is there an example I mean I imagine there are many, but from the time of building Slack,
+
+260
+00:20:25,920 --> 00:20:32,760
+especially in the early days, where you chose to go big on craftsmanship and experience and and delight versus speed,
+
+261
+00:20:32,760 --> 00:20:37,440
+where you thought looking back that was a really great idea and it worth really core to success?
+
+262
+00:20:37,440 --> 00:20:39,480
+Here's a bunch of little examples.
+
+263
+00:20:39,480 --> 00:20:47,440
+Um so someone else came up with this idea, and I'm I'm trying to remember who it was.
+
+264
+00:20:47,440 --> 00:20:53,160
+Um but I it's a maybe Andrew maybe Ben Brown, something like that, who was like, "Okay,
+
+265
+00:20:53,160 --> 00:21:04,200
+where Why do we ask people for email address and password if um they their ownership of the email address was the thing that allowed them to create the account in the first place?
+
+266
+00:21:04,200 --> 00:21:07,360
+Why don't we just ask them for their email address and then send them a link?"
+
+267
+00:21:07,360 --> 00:21:13,040
+And so when Slack's first version of the mobile app came out, we're like,"Typing your password on your phone,
+
+268
+00:21:13,040 --> 00:21:19,720
+if you have any you know, minimal threshold of of password hygiene is a terrible experience.
+
+269
+00:21:19,720 --> 00:21:25,200
+They have capital H, lowercase Q, 6 correct period.
+
+270
+00:21:25,200 --> 00:21:27,200
+So let's just have them enter the email address.
+
+271
+00:21:27,200 --> 00:21:27,960
+We'll send them a link.
+
+272
+00:21:27,960 --> 00:21:31,800
+The link will automatically open the app and and authenticate them."
+
+273
+00:21:31,800 --> 00:21:33,440
+And so there's one a little example.
+
+274
+00:21:33,440 --> 00:21:36,040
+Wow, so you guys invented the magic link uh experience.
+
+275
+00:21:36,040 --> 00:21:37,680
+>> someone else invented I want to be clear that.
+
+276
+00:21:37,680 --> 00:21:42,080
+Uh I I had seen that idea somewhere else like someone else blog post about it or something like that,
+
+277
+00:21:42,080 --> 00:21:48,880
+but we were the first ones that to my knowledge that that really kind of like scaled that and made it uh a standard.
+
+278
+00:21:48,880 --> 00:21:57,840
+There is another one which we we you know, we really puzzled about in the very early days where people have a long history of using messaging apps from like
+
+279
+00:21:57,840 --> 00:22:07,880
+AOL Instant Messenger to SMS to um WhatsApp, where their expectation is they get a notification for every message that's received.
+
+280
+00:22:07,880 --> 00:22:12,760
+And in the case of Slack, that doesn't make as much sense because you're a a member of many channels,
+
+281
+00:22:12,760 --> 00:22:15,040
+and the messages may not be for you.
+
+282
+00:22:15,040 --> 00:22:21,240
+And so that's why we have that at tagging people and um you know, We certainly didn't invent that.
+
+283
+00:22:21,240 --> 00:22:22,679
+That was that was Twitter.
+
+284
+00:22:22,679 --> 00:22:32,720
+Um but what we realized was people were signing up for Slack to you know, and it's like one engineer on this team inside of this larger organization inside of this larger company,
+
+285
+00:22:32,720 --> 00:22:35,679
+and they would pull in the person next to them, and they would say, "Let's try it out."
+
+286
+00:22:35,679 --> 00:22:39,600
+And then they would send a message, and then the person would be like, "I didn't get a notification.
+
+287
+00:22:39,600 --> 00:22:41,600
+This is this is bullshit."
+
+288
+00:22:41,600 --> 00:22:50,360
+Um so we reluctantly decided that we had to send notifications for every single message as the default for new accounts.
+
+289
+00:22:50,360 --> 00:22:53,040
+But once you had I don't remember what the thresholds were.
+
+290
+00:22:53,040 --> 00:22:57,800
+I think it's what once you had received 10 messages, we would pop up this little thing that says,
+
+291
+00:22:57,800 --> 00:23:01,160
+"Hey, you have our default settings for notifications.
+
+292
+00:23:01,160 --> 00:23:02,840
+We don't want Slack to be noisy for you.
+
+293
+00:23:02,840 --> 00:23:04,679
+Would you like to switch to our recommended settings?"
+
+294
+00:23:04,679 --> 00:23:08,800
+And then they would just click a link, and it would you know, have what should be the default,
+
+295
+00:23:08,800 --> 00:23:13,520
+which is you only get a notification if it's a DM or someone tags you.
+
+296
+00:23:13,520 --> 00:23:17,560
+But we realized it was worth that investment to get people over the hump.
+
+297
+00:23:17,560 --> 00:23:25,040
+A much more uh Well, here's a I'll give you one one more simple one and and then one kind of more complex one.
+
+298
+00:23:25,040 --> 00:23:33,320
+People would just like the I can't remember if it's called urgent or important, but the flag in in Outlook that like you know,
+
+299
+00:23:33,320 --> 00:23:37,720
+set the priority of a message for the recipients, always got abused inside of every company.
+
+300
+00:23:37,720 --> 00:23:41,000
+As as soon as someone does it, like everyone's like, "Okay, I'm going to do that, too,
+
+301
+00:23:41,000 --> 00:23:41,679
+for my message."
+
+302
+00:23:41,679 --> 00:23:45,360
+And so all of your messages have the little flag, and it's becomes useless.
+
+303
+00:23:45,360 --> 00:23:50,840
+We have at everyone, which causes a notification to be sent to every member of the channel when the message is sent.
+
+304
+00:23:50,840 --> 00:23:55,320
+And people would start you know, like someone would find this feature inside of an organization.
+
+305
+00:23:55,320 --> 00:23:56,800
+They would at everyone.
+
+306
+00:23:56,800 --> 00:23:58,200
+Everyone would get a notification.
+
+307
+00:23:58,200 --> 00:24:02,920
+And then the next person to send a message was like, "Well, my thing's more important than um Bob's saying.
+
+308
+00:24:02,920 --> 00:24:04,920
+I'm going to also at everyone."
+
+309
+00:24:04,920 --> 00:24:10,240
+And it became really obnoxious, and people would complain about it, but it was a I don't know.
+
+310
+00:24:10,240 --> 00:24:16,000
+I guess tragedy of the commons is not quite exactly the same thing, but it was a this real dynamic that happened over and over again.
+
+311
+00:24:16,000 --> 00:24:19,800
+So um we came up with what was called the shouty rooster.
+
+312
+00:24:19,800 --> 00:24:22,400
+And internally we said,"Don't be a cock."
+
+313
+00:24:22,400 --> 00:24:25,400
+Um but we didn't obviously say that publicly.
+
+314
+00:24:25,400 --> 00:24:31,960
+When you at everyone, a little rooster would pop up, and it would have like these sound waves coming out of its mouth and being really obnoxious,
+
+315
+00:24:31,960 --> 00:24:38,560
+and say, "Hey, this is going to cause a notification for 147 people in eight different time zones.
+
+316
+00:24:38,560 --> 00:24:42,360
+Are you sure you want to send this message with the at everyone?"
+
+317
+00:24:42,360 --> 00:24:45,520
+Um and of course that worked amazingly, and it dropped off.
+
+318
+00:24:45,520 --> 00:24:52,360
+Um and again, it was really trying to shape people's behavior so that they use We want to Slack to be very flexible,
+
+319
+00:24:52,360 --> 00:24:57,400
+um but we knew that there was ways to use it that would be annoying and and difficult for everyone.
+
+320
+00:24:57,400 --> 00:25:02,400
+And so try to shape the communication culture inside the organization to take best advantage of it.
+
+321
+00:25:02,400 --> 00:25:03,400
+That feature still exists.
+
+322
+00:25:03,400 --> 00:25:05,200
+I see that rooster all the or no, I don't see it all.
+
+323
+00:25:05,200 --> 00:25:08,120
+Well, actually I do at channel cuz I run a big Slack.
+
+324
+00:25:08,120 --> 00:25:11,120
+Uh so I see that rooster and that survived.
+
+325
+00:25:11,120 --> 00:25:12,040
+Yeah.
+
+326
+00:25:12,040 --> 00:25:16,679
+Um yeah, that survived and and good uh because it's Sure.
+
+327
+00:25:16,679 --> 00:25:21,280
+It was a trivially easy thing to implement, and made a really big difference.
+
+328
+00:25:21,280 --> 00:25:27,760
+But it also taught people how the product worked cuz I mean people probably didn't know that at everyone or at channel um Right.
+
+329
+00:25:27,760 --> 00:25:30,800
+Well, didn't think about the cost at least.
+
+330
+00:25:30,800 --> 00:25:31,800
+Genius.
+
+331
+00:25:31,800 --> 00:25:32,880
+Yeah.
+
+332
+00:25:32,880 --> 00:25:35,160
+Here's here's one more.
+
+333
+00:25:35,160 --> 00:25:39,600
+Uh So we decided we're going to do do not disturb as a feature.
+
+334
+00:25:39,600 --> 00:25:51,480
+Um >> [clears throat] >> And we had this not a conundrum, but we you're trying to take into account all the all the different uses of Slack cuz at the time we be implementing this
+
+335
+00:25:51,480 --> 00:25:59,800
+like 2017, there was you know, tens of thousands of of paying customers that organizations,
+
+336
+00:25:59,800 --> 00:26:03,679
+hundreds of them, probably millions of users, maybe hundreds of thousands of organizations.
+
+337
+00:26:03,679 --> 00:26:05,120
+I don't remember how many.
+
+338
+00:26:05,120 --> 00:26:14,080
+Um and everyone had set up stuff the way that they liked it, including things like ops alerts going into channels for on-call engineers for for you know,
+
+339
+00:26:14,080 --> 00:26:19,200
+some of the biggest systems uh and and apps in the world.
+
+340
+00:26:19,200 --> 00:26:22,240
+And so we couldn't just like deploy it right away.
+
+341
+00:26:22,240 --> 00:26:28,440
+We realized that some of the decision-makers, the owners of the organizations, were going to have really strong opinions about this.
+
+342
+00:26:28,440 --> 00:26:37,320
+We also realized that some of the engineers are going to have strong opinions, and we wanted to figure out a way to kind of balance the concerns and give people appropriate means of control.
+
+343
+00:26:37,320 --> 00:26:45,000
+So we came up with this really elaborate system for the rollout, which was we told everyone um I'm sorry,
+
+344
+00:26:45,000 --> 00:26:49,200
+every every Slack administrator that this was coming weeks before it came.
+
+345
+00:26:49,200 --> 00:26:57,520
+And we told them that we were going to set a default for their organization, which I believe was um either 7:00 p.m.
+
+346
+00:26:57,520 --> 00:26:58,280
+to 7:00 a.m.
+
+347
+00:26:58,280 --> 00:27:00,200
+in their local time zone or or 8:00 a.m.
+
+348
+00:27:00,200 --> 00:27:00,800
+to 8:00 p.m.
+
+349
+00:27:00,800 --> 00:27:02,520
+I can't remember which was.
+
+350
+00:27:02,520 --> 00:27:05,360
+But also that they could override that default.
+
+351
+00:27:05,360 --> 00:27:12,440
+And also that the individual end users could override that system owner default.
+
+352
+00:27:12,440 --> 00:27:20,520
+And finally that the system owner could, if they changed the default again, would override all of the the end users'preferences.
+
+353
+00:27:20,520 --> 00:27:24,920
+And then the end users could uh override them again.
+
+354
+00:27:24,920 --> 00:27:29,440
+And it it wasn't to create this dynamic where people are who are at war, but so that you could change a policy,
+
+355
+00:27:29,440 --> 00:27:31,960
+and then people could still customize and and stuff like that.
+
+356
+00:27:31,960 --> 00:27:41,400
+But this was you know, a much longer and more convoluted process, but it allowed the millions of people who were using Slack
+
+357
+00:27:41,400 --> 00:27:47,679
+to get the feature without creating a bunch of conflict and without people turning it off automatically.
+
+358
+00:27:47,679 --> 00:27:53,280
+And I think critically, with setting a bunch of defaults um because if we didn't set the default,
+
+359
+00:27:53,280 --> 00:27:55,360
+most people wouldn't turn it on at all.
+
+360
+00:27:55,360 --> 00:27:59,600
+You know, like there wasn't If we didn't default you to do not disturb from 8:00 p.m.
+
+361
+00:27:59,600 --> 00:28:05,200
+to 8:00 a.m., um you probably if you're the average person, wouldn't ever do it yourself.
+
+362
+00:28:05,200 --> 00:28:14,440
+Um so that's a another elaborate example uh where I think that investment made sense because it was a critical feature for a lot of people,
+
+363
+00:28:14,440 --> 00:28:21,840
+and um if we hadn't done it that way, I think it would have caused a lot of complaints and conflict and and stuff like that.
+
+364
+00:28:21,840 --> 00:28:22,960
+Those are amazing examples.
+
+365
+00:28:22,960 --> 00:28:25,960
+I very much appreciate that do not disturb feature when you guys launched that.
+
+366
+00:28:25,960 --> 00:28:27,520
+I still remember that coming out.
+
+367
+00:28:27,520 --> 00:28:30,080
+I'm sure a lot of people are very thankful for that.
+
+368
+00:28:30,080 --> 00:28:31,200
+Yeah.
+
+369
+00:28:31,200 --> 00:28:36,000
+Something else I heard that you often espouse, which is counterintuitive to a lot of people,
+
+370
+00:28:36,000 --> 00:28:39,240
+is is about friction, friction in the product experience.
+
+371
+00:28:39,240 --> 00:28:41,200
+That friction is actually often a good thing.
+
+372
+00:28:41,200 --> 00:28:44,720
+They actually it's a feature, not a bug a lot of times, if you use it well.
+
+373
+00:28:44,720 --> 00:28:46,360
+Talk about your your experience there.
+
+374
+00:28:46,360 --> 00:28:56,880
+Yeah, well, so yes, um and there's also another um issue around friction, which is it it became
+
+375
+00:28:56,880 --> 00:29:03,120
+like a mantra or just like a kind of uh an assumption that you should always be trying to remove friction.
+
+376
+00:29:03,120 --> 00:29:06,200
+And uh in in some cases, that's true.
+
+377
+00:29:06,200 --> 00:29:08,880
+You know, we would talk about it Slack like it it was hard to market.
+
+378
+00:29:08,880 --> 00:29:11,720
+It's hard to explain what it was if you had never used it before.
+
+379
+00:29:11,720 --> 00:29:14,919
+You could say a messaging app for businesses or or whatever.
+
+380
+00:29:14,919 --> 00:29:20,360
+But you know, like a critical disadvantage to Slack doing out-of-home advertising, putting up a billboard,
+
+381
+00:29:20,360 --> 00:29:26,480
+versus beer or cars, is no one needs to be explained why people would want a car or beer.
+
+382
+00:29:26,480 --> 00:29:30,159
+Um but everyone would have to be explained why they why they want Slack.
+
+383
+00:29:30,159 --> 00:29:33,520
+Um and so the problem there is is comprehension.
+
+384
+00:29:33,520 --> 00:29:36,240
+And this will come up uh an enormous amount.
+
+385
+00:29:36,240 --> 00:29:41,240
+So now imagine you want to get tickets to the Taylor Swift concert in San Francisco.
+
+386
+00:29:41,240 --> 00:29:43,400
+And you go to the Ticketmaster website.
+
+387
+00:29:43,400 --> 00:29:48,680
+If you think about both your your comprehension, it's perfect in this case.
+
+388
+00:29:48,680 --> 00:29:53,320
+And um that translates into the specificity of your intent.
+
+389
+00:29:53,320 --> 00:29:56,120
+And the degree of your intent is also kind of maxed out.
+
+390
+00:29:56,120 --> 00:29:58,000
+So like, I really want to get these tickets.
+
+391
+00:29:58,000 --> 00:29:59,400
+And I know exactly what they are.
+
+392
+00:29:59,400 --> 00:30:03,480
+They're Taylor Swift tickets for this date at this venue.
+
+393
+00:30:03,480 --> 00:30:08,360
+And so in that scenario, it doesn't really matter if Ticketmaster's website is slow.
+
+394
+00:30:08,360 --> 00:30:10,720
+It doesn't really matter if the payments page errors out.
+
+395
+00:30:10,720 --> 00:30:13,120
+Like you're going to persist and and get through it.
+
+396
+00:30:13,120 --> 00:30:15,640
+So obviously they're better to reduce friction.
+
+397
+00:30:15,640 --> 00:30:21,560
+But in some sense it doesn't It's not a huge amount of of value in doing that.
+
+398
+00:30:21,560 --> 00:30:29,360
+Uh for most creators of of products, there are a handful of cases where that really is true for you as well.
+
+399
+00:30:29,360 --> 00:30:36,760
+And they they include things like user registration, um authentication, uh checkout flows for e-commerce.
+
+400
+00:30:36,760 --> 00:30:43,800
+Like I'm I am significantly more likely to buy something if there's Apple Pay or Shop Pay or something like that.
+
+401
+00:30:43,800 --> 00:30:55,040
+I'm significantly less likely to carry through the purchase of something if the I have to manually enter all of the fields of my address one at a time rather than having one of those address pickers.
+
+402
+00:30:55,040 --> 00:31:00,320
+It's It's crazy, but like the issue is my intent isn't always 100%, right?
+
+403
+00:31:00,320 --> 00:31:03,720
+And the specificity of my intent isn't always 100%.
+
+404
+00:31:03,720 --> 00:31:11,360
+So if your thing is direct-to-consumer t-shirts and you acquire customers through Instagram ads,
+
+405
+00:31:11,360 --> 00:31:12,920
+all of them know what t-shirts are.
+
+406
+00:31:12,920 --> 00:31:15,880
+It's like I This looks like a good t-shirt to me.
+
+407
+00:31:15,880 --> 00:31:18,680
+But I'm rarely like 100% intent.
+
+408
+00:31:18,680 --> 00:31:20,320
+I might have like you know, very specific intent.
+
+409
+00:31:20,320 --> 00:31:21,920
+My intent's like 70%.
+
+410
+00:31:21,920 --> 00:31:27,320
+So if you're the amount of friction is uh above that, I just I'm not going to do it.
+
+411
+00:31:27,320 --> 00:31:38,240
+But now okay, people coming to slack.com, they had some uh friend had mentioned Slack and kind of talked their ear off at some point months ago.
+
+412
+00:31:38,240 --> 00:31:39,840
+And then they saw a news article.
+
+413
+00:31:39,840 --> 00:31:41,600
+And then they saw someone's tweet.
+
+414
+00:31:41,600 --> 00:31:44,760
+And then they saw an ad on a website they were visiting.
+
+415
+00:31:44,760 --> 00:31:46,720
+And they finally said, okay, I'm going to go to this website.
+
+416
+00:31:46,720 --> 00:31:51,760
+So their intent is like at the absolute minimum threshold.
+
+417
+00:31:51,760 --> 00:31:57,280
+Like it's just it was before that last event happened, they were below and now they're above.
+
+418
+00:31:57,280 --> 00:31:59,000
+But they're just above.
+
+419
+00:31:59,000 --> 00:32:04,240
+The specificity of their intent, like I need to get Taylor Swift concerts for this date at this venue,
+
+420
+00:32:04,240 --> 00:32:07,679
+um is also very low cuz they're like uh it's a work thing.
+
+421
+00:32:07,679 --> 00:32:12,880
+I'm not sure it's a spreadsheet or like a calendar or do you know exactly what it is?
+
+422
+00:32:12,880 --> 00:32:21,480
+Um So they were coming in at you know, 0.1% over these these critical thresholds.
+
+423
+00:32:21,480 --> 00:32:23,679
+Um >> [clears throat] >> what was the challenge?
+
+424
+00:32:23,679 --> 00:32:25,240
+It wasn't friction, right?
+
+425
+00:32:25,240 --> 00:32:33,760
+Because it's not like they were aiming for something and they knew what they were aiming for and they were just trying to get themselves to that point.
+
+426
+00:32:33,760 --> 00:32:37,840
+What we had to worry about was creating comprehension in in two senses.
+
+427
+00:32:37,840 --> 00:32:39,600
+What is this thing?
+
+428
+00:32:39,600 --> 00:32:42,960
+Um and what am I supposed to do next?
+
+429
+00:32:42,960 --> 00:32:52,240
+And that creation of comprehension in the in the sense of explaining stuff, that creation of comprehension in the sense of the design of the
+
+430
+00:32:52,240 --> 00:33:02,360
+of the UI, of the screen, of the page or whatever and the um the visual hierarchy and the affordances that are there and the and the um
+
+431
+00:33:02,360 --> 00:33:08,000
+indication of things to interact with and and which thing should be the next thing to do and all that stuff.
+
+432
+00:33:08,000 --> 00:33:11,880
+That becomes really critical and I think very very few people recognize that.
+
+433
+00:33:11,880 --> 00:33:17,480
+They're like I want to get people who come to my web page to the sign-up form as quickly as possible.
+
+434
+00:33:17,480 --> 00:33:21,040
+But if they don't know what they're signing up for, they don't know what it's going to do after,
+
+435
+00:33:21,040 --> 00:33:22,480
+is it going to spam them?
+
+436
+00:33:22,480 --> 00:33:27,440
+Um They don't know am I going to have to pay on the next step or or what?
+
+437
+00:33:27,440 --> 00:33:29,840
+Then they're just going to back out.
+
+438
+00:33:29,840 --> 00:33:39,960
+And this was like a a lifelong battle because the remove friction um kind of orientation is so deep in people.
+
+439
+00:33:39,960 --> 00:33:46,400
+Again, it really makes a difference in in those cases where people do have an intent and they do know what they're trying to do.
+
+440
+00:33:46,400 --> 00:33:52,400
+Um It is a a poor approach when the challenge is really comprehension.
+
+441
+00:33:52,400 --> 00:34:04,200
+And I think the secret is most 70%, 80% or whatever of a product design is in that comprehension step because like people if they do ever open
+
+442
+00:34:04,200 --> 00:34:09,359
+the preferences tab and look at all the options, rarely have an idea.
+
+443
+00:34:09,359 --> 00:34:17,399
+And if you can't teach them, you know, or make it possible for them to discover what the capabilities are,
+
+444
+00:34:17,399 --> 00:34:20,080
+then they're not going to take advantage of them and they're not going to get as much out of it.
+
+445
+00:34:20,080 --> 00:34:27,840
+And I think that the trick is for most of the unique parts of any application, most of like the specific things that your app,
+
+446
+00:34:27,840 --> 00:34:34,520
+your product, your software does are areas where the challenge is going to be comprehension instead of friction.
+
+447
+00:34:34,520 --> 00:34:35,520
+It really could be anything.
+
+448
+00:34:35,520 --> 00:34:44,520
+Like Shopify, um the purpose of the of the service for its end users is generally going to be kind of clear.
+
+449
+00:34:44,520 --> 00:34:51,879
+But most people most first-time store openers don't know that they can get reports.
+
+450
+00:34:51,879 --> 00:34:54,480
+Or if they know that they can get reports, they don't know what kinds of reports.
+
+451
+00:34:54,480 --> 00:34:58,720
+And if they know what kinds of reports they can get, they don't know how they can tweak them and how they can um you know,
+
+452
+00:34:58,720 --> 00:35:03,640
+what the timing should be and which things that that are are more important to display.
+
+453
+00:35:03,640 --> 00:35:05,920
+And I could go on and on and on and on.
+
+454
+00:35:05,920 --> 00:35:07,200
+And people just don't recognize that.
+
+455
+00:35:07,200 --> 00:35:09,040
+So like the I want to see if this is still true.
+
+456
+00:35:09,040 --> 00:35:13,520
+I'm just going to open my iPhone and the clock app.
+
+457
+00:35:13,520 --> 00:35:19,880
+And they had the most the the craziest description for alarms.
+
+458
+00:35:19,880 --> 00:35:23,320
+Uh okay, it's still it's a little bit different.
+
+459
+00:35:23,320 --> 00:35:26,240
+Um But people can look at their own phone.
+
+460
+00:35:26,240 --> 00:35:37,160
+Uh so I have It says alarms and then it says sleep and a vertical bar, wake up, and says no alarm and a button that says change.
+
+461
+00:35:37,160 --> 00:35:39,920
+And then if you hit it, it says sleep is off.
+
+462
+00:35:39,920 --> 00:35:44,600
+In order to automatically turn on sleep features and edit your schedule, you need to turn sleep on.
+
+463
+00:35:44,600 --> 00:35:52,200
+So obviously but sleep was a good name for this thing if you already had a way of getting people to understand it.
+
+464
+00:35:52,200 --> 00:35:57,280
+If you don't, it's like ungrammatical and incomprehensible and why would you ever do it?
+
+465
+00:35:57,280 --> 00:36:02,000
+And I got to guess this It's been like this for years.
+
+466
+00:36:02,000 --> 00:36:11,640
+90 plus percent and and maybe like 98% of people just do what I do, which is that you just create up like I want the alarm on and I'm going to set the time for it.
+
+467
+00:36:11,640 --> 00:36:14,440
+And I don't know what turning sleep on does.
+
+468
+00:36:14,440 --> 00:36:20,200
+Um But it's a just like the the lack of comprehension prevents people from getting the value.
+
+469
+00:36:20,200 --> 00:36:25,000
+And I'm sure that there's a bunch of value behind turning sleep on, whatever that means.
+
+470
+00:36:25,000 --> 00:36:31,600
+And people spend a lot of time on those features and it integrates with like biometrics in your watch or who knows.
+
+471
+00:36:31,600 --> 00:36:37,280
+I I again, I still don't know because turning sleep on is like I don't What does that do?
+
+472
+00:36:37,280 --> 00:36:41,440
+And what is it going to cost me and what impact is it going to have?
+
+473
+00:36:41,440 --> 00:36:44,640
+Those examples are just to me all over the place.
+
+474
+00:36:44,640 --> 00:36:55,200
+And um the reason I don't use most software where there was an actual choice point or the reason I don't use most features where there was a choice point for me is because I didn't understand what they're going to do and
+
+475
+00:36:55,200 --> 00:37:00,880
+I don't give a [ __ ] And if there is one mantra that I would use to replace that, it's don't make me think.
+
+476
+00:37:00,880 --> 00:37:02,680
+I don't know if you remember that that book.
+
+477
+00:37:02,680 --> 00:37:04,040
+>> Absolutely.
+
+478
+00:37:04,040 --> 00:37:04,480
+Yeah.
+
+479
+00:37:04,480 --> 00:37:08,800
+And honestly it's been many more than 10 years since I read it.
+
+480
+00:37:08,800 --> 00:37:10,880
+So I don't even remember all the examples in the book.
+
+481
+00:37:10,880 --> 00:37:15,640
+But as a mantra, that was like up there with utility curves cuz for two reasons.
+
+482
+00:37:15,640 --> 00:37:19,440
+One is it's just like it it it's expensive to make a decision.
+
+483
+00:37:19,440 --> 00:37:23,000
+Like you literally burn glucose.
+
+484
+00:37:23,000 --> 00:37:25,320
+Like there's a metabolic action.
+
+485
+00:37:25,320 --> 00:37:31,359
+There's like ATP created in the mitochondria in your neurons and like a bunch of stuff is happening.
+
+486
+00:37:31,359 --> 00:37:36,400
+And people do get decision fatigue and there is like you know, a cognitive cost of all these things.
+
+487
+00:37:36,400 --> 00:37:43,800
+But also there's an emotional aspect, which is if you if your software kind of stops me as I can and asks me to make a decision and I don't really understand it,
+
+488
+00:37:43,800 --> 00:37:45,440
+you make me feel stupid.
+
+489
+00:37:45,440 --> 00:37:45,840
+Right?
+
+490
+00:37:45,840 --> 00:37:48,640
+I'm like, I don't understand this.
+
+491
+00:37:48,640 --> 00:37:54,520
+I Some people are are you know, maybe their orientation is looking that the software is stupid.
+
+492
+00:37:54,520 --> 00:37:56,840
+But I think most people are like, oh, I'm dumb.
+
+493
+00:37:56,840 --> 00:37:59,840
+And if you ever talk to people who aren't especially technologically savvy, you know,
+
+494
+00:37:59,840 --> 00:38:08,760
+like the canonical example is like people who are under 50 talking to their parents about using some piece of software and what they're supposed to do,
+
+495
+00:38:08,760 --> 00:38:10,840
+the parents almost always feel stupid.
+
+496
+00:38:10,840 --> 00:38:13,520
+They're the ones that are that are wrong.
+
+497
+00:38:13,520 --> 00:38:22,240
+Um and so if you're causing people to think, in the the best case, it's like unnecessary use of their you know,
+
+498
+00:38:22,240 --> 00:38:24,040
+biological resources.
+
+499
+00:38:24,040 --> 00:38:26,840
+And then in the worst case, you've like now made them feel bad.
+
+500
+00:38:26,840 --> 00:38:28,320
+Like emotionally bad.
+
+501
+00:38:28,320 --> 00:38:30,880
+And they're going to associate that with the product forever.
+
+502
+00:38:30,880 --> 00:38:34,840
+And I mean, these are things that are just kind of rolling one into the other.
+
+503
+00:38:34,840 --> 00:38:40,359
+So I'm going to uh keep going with one last thing cuz they just kind of come together,
+
+504
+00:38:40,359 --> 00:38:47,200
+which is along with reduced friction, it's like reduce the number of clicks or taps it takes for someone to accomplish something,
+
+505
+00:38:47,200 --> 00:38:50,480
+which is almost always exactly the wrong thing.
+
+506
+00:38:50,480 --> 00:39:02,160
+Like it's um the easiest way like you could make any action in your app a single click or tap by just exposing every single possibility on one screen that scrolls
+
+507
+00:39:02,160 --> 00:39:05,480
+for thousands and thousands and thousands and thousands of pages.
+
+508
+00:39:05,480 --> 00:39:05,880
+Right?
+
+509
+00:39:05,880 --> 00:39:07,840
+And obviously that's terrible.
+
+510
+00:39:07,840 --> 00:39:12,359
+So why do people think that a little bit of that is good?
+
+511
+00:39:12,359 --> 00:39:20,200
+And here's an example like You open a menu, there's 14 things that people might want to do.
+
+512
+00:39:20,200 --> 00:39:28,840
+Um Okay, level one is group them into like items and put a vertical uh sorry, horizontal divider between them.
+
+513
+00:39:28,840 --> 00:39:32,560
+So at least people can kind of chunk and and see what there is.
+
+514
+00:39:32,560 --> 00:39:39,840
+Step two is present the two or three most common things or the five most common things or whatever and then have some form of other.
+
+515
+00:39:39,840 --> 00:39:43,400
+And you you know, then you go to a sub menu that has more items.
+
+516
+00:39:43,400 --> 00:39:50,000
+And you the decision of like how to tune that becomes incredibly important.
+
+517
+00:39:50,000 --> 00:39:54,920
+Uh I'm going to pick on Google again just because it is I feel like I'm Donald Trump here,
+
+518
+00:39:54,920 --> 00:39:56,800
+but I'm going to interrupt myself again with a story.
+
+519
+00:39:56,800 --> 00:40:03,120
+It's And at some some conference or event, I don't remember what it was, and this is probably 8 years ago,
+
+520
+00:40:03,120 --> 00:40:10,920
+and uh it's we're in the bar after the session has ended at this thing, and John Collison from Stripe is there,
+
+521
+00:40:10,920 --> 00:40:19,960
+um and uh Sundar, CEO of Google, is there, and John I I'm sorry, Patrick goes up to the Sundar,
+
+522
+00:40:19,960 --> 00:40:21,320
+uh and they could talk about anything, right?
+
+523
+00:40:21,320 --> 00:40:26,960
+Like, you know, Stripe wasn't at the behemoth it was now at that point, but it was still like,
+
+524
+00:40:26,960 --> 00:40:29,800
+you know, a significant company, it was up-and-coming.
+
+525
+00:40:29,800 --> 00:40:32,680
+And what does uh Patrick want to talk to Sundar about?
+
+526
+00:40:32,680 --> 00:40:42,520
+It's in the Gmail um app, the dragging of people like you when you reply all um to a message,
+
+527
+00:40:42,520 --> 00:40:48,480
+you often want to change so the the two recipient to the CC, and move someone from CC to two or something like that.
+
+528
+00:40:48,480 --> 00:40:56,280
+And just how physically, like the the degree of dexterity that's required to do that inside of the Gmail app is very high.
+
+529
+00:40:56,280 --> 00:40:58,000
+It still hasn't been fixed.
+
+530
+00:40:58,000 --> 00:41:02,200
+But it really struck me that like, you know, Patrick could have asked for anything.
+
+531
+00:41:02,200 --> 00:41:03,240
+It could have been any topic.
+
+532
+00:41:03,240 --> 00:41:04,320
+It could have been a partnership.
+
+533
+00:41:04,320 --> 00:41:11,200
+It was like it was so irritating to him um that it worked like this, and couldn't couldn't get it over it.
+
+534
+00:41:11,200 --> 00:41:16,760
+So, anyway, back to bashing on on Google, who in many respects do an incredible job,
+
+535
+00:41:16,760 --> 00:41:19,600
+and there's all kinds of amazing stuff they do, and blah blah blah.
+
+536
+00:41:19,600 --> 00:41:29,080
+But, the the Gmail actions on an individual email are broken into two very long menu items that are different.
+
+537
+00:41:29,080 --> 00:41:33,520
+And one of them doesn't exist on either menu.
+
+538
+00:41:33,520 --> 00:41:39,800
+There is an unlabeled icon is the only way to do it, and that's the to mark something as unread once it's read.
+
+539
+00:41:39,800 --> 00:41:47,960
+Um I have no idea why some of the actions are in one menu, and some of the actions are in another menu.
+
+540
+00:41:47,960 --> 00:41:53,200
+I I think it's because some of them have to do with the individual email, some of them have to do with the whole thread,
+
+541
+00:41:53,200 --> 00:41:54,960
+but it doesn't seem very consistent.
+
+542
+00:41:54,960 --> 00:42:05,360
+Every possible thing is listed there in one place, and so it becomes incredibly difficult to use because sometimes you have to tap and bur Tell me what it means read all of the
+
+543
+00:42:05,360 --> 00:42:09,120
+options and say, "Okay, that I've used the process of elimination, and it's not here,
+
+544
+00:42:09,120 --> 00:42:11,560
+so it must be it must be there."
+
+545
+00:42:11,560 --> 00:42:17,520
+The Uber doesn't work like this anymore, but when I first brought this up to people inside of Slack,
+
+546
+00:42:17,520 --> 00:42:23,200
+there was a moment when the Uber app, when you opened it, was just "Where would you like to go?"
+
+547
+00:42:23,200 --> 00:42:24,680
+and other.
+
+548
+00:42:24,680 --> 00:42:26,400
+And other was everything.
+
+549
+00:42:26,400 --> 00:42:31,880
+Like, change your payment method, uh set your location for your vehicle, any anything you could do in Uber.
+
+550
+00:42:31,880 --> 00:42:37,800
+And that was perfect because almost all of the time people just wanted to choose where they wanted to go.
+
+551
+00:42:37,800 --> 00:42:42,280
+Sometimes you wanted to change where your pick up was cuz you weren't there yet, or or whatever.
+
+552
+00:42:42,280 --> 00:42:46,120
+And that was just like, what could be simpler than I'm going to tell you where I want to go,
+
+553
+00:42:46,120 --> 00:42:47,560
+or I'm going to choose something else.
+
+554
+00:42:47,560 --> 00:42:52,600
+I really tried to push people to what is the thing that people, or what is the two things,
+
+555
+00:42:52,600 --> 00:42:56,720
+what is it, maybe three things that people could want to do here, and then put everything behind other,
+
+556
+00:42:56,720 --> 00:43:06,160
+and then um if it takes them eight clicks or taps to do something, but every single one is trivially easy,
+
+557
+00:43:06,160 --> 00:43:07,560
+that's great.
+
+558
+00:43:07,560 --> 00:43:17,720
+If it, you know, you reduce that to two clicks or taps, but every part of it is this fraught decision where I'm opening all of the menus and trying to figure out like which thing is the right thing,
+
+559
+00:43:17,720 --> 00:43:29,160
+and and like, the more comparing three things to each other is this difficult, four things it's kind of like geometrically more expensive to compare 15 different options all to the other to see if this is the one that you
+
+560
+00:43:29,160 --> 00:43:30,160
+might want.
+
+561
+00:43:30,160 --> 00:43:33,480
+Um they you know, just becomes impossibly expensive.
+
+562
+00:43:33,480 --> 00:43:41,480
+So, to me those are all really um connected, and if we if people could get over the idea of reducing friction as a number one goal,
+
+563
+00:43:41,480 --> 00:43:47,360
+or reducing the number of clicks or taps to do something, and instead focus on how can I make this simple?
+
+564
+00:43:47,360 --> 00:43:50,760
+How how do I prevent people from having to think in order to use my software?
+
+565
+00:43:50,760 --> 00:43:52,520
+How can I make this trivially easy?
+
+566
+00:43:52,520 --> 00:43:56,080
+One one last example uh because this this was what really influential for me.
+
+567
+00:43:56,080 --> 00:44:00,520
+So, I was going back and forth between Vancouver and San Francisco at the time when we were talking about all this inside of Slack,
+
+568
+00:44:00,520 --> 00:44:04,920
+and I was behind a teenager in line to board the plane, and it was like, you know, we're on the jet way,
+
+569
+00:44:04,920 --> 00:44:06,160
+it took a long time.
+
+570
+00:44:06,160 --> 00:44:10,120
+And I was watching her use Snapchat, and it was insane.
+
+571
+00:44:10,120 --> 00:44:17,040
+Like, she was tapping at least four times a second, sometimes like six or seven times a second.
+
+572
+00:44:17,040 --> 00:44:22,760
+It was like dismissing stories and doing stuff, but there was a fluidity to it because everything was like a dent.
+
+573
+00:44:22,760 --> 00:44:23,480
+Do I want to see this again?
+
+574
+00:44:23,480 --> 00:44:24,720
+Do I want to see the next story from this person?
+
+575
+00:44:24,720 --> 00:44:25,600
+Do I want to ask her to a different person?
+
+576
+00:44:25,600 --> 00:44:31,520
+Do I want to like instead she she um a notification came up, she answered someone's thing,
+
+577
+00:44:31,520 --> 00:44:33,200
+she took a selfie of herself.
+
+578
+00:44:33,200 --> 00:44:41,120
+And everything was just like So, she was you know, tapping four times a second for 6 minutes.
+
+579
+00:44:41,120 --> 00:44:43,120
+I mean, probably there were some some breaks in there.
+
+580
+00:44:43,120 --> 00:44:52,000
+And that was like the highest and best use of Snapchat for a 15-year-old girl in 2016 or whatever that was.
+
+581
+00:44:52,000 --> 00:44:58,000
+Um And imagine if the goal was to try to make her tap less.
+
+582
+00:44:58,000 --> 00:45:06,200
+You know, like how how much of an impediment it would have been to the experience that both her and Snapchat wanted to create.
+
+583
+00:45:06,200 --> 00:45:15,400
+It's so fun to listen to this and the examples you gave of it gives us a lot of insight into the way your mind works of just constantly unsatisfied with the way other products work,
+
+584
+00:45:15,400 --> 00:45:16,640
+with your products.
+
+585
+00:45:16,640 --> 00:45:19,480
+And I think that's core, like Patrick is a good example of Stripe.
+
+586
+00:45:19,480 --> 00:45:27,080
+I feel like that's a recurring theme with very successful product leaders is just constantly unsatisfied and unhappy with how things work.
+
+587
+00:45:27,080 --> 00:45:27,960
+Yeah.
+
+588
+00:45:27,960 --> 00:45:35,320
+I love just even the way you summarized this, just like a really good reframing of instead of obsessing with reducing friction and reducing steps,
+
+589
+00:45:35,320 --> 00:45:42,640
+instead think, "How do I how do I uh reduce the amount of thinking the user has to do?"
+
+590
+00:45:42,640 --> 00:45:48,240
+Uh I love I've never heard of it described as like you have to think about the ATP and glucose being used to actually think,
+
+591
+00:45:48,240 --> 00:45:52,440
+and your goal is to reduce that versus let's just reduce friction, reduce clicks.
+
+592
+00:45:52,440 --> 00:46:02,760
+Yeah, I I think um in my more cynical examples, I would I would say to people like,"Stop Stop what you're doing for a
+
+593
+00:46:02,760 --> 00:46:03,560
+second.
+
+594
+00:46:03,560 --> 00:46:08,160
+Close your eyes, take a couple deep breaths, and then pretend that you're a natural human being,
+
+595
+00:46:08,160 --> 00:46:13,720
+and open your eyes again, and then look at this thing and see can you figure out what it's supposed to do or say,
+
+596
+00:46:13,720 --> 00:46:19,760
+or what your what action you're supposed to take, or what the impact will be if you take that action?"
+
+597
+00:46:19,760 --> 00:46:26,560
+There's a whole another related cycle, but before I get into it cuz I know that I'm verbose,
+
+598
+00:46:26,560 --> 00:46:31,160
+um I want to wrap up your your last example of people being unsatisfied.
+
+599
+00:46:31,160 --> 00:46:33,680
+So, here's the quote that I was trying to find.
+
+600
+00:46:33,680 --> 00:46:41,640
+This is um >> [snorts] >> 2014, so like that that was the year that Slack actually launched officially uh in February,
+
+601
+00:46:41,640 --> 00:46:44,120
+and this is now like near the end of the year.
+
+602
+00:46:44,120 --> 00:46:50,440
+I was interviewed by uh MIT Technology Review and asked if we were working to improve Slack.
+
+603
+00:46:50,440 --> 00:46:53,840
+Uh I said,"Oh god, yeah.
+
+604
+00:46:53,840 --> 00:46:59,400
+I try to instill this into the rest of the team, but certainly I feel like what we have right now is just a giant piece of [ __ ] Like,
+
+605
+00:46:59,400 --> 00:47:03,520
+it's just terrible, and we should be humiliated that we offered this to the public."
+
+606
+00:47:03,520 --> 00:47:05,960
+Not everyone finds that motivational, though.
+
+607
+00:47:05,960 --> 00:47:12,760
+So, I came into the office the next day, and people had printed out on like 40 pieces of 8 and 1/2 by 11 paper that quote,
+
+608
+00:47:12,760 --> 00:47:15,120
+and like and pasted it up on the wall.
+
+609
+00:47:15,120 --> 00:47:21,120
+But to me that was like,"You should be embarrassed by it."
+
+610
+00:47:21,120 --> 00:47:24,480
+Like, it should be a perpetual desire to improve.
+
+611
+00:47:24,480 --> 00:47:26,120
+You shouldn't have to be like,"Oh, this is great."
+
+612
+00:47:26,120 --> 00:47:35,600
+And you could be proud of individual pieces of work, but in the aggregate, if you can't see almost limitless opportunities to improve,
+
+613
+00:47:35,600 --> 00:47:39,400
+then you shouldn't be designing the product, or you shouldn't be in charge of the company,
+
+614
+00:47:39,400 --> 00:47:47,640
+or you shouldn't um almost nothing, you know, again, you could reduce it down to a tiny feature,
+
+615
+00:47:47,640 --> 00:47:50,240
+is anywhere close to to perfect.
+
+616
+00:47:50,240 --> 00:47:58,880
+And if A, that's acknowledged freely inside the organization, and B, people think about like continually improving as the goal,
+
+617
+00:47:58,880 --> 00:48:08,400
+and that could be like Six Sigma, Toyota Kaizen, like that kind of side of thing, or it could be that story that um I can't remember his name right now,
+
+618
+00:48:08,400 --> 00:48:12,240
+but the guy who started Bridgewater tells about um Ray Dalio.
+
+619
+00:48:12,240 --> 00:48:13,560
+Yeah, Ray Dalio.
+
+620
+00:48:13,560 --> 00:48:17,920
+Uh in his book talks about um Michael Jordan learning to ski.
+
+621
+00:48:17,920 --> 00:48:26,680
+Every time he messed up, he wanted the ski instructor to tell him exactly what he was doing wrong because to him every one of those was like a gem that he could collect,
+
+622
+00:48:26,680 --> 00:48:31,840
+and and he could, you know, actually become a good skier, and what he wanted to do was become a good skier.
+
+623
+00:48:31,840 --> 00:48:35,000
+That requires a lot of trust inside the organization.
+
+624
+00:48:35,000 --> 00:48:40,520
+Um but if you can get to the point where like, "Hey, we're all trying to to find improvements,
+
+625
+00:48:40,520 --> 00:48:44,560
+we're trying to be critical of each other, we're trying to make this as great as it can possibly be."
+
+626
+00:48:44,560 --> 00:48:55,280
+Um Not always, not with every person, but most of the time with most people you can get them to the point where that like really direct criticism is actually
+
+627
+00:48:55,280 --> 00:48:55,880
+motivational.
+
+628
+00:48:55,880 --> 00:49:06,520
+It is like, you know, people are uh grateful to have like the feedback, whether that's coming from their peers inside the company or from end users of the product cuz you realize,
+
+629
+00:49:06,520 --> 00:49:10,359
+"Oh yeah, that is that is bad, and we should fix it."
+
+630
+00:49:10,359 --> 00:49:12,800
+This episode is brought to you by Lovable.
+
+631
+00:49:12,800 --> 00:49:16,160
+Not only are they the fastest growing company in history.
+
+632
+00:49:16,160 --> 00:49:19,520
+I use it regularly, and I could not recommend it more highly.
+
+633
+00:49:19,520 --> 00:49:24,440
+If you've ever had an idea for an app, but didn't know where to start, Lovable is for you.
+
+634
+00:49:24,440 --> 00:49:28,359
+Lovable lets you build working apps and websites by simply chatting with AI.
+
+635
+00:49:28,359 --> 00:49:32,320
+Then you can customize it, add automations, and deploy it to a live domain.
+
+636
+00:49:32,320 --> 00:49:36,880
+It's perfect for marketers spinning up tools, product managers prototyping new ideas,
+
+637
+00:49:36,880 --> 00:49:39,600
+and founders launching their next business.
+
+638
+00:49:39,600 --> 00:49:43,240
+Unlike no-code tools, Lovable isn't about static pages.
+
+639
+00:49:43,240 --> 00:49:47,320
+It builds full apps with real functionality, and it's fast.
+
+640
+00:49:47,320 --> 00:49:51,560
+What used to take weeks, months, or years, you can now do over a weekend.
+
+641
+00:49:51,560 --> 00:49:55,080
+So, if you've been sitting on an idea, now is [music] the time to bring it to life.
+
+642
+00:49:55,080 --> 00:49:58,280
+Get started for free at lovable.dev.
+
+643
+00:49:58,280 --> 00:50:01,040
+That's lovable.dev.
+
+644
+00:50:01,040 --> 00:50:08,040
+This makes me think about a Let's call it a rant that you have about how it takes a lot of work to make anything work at all.
+
+645
+00:50:08,040 --> 00:50:10,960
+That just the default state is not working.
+
+646
+00:50:10,960 --> 00:50:13,480
+You just share Share what you share there.
+
+647
+00:50:13,480 --> 00:50:14,200
+Yeah.
+
+648
+00:50:14,200 --> 00:50:24,080
+Um I mean, so this is a lot to do with um And maybe this is more recent than other shows I've been in politics a lot for a um
+
+649
+00:50:24,080 --> 00:50:33,640
+But uh By the way, if any of your Anyone listening to this can help me find this tweet storm from somewhere between 2016 and 2020.
+
+650
+00:50:33,640 --> 00:50:40,360
+I don't have a precise idea, and it was this guy's thread about how hard it was to get um a stop sign set up.
+
+651
+00:50:40,360 --> 00:50:46,040
+And I think it I believe it was in response to someone claiming that Bitcoin is going to replace US dollars.
+
+652
+00:50:46,040 --> 00:50:48,400
+Uh It was something something about crypto.
+
+653
+00:50:48,400 --> 00:50:54,320
+And his point was like, "Here's what happened when we tried to get a stop sign put up on a residential street in my neighborhood."
+
+654
+00:50:54,320 --> 00:51:00,720
+And the literal years it took and the number of agencies that were involved, like the engineering department,
+
+655
+00:51:00,720 --> 00:51:06,760
+traffic planners, the HOA, and the I don't remember all of the organizations um because I think if I did,
+
+656
+00:51:06,760 --> 00:51:17,120
+then I could search better and find this again cuz it was truly a masterpiece of how difficult it is to get a stop sign put up in in most places.
+
+657
+00:51:17,120 --> 00:51:20,480
+The message that I hear from most politicians, and unfortunately this works really well,
+
+658
+00:51:20,480 --> 00:51:26,680
+is you know, things should be good, but they're not because someone is doing something bad,
+
+659
+00:51:26,680 --> 00:51:28,800
+which is preventing the goodness.
+
+660
+00:51:28,800 --> 00:51:37,320
+So, um billionaires are making things unaffordable, or immigrants are taking your jobs,
+
+661
+00:51:37,320 --> 00:51:45,880
+or um lazy freeloaders are sucking off the government teat and causing us all have to pay more taxes or something like that.
+
+662
+00:51:45,880 --> 00:51:48,320
+The reality is like almost nothing works.
+
+663
+00:51:48,320 --> 00:51:53,840
+It's It's actually another call I sent This case John has a great encapsulation of this,
+
+664
+00:51:53,840 --> 00:52:04,360
+and I'm sure you've you're familiar with it, like that It ends with the world is a museum of passion projects because for anything to get done at all requires like
+
+665
+00:52:04,360 --> 00:52:11,880
+not just the resources and and effort you know, required to instantiate that thing in the in the real world,
+
+666
+00:52:11,880 --> 00:52:19,600
+but all of the politicking and the sociology and the convincing and um There's a book called Why Nothing Works recently,
+
+667
+00:52:19,600 --> 00:52:25,960
+which is like It's not an I'm sorry to the author if they They doubt they're listening,
+
+668
+00:52:25,960 --> 00:52:28,680
+but just give It's not like an amazingly written book.
+
+669
+00:52:28,680 --> 00:52:35,840
+I I found it like um a little bit repetitive, uh but the the content was really incredible.
+
+670
+00:52:35,840 --> 00:52:47,200
+It's just explaining why it's so hard and how there's this progressive increase in the number of of vetoes that are available for any kind of course of action and how
+
+671
+00:52:47,200 --> 00:52:47,720
+difficult it is.
+
+672
+00:52:47,720 --> 00:52:52,720
+And this shows up in like, you know, in permitting for new construction and stuff like that.
+
+673
+00:52:52,720 --> 00:52:55,080
+But it also shows up obviously inside of organizations.
+
+674
+00:52:55,080 --> 00:53:03,000
+And the challenge is that people A, I think this is evolutionary, biological.
+
+675
+00:53:03,000 --> 00:53:08,600
+Uh it's hard for us to understand the world except by anthropomorphizing it.
+
+676
+00:53:08,600 --> 00:53:18,880
+And so it like if it didn't rain this year, it's because a god is mad, and probably because we didn't sacrifice enough goats something last last year.
+
+677
+00:53:18,880 --> 00:53:26,880
+It's hard for people to understand just that well, weather is incredibly complex and chaotic and ecosystems and climatology and all that.
+
+678
+00:53:26,880 --> 00:53:27,640
+Same thing with the world.
+
+679
+00:53:27,640 --> 00:53:39,200
+Like if if I uh am struggling to uh you know, pay all of my bills and be able to afford me a little bit of luxury in the sense of like a vacation
+
+680
+00:53:39,200 --> 00:53:42,600
+or a present for my kids or whatever, it's got to be somebody's fault.
+
+681
+00:53:42,600 --> 00:53:45,720
+Like there has to be a decision that's made somewhere.
+
+682
+00:53:45,720 --> 00:53:49,080
+And the reality is everything is so complicated.
+
+683
+00:53:49,080 --> 00:53:52,080
+Everything is so multivariate.
+
+684
+00:53:52,080 --> 00:53:53,160
+Uh it's not satisfying.
+
+685
+00:53:53,160 --> 00:53:55,800
+It's a terrible political message.
+
+686
+00:53:55,800 --> 00:54:02,880
+Um it's much easier to say that there is like uh Well, we understand why things are bad in the way that you're concerned about,
+
+687
+00:54:02,880 --> 00:54:05,800
+and it's turns out that it's someone's decision.
+
+688
+00:54:05,800 --> 00:54:08,240
+Um and because of them, it's bad.
+
+689
+00:54:08,240 --> 00:54:15,080
+And it so if we got rid of them or you know, were able to overcome their decision, overturn it,
+
+690
+00:54:15,080 --> 00:54:18,960
+um and institute our own thing, then things would be good for you.
+
+691
+00:54:18,960 --> 00:54:23,440
+Uh And this really to me shows up inside of organizations as well.
+
+692
+00:54:23,440 --> 00:54:25,000
+You know, I'll pause there.
+
+693
+00:54:25,000 --> 00:54:31,000
+Uh I know kind of along those lines you're a a big uh believer in something called Parkinson's Law.
+
+694
+00:54:31,000 --> 00:54:34,400
+Yeah, so that the original of that is I think it's 1956.
+
+695
+00:54:34,400 --> 00:54:38,760
+It's an article in The Economist by Parkinson.
+
+696
+00:54:38,760 --> 00:54:47,200
+Um And uh the maxim is work expands to fill the time available for its completion.
+
+697
+00:54:47,200 --> 00:54:51,800
+And the way that shows up This is a little bit subtle.
+
+698
+00:54:51,800 --> 00:54:58,000
+So, like um one of the things I found since I don't have a job is there's much less time pressure,
+
+699
+00:54:58,000 --> 00:55:06,720
+and and that maxim like uh if you want something done, give it to a busy person, the inverse is also true that like if you're not that busy,
+
+700
+00:55:06,720 --> 00:55:09,359
+wow, basic things take a really long time.
+
+701
+00:55:09,359 --> 00:55:14,640
+And so Parkinson actually starts off with his example of like, you know, writing and posting a letter.
+
+702
+00:55:14,640 --> 00:55:17,440
+Um and I I don't remember who he used for the first example, but someone who's like,
+
+703
+00:55:17,440 --> 00:55:19,640
+you know, incredibly busy and has all these things they have to respond to.
+
+704
+00:55:19,640 --> 00:55:24,440
+And then another case, like a retired woman who has all the time in the world, and it takes her a long time to write the letter.
+
+705
+00:55:24,440 --> 00:55:28,520
+It takes her a long time to put it in the envelope and then go to the post office and post it.
+
+706
+00:55:28,520 --> 00:55:37,720
+But the real meat of it is um for me later, when he talks about the size of the organization.
+
+707
+00:55:37,720 --> 00:55:39,200
+He uses a bunch of examples.
+
+708
+00:55:39,200 --> 00:55:42,880
+This is again 1950s, so uh and he's British.
+
+709
+00:55:42,880 --> 00:55:51,359
+Um So, he's looking at the the Royal Navy, and specifically he's looking at a chart that shows the relationship between the number of capital ships in the Navy,
+
+710
+00:55:51,359 --> 00:55:54,520
+the number of sailors, uh and the number of administrators.
+
+711
+00:55:54,520 --> 00:56:05,920
+And very familiar graph for for people looking at like any part of government, any part of like the relationship between the number of administrators at a university and the number of students and faculty,
+
+712
+00:56:05,920 --> 00:56:07,480
+the teaching faculty.
+
+713
+00:56:07,480 --> 00:56:10,920
+Where it's like, okay, the number of ships goes like this, and the number of sailors is like right along with it,
+
+714
+00:56:10,920 --> 00:56:13,840
+and the number of administrators goes like this.
+
+715
+00:56:13,840 --> 00:56:22,160
+And the reason this this ties into the work expands to fill the time available for its completion is um
+
+716
+00:56:22,160 --> 00:56:33,720
+people hire, and they train, and uh Here's the kind of sad truth for anyone running a company is there are exceptions.
+
+717
+00:56:33,720 --> 00:56:42,920
+There's like certain types of engineers that are exceptional to this, but the overwhelming majority of people you hire want to hire more people who report to them.
+
+718
+00:56:42,920 --> 00:56:45,120
+And it's not because they're evil.
+
+719
+00:56:45,120 --> 00:56:46,080
+It's not because they're stupid.
+
+720
+00:56:46,080 --> 00:56:51,920
+In fact, they're smart because everyone knows that the number of people report to you correlates with like your career trajectory,
+
+721
+00:56:51,920 --> 00:56:56,840
+your the the amount of money that you're paid, the the amount of authority you have inside the organization,
+
+722
+00:56:56,840 --> 00:56:57,560
+and on and on and on.
+
+723
+00:56:57,560 --> 00:57:01,840
+So, like we would hire 27 year old product managers in Slack who immediately want to hire someone.
+
+724
+00:57:01,840 --> 00:57:04,160
+It's like, "What the hell What would that person do?"
+
+725
+00:57:04,160 --> 00:57:09,040
+And they're like, They articulate it this way, but essentially it's like, "Well, that person would do the product management,
+
+726
+00:57:09,040 --> 00:57:11,520
+and then I would do strategy."
+
+727
+00:57:11,520 --> 00:57:12,440
+Classic.
+
+728
+00:57:12,440 --> 00:57:19,080
+It's It's really I think the essential thing to understand about this is it's not because people are evil,
+
+729
+00:57:19,080 --> 00:57:20,840
+and it's not because they're stupid.
+
+730
+00:57:20,840 --> 00:57:24,480
+And it's to me very related to the everything is complex.
+
+731
+00:57:24,480 --> 00:57:30,920
+Um and uh if you I maybe this is my Butterfield's Law.
+
+732
+00:57:30,920 --> 00:57:34,200
+I haven't thought about this before, but I I tweeted this a very very long time ago.
+
+733
+00:57:34,200 --> 00:57:40,320
+Like if you um Everything is simple if you have no idea what you're talking about.
+
+734
+00:57:40,320 --> 00:57:49,160
+Um So, the the other side of that is like if something seems simple, probably you don't understand it.
+
+735
+00:57:49,160 --> 00:57:57,680
+And you know, there's obvious exceptions to that, but for anything that involves a large organization or a lot of human beings,
+
+736
+00:57:57,680 --> 00:58:01,040
+if the problem seems simple, you don't get it.
+
+737
+00:58:01,040 --> 00:58:10,640
+So, every budget process no head of engineering, no head of sales, no CFO, no GC is ever going to come back and say like,
+
+738
+00:58:10,640 --> 00:58:14,440
+"Oh, I actually think like next year we can just hire fewer people, or we're going to keep it flat,
+
+739
+00:58:14,440 --> 00:58:19,359
+or we're going to like shrink through attrition cuz we don't need any more people to do what we're doing."
+
+740
+00:58:19,359 --> 00:58:21,800
+Not because they're evil, not because they're stupid.
+
+741
+00:58:21,800 --> 00:58:29,000
+Uh but it's an almost overpowering impulse inside the organization that often leads to disastrous results.
+
+742
+00:58:29,000 --> 00:58:39,560
+And so, there's a I'll give one example from Slack's history, and I you know, I have tried in the past to disguise this example so that no one feels bad about it,
+
+743
+00:58:39,560 --> 00:58:44,840
+but I Fortunately, the specifics are so important to the example that it's not disguised,
+
+744
+00:58:44,840 --> 00:58:49,720
+and so I'll just reiterate that the people involved aren't stupid or or evil.
+
+745
+00:58:49,720 --> 00:58:53,280
+Um and one example that's um This is from the outside.
+
+746
+00:58:53,280 --> 00:59:02,160
+So, the example inside of Slack was um We introduced threads, which is the ability to reply to a message inside of a channel.
+
+747
+00:59:02,160 --> 00:59:05,760
+And let's say you, Lenny, post a message.
+
+748
+00:59:05,760 --> 00:59:07,840
+I, Stewart, replied to it.
+
+749
+00:59:07,840 --> 00:59:10,000
+You will automatically get a notification.
+
+750
+00:59:10,000 --> 00:59:14,400
+And now Sarah, later on, replies to the same message.
+
+751
+00:59:14,400 --> 00:59:19,880
+Both you and I, um as people who have posted in that thread, will receive a notification that there's been more activity.
+
+752
+00:59:19,880 --> 00:59:20,440
+And so what?
+
+753
+00:59:20,440 --> 00:59:23,720
+So, like, you know, every single time anyone replies to it.
+
+754
+00:59:23,720 --> 00:59:30,720
+So, when the feature first was um released or like when we did the final product review before it was released,
+
+755
+00:59:30,720 --> 00:59:37,520
+the input box was pre-populated with at the person before you in the thread.
+
+756
+00:59:37,520 --> 00:59:42,840
+And I you know, I was using the feature and I would like put the insertion point there,
+
+757
+00:59:42,840 --> 00:59:45,520
+select all, delete, and then start writing my message.
+
+758
+00:59:45,520 --> 00:59:55,760
+And it's even if I wanted to at someone specifically, I almost never remember to start my sentence with at I cuz it just made it hard to you know,
+
+759
+00:59:55,760 --> 00:59:57,760
+reference what they were saying before.
+
+760
+00:59:57,760 --> 01:00:05,320
+So, I said get rid of this because A, I think most people won't use it or if they uh if they did want to at someone,
+
+761
+01:00:05,320 --> 01:00:07,120
+they're not going to want to do it at the beginning of the sentence.
+
+762
+01:00:07,120 --> 01:00:17,480
+And by the way, you're teaching them to use the product wrong because it's important that everyone understand that every previous poster in this thread will automatically receive a notification
+
+763
+01:00:17,480 --> 01:00:19,920
+unless they've muted it.
+
+764
+01:00:19,920 --> 01:00:25,400
+So, okay, we release it, 6 months goes by, and suddenly the at thing comes back.
+
+765
+01:00:25,400 --> 01:00:30,400
+And so, I messaged someone on the team and I said, "Hey, there's been a regression at this super weird I don't know what happened,
+
+766
+01:00:30,400 --> 01:00:32,840
+but like the at thing came back."
+
+767
+01:00:32,840 --> 01:00:34,880
+And they said, "Oh, no, this is on purpose.
+
+768
+01:00:34,880 --> 01:00:36,400
+We did a bunch of research."
+
+769
+01:00:36,400 --> 01:00:38,320
+And so, I was like, "What?"
+
+770
+01:00:38,320 --> 01:00:47,240
+And I went through this and it was if I recall correctly, it wasn't even like P95 certainty on this analysis,
+
+771
+01:00:47,240 --> 01:00:57,600
+but it was something like when we do this, threads are 2.17 messages long versus 2.14 messages long
+
+772
+01:00:57,600 --> 01:00:59,800
+on average for when we don't do it.
+
+773
+01:00:59,800 --> 01:01:04,480
+And so, first of all, why is a longer thread better?
+
+774
+01:01:04,480 --> 01:01:06,480
+Like maybe a maybe a shorter thread is better.
+
+775
+01:01:06,480 --> 01:01:10,120
+Like it's fewer messages that people have to go back and forth.
+
+776
+01:01:10,120 --> 01:01:13,240
+Also, that's such a tiny difference.
+
+777
+01:01:13,240 --> 01:01:20,080
+Also, again, I don't remember the actual statistical analysis, so I'm not going to claim that it was um in correct me,
+
+778
+01:01:20,080 --> 01:01:26,360
+I pretty sure this was outside the the bounds of certainty that they could have But the real thing was Oh my god.
+
+779
+01:01:26,360 --> 01:01:33,200
+So, you guys put flags in the product, you AB tested it, you did the instrumentation,
+
+780
+01:01:33,200 --> 01:01:39,040
+you created tables in the in the database or whatever you're using to record all of that,
+
+781
+01:01:39,040 --> 01:01:45,520
+you wrote queries to pull that, you created charts based on that data, you had meetings to discuss it.
+
+782
+01:01:45,520 --> 01:01:50,360
+And just like kind of unpacking all of the things that would have had to happen for this to come back.
+
+783
+01:01:50,360 --> 01:02:01,280
+And it's like, you know, thousands of person hours kind of at a minimum cuz any feature change at at that scale decision is involving like a dozen people,
+
+784
+01:02:01,280 --> 01:02:08,960
+engineering, QA, uh analytics teams, product managers, user research, and stuff like that.
+
+785
+01:02:08,960 --> 01:02:13,160
+The problem with that was So, I think it was a bad idea, right?
+
+786
+01:02:13,160 --> 01:02:23,040
+But the problem with that was the difference that you could possibly achieve between having this feature and not having this feature is like this much,
+
+787
+01:02:23,040 --> 01:02:24,880
+whatever units you want.
+
+788
+01:02:24,880 --> 01:02:27,320
+The cost of doing the analysis was this much.
+
+789
+01:02:27,320 --> 01:02:29,080
+So, it's guaranteed to be a loser.
+
+790
+01:02:29,080 --> 01:02:40,920
+Like there's just there's no world in which anyone could imagine putting the at previous respondent in the thread at the beginning of the message could possibly make that much of a difference to
+
+791
+01:02:40,920 --> 01:02:46,440
+the quality of Slack and how how much utility it provides to people and and all of that.
+
+792
+01:02:46,440 --> 01:02:52,880
+But you know that to to like put the feature flags in, to ship new versions of the product,
+
+793
+01:02:52,880 --> 01:02:58,120
+to put the instrumentation in, to have it all the API calls to record every action that people take,
+
+794
+01:02:58,120 --> 01:03:06,000
+to to do all the analytics, to create the dashboard, to put that, you know, paste the screenshot of that into a Google Slides presentation,
+
+795
+01:03:06,000 --> 01:03:09,880
+to send the invitations to the meeting, to schedule the meeting cuz someone couldn't make it,
+
+796
+01:03:09,880 --> 01:03:12,080
+to have everyone sit down and look at the thing.
+
+797
+01:03:12,080 --> 01:03:14,440
+Like, you know, guaranteed loser.
+
+798
+01:03:14,440 --> 01:03:22,440
+And I know that you that Farid told you to ask me about this um hyperrealistic work-like activities.
+
+799
+01:03:22,440 --> 01:03:26,200
+And so, here's my my my grand theory.
+
+800
+01:03:26,200 --> 01:03:34,920
+Um hyperrealistic work-like activities is goes along with this other concept called known valuable work to do.
+
+801
+01:03:34,920 --> 01:03:40,440
+And when I say known, I mean both you know what it is and you know that it's valuable.
+
+802
+01:03:40,440 --> 01:03:50,080
+And the problem with almost every organization at the very beginning, you have an enormous amount of work that you know what to do and you know that it's going to be valuable.
+
+803
+01:03:50,080 --> 01:03:57,480
+So, like starting a business, open a bank account because like there's almost infinite generative value of opening a bank account.
+
+804
+01:03:57,480 --> 01:03:59,120
+You you have to do it.
+
+805
+01:03:59,120 --> 01:04:01,160
+You it's very simple to do.
+
+806
+01:04:01,160 --> 01:04:12,160
+And so, at the very beginning of of any startup, they're like, "I'm like creating a user's table and I'm like doing salting passwords and like you're doing all the things that are kind of
+
+807
+01:04:12,160 --> 01:04:14,200
+absolutely necessary and everyone knows exactly what they are.
+
+808
+01:04:14,200 --> 01:04:17,600
+And so, that's like everyone's going to work in the morning and they're like, "Right on."
+
+809
+01:04:17,600 --> 01:04:23,920
+And like I have 10 things to do and every single one of them is like something I know how to do and it's like definitely going to be valuable.
+
+810
+01:04:23,920 --> 01:04:32,640
+Time goes on and the relationship between the supply of work to do and the demand for doing work just starts to change.
+
+811
+01:04:32,640 --> 01:04:33,920
+More and more people get hired.
+
+812
+01:04:33,920 --> 01:04:36,840
+Every product manager wants to hire a junior product manager.
+
+813
+01:04:36,840 --> 01:04:41,760
+Every new person, you know, the first person you bring in on the risk and compliance team is like,
+
+814
+01:04:41,760 --> 01:04:45,200
+"Oh my god, we have there's so many risks and things we have to be compliant with.
+
+815
+01:04:45,200 --> 01:04:48,200
+We better hire more people on my team to do more risk and compliance work."
+
+816
+01:04:48,200 --> 01:04:53,720
+Which probably, you know, to some degree is right, but we're going to have more and more of those people and they're going to call meetings with each other.
+
+817
+01:04:53,720 --> 01:04:58,160
+Um and now suddenly you have all these people with work to do and you've done all the easy,
+
+818
+01:04:58,160 --> 01:04:58,840
+obvious stuff.
+
+819
+01:04:58,840 --> 01:05:04,480
+And now your questions are like, "God, should we do FedRAMP High and make a GovSlack version?"
+
+820
+01:05:04,480 --> 01:05:15,240
+Which is going to require us to have wholly separate physical infrastructure for the hardware that runs the the software and also a whole different operations team which has only
+
+821
+01:05:15,240 --> 01:05:16,640
+US citizens on it.
+
+822
+01:05:16,640 --> 01:05:24,359
+What is the possible number of of dollars that we could make from doing this and how much complexity is going to be when we want to do updates to the software?
+
+823
+01:05:24,359 --> 01:05:26,840
+Should we update two totally separate, independent systems?
+
+824
+01:05:26,840 --> 01:05:29,120
+And we're it just gets out of whack.
+
+825
+01:05:29,120 --> 01:05:37,480
+And so, people end up like if you hire 17 product marketers, you're going to have 17 product marketers worth of demand for work to do.
+
+826
+01:05:37,480 --> 01:05:42,680
+And if you don't have sufficient supply of product marketing work to do, they're just going to do other stuff.
+
+827
+01:05:42,680 --> 01:05:48,080
+Again, very important, not because they're stupid, not because they're evil, but because they're like,
+
+828
+01:05:48,080 --> 01:05:59,800
+"I'm a product marketer and I want to like be recognized for my work and my spouse is like has um uh criticized me because they think like I should have already got promoted in the last cycle and I really got to
+
+829
+01:05:59,800 --> 01:06:02,520
+demonstrate some wins here and whatever it is."
+
+830
+01:06:02,520 --> 01:06:11,120
+And so, people are like calling meetings with their colleagues to preview the deck that they're going to show in the big meeting to get feedback on whether they should like improve some of the slides.
+
+831
+01:06:11,120 --> 01:06:17,240
+And that hyperrealistic work-like activity is superficially identical to work.
+
+832
+01:06:17,240 --> 01:06:24,800
+Like we are sitting in a conference room and you are there's something being projected up there and we're all talking about it.
+
+833
+01:06:24,800 --> 01:06:27,760
+And that's exactly what work is.
+
+834
+01:06:27,760 --> 01:06:31,760
+Now, hopefully not all of work in for everyone inside of your company, but you know,
+
+835
+01:06:31,760 --> 01:06:41,000
+that's uh exactly what we do when we're working, but this is actually a fake bit of work and it's so subtle that I I'll do it.
+
+836
+01:06:41,000 --> 01:06:42,280
+You know, our board members will do it.
+
+837
+01:06:42,280 --> 01:06:43,720
+Every exact will do it.
+
+838
+01:06:43,720 --> 01:06:52,640
+And the further you are from like having all of the context and all of the information and the decision-making authority and stuff like that,
+
+839
+01:06:52,640 --> 01:07:00,440
+the easier it is to get trapped in this stuff and people will just perform enormous amounts of hyperrealistic work-like activities and have no idea that that's what they're doing.
+
+840
+01:07:00,440 --> 01:07:06,400
+And the you know, the result of that I guess is that if you are a leader, if you're a manager,
+
+841
+01:07:06,400 --> 01:07:14,760
+director, an executive, you're the CEO, it's on you to ensure that there is sufficient supply of known valuable to do.
+
+842
+01:07:14,760 --> 01:07:21,840
+Um and there almost always is, but you know, it's creating the clarity around that, creating the alignment,
+
+843
+01:07:21,840 --> 01:07:24,440
+making sure everyone understands it that that's what they're supposed to be doing.
+
+844
+01:07:24,440 --> 01:07:26,440
+And and then obviously doing it.
+
+845
+01:07:26,440 --> 01:07:27,000
+Amazing.
+
+846
+01:07:27,000 --> 01:07:29,880
+I could listen to uh Stewart Rants all day.
+
+847
+01:07:29,880 --> 01:07:32,080
+Hyperrealistic work-like activities.
+
+848
+01:07:32,080 --> 01:07:33,640
+We need a coin this.
+
+849
+01:07:33,640 --> 01:07:35,640
+Uh and the >> it doesn't make a good acronym.
+
+850
+01:07:35,640 --> 01:07:36,640
+It's pretty ugly.
+
+851
+01:07:36,640 --> 01:07:38,560
+So, we're not even going to try.
+
+852
+01:07:38,560 --> 01:07:44,520
+And just to close the loop on that, the the solution is uh the leader recognizing this is happening and stopping it.
+
+853
+01:07:44,520 --> 01:07:47,960
+Telling people, "Why are we spending time on this thing that is not going to get us anywhere?"
+
+854
+01:07:47,960 --> 01:07:48,320
+Yeah.
+
+855
+01:07:48,320 --> 01:07:54,400
+And and and that what you just said probably isn't the best way because that sounds like they're you know,
+
+856
+01:07:54,400 --> 01:07:58,359
+you're chiding them and they're dumb when it's actually your responsibility to make sure that there's,
+
+857
+01:07:58,359 --> 01:08:06,359
+you know, sufficient clarity around what the priorities are and you know, explicitly saying no to things up front and stuff like that.
+
+858
+01:08:06,359 --> 01:08:11,960
+Rather than being rude and saying like, "Hey, you guys are bunch of idiots wasting your time on this thing that doesn't matter."
+
+859
+01:08:11,960 --> 01:08:12,800
+Whose fault is it?
+
+860
+01:08:12,800 --> 01:08:19,040
+You know, it's it's the manager's fault, it's the VP of whatever's fault, it's the CX whatever.
+
+861
+01:08:19,040 --> 01:08:28,640
+It's the Hopefully it's like it's the the leader of the organization that has the responsibility to make sure that there is sufficient known valuable work to do.
+
+862
+01:08:28,640 --> 01:08:32,600
+Um and this that's actually harder than it might appear.
+
+863
+01:08:32,600 --> 01:08:33,440
+Okay.
+
+864
+01:08:33,440 --> 01:08:36,640
+Uh before we run out of time, I want to touch on two other topics.
+
+865
+01:08:36,640 --> 01:08:42,759
+One is when people think of Stewart Butterfield, I think a lot of people think of we don't sell saddles here.
+
+866
+01:08:42,759 --> 01:08:51,920
+Your legendary medium post that uh is just I don't know, it's become a historic piece of literature in the in the annals of product building and in startups.
+
+867
+01:08:51,920 --> 01:08:55,560
+I haven't heard people ask you much about this recently, so let me just ask a couple questions.
+
+868
+01:08:55,560 --> 01:08:58,000
+One is just what was the what was the reason you put that out?
+
+869
+01:08:58,000 --> 01:09:00,200
+Why what what was the backstory on writing that memo?
+
+870
+01:09:00,200 --> 01:09:01,319
+Why was it necessary?
+
+871
+01:09:01,319 --> 01:09:12,040
+Well, it really was an internal memo and as a bit of a digression, um one of the the crappy things about Slack
+
+872
+01:09:12,040 --> 01:09:19,240
+um is if all your corporate communication is on email, depending on exactly how it works and what system you use,
+
+873
+01:09:19,240 --> 01:09:23,600
+you probably walk away with an archive of everything you said at company X.
+
+874
+01:09:23,600 --> 01:09:27,680
+Um if it's Slack, once you're turned off, you like you lose access to all that history.
+
+875
+01:09:27,680 --> 01:09:32,960
+And so it's kind of like, "Oh man, if I had only exported all of my messages before I left,
+
+876
+01:09:32,960 --> 01:09:34,000
+I would have all this stuff."
+
+877
+01:09:34,000 --> 01:09:36,839
+But that was it was absolutely verbatim.
+
+878
+01:09:36,839 --> 01:09:40,520
+I did not change a word of what I said inside the company.
+
+879
+01:09:40,520 --> 01:09:45,680
+When I think we were still eight people, maybe you know, at most 10, but I I think it was eight people.
+
+880
+01:09:45,680 --> 01:09:47,400
+It was before Slack launched even.
+
+881
+01:09:47,400 --> 01:09:48,240
+Yeah, it was before Slack launched.
+
+882
+01:09:48,240 --> 01:09:58,120
+It was like when we were doing a private beta and the point of it was to like to start to instill those ideas as early as possible and really
+
+883
+01:09:58,120 --> 01:10:07,040
+create this alignment inside of that small team so that it could process to survive as we grew and and scaled.
+
+884
+01:10:07,040 --> 01:10:11,440
+Um and yeah, that that was the that was the idea.
+
+885
+01:10:11,440 --> 01:10:18,120
+And the gist just for people that aren't super familiar with it, but we'll link to it is just it's not enough just to build a great product.
+
+886
+01:10:18,120 --> 01:10:24,280
+You just as much have to put it effort into communicating what this does for them, the problem this is solving for them,
+
+887
+01:10:24,280 --> 01:10:26,120
+the outcome this is going to achieve for them.
+
+888
+01:10:26,120 --> 01:10:27,920
+Is that a a good way to think about it?
+
+889
+01:10:27,920 --> 01:10:36,880
+Yeah, and again, you know, like comparing it to beer or cars, um beer is goes back to pre-civilization.
+
+890
+01:10:36,880 --> 01:10:42,040
+Cars are obviously invented and but you know, so at some point you had to convince people why they would want a car instead of a horse.
+
+891
+01:10:42,040 --> 01:10:53,640
+Um for your new um AI-based recruiting tool or your calendar app or whatever, there's some
+
+892
+01:10:53,640 --> 01:10:57,960
+reason why people you think that people should use yours instead of the thing that they're using now,
+
+893
+01:10:57,960 --> 01:11:07,720
+which might be like a wholesale one-for-one replacement or more often is like a change in the way that you're working that has a bunch of other adjacencies and you want to expand into these other categories and
+
+894
+01:11:07,720 --> 01:11:14,880
+while you're not just responsible for creating the product, but also to a certain degree creating the market and and creating you know,
+
+895
+01:11:14,880 --> 01:11:18,520
+this is book positioning um which is an absolute classic.
+
+896
+01:11:18,520 --> 01:11:19,120
+It's very short.
+
+897
+01:11:19,120 --> 01:11:20,920
+I would recommend everyone read it.
+
+898
+01:11:20,920 --> 01:11:29,320
+Where the the point of it is from my perspective it's almost impossible to create a net new idea in someone's head.
+
+899
+01:11:29,320 --> 01:11:34,000
+It's much easier to take a couple of existing ideas and and put them together.
+
+900
+01:11:34,000 --> 01:11:43,640
+So it's much easier to say it's like Jaws meets Star Wars Star Wars or it's Uber for pets or something like that than to come up with like an actual new idea,
+
+901
+01:11:43,640 --> 01:11:52,480
+but you you have to do that cuz you like if your thing is different in any significant way from the alternatives,
+
+902
+01:11:52,480 --> 01:11:54,360
+um you're not just creating the product, you're creating the market.
+
+903
+01:11:54,360 --> 01:11:56,280
+They're really kind of one in the same.
+
+904
+01:11:56,280 --> 01:12:04,040
+The reason I wanted to touch on it is I think still people continue to not listen to this advice and can continue to over-invest in more features,
+
+905
+01:12:04,040 --> 01:12:06,440
+more more products, things like that.
+
+906
+01:12:06,440 --> 01:12:13,320
+Just the the specific example of we don't sell saddles here just to quickly communicate this to folks and correct me if I'm missing anything is just instead of,
+
+907
+01:12:13,320 --> 01:12:15,240
+"Hey, look at this amazing saddle we bought."
+
+908
+01:12:15,240 --> 01:12:17,720
+what you want to communicate is here, "Go horseback riding.
+
+909
+01:12:17,720 --> 01:12:19,360
+Look at this incredible experience you can have."
+
+910
+01:12:19,360 --> 01:12:23,440
+and and then they decide, "Oh [ __ ] I need to go buy a saddle to do that."
+
+911
+01:12:23,440 --> 01:12:23,920
+>> Yeah.
+
+912
+01:12:23,920 --> 01:12:31,200
+And and 100% um that aspect of it is is not original cuz I think that's something that marketers have done for a long time,
+
+913
+01:12:31,200 --> 01:12:33,960
+surely in the in marcom and and advertising.
+
+914
+01:12:33,960 --> 01:12:40,520
+Like if you want to sell Harley-Davidsons, there are people who are going to geek out on the engines and stuff like that and like the quality of the leather and stuff like that.
+
+915
+01:12:40,520 --> 01:12:45,080
+But what you're selling is not the motorcycle, you're selling like the open road and freedom and the wind in your hair.
+
+916
+01:12:45,080 --> 01:12:54,200
+And if you're Lululemon, you are obviously selling yoga pants, but you're also selling like health and aspiration and being the best version of yourself and you know,
+
+917
+01:12:54,200 --> 01:12:55,000
+a bunch of other stuff.
+
+918
+01:12:55,000 --> 01:12:57,160
+So selling that.
+
+919
+01:12:57,160 --> 01:12:59,280
+Oh my god, I forgot the classic version of it.
+
+920
+01:12:59,280 --> 01:13:04,320
+You know, like There's the ship >> There's the instead of the the screwdriver Oh.
+
+921
+01:13:04,320 --> 01:13:05,800
+Oh yeah, the nail.
+
+922
+01:13:05,800 --> 01:13:06,560
+Yeah, the nail.
+
+923
+01:13:06,560 --> 01:13:07,080
+Anyway.
+
+924
+01:13:07,080 --> 01:13:09,205
+Yeah, what is that one?
+
+925
+01:13:09,205 --> 01:13:13,720
+>> [laughter] >> There's the Well, there's the one I think about is instead of trying to convince men to build a ship,
+
+926
+01:13:13,720 --> 01:13:15,760
+uh instill a yearning for the sea.
+
+927
+01:13:15,760 --> 01:13:17,080
+Yes, exactly.
+
+928
+01:13:17,080 --> 01:13:20,360
+You know, it's a something that goes back in in history.
+
+929
+01:13:20,360 --> 01:13:21,040
+Mhm.
+
+930
+01:13:21,040 --> 01:13:22,840
+Okay, let me ask you about pivoting.
+
+931
+01:13:22,840 --> 01:13:26,400
+Uh you are potentially the king of pivots.
+
+932
+01:13:26,400 --> 01:13:31,800
+You started two companies, both famously pivoted, both from video games, which is why I asked you about that at the beginning.
+
+933
+01:13:31,800 --> 01:13:34,000
+Into very successful companies.
+
+934
+01:13:34,000 --> 01:13:36,440
+I imagine many people come to you for advice on pivoting.
+
+935
+01:13:36,440 --> 01:13:40,280
+I I let me just ask when folks come to you asking, "Should I stick with my idea?
+
+936
+01:13:40,280 --> 01:13:41,200
+Should I pivot?"
+
+937
+01:13:41,200 --> 01:13:43,720
+What sort of advice do you find most helps them?
+
+938
+01:13:43,720 --> 01:13:54,600
+Yeah, I mean, I think it's um partly uh it an intuition because like obviously the decision is about like have you
+
+939
+01:13:54,600 --> 01:13:56,680
+exhausted of the possibilities?
+
+940
+01:13:56,680 --> 01:14:04,560
+Um and in the case where you know, we were working on Glitch, this game where we used IRC for internal communication and we added a bunch of IRC,
+
+941
+01:14:04,560 --> 01:14:06,160
+which became the proto-Slack.
+
+942
+01:14:06,160 --> 01:14:17,880
+And I think Slack had an enormous advantage in the fact that we were working on this for several years without actually explicitly working on it and only doing the minimum number of
+
+943
+01:14:17,880 --> 01:14:28,960
+features that were you know, absolutely guaranteed to be successful in the sense that it was so irritating that we couldn't stand it anymore or such an obvious improvement that we couldn't help but take advantage of it.
+
+944
+01:14:28,960 --> 01:14:34,480
+We still had a like $9 million left and everyone still liked the game and we were all happy working on it,
+
+945
+01:14:34,480 --> 01:14:45,400
+but it would I think by that point I had exhausted every non-ridiculous long shot idea to make it commercially
+
+946
+01:14:45,400 --> 01:14:47,240
+successful.
+
+947
+01:14:47,240 --> 01:14:52,560
+And so decided to um to abandon it.
+
+948
+01:14:52,560 --> 01:14:58,920
+But, you know, the default advice for anyone in anything is persevere.
+
+949
+01:14:58,920 --> 01:15:02,800
+It's like you know, kitten hanging off the branch and the poster says, "Hang in there."
+
+950
+01:15:02,800 --> 01:15:13,640
+And you know, and I think there's a idea that you just like And then there's so many stories of like so-and-so started out going door-to-door and was rejected by everyone and then
+
+951
+01:15:13,640 --> 01:15:16,040
+suddenly there was Nike or or something like that.
+
+952
+01:15:16,040 --> 01:15:20,320
+And like just if you stick out stick it with it long enough, you'll eventually be successful.
+
+953
+01:15:20,320 --> 01:15:31,920
+I think you have to really be coldly rational and Now you know, some of this shows up in the book um thinking about Some of it's in Andy second book.
+
+954
+01:15:31,920 --> 01:15:35,040
+The title of which I'm forgetting right now, but I'm someone will will know it.
+
+955
+01:15:35,040 --> 01:15:38,040
+Yeah, Thinking Backwards and then yeah, it was the last second one I forget.
+
+956
+01:15:38,040 --> 01:15:45,200
+Uh she actually uses Glitch and and Slack as an example of like a smart fold basically.
+
+957
+01:15:45,200 --> 01:15:54,280
+Like I my expected value here has diminished to the point where this alternative looks more attractive.
+
+958
+01:15:54,280 --> 01:15:58,840
+And the reason is say you have to be coldly rational about it is because it's [ __ ] humiliating.
+
+959
+01:15:58,840 --> 01:16:04,960
+You know, like like we I convinced so many and you have to convince so many people to get a company off the ground.
+
+960
+01:16:04,960 --> 01:16:11,840
+You have to go to investors, you have to go to early employees and say like you should leave your other job and come work for this because you know,
+
+961
+01:16:11,840 --> 01:16:14,080
+here's the the incredible future we're imagining.
+
+962
+01:16:14,080 --> 01:16:20,920
+You have to go to the press and you have to make all these promises and you have users and you feel like committed things to the users and you've convinced them to give up their time for this thing.
+
+963
+01:16:20,920 --> 01:16:32,640
+And so it's I I think for a lot of people it feels better to just keep doing it until it dies um of suffocation
+
+964
+01:16:32,640 --> 01:16:39,560
+due to lack of capital or something like that uh than to to admit like, "Okay, I was wrong.
+
+965
+01:16:39,560 --> 01:16:40,800
+This didn't this didn't work."
+
+966
+01:16:40,800 --> 01:16:45,080
+And it's it's humiliating, it's painful, it's like it's wrenching.
+
+967
+01:16:45,080 --> 01:16:45,920
+It has a bad impact.
+
+968
+01:16:45,920 --> 01:16:55,920
+You know, like there's when we shut down Glitch, there's a lot of people who loved it and who spent all of their free time and couldn't wait to get home from work to go play it more and that was their community and that community just like disappeared.
+
+969
+01:16:55,920 --> 01:16:58,800
+All these people and all these identities have been created.
+
+970
+01:16:58,800 --> 01:17:07,320
+And obviously people lost their jobs and and people who had like moved their families to a different city in order to take this job now weren't going to have a job anymore.
+
+971
+01:17:07,320 --> 01:17:17,680
+So pivots aren't something I take lightly and you shouldn't be um I think it's very different to be like there's three of us and we started
+
+972
+01:17:17,680 --> 01:17:20,960
+making this app and then we pivoted to a different app.
+
+973
+01:17:20,960 --> 01:17:22,080
+That doesn't really count.
+
+974
+01:17:22,080 --> 01:17:26,560
+You know, like if you're six months into something, you're just you're still messing around.
+
+975
+01:17:26,560 --> 01:17:28,640
+You're trying to figure out what it is that you're you're building.
+
+976
+01:17:28,640 --> 01:17:30,400
+It's not really a pivot.
+
+977
+01:17:30,400 --> 01:17:37,560
+Obviously, in this case it worked out great and there's survivorship bias and it doesn't mean that everyone should pivot all the time.
+
+978
+01:17:37,560 --> 01:17:47,800
+Um but I think it is creating the distance so that you can make an intellectual rational decision about it rather than
+
+979
+01:17:47,800 --> 01:17:50,480
+an emotional decision is is essential.
+
+980
+01:17:50,480 --> 01:17:52,520
+I love all three pieces of advice of just exhaust.
+
+981
+01:17:52,520 --> 01:17:56,680
+Once you've exhausted all the ideas, that's a really good time to see what else is out there.
+
+982
+01:17:56,680 --> 01:17:59,480
+Yeah, exhaust all the all the good ideas.
+
+983
+01:17:59,480 --> 01:18:00,120
+All the good ideas.
+
+984
+01:18:00,120 --> 01:18:01,480
+All the realistic, yeah.
+
+985
+01:18:01,480 --> 01:18:01,960
+Yeah.
+
+986
+01:18:01,960 --> 01:18:08,320
+The the point you made about just kind of persevering, I just had Melanie Perkins, CEO of Canva on the podcast.
+
+987
+01:18:08,320 --> 01:18:14,240
+They went through a hundred investors rejected her before somebody finally decided to invest and she just kept pushing.
+
+988
+01:18:14,240 --> 01:18:16,680
+Yeah, but I think that's a slightly different example, right?
+
+989
+01:18:16,680 --> 01:18:24,280
+Cuz like the she believed in the Yeah, then she then she believed in the in the concept of the in the product and like in the in the vision.
+
+990
+01:18:24,280 --> 01:18:30,240
+They were just trying to figure out the right articulation to get investors who ended up being obviously very very happy.
+
+991
+01:18:30,240 --> 01:18:32,240
+Yeah, extremely happy.
+
+992
+01:18:32,240 --> 01:18:33,360
+Oh jeez.
+
+993
+01:18:33,360 --> 01:18:36,560
+Okay, maybe a final topic depending on how time goes.
+
+994
+01:18:36,560 --> 01:18:39,520
+I want to talk about generosity.
+
+995
+01:18:39,520 --> 01:18:51,120
+I talked to a bunch of people, as I said, that have worked with you and the number one theme that came up again and again and again when I asked them about you and what they what has stuck most with them is is just generosity.
+
+996
+01:18:51,120 --> 01:18:57,280
+So I'm going to read a few examples that I heard from folks that are examples of your generosity over the years.
+
+997
+01:18:57,280 --> 01:19:02,800
+So one person shared that he needed a little money before Christmas and you he said,
+
+998
+01:19:02,800 --> 01:19:08,000
+"Stewart literally walked me out of the building, went to the cash machine, handed me $500,
+
+999
+01:19:08,000 --> 01:19:10,800
+told me to go home to my family."
+
+1000
+01:19:10,800 --> 01:19:20,240
+Other folks shared that when you you talked about Glitch just recently when you had to lay people off that you cried real tears when you were laying people off and then you spent an incredible amount of time helping them find new
+
+1001
+01:19:20,240 --> 01:19:25,120
+jobs and extending their severance pay, and just taking it extremely extremely seriously,
+
+1002
+01:19:25,120 --> 01:19:29,080
+much more than I think most people feel like CEOs do.
+
+1003
+01:19:29,080 --> 01:19:34,920
+Someone else shared that you paid 100% of employees' health insurance to give them just fewer things to think about.
+
+1004
+01:19:34,920 --> 01:19:40,360
+Uh when you went public, you did a you basically created the best possible situation for employees.
+
+1005
+01:19:40,360 --> 01:19:42,800
+No lockup, direct listing.
+
+1006
+01:19:42,800 --> 01:19:48,000
+Also, with the structure of the Slack deal, people said the acquisition is very employee-friendly.
+
+1007
+01:19:48,000 --> 01:19:49,960
+There's also just a bunch of ex- That's employees.
+
+1008
+01:19:49,960 --> 01:19:51,720
+There's also just the way you thought about customers.
+
+1009
+01:19:51,720 --> 01:19:53,000
+A few examples.
+
+1010
+01:19:53,000 --> 01:19:56,800
+You gave free credits to businesses who were struggling to pay the bills during COVID.
+
+1011
+01:19:56,800 --> 01:20:03,880
+You released this fair billing, which I think was very innovative at the time, where you didn't charge you stopped charging people for seats they weren't using,
+
+1012
+01:20:03,880 --> 01:20:06,760
+even though they signed a deal to charge for those seats.
+
+1013
+01:20:06,760 --> 01:20:12,480
+A lot of times just you slipped release schedules because you just wanted to make features better and better for people.
+
+1014
+01:20:12,480 --> 01:20:14,360
+So and I'll end with this quote.
+
+1015
+01:20:14,360 --> 01:20:18,640
+Stewart is a leader who takes the responsibility he feels for his employees personally,
+
+1016
+01:20:18,640 --> 01:20:22,440
+and to which he extends the most generous circumstances he can muster.
+
+1017
+01:20:22,440 --> 01:20:25,640
+That feels worth celebrating.
+
+1018
+01:20:25,640 --> 01:20:28,120
+So first of all, let me I just want to celebrate you.
+
+1019
+01:20:28,120 --> 01:20:32,280
+I think it's really rare and inspiring to meet a leader like that.
+
+1020
+01:20:32,280 --> 01:20:35,200
+Clearly, you've had a lot of impact on a lot of people.
+
+1021
+01:20:35,200 --> 01:20:40,560
+I don't know exactly the question I want to ask, but I guess was this is this like an In what part is this intentional?
+
+1022
+01:20:40,560 --> 01:20:41,880
+Just like this is how we win.
+
+1023
+01:20:41,880 --> 01:20:46,240
+I'm going to be very generous and help people because I know this will help long term.
+
+1024
+01:20:46,240 --> 01:20:47,160
+How much of this is just innate?
+
+1025
+01:20:47,160 --> 01:20:49,400
+This is just the way you are as a person.
+
+1026
+01:20:49,400 --> 01:20:55,800
+I I think a lot of it is just the way I am as a person, and uh I had wonderful parents who raised me right.
+
+1027
+01:20:55,800 --> 01:21:04,720
+But I think there's also um there is a little bit of a lesson there, and I'm just going to assume people's familiarity with the the prisoner's dilemma.
+
+1028
+01:21:04,720 --> 01:21:13,800
+Um the you know, acts of generosity to me are a way of demonstrating that I am going to cooperate as we iterate in this game.
+
+1029
+01:21:13,800 --> 01:21:19,640
+Um and if you do that, then people will also cooperate, and you both benefit.
+
+1030
+01:21:19,640 --> 01:21:24,160
+Whereas if you never really know if the other person is going to defect at the first opportunity,
+
+1031
+01:21:24,160 --> 01:21:26,760
+um then your best bet is to defect.
+
+1032
+01:21:26,760 --> 01:21:29,960
+And so, you know, there is a game theoretic aspect.
+
+1033
+01:21:29,960 --> 01:21:35,040
+Usually in games that are much much much more complicated than uh the prisoner's dilemma.
+
+1034
+01:21:35,040 --> 01:21:44,640
+Um I think another thing you know, one thing we uh I didn't touch on before, but to me it was important enough that at more than
+
+1035
+01:21:44,640 --> 01:21:50,200
+one company all-hands, I made everyone in the company like repeat this as a chant.
+
+1036
+01:21:50,200 --> 01:21:58,400
+Um it was in the long run, the measure of of our success will be the amount of value that we create for customers.
+
+1037
+01:21:58,400 --> 01:22:07,120
+Um and then I wanted to be super clear and explicit about that because it should be if anything you're doing feels like a little bit shady,
+
+1038
+01:22:07,120 --> 01:22:17,000
+a little bit cheating, a little bit like um maximizing um in the in the at the wrong moment,
+
+1039
+01:22:17,000 --> 01:22:25,320
+or taking advantage of a customer, or anything like that, we definitely shouldn't do it because to me it was just like I mean I think it's uh
+
+1040
+01:22:25,320 --> 01:22:35,040
+literally true, but it's also like an uh an ethical way to run a business, and and um it's not just that the ethics are good.
+
+1041
+01:22:35,040 --> 01:22:36,360
+It's like there's advantages for you.
+
+1042
+01:22:36,360 --> 01:22:38,560
+Like you're able to attract a better class of employee.
+
+1043
+01:22:38,560 --> 01:22:42,800
+Like if all your employees are are ethical, then it's going to be a better place for everyone to work,
+
+1044
+01:22:42,800 --> 01:22:47,320
+and you're going to be happier, and you're going to have fewer internal problems, and and all that stuff.
+
+1045
+01:22:47,320 --> 01:22:56,880
+Um but I think it really is true that there's no like especially in the long run, you can't like destroy value for your
+
+1046
+01:22:56,880 --> 01:22:59,320
+customers and expect to be successful.
+
+1047
+01:22:59,320 --> 01:23:02,520
+You have to actually make their lives better.
+
+1048
+01:23:02,520 --> 01:23:08,120
+Um and you can put effort into like pointing it out to them, and and demonstrating that you have created this value,
+
+1049
+01:23:08,120 --> 01:23:08,640
+and stuff like that.
+
+1050
+01:23:08,640 --> 01:23:11,480
+But there's no substitute for actually having created it.
+
+1051
+01:23:11,480 --> 01:23:23,400
+And I think that um is incredibly important, and that implies a real generosity, whether that's in negotiating terms with an an enterprise
+
+1052
+01:23:23,400 --> 01:23:26,720
+deal, or that's like policy decisions.
+
+1053
+01:23:26,720 --> 01:23:34,680
+You sometimes So one one time that it blew up in our face was our SLA was like for any downtime,
+
+1054
+01:23:34,680 --> 01:23:37,040
+you get 100 times your money back.
+
+1055
+01:23:37,040 --> 01:23:41,360
+Um which was like cuz it from my perspective, it's like you know, if we're down for 2 minutes,
+
+1056
+01:23:41,360 --> 01:23:42,920
+it doesn't it it's like pennies.
+
+1057
+01:23:42,920 --> 01:23:44,400
+It doesn't really make any difference.
+
+1058
+01:23:44,400 --> 01:23:49,880
+If we're down for like 10 hours or something like that, then we have bigger problems than paying back people.
+
+1059
+01:23:49,880 --> 01:23:50,640
+Okay.
+
+1060
+01:23:50,640 --> 01:23:51,160
+Okay.
+
+1061
+01:23:51,160 --> 01:23:56,240
+Fast forward, we you know, we now have hundreds of millions of dollars in revenue, and we've gone public.
+
+1062
+01:23:56,240 --> 01:24:00,560
+And like shortly after we go public, we have like one of the biggest outages we've ever had.
+
+1063
+01:24:00,560 --> 01:24:03,840
+I don't remember how long it was, but it was like many hours.
+
+1064
+01:24:03,840 --> 01:24:14,560
+But by the time we got to that scale, 100 times the money back for like the third of a day that we were down was like $8 million
+
+1065
+01:24:14,560 --> 01:24:22,720
+or some something like that, which had to be um it didn't cost us any money because we just gave it to people as forward credits,
+
+1066
+01:24:22,720 --> 01:24:32,760
+but it meant that a bunch of revenue that we had already anticipated for the next quarter wasn't going to show up because people's credits were going to offset what they would have otherwise paid us.
+
+1067
+01:24:32,760 --> 01:24:39,000
+And so, uh we we definitely changed the terms of service after that because being a public company is a little bit different.
+
+1068
+01:24:39,000 --> 01:24:47,640
+But uh you know, in every other respect, I think you know, they were all really important decisions that were helpful in um in us becoming successful.
+
+1069
+01:24:47,640 --> 01:24:49,120
+And was that policy was automatic?
+
+1070
+01:24:49,120 --> 01:24:50,440
+Like you didn't even have to claim it.
+
+1071
+01:24:50,440 --> 01:24:52,120
+It was just automatically get this credit.
+
+1072
+01:24:52,120 --> 01:24:55,680
+>> And and the default is you don't have to pay if you let us know.
+
+1073
+01:24:55,680 --> 01:25:01,040
+And this was we will automatically like proactively, preemptively, without any input from you,
+
+1074
+01:25:01,040 --> 01:25:04,080
+apply this credit to your account, and just like send you a message that it happened.
+
+1075
+01:25:04,080 --> 01:25:14,920
+And by the way, we will do it on the aggregate for downtime, even if the issue didn't affect you as a as a customer.
+
+1076
+01:25:16,263 --> 01:25:17,920
+>> [laughter] >> Yeah.
+
+1077
+01:25:17,920 --> 01:25:20,720
+What was that mantra again that you uh had the company chant?
+
+1078
+01:25:20,720 --> 01:25:22,840
+I think this is a really nice way to end it.
+
+1079
+01:25:22,840 --> 01:25:28,680
+In the long run, the measure of our success will be the amount of value we create for customers.
+
+1080
+01:25:28,680 --> 01:25:29,280
+Incredible.
+
+1081
+01:25:29,280 --> 01:25:33,200
+I'm just trying to picture the entire team at Slack Hundreds of people.
+
+1082
+01:25:33,200 --> 01:25:37,879
+It felt very like Kim Jong or like Stalin or something like that.
+
+1083
+01:25:37,879 --> 01:25:44,360
+>> [laughter] >> Well, on that note, most people don't know this about you, but your uh your actual name when you were born is not Stewart.
+
+1084
+01:25:44,360 --> 01:25:46,040
+It was Dharma.
+
+1085
+01:25:46,040 --> 01:25:46,600
+Yeah.
+
+1086
+01:25:46,600 --> 01:25:49,400
+And this all makes sense as you learn that.
+
+1087
+01:25:49,400 --> 01:25:52,280
+Yeah, it's like I had My name is Dharma Jeremy Butterfield.
+
+1088
+01:25:52,280 --> 01:25:55,960
+So my parents named me, and when I was 12, I changed it because I just like really wanted to be normal,
+
+1089
+01:25:55,960 --> 01:25:58,480
+and for some reason I thought Stewart was a normal name.
+
+1090
+01:25:58,480 --> 01:26:01,440
+And by the way, you'll notice this now that I said it.
+
+1091
+01:26:01,440 --> 01:26:07,760
+Any character except for Stuart Little, the mouse, um anytime you see a character in in a movie,
+
+1092
+01:26:07,760 --> 01:26:14,080
+a novel, TV show, whatever, there's only the loser Stewart, and the [ __ ] Stewart.
+
+1093
+01:26:14,080 --> 01:26:19,960
+It's it's like it's obviously in the collective consciousness, a terrible name, and I shouldn't have chosen it,
+
+1094
+01:26:19,960 --> 01:26:20,760
+and I regret it.
+
+1095
+01:26:20,760 --> 01:26:26,040
+But by the time I realized that Dharma and Greg had already come out, it would have seemed like I was like,
+
+1096
+01:26:26,040 --> 01:26:29,760
+you know, bandwagon jumping, and people thought it was a girl's name, even though in India,
+
+1097
+01:26:29,760 --> 01:26:32,000
+it's obviously only a boy's name.
+
+1098
+01:26:32,000 --> 01:26:36,360
+I'm going to add just one last little tidbit because I forgot about this earlier on,
+
+1099
+01:26:36,360 --> 01:26:38,880
+and I think it helps tie things together.
+
+1100
+01:26:38,880 --> 01:26:40,320
+And it's called the owner's delusion.
+
+1101
+01:26:40,320 --> 01:26:42,920
+And this is basically something I posted on Twitter.
+
+1102
+01:26:42,920 --> 01:26:49,680
+The person who came up with the name later deleted their account, and so I have no idea who it was or who to credit for this.
+
+1103
+01:26:49,680 --> 01:26:54,560
+But what I had posted was and this is a long time ago, before when restaurant websites have gotten better,
+
+1104
+01:26:54,560 --> 01:26:58,520
+and it doesn't really matter because Google Local has taken over everything.
+
+1105
+01:26:58,520 --> 01:27:00,760
+But this is like let's say 10 years ago.
+
+1106
+01:27:00,760 --> 01:27:07,120
+There's five things you could possibly want when you go to a restaurant's website, and is their street address,
+
+1107
+01:27:07,120 --> 01:27:11,240
+their phone number, the menu, the hours of operation.
+
+1108
+01:27:11,240 --> 01:27:13,880
+Oh my god, I'm forgetting the fifth thing.
+
+1109
+01:27:13,880 --> 01:27:15,560
+Oh, and and making a reservation.
+
+1110
+01:27:15,560 --> 01:27:17,480
+How to make a reservation.
+
+1111
+01:27:17,480 --> 01:27:22,160
+Um and again, this problem has like to some extent taken care of.
+
+1112
+01:27:22,160 --> 01:27:23,160
+It's actually really improved.
+
+1113
+01:27:23,160 --> 01:27:32,320
+But what you would get was like this super slow loading photo, the Ken Burns effect as it and like and then like fading in,
+
+1114
+01:27:32,320 --> 01:27:38,040
+and then some music starts playing, and then if they show you the phone number, it's not uh clickable,
+
+1115
+01:27:38,040 --> 01:27:42,080
+and it turns out it's not even text that you can copy because it's yes, it's an image.
+
+1116
+01:27:42,080 --> 01:27:45,280
+Um and they don't have the hours, they don't put the address or whatever.
+
+1117
+01:27:45,280 --> 01:27:47,400
+And it's just like, I mean what?
+
+1118
+01:27:47,400 --> 01:27:57,960
+For sure, whoever made this website for the restaurant owner, and the restaurant owner themselves have definitely been in the position where they went to somebody else's restaurant website because they wanted to get the address or the opening hours or the
+
+1119
+01:27:57,960 --> 01:27:59,040
+phone number or whatever.
+
+1120
+01:27:59,040 --> 01:28:00,440
+So how why does it end up like this?
+
+1121
+01:28:00,440 --> 01:28:01,600
+And what should we call this?
+
+1122
+01:28:01,600 --> 01:28:06,760
+And the whoever replied to the tweet, um she said we should call it owner's delusion.
+
+1123
+01:28:06,760 --> 01:28:08,640
+And I was like, oh my god, that's perfect.
+
+1124
+01:28:08,640 --> 01:28:19,040
+And I think that um is incredibly powerful, and it what ends up with the result like Apple naming whatever that feature is called sleep,
+
+1125
+01:28:19,040 --> 01:28:23,719
+which is like it's too hard to understand what could that can possibly mean.
+
+1126
+01:28:23,719 --> 01:28:31,480
+And that's why like people anticipate um despite the fact that when they get to their web your website for the first time,
+
+1127
+01:28:31,480 --> 01:28:41,280
+their their intent is absolutely the minimum number of micro points above the threshold required for them to actually take that action.
+
+1128
+01:28:41,280 --> 01:28:43,120
+You're like, all right.
+
+1129
+01:28:43,120 --> 01:28:48,760
+Like welcome to my website, and there's >> [laughter] >> there's a bunch of like BS,
+
+1130
+01:28:48,760 --> 01:28:52,040
+and there's a bunch of like stuff that doesn't make any sense, and the buttons aren't clickable.
+
+1131
+01:28:52,040 --> 01:29:00,600
+It's unclear what to do next because I think that my thing is so important, and I don't recognize that you are at work,
+
+1132
+01:29:00,600 --> 01:29:08,360
+and you were late this morning, and you have to go to the bathroom, and you're just like you're just like a regular human being who has like stuff going on.
+
+1133
+01:29:08,360 --> 01:29:11,800
+You're concerned that your kids will [ __ ] up, and they're getting in trouble at school,
+
+1134
+01:29:11,800 --> 01:29:12,920
+and stuff like that.
+
+1135
+01:29:12,920 --> 01:29:20,560
+They don't they're not like subjects who paid money to go to your play, and are sitting in the audience and waiting for the curtain to go up.
+
+1136
+01:29:20,560 --> 01:29:24,600
+They're like people who are going to bounce in a fraction of a second.
+
+1137
+01:29:24,600 --> 01:29:27,680
+And so everyone should always be conscious of the audience's illusion.
+
+1138
+01:29:27,680 --> 01:29:28,120
+I love that.
+
+1139
+01:29:28,120 --> 01:29:28,760
+What's the solution?
+
+1140
+01:29:28,760 --> 01:29:30,680
+Is it have other people look at and give you feedback?
+
+1141
+01:29:30,680 --> 01:29:33,200
+Is it And and like recognize it.
+
+1142
+01:29:33,200 --> 01:29:40,520
+And unfortunately it's one of those things like Murphy's law, like even you're going wrong when you even when you take into account Murphy's law.
+
+1143
+01:29:40,520 --> 01:29:48,400
+But if you if you don't name it and recognize it and discuss it and train yourself to think in that way that you know,
+
+1144
+01:29:48,400 --> 01:29:53,160
+take a breath, pretend you're a regular person, and then look at this again and see if it makes sense.
+
+1145
+01:29:53,160 --> 01:29:55,080
+I love You're screwed.
+
+1146
+01:29:55,080 --> 01:29:56,240
+I love that you threw this in here.
+
+1147
+01:29:56,240 --> 01:30:00,600
+I have a billion other questions I I'm going to ask you in part two when we do this someday.
+
+1148
+01:30:00,600 --> 01:30:02,600
+Uh Stewart, thank you so much for doing this.
+
+1149
+01:30:02,600 --> 01:30:04,160
+Thank you so much for being here.
+
+1150
+01:30:04,160 --> 01:30:05,280
+Yeah, thank you for having me, Lenny.
+
+1151
+01:30:05,280 --> 01:30:06,480
+I really enjoyed it.
+
+1152
+01:30:06,480 --> 01:30:08,120
+Same same here.
+
+1153
+01:30:08,120 --> 01:30:10,640
+Bye, everyone.
+
+1154
+01:30:10,680 --> 01:30:12,080
+Thank you so much for listening.
+
+1155
+01:30:12,080 --> 01:30:16,320
+If you found this valuable, you can subscribe to the show on Apple Podcast, Spotify,
+
+1156
+01:30:16,320 --> 01:30:18,560
+or your favorite [music] podcast app.
+
+1157
+01:30:18,560 --> 01:30:24,920
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1158
+01:30:24,920 --> 01:30:30,012
+You can find all past episodes or learn more about the show at lennyspodcast.com.
+
+1159
+01:30:30,012 --> 01:30:33,600
+>> [music] >> See you in the next episode.

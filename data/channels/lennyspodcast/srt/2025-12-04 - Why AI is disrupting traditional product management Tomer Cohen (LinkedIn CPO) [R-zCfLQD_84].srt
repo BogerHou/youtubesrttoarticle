@@ -1,0 +1,3895 @@
+1
+00:00:00,000 --> 00:00:05,400
+When we look at the skills required to do your job, by 2030, they will change by 70%.
+
+2
+00:00:05,400 --> 00:00:08,960
+So, whether or not you're looking to change your job, your job is changing.
+
+3
+00:00:08,960 --> 00:00:12,600
+In order to stay competitive, you actually have to go back to some first principles,
+
+4
+00:00:12,600 --> 00:00:15,680
+go back to the drawing board, and reimagine what it means to be building.
+
+5
+00:00:15,680 --> 00:00:24,080
+>> You're experimenting with a very different way of building product at LinkedIn that fully embraces what AI unlocks.
+
+6
+00:00:24,080 --> 00:00:26,400
+>> We call it the full-stack builder [music] model.
+
+7
+00:00:26,400 --> 00:00:31,240
+The goal itself is to empower great builders to take their idea and to take it to market,
+
+8
+00:00:31,240 --> 00:00:34,640
+regardless of their role in the stack and which team they're on.
+
+9
+00:00:34,640 --> 00:00:37,160
+It's really a fluid interaction between human and machine.
+
+10
+00:00:37,160 --> 00:00:42,280
+>> This feels like this could be a model for how a lot of companies operate and how product ends up being built in the future.
+
+11
+00:00:42,280 --> 00:00:44,640
+>> Change management here is going to be a critical part.
+
+12
+00:00:44,640 --> 00:00:46,440
+It's not enough to give them the tools.
+
+13
+00:00:46,440 --> 00:00:51,240
+You have to build incentive programs, the motivation, the examples to how you do it.
+
+14
+00:00:51,240 --> 00:00:55,160
+I see a lot of companies roll out their agents and just expecting companies to adopt.
+
+15
+00:00:55,160 --> 00:00:56,120
+Doesn't work this way.
+
+16
+00:00:56,120 --> 00:00:59,440
+>> There's always been this question, is AI going to just make people that are not amazing more amazing,
+
+17
+00:00:59,440 --> 00:01:01,440
+or is it going to make amazing people even more amazing?
+
+18
+00:01:01,440 --> 00:01:06,040
+>> Top talent has this tendency of continuously trying to get better at their craft.
+
+19
+00:01:06,040 --> 00:01:15,320
+The key trait that I'm emphasizing for builders is Today, my guest is Tomer Cohen, long-time Chief Product Officer at
+
+20
+00:01:15,320 --> 00:01:22,480
+LinkedIn, who is piloting a new way of building that I think will become a model for how companies operate in the future.
+
+21
+00:01:22,480 --> 00:01:27,800
+It's called the full-stack builder program, and essentially the idea is to enable anyone,
+
+22
+00:01:27,800 --> 00:01:31,800
+no matter their function, to take products from idea to launch.
+
+23
+00:01:31,800 --> 00:01:37,080
+They've scrapped their APM program and replaced it with an associate full-stack builder program.
+
+24
+00:01:37,080 --> 00:01:43,080
+They've introduced a new career path with the title full-stack builder that anyone from any function can become.
+
+25
+00:01:43,080 --> 00:01:53,080
+And as you'll hear in the conversation, they've built a bunch of internal tools and agents [music] and processes to basically build a human plus AI product team that can move really fast,
+
+26
+00:01:53,080 --> 00:01:56,720
+adjust to change quickly, and do a lot more with a lot less.
+
+27
+00:01:56,720 --> 00:02:04,760
+If you're looking for inspiration for how to rethink how your team operates, and to lean into what AI is unlocking for teams and companies,
+
+28
+00:02:04,760 --> 00:02:06,240
+this episode is for you.
+
+29
+00:02:06,240 --> 00:02:10,280
+A huge thank you to Shira Gessaroli for suggesting topics for this conversation.
+
+30
+00:02:10,280 --> 00:02:15,240
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+31
+00:02:15,240 --> 00:02:17,000
+It helps tremendously.
+
+32
+00:02:17,000 --> 00:02:24,240
+And if you become an annual subscriber of my newsletter, you get a year free of a bunch of incredible products,
+
+33
+00:02:24,240 --> 00:02:29,560
+including a year free of Deven, Lovable, Replit, Bolt, Linear, Superhuman, Dscript, Gamma,
+
+34
+00:02:29,560 --> 00:02:34,120
+Perplexity, Warp, Granola, Magic Patterns, Raycast, Chappier, Dmobin, and Stripe Atlas.
+
+35
+00:02:34,120 --> 00:02:37,320
+Head on over to lennysnewsletter.com and click product pass.
+
+36
+00:02:37,320 --> 00:02:42,320
+With that, I bring you Tomer Cohen, after a short word from our sponsors.
+
+37
+00:02:42,320 --> 00:02:48,400
+My podcast guest tonight loves talking about craft and taste and agency and product market fit.
+
+38
+00:02:48,400 --> 00:02:50,120
+You know what we don't love talking about?
+
+39
+00:02:50,120 --> 00:02:51,200
+SOC 2.
+
+40
+00:02:51,200 --> 00:02:52,800
+That's where Vanta comes in.
+
+41
+00:02:52,800 --> 00:02:58,520
+Vanta helps companies of all sizes get compliant fast and stay that way with industry-leading AI,
+
+42
+00:02:58,520 --> 00:03:00,640
+automation, and continuous monitoring.
+
+43
+00:03:00,640 --> 00:03:06,960
+Whether you're a startup tackling your first SOC 2 or ISO 27001, or an enterprise managing vendor risk,
+
+44
+00:03:06,960 --> 00:03:11,440
+Vanta's trust management platform makes it quicker, easier, [music] and more scalable.
+
+45
+00:03:11,440 --> 00:03:17,880
+Vanta also helps you complete security questionnaires up to five times faster so that you can win bigger deals sooner.
+
+46
+00:03:17,880 --> 00:03:27,240
+The result, according to a recent IDC study, Vanta customers slashed over $500,000 a year and are three times more productive.
+
+47
+00:03:27,240 --> 00:03:29,680
+Establishing trust isn't optional.
+
+48
+00:03:29,680 --> 00:03:31,720
+Vanta makes it automatic.
+
+49
+00:03:31,720 --> 00:03:36,400
+Get $1,000 off at vanta.com/lenny.
+
+50
+00:03:36,760 --> 00:03:40,920
+This episode is brought to you by Figma, makers of Figma make.
+
+51
+00:03:40,920 --> 00:03:47,240
+When I was a PM at Airbnb, I still remember when Figma came out and how much it improved how we operated as a team.
+
+52
+00:03:47,240 --> 00:03:52,527
+Suddenly, I could involve my whole team in the design process, give feedback on design concepts really quickly,
+
+53
+00:03:52,527 --> 00:03:55,960
+[music] and it just made the whole product development process so much more fun.
+
+54
+00:03:55,960 --> 00:03:58,440
+But Figma never felt like it was for me.
+
+55
+00:03:58,440 --> 00:04:03,360
+It was great for giving feedback and designs, but as a builder, I wanted to make [music] stuff.
+
+56
+00:04:03,360 --> 00:04:05,720
+That's why Figma built Figma make.
+
+57
+00:04:05,720 --> 00:04:14,720
+With just a few prompts, you can make any idea or design [music] into a fully functional prototype or app that anyone can iterate on and validate with customers.
+
+58
+00:04:14,720 --> 00:04:17,560
+Figma make is a different kind of live coding tool.
+
+59
+00:04:17,560 --> 00:04:27,880
+Because it's all in Figma, you can use your team's existing design building blocks, making it easy to create outputs that look good and feel real and are connected [music] to how your team builds.
+
+60
+00:04:27,880 --> 00:04:32,880
+Stop spending so much time telling people about your product vision, and instead show it to them.
+
+61
+00:04:32,880 --> 00:04:36,720
+Make code-backed prototypes and apps fast with Figma make.
+
+62
+00:04:36,720 --> 00:04:40,280
+Check it out at figma.com/lenny.
+
+63
+00:04:42,480 --> 00:04:45,320
+Tomer, thank you so much for being here, and welcome to the podcast.
+
+64
+00:04:45,320 --> 00:04:45,600
+Thanks.
+
+65
+00:04:45,600 --> 00:04:46,880
+It's great to be back.
+
+66
+00:04:46,880 --> 00:04:48,600
+It's great to have you back.
+
+67
+00:04:48,600 --> 00:04:59,560
+I'm really excited to be chatting because you're experimenting with a very different way of building product at LinkedIn that fully embraces what AI
+
+68
+00:04:59,560 --> 00:05:02,720
+unlocks, kind of leans into what is now possible.
+
+69
+00:05:02,720 --> 00:05:09,160
+And to me, this feels like this could be a model for how a lot of companies operate and how product ends up being built in the future.
+
+70
+00:05:09,160 --> 00:05:12,440
+There's a lot of product leaders that are talking about AI, what they can do.
+
+71
+00:05:12,440 --> 00:05:15,960
+Feels like you're actually doing this in a really, really radical way.
+
+72
+00:05:15,960 --> 00:05:21,480
+And so, I'm excited to learn from you, to hear about this, for listeners to understand what you're seeing,
+
+73
+00:05:21,480 --> 00:05:23,160
+what you've learned.
+
+74
+00:05:23,160 --> 00:05:27,080
+Let me start with just why did you decide this was necessary?
+
+75
+00:05:27,080 --> 00:05:30,920
+Why are you rethinking all of these things about how product has been built for a long time,
+
+76
+00:05:30,920 --> 00:05:34,760
+aka, why do people need to pay attention to what we're about to be talking about?
+
+77
+00:05:34,760 --> 00:05:37,600
+It really starts with kind of the basics for me.
+
+78
+00:05:37,600 --> 00:05:39,920
+Technology has always been about empowerment.
+
+79
+00:05:39,920 --> 00:05:43,480
+It's not about what it does for us, it's about what it enables us to do.
+
+80
+00:05:43,480 --> 00:05:47,280
+And now we have this amazing opportunity, in my mind, to make it about meritocracy.
+
+81
+00:05:47,280 --> 00:05:51,000
+And I think it's an opportunity, but it's also a necessity right now.
+
+82
+00:05:51,000 --> 00:06:00,040
+And I want to put this in context where we're entering this phase where the time constant of change is far greater than the time constant of response.
+
+83
+00:06:00,040 --> 00:06:04,600
+This basically means that change is happening faster than we're able to respond to it.
+
+84
+00:06:04,600 --> 00:06:08,400
+Now, uh, you know, LinkedIn has this unique view of of the world of work.
+
+85
+00:06:08,400 --> 00:06:13,760
+So, we actually have some pretty, in my mind, mind-blowing stats to kind of put this in perspective.
+
+86
+00:06:13,760 --> 00:06:20,240
+When we look at like the skills required to do your job, by 2030, which is literally 4 years from now.
+
+87
+00:06:20,240 --> 00:06:25,600
+Sounds a long time, but 30 years from 4 years from now, they will change by 70%.
+
+88
+00:06:25,600 --> 00:06:29,280
+So, whether or not you're looking to change your job, your job is changing.
+
+89
+00:06:29,280 --> 00:06:31,920
+The only question is, do you keep it?
+
+90
+00:06:31,920 --> 00:06:38,600
+And then we look at organizationally, this the the fastest-growing jobs right now, the most in-demand jobs in the market,
+
+91
+00:06:38,600 --> 00:06:42,840
+are growing by north of 70% from last year's fastest-growing job.
+
+92
+00:06:42,840 --> 00:06:47,920
+So, there's a new kind of iteration of what you need as an organization to thrive.
+
+93
+00:06:47,920 --> 00:06:52,120
+And then you apply that to building products, and you realize that in order to stay competitive,
+
+94
+00:06:52,120 --> 00:06:56,480
+you actually have to go back to some first principles, go back to the drawing board,
+
+95
+00:06:56,480 --> 00:06:58,920
+and reimagine what it means to be building.
+
+96
+00:06:58,920 --> 00:07:05,480
+And what I love about this is, when you think about the role of a builder, which the builder is at the heart of company,
+
+97
+00:07:05,480 --> 00:07:07,440
+uh, the goal is actually quite simple.
+
+98
+00:07:07,440 --> 00:07:10,240
+Uh, the builder takes an idea and she brings it to life.
+
+99
+00:07:10,240 --> 00:07:11,520
+That's really the process, right?
+
+100
+00:07:11,520 --> 00:07:14,880
+And we all build those uh, let's call them like best practices.
+
+101
+00:07:14,880 --> 00:07:19,320
+You research the problem really well, you spec it out, you design it, you code it, you launch it,
+
+102
+00:07:19,320 --> 00:07:20,840
+and you iterate.
+
+103
+00:07:20,840 --> 00:07:22,880
+That's kind of that's basically it.
+
+104
+00:07:22,880 --> 00:07:28,440
+But what happens at at many at-scale companies, LinkedIn included and many other companies,
+
+105
+00:07:28,440 --> 00:07:32,000
+over time, that process became very complex very quickly.
+
+106
+00:07:32,000 --> 00:07:32,840
+So, what happened?
+
+107
+00:07:32,840 --> 00:07:37,440
+We took every step and we expanded it to a lot of sub-steps.
+
+108
+00:07:37,440 --> 00:07:44,440
+Researching the problem became looking at, for us, 10 to 15 sources of information, obviously talking to customers,
+
+109
+00:07:44,440 --> 00:07:49,760
+but doing data pulls, looking at feedback tickets in multiple sources, social media,
+
+110
+00:07:49,760 --> 00:07:51,840
+uh, interactions with customers.
+
+111
+00:07:51,840 --> 00:07:57,040
+We probably have 10 to 15 sources of information we go through before we kind of feel like we have researched the problem really,
+
+112
+00:07:57,040 --> 00:07:58,160
+really well.
+
+113
+00:07:58,160 --> 00:07:59,600
+Think about reviews for product.
+
+114
+00:07:59,600 --> 00:08:02,400
+There is design reviews, privacy reviews, security reviews.
+
+115
+00:08:02,400 --> 00:08:04,240
+I can go on and on and on.
+
+116
+00:08:04,240 --> 00:08:07,440
+And each one of those sub-steps actually has a valid reason to exist.
+
+117
+00:08:07,440 --> 00:08:14,360
+But when you add the whole thing together, you're like, "Oh my god, this is why it takes to build a small feature multiple teams,
+
+118
+00:08:14,360 --> 00:08:19,160
+multiple code bases, multiple sprints, just to get it out to launch, and not talk about iterating,
+
+119
+00:08:19,160 --> 00:08:20,760
+which is actually where you see success.
+
+120
+00:08:20,760 --> 00:08:23,280
+You never see success in the launch itself."
+
+121
+00:08:23,280 --> 00:08:27,880
+So, really, the work itself is not complex, but the process we made very complex.
+
+122
+00:08:27,880 --> 00:08:31,920
+And what I when I was digging in, I found it doesn't end there.
+
+123
+00:08:31,920 --> 00:08:34,760
+Because somebody has to do all those sub-steps.
+
+124
+00:08:34,760 --> 00:08:41,080
+So, what happened is you actually move from process complexity to organizational complexity as well.
+
+125
+00:08:41,080 --> 00:08:43,840
+Uh, and then you actually led to micro-specialization.
+
+126
+00:08:43,840 --> 00:08:47,640
+All those sub-steps are dying by doing by somebody specific.
+
+127
+00:08:47,640 --> 00:08:50,120
+So, from one builder, we have multiple functions.
+
+128
+00:08:50,120 --> 00:08:52,560
+Obviously, we have engineering, product, and design.
+
+129
+00:08:52,560 --> 00:08:55,200
+And you can start questioning those lines.
+
+130
+00:08:55,200 --> 00:08:57,040
+At least I am internally.
+
+131
+00:08:57,040 --> 00:09:01,200
+Uh, and from there, we have a lot of my, you know, sub-specialties.
+
+132
+00:09:01,200 --> 00:09:02,880
+Uh, it happens in every one of those functions.
+
+133
+00:09:02,880 --> 00:09:06,600
+But imagine design, we have interaction design, animation design, content design, research.
+
+134
+00:09:06,600 --> 00:09:08,760
+There's so many aspects to that.
+
+135
+00:09:08,760 --> 00:09:17,200
+So, uh, it's they all they're all valid, but they all have people and not that entire process basically means a lot of it's basically bloating,
+
+136
+00:09:17,200 --> 00:09:18,760
+it's complexity.
+
+137
+00:09:18,760 --> 00:09:21,640
+And then without noticing, you end up with this massively complex.
+
+138
+00:09:21,640 --> 00:09:26,560
+We actually have this diagram that basically shows the process complexity, organizational complexity together.
+
+139
+00:09:26,560 --> 00:09:30,360
+And usually people are like mind-blown because they're working on one one thing very specific,
+
+140
+00:09:30,360 --> 00:09:35,400
+but when you zoom out, you have this, you know, uh, overwhelming experience you're kind of,
+
+141
+00:09:35,400 --> 00:09:36,840
+uh, thinking about.
+
+142
+00:09:36,840 --> 00:09:41,760
+And now we have this real opportunity to collapse the stack back up, go back to craftsmanship,
+
+143
+00:09:41,760 --> 00:09:47,480
+rethink the product development life cycle, which is where the full-stack builder model comes to life.
+
+144
+00:09:47,480 --> 00:09:48,040
+Wow.
+
+145
+00:09:48,040 --> 00:09:49,640
+Okay, there's so much here.
+
+146
+00:09:49,640 --> 00:09:54,640
+Uh, we're going to be showing the visuals as you talk to help people see what you're explaining here.
+
+147
+00:09:54,640 --> 00:09:56,360
+And all of this is very rational.
+
+148
+00:09:56,360 --> 00:10:01,000
+Like if you have 15 sources of information, you like why not pull from it?
+
+149
+00:10:01,000 --> 00:10:02,960
+Like why miss out on that stuff?
+
+150
+00:10:02,960 --> 00:10:07,600
+And what you're describing here is as you get more power and more special like it all makes sense rationally,
+
+151
+00:10:07,600 --> 00:10:13,360
+but when you start to step back and look at this like holy take 6 months to launch a launch one feature.
+
+152
+00:10:13,360 --> 00:10:14,760
+I want to ask you about the stat you shared.
+
+153
+00:10:14,760 --> 00:10:21,160
+I think this is an incredibly powerful stat and you have very uh uh unique data here to tell you this sort of stuff.
+
+154
+00:10:21,160 --> 00:10:28,200
+So, you said that something like 70% of the skills that people will need in the future uh are going to change.
+
+155
+00:10:28,200 --> 00:10:29,720
+>> To do their current job.
+
+156
+00:10:29,720 --> 00:10:31,280
+To do their current job.
+
+157
+00:10:31,280 --> 00:10:32,360
+And what is this looking at?
+
+158
+00:10:32,360 --> 00:10:36,200
+Is this just like based on historical data or how do you how do you find that?
+
+159
+00:10:36,200 --> 00:10:38,840
+Yeah, to be fair, there was always a change, right?
+
+160
+00:10:38,840 --> 00:10:42,120
+So, it's it was never about just, you know, just keep the skills you have today.
+
+161
+00:10:42,120 --> 00:10:48,160
+But we've never seen such a tremendous part of uh of you know of your world today.
+
+162
+00:10:48,160 --> 00:10:53,680
+So, you know, where do you are a marketer right now or a seller, a recruiter, an engineer,
+
+163
+00:10:53,680 --> 00:10:59,040
+you know, engineering is where a lot of the investment is going in right now uh in terms of agents,
+
+164
+00:10:59,040 --> 00:11:02,520
+uh those those jobs will change dramatically.
+
+165
+00:11:02,520 --> 00:11:14,000
+Uh you know, I remember I said my my role my my life as an engineer and you know, even then it changed materially after 10 years and then the change we're seeing right now just think about in 4 years what did it take to actually
+
+166
+00:11:14,000 --> 00:11:18,880
+engineer really really well would be dramatically different or to build software, to build an artifact of some sort.
+
+167
+00:11:18,880 --> 00:11:20,880
+But it's true for almost every function.
+
+168
+00:11:20,880 --> 00:11:22,440
+It's not equal.
+
+169
+00:11:22,440 --> 00:11:25,600
+You know, some job like nurses will see less impact.
+
+170
+00:11:25,600 --> 00:11:28,880
+But some jobs will see 90-95% impact.
+
+171
+00:11:28,880 --> 00:11:39,520
+There's also a stat that I don't think you mentioned here that I saw in the post when you first talked about this program is that 70% of today's fastest growing jobs were not even on the list of jobs a year ago.
+
+172
+00:11:39,520 --> 00:11:48,120
+Yeah, it was a it was No, so the 70 Yeah, so this is the fastest growing job on the list were not there a year ago and then uh many of them don't even exist uh you know,
+
+173
+00:11:48,120 --> 00:11:50,160
+a decade or two ago.
+
+174
+00:11:50,160 --> 00:11:52,640
+There's actually some pretty amazing stats across the board.
+
+175
+00:11:52,640 --> 00:11:56,280
+Okay, so let's talk about the uh this program that you built.
+
+176
+00:11:56,280 --> 00:12:03,000
+Uh tell us the name and then tell us the the kind of the gist of what it is today and the vision of where you want it to be.
+
+177
+00:12:03,000 --> 00:12:09,120
+Yeah, so we uh call it the full-stack builder model and the the goal uh always start with the goal.
+
+178
+00:12:09,120 --> 00:12:17,400
+The goal itself is to empower great builders to take their idea and to take it to market regardless of their role in the stack and you know,
+
+179
+00:12:17,400 --> 00:12:19,720
+specifically which team they're on.
+
+180
+00:12:19,720 --> 00:12:30,120
+And uh the kind of the the idea ultimately is to be able for that builder is to develop experiences end-to-end to combine skills and expertise of what
+
+181
+00:12:30,120 --> 00:12:34,200
+across what was traditionally distinct domains to bring it all together.
+
+182
+00:12:34,200 --> 00:12:35,640
+And it's not a sequence of steps.
+
+183
+00:12:35,640 --> 00:12:38,160
+It's really a fluid interaction between human and machine.
+
+184
+00:12:38,160 --> 00:12:40,000
+That's how the way I see it.
+
+185
+00:12:40,000 --> 00:12:44,360
+And then when you look back at that product development life cycle from, you know, the the idea,
+
+186
+00:12:44,360 --> 00:12:54,440
+the insight all the way to launch the key trait that I'm emphasizing for for builders is where I want them to spend their time is where I think great builders should shine in.
+
+187
+00:12:54,440 --> 00:13:01,360
+So, the idea of vision coming up with a compelling stance about the future uh empathy super critical,
+
+188
+00:13:01,360 --> 00:13:01,560
+right?
+
+189
+00:13:01,560 --> 00:13:06,440
+Having a profound understanding of an unmet need communication is critical.
+
+190
+00:13:06,440 --> 00:13:17,480
+I we see this a lot in job descriptions right now for almost every role, but the ability for you to align and rally others others around an idea creativity which for me is about coming
+
+191
+00:13:17,480 --> 00:13:20,120
+up with possibilities beyond the obvious.
+
+192
+00:13:20,120 --> 00:13:23,080
+For example, I don't think AI yet is great at creativity.
+
+193
+00:13:23,080 --> 00:13:33,000
+I think it's kind of in many ways brings back the things you might not know about, but but it's not the kind of next level creativity which I think still humans are are much
+
+194
+00:13:33,000 --> 00:13:33,800
+better at.
+
+195
+00:13:33,800 --> 00:13:38,160
+And then uh ultimately what I think is the most important trait for a builder is judgment.
+
+196
+00:13:38,160 --> 00:13:44,120
+That's, you know, some people call it test making but it's making high quality decisions in what is complex,
+
+197
+00:13:44,120 --> 00:13:45,880
+ambiguous situations.
+
+198
+00:13:45,880 --> 00:13:48,600
+Everything else I'm working really hard to automate.
+
+199
+00:13:48,600 --> 00:13:49,960
+Really really hard.
+
+200
+00:13:49,960 --> 00:13:54,440
+And then when you think about the outcome, it's not just about you having more shots at the goal,
+
+201
+00:13:54,440 --> 00:13:57,800
+which I think you'll go go go like that oh, the iteration speed is going to be very high.
+
+202
+00:13:57,800 --> 00:13:58,880
+Yes.
+
+203
+00:13:58,880 --> 00:14:05,839
+But what you're really doing to an organization, you know, the scale of a at scale organizations is you're they're a lot more nimble,
+
+204
+00:14:05,839 --> 00:14:08,200
+a lot more adaptive, a lot more resilient.
+
+205
+00:14:08,200 --> 00:14:09,320
+They can navigate the future.
+
+206
+00:14:09,320 --> 00:14:13,720
+They can actually match the pace of change to the pace of response.
+
+207
+00:14:13,720 --> 00:14:22,920
+And the analogy I have in mind is kind of Navy SEALs, you know, you come to training you they're all kind of learning they're cross-trained across multiple areas
+
+208
+00:14:22,920 --> 00:14:26,360
+what they specialize in is the mission.
+
+209
+00:14:26,360 --> 00:14:33,720
+Uh and they operate in small pods and they're very nimble and you can assemble them very quickly and I think that's going to be the organization that will win in the future.
+
+210
+00:14:33,720 --> 00:14:43,480
+Okay, so the kind of the simple idea if you're just a boil it down to a sentence, the idea here is there's a builder who goes through the entire product development process essentially on their own.
+
+211
+00:14:43,480 --> 00:14:48,160
+They have an idea, they research, they do data, they prototype, design, ship.
+
+212
+00:14:48,160 --> 00:14:50,760
+That's kind of like the vision of where this goes.
+
+213
+00:14:50,760 --> 00:14:52,160
+Yes, but it doesn't have to be on their own.
+
+214
+00:14:52,160 --> 00:14:54,520
+It's not like it's not I still believe in teams.
+
+215
+00:14:54,520 --> 00:14:55,040
+Got it.
+
+216
+00:14:55,040 --> 00:14:56,160
+Smaller teams.
+
+217
+00:14:56,160 --> 00:15:03,959
+Smaller teams and much more focused on the problem, the mission per se versus actually one of the things we've done as an example,
+
+218
+00:15:03,959 --> 00:15:08,959
+we kind of uh started to do the idea of pods where no longer large teams.
+
+219
+00:15:08,959 --> 00:15:16,079
+We assemble a team ideally a full-stack builder is coming together and you know, it's less about can I have an engineer,
+
+220
+00:15:16,079 --> 00:15:27,079
+design, PM working together and trying to combine this trio, looking to folks who can flex across and then they tackle something for a quarter or so and then we kind of reassemble those to different pods.
+
+221
+00:15:27,079 --> 00:15:34,120
+That's like one example of a manifestation we're doing right now and seeing actually some great success in both in terms of velocity,
+
+222
+00:15:34,120 --> 00:15:37,079
+but also in terms of that focus and nimbleness of that team.
+
+223
+00:15:37,079 --> 00:15:47,000
+And it feels like the goal here what you're trying to adjust and that broke as teams bloated is speed and adaptability and flexibility because going back to
+
+224
+00:15:47,000 --> 00:15:56,160
+your original uh point that uh change is happening so much more quickly now that companies that have been building in this traditional way just can't compete.
+
+225
+00:15:56,160 --> 00:15:58,240
+Yeah, it's not that you have to break the model.
+
+226
+00:15:58,240 --> 00:15:59,440
+I think the model is broken.
+
+227
+00:15:59,440 --> 00:16:03,560
+It's just this uh pace of change is is helping us realize it.
+
+228
+00:16:03,560 --> 00:16:08,720
+Okay, so then going back to the things that these builders still do versus what you want to automate.
+
+229
+00:16:08,720 --> 00:16:14,600
+So, the list you shared is uh they're responsible for the vision empathy, communication,
+
+230
+00:16:14,600 --> 00:16:16,280
+creativity, and judgment.
+
+231
+00:16:16,280 --> 00:16:16,920
+>> Yes.
+
+232
+00:16:16,920 --> 00:16:19,800
+Yeah, and I would put a lot of the focus on the latter.
+
+233
+00:16:19,800 --> 00:16:27,360
+I think the kind of if you ask me at the end of the day what's the kind of most important trait I would say it's that judgment test making ability.
+
+234
+00:16:27,360 --> 00:16:35,160
+And then in terms of what you're automating, what are some of the areas you've seen a lot of success in actually automating and where do you think this goes?
+
+235
+00:16:35,160 --> 00:16:36,079
+Yeah.
+
+236
+00:16:36,079 --> 00:16:41,920
+So, I think just to kind of break it to pieces uh and I think this is, you know, if you were a startup right now,
+
+237
+00:16:41,920 --> 00:16:44,040
+you know, in many ways you can start this way, right?
+
+238
+00:16:44,040 --> 00:16:49,200
+You can uh there's no legacy code, there's no legacy structure you run in.
+
+239
+00:16:49,200 --> 00:16:56,680
+In fact, a lot of the startups I talk to uh that are built AI natively, they're they don't they're are just working at full-stack builders.
+
+240
+00:16:56,680 --> 00:16:58,280
+Uh that's the way they start.
+
+241
+00:16:58,280 --> 00:17:03,600
+If you're at a company at the scale uh of of ours and and many others in the market in in the market,
+
+242
+00:17:03,600 --> 00:17:12,280
+you're like this is the most like a new production function and mindset uh that that you have to do and there's really three components that we're working on.
+
+243
+00:17:12,280 --> 00:17:18,120
+One is platform, the second one is the tools and the agents and lastly is the culture.
+
+244
+00:17:18,120 --> 00:17:26,760
+The platform one this is the kind of level of investment you have to do before to before this actually starts to you start to see all the benefits come accrue.
+
+245
+00:17:26,760 --> 00:17:32,240
+But the platform for us as an example is re-architecting all of our core platform so AI can reason over it.
+
+246
+00:17:32,240 --> 00:17:38,320
+So, we're building kind of this uh composable UI components uh with server side that we actually build.
+
+247
+00:17:38,320 --> 00:17:41,360
+We're basically building for AI to be ready to bring it in.
+
+248
+00:17:41,360 --> 00:17:46,679
+So, you can't just go and bring a third-party tool and have it work on the LinkedIn stack.
+
+249
+00:17:46,679 --> 00:17:49,840
+In fact, that's one of our biggest learnings, it never works.
+
+250
+00:17:49,840 --> 00:17:51,080
+Never works.
+
+251
+00:17:51,080 --> 00:17:58,880
+You have to bring it in and customize a lot of it working almost in alpha mode with those companies to make it work internally.
+
+252
+00:17:58,880 --> 00:18:03,280
+So, this is essentially re-architecting your code base to work more efficiently with AI.
+
+253
+00:18:03,280 --> 00:18:04,560
+Is that one way to think about it?
+
+254
+00:18:04,560 --> 00:18:11,800
+>> Yes, and in many ways working with those companies to uh adjust something in their stack to work with our stack as well.
+
+255
+00:18:11,800 --> 00:18:16,679
+When you say those companies meaning like the development agents like Cursors and Devins and such?
+
+256
+00:18:16,679 --> 00:18:18,960
+Yes, and like or Figma on design.
+
+257
+00:18:18,960 --> 00:18:22,160
+We can figure out the design system is another is another example of that.
+
+258
+00:18:22,160 --> 00:18:32,960
+But you have to have that back and forth because they're not in many ways we haven't seen anybody be able to work off the shelf immediately on our on our code base design systems and unique
+
+259
+00:18:32,960 --> 00:18:34,080
+context we have.
+
+260
+00:18:34,080 --> 00:18:36,760
+Just to follow that thread briefly, what are So, there's Figma, that's interesting.
+
+261
+00:18:36,760 --> 00:18:41,320
+So, basically the way Figma exports and keeps your design system that has to change to work better with AI.
+
+262
+00:18:41,320 --> 00:18:46,320
+Is that what I'm They first need to know how to work with our design systems, which is something there's there you know,
+
+263
+00:18:46,320 --> 00:18:48,080
+many ways a lot of those companies are working on.
+
+264
+00:18:48,080 --> 00:18:49,040
+Same with coding.
+
+265
+00:18:49,040 --> 00:18:55,800
+You need you can't you it doesn't work that you just bring it in and it just reasons over your code base uh really but we tried.
+
+266
+00:18:55,800 --> 00:19:01,480
+You have to build we're building that layer that basically allows it to do so, whether it's Copilot or Cursor,
+
+267
+00:19:01,480 --> 00:19:02,720
+Windsurf and so on.
+
+268
+00:19:02,720 --> 00:19:03,800
+Got it.
+
+269
+00:19:03,800 --> 00:19:04,040
+Okay.
+
+270
+00:19:04,040 --> 00:19:05,360
+Oh, yeah, Copilot, Microsoft.
+
+271
+00:19:05,360 --> 00:19:05,880
+I get it.
+
+272
+00:19:05,880 --> 00:19:06,520
+I get it.
+
+273
+00:19:06,520 --> 00:19:07,280
+Okay.
+
+274
+00:19:07,280 --> 00:19:10,600
+Uh okay, so so that's the platform.
+
+275
+00:19:10,600 --> 00:19:16,919
+So, that's an investment that you guys have to make to make AI effective at at building and and doing all these things.
+
+276
+00:19:16,919 --> 00:19:17,600
+>> you have tools.
+
+277
+00:19:17,600 --> 00:19:20,040
+So, tools is where you you really build the agents.
+
+278
+00:19:20,040 --> 00:19:25,360
+I mentioned I want to automate everything outside of those five traits that we talked about and then we're building the tools for that.
+
+279
+00:19:25,360 --> 00:19:29,679
+And then for that actually very similarly, I can't just bring a tool from the outside and work.
+
+280
+00:19:29,679 --> 00:19:30,919
+So, I'll give you an example.
+
+281
+00:19:30,919 --> 00:19:34,520
+We're building one of our biggest things is building a trust agent.
+
+282
+00:19:34,520 --> 00:19:38,159
+Uh we you know, trust is very important for us at LinkedIn.
+
+283
+00:19:38,159 --> 00:19:44,040
+Uh there's a lot of unique vectors which trust plays at LinkedIn uh doesn't place at any anywhere else.
+
+284
+00:19:44,040 --> 00:19:50,240
+So, we need to bring all of that know-how and context and information base into that agent.
+
+285
+00:19:50,240 --> 00:19:53,840
+So, we ended up building our own trust agent at LinkedIn.
+
+286
+00:19:53,840 --> 00:19:55,280
+And so, what is this trust agent doing?
+
+287
+00:19:55,280 --> 00:19:58,520
+Telling you when you're maybe exposing information that you shouldn't >> So, when you build a spec,
+
+288
+00:19:58,520 --> 00:20:02,360
+you build an idea, you walk through the trust agent and it will basically tell you how,
+
+289
+00:20:02,360 --> 00:20:09,920
+you know, what are your vulnerabilities, what, you know, harm vectors potentially you're introducing or will be introduced as a result of that.
+
+290
+00:20:09,920 --> 00:20:11,520
+And I had our head of trust build it.
+
+291
+00:20:11,520 --> 00:20:16,560
+So, the the head of craft for every area is building their own agent.
+
+292
+00:20:16,560 --> 00:20:21,720
+As an example, we we took, you know, we have one of our features for job seekers is called open to work.
+
+293
+00:20:21,720 --> 00:20:23,880
+If you're looking for a job, you can put an open to work.
+
+294
+00:20:23,880 --> 00:20:26,040
+Yeah, little green like thing on the circle.
+
+295
+00:20:26,040 --> 00:20:27,400
+And actually, it's a great signal.
+
+296
+00:20:27,400 --> 00:20:28,720
+I've seen some great success from it.
+
+297
+00:20:28,720 --> 00:20:29,680
+People are helping each other.
+
+298
+00:20:29,680 --> 00:20:32,880
+The community really thrives around helping each other.
+
+299
+00:20:32,880 --> 00:20:39,120
+But at the same time, it introduces a trust vector for bad actors because they're you know,
+
+300
+00:20:39,120 --> 00:20:39,680
+open to work.
+
+301
+00:20:39,680 --> 00:20:45,920
+People who are looking for a job are potentially more vulnerable to scams than other folks.
+
+302
+00:20:45,920 --> 00:20:48,800
+So, being able to think about how do we prevent all of those ahead of time.
+
+303
+00:20:48,800 --> 00:20:53,680
+So, we run we walked that spec from a couple of years ago through the trust agent.
+
+304
+00:20:53,680 --> 00:21:00,600
+Not only was it able to find all the stuff we initiated at the beginning, but all the holes that we did not catch until later.
+
+305
+00:21:00,600 --> 00:21:03,720
+So, that's a great example of something that actually worked really well.
+
+306
+00:21:03,720 --> 00:21:04,200
+That's one.
+
+307
+00:21:04,200 --> 00:21:07,160
+The other one is a growth agent as an example.
+
+308
+00:21:07,160 --> 00:21:12,800
+Again, LinkedIn has a very unique, actually one of our we have an incredible growth team,
+
+309
+00:21:12,800 --> 00:21:14,480
+growth process.
+
+310
+00:21:14,480 --> 00:21:20,960
+We've kind of funneled all of our unique loops, our funnels, our tests of the past, everything into this growth agent.
+
+311
+00:21:20,960 --> 00:21:27,440
+And now you can basically rock your spec for it, your idea for it, and it will not just allow you to do it better.
+
+312
+00:21:27,440 --> 00:21:30,960
+It will actually critique how good is your idea.
+
+313
+00:21:30,960 --> 00:21:32,360
+This is something you cannot bring off the shelf.
+
+314
+00:21:32,360 --> 00:21:34,680
+It's very unique to LinkedIn.
+
+315
+00:21:34,680 --> 00:21:37,800
+So, we had to invest dramatically in it.
+
+316
+00:21:37,800 --> 00:21:42,800
+And, you know, one team which is using it right now, which is almost, you know, wasn't,
+
+317
+00:21:42,800 --> 00:21:47,920
+uh, wasn't thinking about it at the beginning, but our UX our team, our our UXR team,
+
+318
+00:21:47,920 --> 00:21:55,000
+like the user research team, is using that growth agent to understand out of all the things they're basically surfacing for members,
+
+319
+00:21:55,000 --> 00:21:59,320
+which one has the biggest growth opportunity to have the biggest impact.
+
+320
+00:21:59,320 --> 00:22:01,320
+That was not in the cards when we thought about that idea.
+
+321
+00:22:01,320 --> 00:22:05,560
+But teams are basically finding like funneling those ideas into this one.
+
+322
+00:22:05,560 --> 00:22:07,800
+An example is our research agent.
+
+323
+00:22:07,800 --> 00:22:13,600
+So, research agent basically is trained on the personas of our members.
+
+324
+00:22:13,600 --> 00:22:17,400
+You can think about like a small business owner, a job seeker, and so on.
+
+325
+00:22:17,400 --> 00:22:23,280
+And it's using not just world knowledge, it's using all the research we've done in the past,
+
+326
+00:22:23,280 --> 00:22:26,000
+all the support tickets coming in.
+
+327
+00:22:26,000 --> 00:22:29,240
+So, it's it's pretty good at understanding that persona at LinkedIn.
+
+328
+00:22:29,240 --> 00:22:35,600
+So, one example we had is a team came out with a spec where they weren't aware we had a research agent yet.
+
+329
+00:22:35,600 --> 00:22:42,160
+I asked the research agent, you know, for a small business owner, what do you think about the marketing spec we had?
+
+330
+00:22:42,160 --> 00:22:43,880
+And it critiqued it extremely well.
+
+331
+00:22:43,880 --> 00:22:50,400
+Actually, in many ways shifted the direction of the team to focus on other integrations tools we can focus on.
+
+332
+00:22:50,400 --> 00:22:55,880
+But, you know, it's very hard to have that visibility all to all that corpus of knowledge inside of the company.
+
+333
+00:22:55,880 --> 00:22:56,840
+That's another example.
+
+334
+00:22:56,840 --> 00:23:01,480
+We have an analyst agent trained on all like how you basically can query the entire LinkedIn graph,
+
+335
+00:23:01,480 --> 00:23:07,400
+which is enormous, instead of, you know, relying on your SQL queries or data science teams,
+
+336
+00:23:07,400 --> 00:23:09,080
+you can use the analyst agent.
+
+337
+00:23:09,080 --> 00:23:13,800
+All of those I would say are I would call them still MVP plus plus.
+
+338
+00:23:13,800 --> 00:23:17,520
+The goal for us in the next couple of months to basically roll them out externally.
+
+339
+00:23:17,520 --> 00:23:20,000
+Externally, I mean internally at LinkedIn.
+
+340
+00:23:20,000 --> 00:23:22,280
+Okay, now that's new product lines.
+
+341
+00:23:22,280 --> 00:23:23,640
+So, okay, so many questions.
+
+342
+00:23:23,640 --> 00:23:25,080
+One is just how are you building this?
+
+343
+00:23:25,080 --> 00:23:26,360
+Like is there a platform you're using?
+
+344
+00:23:26,360 --> 00:23:28,320
+What does it take to build an agent at LinkedIn?
+
+345
+00:23:28,320 --> 00:23:29,360
+Is it all internal tools?
+
+346
+00:23:29,360 --> 00:23:31,480
+Is there third party you use?
+
+347
+00:23:31,480 --> 00:23:31,880
+It's a good call.
+
+348
+00:23:31,880 --> 00:23:35,000
+So, I think we've we've been experimenting with a lot of tools.
+
+349
+00:23:35,000 --> 00:23:42,720
+And I would say a lot for a lot of those kind of knowledge corpus agents, we're using everything from Copilot Enterprise to ChatGPT Enterprise.
+
+350
+00:23:42,720 --> 00:23:47,679
+By far though, the most important part was basically our own customization of it.
+
+351
+00:23:47,679 --> 00:23:50,480
+That's been the where we saw the biggest gain.
+
+352
+00:23:50,480 --> 00:23:55,720
+You know, even like building the orchestrator across those because you don't want to use you want the agents to start falling through each other.
+
+353
+00:23:55,720 --> 00:24:02,960
+The trust agent should kind of work with the growth agent and do a back and forth versus doing what more sequentially.
+
+354
+00:24:02,960 --> 00:24:05,200
+So, we've done a lot of work internally to make it happen.
+
+355
+00:24:05,200 --> 00:24:08,920
+This is why I think it does require that level of investment.
+
+356
+00:24:08,920 --> 00:24:12,960
+And then in some cases, you know, let's talk about, you know, the design agent that we're working with.
+
+357
+00:24:12,960 --> 00:24:18,440
+We're working with multiple companies to try and understand which which product works best for us.
+
+358
+00:24:18,440 --> 00:24:26,560
+And interestingly enough, um, and this is another learning, different teams gravitate to different products.
+
+359
+00:24:26,560 --> 00:24:34,760
+So, that's like something we'll have to resolve and think about how we do this really well because ultimately we were trying to kind of simplify the process as much as possible,
+
+360
+00:24:34,760 --> 00:24:39,800
+but that's like a that was a big learning for us in how which tools we use and how we basically integrate them in.
+
+361
+00:24:39,800 --> 00:24:40,040
+Got it.
+
+362
+00:24:40,040 --> 00:24:44,120
+So, like you might have an amazing Figma agent, but some teams want to use a different design tool.
+
+363
+00:24:44,120 --> 00:24:49,400
+Yeah, so like, you know, we've kind of experimented with Figma and Subframe and Magic Patterns and so on,
+
+364
+00:24:49,400 --> 00:24:56,360
+and we saw people gravitating depending on the function, their level of visibility, their their know-how of the tool before,
+
+365
+00:24:56,360 --> 00:24:58,440
+they're gravitating to different tools.
+
+366
+00:24:58,440 --> 00:25:02,560
+And, you know, ultimately, I don't want to have design agents in the company.
+
+367
+00:25:02,560 --> 00:25:06,120
+So, we have to like, you know, converge into at least a few.
+
+368
+00:25:06,120 --> 00:25:15,400
+And I think it's similar across many areas because the appeal of those a lot of those agents are trying to solve similar end goal,
+
+369
+00:25:15,400 --> 00:25:17,800
+but they're doing it very differently.
+
+370
+00:25:17,800 --> 00:25:23,200
+And what you'll see that ultimately, I don't think there's going to be a winner takes all because the starting point of,
+
+371
+00:25:23,200 --> 00:25:28,640
+you know, the customer or the user will dictate a lot how simple they are for that use case.
+
+372
+00:25:28,640 --> 00:25:29,600
+Super interesting.
+
+373
+00:25:29,600 --> 00:25:35,560
+The other interesting takeaway here is you're designing very specific agents that are one job to be done.
+
+374
+00:25:35,560 --> 00:25:37,120
+Is that a very intentional decision?
+
+375
+00:25:37,120 --> 00:25:40,840
+Did you try an agent that just is super intelligent on all these things?
+
+376
+00:25:40,840 --> 00:25:43,360
+We're ultimately going to do an orchestrator.
+
+377
+00:25:43,360 --> 00:25:51,520
+We're going to do the orchestrator across, but we did want to be able to rate and grade those agents pretty well on how they're doing.
+
+378
+00:25:51,520 --> 00:25:53,600
+And I think there is a level of expertise.
+
+379
+00:25:53,600 --> 00:26:00,240
+Now, we're kind of building this as in a way where you'll be able we'll be able to mask a lot of those.
+
+380
+00:26:00,240 --> 00:26:02,320
+You might not know that there's a trust agent.
+
+381
+00:26:02,320 --> 00:26:08,440
+You know, you might have we call we call this internally the product jammer agent that basically does your product jam,
+
+382
+00:26:08,440 --> 00:26:10,240
+which is a process we do internally.
+
+383
+00:26:10,240 --> 00:26:15,040
+You might just use the product jam engine, and that product jam engine will work with all the other agents.
+
+384
+00:26:15,040 --> 00:26:19,920
+But now we're starting with that building blocks until we build our orchestrating layer across.
+
+385
+00:26:19,920 --> 00:26:27,400
+Another interesting takeaway from what you've been sharing is that so much of the work has gone into the beginning of the product development process,
+
+386
+00:26:27,400 --> 00:26:32,120
+just like helping you craft the right requirements, clarify trust, and then here's product jam,
+
+387
+00:26:32,120 --> 00:26:33,760
+and here's research we've done.
+
+388
+00:26:33,760 --> 00:26:38,520
+And I imagine it's because coding has already been accelerated with all these ID tools.
+
+389
+00:26:38,520 --> 00:26:43,720
+Talk about just like why that's maybe where most of the investment's gone and where you've seen the most impact so far.
+
+390
+00:26:43,720 --> 00:26:49,960
+100% our coding investment has gone started, you know, a while back, and and those are falling into place.
+
+391
+00:26:49,960 --> 00:26:51,440
+We have our coding agent.
+
+392
+00:26:51,440 --> 00:26:54,000
+In fact, I would kind of stage it into two parts of it.
+
+393
+00:26:54,000 --> 00:27:00,800
+There is the idea to design part, and then there's the, you know, let's call it the code to launch part.
+
+394
+00:27:00,800 --> 00:27:04,679
+The code to launch part has gotten a lot of attention, and we're making some big inroads there.
+
+395
+00:27:04,679 --> 00:27:08,800
+Everything from the coding agent to what we call the maintenance agent.
+
+396
+00:27:08,800 --> 00:27:13,000
+When you have, you know, a failed build, it will do it for you.
+
+397
+00:27:13,000 --> 00:27:18,920
+In fact, I think we're close to 50% of all those builds being done by the maintenance agent and a QA agent.
+
+398
+00:27:18,920 --> 00:27:19,640
+Wow.
+
+399
+00:27:19,640 --> 00:27:24,040
+This is when a break builds instead of engineers hopping on the issues and stuff.
+
+400
+00:27:24,040 --> 00:27:27,520
+>> still go and finish your coffee before you have to go and and redo the build again.
+
+401
+00:27:27,520 --> 00:27:28,640
+Extremely cool.
+
+402
+00:27:28,640 --> 00:27:35,360
+But we haven't had much investment until we kind of launched this program in the idea to design area.
+
+403
+00:27:35,360 --> 00:27:37,240
+And that's a material part of work.
+
+404
+00:27:37,240 --> 00:27:43,480
+It's also where the quality a lot of the work comes from in at least in before you start to go into the coding phase.
+
+405
+00:27:43,480 --> 00:27:44,760
+The idea is to empower everybody.
+
+406
+00:27:44,760 --> 00:27:51,240
+So, if you're an engineer, you can basically use all those tools at the front of the process and be able to be a full stack builder.
+
+407
+00:27:51,240 --> 00:27:55,800
+How long did it take to get this kind of in place for you to actually form your first team to build these you know,
+
+408
+00:27:55,800 --> 00:27:59,840
+initial agents and some of this back and, you know, redo the code base sort of thing?
+
+409
+00:27:59,840 --> 00:28:05,880
+I announced this internally, you know, end of last year we really kind of started working,
+
+410
+00:28:05,880 --> 00:28:09,240
+but it was more setting up the teams and the and the processes internally.
+
+411
+00:28:09,240 --> 00:28:15,760
+We had our first MVPs of those agents I think like four to five months after it was like really trained,
+
+412
+00:28:15,760 --> 00:28:16,560
+I would say.
+
+413
+00:28:16,560 --> 00:28:20,120
+But really the work itself has been kind of couple of months of dedicated work.
+
+414
+00:28:20,120 --> 00:28:24,120
+A lot of it has been getting all the corpus of data together, cleaning it up.
+
+415
+00:28:24,120 --> 00:28:25,600
+That's actually a good learning as well.
+
+416
+00:28:25,600 --> 00:28:30,880
+Like it's not great to just give it access to your drive and say reason all over this knowledge base.
+
+417
+00:28:30,880 --> 00:28:37,800
+It actually does a very poor job understanding importance of the past and putting weights on stuff.
+
+418
+00:28:37,800 --> 00:28:44,360
+You actually want to think about specifically what the context when you want to give it to and what's the knowledge base that you want to have it focus on.
+
+419
+00:28:44,360 --> 00:28:50,840
+So, even cleaning up let's call them gold examples or golden examples to learn from has been one of the biggest learnings.
+
+420
+00:28:50,840 --> 00:28:54,720
+Just reasoning over your entire knowledge base does not work.
+
+421
+00:28:54,720 --> 00:28:55,480
+Yeah, that makes sense.
+
+422
+00:28:55,480 --> 00:29:00,080
+There may be just like a researcher with a strong opinion about something that you disagree with,
+
+423
+00:29:00,080 --> 00:29:01,560
+and that's and it would know.
+
+424
+00:29:01,560 --> 00:29:03,040
+It's like,"Oh, of course, this is data.
+
+425
+00:29:03,040 --> 00:29:03,840
+This is fact."
+
+426
+00:29:03,840 --> 00:29:04,360
+Exactly.
+
+427
+00:29:04,360 --> 00:29:09,400
+And then it doesn't always understand like, you know, ties to original specs to success.
+
+428
+00:29:09,400 --> 00:29:15,200
+Like you have to actually build This is a really interesting way when you think about how you bring those tools in,
+
+429
+00:29:15,200 --> 00:29:16,320
+you can't just bring them in.
+
+430
+00:29:16,320 --> 00:29:18,960
+You have to know what you feed them with.
+
+431
+00:29:18,960 --> 00:29:21,600
+And what you feed them with is not just access.
+
+432
+00:29:21,600 --> 00:29:25,000
+I see a lot of people who just focus on the connectivity and integration.
+
+433
+00:29:25,000 --> 00:29:31,320
+And it reminds me of the, you know, this is almost like this is actually more than 10 years ago when I was,
+
+434
+00:29:31,320 --> 00:29:37,560
+you know, co-rebuilding the team, co-rebuilding the feed at LinkedIn, and we started from scratch,
+
+435
+00:29:37,560 --> 00:29:46,159
+and we I had to like literally sit down and filter through examples of what is a good professional post on LinkedIn and what is not.
+
+436
+00:29:46,159 --> 00:29:52,760
+And that was I'm not this was like weeks of work getting up with that golden sample of examples,
+
+437
+00:29:52,760 --> 00:29:57,680
+but the first and most important part was fitting in the right data, not all the data.
+
+438
+00:29:57,680 --> 00:29:59,680
+So, it's it requires work.
+
+439
+00:29:59,680 --> 00:30:07,200
+It This is where I would say like for many companies who are thinking about this phase and I do a lot of sessions today with CPOs and CEOs on this process,
+
+440
+00:30:07,200 --> 00:30:11,400
+you have to put this initial work to get the gains after.
+
+441
+00:30:11,400 --> 00:30:18,800
+And when I think about it, I think this is a I think there's a takeaway there and generally with AI uh even if you're learning it for the first time and so on,
+
+442
+00:30:18,800 --> 00:30:30,040
+whether it's cursor or whether it's design or it's Figma or other tools or lovable you should be ready to invest those hours before you start seeing yourself
+
+443
+00:30:30,040 --> 00:30:35,640
+pick up in velocity and quality which will come up, but you have to invest that time.
+
+444
+00:30:35,640 --> 00:30:37,880
+This episode is brought to you by Miro.
+
+445
+00:30:37,880 --> 00:30:42,160
+Every day new headlines are scaring us about all the ways that AI is coming for our jobs,
+
+446
+00:30:42,160 --> 00:30:44,120
+creating a lot of anxiety and fear.
+
+447
+00:30:44,120 --> 00:30:47,040
+But a recent survey from Miro tells a different story.
+
+448
+00:30:47,040 --> 00:30:54,080
+76% of people believe that AI can benefit their role, but over 50% of people struggle to know when to use it.
+
+449
+00:30:54,080 --> 00:31:02,160
+Enter Miro's innovation workspace, an intelligent platform that brings people and AI together in a shared space to get great work done.
+
+450
+00:31:02,160 --> 00:31:07,600
+Miro has been empowering teams to transform bold ideas into the next big thing for over a decade.
+
+451
+00:31:07,600 --> 00:31:14,800
+Today, they're at the forefront of bringing products to market even faster by unleashing the combined power of AI [music] and human potential.
+
+452
+00:31:14,800 --> 00:31:17,680
+Guests of this podcast share Miro templates.
+
+453
+00:31:17,680 --> 00:31:20,480
+I use it all the time to brainstorm ideas with my team.
+
+454
+00:31:20,480 --> 00:31:27,360
+Teams especially can work with Miro AI to turn unstructured [music] data like sticky notes or screenshots into usable diagrams,
+
+455
+00:31:27,360 --> 00:31:30,600
+product briefs, data tables, and prototypes in minutes.
+
+456
+00:31:30,600 --> 00:31:34,040
+You don't have to be an AI [music] master or to toggle yet another tool.
+
+457
+00:31:34,040 --> 00:31:37,680
+The work you're already doing in Miro's canvas is the prompt.
+
+458
+00:31:37,680 --> 00:31:40,240
+Help your teams get great work done with Miro.
+
+459
+00:31:40,240 --> 00:31:43,400
+Check it out at miro.com/lenny.
+
+460
+00:31:43,400 --> 00:31:46,680
+That's miro.com/lenny.
+
+461
+00:31:46,800 --> 00:31:48,400
+What's the current state of the pilot?
+
+462
+00:31:48,400 --> 00:31:49,360
+How large is it?
+
+463
+00:31:49,360 --> 00:31:51,240
+How many teams are doing it?
+
+464
+00:31:51,240 --> 00:31:52,560
+What kind of stuff have you shipped?
+
+465
+00:31:52,560 --> 00:31:54,200
+Just give us a sense of today's world.
+
+466
+00:31:54,200 --> 00:32:01,160
+Yeah, so we are I wouldn't say we are yet at a very high sample rate where it's kind of a high percentage of the organization,
+
+467
+00:32:01,160 --> 00:32:06,600
+but we have a substantial part of the organization already using it to provide a lot of the feedback.
+
+468
+00:32:06,600 --> 00:32:08,520
+We're seeing a lot of great examples.
+
+469
+00:32:08,520 --> 00:32:15,880
+So, the way I think about the benefits is a function of experimentation volume multiplied by quality.
+
+470
+00:32:15,880 --> 00:32:22,560
+How How good are those experiment experiments divided by the time it takes to actually pull them out.
+
+471
+00:32:22,560 --> 00:32:24,760
+Like idea to launch.
+
+472
+00:32:24,760 --> 00:32:32,600
+Uh so, on saving times, we're seeing whether it's PMs, designers, engineers uh saving hours of work a week right now.
+
+473
+00:32:32,600 --> 00:32:40,240
+Whether it's the analyst agent we talked about or the prototyping really quickly or the product jamming experience has been a big part of that.
+
+474
+00:32:40,240 --> 00:32:46,080
+On the quality side, we're seeing insights, discussions just be much much better.
+
+475
+00:32:46,080 --> 00:32:51,960
+And by the way, quality and time sometimes they help each other because it's high quality you don't have to spend as much as much time on something.
+
+476
+00:32:51,960 --> 00:32:59,600
+So, we're seeing that applied in and the volume you know, I wouldn't say we are at a rate where I'm seeing uh a high percentage of the organization doing it yet,
+
+477
+00:32:59,600 --> 00:33:03,360
+but this will come once we We haven't GA'd this internally.
+
+478
+00:33:03,360 --> 00:33:08,080
+But it will come in the next couple of of months once we have all the the stuff in place.
+
+479
+00:33:08,080 --> 00:33:15,000
+But we're seeing designers and PMs uh picking up bugs directly from the you know, from the from the Jira tickets.
+
+480
+00:33:15,000 --> 00:33:18,360
+Mhm, pushing them in, something we haven't seen before.
+
+481
+00:33:18,360 --> 00:33:20,880
+And there's just an appetite for everybody who just joined.
+
+482
+00:33:20,880 --> 00:33:24,679
+So, in fact, the biggest thing right now is uh everybody wants access.
+
+483
+00:33:24,679 --> 00:33:32,640
+Everybody wants access to the tools to to be able to do it together and we just want to make sure it's good enough to make sure the whole organization can do it really well.
+
+484
+00:33:32,640 --> 00:33:33,920
+So, how is it that you're piloting it?
+
+485
+00:33:33,920 --> 00:33:41,040
+Is it there's a some number of people have access to these agents and they just work the way they've worked with access to these tools?
+
+486
+00:33:41,040 --> 00:33:46,400
+Or is there like a team dedicated this is the way you work now and this is it and we'll see what happens.
+
+487
+00:33:46,400 --> 00:33:47,000
+So, it's a recall.
+
+488
+00:33:47,000 --> 00:33:54,560
+So, basically we have a a team building, that's the core team building kind of the FSB track across all of R&D.
+
+489
+00:33:54,560 --> 00:33:56,400
+FSB full stack builder.
+
+490
+00:33:56,400 --> 00:33:59,880
+And then there are pockets and pods of teams using it.
+
+491
+00:33:59,880 --> 00:34:09,600
+So, basically we are looking at specific areas that we're basically giving it to uh the condition there is they give feedback uh as a response for that they make the tool better.
+
+492
+00:34:09,600 --> 00:34:10,679
+So, this is not just access.
+
+493
+00:34:10,679 --> 00:34:11,640
+We want people who will use it.
+
+494
+00:34:11,640 --> 00:34:16,240
+So, one of your early adopters would be the ones who helped you ship the product really So,
+
+495
+00:34:16,240 --> 00:34:18,720
+we're doing this in a pod model right now.
+
+496
+00:34:18,720 --> 00:34:27,359
+So, it's like a pod within a larger team like like a designer, PM, engineer kind of group within a Is there an example you can give like a part of LinkedIn that's trying this out?
+
+497
+00:34:27,359 --> 00:34:37,200
+Yeah, so you know, if I think about some of our teams, whether it's actually we just launched semantic people search and semantic job search as well.
+
+498
+00:34:37,200 --> 00:34:39,760
+That team was using part of those tools to actually help build it.
+
+499
+00:34:39,760 --> 00:34:48,080
+So, that team were actually this was PMs building their own dashboards with those tools without waiting for design resources to come in.
+
+500
+00:34:48,080 --> 00:34:55,240
+Then we have a design team who is now already you know, this started really from the manager kind of rolling this out.
+
+501
+00:34:55,240 --> 00:35:02,680
+And in many ways, what I tell this team is don't wait for the official GA you know, start start doing it.
+
+502
+00:35:02,680 --> 00:35:04,760
+Start kind of leaning in.
+
+503
+00:35:04,760 --> 00:35:10,200
+Uh we're seeing designers on our team uh starting to push kind of PRs which never happened before.
+
+504
+00:35:10,200 --> 00:35:12,280
+And now other teams that want to do this as well.
+
+505
+00:35:12,280 --> 00:35:16,720
+So, it's it's starting with this kind of uh grassroots experience.
+
+506
+00:35:16,720 --> 00:35:22,520
+There is I would say there is the the places I've been very formal I would say at the beginning has been the top.
+
+507
+00:35:22,520 --> 00:35:27,600
+The product executive teams basically we moved from functional leaders, design, PM, BD,
+
+508
+00:35:27,600 --> 00:35:32,320
+and so on to product areas leaders and they basically work across the stack.
+
+509
+00:35:32,320 --> 00:35:39,640
+And they also go for 360 with all of those functions to see if they're if they're really able to do a full stack building experience.
+
+510
+00:35:39,640 --> 00:35:50,520
+Then we're also launching at kind of like the junior side a new program called the associate product builder program where we basically we used to have our APM program which this is about it's
+
+511
+00:35:50,520 --> 00:35:52,359
+ending this year.
+
+512
+00:35:52,359 --> 00:35:57,120
+Uh and then starting January, we're going to start having our APB program.
+
+513
+00:35:57,120 --> 00:36:00,440
+And they're going to come into LinkedIn, we're going to teach them how to code, design,
+
+514
+00:36:00,440 --> 00:36:02,359
+and PM at LinkedIn.
+
+515
+00:36:02,359 --> 00:36:09,320
+Uh they're going to go through a pretty um rigorous training process and then they're going to join those pods.
+
+516
+00:36:09,320 --> 00:36:14,240
+And gradually we're going to grow that program to be uh a material part of LinkedIn as well.
+
+517
+00:36:14,240 --> 00:36:15,080
+Wow.
+
+518
+00:36:15,080 --> 00:36:21,440
+So, this might be the future of the APM program is this full stack builder APM-ish program.
+
+519
+00:36:21,440 --> 00:36:24,640
+>> In many ways, we're taking We've built some pretty amazing I'm really excited for that group.
+
+520
+00:36:24,640 --> 00:36:25,520
+I wish I could join it.
+
+521
+00:36:25,520 --> 00:36:29,960
+Uh um but we build amazing training for them.
+
+522
+00:36:29,960 --> 00:36:34,160
+And in many ways, we're going to use that training to think about how we roll it across the organization.
+
+523
+00:36:34,160 --> 00:36:40,240
+We're kind of using the lens of you know, you you have great technical skills, but you're not you know,
+
+524
+00:36:40,240 --> 00:36:45,760
+an engineer at a company yet or you have great design taste, but you haven't designed at scale in company yet.
+
+525
+00:36:45,760 --> 00:36:48,440
+And we're going to teach you how to do it at LinkedIn.
+
+526
+00:36:48,440 --> 00:36:51,840
+Uh but the training we're going to use a lot to kind of extend across the company as well.
+
+527
+00:36:51,840 --> 00:36:53,960
+Okay, so you have these programs, these pilots, and these pods.
+
+528
+00:36:53,960 --> 00:37:01,320
+And you said what you're looking at to see if this is something you roll out is experiment velocity times quality times time.
+
+529
+00:37:01,320 --> 00:37:02,480
+Divided by time.
+
+530
+00:37:02,480 --> 00:37:03,120
+Divided by time.
+
+531
+00:37:03,120 --> 00:37:04,280
+Okay.
+
+532
+00:37:04,280 --> 00:37:04,720
+Got it.
+
+533
+00:37:04,720 --> 00:37:10,640
+And I guess I know it's early, but just you said it's you're seeing that it's saving teams a few hours a week at this point,
+
+534
+00:37:10,640 --> 00:37:11,440
+something like that.
+
+535
+00:37:11,440 --> 00:37:14,160
+>> Yeah, and I think the feedback has been the most important part, right?
+
+536
+00:37:14,160 --> 00:37:17,600
+When you kind of the way to think about this is just like you build a product.
+
+537
+00:37:17,600 --> 00:37:20,000
+So, we're building this product internally.
+
+538
+00:37:20,000 --> 00:37:24,560
+And you want to experiment with some kind of early adopters who will give you feedback.
+
+539
+00:37:24,560 --> 00:37:26,520
+And the feedback has been amazing.
+
+540
+00:37:26,520 --> 00:37:34,520
+In fact, mhm [clears throat] some our top talent are the ones who are using this the most at LinkedIn.
+
+541
+00:37:34,520 --> 00:37:42,200
+Uh and the feedback from them has been incredible in terms cuz they're they're also willing to spend the time and and give the the the the feedback as well.
+
+542
+00:37:42,200 --> 00:37:48,400
+And uh the response from them has been incredible in terms of like the quality of their output,
+
+543
+00:37:48,400 --> 00:37:52,359
+the time they're spending on this to get the the value back.
+
+544
+00:37:52,359 --> 00:37:57,960
+Their desire to kind of be part of this and actually scale this and make this even better.
+
+545
+00:37:57,960 --> 00:38:04,440
+So, that's where I you know, a lot of the excitement has been from how they're using it and the quality we've seen there.
+
+546
+00:38:04,440 --> 00:38:12,080
+I would say in 6 months or so, we'll be able to see a lot more of the organization use it and you'll start seeing kind of those top line numbers will be as well.
+
+547
+00:38:12,080 --> 00:38:17,440
+That is a really interesting insight that the top performers are finding the most success cuz there's always been this question,
+
+548
+00:38:17,440 --> 00:38:22,560
+is AI going to just make people that are not amazing more amazing or is it going to make amazing people even more amazing?
+
+549
+00:38:22,560 --> 00:38:24,800
+And it sounds like it's likely the latter.
+
+550
+00:38:24,800 --> 00:38:29,000
+Yes, and it's uh it's it's in many ways it's surprising, it's not surprising.
+
+551
+00:38:29,000 --> 00:38:36,560
+I've seen this also when we were um It's surprising because you would you want everybody else to be part of this and lean in.
+
+552
+00:38:36,560 --> 00:38:47,120
+Uh I think top talent has this tendency of continuously trying to get better at their craft and this innate need to be at the cutting edge of how you build.
+
+553
+00:38:47,120 --> 00:38:49,600
+And I think we're seeing this here as well.
+
+554
+00:38:49,600 --> 00:38:54,000
+This is why you know, I've I've I've had this phrase I say with the team that you know,
+
+555
+00:38:54,000 --> 00:38:57,280
+if you if we build all those tools, will they use it?
+
+556
+00:38:57,280 --> 00:38:59,440
+And I know right now the answer is no.
+
+557
+00:38:59,440 --> 00:39:02,480
+It's not enough to give them the tools to use it.
+
+558
+00:39:02,480 --> 00:39:08,320
+You have to build incentives programs uh the motivation, the examples to how you do it.
+
+559
+00:39:08,320 --> 00:39:11,160
+They need to see other people being successful as well.
+
+560
+00:39:11,160 --> 00:39:17,880
+Uh and I've seen this also when we were shifting LinkedIn from a desktop company to a mobile company it was a very similar process.
+
+561
+00:39:17,880 --> 00:39:21,400
+It's very hard change management here is going to be a critical part.
+
+562
+00:39:21,400 --> 00:39:27,480
+I think I see a lot of companies roll out their agents and just expecting companies to adopt.
+
+563
+00:39:27,480 --> 00:39:28,520
+It doesn't work this way.
+
+564
+00:39:28,520 --> 00:39:36,680
+Some will adopt, that tends to be kind of your cutting edge 5% of talent that just wants new tools and they have a bias for change.
+
+565
+00:39:36,680 --> 00:39:41,080
+But the vast majority needs to work for change management in how they do it.
+
+566
+00:39:41,080 --> 00:39:48,480
+And that requires being a lot more thoughtful about the cultural aspect of it, which is by far for me the biggest and most important thing to do.
+
+567
+00:39:48,480 --> 00:39:49,760
+Yeah, I want to spend time there.
+
+568
+00:39:49,760 --> 00:39:56,000
+And it's very like it makes a lot of sense why people don't spend time here because they have so much to do.
+
+569
+00:39:56,000 --> 00:39:56,920
+They got to ship things.
+
+570
+00:39:56,920 --> 00:39:58,520
+They got Their days are already busy.
+
+571
+00:39:58,520 --> 00:40:02,920
+You have to now carve out time to learn this new tool that will not pay off for a while.
+
+572
+00:40:02,920 --> 00:40:05,520
+So, I get why people are like,"Okay, okay, I'll get there.
+
+573
+00:40:05,520 --> 00:40:07,120
+I'll I'll use it someday."
+
+574
+00:40:07,120 --> 00:40:08,720
+But, you know, they don't.
+
+575
+00:40:08,720 --> 00:40:15,240
+Uh this idea of culture This is when I saw you kind of share this initially, this is the third piece of making this successful.
+
+576
+00:40:15,240 --> 00:40:20,560
+So, there's like the platform of getting the code base ready for people for AI to work with.
+
+577
+00:40:20,560 --> 00:40:25,320
+Then there's the the tool, like the agents you've talked about, and then there's the culture.
+
+578
+00:40:25,320 --> 00:40:31,000
+Is there more there that you can share of just like what has actually worked in helping get people on board?
+
+579
+00:40:31,000 --> 00:40:34,600
+One thing I heard is like creating a little bit of FOMO of like, "Okay, only a few people can use this."
+
+580
+00:40:34,600 --> 00:40:37,120
+And you have to sign up to to get it access.
+
+581
+00:40:37,120 --> 00:40:39,600
+What's working getting people to get on board?
+
+582
+00:40:39,600 --> 00:40:40,160
+Yeah.
+
+583
+00:40:40,160 --> 00:40:46,400
+Uh I I think this is where I emphasize to people that uh getting everything done, the platforms,
+
+584
+00:40:46,400 --> 00:40:49,720
+the tools, is not going to be sufficient.
+
+585
+00:40:49,720 --> 00:40:53,920
+It's a prerequisite for it is to work, but not sufficient for this to work.
+
+586
+00:40:53,920 --> 00:40:59,800
+Because it really requires you to invest a lot in the cultural aspects of how do you get people to lean into this one?
+
+587
+00:40:59,800 --> 00:41:07,200
+And this one might feel slow at first, but I've seen this before with our transformational thinking from desktop to mobile.
+
+588
+00:41:07,200 --> 00:41:11,800
+And and once it picks up, it actually maintains very high velocity.
+
+589
+00:41:11,800 --> 00:41:16,680
+One, you know, people are really incentivized by how you define expectations for them.
+
+590
+00:41:16,680 --> 00:41:21,120
+So, to think about what is the expectation of somebody in the role.
+
+591
+00:41:21,120 --> 00:41:23,600
+So, you're changing performance review sort of things.
+
+592
+00:41:23,600 --> 00:41:24,200
+>> Very much so.
+
+593
+00:41:24,200 --> 00:41:30,880
+So, everything from how you hire to, you know, calibration and evaluation.
+
+594
+00:41:30,880 --> 00:41:35,200
+And one thing I want to see there early is this kind of AI agency influencing.
+
+595
+00:41:35,200 --> 00:41:37,120
+Like I mentioned, the tools are there.
+
+596
+00:41:37,120 --> 00:41:39,600
+The question is, would you use them?
+
+597
+00:41:39,600 --> 00:41:42,680
+Cuz the tools will be good enough, but not great at the beginning, right?
+
+598
+00:41:42,680 --> 00:41:44,920
+That's the classic thing of every good MVP tool.
+
+599
+00:41:44,920 --> 00:41:47,920
+They're good enough, but they're not great.
+
+600
+00:41:47,920 --> 00:41:51,240
+And then you kind of want to build that agency to make the tool better.
+
+601
+00:41:51,240 --> 00:41:55,880
+Like we're in this kind of notion of we're going to make this better for LinkedIn together.
+
+602
+00:41:55,880 --> 00:41:59,280
+Two is piloting success inside of the organization.
+
+603
+00:41:59,280 --> 00:42:04,160
+That's the pod model where you're showing that, you know, not only this can work, it's actually having success.
+
+604
+00:42:04,160 --> 00:42:15,040
+So, we have even our partnerships team, our beauty team, being able to kind of go instead of like relying on waiting for an engineer to help build the developer portal
+
+605
+00:42:15,040 --> 00:42:17,440
+and build kind of the connectors there.
+
+606
+00:42:17,440 --> 00:42:22,440
+Literally, they the you know, one of our head of partnership just went and did it himself.
+
+607
+00:42:22,440 --> 00:42:23,640
+Didn't even delegate to his team.
+
+608
+00:42:23,640 --> 00:42:25,240
+And the goal is to say like, "Hey, I can do it.
+
+609
+00:42:25,240 --> 00:42:26,800
+You can do it as well."
+
+610
+00:42:26,800 --> 00:42:29,480
+Those examples are really, really powerful.
+
+611
+00:42:29,480 --> 00:42:36,680
+I talked about the associate product builder program where we are going to be very focused on training.
+
+612
+00:42:36,680 --> 00:42:39,400
+I think that will send a really strong message across the organization.
+
+613
+00:42:39,400 --> 00:42:41,400
+People will see this talent and what they can do.
+
+614
+00:42:41,400 --> 00:42:44,440
+And I think that will create uh that movement.
+
+615
+00:42:44,440 --> 00:42:50,040
+But, celebrating wins in all hands, highlighting people, and showing those examples.
+
+616
+00:42:50,040 --> 00:42:54,320
+You know, one example we've seen recently, people really looked at it in a surprise lens,
+
+617
+00:42:54,320 --> 00:42:57,280
+but then it kind of I think it really opened up a lens for them.
+
+618
+00:42:57,280 --> 00:43:00,480
+We had somebody in our user research team.
+
+619
+00:43:00,480 --> 00:43:04,680
+Uh and we had an opening for a PM on the growth team.
+
+620
+00:43:04,680 --> 00:43:08,840
+And and we kind of that role was open for a while.
+
+621
+00:43:08,840 --> 00:43:11,800
+And she said, "I feel I can do it."
+
+622
+00:43:11,800 --> 00:43:13,680
+And she used all those tools.
+
+623
+00:43:13,680 --> 00:43:19,160
+This is a user researcher becoming a growth PM, not usually the career path you see.
+
+624
+00:43:19,160 --> 00:43:20,720
+But, she was excited about the area.
+
+625
+00:43:20,720 --> 00:43:22,600
+She used all those tools.
+
+626
+00:43:22,600 --> 00:43:25,680
+And she's now a growth PM on the team.
+
+627
+00:43:25,680 --> 00:43:30,800
+So, and and really you can start thinking about her more as a full stack builder ultimately.
+
+628
+00:43:30,800 --> 00:43:38,000
+But, seeing those openings uh and then highlighting those to people actually people are doing this has been a great example of it.
+
+629
+00:43:38,000 --> 00:43:42,320
+And then just making sure that those tools are accessible, people can provide feedback,
+
+630
+00:43:42,320 --> 00:43:46,400
+you share a lot uh has been incredible part of this.
+
+631
+00:43:46,400 --> 00:43:50,680
+It's not enough to be top-down directive that this is how we want to work.
+
+632
+00:43:50,680 --> 00:43:53,040
+People want to feel like there's success stories.
+
+633
+00:43:53,040 --> 00:43:55,520
+They feel like it's worth their time.
+
+634
+00:43:55,520 --> 00:43:58,040
+They feel it's a movement they want to be part of.
+
+635
+00:43:58,040 --> 00:44:01,920
+And then ultimately, they can see successes in how they do it.
+
+636
+00:44:01,920 --> 00:44:04,840
+I love this kind of comparison to the shift in mobile.
+
+637
+00:44:04,840 --> 00:44:10,160
+That seems like we all went through that, and there's all these stories of companies requiring you to show mobile mocks.
+
+638
+00:44:10,160 --> 00:44:11,440
+That's like the only way we're going to operate.
+
+639
+00:44:11,440 --> 00:44:14,160
+Now, everything you have to ship has to be on mobile.
+
+640
+00:44:14,160 --> 00:44:17,520
+And it's interesting how similar this is to them to that experience.
+
+641
+00:44:17,520 --> 00:44:21,680
+And so, a few things you just shared here just to kind of summarize some of the things that have worked for you.
+
+642
+00:44:21,680 --> 00:44:26,680
+Showing wins, celebrating wins, showing people what other folks are doing with AI tools.
+
+643
+00:44:26,680 --> 00:44:31,480
+Uh creating a program that people enroll into and make it a little bit exclusive.
+
+644
+00:44:31,480 --> 00:44:35,880
+Uh this performance review piece is really interesting cuz that really will change people's behaviors.
+
+645
+00:44:35,880 --> 00:44:37,440
+Here's how we get promoted.
+
+646
+00:44:37,440 --> 00:44:40,000
+Have you actually already made that change to the PM?
+
+647
+00:44:40,000 --> 00:44:43,160
+Or is it I guess it's every track, I imagine, not just product management.
+
+648
+00:44:43,160 --> 00:44:45,880
+Have you already made that change or is it kind of like a work in progress?
+
+649
+00:44:45,880 --> 00:44:47,040
+So, there was two aspects to it.
+
+650
+00:44:47,040 --> 00:44:52,440
+Once once I moved uh kind of the my team, my directs, we did 360 for them.
+
+651
+00:44:52,440 --> 00:44:59,359
+So, their 360 was, you know, if if you came from PM, you had the designers on your team rate you.
+
+652
+00:44:59,359 --> 00:45:05,480
+Uh so, that kind of that was that had its own and then we shared those with them, and that had its own kind of motivation.
+
+653
+00:45:05,480 --> 00:45:07,080
+But, then we broadly took it across.
+
+654
+00:45:07,080 --> 00:45:12,640
+So, when we hire right now, we look for those, and then this upcoming cycle, we do a bi-annual.
+
+655
+00:45:12,640 --> 00:45:16,359
+It's that's going to be part of the performance evaluation piece, and we announced it to everybody.
+
+656
+00:45:16,359 --> 00:45:19,400
+And for what it's worth, people are excited to show.
+
+657
+00:45:19,400 --> 00:45:22,120
+Uh and and they're excited to know how they're going to be.
+
+658
+00:45:22,120 --> 00:45:27,120
+It's always about like I just I want to know how I'm being rated or evaluated.
+
+659
+00:45:27,120 --> 00:45:31,080
+So, just being able to show those examples has been a big part of it.
+
+660
+00:45:31,080 --> 00:45:40,120
+The other thing I would say like it [clears throat] takes time for this program in its formality to roll out uh across the entire organization.
+
+661
+00:45:40,120 --> 00:45:50,320
+And I was I was you know, intentionally not trying to be quick at rolling this out to everybody cuz I think that's a uh that just dilutes the value of it really quickly.
+
+662
+00:45:50,320 --> 00:45:52,760
+Because it's not about I could care less about your title.
+
+663
+00:45:52,760 --> 00:45:54,920
+I care about how you work.
+
+664
+00:45:54,920 --> 00:45:58,640
+Uh so, calling your full stack builder is not what I'm looking for.
+
+665
+00:45:58,640 --> 00:46:02,080
+Changing your mindset to a full stack mindset is what I'm looking for.
+
+666
+00:46:02,080 --> 00:46:03,760
+You thinking you can do the whole thing.
+
+667
+00:46:03,760 --> 00:46:07,080
+You're you're looking at those tools and looking how to do it.
+
+668
+00:46:07,080 --> 00:46:14,080
+So, one of the things I've said is like if you're looking for a formal re- org or declaration to start building differently,
+
+669
+00:46:14,080 --> 00:46:15,160
+you're waiting too long.
+
+670
+00:46:15,160 --> 00:46:20,560
+Like like my biggest thing is here's a permission for me to just not wait and just go.
+
+671
+00:46:20,560 --> 00:46:24,120
+So, whether or not like you have the right tools or not, go build the tool.
+
+672
+00:46:24,120 --> 00:46:26,960
+Like use a tool from the outside, bring it in.
+
+673
+00:46:26,960 --> 00:46:28,120
+Show those examples.
+
+674
+00:46:28,120 --> 00:46:34,520
+In many ways, like prove that you're a full stack builder in mindset before anything else come to mind.
+
+675
+00:46:34,520 --> 00:46:41,680
+And that just naturally will happen, and that's also where we've seen some of our best talent just goes and leans a lot into.
+
+676
+00:46:41,680 --> 00:46:42,280
+I love that.
+
+677
+00:46:42,280 --> 00:46:43,800
+Uh I was going to actually mention that quote.
+
+678
+00:46:43,800 --> 00:46:47,240
+So, when you shared you uh work with told me exactly that quote you just shared.
+
+679
+00:46:47,240 --> 00:46:53,200
+So, I'm glad you brought it up of just if you're waiting for a re-org, you're not thinking about it the right way.
+
+680
+00:46:53,200 --> 00:46:55,640
+How do you encourage people to actually play with these tools on their own?
+
+681
+00:46:55,640 --> 00:46:58,000
+Are you just like go take few days to play with AI?
+
+682
+00:46:58,000 --> 00:46:59,240
+Is it just try it?
+
+683
+00:46:59,240 --> 00:47:04,720
+Or is is there's anything formal you've seen of just like getting people to more try this on their own without joining this program?
+
+684
+00:47:04,720 --> 00:47:07,720
+A lot of the tools we've made, we've been sharing them regularly.
+
+685
+00:47:07,720 --> 00:47:12,160
+We've done all like a few of my all hands have been all about how to use those tools.
+
+686
+00:47:12,160 --> 00:47:17,000
+But, then at the same time, we're kind of inviting,"Have you found a new tool that works really well for you?
+
+687
+00:47:17,000 --> 00:47:18,800
+Like share it, show it."
+
+688
+00:47:18,800 --> 00:47:23,040
+Again, it could be Slack, could be messages, Teams, and so on and how you do it.
+
+689
+00:47:23,040 --> 00:47:27,400
+But, like the idea is really to start getting that investment in how things work.
+
+690
+00:47:27,400 --> 00:47:33,880
+Actually, I think in general, you can feel overwhelmed by tools right now, by recipes and how to do things.
+
+691
+00:47:33,880 --> 00:47:36,680
+Like, you know, what's what's your prompt and what's my prompt.
+
+692
+00:47:36,680 --> 00:47:42,680
+But, really it's finding something that kind of works really well that you can grab with it around and kind of really invest in.
+
+693
+00:47:42,680 --> 00:47:43,640
+That's been those areas.
+
+694
+00:47:43,640 --> 00:47:50,080
+But, I think we we've had this invitation to go and explore and and go and bring in stuff that you think are great.
+
+695
+00:47:50,080 --> 00:47:54,480
+And in many ways, like you know, bring others along in the journey.
+
+696
+00:47:54,480 --> 00:48:00,320
+It's it's one of one good way to kind of make the influence much bigger than a few folks who are doing really well with this.
+
+697
+00:48:00,320 --> 00:48:07,400
+Are there any surprises on the negative side that have come out of this of uh PRDs just feeling like AI-driven,
+
+698
+00:48:07,400 --> 00:48:09,520
+people slowing down unexpectedly?
+
+699
+00:48:09,520 --> 00:48:14,160
+Is there anything that surprised you of just like, "Okay, this is actually not >> we mentioned a few of them.
+
+700
+00:48:14,160 --> 00:48:18,000
+Like we I was hoping for some tools to work off the shelf really well.
+
+701
+00:48:18,000 --> 00:48:19,760
+Was never the case.
+
+702
+00:48:19,760 --> 00:48:21,840
+So, we had to invest quite a lot.
+
+703
+00:48:21,840 --> 00:48:22,600
+>> Never the case.
+
+704
+00:48:22,600 --> 00:48:23,720
+We had to invest quite a lot.
+
+705
+00:48:23,720 --> 00:48:30,120
+And again, part of it is we just have a lot of legacy information and code base and knowledge and designs and so on.
+
+706
+00:48:30,120 --> 00:48:35,880
+So, if you know, a lot of the companies we work with are seeing this as a great growth opportunity for them as well to invest.
+
+707
+00:48:35,880 --> 00:48:40,120
+But, I do think it's it's a big area of investment as well.
+
+708
+00:48:40,120 --> 00:48:44,359
+We talked about not just giving access to all of our context, which we started with.
+
+709
+00:48:44,359 --> 00:48:47,760
+And like we were like, "Oh, here's access to all the drive, all the information."
+
+710
+00:48:47,760 --> 00:48:51,120
+Failed miserably and hallucinates like crazy.
+
+711
+00:48:51,120 --> 00:48:52,880
+People gravitating toward different tools.
+
+712
+00:48:52,880 --> 00:48:55,840
+Like our goal was to converge on tools.
+
+713
+00:48:55,840 --> 00:48:58,160
+But, that was pretty hard.
+
+714
+00:48:58,160 --> 00:49:04,600
+And then I think in terms of um in terms of quality, we've just seen better quality.
+
+715
+00:49:04,600 --> 00:49:08,440
+But, I think it's because again, where we are in the stage, it's still the early adopters.
+
+716
+00:49:08,440 --> 00:49:13,400
+And they're doing a few iterations in terms of how to do it.
+
+717
+00:49:13,400 --> 00:49:17,040
+But, I would say like the tooling adoption is hard.
+
+718
+00:49:17,040 --> 00:49:20,440
+Uh and then I think for some people this is important for me to kind of state.
+
+719
+00:49:20,440 --> 00:49:23,560
+Some people do not want to be full stack builders.
+
+720
+00:49:23,560 --> 00:49:24,640
+And that's completely okay.
+
+721
+00:49:24,640 --> 00:49:30,560
+Some people see themself in specialization, and I think specialization has a place and a role.
+
+722
+00:49:30,560 --> 00:49:34,840
+So, I don't I didn't want to make the message to be across the organization expect everybody to be a full stack builder.
+
+723
+00:49:34,840 --> 00:49:35,440
+I do not.
+
+724
+00:49:35,440 --> 00:49:41,200
+I think there are system builders that empower our full stack builders and then you have people who are specialized.
+
+725
+00:49:41,200 --> 00:49:46,000
+But, I don't think we need as many specialized people as we did in the past.
+
+726
+00:49:46,000 --> 00:49:47,880
+I didn't actually realize this until just now.
+
+727
+00:49:47,880 --> 00:49:52,520
+So, this is Is this like their title now instead of product manager engineer their full stack builder?
+
+728
+00:49:52,520 --> 00:49:59,360
+We have a full stack builder title formally inside the organization and we are gradually putting people in that bucket.
+
+729
+00:49:59,360 --> 00:50:01,120
+So, there's a whole career ladder that's forming.
+
+730
+00:50:01,120 --> 00:50:05,560
+There's a whole Okay, that's a That's a bigger deal than I even thought.
+
+731
+00:50:05,560 --> 00:50:08,920
+So, where are you finding these folks mostly coming from?
+
+732
+00:50:08,920 --> 00:50:13,360
+Like product engineering design, I imagine it's a mix but just is there a kind of most common trend?
+
+733
+00:50:13,360 --> 00:50:13,920
+It's a mix.
+
+734
+00:50:13,920 --> 00:50:21,160
+We I would kind of people listening I would just think about like just go over your org and imagine who can do it.
+
+735
+00:50:21,160 --> 00:50:27,960
+Uh who can right now flex across those functions whatever is engineering, design, uh product,
+
+736
+00:50:27,960 --> 00:50:29,520
+even BD.
+
+737
+00:50:29,520 --> 00:50:34,240
+And what you'll find is there's already quite a few that can flex across.
+
+738
+00:50:34,240 --> 00:50:35,000
+Interesting.
+
+739
+00:50:35,000 --> 00:50:45,280
+Uh are there any functions you think are specially successful at this not to play any favorites but I don't know are you finding like okay or you can also not uh highlight any specific.
+
+740
+00:50:45,280 --> 00:50:49,120
+I I think it's like I think it's a mental model of how you do it.
+
+741
+00:50:49,120 --> 00:51:00,120
+I think you know if I were to play like what's the hardest craft to potentially learn I think design has a lot more work to get the design agents to be really really good.
+
+742
+00:51:00,120 --> 00:51:08,000
+So, I think designers have a little bit of a leg up in terms of others learning their craft and then the vice vice versa.
+
+743
+00:51:08,000 --> 00:51:09,640
+But, I honestly think it's a mindset.
+
+744
+00:51:09,640 --> 00:51:12,120
+I've seen I've seen designers code.
+
+745
+00:51:12,120 --> 00:51:23,200
+I've seen PMs kind of design and do well and this is why I think like when you kind of step back and you think about people in the organization and who can flex I think you'll see them show up in many
+
+746
+00:51:23,200 --> 00:51:28,600
+areas and I think you'll find there is they have the agency.
+
+747
+00:51:28,600 --> 00:51:29,760
+They're leaning into new things.
+
+748
+00:51:29,760 --> 00:51:31,000
+They have the fluency.
+
+749
+00:51:31,000 --> 00:51:37,680
+Like they're already building uh new experiences and they have that growth mindset that they just want to get better.
+
+750
+00:51:37,680 --> 00:51:44,640
+So, they're it doesn't matter what they learn at school or what's their what label somebody put on them when they joined the company.
+
+751
+00:51:44,640 --> 00:51:51,320
+What I love about a lot of this is this is it's the easiest time to transition between different product roles than it's ever been.
+
+752
+00:51:51,320 --> 00:51:54,080
+Designs moving to PM and or just moving to this new role.
+
+753
+00:51:54,080 --> 00:51:58,000
+It's like it makes it so much easier to Like you said that researcher became a growth PM.
+
+754
+00:51:58,000 --> 00:52:06,120
+And this is probably my biggest advice /motivation I give to the team because what I tell them is ultimately you know this is for me as well.
+
+755
+00:52:06,120 --> 00:52:08,080
+Like I think about it the same way.
+
+756
+00:52:08,080 --> 00:52:14,080
+It's the It's the the incentives for you are so aligned with the organization of what we're asking for,
+
+757
+00:52:14,080 --> 00:52:14,320
+right?
+
+758
+00:52:14,320 --> 00:52:17,560
+Because this is we we need you to change.
+
+759
+00:52:17,560 --> 00:52:27,960
+We want to be a more agile adaptive resilient organization that can deal with the pace of change but you want as well for your own career.
+
+760
+00:52:27,960 --> 00:52:30,960
+You want to be at the cutting edge of how you build.
+
+761
+00:52:30,960 --> 00:52:37,080
+So, the incentives are really aligned between what you need for your own career and what the organization needs you to to do.
+
+762
+00:52:37,080 --> 00:52:46,240
+So, there's that that permission to go and do it for me is uh ideally kind of a tailwind uh in what they want to do more than anything else.
+
+763
+00:52:46,240 --> 00:52:51,240
+Maybe a last question for people that are inspired and like okay, this is what we need to be doing.
+
+764
+00:52:51,240 --> 00:52:58,200
+Any just tips for someone starting down this road to be successful at trying something like this at their company?
+
+765
+00:52:58,200 --> 00:53:04,440
+I would say like I would start with the I would start with the notion of like how do you want to bring like this is structure.
+
+766
+00:53:04,440 --> 00:53:12,160
+I would think about the the platform you need to build, the tools you want to bring and then I would spend a lot of time on the culture.
+
+767
+00:53:12,160 --> 00:53:18,640
+Platform and tools I think would be again a prerequisite but not sufficient and the culture aspect is really important.
+
+768
+00:53:18,640 --> 00:53:20,520
+I would think a lot about how you bring people along.
+
+769
+00:53:20,520 --> 00:53:29,600
+So, for exa- for one of the learnings we had that probably would do differently right now if I were to redo this program was for a while I was working very closely with my core team on it,
+
+770
+00:53:29,600 --> 00:53:35,400
+the core kind of full stack building team that were in charge of building all this material but the organization was always asking questions what's going on?
+
+771
+00:53:35,400 --> 00:53:36,440
+Who's doing it?
+
+772
+00:53:36,440 --> 00:53:37,920
+What are the tools?
+
+773
+00:53:37,920 --> 00:53:49,560
+And in in retrospect we could have done a lot more in the flow to just show them and get them uh to already use early tools or be aware of it versus doing a small team on
+
+774
+00:53:49,560 --> 00:53:49,800
+the side.
+
+775
+00:53:49,800 --> 00:53:51,080
+So, it's okay to start with a small team.
+
+776
+00:53:51,080 --> 00:53:57,760
+I think it's really important but at the same time just making sure there's like visibility across the whole thing is really powerful.
+
+777
+00:53:57,760 --> 00:54:00,720
+Being patient and being willing to invest.
+
+778
+00:54:00,720 --> 00:54:04,000
+I always give this example of like you know we always give this example like oh look at this startup.
+
+779
+00:54:04,000 --> 00:54:05,960
+They built this in a week.
+
+780
+00:54:05,960 --> 00:54:08,520
+Yes, you can build our startup in a week right now if you start from scratch.
+
+781
+00:54:08,520 --> 00:54:11,440
+It's actually not hard.
+
+782
+00:54:11,440 --> 00:54:23,200
+But when you are trying to transform a large organization you want to have this impatient about the goal and you have to have a high ambition but being very thoughtful and patient
+
+783
+00:54:23,200 --> 00:54:27,240
+about how you bring it to life and the key things you have to invest in.
+
+784
+00:54:27,240 --> 00:54:32,320
+If you don't invest in your platform, I just don't see how this could be a successful outcome.
+
+785
+00:54:32,320 --> 00:54:39,600
+Uh if you don't invest in customizing the tools for you, then you're just going to get vanilla generic agents from the outside.
+
+786
+00:54:39,600 --> 00:54:43,960
+So, being aware of the investment and making sure you actually allocate resource to it.
+
+787
+00:54:43,960 --> 00:54:51,120
+This is kind of the classic uh be willing to invest up front so you can reap the benefit after versus saying hey,
+
+788
+00:54:51,120 --> 00:54:56,000
+you know uh why am I not seeing us moving into 2x the productivity in a week?
+
+789
+00:54:56,000 --> 00:54:58,120
+That's not going to be this way.
+
+790
+00:54:58,120 --> 00:55:05,520
+You can see it with some people uh but starting to collect those examples and starting to really think about the transformation is really key.
+
+791
+00:55:05,520 --> 00:55:07,520
+This is so incredibly cool.
+
+792
+00:55:07,520 --> 00:55:13,320
+I know that a lot of CPOs and heads of product and all kinds of leaders are reaching out to you trying to figure out what you learned how to do this.
+
+793
+00:55:13,320 --> 00:55:16,480
+So, I love that we went deep on all these things.
+
+794
+00:55:16,480 --> 00:55:26,640
+Just final question, is there anything else that we haven't shared that you think might be helpful for listeners to hear or maybe just to double down on before we get to our very exciting lightning round?
+
+795
+00:55:26,640 --> 00:55:31,880
+Whether you're in an organization, you're waiting for your leader to roll this out or you're a leader trying to roll this out,
+
+796
+00:55:31,880 --> 00:55:33,680
+I would not wait.
+
+797
+00:55:33,680 --> 00:55:43,080
+Like the [snorts] the first thing I've done which I thought in retrospect was really helpful is I did not I did announce this up front we are going to this mode.
+
+798
+00:55:43,080 --> 00:55:44,320
+Like we're starting in pockets.
+
+799
+00:55:44,320 --> 00:55:45,120
+We're starting in pods.
+
+800
+00:55:45,120 --> 00:55:53,200
+We're building the tools but we're going to This is this is the mountain we're going to go after and in many ways uh we're going to make it great.
+
+801
+00:55:53,200 --> 00:55:55,720
+I also announced that this is not just an end state.
+
+802
+00:55:55,720 --> 00:55:57,280
+It's a kind of continuous progress.
+
+803
+00:55:57,280 --> 00:56:03,120
+There's no state we're going to get to as much as continuously just trying to be better.
+
+804
+00:56:03,120 --> 00:56:13,040
+And in many ways to compete you just want to be better than others in how you build uh because the the for the version of building will completely transform itself every few years or so.
+
+805
+00:56:13,040 --> 00:56:14,440
+So, do not wait.
+
+806
+00:56:14,440 --> 00:56:17,800
+Really focus on the progress you're making.
+
+807
+00:56:17,800 --> 00:56:24,320
+Over communicate with your team not just the vision but also the progress you're making almost like holding yourself responsible.
+
+808
+00:56:24,320 --> 00:56:29,080
+If you're a leader give yourself KPIs you share with your own teams or OKRs.
+
+809
+00:56:29,080 --> 00:56:40,040
+And if you're in some organization and I would say whether or a lot or not your CPO or your CEO is announcing this type of program go do it or join an organization that does it.
+
+810
+00:56:40,040 --> 00:56:43,440
+So, you can be at the cutting edge of of how you build in the future.
+
+811
+00:56:43,440 --> 00:56:46,560
+Telmer, with that we reached our very exciting lightning round.
+
+812
+00:56:46,560 --> 00:56:47,760
+I've got five questions for you.
+
+813
+00:56:47,760 --> 00:56:48,520
+Are you ready?
+
+814
+00:56:48,520 --> 00:56:49,800
+I'm ready.
+
+815
+00:56:49,800 --> 00:56:53,960
+First question, what are two or three books you find yourself recommending most to other people?
+
+816
+00:56:53,960 --> 00:56:57,080
+I love to give trios of books that I really like.
+
+817
+00:56:57,080 --> 00:57:02,160
+So, my current trio is um they're very diverse in topics.
+
+818
+00:57:02,160 --> 00:57:05,000
+So, apologies if it's not falling all into tech.
+
+819
+00:57:05,000 --> 00:57:08,600
+But the first one is called Why Nations Fail.
+
+820
+00:57:08,600 --> 00:57:19,720
+Uh it's a book I read uh a decade ago even more and the authors of it just won the Nobel Prize last year and it basically talks about why does some nations succeed and some fail.
+
+821
+00:57:19,720 --> 00:57:24,359
+And it's not the usual explanations we go for which is oh, it's culture.
+
+822
+00:57:24,359 --> 00:57:25,840
+It's natural resources.
+
+823
+00:57:25,840 --> 00:57:29,160
+It's the uh it's the kind of religion.
+
+824
+00:57:29,160 --> 00:57:33,960
+This is kind of you know it's a lot of those kind of tends to be the kind of immediate excuses people have.
+
+825
+00:57:33,960 --> 00:57:35,840
+It kind of falls into two camps.
+
+826
+00:57:35,840 --> 00:57:39,560
+Are they extractive or inclusive institutions?
+
+827
+00:57:39,560 --> 00:57:48,440
+Can people participate broadly and opportunities shared or they are institutions that basically are supposed to be attracting from many and give to some.
+
+828
+00:57:48,440 --> 00:57:55,960
+So, it's just an incredible way to just think about how you build a nation and for us at LinkedIn we think a lot about the idea of opportunity.
+
+829
+00:57:55,960 --> 00:57:58,160
+So, how you build a product as well.
+
+830
+00:57:58,160 --> 00:58:05,240
+Uh and it's just a good way to kind of move away from easy explanations into like what really makes a country really successful.
+
+831
+00:58:05,240 --> 00:58:06,280
+uh as well.
+
+832
+00:58:06,280 --> 00:58:09,680
+Second book it's called Outlive.
+
+833
+00:58:09,680 --> 00:58:21,560
+Uh it's really about kind of the idea It's kind of like you know the author Peter Attia talks about the idea of medicine 3.0 which is really uh the notion of like building personalized medicine which I think in the world of AI will become
+
+834
+00:58:21,560 --> 00:58:23,520
+incredible in the future.
+
+835
+00:58:23,520 --> 00:58:33,560
+But it's all those It's called as categories that you should think about for your life so you can just optimize your health as much as possible and goes for everything through
+
+836
+00:58:33,560 --> 00:58:40,320
+you know fitness to diet to kind of the biggest health factors you should think about but it's a it's a great long book.
+
+837
+00:58:40,320 --> 00:58:42,680
+And then lastly >> on my bookshelf behind me.
+
+838
+00:58:42,680 --> 00:58:43,560
+Here you go.
+
+839
+00:58:43,560 --> 00:58:44,240
+It's up top.
+
+840
+00:58:44,240 --> 00:58:46,840
+You can't actually see it I think.
+
+841
+00:58:46,840 --> 00:58:58,320
+And then lastly uh it's a book that also came out many years ago but it's called The Beginning of Infinity uh which I really like by um uh Deutsch and it's it's uh it's wasn't
+
+842
+00:58:58,320 --> 00:59:05,480
+an easy read for easy read for me but I I love the idea in fact especially in products I love the idea of cause and effect.
+
+843
+00:59:05,480 --> 00:59:17,120
+Like really finding great explanations for how things happen and then building on top of that uh your next uh iterations and this book really pushes on the idea of explanations that only once we have a
+
+844
+00:59:17,120 --> 00:59:21,880
+clear understanding of why things happen then we can have breakthroughs on top of that.
+
+845
+00:59:21,880 --> 00:59:33,640
+But until we get to a point of clear scientific breakthroughs we are not going to make significant progress but when you do that it's really almost like infinite progress you can make on top of that.
+
+846
+00:59:33,640 --> 00:59:35,320
+Naval's always talking about that last book.
+
+847
+00:59:35,320 --> 00:59:38,480
+I think I bought it and I just it was it was it was a hard read.
+
+848
+00:59:38,480 --> 00:59:39,240
+>> read, at least for me.
+
+849
+00:59:39,240 --> 00:59:41,640
+It wasn't an easy read, but it's a very powerful read.
+
+850
+00:59:41,640 --> 00:59:42,920
+Awesome.
+
+851
+00:59:42,920 --> 00:59:46,760
+Is there a favorite recent movie or TV show you really enjoyed?
+
+852
+00:59:46,760 --> 00:59:48,120
+Can I do a podcast?
+
+853
+00:59:48,120 --> 00:59:49,600
+Absolutely.
+
+854
+00:59:49,600 --> 00:59:53,240
+Uh so there's a podcast in it's in Hebrew.
+
+855
+00:59:53,240 --> 00:59:55,360
+Uh it's called One Song.
+
+856
+00:59:55,360 --> 01:00:03,120
+And it takes a song that, you know, generally is ideally popular and then goes really deep on the origin and the history of the song.
+
+857
+01:00:03,120 --> 01:00:04,440
+And I love it.
+
+858
+01:00:04,440 --> 01:00:09,120
+Uh it's just I love music and just dissects songs so well.
+
+859
+01:00:09,120 --> 01:00:13,680
+Uh it does a great job also in kind of bring to life the story behind it.
+
+860
+01:00:13,680 --> 01:00:24,080
+Uh so for me it just goes back to like you thought the song was about something, but then it goes really deep into the actors behind the song and sometimes it's the words chosen or it's the
+
+861
+01:00:24,080 --> 01:00:30,120
+uh how the lyrics match the the music itself and I just really enjoy that one.
+
+862
+01:00:30,120 --> 01:00:36,120
+There's a podcast podcast called Song Exploder, I believe, that is a similar concept that's not in Hebrew.
+
+863
+01:00:36,120 --> 01:00:38,760
+In English that I'll point people to.
+
+864
+01:00:38,760 --> 01:00:39,840
+If you love that one.
+
+865
+01:00:39,840 --> 01:00:40,720
+It's awesome.
+
+866
+01:00:40,720 --> 01:00:43,600
+Is there a product you've recently discovered that you really love?
+
+867
+01:00:43,600 --> 01:00:47,840
+Could be an app, could be some clothing, could be a kitchen gadget, tech gadget.
+
+868
+01:00:47,840 --> 01:00:53,240
+Uh can it can it be an app can be a product I want to have that I think is actually really easy to do?
+
+869
+01:00:53,240 --> 01:00:53,560
+>> that.
+
+870
+01:00:53,560 --> 01:00:58,360
+This is a product thinking 101 and just the vision of what you want to see.
+
+871
+01:00:58,360 --> 01:01:08,960
+So in my car right now there's Alexa built in, which is great cuz the kids can ask for songs all day long and it it's it's a it's a whole show inside of the car.
+
+872
+01:01:08,960 --> 01:01:17,040
+But one of my favorite things to do when I this has been doing I've been doing it for uh well over 2 years is I go in and I go into voice mode.
+
+873
+01:01:17,040 --> 01:01:18,320
+On ChatGPT?
+
+874
+01:01:18,320 --> 01:01:23,400
+Yeah, ChatGPT and then we just have a conversation and that's just friction.
+
+875
+01:01:23,400 --> 01:01:32,080
+I would love to have on my steering wheel a button that invokes my AI friend that can sit next to me in the passenger seat.
+
+876
+01:01:32,080 --> 01:01:38,200
+And I you know, I just think that would be such a I actually think it will transform uh rides for people.
+
+877
+01:01:38,200 --> 01:01:43,840
+Just that movement that's just like elimination of friction will transform the experience for me.
+
+878
+01:01:43,840 --> 01:01:47,840
+On that note, I recently discovered Teslas actually do this now.
+
+879
+01:01:47,840 --> 01:01:54,160
+If you hold the right wheel, Grok appears and you can talk to Grok.
+
+880
+01:01:54,160 --> 01:01:55,000
+Huh.
+
+881
+01:01:55,000 --> 01:01:56,200
+So it's here.
+
+882
+01:01:56,200 --> 01:01:58,080
+The AI has arrived.
+
+883
+01:01:58,080 --> 01:02:01,080
+Yeah, I just like did it by accident and then it's okay, cool.
+
+884
+01:02:01,080 --> 01:02:06,880
+So for me it's here uh if anybody from Rivian is listening, please uh bring it to the car.
+
+885
+01:02:06,880 --> 01:02:08,840
+Rivian's falling behind.
+
+886
+01:02:08,840 --> 01:02:11,440
+Uh yeah, and it's I like and you have to use Grok.
+
+887
+01:02:11,440 --> 01:02:14,520
+It'd be cool if you could switch to different uh AIs.
+
+888
+01:02:14,520 --> 01:02:17,640
+Just uh cuz it's it has like a personality.
+
+889
+01:02:17,640 --> 01:02:19,040
+Like I don't just give me information.
+
+890
+01:02:19,040 --> 01:02:27,840
+I don't need you to laugh and give me >> Did you did you need to uh spend some time with it before or did it have any memory from Did you bring any memory into it?
+
+891
+01:02:27,840 --> 01:02:32,640
+There's a a logged out version and then you can just log in and it connects to your account.
+
+892
+01:02:32,640 --> 01:02:33,760
+Yeah, it's extremely cool.
+
+893
+01:02:33,760 --> 01:02:34,720
+No one's talking about it.
+
+894
+01:02:34,720 --> 01:02:38,400
+It's crazy cuz I don't know if they launched it fully, but it just appeared.
+
+895
+01:02:38,400 --> 01:02:41,000
+>> Do you talk in the car a lot to it?
+
+896
+01:02:41,000 --> 01:02:44,520
+I I don't use it that much to be honest, but I like I should.
+
+897
+01:02:44,520 --> 01:02:45,920
+My wife just doesn't love Grok.
+
+898
+01:02:45,920 --> 01:02:49,800
+I think the brand of Grok is like a specific brand.
+
+899
+01:02:49,800 --> 01:02:52,840
+And so she's she's like, "Don't talk to Grok in here with me."
+
+900
+01:02:52,840 --> 01:02:55,440
+I I I love voice mode, so I use it all the time.
+
+901
+01:02:55,440 --> 01:02:56,520
+Yeah, I love voice mode, too.
+
+902
+01:02:56,520 --> 01:02:57,680
+It just interrupts too often.
+
+903
+01:02:57,680 --> 01:02:58,640
+That's the issue there, right?
+
+904
+01:02:58,640 --> 01:03:00,240
+It's just >> by the way you can set it up.
+
+905
+01:03:00,240 --> 01:03:03,323
+You can basically say like, "Hey, just yeah, like let me finish."
+
+906
+01:03:03,323 --> 01:03:05,240
+>> [clears throat] >> I'm learning so much.
+
+907
+01:03:05,240 --> 01:03:06,760
+Okay, two more questions.
+
+908
+01:03:06,760 --> 01:03:11,880
+Do you have a life motto that you often find useful in work or in life?
+
+909
+01:03:11,880 --> 01:03:15,480
+I think last time I talked about it that I mostly associated here with I might be wrong,
+
+910
+01:03:15,480 --> 01:03:21,080
+but I'm not confused, although I don't say it as much anymore, but I think the one I love,
+
+911
+01:03:21,080 --> 01:03:23,960
+you know, growth mindset is like a second religion for us at home.
+
+912
+01:03:23,960 --> 01:03:30,240
+And one thing I love about there's like a phrase there that is becoming is better than being,
+
+913
+01:03:30,240 --> 01:03:34,880
+which I think ties into the FSB mode a little bit, which is you're always in, you know,
+
+914
+01:03:34,880 --> 01:03:36,440
+progress mode, iteration mode.
+
+915
+01:03:36,440 --> 01:03:41,560
+It's not about getting reaching a state, it's about the journey, the process.
+
+916
+01:03:41,560 --> 01:03:43,160
+That's what you should fall in love with.
+
+917
+01:03:43,160 --> 01:03:50,760
+It's about continuously growing and evolving without the negativity of it or there's no sense of FOMO there.
+
+918
+01:03:50,760 --> 01:03:51,920
+It's just this continuous thing.
+
+919
+01:03:51,920 --> 01:03:56,440
+If I look back a year from now and I look back, how much did I grow?
+
+920
+01:03:56,440 --> 01:03:57,760
+Like how much do I know?
+
+921
+01:03:57,760 --> 01:03:59,280
+What skills did I gain?
+
+922
+01:03:59,280 --> 01:04:02,080
+Like uh where did I become better?
+
+923
+01:04:02,080 --> 01:04:09,120
+Like how do I how much like how do I feel like you know, version Tomer version 2026 versus 2025?
+
+924
+01:04:09,120 --> 01:04:10,120
+What's the delta there?
+
+925
+01:04:10,120 --> 01:04:12,960
+And I kind of love that as a as a way of thinking.
+
+926
+01:04:12,960 --> 01:04:15,200
+A great segue to our final question.
+
+927
+01:04:15,200 --> 01:04:20,560
+By the time this episode comes out uh it won't be a secret that you're leaving LinkedIn after 14 years,
+
+928
+01:04:20,560 --> 01:04:22,240
+a legendary run.
+
+929
+01:04:22,240 --> 01:04:32,600
+You joined way before the acquisition, you helped them integrate, you just like the way LinkedIn was perceived 14 years ago is so radically different from the way it is today.
+
+930
+01:04:32,600 --> 01:04:39,400
+Like it's actually really fun and interesting to be there versus uh how people uh long for a long time felt about LinkedIn.
+
+931
+01:04:39,400 --> 01:04:43,640
+So uh I guess the question is just how you feeling and what's next?
+
+932
+01:04:43,640 --> 01:04:47,120
+What I imagine you're going to get a lot of calls from a lot of people.
+
+933
+01:04:47,120 --> 01:04:48,680
+But what are you planning?
+
+934
+01:04:48,680 --> 01:04:51,800
+Yeah, so I feel I feel proud.
+
+935
+01:04:51,800 --> 01:04:56,440
+Um it's been an incredible ride at LinkedIn.
+
+936
+01:04:56,440 --> 01:05:03,800
+I've, you know, the way I've got to know about LinkedIn deeply the first time was when I moved to the Valley and I,
+
+937
+01:05:03,800 --> 01:05:14,280
+you know, went to a lecture at Stanford about social networks in 2008 and uh and Reed was there and he talked about the power of being a professional communities online and
+
+938
+01:05:14,280 --> 01:05:17,000
+I was very nerdy about it and thought it was incredible vision.
+
+939
+01:05:17,000 --> 01:05:21,120
+Had no plans to join and actually started my own company after, but as luck would have it,
+
+940
+01:05:21,120 --> 01:05:25,680
+found myself joining a few years after and just thought the mission was incredible.
+
+941
+01:05:25,680 --> 01:05:32,760
+So in many ways it aligned with my purpose and and just was an incredible uh ride to be here.
+
+942
+01:05:32,760 --> 01:05:35,520
+And I also feel very grateful.
+
+943
+01:05:35,520 --> 01:05:36,880
+I shared this with the company recently.
+
+944
+01:05:36,880 --> 01:05:40,280
+I was starting to take learnings from my experiences here.
+
+945
+01:05:40,280 --> 01:05:42,400
+Uh a lot of it from were from tough situations.
+
+946
+01:05:42,400 --> 01:05:47,359
+We had a lot of, you know, tough situations at LinkedIn and, you know, hard calls and late nights,
+
+947
+01:05:47,359 --> 01:05:51,720
+but you learn so much from those and I'm just incredibly grateful and I'm excited.
+
+948
+01:05:51,720 --> 01:05:52,480
+I'm excited.
+
+949
+01:05:52,480 --> 01:05:54,160
+I love I have a bias for change.
+
+950
+01:05:54,160 --> 01:06:03,640
+I have a bias for kind of positioning myself in a in a place where I can learn the most and and learn a lot and it's it's incredible it's an incredible time
+
+951
+01:06:03,640 --> 01:06:04,080
+to build.
+
+952
+01:06:04,080 --> 01:06:13,320
+So I'm just excited to be uh thinking of new problem sets and new areas where I can go deep on and invest in the the next decade in.
+
+953
+01:06:13,320 --> 01:06:20,440
+I think it's going to take a long time for you to not feel like you're working at LinkedIn and to like forget about all the things that you have been worrying about for so many years.
+
+954
+01:06:20,440 --> 01:06:31,680
+You know, after you build uh something for such a long time and I think you and I talked about it at one point that like I think uh one of the best traits for a builder is to become very passionate
+
+955
+01:06:31,680 --> 01:06:33,359
+with what they're building.
+
+956
+01:06:33,359 --> 01:06:34,760
+Really care.
+
+957
+01:06:34,760 --> 01:06:36,000
+Not not about the job.
+
+958
+01:06:36,000 --> 01:06:37,280
+It's really care about the product.
+
+959
+01:06:37,280 --> 01:06:44,200
+When you feel the pain when somebody complains and and you kind of have this continuous discontent and it's like for me it's the notion of like,
+
+960
+01:06:44,200 --> 01:06:45,880
+you know, raising a baby.
+
+961
+01:06:45,880 --> 01:06:48,480
+So yeah, it's hard it would be hard.
+
+962
+01:06:48,480 --> 01:06:53,760
+Uh I will always think of LinkedIn as as one of the babies I helped grow.
+
+963
+01:06:53,760 --> 01:06:58,840
+Well, I'm excited to have you back someday when you figure out what you want to do next or and or start whatever you're doing.
+
+964
+01:06:58,840 --> 01:07:01,080
+Uh I love that this was an excuse to get to know you.
+
+965
+01:07:01,080 --> 01:07:02,960
+Tomer, thank you so much for being here.
+
+966
+01:07:02,960 --> 01:07:03,480
+It was great to be here.
+
+967
+01:07:03,480 --> 01:07:04,480
+Thanks, Lenny.
+
+968
+01:07:04,480 --> 01:07:06,960
+Bye, everyone.
+
+969
+01:07:07,640 --> 01:07:09,000
+Thank you so much for listening.
+
+970
+01:07:09,000 --> 01:07:13,240
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+971
+01:07:13,240 --> 01:07:15,520
+or your favorite podcast app.
+
+972
+01:07:15,520 --> 01:07:21,840
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+973
+01:07:21,840 --> 01:07:27,280
+You can find all past episodes or learn more about the show at lennyspodcast.com.
+
+974
+01:07:27,280 --> 01:07:30,480
+See you in the next episode.

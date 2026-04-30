@@ -1,0 +1,5197 @@
+1
+00:00:00,080 --> 00:00:05,440
+My, probably, most spectacular failure was, I 
+was the first PM on Hangouts. We had thousands  
+
+2
+00:00:05,440 --> 00:00:11,440
+of people working for me. We had entire power of 
+Google. We had Larry literally sitting with us  
+
+3
+00:00:11,440 --> 00:00:17,760
+saying we can do anything we want Chrome to do and 
+we still didn't manage to build a great messaging  
+
+4
+00:00:17,760 --> 00:00:23,280
+product. The main learnings from that is, don't 
+take on projects that are going to be six months,  
+
+5
+00:00:23,280 --> 00:00:28,000
+a year, because you just generally don't have 
+control over the macro. The challenge with being  
+
+6
+00:00:28,000 --> 00:00:31,840
+a product manager is, everybody thinks they 
+can do the job. Anybody who uses the product  
+
+7
+00:00:31,840 --> 00:00:36,320
+thinks they have ideas, so at some point in 
+time, you're like, "What is my discipline?  
+
+8
+00:00:36,320 --> 00:00:41,200
+What is my science?" The moment you build 
+experimentation, you've now made it scientific.
+
+9
+00:00:41,200 --> 00:00:42,880
+A lot of new people in their career are like, "Oh,  
+
+10
+00:00:42,880 --> 00:00:45,600
+I just want to think about strategy. I'm 
+going to think about the big picture."
+
+11
+00:00:45,600 --> 00:00:48,960
+Strategy is a little bit overrated for 
+product. For most product managers,  
+
+12
+00:00:48,960 --> 00:00:53,920
+your strategy should be, "How fast 
+can I go from hypothesis to data?"
+
+13
+00:00:53,920 --> 00:00:58,880
+Today, my guest is Mayur Kamat. Mayur 
+is Chief Product Officer at N26,  
+
+14
+00:00:58,880 --> 00:01:03,120
+one of the most successful fintech startups 
+in the world and which, in my research, came  
+
+15
+00:01:03,120 --> 00:01:07,200
+in amongst the top five companies in the world 
+who are hiring and producing the best product  
+
+16
+00:01:07,200 --> 00:01:13,840
+managers. Prior to N26, Mayur was Global Head 
+of Product at Binance, VP of product at Agoda,  
+
+17
+00:01:13,840 --> 00:01:19,040
+which is over a $100 billion dollar company based 
+in Thailand, and a PM at Google and Microsoft. In  
+
+18
+00:01:19,040 --> 00:01:23,360
+our wide-ranging conversation, Mayur shares what 
+he's learned about hiring and developing great  
+
+19
+00:01:23,360 --> 00:01:27,920
+product managers, what he learned from his time 
+working at Binance, which, as you'll soon hear,  
+
+20
+00:01:27,920 --> 00:01:32,080
+was one of the wildest and most unique ways 
+of working, what he learned from the failure  
+
+21
+00:01:32,080 --> 00:01:36,960
+of Google's early attempts at Hangouts, where 
+he was the first PM. Also, the pros and cons  
+
+22
+00:01:36,960 --> 00:01:41,760
+of working in Asia versus Europe versus the US, 
+and why you should be starting your career on the  
+
+23
+00:01:41,760 --> 00:01:47,840
+West Coast of the US. Also, why comp early in 
+your career does not matter and so much more. 
+
+24
+00:01:47,840 --> 00:01:52,560
+This episode is so full of golden nuggets and 
+advice for product people throughout every stage  
+
+25
+00:01:52,560 --> 00:01:56,480
+of their career. If you enjoy this podcast, don't 
+forget to subscribe and follow it in your favorite  
+
+26
+00:01:56,480 --> 00:02:01,680
+podcasting app or YouTube. Also, if you become an 
+annual subscriber of my newsletter, you get a year  
+
+27
+00:02:01,680 --> 00:02:07,520
+free of a bunch of amazing products, including 
+Superhuman, Notion, Linear Perplexity, Granola  
+
+28
+00:02:07,520 --> 00:02:14,480
+and more. Check it out at lennysnewsletter.com and 
+click Bundle. With that, I bring you Mayur Kamat. 
+
+29
+00:02:14,480 --> 00:02:19,520
+This episode is brought to you by WorkOS. If 
+you're building a SaaS app, at some point,  
+
+30
+00:02:19,520 --> 00:02:25,120
+your customers will start asking for enterprise 
+features like SAML authentication and SCIM  
+
+31
+00:02:25,120 --> 00:02:30,560
+provisioning. That's where WorkOS comes in, making 
+it fast and painless to add enterprise features  
+
+32
+00:02:30,560 --> 00:02:35,920
+to your app. Their APIs are easy to understand, so 
+that you can ship quickly and get back to building  
+
+33
+00:02:35,920 --> 00:02:41,760
+other features. Today, hundreds of companies are 
+already powered by WorkOS, including ones you  
+
+34
+00:02:41,760 --> 00:02:48,400
+probably know like Vercel, Webflow and Loom.
+WorkOS also recently acquired Warrant,  
+
+35
+00:02:48,400 --> 00:02:54,400
+the fine-grained authorization service. Warrant's 
+product is based on a groundbreaking authorization  
+
+36
+00:02:54,400 --> 00:02:59,840
+system called Zanzibar, which was originally 
+designed for Google to power Google Docs and  
+
+37
+00:02:59,840 --> 00:03:04,720
+YouTube. This enables fast authorization 
+checks at enormous scale while maintaining  
+
+38
+00:03:04,720 --> 00:03:09,520
+a flexible model that can be adapted to even 
+the most complex use cases. If you're currently  
+
+39
+00:03:09,520 --> 00:03:15,200
+looking to build role-based access control or 
+other enterprise features like single sign-on,  
+
+40
+00:03:15,200 --> 00:03:21,120
+SCIM or user management, you should consider 
+WorkOS. It's a drop-in replacement for Auth Zero  
+
+41
+00:03:21,120 --> 00:03:26,240
+and supports up to one million monthly 
+active users for free. Check it out at  
+
+42
+00:03:26,240 --> 00:03:35,200
+workOS.com to learn more. That's workOS. com.
+Many of you are building AI products, which  
+
+43
+00:03:35,200 --> 00:03:41,120
+is why I am very excited to chat with Brandon 
+Foo, Founder and CEO of Paragon. Hey, Brandon.
+
+44
+00:03:41,120 --> 00:03:43,520
+Hey, Lenny. Thanks for having me.
+
+45
+00:03:43,520 --> 00:03:47,840
+Integrations have become a big 
+deal for AI products. Why is that?
+
+46
+00:03:47,840 --> 00:03:51,280
+Integrations are mission-critical 
+for AI for two reasons. First,  
+
+47
+00:03:51,280 --> 00:03:56,000
+AI products need contacts from their customer's 
+business data such as Google Drive files,  
+
+48
+00:03:56,000 --> 00:04:02,320
+Slack messages or CRM records. Second, for AI 
+products to automate work on behalf of users,  
+
+49
+00:04:02,320 --> 00:04:06,800
+AI agents need to be able to take action 
+across these different third-party tools.
+
+50
+00:04:06,800 --> 00:04:08,800
+Where does Paragon fit into all this?
+
+51
+00:04:08,800 --> 00:04:12,720
+These integrations are a pain to build. 
+That's why Paragon provides an embedded  
+
+52
+00:04:12,720 --> 00:04:16,960
+platform that enables engineers to ship 
+these product integrations in just days  
+
+53
+00:04:16,960 --> 00:04:22,960
+instead of months across every use case 
+from rag data ingestion to agentic actions.
+
+54
+00:04:22,960 --> 00:04:25,760
+I know from firsthand experience 
+that maintenance is even harder  
+
+55
+00:04:25,760 --> 00:04:27,840
+than just building it for the first time.
+
+56
+00:04:27,840 --> 00:04:32,560
+Exactly. We believe product teams should focus 
+engineering efforts on competitive advantages,  
+
+57
+00:04:32,560 --> 00:04:36,000
+not integrations. That's 
+why companies like You.com,  
+
+58
+00:04:36,000 --> 00:04:41,120
+AI21 and hundreds of others use Paragon 
+to accelerate their integration strategy.
+
+59
+00:04:41,120 --> 00:04:44,000
+If you want to avoid wasting months 
+of engineering on integrations that  
+
+60
+00:04:44,000 --> 00:04:52,720
+your customers need, check out 
+Paragon at useparagon.com/Lenny. 
+
+61
+00:04:52,720 --> 00:04:56,560
+Mayur, thank you so much for being 
+here, and welcome to the podcast.
+
+62
+00:04:56,560 --> 00:05:00,080
+Thank you. This is super 
+exciting. Thank you for having me.
+
+63
+00:05:00,080 --> 00:05:06,240
+I want to start with your time at Binance. 
+You've worked at Google, you worked at Microsoft,  
+
+64
+00:05:06,240 --> 00:05:12,160
+you worked at a company called Agoda. Now, 
+you're at N26. I imagine Binance was the most  
+
+65
+00:05:12,160 --> 00:05:17,040
+unique place that you've worked at, and I've also 
+never heard much about what it's like to work at  
+
+66
+00:05:17,040 --> 00:05:21,680
+a company like Binance. I was just looking them 
+up on Wikipedia. I saw they started in China,  
+
+67
+00:05:21,680 --> 00:05:27,120
+they moved to Japan, they moved to Malta. Now, 
+they have no official headquarters. What was  
+
+68
+00:05:27,120 --> 00:05:30,800
+it just like working at Binance? How was it 
+most unique from other places you've worked?
+
+69
+00:05:30,800 --> 00:05:34,720
+Yeah. Maybe just a background for Binance, 
+because I think a lot of people have heard it,  
+
+70
+00:05:34,720 --> 00:05:42,960
+some in positive connotations, some not so much. 
+The scale of Binance is pretty mind-boggling. Just  
+
+71
+00:05:42,960 --> 00:05:48,320
+to give the history, they started in 2017 
+as a crypto exchange, when there were other  
+
+72
+00:05:48,320 --> 00:05:53,280
+crypto exchange on the market for years, like 
+Coinbase. Within six months, they became number  
+
+73
+00:05:53,280 --> 00:05:59,600
+one. That's unprecedented. That's like launching 
+a search engine today, and then, six months later,  
+
+74
+00:05:59,600 --> 00:06:05,840
+beating Google. Then they went within five years 
+to at a peak valuation of somewhere like $400  
+
+75
+00:06:05,840 --> 00:06:14,640
+billion or so with 2000 employees. That's zero 
+to $400 billion in five years. It's at a scale  
+
+76
+00:06:14,640 --> 00:06:18,960
+that's never been done before. Google couldn't 
+do it, Facebook, none of the names that you hear.  
+
+77
+00:06:18,960 --> 00:06:29,200
+It's remarkable. When I was there as the head of 
+product, my top line KPI was the trading volume,  
+
+78
+00:06:29,200 --> 00:06:38,560
+and my monthly KPI was in trillions of dollars.
+Just the scale was mind-boggling. We had teams of  
+
+79
+00:06:38,560 --> 00:06:45,200
+10, 20 people running multi-billion dollar 
+profit businesses. That brings in with it,  
+
+80
+00:06:45,200 --> 00:06:51,920
+first, how did they do that to that scale, and 
+two, what kind of culture requires to keep that  
+
+81
+00:06:51,920 --> 00:06:57,040
+running? Both are very fascinating. I think 
+we could spend a lot of time talking about it,  
+
+82
+00:06:57,040 --> 00:07:01,360
+but the truly interesting thing, the first 
+one is, you can't do this by having a  
+
+83
+00:07:01,360 --> 00:07:09,360
+traditional log structure. CZ, the founder 
+and CEO at one point had 55 direct reports,  
+
+84
+00:07:09,360 --> 00:07:15,200
+and his direct reports had about the similar ones. 
+For a large portion of the history of the company,  
+
+85
+00:07:15,200 --> 00:07:21,520
+there was just one level between the individual 
+employees and the CEO. That leads to an extreme  
+
+86
+00:07:21,520 --> 00:07:28,000
+level of decision-making and execution. You cannot 
+have one-on-ones when you have 55 direct reports,  
+
+87
+00:07:28,000 --> 00:07:33,120
+so there's a culture of one-to-many 
+and doing that as often as possible. 
+
+88
+00:07:33,120 --> 00:07:38,640
+The leadership team, for example, met every 
+day, and because the leadership team was spread  
+
+89
+00:07:38,640 --> 00:07:45,200
+across the world, we met at 11:00 PM when I was in 
+Singapore every day. That includes the weekends,  
+
+90
+00:07:45,200 --> 00:07:51,360
+holidays. The leadership team was there, 11:00 
+PM every single day, which meant that none of  
+
+91
+00:07:51,360 --> 00:07:58,080
+the decisions were blocked for more than 24 hours. 
+Most of them, we made it on chat even within those  
+
+92
+00:07:58,080 --> 00:08:05,680
+24 hours, but if there was something big, it was 
+escalated, decided. We executed largely based on  
+
+93
+00:08:05,680 --> 00:08:13,040
+this concept that I now take with me. I call it 
+running products via daily meeting. We would pick  
+
+94
+00:08:13,040 --> 00:08:20,560
+a owner for something really urgent at the nightly 
+leadership call. Then that owner would be expected  
+
+95
+00:08:20,560 --> 00:08:27,520
+to have all hands on deck for however long that 
+problem is every single day and then report the  
+
+96
+00:08:27,520 --> 00:08:35,760
+updates on the daily call. Some of these were 
+really massive topics, like how do we get 15  
+
+97
+00:08:35,760 --> 00:08:43,200
+financial licenses in 15 countries in the next 
+three months? It wouldn't be at a scale that was-
+
+98
+00:08:43,200 --> 00:08:45,120
+You've got 24 hours.
+
+99
+00:08:45,120 --> 00:08:52,000
+Yes, and people did it. It's extremely interesting 
+to see that when you have really smart people,  
+
+100
+00:08:52,000 --> 00:08:58,800
+you give them really hard problems, you have no 
+constraints on what can you need to solve them,  
+
+101
+00:08:58,800 --> 00:09:06,080
+whether it's money, people, except time. 
+Time is always at a premium. People can move  
+
+102
+00:09:06,080 --> 00:09:14,240
+mountains in a small amount of time. That extreme 
+ownership culture, I think, probably was the most  
+
+103
+00:09:14,240 --> 00:09:20,640
+fascinating part of working at Binance that I've 
+now tried to take. There's some good parts of it  
+
+104
+00:09:20,640 --> 00:09:26,560
+in terms of attention to detail, being able to 
+pick certain areas and own it, irrespective of  
+
+105
+00:09:26,560 --> 00:09:31,680
+what your title is and how many people report to 
+you. There are certain downsides in terms of the  
+
+106
+00:09:31,680 --> 00:09:37,680
+amount of randomization that it can cost teams, 
+especially if it's not super well-thought through.  
+
+107
+00:09:38,560 --> 00:09:43,760
+I'm trying to see what are the great parts of 
+that that I can bring to different roles, but that  
+
+108
+00:09:43,760 --> 00:09:49,520
+concept of daily meeting, if there's something 
+super urgent, how can you own it directly and run  
+
+109
+00:09:49,520 --> 00:09:55,200
+it yourself, where you are in the details so your 
+team knows that they need to be in the details,  
+
+110
+00:09:55,200 --> 00:10:02,480
+and then be able to execute that. That's probably 
+the most fascinating. There's several war stories.  
+
+111
+00:10:02,480 --> 00:10:08,560
+I was there for two years and the amount of 
+interesting stories that happened during that time  
+
+112
+00:10:08,560 --> 00:10:13,440
+is a lot, but then, maybe I can follow up 
+later if you have specific questions there.
+
+113
+00:10:13,440 --> 00:10:17,200
+I would love to hear a war story. This is 
+definitely as interesting as I was expecting  
+
+114
+00:10:17,200 --> 00:10:21,920
+it to be. Just what I'm hearing so far is just 
+things that worked well for them to operate at  
+
+115
+00:10:21,920 --> 00:10:27,120
+this insane pace and scale is the entire 
+leadership team meeting every single day,  
+
+116
+00:10:27,120 --> 00:10:31,280
+11:00 PM your time. Hopefully, at better 
+times for other folks around the world.
+
+117
+00:10:31,280 --> 00:10:35,200
+There's some people in Sydney, 
+Australia, so it was 1:00 AM for them.
+
+118
+00:10:35,200 --> 00:10:39,440
+Good grief. This idea of a flat 
+structure, yeah, it's interesting,  
+
+119
+00:10:39,440 --> 00:10:43,600
+because I imagine that's not necessarily 
+great for other reasons and then this idea  
+
+120
+00:10:43,600 --> 00:10:48,160
+of being in the details. Let me ask about that, 
+actually. What does that actually look like? I  
+
+121
+00:10:48,160 --> 00:10:51,040
+think a lot of people, a lot of leaders 
+are like, "Oh, yeah. I'm in the details,  
+
+122
+00:10:51,040 --> 00:10:55,440
+we should be in the details." What does that 
+actually look like in real life at Binance?
+
+123
+00:10:55,440 --> 00:11:00,880
+Let me give an example. One of the areas, when I 
+joined, one of the biggest product problem we had  
+
+124
+00:11:00,880 --> 00:11:06,640
+was, crypto before was fairly unregulated, so you 
+could just sign up with an email address or even  
+
+125
+00:11:06,640 --> 00:11:12,560
+just a wallet and start trading. There was almost 
+zero friction. Then it suddenly became regulated,  
+
+126
+00:11:12,560 --> 00:11:19,280
+where you would almost have a full KYC flow like 
+a bank. That just meant that the conversion rate  
+
+127
+00:11:19,280 --> 00:11:27,360
+dropped from, let's say, 100% to 2%. Now we had 
+to solve this problem. This was the daily meeting  
+
+128
+00:11:27,360 --> 00:11:33,600
+level problem. It's okay if you're operating 
+in one country. You can do it easily. If you're  
+
+129
+00:11:33,600 --> 00:11:39,680
+operating in 200 countries where there's not even 
+a standard for what a document acceptance criteria  
+
+130
+00:11:39,680 --> 00:11:45,040
+might look like, now you have a significantly 
+larger problem. You cannot say, "Let's work  
+
+131
+00:11:45,040 --> 00:11:53,520
+with the KYC vendor and do the onboarding."
+We had to, literally have this, the top  
+
+132
+00:11:53,520 --> 00:12:01,600
+50 countries, the top 10 document types, 
+this spreadsheet of basically 500 cells,  
+
+133
+00:12:01,600 --> 00:12:08,720
+the conversion rate at each level. Then we are 
+looking at, okay, a passport in Kazakhstan has  
+
+134
+00:12:08,720 --> 00:12:14,320
+very low level of conversion. What can we do 
+about that? Do we need a new vendor? Do we need  
+
+135
+00:12:14,320 --> 00:12:21,520
+better imaging technology? Do we need a new SDK 
+from a vendor? Then we go cell by cell based on,  
+
+136
+00:12:22,480 --> 00:12:25,680
+let's say if I was running a typical product 
+team, I would say, okay, let's just look at  
+
+137
+00:12:25,680 --> 00:12:31,920
+maybe the top 90 percentile of our users, but this 
+was Binance and then CZ is like, "No user left  
+
+138
+00:12:31,920 --> 00:12:38,480
+behind. Even that one user in Congo is important 
+because this is financial inclusion for them."  
+
+139
+00:12:38,480 --> 00:12:45,040
+Then all of those 500 sales matter, no matter 
+how low their impact to the conversion rate is. 
+
+140
+00:12:45,040 --> 00:12:50,240
+That's a little bit of Binance flavor there. 
+It's extreme customer focus and it doesn't really  
+
+141
+00:12:50,240 --> 00:12:56,480
+matter. Customers are not a number. It's a person 
+at the end of the screen and we care about them,  
+
+142
+00:12:56,480 --> 00:13:03,680
+so you would need to know, you would get questions 
+like, why is the driver's license acceptance rate  
+
+143
+00:13:03,680 --> 00:13:09,360
+in Kenya falling suddenly? When you have, 
+and that's just one piece of the problem in  
+
+144
+00:13:09,360 --> 00:13:16,560
+a large product with 80 different products. You, 
+of course, cannot do it for every single product,  
+
+145
+00:13:16,560 --> 00:13:23,040
+but the concept of, what is the most leveraged 
+decision you could be working on right now? If  
+
+146
+00:13:23,040 --> 00:13:29,360
+it is for your growth, it's the onboarding, then 
+you'd better know exact every single screen of  
+
+147
+00:13:29,360 --> 00:13:36,640
+the flow, why is there a drop-off and what are 
+your teams doing for it? That level of detail,  
+
+148
+00:13:36,640 --> 00:13:43,440
+and you just do it on different products 
+at different parts of your journey.
+
+149
+00:13:43,440 --> 00:13:47,120
+I imagine there's people listening where 
+they're like, there's the team responsible  
+
+150
+00:13:47,120 --> 00:13:52,160
+for the onboarding flow and the KYC flow of 
+their product and it's so hard. They're like,  
+
+151
+00:13:52,160 --> 00:13:57,520
+oh, there's all these problems with our 
+flow. Imagine that for 100 different  
+
+152
+00:13:57,520 --> 00:14:01,120
+versions of the flow across 100 
+different countries. Good God.
+
+153
+00:14:01,120 --> 00:14:05,440
+And documents. It gets very 
+tricky. It gets very tricky,  
+
+154
+00:14:06,720 --> 00:14:10,080
+but we also had resources. 
+At one point in time we said,  
+
+155
+00:14:10,080 --> 00:14:16,160
+we had a team of 20 people working on KYC and we 
+said, "For the next three months, we want 500."
+
+156
+00:14:16,160 --> 00:14:17,920
+Which has its own downsides, too.
+
+157
+00:14:17,920 --> 00:14:24,560
+Has its downside, but if you're running 
+in this extreme mode and you're less,  
+
+158
+00:14:24,560 --> 00:14:29,680
+not as worried about just the team's stress 
+and personal development aspects of it,  
+
+159
+00:14:29,680 --> 00:14:36,400
+you're just purely looking at the execution 
+of the product, there's a surprising amount of  
+
+160
+00:14:36,400 --> 00:14:41,600
+power that comes with it. This was probably the 
+second time in my career where I had that, wow,  
+
+161
+00:14:41,600 --> 00:14:47,840
+you can do this because in other companies it 
+would take years to do it. The first one was,  
+
+162
+00:14:47,840 --> 00:14:52,160
+this is going back at Google. I remember 
+I joined Google. It was my first day at  
+
+163
+00:14:52,160 --> 00:14:59,760
+onboarding and I was the product manager 
+for Gmail for mobile, for sync. I was in  
+
+164
+00:15:00,480 --> 00:15:05,280
+my onboarding meeting when they pulled me out 
+and said, "Hey, we have an issue. The service  
+
+165
+00:15:05,280 --> 00:15:10,640
+is down and Wall Street Journal is writing 
+an article that Google, Microsoft, Apple  
+
+166
+00:15:10,640 --> 00:15:16,240
+not working together causing the service to go 
+down, so we need you in this war room right now." 
+
+167
+00:15:16,960 --> 00:15:22,800
+It was a bug in iOS 4. This is a long time ago, 
+which caused every single user to pull their  
+
+168
+00:15:22,800 --> 00:15:28,480
+entire Gmail inbox, re-sync the whole inbox. 
+A bug on the Apple side is going to take two,  
+
+169
+00:15:28,480 --> 00:15:36,560
+three weeks to fix, and it was causing 1000x 
+load to our servers. I remember Connie Wurz,  
+
+170
+00:15:36,560 --> 00:15:43,040
+who was the Head of Infrastructure at Google, 
+and he's like, "Sure." He flipped a button and  
+
+171
+00:15:43,040 --> 00:15:48,800
+there were 1000x servers that showed up 
+for the next two weeks. I was like, "Wow,  
+
+172
+00:15:48,800 --> 00:15:54,640
+that is scale," right? This was my second 
+time feeling that wow moment where like, oh,  
+
+173
+00:15:54,640 --> 00:16:00,240
+we just put 500 people in and solve the problem. 
+It's less about having the 500 people and being  
+
+174
+00:16:00,240 --> 00:16:06,080
+able to maneuver them that quickly. I don't think 
+I've been able to do that at any other company.
+
+175
+00:16:06,080 --> 00:16:11,120
+To close the loop on some of these radical 
+ways of working, this idea of 50 reports  
+
+176
+00:16:11,120 --> 00:16:16,800
+per person and this idea of caring about a 
+person in Congo not being able to sign up,  
+
+177
+00:16:16,800 --> 00:16:22,240
+do you think that's a good idea? Do you take 
+those in the way you work now or is it just,  
+
+178
+00:16:22,240 --> 00:16:26,400
+in this particular situation it's 
+important? Other places, maybe not.
+
+179
+00:16:26,400 --> 00:16:32,320
+There are several preconditions. One is you're 
+growing really fast. The growth for the employees  
+
+180
+00:16:32,320 --> 00:16:38,400
+comes just from seeing problems at scale that 
+are growing every day that it needs less of a  
+
+181
+00:16:38,400 --> 00:16:43,440
+manager's attention to figure out what you need 
+to grow. The best way to grow in general is that  
+
+182
+00:16:43,440 --> 00:16:50,560
+you work at a very fast-growing company. If 
+that's true, two, your people are extremely  
+
+183
+00:16:50,560 --> 00:16:56,400
+well compensated, so they care about the KPIs 
+more than they care about what's the next stage  
+
+184
+00:16:56,400 --> 00:17:06,160
+in my career and how do I get promoted? 
+Our bonus structure went from 0% to 500%,  
+
+185
+00:17:06,160 --> 00:17:12,240
+so a lot of people didn't really care getting 
+a 10%, 20% pay. They just want to do incredible  
+
+186
+00:17:12,240 --> 00:17:18,560
+work because they know they would be taken 
+care of. Three, it's a mission driven company,  
+
+187
+00:17:18,560 --> 00:17:23,920
+still believe at the end of the day that 
+you're doing this just beyond the KPI. 
+
+188
+00:17:23,920 --> 00:17:28,720
+At Binance, there was a very strong belief 
+that 80% of the world doesn't have access to  
+
+189
+00:17:28,720 --> 00:17:35,440
+financial tools. They don't even have an access 
+to currency that they can trust. When we look at,  
+
+190
+00:17:35,440 --> 00:17:42,480
+live in Europe or in US and we think about crypto, 
+it's largely about speculation or bitcoin. For  
+
+191
+00:17:42,480 --> 00:17:48,480
+most of the world, they just need access to a 
+US dollar, stable coin and just knowing that my  
+
+192
+00:17:48,480 --> 00:17:55,520
+currency is not getting deinflated because of 
+things beyond my control. Everyone having come  
+
+193
+00:17:55,520 --> 00:18:01,040
+from these, a lot of our employees were across all 
+these countries, they had a very strong mission  
+
+194
+00:18:01,040 --> 00:18:08,480
+belief that what we are doing will truly empower 
+billions of people. There's a power in that. A  
+
+195
+00:18:08,480 --> 00:18:14,080
+lot of people go through, "Hey, I'm going to move 
+mountains because it's not just about the money,  
+
+196
+00:18:14,080 --> 00:18:19,760
+it's just not about my career. It's about 
+doing something that will change the world."
+
+197
+00:18:19,760 --> 00:18:25,360
+Let's follow this thread on accelerating your 
+career, and talk about where you're at today,  
+
+198
+00:18:25,360 --> 00:18:30,640
+N26. As you know, I've been doing a bunch 
+of research on which companies hire and  
+
+199
+00:18:30,640 --> 00:18:33,600
+produce the best product managers. 
+I've done a couple passes at this,  
+
+200
+00:18:33,600 --> 00:18:38,240
+and N26 has come up in the top five 
+of both ways of approaching this,  
+
+201
+00:18:39,120 --> 00:18:45,920
+essentially which companies alumnis go on to do 
+the best in their career. N26 is way up there. I  
+
+202
+00:18:45,920 --> 00:18:51,600
+want to come at this from a couple directions. 
+One is what N26 as a company does to hire and  
+
+203
+00:18:51,600 --> 00:18:56,080
+incubate the best people, but also just you 
+personally, what your advice is to people  
+
+204
+00:18:56,080 --> 00:19:01,680
+and how you help them become great PMs. Let's 
+actually start in that second bucket. What is the  
+
+205
+00:19:01,680 --> 00:19:08,160
+most common and most impactful career advice that 
+you share with product managers that you manage,  
+
+206
+00:19:08,160 --> 00:19:12,400
+that you find most helps them move ahead in 
+their career and get unstuck in their career?
+
+207
+00:19:12,400 --> 00:19:16,480
+I think the number one thing I shared before, 
+the best thing you can do is find companies  
+
+208
+00:19:16,480 --> 00:19:23,920
+that are growing fast because it compounds your 
+learning at a much faster interval. Just the  
+
+209
+00:19:23,920 --> 00:19:28,720
+basic compound interest formula, even if your 
+interest rate is low, if you're compounding  
+
+210
+00:19:28,720 --> 00:19:33,440
+daily versus compounding yearly, after two 
+years, you will be at a whole different stage  
+
+211
+00:19:33,440 --> 00:19:39,760
+at the end point. Companies that are growing 
+fast just lets you get that learning much,  
+
+212
+00:19:39,760 --> 00:19:44,800
+much quicker. I remember joining Microsoft first 
+in my career. Some of the products I worked on  
+
+213
+00:19:44,800 --> 00:19:51,120
+during my internship had not shipped till I left 
+Microsoft three, four years later. That's a very,  
+
+214
+00:19:51,120 --> 00:19:56,480
+very low rate of compounding. Microsoft's a whole 
+different company now 20 years later, thankfully.  
+
+215
+00:19:56,480 --> 00:20:00,960
+Then you contrast that something like Binance 
+where every day or every hour, every minute you're  
+
+216
+00:20:00,960 --> 00:20:07,680
+shipping something and then learning from it.
+The faster you can compound your learning,  
+
+217
+00:20:07,680 --> 00:20:14,560
+the faster you will grow. The second piece 
+generally is, you need to optimize for what you're  
+
+218
+00:20:14,560 --> 00:20:23,280
+great at. Now having two kids, I'm fairly in the 
+fact that your strengths get defined very, very  
+
+219
+00:20:23,280 --> 00:20:28,160
+early, right? I'm looking at my nine-year-old and 
+twelve-year-old, and they have a whole different  
+
+220
+00:20:28,160 --> 00:20:35,040
+set of strengths. If you're 25 years old early in 
+your career, it's very hard at that point to say,  
+
+221
+00:20:35,040 --> 00:20:40,000
+"Oh, here are all my weaknesses and I need to 
+improve on those." A lot of the career feedback  
+
+222
+00:20:40,000 --> 00:20:44,320
+typically tends to be around, "Hey, here are the 
+things you need to be better at. Why don't you  
+
+223
+00:20:44,320 --> 00:20:48,560
+do more of that stuff, right?" Formally in the 
+camp that you need to know what you're great at,  
+
+224
+00:20:48,560 --> 00:20:54,880
+what are your superpowers, and you need to 
+find jobs where success is determined by  
+
+225
+00:20:54,880 --> 00:21:00,080
+how much of that superpowers you get to use.
+Early in your career, you can't get away with  
+
+226
+00:21:00,080 --> 00:21:06,160
+the fact that there's some stuff you're not going 
+to be great at and you just have to manage around  
+
+227
+00:21:06,160 --> 00:21:13,040
+it. If you get higher up in your career, then 
+it gets easier because you can build a team that  
+
+228
+00:21:13,040 --> 00:21:20,400
+complements your strengths, but again, if you're 
+early in your career, find places that, if you're  
+
+229
+00:21:20,400 --> 00:21:25,920
+a great creative person, if you can look at a 
+product and think of 100 things you can do better,  
+
+230
+00:21:25,920 --> 00:21:30,000
+you are always about what's the next best 
+thing and how quickly can I implement it,  
+
+231
+00:21:30,000 --> 00:21:34,400
+you need to be working in teams that have a 
+high experimentation culture. You need to be  
+
+232
+00:21:34,400 --> 00:21:40,160
+working in growth teams in large companies. If 
+you work in a FinTech company on a compliance  
+
+233
+00:21:40,160 --> 00:21:46,000
+side project or launching a new business 
+vertical, you're going to struggle, right? 
+
+234
+00:21:46,000 --> 00:21:51,520
+On the same time, if you have extreme management 
+structured thinking, you have great stakeholder  
+
+235
+00:21:51,520 --> 00:21:56,640
+management, you have high EQ, you should work in 
+teams where there is a large amount of complex  
+
+236
+00:21:56,640 --> 00:22:02,560
+people management and process management. 
+You would struggle in a growth team where the  
+
+237
+00:22:02,560 --> 00:22:08,160
+expectation is you're doing things really quickly. 
+I would look at first very introspectively,  
+
+238
+00:22:08,160 --> 00:22:14,480
+what are my true strengths? What do I, and 
+then look at jobs where that has a much  
+
+239
+00:22:14,480 --> 00:22:22,640
+higher profile of winning. Thirdly, largely 
+I would say do not optimize for compensation,  
+
+240
+00:22:22,640 --> 00:22:31,360
+especially early in your career. If you're truly 
+on a track to become an executive someday or found  
+
+241
+00:22:31,360 --> 00:22:37,600
+your own company and make it successful, you will 
+find that the compensation is so much backloaded  
+
+242
+00:22:37,600 --> 00:22:43,440
+that you would make 90% of your compensation 
+in the last five years of your career,  
+
+243
+00:22:43,440 --> 00:22:52,400
+so optimizing for 10%, 20% early in your career.
+If you have two jobs, I would rank in your first  
+
+244
+00:22:52,400 --> 00:22:59,120
+15 years of your career, I would say do not look 
+at the compensation. Then the last one, this was  
+
+245
+00:22:59,120 --> 00:23:04,000
+strange. I never thought about this longer, but 
+now I think this is probably the most interesting  
+
+246
+00:23:04,000 --> 00:23:09,520
+advice I can give people is determine very early 
+in your career if you truly want to be a C-level  
+
+247
+00:23:09,520 --> 00:23:15,280
+someday, you want to be an executive someday, 
+because it's almost like if you're ambitious and  
+
+248
+00:23:15,280 --> 00:23:23,680
+successful, you enter product management. You are 
+in top of your, it's almost an expectation of you  
+
+249
+00:23:23,680 --> 00:23:29,920
+that you would become that and you'd never really 
+challenge or question yourself, is this the thing  
+
+250
+00:23:29,920 --> 00:23:35,280
+that needs me, that I need to do to get there? Is 
+there something I'm going to truly enjoy? Not just  
+
+251
+00:23:35,280 --> 00:23:41,360
+the destination but the process to get there.
+A lot of people think that and they make  
+
+252
+00:23:41,360 --> 00:23:47,840
+suboptimal decisions based on that. There's 
+incredible careers you can build and incredible  
+
+253
+00:23:47,840 --> 00:23:55,360
+lives that you can live by just being great 
+at what you do, doing more of that stuff. You  
+
+254
+00:23:55,360 --> 00:24:01,840
+end your career maybe as a director, maybe as a 
+group product manager, but throughout the stuff,  
+
+255
+00:24:01,840 --> 00:24:07,360
+you have built a holistic life that doesn't 
+revolve around your work and gives incredible  
+
+256
+00:24:07,360 --> 00:24:12,080
+meaning to you, or you can be saying, 
+you know what? Work is a huge part of my  
+
+257
+00:24:12,080 --> 00:24:17,520
+identity. Somebody asks me what wakes me up in 
+the morning and what gives me that energy? It's my  
+
+258
+00:24:17,520 --> 00:24:23,040
+work. I can't separate my identity from your work. 
+Then maybe you should pursue that C-level path  
+
+259
+00:24:23,040 --> 00:24:28,000
+because it'll truly be fulfilling and you would 
+be able to make those challenges and sacrifices  
+
+260
+00:24:28,000 --> 00:24:33,520
+that are going to be asked of you to make that.
+If you can calibrate that early and have that  
+
+261
+00:24:33,520 --> 00:24:38,800
+true conversation with yourself like, "Yes, I want 
+to go down that path and I want to do," you would  
+
+262
+00:24:38,800 --> 00:24:43,280
+make different career choices. In that path, I 
+would definitely say don't look at compensation.  
+
+263
+00:24:43,280 --> 00:24:48,080
+There are two jobs. Look at the three things. Is 
+it going to give me high compounding of learning?  
+
+264
+00:24:48,080 --> 00:24:54,160
+Is it high overlap with my strengths, and am I 
+going to have a lot of fun doing it? If you have  
+
+265
+00:24:54,160 --> 00:24:58,560
+fun doing it, then it becomes a virtuous cycle 
+and you do more of it and you're great at it.
+
+266
+00:24:58,560 --> 00:25:00,400
+On the question of decide if you 
+want to be a CPO, essentially-
+
+267
+00:25:00,400 --> 00:25:04,000
+Do you want... Decide if you 
+want to be a CPO essentially,  
+
+268
+00:25:04,000 --> 00:25:07,360
+is the, the implication there is, 
+if you do, that's a big sacrifice,  
+
+269
+00:25:07,360 --> 00:25:11,512
+you're going to be stressed. Work-life balance 
+is worse. Is that kind of the core question?
+
+270
+00:25:11,512 --> 00:25:12,640
+No, no, no, absolutely not.
+
+271
+00:25:12,640 --> 00:25:13,080
+Okay.
+
+272
+00:25:13,080 --> 00:25:13,515
+Absolutely not.
+
+273
+00:25:13,515 --> 00:25:13,520
+Okay.
+
+274
+00:25:13,520 --> 00:25:20,640
+It's like, if you truly enjoy your work and what 
+you're doing, it won't feel like a sacrifice. When  
+
+275
+00:25:20,640 --> 00:25:24,800
+you're constantly, when you look at a new product, 
+you're walking down the street, you see a new  
+
+276
+00:25:24,800 --> 00:25:29,200
+product, you're on the app store, you see a new 
+product, and you're like, "Oh, this is cool. Oh,  
+
+277
+00:25:29,200 --> 00:25:33,440
+look how they're doing the onboarding. Oh, look 
+how the app store entry looks." If that truly  
+
+278
+00:25:33,440 --> 00:25:39,440
+fills you up, it fills your cup, every moment 
+you're looking at why things can be better,  
+
+279
+00:25:39,440 --> 00:25:44,800
+how you can be better, how a certain thing... 
+You would, the sacrifice will not feel like  
+
+280
+00:25:44,800 --> 00:25:49,280
+sacrifices. It'll not feel like you're working 
+long hours. You'll not feel, hey, when you're  
+
+281
+00:25:49,280 --> 00:25:54,320
+talking to PMs and giving them some guidances, 
+when you're building things, when you're  
+
+282
+00:25:54,320 --> 00:26:03,680
+recruiting new people, all that stuff, it fills 
+your cup, it doesn't drain it. Then you would  
+
+283
+00:26:03,680 --> 00:26:10,480
+have incredible fun on the journey. So, it's less 
+about that your sacrifices or work-life balance. 
+
+284
+00:26:10,480 --> 00:26:15,200
+The moment you start having those conversations, 
+you are probably not on that track. You should  
+
+285
+00:26:15,200 --> 00:26:20,560
+not be on that track because the moment the 
+word work-life balance comes, I think Jeff  
+
+286
+00:26:20,560 --> 00:26:24,480
+Bezos has this thing that he hates the word 
+because it means there are opposite things  
+
+287
+00:26:24,480 --> 00:26:30,480
+that need to be balanced, right? It needs to be 
+work-life awesomeness or something like that,  
+
+288
+00:26:30,480 --> 00:26:36,160
+where every moment is awesome whether you're 
+working or you're living. But for some people,  
+
+289
+00:26:36,160 --> 00:26:41,520
+that comes naturally because that's how they're 
+wired. And those people should absolutely pursue  
+
+290
+00:26:41,520 --> 00:26:46,320
+it because it would be incredibly fulfilling, and 
+the things that are challenging would also feel  
+
+291
+00:26:46,320 --> 00:26:51,760
+not as onerous. Whereas for everything 
+else, it would feel like a sacrifice,  
+
+292
+00:26:51,760 --> 00:26:56,720
+could feel like something you need to balance. And 
+then you would, again, even if you're great at it,  
+
+293
+00:26:56,720 --> 00:27:00,960
+you're not going to have fun doing it, and 
+at some point you will not be great at it.
+
+294
+00:27:00,960 --> 00:27:05,600
+For folks that are PMs today, there's 
+almost an implication their career  
+
+295
+00:27:05,600 --> 00:27:09,680
+is heading towards CPO eventually. 
+That's kind of the ladder they're on.  
+
+296
+00:27:09,680 --> 00:27:14,480
+What are the, say, top three most 
+common other options you've seen,  
+
+297
+00:27:14,480 --> 00:27:18,800
+other paths you've seen of folks that you 
+manage, so that people can think about, "Okay,  
+
+298
+00:27:18,800 --> 00:27:23,040
+I don't need to maybe just keep climbing this 
+ladder. There's these other directions I can go."
+
+299
+00:27:23,040 --> 00:27:26,640
+I mean the number one, and that's I think 
+back to your original question on N26,  
+
+300
+00:27:27,280 --> 00:27:34,720
+if you work in incredibly high growth companies, 
+especially FinTech where there's a higher,  
+
+301
+00:27:35,680 --> 00:27:40,800
+people end up being founders because it's probably 
+a whole different kind of track we can go down on,  
+
+302
+00:27:41,520 --> 00:27:52,000
+the founding your own company is probably the most 
+kind of obvious/exciting alternate path. The only  
+
+303
+00:27:52,000 --> 00:27:59,520
+thing I ask there is, again, the same question, 
+what you're good at and what you love doing. The  
+
+304
+00:27:59,520 --> 00:28:04,400
+challenges with founding a company is a large 
+portion of running a company has nothing to do  
+
+305
+00:28:04,400 --> 00:28:11,200
+with building a great product, especially as the 
+company gets bigger. I've worked for founders now  
+
+306
+00:28:11,200 --> 00:28:18,560
+for 17 of my 20-year career, right. So, even at 
+Google and stuff, Nikhil was my boss at Google,  
+
+307
+00:28:18,560 --> 00:28:24,240
+used to be a founder, and the CEOs now, the 
+thing they tell me when they hire me is,  
+
+308
+00:28:24,240 --> 00:28:30,640
+"I wish I had your job," because that's what 
+I used to do. That's what I have loved doing,  
+
+309
+00:28:30,640 --> 00:28:37,360
+and now I spend 90% of my time doing stuff 
+that is not the stuff that I truly enjoy. 
+
+310
+00:28:37,360 --> 00:28:43,360
+But folks enjoy building stuff as a PM, there's 
+a lot of things you don't have control over,  
+
+311
+00:28:43,360 --> 00:28:48,240
+and you feel like, "Hey, that's stopping me from 
+growing. That's what's topping me from truly  
+
+312
+00:28:48,240 --> 00:28:55,120
+enjoying." Founding is a great path. You have 
+that control now, you own the decision-making.  
+
+313
+00:28:55,120 --> 00:28:59,600
+There's rarely times you can say, "Hey, this 
+did not work because of that person." Right?  
+
+314
+00:28:59,600 --> 00:29:04,240
+If you're constantly hitting that, then 
+founding is a great path for you because then  
+
+315
+00:29:04,240 --> 00:29:10,880
+you have the ball control for better or worse.
+The other is just, I mean, it's less about being  
+
+316
+00:29:10,880 --> 00:29:19,280
+a CPO and just growing your breadth and your 
+depth instead of just the ladder, right? So  
+
+317
+00:29:19,280 --> 00:29:27,120
+you are incredibly, either getting specialized in 
+a specific domain where there is now enough value  
+
+318
+00:29:27,120 --> 00:29:32,000
+for you to separate yourself from the pack, 
+whether it's, like in FinTech, now we have  
+
+319
+00:29:32,000 --> 00:29:36,960
+folks who are onboarding experts with KYC. We have 
+people who are fraud experts, [inaudible 00:29:37]  
+
+320
+00:29:36,960 --> 00:29:42,080
+who have really great understanding of how card 
+schemes work and how MasterCards work and where  
+
+321
+00:29:42,080 --> 00:29:47,360
+can we get the right incentives for the user. 
+The folks who are experts on customer loyalty  
+
+322
+00:29:47,360 --> 00:29:53,360
+and retention. You build that domain expertise 
+and then you realize that everyone needs that,  
+
+323
+00:29:53,360 --> 00:30:00,240
+right? And that could be an incredible way to 
+specialize. So, you may lead growth at certain  
+
+324
+00:30:00,240 --> 00:30:04,880
+team even though you're not a CPO, right? So, 
+that's kind of the second way of doing it. 
+
+325
+00:30:04,880 --> 00:30:11,360
+And the third one, again, just not to knock it 
+out, is you realize that work is not going to  
+
+326
+00:30:11,360 --> 00:30:17,360
+be my big part of my identity. My identity is, 
+who am I as a parent? Who am I as a community  
+
+327
+00:30:17,360 --> 00:30:25,040
+member? Who am I as a son to my parents? Who 
+am I as an artist or a contributor? And that's  
+
+328
+00:30:25,040 --> 00:30:31,920
+what my death is going to be, a well-rounded 
+person. And a job is great, I'm great at it,  
+
+329
+00:30:31,920 --> 00:30:37,520
+but I'm going to do it as much as it's needed. 
+And the value and meaning, the top part of the  
+
+330
+00:30:37,520 --> 00:30:45,840
+Maslow's pyramid comes from everything but work. 
+And then< you just lead kind of a balanced life  
+
+331
+00:30:45,840 --> 00:30:51,440
+because then work is a certain portion of 
+it and the rest kind of fills the picture.
+
+332
+00:30:51,440 --> 00:30:56,720
+So, just to summarize these four really good 
+pieces of advice for how to essentially keep  
+
+333
+00:30:56,720 --> 00:31:03,360
+your career going and get unstuck and accelerated, 
+is work at companies that are really high growth  
+
+334
+00:31:03,360 --> 00:31:08,240
+because your learnings will compound, and also the 
+network you build, you didn't even mention that,  
+
+335
+00:31:08,240 --> 00:31:12,000
+that becomes really valuable because especially 
+if the company does well, sometimes companies grow  
+
+336
+00:31:12,000 --> 00:31:16,960
+really well and there's extra benefits there, 
+but even if they aren't, you still earn a lot.
+
+337
+00:31:16,960 --> 00:31:20,720
+Absolutely. Well, let's say N26, one of 
+the reasons why they have so many founders  
+
+338
+00:31:21,520 --> 00:31:27,280
+is the fact that it was a category defining, 
+like we were the first kind of mobile bank,  
+
+339
+00:31:27,280 --> 00:31:33,120
+right? So, a lot of the problems we saw in 
+early days, nobody else saw them, right? So,  
+
+340
+00:31:33,120 --> 00:31:39,360
+every product manager had to solve it for the 
+very first time in history. And that kind of  
+
+341
+00:31:39,360 --> 00:31:44,480
+is a whole different level of kind of trial by 
+fire. Same thing with [inaudible 00:31:44]. They  
+
+342
+00:31:44,480 --> 00:31:50,000
+both started about the same time. Those are the 
+companies that show up in the top rankings because  
+
+343
+00:31:50,000 --> 00:31:57,680
+you did this before anybody could do it, and you 
+learn by literally moving mountains. I think two  
+
+344
+00:31:57,680 --> 00:32:04,640
+is also the fact that you see, we have this whole 
+PayPal mafia. When you see this early success,  
+
+345
+00:32:04,640 --> 00:32:10,480
+everyone sees it together. So, when they go, 
+they have that network, as you said, built-in. 
+
+346
+00:32:10,480 --> 00:32:16,240
+These are, maybe it's a product manager who 
+starts a company, but maybe there is a business  
+
+347
+00:32:16,240 --> 00:32:19,840
+development manager who has also started 
+this company and now you can collaborate  
+
+348
+00:32:19,840 --> 00:32:26,880
+and have partnerships. So, that success, a mutual 
+success, which a lot of early startup see, that  
+
+349
+00:32:26,880 --> 00:32:33,920
+creates kind of a more denser network than you 
+working at a large company where not all of you  
+
+350
+00:32:33,920 --> 00:32:40,240
+see the success at the same time. And 3Ls 
+comes down to the founders as well. They're  
+
+351
+00:32:40,240 --> 00:32:45,840
+incredibly mission-driven founders. I always 
+find it super admiring now when I look back  
+
+352
+00:32:45,840 --> 00:32:53,760
+at Valentine and Max here at N26, or I look at 
+CZ. They have reached from a whatever metric you  
+
+353
+00:32:53,760 --> 00:33:00,240
+can define of success, whether it's the size of 
+the company, whether it's the personal network,  
+
+354
+00:33:00,240 --> 00:33:06,240
+beyond whatever anybody would think success 
+means, right? And then, to wake up every day  
+
+355
+00:33:06,240 --> 00:33:14,000
+and to do this hours and hours single day, 
+every single day, you are driven by a whole. 
+
+356
+00:33:14,000 --> 00:33:19,840
+These are the voyagers of, these are the folks 
+who would go explore new planets in the future  
+
+357
+00:33:19,840 --> 00:33:26,000
+or the folks who sailed out on the seas in 
+1600s to discover new land. That being access  
+
+358
+00:33:26,000 --> 00:33:34,720
+to these people directly is extremely, extremely 
+empowering. You not just learn from it, but you  
+
+359
+00:33:34,720 --> 00:33:41,040
+get inspired by it. If you have an X definition 
+of success, now your definition of success is 10x,  
+
+360
+00:33:42,000 --> 00:33:47,360
+you automatically push the boundaries more. So, I 
+think those two things are, or those three things,  
+
+361
+00:33:47,360 --> 00:33:54,240
+early start, category defining companies, 
+mutual success and creation of dense networks,  
+
+362
+00:33:54,240 --> 00:33:59,680
+and just being inspired by incredibly, 
+incredibly successful and talented people.
+
+363
+00:33:59,680 --> 00:34:02,640
+You pointed out this really interesting 
+insight that I forgot to mention with  
+
+364
+00:34:02,640 --> 00:34:07,280
+the list of companies that seem to hire and 
+create the strongest PMs. There's a lot of  
+
+365
+00:34:07,280 --> 00:34:11,600
+FinTech representation there, and I think you 
+touched on why that might be the case because  
+
+366
+00:34:11,600 --> 00:34:16,480
+all these problems are extremely complicated and 
+never been solved and they're solving at scale.
+
+367
+00:34:16,480 --> 00:34:20,720
+Here's the thing about FinTech, which 
+is probably the most interesting is,  
+
+368
+00:34:20,720 --> 00:34:24,880
+FinTech, you have two customers. You have your 
+usual customers and you have your regulator,  
+
+369
+00:34:24,880 --> 00:34:30,000
+and you need to keep both of them happy. 
+And usually, what makes one happy, it makes  
+
+370
+00:34:30,000 --> 00:34:35,920
+the other one less happy, right? So, you are 
+constantly dealing with trade-offs. In most PMs,  
+
+371
+00:34:35,920 --> 00:34:40,480
+in most companies you have some trade-offs, but 
+they're not existential. Whereas in FinTech,  
+
+372
+00:34:40,480 --> 00:34:44,880
+every trade-off is existential. When you found 
+a company, every trade-off is existential. You  
+
+373
+00:34:44,880 --> 00:34:48,240
+may not exist as a business if you 
+make a wrong decision. In FinTech,  
+
+374
+00:34:48,240 --> 00:34:53,760
+a lot of the PMs see that day in day out, 
+and that probably kind of conditions them to  
+
+375
+00:34:53,760 --> 00:35:00,080
+a whole different level of juggling balls 
+than you would be a PM at other company.
+
+376
+00:35:00,080 --> 00:35:04,320
+Yeah, that's such a good point. Just really good 
+stakeholder management influence dealing with  
+
+377
+00:35:05,040 --> 00:35:08,240
+all these trade-offs. I think that's a really 
+good point. I'm going to come back to the  
+
+378
+00:35:08,240 --> 00:35:11,120
+strength stuff because that's really important 
+and I've been meaning to come back to it. So,  
+
+379
+00:35:11,120 --> 00:35:15,040
+just to reflect back, the four things you 
+pointed out are really what you want to look  
+
+380
+00:35:15,040 --> 00:35:19,680
+for to accelerate your career. Companies that are 
+growing really fast, working on things that you're  
+
+381
+00:35:19,680 --> 00:35:24,640
+good at, and finding a role that leverages your 
+strengths versus things that you're not good at.  
+
+382
+00:35:24,640 --> 00:35:28,800
+Not optimizing for comp really is such a good 
+point there. Your point essentially is you'll  
+
+383
+00:35:28,800 --> 00:35:33,760
+make most of your comp later, probably 
+the 50%. The second half of your career,  
+
+384
+00:35:33,760 --> 00:35:37,200
+you probably make, I don't know, 10 times more 
+than you make the first part of your career. 
+
+385
+00:35:37,200 --> 00:35:42,720
+And so, optimize for the future cop, not 
+today's comp. And then this idea of making sure,  
+
+386
+00:35:42,720 --> 00:35:46,640
+ask yourself, do you want to be CPO? Do you 
+want to go down the C-suite route or do you  
+
+387
+00:35:46,640 --> 00:35:50,800
+want to maybe probably plan to start a company, 
+something else? And that informs the role you're  
+
+388
+00:35:50,800 --> 00:35:56,240
+in. Coming back to the strength stuff, how do 
+people figure out their strengths? Do you have  
+
+389
+00:35:56,240 --> 00:36:00,320
+any advice for someone sitting around, they're 
+like, "What am I actually good at? I don't know."
+
+390
+00:36:00,320 --> 00:36:05,760
+So, there's several ways to do it. I remember 
+I read this book, this was, I don't think it  
+
+391
+00:36:05,760 --> 00:36:10,480
+shaped my understanding of it because I was 
+already operating in that mode, but it used  
+
+392
+00:36:10,480 --> 00:36:17,120
+to be called Now Discover Your Strengths. I think 
+now it's called Strength Finder 2.0. It's still 20  
+
+393
+00:36:17,120 --> 00:36:22,560
+years old now, but there's a lot more newer ways 
+to do it. There are two things I have done and  
+
+394
+00:36:22,560 --> 00:36:26,880
+they're both kind of, I'm not sure how accessible 
+they are, but I'll give you the examples. So,  
+
+395
+00:36:26,880 --> 00:36:35,280
+at a Agoda, we used to pay a psychologist 
+$5,000 for every single PM we interview,  
+
+396
+00:36:35,280 --> 00:36:42,000
+right? So, after you finish your PM rounds, 
+we would send you to this psych assessment.  
+
+397
+00:36:42,000 --> 00:36:48,240
+It would be a six-hour psych assessment and 
+they would tell me what your strengths are,  
+
+398
+00:36:48,240 --> 00:36:53,840
+not just that it would be an IQ component.
+So, we would know what percentile you are, and not  
+
+399
+00:36:53,840 --> 00:36:59,680
+just like an IQ score like Einstein or not, but IQ 
+score across different, across pattern recognition  
+
+400
+00:36:59,680 --> 00:37:05,440
+or structured thinking, across numerical ability, 
+verbal ability, right? So, a lot of people say  
+
+401
+00:37:05,440 --> 00:37:09,760
+they hire the smartest people. At Agoda, we 
+literally hired the smartest people because  
+
+402
+00:37:09,760 --> 00:37:14,240
+we paid the psychologist a lot of money to tell 
+whether they're smart or not. But other than that,  
+
+403
+00:37:14,240 --> 00:37:19,360
+they also give you your strengths and weaknesses. 
+It used to be called, I know the company still  
+
+404
+00:37:19,360 --> 00:37:26,560
+around, it's called Q4, and it's called Q4 
+because they had this four quadrants on two axes,  
+
+405
+00:37:26,560 --> 00:37:31,520
+one is on dominance and one is on warmth, right? 
+So, you want people who are high dominance,  
+
+406
+00:37:31,520 --> 00:37:38,480
+high warmth in the 4 quadrant, and that as you can 
+realize, if you also want smart people, to find  
+
+407
+00:37:38,480 --> 00:37:43,680
+those who land in that quadrant is literally 
+looking through a needle through a haystack. 
+
+408
+00:37:43,680 --> 00:37:48,640
+But when I, I almost didn't do it. I was like, 
+this is like I've been doing products for 15  
+
+409
+00:37:48,640 --> 00:37:54,160
+years, this is insulting that I need to go do 
+a six hour... The only reason I did it at that  
+
+410
+00:37:54,160 --> 00:38:00,720
+time was my son was four and a half years 
+old and I was teaching him, because you're  
+
+411
+00:38:00,720 --> 00:38:06,240
+going to go to kindergarten, I was starting do 
+some math with him, and then in six months he  
+
+412
+00:38:06,240 --> 00:38:10,960
+knew all the math that I knew. He was solving 
+quadratic equations and stuff. And we thought,  
+
+413
+00:38:10,960 --> 00:38:14,800
+oh, we have a genius in the house. We got to 
+get him tested. So, we were testing him, and  
+
+414
+00:38:14,800 --> 00:38:18,560
+that's the only reason I took this test because 
+I thought it would be interesting to understand  
+
+415
+00:38:18,560 --> 00:38:26,080
+what this process looks like. But then when I 
+got the results, I was like, it was so spot on. 
+
+416
+00:38:26,080 --> 00:38:31,520
+It was incredibly spot on in saying areas where 
+I would do well, areas where I would struggle and  
+
+417
+00:38:31,520 --> 00:38:38,880
+need help. So, that's one way to do it. It's super 
+extreme. A little bit a year, two years ago, we  
+
+418
+00:38:38,880 --> 00:38:44,560
+had the [inaudible 00:38:40]. CZ is good friends 
+with Ray Dalio. So, we had Ray Dalio come to our  
+
+419
+00:38:44,560 --> 00:38:51,840
+executive offsite, and he walked us through how he 
+and his company does strengths assessment. So he  
+
+420
+00:38:51,840 --> 00:38:57,120
+has a, that one is lot more accessible. I think it 
+costs like $50. You can go to, I think you search  
+
+421
+00:38:57,120 --> 00:39:02,960
+for Ray Dalio's strengths, there's a website 
+that you can go and... The way it works, slightly  
+
+422
+00:39:02,960 --> 00:39:07,760
+differently for executives because you do it, so 
+those are your components, tells you how good you  
+
+423
+00:39:07,760 --> 00:39:13,200
+think you are, and then it has your leadership 
+team vote you on certain different aspects. So,  
+
+424
+00:39:13,200 --> 00:39:19,520
+there's a two layer assessment, how good you think 
+you are and how good everybody else think you are. 
+
+425
+00:39:19,520 --> 00:39:24,000
+And then, the overlap is where your true 
+strengths are. And as a CEO, I can say,  
+
+426
+00:39:24,000 --> 00:39:28,320
+"Oh, Mayur is great at design. Everybody else 
+knows that Mayur is great at design. We should  
+
+427
+00:39:28,320 --> 00:39:34,160
+give design problems to Mayur." Right? So, that's 
+another way of kind of... So, there's a scientific  
+
+428
+00:39:34,160 --> 00:39:40,480
+way of doing this and it's gotten a lot better 
+since I read that book long time ago. Again,  
+
+429
+00:39:40,480 --> 00:39:45,760
+if you're truly, truly curious, it doesn't take 
+that long and now it's a lot more accessible.  
+
+430
+00:39:45,760 --> 00:39:50,480
+That's one way to do it. And it kind of separates 
+in terms of execution, in terms of structured  
+
+431
+00:39:50,480 --> 00:39:58,160
+thinking, innovation and design, creativity, 
+stakeholder management, EQ. You get a little  
+
+432
+00:39:58,160 --> 00:40:04,480
+bit of a more scientific picture on what your 
+strengths are. But this is also a simpler way. 
+
+433
+00:40:06,400 --> 00:40:11,680
+As a PM, you do pretty much a large portion. 
+Everybody does the same few things, right?  
+
+434
+00:40:11,680 --> 00:40:17,840
+You think you're designing the roadmap, you are 
+coming up with what you think is the product  
+
+435
+00:40:17,840 --> 00:40:23,200
+strategy. There's a lot of time around just 
+managing engineers, making sure they do stuff.  
+
+436
+00:40:23,200 --> 00:40:29,440
+There's stakeholder management, marketing, 
+compliance, whatever. There's launch and just  
+
+437
+00:40:29,440 --> 00:40:37,120
+tracking data analytics. So, this part is true 
+for most PMs. Some jobs require more of one versus  
+
+438
+00:40:37,120 --> 00:40:42,480
+the other. And you just know when you do these 
+things, which ones one you're truly great at and  
+
+439
+00:40:42,480 --> 00:40:48,720
+you have a lot of fun doing, right? Maybe you just 
+don't like Jira and the ticket tracking and just  
+
+440
+00:40:48,720 --> 00:40:55,040
+following people on that, and that's the worst 
+part of your job. Stay away from more structured  
+
+441
+00:40:55,040 --> 00:41:01,680
+complex stakeholder management jobs. Or you find 
+that, hey, you do really well at that and somebody  
+
+442
+00:41:01,680 --> 00:41:06,400
+ask you, "Hey, what are the 15 things we're 
+going to do next week to improve a conversion?" 
+
+443
+00:41:06,400 --> 00:41:11,200
+That's where you kind of have a hard time, you 
+just sit down, spend hours thinking about it,  
+
+444
+00:41:11,840 --> 00:41:19,520
+then maybe that's not your strength. And so over 
+time, you kind of build this self calibration on  
+
+445
+00:41:20,080 --> 00:41:23,680
+areas that you have fun doing and 
+areas where you don't have. And then,  
+
+446
+00:41:23,680 --> 00:41:30,000
+when you look at the next job, just try and gauge, 
+are they hiring me because I did really well at  
+
+447
+00:41:30,000 --> 00:41:35,440
+some of the stuff that I didn't love doing? 
+And if that's what they're hiring you for,  
+
+448
+00:41:35,440 --> 00:41:41,760
+probably you're not going to have a lot of 
+fun or high acceleration if you go there.
+
+449
+00:41:41,760 --> 00:41:45,520
+There's so much there. There's I think 
+an important point that I'll add,  
+
+450
+00:41:45,520 --> 00:41:50,480
+and I'm curious if you agree. A lot of new people 
+or new people in their career, like, "Oh, I just  
+
+451
+00:41:50,480 --> 00:41:53,600
+want to think about strategy. I'm going to think 
+about the big picture. I don't want to just sit  
+
+452
+00:41:53,600 --> 00:41:58,800
+there and optimize the roadmap and be in Jira." 
+But it's actually, that's your job when you're  
+
+453
+00:41:58,800 --> 00:42:04,560
+just starting out. You need to earn the right 
+to contribute to the vision, to the strategy.
+
+454
+00:42:04,560 --> 00:42:08,240
+There's one of the, and as a pre-conversation 
+we talk about contrary and view,  
+
+455
+00:42:10,800 --> 00:42:16,240
+product strategy by definition seems like 
+a... This is going to be controversial.
+
+456
+00:42:16,240 --> 00:42:16,720
+Great.
+
+457
+00:42:17,520 --> 00:42:25,840
+Not really... Those two words feel very 
+at odds with each other for me. A product,  
+
+458
+00:42:25,840 --> 00:42:32,960
+you have hypotheses and if you can test it, you 
+don't need a strategy. Right? If I say, "Hey,  
+
+459
+00:42:32,960 --> 00:42:39,040
+if I build this and I know this will add this much 
+users and this time with this conversion rate,  
+
+460
+00:42:39,040 --> 00:42:44,960
+this customer acquisition cost and this LTV," 
+that's your hypothesis and you could test it  
+
+461
+00:42:44,960 --> 00:42:50,800
+in the market very quickly. And if it works, 
+you have your strategy. Keep doing more of it.  
+
+462
+00:42:50,800 --> 00:42:56,640
+Strategy is always keep doing more of it or don't 
+do it, right? That's all that is to strategy.  
+
+463
+00:42:56,640 --> 00:43:01,040
+The key part is just figuring out which 
+one goes in which bucket. And if you're  
+
+464
+00:43:01,040 --> 00:43:06,560
+really executing fast enough in a kind of 
+structured, experimentation-driven manner,  
+
+465
+00:43:06,560 --> 00:43:14,560
+your strategy becomes a largely solved 
+problem. So, for most, and that's a challenge. 
+
+466
+00:43:14,560 --> 00:43:19,680
+A lot of people think strategy is about looking 
+at Porter's [inaudible 00:43:18] forces, a lot of  
+
+467
+00:43:19,680 --> 00:43:25,280
+slides, we're looking at some data and slicing 
+it and saying, "We need to go here or there."  
+
+468
+00:43:26,160 --> 00:43:33,600
+All of it is largely in some sort of package 
+intuition. And the challenge with that is,  
+
+469
+00:43:33,600 --> 00:43:39,040
+usually you go with the loudest voice in the 
+room. And if you're a junior in your career,  
+
+470
+00:43:39,040 --> 00:43:44,560
+it's a very frustrating exercise because you 
+think you know the strategy better. But it's  
+
+471
+00:43:44,560 --> 00:43:52,400
+all it is. It's a sense of package intuition, and 
+then the guy with the loudest, biggest title or  
+
+472
+00:43:52,400 --> 00:43:56,800
+the loudest voice is going to go do it. It was 
+very early in my career, Jonathan Rosenberg,  
+
+473
+00:43:56,800 --> 00:44:01,120
+he was the head of, he was the CPO at Google.
+All the PMs reported to him. He was not called the  
+
+474
+00:44:01,120 --> 00:44:08,000
+CPO back then. And he had this one thing he would 
+say all the time that, "Come to me with data. If  
+
+475
+00:44:08,000 --> 00:44:13,840
+you come to me with ideas, we'll go with mine." 
+Right? That was the saying. You can come with  
+
+476
+00:44:13,840 --> 00:44:20,400
+any ideas, we're just going to do what I think, 
+but unless you come with strong sense of proof to  
+
+477
+00:44:20,400 --> 00:44:26,960
+override me. So again, strategy is a little bit 
+overrated for product. For market expansions,  
+
+478
+00:44:26,960 --> 00:44:34,480
+for investments, for licenses, compliance, 
+there's several areas where it makes sense  
+
+479
+00:44:34,480 --> 00:44:40,080
+and it's kind of useful. But for most product 
+managers, your strategy should be, how fast can  
+
+480
+00:44:40,080 --> 00:44:47,840
+I go from hypothesis to data, right? The faster 
+you can go there, the easier your strategy gets.
+
+481
+00:44:47,840 --> 00:44:50,080
+That is certainly a hot take. So the idea here,  
+
+482
+00:44:50,080 --> 00:44:55,120
+I'm curious how you operationalize this 
+with folks at N26. Is it just like,  
+
+483
+00:44:55,120 --> 00:45:00,240
+"I don't need to see a whole strategy for the 
+year. Just give me, here's the plan, here's  
+
+484
+00:45:00,240 --> 00:45:05,440
+what we're going to test, here's our hypothesis?" 
+Are you actually, what do you tell your PM team?
+
+485
+00:45:05,440 --> 00:45:12,080
+We use this tool. I'm going to give a shout-out 
+to Statsig because they're awesome. Vijay used  
+
+486
+00:45:12,080 --> 00:45:18,800
+to run the experimentation at Facebook and 
+has this tool. There's several of those.  
+
+487
+00:45:19,680 --> 00:45:25,440
+But if you're running proper experiments, 
+I just look at the Statsig dashboards,  
+
+488
+00:45:25,440 --> 00:45:31,120
+right? And I'm looking at experiments, I'm looking 
+at what metrics they're moving, I'm looking at the  
+
+489
+00:45:31,120 --> 00:45:36,640
+P-value, I'm looking at how quickly can they get 
+to statistical significance. And I'm like, "Oh,  
+
+490
+00:45:36,640 --> 00:45:42,080
+this is working. Let's do more of these." Right? 
+So, now there's some areas where you can't do it,  
+
+491
+00:45:42,080 --> 00:45:48,800
+like in compliance, in legal aspects, 
+in Europe, especially pricing. In US,  
+
+492
+00:45:48,800 --> 00:45:54,480
+you can run pricing tests. In Europe, it's 
+a little bit different. So, those areas,  
+
+493
+00:45:54,480 --> 00:45:59,840
+you would need to have a lot more kind of deeper 
+thinking, understanding of your cohorts. You're  
+
+494
+00:45:59,840 --> 00:46:04,880
+coming up with more structured reason for why you 
+should do it, but you can't really test and know  
+
+495
+00:46:04,880 --> 00:46:10,240
+within a couple of days or a couple of weeks 
+at max whether this was a good idea or not. 
+
+496
+00:46:10,240 --> 00:46:16,800
+Those, if there are either irreversible decisions 
+or they're just extremely time-consuming to  
+
+497
+00:46:16,800 --> 00:46:23,840
+find out, then do some pre-work. We look at 
+largely, find a lot of companies that really  
+
+498
+00:46:23,840 --> 00:46:28,480
+look at data without looking at cohorts 
+that make completely bad decisions, right,  
+
+499
+00:46:28,480 --> 00:46:36,320
+because if you look at your dashboard as a mixture 
+of users over 10 years, 20 years, even six months,  
+
+500
+00:46:36,320 --> 00:46:41,600
+and they all behave differently. If you look 
+at a cohort level development of certain users,  
+
+501
+00:46:41,600 --> 00:46:47,120
+you generally end up making better decisions. But 
+even over there, it's still lot more, there's a  
+
+502
+00:46:47,120 --> 00:46:52,000
+lot of noise between the moment you start tracking 
+it than moment you start making decisions based  
+
+503
+00:46:52,000 --> 00:46:58,160
+on it. The world has changed in that meantime. By 
+now, this was kind of a very foreign concept when  
+
+504
+00:46:58,160 --> 00:47:03,360
+I brought this in. I'm like, oh, the conversions 
+down now, even though the product's done really  
+
+505
+00:47:03,360 --> 00:47:08,400
+well because Bitcoin has crashed, right?
+Nobody wants to go sign up for an Exchange  
+
+506
+00:47:08,400 --> 00:47:13,440
+account. So, if you just measure pre and post, you 
+would think that you have done something wrong in  
+
+507
+00:47:13,440 --> 00:47:18,080
+the product. If you measure it as an experiment, 
+you would know that, yeah, between the variant  
+
+508
+00:47:18,080 --> 00:47:24,080
+and control, it's still doing great, even though 
+overall conversion is down. So largely, the more  
+
+509
+00:47:24,080 --> 00:47:30,880
+you kind of, one of the first thing kind of doing 
+when I take on a role, the company already doesn't  
+
+510
+00:47:30,880 --> 00:47:36,160
+have an experimentation culture. That's largely 
+why they hire me in the first place, right? 
+
+511
+00:47:36,160 --> 00:47:41,760
+So, for now, the first thing is to say, how can we 
+bring it in? First, the kind of right culture, the  
+
+512
+00:47:41,760 --> 00:47:47,760
+right incentives and the right tools. And then, 
+once it's set up, it gets a lot of fun. Get a lot  
+
+513
+00:47:47,760 --> 00:47:56,560
+of fun for the PMs because you have democratized 
+performance for the product managers. And the  
+
+514
+00:47:56,560 --> 00:48:03,440
+second thing, which I tell my PMs now, which is 
+truly kind of empowering if you think about it,  
+
+515
+00:48:03,440 --> 00:48:08,240
+the challenge with being a product manager is 
+everybody thinks they can do their job, right? You  
+
+516
+00:48:08,240 --> 00:48:14,960
+go to... The CFO might have an idea, the head of 
+kind of accounting has an idea. Anybody who uses  
+
+517
+00:48:14,960 --> 00:48:19,440
+the product thinks they have ideas, right?
+So, at some point in time, you're like,  
+
+518
+00:48:19,440 --> 00:48:25,680
+what is my discipline? What is my science? 
+Nobody goes to the accounting guy and says,  
+
+519
+00:48:25,680 --> 00:48:29,520
+"Hey, I have a great idea for how to cook 
+our books." Nobody does that because there's  
+
+520
+00:48:29,520 --> 00:48:34,480
+a science behind it. There's a science for 
+financial forecasting. Even in technology,  
+
+521
+00:48:34,480 --> 00:48:38,640
+a lot of the times people just don't go and 
+say, "Hey, just dump this thing and let's use  
+
+522
+00:48:38,640 --> 00:48:43,280
+this code that the AI code generator has used." 
+Right? There's a little bit of science there. 
+
+523
+00:48:43,280 --> 00:48:48,160
+Whereas in product, you largely find that it's 
+a combination of data and ideas and stuff, and  
+
+524
+00:48:48,160 --> 00:48:53,600
+anybody thinks they can... The moment you build 
+experimentation, you'll now make it scientific,  
+
+525
+00:48:53,600 --> 00:48:57,680
+right? Now, somebody comes up with an idea, say, 
+that's a bad idea. Here, this is why it's a bad  
+
+526
+00:48:57,680 --> 00:49:03,440
+idea, because we have done this experiment six 
+times and it has failed across this user groups  
+
+527
+00:49:03,440 --> 00:49:12,960
+at this exact level of impact created. So, it kind 
+of gives the PMs the kind of, hey, I'm not just  
+
+528
+00:49:12,960 --> 00:49:19,600
+a general purpose technician, I'm a specialist 
+now. And it's extremely empowering once we can,  
+
+529
+00:49:19,600 --> 00:49:25,120
+it takes a long time to move the team in that 
+direction. But once you get it there, the PMs  
+
+530
+00:49:25,120 --> 00:49:32,960
+just, it's a natural kind of dopamine hit every 
+time you run an experiment and see more metrics.
+
+531
+00:49:32,960 --> 00:49:36,640
+I'm a huge fan of experimentation. 
+I think most guests on this podcast  
+
+532
+00:49:37,200 --> 00:49:41,840
+are on your side of the debate. I feel like we 
+could do a whole podcast episode on just how  
+
+533
+00:49:41,840 --> 00:49:46,720
+to create a culture of experimentation, 
+how to change culture. This episode is  
+
+534
+00:49:46,720 --> 00:49:50,800
+brought to you by Vanta, and I am very 
+excited to have Christina Cacioppo,  
+
+535
+00:49:50,800 --> 00:49:54,880
+CEO and co founder of Vanta joining 
+me for this very short conversation.
+
+536
+00:49:54,880 --> 00:49:57,680
+Great to be here. Big fan of 
+the podcast and the newsletter.
+
+537
+00:49:57,680 --> 00:50:00,720
+Vanta is a longtime sponsor of the show,  
+
+538
+00:50:00,720 --> 00:50:03,923
+but for some of our newer listeners, 
+what does Vanta do and who is-
+
+539
+00:50:03,923 --> 00:50:04,960
+... show, but for some of our newer listeners, 
+what does Vanta do and who is it for?
+
+540
+00:50:04,960 --> 00:50:08,880
+Sure. So we started Vanta in 
+2018, focused on founders,  
+
+541
+00:50:08,880 --> 00:50:12,960
+helping them start to build out their 
+security programs and get credit for  
+
+542
+00:50:12,960 --> 00:50:19,280
+all of that hard security work with compliance 
+certifications like SOC 2 or ISO 27001. Today,  
+
+543
+00:50:19,280 --> 00:50:24,160
+we currently help over 9,000 companies, including 
+some startup household names like Atlassian,  
+
+544
+00:50:24,160 --> 00:50:30,160
+Ramp, and LangChain start and scale their 
+security programs and ultimately build trust  
+
+545
+00:50:30,160 --> 00:50:35,520
+by automating compliance, centralizing 
+GRC, and accelerating security reviews.
+
+546
+00:50:35,520 --> 00:50:39,520
+That is awesome. I know from experience 
+that these things take a lot of time and  
+
+547
+00:50:39,520 --> 00:50:43,040
+a lot of resources and nobody 
+wants to spend time doing this.
+
+548
+00:50:43,040 --> 00:50:47,200
+That is very much our experience, but before 
+the company. And to some extent during it,  
+
+549
+00:50:47,200 --> 00:50:52,800
+but the idea is with automation with AI, with 
+software, we are helping customers build trust  
+
+550
+00:50:52,800 --> 00:50:56,720
+with prospects and customers in 
+an efficient way. And our joke,  
+
+551
+00:50:56,720 --> 00:50:59,280
+we started this compliance 
+company, so you don't have to.
+
+552
+00:50:59,280 --> 00:51:02,800
+We appreciate you for doing that and you 
+have a special discount for listeners,  
+
+553
+00:51:02,800 --> 00:51:07,280
+they can get a thousand dollars 
+off Vanta at vanta.com/lenny.  
+
+554
+00:51:07,280 --> 00:51:13,760
+That's V-A-N-T-A .com/lenny for $1,000 
+off Vanta. Thanks for that, Christina.
+
+555
+00:51:13,760 --> 00:51:14,640
+Thank you.
+
+556
+00:51:15,360 --> 00:51:20,960
+I want to come back to the question of what 
+N26 has done well to create and hire great  
+
+557
+00:51:20,960 --> 00:51:26,560
+PMs. So you've spent a bunch of time 
+on here's career advice that I often  
+
+558
+00:51:26,560 --> 00:51:31,760
+give and what has helps people most in their 
+career. Just to kind of close this thread,  
+
+559
+00:51:31,760 --> 00:51:36,560
+is there anything N26 did or is doing 
+that either from the hiring perspective  
+
+560
+00:51:36,560 --> 00:51:40,640
+or from training? I know you haven't been there 
+from the beginning, just like as a business,  
+
+561
+00:51:40,640 --> 00:51:44,400
+as a company that they've done really well 
+that other companies may want to copy.
+
+562
+00:51:44,400 --> 00:51:52,720
+Some of it is just the hiring philosophy. One of 
+the advantages you get for being a big fish in a  
+
+563
+00:51:52,720 --> 00:51:59,520
+small pond is you get to have your pick of the 
+cream of the crop. So in Europe here where we  
+
+564
+00:51:59,520 --> 00:52:05,680
+don't have the same level of unicorn or decacorn 
+density you have in the Bay Area being one of  
+
+565
+00:52:05,680 --> 00:52:10,320
+the first ones or the few ones, you do get a 
+little bit of that branding working in your  
+
+566
+00:52:10,320 --> 00:52:16,720
+favor. So some portion of that is just the input. 
+If you're taking really smart people, very chance  
+
+567
+00:52:16,720 --> 00:52:26,560
+at N26 they will stay smart. Two is again, the 
+level of problems that they work on are harder.  
+
+568
+00:52:27,200 --> 00:52:31,840
+Just the print tech angle we mentioned and now 
+with this whole experimentation driven kind  
+
+569
+00:52:31,840 --> 00:52:39,120
+of change that we made in the last year or so, 
+there's also a new kind of tool kit that they get,  
+
+570
+00:52:39,120 --> 00:52:44,000
+especially if they're going for larger big 
+growth company as the next step of the career. 
+
+571
+00:52:48,000 --> 00:52:52,320
+All the people companies I talk to, the amount 
+of companies that are truly world-class at  
+
+572
+00:52:52,320 --> 00:52:58,000
+experimentation is so low that if you work in one 
+of these companies and you build this tool set,  
+
+573
+00:52:58,000 --> 00:53:02,160
+you can build a whole career on this. You can 
+go to any other company and say, "This is what  
+
+574
+00:53:02,160 --> 00:53:08,560
+I'm going to bring to the table." Because there's 
+no growth without, as I said, without compounding  
+
+575
+00:53:08,560 --> 00:53:14,000
+wins faster. Nothing compounds wins faster than 
+experiments and there's no company out in the  
+
+576
+00:53:14,000 --> 00:53:19,920
+world that says we don't want to grow. So that 
+is an incredible kind of brand that you can build  
+
+577
+00:53:20,560 --> 00:53:28,320
+alongside with it. Then the third piece is just 
+the scale. One of the other interesting aspects of  
+
+578
+00:53:28,320 --> 00:53:33,440
+banking is what I call a hundred percent product. 
+It's actually more than a hundred percent, they're  
+
+579
+00:53:33,440 --> 00:53:37,840
+more bank accounts than human beings because a 
+lot of people have more than one bank account. 
+
+580
+00:53:37,840 --> 00:53:45,600
+So you never run out of target addressable 
+market. It's as big as it can get, which  
+
+581
+00:53:45,600 --> 00:53:51,200
+means that there's no upper bound on how much... 
+Because at some point if you're, I don't know,  
+
+582
+00:53:51,200 --> 00:53:58,080
+building in kind of an AI code generator, your 
+market is capped that maybe developers or people  
+
+583
+00:53:58,080 --> 00:54:04,560
+want to be developers. Or you're building, I don't 
+know, AWS, it's a massive market, but it's still  
+
+584
+00:54:04,560 --> 00:54:10,720
+like all the company that need online hosting. 
+They look at banking everybody needs and the fact  
+
+585
+00:54:10,720 --> 00:54:16,640
+that it's oldest or the second oldest, depending 
+on how risky you are or not... Or profession  
+
+586
+00:54:16,640 --> 00:54:25,040
+known to man. It is a self-hedged product. When 
+things get tough on one side of our business,  
+
+587
+00:54:25,040 --> 00:54:31,120
+the interest rates, let's say, go high, spending 
+goes down, but we make money on deposits. When  
+
+588
+00:54:31,120 --> 00:54:35,280
+interest rates go down, spending increases, 
+so we make more your money on interchange,  
+
+589
+00:54:35,280 --> 00:54:40,400
+[inaudible 00:54:36] investments. So it's a very 
+self-hedged business that lets you go through the  
+
+590
+00:54:40,400 --> 00:54:48,080
+troughs and the peaks better than most companies.
+And that understanding that how do you build  
+
+591
+00:54:48,080 --> 00:54:54,720
+naturally hedged products is probably another 
+kind of reason why... It just influences how  
+
+592
+00:54:54,720 --> 00:55:00,720
+you make decisions and how do you kind of scale 
+your core product portfolio. Just one example,  
+
+593
+00:55:01,840 --> 00:55:09,280
+for about a year and a half ago, we were largely 
+year bank with a card and we were the first mobile  
+
+594
+00:55:09,280 --> 00:55:14,160
+bank and that was a big enough market. But in the 
+last year or so, we have just fleshed out that  
+
+595
+00:55:14,160 --> 00:55:20,240
+product portfolio. We have a big lending portfolio 
+now. We launched savings last year. We invested  
+
+596
+00:55:20,240 --> 00:55:26,160
+heavily in savings because the interest rates 
+were high, was a super amazing tool to attract  
+
+597
+00:55:26,160 --> 00:55:30,560
+new users by offering high interest rates.
+But as the interest rates are going down now,  
+
+598
+00:55:30,560 --> 00:55:35,200
+which is investing heavily in lending because 
+now you can get loans for lower prices,  
+
+599
+00:55:35,200 --> 00:55:43,280
+which was super hard to get last year. So being 
+able to build products that complement the macro  
+
+600
+00:55:43,280 --> 00:55:49,120
+also gives you that kind of additional 
+balancing act that you don't get in  
+
+601
+00:55:49,120 --> 00:55:53,840
+typical single focus companies. So I think 
+it's a combination of few of those things,  
+
+602
+00:55:53,840 --> 00:55:59,120
+being able to get great talent, being able 
+to train them now more so especially around  
+
+603
+00:55:59,120 --> 00:56:06,000
+experimentation and just see how we can build 
+a product portfolio that complements each other  
+
+604
+00:56:06,000 --> 00:56:13,040
+but also naturally hedges against each other, just 
+gives you a better, well-balanced way to operate.
+
+605
+00:56:13,040 --> 00:56:16,160
+I think this explains something really 
+interesting. As you were talking,  
+
+606
+00:56:16,160 --> 00:56:22,080
+I realized that a lot of these companies 
+that produce the best PMs are to your point,  
+
+607
+00:56:22,080 --> 00:56:28,080
+non-US based, but incredibly successful in their 
+location. And so it draws in the most talented  
+
+608
+00:56:28,080 --> 00:56:33,040
+people in that region. So I know Intercom I think 
+technically is... So Intercom was number one on  
+
+609
+00:56:33,040 --> 00:56:38,160
+this list of companies that produce the best PMs. 
+Intercom, Palantir, Revolut, and then N26, Chime,  
+
+610
+00:56:38,160 --> 00:56:43,680
+Stripe, Dropbox were kind of at the top. And 
+four of those essentially, or three of those  
+
+611
+00:56:43,680 --> 00:56:48,720
+are non... Intercom I think was Ireland for a lot 
+of their team is based in Ireland. Then Revolut is  
+
+612
+00:56:48,720 --> 00:56:54,640
+the UK and then you guys. So it's interesting, 
+that explains some really interesting insights  
+
+613
+00:56:54,640 --> 00:56:59,360
+of just be the best, be the big fish in a 
+small pond, draw in the best talent and then  
+
+614
+00:56:59,360 --> 00:57:03,680
+work on really hard problems and be really 
+successful. There you go. There's a formula.
+
+615
+00:57:03,680 --> 00:57:07,920
+Yes, yes. It's very simple 
+when you put it that way.
+
+616
+00:57:07,920 --> 00:57:12,880
+Oh, man. Okay. You interestingly have 
+worked in a lot of different places. I  
+
+617
+00:57:12,880 --> 00:57:15,840
+want to spend a little time here. So you've 
+worked in Europe, you've worked in Asia,  
+
+618
+00:57:15,840 --> 00:57:21,040
+you worked in the US obviously. For someone 
+that is maybe thinking about moving out of  
+
+619
+00:57:21,040 --> 00:57:26,400
+the US or maybe moving to the US, what 
+have you found are the big trade-offs?
+
+620
+00:57:26,400 --> 00:57:33,680
+Yeah, so I would say early career you want to 
+be in intensely talents dense areas for all the  
+
+621
+00:57:33,680 --> 00:57:39,280
+reasons that we mentioned before. Finding the high 
+growth companies, finding the networks that will  
+
+622
+00:57:39,280 --> 00:57:47,280
+make you successful. For general tech, there's no 
+better place than West coast of the US. Everybody  
+
+623
+00:57:47,280 --> 00:57:52,080
+doesn't have the option, especially now with 
+the immigration policies and so forth. I mean  
+
+624
+00:57:52,080 --> 00:57:56,960
+things were always hard. They seem extremely 
+harder now. So you may not have that option,  
+
+625
+00:57:56,960 --> 00:58:03,200
+but if you do have that option, I would encourage 
+everyone, there's no better place than West Coast  
+
+626
+00:58:03,200 --> 00:58:10,160
+to start your career. There's some exceptions, 
+like for crypto, I would say Dubai is very strong,  
+
+627
+00:58:10,160 --> 00:58:17,360
+very great, has a really high density there. But 
+again, it's a very industry specific. Bangalore,  
+
+628
+00:58:17,360 --> 00:58:25,840
+if you're Indian, has managed to recreate some 
+of the magic of Silicon Valley, not at the same  
+
+629
+00:58:25,840 --> 00:58:33,440
+scale, but getting better. If you're in finance, 
+maybe there is London, Singapore, and Asia has  
+
+630
+00:58:33,440 --> 00:58:40,560
+now at least not as much new innovation, but 
+each of the big companies has a presence there. 
+
+631
+00:58:40,560 --> 00:58:46,720
+So at least secondary talent densities 
+there, those would be our options if US  
+
+632
+00:58:46,720 --> 00:58:52,640
+is not available early in your career. And in 
+some ways it helps define you, right? If you  
+
+633
+00:58:52,640 --> 00:58:59,360
+work at Microsoft or Google or OpenAI or some 
+of these companies that become brands later,  
+
+634
+00:58:59,360 --> 00:59:05,920
+it's something you can take with you when going... 
+The second part of your question is if you decide  
+
+635
+00:59:05,920 --> 00:59:14,640
+to move, having that experience and that brand 
+and that kind of achievements there can help  
+
+636
+00:59:14,640 --> 00:59:22,080
+you find great opportunities elsewhere. I mean, 
+I've been a little bit privileged that some of  
+
+637
+00:59:22,080 --> 00:59:31,040
+these opportunities I found me like N26 here in 
+Europe or Binance before in Asia where I wasn't  
+
+638
+00:59:31,040 --> 00:59:37,200
+really in that super talent dense area in the 
+first place. But luck's not a great strategy.  
+
+639
+00:59:37,200 --> 00:59:44,960
+So if you're planning for it, I would say build 
+your early career in the US. Honestly, when we  
+
+640
+00:59:44,960 --> 00:59:51,760
+moved to Thailand 2018, at that point, I didn't 
+think I was making a great professional decision. 
+
+641
+00:59:51,760 --> 00:59:58,720
+We were just struggling in the US with both me 
+and my wife working. Both our kids in Seattle were  
+
+642
+00:59:58,720 --> 01:00:05,440
+tiny. My daughter had asthma at that time and she 
+was just constantly sick. And it was a struggle  
+
+643
+01:00:05,440 --> 01:00:11,840
+for us to kind of manage both work and life. And 
+when I talked to Agoda, I had never heard of the  
+
+644
+01:00:11,840 --> 01:00:20,240
+company and the only reason I ended up taking 
+the job was like, hey, Bangkok's a hot place. My  
+
+645
+01:00:20,240 --> 01:00:26,240
+daughter might not have asthma there and we might 
+have some help in the house. So we could probably  
+
+646
+01:00:26,240 --> 01:00:32,880
+balance some of the things that are really not 
+adding value to our life right now. And that was  
+
+647
+01:00:32,880 --> 01:00:39,520
+the hypothesis there that I can do a lot more on 
+work because I was literally not able to focus as  
+
+648
+01:00:39,520 --> 01:00:44,280
+much on it, everything else that was happening. 
+And as I said, everything on an experimentation  
+
+649
+01:00:44,280 --> 01:00:51,280
+that we just hit a home run on all the hypothesis. 
+My daughter, the heat cured her asthma. 
+
+650
+01:00:51,920 --> 01:00:57,600
+Just having a support structure allowed us 
+just as a family to spend a lot more time  
+
+651
+01:00:57,600 --> 01:01:02,800
+with each other and allowed me a lot more time 
+to work and be on my career when I'm not doing  
+
+652
+01:01:02,800 --> 01:01:08,080
+dishes and not doing laundry and not throwing out 
+the trash and not mowing the lawn. There's just  
+
+653
+01:01:08,080 --> 01:01:13,600
+so much hours that show up in the day that you 
+could be doing things that you're great at and  
+
+654
+01:01:15,920 --> 01:01:25,040
+add to your career. And then Agoda just turned out 
+to be almost like a bootcamp for understanding how  
+
+655
+01:01:25,040 --> 01:01:29,680
+an experimentation based product culture might 
+work. Because before that I worked at Google,  
+
+656
+01:01:29,680 --> 01:01:36,080
+I worked at startups. My [inaudible 01:01:31] 
+claim to fame was building big stuff and Agoda  
+
+657
+01:01:36,080 --> 01:01:41,040
+just taught me a lot of the growth comes with 
+incredibly small things done faster. So it's  
+
+658
+01:01:41,040 --> 01:01:47,280
+part of Booking Holdings. So if you heard of 
+Booking.com, it's a $170 billion company. And  
+
+659
+01:01:47,280 --> 01:01:54,320
+what's interesting is that 10 years ago it was a 
+$10 billion company which sold flights, hotels,  
+
+660
+01:01:54,320 --> 01:02:01,360
+and cars. 10 years later it still sells flights, 
+hotels, and cars, it's a $ 170 billion company.
+
+661
+01:02:01,360 --> 01:02:02,000
+Oh, wow.
+
+662
+01:02:02,000 --> 01:02:07,360
+It's an incredible growth story. And 
+that tells you you really don't need  
+
+663
+01:02:07,360 --> 01:02:11,200
+from a strategy perspective to do 
+something completely different if  
+
+664
+01:02:11,200 --> 01:02:15,520
+you can truly compound your growth by 
+optimizing every single thing really,  
+
+665
+01:02:15,520 --> 01:02:22,960
+really well. So there are the pros that 
+come with, as I said, when you move,  
+
+666
+01:02:23,840 --> 01:02:28,560
+most of the time you're building products that 
+are global, especially if you're based in the US.  
+
+667
+01:02:29,200 --> 01:02:33,840
+Very few times you're building product that 
+just work in the US. Now, that's not true for  
+
+668
+01:02:33,840 --> 01:02:38,000
+a lot of the countries. Like in India, a lot of 
+products are only designed for Indian market,  
+
+669
+01:02:38,000 --> 01:02:42,480
+a lot of products in China only designed for 
+Chinese market, but from the US you're designing  
+
+670
+01:02:42,480 --> 01:02:47,920
+product for the world and a lot of the times 
+you don't experience the same constraints or you  
+
+671
+01:02:47,920 --> 01:02:57,040
+don't empathize with the user at the same level 
+because you just haven't lived that user's life. 
+
+672
+01:02:57,600 --> 01:03:04,560
+So in terms of just being able to calibrate 
+yourself on what a global product might look like,  
+
+673
+01:03:04,560 --> 01:03:09,840
+being able to live in different places and 
+understanding some of these constraints first  
+
+674
+01:03:09,840 --> 01:03:15,920
+hand, definitely a pro. As I said, especially if 
+you have built that early reputation, you get to  
+
+675
+01:03:15,920 --> 01:03:24,240
+work at some of the best companies when you go 
+abroad. And so there's a hit to compensation,  
+
+676
+01:03:24,240 --> 01:03:30,320
+at least initially for sure. Nobody pays anywhere 
+close, especially here in Europe. But as I said  
+
+677
+01:03:30,320 --> 01:03:36,720
+before, don't optimize for compensation early in 
+your career or even middle part of your career.  
+
+678
+01:03:36,720 --> 01:03:44,160
+So if you follow that advice, it'll not matter 
+because you will have kind of something unique  
+
+679
+01:03:44,160 --> 01:03:49,200
+to offer. Even if you come back to the US 
+later having worked in different... Having  
+
+680
+01:03:49,200 --> 01:03:55,120
+understanding, especially if you're in FinTech 
+where the actual laws are different in different  
+
+681
+01:03:55,120 --> 01:04:01,760
+countries and that one you truly do not appreciate 
+working in the US. Even at Google and stuff, when  
+
+682
+01:04:01,760 --> 01:04:05,680
+we would launch products, I would be like, oh, 
+the lawyers, they're just making life difficult. 
+
+683
+01:04:07,120 --> 01:04:15,840
+But the many of now have a true appreciation of 
+how different the world truly is. It just makes  
+
+684
+01:04:15,840 --> 01:04:19,760
+you a better stakeholder when you talk to the 
+legal team, when you talk to compliance team,  
+
+685
+01:04:19,760 --> 01:04:25,760
+when you talk to marketing. So I think those are 
+all the pros. The compensation could be the con.  
+
+686
+01:04:25,760 --> 01:04:30,800
+The other big con is that today, if you're in 
+Silicon Valley, I spent 15 years in Seattle,  
+
+687
+01:04:30,800 --> 01:04:37,040
+I worked at four companies, I could change 
+jobs and stay in Seattle because there's enough  
+
+688
+01:04:37,040 --> 01:04:42,000
+companies there. You're not going to run a ceiling 
+at some point, in Bay Area, there's no ceiling,  
+
+689
+01:04:42,000 --> 01:04:48,640
+right? You can keep growing. The challenge now is 
+that if I'm in Bangkok and I'm working at Agoda,  
+
+690
+01:04:48,640 --> 01:04:54,160
+at some point I need to find a new job or 
+because let's say I'm at the CPO level,  
+
+691
+01:04:54,160 --> 01:05:00,240
+I want to be CEO now. Agoda already has a CEO, 
+so I need to find, be a CEO somewhere else. Guess  
+
+692
+01:05:00,240 --> 01:05:05,040
+what? That company is not going to be in Bangkok. 
+Now I have to move and move my whole family  
+
+693
+01:05:05,040 --> 01:05:09,920
+to Singapore, which I did. Then you hit somewhere 
+over there or then you hit another ceiling,  
+
+694
+01:05:09,920 --> 01:05:14,240
+now you need to move back or go somewhere else 
+with Thailand, which I did. And then you're like,  
+
+695
+01:05:14,240 --> 01:05:18,400
+oh, maybe there's a great opportunity in Europe 
+which would give you a whole different scale. Then  
+
+696
+01:05:18,400 --> 01:05:25,520
+you need to move to Spain, which I did. So at some 
+point your family's like, what's happening? It  
+
+697
+01:05:25,520 --> 01:05:33,200
+turned out to be what turned out to be one step to 
+go from A to B is now just a every year journey. 
+
+698
+01:05:34,640 --> 01:05:40,400
+So that's something to calibrate, especially 
+later in your career that it's extremely hard  
+
+699
+01:05:40,400 --> 01:05:45,840
+if you like the job and don't like the location or 
+vice versa, 'cause they usually come as a package  
+
+700
+01:05:45,840 --> 01:05:51,600
+deal now. We see this in Bangkok now where 
+there's not that many great tech companies,  
+
+701
+01:05:52,240 --> 01:05:59,040
+and if you're at Agoda and you're doing 
+really well, but it's just one company,  
+
+702
+01:05:59,040 --> 01:06:04,400
+you just don't have options. And especially 
+if you love Bangkok, which is a great city,  
+
+703
+01:06:04,400 --> 01:06:10,960
+probably my vote for the best place to live in 
+the world, that's a struggle. You love the city,  
+
+704
+01:06:10,960 --> 01:06:16,240
+but if you need to move your career 
+ahead, you need to go somewhere else.
+
+705
+01:06:16,240 --> 01:06:20,560
+So interesting. I feel like Thailand is 
+very popular right now with White Lotus.I  
+
+706
+01:06:22,800 --> 01:06:27,440
+think White Lotus had the most views of any 
+show or some crazy... It was very popular.  
+
+707
+01:06:27,440 --> 01:06:31,360
+I feel like there's a lot of tourism 
+coming to Thailand more than they've had.
+
+708
+01:06:31,360 --> 01:06:32,320
+Yes, yes.
+
+709
+01:06:32,320 --> 01:06:38,080
+Yeah. I want to come back to one piece of 
+advice that we were chatting about before we  
+
+710
+01:06:38,080 --> 01:06:41,840
+started recording that I think might be helpful to 
+people, which is, and this is kind in a different  
+
+711
+01:06:41,840 --> 01:06:47,440
+direction, but I want to make sure we touch on 
+it, is Shreyas Doshi's point about leverage. I  
+
+712
+01:06:47,440 --> 01:06:50,800
+know this is something that you think a lot about. 
+He has this really good advice and we'll point to  
+
+713
+01:06:50,800 --> 01:06:56,320
+the episode if people want to dig deeper around 
+finding the highest leverage opportunities for  
+
+714
+01:06:56,320 --> 01:07:00,880
+you to work on as a PM. Can you just share that 
+advice for folks that haven't heard this before?
+
+715
+01:07:00,880 --> 01:07:06,400
+This is true for no matter what level of 
+career you are in, but you have a finite  
+
+716
+01:07:06,400 --> 01:07:12,800
+amount of time and largely you have more problems 
+than you have time to solve them. The question is  
+
+717
+01:07:12,800 --> 01:07:19,920
+which ones you work on. And this becomes even 
+harder, let's say you're a CPO now because all  
+
+718
+01:07:19,920 --> 01:07:24,800
+of them are important, otherwise they will not 
+come to you in the first place. The question is,  
+
+719
+01:07:25,360 --> 01:07:31,520
+which one do you work on? And the principle is 
+simple. You work on problems that have a 10X  
+
+720
+01:07:31,520 --> 01:07:36,880
+positive or a negative impact. I mean the number 
+can be 10, 5, 300, depending on finance it would  
+
+721
+01:07:36,880 --> 01:07:43,360
+be a hundred, some companies might be three. And 
+in most FinTech companies one of two problems,  
+
+722
+01:07:43,360 --> 01:07:48,000
+it's a growth problem or a compliance problem 
+because both of them can have a negative or  
+
+723
+01:07:48,000 --> 01:07:55,680
+positive 10X impact and that's what you focus 
+on. That's what you spend bulk of your time.  
+
+724
+01:07:55,680 --> 01:08:00,880
+What was interesting for me, my first executive 
+roles, that was Google, I was a product manager. 
+
+725
+01:08:00,880 --> 01:08:08,960
+I joined what was White Pages back then as a VP 
+of product. I was my first kind of... And White  
+
+726
+01:08:08,960 --> 01:08:15,680
+Pages, Alex Allgood, Seattle, founding legend, 
+three companies, all unicorns now. Incredible,  
+
+727
+01:08:15,680 --> 01:08:20,080
+very good personal friend and mentor. What was 
+truly interesting when I joined it, they're like,  
+
+728
+01:08:20,080 --> 01:08:24,480
+"Okay, this is your desk, this is the product 
+area. So we had two offices, this is when  
+
+729
+01:08:24,480 --> 01:08:30,560
+everybody worked in office five days a week." And 
+I'm like, "Okay, where does Alex sit?" And he's  
+
+730
+01:08:30,560 --> 01:08:36,240
+like, "Oh, he's sitting with accounting." And I'm 
+like, I didn't think about it because I thought  
+
+731
+01:08:36,240 --> 01:08:42,080
+his office is near accounting. Then I find out 
+he doesn't have office, he has a floating desk.  
+
+732
+01:08:42,800 --> 01:08:50,640
+So all the other desks were fixed, but he had a 
+movable desk and he would move his desk to one of  
+
+733
+01:08:50,640 --> 01:08:56,800
+the departments, which I think had the highest 
+leverage opportunity. And he would sit there  
+
+734
+01:08:56,800 --> 01:09:02,240
+at that desk when that department till that 
+either problem was solved or the opportunity  
+
+735
+01:09:02,240 --> 01:09:08,400
+was realized, and then he would literally move his 
+desk and then go to product or tech or finance. 
+
+736
+01:09:08,400 --> 01:09:14,640
+And that was his way of... You could literally 
+visualize him working on the highest leverage  
+
+737
+01:09:14,640 --> 01:09:22,960
+problem by his desk moving. And then that combines 
+that with what we talked before about details and  
+
+738
+01:09:22,960 --> 01:09:26,880
+a little bit, I think I didn't mention it 
+about the humility that you need to have to  
+
+739
+01:09:26,880 --> 01:09:30,880
+be working in the detail. A lot of the times, 
+especially later in your career, you're like,  
+
+740
+01:09:30,880 --> 01:09:36,960
+hey, this is beyond me. This is below me. 
+Why do I need to do that? I have so many  
+
+741
+01:09:36,960 --> 01:09:45,360
+PMs or data analysts or somebody should do it. 
+Why would I do it? And that was kind of again,  
+
+742
+01:09:45,360 --> 01:09:51,120
+just a quick story there. I remember we were 
+trying to figure out our growth channels and  
+
+743
+01:09:51,120 --> 01:09:58,000
+we found out that, hey, we are kind of really 
+tapping out on paid, on social, on referrals,  
+
+744
+01:09:58,800 --> 01:10:04,400
+but SEO was something we just hadn't worked on 
+for a while. We're building a caller ID app and  
+
+745
+01:10:04,400 --> 01:10:08,400
+what we wanted to do was when somebody types a 
+phone number in Google, we want to be the first  
+
+746
+01:10:08,400 --> 01:10:14,080
+link to say, hey, is this a spam call or not?
+Or whose number it is. And if we could then we  
+
+747
+01:10:14,080 --> 01:10:19,200
+could get them to download our app. That was the 
+hypothesis. So I present at the executive team  
+
+748
+01:10:19,200 --> 01:10:26,240
+meeting to Alex, like, "Hey, I have a team. I want 
+to hire a product manager focused purely on SEO  
+
+749
+01:10:26,240 --> 01:10:31,840
+and because I think that's one of our highest 
+leverage areas right now." And Alex is like,  
+
+750
+01:10:31,840 --> 01:10:36,800
+"Hey, the whole White Pages, I built based on SEO. 
+People who type people's name and the first thing  
+
+751
+01:10:36,800 --> 01:10:42,560
+used to be a White Pages link. I'm one of the best 
+people in the world to work on SEO." I'm like,  
+
+752
+01:10:42,560 --> 01:10:48,080
+"Yeah. So?" He's like, "Let me run this product." 
+I'm like, "Okay, what do you mean?" He's like,  
+
+753
+01:10:48,080 --> 01:10:53,680
+"No, no, I will be the product manager for 
+this for however long you need it." I'm like,  
+
+754
+01:10:53,680 --> 01:10:55,680
+"How's [inaudible 01:10:54]?"
+"They don't worry about it. Just  
+
+755
+01:10:55,680 --> 01:11:01,840
+tell me about the engineers." So again, he 
+moved his desk to where that product team sat,  
+
+756
+01:11:01,840 --> 01:11:06,000
+and for the next three months he was the product 
+manager on that scrum. So he would come to my  
+
+757
+01:11:06,000 --> 01:11:11,600
+product team meetings, give us update on what's 
+happening with the SEO scrum, and then an hour  
+
+758
+01:11:11,600 --> 01:11:17,600
+later I would be in the leadership meeting giving 
+my update to him, and truly he was operating  
+
+759
+01:11:17,600 --> 01:11:21,920
+it saying, this is high leverage area for the 
+company, high leverage for my yards. It should  
+
+760
+01:11:21,920 --> 01:11:28,000
+be high leverage for me. I'm the best person to do 
+it. I'm going to be in the details and do it. CZ,  
+
+761
+01:11:28,000 --> 01:11:33,280
+same at Binance, there were a lot of products that 
+he would just sit on himself. There were very few  
+
+762
+01:11:33,280 --> 01:11:39,840
+people at Binance who would say no to CZ, but one 
+of my lead PMs who worked on the products that CZ  
+
+763
+01:11:39,840 --> 01:11:44,000
+worked on, he would tell them no all the time.
+They would just baffle all the other executives,  
+
+764
+01:11:44,000 --> 01:11:50,560
+how is he saying no to CZ and none of us are doing 
+it? Hey, that was his product area that CZ was  
+
+765
+01:11:50,560 --> 01:11:56,480
+working on, and there was that mutual respect 
+there that, hey, we know this thing and he is  
+
+766
+01:11:56,480 --> 01:12:02,400
+going to say no to me because probably not a good 
+idea. So that humility and attention to detail is  
+
+767
+01:12:02,400 --> 01:12:06,560
+required to work on the high leverage problems. 
+A lot of the high leverage problems are not,  
+
+768
+01:12:06,560 --> 01:12:11,840
+as I said, not strategy decisions. They're not 
+language markets to go after and stuff. A lot of  
+
+769
+01:12:11,840 --> 01:12:17,920
+them are like, why is this thing not working 
+as well as it needs to be? And a lot of time  
+
+770
+01:12:17,920 --> 01:12:23,520
+the devil is in the details and you need 
+to be over there. I think combining that,  
+
+771
+01:12:23,520 --> 01:12:30,800
+knowing what is high leverage or not, and two, 
+both having the humility and the patience to  
+
+772
+01:12:30,800 --> 01:12:37,040
+be able to go dig deeper and solve that.
+Some of them are quick ones. Like if I'm  
+
+773
+01:12:37,040 --> 01:12:44,560
+looking today at, let's say how many of our signed 
+up users convert into a long-term monthly daily  
+
+774
+01:12:44,560 --> 01:12:51,040
+active user, that could be something I focus 
+on for a month. Because we're running a lot  
+
+775
+01:12:51,040 --> 01:12:57,200
+of experiments on early onboarding screens, early 
+rewards, early incentives, early loyalty program,  
+
+776
+01:12:57,200 --> 01:13:01,680
+and at some point it might be like, oh, the 
+team's got it. I've given all my... What I could  
+
+777
+01:13:01,680 --> 01:13:08,160
+do there. It's functioning. We have great PMs. 
+I trust their execution on this. Let me just go  
+
+778
+01:13:08,160 --> 01:13:13,280
+focus on some of the compliance challenges that 
+we have or fraud issues that we have in France. 
+
+779
+01:13:13,280 --> 01:13:19,280
+Those kind of being able to kind of... 
+The only way that works for me is I keep  
+
+780
+01:13:19,280 --> 01:13:26,400
+a very three calendar because you cannot do this 
+without that. If you have hundreds of meetings,  
+
+781
+01:13:26,400 --> 01:13:33,840
+hundreds of one-on-ones daily standards, a lot of 
+recurring meetings, you just can't find time to go  
+
+782
+01:13:33,840 --> 01:13:41,040
+work on high leverage problems. So that would be 
+my kind of other stuff is you should have plenty  
+
+783
+01:13:41,040 --> 01:13:46,880
+of open spaces on your calendar. A full calendar 
+is a badge of shame, not a badge of honor.
+
+784
+01:13:46,880 --> 01:13:50,640
+These are awesome stories. Just the 
+metaphor of the moving desk is so good.  
+
+785
+01:13:50,640 --> 01:13:54,880
+That's the epitome of a... Like what you're 
+describing is what people now call founder mode,  
+
+786
+01:13:54,880 --> 01:13:59,120
+where the founder just goes in the details 
+working on the problem. Brian Chesky actually  
+
+787
+01:13:59,120 --> 01:14:04,560
+did this at Airbnb while I was there. He 
+took on a new product and was like mini CEO,  
+
+788
+01:14:04,560 --> 01:14:07,760
+essentially. I don't know if he'd called 
+himself the product manager 'cause I don't  
+
+789
+01:14:07,760 --> 01:14:11,600
+think he loved product managers. He kind 
+of famously got rid of product managers,  
+
+790
+01:14:11,600 --> 01:14:15,760
+which he didn't actually... But yeah, he 
+did that very much and he sat with the team,  
+
+791
+01:14:15,760 --> 01:14:20,560
+kind of created a whole space for the team that he 
+was in. These are awesome stories and really good  
+
+792
+01:14:20,560 --> 01:14:29,200
+example of a founder using their power to unblock 
+and finding the highest leverage opportunities. 
+
+793
+01:14:29,200 --> 01:14:35,200
+To kind of start to close off our conversation, 
+I'm going to take you to a couple recurring themes  
+
+794
+01:14:35,200 --> 01:14:40,640
+on this podcast, recurring segments on this 
+podcast. First, we're going to visit AI Corner  
+
+795
+01:14:40,640 --> 01:14:49,280
+and in AI Corner I ask, what's a way 
+that you have found to use AI in AI tool,  
+
+796
+01:14:49,280 --> 01:14:55,360
+a bunch of AI tools in your work to work more 
+efficiently to work to create better quality work?
+
+797
+01:14:55,360 --> 01:14:58,640
+I still haven't found a game 
+changer for me personally.  
+
+798
+01:14:59,200 --> 01:15:02,616
+Something that I use right 
+now and I'm a little bit not-
+
+799
+01:15:02,616 --> 01:15:06,160
+He was like, now I am a little bit not sure that 
+am I not doing something right, what the other  
+
+800
+01:15:06,160 --> 01:15:15,200
+people are, or I'm a little bit too jaded for it.
+So we have Gemini across the work. So for meeting  
+
+801
+01:15:15,200 --> 01:15:19,360
+notes and stuff, works great, especially 
+for folks who don't make it. We use a tool  
+
+802
+01:15:19,360 --> 01:15:24,800
+called Writer for our copywriting and UX 
+teams, especially because we are operating  
+
+803
+01:15:24,800 --> 01:15:28,240
+in Europe across several languages. So 
+being able to generate that very quickly,  
+
+804
+01:15:29,600 --> 01:15:34,720
+especially for illustrations and in-app 
+messages and stuff that's been a,  
+
+805
+01:15:35,280 --> 01:15:43,440
+several tools now. But Writer just has, the 
+copywriting market is really well done over there. 
+
+806
+01:15:43,440 --> 01:15:48,960
+If you ask me across N26. But even when we did 
+this at Binance or at Agoda, there are three  
+
+807
+01:15:48,960 --> 01:16:00,000
+areas where AI is complete game changer. One is 
+on coding. Again, you can use whatever latest tool  
+
+808
+01:16:00,000 --> 01:16:05,120
+for prototyping or not most value, especially 
+for the companies I have worked at, which are  
+
+809
+01:16:05,120 --> 01:16:11,520
+fairly large companies, very large code bases.
+Having some sort of co-pilot that's integrated  
+
+810
+01:16:12,400 --> 01:16:18,480
+with your repositories. Rough data, maybe 
+somewhere between 18 to 25% productivity  
+
+811
+01:16:18,480 --> 01:16:24,480
+boost for a developer, which is fairly massive, 
+right? So that's one category, game changer.  
+
+812
+01:16:24,480 --> 01:16:30,880
+Customer support, game changer. Whether we should 
+do it at scale or not, that's a different kind of  
+
+813
+01:16:30,880 --> 01:16:39,680
+more ethical/human question to ask there. But 
+for solving the bottom 70 percentile problems,  
+
+814
+01:16:39,680 --> 01:16:46,320
+"Why is my card declined? Why is there a hold on 
+my account? What happened to the replacement card  
+
+815
+01:16:46,320 --> 01:16:53,200
+I shipped? Why is it not arrived?" Basic 
+questions, AI automating now almost 60,  
+
+816
+01:16:53,200 --> 01:16:58,480
+70% of that. Customers getting 
+that real feedback. Game changer. 
+
+817
+01:16:58,480 --> 01:17:04,880
+And the last one is just on fraud and being 
+able to just understand patterns better on  
+
+818
+01:17:04,880 --> 01:17:11,440
+real customers versus not. At Binance, we had 
+this product where users could exchange crypto  
+
+819
+01:17:11,440 --> 01:17:18,000
+with each other. I could pay you Bitcoin and 
+get Thai bath in return, huge amount of fraud. 
+
+820
+01:17:18,800 --> 01:17:24,560
+And they're using AI just to understand language 
+patterns of fraudsters versus not fraudsters.  
+
+821
+01:17:24,560 --> 01:17:30,960
+Massive. So again, as a company level, there is an 
+incredible set of advancements across these three  
+
+822
+01:17:30,960 --> 01:17:36,960
+areas: developer productivity, customer support, 
+and fraud. But for me personally, I'm like,  
+
+823
+01:17:36,960 --> 01:17:43,600
+what would I use that suddenly makes me a better 
+CPO? I'm still struggling a little bit over there,  
+
+824
+01:17:44,400 --> 01:17:55,680
+but I don't think we need something at that level 
+because largely what still remains the domain of  
+
+825
+01:17:55,680 --> 01:18:06,080
+humans is decision making and taking the brunt 
+of the impact of what decisions you make because  
+
+826
+01:18:06,080 --> 01:18:10,480
+I would love to blame AI for some of my bad 
+decisions. That's not why [inaudible 01:18:10].
+
+827
+01:18:10,480 --> 01:18:13,280
+You can still do that. You can 
+still do that even if it's not.
+
+828
+01:18:13,280 --> 01:18:21,760
+Yes, yes. But again, hopeful to, generally not 
+a big fan of ... The thing I call a little bit  
+
+829
+01:18:21,760 --> 01:18:29,120
+jaded. You have tools now that you write few 
+things and they make a long essay for it. And  
+
+830
+01:18:29,120 --> 01:18:32,320
+then you have tools that compress long essays 
+into few words. You could have just said few  
+
+831
+01:18:32,320 --> 01:18:37,120
+words in the first place and save the whole round 
+trip. It's like a reverse zip. I remember when we  
+
+832
+01:18:37,120 --> 01:18:41,280
+had zip and it was a game changer, but there was 
+a big file you needed to send over a slow network,  
+
+833
+01:18:41,280 --> 01:18:45,600
+so you compressed it and sent it and then 
+expanded it. We're doing the reverse now.  
+
+834
+01:18:45,600 --> 01:18:50,480
+We have a small thing, we make it big and then 
+send it over and somebody's making it small.  
+
+835
+01:18:52,160 --> 01:18:56,800
+But on these three areas, if you're at 
+all skilled companies, if you don't have a  
+
+836
+01:18:56,800 --> 01:19:02,320
+great tool for developing productivity, 
+you're not looking at essential basic  
+
+837
+01:19:03,120 --> 01:19:08,000
+LLM bots for deflecting customer service 
+and you're not looking at patterns on user  
+
+838
+01:19:08,000 --> 01:19:14,480
+transactions or user communications or detect 
+fraud, that's the first area I would focus on.
+
+839
+01:19:14,480 --> 01:19:19,680
+Okay, I'm going to take us to another recurring 
+segment on the podcast. It's called Fail Corner.  
+
+840
+01:19:19,680 --> 01:19:24,640
+And the idea here is folks like you come on this 
+podcast, there's all these wins, killing it, CPO,  
+
+841
+01:19:24,640 --> 01:19:28,960
+this and that, and just moving into 
+Thailand, it worked out incredibly,  
+
+842
+01:19:28,960 --> 01:19:33,760
+what a win all the time. In reality, that's 
+not how things go. So the question to you here  
+
+843
+01:19:33,760 --> 01:19:39,520
+is just what's the story of a failure in your 
+career when things didn't go well and it was a  
+
+844
+01:19:39,520 --> 01:19:44,160
+big deal for you, and then what you learned from 
+that experience, how that actually impacted you?
+
+845
+01:19:44,160 --> 01:19:49,600
+Yeah, so from the product side, my probably 
+most spectacular failure was I was the first  
+
+846
+01:19:49,600 --> 01:19:55,360
+PM on Hangouts. And if you ask Nikhil, 
+he'll probably say he was my boss then.  
+
+847
+01:19:55,360 --> 01:20:03,440
+It was an effort the size I've never seen before 
+or after in my career. We had thousands of people  
+
+848
+01:20:03,440 --> 01:20:10,400
+working for me. We had entire power of Google. 
+We had Larry literally sitting with us saying we  
+
+849
+01:20:10,400 --> 01:20:17,600
+can do anything we want Chrome to do. And we still 
+didn't manage to build a great messaging product. 
+
+850
+01:20:18,480 --> 01:20:28,800
+So when I look at pure product-sense, product 
+decision-making was, there's several reasons  
+
+851
+01:20:28,800 --> 01:20:35,040
+now I'd had luxury of 15 years to analyze 
+that on solving for the wrong audience,  
+
+852
+01:20:35,040 --> 01:20:41,280
+solving for the wrong DNA of the company. I have 
+this premise that certain companies can never  
+
+853
+01:20:41,280 --> 01:20:47,360
+succeed at certain type of products like Microsoft 
+with mobile or Google with social or Facebook with  
+
+854
+01:20:47,360 --> 01:20:54,400
+enterprise, it is just the DNA of the founder 
+actively acts against you succeeding there. 
+
+855
+01:20:54,400 --> 01:20:59,520
+I would've said Google with enterprise as well. 
+But then Sundar came and Larry was no longer the  
+
+856
+01:20:59,520 --> 01:21:05,040
+CEO and that's when the enterprise took off. 
+They literally had to change the CEO to win  
+
+857
+01:21:05,040 --> 01:21:11,680
+in certain segments, but more, and then 
+again, I worked in Nagoda during COVID,  
+
+858
+01:21:11,680 --> 01:21:19,600
+so travel company during COVID, Binance during its 
+probably most tumultuous area of compliance and  
+
+859
+01:21:19,600 --> 01:21:29,040
+government scrutiny. There's a lot of missteps 
+there around externalities. I think one of the  
+
+860
+01:21:29,040 --> 01:21:35,360
+main kind of learnings from that is just don't 
+take on projects that are going to be six months,  
+
+861
+01:21:35,360 --> 01:21:43,040
+a year, because you just generally don't have 
+control over the macro. Things just move way  
+
+862
+01:21:43,040 --> 01:21:49,200
+more faster. And that's probably cemented my 
+kind of now product philosophy of just doing  
+
+863
+01:21:49,200 --> 01:21:54,240
+small things very quickly, spending most of the 
+times doing that. You still launch big products,  
+
+864
+01:21:54,240 --> 01:22:02,080
+but even over there we try and get early signals 
+as soon as possible. But because in Nagoda, like  
+
+865
+01:22:02,080 --> 01:22:08,560
+one of the big projects we launched was we wanted 
+to control the payments infrastructure for all the  
+
+866
+01:22:08,560 --> 01:22:16,720
+hotels and we thought if we had that device in 
+the hotel's desk, so not only for bookings made  
+
+867
+01:22:16,720 --> 01:22:23,440
+online, but for everything that happens at the 
+hotel, if we control that infrastructure, not only  
+
+868
+01:22:23,440 --> 01:22:29,040
+would we make money, but we had a touch point with 
+the users that went beyond booking the travel. 
+
+869
+01:22:29,040 --> 01:22:33,520
+Travel as you know, is not a high 
+frequency activity. You book once,  
+
+870
+01:22:33,520 --> 01:22:37,520
+then you book six months later and most of the 
+time people would not come to Nagoda, they would  
+
+871
+01:22:37,520 --> 01:22:42,240
+just go to Google and go to some other website. 
+So we wanted that touch point that stayed with  
+
+872
+01:22:42,240 --> 01:22:46,560
+them and thought payments would be a great avenue 
+to do that because that's something you do every  
+
+873
+01:22:46,560 --> 01:22:53,600
+day. And again, we did it in the Nagoda style.
+So we did an experiment. We started very small  
+
+874
+01:22:53,600 --> 01:22:59,440
+and literally went to the mall and bought these 
+$50 Android devices where we ran our software that  
+
+875
+01:22:59,440 --> 01:23:07,680
+people could just scan the credit card by a camera 
+and charge it. It was incredible. We had thousands  
+
+876
+01:23:07,680 --> 01:23:12,800
+of hotels use it. And then COVID hits and then 
+there's literally nobody going to hotels anymore.  
+
+877
+01:23:13,600 --> 01:23:18,880
+But it took us like six, nine months because 
+of the licenses, and so to launch it. And  
+
+878
+01:23:20,640 --> 01:23:26,960
+in hindsight probably, I mean you couldn't have 
+thought about COVID with that sense, but still the  
+
+879
+01:23:26,960 --> 01:23:34,960
+amount of time it took to launch the product was 
+something we could have done better. So learnings  
+
+880
+01:23:34,960 --> 01:23:40,160
+for most of it is don't take too long to launch, 
+don't take too long to validate your hypothesis.
+
+881
+01:23:40,160 --> 01:23:45,600
+The Hangout story is amazing. It's like a classic 
+product. People now make fun of just Google,  
+
+882
+01:23:45,600 --> 01:23:48,720
+why can't you get this right? And it's 
+been changed. Names have changed a hundred  
+
+883
+01:23:48,720 --> 01:23:52,080
+times. Interestingly, Meet ended 
+up being really good, Google Meet.
+
+884
+01:23:52,080 --> 01:23:54,000
+That's the last thing I did when I left Google.
+
+885
+01:23:54,000 --> 01:23:54,960
+Oh, Okay.
+
+886
+01:23:57,440 --> 01:24:00,320
+After we built the Hangouts, they're 
+like, "Okay, this is not going anywhere.  
+
+887
+01:24:00,320 --> 01:24:04,960
+We are going to start this new product 
+called Allo." Which also didn't work.
+
+888
+01:24:05,600 --> 01:24:08,160
+One of the many names,.
+
+889
+01:24:08,160 --> 01:24:13,600
+But then I said, you know what? We should 
+still, because I used to work for Android  
+
+890
+01:24:13,600 --> 01:24:18,080
+Enterprise team before, I'm like, what if we 
+just made it an enterprise product? Let me  
+
+891
+01:24:18,080 --> 01:24:24,720
+at least write the spec for it on, hey, what 
+would we do differently for, I still called  
+
+892
+01:24:24,720 --> 01:24:30,400
+it Hangouts by Enterprise. They rebranded it 
+later. But that was my salvaging moment for,  
+
+893
+01:24:31,200 --> 01:24:38,080
+but from the sense, I mean the Hangouts team 
+invented WebRTC. Now every single communication  
+
+894
+01:24:38,080 --> 01:24:43,200
+in the world happens on WebRTC. So if you think 
+from the cultural and technological impact  
+
+895
+01:24:43,200 --> 01:24:51,920
+that the Hangouts team had is insane. Like this 
+tool we are using every single meeting product,  
+
+896
+01:24:51,920 --> 01:24:57,440
+every single WhatsApp, voice calling, video 
+calling, every Zoom, everything runs on WebRTC.  
+
+897
+01:24:59,760 --> 01:25:04,800
+From a technology side, I think that was a pretty 
+massive win that the team came up with that.
+
+898
+01:25:04,800 --> 01:25:09,600
+That's the power of having Chrome having a 
+browser, also, just introducing technologies.
+
+899
+01:25:09,600 --> 01:25:12,160
+Yeah. Yes, absolutely.
+
+900
+01:25:12,160 --> 01:25:15,680
+Final question before we get to a very 
+exciting lightning round, is there anything  
+
+901
+01:25:15,680 --> 01:25:19,520
+else that you want to leave listeners with 
+or maybe a point you want to double down on  
+
+902
+01:25:19,520 --> 01:25:23,760
+just to kind of leave a little last little 
+nugget before we get to the lightning round?
+
+903
+01:25:23,760 --> 01:25:26,880
+I mean, just summarize, it depends on 
+the audience. A lot of the folks who  
+
+904
+01:25:26,880 --> 01:25:32,400
+probably listen to it or coming it from a 
+perspective of like, "Hey, how does this  
+
+905
+01:25:32,400 --> 01:25:37,760
+help me be better at my job tomorrow than I 
+was today?" And for them I would say, again,  
+
+906
+01:25:38,560 --> 01:25:44,480
+if you're truly working in areas where you think 
+you're optimizing your strengths and having fun,  
+
+907
+01:25:44,480 --> 01:25:51,280
+just keep doing it and just keep that as your 
+kind of north star, as you look at new pieces.  
+
+908
+01:25:51,280 --> 01:25:56,800
+When you talk to new companies, try and 
+evaluate the overlap of superpowers. What  
+
+909
+01:25:56,800 --> 01:26:01,040
+is your superpower? What is the company's 
+superpower? Will they feed each other? 
+
+910
+01:26:01,040 --> 01:26:07,920
+If you get a very strong resonance there, 
+I think that would be a great career step  
+
+911
+01:26:07,920 --> 01:26:14,240
+irrespective of whether it's in Bangkok or Spain 
+or however the compensation is going to be,  
+
+912
+01:26:14,240 --> 01:26:20,960
+because truly you'll find that you grow much 
+faster because it's a kind of self-fulfilling  
+
+913
+01:26:20,960 --> 01:26:27,280
+prophecy at that point. But just keep looking 
+for overlapping superpowers all the time and  
+
+914
+01:26:27,280 --> 01:26:36,160
+not just in professional life, even the concepts 
+beyond maybe even for relationships and stuff like  
+
+915
+01:26:36,160 --> 01:26:42,480
+folks who are extremely complementing strengths 
+and whose superpowers feed each other make for  
+
+916
+01:26:42,480 --> 01:26:51,040
+great life partners. So there's maybe that 
+analogy can be extended beyond your career.
+
+917
+01:26:51,040 --> 01:26:53,680
+Wow, that's a powerful point right there. Well,  
+
+918
+01:26:53,680 --> 01:26:56,480
+what a cool way to end that. Well, 
+with that Mayur, we've reached our  
+
+919
+01:26:56,480 --> 01:27:00,960
+very exciting lightning round. I've got 
+five questions for you. Are you ready?
+
+920
+01:27:00,960 --> 01:27:02,000
+Yeah, let's do it.
+
+921
+01:27:02,000 --> 01:27:06,080
+What are two or three books that you find 
+yourself recommending most to other people?
+
+922
+01:27:06,080 --> 01:27:09,840
+The one that I read most recently, 
+so I generally don't read a lot of  
+
+923
+01:27:09,840 --> 01:27:13,440
+books because I read a lot of 
+content like, small content.
+
+924
+01:27:13,440 --> 01:27:13,840
+Tweets.
+
+925
+01:27:14,560 --> 01:27:26,480
+And tweets and then Substacks and Discords and 
+WhatsApp messages, and so book takes a mind share  
+
+926
+01:27:26,480 --> 01:27:32,240
+shift for me to go read a book. The one I read 
+most recently, which I thought was pretty amazing  
+
+927
+01:27:32,240 --> 01:27:40,160
+and a lot of overlap with what I said today, 
+The Five Kinds Of Wealth. That one was very  
+
+928
+01:27:40,160 --> 01:27:46,240
+well articulated, especially the last point I made 
+very early. One of the potential paths is you just  
+
+929
+01:27:46,240 --> 01:27:51,600
+do well on your job and then you find meaning 
+elsewhere. This book is probably an incredible  
+
+930
+01:27:51,600 --> 01:27:57,360
+structured way of thinking around it. What is 
+your wealth in terms of your health, your physical  
+
+931
+01:27:57,360 --> 01:28:02,800
+health, your mental health, your relationship 
+health, your community and your wealth that you're  
+
+932
+01:28:02,800 --> 01:28:07,280
+generating financial wealth is and how do you 
+think holistically? Because at the end of the day,  
+
+933
+01:28:07,280 --> 01:28:12,560
+you are what you optimize for. If you optimize for 
+financial wealth, you'll become wealthy, but you  
+
+934
+01:28:12,560 --> 01:28:20,080
+might not be wealthy in a full spectrum manner.
+The Strengths Finder 2.0, I said very early on.  
+
+935
+01:28:20,080 --> 01:28:24,480
+It's still an interesting book to just think 
+about how you would think about your strengths,  
+
+936
+01:28:25,440 --> 01:28:30,720
+but again, if you don't want to read the book, I 
+would just do one of these kind of online quizzes  
+
+937
+01:28:30,720 --> 01:28:35,600
+for it. But The Five Kinds of Wealth then Strength 
+Finder 2.0 would be maybe what I would suggest.
+
+938
+01:28:35,600 --> 01:28:39,040
+The first book by Sahil Bloom friend of 
+the podcast willing to tell this stuff. I  
+
+939
+01:28:39,040 --> 01:28:42,240
+forgot to mention the story briefly about 
+the Strength Finder stuff. So I actually,  
+
+940
+01:28:42,240 --> 01:28:46,400
+when I was leaving Airbnb and looking for my 
+next thing and even thinking about leaving,  
+
+941
+01:28:46,400 --> 01:28:52,560
+I took a strengths test and I was working with 
+executive coach and I saw the results and she's  
+
+942
+01:28:52,560 --> 01:28:56,160
+like, "What do you see in these results? What 
+are these results telling you?" I'm like, I don't  
+
+943
+01:28:56,160 --> 01:29:00,800
+know. She's like, this tells me you should start 
+your own company and work on your own. All the  
+
+944
+01:29:00,800 --> 01:29:06,400
+strengths that are popping up here are things that 
+you as a founder need and that really helped me.
+
+945
+01:29:06,400 --> 01:29:10,720
+What's your one person data 
+point on that? Was it a good one?
+
+946
+01:29:10,720 --> 01:29:13,440
+Was it is a good decision, you mean?
+
+947
+01:29:13,440 --> 01:29:16,630
+Yes, relying on that strength 
+test to make a career.
+
+948
+01:29:16,630 --> 01:29:20,320
+The best. So great. I am such a huge 
+fan of Strengths Finder and any kind  
+
+949
+01:29:20,320 --> 01:29:23,760
+of strengths test and interestingly, people may 
+be afraid of taking them because they'd be like,  
+
+950
+01:29:23,760 --> 01:29:27,120
+here's what I suck at. It always 
+makes you feel good. It's like,  
+
+951
+01:29:27,120 --> 01:29:30,560
+here's the stuff you're good at and it's not 
+like, here's what you're bad at. It's just,  
+
+952
+01:29:30,560 --> 01:29:35,520
+here's the stuff you're best at and it's 
+always positive. It's never like you suck  
+
+953
+01:29:35,520 --> 01:29:40,240
+at this stuff. It's just not your strength. So 
+it was a huge win for me. I highly recommend it.
+
+954
+01:29:40,240 --> 01:29:40,600
+Awesome.
+
+955
+01:29:40,600 --> 01:29:44,240
+Especially if you're trying to make a 
+career move. So yeah, fully aligned. Okay,  
+
+956
+01:29:44,240 --> 01:29:48,080
+next question. Do you have a favorite recent 
+movie or TV show you've really enjoyed?
+
+957
+01:29:48,080 --> 01:29:53,440
+The one I saw that kind of TV shows usually I 
+watch to kind of give it down time, so usually  
+
+958
+01:29:53,440 --> 01:30:01,360
+I watch just periodic shows, the House or Big Bang 
+Theory and stuff. The one that I saw recently that  
+
+959
+01:30:01,360 --> 01:30:08,880
+kind of shook me a little bit was Adolescence. 
+Again, it's a tough topic around teenage mental  
+
+960
+01:30:08,880 --> 01:30:15,840
+health and violence in schools and just the 
+way it was shot. I would see the first episode,  
+
+961
+01:30:15,840 --> 01:30:22,000
+even if it's not your genre because it's shot 
+in a single camera motion and the whole episode  
+
+962
+01:30:22,000 --> 01:30:31,520
+for an hour, there's no cut. Camera just keeps 
+moving and it just makes bizarre, you feel a  
+
+963
+01:30:31,520 --> 01:30:35,760
+little different than watching it. Irrespective 
+of this topic, which is also pretty intense.  
+
+964
+01:30:35,760 --> 01:30:41,480
+Just visually you feel different, and if you're 
+motion sick like me, you really feel different.
+
+965
+01:30:41,480 --> 01:30:45,040
+That's wonderful. It sounds like what a ...
+
+966
+01:30:45,040 --> 01:30:50,160
+I would watch that. I need to watch 
+The White Lotus because everybody keeps  
+
+967
+01:30:50,160 --> 01:30:53,600
+bringing it every time I tell them I'm 
+from Thailand and I haven't seen it yet,  
+
+968
+01:30:53,600 --> 01:30:57,920
+so I'm behind on my mean culture a little bit.
+
+969
+01:30:57,920 --> 01:31:01,920
+Yeah, you are. It's like you, no one else has 
+not seen it. I think you're the only person left.
+
+970
+01:31:01,920 --> 01:31:03,280
+Yes, I'm the only one.
+
+971
+01:31:03,920 --> 01:31:08,000
+Okay. Do you have a favorite product you've 
+recently discovered that you really love?
+
+972
+01:31:08,000 --> 01:31:15,680
+So products, so I spend most of my time using 
+banking and trading products, and I would give  
+
+973
+01:31:15,680 --> 01:31:22,640
+a plug here. If you're in Europe, try N26 or even 
+revenue, incredible product. If you're in the US,  
+
+974
+01:31:22,640 --> 01:31:29,920
+Robin Hood, just the motion design they have 
+done and the onboarding is just a joy to use,  
+
+975
+01:31:29,920 --> 01:31:35,600
+whether you use it for banking or trading or 
+just for their card. I just find the product  
+
+976
+01:31:35,600 --> 01:31:41,600
+design and motion, especially as you touch and 
+swipe and try to be done. Anything that Nikita  
+
+977
+01:31:41,600 --> 01:31:46,320
+Beard launches. So I just downloaded 
+Bible study or Bible chat yesterday.
+
+978
+01:31:46,320 --> 01:31:52,060
+I saw a tweet about that. It's like in the top 
+10 of all social apps and it's like bible study.
+
+979
+01:31:52,060 --> 01:31:55,040
+Yeah, it's top ten. And I can tell why 
+I have got three messages right now to  
+
+980
+01:31:55,040 --> 01:31:59,920
+treat my anxiety by reading Bible today, 
+and one of the time I was feeling slightly  
+
+981
+01:31:59,920 --> 01:32:05,440
+anxious, so maybe there's some magic there.
+But the one app that I would just for personal,  
+
+982
+01:32:05,440 --> 01:32:14,080
+I used to write in Hindi. I used to write poems 
+growing up as a kid, and that was just now this  
+
+983
+01:32:14,080 --> 01:32:21,360
+app Suno.com. I can make songs from them and 
+they're incredible songs, at least I think so.  
+
+984
+01:32:22,160 --> 01:32:28,240
+Nobody else thinks it so far, but just the fact 
+that you can write something and now you have a  
+
+985
+01:32:28,240 --> 01:32:36,800
+song is just magical. The first time that AI, 
+I saw a use case, I said, it's nothing so far  
+
+986
+01:32:36,800 --> 01:32:44,640
+that makes me a better CPO right now, but as 
+an artist or at least the bathroom artist,  
+
+987
+01:32:44,640 --> 01:32:50,560
+it's just incredible that you can think of 
+something, put it down there and you can actually  
+
+988
+01:32:50,560 --> 01:32:55,360
+see what would a professional singer and a 
+band and a musician if they were to compose it,  
+
+989
+01:32:55,360 --> 01:33:03,600
+what it would look like. So that's probably the 
+most wild I have been by technology, the recent  
+
+990
+01:33:03,600 --> 01:33:09,840
+times, the Suno.com. They're onboarding 
+flow sucks and their growth product is,  
+
+991
+01:33:09,840 --> 01:33:15,280
+if I were the PM on Suno, I would do things a 
+lot differently, but their core tech is magical.
+
+992
+01:33:15,280 --> 01:33:19,920
+I'm a huge fan. One of my favorite things 
+to do at Suno, I think it's Suno.ai also,  
+
+993
+01:33:19,920 --> 01:33:24,400
+is just ask it to make a song in the 
+style of a sea shanty. It's so fun.  
+
+994
+01:33:24,400 --> 01:33:27,520
+And they give you a few options, so you could 
+be like, here's this version, that version.
+
+995
+01:33:27,520 --> 01:33:29,040
+Yes, yes.
+
+996
+01:33:29,040 --> 01:33:31,040
+Okay, two more questions. Do you have a favorite  
+
+997
+01:33:31,040 --> 01:33:35,520
+life motto that you often come back 
+to find useful in work or in life?
+
+998
+01:33:35,520 --> 01:33:40,640
+One, I kind of relates to the things we talked 
+about is there's no right or wrong decision.  
+
+999
+01:33:40,640 --> 01:33:46,160
+There's just low and fast decisions. Now, there 
+are some extreme caveats to that around you're  
+
+1000
+01:33:46,160 --> 01:33:52,160
+doing something that might kill your user like 
+healthcare or military or even compliance,  
+
+1001
+01:33:52,160 --> 01:33:57,360
+which can kill your company. Don't use it. But 
+everywhere else in generally goes back to the  
+
+1002
+01:33:57,360 --> 01:34:02,640
+strategy thing we talked about as well. A lot 
+of the times if it's you make a wrong decision,  
+
+1003
+01:34:02,640 --> 01:34:06,480
+if you make it fast enough, you would know it was 
+wrong and you would correct it and you would still  
+
+1004
+01:34:06,480 --> 01:34:11,760
+do it faster than thinking months for the right 
+decision. So for anything that's reversible,  
+
+1005
+01:34:11,760 --> 01:34:16,000
+anything that's not going to get 
+you in jail or kill your company,  
+
+1006
+01:34:16,000 --> 01:34:19,600
+no right or wrong decisions, 
+just slow or fast decisions.
+
+1007
+01:34:19,600 --> 01:34:24,720
+Final question. You've lived in a bunch of 
+places. You've lived in Spain, Thailand,  
+
+1008
+01:34:24,720 --> 01:34:29,600
+Mumbai, Seattle, I think Texas, 
+even for some period for school?
+
+1009
+01:34:29,600 --> 01:34:30,400
+Yeah. College, yes.
+
+1010
+01:34:30,400 --> 01:34:34,560
+Okay. There's probably other 
+places. Which has the best food?
+
+1011
+01:34:34,560 --> 01:34:41,520
+Bangkok, no question. Barcelona comes closer for 
+some, but Bangkok, you can have a three Michelin  
+
+1012
+01:34:41,520 --> 01:34:49,200
+star, one of the top five restaurants in the 
+world, spend $500 a meal or you can have a  
+
+1013
+01:34:49,200 --> 01:34:59,920
+$1 street food, stir-fried pork and rice with 
+basil. Incredible. Just the spectrum of entire,  
+
+1014
+01:34:59,920 --> 01:35:03,920
+from the cheapest food you can think of, 
+the most expensive food you can think of  
+
+1015
+01:35:03,920 --> 01:35:10,480
+in that same one kilometer walkable 
+area, having thousands of these,  
+
+1016
+01:35:10,480 --> 01:35:16,640
+literally there's the density of food. No 
+one comes closer. Barcelona has incredible  
+
+1017
+01:35:16,640 --> 01:35:21,040
+restaurant. The best restaurant in the world 
+is like a block away from here. It's called  
+
+1018
+01:35:21,040 --> 01:35:29,840
+Disputar. Takes like two years to get on the wait 
+list there, but that's on one end of the spectrum,  
+
+1019
+01:35:29,840 --> 01:35:34,960
+Barcelona, that probably comes close second. 
+But that cheap, get down 2:00 A.M. walk down  
+
+1020
+01:35:34,960 --> 01:35:40,400
+and have an incredible meal for a dollar. 
+nothing comes closer to it than Bangkok.
+
+1021
+01:35:40,400 --> 01:35:43,680
+This episode's a great ad for Thailand. Let's go.  
+
+1022
+01:35:43,680 --> 01:35:46,400
+You definitely got to watch White 
+Lotus. Mayur, this was awesome. We  
+
+1023
+01:35:46,400 --> 01:35:50,950
+covered so much ground. I feel like I got 
+to know you so well. We covered so many-
+
+1024
+01:35:50,950 --> 01:35:51,100
+Thank you so much.
+
+1025
+01:35:51,100 --> 01:35:53,840
+... perspectives in all this. 
+Yeah, we're not done yet. Two  
+
+1026
+01:35:53,840 --> 01:35:57,280
+final questions. Where can folks find 
+you online if they want to reach out,  
+
+1027
+01:35:57,280 --> 01:36:02,160
+maybe check out if there's roles at N26 and 
+then how can listeners be useful to you?
+
+1028
+01:36:02,160 --> 01:36:06,400
+Find me, this is one of the things being old 
+is I was one of the first users of LinkedIn,  
+
+1029
+01:36:06,400 --> 01:36:15,600
+so linkedin.com/mayur. [inaudible 01:36:10] 
+Facebook, so facebook.com/kamat or N26.com.  
+
+1030
+01:36:15,600 --> 01:36:20,880
+mk@N26.com. If you're especially 
+curious about how we do stuff here,  
+
+1031
+01:36:20,880 --> 01:36:26,240
+we are hiring, we are growing really fast. As I 
+said, banking's a great business to be in. We're  
+
+1032
+01:36:26,240 --> 01:36:32,080
+not going to go out of flavor for the next few 
+thousand years. So if you're thinking of a career,  
+
+1033
+01:36:32,080 --> 01:36:37,920
+you're thinking about Spain or was thinking 
+about Berlin, just a whole different interesting  
+
+1034
+01:36:37,920 --> 01:36:46,000
+lifestyle and different kind of product thinking, 
+please reach out on any of those channels. 
+
+1035
+01:36:46,000 --> 01:36:50,480
+If you're in Europe, download or 
+try N26. Like we go by the motto,  
+
+1036
+01:36:50,480 --> 01:36:56,720
+love your bank. Our founders say that people would 
+rather go to a dentist than to a bank branch,  
+
+1037
+01:36:56,720 --> 01:37:03,520
+and that's why we build this. We truly feel like 
+for an everyday banking, it's just use the app  
+
+1038
+01:37:03,520 --> 01:37:09,440
+and you feel like, I want to use my banking 
+app every day. There's some bit of magic,  
+
+1039
+01:37:09,440 --> 01:37:13,600
+which I didn't have that much contribution yet. 
+I made it a little bit simple and seamless, but  
+
+1040
+01:37:13,600 --> 01:37:22,560
+magic was there before and so if you're in Europe, 
+you're looking for a new bank account, N26.com.
+
+1041
+01:37:22,560 --> 01:37:25,920
+There we go. Mayur, thank 
+you so much for being here.
+
+1042
+01:37:25,920 --> 01:37:28,000
+Thank you. Thank you, Lenny, 
+and thank you everyone.
+
+1043
+01:37:28,000 --> 01:37:35,040
+Bye, everyone. Thank you so much for listening. If 
+you found this valuable, you can subscribe to the  
+
+1044
+01:37:35,040 --> 01:37:41,120
+show on Apple Podcasts, Spotify, or your favorite 
+podcast app. Also, please consider giving us a  
+
+1045
+01:37:41,120 --> 01:37:46,160
+rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+
+1046
+01:37:46,160 --> 01:37:53,920
+all past episodes or learn more about the show at 
+LennysPodcast.com. See you in the next episode.
+

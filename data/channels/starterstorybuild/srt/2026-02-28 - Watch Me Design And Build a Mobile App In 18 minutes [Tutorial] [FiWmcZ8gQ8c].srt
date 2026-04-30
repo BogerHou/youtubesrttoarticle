@@ -1,0 +1,1063 @@
+1
+00:00:00,080 --> 00:00:04,319
+Right now, everyone is building mobile apps with AI.
+
+2
+00:00:04,319 --> 00:00:06,000
+But there's a problem.
+
+3
+00:00:06,000 --> 00:00:09,825
+All of these apps have the same boring AI generated look.
+
+4
+00:00:09,825 --> 00:00:15,065
+[music] It is still very hard to create apps that actually stand out.
+
+5
+00:00:15,065 --> 00:00:26,855
+[music] So, I decided to change that and I invited Matia, a designer turned SAS builder to walk through his entire process for designing mobile apps that actually look and feel beautiful.
+
+6
+00:00:26,855 --> 00:00:34,640
+[music] In less than one hour, you will watch us design and actually build a mobile app from start to finish with no shortcuts.
+
+7
+00:00:34,640 --> 00:00:40,320
+In this video, you're going to watch us pick an idea, get inspiration from $50,000 per month apps,
+
+8
+00:00:40,320 --> 00:00:46,640
+mock up a design in less than 10 minutes, create characters and illustrations, export everything to AI tools,
+
+9
+00:00:46,640 --> 00:00:51,745
+and then come out the other side with a beautiful working prototype, all in less than an hour.
+
+10
+00:00:51,745 --> 00:00:56,079
+[music] This video right here is the future, and you cannot miss it.
+
+11
+00:00:56,079 --> 00:00:58,640
+especially [music] if you're building right now.
+
+12
+00:00:58,640 --> 00:01:00,640
+All right, let's dive in.
+
+13
+00:01:00,640 --> 00:01:02,880
+This is Starter Story Build.
+
+14
+00:01:02,880 --> 00:01:08,640
+[music] Okay, real quick before we get into the episode, I do need to mention this.
+
+15
+00:01:08,640 --> 00:01:18,080
+If you want to follow along with this step by step and build alongside us, we've put all the prompts and an extended version of this tutorial inside Starter Story Build,
+
+16
+00:01:18,080 --> 00:01:20,240
+you can watch this video and you can do it alongside us.
+
+17
+00:01:20,240 --> 00:01:27,520
+But if you want to have everything integrated, all the prompts, all the links, everything in a perfect spot where you can follow along and do this with us,
+
+18
+00:01:27,520 --> 00:01:34,720
+then click the first link right there in the description and you can follow along there for an even better experience and it's 100% free.
+
+19
+00:01:34,720 --> 00:01:38,960
+Otherwise, if you're not planning on following along and building your own thing, you can just watch and enjoy.
+
+20
+00:01:38,960 --> 00:01:40,400
+So, let's get into the episode.
+
+21
+00:01:40,400 --> 00:01:41,920
+Matia, thanks for coming on.
+
+22
+00:01:41,920 --> 00:01:45,439
+Before we get into the actual build, which you're going to build it all out, I'm super pumped about it.
+
+23
+00:01:45,439 --> 00:01:49,280
+Give me a little bit of background on what you've been working on and your design background.
+
+24
+00:01:49,280 --> 00:01:50,880
+Yeah, my name is Matia.
+
+25
+00:01:50,880 --> 00:01:55,680
+I've been working on design tools for the past two years almost.
+
+26
+00:01:55,680 --> 00:01:57,920
+And the most recent one is called Sleek.
+
+27
+00:01:57,920 --> 00:02:02,799
+It's helping like hundreds of people design mobile applications with AI.
+
+28
+00:02:02,799 --> 00:02:10,800
+So, I'm very passionate about design and especially about how AI is empowering builders to create apps that actually have a good design.
+
+29
+00:02:10,800 --> 00:02:16,879
+And good design doesn't mean only being beautiful, but we can get into this as we go on with the video.
+
+30
+00:02:16,879 --> 00:02:17,280
+>> All right.
+
+31
+00:02:17,280 --> 00:02:18,480
+Well, let's get into it.
+
+32
+00:02:18,480 --> 00:02:22,480
+by the end of watching this video for whoever is watching right now, what are we going to get out of this?
+
+33
+00:02:22,480 --> 00:02:23,360
+What are we going to do?
+
+34
+00:02:23,360 --> 00:02:24,480
+>> Yeah, good question.
+
+35
+00:02:24,480 --> 00:02:36,160
+So, I assume most of you watching probably have an app idea, but maybe don't have the time or the money to hire someone to design it or build it because you want to ship it
+
+36
+00:02:36,160 --> 00:02:41,040
+fast to the store, validate it, get users, which [music] is exactly what you should be doing.
+
+37
+00:02:41,040 --> 00:02:43,360
+So, this is what we're doing in this video.
+
+38
+00:02:43,360 --> 00:02:54,800
+We're going from the whole flow of getting inspiration, designing an app, and building the first version of an actual working app so you can push it to the store and have confidence in making your first dollars
+
+39
+00:02:54,800 --> 00:02:55,680
+essentially.
+
+40
+00:02:55,680 --> 00:02:56,160
+>> Cool.
+
+41
+00:02:56,160 --> 00:02:56,560
+Okay.
+
+42
+00:02:56,560 --> 00:02:58,959
+Well, what app are we going to be building today?
+
+43
+00:02:58,959 --> 00:03:03,280
+>> So, I have this problem that I always forget to drink water.
+
+44
+00:03:03,280 --> 00:03:05,440
+My friends tell me all the time like, "Oh, wow.
+
+45
+00:03:05,440 --> 00:03:08,239
+It's the old morning and you haven't add any water."
+
+46
+00:03:08,239 --> 00:03:18,159
+So, I just started building this up that kind of reminds me to drink water and maybe I can track how much water I've been drinking today so I can see my progress and be more motivated.
+
+47
+00:03:18,159 --> 00:03:22,159
+So, the first rule that we should follow is to don't reinvent the wheel.
+
+48
+00:03:22,159 --> 00:03:25,760
+So, [music] we don't want to try to come up with new crazy design concepts.
+
+49
+00:03:25,760 --> 00:03:28,000
+A lot of people already did the hard work for us.
+
+50
+00:03:28,000 --> 00:03:33,040
+So, we want to study what works and put our twist on top of it.
+
+51
+00:03:33,040 --> 00:03:37,280
+The first thing that I like to do is go to sensor tower.
+
+52
+00:03:37,280 --> 00:03:41,680
+This is a terminal for researching about apps that are on the store.
+
+53
+00:03:41,680 --> 00:03:46,640
+And we [music] can just look for the app that we're trying to build, in this case, Weather Tracker.
+
+54
+00:03:46,640 --> 00:03:50,400
+And the cool thing is that we can actually see how [music] much money these apps make.
+
+55
+00:03:50,400 --> 00:03:53,440
+For example, I see this app called Water Llama.
+
+56
+00:03:53,440 --> 00:03:56,457
+So, we can open it in a new tab that is making 50K a month.
+
+57
+00:03:56,457 --> 00:03:58,959
+[music] And here we have uh some screenshots.
+
+58
+00:03:58,959 --> 00:04:00,799
+We get an idea of how the app works.
+
+59
+00:04:00,799 --> 00:04:04,000
+I also recommend open Mob Bin.
+
+60
+00:04:04,000 --> 00:04:15,760
+This is where we have a design library of most popular [music] apps and we can see for example the app is here and I like to go on the flows sections and basically we can see how
+
+61
+00:04:15,760 --> 00:04:22,800
+every feature flow works and here's like the main flow from here I like to basically build a mood board.
+
+62
+00:04:22,800 --> 00:04:24,880
+So we have this app water llama.
+
+63
+00:04:24,880 --> 00:04:30,720
+Let's copy some screenshots and for each app we're going to understand what we like about this.
+
+64
+00:04:30,720 --> 00:04:33,040
+For example I like that very simple design.
+
+65
+00:04:33,040 --> 00:04:34,080
+It's very clean.
+
+66
+00:04:34,080 --> 00:04:35,440
+It's playful.
+
+67
+00:04:35,440 --> 00:04:37,199
+And apparently it's like gamified.
+
+68
+00:04:37,199 --> 00:04:41,199
+So you basically feel this llama mascot by drinking water.
+
+69
+00:04:41,199 --> 00:04:43,600
+And I like the colors.
+
+70
+00:04:43,600 --> 00:04:48,880
+We have this main screen with like a mascot.
+
+71
+00:04:48,880 --> 00:04:58,639
+And then we have this screen to kind of adjust the volume that we want to add to the daily water intake water screen.
+
+72
+00:04:58,639 --> 00:05:01,440
+And then we have this app called Plant Nanny.
+
+73
+00:05:01,440 --> 00:05:05,919
+I think the cool thing about this app is mainly the concept of the plant.
+
+74
+00:05:05,919 --> 00:05:16,240
+So uh apparently you can grow a plant by feeding water touches into gamification and you know it's cool that maybe you see you drink water and your plant
+
+75
+00:05:16,240 --> 00:05:16,960
+grows.
+
+76
+00:05:16,960 --> 00:05:18,400
+You don't drink your plant dies.
+
+77
+00:05:18,400 --> 00:05:22,639
+So I think it's cool because it kind of incentivizes [music] you to to not let this plant die.
+
+78
+00:05:22,639 --> 00:05:30,240
+Finally, we can also go on mobin and search [music] for water tracker here and see if we find something else.
+
+79
+00:05:30,240 --> 00:05:32,479
+Uh, let's [music] see this one.
+
+80
+00:05:32,479 --> 00:05:34,560
+This is a pretty different vibe.
+
+81
+00:05:34,560 --> 00:05:36,880
+It's uh kind of a lot more bold.
+
+82
+00:05:36,880 --> 00:05:38,800
+I like some UI elements of this app.
+
+83
+00:05:38,800 --> 00:05:41,280
+For example, like the navigation is cool.
+
+84
+00:05:41,280 --> 00:05:42,880
+The slider is cool.
+
+85
+00:05:42,880 --> 00:05:44,720
+I like the big numbers.
+
+86
+00:05:44,720 --> 00:05:47,360
+So, I think it's worth putting still in that mood board.
+
+87
+00:05:47,360 --> 00:05:52,880
+And the process that I'm trying to do here is essentially looking at two three options,
+
+88
+00:05:52,880 --> 00:06:02,320
+understand what we like about these options and then try to combine them in a way that makes sense to have our own twist on the app because of course we don't want to do a copy.
+
+89
+00:06:02,320 --> 00:06:04,960
+And here I mainly like the UI elements.
+
+90
+00:06:04,960 --> 00:06:06,720
+I like [music] the navbar.
+
+91
+00:06:06,720 --> 00:06:10,560
+I like slider big numbers.
+
+92
+00:06:10,560 --> 00:06:11,680
+I don't like the colors.
+
+93
+00:06:11,680 --> 00:06:14,639
+I don't like the overall like aggressive vibe.
+
+94
+00:06:14,639 --> 00:06:18,400
+Once we have this, we have some references.
+
+95
+00:06:18,400 --> 00:06:20,479
+We know what we like about each one.
+
+96
+00:06:20,479 --> 00:06:24,400
+The next thing is creating our requirements uh document.
+
+97
+00:06:24,400 --> 00:06:26,720
+And of course, we're going to do this with [music] AI.
+
+98
+00:06:26,720 --> 00:06:29,039
+So, I like to use Gemini here.
+
+99
+00:06:29,039 --> 00:06:35,919
+So, let's give a first [music] word llama that we want to use for the overall vibe.
+
+100
+00:06:35,919 --> 00:06:39,600
+And then we want to use this blue up for the UI elements.
+
+101
+00:06:39,600 --> 00:06:42,240
+So, kind of try to do a mix between these two.
+
+102
+00:06:42,240 --> 00:06:47,120
+I honestly love the step-by-step process that Matia is walking us [music] through right now.
+
+103
+00:06:47,120 --> 00:06:52,960
+It just blows my mind how fast you can build an MVP in 2026 like he's doing right now.
+
+104
+00:06:52,960 --> 00:07:02,080
+If you're ready to build, but you still want a few ideas, well, The Hustle just released a free guide on the top 20 AI apps that you can vibe code this weekend.
+
+105
+00:07:02,080 --> 00:07:08,319
+Inside, they will give you the exact prompts and the specific tools you can use so you can build and ship fast.
+
+106
+00:07:08,319 --> 00:07:12,560
+Just pick one of the 20 ideas, paste [music] the prompt, and build it.
+
+107
+00:07:12,560 --> 00:07:16,479
+As we all know, the hard part isn't the tech or the tools anymore.
+
+108
+00:07:16,479 --> 00:07:18,880
+It's having a good idea and just getting started.
+
+109
+00:07:18,880 --> 00:07:24,639
+So, if you're curious, just hit the link in the description, grab the guide, and start building this weekend.
+
+110
+00:07:24,639 --> 00:07:27,199
+It's 100% free, and you can download it right now.
+
+111
+00:07:27,199 --> 00:07:29,120
+All right, let's get back to the episode.
+
+112
+00:07:29,120 --> 00:07:33,759
+Okay, so once we have our inspiration mood board, let's jump into the actual design.
+
+113
+00:07:33,759 --> 00:07:35,599
+How do we start actually designing our app?
+
+114
+00:07:35,599 --> 00:07:38,400
+To recap, we want to use weather llama for the vibes.
+
+115
+00:07:38,400 --> 00:07:42,160
+So, I give two screenshots here to Gemini that we're going to use for the requirements.
+
+116
+00:07:42,160 --> 00:07:46,240
+We want to use the plant concept because I think the plant idea is pretty cool.
+
+117
+00:07:46,240 --> 00:07:50,950
+And we want to gather some inspiration from these two screenshots as well for UI elements.
+
+118
+00:07:50,950 --> 00:07:54,240
+[music] So, I gave all the image references to Gemini.
+
+119
+00:07:54,240 --> 00:08:00,240
+And then I'm going to use this prompt that I made before to save some time.
+
+120
+00:08:00,240 --> 00:08:04,240
+So now that we have this requirements document, we're going to go over to Slick the Design,
+
+121
+00:08:04,240 --> 00:08:08,800
+which is the AI tool that [music] we're going to use for design, and we're going to paste this entire document.
+
+122
+00:08:08,800 --> 00:08:12,560
+And this is going to get us a much better result because we have a lot more [music] details.
+
+123
+00:08:12,560 --> 00:08:24,000
+And what I like to do is kind of to run same prompt two three times in parallel because [music] obviously AI has some randomness into it.
+
+124
+00:08:24,000 --> 00:08:29,199
+So we're going to get slightly different results, which means we have kind of more options to choose from.
+
+125
+00:08:29,199 --> 00:08:34,159
+And then we [music] can choose the one we like more and just uh take it on from there.
+
+126
+00:08:34,159 --> 00:08:35,440
+>> You created this tool, right?
+
+127
+00:08:35,440 --> 00:08:37,039
+This is your tool, Sleek Design.
+
+128
+00:08:37,039 --> 00:08:37,760
+>> Yeah, exactly.
+
+129
+00:08:37,760 --> 00:08:38,000
+Yeah.
+
+130
+00:08:38,000 --> 00:08:38,240
+Yeah.
+
+131
+00:08:38,240 --> 00:08:43,519
+We've been I've been working on it with the two co-ounders for the last two months sort of.
+
+132
+00:08:43,519 --> 00:08:49,839
+And now what I will do is I look at these three options, kind of understand which one I like the most [music] and take it on from there.
+
+133
+00:08:49,839 --> 00:08:57,360
+So illustrations are a big part of design and I think especially in gamified [music] apps is worth spending time to making good illustrations.
+
+134
+00:08:57,360 --> 00:09:01,519
+So the process is actually very similar to what we did before.
+
+135
+00:09:01,519 --> 00:09:09,440
+We're going to go back on mobin where llama for example has all these mascots and we like the style because it fits the it fits the vibe.
+
+136
+00:09:09,440 --> 00:09:17,120
+So we're just going to give some inspiration to Gemini gather references and try to replicate the same style.
+
+137
+00:09:17,120 --> 00:09:27,920
+So yeah, for example, let's we can go like grab like two or three and then we're going to use this prompt.
+
+138
+00:09:27,920 --> 00:09:29,600
+Okay, let's talk about illustrations.
+
+139
+00:09:29,600 --> 00:09:31,680
+You're showing us right now, which is really cool.
+
+140
+00:09:31,680 --> 00:09:37,360
+How to create a custom illustration, which is how to really brand your app to be unique and cool.
+
+141
+00:09:37,360 --> 00:09:41,760
+We interviewed someone who had a mascot for their app that made over a million dollars.
+
+142
+00:09:41,760 --> 00:09:46,560
+What is the power of having custom illustrations and mascots and things like that?
+
+143
+00:09:46,560 --> 00:09:48,560
+Like why are we even doing this?
+
+144
+00:09:48,560 --> 00:09:49,040
+>> Yeah.
+
+145
+00:09:49,040 --> 00:09:54,160
+Imagine you're just looking at a bottle of water and you just see the bottle of water go up.
+
+146
+00:09:54,160 --> 00:09:55,680
+That's that's kind of boring.
+
+147
+00:09:55,680 --> 00:10:02,240
+But having [music] a mascot, having some sort of gamified element, something a little bit more friendly,
+
+148
+00:10:02,240 --> 00:10:05,440
+it kind of helps the users to get more attached to the app.
+
+149
+00:10:05,440 --> 00:10:08,800
+So you want to open it every day and use it every day.
+
+150
+00:10:08,800 --> 00:10:16,079
+So here in Gemini, basically we ask them to analyze these references and describe everything that make them look like they do.
+
+151
+00:10:16,079 --> 00:10:18,000
+Then we're just going to copy this prompt.
+
+152
+00:10:18,000 --> 00:10:22,880
+We're going to go to CHGPT because Chedg the only one that can make images with transparent background.
+
+153
+00:10:22,880 --> 00:10:25,440
+And we're just going to use this prompt this time.
+
+154
+00:10:25,440 --> 00:10:27,200
+I want to create this mascot.
+
+155
+00:10:27,200 --> 00:10:29,040
+Please follow the guidelines below.
+
+156
+00:10:29,040 --> 00:10:31,120
+PNG and transparent background.
+
+157
+00:10:31,120 --> 00:10:34,320
+If you're watching this right now and you want access to these [music] prompts.
+
+158
+00:10:34,320 --> 00:10:44,160
+We're going to be putting this entire walkthrough of how to build nice design inside Starter Story Build where you'll be able to follow this step by step with additional prompts,
+
+159
+00:10:44,160 --> 00:10:50,422
+additional resources, and even a little bit of additional contents that we probably cut out of this YouTube video right now.
+
+160
+00:10:50,422 --> 00:10:51,279
+[music] So, enjoy.
+
+161
+00:10:51,279 --> 00:10:53,120
+That link will be in the description.
+
+162
+00:10:53,120 --> 00:10:56,880
+Okay, so we got an image in the same uh style that we wanted.
+
+163
+00:10:56,880 --> 00:10:59,040
+So, I'm just going to download it.
+
+164
+00:10:59,040 --> 00:11:04,160
+And one little trick that I like to use, just go [music] really quickly on Figma.
+
+165
+00:11:04,160 --> 00:11:08,399
+I mean, you can do this with other tools probably.
+
+166
+00:11:08,399 --> 00:11:17,279
+And I just like to cut it down to only be right around the image cuz this just creates a lot [music] less problems in
+
+167
+00:11:17,279 --> 00:11:17,600
+code.
+
+168
+00:11:17,600 --> 00:11:20,959
+So, let's just export it.
+
+169
+00:11:20,959 --> 00:11:26,399
+Okay, we can go back to Sleek and here we select the placeholder image.
+
+170
+00:11:26,399 --> 00:11:31,040
+We can click here to upload our own image [music] and select this.
+
+171
+00:11:31,040 --> 00:11:37,279
+Okay, I want to now work a little bit on these two screens and try to understand how we can make them easier to use.
+
+172
+00:11:37,279 --> 00:11:41,440
+We can click on this and just quickly remove this that we don't need.
+
+173
+00:11:41,440 --> 00:11:43,200
+This character can be even bigger.
+
+174
+00:11:43,200 --> 00:11:48,480
+So, we can select it and say make this uh bigger.
+
+175
+00:11:48,480 --> 00:11:50,959
+And let's try to improve this add water screen.
+
+176
+00:11:50,959 --> 00:11:53,120
+This is kind of the main action the users are going to do.
+
+177
+00:11:53,120 --> 00:11:55,268
+So, we want to make it as easy as possible.
+
+178
+00:11:55,268 --> 00:12:02,240
+[music] Like we said, for example, now the user if he wants to go back, he needs to like reach all the way to the top.
+
+179
+00:12:02,240 --> 00:12:10,680
+One key principle design is like to keep everything, every action ideally in the lower part of the screen.
+
+180
+00:12:13,760 --> 00:12:14,959
+Okay, cool.
+
+181
+00:12:14,959 --> 00:12:18,320
+Okay, so super cool what Sleek Design, your product can do.
+
+182
+00:12:18,320 --> 00:12:22,720
+Just do want to clarify to the audience that this is not a sponsored video for sleek.design.
+
+183
+00:12:22,720 --> 00:12:28,880
+You can probably go on YouTube and learn how to use Figma or use some other tools like that.
+
+184
+00:12:28,880 --> 00:12:29,519
+Yeah.
+
+185
+00:12:29,519 --> 00:12:39,279
+So, yeah, now that we got our designs ready, essentially we're like building a force prototype that is actually a working app that you can try and install on your phone.
+
+186
+00:12:39,279 --> 00:12:46,560
+This is a solid starting point to build all the features, build your on boarding flow and all the other features that the app is going to need.
+
+187
+00:12:46,560 --> 00:12:57,440
+And first option is to use some vibe coding platforms like anything or broke or if you want a little bit more flexibility I like to use cloud code and
+
+188
+00:12:57,440 --> 00:13:03,120
+with sleek we can copy this prompt that we can give to cloud code to build our app.
+
+189
+00:13:03,120 --> 00:13:11,200
+So let's go over to corsor let's open cloud code and paste this entire prompt.
+
+190
+00:13:11,200 --> 00:13:20,320
+I like to use the always the keyword like ultra think because this triggers like a mode where cloud code really thinks a lot before doing things.
+
+191
+00:13:20,320 --> 00:13:22,240
+So usually gets better results.
+
+192
+00:13:22,240 --> 00:13:32,560
+So it's give me this design the code of these designs and giving it to cloud code so it can take the design code and turn it into react native application code if
+
+193
+00:13:32,560 --> 00:13:33,839
+that makes sense.
+
+194
+00:13:33,839 --> 00:13:36,139
+So yeah this is the concept here.
+
+195
+00:13:36,139 --> 00:13:39,440
+[clears throat] >> You you're sending it the design files already right in here.
+
+196
+00:13:39,440 --> 00:13:46,959
+Yeah, we're giving essentially some HTML code which is the design code and it's going to turn it into a working app.
+
+197
+00:13:46,959 --> 00:13:58,320
+By the way, I'm using a starter repository that I can share because this is already set up to have basically everything that you need to make the designs work without
+
+198
+00:13:58,320 --> 00:13:59,199
+much setup.
+
+199
+00:13:59,199 --> 00:14:04,240
+And like every time with AI, I mean, I have cloud code max, so I need to enjoy it.
+
+200
+00:14:04,240 --> 00:14:08,320
+So, I'm just going to run it twice cuz you never know, one might be better than the other.
+
+201
+00:14:08,320 --> 00:14:10,639
+So we can just like decide which to use.
+
+202
+00:14:10,639 --> 00:14:14,720
+>> And that's that's a lesson that I learned today is when you want to just get ideas,
+
+203
+00:14:14,720 --> 00:14:20,720
+you're sort of in this starter mode, just flip up three chat GPT tabs, put the same prompt in there,
+
+204
+00:14:20,720 --> 00:14:26,399
+and just having multiple options can kind of open up your mind to not just going with the first thing that it gives you.
+
+205
+00:14:26,399 --> 00:14:26,720
+Cool.
+
+206
+00:14:26,720 --> 00:14:28,000
+Thanks for sharing that.
+
+207
+00:14:28,000 --> 00:14:28,320
+>> Yeah.
+
+208
+00:14:28,320 --> 00:14:29,360
+Yeah, exactly.
+
+209
+00:14:29,360 --> 00:14:36,000
+I am fast forwarding through this section right now because Claude Code is just doing its thing and I don't want to bore you with this right here.
+
+210
+00:14:36,000 --> 00:14:38,959
+But we are about to be done and it's ready right now.
+
+211
+00:14:38,959 --> 00:14:43,120
+Okay, so this is actually pretty good for one prompt.
+
+212
+00:14:43,120 --> 00:14:45,040
+We got our fonts working.
+
+213
+00:14:45,040 --> 00:14:47,040
+The icons are working.
+
+214
+00:14:47,040 --> 00:14:52,320
+For some reason, we lost our plants, but I'm pretty sure we can get it back.
+
+215
+00:14:52,320 --> 00:14:54,800
+Let's see if the app actually works.
+
+216
+00:14:54,800 --> 00:14:58,079
+Okay, if I drag here.
+
+217
+00:14:58,079 --> 00:14:58,639
+Okay.
+
+218
+00:14:58,639 --> 00:15:02,800
+So, it's actually we can select amounts.
+
+219
+00:15:02,800 --> 00:15:05,519
+Let's do uh let's do 250.
+
+220
+00:15:05,519 --> 00:15:08,560
+We're at 1,250.
+
+221
+00:15:08,560 --> 00:15:12,639
+So, if you Okay, so it's actually it's actually working.
+
+222
+00:15:12,639 --> 00:15:15,920
+>> So, not only did you get the design almost one for one.
+
+223
+00:15:15,920 --> 00:15:17,680
+Yeah, we get we didn't get the plant in there.
+
+224
+00:15:17,680 --> 00:15:18,320
+That's okay.
+
+225
+00:15:18,320 --> 00:15:23,560
+[music] Uh but all the functionality works including some of the math logic there.
+
+226
+00:15:23,560 --> 00:15:25,839
+[music] And this is all oneshotted.
+
+227
+00:15:25,839 --> 00:15:26,880
+This is amazing.
+
+228
+00:15:26,880 --> 00:15:27,199
+>> Yeah.
+
+229
+00:15:27,199 --> 00:15:27,920
+100%.
+
+230
+00:15:27,920 --> 00:15:30,160
+There's [music] no need to know Figma anymore.
+
+231
+00:15:30,160 --> 00:15:33,199
+No need to have an expensive team.
+
+232
+00:15:33,199 --> 00:15:37,839
+Take some time to gather inspiration, understand the apps that are working in your [music] space,
+
+233
+00:15:37,839 --> 00:15:42,160
+and try to design something that can give you more confidence to go out there, market,
+
+234
+00:15:42,160 --> 00:15:43,680
+and make your first dollars.
+
+235
+00:15:43,680 --> 00:15:50,560
+>> So, let's fix the plant issue and then [music] at that point, I think people will know what to do next if they were building their own app.
+
+236
+00:15:50,560 --> 00:15:55,279
+>> So, for the [music] plant, we're missing the image.
+
+237
+00:15:55,279 --> 00:16:02,720
+So, grab the image from my downloads folder.
+
+238
+00:16:02,720 --> 00:16:09,959
+It's called plant cmp2.png.
+
+239
+00:16:11,680 --> 00:16:13,279
+>> Okay, we got >> there it is.
+
+240
+00:16:13,279 --> 00:16:13,996
+>> We got it.
+
+241
+00:16:13,996 --> 00:16:17,279
+[laughter] >> And it's looking much better now.
+
+242
+00:16:17,279 --> 00:16:27,199
+Okay, so we got here, we found inspiration, we mocked up our app using sleek design and just came up with a mockup of all the features and how it could work.
+
+243
+00:16:27,199 --> 00:16:29,600
+Then we pumped that into Claude Code.
+
+244
+00:16:29,600 --> 00:16:37,040
+And now we have a live working app that is actually functional and [music] as far as we can see works and has nice design.
+
+245
+00:16:37,040 --> 00:16:39,759
+Obviously, this app isn't live in the app store right now.
+
+246
+00:16:39,759 --> 00:16:40,720
+We don't have time for that.
+
+247
+00:16:40,720 --> 00:16:43,360
+We wanted to create this video to show you that this can be done.
+
+248
+00:16:43,360 --> 00:16:55,040
+We I mean we're really here for about like 30 45 minutes and we have an app that is essentially has the potential to make up to $50,000 per month which is what we validated with our first step in the app
+
+249
+00:16:55,040 --> 00:16:56,160
+store which is super cool.
+
+250
+00:16:56,160 --> 00:17:02,240
+Mati I just want to ask you here what are the next things you would do once you get off this call and you're going to go build the rest of this app.
+
+251
+00:17:02,240 --> 00:17:04,240
+What are some other things you'd be thinking about?
+
+252
+00:17:04,240 --> 00:17:08,640
+>> I would think about creating a great on boarding flow in mobile apps.
+
+253
+00:17:08,640 --> 00:17:12,000
+On boarding flow really does a big [music] part of the job.
+
+254
+00:17:12,000 --> 00:17:13,280
+I would apply the same rule.
+
+255
+00:17:13,280 --> 00:17:18,160
+Study what works, apply it, and test it as much as possible.
+
+256
+00:17:18,160 --> 00:17:18,640
+>> Cool.
+
+257
+00:17:18,640 --> 00:17:18,959
+Okay.
+
+258
+00:17:18,959 --> 00:17:21,280
+Well, thanks for coming on and sharing this, Matia.
+
+259
+00:17:21,280 --> 00:17:26,480
+If you want to learn more about how to build iOS apps, we have our full iOS boot camp,
+
+260
+00:17:26,480 --> 00:17:33,600
+uh, which will show you how to come up with an idea, build it with AI tools, and actually ship it live to the app store with all the things we talked about,
+
+261
+00:17:33,600 --> 00:17:41,200
+good design, uh, good onboarding, and all the other elements that are a little bit more complicated than just oneshotting into clock code.
+
+262
+00:17:41,200 --> 00:17:46,720
+I will put a link down there if you want to check out the iOS boot camp if you are ready to build and ready to ship.
+
+263
+00:17:46,720 --> 00:17:48,080
+Thank you Matia for coming on.
+
+264
+00:17:48,080 --> 00:17:50,240
+I hope you guys enjoyed this design.
+
+265
+00:17:50,240 --> 00:17:51,520
+It's the future.
+
+266
+00:17:51,520 --> 00:17:54,760
+Let's go.

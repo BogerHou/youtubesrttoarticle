@@ -1,0 +1,3535 @@
+1
+00:00:00,000 --> 00:00:02,159
+A lot of people call you the godmother of AI.
+
+2
+00:00:02,159 --> 00:00:07,919
+The work you did actually was the spark that brought us out of AI winter >> in the middle of 2015,
+
+3
+00:00:07,919 --> 00:00:09,440
+middle of 2016.
+
+4
+00:00:09,440 --> 00:00:17,039
+Some tech companies avoid using the word AI because they were not sure if AI was a dirty word.
+
+5
+00:00:17,039 --> 00:00:22,720
+2017ish was the beginning of companies calling themselves AI companies.
+
+6
+00:00:22,720 --> 00:00:26,800
+>> There's this line, I think this was when you were presenting to Congress, there's nothing artificial about AI.
+
+7
+00:00:26,800 --> 00:00:27,840
+It's inspired by people.
+
+8
+00:00:27,840 --> 00:00:28,800
+It's created by people.
+
+9
+00:00:28,800 --> 00:00:30,640
+And most importantly, it impacts people.
+
+10
+00:00:30,640 --> 00:00:34,800
+>> It's not like I think AI will have no impact on jobs or people.
+
+11
+00:00:34,800 --> 00:00:41,200
+In fact, I believe that whatever AI does currently or in the future is up to us.
+
+12
+00:00:41,200 --> 00:00:42,320
+It's up to the people.
+
+13
+00:00:42,320 --> 00:00:46,640
+I do believe technology is a net positive for humanity.
+
+14
+00:00:46,640 --> 00:00:50,079
+But I think every technology is a double-edged sword.
+
+15
+00:00:50,079 --> 00:00:56,320
+If we're not doing the right thing as a society, as individuals, we can screw this up as well.
+
+16
+00:00:56,320 --> 00:01:07,280
+you had this breakthrough insight of just okay we can train machines to think like humans but it's just missing the data that humans have to learn as a child >> I chose to look at artificial intelligence through the lens of visual
+
+17
+00:01:07,280 --> 00:01:18,560
+intelligence because humans are deeply visual animals we need to train machines with as much information as possible on images of objects but objects are very
+
+18
+00:01:18,560 --> 00:01:29,680
+very difficult to learn a single object can have infinite possibilities that is shown on an image in order To train computers with tens and thousands of
+
+19
+00:01:29,680 --> 00:01:36,159
+object concepts, you really need to show it millions of examples.
+
+20
+00:01:36,159 --> 00:01:37,439
+Today, my guest is Dr.
+
+21
+00:01:37,439 --> 00:01:40,960
+Feay Lee, who's known as the godmother of AI.
+
+22
+00:01:40,960 --> 00:01:48,320
+Feet has been responsible for and at the center of many of the biggest breakthroughs that sparked the AI revolution that we are currently living through.
+
+23
+00:01:48,320 --> 00:01:56,159
+She spearheaded the creation of ImageNet, which was basically her realizing that AI needed a ton of clean labelled data to get smarter.
+
+24
+00:01:56,159 --> 00:02:01,920
+And that data set became the breakthrough that led to the current approach to building and scaling AI models.
+
+25
+00:02:01,920 --> 00:02:07,680
+She was chief AI scientist at Google Cloud, which is where some of the biggest early technology breakthroughs emerged from.
+
+26
+00:02:07,680 --> 00:02:13,840
+She was director at Sale, Stanford's artificial intelligence lab, where many of the biggest AI minds came out of.
+
+27
+00:02:13,840 --> 00:02:20,400
+She's also co-creator of Stanford's human- centered AI institute, which is playing a vital role in the direction that AI is taking.
+
+28
+00:02:20,400 --> 00:02:22,080
+She's also been on the board of Twitter.
+
+29
+00:02:22,080 --> 00:02:26,400
+She was named one of Time's 100 most influential people in AI.
+
+30
+00:02:26,400 --> 00:02:28,800
+She's also on the United Nations Advisory Board.
+
+31
+00:02:28,800 --> 00:02:29,840
+I could go on.
+
+32
+00:02:29,840 --> 00:02:35,360
+In our conversation, Fay shares a brief history of how we got to today in the world of AI,
+
+33
+00:02:35,360 --> 00:02:43,040
+including this mind-blowing reminder that 9 to 10 years ago, calling yourself an AI company was basically a death nail for your brand.
+
+34
+00:02:43,040 --> 00:02:45,840
+because no one believed that AI was actually going to work.
+
+35
+00:02:45,840 --> 00:02:47,519
+Today, it's completely different.
+
+36
+00:02:47,519 --> 00:02:49,519
+Every company is an AI company.
+
+37
+00:02:49,519 --> 00:02:56,879
+We also chat about her take on how she sees AI impacting humanity in the future, how far current technologies will take us,
+
+38
+00:02:56,879 --> 00:03:01,440
+why she's so passionate about building a world model, and what exactly world models are.
+
+39
+00:03:01,440 --> 00:03:06,400
+And most exciting of all, the launch of the world's first large world model, Marble,
+
+40
+00:03:06,400 --> 00:03:08,720
+which just came out as this podcast comes out.
+
+41
+00:03:08,720 --> 00:03:12,239
+Anyone can go play with this at marble.worldlabs.ai.
+
+42
+00:03:12,239 --> 00:03:13,200
+It's insane.
+
+43
+00:03:13,200 --> 00:03:14,239
+Definitely check it out.
+
+44
+00:03:14,239 --> 00:03:18,720
+Fei is incredible and way too under the radar for the impact that she's had on the world.
+
+45
+00:03:18,720 --> 00:03:22,640
+So, I am really excited to have her on and to spread her wisdom with more people.
+
+46
+00:03:22,640 --> 00:03:27,840
+A huge thank you to Ben Harowitz and Condisa Rice for suggesting topics for this conversation.
+
+47
+00:03:27,840 --> 00:03:32,239
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+48
+00:03:32,239 --> 00:03:33,920
+With that, I bring you Dr.
+
+49
+00:03:33,920 --> 00:03:37,200
+Fay Lee after a short word from our sponsors.
+
+50
+00:03:37,200 --> 00:03:41,200
+This episode is brought to you by Figma, makers of Figma make.
+
+51
+00:03:41,200 --> 00:03:47,680
+When I was a PM at Airbnb, I still remember when Figma came out and how much it improved how we operated as a team.
+
+52
+00:03:47,680 --> 00:03:53,040
+Suddenly, I could involve my whole team in the design process, give feedback on design concepts really quickly,
+
+53
+00:03:53,040 --> 00:03:56,400
+and it just made the whole product development process so much more fun.
+
+54
+00:03:56,400 --> 00:03:58,799
+But Figma never felt like it was for me.
+
+55
+00:03:58,799 --> 00:04:03,760
+It was great for giving feedback and designs, but as a builder, I wanted to make stuff.
+
+56
+00:04:03,760 --> 00:04:06,080
+That's why Figma built Figma Make.
+
+57
+00:04:06,080 --> 00:04:15,040
+With just a few prompts, you can make any idea or design into a fully functional prototype or app that anyone can iterate on and validate with customers.
+
+58
+00:04:15,040 --> 00:04:18,000
+Figma make is a different kind of vibe coding tool.
+
+59
+00:04:18,000 --> 00:04:28,320
+Because it's all in Figma, you can use your team's existing design building blocks, making it easy to create outputs that look good and feel real and are connected to how your team builds.
+
+60
+00:04:28,320 --> 00:04:33,360
+Stop spending so much time telling people about your product vision and instead show it to them.
+
+61
+00:04:33,360 --> 00:04:37,120
+Make codeback prototypes and apps fast with Figma Makeake.
+
+62
+00:04:37,120 --> 00:04:40,320
+Check it out at figma.com/lenny.
+
+63
+00:04:40,320 --> 00:04:44,560
+Did you know that I have a whole team that helps me with my podcast and with my newsletter?
+
+64
+00:04:44,560 --> 00:04:48,800
+I want everyone on that team to be super happy and thrive in their roles.
+
+65
+00:04:48,800 --> 00:04:52,000
+Just Works knows that your employees are more than just your employees.
+
+66
+00:04:52,000 --> 00:04:53,040
+They're your people.
+
+67
+00:04:53,040 --> 00:04:58,560
+My team is spread out across Colorado, Australia, Nepal, West Africa, and San Francisco.
+
+68
+00:04:58,560 --> 00:05:04,960
+My life would be so incredibly complicated to hire people internationally, to pay people on time and in their local currencies,
+
+69
+00:05:04,960 --> 00:05:07,759
+and to answer their HR questions 24/7.
+
+70
+00:05:07,759 --> 00:05:10,160
+But with Just Works, it's super easy.
+
+71
+00:05:10,160 --> 00:05:15,199
+Whether you're setting up your own automated payroll, offering premium benefits, or hiring internationally,
+
+72
+00:05:15,199 --> 00:05:21,840
+JustWorks offers simple software and 24/7 human support from small business experts for you and your people.
+
+73
+00:05:21,840 --> 00:05:26,000
+They do your human resources right so that you can do right by your people.
+
+74
+00:05:26,000 --> 00:05:29,510
+just works for your people.
+
+75
+00:05:29,510 --> 00:05:34,560
+[Music] Fay Fay, thank you so much for being here and welcome to the podcast.
+
+76
+00:05:34,560 --> 00:05:36,479
+>> I'm excited to be here, Lenny.
+
+77
+00:05:36,479 --> 00:05:38,560
+>> I'm even more excited to have you here.
+
+78
+00:05:38,560 --> 00:05:40,320
+It is such a treat to get to chat with you.
+
+79
+00:05:40,320 --> 00:05:42,160
+There's so much that I want to talk about.
+
+80
+00:05:42,160 --> 00:05:47,600
+You've been at the center of this AI explosion that we're seeing right now for so long.
+
+81
+00:05:47,600 --> 00:05:52,960
+We're going to talk about a bunch of the history that I think a lot of people don't even know about how this whole thing started.
+
+82
+00:05:52,960 --> 00:06:01,199
+But let me first read a quote from Wyatt about you just so people get a sense and in the intro I'll share all of the other epic things you've done but I think this is a good way to just set context.
+
+83
+00:06:01,199 --> 00:06:10,720
+Fay is one of a tiny group of scientists a group perhaps small enough to fit around a kitchen table who are responsible for AI's recent remarkable advances.
+
+84
+00:06:10,720 --> 00:06:13,919
+A lot of people call you the godmother of AI.
+
+85
+00:06:13,919 --> 00:06:17,919
+And unlike a lot of AI leaders, you're an AI optimist.
+
+86
+00:06:17,919 --> 00:06:20,000
+You don't think AI is going to replace us.
+
+87
+00:06:20,000 --> 00:06:21,280
+You don't think it's going to take all our jobs.
+
+88
+00:06:21,280 --> 00:06:22,639
+you don't think it's going to kill us.
+
+89
+00:06:22,639 --> 00:06:24,639
+So, I thought it'd be fun to start there.
+
+90
+00:06:24,639 --> 00:06:29,759
+Just what's your perspective on how AI is going to impact humanity over time?
+
+91
+00:06:29,759 --> 00:06:30,080
+>> Yeah.
+
+92
+00:06:30,080 --> 00:06:30,400
+Okay.
+
+93
+00:06:30,400 --> 00:06:32,800
+So, Lenny, let me be very clear.
+
+94
+00:06:32,800 --> 00:06:34,880
+I'm not a utopian.
+
+95
+00:06:34,880 --> 00:06:39,440
+So, it's not like I think AI will have no impact on jobs or people.
+
+96
+00:06:39,440 --> 00:06:41,919
+In fact, I'm a humanist.
+
+97
+00:06:41,919 --> 00:06:49,199
+I believe that whatever AI does in currently or in the future is up to us.
+
+98
+00:06:49,199 --> 00:06:50,720
+It's up to the people.
+
+99
+00:06:50,720 --> 00:06:55,840
+So I do believe technology is a net positive for humanity.
+
+100
+00:06:55,840 --> 00:07:07,280
+If you look at the long course of civilization, I think we are an fundamentally we're an innovative species that we you know if you look at
+
+101
+00:07:07,280 --> 00:07:16,639
+from you know written record thousands of years ago um to to now humans just kept innovating ourselves and innovating
+
+102
+00:07:16,639 --> 00:07:20,160
+our tools and with that we make lives better.
+
+103
+00:07:20,160 --> 00:07:26,400
+we make work better, we build civilization, and I do believe AI is part of that.
+
+104
+00:07:26,400 --> 00:07:29,120
+So, that's where the optimism comes from.
+
+105
+00:07:29,120 --> 00:07:34,400
+But I think every technology is uh is um a double-edged sword.
+
+106
+00:07:34,400 --> 00:07:43,039
+And uh if we're not doing the right thing as a species, as a society, as communities,
+
+107
+00:07:43,039 --> 00:07:46,400
+as individuals, we can screw this up as well.
+
+108
+00:07:46,400 --> 00:07:50,160
+H there's this line I think this was when you were presenting to Congress.
+
+109
+00:07:50,160 --> 00:07:51,840
+There's nothing artificial about AI.
+
+110
+00:07:51,840 --> 00:07:52,800
+It's inspired by people.
+
+111
+00:07:52,800 --> 00:07:56,639
+It's created by people and most importantly it impacts people.
+
+112
+00:07:56,639 --> 00:07:59,360
+Uh I don't have a question there but what a what a great line.
+
+113
+00:07:59,360 --> 00:08:01,759
+>> Yeah I I I feel pretty deeply.
+
+114
+00:08:01,759 --> 00:08:11,440
+I you know I started um working in AI two and a half decades ago and I've been having students for the past two decades and
+
+115
+00:08:11,440 --> 00:08:23,280
+almost every student who graduates I remind them you know when they graduates from my lab that your field is called artificial intelligence but there's nothing artificial about it.
+
+116
+00:08:23,280 --> 00:08:27,199
+>> Coming back to the point you just made about how it's kind of up to us about where this all goes.
+
+117
+00:08:27,199 --> 00:08:28,960
+What is it you think we need to get right?
+
+118
+00:08:28,960 --> 00:08:30,720
+How how do we set things on a path?
+
+119
+00:08:30,720 --> 00:08:35,120
+I know this is a a very difficult question to answer but just what should what what's your advice?
+
+120
+00:08:35,120 --> 00:08:36,800
+What do you think we should >> Yeah.
+
+121
+00:08:36,800 --> 00:08:38,880
+>> How many hours do we have?
+
+122
+00:08:38,880 --> 00:08:40,479
+>> How do we align AI?
+
+123
+00:08:40,479 --> 00:08:40,959
+There we go.
+
+124
+00:08:40,959 --> 00:08:41,440
+Let's solve it.
+
+125
+00:08:41,440 --> 00:08:47,360
+>> Also, I think people should be responsible individuals no matter what we do.
+
+126
+00:08:47,360 --> 00:08:52,959
+This is what we teach our children and this is what we need to do as grown-ups as well.
+
+127
+00:08:52,959 --> 00:09:02,160
+No matter which part of the AI development or AI deployment or or AI application you are
+
+128
+00:09:02,160 --> 00:09:10,959
+participating in and most likely many of us especially as technologists were were in multiple points we should act like
+
+129
+00:09:10,959 --> 00:09:16,399
+responsible individuals and uh and care about this actually care a lot about this.
+
+130
+00:09:16,399 --> 00:09:23,360
+I think everybody today should care about AI because it is going to impact your individual life.
+
+131
+00:09:23,360 --> 00:09:25,519
+It is going to impact your community.
+
+132
+00:09:25,519 --> 00:09:30,160
+It's going to impact the the society and the future generation.
+
+133
+00:09:30,160 --> 00:09:37,440
+And caring about it as a responsible person is the first but also the most important step.
+
+134
+00:09:37,440 --> 00:09:37,760
+>> Okay.
+
+135
+00:09:37,760 --> 00:09:42,480
+So, let me let me actually take a step back and kind of go to the beginning of AI.
+
+136
+00:09:42,480 --> 00:09:47,519
+Most people started hearing and caring about AI is what it's called today.
+
+137
+00:09:47,519 --> 00:09:49,839
+Just like I don't know a few years ago when JGBT came out.
+
+138
+00:09:49,839 --> 00:09:51,200
+Maybe it was like three years ago.
+
+139
+00:09:51,200 --> 00:09:52,160
+>> Three years ago.
+
+140
+00:09:52,160 --> 00:09:53,839
+Almost one more month.
+
+141
+00:09:53,839 --> 00:09:54,880
+Three years ago.
+
+142
+00:09:54,880 --> 00:09:55,200
+>> Wow.
+
+143
+00:09:55,200 --> 00:09:55,440
+Okay.
+
+144
+00:09:55,440 --> 00:09:56,640
+That was JT GBT coming out.
+
+145
+00:09:56,640 --> 00:09:57,920
+Is that the milestone that you have in mind?
+
+146
+00:09:57,920 --> 00:09:58,240
+Okay.
+
+147
+00:09:58,240 --> 00:09:58,560
+Cool.
+
+148
+00:09:58,560 --> 00:10:00,160
+That's exactly how I saw it.
+
+149
+00:10:00,160 --> 00:10:11,040
+But very few people know there was a long long history of people working on it was called machine learning back then and there's other terms and now it's just everything's AI and there was kind of like a long period of just a lot of people working on it
+
+150
+00:10:11,040 --> 00:10:22,560
+and then there's this what people refer to as the AI winter where people just gave up almost people did and just okay this this idea isn't going anywhere and then the work you did actually was essentially the spark that brought us
+
+151
+00:10:22,560 --> 00:10:30,959
+out of AI winter and is directly responsible for the world we're in now of just AI is all we talk about as you just said it's going to impact everything we do.
+
+152
+00:10:30,959 --> 00:10:38,079
+So, I thought it'd be really interesting to hear from you just kind of like the brief history of what the world was like before imageet,
+
+153
+00:10:38,079 --> 00:10:44,399
+then just the work you did to create ImageNet, why that was so important, and then just what happened after.
+
+154
+00:10:44,399 --> 00:10:50,560
+>> It is for me hard to keep in mind that AI is so new for everybody.
+
+155
+00:10:50,560 --> 00:11:02,000
+when I lived my entire professional life in AI, it's there's a part of me that is just it's so satisfying to see a personal
+
+156
+00:11:02,000 --> 00:11:11,120
+curiosity that I started barely out of teenagehood and and now has become a transformative
+
+157
+00:11:11,120 --> 00:11:13,519
+force of our civilization.
+
+158
+00:11:13,519 --> 00:11:17,279
+It generally is a civilizational level uh technology.
+
+159
+00:11:17,279 --> 00:11:27,839
+So, so that journey is about about 30 years or 20 something 20 plus years and uh it's it's just very satisfying.
+
+160
+00:11:27,839 --> 00:11:29,440
+So, where did it all start?
+
+161
+00:11:29,440 --> 00:11:32,959
+Well, I'm not even the first generation AI researcher.
+
+162
+00:11:32,959 --> 00:11:37,440
+The first generation really date back to the 50s and 60s.
+
+163
+00:11:37,440 --> 00:11:47,360
+And you know Alan Touring was ahead of his time by in the 40s by asking daring humanity with the question can we is there thinking
+
+164
+00:11:47,360 --> 00:11:56,160
+machines right and of course he has a specific way of uh testing this concept of thinking machine which is a
+
+165
+00:11:56,160 --> 00:12:06,800
+conversational chatbot which to his standard we now have a thinking machine but uh that was just a more anecdotal
+
+166
+00:12:06,800 --> 00:12:08,079
+inspir inspiration.
+
+167
+00:12:08,079 --> 00:12:18,160
+The field really began in the 50s um when computer scientists came together and look at how we can use computer programs and
+
+168
+00:12:18,160 --> 00:12:26,720
+algorithms to uh to build these programs that can do things that have been only
+
+169
+00:12:26,720 --> 00:12:29,200
+capable by human cognition.
+
+170
+00:12:29,200 --> 00:12:39,920
+So um and and that was the beginning and the founding fathers the Dartmouth workshop in the 1956 uh you know we have professor John McCarthy who later came
+
+171
+00:12:39,920 --> 00:12:50,320
+to uh Stanford who coined the term artificial intelligence and between the 50s60s 70s and 80s it
+
+172
+00:12:50,320 --> 00:13:01,200
+was the early days of AI exploration and we had logic systems we had uh expert systems We also had early exploration of
+
+173
+00:13:01,200 --> 00:13:09,519
+neuronet network and then it came to around the late 80s, the 90s and the the
+
+174
+00:13:09,519 --> 00:13:12,639
+very beginning of the 21st century.
+
+175
+00:13:12,639 --> 00:13:17,519
+That stretch about 20 years is actually the beginning of machine learning.
+
+176
+00:13:17,519 --> 00:13:23,920
+It's the marriage between computer programming and statistical as uh learning.
+
+177
+00:13:23,920 --> 00:13:35,279
+And that marriage brought a very very critical concept into AI which is that purely rulebased
+
+178
+00:13:35,279 --> 00:13:45,120
+um uh program is not going to account for the vast amount of cognitive capabilities that we imagine computers
+
+179
+00:13:45,120 --> 00:13:46,480
+can do.
+
+180
+00:13:46,480 --> 00:13:51,040
+So we have to use machines to learn the patterns.
+
+181
+00:13:51,040 --> 00:13:56,160
+Once the machines can learn the patterns, it has a hope to do more things.
+
+182
+00:13:56,160 --> 00:14:03,680
+For example, if you give it three cats, the hope is not just for the machines to recognize these three cats.
+
+183
+00:14:03,680 --> 00:14:08,720
+The hope is the machines can recognize the fourth cat, the fifth cat, the sixth cat,
+
+184
+00:14:08,720 --> 00:14:10,240
+and all the other cats.
+
+185
+00:14:10,240 --> 00:14:16,639
+And that's a learning ability that is fundamental to humans and many animals.
+
+186
+00:14:16,639 --> 00:14:21,519
+and uh we we as a field realized we need machine learning.
+
+187
+00:14:21,519 --> 00:14:26,160
+So that was up till the beginning of the 21st century.
+
+188
+00:14:26,160 --> 00:14:30,320
+I entered the field of AI literally in the year of 2000.
+
+189
+00:14:30,320 --> 00:14:33,760
+That's when my uh PhD began at Caltech.
+
+190
+00:14:33,760 --> 00:14:43,199
+And so I was one of the first generation machine learning researchers and we were already studying this concept of machine learning especially neuronet network.
+
+191
+00:14:43,199 --> 00:14:50,800
+I remember that was one of my first courses in at Caltech is called neuro network but it was very painful.
+
+192
+00:14:50,800 --> 00:14:57,360
+It was still smack in the middle of the so-called AI winter meaning the public didn't look at this too much.
+
+193
+00:14:57,360 --> 00:15:08,320
+there wasn't that much funding but there was also a lot of ideas flowing around and I think two things happened to myself that brought my own
+
+194
+00:15:08,320 --> 00:15:18,160
+career so close to the birth of modern AI is that um I chose to look at artificial intelligence through the lens
+
+195
+00:15:18,160 --> 00:15:24,240
+of visual intelligence because uh humans are deeply visual animals.
+
+196
+00:15:24,240 --> 00:15:31,839
+We can talk a little more later, but so much of our intelligence is built upon visual,
+
+197
+00:15:31,839 --> 00:15:35,440
+perceptual, spatial understanding, not just language per se.
+
+198
+00:15:35,440 --> 00:15:37,040
+I think they're complimentary.
+
+199
+00:15:37,040 --> 00:15:48,240
+So I chose to look at visual intelligence and um my PhD and my early uh professor years I um my students and I are very committed to a
+
+200
+00:15:48,240 --> 00:15:56,000
+northstar problem which is solving the problem of object recognition because it's a building block for the perceptual world.
+
+201
+00:15:56,000 --> 00:15:56,240
+Right?
+
+202
+00:15:56,240 --> 00:16:03,600
+We go around the world interpreting, reasoning and interacting with it more or less at the object level.
+
+203
+00:16:03,600 --> 00:16:07,199
+We don't interact with the world at the molecular level.
+
+204
+00:16:07,199 --> 00:16:18,079
+We don't interact with the world as um we sometimes do but we rarely for example if you want to lift a teapot you don't say okay the teapot is made of a
+
+205
+00:16:18,079 --> 00:16:25,839
+100 pieces of porcelain and let me work on this 100 pieces you look at this as one object and and interact with it.
+
+206
+00:16:25,839 --> 00:16:27,680
+So object is really important.
+
+207
+00:16:27,680 --> 00:16:35,600
+So um I was among the first uh uh researchers to identify this as a northstar problem.
+
+208
+00:16:35,600 --> 00:16:45,680
+But I think what happened is that as a student of AI and then a researcher of AI, I was working on all kinds of
+
+209
+00:16:45,680 --> 00:16:56,800
+mathematical models including neuronet network including Beijian network including many many models and there was one singular pain point is that these
+
+210
+00:16:56,800 --> 00:17:07,039
+models don't have data to be trained on and uh as a field we were so focusing on these models but It dawned on me that
+
+211
+00:17:07,039 --> 00:17:15,199
+human learning as well as evolution is actually a big data learning process.
+
+212
+00:17:15,199 --> 00:17:24,480
+Humans learn with so much experience you know constantly and evolution if you look at time animals evolve with just experiencing
+
+213
+00:17:24,480 --> 00:17:25,600
+the world.
+
+214
+00:17:25,600 --> 00:17:36,559
+So I think my students and and I conjectured that a very critically overlooked ingredient of bringing AI to life is big
+
+215
+00:17:36,559 --> 00:17:46,480
+data and then we began this image that project in 2006 2007 we were very ambitious we want to get the entire
+
+216
+00:17:46,480 --> 00:17:57,679
+internet's image data on objects now granted internet was a lot smaller than today so we I felt like that ambition was at least not too crazy.
+
+217
+00:17:57,679 --> 00:18:05,520
+Now it's totally delusional to uh to think a couple of graduate student and a professor can do this.
+
+218
+00:18:05,520 --> 00:18:07,600
+But uh and that's what we did.
+
+219
+00:18:07,600 --> 00:18:12,799
+We curated very carefully 15 million images on the internet.
+
+220
+00:18:12,799 --> 00:18:23,679
+Created a taxonomy of 22,000 concepts borrowing other researchers work like a linguist work on wordnet and
+
+221
+00:18:23,679 --> 00:18:33,679
+it's a particular way of dictionarying uh words and we combine that into image that and we open source that to the
+
+222
+00:18:33,679 --> 00:18:34,880
+research community.
+
+223
+00:18:34,880 --> 00:18:42,080
+We held an annual image net challenge to encourage everybody to participate in this.
+
+224
+00:18:42,080 --> 00:18:44,640
+We continue to do our own research.
+
+225
+00:18:44,640 --> 00:18:55,280
+But 2012 was the moment that many people think was the beginning of the deep learning or birth of modern AI because a group of Toronto researchers led by
+
+226
+00:18:55,280 --> 00:19:07,120
+professor Jeff Hinton participated in imageet challenge used the imageet big data and two GPUs from Nvidia and created successfully the
+
+227
+00:19:07,120 --> 00:19:18,720
+first neuronet network algorithm that's can it didn't fundamental it didn't totally solved but made a huge progress towards solving the problem of object
+
+228
+00:19:18,720 --> 00:19:29,200
+recognition and that combination of the trio technology uh big data neuronet network and GPU was
+
+229
+00:19:29,200 --> 00:19:41,039
+kind of the golden recipe for modern AI and then fast forward the the the public moment of AI which is the chat GPT
+
+230
+00:19:41,039 --> 00:19:52,000
+moment if you look at the ingredients of what brought Chad GPT to to the to the uh world technically still use these
+
+231
+00:19:52,000 --> 00:19:53,520
+three ingredients.
+
+232
+00:19:53,520 --> 00:20:04,720
+Now it's internet scale data mostly texts is a much more com complex neuronet network um architecture than 2012 but it's still
+
+233
+00:20:04,720 --> 00:20:09,679
+neuronet network and a lot more GPUs but it's still GPUs.
+
+234
+00:20:09,679 --> 00:20:16,320
+So these three ingredients are still to at the core of modern AI.
+
+235
+00:20:16,320 --> 00:20:17,120
+>> Incredible.
+
+236
+00:20:17,120 --> 00:20:19,919
+I have never heard that full story before.
+
+237
+00:20:19,919 --> 00:20:31,440
+I love that it was two GPUs was the f I love and now it's I don't know hundreds of thousands right that are orders of magnitudes more powerful uh and those
+
+238
+00:20:31,440 --> 00:20:42,880
+two GPUs were they just bought they were like gaming GPUs they just went to like the game store right that people use for playing games >> as you said this continues to be in a large way the way models get smarter some of the fastest growing companies in
+
+239
+00:20:42,880 --> 00:20:52,799
+the world right now I've had them all mostly on the podcast Merkore and Surge and Scale like they do this they continue to do this for labs just give them more and more label data of the things they're most excited about.
+
+240
+00:20:52,799 --> 00:20:57,600
+>> Yeah, I remember um Alex Wong from scale very early days.
+
+241
+00:20:57,600 --> 00:21:00,720
+I probably still has his emails when he was starting scale.
+
+242
+00:21:00,720 --> 00:21:02,400
+He uh he was very kind.
+
+243
+00:21:02,400 --> 00:21:07,120
+He keeps sending me emails about how image that inspired scale.
+
+244
+00:21:07,120 --> 00:21:09,360
+I was very pleased to see that.
+
+245
+00:21:09,360 --> 00:21:15,039
+>> One of my other favorite takeaways from what you just shared is just such an example of high agency and just doing things.
+
+246
+00:21:15,039 --> 00:21:16,159
+That's kind of a meme on Twitter.
+
+247
+00:21:16,159 --> 00:21:17,600
+Just you can just do things.
+
+248
+00:21:17,600 --> 00:21:28,000
+you're just like okay this is probably necessary to move AI and it was called machine learning back then right was that the term most people used >> I think it was interchangeably it's true
+
+249
+00:21:28,000 --> 00:21:38,400
+like I do remember the companies the tech companies I I'm not going to name names but I was I was uh in a conversation in one of the early days I
+
+250
+00:21:38,400 --> 00:21:48,559
+think is in the middle of 2015 middle of 2016 uh some tech companies avoids using the word AI I because they were not sure
+
+251
+00:21:48,559 --> 00:21:51,120
+if AI was a dirty word.
+
+252
+00:21:51,120 --> 00:22:02,799
+And I remember I was actually encouraging everybody to use the word AI because to me that is one of the most audacious question humanity has ever
+
+253
+00:22:02,799 --> 00:22:08,559
+asked in our quest for science and technology and I feel very proud of this term.
+
+254
+00:22:08,559 --> 00:22:12,720
+But yes, at the beginning some people were not sure.
+
+255
+00:22:12,720 --> 00:22:14,799
+>> What year was that roughly when AI was developed?
+
+256
+00:22:14,799 --> 00:22:24,000
+2016 I think that was >> less than 10 years ago >> that was the changing like um some people start calling it AI but I think
+
+257
+00:22:24,000 --> 00:22:35,760
+if you look at the Silicon Valley tech company companies if you trace their marketing term I think 2017ish
+
+258
+00:22:35,760 --> 00:22:46,320
+was the beginning of companies calling themselves AI companies >> that's incredible just how the world has changed now you Can't not call yourself an AI company.
+
+259
+00:22:46,320 --> 00:22:46,720
+>> I know.
+
+260
+00:22:46,720 --> 00:22:48,720
+>> Just nineish years later.
+
+261
+00:22:48,720 --> 00:22:49,360
+>> Yeah.
+
+262
+00:22:49,360 --> 00:22:50,640
+>> Oh man.
+
+263
+00:22:50,640 --> 00:22:51,120
+Okay.
+
+264
+00:22:51,120 --> 00:23:01,039
+Is there anything else around the history that early history that you think people don't know that you think is important before we chat about where think things are going in the work that you're doing?
+
+265
+00:23:01,039 --> 00:23:09,360
+>> I think as all histories, you know, I'm keenly aware that uh I am recognized for being part of the history,
+
+266
+00:23:09,360 --> 00:23:12,799
+but there are so many heroes and so many researchers.
+
+267
+00:23:12,799 --> 00:23:16,320
+We're talking about generations of researchers there.
+
+268
+00:23:16,320 --> 00:23:24,320
+You know, in my own world, there are so many people who have in inspired me, which I I talked about in my book.
+
+269
+00:23:24,320 --> 00:23:34,240
+But I do feel our culture, especially Silicon Valley tends to assign um achievements to a single
+
+270
+00:23:34,240 --> 00:23:35,360
+person.
+
+271
+00:23:35,360 --> 00:23:41,120
+Well, while I think it has value, um but it's it's just to be remembered.
+
+272
+00:23:41,120 --> 00:23:48,000
+AI is a field of at this point 70 years old and we have gone through many generations.
+
+273
+00:23:48,000 --> 00:23:54,000
+Um nobody no one um could have gotten here by themselves.
+
+274
+00:23:54,000 --> 00:23:54,640
+>> Okay.
+
+275
+00:23:54,640 --> 00:23:56,240
+So let me ask you this question.
+
+276
+00:23:56,240 --> 00:23:58,960
+It feels like we're always on this precipice of AGI.
+
+277
+00:23:58,960 --> 00:24:00,720
+This kind of vague term people throw around.
+
+278
+00:24:00,720 --> 00:24:01,600
+AGI is coming.
+
+279
+00:24:01,600 --> 00:24:03,840
+Is it going to take over everything?
+
+280
+00:24:03,840 --> 00:24:06,720
+How what's your take on how far you think we might be from AGI?
+
+281
+00:24:06,720 --> 00:24:09,360
+Do you think we're going to get there on the current trajectory we're on?
+
+282
+00:24:09,360 --> 00:24:10,480
+Do you think we need more breakthroughs?
+
+283
+00:24:10,480 --> 00:24:13,360
+Do you think the current approach will get us there?
+
+284
+00:24:13,360 --> 00:24:15,840
+>> Yeah, this is a very interesting term, Lenny.
+
+285
+00:24:15,840 --> 00:24:23,840
+Um, I don't know if anyone has ever defined AGI.
+
+286
+00:24:23,840 --> 00:24:35,039
+You know, there are many different definitions including, you know, some kind of superpower for machines all the way to can um a machines can become
+
+287
+00:24:35,039 --> 00:24:40,640
+economically viable agent in in the society.
+
+288
+00:24:40,640 --> 00:24:43,200
+In other words, making salaries to live.
+
+289
+00:24:43,200 --> 00:24:45,840
+Is that the definition of AGI?
+
+290
+00:24:45,840 --> 00:24:54,880
+As a scientist, I I take science very seriously and I enter the field because I was inspired by this audacious
+
+291
+00:24:54,880 --> 00:25:02,480
+question of can machines think and do things in the way that human humans can do.
+
+292
+00:25:02,480 --> 00:25:05,919
+For me, that's always the northstar of AI.
+
+293
+00:25:05,919 --> 00:25:10,880
+And from that point of view, I don't know what's the difference between AI and AGI.
+
+294
+00:25:10,880 --> 00:25:18,400
+I think we've done very well in achieving parts of the goal, including conversational AI,
+
+295
+00:25:18,400 --> 00:25:23,679
+but I don't think we have completely conquered all the goals uh of of AI.
+
+296
+00:25:23,679 --> 00:25:33,200
+And I think our founding fathers that Alan Turing, I wonder if Alan Turing is around today and you ask him to contrast AI versus
+
+297
+00:25:33,200 --> 00:25:40,480
+AGI, he might just shrug and said, well, I asked the same question back in 1940s.
+
+298
+00:25:40,480 --> 00:25:47,600
+So, so I don't want to get get onto a rabbit hole of defining AI versus AGI.
+
+299
+00:25:47,600 --> 00:25:52,880
+I feel AGI is more a marketing term than a scientific term.
+
+300
+00:25:52,880 --> 00:26:01,279
+As a scientist and technologist, AI is my northstar is my field's northstar and I'm happy people call it
+
+301
+00:26:01,279 --> 00:26:05,200
+whatever name they want to call it.
+
+302
+00:26:05,200 --> 00:26:12,640
+>> So let me ask you maybe maybe this way like you described there's kind of these components that from ImageNet and AlexNet kind of took us to where we're
+
+303
+00:26:12,640 --> 00:26:13,760
+today.
+
+304
+00:26:13,760 --> 00:26:20,000
+GPUs essentially data label data just like the algorithm of the model.
+
+305
+00:26:20,000 --> 00:26:24,720
+There's also just the transformer feels like an important step in that trajectory.
+
+306
+00:26:24,720 --> 00:26:34,159
+Do you feel like those are the same components that'll get us to I don't know 10 times smarter model something that's like life-changing for the entire world or do you think we need more breakthroughs?
+
+307
+00:26:34,159 --> 00:26:44,400
+I know we're we're going to talk about world models which I think is a component of this but is there anything else that you think is like oh this will plateau or okay this will take us just need more data more compute more GPUs.
+
+308
+00:26:44,400 --> 00:26:47,840
+>> Oh no I definitely think we need more uh innovations.
+
+309
+00:26:47,840 --> 00:26:58,159
+I I think scaling loss of more data, more GPUs and bigger current model architecture is there's still a lot to be done there.
+
+310
+00:26:58,159 --> 00:27:01,200
+But I absolutely think we need to innovate more.
+
+311
+00:27:01,200 --> 00:27:11,919
+Um there is not a single deeply scientific discipline in human history that has arrived at a place that says we're done.
+
+312
+00:27:11,919 --> 00:27:13,120
+We're done innovating.
+
+313
+00:27:13,120 --> 00:27:22,720
+And AI is one one of the if not the youngest discipline in in human civilization in terms of science and technology.
+
+314
+00:27:22,720 --> 00:27:24,799
+We're still scratching the surface.
+
+315
+00:27:24,799 --> 00:27:29,760
+Uh for example, um like I said, we're going to segue into world models today.
+
+316
+00:27:29,760 --> 00:27:40,320
+You take a a model and and and run it through a a video of a couple of office rooms and ask the the model to
+
+317
+00:27:40,320 --> 00:27:41,919
+count the number of chairs.
+
+318
+00:27:41,919 --> 00:27:49,919
+And this is something a toddler could do or maybe maybe a a a elementary school kid could do and AI could not do that,
+
+319
+00:27:49,919 --> 00:27:50,240
+right?
+
+320
+00:27:50,240 --> 00:28:00,399
+So um there's just so much AI today could not do then let alone thinking about how did you know um someone like Isaac
+
+321
+00:28:00,399 --> 00:28:10,880
+Newton look at the movements of the celestial bodies and and and derive an equation or or a set of equations that
+
+322
+00:28:10,880 --> 00:28:21,200
+governs the movement of all bodies that level of creativity extrapolation abstraction we have no way of enabling
+
+323
+00:28:21,200 --> 00:28:23,120
+AI to do that today.
+
+324
+00:28:23,120 --> 00:28:25,919
+And then let's look at emotional intelligence.
+
+325
+00:28:25,919 --> 00:28:33,840
+If you look at a student coming into a teacher's office and have a conversation about motivation,
+
+326
+00:28:33,840 --> 00:28:41,120
+passion, what to learn, what's the problem that's that's you know really uh bothering you.
+
+327
+00:28:41,120 --> 00:28:51,039
+that conversation as powerful as as today's conversational bots are, you don't get that level of emotional cognitive
+
+328
+00:28:51,039 --> 00:28:53,679
+intelligence uh from today's AI.
+
+329
+00:28:53,679 --> 00:28:56,320
+So there's a lot we can do better.
+
+330
+00:28:56,320 --> 00:29:00,320
+Um and I do not believe we're done innovating.
+
+331
+00:29:00,320 --> 00:29:07,679
+>> Uh Demis had this really interesting interview recently from deep mind Google where someone asked him just like what do you think uh how far are we from AGI?
+
+332
+00:29:07,679 --> 00:29:08,880
+What does it look like when it's through there?
+
+333
+00:29:08,880 --> 00:29:20,799
+He had a really interesting way of approaching it is if we were to give a the most cutting edge model all the information until the end of the 20th century see if it could come up with all the breakthroughs Einstein had and so
+
+334
+00:29:20,799 --> 00:29:29,840
+far we're never near that but they can >> no we're not in fact it's even worse let's give AI all the data including
+
+335
+00:29:29,840 --> 00:29:38,640
+modern instruments data of celestial bodies which Newton did not have and give it to that and just ask AI to
+
+336
+00:29:38,640 --> 00:29:46,480
+create the six 17th century set of equations on the laws of bodily movements.
+
+337
+00:29:46,480 --> 00:29:48,960
+Today's AI cannot do that.
+
+338
+00:29:48,960 --> 00:29:50,720
+>> All right, we're a ways away is what I'm hearing.
+
+339
+00:29:50,720 --> 00:29:51,200
+>> Yeah.
+
+340
+00:29:51,200 --> 00:29:52,720
+>> Okay, so let's talk about world models.
+
+341
+00:29:52,720 --> 00:30:00,480
+This is uh to me this is just another really amazing example of you being ahead of where people end up.
+
+342
+00:30:00,480 --> 00:30:07,039
+So you were way ahead on okay, we just need a lot of clean data for AI and neural networks to learn.
+
+343
+00:30:07,039 --> 00:30:09,440
+uh you've been talking about this idea of world models for a long time.
+
+344
+00:30:09,440 --> 00:30:12,960
+You started a company to build uh essentially there's language models.
+
+345
+00:30:12,960 --> 00:30:14,000
+This is a different thing.
+
+346
+00:30:14,000 --> 00:30:14,880
+This is a world model.
+
+347
+00:30:14,880 --> 00:30:16,000
+We'll talk about what that is.
+
+348
+00:30:16,000 --> 00:30:19,679
+And now uh as I was preparing for this, Elon's like talking about world models.
+
+349
+00:30:19,679 --> 00:30:21,120
+Jensen's talking about world models.
+
+350
+00:30:21,120 --> 00:30:22,559
+I know Google's working on this stuff.
+
+351
+00:30:22,559 --> 00:30:24,399
+You've been at this for a long time.
+
+352
+00:30:24,399 --> 00:30:29,919
+And you're actually just launched something that's going to we're going to talk about uh right before this podcast airs.
+
+353
+00:30:29,919 --> 00:30:32,159
+Um talk about what is a world model?
+
+354
+00:30:32,159 --> 00:30:33,520
+Why is it so important?
+
+355
+00:30:33,520 --> 00:30:39,919
+I'm very excited to see that more and more people are talking about role models like Elon,
+
+356
+00:30:39,919 --> 00:30:41,279
+like Jensen.
+
+357
+00:30:41,279 --> 00:30:51,200
+Um, I have been thinking about really how to push AI forward all my life, right?
+
+358
+00:30:51,200 --> 00:31:03,120
+and the large language models uh that came out of uh the research world and then open AI and and all this for the past few years were
+
+359
+00:31:03,120 --> 00:31:07,679
+extremely inspiring even for a researcher like me.
+
+360
+00:31:07,679 --> 00:31:15,600
+I remembered when GPT2 came out and that was in I think late 2020.
+
+361
+00:31:15,600 --> 00:31:27,120
+I was um co-director um I still am but I was at that time uh full-time co-director of Stanford's uh human center AI institute and I I remember it
+
+362
+00:31:27,120 --> 00:31:37,919
+was you know the public was not aware of the power of the large language model yet but as researchers we were seeing it we're seeing the future and I had pretty
+
+363
+00:31:37,919 --> 00:31:45,679
+long conversations with my natural language processing colleagues like Percy Leang and Chris Batting,
+
+364
+00:31:45,679 --> 00:31:52,559
+we were talking about how critical this technology is going to be and Stanford uh AI institute,
+
+365
+00:31:52,559 --> 00:32:00,000
+human center AI institute, hi was the first one to establish a full research center um foundation model.
+
+366
+00:32:00,000 --> 00:32:06,880
+We were Percy Le Young and and many researchers led the first uh academic paper um foundation model.
+
+367
+00:32:06,880 --> 00:32:10,159
+So so it was just very inspiring for me.
+
+368
+00:32:10,159 --> 00:32:18,159
+So, of course, I come from the world of visual intelligence and I was just thinking there's so much we can um push
+
+369
+00:32:18,159 --> 00:32:28,720
+forward on beyond language because humans um humans have used our sense of
+
+370
+00:32:28,720 --> 00:32:36,080
+spatial intelligence and world understanding to do so many things and they are beyond language.
+
+371
+00:32:36,080 --> 00:32:45,519
+Think about a very chaotic first responder scene, whether it's fire or some traffic accident or or some
+
+372
+00:32:45,519 --> 00:32:47,279
+natural disaster.
+
+373
+00:32:47,279 --> 00:32:57,519
+And it's if you immerse yourself in those scene and think about how people organize themselves to to rescue people,
+
+374
+00:32:57,519 --> 00:33:06,799
+to stop further disasters, to put down fires, to to a lot of that is movements, is is
+
+375
+00:33:06,799 --> 00:33:15,440
+spontaneous understanding of objects, worlds, hum situational awareness.
+
+376
+00:33:15,440 --> 00:33:16,640
+Language is part of that.
+
+377
+00:33:16,640 --> 00:33:21,840
+But a lot of those situations language cannot get you to put down the fire.
+
+378
+00:33:21,840 --> 00:33:24,080
+So that is what is that?
+
+379
+00:33:24,080 --> 00:33:34,080
+I I was thinking a lot and in the meantime I was doing a lot of robotics research and I it ca it dawned on me that the lynch pin
+
+380
+00:33:34,080 --> 00:33:44,320
+of connecting the additional intelligence in addition to language and connecting embodied AI
+
+381
+00:33:44,320 --> 00:33:46,320
+which are robotics.
+
+382
+00:33:46,320 --> 00:33:57,120
+connecting visual intelligence is this sense of spatial intelligence about understanding the world and that's when um I think I um it
+
+383
+00:33:57,120 --> 00:34:09,040
+was 2024 I gave a TED talk about spatial intelligence and world models and uh I start formulating this idea uh back in
+
+384
+00:34:09,040 --> 00:34:19,679
+2022 um based on my robotics and computer vision research and then one thing that is really clear to me is that I really
+
+385
+00:34:19,679 --> 00:34:28,800
+want to work with the brightest uh technologist and and move as fast as possible to bring this technology to life.
+
+386
+00:34:28,800 --> 00:34:32,000
+And that's when we founded this company called World Labs.
+
+387
+00:34:32,000 --> 00:34:41,599
+And you can see the the the word world is in the title of our company because we believe so much in world modeling and spatial intelligence.
+
+388
+00:34:41,599 --> 00:34:44,480
+>> People are so used to just chat bots and that's a large language model.
+
+389
+00:34:44,480 --> 00:34:52,000
+So the simple way to understand a world model is you basically describe a scene and it generates an infinitely explorable world.
+
+390
+00:34:52,000 --> 00:34:56,240
+We'll link to a the thing you launch which we'll talk about but just is that a simple way to understand it?
+
+391
+00:34:56,240 --> 00:34:57,599
+>> That's part of it Lenny.
+
+392
+00:34:57,599 --> 00:35:08,160
+I think a simple way to understand a world model uh is that this model can allow anyone to create
+
+393
+00:35:08,160 --> 00:35:17,920
+any worlds in their mind's eye by prompting whether it's an image or a sentence and also be able to interact in this
+
+394
+00:35:17,920 --> 00:35:18,800
+world.
+
+395
+00:35:18,800 --> 00:35:28,720
+whether you're browsing and walking or or picking objects up or or or changing changing things as well as
+
+396
+00:35:28,720 --> 00:35:30,800
+to reason within this world.
+
+397
+00:35:30,800 --> 00:35:39,520
+For example, if if the person consuming if the agent consuming this output of the world model is a robot,
+
+398
+00:35:39,520 --> 00:35:47,680
+it should be able to plan its path and and help to you know tidy the kitchen for example.
+
+399
+00:35:47,680 --> 00:35:58,800
+So, so world model is a a foundation that that you can use to reason, to interact, and to create
+
+400
+00:35:58,800 --> 00:36:00,000
+worlds.
+
+401
+00:36:00,000 --> 00:36:00,400
+>> Great.
+
+402
+00:36:00,400 --> 00:36:00,720
+Yeah.
+
+403
+00:36:00,720 --> 00:36:08,880
+So, robots feels like that's potentially the next big focus for AI researchers and just like the impact on the world.
+
+404
+00:36:08,880 --> 00:36:16,079
+And what you're saying here is uh this is a key missing piece of making robots actually work in the real world.
+
+405
+00:36:16,079 --> 00:36:17,520
+Understanding how the world works.
+
+406
+00:36:17,520 --> 00:36:17,760
+>> Yeah.
+
+407
+00:36:17,760 --> 00:36:22,079
+Well, first of all, I do think there's more than robots that's exciting.
+
+408
+00:36:22,079 --> 00:36:25,200
+Um so, but I agree with everything you just said.
+
+409
+00:36:25,200 --> 00:36:33,440
+I think uh world modeling and spatial intelligence is a key missing piece of uh uh embody AI.
+
+410
+00:36:33,440 --> 00:36:42,960
+I also think let's not underestimate that humans are embodied agents and humans can be augmented by AI's uh
+
+411
+00:36:42,960 --> 00:36:54,160
+intelligence just like today humans are language animals but we're very much augmented by AI when helping us to you know do language tasks including
+
+412
+00:36:54,160 --> 00:36:55,359
+software engineering.
+
+413
+00:36:55,359 --> 00:37:07,119
+I I think that uh we shouldn't underestimate or maybe it's it's um we tend not to talk about how humans as an embodied agents can
+
+414
+00:37:07,119 --> 00:37:15,040
+actually benefit so much from world models and spatial intelligent u models as well as robots can.
+
+415
+00:37:15,040 --> 00:37:19,359
+So the big unlocks here, robots, which uh a huge deal.
+
+416
+00:37:19,359 --> 00:37:22,400
+If this works out, imagine each of us has robots doing a bunch of stuff for us.
+
+417
+00:37:22,400 --> 00:37:25,760
+Goes into, you know, they help us with disasters, things like that.
+
+418
+00:37:25,760 --> 00:37:27,920
+Uh games obviously is a really cool example.
+
+419
+00:37:27,920 --> 00:37:31,760
+Just like infinitely playable games that you just invent out of your head.
+
+420
+00:37:31,760 --> 00:37:39,119
+And then creativity feels like just like being fun, having fun, being creative, thinking of m wild new worlds and and environments.
+
+421
+00:37:39,119 --> 00:37:41,040
+>> And also design.
+
+422
+00:37:41,040 --> 00:37:51,920
+humans design from machines to buildings to homes and also scientific discovery right there is so much u I I like to use the example of
+
+423
+00:37:51,920 --> 00:38:02,640
+the discovery of the structure of DNA if you look at one of the most important piece in DNA's discovery history is the
+
+424
+00:38:02,640 --> 00:38:12,720
+X-ray defraction photo that was captured by Rosalyn Franklin and it was a flat 2D photo of a structure that looks like it
+
+425
+00:38:12,720 --> 00:38:16,000
+looks like a cross with defractions.
+
+426
+00:38:16,000 --> 00:38:18,960
+You can you can uh Google those photos.
+
+427
+00:38:18,960 --> 00:38:29,359
+But with that 2D flat photo, humans, especially two important humans, James Watson and Francis Crick,
+
+428
+00:38:29,359 --> 00:38:37,599
+in addition to their other uh information, was able to reason in 3D space and
+
+429
+00:38:37,599 --> 00:38:43,520
+deduce a highly three-dimensional double helix structure of the DNA.
+
+430
+00:38:43,520 --> 00:38:47,520
+And that structure cannot possibly be 2D.
+
+431
+00:38:47,520 --> 00:38:52,160
+You cannot think in 2D and deduce that structure.
+
+432
+00:38:52,160 --> 00:38:59,280
+You have to think in 3D spatial um use the the human spatial intelligence.
+
+433
+00:38:59,280 --> 00:39:07,920
+So I think even in scientific discovery um spatial intelligence or AI assisted spatial intelligence is critical.
+
+434
+00:39:07,920 --> 00:39:15,440
+>> This is such an example of I think it was Chris Dixon that had this line that the next big thing is going to start off feeling like a toy.
+
+435
+00:39:15,440 --> 00:39:20,400
+When Chad GBT just came out, if like I remember Salman just tweeted as like here's a cool thing we're playing with.
+
+436
+00:39:20,400 --> 00:39:21,040
+Check it out.
+
+437
+00:39:21,040 --> 00:39:24,000
+Now it's the fastest growing product all of history changed the world.
+
+438
+00:39:24,000 --> 00:39:24,320
+>> Yeah.
+
+439
+00:39:24,320 --> 00:39:28,400
+>> Uh and it's oftentimes the things that just look like okay this is cool.
+
+440
+00:39:28,400 --> 00:39:32,160
+Uh that it's fun to play with and end up changing the world most.
+
+441
+00:39:32,160 --> 00:39:32,960
+>> Yeah.
+
+442
+00:39:32,960 --> 00:39:37,760
+>> This episode is brought to you by Cinch, the customer communications cloud.
+
+443
+00:39:37,760 --> 00:39:40,320
+Here's the thing about digital customer communications.
+
+444
+00:39:40,320 --> 00:39:46,880
+Whether you're sending marketing campaigns, verification codes, or account alerts, you need them to reach users reliably.
+
+445
+00:39:46,880 --> 00:39:48,480
+That's where Cinch comes in.
+
+446
+00:39:48,480 --> 00:39:54,320
+Over 150,000 businesses, including eight of the top 10 largest tech companies globally,
+
+447
+00:39:54,320 --> 00:39:58,880
+use Cinch's API to build messaging, email, and calling into their products.
+
+448
+00:39:58,880 --> 00:40:02,800
+And there's something big happening in messaging that product teams need to know about.
+
+449
+00:40:02,800 --> 00:40:06,240
+Rich Communication Services, or RCS.
+
+450
+00:40:06,240 --> 00:40:08,800
+Think of RCS as SMS 2.0.
+
+451
+00:40:08,800 --> 00:40:16,000
+Instead of getting text from a random number, your users will see your verified company name and logo without needing to download anything new.
+
+452
+00:40:16,000 --> 00:40:18,720
+It's a more secure and branded experience.
+
+453
+00:40:18,720 --> 00:40:22,640
+Plus, you get features like interactive carousels and suggested replies.
+
+454
+00:40:22,640 --> 00:40:24,160
+And here's why this matters.
+
+455
+00:40:24,160 --> 00:40:27,200
+US carriers are starting to adopt RCS.
+
+456
+00:40:27,200 --> 00:40:36,640
+Cinch is already helping major brands send RCS messages around the world, and they're helping Lenny's podcast listeners get registered first before the rush hits the US market.
+
+457
+00:40:36,640 --> 00:40:40,800
+Learn more at get started at cinch.com/lenny.
+
+458
+00:40:40,800 --> 00:40:44,680
+That's s i nch.com/lenny.
+
+459
+00:40:45,280 --> 00:40:47,920
+>> I reached out to Ben Horowitz who loves what you're doing.
+
+460
+00:40:47,920 --> 00:40:49,200
+A big fan of yours.
+
+461
+00:40:49,200 --> 00:40:50,720
+Uh they're investors I believe.
+
+462
+00:40:50,720 --> 00:40:57,680
+And >> yeah, we we've known each other for for many years, but yes, right now they are investors of uh Warlaps.
+
+463
+00:40:57,680 --> 00:40:58,160
+>> Amazing.
+
+464
+00:40:58,160 --> 00:40:58,319
+Okay.
+
+465
+00:40:58,319 --> 00:41:08,319
+So I asked him what I should ask you about and he suggested ask you why is the bitter why is the bitter lesson alone not likely to work for robots.
+
+466
+00:41:08,319 --> 00:41:16,480
+So first of all just explain what the bitter lesson was in the history of AI and then just why that won't get us to where we want to be with robots.
+
+467
+00:41:16,480 --> 00:41:26,480
+So well first of all there are many bitter lessons but but the bitter lessons everybody refers to is a u is a paper written by Richard
+
+468
+00:41:26,480 --> 00:41:37,280
+Sutton who won the touring award recently and he does a lot of reinforcement learning and Richard has said right if you look at the the history especially the algorithmic
+
+469
+00:41:37,280 --> 00:41:44,960
+development of AI it turns out simpler model with a ton of data always win at
+
+470
+00:41:44,960 --> 00:41:52,560
+the end of the day instead of the the um the you know more complex model with less data.
+
+471
+00:41:52,560 --> 00:42:04,480
+I mean that was actually this paper came years after imageet that to me was not bitter it was a sweet lesson that's why I built uh image net because
+
+472
+00:42:04,480 --> 00:42:14,720
+I believe that uh big data plays that role so why can bitter lesson work in robotics alone well first of all um I
+
+473
+00:42:14,720 --> 00:42:24,560
+think we need to give credit to where we are today robotics is very much in the early days of experimentation.
+
+474
+00:42:24,560 --> 00:42:30,800
+It's not the the research is not nearly as mature as say language models.
+
+475
+00:42:30,800 --> 00:42:40,400
+So many people are still um experimenting with different algorithms and some of those algorithms are driven by big data.
+
+476
+00:42:40,400 --> 00:42:51,200
+So I do think big data will continue to play a role in robotics and um but what is hard for
+
+477
+00:42:51,200 --> 00:43:02,319
+robotics there are a couple of things one is that it's harder to get data it's a lot harder to get data you can say well there is web data this is where the
+
+478
+00:43:02,319 --> 00:43:11,440
+latest robotics research is using web videos and I think web videos do do play a role but if you Think about what made
+
+479
+00:43:11,440 --> 00:43:12,880
+language model work.
+
+480
+00:43:12,880 --> 00:43:18,960
+A very as someone who does computer vision and and spatial intelligence and robotics,
+
+481
+00:43:18,960 --> 00:43:29,280
+I'm very jealous of my colleagues in um in language because they had this perfect setup where their training data are in
+
+482
+00:43:29,280 --> 00:43:36,640
+words eventually tokens and then they produce a model that outputs words.
+
+483
+00:43:36,640 --> 00:43:47,119
+So you have this perfect alignment between what you hope to get which we call objective function and what your training data looks like.
+
+484
+00:43:47,119 --> 00:43:48,720
+But robotics is different.
+
+485
+00:43:48,720 --> 00:43:51,119
+Even spatial intelligence is different.
+
+486
+00:43:51,119 --> 00:43:56,240
+You hope to get actions out of robots.
+
+487
+00:43:56,240 --> 00:44:02,640
+But your training data lacks actions in 3D worlds.
+
+488
+00:44:02,640 --> 00:44:04,560
+And that's what robots have to do, right?
+
+489
+00:44:04,560 --> 00:44:06,400
+actions in 3D worlds.
+
+490
+00:44:06,400 --> 00:44:13,760
+So, you have to um find different ways to fit a uh what do they
+
+491
+00:44:13,760 --> 00:44:23,200
+call a a a a square in a round hole that what we have is tons of web videos.
+
+492
+00:44:23,200 --> 00:44:33,040
+So then we have to start talking about uh adding supplementing data such as teleaoperation data or
+
+493
+00:44:33,040 --> 00:44:41,760
+synthetic data so that the robots are trained with this hypothesis of bitter lesson which is large amount of data.
+
+494
+00:44:41,760 --> 00:44:51,520
+I think there's still hope because even what we are doing um in world modeling will really unlock a lot of this uh
+
+495
+00:44:51,520 --> 00:44:59,040
+information for robots but I think we have to be careful because we're at the early days of this and bitter lesson is
+
+496
+00:44:59,040 --> 00:45:09,760
+still to be tested uh because we haven't fully figured out the data for another part of the bitter lesson of robotics I
+
+497
+00:45:09,760 --> 00:45:19,359
+think we should be so so realistic about is again compared to language models or even spatial models,
+
+498
+00:45:19,359 --> 00:45:22,319
+robots are physical systems.
+
+499
+00:45:22,319 --> 00:45:28,560
+So robots are closer to self-driving cars than a large language model.
+
+500
+00:45:28,560 --> 00:45:31,040
+And that's very important to recognize.
+
+501
+00:45:31,040 --> 00:45:40,720
+That means that in order for robots to work, we not only need brains, we also need the physical body,
+
+502
+00:45:40,720 --> 00:45:44,160
+we also need application scenarios.
+
+503
+00:45:44,160 --> 00:45:53,040
+And if you look at the the the the the history of self-driving car, um my colleague Sebastian Thrum uh uh took
+
+504
+00:45:53,040 --> 00:46:00,800
+Stanford's car uh to win the first DARPA challenge in 2006 or 2005.
+
+505
+00:46:00,800 --> 00:46:10,400
+It's 20 years since that prototype of a self-driving car being able to drive 130 miles in the
+
+506
+00:46:10,400 --> 00:46:19,200
+Nevada desert to today's Whimo and um on the street of San Francisco and we're not even done yet.
+
+507
+00:46:19,200 --> 00:46:20,319
+There's still a lot.
+
+508
+00:46:20,319 --> 00:46:22,480
+So that's a 20 year journey.
+
+509
+00:46:22,480 --> 00:46:25,520
+And self-driving cars are much simpler robots.
+
+510
+00:46:25,520 --> 00:46:29,359
+They're just metal boxes running on 2D surfaces.
+
+511
+00:46:29,359 --> 00:46:32,400
+And the goal is not to touch anything.
+
+512
+00:46:32,400 --> 00:46:39,920
+Robot is 3D things running in 3D world and the goal is to touch things.
+
+513
+00:46:39,920 --> 00:46:50,400
+So the journey is going to be you know there's many aspects elements and of course one could say well the self-driving car early
+
+514
+00:46:50,400 --> 00:46:53,359
+algorithm were pre-deep learning era.
+
+515
+00:46:53,359 --> 00:46:57,920
+So deep learning is accelerating uh the brains and I think that's true.
+
+516
+00:46:57,920 --> 00:46:59,520
+That's why I'm in robotics.
+
+517
+00:46:59,520 --> 00:47:03,520
+That's why I'm in spatial intelligence and I'm excited by it.
+
+518
+00:47:03,520 --> 00:47:12,800
+But in the meantime, the car industry is very mature and productizing also involves the mature
+
+519
+00:47:12,800 --> 00:47:16,160
+use cases, supply chains, the hardware.
+
+520
+00:47:16,160 --> 00:47:20,720
+So I think it's a very interesting time to work in these problems.
+
+521
+00:47:20,720 --> 00:47:22,960
+But it's true Ben is right.
+
+522
+00:47:22,960 --> 00:47:29,280
+we might still be subject to a number of bitter lessons >> doing this work.
+
+523
+00:47:29,280 --> 00:47:35,359
+Do you ever just feel awe for the way the brain works and is able to do all of this for us?
+
+524
+00:47:35,359 --> 00:47:41,520
+Just the complexity just to get a a machine to just walk around and not hit things and fall.
+
+525
+00:47:41,520 --> 00:47:44,240
+Does it just give you more spec for what we've already got?
+
+526
+00:47:44,240 --> 00:47:44,960
+>> Totally.
+
+527
+00:47:44,960 --> 00:47:49,599
+We we operate on about 20 watts.
+
+528
+00:47:49,599 --> 00:47:52,480
+That's dimmer than any light bulb in in the room.
+
+529
+00:47:52,480 --> 00:47:54,000
+I'm in right now.
+
+530
+00:47:54,000 --> 00:47:57,359
+And yet we can do so much.
+
+531
+00:47:57,359 --> 00:48:03,280
+So I think actually the more I work in AI, the more I respect humans.
+
+532
+00:48:03,280 --> 00:48:05,920
+>> Let's talk about this uh product you just launched.
+
+533
+00:48:05,920 --> 00:48:06,800
+It's called Marble.
+
+534
+00:48:06,800 --> 00:48:08,000
+A very cute name.
+
+535
+00:48:08,000 --> 00:48:09,520
+Talk about what this is, why this important.
+
+536
+00:48:09,520 --> 00:48:10,240
+I've been playing with it.
+
+537
+00:48:10,240 --> 00:48:10,880
+It's incredible.
+
+538
+00:48:10,880 --> 00:48:13,280
+We'll link to it and for folks to check it out.
+
+539
+00:48:13,280 --> 00:48:14,560
+What is Marble?
+
+540
+00:48:14,560 --> 00:48:16,000
+>> Yeah, I'm very excited.
+
+541
+00:48:16,000 --> 00:48:22,240
+So first of all, Marbo is uh one of the first product that World Labs uh has rolled out.
+
+542
+00:48:22,240 --> 00:48:26,000
+Worldlabs is a foundation frontier model company.
+
+543
+00:48:26,000 --> 00:48:31,440
+We are founded by four co-founders who have deep technical history.
+
+544
+00:48:31,440 --> 00:48:37,359
+My co-founders Justin Johnson uh Kristoff uh Lassner and Ben Mildenhal.
+
+545
+00:48:37,359 --> 00:48:43,440
+We all come from the research field of AI, computer graphics, computer vision.
+
+546
+00:48:43,440 --> 00:48:54,480
+And uh we believe that spatial intelligence and world modeling is as important if not more to uh language models and uh complementaryary to to
+
+547
+00:48:54,480 --> 00:48:55,440
+language models.
+
+548
+00:48:55,440 --> 00:49:04,960
+So we wanted to seize this opportunity to create deep uh tech research lab that can connect the dots
+
+549
+00:49:04,960 --> 00:49:08,960
+between um frontier models with products.
+
+550
+00:49:08,960 --> 00:49:15,680
+So, Marvel is an app that's built upon our frontier models.
+
+551
+00:49:15,680 --> 00:49:26,160
+We've spent a year and plus building the world's first uh generative model that can output genuinely 3D worlds.
+
+552
+00:49:26,160 --> 00:49:28,480
+That's a very very hard problem.
+
+553
+00:49:28,480 --> 00:49:34,400
+Um and uh and I it it was a very hard process.
+
+554
+00:49:34,400 --> 00:49:41,359
+Uh we uh we have a team of incredible founding team of incredible technologists from
+
+555
+00:49:41,359 --> 00:49:45,920
+you know incredible uh teams.
+
+556
+00:49:45,920 --> 00:49:57,760
+And then around um just a month or two ago, we saw the first time that we we can just prompt with a sentence and an image and
+
+557
+00:49:57,760 --> 00:50:03,359
+multiple images and create worlds that we can just navigate in.
+
+558
+00:50:03,359 --> 00:50:08,880
+If you put it on goggle, which we have an option to let you do that, you can even walk around,
+
+559
+00:50:08,880 --> 00:50:09,200
+right?
+
+560
+00:50:09,200 --> 00:50:18,319
+So it was even though we've been building this for for for quite a while, it was still just all inspiring and we wanted to get into the
+
+561
+00:50:18,319 --> 00:50:20,960
+hands of uh people who need it.
+
+562
+00:50:20,960 --> 00:50:29,359
+And then we know that so many creators, designers, people who are thinking about uh robotic simulation,
+
+563
+00:50:29,359 --> 00:50:38,559
+people who are thinking about uh different use cases of uh navigable interactable um uh immersive worlds,
+
+564
+00:50:38,559 --> 00:50:41,680
+game developers will find this useful.
+
+565
+00:50:41,680 --> 00:50:45,839
+So we uh develop developed Marble as a first step.
+
+566
+00:50:45,839 --> 00:50:54,960
+It's it's again still very early uh but it's the world's first uh model doing this and it's the world's first uh product
+
+567
+00:50:54,960 --> 00:51:00,880
+that allows people to just uh prompt we call it prompt to worlds.
+
+568
+00:51:00,880 --> 00:51:02,079
+>> Well, I've been playing around with it.
+
+569
+00:51:02,079 --> 00:51:02,720
+It is insane.
+
+570
+00:51:02,720 --> 00:51:10,480
+Like you could just have a little sh world where you just infinitely walk around Middle Earth basically and there's no there's no one there yet but uh it's insane.
+
+571
+00:51:10,480 --> 00:51:11,200
+You just go anywhere.
+
+572
+00:51:11,200 --> 00:51:12,240
+There's like dystopian world.
+
+573
+00:51:12,240 --> 00:51:14,160
+I'm just looking at all these examples.
+
+574
+00:51:14,160 --> 00:51:14,480
+>> Yes.
+
+575
+00:51:14,480 --> 00:51:17,920
+Uh, and my favorite part actually, I don't know, I don't know if this is a feature or bug,
+
+576
+00:51:17,920 --> 00:51:22,559
+you can see like the dots of the world before it actually renders with all the textures.
+
+577
+00:51:22,559 --> 00:51:26,480
+And I just love to like you get a glimpse into what is going on with this model.
+
+578
+00:51:26,480 --> 00:51:27,440
+basically create.
+
+579
+00:51:27,440 --> 00:51:36,559
+>> That's so cool to hear because this is where as a researcher I I I'm learning because the the the the dots that lead
+
+580
+00:51:36,559 --> 00:51:44,880
+you into the world was a an intentional feature uh visualization.
+
+581
+00:51:44,880 --> 00:51:46,800
+It is not part of the model.
+
+582
+00:51:46,800 --> 00:51:50,319
+It's uh the model actually just generates the world.
+
+583
+00:51:50,319 --> 00:52:01,599
+We we were trying to find a way to guide people into the world and a number of engineers uh worked on different versions but we converged on the dot and so many people
+
+584
+00:52:01,599 --> 00:52:12,559
+you're not the only one told us how delightful that experience is and it it was really satisfying for us to hear that this intentional visualization
+
+585
+00:52:12,559 --> 00:52:19,119
+feature that's not just the big hardcore model actually has delighted our users.
+
+586
+00:52:19,119 --> 00:52:19,440
+>> Wow.
+
+587
+00:52:19,440 --> 00:52:24,720
+So, you add that to make it more uh like to have humans understand what's going on more,
+
+588
+00:52:24,720 --> 00:52:25,839
+get more delightful.
+
+589
+00:52:25,839 --> 00:52:27,440
+Wow, that is hilarious.
+
+590
+00:52:27,440 --> 00:52:32,640
+It makes me think about LM and the way they it's not the same thing, but they talk about what they're thinking and what they're doing.
+
+591
+00:52:32,640 --> 00:52:33,599
+>> Yes, it is.
+
+592
+00:52:33,599 --> 00:52:34,640
+It is.
+
+593
+00:52:34,640 --> 00:52:36,800
+>> It also makes me think about just the Matrix.
+
+594
+00:52:36,800 --> 00:52:39,359
+Like, it's exactly the Matrix experience.
+
+595
+00:52:39,359 --> 00:52:41,599
+I don't know if that was your inspiration.
+
+596
+00:52:41,599 --> 00:52:44,800
+>> Um, well, like I said, a number of engineers worked on that.
+
+597
+00:52:44,800 --> 00:52:46,720
+It could be their inspiration.
+
+598
+00:52:46,720 --> 00:52:50,400
+It's in their It's in their uh It's in their subconscious.
+
+599
+00:52:50,400 --> 00:52:50,720
+>> Yeah.
+
+600
+00:52:50,720 --> 00:52:51,040
+>> Okay.
+
+601
+00:52:51,040 --> 00:52:53,680
+So, just for folks that may want to play around with this, maybe use it.
+
+602
+00:52:53,680 --> 00:52:57,359
+What's like what are some applications today that folks can start using today?
+
+603
+00:52:57,359 --> 00:52:59,680
+What's what's your goal with this launch?
+
+604
+00:52:59,680 --> 00:53:00,160
+>> Yeah.
+
+605
+00:53:00,160 --> 00:53:09,040
+So, um we do believe that world modeling is very horizontal, but we're already seeing some really exciting uh use cases.
+
+606
+00:53:09,040 --> 00:53:18,319
+virtual production for movies because what they need are 3D uh worlds that they can align with the camera so
+
+607
+00:53:18,319 --> 00:53:26,800
+when the actors are acting on it uh they can you know they can uh position the camera and shoot the the segments really
+
+608
+00:53:26,800 --> 00:53:35,920
+well and uh we're already seeing um incredible use in fact I don't know if you have seen our launch video showing
+
+609
+00:53:35,920 --> 00:53:40,720
+marble it was produced by a virtual uh production company.
+
+610
+00:53:40,720 --> 00:53:46,160
+We we collaborated with Sony and they use marble things to shoot those videos.
+
+611
+00:53:46,160 --> 00:53:57,839
+So our we were collaborating with those uh uh technical artists and directors and they were saying this has cut our uh production time by uh 40x.
+
+612
+00:53:57,839 --> 00:53:59,599
+In fact it has tox.
+
+613
+00:53:59,599 --> 00:54:00,079
+>> Yes.
+
+614
+00:54:00,079 --> 00:54:08,559
+In fact, I had to because we only had one month to work on this project and and there were so many things they were trying to shoot.
+
+615
+00:54:08,559 --> 00:54:19,440
+So, so using marble really really significantly accelerated the production of virtual virtual production for VFX and movies.
+
+616
+00:54:19,440 --> 00:54:20,720
+That's one use cases.
+
+617
+00:54:20,720 --> 00:54:30,000
+We are already seeing our users putting uh taking our marble scene and taking the mesh export and putting games you know whether it's
+
+618
+00:54:30,000 --> 00:54:40,480
+games on VR or games uh just just just fun games that they they have developed we have had um we were showing uh an
+
+619
+00:54:40,480 --> 00:54:51,599
+example of uh robotic simulation because uh when I was I mean I'm still am a researcher doing robotic uh training.
+
+620
+00:54:51,599 --> 00:54:56,640
+One of the biggest pain point is to create synthetic data for training robots.
+
+621
+00:54:56,640 --> 00:54:59,280
+And these synthetic data needs to be very diverse.
+
+622
+00:54:59,280 --> 00:55:04,240
+They need to come from different environments with different objects to manipulate.
+
+623
+00:55:04,240 --> 00:55:10,559
+And uh and one path to it is is to ask uh computers to simulate.
+
+624
+00:55:10,559 --> 00:55:16,640
+Otherwise, humans have to, you know, build every single asset for robots.
+
+625
+00:55:16,640 --> 00:55:19,599
+That that's just going to take a lot longer.
+
+626
+00:55:19,599 --> 00:55:26,400
+So we already have researchers reaching out and wanting to use marble to create those synthetic environments.
+
+627
+00:55:26,400 --> 00:55:35,040
+We also have unexpected um user uh outreach in terms of uh how they want to
+
+628
+00:55:35,040 --> 00:55:35,920
+use marble.
+
+629
+00:55:35,920 --> 00:55:43,440
+For example, a psychologist team called us to use marble to do psychology research.
+
+630
+00:55:43,440 --> 00:55:54,559
+It turned out some of the psychiatric patients they study, they need to understand how their brain respond to different immersive scenes of
+
+631
+00:55:54,559 --> 00:55:56,000
+different features.
+
+632
+00:55:56,000 --> 00:56:01,760
+Uh, for example, messy scenes or clean scenes or or whatever you name it.
+
+633
+00:56:01,760 --> 00:56:08,000
+And it's very hard for researchers to get their hands on um these kind of immersive scenes.
+
+634
+00:56:08,000 --> 00:56:14,480
+and it will take them too long and too much budget to uh to to create.
+
+635
+00:56:14,480 --> 00:56:25,520
+And Marble is a really almost instantaneous way of getting so many of these um experimental uh environments into their hands.
+
+636
+00:56:25,520 --> 00:56:32,160
+So, we're seeing um uh we're seeing multiple use cases at this point, but the the VFX,
+
+637
+00:56:32,160 --> 00:56:39,119
+the game developers, the simulation uh uh developers as well as designers are very excited.
+
+638
+00:56:39,119 --> 00:56:41,119
+>> This is very much the way things work in AI.
+
+639
+00:56:41,119 --> 00:56:48,640
+I've had other AI leaders on the podcast and it's always like put things out there early as soon as you can to discover where the big use cases are.
+
+640
+00:56:48,640 --> 00:57:00,160
+the head of CHAJBT told me how when they first put out ChatJBT, he was just scanning TikTok to see how people were using it and all the things they were talking about and that's what convinced them where to lean in and and help them
+
+641
+00:57:00,160 --> 00:57:01,920
+see how people actually want to use it.
+
+642
+00:57:01,920 --> 00:57:04,240
+I love this last use case of like for therapy.
+
+643
+00:57:04,240 --> 00:57:11,200
+I'm just imagining like like heights, people seeing dealing with heights or snakes or spiders,
+
+644
+00:57:11,200 --> 00:57:12,720
+which >> it's amazing.
+
+645
+00:57:12,720 --> 00:57:20,880
+A friend of mine last night literally called me and talked about his height scare and asked me if marble should be used.
+
+646
+00:57:20,880 --> 00:57:21,599
+That's amazing.
+
+647
+00:57:21,599 --> 00:57:23,200
+You went straight there.
+
+648
+00:57:23,200 --> 00:57:29,359
+>> That's, you know, cuz I'm imagining all the like the exposure therapy uh stuff like this could be so good for that.
+
+649
+00:57:29,359 --> 00:57:31,040
+Uh that is so cool.
+
+650
+00:57:31,040 --> 00:57:40,400
+Okay, so let me I should have asked you this before, but I think there's a qu there's going to be a question of just how does this differ from things like V3 and other video generation models?
+
+651
+00:57:40,400 --> 00:57:46,640
+It's pretty clear to me, but I think it might be helpful just to explain how this different from all the video AI tools people have seen.
+
+652
+00:57:46,640 --> 00:57:57,599
+>> Wordlab's thesis is that spatial intelligence is fundamentally very important and spatial intelligence is not just uh uh it's not just about
+
+653
+00:57:57,599 --> 00:57:58,240
+videos.
+
+654
+00:57:58,240 --> 00:58:04,160
+In fact, the world is not passively watching videos passing by, right?
+
+655
+00:58:04,160 --> 00:58:12,960
+Um I I love uh Plato has the allegory of the cave analogy uh to describe vision.
+
+656
+00:58:12,960 --> 00:58:24,160
+He said that imagine a prisoner tied on his chair uh not not very uh humane but um uh in in a cave uh
+
+657
+00:58:24,160 --> 00:58:30,319
+watching a full life theater uh on the in front of him.
+
+658
+00:58:30,319 --> 00:58:36,079
+But but the actual live theater that actors are acting is behind his back.
+
+659
+00:58:36,079 --> 00:58:46,000
+It was just lit so that the projection of the the uh the action is on a on a wall of the cave and and then
+
+660
+00:58:46,000 --> 00:58:50,480
+the goal the the task of this prisoner is to figure out what's going on.
+
+661
+00:58:50,480 --> 00:58:59,599
+It's a pretty extreme example, but it really shows it describes what vision is about.
+
+662
+00:58:59,599 --> 00:59:06,079
+is that to make sense of the 3D world or 4D world out of 2D.
+
+663
+00:59:06,079 --> 00:59:14,640
+So spatial intelligence to me is deeper than owning creating that flat 2D world.
+
+664
+00:59:14,640 --> 00:59:24,640
+Spatial intelligence to me is the ability to create, reason, interact, make sense of
+
+665
+00:59:24,640 --> 00:59:32,880
+deeply spatial world, whether it's 2D or 3D or 4D, including dynamics and all that.
+
+666
+00:59:32,880 --> 00:59:35,280
+So, so World Lab is focusing on that.
+
+667
+00:59:35,280 --> 00:59:41,440
+And of course, um the ability to create videos per se, could be part of this.
+
+668
+00:59:41,440 --> 00:59:51,760
+And in fact uh just a couple of weeks ago we rolled out the world's first uh realtime demoable realtime video generation on a
+
+669
+00:59:51,760 --> 00:59:54,319
+single uh H100 GPU.
+
+670
+00:59:54,319 --> 00:59:58,480
+So we we we part of our technology includes that.
+
+671
+00:59:58,480 --> 01:00:09,920
+But I think Marvel is very different because we really want creators, designers, developers to have in their hands a
+
+672
+01:00:09,920 --> 01:00:17,760
+model that can give them uh worlds with 3D structure so they can use it for for their work.
+
+673
+01:00:17,760 --> 01:00:21,680
+And that's where that's why Marble is so different.
+
+674
+01:00:21,680 --> 01:00:26,640
+>> The way I see it is it's a it's a platform for a ton of opportunity to do stuff.
+
+675
+01:00:26,640 --> 01:00:33,440
+uh as you described videos are just like here's a oneoff video that's very fun and cool and you could and that's it and that's it and you move on.
+
+676
+01:00:33,440 --> 01:00:38,640
+>> By the way, we could in Marble we could allow people to export in video form.
+
+677
+01:00:38,640 --> 01:00:42,400
+So you could actually, like you said, you go into a world.
+
+678
+01:00:42,400 --> 01:00:53,520
+So So let's say it's a hobbit uh cave, you can actually, especially as a creator, you have such a uh specific way of uh uh moving the
+
+679
+01:00:53,520 --> 01:00:57,760
+camera in a trajectory in the director's mind, right?
+
+680
+01:00:57,760 --> 01:01:02,079
+And then you can export that uh from Marble into a video.
+
+681
+01:01:02,079 --> 01:01:03,599
+>> What does it take to create something like this?
+
+682
+01:01:03,599 --> 01:01:05,200
+Just like how big is the team?
+
+683
+01:01:05,200 --> 01:01:07,119
+How many how many GPUs you working?
+
+684
+01:01:07,119 --> 01:01:08,160
+Like anything you can share there?
+
+685
+01:01:08,160 --> 01:01:12,960
+I don't know how much of this is private information, but just what does it take to create something like this that you've launched here?
+
+686
+01:01:12,960 --> 01:01:16,319
+>> It takes a lot of brain power.
+
+687
+01:01:16,319 --> 01:01:20,720
+So, we just talk about 20 watts per brain.
+
+688
+01:01:20,720 --> 01:01:26,880
+It's uh so from that point of view, it's it's a small number, but but it's actually an incredible,
+
+689
+01:01:26,880 --> 01:01:31,680
+you know, it's a half billion years of evolution to get give us those power.
+
+690
+01:01:31,680 --> 01:01:40,240
+Um we have a team of 30ish people now and uh we are predominantly
+
+691
+01:01:40,240 --> 01:01:48,400
+uh researchers and research engineers and uh but we also have designers and and product.
+
+692
+01:01:48,400 --> 01:01:55,520
+We we actually really believe that we want to create a company that's anchored in the deep tech of
+
+693
+01:01:55,520 --> 01:02:03,599
+spatial intelligence but uh we we we are actually building serious products.
+
+694
+01:02:03,599 --> 01:02:14,240
+Um so so we have we have this uh integration of R&D and productization and of course we use you know a ton of
+
+695
+01:02:14,240 --> 01:02:15,520
+GPUs.
+
+696
+01:02:15,520 --> 01:02:20,079
+That's a that's the technical >> I'm so happy to hear.
+
+697
+01:02:20,079 --> 01:02:21,040
+>> Well, congrats on the launch.
+
+698
+01:02:21,040 --> 01:02:22,160
+I know this is a huge milestone.
+
+699
+01:02:22,160 --> 01:02:23,280
+I know this took a ton of work.
+
+700
+01:02:23,280 --> 01:02:26,480
+So, I just want to say congrats to you and your team.
+
+701
+01:02:26,480 --> 01:02:29,359
+>> Let me talk about your founder journey for a moment.
+
+702
+01:02:29,359 --> 01:02:30,720
+So, you're a founder of this company.
+
+703
+01:02:30,720 --> 01:02:32,000
+You started how many years ago?
+
+704
+01:02:32,000 --> 01:02:33,440
+Couple years ago, two, three years ago.
+
+705
+01:02:33,440 --> 01:02:34,640
+>> Oh, a year ago.
+
+706
+01:02:34,640 --> 01:02:36,000
+A year ago.
+
+707
+01:02:36,000 --> 01:02:36,480
+>> A year.
+
+708
+01:02:36,480 --> 01:02:37,200
+Okay.
+
+709
+01:02:37,200 --> 01:02:38,559
+>> 18 month.
+
+710
+01:02:38,559 --> 01:02:38,960
+Yeah.
+
+711
+01:02:38,960 --> 01:02:39,760
+>> Okay.
+
+712
+01:02:39,760 --> 01:02:46,319
+What's something you wish you knew before you started this that you wish you could like whisper into the ear of Fay of 18 months ago?
+
+713
+01:02:46,319 --> 01:02:52,400
+>> Well, I continue to wish I know the future of technology.
+
+714
+01:02:52,400 --> 01:03:01,280
+I think actually that's one of our founding advantage is that we see the future earlier in general than than most people.
+
+715
+01:03:01,280 --> 01:03:09,599
+But still, man, this is so exciting and so uh amazing that that what's unknown and what's coming.
+
+716
+01:03:09,599 --> 01:03:14,799
+But I know the reason you're asking me this question is not about the future of technology.
+
+717
+01:03:14,799 --> 01:03:24,319
+You're probably more, you know, look, I I did not start a company of this scale at 20 year old.
+
+718
+01:03:24,319 --> 01:03:30,240
+So, you know, I started a dry cleaner when I was 19, but that's a little smaller scale.
+
+719
+01:03:30,240 --> 01:03:39,119
+we got to talk about that >> and and then I you know um founded Google Cloud AI and then I founded an institute at Stanford but those are
+
+720
+01:03:39,119 --> 01:03:40,640
+different beasts.
+
+721
+01:03:40,640 --> 01:03:51,440
+I did feel I was a little more prepared as a a founder of the the grinding journey that um that I
+
+722
+01:03:51,440 --> 01:03:58,000
+um compared to maybe um maybe the the the 20 year old founders.
+
+723
+01:03:58,000 --> 01:04:07,599
+But I still I'm surprised and and and uh it puts me into paranoia sometimes that how
+
+724
+01:04:07,599 --> 01:04:17,760
+intensely competitive uh AI landscape is from from the model the technology itself as
+
+725
+01:04:17,760 --> 01:04:19,440
+well as talents.
+
+726
+01:04:19,440 --> 01:04:27,920
+And you know when I founded the company um we did not have these incredible stories of how much
+
+727
+01:04:27,920 --> 01:04:39,760
+certain talents would cost you know um so these are things that continue to surprise me and uh and I have to be very alert about.
+
+728
+01:04:39,760 --> 01:04:45,839
+>> So the competition you're talking about is yeah the competition for talent the speed at which how things are moving.
+
+729
+01:04:45,839 --> 01:04:46,720
+>> Yeah.
+
+730
+01:04:46,720 --> 01:04:48,000
+>> Yeah.
+
+731
+01:04:48,000 --> 01:04:53,200
+you mentioned this point that I want to come back to that you if you just look over the course of your career.
+
+732
+01:04:53,200 --> 01:05:01,839
+You were like at all of the major uh collections of humans that led to so many of the breakthroughs that are happening today.
+
+733
+01:05:01,839 --> 01:05:09,760
+Obviously we talked about Imageet also just sale at Stanford is where a lot of the work happened at Google cloud which a lot of the breakthroughs happened.
+
+734
+01:05:09,760 --> 01:05:11,599
+What brought you to those places?
+
+735
+01:05:11,599 --> 01:05:17,760
+uh like for people looking for how to advance in their career, be at the center of the future,
+
+736
+01:05:17,760 --> 01:05:25,599
+just like is there a throughine there of just what pulled you from place to place and pulled you into those groups that might be helpful for people to hear?
+
+737
+01:05:25,599 --> 01:05:37,119
+>> Yeah, this is actually a great question, Lenny, because I do think about it and uh obviously we talked about it curiosity and passion that brought me to AI.
+
+738
+01:05:37,119 --> 01:05:40,079
+That is more a scientific northstar, right?
+
+739
+01:05:40,079 --> 01:05:43,839
+I did not care if AI was a thing or not.
+
+740
+01:05:43,839 --> 01:05:45,839
+So, so that was one part.
+
+741
+01:05:45,839 --> 01:05:56,799
+But how did I end up choosing um in the particular places I work in including starting world labs is
+
+742
+01:05:56,799 --> 01:06:04,640
+I think I'm very grateful to myself or maybe to my parents' jeans.
+
+743
+01:06:04,640 --> 01:06:16,240
+I'm I'm an intellectually very fearless person and I have to say when I hire young people I look for that because I um
+
+744
+01:06:16,240 --> 01:06:25,440
+I think that's a very important quality if one wants to make a difference is that when you want to make a difference
+
+745
+01:06:25,440 --> 01:06:31,280
+you have to accept that you're creating something new or you're diving into something new.
+
+746
+01:06:31,280 --> 01:06:32,880
+people haven't done that.
+
+747
+01:06:32,880 --> 01:06:43,039
+And if you have that self-awareness, you almost have to allow yourself to be fearless and to be courageous.
+
+748
+01:06:43,039 --> 01:06:54,799
+So when I uh for example um came to Stanford, you know, in the world of academia, I was very close to this thing called
+
+749
+01:06:54,799 --> 01:07:00,640
+tenure um which is, you know, have the job forever in in at Princeton.
+
+750
+01:07:00,640 --> 01:07:07,359
+But I I choose to chose to come to Stanford because I love Princeton.
+
+751
+01:07:07,359 --> 01:07:09,039
+It's my alma mater.
+
+752
+01:07:09,039 --> 01:07:20,880
+It's just at that moment there are people who are so amazing at Stanford and the Silicon Valley ecosystem was so amazing that I was okay
+
+753
+01:07:20,880 --> 01:07:25,359
+to take a risk of restarting my tenure clock.
+
+754
+01:07:25,359 --> 01:07:33,039
+um going to um becoming the first uh female director of sale.
+
+755
+01:07:33,039 --> 01:07:41,359
+I was actually relatively speaking a very young faculty at that time and I wanted to do that because I care about that community.
+
+756
+01:07:41,359 --> 01:07:46,480
+I didn't spend too much time thinking about all the failure cases.
+
+757
+01:07:46,480 --> 01:07:54,160
+Obviously, I was very lucky that the more senior faculty supported me, but I just wanted to make a difference.
+
+758
+01:07:54,160 --> 01:07:56,799
+And then going to Google was similar.
+
+759
+01:07:56,799 --> 01:08:06,160
+I wanted to work with people like Jeff Dean, Jeff Hinton, and um all these incredible Dennis,
+
+760
+01:08:06,160 --> 01:08:08,240
+the the incredible people.
+
+761
+01:08:08,240 --> 01:08:13,680
+Um I you know, so so the same with World Labs.
+
+762
+01:08:13,680 --> 01:08:22,960
+I I I have this passion and I also believe that people with the same mission can do incredible things.
+
+763
+01:08:22,960 --> 01:08:26,080
+So that's how it guided my through through life.
+
+764
+01:08:26,080 --> 01:08:33,839
+I don't overink of all possible things that can go wrong because that's too many.
+
+765
+01:08:33,839 --> 01:08:39,520
+>> I feel like that's an important element of this is not focusing on the downside, focusing more on the people,
+
+766
+01:08:39,520 --> 01:08:40,319
+the mission.
+
+767
+01:08:40,319 --> 01:08:41,279
+What gets you excited?
+
+768
+01:08:41,279 --> 01:08:42,000
+What do you think?
+
+769
+01:08:42,000 --> 01:08:52,880
+Uh I do yeah I do want to say one thing to all the young talents in AI the engineers the researchers out there because some of you apply to world labs.
+
+770
+01:08:52,880 --> 01:08:56,239
+I I feel very privileged you considered world labs.
+
+771
+01:08:56,239 --> 01:09:07,839
+I do find many of the young people today think about every single aspect of a equation when they decide on
+
+772
+01:09:07,839 --> 01:09:09,199
+jobs at some point.
+
+773
+01:09:09,199 --> 01:09:13,040
+Maybe, you know, maybe maybe that's the way they want to do it.
+
+774
+01:09:13,040 --> 01:09:21,120
+But sometimes I do want to encourage young people to focus on what's important because I find myself
+
+775
+01:09:21,120 --> 01:09:27,359
+um constantly in mentoring mode when I talk to job job candidates.
+
+776
+01:09:27,359 --> 01:09:31,600
+Not necessarily recruiting or not recruiting, but just in mentoring mode.
+
+777
+01:09:31,600 --> 01:09:42,480
+When I see an incredible young talent who is overfocusing on every minute dimension and aspect of considering a
+
+778
+01:09:42,480 --> 01:09:50,319
+job when when maybe the most important thing is where's your passion?
+
+779
+01:09:50,319 --> 01:09:52,319
+Do you align with the mission?
+
+780
+01:09:52,319 --> 01:09:56,000
+Do you believe and have faith in this team?
+
+781
+01:09:56,000 --> 01:10:05,120
+and and just just focus on the impact and and you can make and the kind of work and team you can you can work with.
+
+782
+01:10:05,120 --> 01:10:05,760
+>> Yeah, it's tough.
+
+783
+01:10:05,760 --> 01:10:07,679
+It's tough for people in the AI space now.
+
+784
+01:10:07,679 --> 01:10:11,440
+There's so much so much at them, so much news, so much happening, so much FOMO.
+
+785
+01:10:11,440 --> 01:10:12,000
+>> That's true.
+
+786
+01:10:12,000 --> 01:10:13,120
+>> I could see the stress.
+
+787
+01:10:13,120 --> 01:10:14,960
+And so, I think that advice is really important.
+
+788
+01:10:14,960 --> 01:10:21,280
+Just like what will actually make you feel fulfilled in what you're doing, not just where's the fastest growing company?
+
+789
+01:10:21,280 --> 01:10:22,880
+Where's the who's going to win?
+
+790
+01:10:22,880 --> 01:10:23,600
+I don't know.
+
+791
+01:10:23,600 --> 01:10:28,320
+I want to make sure I ask you about the work you're doing today at Stanford at the HCI.
+
+792
+01:10:28,320 --> 01:10:32,480
+I think it's HAI human centered AI institute.
+
+793
+01:10:32,480 --> 01:10:33,840
+>> What are you what are you doing there?
+
+794
+01:10:33,840 --> 01:10:36,800
+I know this is a thing you do on the site still.
+
+795
+01:10:36,800 --> 01:10:46,640
+>> So yes, I HAI human center AI institute was co-founded by me and a group of faculty like uh professor John Hendy,
+
+796
+01:10:46,640 --> 01:10:52,960
+professor James Landy, um professor Chris Manning back in 2018.
+
+797
+01:10:52,960 --> 01:10:57,840
+I was actually finishing my last the last sabbatical at Google.
+
+798
+01:10:57,840 --> 01:11:07,040
+Um and uh it was a very very important decision for me because I could have stayed in industry
+
+799
+01:11:07,040 --> 01:11:18,239
+but my time at Google taught me one thing is AI is going to be a civilizational technology and it it's it dawned on me how important this is to
+
+800
+01:11:18,239 --> 01:11:27,520
+humanity to the point that I actually wrote a piece in New York Times that year 2018 to talk about the need for a
+
+801
+01:11:27,520 --> 01:11:38,239
+guiding framework to develop and to to apply AI and that framework has to be anchored in human benevolence is human
+
+802
+01:11:38,239 --> 01:11:48,080
+centerness and I felt that Stanford uh one of the world's top university in the heart of Silicon Valley that gave birth
+
+803
+01:11:48,080 --> 01:11:57,120
+to important companies from Nvidia to Google uh should um be a thought leader
+
+804
+01:11:57,120 --> 01:12:07,360
+uh to create this human- centered AI framework and to um to actually embody that in our research education and
+
+805
+01:12:07,360 --> 01:12:10,080
+policy and in ecosystem work.
+
+806
+01:12:10,080 --> 01:12:21,440
+So I founded HAI it uh you know after uh fast forward after six seven years it has become the world's largest AI institute
+
+807
+01:12:21,440 --> 01:12:30,000
+that does human- centered um uh research education uh ecosystem outreach and
+
+808
+01:12:30,000 --> 01:12:34,719
+policy uh in uh in uh impact.
+
+809
+01:12:34,719 --> 01:12:44,640
+Uh it involves hundreds of faculty across all eight schools at Stanford from medicine to education to sustainability to
+
+810
+01:12:44,640 --> 01:12:53,520
+business to engineering to humanities to uh law and uh we we support researchers
+
+811
+01:12:53,520 --> 01:13:04,560
+especially at the interdisciplinary area from digital economy to uh legal studies to political science to discovery of new drugs.
+
+812
+01:13:04,560 --> 01:13:10,080
+uh to to new algorithms to that's beyond transformers.
+
+813
+01:13:10,080 --> 01:13:21,920
+We also actually put a very strong focus on um on policy because when we started HAI I realized that Silicon Valley did not talk to
+
+814
+01:13:21,920 --> 01:13:32,719
+Washington DC and or Brussels or other parts of the world and it's re given how important this this technology is we
+
+815
+01:13:32,719 --> 01:13:35,040
+need to bring everybody on board.
+
+816
+01:13:35,040 --> 01:13:46,960
+So we created multiple programs from congressional boot camp to um AI index report to policy briefing and we
+
+817
+01:13:46,960 --> 01:13:56,320
+especially uh participated in policym including um advocating for a u a national AI
+
+818
+01:13:56,320 --> 01:14:05,280
+research cloud bill that was passed in the first Trump administration and participate participating in state level
+
+819
+01:14:05,280 --> 01:14:08,400
+uh regulatory AI discussions.
+
+820
+01:14:08,400 --> 01:14:18,640
+So there's a lot we did and and I continue to be um one of the the leaders even though I'm much less involved operationally
+
+821
+01:14:18,640 --> 01:14:24,480
+because I care not only we create this technology but we use it in the right way.
+
+822
+01:14:24,480 --> 01:14:24,800
+>> Wow.
+
+823
+01:14:24,800 --> 01:14:27,360
+I was not aware of all that other work you were doing.
+
+824
+01:14:27,360 --> 01:14:35,280
+Uh, as you were talking, I was reminded Charlie Mer had this quote, take a simple idea and take it very seriously.
+
+825
+01:14:35,280 --> 01:14:44,480
+I feel like you've done that in so many different ways and and stayed with it and it's unbelievable the impact that you've had in so many ways over the years.
+
+826
+01:14:44,480 --> 01:14:47,440
+I'm going to skip the lightning round and I'm just going to ask you one last question.
+
+827
+01:14:47,440 --> 01:14:49,679
+Is there anything else that you wanted to share?
+
+828
+01:14:49,679 --> 01:14:52,320
+Anything else you want to leave listeners with?
+
+829
+01:14:52,320 --> 01:14:55,840
+>> I I'm very excited by AI Lenny.
+
+830
+01:14:55,840 --> 01:15:05,679
+Uh I want to answer one question that I when I travel around the world everybody asks me is that if I'm a musician,
+
+831
+01:15:05,679 --> 01:15:13,679
+if I'm a teacher, middle school teacher, if I'm a nurse, if I'm an accountant, if I'm a
+
+832
+01:15:13,679 --> 01:15:21,440
+farmer, do I have a role in AI or is AI just going to take over my life or my work?
+
+833
+01:15:21,440 --> 01:15:26,239
+And I think this is the most important question of AI.
+
+834
+01:15:26,239 --> 01:15:37,199
+And I find that in Silicon Valley, we tend not to speak heart-to-heart with people with people like us and and not like us in
+
+835
+01:15:37,199 --> 01:15:46,560
+Silicon Valley, but like all of us, we tend to just toss around words like infinite productivity or infinite
+
+836
+01:15:46,560 --> 01:15:53,520
+leisure time or or you know, infinite power or whatever.
+
+837
+01:15:53,520 --> 01:15:56,719
+But at the end of the day, AI is about people.
+
+838
+01:15:56,719 --> 01:16:01,360
+And when people ask me that question, it's a resounding yes.
+
+839
+01:16:01,360 --> 01:16:03,679
+Everybody has a role in AI.
+
+840
+01:16:03,679 --> 01:16:07,760
+It depends on what what you do and what you want.
+
+841
+01:16:07,760 --> 01:16:16,800
+But no technology should take away human dignity and the human dignity and agency should be at the heart of the
+
+842
+01:16:16,800 --> 01:16:22,719
+development, the deployment as well as the governance of every technology.
+
+843
+01:16:22,719 --> 01:16:32,960
+So if you are a young artist and your passion is storytelling, uh, embrace AI as a tool.
+
+844
+01:16:32,960 --> 01:16:34,960
+In fact, embrace Marvel.
+
+845
+01:16:34,960 --> 01:16:37,440
+I hope it becomes a tool for you.
+
+846
+01:16:37,440 --> 01:16:44,400
+Um, because the way you tell your story is unique and this the world still needs it.
+
+847
+01:16:44,400 --> 01:16:55,040
+But how you tell your story, how do you use the most incredible tool to tell your story in the most unique way is important and
+
+848
+01:16:55,040 --> 01:16:57,840
+that that voice needs to be heard.
+
+849
+01:16:57,840 --> 01:17:05,600
+If you're a farmer near retirement, AI still matters because you're a citizen.
+
+850
+01:17:05,600 --> 01:17:07,760
+You can participate in your community.
+
+851
+01:17:07,760 --> 01:17:13,679
+You should have a voice in how AI is used, how AI is applied.
+
+852
+01:17:13,679 --> 01:17:22,320
+you you work with people that you can you know encourage all of all of you to use AI uh
+
+853
+01:17:22,320 --> 01:17:25,199
+to make life easier for you.
+
+854
+01:17:25,199 --> 01:17:36,320
+If you're a nurse, I hope you know that at least in my uh career, I have worked so much in healthc care research because I feel our
+
+855
+01:17:36,320 --> 01:17:46,560
+health care workers should be greatly augmented and helped by AI technology whether it's smart cameras to feed more
+
+856
+01:17:46,560 --> 01:17:57,440
+uh in information or robotic assistance because our nurses are overworked, over fatigued And as our society ages,
+
+857
+01:17:57,440 --> 01:18:01,280
+we need more help for for people to be taken care of.
+
+858
+01:18:01,280 --> 01:18:03,120
+So AI can play that role.
+
+859
+01:18:03,120 --> 01:18:14,719
+So I just want to say that it's so important that um even a technologist like me um are sincere about that
+
+860
+01:18:14,719 --> 01:18:16,960
+everybody has a role in AI.
+
+861
+01:18:16,960 --> 01:18:18,320
+>> What a beautiful way to end it.
+
+862
+01:18:18,320 --> 01:18:27,600
+Such a tie back to where we started about how it's up to us and take individual responsibility for what AI will do in our lives.
+
+863
+01:18:27,600 --> 01:18:29,199
+Final question, where can folks find Marble?
+
+864
+01:18:29,199 --> 01:18:29,840
+Where can they go?
+
+865
+01:18:29,840 --> 01:18:32,880
+Maybe uh try to join uh World Labs if they want to.
+
+866
+01:18:32,880 --> 01:18:33,600
+What's the website?
+
+867
+01:18:33,600 --> 01:18:34,880
+Where do people go?
+
+868
+01:18:34,880 --> 01:18:45,920
+>> Well, World Labs website is www.worldlabs.ai and you can find um you can find our research progress there.
+
+869
+01:18:45,920 --> 01:18:48,159
+We we have technical blogs.
+
+870
+01:18:48,159 --> 01:18:50,239
+You can find Marble the product there.
+
+871
+01:18:50,239 --> 01:18:51,840
+You can sign in there.
+
+872
+01:18:51,840 --> 01:18:55,440
+You can find our job posts uh link there.
+
+873
+01:18:55,440 --> 01:18:58,320
+You can uh you know, we're in San Francisco.
+
+874
+01:18:58,320 --> 01:19:02,000
+We love to work with the world's best talents.
+
+875
+01:19:02,000 --> 01:19:02,400
+>> Amazing.
+
+876
+01:19:02,400 --> 01:19:04,719
+Fay, thank you so much for being here.
+
+877
+01:19:04,719 --> 01:19:06,159
+>> Thank you, Lenny.
+
+878
+01:19:06,159 --> 01:19:09,400
+>> Bye, everyone.
+
+879
+01:19:09,600 --> 01:19:10,880
+Thank you so much for listening.
+
+880
+01:19:10,880 --> 01:19:15,280
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+881
+01:19:15,280 --> 01:19:17,440
+or your favorite podcast app.
+
+882
+01:19:17,440 --> 01:19:23,679
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+883
+01:19:23,679 --> 01:19:29,120
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+884
+01:19:29,120 --> 01:19:32,920
+See you in the next episode.

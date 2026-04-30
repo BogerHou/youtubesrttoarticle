@@ -1,0 +1,5319 @@
+1
+00:00:00,000 --> 00:00:01,920
+... Duolingo is a $14 billion company,  
+
+2
+00:00:01,920 --> 00:00:04,920
+it's hitting all-time highs too, it just 
+keeps going up, but I think it doubled in  
+
+3
+00:00:04,920 --> 00:00:09,680
+value in the past six months. Streaks is the 
+most impactful feature. We have, right now,  
+
+4
+00:00:09,680 --> 00:00:15,000
+over 9 million users with a year plus streak. 
+If you look at the numbers, I think it's been  
+
+5
+00:00:15,000 --> 00:00:20,720
+our biggest growth lever. What Duolingo really 
+focuses on is, how do we help users build habits  
+
+6
+00:00:20,720 --> 00:00:24,960
+around language learning? Getting user come back 
+the next day is the biggest problem to solve.
+
+7
+00:00:24,960 --> 00:00:27,800
+Let's get into the motherload of 
+learnings from the journey of streaks,  
+
+8
+00:00:27,800 --> 00:00:30,880
+talk about the key lessons, insights, 
+and also wrong turns along the way.
+
+9
+00:00:30,880 --> 00:00:36,760
+I'd say test everything, we've run in the last 
+four years over 600 experiments on the streaks,  
+
+10
+00:00:36,760 --> 00:00:41,160
+so every other day. We've actually set 
+up really good infrastructure for copy  
+
+11
+00:00:41,160 --> 00:00:44,600
+testing. We used to say continue, 
+our standard CTA is continue,  
+
+12
+00:00:44,600 --> 00:00:48,400
+and we changed that to commit to 
+my goal, and it was a massive win.
+
+13
+00:00:48,400 --> 00:00:51,200
+There's so much human psychology 
+that you all learn through all  
+
+14
+00:00:51,200 --> 00:00:55,080
+these experiments of just how to motivate 
+people, what motivates, what demotivates.
+
+15
+00:00:55,080 --> 00:01:00,320
+Say that you played a mobile game, or that you've 
+done it for 3,000 days in a row, I don't know,  
+
+16
+00:01:00,320 --> 00:01:07,640
+maybe that hits a little bit different than 
+you've learned Spanish for 3,000 days in a row.
+
+17
+00:01:07,640 --> 00:01:12,640
+Today, my guest is Jackson Shuttleworth. 
+Jackson is a group product manager at Duolingo,  
+
+18
+00:01:12,640 --> 00:01:18,200
+leading the retention team. This is a different 
+kind of episode that I'm experimenting with,  
+
+19
+00:01:18,200 --> 00:01:24,360
+where we spent the entire conversation focused 
+on the journey and lessons of a single feature,  
+
+20
+00:01:24,360 --> 00:01:31,480
+in this case, Duolingo streaks. Duolingo is a $14 
+billion business, just over the past six months,  
+
+21
+00:01:31,480 --> 00:01:36,320
+they doubled in value, they're hitting 
+all time highs in usage and market cap,  
+
+22
+00:01:36,320 --> 00:01:41,560
+they're also one of the very few successful and 
+also the single biggest consumer app business  
+
+23
+00:01:41,560 --> 00:01:46,640
+in the world. And as you'll hear from Jackson, 
+the streaks feature is the single most impactful  
+
+24
+00:01:46,640 --> 00:01:52,200
+feature that most contributed to this growth and 
+success. In other words, you could argue this  
+
+25
+00:01:52,200 --> 00:01:58,960
+one feature created billions of dollars of value, 
+which to me means it is worth studying in depth. 
+
+26
+00:01:58,960 --> 00:02:03,600
+In our conversation, Jackson shares the history 
+of the streaks feature, all of the biggest wins  
+
+27
+00:02:03,600 --> 00:02:08,520
+and wrong turns they've taken along the way, what 
+he and his team have learned about what works and  
+
+28
+00:02:08,520 --> 00:02:13,040
+doesn't work with a streaks mechanic, and also 
+how they set up their teams to operate in a way  
+
+29
+00:02:13,040 --> 00:02:18,400
+that allows them to run over 600 experiments 
+on this product and continue to find big wins.  
+
+30
+00:02:18,400 --> 00:02:23,280
+I hope to do more episodes like this on features 
+and products that you'd love to hear more about,  
+
+31
+00:02:23,280 --> 00:02:27,480
+so leave a comment either on YouTube or on 
+Substack, and tell me which product or feature  
+
+32
+00:02:27,480 --> 00:02:31,800
+you'd love to see me cover. And if you enjoy this 
+podcast, don't forget to subscribe and follow it  
+
+33
+00:02:31,800 --> 00:02:36,200
+in your favorite podcasting app or YouTube, it's 
+the best way to avoid missing future episodes,  
+
+34
+00:02:36,200 --> 00:02:40,760
+and it helps the podcast tremendously. With 
+that, I bring you Jackson Shuttleworth. 
+
+35
+00:02:40,760 --> 00:02:48,240
+Jackson, thank you so much for being 
+here and welcome to the podcast.
+
+36
+00:02:48,240 --> 00:02:50,760
+Yeah, thank you. Long time 
+listener, first time caller.
+
+37
+00:02:51,960 --> 00:02:57,640
+I appreciate it. So, this is going to be a really 
+interesting conversation, I've never done an  
+
+38
+00:02:57,640 --> 00:03:02,200
+episode like this before, where we basically 
+spent an hour, an hour and a half going into  
+
+39
+00:03:02,200 --> 00:03:09,320
+one feature of one product, but this is a very 
+special feature, it's a very special product.  
+
+40
+00:03:09,320 --> 00:03:13,720
+Have you ever spent an hour, an hour and a half 
+just talking about this one feature with anyone?
+
+41
+00:03:13,720 --> 00:03:17,960
+Well, internally, so when we onboard new 
+folks to the team, we'll do, I actually  
+
+42
+00:03:17,960 --> 00:03:21,800
+just did this with somebody that joined the team 
+recently, where we spent, yeah, I was like, hey,  
+
+43
+00:03:21,800 --> 00:03:25,720
+let's spend an hour just talking about the streak. 
+We got through an hour and I got through about  
+
+44
+00:03:25,720 --> 00:03:31,760
+30% of what I wanted to share, there's just so 
+much, we'll talk about this, but there's so much  
+
+45
+00:03:31,760 --> 00:03:35,480
+that we've learned over the years, but never 
+anything externally like this. I think we've  
+
+46
+00:03:35,480 --> 00:03:41,302
+shared bits and pieces of learnings, but this 
+will be the motherload of learnings hopefully-
+
+47
+00:03:41,302 --> 00:03:41,313
+Here we go.
+
+48
+00:03:41,313 --> 00:03:42,520
+... of how Duolingo built the streak.
+
+49
+00:03:42,520 --> 00:03:47,840
+We should title this the Motherload of Learnings 
+of Duolingo Streaks. This episode is brought  
+
+50
+00:03:47,840 --> 00:03:54,280
+to you by Pendo, the only all-in-one product 
+experience platform for any type of application.  
+
+51
+00:03:54,280 --> 00:03:58,440
+Tired of bouncing around multiple tools to 
+uncover what's really happening inside your  
+
+52
+00:03:58,440 --> 00:04:03,360
+product? With all the tools you need in one 
+simple-to-use platform, Pendo makes it easy  
+
+53
+00:04:03,360 --> 00:04:08,080
+to answer critical questions about how users are 
+engaging with your product, and then turn those  
+
+54
+00:04:08,080 --> 00:04:13,960
+insights into action. Also, you can get your users 
+to do what you actually want them to do. First,  
+
+55
+00:04:13,960 --> 00:04:18,640
+Pendo is built around product analytics, seeing 
+what your users are actually doing in your apps  
+
+56
+00:04:18,640 --> 00:04:24,040
+so that you can optimize their experience. Next, 
+Pendo lets you deploy in-app guides that lead  
+
+57
+00:04:24,040 --> 00:04:29,080
+users through the actions that matter most. 
+Then, Pendo integrates user feedback so that  
+
+58
+00:04:29,080 --> 00:04:34,840
+you can capture and analyze what people actually 
+want. And the new thing in Pendo, session replays,  
+
+59
+00:04:34,840 --> 00:04:40,120
+a very cool way to visualize user sessions.
+I'm not surprised at all that over 10,000  
+
+60
+00:04:40,120 --> 00:04:46,480
+companies use it today. Visit pendo.io/Lenny to 
+create your free Pendo account today and start  
+
+61
+00:04:46,480 --> 00:04:51,440
+building better experiences across every corner 
+of your product. P.S. Do you want to take your  
+
+62
+00:04:51,440 --> 00:04:56,320
+product-led know-how a step further? Check out 
+Pendo's lineup of free certification courses,  
+
+63
+00:04:56,320 --> 00:05:00,480
+led by talk product experts, and designed 
+to help you grow in advance in your career.  
+
+64
+00:05:00,480 --> 00:05:07,480
+Learn more and experience the power of the 
+Pendo platform today at pendo.io/Lenny.
+
+65
+00:05:07,480 --> 00:05:10,080
+Pendo.
+
+66
+00:05:10,080 --> 00:05:14,520
+This episode is brought to you by Vanta. 
+When it comes to ensuring your company  
+
+67
+00:05:14,520 --> 00:05:21,160
+has top-notch security practices, things get 
+complicated fast. Now, you can assess risk,  
+
+68
+00:05:21,160 --> 00:05:27,680
+secure the trust of your customers, and 
+automate compliance for SOC 2, ISO 27001,  
+
+69
+00:05:27,680 --> 00:05:34,120
+HIPAA, and more, with a single platform, Vanta. 
+Vanta's market-leading trust management platform  
+
+70
+00:05:34,120 --> 00:05:39,600
+helps you continuously monitor compliance, 
+alongside reporting and tracking risk. Plus,  
+
+71
+00:05:39,600 --> 00:05:46,120
+you can save hours by security questionnaires 
+with Vanta AI. Join thousands of global companies  
+
+72
+00:05:46,120 --> 00:05:51,760
+that use Vanta to automate evidence collection, 
+unify risk management, and streamline security  
+
+73
+00:05:51,760 --> 00:06:01,920
+reviews. Get $1,000 off Vanta when you go to 
+vanta.com/Lenny. That's V-A-N-T-A.com/Lenny. 
+
+74
+00:06:02,960 --> 00:06:06,840
+Okay, so for people that don't know anything about 
+what Duolingo streaks are, can you just first give  
+
+75
+00:06:06,840 --> 00:06:10,440
+a brief explanation of what is Duolingo 
+streaks? What is this feature all about?
+
+76
+00:06:10,440 --> 00:06:16,360
+Well, presumably people know, Duolingo is a 
+language learning app, the Duolingo streak  
+
+77
+00:06:16,360 --> 00:06:21,040
+tracks, currently anyway, how many days in a row 
+you've done a lesson. So, you come to Duolingo,  
+
+78
+00:06:21,040 --> 00:06:26,080
+you do a lesson, your first lesson you'll 
+start a streak, and then every consecutive day  
+
+79
+00:06:26,080 --> 00:06:29,840
+that you come use the app, you'll extend your 
+streak. And I should actually put an asterisk  
+
+80
+00:06:29,840 --> 00:06:35,080
+around how many days in a row because we also 
+have built flexibility into the feature. So,  
+
+81
+00:06:35,080 --> 00:06:39,680
+we have these things called streak freezes, 
+it's like insurance for your streaks. So, it's  
+
+82
+00:06:39,680 --> 00:06:46,680
+a pretty simple feature, in theory, but over time 
+we've layered on challenges, and goal setting,  
+
+83
+00:06:46,680 --> 00:06:53,280
+and rewards, and social features... A lot of 
+our notifications are tied to the streak. So,  
+
+84
+00:06:53,280 --> 00:06:58,560
+pretty simple feature to understand, but it's been 
+a really rich feature for us to build on top of.
+
+85
+00:06:58,560 --> 00:07:02,680
+Some people might be hearing this and be like, 
+Duolingo streaks, what's the big deal? There's  
+
+86
+00:07:02,680 --> 00:07:05,480
+other people that are like, holy, I want to 
+learn everything I can possibly learn about  
+
+87
+00:07:05,480 --> 00:07:09,400
+Duolingo streaks, so many companies are trying to 
+copy what you've learned from this. Give people a  
+
+88
+00:07:09,400 --> 00:07:14,320
+sense of the impact that this one feature 
+has had on Duolingo's success and growth.
+
+89
+00:07:15,280 --> 00:07:20,560
+And this is not just the subjective retention 
+PM talking, I think this is our biggest feature,  
+
+90
+00:07:21,240 --> 00:07:24,240
+with the exception of the lessons. And I think 
+it's actually [inaudible 00:07:24] start that.  
+
+91
+00:07:24,240 --> 00:07:29,960
+Streaks are a great engagement hack. I'm of the 
+opinion that any team, any app out there can  
+
+92
+00:07:29,960 --> 00:07:35,720
+introduce a streak, and if you figure it out, it 
+probably works to retain users, but at the core,  
+
+93
+00:07:35,720 --> 00:07:39,600
+you have to have an app that people want to use, 
+and people really like using Duolingo. It's fun,  
+
+94
+00:07:39,600 --> 00:07:44,400
+it's delightful, you learn something. And so, 
+it allows us to layer an engagement mechanic on  
+
+95
+00:07:44,400 --> 00:07:50,640
+top of that the streak is really powerful. 
+So, it ships a disgusting amount of DAUs,  
+
+96
+00:07:50,640 --> 00:07:57,800
+again, it is one of our golden geese. And again, 
+what's cool is that, you look at notifications,  
+
+97
+00:07:57,800 --> 00:08:05,800
+notifications for Duolingo is massive. Us sending 
+better, whether it's copy or timing, so many of  
+
+98
+00:08:05,800 --> 00:08:10,840
+our notifications work because they reference 
+the streak, because users care about the streak. 
+
+99
+00:08:10,840 --> 00:08:17,120
+And so, not only is it itself, us iterating on 
+the streak a huge driver of DAUs, but it's also  
+
+100
+00:08:17,120 --> 00:08:23,080
+something that enables other really high valuable 
+features. I was looking up some stats before I  
+
+101
+00:08:23,080 --> 00:08:29,920
+came on, and it's pretty crazy. So, we have right 
+now over 9 million users with a year plus streak.
+
+102
+00:08:29,920 --> 00:08:30,240
+Wow.
+
+103
+00:08:30,240 --> 00:08:36,960
+So, 9 million of our users have used 
+Duolingo every year, almost every day,  
+
+104
+00:08:36,960 --> 00:08:46,400
+for well over a year. Which is pretty... I don't 
+know, I like to imagine things in terms of like,  
+
+105
+00:08:46,400 --> 00:08:49,200
+okay, well, if you put all these 
+people in a city, or in a place,  
+
+106
+00:08:49,200 --> 00:08:52,360
+where would it be? I'm like, ah, it's 
+like a very large city, 9 million people.
+
+107
+00:08:53,480 --> 00:08:56,829
+For a year, have a year long streak.
+
+108
+00:08:56,829 --> 00:08:56,840
+For a year.
+
+109
+00:08:56,840 --> 00:09:03,080
+That's incredible. I was just looking at the stock 
+of Duolingo, so Duolingo is a $14 billion company  
+
+110
+00:09:03,080 --> 00:09:06,640
+at the time we're recording this. It's hitting 
+all-time highs too, it just keeps going up. I  
+
+111
+00:09:06,640 --> 00:09:11,120
+think it doubled in value in the past six months, 
+something like that. And what I'm hearing from you  
+
+112
+00:09:11,120 --> 00:09:17,440
+is streaks is, other than just the core learning 
+feature, which is just the product of Duolingo,  
+
+113
+00:09:17,440 --> 00:09:24,120
+this is the most feature in terms of 
+growth, and in that retention specifically.
+
+114
+00:09:24,120 --> 00:09:28,600
+If you look at the numbers, I think pretty 
+objectively has been our biggest growth lever  
+
+115
+00:09:28,600 --> 00:09:34,320
+for driving DAUs, and also say a lot of it's 
+just related to how we think about growth at  
+
+116
+00:09:34,320 --> 00:09:39,920
+Duolingo. And a lot of what we try to do is 
+organic growth. We think about growth just as  
+
+117
+00:09:39,920 --> 00:09:43,240
+much as bringing new users onto the platform 
+is not losing them. If you're just bringing  
+
+118
+00:09:43,240 --> 00:09:47,360
+people onto the platform, then they churn, 
+that's not going to be sustainable. And so,  
+
+119
+00:09:47,360 --> 00:09:52,800
+as much as we can do to keep our users 
+coming back and actually retaining as users,  
+
+120
+00:09:52,800 --> 00:09:57,400
+it's going to give us a much easier 
+base to continue growing DAUs off of.
+
+121
+00:09:57,400 --> 00:10:02,160
+Perfect. Okay. Talk about how this feature 
+originally came to be. What was the original  
+
+122
+00:10:02,160 --> 00:10:05,000
+version of it? What was the original 
+insight that led to [inaudible 00:10:05]-
+
+123
+00:10:05,000 --> 00:10:11,080
+Yeah, so the oldest streaks or as old as 
+Duolingo itself. When we launched Duolingo,  
+
+124
+00:10:11,080 --> 00:10:16,440
+we launched with a streak... And I say we, I was 
+just graduating undergrad when Duolingo launched.  
+
+125
+00:10:16,440 --> 00:10:24,320
+So, this is well before my time. But we launched 
+with a streak feature. Initially how the feature  
+
+126
+00:10:24,320 --> 00:10:29,440
+worked was you'd come to Duolingo and you'd set 
+a goal for yourself, and it was an XP based goal.  
+
+127
+00:10:29,440 --> 00:10:34,200
+So, Duolingo, a little bit of nomenclature, 
+we have an experience point based system that  
+
+128
+00:10:34,200 --> 00:10:37,960
+drives a lot of our features in the app. 
+And the way you'd set it is you'd say,  
+
+129
+00:10:37,960 --> 00:10:43,280
+based on what your language learning goal was, 
+maybe you have a 10 experience point goal versus  
+
+130
+00:10:43,280 --> 00:10:49,520
+a 50 experience point goal. And so, extending your 
+streak would be, hey, can you hit 50 experience  
+
+131
+00:10:49,520 --> 00:10:53,240
+points? If that's what you set your goal to be.
+And this worked well, I think this also speaks to  
+
+132
+00:10:53,240 --> 00:11:00,120
+how Duolingo initially grew. Luis launched it with 
+a TEDTalk, we probably had a more tech-forward  
+
+133
+00:11:00,120 --> 00:11:05,800
+user base initially, and so this whole idea of an 
+experience points based streak system made sense.  
+
+134
+00:11:05,800 --> 00:11:10,120
+But what that also meant is that you could have 
+a user come and use the app, do multiple lessons  
+
+135
+00:11:10,120 --> 00:11:14,840
+a day, and maybe they just set too hard of a goal 
+for themselves, and then lose their streak. Which,  
+
+136
+00:11:15,960 --> 00:11:19,840
+you don't need to be an expert in streaks to 
+understand that's probably not good. The nice  
+
+137
+00:11:19,840 --> 00:11:23,440
+thing with how we initially set it up though is 
+it really did connect with what your goal was. So,  
+
+138
+00:11:23,440 --> 00:11:28,560
+if you were serious, let's track how good 
+you are at being a serious language learner. 
+
+139
+00:11:28,560 --> 00:11:34,080
+But I'd say one of the most impactful experiments 
+we ran was about, this was actually as I was  
+
+140
+00:11:34,080 --> 00:11:41,520
+joining, or just after I joined we had run this 
+experiment, was to move it from a XP based streak  
+
+141
+00:11:41,520 --> 00:11:46,920
+to just do one lesson a day, and you'd extend your 
+streak. And the risk that you can sort of imagine  
+
+142
+00:11:46,920 --> 00:11:51,360
+is, well, then users kind of care less about 
+it because it's not connected with their goal.  
+
+143
+00:11:51,360 --> 00:11:57,920
+And we saw none of that. This was a huge driver of 
+DAUs, just making it easier to extend your streak,  
+
+144
+00:11:57,920 --> 00:12:03,200
+but I think really importantly it's still 
+meaningful. The unit of use, and as you're  
+
+145
+00:12:03,200 --> 00:12:07,320
+thinking about building a streak, I think it's 
+really important to think about what the unit of  
+
+146
+00:12:07,320 --> 00:12:13,120
+use of your app is. The unit of use for Duolingo 
+is doing a lesson. And so, if what we care about  
+
+147
+00:12:13,120 --> 00:12:16,480
+is users coming back every day and doing a lesson, 
+because it shows that they're actually engaging  
+
+148
+00:12:16,480 --> 00:12:22,960
+with the app, then it doesn't hurt us to make our 
+streak focus on just do one unit versus multiple. 
+
+149
+00:12:22,960 --> 00:12:27,240
+And so, that was probably the big [inaudible 
+00:12:25] change experiment that we ran at  
+
+150
+00:12:27,240 --> 00:12:32,040
+the time was moving from an XP-based streak 
+to a one lesson streak. It's also simple,  
+
+151
+00:12:32,040 --> 00:12:35,440
+and I think that's one of the things to think 
+about with streaks. It's always easy as a PM to  
+
+152
+00:12:36,680 --> 00:12:40,600
+have a million goals or objectives for what you 
+want your feature to be and potentially build a  
+
+153
+00:12:40,600 --> 00:12:46,080
+more complex feature, and a one lesson streak, 
+it's just easy for more users to understand.
+
+154
+00:12:46,080 --> 00:12:49,800
+Yeah, that's exactly what I was going to say. And 
+just for folks that aren't super familiar with XP,  
+
+155
+00:12:49,800 --> 00:12:52,840
+it's basically experience points 
+and you get them from doing things,  
+
+156
+00:12:52,840 --> 00:12:53,400
+it's like a [inaudible 00:12:53]-
+
+157
+00:12:53,400 --> 00:12:58,840
+Yeah, you do stuff on Duolingo, and then 
+based on what you did and how well you did it,  
+
+158
+00:12:58,840 --> 00:13:02,560
+we give you experience points, this actually 
+drives a number of our features in our apps. So,  
+
+159
+00:13:02,560 --> 00:13:07,240
+leaderboards is the big one, we have a leaderboard 
+system, where you try over the course of the week,  
+
+160
+00:13:07,240 --> 00:13:11,440
+you battle with 29 other people, and you 
+want to win, that's all driven by XP. So,  
+
+161
+00:13:11,440 --> 00:13:16,751
+we do have other features in the app 
+that really benefit from this XP system-
+
+162
+00:13:16,751 --> 00:13:16,756
+Cool.
+
+163
+00:13:16,756 --> 00:13:18,600
+... the streak is just no longer one of them.
+
+164
+00:13:18,600 --> 00:13:21,920
+Awesome. Okay, so I want to talk about the 
+journey from that point to what it is today,  
+
+165
+00:13:21,920 --> 00:13:26,760
+but a quick tangent, I saw Luis tweet just this 
+week, someone asked him, "How do you decide  
+
+166
+00:13:26,760 --> 00:13:34,360
+whether to optimize for learning or engagement?" 
+And he's like, "No question, everything we do is  
+
+167
+00:13:34,360 --> 00:13:39,320
+focused on engagement because you won't learn 
+anything if you're not coming back to the app."
+
+168
+00:13:39,320 --> 00:13:44,640
+As an engagement PM, that was the coolest 
+thing he could have ever said. It's, well,  
+
+169
+00:13:44,640 --> 00:13:51,800
+again, very much as subjectively I guess as an 
+engagement PM, that's how I've... I am sure the  
+
+170
+00:13:51,800 --> 00:13:55,960
+learning folks at Duolingo will cringe when they 
+hear it, I see myself as a learning PM as much  
+
+171
+00:13:55,960 --> 00:14:01,280
+as an engagement PM, because the easiest way not 
+to learn on Duolingo is not to come back the next  
+
+172
+00:14:01,280 --> 00:14:06,320
+day. And so, if we don't make the app retentive, 
+you will have no opportunity to engage with our  
+
+173
+00:14:06,320 --> 00:14:11,640
+learning features. Now, I do think that there is 
+a long tail of learning, where, if you start to  
+
+174
+00:14:11,640 --> 00:14:15,720
+dumb down, and honestly this is something we 
+wrestle with the streak as well, you start to  
+
+175
+00:14:15,720 --> 00:14:20,400
+dumb down the experience, and your users aren't 
+actually learning, they're not going to care. 
+
+176
+00:14:20,400 --> 00:14:27,440
+Streaks work best when they're sitting on top 
+of an app that users care about. But yeah,  
+
+177
+00:14:29,280 --> 00:14:32,600
+if you don't come learn on Duolingo.... If you 
+don't come back to Duolingo, then you're not  
+
+178
+00:14:32,600 --> 00:14:39,240
+learning. We track a lot of this with, the work 
+that we do, we make sure that as we're making  
+
+179
+00:14:39,240 --> 00:14:43,480
+changes to the streak, we're not hurting the 
+learning experience and we don't have a ton of  
+
+180
+00:14:43,480 --> 00:14:48,760
+interaction with it. So, we're constantly thinking 
+about this, but thank you Luis for saying that.
+
+181
+00:14:48,760 --> 00:14:52,520
+It makes sense to me. Okay, so lets get 
+into the motherload of learnings from  
+
+182
+00:14:52,520 --> 00:14:57,760
+the journey of streaks. So, the first 
+version went from XP to one lesson,  
+
+183
+00:14:57,760 --> 00:15:02,960
+talk about the key lessons, insights, and also 
+wrong turns along the way to what we see today.
+
+184
+00:15:02,960 --> 00:15:12,040
+Duolingo has very much, has a strong test 
+it philosophy, we're willing to test a lot  
+
+185
+00:15:12,040 --> 00:15:17,080
+of different... Honestly, we'd much rather 
+test it than debate it for days and days. So,  
+
+186
+00:15:17,080 --> 00:15:21,880
+we actually followed up this experiment with, and 
+this is a little bit later, with hey, what if we  
+
+187
+00:15:21,880 --> 00:15:29,200
+make it even easier to extend your streak? And so, 
+we actually tested, hey, if you do one exercise,  
+
+188
+00:15:29,200 --> 00:15:34,960
+just one exercise in a lesson will extend 
+your streak. A lot of the insight was good,  
+
+189
+00:15:34,960 --> 00:15:38,200
+you look at the funnel, hey, there's a lot of 
+users who are starting but not finishing lessons,  
+
+190
+00:15:38,200 --> 00:15:42,360
+they're not extending your streak, the loss 
+aversion doesn't kick in, they don't come  
+
+191
+00:15:42,360 --> 00:15:48,840
+back... So, this followed that train of thought. 
+What we realized when we ran this experiment is  
+
+192
+00:15:49,480 --> 00:15:57,880
+DAUs moved not one bit. And what we were doing 
+by... And if we go back to unit of measure,  
+
+193
+00:15:57,880 --> 00:16:02,600
+we had dumbed down the unit of... Nobody 
+thinks about, oh, I just want to come do one  
+
+194
+00:16:02,600 --> 00:16:08,840
+question on Duolingo, nobody thinks about that.
+So, we had a less clear unit of measure that  
+
+195
+00:16:08,840 --> 00:16:14,640
+we were basing our streak around, and the users 
+that we were capturing with our streak, you come,  
+
+196
+00:16:14,640 --> 00:16:19,600
+you do one or two questions on Duolingo, then you 
+leave, were the least engaged users imaginable.  
+
+197
+00:16:19,600 --> 00:16:22,800
+And so, I think that's something also to think 
+about as you're building your streak, is like  
+
+198
+00:16:22,800 --> 00:16:26,960
+what is the user that you're solving for? So, not 
+only what is the habit that you're building for,  
+
+199
+00:16:26,960 --> 00:16:32,360
+but what is the level of commitment, and that 
+was an example where we over indexed on a type  
+
+200
+00:16:32,360 --> 00:16:39,320
+of user who we honestly just weren't going to 
+keep, that was a very easy shutdown decision.
+
+201
+00:16:39,320 --> 00:16:43,640
+That's an awesome story, just to comment in that 
+real quick. Just you went, let's just go to the  
+
+202
+00:16:43,640 --> 00:16:48,680
+extreme and make it just like streaks, yeah, get 
+everyone going streaks forever, and then... I love  
+
+203
+00:16:48,680 --> 00:16:54,360
+that it turned out and it's not bringing users 
+that you want, and it's dumbing down experience.  
+
+204
+00:16:54,360 --> 00:16:58,560
+It makes me think of Farmville, where you have to 
+go and harvest your crops every, whatever, hour,  
+
+205
+00:16:59,920 --> 00:17:03,360
+that lasts for a bit and then eventually people 
+are like, what the hell am I doing with my life?
+
+206
+00:17:03,360 --> 00:17:10,120
+Yeah, exactly. We test every, I was looking at the 
+numbers as well, we've run in the last four years,  
+
+207
+00:17:10,120 --> 00:17:15,387
+over 600 experiments on the streaks. 
+So, every other day effectively-
+
+208
+00:17:15,387 --> 00:17:15,396
+600, wow.
+
+209
+00:17:15,396 --> 00:17:20,360
+... we're running an experiment. And they range 
+from big, like this, changing how the mechanic  
+
+210
+00:17:20,360 --> 00:17:27,040
+works, to let's swap a string with another string 
+and see if that copy is better for users. So,  
+
+211
+00:17:27,040 --> 00:17:33,080
+we're constantly testing on everything. I do think 
+that, I'd be more careful running that experiment  
+
+212
+00:17:33,080 --> 00:17:38,120
+now, at some point your streak gets big enough 
+that, again, I got 9 million users on the streak,  
+
+213
+00:17:38,120 --> 00:17:42,080
+I got to be really careful... Those are our best 
+retaining users, you got to be careful. But in the  
+
+214
+00:17:42,080 --> 00:17:49,320
+early days of the streak, I'd say test everything. 
+See what... Don't get super caught up in it has  
+
+215
+00:17:49,320 --> 00:17:54,240
+to be like this, just test a bunch of stuff and 
+see what speaks most to users. Because I think,  
+
+216
+00:17:54,240 --> 00:17:58,960
+again, you will constantly be surprised by the 
+insights that you get from whether you... We  
+
+217
+00:17:58,960 --> 00:18:03,720
+shut down about half of our experiments, 
+so half of our experiments lose,  
+
+218
+00:18:03,720 --> 00:18:08,200
+we still learned a ton by virtue of 
+running them. So, super, super valuable.
+
+219
+00:18:08,200 --> 00:18:13,320
+That's actually a good success rate, a lot 
+of companies have only 20% of experiments  
+
+220
+00:18:13,320 --> 00:18:18,840
+be positive. What's your policy on if it's 
+neutral, do you ship it, or do you kill it?
+
+221
+00:18:18,840 --> 00:18:25,840
+It really depends. If we're adding something and 
+it's neutral, we tend to shut it down because it's  
+
+222
+00:18:25,840 --> 00:18:29,040
+just more cognitive load, it's something that 
+we're going to have to start building around,  
+
+223
+00:18:29,040 --> 00:18:32,480
+a new UI element that we have to figure out 
+how it fits into our system. I'd say when we  
+
+224
+00:18:32,480 --> 00:18:40,520
+do ship a neutral experiment is, something 
+that we have real conviction around, okay,  
+
+225
+00:18:40,520 --> 00:18:45,240
+yeah, maybe this was neutral but it's going to 
+give us a new platform to then build on top of,  
+
+226
+00:18:45,240 --> 00:18:49,000
+so that experience might be neutral, 
+but now we can build these DAU positive  
+
+227
+00:18:49,000 --> 00:18:53,160
+experiments. My general take 
+there is though, in that case,  
+
+228
+00:18:53,160 --> 00:18:58,880
+build that in as part of your V1 so that 
+you make sure that at least your hypothesis  
+
+229
+00:18:58,880 --> 00:19:05,680
+around this roadmap has play should probably 
+be the case, but in general, shutting down a  
+
+230
+00:19:05,680 --> 00:19:10,080
+neutral experiment so you don't introduce more 
+complexity to the app is the way we tend to go.
+
+231
+00:19:10,080 --> 00:19:13,160
+Makes sense. All right, what else? What 
+else have you learned along the journey?
+
+232
+00:19:13,160 --> 00:19:18,680
+Well, maybe I can talk about a few different ways 
+that we structure, a few different themes that  
+
+233
+00:19:18,680 --> 00:19:26,040
+I think we lean on. So, the first is focusing 
+on the zero to seven day user experience. And  
+
+234
+00:19:26,040 --> 00:19:32,400
+I would say this is, if you look at whatever our 
+breakdown of experiments are, we run definitely  
+
+235
+00:19:32,400 --> 00:19:38,200
+more than average number of experiments on getting 
+users to go from a zero to seven day streak. And a  
+
+236
+00:19:38,200 --> 00:19:43,360
+lot of this is because we've looked at the data 
+for our retention curves, and what we found is  
+
+237
+00:19:43,360 --> 00:19:48,080
+that once you get to seven days, loss aversion 
+kicks in, and you retain. So, going from a one  
+
+238
+00:19:48,080 --> 00:19:52,920
+to a two-day streak, huge jump in retention, 
+two to three day streak, slightly less but  
+
+239
+00:19:52,920 --> 00:19:56,960
+still huge and it's up until day seven. Once you 
+hit day seven, it flans out. And it's not to say  
+
+240
+00:19:56,960 --> 00:20:02,360
+that if you have a 30-day streak, you're way more 
+attentive than day seven, but not in the order of  
+
+241
+00:20:02,360 --> 00:20:09,920
+magnitude that it is from day one through seven.
+So, we do a ton of work to get users to that  
+
+242
+00:20:09,920 --> 00:20:15,560
+point where loss aversion kicks in, and then 
+they don't want to lead the app. One of the  
+
+243
+00:20:15,560 --> 00:20:20,320
+fun ones that we did, and it's honestly as much 
+about process as it is about the feature itself,  
+
+244
+00:20:20,320 --> 00:20:25,880
+was we have a feature called streak goal, 
+and it is... Again, so much of this stuff  
+
+245
+00:20:25,880 --> 00:20:32,760
+seems so obvious in retrospect, but it was really 
+novel at the time. We had this idea of like, hey,  
+
+246
+00:20:32,760 --> 00:20:38,280
+maybe we'll just goal users to hitting a certain 
+streak length. As you can imagine, this is pretty  
+
+247
+00:20:38,280 --> 00:20:43,680
+powerful user psychology, and we started with the 
+simplest version of this. And this is how Duolingo  
+
+248
+00:20:43,680 --> 00:20:50,560
+does a lot of our testing. Rather than design the 
+big complex feature for V1, just do the simplest  
+
+249
+00:20:50,560 --> 00:20:55,600
+encapsulation of what that feature can be, see if 
+it has legs, and then just add to it iteratively  
+
+250
+00:20:55,600 --> 00:21:00,920
+over time, this is partially how we get to 600+ 
+experiments on streaks, they're not all big ones. 
+
+251
+00:21:00,920 --> 00:21:04,560
+But we started... And it was funny, we actually 
+took a learning from our monetization win teams.  
+
+252
+00:21:04,560 --> 00:21:08,560
+One of the strings that they had, the pieces 
+of copy that they had, worked really, really  
+
+253
+00:21:08,560 --> 00:21:17,560
+well was, I think it was your 5.6 x more likely to 
+finish the course if you subscribe to Plus. Now,  
+
+254
+00:21:17,560 --> 00:21:24,320
+it's Super, our subscription. It was a really good 
+hook that if you really cared, you'd sign up. And  
+
+255
+00:21:24,320 --> 00:21:29,600
+so, we had a similar thought, where it's like, oh, 
+let's just tell you how much more likely you are  
+
+256
+00:21:29,600 --> 00:21:35,560
+to finish the course if you get a 30-day streak.
+And so, we started with that, and I think it was  
+
+257
+00:21:35,560 --> 00:21:40,200
+like you're seven times more likely to finish the 
+course if you have a 30-day streak, and just that  
+
+258
+00:21:40,200 --> 00:21:47,400
+message when you started your streak, I telling 
+you that, was awesome. Huge win. Indicating an  
+
+259
+00:21:47,400 --> 00:21:52,040
+outcome... And Duolingo doesn't have, we have 
+a gem economy but we don't actually have,  
+
+260
+00:21:53,000 --> 00:21:57,800
+it's all you learning. But being able to actually 
+talk about it in terms of the outcomes that a user  
+
+261
+00:21:57,800 --> 00:22:02,440
+would think about, in this case, trying to finish 
+the course, was a huge win. So, this is where  
+
+262
+00:22:02,440 --> 00:22:06,600
+we started and we're like, ah, goal setting, 
+all right, we should go much harder on this.
+
+263
+00:22:06,600 --> 00:22:07,360
+Found a-
+
+264
+00:22:07,360 --> 00:22:11,680
+Yeah, we found our thing, and now let's just beat 
+the heck out of it. So, we followed that up with  
+
+265
+00:22:11,680 --> 00:22:17,360
+another experiment, where we tested different 
+lengths. So, we test 14 days and 50 days,  
+
+266
+00:22:17,360 --> 00:22:24,400
+and we found that they were all good, but they 
+appealed to different users. And so, we started  
+
+267
+00:22:24,400 --> 00:22:28,840
+to realize, all right, well, we probably need 
+to be more thoughtful about who we give these  
+
+268
+00:22:28,840 --> 00:22:34,080
+different options to. And so, then we followed 
+that experiment up with, all right, let's start  
+
+269
+00:22:34,080 --> 00:22:38,680
+with 30 days, and then we're going to let you 
+opt out, we'll say, no, I don't think I can hit  
+
+270
+00:22:38,680 --> 00:22:42,880
+it. And our thinking was, and then if you say no, 
+we'll hit you with an easier goal. Because we just  
+
+271
+00:22:42,880 --> 00:22:49,720
+wanted to get you to commit to a goal. And this 
+was a fascinating one because it was a good win  
+
+272
+00:22:49,720 --> 00:22:55,560
+to give users that easier goal, to try to capture 
+them before they said no, but it was almost  
+
+273
+00:22:55,560 --> 00:22:59,960
+just as big a win to add that opt out button.
+So, we tested separately, and I'm a huge fan of  
+
+274
+00:22:59,960 --> 00:23:05,120
+testing way too many arms for an experiment, 
+just to be able to isolate your hypotheses,  
+
+275
+00:23:05,120 --> 00:23:10,320
+but we captured just what happens if we add an 
+opt-out button, and adding an opt-out button...  
+
+276
+00:23:10,320 --> 00:23:16,440
+And you would think, as a PM, oh, now users might 
+not engage with my feature, that's a bad thing,  
+
+277
+00:23:16,440 --> 00:23:21,400
+but it was a huge win to let them do that. And 
+the learning here was that this intentionality  
+
+278
+00:23:21,400 --> 00:23:26,160
+of saying, no, I want it... Previously it was 
+just a continue button, but now it's like,  
+
+279
+00:23:26,160 --> 00:23:32,000
+no, I want to hit 30 days, and having that be 
+an intentional decision for them, yes or no,  
+
+280
+00:23:32,000 --> 00:23:37,280
+even though again, this had no impact, or no 
+impact past this screen. Everything that I'm  
+
+281
+00:23:37,280 --> 00:23:44,960
+talking about now was just that screen that 
+day, and then was all thrown out. So, that  
+
+282
+00:23:44,960 --> 00:23:51,280
+optionality was a huge insight, and so because 
+of that, we built a goal setting feature where  
+
+283
+00:23:51,280 --> 00:23:57,480
+you could choose between different goals, giving 
+users that optionality was likewise a huge win. 
+
+284
+00:23:57,480 --> 00:24:04,600
+I'll say one final learning on this, again, you 
+talk about friction, and good and bad friction,  
+
+285
+00:24:04,600 --> 00:24:09,360
+we thought once we built a goal picker screen, 
+where you could pick between different streak  
+
+286
+00:24:09,360 --> 00:24:15,880
+lengths, we were like, oh, well, let's recommend 
+that users do a harder goal, thinking that okay,  
+
+287
+00:24:15,880 --> 00:24:19,040
+well, a harder goal is going to be better 
+retention, and we'll the preselect harder  
+
+288
+00:24:19,040 --> 00:24:24,000
+goal for them. And based on all the learnings 
+that I just shared with you, you probably imagine  
+
+289
+00:24:24,000 --> 00:24:28,440
+lost pretty significantly, we realized that 
+yes, we could speed users through the screen  
+
+290
+00:24:28,440 --> 00:24:35,000
+more by virtue of picking a goal for them, but 
+that act of selecting, I think it's 30 days,  
+
+291
+00:24:35,000 --> 00:24:39,800
+I think it's 14 days, was where we were getting 
+so much of the engagement from this feature.
+
+292
+00:24:39,800 --> 00:24:43,320
+There's so much human psychology 
+that you all learn through all  
+
+293
+00:24:43,320 --> 00:24:46,400
+these experiments of just how to 
+motivate people, what motivates,  
+
+294
+00:24:46,400 --> 00:24:51,800
+what demotivates, it feels like you guys should 
+write a book on human psychology and motivation.
+
+295
+00:24:51,800 --> 00:24:57,240
+I feel very much like a amateur armchair 
+psychologist with everything that, at least  
+
+296
+00:24:57,240 --> 00:25:03,180
+as far as people who want to learn languages on 
+their phone go, I really understand those folks.
+
+297
+00:25:03,180 --> 00:25:09,520
+Right. So, one theme I'm hearing here so far 
+is you guys are basically just mining for gold,  
+
+298
+00:25:09,520 --> 00:25:16,320
+just looking for a vein in some mine, and once 
+you hit it you're like, ooh, this worked, you just  
+
+299
+00:25:16,320 --> 00:25:22,880
+go crazy on just testing all kinds of things to 
+see how far you can take that one little thread.
+
+300
+00:25:22,880 --> 00:25:31,920
+Yeah, and I think, I shared how this idea came 
+partially from a monetization win that they had,  
+
+301
+00:25:31,920 --> 00:25:37,560
+I think there's a lot of, because Duolingo 
+runs... I don't know what percentile we're in,  
+
+302
+00:25:37,560 --> 00:25:43,920
+but it's got to be a very high percentile 
+of per capita experiments run for a company,  
+
+303
+00:25:43,920 --> 00:25:48,000
+based on company size. We're just constantly 
+learning so many things and there's a really great  
+
+304
+00:25:48,000 --> 00:25:52,480
+cross-sharing of monetization say, hey, this thing 
+worked for us, is that something you can use? So,  
+
+305
+00:25:52,480 --> 00:25:56,680
+I'd say it's rare that we go into something 
+where it's just like, let's just try something.  
+
+306
+00:25:56,680 --> 00:26:01,760
+Typically, we have some insight because of all of 
+these experiments that we've run, that hey, if we  
+
+307
+00:26:01,760 --> 00:26:07,320
+do this, I don't know, it's one here, or it's 
+worked here, it's driven this user engagement,  
+
+308
+00:26:07,320 --> 00:26:15,520
+if we massage that and try in this scenario, 
+or a different screen, we come in at least  
+
+309
+00:26:15,520 --> 00:26:19,200
+with a strong hypothesis of this will work.
+A lot of times we do look, and we're like,  
+
+310
+00:26:19,200 --> 00:26:23,240
+a lot of the apps that we look at actually 
+are games themselves, so it's like, all right,  
+
+311
+00:26:23,240 --> 00:26:28,440
+you're playing Royal Match, or there's the new 
+Pokemon trading card game that I'm spending  
+
+312
+00:26:28,440 --> 00:26:32,240
+way too much time on, you look at 
+these games and see what they're doing,  
+
+313
+00:26:32,240 --> 00:26:36,000
+and it's really good fodder for what 
+we can do. But a lot of times you're  
+
+314
+00:26:36,000 --> 00:26:39,520
+at least going in with a strong hypothesis 
+based on what you've seen work elsewhere.
+
+315
+00:26:39,520 --> 00:26:42,520
+Got it. So, just to double down on that 
+point, it's not just random experiments,  
+
+316
+00:26:42,520 --> 00:26:45,640
+it's here's a hypothesis we're fairly confident,  
+
+317
+00:26:45,640 --> 00:26:49,100
+or has a chance to be true, let's try it. 
+It's not just let's just try everything?
+
+318
+00:26:49,100 --> 00:26:53,480
+Yeah. And I think that how strongly 
+you feel about the hypothesis directly  
+
+319
+00:26:53,480 --> 00:26:58,480
+ties to how hard that experiment is. With 
+copy, for instance, we've actually set up  
+
+320
+00:26:58,480 --> 00:27:02,960
+really good infrastructure for copy testing. 
+I'm of the opinion that companies should run,  
+
+321
+00:27:02,960 --> 00:27:07,240
+as long as you have the user base to do 
+it, copy test constantly. The amount of  
+
+322
+00:27:07,240 --> 00:27:12,880
+copy tests that we've had that have won, and I 
+don't know, you just try things and you figure  
+
+323
+00:27:12,880 --> 00:27:18,080
+out what wins is definitely legion, and [inaudible 
+00:27:15] massive wins from little copy changes.
+
+324
+00:27:18,080 --> 00:27:20,280
+Is there an example of that, of just the impact?
+
+325
+00:27:20,280 --> 00:27:26,120
+Going back to that goal screen, we used to 
+say Continue, our standard CTA is Continue,  
+
+326
+00:27:26,760 --> 00:27:33,680
+and we changed that to Commit To My Goal, and 
+it was a massive win. And again, it was like,  
+
+327
+00:27:33,680 --> 00:27:37,440
+okay, users tapping on that, what are we 
+asking them to do? Commit to the goal,  
+
+328
+00:27:37,440 --> 00:27:42,200
+what is that going to lead them to do? Commit, 
+not churn. Just that little copy change, that  
+
+329
+00:27:42,200 --> 00:27:50,760
+one time, right there, led to huge wins. And copy 
+changes are so cheap, it's just you translate,  
+
+330
+00:27:50,760 --> 00:27:54,800
+for us, we have a lot of users all over 
+the world, and a lot of UI languages,  
+
+331
+00:27:55,400 --> 00:27:58,120
+but just come up with a bunch of ideas, 
+translate some strings... This is one where  
+
+332
+00:27:59,400 --> 00:28:03,320
+the feedback that you'll typically get from 
+Luis. So, all of our changes at Duolingo go  
+
+333
+00:28:03,320 --> 00:28:08,280
+through product review that are reviewed by 
+Luis, so Luis reviews every single change  
+
+334
+00:28:08,280 --> 00:28:14,360
+that we propose, every experiment that we run.
+Typically with copy, he's just like, I don't know,  
+
+335
+00:28:14,360 --> 00:28:19,280
+test it, there's nothing better than be told 
+by Luis, I don't think this is going to win,  
+
+336
+00:28:19,280 --> 00:28:25,520
+but sure, if you want to. And a lot of times, to 
+his credit, he's right, and a lot of times our  
+
+337
+00:28:25,520 --> 00:28:31,760
+intuition was right, but it's just so cheap 
+to do it. I think when the lift is smaller,  
+
+338
+00:28:31,760 --> 00:28:36,080
+it's great to have a hypothesis, but 
+you don't need to beat it up too much.
+
+339
+00:28:36,080 --> 00:28:39,440
+So, on this thread, I didn't realize Louis 
+reviews everything you're planning to change,  
+
+340
+00:28:39,440 --> 00:28:44,160
+and this may be the answer to the question I was 
+going to ask, which is, one of the criticisms of  
+
+341
+00:28:44,160 --> 00:28:49,200
+running a product and company this way, of 
+just experimenting constantly with all these  
+
+342
+00:28:49,200 --> 00:28:52,600
+micro improvements and changes, is it can 
+lead to something, like a monstrosity of a  
+
+343
+00:28:52,600 --> 00:28:58,360
+product and experience that isn't consistent 
+and cohesive, and just that often happens.  
+
+344
+00:28:58,360 --> 00:29:01,840
+Is the solution to that having the founder 
+basically review all the changes? Is there  
+
+345
+00:29:01,840 --> 00:29:06,840
+anything else y'all do to avoid it becoming 
+Farmville or whatever, is a good example of that?
+
+346
+00:29:06,840 --> 00:29:12,600
+Yeah, our product review structure where we've 
+got our head of product design, one of the lead,  
+
+347
+00:29:13,360 --> 00:29:18,840
+the product management leaders, and then 
+Luis, NPR. And because they see everything,  
+
+348
+00:29:19,360 --> 00:29:25,480
+and they have a really high product bar, and 
+so that helps. I think over time we just,  
+
+349
+00:29:25,480 --> 00:29:31,040
+as PMs, have to look at, okay, where is our 
+feature headed? And so, we do this with the  
+
+350
+00:29:31,040 --> 00:29:36,480
+streak at least on a quarterly basis, to look 
+at, okay, well, what have we learned, how has  
+
+351
+00:29:36,480 --> 00:29:42,360
+our streak developed, and how do we imagine 
+this going in near future? It's easy to do,  
+
+352
+00:29:43,120 --> 00:29:47,680
+and in some sort of awful local maxima, 
+if you're not constantly looking at your  
+
+353
+00:29:47,680 --> 00:29:54,120
+roadmap and you don't have a clear strategy. For 
+me it's like, if you have a clear strategy where  
+
+354
+00:29:54,120 --> 00:29:59,840
+your feature is going, hopefully all of those A/B 
+tests are not just done to get some cheap gain,  
+
+355
+00:29:59,840 --> 00:30:04,680
+they're done with a long-term goal in mind.
+I do think though, and we do this every now  
+
+356
+00:30:04,680 --> 00:30:09,480
+and then with the streak, eventually you just 
+hit a local maxima, and you say, you talked  
+
+357
+00:30:09,480 --> 00:30:12,760
+about launching neutral experiments, this is a 
+great example, where it's like all right, cool,  
+
+358
+00:30:12,760 --> 00:30:16,800
+now we need to throw a bunch of this stuff out, 
+based on all the learnings, can we reset this  
+
+359
+00:30:16,800 --> 00:30:21,840
+real estate, can we reset this UI, reset this 
+feature, in such a way that is just as good as  
+
+360
+00:30:21,840 --> 00:30:27,960
+what we have now but is way more plain or simple, 
+that we can, again, start to layer on? Those are  
+
+361
+00:30:28,680 --> 00:30:33,480
+really hard experiments to get to win obviously, 
+because they are so optimized, but they're really  
+
+362
+00:30:33,480 --> 00:30:38,880
+important to do, otherwise, yeah, you just 
+end up with a kitchen sink of a feature.
+
+363
+00:30:38,880 --> 00:30:42,600
+One other tidbit I just want to mention,  
+
+364
+00:30:43,720 --> 00:30:50,600
+an advantage you all have that other companies 
+don't have is people want to learn a language,  
+
+365
+00:30:50,600 --> 00:30:55,600
+and so getting pushed to come back to an 
+app for something that they want to do,  
+
+366
+00:30:55,600 --> 00:30:58,920
+it's not an advantage a lot of products 
+have. So, anything you want to add there,  
+
+367
+00:30:58,920 --> 00:31:02,560
+of just like this is why Duolingo might be a 
+little different from what you're working on.
+
+368
+00:31:03,160 --> 00:31:08,160
+That is definitely a benefit, if I had an app... 
+And that this is actually why I think a lot of  
+
+369
+00:31:08,160 --> 00:31:15,720
+mobile games do streaks differently, because to 
+say that you played a mobile game, and as somebody  
+
+370
+00:31:15,720 --> 00:31:21,640
+who plays a lot of mobile games, that you've 
+done it for 3000 days in a row, I don't know,  
+
+371
+00:31:21,640 --> 00:31:26,240
+maybe that hits a little bit different than you've 
+learned Spanish for 3000 days in a row. I think  
+
+372
+00:31:26,240 --> 00:31:31,640
+the comparison set is much larger though, than 
+a lot of companies give themselves credit for,  
+
+373
+00:31:31,640 --> 00:31:34,880
+and I think that there's... There's a lot of 
+ways that companies think about their... There  
+
+374
+00:31:34,880 --> 00:31:38,840
+are very few companies I imagine out there in 
+the world saying, oh, we don't do some degree of  
+
+375
+00:31:38,840 --> 00:31:44,520
+good for our users... Even if it's like a game, 
+it's like, I don't know, you're giving somebody  
+
+376
+00:31:45,600 --> 00:31:50,040
+a moment away from the craziness of their lives.
+And so, I do think though that is contingent on  
+
+377
+00:31:50,040 --> 00:31:53,760
+companies who are going to figure out if a streak 
+works for them, to figure out how can you frame  
+
+378
+00:31:53,760 --> 00:31:59,520
+the streak in such a way that a user does feel 
+good about it. And it's easier for a Duolingo,  
+
+379
+00:31:59,520 --> 00:32:04,760
+but I think there's creative ways to phrase 
+this for users. The other thing maybe just on  
+
+380
+00:32:04,760 --> 00:32:11,000
+that that I'll say is, the streak works really 
+well for Duolingo because with language learning  
+
+381
+00:32:11,000 --> 00:32:17,640
+it's really hard to see day-to-day progress in 
+becoming more fluent. And fluency is not even  
+
+382
+00:32:17,640 --> 00:32:22,800
+the right word, it's like becoming better 
+at Spanish or whatever, it is a years long  
+
+383
+00:32:22,800 --> 00:32:27,960
+process for someone to get better at a language.
+Duolingo makes it easier, but you still got to put  
+
+384
+00:32:27,960 --> 00:32:33,880
+in thousands of hours if you're going to reach C1 
+or C2 fluency, and that is really hard to track on  
+
+385
+00:32:33,880 --> 00:32:39,240
+a day-to-day, and so the streak works really well 
+for us because we might not be able to tell you,  
+
+386
+00:32:39,240 --> 00:32:47,680
+hey, you now know 0.01% more Spanish, but we 
+can show you, hey, you've gotten your streak  
+
+387
+00:32:47,680 --> 00:32:52,040
+a little bit higher. And so, I think this works 
+particularly well when you're an app that is  
+
+388
+00:32:52,040 --> 00:32:56,880
+doing something that's going to be sensed or 
+felt over a longer term to help contextualize  
+
+389
+00:32:56,880 --> 00:33:02,400
+that progress in a way that makes more sense, 
+or at least feels more tangible to a user.
+
+390
+00:33:02,400 --> 00:33:05,840
+Great, that was a great context. Empowering 
+to a lot of companies that aren't necessarily  
+
+391
+00:33:05,840 --> 00:33:09,880
+doing language learning. Okay. So, it 
+took us on a long tangent away from  
+
+392
+00:33:09,880 --> 00:33:14,560
+lessons and experiments you ran along the 
+journey of iterating on the streak. So,  
+
+393
+00:33:14,560 --> 00:33:18,680
+a few things you've shared so far is 
+just, it started with this XP idea,  
+
+394
+00:33:18,680 --> 00:33:24,280
+and then went to a lesson, then you iterated 
+on ways to make it simpler, maybe harder,  
+
+395
+00:33:24,280 --> 00:33:29,000
+you added streak goals, where you commit to 
+I'm going to hit a certain goal of streak.  
+
+396
+00:33:29,000 --> 00:33:32,920
+What else? What else have you found that 
+has worked, didn't work, lessons learned?
+
+397
+00:33:32,920 --> 00:33:38,560
+Again, sticking with this one to seven 
+day streak, the idea of a streak,  
+
+398
+00:33:38,560 --> 00:33:42,480
+particularly probably to this audience, 
+is obvious. Like, oh, it's a streak,  
+
+399
+00:33:42,480 --> 00:33:48,760
+it just counts how many days. We've realized over 
+time that a lot of users do not understand how a  
+
+400
+00:33:48,760 --> 00:33:54,880
+streak works, and it can be as small as, well, 
+I don't understand how streak freezes work,  
+
+401
+00:33:54,880 --> 00:33:57,880
+or I don't... Like my mom the other day 
+was talking to you about it, she's like,  
+
+402
+00:33:57,880 --> 00:34:01,840
+"Oh, I didn't use Duolingo and I come back and 
+my streak's still there." So, there's certain  
+
+403
+00:34:01,840 --> 00:34:11,320
+elements of the feature that we can do better 
+at explaining, but even what a streak is, it's  
+
+404
+00:34:11,320 --> 00:34:16,440
+tracking how many days that I've used the app, 
+yeah, the more that we can make the feature easily  
+
+405
+00:34:16,440 --> 00:34:22,240
+comprehensible to users, the more retentive it is. 
+And we've run a number of experiments to do this. 
+
+406
+00:34:23,680 --> 00:34:29,480
+You asked about early easy copy changes that we 
+made. Actually, this is my first win experiment  
+
+407
+00:34:29,480 --> 00:34:35,960
+when I joined Duolingo was, when you start 
+a streak, we have little copy at the bottom  
+
+408
+00:34:35,960 --> 00:34:40,400
+of the screen that just, I don't know, it's like 
+flavor copy, we use it to celebrate you, or give  
+
+409
+00:34:40,400 --> 00:34:47,040
+you context, and I ran some tests that just tried 
+to in eight words explained what a streak was,  
+
+410
+00:34:47,040 --> 00:34:52,960
+that was it. And it was a massive win because 
+it really dumbed down here is exactly how the  
+
+411
+00:34:52,960 --> 00:34:59,400
+streak worked, and it really helped users just 
+understand what they needed to do. And I think  
+
+412
+00:34:59,400 --> 00:35:03,760
+this is something that's like, you constantly got 
+to remind yourself, particularly if you work in  
+
+413
+00:35:03,760 --> 00:35:10,240
+tech and you're building cool tech features, but 
+your user base is not a bunch of tech workers,  
+
+414
+00:35:10,240 --> 00:35:15,560
+to think about, all right, who is my audience? 
+And for us it's not just tech workers, it's not  
+
+415
+00:35:15,560 --> 00:35:22,080
+people in America, it's people all over the world 
+of all ages of all cultures, and so making sure  
+
+416
+00:35:22,080 --> 00:35:27,720
+that your feature is even something as simple 
+as the streak is understandable is critical.
+
+417
+00:35:27,720 --> 00:35:29,720
+What was the actual copy, do you remember?
+
+418
+00:35:29,720 --> 00:35:34,640
+It was... I think it's still on 
+the app, it's like, "Start a day  
+
+419
+00:35:34,640 --> 00:35:38,560
+to extend your streak, but miss a day 
+and it resets," something like that.
+
+420
+00:35:38,560 --> 00:35:40,480
+That makes sense to me. Very clear.
+
+421
+00:35:40,480 --> 00:35:40,820
+Yeah.
+
+422
+00:35:40,820 --> 00:35:45,200
+In eight words, I love that. Okay. And then, 
+when you say massive win by the way, just to  
+
+423
+00:35:45,200 --> 00:35:50,080
+give people a reference point, what does that 
+look like? What is a massive win in this scale?
+
+424
+00:35:50,080 --> 00:35:55,400
+Well, and it's funny, and this was four years ago, 
+but I think it was in the order of magnitude of  
+
+425
+00:35:55,400 --> 00:36:00,840
+over 10,000 DAUs for us, and actually, maybe 
+a small bit of context. So, Duolingo really  
+
+426
+00:36:00,840 --> 00:36:05,320
+cares about the metric CURR current user 
+retention rate, and actually our first ever  
+
+427
+00:36:05,320 --> 00:36:11,560
+Duolingo post with Lenny was the newsletter 
+that our former head of product wrote, Jorge.
+
+428
+00:36:11,560 --> 00:36:15,720
+Still the single most popular newsletter post 
+of all time in my newsletter, across 300 plus-
+
+429
+00:36:15,720 --> 00:36:20,880
+I would highly recommend that if you were 
+interested in this, give it a read. To summarize,  
+
+430
+00:36:20,880 --> 00:36:26,160
+basically, what we found is that, if we 
+wanted to drive DAUs, and Duolingo cares,  
+
+431
+00:36:26,160 --> 00:36:32,440
+our growth North Star is DAUs, the metric that 
+is most effective, where a percentage change  
+
+432
+00:36:32,440 --> 00:36:36,560
+in that metric is most effective at driving 
+DAUs is current user retention rate. And this  
+
+433
+00:36:36,560 --> 00:36:41,840
+is just users who are not new or resurrected, 
+getting them to come back tomorrow. And so,  
+
+434
+00:36:41,840 --> 00:36:47,720
+most of the work that our teams do, our 
+retention-based teams do is focused on CURR.  
+
+435
+00:36:47,720 --> 00:36:52,320
+And so, the retention team that I lead focused on 
+CURR, it just so happens the streak is the best  
+
+436
+00:36:52,320 --> 00:37:00,840
+feature at driving CURR. And so, this experiment 
+was the biggest CURR win that we had had, and it  
+
+437
+00:37:00,840 --> 00:37:05,280
+was like a top three CURR win, anyway for us. 
+Just this little copy. And that's why I say,  
+
+438
+00:37:05,280 --> 00:37:10,440
+test copy 1000 different ways, sometimes 
+it's not the big beautiful feature that's  
+
+439
+00:37:10,440 --> 00:37:15,520
+going to drive the huge gains, sometimes 
+it's just something simple as a few words.
+
+440
+00:37:15,520 --> 00:37:21,280
+I love this. Okay, so you said 10,000 
+DAUs, I think that references you guys  
+
+441
+00:37:21,280 --> 00:37:24,880
+measure incremental impact and 
+absolute numbers of new daily  
+
+442
+00:37:24,880 --> 00:37:28,520
+users you're going to drive attributed to 
+that experiment, is what it sounds like.
+
+443
+00:37:28,520 --> 00:37:34,640
+Yeah, and we do both. We'll also look at, 
+a lot of times I'll look at, for retention,  
+
+444
+00:37:34,640 --> 00:37:40,320
+day one versus day seven versus day 14, a lot 
+of what I'm looking for is for us to have a  
+
+445
+00:37:40,320 --> 00:37:46,800
+better day 14 impact than better day one impact 
+because it means that users are retaining better  
+
+446
+00:37:46,800 --> 00:37:50,600
+over time. This is particularly for users 
+that would see a feature multiple times. I  
+
+447
+00:37:50,600 --> 00:37:58,040
+just like absolute DAU numbers because as long as 
+you're controlling for different biases, like a  
+
+448
+00:37:58,040 --> 00:38:04,560
+recency bias or a novelty bias, it's a really 
+easy way to just have an absolute comparison.  
+
+449
+00:38:04,560 --> 00:38:08,280
+You start to look at percentage changes and 
+then it's influenced by who your treatment,  
+
+450
+00:38:08,280 --> 00:38:15,400
+how many users saw the experiment, but at least 
+an absolute number is easier, in my mind, to  
+
+451
+00:38:15,400 --> 00:38:20,560
+start comparing.. Again, there are pitfalls with 
+it, but we find that that's a pretty useful way.
+
+452
+00:38:20,560 --> 00:38:25,259
+That lesson comes up a lot on this 
+podcast, and that approach to experiment.
+
+453
+00:38:25,259 --> 00:38:25,280
+[inaudible 00:38:25].
+
+454
+00:38:25,280 --> 00:38:31,920
+So, yeah, you're in good company. Quick tangent, 
+if there's not an answer to this, no problem,  
+
+455
+00:38:31,920 --> 00:38:37,040
+coming back to the idea of just experimenting 
+like crazy and not creating a product that nobody  
+
+456
+00:38:37,040 --> 00:38:42,480
+wants to use anymore, is there an example of an 
+experiment that was positive that you all decided,  
+
+457
+00:38:42,480 --> 00:38:46,680
+no, we don't actually think this is what we 
+want in the product, they ended up not shipping?
+
+458
+00:38:47,360 --> 00:38:52,480
+Retention doesn't only work on the streak, 
+although you would think... Most of our work  
+
+459
+00:38:52,480 --> 00:38:55,520
+is the streak. We've touched a lot of different 
+surfaces over the years and there was one  
+
+460
+00:38:55,520 --> 00:39:01,240
+experiment that we launched that, we talked about 
+XP earlier, in the lesson, the only UI elements  
+
+461
+00:39:01,240 --> 00:39:05,300
+are a progress bar at the top, and then how many 
+hearts you have. So, we keep it really simple,  
+
+462
+00:39:05,300 --> 00:39:13,120
+and this very much speaks to the design philosophy 
+of Duolingo, which is simpler UI is better, and we  
+
+463
+00:39:13,120 --> 00:39:19,440
+decided, hey, let's add XP in there. And so let's 
+show your XP ticking up as you're going through a  
+
+464
+00:39:19,440 --> 00:39:23,360
+lesson, that's going to make the user feel good, 
+it's going to show you what you've earned, you're  
+
+465
+00:39:23,360 --> 00:39:27,200
+going to be less likely to quit, all of these good 
+reasons to do it. And then you finish the lesson  
+
+466
+00:39:27,200 --> 00:39:33,680
+and then we'll show you've collected all this XP.
+And it won, the hypothesis was a good one. But we  
+
+467
+00:39:33,680 --> 00:39:38,040
+realized, and I remember having this conversation 
+with Luis, is like, cool, this is our most  
+
+468
+00:39:38,040 --> 00:39:42,600
+important screen in the app, it is our lesson, 
+it is where users learn, and the focus here is  
+
+469
+00:39:42,600 --> 00:39:50,440
+on learning. And now you've added this other thing 
+up there that could be distracting for users. And  
+
+470
+00:39:50,440 --> 00:39:53,800
+I think the question, we talked about roadmaps and 
+strategy here, the question that he had for me,  
+
+471
+00:39:53,800 --> 00:39:57,440
+and I didn't have a good answer for at the time, 
+was like, so what else are you going to do with  
+
+472
+00:39:57,440 --> 00:40:03,000
+this? What's your iteration ideas? Where's 
+this going to go? Is this going to make the  
+
+473
+00:40:03,000 --> 00:40:09,960
+lesson experience more gamified? And what we 
+realized is that, honestly, it was just an  
+
+474
+00:40:09,960 --> 00:40:16,200
+easy engagement win idea, but we had touched 
+our most sacred space in the app to do that. 
+
+475
+00:40:16,200 --> 00:40:22,240
+And so, that was a case where it's like, yeah, it 
+was a nice win, but we'd added that UI element,  
+
+476
+00:40:22,240 --> 00:40:28,420
+and at least at the time it was less clear what 
+we would do with it and we realized that long  
+
+477
+00:40:28,420 --> 00:40:34,800
+term it was just going to get in the way, and 
+we'd rather, for simplicity's sake, pause that,  
+
+478
+00:40:34,800 --> 00:40:40,920
+shut it down, and keep the lesson to be a little 
+bit of learning sanctuary it was. Now, it's funny,  
+
+479
+00:40:40,920 --> 00:40:45,320
+nowadays I think we actually have enough XP 
+based mechanics and fun things that we can do,  
+
+480
+00:40:45,320 --> 00:40:51,280
+that I think actually a lot of the beliefs 
+about the in-lesson experience have changed,  
+
+481
+00:40:51,280 --> 00:40:56,080
+such as something like that could work, but at 
+the time didn't feel good to keep that around.
+
+482
+00:40:56,080 --> 00:41:01,480
+That is an awesome example. Hopefully we have 
+time to talk about how the team operates,  
+
+483
+00:41:01,480 --> 00:41:05,120
+where my mind goes is like, oh, but you have all 
+these PMs and teams that want to show impact,  
+
+484
+00:41:05,120 --> 00:41:08,360
+and the performance reviews, and all that 
+stuff, and you're not shipping something,  
+
+485
+00:41:08,360 --> 00:41:12,000
+they're like, oh look, we did a win. 
+So, I want to chat about that later,  
+
+486
+00:41:12,000 --> 00:41:15,960
+but let's keep going on things you've learned 
+and things that didn't work along the journey.
+
+487
+00:41:15,960 --> 00:41:22,160
+The other thing that I'll call out with the 
+streak, it's like we have the... The image  
+
+488
+00:41:22,160 --> 00:41:27,440
+of the streak is this flame. And we have the 
+streak flame, and it's very much core to our  
+
+489
+00:41:27,440 --> 00:41:32,880
+iconography. It's important to acknowledge that 
+that's a metaphor for a retention mechanic. The  
+
+490
+00:41:32,880 --> 00:41:38,960
+idea of keeping a flame lit. And again, I think 
+we've established the flame is for a lot of users  
+
+491
+00:41:38,960 --> 00:41:43,720
+as sort of their understanding of a streak, 
+which is great, but there's a lot of people in  
+
+492
+00:41:43,720 --> 00:41:49,640
+different cultural context and different stages 
+of life, where the idea of keeping a flame lit  
+
+493
+00:41:49,640 --> 00:41:56,280
+to show your commitment to something makes less 
+sense. We did some UXR in India many years ago,  
+
+494
+00:41:56,280 --> 00:42:00,600
+and this was something that just did not resonate 
+at all there, which was a really interesting  
+
+495
+00:42:00,600 --> 00:42:03,760
+learning. And that's something it's like, 
+again, depending upon what your user base is,  
+
+496
+00:42:04,320 --> 00:42:08,920
+the more global UXR you can do to understand 
+how users are actually understanding and  
+
+497
+00:42:08,920 --> 00:42:12,080
+experience your feature, the better, because 
+you just, again, encounter insights like this. 
+
+498
+00:42:12,080 --> 00:42:18,720
+And so, even our screen design, we used to have 
+a flame, it was mostly this flame that would  
+
+499
+00:42:18,720 --> 00:42:22,760
+light up every day. But again, it was like 
+an indication of a metaphor for a mechanic,  
+
+500
+00:42:22,760 --> 00:42:27,280
+and when we redesigned it, we did 
+this, Kurt, one of our animators,  
+
+501
+00:42:27,280 --> 00:42:32,280
+did this awesome odometer animation where it's 
+like your number would tick every day... It  
+
+502
+00:42:32,840 --> 00:42:37,720
+looked good, but from a product perspective, what 
+was cool is we actually focused the design on the  
+
+503
+00:42:37,720 --> 00:42:45,280
+screen to show your number going up, and then it 
+would say seven day streak, eight day streak. And  
+
+504
+00:42:45,280 --> 00:42:50,560
+I think that as you're thinking about designing 
+around a streak, don't get too caught up into  
+
+505
+00:42:51,560 --> 00:42:57,280
+what is this the beautiful story that you're 
+trying to tell, at the expense of it being a  
+
+506
+00:42:57,280 --> 00:43:00,720
+really comprehensible feature. And so, 
+as you're thinking about product design,  
+
+507
+00:43:00,720 --> 00:43:06,600
+making that product design a clear distillation 
+of this is what we're actually tracking,  
+
+508
+00:43:06,600 --> 00:43:12,360
+form should follow a function here, was a learning 
+for us. And you'll see that now in a lot of places  
+
+509
+00:43:12,360 --> 00:43:18,320
+where we're showing streak, we're really leading 
+with the number, not necessarily the flame.
+
+510
+00:43:18,320 --> 00:43:23,560
+That's a theme that I'm hearing again and 
+again is clarity, don't obsess with making  
+
+511
+00:43:23,560 --> 00:43:29,440
+it too clever, and don't ever think 
+it, just clarity has a big impact.
+
+512
+00:43:29,440 --> 00:43:34,560
+Clarity also doesn't have to come at the expense 
+of delight. And this is something where you hit a  
+
+513
+00:43:34,560 --> 00:43:41,080
+milestone and Duo gets, it becomes, we call him a 
+Phoenix Duo, and he becomes awesome, and lights on  
+
+514
+00:43:41,080 --> 00:43:46,320
+fire, and I think there are things that you can 
+do to still make the experience really exciting  
+
+515
+00:43:46,320 --> 00:43:52,120
+and delightful and celebratory, and I would not 
+lose that, but just don't do it at the expense...  
+
+516
+00:43:52,120 --> 00:43:57,280
+And I think it's also about figuring out, you 
+can get away with doing more of this for users  
+
+517
+00:43:57,280 --> 00:44:01,680
+who are deeper into their streak experience than 
+users who are starting, where it's like your  
+
+518
+00:44:01,680 --> 00:44:06,720
+goal for the one-day streak user is just to make 
+sure, do they understand how this feature works? 
+
+519
+00:44:06,720 --> 00:44:11,240
+Even something... Again, just another random 
+experiment. At the bottom of the streak screen  
+
+520
+00:44:11,240 --> 00:44:16,120
+we have a calendar, and over the years it 
+just looks more and more calendar-like,  
+
+521
+00:44:16,120 --> 00:44:20,200
+and that is simply because we find that 
+the more we make it look like a calendar,  
+
+522
+00:44:20,200 --> 00:44:24,080
+days on top, little circles, the check... 
+The more we make it look like calendar,  
+
+523
+00:44:24,080 --> 00:44:28,720
+the more that people realize, hey, 
+this is a daily mechanic. And so,  
+
+524
+00:44:28,720 --> 00:44:32,160
+think about the screen holistically, but every 
+single thing that you're doing on the screen,  
+
+525
+00:44:32,160 --> 00:44:37,520
+how can you use it to communicate what is 
+the point of this feature? How does it work?
+
+526
+00:44:37,520 --> 00:44:43,240
+This episode is brought to you by Coda. I use 
+Coda every day to coordinate my podcasting and  
+
+527
+00:44:43,240 --> 00:44:47,320
+newsletter workflows. From collecting 
+questions for guests to storing all my  
+
+528
+00:44:47,320 --> 00:44:52,560
+research to managing my newsletter content 
+calendar, Coda is my go-to app and has been  
+
+529
+00:44:52,560 --> 00:44:58,360
+for years. Coda combines the best of documents, 
+spreadsheets, and apps to help me get more done,  
+
+530
+00:44:58,360 --> 00:45:03,000
+and Coda can help your team to stay aligned and 
+ship faster by managing your planning cycle in  
+
+531
+00:45:03,000 --> 00:45:08,560
+just one location, set and measure OKRs with 
+full visibility across teams and stakeholders,  
+
+532
+00:45:08,560 --> 00:45:12,720
+map dependencies, create progress 
+visualizations, and identify risk areas. 
+
+533
+00:45:12,720 --> 00:45:17,920
+You can also access hundreds of pressure-tested 
+templates for everything from roadmap strategy  
+
+534
+00:45:17,920 --> 00:45:22,800
+to final decision-making frameworks. See for 
+yourself why companies like DoorDash, Figma,  
+
+535
+00:45:22,800 --> 00:45:28,760
+and Qualtrics run on Coda. Take advantage of this 
+special limited-time offer just for startups,  
+
+536
+00:45:28,760 --> 00:45:34,280
+head over to coda.io/Lenny and sign 
+up to get six free months of the team  
+
+537
+00:45:34,280 --> 00:45:43,680
+plan. That's coda.io/Lenny to sign up and get 
+six months of the team plan. Coda.io/Lenny. 
+
+538
+00:45:43,680 --> 00:45:48,680
+I imagine one of the biggest wins was just 
+giving people flexibility along the journey,  
+
+539
+00:45:48,680 --> 00:45:52,760
+like streak freezes and all these things, 
+is that a big vein of opportunity discovery?
+
+540
+00:45:52,760 --> 00:45:57,600
+It is. Actually, I'm going to show you one of 
+the most thoughtful gifts that anybody has ever  
+
+541
+00:45:57,600 --> 00:46:03,600
+given to me, this is our Duolingo Serenity, or 
+Streak Serenity Prayer, my co-lead, Antonia-
+
+542
+00:46:03,600 --> 00:46:04,520
+It's like knitted, right?
+
+543
+00:46:04,520 --> 00:46:05,880
+... [inaudible 00:46:05] 
+this for me. It's amazing.
+
+544
+00:46:05,880 --> 00:46:06,080
+Wow.
+
+545
+00:46:06,080 --> 00:46:10,720
+And so it says, "Luis, grant me the 
+serenity to accept the flexibility I need,  
+
+546
+00:46:10,720 --> 00:46:15,080
+the courage to reach perfection when I can, 
+and the wisdom to celebrate regardless."
+
+547
+00:46:15,080 --> 00:46:15,520
+Aw.
+
+548
+00:46:15,520 --> 00:46:18,840
+And that actually is kind of 
+our strategy with the streaks.
+
+549
+00:46:18,840 --> 00:46:21,080
+I love the show and tell 
+by the way, that was great.
+
+550
+00:46:21,080 --> 00:46:27,320
+Yeah. Well, I guess for podcast listeners, 
+we'll have to get an image somewhere. This  
+
+551
+00:46:27,320 --> 00:46:33,560
+idea of flexibility versus perfection, and then 
+regardless, celebration, is core to how we think  
+
+552
+00:46:33,560 --> 00:46:38,880
+about the streak. Because I think for the streak 
+for us, it's very much a bend not break. If you're  
+
+553
+00:46:38,880 --> 00:46:46,400
+going to miss a day, I'd rather you come back, 
+having missed that day, to an intact streak, but  
+
+554
+00:46:46,400 --> 00:46:51,240
+if you don't have to miss a day, I'd much rather 
+you don't, I'd much rather you come back and use  
+
+555
+00:46:51,240 --> 00:46:57,040
+the app every day. So, that thing on flexibility 
+though, that's almost certainly been the biggest,  
+
+556
+00:46:57,040 --> 00:47:01,440
+from a mechanic perspective, the biggest DAU 
+driver. One of the earliest experiments we ran  
+
+557
+00:47:01,440 --> 00:47:06,520
+was going from you used to only be able to have 
+one streak freeze and then we let you have either  
+
+558
+00:47:06,520 --> 00:47:12,520
+two or three. So, we tested two different 
+arms. It was, again, another huge DAU win. 
+
+559
+00:47:12,520 --> 00:47:16,960
+This actually is funny, it was something that... 
+And this is, again, a callback to that growth  
+
+560
+00:47:16,960 --> 00:47:23,480
+model post from Jorge. It actually was really bad 
+for CURR because we were basically saying, hey,  
+
+561
+00:47:23,480 --> 00:47:27,800
+you can take a day off, and that's 
+okay, but it was really good for,  
+
+562
+00:47:27,800 --> 00:47:33,200
+this is going to be like Alphabet Soup, [inaudible 
+00:47:31], a weekly active user return rate. So,  
+
+563
+00:47:33,200 --> 00:47:37,960
+basically, users who had taken a day off, we were 
+getting them to come back more at higher rates,  
+
+564
+00:47:37,960 --> 00:47:42,880
+and so it made up for our losses in CURR. 
+But effectively, what this meant is that,  
+
+565
+00:47:42,880 --> 00:47:47,840
+why two streak freezes work better than one was, 
+I don't know, sometimes people just need a little  
+
+566
+00:47:47,840 --> 00:47:52,440
+bit more flexibility than one day. But again, 
+the really interesting insight of this experiment  
+
+567
+00:47:52,440 --> 00:47:57,040
+was that three streak freezes was actually no 
+better than two streak freezes. And there were  
+
+568
+00:47:57,040 --> 00:48:00,680
+two competing things here, and I think this is 
+important if you're going to build a streak to  
+
+569
+00:48:00,680 --> 00:48:05,680
+figure out what your flexibility mechanic is.
+We were getting more users to return after  
+
+570
+00:48:05,680 --> 00:48:12,400
+longer times away to an intact streak. But if 
+you start taking three days off from any habit,  
+
+571
+00:48:12,400 --> 00:48:15,880
+it's just going to be less likely that 
+you return even four days later. And so,  
+
+572
+00:48:15,880 --> 00:48:21,120
+we had these competing things where more users 
+might be returning to a streak, but a lot of users  
+
+573
+00:48:21,120 --> 00:48:27,720
+were also just not coming back, we were training 
+them to take more time off. So, that flexibility,  
+
+574
+00:48:27,720 --> 00:48:33,240
+what's the right amount of... We've again, this is 
+another area we've run hundreds of experiments on,  
+
+575
+00:48:33,240 --> 00:48:41,120
+what is the right amount of flexibility? 
+And we are constantly surprised here. I  
+
+576
+00:48:41,120 --> 00:48:44,440
+still don't have the answer for at every point 
+in your streak journey how much flexibility you  
+
+577
+00:48:44,440 --> 00:48:50,440
+need. One thing that I can say with certainty 
+though is, give more flexibility when a user is  
+
+578
+00:48:50,440 --> 00:48:55,680
+starting their streak. Again, one of our biggest 
+streak freeze experiment wins... I feel like I'm  
+
+579
+00:48:55,680 --> 00:48:59,760
+constantly saying this, one of our biggest 
+wins, but they all were really, really big. 
+
+580
+00:48:59,760 --> 00:49:03,800
+One of our biggest streak freeze wins was when 
+you start a new streak, we give you two streak  
+
+581
+00:49:03,800 --> 00:49:07,560
+freezes. And again, it's so funny to think back, 
+it's like how are we not doing this to begin with?  
+
+582
+00:49:07,560 --> 00:49:14,280
+But at the time, the streak freeze was an overly 
+gamified mechanic, you had to buy them with gems,  
+
+583
+00:49:14,280 --> 00:49:21,800
+that's our in-app currency, because we wanted 
+the whole idea of this to feel like it was really  
+
+584
+00:49:21,800 --> 00:49:26,320
+something you earned, that there was a little bit 
+of pain to getting that streak freeze. And so,  
+
+585
+00:49:26,320 --> 00:49:29,600
+we tested though, what if we just give 
+users when they start off their streak  
+
+586
+00:49:29,600 --> 00:49:36,360
+two streak freezes, and holy smokes to that win.
+And it's sort of obvious now, in retrospect, but  
+
+587
+00:49:36,360 --> 00:49:42,480
+if you have a one or a two or a three-day streak, 
+it's really easy just to let it die and restart,  
+
+588
+00:49:42,480 --> 00:49:46,760
+again, you need to get to seven days, what we've 
+seen in the data, for it to really lock in. And  
+
+589
+00:49:46,760 --> 00:49:51,720
+so, giving users more flexibility so that it's 
+harder to lose their streak initially, and then  
+
+590
+00:49:51,720 --> 00:49:56,800
+conversely, and this is what we keep learning, 
+eventually, once people get on long streaks,  
+
+591
+00:49:56,800 --> 00:50:04,760
+you don't want to give them as much flexibility. 
+Because there's a lot of times where, yeah, users  
+
+592
+00:50:04,760 --> 00:50:09,400
+don't... And I'm like this, I've got a 400-day 
+streak. Note that that is a lot less time than  
+
+593
+00:50:09,400 --> 00:50:14,200
+I've been at Duolingo, I have lost and restarted 
+streaks a lot of times at my time at Duolingo. 
+
+594
+00:50:14,200 --> 00:50:19,120
+But you start getting on long streaks, and you 
+really care about this feature, you really care  
+
+595
+00:50:19,120 --> 00:50:23,800
+about your streak. And most people, as long as 
+you're not backpacking through, I don't know,  
+
+596
+00:50:24,480 --> 00:50:32,920
+the back country of Utah, you'll be in a place 
+where you can get service. And so, figuring out  
+
+597
+00:50:34,000 --> 00:50:39,560
+who is the user that actually could use Duolingo, 
+and not conditioning them to start taking days off  
+
+598
+00:50:39,560 --> 00:50:46,360
+that they didn't otherwise need to do is important 
+to figure out where that line is for your feature.
+
+599
+00:50:46,360 --> 00:50:51,160
+This is fascinating. You can also buy a streak, 
+right? With money. That's a feature, right?
+
+600
+00:50:51,160 --> 00:50:55,680
+Yeah. And it's funny, this is also 
+something that we [inaudible 00:50:54]-
+
+601
+00:50:55,680 --> 00:50:56,920
+You can buy a freeze, sorry, not a streak.
+
+602
+00:50:56,920 --> 00:51:00,680
+Yeah. So, you can buy a streak freeze, 
+and the way it works is you can buy gems,  
+
+603
+00:51:00,680 --> 00:51:05,560
+and then you can use those gems to buy a 
+streak... And this is something we wrestle  
+
+604
+00:51:05,560 --> 00:51:10,280
+with. We're actively working on an experiment, 
+right now that's having a small hit to revenue,  
+
+605
+00:51:10,280 --> 00:51:14,280
+but it's a really nice win for retention, 
+and I think it's actually worth thinking  
+
+606
+00:51:14,280 --> 00:51:18,720
+about from day one, as you're building a streak, 
+do you see this more as a monetization feature,  
+
+607
+00:51:18,720 --> 00:51:21,960
+or do you see this more as a retention feature? 
+What's the role of monetization in this? What's  
+
+608
+00:51:21,960 --> 00:51:26,080
+the role of retention? And I think for us it 
+started out much more organically, and so we  
+
+609
+00:51:26,080 --> 00:51:31,280
+have a lot of monetization hooks, that again, is 
+the retention PM, I would love to get rid of. But  
+
+610
+00:51:31,280 --> 00:51:36,400
+again, it's sort of part of how the streak works 
+right now. And so, we always have this tension of,  
+
+611
+00:51:36,400 --> 00:51:42,560
+hey, if we start to make it harder to buy 
+streak freezes, then fewer people buy them,  
+
+612
+00:51:42,560 --> 00:51:48,320
+buy gems to buy them, and so there's this 
+more convoluted series of impacts that happen.
+
+613
+00:51:48,320 --> 00:51:52,360
+Yeah, no, I love that people 
+wanting to buy streak freeze is  
+
+614
+00:51:52,360 --> 00:51:56,520
+like the ultimate sign of how much streaks matter.
+
+615
+00:51:57,040 --> 00:52:02,840
+Yeah, streak freeze is the other big 
+one that we've recently demonetized,  
+
+616
+00:52:02,840 --> 00:52:09,640
+or introduced a free option for, is getting 
+back a lost streak. So, used to lose a streak,  
+
+617
+00:52:09,640 --> 00:52:13,960
+we had a feature, in the day, back in the day, 
+called Streak Repair, we'd give you your streak  
+
+618
+00:52:13,960 --> 00:52:19,800
+back, you had to pay gems. But what we found that 
+worked way better was a feature called Earn Back,  
+
+619
+00:52:19,800 --> 00:52:23,800
+and this is basically where you would have to 
+do a certain number of lessons, as long as you  
+
+620
+00:52:23,800 --> 00:52:29,840
+came back within a window soon after losing your 
+streak, do a few lessons and we just give you your  
+
+621
+00:52:29,840 --> 00:52:35,960
+streak back. And that was such a retention winner. 
+And again, what we thought about was it feels like  
+
+622
+00:52:35,960 --> 00:52:41,080
+you've earned it so much more when you've done... 
+You deserve to have your streak back, we haven't  
+
+623
+00:52:41,080 --> 00:52:46,560
+cheapen the streak because you've done something.
+And in this sense, this idea of cheapening the  
+
+624
+00:52:46,560 --> 00:52:51,440
+streak is something, like from a philosophical... 
+Philosophy of the streak. From a philosophical  
+
+625
+00:52:51,440 --> 00:52:56,720
+level, we wrestle with all the time, of, 
+cool, we're giving out more streak freezes,  
+
+626
+00:52:56,720 --> 00:53:01,760
+at what point do we cross the line and users 
+start to realize their streak means nothing? Now,  
+
+627
+00:53:01,760 --> 00:53:05,160
+everything that we've seen, users are 
+totally cool with using streak freezes  
+
+628
+00:53:05,160 --> 00:53:09,240
+and still thinking about their streak is this 
+meaningful thing, but my co-lead, Antonia,  
+
+629
+00:53:09,240 --> 00:53:14,920
+who made that awesome cross-stitch for me, she is 
+the keeper for us of the sanctity of the streak.  
+
+630
+00:53:14,920 --> 00:53:18,600
+And a lot of times as we... And I think this is 
+really important to have, as you're thinking about  
+
+631
+00:53:18,600 --> 00:53:22,360
+building your streak. You can almost always 
+get engagement wins, up to a certain point,  
+
+632
+00:53:22,360 --> 00:53:28,480
+by just cheapening the streak, making it easier to 
+extend, letting users have more flexibility, but  
+
+633
+00:53:28,480 --> 00:53:32,120
+you kind of got to hold the line at some point.
+And it's not clear where that line is.  
+
+634
+00:53:32,120 --> 00:53:36,080
+And once you... You talk about 
+one-way doors or two-way doors,  
+
+635
+00:53:36,080 --> 00:53:41,360
+there's a point where you go too far and it's a 
+one-way door, and all of a sudden those users,  
+
+636
+00:53:41,360 --> 00:53:46,120
+those 9 million users on one-year streaks don't 
+care about their streak anymore. And that is,  
+
+637
+00:53:46,120 --> 00:53:49,920
+I don't know, again, retention PM perspective, 
+that'd be an extinction level event for us. I  
+
+638
+00:53:49,920 --> 00:53:53,240
+don't want all of these users to stop 
+caring about their streak. And so,  
+
+639
+00:53:53,240 --> 00:54:01,200
+to have somebody who is invested in the sanctity 
+of this streak, and for us it's Antonia and Luis,  
+
+640
+00:54:01,200 --> 00:54:06,280
+he's very good about this, is really important, 
+just so you make sure you don't go too far.
+
+641
+00:54:06,280 --> 00:54:11,080
+That's an awesome insight. So, to protect... 
+And push notifications I think are another  
+
+642
+00:54:11,080 --> 00:54:14,360
+example of this in general for companies, how 
+much is too much? Because everyone is just like,  
+
+643
+00:54:14,360 --> 00:54:20,560
+let's just send another push, it's fine, just one 
+more. And so, your solution to that is a person is  
+
+644
+00:54:20,560 --> 00:54:25,840
+like the keeper, and almost the gatekeeper, 
+plus the founder, of how far is too far.
+
+645
+00:54:26,560 --> 00:54:29,760
+It's good if you can have that. 
+I think push notifications are  
+
+646
+00:54:29,760 --> 00:54:32,960
+also easier because there's a lot of 
+things you can do around, all right,  
+
+647
+00:54:32,960 --> 00:54:36,600
+we'll send a budget cap for how many 
+notifications we'll send, you can-
+
+648
+00:54:36,600 --> 00:54:38,360
+It's like [inaudible 00:54:38] policy.
+
+649
+00:54:38,360 --> 00:54:41,880
+Yeah, policies. But I think with a lot 
+of things, at least for the streak,  
+
+650
+00:54:41,880 --> 00:54:46,880
+it's harder to create policies for in the same 
+way, a lot of it has to be done based on feel,  
+
+651
+00:54:46,880 --> 00:54:49,800
+and so you just got to use 
+your best judgment at times.
+
+652
+00:54:49,800 --> 00:54:53,200
+Sweet. Okay. Any other, maybe 
+one or two more lessons from  
+
+653
+00:54:53,200 --> 00:54:55,840
+this journey of what streaks has become today.
+
+654
+00:54:56,400 --> 00:54:59,960
+You mentioned notifications, and I've 
+mentioned this a few times. One... It's funny,  
+
+655
+00:54:59,960 --> 00:55:04,000
+you tend to think of, exactly as you say, you 
+can just always send another notification,  
+
+656
+00:55:04,000 --> 00:55:09,000
+it's going to be some win, and at some point it'll 
+be a bad experience, but it's tough to see that.  
+
+657
+00:55:09,000 --> 00:55:13,520
+There's actually a notification that we... So, we 
+send two notifications related to your core streak  
+
+658
+00:55:13,520 --> 00:55:17,800
+each day, the first is a practice reminder, we 
+send it, this is actually an interesting insight,  
+
+659
+00:55:17,800 --> 00:55:21,800
+23 and a half hours after you practice 
+the day before. Whoa, that is a lot.
+
+660
+00:55:21,800 --> 00:55:23,360
+23 and a half. Okay,
+
+661
+00:55:23,360 --> 00:55:26,360
+So, basically, if you practice at noon today,  
+
+662
+00:55:26,360 --> 00:55:31,270
+we'll send it to you at 11:30 
+AM tomorrow, and we have done-
+
+663
+00:55:31,270 --> 00:55:34,320
+And it's, because it's like assuming they 
+are free in that time the day before,  
+
+664
+00:55:34,320 --> 00:55:35,960
+maybe they'll be free at the same time?
+
+665
+00:55:35,960 --> 00:55:42,440
+And we actually moved, we used to let users set 
+this practice reminder time, and our thinking was,  
+
+666
+00:55:42,440 --> 00:55:46,960
+cool, you're going to say 7:00 PM, that's when 
+I really want to extend my streak each day,  
+
+667
+00:55:46,960 --> 00:55:51,120
+and then you know what? I say this to somebody 
+with two kids, life gets in the way, life always  
+
+668
+00:55:51,120 --> 00:55:55,520
+gets in the way, and when you think you're going 
+to practice will change, your life will change,  
+
+669
+00:55:55,520 --> 00:56:00,040
+whatever. And what we realize is the best 
+indicator of when you should practice was  
+
+670
+00:56:00,040 --> 00:56:03,360
+when did you practice the day before. We could 
+almost certainly get more detailed, we have tried  
+
+671
+00:56:03,360 --> 00:56:07,840
+a bunch of ways to have much more complex logic, 
+and what always wins is 23 and a half hours.
+
+672
+00:56:07,840 --> 00:56:10,040
+That's so interesting. Revealed 
+behavior versus stated.
+
+673
+00:56:10,040 --> 00:56:14,400
+Yeah, exactly. So, again, we send this 
+practice reminder 23 and a half hours later,  
+
+674
+00:56:14,400 --> 00:56:18,040
+the other thing that we'll do though is we'll 
+send a, what we call a streak saver, and this  
+
+675
+00:56:18,040 --> 00:56:24,920
+is at 10:00 at night, if you have not extended 
+your streak, we'll send you a message saying, hey,  
+
+676
+00:56:25,880 --> 00:56:30,560
+it's your last chance, this is it, if you don't 
+extend your streak. And you would think that,  
+
+677
+00:56:31,320 --> 00:56:37,000
+that's kind of spammy, that's kind of annoying, 
+to get a notification from an app at 10:00 PM,  
+
+678
+00:56:37,000 --> 00:56:41,320
+but what we found is because people care about 
+their streak, their streak is this good thing  
+
+679
+00:56:41,320 --> 00:56:45,200
+that they attach positive emotions, 
+that they don't really want to lose,  
+
+680
+00:56:45,200 --> 00:56:51,560
+that notification reminding them, hey, come back 
+and... People see this by and large as a positive  
+
+681
+00:56:51,560 --> 00:56:55,200
+notification and not a negative notification.
+Obviously, it serves our purpose as well of  
+
+682
+00:56:55,200 --> 00:56:59,000
+getting users to come back and not lose their 
+streaks, but again, I think if you can think  
+
+683
+00:56:59,000 --> 00:57:02,160
+about your notification strategy related 
+to what is the feature that it's tied to,  
+
+684
+00:57:02,160 --> 00:57:07,040
+how do users perceive that? You can 
+almost certainly, not get away with more,  
+
+685
+00:57:07,040 --> 00:57:13,080
+but you can be thoughtful about notification load, 
+and when to send notifications, and again, for us,  
+
+686
+00:57:13,080 --> 00:57:19,320
+this late night message, that's also highly 
+impactful, super good, is actually something  
+
+687
+00:57:19,320 --> 00:57:25,200
+that could be perceived as spammy, but a 
+lot of our users really do... Somebody who,  
+
+688
+00:57:25,200 --> 00:57:30,880
+it's often late at night, and I work here, and 
+I'm like, oh, forgot to do my... I was think about  
+
+689
+00:57:30,880 --> 00:57:36,640
+Duolingo all day, here it is, 11:15, and I still 
+haven't done it, that message is really powerful.
+
+690
+00:57:36,640 --> 00:57:40,160
+Yeah. It has saved me many times, 
+I totally know that message,  
+
+691
+00:57:40,160 --> 00:57:47,000
+and I love that it's a late night message 
+from an app, very rarely do you actually,  
+
+692
+00:57:47,000 --> 00:57:50,000
+are happy about that, and I love that 
+this actually is a good example where-
+
+693
+00:57:51,400 --> 00:57:55,200
+It's really funny, all of the stories that 
+you hear about people extending their streak,  
+
+694
+00:57:55,200 --> 00:58:01,520
+if you look around a Duolingo party, where it's 
+like 11:30, 11:45, all the Duolingo employees,  
+
+695
+00:58:01,520 --> 00:58:05,280
+they're are doing their lesson at the last 
+minute. You always see these pictures of  
+
+696
+00:58:05,280 --> 00:58:11,000
+people in the club doing, or at a concert doing 
+Duolingo, and yeah, because it's like otherwise  
+
+697
+00:58:11,000 --> 00:58:13,920
+you're going to use a streak freezer, 
+or God forbid you will lose your streak.
+
+698
+00:58:13,920 --> 00:58:18,200
+That's so funny. Okay, anything else? And if 
+there's more than one more, definitely share,  
+
+699
+00:58:18,200 --> 00:58:23,000
+but any other really interesting 
+lessons or wrong turns or insights?
+
+700
+00:58:23,000 --> 00:58:26,400
+I talked about streak freezes, and we've done 
+a lot with streak freeze, but I think if you're  
+
+701
+00:58:26,400 --> 00:58:31,400
+going to make flexibility a thing, it's probably 
+also useful thinking about how do you celebrate  
+
+702
+00:58:31,400 --> 00:58:36,440
+perfection. And so, we have a feature that we 
+have, it is the simplest thing in the world, it's  
+
+703
+00:58:36,440 --> 00:58:41,200
+called Perfect Streak. And it's just, if you don't 
+use the streak freeze for a few days, we make your  
+
+704
+00:58:41,200 --> 00:58:46,560
+streak look gold, and we make your little progress 
+bar on the calendar just look a little bit nicer.  
+
+705
+00:58:46,560 --> 00:58:52,000
+There's no reward for doing it, you don't get 
+anything other than this nice little indication,  
+
+706
+00:58:52,000 --> 00:58:59,560
+and it is awesome. It is a simple feature, it 
+is ultra not complex, and it is really powerful,  
+
+707
+00:58:59,560 --> 00:59:06,920
+not only for getting users to, as a bit of a 
+reward, they'd be hey, get to seven days without  
+
+708
+00:59:06,920 --> 00:59:11,920
+using a streak freeze and your streak becomes 
+perfect, but it's also a really nice indication  
+
+709
+00:59:11,920 --> 00:59:18,120
+of users who aren't using streak freezes.
+Here is the thing that if you don't use a  
+
+710
+00:59:18,120 --> 00:59:21,600
+streak freeze, which, again candidly, I would 
+love for you never to use a streak freeze,  
+
+711
+00:59:21,600 --> 00:59:27,240
+if you don't use a streak freeze, your streak 
+will stay perfect. It's funny, we actually just,  
+
+712
+00:59:27,240 --> 00:59:35,600
+we're constantly responding to bug reports about 
+the streak. It is... I swear to God, we have the  
+
+713
+00:59:35,600 --> 00:59:39,960
+best infrastructure around this feature because 
+it is so important. We had an employee who lost  
+
+714
+00:59:39,960 --> 00:59:48,040
+her, I think a four-month perfect streak, and it 
+was a big deal for her because she did her lesson,  
+
+715
+00:59:48,040 --> 00:59:51,840
+and she was crossing international dateline, there 
+was a bunch of stuff going on that was like, it  
+
+716
+00:59:51,840 --> 00:59:56,480
+was just kind of weird in our backend. But people 
+start to care about perfection as much as they  
+
+717
+00:59:56,480 --> 01:00:02,640
+do their streak, and for that person it was a big 
+deal when they lost their perfect streak. And so,  
+
+718
+01:00:02,640 --> 01:00:07,360
+this is just an example of, look, if you're 
+going to go after flexibility, which is good,  
+
+719
+01:00:07,360 --> 01:00:13,360
+finding a way to pull users back into perfection 
+is a really important counterweight to have.
+
+720
+01:00:13,360 --> 01:00:15,560
+What I'm imagining is you guys need a Amazon style  
+
+721
+01:00:15,560 --> 01:00:20,000
+chatbot that just gives you the streak 
+back, it's just like, okay, here you go.
+
+722
+01:00:20,000 --> 01:00:23,120
+We have very much... So, we have, 
+if people lose their streak,  
+
+723
+01:00:23,720 --> 01:00:26,520
+there's ways to get in contact with us, 
+but we've actually thought about that,  
+
+724
+01:00:26,520 --> 01:00:30,080
+where it's like, okay, we should 
+just build a self-service feature,  
+
+725
+01:00:30,080 --> 01:00:34,200
+and if we think that your excuse is good enough, 
+whatever, we'll just [inaudible 01:00:34].
+
+726
+01:00:34,200 --> 01:00:35,200
+Yeah, yeah. [inaudible 01:00:35].
+
+727
+01:00:35,200 --> 01:00:40,840
+Because again, I'd much rather you 
+be on a streak than have lost it,  
+
+728
+01:00:40,840 --> 01:00:41,920
+particularly [inaudible 01:00:41].
+
+729
+01:00:41,920 --> 01:00:46,840
+Right. But it also can feel that easy. I love 
+this, I also love this point about just the  
+
+730
+01:00:46,840 --> 01:00:52,160
+power of the animation and user experience 
+having impact, that's really interesting.  
+
+731
+01:00:52,160 --> 01:00:55,920
+Is that something you find often, just 
+celebrating and making it feel really  
+
+732
+01:00:56,880 --> 01:01:02,320
+amazing without copy or any feature 
+is just like, holy, you're awesome?
+
+733
+01:01:02,320 --> 01:01:09,160
+This is another thing where it's like when users 
+care about the feature, using not only animation,  
+
+734
+01:01:09,160 --> 01:01:13,480
+haptics, sound effects, using... And it's funny, 
+we don't have sound effects on the streak,  
+
+735
+01:01:13,480 --> 01:01:15,640
+this is probably something we'll look 
+at in the not too distant in future,  
+
+736
+01:01:15,640 --> 01:01:18,120
+but haptics are something we 
+have done a lot of testing on-
+
+737
+01:01:18,120 --> 01:01:19,634
+Like the phone vibrating in various ways.
+
+738
+01:01:19,634 --> 01:01:25,680
+Yeah, exactly, your phone, there being a really 
+cool haptic pattern as you extend your streak,  
+
+739
+01:01:26,200 --> 01:01:30,720
+all of this stuff wins. And it's cool because I 
+think it wins... There's a few reasons. One is  
+
+740
+01:01:30,720 --> 01:01:36,520
+it just makes you feel good, you get some cool 
+moment in your streak, and we celebrate you,  
+
+741
+01:01:36,520 --> 01:01:40,040
+and we celebrate you in this visual way, and 
+your phone's buzzing, it just feels awesome.  
+
+742
+01:01:40,040 --> 01:01:45,280
+The other thing it does is it causes you to pause 
+on that screen, and I think there's this desire,  
+
+743
+01:01:45,280 --> 01:01:49,280
+as you think through a lot of, as PMs think 
+through, oh, how can I get users through this  
+
+744
+01:01:49,280 --> 01:01:52,280
+funnel as painlessly as possible? I talked 
+about [inaudible 01:01:52]. There's a lot  
+
+745
+01:01:52,280 --> 01:01:56,400
+of times where I don't, I want you to stop. 
+I want you to stop and land on the screen. 
+
+746
+01:01:56,400 --> 01:02:02,360
+You got to be careful not to do this for too many 
+screens, but the one big ones, sometimes I just  
+
+747
+01:02:02,360 --> 01:02:06,440
+want you to pause there and enjoy the moment. 
+If I can get you to enjoy the moment more,  
+
+748
+01:02:06,440 --> 01:02:09,840
+you're going to care more about your streak, and 
+you're going to be coming back tomorrow. And so,  
+
+749
+01:02:09,840 --> 01:02:14,960
+animations that are cool, and that cause you 
+to really soak it in, haptics that feel good,  
+
+750
+01:02:14,960 --> 01:02:20,800
+all of that comes together to make you really 
+focus on that moment, all of that just gets  
+
+751
+01:02:20,800 --> 01:02:25,840
+users more connected to their streak. So, 
+animation in the right times works well  
+
+752
+01:02:26,640 --> 01:02:29,880
+and it's something we've had win quite a lot.
+
+753
+01:02:29,880 --> 01:02:33,640
+Who designs the haptic stuff? 
+Is there a haptic designer?
+
+754
+01:02:33,640 --> 01:02:38,440
+For the longest time it would be a product 
+designer, or actually, it initially started as the  
+
+755
+01:02:38,440 --> 01:02:43,120
+engineer would be like, all right, would cobble 
+together haptics, based on what they felt good,  
+
+756
+01:02:43,120 --> 01:02:49,200
+then it became a product design role, where they 
+would use their best judgment. We actually just  
+
+757
+01:02:49,200 --> 01:02:56,080
+recently required an animation studio, Hobbs in 
+Detroit, and now they are the sort of keepers  
+
+758
+01:02:56,080 --> 01:03:01,520
+of, they do a lot of motion design work, haptics 
+very close to that, and so they do a lot of that.  
+
+759
+01:03:01,520 --> 01:03:08,680
+I do remember trying to hire for a while a haptics 
+contractor, like haptics design, and it was the  
+
+760
+01:03:08,680 --> 01:03:11,120
+saddest hiring I've ever done, because it was 
+just, I don't know, it was such a specific...  
+
+761
+01:03:11,120 --> 01:03:18,680
+I don't know. I just went through a lot 
+of people who, it's just a really tricky  
+
+762
+01:03:18,680 --> 01:03:22,920
+space of kind of sound effects, kind 
+of motion design, sort of technical...
+
+763
+01:03:22,920 --> 01:03:25,360
+Yeah, such a unique role.
+
+764
+01:03:25,360 --> 01:03:27,280
+Very unique specific skill set.
+
+765
+01:03:27,280 --> 01:03:30,520
+Right. And there's very few apps 
+that really need this this deeply,  
+
+766
+01:03:30,520 --> 01:03:32,720
+so you're almost creating this person.
+
+767
+01:03:32,720 --> 01:03:33,440
+Yeah.
+
+768
+01:03:33,440 --> 01:03:38,080
+That is fascinating. That's like a 
+whole podcast on its own. By the way,  
+
+769
+01:03:38,080 --> 01:03:42,080
+I was going to say as you're talking about this, 
+I love that it's a win to celebrate people that  
+
+770
+01:03:42,080 --> 01:03:46,720
+don't lose their streak, you introduce this 
+way to make it flexible, and that's a big win,  
+
+771
+01:03:46,720 --> 01:03:51,320
+and then you go the opposite direction of, if you 
+don't use this feature, you also feel even better.
+
+772
+01:03:51,320 --> 01:03:56,000
+Well, and it's funny, you talked about the 
+danger of feature bloat, or we sort of talked  
+
+773
+01:03:56,000 --> 01:03:58,680
+about the danger of feature bloat, this is 
+actually something I'm constantly thinking  
+
+774
+01:03:58,680 --> 01:04:01,960
+about with this. We have the streak, but 
+then we also have the perfect streak,  
+
+775
+01:04:01,960 --> 01:04:05,160
+and we count how many weeks you've 
+had a perfect streak. Well, all of  
+
+776
+01:04:05,160 --> 01:04:09,560
+a sudden we have two streak numbers that 
+are competing with each other. It's funny,  
+
+777
+01:04:09,560 --> 01:04:15,640
+we actually don't introduce the concept of a 
+perfect streak until after you've hit seven days,  
+
+778
+01:04:15,640 --> 01:04:20,640
+and some of this is just because the cognitive 
+load of additional streak features. A lot of  
+
+779
+01:04:20,640 --> 01:04:25,720
+our cooler streak features, you got to get 
+on a long enough streak. And not to say we  
+
+780
+01:04:25,720 --> 01:04:29,720
+haven't tested it because we have, because we test 
+everything, introducing these features earlier,  
+
+781
+01:04:29,720 --> 01:04:35,440
+but what we've found is that pretty universally 
+they lose when we introduce too many things,  
+
+782
+01:04:35,440 --> 01:04:40,040
+too many concepts to users too early in the 
+experience, it's just hard for them to manage.
+
+783
+01:04:40,040 --> 01:04:45,880
+Okay, sweet. I know that we can go down this track 
+for hours and hours, there's endless learnings  
+
+784
+01:04:45,880 --> 01:04:50,560
+about all the things you all have done along the 
+journey. I want to shift to talking about how your  
+
+785
+01:04:50,560 --> 01:04:58,240
+team operates. So, there's a lot of threads you 
+touched on of just how a team can do this so well,  
+
+786
+01:04:58,240 --> 01:05:04,760
+shift 600 experiments, as you said, continue 
+to find opportunity. What are some maybe  
+
+787
+01:05:04,760 --> 01:05:09,840
+lessons or advice you'd have for folks that are 
+like, oh wow, I want to work more like this,  
+
+788
+01:05:09,840 --> 01:05:13,400
+from your team's experience, how does your 
+team to operate that folks can learn from?
+
+789
+01:05:13,400 --> 01:05:17,680
+Yeah, maybe just a little bit of context. 
+Duolingo cares a lot about... So,  
+
+790
+01:05:17,680 --> 01:05:22,560
+most of our teams are metric-based teams. 
+So, we do the most work with streak,  
+
+791
+01:05:23,120 --> 01:05:28,000
+but the metric, what we really care about 
+at the end of the day is CURR, and DAUs,  
+
+792
+01:05:28,000 --> 01:05:33,840
+because we see that DAUs hit CURR. And so, 
+when you can be really laser focused on,  
+
+793
+01:05:33,840 --> 01:05:39,720
+my goal each quarter is to make this metric 
+go up, I think it's much easier to make sure  
+
+794
+01:05:39,720 --> 01:05:43,520
+that you're working on the highest ROI thing. 
+I think when you think more about like, oh,  
+
+795
+01:05:43,520 --> 01:05:48,360
+I want to make this feature better, I think 
+it's easier to get lost in what better means,  
+
+796
+01:05:48,360 --> 01:05:53,320
+and how you think about better. And so, I do 
+think that having a really strong degree of focus  
+
+797
+01:05:54,000 --> 01:05:59,000
+as a team on what is the metric that I'm caring 
+about, and how is that directing my efforts is-
+
+798
+01:05:59,000 --> 01:06:02,400
+Versus feature-oriented. So, basically 
+your teams are structured around  
+
+799
+01:06:02,400 --> 01:06:07,840
+a metric/a goal/outcome versus we 
+own this feature, or this product.
+
+800
+01:06:07,840 --> 01:06:15,400
+So, retention owns streak, I guess, but that's 
+only because we've seen streak drive CURR better  
+
+801
+01:06:15,400 --> 01:06:23,160
+than any feature. But we are not, we have this 
+IAP hook with our streak freeze purchases,  
+
+802
+01:06:23,160 --> 01:06:28,560
+there are other teams that work on, that can and 
+have worked on the streak, because it's not ours  
+
+803
+01:06:28,560 --> 01:06:33,080
+to say, no, no, no, we do all the iterations 
+here, we just know that it drives our metric  
+
+804
+01:06:33,080 --> 01:06:38,240
+better. In the same way that leaderboards, we have 
+a team that focuses on how much time you spent,  
+
+805
+01:06:38,240 --> 01:06:41,880
+we want users to spend more time on Duolingo so 
+they're learning more. Leaderboards is the best  
+
+806
+01:06:41,880 --> 01:06:45,560
+vector for doing it, so that team does a lot of 
+leaderboards work, but every now and then I have  
+
+807
+01:06:45,560 --> 01:06:48,480
+an idea that I think will be highly retentive, 
+and I will go in, and I'll pitch to them,  
+
+808
+01:06:48,480 --> 01:06:51,720
+and then we'll do some change to the 
+leaderboard to make it more retentive. 
+
+809
+01:06:53,440 --> 01:06:57,960
+But I do think having that clear metric of 
+we're trying to drive CURR not we're trying  
+
+810
+01:06:57,960 --> 01:07:03,640
+to just make this feature better, helps at least 
+make sure, give the team clear marching orders,  
+
+811
+01:07:03,640 --> 01:07:07,200
+and that focus I think is really 
+good for prioritizing backlog.
+
+812
+01:07:07,200 --> 01:07:09,960
+Cool. This is a really important point, 
+this is the same way Airbnb worked,  
+
+813
+01:07:09,960 --> 01:07:13,880
+when I worked there for a long time, is 
+it's, here's a goal that we want your  
+
+814
+01:07:13,880 --> 01:07:20,600
+team to be responsible for, you can work on any 
+product you need to hit this goal, as you said,  
+
+815
+01:07:20,600 --> 01:07:25,520
+often various products are most connected to 
+what you're doing, but what you're describing is,  
+
+816
+01:07:26,480 --> 01:07:30,160
+even though a team's kind of... I imagine you 
+own it from a [inaudible 01:07:29] perspective,  
+
+817
+01:07:30,160 --> 01:07:34,120
+and you're like are the shepherd of this part of 
+the feature because it hits your goal, helps your  
+
+818
+01:07:34,120 --> 01:07:38,440
+goal most. But any other team can come in and be 
+like, hey Jackson, we need to work on some streak  
+
+819
+01:07:38,440 --> 01:07:44,360
+stuff to help with learning, you're like, go for 
+it. Just a tangent there. Do they work really  
+
+820
+01:07:44,360 --> 01:07:48,600
+closely with your team if they want to do some 
+work in the code? How does that work logistically?
+
+821
+01:07:48,600 --> 01:07:53,440
+Yeah. If you are, again, this is where I say 
+there's soft ownership, we're not against teams  
+
+822
+01:07:53,440 --> 01:07:58,120
+doing things to the streak, but if we're going 
+to do something given we probably have multiple  
+
+823
+01:07:58,120 --> 01:08:03,640
+quarters worth of a roadmap around the streak... I 
+say probably, we do. Multiple quarters of roadmap  
+
+824
+01:08:03,640 --> 01:08:07,600
+for what we can do to the streak, if other 
+teams want to come and mess with it, okay,  
+
+825
+01:08:07,600 --> 01:08:13,440
+we got to just figure out how is that going to 
+work with what our plans for the streak were,  
+
+826
+01:08:13,440 --> 01:08:15,680
+how do we make sure a lot of times 
+when teams are coming in thinking, hey,  
+
+827
+01:08:15,680 --> 01:08:19,520
+let's do this to the streak, they're in context 
+that we might have, and so there's as much of a  
+
+828
+01:08:19,520 --> 01:08:22,520
+much simpler version of what we're doing now, a 
+bit of a knowledge sharing, of saying, all right,  
+
+829
+01:08:22,520 --> 01:08:25,680
+well, this is what we think about the streak, 
+this is what we've seen work, hasn't worked,  
+
+830
+01:08:25,680 --> 01:08:28,080
+how does that influence some of the 
+hypothesis that you have. And so,  
+
+831
+01:08:28,080 --> 01:08:32,040
+I think getting that really... Making 
+sure the juice is worth the squeeze.
+
+832
+01:08:32,040 --> 01:08:35,480
+Good old-fashioned product 
+management work right there.
+
+833
+01:08:35,480 --> 01:08:35,640
+Yeah.
+
+834
+01:08:35,640 --> 01:08:37,880
+Cool. What else is interesting about how you  
+
+835
+01:08:37,880 --> 01:08:41,120
+all operate and how you all work 
+to achieve this sort of success?
+
+836
+01:08:41,120 --> 01:08:47,640
+Again, my team lead runs, Antonia runs the 
+most... A really process, if you're going to  
+
+837
+01:08:47,640 --> 01:08:51,880
+run this experiments, you have to be really 
+process-oriented and really thoughtful about  
+
+838
+01:08:51,880 --> 01:08:55,440
+which experiments am I going to run when, 
+how is that going to set up the next one,  
+
+839
+01:08:58,120 --> 01:09:02,200
+there's heavy Jira automation, I think sometimes 
+the Atlassian suite makes my eyes bleed,  
+
+840
+01:09:02,200 --> 01:09:08,160
+but there's a lot of times where that degree 
+of process helps the team unblock engineers  
+
+841
+01:09:08,160 --> 01:09:12,320
+and make them move really fast. And so, 
+making sure that you have really good  
+
+842
+01:09:12,320 --> 01:09:17,720
+process around how are you going to run so 
+many experiments, it's worth investing in.
+
+843
+01:09:17,720 --> 01:09:20,200
+Can you follow that thread actually? 
+Just when you say that, what does that  
+
+844
+01:09:20,200 --> 01:09:25,360
+look like? What are some elements of that 
+process to make this work efficiently?
+
+845
+01:09:25,360 --> 01:09:30,320
+All the way down to, really detailed roadmaps 
+around, all right, we're running this experiment  
+
+846
+01:09:30,320 --> 01:09:36,520
+is based on the results of this experiment, or 
+might hook into an element of this feature, how do  
+
+847
+01:09:36,520 --> 01:09:41,480
+we make sure that we're lining up implementation 
+on this so that as soon as this thing runs and  
+
+848
+01:09:41,480 --> 01:09:46,360
+we're ready to go, we can start rolling out the 
+next one. I hate features just sitting around and  
+
+849
+01:09:46,360 --> 01:09:51,440
+us not, again, continuing that thread. So, it's 
+not just thinking about what's our engineering  
+
+850
+01:09:51,440 --> 01:09:55,080
+bandwidth, but also what's the design bandwidth 
+to make sure that we have the next iteration of  
+
+851
+01:09:55,080 --> 01:10:01,600
+this feature ready to go. We're planning months 
+out, as we think about these feature iterations,  
+
+852
+01:10:01,600 --> 01:10:09,960
+even small ones, feature iterations, because 
+when you lose cycles, not pushing on a feature,  
+
+853
+01:10:09,960 --> 01:10:14,520
+it's just sort of lost opportunity. And so, 
+everything from being thoughtful about engineering  
+
+854
+01:10:14,520 --> 01:10:19,360
+roadmaps to design roadmaps to product roadmaps, 
+all of that needs to come together in a system.
+
+855
+01:10:19,360 --> 01:10:22,880
+So, essentially, mapping 
+dependencies across function,  
+
+856
+01:10:22,880 --> 01:10:25,320
+and you're saying in Jira you can do this.
+
+857
+01:10:25,320 --> 01:10:31,080
+You can do a lot of it in Jira, there is a 
+non-zero amount of Google Docs that we have,  
+
+858
+01:10:31,080 --> 01:10:34,600
+that sometimes does things a 
+little bit... I don't know,  
+
+859
+01:10:34,600 --> 01:10:36,740
+sometimes it just looks a little bit 
+nicer, it's a little more flexible.
+
+860
+01:10:36,740 --> 01:10:37,600
+Yeah. [inaudible 01:10:38].
+
+861
+01:10:37,600 --> 01:10:42,320
+But Jira is our, it is where 
+the motherload of process is.
+
+862
+01:10:42,320 --> 01:10:43,920
+Great. Okay. What else?
+
+863
+01:10:43,920 --> 01:10:50,800
+Another thing that I'll just say is, we really 
+resist the urge to do the big V1. And I think  
+
+864
+01:10:50,800 --> 01:10:56,640
+this is, I shared the streak goal example, 
+where, a lot of times when we're exploring  
+
+865
+01:10:56,640 --> 01:11:03,640
+something we will say, okay, well, that's cool, 
+how do we strip away a bunch of stuff and figure  
+
+866
+01:11:03,640 --> 01:11:10,000
+out what our core hypothesis is? And then, just 
+ship that thing first as a V1. Because it's easy,  
+
+867
+01:11:10,000 --> 01:11:13,000
+and I've found this time and time 
+again, it's easy to add things,  
+
+868
+01:11:13,000 --> 01:11:18,520
+features that make them win, I've worked in 
+retention engagement long enough, I can add,  
+
+869
+01:11:18,520 --> 01:11:23,520
+I know enough things to pull, and bells to 
+add, and whistles to make something win,  
+
+870
+01:11:23,520 --> 01:11:27,320
+but there's a lot of times where it's like 
+cool, t [inaudible 01:11:27] because all the  
+
+871
+01:11:27,320 --> 01:11:32,040
+whistles you added, not because of what your 
+core hypothesis was, and a lot of times if you  
+
+872
+01:11:32,040 --> 01:11:36,840
+can just really simplify what the feature is, it's 
+also much easier to ship, it's easier to design. 
+
+873
+01:11:36,840 --> 01:11:42,480
+You're not designing for a whole system, you're 
+designing for something much simpler. And so,  
+
+874
+01:11:42,480 --> 01:11:49,920
+getting everybody to think that way, allows us 
+to end up shipping faster, shipping simpler,  
+
+875
+01:11:49,920 --> 01:11:55,240
+designing faster, getting faster approval, getting 
+insight, and then doing what I talked about with  
+
+876
+01:11:55,240 --> 01:11:59,640
+streak goal, being able to run iteration after 
+iteration after iteration, add these things  
+
+877
+01:11:59,640 --> 01:12:06,640
+iteratively. And then not only by doing this are 
+you able to move faster, but you get confidence  
+
+878
+01:12:06,640 --> 01:12:13,400
+at each step of the way, that, hey, my series of 
+hypotheses is actually born out. Or if it's not,  
+
+879
+01:12:13,400 --> 01:12:17,960
+cool, then we're going to drop that part of the 
+feature, and then just ship what actually matters.
+
+880
+01:12:17,960 --> 01:12:24,640
+If I can try to summarize the broad lesson so 
+far that I'm hearing, and maybe you would've  
+
+881
+01:12:24,640 --> 01:12:28,880
+shared this, but I'm just thinking, if I 
+were to try to design a company to operate,  
+
+882
+01:12:28,880 --> 01:12:34,560
+that we all operate, you essentially map 
+all the levers that drive the business. So,  
+
+883
+01:12:34,560 --> 01:12:40,440
+you have this mapping of all the metrics 
+that drive up to growth and daily active  
+
+884
+01:12:40,440 --> 01:12:48,880
+users. CURR ended up being the biggest 
+specific metric to drive growth long term,  
+
+885
+01:12:48,880 --> 01:12:51,640
+so there's imagining a tree of all 
+the opportunities you could work on,  
+
+886
+01:12:51,640 --> 01:12:59,880
+you found this is what is most connected to our 
+growth. You basically just start mining, I don't  
+
+887
+01:12:59,880 --> 01:13:04,080
+know if mining is the right metaphor, but just 
+looking for things that move that specific metric. 
+
+888
+01:13:04,080 --> 01:13:09,320
+You just look and poke and explore, and then once 
+you find one, you just go real deep on trying a  
+
+889
+01:13:09,320 --> 01:13:14,240
+lot of different... You come up with a hypothesis, 
+and a strategy of here's how we think we can do  
+
+890
+01:13:14,240 --> 01:13:18,880
+this, and how we can move this, and then you just 
+try a bunch of stuff. There's also this element  
+
+891
+01:13:18,880 --> 01:13:23,960
+of the Arrested Development quote, "There's 
+always money in the banana stand," comes to mind,  
+
+892
+01:13:23,960 --> 01:13:29,080
+where it's just keep working on, see there's more, 
+there's going to be more opportunity at this.
+
+893
+01:13:29,080 --> 01:13:35,640
+When I joined Duolingo, the PM that I took over 
+for, Anton, who used to lead the retention team,  
+
+894
+01:13:35,640 --> 01:13:41,800
+I remember saying, "Dude, the streak, it 
+just counts up, you guys have been testing  
+
+895
+01:13:41,800 --> 01:13:45,480
+on it for years, how much more work can we 
+do on the streak?" And he was like, Jackson,  
+
+896
+01:13:45,480 --> 01:13:49,480
+you child... He didn't say exactly this, but 
+this is how I felt it. Like, Jackson, you child,  
+
+897
+01:13:50,000 --> 01:13:56,440
+we're not even 30% of the way optimized. And four 
+years later, I say that with such conviction,  
+
+898
+01:13:56,440 --> 01:14:02,680
+we are so far away from... We've made a ton 
+of strides, but we are still so far away,  
+
+899
+01:14:02,680 --> 01:14:08,600
+and every quarter where we ship a ton of wins and 
+improvements to the streak, it just continues to  
+
+900
+01:14:08,600 --> 01:14:15,360
+prove to me that there is so much more to be done.
+So, I think your framing of it is... And I would  
+
+901
+01:14:15,360 --> 01:14:19,840
+say there's a lot of thought that goes into, 
+again, I talk about the strength of the hypothesis  
+
+902
+01:14:19,840 --> 01:14:24,400
+that you have to have as you start to build 
+out larger feature strategy, I do think it's  
+
+903
+01:14:24,400 --> 01:14:31,280
+really important to not just do a bunch of random 
+stuff but do it with intent, with a goal in mind,  
+
+904
+01:14:31,280 --> 01:14:39,520
+otherwise, you do end up in these local maximas. 
+But yeah, there's still a bunch of stuff that we  
+
+905
+01:14:39,520 --> 01:14:44,800
+haven't tried that I think we have high confidence 
+in working out and so we'll keep doing that.
+
+906
+01:14:44,800 --> 01:14:49,880
+Are there any other, say, lasting lessons 
+from this journey that if someone were to  
+
+907
+01:14:49,880 --> 01:14:55,360
+try to operate this way, build streaks into 
+their product, anything you'd recommend?
+
+908
+01:14:55,360 --> 01:15:01,680
+Yeah, I really do think it starts with... 
+Streaks are an engagement hack. You can  
+
+909
+01:15:01,680 --> 01:15:06,880
+make your app more retentive, I'm almost 
+positive, almost every app out there can  
+
+910
+01:15:06,880 --> 01:15:12,360
+make it more retentive. It is loss aversion, 
+that is, again, armchair psychologist Jackson,  
+
+911
+01:15:13,160 --> 01:15:22,160
+it's just a thing that works on humans. But 
+if your app is not something that users want  
+
+912
+01:15:22,160 --> 01:15:27,480
+to use every day, or whatever cadence 
+you want your app to be, to work on,  
+
+913
+01:15:27,480 --> 01:15:30,800
+it's going to be, you're only going to get 
+so much from that streak, and honestly,  
+
+914
+01:15:30,800 --> 01:15:34,320
+it's probably going to distract you from what 
+really should matter, which is making your app  
+
+915
+01:15:34,320 --> 01:15:38,160
+something that people want to use every day.
+And so, if you start focusing on the streak but  
+
+916
+01:15:38,160 --> 01:15:43,280
+you haven't made that an enjoyable experience, 
+you're just going to waste a lot of time,  
+
+917
+01:15:43,280 --> 01:15:46,720
+honestly. And so, I think making sure that you 
+have your core loop of your app figured out,  
+
+918
+01:15:46,720 --> 01:15:51,520
+that it is giving value to users, it is something 
+that they want to come back to every day,  
+
+919
+01:15:51,520 --> 01:15:57,320
+that really sets the stage for something to 
+layer a streak on. So, resist the temptation,  
+
+920
+01:15:58,120 --> 01:16:03,280
+if you don't think you've reached that point, 
+to go too hard down the path of streak.
+
+921
+01:16:03,280 --> 01:16:05,720
+That's a really good point. Just like 
+a streak is not going to solve your  
+
+922
+01:16:05,720 --> 01:16:09,480
+problems if people don't actually care 
+about the core value you're providing.
+
+923
+01:16:09,480 --> 01:16:13,240
+No, and honestly, it'll probably cause more 
+problems if what you end up focusing on is  
+
+924
+01:16:13,240 --> 01:16:19,760
+how do I make the streak highly engaging, but 
+your app is... You're wasting time that could  
+
+925
+01:16:19,760 --> 01:16:26,480
+otherwise be better spent on solving more 
+critical problems. So, that's one learning,  
+
+926
+01:16:26,480 --> 01:16:32,680
+the other thing that I'll say is, we met with 
+one of our board members, Bing, Bing Gordon,  
+
+927
+01:16:32,680 --> 01:16:38,240
+a few weeks, or a few months ago rather, and he 
+had this comment where he was just like, "The  
+
+928
+01:16:38,240 --> 01:16:42,920
+reason why users care about your streak so much 
+is because you care about your streaks much." You  
+
+929
+01:16:42,920 --> 01:16:46,760
+being Duolingo. The reason why users care about 
+our streak so much is because Duolingo cares about  
+
+930
+01:16:46,760 --> 01:16:50,080
+the streaks so much. And we're like, what do you 
+mean? Well, he's like, well, after every session  
+
+931
+01:16:50,080 --> 01:16:54,000
+you see a big streak screen, and it's animated 
+cooler than almost any other screen in the app,  
+
+932
+01:16:54,000 --> 01:16:58,000
+and then sometimes you see some other screens, 
+and there's all these other... You don't let a  
+
+933
+01:16:58,000 --> 01:17:02,600
+user forget it, you talk about them in messages.
+And so, I think it's worth thinking about, look,  
+
+934
+01:17:02,600 --> 01:17:06,480
+if you're going to build a streak, and then you're 
+going to [inaudible 01:17:06] it off into the  
+
+935
+01:17:06,480 --> 01:17:11,840
+corner of your app, where users aren't going to 
+see it, they're probably not going to care about  
+
+936
+01:17:11,840 --> 01:17:15,960
+it as much, which might be fine, because there 
+might be other levers that you think are more  
+
+937
+01:17:15,960 --> 01:17:22,600
+important to pull on, but there's a reason why we 
+focus as much on the streak as we do, and that's  
+
+938
+01:17:22,600 --> 01:17:28,120
+because we want it to be top of mind for users. 
+And that's not by accident then that users start  
+
+939
+01:17:28,120 --> 01:17:32,080
+to care about it. And so, I think just as you're 
+thinking about building the streak, making sure  
+
+940
+01:17:32,080 --> 01:17:35,440
+that you're giving it the visibility it deserves, 
+if you want it to have the kind of impact that  
+
+941
+01:17:35,440 --> 01:17:42,640
+Duolingo has, it's sort of an important hierarchy 
+principle to think about as you design things.
+
+942
+01:17:42,640 --> 01:17:46,720
+That's such a good point. You look for cues to 
+the app of tell me what I should pay attention to,  
+
+943
+01:17:46,720 --> 01:17:50,680
+what's important? If you're just like 
+fire, explosions, you made a streak,  
+
+944
+01:17:50,680 --> 01:17:54,600
+oh, maybe I should pay attention to this 
+feature. And then the push notifications  
+
+945
+01:17:54,600 --> 01:17:58,800
+obviously encourage you there too. 
+Anything else along those lines?
+
+946
+01:17:58,800 --> 01:18:05,840
+Maybe final thing is, look, we ran so many 
+tests on our Duolingo streak to figure out  
+
+947
+01:18:05,840 --> 01:18:12,000
+what worked. We have a philosophy at Duolingo, 
+of test it first. We are a lot of times willing  
+
+948
+01:18:12,000 --> 01:18:16,040
+to test things. I really think that if you're 
+going to try to introduce a streak, or you want  
+
+949
+01:18:16,040 --> 01:18:24,480
+to improve on the streak you have, don't get 
+too caught up in the philosophy of everything,  
+
+950
+01:18:24,480 --> 01:18:28,800
+make sure your hypotheses feel like they're good, 
+but my recommendation is just try things. And  
+
+951
+01:18:28,800 --> 01:18:33,200
+this is, again, you said it earlier, it's like 
+this is as much human psychology as anything,  
+
+952
+01:18:33,200 --> 01:18:38,800
+and as soon as that becomes the case, you kind 
+of just got to understand what users respond to.  
+
+953
+01:18:38,800 --> 01:18:44,760
+And the easiest way to do that is to stop spending 
+time batting around ideas in a conference room and  
+
+954
+01:18:44,760 --> 01:18:51,760
+just try some stuff. So, huge recommendation to if 
+you're going to invest in a streak, try and figure  
+
+955
+01:18:51,760 --> 01:18:57,440
+out what works through testing with users rather 
+than trying to get it perfect on the first try.
+
+956
+01:18:57,440 --> 01:19:01,280
+Say someone's listening and they're like, 
+should we do streak, is this worth doing?  
+
+957
+01:19:01,280 --> 01:19:07,240
+What's your take on just the chances that a streak 
+feature would be helpful to another consumer?
+
+958
+01:19:07,240 --> 01:19:11,960
+I am well known for saying in the 
+company that I think every team,  
+
+959
+01:19:11,960 --> 01:19:16,280
+every app could benefit from a streak. Now, 
+how you implement it is very different,  
+
+960
+01:19:16,280 --> 01:19:21,280
+and I think you got to, what is your user's 
+use case? If they're going to come use,  
+
+961
+01:19:21,280 --> 01:19:25,760
+I don't know, tax software... Okay, 
+you know what? Now that I say this,  
+
+962
+01:19:25,760 --> 01:19:30,680
+tax software would be a hard one, but maybe it's 
+all about you need users to come back every day,  
+
+963
+01:19:30,680 --> 01:19:35,000
+during the tax season, or how many times... 
+I don't know. Now, that I say this out loud-
+
+964
+01:19:35,000 --> 01:19:37,240
+Times you upload your [inaudible 01:19:37] forms.
+
+965
+01:19:37,240 --> 01:19:44,040
+Yeah, that is a hard use case. But the vast 
+majority of companies I think have a good idea  
+
+966
+01:19:44,040 --> 01:19:49,200
+of like, all right, here is my ideal use case, 
+I want users to come here three times a month,  
+
+967
+01:19:49,200 --> 01:19:54,080
+that would be ideal. Or four times a month. 
+You can build a streak to work. Peloton has  
+
+968
+01:19:54,080 --> 01:20:01,320
+weekly streaks because the idea of doing a 
+Peloton workout every single day was hard  
+
+969
+01:20:01,320 --> 01:20:05,120
+for this user during COVID. It was just like 
+every now and then you get on the Peloton,  
+
+970
+01:20:05,120 --> 01:20:09,000
+that was great, but the idea of a weekly streak 
+was something that I could keep up. And so,  
+
+971
+01:20:09,000 --> 01:20:14,120
+I think figure out what your usage pattern is, 
+as a user, and then build your streak around it.  
+
+972
+01:20:14,120 --> 01:20:23,240
+But as long as you're not a really, again, the tax 
+example is probably a good counterfactual, but as  
+
+973
+01:20:23,240 --> 01:20:29,920
+long as you have some degree of frequency in your 
+use, I think almost anything can have a streak.
+
+974
+01:20:29,920 --> 01:20:35,680
+So, Duolingo, it's, again, a $14 billion 
+company, this feature, possibly the most  
+
+975
+01:20:35,680 --> 01:20:42,760
+contributing factor, other than the core 
+product, to that level of success in market cap,  
+
+976
+01:20:42,760 --> 01:20:49,800
+and it's hard to imagine another just feature of 
+a product that has had this much impact on growth  
+
+977
+01:20:49,800 --> 01:20:54,800
+and revenue and building this sort of business. 
+So, I love that we spent this much time on it,  
+
+978
+01:20:54,800 --> 01:20:59,629
+the motherload, the motherload of advice and 
+insights. So, thank you again for putting-
+
+979
+01:20:59,629 --> 01:21:00,600
+Of course. Very fun.
+
+980
+01:21:00,600 --> 01:21:04,520
+With that, we've reached our very 
+exciting lightning round. Are you ready?
+
+981
+01:21:05,120 --> 01:21:06,280
+I'm ready.
+
+982
+01:21:06,280 --> 01:21:10,640
+First question, what are two or three books 
+you've recommended most to other people?
+
+983
+01:21:10,640 --> 01:21:15,760
+All right, I'll start with A Guide to Midwest 
+Conversation. So, I'm based in Kansas City,  
+
+984
+01:21:15,760 --> 01:21:21,400
+I'm a proud Midwesterner, and us Midwesterners 
+talk in a certain way. I think you hear about  
+
+985
+01:21:21,400 --> 01:21:28,680
+Minnesota nice, but we tend not to say what we 
+mean, and it is a very funny primer into what  
+
+986
+01:21:28,680 --> 01:21:33,440
+Midwesterners actually mean when they say what 
+they say. So, highly recommend reading that.
+
+987
+01:21:33,440 --> 01:21:35,040
+I like that you give that to people, just like,  
+
+988
+01:21:35,040 --> 01:21:39,000
+here's what I might be telling 
+you, which you may not read.
+
+989
+01:21:39,000 --> 01:21:40,674
+My wife is German, and I gave it to 
+her so she could better understand.
+
+990
+01:21:40,674 --> 01:21:43,960
+I see German being the opposite of that, okay.
+
+991
+01:21:43,960 --> 01:21:50,720
+Very different. Another book, this is a good one, 
+Fate is the Hunter. This is a really cool book,  
+
+992
+01:21:50,720 --> 01:21:57,200
+it's a memoir of one of the early commercial 
+airline pilots, and it is wild to hear the  
+
+993
+01:21:57,200 --> 01:22:02,120
+stories about what flying was back in the 
+day. I'm a former management consultant,  
+
+994
+01:22:02,120 --> 01:22:06,600
+I flew every week for almost six years, 
+and I never once had to worry about,  
+
+995
+01:22:06,600 --> 01:22:11,840
+am I going to make it to the other end of this 
+flight alive? That was not the case back then,  
+
+996
+01:22:11,840 --> 01:22:16,560
+and so some of the stories about what it used to 
+be like to be a pilot on some of these planes,  
+
+997
+01:22:16,560 --> 01:22:22,080
+before modern aviation technology, is fascinating, 
+and makes you really appreciate what we have.
+
+998
+01:22:22,080 --> 01:22:23,840
+It feels good to read a book like that,  
+
+999
+01:22:23,840 --> 01:22:28,320
+being a software PM or engineer or 
+whatever, how different that life is.
+
+1000
+01:22:28,920 --> 01:22:30,400
+Hardware is hard.
+
+1001
+01:22:30,400 --> 01:22:35,600
+Hardware. Oh man, it's not haptic design. Okay. 
+Next, unless there's any other books you're  
+
+1002
+01:22:35,600 --> 01:22:40,560
+going to share? No, okay, great. What's a favorite 
+recent movie or TV show you've really enjoyed?
+
+1003
+01:22:40,560 --> 01:22:46,560
+So, I have two kids, I watch a lot of Bluey, 
+it's really good, I swear, it brings me no  
+
+1004
+01:22:46,560 --> 01:22:53,040
+shortage of joy. But adult show or show not 
+meant for four-year-olds that I have watched,  
+
+1005
+01:22:53,040 --> 01:22:58,720
+I just finished the latest season of Emily in 
+Paris, man, wonderful. I realize it's not the  
+
+1006
+01:22:58,720 --> 01:23:03,120
+highest brow of television, but just 
+beautiful people in beautiful cities,  
+
+1007
+01:23:03,120 --> 01:23:08,440
+solving problems that are not earth-shattering, 
+sometimes it is nice to just tune out. Also,  
+
+1008
+01:23:08,440 --> 01:23:13,680
+I'm learning French on Duolingo, slight plug 
+for the app, I can understand a lot of the  
+
+1009
+01:23:13,680 --> 01:23:18,720
+French that is being spoken, and there is no 
+better joy than having invested as much time  
+
+1010
+01:23:18,720 --> 01:23:23,240
+as I have in French, and actually being 
+able to use it. So, huge fan of Emily.
+
+1011
+01:23:23,240 --> 01:23:29,160
+That is so funny, what a fun Venn diagram of 
+interests. My mother-in loves Emily in Paris,  
+
+1012
+01:23:29,160 --> 01:23:33,200
+I saw someone tweeting about what Visa 
+is she on? How is she still in Paris?
+
+1013
+01:23:33,200 --> 01:23:35,200
+Yeah. You best just not ask questions,  
+
+1014
+01:23:35,200 --> 01:23:39,413
+there's a lot of questions for this 
+show that are better left unasked.
+
+1015
+01:23:39,413 --> 01:23:40,080
+[inaudible 01:23:40] Okay. Do you have a favorite  
+
+1016
+01:23:40,080 --> 01:23:44,040
+product you recently discovered that 
+you really like? Other than Duolingo.
+
+1017
+01:23:44,040 --> 01:23:48,840
+Last week I went to Home Depot, and I 
+bought a new ladder, and ladder innovations,  
+
+1018
+01:23:48,840 --> 01:23:54,520
+you don't think of often, but you can make 
+one of the legs go a little bit further than  
+
+1019
+01:23:54,520 --> 01:23:59,720
+the other leg. And as somebody like myself who 
+has a house that is built on a slight slope,  
+
+1020
+01:23:59,720 --> 01:24:03,360
+every time I go up on my ladder, I take 
+my life in my hands, but with this ladder,  
+
+1021
+01:24:03,360 --> 01:24:08,480
+I'm always even. I cleaned my gutters twice 
+last week just because of how awesome this  
+
+1022
+01:24:08,480 --> 01:24:13,560
+ladder has... How much this ladder has 
+changed my life. So, ladder innovation,  
+
+1023
+01:24:13,560 --> 01:24:18,000
+I don't think it gets talked enough about and so 
+I'm happy to give it the spotlight it deserves.
+
+1024
+01:24:18,000 --> 01:24:20,320
+I appreciate you doing that, and it's 
+the first ladder recommendation we've  
+
+1025
+01:24:20,320 --> 01:24:23,200
+had on the podcast. Two more questions. 
+Do you have a favorite life motto that  
+
+1026
+01:24:23,200 --> 01:24:26,480
+you really find useful in work 
+or in life they share with folks?
+
+1027
+01:24:26,480 --> 01:24:31,160
+This probably will not be much of a surprise based 
+on how I've talked about our willingness to test  
+
+1028
+01:24:31,160 --> 01:24:36,880
+things, but you miss 100% of the shots that you 
+don't take. I'm a big fan of just trying things,  
+
+1029
+01:24:36,880 --> 01:24:43,680
+even if your possibility of success is not 
+100, because you learn a lot along the way.
+
+1030
+01:24:44,280 --> 01:24:48,640
+Final question, do you have 
+any fun traditions at Duolingo,  
+
+1031
+01:24:48,640 --> 01:24:53,080
+amongst either the PM team or the company in 
+general that might be delightful to share?
+
+1032
+01:24:53,080 --> 01:24:59,840
+We have way too many traditions to count. I will 
+share the weird tradition that we do at every  
+
+1033
+01:24:59,840 --> 01:25:06,160
+retention standup, and this started during the 
+pandemic, we obviously used to stand up in person,  
+
+1034
+01:25:06,160 --> 01:25:11,880
+and then when we went remote, we did this thing 
+where whoever's the last person to go would count  
+
+1035
+01:25:11,880 --> 01:25:18,760
+down 3, 2, 1, and then we'd all try to clap at the 
+same time, which was kind of fun and dorky, but we  
+
+1036
+01:25:18,760 --> 01:25:24,560
+fell in love with it, and four years later we're 
+still doing it. Recently we've added, we all say  
+
+1037
+01:25:24,560 --> 01:25:33,560
+yee-haw in unison afterwards, I can't tell you 
+why. But trying to synchronize a clap via Zoom,  
+
+1038
+01:25:33,560 --> 01:25:37,840
+and then all shouting yee-haw... I did this in 
+a phone booth the other day and after I came  
+
+1039
+01:25:37,840 --> 01:25:42,600
+out someone told me, "You know that those 
+aren't as soundproof as you think," but  
+
+1040
+01:25:43,360 --> 01:25:47,400
+when you get a good opportunity to give 
+a yee-haw, you can't pass up on it, so.
+
+1041
+01:25:47,400 --> 01:25:50,360
+I love these little things, they sound so minor,  
+
+1042
+01:25:50,360 --> 01:25:53,760
+but they're such important elements 
+of team culture and tradition,  
+
+1043
+01:25:53,760 --> 01:25:58,640
+and so important for PMs to find ways to 
+just have fun and do something ridiculous.
+
+1044
+01:25:58,640 --> 01:26:03,040
+I will say, it took a while to get 
+people behind shouting yee-haw,  
+
+1045
+01:26:04,120 --> 01:26:09,040
+but now that we have people doing it, you can't 
+take it away [inaudible 01:26:08], we all love it.
+
+1046
+01:26:09,040 --> 01:26:14,120
+Oh man, I called our all hands for a while, 
+y'all hands, feel free to steal that.
+
+1047
+01:26:14,120 --> 01:26:15,800
+You get it, you get it Lenny. Yeah.
+
+1048
+01:26:15,800 --> 01:26:20,120
+I get it. Jackson, this is incredible, I feel like 
+people are going to listen to this with notebooks,  
+
+1049
+01:26:20,120 --> 01:26:24,400
+and just like, okay, here's a bunch of ideas 
+we should try with whatever we're working on,  
+
+1050
+01:26:24,400 --> 01:26:28,720
+whether it's streaks or not. Thank you so much for 
+being here. Two final questions, where can folks  
+
+1051
+01:26:28,720 --> 01:26:32,040
+find you online if they want to reach out, learn 
+more, learn more about Duolingo? I know you're  
+
+1052
+01:26:32,040 --> 01:26:37,440
+hiring product managers, so share more there, 
+and finally, how can listeners be useful to you?
+
+1053
+01:26:37,440 --> 01:26:42,760
+Yes, you can find me on LinkedIn, that is 
+where most of my online social media is, so  
+
+1054
+01:26:42,760 --> 01:26:47,200
+Jackson Shuttleworth, and then how 
+people can be useful to me, yes,  
+
+1055
+01:26:47,200 --> 01:26:51,720
+as you said, we are hiring. We're actually 
+hiring for my team. Are you interested in  
+
+1056
+01:26:51,720 --> 01:26:58,400
+thinking about streaks as much as we do? We 
+might be the right home for you, so please,  
+
+1057
+01:26:58,400 --> 01:27:02,360
+you can apply on our website. We're also hiring 
+from a number of other product management roles,  
+
+1058
+01:27:02,360 --> 01:27:09,680
+and they're all as thrilling as this work is.
+And then, I'm always interested about how other  
+
+1059
+01:27:09,680 --> 01:27:14,360
+companies have implemented streaks and what 
+they've learned, and so what I'd say is if  
+
+1060
+01:27:14,360 --> 01:27:18,920
+you're a company who's implemented a streak 
+maybe in a different way than Duolingo has,  
+
+1061
+01:27:18,920 --> 01:27:24,440
+or you found a whole ton of success and 
+another vector, another element of the feature  
+
+1062
+01:27:24,440 --> 01:27:28,480
+that we didn't talk about today, I would love 
+to know more. I used to catalog basically every  
+
+1063
+01:27:28,480 --> 01:27:34,400
+streak I found out there, and as it's become more 
+of a popular feature, it's just been hard to keep  
+
+1064
+01:27:34,400 --> 01:27:41,160
+up on. So, if you have interesting streak insights 
+to send my way, I would love to hear them.
+
+1065
+01:27:41,160 --> 01:27:45,640
+I love that, a collection of all the best ways 
+of doing streaks. Jackson, just I want to say  
+
+1066
+01:27:45,640 --> 01:27:50,360
+congrats to your team and you for having so 
+much impact. This is like the dream of a lot  
+
+1067
+01:27:50,360 --> 01:27:58,280
+of PMs and teams, is to see this much impact and 
+continue to ship wins, and so congrats, nice work.
+
+1068
+01:27:58,280 --> 01:27:59,727
+Thank you very much.
+
+1069
+01:27:59,727 --> 01:28:01,960
+Thanks for [inaudible 01:27:59]. And with 
+that, Jackson, thanks so much for being here.
+
+1070
+01:28:01,960 --> 01:28:04,480
+Yeah, thank you Lenny, this was a lot of fun.
+
+1071
+01:28:04,480 --> 01:28:08,880
+Same. Bye everyone.
+Thank you so much for listening,  
+
+1072
+01:28:08,880 --> 01:28:13,200
+if you found this valuable, you can subscribe 
+to the show on Apple Podcasts, Spotify,  
+
+1073
+01:28:13,200 --> 01:28:18,560
+or your favorite podcast app. Also, please 
+consider giving us a rating or leaving a review,  
+
+1074
+01:28:18,560 --> 01:28:22,360
+as that really helps other listeners 
+find the podcast. You can find all  
+
+1075
+01:28:22,360 --> 01:28:31,760
+past episodes or learn more about the show at 
+Lenny'sPodcasts.com. See you in the next episode.
+

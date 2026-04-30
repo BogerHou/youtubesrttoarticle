@@ -1,0 +1,4367 @@
+1
+00:00:00,080 --> 00:00:01,600
+I feel like there's two buckets of teams.
+
+2
+00:00:01,600 --> 00:00:05,759
+There's the product teams that are just like, "Of course, we need to make our product delightful.
+
+3
+00:00:05,759 --> 00:00:06,640
+That's how we win."
+
+4
+00:00:06,640 --> 00:00:09,840
+And then there's just a bunch of product teams that are like, "What are you even talking about?
+
+5
+00:00:09,840 --> 00:00:10,880
+We have features to ship.
+
+6
+00:00:10,880 --> 00:00:11,920
+We got to close some deals.
+
+7
+00:00:11,920 --> 00:00:12,719
+We don't have time for this."
+
+8
+00:00:12,719 --> 00:00:15,599
+>> Sometime people think about the light as the confetti.
+
+9
+00:00:15,599 --> 00:00:18,080
+If you shake the phone, you have snowflake falling.
+
+10
+00:00:18,080 --> 00:00:20,000
+But that's not the light I talk about.
+
+11
+00:00:20,000 --> 00:00:26,320
+The light is actually this ability to create products that serve for both emotional need and functional need.
+
+12
+00:00:26,320 --> 00:00:27,279
+>> I know exactly what you mean.
+
+13
+00:00:27,279 --> 00:00:28,560
+I never check Instagram anymore.
+
+14
+00:00:28,560 --> 00:00:30,320
+I just don't feel good when I open it.
+
+15
+00:00:30,320 --> 00:00:32,719
+The feeling of the product makes me not use it anymore.
+
+16
+00:00:32,719 --> 00:00:35,920
+>> How can we build products where we can achieve the light goal?
+
+17
+00:00:35,920 --> 00:00:37,680
+Recently, I booked an Uber.
+
+18
+00:00:37,680 --> 00:00:42,399
+I was waiting for the driver and suddenly the driver cancelled for no specific reason.
+
+19
+00:00:42,399 --> 00:00:46,960
+But what happened is that when I get to the app, there have been only two clicks to get refunded.
+
+20
+00:00:46,960 --> 00:00:48,559
+Bingo, your money is back.
+
+21
+00:00:48,559 --> 00:00:54,320
+The emotion was supposed to be low and suddenly the solution completely removed the stress and the friction.
+
+22
+00:00:54,320 --> 00:00:57,199
+>> Let's talk about how to actually approach this systematically.
+
+23
+00:00:57,199 --> 00:01:00,320
+We need to satisfy three main pillars.
+
+24
+00:01:00,320 --> 00:01:03,440
+The very first one is >> the big elephant in the room.
+
+25
+00:01:03,440 --> 00:01:05,360
+When is this not worth your time?
+
+26
+00:01:05,360 --> 00:01:10,159
+Companies like Workday, SAP and Salesforce that did really well, very undelightful.
+
+27
+00:01:10,159 --> 00:01:16,080
+>> The hard truth is that >> today my guest is Nasin Shenal.
+
+28
+00:01:16,080 --> 00:01:21,040
+Nasin was a longtime product leader at Skype, Spotify, Google Chrome, and Google Meet.
+
+29
+00:01:21,040 --> 00:01:25,520
+And through her experience building some of the most widely used consumer products in the world,
+
+30
+00:01:25,520 --> 00:01:31,280
+she developed a really pragmatic framework for how to build delightful and retentive product experiences.
+
+31
+00:01:31,280 --> 00:01:35,680
+A lot of product leaders talk about building great user experiences and making their products delightful,
+
+32
+00:01:35,680 --> 00:01:43,280
+but I've never seen a concrete and repeatable approach to actually doing this, especially one that helps you separate low impact confetti features,
+
+33
+00:01:43,280 --> 00:01:48,320
+as Nes calls them, and ones that actually drive your KPIs and keep people coming back.
+
+34
+00:01:48,320 --> 00:01:56,560
+In our conversation, we talk about why product teams with limited resources, lots of fires and priorities should actually spend time on making their products more delightful.
+
+35
+00:01:56,560 --> 00:01:59,119
+I found this part super interesting and surprising.
+
+36
+00:01:59,119 --> 00:02:04,640
+We talk about what sorts of product teams and companies should invest in Delight, particularly B2B versus B TOC,
+
+37
+00:02:04,640 --> 00:02:11,440
+and then we dive into her specific four-step framework for discovering the highest ROI opportunities and prioritizing across them.
+
+38
+00:02:11,440 --> 00:02:19,840
+Nine shares a bunch of really cool real world examples from her time at Google Meet and Spotify and Chrome and also examples from Apple and a bunch of other companies she's looked at.
+
+39
+00:02:19,840 --> 00:02:24,000
+A huge thank you to Matt Lame for suggesting topics for this conversation.
+
+40
+00:02:24,000 --> 00:02:29,040
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+41
+00:02:29,040 --> 00:02:30,800
+That helps tremendously.
+
+42
+00:02:30,800 --> 00:02:37,440
+And if you become an annual subscriber of my newsletter, you get a year free of 15 incredible products,
+
+43
+00:02:37,440 --> 00:02:42,239
+including a year free of lovable, replet, bolt, naden, linear, superhuman, dscript, whisper flow,
+
+44
+00:02:42,239 --> 00:02:46,480
+gamma, perplexity, warp, granola, magic patterns, raycast, chapardd, and mobin.
+
+45
+00:02:46,480 --> 00:02:49,920
+Head on over to lennisnewsletter.com and click product pass.
+
+46
+00:02:49,920 --> 00:02:53,440
+With that, I bring you Nasarine Shankal.
+
+47
+00:02:53,440 --> 00:02:59,280
+Today's episode is brought to you by DX, the developer intelligence platform designed by leading researchers.
+
+48
+00:02:59,280 --> 00:03:03,200
+To thrive in the AI era, organizations need to adapt quickly.
+
+49
+00:03:03,200 --> 00:03:08,319
+But many organization leaders struggle to answer pressing questions like which tools are working?
+
+50
+00:03:08,319 --> 00:03:09,680
+How are they being used?
+
+51
+00:03:09,680 --> 00:03:11,760
+What's actually driving value?
+
+52
+00:03:11,760 --> 00:03:16,159
+DX provides the data and insights that leaders need to navigate this shift.
+
+53
+00:03:16,159 --> 00:03:27,040
+With DX, companies like Dropbox, Booking.com, Adion, and Intercom get a deep understanding of how AI is providing value to their developers and what impact AI is having on engineering
+
+54
+00:03:27,040 --> 00:03:27,920
+productivity.
+
+55
+00:03:27,920 --> 00:03:33,120
+To learn more, visit DX's website at getdx.com/lenny.
+
+56
+00:03:33,120 --> 00:03:36,440
+That's getdx.com/lenny.
+
+57
+00:03:36,799 --> 00:03:43,599
+You fell in love with building products for a reason, but sometimes the day-to-day reality is a little different than you imagined.
+
+58
+00:03:43,599 --> 00:03:50,799
+Instead of dreaming up big ideas, talking to customers, and crafting a strategy, you're drowning in spreadsheets and roadmap updates,
+
+59
+00:03:50,799 --> 00:03:56,000
+and you're spending your days basically putting out fires, a better way is possible.
+
+60
+00:03:56,000 --> 00:04:03,360
+Introducing Jira product discovery, the new prioritization and road mapping tool built for product teams by Atlassian.
+
+61
+00:04:03,360 --> 00:04:10,080
+With Jira product discovery, you can gather all your product ideas and insights in one place and prioritize confidently,
+
+62
+00:04:10,080 --> 00:04:12,640
+finally replacing those endless spreadsheets.
+
+63
+00:04:12,640 --> 00:04:16,720
+Create and share custom product road maps with any stakeholder in seconds.
+
+64
+00:04:16,720 --> 00:04:20,320
+And it's all built on Jira where your engineering team is already working.
+
+65
+00:04:20,320 --> 00:04:23,199
+So true collaboration is finally possible.
+
+66
+00:04:23,199 --> 00:04:27,040
+Great products are built by great teams, not just engineers.
+
+67
+00:04:27,040 --> 00:04:30,960
+Sales support, leadership, even Greg from finance.
+
+68
+00:04:30,960 --> 00:04:36,400
+Anyone that you want can contribute ideas, feedback, and insights in Jira product discovery for free.
+
+69
+00:04:36,400 --> 00:04:37,360
+No catch.
+
+70
+00:04:37,360 --> 00:04:39,680
+And it's only $10 a month for you.
+
+71
+00:04:39,680 --> 00:04:43,199
+Say goodbye to your spreadsheets and the never- ending alignment efforts.
+
+72
+00:04:43,199 --> 00:04:46,240
+The old way of doing product management is over.
+
+73
+00:04:46,240 --> 00:04:49,360
+Rediscover what's possible with Jira product discovery.
+
+74
+00:04:49,360 --> 00:04:53,040
+Try it for free at atlassian.com/lenny.
+
+75
+00:04:53,040 --> 00:04:56,360
+That's atlassian.com/lenny.
+
+76
+00:04:59,680 --> 00:05:00,320
+Nasarine.
+
+77
+00:05:00,320 --> 00:05:03,360
+Thank you so much for being here and welcome to the podcast.
+
+78
+00:05:03,360 --> 00:05:04,320
+>> Hi Lenny.
+
+79
+00:05:04,320 --> 00:05:05,280
+Thanks for having me.
+
+80
+00:05:05,280 --> 00:05:06,080
+>> It's my pleasure.
+
+81
+00:05:06,080 --> 00:05:13,440
+So, you just published uh a book that is coming out uh or just came out a couple days ago from the time this podcast is coming out.
+
+82
+00:05:13,440 --> 00:05:17,440
+It's on a very polarizing topic, product, it's called product delight.
+
+83
+00:05:17,440 --> 00:05:20,880
+And the reason I think it's polarizing is I feel like there's two buckets of teams.
+
+84
+00:05:20,880 --> 00:05:27,840
+There's like the teams, the product teams that are just like, of course, we need to make our product delightful and that's how we win.
+
+85
+00:05:27,840 --> 00:05:28,880
+That's how we differentiate.
+
+86
+00:05:28,880 --> 00:05:29,840
+It's so important.
+
+87
+00:05:29,840 --> 00:05:33,360
+And then there's just a bunch of product teams that are like, what are you even talking about?
+
+88
+00:05:33,360 --> 00:05:34,479
+We have features to ship.
+
+89
+00:05:34,479 --> 00:05:35,520
+We got to close some deals.
+
+90
+00:05:35,520 --> 00:05:36,240
+We don't have time for this.
+
+91
+00:05:36,240 --> 00:05:37,199
+We have fires constantly.
+
+92
+00:05:37,199 --> 00:05:38,960
+We got to rebuild our infrastructure.
+
+93
+00:05:38,960 --> 00:05:41,520
+Why do we have no time for delightful stuff?
+
+94
+00:05:41,520 --> 00:05:45,120
+So the my goal for this conversation is basically two parts.
+
+95
+00:05:45,120 --> 00:05:51,440
+One is help people understand why this is worth investing in very practically, not just the warm and fuzzies of it.
+
+96
+00:05:51,440 --> 00:05:58,160
+And then two, give them an actual framework and model for how to do this successfully and not waste time on stuff that's not useful.
+
+97
+00:05:58,160 --> 00:05:59,120
+How does that sound?
+
+98
+00:05:59,120 --> 00:06:00,320
+>> Sounds like a great goal.
+
+99
+00:06:00,320 --> 00:06:03,199
+And uh let's share this goal together today.
+
+100
+00:06:03,199 --> 00:06:03,440
+>> Okay.
+
+101
+00:06:03,440 --> 00:06:04,720
+This is our mutual goal.
+
+102
+00:06:04,720 --> 00:06:06,080
+We have aligned KPIs.
+
+103
+00:06:06,080 --> 00:06:10,160
+Okay, so let me let me start with just this broad question and let's just see where this goes.
+
+104
+00:06:10,160 --> 00:06:15,759
+What is your best pitch for why a product team with limited resources, constant fires,
+
+105
+00:06:15,759 --> 00:06:20,400
+lots of priorities should spend time on delight and delightful features?
+
+106
+00:06:20,400 --> 00:06:27,280
+>> Every time I talk about the light, whether in a conference or a workshop, I always start with this very simple question.
+
+107
+00:06:27,280 --> 00:06:29,759
+What is your favorite product?
+
+108
+00:06:29,759 --> 00:06:34,400
+I mean what I love about it is the range and the variety of answer I usually get.
+
+109
+00:06:34,400 --> 00:06:44,479
+Like some people would choose products for the productivity it get and other may choose product because they feel joy or comfort with it without even knowing
+
+110
+00:06:44,479 --> 00:06:50,160
+how to explain that and that's even more exciting because we connect with products at different levels.
+
+111
+00:06:50,160 --> 00:06:58,400
+We might connect with product for the functionality part or we might connect with product because it fulfill a certain emotional need that we were not
+
+112
+00:06:58,400 --> 00:07:00,160
+even aware of.
+
+113
+00:07:00,160 --> 00:07:07,759
+And so the best product deeply emotionally connect with users and that's the essence of the light.
+
+114
+00:07:07,759 --> 00:07:15,680
+So the light is actually this ability to create products that serve for both emotional need and functional need.
+
+115
+00:07:15,680 --> 00:07:26,319
+And the hard truth is that even functioning product very well functioning product may tend or still experience some trouble or issue getting tractions and
+
+116
+00:07:26,319 --> 00:07:34,080
+uh growth and uh and the success that is hoped for if they do not allow users to feel certain emotions.
+
+117
+00:07:34,080 --> 00:07:36,000
+So let's take Spotify for example.
+
+118
+00:07:36,000 --> 00:07:46,639
+Like users do have plenty of options to stream music, but features like wrapped or mood based recommendation or like the discover
+
+119
+00:07:46,639 --> 00:07:51,120
+weekly allow users to be seen and heard and even connected.
+
+120
+00:07:51,120 --> 00:07:56,720
+So that's why like the light is not about sprinkling joy on top of utility utility.
+
+121
+00:07:56,720 --> 00:08:03,039
+It's about creating an experience where emotion is completely on the heart of the experience.
+
+122
+00:08:03,039 --> 00:08:10,879
+So let's be clear, delight is not a luxury nowadays and more nowadays because the market is so crowded.
+
+123
+00:08:10,879 --> 00:08:12,479
+It's even a differentiator.
+
+124
+00:08:12,479 --> 00:08:19,120
+It's a strategy that we can adopt in order to grow our business, gain in loyalty, in word of mouth,
+
+125
+00:08:19,120 --> 00:08:20,879
+in growth, and even in revenue.
+
+126
+00:08:20,879 --> 00:08:24,240
+>> I think about as you talked I've had some feelings recently like this actually.
+
+127
+00:08:24,240 --> 00:08:32,000
+I never checked Instagram anymore and my wife I was talking to my wife about it because she checks it often and I was just like I just don't feel good when I open it.
+
+128
+00:08:32,000 --> 00:08:36,080
+doesn't feel nice and so I just don't ever go there.
+
+129
+00:08:36,080 --> 00:08:38,000
+And so she sends me all these DMs and things in there.
+
+130
+00:08:38,000 --> 00:08:42,479
+I'm just like I never nothing you send me in Instagram I will even see.
+
+131
+00:08:42,479 --> 00:08:48,320
+And that that actually is a recent example of just like yeah the feeling of the product makes me not use it anymore.
+
+132
+00:08:48,320 --> 00:08:49,600
+So I know exactly what you mean.
+
+133
+00:08:49,600 --> 00:08:59,440
+I also think about linear which is like their whole thing initially was we're just going to make the most amazing basically task management system
+
+134
+00:08:59,440 --> 00:09:02,880
+and on the surface you'd be like that is not going to work.
+
+135
+00:09:02,880 --> 00:09:08,959
+There's like Jira and Asana and Monday and all these guys uh you're not going to win just making it awesome and they are winning.
+
+136
+00:09:08,959 --> 00:09:16,240
+They're doing super well uh because they are so thoughtful about every part of the experience and you could say it's it's very delightful.
+
+137
+00:09:16,240 --> 00:09:26,399
+So I I totally hear what you're saying when you talk about delightful features adding a delightful feature just like what is what's a good way to understand what's a delightful
+
+138
+00:09:26,399 --> 00:09:28,320
+feature making it delightful.
+
+139
+00:09:28,320 --> 00:09:38,720
+So when we create products uh it's really important that the solution that we're building is solving for both needs and I really highlight the fact that there are
+
+140
+00:09:38,720 --> 00:09:49,760
+functional needs like for example you want to book a flight you want to listen to music and it should also solve for the emotional needs which could be I want to feel less lonely I want to feel
+
+141
+00:09:49,760 --> 00:09:56,399
+comfort I want to feel secure and the bucks product are those that create and craft solutions that blend the two.
+
+142
+00:09:56,399 --> 00:10:05,839
+So if you can blend the two dimensions like the functional side and the emotional side within the same solutions then you are creating what we call emotional connection.
+
+143
+00:10:05,839 --> 00:10:08,399
+And by the way emotional connection is not a new topic.
+
+144
+00:10:08,399 --> 00:10:13,519
+I mean you probably heard that very much in the design area and the marketing area as well.
+
+145
+00:10:13,519 --> 00:10:16,880
+I mean you agree with me the best design is the emotional design.
+
+146
+00:10:16,880 --> 00:10:20,240
+The best marketing is the marketing like emotional marketing.
+
+147
+00:10:20,240 --> 00:10:24,399
+I mean we see the best ads coming from those emotional ads.
+
+148
+00:10:24,399 --> 00:10:33,279
+But the reality is that and even before I start writing the book, I realized that it's not that much spoken about in business and in products.
+
+149
+00:10:33,279 --> 00:10:37,600
+I mean that by itself create a gap because you have designers talking about emotion,
+
+150
+00:10:37,600 --> 00:10:42,640
+marketers talking about emotion and then in the middle business are like what are you talking about?
+
+151
+00:10:42,640 --> 00:10:45,200
+We need to ship features, we need to ship functionality.
+
+152
+00:10:45,200 --> 00:10:48,959
+So we cannot achieve that so much needed goal.
+
+153
+00:10:48,959 --> 00:10:51,200
+So in product I call it delight.
+
+154
+00:10:51,200 --> 00:10:53,200
+You might ask why delight?
+
+155
+00:10:53,200 --> 00:11:01,200
+Because every time I talk to a founder or CPO or any product leader, they all start by saying we need to delight our users.
+
+156
+00:11:01,200 --> 00:11:04,640
+I mean this sentence by itself is very much repeated.
+
+157
+00:11:04,640 --> 00:11:06,959
+The truth is that they don't know how to delight.
+
+158
+00:11:06,959 --> 00:11:11,519
+I mean we agree that we should delight but we don't necessarily know how to delight.
+
+159
+00:11:11,519 --> 00:11:21,920
+So, so I started from this concept and I tried to come up with a concrete of course framework but also an actional way to put that into practice.
+
+160
+00:11:21,920 --> 00:11:28,800
+And in order to get even deeper into the definition, I want to highlight that there are two definition for the light.
+
+161
+00:11:28,800 --> 00:11:34,240
+I promise I'm not going to spend too much time on the theory, but the first definition is a theoretic definition.
+
+162
+00:11:34,240 --> 00:11:42,560
+So the light is an emotion and there's a professor called professor Puchik who actually created what we call the wheel of emotion.
+
+163
+00:11:42,560 --> 00:11:48,880
+Uh and he actually conceptualized the light as a combination of two emotions.
+
+164
+00:11:48,880 --> 00:11:51,519
+Could you guess what are these two emotions?
+
+165
+00:11:51,519 --> 00:11:56,560
+>> Uh the combination well I I've seen your stuff so I think I know what you're going to say.
+
+166
+00:11:56,560 --> 00:12:03,680
+Uh there's going to be exceeding expectations is a part of it and then I forget the other piece but I think that's an important element.
+
+167
+00:12:03,680 --> 00:12:08,880
+So, so the light is an emotion and it's a combination of two emotions.
+
+168
+00:12:08,880 --> 00:12:12,720
+>> So, these two emotions are joy and surprise.
+
+169
+00:12:12,720 --> 00:12:13,440
+>> Okay, there we go.
+
+170
+00:12:13,440 --> 00:12:14,079
+I swear it right.
+
+171
+00:12:14,079 --> 00:12:15,440
+I swear to right that second.
+
+172
+00:12:15,440 --> 00:12:16,959
+I'll I'll take it.
+
+173
+00:12:16,959 --> 00:12:18,959
+Okay, joy and joy and surprise.
+
+174
+00:12:18,959 --> 00:12:20,560
+>> Just just try to feel it now.
+
+175
+00:12:20,560 --> 00:12:26,959
+Like imagine yourself in a moment or a situation where you are experiencing at the same time joy and surprise.
+
+176
+00:12:26,959 --> 00:12:29,279
+In that case, you are delighted.
+
+177
+00:12:29,279 --> 00:12:31,120
+So that's the theory behind delight.
+
+178
+00:12:31,120 --> 00:12:33,360
+Now let's go to the practical side.
+
+179
+00:12:33,360 --> 00:12:37,279
+The practical side where how can we put the light into practice?
+
+180
+00:12:37,279 --> 00:12:40,959
+How can we build products where we can achieve this delight goal?
+
+181
+00:12:40,959 --> 00:12:46,000
+And in order to do that you we need to satisfy three main pillars.
+
+182
+00:12:46,000 --> 00:12:50,639
+The very first one is like removing friction.
+
+183
+00:12:50,639 --> 00:12:57,920
+The second one is anticipating need and the third one is exceeding expectation.
+
+184
+00:12:57,920 --> 00:13:00,639
+I'm going to explain these one by one maybe through examples.
+
+185
+00:13:00,639 --> 00:13:03,519
+so that people can get exactly what I talk about.
+
+186
+00:13:03,519 --> 00:13:06,079
+The first one I said by removing friction.
+
+187
+00:13:06,079 --> 00:13:11,120
+It's really important when you're building product to identify what we call this valet moment.
+
+188
+00:13:11,120 --> 00:13:17,360
+These moments where the emotion is at the at the bottom and maybe the user is experiencing some anxiety,
+
+189
+00:13:17,360 --> 00:13:22,560
+some stress and how can we leverage our experience so we can reduce these valet moments.
+
+190
+00:13:22,560 --> 00:13:27,440
+The best example I could share with you is actually something that did happened to me recently.
+
+191
+00:13:27,440 --> 00:13:31,120
+I was actually about to take a train from Paris to London.
+
+192
+00:13:31,120 --> 00:13:35,839
+So I booked an Uber and Uber assigned me a driver.
+
+193
+00:13:35,839 --> 00:13:41,839
+I was waiting for the driver and suddenly the driver cancelled for no specific reason and I was so stressed.
+
+194
+00:13:41,839 --> 00:13:43,440
+I I really had to catch my train.
+
+195
+00:13:43,440 --> 00:13:45,839
+I was like late already.
+
+196
+00:13:45,839 --> 00:13:54,160
+So I jumped into the first taxi that just passed in front of my building and I forgot about my about my Uber application.
+
+197
+00:13:54,160 --> 00:14:02,240
+What happened is that actually when your driver cancel Uber do their best in order to assign you a new driver of course and I didn't pay attention to that.
+
+198
+00:14:02,240 --> 00:14:12,959
+So the driver came to my place he waited for me and then I ended up being charged for the waiting time charged for the trip that I didn't took and I was so angry when I realized
+
+199
+00:14:12,959 --> 00:14:14,320
+that on my app.
+
+200
+00:14:14,320 --> 00:14:23,519
+So, I was psychologically prepared that I need to write an entire essay about what happened and how I want and I need to be refunded.
+
+201
+00:14:23,519 --> 00:14:28,639
+But what happened is that when I get to the app, there have been only two clicks to get refunded.
+
+202
+00:14:28,639 --> 00:14:34,880
+It's like, select the trip you want to be refunded and bingo, your money is back.
+
+203
+00:14:34,880 --> 00:14:36,000
+Wow.
+
+204
+00:14:36,000 --> 00:14:47,199
+like you know I mean I've been into these moments where the emotion was supposed to be low and suddenly the like the the solution that they provided is something that completely removed the stress and
+
+205
+00:14:47,199 --> 00:14:52,720
+the friction and of course now I can take more trips without the stress that might come out of that.
+
+206
+00:14:52,720 --> 00:14:54,880
+So that's removing friction.
+
+207
+00:14:54,880 --> 00:15:02,399
+>> That's a really good example just to double down on how awesome this is like just making it easy to do something that you expect to be really hard is delightful.
+
+208
+00:15:02,399 --> 00:15:05,360
+like cancelling a subscription, unsubscribing from something.
+
+209
+00:15:05,360 --> 00:15:06,560
+Uh, awesome example.
+
+210
+00:15:06,560 --> 00:15:07,519
+Okay, keep going.
+
+211
+00:15:07,519 --> 00:15:10,639
+>> So, the second pillar is about anticipating need.
+
+212
+00:15:10,639 --> 00:15:14,160
+Meaning that remember in delight you have surprise.
+
+213
+00:15:14,160 --> 00:15:20,079
+And if you have to wait for your users to tell you exactly what they need from you, then you are just honoring their need.
+
+214
+00:15:20,079 --> 00:15:26,720
+You're not exceeding or you're not even anticipating what they are already uh you want to offer them.
+
+215
+00:15:26,720 --> 00:15:36,880
+So another example probably is uh actually I my husband for many many years he's trying to convince me to move to Revolute you
+
+216
+00:15:36,880 --> 00:15:45,920
+know Revolute app that >> banking app and honestly I was comfortable enough with my traditional banking app and I didn't want to add more
+
+217
+00:15:45,920 --> 00:15:47,519
+>> uh check and etc.
+
+218
+00:15:47,519 --> 00:15:52,399
+So I did resist not uh getting into the temptation of trying.
+
+219
+00:15:52,399 --> 00:15:56,720
+But that was until one specific moment actually a couple of months ago.
+
+220
+00:15:56,720 --> 00:16:07,040
+We went on a family trip to Singapore and when we landed there we actually realized that our French operator or like do not
+
+221
+00:16:07,040 --> 00:16:15,600
+allow us to have like international calls for free meaning that we had to pay extreme high fees for roaming and for data.
+
+222
+00:16:15,600 --> 00:16:25,519
+So what are the choices like either you have to buy a local ECM or you need to accept these fees which are very high and that was the moment where
+
+223
+00:16:25,519 --> 00:16:35,279
+I looked at my husband he opened his Revolute app he went to a tab called eim buy eim €7 it's done it's like how the
+
+224
+00:16:35,279 --> 00:16:45,759
+hell did revolute thought about putting an eim for a bank app I mean it's really insane but then when you think about it like most of revolute users are
+
+225
+00:16:45,759 --> 00:16:47,440
+international or expats.
+
+226
+00:16:47,440 --> 00:16:57,279
+So they travel a lot and in that case they anticipated the need that people will travel and they will probably need at certain destination that kind of feature.
+
+227
+00:16:57,279 --> 00:17:04,640
+So that's the anticipating need part creating surprise by giving them something before even people ask you for.
+
+228
+00:17:04,640 --> 00:17:11,120
+And by the way Rahul Vora I mean the CEO of superhuman who've been on the show by the way and I loved his show.
+
+229
+00:17:11,120 --> 00:17:12,640
+He said something very similar.
+
+230
+00:17:12,640 --> 00:17:19,760
+He said like for in order for a product to be loved, you need to set the bar higher than your users themselves.
+
+231
+00:17:19,760 --> 00:17:21,919
+Like that's about exceeding expectation.
+
+232
+00:17:21,919 --> 00:17:26,400
+And now we're getting to the third pillar which is uh exceeding expectation.
+
+233
+00:17:26,400 --> 00:17:31,919
+So once you anticipated their need, it's really important to exceed expectation which means that okay,
+
+234
+00:17:31,919 --> 00:17:35,760
+how can I surprise them by giving them more than they ask?
+
+235
+00:17:35,760 --> 00:17:39,840
+And here again I have an example maybe that everyone is familiar with.
+
+236
+00:17:39,840 --> 00:17:41,120
+I mean, I use Chrome.
+
+237
+00:17:41,120 --> 00:17:47,280
+I love Chrome, but my husband is a Microsoft corporate user, like heavy Microsoft user,
+
+238
+00:17:47,280 --> 00:17:49,919
+and he uses like Edge all the time.
+
+239
+00:17:49,919 --> 00:17:54,320
+I mean, the other day I've seen him doing something that really surprised me.
+
+240
+00:17:54,320 --> 00:17:59,120
+Like, he was about to buy a coffee machine and he went through the entire journey.
+
+241
+00:17:59,120 --> 00:18:02,720
+He put the coffee machine on like a for payment.
+
+242
+00:18:02,720 --> 00:18:14,160
+he was about to pay and suddenly actually Edge suggested him for a complete auto field feature a coupon like he was about to pay something like €120 and suddenly you
+
+243
+00:18:14,160 --> 00:18:25,520
+get 15% discount because Edge found out that there is a coupon you can apply and and you just get 15% discount that's for me exceeding expectation because I was
+
+244
+00:18:25,520 --> 00:18:35,360
+not even asking for a coupon I was about to pay the 2020 anyway so that also by itself grew create a kind of surprise.
+
+245
+00:18:35,360 --> 00:18:37,760
+So these are the three pillar we need to play with them.
+
+246
+00:18:37,760 --> 00:18:40,160
+We don't have to do them all at the same time.
+
+247
+00:18:40,160 --> 00:18:44,720
+But every time we build the product, we need to think about how can we reduce friction.
+
+248
+00:18:44,720 --> 00:18:56,400
+How can we anticipate our users need and how can we like uh create that uh exceed expectation part of the products and and and I really wanted to make this clear
+
+249
+00:18:56,400 --> 00:19:06,880
+because sometime people think about the light as the confetti or I mean the other day I was giving a workshop and someone showed me like hey if you shake the phone you have snowflake falling.
+
+250
+00:19:06,880 --> 00:19:07,840
+Yes.
+
+251
+00:19:07,840 --> 00:19:08,240
+Yeah.
+
+252
+00:19:08,240 --> 00:19:09,280
+I mean, why not?
+
+253
+00:19:09,280 --> 00:19:11,120
+But that's not the light I talk about.
+
+254
+00:19:11,120 --> 00:19:12,720
+It has to come with a value.
+
+255
+00:19:12,720 --> 00:19:16,240
+It has to come with with a concrete reason.
+
+256
+00:19:16,240 --> 00:19:18,400
+And I call this like the confetti effect.
+
+257
+00:19:18,400 --> 00:19:22,960
+Like people think about confetti as a way of delighting their users.
+
+258
+00:19:22,960 --> 00:19:26,880
+But if it doesn't bring any value, then don't do it.
+
+259
+00:19:26,880 --> 00:19:29,280
+And by the way, I'm not here to say don't do confetti.
+
+260
+00:19:29,280 --> 00:19:30,400
+I mean, why not?
+
+261
+00:19:30,400 --> 00:19:33,600
+Confetti could come with value and could bring some joy.
+
+262
+00:19:33,600 --> 00:19:36,000
+And the best example is on Airbnb.
+
+263
+00:19:36,000 --> 00:19:38,080
+maybe the one that you're most familiar with.
+
+264
+00:19:38,080 --> 00:19:48,480
+Like I'm an Airbnb user both as a host but also as a guest and as a host I have a goal which is to make sure that I always keep my superhost batch.
+
+265
+00:19:48,480 --> 00:19:49,440
+Like I love that.
+
+266
+00:19:49,440 --> 00:19:53,600
+And of course it allows me to provide the best experience for my guests.
+
+267
+00:19:53,600 --> 00:19:59,679
+And you know how it works like every three months Airbnb reassess whether you want to you can remain a superhost or not.
+
+268
+00:19:59,679 --> 00:20:10,799
+But you know what happened like every three months if you're renewed as a superhost and when you open the app it the app turns into confetti like just to celebrate that moment with you and that
+
+269
+00:20:10,799 --> 00:20:18,640
+kind of moment is like why not because I feel like Airbnb is recognizing my effort and celebrating that small moment with me.
+
+270
+00:20:18,640 --> 00:20:28,000
+So it's about making sure you understand the value of your users and making sure that you're providing a solution that just brings them joy and surprise.
+
+271
+00:20:28,000 --> 00:20:32,400
+The superhost example is actually uh really interesting because I built the Superhost program.
+
+272
+00:20:32,400 --> 00:20:34,559
+That was one of my projects at Airbnb.
+
+273
+00:20:34,559 --> 00:20:36,159
+Uh me and my team.
+
+274
+00:20:36,159 --> 00:20:43,520
+Uh and interestingly, it came from not from like here's a metric we need to move.
+
+275
+00:20:43,520 --> 00:20:44,799
+Let's build superhost.
+
+276
+00:20:44,799 --> 00:20:55,760
+It instead came from this guy Chip Connelly who was just on the podcast who was a longtime hotelier and he's just like you need a way to differentiate status and levels of quality and this is one way to
+
+277
+00:20:55,760 --> 00:20:56,480
+do it.
+
+278
+00:20:56,480 --> 00:21:01,679
+And there was a lot of actually fear on the product team that this was going to tank search conversion.
+
+279
+00:21:01,679 --> 00:21:03,840
+People be distracted by this thing.
+
+280
+00:21:03,840 --> 00:21:08,480
+Interestingly, it made hosts really happy like you just like I want to be superhost.
+
+281
+00:21:08,480 --> 00:21:10,640
+I don't know why but I want to be superhost.
+
+282
+00:21:10,640 --> 00:21:13,360
+Uh it didn't actually move any metrics which is interesting.
+
+283
+00:21:13,360 --> 00:21:22,880
+May might have changed over the years but it was an interesting interesting contrarian project that feels like how can you not have it but it didn't really move any metrics which always surprised
+
+284
+00:21:22,880 --> 00:21:24,880
+us but maybe it did later.
+
+285
+00:21:24,880 --> 00:21:36,799
+Anyway, uh I really love this very simple way of thinking about delight and I think I think you're almost underelling what this framework is helping people with which is just how to build great product
+
+286
+00:21:36,799 --> 00:21:38,640
+experiences.
+
+287
+00:21:38,640 --> 00:21:44,480
+So there's this joy plus surprise piece which is just the emotional component.
+
+288
+00:21:44,480 --> 00:21:51,919
+You'll feel delighted if you're there's joy and surprise and then this three piece more I don't know even practical way of thinking about it.
+
+289
+00:21:51,919 --> 00:21:55,200
+removing friction, anticipating needs, exceeding expectations.
+
+290
+00:21:55,200 --> 00:21:58,240
+Like this is how to build great experiences.
+
+291
+00:21:58,240 --> 00:22:00,240
+And part of that is being delighted by it.
+
+292
+00:22:00,240 --> 00:22:02,240
+Part of is just this is a great experience.
+
+293
+00:22:02,240 --> 00:22:06,080
+I think a big elephant in the room with this question is B2B versus B TOC.
+
+294
+00:22:06,080 --> 00:22:09,760
+And just like when is this not worth your time?
+
+295
+00:22:09,760 --> 00:22:17,919
+I imagine companies like Workday and SAP and Service Now and all these Salesforce that did really well,
+
+296
+00:22:17,919 --> 00:22:19,840
+very undelightful.
+
+297
+00:22:19,840 --> 00:22:30,320
+The way I think about this is when it's like a green field market and there's nothing amazing yet it you don't need to make it as great of an experience as long as it's solving a real big pain
+
+298
+00:22:30,320 --> 00:22:31,120
+point.
+
+299
+00:22:31,120 --> 00:22:35,200
+But as the market gets more competitive linear is a good example here.
+
+300
+00:22:35,200 --> 00:22:39,840
+The way you can stand out is make it a much better experience, make it much more delightful.
+
+301
+00:22:39,840 --> 00:22:41,520
+Um thoughts.
+
+302
+00:22:41,520 --> 00:22:47,919
+Yeah, thanks for bringing this B2B versus B2C thing because it comes a lot and every time I talk about the light,
+
+303
+00:22:47,919 --> 00:22:59,120
+people might connect that to the B2C word and honestly for me like as long as there are human using the product at the end of the day then they need their emotion
+
+304
+00:22:59,120 --> 00:23:00,080
+to be honored.
+
+305
+00:23:00,080 --> 00:23:11,760
+So um so for example when I actually started this project of the light I realized that most of my career has been mostly closed to the B2C world.
+
+306
+00:23:11,760 --> 00:23:12,000
+Yes.
+
+307
+00:23:12,000 --> 00:23:16,000
+Like I've been working for Skype, Spotify, Google Meet, Google Chrome.
+
+308
+00:23:16,000 --> 00:23:24,000
+So I quickly realized that I needed to interview people from the B2B space so that I get the sense of what's the light in their space.
+
+309
+00:23:24,000 --> 00:23:29,760
+So I interviewed people from like GitHub or Atlassian or Snowflake.
+
+310
+00:23:29,760 --> 00:23:34,880
+I mean I really wanted to get the variety of industry and type of industries.
+
+311
+00:23:34,880 --> 00:23:41,280
+And what I realized which is probably not a surprise is that they do value emotional connection in a way or another.
+
+312
+00:23:41,280 --> 00:23:42,960
+I mean it's not something new.
+
+313
+00:23:42,960 --> 00:23:44,799
+They just do it in a different way.
+
+314
+00:23:44,799 --> 00:23:49,120
+So for example for Dropbox they do have a product principle called cupcake.
+
+315
+00:23:49,120 --> 00:23:52,799
+For snowflake they have something called um superhero.
+
+316
+00:23:52,799 --> 00:23:56,559
+I mean the names could vary but the meaning is exactly the same.
+
+317
+00:23:56,559 --> 00:24:00,240
+I mean it's all about bringing joy to the customers.
+
+318
+00:24:00,240 --> 00:24:04,960
+So I came up with this concept of B2 which is business to human.
+
+319
+00:24:04,960 --> 00:24:12,880
+For me it's really important to take into consideration human emotion while building the product whether in a B2B space or a B2C space.
+
+320
+00:24:12,880 --> 00:24:22,960
+And by the way exactly as you said like since people are so much exposed to B2C examples I mean the expectation are getting higher and we are expecting also from B2B
+
+321
+00:24:22,960 --> 00:24:26,640
+products to become more human and to feel more human.
+
+322
+00:24:26,640 --> 00:24:32,880
+So actually when I wrote this book I defined what I call humanization as a type of delighter.
+
+323
+00:24:32,880 --> 00:24:39,679
+I mean I listed couple of delighters and humanization is one of them and I even said it's my favorite.
+
+324
+00:24:39,679 --> 00:24:42,000
+It's about asking the following question.
+
+325
+00:24:42,000 --> 00:24:46,559
+If my product was a human, how would the experience would be better?
+
+326
+00:24:46,559 --> 00:24:48,799
+Just think about it that way.
+
+327
+00:24:48,799 --> 00:25:00,240
+So for example, when I work for Google Meet and I actually joined Google Meet right when pandemic happened like 2020 and we had of course to work on those challenges of like how people
+
+328
+00:25:00,240 --> 00:25:03,840
+are taking these new ways of working from home.
+
+329
+00:25:03,840 --> 00:25:11,600
+So instead of comparing Google Meet to Zoom or Teams or whatever other video conferencing tool,
+
+330
+00:25:11,600 --> 00:25:14,880
+do you know what did we compare Google Meet to the best?
+
+331
+00:25:14,880 --> 00:25:15,840
+Do you pick?
+
+332
+00:25:15,840 --> 00:25:18,640
+>> Maybe just a like an actual conversation.
+
+333
+00:25:18,640 --> 00:25:19,120
+>> Exactly.
+
+334
+00:25:19,120 --> 00:25:29,600
+I mean that's the bar that we're setting oursself like comparing Google Meet to how this experience of meeting could be better if we were all having this conversation in a row.
+
+335
+00:25:29,600 --> 00:25:36,880
+Because if you get this as a goal, you set a higher bar of expectation and you start to think in a human way.
+
+336
+00:25:36,880 --> 00:25:42,159
+And by the way, there is another example that really stick to me which uh when I was preparing for this project,
+
+337
+00:25:42,159 --> 00:25:46,640
+I spoke with a head of product from Daizen and he said a very similar thing.
+
+338
+00:25:46,640 --> 00:25:54,159
+Actually, when I spoke with Andy, he said um we don't compare our Dyson vacuum cleaner to other vacuum cleaner.
+
+339
+00:25:54,159 --> 00:26:04,320
+We compare them to what if I hire a real person and how would that real person would be better than the robot that we are building.
+
+340
+00:26:04,320 --> 00:26:14,799
+Actually, if you hire a certain person to clean your house, you probably tell that person to start with a certain room or to clean in certain way which the robot was not ready at that time.
+
+341
+00:26:14,799 --> 00:26:22,880
+So they added recommendation into their robot to get closer to what a real human like a space could happen.
+
+342
+00:26:22,880 --> 00:26:25,200
+So that that's the concept of humanization.
+
+343
+00:26:25,200 --> 00:26:33,440
+It's all about making sure that your product or it's actually about reminding users that there are real human behind the product and we want to achieve that.
+
+344
+00:26:33,440 --> 00:26:38,080
+>> If you want to see a really delightful humanlike uh vacuum cleaner, the the Madic,
+
+345
+00:26:38,080 --> 00:26:39,600
+I don't know if you've seen the Madic.
+
+346
+00:26:39,600 --> 00:26:43,840
+Uh I just got one and yeah, that is a pure delight.
+
+347
+00:26:43,840 --> 00:26:46,480
+They they nailed they don't they didn't need to read your book.
+
+348
+00:26:46,480 --> 00:26:47,440
+They nailed it.
+
+349
+00:26:47,440 --> 00:26:55,200
+Um, so coming back to this B2B piece, I think it's an important piece to just make sure we help people see.
+
+350
+00:26:55,200 --> 00:27:04,320
+Do you feel like what I said is true that if it's like a new market without a ton of competition and you're solving a big pain point,
+
+351
+00:27:04,320 --> 00:27:06,000
+they're like, "This is a hair on fire problem.
+
+352
+00:27:06,000 --> 00:27:12,080
+I just need I need a CRM that works or I need a customer service thing for service now."
+
+353
+00:27:12,080 --> 00:27:17,120
+uh there's less need to get this right to exceed expectations to anticipate needs.
+
+354
+00:27:17,120 --> 00:27:22,880
+If you're just like solving the problem they have and there's nothing else uh that's probably going to be okay.
+
+355
+00:27:22,880 --> 00:27:32,240
+>> Honestly, maybe the product will work and of course it has to work but the problem is that if you do not integrate that part into the way how you're building the solution,
+
+356
+00:27:32,240 --> 00:27:36,640
+you're probably just building a product but not the product that will stand out.
+
+357
+00:27:36,640 --> 00:27:42,799
+I mean if there is another competitors who's addressing the emotional needs then the other product will win.
+
+358
+00:27:42,799 --> 00:27:45,120
+I mean that's how the market is today.
+
+359
+00:27:45,120 --> 00:27:51,919
+So of course you will make a product that works but do you want it to just work or do you want it to stand out?
+
+360
+00:27:51,919 --> 00:28:00,960
+And and by the way since we're talking about this B2B and B2C space just a couple of days ago I was pinged in a post uh link in post that I really loved.
+
+361
+00:28:00,960 --> 00:28:02,480
+So I'm sharing it here.
+
+362
+00:28:02,480 --> 00:28:09,039
+Actually, it was from a product leader from Buffer and actually he said something really interesting.
+
+363
+00:28:09,039 --> 00:28:17,919
+He actually said that we realized that um there are about 2% of our users who are not using Buffer.
+
+364
+00:28:17,919 --> 00:28:19,520
+They are clearly inactive.
+
+365
+00:28:19,520 --> 00:28:22,720
+They are not using our product for many months.
+
+366
+00:28:22,720 --> 00:28:27,760
+So, we decided to send them an email and say, "Hey, we noticed that you're not using our product.
+
+367
+00:28:27,760 --> 00:28:29,840
+Are we going to refund you?"
+
+368
+00:28:29,840 --> 00:28:31,600
+Meaning that we're going to lose money.
+
+369
+00:28:31,600 --> 00:28:34,720
+Yes, but it's about trust and integrity.
+
+370
+00:28:34,720 --> 00:28:36,480
+So, this is a B2B space.
+
+371
+00:28:36,480 --> 00:28:38,080
+This is about creating trust.
+
+372
+00:28:38,080 --> 00:28:40,880
+This is about creating this connection.
+
+373
+00:28:40,880 --> 00:28:49,919
+And the reaction is really funny because you might remind people to like resign or or close your contract with a certain
+
+374
+00:28:49,919 --> 00:28:50,799
+product.
+
+375
+00:28:50,799 --> 00:28:57,200
+But the that even create a deeper connection that might even like drive you to not cancel at all.
+
+376
+00:28:57,200 --> 00:29:00,880
+Like, okay, you're inviting me to cancel, but thanks so much for your honesty.
+
+377
+00:29:00,880 --> 00:29:06,720
+So I'm going to remain I mean this kind of thing build trust over time and build emotional connection over time.
+
+378
+00:29:06,720 --> 00:29:16,960
+So it might not as you said like create like a big impact on metrics but over time as you're building personality or building a brand for your product it will
+
+379
+00:29:16,960 --> 00:29:18,960
+definitely have impact over time.
+
+380
+00:29:18,960 --> 00:29:28,000
+>> Slack I think is a good example that I remember using Slack for the first time the little delightful animations and these little funny quotes and they ended up being a $ 30 billion company.
+
+381
+00:29:28,000 --> 00:29:32,399
+It feels like what I'm hearing and is just like the more competition there is, the more you need to stand out,
+
+382
+00:29:32,399 --> 00:29:36,799
+the more this is something you need to get right because if there's a problem you're solving,
+
+383
+00:29:36,799 --> 00:29:37,760
+no one else is.
+
+384
+00:29:37,760 --> 00:29:39,679
+You don't the experience doesn't have to be incredible.
+
+385
+00:29:39,679 --> 00:29:44,159
+Like Revolute, another example, there's a lot of banking products, but the way they stood out,
+
+386
+00:29:44,159 --> 00:29:46,559
+incredible experience, a lot of delight.
+
+387
+00:29:46,559 --> 00:29:49,120
+Okay, let's get to how to actually do this.
+
+388
+00:29:49,120 --> 00:29:52,159
+We've been so far we just like here's why it's worth thinking about and doing.
+
+389
+00:29:52,159 --> 00:29:54,960
+Now, let's talk about how to actually approach this.
+
+390
+00:29:54,960 --> 00:30:04,399
+you have a really simple and uh clear way of approaching this so you're not spending time in the wrong stuff uh and not just investing in confetti.
+
+391
+00:30:04,399 --> 00:30:05,919
+You know it's called the delight model.
+
+392
+00:30:05,919 --> 00:30:07,039
+Talk about that.
+
+393
+00:30:07,039 --> 00:30:07,360
+>> Yes.
+
+394
+00:30:07,360 --> 00:30:17,840
+So the things that we did not really spoke about is the fact that over my product career I've been like a regular PM but during my time at Google I've been the delight PM.
+
+395
+00:30:17,840 --> 00:30:23,360
+So there is even an entire product team who actually work on making sure that the product is delightful.
+
+396
+00:30:23,360 --> 00:30:25,440
+I mean we do have such a thing for Chrome.
+
+397
+00:30:25,440 --> 00:30:26,720
+We have that for Google meet.
+
+398
+00:30:26,720 --> 00:30:35,760
+I mean that's a real thing and of course I understand that not every company could allow themselves having the luxury of having a delight PM.
+
+399
+00:30:35,760 --> 00:30:41,840
+So that's why I came with this concept of how can I make this actionable and I created the delight model.
+
+400
+00:30:41,840 --> 00:30:42,640
+It's very simple.
+
+401
+00:30:42,640 --> 00:30:52,960
+And by the way, what I want to really highlight here is that you do not have to change any ways of working or any uh any strategic um steps that you already taken in your
+
+402
+00:30:52,960 --> 00:30:53,440
+company.
+
+403
+00:30:53,440 --> 00:30:55,600
+So what is the light uh model?
+
+404
+00:30:55,600 --> 00:30:57,200
+It happens in four steps.
+
+405
+00:30:57,200 --> 00:31:04,640
+So we're going to walk them one by one and the very first step is about identifying users motivators.
+
+406
+00:31:04,640 --> 00:31:09,200
+What I mean is that actually users are using products for complete different reasons.
+
+407
+00:31:09,200 --> 00:31:12,399
+And that's the very first thing that you need to get aware of.
+
+408
+00:31:12,399 --> 00:31:14,080
+I mean we do segmentation.
+
+409
+00:31:14,080 --> 00:31:16,880
+That's usually something that most of product people do.
+
+410
+00:31:16,880 --> 00:31:24,080
+But we usually segment based on demographic or behavioral meaning that who they are or what do they really do with the product.
+
+411
+00:31:24,080 --> 00:31:33,840
+And the third type of segmentation that I believe is very powerful is the motivational segmentation which means that you need to segment your users based on why do
+
+412
+00:31:33,840 --> 00:31:35,279
+they use the products.
+
+413
+00:31:35,279 --> 00:31:46,960
+Like for example, like when I worked at Spotify, we know that there are people who use Spotify to search for a specific track or there are people who use Spotify because they want
+
+414
+00:31:46,960 --> 00:31:55,120
+to get inspired and others will listen to Spotify because they want to feel less lonely or they want to feel productive or they want to feel connected.
+
+415
+00:31:55,120 --> 00:32:05,360
+I mean these are motivators and the very first step of the model is to make sure that we have a list of what we call like functional motivators and
+
+416
+00:32:05,360 --> 00:32:06,720
+the emotion motivators.
+
+417
+00:32:06,720 --> 00:32:18,240
+I'm pretty sure like most of your listeners are familiar with the functional motivators but the emotional motivators is an extremely important part of the process because we're going to use it later.
+
+418
+00:32:18,240 --> 00:32:19,279
+That's the first step.
+
+419
+00:32:19,279 --> 00:32:23,519
+>> So just to be just to be clear so functional motivators are like I I need to find a song.
+
+420
+00:32:23,519 --> 00:32:25,039
+I need to get inspired.
+
+421
+00:32:25,039 --> 00:32:27,760
+I need to find something for my kid to listen to.
+
+422
+00:32:27,760 --> 00:32:30,720
+What are what are some examples of emotional motivators?
+
+423
+00:32:30,720 --> 00:32:39,519
+>> So emotional motivator motivator for the Spotify example could be I want to feel less lonely or I want to uh change my mood.
+
+424
+00:32:39,519 --> 00:32:50,399
+That's something that sometime you go to Spotify without specific uh thing in your head to listen to but the the need is to change your mood or to feel nostalgic or something like that.
+
+425
+00:32:50,399 --> 00:32:51,840
+I mean these could be examples.
+
+426
+00:32:51,840 --> 00:33:01,519
+For example, in the case of Uber, I know that they have been working heavily on allowing users to feel secure and they build a lot of feature for security reasons.
+
+427
+00:33:01,519 --> 00:33:02,240
+>> That's interesting.
+
+428
+00:33:02,240 --> 00:33:05,279
+It's like a nuanced version of jobs to be done.
+
+429
+00:33:05,279 --> 00:33:09,279
+There's the functional jobs to be done and then there's the the how you want to feel.
+
+430
+00:33:09,279 --> 00:33:09,760
+>> Yeah.
+
+431
+00:33:09,760 --> 00:33:10,559
+>> Super interesting.
+
+432
+00:33:10,559 --> 00:33:11,440
+Okay, great.
+
+433
+00:33:11,440 --> 00:33:20,159
+>> And even when the when we talk about emotional motivators, we have the personal emotional motivators and the social emotional motivators.
+
+434
+00:33:20,159 --> 00:33:24,640
+The personal emotional motivators is how user want to feel while using the product.
+
+435
+00:33:24,640 --> 00:33:33,440
+That's exactly is the social emotional motivators is how users want others to feel about them while using the product.
+
+436
+00:33:33,440 --> 00:33:35,600
+I mean think about wrapped for example.
+
+437
+00:33:35,600 --> 00:33:43,760
+A lot of people share their wrapped because they want to share how cool they are and in order to be perceived cool and to feel connected.
+
+438
+00:33:43,760 --> 00:33:47,039
+I mean these are different areas of emotional connection.
+
+439
+00:33:47,039 --> 00:33:55,039
+So these are the this is the first step identifying emotional motivators also as well as functional motivators.
+
+440
+00:33:55,039 --> 00:33:58,399
+Now the second step is to convert those motivators.
+
+441
+00:33:58,399 --> 00:34:05,679
+I mean as soon as you have this list how can I convert these into an opportunity or product opportunity.
+
+442
+00:34:05,679 --> 00:34:13,679
+So you have the basis I mean the hardest job is to identify these motivators and then you can identify product opportunities related to that.
+
+443
+00:34:13,679 --> 00:34:23,919
+And by the way, we see the shift that we are not too much talking about product space but rather opportunity space because solutions are not only about solving problems but also
+
+444
+00:34:23,919 --> 00:34:28,159
+about honoring needs and making sure that we are solving for those needs.
+
+445
+00:34:28,159 --> 00:34:36,079
+So we can use things like how might we or whatever by the way I'm not very religious or strict about whatever framework could be used here.
+
+446
+00:34:36,079 --> 00:34:44,560
+It's all about starting think from these motivators and define them and put them in the strategy as opportunities to be solved.
+
+447
+00:34:44,560 --> 00:34:46,240
+So this is second step.
+
+448
+00:34:46,240 --> 00:34:55,440
+The third step where we get to more concrete things here is to try to identify solutions but that solve for those motivators.
+
+449
+00:34:55,440 --> 00:35:02,720
+So remember we actually identified functional motivators and emotional motivators and I defined what I call the delight grid.
+
+450
+00:35:02,720 --> 00:35:13,119
+So the delight grade is a matrix where we place functional motivators and emotional motivators and then you will select among all the identified solutions and
+
+451
+00:35:13,119 --> 00:35:17,839
+you place them in the grade based on what motivators is this solution solving for.
+
+452
+00:35:17,839 --> 00:35:21,200
+I mean is it solving for one particular functional motivator?
+
+453
+00:35:21,200 --> 00:35:24,480
+Is it solving for one particular emotional motivator or both?
+
+454
+00:35:24,480 --> 00:35:25,680
+Why are we doing this?
+
+455
+00:35:25,680 --> 00:35:29,440
+Because we are categorizing features into three types.
+
+456
+00:35:29,440 --> 00:35:37,280
+There's the surface delight when a feature is only solving for an emotional motivator.
+
+457
+00:35:37,280 --> 00:35:38,560
+I mean, think about wrapped.
+
+458
+00:35:38,560 --> 00:35:42,800
+We used wrapped a couple of times here, but wrapped has nothing functional into it.
+
+459
+00:35:42,800 --> 00:35:47,359
+It's all about allowing people to feel cool and and share that with their friends.
+
+460
+00:35:47,359 --> 00:35:48,960
+That's surface delight.
+
+461
+00:35:48,960 --> 00:35:50,480
+Another example of surface delight.
+
+462
+00:35:50,480 --> 00:35:54,240
+The other day I was using my Apple Watch and it was my birthday.
+
+463
+00:35:54,240 --> 00:35:56,800
+So, on my birthday, I had these balloon.
+
+464
+00:35:56,800 --> 00:35:59,599
+I don't know if you experienced that like it's saying happy birthday in the screen.
+
+465
+00:35:59,599 --> 00:36:00,560
+I mean why not?
+
+466
+00:36:00,560 --> 00:36:05,359
+This is all about creating this emotional connection on the emotional level only.
+
+467
+00:36:05,359 --> 00:36:08,160
+The second type of delight is what I call low delight.
+
+468
+00:36:08,160 --> 00:36:14,079
+It's when the feature is only solving for one of those functional motivators.
+
+469
+00:36:14,079 --> 00:36:19,280
+And of course the third type which is the most powerful for me is the deep delight.
+
+470
+00:36:19,280 --> 00:36:29,040
+Actually, this happens when you have a feature where you are at the same time solving for a functional need and also solving for an emotional need.
+
+471
+00:36:29,040 --> 00:36:39,520
+For example, in the case of Spotify, Discover Weekly or Spotify Jam could be a good example of Deep Delight where we actually can of course learn or get
+
+472
+00:36:39,520 --> 00:36:42,400
+inspired with a new music but in a personalized way.
+
+473
+00:36:42,400 --> 00:36:46,480
+So, it allows us to feel heard and seen and understood by the app.
+
+474
+00:36:46,480 --> 00:36:53,599
+And that's the third step which is about identifying solutions and make sure that they are delightful and categorize them here.
+
+475
+00:36:53,599 --> 00:37:03,680
+The the fourth step which is the last step of the model is validating because how can we make sure that we are not just creating only
+
+476
+00:37:03,680 --> 00:37:06,720
+surface delight or we are just doing it in the wrong way.
+
+477
+00:37:06,720 --> 00:37:10,160
+So I created something that I call the delight checklist.
+
+478
+00:37:10,160 --> 00:37:18,720
+It's actually just a checklist that anyone can go through to make sure that the feature that we're building is making user impact,
+
+479
+00:37:18,720 --> 00:37:27,760
+is making a business impact because like the light is not an excuse to just add like a aesthetic and and fun part in the product.
+
+480
+00:37:27,760 --> 00:37:29,920
+It really has to be aligned with the business.
+
+481
+00:37:29,920 --> 00:37:34,480
+But also there are other couple of things like physibility uh familiarity.
+
+482
+00:37:34,480 --> 00:37:37,760
+Uh a very important part for me is inclusion.
+
+483
+00:37:37,760 --> 00:37:49,440
+like inclusion really has to be taken into consideration here because uh when we talk about emotion what makes me happy is not necessarily what make you happy right I mean even myself I might be
+
+484
+00:37:49,440 --> 00:37:59,440
+happy with something that is not necessarily what's going to make me happy tomorrow so inclusion is really important when we talk about the light because we've seen a lot of example
+
+485
+00:37:59,440 --> 00:38:11,200
+where is done wrong and I can sh can share some example here as well so the example that comes to my mind is actually something that happened last year here in Paris or in France in
+
+486
+00:38:11,200 --> 00:38:21,599
+general it was deliver you know this uh company that deliver and actually it was mother's day and on mother's day they
+
+487
+00:38:21,599 --> 00:38:32,400
+came up with the idea of sending notification to deliver users and the notification look exactly as a missed call from your mom I mean if you look at
+
+488
+00:38:32,400 --> 00:38:38,079
+it from the screen it says like missed call from your mom you click on it you get like hey It's Mother's Day.
+
+489
+00:38:38,079 --> 00:38:38,720
+Think about your mom.
+
+490
+00:38:38,720 --> 00:38:40,640
+>> That's clever and it's clever.
+
+491
+00:38:40,640 --> 00:38:42,480
+>> It It was supposed to be delightful.
+
+492
+00:38:42,480 --> 00:38:45,680
+The problem is that this feature had the worst press ever in France.
+
+493
+00:38:45,680 --> 00:38:51,920
+Like people really started to complain about it because yes, the the intention was positive.
+
+494
+00:38:51,920 --> 00:38:58,640
+Yes, it was joyful for some people, but not everyone has the luxury of enjoying such notification.
+
+495
+00:38:58,640 --> 00:39:00,000
+For some, it means joy.
+
+496
+00:39:00,000 --> 00:39:02,640
+For others, it means grief or sorrow or whatever.
+
+497
+00:39:02,640 --> 00:39:04,880
+So, it was not inclusive enough.
+
+498
+00:39:04,880 --> 00:39:11,440
+So that's why I'm highlighting the inclusion part for delight because it might be undertaken sometime.
+
+499
+00:39:11,440 --> 00:39:11,920
+>> Okay.
+
+500
+00:39:11,920 --> 00:39:12,480
+Incredible.
+
+501
+00:39:12,480 --> 00:39:20,640
+And that was a really good example of why you have this checklist at the end of making sure this is actually not going to upset people while accidentally.
+
+502
+00:39:20,640 --> 00:39:24,880
+This episode is brought to you by Lucid Link, the storage collaboration platform.
+
+503
+00:39:24,880 --> 00:39:30,960
+You've built a great product, but how you show it through video design and storytelling is what brings it to life.
+
+504
+00:39:30,960 --> 00:39:35,440
+If your team works with large media files, videos, design assets, layered project files.
+
+505
+00:39:35,440 --> 00:39:38,800
+You know how painful it can be to stay organized across locations.
+
+506
+00:39:38,800 --> 00:39:40,400
+Files live in different places.
+
+507
+00:39:40,400 --> 00:39:43,040
+You're constantly asking, "Is this the latest version?"
+
+508
+00:39:43,040 --> 00:39:46,240
+Creative Work slows down while people wait for files to transfer.
+
+509
+00:39:46,240 --> 00:39:47,760
+Lucid Link fixes this.
+
+510
+00:39:47,760 --> 00:39:52,079
+It gives your team a shared space in the cloud that works like a local drive.
+
+511
+00:39:52,079 --> 00:39:54,480
+Files are instantly accessible from anywhere.
+
+512
+00:39:54,480 --> 00:39:57,280
+No downloading, no syncing, and always up to date.
+
+513
+00:39:57,280 --> 00:40:02,320
+That means producers, editors, designers, and marketers can open massive files in their native apps,
+
+514
+00:40:02,320 --> 00:40:05,760
+work directly from the cloud, and stay aligned wherever they are.
+
+515
+00:40:05,760 --> 00:40:12,640
+Teams at Adobe, Shopify, and top creative agencies use LucidLink to keep their content engine running fast and smooth.
+
+516
+00:40:12,640 --> 00:40:16,400
+Try it for free at lucidlink.com/lenny.
+
+517
+00:40:16,400 --> 00:40:19,720
+That's lucidl.com/lenny.
+
+518
+00:40:22,079 --> 00:40:31,520
+So let me just mirror back these four steps and then I'm curious if there's another example of something you built that followed this model that had a really good impact.
+
+519
+00:40:31,520 --> 00:40:32,720
+But let me um let me share.
+
+520
+00:40:32,720 --> 00:40:43,520
+So basically what this is is to help you figure out what is worth investing in under this umbrella of delight which hopefully now you're convinced is worth your time especially
+
+521
+00:40:43,520 --> 00:40:46,960
+if you're trying to stand out amongst a bunch of competitors.
+
+522
+00:40:46,960 --> 00:40:57,520
+So step one is identify user motivators like what are people what are the jobs to be done both very tang practically functionally you
+
+523
+00:40:57,520 --> 00:41:07,119
+call them functional needs and then also emotional needs are people trying to feel uh happy sad what within that bucket actually I'm going to take a quick tangent when you think about
+
+524
+00:41:07,119 --> 00:41:17,280
+emotional needs what's like the taxonomy of is I know there's a lot of emotions anger uh sad like what are the most common emotional needs in your experience to think about when you're
+
+525
+00:41:17,280 --> 00:41:28,160
+like okay here's when here's how to think about what the options might be >> it depends on the area but for some product it could be security for other it might be uh like I want to feel a
+
+526
+00:41:28,160 --> 00:41:38,079
+better version of myself like for example when I spoke with some leaders from muro uh they might consider this as an emotional need like they are using the product of course for the
+
+527
+00:41:38,079 --> 00:41:48,800
+functionality that is allowing them to achieve but also to showcase that they are better facilitator or they are a better leader or just feel a better version of themsel.
+
+528
+00:41:48,800 --> 00:41:51,440
+This could be a potential emotional motivator.
+
+529
+00:41:51,440 --> 00:41:55,200
+So it can range depending on the type of the product or the industry.
+
+530
+00:41:55,200 --> 00:42:03,280
+But actually emotions could be like a we can use for example the wheel of emotion as a basis where we can select from it.
+
+531
+00:42:03,280 --> 00:42:07,119
+But uh not all emotion could apply to all type of products.
+
+532
+00:42:07,119 --> 00:42:08,640
+It has to be specific.
+
+533
+00:42:08,640 --> 00:42:08,960
+>> Cool.
+
+534
+00:42:08,960 --> 00:42:12,319
+That's a really good example uh of feeling security.
+
+535
+00:42:12,319 --> 00:42:15,119
+It feels like that's something that more and more people want.
+
+536
+00:42:15,119 --> 00:42:18,640
+uh all these AI companions like they're gonna have all kinds of emotional needs.
+
+537
+00:42:18,640 --> 00:42:22,480
+So identify user motivators, functional and emotional.
+
+538
+00:42:22,480 --> 00:42:26,640
+Turn those m motivators into delightful product opportunities.
+
+539
+00:42:26,640 --> 00:42:32,640
+Figure out where you have opportunities to achieve that sort of delight.
+
+540
+00:42:32,640 --> 00:42:40,640
+Identify potential solutions like actually ideulate on solutions and then validate the ideas through this checklist which you have in your book.
+
+541
+00:42:40,640 --> 00:42:41,839
+Are there a few you want to share?
+
+542
+00:42:41,839 --> 00:42:44,960
+there just like here's checklist of stuff you want to think through.
+
+543
+00:42:44,960 --> 00:42:45,280
+>> Yeah.
+
+544
+00:42:45,280 --> 00:42:51,040
+So we spoke about uh inclusion as a really important one in the delight checklist.
+
+545
+00:42:51,040 --> 00:42:58,640
+Another area could be familiarity as well because of course we love innovation but we want to make sure that we are not surprising too much.
+
+546
+00:42:58,640 --> 00:43:04,240
+I mean we uh think that we love surprise but we don't want to be very much surprised.
+
+547
+00:43:04,240 --> 00:43:12,640
+And I have a maybe interesting story uh to share here which is something that um actually created the success of Discover Wiki.
+
+548
+00:43:12,640 --> 00:43:15,440
+So I'm not sure if you know about that but I'm going to go ahead and share it.
+
+549
+00:43:15,440 --> 00:43:16,160
+>> Yeah, let's do it.
+
+550
+00:43:16,160 --> 00:43:18,560
+I I I use Discover Weekly all the time.
+
+551
+00:43:18,560 --> 00:43:24,800
+>> So when Discover Wiki was first uh thought of or >> in Spotify by the way.
+
+552
+00:43:24,800 --> 00:43:25,200
+>> Yes.
+
+553
+00:43:25,200 --> 00:43:35,839
+So discover weekly uh how it was created was the fact that it was supposed to be a complete discovery meaning that it was supposed to be complete new for the users.
+
+554
+00:43:35,839 --> 00:43:37,359
+So that's the idea behind it.
+
+555
+00:43:37,359 --> 00:43:46,079
+It was like we're not the user is not supposed to find or listen tracks that has been listened to or liked before.
+
+556
+00:43:46,079 --> 00:43:58,000
+So it was shipped and when it was shipped like of course we have we started to see a big success in the metrics but you know what two weeks later people like the engineers realized
+
+557
+00:43:58,000 --> 00:44:06,560
+that there've been a bug in the feature actually the bug was that sometimes the algorithm was injecting some of the like it song.
+
+558
+00:44:06,560 --> 00:44:10,480
+So the playlist was not completely new to the users.
+
+559
+00:44:10,480 --> 00:44:14,800
+It had some uh familiar feature I would say.
+
+560
+00:44:14,800 --> 00:44:24,720
+So of course the engineers fixed the bug and you know what happened >> metrics >> all the metrics exactly like all the metrics all the success metrics of the feature was going down.
+
+561
+00:44:24,720 --> 00:44:35,359
+So they quickly realized that actually what users really liked in the discover weekly was not the fact that it was completely new but this familiarity that has been injected
+
+562
+00:44:35,359 --> 00:44:40,800
+randomly in the app just made it even more better and and even more appreciated by the users.
+
+563
+00:44:40,800 --> 00:44:47,520
+So they fixed the bug and now with discover weekly that you're enjoying is a buggy version if we can say.
+
+564
+00:44:47,520 --> 00:44:58,640
+So uh I mean that's why I I added familiarity as as a as an element that need to be checked because we don't want to just inject complete new surprising feature to the user that
+
+565
+00:44:58,640 --> 00:44:59,599
+might be shocking.
+
+566
+00:44:59,599 --> 00:45:00,640
+>> That's an amazing story.
+
+567
+00:45:00,640 --> 00:45:02,720
+That was your team that worked on that.
+
+568
+00:45:02,720 --> 00:45:08,880
+>> Yeah, I've been very close working with them because I've been working on the uh transcoding part and we had to transcode these tracks for them.
+
+569
+00:45:08,880 --> 00:45:10,160
+>> That's so funny.
+
+570
+00:45:10,160 --> 00:45:14,000
+How many other products are we missing out on by not making these mistakes by accident?
+
+571
+00:45:14,000 --> 00:45:15,280
+Uh that makes so much sense.
+
+572
+00:45:15,280 --> 00:45:17,839
+Just like people want a little bit of like, oh yeah, I love that song.
+
+573
+00:45:17,839 --> 00:45:18,480
+Oh, let's go.
+
+574
+00:45:18,480 --> 00:45:20,400
+And then, okay, there's something new.
+
+575
+00:45:20,400 --> 00:45:21,920
+Uh that is so funny.
+
+576
+00:45:21,920 --> 00:45:24,079
+Okay, so so these are the four steps.
+
+577
+00:45:24,079 --> 00:45:31,760
+And again, what you're trying to do here, I'll just go back to what makes something delightful is you remove friction.
+
+578
+00:45:31,760 --> 00:45:37,200
+Make something that you expect to be hard really easy, like canceling an Uber and getting a refund on Uber,
+
+579
+00:45:37,200 --> 00:45:37,920
+right?
+
+580
+00:45:37,920 --> 00:45:47,599
+anticipating needs which I think was the eim example you gave in in the Revolute app and Revolute by the way very delightful experience from what I hear I've never used it myself being in
+
+581
+00:45:47,599 --> 00:45:59,280
+the US and then exceeding expectations giving someone and and then yeah the giving something you never expected and like wow what was the example there again just to make that really concrete of anticipating of exceeding
+
+582
+00:45:59,280 --> 00:46:08,000
+expectations >> so for exceeding expectation we spoke about for example the shopping uh it's called the cashback feature the coupon There are plenty of them.
+
+583
+00:46:08,000 --> 00:46:08,480
+Yeah.
+
+584
+00:46:08,480 --> 00:46:08,800
+>> Yeah.
+
+585
+00:46:08,800 --> 00:46:09,359
+That's amazing.
+
+586
+00:46:09,359 --> 00:46:14,079
+Is that something is that something Microsoft does or that's like a extension that your husband >> installed?
+
+587
+00:46:14,079 --> 00:46:15,680
+It's it's completely a part of the product.
+
+588
+00:46:15,680 --> 00:46:18,480
+And even autofill like it's autofill.
+
+589
+00:46:18,480 --> 00:46:21,520
+You don't even I mean same like a password autofill.
+
+590
+00:46:21,520 --> 00:46:23,119
+>> And I know Chrome is working on it.
+
+591
+00:46:23,119 --> 00:46:25,119
+So it's coming if you are a Chrome user.
+
+592
+00:46:25,119 --> 00:46:25,920
+>> Wow.
+
+593
+00:46:25,920 --> 00:46:27,599
+What a what a what a weird thing.
+
+594
+00:46:27,599 --> 00:46:28,880
+Like I I I love it.
+
+595
+00:46:28,880 --> 00:46:30,000
+But it's funny that that happens.
+
+596
+00:46:30,000 --> 00:46:32,720
+Like all these poor businesses are going to lose out on all this revenue.
+
+597
+00:46:32,720 --> 00:46:34,240
+Anyway, we don't have to get into that.
+
+598
+00:46:34,240 --> 00:46:35,119
+Uh okay.
+
+599
+00:46:35,119 --> 00:46:41,680
+Is there an example like a broader example of something you worked on following this model that was really successful,
+
+600
+00:46:41,680 --> 00:46:42,640
+really impactful?
+
+601
+00:46:42,640 --> 00:46:48,480
+>> When I worked at Google, particularly for Google Meet, I told her like I've been a PM for delight.
+
+602
+00:46:48,480 --> 00:46:52,240
+So, we had that mission that we really needed to delight our users.
+
+603
+00:46:52,240 --> 00:46:55,280
+And that's how I actually learned that it's actually a discipline.
+
+604
+00:46:55,280 --> 00:46:56,480
+It's not the buzz word.
+
+605
+00:46:56,480 --> 00:46:59,040
+It's something that we can really put in place.
+
+606
+00:46:59,040 --> 00:47:01,359
+So, I do have two examples I can share with you.
+
+607
+00:47:01,359 --> 00:47:04,079
+One is from Google Meet and one from Google Chrome.
+
+608
+00:47:04,079 --> 00:47:05,920
+Which one do you want to listen to?
+
+609
+00:47:05,920 --> 00:47:08,960
+>> Let's go with Chrome since we've sh chatted about me, but I want to hear them both.
+
+610
+00:47:08,960 --> 00:47:09,920
+Let's start with Chrome.
+
+611
+00:47:09,920 --> 00:47:10,480
+I love Chrome.
+
+612
+00:47:10,480 --> 00:47:11,599
+>> Let's start with Chrome.
+
+613
+00:47:11,599 --> 00:47:17,680
+So, when I work for Chrome, I had to work on the most challenging issue.
+
+614
+00:47:17,680 --> 00:47:21,599
+What do you think is >> most challenging issue of Chrome?
+
+615
+00:47:21,599 --> 00:47:24,720
+Uh, memory memory management.
+
+616
+00:47:24,720 --> 00:47:26,160
+No, >> there is even worse.
+
+617
+00:47:26,160 --> 00:47:27,599
+It's tab management.
+
+618
+00:47:27,599 --> 00:47:28,160
+Tab management.
+
+619
+00:47:28,160 --> 00:47:30,000
+How people >> Okay.
+
+620
+00:47:30,000 --> 00:47:30,880
+Okay.
+
+621
+00:47:30,880 --> 00:47:35,200
+No, it's the it is the hardest one because actually when I worked at tab management,
+
+622
+00:47:35,200 --> 00:47:40,000
+I realized that people are working with tabs for complete different way.
+
+623
+00:47:40,000 --> 00:47:46,400
+It's like people are leaving tabs open as reminders or as to-do or just because they forget about it.
+
+624
+00:47:46,400 --> 00:47:47,839
+>> Very guilty of that.
+
+625
+00:47:47,839 --> 00:47:49,040
+>> Yes.
+
+626
+00:47:49,040 --> 00:47:52,480
+And I had to work on the iOS part like the mobile part.
+
+627
+00:47:52,480 --> 00:47:58,319
+And believe me, like if you look at data, you see so many people having so many tabs open.
+
+628
+00:47:58,319 --> 00:48:02,880
+I mean the numbers is just >> 99 plus is all I ever see.
+
+629
+00:48:02,880 --> 00:48:03,200
+>> Yeah.
+
+630
+00:48:03,200 --> 00:48:06,480
+Because we we do not put three digit anyway.
+
+631
+00:48:06,480 --> 00:48:06,960
+Smart.
+
+632
+00:48:06,960 --> 00:48:08,880
+>> The real number could be really high.
+
+633
+00:48:08,880 --> 00:48:09,440
+>> Oh man.
+
+634
+00:48:09,440 --> 00:48:12,000
+>> And so we had to address this problem.
+
+635
+00:48:12,000 --> 00:48:15,839
+I mean from a functional perspective this is is a problem.
+
+636
+00:48:15,839 --> 00:48:26,480
+I mean from a uh from a memory from a performance from a space I mean we don't want users to have to have like 500 open tabs for without even realizing by the way that they have 500
+
+637
+00:48:26,480 --> 00:48:27,680
+open tabs.
+
+638
+00:48:27,680 --> 00:48:30,160
+So we had to work on that and how did we do that?
+
+639
+00:48:30,160 --> 00:48:41,280
+The way we did that is actually we interviewed a lot of users trying to ask them hey what if you navigate through your open tabs and let me know how you are like you can find an
+
+640
+00:48:41,280 --> 00:48:53,200
+open tabs or that that was for me a very important phase because that's how you realize that there is a relationship between people and their tabs and I really say relationship because for some
+
+641
+00:48:53,200 --> 00:49:02,800
+people's the their tabs are really really important things I mean for them there's absolutely no choice for Chrome to close tabs on
+
+642
+00:49:02,800 --> 00:49:03,359
+their behalf.
+
+643
+00:49:03,359 --> 00:49:06,240
+Like it's it's a it's a really important thing.
+
+644
+00:49:06,240 --> 00:49:16,079
+So we had to understand that relationship first and then we asked some people to navigate us through how they can find the specific tab in their tab grids and a lot of
+
+645
+00:49:16,079 --> 00:49:27,599
+people got like uh a bit frustrated or like uh they found that a bit hard or some of them had like they found that there is a need to apologize not for the
+
+646
+00:49:27,599 --> 00:49:38,559
+content of course of the tab they had but something like hey I'm I mean sorry I usually don't have that many tabs open and that's not the point the point is to see if you get frustrated from the
+
+647
+00:49:38,559 --> 00:49:40,079
+experience itself or not.
+
+648
+00:49:40,079 --> 00:49:50,240
+So that phase by itself trying to understand not only the functional part but also that emotional part like the frustration part the ashame part sometime was really key
+
+649
+00:49:50,240 --> 00:49:56,720
+in order to build a feature that can align with these values and these motivators or these emotional parts.
+
+650
+00:49:56,720 --> 00:50:03,040
+So what we built actually was a feature that exists today on iOS uh which is called inactive tabs.
+
+651
+00:50:03,040 --> 00:50:13,920
+So inactive tabs is that ability where you can actually this this happened automatically where all tabs um longer than 21 day that was not touch that should actually or open
+
+652
+00:50:13,920 --> 00:50:17,760
+for more than 21 day are placed in this folder called inactive tabs.
+
+653
+00:50:17,760 --> 00:50:27,839
+So the results is that you're getting like a cleaner tab grid and people are feeling less stressed about the amount of tabs they have but also they keep that trust
+
+654
+00:50:27,839 --> 00:50:34,480
+of Chrome because they know that we did not close their tabs their tabs are actually there in that inactive tab group.
+
+655
+00:50:34,480 --> 00:50:37,040
+So that was one of the feature that we built.
+
+656
+00:50:37,040 --> 00:50:38,720
+It was supposed to be functional only.
+
+657
+00:50:38,720 --> 00:50:49,040
+I mean, we could just maybe compress the thumbnail or just do a performance way, but also that's an example of deep delight where at the same time you're solving for uh a
+
+658
+00:50:49,040 --> 00:50:53,839
+functional need and at the same time including the emotional dimension into it.
+
+659
+00:50:53,839 --> 00:50:55,280
+>> That is a super cool example.
+
+660
+00:50:55,280 --> 00:50:57,760
+Uh that's actually the reason I switched.
+
+661
+00:50:57,760 --> 00:50:59,440
+I started using Arc.
+
+662
+00:50:59,440 --> 00:51:02,160
+I don't know if you've used Arc before, which is built on Chromium.
+
+663
+00:51:02,160 --> 00:51:04,000
+It's its own startup, the browser company.
+
+664
+00:51:04,000 --> 00:51:05,359
+Josh Miller was on the podcast.
+
+665
+00:51:05,359 --> 00:51:13,040
+They delete they actually uh delete your tabs after some number of hour like days and once you get used to that it's actually great.
+
+666
+00:51:13,040 --> 00:51:16,319
+I'm like okay please go away and then you can save them if you want.
+
+667
+00:51:16,319 --> 00:51:17,359
+You can pin them.
+
+668
+00:51:17,359 --> 00:51:24,960
+I haven't used Chrome in probably long enough where I remember just the tabs deactivate like they just have to reload when you go back to their old.
+
+669
+00:51:24,960 --> 00:51:30,160
+Uh it's cool that now they move to a different folder to kind of get them out of the way and clean up your whole thing.
+
+670
+00:51:30,160 --> 00:51:31,359
+Uh very cool.
+
+671
+00:51:31,359 --> 00:51:32,000
+Okay.
+
+672
+00:51:32,000 --> 00:51:34,559
+What's the Google Meet story?
+
+673
+00:51:34,559 --> 00:51:45,440
+So I told you when I joined Google meet it was maybe one month before covid hit Europe like the worst uh period you can join Google meet because I mean the
+
+674
+00:51:45,440 --> 00:51:56,960
+usage just gets skyrocketed like we all found ourselves moving from having meetings in rooms and clinics to 100% remote so the very first couple of
+
+675
+00:51:56,960 --> 00:52:05,119
+months and it was about three to four months I had to understand the behavior the impact or the emotional impact effect of this new behavior,
+
+676
+00:52:05,119 --> 00:52:11,920
+the fact that people are staying home and having these back to back, what's the emotional impact of this new experience?
+
+677
+00:52:11,920 --> 00:52:16,480
+And of course, what we did was to interview a lot of people and with the help of user researcher,
+
+678
+00:52:16,480 --> 00:52:18,640
+we collected a lot of informations.
+
+679
+00:52:18,640 --> 00:52:27,760
+And when we tried to synthesize these uh informations, we actually realized that there are three main patterns like people are saying I'm feeling bored.
+
+680
+00:52:27,760 --> 00:52:37,359
+People are saying there is a low interaction and there was even a new term that was born during co time which she is called the zoom fatigue.
+
+681
+00:52:37,359 --> 00:52:38,559
+>> You probably heard about that.
+
+682
+00:52:38,559 --> 00:52:41,200
+>> It's funny that it was zoom fatigue and not Google meet fatigue.
+
+683
+00:52:41,200 --> 00:52:44,000
+>> I was really happy it was called zoom fatigue.
+
+684
+00:52:44,000 --> 00:52:46,960
+It's always better to put it on the competitor whether it's negative.
+
+685
+00:52:46,960 --> 00:52:48,960
+Anyway, >> bittersweet bittersweet.
+
+686
+00:52:48,960 --> 00:52:54,800
+>> So we had to work I mean in that case if you can see we didn't really identify motivators.
+
+687
+00:52:54,800 --> 00:53:05,280
+We did identify demotivators because sometime it's even easier actually sometimes it's easier to let you know what frustrates me or stress me than tell you what makes me happy.
+
+688
+00:53:05,280 --> 00:53:09,920
+So if identifying emotional motivators turns turns out to be complicated.
+
+689
+00:53:09,920 --> 00:53:21,520
+So you can try to identify those emotional demotivators and in that case we had to work on these three demotivators and come up with solutions that could help leverage that or at least reduce in way
+
+690
+00:53:21,520 --> 00:53:22,240
+or another.
+
+691
+00:53:22,240 --> 00:53:32,720
+So when we worked on Zoom fatigue, we actually realized and we uh got help from a study that was published from Stanford by the way that one of the
+
+692
+00:53:32,720 --> 00:53:38,240
+causes for the zoom fatigue was the fact of seeing your self view.
+
+693
+00:53:38,240 --> 00:53:41,599
+>> It's not about seeing others, it's the fact that you see yourself.
+
+694
+00:53:41,599 --> 00:53:41,839
+Why?
+
+695
+00:53:41,839 --> 00:53:46,319
+I mean just imagine yourself walking on the street and someone is holding a mirror next to you.
+
+696
+00:53:46,319 --> 00:53:51,280
+I mean even if you avoid your brain will try always to check how you look.
+
+697
+00:53:51,280 --> 00:54:00,160
+So the fact that there was self view was a big risk and it was even listed as among the most significant risk of zoom fatigue or causes of zoom
+
+698
+00:54:00,160 --> 00:54:00,880
+fatigue.
+
+699
+00:54:00,880 --> 00:54:04,000
+So we worked on minimizing self view.
+
+700
+00:54:04,000 --> 00:54:07,280
+It's as simple as you can minimize your self view.
+
+701
+00:54:07,280 --> 00:54:12,079
+Meaning that you can still broadcast or share your video but you don't have to see yourself.
+
+702
+00:54:12,079 --> 00:54:13,839
+That's one example that we worked on.
+
+703
+00:54:13,839 --> 00:54:17,839
+The second one which was related to low interaction and boredom.
+
+704
+00:54:17,839 --> 00:54:29,280
+We tried to understand how can we bring in a little bit more of joy but at the same time allow people to feel heard and seen and active and that's how we actually brought reaction imagery reaction you
+
+705
+00:54:29,280 --> 00:54:39,599
+know that waving hand or thumb up because sometime it feels invasive to unmute yourself and say I agree or like cut the speaker for saying yes uh I
+
+706
+00:54:39,599 --> 00:54:48,240
+don't agree or something I mean these emojis can help you stay alive stay connected and present and somehow improve the interrupt activity part.
+
+707
+00:54:48,240 --> 00:54:51,280
+So these are the two features that we introduced back then.
+
+708
+00:54:51,280 --> 00:54:52,400
+>> That is such a cool example.
+
+709
+00:54:52,400 --> 00:54:56,000
+I find myself using Google Meet all the time now instead of Zoom.
+
+710
+00:54:56,000 --> 00:54:57,760
+So great job Google Meet team.
+
+711
+00:54:57,760 --> 00:55:00,960
+I know Zoom was winning for a long time and now I feel like Google meets really turned that around.
+
+712
+00:55:00,960 --> 00:55:02,480
+Good job.
+
+713
+00:55:02,480 --> 00:55:06,960
+Let me ask a couple questions to keep digging into this question.
+
+714
+00:55:06,960 --> 00:55:14,079
+It feels like some cos founders leaders are like yes this is worth investing in.
+
+715
+00:55:14,079 --> 00:55:14,880
+Let's definitely do it.
+
+716
+00:55:14,880 --> 00:55:19,839
+There's a lot that just like no stop this like we got other stuff to do.
+
+717
+00:55:19,839 --> 00:55:26,880
+What's your best advice for trying to get buyin from SEO or just some kind of leader that shutting this kind of stuff down?
+
+718
+00:55:26,880 --> 00:55:31,119
+>> The very first advice is to try not to convince.
+
+719
+00:55:31,119 --> 00:55:39,280
+I mean honestly if you try to convince it's a lost bottle I feel like uh we live in a world where there's a true there's a false.
+
+720
+00:55:39,280 --> 00:55:50,400
+If you come to your CEO and leader say like I heard nine talking about the light we should absolutely do that it uh it might seem like a threat for for the organization for the ways of working because it's
+
+721
+00:55:50,400 --> 00:55:58,160
+something new instead have you heard about this concept of uh perception versus uh perspective.
+
+722
+00:55:58,160 --> 00:55:59,440
+>> No I don't think so.
+
+723
+00:55:59,440 --> 00:56:02,720
+>> So perception is our way of seeing things.
+
+724
+00:56:02,720 --> 00:56:05,359
+This is exactly how we understand things.
+
+725
+00:56:05,359 --> 00:56:06,799
+This is how we are convinced.
+
+726
+00:56:06,799 --> 00:56:09,359
+For example, you listen to a podcast talking about the light.
+
+727
+00:56:09,359 --> 00:56:14,079
+Then you are you have your own view about what this is about.
+
+728
+00:56:14,079 --> 00:56:17,520
+Perspective though is the other view is the world view.
+
+729
+00:56:17,520 --> 00:56:18,960
+How other perceives the light.
+
+730
+00:56:18,960 --> 00:56:29,280
+So there is very likely it's very likely that others like leaders and CEO the reason why they're saying no is because their view is that the line is about this nice to
+
+731
+00:56:29,280 --> 00:56:31,119
+have or the cherry on the top.
+
+732
+00:56:31,119 --> 00:56:43,040
+So instead of trying to convince and that's why I said don't even try to convince is to try to align and put yourself into the leaders and the CEO shoe and try what do they value most once you
+
+733
+00:56:43,040 --> 00:56:53,359
+understand that try to see how can the light align or help achieve that goal and let me share an example with you because um when I left Google and I
+
+734
+00:56:53,359 --> 00:57:04,480
+started coaching founders and CPO I had one founder actually who uh has been running a c a startup for helping musicians and artists to find curators.
+
+735
+00:57:04,480 --> 00:57:13,200
+I mean that's the core value and mission of the startup and the when we initiated the coaching side we actually started talking about strategy OKR.
+
+736
+00:57:13,200 --> 00:57:15,839
+I mean that's exactly what he was he had in mind.
+
+737
+00:57:15,839 --> 00:57:24,079
+He wanted to get help into creating product strategies and OKRs and over time as we started like coaching we ended up talking about the light.
+
+738
+00:57:24,079 --> 00:57:28,480
+The reason is I actually asked him this very simple question.
+
+739
+00:57:28,480 --> 00:57:34,160
+I asked him, do you think your users are proud to use your product?
+
+740
+00:57:34,160 --> 00:57:40,240
+Are they proud enough to tell others artist and musician to use your product?
+
+741
+00:57:40,240 --> 00:57:52,079
+And I think that was a really hard question for him because after reflection he said no they are not proud because they feel like they are little I mean they are getting our help so they
+
+742
+00:57:52,079 --> 00:57:55,760
+are not able to get curator by themsel.
+
+743
+00:57:55,760 --> 00:58:03,760
+So who's going to tell others that they are little like artists and they are having help from from us?
+
+744
+00:58:03,760 --> 00:58:12,880
+That was the beginning of the conversation and I think after two weeks he kept coming back saying hey narrin I think we need to shift our entire strategy discussion
+
+745
+00:58:12,880 --> 00:58:17,760
+into how can we make our users proud of using the product.
+
+746
+00:58:17,760 --> 00:58:28,559
+We need to find ways to turn our product into like our users into proud users and so they can tell others tell other musician they will play the word of mouth game and they
+
+747
+00:58:28,559 --> 00:58:32,799
+will allow our product to succeed and that's exactly what we did by the way.
+
+748
+00:58:32,799 --> 00:58:40,079
+So in the beginning this founder was completely opposite to the fact that we introduced the light into the product.
+
+749
+00:58:40,079 --> 00:58:50,400
+But as soon as he realized that the fact that he invest into allowing their user to feel proud is so important for the growth and the word of mouth and the
+
+750
+00:58:50,400 --> 00:58:53,920
+success of the business that became the number one strategy.
+
+751
+00:58:53,920 --> 00:58:55,200
+And by the way they've been growing.
+
+752
+00:58:55,200 --> 00:58:57,119
+They are now available in the US.
+
+753
+00:58:57,119 --> 00:58:59,119
+So things are going super well for them.
+
+754
+00:58:59,119 --> 00:59:04,720
+But just to show that the fact that you're saying no does not necessarily mean that it's the wrong thing.
+
+755
+00:59:04,720 --> 00:59:06,559
+It's just it's not aligned enough.
+
+756
+00:59:06,559 --> 00:59:10,319
+You need to find way to align them with what they value.
+
+757
+00:59:10,319 --> 00:59:11,200
+>> That's awesome advice.
+
+758
+00:59:11,200 --> 00:59:16,160
+It's good advice for just any thing you're trying to get buy in from is understand their goals.
+
+759
+00:59:16,160 --> 00:59:19,040
+Connect what you're proposing to what they want to achieve.
+
+760
+00:59:19,040 --> 00:59:21,520
+And it's almost like don't even use the word delight.
+
+761
+00:59:21,520 --> 00:59:24,960
+Just like think about okay here's what they believe we need to do.
+
+762
+00:59:24,960 --> 00:59:31,599
+How might removing friction, antip anticipating needs, and exceeding expectations get us there?
+
+763
+00:59:31,599 --> 00:59:32,079
+>> Yeah.
+
+764
+00:59:32,079 --> 00:59:36,400
+>> And then later be like, haha, it's delight.
+
+765
+00:59:36,400 --> 00:59:37,440
+Just kidding.
+
+766
+00:59:37,440 --> 00:59:39,599
+Okay, that was an awesome example.
+
+767
+00:59:39,599 --> 00:59:43,200
+So along those lines, just when you have all these ideas, we talked about this a bit,
+
+768
+00:59:43,200 --> 00:59:48,079
+but just like you have a bunch of ideas, a bunch of ways to do add delight, make it a better experience.
+
+769
+00:59:48,079 --> 00:59:53,680
+What's your advice for prioritizing amongst all of the ways that you can remove friction,
+
+770
+00:59:53,680 --> 00:59:55,520
+anticipate needs, exceed expectations?
+
+771
+00:59:55,520 --> 00:59:58,079
+How do you pick the things that are actually worth investing in?
+
+772
+00:59:58,079 --> 01:00:09,440
+The very first thing that I really want to highlight here is that we need to shift from the mindset that tells us balancing or like a how can I balance between the light and
+
+773
+01:00:09,440 --> 01:00:18,400
+functionality because we need to move away from the light versus functionality into the light in functionality.
+
+774
+01:00:18,400 --> 01:00:30,160
+So that's the biggest move that I really want to share here because we should really get away from idea that should I prioritize delight or should I prioritize functionality and remember
+
+775
+01:00:30,160 --> 01:00:41,040
+like a deep light it is that concept of trying to solve problems and create solutions in a way that emotion is taken into consideration into that.
+
+776
+01:00:41,040 --> 01:00:45,200
+And by the way, I created this model called 50410.
+
+777
+01:00:45,200 --> 01:00:55,200
+And 50410 is actually a guidance or a recommendation so that if you have done your delight grade and you categorized your solutions or your road map or your
+
+778
+01:00:55,200 --> 01:01:05,119
+backlog into low delight, surface delight and deep delight 5010 will tell you that 50% of your features should be
+
+779
+01:01:05,119 --> 01:01:06,160
+for low delight.
+
+780
+01:01:06,160 --> 01:01:11,119
+Yes, 50% should be for functionality only because like a product has to function.
+
+781
+01:01:11,119 --> 01:01:14,079
+I'm not saying that you should only work on delight.
+
+782
+01:01:14,079 --> 01:01:18,079
+40% for deep delight where actually functionality is there.
+
+783
+01:01:18,079 --> 01:01:26,079
+It's just that we are building it a little bit different so that people will feel valued and only 10% for surface delight.
+
+784
+01:01:26,079 --> 01:01:35,119
+I mean you can bring a little bit of surface delight throughout the year maybe two features a year that will just bring that joy that people will create.
+
+785
+01:01:35,119 --> 01:01:46,079
+of course the brand and the personality that we are working on and when I worked at Spotify for example we had some times where we of course blended all that into the same road map like for example we
+
+786
+01:01:46,079 --> 01:01:57,280
+had a time where we were working on improving search because at some time uh maybe you don't remember that but at some point of time like search was not functioning that well so that was
+
+787
+01:01:57,280 --> 01:02:06,880
+improve improved and that's of course functionality only and also we work on introducing video podcast on on spot Spotify and we worked on canvas.
+
+788
+01:02:06,880 --> 01:02:13,839
+So canvas by this small video looping video, you know the small clip when you open Spotify and you have like a small clip.
+
+789
+01:02:13,839 --> 01:02:16,000
+>> Oh my my my son is addicted to that.
+
+790
+01:02:16,000 --> 01:02:23,040
+He's like he likes to play music and then he found this thing that is like Tik Tok for Spotify where he's just listening to the music in these little clips.
+
+791
+01:02:23,040 --> 01:02:26,000
+I'm like >> yeah, >> how do I you know it's I don't want him to be watching that.
+
+792
+01:02:26,000 --> 01:02:30,000
+It's like little iPad almost but but it is delightful for my dogs.
+
+793
+01:02:30,000 --> 01:02:39,760
+>> So for me the success comes from the the blending or the balancing or how can you create a road map where you have a bouquet of deep delight surface delight
+
+794
+01:02:39,760 --> 01:02:42,079
+and low delight all together.
+
+795
+01:02:42,079 --> 01:02:44,000
+>> These are awesome examples.
+
+796
+01:02:44,000 --> 01:02:46,559
+Say someone listening is super bought in.
+
+797
+01:02:46,559 --> 01:02:48,079
+How do we do this at our company?
+
+798
+01:02:48,079 --> 01:02:49,760
+And then then say they're a manager.
+
+799
+01:02:49,760 --> 01:02:52,640
+Say they're like a manager of PMs or even just a PM.
+
+800
+01:02:52,640 --> 01:02:58,400
+Is there something more they can do to create kind of this culture of delight being important >> to start?
+
+801
+01:02:58,400 --> 01:03:02,559
+It's a mindset and I call this the delight culture.
+
+802
+01:03:02,559 --> 01:03:11,920
+I mean uh of course it's really important to talk about it so that we understand what it is but it has to be part of the culture of the organization.
+
+803
+01:03:11,920 --> 01:03:13,760
+I mean that's how I see it.
+
+804
+01:03:13,760 --> 01:03:24,000
+So for example at Google I've seen that uh for during a long time we had a like a product pillar called delight and
+
+805
+01:03:24,000 --> 01:03:34,640
+the fact that it was a permanent place in the strategy and we see it all the time that's actually a kind of reminder that we need to build features and create opportunities that map and align
+
+806
+01:03:34,640 --> 01:03:35,599
+with that pillars.
+
+807
+01:03:35,599 --> 01:03:43,119
+I mean just the fact as a director having this as a pillar is a first step and the second thing is to make it part of the routine.
+
+808
+01:03:43,119 --> 01:03:47,119
+I mean the routine of your and the rituals of your company.
+
+809
+01:03:47,119 --> 01:03:53,839
+So here an example when I worked at Spotify we used to have something called uh squad health check.
+
+810
+01:03:53,839 --> 01:03:55,440
+Maybe you heard about that at some point.
+
+811
+01:03:55,440 --> 01:04:06,799
+I mean something about checking how how good is the team is functioning and it was happening every quarter and actually the leaders used to be extremely religious about making sure
+
+812
+01:04:06,799 --> 01:04:13,839
+that the team is actually doing it and the fact that they show that they care made it happen every quarter.
+
+813
+01:04:13,839 --> 01:04:24,640
+So the leaders actually if they are b bought in as you said and they are convinced they have a a big role to play into putting that in place by giving it a chance and
+
+814
+01:04:24,640 --> 01:04:33,520
+again when I worked at Spotify we had something amazing called hack days I mean I've seen it at other company but it's never as good as at Spotify.
+
+815
+01:04:33,520 --> 01:04:44,960
+So we used to have hack days every month and we used to have hack week toward the end of the um the year and again the fact that it's happening on a regular base
+
+816
+01:04:44,960 --> 01:04:52,640
+make the thinking and the mindset completely adopted like the mindset of innovation and going completely out of box etc.
+
+817
+01:04:52,640 --> 01:05:02,559
+So now I'm advocating for the light days and I actually uh help organizations setting up the light days and I recently did this with a company
+
+818
+01:05:02,559 --> 01:05:03,760
+called Migros.
+
+819
+01:05:03,760 --> 01:05:15,280
+It's actually the largest supermarket chain in Switzerland and we had hack days or like the light days in that case where we actually of course spoke about the light and then we
+
+820
+01:05:15,280 --> 01:05:20,960
+allowed all the teams to go crazy and innovate and think about the lightful features.
+
+821
+01:05:20,960 --> 01:05:22,480
+It was very playful.
+
+822
+01:05:22,480 --> 01:05:31,920
+The team loves it and we ended the day by giving them the chance to demo and we select the best or the winning delight feature that the the company will end up
+
+823
+01:05:31,920 --> 01:05:33,039
+implementing.
+
+824
+01:05:33,039 --> 01:05:42,960
+So it's about putting it as a routine in a continuous way so that it become like part of the culture not just a topic that is brought in once in a while.
+
+825
+01:05:42,960 --> 01:05:43,680
+>> That sounds so fun.
+
+826
+01:05:43,680 --> 01:05:44,720
+on a delight day.
+
+827
+01:05:44,720 --> 01:05:49,200
+And again, when people see hear this word, it could sound like the confetti example,
+
+828
+01:05:49,200 --> 01:05:55,760
+but it's you keep coming back to this point, delight is not just that surface level low type of delight.
+
+829
+01:05:55,760 --> 01:06:01,599
+There's deep delight that solves anticipated needs, exceed expectations, or removes friction.
+
+830
+01:06:01,599 --> 01:06:08,240
+So deep delight is is is still a type of delight, but it's actually one that also happens to solve a functional need.
+
+831
+01:06:08,240 --> 01:06:08,880
+Okay.
+
+832
+01:06:08,880 --> 01:06:09,599
+It's interesting.
+
+833
+01:06:09,599 --> 01:06:13,039
+So as you talk, I've been thinking about like what are the fastest growing companies in the world?
+
+834
+01:06:13,039 --> 01:06:21,599
+the top product teams and it's interesting how delight they're so delightful and I don't think it's a coincidence.
+
+835
+01:06:21,599 --> 01:06:33,520
+So I think about cursor maybe the fastest maybe the second fastest growing company behind chat pt like speaking of exceeding expectations you just like click tab and it codes for you
+
+836
+01:06:33,520 --> 01:06:42,559
+anticipating needs that's like the ultimate example of anticipating your need it's writing your code for you okay delight amazing uh lovable like it's
+
+837
+01:06:42,559 --> 01:06:52,240
+called lovable >> amazing example chatbt if you can imagine exceeding expectations and blowing your mind incredible example of delight.
+
+838
+01:06:52,240 --> 01:07:00,319
+I think about linear as we're talking just like they are winning in in a very crowded space because they invested in making it much more delightful.
+
+839
+01:07:00,319 --> 01:07:06,640
+Uh I think about if you know the music AI app where it just like creates magical music for you just telling it what you want to hear.
+
+840
+01:07:06,640 --> 01:07:16,799
+So there's so much here of just like yes there's a lot of power to making especially in a crowded market in AI especially just make it's almost like table stakes now it needs to blow your
+
+841
+01:07:16,799 --> 01:07:18,480
+mind for anyone to pay attention.
+
+842
+01:07:18,480 --> 01:07:23,839
+We just need to be careful because the surprise has an effect that vanish over time.
+
+843
+01:07:23,839 --> 01:07:26,880
+So there's this thing that is called habituation effect.
+
+844
+01:07:26,880 --> 01:07:34,160
+How can you make sure that you're not just surprising your user once when they use it the first time and then they become like normal use case.
+
+845
+01:07:34,160 --> 01:07:46,000
+So you mentioned like a couple of example of course I do agree they are all delightful but one of the element that that is part of the delight checklist is are you or do you at least have a plan to maintain that
+
+846
+01:07:46,000 --> 01:07:57,119
+delight or that surprise over time like for example when we introduced background replace in Google meet we first introduced like a blur then we added static image then we allowed for
+
+847
+01:07:57,119 --> 01:08:07,839
+video background then we added like a immersive background where it's like a moving slowly as if it's very real and now they even have like AI generated
+
+848
+01:08:07,839 --> 01:08:08,480
+background.
+
+849
+01:08:08,480 --> 01:08:15,359
+So it's about creating that surprise over time in a complete continuous way to avoid that habituation effect.
+
+850
+01:08:15,359 --> 01:08:16,239
+>> Such a good point.
+
+851
+01:08:16,239 --> 01:08:26,960
+Makes me think about Snapchat who their only like strategy was just keep out innovating everybody else with new lenses and maps and all like that was their whole thing.
+
+852
+01:08:26,960 --> 01:08:28,319
+Just do the newest thing.
+
+853
+01:08:28,319 --> 01:08:29,040
+Keep doing it.
+
+854
+01:08:29,040 --> 01:08:31,279
+Keep doing new stuff to keep people excited.
+
+855
+01:08:31,279 --> 01:08:33,839
+Uh such a good example of hard to do.
+
+856
+01:08:33,839 --> 01:08:34,239
+Okay.
+
+857
+01:08:34,239 --> 01:08:40,799
+Uh I know you also have a story about Apple reactions uh as an example of good or bad delight.
+
+858
+01:08:40,799 --> 01:08:41,839
+Can you share that?
+
+859
+01:08:41,839 --> 01:08:49,759
+>> It's actually a feature that very much known nowadays, but maybe people don't know exactly what's wrong or what's what's good or what's bad about it.
+
+860
+01:08:49,759 --> 01:09:00,719
+So it actually happened a couple of years ago now that actually Apple introduced updates uh into their operating systems and that update of course enabled the
+
+861
+01:09:00,719 --> 01:09:06,799
+fact that if you uh use gesture you initiate like fireworks or whatever any type of reaction.
+
+862
+01:09:06,799 --> 01:09:18,159
+>> I hate that Yes, it's just your reaction and it happens actually during the time where I worked at Google meet and the reason why I remember it very well is because we had a lot of complaint from our meet users saying hey
+
+863
+01:09:18,159 --> 01:09:30,000
+what this feature is about I want to disable it and we're like you need to disable it on your like operating system if you're using a Mac and why it's not like inclusive by the way I mean this is
+
+864
+01:09:30,000 --> 01:09:39,279
+one of the example I use for the non inclusiveness of of a delightful feature because it did happen and that's a real story by the way of being a person
+
+865
+01:09:39,279 --> 01:09:49,679
+having uh a call with a therapist having a hurt finger and he was trying to show his finger to the therapist and what happened is like fireworks happening.
+
+866
+01:09:49,679 --> 01:10:01,520
+I mean what an appropriate time for fireworks and of course bad press I mean you want to avoid this bad press and and that's why like delight is great but do it in a conscious way and make sure that
+
+867
+01:10:01,520 --> 01:10:04,960
+it's adapted for all situation and all all cases.
+
+868
+01:10:04,960 --> 01:10:05,280
+>> Wow.
+
+869
+01:10:05,280 --> 01:10:07,679
+such a good example of delay gone wrong.
+
+870
+01:10:07,679 --> 01:10:14,800
+I I had so many podcast episodes where the guest was like thumbs up and then just this thing shows up and I did stuff like what is going on here?
+
+871
+01:10:14,800 --> 01:10:17,199
+What is like no one told you it was turned on?
+
+872
+01:10:17,199 --> 01:10:18,480
+How do you even turn this thing off?
+
+873
+01:10:18,480 --> 01:10:19,520
+Oh my god.
+
+874
+01:10:19,520 --> 01:10:21,760
+Uh that's such a good example.
+
+875
+01:10:21,760 --> 01:10:24,080
+Okay, I've covered everything I was wanting to cover.
+
+876
+01:10:24,080 --> 01:10:25,360
+Is there anything that we haven't covered?
+
+877
+01:10:25,360 --> 01:10:30,640
+Anything else you wanted to share that uh you want to share before we get to our very exciting lightning round?
+
+878
+01:10:30,640 --> 01:10:41,520
+We spoke about some of the benefits of delight like driving loyalties and retentions and word of mouth and that's very much clear but there is one overlooked benefit that
+
+879
+01:10:41,520 --> 01:10:49,199
+even myself I was not aware of and I want to share that with you because it's an interesting conversation I had a couple of months ago.
+
+880
+01:10:49,199 --> 01:10:55,600
+I was actually giving at the light workshop in one of the largest health tech uh company here in France.
+
+881
+01:10:55,600 --> 01:10:56,400
+It's called Dr.
+
+882
+01:10:56,400 --> 01:10:58,159
+Lip and we had an amazing day.
+
+883
+01:10:58,159 --> 01:11:10,080
+We spoke about a lot of ideas of the light but then toward the end of the day I was approached by the product director called Suzanne and she actually told me something that stick I think it's worth mentioning
+
+884
+01:11:10,080 --> 01:11:10,719
+here.
+
+885
+01:11:10,719 --> 01:11:18,400
+She actually said, "Uh, Narin, you've spoken about a lot of benefits of the light, but there's one benefit I did not mention at all."
+
+886
+01:11:18,400 --> 01:11:20,080
+And I was curious like, "What is it?"
+
+887
+01:11:20,080 --> 01:11:27,600
+And she said, "Like, I've seen all the PMs today super motivated, excited like crazy."
+
+888
+01:11:27,600 --> 01:11:32,640
+The fact that PMs are working on the light brings them very high level of motivation.
+
+889
+01:11:32,640 --> 01:11:36,640
+We're not talking about user motivation here, but like the employee motivation.
+
+890
+01:11:36,640 --> 01:11:37,840
+And it's so real.
+
+891
+01:11:37,840 --> 01:11:42,560
+I mean, of course, we have some time to work on upgrades and migrations and nonf fun stuff,
+
+892
+01:11:42,560 --> 01:11:48,400
+but when you work on delightful features, PMs are super excited because they see a reaction of users,
+
+893
+01:11:48,400 --> 01:11:52,800
+they see the love of the users, and they get even more happier and more productive.
+
+894
+01:11:52,800 --> 01:11:58,000
+And for me, that's actually a real benefit that of course I was not mentioning during the day,
+
+895
+01:11:58,000 --> 01:12:08,239
+but I think it's something that all leaders can take into consideration because we want to make light work life more exciting and more more energizing.
+
+896
+01:12:08,239 --> 01:12:09,600
+>> That's a that's a really good point.
+
+897
+01:12:09,600 --> 01:12:18,640
+Like ideally, you find a thing that you're very excited to build because it's so fun and drives functional needs and is just delightful,
+
+898
+01:12:18,640 --> 01:12:21,280
+makes people joyous and uh surprised.
+
+899
+01:12:21,280 --> 01:12:24,400
+Uh, that's the ven diagram we're shooting for.
+
+900
+01:12:24,400 --> 01:12:25,040
+Amazing.
+
+901
+01:12:25,040 --> 01:12:25,760
+Okay.
+
+902
+01:12:25,760 --> 01:12:28,480
+Well, with that, we've reached our very exciting lightning round.
+
+903
+01:12:28,480 --> 01:12:29,679
+I've got five questions for you.
+
+904
+01:12:29,679 --> 01:12:30,719
+Are you ready?
+
+905
+01:12:30,719 --> 01:12:32,239
+>> Oh, I'm ready.
+
+906
+01:12:32,239 --> 01:12:36,560
+>> What are two or three books that you find yourself recommending most to other people?
+
+907
+01:12:36,560 --> 01:12:40,640
+>> Uh, the first book is called Factfulness.
+
+908
+01:12:40,640 --> 01:12:41,679
+Maybe you heard about it.
+
+909
+01:12:41,679 --> 01:12:46,880
+It comes from Ola Rosling and Hans Rosling and Anna Rosling.
+
+910
+01:12:46,880 --> 01:12:48,560
+The three are Swedish.
+
+911
+01:12:48,560 --> 01:12:51,760
+It got it's been a bestseller for years.
+
+912
+01:12:51,760 --> 01:12:54,640
+It's still a bestseller by the way, New York Times.
+
+913
+01:12:54,640 --> 01:12:55,760
+And here's the story.
+
+914
+01:12:55,760 --> 01:12:58,080
+Actually, I have a story about this book.
+
+915
+01:12:58,080 --> 01:13:00,320
+Uh I was living in Sweden back then.
+
+916
+01:13:00,320 --> 01:13:03,280
+I've been living in Sweden for about seven years, by the way.
+
+917
+01:13:03,280 --> 01:13:09,040
+And it was 2019, and I had two kids, three and two at the time.
+
+918
+01:13:09,040 --> 01:13:14,239
+And as every Scandinavian, we've been dreaming about having a cargo bike.
+
+919
+01:13:14,239 --> 01:13:17,600
+So, uh we started looking for a cargo bike.
+
+920
+01:13:17,600 --> 01:13:23,600
+And it happens that we found a cargo bike parked it exactly on our building yard.
+
+921
+01:13:23,600 --> 01:13:28,480
+And so it had a for sale uh like a sign.
+
+922
+01:13:28,480 --> 01:13:29,920
+So we contacted the owner.
+
+923
+01:13:29,920 --> 01:13:37,600
+It ended up to be the bike belongs to Oola Wrestling which is actually the author of Factfulness.
+
+924
+01:13:37,600 --> 01:13:48,640
+And so uh by the way uh Ula used to be the data PM at Google because he sold his uh statistic software to Google at that time.
+
+925
+01:13:48,640 --> 01:13:58,400
+And the interesting part is that actually it's a book that is about how can we drive our thinking more using facts than using bias.
+
+926
+01:13:58,400 --> 01:14:02,960
+And this book was recommended by Barack Obama and Bill Gates and everyone.
+
+927
+01:14:02,960 --> 01:14:11,120
+So the fun story is that I get to read this book before anyone else because it was released that day and I met that guy who's awesome.
+
+928
+01:14:11,120 --> 01:14:12,880
+So that's my first book.
+
+929
+01:14:12,880 --> 01:14:14,800
+>> Wow, great story.
+
+930
+01:14:14,800 --> 01:14:18,239
+>> And the second book is actually very close to my heart.
+
+931
+01:14:18,239 --> 01:14:23,920
+It's called uh strong product community by Petra who's been on the show by the way.
+
+932
+01:14:23,920 --> 01:14:29,360
+And the reason why I recommend this book is because actually I started my career in research.
+
+933
+01:14:29,360 --> 01:14:39,600
+I've been a researcher after having my PhD for a long time and when I moved from research to product I noticed that there is a huge difference in the fact how researcher contribute to
+
+934
+01:14:39,600 --> 01:14:51,280
+community versus product contributing to community and I quickly really quickly felt lonely when I became a PM because as a researcher you go to conferences
+
+935
+01:14:51,280 --> 01:15:00,080
+you review each other's work and when you become a PM you have nobody really to review work or to collaborate closely with.
+
+936
+01:15:00,080 --> 01:15:09,520
+So for me it was really essential from day one to become a speaker or to contribute to some community whether inside the company or outside the company.
+
+937
+01:15:09,520 --> 01:15:17,600
+For example at Google I was initiating something like PM speaker Siri where we invited people from the outside to share their insights and perspective.
+
+938
+01:15:17,600 --> 01:15:26,560
+So with that I actually get uh we invited Petra at that time and then we she got uh uh she interviewed me and the interview was featured in the book.
+
+939
+01:15:26,560 --> 01:15:33,760
+So if someone want to stay sane and contribute and learn in a product community, that's a great book I recommend.
+
+940
+01:15:33,760 --> 01:15:34,400
+>> Awesome.
+
+941
+01:15:34,400 --> 01:15:35,040
+Okay.
+
+942
+01:15:35,040 --> 01:15:38,480
+Is there a favorite movie or TV show you recently watched that you really enjoyed?
+
+943
+01:15:38,480 --> 01:15:41,440
+>> I have a TV show and a movie.
+
+944
+01:15:41,440 --> 01:15:43,040
+Which one do you want to listen to?
+
+945
+01:15:43,040 --> 01:15:44,719
+>> Let's do TV show first.
+
+946
+01:15:44,719 --> 01:15:45,679
+>> TV show.
+
+947
+01:15:45,679 --> 01:15:46,000
+Okay.
+
+948
+01:15:46,000 --> 01:15:50,320
+So the TV show has nothing to do with business or product.
+
+949
+01:15:50,320 --> 01:15:56,159
+It's called It's the equivalent of um the American Greatest Baking, by the way.
+
+950
+01:15:56,159 --> 01:15:59,679
+It's called leoric and here is why I love it.
+
+951
+01:15:59,679 --> 01:16:01,199
+I mean of course I love baking.
+
+952
+01:16:01,199 --> 01:16:02,719
+We did not spoke about that.
+
+953
+01:16:02,719 --> 01:16:06,960
+But the reason why I love it is because the candidates are not professionals.
+
+954
+01:16:06,960 --> 01:16:09,600
+Of course they are good bakers but they are not professional.
+
+955
+01:16:09,600 --> 01:16:13,760
+Meaning that they make good cakes but they fail a lot of cakes as well.
+
+956
+01:16:13,760 --> 01:16:16,800
+And this failure is the most exciting part of the show.
+
+957
+01:16:16,800 --> 01:16:18,400
+It makes it relatable.
+
+958
+01:16:18,400 --> 01:16:20,800
+I mean I succeed as many as I fail.
+
+959
+01:16:20,800 --> 01:16:24,880
+And the fact that I can see these failures allow the show to be relatable.
+
+960
+01:16:24,880 --> 01:16:36,080
+And that's why for example I don't like shows like Top Chef or whatever where the candidate are super super uh professionals and by the way I mean I also participate a lot into cooking
+
+961
+01:16:36,080 --> 01:16:45,679
+classes and I love doing that and I realize that most of the chef during those classes talk about emotion and they talk about we need to feel when we
+
+962
+01:16:45,679 --> 01:16:52,800
+taste and when we eat and maybe or just maybe that's why I'm talking about the light and emotional today with you.
+
+963
+01:16:52,800 --> 01:16:53,120
+>> Okay.
+
+964
+01:16:53,120 --> 01:16:54,560
+Uh you said there's a movie too.
+
+965
+01:16:54,560 --> 01:16:55,520
+Let's share that.
+
+966
+01:16:55,520 --> 01:16:57,920
+>> The movie I have in mind is called Antu Shab.
+
+967
+01:16:57,920 --> 01:17:02,960
+Again, it's a French movie, but it was so successful that there have been a remake.
+
+968
+01:17:02,960 --> 01:17:06,480
+The remake is called uh The Upside.
+
+969
+01:17:06,480 --> 01:17:08,159
+Maybe you've watched this movie.
+
+970
+01:17:08,159 --> 01:17:11,520
+So, this is based on a real story.
+
+971
+01:17:11,520 --> 01:17:19,120
+And the reason why I love this movie, I mean, it's my favorite by far is because you go through all emotion throughout the entire movie.
+
+972
+01:17:19,120 --> 01:17:26,880
+I mean you go through joy to sorrow sadness all in the same uh period and you even lost for complete
+
+973
+01:17:26,880 --> 01:17:37,440
+and appropriate uh situations and uh there's one moment one particular element that made this movie very unforgettable and very special.
+
+974
+01:17:37,440 --> 01:17:39,120
+It's actually the soundtrack.
+
+975
+01:17:39,120 --> 01:17:47,280
+The soundtrack is something that is so special in the movie and goes so well with the movie that makes it completely unforgettable.
+
+976
+01:17:47,280 --> 01:17:55,120
+And so when I watched the remake, I was completely disappointed because that soundtrack was not part of the movie.
+
+977
+01:17:55,120 --> 01:18:00,080
+So I was completely disappointed as I said and that's exactly what I call the auntie delight.
+
+978
+01:18:00,080 --> 01:18:05,440
+So I was auntie delighted at that time under exceeded expectations.
+
+979
+01:18:05,440 --> 01:18:06,000
+>> Yes.
+
+980
+01:18:06,000 --> 01:18:06,960
+>> Okay.
+
+981
+01:18:06,960 --> 01:18:10,719
+Is there a favorite product you recently discovered you really love?
+
+982
+01:18:10,719 --> 01:18:12,480
+>> So we spoke about Revolute.
+
+983
+01:18:12,480 --> 01:18:18,560
+It turns out to be one of my favorite product these days because uh it's actually surprising me almost every time.
+
+984
+01:18:18,560 --> 01:18:27,360
+I mean this is one of these rare products that every time I use it there's a new surprise and they are really applying this concept of continuous surprise.
+
+985
+01:18:27,360 --> 01:18:31,360
+It's not just like one off and then they they they move to something else.
+
+986
+01:18:31,360 --> 01:18:36,159
+So I really like the fact that they are continuously um surprising users.
+
+987
+01:18:36,159 --> 01:18:42,880
+But there's another one actually that I might probably share here where when I was interviewed for Google,
+
+988
+01:18:42,880 --> 01:18:44,239
+they asked me this question.
+
+989
+01:18:44,239 --> 01:18:45,600
+What's your favorite product?
+
+990
+01:18:45,600 --> 01:18:48,719
+And that was back like six or seven years ago.
+
+991
+01:18:48,719 --> 01:18:53,040
+And I I actually answered with a complete non- tech products.
+
+992
+01:18:53,040 --> 01:18:57,840
+I actually said at that time the yo-yo stroller.
+
+993
+01:18:57,840 --> 01:19:07,760
+So the yo-yo stroller, it was a surprise, yes, for the interviewer at the time, but it turns out to be the most successful interview I had because the yo-yo stroller has something special
+
+994
+01:19:07,760 --> 01:19:12,159
+that really served one of my very much need at the time.
+
+995
+01:19:12,159 --> 01:19:14,239
+It's a stroller that is completely affordable.
+
+996
+01:19:14,239 --> 01:19:18,640
+There was no one at that time that you can travel with it in a plane.
+
+997
+01:19:18,640 --> 01:19:26,880
+And at that time one of my biggest stress and fear was taking playing with small kids and how am I going to manage those in lines and in
+
+998
+01:19:26,880 --> 01:19:36,560
+cues and that stroller served exactly my emotional needs by allowing me to travel and take the stroller with me on the
+
+999
+01:19:36,560 --> 01:19:37,199
+plane.
+
+1000
+01:19:37,199 --> 01:19:41,520
+So just sharing this story because that was my answer for my Google interview.
+
+1001
+01:19:41,520 --> 01:19:45,520
+>> That's a really good example of an emotional need of just like uh confidence.
+
+1002
+01:19:45,520 --> 01:19:48,719
+This can work on a plane when I'm all stressed out with my baby.
+
+1003
+01:19:48,719 --> 01:19:52,000
+Uh, I went with up a baby stroller for whatever it's worth.
+
+1004
+01:19:52,000 --> 01:19:53,760
+It doesn't fold as well.
+
+1005
+01:19:53,760 --> 01:19:55,040
+Okay, two more questions.
+
+1006
+01:19:55,040 --> 01:20:01,840
+Is there a life motto that you find yourself coming back to sharing with friends and family and worker in life?
+
+1007
+01:20:01,840 --> 01:20:11,600
+>> It might sound cliche, but my life motto would be shoot for the star or even higher if you can.
+
+1008
+01:20:11,600 --> 01:20:15,920
+And I've been really following this almost for my entire career.
+
+1009
+01:20:15,920 --> 01:20:20,560
+Uh I told you that I started my career in research and during my PhD.
+
+1010
+01:20:20,560 --> 01:20:24,560
+I realized that most of my degree are coming from France.
+
+1011
+01:20:24,560 --> 01:20:28,159
+So I really had to introduce some international element into it.
+
+1012
+01:20:28,159 --> 01:20:38,880
+So I wanted to apply for an exchange program and uh when I applied do you know who did I apply first like who did I went straight with?
+
+1013
+01:20:38,880 --> 01:20:43,679
+M >> Stanford like I applied for Stanford like let's see how it goes.
+
+1014
+01:20:43,679 --> 01:20:48,320
+I mean the guy answered and he said yes but you have to pay a lot of fees.
+
+1015
+01:20:48,320 --> 01:20:49,760
+I mean that's the policy.
+
+1016
+01:20:49,760 --> 01:20:50,080
+Okay.
+
+1017
+01:20:50,080 --> 01:20:52,640
+I didn't really manage to get that sponsored.
+
+1018
+01:20:52,640 --> 01:20:55,920
+So I didn't also want to reduce the prestige of the university.
+
+1019
+01:20:55,920 --> 01:20:59,040
+So I applied for UCLA and it did work.
+
+1020
+01:20:59,040 --> 01:21:05,280
+I mean for me that was something that I really wanted from the beginning have something extra or or not.
+
+1021
+01:21:05,280 --> 01:21:07,199
+And I kept doing that throughout my career.
+
+1022
+01:21:07,199 --> 01:21:11,280
+Like I wanted to work for the best tech company and I work for Google.
+
+1023
+01:21:11,280 --> 01:21:14,320
+I wanted to be featured in the best podcast and I'm with you.
+
+1024
+01:21:14,320 --> 01:21:14,800
+>> Nailed it.
+
+1025
+01:21:14,800 --> 01:21:22,960
+>> We just have one goal to go which is to be on one of the best stage and I'm working on being on the TEDex.
+
+1026
+01:21:22,960 --> 01:21:23,679
+Why not?
+
+1027
+01:21:23,679 --> 01:21:24,320
+>> There we go.
+
+1028
+01:21:24,320 --> 01:21:27,199
+No, you need TED, not TED X.
+
+1029
+01:21:27,199 --> 01:21:29,199
+That's the goal.
+
+1030
+01:21:29,199 --> 01:21:30,080
+>> The original.
+
+1031
+01:21:30,080 --> 01:21:30,560
+Okay.
+
+1032
+01:21:30,560 --> 01:21:31,520
+I love this.
+
+1033
+01:21:31,520 --> 01:21:31,840
+Okay.
+
+1034
+01:21:31,840 --> 01:21:33,360
+Final question.
+
+1035
+01:21:33,360 --> 01:21:35,600
+Say someone's coming to Paris where you're based.
+
+1036
+01:21:35,600 --> 01:21:37,920
+Where do they get the best croissant?
+
+1037
+01:21:37,920 --> 01:21:42,239
+>> Actually, the best croissants are not necessarily in the very fancy bakeries.
+
+1038
+01:21:42,239 --> 01:21:48,159
+They are in those small bakeries that you find on the corners and you have to smell the butter.
+
+1039
+01:21:48,159 --> 01:21:49,760
+That's >> smell the butter.
+
+1040
+01:21:49,760 --> 01:21:50,159
+>> Yes.
+
+1041
+01:21:50,159 --> 01:21:51,199
+From the outside.
+
+1042
+01:21:51,199 --> 01:21:54,159
+If you don't get it, it's not a good sign.
+
+1043
+01:21:54,159 --> 01:21:54,480
+>> Wow.
+
+1044
+01:21:54,480 --> 01:21:54,960
+So, okay.
+
+1045
+01:21:54,960 --> 01:22:01,760
+So, if you can't smell butter standing outside of this bakery, it's not where you want to get your croissant.
+
+1046
+01:22:01,760 --> 01:22:02,320
+Wow.
+
+1047
+01:22:02,320 --> 01:22:03,520
+I've never heard that tip.
+
+1048
+01:22:03,520 --> 01:22:07,520
+Okay, I need to know what butter smells like, but I think I can I think I get it.
+
+1049
+01:22:07,520 --> 01:22:10,080
+>> It smell like caramel with hazelnuts.
+
+1050
+01:22:10,080 --> 01:22:11,440
+I mean, it smells really good.
+
+1051
+01:22:11,440 --> 01:22:15,120
+You need to train your uh your ability to taste that.
+
+1052
+01:22:15,120 --> 01:22:16,000
+>> I love this answer.
+
+1053
+01:22:16,000 --> 01:22:19,360
+Isn't like this is like teach a person to fish kind of answer.
+
+1054
+01:22:19,360 --> 01:22:22,080
+Like you can find them if you just go smell.
+
+1055
+01:22:22,080 --> 01:22:23,760
+Uh Nine, this was awesome.
+
+1056
+01:22:23,760 --> 01:22:25,520
+It's everything I hoped it would be.
+
+1057
+01:22:25,520 --> 01:22:27,600
+Uh we covered a ton of ground.
+
+1058
+01:22:27,600 --> 01:22:32,880
+Let's tell people where to find your book called Product Delight.
+
+1059
+01:22:32,880 --> 01:22:36,960
+The uh how to make your products stand out with emotional connection.
+
+1060
+01:22:36,960 --> 01:22:38,560
+Uh where do they find it?
+
+1061
+01:22:38,560 --> 01:22:42,400
+Where do people find you and how can listeners be useful to you?
+
+1062
+01:22:42,400 --> 01:22:48,600
+>> Yeah, so uh people can reach out on my website.
+
+1063
+01:22:49,040 --> 01:22:50,400
+Uh they can of course reach out.
+
+1064
+01:22:50,400 --> 01:22:51,520
+There is a contact form.
+
+1065
+01:22:51,520 --> 01:22:54,719
+I'm happy to get their inquiry or question or whatever.
+
+1066
+01:22:54,719 --> 01:22:56,480
+They can also learn more about the book.
+
+1067
+01:22:56,480 --> 01:23:00,480
+uh there is a website for it like a productbook.com.
+
+1068
+01:23:00,480 --> 01:23:11,600
+I also started recently a newsletter where it's called the light tips where I actually share stories delightful stories that I find useful for people to get inspired with and something actually
+
+1069
+01:23:11,600 --> 01:23:21,440
+very recently started happening like as soon as I started talking about the light people started spontaneously to share their delightful stories like either personal or professional and I
+
+1070
+01:23:21,440 --> 01:23:22,080
+love those.
+
+1071
+01:23:22,080 --> 01:23:31,360
+So if anyone listening want to share the life story, I would love to listen to those and just want to end with the fact that the life is a movement.
+
+1072
+01:23:31,360 --> 01:23:35,920
+I mean when I started writing this book uh a friend author told me the following.
+
+1073
+01:23:35,920 --> 01:23:42,480
+He actually said when we're writing about something is either writing about a known problem,
+
+1074
+01:23:42,480 --> 01:23:48,080
+we're giving a solution for a known problem or we are giving a solution for an unknown problem.
+
+1075
+01:23:48,080 --> 01:23:49,760
+And the second is harder.
+
+1076
+01:23:49,760 --> 01:23:51,199
+And I chose the second.
+
+1077
+01:23:51,199 --> 01:23:54,800
+I mean, I'm going with evangelizing, but the light is an important thing.
+
+1078
+01:23:54,800 --> 01:23:58,639
+That's what's going to allow your product to win and stand out.
+
+1079
+01:23:58,639 --> 01:24:04,560
+I know it's harder, but I'm pretty sure that that's what will help us create a more delightful word.
+
+1080
+01:24:04,560 --> 01:24:14,320
+So, if they want to have and implement a light culture into their organization, they can reach out and that's exactly what I love doing with organizations.
+
+1081
+01:24:14,320 --> 01:24:14,800
+>> Amazing.
+
+1082
+01:24:14,800 --> 01:24:18,560
+What a cool place to be, just people sharing all these delightful examples with you all day.
+
+1083
+01:24:18,560 --> 01:24:19,520
+What a cool job.
+
+1084
+01:24:19,520 --> 01:24:22,320
+Uh, Nasarine, thank you so much for being here.
+
+1085
+01:24:22,320 --> 01:24:23,600
+>> Thank you, Lenny.
+
+1086
+01:24:23,600 --> 01:24:25,679
+>> Bye, everyone.
+
+1087
+01:24:25,679 --> 01:24:26,960
+Thank you so much for listening.
+
+1088
+01:24:26,960 --> 01:24:31,360
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+1089
+01:24:31,360 --> 01:24:33,520
+or your favorite podcast app.
+
+1090
+01:24:33,520 --> 01:24:39,760
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1091
+01:24:39,760 --> 01:24:45,199
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1092
+01:24:45,199 --> 01:24:49,000
+See you in the next episode.

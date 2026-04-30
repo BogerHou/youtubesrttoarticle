@@ -1,0 +1,4641 @@
+1
+00:00:00,080 --> 00:00:04,560
+I'm curious what it is that PMs 
+do that annoy engineers most.
+
+2
+00:00:04,560 --> 00:00:09,360
+Hoarding credit. PMs, they tend to be 
+the front-facing person for initiative.  
+
+3
+00:00:09,360 --> 00:00:13,560
+Engineers sometimes think that they don't 
+get the credit for their work because the PM  
+
+4
+00:00:13,560 --> 00:00:18,160
+takes all the glory and all the credit for the 
+project that they really worked very hard on.
+
+5
+00:00:18,160 --> 00:00:21,000
+I find the best PMs are the 
+ones that talk the least and  
+
+6
+00:00:21,000 --> 00:00:23,040
+encourage other people to do the presenting-
+
+7
+00:00:23,040 --> 00:00:26,000
+The next thing that engineers really 
+get annoyed about with PMs, when they  
+
+8
+00:00:26,000 --> 00:00:30,400
+just don't understand the details and act like 
+they don't matter, it just shows a real lack of  
+
+9
+00:00:30,400 --> 00:00:34,520
+empathy for the work that engineers are doing 
+and I think it really can be very off-putting.
+
+10
+00:00:34,520 --> 00:00:36,760
+Is there any insight you can 
+give about what people may  
+
+11
+00:00:36,760 --> 00:00:40,200
+be missed about the motivation of 
+engineers, what gets them excited?
+
+12
+00:00:40,200 --> 00:00:45,160
+A lot of people assume that engineers 
+just write code and don't underestimate  
+
+13
+00:00:45,160 --> 00:00:50,080
+the ability for your engineers to want 
+to understand the business problem,  
+
+14
+00:00:50,080 --> 00:00:54,120
+want to understand the customer problem. I think 
+the product managers that have done the best,  
+
+15
+00:00:54,120 --> 00:00:59,920
+they're not threatened by 
+other people having ideas.
+
+16
+00:01:00,840 --> 00:01:06,280
+Today, my guest is Camille Fournier. Camille is 
+one of the most respected technology executives  
+
+17
+00:01:06,280 --> 00:01:11,000
+in tech and the author of the Manager's Path, 
+which many considered the definitive guide for  
+
+18
+00:01:11,000 --> 00:01:16,200
+navigating your career and moving into management. 
+Over the course of her career, she was CTO of Rent  
+
+19
+00:01:16,200 --> 00:01:21,440
+The Runway, VP of technology at Goldman Sachs, 
+global head of engineering and architecture at JP  
+
+20
+00:01:21,440 --> 00:01:26,680
+Morgan Chase and head of platform engineering at 
+Two Sigma. She's also releasing a new book later  
+
+21
+00:01:26,680 --> 00:01:31,560
+this year called Platform Engineering, A Guide 
+for Technical Product and People Leaders, which  
+
+22
+00:01:31,560 --> 00:01:36,040
+you can actually pre-order today and we get into 
+this topic in the latter half of the conversation. 
+
+23
+00:01:36,040 --> 00:01:41,360
+We also dig into what PMs do that most annoys 
+engineers and how to stop doing these things.  
+
+24
+00:01:41,360 --> 00:01:46,680
+Why major rewrites are often a trap. Why you 
+may want to be doing fewer one-on-ones. What  
+
+25
+00:01:46,680 --> 00:01:51,320
+most surprises people when they become a manager 
+and some really useful heuristics for how long  
+
+26
+00:01:51,320 --> 00:01:55,480
+you should stay in IC before you make the 
+leap into management and tons more. This  
+
+27
+00:01:55,480 --> 00:02:00,040
+episode covers a lot of ground and we'll help 
+you think about management. platform teams,  
+
+28
+00:02:00,040 --> 00:02:05,160
+team culture and the PM and end relationship 
+in a whole new way. If you enjoy this podcast,  
+
+29
+00:02:05,160 --> 00:02:08,920
+don't forget to subscribe and follow it in 
+your favorite podcasting app or YouTube. 
+
+30
+00:02:08,920 --> 00:02:13,760
+It's the best way to avoid missing future episodes 
+and helps the podcast tremendously. With that,  
+
+31
+00:02:13,760 --> 00:02:23,200
+I bring you Camille Fournier. Camille, thank you 
+so much for being here, welcome to the podcast.
+
+32
+00:02:23,200 --> 00:02:24,960
+Thank you so much for having me.
+
+33
+00:02:24,960 --> 00:02:28,520
+It's my pleasure. I want to start by 
+asking you a question that is on the  
+
+34
+00:02:28,520 --> 00:02:32,720
+minds of a lot of product managers is 
+how to be less annoying as a product  
+
+35
+00:02:32,720 --> 00:02:37,320
+manager. I know you worked with a lot of 
+engineers over time. I'm curious what it  
+
+36
+00:02:37,320 --> 00:02:42,800
+is that PMs do that annoy engineers 
+most and how can PMs stop doing that?
+
+37
+00:02:42,800 --> 00:02:49,160
+I would say there are a few things that PMs 
+do that annoy engineers and to be clear,  
+
+38
+00:02:49,160 --> 00:02:54,160
+I am sure that engineers annoy PMs, just 
+as much. So I've realized this is a two-way  
+
+39
+00:02:54,160 --> 00:02:58,280
+street. So I think there's some things that 
+are really easy to fix and some things that  
+
+40
+00:02:58,280 --> 00:03:05,920
+are maybe a little bit harder. So the easy things 
+to fix are hoarding credit. Sometimes I think PMs  
+
+41
+00:03:05,920 --> 00:03:12,240
+because they tend to be the front-facing person 
+for initiatives, they're talking to customers,  
+
+42
+00:03:12,240 --> 00:03:17,320
+they're talking to the executive team, whatever. 
+Engineers sometimes think that they don't get the  
+
+43
+00:03:17,320 --> 00:03:22,720
+credit for their work because the PM takes all 
+the glory and all the credit for the project  
+
+44
+00:03:22,720 --> 00:03:31,920
+that they really worked very hard on, right?
+So making every effort to be credit sharing and  
+
+45
+00:03:31,920 --> 00:03:38,320
+inclusive of the engineering team and giving them 
+the opportunity to speak about their contributions  
+
+46
+00:03:38,320 --> 00:03:45,840
+when it makes sense. I think those are all things 
+that PMs can do to avoid that kind of ... What I  
+
+47
+00:03:45,840 --> 00:03:50,240
+consider a pretty easy annoyance, just like don't 
+pour it all the credit. This is not just you,  
+
+48
+00:03:50,240 --> 00:03:54,400
+right? There's a lot of work has to go into that. 
+I think that sort of dovetails into the next thing  
+
+49
+00:03:54,400 --> 00:03:58,560
+that engineers really get annoyed about with 
+PMs when they just don't understand the details  
+
+50
+00:03:58,560 --> 00:04:03,320
+and act like they don't matter and I think this 
+is just a little bit of a cultural difference. 
+
+51
+00:04:05,040 --> 00:04:09,760
+I mean, even managers, just normal managers, 
+people like me who are looking across really  
+
+52
+00:04:09,760 --> 00:04:17,280
+broad areas or you have to be kind of big picture 
+focused, and you forget that engineering done  
+
+53
+00:04:17,280 --> 00:04:23,560
+successfully really is all about the details 
+and you don't necessarily have to understand  
+
+54
+00:04:23,560 --> 00:04:27,760
+all of those details, but when you act like they 
+don't matter and you don't care about them and  
+
+55
+00:04:27,760 --> 00:04:31,360
+it's just like, I don't care, just like tell me 
+when you can get this done or why is it going  
+
+56
+00:04:31,360 --> 00:04:36,720
+to take so long? My god, this just seems like 
+such a little thing. It just shows a real lack  
+
+57
+00:04:36,720 --> 00:04:42,280
+of empathy for the work that engineers are doing 
+and I think it really can be very off-putting. 
+
+58
+00:04:42,280 --> 00:04:45,000
+Even though I will totally agree that 
+sometimes you're going to get details  
+
+59
+00:04:45,000 --> 00:04:50,800
+that don't really matter and you just have to 
+be a little bit patient in those circumstances.
+
+60
+00:04:50,800 --> 00:04:56,720
+Today's episode is brought to you by DX. If you're 
+an engineering leader or on a platform team,  
+
+61
+00:04:56,720 --> 00:05:02,200
+at some point your CEO will inevitably ask you for 
+productivity metrics, but measuring engineering  
+
+62
+00:05:02,200 --> 00:05:07,720
+organizations is hard and we can all agree that 
+simple metrics like the number of PRs or commits  
+
+63
+00:05:07,720 --> 00:05:13,560
+doesn't tell the full story. That's where DX comes 
+in. DX is an engineering intelligence solution  
+
+64
+00:05:13,560 --> 00:05:18,320
+designed by leading researchers, including 
+those behind the DORA and SPACE frameworks.  
+
+65
+00:05:18,320 --> 00:05:23,160
+It combines quantitative data from developer 
+tools with qualitative feedback from developers  
+
+66
+00:05:23,160 --> 00:05:27,960
+to give you a complete view of engineering 
+productivity and the factors affecting it. 
+
+67
+00:05:27,960 --> 00:05:32,520
+Learn why some of the world's most 
+iconic companies like Etsy, Dropbox,  
+
+68
+00:05:32,520 --> 00:05:43,320
+Twilio, Vercel and Webflow rely on DX. Visit 
+DX's website at getdx.com/lenny. Let me tell  
+
+69
+00:05:43,320 --> 00:05:48,520
+you about CommandBar. If you're like me and most 
+users I've built product for, you probably find  
+
+70
+00:05:48,520 --> 00:05:53,960
+those little in-product pop-ups really annoying. 
+Want to take a tour? Check out this new feature,  
+
+71
+00:05:53,960 --> 00:05:57,760
+and these pop-ups are becoming less and less 
+effective since most users don't read what they  
+
+72
+00:05:57,760 --> 00:06:02,080
+say. They just want to close them as soon as 
+possible, but every product builder knows that  
+
+73
+00:06:02,080 --> 00:06:06,600
+users need help to learn the ins and outs of your 
+product. We use so many products every day and we  
+
+74
+00:06:06,600 --> 00:06:11,800
+can't possibly know the ins and outs of everyone.
+CommandBar is an AI-powered toolkit for product,  
+
+75
+00:06:11,800 --> 00:06:15,880
+growth, marketing and customer teams to 
+help users get the most out of your product,  
+
+76
+00:06:15,880 --> 00:06:20,800
+without annoying them. They use AI to get closer 
+to user intent, so they have search and chat  
+
+77
+00:06:20,800 --> 00:06:24,760
+products that let users describe what they're 
+trying to do in their own words and then see  
+
+78
+00:06:24,760 --> 00:06:30,320
+personalized results like customer walkthroughs 
+or actions, and they do pop-ups too, but their  
+
+79
+00:06:30,320 --> 00:06:36,120
+nudges are based on in-product behaviors like 
+confusion or intent classification, which makes  
+
+80
+00:06:36,120 --> 00:06:41,840
+them much less annoying and much more impactful. 
+This works for web apps, mobile apps and websites. 
+
+81
+00:06:41,840 --> 00:06:47,200
+And they work with industry-leading companies like 
+Gusto, Freshworks, HashiCorp and LaunchDarkly.  
+
+82
+00:06:47,200 --> 00:06:53,080
+Over 15 million end-users have interacted with 
+CommandBar. To try out CommandBar, you can sign  
+
+83
+00:06:53,080 --> 00:07:00,320
+up at commandbar.com/lenny and you can unlock 
+an extra 1000 AI responses per month for any  
+
+84
+00:07:00,320 --> 00:07:10,040
+plan. That's commandbar.com/lenny. By the way, 
+CommandBar just changed their name to Command AI.
+
+85
+00:07:10,040 --> 00:07:16,760
+The third is playing telephone. Anybody 
+in a manager role can fall victim to this,  
+
+86
+00:07:16,760 --> 00:07:23,160
+but I think PMs especially can be very annoying. 
+So if you are being asked questions that you  
+
+87
+00:07:23,160 --> 00:07:27,520
+cannot answer because you just don't know or 
+because that's something that involves a level  
+
+88
+00:07:27,520 --> 00:07:33,520
+of technical detail that only the engineers have 
+that you just don't have, and you put yourself  
+
+89
+00:07:33,520 --> 00:07:38,880
+in this in-between position where people ask you 
+questions, you turn around, you ask the engineers  
+
+90
+00:07:38,880 --> 00:07:44,200
+questions, you take whatever they say, especially 
+when you don't really understand it, which happens  
+
+91
+00:07:44,200 --> 00:07:51,120
+sometimes, right? Go back to the original asker 
+and sort of get in this middle-person scenario. 
+
+92
+00:07:51,120 --> 00:07:56,440
+I think that is very annoying and frankly, 
+it's a waste of time for everyone. This is  
+
+93
+00:07:56,440 --> 00:08:02,680
+something that managers of all stripes do, but 
+PMs definitely do it and that drives engineers,  
+
+94
+00:08:02,680 --> 00:08:07,080
+particularly senior engineers on projects, it's 
+crazy. And then, the last one that I wanted to  
+
+95
+00:08:07,080 --> 00:08:12,920
+put on this list is just when sometimes it feels 
+like product managers want to hoard all the ideas  
+
+96
+00:08:12,920 --> 00:08:18,560
+for themselves, right? They want to be the ones 
+that come up with every single sort of product  
+
+97
+00:08:18,560 --> 00:08:25,240
+idea and every single detail. What I see happen 
+in those cases is that I see engineers start  
+
+98
+00:08:25,240 --> 00:08:30,800
+to over-engineer things, because engineers are 
+like, well, I need to take control of something. 
+
+99
+00:08:30,800 --> 00:08:35,440
+I want to have some creative outlet, so I'm going 
+to use my engineering skills as my creative outlet  
+
+100
+00:08:35,440 --> 00:08:39,560
+and I'm going to spend a lot of time obsessing 
+over the right framework or the right this,  
+
+101
+00:08:39,560 --> 00:08:44,400
+that or the other. That may actually not matter 
+that much with products delivery, but when you  
+
+102
+00:08:44,400 --> 00:08:52,600
+take the people that are part of the project team 
+out of the creative loop entirely, they're going  
+
+103
+00:08:52,600 --> 00:08:56,120
+to find that creative outlet somewhere else 
+and it's actually kind of bad for the product.
+
+104
+00:08:56,120 --> 00:09:00,560
+That's really interesting, the last one. So you're 
+saying if you keep engineers from having a voice  
+
+105
+00:09:00,560 --> 00:09:05,840
+in what you're building and prioritizing, 
+that's what encourages engineers to rethink,  
+
+106
+00:09:05,840 --> 00:09:09,920
+let's just rebuild this thing, let's use a 
+new framework, let's rewrite this system.
+
+107
+00:09:09,920 --> 00:09:16,720
+Yeah, I mean that's my ... that happens 
+without you doing that, sometimes.
+
+108
+00:09:16,720 --> 00:09:16,840
+Yeah.
+
+109
+00:09:16,840 --> 00:09:23,120
+I do think ... I think when I see it worst and 
+I can basically always predict what I'm going  
+
+110
+00:09:23,120 --> 00:09:28,840
+to see, a lot of that kind of engineers 
+building stuff, finding creative outlets  
+
+111
+00:09:28,840 --> 00:09:33,720
+and kind of building stuff, maybe they shouldn't 
+be. I'm going to find that in places where they  
+
+112
+00:09:33,720 --> 00:09:40,760
+are so quashed their creativity for the actual 
+business or product that they're building and  
+
+113
+00:09:40,760 --> 00:09:47,120
+their voice in that is so ignored that they 
+don't have any outlets in that space and so,  
+
+114
+00:09:47,120 --> 00:09:49,680
+they are going to use the space that they 
+have an outlet in, the place where they  
+
+115
+00:09:49,680 --> 00:09:54,520
+have some control and that's usually the 
+technology choices and the details there.
+
+116
+00:09:54,520 --> 00:09:58,560
+That's fascinating. I want to actually 
+dig further into that around rewrites.  
+
+117
+00:09:58,560 --> 00:10:01,720
+You have a really interesting take 
+on that, but before we get there,  
+
+118
+00:10:01,720 --> 00:10:05,640
+let me spend a little time on some of these. 
+These are awesome. So on this theme of not  
+
+119
+00:10:05,640 --> 00:10:11,800
+involving engineers in ideation and coming 
+up with what you're actually building,  
+
+120
+00:10:11,800 --> 00:10:17,080
+what have you seen just very tactically, is 
+there anything you've seen that PM do super well?
+
+121
+00:10:17,080 --> 00:10:22,520
+I think the product managers that have done the 
+best, they're not threatened by other people  
+
+122
+00:10:22,520 --> 00:10:29,320
+having ideas. They're not threatened by the 
+engineering team being full of smart people  
+
+123
+00:10:30,120 --> 00:10:34,640
+because they realize that yeah, some of the 
+engineers may have good ideas, but they still  
+
+124
+00:10:34,640 --> 00:10:39,440
+don't really know how to do the product job. Just 
+my experience is there are plenty of engineers who  
+
+125
+00:10:39,440 --> 00:10:43,840
+actually think they can be product managers and 
+they don't really understand all of the elements  
+
+126
+00:10:43,840 --> 00:10:50,920
+of the product job that they would need to be 
+successful. And when product managers take the  
+
+127
+00:10:50,920 --> 00:10:58,360
+time to build those relationships, well, make sure 
+that people do feel like they can both share their  
+
+128
+00:10:58,360 --> 00:11:02,800
+ideas, but also that they start to appreciate 
+what the job of this product person actually is. 
+
+129
+00:11:02,800 --> 00:11:07,200
+And what they're really bringing to the 
+table in terms of really how do we measure  
+
+130
+00:11:07,200 --> 00:11:11,880
+this input? How do we really understand the 
+customers, how do we really think through  
+
+131
+00:11:13,800 --> 00:11:19,280
+the details of what's going to make this 
+successful from a business or a customer  
+
+132
+00:11:19,280 --> 00:11:26,880
+perspective? I do think that that creates just 
+a much better interaction pattern and then,  
+
+133
+00:11:26,880 --> 00:11:33,680
+engineers can feel good about sharing ideas and 
+understanding that many of them won't go anywhere,  
+
+134
+00:11:33,680 --> 00:11:37,800
+but there's somebody that's actually going to 
+listen and take the time to care about them.
+
+135
+00:11:37,800 --> 00:11:41,960
+Coming back to some of the things that you said 
+annoy engineers of PMs, this idea of playing  
+
+136
+00:11:41,960 --> 00:11:45,440
+the middle person, sounds like the solution 
+clearly is there. Just connect the engineer  
+
+137
+00:11:45,440 --> 00:11:49,360
+to the other engineer or your engineer to the 
+PM that's trying to figure this out, right?
+
+138
+00:11:49,360 --> 00:11:56,200
+That one is not always easy because again, 
+you have this tension of a lot of the job,  
+
+139
+00:11:56,200 --> 00:12:03,760
+of any management role is being in meetings 
+and filtering stuff so that people who are in  
+
+140
+00:12:03,760 --> 00:12:08,000
+focus ... individual contributor mode can focus 
+and get things done and not spend half of their  
+
+141
+00:12:08,000 --> 00:12:14,280
+weekend in meetings. You've just got to be very 
+careful about knowing when you're crossing that  
+
+142
+00:12:14,280 --> 00:12:20,160
+line and when you're crossing it too often. And 
+if you're having to often say, "Let me get back to  
+
+143
+00:12:20,160 --> 00:12:23,640
+you, let me get back to you, I don't know, let me 
+get back to you." Maybe the person you're talking  
+
+144
+00:12:23,640 --> 00:12:28,480
+to is asking the wrong level of questions of you.
+Maybe you need to connect them to the engineers  
+
+145
+00:12:28,480 --> 00:12:33,480
+directly, but just being aware that that 
+shouldn't be a default behavior. That  
+
+146
+00:12:33,480 --> 00:12:37,640
+will happen occasionally, but it shouldn't 
+be a thing that happens a lot because if  
+
+147
+00:12:37,640 --> 00:12:41,680
+it's happening a lot, then you're likely 
+missing something, you're likely losing  
+
+148
+00:12:41,680 --> 00:12:47,080
+something in that telephone game translation 
+and that's going to cause problems over time.
+
+149
+00:12:47,080 --> 00:12:50,240
+Awesome. So basically, if you're just 
+finding your middle person too much,  
+
+150
+00:12:50,240 --> 00:12:53,680
+then it may be time to connect people 
+directly. And I know the reason PMs  
+
+151
+00:12:53,680 --> 00:12:58,120
+often are afraid of this is the engineer may 
+agree to something that they think is a bad  
+
+152
+00:12:58,120 --> 00:13:04,520
+idea for their team or may not understand all the 
+ramifications on the product or just obviously,  
+
+153
+00:13:04,520 --> 00:13:07,400
+just spend their time in meetings 
+and not be building anything.
+
+154
+00:13:07,400 --> 00:13:13,920
+Yeah, yeah, and sometimes you mean 
+you do it in a group meeting. I feel  
+
+155
+00:13:13,920 --> 00:13:18,640
+like Slack and other chat type things 
+actually make it a lot easier to see,  
+
+156
+00:13:18,640 --> 00:13:22,360
+have the right people in a group in a 
+thing, but again, that's distracting.  
+
+157
+00:13:23,160 --> 00:13:27,480
+So there's not an easy solution to that one, 
+just I think it's important to be aware of it.
+
+158
+00:13:27,480 --> 00:13:30,720
+Yeah, that's a really good point. And 
+then, in terms of hoarding credit,  
+
+159
+00:13:30,720 --> 00:13:34,040
+is there any tactical thing you've 
+seen PMs do really well here is it,  
+
+160
+00:13:34,040 --> 00:13:37,880
+just every time they're announcing the product, 
+"Hey, these engineers were involved or-"
+
+161
+00:13:37,880 --> 00:13:44,600
+It's more than just saying thank you to all 
+these people, but it's actually sometimes  
+
+162
+00:13:44,600 --> 00:13:49,720
+stepping back and letting other people speak, 
+especially if it's something that's a really,  
+
+163
+00:13:49,720 --> 00:13:57,000
+really big technical lift. I don't think there's a 
+super easy fix to that. I think it is just really  
+
+164
+00:13:57,000 --> 00:14:01,760
+being mindful that that can be very much a sore 
+point for engineers when they just feel like,  
+
+165
+00:14:01,760 --> 00:14:07,200
+"This is my work, I'm not getting any credit for 
+it, and this person is hogging all the glory."
+
+166
+00:14:07,200 --> 00:14:12,520
+I love that. Yeah, I find the best PMs are the 
+ones that talk the least and encourage other  
+
+167
+00:14:12,520 --> 00:14:16,760
+people to do the presenting and announcing. 
+And so, I think that's a really good reminder  
+
+168
+00:14:16,760 --> 00:14:23,720
+is let your engineers do that. Okay, amazing. 
+So we talked a little bit about this idea of  
+
+169
+00:14:23,720 --> 00:14:28,480
+rewriting and how engineers sometimes just want 
+to rewrite the system and I think a lot of PMs  
+
+170
+00:14:28,480 --> 00:14:32,200
+do too. A lot of times you're building your 
+features on a thing that someone that doesn't  
+
+171
+00:14:32,200 --> 00:14:36,240
+even work at the company and were built five, 
+10 years ago, and there's always this sense of,  
+
+172
+00:14:36,240 --> 00:14:39,440
+"Okay, maybe we should just rewrite this 
+thing everything will move so much faster." 
+
+173
+00:14:39,440 --> 00:14:43,400
+Do you have a really interesting take that 
+I think a lot of PMs will love to hear,  
+
+174
+00:14:43,400 --> 00:14:47,840
+which is that rewrites are often a big trap 
+and often don't end up being what you think  
+
+175
+00:14:47,840 --> 00:14:50,960
+they might be? Can you just talk about 
+your experience and perspective on this?
+
+176
+00:14:50,960 --> 00:14:58,320
+Yeah, so I mean I have personally overseen a 
+number of, if not quite rewrites, re-architectures  
+
+177
+00:14:58,320 --> 00:15:04,720
+and major system evolutions. So I absolutely do 
+think they are sometimes a thing that needs to  
+
+178
+00:15:04,720 --> 00:15:16,120
+happen, but I also, have seen so many instances 
+of cases where the engineers have convinced  
+
+179
+00:15:16,120 --> 00:15:23,120
+themselves that the only solution to the woes that 
+they're experiencing with the system, it's hard to  
+
+180
+00:15:23,120 --> 00:15:28,960
+support, it's hard to change. Nobody wants to work 
+on it, because it's this old crappy technology,  
+
+181
+00:15:29,640 --> 00:15:36,080
+is that they just have to go over to the 
+side, build the new thing that will replace  
+
+182
+00:15:36,080 --> 00:15:41,520
+this old system and that is going to 
+sort of free them from their misery. 
+
+183
+00:15:41,520 --> 00:15:48,000
+And I think projects where you acknowledge that 
+you do need to do an uplift, but you make a very  
+
+184
+00:15:48,000 --> 00:15:53,760
+thoughtful staged plan as to how you're going 
+to do that, and you really think through, okay,  
+
+185
+00:15:53,760 --> 00:15:57,800
+we don't need to touch all of this stuff, 
+but we're going to take the recommendation  
+
+186
+00:15:57,800 --> 00:16:03,400
+system, it really needs to be uplifted and 
+that's a well-contained, you know, API and so  
+
+187
+00:16:03,400 --> 00:16:11,400
+we can start to fix that without having to change 
+the whole whatever web framework, right? So I do  
+
+188
+00:16:11,400 --> 00:16:17,880
+think there are ways to do these evolutions, but 
+people really underestimate. They underestimate  
+
+189
+00:16:17,880 --> 00:16:24,600
+the time to migrate stuff from the old system 
+to the new system, is a huge, huge problem. 
+
+190
+00:16:24,600 --> 00:16:29,800
+Particularly when you're talking about systems 
+where you have sort of external people using the  
+
+191
+00:16:29,800 --> 00:16:36,680
+system in some way, whether it's web UIs or APIs. 
+You think, "Oh, we kind of know what's going on,  
+
+192
+00:16:36,680 --> 00:16:42,080
+so it's not going to be that big a deal." 
+Engineers notoriously, notoriously, notoriously,  
+
+193
+00:16:42,080 --> 00:16:48,920
+massively underestimate the migration time 
+for old system to new system and that causes  
+
+194
+00:16:48,920 --> 00:16:52,680
+a lot of problems. By the way, you still have to 
+support the old system while you're working on  
+
+195
+00:16:52,680 --> 00:16:58,960
+the new system. So I doubt many of the PMs in the 
+audience are ever happy when they hear, we need  
+
+196
+00:16:58,960 --> 00:17:06,200
+to go away for six months, a year, two years to 
+build this new thing and we just can't really  
+
+197
+00:17:06,200 --> 00:17:11,840
+add any features to the system in the interim.
+That's infuriating, I'm sure, and frankly that's  
+
+198
+00:17:11,840 --> 00:17:17,880
+a problem and I don't know that that should be 
+an acceptable answer in many cases. There may  
+
+199
+00:17:17,880 --> 00:17:24,320
+occasionally again be a case where that is what 
+has to happen, but I think most of the time you  
+
+200
+00:17:24,320 --> 00:17:27,760
+can't really afford to just say we're going to go 
+away and we're not going to touch the system for a  
+
+201
+00:17:27,760 --> 00:17:32,120
+long time and we're going to build something new 
+over here. So many things about why that doesn't  
+
+202
+00:17:32,120 --> 00:17:39,240
+make any sense. So this is a little bit of field 
+of the blog post that you're referring to. So,  
+
+203
+00:17:39,240 --> 00:17:44,760
+if you've got a system that doesn't really need 
+feature enhancement or development because it's  
+
+204
+00:17:44,760 --> 00:17:51,160
+just sort of fine and the users are using it.
+And it's just annoying to the engineers,  
+
+205
+00:17:51,160 --> 00:17:55,160
+why in the world would you invest so much 
+money in writing a new version of it? There's  
+
+206
+00:17:55,160 --> 00:18:00,320
+a little bit of a cognitive dissonance that 
+sometimes happens if you need to do new stuff  
+
+207
+00:18:00,320 --> 00:18:05,360
+and the old system literally is not ... it's not 
+possible to do the new stuff that you need to do,  
+
+208
+00:18:05,360 --> 00:18:08,960
+you need to figure out a path to get to 
+a sustainable system or you can continue  
+
+209
+00:18:08,960 --> 00:18:15,720
+to add and evolve. You should be investing 
+and so there does need to be an investment,  
+
+210
+00:18:15,720 --> 00:18:22,120
+but you have to ask yourself, if I could go away 
+and not touch this and not do anything to it for a  
+
+211
+00:18:22,120 --> 00:18:28,240
+long period of time without it really harming my 
+business, is it worthwhile to change it at all? 
+
+212
+00:18:28,240 --> 00:18:35,320
+Does it matter, and there's some questions there. 
+I also think that when people try to do rewrites,  
+
+213
+00:18:35,320 --> 00:18:40,680
+particularly again if it's something that 
+you're really trying to just move to a new  
+
+214
+00:18:40,680 --> 00:18:45,200
+language for example or sort of modernize in 
+a certain way, [inaudible 00:18:45] a lot of  
+
+215
+00:18:45,200 --> 00:18:48,960
+times people really underestimate what the old 
+system does and how well they know what the old  
+
+216
+00:18:48,960 --> 00:18:55,920
+system does. There's so much logic buried in 
+legacy systems, it tends to be undocumented,  
+
+217
+00:18:55,920 --> 00:18:58,880
+it tends to be weird. You haven't 
+thought through all the business rules,  
+
+218
+00:18:58,880 --> 00:19:08,800
+you haven't thought through the data formatting 
+and I think again, it's much, much harder to  
+
+219
+00:19:08,800 --> 00:19:14,520
+replicate all the important things from the old 
+system to the new system than people expect. 
+
+220
+00:19:14,520 --> 00:19:21,240
+So there's more than that, but I do think 
+sometimes you need to evolve systems and my  
+
+221
+00:19:21,240 --> 00:19:27,360
+advice would be when you're struggling making an 
+evolution plan, take pieces potentially of the old  
+
+222
+00:19:27,360 --> 00:19:33,920
+system, uplift them, make them more scalable, make 
+them easier to work with, clean up the tech debt,  
+
+223
+00:19:33,920 --> 00:19:37,840
+but trying to say we're going to just go away. 
+We're going to rewrite, we're going to build  
+
+224
+00:19:37,840 --> 00:19:42,640
+something brand new and it's going to solve 
+all our problems, it just very rarely works.
+
+225
+00:19:42,640 --> 00:19:46,760
+I think a lot of PMs will be like, "Yes, thank 
+you so much for saying this, because I think  
+
+226
+00:19:46,760 --> 00:19:51,960
+that's also always a big struggle between the 
+ENG team and the PM team." So just to summarize  
+
+227
+00:19:51,960 --> 00:19:55,240
+what I think a lot of people miss or what you're 
+saying a lot of people miss when they're thinking  
+
+228
+00:19:55,240 --> 00:20:00,000
+about let's rewrite this thing, is the migration 
+to the new system, migrating customers, users,  
+
+229
+00:20:00,000 --> 00:20:04,240
+data to the new thing is going to take a lot 
+longer than you expect. You underestimate  
+
+230
+00:20:04,240 --> 00:20:10,040
+knowing what it actually does and you're going 
+to miss features and you can introduce new bugs.  
+
+231
+00:20:10,040 --> 00:20:15,160
+This actually is very similar to what I've 
+seen with redesigning a whole product flow. 
+
+232
+00:20:15,160 --> 00:20:19,000
+There's always this sense of let's just 
+rethink this onboarding flow from scratch  
+
+233
+00:20:19,000 --> 00:20:25,320
+or let's rebuild this part of the product and 
+always it ends up being a negative experiment  
+
+234
+00:20:25,320 --> 00:20:29,320
+result. It always ends up being less good and 
+then, you have to spend all this time clawing  
+
+235
+00:20:29,320 --> 00:20:33,000
+back to get to where you were and also, you 
+forget the stuff that would ... the features  
+
+236
+00:20:33,000 --> 00:20:35,480
+that you had and you're like, "Oh, shit, I 
+forgot about that feature, I forgot about that  
+
+237
+00:20:35,480 --> 00:20:41,440
+feature." So it's interesting, there's a very 
+similar situation in the product side. Okay,  
+
+238
+00:20:41,440 --> 00:20:45,680
+amazing. I'm going to go to a slightly different 
+topic, which is around engineering leadership. 
+
+239
+00:20:45,680 --> 00:20:48,840
+So I know you've written a lot about 
+engineering leadership, you spent a lot  
+
+240
+00:20:48,840 --> 00:20:53,000
+of times with engineering leaders, so I have a 
+few questions here. One is that I know that one  
+
+241
+00:20:53,000 --> 00:20:58,760
+of the things that haunts engineering leaders 
+most is finding the balance between staying  
+
+242
+00:20:58,760 --> 00:21:03,440
+technical and their technical expertise, and 
+their leadership expertise and basically finding  
+
+243
+00:21:03,440 --> 00:21:08,640
+the right altitude of how high ... where to be 
+in the org and also how in the details to be,  
+
+244
+00:21:08,640 --> 00:21:13,320
+and also staying technical enough to be relevant. 
+What have you learned in your own experience  
+
+245
+00:21:13,320 --> 00:21:18,080
+of finding that balance and how do you advise 
+engineering leaders as they struggle with this?
+
+246
+00:21:18,080 --> 00:21:27,080
+Yeah, so one piece of advice I give everybody is 
+don't stop being a hands-on technical until you  
+
+247
+00:21:27,080 --> 00:21:34,320
+feel like it's in your bones. You feel like 
+you've got mastery that you could ... if you  
+
+248
+00:21:34,320 --> 00:21:38,640
+know a second language fluently or 
+if you played an instrument really,  
+
+249
+00:21:38,640 --> 00:21:43,160
+really seriously for a long time or maybe a 
+sport really, really seriously for a long time,  
+
+250
+00:21:43,160 --> 00:21:48,040
+you'll be familiar with the ... I haven't done 
+that in a long time, but if I was to pick it up,  
+
+251
+00:21:48,040 --> 00:21:52,360
+it would be rusty, but I would get there pretty 
+quickly, right? Maybe physically, I wouldn't be  
+
+252
+00:21:52,360 --> 00:21:58,200
+as strong as I was or whatever, but I would 
+get there. You can do that with writing code. 
+
+253
+00:21:58,200 --> 00:22:02,960
+You can do that with technical skills if you 
+do it for long enough, I think you can develop  
+
+254
+00:22:02,960 --> 00:22:08,920
+sort of a baseline mastery, where you're 
+not going to be as fast and a lot of the  
+
+255
+00:22:08,920 --> 00:22:12,520
+challenges of being technical is actually in 
+all the tooling and all the tooling evolution,  
+
+256
+00:22:12,520 --> 00:22:15,800
+but you're not going to be necessarily 
+as fast as people who have been doing it,  
+
+257
+00:22:15,800 --> 00:22:20,240
+but you won't be completely clueless and I 
+think that all the things you learn getting  
+
+258
+00:22:20,240 --> 00:22:29,120
+to that really comfortable mastery of some part 
+of hands-on tech will stay with you and will help  
+
+259
+00:22:29,120 --> 00:22:35,800
+you just maintain a level of confidence in your 
+own technical know-how and maintain a level of  
+
+260
+00:22:35,800 --> 00:22:41,120
+empathy for what it means to be a good engineer.
+And I think just make you a lot less anxious about  
+
+261
+00:22:41,120 --> 00:22:46,120
+being hands-off, even though I think everybody 
+who makes that transition for a year or two,  
+
+262
+00:22:46,120 --> 00:22:50,520
+especially if you're really have to be hands-off 
+or you just don't have time to write code at all,  
+
+263
+00:22:50,520 --> 00:22:54,920
+you are going to be anxious for a while 
+no matter what. The things to then think  
+
+264
+00:22:54,920 --> 00:23:02,160
+about from that point is, being technical is 
+also just about knowing what's going on and  
+
+265
+00:23:02,160 --> 00:23:09,760
+paying attention and being able to ask ... what 
+people care about with technical leaders in my  
+
+266
+00:23:09,760 --> 00:23:14,320
+experience is they want people who actually seem 
+like they sort of understand what you're doing  
+
+267
+00:23:14,320 --> 00:23:20,840
+and can ask good questions and help guide you 
+to better decisions without actually being the  
+
+268
+00:23:20,840 --> 00:23:24,920
+one who's like, "Oh no, you need to use 
+this library instead of that library." 
+
+269
+00:23:25,520 --> 00:23:30,080
+It's actually sort of annoying when somebody 
+that's very senior and hands-off tries to tell  
+
+270
+00:23:30,080 --> 00:23:33,960
+you, don't use this library, use that 
+library because I don't know about you,  
+
+271
+00:23:33,960 --> 00:23:38,760
+but I don't really believe people who have been 
+hands-off for that long when they try to tell me  
+
+272
+00:23:38,760 --> 00:23:43,360
+what to do and the thing that I'm kind of the 
+expert in right now, but I do appreciate it  
+
+273
+00:23:43,360 --> 00:23:49,200
+when I'm given more guidance around, well, have 
+you considered this? Tell me about how you're  
+
+274
+00:23:49,200 --> 00:23:55,120
+planning to handle that situation. What are the 
+major technical challenges with implementing this  
+
+275
+00:23:55,120 --> 00:24:00,880
+and that can actually spend the time to listen 
+and ask thoughtful questions on the back of that. 
+
+276
+00:24:00,880 --> 00:24:06,720
+The last thing I would say is surround 
+yourself with smart technical people,  
+
+277
+00:24:06,720 --> 00:24:14,040
+also as much as you can, and be willing to 
+listen to them, talk about tech and ask them  
+
+278
+00:24:14,040 --> 00:24:20,640
+questions about things. I feel like that's part 
+of the reason that I am able to stay technically  
+
+279
+00:24:20,640 --> 00:24:26,280
+savvy and credible amongst people who work for 
+me is not that I'm writing code because I'm not.  
+
+280
+00:24:26,280 --> 00:24:32,520
+But I am listening to a lot of very smart people 
+talk about technology a lot, down to the level  
+
+281
+00:24:32,520 --> 00:24:38,320
+of I'm trying to debug this database issue, what 
+the heck is going on? And just constantly being  
+
+282
+00:24:38,320 --> 00:24:44,080
+interested in those stories and learning from 
+them and learning what really smart engineers  
+
+283
+00:24:44,080 --> 00:24:49,440
+are thinking about and worrying about.
+The more you can build that network of  
+
+284
+00:24:49,440 --> 00:24:55,760
+people that are still hands-on and stay in 
+touch with that, I do think that helps a lot.
+
+285
+00:24:55,760 --> 00:24:58,000
+So on my last point, how are 
+you actually doing that? Is it  
+
+286
+00:24:58,000 --> 00:25:01,360
+watching ... going to conferences 
+with friends, something else?
+
+287
+00:25:01,360 --> 00:25:08,720
+Yeah, yeah. I mean, I guess for me it started 
+with going to conferences, meeting people. Now,  
+
+288
+00:25:08,720 --> 00:25:15,200
+I'm in a lot of different chat groups where 
+people are just sort of regularly communicating,  
+
+289
+00:25:15,200 --> 00:25:21,640
+staying in touch with ... staying in touch with 
+former colleagues. I will admit I'm kind of a  
+
+290
+00:25:21,640 --> 00:25:27,280
+social person and I have a big network, 
+so this may be easier said than done,  
+
+291
+00:25:27,280 --> 00:25:34,960
+but I do think being in the right group chats ... 
+I also think, I'm sure reading various tech news  
+
+292
+00:25:34,960 --> 00:25:40,360
+and tech sort of commentary and discussion 
+boards, I mean it's definitely a mixed bag  
+
+293
+00:25:40,360 --> 00:25:45,080
+of that stuff I think that like ... but there are 
+smart people. You find the smart people in there,  
+
+294
+00:25:45,080 --> 00:25:50,920
+you sort of follow what they're saying. I think 
+that's another good way to keep that perspective.
+
+295
+00:25:50,920 --> 00:25:53,640
+Is it a sign, I wonder if you're 
+not interested in that anymore that  
+
+296
+00:25:53,640 --> 00:25:57,240
+maybe you should move into something 
+else. I don't know. If you're like,  
+
+297
+00:25:57,240 --> 00:26:00,800
+don't really pay attention 
+to engineering technicalness.
+
+298
+00:26:00,800 --> 00:26:08,720
+It's hard for me to say because I'm such a 
+nerd. I really love tech. I'm in this industry,  
+
+299
+00:26:08,720 --> 00:26:14,560
+because I'm just actually genuinely 
+very interested in certain corners,  
+
+300
+00:26:14,560 --> 00:26:18,920
+not every corner of technology but certain 
+corners of technology. I want to know what  
+
+301
+00:26:18,920 --> 00:26:25,560
+the latest stuff that's happening in databases and 
+infrastructure and I find it all very interesting.  
+
+302
+00:26:25,560 --> 00:26:31,080
+I find the problems interesting. So I think that 
+makes me very successful because I just have that  
+
+303
+00:26:31,080 --> 00:26:36,600
+natural curiosity and passion and interest in it. 
+But I don't know that that's a total prerequisite.
+
+304
+00:26:36,600 --> 00:26:41,440
+Yeah, but you've been talking about ... it reminds 
+me a little bit of this guy, LevelsIO on Twitter.  
+
+305
+00:26:41,440 --> 00:26:44,760
+Have you heard of this guy? He was just on 
+Lex Friedman. Have you listened to that yet?
+
+306
+00:26:44,760 --> 00:26:48,040
+I think maybe I saw a clip of 
+it, but I haven't listened to it.
+
+307
+00:26:48,040 --> 00:26:51,800
+So I think one of the most successful indie 
+engineers where he just works on his own thing  
+
+308
+00:26:51,800 --> 00:26:55,760
+all by himself, never raises money, just 
+launch his products that make money. And  
+
+309
+00:26:55,760 --> 00:27:01,600
+a funny thing about him is he works ... all 
+stuff is in PHP and jQuery. He's just like,  
+
+310
+00:27:01,600 --> 00:27:07,240
+this works. I've always had this to do, learn 
+Node.js, learn Python. And I'm like, I'm too busy  
+
+311
+00:27:07,240 --> 00:27:11,440
+to build ... while I'm building to learn these 
+new things and he's been incredibly successful.  
+
+312
+00:27:11,440 --> 00:27:16,040
+So it touches on sometimes maybe you don't need 
+to just keep rewriting to the newest frameworks.
+
+313
+00:27:16,040 --> 00:27:20,880
+Yeah, no, I mean look, I actually ... I feel like 
+I know a lot of smart engineers who are in that  
+
+314
+00:27:20,880 --> 00:27:29,240
+category. They're like, we built amazing things 
+in PHP and relatively simple SQL and so much  
+
+315
+00:27:29,240 --> 00:27:36,840
+of tech is over-engineering things and I don't 
+totally disagree. I think the challenge is though,  
+
+316
+00:27:36,840 --> 00:27:43,040
+of course, what works as a one person show, 
+doesn't always work in a scaled organization  
+
+317
+00:27:43,040 --> 00:27:51,120
+for better or for worse, we're in different like, 
+you've got to match what makes one person really  
+
+318
+00:27:51,120 --> 00:28:01,000
+productive. Will it make 100 people, 1000 people, 
+even 10 people really productive? That's always a  
+
+319
+00:28:01,000 --> 00:28:07,320
+little hard to tell and that's why I do think you 
+should be not ... I think it's always a good idea  
+
+320
+00:28:07,320 --> 00:28:12,400
+to be keeping up with what's happening and what's 
+changing in whatever kind of side of tech you're  
+
+321
+00:28:12,400 --> 00:28:18,280
+in, but not obsessively chasing every fad.
+I think being aware of, but not necessarily  
+
+322
+00:28:18,280 --> 00:28:23,800
+chasing them, but particularly, if you're working 
+in groups, teams, larger companies, even midsize  
+
+323
+00:28:23,800 --> 00:28:30,480
+companies, there is some amount of, you're 
+balancing the tech that makes one person go fast  
+
+324
+00:28:30,480 --> 00:28:35,760
+with the tech that makes 10 or 100 people go fast 
+and those are not always exactly the same thing.
+
+325
+00:28:35,760 --> 00:28:39,840
+Just to kind follow this thread a little bit 
+and to kind of nerd snipe you a little bit,  
+
+326
+00:28:39,840 --> 00:28:44,320
+is there a platform or language or framework 
+these days that you're either very excited  
+
+327
+00:28:44,320 --> 00:28:46,600
+about that you think is helping 
+people move faster and do better  
+
+328
+00:28:46,600 --> 00:28:52,080
+work or the opposite just like this is ... 
+everyone is excited but this is not good.
+
+329
+00:28:52,080 --> 00:28:58,040
+I will say this, one example I actually 
+put in my own notes for this conversation  
+
+330
+00:28:58,920 --> 00:29:04,680
+was GraphQL. I would not tell a team to use 
+or not use GraphQL at this point because it's  
+
+331
+00:29:04,680 --> 00:29:10,240
+a bit out of my expertise zone and my level 
+of management. It's not really my job anyway,  
+
+332
+00:29:10,240 --> 00:29:19,880
+but it is one of the things that is both popular 
+and thought relatively poorly of by most of the  
+
+333
+00:29:19,880 --> 00:29:27,160
+senior people that I know. And so, I guess 
+I would say that's one where I would say if  
+
+334
+00:29:27,160 --> 00:29:35,200
+you're seriously thinking about it and you're 
+not Facebook, you may really want to make sure  
+
+335
+00:29:35,200 --> 00:29:39,720
+you know what problem you're trying to solve 
+because the impression that I have from sort  
+
+336
+00:29:39,720 --> 00:29:45,200
+of listening to people talk about it is 
+that GraphQL is kind of trying to promise  
+
+337
+00:29:45,200 --> 00:29:48,920
+front-end engineers that they don't really 
+have to collaborate with backend engineers. 
+
+338
+00:29:48,920 --> 00:29:52,280
+And they can just sort of build whatever 
+and it'll all be fine, and it just doesn't  
+
+339
+00:29:52,280 --> 00:29:56,600
+ever seem to work out that well for anybody who 
+actually does it in practice. Again, obviously,  
+
+340
+00:29:56,600 --> 00:30:00,880
+it can work out that well because Facebook 
+has made a great go of it. I'm sure there are  
+
+341
+00:30:00,880 --> 00:30:06,960
+other companies that are, but that's one where 
+it's not that new but it remains one of these  
+
+342
+00:30:06,960 --> 00:30:13,760
+things where it seems like an interesting 
+fad that maybe is burning a lot of people.
+
+343
+00:30:13,760 --> 00:30:18,120
+That's awesome. I appreciate you sharing that. I 
+don't know if this is exactly an example of this,  
+
+344
+00:30:18,120 --> 00:30:21,560
+but on that podcast levels, I forget 
+his actual name, Peter I think,  
+
+345
+00:30:21,560 --> 00:30:26,680
+shared that whenever there's a framework 
+that has a VC funded startup behind it,  
+
+346
+00:30:26,680 --> 00:30:29,960
+that's not a good sign because their 
+job now is to convince engineers to  
+
+347
+00:30:29,960 --> 00:30:34,640
+use it and then pay for it and that's not 
+necessarily going to be the best product.
+
+348
+00:30:34,640 --> 00:30:39,680
+That's true. Although I will say that some 
+of the most time-wasting frameworks have  
+
+349
+00:30:39,680 --> 00:30:44,760
+also just come out of big companies, or 
+the context of the big company that may  
+
+350
+00:30:44,760 --> 00:30:50,840
+have made that framework super useful within 
+that context doesn't translate to startup  
+
+351
+00:30:50,840 --> 00:30:56,440
+or small company or even big company that 
+doesn't have the rest of the context set,  
+
+352
+00:30:57,480 --> 00:31:05,400
+but I don't think ... He's not wrong. I also just 
+think big companies share the blame on that one.
+
+353
+00:31:05,400 --> 00:31:09,080
+I guess we should all just come back 
+to PHP and jQuery and be simple.
+
+354
+00:31:09,080 --> 00:31:10,120
+Maybe.
+
+355
+00:31:10,120 --> 00:31:14,680
+Okay, so to close out this 
+thread on engineering leaders,  
+
+356
+00:31:14,680 --> 00:31:19,880
+finding the right balance, just to summarize 
+your advice here. One is get to mastery before  
+
+357
+00:31:19,880 --> 00:31:23,200
+and is your advice here, get to this 
+point before you move into engineering.
+
+358
+00:31:23,200 --> 00:31:30,840
+Engineering management. I will say part of this is 
+also in particular, if you happen to be a woman or  
+
+359
+00:31:30,840 --> 00:31:36,600
+otherwise, underrepresented person in tech because 
+people will tend to underestimate your technical  
+
+360
+00:31:36,600 --> 00:31:42,400
+abilities just unfortunately as a get-go. 
+I also think it's particularly important to  
+
+361
+00:31:42,400 --> 00:31:48,640
+kind of develop that internal confidence in your 
+abilities before you make this sort of scary leap,  
+
+362
+00:31:48,640 --> 00:31:53,920
+which is scary for everyone of have a ... if you 
+have that mastery before you make the leap, I wish  
+
+363
+00:31:53,920 --> 00:31:58,360
+more people would do this because honestly, I do 
+think there are a lot of people who never really  
+
+364
+00:31:58,360 --> 00:32:05,440
+gained the mastery. They go into management, they 
+lose it and some of them are still perfectly good  
+
+365
+00:32:05,440 --> 00:32:09,480
+managers and look, there are good managers 
+who were never technical to begin with. 
+
+366
+00:32:10,320 --> 00:32:14,080
+I don't want to say that that's impossible. I 
+just think that if you care about being technical,  
+
+367
+00:32:14,080 --> 00:32:21,160
+if you are technical now and you want to maintain 
+that tech-savvy, don't just become a manager the  
+
+368
+00:32:21,160 --> 00:32:28,320
+first time somebody offers it to you. Make sure 
+you've really spent your good time writing code.
+
+369
+00:32:28,320 --> 00:32:30,280
+Is there a number of years 
+heuristic you think about  
+
+370
+00:32:30,280 --> 00:32:34,360
+or some way to tell you that 
+maybe you've hit that point?
+
+371
+00:32:34,360 --> 00:32:39,320
+I think this has been since disproven, 
+but it was that 10,000 hours idea of  
+
+372
+00:32:39,320 --> 00:32:44,400
+mastery at some point. For me, it was like 
+an undergraduate degree, a graduate degree,  
+
+373
+00:32:44,400 --> 00:32:51,360
+and four or five years of full-time work. So 
+maybe I might be slow. I didn't start coding  
+
+374
+00:32:51,360 --> 00:32:57,400
+a lot in middle school like people might do 
+now, but I felt like ... I took several years  
+
+375
+00:32:57,400 --> 00:33:03,880
+of hands-on work in a very intense undergraduate 
+and graduate programs for me. So I do think it's  
+
+376
+00:33:03,880 --> 00:33:10,400
+probably somewhere in the 10-year range 
+of really having spent a lot of your time  
+
+377
+00:33:10,400 --> 00:33:17,360
+over those years writing code and really 
+understanding how to be a technical expert.
+
+378
+00:33:17,360 --> 00:33:22,520
+Got it. So essentially if you're thinking 
+about moving into management as an engineer,  
+
+379
+00:33:23,120 --> 00:33:28,120
+you may want to wait until you've done it 
+for 10 years in some form, which I think  
+
+380
+00:33:28,120 --> 00:33:30,440
+is a lot longer than a lot of people 
+would've thought. And I imagine many  
+
+381
+00:33:30,440 --> 00:33:34,520
+people are not doing that. And then, in your 
+experience not doing it as well, it could be-
+
+382
+00:33:35,080 --> 00:33:37,280
+If you were programming a lot in high school and  
+
+383
+00:33:37,280 --> 00:33:41,160
+you got an undergraduate degree, 
+so let's say you've got six years-
+
+384
+00:33:41,160 --> 00:33:41,680
+I see.
+
+385
+00:33:41,680 --> 00:33:47,840
+You may only need four or five years of work, 40 
+hour a week writing code experience. I'm sure it  
+
+386
+00:33:47,840 --> 00:33:55,720
+depends on the company, but I do think when you 
+see people that are 23, they are just out very  
+
+387
+00:33:55,720 --> 00:33:59,920
+recently out of school, it's a different thing 
+if you're a founder and that's a whole different  
+
+388
+00:33:59,920 --> 00:34:05,480
+life, but if you're at a big company and somebody 
+is like you have great communication skills, why  
+
+389
+00:34:05,480 --> 00:34:09,240
+don't you start to become a manager? Often they're 
+actually pushing you to become a project manager,  
+
+390
+00:34:09,240 --> 00:34:16,840
+which is actually also the worst sort of path 
+to real leadership in my opinion. If you don't  
+
+391
+00:34:16,840 --> 00:34:21,000
+feel like you're done ... Also, if you just don't 
+feel like you're done, if you're still having fun  
+
+392
+00:34:21,000 --> 00:34:28,960
+writing code, don't rush becoming a manager, 
+writing code is awesome. Have fun, enjoy it.
+
+393
+00:34:28,960 --> 00:34:31,800
+I know exactly what you mean. So I used to 
+be an engineer, actually I was an engineer  
+
+394
+00:34:31,800 --> 00:34:36,920
+for 10 years. I definitely don't have mastery at 
+this point. I moved into product from that and I  
+
+395
+00:34:36,920 --> 00:34:40,760
+definitely so missed actually just sitting 
+there and writing code and building stuff,  
+
+396
+00:34:40,760 --> 00:34:44,280
+that was very hard to give up. 
+I imagine you still missed that.
+
+397
+00:34:45,600 --> 00:34:50,560
+I think I might've forgotten about it 
+at this point, but there is nothing  
+
+398
+00:34:50,560 --> 00:34:56,600
+as satisfying because you get the fast 
+feedback loop. It's just wonderful. Yeah.
+
+399
+00:34:56,600 --> 00:35:02,280
+This episode is brought to you by Coda. I use 
+Coda every day to coordinate my podcasting and  
+
+400
+00:35:02,280 --> 00:35:07,720
+newsletter workflows from collecting questions for 
+guests to storing all my research to managing my  
+
+401
+00:35:07,720 --> 00:35:13,480
+newsletter content calendar, Coda is my go-to 
+app and has been for years. Coda combines the  
+
+402
+00:35:13,480 --> 00:35:19,040
+best of documents, spreadsheets and apps to help 
+me get more done and Coda can help your team to  
+
+403
+00:35:19,040 --> 00:35:23,400
+stay aligned and ship faster by managing 
+your planning cycle in just one location.  
+
+404
+00:35:23,400 --> 00:35:29,080
+Set and measure OKRs with full visibility across 
+teams and stakeholders, map dependencies, create  
+
+405
+00:35:29,080 --> 00:35:34,360
+progress visualizations, and identify risk areas.
+You can also access hundreds of pressure tested  
+
+406
+00:35:34,360 --> 00:35:39,440
+templates for everything from roadmap strategy, 
+to final decision-making frameworks. See for  
+
+407
+00:35:39,440 --> 00:35:45,120
+yourself why companies like DoorDash, Figma and 
+Qualtrics run on Coda. Take advantage of this  
+
+408
+00:35:45,120 --> 00:35:52,480
+special limited-time offer just for startups. Head 
+over to coda.io/lenny and sign up to get six free  
+
+409
+00:35:52,480 --> 00:35:59,240
+months of the team plan. That's coda.io/lenny 
+to sign up and get six months of the team plan,  
+
+410
+00:36:01,240 --> 00:36:06,960
+coda.io/lenny. On the topic of moving into 
+management, you wrote maybe the definitive  
+
+411
+00:36:06,960 --> 00:36:14,600
+book on engineering manager career path, and 
+so when someone moves from IC to management,  
+
+412
+00:36:14,600 --> 00:36:18,200
+what do you find is the most surprising 
+thing to them? What do they most often not  
+
+413
+00:36:18,200 --> 00:36:24,120
+understand or are surprised by like, "Oh man, I 
+did not see this as part of my job or my life."
+
+414
+00:36:24,120 --> 00:36:29,360
+Yeah, I mean I think there's a few things. I do 
+think ... assuming that they're actually trying  
+
+415
+00:36:29,360 --> 00:36:33,000
+to do it well, I do think there are a lot of 
+people who move into management and then just  
+
+416
+00:36:33,000 --> 00:36:38,720
+don't really understand the job at all and aren't 
+even self-aware enough to know that they don't  
+
+417
+00:36:38,720 --> 00:36:43,080
+understand it, but for those who are trying to 
+do it, trying to do it well. I think a few things  
+
+418
+00:36:43,080 --> 00:36:50,560
+that tend to surprise them are the fact that you 
+really don't own your time as a manager. Your team  
+
+419
+00:36:50,560 --> 00:36:56,440
+and your management and the company owns your 
+time. More and more the more senior you become  
+
+420
+00:36:56,440 --> 00:37:03,000
+as a manager. I think individual contributors 
+often think that if they become a manager,  
+
+421
+00:37:03,000 --> 00:37:08,080
+they will still have some of the freedom that 
+they have as a senior individual contributor. 
+
+422
+00:37:08,080 --> 00:37:13,560
+But then they'll also be able to tell people 
+what to do and they'll have all this authority.  
+
+423
+00:37:13,560 --> 00:37:21,080
+And the reality is, management is much more ... 
+I'm not a huge fan of servant leadership exactly,  
+
+424
+00:37:21,080 --> 00:37:26,040
+but management really is a service job. You are 
+serving the team, you are serving the company.  
+
+425
+00:37:26,040 --> 00:37:35,240
+Your job is to help make things better and that 
+usually doesn't mean that you're making all the  
+
+426
+00:37:35,240 --> 00:37:41,680
+decisions. It usually doesn't mean that you 
+snap your fingers and people jump. Because if  
+
+427
+00:37:41,680 --> 00:37:45,880
+you try that, especially in tech, right? People 
+are just going to revolt. They're not going to  
+
+428
+00:37:45,880 --> 00:37:53,520
+listen to you. It's just too hard to have 
+... that's not the culture that we live in. 
+
+429
+00:37:53,520 --> 00:37:56,840
+And I don't think that's a good culture. I 
+don't think that command and control, I tell  
+
+430
+00:37:56,840 --> 00:38:00,360
+you what to do and you do it. It just doesn't 
+create creativity, right? It's the same thing  
+
+431
+00:38:00,360 --> 00:38:06,400
+as like PMs, trying to have all the ideas, right? 
+No, you've got all these brilliant people working  
+
+432
+00:38:06,400 --> 00:38:11,920
+for you on a team, your job as a manager is not 
+to tell them what to do in every single case.  
+
+433
+00:38:11,920 --> 00:38:18,720
+Occasionally, yes, a lot more. If you're trying 
+to convince them of what you think should happen.  
+
+434
+00:38:18,720 --> 00:38:23,920
+In some ways, you're sort of nudging, you're 
+encouraging, you're directing, you're setting  
+
+435
+00:38:23,920 --> 00:38:36,000
+guardrails for processes or behaviors or whatever, 
+but it's not this glorious fearless leader. 
+
+436
+00:38:36,000 --> 00:38:42,480
+I make all these decisions and everyone looks 
+up to me and it's awesome kind of job. It's  
+
+437
+00:38:43,680 --> 00:38:51,200
+much more grueling, much more ... you are really 
+just sort of reacting to things in the moment.  
+
+438
+00:38:51,200 --> 00:38:57,600
+And it can be very ... it's a hard job. I do 
+think particularly management when done well,  
+
+439
+00:38:57,600 --> 00:39:06,120
+when you're really trying to do it in a thoughtful 
+kind, but also, productive way is a very hard job.
+
+440
+00:39:06,120 --> 00:39:10,040
+I wonder if engineering is where most ... where 
+the highest percentage of people that move into  
+
+441
+00:39:10,040 --> 00:39:14,880
+management move back to IC. I've seen that a bunch 
+and I wonder if engineers are the most common.
+
+442
+00:39:14,880 --> 00:39:17,560
+I don't know, but-
+
+443
+00:39:18,080 --> 00:39:21,640
+After realizing what you just said 
+is true, like, "Oh, what I done-"
+
+444
+00:39:21,640 --> 00:39:25,080
+So do you not think product managers also 
+do this? Because I think product managers  
+
+445
+00:39:25,080 --> 00:39:27,360
+also actually suffer from exactly this kind of-
+
+446
+00:39:28,000 --> 00:39:28,840
+They do.
+
+447
+00:39:28,840 --> 00:39:29,520
+Maybe sometimes-
+
+448
+00:39:29,520 --> 00:39:30,320
+They do.
+
+449
+00:39:30,320 --> 00:39:30,920
+Yeah.
+
+450
+00:39:30,920 --> 00:39:36,720
+But interestingly, I was an engineering manager 
+earlier in my career. I really did not like it.  
+
+451
+00:39:36,720 --> 00:39:43,160
+I was very unhappy in that role. As a PM manager 
+though, I was very happy, it was a lot easier.
+
+452
+00:39:43,160 --> 00:39:50,600
+Yeah, because PMs are way easier to manage. PMs 
+are awesome to manage. PMs want to ... they're  
+
+453
+00:39:50,600 --> 00:39:57,800
+just so helpful. They want to do this ... 
+they're good communicators. I love managing PMs.  
+
+454
+00:39:57,800 --> 00:40:00,160
+I have to say, I have to say, just my experience,  
+
+455
+00:40:00,160 --> 00:40:07,040
+engineers are such a pain. They're 
+all primadonnas. I am an engineer,  
+
+456
+00:40:07,040 --> 00:40:12,720
+but PMs are more fun to manage my experience. 
+So actually, you have a point. You have a point.
+
+457
+00:40:12,720 --> 00:40:16,480
+But I wonder. Yeah, because I haven't seen a lot 
+of PM managers move back to IC product management.  
+
+458
+00:40:16,480 --> 00:40:23,400
+I find that once you can build product through 
+teams and not sit there all day in Excel and  
+
+459
+00:40:23,400 --> 00:40:28,720
+check in on deadlines and things, it's hard 
+to give that part up. You kind of enjoy being  
+
+460
+00:40:28,720 --> 00:40:34,040
+higher up in that chain. Yeah. Kind of along 
+these lines, something that you have a really  
+
+461
+00:40:34,040 --> 00:40:38,560
+interesting perspective on is one-on-ones. Most 
+people are like have one-on-ones with everyone,  
+
+462
+00:40:38,560 --> 00:40:42,120
+have them regularly, they're really important. You 
+actually have this contrarian take that maybe you  
+
+463
+00:40:42,120 --> 00:40:47,000
+should have less one-on-ones, especially as 
+an engineering manager, you talk about that.
+
+464
+00:40:47,000 --> 00:40:55,040
+Yeah, so to be clear, you should have one-on-ones 
+with your direct reports and your manager and  
+
+465
+00:40:55,040 --> 00:41:02,880
+you should hold those sacred ... I tend to do my 
+weekly or maybe every other week. So this is not  
+
+466
+00:41:02,880 --> 00:41:07,160
+about that set of one-on-ones. So the one-on-ones 
+of the people that you are directly managing and  
+
+467
+00:41:07,160 --> 00:41:14,960
+with your own manager. But I think there is 
+this ... I don't know if it's the remote work,  
+
+468
+00:41:15,560 --> 00:41:21,560
+sort of explosion that's happened or it's big 
+companies or what, but what I've seen and I've  
+
+469
+00:41:21,560 --> 00:41:28,080
+heard a lot of friends at many companies complain 
+about is this idea that everybody is doing  
+
+470
+00:41:28,080 --> 00:41:33,760
+one-on-ones with everyone else. So the manager is 
+doing one-on-ones with their team. They're also  
+
+471
+00:41:33,760 --> 00:41:37,400
+doing one-on-ones with all of their peers.
+They're doing one-on-ones with all of their  
+
+472
+00:41:37,400 --> 00:41:46,040
+stakeholders. They're doing one-on-ones with 
+product and design. And I think that it's just  
+
+473
+00:41:46,040 --> 00:41:52,960
+not a scalable approach, right? Linearly scale 
+with the number of relationships you have. And so,  
+
+474
+00:41:52,960 --> 00:42:00,440
+as your company grows, as the number of things 
+your team supports grow, as the team grows,  
+
+475
+00:42:00,440 --> 00:42:08,840
+you just can't scale that way. You cannot expect 
+to maintain a one-on-one approach to kind of  
+
+476
+00:42:08,840 --> 00:42:17,640
+organizational relationship building and awareness 
+passed a fairly small team/company. I also think  
+
+477
+00:42:17,640 --> 00:42:23,960
+that people think that one-on-ones will solve 
+all of their problems. And I think the reality  
+
+478
+00:42:23,960 --> 00:42:30,240
+is you have this one-on-ones with people that 
+don't really want to have a one-on-one with you. 
+
+479
+00:42:30,240 --> 00:42:36,080
+If they're not in the mind to invest in your 
+relationship, if they don't really care about  
+
+480
+00:42:36,080 --> 00:42:40,760
+what you're doing, they actually may not like 
+it that you're asking them for a one-on-one,  
+
+481
+00:42:40,760 --> 00:42:44,160
+let me show up like, because it's like, okay, 
+well I should do this to be a good corporate  
+
+482
+00:42:44,160 --> 00:42:47,320
+citizen or whatever. But they're just like, 
+why are we doing this? What is the point of  
+
+483
+00:42:47,320 --> 00:42:51,000
+this? I also think that one-on-ones, 
+particularly when you use them first  
+
+484
+00:42:51,000 --> 00:42:54,280
+of stakeholder management. So when you're 
+meeting with people that's not your team,  
+
+485
+00:42:54,280 --> 00:42:59,920
+but other stakeholders that you may need to deal 
+with, if you have a lot of stakeholders ... so  
+
+486
+00:42:59,920 --> 00:43:03,160
+I've been in a lot of positions where I have 
+a lot of internal stakeholders because I build  
+
+487
+00:43:03,160 --> 00:43:06,920
+internal platforms is a big part of what 
+my job has been in the last many years. 
+
+488
+00:43:06,920 --> 00:43:11,840
+Having all these meetings as one-on-ones with 
+those stakeholders can actually be kind of a  
+
+489
+00:43:11,840 --> 00:43:17,160
+weakness because when your stakeholders just 
+tell you in a one-on-one that they're happy or  
+
+490
+00:43:17,160 --> 00:43:23,160
+unhappy with things, your unhappy stakeholders 
+aren't hearing that. So you may have one really  
+
+491
+00:43:23,160 --> 00:43:27,200
+unhappy stakeholder and five really happy ones 
+and all you're saying to your unhappy one is,  
+
+492
+00:43:27,200 --> 00:43:29,840
+"Well, everybody else is happy and they're 
+not seeing it for themselves." And they're  
+
+493
+00:43:29,840 --> 00:43:33,280
+just having to say, "Trust me, because 
+I've had these other one-on-ones with  
+
+494
+00:43:33,280 --> 00:43:37,440
+all these people and they're saying it's 
+fine." And it just kind of sounds whiny. 
+
+495
+00:43:37,440 --> 00:43:43,560
+And so, when you're dealing with a lot of 
+stakeholders and trying to just rely on one-on-one  
+
+496
+00:43:43,560 --> 00:43:50,840
+management of that is actually not very productive 
+in a lot of ways. So in general, I guess I just  
+
+497
+00:43:50,840 --> 00:43:58,320
+think people should respect their own time more. 
+As much as I just said management, you're kind of  
+
+498
+00:43:58,320 --> 00:44:05,400
+at everyone's mercy and that is true, but also 
+respect your time. Don't just load yourself up  
+
+499
+00:44:05,400 --> 00:44:10,760
+with meetings because you're a manager and that's 
+your job. Do you really have something to talk to  
+
+500
+00:44:10,760 --> 00:44:16,920
+a person about? Do you really need to ... when 
+you have a one-on-one meeting with someone,  
+
+501
+00:44:16,920 --> 00:44:24,080
+you are asking for their time. You shouldn't 
+just be doing that kind of haphazardly for fun. 
+
+502
+00:44:24,080 --> 00:44:30,280
+This is a little bit of my personality. I'm 
+not a great company networker. Some people are  
+
+503
+00:44:30,280 --> 00:44:33,600
+really good at just like, let's go to get coffee, 
+let's go to lunch and let's hang out and build a  
+
+504
+00:44:33,600 --> 00:44:38,080
+relationship. And honestly, those people are 
+really successful in many ways that I am not.  
+
+505
+00:44:38,080 --> 00:44:43,640
+I do sort of envy that skill. I'm really good if 
+I work with you. If I work with you on something,  
+
+506
+00:44:43,640 --> 00:44:49,240
+generally speaking, people really come to respect 
+me because I'm very engaged and I'm a really good  
+
+507
+00:44:49,240 --> 00:44:54,960
+collaborator in various ways, but I'm really bad 
+at just getting to know you random one-on-one,  
+
+508
+00:44:54,960 --> 00:45:00,880
+where we don't have a purpose to the meeting.
+And that's not to say those are always bad, but  
+
+509
+00:45:00,880 --> 00:45:06,520
+I do think that a lot of people with ... that's 
+your comfort zone, if that getting to know you,  
+
+510
+00:45:06,520 --> 00:45:12,360
+random, relationship building one-on-one is your 
+comfort zone, I should probably do more of them.  
+
+511
+00:45:12,360 --> 00:45:17,280
+You should probably do fewer of them because 
+you should always be pushing yourself to get  
+
+512
+00:45:17,280 --> 00:45:21,480
+out of your comfort zone and are you really 
+getting something out of that or are you just  
+
+513
+00:45:21,480 --> 00:45:26,320
+being able to tick a checkbox that says, I had 
+eight meetings today, therefore I was productive.
+
+514
+00:45:26,320 --> 00:45:29,800
+Yeah, that super resonates. Kind 
+of pulling on this thread of how  
+
+515
+00:45:29,800 --> 00:45:32,840
+you operate and how you work something 
+that I've heard you're really known for,  
+
+516
+00:45:32,840 --> 00:45:36,720
+is creating a work culture where 
+people work really hard but also,  
+
+517
+00:45:36,720 --> 00:45:41,040
+have a really good work-life balance. And when we 
+were chatting, you, you actually told me you're  
+
+518
+00:45:41,040 --> 00:45:45,840
+not a great believer in working too hard. Can 
+you just talk about this philosophy on building  
+
+519
+00:45:45,840 --> 00:45:51,920
+a great culture where people don't work too hard 
+but also, get stuff done and don't burn out?
+
+520
+00:45:51,920 --> 00:45:58,680
+I think we all understand that if we could just 
+figure out and focus on really the most important  
+
+521
+00:45:58,680 --> 00:46:03,760
+things, we would just ... everything would 
+be better. And it's hard to figure out what  
+
+522
+00:46:03,760 --> 00:46:11,600
+the most important things are, but overwork 
+kind of lets you just sidestep doing the hard  
+
+523
+00:46:11,600 --> 00:46:16,400
+work of figuring out what's important in 
+the first place. I listened to one of your  
+
+524
+00:46:16,400 --> 00:46:20,240
+podcasts where you talked to someone who said, 
+if you've never fired someone and regretted it,  
+
+525
+00:46:20,240 --> 00:46:25,280
+you don't know where the line is, of who you 
+should and shouldn't buy. And I will admit I  
+
+526
+00:46:25,280 --> 00:46:31,400
+have mixed feelings about that, although I get 
+what you're saying. If you don't regularly reset  
+
+527
+00:46:31,400 --> 00:46:38,360
+your expectations of what you should and shouldn't 
+let slide, do you have any idea where the line  
+
+528
+00:46:38,360 --> 00:46:44,000
+of what is actually important to work on is?
+I just think ... and the thing about that is  
+
+529
+00:46:44,000 --> 00:46:47,840
+it's not like firing people where you do it once 
+or twice and you regret it and you learn pretty  
+
+530
+00:46:47,840 --> 00:46:53,840
+quickly, unfortunately. I think you actually have 
+to kind of regularly test the circumstances and  
+
+531
+00:46:54,640 --> 00:47:08,600
+challenge with, am I really getting the most out 
+of myself? Am I really producing the best value  
+
+532
+00:47:09,160 --> 00:47:16,960
+or am I just making ... swaging my internal 
+guilt about I need to work 60-hour weeks,  
+
+533
+00:47:16,960 --> 00:47:23,320
+I need to sleep in the office, I need to whatever, 
+to show that I'm a hard worker and I care. And so,  
+
+534
+00:47:23,320 --> 00:47:31,680
+I guess I do really think that people should 
+challenge themselves to be focused and get  
+
+535
+00:47:31,680 --> 00:47:37,120
+the important stuff done and always be 
+asking themselves what is important to do? 
+
+536
+00:47:37,120 --> 00:47:45,800
+And what's important to do does change over time. 
+But if you're not regularly doing an audit of your  
+
+537
+00:47:45,800 --> 00:47:51,640
+time and trying to knock things off that list 
+that don't matter, you're probably wasting a lot  
+
+538
+00:47:51,640 --> 00:47:55,720
+of time on things that don't matter and okay, you 
+don't want to work less. You love working a lot,  
+
+539
+00:47:55,720 --> 00:47:59,360
+that's fine, but you could probably just be 
+getting a lot more valuable stuff done if you  
+
+540
+00:47:59,360 --> 00:48:05,320
+would do these audits regularly, right? I also 
+think people don't delegate enough. So, if you  
+
+541
+00:48:05,320 --> 00:48:09,920
+don't delegate, then you get overwhelmed because 
+your team doesn't know how to do anything, because  
+
+542
+00:48:09,920 --> 00:48:15,560
+you haven't bothered to spend the time delegating, 
+which actually takes more time initially, usually,  
+
+543
+00:48:15,560 --> 00:48:19,440
+you have to teach people whatever it is 
+that you're trying to get them to do. 
+
+544
+00:48:19,440 --> 00:48:22,840
+Not always, sometimes they'll surprise 
+you and they're better at it than you are,  
+
+545
+00:48:22,840 --> 00:48:27,160
+but maybe not. And so, you have to teach them, 
+but then you finally ... you freed yourself up  
+
+546
+00:48:27,160 --> 00:48:39,440
+to scale. So I guess I'm just a real believer 
+that working hard and a focused way for over  
+
+547
+00:48:39,440 --> 00:48:52,160
+fewer hours I think is a more productive way to 
+approach work. And I think I have lived my career  
+
+548
+00:48:52,160 --> 00:48:57,480
+that way. I've been successful in it and I have 
+encouraged it and people who have worked for me,  
+
+549
+00:48:57,480 --> 00:49:02,120
+and I think I've seen a lot of success 
+through it, but it's not a thoughtless  
+
+550
+00:49:02,120 --> 00:49:11,400
+exercise. It's an active process of 
+constant reflection to get to that focus.
+
+551
+00:49:11,400 --> 00:49:16,800
+For someone that is listening to this and is like, 
+I want to start doing this, is there anything ...  
+
+552
+00:49:16,800 --> 00:49:22,880
+any specific practice you've found useful or 
+any specific tactic to actually do this well?
+
+553
+00:49:23,440 --> 00:49:27,480
+I think there's different approaches you 
+could take, right? One approach you could  
+
+554
+00:49:27,480 --> 00:49:33,240
+take is just like every Friday I'm going to 
+stop working at 4 PM or something, let's say,  
+
+555
+00:49:33,240 --> 00:49:40,640
+and I am not, or I'm not going to let myself 
+work this weekend. Forcing yourself to log off,  
+
+556
+00:49:40,640 --> 00:49:52,480
+forcing yourself to have boundaries and saying 
+... and then doing out of what did I get done,  
+
+557
+00:49:52,480 --> 00:50:00,720
+I think can help. That's scary. And people don't 
+like doing that, but I do think that that's one  
+
+558
+00:50:00,720 --> 00:50:05,040
+of the best ways to do it is really just saying, 
+I'm going to log off. I'm going to log off every  
+
+559
+00:50:05,040 --> 00:50:10,640
+day this week at 6 PM. I'm going to ... because 
+your brain is probably going to keep thinking. 
+
+560
+00:50:10,640 --> 00:50:13,920
+You might still be a little stressed out, you're 
+still thinking about work, you're still worrying  
+
+561
+00:50:13,920 --> 00:50:18,880
+about it, but there is a difference between 
+thinking about it and doing it, and particularly  
+
+562
+00:50:18,880 --> 00:50:23,760
+for those of you who are earlier in your careers, 
+this was actually, I think one of the reasons that  
+
+563
+00:50:23,760 --> 00:50:31,200
+I did get to mastery was because I was extremely 
+good at being focused when I was at work, when I  
+
+564
+00:50:31,200 --> 00:50:38,320
+was a hands-on programmer and really writing code 
+for many of the hours of the day. And that meant  
+
+565
+00:50:38,320 --> 00:50:45,160
+I was not ... this was pre heavy social media. 
+I was much less distracted, which I don't know  
+
+566
+00:50:45,160 --> 00:50:50,200
+if I would be able to do it in the modern era 
+as easily, but having that real heavy focus  
+
+567
+00:50:50,200 --> 00:50:54,720
+time because I was like, "I don't want to work on 
+the weekend. I don't want to stay here until 9 PM  
+
+568
+00:50:54,720 --> 00:50:58,840
+every night. I just want to get this done." And 
+it meant that I didn't do quite as many copies. 
+
+569
+00:50:58,840 --> 00:51:05,880
+I didn't go to lunch and chat with people all 
+every day, but I was very, very productive and  
+
+570
+00:51:05,880 --> 00:51:11,040
+I learned to get a lot done in a short period of 
+time. And I do think learning those skills earlier  
+
+571
+00:51:11,040 --> 00:51:16,640
+in your career and then continuing to apply them 
+throughout your career is another piece of advice.
+
+572
+00:51:16,640 --> 00:51:19,120
+In terms of staying and getting 
+focused, is there anything that  
+
+573
+00:51:19,120 --> 00:51:24,600
+helps you focus? Is it like headphones, 
+a drink? What gets you in the zone?
+
+574
+00:51:24,600 --> 00:51:31,400
+I mean, yeah, I have a lot of rituals. 
+I have my caffeination rituals.
+
+575
+00:51:31,400 --> 00:51:32,400
+Say more.
+
+576
+00:51:32,400 --> 00:51:36,440
+Well, I mean I can't drink coffee anymore because 
+my stomach got messed up at some point, but I  
+
+577
+00:51:36,440 --> 00:51:44,240
+drink tea in the morning. I drink caffeinated 
+water also. I have a Diet Coke at lunch,  
+
+578
+00:51:44,240 --> 00:51:55,920
+so I have these rituals of my caffeine hits that 
+help me. I have to be in a quiet place. I do find  
+
+579
+00:51:56,600 --> 00:52:04,880
+non-music that is ... I really like Four Tet, for 
+example, as music to focus or the new Andre 3000  
+
+580
+00:52:04,880 --> 00:52:10,760
+Flute album is extremely good for focusing, 
+where it's not quite predictable, no lyrics  
+
+581
+00:52:10,760 --> 00:52:16,840
+and not quite predictable. For me, that helps me 
+focus a lot. I can't be listening to any words  
+
+582
+00:52:16,840 --> 00:52:24,360
+and focus. My brain just cannot ignore words. So 
+those are some of the things I use to help folks.
+
+583
+00:52:24,360 --> 00:52:28,800
+That is awesome. I have a similar caffeine 
+strategy. I'm drinking tea always during these  
+
+584
+00:52:28,800 --> 00:52:32,600
+podcasts and this little thing I got here and 
+then, my wife doesn't want me to drink Diet Coke  
+
+585
+00:52:32,600 --> 00:52:36,320
+because she thinks the sugar and it is not good, 
+but I still drink it sometimes and it works great.  
+
+586
+00:52:36,320 --> 00:52:40,400
+I switched to green tea. That's my approach. 
+Start with black tea and then switch to green tea.
+
+587
+00:52:40,400 --> 00:52:41,440
+That's smart.
+
+588
+00:52:41,440 --> 00:52:44,520
+Man, there's so many things you shared 
+that I wanted to dig into. Let me share  
+
+589
+00:52:44,520 --> 00:52:49,360
+a couple of things. Your point about delegating I 
+thought was really important, and there's another  
+
+590
+00:52:49,360 --> 00:52:56,000
+benefit to learning to delegate, which is team 
+members feel empowered. You give them a chance to  
+
+591
+00:52:56,000 --> 00:53:02,520
+take on responsibility and they feel like I have 
+an opportunity to show I can do this other thing.
+
+592
+00:53:02,520 --> 00:53:07,000
+Yeah, and you're never going 
+to scale if you don't delegate.
+
+593
+00:53:07,000 --> 00:53:11,120
+Yeah, and it's hard to start learning to 
+do that, but once you get good at it, it  
+
+594
+00:53:11,120 --> 00:53:16,560
+becomes so great. I love just delegate everything 
+every time, and people enjoy it. They're like,  
+
+595
+00:53:16,560 --> 00:53:22,480
+"Amazing. You're giving me opportunity." The thing 
+you said about how ... if you're not sometimes  
+
+596
+00:53:22,480 --> 00:53:26,680
+regretting something you cut or potentially 
+firing someone you don't regret, Elon actually,  
+
+597
+00:53:26,680 --> 00:53:30,600
+Elon Musk has a great approach to this. I don't 
+know if you've heard his philosophy on optimizing.  
+
+598
+00:53:30,600 --> 00:53:34,680
+He has this whole five-step process of 
+figuring out how to optimize something,  
+
+599
+00:53:34,680 --> 00:53:41,120
+and one of them is try to cut things like, do we 
+need this thing or not? And if you don't recognize  
+
+600
+00:53:41,120 --> 00:53:45,160
+that 10% of stuff you cut, it was a mistake, 
+you're probably not cutting enough stuff.
+
+601
+00:53:45,160 --> 00:53:52,840
+You'll have to figure out your own metrics. 
+But I definitely think testing the limits,  
+
+602
+00:53:52,840 --> 00:53:57,560
+it's scary though. I'm going to be 
+honest. Doing that is always scary.  
+
+603
+00:53:57,560 --> 00:54:03,120
+It brings up like, I forgot to finish 
+the assignment nightmares of school,  
+
+604
+00:54:04,240 --> 00:54:11,080
+especially for the overachievers that often end 
+up in these kinds of companies and jobs. Again,  
+
+605
+00:54:11,080 --> 00:54:14,200
+you got to do things that scare 
+you or you're never going to grow.
+
+606
+00:54:14,960 --> 00:54:18,000
+Okay, I'm going to go in a whole different 
+direction. You've got a book coming out  
+
+607
+00:54:18,000 --> 00:54:21,920
+about platform engineering and platform 
+teams. This is something that I get a lot  
+
+608
+00:54:21,920 --> 00:54:25,480
+of questions about. A lot of people are 
+thinking about moving to a platform team  
+
+609
+00:54:25,480 --> 00:54:30,280
+or struggling working on a platform team or 
+struggling working with a platform team. So I  
+
+610
+00:54:30,280 --> 00:54:34,960
+have a bunch of questions along these lines. 
+The first is I asked a bunch of people that  
+
+611
+00:54:34,960 --> 00:54:39,640
+worked with you what to ask you and someone 
+that worked with you shared this quote about  
+
+612
+00:54:39,640 --> 00:54:44,160
+his frustration working with platform teams 
+that he's often complaining to you about and  
+
+613
+00:54:44,160 --> 00:54:48,120
+he works on customer-facing products. And so, 
+he said platform teams that are often slow. 
+
+614
+00:54:48,120 --> 00:54:51,840
+They're often pushing us to compromise on 
+features to adopt their systems. They often  
+
+615
+00:54:51,840 --> 00:54:58,240
+get infinite funding even though they don't 
+have to show any ROI. And so, maybe from the  
+
+616
+00:54:58,240 --> 00:55:02,760
+perspective of working with a platform team, 
+say you're building something customer-facing,  
+
+617
+00:55:02,760 --> 00:55:08,080
+any tips for effectively working with a platform 
+team and building a great relationship there.
+
+618
+00:55:08,080 --> 00:55:13,560
+I'm very sympathetic to anybody who feels that way 
+because part of the reason that I wrote this book,  
+
+619
+00:55:13,560 --> 00:55:20,880
+I co-wrote it with a friend, Ian Nolan, is that so 
+many platform teams are guilty of all the things  
+
+620
+00:55:20,880 --> 00:55:26,960
+that he's complaining about, that my friend 
+was complaining about, that they don't listen,  
+
+621
+00:55:26,960 --> 00:55:34,280
+they're not delivering effectively, they're not 
+explaining their value to the company. And it is  
+
+622
+00:55:34,280 --> 00:55:41,400
+infuriating when you're dealing with that. And 
+honestly, I'm very sympathetic. The thing that  
+
+623
+00:55:41,400 --> 00:55:50,840
+I would say though is the more you can, first 
+of all, spend the time understanding that the  
+
+624
+00:55:50,840 --> 00:55:57,880
+platform team's problems a little bit and trying 
+to collaborate and work with them and be clear  
+
+625
+00:55:57,880 --> 00:56:01,720
+about what it is you actually need and how you're 
+willing to work with them, I think the better. 
+
+626
+00:56:01,720 --> 00:56:11,840
+I think if you get mad and you just try to avoid 
+them or undermine them or whatever, that may  
+
+627
+00:56:11,840 --> 00:56:17,160
+work in the long run, but it's just going to make 
+everything worse in the short run. So I do think  
+
+628
+00:56:17,160 --> 00:56:24,080
+that if you've got a platform team that you're 
+frustrated with, some tips, I would put are like,  
+
+629
+00:56:24,080 --> 00:56:28,600
+"Look, find the parts of that team that are good 
+because I'm sure there are some," right? Maybe the  
+
+630
+00:56:28,600 --> 00:56:35,640
+databases team is awesome. And really make sure 
+you are maintaining a good relationship with that  
+
+631
+00:56:35,640 --> 00:56:40,280
+part of the team and you can point to how you 
+are collaborating extremely well with that part  
+
+632
+00:56:40,280 --> 00:56:46,120
+of the team. Help give them product feedback.
+This is annoying but sometimes needs to happen  
+
+633
+00:56:46,120 --> 00:56:49,960
+because a lot of companies, I actually 
+think product ... you need to have a  
+
+634
+00:56:49,960 --> 00:56:53,440
+product mindset and frankly, you need to have 
+product managers to build good platforms,  
+
+635
+00:56:53,440 --> 00:56:56,680
+internal platforms. A lot of companies just 
+don't do this. They don't believe that they  
+
+636
+00:56:56,680 --> 00:57:02,040
+should waste head count on product managers for 
+internal teams. So you end up with this platform  
+
+637
+00:57:02,040 --> 00:57:06,000
+team that has a lot of smart engineers, but they 
+don't really know what to build. So they're just  
+
+638
+00:57:06,000 --> 00:57:10,960
+sort of building whatever they think is right. And 
+so sometimes your job is to product manage them,  
+
+639
+00:57:10,960 --> 00:57:16,280
+is to tell them, these are the problems 
+that we have and this is what we need. 
+
+640
+00:57:16,280 --> 00:57:21,880
+And the clearer you can be about that, 
+particularly when they don't have a product team,  
+
+641
+00:57:21,880 --> 00:57:26,280
+oftentimes, you can kind of lead them from 
+the side in that way. And so I think that's  
+
+642
+00:57:26,280 --> 00:57:30,920
+another approach that I would take when 
+you're in that situation. Find the parts  
+
+643
+00:57:30,920 --> 00:57:36,280
+of the team that are working and working well 
+with your team and make sure you develop those  
+
+644
+00:57:36,280 --> 00:57:42,320
+relationships and try to just get over the anger 
+and frustration and just be clear about what  
+
+645
+00:57:42,320 --> 00:57:48,160
+it is that you need and help them understand 
+what they should really be doing and building.
+
+646
+00:57:48,160 --> 00:57:52,520
+That is really interesting advice. So especially, 
+you're saying if they don't have a PM helping,  
+
+647
+00:57:52,520 --> 00:57:58,760
+make sure they're guiding things well, is you 
+can help them ... basically help them think  
+
+648
+00:57:58,760 --> 00:58:03,200
+through stuff that will benefit them and also, 
+help the stuff that you're trying to get done.
+
+649
+00:58:03,200 --> 00:58:03,840
+Yeah.
+
+650
+00:58:03,840 --> 00:58:07,880
+That's awesome advice. Okay, so what 
+about from the leadership perspective,  
+
+651
+00:58:07,880 --> 00:58:11,520
+trying to build an effective platform 
+team, do you have any advice on how  
+
+652
+00:58:11,520 --> 00:58:17,200
+to structure these teams and incentivize 
+these teams to help them be successful?
+
+653
+00:58:17,200 --> 00:58:22,720
+First of all, I'm a very strong believer that 
+platform engineering has to involve software  
+
+654
+00:58:22,720 --> 00:58:27,600
+engineering. If you don't have any software 
+engineers on your platform team and you only  
+
+655
+00:58:27,600 --> 00:58:34,400
+have more operations systems engineers, DevOps, 
+SRE, which I realize there are some SREs that are  
+
+656
+00:58:34,400 --> 00:58:38,760
+software engineers, but they tend to not want 
+to write big software. I think you're kind of  
+
+657
+00:58:38,760 --> 00:58:46,120
+missing the picture. Platform engineering is 
+not just maintaining cloud infrastructure and  
+
+658
+00:58:46,120 --> 00:58:53,920
+doing small scripts or blueprints or enablement 
+projects for other teams, because that doesn't  
+
+659
+00:58:53,920 --> 00:59:01,560
+really create a cohesive and coherent platform. 
+It doesn't create products and frankly you need  
+
+660
+00:59:01,560 --> 00:59:07,280
+to be ... platforms are products, ultimately.
+You should be thinking about how do I create  
+
+661
+00:59:07,280 --> 00:59:13,560
+coherent offerings that make this company more 
+productive? So you need software engineers. Yes,  
+
+662
+00:59:13,560 --> 00:59:18,480
+you need sort of operations systems, 
+SRE specialists as well. And of course,  
+
+663
+00:59:18,480 --> 00:59:26,440
+you need product people. I had product teams on 
+... product managers for all of my platform teams.  
+
+664
+00:59:26,440 --> 00:59:32,000
+I've really developed out that practice in 
+the companies that I've worked for doing this  
+
+665
+00:59:32,000 --> 00:59:39,920
+because I just believe that you're not going to 
+get great results if you just believe that to  
+
+666
+00:59:39,920 --> 00:59:43,840
+engineers and engineering management. They 
+will do their best and you do occasionally  
+
+667
+00:59:43,840 --> 00:59:49,000
+find engineers that have really great product 
+instincts in this space, but the actual details. 
+
+668
+00:59:49,000 --> 00:59:55,680
+And focus of the product work is just you can't 
+write a bunch of code and/or manage a big software  
+
+669
+00:59:55,680 --> 00:59:59,320
+engineering team and be a product manager at the 
+same time. That's actually just asking, I think,  
+
+670
+00:59:59,320 --> 01:00:04,200
+too much of people to do that really well, at 
+least for very long. So I think when it comes to  
+
+671
+01:00:04,200 --> 01:00:11,720
+structuring a team, recognize this is not just 
+like SRE V2. This is more than that. You want  
+
+672
+01:00:11,720 --> 01:00:17,720
+software engineers, you want systems engineers, 
+you want product people. And then, one of the  
+
+673
+01:00:17,720 --> 01:00:23,480
+reasons you want product folks is because 
+you want to be thinking about impact-based,  
+
+674
+01:00:23,480 --> 01:00:31,960
+outcome-based approaches, not just like, "Well, 
+we built this thing that seemed cool, we adopted  
+
+675
+01:00:31,960 --> 01:00:36,520
+this technology from this company because that's 
+what everybody on the internet is talking about." 
+
+676
+01:00:36,520 --> 01:00:44,920
+Whether it's VC funded or big company. We actually 
+thought about what are the problems the engineers  
+
+677
+01:00:44,920 --> 01:00:51,440
+at my company are facing? How can we improve their 
+productivity or deliver leverage to this business  
+
+678
+01:00:51,440 --> 01:00:55,920
+through whatever it is we're building, right? Are 
+we reducing the cycle time for engineering tasks?  
+
+679
+01:00:56,480 --> 01:01:04,640
+Are we solving problems that are preventing 
+products from launching and scaling? Are we making  
+
+680
+01:01:04,640 --> 01:01:11,720
+really meaningful cost reductions or efficiencies 
+and, in our products or in our platforms? These  
+
+681
+01:01:11,720 --> 01:01:19,480
+are some examples of measurable contributions, 
+but I think one of the challenges is that people  
+
+682
+01:01:19,480 --> 01:01:26,120
+create these platform teams and think that they 
+can be sort of divorced from having an impact  
+
+683
+01:01:26,120 --> 01:01:29,160
+focus because it's like, "Well, you just got to 
+run the infrastructure and make sure it works." 
+
+684
+01:01:29,160 --> 01:01:33,240
+And it's like, "No, you actually do still 
+have to do ... if you do that OKR stuff or  
+
+685
+01:01:33,240 --> 01:01:39,560
+goal setting," or whatever, you've got to take 
+a lot of the best practices of product. It's a  
+
+686
+01:01:39,560 --> 01:01:45,640
+little different in the internal world, but it's 
+still very important if you want to do platforms.
+
+687
+01:01:45,640 --> 01:01:48,280
+On the line of having PMs within 
+the platform teams. Some of the  
+
+688
+01:01:48,280 --> 01:01:52,960
+best PMs I've ever worked with where PMs 
+on platform teams, and that just tells me,  
+
+689
+01:01:52,960 --> 01:01:57,240
+it's not like where you put PMs that are just 
+meant like that's ... where you could have some  
+
+690
+01:01:57,240 --> 01:02:01,400
+of the highest leverage because platform teams 
+enable the rest of the company to move faster.
+
+691
+01:02:01,400 --> 01:02:02,000
+Yeah.
+
+692
+01:02:02,000 --> 01:02:06,240
+And one difference there, I'm curious if 
+you agree, is your ratio of PM to engineer  
+
+693
+01:02:06,240 --> 01:02:10,480
+can be a lot higher. You can have a lot 
+more engineers per PM on platform teams.
+
+694
+01:02:10,480 --> 01:02:15,680
+Yeah. Yeah, I think that's right because 
+I think so much of the work in a platform  
+
+695
+01:02:15,680 --> 01:02:25,040
+team is not exactly product work. A lot of it is 
+like scaling or really deep kind of technical,  
+
+696
+01:02:25,040 --> 01:02:30,080
+like I got to figure out how to actually do 
+this technical thing or I've got to do this  
+
+697
+01:02:30,080 --> 01:02:35,960
+performance efficiency and you don't always 
+need a product spec for that, right? It is  
+
+698
+01:02:35,960 --> 01:02:42,840
+often just a very engineering heavy task. So yes, 
+I think the ratios do tend to be a bit different.
+
+699
+01:02:42,840 --> 01:02:47,280
+We dove over right into this topic. Maybe it 
+might be helpful to help people understand what  
+
+700
+01:02:47,280 --> 01:02:51,480
+is a platform team, just what are examples of 
+teams that would be considered platform teams.
+
+701
+01:02:51,480 --> 01:02:55,840
+I mean, I guess the high level definition 
+that I have of platform engineering is if  
+
+702
+01:02:55,840 --> 01:03:01,760
+you are developing and operating platforms 
+that ... where they're trying to manage  
+
+703
+01:03:01,760 --> 01:03:08,320
+overall system complexity and deliver 
+leverage to your business. So a lot  
+
+704
+01:03:08,320 --> 01:03:11,640
+of the teams that people think about nowadays 
+and when they're talking about platform teams,  
+
+705
+01:03:11,640 --> 01:03:16,840
+they're talking a lot about teams that may have 
+formerly been called dev tools. For example,  
+
+706
+01:03:16,840 --> 01:03:28,160
+so your CI/CD tooling for the company, a lot of 
+the cloud infrastructure provisioning and tooling.  
+
+707
+01:03:28,160 --> 01:03:35,240
+If you're at a company with certain technical 
+problems, you may very well be building semi  
+
+708
+01:03:35,240 --> 01:03:40,520
+bespoke storage systems. For example, maybe part 
+of your platform teams. I actually think that  
+
+709
+01:03:40,520 --> 01:03:50,440
+there are ... And then, actually web frameworks 
+... Web mobile framework and support for that. 
+
+710
+01:03:50,440 --> 01:03:55,720
+That set of engineering can also be part of a 
+platform offering. I actually kind of believe that  
+
+711
+01:03:56,480 --> 01:04:01,200
+there's also sort of what you might call 
+integration platforms or platforms that are in  
+
+712
+01:04:01,200 --> 01:04:07,880
+between that infrastructurey developer tooly stuff 
+and products. So billing platforms for example,  
+
+713
+01:04:07,880 --> 01:04:13,200
+if you have a single billing platform for all 
+of the different products in your company,  
+
+714
+01:04:13,200 --> 01:04:19,120
+that shares a lot of overlaps in the 
+challenges of those more dev tools,  
+
+715
+01:04:19,120 --> 01:04:23,760
+infrastructurey platform teams because you're 
+probably supporting lots of different product  
+
+716
+01:04:23,760 --> 01:04:31,480
+lines that are using this system that needs to 
+be able to scale with certain efficiencies. You  
+
+717
+01:04:31,480 --> 01:04:35,000
+need to still do the product discovery.
+You probably have a little bit more of  
+
+718
+01:04:35,000 --> 01:04:44,640
+a business product focus than the pure internal 
+tools teams, but that gets to the blended area.
+
+719
+01:04:44,640 --> 01:04:49,400
+For founders that are earlier stage or companies 
+that are smaller hearing this and they're like,  
+
+720
+01:04:49,400 --> 01:04:53,680
+"Oh, shit do I need a platform team?" 
+So yeah, you're shaking your head,  
+
+721
+01:04:53,680 --> 01:04:57,960
+if people aren't watching on YouTube. What's 
+a sign that's time maybe to start creating  
+
+722
+01:04:57,960 --> 01:05:00,720
+a platform team and setting aside 
+resources for something like that?
+
+723
+01:05:00,720 --> 01:05:06,840
+So first of all, I think it gets to be like, you 
+have 50 plus engineers. I don't think this is  
+
+724
+01:05:06,840 --> 01:05:18,400
+the kind of thing that you start when you are 10 
+engineers, right? But when you are ... so there's  
+
+725
+01:05:18,400 --> 01:05:23,400
+a lot of ad hoc coordination that's probably 
+happening amongst your engineering groups right  
+
+726
+01:05:23,400 --> 01:05:30,800
+now, where maybe you just have one ... you have 
+your GitHub and somebody is making sure that all  
+
+727
+01:05:30,800 --> 01:05:40,120
+of that stuff is sort of working. You have a few 
+cloud databases and you got a couple of people  
+
+728
+01:05:40,120 --> 01:05:45,520
+on each team and they kind of share notes to 
+figure out what's going on or whatever. Okay,  
+
+729
+01:05:45,520 --> 01:05:51,360
+it's all good, but at some point, you hit either 
+a lot of inefficiency where you're seeing the  
+
+730
+01:05:51,360 --> 01:05:57,440
+same people across a bunch of different teams.
+Each team has the same kind of people having to  
+
+731
+01:05:57,440 --> 01:06:02,000
+solve the same kinds of problems. It just seems 
+like why do I have three people in every team,  
+
+732
+01:06:02,000 --> 01:06:06,560
+dealing with this instead of centralizing it 
+and making it a little more efficient. It also  
+
+733
+01:06:06,560 --> 01:06:13,320
+could be that you hit some core scaling issue that 
+starts to really need a dedicated team to solve.  
+
+734
+01:06:13,320 --> 01:06:17,760
+Again, that could be developer productivity. 
+Every development team is trying to do it their  
+
+735
+01:06:17,760 --> 01:06:24,320
+own way and everybody is just super slow because 
+you just can't get code released and it all has  
+
+736
+01:06:24,320 --> 01:06:28,320
+to be coordinated across every different team and 
+it's just like, what is going on? We need to fix  
+
+737
+01:06:28,320 --> 01:06:36,200
+that or you actually have a technical challenging 
+area that needs a focused team to fix the scaling. 
+
+738
+01:06:36,200 --> 01:06:40,440
+Those are some of the signs that you may 
+want to start thinking about a platform team,  
+
+739
+01:06:40,440 --> 01:06:48,200
+but it's really like ... generally speaking, I 
+would not jump into it early. This is something  
+
+740
+01:06:48,200 --> 01:06:55,720
+for companies that have matured where it's worth 
+investing and making people internally more  
+
+741
+01:06:55,720 --> 01:07:02,120
+productive and centralizing certain functions 
+just from a cost and efficiency basis at minimum.
+
+742
+01:07:02,120 --> 01:07:06,560
+Say you're on a platform team, say you're 
+an engineer or even a PM, any advice for  
+
+743
+01:07:06,560 --> 01:07:11,760
+how to be successful and thrive within that 
+environment and be a great platform team.
+
+744
+01:07:11,760 --> 01:07:16,400
+If you want to do platforms. If you're an 
+engineer, certainly if you're an engineer  
+
+745
+01:07:16,400 --> 01:07:24,000
+or an engineering manager, you've got to remember 
+that half of the work is actually the operational  
+
+746
+01:07:24,000 --> 01:07:28,320
+quality, operational excellence of these 
+things. Platform engineering is not just  
+
+747
+01:07:28,320 --> 01:07:35,520
+writing code and then throwing it over the walls 
+to someone. Being interested and passionate about  
+
+748
+01:07:35,520 --> 01:07:42,560
+the operational challenges and scaling bits 
+of systems I do think is fairly important,  
+
+749
+01:07:42,560 --> 01:07:47,840
+if you want to be a great platform engineer 
+from a software engineer perspective,  
+
+750
+01:07:47,840 --> 01:07:55,000
+if you're more like a product manager, "Look, 
+you've got to really care about ..." I think  
+
+751
+01:07:55,000 --> 01:08:01,520
+you got to be really both interested in 
+working with really smart engineers who are  
+
+752
+01:08:01,520 --> 01:08:09,240
+going to know way more than you do about things.
+And almost being a really good, not necessarily  
+
+753
+01:08:09,240 --> 01:08:16,040
+zero to one but past one person because actually 
+a lot of the best platform type offerings in  
+
+754
+01:08:16,040 --> 01:08:21,720
+companies start in individual application teams. 
+An application team has a problem and they solve  
+
+755
+01:08:21,720 --> 01:08:26,080
+it for themselves and it turns out that that's 
+actually a really good idea for how to solve that  
+
+756
+01:08:26,080 --> 01:08:30,880
+problem. So a good platform team is often 
+looking around for those and then sort of  
+
+757
+01:08:30,880 --> 01:08:36,880
+taking them and then assimilating them and making 
+them available to more and more people. And so,  
+
+758
+01:08:36,880 --> 01:08:43,560
+I think if you want to be in that kind of zero 
+to one building the brand new stuff all the time,  
+
+759
+01:08:43,560 --> 01:08:47,560
+you may not be as happy in a platform team.
+But if you're really interested a little bit  
+
+760
+01:08:47,560 --> 01:08:54,000
+more of taking things over, stabilizing, 
+scaling them, making them efficient,  
+
+761
+01:08:54,000 --> 01:09:01,280
+making them evolve as a company evolves, I 
+think you'll be happier in that circumstance.
+
+762
+01:09:01,280 --> 01:09:06,760
+Awesome. Is there anything else along 
+these lines before we wrap up and yet  
+
+763
+01:09:06,760 --> 01:09:10,000
+a very exciting lightning round that 
+you think might be helpful for folks  
+
+764
+01:09:10,000 --> 01:09:14,040
+working with platform teams or working on 
+a platform team, building platform teams?
+
+765
+01:09:14,040 --> 01:09:19,240
+I think there are two things that we haven't 
+touched on or maybe three that are really hard  
+
+766
+01:09:19,240 --> 01:09:24,720
+about platform teams and that I think don't 
+get much press, which is running platform  
+
+767
+01:09:24,720 --> 01:09:32,720
+projects is a little bit different than running 
+agile projects. You can take a lot of the best  
+
+768
+01:09:32,720 --> 01:09:37,720
+practices you may have learned from agile type 
+product delivery, but you are running longer,  
+
+769
+01:09:37,720 --> 01:09:44,280
+running larger scale, more complex builds because 
+a lot of the stuff that you build at the platform  
+
+770
+01:09:44,280 --> 01:09:49,560
+level just takes longer. It's a little bit 
+more complicated. So you've got to be willing  
+
+771
+01:09:49,560 --> 01:09:55,120
+to get into that kind of stuff, especially 
+if you're in a management job in that space. 
+
+772
+01:09:55,120 --> 01:10:02,560
+You are going to deal with a lot of migrations as 
+well. So it is very annoying. Migrations happen,  
+
+773
+01:10:02,560 --> 01:10:07,040
+even if you don't force them on people, 
+your a cloud provider is going to say, oh,  
+
+774
+01:10:07,040 --> 01:10:16,120
+you've got to migrate from EKS view 19 to 121 
+or whatever, and that may require changes in  
+
+775
+01:10:16,120 --> 01:10:23,400
+code and then that's a real pain in the butt for 
+all of the application teams. So people who are  
+
+776
+01:10:23,400 --> 01:10:32,600
+interested in how to smooth over the customer 
+and company impact of this underlying change,  
+
+777
+01:10:32,600 --> 01:10:37,480
+I think we'll be very happy in platform teams. If 
+you're not interested in that, you may not enjoy  
+
+778
+01:10:37,480 --> 01:10:42,040
+the work as much. There's just a lot of detail 
+oriented work and platforms. And then of course,  
+
+779
+01:10:42,040 --> 01:10:48,560
+the final part is the stakeholders are a 
+nightmare. My friend who wrote the question about  
+
+780
+01:10:48,560 --> 01:10:53,920
+how his product or his platform partners drive 
+him crazy. I have no doubt he drives them crazies. 
+
+781
+01:10:55,440 --> 01:11:01,120
+Because you've got all of these stakeholders, 
+your peers and tech, maybe product managers,  
+
+782
+01:11:01,120 --> 01:11:07,240
+maybe executives that are like, what is this 
+team? Are they really worth the money? Why are  
+
+783
+01:11:07,240 --> 01:11:11,720
+we spending so much on it? I don't understand 
+what they're doing. I could do it better in  
+
+784
+01:11:11,720 --> 01:11:18,880
+some cases. So there's actually a big part of the 
+job, particularly as either product managers or  
+
+785
+01:11:18,880 --> 01:11:25,520
+engineering leadership is stakeholder management 
+and really learning how to do that well.  
+
+786
+01:11:25,520 --> 01:11:30,120
+And that is not always, that's probably I 
+think universally agreed to be the least  
+
+787
+01:11:30,120 --> 01:11:34,600
+fun part of the job. I don't think anybody 
+loves it, but it is certainly a skill set.  
+
+788
+01:11:34,600 --> 01:11:40,520
+I'm glad that I have. And so, I think if you 
+are thinking about building one of these teams. 
+
+789
+01:11:40,520 --> 01:11:44,760
+And you're like, I can just do the fun 
+tech stuff or the cool product stuff,  
+
+790
+01:11:44,760 --> 01:11:48,000
+I'm really passionate about engineering 
+productivity or I'm really passionate  
+
+791
+01:11:48,000 --> 01:11:50,800
+about state scale storage systems and I 
+don't want to think about any of the other  
+
+792
+01:11:50,800 --> 01:11:56,240
+stuff. You may not actually be happy in 
+the long run in leadership positions.  
+
+793
+01:11:56,240 --> 01:12:02,320
+It may be fine as an individual contributor, 
+but for leaders in particular, there's a lot  
+
+794
+01:12:02,320 --> 01:12:07,360
+more to it than the fun tech problems, the 
+fun operations problems, even the product.
+
+795
+01:12:07,360 --> 01:12:10,720
+You said there's a few things we haven't 
+touched on. Is there anything else?
+
+796
+01:12:10,720 --> 01:12:16,800
+That's the fastest and anybody who's 
+interested, my book will be coming  
+
+797
+01:12:16,800 --> 01:12:22,280
+out in the next couple of months from 
+O'Reilly and covers all of this depth.
+
+798
+01:12:22,280 --> 01:12:25,480
+Yeah, is there a date specifically 
+people should watch out for?
+
+799
+01:12:25,480 --> 01:12:29,480
+I think it's actually pre-order on Amazon now. 
+It's called Platform Engineering, and then,  
+
+800
+01:12:29,480 --> 01:12:33,560
+there's ... I think it's like a guide 
+for technical product and people leaders,  
+
+801
+01:12:33,560 --> 01:12:39,360
+something like that. But I think the 
+release ... I don't know exactly when  
+
+802
+01:12:39,360 --> 01:12:42,840
+the Kindle release will be, but we're still in 
+copy edits, but it should be done pretty soon.
+
+803
+01:12:42,840 --> 01:12:45,800
+Okay, amazing. So you can pre-order it now. 
+Rolling to it obviously in the show notes and  
+
+804
+01:12:45,800 --> 01:12:50,360
+description, it's called Platform Engineering. 
+Before we get to a very exciting lightning round,  
+
+805
+01:12:50,360 --> 01:12:55,640
+I want to take us to a recurring segment 
+on this podcast that I call AI Corner. AI  
+
+806
+01:12:55,640 --> 01:13:00,720
+is very top of mind for a lot of people and 
+I'm always curious how people are finding it  
+
+807
+01:13:00,720 --> 01:13:07,120
+valuable in their work or in their life. So 
+the question is there anything you've found  
+
+808
+01:13:07,120 --> 01:13:11,480
+AI to be helpful with ... in your AI work? 
+Any way you use it in an interesting way?
+
+809
+01:13:11,480 --> 01:13:15,800
+I find it helpful, for example, if I've written 
+a sentence and I'm like, I like this sentence,  
+
+810
+01:13:15,800 --> 01:13:23,120
+but I feel like, I don't like the phrasing or 
+the format that I've used, it needs to be edited,  
+
+811
+01:13:23,120 --> 01:13:27,200
+but I can't quite figure out how. I will 
+often put it into ChatGPT and be like,  
+
+812
+01:13:27,200 --> 01:13:32,520
+"Can you reframe this? Can you rephrase 
+this for me?" It doesn't always work well,  
+
+813
+01:13:32,520 --> 01:13:36,680
+but sometimes it does. It's like, "Oh yeah, if 
+I just switched this around or changed this word  
+
+814
+01:13:36,680 --> 01:13:41,400
+choice, it's a much easier to read sentence." I 
+do think it's ... I think it's just before that  
+
+815
+01:13:41,400 --> 01:13:49,360
+and small. I think it's large, lots of texts 
+I haven't had as much luck with. I'm a little  
+
+816
+01:13:49,360 --> 01:13:54,520
+bit of an AI novice still, I would say.
+What I will say is that AI is really bad,  
+
+817
+01:13:54,520 --> 01:13:58,960
+if you try to ask it for quotes or at least 
+ChatGPT is. I haven't used a lot of the other  
+
+818
+01:13:58,960 --> 01:14:04,720
+ones that much. I actually saw there was some 
+Twitter or some social media thing that's like,  
+
+819
+01:14:04,720 --> 01:14:13,680
+did Francis Ford Coppola get fake reviews 
+from ChatGPT of the new, what is it, Agopolus.
+
+820
+01:14:14,240 --> 01:14:14,425
+Yeah.
+
+821
+01:14:14,425 --> 01:14:14,440
+Agopolus maybe.
+
+822
+01:14:14,440 --> 01:14:14,920
+Yeah.
+
+823
+01:14:16,800 --> 01:14:22,000
+And I was like, I actually had that scenario 
+where I was like, I need a quote ... I was  
+
+824
+01:14:22,000 --> 01:14:26,840
+looking for quotes for the book and I was 
+like, maybe ChatGPT knows, but I was like,  
+
+825
+01:14:26,840 --> 01:14:32,040
+"Can you give me any good quotes on ..." I forget 
+what it was. Let's just say it was on managing  
+
+826
+01:14:32,040 --> 01:14:35,480
+complexity or something like that, and it gave 
+me these really interesting quotes. I was like,  
+
+827
+01:14:35,480 --> 01:14:40,240
+that's great, but I better double check that. 
+And they were not real. They were never real,  
+
+828
+01:14:40,240 --> 01:14:43,720
+not a single quote. And I'd be like, that's 
+not actually a real quote. Yes, you're right.  
+
+829
+01:14:43,720 --> 01:14:48,360
+That's not, so here's a different one.
+I was like, that's still not a real quote,  
+
+830
+01:14:48,360 --> 01:14:55,320
+so don't ask it for quotes because ... or if 
+you do, make sure it's a real quote and not just  
+
+831
+01:14:55,320 --> 01:15:02,800
+an interestingly phrased ... I mean good 
+summarization in some ways of the text,  
+
+832
+01:15:02,800 --> 01:15:06,000
+it was sort of quoting from, 
+just not an actual quote.
+
+833
+01:15:06,000 --> 01:15:10,160
+That's a good reminder of just generally don't 
+assume what it's telling is true. Generally,  
+
+834
+01:15:10,160 --> 01:15:14,760
+it's not giving you real things. It's 
+making things up and usually they're right,  
+
+835
+01:15:14,760 --> 01:15:19,040
+but often they might not be right. That's a 
+really good reminder. On that first tactic,  
+
+836
+01:15:19,040 --> 01:15:22,400
+is there a prompt that you find helpful 
+for how to actually feed it in there?  
+
+837
+01:15:22,400 --> 01:15:26,120
+Is it just here's a line, help me 
+come up with a better version of it?
+
+838
+01:15:26,120 --> 01:15:32,120
+No, I have not figured out the prompt engineering 
+thing at all. I tried to get it to summarize a  
+
+839
+01:15:32,120 --> 01:15:36,920
+paper for me the other day, and it literally 
+gave me the summary of a different paper,  
+
+840
+01:15:36,920 --> 01:15:40,640
+and then I asked friends and they were like, 
+"Well, here's a summary." I was like, "Actually,  
+
+841
+01:15:40,640 --> 01:15:44,680
+that seems like a good summary." And they're like, 
+"Well, first I told the AI that it was an expert  
+
+842
+01:15:44,680 --> 01:15:50,560
+in the field and that it needed to read carefully 
+and that it was really smart," and I'm just like,  
+
+843
+01:15:51,320 --> 01:15:55,160
+how do I have to manage the machine? 
+I already have to manage all of these  
+
+844
+01:15:55,160 --> 01:15:59,720
+humans? Why are you making me 
+manage machines now too, please?
+
+845
+01:15:59,720 --> 01:16:04,960
+I thought this was going to solve all of our 
+problems. Yeah, that role. There's an acronym  
+
+846
+01:16:04,960 --> 01:16:09,200
+for how to approach engineering, and there's 
+always like give it the role. Here's the role  
+
+847
+01:16:09,200 --> 01:16:14,760
+you're going to play for me. You are an amazing 
+writer and here's what I want from you. Yeah.  
+
+848
+01:16:14,760 --> 01:16:19,320
+I'm also very bad at it. By the way, Claude I 
+here is really good at writing. That's one of  
+
+849
+01:16:19,320 --> 01:16:24,520
+its superpowers, so if you want to try writing, 
+that's worth trying. Claude by Anthropic. On the  
+
+850
+01:16:24,520 --> 01:16:27,840
+second point you made of fake quote. So, 
+yeah, Francis Ford Coppola is coming out  
+
+851
+01:16:27,840 --> 01:16:32,400
+with this movie with ... As you mentioned, this 
+trailer is just full of all these quotes that  
+
+852
+01:16:32,400 --> 01:16:37,440
+people supposedly said about all his other movies 
+that Godfather and stuff. And they're all like,  
+
+853
+01:16:37,440 --> 01:16:40,940
+these are terrible ... They're all 
+terribly mean quotes about his movies. 
+
+854
+01:16:40,940 --> 01:16:44,120
+It turns out, yeah, they're all not 
+real quotes, and they actually took  
+
+855
+01:16:44,120 --> 01:16:49,840
+down the trailer, I just read because he's 
+just making up quotes by famous critics.
+
+856
+01:16:49,840 --> 01:16:50,680
+Well, so maybe-
+
+857
+01:16:50,680 --> 01:16:52,760
+Maybe it was ChatGPT.
+
+858
+01:16:52,760 --> 01:16:59,000
+You can get fooled. I don't know if it was ChatGPT 
+or a cheeky intern or something, but we can get-
+
+859
+01:16:59,000 --> 01:17:01,720
+Or very intentional marketing stint.
+
+860
+01:17:01,720 --> 01:17:02,720
+Or that.
+
+861
+01:17:02,720 --> 01:17:08,800
+Yeah. Anyway, with that Camille, we have reached 
+our very exciting lightning round. Are you ready?
+
+862
+01:17:08,800 --> 01:17:09,880
+Yes.
+
+863
+01:17:09,880 --> 01:17:12,000
+Amazing. Okay. First question,  
+
+864
+01:17:12,000 --> 01:17:15,760
+what are two or three books that you've 
+recommended most to other people?
+
+865
+01:17:15,760 --> 01:17:21,720
+So the first one is, What Got You Here Won't 
+Get You There. I love it. I think anybody who  
+
+866
+01:17:21,720 --> 01:17:29,240
+is trying to challenge themselves and grow, should 
+read it, it's fantastic. The second one is called  
+
+867
+01:17:29,240 --> 01:17:37,800
+When Things Fall Apart by Pema Chodron. That 
+is when you are ... For me anyway, when I am  
+
+868
+01:17:37,800 --> 01:17:47,280
+struggling with whatever circumstances around me, 
+I find it a very soothing or reminder that life  
+
+869
+01:17:47,280 --> 01:17:57,440
+is hard and the best way to ... you just sort of 
+have to breathe with it and be with it and let it  
+
+870
+01:17:57,440 --> 01:18:04,080
+remind you of how life is hard for everyone and 
+sort of make you a kinder person in the process.
+
+871
+01:18:04,080 --> 01:18:08,120
+Is there a favorite recent movie 
+or TV show you've really enjoyed?
+
+872
+01:18:08,120 --> 01:18:15,880
+I loved Alien Romulus. It was great. If 
+you like a scary alien movie, fantastic.
+
+873
+01:18:15,880 --> 01:18:18,800
+I hate scary movies, so that's 
+a new Alien movie. Okay.
+
+874
+01:18:18,800 --> 01:18:19,760
+Yeah.
+
+875
+01:18:19,760 --> 01:18:20,720
+Anyone know there was a new Alien movie.
+
+876
+01:18:20,720 --> 01:18:21,680
+I loved it.
+
+877
+01:18:21,680 --> 01:18:25,400
+Awesome. Is there a favorite product you've 
+recently discovered that you really love,  
+
+878
+01:18:25,400 --> 01:18:27,760
+whether it's an app or even physical product?
+
+879
+01:18:27,760 --> 01:18:34,040
+So I don't know about recent, I'm a big 
+Whoop fan. I got it during the pandemic  
+
+880
+01:18:34,040 --> 01:18:39,720
+and it is one of my ... I'm just a 
+weird fan girl for it. I don't know.  
+
+881
+01:18:39,720 --> 01:18:44,040
+I just really ... I enjoy it. I use it 
+every day. Maybe it's totally inaccurate,  
+
+882
+01:18:44,040 --> 01:18:48,280
+but it seems accurate enough and I just 
+find it a very interesting and cool product.
+
+883
+01:18:48,280 --> 01:18:51,120
+I know Whoop product, people listen 
+to this podcast, so I think they'll  
+
+884
+01:18:51,120 --> 01:18:54,840
+be happy to hear that. Two more questions. 
+Do you have a favorite life motto that you  
+
+885
+01:18:54,840 --> 01:18:59,480
+often come back to, share with friends or 
+family, find useful and work around life?
+
+886
+01:18:59,480 --> 01:19:04,200
+If you don't challenge yourself, if you don't 
+take risks, you'll never grow. That's a big  
+
+887
+01:19:04,200 --> 01:19:08,240
+one. I think you've got to ... challenging 
+yourself, taking risks is how you grow. I  
+
+888
+01:19:08,240 --> 01:19:15,640
+think the other one for me is stay curious. The 
+more you can remember that there's more that you  
+
+889
+01:19:15,640 --> 01:19:21,680
+don't know than that you do know, and staying 
+open-minded and being willing to be wrong,  
+
+890
+01:19:22,280 --> 01:19:29,600
+I think the happier you'll be and the 
+better you'll be as a leader for sure.
+
+891
+01:19:29,600 --> 01:19:32,760
+Final question, on the topic of working out,  
+
+892
+01:19:32,760 --> 01:19:36,960
+you're blocking it with your head generally 
+during the podcast, when we moved ... Behind  
+
+893
+01:19:36,960 --> 01:19:41,120
+you is a very significant looking barbell 
+set or dumbbell set, I don't know which one  
+
+894
+01:19:41,120 --> 01:19:48,840
+is which. Talk about your workout regimen or 
+anything along the lines of how you work out.
+
+895
+01:19:48,840 --> 01:19:54,440
+I have been lifting rates probably for longer than 
+some of your podcast listeners have been alive,  
+
+896
+01:19:56,040 --> 01:20:03,000
+which says more about my age than anything else. 
+So I used be ... I now have two kids, so I lift  
+
+897
+01:20:03,000 --> 01:20:07,800
+weights as sort of maintenance, but I used to be 
+a very ... I could deadlift than twice my body  
+
+898
+01:20:07,800 --> 01:20:12,960
+weight and I was just a very, very strong person. 
+Now of course, everybody is into weightlifting,  
+
+899
+01:20:12,960 --> 01:20:18,960
+which makes the gym really annoying. So partly 
+why I have a set in here, a small set with a  
+
+900
+01:20:18,960 --> 01:20:26,960
+baby sized bar is ... so when I can't make it to 
+the gym, I can at least lift a little bit at home.
+
+901
+01:20:26,960 --> 01:20:29,240
+What's your favorite workout, lifting wise?
+
+902
+01:20:29,240 --> 01:20:32,640
+I love really basic deadlift, squat,  
+
+903
+01:20:32,640 --> 01:20:39,240
+overhead press, that kind of 
+very simple, the classic lifts.
+
+904
+01:20:39,240 --> 01:20:42,640
+Amazing. Camille, this is awesome. 
+As everything, I was hoping it'd be,  
+
+905
+01:20:42,640 --> 01:20:47,000
+we covered so much stuff. Two final questions. 
+Where can folks find you online if they want to  
+
+906
+01:20:47,000 --> 01:20:51,720
+reach out, follow up on stuff and check out your 
+books and how can listeners be useful to you?
+
+907
+01:20:51,720 --> 01:20:56,680
+Yes, so with the weird state of social media now, 
+that's actually a harder question to answer than  
+
+908
+01:20:56,680 --> 01:21:02,660
+it normally is. I am on LinkedIn, so you can 
+always follow me on LinkedIn and I'll probably  
+
+909
+01:21:02,660 --> 01:21:06,480
+... I haven't traditionally put that much there, 
+but I'm expecting I'll probably start putting  
+
+910
+01:21:06,480 --> 01:21:12,880
+more there in the coming months. I also still use 
+Medium when I write. I actually like Medium, so  
+
+911
+01:21:12,880 --> 01:21:21,520
+medium.com, scamille is my username. Those are two 
+good ways. I have a Twitter/X account that it is  
+
+912
+01:21:21,520 --> 01:21:28,080
+currently locked, and I may or may not unlock 
+it at some point, but social media, as I said,  
+
+913
+01:21:28,080 --> 01:21:33,440
+has gotten weird. So I think probably LinkedIn 
+is the easiest way for this kind of stuff.
+
+914
+01:21:33,440 --> 01:21:36,360
+And I read somewhere that scamille is rooted in  
+
+915
+01:21:36,360 --> 01:21:39,120
+your love of ska music back when 
+you were younger. Is that right?
+
+916
+01:21:39,120 --> 01:21:43,640
+It's true, yes. It was from high 
+school. I was a big ska fan.
+
+917
+01:21:43,640 --> 01:21:45,760
+It's funny how our usernames just stick from,  
+
+918
+01:21:45,760 --> 01:21:49,680
+we were really young and that's the way 
+we're represented online now forever.
+
+919
+01:21:49,680 --> 01:21:50,160
+Yeah.
+
+920
+01:21:50,160 --> 01:21:53,240
+That's absurd. And then, you 
+didn't answer my final question,  
+
+921
+01:21:53,240 --> 01:21:54,520
+which is how can listeners be useful to you?
+
+922
+01:21:55,360 --> 01:22:00,400
+I have a new book coming out. I have another 
+book that I've already written. Obviously,  
+
+923
+01:22:00,400 --> 01:22:05,240
+I love it when people buy my books so I love when 
+people share my books with other people. My first  
+
+924
+01:22:05,240 --> 01:22:12,080
+book is translated into a bunch of languages, 
+which is super exciting, and I hope that if you  
+
+925
+01:22:12,080 --> 01:22:17,080
+read it and enjoy it and learn something from it, 
+you will let me know. Tag me on some social media.  
+
+926
+01:22:17,080 --> 01:22:23,920
+I think that's just awesome and stay tuned. Look, 
+if you are looking for people potentially to come  
+
+927
+01:22:23,920 --> 01:22:29,520
+talk to your company about platform engineering, I 
+could be interested in that, but I always love to  
+
+928
+01:22:29,520 --> 01:22:38,360
+meet interesting people. If you're in New York, 
+reach out, who knows. This has been an amazing,  
+
+929
+01:22:38,360 --> 01:22:42,320
+amazing time getting to chat with you, Lenny. 
+Thank you so much for inviting me on the show.
+
+930
+01:22:42,320 --> 01:22:45,560
+I feel the same way. Thank you for 
+agreeing to come on the show, Camille,  
+
+931
+01:22:45,560 --> 01:22:48,160
+you're awesome. Thank you so much for being here.
+
+932
+01:22:48,160 --> 01:22:49,160
+Take care.
+
+933
+01:22:49,160 --> 01:22:55,200
+Bye everyone. Thank you so much for listening. If 
+you found this valuable, you can subscribe to the  
+
+934
+01:22:55,200 --> 01:23:01,200
+show on Apple Podcasts, Spotify or your favorite 
+podcast app. Also, please consider giving us a  
+
+935
+01:23:01,200 --> 01:23:06,320
+rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+
+936
+01:23:06,320 --> 01:23:14,600
+all past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

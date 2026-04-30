@@ -1,0 +1,5303 @@
+1
+00:00:00,160 --> 00:00:02,399
+100% of my code is written by quad code.
+
+2
+00:00:02,399 --> 00:00:06,319
+I have not edited a single line by hand since November.
+
+3
+00:00:06,319 --> 00:00:08,400
+Every day I ship 10, 20, 30 p requests.
+
+4
+00:00:08,400 --> 00:00:11,759
+So at the moment I have like five [music] agents running while we're recording this.
+
+5
+00:00:11,759 --> 00:00:11,920
+>> Yeah.
+
+6
+00:00:11,920 --> 00:00:12,240
+Yeah.
+
+7
+00:00:12,240 --> 00:00:13,519
+Do you miss writing code?
+
+8
+00:00:13,519 --> 00:00:18,240
+>> I have never enjoyed coding as much as I do today because I don't have to deal with all the minutia.
+
+9
+00:00:18,240 --> 00:00:21,199
+Productivity per engineer has increased 200%.
+
+10
+00:00:21,199 --> 00:00:22,800
+>> There's always this question, should I learn to code?
+
+11
+00:00:22,800 --> 00:00:24,160
+In a year or two, it's not [music] going to matter.
+
+12
+00:00:24,160 --> 00:00:25,359
+Coding is largely solved.
+
+13
+00:00:25,359 --> 00:00:28,000
+I imagine a world where everyone is able to program.
+
+14
+00:00:28,000 --> 00:00:29,599
+Anyone can just build software anytime.
+
+15
+00:00:29,599 --> 00:00:32,160
+What's the next big shift [music] to how software is written?
+
+16
+00:00:32,160 --> 00:00:33,920
+>> Quad is starting to come up with ideas.
+
+17
+00:00:33,920 --> 00:00:35,040
+It's looking through feedback.
+
+18
+00:00:35,040 --> 00:00:36,399
+It's looking at bug reports.
+
+19
+00:00:36,399 --> 00:00:41,040
+It's looking at telemetry for bug fixes and things to ship a little more like a co-orker or something like that.
+
+20
+00:00:41,040 --> 00:00:44,640
+>> A lot of people listening to this are product managers and they're probably sweating.
+
+21
+00:00:44,640 --> 00:00:47,680
+I think by the end of the year, everyone's going to be a product manager and everyone codes.
+
+22
+00:00:47,680 --> 00:00:49,920
+The title software engineer is going to start [music] to go away.
+
+23
+00:00:49,920 --> 00:00:56,039
+It's just going to be replaced by builder and it's going to be painful for a lot of people.
+
+24
+00:00:56,239 --> 00:01:00,480
+Today my guest is Boris Churnney, head of Claude Code at Anthropic.
+
+25
+00:01:00,480 --> 00:01:04,960
+It is hard to describe the impact that Claude Code has had on the [music] world.
+
+26
+00:01:04,960 --> 00:01:09,119
+Around the time this episode comes out will be the one-year anniversary of Claude Code.
+
+27
+00:01:09,119 --> 00:01:19,840
+And in that short time, it has completely transformed the job of a software engineer and it is now starting to transform the jobs of many other functions in tech which we talk about.
+
+28
+00:01:19,840 --> 00:01:25,680
+Cloud code itself is also a massive driver of anthropic overall growth over the past year.
+
+29
+00:01:25,680 --> 00:01:29,119
+They just raised a round at over [music] $350 billion.
+
+30
+00:01:29,119 --> 00:01:33,680
+And as Boris mentions, the growth of Claude Code itself is still accelerating.
+
+31
+00:01:33,680 --> 00:01:36,560
+Just in the past month, their daily active users has doubled.
+
+32
+00:01:36,560 --> 00:01:41,040
+Boris is also just a really interesting, thoughtful, deepinking human.
+
+33
+00:01:41,040 --> 00:01:45,759
+And during this conversation, we discover we were born in the same city in Ukraine.
+
+34
+00:01:45,759 --> 00:01:46,560
+That is so funny.
+
+35
+00:01:46,560 --> 00:01:47,759
+I had no idea.
+
+36
+00:01:47,759 --> 00:01:52,880
+A huge thank you to Ben Man, Jenny Wen, and Mike Griger for suggesting topics for this conversation.
+
+37
+00:01:52,880 --> 00:02:00,000
+Don't forget to check out lennisprodpass.com for an incredible set of deals available exclusively to Lenny's newsletter subscribers.
+
+38
+00:02:00,000 --> 00:02:04,399
+Let's get into it after a short word from our wonderful sponsors.
+
+39
+00:02:04,399 --> 00:02:10,239
+Today's episode is brought to you by DX, the developer intelligence platform designed by leading researchers.
+
+40
+00:02:10,239 --> 00:02:14,239
+To thrive in the AI era, organizations need to adapt quickly.
+
+41
+00:02:14,239 --> 00:02:19,280
+But many organization leaders struggle to answer pressing questions like [music] which tools are working?
+
+42
+00:02:19,280 --> 00:02:20,720
+How are they being used?
+
+43
+00:02:20,720 --> 00:02:22,800
+What's actually driving value?
+
+44
+00:02:22,800 --> 00:02:27,200
+DX provides the data and insights that leaders need to navigate this shift.
+
+45
+00:02:27,200 --> 00:02:37,120
+With DX, companies like Dropbox, Booking.com, Adion, and Intercom get a deep understanding of how AI is providing value to their developers and what impact AI is having
+
+46
+00:02:37,120 --> 00:02:38,959
+on engineering productivity.
+
+47
+00:02:38,959 --> 00:02:44,160
+To learn more, visit DX's website at getdx.com/lenny.
+
+48
+00:02:44,160 --> 00:02:47,480
+That's getdx.com/lenny.
+
+49
+00:02:48,080 --> 00:02:50,319
+Applications break in all kinds of ways.
+
+50
+00:02:50,319 --> 00:02:55,920
+Crashes, slowdowns, regressions, and the stuff that you only see once real users show up.
+
+51
+00:02:55,920 --> 00:02:57,680
+Sentry catches it all.
+
+52
+00:02:57,680 --> 00:03:01,920
+See what happened where, and why, [music] down to the commit that introduced the error,
+
+53
+00:03:01,920 --> 00:03:07,360
+the developer who shipped it, and the exact line [music] of code all in one connected view.
+
+54
+00:03:07,360 --> 00:03:12,239
+I've definitely tried the five tabs [music] and Slack thread approach to debugging.
+
+55
+00:03:12,239 --> 00:03:13,599
+This is better.
+
+56
+00:03:13,599 --> 00:03:19,440
+Sentry shows you how the request moved, what ran, what slowed down, and what users saw.
+
+57
+00:03:19,440 --> 00:03:22,480
+Seir, Sentry's AI debugging agent, takes it from there.
+
+58
+00:03:22,480 --> 00:03:28,640
+It uses all of that Sentry context to tell you the root cause, suggest a fix, and even opens a PR for you.
+
+59
+00:03:28,640 --> 00:03:33,599
+It also reviews your PR and [music] flags any breaking changes with fixes ready to go.
+
+60
+00:03:33,599 --> 00:03:40,959
+Try Sentry and SER [music] for free at centry.io/lenny and use code Lenny for $100 in Sentry
+
+61
+00:03:40,959 --> 00:03:41,680
+credits.
+
+62
+00:03:41,680 --> 00:03:46,360
+That's s n t r y.io/lenny.
+
+63
+00:03:49,920 --> 00:03:53,837
+Boris, thank you so much for being here and welcome to the podcast.
+
+64
+00:03:53,837 --> 00:03:55,440
+[music] >> Yeah, thanks for having me on.
+
+65
+00:03:55,440 --> 00:03:58,480
+>> I want to start with a a spicy question.
+
+66
+00:03:58,480 --> 00:04:03,120
+About 6 months ago, I don't know if people even remember this, you actually left Anthropic.
+
+67
+00:04:03,120 --> 00:04:08,319
+You joined Curser and then two weeks later, you went back to Anthropic.
+
+68
+00:04:08,319 --> 00:04:09,040
+What happened there?
+
+69
+00:04:09,040 --> 00:04:11,522
+I don't think I've ever heard the actual story.
+
+70
+00:04:11,522 --> 00:04:17,159
+>> [laughter] >> It's the fastest job change that I've ever had.
+
+71
+00:04:17,199 --> 00:04:23,919
+Um, I joined Cursor because I'm a big fan of the product and honestly I met the team and I was just really impressed.
+
+72
+00:04:23,919 --> 00:04:25,600
+Uh, they're an awesome team.
+
+73
+00:04:25,600 --> 00:04:33,120
+Uh, I still I still think they're awesome and they're just building really cool stuff and kind of they they saw where AI coding was going I think before a lot of people did.
+
+74
+00:04:33,120 --> 00:04:36,880
+So the idea of building good product was just very exciting for me.
+
+75
+00:04:36,880 --> 00:04:43,199
+I think as soon as I got there, what I started to realize is what I really missed about Ant was the mission.
+
+76
+00:04:43,199 --> 00:04:49,199
+And that's actually what originally drove me to Ant also cuz uh but before I joined Anthropic,
+
+77
+00:04:49,199 --> 00:05:00,000
+I was, you know, I was working in big tech and then I was at some point I wanted to work at a at a lab to just help shape the future of this crazy thing that that we're building in some way.
+
+78
+00:05:00,000 --> 00:05:01,919
+And the thing that drew me to anthropic was the mission.
+
+79
+00:05:01,919 --> 00:05:03,759
+And it was, you know, it's all about safety.
+
+80
+00:05:03,759 --> 00:05:09,360
+And when you talk to people at Enthropic, just like find someone in the hallway, if you ask them why they're here,
+
+81
+00:05:09,360 --> 00:05:11,680
+the answer is always going to be safety.
+
+82
+00:05:11,680 --> 00:05:16,080
+Um, and so this kind of like missiondrivenness just really really resonated with me.
+
+83
+00:05:16,080 --> 00:05:20,479
+And I just know personally it's something I need in order to be happy.
+
+84
+00:05:20,479 --> 00:05:23,360
+Um, and I that's just a thing that I really missed.
+
+85
+00:05:23,360 --> 00:05:28,479
+And I found that, you know, whatever the work might be, no matter how exciting, even if it's building a really cool product,
+
+86
+00:05:28,479 --> 00:05:30,560
+it's just not really a substitute for that.
+
+87
+00:05:30,560 --> 00:05:35,919
+Um, so for me it was actually u it was pretty obvious that that I was missing that pretty quick.
+
+88
+00:05:35,919 --> 00:05:36,160
+>> Okay.
+
+89
+00:05:36,160 --> 00:05:40,400
+So let me follow the thread of just coming back to anthropic and the work you've done there.
+
+90
+00:05:40,400 --> 00:05:45,680
+This podcast is going to come out around the year anniversary of launching cloud code.
+
+91
+00:05:45,680 --> 00:05:50,240
+So I'm going to spend a little time just reflecting on the impact that you've had.
+
+92
+00:05:50,240 --> 00:05:59,039
+There's um this report that recently came out that I'm sure you saw by semi analysis that showed that 4% of all GitHub commits are authored by cloud code now.
+
+93
+00:05:59,039 --> 00:06:04,400
+and they predicted it'll be a fifth of all code commits on GitHub by the end of the year.
+
+94
+00:06:04,400 --> 00:06:10,000
+The way they put it is while we blinked, AI consumed all software development.
+
+95
+00:06:10,000 --> 00:06:18,960
+The day that we're recording this, Spotify just put out this uh headline that their best developers haven't written a line of code since December thanks to AI.
+
+96
+00:06:18,960 --> 00:06:25,360
+More and more of the most advanced senior engineers, including you, are sharing the fact that you don't write code anymore,
+
+97
+00:06:25,360 --> 00:06:26,960
+that it's all AI generated.
+
+98
+00:06:26,960 --> 00:06:37,199
+and many aren't even looking at code anymore is how far we've gotten in large part thanks to this little project that you started and that your team has scaled over the past year.
+
+99
+00:06:37,199 --> 00:06:42,319
+I'm curious just to hear your reflections on on this past year and the impact that your work has had.
+
+100
+00:06:42,319 --> 00:06:44,800
+These numbers are just totally crazy, right?
+
+101
+00:06:44,800 --> 00:06:49,919
+Like four 4% of all commits in the world is just way more than I imagined and like like you said,
+
+102
+00:06:49,919 --> 00:06:51,600
+it still feels like the starting point.
+
+103
+00:06:51,600 --> 00:06:53,520
+Um these are also just public commits.
+
+104
+00:06:53,520 --> 00:06:57,360
+So we actually think if you look at private repositories, it's quite a bit higher than that.
+
+105
+00:06:57,360 --> 00:07:00,960
+And I I think the craziest thing for me isn't even the number that we're at right now,
+
+106
+00:07:00,960 --> 00:07:06,720
+but the pace at which we're growing because if you look at Quad Code's growth rate kind of across any metric,
+
+107
+00:07:06,720 --> 00:07:08,479
+it's continuing to accelerate.
+
+108
+00:07:08,479 --> 00:07:12,000
+Um so it's not just going up, it's going up faster and faster.
+
+109
+00:07:12,000 --> 00:07:17,440
+When I first started Quad Code, it was just going to be a like it was just supposed to be a little hack.
+
+110
+00:07:17,440 --> 00:07:28,400
+Um you know we we broadly knew at Enthropic that we wanted to get a we wanted to ship some kind of coding product and you know for enthropic for a long time we were building the models in this way
+
+111
+00:07:28,400 --> 00:07:40,319
+that kind of fit our mental model of the way that we build safe hi where the model starts by being really good at coding then it gets really good at tool use then it gets really good at computer use roughly this is like the trajectory
+
+112
+00:07:40,319 --> 00:07:51,599
+uh and you know we've been working on this for a long time and when you look at the team that I started on it was called the anthropic labs team uh and actually Mike Kger and you know Ben man they just kicked this team off again uh
+
+113
+00:07:51,599 --> 00:08:01,840
+for kind of round two the team built some pretty cool stuff so we built quad code we built MCP we built the desktop app so you can kind of see the seeds of this idea you know like it's coding then
+
+114
+00:08:01,840 --> 00:08:12,800
+it's tool use then it's computer use and the reason this matters for anthropic is uh because of safety it's kind of again just back to that AI is getting more and more powerful it's getting more and more
+
+115
+00:08:12,800 --> 00:08:17,280
+capable the thing that's happened in the last year is that for at least For engineers,
+
+116
+00:08:17,280 --> 00:08:18,800
+the AI doesn't just write the code.
+
+117
+00:08:18,800 --> 00:08:21,919
+It it's not just a conversation partner, but it actually uses tools.
+
+118
+00:08:21,919 --> 00:08:23,280
+It acts in the world.
+
+119
+00:08:23,280 --> 00:08:28,960
+Um, and I think now with co-work, we're starting to see the transition for non-technical folks also.
+
+120
+00:08:28,960 --> 00:08:34,959
+Um, for a lot of people that use conversational AI, this might be the first time that they're using the thing that actually acts.
+
+121
+00:08:34,959 --> 00:08:39,680
+It can actually use your Gmail, it can use your Slack, it can do all these things for you and it's quite good at it.
+
+122
+00:08:39,680 --> 00:08:42,399
+Um, and it's only going to get better from here.
+
+123
+00:08:42,399 --> 00:08:53,519
+So I think for anthropic for a long time there was this feeling that we wanted to build something but it wasn't obvious what and so uh when I joined ant I spent one month kind of hacking and you know built a bunch of like weird prototypes
+
+124
+00:08:53,519 --> 00:09:03,519
+most of them didn't ship and you know weren't even close to shipping it was just kind of understanding the boundaries of what the model can do then I spent a month doing post- training um so to understand kind of the research
+
+125
+00:09:03,519 --> 00:09:13,440
+side of it and I think honestly that's just for me as an engineer I find that to do good work you really have to understand the layer under the layer at which you work.
+
+126
+00:09:13,440 --> 00:09:18,240
+And with traditional engineering work, you know, if you're working on product, you want to understand the infrastructure,
+
+127
+00:09:18,240 --> 00:09:23,680
+the runtime, the virtual machine, the language kind of whatever that is, the system that you're building on.
+
+128
+00:09:23,680 --> 00:09:30,399
+But, uh, yeah, if you're like if you're working in AI, you just really have to understand the model to some degree to to do good work.
+
+129
+00:09:30,399 --> 00:09:36,560
+So, I took a little detour to do that and then I came back and just started prototyping what eventually became quad code.
+
+130
+00:09:36,560 --> 00:09:43,519
+Uh, and the very first version of it, I I have like a there's like a video recording of the summer because I recorded this demo and I posted it.
+
+131
+00:09:43,519 --> 00:09:45,200
+It was called QuadCLI back then.
+
+132
+00:09:45,200 --> 00:09:56,240
+And I just kind of showed off how it used a few tools and the shocking thing for me was that I gave it a batch tool and uh it just was able to use that to write code to tell me what music I'm
+
+133
+00:09:56,240 --> 00:09:59,360
+listening to when I asked it like what music am I listening to?
+
+134
+00:09:59,360 --> 00:10:01,200
+And this is the craziest thing, right?
+
+135
+00:10:01,200 --> 00:10:06,720
+cuz it's like there's no we I I didn't instruct the model to say, you know, use, you know,
+
+136
+00:10:06,720 --> 00:10:08,560
+this tool for this or kind of do whatever.
+
+137
+00:10:08,560 --> 00:10:14,079
+The model was given this tool and I figured out how to use it to answer this question that I had that I wasn't even sure if it could answer.
+
+138
+00:10:14,079 --> 00:10:16,720
+What music am I listening to?
+
+139
+00:10:16,720 --> 00:10:20,240
+And so I I I started prototyping this a little bit more.
+
+140
+00:10:20,240 --> 00:10:25,200
+Um I made a post about it and I announced it internally and it got two likes.
+
+141
+00:10:25,200 --> 00:10:37,120
+That's the that was that was the extent of the reaction at the time because I think people internally you know like when you think of coding tools you think of like you think of IDE you think about kind of all these pretty sophisticated environments no one
+
+142
+00:10:37,120 --> 00:10:48,480
+thought that this thing could be terminal based um that's sort of a weird way to design it and that wasn't really the intention but uh you know from the start I built it in a terminal because you know for the first couple months it
+
+143
+00:10:48,480 --> 00:10:57,200
+was just me so it was just the easiest way to build uh and for me this is actually a pretty important product lesson right is like you want to underresource things a little bit at the
+
+144
+00:10:57,200 --> 00:10:58,640
+start.
+
+145
+00:10:58,640 --> 00:11:08,880
+Then we started thinking about what other form factors we should build and we actually decided to stick with the terminal for a while and the biggest reason was the model is improving so
+
+146
+00:11:08,880 --> 00:11:09,680
+quickly.
+
+147
+00:11:09,680 --> 00:11:13,680
+We felt that there wasn't really another form factor that could keep up with it.
+
+148
+00:11:13,680 --> 00:11:20,959
+And honestly this was just me kind of like struggling with kind of like what should we build you know like for the last year quad code has just been all I think about.
+
+149
+00:11:20,959 --> 00:11:24,000
+And so just like late at night, this is just something I was thinking about like, okay,
+
+150
+00:11:24,000 --> 00:11:25,760
+the model is continuing to improve.
+
+151
+00:11:25,760 --> 00:11:26,320
+What do we do?
+
+152
+00:11:26,320 --> 00:11:27,519
+How can we possibly keep up?
+
+153
+00:11:27,519 --> 00:11:31,440
+And the terminal was honestly just the only idea that I had.
+
+154
+00:11:31,440 --> 00:11:36,720
+And uh yeah, it ended up catching on after after I released it pretty quickly.
+
+155
+00:11:36,720 --> 00:11:40,959
+It became a hit at Anthropic and you know, the the daily active users just went vertical.
+
+156
+00:11:40,959 --> 00:11:46,800
+And really early on, actually before I launched it, Ben man uh nudged me to make a DAU chart and I was like,
+
+157
+00:11:46,800 --> 00:11:49,600
+you know, it's like kind of early maybe, you know, should we really do it right now?
+
+158
+00:11:49,600 --> 00:11:51,120
+and he was like,"Yeah."
+
+159
+00:11:51,120 --> 00:11:53,839
+And so the the chart just went vertical pretty immediately.
+
+160
+00:11:53,839 --> 00:11:57,680
+Uh and then in February, we released it externally.
+
+161
+00:11:57,680 --> 00:12:04,000
+Actually, something that people don't really remember is Quad Code was not initially a hit when we released it.
+
+162
+00:12:04,000 --> 00:12:05,519
+It it got a bunch of users.
+
+163
+00:12:05,519 --> 00:12:12,560
+There was a lot of early adopters that got it immediately, but it actually took many months for everyone to really understand what this thing is.
+
+164
+00:12:12,560 --> 00:12:15,200
+Just again, it's like it's just so different.
+
+165
+00:12:15,200 --> 00:12:25,040
+And when I think about it, kind of part of the reason quad code works is this idea of latent demand where we bring the tool to where people are and it makes existing workflows a little bit easier,
+
+166
+00:12:25,040 --> 00:12:26,720
+but also because it's it's in a terminal.
+
+167
+00:12:26,720 --> 00:12:27,680
+It's like a little surprising.
+
+168
+00:12:27,680 --> 00:12:28,880
+It's a little alien in this way.
+
+169
+00:12:28,880 --> 00:12:32,959
+So you have to you have to kind of be open-minded and you had to learn to use it.
+
+170
+00:12:32,959 --> 00:12:38,000
+And of course now you know quad code is available you know in the iOS and Android quad app.
+
+171
+00:12:38,000 --> 00:12:39,440
+It's available in the desktop app.
+
+172
+00:12:39,440 --> 00:12:40,560
+It's available on the website.
+
+173
+00:12:40,560 --> 00:12:43,760
+It's available as IDE extensions in Slack and GitHub.
+
+174
+00:12:43,760 --> 00:12:53,600
+you know all these places where engineers are it's a little more familiar but that wasn't the starting point so yeah I mean at the beginning it was kind of a surprise that this thing was
+
+175
+00:12:53,600 --> 00:13:05,440
+even useful and uh you know as the team grew as the product grew as it started to become more and more useful to people just people around the world from you know small startups to the biggest fang
+
+176
+00:13:05,440 --> 00:13:16,560
+companies started using it and they started giving feedback and I think just reflecting back it's been such a humbling experience cuz we just we keep learning from our users and just the
+
+177
+00:13:16,560 --> 00:13:19,920
+most exciting thing is like you know none of us really know what we're doing.
+
+178
+00:13:19,920 --> 00:13:26,079
+Um and we're just trying to figure out along with everyone else and the single best signal for that is just feedback from users.
+
+179
+00:13:26,079 --> 00:13:29,360
+Um so that's just been the best I' I've been surprised so many times.
+
+180
+00:13:29,360 --> 00:13:33,680
+It's incredible how fast something can change in today's world.
+
+181
+00:13:33,680 --> 00:13:44,720
+You launched this a year ago and it wasn't the first time people could use AI to code but uh in a year the entire profession of software engineering has dramatically changed like there's all
+
+182
+00:13:44,720 --> 00:13:55,760
+these predictions oh AI is going to be written 100% AI's code is going to be written by AI everyone's like no that's crazy what are you talking about now it's like >> of course it's happening exactly as they said it's just so things move so fast
+
+183
+00:13:55,760 --> 00:14:06,079
+and change so fast now >> yeah it's really fast back at uh back at code with quad back in May that was like our first uh you know like developer conference that we did as Enthropic.
+
+184
+00:14:06,079 --> 00:14:16,399
+Um I did a short talk and in the Q&A after the talk people were asking what are your predictions for the end of the year and my prediction back in May of 2025 was by the end of the year you might not
+
+185
+00:14:16,399 --> 00:14:23,040
+need an ID to code anymore and we're going to start to see engineers not doing this and I remember the room like audibly gasped.
+
+186
+00:14:23,040 --> 00:14:31,519
+It was such a crazy prediction but I think like at anthropic like this is just the way the way we think about things is exponentials and this is like very deep in the DNA.
+
+187
+00:14:31,519 --> 00:14:36,800
+Like if you look at our co-founders like three of them were the first three authors on the scaling laws paper.
+
+188
+00:14:36,800 --> 00:14:48,240
+Um so we really just think in exponentials and if you kind of look at the exponential of the percent of code that was written by quad at that point if you just trace the line it's pretty obvious we're going to cross 100% by the end of the year
+
+189
+00:14:48,240 --> 00:14:50,959
+even if it just does not match intuition at all.
+
+190
+00:14:50,959 --> 00:15:01,199
+Um, and so all I did was trace the line and yeah, in November that, you know, that happened for me personally and that's been the case since and we're starting to see that for a lot of different customers too.
+
+191
+00:15:01,199 --> 00:15:08,240
+I thought was really interesting what you just shared there about kind of the journey is this kind of idea of just playing around and seeing what happens.
+
+192
+00:15:08,240 --> 00:15:13,120
+This came up comes up with open claw a lot just like Peter was playing around and just like a thing happen.
+
+193
+00:15:13,120 --> 00:15:21,920
+And it feels like that's a central kind of ingredient to a lot of the biggest innovations in AI is people just sitting around trying stuff to pushing the models further than most other people.
+
+194
+00:15:21,920 --> 00:15:25,199
+>> I mean this the thing about innovation right like you can't uh you can't force it.
+
+195
+00:15:25,199 --> 00:15:26,800
+There's no road map for innovation.
+
+196
+00:15:26,800 --> 00:15:28,320
+Um you just have to give people space.
+
+197
+00:15:28,320 --> 00:15:30,959
+You have to give them maybe the word is like safety.
+
+198
+00:15:30,959 --> 00:15:33,760
+So it's like psychological safety that it's okay to fail.
+
+199
+00:15:33,760 --> 00:15:36,240
+It's okay if 80% of the ideas are bad.
+
+200
+00:15:36,240 --> 00:15:38,079
+Um you also have to hold them accountable a bit.
+
+201
+00:15:38,079 --> 00:15:43,519
+So if the idea is bad, you you know you cut your losses, move on to the next idea instead of investing more.
+
+202
+00:15:43,519 --> 00:15:47,680
+Uh in the early days of quad code, I had no idea that this thing would be useful at all.
+
+203
+00:15:47,680 --> 00:15:52,959
+Cuz even in February when we released it, it was writing maybe I don't know like 20% of my code,
+
+204
+00:15:52,959 --> 00:15:53,839
+not more.
+
+205
+00:15:53,839 --> 00:15:56,000
+And even in May, it was writing maybe 30%.
+
+206
+00:15:56,000 --> 00:15:58,560
+I was still using you know curtzer for most of my code.
+
+207
+00:15:58,560 --> 00:16:00,959
+And it only crossed 100% in November.
+
+208
+00:16:00,959 --> 00:16:01,920
+So it took a while.
+
+209
+00:16:01,920 --> 00:16:04,720
+But even from the earliest day, it just felt like I was on to something.
+
+210
+00:16:04,720 --> 00:16:07,759
+And I was just spending like every night, every weekend hockey on this.
+
+211
+00:16:07,759 --> 00:16:10,880
+And luckily my, you know, my wife was very supportive.
+
+212
+00:16:10,880 --> 00:16:13,360
+Um, but it it just felt like it was on to something.
+
+213
+00:16:13,360 --> 00:16:14,639
+It wasn't obvious what.
+
+214
+00:16:14,639 --> 00:16:17,519
+And and sometimes, you know, you find a thread, you just have to pull on it.
+
+215
+00:16:17,519 --> 00:16:21,040
+>> So at this point, 100% of your code is written by cloud code.
+
+216
+00:16:21,040 --> 00:16:23,519
+Is that is that kind of the current state of your coding?
+
+217
+00:16:23,519 --> 00:16:23,759
+>> Yeah.
+
+218
+00:16:23,759 --> 00:16:26,320
+So 100% of my code is written by cloud code.
+
+219
+00:16:26,320 --> 00:16:28,959
+Um, I am a fairly prolific coder.
+
+220
+00:16:28,959 --> 00:16:31,680
+Um, and this has been the case even when I worked back at Instagram.
+
+221
+00:16:31,680 --> 00:16:34,639
+I was like one of the top few most productive engineers.
+
+222
+00:16:34,639 --> 00:16:38,320
+Um and that's actually that's still the case uh here at Anthropic.
+
+223
+00:16:38,320 --> 00:16:38,639
+>> Wow.
+
+224
+00:16:38,639 --> 00:16:41,279
+Even as head of head of the team.
+
+225
+00:16:41,279 --> 00:16:41,519
+>> Yeah.
+
+226
+00:16:41,519 --> 00:16:41,759
+Yeah.
+
+227
+00:16:41,759 --> 00:16:43,440
+Do still do a lot of coding.
+
+228
+00:16:43,440 --> 00:16:49,040
+Um and so every you know every day I ship like 10 20 30 p requests something like that >> every day.
+
+229
+00:16:49,040 --> 00:16:49,759
+>> Every day.
+
+230
+00:16:49,759 --> 00:16:50,399
+Yeah.
+
+231
+00:16:50,399 --> 00:16:50,959
+>> Good god.
+
+232
+00:16:50,959 --> 00:16:53,279
+>> Uh 100% written by quad code.
+
+233
+00:16:53,279 --> 00:16:59,279
+I have not edited a single line by hand since uh November.
+
+234
+00:16:59,279 --> 00:17:02,000
+And yeah, that that's been it.
+
+235
+00:17:02,000 --> 00:17:03,600
+I do look at the code.
+
+236
+00:17:03,600 --> 00:17:06,959
+So I I don't think we're kind of at the point yet where you can be totally hands-off,
+
+237
+00:17:06,959 --> 00:17:09,439
+especially when there's a lot of people, you know, like running the program.
+
+238
+00:17:09,439 --> 00:17:10,720
+You have to make sure that it's correct.
+
+239
+00:17:10,720 --> 00:17:12,720
+You have to make sure it's safe and so on.
+
+240
+00:17:12,720 --> 00:17:16,160
+Um, and then we also have Quad doing automatic code review for everything.
+
+241
+00:17:16,160 --> 00:17:19,760
+Um, so here at Enthropic, Quad reviews 100% of poll requests.
+
+242
+00:17:19,760 --> 00:17:27,120
+Um, there's still layer of like human review after it, but you kind of like you still do want some of these checkpoints like you still want a human looking at the code.
+
+243
+00:17:27,120 --> 00:17:32,799
+um unless it's like pure prototype code that you know it's not going to run it's not going to run anywhere it's just a prototype.
+
+244
+00:17:32,799 --> 00:17:34,240
+>> What's kind of the next frontier?
+
+245
+00:17:34,240 --> 00:17:38,400
+So at this point 100% of your code is being written by AI.
+
+246
+00:17:38,400 --> 00:17:42,559
+This is clearly where everyone is going in software engineering.
+
+247
+00:17:42,559 --> 00:17:44,559
+That felt like a crazy milestone.
+
+248
+00:17:44,559 --> 00:17:47,440
+Now it's just like of course this is the world now.
+
+249
+00:17:47,440 --> 00:17:54,799
+What's what's kind of the next big shift to how software is written that either your team's already operating in or you think will head towards?
+
+250
+00:17:54,799 --> 00:17:58,960
+I think something that's happening right now is Quad is starting to come up with ideas.
+
+251
+00:17:58,960 --> 00:18:00,960
+Um so Quad is looking through feedback.
+
+252
+00:18:00,960 --> 00:18:02,640
+It's uh looking at bug reports.
+
+253
+00:18:02,640 --> 00:18:10,320
+It's looking at um you know like telemetry and and things like this and it's starting to come up with ideas for bug fixes and things to ship.
+
+254
+00:18:10,320 --> 00:18:16,400
+So it's just starting to get a little more um you know like a little more like a co-orker or something like that.
+
+255
+00:18:16,400 --> 00:18:19,200
+I think the second thing is we're starting to branch out of coding a little bit.
+
+256
+00:18:19,200 --> 00:18:23,200
+So I think at this point it's safe to say that coding is largely solved.
+
+257
+00:18:23,200 --> 00:18:27,440
+At least for the kind of programming that I do, it's just a solved problem because quad can do it.
+
+258
+00:18:27,440 --> 00:18:29,919
+And so now we're starting to think about okay like what's next?
+
+259
+00:18:29,919 --> 00:18:31,280
+What's beyond this?
+
+260
+00:18:31,280 --> 00:18:33,840
+There's a lot of things that are kind of adjacent to coding.
+
+261
+00:18:33,840 --> 00:18:36,400
+Um and I think this is going to be coming.
+
+262
+00:18:36,400 --> 00:18:44,799
+But also just you know general tasks, you know, like I use co-work every day now to do all sorts of things that are just not related to coding at all and just to do it automatically.
+
+263
+00:18:44,799 --> 00:18:46,799
+Like for example, I had to pay a parking ticket the other day.
+
+264
+00:18:46,799 --> 00:18:48,640
+I just had co-work do it.
+
+265
+00:18:48,640 --> 00:18:52,160
+um all of my project management for the team uh co-work does all of it.
+
+266
+00:18:52,160 --> 00:18:57,840
+It's like syncing stuff between spreadsheets and messaging people on Slack and email and all this kind of stuff.
+
+267
+00:18:57,840 --> 00:19:08,400
+So I think the frontier is something like this and I I don't think it's coding because I think coding is you know it's pretty much solved and over the next few months I think what we're going to see is just
+
+268
+00:19:08,400 --> 00:19:14,240
+across the industry it's going to become increasingly solved you know for every kind of codebase every tech stack that people work on.
+
+269
+00:19:14,240 --> 00:19:17,679
+>> This idea of helping you come up with what to work on is so interesting.
+
+270
+00:19:17,679 --> 00:19:22,160
+A lot of people listening to this are product managers and they're probably sweating.
+
+271
+00:19:22,160 --> 00:19:24,240
+How do you use Claude for this?
+
+272
+00:19:24,240 --> 00:19:25,200
+Do you just talk to it?
+
+273
+00:19:25,200 --> 00:19:29,919
+Is there anything clever you've come up with to help you use it to come up with what to build?
+
+274
+00:19:29,919 --> 00:19:34,320
+>> Honestly, the simplest thing is like open quad code or co-work and point it at a Slack thread.
+
+275
+00:19:34,320 --> 00:19:39,440
+Um, you know, like for us, we have this channel that that's all the internal feedback about Quad Code.
+
+276
+00:19:39,440 --> 00:19:45,840
+Since we first released it, even in like 2024 internally, it's just been this fire hose of feedback.
+
+277
+00:19:45,840 --> 00:19:46,880
+Um, and it's the best.
+
+278
+00:19:46,880 --> 00:19:54,400
+And like in the early days, what I would do is anytime that someone sends feedback, I would just go in and I would fix every single thing as fast as I possibly could.
+
+279
+00:19:54,400 --> 00:19:56,880
+So like within a minute, within 5 minutes or whatever.
+
+280
+00:19:56,880 --> 00:20:01,039
+And this just really fast feedback cycle, it encourages people to give more and more feedback.
+
+281
+00:20:01,039 --> 00:20:05,280
+It's just so important cuz it makes them feel heard cuz you know like usually when you use a product,
+
+282
+00:20:05,280 --> 00:20:08,960
+you give feedback, it just goes into a black hole somewhere and then you don't give feedback again.
+
+283
+00:20:08,960 --> 00:20:13,840
+So if you make people feel heard, then they want to contribute and they want to help make the thing better.
+
+284
+00:20:13,840 --> 00:20:17,760
+Um, and so now I kind of do the same thing, but Quad honestly does a lot of the work.
+
+285
+00:20:17,760 --> 00:20:21,679
+So I pointed at the channel and it's like, "Okay, here's a few things that I can do.
+
+286
+00:20:21,679 --> 00:20:23,360
+I just put up a couple PRs.
+
+287
+00:20:23,360 --> 00:20:24,320
+Want to take a look at that one?"
+
+288
+00:20:24,320 --> 00:20:25,039
+I'm like, "Yeah."
+
+289
+00:20:25,039 --> 00:20:28,000
+Have you noticed that it is getting much better at this?
+
+290
+00:20:28,000 --> 00:20:29,520
+Because this is kind of the holy grail, right?
+
+291
+00:20:29,520 --> 00:20:31,679
+Now it's like, "Cool, building solved."
+
+292
+00:20:31,679 --> 00:20:33,760
+Code review became kind of the next bottleneck.
+
+293
+00:20:33,760 --> 00:20:35,840
+All these PRs, who's going to review them all?
+
+294
+00:20:35,840 --> 00:20:41,600
+The next big open question is just like, okay, now we need to now now humans are necessary for figuring out what to build,
+
+295
+00:20:41,600 --> 00:20:42,400
+what to prioritize.
+
+296
+00:20:42,400 --> 00:20:45,200
+And you're saying that that's where claude code is starting to help you.
+
+297
+00:20:45,200 --> 00:20:50,640
+Has it has it gotten a lot better with like say Opus 46 or what's been the trajectory there?
+
+298
+00:20:50,640 --> 00:20:50,880
+>> Yeah.
+
+299
+00:20:50,880 --> 00:20:52,000
+Yeah, it's improved a lot.
+
+300
+00:20:52,000 --> 00:20:56,240
+Um I think some of it is kind of like training that we do specific to coding.
+
+301
+00:20:56,240 --> 00:21:07,440
+Um so you know obviously you know best coding model in the world and you know it's getting better and better like 4.6 is just incredible but also actually a lot of the training that we do outside of coding translates pretty well too.
+
+302
+00:21:07,440 --> 00:21:13,679
+So there is this kind of like transfer where you teach the model to do you know X and it kind of gets better at Y.
+
+303
+00:21:13,679 --> 00:21:25,280
+Um yeah and the the gains have just been insane like at anthropic over the last year like since we introduced quad code we probably I don't know the exact number we probably like 4x the engineering team or something like this
+
+304
+00:21:25,280 --> 00:21:29,440
+but productivity per engineer has increased 200%.
+
+305
+00:21:29,440 --> 00:21:39,760
+in terms of like pull requests and like this number is just crazy for anyone that actually works in the space and works on deaf productivity because back in a previous life I was at Meta and you know one of my responsibilities was code
+
+306
+00:21:39,760 --> 00:21:41,039
+quality for the company.
+
+307
+00:21:41,039 --> 00:21:45,200
+So this is like the all of our code bases that was my responsibility like Facebook, Instagram,
+
+308
+00:21:45,200 --> 00:21:47,120
+WhatsApp all this stuff.
+
+309
+00:21:47,120 --> 00:21:58,640
+Um and a lot of that was about productivity because if you make the code higher quality then engineers are more productive and things that we saw is you know in a year with hundreds of engineers working on it you would see a gain of like a few
+
+310
+00:21:58,640 --> 00:22:01,520
+percentage points of productivity something like this.
+
+311
+00:22:01,520 --> 00:22:06,320
+Um and so nowadays seeing these gains of just hundreds of percentage points it's is just absolutely insane.
+
+312
+00:22:06,320 --> 00:22:11,679
+What's also insane is just how normalized this has all been like we hear these numbers like of course AI is doing this to us.
+
+313
+00:22:11,679 --> 00:22:19,919
+It's just it's so unprecedented the amount of change that is happening to software development to building products to just this the world of tech.
+
+314
+00:22:19,919 --> 00:22:22,159
+It's just like so easy to get used to it.
+
+315
+00:22:22,159 --> 00:22:25,360
+But it's important to recognize this is crazy.
+
+316
+00:22:25,360 --> 00:22:28,559
+This is something like I have to remind myself once in a while.
+
+317
+00:22:28,559 --> 00:22:37,200
+There's sort of like a downside of this because the model changes so well there's actually like there's many kind of downsides that that we could talk about but I think one of them on a personal level is the model
+
+318
+00:22:37,200 --> 00:22:46,880
+changes so often that I sometimes get stuck in this like old way of of thinking about it and I even find that like new people on the team or even new
+
+319
+00:22:46,880 --> 00:22:53,200
+grads that join do stuff in a more kind of like AGI forward way than I do.
+
+320
+00:22:53,200 --> 00:23:02,640
+So like sometimes for example I I I had this case like a couple months ago where there was a memory leak and so like what this is is you know like quad code the memory usage is going up and at some point it crashes.
+
+321
+00:23:02,640 --> 00:23:13,840
+This is like a very common kind of engineering problem that you know every engineer has debugged a thousand times and traditionally the way that you do it is you take a heap snapshot you put it into a special debugger you kind of figure out what's
+
+322
+00:23:13,840 --> 00:23:16,960
+going on you know use these special tools to see what's happening.
+
+323
+00:23:16,960 --> 00:23:22,159
+Um, and I was doing this and I was kind of like looking through these traces and trying to figure out what was going on.
+
+324
+00:23:22,159 --> 00:23:27,120
+And the engineer that was newer on the team just uh had Quad Code do it and was like,
+
+325
+00:23:27,120 --> 00:23:28,559
+"Hey Quad, it seems like there's a leak.
+
+326
+00:23:28,559 --> 00:23:29,280
+Can you figure it out?"
+
+327
+00:23:29,280 --> 00:23:32,240
+And so like Quad Code did exactly the same thing that I was doing.
+
+328
+00:23:32,240 --> 00:23:33,840
+It it took the heap snapshot.
+
+329
+00:23:33,840 --> 00:23:37,440
+It wrote a little tool for itself so it can kind of like analyze it itself.
+
+330
+00:23:37,440 --> 00:23:40,000
+Um, it was sort of like a just in time program.
+
+331
+00:23:40,000 --> 00:23:43,280
+Uh, and it found the issue and put up a pull request faster than I could.
+
+332
+00:23:43,280 --> 00:23:48,640
+So it's it's something where like for those of us that have been using the model for a long time,
+
+333
+00:23:48,640 --> 00:23:56,960
+you still have to kind of transport yourself to the current moment and not get stuck back in an old model because it's not sonnet 3.5 anymore.
+
+334
+00:23:56,960 --> 00:23:59,600
+The new models are just completely completely different.
+
+335
+00:23:59,600 --> 00:24:03,200
+Uh and just this this mindset shift is is very different.
+
+336
+00:24:03,200 --> 00:24:11,039
+I hear you have these very specific principles that you've codified for your team that when people join you you kind of walk them through them.
+
+337
+00:24:11,039 --> 00:24:14,799
+I believe one of them is what's better than doing something having Claude do it.
+
+338
+00:24:14,799 --> 00:24:21,840
+And it feels like that's exactly what you describe with this memory leak is just like you almost forgot that principle of like okay let me see if Claude can solve this for me.
+
+339
+00:24:21,840 --> 00:24:32,640
+There's this uh there's this interesting thing that happens also when you um when you underfund everything a little bit uh because then people are kind of forced to clify and this is something that we see.
+
+340
+00:24:32,640 --> 00:24:40,880
+So you know for work where sometimes we just put like one engineer on a project and the way that they're able to ship really quickly because they want to ship quickly.
+
+341
+00:24:40,880 --> 00:24:44,480
+This is like an intrinsic motivation that comes from within is just wanting to do a good job.
+
+342
+00:24:44,480 --> 00:24:47,039
+One if you have a good idea you just really want to get it out there.
+
+343
+00:24:47,039 --> 00:24:48,320
+No one has to force you to do that.
+
+344
+00:24:48,320 --> 00:24:49,840
+That comes from you.
+
+345
+00:24:49,840 --> 00:24:54,480
+Um and and so if you have claude, you can just use that to automate a lot of work.
+
+346
+00:24:54,480 --> 00:24:57,200
+Uh and that that's kind of what we see over and over.
+
+347
+00:24:57,200 --> 00:25:01,039
+So I think that's kind of like one principle is underfunding things a little bit.
+
+348
+00:25:01,039 --> 00:25:04,240
+I think another principle is just encouraging people to go faster.
+
+349
+00:25:04,240 --> 00:25:08,080
+So if you can do something today, you should just do it today.
+
+350
+00:25:08,080 --> 00:25:11,520
+And this is something we we really really encourage on the team.
+
+351
+00:25:11,520 --> 00:25:17,039
+Early on it was really important because it was just me and so our only advantage was speed.
+
+352
+00:25:17,039 --> 00:25:21,200
+that's the only way that we could ship a product that would compete in this very crowded coding market.
+
+353
+00:25:21,200 --> 00:25:24,400
+But nowadays, it's still very much a principle we have on the team.
+
+354
+00:25:24,400 --> 00:25:30,159
+And if you want to go faster, a really good way to do that is to just have Claude do more stuff.
+
+355
+00:25:30,159 --> 00:25:32,720
+Um, so he it just very much encourages that.
+
+356
+00:25:32,720 --> 00:25:39,840
+This idea of underfunding, it's so interesting because in general there's this feeling like AI is going to allow you to not have as many employees,
+
+357
+00:25:39,840 --> 00:25:41,279
+not have as many engineers.
+
+358
+00:25:41,279 --> 00:25:43,679
+And so it's not only you can be more productive.
+
+359
+00:25:43,679 --> 00:25:47,440
+What you're saying is that you will actually do better if you underfund.
+
+360
+00:25:47,440 --> 00:25:49,200
+It's not just that AI can make you faster.
+
+361
+00:25:49,200 --> 00:25:54,880
+It's you will get more out of the AI tooling if you have fewer people working on something.
+
+362
+00:25:54,880 --> 00:25:55,120
+Yeah.
+
+363
+00:25:55,120 --> 00:25:58,080
+If you if you hire great engineers, they'll figure out how to do it.
+
+364
+00:25:58,080 --> 00:26:00,400
+And uh especially if you empower them to do it.
+
+365
+00:26:00,400 --> 00:26:06,240
+This is something I actually talk talk a lot about with uh you know with like CTO's and kind of all sorts of companies.
+
+366
+00:26:06,240 --> 00:26:08,799
+My advice generally is don't try to optimize.
+
+367
+00:26:08,799 --> 00:26:11,279
+Don't don't try to cost cut at the beginning.
+
+368
+00:26:11,279 --> 00:26:14,000
+Start by just giving engineers as many tokens as possible.
+
+369
+00:26:14,000 --> 00:26:19,360
+And now now you're starting to see companies like you know at Anthropic we have you know everyone can use a lot of tokens.
+
+370
+00:26:19,360 --> 00:26:22,320
+We're starting to see this come up as like a perk at some companies.
+
+371
+00:26:22,320 --> 00:26:24,960
+Like if you join you get unlimited tokens.
+
+372
+00:26:24,960 --> 00:26:36,000
+This is a thing I very much encourage because um it makes people free to try these ideas that would have been too crazy and then if there's an idea that works then you can
+
+373
+00:26:36,000 --> 00:26:47,039
+figure out how to scale it and that's the point to kind of optimize and to cost cut figure out like you know maybe you can do it with haiku or with sonnet instead of opus or whatever but at the beginning you just want to throw a lot of tokens at it and see if the idea
+
+374
+00:26:47,039 --> 00:26:49,440
+works and give engineers the freedom to do that.
+
+375
+00:26:49,440 --> 00:26:55,919
+So the advice here is uh just be be loose with your tokens with this the cost on on using these models.
+
+376
+00:26:55,919 --> 00:26:58,240
+People hearing this may be like of course he works at Anthropic.
+
+377
+00:26:58,240 --> 00:27:00,559
+He wants us to use as many tokens as possible.
+
+378
+00:27:00,559 --> 00:27:08,080
+But you're what you're saying here is the the most interesting innovative ideas will come out of someone just kind of taking it to the max and seeing what's possible.
+
+379
+00:27:08,080 --> 00:27:08,400
+>> Yeah.
+
+380
+00:27:08,400 --> 00:27:13,600
+And I and I think the reality is like at small scale like you know you're not going to get like a giant bill or anything like this.
+
+381
+00:27:13,600 --> 00:27:23,039
+Like if it's an individual engineer experimenting, it's the token cost is still probably relatively low relative to their salary or you know other costs of running the
+
+382
+00:27:23,039 --> 00:27:24,480
+business.
+
+383
+00:27:24,480 --> 00:27:28,559
+So it it's actually like not not a huge cost as the thing scales up.
+
+384
+00:27:28,559 --> 00:27:33,840
+So like let's say you know they build something awesome and then it takes a huge amount of tokens and then the cost becomes pretty big.
+
+385
+00:27:33,840 --> 00:27:35,679
+That's the point at which you want to optimize it.
+
+386
+00:27:35,679 --> 00:27:37,440
+But don't don't do that too early.
+
+387
+00:27:37,440 --> 00:27:41,520
+>> Have you seen companies where their uh token cost is higher than their salary?
+
+388
+00:27:41,520 --> 00:27:44,400
+Is that a trend you think we're going to find and see?
+
+389
+00:27:44,400 --> 00:27:47,679
+>> You know, at Anthropic, we're starting to see some engineers that are spending, you know,
+
+390
+00:27:47,679 --> 00:27:50,480
+like hundreds of thousands a month in in tokens.
+
+391
+00:27:50,480 --> 00:27:52,640
+Um, so we're starting to see this a little bit.
+
+392
+00:27:52,640 --> 00:27:56,880
+Um, there's some companies that are we're starting to see similar things.
+
+393
+00:27:56,880 --> 00:27:58,240
+Yeah.
+
+394
+00:27:58,240 --> 00:28:01,760
+>> Going back to coding, do you miss writing code?
+
+395
+00:28:01,760 --> 00:28:06,080
+Is this something you're kind of sad about that this is no longer a thing you will do as a software engineer?
+
+396
+00:28:06,080 --> 00:28:12,720
+It's funny for me, you know, like when when I learned engineering, for me it was very practical.
+
+397
+00:28:12,720 --> 00:28:18,000
+I learned engineering so I could build stuff and for me I was I was selftaught, you know,
+
+398
+00:28:18,000 --> 00:28:24,480
+like I studied economics in school, but um I didn't study CS, but I I taught myself engineering kind of early on.
+
+399
+00:28:24,480 --> 00:28:29,120
+I was programming in like middle school and from the very beginning it was very practical.
+
+400
+00:28:29,120 --> 00:28:32,559
+So I actually like I learned to code so that I can cheat on a math test.
+
+401
+00:28:32,559 --> 00:28:38,320
+That was like the first thing we had these like graphing calculators and you know I just programmed the answer into >> TI83.
+
+402
+00:28:38,320 --> 00:28:39,760
+>> T83 plus.
+
+403
+00:28:39,760 --> 00:28:40,000
+Yeah.
+
+404
+00:28:40,000 --> 00:28:40,240
+Yeah.
+
+405
+00:28:40,240 --> 00:28:41,359
+Exactly.
+
+406
+00:28:41,359 --> 00:28:41,919
+[laughter] >> Plus.
+
+407
+00:28:41,919 --> 00:28:42,080
+Yeah.
+
+408
+00:28:42,080 --> 00:28:48,159
+So like I programmed the answers in and then the next like math test whatever like the next year that it was just like too hard.
+
+409
+00:28:48,159 --> 00:28:50,559
+Like I couldn't program all the answers in because I didn't know what the questions were.
+
+410
+00:28:50,559 --> 00:28:58,399
+And so I had to write like a little solver so that it it was a program that would just like solve these like uh you know these al algebra questions or whatever.
+
+411
+00:28:58,399 --> 00:29:04,080
+And then I figured out you can get a little cable, you can give the program to the rest of the class and then the whole class gets A's.
+
+412
+00:29:04,080 --> 00:29:07,039
+But then we all got caught and the teacher told us to knock it off.
+
+413
+00:29:07,039 --> 00:29:13,840
+But from the very beginning it's it's always just been very practical for me where programming is a way to build a thing.
+
+414
+00:29:13,840 --> 00:29:16,720
+It's not the end in itself.
+
+415
+00:29:16,720 --> 00:29:22,480
+At some point I personally fell into the rabbit hole of kind of like the the beauty of of programming.
+
+416
+00:29:22,480 --> 00:29:25,360
+Um so like I I wrote a book about TypeScript.
+
+417
+00:29:25,360 --> 00:29:31,919
+Um, I started the actually at the time it was the world's biggest uh, TypeScript meetup just because I fell in love with the language itself.
+
+418
+00:29:31,919 --> 00:29:36,799
+Uh, and I kind of got in deep into like functional programming and and all this stuff.
+
+419
+00:29:36,799 --> 00:29:40,159
+I think a lot of coders they get distracted by this.
+
+420
+00:29:40,159 --> 00:29:46,720
+For me, it was always sort of um they there is a beauty to programming and especially to functional programming.
+
+421
+00:29:46,720 --> 00:29:48,720
+There's a beauty to type systems.
+
+422
+00:29:48,720 --> 00:29:55,919
+Um, there there's a certain kind of like this like buzz that you get like when you solve like a really a really complicated uh math problem.
+
+423
+00:29:55,919 --> 00:30:02,880
+It's kind of similar when you kind of balance the types or you know the program is just like really beautiful but it's really not the end of it.
+
+424
+00:30:02,880 --> 00:30:07,440
+Um I think for me coding is very much a tool and it's a way to do things.
+
+425
+00:30:07,440 --> 00:30:09,360
+Uh that said not everyone feels this way.
+
+426
+00:30:09,360 --> 00:30:18,880
+So for example you know like there's one engineer uh on the team Lena who you know was still writing C++ on the weekends by hand because you know for her she just really enjoys writing
+
+427
+00:30:18,880 --> 00:30:20,399
+C++ by hand.
+
+428
+00:30:20,399 --> 00:30:26,000
+And so everyone is different and I think even as this field changes, even as everything changes,
+
+429
+00:30:26,000 --> 00:30:34,559
+there's always space to do this, there's always space to enjoy the art um and to and and to kind of do do things by hand uh if you want.
+
+430
+00:30:34,559 --> 00:30:37,039
+>> Do you worry about your skills atrophing as an engineer?
+
+431
+00:30:37,039 --> 00:30:41,440
+Is that something you worry about or is it just like, you know, this is just the way it's going to go?
+
+432
+00:30:41,440 --> 00:30:43,120
+>> I think it's just the way that that it happens.
+
+433
+00:30:43,120 --> 00:30:45,120
+I I don't worry about it too much personally.
+
+434
+00:30:45,120 --> 00:30:56,000
+I think for me like programming is on is on a continuum and you know like way back in the day you know like software actually is like relatively new right like if you look at the way programs are written today like
+
+435
+00:30:56,000 --> 00:31:06,399
+using software that's running on a virtual machine or something this has been the way that we've been writing programs since probably the 1960s so you know it's been you know like 60 years or something like that.
+
+436
+00:31:06,399 --> 00:31:07,600
+Before that it was punch cards.
+
+437
+00:31:07,600 --> 00:31:08,720
+Before that it was switches.
+
+438
+00:31:08,720 --> 00:31:09,679
+Before that it was hardware.
+
+439
+00:31:09,679 --> 00:31:12,399
+And before that it was just you know like literally pen and paper.
+
+440
+00:31:12,399 --> 00:31:16,480
+It was like a room a room full of people that were doing math on on paper.
+
+441
+00:31:16,480 --> 00:31:19,760
+And so, you know, programming has always changed in this way.
+
+442
+00:31:19,760 --> 00:31:25,039
+In some ways, you still want to understand the layer under the layer because it helps you be a better engineer.
+
+443
+00:31:25,039 --> 00:31:27,600
+And I think this will be the case maybe for the next year or so.
+
+444
+00:31:27,600 --> 00:31:29,919
+Um, but I think pretty soon it just won't really matter.
+
+445
+00:31:29,919 --> 00:31:36,240
+It's just going to be kind of like the the assembly code wring running under the programmer or something like this.
+
+446
+00:31:36,240 --> 00:31:42,960
+uh at an emotional level, you know, I I feel like I've always had to learn new things.
+
+447
+00:31:42,960 --> 00:31:46,799
+And as a programmer, it's actually not it doesn't feel that new because there's always new frameworks,
+
+448
+00:31:46,799 --> 00:31:47,840
+there's always new languages.
+
+449
+00:31:47,840 --> 00:31:50,480
+It's just something that we're quite comfortable with in the field.
+
+450
+00:31:50,480 --> 00:31:53,279
+But at the same time, I you know, this isn't true for everyone.
+
+451
+00:31:53,279 --> 00:31:57,360
+And I think for some people, they're going to feel a greater sense of, I don't know,
+
+452
+00:31:57,360 --> 00:32:01,120
+maybe like loss or nostalgia or atrophy or something like this.
+
+453
+00:32:01,120 --> 00:32:07,600
+I don't know if you saw this, but Elon was saying that uh why isn't the AI just writing binary straight to binary?
+
+454
+00:32:07,600 --> 00:32:12,000
+Uh because what's the point of all this, you know, programming abstraction in the end?
+
+455
+00:32:12,000 --> 00:32:12,799
+>> Yeah, it's a good question.
+
+456
+00:32:12,799 --> 00:32:15,919
+I mean, it totally can do that if you wanted to.
+
+457
+00:32:15,919 --> 00:32:16,880
+>> Oh, man.
+
+458
+00:32:16,880 --> 00:32:20,080
+So, what I'm hearing here is in terms there's always this question, should I learn to code?
+
+459
+00:32:20,080 --> 00:32:21,679
+Should people in school learn to code?
+
+460
+00:32:21,679 --> 00:32:27,360
+Uh what I heard from you is your take is in like a year or two, you don't really need to.
+
+461
+00:32:27,360 --> 00:32:38,640
+My take is I think for for people that are using um there that are using quad code that are using agents to code today you still have to understand the layer under but yeah in a year or two it's not going
+
+462
+00:32:38,640 --> 00:32:39,679
+to matter.
+
+463
+00:32:39,679 --> 00:32:51,279
+I I was thinking about um what is the right like historical analog for this cuz like like somehow we have to situate this thing in history and and kind of figure out when have we gone
+
+464
+00:32:51,279 --> 00:32:52,320
+through similar transitions.
+
+465
+00:32:52,320 --> 00:32:54,559
+What's the right kind of mental model for this?
+
+466
+00:32:54,559 --> 00:32:58,720
+I think the thing that's come closest for me is the printing press.
+
+467
+00:32:58,720 --> 00:33:06,399
+And so you know if you look at Europe in uh you know like in the in the mid the mid400s literacy was actually very low.
+
+468
+00:33:06,399 --> 00:33:12,480
+Uh there was sub 1% of the population it was scribes that uh you know they were the ones that did all the writing.
+
+469
+00:33:12,480 --> 00:33:14,320
+They they were the ones that did all the reading.
+
+470
+00:33:14,320 --> 00:33:18,240
+They were employed by like lords and kings that often were not literate themselves.
+
+471
+00:33:18,240 --> 00:33:22,799
+And so you know it was their job of this very tiny percent of the population to do this.
+
+472
+00:33:22,799 --> 00:33:34,240
+And at some point the you know Gutenberg and and the printing press came along and there was this crazy stat that in the 50 years after the printing press was uh built there was more printed material created
+
+473
+00:33:34,240 --> 00:33:42,320
+than in the c in the in the thousand years before and so the the volume of printed material just went way up.
+
+474
+00:33:42,320 --> 00:33:43,679
+Uh the cost went way down.
+
+475
+00:33:43,679 --> 00:33:46,880
+It went down something like 100x over the next 50 years.
+
+476
+00:33:46,880 --> 00:33:51,840
+And if you look at literacy, you know, it actually took a while because learning to read and write is,
+
+477
+00:33:51,840 --> 00:33:52,640
+you know, it's quite hard.
+
+478
+00:33:52,640 --> 00:33:53,840
+It takes an education system.
+
+479
+00:33:53,840 --> 00:33:55,440
+It takes free time.
+
+480
+00:33:55,440 --> 00:34:00,799
+You it takes like not having to work on a farm all day so that you actually have time for education and things like this.
+
+481
+00:34:00,799 --> 00:34:04,640
+But over the next 200 years, it went up to like 70% globally.
+
+482
+00:34:04,640 --> 00:34:12,480
+So I think this is the kind of thing that we might see is a similar kind of transition.
+
+483
+00:34:12,480 --> 00:34:22,639
+And there was uh there was actually this interesting um historical document where there was an interview with some like scribe in the 1400s about like how do you feel about the printing press?
+
+484
+00:34:22,639 --> 00:34:28,159
+And they were actually very excited because they were like actually the thing that I don't like doing is copying between books.
+
+485
+00:34:28,159 --> 00:34:32,000
+The thing that I do like doing is drawing the art in books and then doing the book binding.
+
+486
+00:34:32,000 --> 00:34:34,320
+And I'm really glad that now my time is freed up.
+
+487
+00:34:34,320 --> 00:34:40,000
+And it's interesting like as an engineer I sort of felt like a peril with this.
+
+488
+00:34:40,000 --> 00:34:47,440
+It's like this is sort of how I feel where I don't have to do the tedious work anymore of coding because this has always been sort of the detail of it.
+
+489
+00:34:47,440 --> 00:34:53,119
+It's always been the tedious part of it and kind of like messing with like git and kind of using all these different tools.
+
+490
+00:34:53,119 --> 00:34:54,240
+That that was not the fun part.
+
+491
+00:34:54,240 --> 00:34:57,280
+The fun part is figuring out what to build and coming up with this.
+
+492
+00:34:57,280 --> 00:34:59,359
+It's uh it's talking to users.
+
+493
+00:34:59,359 --> 00:35:00,800
+It's thinking about these big systems.
+
+494
+00:35:00,800 --> 00:35:02,240
+It's thinking about the future.
+
+495
+00:35:02,240 --> 00:35:04,880
+It's collaborating with you know other people on the team.
+
+496
+00:35:04,880 --> 00:35:07,599
+And that's what I get to do more of now.
+
+497
+00:35:07,599 --> 00:35:12,320
+And what's amazing is that the tool you're building allows anybody to do this.
+
+498
+00:35:12,320 --> 00:35:15,680
+People that have no technical experience can do exactly what you're describing.
+
+499
+00:35:15,680 --> 00:35:23,520
+Like I'm I've been doing a bunch of random little projects and any it's just like anytime you get stuck just like help me figure this out and you get on block.
+
+500
+00:35:23,520 --> 00:35:34,079
+Like I used to I was an engineer for early in my career for 10 years and I just remember spending so much time on like libraries and dependencies and things and just like oh my god what do I do and then looking on
+
+501
+00:35:34,079 --> 00:35:39,760
+stack overflow and now it's just like help me figure this out and here's step by step one two three four okay we got this.
+
+502
+00:35:39,760 --> 00:35:50,960
+>> Yeah exactly exactly I was talking to an engineer earlier today they're like they're writing some service and go and you know it's been like a month already and they they built up the service like it's working quite well and then I was like okay so like how do you feel
+
+503
+00:35:50,960 --> 00:35:51,200
+writing it?
+
+504
+00:35:51,200 --> 00:35:57,440
+He was like, you know, like I I still don't really know Go, but [laughter] and I think we're going to start to see more and more of this.
+
+505
+00:35:57,440 --> 00:36:02,640
+It's like if you know that it works correctly and efficiently, then you you don't actually have to know all the details.
+
+506
+00:36:02,640 --> 00:36:07,040
+Clearly, the life of a software engineer has changed dramatically.
+
+507
+00:36:07,040 --> 00:36:12,079
+It's like a whole new job now as of the past year or two.
+
+508
+00:36:12,079 --> 00:36:18,880
+What do you think is the next role that will be most impacted by AI within either within tech like you know product managers,
+
+509
+00:36:18,880 --> 00:36:23,119
+designers or even outside tech just like what do you think where do you think AI is going next?
+
+510
+00:36:23,119 --> 00:36:26,400
+>> I think it's going to be a lot of the roles that are adjacent to engineering.
+
+511
+00:36:26,400 --> 00:36:31,200
+Um so yeah it could be like product managers, it could be design, could be data science.
+
+512
+00:36:31,200 --> 00:36:38,160
+It is going to expand to pretty much any kind of work that you can do on a computer because the model is just going to get better and better at this.
+
+513
+00:36:38,160 --> 00:36:42,800
+Um, and you know, like this is the co-work product is kind of the first way to get at this,
+
+514
+00:36:42,800 --> 00:36:44,320
+but it's just the first one.
+
+515
+00:36:44,320 --> 00:36:51,920
+And it's the thing that I think brings AI to a agentic AI to people that haven't really used it before,
+
+516
+00:36:51,920 --> 00:36:56,000
+and people are starting just to to to get a sense of it for the first time.
+
+517
+00:36:56,000 --> 00:36:59,839
+When I think back to engineering a year ago, no one really knew what an agent was.
+
+518
+00:36:59,839 --> 00:37:01,040
+No one really used it.
+
+519
+00:37:01,040 --> 00:37:04,079
+But nowadays, it's just the way that, you know, we do we do our work.
+
+520
+00:37:04,079 --> 00:37:15,839
+And then when I look at non-technical work today um so you know like or maybe semi-technical like product work and you know like data science and things like this when you look at the kinds of AI that people are using it's all it's
+
+521
+00:37:15,839 --> 00:37:27,359
+always these like conversational AI it's like a chatbot or whatever but no one really has used an agent before and this word agent just gets thrown around all the time and it's just like so misused it's like lost all meaning but agent
+
+522
+00:37:27,359 --> 00:37:34,320
+actually has like a very specific technical meaning which is it's a it's a AI it's a LM that's able to use tools.
+
+523
+00:37:34,320 --> 00:37:43,440
+So it doesn't just talk, it can actually act and it can interact with your system and you know this means like it can use your Google docs and it can it can send email.
+
+524
+00:37:43,440 --> 00:37:46,400
+It can run commands on your computer and do all this kind of stuff.
+
+525
+00:37:46,400 --> 00:37:51,119
+So I think like any kind of job where you do you use computer tools in this way.
+
+526
+00:37:51,119 --> 00:37:53,280
+I think this is going to be next.
+
+527
+00:37:53,280 --> 00:37:55,839
+This is something we have to kind of figure out as a as a society.
+
+528
+00:37:55,839 --> 00:37:58,079
+This is something we have to figure out as an industry.
+
+529
+00:37:58,079 --> 00:38:08,320
+Um and I think for me also this is one of the reasons it it feels very important and urgent to do this work at anthropic because I think we take this very very seriously.
+
+530
+00:38:08,320 --> 00:38:19,280
+Um and so now you know we have economists we have uh policy folks we have social impact folks this is something we just want to talk about a lot so as society we can kind of figure out what to do because it shouldn't be up to us.
+
+531
+00:38:19,280 --> 00:38:23,599
+>> So the big question which you're kind of alluding to is jobs and job loss and things like that.
+
+532
+00:38:23,599 --> 00:38:30,960
+There's this concept of Jevans paradox of just as we can do more we hire more and it's not actually as scary as it looks.
+
+533
+00:38:30,960 --> 00:38:35,520
+What have you experienced so far I guess with AI becoming a big part of the engineering job?
+
+534
+00:38:35,520 --> 00:38:41,760
+Just are you hiring more than if you didn't have AI and just thoughts on jobs?
+
+535
+00:38:41,760 --> 00:38:44,000
+>> Yeah, I mean for our team we're we're hiring.
+
+536
+00:38:44,000 --> 00:38:45,920
+Um so quadco team is hiring.
+
+537
+00:38:45,920 --> 00:38:49,920
+Um if you're interested just check out the jobs page on on anthropic.
+
+538
+00:38:49,920 --> 00:38:55,040
+Personally, it's, you know, all this stuff has just made me enjoy my work more.
+
+539
+00:38:55,040 --> 00:39:00,960
+I have never enjoyed coding as much as I do today because I don't have to deal with all the minutia.
+
+540
+00:39:00,960 --> 00:39:03,359
+So, for me personally, it's been quite exciting.
+
+541
+00:39:03,359 --> 00:39:11,040
+This is something that we hear from a lot of customers where they love the tool, they love Quad Code because it just makes coding delightful again.
+
+542
+00:39:11,040 --> 00:39:14,240
+Uh, and that's just that's just so fun for them.
+
+543
+00:39:14,240 --> 00:39:16,800
+But it's hard to know where this thing is going to go.
+
+544
+00:39:16,800 --> 00:39:20,960
+And I again I just like I have to reach for these historical analoges.
+
+545
+00:39:20,960 --> 00:39:31,839
+Uh and I I think the printing press is just such a good one because what happened is this technology that was locked away to a small set of people like knowing how to read and write became accessible to
+
+546
+00:39:31,839 --> 00:39:32,160
+everyone.
+
+547
+00:39:32,160 --> 00:39:34,160
+It was just inherently democratizing.
+
+548
+00:39:34,160 --> 00:39:36,400
+Everyone started to be able to do this.
+
+549
+00:39:36,400 --> 00:39:45,040
+And if that wasn't the case then something like the Renaissance just could never have happened because a lot of the Renaissance it was about like knowledge spreading.
+
+550
+00:39:45,040 --> 00:39:48,560
+It was about like written records that people used to communicate.
+
+551
+00:39:48,560 --> 00:39:52,000
+Um, you know, cuz there were no phones or anything like this.
+
+552
+00:39:52,000 --> 00:39:54,000
+There was there was no internet at the time.
+
+553
+00:39:54,000 --> 00:39:57,520
+So, it's about like what does this enable next?
+
+554
+00:39:57,520 --> 00:40:00,400
+And I think that's the very optimistic version of it for me.
+
+555
+00:40:00,400 --> 00:40:02,480
+And that's the part that I'm really excited about.
+
+556
+00:40:02,480 --> 00:40:07,599
+It's just unimaginable, you know, like we couldn't be talking today if the printing press hadn't been invented.
+
+557
+00:40:07,599 --> 00:40:09,599
+Like our microphones wouldn't exist.
+
+558
+00:40:09,599 --> 00:40:11,119
+None of the things around us would exist.
+
+559
+00:40:11,119 --> 00:40:15,599
+it just wouldn't be possible to coordinate such a large group of people if that wasn't the case.
+
+560
+00:40:15,599 --> 00:40:20,480
+And so I imagine a world, you know, a few years in the future where everyone is able to program.
+
+561
+00:40:20,480 --> 00:40:21,680
+And what does that unlock?
+
+562
+00:40:21,680 --> 00:40:23,920
+Anyone can just build software anytime.
+
+563
+00:40:23,920 --> 00:40:25,520
+And I have no idea.
+
+564
+00:40:25,520 --> 00:40:29,280
+It's just the same way that, you know, in the 1400s, no one could have predicted this.
+
+565
+00:40:29,280 --> 00:40:31,040
+Um, I think it's the same way.
+
+566
+00:40:31,040 --> 00:40:35,920
+But I do think in the meantime, it's going to be very disruptive and it's going to be painful for a lot of people.
+
+567
+00:40:35,920 --> 00:40:42,480
+Um, and again, as a society, this is a conversation that we have to have and this is a thing that we have to figure out together.
+
+568
+00:40:42,480 --> 00:40:50,720
+>> So, for folks hearing this that want to succeed and, you know, make it in this crazy turmoil we're entering,
+
+569
+00:40:50,720 --> 00:40:51,440
+any advice?
+
+570
+00:40:51,440 --> 00:40:54,400
+Is it, you know, play with AI tools, get really proficient at the latest stuff?
+
+571
+00:40:54,400 --> 00:40:58,480
+Is there anything else that you recommend to help people uh stay ahead?
+
+572
+00:40:58,480 --> 00:41:00,000
+Yeah, I think that's pretty much it.
+
+573
+00:41:00,000 --> 00:41:03,359
+Uh, experiment with the tools, get to know them, don't be scared of them.
+
+574
+00:41:03,359 --> 00:41:08,079
+um just you know dive in try them be on the bleeding edge beyond the frontier.
+
+575
+00:41:08,079 --> 00:41:13,760
+Maybe the second piece of advice is try to be a generalist more than you have in the past.
+
+576
+00:41:13,760 --> 00:41:21,040
+For example, in school a lot of people that study CS they learn to code and they don't really learn much else.
+
+577
+00:41:21,040 --> 00:41:25,119
+Maybe they learn a little bit of systems architecture or something like this.
+
+578
+00:41:25,119 --> 00:41:28,560
+But some of the most effective engineers that I work with every day and some of the most effective,
+
+579
+00:41:28,560 --> 00:41:32,079
+you know, like product managers and so on, they cross over disciplines.
+
+580
+00:41:32,079 --> 00:41:33,920
+So on the quad code team, everyone codes.
+
+581
+00:41:33,920 --> 00:41:38,640
+You know, our product manager codes, our engineering manager codes, our designer codes,
+
+582
+00:41:38,640 --> 00:41:42,000
+our finance guy codes, our data scientist codes.
+
+583
+00:41:42,000 --> 00:41:43,119
+Like everyone on the team codes.
+
+584
+00:41:43,119 --> 00:41:48,000
+And and then if I look at particular engineers, people often cross different disciplines.
+
+585
+00:41:48,000 --> 00:41:58,640
+So some of the strongest engineers are hybrid product and infrastructure engineers or product engineers with really great design sense and they're able to do design also or an engineer that has a really good sense of
+
+586
+00:41:58,640 --> 00:42:01,920
+the business and can use that to figure out what to do next.
+
+587
+00:42:01,920 --> 00:42:10,240
+or an engineer that also loves talking to users and can just really channel what what users want to figure out what's next.
+
+588
+00:42:10,240 --> 00:42:14,720
+So I think a lot of the people that will be rewarded the most over the next few years,
+
+589
+00:42:14,720 --> 00:42:18,640
+they won't just be AI native and they don't just know how to use these tools really well,
+
+590
+00:42:18,640 --> 00:42:29,119
+but also they're curious and they're generalists and they cross over multiple disciplines and can think about the broader problem they're solving rather than just the engineering part of it.
+
+591
+00:42:29,119 --> 00:42:33,200
+Do you find these three separate disciplines still useful as a way to think about the team?
+
+592
+00:42:33,200 --> 00:42:36,160
+They're, you know, engineering, design, uh, product management.
+
+593
+00:42:36,160 --> 00:42:41,359
+Do you find like those, even though they are now coding and contributing to thinking about what to build,
+
+594
+00:42:41,359 --> 00:42:45,920
+do you feel like those are three roles that will persist long term, at least at this point?
+
+595
+00:42:45,920 --> 00:42:55,760
+I think in the short term it'll persist, but one thing that we're starting to see is there's maybe a 50% overlap in these roles where a lot of people are actually just doing the same thing and some people have specialties.
+
+596
+00:42:55,760 --> 00:43:00,240
+for example, I code a little bit more versus cat RPM does a little bit more, you know,
+
+597
+00:43:00,240 --> 00:43:04,240
+coordination or planning or, you know, forecasting or things like this.
+
+598
+00:43:04,240 --> 00:43:05,920
+>> Stakeholder alignment.
+
+599
+00:43:05,920 --> 00:43:07,359
+>> Stakeholder alignment.
+
+600
+00:43:07,359 --> 00:43:07,760
+Exactly.
+
+601
+00:43:07,760 --> 00:43:17,920
+I I do think that there's a future where I think by the end of the year what we're going to start to see is these start to get even murkier murkier where I think in some places the title software
+
+602
+00:43:17,920 --> 00:43:26,319
+engineer is going to start to go away and it's just going to be replaced by builder or maybe it's just everyone's going to be a product manager and everyone codes or something like this.
+
+603
+00:43:26,319 --> 00:43:28,400
+Who says hiring has to be fair?
+
+604
+00:43:28,400 --> 00:43:32,960
+Every founder and hiring manager I've been speaking with these days is feeling the same pressure.
+
+605
+00:43:32,960 --> 00:43:36,079
+Hire the best people as fast as possible.
+
+606
+00:43:36,079 --> 00:43:43,040
+But [music] recruiting is time consuming, alignment is hard, and competition for great talent keeps getting tighter.
+
+607
+00:43:43,040 --> 00:43:50,480
+That's why teams like 11 Labs, Brex, Replet, Deal, and 5,000 [music] other organizations use MetaView,
+
+608
+00:43:50,480 --> 00:43:55,440
+the AI company giving high performance teams a real unfair advantage in hiring.
+
+609
+00:43:55,440 --> 00:43:59,680
+They give you a suite of AI agents that behave like recruiting co-workers.
+
+610
+00:43:59,680 --> 00:44:05,119
+They find candidates for you based on your exact criteria, [music] take interview notes automatically,
+
+611
+00:44:05,119 --> 00:44:11,119
+gather insights across your hiring process, and help you identify the best candidates in your pipeline.
+
+612
+00:44:11,119 --> 00:44:15,520
+AI handles the recruiting toil and gives you a real source of truth.
+
+613
+00:44:15,520 --> 00:44:22,000
+That means hours saved per hire and a team focused on what matters most, winning the right [music] candidates.
+
+614
+00:44:22,000 --> 00:44:24,480
+Don't let your competitors outhire you.
+
+615
+00:44:24,480 --> 00:44:27,839
+Metav customers close roles 30% faster.
+
+616
+00:44:27,839 --> 00:44:34,400
+Try Metaview today for free and [music] get an extra month of sourcing at metaview.ai/lenny.
+
+617
+00:44:34,400 --> 00:44:37,520
+That's me.
+
+618
+00:44:37,520 --> 00:44:38,240
+Lenny.
+
+619
+00:44:38,240 --> 00:44:40,319
+You talked about how you're enjoying coding more.
+
+620
+00:44:40,319 --> 00:44:42,880
+I actually did this little informal survey on Twitter.
+
+621
+00:44:42,880 --> 00:44:46,319
+I don't know if you saw this where I just asked I did three different polls.
+
+622
+00:44:46,319 --> 00:44:50,400
+I asked engineers, are you enjoying your job more or less since adopting AI tools?
+
+623
+00:44:50,400 --> 00:44:53,440
+And then I did a separate one for PMs and one for designers.
+
+624
+00:44:53,440 --> 00:45:02,720
+And both engineers and PMs, 70% of people said they are enjoying their job more and about 10% said they're enjoying their job less.
+
+625
+00:45:02,720 --> 00:45:10,400
+Designers, interestingly, only 55% said they are enjoying their job more and 20% said they're enjoying their job less.
+
+626
+00:45:10,400 --> 00:45:11,839
+Thought that was really interesting.
+
+627
+00:45:11,839 --> 00:45:12,640
+>> That's super interesting.
+
+628
+00:45:12,640 --> 00:45:18,000
+I' I'd love to talk to these people uh you know, both in the more bucket and the less bucket just to understand.
+
+629
+00:45:18,000 --> 00:45:20,160
+Do did you get to follow up with any of them?
+
+630
+00:45:20,160 --> 00:45:26,240
+They a few people replied and we're actually doing a follow poll that we'll link to in the show notes of going deeper into some of the stuff,
+
+631
+00:45:26,240 --> 00:45:30,319
+but a lot of there's like, you know, the factors that make it more fun and less fun.
+
+632
+00:45:30,319 --> 00:45:35,280
+The designers, they didn't share a lot actually of just like the people that are actually asked just like why are you enjoying your job less?
+
+633
+00:45:35,280 --> 00:45:36,000
+And I didn't hear a lot.
+
+634
+00:45:36,000 --> 00:45:37,359
+So, I'm curious what's going on there.
+
+635
+00:45:37,359 --> 00:45:40,240
+>> Yeah, I I'm seeing this a little bit with uh at anthropic.
+
+636
+00:45:40,240 --> 00:45:43,839
+I think everyone is fairly technical.
+
+637
+00:45:43,839 --> 00:45:46,640
+This is something that we screen for, you know, when when people join.
+
+638
+00:45:46,640 --> 00:45:52,800
+We have there there's a lot of technical interviews that people go go through even for non-technical functions.
+
+639
+00:45:52,800 --> 00:45:57,359
+Uh and you know our designers largely code.
+
+640
+00:45:57,359 --> 00:46:06,400
+So I think for them this is something that they have enjoyed from what I've seen because now instead of bugging engineers they can just like go in and code.
+
+641
+00:46:06,400 --> 00:46:12,560
+And even some designers that didn't code before have just started to do it and for them it's great cuz they can unblock themselves.
+
+642
+00:46:12,560 --> 00:46:17,920
+But I'd be really interested just to hear more people's experiences cuz I I I bet it's not uniform like that.
+
+643
+00:46:17,920 --> 00:46:18,160
+>> Yeah.
+
+644
+00:46:18,160 --> 00:46:25,040
+So maybe if you're listening to this, leave a comment if you're finding your jobs less fun and enjoying your job less cuz what you're saying and what I'm hearing from most people,
+
+645
+00:46:25,040 --> 00:46:28,800
+70% of PMs and engineers are loving their job more.
+
+646
+00:46:28,800 --> 00:46:32,800
+That's like if you're not in that bucket, you could something's going on.
+
+647
+00:46:32,800 --> 00:46:33,119
+>> Yeah.
+
+648
+00:46:33,119 --> 00:46:33,920
+Yeah.
+
+649
+00:46:33,920 --> 00:46:35,680
+We do see that people use also different tools.
+
+650
+00:46:35,680 --> 00:46:40,800
+So for example, our designers, they use uh the cloud desktop app a lot more to to do their coding.
+
+651
+00:46:40,800 --> 00:46:42,240
+So you just download the desktop app.
+
+652
+00:46:42,240 --> 00:46:43,520
+There's a code tab.
+
+653
+00:46:43,520 --> 00:46:46,880
+Uh it's right next to co-work and it's actually the same exact quad code.
+
+654
+00:46:46,880 --> 00:46:48,400
+So it's like the same agent and everything.
+
+655
+00:46:48,400 --> 00:46:50,960
+We've had this for, you know, for many, many months.
+
+656
+00:46:50,960 --> 00:46:55,359
+Uh and so you can use this to code in a way that you don't have to open a bunch of terminals,
+
+657
+00:46:55,359 --> 00:46:57,920
+but you still get the power of quad code.
+
+658
+00:46:57,920 --> 00:47:01,839
+And the biggest thing is you can just run as many, you know, quad sessions in parallel as you want.
+
+659
+00:47:01,839 --> 00:47:04,079
+We, you know, we call this multi-quading.
+
+660
+00:47:04,079 --> 00:47:08,720
+>> So this is a it's it's a little more native, I think, for folks that are not engineers.
+
+661
+00:47:08,720 --> 00:47:12,640
+And really, this is back to bringing the product to where the people are.
+
+662
+00:47:12,640 --> 00:47:14,480
+You don't want to make people use a different workflow.
+
+663
+00:47:14,480 --> 00:47:17,119
+You don't want to make them go out of their way to learn a new thing.
+
+664
+00:47:17,119 --> 00:47:23,760
+It's whatever people are doing, if you can make that a little bit easier, then that's just going to be a much better product that people enjoy more.
+
+665
+00:47:23,760 --> 00:47:29,839
+And this is just this principle of latent demand, which I I think is just the the single most important principle in product.
+
+666
+00:47:29,839 --> 00:47:31,839
+>> Can you talk about that actually because I was going to go there.
+
+667
+00:47:31,839 --> 00:47:37,680
+Explain what this principle is and and and just what happens when you unlock this latent demand.
+
+668
+00:47:37,680 --> 00:47:47,520
+Latent demand is this idea that if you build a product in a way that can be hacked or can be kind of mi [clears throat] misused by people in a way it wasn't really designed for to do
+
+669
+00:47:47,520 --> 00:47:55,200
+kind of something that they want to do then this helps you as the product builder learn where to take the product next.
+
+670
+00:47:55,200 --> 00:47:58,400
+So an example of this is uh Facebook marketplace.
+
+671
+00:47:58,400 --> 00:48:06,640
+So the the manager for the team Fiona she she was actually the founding manager for uh the marketplace team and she talks about this a lot.
+
+672
+00:48:06,640 --> 00:48:07,520
+Facebook Marketplace.
+
+673
+00:48:07,520 --> 00:48:17,599
+It started based on the observation back in uh this must have been like 20 2016 or or something like this that 40% of posts in Facebook groups are buying and selling stuff.
+
+674
+00:48:17,599 --> 00:48:18,400
+So this is crazy.
+
+675
+00:48:18,400 --> 00:48:21,440
+It's like people are abusing the Facebook groups product to buy and sell.
+
+676
+00:48:21,440 --> 00:48:23,760
+And it's not it's not abuse in kind of like a security sense.
+
+677
+00:48:23,760 --> 00:48:29,920
+It's abuse in that no one designed the product for this, but they're kind of figuring it out because it's just so useful for this.
+
+678
+00:48:29,920 --> 00:48:33,280
+And so it was pretty obvious if you build a better product to let people buy and sell,
+
+679
+00:48:33,280 --> 00:48:34,400
+they're going to like it.
+
+680
+00:48:34,400 --> 00:48:37,520
+And it was just very obvious that marketplace would be a hit from this.
+
+681
+00:48:37,520 --> 00:48:39,440
+And so the first thing was buy and sell groups.
+
+682
+00:48:39,440 --> 00:48:42,400
+So kind of special purpose groups to let people do that.
+
+683
+00:48:42,400 --> 00:48:45,119
+And the second product was marketplace.
+
+684
+00:48:45,119 --> 00:48:48,800
+Uh Facebook dating I think started in a pretty similar place.
+
+685
+00:48:48,800 --> 00:48:59,680
+And I think that the observation was if you look at people looking if you look at uh profile views so people looking at each other's profiles on Facebook 60% of profile views were people that are not friends with each other that are opposite
+
+686
+00:48:59,680 --> 00:49:00,800
+gender.
+
+687
+00:49:00,800 --> 00:49:06,720
+And so this is this kind of like you know like traditional kind of dating setup but you know people are just like creeping on each other.
+
+688
+00:49:06,720 --> 00:49:11,040
+So maybe if you can build a product for this it's you know it might work.
+
+689
+00:49:11,040 --> 00:49:15,920
+Um and so this idea of latent demand I think is just so powerful.
+
+690
+00:49:15,920 --> 00:49:19,119
+And for example this is also where co-work came from.
+
+691
+00:49:19,119 --> 00:49:24,800
+We saw that for the last 6 months or so a lot of people using quad code were not using it to code.
+
+692
+00:49:24,800 --> 00:49:27,680
+There was someone on Twitter that was using it to grow tomato plants.
+
+693
+00:49:27,680 --> 00:49:30,400
+There was someone else using it to analyze their genome.
+
+694
+00:49:30,400 --> 00:49:33,760
+Someone was using it to uh recover photos from a corrupted hard drive.
+
+695
+00:49:33,760 --> 00:49:36,240
+It was like uh wedding photos.
+
+696
+00:49:36,240 --> 00:49:43,520
+Uh there was someone that was using it for uh I think like uh they they were using it to analyze a MRI.
+
+697
+00:49:43,520 --> 00:49:47,200
+So there there's just all these different use cases that are not technical at all.
+
+698
+00:49:47,200 --> 00:49:53,280
+And it was just really obvious like people are jumping through hoops to use a terminal to do this thing.
+
+699
+00:49:53,280 --> 00:49:55,440
+Maybe we should just build a product for them.
+
+700
+00:49:55,440 --> 00:49:59,440
+And we saw this actually pretty early back in maybe May of last year.
+
+701
+00:49:59,440 --> 00:50:05,359
+I remember walking into the office and our data scientist Brendan was had a quad code on his uh computer.
+
+702
+00:50:05,359 --> 00:50:09,119
+He just had a terminal up and I was like I was shocked.
+
+703
+00:50:09,119 --> 00:50:10,800
+I was like Brendan what what are you doing?
+
+704
+00:50:10,800 --> 00:50:15,440
+Like you you figured out how to open the terminal which is you know it's a very engineering product.
+
+705
+00:50:15,440 --> 00:50:17,280
+Even a lot of engineers don't want to use a terminal.
+
+706
+00:50:17,280 --> 00:50:22,160
+It's just like a it's like just like the lowest level way to to do your work.
+
+707
+00:50:22,160 --> 00:50:26,079
+Um just really really uh kind of in the weeds of the computer.
+
+708
+00:50:26,079 --> 00:50:27,839
+And so he figured out how to use the terminal.
+
+709
+00:50:27,839 --> 00:50:28,880
+He downloaded Node.js.
+
+710
+00:50:28,880 --> 00:50:33,200
+He downloaded quad code and he was doing SQL analysis in a terminal and it was crazy.
+
+711
+00:50:33,200 --> 00:50:36,240
+And then the next week all the data scientists were doing the same thing.
+
+712
+00:50:36,240 --> 00:50:42,559
+So when you see people abusing the product in this way, using it in a way that it wasn't designed in order to do something that is useful for them,
+
+713
+00:50:42,559 --> 00:50:48,559
+it's just such a strong indicator that you should just build a product and and people are going to like that.
+
+714
+00:50:48,559 --> 00:50:50,720
+It's something that's special purpose for that.
+
+715
+00:50:50,720 --> 00:50:54,000
+I think now there there's also this kind of interesting second dimension to latent demand.
+
+716
+00:50:54,000 --> 00:50:58,480
+This is sort of the traditional framing is look at what people are doing, make that a little bit easier,
+
+717
+00:50:58,480 --> 00:51:00,000
+empower them.
+
+718
+00:51:00,000 --> 00:51:10,559
+The modern framing that I've been seeing in the last 6 months is a little bit different and it's look at what the model is trying to do and make that a little bit easier.
+
+719
+00:51:10,559 --> 00:51:19,680
+And so when we first started building quad code, I think a lot of the way that people approached designing things with LLMs is they kind of put the model in a box and they were like,
+
+720
+00:51:19,680 --> 00:51:21,280
+here's this application that I want to build.
+
+721
+00:51:21,280 --> 00:51:22,400
+Here's the thing that I wanted to do.
+
+722
+00:51:22,400 --> 00:51:24,400
+model, you're going to do this one component of it.
+
+723
+00:51:24,400 --> 00:51:27,839
+Here's the way that you're going to interact with these tools and APIs and whatever.
+
+724
+00:51:27,839 --> 00:51:29,520
+And for cloud code, we inverted that.
+
+725
+00:51:29,520 --> 00:51:31,280
+We said the product is the model.
+
+726
+00:51:31,280 --> 00:51:32,319
+We want to expose it.
+
+727
+00:51:32,319 --> 00:51:34,240
+We want to put the minimal scaffolding around it.
+
+728
+00:51:34,240 --> 00:51:36,000
+Give it the minimal set of tools.
+
+729
+00:51:36,000 --> 00:51:36,960
+So, it can do the things.
+
+730
+00:51:36,960 --> 00:51:38,160
+It can decide which tools to run.
+
+731
+00:51:38,160 --> 00:51:41,440
+It can decide in what order to run them in and so on.
+
+732
+00:51:41,440 --> 00:51:45,599
+And I I think a lot of this was just based on kind of latent demand of what the model wanted to do.
+
+733
+00:51:45,599 --> 00:51:48,480
+And so, in research, we call this being on distribution.
+
+734
+00:51:48,480 --> 00:51:50,400
+Uh you want to see like what the model is trying to do.
+
+735
+00:51:50,400 --> 00:51:55,200
+In product terms, latent demand is just the same exact concept but applied to a model.
+
+736
+00:51:55,200 --> 00:52:01,440
+>> You talked about co-work something that I saw you talk about when you launched that initially is you your team built that in 10 days.
+
+737
+00:52:01,440 --> 00:52:02,240
+>> That's insane.
+
+738
+00:52:02,240 --> 00:52:09,040
+Uh I it came out I think it was like you know used by millions of people pretty quickly something like that being built in 10 days.
+
+739
+00:52:09,040 --> 00:52:14,319
+Uh anything there any stories there other than just it was just you know we use cloud code to build it and that's it.
+
+740
+00:52:14,319 --> 00:52:15,599
+>> Yeah it's funny.
+
+741
+00:52:15,599 --> 00:52:19,200
+Uh cloud code like I said when we released it was not immediately a hit.
+
+742
+00:52:19,200 --> 00:52:21,599
+it became a hit over time and there was a few inflection points.
+
+743
+00:52:21,599 --> 00:52:28,400
+So one was you know like Opus 4 uh it just really really inflected and then in November it inflected and it just keeps inflecting.
+
+744
+00:52:28,400 --> 00:52:31,920
+The growth just keeps getting steeper and steeper and steeper every day.
+
+745
+00:52:31,920 --> 00:52:34,000
+But you know for the first few months it wasn't a hit.
+
+746
+00:52:34,000 --> 00:52:37,280
+Uh people used it but a lot of people couldn't figure out how to use it.
+
+747
+00:52:37,280 --> 00:52:38,559
+They didn't know what it was for.
+
+748
+00:52:38,559 --> 00:52:40,800
+The model still like wasn't very good.
+
+749
+00:52:40,800 --> 00:52:46,480
+Co-work when we released it was just immediately a hit much more so than cloud code was early on.
+
+750
+00:52:46,480 --> 00:52:52,880
+I think a lot of the credit honestly just goes to like Felix and and Sam and the and Jenny and the the team that built this.
+
+751
+00:52:52,880 --> 00:52:55,040
+It's just an incredibly strong team.
+
+752
+00:52:55,040 --> 00:52:58,160
+And again, the the place co came from is just this latent demand.
+
+753
+00:52:58,160 --> 00:53:02,480
+Like we saw people using quad code for these non-technical things and we're trying to figure out what do we do?
+
+754
+00:53:02,480 --> 00:53:12,079
+And so for a few months the team was exploring they were trying all sorts of different options and in the end someone was just like okay what what if we just take quad code and put it in the desktop
+
+755
+00:53:12,079 --> 00:53:15,839
+app and that's essentially the thing that worked.
+
+756
+00:53:15,839 --> 00:53:19,280
+And so over 10 days they just completely use quad code to build it.
+
+757
+00:53:19,280 --> 00:53:28,880
+Uh and you know co-work is actually there's this very sophisticated security system that's that's built in and essentially these guard rails to make sure that the model kind of does the right thing.
+
+758
+00:53:28,880 --> 00:53:30,800
+It doesn't go off the rails.
+
+759
+00:53:30,800 --> 00:53:33,520
+So for example we ship an entire virtual machine with it.
+
+760
+00:53:33,520 --> 00:53:35,680
+And quad code just wrote all of this code.
+
+761
+00:53:35,680 --> 00:53:41,839
+So we just had to think about all right how do we make this a little bit safer a little more self-guided for uh people that are not engineers.
+
+762
+00:53:41,839 --> 00:53:44,160
+It was fully implemented with quad code.
+
+763
+00:53:44,160 --> 00:53:45,359
+took about 10 days.
+
+764
+00:53:45,359 --> 00:53:46,800
+We launched it early.
+
+765
+00:53:46,800 --> 00:53:50,079
+You know, it was still pretty rough and it's still pretty rough around the edges.
+
+766
+00:53:50,079 --> 00:54:00,640
+But this is kind of the way that we learn um both on the product side and on the safety side is we have to release things a little bit earlier than we think so that we can get the feedback so that we can talk to
+
+767
+00:54:00,640 --> 00:54:01,440
+users.
+
+768
+00:54:01,440 --> 00:54:05,520
+We can understand what people want and and that will shape where the product goes in the future.
+
+769
+00:54:05,520 --> 00:54:08,720
+>> Yeah, I think that point is so interesting and and it's so unique.
+
+770
+00:54:08,720 --> 00:54:13,599
+There's always been this idea release early, learn from users, get feedback, iterate.
+
+771
+00:54:13,599 --> 00:54:23,040
+The fact that it's hard to even know what the AI is capable of and how people will try to use it is like is a unique reason to start releasing things
+
+772
+00:54:23,040 --> 00:54:28,400
+early that'll help you as you exactly describe this idea of what is the latent demand in this thing that we didn't really know.
+
+773
+00:54:28,400 --> 00:54:30,319
+Let's put it out there and see what people do with it.
+
+774
+00:54:30,319 --> 00:54:30,559
+>> Yeah.
+
+775
+00:54:30,559 --> 00:54:36,480
+And in philanthropic as a safety lab, the other dimension of that is safety because um you know like when you think about model safety,
+
+776
+00:54:36,480 --> 00:54:38,319
+there's a bunch of different ways to study it.
+
+777
+00:54:38,319 --> 00:54:42,480
+Sort of the lowest level is alignment and mechanistic interpretability.
+
+778
+00:54:42,480 --> 00:54:46,160
+So this is when we train the model, we want to make sure that it's safe.
+
+779
+00:54:46,160 --> 00:54:52,319
+We at this point have like pretty sophisticated technology to understand what's happening in the neurons to trace it.
+
+780
+00:54:52,319 --> 00:55:00,240
+And so for example like if there's a neuron related to deception we can start we're starting to get to the point where we can monitor it and understand that it's activating.
+
+781
+00:55:00,240 --> 00:55:03,599
+Um and so this is just this is alignment this is mechanistic interpretability.
+
+782
+00:55:03,599 --> 00:55:05,440
+It's like the lowest layer.
+
+783
+00:55:05,440 --> 00:55:08,720
+The second layer is evolves and this is essentially a laboratory setting.
+
+784
+00:55:08,720 --> 00:55:15,839
+The model is in a petri dish and you study it and you put in a synthetic situation and just say okay like model what do you do and are you doing the right thing?
+
+785
+00:55:15,839 --> 00:55:16,400
+Is it aligned?
+
+786
+00:55:16,400 --> 00:55:17,599
+Is it safe?
+
+787
+00:55:17,599 --> 00:55:22,000
+And then the third layer is seeing how the model behaves in the wild.
+
+788
+00:55:22,000 --> 00:55:30,400
+And as the model gets more sophisticated, this this becomes so important because it might look very good on these first two layers but not great on the third one.
+
+789
+00:55:30,400 --> 00:55:41,280
+We released cloud code really early because we wanted to study safety and we actually used it within anthropic for I think four or 5 months or something before we released it because we weren't really
+
+790
+00:55:41,280 --> 00:55:47,359
+sure like this is the first agent that you know the first big agent that I think folks had released at that point.
+
+791
+00:55:47,359 --> 00:55:59,040
+um it was definitely the first uh you know coding agent that became broadly used and so we weren't sure if it was safe and so we actually had to study it internally for a long time before we felt good about that and even since you know there's a lot that we've learned
+
+792
+00:55:59,040 --> 00:56:10,960
+about alignment there's a lot that we've learned about safety that we've been able to put back into the model back into the product and for co-work it's pretty similar uh the model's in this new setting it's you know doing these tasks that are not engineering tasks
+
+793
+00:56:10,960 --> 00:56:17,760
+it's an agent that's acting on your behalf it looks good on alignment it looks good on evals we try to internally it looks good we it with a few customers,
+
+794
+00:56:17,760 --> 00:56:18,880
+it looks good.
+
+795
+00:56:18,880 --> 00:56:21,280
+Now, we have to make sure it's safe in the real world.
+
+796
+00:56:21,280 --> 00:56:22,880
+And so, that's why we release a little early.
+
+797
+00:56:22,880 --> 00:56:24,640
+That's why we call it a research preview.
+
+798
+00:56:24,640 --> 00:56:26,880
+Um, but yeah, it's just it's constantly improving.
+
+799
+00:56:26,880 --> 00:56:33,359
+Um, and this is really the only way to to make sure that over the long term the model is aligned and it's doing the right things.
+
+800
+00:56:33,359 --> 00:56:38,480
+It's such a wild space that you work in where there's this insane competition and pace.
+
+801
+00:56:38,480 --> 00:56:47,920
+At the same time, there's this fear that if you get some if the the you know the god can escape and cause damage and just finding that balance must be so challenging.
+
+802
+00:56:47,920 --> 00:56:56,720
+What I'm hearing is there's kind of these three layers and I know there's like this could be a whole podcast conversation is how you all think about the safety piece but just what I'm hearing is there's these three layers you work with.
+
+803
+00:56:56,720 --> 00:57:00,240
+Uh there's kind of like observing the model thinking and operating.
+
+804
+00:57:00,240 --> 00:57:04,880
+There's tests eval that tell you this is doing bad things and then releasing it early.
+
+805
+00:57:04,880 --> 00:57:06,960
+I haven't actually heard a ton about that first piece.
+
+806
+00:57:06,960 --> 00:57:08,559
+That is so cool.
+
+807
+00:57:08,559 --> 00:57:16,079
+So you guys can there's an observability tool that can let you peek inside the model's brain and see how it's thinking and where it's heading.
+
+808
+00:57:16,079 --> 00:57:21,839
+Yeah, you should uh you should at some point have Chris Ola on the podcast because uh he he's just the industry expert on this.
+
+809
+00:57:21,839 --> 00:57:25,520
+He he invented this field of uh we call it mechanistic interpretability.
+
+810
+00:57:25,520 --> 00:57:30,319
+Uh and the the idea is uh you know like at its core like what is your brain?
+
+811
+00:57:30,319 --> 00:57:31,760
+Like what are what is it?
+
+812
+00:57:31,760 --> 00:57:33,440
+It's like it's a bunch of neurons that are connected.
+
+813
+00:57:33,440 --> 00:57:40,960
+And so what you can do is like in a human brain or animal brain you can study it at this kind of mechanistic level to understand what the neurons are doing.
+
+814
+00:57:40,960 --> 00:57:44,880
+It turns out surprisingly a lot of this does translate to models also.
+
+815
+00:57:44,880 --> 00:57:50,079
+So model neurons are not the same as animal neurons but they behave similarly in a lot of ways.
+
+816
+00:57:50,079 --> 00:57:54,400
+And so we've been able to learn just a ton about the way these neurons work, about, you know,
+
+817
+00:57:54,400 --> 00:57:59,839
+this layer or this neuron maps to this concept, how particular concepts are encoded,
+
+818
+00:57:59,839 --> 00:58:04,559
+how the model does planning, how it how it thinks ahead, you know, like a long time ago,
+
+819
+00:58:04,559 --> 00:58:09,599
+we weren't sure if the model is just predicting the next token or is doing something a little bit deeper.
+
+820
+00:58:09,599 --> 00:58:13,599
+Now, I think there's actually quite strong evidence that it is doing something a little bit deeper.
+
+821
+00:58:13,599 --> 00:58:19,040
+And then the structures that were to do this are pretty sophisticated now where as the models get bigger,
+
+822
+00:58:19,040 --> 00:58:21,760
+it's not just like a single neuron that corresponds to a concept.
+
+823
+00:58:21,760 --> 00:58:24,400
+A single neuron might correspond to a dozen concepts.
+
+824
+00:58:24,400 --> 00:58:28,559
+And if it's activated together with other neurons, this is called superposition.
+
+825
+00:58:28,559 --> 00:58:32,480
+And uh together it represents this more sophisticated concept.
+
+826
+00:58:32,480 --> 00:58:40,160
+And it's just something we're learning about all the time, you know, and philanthropic as as we think about the way this space evolves,
+
+827
+00:58:40,160 --> 00:58:47,760
+doing this in a way that is safe and good for the world is just this is the reason that we exist and this is the reason that everyone is at anthropic.
+
+828
+00:58:47,760 --> 00:58:50,559
+Uh, everyone that is here, this is the reason why they're here.
+
+829
+00:58:50,559 --> 00:58:52,640
+So, a lot of this work we actually open source.
+
+830
+00:58:52,640 --> 00:58:54,319
+Uh, we publish it a lot.
+
+831
+00:58:54,319 --> 00:59:06,240
+Um and you know we publish very freely to talk about this just so we can inspire other labs that are working on similar things to do it in a way that's safe and this is something that we've been doing for cloud code also we call this the race to
+
+832
+00:59:06,240 --> 00:59:18,000
+the top uh internally and so for cloud code for example we released an open source sandbox and this is a sandbox they can run the the agent in and it just makes sure that there's certain
+
+833
+00:59:18,000 --> 00:59:20,799
+boundaries and it can't access like everything on your system.
+
+834
+00:59:20,799 --> 00:59:28,799
+Uh, and we made that open source and it actually works with any agent, not just quad code because we wanted to make it really easy for others to do the same thing.
+
+835
+00:59:28,799 --> 00:59:31,520
+Um, so this is just the same principle of race to the top.
+
+836
+00:59:31,520 --> 00:59:37,040
+Um, we we want to make sure this thing goes well and this is just the this is the lever that we have.
+
+837
+00:59:37,040 --> 00:59:37,839
+>> Incredible.
+
+838
+00:59:37,839 --> 00:59:39,760
+Okay, I definitely want to spend more time on that.
+
+839
+00:59:39,760 --> 00:59:42,000
+I I will follow up with this suggestion.
+
+840
+00:59:42,000 --> 00:59:47,599
+Something else that I've been noticing in the in the field across engineers, product managers,
+
+841
+00:59:47,599 --> 00:59:54,640
+others that work with agents is there's this kind of anxiety people feel when their agents aren't working.
+
+842
+00:59:54,640 --> 01:00:03,599
+There's a sense that like, oh man, Nza has a question, I need to answer or it's like blocked on something or it's or I just like I I'm like there's all this productivity I'm losing.
+
+843
+01:00:03,599 --> 01:00:06,160
+I can't like I need to wake up and get it going again.
+
+844
+01:00:06,160 --> 01:00:07,040
+Is that something you feel?
+
+845
+01:00:07,040 --> 01:00:08,400
+Is that something your team feels?
+
+846
+01:00:08,400 --> 01:00:11,599
+Do you feel like this is a a problem we need to track and think about?
+
+847
+01:00:11,599 --> 01:00:13,040
+I always have a bunch of agents running.
+
+848
+01:00:13,040 --> 01:00:19,680
+So like at the moment I have like five agents running and at any moment like you know like I I wake up and I I stored a bunch of agents.
+
+849
+01:00:19,680 --> 01:00:23,200
+Like the first thing I did when I woke up is like oh man I I want I really want to check this thing.
+
+850
+01:00:23,200 --> 01:00:32,559
+So like I opened up my phone quad iOS app code tab uh you know like agent do do blah blah blah cuz I I wrote some code yesterday and I was like wait did did I do this right?
+
+851
+01:00:32,559 --> 01:00:36,079
+I was like kind of double double guessing something and it and it was correct.
+
+852
+01:00:36,079 --> 01:00:38,640
+But now it's just like so easy to do this.
+
+853
+01:00:38,640 --> 01:00:41,280
+So I don't know, there is this little bit of anxiety.
+
+854
+01:00:41,280 --> 01:00:45,520
+Maybe I personally haven't really felt it just cuz I have agents running all the time.
+
+855
+01:00:45,520 --> 01:00:48,559
+Um, and I'm also just like not locked into a terminal anymore.
+
+856
+01:00:48,559 --> 01:00:56,000
+Maybe a third of my code now is in the terminal, but also a third is uh using the desktop app and then a third is the iOS app,
+
+857
+01:00:56,000 --> 01:01:02,880
+which is just so surprising cuz I did not think that this would be the way that I code uh in even in 2026.
+
+858
+01:01:02,880 --> 01:01:08,559
+I love that you describe it as coding still, which is just talking to the to cloud code to code for you essentially.
+
+859
+01:01:08,559 --> 01:01:11,440
+And it's interesting that this is now like this is now coding.
+
+860
+01:01:11,440 --> 01:01:16,000
+Coding now is describing what you want, not writing actual code.
+
+861
+01:01:16,000 --> 01:01:20,799
+>> I I I kind of wonder if uh the people that used to code using punch cards or whatever,
+
+862
+01:01:20,799 --> 01:01:22,880
+if you show them software, what they would have said.
+
+863
+01:01:22,880 --> 01:01:23,359
+Isn't that crazy?
+
+864
+01:01:23,359 --> 01:01:33,680
+And I I remember reading something this was maybe like very early versions of like ACM uh like like magazine or something where people were saying no it's not the same thing like
+
+865
+01:01:33,680 --> 01:01:44,240
+this isn't this isn't really coding uh and you know like they called it programming I think coding is kind of a new word >> but I kind of think about this like in the back in the you know my family is from the Soviet Union I you know I I was
+
+866
+01:01:44,240 --> 01:01:54,480
+born in Ukraine um and my grandpa was actually one of the first programmers in the Soviet Union and he programmed using punch cards And uh you know like he he
+
+867
+01:01:54,480 --> 01:02:05,680
+told my mom uh growing up told these stories of like or she she told these stories that when she was growing up he would bring these punch cards home and there was these like big stacks of punch cards and for her she would like draw
+
+868
+01:02:05,680 --> 01:02:16,400
+all over them with crayons and that was like her childhood memory but for him that was like his experience of programming and he actually never saw the software transition but at some point it did transition to software and I think there's probably this older
+
+869
+01:02:16,400 --> 01:02:22,960
+generation of programmers that just didn't take software very seriously and they would have been like well you know it's not really coding.
+
+870
+01:02:22,960 --> 01:02:26,880
+But I I think this is a field that just has always been changing in this way.
+
+871
+01:02:26,880 --> 01:02:30,559
+>> Uh I don't think you know this, but I was born in Ukraine also.
+
+872
+01:02:30,559 --> 01:02:31,440
+>> Oh, I don't know.
+
+873
+01:02:31,440 --> 01:02:32,000
+Yeah.
+
+874
+01:02:32,000 --> 01:02:32,640
+Which time?
+
+875
+01:02:32,640 --> 01:02:34,400
+>> I'm I'm from Odessa.
+
+876
+01:02:34,400 --> 01:02:36,468
+>> Oh, me too.
+
+877
+01:02:36,468 --> 01:02:36,960
+[laughter] >> What?
+
+878
+01:02:36,960 --> 01:02:39,200
+>> Yeah, that's crazy.
+
+879
+01:02:39,200 --> 01:02:40,079
+>> Wow.
+
+880
+01:02:40,079 --> 01:02:40,640
+Incredible.
+
+881
+01:02:40,640 --> 01:02:41,520
+What a moment.
+
+882
+01:02:41,520 --> 01:02:44,000
+Uh maybe related in some small way.
+
+883
+01:02:44,000 --> 01:02:48,319
+>> Uh what year did your home did you leave and your family leave?
+
+884
+01:02:48,319 --> 01:02:50,480
+>> Uh we came in 95.
+
+885
+01:02:50,480 --> 01:02:50,720
+>> Okay.
+
+886
+01:02:50,720 --> 01:02:51,680
+We left in ' 88.
+
+887
+01:02:51,680 --> 01:02:52,720
+a little earlier.
+
+888
+01:02:52,720 --> 01:02:53,760
+>> Oh, yeah.
+
+889
+01:02:53,760 --> 01:02:57,200
+>> What a different life that would have been to not to not leave, huh?
+
+890
+01:02:57,200 --> 01:02:57,440
+>> Yeah.
+
+891
+01:02:57,440 --> 01:03:02,160
+I just I feel I feel so lucky every day that uh get get to grow up here.
+
+892
+01:03:02,160 --> 01:03:02,480
+>> Yeah.
+
+893
+01:03:02,480 --> 01:03:07,920
+My family anytime there's like a toaster or a meal, they're just like to America.
+
+894
+01:03:07,920 --> 01:03:09,440
+It's like, okay, enough about that.
+
+895
+01:03:09,440 --> 01:03:12,720
+But you get it, you know, once you start really thinking about what life could have been.
+
+896
+01:03:12,720 --> 01:03:12,960
+>> Yeah.
+
+897
+01:03:12,960 --> 01:03:13,200
+Yeah.
+
+898
+01:03:13,200 --> 01:03:13,440
+Exactly.
+
+899
+01:03:13,440 --> 01:03:13,599
+Yeah.
+
+900
+01:03:13,599 --> 01:03:16,400
+We do we do the same toast, but it's still vodka.
+
+901
+01:03:16,400 --> 01:03:17,280
+>> It's still vodka.
+
+902
+01:03:17,280 --> 01:03:18,388
+Absolutely.
+
+903
+01:03:18,388 --> 01:03:20,160
+[laughter] Oh, man.
+
+904
+01:03:20,160 --> 01:03:20,559
+Okay.
+
+905
+01:03:20,559 --> 01:03:22,319
+Let me ask you a couple more things here.
+
+906
+01:03:22,319 --> 01:03:27,520
+You shared some really cool tips for how to get the most out of AI, how to build on AI,
+
+907
+01:03:27,520 --> 01:03:29,200
+how to build great products on AI.
+
+908
+01:03:29,200 --> 01:03:32,640
+One tip you shared is give your team as many tokens as they want.
+
+909
+01:03:32,640 --> 01:03:34,319
+Just like let them experiment.
+
+910
+01:03:34,319 --> 01:03:38,640
+You also shared just advice generally of just build towards the model where the model is going,
+
+911
+01:03:38,640 --> 01:03:39,920
+not to where it is today.
+
+912
+01:03:39,920 --> 01:03:42,960
+What other advice do you have for folks that are trying to build AI products?
+
+913
+01:03:42,960 --> 01:03:44,160
+>> I'd probably share a few more things.
+
+914
+01:03:44,160 --> 01:03:47,119
+So, one is don't try to box the model in.
+
+915
+01:03:47,119 --> 01:03:53,680
+Um I I think a lot of people's instinct when they build on the model is they try to make it behave a very particular way.
+
+916
+01:03:53,680 --> 01:03:56,000
+They're like this is a component of a bigger system.
+
+917
+01:03:56,000 --> 01:04:06,240
+I I think some examples of this are people layering like very strict workflows on the model for example you know to say like you must do step one then step two then step three and you have this like very fancy orchestrator doing this.
+
+918
+01:04:06,240 --> 01:04:11,520
+But actually almost always you get better results if you just give the model tools you give it a goal and you let it figure it out.
+
+919
+01:04:11,520 --> 01:04:16,079
+I think a year ago you actually needed a lot of the scaffolding but nowadays you don't really need it.
+
+920
+01:04:16,079 --> 01:04:21,839
+So, you know, I I don't know what to call this principle, but it's like, you know, like ask not what the model can do for you.
+
+921
+01:04:21,839 --> 01:04:23,520
+Maybe maybe it's something like this.
+
+922
+01:04:23,520 --> 01:04:26,559
+Just think about how do you give the model the tools to do things.
+
+923
+01:04:26,559 --> 01:04:27,680
+Don't try to overcurate it.
+
+924
+01:04:27,680 --> 01:04:29,520
+Don't try to put it into a box.
+
+925
+01:04:29,520 --> 01:04:31,599
+Don't try to give it a bunch of context up front.
+
+926
+01:04:31,599 --> 01:04:34,240
+Give it a tool so that it can get the context it needs.
+
+927
+01:04:34,240 --> 01:04:37,359
+You're just going to get better results.
+
+928
+01:04:37,359 --> 01:04:45,920
+I think a second one is um maybe actually like a a more even more general version of this principle is just the bitter lesson.
+
+929
+01:04:45,920 --> 01:04:55,440
+Uh and actually for the quad code team we have a you know hopefully hopefully um listeners have have read this but Rich Sutton had this blog post maybe 10 years ago called the bitter lesson.
+
+930
+01:04:55,440 --> 01:04:57,440
+Uh and it's actually a really simple idea.
+
+931
+01:04:57,440 --> 01:05:07,440
+His idea was that the more general model will always outperform the more specific model and I think for him he was talking about like self-driving cars and other domains like this but actually there's
+
+932
+01:05:07,440 --> 01:05:10,559
+just so many corlaries to the bitter lesson.
+
+933
+01:05:10,559 --> 01:05:18,640
+And for me, the biggest one is just always bet on the more general model and you know over the long term like don't don't try to use tiny models for stuff.
+
+934
+01:05:18,640 --> 01:05:19,839
+Don't try to like fine-tune.
+
+935
+01:05:19,839 --> 01:05:21,280
+Don't try to do any of this stuff.
+
+936
+01:05:21,280 --> 01:05:29,520
+There's like some applications you know there's some reasons to do this but almost always try to bet on the more general model if you can if you have that flexibility.
+
+937
+01:05:29,520 --> 01:05:34,880
+Um and so these workflows are essentially a way that uh you know it's it's not it's not a general model.
+
+938
+01:05:34,880 --> 01:05:36,559
+It's putting the scaffolding around it.
+
+939
+01:05:36,559 --> 01:05:45,920
+And in general what we see is maybe scaffolding can improve performance maybe 10 20% something like this but often these gains just get wiped out with the next model.
+
+940
+01:05:45,920 --> 01:05:50,079
+Uh so it's almost better to just wait for the next one.
+
+941
+01:05:50,079 --> 01:05:55,920
+And I think maybe this is a final principle and something that quad code I think got right in hindsight.
+
+942
+01:05:55,920 --> 01:06:03,839
+From the very beginning, we bet on building for the model six months from now, not for the model of today.
+
+943
+01:06:03,839 --> 01:06:10,000
+And for the very early versions of the product, it just wrote so little of my code cuz I I didn't trust it cuz,
+
+944
+01:06:10,000 --> 01:06:17,839
+you know, it was like sonnet 3.5, then it was like 3.6 or forget 3 3.5 new, whatever whatever whatever name we gave it.
+
+945
+01:06:17,839 --> 01:06:20,079
+Um, these models just weren't very good at coding yet.
+
+946
+01:06:20,079 --> 01:06:22,960
+Um, they were they were getting there, but it was still pretty early.
+
+947
+01:06:22,960 --> 01:06:33,520
+So back then the model did uh you used git for me it automated some things but it it really wasn't doing a huge amount of my coding and so the bet with quad code was at some point the
+
+948
+01:06:33,520 --> 01:06:44,640
+model gets good enough that it can just write a lot of the code and this is a thing that we first started seeing with opus 4 and sonnet 4 and opus 4 was our first kind of ASL3 class model uh that
+
+949
+01:06:44,640 --> 01:06:54,559
+we released back in May and we just saw this inflection because everyone started to use quad code for the first time and that was kind of when our growth really went exponential and like I said it's
+
+950
+01:06:54,559 --> 01:06:56,319
+kind of it stayed there.
+
+951
+01:06:56,319 --> 01:07:02,079
+So I think this is some this is advice that I actually give to to a lot of folks especially people building startups.
+
+952
+01:07:02,079 --> 01:07:13,839
+It's going to be uncomfortable cuz your product market fit won't be very good for the first 6 months but if you build for the model 6 months out when that model comes out you're just going to hit the ground running and the product is going to
+
+953
+01:07:13,839 --> 01:07:15,760
+click and and start to work.
+
+954
+01:07:15,760 --> 01:07:20,880
+And when you say build for the model 6 months out what is what is it that you think people can assume will happen?
+
+955
+01:07:20,880 --> 01:07:23,760
+Is it just generally it will get better at things?
+
+956
+01:07:23,760 --> 01:07:29,200
+Is it just like okay, it's like almost good enough and that's a sign that it'll probably get better at that thing.
+
+957
+01:07:29,200 --> 01:07:30,559
+Is there any advice there?
+
+958
+01:07:30,559 --> 01:07:31,839
+>> I think that's a good way to do it.
+
+959
+01:07:31,839 --> 01:07:36,461
+Like, you know, obviously within an AI lab, we get to see the specific ways that it gets better.
+
+960
+01:07:36,461 --> 01:07:40,960
+[laughter] >> So, it's a it's a little unfair, but we we also we try to talk about this.
+
+961
+01:07:40,960 --> 01:07:47,119
+So, you know, like one of the ways that it's going to get better is it's going to get better and better at using tools and using computers.
+
+962
+01:07:47,119 --> 01:07:49,039
+This is a bet that I would make.
+
+963
+01:07:49,039 --> 01:07:54,480
+Uh, another one is it's going to get better and better for long for running for long periods of time.
+
+964
+01:07:54,480 --> 01:07:59,119
+And this is a place, you know, like there's all sorts of studies about this, but if you just trace the trajectory or,
+
+965
+01:07:59,119 --> 01:08:03,520
+you know, maybe even like for my own experience when I used Sonnet 3.5 back, you know,
+
+966
+01:08:03,520 --> 01:08:13,680
+a year ago, it could run for maybe 15 or 30 seconds before before it started going off the rails and you just really had to hold its hand through any kind of complicated task.
+
+967
+01:08:13,680 --> 01:08:22,799
+But nowadays with Opus 4.6, fix, you know, on average it'll run maybe 10, 30, 20, 30 minutes unattended and I'll just like start another quad and have it do something else.
+
+968
+01:08:22,799 --> 01:08:25,600
+And you know, like I said, I always have a bunch of quads running.
+
+969
+01:08:25,600 --> 01:08:28,880
+Uh, and they can also run for hours or even days at a time.
+
+970
+01:08:28,880 --> 01:08:31,440
+I think there are some examples where they ran for many weeks.
+
+971
+01:08:31,440 --> 01:08:39,520
+And so I think over time this is going to become more and more normal where the models are running for a very very long period of time and you you don't have to sit there and babysit them anymore.
+
+972
+01:08:39,520 --> 01:08:42,480
+>> So we just talked about tips for building AI products.
+
+973
+01:08:42,480 --> 01:08:48,880
+Any tips for someone just using cloud code say for the first time or just someone already using cloud code that wants to get better?
+
+974
+01:08:48,880 --> 01:08:51,359
+What are like a couple pro tips that you could share?
+
+975
+01:08:51,359 --> 01:08:54,880
+>> I will give a caveat which is there's no one right way to use quad code.
+
+976
+01:08:54,880 --> 01:08:58,400
+So I I can share some tips but honestly this is a dev tool.
+
+977
+01:08:58,400 --> 01:08:59,759
+Developers are all different.
+
+978
+01:08:59,759 --> 01:09:01,120
+Developers have different preferences.
+
+979
+01:09:01,120 --> 01:09:02,640
+They have different environments.
+
+980
+01:09:02,640 --> 01:09:04,719
+So there's just so many ways to use these tools.
+
+981
+01:09:04,719 --> 01:09:05,920
+There's no one right way.
+
+982
+01:09:05,920 --> 01:09:08,560
+Um you you sort of have to find your own path.
+
+983
+01:09:08,560 --> 01:09:10,159
+Luckily you can ask Quad Code.
+
+984
+01:09:10,159 --> 01:09:12,159
+Uh it's able to make recommendations.
+
+985
+01:09:12,159 --> 01:09:13,279
+It can edit your settings.
+
+986
+01:09:13,279 --> 01:09:14,319
+It kind of knows about itself.
+
+987
+01:09:14,319 --> 01:09:16,960
+So, it can help it can help with that.
+
+988
+01:09:16,960 --> 01:09:18,880
+A few tips that generally I find pretty useful.
+
+989
+01:09:18,880 --> 01:09:21,359
+So, number one is just use the most capable model.
+
+990
+01:09:21,359 --> 01:09:23,359
+Um, currently that's Opus 4.6.
+
+991
+01:09:23,359 --> 01:09:26,080
+I have maximum effort enabled always.
+
+992
+01:09:26,080 --> 01:09:31,279
+The thing that happens is sometimes people try to use a less expensive model like sonnet or something like this.
+
+993
+01:09:31,279 --> 01:09:35,199
+But because it's less intelligent, it actually takes more tokens in the end to do the same task.
+
+994
+01:09:35,199 --> 01:09:39,279
+Um, and so it's actually not obvious that it's cheaper if you use a less expensive model.
+
+995
+01:09:39,279 --> 01:09:46,719
+often it's actually cheaper and less token intensive if you use the most capable model because it can just do the same thing much faster with less correction,
+
+996
+01:09:46,719 --> 01:09:48,799
+less uh less handholding and so on.
+
+997
+01:09:48,799 --> 01:09:51,839
+So that's the first tip is just use the best model.
+
+998
+01:09:51,839 --> 01:09:54,400
+The second one is use plan mode.
+
+999
+01:09:54,400 --> 01:09:58,640
+I start almost all of my tasks in plan mode, maybe like 80%.
+
+1000
+01:09:58,640 --> 01:10:00,400
+And plan mode is actually really simple.
+
+1001
+01:10:00,400 --> 01:10:06,640
+All it is is we inject one sentence into the model's prompt to say please don't write any code yet.
+
+1002
+01:10:06,640 --> 01:10:07,440
+That's it.
+
+1003
+01:10:07,440 --> 01:10:09,360
+like there's there's actually like nothing fancy going on.
+
+1004
+01:10:09,360 --> 01:10:10,960
+It's just the simplest thing.
+
+1005
+01:10:10,960 --> 01:10:15,840
+>> Um, and so for people that are in the terminal, it's just shift tab twice and that gets you into plan mode.
+
+1006
+01:10:15,840 --> 01:10:18,080
+Uh, for people in the desktop app, there's a little button.
+
+1007
+01:10:18,080 --> 01:10:19,600
+On web, there's a little button.
+
+1008
+01:10:19,600 --> 01:10:21,600
+It's coming pretty soon to mobile also.
+
+1009
+01:10:21,600 --> 01:10:24,640
+Uh, and we just launched it for the SWAC integration, too.
+
+1010
+01:10:24,640 --> 01:10:27,040
+Uh, so plan mode is the second one.
+
+1011
+01:10:27,040 --> 01:10:30,400
+And uh, essentially the model would just go back and forth with you.
+
+1012
+01:10:30,400 --> 01:10:33,120
+Once the plan looks good, then you let the model execute.
+
+1013
+01:10:33,120 --> 01:10:37,199
+I auto accept edits after that because if the plan looks good, it's just going to oneshot it.
+
+1014
+01:10:37,199 --> 01:10:42,000
+It'll get it right the first time almost every time with Opus 4.6.
+
+1015
+01:10:42,000 --> 01:10:45,040
+And then maybe the third tip is just play around with different interfaces.
+
+1016
+01:10:45,040 --> 01:10:48,159
+I think a lot of people when they think about cloud code, they think about a terminal.
+
+1017
+01:10:48,159 --> 01:10:50,400
+Um, and you know, of course, we support every terminal.
+
+1018
+01:10:50,400 --> 01:10:54,880
+We support like Mac, Windows, you know, like whatever terminal you might use, it works perfectly.
+
+1019
+01:10:54,880 --> 01:10:59,760
+But we actually support a lot of other form factors too like you know, we have like iOS and Android apps.
+
+1020
+01:10:59,760 --> 01:11:01,199
+We have a desktop app.
+
+1021
+01:11:01,199 --> 01:11:02,960
+There's uh you know the Slack integration.
+
+1022
+01:11:02,960 --> 01:11:04,719
+There's all sorts of things that we support.
+
+1023
+01:11:04,719 --> 01:11:06,159
+So I would just like play around with these.
+
+1024
+01:11:06,159 --> 01:11:07,840
+And again it's like every engineer is different.
+
+1025
+01:11:07,840 --> 01:11:09,600
+Everyone that's building is different.
+
+1026
+01:11:09,600 --> 01:11:12,159
+Just find the thing that feels right to you and and use that.
+
+1027
+01:11:12,159 --> 01:11:13,440
+You don't have to use a terminal.
+
+1028
+01:11:13,440 --> 01:11:15,760
+It's the same quad agent running everywhere.
+
+1029
+01:11:15,760 --> 01:11:16,640
+>> Amazing.
+
+1030
+01:11:16,640 --> 01:11:17,040
+Okay.
+
+1031
+01:11:17,040 --> 01:11:20,239
+Just a couple more questions to round things out.
+
+1032
+01:11:20,239 --> 01:11:22,159
+What's your take on Codeex?
+
+1033
+01:11:22,159 --> 01:11:23,920
+How do you feel about that product?
+
+1034
+01:11:23,920 --> 01:11:25,199
+How do you feel about where they're going?
+
+1035
+01:11:25,199 --> 01:11:30,239
+Just kind of competing in this very competitive space uh in coding agents.
+
+1036
+01:11:30,239 --> 01:11:36,400
+Yeah, I actually haven't really used it, but uh I I think I did use it maybe when it came out.
+
+1037
+01:11:36,400 --> 01:11:39,760
+It looked a lot like Quad Code to me, so that was kind of flattering.
+
+1038
+01:11:39,760 --> 01:11:48,960
+It's I think it's actually good, you know, to have more competition cuz people should get to choose and hopefully it forces all of us to like do a even better job.
+
+1039
+01:11:48,960 --> 01:11:53,760
+Honestly, for our team though, we're just focused on solving the problems that users have.
+
+1040
+01:11:53,760 --> 01:11:57,520
+Um so for us, you know, we don't spend a lot of time looking at competing products.
+
+1041
+01:11:57,520 --> 01:11:59,440
+We don't really try the other products.
+
+1042
+01:11:59,440 --> 01:12:01,360
+I you know you kind of you want to be aware of them.
+
+1043
+01:12:01,360 --> 01:12:05,280
+You want to know they exist but for me I just I love talking to users.
+
+1044
+01:12:05,280 --> 01:12:06,960
+I love making the product better.
+
+1045
+01:12:06,960 --> 01:12:10,080
+Um I I love just acting on on feedback.
+
+1046
+01:12:10,080 --> 01:12:13,520
+So it's really just about building a building a good product.
+
+1047
+01:12:13,520 --> 01:12:14,640
+>> Maybe a last question.
+
+1048
+01:12:14,640 --> 01:12:17,440
+So I talked to Ben man co-founder of Anthropic.
+
+1049
+01:12:17,440 --> 01:12:18,400
+What what to talk to you about.
+
+1050
+01:12:18,400 --> 01:12:21,360
+He had a bunch of suggestions which I've integrated throughout our chat.
+
+1051
+01:12:21,360 --> 01:12:26,080
+One question he had for you is what's your plan post AGI?
+
+1052
+01:12:26,080 --> 01:12:27,120
+What do you think you're going to be doing?
+
+1053
+01:12:27,120 --> 01:12:28,719
+What's your life like once we hit AGI?
+
+1054
+01:12:28,719 --> 01:12:30,080
+whatever that means.
+
+1055
+01:12:30,080 --> 01:12:37,760
+>> So before I joined Anthropic, um I was actually living in rural Japan and it was like a totally different lifestyle.
+
+1056
+01:12:37,760 --> 01:12:39,679
+Um I was like the only engineer in the town.
+
+1057
+01:12:39,679 --> 01:12:41,840
+I was the only English speaker in the town.
+
+1058
+01:12:41,840 --> 01:12:43,520
+It was just like a totally different vibe.
+
+1059
+01:12:43,520 --> 01:12:47,440
+Like a couple times a week I would like bike to the farmers market.
+
+1060
+01:12:47,440 --> 01:12:51,120
+Uh and you know you like bike by like rice patties and stuff.
+
+1061
+01:12:51,120 --> 01:12:55,440
+It was just like a totally different speed than just complete opposite of San Francisco.
+
+1062
+01:12:55,440 --> 01:13:03,520
+One of the things that I really liked is a way that we got to know our neighbors and we kind of built friendships is by trading like pickles.
+
+1063
+01:13:03,520 --> 01:13:07,520
+So in that in the town where we lived, it was actually like everyone made like miso.
+
+1064
+01:13:07,520 --> 01:13:08,960
+Everyone made pickles.
+
+1065
+01:13:08,960 --> 01:13:11,840
+Uh and so I actually got like decently good at making miso.
+
+1066
+01:13:11,840 --> 01:13:17,440
+Um and you know I made a bunch of batches and um this is something that I still make.
+
+1067
+01:13:17,440 --> 01:13:21,679
+Uh miso is this interesting thing where it teaches you to think on these longtime skills.
+
+1068
+01:13:21,679 --> 01:13:30,400
+That's just very different than engineering cuz like uh you know like a batch of white miso takes like at least three months to make and a red miso is like you know 2 3 4 years.
+
+1069
+01:13:30,400 --> 01:13:31,679
+You just have to be very patient.
+
+1070
+01:13:31,679 --> 01:13:33,760
+You kind of mix it up and then you just like wet it sit.
+
+1071
+01:13:33,760 --> 01:13:35,600
+You have to be very very patient.
+
+1072
+01:13:35,600 --> 01:13:39,840
+>> So I the thing that I love about it is just thinking in these longtime skills.
+
+1073
+01:13:39,840 --> 01:13:45,885
+Uh, and yeah, I think postGI or if I wasn't at anthropic, I'd probably be making miso.
+
+1074
+01:13:45,885 --> 01:13:47,920
+[laughter] >> I love this answer.
+
+1075
+01:13:47,920 --> 01:13:55,040
+Uh, Ben asked me to ask you about what's the deal with you and miso and so I love that you answered it.
+
+1076
+01:13:55,040 --> 01:14:01,679
+Okay, so the future the future might be just going deep into miso, getting really good at get making miso.
+
+1077
+01:14:01,679 --> 01:14:03,840
+Uh, amazing.
+
+1078
+01:14:03,840 --> 01:14:05,199
+Uh, Boris, this was incredible.
+
+1079
+01:14:05,199 --> 01:14:08,080
+I feel like we're we're brothers now from Ukraine.
+
+1080
+01:14:08,080 --> 01:14:12,640
+Uh before we get to a very exciting lightning round, is there anything else that you wanted to share?
+
+1081
+01:14:12,640 --> 01:14:14,960
+Is there anything you want to leave listeners with?
+
+1082
+01:14:14,960 --> 01:14:18,320
+Anything you want uh you want to double down on?
+
+1083
+01:14:18,320 --> 01:14:23,760
+>> Yeah, I I think I would just like underscore, you know, like for for anthropic since the beginning,
+
+1084
+01:14:23,760 --> 01:14:30,320
+this idea of like starting at coding, then getting to tool use, then getting to computer use has just been the way that we think about things.
+
+1085
+01:14:30,320 --> 01:14:35,520
+And we this is the way that we know the models are going to develop or, you know, the way that we want to build our models.
+
+1086
+01:14:35,520 --> 01:14:40,880
+And it's also the way that we get to learn about safety, study it, and improve it the most.
+
+1087
+01:14:40,880 --> 01:14:46,560
+So, you know, everything that's happening right now around, you know, just like Quad Code becoming this huge,
+
+1088
+01:14:46,560 --> 01:14:53,120
+you know, multi-billion dollar business and, you know, like now all of my friends use Quad Code and they just text me about it all the time.
+
+1089
+01:14:53,120 --> 01:15:01,920
+Uh, so just like, you know, this thing getting kind of big and in some ways it's a total surprise because this isn't kind of the we didn't know that it would be this product.
+
+1090
+01:15:01,920 --> 01:15:04,800
+We didn't know that it would start in a terminal or anything like this.
+
+1091
+01:15:04,800 --> 01:15:10,560
+But in some ways, it's just totally unsurprising because this has been our belief as a company for for a long time.
+
+1092
+01:15:10,560 --> 01:15:15,440
+At the same time, it just feels still very early, you know, like most of the world still does not use quad code.
+
+1093
+01:15:15,440 --> 01:15:17,600
+Most of the world still does not use AI.
+
+1094
+01:15:17,600 --> 01:15:21,679
+So, it just feels like this is 1% done and there's so much more to go.
+
+1095
+01:15:21,679 --> 01:15:22,000
+>> Yeah.
+
+1096
+01:15:22,000 --> 01:15:25,040
+Man, that's insane to think seeing the numbers that are coming out.
+
+1097
+01:15:25,040 --> 01:15:27,360
+You guys just raised a bazillion dollars.
+
+1098
+01:15:27,360 --> 01:15:31,520
+Uh I think Cloud Code alone is making$2 billion dollars in revenue.
+
+1099
+01:15:31,520 --> 01:15:36,080
+you think Anthropic, I think the number you guys put out, you're making 15 billion in revenue.
+
+1100
+01:15:36,080 --> 01:15:42,159
+It's uh insane to just think this is how early it still is and just the numbers we're seeing.
+
+1101
+01:15:42,159 --> 01:15:42,480
+>> Yeah.
+
+1102
+01:15:42,480 --> 01:15:42,719
+Yeah.
+
+1103
+01:15:42,719 --> 01:15:43,199
+Yeah.
+
+1104
+01:15:43,199 --> 01:15:43,760
+It's crazy.
+
+1105
+01:15:43,760 --> 01:15:47,920
+And and I mean like the the way that Quad Code has kept growing is honestly just the users.
+
+1106
+01:15:47,920 --> 01:15:49,679
+Like we so many people use it.
+
+1107
+01:15:49,679 --> 01:15:50,719
+They're so passionate about it.
+
+1108
+01:15:50,719 --> 01:15:54,000
+They fall in love with the product and then they tell us about stuff that doesn't work,
+
+1109
+01:15:54,000 --> 01:15:55,280
+stuff that they want.
+
+1110
+01:15:55,280 --> 01:15:59,199
+And so like the only reason that it keeps improving is because everyone is using it.
+
+1111
+01:15:59,199 --> 01:16:00,239
+Everyone is talking about it.
+
+1112
+01:16:00,239 --> 01:16:11,600
+Everyone keeps giving feedback and this is just the single most important thing and you know for me this is the way that I love to spend my day is just talking to users and making it better for them >> and making me so
+
+1113
+01:16:11,600 --> 01:16:23,360
+>> and making me so well the you know the miso is like not super involved it just you just got to wait you just got to wait >> well Boris with that we've reached our very exciting lightning round I've got five questions for you are you ready
+
+1114
+01:16:23,360 --> 01:16:30,960
+>> let's do it first question what are two or three books that you find yourself recommending most to other people >> I I'm a greeter.
+
+1115
+01:16:30,960 --> 01:16:35,679
+Uh I would start with the technical book one is it it is functional programming in Scola.
+
+1116
+01:16:35,679 --> 01:16:38,640
+This is the single best technical book I've ever read.
+
+1117
+01:16:38,640 --> 01:16:50,080
+It's very weird because you're probably not going to use Scola and I don't know how much this matters in the future now but there's this just elegance to functional programming and thinking in types and this is just the way that I code and the way that I can't
+
+1118
+01:16:50,080 --> 01:16:51,600
+stop thinking about coding.
+
+1119
+01:16:51,600 --> 01:16:53,760
+So you know you could think of it as a historical artifact.
+
+1120
+01:16:53,760 --> 01:16:56,159
+You could think of it as something that will level you up.
+
+1121
+01:16:56,159 --> 01:16:58,640
+>> I love this neverbeforementioned book.
+
+1122
+01:16:58,640 --> 01:16:59,679
+My favorite.
+
+1123
+01:16:59,679 --> 01:17:00,320
+>> Oh, amazing.
+
+1124
+01:17:00,320 --> 01:17:01,199
+Amazing.
+
+1125
+01:17:01,199 --> 01:17:01,840
+Uh, okay.
+
+1126
+01:17:01,840 --> 01:17:04,560
+Second one is uh Accelerondo by Straws.
+
+1127
+01:17:04,560 --> 01:17:08,880
+This is probably, you know, like my my big genre is uh is sci-fi.
+
+1128
+01:17:08,880 --> 01:17:11,360
+Uh like probably sci-fi and fiction.
+
+1129
+01:17:11,360 --> 01:17:15,280
+Accelerondo is just this incredible book and it it it's just so fast-paced.
+
+1130
+01:17:15,280 --> 01:17:16,880
+The pace gets faster and faster and faster.
+
+1131
+01:17:16,880 --> 01:17:22,080
+And I just feel like it captures the essence of this moment that we're in more than any other book that I've read.
+
+1132
+01:17:22,080 --> 01:17:23,760
+Just the speed of it.
+
+1133
+01:17:23,760 --> 01:17:33,920
+And it starts as a liftoff is starting to happen and you know starting to approach the singularity and it ends with like this like collective lobster consciousness orbiting Jupiter.
+
+1134
+01:17:33,920 --> 01:17:38,000
+Um and you know this happens over like the span of a few decades or something.
+
+1135
+01:17:38,000 --> 01:17:39,600
+So the the pace is just incredible.
+
+1136
+01:17:39,600 --> 01:17:41,440
+I I really love it.
+
+1137
+01:17:41,440 --> 01:17:43,280
+Maybe I'll I'll do one more book.
+
+1138
+01:17:43,280 --> 01:17:48,159
+Uh the wandering earth uh wandering earth by uh sishlu.
+
+1139
+01:17:48,159 --> 01:17:50,960
+So he's the guy that did uh three body problem.
+
+1140
+01:17:50,960 --> 01:17:52,239
+I think a lot of people know him for that.
+
+1141
+01:17:52,239 --> 01:17:56,480
+I actually I think your body problem was awesome, but I actually liked his short stories even more.
+
+1142
+01:17:56,480 --> 01:18:08,320
+So, Wandering Earth is one of the short story collections and it just has some really really amazing stories and it it's also just quite interesting to see uh Chinese sci-fi because it has a very different perspective than Western
+
+1143
+01:18:08,320 --> 01:18:11,920
+sci-fi and kind of the way that um at least he as a writer thinks about it.
+
+1144
+01:18:11,920 --> 01:18:15,360
+So, it's just really really interesting to read and just beautifully written.
+
+1145
+01:18:15,360 --> 01:18:19,760
+It's so interesting how sci-fi has prepared us to think about where things are going.
+
+1146
+01:18:19,760 --> 01:18:24,480
+Just like it creates these mounts to models of like okay I see I've read about this sort of world.
+
+1147
+01:18:24,480 --> 01:18:24,800
+Yeah.
+
+1148
+01:18:24,800 --> 01:18:32,080
+I think I think for me this is like the reason that I joined anthropic actually cuz uh you know like like I said I was living in this rural place.
+
+1149
+01:18:32,080 --> 01:18:37,760
+I was thinking these longtime skills because everything is just so slow out there at least compared to SF.
+
+1150
+01:18:37,760 --> 01:18:43,199
+Um and just like all the things that you do are based around the seasons and it's based around this food that takes many many months.
+
+1151
+01:18:43,199 --> 01:18:45,600
+That's the way that kind of like social events are organized.
+
+1152
+01:18:45,600 --> 01:18:48,239
+That's the way you kind of organize your time.
+
+1153
+01:18:48,239 --> 01:18:58,239
+You like you go to the farmers market and it's like it's pimmen season and you know that because there's like 20 pimmen vendors and then the next week the season is done and it's like grape season and you kind of see this.
+
+1154
+01:18:58,239 --> 01:19:06,640
+So it's like these kind of longtime skills and I was also reading a bunch of sci-fi at the time and just like being in this moment I was like you know just thinking about these long time scales.
+
+1155
+01:19:06,640 --> 01:19:16,960
+I know how this thing can go and I just I felt like I had to contribute to it going a little bit better and that's actually why I ended up at Ant and Ben man was also a big part of that too.
+
+1156
+01:19:16,960 --> 01:19:26,719
+>> I feel like I want to do a whole podcast just talking about your time in Japan and the journey of Boris through Japan to anthropic but we'll keep it we'll keep it short.
+
+1157
+01:19:26,719 --> 01:19:29,120
+Uh I'll quickly recommend a sci-fi book to you if you haven't read it.
+
+1158
+01:19:29,120 --> 01:19:31,840
+Have you read Fire Upon the Deep?
+
+1159
+01:19:31,840 --> 01:19:33,440
+>> Uh this is Ving, right?
+
+1160
+01:19:33,440 --> 01:19:33,679
+Yeah.
+
+1161
+01:19:33,679 --> 01:19:34,080
+It's great.
+
+1162
+01:19:34,080 --> 01:19:34,800
+>> Yes.
+
+1163
+01:19:34,800 --> 01:19:35,199
+Okay.
+
+1164
+01:19:35,199 --> 01:19:39,360
+That one's like it's like so interesting from a AI AGI perspective.
+
+1165
+01:19:39,360 --> 01:19:43,840
+Uh so few people have read that so um I myself >> Yeah.
+
+1166
+01:19:43,840 --> 01:19:46,159
+It's like a lot.
+
+1167
+01:19:46,159 --> 01:19:46,400
+>> Yeah.
+
+1168
+01:19:46,400 --> 01:19:46,560
+Yeah.
+
+1169
+01:19:46,560 --> 01:19:46,719
+Yeah.
+
+1170
+01:19:46,719 --> 01:19:48,480
+I like Deepness in the Sky also.
+
+1171
+01:19:48,480 --> 01:19:50,159
+I think those sequels, right?
+
+1172
+01:19:50,159 --> 01:19:50,960
+Or >> Yeah.
+
+1173
+01:19:50,960 --> 01:19:51,120
+>> Yeah.
+
+1174
+01:19:51,120 --> 01:19:51,280
+Yeah.
+
+1175
+01:19:51,280 --> 01:19:51,440
+Yeah.
+
+1176
+01:19:51,440 --> 01:19:52,000
+I think so.
+
+1177
+01:19:52,000 --> 01:19:52,239
+>> Yeah.
+
+1178
+01:19:52,239 --> 01:19:54,719
+It's very long and like complex to get into but so good.
+
+1179
+01:19:54,719 --> 01:19:54,960
+Okay.
+
+1180
+01:19:54,960 --> 01:19:56,560
+We'll keep going through a lightning round.
+
+1181
+01:19:56,560 --> 01:19:59,679
+Uh do you have a favorite recent movie or TV show you really enjoyed?
+
+1182
+01:19:59,679 --> 01:20:02,080
+>> So, I actually don't really watch TV or movies.
+
+1183
+01:20:02,080 --> 01:20:03,760
+I just don't really have time these days.
+
+1184
+01:20:03,760 --> 01:20:10,239
+Um, I did watch I I I'm going to bring up another sishloo, but the three body problem series on Netflix I I really loved.
+
+1185
+01:20:10,239 --> 01:20:12,800
+Um, I thought that was like a great rendition of the book series.
+
+1186
+01:20:12,800 --> 01:20:19,040
+>> So, the common pattern across uh AI leaders is no time to watch TV or movies, which I completely understand.
+
+1187
+01:20:19,040 --> 01:20:22,719
+Uh, is there a favorite product you've recently discovered that you really love?
+
+1188
+01:20:22,719 --> 01:20:30,480
+>> I'm going to like chill a little bit and just say co-work cuz this is legitimately the the one product that's been pretty life-changing for me.
+
+1189
+01:20:30,480 --> 01:20:36,080
+uh just because I I have it running all the time and uh the the Chrome integration in particular is just really excellent.
+
+1190
+01:20:36,080 --> 01:20:38,960
+Uh so it's been like it paid a traffic fine for me.
+
+1191
+01:20:38,960 --> 01:20:41,360
+It like canceled a couple subscriptions for me.
+
+1192
+01:20:41,360 --> 01:20:44,880
+Uh just like the amount of like tedious work it gets out of the way is awesome.
+
+1193
+01:20:44,880 --> 01:20:53,120
+I I also don't know if it's a product, but maybe I'll I'll uh also another podcast that I really love obviously besides uh besides Venny is >> obviously >> Yeah,
+
+1194
+01:20:53,120 --> 01:20:57,199
+it's uh it's the acquired uh podcast by Ben Ben and David.
+
+1195
+01:20:57,199 --> 01:20:59,679
+>> Uh it's it's just like super it's super awesome.
+
+1196
+01:20:59,679 --> 01:21:04,880
+Um, I feel like the way that they get into like business history and bring it alive is is really really good.
+
+1197
+01:21:04,880 --> 01:21:08,960
+And I would start with a Nintendo episode if uh if you haven't listened to it.
+
+1198
+01:21:08,960 --> 01:21:19,280
+>> Great tip uh with co-work just so people understand if they haven't tried this like basically you type something you want to get done and it can launch Chrome and just do things for you.
+
+1199
+01:21:19,280 --> 01:21:25,360
+I saw one of the someone went on pat leave from anthropic and he had it fill out these like medical forms for him.
+
+1200
+01:21:25,360 --> 01:21:29,280
+these like really annoying PDFs where it just like loads up the browser, logs in, fills them out,
+
+1201
+01:21:29,280 --> 01:21:30,159
+and bits them.
+
+1202
+01:21:30,159 --> 01:21:30,960
+>> Yeah, exactly.
+
+1203
+01:21:30,960 --> 01:21:31,199
+Exactly.
+
+1204
+01:21:31,199 --> 01:21:32,560
+And and it actually just kind of works.
+
+1205
+01:21:32,560 --> 01:21:36,080
+Like we tried this experiment like a year ago and it didn't really work cuz the model wasn't ready,
+
+1206
+01:21:36,080 --> 01:21:37,920
+but now now it actually just works.
+
+1207
+01:21:37,920 --> 01:21:38,960
+And it's amazing.
+
+1208
+01:21:38,960 --> 01:21:44,719
+I think a lot of people just don't really understand what this is because they haven't used agent before.
+
+1209
+01:21:44,719 --> 01:21:48,640
+And it it just feels very very similar to me to quad code a year ago.
+
+1210
+01:21:48,640 --> 01:21:52,560
+Um but like I said, it's just growing much faster than quad code did in the early days.
+
+1211
+01:21:52,560 --> 01:21:55,520
+So, I think it's starting to it's starting to break through a bit.
+
+1212
+01:21:55,520 --> 01:22:05,440
+>> And there's also this Chrome extension that you mentioned that you could just use stand alone that sits in Chrome and you could just talk to Claude uh looking at your screen at your browser and have it do stuff,
+
+1213
+01:22:05,440 --> 01:22:08,639
+have it tell you about what you're looking at, summarize what you're looking at, things like that.
+
+1214
+01:22:08,639 --> 01:22:09,040
+>> Exactly.
+
+1215
+01:22:09,040 --> 01:22:09,360
+Exactly.
+
+1216
+01:22:09,360 --> 01:22:14,239
+For for people that are like just starting to use co-work, the thing I recommend is so you download the Quad Desktop app,
+
+1217
+01:22:14,239 --> 01:22:15,440
+you go to the co-work tab.
+
+1218
+01:22:15,440 --> 01:22:17,120
+It's right next to the code tab.
+
+1219
+01:22:17,120 --> 01:22:20,800
+Um the thing that I recommend doing is like start by having it use a tool.
+
+1220
+01:22:20,800 --> 01:22:29,280
+So like clean up your desktop or like summarize your email or something like this or you know like respond to the top three emails like it actually just responds to emails for me now too.
+
+1221
+01:22:29,280 --> 01:22:31,520
+The second thing is connect tools.
+
+1222
+01:22:31,520 --> 01:22:40,159
+So like if you connect like if you say look at my top emails and then send slack messages or you know like put them in a spreadsheet or something or for example like I use it for all my project management.
+
+1223
+01:22:40,159 --> 01:22:42,400
+So we have a single spreadsheet for the whole team.
+
+1224
+01:22:42,400 --> 01:22:43,679
+there's like a row per engineer.
+
+1225
+01:22:43,679 --> 01:22:52,400
+Every week everyone fills out a status and every Monday co-work just goes through and it messages every engineer on Slack that hasn't filled out their status and so I don't have to do this anymore.
+
+1226
+01:22:52,400 --> 01:22:53,679
+And this is just one prompt.
+
+1227
+01:22:53,679 --> 01:22:54,960
+It'll do everything.
+
+1228
+01:22:54,960 --> 01:22:58,080
+And then the third thing is just run a bunch of quads in parallel.
+
+1229
+01:22:58,080 --> 01:23:00,880
+So we can co-work you can have as many tasks running as you want.
+
+1230
+01:23:00,880 --> 01:23:04,000
+So it's like start one task, you know, I have this project management thing running,
+
+1231
+01:23:04,000 --> 01:23:09,600
+then I'll have it do something else, then something else and I'll kick these off and then I just go get a coffee while it runs.
+
+1232
+01:23:09,600 --> 01:23:20,480
+There's a post I'll link to that shares a bunch of ways people use uh what was previously cloud code and now just you could do through code work because a lot of this is just like oh wow I hadn't thought I could use it for that and once
+
+1233
+01:23:20,480 --> 01:23:31,040
+you see like these examples I think are what people need to hear of just like oh wow I didn't know I could do that >> so >> yeah I think a lot of this was also >> some of this was also inspired by you any
+
+1234
+01:23:31,040 --> 01:23:41,120
+>> you you had this post about uh it was like 50 non-technical use cases for quote or something like this >> so we actually one of our PMs used that as a way to evaluate co-work before we released it.
+
+1235
+01:23:41,120 --> 01:23:44,960
+Um, and I think at the point where we hit where Coowork was able to do like 48 out of the 50,
+
+1236
+01:23:44,960 --> 01:23:46,800
+they were like, "Okay, it's pretty good."
+
+1237
+01:23:46,800 --> 01:23:47,199
+>> Wow.
+
+1238
+01:23:47,199 --> 01:23:48,480
+I did not know that.
+
+1239
+01:23:48,480 --> 01:23:50,400
+That [laughter] is awesome.
+
+1240
+01:23:50,400 --> 01:23:53,600
+Uh, it's I've become an eval.
+
+1241
+01:23:53,600 --> 01:23:54,239
+>> Yeah.
+
+1242
+01:23:54,239 --> 01:23:55,840
+How does that feel?
+
+1243
+01:23:55,840 --> 01:23:57,360
+>> Amazing.
+
+1244
+01:23:57,360 --> 01:24:01,280
+I feel like I'm valuable to the future of AI.
+
+1245
+01:24:01,280 --> 01:24:03,558
+>> This is like reverse breaking through.
+
+1246
+01:24:03,558 --> 01:24:06,239
+[laughter] >> Wow, that is so cool.
+
+1247
+01:24:06,239 --> 01:24:06,480
+Wow.
+
+1248
+01:24:06,480 --> 01:24:06,719
+Okay.
+
+1249
+01:24:06,719 --> 01:24:08,159
+I wonder what those last two are.
+
+1250
+01:24:08,159 --> 01:24:10,000
+Anyway, okay, two more questions.
+
+1251
+01:24:10,000 --> 01:24:14,639
+Um, do you have a favorite life motto that you often come back to in work or in life?
+
+1252
+01:24:14,639 --> 01:24:16,880
+>> Use common sense.
+
+1253
+01:24:16,880 --> 01:24:22,159
+I think a lot of the failures that I see in especially in a work environment is people just failing to use common sense.
+
+1254
+01:24:22,159 --> 01:24:24,480
+Like they follow a process without thinking about it.
+
+1255
+01:24:24,480 --> 01:24:31,840
+Um, they just do a thing without thinking about it or they're working on a product that's like not a good product or not a good idea and they're just following the momentum and not thinking about it.
+
+1256
+01:24:31,840 --> 01:24:37,600
+I think the best results that I see are people thinking from first principles and just developing their own common sense.
+
+1257
+01:24:37,600 --> 01:24:41,520
+Like if something smells weird, then you know it's probably not a good idea.
+
+1258
+01:24:41,520 --> 01:24:46,719
+So I think I think just this this is the single advice that I give, you know, to co-workers more more than anything too.
+
+1259
+01:24:46,719 --> 01:24:49,520
+And >> I feel like that alone could be its own podcast conversation.
+
+1260
+01:24:49,520 --> 01:24:50,560
+What is common sense?
+
+1261
+01:24:50,560 --> 01:24:51,440
+How do you build?
+
+1262
+01:24:51,440 --> 01:24:52,639
+But we'll keep this short.
+
+1263
+01:24:52,639 --> 01:24:54,000
+Uh final question.
+
+1264
+01:24:54,000 --> 01:24:57,600
+Uh so you've been got more active on Twitterx.
+
+1265
+01:24:57,600 --> 01:25:02,800
+I'm curious just uh why and just what's your experience been with with Twitter, the world of Twitter?
+
+1266
+01:25:02,800 --> 01:25:06,800
+Uh because you get a lot of engagement on on Twitterx.
+
+1267
+01:25:06,800 --> 01:25:12,080
+>> So for a long time I used Threads exclusively because I actually helped build threads a little bit back in the day.
+
+1268
+01:25:12,080 --> 01:25:13,360
+Um and I also just like the design.
+
+1269
+01:25:13,360 --> 01:25:15,280
+It's like a very clean product.
+
+1270
+01:25:15,280 --> 01:25:17,120
+I I just really like that.
+
+1271
+01:25:17,120 --> 01:25:19,600
+>> I started using Threads cuz actually I was bored.
+
+1272
+01:25:19,600 --> 01:25:21,440
+Um so in in December I was in Europe.
+
+1273
+01:25:21,440 --> 01:25:23,280
+>> You started using Twitter, you mean?
+
+1274
+01:25:23,280 --> 01:25:23,600
+>> Oh yeah.
+
+1275
+01:25:23,600 --> 01:25:23,840
+Yeah.
+
+1276
+01:25:23,840 --> 01:25:23,920
+Yeah.
+
+1277
+01:25:23,920 --> 01:25:25,840
+I started I started using uh Twitter because I was bored.
+
+1278
+01:25:25,840 --> 01:25:29,920
+So my my wife and I were uh we were traveling around in in Europe for December.
+
+1279
+01:25:29,920 --> 01:25:31,120
+We're just kind of nomading around.
+
+1280
+01:25:31,120 --> 01:25:34,080
+We went to like Copenhagen, went to like a few different countries.
+
+1281
+01:25:34,080 --> 01:25:36,960
+Um and for me it was just like a coding vacation.
+
+1282
+01:25:36,960 --> 01:25:41,840
+So every day I was coding and that's like my favorite kind of vacation just to just like code all day.
+
+1283
+01:25:41,840 --> 01:25:43,360
+It's the best.
+
+1284
+01:25:43,360 --> 01:25:47,760
+And at some point I just kind of got bored and like I ran out of ideas for you know like a few hours.
+
+1285
+01:25:47,760 --> 01:25:49,520
+I was like okay what do I want to do next?
+
+1286
+01:25:49,520 --> 01:25:50,400
+And so I opened Twitter.
+
+1287
+01:25:50,400 --> 01:26:01,360
+I saw some people like tweeting about quad code and then I just started responding and then I was like okay maybe actually I think I should do is just like look for people look for bugs that people have maybe
+
+1288
+01:26:01,360 --> 01:26:11,679
+people have like bugs or kind of feedback they have and so kind of introduce myself ask for if people had a bunch of bugs and feedback and I think they were kind of surprised by like the pace at which we're able to address
+
+1289
+01:26:11,679 --> 01:26:13,120
+feedback nowadays.
+
+1290
+01:26:13,120 --> 01:26:24,480
+Um, for me it's just like so normal like if someone has a bug like I can probably fix it within a few minutes because I just sort of quad and as long as the description is good it'll just go and do it and then I'll I'll go do something else and answer the next
+
+1291
+01:26:24,480 --> 01:26:24,960
+thing.
+
+1292
+01:26:24,960 --> 01:26:27,199
+But I think for a lot of people was pretty surprising.
+
+1293
+01:26:27,199 --> 01:26:30,960
+So that was really cool and yeah the experience on Twitter has been pretty great.
+
+1294
+01:26:30,960 --> 01:26:36,719
+It's it's been awesome just engaging with people and seeing what people want uh hearing hearing about bugs,
+
+1295
+01:26:36,719 --> 01:26:38,000
+hearing about features.
+
+1296
+01:26:38,000 --> 01:26:45,600
+I saw complaints to Nikita Beer the other day on Twitter of just you they're like posting many threads and it was breaking and just like oh man what's going on here.
+
+1297
+01:26:45,600 --> 01:26:45,840
+>> Yeah.
+
+1298
+01:26:45,840 --> 01:26:46,000
+Yeah.
+
+1299
+01:26:46,000 --> 01:26:46,239
+Yeah.
+
+1300
+01:26:46,239 --> 01:26:47,199
+There there was a bug.
+
+1301
+01:26:47,199 --> 01:26:49,120
+I hope it's fixed now.
+
+1302
+01:26:49,120 --> 01:26:50,000
+Amazing.
+
+1303
+01:26:50,000 --> 01:26:52,080
+Oh man, Boris, I could chat with you for hours.
+
+1304
+01:26:52,080 --> 01:26:53,600
+Uh I'll let you go.
+
+1305
+01:26:53,600 --> 01:26:54,880
+Thank you so much for doing this.
+
+1306
+01:26:54,880 --> 01:26:56,560
+Uh you're wonderful.
+
+1307
+01:26:56,560 --> 01:26:58,639
+Um where can folks find you online?
+
+1308
+01:26:58,639 --> 01:27:00,560
+How can listeners be useful to you?
+
+1309
+01:27:00,560 --> 01:27:03,760
+>> Yeah, find me on threads or on Twitter.
+
+1310
+01:27:03,760 --> 01:27:06,000
+That's the that's the easiest place.
+
+1311
+01:27:06,000 --> 01:27:07,760
+And please just tag me on stuff.
+
+1312
+01:27:07,760 --> 01:27:12,400
+Um, send bugs, send feature requests, what's missing, what can we do to make the products better?
+
+1313
+01:27:12,400 --> 01:27:13,040
+What do you like?
+
+1314
+01:27:13,040 --> 01:27:13,920
+What do you want?
+
+1315
+01:27:13,920 --> 01:27:16,320
+Um, I I love love hearing it.
+
+1316
+01:27:16,320 --> 01:27:16,719
+>> Amazing.
+
+1317
+01:27:16,719 --> 01:27:18,880
+Boris, thank you so much for being here.
+
+1318
+01:27:18,880 --> 01:27:19,199
+>> Cool.
+
+1319
+01:27:19,199 --> 01:27:20,080
+Thanks, Funny.
+
+1320
+01:27:20,080 --> 01:27:21,920
+>> Bye, everyone.
+
+1321
+01:27:21,920 --> 01:27:23,280
+>> Thank you so much for listening.
+
+1322
+01:27:23,280 --> 01:27:27,600
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+1323
+01:27:27,600 --> 01:27:29,760
+or your favorite podcast app.
+
+1324
+01:27:29,760 --> 01:27:35,840
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1325
+01:27:35,840 --> 01:27:41,280
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1326
+01:27:41,280 --> 01:27:45,080
+See you in the next episode.

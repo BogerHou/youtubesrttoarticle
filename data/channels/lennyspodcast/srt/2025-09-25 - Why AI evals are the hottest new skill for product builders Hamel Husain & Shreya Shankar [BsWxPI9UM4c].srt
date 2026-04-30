@@ -1,0 +1,6059 @@
+1
+00:00:00,080 --> 00:00:03,280
+To build great AI products, you need to be really good at building evals.
+
+2
+00:00:03,280 --> 00:00:05,440
+It's the highest ROI activity you can engage in.
+
+3
+00:00:05,440 --> 00:00:07,120
+This process is a lot of fun.
+
+4
+00:00:07,120 --> 00:00:11,920
+Everyone that does this immediately gets addicted to it when you're building an AI application.
+
+5
+00:00:11,920 --> 00:00:12,800
+You just learn a lot.
+
+6
+00:00:12,800 --> 00:00:15,440
+What's cool about this is you don't need to do this many, many times.
+
+7
+00:00:15,440 --> 00:00:18,320
+For most products, you do this process once and then you build on it.
+
+8
+00:00:18,320 --> 00:00:20,880
+>> The goal is not to do evals perfectly.
+
+9
+00:00:20,880 --> 00:00:23,039
+It's to actionably improve your product.
+
+10
+00:00:23,039 --> 00:00:26,640
+>> I did not realize how much controversy and drama there is around eval.
+
+11
+00:00:26,640 --> 00:00:28,320
+There's a lot of people with very strong opinions.
+
+12
+00:00:28,320 --> 00:00:30,640
+People have been burned by evals in the past.
+
+13
+00:00:30,640 --> 00:00:34,559
+People have done evals badly, then they didn't trust it anymore and then they're like,
+
+14
+00:00:34,559 --> 00:00:36,000
+"Oh, I'm anti- evals."
+
+15
+00:00:36,000 --> 00:00:39,040
+>> What are a couple of the most common misconceptions people have with EVEL?
+
+16
+00:00:39,040 --> 00:00:41,840
+The top one is we live in the age of AI.
+
+17
+00:00:41,840 --> 00:00:43,680
+Can't the AI just eval it?
+
+18
+00:00:43,680 --> 00:00:45,200
+But it doesn't work.
+
+19
+00:00:45,200 --> 00:00:49,280
+A term that you used in your post that I love is this idea of a benevolent dictator.
+
+20
+00:00:49,280 --> 00:00:54,640
+When you're doing this open coding, a lot of teams get bogged down in having a committee do this.
+
+21
+00:00:54,640 --> 00:00:57,520
+For a lot of situations, that's wholly unnecessary.
+
+22
+00:00:57,520 --> 00:01:00,480
+You don't want to make this process so expensive that you can't do it.
+
+23
+00:01:00,480 --> 00:01:03,440
+You can appoint one person whose taste that you trust.
+
+24
+00:01:03,440 --> 00:01:05,760
+It should be the person with domain expertise.
+
+25
+00:01:05,760 --> 00:01:09,760
+Oftentimes it is the product manager.
+
+26
+00:01:09,760 --> 00:01:13,360
+Today my guests are Hamill Hussein and Shrea Shankar.
+
+27
+00:01:13,360 --> 00:01:18,720
+One of the most trending topics on this podcast over the past year has been the rise of evals.
+
+28
+00:01:18,720 --> 00:01:27,119
+Both the chief product officers of Anthropic and OpenAI shared that eval are becoming the most important new skill for product builders.
+
+29
+00:01:27,119 --> 00:01:32,640
+And since then, this has been a recurring theme across many of the top AI builders I've had on.
+
+30
+00:01:32,640 --> 00:01:34,720
+2 years ago, I had never heard the term evals.
+
+31
+00:01:34,720 --> 00:01:36,320
+Now, it's coming up constantly.
+
+32
+00:01:36,320 --> 00:01:41,439
+When was the last time that a new skill emerged that product builders had to get good at to be successful?
+
+33
+00:01:41,439 --> 00:01:50,560
+Hamill and Shrea have played a major role in shifting evals from being an obscure mysterious subject to one of the most necessary skills for AI product builders.
+
+34
+00:01:50,560 --> 00:01:56,479
+They teach the definitive online course on evals, which happens to be the number one course on Maven.
+
+35
+00:01:56,479 --> 00:02:06,000
+They've now taught over 2,000 PMs and engineers across 500 companies, including large swats of the open AI and anthropic teams along with every other
+
+36
+00:02:06,000 --> 00:02:07,520
+major AI lab.
+
+37
+00:02:07,520 --> 00:02:10,959
+In this conversation, we do a lot of show versus tell.
+
+38
+00:02:10,959 --> 00:02:17,680
+We walk through the process of developing an effective eval, explain what the heck evals are and what they look like,
+
+39
+00:02:17,680 --> 00:02:24,080
+address many of the major misconceptions with eval, give you the first few steps you can take to start building evals for your product,
+
+40
+00:02:24,080 --> 00:02:28,879
+and also share just a ton of best practices that Hamill and Trey have developed over the past few years.
+
+41
+00:02:28,879 --> 00:02:37,280
+This episode is the deepest yet most understandable primer you will find on the world of evals and honestly got me excited to write evals.
+
+42
+00:02:37,280 --> 00:02:41,680
+Even though I have nothing to write eels for, I think you'll feel the same way as you watch this.
+
+43
+00:02:41,680 --> 00:02:45,760
+If this conversation gets you excited, definitely check out Hamill and Shreas's course on Maven.
+
+44
+00:02:45,760 --> 00:02:46,959
+We'll link to it in the show notes.
+
+45
+00:02:46,959 --> 00:02:52,959
+If you use the code Lenny's List when you purchase the course, you'll get 35% off the price of the course.
+
+46
+00:02:52,959 --> 00:02:57,920
+With that, I bring you Hamill Hussein and Shrea Shankar.
+
+47
+00:02:57,920 --> 00:03:02,720
+This episode is brought to you by Finn, the number one AI agent for customer service.
+
+48
+00:03:02,720 --> 00:03:06,080
+If your customer support tickets are piling up, then you need Finn.
+
+49
+00:03:06,080 --> 00:03:11,920
+Finn is the highest performing AI agent on the market with a 65% average resolution rate.
+
+50
+00:03:11,920 --> 00:03:14,879
+Finn resolves even the most complex customer queries.
+
+51
+00:03:14,879 --> 00:03:17,040
+No other AI agent performs better.
+
+52
+00:03:17,040 --> 00:03:20,640
+In head-to-head bake offs with competitors, Finn wins every time.
+
+53
+00:03:20,640 --> 00:03:26,560
+Yes, switching to a new tool can be scary, but Finn works on any help desk with no migration needed,
+
+54
+00:03:26,560 --> 00:03:31,360
+which means you don't have to overhaul your current system or deal with delays in service for your customers.
+
+55
+00:03:31,360 --> 00:03:38,000
+And Finn is trusted by over 5,000 customer service leaders and top AI companies like Anthropic and Synthesia.
+
+56
+00:03:38,000 --> 00:03:43,680
+And because Finn is powered by the Finn AI engine, which is a continuously improving system that allows you to analyze,
+
+57
+00:03:43,680 --> 00:03:45,599
+train, test, and deploy with ease.
+
+58
+00:03:45,599 --> 00:03:48,400
+Finn can continuously improve your results, too.
+
+59
+00:03:48,400 --> 00:03:54,879
+So, if you're ready to transform your customer service and scale your support, give Finn a try for only 99 cents per resolution.
+
+60
+00:03:54,879 --> 00:03:57,840
+Plus, Finn comes with a 90-day money back guarantee.
+
+61
+00:03:57,840 --> 00:04:00,959
+Find out how Finn can work for your team at f.ai.
+
+62
+00:04:00,959 --> 00:04:02,400
+ai/lenny.
+
+63
+00:04:02,400 --> 00:04:05,599
+That's finn.ai/lenny.
+
+64
+00:04:05,599 --> 00:04:08,400
+This episode is brought to you by Doutt.
+
+65
+00:04:08,400 --> 00:04:12,879
+Design teams today are expected to move fast, but also to get it right.
+
+66
+00:04:12,879 --> 00:04:14,720
+That's where Dout comes in.
+
+67
+00:04:14,720 --> 00:04:19,280
+Dcout is the all-in-one research platform built for modern product and design teams.
+
+68
+00:04:19,280 --> 00:04:23,600
+Whether you're running usability tests, interviews, surveys, or in the wild fieldwork,
+
+69
+00:04:23,600 --> 00:04:28,400
+Dout makes it easy to connect with real users and get real insights fast.
+
+70
+00:04:28,400 --> 00:04:32,400
+You can even test your Figma prototypes directly inside the platform.
+
+71
+00:04:32,400 --> 00:04:35,840
+No juggling tools, no chasing ghost participants.
+
+72
+00:04:35,840 --> 00:04:44,479
+And with the industry's most trusted panel, plus AI powered analysis, your team gets clarity and confidence to build better without slowing down.
+
+73
+00:04:44,479 --> 00:04:48,720
+So if you're ready to streamline your research, speed of decisions, and design with impact,
+
+74
+00:04:48,720 --> 00:04:51,520
+head to dscout.com to learn more.
+
+75
+00:04:51,520 --> 00:04:54,479
+That's dscout.com.
+
+76
+00:04:54,479 --> 00:04:59,080
+The answers you need to move confidently.
+
+77
+00:05:00,639 --> 00:05:04,639
+Hammel and Shrea, thank you so much for being here and welcome to the podcast.
+
+78
+00:05:04,639 --> 00:05:05,600
+Thank you for having us.
+
+79
+00:05:05,600 --> 00:05:07,199
+>> Yeah, super excited.
+
+80
+00:05:07,199 --> 00:05:08,639
+>> I'm even more excited.
+
+81
+00:05:08,639 --> 00:05:13,840
+Okay, so a couple years ago, I had never heard the term evals.
+
+82
+00:05:13,840 --> 00:05:19,120
+Now it's one of the most trending topics on my podcast essentially that to build great AI products,
+
+83
+00:05:19,120 --> 00:05:21,520
+you need to be really good at building evals.
+
+84
+00:05:21,520 --> 00:05:29,120
+Uh, also turns out some of the fastest growing companies in the world are basically building and selling and creating evals for AI labs.
+
+85
+00:05:29,120 --> 00:05:31,280
+I just had the CF Merkore on the podcast.
+
+86
+00:05:31,280 --> 00:05:34,479
+So, there's something really big happening here.
+
+87
+00:05:34,479 --> 00:05:39,840
+Uh, I want to use this conversation to basically help people understand the space deeply.
+
+88
+00:05:39,840 --> 00:05:41,039
+But let's start with the basics.
+
+89
+00:05:41,039 --> 00:05:42,880
+Just what what the heck are EVALs?
+
+90
+00:05:42,880 --> 00:05:47,280
+For folks that have no idea what we're talking about, give us just a quick understanding of what an eval is.
+
+91
+00:05:47,280 --> 00:05:49,039
+And let's start with with Haml.
+
+92
+00:05:49,039 --> 00:05:49,840
+Sure.
+
+93
+00:05:49,840 --> 00:05:55,199
+Evals is a way to systematically measure and improve an AI application.
+
+94
+00:05:55,199 --> 00:06:00,000
+And it really doesn't have to be scary or unapproachable at all.
+
+95
+00:06:00,000 --> 00:06:08,560
+It really is at its core data analytics on your LLM application in a systematic way
+
+96
+00:06:08,560 --> 00:06:20,160
+of looking at that data and where necessary creating metrics around things so you can measure what's happening and then so you can iterate and do
+
+97
+00:06:20,160 --> 00:06:21,919
+experiments and improve.
+
+98
+00:06:21,919 --> 00:06:24,479
+So that's a that's a really good broad way of thinking about it.
+
+99
+00:06:24,479 --> 00:06:33,280
+If you go one level deeper just to give people a very even more concrete way of imagining and visualizing what we're talking about even if you have a example to show it would be even better.
+
+100
+00:06:33,280 --> 00:06:36,240
+What's a what's an even deeper way of understanding what an eval is?
+
+101
+00:06:36,240 --> 00:06:44,960
+Let's say you have a real estate assistant you know application and it's it's not working the way you want.
+
+102
+00:06:44,960 --> 00:06:53,759
+it's not writing emails to customers the way you want or it's not uh you know calling the right tools
+
+103
+00:06:53,759 --> 00:07:04,160
+or any number of errors and before evals you would be left with guessing you would maybe fix a prompt
+
+104
+00:07:04,160 --> 00:07:15,120
+and hope that you're not breaking anything else with that prompt and you might rely on vibe checks which is totally fine and vibe checks are good and you should do vibe checks
+
+105
+00:07:15,120 --> 00:07:22,720
+initially, but it can become very unmanageable very fast because as your application grows,
+
+106
+00:07:22,720 --> 00:07:24,880
+it's really hard to rely on vibe checks.
+
+107
+00:07:24,880 --> 00:07:26,639
+You just feel lost.
+
+108
+00:07:26,639 --> 00:07:36,800
+And so eval help you create metrics that you can use to measure how your application is doing and kind of
+
+109
+00:07:36,800 --> 00:07:44,800
+give you a way to improve your your application with confidence that you have a feedback signal in which to iterate against.
+
+110
+00:07:44,800 --> 00:07:46,639
+So just to make it very real.
+
+111
+00:07:46,639 --> 00:07:52,560
+So imagining this uh real estate agent maybe they're helping you book a listing or go see an open house.
+
+112
+00:07:52,560 --> 00:07:54,800
+The idea here is you have this agent talking to people.
+
+113
+00:07:54,800 --> 00:07:56,960
+It's answering questions, pointing them to things.
+
+114
+00:07:56,960 --> 00:08:01,120
+As a builder of that agent, how do you know if it's giving them good advice, good answers?
+
+115
+00:08:01,120 --> 00:08:04,000
+Is it telling them things that are completely wrong?
+
+116
+00:08:04,000 --> 00:08:12,319
+So, the idea of eval essentially is to build a set of tests that tell you is how often are is this agent doing something wrong that you don't want it to do?
+
+117
+00:08:12,319 --> 00:08:14,479
+And there's a bunch of ways wrong you could define wrong.
+
+118
+00:08:14,479 --> 00:08:16,720
+It could be uh just making up stuff.
+
+119
+00:08:16,720 --> 00:08:20,879
+It could be uh just answering in a really strange way.
+
+120
+00:08:20,879 --> 00:08:28,319
+Uh the way I think about eval and tell me if this is wrong just simply is like unit tests for for code and then you're smiling.
+
+121
+00:08:28,319 --> 00:08:29,840
+You're like no you idiot.
+
+122
+00:08:29,840 --> 00:08:31,680
+>> Oh that's not what I was thinking.
+
+123
+00:08:31,680 --> 00:08:32,000
+>> Okay.
+
+124
+00:08:32,000 --> 00:08:32,240
+Okay.
+
+125
+00:08:32,240 --> 00:08:35,200
+Tell me tell me how does that feel as a metaphor?
+
+126
+00:08:35,200 --> 00:08:40,320
+>> So okay I like what you said first which is we had a very broad definition.
+
+127
+00:08:40,320 --> 00:08:44,640
+Evals is a big spectrum of ways to measure application quality.
+
+128
+00:08:44,640 --> 00:08:47,440
+Now unit tests are one way of doing this.
+
+129
+00:08:47,440 --> 00:08:56,480
+Maybe there are some non-negotiable functionalities that you want your AI assistant to have and unit tests are going to be able to check that.
+
+130
+00:08:56,480 --> 00:09:08,080
+Now maybe you also because these AI assistants are doing such open-ended tasks, you kind of also want to measure how good are they at very vague or ambiguous things like responding to new
+
+131
+00:09:08,080 --> 00:09:19,920
+types of user requests or you know figuring out if there's new distributions of data like new users are coming and using your real estate agent that you didn't even know would use your product and then all of a sudden you
+
+132
+00:09:19,920 --> 00:09:24,480
+think like oh there's a different way you want to kind of accommodate this new group of people.
+
+133
+00:09:24,480 --> 00:09:31,279
+So eval could also be you know a way of looking at your data regularly to find these new cohorts of people.
+
+134
+00:09:31,279 --> 00:09:41,519
+Evals could also be like metrics that you know you just want to track over time like you want to track people saying yes thumbs up I liked your
+
+135
+00:09:41,519 --> 00:09:42,240
+message.
+
+136
+00:09:42,240 --> 00:09:49,600
+Um you want to very very basic things that are not necessarily AI related but can go back into this flywheel of improving your product.
+
+137
+00:09:49,600 --> 00:09:56,640
+So I would say on the end on overall right unit tests are a very small part of that very big puzzle.
+
+138
+00:09:56,640 --> 00:09:57,279
+>> Awesome.
+
+139
+00:09:57,279 --> 00:10:01,760
+You guys actually brought an example of inval just to show us exactly what the hell we're talking about.
+
+140
+00:10:01,760 --> 00:10:03,040
+We're talking in these big ideas.
+
+141
+00:10:03,040 --> 00:10:06,880
+So how about let's pull one up and show people here's here's what an eval is.
+
+142
+00:10:06,880 --> 00:10:07,279
+>> Yeah.
+
+143
+00:10:07,279 --> 00:10:09,440
+Let me just set the stage for it a little bit.
+
+144
+00:10:09,440 --> 00:10:17,600
+So to echo what Shrea said, it's really important that we don't think of evals as just tests.
+
+145
+00:10:17,600 --> 00:10:26,079
+It's a common trap that a lot of people fall into because they jump straight to the test like let me write some tests and usually that's not what you want to do.
+
+146
+00:10:26,079 --> 00:10:31,440
+You should start with some kind of data analysis to ground what you should even test.
+
+147
+00:10:31,440 --> 00:10:41,200
+And that's a little bit different than software engineering where you have a lot more expectations of how the system is going to work.
+
+148
+00:10:41,200 --> 00:10:43,519
+With LLMs, it's a lot more surface area.
+
+149
+00:10:43,519 --> 00:10:44,800
+It's very stochastic.
+
+150
+00:10:44,800 --> 00:10:47,680
+So, we kind of have a different flavor here.
+
+151
+00:10:47,680 --> 00:10:52,880
+And so, the example I'm going to show you today, it's actually a real estate example.
+
+152
+00:10:52,880 --> 00:10:54,480
+It's a different kind of real estate example.
+
+153
+00:10:54,480 --> 00:10:57,279
+It's uh from a company called Nurture Boss.
+
+154
+00:10:57,279 --> 00:11:04,079
+I can share my screen to show you their website just to help you understand this uh use case a little bit.
+
+155
+00:11:04,079 --> 00:11:05,760
+So, let me share my screen.
+
+156
+00:11:05,760 --> 00:11:07,519
+So, this is a company that I worked with.
+
+157
+00:11:07,519 --> 00:11:14,480
+It's called Nurture Boss and it is a AI assistant for property managers who are managing apartments.
+
+158
+00:11:14,480 --> 00:11:22,000
+And it helps with various tasks such as inbound leads, customer service, booking appointments,
+
+159
+00:11:22,000 --> 00:11:28,800
+so on and so forth, like all the different sort of operations you might be doing as a property manager.
+
+160
+00:11:28,800 --> 00:11:30,640
+It helps you with that.
+
+161
+00:11:30,640 --> 00:11:33,920
+And so, you know, you can see kind of what they do.
+
+162
+00:11:33,920 --> 00:11:40,240
+It's a very good example because it has a lot of the complexities of a modern AI application.
+
+163
+00:11:40,240 --> 00:11:47,519
+So there's lots of different channels that you can interact through the AI with like chat,
+
+164
+00:11:47,519 --> 00:11:54,560
+text, voice, but also there's tool calls, lots of tool calls for like booking appointments,
+
+165
+00:11:54,560 --> 00:11:58,480
+getting uh information about availability, so on and so forth.
+
+166
+00:11:58,480 --> 00:12:05,600
+There's also rag retrieval, getting information about customers and properties and things like that.
+
+167
+00:12:05,600 --> 00:12:14,959
+So it's pretty fullyfledged in terms of an AI application and so they have been really generous with me
+
+168
+00:12:14,959 --> 00:12:24,079
+and uh allowing me to use their data as a teaching example and so we have anonymized it but what I'm going to walk
+
+169
+00:12:24,079 --> 00:12:34,720
+through today is okay let's create let's do the first part of how we would start to build evals for nurture boss like why
+
+170
+00:12:34,720 --> 00:12:36,399
+Would we even want to do that?
+
+171
+00:12:36,399 --> 00:12:47,200
+So let's go through the very beginning stage what we call error analysis which is let's look at the data of their application
+
+172
+00:12:47,200 --> 00:12:51,200
+and first start with what's going wrong.
+
+173
+00:12:51,200 --> 00:13:00,000
+So I'm going to jump to that next and I'm going to open an observability tool and you can use whatever you want here.
+
+174
+00:13:00,000 --> 00:13:11,839
+I just happen to have this data loaded in a tool called brain trust but you can load it in anything you know it's not we don't have a favorite tool or anything
+
+175
+00:13:11,839 --> 00:13:23,760
+in the blog post that we wrote with you uh we had the same example but in Phoenix Arise um and I think Aman on your blog post use Phoenix Arise as well and
+
+176
+00:13:23,760 --> 00:13:32,560
+there's also Langmith so these are kind of like different tools that you can use so what you see here on the screen.
+
+177
+00:13:32,560 --> 00:13:42,000
+This is logs from the application and let me just show you how it looks.
+
+178
+00:13:42,000 --> 00:13:46,480
+So what you see here is and let me make it full screen.
+
+179
+00:13:46,480 --> 00:13:53,440
+So this is one particular interaction that a customer had with the nurture boss application.
+
+180
+00:13:53,440 --> 00:13:57,440
+And what it is, it's a detailed log of everything that happened.
+
+181
+00:13:57,440 --> 00:14:04,480
+So it's it's a it's called a trace and it's just an engineering term for logs of a sequence of events.
+
+182
+00:14:04,480 --> 00:14:12,000
+It's been a the concept of a trace has been around for a really long time but it's especially really important when it comes to AI applications.
+
+183
+00:14:12,000 --> 00:14:23,279
+So we have all the different components and pieces and information that the AI needs to do its job and we are logged all of it and we're looking at a view of that and so
+
+184
+00:14:23,279 --> 00:14:25,920
+you see here a system prompt.
+
+185
+00:14:25,920 --> 00:14:33,760
+The assistant prompt says you are an AI assistant working as a leasing team member at retreat at Acme Apartments.
+
+186
+00:14:33,760 --> 00:14:35,600
+Remember I said this is anonymized.
+
+187
+00:14:35,600 --> 00:14:38,480
+So that's why the name is Acme Apartments.
+
+188
+00:14:38,480 --> 00:14:45,680
+Your primary role is to respond to text messages from both residents and perspective uh both current residents and prospective residents.
+
+189
+00:14:45,680 --> 00:14:50,000
+Your goal is to provide accurate helpful information yada yada yada.
+
+190
+00:14:50,000 --> 00:14:56,480
+And then there's a lot of detail around guidelines of how we want this thing to behave.
+
+191
+00:14:56,480 --> 00:14:58,720
+>> Is this their actual system prompt by the way for this company?
+
+192
+00:14:58,720 --> 00:14:59,120
+>> It is.
+
+193
+00:14:59,120 --> 00:14:59,839
+Yes.
+
+194
+00:14:59,839 --> 00:15:01,120
+It's a real system prompt.
+
+195
+00:15:01,120 --> 00:15:04,720
+>> That's amazing because that's really it's rare you see actual company products system prompt.
+
+196
+00:15:04,720 --> 00:15:06,160
+That's like their crown jewels a lot of times.
+
+197
+00:15:06,160 --> 00:15:08,399
+So this is actually very cool on its own.
+
+198
+00:15:08,399 --> 00:15:08,800
+>> Yeah.
+
+199
+00:15:08,800 --> 00:15:09,040
+Yeah.
+
+200
+00:15:09,040 --> 00:15:10,160
+It's really cool.
+
+201
+00:15:10,160 --> 00:15:18,079
+And you know you see all these different sort of features that they want to or different use cases.
+
+202
+00:15:18,079 --> 00:15:25,519
+So things about tour scheduling, handling applications, guidance on how to talk to different personas,
+
+203
+00:15:25,519 --> 00:15:27,040
+so on and so forth.
+
+204
+00:15:27,040 --> 00:15:30,240
+And you can see the user just kind of jumps in here.
+
+205
+00:15:30,240 --> 00:15:34,720
+It says asks, okay, do you have a one-bedroom with study available?
+
+206
+00:15:34,720 --> 00:15:36,959
+I saw it on virtual tours.
+
+207
+00:15:36,959 --> 00:15:42,720
+And then you can see that the LM calls some tools.
+
+208
+00:15:42,720 --> 00:15:54,560
+It calls this get individual's information tool and it pulls back that person's information and then it gets the community's availability.
+
+209
+00:15:54,560 --> 00:16:01,600
+So it's, you know, it's querying a database with the availability for that apartment complex.
+
+210
+00:16:01,600 --> 00:16:07,519
+And then finally, the AI responds, hey, we we have several one-bedroom apartments available,
+
+211
+00:16:07,519 --> 00:16:09,759
+but none specifically listed with a study.
+
+212
+00:16:09,759 --> 00:16:12,079
+Here are a few options.
+
+213
+00:16:12,079 --> 00:16:16,560
+Uh, and then it says, "Can you let me know when one with a study is available?"
+
+214
+00:16:16,560 --> 00:16:23,519
+And then it says, "I currently don't have specific information on the availability of a one-bedroom apartment."
+
+215
+00:16:23,519 --> 00:16:25,279
+User says, "Thank you."
+
+216
+00:16:25,279 --> 00:16:27,279
+And the AI says,"You're welcome.
+
+217
+00:16:27,279 --> 00:16:29,920
+If you have any more questions, feel free to reach out."
+
+218
+00:16:29,920 --> 00:16:37,680
+Now, this is an example of a trace, and this is we're
+
+219
+00:16:37,680 --> 00:16:42,000
+looking at one specific data point.
+
+220
+00:16:42,000 --> 00:16:51,519
+And so one thing that's really important to do when you're doing data analysis of your LLM application is to look at data.
+
+221
+00:16:51,519 --> 00:16:56,079
+Now you might wonder there's a lot of these logs.
+
+222
+00:16:56,079 --> 00:16:57,360
+It's kind of messy.
+
+223
+00:16:57,360 --> 00:16:59,279
+There's a lot of things going on here.
+
+224
+00:16:59,279 --> 00:17:02,800
+How in the hell are you supposed to look at this data?
+
+225
+00:17:02,800 --> 00:17:05,120
+Do you want to just drown in this data?
+
+226
+00:17:05,120 --> 00:17:07,520
+How do you even analyze this data?
+
+227
+00:17:07,520 --> 00:17:14,880
+So it turns out there is a way to do it that is completely manageable and it's not something that we invented.
+
+228
+00:17:14,880 --> 00:17:20,720
+It's been around in machine learning and data science for a really long time and it's called error analysis.
+
+229
+00:17:20,720 --> 00:17:28,720
+And what you do is the first step in conquering data like this is just to write notes.
+
+230
+00:17:28,720 --> 00:17:29,600
+Okay?
+
+231
+00:17:29,600 --> 00:17:37,679
+So, you got to put your product hat on, which is why we're talking to you because product people have to be in the room.
+
+232
+00:17:37,679 --> 00:17:41,679
+Um, and they have to be involved in sort of doing this.
+
+233
+00:17:41,679 --> 00:17:46,799
+You know, usually a developer is not suited to do this, especially if it's not a coding application.
+
+234
+00:17:46,799 --> 00:17:51,919
+>> And I'm just to mirror back why I think you're saying that is because this is the user experience of your product.
+
+235
+00:17:51,919 --> 00:17:55,120
+People talking to this agent is the entire product essentially.
+
+236
+00:17:55,120 --> 00:17:59,440
+And so it makes sense for the product person to be involved, super involved in this.
+
+237
+00:17:59,440 --> 00:17:59,919
+Yeah.
+
+238
+00:17:59,919 --> 00:18:03,840
+So let's let's reflect on this conversation.
+
+239
+00:18:03,840 --> 00:18:04,160
+Okay.
+
+240
+00:18:04,160 --> 00:18:08,480
+A user asked about availability.
+
+241
+00:18:08,480 --> 00:18:12,160
+The AI said, "Oh, we don't really have that.
+
+242
+00:18:12,160 --> 00:18:14,480
+Have a nice day."
+
+243
+00:18:14,480 --> 00:18:24,480
+Now, for a product that is helping you with lead management, is that good?
+
+244
+00:18:24,480 --> 00:18:30,559
+Like, do you feel like this is the way we want it to to go?
+
+245
+00:18:30,559 --> 00:18:32,320
+>> Not ideal.
+
+246
+00:18:32,320 --> 00:18:32,640
+Yes.
+
+247
+00:18:32,640 --> 00:18:33,200
+Not ideal.
+
+248
+00:18:33,200 --> 00:18:35,120
+And I'm glad you said that.
+
+249
+00:18:35,120 --> 00:18:37,039
+A lot of people would say, "Oh, it's great.
+
+250
+00:18:37,039 --> 00:18:38,880
+Like the AI did the right thing.
+
+251
+00:18:38,880 --> 00:18:43,039
+It said we don't it looked it said we didn't have available and it's not available."
+
+252
+00:18:43,039 --> 00:18:46,320
+But with your product hat on, you know, that's not correct.
+
+253
+00:18:46,320 --> 00:18:50,160
+And so what you would do is you would just write a quick note here.
+
+254
+00:18:50,160 --> 00:18:59,840
+You would say okay um you know you might pop in here let me just and you can write a note so every observability application
+
+255
+00:18:59,840 --> 00:19:09,440
+has ability to write notes and you wouldn't try to figure out if something is wrong in this applica you know in this case it's kind of not doing the right thing.
+
+256
+00:19:09,440 --> 00:19:21,200
+Um but you just write a quick note um should you know should have handed off to a human >> and as we watch this happening it's like
+
+257
+00:19:21,200 --> 00:19:32,799
+you mentioned this and you'll explain more you're doing this this feels very ma manual and unscalable but uh as you said this is just one step of the process and there's a system to this and it's just the first part >> and you don't have to do it for all of
+
+258
+00:19:32,799 --> 00:19:42,000
+your data you can you sample your data and just take a look and it's surprising amazing how much you learn when you do this.
+
+259
+00:19:42,000 --> 00:19:51,039
+Everyone that does this immediately gets addicted to it and they say, "This is the greatest thing that you can do when you're building an AI application."
+
+260
+00:19:51,039 --> 00:19:51,840
+You just learn a lot.
+
+261
+00:19:51,840 --> 00:19:55,520
+You're like, "Hm, this is not how I want it to to work."
+
+262
+00:19:55,520 --> 00:19:56,400
+Okay.
+
+263
+00:19:56,400 --> 00:19:58,400
+And so, um, that's just an example.
+
+264
+00:19:58,400 --> 00:20:02,559
+So, you write this note and then we can go on to the next trace.
+
+265
+00:20:02,559 --> 00:20:03,760
+So, this is the next trace.
+
+266
+00:20:03,760 --> 00:20:06,160
+I just pushed a hot key on my keyboard.
+
+267
+00:20:06,160 --> 00:20:09,360
+Let me go back to uh looking at it.
+
+268
+00:20:09,360 --> 00:20:13,280
+>> And these tools make it easy to go through a bunch and add these notes quickly.
+
+269
+00:20:13,280 --> 00:20:14,480
+>> Yes.
+
+270
+00:20:14,480 --> 00:20:16,480
+And so this is another one.
+
+271
+00:20:16,480 --> 00:20:17,679
+Similar system prompt.
+
+272
+00:20:17,679 --> 00:20:19,039
+We don't need to go through all of it.
+
+273
+00:20:19,039 --> 00:20:22,000
+Again, we'll just jump right into the user question.
+
+274
+00:20:22,000 --> 00:20:22,320
+Okay.
+
+275
+00:20:22,320 --> 00:20:24,400
+I've been texting you all day.
+
+276
+00:20:24,400 --> 00:20:26,960
+Maybe it's is funny.
+
+277
+00:20:26,960 --> 00:20:36,720
+Um um and uh the user says please okay yeah this
+
+278
+00:20:36,720 --> 00:20:48,559
+one is you this one is just like an error in the application where you know um this is a text message application and so
+
+279
+00:20:48,559 --> 00:21:00,080
+you know it's a tech the sorry the channel through which the customer is communicating is through text message and it's just getting like really garbled And you can see here that it kind of doesn't make sense,
+
+280
+00:21:00,080 --> 00:21:08,000
+you know, like the words are being cut off like in the meantime and then the system doesn't know how to respond because you know how people text message,
+
+281
+00:21:08,000 --> 00:21:14,640
+they like write short phrases, they you know split split their sentence across four or five different turns.
+
+282
+00:21:14,640 --> 00:21:16,559
+So in this case >> you do with something like that.
+
+283
+00:21:16,559 --> 00:21:16,799
+>> Yeah.
+
+284
+00:21:16,799 --> 00:21:19,919
+So this is a this is a different kind of error.
+
+285
+00:21:19,919 --> 00:21:23,760
+>> This is more of hey we're not handling this interaction correctly.
+
+286
+00:21:23,760 --> 00:21:26,159
+This is more of a technical problem.
+
+287
+00:21:26,159 --> 00:21:29,760
+um rather than hey the AI is not doing exactly what we want.
+
+288
+00:21:29,760 --> 00:21:35,120
+So we would write down too like it's amazing you're catching that too here otherwise you'd have no idea this was happening.
+
+289
+00:21:35,120 --> 00:21:43,679
+>> Yeah you might not know this is happening right and so you would just say okay um you would write a note like oh
+
+290
+00:21:43,679 --> 00:21:53,520
+conversation flow is janky because of text message and I like yeah I like that I like that you're using the word janky.
+
+291
+00:21:53,520 --> 00:21:56,320
+shows you just how informal this can be at this stage.
+
+292
+00:21:56,320 --> 00:21:59,679
+Yeah, it's supposed to be chill like just don't overthink it.
+
+293
+00:21:59,679 --> 00:22:02,720
+And there's some there's a way to do this.
+
+294
+00:22:02,720 --> 00:22:07,360
+So the question always comes up, how do you do this?
+
+295
+00:22:07,360 --> 00:22:11,840
+Do you look at do you try to find all the different problems in this trace?
+
+296
+00:22:11,840 --> 00:22:13,919
+What what do you write a note about?
+
+297
+00:22:13,919 --> 00:22:20,640
+And the answer is just write down the first thing that you see that's wrong, the most upstream error.
+
+298
+00:22:20,640 --> 00:22:22,000
+Don't worry about all the errors.
+
+299
+00:22:22,000 --> 00:22:28,080
+just capture the most the first thing that you see that's wrong and stop and move on.
+
+300
+00:22:28,080 --> 00:22:30,159
+And you can get really good at this.
+
+301
+00:22:30,159 --> 00:22:36,400
+The first two or three can be very painful, but you know, it doesn't we can, you know,
+
+302
+00:22:36,400 --> 00:22:38,640
+do a bunch of them really fast.
+
+303
+00:22:38,640 --> 00:22:40,799
+So, here's another one.
+
+304
+00:22:40,799 --> 00:22:44,240
+And um let's skip the system prompt again.
+
+305
+00:22:44,240 --> 00:22:49,120
+And the user asks, "Hey, I'm looking for a two to threebedroom with either one or two bats.
+
+306
+00:22:49,120 --> 00:22:52,000
+Do you provide virtual tours?
+
+307
+00:22:52,000 --> 00:22:58,880
+and a bunch of tools are called and it says, "Hi Sarah, currently we have three bedroomedroom,
+
+308
+00:22:58,880 --> 00:23:04,000
+two and a half bathroom apartment available for $2,175.
+
+309
+00:23:04,000 --> 00:23:06,720
+Um, unfortunately we don't have any two-bedroom options at the moment.
+
+310
+00:23:06,720 --> 00:23:08,559
+We do offer virtual tool tours.
+
+311
+00:23:08,559 --> 00:23:10,880
+You can schedule a tour blah blah blah.
+
+312
+00:23:10,880 --> 00:23:16,480
+It just so happens that there is no virtual tour, >> right?
+
+313
+00:23:16,480 --> 00:23:26,880
+So um you know it is hallucinating something that doesn't exist and you would you kind of have to bring your context as an engineer or even your product content and say hey
+
+314
+00:23:26,880 --> 00:23:32,799
+this is kind of weird like you know we shouldn't be telling person about virtual tour when it's not offered.
+
+315
+00:23:32,799 --> 00:23:43,520
+So you would say okay uh you know offered virtual tour and you just you know you just write the note.
+
+316
+00:23:43,520 --> 00:23:54,960
+So you can see there's a diversity of different kinds of errors that we're seeing and we're actually learning a lot about your application um in a very short amount of time.
+
+317
+00:23:54,960 --> 00:24:00,159
+>> One common question that we get from people at this stage is okay I understand what's going on.
+
+318
+00:24:00,159 --> 00:24:04,159
+Can I ask an LLM to do this process for me?
+
+319
+00:24:04,159 --> 00:24:04,799
+>> Great question.
+
+320
+00:24:04,799 --> 00:24:15,760
+And I loved Hammel's most recent example because what we usually find when we try to ask an LLM to do this error analysis is it just says the trace looks good because it
+
+321
+00:24:15,760 --> 00:24:26,080
+doesn't have the context needed to understand whether something might be you know bad product smell or you know not for example the hallucination about
+
+322
+00:24:26,080 --> 00:24:37,039
+scheduling the tour right I can guarantee you I would bet money on this if I put that into chat GBT and asked is there an error it would say no did a great But Hamill had the context of knowing,
+
+323
+00:24:37,039 --> 00:24:40,559
+oh, we don't actually have this virtual tour functionality, right?
+
+324
+00:24:40,559 --> 00:24:45,279
+So, I think in these cases, it's so important to make sure you are manually doing this yourself.
+
+325
+00:24:45,279 --> 00:24:50,159
+Um, and we'll talk a we can talk a little bit more about when to use LLMs in the process later,
+
+326
+00:24:50,159 --> 00:24:55,279
+but like number one pitfall right here is people are like, let me automate this with an LLM.
+
+327
+00:24:55,279 --> 00:24:58,640
+>> Do you think they'll we'll get to a place where where an agent can do this?
+
+328
+00:24:58,640 --> 00:24:59,520
+>> Oh, no, no, no.
+
+329
+00:24:59,520 --> 00:24:59,760
+Sorry.
+
+330
+00:24:59,760 --> 00:25:10,880
+There are parts of error analysis that an LLM is suited for which we can talk about later in this podcast >> but right now in this stage of free form note takingaking is not the
+
+331
+00:25:10,880 --> 00:25:12,159
+>> place for an LLM.
+
+332
+00:25:12,159 --> 00:25:14,400
+>> And this is something you call open coding this.
+
+333
+00:25:14,400 --> 00:25:16,080
+>> Yes, absolutely.
+
+334
+00:25:16,080 --> 00:25:24,320
+>> Uh another uh term that you used in your post that I love and that's fits into this step is this idea of a benevolent dictator.
+
+335
+00:25:24,320 --> 00:25:27,279
+Maybe just talk about what that is and maybe Sha cover that.
+
+336
+00:25:27,279 --> 00:25:27,760
+>> Yeah.
+
+337
+00:25:27,760 --> 00:25:29,760
+So Hamill actually came up with this term.
+
+338
+00:25:29,760 --> 00:25:33,279
+>> Okay, maybe Ham will cover the answer.
+
+339
+00:25:33,279 --> 00:25:34,000
+>> No problem.
+
+340
+00:25:34,000 --> 00:25:39,440
+And we'll actually show the LM automation in this example because we're going to take this example.
+
+341
+00:25:39,440 --> 00:25:40,640
+We're going to go all the way through.
+
+342
+00:25:40,640 --> 00:25:41,039
+>> Amazing.
+
+343
+00:25:41,039 --> 00:25:51,039
+>> And so and so um benevolent dictator is just a catchy term for the fact that when you're doing this open coding,
+
+344
+00:25:51,039 --> 00:25:56,480
+a lot of teams get bogged down in having a committee do this.
+
+345
+00:25:56,480 --> 00:26:07,760
+And for a lot of situations that's wholly unnecessary like you know people get really uncomfortable with okay you know we want everybody on
+
+346
+00:26:07,760 --> 00:26:10,880
+board we want everybody involved so on and so forth.
+
+347
+00:26:10,880 --> 00:26:12,880
+You need to cut through the noise.
+
+348
+00:26:12,880 --> 00:26:21,919
+Um in a lot of organizations if you look really deeply especially small mediumsiz companies there's really like you can appoint one person whose
+
+349
+00:26:21,919 --> 00:26:24,000
+taste that you trust.
+
+350
+00:26:24,000 --> 00:26:29,120
+Um, and you can you can do this with a small number of people and often one person.
+
+351
+00:26:29,120 --> 00:26:32,400
+And that's it's really important to make this tractable.
+
+352
+00:26:32,400 --> 00:26:35,360
+You don't want to make this process so expensive that you can't do it.
+
+353
+00:26:35,360 --> 00:26:36,559
+You're going to lose out.
+
+354
+00:26:36,559 --> 00:26:45,039
+So that's the idea behind benevolent dictator is, hey, you need to simplify this across as many dimensions as you can.
+
+355
+00:26:45,039 --> 00:26:50,720
+Another thing that we'll talk about later is when you goes to building an LLM as a judge,
+
+356
+00:26:50,720 --> 00:26:51,919
+you need a binary score.
+
+357
+00:26:51,919 --> 00:26:57,679
+You don't want to think about is this like a one, two, three, four, five, like assign a score to it.
+
+358
+00:26:57,679 --> 00:26:58,080
+You can't.
+
+359
+00:26:58,080 --> 00:26:59,440
+That's going to slow it down.
+
+360
+00:26:59,440 --> 00:27:02,559
+Just to make sure this benevolent dictator point is is really clear.
+
+361
+00:27:02,559 --> 00:27:07,520
+Basically, this is the person that does this note-taking and ideally they're the expert on the stuff.
+
+362
+00:27:07,520 --> 00:27:11,760
+So, if it's law stuff, maybe there's like a legal person that owns this.
+
+363
+00:27:11,760 --> 00:27:13,520
+It could be a product manager.
+
+364
+00:27:13,520 --> 00:27:16,159
+Give us advice on who this person should be.
+
+365
+00:27:16,159 --> 00:27:19,039
+>> Yeah, it should be the person with domain expertise.
+
+366
+00:27:19,039 --> 00:27:28,640
+So in this case you know it would be the person who understands the business of leasing apartment leasing and has context to
+
+367
+00:27:28,640 --> 00:27:30,799
+understand if this makes sense.
+
+368
+00:27:30,799 --> 00:27:41,279
+It's it's always the domain expert like you said okay for legal it would be a law person for mental health it would be the mental health expert whether that's like a psychiatrist or you know someone else.
+
+369
+00:27:41,279 --> 00:27:41,600
+>> Cool.
+
+370
+00:27:41,600 --> 00:27:44,159
+>> Um oftentimes it is the product manager.
+
+371
+00:27:44,159 --> 00:27:44,480
+>> Cool.
+
+372
+00:27:44,480 --> 00:27:46,240
+So the advice here, pick that person.
+
+373
+00:27:46,240 --> 00:27:51,200
+May not feel so super fair that they're the one in charge and they're the dictator, but they're benevolent.
+
+374
+00:27:51,200 --> 00:27:52,799
+It's going to go be okay.
+
+375
+00:27:52,799 --> 00:27:53,919
+>> Yeah, it's going to be okay.
+
+376
+00:27:53,919 --> 00:27:56,000
+You're just trying to It's not perfection.
+
+377
+00:27:56,000 --> 00:28:07,039
+You're just trying to make progress and in get signal quickly so you have an idea of what to work on because it can become infinitely expensive if you're not careful.
+
+378
+00:28:07,039 --> 00:28:07,360
+>> Yeah.
+
+379
+00:28:07,360 --> 00:28:07,919
+Okay, cool.
+
+380
+00:28:07,919 --> 00:28:09,600
+Let's go back to your examples.
+
+381
+00:28:09,600 --> 00:28:10,559
+Yeah, no problem.
+
+382
+00:28:10,559 --> 00:28:21,120
+So this is another example where we have someone saying, "Okay, do you have any specials?"
+
+383
+00:28:21,120 --> 00:28:28,159
+And the assistant or the AI responds,"Hey, we have a 5% military discount."
+
+384
+00:28:28,159 --> 00:28:33,679
+User responds, "Can you," and it switches a subject, can you tell me how many floors there are?
+
+385
+00:28:33,679 --> 00:28:38,000
+Do you have any onebedrooms available or one bedrooms on the first floor?
+
+386
+00:28:38,000 --> 00:28:40,799
+And the AI responds,"Yeah, okay.
+
+387
+00:28:40,799 --> 00:28:43,520
+We have several one-bedroom apartments available."
+
+388
+00:28:43,520 --> 00:28:46,960
+And then the user wants to confirm any of those on the first floor.
+
+389
+00:28:46,960 --> 00:28:49,200
+And how much are the onebedrooms?
+
+390
+00:28:49,200 --> 00:28:51,840
+And then also is is a current resident.
+
+391
+00:28:51,840 --> 00:28:54,480
+So it's they're also asking, I need a maintenance request.
+
+392
+00:28:54,480 --> 00:28:59,200
+This is actually pretty like you could see the messiness of the real world in here.
+
+393
+00:28:59,200 --> 00:29:06,080
+And the assistant just calls a tool that says transfer call, >> but it doesn't say anything.
+
+394
+00:29:06,080 --> 00:29:09,279
+It just abruptly does transfer call.
+
+395
+00:29:09,279 --> 00:29:16,320
+>> So it's pretty jank I would say like it's just not you know another jank >> another kind of jank a different kind of jank.
+
+396
+00:29:16,320 --> 00:29:24,480
+So you don't want to when you write the open note you don't want to say jank because what we want to do is we want to understand what and when we look at the notes later on we want to understand like what happened.
+
+397
+00:29:24,480 --> 00:29:35,919
+So you just want to say um you know did not confirm call transfer with uh with user.
+
+398
+00:29:35,919 --> 00:29:37,120
+It doesn't have to be perfect.
+
+399
+00:29:37,120 --> 00:29:39,279
+You just have to have a general idea of what's going on.
+
+400
+00:29:39,279 --> 00:29:39,760
+>> Cool.
+
+401
+00:29:39,760 --> 00:29:40,399
+>> So okay.
+
+402
+00:29:40,399 --> 00:29:46,880
+So let's say we do and we Treya and I we recommend doing at least a hundred of these.
+
+403
+00:29:46,880 --> 00:29:50,240
+The question is always like how many of this do you do?
+
+404
+00:29:50,240 --> 00:29:52,720
+And so there's not a magic number.
+
+405
+00:29:52,720 --> 00:30:04,640
+we say 100 is because we know that as soon as you start doing this once you do 20 of these you will automatically find it so useful
+
+406
+00:30:04,640 --> 00:30:07,520
+that you will continue doing it.
+
+407
+00:30:07,520 --> 00:30:16,880
+So we just say 100 to mentally unblock you so it's not intimidating like don't worry you're only going to do 100
+
+408
+00:30:16,880 --> 00:30:26,480
+and there is a a term for that of so so the right answer is keep looking at traces until you feel like you're not
+
+409
+00:30:26,480 --> 00:30:37,600
+learning anything new should talk about >> yeah so there's actually a term in data analysis and quant qualitative analysis called theoretical saturation
+
+410
+00:30:37,600 --> 00:30:43,679
+So what this means is when you do all of these processes of looking at your data when do you stop?
+
+411
+00:30:43,679 --> 00:30:54,320
+It's when you are saturating or you're not uncovering any new types of notes, new types of concepts or nothing that will like
+
+412
+00:30:54,320 --> 00:30:57,600
+materially change the next part of your process.
+
+413
+00:30:57,600 --> 00:31:01,440
+Um, and this kind of takes a little bit of intuition to develop.
+
+414
+00:31:01,440 --> 00:31:05,760
+So typically people don't really know when they've reached theoretical saturation yet.
+
+415
+00:31:05,760 --> 00:31:07,039
+That's totally fine.
+
+416
+00:31:07,039 --> 00:31:12,159
+When you do two or three examples or rounds of this, like you will develop the intuition.
+
+417
+00:31:12,159 --> 00:31:15,600
+A lot of people realize like, oh, okay, like I only need to do 40.
+
+418
+00:31:15,600 --> 00:31:17,200
+I only need to do 60.
+
+419
+00:31:17,200 --> 00:31:19,120
+Actually, I only need to do like 15.
+
+420
+00:31:19,120 --> 00:31:19,600
+I don't know.
+
+421
+00:31:19,600 --> 00:31:24,559
+Like depends on the application and develops like how depends on how savvy you are with error analysis.
+
+422
+00:31:24,559 --> 00:31:25,520
+For sure.
+
+423
+00:31:25,520 --> 00:31:28,880
+>> And your point about you probably want to you're going to want to do a bunch.
+
+424
+00:31:28,880 --> 00:31:31,760
+I imagine it's because you're just like, oh, I'm discovering all these problems.
+
+425
+00:31:31,760 --> 00:31:33,760
+I got to see what else is going on here.
+
+426
+00:31:33,760 --> 00:31:34,399
+>> Exactly.
+
+427
+00:31:34,399 --> 00:31:39,279
+And I promise at some point you're like not going to discover new types of problems.
+
+428
+00:31:39,279 --> 00:31:39,600
+>> Yeah.
+
+429
+00:31:39,600 --> 00:31:40,080
+Awesome.
+
+430
+00:31:40,080 --> 00:31:41,440
+So let's say you did a 100 of these.
+
+431
+00:31:41,440 --> 00:31:42,640
+What's the next step?
+
+432
+00:31:42,640 --> 00:31:42,880
+>> Yeah.
+
+433
+00:31:42,880 --> 00:31:43,120
+Okay.
+
+434
+00:31:43,120 --> 00:31:44,240
+So you did 100 of these.
+
+435
+00:31:44,240 --> 00:31:46,399
+Now you have all these notes.
+
+436
+00:31:46,399 --> 00:31:51,120
+So this is where you can start using AI to help you.
+
+437
+00:31:51,120 --> 00:31:55,760
+Um you So the part where you looked at this data is important.
+
+438
+00:31:55,760 --> 00:31:59,120
+Like we discussed, you don't want to automate this part too much.
+
+439
+00:31:59,120 --> 00:32:00,640
+Humans will still have jobs.
+
+440
+00:32:00,640 --> 00:32:01,679
+This is a takeaway here.
+
+441
+00:32:01,679 --> 00:32:02,399
+That's great.
+
+442
+00:32:02,399 --> 00:32:02,720
+>> Yes.
+
+443
+00:32:02,720 --> 00:32:04,000
+Just reviewing traces.
+
+444
+00:32:04,000 --> 00:32:05,679
+At least there's one job left for now.
+
+445
+00:32:05,679 --> 00:32:06,240
+>> Yeah.
+
+446
+00:32:06,240 --> 00:32:08,159
+So, yeah, exactly.
+
+447
+00:32:08,159 --> 00:32:12,880
+Um, and so, okay, you have all these notes.
+
+448
+00:32:12,880 --> 00:32:19,279
+Now, to turn this into something useful, you can do basic counting.
+
+449
+00:32:19,279 --> 00:32:29,360
+So, basic counting is the most powerful analytical technique in data science uh because it's so simple and it's kind of undervalued
+
+450
+00:32:29,360 --> 00:32:30,880
+um in many cases.
+
+451
+00:32:30,880 --> 00:32:32,880
+And so, it's very approachable for people.
+
+452
+00:32:32,880 --> 00:32:38,960
+And so the first thing you want you want to do is take these notes and you can categorize them with an LLM.
+
+453
+00:32:38,960 --> 00:32:41,279
+And so there's a lot of different ways to do that.
+
+454
+00:32:41,279 --> 00:32:51,440
+Right before this podcast, I took three different uh coding agents or you know uh AI tools
+
+455
+00:32:51,440 --> 00:32:54,320
+and had it categorize these notes.
+
+456
+00:32:54,320 --> 00:32:57,519
+So one is okay, I uploaded into a cloud project.
+
+457
+00:32:57,519 --> 00:33:04,399
+I uploaded a CSV of these notes and I just exported them directly from this interface.
+
+458
+00:33:04,399 --> 00:33:10,080
+Um, there's a lot of different ways to do this, but I'm I'm showing you the simple stupid way,
+
+459
+00:33:10,080 --> 00:33:13,679
+the most basic way of doing things.
+
+460
+00:33:13,679 --> 00:33:19,840
+And so I dumped the CSV in here and I said, "Please analyze the following CSV file.
+
+461
+00:33:19,840 --> 00:33:24,480
+There's and I told it there's a metadata field that has a note in it."
+
+462
+00:33:24,480 --> 00:33:27,600
+But what I said is I used the word open codes.
+
+463
+00:33:27,600 --> 00:33:33,120
+I said, "Hey, I have different open codes and that's a term of art.
+
+464
+00:33:33,120 --> 00:33:42,399
+That's um LMS know what open codes are and they know what axial codes are because it is a it is a concept that's been around for a really long time.
+
+465
+00:33:42,399 --> 00:33:46,320
+So those words help me shortcut like what I'm trying to do."
+
+466
+00:33:46,320 --> 00:33:46,799
+>> That's awesome.
+
+467
+00:33:46,799 --> 00:33:50,720
+And the end of the end of the prompt is telling it to create axial codes.
+
+468
+00:33:50,720 --> 00:33:52,480
+>> Yes, creating a codes.
+
+469
+00:33:52,480 --> 00:34:03,600
+So what it does is >> so maybe it's worth talking about what are axial codes or like what's the point here right you have a mess of open codes right and you don't have 100 distinct
+
+470
+00:34:03,600 --> 00:34:15,440
+problems actually mo many of them are repeats but because you phrased them differently right and in that you shouldn't have tried to create your taxonomy of failures as you're open coding you just want to get down what's
+
+471
+00:34:15,440 --> 00:34:23,359
+wrong and then organize okay what's the most common failure mode so the purpose axial code basically is just a failure mode.
+
+472
+00:34:23,359 --> 00:34:25,599
+It's like the label or category.
+
+473
+00:34:25,599 --> 00:34:32,079
+And what our goal is is to get to this clusters of failure modes and figure out what is the most prevalent.
+
+474
+00:34:32,079 --> 00:34:36,000
+So then you can go and run and attack that problem.
+
+475
+00:34:36,000 --> 00:34:36,879
+>> That is really helpful.
+
+476
+00:34:36,879 --> 00:34:40,879
+Basically, you're just synthesizing all these categories and themes.
+
+477
+00:34:40,879 --> 00:34:41,440
+>> Super cool.
+
+478
+00:34:41,440 --> 00:34:48,960
+And we'll uh include this prompt in our show notes for folks so they don't have to like sit there and screenshot it and try to type it out themselves.
+
+479
+00:34:48,960 --> 00:34:51,200
+>> Yeah, great idea.
+
+480
+00:34:51,200 --> 00:34:57,359
+Um, and so Claude, you know, went ahead and analyzed the CSV file, decided how to parse it,
+
+481
+00:34:57,359 --> 00:34:58,000
+blah, blah, blah.
+
+482
+00:34:58,000 --> 00:35:00,000
+We don't need to worry about all that stuff.
+
+483
+00:35:00,000 --> 00:35:02,320
+But it came up with a bunch of axial codes.
+
+484
+00:35:02,320 --> 00:35:05,520
+Basically, axial codes are categories like Shrea said.
+
+485
+00:35:05,520 --> 00:35:12,320
+So one is okay capability limitations, misrepresentation, pro processing, protocol violations,
+
+486
+00:35:12,320 --> 00:35:16,240
+human handoff issues, communication quality.
+
+487
+00:35:16,240 --> 00:35:18,000
+It created these categories.
+
+488
+00:35:18,000 --> 00:35:21,359
+Now, do I like all the categories?
+
+489
+00:35:21,359 --> 00:35:22,160
+Not really.
+
+490
+00:35:22,160 --> 00:35:23,200
+I like some of them.
+
+491
+00:35:23,200 --> 00:35:25,920
+It's a good first like stab at it.
+
+492
+00:35:25,920 --> 00:35:29,920
+I would probably rename it a little bit because some of them are a bit too generic.
+
+493
+00:35:29,920 --> 00:35:32,079
+Like what is capability limitations?
+
+494
+00:35:32,079 --> 00:35:33,200
+That's a little bit too broad.
+
+495
+00:35:33,200 --> 00:35:34,240
+That's not actionable.
+
+496
+00:35:34,240 --> 00:35:38,880
+I want to get like a little bit more actionable with it so that if I do decide it's a problem,
+
+497
+00:35:38,880 --> 00:35:40,160
+I know what to do with it.
+
+498
+00:35:40,160 --> 00:35:42,400
+But we'll discuss that in a little bit.
+
+499
+00:35:42,400 --> 00:35:44,240
+Um, so you can do this like with anything.
+
+500
+00:35:44,240 --> 00:35:49,280
+And this is the dumbest way to do it, but dumb sometimes is a good way to get started.
+
+501
+00:35:49,280 --> 00:35:53,200
+So, >> and and this is what LM are really good at, taking a bunch of information and synthesizing.
+
+502
+00:35:53,200 --> 00:35:53,680
+>> Absolutely.
+
+503
+00:35:53,680 --> 00:35:55,680
+Synthesizing for us to make sense of, right?
+
+504
+00:35:55,680 --> 00:35:59,839
+Note that, you know, it's not telling us, it's not automatically proposing fixes or anything.
+
+505
+00:35:59,839 --> 00:36:01,359
+That's our job.
+
+506
+00:36:01,359 --> 00:36:05,040
+>> But, you know, now we can wade through this mess of open codes a lot easier.
+
+507
+00:36:05,040 --> 00:36:11,760
+Another thing that's interesting here in this prompt to generate the axial codes is you can be very detailed if you want,
+
+508
+00:36:11,760 --> 00:36:11,920
+right?
+
+509
+00:36:11,920 --> 00:36:22,640
+You can say I want each axial code to actually be you know some actionable failure mode and maybe the LLM will understand that and propose it
+
+510
+00:36:22,640 --> 00:36:30,320
+or I want you to group these open codes by you know what stage of the user story that it's in.
+
+511
+00:36:30,320 --> 00:36:39,760
+So this is where you can you know be creative or do what's best for you as a product manager or engineer working on this and that will help you do the improvement later.
+
+512
+00:36:39,760 --> 00:36:40,480
+>> Okay.
+
+513
+00:36:40,480 --> 00:36:42,960
+So there's no definitive prompt of here's the one way to do it.
+
+514
+00:36:42,960 --> 00:36:46,079
+You're saying there's you can iterate, see what works for you.
+
+515
+00:36:46,079 --> 00:36:46,720
+>> Absolutely.
+
+516
+00:36:46,720 --> 00:36:50,240
+>> It's interesting the tools don't want to do this or or do they try and they just don't do a great job?
+
+517
+00:36:50,240 --> 00:36:51,440
+>> No, I don't think they do it.
+
+518
+00:36:51,440 --> 00:36:54,960
+We've been screaming from the rooftops, please, please do this.
+
+519
+00:36:54,960 --> 00:36:56,720
+I do think it's a little bit hard, right?
+
+520
+00:36:56,720 --> 00:37:03,760
+Like part of this whole um experience with the EVOS course Hamill and I are teaching are like a lot of people don't actually know this.
+
+521
+00:37:03,760 --> 00:37:07,680
+>> So maybe it's that people don't know this and they don't know how to build tools for it.
+
+522
+00:37:07,680 --> 00:37:13,040
+Um, and hopefully we can demystify some of this magic.
+
+523
+00:37:13,040 --> 00:37:17,760
+>> And just to double click on this point, like this is not a thing everyone does or knows.
+
+524
+00:37:17,760 --> 00:37:23,680
+This is something you two developed based on your experience doing data analysis and data science at at other companies.
+
+525
+00:37:23,680 --> 00:37:24,880
+>> Well, I want to caveat.
+
+526
+00:37:24,880 --> 00:37:26,880
+We didn't invent error analysis.
+
+527
+00:37:26,880 --> 00:37:28,880
+We don't actually want to invent things.
+
+528
+00:37:28,880 --> 00:37:30,800
+That's a bad that's bad signal.
+
+529
+00:37:30,800 --> 00:37:42,320
+If somebody is coming to you with a way to do something that's like entirely new and not grounded in hundreds of years of theory and literature then you should I don't know be a little bit wary of that.
+
+530
+00:37:42,320 --> 00:37:52,400
+But what we tried to do was distill okay what are the new tools and techniques that you need to know make sense of the LLM error analysis and then we created a
+
+531
+00:37:52,400 --> 00:37:54,960
+curriculum or structured way of doing this.
+
+532
+00:37:54,960 --> 00:38:04,240
+So this is all very tailored to LLMs, but you know the terms open coding, axial coding are grounded in um social science.
+
+533
+00:38:04,240 --> 00:38:04,720
+>> Amazing.
+
+534
+00:38:04,720 --> 00:38:05,280
+Okay.
+
+535
+00:38:05,280 --> 00:38:08,640
+Like what's funny about you guys doing this is I just want to go do this somewhere.
+
+536
+00:38:08,640 --> 00:38:12,800
+I don't have I don't have an AI product to do this on, but it's just like oh this would be so fun.
+
+537
+00:38:12,800 --> 00:38:17,599
+Just sit there and find all the problems I'm running into and categorize them and then try to fix them.
+
+538
+00:38:17,599 --> 00:38:18,240
+Delightful.
+
+539
+00:38:18,240 --> 00:38:19,599
+>> I love that.
+
+540
+00:38:19,599 --> 00:38:20,800
+>> Haml pulled up a video.
+
+541
+00:38:20,800 --> 00:38:21,839
+What do you got going on here?
+
+542
+00:38:21,839 --> 00:38:22,079
+>> Yeah.
+
+543
+00:38:22,079 --> 00:38:27,119
+So I pulled up a video just to drive home Shrea's point like we are not inventing anything.
+
+544
+00:38:27,119 --> 00:38:36,800
+So what you see on the screen here is Andrew Ang one of the famous machine learning uh researchers in the world who have taught a lot of
+
+545
+00:38:36,800 --> 00:38:42,320
+people frankly machine learning and um you can see this is a 8-year-old video.
+
+546
+00:38:42,320 --> 00:38:51,839
+So and he's talking about error analysis and so this is a technique that's been used to analyze stochastic systems for ages.
+
+547
+00:38:51,839 --> 00:38:58,880
+Um, and it's some it's something that you're just using the same machine learning ideas and principles is bringing them in into here because again,
+
+548
+00:38:58,880 --> 00:39:00,880
+these are stochcastic systems.
+
+549
+00:39:00,880 --> 00:39:01,599
+>> Awesome.
+
+550
+00:39:01,599 --> 00:39:04,079
+Well, one thing we're working on getting Andrew in the podcast.
+
+551
+00:39:04,079 --> 00:39:04,640
+We're chatting.
+
+552
+00:39:04,640 --> 00:39:05,839
+So, that'll be really fun.
+
+553
+00:39:05,839 --> 00:39:09,599
+Uh, two, I love that my other my podcast episode just came out today is in your feed there,
+
+554
+00:39:09,599 --> 00:39:11,280
+and it's standing out really well in that feed.
+
+555
+00:39:11,280 --> 00:39:13,280
+So, I'm really happy about that thumbnail.
+
+556
+00:39:13,280 --> 00:39:13,680
+>> Very nice.
+
+557
+00:39:13,680 --> 00:39:15,839
+Yeah, the recommendation algorithm is >> Yes.
+
+558
+00:39:15,839 --> 00:39:16,480
+Here we go.
+
+559
+00:39:16,480 --> 00:39:17,599
+I hope you click on that.
+
+560
+00:39:17,599 --> 00:39:21,599
+Don't don't screw my algorithm.
+
+561
+00:39:21,599 --> 00:39:22,240
+Okay, cool.
+
+562
+00:39:22,240 --> 00:39:23,440
+So, we've done some synthesis.
+
+563
+00:39:23,440 --> 00:39:25,359
+What's I know we're not going to go through the entire step.
+
+564
+00:39:25,359 --> 00:39:29,200
+This is like you have a whole course that takes many days to learn this whole process.
+
+565
+00:39:29,200 --> 00:39:31,280
+What else do you want to share about how to go about this process?
+
+566
+00:39:31,280 --> 00:39:36,800
+>> Okay, so you can you can do this through anything and you know I've used the same thing works just fine in chat GPT.
+
+567
+00:39:36,800 --> 00:39:37,920
+The same exact prompt.
+
+568
+00:39:37,920 --> 00:39:40,560
+You can see it it made axial codes.
+
+569
+00:39:40,560 --> 00:39:43,040
+I really like using Julius AI.
+
+570
+00:39:43,040 --> 00:39:45,359
+Um it's one of my favorite tools.
+
+571
+00:39:45,359 --> 00:39:49,200
+Julius is a is a kind of his third party tool but uses notebooks.
+
+572
+00:39:49,200 --> 00:39:59,839
+I personally like Jupyter notebooks a lot and so it's more of a data science thing but a lot of product managers are kind of learning notebooks nowadays and it's
+
+573
+00:39:59,839 --> 00:40:08,800
+kind of cool it's like a fun playground where you can like write code and look at data but we don't have to go deeply into that just wanted to mention you can use a lot you know AI is really good at
+
+574
+00:40:08,800 --> 00:40:18,160
+this so let's go to the fun part here we go so now we have all the a we have these axial codes so the first thing I
+
+575
+00:40:18,160 --> 00:40:28,000
+like to do I have these open codes right and I have the axial codes that let's say
+
+576
+00:40:28,000 --> 00:40:38,880
+you know the like that we assigned from the cloud project or the chat GPT and so what I do is I collect them first and I take a look like does these axial codes
+
+577
+00:40:38,880 --> 00:40:50,480
+make sense and I look at the correspondence between the different axial codes and the open codes and I and I go through an exercise and I say hm do I like these these codes like can I make
+
+578
+00:40:50,480 --> 00:40:51,280
+them better?
+
+579
+00:40:51,280 --> 00:40:52,320
+Can I refine them?
+
+580
+00:40:52,320 --> 00:40:54,400
+Can I make them more specific?
+
+581
+00:40:54,400 --> 00:40:59,200
+Um you know instead of like being generic I make them very specific in actionable.
+
+582
+00:40:59,200 --> 00:41:10,240
+So you see the ones that I came up with here are tour scheduling rescheduling issues human handoff or transfer issue formatting error with an output conversational flow.
+
+583
+00:41:10,240 --> 00:41:14,319
+We saw the conversational flow issue with the text messages.
+
+584
+00:41:14,319 --> 00:41:24,000
+uh making follow-up promises not kept and and so basically what I can do what you can do now is like you have these
+
+585
+00:41:24,000 --> 00:41:29,200
+axial codes and um so I just collect them into a list.
+
+586
+00:41:29,200 --> 00:41:32,800
+So this is an Excel formula just collect these codes into a list.
+
+587
+00:41:32,800 --> 00:41:36,079
+So now we have a commaepparated list of these codes.
+
+588
+00:41:36,079 --> 00:41:45,359
+And then what you can simply do is you could take your notes that you have those open codes and you can tell an AI and this is using Gemini and AI
+
+589
+00:41:45,359 --> 00:41:46,480
+just for simplicity.
+
+590
+00:41:46,480 --> 00:41:56,000
+This is like the you know again we're trying to keep it simple categorize uh the following note into one of the following categories.
+
+591
+00:41:56,000 --> 00:42:00,480
+That's way this for folks watching there's like I like all these different prompts and formulas you're showing.
+
+592
+00:42:00,480 --> 00:42:05,200
+This is like the Google Sheets AI AI prompt.
+
+593
+00:42:05,200 --> 00:42:07,359
+>> Yeah.
+
+594
+00:42:07,359 --> 00:42:17,200
+>> And so basically what you can do is you can then have you can categorize your faces into one of the buckets and that's what we have here.
+
+595
+00:42:17,200 --> 00:42:22,160
+We have categorized all those problems that we encountered into one of these things.
+
+596
+00:42:22,160 --> 00:42:24,240
+>> And this is automatic which is very exciting.
+
+597
+00:42:24,240 --> 00:42:26,240
+I mean the AI is doing it.
+
+598
+00:42:26,240 --> 00:42:30,640
+So this also drives home the point that your open codes have to be detailed, right?
+
+599
+00:42:30,640 --> 00:42:36,880
+You can't just say janky because if the AI is reading janky, it's not going to be able to categorize it.
+
+600
+00:42:36,880 --> 00:42:38,079
+Even a human wouldn't, right?
+
+601
+00:42:38,079 --> 00:42:41,680
+It would have to go and remember why you said janky.
+
+602
+00:42:41,680 --> 00:42:45,440
+>> So it's important to be, you know, somewhat detailed in your open code.
+
+603
+00:42:45,440 --> 00:42:45,599
+>> Okay.
+
+604
+00:42:45,599 --> 00:42:50,480
+So avoid the word janky is a good rule of thumb >> or other words.
+
+605
+00:42:50,480 --> 00:42:51,040
+>> Okay.
+
+606
+00:42:51,040 --> 00:42:52,240
+>> I was being funny.
+
+607
+00:42:52,240 --> 00:42:52,560
+>> Yeah.
+
+608
+00:42:52,560 --> 00:42:52,880
+Okay.
+
+609
+00:42:52,880 --> 00:42:57,200
+What are some of those other words just to that come that people often use that you think are not good?
+
+610
+00:42:57,200 --> 00:42:58,880
+>> I don't think it's specific words.
+
+611
+00:42:58,880 --> 00:43:02,319
+I think it's just people are not detailed enough in the open code.
+
+612
+00:43:02,319 --> 00:43:04,400
+So it's hard to do the categorization.
+
+613
+00:43:04,400 --> 00:43:04,800
+>> Great.
+
+614
+00:43:04,800 --> 00:43:12,640
+And by the way, the reason you have to map them back is because say clott JPT gave you suggestions and you changed them and iterated on them.
+
+615
+00:43:12,640 --> 00:43:16,160
+So it doesn't you can't just go back and say cool what are in each bucket.
+
+616
+00:43:16,160 --> 00:43:16,400
+>> Yeah.
+
+617
+00:43:16,400 --> 00:43:17,119
+Yeah.
+
+618
+00:43:17,119 --> 00:43:17,440
+>> Great.
+
+619
+00:43:17,440 --> 00:43:19,280
+That's a really good question actually.
+
+620
+00:43:19,280 --> 00:43:24,240
+It's good to iterate and think on about it a little bit like do I like these open codes?
+
+621
+00:43:24,240 --> 00:43:26,400
+Do these actually make sense to me?
+
+622
+00:43:26,400 --> 00:43:32,640
+Just like anything that AI does, it's really good to kind of put yourself in the middle >> just in the loop.
+
+623
+00:43:32,640 --> 00:43:33,359
+Still space.
+
+624
+00:43:33,359 --> 00:43:33,760
+>> Yes.
+
+625
+00:43:33,760 --> 00:43:34,079
+Great.
+
+626
+00:43:34,079 --> 00:43:34,400
+>> Yeah.
+
+627
+00:43:34,400 --> 00:43:43,280
+>> One of the things that I like to do in this step if I'm trying to use AI to do this labeling is also have a new category called none of the above.
+
+628
+00:43:43,280 --> 00:43:49,920
+So an AI can actually say none of the above in the axial code and that informs me, okay,
+
+629
+00:43:49,920 --> 00:43:52,240
+my axial codes are not complete.
+
+630
+00:43:52,240 --> 00:43:54,880
+Like let's go look at those open codes.
+
+631
+00:43:54,880 --> 00:44:00,240
+Let's figure out what some new categories are or figure out how to reword my other axial codes.
+
+632
+00:44:00,240 --> 00:44:00,640
+>> Awesome.
+
+633
+00:44:00,640 --> 00:44:03,599
+And what's cool about this is you don't need to do this many many times.
+
+634
+00:44:03,599 --> 00:44:07,440
+Like no, >> for most products, you do this process once and then you build on it, I imagine,
+
+635
+00:44:07,440 --> 00:44:09,280
+and you just tweak it over time.
+
+636
+00:44:09,280 --> 00:44:09,839
+>> Absolutely.
+
+637
+00:44:09,839 --> 00:44:11,040
+And it gets so fast.
+
+638
+00:44:11,040 --> 00:44:22,800
+Like people people do this like once a week and you can do all of this in like 30 minutes and like suddenly your product is like so much better than if you were never aware of any of these problems.
+
+639
+00:44:22,800 --> 00:44:23,040
+>> Yeah.
+
+640
+00:44:23,040 --> 00:44:27,280
+It's absurd to feel like you don't you wouldn't know this is happening like watching this happening.
+
+641
+00:44:27,280 --> 00:44:29,680
+I'm like how could you not do this to your product?
+
+642
+00:44:29,680 --> 00:44:31,920
+>> A lot of people have no idea.
+
+643
+00:44:31,920 --> 00:44:32,960
+>> Most people Yeah.
+
+644
+00:44:32,960 --> 00:44:33,359
+>> Yeah.
+
+645
+00:44:33,359 --> 00:44:34,400
+We we'll talk about that.
+
+646
+00:44:34,400 --> 00:44:36,880
+There's a whole debate around this stuff that we want to talk about.
+
+647
+00:44:36,880 --> 00:44:37,839
+Uh okay cool.
+
+648
+00:44:37,839 --> 00:44:39,520
+So you have this you have the sheet.
+
+649
+00:44:39,520 --> 00:44:40,240
+What comes next?
+
+650
+00:44:40,240 --> 00:44:40,319
+>> Okay.
+
+651
+00:44:40,319 --> 00:44:42,319
+So here's the big unveil.
+
+652
+00:44:42,319 --> 00:44:45,200
+>> This is the magic moment right now.
+
+653
+00:44:45,200 --> 00:44:52,720
+>> So we have all these codes we that you know we applied the ones that we like on our traces.
+
+654
+00:44:52,720 --> 00:44:54,960
+Now you can do the tada.
+
+655
+00:44:54,960 --> 00:44:56,560
+You can count them.
+
+656
+00:44:56,560 --> 00:45:04,640
+So here's a pivot table and we just can do pivot table on those and we can count how many times those different things occurred.
+
+657
+00:45:04,640 --> 00:45:06,400
+So what do we find?
+
+658
+00:45:06,400 --> 00:45:13,839
+found on this on these like traces that we categorized, we found 17 conversational flow issues.
+
+659
+00:45:13,839 --> 00:45:16,079
+And I really like pivot tables because you can do cool things.
+
+660
+00:45:16,079 --> 00:45:17,520
+You can like double click on these.
+
+661
+00:45:17,520 --> 00:45:18,480
+You can say, "Oh, okay.
+
+662
+00:45:18,480 --> 00:45:20,160
+Let me let me take a look at those."
+
+663
+00:45:20,160 --> 00:45:25,040
+But that's going into an aside about pivot tables, how cool they are.
+
+664
+00:45:25,040 --> 00:45:36,560
+But um um you know now we have just a nice rough cut of what are our problems and now we have
+
+665
+00:45:36,560 --> 00:45:47,599
+gone from chaos to some kind of thinking around oh you know what these are my biggest problems I need to fix conversational issues you know maybe
+
+666
+00:45:47,599 --> 00:45:56,079
+these human handoff issues it's not necessarily the count is the most important thing you know that might be something that's just really bad and you want to fix that.
+
+667
+00:45:56,079 --> 00:46:04,720
+But okay, now you have some way of looking at your problem and now you can think about whether you need evals
+
+668
+00:46:04,720 --> 00:46:06,960
+uh for for some of these.
+
+669
+00:46:06,960 --> 00:46:17,440
+So you know with the you know there might be some of these things that might be just dumb engineering errors
+
+670
+00:46:17,440 --> 00:46:23,119
+that you don't need to write an eval for because it's very obvious on how to fix them.
+
+671
+00:46:23,119 --> 00:46:25,440
+um maybe the formatting error with output.
+
+672
+00:46:25,440 --> 00:46:32,240
+Maybe you just forgot to tell the LLM how you want it to be formatted and like you didn't even say that in the prompt.
+
+673
+00:46:32,240 --> 00:46:37,680
+So like just go ahead and fix the prompt maybe, you know, and we can decide like okay,
+
+674
+00:46:37,680 --> 00:46:41,119
+do you want an uh do you want to write an email for that?
+
+675
+00:46:41,119 --> 00:46:46,640
+You might be you might still want to write an email for that because you might be able to test that with just code.
+
+676
+00:46:46,640 --> 00:46:48,240
+You could just test the string.
+
+677
+00:46:48,240 --> 00:46:53,200
+Does it have the right formatting potentially without running an LLM?
+
+678
+00:46:53,200 --> 00:46:56,400
+So, there's a costbenefit trade-off to eval.
+
+679
+00:46:56,400 --> 00:46:59,680
+You don't want to get carried away with it.
+
+680
+00:46:59,680 --> 00:47:05,440
+Um, but you want to start, you want to usually ground yourself in your actual errors.
+
+681
+00:47:05,440 --> 00:47:08,400
+You don't want to skip this step.
+
+682
+00:47:08,400 --> 00:47:13,599
+And so, the reason I'm kind of spending so much time on this is like this is where people get lost.
+
+683
+00:47:13,599 --> 00:47:21,200
+they go straight into eval like let me let me just write some tests and that is where things go off the rails.
+
+684
+00:47:21,200 --> 00:47:28,079
+Um so let's let's okay so let's say we want to tackle one of these things.
+
+685
+00:47:28,079 --> 00:47:38,480
+So for example uh let's say we want to tackle this human handoff issue and we're like hm I'm not really sure how to fix this.
+
+686
+00:47:38,480 --> 00:47:49,119
+like that's a kind of subjective sort of judgment call on, you know, should we be handing off to a human and I don't know immediately how
+
+687
+00:47:49,119 --> 00:47:49,680
+to fix it.
+
+688
+00:47:49,680 --> 00:47:52,079
+It's not super obvious, per se.
+
+689
+00:47:52,079 --> 00:47:54,560
+Yeah, I can like change my prompt, but I'm not like sure.
+
+690
+00:47:54,560 --> 00:47:56,880
+I'm not 100% sure.
+
+691
+00:47:56,880 --> 00:48:04,560
+Well, that might be sort of an interesting um thing for an LLM as a judge, for example.
+
+692
+00:48:04,560 --> 00:48:06,160
+So, there's different kinds of evals.
+
+693
+00:48:06,160 --> 00:48:13,119
+One is codebased which you should try to do if you can because they're cheaper.
+
+694
+00:48:13,119 --> 00:48:17,680
+You don't have to, you know, LM as a judge is something it's like a meta eval.
+
+695
+00:48:17,680 --> 00:48:22,800
+You have to eval that eval to make sure the LM that's judging is doing the right thing,
+
+696
+00:48:22,800 --> 00:48:25,599
+which we'll talk about in a second.
+
+697
+00:48:25,599 --> 00:48:29,520
+So, okay, LM as a judge, that's one thing.
+
+698
+00:48:29,520 --> 00:48:31,119
+Okay, how do you build an LM as a judge?
+
+699
+00:48:31,119 --> 00:48:37,040
+Before we get into that actually just to make sure people know exactly what you're describing there these two types of evals.
+
+700
+00:48:37,040 --> 00:48:40,319
+One is you said it's code based one is LLM as judge.
+
+701
+00:48:40,319 --> 00:48:43,680
+Maybe Shrea just help us understand what that what a codebased eval even is.
+
+702
+00:48:43,680 --> 00:48:45,599
+It's just like it's like essentially a unit test.
+
+703
+00:48:45,599 --> 00:48:46,800
+Is that a simple way to think about it?
+
+704
+00:48:46,800 --> 00:48:50,960
+>> Maybe eval is not the right term here but think like automated evaluator.
+
+705
+00:48:50,960 --> 00:49:01,599
+So when we find these failure modes, one of the things we want is like, okay, can we now like go check the prevalence of that failure mode in an automated way without me manually labeling and doing all the
+
+706
+00:49:01,599 --> 00:49:05,280
+coding and the grouping and I want to run it on thousands and thousands of traces.
+
+707
+00:49:05,280 --> 00:49:07,040
+I want to run it every week.
+
+708
+00:49:07,040 --> 00:49:08,240
+That is okay.
+
+709
+00:49:08,240 --> 00:49:12,480
+You should probably build an an automated evaluator to check for that failure mode.
+
+710
+00:49:12,480 --> 00:49:23,839
+Now when we're saying codebased versus llm based, we're saying okay so maybe I could write like a python function or a piece of code to check whether that failure mode is present in a trace or not.
+
+711
+00:49:23,839 --> 00:49:35,359
+And that's possible to do for certain things like you know checking the output is JSON um or you know checking that it's markdown or checking that it's short like these are all things you can capture in code
+
+712
+00:49:35,359 --> 00:49:38,079
+or you can approximately capture in code.
+
+713
+00:49:38,079 --> 00:49:46,319
+uh when we're talking about LLM judge here, we're saying that this is a complex failure mode and we don't know how to evaluate in an automated way.
+
+714
+00:49:46,319 --> 00:49:56,079
+So maybe we will try to use an LLM to evaluate this very very narrow specific failure mode of handoffs.
+
+715
+00:49:56,079 --> 00:50:02,720
+>> So just to try to mirror back how you're describing, you want to test what your say agent or AI product is doing.
+
+716
+00:50:02,720 --> 00:50:05,760
+You ask it a question, it gets back with something.
+
+717
+00:50:05,760 --> 00:50:14,079
+One way to test if it's giving you the right answer is if it's consistently doing the same thing that you could write a code to te to tell you this is true or false.
+
+718
+00:50:14,079 --> 00:50:16,960
+For example, will it ever say there's a virtual tour?
+
+719
+00:50:16,960 --> 00:50:20,640
+So you could ask it >> is do you provide virtual tours?
+
+720
+00:50:20,640 --> 00:50:27,440
+>> It says yes or no and then you could write code to tell you if it's correct based on that specific answer.
+
+721
+00:50:27,440 --> 00:50:35,680
+But if you're asking about something more complicated and it's not binary, you almost need like in a in a one world you need a human to tell you this is correct.
+
+722
+00:50:35,680 --> 00:50:44,640
+The solution to avoid humans having to review all this every time automatically is LLM's replacing human judgment and you call it LLM as judge.
+
+723
+00:50:44,640 --> 00:50:47,200
+The LM is being the judge if this is correct or not.
+
+724
+00:50:47,200 --> 00:50:47,760
+>> Absolutely.
+
+725
+00:50:47,760 --> 00:50:48,880
+You nailed it.
+
+726
+00:50:48,880 --> 00:50:59,119
+Um, so people always think like, oh, like this is at least as hard as my problem of creating the original agent >> and it's not because you're asking the
+
+727
+00:50:59,119 --> 00:51:02,960
+judge to do one thing, evaluate one failure mode.
+
+728
+00:51:02,960 --> 00:51:11,359
+So the scope of the problem is very small and the output of this LLM judge is like pass or fail.
+
+729
+00:51:11,359 --> 00:51:21,839
+So it is a very very tightly scoped thing that LLM judges are very capable of doing very reliably >> and the goal here is just to have a suite of tests that run before you ship
+
+730
+00:51:21,839 --> 00:51:27,839
+to production that tell you things are going the way you want them to the way your agent is interacting.
+
+731
+00:51:27,839 --> 00:51:39,440
+Beautiful thing about LLM judge is you can use them in unit test or CI sure but you could also use it online for monitoring right like I can sample like thousand
+
+732
+00:51:39,440 --> 00:51:51,359
+traces every day run my LLM judge real production traces and see what the failure rate is there this is not a unit test right but still now we get like an extremely specific measure of
+
+733
+00:51:51,359 --> 00:51:57,839
+application quality >> cool that's a really great point because a lot of people disse for being this like not real life thing.
+
+734
+00:51:57,839 --> 00:52:01,920
+It's a thing that you test before it's actually in the real world and >> what's actually happening in the real world.
+
+735
+00:52:01,920 --> 00:52:04,559
+You're saying you could actually you should actually do exactly that.
+
+736
+00:52:04,559 --> 00:52:09,280
+Test your real thing running in production and it's like a daily hourly sort of thing you could be running.
+
+737
+00:52:09,280 --> 00:52:10,480
+>> Totally.
+
+738
+00:52:10,480 --> 00:52:10,800
+>> Awesome.
+
+739
+00:52:10,800 --> 00:52:11,040
+Okay.
+
+740
+00:52:11,040 --> 00:52:14,800
+Uh Hamill's got a a example of an actual LM is Judge Eval here.
+
+741
+00:52:14,800 --> 00:52:16,480
+So let's take a look.
+
+742
+00:52:16,480 --> 00:52:20,559
+>> I love how Shrea really teed it up um for me.
+
+743
+00:52:20,559 --> 00:52:22,160
+So thank you so much.
+
+744
+00:52:22,160 --> 00:52:26,880
+So what we have is a LM as a judge prompt for this one specific failure.
+
+745
+00:52:26,880 --> 00:52:35,599
+Like Shrea said, you would want to do one specific failure and you want to make it binary because we want to simplify things.
+
+746
+00:52:35,599 --> 00:52:40,160
+We don't want hey like score this on a rating of one to five like how good is it?
+
+747
+00:52:40,160 --> 00:52:46,079
+That's just mostly in most cases that's a weasel way of like not making a decision.
+
+748
+00:52:46,079 --> 00:52:47,599
+Like no, you need to make a decision.
+
+749
+00:52:47,599 --> 00:52:48,960
+Is this good enough or not?
+
+750
+00:52:48,960 --> 00:52:50,720
+Yes or no?
+
+751
+00:52:50,720 --> 00:52:54,720
+can be painful to think about what that is, but you should absolutely do it.
+
+752
+00:52:54,720 --> 00:52:56,800
+Otherwise, this thing becomes very untractable.
+
+753
+00:52:56,800 --> 00:53:02,640
+And then when you report these metrics, no one knows what 3.2 versus 3.7 means.
+
+754
+00:53:02,640 --> 00:53:04,880
+>> This is Yeah, we see this all the time also.
+
+755
+00:53:04,880 --> 00:53:12,559
+And even with like expert curated content on the internet where it's like, oh, here's your LLM judge evaluator prompt.
+
+756
+00:53:12,559 --> 00:53:14,960
+Here's a one to seven scale.
+
+757
+00:53:14,960 --> 00:53:24,640
+And I always think I always text Hamill like, "Oh no, like now we have to fight the misinformation again because we know somebody's going to try it out and then come back to us and say,
+
+758
+00:53:24,640 --> 00:53:26,880
+oh, I have 4.2 average."
+
+759
+00:53:26,880 --> 00:53:34,319
+And we're going to be like,"Okay, it's wild how much drama there is in Eval's space.
+
+760
+00:53:34,319 --> 00:53:36,079
+We're going to get to that."
+
+761
+00:53:36,079 --> 00:53:37,520
+Oh man.
+
+762
+00:53:37,520 --> 00:53:39,680
+This episode is brought to you by Mercury.
+
+763
+00:53:39,680 --> 00:53:45,280
+I've been banking with Mercury for years and honestly I can't imagine banking any other way at this point.
+
+764
+00:53:45,280 --> 00:53:48,880
+I switched from Chase and holy moly what a difference.
+
+765
+00:53:48,880 --> 00:53:55,440
+Sending wires, tracking spend, giving people on my team access to move money around so freaking easy.
+
+766
+00:53:55,440 --> 00:54:03,920
+Where most traditional banking websites and apps are clunky and hard to use, Mercury is meticulously designed to be an intuitive and simple experience.
+
+767
+00:54:03,920 --> 00:54:08,800
+And Mercury brings all the ways that you use money into a single product, including credit cards,
+
+768
+00:54:08,800 --> 00:54:13,119
+invoicing, bill pay, reimbursements for your teammates, and capital.
+
+769
+00:54:13,119 --> 00:54:18,640
+Whether you're a funded tech startup looking for ways to pay contractors and earn yield on your idle cash,
+
+770
+00:54:18,640 --> 00:54:26,000
+or an agency that needs to invoice customers and keep them current, or an e-commerce brand that needs to stay on top of cash flow and excess capital,
+
+771
+00:54:26,000 --> 00:54:29,839
+Mercury can be tailored to help your business perform at its highest level.
+
+772
+00:54:29,839 --> 00:54:33,839
+See what over 200,000 entrepreneurs love about Mercury.
+
+773
+00:54:33,839 --> 00:54:37,520
+Visit mercury.com to apply online in 10 minutes.
+
+774
+00:54:37,520 --> 00:54:39,440
+Mercury is a fintech, not a bank.
+
+775
+00:54:39,440 --> 00:54:43,119
+Banking services provided through Mercury's FDIC insured partner banks.
+
+776
+00:54:43,119 --> 00:54:45,839
+For more details, check out the show notes.
+
+777
+00:54:45,839 --> 00:54:48,160
+Okay, so this is your judge prompt.
+
+778
+00:54:48,160 --> 00:54:50,079
+There's no one way to do it.
+
+779
+00:54:50,079 --> 00:54:54,480
+It's okay to use an LLM to help you create it, but again, put yourself in the loop.
+
+780
+00:54:54,480 --> 00:54:56,960
+Don't just blindly accept what the LLM does.
+
+781
+00:54:56,960 --> 00:54:59,040
+And in all of these cases, that's what we did.
+
+782
+00:54:59,040 --> 00:55:02,079
+Like with the axial codes, we kind of iterated on this.
+
+783
+00:55:02,079 --> 00:55:06,480
+You can use an LLM to like help you create this prompt, but make sure you read it.
+
+784
+00:55:06,480 --> 00:55:09,760
+Make sure you edit it, whatever.
+
+785
+00:55:09,760 --> 00:55:11,760
+This is not necessarily the perfect prompt.
+
+786
+00:55:11,760 --> 00:55:17,119
+This is just the stupid like very keeping it very simple just to show you the idea is like,
+
+787
+00:55:17,119 --> 00:55:23,920
+okay, for this handoff failure, um, you know, I said, okay, I want you to output true or false is binary.
+
+788
+00:55:23,920 --> 00:55:25,040
+It's a binary judge.
+
+789
+00:55:25,040 --> 00:55:26,480
+That's what we recommend.
+
+790
+00:55:26,480 --> 00:55:31,359
+And then we then I just go through and say, okay, like when should you be doing a handoff?
+
+791
+00:55:31,359 --> 00:55:36,640
+And I just list them out like, okay, explicit human request ignored or looped.
+
+792
+00:55:36,640 --> 00:55:44,559
+>> Uh some policy mandated transfer, sensitive resident issues, tool data unavailability,
+
+793
+00:55:44,559 --> 00:55:49,280
+same day walk-in or tour requests, you know, you need to talk to a human for that.
+
+794
+00:55:49,280 --> 00:55:51,200
+So on and so forth, right?
+
+795
+00:55:51,200 --> 00:56:01,359
+And so the idea is like now that I know that this is a failure from my data, I'm interested in iterating on it because I know this is actually happening all the time.
+
+796
+00:56:01,359 --> 00:56:09,359
+And like Sha said, like it would be nice to have a way not only to evaluate this on like the data I have,
+
+797
+00:56:09,359 --> 00:56:13,200
+but also on production data just to get a sense of like well what scale is this happening?
+
+798
+00:56:13,200 --> 00:56:14,480
+Let me find more traces.
+
+799
+00:56:14,480 --> 00:56:17,200
+Let me have a you know a way to iterate on this.
+
+800
+00:56:17,200 --> 00:56:22,000
+And so we can take this prompt and I'm going to use a spreadsheet again.
+
+801
+00:56:22,000 --> 00:56:28,480
+So the first step is okay when I'm doing this judge I wrote the prompt.
+
+802
+00:56:28,480 --> 00:56:38,160
+Now a lot of people stop there and they say okay I have my judge prompt we're done good like let's just let's just ship it and let's uh the prompt says if the judge says it's wrong it's wrong.
+
+803
+00:56:38,160 --> 00:56:44,240
+They just like accept it as the gospel be like okay the LM says it's wrong it's it must be wrong.
+
+804
+00:56:44,240 --> 00:56:51,760
+Don't do that because that's the fastest way that you can have evals that don't match what's going on.
+
+805
+00:56:51,760 --> 00:56:55,920
+And when people lose trust in your evals, they'll lose trust in you.
+
+806
+00:56:55,920 --> 00:56:58,319
+So, it's really important that you don't do that.
+
+807
+00:56:58,319 --> 00:57:03,280
+And so, one before you release your LM as a judge, you want to make sure it's aligned to the human.
+
+808
+00:57:03,280 --> 00:57:14,480
+So how do you do that is you actually you have those axial codes and you want to like measure your judge against the axial code and say like hey did does it agree with me?
+
+809
+00:57:14,480 --> 00:57:16,240
+Does my own judge does it agree with me?
+
+810
+00:57:16,240 --> 00:57:17,599
+Just measure it.
+
+811
+00:57:17,599 --> 00:57:21,680
+And so what we have here is okay I say assess this LLM trace.
+
+812
+00:57:21,680 --> 00:57:24,640
+Again I'm using just spreadsheets here.
+
+813
+00:57:24,640 --> 00:57:28,640
+Assess this LLM trace according to these rules.
+
+814
+00:57:28,640 --> 00:57:33,040
+And and the rules are just the prompt that I just showed you.
+
+815
+00:57:33,040 --> 00:57:40,400
+and I ask it okay is there a handoff error true or false.
+
+816
+00:57:40,400 --> 00:57:45,040
+So then this column let me just zoom in a bit.
+
+817
+00:57:45,040 --> 00:57:53,359
+Column H I have okay did this error occur in column G is whether I thought the error occurred or not.
+
+818
+00:57:53,359 --> 00:57:54,720
+You can see >> you're going through it manually.
+
+819
+00:57:54,720 --> 00:57:55,280
+You do that.
+
+820
+00:57:55,280 --> 00:57:55,520
+>> Yeah.
+
+821
+00:57:55,520 --> 00:57:55,680
+Yeah.
+
+822
+00:57:55,680 --> 00:57:56,640
+And which we already did.
+
+823
+00:57:56,640 --> 00:57:57,839
+We we already went through it manually.
+
+824
+00:57:57,839 --> 00:58:03,040
+So we don't it's not like we have to do it again because we kind of have that cheat code from the axial coding.
+
+825
+00:58:03,040 --> 00:58:04,319
+We already did it.
+
+826
+00:58:04,319 --> 00:58:11,520
+>> Um you might have to go through it again if you need more data and there's a lot of details to this on like how to do this correctly.
+
+827
+00:58:11,520 --> 00:58:21,920
+Um you want to split your data and do all these things so that you're not cheating but I just want to show you the concept and basically um what you can do is
+
+828
+00:58:21,920 --> 00:58:23,839
+measure the agreement.
+
+829
+00:58:23,839 --> 00:58:32,559
+Now, >> one thing you should know as a product manager is a lot of people go straight to this like agreement.
+
+830
+00:58:32,559 --> 00:58:40,880
+They say, "Okay, my judge agrees with the human at some percentage of the time."
+
+831
+00:58:40,880 --> 00:58:52,079
+Now, that sounds appealing, but it's a very dangerous metric to use because a lot of times errors have um you know,
+
+832
+00:58:52,079 --> 00:58:56,319
+they only happen on the on the long tail and they don't happen as frequently.
+
+833
+00:58:56,319 --> 00:59:03,520
+So, like if you only have the error 10% of the time, then you can easily have 90% agreement
+
+834
+00:59:03,520 --> 00:59:10,240
+by just having a judge say, uh, it passes all the time.
+
+835
+00:59:10,240 --> 00:59:10,880
+Does that make sense?
+
+836
+00:59:10,880 --> 00:59:15,680
+So like 90% agreement might look good on paper but it might be misleading >> and that's rare.
+
+837
+00:59:15,680 --> 00:59:16,400
+It's a rare.
+
+838
+00:59:16,400 --> 00:59:17,359
+>> Yeah.
+
+839
+00:59:17,359 --> 00:59:27,359
+>> So you know as a product manager or someone even if you're not doing this calculation yourself if someone ever reports to you agreement you should
+
+840
+00:59:27,359 --> 00:59:33,440
+immediately ask okay tell me more like you need you know you know need to look into it to give you more intuition.
+
+841
+00:59:33,440 --> 00:59:39,520
+Here is like a matrix okay of this specific judge in the Google sheet.
+
+842
+00:59:39,520 --> 00:59:48,960
+And this is again a pivot table just keeping it dumb and simple is okay on on the uh rows I have what did the human think what did I
+
+843
+00:59:48,960 --> 01:00:00,079
+think did it have an error true or false and then did my judge have an error true or false >> the intuition here is exactly what Hamill said right you need to look at
+
+844
+01:00:00,079 --> 01:00:09,599
+each type of error so when the human said false but the judge said true or vice versa so those non-green diagonal
+
+845
+01:00:09,599 --> 01:00:19,680
+here and if they're too large then go iterate on your prompt make it more clear to the LLM judge so that you can reduce that misalignment you want to get
+
+846
+01:00:19,680 --> 01:00:31,280
+to a point where most you're going to have some misalignment that's okay we talk about in our course also how to code correct that misalignment but in this stage if you're a product manager
+
+847
+01:00:31,280 --> 01:00:41,359
+and the person who's building the LLM judge eval has not done this they're saying like oh it agrees these 75% of the time we're good.
+
+848
+01:00:41,359 --> 01:00:48,400
+They don't like have this matrix and they haven't iterated to make sure that these two types of errors have gone down to zero,
+
+849
+01:00:48,400 --> 01:00:49,839
+then it's a bad smell.
+
+850
+01:00:49,839 --> 01:00:52,000
+Go and ask them to go fix that.
+
+851
+01:00:52,000 --> 01:00:52,480
+>> Awesome.
+
+852
+01:00:52,480 --> 01:00:56,240
+That's a really good tip is is what to look for when someone's doing this wrong.
+
+853
+01:00:56,240 --> 01:00:56,880
+>> Yeah.
+
+854
+01:00:56,880 --> 01:01:00,559
+>> Actually, could you take us back to the LLM as judge prompt?
+
+855
+01:01:00,559 --> 01:01:03,760
+I just want to highlight something really interesting here.
+
+856
+01:01:03,760 --> 01:01:08,160
+I've had some guests on the podcast recently who've been saying eval are the new PRDS.
+
+857
+01:01:08,160 --> 01:01:10,960
+And if you look at this, this is exactly what this is.
+
+858
+01:01:10,960 --> 01:01:14,079
+Like product managers, product teams, right?
+
+859
+01:01:14,079 --> 01:01:15,200
+Here's what the product should be.
+
+860
+01:01:15,200 --> 01:01:16,160
+Here's all the requirements.
+
+861
+01:01:16,160 --> 01:01:17,680
+Here's like the how it should work.
+
+862
+01:01:17,680 --> 01:01:18,400
+They built the thing.
+
+863
+01:01:18,400 --> 01:01:20,400
+And then they test it manually often.
+
+864
+01:01:20,400 --> 01:01:23,680
+What's cool about this is this is exactly that same thing.
+
+865
+01:01:23,680 --> 01:01:24,799
+And it's running constantly.
+
+866
+01:01:24,799 --> 01:01:28,799
+It's telling you here's how this agent should respond in very specific ways.
+
+867
+01:01:28,799 --> 01:01:30,160
+If it's this, this, this is, do that.
+
+868
+01:01:30,160 --> 01:01:31,520
+If it's this, this is that, do that.
+
+869
+01:01:31,520 --> 01:01:34,559
+And so it's exactly what I've been hearing again and again.
+
+870
+01:01:34,559 --> 01:01:35,760
+You could see right here.
+
+871
+01:01:35,760 --> 01:01:45,680
+This is like the purest sense of what a product requirements document should be is this eval judge that's telling you exactly what it should be and it's automatic and running constantly.
+
+872
+01:01:45,680 --> 01:01:46,799
+>> Yeah, absolutely.
+
+873
+01:01:46,799 --> 01:01:49,040
+And it's kind of derived from our own data.
+
+874
+01:01:49,040 --> 01:01:51,440
+So of course it's a product manager's expectations.
+
+875
+01:01:51,440 --> 01:01:57,760
+What I find a lot of people miss is they just put in what their expectations are before looking at their data.
+
+876
+01:01:57,760 --> 01:02:03,040
+But as we look at our data, we uncover more expectations that we couldn't have dreamed up in the first place.
+
+877
+01:02:03,040 --> 01:02:05,520
+And that ends up going into this prompt.
+
+878
+01:02:05,520 --> 01:02:06,480
+So that is interesting.
+
+879
+01:02:06,480 --> 01:02:14,720
+So it's not so your advice is not skip straight to evals and LLM as judge prompts before you build the product.
+
+880
+01:02:14,720 --> 01:02:19,599
+Still write traditional one pagers P prds to tell your team what we're doing, why we're doing it,
+
+881
+01:02:19,599 --> 01:02:27,839
+what success looks like, but then at the end you could probably pull from that and even improve that original PRD if you're evolving the product uh using this process.
+
+882
+01:02:27,839 --> 01:02:30,720
+>> I would go even further to say you're going to improve.
+
+883
+01:02:30,720 --> 01:02:31,920
+It's going to change.
+
+884
+01:02:31,920 --> 01:02:39,520
+You're never going to know what the failure modes are going to be upfront and you're always going to uncover new,
+
+885
+01:02:39,520 --> 01:02:43,599
+you know, vibes that you think that your product should have, right?
+
+886
+01:02:43,599 --> 01:02:47,040
+You don't really know what you want until you see it with these LLMs.
+
+887
+01:02:47,040 --> 01:02:55,040
+So, you've got, you got to be kind of flexible, have to look at your data, have to PRDs are a great abstraction for thinking about this,
+
+888
+01:02:55,040 --> 01:02:56,720
+but it's not the end all be all.
+
+889
+01:02:56,720 --> 01:02:58,640
+It's going to change.
+
+890
+01:02:58,640 --> 01:02:59,359
+>> I love that.
+
+891
+01:02:59,359 --> 01:03:01,920
+And Haml's pulling up some cool research report.
+
+892
+01:03:01,920 --> 01:03:03,440
+What's this about?
+
+893
+01:03:03,440 --> 01:03:09,839
+>> Oh, this is one of the coolest research reports you can possibly read if you want to know about evals.
+
+894
+01:03:09,839 --> 01:03:12,960
+So, it was authored by someone named Shrea Shankar.
+
+895
+01:03:12,960 --> 01:03:15,520
+>> Oh my god.
+
+896
+01:03:15,520 --> 01:03:19,920
+>> And her collaborators and so it's called who validates the validator.
+
+897
+01:03:19,920 --> 01:03:22,400
+>> That is the best name for a research I've ever heard.
+
+898
+01:03:22,400 --> 01:03:22,880
+That's so good.
+
+899
+01:03:22,880 --> 01:03:23,760
+>> Thank you.
+
+900
+01:03:23,760 --> 01:03:26,319
+>> So I I should let Treya talk about this.
+
+901
+01:03:26,319 --> 01:03:32,960
+I think the one of the most important things to pay attention in this paper are the criteria drift.
+
+902
+01:03:32,960 --> 01:03:33,280
+>> Yeah.
+
+903
+01:03:33,280 --> 01:03:34,880
+>> And what she found.
+
+904
+01:03:34,880 --> 01:03:43,520
+>> So we did this super fun study when we were kind of doing user studies with people who were trying to write LLM
+
+905
+01:03:43,520 --> 01:03:48,720
+judges or just validate their own LLM outputs.
+
+906
+01:03:48,720 --> 01:03:55,359
+And we were this was I think this was before evals was like extremely popular I feel like on the internet.
+
+907
+01:03:55,359 --> 01:03:59,359
+This was we did this project like late 2023 was when we started it.
+
+908
+01:03:59,359 --> 01:04:04,480
+But then the thing that really was burning in my mind as a researcher is like why is this problem so hard?
+
+909
+01:04:04,480 --> 01:04:08,319
+We've been having machine learning and AI for so long.
+
+910
+01:04:08,319 --> 01:04:09,440
+It's not new.
+
+911
+01:04:09,440 --> 01:04:13,119
+But suddenly this time around everything is really difficult.
+
+912
+01:04:13,119 --> 01:04:23,680
+So we just did this user study with a bunch of developers and we realized okay what's new here is that you can't figure out your rubrics up front.
+
+913
+01:04:23,680 --> 01:04:28,400
+People's opinions of good and bad change as they review more outputs.
+
+914
+01:04:28,400 --> 01:04:34,240
+They think of failure modes only after seeing 10 outputs they would never have dreamed of in the first place.
+
+915
+01:04:34,240 --> 01:04:35,599
+And these are experts, right?
+
+916
+01:04:35,599 --> 01:04:44,240
+These are people who have built many LLM pipelines and now agents before and just you can't ever dream up everything in the first place.
+
+917
+01:04:44,240 --> 01:04:50,160
+Um, and I think that's so key in today's world of AI development.
+
+918
+01:04:50,160 --> 01:04:51,440
+>> Okay, that is a really good point.
+
+919
+01:04:51,440 --> 01:04:58,240
+It's very much reinforcing what we were just talking about and that's why H will pull this up is just okay >> behind it.
+
+920
+01:04:58,240 --> 01:04:58,480
+>> Yeah.
+
+921
+01:04:58,480 --> 01:04:59,119
+Okay, great.
+
+922
+01:04:59,119 --> 01:05:06,160
+You still got to do product the same way, but now you have this really powerful tool that make helps you make sure what you've built is correct.
+
+923
+01:05:06,160 --> 01:05:08,400
+Uh it's not going to replace the PR process.
+
+924
+01:05:08,400 --> 01:05:09,280
+>> Cool.
+
+925
+01:05:09,280 --> 01:05:10,799
+>> How many evals of these?
+
+926
+01:05:10,799 --> 01:05:22,640
+How many say I don't know Lanas judge prompts do you end up with usually say I don't know like I know obviously depends complexity of the product but what's like a number in your experience >> for me like between four and seven
+
+927
+01:05:22,640 --> 01:05:34,319
+>> oh that's it >> it's not that many because a lot of the failure modes as Haml said earlier can be fixed by just fixing your prompt you just didn't think to put it in your prompts and now you put it in your you shouldn't do an eval like this for
+
+928
+01:05:34,319 --> 01:05:41,200
+everything just the the pesky ones that um you've described your ideal behavior in your agent prompt,
+
+929
+01:05:41,200 --> 01:05:43,039
+but it's still failing.
+
+930
+01:05:43,039 --> 01:05:43,440
+>> Got it.
+
+931
+01:05:43,440 --> 01:05:45,520
+So, say you found a problem, you fixed it.
+
+932
+01:05:45,520 --> 01:05:49,760
+In traditional software development, you'd write a unit test to make sure it doesn't happen again.
+
+933
+01:05:49,760 --> 01:05:54,400
+Is your insight here is don't even bother writing an eval around that if it's just gone.
+
+934
+01:05:54,400 --> 01:05:59,359
+>> I think you can if you want to, but the whole game here is about prioritizing.
+
+935
+01:05:59,359 --> 01:06:01,920
+You have finite resources and finite time.
+
+936
+01:06:01,920 --> 01:06:03,680
+You can't write an eval for everything.
+
+937
+01:06:03,680 --> 01:06:14,319
+So prioritize the ones that are the more pesky areas >> and probably the ones that are most risky to your business if they say something like Mecca Hitler Grock and
+
+938
+01:06:14,319 --> 01:06:26,000
+>> cool okay so that's that's very uh relieving that this because this is this prompt is like a lot of work to really think through all these details >> but it's a lot of one-time cost right now forever you can run this on your
+
+939
+01:06:26,000 --> 01:06:37,359
+application >> right and I want to say okay data analysis is super powerful is going to drive lots of improvements very quickly to your
+
+940
+01:06:37,359 --> 01:06:37,839
+application.
+
+941
+01:06:37,839 --> 01:06:43,039
+We showed the most basic kind of data analysis which is counting which is accessible to everyone.
+
+942
+01:06:43,039 --> 01:06:48,319
+You can get you know more sophisticated with the data analysis.
+
+943
+01:06:48,319 --> 01:06:52,640
+There's lots of different ways to sample look at data.
+
+944
+01:06:52,640 --> 01:07:00,400
+We kind of made it look easy in a sense, but there's a lot of skills here to do to it well.
+
+945
+01:07:00,400 --> 01:07:06,079
+Um, you know, building an intuition and a nose for how to sort through this data.
+
+946
+01:07:06,079 --> 01:07:12,400
+For example, let's say I find conversational issues, this like conversational flow issues.
+
+947
+01:07:12,400 --> 01:07:23,920
+Maybe if I was trying to chase down this problem further, I would think about ways to find other conversational flows flow issues that I didn't code.
+
+948
+01:07:23,920 --> 01:07:27,760
+You know, I would maybe dig through the data in several ways.
+
+949
+01:07:27,760 --> 01:07:31,520
+Um, and there's, you know, different ways to go about this.
+
+950
+01:07:31,520 --> 01:07:41,520
+It kind of it's very similar, if not almost exactly similar as kind of traditional analytics techniques that you would do on any product.
+
+951
+01:07:41,520 --> 01:07:47,920
+give us just a quick sense of what comes next and then let's talk about the debate around eval.
+
+952
+01:07:47,920 --> 01:07:51,680
+>> So what comes next after you've built your LLM judge?
+
+953
+01:07:51,680 --> 01:07:55,119
+Well, we find that people just try to use that everywhere they can.
+
+954
+01:07:55,119 --> 01:08:03,119
+So they will put the LLM judge in unit tests as you and they will know like oh here are some example traces where we saw that failure because we labeled it.
+
+955
+01:08:03,119 --> 01:08:10,160
+Now we're going to make those part of unit tests and make sure that every time we push a change to our code these tests are going to pass.
+
+956
+01:08:10,160 --> 01:08:12,400
+They also use it for online monitoring.
+
+957
+01:08:12,400 --> 01:08:16,000
+People are making dashboards on this and I think that's incredible.
+
+958
+01:08:16,000 --> 01:08:23,040
+I think like the products that are doing this, right, they have a very sharp sense of how well their application is performing.
+
+959
+01:08:23,040 --> 01:08:26,960
+Um, and people don't talk about it because this is their moat, right?
+
+960
+01:08:26,960 --> 01:08:30,960
+So people are not going to go and share all of these things because makes sense, right?
+
+961
+01:08:30,960 --> 01:08:35,040
+If you are an email writing assistant and you're doing this and you're doing it well,
+
+962
+01:08:35,040 --> 01:08:40,960
+you don't want somebody else to go and build an email writing assistant and then kind of get you out of business.
+
+963
+01:08:40,960 --> 01:08:49,199
+So, I really want to stress the point that it's like try to use these artifacts that you're building wherever possible online repeatedly.
+
+964
+01:08:49,199 --> 01:08:51,920
+Um, use them to drive improvements to your product.
+
+965
+01:08:51,920 --> 01:09:01,600
+Often times Haml and I will kind of will tell people how to do this up to this very point and it clicks for people and then they like never come back again.
+
+966
+01:09:01,600 --> 01:09:10,000
+So either they have I don't know quit their jobs, they're not doing AI development anymore or they know what to do from here on out.
+
+967
+01:09:10,000 --> 01:09:15,359
+Um I think it's the latter but um I think it's very powerful.
+
+968
+01:09:15,359 --> 01:09:21,600
+Like just watching you do this really opened my eyes to what this is and how systematic the process is.
+
+969
+01:09:21,600 --> 01:09:26,799
+I always imagine you just sit on a computer, okay, what are the things I need to make sure work correctly.
+
+970
+01:09:26,799 --> 01:09:33,279
+And what you're showing us here is here's it's a very simple step by step >> based on real things that are happening in your product.
+
+971
+01:09:33,279 --> 01:09:38,799
+How to catch them, identify them, prioritize them, and then >> absolutely >> catch them if they happen again and fix them.
+
+972
+01:09:38,799 --> 01:09:40,319
+>> Yeah, it's it's not magic.
+
+973
+01:09:40,319 --> 01:09:41,520
+Like anyone can do this.
+
+974
+01:09:41,520 --> 01:09:47,600
+you're going to have to practice the skill like any new skill you have to practice but you can do it.
+
+975
+01:09:47,600 --> 01:09:57,760
+Um and I think what's very empowering now is that product managers are doing this and can do this and can really build very very profitable products with this skill set.
+
+976
+01:09:57,760 --> 01:10:03,840
+>> Okay, great segue to a debate that we kind of got pulled into that was happening on on X the other day.
+
+977
+01:10:03,840 --> 01:10:08,239
+Uh I did not realize how much controversy and drama there is around eval.
+
+978
+01:10:08,239 --> 01:10:10,719
+There's a lot of people with very strong opinions.
+
+979
+01:10:10,719 --> 01:10:19,840
+uh Sabat Shrea give us just a sense of the two sides of the debate around the importance and value of Ebells and then give us your perspective.
+
+980
+01:10:19,840 --> 01:10:20,480
+>> Yeah.
+
+981
+01:10:20,480 --> 01:10:26,480
+So all right I'll be a little bit placating and I say I think everyone is on the same side.
+
+982
+01:10:26,480 --> 01:10:32,800
+I think the misconception is that people have very rigid definitions of what eval is.
+
+983
+01:10:32,800 --> 01:10:43,600
+For example, they might think that eval is just unit tests or they might think that eval is just the data analysis part and no online monitoring or any no
+
+984
+01:10:43,600 --> 01:10:50,080
+monitoring of product specific metrics like actually number of chats engaged in or whatnot.
+
+985
+01:10:50,080 --> 01:10:53,600
+Um so I think everyone has a different mindset of evals going in.
+
+986
+01:10:53,600 --> 01:10:58,320
+And the other thing I will say is that people have been burned by evals in the past.
+
+987
+01:10:58,320 --> 01:11:00,719
+So I think people have done evals badly.
+
+988
+01:11:00,719 --> 01:11:07,679
+One concrete example of this is they've tried to do an LLM judge, but it has not aligned with their expectations.
+
+989
+01:11:07,679 --> 01:11:11,760
+They only uncovered this later on and then they didn't trust it anymore.
+
+990
+01:11:11,760 --> 01:11:14,239
+And then they're like, "Oh, I'm anti-EVOS."
+
+991
+01:11:14,239 --> 01:11:20,960
+And I 100% empathize with that because, you know, you should be anti- liker scale LLM judge.
+
+992
+01:11:20,960 --> 01:11:22,480
+I absolutely agree with you.
+
+993
+01:11:22,480 --> 01:11:24,159
+We are anti- that as well.
+
+994
+01:11:24,159 --> 01:11:27,120
+So, a lot of the misconception stems from two things, right?
+
+995
+01:11:27,120 --> 01:11:36,719
+like people having a narrow definition of evals and then people not doing it well and then getting burned and then wanting to avoid other people making that mistake and
+
+996
+01:11:36,719 --> 01:11:46,560
+then unfortunately X or Twitter is like a medium where you know people are misinterpreting what everybody is saying all the time and you just get all these
+
+997
+01:11:46,560 --> 01:11:57,679
+strong opinions of like don't do eval it's bad we tried it it doesn't work we're clawed code or you know whatever other famous product and we don't do
+
+998
+01:11:57,679 --> 01:12:08,960
+evals and there's just so much nuance behind all of it because because a lot of these applications are standing on the shoulders of evals coding agents is a great example of that claude code
+
+999
+01:12:08,960 --> 01:12:20,400
+right they are standing on the shoulders of claude base model not base but the the fine-tuned claude models have been evaluated on many coding benchmarks
+
+1000
+01:12:20,400 --> 01:12:31,679
+can't can't argue against that >> and just to double just to make clear exactly what you're talking about where one of the heads I think maybe the head engineer of cloud code went on a podcast and he's like oh we don't do evals we
+
+1001
+01:12:31,679 --> 01:12:42,800
+just vibe we just look at vibes and vibes meaning they just use it and feel if it's right or wrong >> and I think that kind of works so there's two things to that right one is they're standing on the shoulders of the
+
+1002
+01:12:42,800 --> 01:12:52,640
+evals that their colleagues are doing for coding >> of the cloud foundational model >> absolutely right we know that they report those numbers because we see the benchmarks we know who's doing well on
+
+1003
+01:12:52,640 --> 01:12:59,120
+those other thing is they are actually probably very systematic about the error analysis to some extent.
+
+1004
+01:12:59,120 --> 01:13:05,280
+I bet you that they are monitoring who is using Claude, how many people are using Claude,
+
+1005
+01:13:05,280 --> 01:13:08,640
+how many chats are being created, how long these chats are.
+
+1006
+01:13:08,640 --> 01:13:11,840
+They're also probably monitoring in their internal team.
+
+1007
+01:13:11,840 --> 01:13:13,120
+They're dog fooding.
+
+1008
+01:13:13,120 --> 01:13:22,400
+Anytime something is off, they maybe have a queue or they send it to the person developing claude code and this person is implicitly doing some form of hair error analysis that
+
+1009
+01:13:22,400 --> 01:13:24,080
+Hamill talked about.
+
+1010
+01:13:24,080 --> 01:13:35,120
+All of this is eval right there's no world in which they are just being like I made cloud code I'm never looking at anything um and unfortunately right when you don't think
+
+1011
+01:13:35,120 --> 01:13:46,960
+about that or talk about that I think that the community most of the community is beginners right or people who don't know about evals and want to learn about it um and it sends the wrong message there now I don't know what cloud code
+
+1012
+01:13:46,960 --> 01:13:58,800
+is doing obviously um but I would be willing to bet money that they're doing something in the form of evals >> we'll also say that coding agents are fundamentally very different than other
+
+1013
+01:13:58,800 --> 01:14:04,480
+AI products because the developer is the domain expert.
+
+1014
+01:14:04,480 --> 01:14:10,960
+So you can short circuit a lot of things and also the developer is using it all day long.
+
+1015
+01:14:10,960 --> 01:14:18,960
+So there's a type of dog fooding and type of do domain expertise that is you know you can collapse the activities.
+
+1016
+01:14:18,960 --> 01:14:21,600
+You don't need as much data.
+
+1017
+01:14:21,600 --> 01:14:33,040
+you don't need as much feedback or exploration because you know so your eval process you know should look different >> because you're seeing the code like you
+
+1018
+01:14:33,040 --> 01:14:42,400
+see the code it's generating you can tell this is great this is terrible >> yeah yeah and so and so I think a lot of people had generalized coding agents because coding agents are the first AI
+
+1019
+01:14:42,400 --> 01:14:51,679
+product released into the wild and I think it's a mistake to try to generalize that at charge.
+
+1020
+01:14:51,679 --> 01:14:56,800
+>> The other thing is yeah, engineers have a dog fooding personality.
+
+1021
+01:14:56,800 --> 01:15:06,960
+There are plenty of applications where people are trying to build AI in certain domains and and they don't have a dog fooding for like doctors for example are not out there trying to get all the most
+
+1022
+01:15:06,960 --> 01:15:12,080
+incorrect advice from AI and be tolerant and receptive to that.
+
+1023
+01:15:12,080 --> 01:15:15,840
+So it's very important to keep I think these nuance things in mind.
+
+1024
+01:15:15,840 --> 01:15:25,280
+So what I'm hearing from you Shre is interestingly is that if you if humans on the team are doing very close uh data analysis,
+
+1025
+01:15:25,280 --> 01:15:34,080
+error analysis, dog fooding you like crazy and essentially they are the human evals and you're describing that as that's within the umbrella of eval.
+
+1026
+01:15:34,080 --> 01:15:40,880
+So you could do it that way if you're very if you have time and motivation to do that or you could set these things up to be automatic.
+
+1027
+01:15:40,880 --> 01:15:42,000
+>> Absolutely.
+
+1028
+01:15:42,000 --> 01:15:43,679
+And it's also about the skills, right?
+
+1029
+01:15:43,679 --> 01:15:48,719
+people who work at Anthropic are very very highly skilled.
+
+1030
+01:15:48,719 --> 01:15:55,040
+Um they've been trained in data analysis or software engineering or AI and whatnot, right?
+
+1031
+01:15:55,040 --> 01:15:56,880
+>> And you know, you can get there.
+
+1032
+01:15:56,880 --> 01:16:03,040
+Anyone can get there of course by like learning the concepts, but >> most people don't have that skill right now.
+
+1033
+01:16:03,040 --> 01:16:09,280
+>> Do fooding is is a dangerous one only because a lot of people will say they're dog fooding.
+
+1034
+01:16:09,280 --> 01:16:11,199
+They're like, "Yeah, we dog fooded."
+
+1035
+01:16:11,199 --> 01:16:13,520
+But are they really?
+
+1036
+01:16:13,520 --> 01:16:22,800
+And a lot of people aren't really dog fooding it at that visceral level that you would need to to have to close that feedback loop.
+
+1037
+01:16:22,800 --> 01:16:24,640
+So that's the only caveat I would add.
+
+1038
+01:16:24,640 --> 01:16:29,280
+There's also this kind of feels like straw man argument of eval versus AB tests.
+
+1039
+01:16:29,280 --> 01:16:37,520
+>> Talk about your thoughts there because that feels like a big part of this debate people are having like do you need eval if you have AB tests that are testing production level metrics.
+
+1040
+01:16:37,520 --> 01:16:48,080
+So AB tests are again another form of eval I imagine right like when you're doing an AB test right you have two different experimental conditions and then you have a metric that quantifies the
+
+1041
+01:16:48,080 --> 01:16:58,320
+success of something and you're comparing the metric and again right an eval in our mind is systematic measurement of quality some metric um
+
+1042
+01:16:58,320 --> 01:17:07,199
+you can't really do an AV test without the eval to compare um >> so maybe maybe we just have a different weird take on it Yeah.
+
+1043
+01:17:07,199 --> 01:17:07,440
+Okay.
+
+1044
+01:17:07,440 --> 01:17:11,440
+So, what I'm hearing is like you consider AB test as part of the suite of evals that you do.
+
+1045
+01:17:11,440 --> 01:17:15,760
+I think when people think AB test, it's like we're changing something in the product.
+
+1046
+01:17:15,760 --> 01:17:19,120
+We're going to see if this improves some metric we care about.
+
+1047
+01:17:19,120 --> 01:17:20,800
+Is that is that enough?
+
+1048
+01:17:20,800 --> 01:17:22,400
+Why do we need to test every little feature?
+
+1049
+01:17:22,400 --> 01:17:27,840
+Like if it's impacting a metric we care about as a business, we have a bunch of AB tests that are just constantly running.
+
+1050
+01:17:27,840 --> 01:17:29,679
+>> This is now a great point.
+
+1051
+01:17:29,679 --> 01:17:38,080
+Um, so I think a lot of people prematurely do AB tests because you know they've never done any error analysis in the first place.
+
+1052
+01:17:38,080 --> 01:17:45,760
+They just have hypothetically come up with their product requirements and they like believe that you know we should test these things.
+
+1053
+01:17:45,760 --> 01:17:53,280
+Um, but it turns out right when you get into the data as Haml showed that like the errors that you're seeing are like not what you thought the errors might be.
+
+1054
+01:17:53,280 --> 01:17:58,880
+They were these like weird handoff issues or like I don't know like the text message thing was strange.
+
+1055
+01:17:58,880 --> 01:18:06,159
+Um, so I would say that like if you're going to do AB tests and they are powered by actual error analysis as we've shown today,
+
+1056
+01:18:06,159 --> 01:18:07,120
+then that's great.
+
+1057
+01:18:07,120 --> 01:18:08,080
+Go do it.
+
+1058
+01:18:08,080 --> 01:18:18,880
+Um, but if you're just going to do them, which we find that people try to do, just want to do them based on like what you hypothetically think is why is important,
+
+1059
+01:18:18,880 --> 01:18:23,280
+then I would encourage people to go and like rethink that and kind of ground your hypothesis.
+
+1060
+01:18:23,280 --> 01:18:26,320
+>> Do you have thoughts on what stats sig going to do at OpenAI?
+
+1061
+01:18:26,320 --> 01:18:27,440
+Is there anything there that's interesting?
+
+1062
+01:18:27,440 --> 01:18:37,760
+I'm just like that was a big deal a huge acquisition AB test company people are like oh AB test the future uh thoughts you know just to add to the previous question a
+
+1063
+01:18:37,760 --> 01:18:49,679
+little bit is why is there this debate AB testing versus evals I think fundamentally eval is people are trying to wrap their head
+
+1064
+01:18:49,679 --> 01:18:59,760
+around what how to improve their applications and fundamentally um you need to do data science you data science is useful in
+
+1065
+01:18:59,760 --> 01:19:10,239
+products like looking at data doing data analytics there's many different suite of tools and um you don't need to invent anything new sure you don't need like necessarily the whole breath of data
+
+1066
+01:19:10,239 --> 01:19:20,400
+science and it looks slightly different just slightly with LLMs um you know you might your tactics might be different and so really what it is is
+
+1067
+01:19:20,400 --> 01:19:31,840
+like using analytic tools uh to understand your product Now people say the word eval is trying to kind of like carve out this new thing and saying oh
+
+1068
+01:19:31,840 --> 01:19:41,440
+eval and in AB testing but if you zoom out it's it's the same data science as before and I think that's what's causing the confusion is hey we need data
+
+1069
+01:19:41,440 --> 01:19:49,600
+science thinking and AI product just you know is helpful to have that thinking in AI products like it is in any product uh is my take on that.
+
+1070
+01:19:49,600 --> 01:19:50,880
+So yeah, that's a really good take.
+
+1071
+01:19:50,880 --> 01:19:53,360
+Like I think just the word eval triggers people now.
+
+1072
+01:19:53,360 --> 01:20:01,360
+>> And if you just call it we're just doing air analysis using doing data science to understand where our problem break our product breaks and just setting up tests to make sure we know >> that's boring.
+
+1073
+01:20:01,360 --> 01:20:03,360
+It sounds boring.
+
+1074
+01:20:03,360 --> 01:20:03,840
+>> No, no, no.
+
+1075
+01:20:03,840 --> 01:20:09,520
+We need a mysterious term like evals to to really get the momentum going.
+
+1076
+01:20:09,520 --> 01:20:11,040
+Your question about stats.
+
+1077
+01:20:11,040 --> 01:20:13,360
+Um I think it's very exciting to be honest.
+
+1078
+01:20:13,360 --> 01:20:23,600
+I don't know much about it because, you know, I just imagine that they're this company that many there's a tool that many people use and maybe it just so happened that OpenAI acquired them.
+
+1079
+01:20:23,600 --> 01:20:25,520
+I'm sure they've been using them in the past.
+
+1080
+01:20:25,520 --> 01:20:30,159
+Um, I'm sure OpenAI's competitors >> are using Stat Sig as well.
+
+1081
+01:20:30,159 --> 01:20:33,360
+>> So maybe there is something strategic in that acquisition.
+
+1082
+01:20:33,360 --> 01:20:34,080
+I have no idea.
+
+1083
+01:20:34,080 --> 01:20:35,360
+I don't know anything there.
+
+1084
+01:20:35,360 --> 01:20:43,520
+But I think those are really the bigger questions for me than you know is this fundamentally changing AV testing or making evals more of a priority.
+
+1085
+01:20:43,520 --> 01:20:45,679
+I I think they've always been a priority.
+
+1086
+01:20:45,679 --> 01:20:56,000
+I think Open AAI has always been doing some form of them and OpenAI has gone so far like historically speaking as to like go and look at all the Twitter
+
+1087
+01:20:56,000 --> 01:21:02,000
+sentiment and try to do some sort of retrospective on that and then tie that back to their products.
+
+1088
+01:21:02,000 --> 01:21:06,800
+Like they're certainly they're doing some amount of evals before they ship their new foundation models,
+
+1089
+01:21:06,800 --> 01:21:11,040
+but they're going so much beyond and being like, "Okay, let's find all the tweets that are complaining about it,
+
+1090
+01:21:11,040 --> 01:21:15,520
+all the Reddit threads that are complaining about it that go try to like figure out what's going on."
+
+1091
+01:21:15,520 --> 01:21:18,719
+So, it goes to show that like eval are very, very important.
+
+1092
+01:21:18,719 --> 01:21:20,960
+No one has really figured it out yet.
+
+1093
+01:21:20,960 --> 01:21:26,159
+People are using all the available sources signal that they can to improve their products.
+
+1094
+01:21:26,159 --> 01:21:34,640
+What I will say is I'm really hopeful that it might shift the our creative focus within OpenAI.
+
+1095
+01:21:34,640 --> 01:21:43,920
+Hopefully up until now a lot of the big labs understandably focused on general benchmarks like MMLU score,
+
+1096
+01:21:43,920 --> 01:21:54,239
+human eval which are very important for foundation models and you know those not very related to product specific evals like the ones we talked
+
+1097
+01:21:54,239 --> 01:22:00,159
+about today but like handoff and stuff like that like those you know they tend not to correlate.
+
+1098
+01:22:00,159 --> 01:22:02,560
+>> Yeah, they don't correlate with math problem solving.
+
+1099
+01:22:02,560 --> 01:22:05,840
+Sorry to say.
+
+1100
+01:22:05,840 --> 01:22:06,320
+Exactly.
+
+1101
+01:22:06,320 --> 01:22:17,360
+And so um you know if you look at the eval products let's say the ones up until recently that some of the big labs have they don't have error
+
+1102
+01:22:17,360 --> 01:22:18,159
+analysis.
+
+1103
+01:22:18,159 --> 01:22:26,320
+They have gener a suite of generic tools cosign similarity hallucination score whatever and that doesn't work.
+
+1104
+01:22:26,320 --> 01:22:27,760
+It's a good first stab at it.
+
+1105
+01:22:27,760 --> 01:22:29,040
+It's okay.
+
+1106
+01:22:29,040 --> 01:22:32,639
+you know, at least you're doing something getting people maybe it's like getting people to look at data,
+
+1107
+01:22:32,639 --> 01:22:43,199
+but uh eventually what we hope to see is okay some a bit more data science thinking in this like eval process.
+
+1108
+01:22:43,199 --> 01:22:51,520
+Hopefully the tools we'll get to >> Haml and I should not be the only two people on the planet that are promoting like a structured way of thinking about application specific evals.
+
+1109
+01:22:51,520 --> 01:22:52,960
+>> It's like mindboggling to me.
+
+1110
+01:22:52,960 --> 01:22:55,280
+Why are we the only two people doing this?
+
+1111
+01:22:55,280 --> 01:22:58,400
+The whole world, what's wrong?
+
+1112
+01:22:58,400 --> 01:23:03,440
+Um, so I hope that, you know, we're not the only people and that more people catch on.
+
+1113
+01:23:03,440 --> 01:23:07,520
+>> Well, the fact that your course on Maven is the number one highest grossing course on Maven,
+
+1114
+01:23:07,520 --> 01:23:12,480
+clearly there's demand and interest and there's more people I think on your side.
+
+1115
+01:23:12,480 --> 01:23:17,920
+Interestingly, uh, just an example you've been sharing on Twitter that was I think is informative.
+
+1116
+01:23:17,920 --> 01:23:21,120
+Everyone's been saying how Cloud Code doesn't care about eval.
+
+1117
+01:23:21,120 --> 01:23:25,040
+They're all about vibes and everyone's like what and they're the best coding agent out there.
+
+1118
+01:23:25,040 --> 01:23:26,639
+So clearly this is right.
+
+1119
+01:23:26,639 --> 01:23:33,600
+More recently, there's all this talk about codecs, open AI codecs being better and everyone's switching and they're so pro eels.
+
+1120
+01:23:33,600 --> 01:23:34,239
+>> I know.
+
+1121
+01:23:34,239 --> 01:23:34,880
+>> What?
+
+1122
+01:23:34,880 --> 01:23:35,600
+Yeah.
+
+1123
+01:23:35,600 --> 01:23:37,840
+So, >> gets me every time.
+
+1124
+01:23:37,840 --> 01:23:40,400
+The internet's so inconsistent.
+
+1125
+01:23:40,400 --> 01:23:49,120
+My favorite thing was um like yesterday, I believe like a couple of lab mates and I were out getting like dessert or something and somebody said like,
+
+1126
+01:23:49,120 --> 01:23:52,960
+"Oh, um do you like Codex or Claude better or whatever?"
+
+1127
+01:23:52,960 --> 01:23:56,159
+And the other person said,"Oh, I like Claude."
+
+1128
+01:23:56,159 --> 01:23:59,840
+And then someone else said, "But the new version of Codeex is better."
+
+1129
+01:23:59,840 --> 01:24:07,600
+And then the first person said, "Oh, but the last I checked was two days ago, so maybe my the thoughts maybe I'm not up to date."
+
+1130
+01:24:07,600 --> 01:24:10,080
+And I was like, "Oh my god, >> so true.
+
+1131
+01:24:10,080 --> 01:24:11,679
+>> This is the world we live in."
+
+1132
+01:24:11,679 --> 01:24:13,199
+Oh my god.
+
+1133
+01:24:13,199 --> 01:24:13,679
+>> Okay.
+
+1134
+01:24:13,679 --> 01:24:20,159
+So, I want to ask about just top misconceptions people have with Evals and top tips and tricks for being successful.
+
+1135
+01:24:20,159 --> 01:24:22,719
+So, maybe just share one or two each of each.
+
+1136
+01:24:22,719 --> 01:24:27,120
+So let me just start with misconceptions and maybe I'll go to the Hamill first.
+
+1137
+01:24:27,120 --> 01:24:31,199
+Just what are a couple of the most common misconceptions people have with Eval still.
+
+1138
+01:24:31,199 --> 01:24:38,080
+The top one is hey I can just buy a tool plug it in and it'll do the eval for you.
+
+1139
+01:24:38,080 --> 01:24:40,800
+Why do I have to worry about this?
+
+1140
+01:24:40,800 --> 01:24:42,320
+We live in the age of AI.
+
+1141
+01:24:42,320 --> 01:24:44,800
+Can't the AI just eval it?
+
+1142
+01:24:44,800 --> 01:24:47,199
+That's the most common misconception.
+
+1143
+01:24:47,199 --> 01:24:54,400
+And people want that so much that people do sell it, but it doesn't work.
+
+1144
+01:24:54,400 --> 01:24:55,840
+So that's the first one.
+
+1145
+01:24:55,840 --> 01:24:57,520
+Shoot, we need humans still.
+
+1146
+01:24:57,520 --> 01:24:57,760
+Great.
+
+1147
+01:24:57,760 --> 01:25:00,000
+I think that's great news.
+
+1148
+01:25:00,000 --> 01:25:09,760
+>> The second one that you know I see a lot is hey um just not looking at the data you know.
+
+1149
+01:25:09,760 --> 01:25:20,800
+So in my consulting people come to me with problems all the time and the first thing I'll say is let's go look at your traces
+
+1150
+01:25:20,800 --> 01:25:31,360
+and you can see the kind of their eyes pop open like what do you mean like yeah let's look at it right now and they're surprised that I am going I'm going to
+
+1151
+01:25:31,360 --> 01:25:40,960
+go look at individual traces um and we always it always 100% of the time learn a lot and figure out what the
+
+1152
+01:25:40,960 --> 01:25:42,000
+problem is.
+
+1153
+01:25:42,000 --> 01:25:48,639
+And so, um, I think people just don't know how powerful looking at the data is like we showed on this podcast.
+
+1154
+01:25:48,639 --> 01:25:50,560
+>> I would agree with that.
+
+1155
+01:25:50,560 --> 01:25:51,440
+>> Those are the top two.
+
+1156
+01:25:51,440 --> 01:25:51,760
+Okay.
+
+1157
+01:25:51,760 --> 01:25:54,960
+Is there anything else or those are those are the ones like solve those problems?
+
+1158
+01:25:54,960 --> 01:26:02,239
+>> Oh, those are definitely And then I guess the one I would add is there's no one correct way to do evals.
+
+1159
+01:26:02,239 --> 01:26:09,360
+There are many incorrect ways of doing evals, but there are also many correct ways of doing it.
+
+1160
+01:26:09,360 --> 01:26:15,600
+And you got to think about where you are at with your product, how many how much resources you have,
+
+1161
+01:26:15,600 --> 01:26:19,040
+um, and figure out the plan that works best for you.
+
+1162
+01:26:19,040 --> 01:26:28,239
+It'll always involve some form of error analysis as we showed today, but how you operationalize those metrics is going to change based on where you're at.
+
+1163
+01:26:28,239 --> 01:26:28,960
+>> Amazing.
+
+1164
+01:26:28,960 --> 01:26:29,440
+Okay.
+
+1165
+01:26:29,440 --> 01:26:37,120
+What are a couple just tips and tricks you want to leave people with as they start on their eval journey or just try to get better at something they're already doing?
+
+1166
+01:26:37,120 --> 01:26:46,719
+>> So tip number one is just don't be alarmed or don't you know be scared of looking at your data.
+
+1167
+01:26:46,719 --> 01:26:49,920
+The process we try to make it as structured as possible.
+
+1168
+01:26:49,920 --> 01:26:53,280
+There are inevitably you know questions that are going to come up.
+
+1169
+01:26:53,280 --> 01:26:54,880
+That's totally fine.
+
+1170
+01:26:54,880 --> 01:26:58,239
+You might feel like you're not doing it perfectly.
+
+1171
+01:26:58,239 --> 01:26:59,520
+That's also fine.
+
+1172
+01:26:59,520 --> 01:27:02,080
+The goal is not to do eval perfectly.
+
+1173
+01:27:02,080 --> 01:27:04,320
+It's to actionably improve your product.
+
+1174
+01:27:04,320 --> 01:27:08,560
+And we guarantee you no matter what you do, you're doing parts of these process.
+
+1175
+01:27:08,560 --> 01:27:10,800
+You're going to find ways of actionable improvement.
+
+1176
+01:27:10,800 --> 01:27:13,760
+And then you're going to iterate on your own process from there.
+
+1177
+01:27:13,760 --> 01:27:17,840
+The other tip that I would say is we're very pro- AI.
+
+1178
+01:27:17,840 --> 01:27:24,239
+Use LLM to help you organize any thoughts that you have throughout this entire process.
+
+1179
+01:27:24,239 --> 01:27:28,960
+So this could be everything ranging from like initial product requirements, right?
+
+1180
+01:27:28,960 --> 01:27:38,480
+Figure out how to organize them uh for yourself, figure out how to improve on that product requirements doc based on the open codes that you've created,
+
+1181
+01:27:38,480 --> 01:27:38,719
+right?
+
+1182
+01:27:38,719 --> 01:27:44,320
+Like don't be afraid to use AI in ways that you know present information better for you.
+
+1183
+01:27:44,320 --> 01:27:44,639
+>> Sweet.
+
+1184
+01:27:44,639 --> 01:27:45,920
+So don't be scared.
+
+1185
+01:27:45,920 --> 01:27:51,040
+Uh use LMS as much as you can throughout the process, >> but not to replace yourself.
+
+1186
+01:27:51,040 --> 01:27:51,600
+>> Right.
+
+1187
+01:27:51,600 --> 01:27:52,000
+Okay.
+
+1188
+01:27:52,000 --> 01:27:52,239
+Great.
+
+1189
+01:27:52,239 --> 01:27:53,040
+Still jobs.
+
+1190
+01:27:53,040 --> 01:27:54,320
+Great.
+
+1191
+01:27:54,320 --> 01:27:55,360
+Hello.
+
+1192
+01:27:55,360 --> 01:27:57,280
+>> Yeah, let me actually share my screen.
+
+1193
+01:27:57,280 --> 01:28:06,480
+So, when I show something, >> so to piggyback off what Treya said is if you heard any phrase in this podcast,
+
+1194
+01:28:06,480 --> 01:28:10,159
+you've probably heard look at your data more than anything else.
+
+1195
+01:28:10,159 --> 01:28:17,760
+And so, it's so important that we teach that you should create your own tools to make it as easy as possible.
+
+1196
+01:28:17,760 --> 01:28:22,800
+So, I showed you some tools when we're going through the live example of like how to annotate data.
+
+1197
+01:28:22,800 --> 01:28:33,520
+Most of the people I work with, they realize how important this is and they vibe code their own tools or they we shouldn't say vibe code.
+
+1198
+01:28:33,520 --> 01:28:43,040
+We they just they make their own tools and it's it's cheaper than ever before because you have AI that can help you and AI is really good at creating simple web
+
+1199
+01:28:43,040 --> 01:28:48,239
+applications that can show you data that have, you know, that can write to a database.
+
+1200
+01:28:48,239 --> 01:28:49,360
+It's very simple.
+
+1201
+01:28:49,360 --> 01:28:57,040
+And so for the nurture boss use case, we wanted to remove all the friction of looking at data.
+
+1202
+01:28:57,040 --> 01:29:05,600
+And so what you see here is just some screenshots of uh what the application that they created looks like.
+
+1203
+01:29:05,600 --> 01:29:06,560
+It's just okay.
+
+1204
+01:29:06,560 --> 01:29:09,760
+They have the different channels, voice, email, text.
+
+1205
+01:29:09,760 --> 01:29:11,440
+Um they have the different threads.
+
+1206
+01:29:11,440 --> 01:29:14,080
+They hid the system prompt by default.
+
+1207
+01:29:14,080 --> 01:29:16,239
+Little quality of life improvements.
+
+1208
+01:29:16,239 --> 01:29:23,280
+And then they al actually had this axial coding part here where you can see okay in red the count of different errors.
+
+1209
+01:29:23,280 --> 01:29:29,920
+They automated that part in a nice way and they just they created this within a few hours.
+
+1210
+01:29:29,920 --> 01:29:36,320
+Um and so it's really hard to have a one-sizefits-all thing for looking at your data.
+
+1211
+01:29:36,320 --> 01:29:43,040
+You don't have to go here immediately, but something to think about is make it as easy as possible because again,
+
+1212
+01:29:43,040 --> 01:29:47,679
+it's the most powerful activity that you can engage in.
+
+1213
+01:29:47,679 --> 01:29:50,400
+It's the highest ROI activity you can engage in.
+
+1214
+01:29:50,400 --> 01:29:56,080
+And so, um, you know, with AI, yeah, just remove all the friction.
+
+1215
+01:29:56,080 --> 01:29:56,800
+That's amazing.
+
+1216
+01:29:56,800 --> 01:29:59,199
+And again, I think the ROI piece is so important.
+
+1217
+01:29:59,199 --> 01:30:01,040
+We haven't even touched on this enough.
+
+1218
+01:30:01,040 --> 01:30:06,000
+The goal here is to make your product better, which will make your business more successful.
+
+1219
+01:30:06,000 --> 01:30:09,120
+Like this isn't just a little exercise to catch bugs and things like that.
+
+1220
+01:30:09,120 --> 01:30:16,159
+Like this is the way to make AI products better because the experience is how users interact with your AI.
+
+1221
+01:30:16,159 --> 01:30:17,040
+Absolutely.
+
+1222
+01:30:17,040 --> 01:30:22,400
+If any, you know, we teach our students, hey, when you're doing these evals, if you see something that's wrong,
+
+1223
+01:30:22,400 --> 01:30:23,520
+just go fix it.
+
+1224
+01:30:23,520 --> 01:30:34,080
+Like the whole point is not to have eval suite where you can point at edit it and say oh look at my evals no just fix your application make it better do you know
+
+1225
+01:30:34,080 --> 01:30:45,520
+if it's obvious do it so totally agree with you amazing how long a question I ask but this is I think something people are thinking about how long do you spend on this like how long does it usually take to do the first time
+
+1226
+01:30:45,520 --> 01:30:54,320
+>> I can answer for myself for applications that I work with usually I'll spend three to four days really working with whoever to do initial rounds of error analysis,
+
+1227
+01:30:54,320 --> 01:31:05,040
+like a lot of labeling, feel like we're in a good place to create the spreadsheet that Hamill had and everyone's kind of on board and convinced and even like a few LLM judge evaluators.
+
+1228
+01:31:05,040 --> 01:31:07,120
+Um, but this is a onetime cost.
+
+1229
+01:31:07,120 --> 01:31:16,000
+Once I figured out how to integrate that in unit tests or I have like a script that automatically runs it on samples and I will create a cron job to just do this every week.
+
+1230
+01:31:16,000 --> 01:31:22,880
+I would say it's like I don't know I find myself probably spending more time looking at data because I'm just data hungry like that.
+
+1231
+01:31:22,880 --> 01:31:23,679
+I'm so curious.
+
+1232
+01:31:23,679 --> 01:31:33,280
+I'm like I've gained so much from this process and it's like put me above and beyond in any of my you know collaborations with folks.
+
+1233
+01:31:33,280 --> 01:31:36,639
+So, I want to keep doing it, but I don't have to.
+
+1234
+01:31:36,639 --> 01:31:41,360
+I would say like maybe 30 minutes a week after that.
+
+1235
+01:31:41,360 --> 01:31:47,360
+>> So, it's a week essentially, a week essentially up front and then like 30 minutes to keep improving and adding to your suite.
+
+1236
+01:31:47,360 --> 01:31:48,880
+>> Yeah, it's really not that much time.
+
+1237
+01:31:48,880 --> 01:31:56,080
+I think people just get overwhelmed by how much time they spend up front and then thinking that they have to keep doing this all the time.
+
+1238
+01:31:56,080 --> 01:31:57,360
+>> Amazing.
+
+1239
+01:31:57,360 --> 01:32:00,960
+Is there anything else that you wanted to share or leave listeners with?
+
+1240
+01:32:00,960 --> 01:32:05,920
+Anything else you want to kind of double down on as a point before we get to our very exciting lightning round?
+
+1241
+01:32:05,920 --> 01:32:10,159
+So I would say this process is a lot of fun actually.
+
+1242
+01:32:10,159 --> 01:32:13,440
+So it can it's like okay you're looking at data.
+
+1243
+01:32:13,440 --> 01:32:15,679
+Oh it sounds like you're annotating things.
+
+1244
+01:32:15,679 --> 01:32:20,719
+Okay actually like so I was just looking at a client's data yesterday.
+
+1245
+01:32:20,719 --> 01:32:22,480
+The same exact process.
+
+1246
+01:32:22,480 --> 01:32:30,320
+It's a application that sends emails recruiting emails to try to get candidates to apply for a job.
+
+1247
+01:32:30,320 --> 01:32:34,000
+and we decided to start looking at traces.
+
+1248
+01:32:34,000 --> 01:32:34,880
+Jump right into it.
+
+1249
+01:32:34,880 --> 01:32:36,639
+Hey, let's look at your traces.
+
+1250
+01:32:36,639 --> 01:32:39,040
+The we looked at a trace.
+
+1251
+01:32:39,040 --> 01:32:48,480
+The first thing I saw was this like email that is worded like given your background blah blah blah blah blah.
+
+1252
+01:32:48,480 --> 01:32:55,360
+So I asked the person right away and this is where putting your product hat on and just being critical and this is where the fun part is.
+
+1253
+01:32:55,360 --> 01:32:57,040
+I said, you know what, I hate this email.
+
+1254
+01:32:57,040 --> 01:33:03,760
+like do you like the email given your background when and when when I receive a message given your background I just delete that.
+
+1255
+01:33:03,760 --> 01:33:15,520
+So I'm like what is this given your background with machine learning and blah blah I'm like this is a generic thing like so I asked the person like hey you know can we do better than this like this is kind of
+
+1256
+01:33:15,520 --> 01:33:27,280
+like a this is like a sounds like generic recruiting and they're like oh yeah maybe yeah like it's the AI because they were like they were proud of it like the AI is doing the right thing is
+
+1257
+01:33:27,280 --> 01:33:37,840
+sending this email with the right information with the right link with the right name everything and so that's where the fun part is is like put your product hat on and get into like is this
+
+1258
+01:33:37,840 --> 01:33:38,719
+really good?
+
+1259
+01:33:38,719 --> 01:33:46,639
+Something I want to make sure we cover before we get to a very exciting light round is this is just scratching the surface of all the things you need to know to do this well.
+
+1260
+01:33:46,639 --> 01:33:51,199
+Uh I think this is the best primer I've ever seen on how to do this well.
+
+1261
+01:33:51,199 --> 01:33:51,600
+Nice.
+
+1262
+01:33:51,600 --> 01:33:54,239
+>> But you I think we did it.
+
+1263
+01:33:54,239 --> 01:34:00,400
+But you guys teach a course that goes much much deeper for people that really want to get good at this and take this really seriously.
+
+1264
+01:34:00,400 --> 01:34:07,199
+share what else you teach in the course that we didn't cover and what else you get as a student being part of the the course you teach at Maven.
+
+1265
+01:34:07,199 --> 01:34:10,800
+>> Yeah, I can talk about the syllabus a little bit and then Haml can talk about all the perks.
+
+1266
+01:34:10,800 --> 01:34:18,960
+Um, so we go through a life cycle of error analysis, then automated evaluators, then how to improve your application,
+
+1267
+01:34:18,960 --> 01:34:21,440
+like how do you create that flywheel for yourself.
+
+1268
+01:34:21,440 --> 01:34:27,199
+We also have a few special topics that we find like pretty much no one has ever heard of or taught before,
+
+1269
+01:34:27,199 --> 01:34:28,480
+which is exciting.
+
+1270
+01:34:28,480 --> 01:34:32,800
+One is how do you build your own interfaces for error analysis.
+
+1271
+01:34:32,800 --> 01:34:40,719
+So we kind of go through actual interfaces that we've built and we also live code them on the spot for new data.
+
+1272
+01:34:40,719 --> 01:34:48,800
+Um and we show kind of how we use cloud code cursor or whatever we're feeling in the moment that day to build these interfaces.
+
+1273
+01:34:48,800 --> 01:34:53,120
+Um and we also talk about kind of broadly cost optimization as well.
+
+1274
+01:34:53,120 --> 01:34:58,719
+So, we a couple of people that I've worked with um they got to a point where their evals are very good,
+
+1275
+01:34:58,719 --> 01:35:04,239
+their product is very good, but it's all very expensive because they're using like state-of-the-art models.
+
+1276
+01:35:04,239 --> 01:35:11,280
+So, how can we kind of replace certain uses of the most expensive GPT5 models with, you know,
+
+1277
+01:35:11,280 --> 01:35:17,120
+5 nano, 4 mini, whatnot, and save a lot of money but still maintain the same quality.
+
+1278
+01:35:17,120 --> 01:35:19,760
+So, we also give some tips for that.
+
+1279
+01:35:19,760 --> 01:35:23,120
+Um, Haml, you want We also have many perks.
+
+1280
+01:35:23,120 --> 01:35:23,440
+>> Yeah.
+
+1281
+01:35:23,440 --> 01:35:24,480
+Talk about the perks.
+
+1282
+01:35:24,480 --> 01:35:24,800
+>> Okay.
+
+1283
+01:35:24,800 --> 01:35:26,159
+The perks.
+
+1284
+01:35:26,159 --> 01:35:36,880
+>> So, my favorite perk is there's a60page book that's meticulously written that we've created that walks through the entire process in detail of how to do
+
+1285
+01:35:36,880 --> 01:35:39,360
+evalu.
+
+1286
+01:35:39,360 --> 01:35:43,520
+So, you don't have to sit there and take all these notes.
+
+1287
+01:35:43,520 --> 01:35:49,760
+We've done all the hard work for you and we've like documented it in detail.
+
+1288
+01:35:49,760 --> 01:35:52,400
+um you know and organize things.
+
+1289
+01:35:52,400 --> 01:35:54,320
+So that is really useful.
+
+1290
+01:35:54,320 --> 01:36:03,120
+Another really interesting thing and something that I got the idea from you Lenny is okay this is an AI course.
+
+1291
+01:36:03,120 --> 01:36:10,400
+Education shouldn't be this thing where you you're only watching lectures and doing homework assignments.
+
+1292
+01:36:10,400 --> 01:36:13,840
+So students should have access to an AI that also helps them.
+
+1293
+01:36:13,840 --> 01:36:25,520
+So what we've done is we've uh you know just like there's the Lennybot that you have >> yeah lennybot.com uh we have made the same thing with the
+
+1294
+01:36:25,520 --> 01:36:31,280
+same software that you're using and we have put everything we've ever said about eval into that.
+
+1295
+01:36:31,280 --> 01:36:42,080
+So, every single lesson, every office hours, every Discord chat, any blogs, papers, anything that we've ever said publicly and within our course,
+
+1296
+01:36:42,080 --> 01:36:49,520
+we've put it in there and we've tested it with um a bunch of students and they've said it's helpful.
+
+1297
+01:36:49,520 --> 01:36:56,639
+Um so, we're giving all students 10 months free unlimited access to that alongside the course.
+
+1298
+01:36:56,639 --> 01:36:57,199
+>> Amazing.
+
+1299
+01:36:57,199 --> 01:37:00,880
+And then you'll charge for that later down the road is the idea.
+
+1300
+01:37:00,880 --> 01:37:02,080
+I just take one month at a time.
+
+1301
+01:37:02,080 --> 01:37:03,040
+I don't know what we're doing.
+
+1302
+01:37:03,040 --> 01:37:05,199
+>> Eight months and then we'll have to figure it out.
+
+1303
+01:37:05,199 --> 01:37:09,119
+I was thinking we should have this whole interview should have just been our bots talking to each other.
+
+1304
+01:37:09,119 --> 01:37:10,239
+>> That's amazing.
+
+1305
+01:37:10,239 --> 01:37:14,800
+I I would watch that only for like 10 minutes then I don't know what they're talking about.
+
+1306
+01:37:14,800 --> 01:37:16,320
+>> Yeah, maybe maybe 30 seconds.
+
+1307
+01:37:16,320 --> 01:37:18,080
+Did you guys train it on the voice mode by the way?
+
+1308
+01:37:18,080 --> 01:37:21,119
+That's my favorite feature of this of Deli's product.
+
+1309
+01:37:21,119 --> 01:37:22,480
+If not, you should do that.
+
+1310
+01:37:22,480 --> 01:37:25,119
+>> Oh, >> I think I'm I can't remember.
+
+1311
+01:37:25,119 --> 01:37:26,719
+Um I should I should look at it.
+
+1312
+01:37:26,719 --> 01:37:27,199
+Definitely sure.
+
+1313
+01:37:27,199 --> 01:37:30,639
+Now that we have this podcast episode, you could use this uh content to train it.
+
+1314
+01:37:30,639 --> 01:37:31,679
+It's 11 laps powered.
+
+1315
+01:37:31,679 --> 01:37:32,480
+It's so good.
+
+1316
+01:37:32,480 --> 01:37:33,199
+Uh okay.
+
+1317
+01:37:33,199 --> 01:37:35,199
+So that's how do they get to I guess that's okay.
+
+1318
+01:37:35,199 --> 01:37:38,239
+They get to that once they become a uh they enter your course.
+
+1319
+01:37:38,239 --> 01:37:41,760
+So there's no >> sign up for the course and then you'll get a bunch of emails.
+
+1320
+01:37:41,760 --> 01:37:43,760
+Everything will be clear hopefully.
+
+1321
+01:37:43,760 --> 01:37:44,080
+>> Amazing.
+
+1322
+01:37:44,080 --> 01:37:44,400
+Okay.
+
+1323
+01:37:44,400 --> 01:37:55,520
+We also have a discord >> of all the students who have ever taken the class and that discord is so active >> I I can't go on vacation without getting notified on the plane or
+
+1324
+01:37:55,520 --> 01:37:57,119
+>> bitter sweet bittersweet.
+
+1325
+01:37:57,119 --> 01:37:57,840
+Incredible.
+
+1326
+01:37:57,840 --> 01:37:58,400
+Okay.
+
+1327
+01:37:58,400 --> 01:38:01,679
+Uh with that we've reached our very exciting lightning round.
+
+1328
+01:38:01,679 --> 01:38:03,440
+I've got five questions for you.
+
+1329
+01:38:03,440 --> 01:38:04,480
+Are you ready?
+
+1330
+01:38:04,480 --> 01:38:04,960
+>> Yes.
+
+1331
+01:38:04,960 --> 01:38:05,679
+Let's go.
+
+1332
+01:38:05,679 --> 01:38:06,239
+>> Let's do it.
+
+1333
+01:38:06,239 --> 01:38:06,400
+Okay.
+
+1334
+01:38:06,400 --> 01:38:08,239
+So, I'm going to bounce between you two.
+
+1335
+01:38:08,239 --> 01:38:09,520
+Share something if you want.
+
+1336
+01:38:09,520 --> 01:38:10,960
+You can pass if you want.
+
+1337
+01:38:10,960 --> 01:38:11,840
+First question.
+
+1338
+01:38:11,840 --> 01:38:12,880
+Shrea.
+
+1339
+01:38:12,880 --> 01:38:17,280
+What are two or three books that you find yourself recommending most to other people?
+
+1340
+01:38:17,280 --> 01:38:21,440
+>> So I like to recommend a fiction book because life is about more than eval.
+
+1341
+01:38:21,440 --> 01:38:32,639
+So recently I read Pachenko by uh Ninjan Lee uh really great book and then I also am currently
+
+1342
+01:38:32,639 --> 01:38:42,000
+reading Apple in China which the name of the author is slipping my mind but this is kind of more of an exposition written by a journalist on how Apple did a lot
+
+1343
+01:38:42,000 --> 01:38:48,080
+of manufacturing processes in Asia over the last um couple several decades.
+
+1344
+01:38:48,080 --> 01:38:49,040
+Very eye opening.
+
+1345
+01:38:49,040 --> 01:38:50,480
+>> Amazing.
+
+1346
+01:38:50,480 --> 01:38:51,840
+Haml.
+
+1347
+01:38:51,840 --> 01:38:53,920
+>> Yeah, I have them right here.
+
+1348
+01:38:53,920 --> 01:38:56,159
+Uh, so the so I'm a nerd.
+
+1349
+01:38:56,159 --> 01:38:58,480
+Okay, so I'm not as cool as RA is.
+
+1350
+01:38:58,480 --> 01:39:01,600
+So I actually have like textbooks which are like my favorite.
+
+1351
+01:39:01,600 --> 01:39:04,560
+So this one is very classic one.
+
+1352
+01:39:04,560 --> 01:39:06,400
+Machine learning by Mitchell.
+
+1353
+01:39:06,400 --> 01:39:17,199
+Now, it's kind of theoretical, but the thing I like about it is it um really drives home the fact that AAM's razor is prevalent not only
+
+1354
+01:39:17,199 --> 01:39:22,000
+in like science but also in machine learning and AI.
+
+1355
+01:39:22,000 --> 01:39:24,480
+So, a lot of times the simplest and also engineering.
+
+1356
+01:39:24,480 --> 01:39:28,800
+So like a lot of times the simpler approach generalizes better.
+
+1357
+01:39:28,800 --> 01:39:32,480
+And so that's the thing I kind of internalized deeply from that book.
+
+1358
+01:39:32,480 --> 01:39:34,320
+And um also really like this one.
+
+1359
+01:39:34,320 --> 01:39:35,119
+So another textbook.
+
+1360
+01:39:35,119 --> 01:39:36,000
+I told you I'm a nerd.
+
+1361
+01:39:36,000 --> 01:39:38,960
+This is like also an very old one.
+
+1362
+01:39:38,960 --> 01:39:39,360
+>> Wow.
+
+1363
+01:39:39,360 --> 01:39:49,199
+>> Um, and this is like, you know, nor algorithms and it's just like I really like it because it's just human ingenuity and it's very like lots of clever useful things.
+
+1364
+01:39:49,199 --> 01:39:50,080
+>> They're down the street.
+
+1365
+01:39:50,080 --> 01:39:51,119
+>> Computing.
+
+1366
+01:39:51,119 --> 01:39:53,760
+>> I'm at Berkeley.
+
+1367
+01:39:53,760 --> 01:39:55,600
+>> The people that did that research.
+
+1368
+01:39:55,600 --> 01:39:57,280
+>> Yeah.
+
+1369
+01:39:57,280 --> 01:39:57,600
+>> Yeah.
+
+1370
+01:39:57,600 --> 01:39:58,480
+Textbook authors.
+
+1371
+01:39:58,480 --> 01:39:59,119
+>> Super cool.
+
+1372
+01:39:59,119 --> 01:40:00,000
+Oh, man.
+
+1373
+01:40:00,000 --> 01:40:00,480
+Nerds.
+
+1374
+01:40:00,480 --> 01:40:01,040
+I love it.
+
+1375
+01:40:01,040 --> 01:40:02,320
+Okay, next question.
+
+1376
+01:40:02,320 --> 01:40:04,080
+Favorite recent movie or TV show?
+
+1377
+01:40:04,080 --> 01:40:06,159
+I'll jump to Haml first.
+
+1378
+01:40:06,159 --> 01:40:06,480
+Okay.
+
+1379
+01:40:06,480 --> 01:40:08,560
+So, I'm a dad of two parents.
+
+1380
+01:40:08,560 --> 01:40:09,119
+I have two parents.
+
+1381
+01:40:09,119 --> 01:40:10,480
+>> I don't get to Oh, sorry.
+
+1382
+01:40:10,480 --> 01:40:12,320
+Uh, two kids.
+
+1383
+01:40:12,320 --> 01:40:20,400
+So, yeah, I'm a dad of two kids >> and I don't really get the time to watch any TV or movies.
+
+1384
+01:40:20,400 --> 01:40:22,239
+So, I watch whatever my kids are watching.
+
+1385
+01:40:22,239 --> 01:40:25,360
+So, I've watched Frozen like three times in the last week.
+
+1386
+01:40:25,360 --> 01:40:25,920
+>> Only three?
+
+1387
+01:40:25,920 --> 01:40:26,239
+Oh, okay.
+
+1388
+01:40:26,239 --> 01:40:26,960
+In the last week.
+
+1389
+01:40:26,960 --> 01:40:27,520
+Okay.
+
+1390
+01:40:27,520 --> 01:40:28,400
+Yeah.
+
+1391
+01:40:28,400 --> 01:40:29,840
+So, that's >> great.
+
+1392
+01:40:29,840 --> 01:40:31,040
+That's my Frozen.
+
+1393
+01:40:31,040 --> 01:40:31,520
+I love it.
+
+1394
+01:40:31,520 --> 01:40:31,840
+Okay.
+
+1395
+01:40:31,840 --> 01:40:32,159
+Sure.
+
+1396
+01:40:32,159 --> 01:40:32,719
+Yeah.
+
+1397
+01:40:32,719 --> 01:40:32,880
+>> Yeah.
+
+1398
+01:40:32,880 --> 01:40:37,040
+I don't have kids so I can give all these amazing answers actually.
+
+1399
+01:40:37,040 --> 01:40:40,320
+So my husband and I have been watching The Wire recently.
+
+1400
+01:40:40,320 --> 01:40:42,560
+We never actually saw it growing up.
+
+1401
+01:40:42,560 --> 01:40:46,080
+So we started watching it and it's great.
+
+1402
+01:40:46,080 --> 01:40:48,320
+>> I feel like everyone goes through that eventually in their life.
+
+1403
+01:40:48,320 --> 01:40:50,000
+They decide I will watch The Wire.
+
+1404
+01:40:50,000 --> 01:40:50,239
+>> I know.
+
+1405
+01:40:50,239 --> 01:40:52,320
+So we are in that >> year of your life.
+
+1406
+01:40:52,320 --> 01:40:53,199
+I It's great.
+
+1407
+01:40:53,199 --> 01:40:54,800
+I It's such a great show.
+
+1408
+01:40:54,800 --> 01:40:55,199
+Oh man.
+
+1409
+01:40:55,199 --> 01:40:58,800
+And but it's so many episodes and everyone's an hour long.
+
+1410
+01:40:58,800 --> 01:40:59,440
+>> I know.
+
+1411
+01:40:59,440 --> 01:41:02,000
+We get through like two or three a week.
+
+1412
+01:41:02,000 --> 01:41:03,760
+So, >> so we're very slow.
+
+1413
+01:41:03,760 --> 01:41:04,639
+>> Worth it.
+
+1414
+01:41:04,639 --> 01:41:06,000
+Okay, next question.
+
+1415
+01:41:06,000 --> 01:41:08,880
+Do you have a favorite product you've recently discovered that you really love?
+
+1416
+01:41:08,880 --> 01:41:10,400
+And we'll start with Shrea.
+
+1417
+01:41:10,400 --> 01:41:12,719
+>> Yeah, I really like using cursor.
+
+1418
+01:41:12,719 --> 01:41:14,480
+Honestly, now Cloud Code.
+
+1419
+01:41:14,480 --> 01:41:17,440
+Um, I'll I'll say why.
+
+1420
+01:41:17,440 --> 01:41:21,119
+So, I think as a I'm a researcher more so than anything else.
+
+1421
+01:41:21,119 --> 01:41:24,080
+I write papers, I write code, I build systems, everything.
+
+1422
+01:41:24,080 --> 01:41:31,600
+And I I find that like a tool I'm so bullish on AI assisted coding because like I have to wear a lot of hats all the time.
+
+1423
+01:41:31,600 --> 01:41:37,199
+Um and now I can be more ambitious with the things that I build um and write papers about.
+
+1424
+01:41:37,199 --> 01:41:39,199
+So I'm super excited about those.
+
+1425
+01:41:39,199 --> 01:41:42,000
+Cursor was my entry point into this.
+
+1426
+01:41:42,000 --> 01:41:48,239
+Uh but I'm starting to find myself trying always trying to keep up with all these AI assisted coding tools.
+
+1427
+01:41:48,239 --> 01:41:49,679
+>> Haml.
+
+1428
+01:41:49,679 --> 01:41:54,800
+Yeah, I really like cloud code and I like it because I feel like the UX is outstanding.
+
+1429
+01:41:54,800 --> 01:41:58,480
+Um, there's a lot of love that went into that.
+
+1430
+01:41:58,480 --> 01:42:04,880
+Um, it's just it's just really impressive as a terminal application that is that nice.
+
+1431
+01:42:04,880 --> 01:42:09,520
+>> Ironic that you two both love cloud code when it's just built on vibes.
+
+1432
+01:42:09,520 --> 01:42:10,560
+>> I think it's false.
+
+1433
+01:42:10,560 --> 01:42:12,880
+It's not just built on vibes.
+
+1434
+01:42:12,880 --> 01:42:14,080
+>> There we go.
+
+1435
+01:42:14,080 --> 01:42:15,360
+Okay, two more questions.
+
+1436
+01:42:15,360 --> 01:42:21,920
+Uh Hamill, do you have a favorite life motto that you find yourself using and coming back to in work or in life?
+
+1437
+01:42:21,920 --> 01:42:26,400
+>> Keep learning and think like a beginner.
+
+1438
+01:42:26,400 --> 01:42:26,960
+>> Beautiful.
+
+1439
+01:42:26,960 --> 01:42:28,480
+Shria, >> I like that.
+
+1440
+01:42:28,480 --> 01:42:33,360
+Uh for me, it's to always try to think about the other side's argument.
+
+1441
+01:42:33,360 --> 01:42:42,880
+I find myself sometimes just encountering arguments on the internet like this recent eval debates and like really think okay put myself in their shoes.
+
+1442
+01:42:42,880 --> 01:42:51,199
+There's probably a generous take, generous interpretation, and I think we're all much stronger together than if we start picking fights.
+
+1443
+01:42:51,199 --> 01:42:54,719
+My vision for Evals is not that Hamel and I become billionaires.
+
+1444
+01:42:54,719 --> 01:42:59,440
+It is that everyone can build AI products and we're all on the same page.
+
+1445
+01:42:59,440 --> 01:43:02,159
+>> Slash Everyone becomes billionaires.
+
+1446
+01:43:02,159 --> 01:43:02,560
+>> Yes.
+
+1447
+01:43:02,560 --> 01:43:04,000
+>> Yes.
+
+1448
+01:43:04,000 --> 01:43:04,480
+>> Amazing.
+
+1449
+01:43:04,480 --> 01:43:05,280
+Final question.
+
+1450
+01:43:05,280 --> 01:43:10,080
+When I have two guests on, I always like to ask this question and I'll start with Hamill.
+
+1451
+01:43:10,080 --> 01:43:12,880
+What's something about Shrea that you like most?
+
+1452
+01:43:12,880 --> 01:43:15,360
+What do you like most about Shrea?
+
+1453
+01:43:15,360 --> 01:43:17,920
+And I'm going to ask her the same question in reverse.
+
+1454
+01:43:17,920 --> 01:43:25,840
+Yeah, Shrea is one of the wisest people that I know, >> especially for being so young relative to me.
+
+1455
+01:43:25,840 --> 01:43:29,119
+I feel like she's like much wiser than I am, honestly.
+
+1456
+01:43:29,119 --> 01:43:30,239
+Seriously.
+
+1457
+01:43:30,239 --> 01:43:36,880
+Um, she's very grounded and has like a very even perspective on things.
+
+1458
+01:43:36,880 --> 01:43:42,080
+And so I'm just really impressed by that all the time.
+
+1459
+01:43:42,080 --> 01:43:42,320
+>> Sure.
+
+1460
+01:43:42,320 --> 01:43:42,800
+Yeah.
+
+1461
+01:43:42,800 --> 01:43:43,199
+>> Yeah.
+
+1462
+01:43:43,199 --> 01:43:46,000
+My favorite thing about Hamill is his energy.
+
+1463
+01:43:46,000 --> 01:43:51,520
+I don't know anybody who consistently maintains momentum and energy like Hamill does.
+
+1464
+01:43:51,520 --> 01:44:00,320
+Um I often think that like I would start caring much less about Evals if not for Hamill.
+
+1465
+01:44:00,320 --> 01:44:04,320
+And uh everyone needs a Haml in their life for sure.
+
+1466
+01:44:04,320 --> 01:44:05,119
+M.
+
+1467
+01:44:05,119 --> 01:44:08,880
+Oh, well, we all have a Haml in our life now.
+
+1468
+01:44:08,880 --> 01:44:10,320
+Uh, this was incredible.
+
+1469
+01:44:10,320 --> 01:44:11,679
+This was everything I'd hoped it'd be.
+
+1470
+01:44:11,679 --> 01:44:19,119
+I feel like this is the most interesting, in-depth uh, consumable uh, primer on emails that I've ever seen.
+
+1471
+01:44:19,119 --> 01:44:21,520
+I'm really thankful YouTube made time for this.
+
+1472
+01:44:21,520 --> 01:44:22,880
+Uh, two final questions.
+
+1473
+01:44:22,880 --> 01:44:23,840
+Where can folks find you?
+
+1474
+01:44:23,840 --> 01:44:25,360
+Where can they find the course?
+
+1475
+01:44:25,360 --> 01:44:27,679
+And how can listeners be useful to you?
+
+1476
+01:44:27,679 --> 01:44:29,440
+Uh, I'll start with Shrea.
+
+1477
+01:44:29,440 --> 01:44:29,760
+>> Yeah.
+
+1478
+01:44:29,760 --> 01:44:31,840
+Uh, you can reach me via email.
+
+1479
+01:44:31,840 --> 01:44:32,800
+It's on my website.
+
+1480
+01:44:32,800 --> 01:44:36,159
+If you Google my name, that is the easiest way to get to my website.
+
+1481
+01:44:36,159 --> 01:44:37,199
+You can find the course.
+
+1482
+01:44:37,199 --> 01:44:44,400
+If you Google AI evals for engineers and product managers or just AI evals course, you'll find it.
+
+1483
+01:44:44,400 --> 01:44:48,159
+Um, we'll send some links hopefully after this so it's easy.
+
+1484
+01:44:48,159 --> 01:44:49,840
+And how to be helpful.
+
+1485
+01:44:49,840 --> 01:44:51,520
+Two things always for me.
+
+1486
+01:44:51,520 --> 01:44:53,760
+One is ask me questions when you have them.
+
+1487
+01:44:53,760 --> 01:44:56,400
+I will try to get to them.
+
+1488
+01:44:56,400 --> 01:44:57,840
+R respond as soon as I can.
+
+1489
+01:44:57,840 --> 01:45:00,639
+The other one is tell us your successes.
+
+1490
+01:45:00,639 --> 01:45:11,040
+One of the things that keeps us going is somebody tells us like what they implemented or what they did a real case study and Haml and I get so excited from
+
+1491
+01:45:11,040 --> 01:45:14,159
+these um and it really keeps us going.
+
+1492
+01:45:14,159 --> 01:45:16,400
+So please share.
+
+1493
+01:45:16,400 --> 01:45:16,719
+>> Yeah.
+
+1494
+01:45:16,719 --> 01:45:18,560
+Uh it's pretty easy to find me.
+
+1495
+01:45:18,560 --> 01:45:22,480
+I'm my website is hamill.dev.
+
+1496
+01:45:22,480 --> 01:45:24,960
+I'll give you the the link.
+
+1497
+01:45:24,960 --> 01:45:29,760
+Um you can find me on social media, LinkedIn, Twitter.
+
+1498
+01:45:29,760 --> 01:45:37,840
+Um thing that's most helpful is to echo what Shrea said, we would be delighted if we're not the only people teaching evals.
+
+1499
+01:45:37,840 --> 01:45:40,000
+We would love other people to teach evals.
+
+1500
+01:45:40,000 --> 01:45:49,760
+And so any kind of blog posts, writing especially that as you go through this and learn this that you want to share,
+
+1501
+01:45:49,760 --> 01:45:54,639
+we would be delighted to help reshare that or amplify that.
+
+1502
+01:45:54,639 --> 01:45:55,199
+Amazing.
+
+1503
+01:45:55,199 --> 01:45:56,320
+Very generous.
+
+1504
+01:45:56,320 --> 01:45:57,840
+Thank you so much for being here.
+
+1505
+01:45:57,840 --> 01:46:00,159
+Uh, I really appreciate it and you guys have a lot going on.
+
+1506
+01:46:00,159 --> 01:46:01,440
+So, so thank you.
+
+1507
+01:46:01,440 --> 01:46:04,960
+>> Thanks Lenny for having us and for all the compliments.
+
+1508
+01:46:04,960 --> 01:46:06,320
+>> My pleasure.
+
+1509
+01:46:06,320 --> 01:46:08,239
+Bye everyone.
+
+1510
+01:46:08,239 --> 01:46:09,600
+>> Thank you so much for listening.
+
+1511
+01:46:09,600 --> 01:46:13,920
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+1512
+01:46:13,920 --> 01:46:16,080
+or your favorite podcast app.
+
+1513
+01:46:16,080 --> 01:46:22,400
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1514
+01:46:22,400 --> 01:46:27,840
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1515
+01:46:27,840 --> 01:46:31,560
+See you in the next episode.

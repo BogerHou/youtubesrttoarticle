@@ -1,0 +1,823 @@
+1
+00:00:00,080 --> 00:00:05,600
+If you're building a mobile app right now, there is one thing that will make or break your revenue,
+
+2
+00:00:05,600 --> 00:00:08,720
+and it's not your idea, your design, or your marketing.
+
+3
+00:00:08,720 --> 00:00:15,440
+>> Your onboarding is the single most important part of your app because an app is nothing more than a salesunnel.
+
+4
+00:00:15,440 --> 00:00:16,480
+>> This is Mao.
+
+5
+00:00:16,480 --> 00:00:19,840
+He built a mobile app that makes over $40,000 a month.
+
+6
+00:00:19,840 --> 00:00:25,439
+And he is a genius when it comes to building onboarding flows that convert.
+
+7
+00:00:25,439 --> 00:00:30,960
+every screen before hitting the payw wall is just building a case of why the user should pay you.
+
+8
+00:00:30,960 --> 00:00:40,640
+So, I asked him to come on to the channel to do a full screen by screen breakdown of his entire onboarding flow that turned his app into a $40,000 per month business.
+
+9
+00:00:40,640 --> 00:00:48,160
+He's going to walk us through the psychology, the design choices, and why every single screen is placed exactly where it is.
+
+10
+00:00:48,160 --> 00:00:54,719
+By the end of this video, you're going to learn why making your onboarding longer can actually triple your conversions.
+
+11
+00:00:54,719 --> 00:01:04,799
+the exact screen that gets 1 in eight users to leave a review and the psychology tricks that convince users to buy before they ever even hit the payw wall.
+
+12
+00:01:04,799 --> 00:01:09,840
+If you're building anything in mobile, this might be the most important video you'll watch this year.
+
+13
+00:01:09,840 --> 00:01:11,119
+All right, let's get into it.
+
+14
+00:01:11,119 --> 00:01:14,320
+Welcome to Starter Story Build.
+
+15
+00:01:14,320 --> 00:01:21,680
+All right, guys, before we dive in, we talked to Mao for 40 to 50 minutes and we couldn't include everything in this final video.
+
+16
+00:01:21,680 --> 00:01:27,280
+So, after watching this video, if you want to download the extended version of Mao's onboarding guide that has all of his screens,
+
+17
+00:01:27,280 --> 00:01:31,680
+all the tactics, and everything, just head to the first link in the description to grab it for free.
+
+18
+00:01:31,680 --> 00:01:33,040
+All right, let's dive in.
+
+19
+00:01:33,040 --> 00:01:35,600
+Okay, Mao, welcome back to the channel.
+
+20
+00:01:35,600 --> 00:01:42,720
+You did an awesome video about this awesome app that you built, and we asked you to come back to talk about one thing that a lot of people asked about in the comments,
+
+21
+00:01:42,720 --> 00:01:43,920
+which is onboarding.
+
+22
+00:01:43,920 --> 00:01:49,439
+But, if you could remind us real quick about who you are, what you built, and how your app is doing now.
+
+23
+00:01:49,439 --> 00:01:50,159
+>> Yeah, of course.
+
+24
+00:01:50,159 --> 00:01:51,520
+Thanks for having me on, Pat.
+
+25
+00:01:51,520 --> 00:01:56,479
+So, my name is Mal Baron and I built a mobile app that makes over 40K a month.
+
+26
+00:01:56,479 --> 00:01:59,920
+And I don't have, you know, a design background or a UX background at all.
+
+27
+00:01:59,920 --> 00:02:01,600
+I studied finance in college.
+
+28
+00:02:01,600 --> 00:02:03,920
+I'm just a guy who taught himself about AI.
+
+29
+00:02:03,920 --> 00:02:12,560
+But what I do have is the experience of building a few mobile apps from scratch, just completely obsessing over what actually makes them convert.
+
+30
+00:02:12,560 --> 00:02:16,959
+Through trial and error, I started iterating my onboardings and studying what I consider to be,
+
+31
+00:02:16,959 --> 00:02:18,879
+you know, the best onboardings in the market.
+
+32
+00:02:18,879 --> 00:02:22,480
+and you know everything changed and that's when my app started skyrocketing.
+
+33
+00:02:22,480 --> 00:02:29,040
+>> I hear a lot of people on the channel talk about this onboarding and how important it is with mobile apps but could you just explain what that means?
+
+34
+00:02:29,040 --> 00:02:32,000
+Like what is onboarding and why is it so important?
+
+35
+00:02:32,000 --> 00:02:32,160
+>> Yeah.
+
+36
+00:02:32,160 --> 00:02:41,440
+So I'm going to sound like a broken record but your onboarding is the single most important part of your app because an app is nothing more than a sales funnel.
+
+37
+00:02:41,440 --> 00:02:46,000
+When a user first opens your app they have zero context about what your app does.
+
+38
+00:02:46,000 --> 00:02:48,640
+They don't know, you know, if it's going to solve their problem.
+
+39
+00:02:48,640 --> 00:02:51,200
+And this is why the onboarding matters even more.
+
+40
+00:02:51,200 --> 00:02:57,360
+Right now, every screen before hitting the payw wall is just building a case of why the user should pay you.
+
+41
+00:02:57,360 --> 00:02:57,920
+Okay, cool.
+
+42
+00:02:57,920 --> 00:03:01,680
+I want you to give me the highle overview of how to set up an onboarding.
+
+43
+00:03:01,680 --> 00:03:06,080
+What are like the pillars of onboarding that pretty much any app should have?
+
+44
+00:03:06,080 --> 00:03:08,959
+So, onboardings are like a story.
+
+45
+00:03:08,959 --> 00:03:12,720
+They have an introduction, a climax, and a conclusion.
+
+46
+00:03:12,720 --> 00:03:18,239
+Every screen serves a purpose and most of them have nothing to do with the product itself.
+
+47
+00:03:18,239 --> 00:03:24,720
+They're about making the user feel heard, making them reflect, and making them convince themselves that they need your app.
+
+48
+00:03:24,720 --> 00:03:26,879
+So, just keep that in mind as we go through this.
+
+49
+00:03:26,879 --> 00:03:27,440
+>> Okay, cool.
+
+50
+00:03:27,440 --> 00:03:29,040
+So, let's go through the three pillars.
+
+51
+00:03:29,040 --> 00:03:32,400
+So, it's introduction, climax, and conclusion.
+
+52
+00:03:32,400 --> 00:03:36,480
+Let's dive into the introduction side of things right now.
+
+53
+00:03:36,480 --> 00:03:40,480
+Can you walk me through all the concepts in here and all the screens of your app?
+
+54
+00:03:40,480 --> 00:03:44,560
+So, I actually have four principles in the introduction section of the onboarding.
+
+55
+00:03:44,560 --> 00:03:49,760
+The first one being that you need to frame the problem and solution in the first three screens of your app.
+
+56
+00:03:49,760 --> 00:03:56,400
+The sooner the better cuz confusion honestly just kills conversions and users need to know exactly what they're getting themselves into.
+
+57
+00:03:56,400 --> 00:04:01,120
+In prayer locks case, the way we do it is we welcome you and then in the second screen right there,
+
+58
+00:04:01,120 --> 00:04:04,720
+we tell you, hey, like, do you ever feel like your phone gets more attention than God?
+
+59
+00:04:04,720 --> 00:04:08,400
+We're already framing the problem of phone addiction, social media addiction.
+
+60
+00:04:08,400 --> 00:04:13,519
+And then in the third screen, we give you a solution in very simple terms.
+
+61
+00:04:13,519 --> 00:04:15,280
+Prayer lock helps you put God first.
+
+62
+00:04:15,280 --> 00:04:21,440
+So right there, we're framing the exact problem the user has, and the user knows exactly what they're going to get from the app.
+
+63
+00:04:21,440 --> 00:04:28,000
+The second principle of the introduction is to give the users an aha moment in under a minute.
+
+64
+00:04:28,000 --> 00:04:32,479
+Hit them with a stat or realization that is very personal to them.
+
+65
+00:04:32,479 --> 00:04:39,280
+The way we do that in Prairie Lock's case is actually very unhinged because we ask you first for your name,
+
+66
+00:04:39,280 --> 00:04:43,040
+but then we ask their age and how long they are on their phone each day.
+
+67
+00:04:43,040 --> 00:04:49,440
+And whenever they answer in the next screen, they always get a stat that kind of just blows them away,
+
+68
+00:04:49,440 --> 00:04:54,479
+which is on average they're going to use their phone for 16 years over their lifetime.
+
+69
+00:04:54,479 --> 00:04:56,479
+But then we tell them, hey, don't worry.
+
+70
+00:04:56,479 --> 00:04:57,759
+We are the solution again.
+
+71
+00:04:57,759 --> 00:05:00,080
+Do you have just 5 minutes for godage day?
+
+72
+00:05:00,080 --> 00:05:01,280
+Let's build a plan for you.
+
+73
+00:05:01,280 --> 00:05:04,720
+And then the next principle of the onboarding is to ask questions.
+
+74
+00:05:04,720 --> 00:05:12,320
+Now most people think that the questions are so that you as the app maker get to know more about your users.
+
+75
+00:05:12,320 --> 00:05:13,520
+But that's not the case at all.
+
+76
+00:05:13,520 --> 00:05:20,160
+What you absolutely want to do is to make the users convince themselves that this is an app that they need.
+
+77
+00:05:20,160 --> 00:05:25,199
+In Prairie Lock's case, again, we just ask very personal questions that we already know the users struggle with,
+
+78
+00:05:25,199 --> 00:05:26,479
+like thinking bigger.
+
+79
+00:05:26,479 --> 00:05:28,400
+What does a thriving face look like to you?
+
+80
+00:05:28,400 --> 00:05:30,560
+And each answer choice is very deliberate.
+
+81
+00:05:30,560 --> 00:05:37,039
+The fourth principle of the introduction is that you need to reflect the users's answers back at them.
+
+82
+00:05:37,039 --> 00:05:40,880
+If in your onboarding you ask a question about social media addiction and they tell you,
+
+83
+00:05:40,880 --> 00:05:43,199
+"Yes, I have social media addiction."
+
+84
+00:05:43,199 --> 00:05:47,280
+In the next screen, you would say, "Hey, we see that you have social media addiction."
+
+85
+00:05:47,280 --> 00:05:50,960
+So, in prayer lock's case, we ask them, "What do you want to achieve with prayer lock?"
+
+86
+00:05:50,960 --> 00:05:54,880
+They say, "I want to put God first before my phone, build consistent prayer habit, etc."
+
+87
+00:05:54,880 --> 00:05:57,840
+We just pit those same answers right back at them in the next screen.
+
+88
+00:05:57,840 --> 00:06:05,120
+And this sounds silly, but what this does is makes the user feel heard, makes the user feel like this is going to be a personalized experience for them.
+
+89
+00:06:05,120 --> 00:06:08,479
+And then something to keep in mind, longer onboardings will do better.
+
+90
+00:06:08,479 --> 00:06:16,080
+In Perilock's old onboarding, we had only around 20 screens and our conversion rate with free trial was around 3%.
+
+91
+00:06:16,080 --> 00:06:21,199
+When we updated the onboarding to be more than 10 to 15 minutes long, depending on the user,
+
+92
+00:06:21,199 --> 00:06:24,240
+our conversion rate 5xed to 15%.
+
+93
+00:06:24,240 --> 00:06:28,000
+The reason this happens is because of something called loss aversion.
+
+94
+00:06:28,000 --> 00:06:32,479
+And people in general would rather not lose than win something.
+
+95
+00:06:32,479 --> 00:06:37,199
+So by the time they get to the pay wall, they're thinking,"Hey, I already invested 10 minutes,
+
+96
+00:06:37,199 --> 00:06:39,759
+so I might as well just give it a shot and start the trial.
+
+97
+00:06:39,759 --> 00:06:40,400
+Why not?"
+
+98
+00:06:40,400 --> 00:06:43,199
+>> Ma's onboarding principles are incredible.
+
+99
+00:06:43,199 --> 00:06:46,240
+If you're building anything in mobile, this is gold.
+
+100
+00:06:46,240 --> 00:06:52,000
+We actually ended up recording a lot longer than what we could include here in this starter story build YouTube video.
+
+101
+00:06:52,000 --> 00:06:58,000
+So, we actually asked Mao to write up a detailed guide on how to create an epic onboarding flow that converts.
+
+102
+00:06:58,000 --> 00:07:02,800
+And inside, we go on an even deeper dive into each screen he sets up and why.
+
+103
+00:07:02,800 --> 00:07:08,080
+He'll break down every single screen, why it works, and how you can implement it inside your app.
+
+104
+00:07:08,080 --> 00:07:10,960
+Just head to the link in the description and download it for free.
+
+105
+00:07:10,960 --> 00:07:12,639
+All right, let's get back into the video.
+
+106
+00:07:12,639 --> 00:07:16,400
+Okay, let's move to the second pillar of onboarding.
+
+107
+00:07:16,400 --> 00:07:17,599
+What did you call this section?
+
+108
+00:07:17,599 --> 00:07:18,400
+Let's dive in.
+
+109
+00:07:18,400 --> 00:07:22,080
+So uh the second part of your onboarding is the climax.
+
+110
+00:07:22,080 --> 00:07:25,680
+And again I have two principles for the climax part of your story.
+
+111
+00:07:25,680 --> 00:07:31,360
+As in any story the climax should be the most exhilarating for users, the most fun, the most entertaining part.
+
+112
+00:07:31,360 --> 00:07:35,199
+The easiest way to get that done is through the first principle.
+
+113
+00:07:35,199 --> 00:07:39,680
+Let the user actually try your main feature during the onboarding.
+
+114
+00:07:39,680 --> 00:07:45,360
+In prayer locks case, the way we do it is we ask you two questions and then we generate a prayer for you.
+
+115
+00:07:45,360 --> 00:07:50,319
+Then the second principle of the climax on your onboarding is getting them to leave a review.
+
+116
+00:07:50,319 --> 00:07:55,840
+And the screen that actually gets them to convert on a review is showing some type of gamification aspect,
+
+117
+00:07:55,840 --> 00:07:57,280
+some type of streak.
+
+118
+00:07:57,280 --> 00:08:02,560
+In our case, we show their first day streak of their prayer journey with a little fire animation.
+
+119
+00:08:02,560 --> 00:08:05,599
+But after showing that, we then hit them with the review model.
+
+120
+00:08:05,599 --> 00:08:12,160
+And one of the reasons why reviews are so important is because most users will actually never pay,
+
+121
+00:08:12,160 --> 00:08:14,240
+especially if it's a hard payable app.
+
+122
+00:08:14,240 --> 00:08:16,879
+So a review is the next best thing they can give you.
+
+123
+00:08:16,879 --> 00:08:28,479
+So don't waste that moment by showing the review model either too early where the user is still getting familiar with your app or too late where the emotional peak has already died
+
+124
+00:08:28,479 --> 00:08:29,120
+down.
+
+125
+00:08:29,120 --> 00:08:30,879
+>> Wow, this is super cool.
+
+126
+00:08:30,879 --> 00:08:35,680
+I'm actually on the app store listing right now and you have like thousands and thousands of reviews.
+
+127
+00:08:35,680 --> 00:08:37,039
+Why get so many reviews?
+
+128
+00:08:37,039 --> 00:08:38,640
+What's the purpose of having a lot of reviews?
+
+129
+00:08:38,640 --> 00:08:41,360
+Does it bring you more revenue or why do that?
+
+130
+00:08:41,360 --> 00:08:43,760
+>> So actually review do two things for you.
+
+131
+00:08:43,760 --> 00:08:46,720
+The first one and the most important one is social proof.
+
+132
+00:08:46,720 --> 00:08:56,959
+When you're about to download the app and you know in the app store and you see 13,000 reviews like that gives you much more confidence that this is you know something that you might want to download cuz a lot of people have done
+
+133
+00:08:56,959 --> 00:08:57,440
+it too.
+
+134
+00:08:57,440 --> 00:09:02,800
+And then the other reason is for ASO you know it's just how well you rank on the app store.
+
+135
+00:09:02,800 --> 00:09:07,519
+So you want to make sure that you're at least ranking at number one in your app's name keyword.
+
+136
+00:09:07,519 --> 00:09:09,120
+So my app is called prayer lock.
+
+137
+00:09:09,120 --> 00:09:12,240
+I want to make sure I'm number one for prayer lock.
+
+138
+00:09:12,240 --> 00:09:12,560
+Okay.
+
+139
+00:09:12,560 --> 00:09:14,399
+So let's move to the next pillar.
+
+140
+00:09:14,399 --> 00:09:16,800
+What's the final pillar of a great onboarding?
+
+141
+00:09:16,800 --> 00:09:18,160
+Can you walk us through that?
+
+142
+00:09:18,160 --> 00:09:18,399
+>> Yeah.
+
+143
+00:09:18,399 --> 00:09:21,760
+So the last pillar of your onboarding is of course the conclusion.
+
+144
+00:09:21,760 --> 00:09:24,000
+And for the conclusion I have three principles.
+
+145
+00:09:24,000 --> 00:09:26,800
+The first one is to show them a summary of their journey.
+
+146
+00:09:26,800 --> 00:09:30,720
+You know where they are, where they want to go and how your app gets them there.
+
+147
+00:09:30,720 --> 00:09:35,600
+And a lot of this stuff sounds very repetitive because in the introduction of the onboarding,
+
+148
+00:09:35,600 --> 00:09:37,839
+we were actually reflecting back the answers.
+
+149
+00:09:37,839 --> 00:09:38,800
+But you want to keep doing that.
+
+150
+00:09:38,800 --> 00:09:42,720
+Remember people, especially young people, have short attention spans.
+
+151
+00:09:42,720 --> 00:09:45,519
+So, it's a good thing to be repeating yourself constantly.
+
+152
+00:09:45,519 --> 00:09:49,600
+In our app's case, we actually first show them a little summary here.
+
+153
+00:09:49,600 --> 00:09:52,800
+Tell them, hey, you're going to have a prayer habit in 30 days.
+
+154
+00:09:52,800 --> 00:09:57,600
+Try to always connect your app to a certain habit that they can achieve in an x amount of days.
+
+155
+00:09:57,600 --> 00:10:04,160
+And then the second and actually controversial principle is to tell your users upfront that your app is paid.
+
+156
+00:10:04,160 --> 00:10:06,399
+Only if you have a free trial.
+
+157
+00:10:06,399 --> 00:10:09,839
+If you don't, I would say skip this because you might lose a lot of people there.
+
+158
+00:10:09,839 --> 00:10:14,560
+And then compare your app against something they already pay for in real life.
+
+159
+00:10:14,560 --> 00:10:20,880
+In prayer locks case, we have this screen where we compare the cost of one coffee a month to spiritual peace.
+
+160
+00:10:20,880 --> 00:10:25,920
+So you want to make the user be thinking of your app as something that is very worth it compared to,
+
+161
+00:10:25,920 --> 00:10:28,480
+you know, some other usual thing that they do with their day.
+
+162
+00:10:28,480 --> 00:10:35,120
+And then the third and last principle is to try to get the user to say that they are committed to using your app.
+
+163
+00:10:35,120 --> 00:10:40,000
+In our apps case, we literally just ask them, hey, how committed are you to making this future happen?
+
+164
+00:10:40,000 --> 00:10:45,920
+And usually we have found that 95% of them will either answer extremely committed or very committed.
+
+165
+00:10:45,920 --> 00:10:50,079
+If they were to answer any other thing, we have custom copy for that situation.
+
+166
+00:10:50,079 --> 00:10:55,519
+And then as your last screen, I would recommend a social proof screen like the one we have here.
+
+167
+00:10:55,519 --> 00:10:57,279
+And yeah, that's it for the onboarding.
+
+168
+00:10:57,279 --> 00:10:59,519
+After that, of course, you have your payw wall.
+
+169
+00:10:59,519 --> 00:11:01,360
+But don't overthink this part too much.
+
+170
+00:11:01,360 --> 00:11:06,480
+You know, the payw wall is actually not as important as people might think, at least in the beginning.
+
+171
+00:11:06,480 --> 00:11:14,079
+The only thing I would say you should add in your payw wall is a notification reminder one day before your trial ends.
+
+172
+00:11:14,079 --> 00:11:17,360
+That's like the only thing I would say to focus on for your payroll.
+
+173
+00:11:17,360 --> 00:11:17,920
+>> Okay, cool.
+
+174
+00:11:17,920 --> 00:11:20,640
+Uh, I think a lot of people watching this might be wondering, okay, this is cool.
+
+175
+00:11:20,640 --> 00:11:21,760
+You showed me your onboarding.
+
+176
+00:11:21,760 --> 00:11:25,120
+This works great for you, but what about everyone else that's building apps?
+
+177
+00:11:25,120 --> 00:11:26,800
+Will this work for them?
+
+178
+00:11:26,800 --> 00:11:29,760
+What changes would you make?
+
+179
+00:11:29,760 --> 00:11:31,519
+uh what would you have to say about this?
+
+180
+00:11:31,519 --> 00:11:34,480
+>> So actually I wasn't the first one that did this.
+
+181
+00:11:34,480 --> 00:11:38,640
+I took inspiration from other apps like Twitter, like Calai.
+
+182
+00:11:38,640 --> 00:11:45,200
+You know, a lot of these apps already have very long on boardings and already have the principles that I just described.
+
+183
+00:11:45,200 --> 00:11:55,279
+And if you're thinking it might not work for your app, just keep in mind that Cali was just acquired for probably multiple nine figures and they have one of the longest onboardings in the mobile app space.
+
+184
+00:11:55,279 --> 00:11:57,120
+So it definitely works for your app.
+
+185
+00:11:57,120 --> 00:12:00,560
+Just make sure you follow the principles that I laid out.
+
+186
+00:12:00,560 --> 00:12:04,000
+>> Okay, so last question I have, but before I want to touch on it, you might be watching this and thinking,
+
+187
+00:12:04,000 --> 00:12:06,000
+"Okay, this is cool, but how do I get users?"
+
+188
+00:12:06,000 --> 00:12:07,600
+I'll put a link in the description down there.
+
+189
+00:12:07,600 --> 00:12:17,920
+Go watch our previous starter story interview with Mao where he talks all about that uh social media and how he drives a lot of people to actually check out the app and then go check out the onboarding.
+
+190
+00:12:17,920 --> 00:12:19,200
+So definitely check that out.
+
+191
+00:12:19,200 --> 00:12:28,160
+Last question that I have for you now is for anyone that is building an app, but they're want to figure out how I could do onboarding uh and do what you've done,
+
+192
+00:12:28,160 --> 00:12:31,040
+which is built an app from basically 0 to $40,000 a month.
+
+193
+00:12:31,040 --> 00:12:32,720
+What would be your main piece of advice?
+
+194
+00:12:32,720 --> 00:12:39,680
+So, I would say before you touch your product, before you add useless features, obsess over two things.
+
+195
+00:12:39,680 --> 00:12:44,160
+Obsess over marketing first and then over your onboarding.
+
+196
+00:12:44,160 --> 00:12:48,959
+do that until you hit at least a 10% download to trial rate.
+
+197
+00:12:48,959 --> 00:12:51,200
+Then everything else comes after that.
+
+198
+00:12:51,200 --> 00:12:53,600
+Thanks for coming on, Mau sharing all this.
+
+199
+00:12:53,600 --> 00:12:55,440
+I think people are going to really enjoy it.
+
+200
+00:12:55,440 --> 00:12:58,959
+And uh put a note in the comments what you want to see Mau talk about next.
+
+201
+00:12:58,959 --> 00:13:00,480
+We can talk about distribution.
+
+202
+00:13:00,480 --> 00:13:02,079
+We can talk about anything.
+
+203
+00:13:02,079 --> 00:13:03,120
+So put a comment in there.
+
+204
+00:13:03,120 --> 00:13:04,880
+Thanks M for coming on and sharing.
+
+205
+00:13:04,880 --> 00:13:05,360
+>> Of course.
+
+206
+00:13:05,360 --> 00:13:08,680
+Thank you Pat.

@@ -1,0 +1,3316 @@
+1
+00:00:00,240 --> 00:00:07,440
+Everyone is striving for talented, skillful, 
+smart people. Revolut values way more raw  
+
+2
+00:00:07,440 --> 00:00:12,480
+intellect and this unquenched hunger 
+to build things rather than experience.
+
+3
+00:00:12,480 --> 00:00:15,040
+I hear one of the ways you approach early products  
+
+4
+00:00:15,040 --> 00:00:18,480
+differently is you guys invest a 
+lot in actually making it good.
+
+5
+00:00:18,480 --> 00:00:24,240
+It's not getting traction. Is it because the 
+underlying idea is wrong? Or maybe your product  
+
+6
+00:00:24,240 --> 00:00:31,600
+just sucks? By forcing everyone to build a product 
+that people will love, we kind of cut out this  
+
+7
+00:00:31,600 --> 00:00:38,000
+part of uncertainty. We can cut down the product 
+in terms of functionality to just most critical  
+
+8
+00:00:38,000 --> 00:00:42,960
+features, but we will never compromise 
+on the quality and UX and the aesthetics.
+
+9
+00:00:42,960 --> 00:00:47,920
+Is there anything that you've figured out about 
+just how to set up new products for success?
+
+10
+00:00:47,920 --> 00:00:52,960
+If something is 99% done, it's 
+closer to 0% rather than 100%.
+
+11
+00:00:53,840 --> 00:00:59,360
+Today, my guest is Dmitry Zlokazov. Dmitry 
+is global head of product at Revolut,  
+
+12
+00:00:59,360 --> 00:01:04,800
+which is a finance super app offering customer 
+savings and checking accounts, crypto, investing,  
+
+13
+00:01:04,800 --> 00:01:10,960
+joint accounts, even mortgages. Not only was 
+it last valued at over $60 billion, but in the  
+
+14
+00:01:10,960 --> 00:01:14,960
+research that I've been doing into which companies 
+hire and incubate the best product managers,  
+
+15
+00:01:14,960 --> 00:01:21,120
+Revolut was right at the top alongside Palantir 
+and Intercom. And so in our conversation, we dig  
+
+16
+00:01:21,120 --> 00:01:26,320
+into what Revolut has learned about producing and 
+hiring great product leaders, including a focus  
+
+17
+00:01:26,320 --> 00:01:32,160
+on ownership, having people solve really painful 
+and complex problems while making the experience  
+
+18
+00:01:32,160 --> 00:01:37,920
+wow and lovable by users. Also indexing towards 
+hiring really smart and driven people early in  
+
+19
+00:01:37,920 --> 00:01:41,920
+their career versus people with a ton of 
+experience in the space and so much more.  
+
+20
+00:01:41,920 --> 00:01:46,720
+If you're looking for a job that will accelerate 
+your product career or want to help your product  
+
+21
+00:01:46,720 --> 00:01:50,560
+team level up, this episode is for you.
+If you enjoy this podcast, don't forget  
+
+22
+00:01:50,560 --> 00:01:53,920
+to subscribe and follow it in your 
+favorite podcasting app or YouTube. Also,  
+
+23
+00:01:53,920 --> 00:01:58,960
+if you become an annual subscriber of my 
+newsletter, you get a year free of Linear,  
+
+24
+00:01:58,960 --> 00:02:04,240
+Superhuman, Notion, Perplexity, and Granola. 
+Check it out at lennysnewsletter.com and click  
+
+25
+00:02:04,240 --> 00:02:12,080
+bundle. With that, I bring you Dmitry Zlokazov.
+This entire episode is brought to you by Stripe.  
+
+26
+00:02:12,080 --> 00:02:16,480
+There's a reason that I've had more guests on 
+this podcast from Stripe than any other company.  
+
+27
+00:02:16,480 --> 00:02:21,520
+It's because they hire the best people and they 
+build incredible products. You probably know them  
+
+28
+00:02:21,520 --> 00:02:26,560
+for their payments platform, which powers my 
+newsletter, and also companies like NVIDIA and  
+
+29
+00:02:26,560 --> 00:02:32,000
+Salesforce and Zoom and DoorDash. What you may not 
+know is that they have several other products that  
+
+30
+00:02:32,000 --> 00:02:37,520
+can help accelerate your revenue, such as Stripe 
+Billing, which powers billing for companies that  
+
+31
+00:02:37,520 --> 00:02:45,280
+you may have heard of. OpenAI, Anthropic, Figma, 
+Atlassian, and over 300,000 other companies.  
+
+32
+00:02:45,280 --> 00:02:50,720
+Stripe Billing lets you bill and manage customers 
+however you want from simple recurring billing to  
+
+33
+00:02:50,720 --> 00:02:56,160
+usage-based billing to sales-negotiated contracts.
+There's also Stripe's Optimized Checkout suite,  
+
+34
+00:02:56,160 --> 00:03:01,040
+which is a plug-and-play super optimized 
+payment flow that natively supports over  
+
+35
+00:03:01,040 --> 00:03:06,560
+100 global dynamic payment methods. There's also 
+a product called Link, which is an accelerated  
+
+36
+00:03:06,560 --> 00:03:11,840
+checkout experience built specifically to increase 
+your checkout conversion. Every single one of the  
+
+37
+00:03:11,840 --> 00:03:17,840
+Forbes top 50 AI companies that have a product 
+in the market today use Stripe to monetize it.  
+
+38
+00:03:17,840 --> 00:03:24,560
+Half of Fortune 100 companies use Stripe. 
+$1.4 trillion flows through Stripe annually,  
+
+39
+00:03:24,560 --> 00:03:30,240
+which is equivalent to over 1% of global GDP. 
+Use Stripe to handle all of your payment-related  
+
+40
+00:03:30,240 --> 00:03:35,440
+needs, billing, manage revenue operations, 
+and launch or invent new business models.  
+
+41
+00:03:35,440 --> 00:03:46,160
+Learn more at stripe.com. Dmitry, thank you so 
+much for being here and welcome to the podcast.
+
+42
+00:03:46,160 --> 00:03:48,320
+Hi, Lenny. I'm happy to be here.
+
+43
+00:03:48,320 --> 00:03:53,280
+As you know, I've been doing a bunch of research 
+into which companies hire and create the best  
+
+44
+00:03:53,280 --> 00:03:56,880
+product managers, and I've been triangulating 
+this across a bunch of different data points.  
+
+45
+00:03:56,880 --> 00:04:01,840
+I've been looking at which companies alumni 
+product managers get promoted most when they  
+
+46
+00:04:01,840 --> 00:04:06,720
+leave the company, become chief product officers 
+at the highest rate when they leave the company,  
+
+47
+00:04:06,720 --> 00:04:12,400
+become the first PM at a startup, also start 
+their own companies. And when I triangulate it  
+
+48
+00:04:12,400 --> 00:04:17,920
+across all these different data points, there's 
+three companies that are kind of sat at the top,  
+
+49
+00:04:17,920 --> 00:04:22,880
+you guys, Revolut, Palantir, and Intercom.
+Clearly you guys are doing something  
+
+50
+00:04:22,880 --> 00:04:27,920
+really special. I don't think a lot of people, 
+especially in the US know a ton about Revolut,  
+
+51
+00:04:27,920 --> 00:04:31,600
+and so I'm really excited to have you here. 
+I'm really excited to basically extract as  
+
+52
+00:04:31,600 --> 00:04:36,320
+much wisdom as I can from you about what 
+you guys have figured out in helping in  
+
+53
+00:04:36,320 --> 00:04:40,560
+hiring and training product managers. So I 
+want to actually start with giving people  
+
+54
+00:04:40,560 --> 00:04:45,360
+a slight understanding of what is Revolut. 
+I think a lot of people in the US especially  
+
+55
+00:04:45,360 --> 00:04:48,880
+don't know much about it. So what's the 
+simplest way to understand what you guys do?
+
+56
+00:04:48,880 --> 00:04:56,880
+Revolut challenges banks in 50 different 
+countries and it all started 10 years ago  
+
+57
+00:04:56,880 --> 00:05:02,400
+in London. So maybe let me give you a bit of a 
+context, especially for someone based in the US,  
+
+58
+00:05:02,400 --> 00:05:10,000
+it's important to understand that European banking 
+landscape is very diverse. In the US if you travel  
+
+59
+00:05:10,000 --> 00:05:14,880
+from state to state, things are different, 
+but for example, you always pay in US dollars,  
+
+60
+00:05:14,880 --> 00:05:21,440
+right? In the UK you pay in British Pound. If you 
+travel to mainland Europe, you will pay in Euro,  
+
+61
+00:05:21,440 --> 00:05:27,600
+but if you go to Switzerland, you'll pay in 
+Swiss francs. If you go to Sweden, you'll pay  
+
+62
+00:05:27,600 --> 00:05:31,680
+in Swedish Krona and so on and so-and-so. 
+Overall, there are 25 different currencies  
+
+63
+00:05:31,680 --> 00:05:37,200
+and every time you were traveling and paying 
+in a different currency, banks were charging  
+
+64
+00:05:37,200 --> 00:05:44,800
+you exorbitant fees on top of terrible foreign 
+exchange rates, and that's when Revolut launched  
+
+65
+00:05:44,800 --> 00:05:54,800
+as a multi-currency card and people loved it.
+They loved that Revolut was saving them 50 or  
+
+66
+00:05:54,800 --> 00:06:03,920
+100 euros, but even more so they loved the 
+transparency and simplicity of the product  
+
+67
+00:06:03,920 --> 00:06:10,880
+and that's why when we started rolling out more 
+and more products based on those principles,  
+
+68
+00:06:10,880 --> 00:06:16,160
+they were quickly getting trust of people. They 
+were quickly getting traction. So that's how  
+
+69
+00:06:16,160 --> 00:06:23,360
+P2P transfers appeared, and then frictionless 
+crypto buying and withdrawal to a bank account  
+
+70
+00:06:23,360 --> 00:06:27,760
+appeared. And then more and more products 
+created products, savings products and so on.
+
+71
+00:06:27,760 --> 00:06:30,960
+Awesome. And then just to give people 
+a few kind of scale of the company,  
+
+72
+00:06:30,960 --> 00:06:33,840
+how many employees are there roughly? I 
+think the last valuation something around  
+
+73
+00:06:33,840 --> 00:06:36,720
+60 billion. I don't know if you can even 
+comment on that, but just what are some  
+
+74
+00:06:36,720 --> 00:06:39,680
+numbers real quick for people to understand 
+the scale of the company at this point?
+
+75
+00:06:40,320 --> 00:06:46,080
+The headcount is not something we're trying 
+to increase, to be honest. Actually Revolut  
+
+76
+00:06:46,080 --> 00:06:51,120
+tries to stay as lean as possible, but 
+I think it's just that our appetite  
+
+77
+00:06:51,120 --> 00:06:58,320
+for growth is so big that I think we're 
+currently at maybe 6 or 7,000 employees.
+
+78
+00:06:58,320 --> 00:07:03,440
+Wow. Okay, cool. So let's get into what 
+you've learned about building an amazing  
+
+79
+00:07:03,440 --> 00:07:06,480
+product team and also hiring an amazing 
+product team. So first of all, you call  
+
+80
+00:07:06,480 --> 00:07:10,800
+your product managers product owners, and when 
+we were chatting through initially it was like,  
+
+81
+00:07:10,800 --> 00:07:15,600
+"Oh, I see. It's just like a big scrum business," 
+and they just have all these product owners who  
+
+82
+00:07:15,600 --> 00:07:19,040
+many times on this podcast people have talked 
+about that's not actually a product manager,  
+
+83
+00:07:19,040 --> 00:07:24,320
+but that's not at all how you work. So in this 
+context, product owner's an actual owner. Talk  
+
+84
+00:07:24,320 --> 00:07:28,480
+about just the story behind why you call 
+your product managers, product owners.
+
+85
+00:07:28,480 --> 00:07:34,720
+Yeah, it's not a scrum term for us, it's just our 
+take on emphasizing how ownership is important,  
+
+86
+00:07:34,720 --> 00:07:43,200
+really. So product owners are central to the 
+company and its growth. They are end-to-end  
+
+87
+00:07:43,200 --> 00:07:50,240
+responsible for the product, for this part of 
+the business, and for their customers to be  
+
+88
+00:07:50,240 --> 00:08:01,680
+happy. And for that, they do really everything. 
+They run the teams, they define which roadmap  
+
+89
+00:08:02,640 --> 00:08:09,120
+we need to build to improve certain 
+business metrics, and they also contribute  
+
+90
+00:08:09,120 --> 00:08:16,960
+to high-level company strategy, but then most 
+importantly, they execute on it relentlessly and  
+
+91
+00:08:18,720 --> 00:08:24,160
+they are ultimate responsible for the 
+product to be shipped and achieve results.
+
+92
+00:08:24,160 --> 00:08:27,680
+There's always this term of mini-CEO, PM as a 
+mini-CEO, and it feels like in your context,  
+
+93
+00:08:27,680 --> 00:08:31,120
+that's actually what you try to do with your 
+product team is they're essentially mini-CEOs.  
+
+94
+00:08:31,120 --> 00:08:35,680
+They have a lot of power. I think engineers, 
+designers report to them. Is that right?
+
+95
+00:08:35,680 --> 00:08:38,880
+Yeah, correct. Well, I prefer to say local CEO.
+
+96
+00:08:38,880 --> 00:08:41,600
+Local CEO. Okay, let's talk 
+about that. Yeah, yeah.
+
+97
+00:08:41,600 --> 00:08:51,520
+Yeah, but that's true. So the way we operate, 
+we have these fully cross-functional teams,  
+
+98
+00:08:51,520 --> 00:08:56,080
+meaning they're staffed with all necessary 
+functions, engineers data, analysts, designers,  
+
+99
+00:08:56,080 --> 00:09:05,840
+operational managers and so on. And we also 
+operate in metrics. So everyone has a line manager  
+
+100
+00:09:05,840 --> 00:09:13,840
+and a functional manager. So product owner is 
+always the line manager for everyone on the team,  
+
+101
+00:09:13,840 --> 00:09:22,160
+meaning product owner defines what they need to 
+do, but then functional managers, they define how  
+
+102
+00:09:22,160 --> 00:09:28,480
+these things are need to be built and essentially 
+with the right level of quality and so on.
+
+103
+00:09:28,480 --> 00:09:34,240
+I love this because it's so fun just to learn 
+about such different ways of operating. Another  
+
+104
+00:09:34,240 --> 00:09:37,440
+fact that I saw is that there's two types 
+of product owners. There's kind of like  
+
+105
+00:09:37,440 --> 00:09:41,040
+a UX product owner, and then there's a 
+different like technical product owner.
+
+106
+00:09:41,040 --> 00:09:42,400
+We actually have three.
+
+107
+00:09:42,400 --> 00:09:43,040
+Three.
+
+108
+00:09:43,040 --> 00:09:51,520
+And the third type becomes increasingly more 
+important. So the first type is UX product owners.  
+
+109
+00:09:51,520 --> 00:09:56,880
+Then there are technical product owners, and 
+then there are data science product owners. So UX  
+
+110
+00:09:56,880 --> 00:10:09,120
+product owners are the ones who work on consumer 
+facing part of the product. Usually they have a  
+
+111
+00:10:09,120 --> 00:10:19,920
+great taste for things and they understand what 
+constitutes UX that will work and which things  
+
+112
+00:10:19,920 --> 00:10:31,040
+will not work. So they also have this expertise in 
+the industry. Then tech product owners, they are  
+
+113
+00:10:31,040 --> 00:10:42,080
+the ones who delve deepest into details. Usually 
+those are former engineers who grew into making  
+
+114
+00:10:42,080 --> 00:10:48,000
+decisions and driving business. And the data 
+science product owners are usually former data  
+
+115
+00:10:48,000 --> 00:10:55,680
+scientists who decided to grow into management 
+positions, but they're still very hands-on. 
+
+116
+00:10:55,680 --> 00:11:03,200
+And you know what? There are way more things that 
+are common to each of these three specializations.  
+
+117
+00:11:03,200 --> 00:11:10,480
+So what we see sometimes is people just shifting 
+them because I would say that what defines the  
+
+118
+00:11:10,480 --> 00:11:19,360
+specialization is probably 5, 10, 15% while 
+85 to 90% is common to each one of them. And  
+
+119
+00:11:19,360 --> 00:11:30,720
+those things are, so first of all, being a great 
+problem solver and have a great linear thinking,  
+
+120
+00:11:30,720 --> 00:11:40,640
+but also have a creative approach towards 
+nonlinear problems. Then building this context  
+
+121
+00:11:40,640 --> 00:11:48,320
+for customer and building empathy towards 
+customer and translating it into the team. 
+
+122
+00:11:48,320 --> 00:11:58,800
+Then going down to details very, very deep because 
+in our domain there are no obvious things and  
+
+123
+00:12:00,240 --> 00:12:06,320
+you need to get to the root cause of the 
+problem really, really deep to understand  
+
+124
+00:12:06,320 --> 00:12:12,240
+what will work and what will not work. And that 
+means that you also need to be quite technical,  
+
+125
+00:12:12,240 --> 00:12:19,120
+even if you are an expert, you still need to 
+often go as deep as sitting with engineers and  
+
+126
+00:12:19,120 --> 00:12:28,320
+reading code. And then I would also emphasize 
+the importance of business acumen because  
+
+127
+00:12:29,040 --> 00:12:36,160
+we tend to measure and quantify product 
+performance a lot. And you need to understand,  
+
+128
+00:12:36,160 --> 00:12:41,920
+okay, what things will we build that will drive 
+eventually that business metric and that target?
+
+129
+00:12:41,920 --> 00:12:46,160
+So I love this idea of the product owners having 
+to go really deep. I think a lot of people hearing  
+
+130
+00:12:46,160 --> 00:12:50,240
+this, they think they can go deep, go deep, really 
+understand the details of what they're working  
+
+131
+00:12:50,240 --> 00:12:55,280
+on. I'm curious if there's an example that's 
+illustrative of just what you actually mean here.
+
+132
+00:12:55,280 --> 00:13:02,800
+For example, to provide the best possible 
+product in every country of presence,  
+
+133
+00:13:02,800 --> 00:13:09,040
+we need to have necessary licenses. In Europe, 
+it means that we need to launch local branches  
+
+134
+00:13:09,040 --> 00:13:14,480
+of our European bank, for example, a branch 
+for France, a branch for Germany, or a branch  
+
+135
+00:13:14,480 --> 00:13:23,120
+for Italy. To launch a branch, you need to fully 
+comply with all necessary regulation. You need to  
+
+136
+00:13:25,360 --> 00:13:33,120
+report necessary data on customers to various 
+regulators and authorities. You need to register  
+
+137
+00:13:33,120 --> 00:13:43,600
+with local payment systems. And each of these 
+things, they have a lot of projects nested within.  
+
+138
+00:13:43,600 --> 00:13:48,480
+We have a very lean team of just a few people 
+who need to scope everything and do it at the  
+
+139
+00:13:48,480 --> 00:13:57,760
+scale of 50 countries. So the way we do it is 
+we go very deep on example of each of these  
+
+140
+00:13:57,760 --> 00:14:01,680
+projects. For example, we launched a branch in 
+Ireland, we launched a branch in Netherlands. 
+
+141
+00:14:01,680 --> 00:14:09,200
+Then we reverse engineered what was the best 
+process to do it, and then we went back up on  
+
+142
+00:14:09,200 --> 00:14:16,000
+top level and we said, okay, but what's the 
+ideal framework of doing it at scale? And  
+
+143
+00:14:16,000 --> 00:14:22,480
+then we formalized it into a process really 
+like an algorithmic process with steps and  
+
+144
+00:14:22,480 --> 00:14:28,880
+quality gates and assay needs, what people 
+do we need to hire and how soon do we need  
+
+145
+00:14:28,880 --> 00:14:37,120
+to start doing that before we want to launch a 
+new country. Then, so it's not only going deep,  
+
+146
+00:14:37,120 --> 00:14:45,920
+but also being flexible and doing this switch 
+between zooming in very deep and then raising  
+
+147
+00:14:45,920 --> 00:14:52,800
+on the level of helicopter view and then 
+understanding, okay, so this seems very,  
+
+148
+00:14:52,800 --> 00:14:59,280
+very complex in details, but then when you 
+zoom out, how can we simplify it and build  
+
+149
+00:14:59,280 --> 00:15:05,520
+a robust process around it, which is scalable? 
+And that's something that we have to do a lot.
+
+150
+00:15:05,520 --> 00:15:07,840
+As you're talking and we go through this chat,  
+
+151
+00:15:07,840 --> 00:15:13,120
+I'm keeping kind of track of what I think is 
+most contributing to your alumni product owners,  
+
+152
+00:15:13,120 --> 00:15:17,600
+product managers becoming so successful. So a 
+couple of things so far that I think are probably  
+
+153
+00:15:17,600 --> 00:15:22,240
+contributing to this is one is just having a 
+lot of ownership over what they're building,  
+
+154
+00:15:22,240 --> 00:15:27,520
+which leads to building skills to start companies 
+and become leaders at other companies. So these  
+
+155
+00:15:27,520 --> 00:15:32,640
+product owners that you have are just own 
+a lot and are essentially GMs of whatever  
+
+156
+00:15:32,640 --> 00:15:36,400
+product they're working on. And then there's 
+this depth and complexity where you have to  
+
+157
+00:15:36,400 --> 00:15:41,440
+really get good at understanding a problem really 
+deeply. I imagine many of these people go on to  
+
+158
+00:15:41,440 --> 00:15:45,440
+work on something like that later, somewhere 
+else because they've spent all this time,  
+
+159
+00:15:45,440 --> 00:15:50,720
+or they just get really good at dealing 
+with complex many layered problems. So is  
+
+160
+00:15:50,720 --> 00:15:54,480
+there anything else just kind of along those 
+lines as I say that you think is important?
+
+161
+00:15:54,480 --> 00:16:02,960
+I would probably add an obsession 
+with building wow product.
+
+162
+00:16:02,960 --> 00:16:05,680
+Wow. W-O-W?
+
+163
+00:16:05,680 --> 00:16:06,080
+W-O-W.
+
+164
+00:16:06,080 --> 00:16:06,480
+Cool.
+
+165
+00:16:08,320 --> 00:16:13,760
+I think in FinTech overall, this is 
+probably the most neglected part usually,  
+
+166
+00:16:13,760 --> 00:16:22,800
+but it's also a part that we at Revolut, we pay 
+enormous attention to. So it's not only when you  
+
+167
+00:16:22,800 --> 00:16:28,720
+do a trade in the app or when you send money, 
+it's very important for it to be very fast and  
+
+168
+00:16:30,720 --> 00:16:35,840
+cheap process for you so that you don't 
+pay a lot of fees. But we also pay a  
+
+169
+00:16:35,840 --> 00:16:42,000
+lot of attention to look and feel of 
+the app and how smooth it is and how  
+
+170
+00:16:42,000 --> 00:16:51,920
+frictionless the process. Not only we invest 
+in reducing clicks and optimizing finals,  
+
+171
+00:16:51,920 --> 00:16:59,120
+but we also want people to feel that we really 
+cared about them. We also want people to feel that  
+
+172
+00:16:59,120 --> 00:17:09,920
+we love our customers and we applied extra effort 
+for the product to look great and feel great. And  
+
+173
+00:17:10,640 --> 00:17:17,040
+I hear this a lot from our customers, like the 
+app is something they really love and it helps  
+
+174
+00:17:17,040 --> 00:17:22,960
+them solve their problems. It's at least one 
+of the ingredients of the company's success. 
+
+175
+00:17:22,960 --> 00:17:28,160
+And I think people that work at Revolut, they 
+built habit of paying attention to these small  
+
+176
+00:17:28,160 --> 00:17:35,680
+nuances, small details that make the product 
+lovable. And then second is handling this context  
+
+177
+00:17:35,680 --> 00:17:44,240
+because it's a lot of details where you need 
+to dive, but there are also a lot of dimensions  
+
+178
+00:17:44,240 --> 00:17:53,280
+where you need to dive into different details. 
+And I think this ability to keep this large  
+
+179
+00:17:53,280 --> 00:18:00,400
+context in your mind and consider second order 
+effects and view subjects from multiple angles,  
+
+180
+00:18:00,400 --> 00:18:05,120
+I think that this is also a very important 
+skill that people usually train at Revolut.
+
+181
+00:18:05,120 --> 00:18:09,760
+Okay, cool. So we have three bullet 
+points on the ingredients of great  
+
+182
+00:18:10,480 --> 00:18:14,640
+product managers slash owners that 
+you guys incubate. On this wow piece,  
+
+183
+00:18:14,640 --> 00:18:18,400
+which I love. How do you operationalize this 
+sort of thing? I imagine a big part of it is  
+
+184
+00:18:18,400 --> 00:18:22,800
+hiring people that are really good at this and 
+value building lovable products. Is there any  
+
+185
+00:18:22,800 --> 00:18:27,760
+way you kind of have a process around making 
+sure the things you ship are wow and lovable?
+
+186
+00:18:27,760 --> 00:18:34,000
+Two things that you need to understand about how 
+Revolut operates is that we operate in small lean  
+
+187
+00:18:34,000 --> 00:18:40,640
+teams that are tasked to build products and as I 
+mentioned, and having end-to-end responsibility  
+
+188
+00:18:40,640 --> 00:18:45,360
+for products. And usually they're the ones who 
+build it from zero and then they're growing and  
+
+189
+00:18:45,360 --> 00:18:52,800
+developing this product. And then another thing 
+is that company is very flat and hierarchy is very  
+
+190
+00:18:52,800 --> 00:19:01,520
+flat. We still have our founders, Nick and Vlad, 
+very hands-on going down to details for every  
+
+191
+00:19:01,520 --> 00:19:11,680
+product and every part of the business. And every 
+week they have product reviews with every team  
+
+192
+00:19:11,680 --> 00:19:18,640
+giving an opportunity to every product 
+owner present directly to CEO and CTO and  
+
+193
+00:19:19,440 --> 00:19:27,680
+show what increment has team achieved 
+in the last week, but also get steering  
+
+194
+00:19:28,320 --> 00:19:34,240
+from founders, which is super valuable.
+Essentially founders of the company,  
+
+195
+00:19:34,240 --> 00:19:40,480
+they still review a hundred percent of screens 
+that are being shipped and everything that you  
+
+196
+00:19:40,480 --> 00:19:49,280
+will see in the app pass this review. And there 
+are a lot of eyeballs that were scrutinizing this  
+
+197
+00:19:49,280 --> 00:19:56,160
+and thinking of all possible edge cases 
+and nuances that we need to consider to  
+
+198
+00:19:56,160 --> 00:20:02,800
+make sure that every single customer will 
+be happy in this product, in this flow.
+
+199
+00:20:02,800 --> 00:20:06,480
+That seems to be a consistent theme 
+in products that are incredible is  
+
+200
+00:20:06,480 --> 00:20:11,680
+the founders are deeply involved in the 
+experience and review everything. How  
+
+201
+00:20:11,680 --> 00:20:15,760
+many product owners are there at Revolut? 
+Just to give people a sense by the way?
+
+202
+00:20:15,760 --> 00:20:20,880
+Oh, I'm afraid to say it's already 
+more than 150 people, maybe 170.
+
+203
+00:20:20,880 --> 00:20:26,000
+Cool. That's what I would expect. And then you 
+said that there's kind of these three types,  
+
+204
+00:20:26,000 --> 00:20:28,720
+there's kind of like the eng 
+type, the PM, traditional type,  
+
+205
+00:20:28,720 --> 00:20:33,120
+and there's the data product owner. When 
+you hire the UX type of product owner today,  
+
+206
+00:20:33,120 --> 00:20:36,640
+is their previous role usually a 
+product manager at another company?
+
+207
+00:20:36,640 --> 00:20:44,560
+Yes, but I would say that not necessarily 
+it's a very experienced product manager.  
+
+208
+00:20:44,560 --> 00:20:54,240
+Well maybe even it's way more important to 
+have this hunger for building things and  
+
+209
+00:20:55,920 --> 00:21:05,280
+having the raw intellect. And we always try to 
+find people with these intrinsic traits rather  
+
+210
+00:21:05,280 --> 00:21:13,840
+than hiring people who are very experienced but 
+maybe are not super excited about building things.
+
+211
+00:21:13,840 --> 00:21:18,720
+What percentage of your product owners come 
+from internal transfers from other functions?
+
+212
+00:21:18,720 --> 00:21:24,080
+It's a quite substantial part of product owners 
+who eventually become very successful by the  
+
+213
+00:21:24,080 --> 00:21:31,520
+way. So it's like a positive self-select, so 
+it means that someone already succeeded in  
+
+214
+00:21:31,520 --> 00:21:39,600
+another role. So it's a guaranteed culture 
+match, it's a guaranteed domain knowledge,  
+
+215
+00:21:39,600 --> 00:21:46,640
+and then they simply grow. Usually it could 
+be operations managers or engineers. They  
+
+216
+00:21:46,640 --> 00:21:53,920
+grow into someone who now manages the team 
+and that's why it's a very successful path.
+
+217
+00:21:53,920 --> 00:21:57,840
+So the other company on the list of top three 
+companies that produce and hire the best PMs,  
+
+218
+00:21:57,840 --> 00:22:01,920
+according to the research I've done, Palantir. 
+I just had someone that was at Palantir for a  
+
+219
+00:22:01,920 --> 00:22:06,560
+long time and we talked about exactly all 
+the same questions. And interestingly so  
+
+220
+00:22:06,560 --> 00:22:13,200
+far we have kind of these three bullet points 
+in terms of what product owners within Revolut  
+
+221
+00:22:13,200 --> 00:22:17,280
+get to do. There's a lot of ownership, there's a 
+lot of depth and complexity, and there's a lot of  
+
+222
+00:22:17,280 --> 00:22:23,760
+focus on wow lovable products. So interestingly 
+at Palantir also tons of ownership, also tons  
+
+223
+00:22:23,760 --> 00:22:28,320
+of depth and complexity. The other ingredient 
+that I want to ask you about is they also have  
+
+224
+00:22:28,320 --> 00:22:32,560
+this concept of a forward deployed engineer 
+where they put an engineer in the office of  
+
+225
+00:22:32,560 --> 00:22:36,800
+the company they're building the product from, 
+they sit there building it for them with them. 
+
+226
+00:22:36,800 --> 00:22:42,880
+And so there's a lot of skills built in terms 
+of understanding customer problems, talking to  
+
+227
+00:22:42,880 --> 00:22:47,520
+customers, getting empathy building, things like 
+that. Is there anything you guys do or focus on  
+
+228
+00:22:47,520 --> 00:22:52,160
+around just like talking to customers, the way 
+you approach having your product owners work  
+
+229
+00:22:52,160 --> 00:22:56,160
+with customers, understand problems, things like 
+that that might be helpful for people to hear?
+
+230
+00:22:56,160 --> 00:23:02,160
+For us, it's a bit easy to reach out to customers 
+simply because the customer base is so big,  
+
+231
+00:23:02,160 --> 00:23:12,240
+it's more than 50 million people and usually 
+we ourselves are power users of the product. We  
+
+232
+00:23:12,240 --> 00:23:20,480
+receive our salary into Revolut and then we spend 
+with Revolut, our friends the same. So it's like  
+
+233
+00:23:20,480 --> 00:23:27,040
+a no-brainer to talk to people continuously 
+and even if you are not proactive in it,  
+
+234
+00:23:27,040 --> 00:23:33,920
+they will reach out. If you have a problem in the 
+product, I guarantee that we know about it very,  
+
+235
+00:23:33,920 --> 00:23:41,120
+very soon. We've also built tools for product 
+owners and designers to have an easy access to  
+
+236
+00:23:41,120 --> 00:23:48,960
+a panel of users via different tools so that they 
+can just start an interviewing process or a survey  
+
+237
+00:23:48,960 --> 00:23:56,720
+or a test of different designs in a few clicks.
+For me, it was very important to build this direct  
+
+238
+00:23:56,720 --> 00:24:03,040
+connection to customers because when you delegate 
+such an important thing as customer research and  
+
+239
+00:24:03,040 --> 00:24:10,960
+collecting their feedback to someone, you will get 
+a refined filtered version. You won't get these  
+
+240
+00:24:12,880 --> 00:24:19,200
+nuances of how people describe things, which 
+emotions they feel like and so on, and where  
+
+241
+00:24:19,200 --> 00:24:24,800
+they think stuck. It's very easy to lose all those 
+important bytes of information in this process. So  
+
+242
+00:24:24,800 --> 00:24:33,040
+I'm a strong believer that it's very important to 
+have direct communication channel to customers.
+
+243
+00:24:33,040 --> 00:24:38,320
+As you describe this, it's funny how you guys are 
+at the extreme opposite end of the spectrum from  
+
+244
+00:24:38,320 --> 00:24:43,760
+Palantir in terms of how easy it is for you to 
+get feedback. They build stuff for the government  
+
+245
+00:24:43,760 --> 00:24:49,520
+and for Airbus where employees would never use 
+a product like that or need a product like that.  
+
+246
+00:24:49,520 --> 00:24:54,960
+You guys are getting paid in Revolut using Revolut 
+to pay for things and constantly in the product.  
+
+247
+00:24:54,960 --> 00:24:59,600
+And so I could see why there's less of a need for 
+something like a forward deploy engineer. Okay,  
+
+248
+00:24:59,600 --> 00:25:05,360
+amazing. Let's talk about hiring then. Is there 
+anything unique about how you approach hiring,  
+
+249
+00:25:05,360 --> 00:25:08,640
+sourcing, looking for people, what 
+you look for in people that you think  
+
+250
+00:25:08,640 --> 00:25:12,560
+might be contributing to your alumni 
+being so successful down the road?
+
+251
+00:25:12,560 --> 00:25:20,720
+I think everyone is striving for talented, 
+skillful smart people and experienced people.  
+
+252
+00:25:21,280 --> 00:25:30,800
+Revolut values way more raw intellect and this 
+unquenched hunger to build things rather than  
+
+253
+00:25:30,800 --> 00:25:40,880
+experience. So let me maybe bring an example. 
+Imagine we saw this, you hire a great experienced  
+
+254
+00:25:40,880 --> 00:25:50,320
+professional with amazing regalia of achieving 
+a lot of things, but then what I see in product,  
+
+255
+00:25:50,320 --> 00:25:59,280
+the adoption curve is usually longer than 
+in other functions because product owners  
+
+256
+00:25:59,280 --> 00:26:06,960
+by definition are the ones who are the experts 
+in that domain and in all those intricacies of  
+
+257
+00:26:06,960 --> 00:26:13,440
+how product is built and how it's used. So what 
+we see from these professionals is they still  
+
+258
+00:26:13,440 --> 00:26:22,240
+take a lot of time to ramp up and sometimes they 
+also take time to adapt to new culture or worse,  
+
+259
+00:26:22,240 --> 00:26:29,360
+they just rest on their laurels. But you already 
+have super inflated expectations and usually  
+
+260
+00:26:29,360 --> 00:26:38,080
+their compensation is by the way, quite high and 
+which adds up to these expectations. And I myself,  
+
+261
+00:26:38,080 --> 00:26:45,440
+after conducting maybe 400 or 500 interviews 
+with product owners at Revolut, I also see this. 
+
+262
+00:26:46,160 --> 00:26:53,760
+Unfortunately, professionals with a lot of 
+years of experience from established companies,  
+
+263
+00:26:53,760 --> 00:27:08,080
+they don't have this strong urge to change status 
+quo, which by the way will require toil, tears,  
+
+264
+00:27:08,080 --> 00:27:19,120
+and sweat. And that's why even if a candidate 
+doesn't have a lot of years of experience,  
+
+265
+00:27:19,120 --> 00:27:26,160
+but they love building things, they've done it, 
+they worked with engineers maybe by the way, maybe  
+
+266
+00:27:26,160 --> 00:27:37,840
+in their own startup or one of the best profiles 
+that I've seen is a tech co-founder. So I think  
+
+267
+00:27:37,840 --> 00:27:45,600
+that's probably the best way to boost career is 
+to go and found something work in a startup, build  
+
+268
+00:27:45,600 --> 00:27:52,480
+things yourself or with a very small team, work in 
+all different areas because in startup you have to  
+
+269
+00:27:52,480 --> 00:28:00,400
+work in all different areas. And then these kind 
+of people, they really thrive at Revolut and even  
+
+270
+00:28:00,400 --> 00:28:09,280
+if they don't have a lot of years of experience, 
+they actually attack a specific problem. 
+
+271
+00:28:10,240 --> 00:28:18,720
+They have a sense of what can cause customer 
+pain, and they are very fast moving to solve it  
+
+272
+00:28:18,720 --> 00:28:24,480
+quickly and then that's how they get appreciation 
+from everyone around. The team starts respecting  
+
+273
+00:28:24,480 --> 00:28:28,160
+these people because they solve some specific 
+problem and then they take another problem,  
+
+274
+00:28:28,160 --> 00:28:32,960
+they solve it and then they take another 
+and that's how they grow in the company.
+
+275
+00:28:32,960 --> 00:28:39,520
+Essentially what I'm hearing is you hire kind of 
+more junior or super high raw, intellect driven,  
+
+276
+00:28:40,240 --> 00:28:45,760
+passionate, how do you describe, hungry 
+people? And this explains why so many  
+
+277
+00:28:45,760 --> 00:28:51,600
+people get promoted so much more that leave 
+Revolut because they start their earlier  
+
+278
+00:28:51,600 --> 00:28:56,320
+in their career and you help them learn all 
+these skills, ownership, depth, understanding,  
+
+279
+00:28:56,320 --> 00:29:01,600
+working in complex environments, building amazing 
+products. So this all makes a lot of sense.  
+
+280
+00:29:02,160 --> 00:29:05,600
+Is there anything you figured out about where 
+to find these people? Because this is the dream,  
+
+281
+00:29:05,600 --> 00:29:09,360
+hire amazingly smart people that are super 
+driven that nobody knows about yet and then  
+
+282
+00:29:09,360 --> 00:29:14,640
+make them awesome. Have you found anything 
+about where to source and find these folks?
+
+283
+00:29:14,640 --> 00:29:22,400
+So the way we work, we have a weekly catch-ups 
+with the recruitment team. So essentially they  
+
+284
+00:29:22,400 --> 00:29:29,520
+are also a team that runs in sprints. So every 
+sprint we define what do we want to focus on,  
+
+285
+00:29:29,520 --> 00:29:37,280
+which areas, which companies. One of the 
+great sources is actually looking into  
+
+286
+00:29:37,280 --> 00:29:42,960
+products and apps that we love ourselves. 
+So if someone built a great product,  
+
+287
+00:29:42,960 --> 00:29:49,760
+then it's likely a high performer. So 
+usually we provide some great products  
+
+288
+00:29:49,760 --> 00:29:54,560
+in specific areas that are more important 
+for us to the sourcing team and they just  
+
+289
+00:29:55,280 --> 00:30:01,040
+try to source targeting those companies. It 
+could be also different areas. It could be  
+
+290
+00:30:01,040 --> 00:30:05,920
+even schools, like good schools. And 
+so it varies from sprint to sprint.
+
+291
+00:30:05,920 --> 00:30:09,840
+That makes sense. Gokul had this really good 
+piece of advice, I think it was on the podcast,  
+
+292
+00:30:09,840 --> 00:30:14,000
+if not he tweeted about it, where you 
+look at there's successful companies,  
+
+293
+00:30:14,000 --> 00:30:18,800
+but then there's also what function in that 
+company is the key to their success. And  
+
+294
+00:30:18,800 --> 00:30:22,320
+so you want to go like a company A for 
+sales, company B for customer support,  
+
+295
+00:30:23,040 --> 00:30:27,600
+company C for design. And so it sounds like that's 
+kind of the way you guys think about it a little  
+
+296
+00:30:27,600 --> 00:30:33,920
+bit. Yeah, very cool. Okay. I love how we're 
+uncovering and we're uncovering this mystery. 
+
+297
+00:30:33,920 --> 00:30:40,320
+This entire episode is brought to you by Stripe. 
+Every single one of the Forbes top 50 AI companies  
+
+298
+00:30:40,320 --> 00:30:46,400
+that has a product in the market today uses Stripe 
+to monetize it. $1.4 trillion flows through Stripe  
+
+299
+00:30:46,400 --> 00:30:52,480
+annually, which is equivalent to over 1% of 
+the entire global GDP. And Stripe isn't just a  
+
+300
+00:30:52,480 --> 00:30:56,720
+payments platform. They also have a product called 
+Stripe Billing, which powers billing for companies  
+
+301
+00:30:56,720 --> 00:31:03,360
+that you may have heard of, OpenAI, Anthropic, 
+Figma, Atlassian, and over 300,000 other  
+
+302
+00:31:03,360 --> 00:31:08,720
+companies. Stripe Billing lets you bill and manage 
+customers no matter your pricing model from simple  
+
+303
+00:31:08,720 --> 00:31:14,240
+recurring billing to usage-based billing to sales 
+negotiated contracts. Collect and retain more  
+
+304
+00:31:14,240 --> 00:31:19,600
+revenue, automate revenue management workflows, 
+and accept payments globally. Use Stripe to handle  
+
+305
+00:31:19,600 --> 00:31:24,880
+all of your payment related needs, including 
+billing, revenue operations, checkout flows,  
+
+306
+00:31:24,880 --> 00:31:29,440
+or simply launching or inventing new business 
+models. Learn all the ways that Stripe can  
+
+307
+00:31:29,440 --> 00:31:34,960
+grow revenue for your business at stripe.com.
+Let me go in a different direction and see if  
+
+308
+00:31:34,960 --> 00:31:40,400
+there's more to learn here. When it comes 
+to running your teams, is there something  
+
+309
+00:31:40,400 --> 00:31:46,400
+that is kind of fairly contrarian in how 
+you approach running the product team that  
+
+310
+00:31:46,400 --> 00:31:51,200
+is maybe not how other companies operate 
+that you think is key to your success?
+
+311
+00:31:51,200 --> 00:31:57,680
+I've changed in how I operate after I joined 
+Revolut probably because Revolut is a founder-led  
+
+312
+00:31:57,680 --> 00:32:05,680
+company and probably it's because it's self-led, 
+and also because my role is quite spread across  
+
+313
+00:32:05,680 --> 00:32:12,640
+many things. So my role at Revolut is leading 
+product function across company, but also leading  
+
+314
+00:32:12,640 --> 00:32:23,440
+retail, which is a core part of Revolut business. 
+And it's very easy to be spread thinly across  
+
+315
+00:32:23,440 --> 00:32:34,720
+all those domains and catching up with 50 or 70 
+projects that are being executed simultaneously,  
+
+316
+00:32:36,080 --> 00:32:41,920
+which would mean that you will just spend 
+your entire week just catching up on statuses,  
+
+317
+00:32:41,920 --> 00:32:50,400
+not really adding value to anyone, but it's 
+also scary to not do it because what if there  
+
+318
+00:32:50,400 --> 00:32:57,680
+are some things going wrong and you won't be 
+able to stop it or steer in a better direction. 
+
+319
+00:32:57,680 --> 00:33:03,680
+So I think that's why also a lot of managers, 
+especially in senior positions, they kind of  
+
+320
+00:33:03,680 --> 00:33:12,640
+stay high level and they don't go very deep into 
+details. But how we did differently at Revolut is  
+
+321
+00:33:14,000 --> 00:33:22,400
+to go very deep into details. We take 
+maybe 7 or 10 projects which are most  
+
+322
+00:33:22,400 --> 00:33:31,360
+impactful for customers right now. And we 
+go super deep into them, really, really deep  
+
+323
+00:33:32,960 --> 00:33:40,640
+sitting with engineers like reading code level 
+and understanding, okay, how it's built exactly  
+
+324
+00:33:40,640 --> 00:33:50,400
+and what's the underlying issue. And you could 
+think that, okay, but what about others? Let's say  
+
+325
+00:33:50,400 --> 00:33:59,280
+50 or 60 items that are being executed. But the 
+thing is that it actually, it's counterintuitive,  
+
+326
+00:33:59,280 --> 00:34:06,160
+but it works really well because first of 
+all, teams, they talk to each other, there  
+
+327
+00:34:06,160 --> 00:34:12,720
+are formal and informal ways of communicating 
+through meetups or just meeting in the office  
+
+328
+00:34:12,720 --> 00:34:19,280
+and they know which areas are being scrutinized 
+right now and which team is being scrutinized. 
+
+329
+00:34:19,280 --> 00:34:25,120
+And it also gives information on what are 
+the current priorities in the company. But  
+
+330
+00:34:25,120 --> 00:34:35,680
+in addition, it's signaled to other teams that 
+if they are not proactively executing things  
+
+331
+00:34:35,680 --> 00:34:43,760
+on the expected level, paying attention to all the 
+details and being meticulous in all those details,  
+
+332
+00:34:43,760 --> 00:34:54,240
+especially in quality, they will be the ones that 
+will be reviewed to a such deep level, next phase,  
+
+333
+00:34:54,240 --> 00:35:02,720
+next cycle. So as a result, it also builds a 
+great discipline. And since Revolut is such a high  
+
+334
+00:35:02,720 --> 00:35:15,040
+concentration of very ambitious people who thrive 
+for being best versions of themselves and grow,  
+
+335
+00:35:15,040 --> 00:35:24,800
+and it's very important for them to prove that 
+they can deliver great things and build next  
+
+336
+00:35:24,800 --> 00:35:35,600
+great company. As a result, they do everything to 
+operate autonomously. And when you start diving  
+
+337
+00:35:35,600 --> 00:35:42,160
+deep into details, you see that everything is 
+fine, you see their modus operandi and you can  
+
+338
+00:35:42,160 --> 00:35:49,280
+understand, okay, if this team is on good track or 
+not on good track. And if it's not on good track,  
+
+339
+00:35:49,280 --> 00:35:53,120
+it means that it probably will be 
+one of your next areas as of focus.
+
+340
+00:35:53,120 --> 00:35:58,000
+Okay. So what I'm hearing is you said there's 50 
+to 60 things kind of projects being built at once.
+
+341
+00:35:58,000 --> 00:36:00,000
+Maybe closer to a hundred, actually.
+
+342
+00:36:00,000 --> 00:36:04,000
+Okay. Okay. So there's like 
+a hundred things happening  
+
+343
+00:36:04,000 --> 00:36:07,280
+at any point like features being 
+built, products being launched,  
+
+344
+00:36:07,280 --> 00:36:13,520
+and this is you and the founders choose 
+7 to 10 to focus on, or is it just you?
+
+345
+00:36:13,520 --> 00:36:15,440
+No, it's just me.
+
+346
+00:36:15,440 --> 00:36:18,960
+Just you. Okay. And by the way, do you 
+have a leadership team that you're a  
+
+347
+00:36:18,960 --> 00:36:22,720
+part of with a design lead or is 
+it just you basically at the top?
+
+348
+00:36:22,720 --> 00:36:29,200
+So the way it's structured, my responsibility 
+is a product function. We also have a head of  
+
+349
+00:36:29,200 --> 00:36:35,680
+design function. It's also part of my team, 
+but then all the other functions, they are  
+
+350
+00:36:35,680 --> 00:36:41,840
+separate like engineering and data function, 
+and all of them report directly into a CEO.
+
+351
+00:36:41,840 --> 00:36:46,640
+Got it. Okay. So out of a hundred things you 
+choose, here's the 7 to 10 things I'm going  
+
+352
+00:36:46,640 --> 00:36:51,360
+to go deep on. These are the things that matter 
+most to the business that if they don't go well,  
+
+353
+00:36:51,360 --> 00:36:57,120
+it'll have the most downside. And then you 
+basically said you sit next to the engineers,  
+
+354
+00:36:57,120 --> 00:36:59,680
+you get really involved in every detail.
+
+355
+00:36:59,680 --> 00:37:00,320
+Yeah, correct.
+
+356
+00:37:00,320 --> 00:37:04,000
+Awesome. Okay. That is definitely 
+counterintuitive. We had Brian Chesky  
+
+357
+00:37:04,000 --> 00:37:07,840
+in the podcast and the way he approached 
+this problem is he just cut down how many  
+
+358
+00:37:07,840 --> 00:37:13,040
+things happen at Airbnb because he wants to 
+be involved in everything. And so I think  
+
+359
+00:37:13,040 --> 00:37:16,800
+it's cool to hear a different approach 
+where we can still do a lot of stuff,  
+
+360
+00:37:16,800 --> 00:37:20,960
+but I'm going to choose, I'm going to 
+go deep on the things that matter most.
+
+361
+00:37:20,960 --> 00:37:31,280
+No, I think we'll never cut down things, it's just 
+the appetite for growth and also entrepreneurial  
+
+362
+00:37:31,280 --> 00:37:38,960
+approach in the company is so high that we'll 
+never allow ourselves to give up on some great  
+
+363
+00:37:38,960 --> 00:37:46,800
+opportunities, but also this approach is way 
+more scalable. So while leadership and obviously  
+
+364
+00:37:46,800 --> 00:37:53,840
+founders themselves keep everyone accountable, 
+go deep into details, it doesn't mean that they  
+
+365
+00:37:53,840 --> 00:38:02,080
+micromanage everyone. That's actually a very 
+important thing. So the ideal position for any  
+
+366
+00:38:02,080 --> 00:38:06,480
+product owner is to be fully autonomous. And 
+again, it doesn't mean that you will never be  
+
+367
+00:38:06,480 --> 00:38:13,280
+challenged, but if when you're challenged, you 
+can show all the logic behind decisions you've  
+
+368
+00:38:13,280 --> 00:38:23,360
+made behind the roadmap. And even if metrics are 
+not yet there, you will still let's say have this  
+
+369
+00:38:23,360 --> 00:38:28,320
+credit of trust to keep building things the way 
+you want to build them. Eventually, yeah, you  
+
+370
+00:38:28,320 --> 00:38:33,440
+will be presenting the outputs of your activity 
+on these weekly product reviews, but again,  
+
+371
+00:38:33,440 --> 00:38:41,520
+it's not a micromanagement either. It's more like, 
+let's say a last line of control to make sure that  
+
+372
+00:38:41,520 --> 00:38:48,560
+what we're building all makes sense and that's 
+value and is thoroughly thought in all details.
+
+373
+00:38:48,560 --> 00:38:52,640
+And then you said still every screen that is 
+shipped, the founders review at some point,  
+
+374
+00:38:52,640 --> 00:38:56,960
+so it's not like someone's shipping stuff 
+without the founders seeing it in some form.
+
+375
+00:38:56,960 --> 00:39:08,240
+Yeah, yeah, exactly. They have a full overview 
+over everything, but also it allows us to build  
+
+376
+00:39:08,240 --> 00:39:19,200
+so many things because there is actually little 
+micromanagement. If founders had to be involved  
+
+377
+00:39:19,200 --> 00:39:29,760
+into everything, they had to cut things down. But 
+by giving people autonomy, they actually boost  
+
+378
+00:39:29,760 --> 00:39:38,320
+company growth. And as a result, I think Revolut 
+is a strong outlier in the industry in terms of  
+
+379
+00:39:38,320 --> 00:39:45,040
+how many products being shipped and how fast they 
+shipped. Another thing here is what I mentioned  
+
+380
+00:39:45,040 --> 00:39:55,232
+previously is us investing heavily into platform 
+so that every solution is scalable from the get  
+
+381
+00:39:55,232 --> 00:40:03,680
+go so that we don't have any custom solutions. And 
+for example, take our credit team, they ship new  
+
+382
+00:40:03,680 --> 00:40:12,160
+products like loans or credit cards in the country 
+literally every month. And it is just maybe 300  
+
+383
+00:40:12,160 --> 00:40:25,600
+people. And I think that a credit division in an 
+incumbent bank is maybe 2 or 3000 people building  
+
+384
+00:40:25,600 --> 00:40:33,520
+just credit products for a single country.
+And our team is building it for 50 countries.  
+
+385
+00:40:33,520 --> 00:40:40,480
+And yeah, it's enabled through this approach 
+with platforms which we build on top of small  
+
+386
+00:40:40,480 --> 00:40:48,240
+lean teams which are fully equipped with 
+necessary functions and also have autonomy  
+
+387
+00:40:48,240 --> 00:40:56,960
+in defining what they're building and 
+the flat hierarchy with everyone being  
+
+388
+00:40:56,960 --> 00:41:06,960
+accountable and founders having direct view 
+of everyone and intervening if necessary.
+
+389
+00:41:06,960 --> 00:41:10,400
+I'm going to give people a list of the things you 
+guys do. I didn't do this at the beginning because  
+
+390
+00:41:10,400 --> 00:41:13,840
+it would take too long, but you talk about all the 
+products you're building and all the things that's  
+
+391
+00:41:13,840 --> 00:41:18,000
+going on. So I have a list here. It's probably 
+incomplete, but just to give people a sense,  
+
+392
+00:41:18,000 --> 00:41:23,120
+so you guys have credit cards, debit cards, 
+savings accounts, multi-currency accounts,  
+
+393
+00:41:23,120 --> 00:41:30,480
+domestic international transfers, joint accounts, 
+minor accounts for less than 18 years old,  
+
+394
+00:41:30,480 --> 00:41:37,120
+stock trading, cryptocurrency purchasing, 
+loans. Is there anything big I missed?
+
+395
+00:41:37,120 --> 00:41:42,720
+I mean, some of those things are a huge by itself, 
+let's say stock trading. It's not just stocks,  
+
+396
+00:41:42,720 --> 00:41:54,720
+it's also ETFs, bonds, and we're working on 
+tax efficient accounts in different countries  
+
+397
+00:41:54,720 --> 00:42:04,480
+and crypto. We also allow staking crypto for 
+example, we have on-ramp, off-ramp products,  
+
+398
+00:42:04,480 --> 00:42:10,880
+we have acquiring products. On credit, we have 
+loans, we have a buy now per later product,  
+
+399
+00:42:11,520 --> 00:42:16,880
+we even launched mortgages. We launched 
+first mortgages in Albania recently.
+
+400
+00:42:17,600 --> 00:42:21,440
+And then all of these across 50 
+different currencies and countries.
+
+401
+00:42:21,440 --> 00:42:28,560
+Yeah, 50 different jurisdictions each with 
+its own regulation, with its own requirements.
+
+402
+00:42:28,560 --> 00:42:35,440
+Oh, boy. It's a good example of Paul Graham has 
+this concept of schlep blindness or schlepping  
+
+403
+00:42:35,440 --> 00:42:40,880
+where people want to avoid hard problems, 
+but that's where the big opportunities are,  
+
+404
+00:42:40,880 --> 00:42:45,920
+solving really gnarly, painful problems. 
+And that's basically what you guys did.
+
+405
+00:42:45,920 --> 00:42:50,560
+Yeah, that's one of the things 
+that excites me maybe the most  
+
+406
+00:42:51,280 --> 00:43:01,520
+at Revolut. The market is so big and there are 
+still a lot of very inefficient players, and  
+
+407
+00:43:01,520 --> 00:43:09,280
+as a result, customers have a lot of problems 
+that are unsolved. While we grow insanely  
+
+408
+00:43:10,000 --> 00:43:17,280
+and I think will soon be... When I joined, we had 
+maybe just slightly north to 20 million customers.  
+
+409
+00:43:17,280 --> 00:43:25,040
+Now we are 50 million customers. Soon we'll be at 
+100 million customers. The degree of surrounding  
+
+410
+00:43:25,040 --> 00:43:32,480
+each customer with the ecosystem of our products 
+extends a lot. So they become more and more people  
+
+411
+00:43:32,480 --> 00:43:39,280
+start using Revolut as their main bank account. 
+They start receiving their salary into Revolut,  
+
+412
+00:43:39,280 --> 00:43:44,640
+holding their savings into Revolut because they 
+love the product more. And so we can easily do  
+
+413
+00:43:44,640 --> 00:43:56,400
+another, I don't know, 2, 3X, 4X in customer base 
+growth, but we can also do another 10X growth in  
+
+414
+00:43:56,400 --> 00:44:02,640
+how actively these people are using the product. 
+So it's let's say what, 30, 40X to current,  
+
+415
+00:44:04,080 --> 00:44:13,360
+45 billion valuation. Right? So it's a 
+like a trillion-dollar company easily.
+
+416
+00:44:13,360 --> 00:44:17,920
+And on that note, I mean what I'm hearing 
+is it's still a good time to join. There's  
+
+417
+00:44:17,920 --> 00:44:21,360
+a massive upside. So I know you guys are 
+hiring, we'll just note that real quick.  
+
+418
+00:44:21,360 --> 00:44:24,320
+You're hiring product owners and 
+a bunch of other roles, I imagine?
+
+419
+00:44:24,320 --> 00:44:30,080
+Yeah, yeah. Well, as someone 
+who owns the product function,  
+
+420
+00:44:30,080 --> 00:44:33,600
+I'm especially interested 
+in product owners obviously,  
+
+421
+00:44:33,600 --> 00:44:39,840
+but we hire a lot of roles. I think we have 
+maybe 3 or 400 open positions currently.
+
+422
+00:44:39,840 --> 00:44:44,480
+Oh my God. Okay. I want to talk a bit 
+about new stuff that you work on. So  
+
+423
+00:44:44,480 --> 00:44:50,000
+new products that you decide to invest in. 
+Is there anything that you've figured out  
+
+424
+00:44:50,000 --> 00:44:55,200
+about just how to set up new products 
+for success? Because a lot of the stuff  
+
+425
+00:44:55,200 --> 00:44:57,680
+we've been talking about is staying on 
+top of stuff that you're iterating on  
+
+426
+00:44:57,680 --> 00:45:02,240
+and making better. What have you learned 
+about just helping new products succeed?
+
+427
+00:45:02,240 --> 00:45:07,760
+Yeah, so we launched quite a few products 
+that you actually maybe wouldn't expect from  
+
+428
+00:45:07,760 --> 00:45:14,560
+a bank starting with crypto that was insanely 
+successful, but also non-financial services  
+
+429
+00:45:14,560 --> 00:45:20,080
+like booking a hotel through Revolut 
+app, our loyalty program, rev points,  
+
+430
+00:45:21,760 --> 00:45:27,760
+which is sort of disrupting European market where 
+people don't get great benefits from spending with  
+
+431
+00:45:27,760 --> 00:45:33,520
+card. In the US you can easily get, like what? 
+2% cashback with a credit card or in some sort  
+
+432
+00:45:33,520 --> 00:45:41,840
+of point. In Europe they don't have it. And we 
+are actually the first to build a program on card  
+
+433
+00:45:41,840 --> 00:45:50,640
+spend rewarding people with really meaningful or 
+monetary rewards. In the manner that I described.  
+
+434
+00:45:50,640 --> 00:45:57,200
+We understood, okay, what's the recipe of 
+this success to then scale it and reproduce?  
+
+435
+00:45:57,760 --> 00:46:04,720
+So we built a new bets framework and essentially 
+everyone can come up with a new idea. It could be  
+
+436
+00:46:04,720 --> 00:46:10,800
+a product owner, but it could be anyone, and 
+they need to show some key important things  
+
+437
+00:46:10,800 --> 00:46:17,120
+which you usually can expect from a startup 
+like market is there, business case is there. 
+
+438
+00:46:17,120 --> 00:46:21,360
+We know that we can do it way better than 
+competitors leverage and for example, some things  
+
+439
+00:46:21,360 --> 00:46:29,840
+that we have obviously some concepts of product 
+and then what customer problem we're solving and  
+
+440
+00:46:29,840 --> 00:46:37,120
+so on. And there is very little bureaucracy, 
+again, thanks to having founder hands-on,  
+
+441
+00:46:37,120 --> 00:46:45,120
+we can easily get a green light on anything, start 
+launching it quickly. What we do is assemble same  
+
+442
+00:46:45,120 --> 00:46:54,400
+lean team with just a few people to build first 
+version and then iterate and iterate. And the main  
+
+443
+00:46:54,400 --> 00:47:02,320
+thing here is to build first version very quickly 
+to get feedback, but then not scale it before you  
+
+444
+00:47:02,320 --> 00:47:09,440
+polish the product. But then after we make sure 
+that all metrics are fine, retention is great, we  
+
+445
+00:47:09,440 --> 00:47:14,720
+start scaling it. And the good news is that it can 
+be instantly multiplied by our 50 million customer  
+
+446
+00:47:14,720 --> 00:47:20,960
+base and get great traction. So for example, one 
+of the products that you mentioned, joint accounts  
+
+447
+00:47:20,960 --> 00:47:25,840
+essentially an account that you could have with 
+a significant other one was one of the recently  
+
+448
+00:47:25,840 --> 00:47:33,440
+launched feature and it grew significantly 
+and now it has over a million active users.
+
+449
+00:47:33,440 --> 00:47:36,560
+I hear one of the ways you kind 
+of approach these early products  
+
+450
+00:47:36,560 --> 00:47:40,640
+differently is you guys invest 
+a lot in actually making it good  
+
+451
+00:47:40,640 --> 00:47:45,200
+and not just like a scrappy MVP. Does 
+that ring a bell? Does that resonate?
+
+452
+00:47:45,200 --> 00:47:54,400
+Indeed, that's what I may be meant by keeping 
+your first version narrowed down to a small user  
+
+453
+00:47:54,400 --> 00:48:04,080
+base. But even in this case, we still make 
+sure that the product is well. So no one is  
+
+454
+00:48:04,080 --> 00:48:10,880
+excluded from this requirement of building 
+a super polished product. It takes time,  
+
+455
+00:48:10,880 --> 00:48:18,880
+but it pays off. The thing is that when you launch 
+a scrappy version and it's not getting traction,  
+
+456
+00:48:18,880 --> 00:48:25,200
+how do you know? Is it because the underlying 
+idea is wrong or maybe your product just sucks  
+
+457
+00:48:25,200 --> 00:48:34,400
+and you need to improve it? So by forcing 
+everyone to build a product that people will  
+
+458
+00:48:34,400 --> 00:48:43,600
+love by building a wow product, we kind of cut 
+out this part of uncertainty. So bottom line,  
+
+459
+00:48:43,600 --> 00:48:50,160
+we can cut down the product in terms of 
+functionality to just most critical features,  
+
+460
+00:48:50,160 --> 00:48:55,920
+but we will never compromise on the 
+quality and UX and the aesthetics.
+
+461
+00:48:55,920 --> 00:49:01,680
+An interesting advantage you guys have that I'm 
+realizing as you talk is most of the stuff you  
+
+462
+00:49:01,680 --> 00:49:07,280
+launch is stuff that is clearly something people 
+will want because it's stuff that they get other  
+
+463
+00:49:07,280 --> 00:49:11,600
+places, but they get the advantages of 
+it being integrated into all the other  
+
+464
+00:49:11,600 --> 00:49:16,720
+features and products you have. So it's like a 
+cryptocurrency product. It's kind of like, okay,  
+
+465
+00:49:16,720 --> 00:49:21,200
+yeah, people would love a great cryptocurrency 
+product built into this or joint accounts. So  
+
+466
+00:49:21,200 --> 00:49:24,800
+there's almost like a benefit of just like, 
+okay, the people will want this, now let's  
+
+467
+00:49:24,800 --> 00:49:29,600
+just make it work really well with everything 
+else we got and not hurt. You almost don't  
+
+468
+00:49:29,600 --> 00:49:35,600
+need to be the best at every product, although 
+it sounds like you still try to be the best.
+
+469
+00:49:35,600 --> 00:49:37,680
+But we must be the best. Yeah, a hundred percent.
+
+470
+00:49:37,680 --> 00:49:40,880
+But there's also, if you don't 
+have the best joint account,  
+
+471
+00:49:40,880 --> 00:49:43,120
+but all the other stuff is awesome, 
+people are like, "All right,  
+
+472
+00:49:43,120 --> 00:49:46,560
+it's fine. It just makes my life easier." 
+But tell me what I might be missing because-
+
+473
+00:49:46,560 --> 00:49:52,080
+So I think there are those kind of table stakes 
+that we're building that anyone would expect from  
+
+474
+00:49:52,080 --> 00:49:59,680
+a bank. For example, savings account, right? 
+It's just a basic thing that if a bank is not  
+
+475
+00:49:59,680 --> 00:50:05,600
+providing savings account, you wouldn't even 
+consider it. But then we make sure that our  
+
+476
+00:50:05,600 --> 00:50:14,400
+rates are very competitive, if not the best. Then 
+we make sure that there is no bad UX. Some banks,  
+
+477
+00:50:14,400 --> 00:50:20,960
+for example, they don't allow you to withdraw 
+instantly and there are delays or they don't pay  
+
+478
+00:50:20,960 --> 00:50:27,920
+interest on daily basis. We will never do that. 
+We will allow you if you want to move money out,  
+
+479
+00:50:27,920 --> 00:50:32,400
+you will be able to do it. You won't lose 
+any interest. And interest is being paid  
+
+480
+00:50:32,400 --> 00:50:40,640
+daily and this is a fully flexible product. 
+And then on top of it, what I would call  
+
+481
+00:50:42,800 --> 00:50:49,360
+maybe some delighters is we will allow you to 
+open the savings account in many currencies. 
+
+482
+00:50:49,360 --> 00:50:54,720
+So we want to add different currencies 
+because now interest rates are going down,  
+
+483
+00:50:54,720 --> 00:51:01,520
+so people might find it valuable to open a savings 
+account in, for example, I know in Europe, Swedish  
+
+484
+00:51:01,520 --> 00:51:06,560
+Krona interest rates are higher than Europe, but 
+it could be even something like Brazilian Real  
+
+485
+00:51:06,560 --> 00:51:14,640
+with 12% interest rate versus 2 or 3% on euros. 
+And then as the cherry on top, there is this  
+
+486
+00:51:14,640 --> 00:51:23,280
+all that in an amazing, you have very smooth, you 
+can set custom wallpapers, you can set goals, you  
+
+487
+00:51:23,280 --> 00:51:30,720
+can automate a spare change towards your savings 
+and all those features. So there is an underlying  
+
+488
+00:51:32,080 --> 00:51:40,640
+basic fundamental layer that where you need to 
+be just on par with competition, but then there  
+
+489
+00:51:40,640 --> 00:51:47,600
+are a lot of things on top that just make people 
+love your product way more. And obviously there  
+
+490
+00:51:47,600 --> 00:51:55,360
+are a lot of synergies in between those things. 
+So yeah, thinking of crypto, you can just receive  
+
+491
+00:51:55,360 --> 00:52:00,720
+crypto on your wallet and then you can just 
+instantly convert it to cash on your account  
+
+492
+00:52:00,720 --> 00:52:09,440
+or just spend it with your card. How amazing 
+can it be? Just buy a coffee with Ethereum.
+
+493
+00:52:09,440 --> 00:52:15,280
+I love that. Okay, let me take this opportunity to 
+try to summarize what I've learned from you so far  
+
+494
+00:52:15,280 --> 00:52:20,080
+in terms of what you guys have figured out about 
+creating incredible product leaders. They go on  
+
+495
+00:52:20,080 --> 00:52:25,760
+to do wonderful things and basically one of the 
+top three most successful companies at this. So  
+
+496
+00:52:25,760 --> 00:52:30,000
+there's kind of these two buckets as I talked to 
+you and the Palantir guy, there's kind of like  
+
+497
+00:52:30,000 --> 00:52:34,720
+the hiring piece and then there's what you do to 
+help incubate this kind of forge for incredible  
+
+498
+00:52:34,720 --> 00:52:39,840
+product leaders. So in what you do internally, 
+kind of the four bullet points I've got here  
+
+499
+00:52:39,840 --> 00:52:46,400
+is give people a lot of ownership. They're 
+essentially GMs of the product, the feature. 
+
+500
+00:52:46,400 --> 00:52:51,280
+There's a lot of focus on depth and complexity 
+and getting really good at solving really gnarly  
+
+501
+00:52:51,280 --> 00:52:58,400
+problems. And then there's a focus on building 
+wow products, amazing lovable products that  
+
+502
+00:52:58,400 --> 00:53:03,280
+have a very high bar. And then there's kind of a 
+subtle point that I think is probably impactful  
+
+503
+00:53:03,280 --> 00:53:09,840
+here is just working closely with detail-obsessed 
+founders or product leaders like you and learning  
+
+504
+00:53:09,840 --> 00:53:16,720
+from you all and just seeing the value and impact 
+of being super detail oriented. On that bucket,  
+
+505
+00:53:16,720 --> 00:53:21,360
+is there anything else that you think is super 
+core that I missed before we get to hiring?
+
+506
+00:53:21,360 --> 00:53:29,840
+Yeah, I would just maybe highlight the aspect of 
+this going deep into details. There are two main  
+
+507
+00:53:29,840 --> 00:53:34,880
+streams. First is let's say being technical, 
+understanding how underlying systems work,  
+
+508
+00:53:34,880 --> 00:53:41,920
+but second is also building empathy towards 
+customers. Understand the possible contexts  
+
+509
+00:53:41,920 --> 00:53:46,320
+and making sure that your product 
+will satisfy each one of them.
+
+510
+00:53:46,320 --> 00:53:49,840
+That's a great point. So it's actually 
+understanding the bare metal of what is  
+
+511
+00:53:49,840 --> 00:53:55,920
+happening and how it's possible, and then making 
+the experience as simple and wowable as possible.
+
+512
+00:53:55,920 --> 00:54:03,200
+There is also a third aspect, but it's 
+a boring one and it's complying with all  
+
+513
+00:54:03,200 --> 00:54:10,320
+possible regulations and making sure that 
+your product will satisfy the regulator,  
+
+514
+00:54:10,320 --> 00:54:13,280
+but it's also an important part of the job.
+
+515
+00:54:13,280 --> 00:54:18,560
+What I get from that is just 
+building patience with all-
+
+516
+00:54:18,560 --> 00:54:25,840
+I would say it's actually being able to unblock 
+your team and that sometimes require product  
+
+517
+00:54:25,840 --> 00:54:33,760
+owners to steam roll changes because it also means 
+that you could easily get stuck with a lot of  
+
+518
+00:54:33,760 --> 00:54:37,680
+people just looking into each other and thinking, 
+"Okay, can they approve it? Can they not approve  
+
+519
+00:54:37,680 --> 00:54:43,840
+it?" We try to innovate on it. We try to automate 
+as many things as possible. We use even AI models  
+
+520
+00:54:43,840 --> 00:54:53,280
+for that, but it also requires a product owner 
+to be able to get things done, just getting  
+
+521
+00:54:53,280 --> 00:55:02,560
+people down to consensus and understanding 
+how your stakeholders, how to get them to  
+
+522
+00:55:02,560 --> 00:55:10,960
+the necessary decision and then blocking UTM so 
+that eventually the value is shipped to customers.
+
+523
+00:55:10,960 --> 00:55:13,520
+Awesome. So essentially it's just getting done,  
+
+524
+00:55:13,520 --> 00:55:18,080
+plowing through blockers, 
+dealing with many stakeholders.
+
+525
+00:55:18,080 --> 00:55:20,400
+Yeah. That's always the most important.
+
+526
+00:55:20,400 --> 00:55:24,000
+Okay. That's a great addition. I could see 
+why that would be really helpful for folks  
+
+527
+00:55:24,000 --> 00:55:27,760
+that are trying to get ahead in their 
+career. And then on the hiring piece,  
+
+528
+00:55:27,760 --> 00:55:34,880
+what you look for is raw intellect, drive hunger, 
+passion essentially. Those are the first two.  
+
+529
+00:55:34,880 --> 00:55:39,920
+And then interestingly, non-senior, not people 
+with a ton of experience in the problem space,  
+
+530
+00:55:39,920 --> 00:55:45,440
+more so focusing on intellect and hunger. 
+Is there anything else in that bucket that  
+
+531
+00:55:45,440 --> 00:55:49,200
+you think is important that leads 
+to people being really successful?
+
+532
+00:55:49,200 --> 00:55:57,280
+Most importantly, it's again, getting things done, 
+getting your hands dirty, and great product owners  
+
+533
+00:55:57,280 --> 00:56:06,320
+are very hands-on. They don't think of themselves 
+as managers who just give tasks to people and wait  
+
+534
+00:56:06,320 --> 00:56:13,200
+them to complete it. They just go and get things 
+done and they understand that most important  
+
+535
+00:56:13,200 --> 00:56:20,720
+things they will likely have to do themselves, 
+and they understand that there needs to be  
+
+536
+00:56:20,720 --> 00:56:29,440
+relentless focus on execution, and if something 
+is 99% done, it's closer to 0% rather than 100%.
+
+537
+00:56:29,440 --> 00:56:35,440
+Whoa, say more there. Is the kind of insight 
+there is just things seem like they're 99% done,  
+
+538
+00:56:35,440 --> 00:56:37,760
+but they're actually very far from being done?
+
+539
+00:56:38,320 --> 00:56:43,840
+Sometimes the product is built, but then product 
+owners are the ones who also make sure that,  
+
+540
+00:56:43,840 --> 00:56:51,920
+for example, customer care team or sales and 
+marketing team are using it to a full extent  
+
+541
+00:56:51,920 --> 00:56:56,880
+because without it, it could be just another 
+useless feature, and no one knows about it.
+
+542
+00:56:56,880 --> 00:57:00,800
+That is super cool. I like that mentality. Let me  
+
+543
+00:57:00,800 --> 00:57:04,080
+ask you something completely different. 
+What's kind of the story of you landing  
+
+544
+00:57:04,080 --> 00:57:08,800
+at Revolut? I know you had to move 
+your family. It was a whole adventure.
+
+545
+00:57:08,800 --> 00:57:16,160
+My journey into Revolut actually coincided with 
+me moving to the UK, so it was a completely new  
+
+546
+00:57:17,440 --> 00:57:25,840
+environment for myself. It's a huge stress 
+load for the brain as well. And it's not only  
+
+547
+00:57:25,840 --> 00:57:33,280
+about using the other side of the lane on the 
+road in the UK, but also it's a lot of things,  
+
+548
+00:57:33,280 --> 00:57:41,280
+for example, in the industry, some concepts 
+that I've never heard about, and actually I've  
+
+549
+00:57:41,280 --> 00:57:46,560
+never worked at FinTech before, so I also 
+changed the industry. So it was a complete  
+
+550
+00:57:48,800 --> 00:57:58,080
+turnaround for me and for my career, but I was 
+very determined and excited about it because  
+
+551
+00:57:58,080 --> 00:58:02,720
+everyone who I've been talking to, they were 
+saying Revolut is like it's top talent is at  
+
+552
+00:58:02,720 --> 00:58:11,200
+Revolut, all best product people are at Revolut, 
+and I really wanted to be part of this great team. 
+
+553
+00:58:11,200 --> 00:58:16,400
+Eventually it actually appeared to be 
+advantageous for me because I also had  
+
+554
+00:58:16,400 --> 00:58:25,760
+this fresh view on things and even in 
+the Revolut app, which is actually way,  
+
+555
+00:58:25,760 --> 00:58:31,440
+way better than other banks products. But even 
+there I found some things that for me, because  
+
+556
+00:58:31,440 --> 00:58:43,520
+of this lack of context, they were not intuitive 
+and I worked hard with the team to change that.
+
+557
+00:58:43,520 --> 00:58:47,200
+Okay, great. I'm going to take us to recurring 
+segment of the podcast. I'm going to take us  
+
+558
+00:58:47,200 --> 00:58:52,960
+to Fail Corner. So in Fail Corner, the 
+idea here is people come on this podcast,  
+
+559
+00:58:52,960 --> 00:58:56,880
+they share all these stories of success, 
+everything's always going great, but in reality,  
+
+560
+00:58:56,880 --> 00:59:02,560
+things don't often go great, and there's 
+a lot of things that don't go right. Is  
+
+561
+00:59:02,560 --> 00:59:07,280
+there a story you could share where things went 
+wrong in your career, where you failed with a  
+
+562
+00:59:07,280 --> 00:59:10,800
+product you were building or a moment in your 
+career where things were looking really bad?
+
+563
+00:59:11,440 --> 00:59:17,760
+I think the most spectacular failures is probably 
+were on the earliest stage of my career, which I  
+
+564
+00:59:17,760 --> 00:59:28,480
+studied back at university and maybe in my second 
+year of university I started building some things,  
+
+565
+00:59:28,480 --> 00:59:37,280
+different startups, and one of them was actually 
+a product that makes me proud even now because it  
+
+566
+00:59:37,280 --> 00:59:50,320
+was like what, 15 years ago? So 2010, meaning 
+still no one really had even iPhones back then  
+
+567
+00:59:50,320 --> 00:59:58,000
+and me and my friends, we started building a 
+website that allows people to buy tickets to  
+
+568
+00:59:58,000 --> 01:00:03,200
+the cinema so that they can skip the line so 
+they don't need to come in advance to select  
+
+569
+01:00:03,200 --> 01:00:11,200
+best seats and they can just buy a ticket online 
+and go to the seats directly. Something that today  
+
+570
+01:00:11,200 --> 01:00:19,520
+seems as a commodity. Back then no one had it.
+People were using pieces of paper and we built  
+
+571
+01:00:19,520 --> 01:00:27,440
+an end-to-end system because not only we needed 
+to build a website, but we also needed to build  
+
+572
+01:00:27,440 --> 01:00:33,520
+hardware to scan those tickets, for example. 
+And to have these tickets in digital format,  
+
+573
+01:00:33,520 --> 01:00:39,680
+we needed to hack SMS standard because 
+again, people didn't have smartphones.  
+
+574
+01:00:39,680 --> 01:00:47,440
+They had these Nokias and we were 
+sending images, QR codes inside an SMS,  
+
+575
+01:00:47,440 --> 01:00:54,720
+which is like a hack of the standards in a way. 
+And then we were scanning those things with our  
+
+576
+01:00:54,720 --> 01:01:04,240
+own devices and we built our own devices with 
+scanners, and we actually created these beautiful  
+
+577
+01:01:06,240 --> 01:01:12,560
+devices made from stainless steel, which 
+looked really nice inside the cinema halls. 
+
+578
+01:01:12,560 --> 01:01:19,840
+And I remember how I was excited about it with 
+my friends. We were like, "What an amazing  
+
+579
+01:01:19,840 --> 01:01:30,960
+thing." It's like, look, we are bringing future 
+here, but we actually spent all our investment  
+
+580
+01:01:30,960 --> 01:01:38,320
+on this hardware and we were expecting that 
+everyone will just rush into using our system.  
+
+581
+01:01:38,880 --> 01:01:44,720
+But it was a very low share of customers who 
+started buying tickets online because people  
+
+582
+01:01:44,720 --> 01:01:49,840
+were not ready for it, which was growing quite 
+slowly. And eventually we had to close it because  
+
+583
+01:01:49,840 --> 01:01:55,200
+we simply ran out of money because we spent all 
+of it on this hardware without any proven business  
+
+584
+01:01:55,200 --> 01:02:02,080
+model. So something that currently looks like an 
+obvious mistake back then, we were just enjoying  
+
+585
+01:02:02,080 --> 01:02:07,280
+building a product that we would love to use 
+ourselves, which I think is the right principle,  
+
+586
+01:02:07,280 --> 01:02:14,640
+but it also was a very painful lesson. You need 
+to stay lean, you need to validate things before  
+
+587
+01:02:14,640 --> 01:02:21,920
+you scale them. You need to think way more about 
+the run rate of your business. So there were a  
+
+588
+01:02:21,920 --> 01:02:27,760
+lot of painful lessons for me. Since then, 
+I also try to avoid working with hardware.
+
+589
+01:02:27,760 --> 01:02:33,680
+I was just going to say that's a common challenge 
+for startups trying to get right into hardware,  
+
+590
+01:02:33,680 --> 01:02:37,120
+although I wouldn't be surprised now if 
+Revolut launches something another product,  
+
+591
+01:02:37,120 --> 01:02:43,280
+and this is a new product line of Revolut 
+now that you've had that experience.
+
+592
+01:02:43,280 --> 01:02:48,240
+We launched a POS terminals required.
+
+593
+01:02:48,240 --> 01:02:52,240
+All right, there we go. Dmitry, before we 
+get to our very exciting lightning round,  
+
+594
+01:02:52,240 --> 01:02:55,680
+is there anything else that we haven't touched 
+on that you think might be really helpful for  
+
+595
+01:02:55,680 --> 01:03:00,960
+listeners to hear? Maybe a last wisdom 
+nugget that you haven't already shared,  
+
+596
+01:03:00,960 --> 01:03:04,160
+or even just something to kind of double 
+down on that you've already shared?
+
+597
+01:03:04,160 --> 01:03:09,600
+No, I think that it was an amazing chat and 
+thanks, Lenny. We covered a lot of different  
+
+598
+01:03:09,600 --> 01:03:18,240
+topics. I would just maybe summarize that 
+if you're excited to build certain things,  
+
+599
+01:03:18,240 --> 01:03:25,840
+never hesitate to do it. The best way to do it is 
+probably your own startup, and it also what will  
+
+600
+01:03:25,840 --> 01:03:31,840
+give you the steepest possible learning curve, but 
+then if you want to join a company, try to choose  
+
+601
+01:03:31,840 --> 01:03:39,200
+the one that has the highest entrepreneurial 
+spirit and that will allow you to work as closer  
+
+602
+01:03:40,080 --> 01:03:44,560
+to a mode of a founder as you possibly can.
+
+603
+01:03:44,560 --> 01:03:46,400
+That's a recurring theme in these conversations  
+
+604
+01:03:46,400 --> 01:03:53,280
+I'm having with companies that produce 
+the PMs that have the steepest career  
+
+605
+01:03:53,280 --> 01:03:57,360
+trajectory. And so that advice is exactly 
+what I'm taking away from this too,  
+
+606
+01:03:57,360 --> 01:04:02,800
+assuming you want your career to accelerate really 
+quickly after you go work at this company. Okay,  
+
+607
+01:04:02,800 --> 01:04:06,720
+Dmitry, with that, we've reached our very 
+exciting lightning round. Are you ready?
+
+608
+01:04:06,720 --> 01:04:07,680
+Yes. Let's go.
+
+609
+01:04:07,680 --> 01:04:10,160
+Here we go. Okay. First question,  
+
+610
+01:04:10,160 --> 01:04:15,520
+what are two or three books that you've 
+recommended most to other people?
+
+611
+01:04:15,520 --> 01:04:20,800
+The Hard Thing About Hard Things by 
+Ben Horowitz. Actually read it quite  
+
+612
+01:04:20,800 --> 01:04:27,680
+some time ago, but I found myself recommending 
+it to other product managers most often.  
+
+613
+01:04:27,680 --> 01:04:36,720
+It's actually illustrative that to be a 
+great product manager, someone needs to  
+
+614
+01:04:38,160 --> 01:04:47,440
+strive to being a great CEO. And besides this book 
+emphasizes the importance of building systematic  
+
+615
+01:04:47,440 --> 01:04:54,400
+solutions and scalable solutions, which is 
+critical for scaling a company. Also being  
+
+616
+01:04:54,400 --> 01:05:04,880
+honest on how important it is to grind stuff. 
+And then second book is, I read it more recently,  
+
+617
+01:05:05,440 --> 01:05:14,320
+Build by Tony Fadell. I was really inspired by 
+this one, especially given how I appreciate how  
+
+618
+01:05:14,320 --> 01:05:20,960
+it's not easy to build hardware and what Tony 
+was describing there is just super exciting  
+
+619
+01:05:20,960 --> 01:05:28,560
+and inspiring. And also I think that there are 
+different archetypes of product managers. There  
+
+620
+01:05:28,560 --> 01:05:35,200
+are people who tend to disrupt things more. 
+Personally I think about myself as a builder,  
+
+621
+01:05:35,200 --> 01:05:44,640
+so Tony's principles that he highlighted in 
+the book that they resonate with me a lot.
+
+622
+01:05:44,640 --> 01:05:49,280
+I'm trying to get Tony on the podcast. If anyone 
+listening knows Tony Fadell and can nudge him,  
+
+623
+01:05:49,280 --> 01:05:52,000
+"Hey, say yes to Lenny," that'd be 
+great. I've been in touch with his  
+
+624
+01:05:52,000 --> 01:05:55,280
+team, but he's not doing podcasts right 
+now, but I'm trying to get him on. Okay,  
+
+625
+01:05:55,280 --> 01:05:59,120
+moving on. Do you have a favorite recent 
+movie or TV show that you've really enjoyed?
+
+626
+01:05:59,120 --> 01:06:08,880
+I think the last movie I watched was Oppenheimer 
+and I really liked it. I always love watching  
+
+627
+01:06:08,880 --> 01:06:16,880
+biopics. I think they give kind of a perspective 
+and let you think about things in perspective.
+
+628
+01:06:16,880 --> 01:06:20,320
+Is there a favorite product you recently 
+discovered that you really love?
+
+629
+01:06:20,320 --> 01:06:23,040
+Manus is a great thing.
+
+630
+01:06:23,040 --> 01:06:24,720
+The AI agent?
+
+631
+01:06:24,720 --> 01:06:31,120
+Yeah. Yeah. It's just like I was super impressed 
+how... I was mesmerized. It's so autonomous and  
+
+632
+01:06:31,120 --> 01:06:42,960
+smooth, and I just spent a few hours vibe coding 
+and I created this JavaScript app that sends  
+
+633
+01:06:42,960 --> 01:06:52,880
+me a rare English word every day to learn and 
+remember, and it worked, and I was just amazed.
+
+634
+01:06:52,880 --> 01:06:56,080
+What's a word you learned?
+
+635
+01:06:56,080 --> 01:06:59,200
+Ineffable. It was the yesterday's word.
+
+636
+01:06:59,200 --> 01:07:03,600
+I love that. It's still going. That's 
+great. Do you have a favorite life  
+
+637
+01:07:03,600 --> 01:07:07,840
+motto that you often come back to, 
+you find useful in work or in life?
+
+638
+01:07:07,840 --> 01:07:16,320
+I love this phrase. I think Eisenhower said it, 
+"Plans are worthless, but planning is everything."  
+
+639
+01:07:16,320 --> 01:07:22,800
+It's like we often say how important 
+it is to be flexible and agile and  
+
+640
+01:07:22,800 --> 01:07:29,840
+adjust to change in circumstances, but it 
+doesn't allow us to actually not have a  
+
+641
+01:07:29,840 --> 01:07:34,480
+plan at all. It's important for us to 
+remember that we always need to think  
+
+642
+01:07:34,480 --> 01:07:42,880
+many steps ahead and while being flexible, 
+we also need to think things thoroughly.
+
+643
+01:07:42,880 --> 01:07:46,480
+Final question. For folks that are maybe 
+checking out Revolut for the first time  
+
+644
+01:07:46,480 --> 01:07:50,640
+that want to play with it or already users. 
+What's the most underrated feature? What's  
+
+645
+01:07:50,640 --> 01:07:53,200
+something that you think people should 
+check out maybe they're not aware of,  
+
+646
+01:07:53,200 --> 01:07:59,040
+or even just like a UX, I don't know, animation, 
+something fun that people may not know about?
+
+647
+01:07:59,040 --> 01:08:06,640
+The thing that is not yet widely used, but 
+I really loved it, is what we call a wealth  
+
+648
+01:08:06,640 --> 01:08:12,880
+protection. So if you go to settings, you can 
+enable a limit for any transfers outside of  
+
+649
+01:08:12,880 --> 01:08:17,280
+Revolut. If you want to do a transfer above 
+this limit, you'll have to do a selfie check,  
+
+650
+01:08:17,280 --> 01:08:22,320
+which is our proprietary technology. We do 
+a video selfie here. It allows us to make  
+
+651
+01:08:22,320 --> 01:08:31,040
+sure that it's you, no one else is doing the 
+transfer, and it's actually almost as smooth  
+
+652
+01:08:31,040 --> 01:08:38,160
+as face ID and the way the team built it is 
+really great. I'm really proud of those guys.
+
+653
+01:08:38,160 --> 01:08:42,640
+Dmitry, you guys are doing something very 
+special. I really appreciate you spending  
+
+654
+01:08:42,640 --> 01:08:44,960
+so much time with me chatting through 
+all the things you guys have figured  
+
+655
+01:08:44,960 --> 01:08:47,440
+out. I think this is going to help 
+a lot of different companies level  
+
+656
+01:08:47,440 --> 01:08:51,760
+up the way they think about product and 
+for people to join Revolut that want to  
+
+657
+01:08:51,760 --> 01:08:56,240
+experience this and accelerate their career. So 
+thank you for being here. Two final questions.  
+
+658
+01:08:56,240 --> 01:09:00,160
+Where can folks find you if they want to reach 
+out and how can listeners be useful to you?
+
+659
+01:09:00,160 --> 01:09:07,440
+I think the best way is to find me on LinkedIn 
+and yeah, I would be happy to receive a note  
+
+660
+01:09:07,440 --> 01:09:12,720
+from anyone on how we can improve the product 
+and any feedback on the product. And also  
+
+661
+01:09:14,000 --> 01:09:22,080
+if you know someone who can be a great fit to 
+Revolut after you've listened to what I've told,  
+
+662
+01:09:23,600 --> 01:09:26,320
+then yeah, I would be grateful for that as well.
+
+663
+01:09:26,320 --> 01:09:32,160
+Awesome. You're about to get a flood of 
+applications. Get prepared. Dmitry, thank you.
+
+664
+01:09:32,160 --> 01:09:35,360
+Yeah, Lenny, thanks a lot. It was 
+amazing time. Thank you very much.
+
+665
+01:09:35,360 --> 01:09:38,880
+Same. Bye everyone.
+Thank you so much for  
+
+666
+01:09:38,880 --> 01:09:43,040
+listening. If you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+667
+01:09:43,040 --> 01:09:47,840
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating  
+
+668
+01:09:47,840 --> 01:09:52,800
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+669
+01:09:52,800 --> 01:10:00,080
+past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

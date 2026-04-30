@@ -1,0 +1,4099 @@
+1
+00:00:00,040 --> 00:00:03,800
+You've worked at two businesses that have 
+done incredibly well combining product in ops.
+
+2
+00:00:03,800 --> 00:00:08,480
+Uber always has this mentality and Opendoor 
+does two of the product operations, twin  
+
+3
+00:00:08,480 --> 00:00:13,400
+turbine jet plane where you can fly the plane 
+on one engine for a little bit if you need to,  
+
+4
+00:00:13,400 --> 00:00:17,320
+but it's operating most efficiently and 
+effectively if both are working together.
+
+5
+00:00:17,320 --> 00:00:21,680
+What has having been in ops done to 
+make you a better product leader?
+
+6
+00:00:21,680 --> 00:00:25,120
+Gave a really deep understanding of 
+how the business actually works. It's  
+
+7
+00:00:25,120 --> 00:00:27,760
+a pretty good foundation for 
+them going on to say, okay,  
+
+8
+00:00:27,760 --> 00:00:31,120
+what do we actually want to build 
+in a more scalable technology way.
+
+9
+00:00:31,120 --> 00:00:34,560
+Something else I've heard that you're very 
+good at is staying very calm under pressure.
+
+10
+00:00:34,560 --> 00:00:38,760
+I've slept on the floor in 
+China before launching uberPOOL,  
+
+11
+00:00:38,760 --> 00:00:42,120
+and when you reflect the stress onto your teams,  
+
+12
+00:00:42,120 --> 00:00:50,920
+everybody tenses out. It counterintuitively 
+doesn't produce better outcomes.
+
+13
+00:00:50,920 --> 00:00:56,840
+Today my guest is Brian Tolkin. Brian is currently 
+head of product and design at Opendoor. Before  
+
+14
+00:00:56,840 --> 00:01:03,160
+that, he spent nearly five years at Uber where he 
+joined as employee 100. Before Uber had UberX or  
+
+15
+00:01:03,160 --> 00:01:08,640
+uberPOOL or any shared rides, he actually started 
+on the ops team at Uber, moved into product,  
+
+16
+00:01:08,640 --> 00:01:13,920
+ended up leading product and launch of uberPOOL, 
+and then taking it global. He also started the  
+
+17
+00:01:13,920 --> 00:01:18,120
+product operations function at Uber. Before 
+that function was really even a thing,  
+
+18
+00:01:18,120 --> 00:01:23,360
+which I didn't know until the chat that we had. 
+In our conversation, Brian shares a ton of lessons  
+
+19
+00:01:23,360 --> 00:01:28,880
+about building products with a heavy operational 
+component. Also, how to run great product reviews,  
+
+20
+00:01:28,880 --> 00:01:32,320
+how he implements the jobs to be done, 
+framework and Opendoor's successfully. 
+
+21
+00:01:32,320 --> 00:01:37,400
+The story behind Zillow trying to compete with 
+Opendoor failing and then partnering instead. Plus  
+
+22
+00:01:37,400 --> 00:01:42,880
+a ton of great stories from the early days of Uber 
+and Opendoor, and so much more. If you enjoy this  
+
+23
+00:01:42,880 --> 00:01:47,120
+podcast, don't forget to subscribe and follow it 
+in your favorite podcasting app or YouTube. It's  
+
+24
+00:01:47,120 --> 00:01:52,160
+the best way to avoid missing feature episodes 
+and it helps the podcast tremendously. With that,  
+
+25
+00:01:52,160 --> 00:01:59,840
+I bring you Brian Tolkin. Brian, thank you so 
+much for being here and welcome to the podcast.
+
+26
+00:02:00,400 --> 00:02:02,160
+Thank you, appreciate it. Thanks for having me.
+
+27
+00:02:02,160 --> 00:02:05,400
+First of all, just a huge thank you 
+to Kayvon Beykpour for connecting us,  
+
+28
+00:02:05,400 --> 00:02:08,720
+introducing us. He said all kinds 
+of amazingly nice things about you.  
+
+29
+00:02:08,720 --> 00:02:12,120
+He also gave me some very hard questions 
+to ask you. I hope you've come prepared.
+
+30
+00:02:12,120 --> 00:02:14,240
+Terrific. Put me in my hot seat.
+
+31
+00:02:14,240 --> 00:02:20,040
+Okay, I want to spend a bunch of time talking 
+about product and ops. You started your career  
+
+32
+00:02:20,040 --> 00:02:24,560
+in operations. At Uber you actually started on the 
+ops team and you moved into product. You've also  
+
+33
+00:02:24,560 --> 00:02:30,280
+worked at both Uber and at Opendoor, which have 
+both huge operational components. I think it's  
+
+34
+00:02:30,280 --> 00:02:36,640
+really rare that people, one, see a company 
+scale to the heights of Uber and Opendoor  
+
+35
+00:02:36,640 --> 00:02:41,520
+with such a heavy operational component that 
+are still tech companies and also it's really  
+
+36
+00:02:41,520 --> 00:02:44,520
+where someone starts an ops and then moves 
+into product and ends up where you are,  
+
+37
+00:02:44,520 --> 00:02:48,160
+where your chief product officer, really 
+successful company. So I have a bunch of  
+
+38
+00:02:48,160 --> 00:02:55,480
+questions here. Maybe the first is just what 
+has having been in ops done to make you a  
+
+39
+00:02:55,480 --> 00:02:58,560
+better product leader? How does that change 
+the way that you operate as a product leader?
+
+40
+00:02:58,560 --> 00:03:03,520
+Starting on the operations side gave a really 
+deep understanding of how the business actually  
+
+41
+00:03:03,520 --> 00:03:10,400
+works. You are truly operating it day in 
+and day out and the success of the city is  
+
+42
+00:03:10,400 --> 00:03:16,400
+in large part driven by the inputs that you 
+are putting into it every single day on the  
+
+43
+00:03:16,400 --> 00:03:21,880
+ground and whether or not there was rain that 
+weekend, which was a nice driver of metrics,  
+
+44
+00:03:21,880 --> 00:03:29,440
+but talking to customers every single day like 
+one-on-one onboarding drivers responding to  
+
+45
+00:03:29,440 --> 00:03:34,640
+support tickets, there's no centralized support 
+team, there was no closer to the customer,  
+
+46
+00:03:34,640 --> 00:03:40,360
+right? And so I think that foundation actually for 
+really understanding what moves the business and  
+
+47
+00:03:40,360 --> 00:03:46,440
+being super close to the customer actually is a 
+pretty good foundation for them going on to say,  
+
+48
+00:03:46,440 --> 00:03:52,080
+okay, what do we actually want to build 
+in a more scalable technology way?
+
+49
+00:03:52,080 --> 00:03:57,400
+This episode is brought to you by Pendo, the 
+only all-in-one product experience platform  
+
+50
+00:03:57,400 --> 00:04:02,680
+for any type of application. Tired of bouncing 
+around multiple tools to uncover what's really  
+
+51
+00:04:02,680 --> 00:04:07,440
+happening inside your product? With all the 
+tools you need in one simple to use platform,  
+
+52
+00:04:07,440 --> 00:04:11,600
+Pendo makes it easy to answer critical 
+questions about how users are engaging  
+
+53
+00:04:11,600 --> 00:04:16,880
+with your product and then turn those insights 
+into action. Also, you can get your users to do  
+
+54
+00:04:16,880 --> 00:04:21,800
+what you actually want them to do. First, Pendo 
+is built around product analytics, seeing what  
+
+55
+00:04:21,800 --> 00:04:26,680
+your users are actually doing in your apps so 
+that you can optimize their experience. Next,  
+
+56
+00:04:26,680 --> 00:04:31,840
+Pendo lets you deploy in-app guides that lead 
+users through the actions that matter most. 
+
+57
+00:04:31,840 --> 00:04:37,440
+Then Pendo integrates user feedback so that you 
+can capture and analyze what people actually want.  
+
+58
+00:04:37,440 --> 00:04:43,080
+And the new thing in Pendo, session replays. A 
+very cool way to visualize user sessions. I'm  
+
+59
+00:04:43,080 --> 00:04:49,960
+not surprised at all that over 10,000 companies 
+use it today. Visit pendo.io/lenny to create your  
+
+60
+00:04:49,960 --> 00:04:55,400
+free Pendo account today and start building better 
+experiences across every corner of your product.  
+
+61
+00:04:55,400 --> 00:05:00,200
+PS, you want to take your product led knowhow a 
+step further? Check out Pendo's lineup of free  
+
+62
+00:05:00,200 --> 00:05:05,120
+certification courses led by talk product experts 
+and designed to help you grow and advance in your  
+
+63
+00:05:05,120 --> 00:05:12,800
+career. Learn more and experience the power 
+of the Pendo platform today at pendo.io/lenny.
+
+64
+00:05:12,800 --> 00:05:15,280
+Pendo.
+
+65
+00:05:15,280 --> 00:05:20,720
+This episode is brought to you by Explo, a game 
+changer for customer facing analytics and data  
+
+66
+00:05:20,720 --> 00:05:26,520
+reporting. Are your users craving more dashboards, 
+reports and analytics within your product? Are  
+
+67
+00:05:26,520 --> 00:05:30,800
+you tired of trying to build it yourself? As a 
+product leader, you probably have these requests  
+
+68
+00:05:30,800 --> 00:05:35,760
+in your roadmap, but the struggle to prioritize 
+them is real. Building analytics from scratch  
+
+69
+00:05:35,760 --> 00:05:42,600
+can be time-consuming, expensive, and a really 
+challenging process. Enter Explo. Explo is a fully  
+
+70
+00:05:42,600 --> 00:05:49,120
+white labeled embedded analytics solution designed 
+entirely with your user in mind. Getting started  
+
+71
+00:05:49,120 --> 00:05:54,720
+is easy. Explo connects to any relational database 
+or warehouse and with its low-code functionality,  
+
+72
+00:05:54,720 --> 00:05:59,840
+you can build and style dashboards in. Once 
+you're ready, simply embed the dashboard  
+
+73
+00:05:59,840 --> 00:06:05,520
+or report into your application with a tiny code 
+snippet. The best part, your end users can use  
+
+74
+00:06:05,520 --> 00:06:10,880
+Explo's AI features for their own report and 
+dashboard generation eliminating customer data  
+
+75
+00:06:10,880 --> 00:06:17,880
+requests for your support team. Build and embed a 
+fully white labeled analytics experience in days. 
+
+76
+00:06:17,880 --> 00:06:27,760
+Try it for free at explo.co/lenny. That's 
+E-X-P-L-O/lenny. I've seen that a lot of  
+
+77
+00:06:27,760 --> 00:06:31,480
+companies, and this was definitely true to 
+Airbnb, where the product team looks down a  
+
+78
+00:06:31,480 --> 00:06:35,040
+little bit on the ops team where they're like, 
+"oh, we're doing things that are going to scale  
+
+79
+00:06:35,040 --> 00:06:39,240
+to millions of users. We're doing these things 
+that are going to apply to everyone." There's  
+
+80
+00:06:39,240 --> 00:06:44,240
+this ops team over there doing a few things 
+that are going to not scale. They keep asking  
+
+81
+00:06:44,240 --> 00:06:49,720
+us for things to build for their one-off ideas. 
+What do you think that product teams often maybe  
+
+82
+00:06:49,720 --> 00:06:56,120
+miss or don't understand about the ops teams that 
+would help them see them in a different light?
+
+83
+00:06:56,120 --> 00:07:03,200
+Yeah, it's a great question and I think Uber 
+always had this mentality and OpenDoor does too  
+
+84
+00:07:03,200 --> 00:07:08,720
+of like a twin turbine jet plane where you can 
+fly the plane on one engine for a little bit if  
+
+85
+00:07:08,720 --> 00:07:14,520
+you need to, but it's operating most efficiently 
+and effectively if both are working together,  
+
+86
+00:07:14,520 --> 00:07:21,280
+and I think that's really true, right? The 
+reality is operations teams, local teams,  
+
+87
+00:07:21,280 --> 00:07:28,600
+can iterate faster, can scale talking to 
+customers really much more efficiently,  
+
+88
+00:07:28,600 --> 00:07:37,520
+have great qualitative insights, and so if it's 
+seen more as a harmony instead of a competition,  
+
+89
+00:07:37,520 --> 00:07:41,360
+I think that's really, really 
+helpful where it's like, okay,  
+
+90
+00:07:41,360 --> 00:07:45,280
+how do we get the insights that are happening 
+day in and day out in the field, on the ground,  
+
+91
+00:07:45,280 --> 00:07:50,040
+whatever that may be, and help us build 
+better products because of that, right? 
+
+92
+00:07:50,040 --> 00:07:57,000
+Like a PM sitting in San Francisco can't be in 
+Opendoor's case 50 markets, walking houses every  
+
+93
+00:07:57,000 --> 00:08:03,760
+single day in Uber's case, whatever, a thousand 
+cities understanding the nuances of safety in  
+
+94
+00:08:03,760 --> 00:08:08,880
+South America and it's just not possible, but what 
+you can do is foster a really good relationship  
+
+95
+00:08:08,880 --> 00:08:15,520
+and a really good feedback loop of how people 
+who do deeply understand those things can help  
+
+96
+00:08:15,520 --> 00:08:22,720
+give insights. Now is actually the birth of 
+product operations was that insight as well.
+
+97
+00:08:22,720 --> 00:08:23,960
+Can you say more on that?
+
+98
+00:08:23,960 --> 00:08:28,600
+Yeah, sure. So, sorry, I should probably 
+define what product operations was. At  
+
+99
+00:08:28,600 --> 00:08:34,240
+Uber it was basically this notion that we had 
+centralized, this was later in my career at Uber,  
+
+100
+00:08:34,240 --> 00:08:40,160
+but we had a centralized product team 
+building stuff mostly in San Francisco,  
+
+101
+00:08:40,160 --> 00:08:42,760
+not strictly through the Ross, but 
+at this point around the world,  
+
+102
+00:08:42,760 --> 00:08:49,000
+but mostly in San Francisco and then we had 
+a very globally distributed operations team,  
+
+103
+00:08:49,000 --> 00:08:55,920
+and there was a bidirectional feedback loop that 
+wasn't super strong and that feedback loop was  
+
+104
+00:08:55,920 --> 00:09:01,200
+basically when the EPD teams in San Francisco 
+built new features, how do we effectively put it  
+
+105
+00:09:01,200 --> 00:09:06,680
+in global markets and then how do we effectively 
+get input from global markets to better build  
+
+106
+00:09:06,680 --> 00:09:11,720
+features. And so one solution to that problem, 
+our solution at the time was to start up a new  
+
+107
+00:09:11,720 --> 00:09:17,120
+function called product operations who had 
+accountability and reported into operations  
+
+108
+00:09:17,120 --> 00:09:23,680
+but physically sat with and operated much like 
+a member of the product team to help solve that.
+
+109
+00:09:23,680 --> 00:09:27,880
+Is that maybe the first time there's a... Did 
+you invent product operations as a function?
+
+110
+00:09:28,640 --> 00:09:32,520
+I don't think so because at the time, I believe 
+Google had a function, I can't remember what  
+
+111
+00:09:32,520 --> 00:09:38,000
+Google called it was something slightly different, 
+but I met with a few folks who had been in similar  
+
+112
+00:09:38,000 --> 00:09:44,200
+type roles at Google and a couple other 
+places, so I don't take credit for certainly  
+
+113
+00:09:44,200 --> 00:09:49,080
+for inventing IT and other people have actually 
+dabbled in this model at Uber before me there  
+
+114
+00:09:49,080 --> 00:09:53,840
+was just a formalization of it and our actual 
+building out of the organization, et cetera.
+
+115
+00:09:53,840 --> 00:10:00,120
+Did none of that. Sounds like you basically helped 
+make it a thing. I know you're being very modest,  
+
+116
+00:10:00,120 --> 00:10:05,240
+I think. Coming back to your point about 
+decentralized operations teams, something I've  
+
+117
+00:10:05,240 --> 00:10:10,920
+read is that search pricing came out of one GM and 
+a market just testing, emailing all the drivers,  
+
+118
+00:10:10,920 --> 00:10:15,120
+hey, we're going to give you extra if you 
+drive on Saturday night. Is that true?
+
+119
+00:10:15,120 --> 00:10:21,360
+That would've been probably a little bit before 
+my time, but that being said, one thing that  
+
+120
+00:10:21,360 --> 00:10:29,320
+is true is that surge pricing for actually 
+quite sometimes all of 2012, certainly 2013  
+
+121
+00:10:29,880 --> 00:10:35,400
+probably, I don't know when we necessarily 
+switched, was very much a human in the loop  
+
+122
+00:10:35,400 --> 00:10:42,000
+system or a very manual system where GMs 
+in every city would control basically the  
+
+123
+00:10:42,000 --> 00:10:48,520
+parameters in which surge would operate and so 
+much of the time that would need, for example,  
+
+124
+00:10:48,520 --> 00:10:57,120
+Monday through Friday, there would be no search, 
+it couldn't flip on, and then Friday nights and  
+
+125
+00:10:57,120 --> 00:11:05,400
+Saturday nights it would flip on from whatever 
+you set, 7:00 PM to 3:00 AM and the cap was X,  
+
+126
+00:11:05,400 --> 00:11:10,000
+whatever the cap was. And then within those 
+parameters the algorithm would optimize for what  
+
+127
+00:11:10,000 --> 00:11:16,680
+the price was. But yeah, GMs controlled whether it 
+was on or off and what geographies were surging.
+
+128
+00:11:16,680 --> 00:11:21,400
+Wow, I didn't know that. Was that out of we 
+believe we are better than the algorithms or  
+
+129
+00:11:21,400 --> 00:11:26,440
+we just don't have time to make them amazing 
+yet, so we're just going to help them along?
+
+130
+00:11:26,440 --> 00:11:31,440
+Yeah, I think it was probably a function of 
+a bunch of stuff, one of which is like, hey,  
+
+131
+00:11:31,440 --> 00:11:38,160
+this is a fairly new concept and it's powerful 
+and dangerous and so let's make sure we understand  
+
+132
+00:11:38,160 --> 00:11:45,360
+what's happening. The second is this belief that 
+local city teams know their cities best and so  
+
+133
+00:11:45,360 --> 00:11:52,920
+you might know that an event is happening, 
+a baseball game gets out and it's like, oh,  
+
+134
+00:11:52,920 --> 00:11:58,480
+I know that this baseball game's going to get out 
+at 10:00 PM so I'm going to set surge at 9:45 and  
+
+135
+00:11:58,480 --> 00:12:03,000
+the algorithm may not be able to pick that up. 
+And then the third is the technical constraint  
+
+136
+00:12:03,000 --> 00:12:09,520
+of nowadays clearly it's all automated, but 
+it's really hard to build a fully dynamic,  
+
+137
+00:12:09,520 --> 00:12:17,280
+always on geospatially aware pricing 
+system and not just a little bit of time.
+
+138
+00:12:17,280 --> 00:12:22,440
+That makes sense. I feel like you're full 
+of wild stories from your time at Uber.  
+
+139
+00:12:22,440 --> 00:12:26,960
+Is there one that comes to mind of just, I 
+think you helped scale in China, uberPOOL?
+
+140
+00:12:26,960 --> 00:12:27,560
+Yeah.
+
+141
+00:12:27,560 --> 00:12:31,720
+Maybe that's the one. I don't know. Can 
+you share wild story from early Uber days?
+
+142
+00:12:31,720 --> 00:12:39,800
+Yeah, so in the early days of Uber, one fun story 
+is obviously UberX is a random mainstream product  
+
+143
+00:12:39,800 --> 00:12:49,680
+but has a funny, silly name, UberX. This product 
+in the early days was going to be all hybrid  
+
+144
+00:12:49,680 --> 00:12:56,280
+and had a bunch of different potential 
+names. I was not personally driving this,  
+
+145
+00:12:56,280 --> 00:12:59,560
+this was someone else on the operations 
+team, but they built the model for  
+
+146
+00:12:59,560 --> 00:13:06,360
+what this product could be and there's no name for 
+it yet, so it was going to be a placeholder. So  
+
+147
+00:13:06,360 --> 00:13:11,400
+what do you put in some placeholder? X. So UberX 
+and then the company was moving quickly enough,  
+
+148
+00:13:11,400 --> 00:13:16,080
+the product got the green light, it 
+launched, and here we are, I don't know,  
+
+149
+00:13:16,080 --> 00:13:21,160
+12 years later, 11 years later, whatever 
+it is and UberX is the name that stuck.
+
+150
+00:13:21,760 --> 00:13:26,600
+That is hilarious. I love it. So it was a 
+placeholder. It's like many products start  
+
+151
+00:13:26,600 --> 00:13:28,880
+that way where they're like, this is just 
+the temporary name, and they're like, okay,  
+
+152
+00:13:28,880 --> 00:13:31,311
+I guess everyone just knows it this 
+way now we're going to stick with it.
+
+153
+00:13:31,311 --> 00:13:34,560
+Exactly. It's too expensive to 
+change and rebrand at this point.
+
+154
+00:13:34,560 --> 00:13:36,280
+That's an awesome story.
+
+155
+00:13:36,280 --> 00:13:44,520
+One that is good about scaling Uber uberPOOL in 
+China is we were launching Uber pool in China and  
+
+156
+00:13:44,520 --> 00:13:50,160
+this was going to be, China at the time was pretty 
+big for Uber, but uberPOOL was not there yet,  
+
+157
+00:13:50,160 --> 00:13:57,200
+and so we were going to launch. And myself 
+and a few other folks were in Chengdu China,  
+
+158
+00:13:57,200 --> 00:14:04,280
+which is the first Chinese market that we were 
+launching uberPOOL in and we were going to be on  
+
+159
+00:14:04,280 --> 00:14:11,360
+the ground took to launch. We wanted to go live 
+at, I believe it was 6:00 AM for rush hour on,  
+
+160
+00:14:11,360 --> 00:14:16,960
+I don't remember the day, but whatever, Monday 
+morning, and so we're there over the weekend  
+
+161
+00:14:17,520 --> 00:14:22,800
+getting ready to set up and at the same time 
+we were doing some data center testing. And so  
+
+162
+00:14:22,800 --> 00:14:28,840
+we flipped on all the testing infrastructure and 
+thought it was going to work and nothing works,  
+
+163
+00:14:28,840 --> 00:14:36,120
+and the matching algorithm just isn't working 
+and we're like, oh my god, now it's whatever,  
+
+164
+00:14:36,120 --> 00:14:41,240
+5:00 PM the day before we're supposed to go live, 
+6:00 PM, 7:00 PM okay, let's get on the phone  
+
+165
+00:14:41,240 --> 00:14:46,400
+with the US, try and figure out what's going on.
+I remember I slept about 30 minutes that night  
+
+166
+00:14:46,400 --> 00:14:52,600
+between 2:00 and 3:00 AM being like, okay, well, 
+we have to go live at 6:00 AM I think there was  
+
+167
+00:14:52,600 --> 00:14:58,160
+some press around it. We were planning on 
+going live and I think we got everything  
+
+168
+00:14:58,160 --> 00:15:04,120
+finally working at probably about five 30 or six 
+in the morning and launched just in the nick of  
+
+169
+00:15:04,120 --> 00:15:09,800
+time. And I'll never forget, we launched, it 
+was great, we monitored, everything was good,  
+
+170
+00:15:09,800 --> 00:15:15,120
+and then we walked out for breakfast at 7:30 
+in the morning. Everyone sleep depressed,  
+
+171
+00:15:15,120 --> 00:15:21,680
+no one slept all night and we got these 
+pancakes street food things and I have to  
+
+172
+00:15:21,680 --> 00:15:25,960
+imagine they were not that good, but in my mind 
+it was the best meal I've ever had in my life.
+
+173
+00:15:27,520 --> 00:15:31,160
+It's like a meal after a marathon or a big hike.
+
+174
+00:15:31,160 --> 00:15:32,160
+Exactly. Yeah, exactly.
+
+175
+00:15:32,160 --> 00:15:37,920
+Everything's so delicious. This comes up a lot 
+of just these moments that are so incredibly  
+
+176
+00:15:37,920 --> 00:15:43,200
+stressful and hard and leap deprived end up 
+being the best memories and the best stories  
+
+177
+00:15:43,200 --> 00:15:46,920
+to tell and things you look back at fondly. 
+It's so weird how human nature is like that.
+
+178
+00:15:46,920 --> 00:15:56,120
+Yeah, I mean another one more recent for 
+Opendoor was when COVID hit, physically  
+
+179
+00:15:56,120 --> 00:16:04,560
+we buy and sell homes, and so we were physically 
+going into people's homes and suddenly March 2020  
+
+180
+00:16:04,560 --> 00:16:10,520
+going into people's homes was not something 
+people were comfortable with. And you look at  
+
+181
+00:16:10,520 --> 00:16:16,240
+the real estate data coming out of China at the 
+time and it looked like coming to a standstill,  
+
+182
+00:16:16,240 --> 00:16:22,160
+and so we actually turned off the core business 
+and we stopped buying homes for a few months. hey,  
+
+183
+00:16:22,160 --> 00:16:29,600
+we can't go in and we don't know if anyone's going 
+to be buying any homes, and so what do we do? And  
+
+184
+00:16:29,600 --> 00:16:33,560
+we took those few months and then came out 
+the other side and had virtualized the whole  
+
+185
+00:16:33,560 --> 00:16:38,320
+process. Then it was pretty stressful, right, 
+because looking at a business that relies on  
+
+186
+00:16:38,320 --> 00:16:44,440
+going into people's homes and suddenly you can't 
+do that anymore, what do you do? So, again, a fond  
+
+187
+00:16:44,440 --> 00:16:51,040
+memory to look back on a very stressful time in 
+the moment where it feels very, very difficult.
+
+188
+00:16:51,040 --> 00:16:54,880
+Just since you mentioned Opendoor, I think 
+many people have heard of Opendoor. Maybe just  
+
+189
+00:16:54,880 --> 00:16:58,400
+give a quick explanation of what Opendoor 
+does for people that aren't exactly sure.
+
+190
+00:16:58,400 --> 00:17:04,000
+So we're a digital platform to buy and 
+sell real estate. The core product today  
+
+191
+00:17:04,000 --> 00:17:09,120
+is a seller focused product where people can go 
+online, enter some information about their home,  
+
+192
+00:17:09,120 --> 00:17:15,080
+and we'll make an all cash offer to be 
+able to sell simplicity and certainty.  
+
+193
+00:17:16,800 --> 00:17:24,560
+So the product really works for people 
+who want something that is certain and  
+
+194
+00:17:24,560 --> 00:17:30,080
+simple and easy. I don't know if you've ever 
+sold a home, but it can be a very, very, very  
+
+195
+00:17:30,080 --> 00:17:34,960
+successful difficult process with showings and 
+open houses and how to price it and will it  
+
+196
+00:17:34,960 --> 00:17:41,240
+sell and all of that stuff. And so we offer 
+basically a way to skip the whole process.
+
+197
+00:17:41,240 --> 00:17:45,840
+So you basically sell your house to Opendoor 
+and it's just like, cool, done, move on.
+
+198
+00:17:45,840 --> 00:17:53,360
+You picked your closing date, you move out 
+when you want. Yeah, there's no hassle.
+
+199
+00:17:53,360 --> 00:18:00,760
+Sounds amazing. I want that. Coming back to ops 
+and product, just to close this thread again,  
+
+200
+00:18:00,760 --> 00:18:05,240
+you've worked at two businesses that have done 
+incredibly well combining product and ops. Are  
+
+201
+00:18:05,240 --> 00:18:10,160
+there any just broad lessons you've taken away 
+from how to make these two teams and functions  
+
+202
+00:18:10,160 --> 00:18:15,440
+work well together and to build a business 
+that's very ops heavy but also offer driven?
+
+203
+00:18:15,440 --> 00:18:21,360
+The first one we touched on, which is a, 
+there's just got to be mutual respect. Both  
+
+204
+00:18:21,360 --> 00:18:30,200
+functions have their time and their place and 
+their skillsets, and you just don't build big  
+
+205
+00:18:30,200 --> 00:18:35,320
+businesses of this type without respecting the 
+fact that that both need to exist. The second,  
+
+206
+00:18:35,320 --> 00:18:40,040
+particularly on the product and engineering 
+side, is really understanding where and how  
+
+207
+00:18:40,040 --> 00:18:46,200
+the technology leverage comes from the business 
+and then being really focused on making sure  
+
+208
+00:18:46,200 --> 00:18:51,640
+generally, especially in the earlier days, you are 
+more limited on the technical resourcing side than  
+
+209
+00:18:51,640 --> 00:18:56,720
+you might be on the operational resourcing side. 
+And so how do you be really focused on where to  
+
+210
+00:18:56,720 --> 00:19:03,400
+invest your time, effort, and energy technically, 
+which is why most of the engineering effort for  
+
+211
+00:19:03,400 --> 00:19:08,480
+Uber was on the dispatching system and the pricing 
+system. That's just where the leverage was at the  
+
+212
+00:19:08,480 --> 00:19:13,200
+time, given the scarcity of resources.
+And so I think the second one is being  
+
+213
+00:19:13,200 --> 00:19:18,880
+really intentional about where those techs are 
+and then being really forthcoming and saying,  
+
+214
+00:19:18,880 --> 00:19:25,120
+hey, that means all these other places where 
+yes, it can make things easier, more efficient,  
+
+215
+00:19:25,120 --> 00:19:30,160
+et cetera, et cetera. We are okay not investing 
+in right now, and that needs to be an explicit  
+
+216
+00:19:30,160 --> 00:19:39,160
+decision and very transparent. But then the last 
+bit I would say is a deep understanding that the  
+
+217
+00:19:39,160 --> 00:19:47,080
+real world has entropy and it's hard and it's 
+messy for us at Opendoor, we go into homes,  
+
+218
+00:19:47,080 --> 00:19:53,560
+someone may not be home, scheduling may be off, 
+at Uber the driver may cancel the radio GPS.  
+
+219
+00:19:53,560 --> 00:19:59,080
+All these things happen, right? Computers are 
+deterministic, but humans aren't, right? And so  
+
+220
+00:19:59,080 --> 00:20:03,880
+building products that have a little bit 
+more flex or a little bit more fail safes  
+
+221
+00:20:03,880 --> 00:20:08,640
+in case those things happen becomes 
+a little bit more of a paramount. 
+
+222
+00:20:08,640 --> 00:20:15,120
+One other thing, the last thing I would say is I 
+think that the companies evolve as well. So what  
+
+223
+00:20:15,120 --> 00:20:20,560
+I talked about at the beginning of Uber being 
+very focused from an engineering and product  
+
+224
+00:20:20,560 --> 00:20:25,960
+side on the dispatching system and the pricing 
+system, obviously over time not to evolve now  
+
+225
+00:20:25,960 --> 00:20:31,200
+it centralized all of these functions as the 
+company got bigger and more mature and scale  
+
+226
+00:20:31,200 --> 00:20:39,960
+and optimization started to be more important 
+and expansion and that Petri dish of trying  
+
+227
+00:20:39,960 --> 00:20:44,040
+new stuff and the tools got better and the 
+tech got easier and there was more internal  
+
+228
+00:20:44,040 --> 00:20:52,080
+infrastructure. And so over time things can start 
+one way and shift over time as the business needs.
+
+229
+00:20:52,080 --> 00:20:54,760
+Let's actually spend more time there. 
+You keep saying things that make me  
+
+230
+00:20:54,760 --> 00:20:58,760
+want to dig deeper. So at Airbnb we went 
+through the same thing where there was  
+
+231
+00:20:58,760 --> 00:21:03,200
+all these local ops teams driving supply, 
+finding homes, bringing out the platform,  
+
+232
+00:21:03,200 --> 00:21:06,760
+and then there's this tipping point where 
+the product in organic growth or word of  
+
+233
+00:21:06,760 --> 00:21:11,440
+mouth ended up driving more and then orders of 
+magnitude more. So there was no need for these  
+
+234
+00:21:11,440 --> 00:21:17,000
+folks to spend time doing these things. Can you 
+just maybe share an example, either we Opendoor,  
+
+235
+00:21:17,000 --> 00:21:20,760
+when you talk about there's a time and 
+a place and a skillset for ops, how that  
+
+236
+00:21:20,760 --> 00:21:25,440
+evolved? What was the team doing initially and 
+then what did they end up doing as things grew?
+
+237
+00:21:25,440 --> 00:21:33,480
+Yeah, I mean, maybe a very easy good example 
+to pick just one part of the Uber process in  
+
+238
+00:21:33,480 --> 00:21:42,080
+the early days is at small scale, actually back 
+when it was Uber black drivers, every driver  
+
+239
+00:21:42,080 --> 00:21:50,240
+was individually onboarded in a 90 minute to a 
+two-hour in-person in the office onboarding with  
+
+240
+00:21:50,240 --> 00:21:56,360
+deep setting of expectations. The next version of 
+that... So that's obviously very ops driven. The  
+
+241
+00:21:56,360 --> 00:22:01,920
+next version of that is a small classroom type 
+setting of three or five or six drivers at a  
+
+242
+00:22:01,920 --> 00:22:10,400
+given time. Also, very ops driven. And then as we 
+got into more mass market products like Uber Taxi  
+
+243
+00:22:10,400 --> 00:22:15,880
+or UberX, it was like, okay, maybe 20 or 30 at a 
+time. So now it's a little bit bigger classroom  
+
+244
+00:22:15,880 --> 00:22:20,520
+setting. And we said, okay, let's make a video. 
+Instead of giving verbally the same presentation,  
+
+245
+00:22:20,520 --> 00:22:27,240
+let's just make an onboarding video and that 
+was the next set of scale, but now suddenly we  
+
+246
+00:22:27,240 --> 00:22:31,960
+have a different problem, which is okay, you 
+have to validate all of these credentials. 
+
+247
+00:22:31,960 --> 00:22:37,920
+So most driver's license who they are, all 
+that stuff at one person, easy at three to  
+
+248
+00:22:37,920 --> 00:22:44,560
+four at a time, easy, 10 at a time, a little 
+more challenging but fine. At 20 at a time,  
+
+249
+00:22:44,560 --> 00:22:50,120
+okay, you're starting to run up onto it now 
+you fast-forward six months and you're doing  
+
+250
+00:22:50,120 --> 00:22:54,400
+a thousand a week or whatever, suddenly 
+your system breaks and it's like, okay,  
+
+251
+00:22:54,400 --> 00:23:00,200
+we have reached the point where operational system 
+improvements is no longer viable. So, you say,  
+
+252
+00:23:00,200 --> 00:23:07,440
+okay, we have gone from the iteration stage to 
+the scale stage and technology is uniquely good  
+
+253
+00:23:07,440 --> 00:23:12,120
+at scaling. So now we say, okay, instead of having 
+a bunch of folks around the world taking pictures  
+
+254
+00:23:12,120 --> 00:23:16,600
+of driver's licenses and validating and doing all 
+that stuff, how do we integrate with some type of  
+
+255
+00:23:16,600 --> 00:23:22,080
+OCR technology or auto recognition of driver's 
+licenses that feeds to a system that knows  
+
+256
+00:23:22,080 --> 00:23:27,440
+what a driver's license is or can do automatic 
+validation and suddenly you've done two things. 
+
+257
+00:23:27,440 --> 00:23:32,400
+One, you've scaled your system, and two, you've 
+just created a ton of time for what at the time  
+
+258
+00:23:32,400 --> 00:23:36,600
+was probably dozens if not hundreds of people 
+running these onboarding sessions all over the  
+
+259
+00:23:36,600 --> 00:23:43,000
+country, the world at the time to do other stuff. 
+And so now you can level that up and say, okay,  
+
+260
+00:23:43,000 --> 00:23:48,080
+do we do more analytics? Do we do more 
+figure out the next process that needs  
+
+261
+00:23:48,080 --> 00:23:51,920
+optimization or whatever the case may be 
+in that virtuous cycle just continues.
+
+262
+00:23:51,920 --> 00:23:55,080
+The way I like to think about this 
+is do things that don't scale and  
+
+263
+00:23:55,080 --> 00:23:58,920
+then scale the things that you're doing. 
+That's the phrase I always come back to.
+
+264
+00:23:58,920 --> 00:24:00,120
+Exactly.
+
+265
+00:24:00,120 --> 00:24:04,920
+This reminds me of a hot take that 
+previous podcast guest shared in a  
+
+266
+00:24:04,920 --> 00:24:12,320
+newsletter post Casey Winters. He talked about 
+that operations is usually, and it's a hot take,  
+
+267
+00:24:12,320 --> 00:24:17,960
+that operations is a sign of inefficiency and 
+over time your job is to squeeze that away and  
+
+268
+00:24:17,960 --> 00:24:23,920
+make it product software as much as possible. 
+Doesn't mean you always get there. Thoughts?
+
+269
+00:24:23,920 --> 00:24:28,360
+Yeah, I actually don't. Fundamentally, 
+it depends on what the operations is,  
+
+270
+00:24:28,920 --> 00:24:33,320
+but I don't fundamentally disagree, but I 
+think that the right lens to think about it  
+
+271
+00:24:33,320 --> 00:24:41,080
+is... And then those folks can move on to 
+the next challenge. And so there's always  
+
+272
+00:24:41,080 --> 00:24:48,240
+another hill to climb. And so I think that 
+was one of the things at Uber and Opendoor  
+
+273
+00:24:48,240 --> 00:24:51,960
+where there's this culture of on the ground 
+experimentation that's really helpful where  
+
+274
+00:24:52,840 --> 00:24:56,600
+we were just talking about driver onboarding 
+may now be solved with technology so you have  
+
+275
+00:24:56,600 --> 00:25:04,040
+a few extra hours a day. How do we get better 
+at optimizing the UberX system? How do you  
+
+276
+00:25:04,040 --> 00:25:09,440
+start tinkering with food delivery? How do you 
+start thinking about higher capacity vehicles?  
+
+277
+00:25:09,440 --> 00:25:15,520
+How do you think about better feedback loop 
+for those manual surge pricing toggles that  
+
+278
+00:25:15,520 --> 00:25:21,200
+we talked about? So I generally agree it just 
+generally free across and solve more problems.
+
+279
+00:25:21,200 --> 00:25:25,960
+It feels like a big part of this is making 
+sure the operations teams understand there's  
+
+280
+00:25:25,960 --> 00:25:29,880
+more opportunity, even if this ends up being 
+automated, your job is not going to go away.  
+
+281
+00:25:29,880 --> 00:25:34,240
+We're going to find something new to try and 
+experiment and do things that don't skip.
+
+282
+00:25:34,240 --> 00:25:34,720
+Yep.
+
+283
+00:25:34,720 --> 00:25:37,600
+Awesome. Okay. Going a 
+completely different direction.
+
+284
+00:25:37,600 --> 00:25:38,520
+Great.
+
+285
+00:25:38,520 --> 00:25:40,840
+I hear you're very good at product reviews.
+
+286
+00:25:40,840 --> 00:25:41,120
+Okay.
+
+287
+00:25:41,120 --> 00:25:44,960
+A few people told me this. I'm curious 
+how you set up a product review and  
+
+288
+00:25:44,960 --> 00:25:48,760
+any things you've learned, any tips for 
+how to run an effective product review?
+
+289
+00:25:48,760 --> 00:25:55,600
+That's very whoever mentioned that. But yes, 
+big fan of doing them actually in particular  
+
+290
+00:25:55,600 --> 00:26:03,600
+to maybe bridge the conversations in companies 
+that have ops driven cadences or start out very  
+
+291
+00:26:03,600 --> 00:26:09,840
+ops driven because the cadences can sometimes 
+be different. And so the operational cadences  
+
+292
+00:26:09,840 --> 00:26:15,920
+that you might have something like a WVRA weekly 
+business review may not be conducive to always  
+
+293
+00:26:15,920 --> 00:26:20,680
+picking your head up and saying like, Hey, where's 
+the product going on a slightly longer timeframe.  
+
+294
+00:26:20,680 --> 00:26:24,360
+And so I think product reviews in general for 
+all companies are probably really helpful,  
+
+295
+00:26:24,360 --> 00:26:30,600
+but actually in particular for some of the 
+product and operations led companies. In  
+
+296
+00:26:30,600 --> 00:26:36,840
+terms of things I've learned, I think being really 
+intentional about what the goals are, I think it's  
+
+297
+00:26:36,840 --> 00:26:43,720
+okay to say that there are two goals, a goal 
+of accountability and inform to an audience. 
+
+298
+00:26:43,720 --> 00:26:50,600
+But also most importantly, I think this is the 
+primary goal is to help make the product better,  
+
+299
+00:26:50,600 --> 00:26:54,280
+to help the teams think through a 
+problem and to have that, again,  
+
+300
+00:26:54,280 --> 00:27:00,680
+back to our earliest conversation, be a very 
+intellectual conversation about the work and  
+
+301
+00:27:00,680 --> 00:27:04,720
+how to make the product better and not 
+super scary. Product reviews hopefully  
+
+302
+00:27:04,720 --> 00:27:10,560
+are not feeling like firing squads. That's a 
+scary environment to be in and not necessarily  
+
+303
+00:27:10,560 --> 00:27:14,400
+one that's conducive to how do we make 
+the product better. Obviously sometimes  
+
+304
+00:27:14,400 --> 00:27:19,320
+the conversations have to get a little intense, 
+but in general that's what we're shooting for  
+
+305
+00:27:19,320 --> 00:27:23,960
+is something that helps the team go back and 
+think through how to make the product better.
+
+306
+00:27:23,960 --> 00:27:28,760
+So the two goals you try to communicate for 
+your product reviews, accountability slash  
+
+307
+00:27:28,760 --> 00:27:32,080
+informing people what's happening, but 
+also just like we are here to make the  
+
+308
+00:27:32,080 --> 00:27:36,280
+product better and setting that context. Yep. 
+Is there anything you'd do specifically to make  
+
+309
+00:27:36,280 --> 00:27:39,640
+it not feel like a firing squad? Like you're 
+coming in here to be attacked and criticized?  
+
+310
+00:27:39,640 --> 00:27:43,800
+Do you set context at the beginning of the 
+meeting? Is this just a part of the culture?
+
+311
+00:27:43,800 --> 00:27:51,360
+Yeah, I think definitely part of the culture, 
+but also I am a firm believer in general that the  
+
+312
+00:27:51,360 --> 00:27:58,320
+people closest to the problems also have the best 
+context to solve that problem. And so as a more  
+
+313
+00:27:58,320 --> 00:28:03,000
+senior voice in the room, often the 
+job is probing, asking questions,  
+
+314
+00:28:03,000 --> 00:28:08,640
+throwing out ideas in a way that says like, hey, 
+this is an idea. This is not a mandate, this is a  
+
+315
+00:28:08,640 --> 00:28:15,840
+thought. And if there's context missing that would 
+inform the product direction, then providing that  
+
+316
+00:28:15,840 --> 00:28:22,800
+context in not a question asking sense, but hey, 
+this is context that you might not be aware of.  
+
+317
+00:28:22,800 --> 00:28:28,120
+And so I think it's all in how you show up as 
+a leader and what that looks like in terms of  
+
+318
+00:28:28,720 --> 00:28:34,600
+probing and pushing the team on dimensions 
+that they may not be thinking about. And  
+
+319
+00:28:34,600 --> 00:28:38,920
+then understanding that the team is bringing 
+a perspective that you don't have, which is  
+
+320
+00:28:38,920 --> 00:28:43,680
+they think about this problem 40, 50, 60 hours a 
+week, and you might think about this problem three  
+
+321
+00:28:43,680 --> 00:28:49,080
+hours a week. So you bring them a breath, the 
+team brings a depth in haven't been there yet.
+
+322
+00:28:49,080 --> 00:28:54,040
+I don't know if you heard Dharmesh Shah's episode 
+or his thing on flash tags. Have you seen this?
+
+323
+00:28:54,040 --> 00:28:55,280
+I have not, no.
+
+324
+00:28:55,280 --> 00:28:59,520
+Okay. He has a whole system. So you talked 
+about how as a leader you want people to not  
+
+325
+00:28:59,520 --> 00:29:05,000
+take everything you tell them as feedback as 
+I need to do this. So he has a whole set of  
+
+326
+00:29:05,000 --> 00:29:13,920
+hashtags that communicate how important this is 
+to him from hashtag FYI to suggestion, to a plea.
+
+327
+00:29:13,920 --> 00:29:14,640
+Yes.
+
+328
+00:29:14,640 --> 00:29:16,160
+A plea to you.
+
+329
+00:29:16,800 --> 00:29:21,720
+This was actually explained to me. I don't think 
+I've seen the original source, so I'll go back  
+
+330
+00:29:21,720 --> 00:29:26,680
+and watch it, but this was explained to me as 
+I'm actually a big fan. I think that's great.
+
+331
+00:29:26,680 --> 00:29:30,200
+Yeah, just get everyone on the same 
+page. Okay. Maybe one last question  
+
+332
+00:29:30,200 --> 00:29:32,920
+here. Who do you try to invite to 
+product reviews? Do you have any  
+
+333
+00:29:32,920 --> 00:29:36,280
+frameworks and ways of thinking of 
+who to invite, who not to invite?
+
+334
+00:29:36,280 --> 00:29:43,160
+Yeah, good question. We, I would say have 
+oscillated over time, but in general,  
+
+335
+00:29:43,160 --> 00:29:47,440
+big subscribers of the best conversations 
+happen when they're relatively small,  
+
+336
+00:29:47,440 --> 00:29:54,480
+so try and keep it under 10. Could be wide 
+distribution of the document. The artifacts  
+
+337
+00:29:54,480 --> 00:30:00,680
+created are actually really powerful and they're 
+powerful for the whole team to understand. And  
+
+338
+00:30:01,200 --> 00:30:05,480
+secret power is they're very powerful for 
+new people who are onboarding to be like,  
+
+339
+00:30:05,480 --> 00:30:10,080
+here are the last 20 product reviews, you'll 
+get a pretty good idea of what's going on. But  
+
+340
+00:30:10,080 --> 00:30:15,400
+generally the conversation itself try and be 
+relatively tight. We try to keep it under 10.
+
+341
+00:30:15,400 --> 00:30:18,880
+And these artifacts, you mean the recordings 
+of the meeting that people can watch or?
+
+342
+00:30:18,880 --> 00:30:22,800
+Yeah. Or just the document depends 
+on what the company culture is,  
+
+343
+00:30:22,800 --> 00:30:26,680
+whether you want to record it or 
+just have the document either way.
+
+344
+00:30:26,680 --> 00:30:30,560
+And then is there some specific cadence you 
+operate on? Is it like a weekly product review  
+
+345
+00:30:30,560 --> 00:30:35,040
+that people can sign up for? Does every team, 
+how do you like to set this up the cadence?
+
+346
+00:30:35,040 --> 00:30:38,640
+Yeah, obviously it scales are with the 
+size of the company. For us right now,  
+
+347
+00:30:38,640 --> 00:30:44,520
+what's working well is signup cadence. 
+We have two slots a week that anyone can  
+
+348
+00:30:44,520 --> 00:30:49,080
+sign up for as their product area needs 
+it. And then if there's something that  
+
+349
+00:30:49,600 --> 00:30:53,560
+we would love to see that we haven't seen in 
+a bit, we do a little bit of all in telling  
+
+350
+00:30:53,560 --> 00:30:57,920
+to make sure that the work is generally 
+cycling through on a quarterly basis.
+
+351
+00:30:59,080 --> 00:31:04,320
+This episode is brought to you by Attio. A 
+radically new type of CRM. There's a world  
+
+352
+00:31:04,320 --> 00:31:11,960
+where your CRM is powerful, easily configured, 
+and deeply intuitive. Attio makes that a reality.  
+
+353
+00:31:11,960 --> 00:31:17,400
+Attio is built specifically for the next era 
+of companies. It syncs with your data sources,  
+
+354
+00:31:17,400 --> 00:31:23,040
+easily configures to their unique structures and 
+works for any go-to-market motion from self-serve  
+
+355
+00:31:23,040 --> 00:31:28,800
+to sales led. Attio automatically enriches 
+your contacts, syncs your email and calendar,  
+
+356
+00:31:28,800 --> 00:31:34,360
+gives you powerful reports and lets you quickly 
+build Zapier style automations. The next era of  
+
+357
+00:31:34,360 --> 00:31:41,560
+companies deserves more than an inflexible one 
+size fits all CRM. Join modal, replicate 11 labs,  
+
+358
+00:31:41,560 --> 00:31:48,800
+and more, and scale your startup to the next 
+level. Head to attio.com/lenny and you'll get 15%  
+
+359
+00:31:48,800 --> 00:31:57,160
+off your first year. That's A-T-T-I-O.com/lenny.
+Adjacent topic. I hear you're a big fan of drops  
+
+360
+00:31:57,160 --> 00:32:03,880
+to be done, which is okay, so it's a fun recurring 
+topic on this podcast. We've had many people that  
+
+361
+00:32:03,880 --> 00:32:09,080
+love it, many people that hate it. I love seeing 
+both sides of it. I love that you find it helpful  
+
+362
+00:32:09,080 --> 00:32:14,400
+and you implement it at Opendoor. I'd love to 
+hear just how you actually apply it at Opendoor,  
+
+363
+00:32:14,400 --> 00:32:17,720
+what you've learned about how to 
+apply jobs to be done effectively.
+
+364
+00:32:17,720 --> 00:32:23,440
+Yeah. I think like all frameworks, the right 
+answer is to pick your set of frameworks,  
+
+365
+00:32:23,440 --> 00:32:27,840
+have more tools in your toolbox, and then 
+actually understand when and how to apply them. So  
+
+366
+00:32:28,360 --> 00:32:35,640
+we try to avoid being a hammer and everything's 
+a nail. We try to for course the framework if  
+
+367
+00:32:35,640 --> 00:32:42,320
+it's not working. But I think what I really like 
+about it is it forces you to put yourself in the  
+
+368
+00:32:42,320 --> 00:32:48,160
+customer's shoes. I think in a slightly deeper way 
+and be a little bit more empathetic when I think  
+
+369
+00:32:48,160 --> 00:32:55,040
+about building at Opendoor versus say building 
+at Uber or when you are building at Airbnb is  
+
+370
+00:32:55,040 --> 00:33:03,240
+we are not... Most people at Opendoor, we don't 
+have homes to sell every week or every month,  
+
+371
+00:33:03,240 --> 00:33:08,040
+nor do we buy homes every week or 
+every month. On average in the US  
+
+372
+00:33:08,040 --> 00:33:12,200
+is something people do once every seven years.
+I'm sure the average at Opendoor is something  
+
+373
+00:33:12,200 --> 00:33:19,240
+similar, and so it's a little bit harder to be 
+a customer. I took Uber every day. You probably  
+
+374
+00:33:19,240 --> 00:33:26,320
+use Airbnb a number of times a year. And so 
+in some sense for some of those companies,  
+
+375
+00:33:26,320 --> 00:33:31,640
+you can bill for yourself, you would intuit 
+the job to be done because you're just doing  
+
+376
+00:33:31,640 --> 00:33:37,760
+it for yourself. We don't necessarily have that 
+context. And so a framework that forces us to be  
+
+377
+00:33:37,760 --> 00:33:45,520
+really thoughtful and intentional about how a 
+customer might perceive our product is really  
+
+378
+00:33:45,520 --> 00:33:51,320
+helpful. The other thing that I like about it 
+is the canonical version of it encourages you  
+
+379
+00:33:51,320 --> 00:33:56,120
+to think about the context in which the user's 
+operating or the other things outside of your  
+
+380
+00:33:56,120 --> 00:34:02,680
+product that they might be going through.
+And in our case, the home buying or selling  
+
+381
+00:34:02,680 --> 00:34:09,440
+journey often is a certainly multi-week, if not 
+multi-month or multi quarter journey with a lot  
+
+382
+00:34:09,440 --> 00:34:14,240
+of complexity and a lot of conversations outside 
+of our product. You may be talking to an agent,  
+
+383
+00:34:14,240 --> 00:34:19,320
+you may be talking to a friend, you may be driving 
+around the city trying to find a house, and the  
+
+384
+00:34:19,320 --> 00:34:24,920
+framework is very flexible and encouraging of 
+saying what is actually the job to be done of this  
+
+385
+00:34:24,920 --> 00:34:29,360
+user when they're thinking about our product and 
+what is the context in which they're operating.
+
+386
+00:34:29,360 --> 00:34:32,840
+I'd love to go one level deeper to talk about 
+how you actually implement it. Do you have  
+
+387
+00:34:32,840 --> 00:34:39,040
+templates of, you have a startup project as 
+a blank, I blank, blank, blank? How do you...
+
+388
+00:34:40,320 --> 00:34:48,160
+I would say we're medium rigorous on template 
+standardization or adherence. So we do have a  
+
+389
+00:34:48,160 --> 00:34:53,600
+template, the standard product review 
+template talks about jobs to be done  
+
+390
+00:34:53,600 --> 00:34:57,880
+and has a section for what is the problem 
+statement and what are the jobs to be done.
+
+391
+00:34:57,880 --> 00:35:00,560
+And this is a doc that when 
+you're coming to a product review,  
+
+392
+00:35:00,560 --> 00:35:04,040
+the person running it and coming 
+is filling out this document?
+
+393
+00:35:04,040 --> 00:35:12,160
+Correct, pre-filling it up, sorry, pre-filling it 
+out. And again, I think we are not sticklers about  
+
+394
+00:35:12,160 --> 00:35:18,560
+always using that template, but I think the beauty 
+of a template is yes, it sets expectations of what  
+
+395
+00:35:18,560 --> 00:35:24,360
+you expect, but it's also just easier often for 
+people to be able to work off something. And so  
+
+396
+00:35:24,360 --> 00:35:27,640
+yeah, it's part of our product review template 
+and then part of our planning process as well.  
+
+397
+00:35:29,040 --> 00:35:34,160
+Because we've used it for a while. I think 
+there's been an internalization of the culture  
+
+398
+00:35:34,160 --> 00:35:38,160
+where people will also just start commenting 
+about it or writing about it and saying, hey,  
+
+399
+00:35:38,680 --> 00:35:43,680
+what is the job to be done here? Or what is 
+the user trying to do? Which is maybe another  
+
+400
+00:35:43,680 --> 00:35:49,200
+colloquial phrase in it. And so, yeah, I think 
+there's a cultural seeping that has happened.
+
+401
+00:35:49,200 --> 00:35:51,080
+From memory, just what is in this template. So  
+
+402
+00:35:51,080 --> 00:35:55,520
+what's the phrasing that you try 
+to use for setting up a problem?
+
+403
+00:35:55,520 --> 00:35:57,640
+Yeah, yeah. I mean, the specific framing,  
+
+404
+00:35:58,560 --> 00:36:04,120
+I would have to go remind myself on the template 
+itself, but generally it looks like context,  
+
+405
+00:36:04,120 --> 00:36:13,280
+problem, potential solution, risks, 
+risks/premortal and measurement of success.  
+
+406
+00:36:13,280 --> 00:36:22,360
+And then we also try to bucket our product reviews 
+by stage. So you could be in the ideation stage,  
+
+407
+00:36:22,360 --> 00:36:28,440
+which might look very different than at the very 
+end of the process. Like, Hey, we're getting  
+
+408
+00:36:28,440 --> 00:36:35,480
+ready to ship speak now forever hold your piece. 
+Those two artifacts will also be very different.
+
+409
+00:36:35,480 --> 00:36:40,680
+Okay. So it's not as a blank the 
+standard jobs to be done language,  
+
+410
+00:36:40,680 --> 00:36:43,760
+it's not exactly how you implement it's 
+more just make sure we're thinking of it  
+
+411
+00:36:43,760 --> 00:36:47,040
+what is the problem for the customer? 
+What is the context of their problem?
+
+412
+00:36:47,040 --> 00:36:52,200
+Correct. Yeah. Yeah, we're 
+not math living our template.
+
+413
+00:36:52,200 --> 00:36:57,880
+Okay, awesome. Any other tips or lessons about 
+just working well with this concept of jobs to be  
+
+414
+00:36:57,880 --> 00:37:01,360
+done? Maybe when you come into Opendoor and like, 
+hey everyone, we're going to be thinking this way.  
+
+415
+00:37:01,360 --> 00:37:06,360
+Is there anything there that would be useful to 
+people if they're trying to operate this way?
+
+416
+00:37:06,360 --> 00:37:12,440
+Recognizing that correctly implementing a 
+framework, any framework, but if you don't in  
+
+417
+00:37:12,440 --> 00:37:17,840
+particular, we can talk about takes a little bit 
+of time and getting used to and understanding. And  
+
+418
+00:37:17,840 --> 00:37:22,920
+so I don't think you can just like, okay, we're 
+going to make the template and then that makes the  
+
+419
+00:37:22,920 --> 00:37:27,080
+content better. That just takes people's content 
+and they wedge it into the template. It's actually  
+
+420
+00:37:27,080 --> 00:37:33,560
+the cultural internalization of like, hey, this 
+might be phrased as the job to be done, but is  
+
+421
+00:37:33,560 --> 00:37:38,640
+this actually the job to be done? Let's talk about 
+why the customer might be in that situation or  
+
+422
+00:37:38,640 --> 00:37:43,040
+not be in that situation. Or I think the job 
+to be done might actually be something else. 
+
+423
+00:37:43,040 --> 00:37:51,880
+Or you might say, hey, the job to be done is 
+maybe an early day version would be the job to  
+
+424
+00:37:51,880 --> 00:37:56,880
+be done is to get an offer from Opendoor. And it's 
+like, well kind of, but the broader job to be done  
+
+425
+00:37:56,880 --> 00:38:02,080
+might be price discovery for the customer. And so 
+you can have a rich conversation where it's like,  
+
+426
+00:38:02,080 --> 00:38:06,160
+well, one might be a little bit influenced 
+by our business goals. I don't think you  
+
+427
+00:38:06,160 --> 00:38:10,360
+just run around and people are like, yeah, 
+I'm going to sell my house, but my goal is  
+
+428
+00:38:10,360 --> 00:38:16,520
+to get an offer from Opendoor. And so that's 
+like, okay, the template might be the same,  
+
+429
+00:38:16,520 --> 00:38:20,920
+but it's actually the content that takes 
+a little bit of cultural instantiation.
+
+430
+00:38:20,920 --> 00:38:24,600
+Got it. And it sounds like people talk 
+from what is the job to be done that feels  
+
+431
+00:38:24,600 --> 00:38:27,280
+like a core part of the way you think 
+about it. What is the job to be done?  
+
+432
+00:38:27,880 --> 00:38:32,560
+Just that language alone feels really powerful. 
+Is there a resource or a book that you point  
+
+433
+00:38:32,560 --> 00:38:38,960
+people to help your team learn about the jobs to 
+be done work? Is there one thing you find useful?
+
+434
+00:38:38,960 --> 00:38:44,760
+Not about jobs to be done. I do a lot 
+more pointing people towards internal  
+
+435
+00:38:44,760 --> 00:38:50,840
+examples of where I saw other PMs maybe do 
+as well or blogs and stuff. But your blog  
+
+436
+00:38:50,840 --> 00:38:56,560
+is a column when we pass around, not about 
+jobs to done, but just about many topics.
+
+437
+00:38:56,560 --> 00:38:58,320
+I'm flattered. Thank you.
+
+438
+00:38:58,320 --> 00:38:58,520
+Yes.
+
+439
+00:38:58,520 --> 00:39:01,600
+I really appreciate that. I was 
+also thinking as you were talking,  
+
+440
+00:39:01,600 --> 00:39:07,240
+you're friends with Kayvon and jobs to be done 
+on Twitter was quite the journey for them,  
+
+441
+00:39:07,240 --> 00:39:11,040
+traumatic for a lot of people. I think 
+it went very far to the extreme of the-
+
+442
+00:39:11,040 --> 00:39:13,320
+Yeah. I think they're more dogmatic about it.
+
+443
+00:39:13,320 --> 00:39:18,760
+Very dramatic. And so I guess it's a 
+lesson here, maybe don't take it that far.
+
+444
+00:39:18,760 --> 00:39:22,800
+Yeah. And I think it probably, and I don't 
+know if Kayvon would agree with this,  
+
+445
+00:39:22,800 --> 00:39:28,080
+I imagine he would, the generalized 
+version of you pick the right framework  
+
+446
+00:39:28,080 --> 00:39:32,760
+for the right job and if you say there's 
+one framework to rule them all and this  
+
+447
+00:39:32,760 --> 00:39:37,040
+is the only framework that works and then of 
+course every problem into it, then we chop.
+
+448
+00:39:37,040 --> 00:39:39,960
+The way I think about jobs to be done is 
+exactly the way you're describing it where  
+
+449
+00:39:39,960 --> 00:39:45,640
+it's just think from the lens of the job to be 
+done for our customers. So for my newsletter,  
+
+450
+00:39:45,640 --> 00:39:50,240
+what is the job to be done of my newsletter 
+to help you become better at your job as a  
+
+451
+00:39:50,240 --> 00:39:53,120
+product person building product. And 
+that actually ends up being really  
+
+452
+00:39:53,120 --> 00:39:57,040
+helpful. And it feels like that's the 
+way you guys think about it at opening.
+
+453
+00:39:57,040 --> 00:40:00,200
+Yeah, absolutely. And you're 
+crushing it by the way.
+
+454
+00:40:00,200 --> 00:40:05,880
+Thank you. So are you. You talked about, I'm 
+going to go into another question to deflect  
+
+455
+00:40:05,880 --> 00:40:11,400
+your compliment. You mentioned that Uber, there's 
+a million transactions happening every second,  
+
+456
+00:40:11,400 --> 00:40:16,960
+it's massive scale. Opendoor is completely 
+different. You have very few very large  
+
+457
+00:40:16,960 --> 00:40:21,680
+transactions. Yeah. I'm curious how you do 
+experiments, if you do experiments, do you do  
+
+458
+00:40:21,680 --> 00:40:29,600
+A/B tests? What have you learned about just how to 
+think through low sample sizes plus A/B testing?
+
+459
+00:40:29,600 --> 00:40:38,560
+Yeah, very hot topic of conversation. We do A/B 
+test. It is obviously the gold standard. And so  
+
+460
+00:40:38,560 --> 00:40:44,560
+we do as much as we can. Of A/B testing there are 
+parts of our funnel and flow that have more volume  
+
+461
+00:40:44,560 --> 00:40:56,400
+than others. So top of quality testing easier than 
+down funnels, A/B testing purely product or tech  
+
+462
+00:40:56,920 --> 00:41:03,680
+features easier than A/B testing processes, 
+operational processes. But you're totally  
+
+463
+00:41:03,680 --> 00:41:11,520
+right. We are not doing hundreds of millions of 
+transactions a year. And so experimentation can  
+
+464
+00:41:11,520 --> 00:41:18,720
+be more challenging. And so I think one way to 
+think about it is A, acknowledge the problem,  
+
+465
+00:41:18,720 --> 00:41:27,480
+which just to say don't, and we've made this 
+mistake many, many times, but don't just force  
+
+466
+00:41:27,480 --> 00:41:31,160
+yourself into A/B testing without running 
+the power analysis and say like, hey, are we  
+
+467
+00:41:31,160 --> 00:41:38,480
+going to get results? What is the size that will 
+detect and what is the runtime of that experiment? 
+
+468
+00:41:38,480 --> 00:41:47,960
+And be honest, is that acceptable? A second 
+lesson here, is there certain experiments  
+
+469
+00:41:47,960 --> 00:41:53,600
+that are important enough and it's hard to 
+triangulate signal in any other way that you may  
+
+470
+00:41:53,600 --> 00:42:01,320
+say a six-month runtime is an acceptable outcome 
+and we are going to start it in June and we will  
+
+471
+00:42:01,320 --> 00:42:06,040
+be smarter for it for 2025 planning and we're 
+going to set it and forget it and we're grateful  
+
+472
+00:42:06,040 --> 00:42:13,960
+we did, and that's okay. But the only mistake here 
+is thinking you'll get an answer in a month when  
+
+473
+00:42:13,960 --> 00:42:18,120
+you won't, and then pretending you do and then 
+waking up a month later and being like, "Well,  
+
+474
+00:42:18,120 --> 00:42:25,320
+it was insignificant and this and that." We could 
+have known that. And then the third thing is,  
+
+475
+00:42:25,320 --> 00:42:35,200
+and experimentation is all about increasing your 
+conviction in the problem or the solution. So the  
+
+476
+00:42:35,200 --> 00:42:39,800
+generalized version of the statement is, if 
+there are parts of your funnel or flow that  
+
+477
+00:42:39,800 --> 00:42:44,360
+are low end and you can't run a canonical A/B 
+test, how might you otherwise increase your  
+
+478
+00:42:44,360 --> 00:42:50,400
+conviction in the solution that you're building?
+And there turns out there are a decent number  
+
+479
+00:42:50,400 --> 00:42:56,840
+of other ways to do that. The first best, most 
+obvious is talk to more customers. But there are  
+
+480
+00:42:56,840 --> 00:43:02,800
+other statistical techniques that again, aren't as 
+rigorous or good, but may be possible. You may be  
+
+481
+00:43:02,800 --> 00:43:09,840
+able to use observational data, you review with 
+diff and diff, you may be able to look at sister  
+
+482
+00:43:09,840 --> 00:43:16,560
+cities or twin cities. You may be able to segment 
+by geo, you may be able to reduce your power and  
+
+483
+00:43:16,560 --> 00:43:21,320
+say, hey, we're going to run at 80% confidence for 
+all of our experiments instead of this traditional  
+
+484
+00:43:21,320 --> 00:43:28,240
+95% because that's a worthy trade-off. And if 
+we're wrong one more time out of 10, that's okay. 
+
+485
+00:43:28,240 --> 00:43:32,400
+You can do a long-term holdout to match 
+your intuition. And so there's a lot of  
+
+486
+00:43:32,400 --> 00:43:38,640
+other techniques to hone your intuition. There's 
+a lot of other techniques to build conviction and  
+
+487
+00:43:38,640 --> 00:43:44,520
+confidence. And so we try to be very creative 
+on doing that. And then the last bit I would  
+
+488
+00:43:44,520 --> 00:43:51,400
+say is if you're not going to get significance, if 
+there's no other techniques at your disposal, then  
+
+489
+00:43:51,400 --> 00:43:56,120
+sometimes you just got to trust your intuition 
+and ship it. And if that's what you believe,  
+
+490
+00:43:56,120 --> 00:44:01,200
+then that's what you believed and you shouldn't 
+spend time trying to get false precision.
+
+491
+00:44:01,200 --> 00:44:03,360
+I want to spend more time on that last point,  
+
+492
+00:44:03,360 --> 00:44:06,400
+but real quick, the power analysis you 
+talked about, there's people, don't know,  
+
+493
+00:44:06,400 --> 00:44:10,560
+there's calculators out there that you could just 
+plug in, here's how much traffic I'm getting,  
+
+494
+00:44:10,560 --> 00:44:17,400
+here's how much of an impact difference I want 
+to see, here's how long it'll take to find out.
+
+495
+00:44:17,400 --> 00:44:23,320
+Yep, exactly. Totally. And some of the calculators 
+are great where you can also plug in the traffic  
+
+496
+00:44:23,320 --> 00:44:28,120
+and your acceptable runtime and it will tell 
+you the minimum detectable impact and then you  
+
+497
+00:44:28,120 --> 00:44:31,320
+can gut check your own intuition. 
+So you can play around with that.
+
+498
+00:44:31,320 --> 00:44:35,720
+Awesome. We'll try to link to one of those in 
+the show notes. So, on the intuition piece,  
+
+499
+00:44:35,720 --> 00:44:39,920
+is there anything more there? Just like how 
+you think about when you run the product team,  
+
+500
+00:44:39,920 --> 00:44:47,040
+just how you recommend people leverage intuition 
+versus not. Because some companies are like,  
+
+501
+00:44:47,040 --> 00:44:50,880
+we're just going to trust the data. I don't 
+really trust your opinion. You don't know  
+
+502
+00:44:52,440 --> 00:44:57,040
+this customer exactly. You talked about 
+Opendoor, I'm not buying houses myself,  
+
+503
+00:44:57,040 --> 00:45:00,560
+so I don't know how much I can trust my 
+intuition. Just what's your general advice  
+
+504
+00:45:00,560 --> 00:45:06,560
+to your product team of how to think about their 
+intuition and when to rely on it versus not?
+
+505
+00:45:06,560 --> 00:45:11,720
+So, at Opendoor, for example, I'd say on the 
+relative spectrum, we're quite data-driven. And  
+
+506
+00:45:11,720 --> 00:45:17,520
+then it's when we come into this challenge where 
+we say, okay, that is another technique or tool  
+
+507
+00:45:17,520 --> 00:45:23,760
+in the toolbox. I think the generalized 
+version of that is customers, products,  
+
+508
+00:45:23,760 --> 00:45:30,920
+people can surprise you. And so this happens all 
+the time for people who build products. I'm sure  
+
+509
+00:45:30,920 --> 00:45:35,040
+you've got great stories from Airbnb where you 
+saw something, put it out there just was very-
+
+510
+00:45:35,040 --> 00:45:35,760
+All the time.
+
+511
+00:45:35,760 --> 00:45:43,960
+All the time. And so I think there's definitely 
+a humility to say if you can, if it's relatively  
+
+512
+00:45:43,960 --> 00:45:49,680
+easy to test your assumptions or test your 
+hypotheses. That is always better to gut check  
+
+513
+00:45:49,680 --> 00:45:55,360
+yourself. And that takes a little bit of humility 
+to say that, but we've all been wrong plenty of  
+
+514
+00:45:55,360 --> 00:46:02,240
+times. But if that's just not on the table, I 
+think the reality is you can't pretend it is. And  
+
+515
+00:46:02,240 --> 00:46:08,840
+sometimes you got to use taste and judgment and 
+then you say, okay, what is my conviction level  
+
+516
+00:46:08,840 --> 00:46:14,880
+and do I have just medium, low or high conviction? 
+And if I have anything low or medium conviction  
+
+517
+00:46:14,880 --> 00:46:21,280
+and it's a decision of consequence, I should talk 
+to more customers, check it with another person  
+
+518
+00:46:21,280 --> 00:46:26,920
+and see if their intuition matches. Something that 
+gets me personally to the high bucket category. 
+
+519
+00:46:27,600 --> 00:46:33,760
+And then I think the last part, which is some 
+part of experimentation is if you just ship  
+
+520
+00:46:33,760 --> 00:46:39,080
+something because it's your intuition or 
+it's where you want to see the product go,  
+
+521
+00:46:39,080 --> 00:46:43,480
+do you have a reasonable feedback loop to 
+understand whether or not you are correct?  
+
+522
+00:46:43,480 --> 00:46:50,200
+So that could be customer support or ticket 
+volume or feature adoption, whatever the case is,  
+
+523
+00:46:50,200 --> 00:46:56,400
+it may not be an output metric in the traditional 
+A/B test, but some more rigorous system that  
+
+524
+00:46:56,400 --> 00:47:03,880
+says, hey, I had this hypothesis, we just 
+shipped it for x, y, z constraint reason for red.
+
+525
+00:47:03,880 --> 00:47:07,520
+I think that's awesome advice. I agree with 
+everything you're saying. You mentioned this  
+
+526
+00:47:07,520 --> 00:47:11,680
+word humility, and it is a good segue 
+to something I want to talk about,  
+
+527
+00:47:11,680 --> 00:47:16,160
+which is Zillow. One of the most interesting 
+things that's happened in your space is Zillow  
+
+528
+00:47:16,160 --> 00:47:20,920
+basically decided, hey, we're just going to 
+do what Opendoor is doing, they launched it,  
+
+529
+00:47:20,920 --> 00:47:27,040
+you're basically frenemies for a while, and 
+then they're like, no, it's not working. Now  
+
+530
+00:47:27,040 --> 00:47:32,720
+you partner and now you work with Zillow on 
+this stuff. So are you able to share what went  
+
+531
+00:47:32,720 --> 00:47:36,800
+down there with the story of what happened, 
+how it went, and where things are at now?
+
+532
+00:47:36,800 --> 00:47:43,120
+Yeah, I mean we do partner with Zillow. 
+Zillow's been a fantastic partner for us  
+
+533
+00:47:43,120 --> 00:47:49,440
+and we've really enjoyed a working relationship 
+with them. I think when you think about it,  
+
+534
+00:47:49,440 --> 00:48:00,880
+they have tremendous amount of reach and audience 
+and all these online platforms have tremendous  
+
+535
+00:48:00,880 --> 00:48:09,440
+reach and audience. And we happen to have a fairly 
+unique selling solution. And so there's a nice,  
+
+536
+00:48:09,440 --> 00:48:13,120
+not to use a business school word, but 
+there's a nice synergy so to speak,  
+
+537
+00:48:13,120 --> 00:48:20,480
+between a high intended audience who's 
+doing a lot of browsing and searching and  
+
+538
+00:48:20,480 --> 00:48:27,000
+discovery and starting their process on one 
+of these online platforms and what we offer,  
+
+539
+00:48:27,000 --> 00:48:32,360
+which is transaction services that allow 
+people to actually move particularly on  
+
+540
+00:48:32,360 --> 00:48:38,760
+the seller side. And so there's just a pretty 
+nice symbiotic relationship there with the  
+
+541
+00:48:38,760 --> 00:48:43,800
+Zillow's and the regimens of the world. And so 
+both of those have been great partners for us.
+
+542
+00:48:43,800 --> 00:48:46,960
+What do you think Zillow maybe 
+underestimated or didn't get  
+
+543
+00:48:46,960 --> 00:48:51,360
+about the space that made it harder than they 
+anticipated? That seems obvious. Of course,  
+
+544
+00:48:51,360 --> 00:48:53,840
+let's go down funnel, let's just 
+do it all. And they're like, "Oh,  
+
+545
+00:48:53,840 --> 00:48:58,160
+shit, not working." What do you think they 
+didn't get or what do you think they missed?
+
+546
+00:48:58,160 --> 00:49:02,640
+I guess continuing on the humility point, I 
+won't necessarily pretend to be in their shoes,  
+
+547
+00:49:02,640 --> 00:49:08,520
+but I will say the business is challenging 
+and it's complex from a number of different  
+
+548
+00:49:08,520 --> 00:49:14,560
+dimensions. It's not a traditional software 
+only product, but you have to be really good  
+
+549
+00:49:14,560 --> 00:49:20,280
+at pricing. You have to be really good at product, 
+you have to be really good at the operations. You  
+
+550
+00:49:20,280 --> 00:49:25,600
+have to be really disciplined at risk. You have 
+to be really good in the capital markets. And so  
+
+551
+00:49:25,600 --> 00:49:30,920
+you have to put all of these functions together 
+to build a vertically integrated product. And  
+
+552
+00:49:30,920 --> 00:49:35,640
+that's the reality. And so that is something 
+that's been in Opendoor's DNA from day one  
+
+553
+00:49:35,640 --> 00:49:41,720
+because we started with a vertically integrated 
+product. And so we can't deliver unless we have  
+
+554
+00:49:41,720 --> 00:49:48,000
+all of those things. Right? And so I think that's 
+something that continues to help us to this day,  
+
+555
+00:49:48,000 --> 00:49:53,120
+is that vertical integration requires 
+all of those pieces coming together.
+
+556
+00:49:53,120 --> 00:49:57,720
+That makes a lot of sense, and I think it's a 
+good reminder of there are adjacent markets and  
+
+557
+00:49:57,720 --> 00:50:02,320
+businesses that always feel like, "Oh, we could 
+expand to that someday." Such a big opportunity,  
+
+558
+00:50:02,320 --> 00:50:06,280
+this business could be so much bigger. And then 
+you realize your business is completely not set  
+
+559
+00:50:06,280 --> 00:50:13,640
+up to operate this way. Zillow is very software 
+driven, just I am not going to simplify what  
+
+560
+00:50:13,640 --> 00:50:19,760
+they do, but it's a website, very software. 
+And obviously as we talked about Opendoor,  
+
+561
+00:50:19,760 --> 00:50:24,920
+a huge operational component. And then as you 
+said, the pricing piece and the debt stuff.
+
+562
+00:50:24,920 --> 00:50:26,800
+Yeah. Yeah, totally. Yeah.
+
+563
+00:50:26,800 --> 00:50:29,400
+Yeah. So I think it's a really good reminder 
+that just when you're taking on something  
+
+564
+00:50:29,400 --> 00:50:35,920
+completely different, it may not fit into the 
+way your company operates and partnering makes  
+
+565
+00:50:35,920 --> 00:50:39,480
+sense. Anything else there that's interesting 
+to share around the Zillow thing? I guess one  
+
+566
+00:50:39,480 --> 00:50:43,120
+is maybe it was just like, I imagine it was 
+very stressful. Zillow's getting into it. "Oh,  
+
+567
+00:50:43,120 --> 00:50:46,480
+shit what are we going to do? They got 
+all the traffic." Yeah, anything there?
+
+568
+00:50:46,480 --> 00:50:54,120
+Yeah. I mean, it's certainly stressful. I think 
+in general we try to live by whether Zillow or  
+
+569
+00:50:54,120 --> 00:51:01,560
+anybody else being competition aware, but not 
+necessarily competition focused. And the reality  
+
+570
+00:51:01,560 --> 00:51:08,800
+is vast, vast in our space. A vast majority of 
+people still move the traditional way. And so  
+
+571
+00:51:08,800 --> 00:51:16,560
+this isn't something where it's like the size of 
+the prize isn't particularly large enough short  
+
+572
+00:51:16,560 --> 00:51:22,280
+or anything like that. The reality is it's the 
+largest asset classroom in the United States,  
+
+573
+00:51:22,280 --> 00:51:26,840
+and if we just stay super focused on, hey, who 
+are the customers that we serve really well that  
+
+574
+00:51:26,840 --> 00:51:30,800
+we talk to every day, there's a little 
+bit of confidence that comes from being  
+
+575
+00:51:30,800 --> 00:51:35,800
+able to stay focused on that regardless of 
+the competitive environment, again, because  
+
+576
+00:51:35,800 --> 00:51:42,120
+it's not like the market is fully saturated.
+This is the same thing back in the Uber days  
+
+577
+00:51:42,120 --> 00:51:48,000
+as well. It's like transportation is 
+almost infinitely large. And so, yes,  
+
+578
+00:51:48,000 --> 00:51:52,880
+it feels like there's heated competition between 
+Uber and Lester or whatever back in the day,  
+
+579
+00:51:52,880 --> 00:51:57,080
+but the reality is there's plenty of 
+trips that happens and people need to  
+
+580
+00:51:57,080 --> 00:52:00,800
+get around sitting in plenty of different 
+ways. That's neither Uber and more Lyft.  
+
+581
+00:52:00,800 --> 00:52:10,360
+And staying focused on how you can develop for 
+your customer, I think is the best way to focus.
+
+582
+00:52:10,360 --> 00:52:14,520
+There's a podcast that will come 
+out before this episode with Jeff  
+
+583
+00:52:14,520 --> 00:52:20,000
+Weinstein from Stripe who's building Stripe 
+Atlas. They had a similar experience with  
+
+584
+00:52:20,000 --> 00:52:25,640
+AngelList launched a direct competitor 
+to Atlas, and then they realized Atlas  
+
+585
+00:52:25,640 --> 00:52:29,400
+is so much better. Forget it. We're 
+just going to send everyone to Atlas.
+
+586
+00:52:29,400 --> 00:52:30,600
+Really?
+
+587
+00:52:30,600 --> 00:52:35,720
+Yes. And I think it's the same exact lesson that 
+if you just stay focused on jobs to be done,  
+
+588
+00:52:35,720 --> 00:52:39,240
+let's say, of what is the job to be 
+done and do the best possible job,  
+
+589
+00:52:39,240 --> 00:52:44,720
+and knowing that the market is much bigger, that 
+you're not really competing with someone else,  
+
+590
+00:52:44,720 --> 00:52:48,680
+another company, it's the default behavior 
+in your case. It's like people are just  
+
+591
+00:52:48,680 --> 00:52:52,000
+buying their house the old-fashioned 
+way. That's the actual competition.
+
+592
+00:52:52,000 --> 00:52:53,280
+Exactly. Yep.
+
+593
+00:52:53,280 --> 00:52:57,960
+Yeah. Okay. So, along these lines, something 
+else I've heard that you're very good at is  
+
+594
+00:52:57,960 --> 00:53:01,680
+staying very calm under pressure and 
+staying very levelheaded when things  
+
+595
+00:53:01,680 --> 00:53:06,240
+are really crazy. This is something 
+that a lot of people are not good at,  
+
+596
+00:53:06,240 --> 00:53:09,440
+especially leaders. They stress 
+everyone out things. You go crazy,  
+
+597
+00:53:09,440 --> 00:53:13,480
+they don't create a good vibe. And then two, 
+something people want to get better. Leaders and  
+
+598
+00:53:13,480 --> 00:53:18,440
+non-leader are like any lessons, anything you've 
+learned about just how to develop this skill?
+
+599
+00:53:18,440 --> 00:53:25,680
+I think part of this may have been sharpened 
+in the early days of Uber. Everything felt  
+
+600
+00:53:25,680 --> 00:53:33,040
+like a fire drill all the time. So the only way 
+to operate, but I think you almost hit the nail  
+
+601
+00:53:33,040 --> 00:53:40,880
+on the head in the question, which is a little 
+bit of an intellectual answer of when you reflect  
+
+602
+00:53:40,880 --> 00:53:46,760
+the stress onto your teams, everybody tenses up 
+and tightens up. And so it counterintuitively  
+
+603
+00:53:46,760 --> 00:53:54,160
+doesn't produce better outcomes. And so I 
+think the other reality to remind ourselves,  
+
+604
+00:53:54,160 --> 00:53:57,520
+and these are a bunch of mantras that 
+just are helpful in these moments,  
+
+605
+00:53:57,520 --> 00:54:01,880
+is you're never as good as you think you are. 
+You're never as bad as you think you are. And  
+
+606
+00:54:01,880 --> 00:54:08,920
+so that more even keeled demeanor, I think allows 
+you to have a clearer head when you're operating  
+
+607
+00:54:08,920 --> 00:54:18,280
+under the pressure and to think more clearly.
+I think one of the maybe least helpful answers,  
+
+608
+00:54:18,280 --> 00:54:24,080
+but unfortunately, the reality is you got to be 
+in some stressful situations to also have the  
+
+609
+00:54:24,080 --> 00:54:32,880
+perspective that cycles past the things past. And 
+that remaining calm is what matters. And so maybe  
+
+610
+00:54:32,880 --> 00:54:40,200
+the advice there is reflecting on one of these 
+situations happen, exposing yourself to them,  
+
+611
+00:54:40,200 --> 00:54:45,800
+not running from them and then learning from them 
+so that the next time it comes around you can say,  
+
+612
+00:54:45,800 --> 00:54:53,560
+Hey, I've been here before. I've slept on the 
+floor in China before launching uberPOOL and  
+
+613
+00:54:53,560 --> 00:54:58,480
+thinking we're going to miss a launch deadline. 
+And what were the tools in my toolbox and my  
+
+614
+00:54:58,480 --> 00:55:06,398
+toolkit that showed me that in terms of getting 
+it done or not, and what were the lessons?
+
+615
+00:55:06,398 --> 00:55:10,400
+I love that. So part of it is just go through this 
+experience many times and you'll start to realize,  
+
+616
+00:55:10,400 --> 00:55:14,560
+okay, it's not actually going to be as 
+bad as people may think. You mentioned  
+
+617
+00:55:14,560 --> 00:55:17,280
+this toolkit instead of tools. Is 
+there anything else there that you  
+
+618
+00:55:17,280 --> 00:55:20,440
+come back to that ends up being helpful? 
+You mentioned this mantra of it's never  
+
+619
+00:55:20,440 --> 00:55:23,400
+as bad as people think it is, it is 
+never great as people think it is.
+
+620
+00:55:23,400 --> 00:55:30,120
+Yeah, I mean, I think exposing yourself to 
+other people's stories or however you may learn  
+
+621
+00:55:30,120 --> 00:55:38,960
+is really, really helpful. So again, whether it's 
+your podcast or books or biographies or one of the  
+
+622
+00:55:38,960 --> 00:55:47,240
+podcasts that I love is Founders Podcast, which 
+talks about historical famous entrepreneurs. And  
+
+623
+00:55:47,240 --> 00:55:52,320
+obviously these are elevating very famous people 
+already, but there's a lot to learn from a lot of  
+
+624
+00:55:52,320 --> 00:55:56,760
+these stories as well and understanding 
+that the journey in pack is nonlinear,  
+
+625
+00:55:56,760 --> 00:56:04,880
+it never is for anybody. And so I think being able 
+to expose yourself to other stories that even may  
+
+626
+00:56:04,880 --> 00:56:10,920
+if you don't have those personal experiences 
+and then understanding how others navigate.
+
+627
+00:56:10,920 --> 00:56:15,320
+Got it. So just hearing of other people's crazy 
+experiences and building on this muscle of like,  
+
+628
+00:56:15,320 --> 00:56:18,920
+okay, they've gone through 
+crazy stuff, things work out.
+
+629
+00:56:18,920 --> 00:56:19,760
+Yeah, totally.
+
+630
+00:56:19,760 --> 00:56:24,000
+We'll make it through. Okay. I have 
+this note here that I think either  
+
+631
+00:56:24,000 --> 00:56:29,400
+someone mentioned about you or you may 
+have mentioned that product is finding  
+
+632
+00:56:29,400 --> 00:56:33,520
+the kernel of truth in a sea of ambiguity 
+and signals. Does that mean anything to you?
+
+633
+00:56:33,520 --> 00:56:39,880
+Yeah, absolutely. I mean, I think in most 
+organizations and to do the job effectively,  
+
+634
+00:56:39,880 --> 00:56:46,200
+you're going to get signals from everywhere and 
+good ideas come from everywhere. It may be your CS  
+
+635
+00:56:46,200 --> 00:56:51,480
+team or CX team. It may be a customer directly. It 
+may be a conversation you had. It may be a YouTube  
+
+636
+00:56:51,480 --> 00:56:58,920
+video you watched that sparked an idea. It may be 
+feedback from an executive, it may be whatever.  
+
+637
+00:56:58,920 --> 00:57:03,640
+You went out and did a field visit. You are 
+going to get a lot of inputs around what people  
+
+638
+00:57:03,640 --> 00:57:09,240
+think about your product, what people think you 
+should do next. And I think that the core job is  
+
+639
+00:57:09,240 --> 00:57:16,480
+to understand what really matters, right? What is 
+noise? What is a good idea, what is a suggestion  
+
+640
+00:57:17,680 --> 00:57:24,400
+and what is back to the jobs to be done for what 
+is really going to move the customer forward? 
+
+641
+00:57:24,400 --> 00:57:29,920
+And unfortunately that means saying no to maybe 
+what sounds like some good ideas along the way,  
+
+642
+00:57:29,920 --> 00:57:34,480
+but if you can really figure out this is 
+really what matters, that's the core part  
+
+643
+00:57:34,480 --> 00:57:44,520
+of the job. It dovetails even back to our earlier 
+conversation. In the early days of building tech  
+
+644
+00:57:44,520 --> 00:57:51,120
+and ops companies is where's the tech leverage? 
+Same question, where's the kernel of what really  
+
+645
+00:57:51,120 --> 00:57:56,400
+matters that tech can uniquely solve? And 
+let's go do that and be comfortable with  
+
+646
+00:57:56,400 --> 00:58:02,720
+other fires maybe burning. That's what really, 
+really, really matters. It's a hard discipline.
+
+647
+00:58:02,720 --> 00:58:06,080
+I love that. If there's not an 
+example, that's totally fine,  
+
+648
+00:58:06,080 --> 00:58:09,600
+but when you talk about this finding this 
+kernel where tech could be highly leveraged,  
+
+649
+00:58:09,600 --> 00:58:13,160
+is there any example that comes to 
+mind of that working out really well?
+
+650
+00:58:13,160 --> 00:58:17,280
+I mean, I think back in the Uber 
+days, I think it was like, hey,  
+
+651
+00:58:17,280 --> 00:58:22,480
+we're not going to build sophisticated tooling 
+infrastructure. We're not going to build a  
+
+652
+00:58:22,480 --> 00:58:28,800
+centralized growth team. We're not going to build 
+any of that. Because if you think about the early  
+
+653
+00:58:28,800 --> 00:58:35,080
+Uber network from the simplest form, you've got a 
+rider and a driver and you need to connect them,  
+
+654
+00:58:35,080 --> 00:58:42,640
+price the transaction and issue some receipts 
+probably and collect payment. So it's like, okay,  
+
+655
+00:58:42,640 --> 00:58:49,160
+do we do that really well? And until we do that 
+really well, all the other stuff is noise. It's  
+
+656
+00:58:49,160 --> 00:58:57,120
+immaterial how efficiently we answer support 
+tickets. That's not critical. And so now it's  
+
+657
+00:58:57,120 --> 00:59:02,680
+super critical, but in the early days it's not 
+that critical. And even the customer acquisition  
+
+658
+00:59:02,680 --> 00:59:11,280
+costs may not be super critical, in this case it's 
+growing rapidly on the things. And so pouring fuel  
+
+659
+00:59:11,280 --> 00:59:16,360
+on the fire may not be super efficient there.
+So I think that's a very good generalized  
+
+660
+00:59:16,360 --> 00:59:25,800
+example. One other tip that maybe is helpful 
+that I frankly constantly work on and try to  
+
+661
+00:59:25,800 --> 00:59:31,440
+get better at is all these ideas and feedback 
+that comes from everywhere, make sure it's  
+
+662
+00:59:31,440 --> 00:59:37,000
+written down for a number of reasons. One, you 
+can then go reference it, but two, part of the  
+
+663
+00:59:37,560 --> 00:59:42,800
+job is making sure the people who present those 
+ideas are heard and respected and know that it's  
+
+664
+00:59:42,800 --> 00:59:47,480
+at least somewhere where it was considered. 
+And then you can look at it all and say,  
+
+665
+00:59:47,480 --> 00:59:55,560
+okay, but what actually really, really, really, 
+really matters here? And yeah, that's another tip.
+
+666
+00:59:55,560 --> 00:59:59,280
+When you say written down, is there tools 
+you find really helpful here? Is it just  
+
+667
+00:59:59,280 --> 01:00:03,200
+put it in a big doc that we're keeping? Is there 
+anything you find to actually operationalize that?
+
+668
+01:00:03,200 --> 01:00:08,200
+I've seen different companies do it differently, 
+but wherever you tend to try and keep a backlog,  
+
+669
+01:00:08,200 --> 01:00:13,520
+whether that's a Google sheet or your 
+actual backlog in Jira, whatever you use,  
+
+670
+01:00:13,520 --> 01:00:19,120
+but at least it feels like, okay, the 
+context was captured, and the idea is there.
+
+671
+01:00:19,120 --> 01:00:25,520
+Awesome. Okay. I'm going to take us to a recurring 
+segment on this podcast called Failure Corner.
+
+672
+01:00:25,520 --> 01:00:25,960
+Okay.
+
+673
+01:00:26,520 --> 01:00:32,120
+Is there a story you can share of a time 
+you failed in your career had a big failure,  
+
+674
+01:00:32,120 --> 01:00:35,360
+and how that experience made you better?
+
+675
+01:00:35,360 --> 01:00:41,360
+We can talk about the very early days 
+of uberPOOL, and the first launch,  
+
+676
+01:00:41,360 --> 01:00:50,280
+if you will in San Francisco. So, carpooling 
+product, multiple riders in a Mercedes car. And  
+
+677
+01:00:50,280 --> 01:01:00,680
+we had this idea that it would be effective for 
+commuters, this was very, very early days. And so  
+
+678
+01:01:00,680 --> 01:01:09,000
+part of the launch was, okay, we're going to beta 
+it with just some popular commuting corridors with  
+
+679
+01:01:09,000 --> 01:01:18,800
+specific companies or maybe the marina to Google 
+or whatever and try and match people according to  
+
+680
+01:01:18,800 --> 01:01:26,800
+what their companies and that's how we'll drive 
+liquidity. And we very quickly realized that back  
+
+681
+01:01:26,800 --> 01:01:33,680
+to what the kernel of truth is here is liquidity 
+is the only thing that matters. And there just  
+
+682
+01:01:33,680 --> 01:01:39,960
+wasn't enough. There was never going to be enough 
+to do this company based thing. That wasn't the  
+
+683
+01:01:39,960 --> 01:01:46,440
+strategy that was going towards from us. And so 
+the reason I don't know if it's a full failure is  
+
+684
+01:01:47,080 --> 01:01:51,480
+maybe this is true all failures, you learn from 
+it, you pivot and you go on to the next thing. 
+
+685
+01:01:51,480 --> 01:01:57,680
+And obviously we did that and then spent a lot 
+of our time and effort trying to say, okay,  
+
+686
+01:01:57,680 --> 01:02:04,520
+what are the bounds of liquidity and driving 
+liquidity that we can do to understand what  
+
+687
+01:02:04,520 --> 01:02:11,360
+the most important or what the limits of the 
+product are. So as an example, we launched and  
+
+688
+01:02:11,360 --> 01:02:19,080
+maybe people in San Francisco. Remember this $5 
+anywhere in San Francisco, we work for promotion,  
+
+689
+01:02:19,080 --> 01:02:23,280
+which is obviously a great deal, obviously costs 
+a lot of money, but the whole idea here is like,  
+
+690
+01:02:23,280 --> 01:02:29,080
+oh, okay, if liquidity is what really matters, if 
+we were to juice that and really drive liquidity,  
+
+691
+01:02:29,080 --> 01:02:34,280
+how high can our metrics get? And then we can 
+go chase more sustainable ways to do that. But  
+
+692
+01:02:34,280 --> 01:02:41,480
+it was a interesting fail case from launching and 
+learning to say, hey, this initial strategy just  
+
+693
+01:02:41,480 --> 01:02:46,800
+isn't going to work, we got to go. And any part 
+of it was a hedging strategy where with a small  
+
+694
+01:02:46,800 --> 01:02:51,680
+audience and there'll be a beta population, 
+it's like, well, this one you just got to go.
+
+695
+01:02:51,680 --> 01:02:55,840
+I think a lesson there is also don't overthink 
+it, don't try to get too cute. Just like  
+
+696
+01:02:59,280 --> 01:03:02,760
+we're trying to make a perfect 
+beta test versus realizing, okay,  
+
+697
+01:03:02,760 --> 01:03:09,080
+we just need a lot more people in it. 
+Also, your $5 promotion made me think of  
+
+698
+01:03:09,080 --> 01:03:13,760
+the early promotions of the ice cream and 
+the bunnies delivery and all that stuff.
+
+699
+01:03:13,760 --> 01:03:23,200
+Yeah. That was by the way, a example of fully 
+distributed, the benefit of having those early  
+
+700
+01:03:23,200 --> 01:03:30,560
+Petri dishes. Someone a local marketing manager 
+like, Hey, this would be fun. Yeah, that would be  
+
+701
+01:03:30,560 --> 01:03:38,640
+really fun. The platform can support it. And those 
+promotions were fantastic. And it started out,  
+
+702
+01:03:38,640 --> 01:03:43,880
+I can't remember if the first one was ice cream 
+or puppies, I think it was ice cream. But yeah,  
+
+703
+01:03:43,880 --> 01:03:49,000
+branched into all sorts of stuff. Boats, 
+ice cream, puppies, kittens, I think,  
+
+704
+01:03:49,000 --> 01:03:55,720
+and all credit goes to local ideas of inspiration 
+just being focused on trying to grow within.
+
+705
+01:03:56,640 --> 01:04:00,440
+I love that we've circled back to the beginning 
+of our conversation, product and ops working  
+
+706
+01:04:00,440 --> 01:04:04,840
+together, the benefits of both. Before we 
+get to a very exciting lightning round,  
+
+707
+01:04:04,840 --> 01:04:09,160
+is there anything else that you wanted to 
+share? Any last nuggets of wisdom that you  
+
+708
+01:04:09,160 --> 01:04:13,520
+think might be useful to people when they're 
+trying to build product companies teams?
+
+709
+01:04:13,520 --> 01:04:18,840
+This was great. We covered quite 
+a bit of ground. I think the only,  
+
+710
+01:04:18,840 --> 01:04:23,480
+I don't know if this is a generalized wisdom, 
+but something I've been thinking about as my  
+
+711
+01:04:23,480 --> 01:04:29,960
+career has progressed a little bit, especially 
+building out proper organizations, especially  
+
+712
+01:04:29,960 --> 01:04:38,000
+as more tools come online, it's very clear that 
+there's different types of PMs and we spent a  
+
+713
+01:04:38,000 --> 01:04:42,160
+lot of time talking about once we can operate 
+in the physical and the digital or the product  
+
+714
+01:04:42,160 --> 01:04:51,520
+and operations worlds. But even within that, 
+there's more technical PMs who grew up in minute  
+
+715
+01:04:51,520 --> 01:04:57,440
+engineering discipline. There are people who came 
+from ops and there are people who came from design  
+
+716
+01:04:57,440 --> 01:05:04,600
+and grew up in a more user experience background.
+And one thing that I've been moved on as is build  
+
+717
+01:05:04,600 --> 01:05:12,680
+out the team is thinking similar to a product 
+roadmap is it's not really about is this person  
+
+718
+01:05:12,680 --> 01:05:19,760
+good or bad or whatever, it's is this person's 
+skillset and context to the problem that is really  
+
+719
+01:05:19,760 --> 01:05:24,480
+needed. And so back to that conversation on, hey, 
+where do we get tech leverage? It's like, Hey,  
+
+720
+01:05:24,480 --> 01:05:31,000
+is this person who has this unique skillset 
+as a PM for this problem type? I don't know  
+
+721
+01:05:31,000 --> 01:05:34,920
+if that's helpful, but it's something I've 
+been spending a lot of time thinking about,  
+
+722
+01:05:34,920 --> 01:05:41,080
+especially this view job posting niche view 
+product manager. Or it's actually like, well, how  
+
+723
+01:05:41,080 --> 01:05:46,560
+can we be a little bit more thoughtful about what 
+the actual skillset needs off this type of team?
+
+724
+01:05:46,560 --> 01:05:50,080
+Awesome. It's like a person product fit.
+
+725
+01:05:50,080 --> 01:05:51,240
+There you go.
+
+726
+01:05:51,240 --> 01:05:53,840
+And I think it's because a lot of companies 
+hire generalists and they're just like,  
+
+727
+01:05:53,840 --> 01:05:57,760
+we'll hire someone smart, ambitious, and 
+with experience and general experience and  
+
+728
+01:05:57,760 --> 01:06:01,280
+then we'll put them on different things. So 
+I think these are two different philosophies  
+
+729
+01:06:01,280 --> 01:06:05,840
+and it probably makes a lot of sense 
+for an Opendoor with very unique type  
+
+730
+01:06:05,840 --> 01:06:10,320
+of business, with very specific skills that 
+are necessary to be really good there. Okay,  
+
+731
+01:06:10,320 --> 01:06:16,000
+amazing. Brian, with this, we've reached our 
+very exciting lightning round. Are you ready?
+
+732
+01:06:16,000 --> 01:06:17,680
+Let's do it. Can't wait.
+
+733
+01:06:17,680 --> 01:06:20,880
+Let's do it. First question, 
+what are two or three books  
+
+734
+01:06:20,880 --> 01:06:23,520
+that you've recommended most to other people?
+
+735
+01:06:23,520 --> 01:06:36,000
+Shoe dog, Black Swan, Design of Everyday 
+Things, and for a fun one, Shawn Theron.
+
+736
+01:06:36,000 --> 01:06:40,280
+Amazing. Four books for the 
+price of two to three. I love it.
+
+737
+01:06:40,280 --> 01:06:42,400
+Apologies. I'll stick to the rules.
+
+738
+01:06:42,400 --> 01:06:45,360
+No, no, there's no rules. There are no rules.
+
+739
+01:06:45,360 --> 01:06:45,920
+There you go.
+
+740
+01:06:45,920 --> 01:06:50,360
+Next question, do you have a favorite recent 
+movie or TV show that you've really enjoyed?
+
+741
+01:06:50,360 --> 01:06:56,160
+I like the sports docu ones 
+on Netflix, so Full Swing,  
+
+742
+01:06:56,160 --> 01:07:01,960
+Drive to Survive, Break Points, 
+tennis, golf, F1, all of them.
+
+743
+01:07:01,960 --> 01:07:05,320
+And wasn't there that Nike 
+documentary recently with Ben Affleck?
+
+744
+01:07:05,320 --> 01:07:09,880
+There is, which I have not seen. So 
+if it's good, I don't know if that's  
+
+745
+01:07:09,880 --> 01:07:12,080
+a recommendation or just an acknowledgement.
+
+746
+01:07:12,080 --> 01:07:15,600
+It's worth watching. If you like Shoe 
+Dog, I feel like you'd enjoy it. It  
+
+747
+01:07:15,600 --> 01:07:19,800
+was entertaining Michael Jordan, 
+things like that. Next question,  
+
+748
+01:07:19,800 --> 01:07:24,000
+do you have a favorite product that you have 
+recently discovered that you really love?
+
+749
+01:07:24,000 --> 01:07:31,480
+So we just got a puppy and we are about to have 
+our first child. And so all of my purchases  
+
+750
+01:07:31,480 --> 01:07:39,080
+recently are puppies and children focused. My 
+buddy gifted us the Phi collar for our dog,  
+
+751
+01:07:39,080 --> 01:07:47,440
+and so we've been really enjoying that. 
+Another one as I'm getting busier for  
+
+752
+01:07:47,440 --> 01:07:54,840
+news and stuff is Particle, which is a 
+great news aggravation tool, AI news tool.
+
+753
+01:07:54,840 --> 01:08:00,840
+Cavan's wife's business. I am a huge fan, actually 
+I think it just came out of beta and now it's  
+
+754
+01:08:00,840 --> 01:08:06,800
+like a full app that anyone can download. I just 
+actually installed it yesterday again and I love  
+
+755
+01:08:06,800 --> 01:08:11,000
+it. I get these pushes every few... I don't know, 
+it's like a couple of times a day of just like,  
+
+756
+01:08:11,000 --> 01:08:16,160
+here's what's happening. Also, congratulations 
+I should have said on your pending child.
+
+757
+01:08:16,160 --> 01:08:17,000
+Thank you.
+
+758
+01:08:17,000 --> 01:08:20,480
+Lucky for you. I have a newsletter post 
+with all the products you should buy,  
+
+759
+01:08:20,480 --> 01:08:24,760
+it's called New Parent Gift 
+Guide for Product Managers.
+
+760
+01:08:24,760 --> 01:08:30,200
+Love it. I will definitely 
+probably buy all of them.
+
+761
+01:08:30,200 --> 01:08:32,120
+If you don't already have them 
+all. And now everyone's probably  
+
+762
+01:08:32,120 --> 01:08:34,960
+sending you their spreadsheets of 
+all their favorite stuff there.
+
+763
+01:08:34,960 --> 01:08:35,600
+Exactly.
+
+764
+01:08:35,600 --> 01:08:38,680
+Okay, next question. Do you have 
+a favorite life motto that you  
+
+765
+01:08:38,680 --> 01:08:42,040
+often come back to share with 
+people either in work or life?
+
+766
+01:08:42,040 --> 01:08:44,360
+Well, mostly just stay curious.
+
+767
+01:08:44,360 --> 01:08:49,400
+Stay curious. I love it. Two more questions. Who  
+
+768
+01:08:49,400 --> 01:08:54,160
+has most influenced you in 
+the course of your career?
+
+769
+01:08:54,160 --> 01:09:01,040
+One of the people who inspired me very early on 
+in my product journey. I've been fortunate to  
+
+770
+01:09:01,040 --> 01:09:06,400
+have a number of very good mentors and obviously 
+we talked about earlier while I was founders of  
+
+771
+01:09:06,400 --> 01:09:11,240
+books or me a lot from other people's journey. 
+But one person who was personally important to  
+
+772
+01:09:11,240 --> 01:09:17,240
+me early in my product journey and very supportive 
+of this guy named Jeff Holden, who was the chief  
+
+773
+01:09:17,240 --> 01:09:25,720
+product officer at Uber back in the day, and 
+is like a young PM transferring into product  
+
+774
+01:09:25,720 --> 01:09:31,200
+really took me under his wing. And I 
+think I'm forever grateful for that,  
+
+775
+01:09:31,200 --> 01:09:36,720
+for Jeff, for helping grow my career, 
+but also try to pay it forward a little  
+
+776
+01:09:36,720 --> 01:09:42,400
+bit in terms of people who are going in the 
+career. That was really meaningful for me.
+
+777
+01:09:42,400 --> 01:09:48,440
+Last question. I hear that your interview at 
+Uber was pretty wild. Can you tell that story?
+
+778
+01:09:48,440 --> 01:09:55,680
+Yeah, I can. So, long story short, I 
+was starting a company my senior spring  
+
+779
+01:09:55,680 --> 01:10:00,280
+before graduation and we had to go our separate 
+ways. So I hadn't done traditional recruiting  
+
+780
+01:10:00,280 --> 01:10:05,600
+ever. And my buddy called me up and was like, 
+"Hey, we're looking for smart, hardworking people  
+
+781
+01:10:05,600 --> 01:10:14,640
+at this Uber thing. Are you interested?" And quick 
+side note, I had actually done some very early  
+
+782
+01:10:14,640 --> 01:10:25,560
+diligence work on these taxi apps back in 2011, 
+looking at the time was Uber Cab and Cabilis and  
+
+783
+01:10:25,560 --> 01:10:34,720
+Taxi Manage can probably names nothing these 
+days. And so I knew what Uber was and so I said,  
+
+784
+01:10:34,720 --> 01:10:41,120
+"Yeah, sure, I would love to." And so I 
+had the first round of interview went well,  
+
+785
+01:10:41,120 --> 01:10:46,240
+and they said, great. And at that stage is 
+come on onsite, the full enchilada one works,  
+
+786
+01:10:46,240 --> 01:10:51,720
+and this was post-graduation and was helping out 
+some companies but didn't have a full-time job. 
+
+787
+01:10:51,720 --> 01:10:58,200
+So I said, hey, I'm pretty flexible. How about 
+next Tuesday? I said, great. So we scheduled it  
+
+788
+01:10:58,200 --> 01:11:03,840
+and then on Friday or Saturday or over the 
+weekend I looked, I'm like, oh, Tuesday's,  
+
+789
+01:11:03,840 --> 01:11:10,040
+July 4th. I scheduled my interview for July 
+4th. And so I called my buddy and I'm like,  
+
+790
+01:11:10,040 --> 01:11:15,400
+hey, I am so sorry. I don't want to make people 
+in on July 4th. Should I cancel? Should I reach  
+
+791
+01:11:15,400 --> 01:11:23,240
+out? Everyone's accepted. Whatever you do, do 
+not cancel your interview. Like, okay, I'll be  
+
+792
+01:11:23,240 --> 01:11:30,320
+there on July 4th. And so I went in to the office 
+on July 4th and there was a very small handful of  
+
+793
+01:11:30,320 --> 01:11:35,680
+people there. It was actually launching that day, 
+was launching Uber's second ever product type,  
+
+794
+01:11:35,680 --> 01:11:43,600
+which was Uber SUV. And I had this, I think it was 
+probably five hour gauntlet interview on July 4th  
+
+795
+01:11:43,600 --> 01:11:50,240
+from noon to five and missed my July 4th barbecue. 
+And it was quite the experience, but I think maybe  
+
+796
+01:11:50,240 --> 01:11:57,880
+set the stage for some of the early days chaos. 
+I'm very glad I didn't cancel the interview.
+
+797
+01:11:57,880 --> 01:12:00,400
+And was Travis involved in 
+that interview or is it just-
+
+798
+01:12:00,400 --> 01:12:04,360
+Travis was involved in the interview. She 
+was one of the... I think there were four  
+
+799
+01:12:04,360 --> 01:12:09,640
+or five people, and the two who were generally 
+guiding my interview process and Travis and one  
+
+800
+01:12:09,640 --> 01:12:16,440
+other person starting that day. And part of the 
+gauntlet interview was a simulation of the job,  
+
+801
+01:12:16,440 --> 01:12:24,200
+if you will. And so some of that was building 
+some novels on the computers and some of it  
+
+802
+01:12:24,200 --> 01:12:29,640
+was writing potential emails to drivers and if 
+she had the driver come in and you did chat,  
+
+803
+01:12:29,640 --> 01:12:35,520
+so I was in this room by myself typing away on 
+the first part, which was building the model.  
+
+804
+01:12:35,520 --> 01:12:44,280
+And I hear him knock on the door and Travis 
+comes in and he just sits down and says, "Hi,  
+
+805
+01:12:44,280 --> 01:12:51,360
+I'm Travis." I don't know who you are, but 
+I'm Brian, and we have a 45-minute chat,  
+
+806
+01:12:51,360 --> 01:12:56,560
+or maybe it's been about half hour, 45 
+minutes. And clearly I'm not producing the  
+
+807
+01:12:56,560 --> 01:13:00,120
+work that I'm supposed to of the interview.
+I'm supposed to be building this model. I'm  
+
+808
+01:13:00,120 --> 01:13:05,280
+supposed to email it back to the person who 
+sent it to me. Clearly I've done nothing  
+
+809
+01:13:05,280 --> 01:13:12,560
+chatting with the CEO. And I hear a knock on the 
+door and the door opens and the person sees that  
+
+810
+01:13:12,560 --> 01:13:17,840
+I'm talking to Travis, "Oh, continue, 
+continue" and it was very good. Also,  
+
+811
+01:13:17,840 --> 01:13:23,960
+pretty intense conversation with Travis that 
+definitely set the expectations working there.
+
+812
+01:13:23,960 --> 01:13:28,080
+And clearly worked out. And 
+Travis was happy. Is what-
+
+813
+01:13:28,080 --> 01:13:28,634
+I hope so.
+
+814
+01:13:28,634 --> 01:13:29,560
+... I imagine.
+
+815
+01:13:29,560 --> 01:13:30,680
+Yes.
+
+816
+01:13:30,680 --> 01:13:35,120
+Amazing. Brian, thank you so much for being 
+here. We went through everything that I was  
+
+817
+01:13:35,120 --> 01:13:40,320
+hoping to get through. Two final questions. Where 
+can folks find you online, and is there anything  
+
+818
+01:13:40,320 --> 01:13:44,200
+you want them to check out that you might be 
+up to? And how can listeners be useful to you?
+
+819
+01:13:44,200 --> 01:13:50,080
+Super kind. They can find me online on 
+Twitter, LinkedIn, both just Brian Tolkin,  
+
+820
+01:13:50,080 --> 01:13:55,240
+my name. In terms of being useful, if 
+you have a home to sell, feel free to  
+
+821
+01:13:55,240 --> 01:13:58,920
+go on to Opendoor. More importantly, 
+if you have feedback on the product,  
+
+822
+01:13:58,920 --> 01:14:04,680
+but would love to hear it. Otherwise, any feedback 
+on what people liked or would love to learn more  
+
+823
+01:14:04,680 --> 01:14:09,200
+about from what we chatted about would be 
+super great. So I'd love to hear from you.
+
+824
+01:14:09,200 --> 01:14:11,840
+Brian, thank you so much for being here.
+
+825
+01:14:11,840 --> 01:14:16,480
+Lenny, I really appreciate it. 
+This was great. Bye everyone.
+
+826
+01:14:16,480 --> 01:14:20,160
+Thank you so much for listening. If you found 
+this valuable, you can subscribe to the show  
+
+827
+01:14:20,160 --> 01:14:25,880
+on Apple Podcasts, Spotify, or your favorite 
+podcast app. Also, please consider giving us a  
+
+828
+01:14:25,880 --> 01:14:31,000
+rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+
+829
+01:14:31,000 --> 01:14:39,240
+all past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

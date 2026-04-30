@@ -1,0 +1,2191 @@
+1
+00:00:00,080 --> 00:00:11,000
+I really believe in Frameworks for things that helps Drive extreme Clarity I work on a lot of different projects a lot of times I'm ramping up mid project I'm like where can I learn what I need to learn about this project I ask five different people get five different
+
+2
+00:00:11,000 --> 00:00:20,640
+answers that is unacceptable of course I'm sure there's hundreds of docs associated with the project but there needs to be one canonical dock everyone should know exactly where the canonical
+
+3
+00:00:20,640 --> 00:00:31,340
+dock is that's the one place I can go to to get all the information I need about a project and it will link to all the other docs things on the canonical doc are
+
+4
+00:00:31,340 --> 00:00:42,680
+[Music] today my guest is Naomi glight Naomi is head of product at meta other than Mark Zuckerberg she's the longest serving executive at meta she joined what was
+
+5
+00:00:42,680 --> 00:00:52,960
+then called Facebook as employee number 29 and has been at meta for almost 20 years she's seen the company scale from 30 employees to the1 and5 trillion
+
+6
+00:00:52,960 --> 00:01:04,479
+business that it is today Naomi does very few podcast interviews and so I really excited to chat with her and have her on this podcast in our conversation we dig into the many lessons that she learned from Facebook's early and
+
+7
+00:01:04,479 --> 00:01:14,400
+legendary growth team her superpower of taking really complex and gnarly problems and projects simplifying them and delivering results we also get into Leadership Lessons she's learned from
+
+8
+00:01:14,400 --> 00:01:24,320
+Zuck including his recent transformation into possibly the coolest CEO in Tech also ypm are the conductor of product teams some very tactical tips for
+
+9
+00:01:24,320 --> 00:01:35,119
+running meetings riding docks working out getting better sleep and even how to get more protein in your your diet this was such a fun conversation and such a wide-ranging conversation and whether
+
+10
+00:01:35,119 --> 00:01:46,799
+you are in product or growth or any other Tech function you will get something useful out of this conversation if you enjoy this podcast don't forget to subscribe and follow in your favorite podcasting app or YouTube it's the best way to avoid missing
+
+11
+00:01:46,799 --> 00:01:53,920
+future episodes and helps the podcast tremendously with that I bring you Naomi
+
+12
+00:01:55,360 --> 00:02:06,520
+glight Naomi thank you so much for being here welcome to the podcast thanks so much for having me as I told you earlier I refer your podcast all the time and so I can't believe I have the opportunity
+
+13
+00:02:06,520 --> 00:02:18,519
+to actually talk on it wow I'm so flattered uh I never get tired of hearing that appreciate you sharing that I want to share a couple tidbits about you because it's pretty crazy when you
+
+14
+00:02:18,519 --> 00:02:28,640
+uh see this list okay so you are meta's longest serving executive other than Mark Zuckerberg your employee number 29
+
+15
+00:02:28,640 --> 00:02:39,840
+at Facebook you've been there for over 19 years sorry at meta formerly Facebook I do that all the time that's what happens when you've been at meta for 19
+
+16
+00:02:39,840 --> 00:02:51,159
+years is you can't get the name right okay good I won't feel bad about that then and then the last thing is just you've been uh at the center of some of the most foundational products that meta and Facebook have worked on including
+
+17
+00:02:51,159 --> 00:03:01,360
+working on the early growth team and thinking about the early growth strategy basically you've been there from employee number 32 today at1 and a half trillion company one of the largest
+
+18
+00:03:01,360 --> 00:03:12,200
+companies in the world today very few people have ever seen this sort of growth and scale from the inside first of all I guess let me just ask this do you ever reflect on this and just
+
+19
+00:03:12,200 --> 00:03:20,519
+realize like holy what a journey I've been on How how Wild um it's a great question I would
+
+20
+00:03:20,519 --> 00:03:32,239
+love to say that I I reflect on it the truth is I think I barely have time to reflect right now I'm thinking about all the things that I need to do on my to-do list so I'm pretty in it still even
+
+21
+00:03:32,239 --> 00:03:42,519
+after 19 years I am really focused on the work that I need to do I do honestly have moments where I get to reflect for
+
+22
+00:03:42,519 --> 00:03:52,599
+example like on this podcast um sometimes people do ask me you know and I think especially as I approach the 20-y year Milestone my 20year face firsts three I'm sure that will give
+
+23
+00:03:52,599 --> 00:04:03,640
+ample opportunity for me to look back such a classic product manager answer like I'm just I have too much to do think about this yeah I got to hit some goals here
+
+24
+00:04:03,640 --> 00:04:15,239
+yeah this episode is brought to you by pendo the only all-in-one product experience platform for any type of application tired of bouncing around multiple tools to uncover what's really
+
+25
+00:04:15,239 --> 00:04:25,759
+happening inside your product with all the tools you need in one simpl to use platform pendo makes it easy to answer critical questions about how users are engaging with your product and then turn
+
+26
+00:04:25,759 --> 00:04:35,840
+those insights into action also so you can get your user to do what you actually want them to do first pendo is built around product analytics seeing what your users are actually doing in
+
+27
+00:04:35,840 --> 00:04:47,320
+your apps so that you can optimize their experience next pendo lets you deploy inapp guides that lead users through the actions that matter most then pendo integrates user feedback so that you can
+
+28
+00:04:47,320 --> 00:04:57,000
+capture and analyze what people actually want and the new thing in pendo session replay a very cool way to visualize user sessions I not surprised at all that
+
+29
+00:04:57,000 --> 00:05:07,160
+over 10,000 companies use it today visit pendo.io Lenny to create your free pendo account today and start building better experiences across every corner of your
+
+30
+00:05:07,160 --> 00:05:17,520
+product PS you want to take your product LED know how a step further check out peno's lineup of free certification courses led by top product experts and designed to help you grow and advance in
+
+31
+00:05:17,520 --> 00:05:27,160
+your career learn more and experience the power of the pendo platform today at pendo.io [Music]
+
+32
+00:05:27,160 --> 00:05:38,160
+Lenny this episode is brought to you by vanta when it comes to ensuring your company has top-notch security practices things get complicated fast now you can
+
+33
+00:05:38,160 --> 00:05:47,440
+assess risk secure the trust of your customers and automate compliance for sock 2 ISO 2701 Hippa and more with a single
+
+34
+00:05:47,440 --> 00:05:57,199
+platform vanta V's Market leading trust management platform helps you continuously monitor compliance alongside reporting and tracking risk
+
+35
+00:05:57,199 --> 00:06:06,960
+plus you can save hours by completing security questionnaires with Vana AI join thousands of global companies that use Vana to automate evidence collection
+
+36
+00:06:06,960 --> 00:06:16,840
+unify risk management and streamline Security reviews get $1,000 off vanta when you go to v.com leny that's
+
+37
+00:06:16,840 --> 00:06:27,360
+vana.com Lenny let me start I want to start about just how you actually landed at meta as employee number 29 which is a life-changing decision and a
+
+38
+00:06:27,360 --> 00:06:38,960
+life-changing role and I'm I want to learn if there's something folks can see about what you did that might be helpful to them when they're trying to find a place to work and your story is reading about the story and it's super
+
+39
+00:06:38,960 --> 00:06:50,560
+interesting you basically wrote your senior thesis at Stanford about why Facebook was gonna win and why it was going to beat its competitors and the competitor cited I've never even heard of so it's interesting that that was the competitor at the time could you share
+
+40
+00:06:50,560 --> 00:07:01,680
+the story of how you landed as employee number 29 at Facebook now meta Facebook um as a pro you know as part of being an academic researching Facebook also being a Stanford student using Facebook I was
+
+41
+00:07:01,680 --> 00:07:10,879
+like I really want to work here uh Facebook had just moved to paloalto marqu had driven across country I guess and arrived in paloalto opened up an
+
+42
+00:07:10,879 --> 00:07:21,360
+office at 443 Emerson Aven Emerson Avenue or Emerson Street it was right above the Jing jings Chinese restaurant in downtown paloalto and I just went to
+
+43
+00:07:21,360 --> 00:07:32,440
+the office sort of cold called the equivalent of just walking into the office and seeing if there were any available jobs there were not I think I did that maybe five to 10 more times eventually there was an opening to
+
+44
+00:07:32,440 --> 00:07:43,160
+interview for Sean Parker's personal assistant he was at the time I think the president I did interview and I did not get the job a few months later I found
+
+45
+00:07:43,160 --> 00:07:54,919
+out about a marketing role uh that was available and one interesting thing I haven't really talked about was I got an offer from Facebook I also got a competing offer from LinkedIn and so at
+
+46
+00:07:54,919 --> 00:08:04,639
+that time I I I made the choice to go to Facebook because I was interested and sort of the social networking aspect of it why was I so bullish on this this
+
+47
+00:08:04,639 --> 00:08:14,919
+website um at the time it was ww.the facebook.com like why was I so excited about this thing I think it's because I
+
+48
+00:08:14,919 --> 00:08:26,080
+definitely saw that there was product Market fit I saw that students on Stanford at Stanford were obsessed with it but it also had a long list of
+
+49
+00:08:26,080 --> 00:08:36,680
+colleges that were really excited and the waiting list to um be accepted onto Facebook and so there was this like product Market fit piece and also a huge
+
+50
+00:08:36,680 --> 00:08:45,399
+demand from other other audiences other colleges but you know our younger brothers and sisters were also sort of interested about Facebook and it seemed
+
+51
+00:08:45,399 --> 00:08:55,959
+like it had this much broader appeal um so that's what happened I got the marketing job Cheryl also talks about when you are getting on a rocket ship
+
+52
+00:08:55,959 --> 00:09:07,680
+don't ask what seat that was my foot in the door and here we are 19 years later I was just going to say that that that's such a good example of what she recommends of if you can get a seat on a rocket ship
+
+53
+00:09:07,680 --> 00:09:18,959
+don't ask which seat and uh I love the Sean Parker piece I did not know that that's hilarious what a different life would have been if you got that job and went down that track so a couple
+
+54
+00:09:18,959 --> 00:09:30,360
+takeaways here for people that are trying to pick where to work what I love about your story is one is just like you had so much you just had confidence that this business would work and you just knew that you wanted to get on this
+
+55
+00:09:30,360 --> 00:09:41,120
+rocket ship you saw traction so I told you give you I guess that added to this confidence that this is going to work out and then the you said that you uh walked into the office kind of cold uh
+
+56
+00:09:41,120 --> 00:09:52,959
+not even cold emailing or calling but cold arriving five to 10 times you said yeah it was it was pure um pure sort of just like refusing to quit I think I
+
+57
+00:09:52,959 --> 00:10:02,519
+just walked into the office I talked to the person at the front desk is there anything that I can do they weren't hiring non-technical people I didn't have a computer science degree I wasn't technical I had this Bachelor of Arts
+
+58
+00:10:02,519 --> 00:10:14,000
+degree and um and that's why the personal assistant in the marketing role eventually did open um and was something that I thought I could be qualified for cool I think that's such an empowering
+
+59
+00:10:14,000 --> 00:10:24,440
+lesson of uh if you look at someone like you and they're like oh she was so early at Facebook how lucky clearly wasn't luck you knew you wanted to work at this company you put a lot of effort into
+
+60
+00:10:24,440 --> 00:10:35,880
+making it happen no matter the job I think that's a really good takeaway and lesson so if there's today that you're excited about they just like this is going to be a massive success what I'm hearing is just do everything you can to
+
+61
+00:10:35,880 --> 00:10:47,600
+try to land a job there and eventually you'll be in the role you actually want doesn't have to start there when I got to Facebook I knew I wanted to build as someone who wasn't really technical I wasn't going to be an engineer or a coder I wanted to work with the
+
+62
+00:10:47,600 --> 00:10:57,639
+engineers and the coders to build products I thought product management was the right function for me and so my dream was always to be a PM and it
+
+63
+00:10:57,639 --> 00:11:07,240
+wasn't luck as to how ended up becoming a PM I sort of took the same approach showing up at the office asking if there were any
+
+64
+00:11:07,240 --> 00:11:17,959
+roles by then we had moved to 156 University um and all of the PMs and Engineers worked on the second floor and
+
+65
+00:11:17,959 --> 00:11:29,600
+I was working in marketing like I mentioned and I worked on the third floor and all the business functions worked on the third floor and my goal was to be a PM I ended up going sort of the the analogy I went to the second
+
+66
+00:11:29,600 --> 00:11:40,399
+floor most days after work asked if there were any projects that I could help out with you know it was very early days there was always more to do um than people to do it and So eventually I
+
+67
+00:11:40,399 --> 00:11:49,440
+picked up a few projects helping with program management you know giving my product feedback um and by the time that
+
+68
+00:11:49,440 --> 00:11:57,920
+I actually applied formally to be a product manager I had been doing the job voluntarily almost informally for a few
+
+69
+00:11:57,920 --> 00:12:09,240
+months and and I remember this because I had a seat on the third floor I picked up all the stuff on my desk put it in a box walked down to the second floor once
+
+70
+00:12:09,240 --> 00:12:19,720
+I got the job to to become a PM and when I got to the second floor I distinctly remember everyone on the second floor standing and clapping and so it was a
+
+71
+00:12:19,720 --> 00:12:28,720
+big Standing Ovation I'll never forget BOS was there by the way I know BOS has been on your podcast but even BOS was there sort of standing and clapping and
+
+72
+00:12:28,720 --> 00:12:36,760
+so I I you know to to the the lesson that you were trying to extract from my story I do think I sort of tried to
+
+73
+00:12:36,760 --> 00:12:47,880
+create the luck um by by not giving up um and just repeatedly cold calling cold showing up or cold volunteering until I
+
+74
+00:12:47,880 --> 00:12:57,839
+sort of you know was able to make it happen amazing again very empowering it's not just like oh there's these people that just get lucky and they go in this PM job it's like you landed at
+
+75
+00:12:57,839 --> 00:13:08,440
+the company I want to be a manager which is interesting most people don't like grow up and like I want to be a product manager that's like a rare uh a rare thing people even want uh especially that early on so it's interesting that
+
+76
+00:13:08,440 --> 00:13:19,440
+you already knew that but uh you basically did the job you did the job of PM before you had the job and by the time you actually asked for it you've been doing it for a long time and you could show hey look I'm actually good at
+
+77
+00:13:19,440 --> 00:13:30,600
+this I can do this job awesome um by the way I love the boss connection I'm finding that boss is connected to the the most guest of this podcast in so many different ways really curious yeah
+
+78
+00:13:30,600 --> 00:13:41,920
+like Amy and oh yeah and a few other people it's just interest there's like a boss spiderweb of connections throughout this podcast so far um okay so I'm GNA
+
+79
+00:13:41,920 --> 00:13:52,800
+fast forward to today so your role today is head of product yes meta yes what does that mean what is what do you do at meta today how would you describe your role so you know there are a few
+
+80
+00:13:52,800 --> 00:14:03,000
+thousand PMS at meta um they do not all report to me um I would say a few hundred of them report to me on the teams that I directly manage but I feel
+
+81
+00:14:03,000 --> 00:14:13,639
+responsible for the entire PM community at meta there are things that we do centrally things like PM performance PM culture pm onboarding and training and
+
+82
+00:14:13,639 --> 00:14:24,959
+that's the kind of thing that I look out for you know obviously I wanted to be a PM head of product is my dream job I am you know deeply um supportive of the PM
+
+83
+00:14:24,959 --> 00:14:36,199
+function and so I really care and I think it's PMS are huge point of lever uh leverage in a company for how we can actually you know get stuff done and and
+
+84
+00:14:36,199 --> 00:14:48,160
+help accomplish the company's goals and so that's I I sort of focus on PM as like a a really important exponential lover for doing that I love that okay I'm going to come back to what you've
+
+85
+00:14:48,160 --> 00:14:59,440
+learned about what makes super successful PMs and what makes you really successful I want to take a tangent to Zuck yes okay so you've you've known Zuck for over 20 years at this point
+
+86
+00:14:59,440 --> 00:15:09,440
+point and I just have to ask a few Zuck questions because people are always curious to learn from what has worked so well for him the first question is just there's been a pretty profound
+
+87
+00:15:09,440 --> 00:15:21,279
+transformation in in in Mark over the past few years both in terms of how he leads and also just in his like coolness and Vibe Factor uh what are your thoughts on just this transformation and how he's able to been been able to pull
+
+88
+00:15:21,279 --> 00:15:32,279
+it off so I've always said that there is the biggest gap of anybody I know between what people think of Mark and who Mark really is and
+
+89
+00:15:32,279 --> 00:15:43,759
+so I think this is the mark that I've known for the past 20 years and the world is finally getting to see what I've been lucky enough to see and that Gap that we've talked about is really is
+
+90
+00:15:43,759 --> 00:15:55,319
+really starting to close how how did we get here I always say Mark is a learn itall not a know-it-all he is the fastest person at upskilling of anyone I've ever met he
+
+91
+00:15:55,319 --> 00:16:04,560
+used to do these annual challenges one year I did them with him it was learning Chinese and within a year he was able to basically achieve an eighth grade
+
+92
+00:16:04,560 --> 00:16:16,399
+fluency in Chinese and that's just one example obviously he's gotten incredibly great at Guitar MMA a lot of his passions but he's also gotten a lot of a
+
+93
+00:16:16,399 --> 00:16:26,440
+lot better at some of the professional skills and I think negotiation public speaking is one of those I think before in the early days it just wasn't something that he was very comfortable
+
+94
+00:16:26,440 --> 00:16:36,959
+with he's talked himself about coming across says little scripted I think he was not confident and and pretty careful about how he showed up and he's
+
+95
+00:16:36,959 --> 00:16:48,160
+upskilled here he's just gotten a lot more comfortable and so people are able to see who he who he really is he was also like I don't know 20 something when he started Facebook and now he's running
+
+96
+00:16:48,160 --> 00:16:59,600
+80,000 person org you know I could see I could see thetion habit yes I think he was I think he might have been like 19 or 20 when I oh God that's insane so yeah I could see how why why someone
+
+97
+00:16:59,600 --> 00:17:10,280
+would change uh I was at the uh the choir podcast Chase event with him being interviewed and he's just like such a cool dude now he just has these like big shirts with his own like letters on it
+
+98
+00:17:10,280 --> 00:17:20,480
+his own like phrases his chain a cool dude his his long hair his long hair his watch yeah I was at that event too I
+
+99
+00:17:20,480 --> 00:17:31,480
+thought it was great I think yeah that's that's the no gap between who Mark is and and what the world sees I love that is there something about
+
+100
+00:17:31,480 --> 00:17:42,440
+Zuck that you know that most people don't know something that would surprise us the one thing I would say about Mark is I think people people know he's married he has three daughters he's a
+
+101
+00:17:42,440 --> 00:17:53,720
+really great dad he's a really great husband I would say he's also a really good friend maybe that's something that I can sort of speak to from experience um he's just an incredibly thoughtful
+
+102
+00:17:53,720 --> 00:18:05,559
+friend there was a period in my life I think 2014 10 years ago when I was going through just sort of like a really hard time I had come out of a breakup but Mark saw that I was having a hard time
+
+103
+00:18:05,559 --> 00:18:17,520
+he asked me if I wanted to volunteer um to teach a class in um East paloalto after after their school day and in retrospect it's pretty funny but
+
+104
+00:18:17,520 --> 00:18:28,559
+Mark and I taught a class about how to build a business so you had the CEO of meta teaching this class to a bunch of um middle school students and we got really close to them through that
+
+105
+00:18:28,559 --> 00:18:40,000
+process process we made some really important mentorship connections uh for years we met with them I think you know we still continue to even though they've now at this point graduated from college
+
+106
+00:18:40,000 --> 00:18:50,720
+and are you know have real jobs but one of the the lessons that we taught during that class that I remember Mark distinctly like writing on the
+
+107
+00:18:50,720 --> 00:19:00,480
+Whiteboard or not the Whiteboard the actual was a chalk with chalk on a chalkboard with the four life lessons that was one and I I've kept these for
+
+108
+00:19:00,480 --> 00:19:09,840
+myself as well love yourself two only then could can you truly serve others three focus on what you can control and
+
+109
+00:19:09,840 --> 00:19:20,520
+four for those things never give up and that was sort of his his life lessons four steps to to how to approach life um and we actually made stickers for these
+
+110
+00:19:20,520 --> 00:19:30,080
+four steps that the students could actually put on their like composition notebooks as a reminder and I think obviously that has has really
+
+111
+00:19:30,080 --> 00:19:42,000
+helped me over time but I think that in that you can see some of of what I think we all see in Mark for example for those things never give up he has that that
+
+112
+00:19:42,000 --> 00:19:52,320
+aspect of him and it makes sense for me number three is really the hardest which is focus on what you can control because I I think I probably think I can control more things than I actually
+
+113
+00:19:52,320 --> 00:20:03,640
+can so do we all uh I love that he was sharing that in like a class on how to start a business this like life advice that he just totally oh man that's
+
+114
+00:20:03,640 --> 00:20:14,799
+amazing I want to chat a bit about so at this point meta is 86,000 employees something like that that's what I found online he so he has to run this massive
+
+115
+00:20:14,799 --> 00:20:25,039
+org as as this CEO one person I know that one way that he does this is he has something called a small group is that the is that the term yes small group
+
+116
+00:20:25,039 --> 00:20:34,799
+Okay cool so he's got the small group that he calls it and it's essentially is like core execs and this group meets regularly and that's kind of how he's able to manage the entire org through
+
+117
+00:20:34,799 --> 00:20:45,480
+this small group for people that are struggling to run an increasingly larger org are there any tidbits from how Mark and the small group operate that might
+
+118
+00:20:45,480 --> 00:20:56,120
+be helpful to folks sure so I think the first thing is um small group is sort of the leadership team it's the leaders working on the most important projects
+
+119
+00:20:56,120 --> 00:21:06,440
+at the company um sort of independent of reporting structure and stuff it's like who are the the leaders on the big on the big most important projects or functions they will be represented in
+
+120
+00:21:06,440 --> 00:21:15,960
+small group what makes this group unique um a lot of them are people like me sort of people that have been there for a very long time so I think sort of the
+
+121
+00:21:15,960 --> 00:21:27,440
+tenure of small group is is really rare um why I think that's important is you have a lot of people that are motivated by Mission rather than sort of climbing
+
+122
+00:21:27,440 --> 00:21:37,640
+the the corporate ladder at this point and so there are a lot of what I call disagreeable givers so just to back up I don't know if you've heard this framework but I I think I learned this
+
+123
+00:21:37,640 --> 00:21:48,600
+from Adam Grant during like a um executive um Learning and Development session and he was saying that there are if you think of a two by two there's people who are agreeable and
+
+124
+00:21:48,600 --> 00:21:59,720
+disagreeable and then there's people who are givers and takers and the most dangerous kind of person to have in an organization is an agreeable Taker and what that means is an agreeable person
+
+125
+00:21:59,720 --> 00:22:09,679
+super nice Everyone likes them really easy to get along with but they're a taker and maybe their motivation is more self-interested rather than what's best for a company for the company which is
+
+126
+00:22:09,679 --> 00:22:21,559
+is what how I would Define a giver and the most the most precious person in an organization is the disagreeable Giver those are the people who are really motivated to do what's best for the
+
+127
+00:22:21,559 --> 00:22:31,760
+company but they they can be a little bit disagreeable in the sense that they may not say what you want to hear uh they may push back on things things they may fight for things and so I think
+
+128
+00:22:31,760 --> 00:22:42,840
+small group is characterized by a lot of disagreeable givers um and I think that's really important for an organization one thing I think Mark has
+
+129
+00:22:42,840 --> 00:22:53,600
+done really well in general is just have a culture including on his leadership team of of people who give him feedback um I think a lot of times as you get
+
+130
+00:22:53,600 --> 00:23:05,120
+more successful or as you have more fame or if you have more wealth you lose having an accurate feedback loop um and people may not want to be you know 100% honest with you for various reasons and
+
+131
+00:23:05,120 --> 00:23:16,919
+Mark has tried to ensure that he himself has an accurate feedback loop or we as a company have more of an accurate feedback loop um by surrounding um himself and our leadership team and
+
+132
+00:23:16,919 --> 00:23:27,440
+creating a culture of giving direct and honest feedback um so that is that's you know some of the unique properties of small group from a process perspective
+
+133
+00:23:27,440 --> 00:23:39,360
+we have one weekly sort of strategic meeting it's more open-ended there is time for discussion it's longer and it's sort of more unstructured we also have one
+
+134
+00:23:39,360 --> 00:23:50,760
+weekly operational meeting which is highly structured um where we go through all of the priority projects the person who owns each of the projects will actually speak to the the weekly updates
+
+135
+00:23:50,760 --> 00:24:01,039
+um for that project and and you know it's very operational and tactical awesome uh I just love this name small group it's like such a just like a cozy
+
+136
+00:24:01,039 --> 00:24:12,919
+name it's not like executive staff or E sta or all these terms people always use not just their small group totally that and then this framework you described it sounds a lot like radical cander of
+
+137
+00:24:12,919 --> 00:24:23,559
+challenging directly but caring deeply uh being disagreeable but being constructive and additive is that the term what was it um disagreeable but uh
+
+138
+00:24:23,559 --> 00:24:35,200
+a giver Giver yeah okay that's great yes if there's nothing here totally cool but is there something that you changed Mark's mind about you talked about he's
+
+139
+00:24:35,200 --> 00:24:43,640
+good at seeing you data and being like okay I see I see your is there anything that you were successful there that is an interesting story one of the things
+
+140
+00:24:43,640 --> 00:24:54,200
+that we did in the early days on the growth team because because I'm not sure that necessarily when we talk about this sort
+
+141
+00:24:54,200 --> 00:25:05,039
+of Legacy or the the history or the the lore around the growth team and and this may not be a direct answer to the question but it didn't really necessarily come from Mark Mark wasn't
+
+142
+00:25:05,039 --> 00:25:14,760
+like you guys should create a growth team here's how you should operate and so I think in some ways we established and grew a growth team and and you know
+
+143
+00:25:14,760 --> 00:25:25,679
+marks or got on board or or you know saw the value in it and um was was a huge proponent of it but I'm not sure it necessarily originated
+
+144
+00:25:25,679 --> 00:25:36,840
+with him and and indeed I think sometimes the focus on on being so data driven um might have been something that you know myself Alex Schultz Javier olivon these are some of the original
+
+145
+00:25:36,840 --> 00:25:48,679
+people that were on the growth team and that are my closest co-workers now may have really pushed on and um highlighted the value of uh for Mark I'm happy to
+
+146
+00:25:48,679 --> 00:25:57,760
+talk about the growth team which is something I get asked a lot of questions about if you want yeah I'd loved it that's uh exactly where I was about to Segway since you brought that up so the
+
+147
+00:25:57,760 --> 00:26:08,399
+Facebook team it's kind it's a legendary team I think it was probably the first real growth team in Tech the team developed some of the most core growth
+
+148
+00:26:08,399 --> 00:26:18,960
+levers and techniques that companies use today and so I'm really excited to chat a bit about this and what you learned from that time one thing I wanted to start with is there's this kind of this like legendary activation metric they
+
+149
+00:26:18,960 --> 00:26:29,279
+all had of uh the goal was get I think it was seven friends in 10 days or something like that is that a real thing is that what you guys actually did anything more there for folks that are like oh we got to come up with something
+
+150
+00:26:29,279 --> 00:26:39,440
+like this sure so yes seven friends in 10 days was a thing uh 10 friends in 14 days was also a thing they're kind of the same thing they're just different
+
+151
+00:26:39,440 --> 00:26:49,000
+points on a retention curve I would say the key Insight here is when we started the growth team I think we were pretty focused on acquisition we had a notion
+
+152
+00:26:49,000 --> 00:27:00,039
+though of growth accounting which looks at how many what's our net growth every day and that would look at the number of new users that registered minus the number of users that actually went stale
+
+153
+00:27:00,039 --> 00:27:11,120
+so after a 30-day period that's how we Define it they no longer logged in and then plus the number of users that resurrected which is after 30 days they came back and what we found was the turn
+
+154
+00:27:11,120 --> 00:27:21,159
+and Resurrection lines were actually much larger than the new user line which implied to us that retention and driving those two lines was actually our biggest
+
+155
+00:27:21,159 --> 00:27:32,679
+lever to drive net growth and so while we were focused on acquisition a lot of our Focus shifted to be around engagement and retention how do we drive
+
+156
+00:27:32,679 --> 00:27:42,080
+engagement and retention we look at the variables that correlate most with that outcome what we found was friending and so those those two magic moments having
+
+157
+00:27:42,080 --> 00:27:52,559
+seven friends in in 10 days or 14 10 friends in 14 days really just map to when we feel like your likelihood of being a retained user goes up because
+
+158
+00:27:52,559 --> 00:28:04,000
+you've seen sort of the value in Facebook and it kind of makes sense like Facebook you know is is much more compelling if you have 14 days or 14 friends and the other thing around 10 or
+
+159
+00:28:04,000 --> 00:28:14,919
+14 days is we want it to happen quickly we wanted to have you experience the Magic Moment soon after you had registered on the site to to you know prevent you from churning and then us
+
+160
+00:28:14,919 --> 00:28:25,760
+having to resurrect you again one of the most interesting kind of lessons from this activation metric that people talk about like right now everyone's like yeah of course retention is how you yeah
+
+161
+00:28:25,760 --> 00:28:37,159
+what you need to focus on that's what product Market fit is like I think right now it's like that's what everyone knows I'd love that that was you guys basically figured that out it was one of the first times of like here's how we understand if our product will last and
+
+162
+00:28:37,159 --> 00:28:48,120
+how to grow retention matters most and retention cohort curves I think was one of the Innovations you all thought about early of just like here's how we track retention people joining at a certain time how long do they stick around
+
+163
+00:28:48,120 --> 00:28:58,880
+totally and that was Danny fante who who really came up with the growth accounting framework which I guess is is quite obvious but like the plus new minus uh stale plus
+
+164
+00:28:58,880 --> 00:29:09,960
+resurrected um the thing that I I feel like you know may be valuable for PMS and and is one of my Naomi isms is I think what the growth team really
+
+165
+00:29:09,960 --> 00:29:21,120
+pioneered was being data driven and product driven especially in a area that was historically more of a business function so I think at that time a lot
+
+166
+00:29:21,120 --> 00:29:32,159
+of the growth in new users was expected to come from like marketing or comms whereas the Insight that we had is actually the product is the biggest lever to drive growth and that means we
+
+167
+00:29:32,159 --> 00:29:43,200
+should have a product and engineering team working on optimizing things like the registration flow the invite flow the new user on boarding getting you seven friends in 10 days um one of my
+
+168
+00:29:43,200 --> 00:29:55,000
+naom isms is really understand identify and execute that framework came from 2009 where the growth team at the time it was sort of fledgling and it just started
+
+169
+00:29:55,000 --> 00:30:06,600
+was focused on only instrumenting data and and Alex often wears a shirt that says why guess when you can know we just didn't have the data that we needed to
+
+170
+00:30:06,600 --> 00:30:16,240
+make informed decisions to know really what were the biggest lovers to drive growth and so in 2009 in January we basically stopped doing anything on our
+
+171
+00:30:16,240 --> 00:30:26,080
+road map except data instrumentation and that's when we you know instrumented every step of the registration flow instrumented every step of the news our onboarding experience we knew where
+
+172
+00:30:26,080 --> 00:30:35,559
+there was drop off and so we UND stood which allowed us to identify what were the key opportunities to drive growth and maybe hey it's like you know
+
+173
+00:30:35,559 --> 00:30:46,640
+increasing friending in the the new user experience or 20% drop off on registered users at the email confirmation step how can we address that these are the
+
+174
+00:30:46,640 --> 00:30:58,080
+opportunities that we identified and then we would execute by Building Products so having this data driven product driven approach to what I think historically was more of a business responsibility at a company was sort
+
+175
+00:30:58,080 --> 00:31:08,440
+with the growth team the Special Sauce of the growth team we eventually extended that approach I think that approach started with the growth team but we extended to
+
+176
+00:31:08,440 --> 00:31:18,559
+other areas um so for example one of the products or projects that I took on after growth was social impact and instead of what I think a normal company
+
+177
+00:31:18,559 --> 00:31:29,039
+might do which is start a um Corporate social responsibility Wing we decided hey no we're going to take a data driven product driven approach to driving social impact instead of having a
+
+178
+00:31:29,039 --> 00:31:38,559
+foundation that's Distributing money we're going to build a product that actually raises money from our community and you know many years later we've raised billions of dollars from the
+
+179
+00:31:38,559 --> 00:31:48,240
+community for charity so that that's sort of the approach that I think um is unique about the growth team that expanded to other areas and that I think
+
+180
+00:31:48,240 --> 00:31:58,360
+that the company you know in many ways has taken to to most of the problems that we face that's such a good point and I almost took that for granted
+
+181
+00:31:58,360 --> 00:32:09,159
+there was such a huge shift that yall started from moving from marketing being the driver of growth to product and data and experiments and all that stuff and
+
+182
+00:32:09,159 --> 00:32:20,360
+so I think that's such a good reminder that fun fact on the social good team I'm really close friends with the designer that was on that team name is Mickey he was uh on that team for a while and really enjoyed and and yeah
+
+183
+00:32:20,360 --> 00:32:31,000
+really enjoyed working with you oh that's so great I remember Mickey what is his last name uh settler oh okay yes I definitely remember this I mean I yes
+
+184
+00:32:31,000 --> 00:32:41,320
+and social impact is just one thing that I think I'm really proud of and again remember social impact used to be a business thing you would you would create this corporate social
+
+185
+00:32:41,320 --> 00:32:51,399
+responsibility part of the company that was very separate from the product and Engineering engineering team um another thing that we did in the early days was
+
+186
+00:32:51,399 --> 00:33:02,720
+you know there was a a juncture where it was like how are we going to translate this site and I think we could have taken more of a a non-technical traditional approach and had professional
+
+187
+00:33:02,720 --> 00:33:14,200
+translators translate the entire site into the different languages and instead sort of what the growth team suggested was why don't we build a version of Facebook that allows you to make translations in line and so the
+
+188
+00:33:14,200 --> 00:33:25,039
+community of people using Facebook at the time who actually knew the product the best could actually insert translations and there was a whole system that we built around how to like up rank the best translations and
+
+189
+00:33:25,039 --> 00:33:33,480
+downrank you know sort of like um Wikipedia and and to this day we have over a hundred languages supported so we're was trying to find these like
+
+190
+00:33:33,480 --> 00:33:43,399
+product Technology Solutions to to these these sort of traditional problems I totally remember that where it's like you ask your users to help translate the
+
+191
+00:33:43,399 --> 00:33:53,600
+site yes yes I want to come back real quick to the activation metric because something that a lot of people somewhat misuse and think maybe incorrectly about
+
+192
+00:33:53,600 --> 00:34:05,080
+so to come up with an activation metric as you describe you basically figure out what's like the regression of if someone does X here's retention increases and so let's focus on getting them there a lot of people struggle with coming up with
+
+193
+00:34:05,080 --> 00:34:16,280
+that metric do you have any thoughts on just like how important it was to have that very specific activation Milestone of like seven exact friends in exactly 10 days versus the value of just having
+
+194
+00:34:16,280 --> 00:34:25,560
+anything that is a rallying point for everyone to focus on and drive I think the majority of the value is in the latter is just having extreme Clarity
+
+195
+00:34:25,560 --> 00:34:36,359
+around the goal um and and that allowed everybody to work towards optimizing the same goal you're right like we did sort of just pick a point on the curve I
+
+196
+00:34:36,359 --> 00:34:46,879
+think it could have been any of those and and indeed I like as part of preparing for this I was like was it seven friends in 10 days I had to go back and I asked a few people that I worked with back in the day and they
+
+197
+00:34:46,879 --> 00:34:58,160
+were like well I thought it was 10 and 14 I mean I think at the it just it doesn't matter it's just that we picked one of them um and What mattered there was we had the same goal What mattered was that it was a retention goal or an
+
+198
+00:34:58,160 --> 00:35:08,240
+activation metric and um one of the the most important things that actually came out of having that goal was building a new user experience believe it or not
+
+199
+00:35:08,240 --> 00:35:18,920
+you know when we first launched Facebook or you know I wasn't around then but in the early days of when it was just a college site we didn't need a new user onboarding we didn't need to explain to people that they had to find their
+
+200
+00:35:18,920 --> 00:35:29,680
+friends they were sort of automatically connected to everyone on the college campus and sort of knew how to use this product it felt very intuitive again were college students building a product
+
+201
+00:35:29,680 --> 00:35:38,599
+for other college students they were sitting next to each other in libraries or at desks and sort of through osmosis understanding how the product worked it
+
+202
+00:35:38,599 --> 00:35:50,240
+was more when we um you know we launched the ability for teens to register and then work networks and then in 2006 open registration we started
+
+203
+00:35:50,240 --> 00:36:00,640
+getting all kinds of people with any email address it was before it was edu or like a microsoft.com email address that was required in order to sign up for Facebook then anyone with any email
+
+204
+00:36:00,640 --> 00:36:12,359
+address could register including people like my dad and my grandma that we realized wow in order to get people to This Magic Moment how are we going to do that what's the most effective way that
+
+205
+00:36:12,359 --> 00:36:22,280
+Insight resulted in building like a a new user experience I remember it was just like step one upload your profile picture that was really important so people could find you and know who you
+
+206
+00:36:22,280 --> 00:36:34,040
+were step two find your friends that's where a lot of the sort of contact importing and people you may know and hear other people at your school and hear mutual friends that step in the
+
+207
+00:36:34,040 --> 00:36:45,480
+news or experience ultimately became one of the most important drivers of that activation metric that we talked about I love that you shared that such a recurring theme on this podcast the power of onboarding the value of
+
+208
+00:36:45,480 --> 00:36:54,839
+investing in onboarding and the Ripple effects of opportunities there I love that you also kind of like we one of the first like we need like onboarding
+
+209
+00:36:54,839 --> 00:37:06,280
+that's a thing let's invent onboarding I know I mean I remember the day where I was like do we need to explain to people how to use this is it not obvious and
+
+210
+00:37:06,280 --> 00:37:16,160
+it's like my dad's like I don't understand this whatsoever my dad would go on to become like Facebook's biggest power user because I always like you know beta tested everything with him but
+
+211
+00:37:16,160 --> 00:37:27,760
+yeah the I it was that was not obvious to us at the time in 2006 that we had to explain to people how they use Facebook and again remember the it's fun
+
+212
+00:37:27,760 --> 00:37:38,599
+talking about this because obviously the product has evolved so much but the principles are relatively the same it was the facebook.com eventually it became
+
+213
+00:37:38,599 --> 00:37:49,760
+facebook.com but eventually you know we built a mobile app um and then you know it was a mobile first product and then it was about mobile photos and then it
+
+214
+00:37:49,760 --> 00:38:00,680
+was about mobile videos so over time the technology has really changed but the the core use case that we really need to educate people on is like how to connect with their friends on Facebook in
+
+215
+00:38:00,680 --> 00:38:11,040
+whatever iteration or product is the same and so obviously we still have an onboarding today um and it's relatively the same principles like get a profile picture and find your
+
+216
+00:38:11,040 --> 00:38:21,839
+friends along those same lines just maybe a last question around the growth stuff that you worked on for folks that are thinking driving growth working on onboarding maybe specifically just are
+
+217
+00:38:21,839 --> 00:38:33,640
+there any lessons from things that worked super well when you were looking to accelerate growth of the Facebook early on that you think people are maybe sleeping on as levers and tactics that worked back then that
+
+218
+00:38:33,640 --> 00:38:45,440
+might still be really powerful today well definitely the understand identify execute I would I would just ask yourselves do you have the data that you need to know what you need to do on growth and if not definitely take the
+
+219
+00:38:45,440 --> 00:38:56,200
+time to instrument that data um the thing that you know I I think we were relatively lucky I talked about why I
+
+220
+00:38:56,200 --> 00:39:06,760
+was bullish on Facebook in 2005 even was because there was product Market fit and so for us growth you know I as much as credit as we give to the growth team I'm
+
+221
+00:39:06,760 --> 00:39:16,040
+actually not sure how much credit we deserve and how much incremental growth we drove above and beyond the fact that this was a product that had product
+
+222
+00:39:16,040 --> 00:39:26,599
+Market fit and we benefited in a huge amount from having high demand for the product so at every step and I I talked about the growth
+
+223
+00:39:26,599 --> 00:39:38,000
+team the projects that we were working on were really at a high level around removing barriers there were macro barriers like the first project I work with worked on was was high school
+
+224
+00:39:38,000 --> 00:39:48,400
+students on on Facebook which is an interesting story in it of itself because at that time we almost created a separate website called Facebook High just to keep them separate from the college students but at that time we
+
+225
+00:39:48,400 --> 00:39:58,880
+were like no this is one graph this is one community college students have friends and people they're connected to of all different ages why bifurcate the
+
+226
+00:39:58,880 --> 00:40:10,560
+graph and obviously we've maintained that principle ever since um but it was about removing barriers so you had to be a college student then you had to be a high school student then you had to be
+
+227
+00:40:10,560 --> 00:40:20,560
+in a work Network then you had to have any email address one of the next projects I worked on was not everyone has access to a smartphone how can we remove the barrier of having access to a
+
+228
+00:40:20,560 --> 00:40:32,079
+smartphone you and building more of a a rich Facebook experience for someone that was using a a feature phone or a l lend device internet.org what about removing the barrier of having access to
+
+229
+00:40:32,079 --> 00:40:42,200
+the internet or being able to afford a data plan and so that those are the macro barriers that thematically the growth team has worked on what I would say is maybe applicable is really the
+
+230
+00:40:42,200 --> 00:40:52,440
+micro barriers all of the work that we did on growth around optimizing the flows were really about removing micro barriers one of the things that I
+
+231
+00:40:52,440 --> 00:41:03,760
+thought was just so elegant was after we did that 2009 instrumentation of all the the flows the product re the product flows relevant to growth what we found is 20% of people aren't actually
+
+232
+00:41:03,760 --> 00:41:14,319
+confirming their email we tried sending them an SMS so maybe they would confirm the SMS instead what we found was a lot of people are actually still clicking on notifications that they're getting but
+
+233
+00:41:14,319 --> 00:41:24,920
+because it wasn't the specific confirmation email we weren't able to confirm the account and so what we did was allow people to get notifications
+
+234
+00:41:24,920 --> 00:41:35,359
+even as an unconfirmed account and then if they clicked on any of those notifications that would count as a account confirmation as well because they proved ownership of the email it's just removing a micro barrier of having
+
+235
+00:41:35,359 --> 00:41:46,280
+to like go find the confirmation email click it before you can do anything on the site so I do think we've been relatively lucky and having like a lot of high demand that meant that we could
+
+236
+00:41:46,280 --> 00:41:57,960
+focus on just removing micro macro barriers and then on the growth team a lot of the iterations and optimizations were about removing just sort of friction I love that framework work of
+
+237
+00:41:57,960 --> 00:42:08,400
+like micro barriers and macro barriers just thinking about ways to make this accessible to more people and also just getting helping them get through the flow faster uh I also love your point about how a lot of grow teams get a lot
+
+238
+00:42:08,400 --> 00:42:19,599
+of credit for growing a business when really in many ways it could have done really well even without that team potentially uh because product Market fit was so strong I think about this with Airbnb honestly it was just such
+
+239
+00:42:19,599 --> 00:42:30,119
+like after it gets to certain points such good product Market fit that who knows what would happened if there was no one working on growth it probably would have been okay for a long time totally and then you know maybe where
+
+240
+00:42:30,119 --> 00:42:40,880
+where we we do sort of see the impact is is maybe something like the translations thing that we talked about we would barrier the macro barrier removing the language barrier and so maybe the
+
+241
+00:42:40,880 --> 00:42:51,720
+approach we took meant that we supported 100 plus languages instead of whatever the professional translators you know there's just sort of we have the longtail of languages so that last person who's still speaking you know
+
+242
+00:42:51,720 --> 00:43:03,400
+whatever sort of near- extinct language can still use use Facebook um but yeah I I I think that's right I sometimes think that maybe some of our efforts were really more on the margin of a bigger
+
+243
+00:43:03,400 --> 00:43:14,559
+Trend around product Market fit final thing I just want to highlight again that you said that I think is so important and I've always thought is true and I love that you confirmed it is that the activation metric that you all
+
+244
+00:43:14,559 --> 00:43:26,359
+rallied around the more the biggest value of it wasn't this is exactly the right regression connection to retention it's more that we have something we are all going to focus on and that is where
+
+245
+00:43:26,359 --> 00:43:38,079
+most of the impact comes is let's get more people to that point whether it's perfectly right or not it doesn't really matter yes love that I think that's really freeing to a lot of people because they're like oh we don't know if we're going to be as perfect about this
+
+246
+00:43:38,079 --> 00:43:47,800
+versus just let's just drive some growth and get people are good enough uh thinking on that okay great you mentioned Naomi isms I want to segue to
+
+247
+00:43:47,800 --> 00:43:59,640
+that so let me first read a quote so I asked Adam aeri who's head of Instagram what to ask you I know you guys work together on a bunch of stuff here's he described you Naomi is called the
+
+248
+00:43:59,640 --> 00:44:10,880
+conductor here at meta she has an incredible ability to handle the most complex projects and problems and bring the right people together to simplify and solve them she's very firm yet kind
+
+249
+00:44:10,880 --> 00:44:20,880
+her standards are extremely high and she sets the bar also uh many other people that I messaged said very similar things about you about how you're incredibly good at
+
+250
+00:44:20,880 --> 00:44:32,599
+taking very complex problems and getting done getting them done simplifying them and getting them done so I want to spend some time understanding what you've learned about how to do this well
+
+251
+00:44:32,599 --> 00:44:44,160
+what are kind of like skills you've collected that allow you to take really complex problems and get to a solution stay kind but firm and take on these really hard challenges so maybe
+
+252
+00:44:44,160 --> 00:44:55,880
+just broadly I'm curious what are some of these skills that you have built that allow you to do this yeah well also that's very kind of Adam I adore Adam
+
+253
+00:44:55,880 --> 00:45:07,359
+obviously he's um one of the tenured people in small group um and I've actually gotten the opportunity to work even more closely with him than usual we recently launched something called Teena
+
+254
+00:45:07,359 --> 00:45:15,119
+accounts and Adam and I worked very closely on that in terms of how I do the things people say that I can do um I
+
+255
+00:45:15,119 --> 00:45:26,480
+really rely on Naomi isms um like I said and actually like you like I I refer your podcast out a lot because there isn't just like a PM University that I can send people to there isn't like a
+
+256
+00:45:26,480 --> 00:45:38,040
+formal training that people can get to become a product manager and that's where Naomi isms came from it was stuff that I learned on the job from other people including from Adam that I found myself repeating over and over again a
+
+257
+00:45:38,040 --> 00:45:48,040
+good PM looks for a way to make that more efficient for me that was writing them down um people started calling them naomis Ms I started sharing them internally and then I think two years
+
+258
+00:45:48,040 --> 00:45:58,440
+ago I also started sharing them externally Adam referred to me as a conductor that's one of the naom
+
+259
+00:45:58,440 --> 00:46:09,280
+isms in my role as head of product I want to educate the PM Community about what is PM it's the most common question I get from PMs and non-pm what do PMS do
+
+260
+00:46:09,280 --> 00:46:20,680
+what makes a great pm and what I say is a PM is a conductor it's as though the um team that you are a PM on is an
+
+261
+00:46:20,680 --> 00:46:31,760
+orchestra there are many different functions in your team that includes legal policy columns data analytics or sorry analytics engineering design much like there are many different
+
+262
+00:46:31,760 --> 00:46:42,079
+instruments in an orchestra and as a PM your job is to make sure everyone's playing their part correctly every section in the orchestra is playing their part but at the same time they're
+
+263
+00:46:42,079 --> 00:46:52,160
+playing together they're unified in the music that they're producing and that they're playing at the right Tempo and a lot of times um I think people use Music
+
+264
+00:46:52,160 --> 00:47:02,960
+analogies or vocabulary to describe the work and that includes things like people being in harmony like a good team a good PM a good Orchestra is in harmony
+
+265
+00:47:02,960 --> 00:47:14,520
+they're in sync they're at the right Tempo they have the right Cadence that's sort of how I imagine what a PM does at work important characteristics are the PM is not the star of the show indeed conductors don't
+
+266
+00:47:14,520 --> 00:47:24,839
+even say anything during the performance and also you know but I would at the same time give PMS like little metronomes and um conductor wands this was something
+
+267
+00:47:24,839 --> 00:47:36,000
+that I used to do when we were smaller just to sort of take the analogy way too far that's so funny he actually gave him conductor on and oh yeah just to wave around yeah I love that I would love a
+
+268
+00:47:36,000 --> 00:47:45,559
+conductor one this episode is brought to you by EPO EPO is a Next Generation AB testing and feature management platform built by
+
+269
+00:47:45,559 --> 00:47:56,119
+alums of airb B and snowflake for modern growth teams companies like twitch Muro clickup and DraftKings rely on EPO to power their experiments experimentation
+
+270
+00:47:56,119 --> 00:48:08,000
+is increasing L essential for driving growth and for understanding the performance of new features an EPO helps you increase experimentation velocity while unlocking rigorous deep analysis in a way that no other commercial tool
+
+271
+00:48:08,000 --> 00:48:18,520
+does when I was atbb one of the things that I led most was our experimentation platform where I could set up experiments easily troubleshoot issues and analyze performance all on my own EO
+
+272
+00:48:18,520 --> 00:48:30,319
+does all that and more with Advanced statistical methods that can help you shave weeks off experiment time and accessible UI for diving deeper into performance and outof the box reporting that helps you avoid annoying prolonged
+
+273
+00:48:30,319 --> 00:48:41,440
+analytic Cycles EPO also makes it easy for you to share experiment Insight with your team sparking new ideas for the AB testing flywheel EPO Powers experimentation across every use case
+
+274
+00:48:41,440 --> 00:48:52,119
+including product growth machine learning monetization and email marketing check out EPO at geo.com Lenny and 10x your experiment velocity that's
+
+275
+00:48:52,119 --> 00:49:01,720
+get eo.com Lenny so PM as conductor is sort of how I describe the the product management
+
+276
+00:49:01,720 --> 00:49:12,520
+function um but one of the key Naomi isms that I think is really critical to getting stuff done is what I call Extreme Clarity um I think our jobs are
+
+277
+00:49:12,520 --> 00:49:21,799
+super hard extreme Clarity means everyone's on the same page it definitely doesn't mean that they all agree with each other but they just have the same understanding of the facts so
+
+278
+00:49:21,799 --> 00:49:31,839
+we can disagree but we all believe you know in the facts which is that you know there's a b c our options are XYZ and here are the trade-offs you know one two
+
+279
+00:49:31,839 --> 00:49:43,359
+three that kind of shared understanding is what extreme Clarity is that came from a place of just being in many meetings on many emails in many situations where I felt like we actually
+
+280
+00:49:43,359 --> 00:49:54,000
+agree on something the nature of this conflict is a result of misunderstanding and that seems like an incredible waste of time and so we want to have extreme Clarity so we can just focus our
+
+281
+00:49:54,000 --> 00:50:03,960
+conversations on things when we actually agree not when we are misunderstanding each other there are a lot of tactics that I use to drive I was gonna ask how do you do that that sounds
+
+282
+00:50:03,960 --> 00:50:15,839
+great how does one get to extreme Clarity so another name is canonical everything so that includes canonical nomenclature I often talk about conal nomenclature one way to ensure extreme
+
+283
+00:50:15,839 --> 00:50:27,079
+Clarity is we have the shared vocabulary I've been a lot of situations where people are using the same or different words to describe the same or different things which results in talking past each other one of the mostre ious
+
+284
+00:50:27,079 --> 00:50:37,520
+examples of this is when I was working I was in a conversation around how our reviewers and Global operations were performing and we were using consistency
+
+285
+00:50:37,520 --> 00:50:48,839
+and accuracy interchangeably consistency refers to how often different reviewers agree on the decision accuracy refers to how often the decision is correct according to ground truth those are very
+
+286
+00:50:48,839 --> 00:51:00,319
+different things we don't want to optimize for consistency because you could be consistently wrong you know like we want to optimize for accuracy and and so we that is what canonical nomenclature is is literally writing out
+
+287
+00:51:00,319 --> 00:51:11,799
+all the words and their definition so when we communicate we're using the same vocabulary I really believe in visuals I think sometimes just having a conversation or a big meeting where
+
+288
+00:51:11,799 --> 00:51:23,480
+people are talking I'm just not very auditory I'm a very visual person it's hard for me to follow along just by listening I will often have a visual in a meeting I will leverage that visual to
+
+289
+00:51:23,480 --> 00:51:34,319
+literally real time edit what is being decided so for example if we have multiple options I will edit the slide that's being projected to say we decided on option one here are the next steps
+
+290
+00:51:34,319 --> 00:51:46,280
+one two three a lot of times people are saying that's not what I heard I heard this as a next step or I heard that as a next step I love that because that avoids leaving the meeting and being like I don't know what we agreed to I
+
+291
+00:51:46,280 --> 00:51:57,000
+heard this you heard that no actually we haven't agreed upon set of like decisions and next steps that we all real time edited and looked at together just to double double click on that one real so what you're describing for the
+
+292
+00:51:57,000 --> 00:52:08,799
+visual is you're presenting here's our options here's our three options on a slide yes you all decide we're going to go with option two you edit the slide with like a star like here's what we chose and then maybe change some stuff
+
+293
+00:52:08,799 --> 00:52:20,480
+and this is exactly to your point of extreme Clarity people can see clearly this is what we're choosing if they disagree and don't realize that's what's happening it'll be really clear totally awesome and one thing people make fun of
+
+294
+00:52:20,480 --> 00:52:31,040
+me a lot for but I think it's just a great example of extreme Clarity is I never use bullet Ed lists because you can never refer to a bullet I always use
+
+295
+00:52:31,040 --> 00:52:42,640
+numbered lists because you can always in the visual in a meeting you know as referenced in you know number two um you know I have feedback on that versus like
+
+296
+00:52:42,640 --> 00:52:51,240
+the third bullet two up from the second you know whatever that is that is not extreme Clarity so very very small tactical things to like bigger bigger
+
+297
+00:52:51,240 --> 00:53:01,599
+things like canonical everything um but yeah I can be a little bit love that very tactical tip that is awesome that's exactly the stuff I look for uh is there
+
+298
+00:53:01,599 --> 00:53:12,160
+any other very nuanced tip along those lines that is helpful in extreme Clarity or canonical everything canonical everything and stop me if I'm getting
+
+299
+00:53:12,160 --> 00:53:22,599
+too wonky I can really get into this we got a ways to go when people when when I had a face versy along the years people have given me posters and the posters
+
+300
+00:53:22,599 --> 00:53:33,079
+say these nomism so extreme Clarity is is one canonical everything is another I think people really associate me with canonical canonical canonical um I
+
+301
+00:53:33,079 --> 00:53:43,920
+always want a canonical doc this came from a place of like me I work on a lot of different projects a lot of times I'm ramping up mid project I'm like where can I learn what I need to learn about this project I ask five different people
+
+302
+00:53:43,920 --> 00:53:55,799
+get five different answers that is unacceptable everyone should know exactly where the canonical dock is that's the one place I can go to to get all the information I need about a project and it will link to all the
+
+303
+00:53:55,799 --> 00:54:06,359
+other Docs of course I'm sure there's hundreds of docs associated with the project but there needs to be one canonical doc that canonical doc really has to have the basic information that you need to know for any project the
+
+304
+00:54:06,359 --> 00:54:17,119
+basic information that you need to know is what are the discrete areas of work I call those work streams this pretty obvious who are the owners on those work streams so for every workstream there's
+
+305
+00:54:17,119 --> 00:54:28,440
+an owner again seems pretty obvious sometimes it's like I'm like who's working who who's owning this it's like people don't know that's why I think it's very important to have a single-threaded owner we used to call
+
+306
+00:54:28,440 --> 00:54:40,160
+this a directly responsible individual or a Thro to choke we obviously don't say that anymore single-threaded owner every work stream has a single threaded owner sometimes work streams are really big you have subw workstreams underneath
+
+307
+00:54:40,160 --> 00:54:52,119
+them everything canonical needs to recurse so you should have an owner or an stto for the subw workst stream the other things on the canonical doc are what is the process by which the people
+
+308
+00:54:52,119 --> 00:55:02,559
+on this team work together I hate pawise conversations I feel like they're a waste of time I feel like you could have four conversations with four different people or one conversation with all four
+
+309
+00:55:02,559 --> 00:55:13,119
+people everyone has the same context ideally there's a visual in that meeting and you real time edited it there is Extreme Clarity the canonical doc will have what is the canonical meetings that
+
+310
+00:55:13,119 --> 00:55:23,880
+people have what is the canonical email list that you're going to use what is the canonical workplace chat you know like let's not reinvent the same audience 10 different times with like
+
+311
+00:55:23,880 --> 00:55:35,559
+different permutations of the people on the working team um let's just have one canonical chat and then often the canonical deck we'll have the canonical nomenclature I really believe in Frameworks for things that
+
+312
+00:55:35,559 --> 00:55:45,520
+helps Drive extreme Clarity um a framework is best understood when there's a visual representation of the framework in my mind and so we'll have canonical visuals and that's sort of
+
+313
+00:55:45,520 --> 00:55:54,559
+what I mean by canonical everything so anytime I start on a new project everyone knows to send me the canonical doc I love
+
+314
+00:55:54,559 --> 00:56:03,359
+this if you come in to a project that you've given that's really gnarly and complex what do you find are the first couple things you do that make a big
+
+315
+00:56:03,359 --> 00:56:14,640
+dent on helping everyone align and understand what happens how to what should what they should be doing and what they should be prizing a lot of times I'm simplifying a lot of times
+
+316
+00:56:14,640 --> 00:56:25,240
+there is an EC canonical Dock and so I'll go through the process of creating that um but I think that really falls under the simplification um thing
+
+317
+00:56:25,240 --> 00:56:36,200
+I of go into a project everyone's operating at a PhD level I'm coming in at a kindergarten level and so I need to understand it's almost like all of
+
+318
+00:56:36,200 --> 00:56:46,359
+this complexity we're at a PhD level I need to create the curriculum go back to basic building blocks for the kindergarten level how do I explain and understand this project at a
+
+319
+00:56:46,359 --> 00:56:57,559
+kindergarten level it doesn't mean I want to oversimplify that's not what a simplifier does they're not oversimplifying but what they are doing is identifying the most basic building blocks of a complex
+
+320
+00:56:57,559 --> 00:57:07,599
+problem and then unfolding or revealing or building on top of them additional complexity and details as you go along and
+
+321
+00:57:07,599 --> 00:57:18,799
+so sometimes I talk about a school pyramid but like I need to establish the kindergarten curriculum and then the elementary school curriculum and then the high school curriculum and then the college curriculum and then we can
+
+322
+00:57:18,799 --> 00:57:29,200
+operate at the PHD level but oftentimes people at different you know on the project are at really different levels of understanding or complexity and until we have what we call the school pyramid
+
+323
+00:57:29,200 --> 00:57:41,039
+the curriculums for every level of the project it's really hard to it's really hard to make progress a lot of times that process of simplification will
+
+324
+00:57:41,039 --> 00:57:51,839
+often identify what are the most important things um to deal with on the project and so what I'm hearing is when you come into a project and what the way
+
+325
+00:57:51,839 --> 00:58:01,359
+you simplify is you start putting together a dock that describes these things you're talking about here's the work streams here's the owners here's the process here's our canonical meeting
+
+326
+00:58:01,359 --> 00:58:11,200
+style and that reveals here's what matters most and where there's confusion yes yes yeah that is and a lot of times
+
+327
+00:58:11,200 --> 00:58:21,200
+what needs to happen in the project is some sometimes there's a strategy or an execution issue and sometimes there's a people or
+
+328
+00:58:21,200 --> 00:58:32,359
+a process issue I would say 80% of the time I think it's a people or process issue and that refers to not having the right people on the project or not having the right people but not having the right process by which they work
+
+329
+00:58:32,359 --> 00:58:43,160
+together um a strategy or execution issue when we get to that I first try to tackle those or in general I think it's really important to have perfect
+
+330
+00:58:43,160 --> 00:58:54,039
+execution I want to make sure a project is perfectly executing because only then can we re really re-evaluate whether or not the strategy is right or wrong we're sort of in the the worst of all worlds
+
+331
+00:58:54,039 --> 00:59:04,839
+where we are imperfectly exec in and therefore at the end of the day you know the project might fail but we don't know why is it because the strategy was right
+
+332
+00:59:04,839 --> 00:59:16,079
+or wrong or is it because the execution was poor the ideal case is the strategy was right and you perfectly executed on it the next best case scenario is the strategy was wrong but you perfectly
+
+333
+00:59:16,079 --> 00:59:26,280
+executed on it because then you learned the strategy was wrong revamp the strategy and try again you're really tickling the PM part of my brain I feel like most PMS listening you're like yes
+
+334
+00:59:26,280 --> 00:59:37,760
+clean documents really simple processes a one person in charge links to everything it just feels good totally and I again like sometimes I feel the
+
+335
+00:59:37,760 --> 00:59:48,640
+need to defend that the process is not for process sake it's ultimately to help us all move faster and work better so hopefully that comes through um but I I
+
+336
+00:59:48,640 --> 00:59:58,599
+deeply believe that it is through this approach um that we can move faster and and and I have to you know you have to prove that nobody wants more process and
+
+337
+00:59:58,599 --> 01:00:10,319
+more meetings and more but my goal is that with this we're actually simplifying process and getting less meetings and just making things clearer and ultimately moving faster I'm going to read another quote from another one
+
+338
+01:00:10,319 --> 01:00:21,400
+of your co-workers Charles porch he's vice president of global Partnerships at Instagram and he basically said what we've been talking about some of the biggest strategic bets and biggest swings meta has made have had Naomi at
+
+339
+01:00:21,400 --> 01:00:32,000
+the helm no one can hurt cats Drive Clarity and get to outcomes more seamlessly than she can she's legendary within meta for her canonical
+
+340
+01:00:32,000 --> 01:00:42,599
+documents great if maybe just like following this thread a little bit further what's what's the gnarliest project that you've worked on that would be a good example of you coming in and
+
+341
+01:00:42,599 --> 01:00:54,119
+helping simplify and get it over the Finish Line well Charles you know maybe thinking of the most recent project that we worked on I don't know if it's
+
+342
+01:00:54,119 --> 01:01:06,079
+necessarily the gnarliest but it's one of the most cross functional projects that I've worked on before basically every team at the company in some way works on Youth and uh last week we
+
+343
+01:01:06,079 --> 01:01:15,599
+actually launched teen accounts which was um a very complex project again like it involved the Instagram team the
+
+344
+01:01:15,599 --> 01:01:24,039
+central youth team um the you know different teams working on various aspects of this every function legal
+
+345
+01:01:24,039 --> 01:01:35,880
+policy comes marketing product um and I think we we definitely leveraged a lot of these um these Naomi isms and and
+
+346
+01:01:35,880 --> 01:01:46,680
+just to give you a sense of um what teen accounts is it was basically putting all teens into the safest settings um by
+
+347
+01:01:46,680 --> 01:01:58,599
+default on Instagram and the reason I'm working on this I I work across um multiple teams at Facebook so obviously Adam is the the
+
+348
+01:01:58,599 --> 01:02:10,559
+head of Instagram and I work closely with him on this like I was referring to yesterday but this is something like these teen accounts is something that we are thinking about how we expand to the other apps that we have including
+
+349
+01:02:10,559 --> 01:02:21,079
+Facebook and WhatsApp and and threads and I tend to work on projects that are across our family of apps and future platforms and that's sort of why I was I
+
+350
+01:02:21,079 --> 01:02:32,400
+was involved in this but basically what teen accounts does is put teens in the safest settings it's super focused on trying to address parents biggest concerns around their teens on social media this has obviously been a really
+
+351
+01:02:32,400 --> 01:02:43,640
+big topic we've had a lot of these features and tools what this launch did is simplify things standardize things and add a lot more functionality that gives parents controls I think the the
+
+352
+01:02:43,640 --> 01:02:54,359
+thing you really need to know is that for under 16 year olds if they want to change any of these defaults they're going to have to get their parents permission and so it's it's interesting
+
+353
+01:02:54,359 --> 01:03:06,200
+that you know we're really going going to create an incentive for teens to get their parents involved and to actually set up parental supervision especially because one of the default settings is a private account so there's tens of millions of teens that currently have
+
+354
+01:03:06,200 --> 01:03:17,839
+Public Accounts today that we are going to automatically transition to private accounts unless they get their parents permission to stay public and so that's it's a relatively big um shift a
+
+355
+01:03:17,839 --> 01:03:27,559
+fundamental change for how Instagram Works um for teens and yeah I would say one of the more complic at projects that
+
+356
+01:03:27,559 --> 01:03:39,119
+I've worked on yeah and it just launched right yes um as a as a new father I'm excited for you all to be working on these sorts of things I don't need it yet but I'm glad it's going to be there
+
+357
+01:03:39,119 --> 01:03:49,319
+and it's funny how meta and Facebook is in this world where uh people complain about teens using social media and then you work on making the product better
+
+358
+01:03:49,319 --> 01:03:59,559
+for teens and kids using social media and then it's like Facebook's where getting teens on social media like there's no way to make it feel good to people no matter what you do it's people are going to
+
+359
+01:03:59,559 --> 01:04:09,880
+complain that's what I totally and and I think the the goal of this launch was to orient ourselves and really there's a lot of complaints there's a lot of you
+
+360
+01:04:09,880 --> 01:04:21,200
+know different voices I think we we just are focused on parents we think parents know best every kid is different and parents know their their own kid the best so that is been our North Star in
+
+361
+01:04:21,200 --> 01:04:32,480
+terms of the the approach here when I talk about Teena accounts the as product people I think one thing that you would appreciate is the thing that I think is really important when it comes to teens
+
+362
+01:04:32,480 --> 01:04:43,880
+on the internet is really having an understanding of how old someone is when they're using our apps and it's important that we know how old they are because then we can put them in an age
+
+363
+01:04:43,880 --> 01:04:55,079
+appropriate experience so now we have teen accounts we want to put all teens into teen accounts we all know sometimes teens lie that's sort of been the biggest feedback that we've been getting is teens are really smart they're going to find workarounds they're going to be
+
+364
+01:04:55,079 --> 01:05:06,039
+creative they're going to lie about their age and as a product person the way that I think this should really work is that instead of everyone entering you
+
+365
+01:05:06,039 --> 01:05:16,680
+know teens use on average 40 apps instead of Instagram and the other 39 apps that teens use trying to verify the age of the person using their app it's for two companies to do this which is
+
+366
+01:05:16,680 --> 01:05:27,520
+Apple and Google they do collect the age they should make that available to developers and we ask for information from the device all the time with user sent you know can Instagram have access
+
+367
+01:05:27,520 --> 01:05:39,400
+to your camera can Instagram have access to your location information apps should be able to ask can Instagram have access to your birthday and that would I think sort of
+
+368
+01:05:39,400 --> 01:05:50,760
+elegantly from a product perspective from a simplification perspective from a privacy preserving perspective and what's easiest for parents that would be the the right product solution to solve
+
+369
+01:05:50,760 --> 01:06:02,160
+this problem around age that we're all sort of trying to to grapple with right now and there's a lot of stuff that we're doing part of the reason that this project was so complicated and I mentioned the age team
+
+370
+01:06:02,160 --> 01:06:13,960
+is like we're building classifiers to try to predict how old people are based on um not just the age that they've stated um but you know based on who they're talking to what kind of content
+
+371
+01:06:13,960 --> 01:06:25,720
+they're looking at what the age of the people they're connected to is do we think that this is actually an adult like they say or is it really a teen and so we're doing a lot to try to predict
+
+372
+01:06:25,720 --> 01:06:38,079
+age or prevent people from lying about their age but I think this would be a really big win for the industry uh makes sense to me okay thank you Lenny
+
+373
+01:06:38,079 --> 01:06:49,240
+so to close out this portion in this chapter of our conversation on Naomi Naomi isms I know something else that you're really good at that I've heard from a few people is running meetings something that a lot of people
+
+374
+01:06:49,240 --> 01:06:58,599
+always want to get better at uh any tips what have you learned about running great meeting a meeting is a high value
+
+375
+01:06:58,599 --> 01:07:08,359
+and high cost sort of amount of time and then I want to make sure it says productive as possible um what I will do is send an agenda 24 hours prior to the
+
+376
+01:07:08,359 --> 01:07:19,839
+meeting um that agenda will include a pre-ad um I've talked to people who if the pread is not attached to the calendar invite or like associated with the meeting at least 24 hours in advance
+
+377
+01:07:19,839 --> 01:07:29,960
+they will cancel the meeting um that just goes to show we want everybody in the meeting to have full context have read the pread often what will happen in the previous 24 hours is because we're
+
+378
+01:07:29,960 --> 01:07:33,960
+all sending preadsorption
+
+379
+01:07:55,799 --> 01:08:06,760
+what is being discussed based on like catching up from the visual that's being projected um usually a meeting can be and hopefully a meeting is really either
+
+380
+01:08:06,760 --> 01:08:15,960
+is is a decision meeting so if there is a decision I need three options and I need a recommendation that should hopefully help Focus the meeting um and
+
+381
+01:08:15,960 --> 01:08:26,040
+then like I said I will real time edit the visual such that we document and have extreme Clarity on what is the option that we agreed on and any next
+
+382
+01:08:26,040 --> 01:08:38,000
+steps that we also agreed to after the meeting anyone who wasn't in the meeting that's fine because within 24 hours post meeting I will send the notes reply all to the the meeting invite and send the
+
+383
+01:08:38,000 --> 01:08:49,359
+notes so just like tactically I use the calendar invite as the canonical unit by which to handle all of this communication because a lot of times meetings are one officer isn't
+
+384
+01:08:49,359 --> 01:09:01,239
+an existing sort of email or chat thread that Maps perfectly to the audience of the meeting so for me that is the meeting or the calendar invite so I'll click on the calendar invite reply all
+
+385
+01:09:01,239 --> 01:09:12,080
+include the pre-read pre meeting and then um do this like reply all again post meeting 24 hours with the the notes and the decisions and the next steps I
+
+386
+01:09:12,080 --> 01:09:23,880
+love this so many very specific tactics here uh I love it this is uh food for my brain I love the uh always have three options in recommendation that's such a simple
+
+387
+01:09:23,880 --> 01:09:34,120
+thing to recommend but such a powerful way operating as a PM just like here's the options here's what I recommend here's why oh one one thing I forgot that I learned from guy Rosen he is our
+
+388
+01:09:34,120 --> 01:09:43,839
+chief security officer is when you have three options and a recommendation in terms of evaluating the options I don't love pros and cons it's a flat list of
+
+389
+01:09:43,839 --> 01:09:53,080
+text um it's hard to you know just get a big picture from that often times we'll use a traffic light that means that the
+
+390
+01:09:53,080 --> 01:10:02,840
+three options are three rows the columns in the table will be criteria by which to evaluate the options those could either be functions so for example if I
+
+391
+01:10:02,840 --> 01:10:13,520
+have three options as the rows column one could be the legal perspective column two could be the policy perspective column three could be the privacy or product perspective um
+
+392
+01:10:13,520 --> 01:10:25,480
+alternatively The Columns could map to different criteria like what we're optimizing for so it could be the user experience it could be the engineering feasibility it could be the you know
+
+393
+01:10:25,480 --> 01:10:36,480
+internal complexity whatever whatever are the criteria should be laid out in the columns and then obviously it should be color coded red yellow grein based on how it Stacks up against those criteria
+
+394
+01:10:36,480 --> 01:10:48,400
+and what this allows is to get back to the point of the visual is you can quickly look at the three options see where's the most red and sort of rule that out ideally the recommendation has some combination
+
+395
+01:10:48,400 --> 01:10:59,199
+of like you know the more green or yellow than the other options and then obviously within the cells you can spell out the specific rationale for for The
+
+396
+01:10:59,199 --> 01:11:08,960
+Coloring but I think this is a really good way to to run a meeting and just create extreme Clarity around how you're evaluating the options in a way that
+
+397
+01:11:08,960 --> 01:11:19,719
+like a flat list of pros and cons just doesn't what other podcasts would have this level of detail of how to run a discussion on a decision and this is
+
+398
+01:11:19,719 --> 01:11:31,040
+exactly what people want to hear so I love it says product Market fit for listeners of this podcast I love it I love it and obviously the reason this is more effective is it's
+
+399
+01:11:31,040 --> 01:11:42,080
+not just like here's a quick sentence on the on the pro and con it's like here's what I actually think if this is good or bad or the things that matter to the business kind of sense it also gives
+
+400
+01:11:42,080 --> 01:11:53,320
+people a framework to plug into a lot of times the creation of a pre-read for these discussions involves many different people from many different teams and functions if you have a traffic light they can own filling out
+
+401
+01:11:53,320 --> 01:12:03,320
+their cell they can own the r behind the legal position on option one two and three and in general I'm super into Frameworks that allow people to
+
+402
+01:12:03,320 --> 01:12:14,360
+plug into and and clearly represent their their point of view love it uh final question completely different topic I saw a Wall Street Journal story
+
+403
+01:12:14,360 --> 01:12:25,480
+about how you exercise and your exercise regimen and how important that is to your life and career now most people don't have a Wall Street Journal story about their exercise regimen especially a tech worker and I know this is just
+
+404
+01:12:25,480 --> 01:12:37,040
+important to how you to your work that you and they wrote that this basically helps you become better at your job any advice there for folks that want to I don't know lean into exercise exercise
+
+405
+01:12:37,040 --> 01:12:46,600
+more for how to actually do that because your advice is this actually makes you better at work and life I believe that people are always like what are you training for and I'm like I'm training
+
+406
+01:12:46,600 --> 01:12:57,120
+for life like I I have four myties um it is eat sleep alone time and exercise those are the things that I need in order to perform in the other areas of
+
+407
+01:12:57,120 --> 01:13:08,960
+my life um seems pretty obvious but um until recently I actually did not prioritize sleep my boyfriend is actually super into sleep and we have the eight sleep we have eye masks we
+
+408
+01:13:08,960 --> 01:13:19,920
+have blackout Shades we have like good sleep hygiene um and so I'm getting much better at that but exercise is something that I've always been on top of alone time is also a musty for me because I'm
+
+409
+01:13:19,920 --> 01:13:28,960
+an introvert I need that time to to recharge otherwise I think I get kind of weird around people um in terms of how I
+
+410
+01:13:28,960 --> 01:13:40,280
+prioritize it I um it's sort of a non-negotiable or table Stakes every morning I have to work out um I am also lucky enough to work in an environment
+
+411
+01:13:40,280 --> 01:13:49,760
+where I can wear workout close to work um which I often do I think working out is sure the hour of the day that I'm doing my exercise but I also view like I
+
+412
+01:13:49,760 --> 01:14:01,679
+said um life is is a workout performing at work is a workout I need to be able to I need to feel comfortable it's very physical I think um especially if you're trying really hard to be a conductor and
+
+413
+01:14:01,679 --> 01:14:11,719
+I'm running around with like a metaphorical conductor wand um I need to be able to move um a while ago and that's what the Wall Street Journal
+
+414
+01:14:11,719 --> 01:14:22,840
+article was about I set a goal of doing five pull-ups I'd read somewhere in an article that less than 1% of women can actually do pull-ups I think having a goal is really helpful that's something
+
+415
+01:14:22,840 --> 01:14:34,199
+that I worked on and I anyone can do this truly if you train for it I think it's potentially more technique uh for me than like strength per se and and I
+
+416
+01:14:34,199 --> 01:14:45,239
+worked up towards that goal um I think exercise in addition to all of the physical benefits primarily has a mental health benefit I think for me um and
+
+417
+01:14:45,239 --> 01:14:53,440
+also there just like a lot of lessons that I think I take from exercise so for example I think being able to do five pull-ups sort of taught me I can do hard
+
+418
+01:14:53,440 --> 01:15:04,960
+things um in this sort of really narrow measurable way uh which gave me confidence in other aspects of my life I had a friend who her goal was do one
+
+419
+01:15:04,960 --> 01:15:16,120
+push-up one push-up she's like I want to be able to do one push-up and that was that was really motivating to her and then she finally got there and then she could do more push-ups that's awesome yeah similar uh I have so many notes
+
+420
+01:15:16,120 --> 01:15:27,159
+here as you were talking the other is uh sleep advice so eye mask I have an awesome eye mask that I'll recommend in the show notes it's funny please of all the things I've recommended in all the
+
+421
+01:15:27,159 --> 01:15:38,280
+various places I get the most comments about thank you for this very specific eye mask uh it changed my life it's like a WWA it's one Tim Ferris is often recommended okay uh wo I'll link to it
+
+422
+01:15:38,280 --> 01:15:47,760
+in the show notes but it's oh great wah let me look it up real quick because people are gonna be like oh I gota get it w eye mask the one that we have has sort of
+
+423
+01:15:47,760 --> 01:15:56,920
+cushions around the eyes such that it's um you have it's not flush against your eyes yeah this is the same okay oh great uh
+
+424
+01:15:56,920 --> 01:16:08,679
+W wo aw sleep mask on Amazon it's 13 bucks and amazing my wife and I both sleep with these ey masks and it's ridiculous until you're like I can't
+
+425
+01:16:08,679 --> 01:16:18,280
+sleep without that one now totally well there's a lot of research that even like ambient lighting results in lower quality sleep so I think that's why the blackout Shades and the IM mask just
+
+426
+01:16:18,280 --> 01:16:30,159
+help and sure it's truly dark yeah I was just watching on podcast and the advice there was even like your uh your smoke alarm with a little light is too much light like you need to cover that up to create real
+
+427
+01:16:30,159 --> 01:16:41,199
+darkness and uh why not just wear an ey mask you don't have to worry about any of that totally okay and then one thing I didn't mention when you're talking about the conductor the PM as a conductor
+
+428
+01:16:41,199 --> 01:16:52,360
+that's exactly the metaphor I've always used my entire career when people ask me about what is product manager so we're like really yeah I have all these slides of like here's the piano it's like a symphony and a conductor standing there
+
+429
+01:16:52,360 --> 01:17:04,199
+Lenny do you know how happy that makes me H because I I feel like sometimes people are like that sounds crazy but the the fact that you actually came to that same conclusion makes me like like
+
+430
+01:17:04,199 --> 01:17:13,880
+why why did why why did you come to that conclusion I'm just curious uh because as you said the PM's not like doing the not making the thing they're just
+
+431
+01:17:13,880 --> 01:17:25,280
+helping each of the people who are the most talented at their very specific skill do the best possible work and their back is you know to the audience they're kind of trying to out of the way
+
+432
+01:17:25,280 --> 01:17:36,880
+even though you know they come in everyone claps for them kind of get that yeah and then in theory they could like step in a little bit to help out when you need you know they can pinch hit on like design here and there and
+
+433
+01:17:36,880 --> 01:17:47,560
+research here and there probably not engineering so those are kind of the reasons and you know they're not in charge that you know the violin the chair one violinist is the actual person that's making the music and the best at this
+
+434
+01:17:47,560 --> 01:17:59,000
+thing it's so great to hear somebody else talk about this too thank you and I I think that that is really how I view my role
+
+435
+01:17:59,000 --> 01:18:09,040
+um and what I do and I think maybe just hearing you talk about it reminded me why I think I put so much emphasis on just elevating the people on my team and
+
+436
+01:18:09,040 --> 01:18:19,280
+the people around me and one of the you know sort of candidly one of the development areas for me and and it could be sort of Downstream because I do
+
+437
+01:18:19,280 --> 01:18:31,000
+have this analogy of how to be a PM is that the the growth feedback or the constructive feedback for me is really learning when to leave from the front more maybe when to be less of a quiet
+
+438
+01:18:31,000 --> 01:18:40,960
+conductor that's really elevating the first year violinist um and be more be more front-facing I think a lot
+
+439
+01:18:40,960 --> 01:18:52,520
+of my Approach and my leadership style is really um leading through the people on my team and helping grow them and a lot of times I think that you know they're dedicated they're experts they
+
+440
+01:18:52,520 --> 01:19:03,360
+know you know particular areas obviously as a had a product I manage a portfolio of different projects of which each of them has a incredible leader on it and so
+
+441
+01:19:03,360 --> 01:19:15,040
+oftentimes I'm just really trying to lead from behind and help them be as successful as possible but there are there is a time and a place when when maybe that silent conductor needs to take more of a vocal and and
+
+442
+01:19:15,040 --> 01:19:26,600
+front-facing role I know exactly what you mean I had the same problem when I was at PM because there's always this like fear that PM's in charge and telling everyone to do and so I had the opposite of like okay and that's not me
+
+443
+01:19:26,600 --> 01:19:37,800
+I'm like I'm going to just let you do the things you think are best and I'll just make sure the best ideas come to the surface and I have to learn exactly the same thing sometimes people just want you to point them in the right
+
+444
+01:19:37,800 --> 01:19:48,199
+direction and make the decision in the end and the best PMS are people that have the best opinions about what is going to work have intuition of what users need have strong product sense and
+
+445
+01:19:48,199 --> 01:19:59,000
+all that stuff I've had this post that I'm trying to work on along these lines where there's this kind of reaction to PMS aren't CEO of the product they're just you know like no don't call yourselves that I think it's the
+
+446
+01:19:59,000 --> 01:20:09,239
+opposite I think PMS actually should think of themselves as the CEO of the product not in terms of they are in charge and can fire people and manage people but they're the closest heris for
+
+447
+01:20:09,239 --> 01:20:19,840
+what the CEO and the founder wants they think of what does the business need what is going to help the user the customers what's GNA help us grow and I think the PM is the closest to that role
+
+448
+01:20:19,840 --> 01:20:31,199
+and so I think it's important to think of that role as that even though you're not you know technically in charge yeah and maybe maybe you could call it something different but I I totally agree with that sentiment I think there
+
+449
+01:20:31,199 --> 01:20:42,040
+was some I think we were trying to you know push against the criticism that like PMS were sort of bossing everybody around and like um but I I actually
+
+450
+01:20:42,040 --> 01:20:52,719
+bagage there's baggage there there's baggage there I I call it there's something called the Great non-technical sort of there was a period of time at Facebook where I think we the
+
+451
+01:20:52,719 --> 01:21:02,920
+the PMS really had to prove their value to to the engineers and show that we were actually not slowing things down with all this extra process you can imagine an engineer hearing me talk about like how to run a meeting and all
+
+452
+01:21:02,920 --> 01:21:14,560
+the canonical docks and just be like what this sounds terrible um so yeah there we had to prove that but I really I really like I actually do think the PM
+
+453
+01:21:14,560 --> 01:21:24,880
+is the closest to really channeling what the CEO or the founder um wants and another thing that I've worked on that I am working on is really really
+
+454
+01:21:24,880 --> 01:21:35,960
+developing a much stronger first party perspective like it's not enough for the PM to run this people in process that we talked about obviously I I love that stuff I lean that that way but at the
+
+455
+01:21:35,960 --> 01:21:47,840
+end of the day a PM cannot like Outsource their perspective or delegate their you know their thinking through people in process and so for me that has
+
+456
+01:21:47,840 --> 01:21:58,760
+been a learning curve and I am trying to as someone who's very like sort of consensus driven I want to hear all the different opinions from all the
+
+457
+01:21:58,760 --> 01:22:08,360
+different people I can still do that I can still through people in process talk to all the different uh folks working on a project hear their first-party
+
+458
+01:22:08,360 --> 01:22:20,159
+perspectives and then use all of that to synthesize my own because it will be unique given my role on the team and just sort of what I'm trying to optimize for um and really make sure that I both
+
+459
+01:22:20,159 --> 01:22:31,360
+develop that first- party opinion and communicate it clearly and and like you said said the best PMS I think can do it all just to follow this thread one thread further because this is something I think a lot of product managers work
+
+460
+01:22:31,360 --> 01:22:41,639
+on and are told to work on is there anything you found to be helpful in building this skill in yourself that might be helpful to folks that are working on it I'm lucky enough because
+
+461
+01:22:41,639 --> 01:22:52,120
+sort of have a big team I have someone who helps me schedule my time and I used to goal that person and goal our work together on just being as efficient as
+
+462
+01:22:52,120 --> 01:23:02,080
+possible but now what I am goaling that person and and what we're trying to accomplish here is giving me as much time to develop a first- party point of
+
+463
+01:23:02,080 --> 01:23:12,920
+view and so sort of how do I what what is the most effective way to do that and for me it is having you know two to three hour blocks of time where I can
+
+464
+01:23:12,920 --> 01:23:24,480
+actually sit think have space but maybe something that's different about me than other people is it's very very helpful for me to talk to maybe one or two people not being a big meeting with like
+
+465
+01:23:24,480 --> 01:23:33,239
+40 people sort of trusted people I I have an incredible person on my team that I talk to that I
+
+466
+01:23:33,239 --> 01:23:43,960
+think really helps me clarify my thinking um and so to go back to the beginning just I'm I'm trying to find blocks in my day that I can I can spend
+
+467
+01:23:43,960 --> 01:23:54,520
+time thinking and also within those blocks they don't have to be alone time they can also be scheduling sort of my chief of staff and like my head of data to bounce ideas off of as a sounding board because that is the process that I
+
+468
+01:23:54,520 --> 01:24:05,040
+know works best for me in terms of really developing a first-party perspective such a good tip like it makes sense if you're just spending a lot your day coordinating in meetings uh
+
+469
+01:24:05,040 --> 01:24:16,639
+checking things reviewing things uh you have no time to actually think about what you think is the right move and answer and strategy and next step and so that's a really good tip if you're finding that you're just spending that
+
+470
+01:24:16,639 --> 01:24:28,560
+you don't have time to think about what you think is the right solution and the right strategy and the right product decision Bine just block time to think about this stuff I always try to uh I
+
+471
+01:24:28,560 --> 01:24:38,639
+had these deep work slots in my calendar I written about this a few times where it's three hours and the invite I don't know if you can do this these days but it was just if you book time during the
+
+472
+01:24:38,639 --> 01:24:49,560
+slot I will slap you nobody that's amazing and you know I think for me some people might need three hours on
+
+473
+01:24:49,560 --> 01:25:00,080
+their own I think for me and I don't know about you talking things through with one or two people really helps me as well so sometimes it was it was almost like quite challenging for me to
+
+474
+01:25:00,080 --> 01:25:11,440
+think of going into a room by myself for 3 hours and then I was just going to like figure it out on my own this is like a and and I don't know how I you know how people help people think
+
+475
+01:25:11,440 --> 01:25:20,000
+strategically the best um but it doesn't have to necessarily be alone that's a great tip just have a sparring partner someone like yes is just interested in
+
+476
+01:25:20,000 --> 01:25:31,000
+exploring ideas and not just uh have a clear agenda I love that okay Naomi I love this tangent we went on as we were wrapping up know totally was amazing
+
+477
+01:25:31,000 --> 01:25:42,440
+there was a lot of good stuff that we covered there but I know you have to run so before we get to a very exciting lightning round is there anything else that we haven't covered that you wanted to cover or share I think honestly I
+
+478
+01:25:42,440 --> 01:25:51,760
+think I just did it I didn't even realize I wanted to talk about that but it just all came out I love it I love that those are the best nuggets with that we've reached our very exciting
+
+479
+01:25:51,760 --> 01:26:03,159
+lightning round are you ready and ready first question what are two or three books that you've recommended most to other people I really love narrative non-fiction so I like the Eric Larsson
+
+480
+01:26:03,159 --> 01:26:13,840
+books they're a very compelling and page- turning way to learn about history um I recently read Devil in the White City and um there is also one about
+
+481
+01:26:13,840 --> 01:26:24,679
+Churchill's first year by Eric Larson um another book that you know just the canonical the canonical book that I often recommend is sapiens I think he's a great example of what we talk about
+
+482
+01:26:24,679 --> 01:26:36,360
+when we talk about simplifiers he took a very complex subject which is all of human history and tried to pull out the Nuggets you know I think his thesis that
+
+483
+01:26:36,360 --> 01:26:47,719
+what differentiates humans from other forms of life is really our ability to tell and believe in myths or stories and he cites money and religion as examples
+
+484
+01:26:47,719 --> 01:26:57,239
+um but also there's a graphic version graphic novel version of sapiens and so he almost has like the PHD level and then he literally has like the high school level which is a graphic novel
+
+485
+01:26:57,239 --> 01:27:06,719
+version he also has like Unstoppable us which I think is a kids version and so clearly here is someone who is a a
+
+486
+01:27:06,719 --> 01:27:17,880
+master there's like a James Clear um thing that a friend Shirley told me about where it's like if you're a beginner you have like ignorant Simplicity and intermediate has like
+
+487
+01:27:17,880 --> 01:27:28,840
+functional complexity and then like a master of a topic has profound Simplicity and that's what I feel like know what you've all heard Ferrari really has because he can go all the way up and down the school pyramid in terms
+
+488
+01:27:28,840 --> 01:27:40,520
+of explaining this really complex topic what I heard about him is that he goes on a one month Meditation Retreat every year where it's just him silent Meditation Retreat and people ask him how do you have time to do that when you
+
+489
+01:27:40,520 --> 01:27:49,600
+have so much work to do he's like the only way I'm able to achieve these books where I synthesize all of human history into a story is because I do that
+
+490
+01:27:49,600 --> 01:28:00,400
+because I can clear my mind and just be and Lenny to our pre conversation that is how he himself and like is best that's what he needs to do
+
+491
+01:28:00,400 --> 01:28:12,360
+you know I might need two to three hours a day and a sparring partner no you all her already needs a month in silent meditation great Point everyone has their own their own way of unlocking their brain uh on Devil in the White
+
+492
+01:28:12,360 --> 01:28:23,600
+City uh fun fact when I read that I was like I need to go to Chicago and see the stuff that they wrote about in this book about the World's Fair and so went to Chicago and you did because of that book
+
+493
+01:28:23,600 --> 01:28:35,199
+yes Wow have you read The Splendid and the vial yes that was the uh about the telegram right yeah right oh no there church's first year but um you know he
+
+494
+01:28:35,199 --> 01:28:43,639
+has like six books I haven't read all of them okay I think it was you that one it was something about a telegram I did read it was less good though was what I find I found the devil no city was the
+
+495
+01:28:43,639 --> 01:28:54,520
+best was the best uh amazing okay we'll keep going second question do you have a favorite movie or TV show you've recently watched that you really enjoyed we just watched Shogun I thought it was
+
+496
+01:28:54,520 --> 01:29:05,000
+really good have you seen it I have uh yes I loved it very uh gruesome but amazing yeah yeah it was I had to cover my eyes for some of it and then we also
+
+497
+01:29:05,000 --> 01:29:15,159
+the movie that we just watched was June 2 Chris Cox who's our chief product officer actually recommended that as one of the you know best films that he's seen recently and I really trust his
+
+498
+01:29:15,159 --> 01:29:26,440
+opinion on that so we caught up by watching Dune one and then watched June two and it was really good I watched that in IMAX theater in San Francisco there like insanely large screen and
+
+499
+01:29:26,440 --> 01:29:37,920
+highly recommend that I don't know if they I don't think it's still out there yeah mov is ridiculous amazing um I think there's another one coming someday oh yeah yeah June three June three I'm
+
+500
+01:29:37,920 --> 01:29:47,760
+just yeah just keep them coming next question do you have a favorite product you recently discovered that you really love so well I'm going to check out that IM mask that you
+
+501
+01:29:47,760 --> 01:29:59,600
+recommended the wah wo thing um but I know it's super expensive but have you you tried to eight sleep I have my wife uh doesn't love it she doesn't like the
+
+502
+01:29:59,600 --> 01:30:11,520
+no it's like a very slight noise when it you know starts up but she wakes her up so we don't have it anymore I yeah and I noticed that too I think maybe the the they just released like the latest
+
+503
+01:30:11,520 --> 01:30:20,800
+edition um one of the features that is the killer feature for me is that it does a vibrating alarm so that when I wake up at 6:00 a.m.
+
+504
+01:30:20,800 --> 01:30:23,480
+I do not wake up everyone in the house at 6:00 a.m.
+
+505
+01:30:23,480 --> 01:30:35,040
+and so it's just it's a thermal alarm it makes the bed on my side hotter and it also slightly vibrates underneath my ear to wake me up it's under your ear I remember vibrating the whole my whole
+
+506
+01:30:35,040 --> 01:30:46,159
+part of the bed I wonder if that's a new feature maybe this is like you're I'm on version three maybe there's a version four I don't know maybe that was version one man that's so funny um a nice thing
+
+507
+01:30:46,159 --> 01:30:55,679
+about my life right now is that because I have no meetings or boss I don't need an alarm however it's amazing however have a young kid and he wakes up at 6:00 to
+
+508
+01:30:55,679 --> 01:31:07,000
+6:30 so that's my alarm usually oh and then the other thing I wanted to mention um I don't know if you have this problem but I'm like I'm trying to get like a 100 grams of protein every day I think a
+
+509
+01:31:07,000 --> 01:31:18,880
+lot of my friends and I are sort of you know focused on protein consumption right now and so my trainer who helped me actually do the pull-ups and the push-ups um started a protein uh comp
+
+510
+01:31:18,880 --> 01:31:28,360
+protein powder company protein Products company called promix that I really love and he has like this Rice Krispie Treat thing that I usually eat every morning
+
+511
+01:31:28,360 --> 01:31:39,880
+and gives me 15 grams of protein I just bought that what yes I was reading Kevin Rose had a his favorite his like Health stack and uh I don't know if that's the
+
+512
+01:31:39,880 --> 01:31:51,360
+brand but it's exactly a Rice Krispie thing with 15 grams of proteins I'm pretty sure that's it I'm pretty sure that's it because the rice krispy PE part of it is is very unique so let me let me know what you think I really like
+
+513
+01:31:51,360 --> 01:32:01,880
+the chocolate chip flavor them and I love them so I just saw a funny Tik Tok where it's like I never thought when I'd grow up and be an adult I'd be sing thinking so often about protein and how much protein
+
+514
+01:32:01,880 --> 01:32:12,480
+I should be eating maybe is this like Maybe This is 40 I don't know I I'm not sure for me but yes I've been thinking a lot about protein the other thing I I
+
+515
+01:32:12,480 --> 01:32:21,159
+really like is canned seafood which has a lot of protein um so something called fish wife has like just sort of um
+
+516
+01:32:21,159 --> 01:32:32,320
+hipster like oh yeah very cute yes my wife gets those another protein tip they were a former sponsor but no longer but it's an amazing protein tip uh Maui
+
+517
+01:32:32,320 --> 01:32:42,360
+newie venison uh beef sticks it's 10 grams of protein and it's a delicious venison beef stick thank you there we go look at what we've become Lenny just
+
+518
+01:32:42,360 --> 01:32:53,719
+protein sessed just gonna be so protein Rich amazing okay what else we got here okay two more questions do you have a favorite life motto that you often come
+
+519
+01:32:53,719 --> 01:33:03,840
+back back to and find helpful and worker in life last month we were watching or I guess like two weeks ago we're were watching the US Open and we discovered
+
+520
+01:33:03,840 --> 01:33:15,239
+that as people come through the hallway to come onto the court to play the players all passed the Billy Jean King sign that says pressure is privilege and
+
+521
+01:33:15,239 --> 01:33:26,920
+I really loved that because I think just sort of with the Tina counts launch um and just like a lot of the more public
+
+522
+01:33:26,920 --> 01:33:36,719
+facing stuff that I have done recently I I do like we talked about get um nervous and I think pressure is privilege just reminds me that a lot of this stuff is a
+
+523
+01:33:36,719 --> 01:33:45,480
+really incredible opportunity that I that I have and to be grateful for it I can still be nervous but also recognize
+
+524
+01:33:45,480 --> 01:33:56,440
+um and be grateful for it I love that just the remind yourself that you're lucky to be feeling this pressure because that means something is important slightly different version of that is
+
+525
+01:33:56,440 --> 01:34:08,960
+Zuck at the event in the chase Center that you were also at had the shirt that said in learning through suffering learning through suffering perfect
+
+526
+01:34:08,960 --> 01:34:18,960
+learning through suffering I I really I like that one too um I mean it's been I think he was you know he spoke a little bit about this
+
+527
+01:34:18,960 --> 01:34:30,199
+being an entrepreneur is really really hard yeah they had the Jensen line about people asked him if he'd start Nvidia again and his answer was like if I knew how insanely hard and stressful this was
+
+528
+01:34:30,199 --> 01:34:40,719
+I would not very very honest okay last question so Charles your former colleague told me that
+
+529
+01:34:40,719 --> 01:34:50,119
+you're an incredible Surfer oh and that you design your life almost around where and when you can go surf yeah any story
+
+530
+01:34:50,119 --> 01:35:00,480
+or lesson or I don't know take away from surfing and the impact that's had on you lessons about surfing so um I think
+
+531
+01:35:00,480 --> 01:35:12,080
+surfing and life have a lot of parallels it is an incredibly mental sport for me um the biggest thing that I can do to improve my surfing is to improve my
+
+532
+01:35:12,080 --> 01:35:22,920
+confidence and so when I'm going for a wave a lot of times I will hesitate or pull back or you know instead the best thing that you can actually do in that
+
+533
+01:35:22,920 --> 01:35:33,199
+situation is stand up into your fear like is to to ride the wave that is the safest thing you can do that is the you know thing that you're actually supposed to do but on every Dimension that's the
+
+534
+01:35:33,199 --> 01:35:44,000
+right thing and so it's almost I guess the motto there is stand up into the fear um when you're going You're about to catch a wave um and actually the
+
+535
+01:35:44,000 --> 01:35:55,560
+things that you can do when you're afraid for example like I said pull back or like throw your board are actually quite counterproductive and actually unsafe could lead to more more injury
+
+536
+01:35:55,560 --> 01:36:05,719
+and so it's just another reminder that um you really need to commit and stand up into your fear I love it stand up
+
+537
+01:36:05,719 --> 01:36:16,760
+into your fear and pressure is a privilege and learning through suffering Naomi this was so much fun I'm so happy that you agreed to do this two final questions work can folks find you on line where they find Naomi isms and
+
+538
+01:36:16,760 --> 01:36:28,000
+anything else you want to point folks to and how can listeners be useful to you so um believe it or not I have Naomi I know BOS has bos.com I bought that um
+
+539
+01:36:28,000 --> 01:36:38,480
+URL I think maybe 20 years ago 15 to 20 years ago from a farmer actually whose name was Naomi and or whose wife's name was Naomi rather and his wife was not
+
+540
+01:36:38,480 --> 01:36:48,960
+using it and so they got it for quite quite a steal and I will just say that I've had other F like you know famous Naomi is much more famous than much more
+
+541
+01:36:48,960 --> 01:36:59,840
+wellknown than I who would would like to have naom me.com make offers for this your but I I really like having um just sort of a home on the internet where I can put my Naomi isms they're also
+
+542
+01:36:59,840 --> 01:37:11,480
+available on Instagram Naomi light um how can listeners be useful to you I think Lenny I mentioned this before we got on the call I don't tend to do that much sort of public speaking or talking
+
+543
+01:37:11,480 --> 01:37:23,239
+about naism I did some of it two years ago when we first launched but um I as a result of being on the podcast and step would love to do more of this and so I think any feedback on what listeners
+
+544
+01:37:23,239 --> 01:37:35,000
+would like to see or hear from me questions that would sort of Give Me A Reason where I felt like um it would be useful for me to to do more on Naomi
+
+545
+01:37:35,000 --> 01:37:44,320
+isms would be super helpful sweet so if you have any of those leave them in the YouTube comments is usually the easiest place for folks to leave that Naomi thank you so much for being here this
+
+546
+01:37:44,320 --> 01:37:54,800
+was so much fun thank you Lenny bye everyone thank you so much for listening if you found this valuable you can subscribe to the show on Apple podcast
+
+547
+01:37:54,800 --> 01:38:06,199
+Spotify or your favorite podcast app also please consider giving us a rating or leaving a review as that really helps other listeners find the podcast you can find all past episodes or learn more
+
+548
+01:38:06,199 --> 01:38:13,080
+about the show at Lenny podcast.com see you in the next episode

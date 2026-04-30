@@ -1,0 +1,2573 @@
+1
+00:00:02,760 --> 00:00:05,440
+Today I am excited to bring 
+you a very special episode,  
+
+2
+00:00:05,440 --> 00:00:10,360
+which was recorded live at Figma Config 
+with Figma CEO and co-founder, Dylan Field,  
+
+3
+00:00:10,360 --> 00:00:15,280
+in front of a live audience at the Moscone 
+Center in San Francisco. This is the first  
+
+4
+00:00:15,280 --> 00:00:20,000
+ever live recording of this podcast and it 
+was so much fun. If you watch this on YouTube,  
+
+5
+00:00:20,000 --> 00:00:24,440
+you can see the epic stage that they built 
+specifically for us to recreate my podcast  
+
+6
+00:00:24,440 --> 00:00:28,520
+studio. I could not be more thankful to 
+the Config team for making this happen. 
+
+7
+00:00:28,520 --> 00:00:33,000
+In my conversation with Dylan, we dig into 
+how he builds and refines his product taste  
+
+8
+00:00:33,000 --> 00:00:38,880
+and intuition, how intuition is a hypothesis 
+generator, the future of product management.  
+
+9
+00:00:38,880 --> 00:00:43,480
+How Dylan attempts to operationalize keeping 
+Figma simple and to continue simplifying the  
+
+10
+00:00:43,480 --> 00:00:48,160
+experience. A bunch of stories from the early 
+days of Figma that I've never heard before. Also,  
+
+11
+00:00:48,160 --> 00:00:53,560
+he shares his favorite AI tool called websim, 
+which is wild. And if you wait till the very end,  
+
+12
+00:00:53,560 --> 00:01:00,000
+you can see a very young child actor Dylan Field 
+in a clip that I found online that was hilarious. 
+
+13
+00:01:00,000 --> 00:01:03,320
+If you enjoy this podcast, don't forget to 
+subscribe and follow it in your favorite  
+
+14
+00:01:03,320 --> 00:01:07,000
+podcasting app or YouTube. It's the best 
+way to avoid missing future episodes and  
+
+15
+00:01:07,000 --> 00:01:12,520
+it helps the podcast tremendously. 
+With that, I bring you Dylan Field. 
+
+16
+00:01:12,520 --> 00:01:16,520
+Dylan, thank you so much for joining 
+me and welcome to the podcast.
+
+17
+00:01:16,520 --> 00:01:18,440
+Thank you, Lenny.
+
+18
+00:01:18,440 --> 00:01:21,320
+Hi all.
+
+19
+00:01:22,440 --> 00:01:24,120
+Is this your first live podcast?
+
+20
+00:01:24,120 --> 00:01:28,240
+This is my first ever live podcast. 
+Also, a big thank you to the Config  
+
+21
+00:01:28,240 --> 00:01:32,320
+team who set up this crazy studio. I had 
+no idea this was going to happen. I feel  
+
+22
+00:01:32,320 --> 00:01:37,040
+like I'm in my studio here with a thousand 
+people watching us. It's very impressive.  
+
+23
+00:01:37,040 --> 00:01:40,560
+I very much dig the background and also 
+the mics that may or may not be wired.
+
+24
+00:01:40,560 --> 00:01:42,440
+That's right. Don't say that. Don't tell people.
+
+25
+00:01:42,440 --> 00:01:43,880
+Oh, sorry.
+
+26
+00:01:43,880 --> 00:01:45,760
+There's no wires coming out of them.
+
+27
+00:01:45,760 --> 00:01:51,640
+There's no one behind the curtain either. Okay, 
+so Dylan, I want to start by just checking in on  
+
+28
+00:01:51,640 --> 00:01:57,760
+how you're doing. So Config is about to wrap up. 
+We've been at it for two days now. I know how much  
+
+29
+00:01:57,760 --> 00:02:01,240
+lift goes into doing these sorts of things. I 
+imagine you've been thinking about this for a  
+
+30
+00:02:01,240 --> 00:02:06,080
+long time now. I'm just curious how you're doing, 
+any surprises, any highlights, any low lights?
+
+31
+00:02:06,080 --> 00:02:10,960
+The highlight is the community and just 
+the incredible, incredible people here at  
+
+32
+00:02:10,960 --> 00:02:18,920
+Config. Y'all are awesome. I don't know 
+why I keep talking in the mic like this.  
+
+33
+00:02:18,920 --> 00:02:24,600
+It's instinctual. But seriously, it's just 
+the most amazing community to be part of  
+
+34
+00:02:24,600 --> 00:02:29,840
+and I feel so lucky. And then in terms 
+of how I'm doing at this exact moment,  
+
+35
+00:02:31,160 --> 00:02:36,480
+exhausted, but riding on caffeine and 
+whatever this really cool probiotic drink is.
+
+36
+00:02:36,480 --> 00:02:39,560
+Any surprises from the past couple of 
+days? Anything that's like, "Oh wow,  
+
+37
+00:02:39,560 --> 00:02:42,840
+that went a lot better than 
+I thought, maybe less well."
+
+38
+00:02:44,520 --> 00:02:54,640
+Demo, definitely things I would've improved. But 
+also Emil and Mihika were phenomenal, and it was  
+
+39
+00:02:54,640 --> 00:03:01,840
+just so awesome to see them do their demos and 
+present materials. I was just really pleased  
+
+40
+00:03:01,840 --> 00:03:11,400
+with the conversation, I think, that's getting 
+started at Config around AI. I was looking online  
+
+41
+00:03:11,400 --> 00:03:16,800
+on social media and I think people are already 
+zeroing in the right conversation, which is, okay,  
+
+42
+00:03:16,800 --> 00:03:28,840
+in a world of more software being created by AI, 
+what does that mean and the impact on craft and  
+
+43
+00:03:28,840 --> 00:03:38,000
+the impact on quality and the need to have more 
+unique design and how design is a differentiator. 
+
+44
+00:03:38,000 --> 00:03:41,720
+And I think some people are saying, "I agree with 
+that." Some people are saying, "That I disagree  
+
+45
+00:03:41,720 --> 00:03:48,280
+with that", and that's exactly the bounds of 
+what the conversation I imagined would emerge  
+
+46
+00:03:48,280 --> 00:03:55,640
+from yesterday. It was funny, the make design 
+feature, I think that I said on the keynote,  
+
+47
+00:03:55,640 --> 00:04:02,120
+I was like, "This is going to give you the most 
+obvious thing in the most obvious form possible."  
+
+48
+00:04:02,120 --> 00:04:10,440
+And then people online are like, "It's just 
+going to give you some obvious thing." I agree.
+
+49
+00:04:10,440 --> 00:04:15,560
+This episode is brought to you by WorkOS. If 
+you're building a SaaS app, at some point your  
+
+50
+00:04:15,560 --> 00:04:20,920
+customers will start asking for enterprise 
+features like SAML authentication and skim  
+
+51
+00:04:20,920 --> 00:04:26,600
+provisioning. That's where WorkOS comes in, making 
+it fast and painless to add enterprise features to  
+
+52
+00:04:26,600 --> 00:04:31,200
+your app. Their APIs are easy to understand 
+so that you can ship quickly and get back  
+
+53
+00:04:31,200 --> 00:04:35,880
+to building other features. Today, hundreds 
+of companies are already powered by WorkOS,  
+
+54
+00:04:36,640 --> 00:04:43,560
+including ones you probably know like Versal, 
+Webflow and Loom. WorkOS also recently acquired  
+
+55
+00:04:43,560 --> 00:04:49,560
+Warrant, the fine-grained authorization service. 
+Warrant's product is based on a groundbreaking  
+
+56
+00:04:49,560 --> 00:04:54,720
+authorization system called Zanzibar, which 
+was originally designed for Google to power  
+
+57
+00:04:54,720 --> 00:05:00,040
+Google Docs and YouTube. This enables fast 
+authorization checks at enormous scale  
+
+58
+00:05:00,040 --> 00:05:04,800
+while maintaining a flexible model that can be 
+adapted to even the most complex use cases. If  
+
+59
+00:05:04,800 --> 00:05:09,800
+you're currently looking to build role-based 
+access control or other enterprise features  
+
+60
+00:05:09,800 --> 00:05:16,000
+like single sign-on, skim or user management, you 
+should consider WorkOS. It's a drop-in replacement  
+
+61
+00:05:16,000 --> 00:05:21,920
+for Auth0 and supports up to one million 
+monthly active users for free. Check it out  
+
+62
+00:05:21,920 --> 00:05:31,960
+at workos.com to learn more. That's workos.com.
+This episode is brought to you by Anvil. Their  
+
+63
+00:05:31,960 --> 00:05:38,520
+Document SDK helps product teams build and launch 
+software for documents fast. Companies like Carta  
+
+64
+00:05:38,520 --> 00:05:43,880
+and Vouch Insurance use Anvil to accelerate the 
+development of their document workflows. Getting  
+
+65
+00:05:43,880 --> 00:05:49,320
+to market fast is a top priority for product teams 
+and the last thing that you or your developers  
+
+66
+00:05:49,320 --> 00:05:54,600
+want is to build document workflows from scratch. 
+It's time-consuming, expensive and distracts  
+
+67
+00:05:54,600 --> 00:05:59,800
+from core work. You could stitch together 
+multiple tools and manage those integrations  
+
+68
+00:05:59,800 --> 00:06:05,960
+or you can use an all-in-one Document SDK.
+Most product managers will tell you paperwork  
+
+69
+00:06:05,960 --> 00:06:12,280
+sucks. Anvil's Document SDK helps teams get to 
+market fast, incorporate your brand style and  
+
+70
+00:06:12,280 --> 00:06:18,040
+give you back time to focus on your company's core 
+differentiated features. For your users, paperwork  
+
+71
+00:06:18,040 --> 00:06:22,920
+often starts with an AI powered Webform styled 
+and embedded in your application. From there,  
+
+72
+00:06:22,920 --> 00:06:27,960
+you can route data to your backend systems 
+and to the correct fields in your PDFs via  
+
+73
+00:06:27,960 --> 00:06:34,160
+API. Complete the process with a white labeled 
+e-signature. The best part about Anvil is the  
+
+74
+00:06:34,160 --> 00:06:39,200
+level of customization their SDK provides. 
+Non-technical folks love Anvil's Drag and  
+
+75
+00:06:39,200 --> 00:06:45,640
+Drop builder and developers love their flexible 
+APIs and easy to understand documentation. Build  
+
+76
+00:06:45,640 --> 00:06:49,320
+documents software fast with Anvil. That's 
+useanvil.com/lenny to learn more or start a  
+
+77
+00:06:49,320 --> 00:07:00,280
+free trial. That's use-A-N-V-I-L.com/lenny.
+Let's keep talking about design. You once  
+
+78
+00:07:00,280 --> 00:07:06,080
+said that the definition of design is art 
+applied to problem solving. Can you just  
+
+79
+00:07:06,080 --> 00:07:09,400
+add a bit more to that? What do you mean 
+by that? Because that's an amazing line.
+
+80
+00:07:09,400 --> 00:07:12,200
+Well, I don't think it's my original 
+line. I think someone else said it,  
+
+81
+00:07:12,200 --> 00:07:16,680
+but there's a lot of definitions of design out 
+there too. There's also 'design is dialogue'  
+
+82
+00:07:16,680 --> 00:07:21,960
+or 'design is problem solving'. You just go 
+straight there. I could go with 10 more. But  
+
+83
+00:07:24,360 --> 00:07:30,720
+I like art applied to problem solving because 
+I think that design is often... There is some  
+
+84
+00:07:30,720 --> 00:07:36,360
+component of creativity to it and unique 
+expression that you're trying to provide  
+
+85
+00:07:36,360 --> 00:07:42,440
+and create and put out into the world. But you are 
+also trying to do it and match it to a user need,  
+
+86
+00:07:42,440 --> 00:07:49,320
+a problem that needs to be solved. 
+And I think that it's not pure art,  
+
+87
+00:07:50,440 --> 00:07:55,760
+but if you lose the art and you're just 
+solving the problem, it's totally utilitarian  
+
+88
+00:07:55,760 --> 00:08:02,840
+and it lacks soul. And so the combination of 
+those two things is to me really beautiful.
+
+89
+00:08:02,840 --> 00:08:06,280
+I'm going to pivot to a very hard hitting 
+question. I hope your PR people don't kill  
+
+90
+00:08:06,280 --> 00:08:10,800
+me for asking this. Many people asked me 
+to ask you this question. Very important.  
+
+91
+00:08:10,800 --> 00:08:16,560
+Please explain a Figma tradition 
+called raccoon feet and muffin hands.
+
+92
+00:08:21,000 --> 00:08:26,800
+I should probably just leave this interview 
+now. So this is a conversation, I'm not sure  
+
+93
+00:08:26,800 --> 00:08:31,040
+exactly where it started, but it started in early 
+Figma. And basically we had these lunch tables at  
+
+94
+00:08:31,040 --> 00:08:37,240
+Figma where we would just all gather and have 
+very long, interesting meandering conversations  
+
+95
+00:08:37,240 --> 00:08:43,120
+before we got back to work. And one of the 
+questions that, was a 'would you rather',  
+
+96
+00:08:43,120 --> 00:08:51,360
+was would you rather have raccoons for feet or 
+muffins for hands? And I think this is a deeply  
+
+97
+00:08:51,360 --> 00:08:59,440
+philosophical question. I have pondered it since 
+I've heard it. I still don't have one answer.  
+
+98
+00:09:00,040 --> 00:09:02,000
+If you've got an answer, I'm curious what it is.
+
+99
+00:09:02,000 --> 00:09:06,800
+I've got follow up questions. Can 
+you control where the raccoon take  
+
+100
+00:09:06,800 --> 00:09:09,440
+you or are they just deciding 
+on their own what's happening?
+
+101
+00:09:09,440 --> 00:09:14,040
+I think that raccoons probably wouldn't 
+even agree with each other where to go.
+
+102
+00:09:14,040 --> 00:09:15,640
+Okay, that's complicated.
+
+103
+00:09:16,520 --> 00:09:21,400
+If you had raccoons for feet right now, do you 
+think that it would interfere with this podcast?
+
+104
+00:09:21,400 --> 00:09:25,600
+But muffin hands would also interfere with my 
+newsletter and I feel like I'd be out of work.
+
+105
+00:09:25,600 --> 00:09:26,600
+I don't know if you can type.
+
+106
+00:09:26,600 --> 00:09:29,360
+I'd need a special keyboard. 
+This is very difficult.
+
+107
+00:09:29,360 --> 00:09:33,400
+You haven't even thought 
+about the upsides of this yet.
+
+108
+00:09:33,400 --> 00:09:34,640
+What are the upsides?
+
+109
+00:09:34,640 --> 00:09:36,000
+We can get there, it's all-
+
+110
+00:09:36,000 --> 00:09:36,871
+Maybe I could eat some of the muffins.
+
+111
+00:09:36,871 --> 00:09:37,560
+It's the case for optimism.
+
+112
+00:09:37,560 --> 00:09:38,640
+Cupcakes?
+
+113
+00:09:38,640 --> 00:09:41,600
+If you have muffins for hands, 
+maybe if you're hungry...
+
+114
+00:09:41,600 --> 00:09:43,600
+Do they regenerate as you you eat them?
+
+115
+00:09:43,600 --> 00:09:49,640
+That's a good question. There's no answers 
+here, just questions. Do your nails grow?
+
+116
+00:09:49,640 --> 00:09:50,160
+Yes.
+
+117
+00:09:50,160 --> 00:09:55,680
+Oh, okay. Interesting. It's 
+deeper than you might think.
+
+118
+00:09:58,120 --> 00:10:01,640
+I'm going to play a short clip 
+with Rick Rubin and then I have  
+
+119
+00:10:01,640 --> 00:10:06,040
+a question about it. So we'll see if that plays.
+
+120
+00:10:06,040 --> 00:10:12,400
+But exactly what he does and how is difficult 
+to describe. Do you play instruments?
+
+121
+00:10:12,400 --> 00:10:13,200
+Barely.
+
+122
+00:10:13,200 --> 00:10:15,680
+Do you know how to work a soundboard?
+
+123
+00:10:15,680 --> 00:10:20,440
+No. I have no technical ability 
+and I know nothing about music.
+
+124
+00:10:20,440 --> 00:10:22,400
+Then you must know something.
+
+125
+00:10:22,400 --> 00:10:24,840
+Well, I know what I like and what I don't like.  
+
+126
+00:10:24,840 --> 00:10:29,120
+And I'm decisive about what 
+I like and what I don't like.
+
+127
+00:10:29,120 --> 00:10:31,400
+So what are you being paid for?
+
+128
+00:10:31,400 --> 00:10:37,160
+The confidence that I have in my taste and my  
+
+129
+00:10:37,160 --> 00:10:44,840
+ability to express what I feel 
+has proven helpful for artists.
+
+130
+00:10:44,840 --> 00:10:51,280
+So I'm not going to say this is you. You 
+need to grow the beard. But I think this  
+
+131
+00:10:51,280 --> 00:10:53,440
+is a little bit you because what 
+I've heard from a number of your  
+
+132
+00:10:53,440 --> 00:10:59,480
+colleagues is that one of your superpowers 
+is intuition and product taste. And someone  
+
+133
+00:10:59,480 --> 00:11:03,120
+said that you have the sixth sense for what's 
+going to work, when you're designing Figma  
+
+134
+00:11:03,120 --> 00:11:07,880
+and you're making decisions in the product. 
+So I'm curious how you've built and refined  
+
+135
+00:11:07,880 --> 00:11:12,960
+your intuition and product taste when 
+it comes to Figma and then even broadly.
+
+136
+00:11:12,960 --> 00:11:15,840
+That's a lot kinder than I thought you were 
+going to be. I thought you're going to be like,  
+
+137
+00:11:15,840 --> 00:11:17,880
+"You don't know how to code and 
+you don't know how to design."
+
+138
+00:11:17,880 --> 00:11:18,320
+No.
+
+139
+00:11:19,200 --> 00:11:26,760
+But no, here's my framework for it. I 
+think intuition is like a hypothesis  
+
+140
+00:11:26,760 --> 00:11:32,720
+generator and you're constantly generating 
+these hypotheses and others are generating  
+
+141
+00:11:32,720 --> 00:11:37,720
+hypotheses as well. And you then take these 
+hypotheses and you put them forward and you  
+
+142
+00:11:37,720 --> 00:11:42,120
+debate them and you try to find data to 
+support them or negate them. And then  
+
+143
+00:11:42,120 --> 00:11:48,360
+you winnow it down into what is our working 
+hypothesis? And from that you move forward.
+
+144
+00:11:48,360 --> 00:11:52,760
+I heard that you read every tweet that 
+mentions Figma and share them with folks.  
+
+145
+00:11:52,760 --> 00:11:55,920
+There's a Slack channel where you paste them. 
+I imagine that is a part of this where you're  
+
+146
+00:11:55,920 --> 00:12:00,160
+just constantly watching what people are saying 
+about Figma, what people are complaining about.
+
+147
+00:12:00,160 --> 00:12:08,320
+I definitely look everywhere trying to 
+constantly ingest information about Figma,  
+
+148
+00:12:08,320 --> 00:12:15,960
+and it's not just Twitter/X, whatever that's 
+called now, but anywhere on the internet,  
+
+149
+00:12:15,960 --> 00:12:24,640
+support channels, et cetera. And I'm always 
+trying to understand. I also ask a lot of  
+
+150
+00:12:24,640 --> 00:12:31,800
+questions and I try to get to root problems 
+and understand where people are coming from  
+
+151
+00:12:31,800 --> 00:12:37,000
+and what are they actually trying to solve. 
+Sometimes people are saying, "Hey, I need X",  
+
+152
+00:12:37,000 --> 00:12:44,600
+but they really want Y or Z. And trying to do that 
+myself and engage and dive deeper there, but also  
+
+153
+00:12:44,600 --> 00:12:51,680
+to encourage our team to do that, I think leads 
+to really good outcomes in terms of what we ship.
+
+154
+00:12:51,680 --> 00:12:57,640
+Is there something you've changed your mind 
+about, building on that, either based on customer  
+
+155
+00:12:57,640 --> 00:13:01,880
+feedback or some employee just making a case and 
+like, "Okay, you're right." Is there something  
+
+156
+00:13:01,880 --> 00:13:07,960
+that comes to mind of something you've changed 
+your mind about recently? Somebody said Flides.
+
+157
+00:13:07,960 --> 00:13:16,760
+For when we started out Flides. I have not. 
+It's Figma Slides. Well, it's not recent,  
+
+158
+00:13:16,760 --> 00:13:22,640
+but one good example of me changing my mind is 
+that you all have Pages in Figma, you're welcome.  
+
+159
+00:13:23,760 --> 00:13:34,840
+But I think I have deep skepticism of Pages still. 
+I'm not sure they're... If you could freeze time  
+
+160
+00:13:34,840 --> 00:13:41,480
+and I could just go in with my team, work on Figma 
+for a very long time, I'm not sure we'd come to  
+
+161
+00:13:41,480 --> 00:13:47,800
+the same implementation of Pages that we are at 
+today. I just don't think it's the most elegant  
+
+162
+00:13:47,800 --> 00:13:54,160
+solution in the context of the entire system of 
+product design that you could create. The world  
+
+163
+00:13:54,160 --> 00:14:00,360
+told me and our team that that did not matter 
+and they needed Pages. And don't worry, we're not  
+
+164
+00:14:00,360 --> 00:14:11,120
+shipping Pages. But I am still very skeptical of 
+them and I think that in general, probably my team  
+
+165
+00:14:11,120 --> 00:14:22,880
+would tell you that I don't always change my mind, 
+but I also build trust with people in deep ways. 
+
+166
+00:14:22,880 --> 00:14:31,200
+And I think across our organization, if things 
+are not going to be fatal, then if I hear from  
+
+167
+00:14:31,200 --> 00:14:38,544
+someone, "Hey, I really think we should do X", 
+then I'll say, "Okay, just go with it. And here's  
+
+168
+00:14:39,080 --> 00:14:45,640
+my feedback, here's what I'm skeptical of, let's 
+see what happens." And then sometimes they come  
+
+169
+00:14:45,640 --> 00:14:48,960
+back to me and they're like, "See I was right." 
+But usually they're pretty polite about it.
+
+170
+00:14:48,960 --> 00:14:54,560
+Just to build on that, something a lot 
+of people try to work on is being good  
+
+171
+00:14:54,560 --> 00:15:01,600
+at influencing leadership execs, CEOs. What 
+do you find works to change your mind? What  
+
+172
+00:15:01,600 --> 00:15:05,280
+do people come to you with that helps 
+you like, "Okay, you're actually right?"
+
+173
+00:15:05,280 --> 00:15:09,080
+I think the more concrete an artifact 
+is or the more you can debate something,  
+
+174
+00:15:09,080 --> 00:15:18,160
+the better. I ask for examples a lot, I try to ask 
+follow up questions about things and make sure I  
+
+175
+00:15:18,160 --> 00:15:25,320
+fully understand it. And I think where I get stuck 
+sometimes is if I ask follow up questions and we  
+
+176
+00:15:25,320 --> 00:15:30,840
+don't have answers yet, and then my response might 
+be, "Let's go find the answer to these questions  
+
+177
+00:15:30,840 --> 00:15:34,920
+and then let's go back to this conversation", if I 
+think it's something that's really important. And  
+
+178
+00:15:34,920 --> 00:15:38,840
+I think for some people they might go, "Okay, this 
+is actually really obvious. I can't believe you're  
+
+179
+00:15:38,840 --> 00:15:43,920
+so dense and you don't get it yet." And sometimes 
+they're right and they come back and they're like,  
+
+180
+00:15:43,920 --> 00:15:48,960
+"Okay, here's the data now, can we move on?" 
+And we do, we move on and they're right. And  
+
+181
+00:15:51,720 --> 00:16:00,320
+I just think that it's important though to just 
+really understand something from first principles  
+
+182
+00:16:01,040 --> 00:16:09,600
+for a lot of decisions. And maybe it's just a 
+perfectionist quality repeated over time, I think  
+
+183
+00:16:09,600 --> 00:16:15,240
+it leads to good outcomes as long as you make 
+sure it's not bottle-necking the organization.
+
+184
+00:16:15,240 --> 00:16:19,640
+So following up on that, let's talk about 
+product management. So last year you had  
+
+185
+00:16:19,640 --> 00:16:24,640
+Brian Chesky here, I think maybe on this 
+stage, maybe a bigger stage. And he said that  
+
+186
+00:16:24,640 --> 00:16:28,920
+they got rid of product management at Airbnb and 
+everyone cheered and all the PMs were very sad.  
+
+187
+00:16:30,120 --> 00:16:32,640
+And he didn't actually mean they 
+got rid of product management,  
+
+188
+00:16:32,640 --> 00:16:38,240
+they changed the function and evolved 
+it. I'm curious just to get your take.
+
+189
+00:16:38,240 --> 00:16:43,840
+It's funny. This year we have you here 
+Lenny, so that's your answer. No...
+
+190
+00:16:43,840 --> 00:16:44,749
+I had him on the-
+
+191
+00:16:44,749 --> 00:16:45,880
+Before and after, all. Surprise.
+
+192
+00:16:45,880 --> 00:16:51,480
+We're still here. We're still here. I want to 
+get your take on product management. You all  
+
+193
+00:16:51,480 --> 00:16:56,480
+have amazing product managers at Figma. I've 
+had three of them on the podcast already. I'm  
+
+194
+00:16:56,480 --> 00:17:01,760
+curious just what value you find the 
+best product managers bring to Figma?
+
+195
+00:17:01,760 --> 00:17:08,080
+It was really funny last year after that 
+interview, so Yuhki, our chief product officer,  
+
+196
+00:17:08,080 --> 00:17:15,600
+had invited me to a dinner for our PM team. And 
+it took a while to get out of Config at the end  
+
+197
+00:17:15,600 --> 00:17:25,320
+of the day, and I eventually made the dinner but I 
+was 40 minutes late. And I walk in and Mihika who  
+
+198
+00:17:25,320 --> 00:17:39,880
+was on stage yesterday, presenting Figma Slides, 
+Flides, she was standing up and doing a mock Brian  
+
+199
+00:17:39,880 --> 00:17:45,800
+Chesky impersonation. And she's standing up in 
+front of the entire product team and she goes,  
+
+200
+00:17:45,800 --> 00:17:52,720
+"And then Brian Chesky's like, 'There don't need 
+to be any PMs.' And Dylan's like... Ooh." And  
+
+201
+00:17:52,720 --> 00:18:03,320
+I'm like, "Hi, Mihika." And I'd never seen her 
+so red. And then I gave a quick, "Hey PM team,  
+
+202
+00:18:03,320 --> 00:18:13,120
+I believe in you. Thank you for your hard work."
+Seriously, I think that if you zoom out, it's  
+
+203
+00:18:13,120 --> 00:18:19,440
+always tricky whenever you're asked to formally 
+define, what is the separation between a product  
+
+204
+00:18:19,440 --> 00:18:25,840
+manager, a designer, and an engineer? It's always 
+hard to actually create those clear lines. And  
+
+205
+00:18:25,840 --> 00:18:32,280
+I think in many organizations they're blurry. 
+But at the end of the day, a PM and designer,  
+
+206
+00:18:32,280 --> 00:18:37,640
+they need to have some technical expertise or at 
+least understand how some systems work to probably  
+
+207
+00:18:37,640 --> 00:18:44,000
+create the best things they can possibly make. A 
+designer, engineer, they should probably have some  
+
+208
+00:18:44,000 --> 00:18:49,880
+sense of the business objectives. They should 
+have some sense of what users want. An engineer  
+
+209
+00:18:49,880 --> 00:18:59,920
+and a product manager, they should have taste and 
+craft and some sense of the option space, and some  
+
+210
+00:19:02,400 --> 00:19:10,400
+desire to care about the visual implementation.
+And I think you can include research in there too,  
+
+211
+00:19:10,400 --> 00:19:15,360
+if you want to make it four legs of the stool 
+rather than the trio. And you can talk about  
+
+212
+00:19:15,360 --> 00:19:21,800
+all three probably should have exposure to users 
+and be talking in dialogue with users. So I think  
+
+213
+00:19:21,800 --> 00:19:31,760
+that if you think about that group holistically, 
+each is important. If you think about a team,  
+
+214
+00:19:31,760 --> 00:19:36,960
+there's all these qualities that you have to 
+have to make a great product. And that said,  
+
+215
+00:19:36,960 --> 00:19:43,680
+I think for product managers and the product 
+function... I think sometimes when you see people  
+
+216
+00:19:43,680 --> 00:19:49,160
+that fall down in that function is because 
+they treat it too much like process. Which  
+
+217
+00:19:49,160 --> 00:19:59,040
+is very important too, don't me wrong. Good 
+process can help support good outcomes. But  
+
+218
+00:19:59,040 --> 00:20:03,760
+I think that you can't lose sight of the problems 
+that you're solving. You have to go talk to users  
+
+219
+00:20:03,760 --> 00:20:07,880
+and you have to actually have a strategy. And 
+if you're really good, you should have a point  
+
+220
+00:20:07,880 --> 00:20:12,160
+of view. And some point of views are going to 
+lead to good outcomes and some point of views  
+
+221
+00:20:12,160 --> 00:20:20,000
+aren't. And there's some tense sense of taste.
+And you also have to bring everyone together  
+
+222
+00:20:20,000 --> 00:20:26,120
+and make sure that they get to the objective, 
+that it's celebrated, and that at the end of  
+
+223
+00:20:26,120 --> 00:20:32,000
+the project or when you complete a milestone, 
+everyone's stoked. Otherwise, it's not going to  
+
+224
+00:20:32,000 --> 00:20:37,680
+be a team that gels, you're not going to get to 
+the next outcome. Even if you get to an outcome  
+
+225
+00:20:37,680 --> 00:20:44,440
+and it's a milestone, but if everyone's unhappy, 
+you failed. And so somehow good product people are  
+
+226
+00:20:44,440 --> 00:20:48,600
+able to do all this and they're able to create 
+great frameworks that bring everyone along with  
+
+227
+00:20:48,600 --> 00:20:54,840
+them. And so everyone's able to have a shared head 
+space around what it is they're trying to get to.
+
+228
+00:20:54,840 --> 00:21:02,440
+Someone once said that if PMs disappeared or if a 
+PM goes on vacation, everything's okay for a week  
+
+229
+00:21:02,440 --> 00:21:07,960
+or two or three and then things start to crumble a 
+little bit because they glue everything together.  
+
+230
+00:21:08,680 --> 00:21:12,720
+Do you find that sort of thing? Let me actually 
+ask a different question along those lines,  
+
+231
+00:21:12,720 --> 00:21:18,360
+are you bearish or bullish on the future of 
+product management? Do you think PMs will continue  
+
+232
+00:21:18,360 --> 00:21:23,280
+the way they are? Do you think PMs will dwindle 
+any sense of the future of product management?
+
+233
+00:21:24,000 --> 00:21:30,360
+I think probably everyone's learning to do a 
+bit more of everyone else's job in this current  
+
+234
+00:21:30,360 --> 00:21:37,560
+moment. That said, I definitely think there's 
+still immense value in product, immense value  
+
+235
+00:21:37,560 --> 00:21:43,240
+in design, immense value in engineering. And 
+so I think those roles will continue to exist.
+
+236
+00:21:43,240 --> 00:21:49,480
+So maybe I just want to come back to the question 
+of just, with the best PMs that you work with,  
+
+237
+00:21:49,480 --> 00:21:53,800
+do you find, what value do they most bring? 
+I guess is there anything that's like,  
+
+238
+00:21:53,800 --> 00:21:57,520
+"Here's what would be gone 
+if we didn't have these PMs"?
+
+239
+00:21:57,520 --> 00:22:03,520
+The best PMs, I think again, create those 
+frameworks that bring everyone else along  
+
+240
+00:22:03,520 --> 00:22:07,360
+and those frameworks also have a point of 
+view and a strategy associated with them.  
+
+241
+00:22:07,360 --> 00:22:12,560
+So you're able to take the strategy, take the 
+point of view, wrap it all up in a framework,  
+
+242
+00:22:12,560 --> 00:22:18,920
+and then make it so that everyone knows what 
+the destination is and how to get there.
+
+243
+00:22:20,360 --> 00:22:25,880
+So along these lines, something I've heard you're 
+really big on is simplification. Somebody told  
+
+244
+00:22:25,880 --> 00:22:30,840
+me that when you're in a designer view and 
+things just feel too complex to you, quote,  
+
+245
+00:22:30,840 --> 00:22:37,160
+"You furrow your brow and insist there must be 
+something simpler." Why is simplification so  
+
+246
+00:22:37,160 --> 00:22:41,360
+top of mind for you, why is it so important 
+for you and just why is it so hard to do?
+
+247
+00:22:41,360 --> 00:22:48,800
+Oh, gosh. Well, I think probably anyone here 
+who's worked on product knows how hard it is. I  
+
+248
+00:22:48,800 --> 00:22:58,640
+think the more that you add, the harder it is to 
+create something that's coherent. One essay that  
+
+249
+00:22:58,640 --> 00:23:05,240
+Evan, my co-founder, introduced me to early 
+on in famous history, I think from Stevie's  
+
+250
+00:23:05,240 --> 00:23:10,760
+[inaudible 00:23:06] grants or something like 
+that, contains the term irreducible complexity.  
+
+251
+00:23:10,760 --> 00:23:15,080
+And it's basically this idea that one plus one 
+does not equal three, it sometimes equals one  
+
+252
+00:23:15,080 --> 00:23:21,760
+and a half. And the more that you add and the 
+more that you continue to put in something,  
+
+253
+00:23:21,760 --> 00:23:28,040
+the more complex it gets and the worse it gets. 
+And I think this is definitely true for tools. 
+
+254
+00:23:28,040 --> 00:23:33,400
+So in the context of Figma, we can make 
+it more powerful, but to do that in a way  
+
+255
+00:23:33,400 --> 00:23:40,480
+that's not making it more complex at the same 
+time is extremely hard. And we have to always  
+
+256
+00:23:40,480 --> 00:23:48,720
+be paying attention to how complex or how simple 
+things are because if we don't, it just becomes a  
+
+257
+00:23:48,720 --> 00:23:53,440
+monstrosity really fast. And there's parts of our 
+product that, I don't want to dive into that part  
+
+258
+00:23:53,440 --> 00:23:58,840
+of the conversation, the self-critique, 
+but definitely as I'm in conversation  
+
+259
+00:23:58,840 --> 00:24:02,000
+with a bunch of our product leaders at 
+Figma, there's parts where it's like, "Okay,  
+
+260
+00:24:02,000 --> 00:24:08,600
+this thing is too complex as a system and we made 
+all the right local decisions and yet together  
+
+261
+00:24:08,600 --> 00:24:14,120
+they're too complex and they're not working 
+anymore. And let's go revisit the system now."
+
+262
+00:24:14,120 --> 00:24:20,280
+This episode is brought to you by UserTesting. 
+Transform how you build products and experiences  
+
+263
+00:24:20,280 --> 00:24:25,760
+with UserTesting. Get fast feedback throughout 
+the development process so that you can build  
+
+264
+00:24:25,760 --> 00:24:30,360
+the right thing the first time. Make better 
+decisions that lead to better business  
+
+265
+00:24:30,360 --> 00:24:35,840
+outcomes. Companies are being asked to do more 
+with less. They need to move quickly to build  
+
+266
+00:24:35,840 --> 00:24:40,280
+experiences that meet changing customer 
+expectations and do so faster than ever,  
+
+267
+00:24:40,280 --> 00:24:45,720
+all while minimizing risk and costly rework. 
+With UserTesting, you have a trusted partner  
+
+268
+00:24:45,720 --> 00:24:50,760
+in experience research. They empower user 
+research product and design teams to make  
+
+269
+00:24:50,760 --> 00:24:56,520
+higher confidence decisions with human insights. 
+Learn more today at usertesting.com/lenny. 
+
+270
+00:24:59,200 --> 00:25:02,720
+I know you just redesigned Figma. I imagine part 
+of that came from things are just getting too  
+
+271
+00:25:02,720 --> 00:25:06,720
+complicated, not as simple as we want. Is there 
+anything that's been bugging you in the old Figma  
+
+272
+00:25:06,720 --> 00:25:10,000
+but like, "Oh, this is way too complicated, 
+I really want to simplify this thing"?
+
+273
+00:25:10,000 --> 00:25:10,920
+Yes.
+
+274
+00:25:10,920 --> 00:25:11,880
+What's that?
+
+275
+00:25:11,880 --> 00:25:18,200
+We'll move on, but many things.
+
+276
+00:25:18,200 --> 00:25:25,160
+Sounds good. And in terms of how to keep things 
+simple, so I had Dharmesh Shah on the podcast,  
+
+277
+00:25:25,160 --> 00:25:28,440
+he's the co-founder of HubSpot, 
+and the way he described it is  
+
+278
+00:25:28,440 --> 00:25:31,480
+that you're always fighting the second 
+loft through more dynamics of entropy,  
+
+279
+00:25:31,480 --> 00:25:35,880
+just the product getting more complicated. 
+And he sees himself as part of the solution,  
+
+280
+00:25:35,880 --> 00:25:40,280
+of top down, you have to be on top of that. 
+Is that the way you see it? That's your role,  
+
+281
+00:25:40,280 --> 00:25:45,080
+to keep things simple. Do you think people 
+further down the ladder can do that?
+
+282
+00:25:46,200 --> 00:25:50,120
+Absolutely, everyone's responsible for 
+simplicity. And I think another quote  
+
+283
+00:25:50,120 --> 00:25:53,960
+that is not mine but is a really a good one 
+is "Keep the simple things simple. Make the  
+
+284
+00:25:53,960 --> 00:25:59,880
+complex things possible." And I think that's 
+a really important principle to hold as you're  
+
+285
+00:25:59,880 --> 00:26:10,640
+designing tools. And I'd say that it's really easy 
+to make the simple things complex, unfortunately.
+
+286
+00:26:10,640 --> 00:26:15,840
+I want to pivot to talking about early days 
+Figma. So I don't know how many people know this,  
+
+287
+00:26:15,840 --> 00:26:19,600
+but it took three and a half years to launch 
+Figma from when you were beginning to work on it.
+
+288
+00:26:19,600 --> 00:26:21,400
+Way too long, don't do that.
+
+289
+00:26:22,040 --> 00:26:24,920
+This is my question. So it took three and 
+a half years to launch and then five years  
+
+290
+00:26:24,920 --> 00:26:28,240
+to get your first customer. Dylan, what 
+the hell were you doing all that time?
+
+291
+00:26:29,840 --> 00:26:32,440
+I don't think it took five 
+years for a first... Well okay-
+
+292
+00:26:32,440 --> 00:26:32,880
+Paying.
+
+293
+00:26:32,880 --> 00:26:38,240
+First paying customer, sure. Okay, fine. 
+Slightly less but approximately five years,  
+
+294
+00:26:38,240 --> 00:26:49,640
+it gets to be round up. I think that if I had been 
+probably better at hiring and recruiting... I see  
+
+295
+00:26:49,640 --> 00:26:54,440
+Nadia in the audience, making eye contact with her 
+the entire time, for some reason. She's our chief  
+
+296
+00:26:54,440 --> 00:26:59,080
+people officer. If she had been at Figma from 
+day one, we would've hired probably faster and  
+
+297
+00:26:59,720 --> 00:27:08,520
+we would've gotten to market faster. But I think 
+that it was a hard product to build and to get  
+
+298
+00:27:08,520 --> 00:27:18,680
+everything to come together with. I also see Sho. 
+And I think for... Sho's joined us as a director  
+
+299
+00:27:18,680 --> 00:27:26,360
+of engineering. He's a VP of product now. Again, 
+people can wear many hats. And he was someone that  
+
+300
+00:27:26,360 --> 00:27:33,240
+joined Figma and said, "Hey, y'all need to ship 
+this thing, you're really close." And he really  
+
+301
+00:27:33,240 --> 00:27:39,320
+helped catalyze us to ship in that moment. And 
+I think, in week one, he gave a presentation. It  
+
+302
+00:27:39,320 --> 00:27:43,720
+was like, "Here's what we got to do, here's 
+the gap. Everyone agrees on it. Let's go."
+
+303
+00:27:45,360 --> 00:27:47,840
+You already said that you wish you 
+shipped earlier. Is there any advice  
+
+304
+00:27:47,840 --> 00:27:49,800
+there for just people building something today of-
+
+305
+00:27:49,800 --> 00:27:56,080
+Get it out as fast as you possibly can. 
+Everything they tell you about making sure  
+
+306
+00:27:56,080 --> 00:28:01,680
+that you get a product out really quickly 
+is totally true. The faster you get it out,  
+
+307
+00:28:01,680 --> 00:28:09,960
+the more feedback you get. That is a positive 
+thing. And now I index on that when we try to  
+
+308
+00:28:09,960 --> 00:28:16,160
+build. And FigJam's a great example of that, we 
+shipped it incredibly fast and it helped us get  
+
+309
+00:28:16,160 --> 00:28:21,160
+to market and get feedback faster. Figma Slides, 
+great example of that too. Dev Mode, for what  
+
+310
+00:28:21,160 --> 00:28:29,320
+it's worth, it took us longer. We just had to keep 
+iterating and building it and building it again.  
+
+311
+00:28:30,240 --> 00:28:35,560
+Certain directions we tried didn't work out 
+and we really had to get to a place where we  
+
+312
+00:28:35,560 --> 00:28:42,000
+were able to really believe that we were adding 
+value and really understood the developer's user,  
+
+313
+00:28:42,000 --> 00:28:46,280
+and it just didn't happen for a long time. So 
+it's interesting because I think people look  
+
+314
+00:28:46,280 --> 00:28:51,080
+at Dev Mode and sometimes they go, "Oh, this is 
+quite simple", to the point about simplicity. 
+
+315
+00:28:52,920 --> 00:29:04,520
+Figma, is this simpler than FigJam? And the 
+reality was it took at least three times as long.
+
+316
+00:29:04,520 --> 00:29:09,520
+So your advice is ship quickly. 
+There's also this push the-
+
+317
+00:29:09,520 --> 00:29:10,960
+I'd hold the bar, for sure.
+
+318
+00:29:10,960 --> 00:29:16,680
+That's the question I have, is there's also a 
+lot of talk of just the bar has risen. You need,  
+
+319
+00:29:16,680 --> 00:29:20,880
+especially B2B software, craft is really 
+important. Linear talks a lot about this,  
+
+320
+00:29:20,880 --> 00:29:24,720
+just the bar is very high for people to 
+switch from something out there. Is there  
+
+321
+00:29:24,720 --> 00:29:28,440
+anything... I don't think you'll have, "Here's 
+the answer. When you're ready to ship...", but  
+
+322
+00:29:28,440 --> 00:29:32,400
+just any advice of just like, "Here's good 
+enough" versus "No, you should probably wait."
+
+323
+00:29:32,400 --> 00:29:37,240
+Well, another thing that Evan taught me 
+was that for a new launch, you got quality,  
+
+324
+00:29:37,240 --> 00:29:44,560
+features, deadline, choose two. And I think 
+that the beautiful thing about software is  
+
+325
+00:29:44,560 --> 00:29:48,320
+you can keep iterating on it. So it's not 
+like a physical product where you have to  
+
+326
+00:29:48,320 --> 00:29:51,480
+always have quality in there, otherwise 
+it's never going to have quality. You  
+
+327
+00:29:51,480 --> 00:29:55,880
+can ship it with features and deadline and 
+then improve it iteratively over time. I'm  
+
+328
+00:29:55,880 --> 00:29:58,800
+not saying you should always do that. 
+Sometimes you need to at least have a  
+
+329
+00:29:58,800 --> 00:30:04,320
+minimum bar of quality for the things you have 
+and you're going to ship less features maybe. 
+
+330
+00:30:04,320 --> 00:30:09,040
+So you choose quality and deadline and sometimes 
+you say, "Actually here's the minimum feature  
+
+331
+00:30:09,040 --> 00:30:13,480
+set and we're going to have this quality bar and 
+you're willing to push it out." But I think you  
+
+332
+00:30:13,480 --> 00:30:18,960
+have to know when you're introducing a new 
+thing, what it's going to take and then to  
+
+333
+00:30:18,960 --> 00:30:29,920
+make that minimally awesome product. But also I 
+think that when you're iteratively improving it,  
+
+334
+00:30:29,920 --> 00:30:33,200
+you shouldn't just be focused on the features, 
+you have to focus on the quality too.
+
+335
+00:30:33,200 --> 00:30:41,240
+I like this term you use, 'minimally awesome 
+product'. Love it. So the way you got your  
+
+336
+00:30:41,240 --> 00:30:45,160
+early users for Figma is quite fascinating. 
+I don't know how many people know this story,  
+
+337
+00:30:45,160 --> 00:30:47,720
+but you basically wrote a script to scrape Twitter  
+
+338
+00:30:47,720 --> 00:30:50,960
+and create a graph of the most 
+influential designers on Twitter,  
+
+339
+00:30:50,960 --> 00:30:55,280
+and then you made it your mission to convince 
+them to use Figma and make them evangelists.  
+
+340
+00:30:55,280 --> 00:30:59,520
+Is there anything more to the story there? 
+And then I have a question along those lines.
+
+341
+00:31:01,040 --> 00:31:07,600
+You can't do this anymore, first of all, because 
+the Twitter API doesn't exist anymore. Rest in  
+
+342
+00:31:07,600 --> 00:31:15,960
+peace, Twitter API. But look, I was an intern at 
+LinkedIn and when I was there I saw some really  
+
+343
+00:31:15,960 --> 00:31:23,880
+cool work people had done with Gephi, which was 
+a network visualization tool. And based on that  
+
+344
+00:31:23,880 --> 00:31:28,840
+I thought it'd be interesting to try to, like 
+you said, look at who the design network was,  
+
+345
+00:31:28,840 --> 00:31:34,200
+who the central nodes were, which you can just run 
+[inaudible 00:31:31] on and see. And you could do  
+
+346
+00:31:34,200 --> 00:31:39,080
+that for other communities too, which I have done 
+in the past just because I'm curious about social  
+
+347
+00:31:39,080 --> 00:31:47,040
+network dynamics and social network analysis.
+And you could just do those things back in 2012,  
+
+348
+00:31:47,040 --> 00:31:54,320
+2013 when Figma started. So I constructed this 
+list of, "Here are the most central designers  
+
+349
+00:31:54,320 --> 00:31:59,520
+in the graph", but also then I looked at their 
+work. And the ones that I was really inspired by  
+
+350
+00:32:00,480 --> 00:32:06,720
+as a total fanboy, and someone who wanted 
+to learn as much as I could about design,  
+
+351
+00:32:07,560 --> 00:32:12,320
+was inspired by these folks, the ones I was 
+inspired by I reached out to and said, "Hey,  
+
+352
+00:32:12,320 --> 00:32:16,880
+can I buy you a coffee?" And most of them are 
+really kind. The design community is amazing.  
+
+353
+00:32:16,880 --> 00:32:22,640
+And they said yes and then from there was able 
+to learn from them, show them Figma, get their  
+
+354
+00:32:22,640 --> 00:32:29,280
+feedback. And I think it started honestly 
+more as me fanboy and me getting feedback. 
+
+355
+00:32:29,280 --> 00:32:35,000
+One example is Tim Van Damme. I saw him on 
+Dribble. Max [inaudible 00:32:35], I'm like,  
+
+356
+00:32:35,000 --> 00:32:42,120
+"Oh, my God, this guy is just genius. These 
+icons are incredible." I think the first  
+
+357
+00:32:42,120 --> 00:32:48,400
+time I met Tim was at Dropbox and think 
+I had this total fanboy moment. I'm like,  
+
+358
+00:32:48,400 --> 00:32:54,240
+"I've been tracing your icons." He's like, "Hi." 
+
+359
+00:32:54,880 --> 00:33:01,720
+And I had been working on vector networks 
+with a team, and my test cases were a lot  
+
+360
+00:33:01,720 --> 00:33:07,520
+of his icons. Because they were just beautiful 
+and I liked looking at them and studying them.  
+
+361
+00:33:07,520 --> 00:33:15,200
+And to now have Tim on the team and have him 
+doing the icons for UI 3 is such an honor,  
+
+362
+00:33:15,200 --> 00:33:24,840
+and privileged to work with someone of that craft. 
+So reaching out to your hero sometimes works.
+
+363
+00:33:24,840 --> 00:33:27,920
+It's interesting because when people hear that 
+story, when I've heard that story many times,  
+
+364
+00:33:27,920 --> 00:33:32,360
+it was always like, "Here's a growth hack. 
+Find the most influential people in your field,  
+
+365
+00:33:32,360 --> 00:33:36,560
+go try to convince them to use your product." And 
+the way you're describing it is you were using it  
+
+366
+00:33:36,560 --> 00:33:40,120
+more as feedback. "I just want to show you the 
+product, get your feedback, make this better",  
+
+367
+00:33:40,120 --> 00:33:42,920
+and then it ended up working. They're like, 
+"Oh, I love Figma, I'm going to use it."
+
+368
+00:33:42,920 --> 00:33:45,640
+Well, I think it especially works for designers 
+that way, because designers are really good at  
+
+369
+00:33:45,640 --> 00:33:51,600
+giving feedback. It turns out that not everyone is 
+good at giving feedback, but designers are awesome  
+
+370
+00:33:51,600 --> 00:33:58,840
+at that. So we're really lucky. And literally 
+early on in Figma's existence, folks... I think  
+
+371
+00:33:58,840 --> 00:34:03,160
+Payam [inaudible 00:34:00] is here somewhere. I'm 
+not sure if he's in this room, but I was hoping  
+
+372
+00:34:03,160 --> 00:34:09,960
+to see him before the end of Config. Payam wrote 
+a very long doc for us about all the things that  
+
+373
+00:34:09,960 --> 00:34:15,800
+he wanted to see in Figma after we did a user 
+research study with him. With a bottle of wine  
+
+374
+00:34:15,800 --> 00:34:21,200
+because our text editing didn't work very well 
+then. So I ran him through the user study, I knew  
+
+375
+00:34:21,200 --> 00:34:27,280
+we'd need a bottle of wine to finish and it took 
+hours. The type of sentence in Figma was so slow.
+
+376
+00:34:27,280 --> 00:34:33,040
+That reminds me of a story I've heard where... 
+One of your first customers was Coda, sponsor I  
+
+377
+00:34:33,040 --> 00:34:38,440
+think of Config. It used to be called Krypton. 
+And there's a story where you installed Figma,  
+
+378
+00:34:38,440 --> 00:34:42,600
+you helped them get set up, you drove 
+home and then they called you like,  
+
+379
+00:34:42,600 --> 00:34:48,120
+"Hey, Figma is not working anymore." And you 
+drove back yourself to help fix them and it  
+
+380
+00:34:48,120 --> 00:34:52,920
+ended up their wifi was down or there 
+was a wifi issue. Is that the story?
+
+381
+00:34:52,920 --> 00:34:54,320
+I don't remember what the solution was, but-
+
+382
+00:34:54,320 --> 00:34:55,320
+That's what I heard.
+
+383
+00:34:55,320 --> 00:35:04,560
+... we were halfway home and somehow I saw... I'm 
+sure I was not looking at my email while driving,  
+
+384
+00:35:05,320 --> 00:35:10,680
+definitely is not something anyone here 
+should do. But somehow found out that  
+
+385
+00:35:10,680 --> 00:35:17,720
+they had an issue and we turned the car 
+around. Shishir is amazing by the way,  
+
+386
+00:35:17,720 --> 00:35:24,720
+and has been a mentor for a long time to me and 
+many people on our team. And he, I think, at the  
+
+387
+00:35:24,720 --> 00:35:32,360
+time did not know he was the first customer.
+And later on he came over to Figma's office  
+
+388
+00:35:32,360 --> 00:35:36,200
+and I introduced him without really thinking 
+about that. And I was like, "This is Shishir,  
+
+389
+00:35:36,200 --> 00:35:46,520
+he's team was really the first user of Figma 
+as a team." And he goes, "Wait a second, I am?"
+
+390
+00:35:48,000 --> 00:35:52,840
+I want to talk about something totally different. 
+Something I've noticed you are good at is you  
+
+391
+00:35:52,840 --> 00:35:58,480
+spot trends ahead of other people. So obviously 
+WebGL you were on early and that's what allowed  
+
+392
+00:35:58,480 --> 00:36:02,760
+Figma to exist, to link it in the browser. 
+I saw you tweeting about CryptoPunks way  
+
+393
+00:36:02,760 --> 00:36:05,840
+before they were worth millions of dollars. 
+You're just like, "Look, CryptoPunks. Look,  
+
+394
+00:36:05,840 --> 00:36:11,480
+I got a few, they're really cool. They're 
+super cool, little pipe." I'm curious if  
+
+395
+00:36:11,480 --> 00:36:15,680
+there's anything these days you're really excited 
+about that might become bigger in the future?
+
+396
+00:36:15,680 --> 00:36:18,800
+Well, we talked about websim. We were just talking  
+
+397
+00:36:18,800 --> 00:36:23,160
+about them backstage and I think 
+before this conversation too.
+
+398
+00:36:23,160 --> 00:36:24,320
+Talk about websim.
+
+399
+00:36:24,320 --> 00:36:28,560
+And that's an example of something 
+where it's so interesting because  
+
+400
+00:36:28,560 --> 00:36:33,880
+there's a generative UI component and yet 
+it's not what we're going for, for Figma,  
+
+401
+00:36:33,880 --> 00:36:39,880
+it's totally different. So we actually 
+invested in websim with Figma Ventures.
+
+402
+00:36:39,880 --> 00:36:41,320
+Maybe explain what websim is for folks.
+
+403
+00:36:42,240 --> 00:36:49,720
+Websim is a hallucinated internet basically. 
+If you go to websim.ai, you can use different  
+
+404
+00:36:49,720 --> 00:36:58,800
+models like Claude or GPT-4o, and you can do that 
+either through their defaults or you can use open  
+
+405
+00:36:58,800 --> 00:37:04,480
+router to get a bigger context window. And the 
+more that you use it, the more you construct  
+
+406
+00:37:04,480 --> 00:37:12,120
+this context window of this almost universe that 
+you're building up in websim. And as you do it,  
+
+407
+00:37:12,120 --> 00:37:19,320
+it's almost like you're world building. And I just 
+have gone deep and geeked out on this when I've  
+
+408
+00:37:19,320 --> 00:37:23,400
+had time, and they've evolved the platform a lot.
+So we were back there and they were showing  
+
+409
+00:37:23,400 --> 00:37:29,040
+me some new functionality that's really 
+cool too. But I think it's so interesting  
+
+410
+00:37:29,640 --> 00:37:36,080
+to see it as this almost lean forward 
+entertainment tool using the internet.
+
+411
+00:37:36,080 --> 00:37:39,680
+So I thought you would answer this and so 
+we're going to have a picture come up here,  
+
+412
+00:37:39,680 --> 00:37:46,840
+that I tried websim and played around with it. 
+And hopefully a photo comes up somewhere. So all  
+
+413
+00:37:46,840 --> 00:37:53,800
+I typed here was gmail.com/dylanfield. So this 
+is in an invented Gmail. Just came up with this  
+
+414
+00:37:53,800 --> 00:38:00,000
+using AI of what your inbox should look like and 
+it looks pretty accurate. There's Adobe stuff-
+
+415
+00:38:00,000 --> 00:38:00,960
+DOJ, not FTC.
+
+416
+00:38:00,960 --> 00:38:09,400
+... financial. This is not actual information. 
+Nobody buy stock based on this. So it's pretty-
+
+417
+00:38:09,400 --> 00:38:10,920
+No comment on 75% year over year.
+
+418
+00:38:13,520 --> 00:38:14,440
+So the way it work-
+
+419
+00:38:14,440 --> 00:38:18,040
+I hadn't ever tried Gmail before. 
+Did you try you? What was your inbox?
+
+420
+00:38:18,040 --> 00:38:21,272
+I didn't do me. I don't think it would 
+have anything. It'd be like, if it does-
+
+421
+00:38:21,272 --> 00:38:22,440
+Who are you?
+
+422
+00:38:22,440 --> 00:38:25,760
+So the way it works is just you 
+type a URL or a prompt in the URL  
+
+423
+00:38:25,760 --> 00:38:29,680
+field and it'll just invent what that 
+website looks like. It's hilarious.
+
+424
+00:38:29,680 --> 00:38:30,480
+It's awesome.
+
+425
+00:38:30,480 --> 00:38:32,880
+It's awesome. So I think they're going 
+to get a lot of traffic right now.
+
+426
+00:38:32,880 --> 00:38:41,000
+One time someone posted in our random channel on 
+Slack, they said, "I had a dream last night." It's  
+
+427
+00:38:41,000 --> 00:38:47,840
+always a good start for the random channel. "I had 
+a dream last night that I was working on FigJam,  
+
+428
+00:38:47,840 --> 00:38:57,120
+but it wasn't FigJam, it was Frog Jam.
+And websim was like figma.com/frogjam  
+
+429
+00:39:01,080 --> 00:39:06,720
+and it came up with a whole marketing 
+website complete with toad puns for Frog  
+
+430
+00:39:06,720 --> 00:39:12,760
+Jam. The sticky notes were lily pads and 
+you were supposed to... It had this whole  
+
+431
+00:39:12,760 --> 00:39:17,000
+metaphor of hopping from lily pad 
+to lily pad to generate new ideas.
+
+432
+00:39:17,680 --> 00:39:27,400
+This is genius. Interestingly, before Figma, 
+your only other job was an intern at three  
+
+433
+00:39:27,400 --> 00:39:31,760
+different companies and now you're leading 
+this juggernaut of a business, a thousand  
+
+434
+00:39:31,760 --> 00:39:37,600
+plus people. I imagine there's a lot you've had 
+to learn over this time. So I'm not going to  
+
+435
+00:39:37,600 --> 00:39:41,200
+ask you what you've learned because I think 
+it's probably a lot. I'm curious just what  
+
+436
+00:39:41,200 --> 00:39:47,480
+has most helped you scale and learn? Is it 
+exec coaches, is it co friends? Is it hiring  
+
+437
+00:39:47,480 --> 00:39:51,960
+execs? What's most helped you scale with the 
+business and become the leader you are today?
+
+438
+00:39:51,960 --> 00:39:57,560
+I think all the above. And also just having 
+a mindset of, you have to constantly adapt  
+
+439
+00:39:57,560 --> 00:40:04,920
+and grow and change and adapt. But I would say 
+that mentors can come from anywhere. It can come  
+
+440
+00:40:04,920 --> 00:40:10,880
+from the community, all of you. Mentorship can 
+come from the people you hire. It can come from  
+
+441
+00:40:10,880 --> 00:40:17,920
+folks that you actively seek out as investors or 
+explicit mentorship and mentors. It can come from  
+
+442
+00:40:17,920 --> 00:40:24,440
+people that call themselves coaches. And what's 
+interesting too is it can come from people you  
+
+443
+00:40:24,440 --> 00:40:31,000
+mentor as well. There have been plenty of 
+people where they ask me a question at some  
+
+444
+00:40:31,000 --> 00:40:35,280
+point and I give them an answer and they think 
+it's insightful for whatever reason. And then  
+
+445
+00:40:35,280 --> 00:40:39,600
+years later where we're talking again and I ask 
+them a question and they're like, "Well, years  
+
+446
+00:40:39,600 --> 00:40:45,840
+ago you told me..." And they repeat back what 
+I told them like, "That's a really good point." 
+
+447
+00:40:45,840 --> 00:40:49,640
+Or they've grown and they've changed and they've 
+learned and they tell me something completely  
+
+448
+00:40:49,640 --> 00:40:54,800
+different. They give me a new framework. And 
+so I think that when you're... A lot of times  
+
+449
+00:40:54,800 --> 00:40:59,080
+when I talk with new founders, they teach me 
+things that are totally things that I've just  
+
+450
+00:40:59,080 --> 00:41:04,720
+never thought about. Or interns at Figma have 
+been mentors to me, in many ways. So you really  
+
+451
+00:41:04,720 --> 00:41:09,160
+have to have a ready mindset and just always 
+be ready to absorb new information, I think.
+
+452
+00:41:09,160 --> 00:41:14,240
+When you were just tinkering around with 
+Figma 12 years ago, I think at this point,  
+
+453
+00:41:14,240 --> 00:41:17,720
+did you ever imagine you'd be running a 
+thousand person company and audience just  
+
+454
+00:41:17,720 --> 00:41:21,600
+spell bound by what you're building? There's 
+people lining up to take photos with your  
+
+455
+00:41:21,600 --> 00:41:27,360
+logo in the lobby. That doesn't happen. That's 
+very rare. Just to give you a chance to reflect  
+
+456
+00:41:27,360 --> 00:41:32,520
+on just how it feels to have built that over time, 
+how does that feel? I'm sitting here right now.
+
+457
+00:41:32,520 --> 00:41:38,200
+I feel very, very lucky, but also very humbled 
+by just the community that is around Figma. I  
+
+458
+00:41:39,920 --> 00:41:43,360
+mentioned in the keynote, but just the people 
+that are in the Figma community are the people  
+
+459
+00:41:43,360 --> 00:41:49,360
+that are shaping the world's technology. And 
+the chance to serve them and to make software  
+
+460
+00:41:49,360 --> 00:41:56,840
+for them and hopefully improve their life in 
+some little way is such a privilege. It's a  
+
+461
+00:41:56,840 --> 00:42:03,360
+responsibility and one I don't take lightly, 
+but also I try not to carry that as a weight,  
+
+462
+00:42:03,360 --> 00:42:09,520
+but rather as pump me up and get 
+me excited to go build for them.
+
+463
+00:42:10,240 --> 00:42:14,760
+When we were talking about this idea earlier... 
+The first thing you said is it's a responsibility,  
+
+464
+00:42:14,760 --> 00:42:17,600
+which I didn't expect. Is there 
+anything more there just like,  
+
+465
+00:42:17,600 --> 00:42:19,720
+"Wow, I really have to help make..."?
+
+466
+00:42:19,720 --> 00:42:27,240
+Well, again, going back to the simplification 
+point, it's very important that we continue to  
+
+467
+00:42:27,240 --> 00:42:33,560
+make Figma more and more simple. We make Figma 
+as powerful as we can for the people that are  
+
+468
+00:42:33,560 --> 00:42:40,520
+in our community. That we figure out what 
+people's needs truly are and that we advance  
+
+469
+00:42:40,520 --> 00:42:47,720
+the state of the craft, make it so that we do 
+that in a responsible way. And that we champion  
+
+470
+00:42:47,720 --> 00:42:55,040
+design and champion quality. So we're trying 
+to do all those things. We sometimes mess up,  
+
+471
+00:42:55,040 --> 00:42:59,240
+but people have been very patient with us and 
+we're very thankful for that. And thankful for the  
+
+472
+00:42:59,240 --> 00:43:06,600
+support of just everyone here and in our community 
+that are giving us a chance to make this impact.
+
+473
+00:43:06,600 --> 00:43:11,280
+Is there anything else you want to... 
+Oh, there's some applause. Love that.
+
+474
+00:43:11,280 --> 00:43:14,920
+Thank you.
+
+475
+00:43:14,920 --> 00:43:18,000
+Applause break. Is there anything else 
+you want to share? Anything else you  
+
+476
+00:43:18,000 --> 00:43:24,520
+want to leave listeners with before we 
+get to a very quick lightning round?
+
+477
+00:43:24,520 --> 00:43:33,480
+Well, no, one thing I'll share is I think we're 
+so early on this journey of computing in general.  
+
+478
+00:43:34,520 --> 00:43:39,440
+And in our lifetimes, we're going to have 
+the chance to just build such incredible  
+
+479
+00:43:39,440 --> 00:43:44,840
+technology and incredible products. And I'm really 
+excited to see what everyone in this room builds,  
+
+480
+00:43:44,840 --> 00:43:49,680
+but also everyone on the internet that 
+[inaudible 00:43:48] maybe also builds  
+
+481
+00:43:49,680 --> 00:43:56,760
+and send me cool stuff. If you build something 
+cool, message me somewhere and share it with me.
+
+482
+00:43:56,760 --> 00:43:59,080
+What's the best way to message you?
+
+483
+00:43:59,080 --> 00:44:02,871
+Email's good. You can probably 
+figure out my email if you-
+
+484
+00:44:02,871 --> 00:44:03,255
+Just use websim.
+
+485
+00:44:03,255 --> 00:44:04,520
+... [inaudible 00:44:03] for five seconds or use  
+
+486
+00:44:04,520 --> 00:44:12,840
+websim. Twitter/X is good. Those are 
+two places at least you can find me.
+
+487
+00:44:12,840 --> 00:44:14,960
+Dylan, with that, we've reached our 
+very exciting lightning round. We  
+
+488
+00:44:14,960 --> 00:44:18,600
+only have a couple of minutes left. It's 
+a very short one. Do you have a favorite  
+
+489
+00:44:18,600 --> 00:44:21,880
+product that you've recently discovered 
+that you really love other than websim?
+
+490
+00:44:28,520 --> 00:44:31,240
+Well, I'll say that, and it's 
+not like a favorite product,  
+
+491
+00:44:31,240 --> 00:44:44,920
+but I will say that if you get... 
+Hesitate if I should say this or not.
+
+492
+00:44:44,920 --> 00:44:52,000
+We'll cut it out in post, don't worry about it.
+
+493
+00:44:52,840 --> 00:44:57,200
+I'll say this, it's so fascinating to look 
+at all the different LMs out there right now  
+
+494
+00:44:57,200 --> 00:45:04,000
+and what each one is uniquely good at. And 
+it's really fun if you can hack them the  
+
+495
+00:45:04,000 --> 00:45:07,600
+right way and get them in the right mood, 
+what they'll do. That's what I'll say.
+
+496
+00:45:07,600 --> 00:45:11,360
+Whoa, what does that mean?
+
+497
+00:45:11,360 --> 00:45:13,640
+It's my diplomatic answer.
+
+498
+00:45:13,640 --> 00:45:18,560
+Interesting. Do you have a favorite 
+life motto that you come back to,  
+
+499
+00:45:18,560 --> 00:45:22,600
+repeat to yourself, share with friends 
+or family, that you find really useful?
+
+500
+00:45:22,600 --> 00:45:27,200
+I don't know if I've got a life motto, but 
+one piece of advice I've always appreciated is  
+
+501
+00:45:27,200 --> 00:45:29,680
+when people give you advice, 
+they're not giving you advice,  
+
+502
+00:45:29,680 --> 00:45:34,760
+they're giving themselves advice in your 
+shoes. I think that's an interesting one.  
+
+503
+00:45:34,760 --> 00:45:41,320
+So if I gave you advice here, I'm 
+giving myself advice in your shoes.
+
+504
+00:45:41,320 --> 00:45:48,160
+Final question. Not many people know this, but you 
+were a child actor when you were five years old.  
+
+505
+00:45:48,160 --> 00:45:53,560
+Do you think you made the right career move? 
+Do you feel like you sometimes regret acting?
+
+506
+00:45:54,120 --> 00:46:06,280
+Yes, definitely. That's my mom. My mom's in 
+the audience and she says yes. No. We've been  
+
+507
+00:46:06,280 --> 00:46:12,400
+talking about product. If you're an actor, you're 
+a product in some way. And that's not to disparage  
+
+508
+00:46:12,400 --> 00:46:19,080
+actors, actors are awesome. Acting is awesome. I 
+loved it. But my differentiators when I was five,  
+
+509
+00:46:19,080 --> 00:46:26,760
+five and a half I think, was that I could read 
+and I could sit still and I was decently cute.  
+
+510
+00:46:27,720 --> 00:46:32,400
+And I hit puberty and those things 
+were no longer differentiators. And  
+
+511
+00:46:33,120 --> 00:46:38,000
+then it was like, let's do some computer science.
+
+512
+00:46:38,000 --> 00:46:47,680
+So to close, we're going to play a... 
+Oh, applause. We're going to play a clip,  
+
+513
+00:46:47,680 --> 00:46:56,840
+something I found on YouTube to 
+close and enjoy. 30 seconds clip.
+
+514
+00:47:09,280 --> 00:47:13,400
+Where will you find a world of 
+ideas for your child? Only at  
+
+515
+00:47:13,400 --> 00:47:24,000
+eToys. From Barbie to Brio to SwimWays. 
+eToys, where great ideas come to you.
+
+516
+00:47:24,000 --> 00:47:27,000
+That was a good find. Thank you.
+
+517
+00:47:27,000 --> 00:47:28,600
+Dylan, thank you so much for doing this.
+
+518
+00:47:28,600 --> 00:47:31,200
+Thank you. Can I make one 
+comment about that commercial?
+
+519
+00:47:31,200 --> 00:47:32,240
+Okay, one comment.
+
+520
+00:47:32,240 --> 00:47:35,720
+One comment before we end. That 
+commercial made that company go  
+
+521
+00:47:35,720 --> 00:47:40,320
+bankrupt. Thank you all for joining. 
+Thank you for having me, Lenny.
+
+522
+00:47:40,320 --> 00:47:46,240
+Good luck. Thanks Dylan. Bye everyone.
+Thank you so much for listening. If you  
+
+523
+00:47:46,240 --> 00:47:50,320
+found this valuable, you can subscribe 
+to the show on Apple Podcasts, Spotify,  
+
+524
+00:47:50,320 --> 00:47:54,680
+or your favorite podcast app. Also, 
+please consider giving us a rating or  
+
+525
+00:47:54,680 --> 00:47:59,480
+leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+526
+00:47:59,480 --> 00:48:07,440
+past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

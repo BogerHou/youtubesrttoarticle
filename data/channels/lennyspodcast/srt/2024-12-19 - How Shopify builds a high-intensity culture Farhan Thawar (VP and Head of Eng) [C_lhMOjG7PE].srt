@@ -1,0 +1,6520 @@
+1
+00:00:00,040 --> 00:00:04,920
+If you do the hard path and it doesn't work, 
+actually you still win because you've now done  
+
+2
+00:00:04,920 --> 00:00:08,720
+something hard. You've probably worked with smart 
+people. You've learned something along the way  
+
+3
+00:00:08,720 --> 00:00:12,760
+that is valuable. I meet lots of job seekers. 
+I go, what are you doing to try to find a job?  
+
+4
+00:00:12,760 --> 00:00:16,000
+Are you really learning anything from sending 
+out 10 resumes a day? Why don't you look at the  
+
+5
+00:00:16,000 --> 00:00:20,600
+API Docs and build something? Even if you don't 
+get a job at Shopify, you've learned something.
+
+6
+00:00:20,600 --> 00:00:24,440
+First, I want to talk about another theme, 
+creating intensity in your organization.
+
+7
+00:00:24,440 --> 00:00:27,520
+Everyone says, "Oh yeah, work hard 
+and do more hours when you're young,  
+
+8
+00:00:27,520 --> 00:00:29,560
+whatever." I'm like, "What if 
+you just did more per minute?"
+
+9
+00:00:29,560 --> 00:00:33,200
+The more I dig into the Shopify 
+way working, the more fun stuff I  
+
+10
+00:00:33,200 --> 00:00:37,240
+never expected emerges. There's been 
+a drive to delete code and simplify.
+
+11
+00:00:37,240 --> 00:00:39,640
+We have a Delete Code Club. 
+We can always almost find a  
+
+12
+00:00:39,640 --> 00:00:42,200
+million-plus lines of code 
+to delete, which is insane.
+
+13
+00:00:42,200 --> 00:00:43,640
+I found this great quote from you,  
+
+14
+00:00:43,640 --> 00:00:48,320
+"Not everyone can look stupid in public over 
+and over, but I believe it's my superpower."
+
+15
+00:00:48,320 --> 00:00:52,280
+I have been in many situations with 
+many sharp people who have said to me,  
+
+16
+00:00:52,280 --> 00:00:55,000
+that's the stupidest fucking 
+question I've ever heard. My  
+
+17
+00:00:55,000 --> 00:00:58,920
+goal there is not to annoy the person, 
+but it's to understand the content.
+
+18
+00:00:58,920 --> 00:01:01,720
+I was looking at your LinkedIn and 
+your career history, and I noticed  
+
+19
+00:01:01,720 --> 00:01:05,400
+that you've worked for a different 
+billionaire every decade of your life.
+
+20
+00:01:05,400 --> 00:01:12,240
+They're mostly different people, but they're 
+similar in one thing is that they haven't...
+
+21
+00:01:12,240 --> 00:01:17,080
+Today my guest is Farhan Thawar. Farhan 
+is Vice President and Head of Engineering  
+
+22
+00:01:17,080 --> 00:01:22,080
+at Shopify. Shopify is an incredibly 
+interesting company because they have  
+
+23
+00:01:22,080 --> 00:01:27,640
+over 10,000 employees who are fully remote, and 
+even though they were founded almost 20 years ago,  
+
+24
+00:01:27,640 --> 00:01:33,480
+they continue to operate with urgency, velocity 
+and have very first principles, ways of thinking,  
+
+25
+00:01:33,480 --> 00:01:38,400
+which translates into them seeing record usage, 
+blowing away their earnings calls just recently,  
+
+26
+00:01:38,400 --> 00:01:44,920
+and building a beloved product. A lot of this is 
+thanks to Farhan, who in our conversation shares  
+
+27
+00:01:44,920 --> 00:01:49,360
+very specifically what he's done to maintain 
+intensity and urgency within the engineering  
+
+28
+00:01:49,360 --> 00:01:55,360
+team. Including their meeting cadences, the 
+counter-intuitive power of pair programming,  
+
+29
+00:01:55,360 --> 00:01:59,920
+how they run meetings, how they cancel 
+meetings constantly and so much more.  
+
+30
+00:01:59,920 --> 00:02:04,680
+He also shares his experience with indexing 
+towards choosing the harder option when you  
+
+31
+00:02:04,680 --> 00:02:08,480
+have multiple options to choose from and 
+why that ends up making your life easier. 
+
+32
+00:02:08,480 --> 00:02:12,600
+He also shares a bunch of great hiring advice and 
+a bunch of hiring stories which are going to blow  
+
+33
+00:02:12,600 --> 00:02:16,680
+your mind. He also talks about their engineering 
+intern program where they're going to hire over a  
+
+34
+00:02:16,680 --> 00:02:22,160
+thousand engineers just for their intern program 
+in 2025. I've had a lot of people on this podcast  
+
+35
+00:02:22,160 --> 00:02:28,440
+from Shopify, but that is for a very good reason 
+because this company and its leaders have a lot to  
+
+36
+00:02:28,440 --> 00:02:33,560
+teach us about how to run an incredible business 
+and build an incredible product. If you enjoy this  
+
+37
+00:02:33,560 --> 00:02:37,600
+podcast, don't forget to subscribe and follow 
+it in your favorite podcasting app or YouTube.  
+
+38
+00:02:37,600 --> 00:02:42,680
+It's the best way to avoid missing future episodes 
+and it helps the podcast tremendously. With that,  
+
+39
+00:02:42,680 --> 00:02:51,640
+I bring you, Farhan Thawar. Farhan, thank you so 
+much for being here, and welcome to the podcast.
+
+40
+00:02:51,640 --> 00:02:52,840
+Thanks for having me.
+
+41
+00:02:52,840 --> 00:02:56,800
+As I was preparing for our conversation, 
+I talked to a bunch of people that you've  
+
+42
+00:02:56,800 --> 00:03:00,280
+worked with over the years, and 
+there's basically three themes  
+
+43
+00:03:00,280 --> 00:03:06,480
+that kept coming up over and over and over. One 
+is hiring, two is creating intensity in your  
+
+44
+00:03:06,480 --> 00:03:12,360
+organization, and three is choosing the hard path. 
+First of all, does that resonate? Second of all,  
+
+45
+00:03:12,360 --> 00:03:16,000
+does it sound good to talk about these 
+three themes in our time together?
+
+46
+00:03:16,000 --> 00:03:21,160
+Yeah, I mean, I have ideas on where 
+all three of those things came from,  
+
+47
+00:03:21,160 --> 00:03:25,120
+and I think that it is something 
+that if you looked back on my career,  
+
+48
+00:03:25,120 --> 00:03:29,120
+I've hit points on each of those things, 
+but I don't think at the onset I knew that  
+
+49
+00:03:29,120 --> 00:03:32,320
+that's what I was doing, but it turns out 
+in retrospect, that's what I ended up doing.
+
+50
+00:03:32,320 --> 00:03:35,960
+Perfect, so this is the Steve Jobs. 
+Everything looking backwards it all connects.
+
+51
+00:03:35,960 --> 00:03:37,400
+Yes.
+
+52
+00:03:37,400 --> 00:03:43,320
+Today's episode is brought to you by DX. If you're 
+an engineering leader or on a platform team,  
+
+53
+00:03:43,320 --> 00:03:48,800
+at some point your CEO will inevitably ask you for 
+productivity metrics, but measuring engineering  
+
+54
+00:03:48,800 --> 00:03:54,360
+organizations is hard, and we can all agree that 
+simple metrics like the number of PRs or commits  
+
+55
+00:03:54,360 --> 00:04:00,200
+doesn't tell the full story. That's where DX comes 
+in. DX is an engineering intelligence solution  
+
+56
+00:04:00,200 --> 00:04:05,600
+designed by leading researchers, including those 
+behind the DORA and SPACE frameworks. It combines  
+
+57
+00:04:05,600 --> 00:04:10,360
+quantitative data from developer tools with 
+qualitative feedback from developers to give you  
+
+58
+00:04:10,360 --> 00:04:15,400
+a complete view of engineering productivity and 
+the factors affecting it. Learn why some of the  
+
+59
+00:04:15,400 --> 00:04:23,360
+world's most iconic companies like Etsy, Dropbox, 
+Twilio, Vercel, and Webflow rely on DX. Visit  
+
+60
+00:04:23,360 --> 00:04:32,680
+DX's website at getdx.com/Lenny. This episode is 
+brought to you by Persona, the adaptable identity  
+
+61
+00:04:32,680 --> 00:04:37,760
+platform that helps businesses fight fraud, 
+meet compliance requirements, and build trust. 
+
+62
+00:04:37,760 --> 00:04:42,320
+While you're listening to this right now, how 
+do you know that you're really listening to me,  
+
+63
+00:04:42,320 --> 00:04:47,680
+Lenny? These days it's easier than ever 
+for fraudsters to steal PII, faces,  
+
+64
+00:04:47,680 --> 00:04:53,080
+and identities. That's where Persona comes in. 
+Persona helps leading companies like LinkedIn,  
+
+65
+00:04:53,080 --> 00:04:59,360
+Etsy, and Twilio securely verify individuals and 
+businesses across the world. What sets Persona  
+
+66
+00:04:59,360 --> 00:05:04,760
+apart is its configurability. Every company 
+has different needs depending on its industry,  
+
+67
+00:05:04,760 --> 00:05:10,720
+use cases, risk tolerance, and user demographics. 
+That's why Persona offers flexible building blocks  
+
+68
+00:05:10,720 --> 00:05:15,840
+that allow you to build tailored collection and 
+verification flows that maximize conversion while  
+
+69
+00:05:15,840 --> 00:05:21,120
+minimizing risks. Plus Persona's orchestration 
+tools, automate your identity process so that you  
+
+70
+00:05:21,120 --> 00:05:26,280
+can fight rapidly shifting fraud and meet new 
+waves of regulation. Whether you're a startup  
+
+71
+00:05:26,280 --> 00:05:33,960
+or an enterprise business Persona has a plan for 
+you. Learn more at withpersona.com'Lenny. Again,  
+
+72
+00:05:33,960 --> 00:05:42,360
+that's with P-E-R-S-O-N-A.com/Lenny. Okay, so 
+let's start by talking about the hard path.
+
+73
+00:05:42,360 --> 00:05:42,960
+Okay.
+
+74
+00:05:42,960 --> 00:05:47,640
+Advice that I've heard you share with 
+people often is when they're trying  
+
+75
+00:05:47,640 --> 00:05:51,360
+to decide amongst a bunch of options 
+is to choose the harder path because  
+
+76
+00:05:51,360 --> 00:05:56,360
+that makes life easier down the road. 
+Share this advice why it's so important,  
+
+77
+00:05:56,360 --> 00:05:59,640
+where you learned, where you developed 
+that this is the right approach.
+
+78
+00:05:59,640 --> 00:06:04,560
+But the short version is that if you have a 
+choice and you choose the easy thing and it  
+
+79
+00:06:04,560 --> 00:06:10,280
+works great. If you choose the hard thing and it 
+works great, you did more work, but if it doesn't  
+
+80
+00:06:10,280 --> 00:06:15,000
+work and you chose the easy thing, you've actually 
+not learned anything because you chose the... You  
+
+81
+00:06:15,000 --> 00:06:18,080
+haven't done a lot of work, you haven't probably 
+worked with the smartest people because they're  
+
+82
+00:06:19,000 --> 00:06:22,920
+not usually around on the easy path, and what 
+happens is you've gone through this exercise  
+
+83
+00:06:22,920 --> 00:06:27,880
+and now you're like, I've kind of lost. I lost 
+the choice, or I was trying to do something,  
+
+84
+00:06:27,880 --> 00:06:32,720
+it didn't work out for me. But if you do 
+the hard path and it doesn't work, actually  
+
+85
+00:06:32,720 --> 00:06:37,600
+you still win because you've now done something 
+hard. You've probably worked with smart people,  
+
+86
+00:06:37,600 --> 00:06:41,600
+you've learned something along the way that is 
+valuable, and I can give you a quick example. 
+
+87
+00:06:41,600 --> 00:06:46,640
+So I meet lots of job seekers and they're like, 
+I go, "What are you doing to try to find a job?"  
+
+88
+00:06:46,640 --> 00:06:51,440
+I'm like, "I'm sending out 10 resumes a day." I'm 
+like, "Okay." That sounds kind of easy, and are  
+
+89
+00:06:51,440 --> 00:06:55,640
+you really learning anything from sending out 10 
+resumes a day? Versus I would say to them, "Hey,  
+
+90
+00:06:55,640 --> 00:06:58,720
+you know all these companies you're interested 
+in, Shopify might be one of them. Why don't you  
+
+91
+00:06:58,720 --> 00:07:03,720
+look at the API Docs and build something, build 
+a Shopify app, build an admin extension, build  
+
+92
+00:07:03,720 --> 00:07:08,920
+something on top of Shopify." Even if you don't 
+get a job at Shopify, which is maybe your goal,  
+
+93
+00:07:08,920 --> 00:07:12,880
+you've learned something, you've built something, 
+you have things in your GitHub repo now and you  
+
+94
+00:07:12,880 --> 00:07:16,640
+can show people. You're learning about the 
+product that might translate to a job you  
+
+95
+00:07:16,640 --> 00:07:21,160
+might get somewhere else. So I think that even 
+though it's harder, right? Of course, you can't  
+
+96
+00:07:21,160 --> 00:07:26,160
+every day build an app on a different platform.
+Maybe you can once a day. You will learn something  
+
+97
+00:07:26,160 --> 00:07:29,720
+in the hard path. And the same thing happened 
+to me in taking hard courses. I would get worse  
+
+98
+00:07:29,720 --> 00:07:33,520
+marks, but I ended up meeting smarter people 
+in those courses because they were there for  
+
+99
+00:07:33,520 --> 00:07:38,200
+the same reason I was because the content was 
+hard. And so that's something that I've just  
+
+100
+00:07:38,200 --> 00:07:43,080
+realized in my life that if I do the hard thing 
+and I just naturally tend towards doing that,  
+
+101
+00:07:43,080 --> 00:07:46,400
+I ended up doing... I went to Waterloo and 
+I did a minor in electrical engineering on  
+
+102
+00:07:46,400 --> 00:07:50,160
+top of computer science, and when I did my 
+MBA, I did a minor in financial engineering  
+
+103
+00:07:50,160 --> 00:07:54,240
+because the smarter people were in that 
+path and they're still my friends today.
+
+104
+00:07:54,240 --> 00:07:58,800
+So building on the last point you just made, 
+people could hear this and think, okay,  
+
+105
+00:07:58,800 --> 00:08:05,960
+if it's harder, that's going to be the right path. 
+Sometimes harder is still a bad idea. For example,  
+
+106
+00:08:05,960 --> 00:08:12,040
+joining a terrible company that's extremely 
+frustrating to work at or building, I don't know,  
+
+107
+00:08:12,040 --> 00:08:15,880
+a house in a really dumb way, but it's just 
+really hard. What else do you find is important  
+
+108
+00:08:15,880 --> 00:08:19,840
+to think about when you're thinking it's not just 
+harder, but also XYZ should probably be true?
+
+109
+00:08:19,840 --> 00:08:25,240
+Yeah, one real one is of course the people, 
+because I find that my path has always focused  
+
+110
+00:08:25,240 --> 00:08:29,880
+on trying to pick the best learning journey. 
+Where can I learn the most? And for me,  
+
+111
+00:08:29,880 --> 00:08:33,880
+everyone's different. Some people might learn 
+better from books or the domain they're in,  
+
+112
+00:08:33,880 --> 00:08:38,280
+but for me, I learn a lot from people, and 
+so I try to put myself in those harder rooms  
+
+113
+00:08:38,280 --> 00:08:41,440
+on purpose. There was a time when I was doing 
+my MBA in financial engineering, by the way,  
+
+114
+00:08:41,440 --> 00:08:46,480
+and I'm a tech guy and still a tech guy, and 
+all these people were going into finance jobs. 
+
+115
+00:08:46,480 --> 00:08:50,840
+There was a point where somebody said to me, "Why 
+are you in this class?" Because they knew that  
+
+116
+00:08:50,840 --> 00:08:56,280
+I was doing it for fun, and so it was because it 
+was the learning journey. And so I would say a big  
+
+117
+00:08:56,280 --> 00:09:01,040
+part of it for me is yes, there's the how do you 
+win even if you lose, because if it goes poorly,  
+
+118
+00:09:01,040 --> 00:09:05,560
+you can still come out of it with skills, but 
+if you actually take the hard path, you'll have  
+
+119
+00:09:05,560 --> 00:09:12,520
+these intense working relationships with smart 
+people that again will continue on in your life. 
+
+120
+00:09:12,520 --> 00:09:16,800
+And that also just forces you to be in this 
+constant state of uncomfort by going into these  
+
+121
+00:09:16,800 --> 00:09:20,080
+rooms and saying, "I don't know anything," 
+and it's harder. And I agree with you. You  
+
+122
+00:09:20,080 --> 00:09:23,080
+don't want to do dumb things like, oh, let's 
+just do this thing in a dumb way. That's not  
+
+123
+00:09:23,080 --> 00:09:29,040
+what I mean. I mean, let's try to do the hard 
+thing that we can learn from. And by the way,  
+
+124
+00:09:29,040 --> 00:09:34,040
+it happens to be on the path. It's just is 
+it might take more manual work or it might  
+
+125
+00:09:34,040 --> 00:09:37,640
+not be the way most people do it, but we 
+think we can learn more from that path.
+
+126
+00:09:37,640 --> 00:09:42,440
+Speaking of that, I found this great quote from 
+you, "Not everyone can look stupid in public over  
+
+127
+00:09:42,440 --> 00:09:49,320
+and over, but I believe it's my superpower and I 
+try to make it my whole team's superpower too."
+
+128
+00:09:49,320 --> 00:09:56,160
+Yeah, I mean, it sounds funny, but again, I'm 
+the one who's always trying super dumb things  
+
+129
+00:09:56,160 --> 00:10:02,120
+and sometimes they work, and even my wife 
+hates that I try these things even at home,  
+
+130
+00:10:02,120 --> 00:10:06,800
+right? I'll just like, what's an example? It 
+might be a new washing machine and I might try  
+
+131
+00:10:06,800 --> 00:10:10,320
+some weird mode with some clothes, and I'm 
+like, "Oh, you ruin the clothes." I'm like,  
+
+132
+00:10:10,320 --> 00:10:14,320
+okay. But now I know that this mode should not be 
+used, but maybe I would've uncovered that there's  
+
+133
+00:10:14,320 --> 00:10:20,080
+some super fast, quick wash that I can do in 20 
+minutes that now saves us 40 minutes of wash time  
+
+134
+00:10:20,080 --> 00:10:24,240
+every single time we use the washing machine.
+So there's things like that, but I will ruin  
+
+135
+00:10:24,240 --> 00:10:29,320
+lots of clothes trying to do that, but the 
+same at work. We'll try things and sometimes  
+
+136
+00:10:29,320 --> 00:10:33,440
+it can lead to disaster, hopefully not, but 
+you can imagine people trying to like, oh,  
+
+137
+00:10:33,440 --> 00:10:39,000
+let me try this new configuration of GCP and 
+maybe we'll get some benefit, but maybe we'll  
+
+138
+00:10:39,000 --> 00:10:44,040
+take Shopify down. We don't want to do that. 
+So you want to have some sort of guardrails.  
+
+139
+00:10:44,040 --> 00:10:48,880
+But there is something around trying dumb things 
+and saying dumb things. Half the time, by the way,  
+
+140
+00:10:48,880 --> 00:10:55,560
+when I say something dumb, people go, "I had the 
+same question." They just were scared to say it.
+
+141
+00:10:55,560 --> 00:10:58,880
+So for folks that may want to, because 
+I feel like this skill is so hard,  
+
+142
+00:10:58,880 --> 00:11:02,720
+but so important, being okay with 
+failing, being okay with looking dumb,  
+
+143
+00:11:02,720 --> 00:11:07,560
+is there something you tell people to 
+help them build this other than just like,  
+
+144
+00:11:07,560 --> 00:11:12,040
+I'm genetically good at this stuff? What helped 
+you become comfortable with being wrong and  
+
+145
+00:11:12,040 --> 00:11:16,960
+failing before you were a big shot exec where it's 
+like, oh, he's fine. He knows what he's doing.
+
+146
+00:11:16,960 --> 00:11:21,640
+I don't know. I mean, I kind of grew up working 
+in retail and people come into the store,  
+
+147
+00:11:21,640 --> 00:11:26,280
+and then I would say, "Hey," and you're working on 
+commission, and they're not always buying stuff,  
+
+148
+00:11:26,280 --> 00:11:29,400
+and if they don't buy it, you don't 
+make any money. And so maybe just the  
+
+149
+00:11:29,400 --> 00:11:33,320
+fact of going up and forcing myself to 
+talk to people and then trying to get  
+
+150
+00:11:33,320 --> 00:11:36,440
+them to, and maybe you spend an hour with 
+a client and then they don't buy anything,  
+
+151
+00:11:36,440 --> 00:11:41,880
+but you're getting that reaction of a bunch of 
+negatives, and all you have to do is say, okay,  
+
+152
+00:11:41,880 --> 00:11:44,960
+and just go to the next customer. You can't 
+really well on it and be like, oh my God,  
+
+153
+00:11:46,600 --> 00:11:49,840
+my whole day is ruined. But instead, you have to 
+learn from that and say, "Okay, let me try this.  
+
+154
+00:11:49,840 --> 00:11:55,600
+Let me try that." And it's not easy, but it was 
+a way to build up some confidence and people say,  
+
+155
+00:11:55,600 --> 00:12:01,040
+this telemarketing, or there's a bunch of 
+things you can do to get a lot of rejection.  
+
+156
+00:12:01,040 --> 00:12:06,200
+Cold calling is another one, and that can lead you 
+to actually building up resistance. I don't know  
+
+157
+00:12:06,200 --> 00:12:10,800
+if I'm genetically better at it or not. I just 
+think that I literally don't care if I look dumb.  
+
+158
+00:12:10,800 --> 00:12:16,640
+I've always said the dumb thing, I'm not doing 
+things on purpose to get nos, which by the way,  
+
+159
+00:12:16,640 --> 00:12:22,920
+is part of some sales training, which is go and 
+get 10 nos. But I haven't done that. But I have  
+
+160
+00:12:22,920 --> 00:12:27,720
+been in many situations with many sharp people, 
+business people, successful people who have  
+
+161
+00:12:27,720 --> 00:12:32,240
+said to me... Turn around and said, "That's the 
+stupidest fucking question I've ever heard." I've  
+
+162
+00:12:32,240 --> 00:12:36,000
+definitely had that happen to me. And I'm like, 
+"All right, let's move on to the next question."
+
+163
+00:12:36,000 --> 00:12:40,400
+I love that attitude and I think that's key 
+to it. It's just bounce off of it and not be  
+
+164
+00:12:40,400 --> 00:12:44,600
+crumble and I think it's empowering for 
+folks to hear from someone like you that  
+
+165
+00:12:44,600 --> 00:12:48,240
+has done so well that people tell you that 
+is the dumbest question I've ever heard-
+
+166
+00:12:48,240 --> 00:12:49,320
+Oh yeah, still.
+
+167
+00:12:49,320 --> 00:12:50,400
+Still. Okay.
+
+168
+00:12:50,400 --> 00:12:54,360
+Yeah. So how about this? That I heard that's 
+the dumbest fucking question. And then recently  
+
+169
+00:12:54,360 --> 00:13:01,200
+I heard, I've already explained this to you 
+three times because I kept asking and I didn't  
+
+170
+00:13:01,200 --> 00:13:04,320
+understand, and literally I got this message back 
+saying, "I've already explained this to you three  
+
+171
+00:13:04,320 --> 00:13:10,360
+times." I'm like, "Okay, I still don't get it." So 
+my goal there is not to annoy the person, but it's  
+
+172
+00:13:10,360 --> 00:13:15,720
+to understand the content. And actually, by the 
+way, I say these were messages, I saved them. I  
+
+173
+00:13:15,720 --> 00:13:20,400
+literally screenshot it because I'm like, remember 
+this? It doesn't matter. I'm trying to learn.
+
+174
+00:13:20,400 --> 00:13:24,560
+One more question along these lines. I was 
+looking at your LinkedIn and your career history,  
+
+175
+00:13:24,560 --> 00:13:29,120
+and I noticed that you worked for a different 
+billionaire every decade of your life.  
+
+176
+00:13:29,720 --> 00:13:36,080
+So there's a guy named Joe Lemond in your twenties 
+and Chamath in your thirties and Toby this decade,  
+
+177
+00:13:36,080 --> 00:13:40,760
+maybe yourself next decade, if things go well. 
+Other than what you've shared or maybe it is what  
+
+178
+00:13:40,760 --> 00:13:44,680
+you've shared, is there a thread across these 
+three folks that have been really successful  
+
+179
+00:13:44,680 --> 00:13:49,520
+that you've learned from that maybe is consistent 
+across them all or even just specific to each one?
+
+180
+00:13:49,520 --> 00:13:53,680
+It's interesting because again, this is looking 
+back, you're like, wait a sec, I didn't plan it  
+
+181
+00:13:53,680 --> 00:13:56,440
+this way. There's no way you could plan it, right? 
+I'm going to work for a different billionaire  
+
+182
+00:13:56,440 --> 00:14:03,000
+every decade. That's not how it works but 
+they're similar. They're mostly different people,  
+
+183
+00:14:03,000 --> 00:14:06,760
+but they're similar in one thing is that they 
+have an irrational view of what the world should  
+
+184
+00:14:06,760 --> 00:14:11,760
+look like over the next decade or so. They're very 
+long-term thinkers, very rational in that they'll  
+
+185
+00:14:11,760 --> 00:14:17,800
+look and say, "Hey, in 10, 15, 20, 25 years, this 
+is what the world's going to look like." And I'm  
+
+186
+00:14:17,800 --> 00:14:23,800
+not good at seeing that vision, but I'm good at 
+trying to move towards that vision 1% a week. And  
+
+187
+00:14:23,800 --> 00:14:28,320
+so the melding of the two, I know where I'm good 
+and I'm good at pushing the ball forward. And if  
+
+188
+00:14:28,320 --> 00:14:32,560
+they're good at the long-term vision, we can both 
+align to say, "You're good at this thing. I'm good  
+
+189
+00:14:32,560 --> 00:14:38,400
+at this thing. Why don't we merge forces?"
+And so that is something that has resonated  
+
+190
+00:14:38,400 --> 00:14:44,160
+with me is like, how do I find these irrational 
+all progress depends on the unreasonable man.  
+
+191
+00:14:44,160 --> 00:14:48,640
+How do I pair with these people because I'm 
+altogether too reasonable and there's no way  
+
+192
+00:14:49,200 --> 00:14:53,720
+for me to become unreasonable, and so I have to 
+merge with these people. And so that is again,  
+
+193
+00:14:53,720 --> 00:14:59,960
+something that I specifically have sought out. And 
+even when I was starting my own company in 2015,  
+
+194
+00:14:59,960 --> 00:15:04,680
+I actually sat down and wrote a list of all 
+the unreasonable people that I knew in Toronto,  
+
+195
+00:15:04,680 --> 00:15:10,000
+and I went down the list and met every single one 
+of these entrepreneurs to figure out are we API  
+
+196
+00:15:10,000 --> 00:15:15,120
+compatible and could I work with them? And I ended 
+up picking one of them and starting a company.
+
+197
+00:15:15,120 --> 00:15:21,400
+That is an amazing story. So first of all, I 
+just love this insight that being aware of this  
+
+198
+00:15:21,400 --> 00:15:25,640
+is not a superpower of mine and I'm not going 
+to try to build it. I'm going to find someone  
+
+199
+00:15:25,640 --> 00:15:30,680
+to merge with, and connect your APIs together 
+and be the person that builds it, not the person  
+
+200
+00:15:30,680 --> 00:15:35,400
+that envisions what to build. I think that's 
+awesome because a lot of people... I need to  
+
+201
+00:15:35,400 --> 00:15:39,520
+get good at all these things. I need to become 
+the best at vision and strategy and execution  
+
+202
+00:15:39,520 --> 00:15:43,440
+and collaboration and then all these things. And 
+so I think alone, this isn't really interesting  
+
+203
+00:15:43,440 --> 00:15:47,280
+instead it's just recognize your strengths and 
+weaknesses and double down on your strengths.
+
+204
+00:15:47,280 --> 00:15:51,320
+Yeah, it sounds funny, but me and you talked 
+about it that a framework I wrote down,  
+
+205
+00:15:51,320 --> 00:15:59,160
+which I tweet out, me writing that down changed 
+how I picked jobs forever, right? Because I had  
+
+206
+00:15:59,160 --> 00:16:04,960
+this lull after my first job in between where 
+I was trying to figure out why nothing felt as  
+
+207
+00:16:04,960 --> 00:16:09,520
+exciting as my first job. And it turns out 
+that it took me to sit down and be like,  
+
+208
+00:16:09,520 --> 00:16:13,520
+what do I actually care about? And people can get 
+confused. I get confused all the time, by the way,  
+
+209
+00:16:13,520 --> 00:16:20,480
+by things that are not on my framework. So for 
+example, a good one, title, company, money,  
+
+210
+00:16:20,480 --> 00:16:24,880
+all these things can confuse you because you could 
+have somebody say recruiter messages you and says,  
+
+211
+00:16:24,880 --> 00:16:28,120
+"Hey, by the way, here's a new job and here's the 
+compensation." You're like, "Oh my God, this is  
+
+212
+00:16:28,120 --> 00:16:33,640
+exciting." And if you don't have a written down 
+framework of the things you actually care about,  
+
+213
+00:16:33,640 --> 00:16:37,880
+it's very hard to be distracted. So very hard 
+not to be distracted. You get distracted by  
+
+214
+00:16:37,880 --> 00:16:42,920
+that. So instead, I look at the framework and 
+go, does this align with my framework? Right? 
+
+215
+00:16:42,920 --> 00:16:47,520
+Actually to the point of, I actually sent my 
+framework to a recruiter one time and I said,  
+
+216
+00:16:47,520 --> 00:16:49,400
+"Hey, this thing," because they kept 
+going back and forth to me and I go,  
+
+217
+00:16:49,400 --> 00:16:56,080
+"Hey, this doesn't align with my framework." So 
+it really saves me time from not being distracted,  
+
+218
+00:16:56,080 --> 00:17:00,640
+but it also forced me to think about every 
+year I can reevaluate what I'm doing and  
+
+219
+00:17:00,640 --> 00:17:04,440
+look at the framework and say, "Is this true 
+to my values?" Now, my wife will say this,  
+
+220
+00:17:04,440 --> 00:17:09,680
+that I'm like a robot. When I realize 
+that my framework is being violated,  
+
+221
+00:17:09,680 --> 00:17:16,200
+I will resign instantly and I've done that before. 
+So without even having another job or anything,  
+
+222
+00:17:16,200 --> 00:17:22,880
+I just go like, oh, my framework is being violated 
+and then resign. There's this thing where I know  
+
+223
+00:17:22,880 --> 00:17:26,840
+what I enjoy working on, and that framework 
+helps me find it. And so I encourage everyone,  
+
+224
+00:17:26,840 --> 00:17:31,520
+anybody looking for a job I always say, "Write 
+down a framework. You can use mine as inspiration,  
+
+225
+00:17:32,160 --> 00:17:37,560
+but figure out what you care about and make sure 
+that what you're working on lines up with that."
+
+226
+00:17:37,560 --> 00:17:42,280
+And this framework is the questions to ask about 
+where to go work. That's your framework. Okay,  
+
+227
+00:17:42,280 --> 00:17:46,600
+cool. We'll link to that so folks can check it 
+out. The example of you resigning when it didn't  
+
+228
+00:17:46,600 --> 00:17:50,520
+meet your framework, is that a story you're up for 
+sharing? Is there something to learn from that?
+
+229
+00:17:50,520 --> 00:17:55,640
+Yeah, sure. So this happened when I was 
+at my previous, a few companies ago,  
+
+230
+00:17:55,640 --> 00:17:59,320
+we were running a mobile company called Xtreme 
+Labs. That was the one that Chamath was the  
+
+231
+00:17:59,320 --> 00:18:04,480
+major investor in and so we worked with him 
+directly. And what I realized was... And so  
+
+232
+00:18:04,480 --> 00:18:07,960
+that company was amazing. We worked on it for 
+many years. It was a mobile app development  
+
+233
+00:18:07,960 --> 00:18:11,600
+company. We got to work on mobile apps for 
+the biggest brands in the world, Facebook,  
+
+234
+00:18:11,600 --> 00:18:16,920
+Twitter, Instagram, Vine, the NFL, NBA, Bloomberg, 
+Slack, you name it we worked on those mobile apps,  
+
+235
+00:18:16,920 --> 00:18:23,200
+and this is right when the iPhone and Android 
+were really gaining steam in '09 to 2013 era.  
+
+236
+00:18:23,200 --> 00:18:27,960
+And then we eventually got acquired by Pivotal. 
+And over time, my role at Pivotal, Pivotal,  
+
+237
+00:18:27,960 --> 00:18:32,240
+and Pivotal Labs changed from, hey, I was 
+running the biggest office in the world. I  
+
+238
+00:18:32,240 --> 00:18:37,000
+was running the biggest pair programming office.
+I'm a big fan of pair programming to one in which  
+
+239
+00:18:37,000 --> 00:18:43,120
+we were really trying to attach consulting to 
+the product. And I ended up being a field CTO,  
+
+240
+00:18:43,120 --> 00:18:47,800
+which really, I mean it was fun to learn about 
+that world, but it was different than what I was  
+
+241
+00:18:47,800 --> 00:18:52,360
+doing. And so if I looked across my framework, it 
+was violating all the things that I was trying to  
+
+242
+00:18:52,360 --> 00:18:57,040
+work. I wasn't working with the smartest people 
+anymore. I was on IC. I wasn't learning as much  
+
+243
+00:18:57,040 --> 00:19:00,680
+as I could be learning. And so I wasn't on this 
+and I wasn't having a lot of impact. I was like,  
+
+244
+00:19:00,680 --> 00:19:05,280
+oh, wait a sec, this is completely not 
+aligned. And then I just told the team,  
+
+245
+00:19:05,280 --> 00:19:10,400
+"Hey, I plan on resigning." And that, by the way, 
+led to great other things because I'm an investor  
+
+246
+00:19:10,400 --> 00:19:14,160
+in new companies that have spun out from there 
+and it was a great experience. I'm just saying  
+
+247
+00:19:14,160 --> 00:19:20,040
+it at the time, lended me to say, "Hey, you're 
+not actually focused on the right things."
+
+248
+00:19:20,040 --> 00:19:23,920
+I want to come back to Xtreme Labs. I know 
+there's other stories there that are interesting,  
+
+249
+00:19:23,920 --> 00:19:29,520
+but first I want to talk about another theme 
+of things that people often raised when I asked  
+
+250
+00:19:29,520 --> 00:19:36,080
+them about you. And this one is intensity, and 
+it's specifically creating intensity in your  
+
+251
+00:19:36,080 --> 00:19:40,480
+organization and the value of that, the power of 
+that. I've seen that the way you describe this  
+
+252
+00:19:40,480 --> 00:19:48,520
+and I love is how do you expend more kilojoules 
+per hour versus spend more hours on work. So  
+
+253
+00:19:48,520 --> 00:19:53,280
+talk about just why intensity, first of 
+all, is so important to an organization.
+
+254
+00:19:53,280 --> 00:19:59,360
+Yeah. So I think there's a few things. One, I have 
+this fundamental belief that one hour is one hour.  
+
+255
+00:19:59,360 --> 00:20:03,800
+It's the same hour. If you spend an hour or I 
+spend an hour, it's the same time that goes by.  
+
+256
+00:20:03,800 --> 00:20:11,960
+And if I just expend more calories in that hour. 
+Let's say we both work nine to five. If I can just  
+
+257
+00:20:11,960 --> 00:20:17,760
+get more done in the nine-to-five, we have both... 
+The time has elapsed the same for us, but I just  
+
+258
+00:20:17,760 --> 00:20:21,200
+got more done. And that allows me, of course, 
+then I'd be like, "Hey, I'm going to take my kid  
+
+259
+00:20:21,200 --> 00:20:25,560
+to soccer and do other stuff." We can still do the 
+same things out of work, but during work, I just  
+
+260
+00:20:25,560 --> 00:20:31,280
+want to try to get as much done as possible during 
+the time versus expanding the time and I can give  
+
+261
+00:20:31,280 --> 00:20:36,000
+you an example. I used to work at a company 
+where it was like I worked 12 hours a day, but  
+
+262
+00:20:36,000 --> 00:20:39,680
+I was playing foosball in the middle of the day.
+And then we'd go for a coffee break and you do  
+
+263
+00:20:39,680 --> 00:20:46,200
+these things. And of course, the time expanded 
+to 12 hours versus trying to compress into  
+
+264
+00:20:46,200 --> 00:20:50,000
+that eight-hour day. And pair programming is a 
+great example because, so it's such an intense  
+
+265
+00:20:50,000 --> 00:20:56,320
+activity. Two people on one machine, you can get 
+so much done when two people are working together,  
+
+266
+00:20:56,320 --> 00:21:01,480
+not being distracted by the internet and 
+distractions, and just focus on writing  
+
+267
+00:21:01,480 --> 00:21:05,760
+the solution to the problem at hand. And it's so 
+tiring that usually when people switch on to pair  
+
+268
+00:21:05,760 --> 00:21:11,520
+programming, they sleep 10 to 12 hours a night the 
+first few nights because it's so intense. You're  
+
+269
+00:21:11,520 --> 00:21:18,920
+working so hard. But for me, that intensity 
+actually leads to extraordinary outcomes even  
+
+270
+00:21:18,920 --> 00:21:22,640
+if you don't have to put in more hours. I think 
+most people, you probably hear this all the time,  
+
+271
+00:21:22,640 --> 00:21:26,280
+everyone says, "Oh yeah, work hard and do 
+more hours when you're young, whatever." 
+
+272
+00:21:26,280 --> 00:21:31,800
+I'm like, what if you just did more per minute? 
+Like quickly get through things. I think there's  
+
+273
+00:21:31,800 --> 00:21:40,280
+another unintuitive fact is that people who are 
+really good can actually output high-quality  
+
+274
+00:21:40,280 --> 00:21:47,200
+collateral quickly. So take a person who is good 
+and extremely good, the extremely good person can  
+
+275
+00:21:47,200 --> 00:21:50,760
+actually get a lot of output in a short amount 
+of time, and the person who's good might take  
+
+276
+00:21:50,760 --> 00:21:56,040
+longer. I think there's a time variance there that 
+people don't think about. So you can not drop the  
+
+277
+00:21:56,040 --> 00:22:02,560
+quality too much, but get the time down by 2X, 3X, 
+right? Parkinson's Law of scale instead of, if I  
+
+278
+00:22:02,560 --> 00:22:07,560
+give you an hour to do something, a really good 
+person can get a high-quality output in one hour.
+
+279
+00:22:07,560 --> 00:22:12,960
+I want to talk about how you create an org 
+that operates this way, but specifically,  
+
+280
+00:22:12,960 --> 00:22:16,520
+you just mentioned pair programming. I 
+know that's one of your favorite tools.  
+
+281
+00:22:16,520 --> 00:22:22,040
+Talk about why this is so powerful when you 
+recommended... I think as an outside observer,  
+
+282
+00:22:22,040 --> 00:22:26,960
+it's like two engineers on the same 
+code. Why wouldn't we do things half as  
+
+283
+00:22:26,960 --> 00:22:30,600
+fast? Talk about just why you're a big 
+fan of pair programming specifically.
+
+284
+00:22:30,600 --> 00:22:36,240
+It is the most underutilized management tool in 
+engineering, bar none. It is just not used as much  
+
+285
+00:22:36,240 --> 00:22:41,440
+as it could be. So pair programming, for those 
+who don't know, it's two people on one computer.  
+
+286
+00:22:41,440 --> 00:22:45,800
+So two keyboards, two mics, two monitors, but one 
+computer, they work together and if it's remote,  
+
+287
+00:22:45,800 --> 00:22:49,640
+they use it. You can use a tool like tuple, 
+which we use, and you can just remotely be on  
+
+288
+00:22:49,640 --> 00:22:54,960
+one computer, and you're totally right. The famous 
+tweet about pair programming is, wait a sec,  
+
+289
+00:22:54,960 --> 00:22:59,320
+we have two engineers on one computer, won't they 
+write half as much code? And the answer is, oh,  
+
+290
+00:22:59,320 --> 00:23:04,200
+no, no, they'll write even less than 
+that because it's not about lines of  
+
+291
+00:23:04,200 --> 00:23:07,480
+code. The throughput limiter is not hands-on 
+keyboard. It's not like we're both sitting  
+
+292
+00:23:07,480 --> 00:23:11,760
+there and the limiter is like us trying to 
+get through the keystrokes onto the screen. 
+
+293
+00:23:11,760 --> 00:23:17,040
+The limiter is where is the good elegant 
+solution? How do we think through the  
+
+294
+00:23:17,040 --> 00:23:22,880
+problem and build the right solution for the 
+problem at hand? Tobi famously built a lot of  
+
+295
+00:23:22,880 --> 00:23:28,600
+Shopify paired programming, and what he would do 
+is he would actually set a timer and him and the  
+
+296
+00:23:28,600 --> 00:23:33,760
+CTO Cody would pair program for one hour. And 
+if they did not finish the problem in one hour,  
+
+297
+00:23:33,760 --> 00:23:39,200
+they would delete all the code and they would 
+keep the tests and they would start over. And then  
+
+298
+00:23:39,200 --> 00:23:45,040
+what their thinking was, if we were not able to 
+articulate and write the code for this feature in  
+
+299
+00:23:45,040 --> 00:23:50,560
+one hour, we must be on the wrong design. We must 
+be building the wrong thing and so they delete  
+
+300
+00:23:50,560 --> 00:23:55,080
+all the code, kept the tests, and then wrote it 
+again. And sometimes he'd be over by one minute  
+
+301
+00:23:55,080 --> 00:24:00,280
+and he would still delete the code and start 
+over because his thinking was the right elegant  
+
+302
+00:24:00,280 --> 00:24:05,880
+solution should be able to be written in one hour.
+And so pair programming, I mean, that's an extreme  
+
+303
+00:24:05,880 --> 00:24:10,680
+version of it, but even at Pivotal Labs, if 
+your pair was sick that day and you wrote a  
+
+304
+00:24:10,680 --> 00:24:15,040
+bunch of code, the strong version is your pair 
+would come in the next day, delete all the code  
+
+305
+00:24:15,040 --> 00:24:20,600
+that you wrote, and then you'd write it again the 
+next day. And again, what better time to rewrite  
+
+306
+00:24:20,600 --> 00:24:25,160
+code than right after you've written it because 
+you now know the problem domain? And by the way,  
+
+307
+00:24:25,160 --> 00:24:29,440
+it sounds like a waste of time. It sounds like 
+I'm just deleting code but the reason is that  
+
+308
+00:24:29,440 --> 00:24:36,520
+code lives a long time. Code is a liability and 
+the right solution, the usually shorter lines,  
+
+309
+00:24:36,520 --> 00:24:42,280
+more elegant solution tends to appear after 
+you've done a bunch of pathfinding. And the  
+
+310
+00:24:42,280 --> 00:24:47,640
+only way to do that pathfinding is start and 
+then delete and then start and be like, oh, no. 
+
+311
+00:24:47,640 --> 00:24:52,880
+Now I know. Delete. And it's super hard to delete, 
+by the way, because we're humans and we have this  
+
+312
+00:24:52,880 --> 00:24:57,480
+sunk cost fallacy, so it's hard to delete. 
+But if you can do that, you will actually land  
+
+313
+00:24:57,480 --> 00:25:02,680
+upon a much, much better solution. And of course, 
+pair programming has high, high rates of learning  
+
+314
+00:25:02,680 --> 00:25:07,120
+because you're just sitting beside... You're not 
+only whether it's tuple or remote or directly,  
+
+315
+00:25:07,120 --> 00:25:11,120
+you learn keystrokes and you learn how somebody 
+thinks about a problem. You go back and forth on  
+
+316
+00:25:11,120 --> 00:25:16,160
+the talking, and yes, you will write probably less 
+code, but you will move faster along the path of  
+
+317
+00:25:16,160 --> 00:25:21,240
+delivering value for your customers than you would 
+if you did it on your own. And there's all these  
+
+318
+00:25:21,240 --> 00:25:26,040
+studies that show happiness is higher, knowledge 
+transfer is higher, less silos, intensity is  
+
+319
+00:25:26,040 --> 00:25:33,760
+higher, all the things. And at a price of 20% 
+or something of what you would normally do. 
+
+320
+00:25:33,760 --> 00:25:38,760
+The analogy I have is the underhanded 
+free throw in basketball, statistically  
+
+321
+00:25:38,760 --> 00:25:43,600
+known to sink more baskets, but looks 
+dumb and nobody does it. Literally,  
+
+322
+00:25:43,600 --> 00:25:46,560
+Shaquille O'Neal, I'm not that big a basketball 
+fan, but I read this about Shaquille O'Neal,  
+
+323
+00:25:46,560 --> 00:25:50,440
+who's a Hall of Famer, and they said, "Why 
+don't you throw underhand?" Because he was  
+
+324
+00:25:50,440 --> 00:25:53,680
+notoriously bad at free throws and he 
+goes, "It looks dumb." Even though he's  
+
+325
+00:25:53,680 --> 00:25:58,480
+paid millions of dollars a year to do this 
+thing. It looks dumb, doesn't want to do it.
+
+326
+00:25:58,480 --> 00:26:00,360
+I remember those Shaquille O'Neal years when  
+
+327
+00:26:00,360 --> 00:26:01,200
+he had a special free throw coach, and 
+I remember them talking about this-
+
+328
+00:26:01,200 --> 00:26:02,520
+... When he hit a special free throw coach. And,  
+
+329
+00:26:02,520 --> 00:26:05,440
+I remember them talking about this and he's 
+like, "No, I'm never going to do that."
+
+330
+00:26:05,440 --> 00:26:07,680
+"I'm never going to do it." Because 
+it looks dumb. And by the way,  
+
+331
+00:26:07,680 --> 00:26:11,880
+go back to the beginning of the interview. I 
+don't care what looks dumb or looking stupid,  
+
+332
+00:26:11,880 --> 00:26:16,000
+we're going to do this. And so, actually, I ran 
+the biggest pair programming shop in the world.
+
+333
+00:26:16,000 --> 00:26:21,120
+On that note, so what percentage of shop 
+Shopify do this? Is this how y'all operate?
+
+334
+00:26:21,120 --> 00:26:26,240
+Yeah. So, Shopify, I mentioned that Toby and Cody 
+did this at the beginning of Shopify. And the cool  
+
+335
+00:26:26,240 --> 00:26:30,960
+thing about pair programming is, and in my old 
+world at XtremeLabs is that we knew exactly what  
+
+336
+00:26:30,960 --> 00:26:35,600
+to build, because we were building mobile apps 
+that were almost like contract manufacturing.  
+
+337
+00:26:35,600 --> 00:26:40,000
+We're like, "We have an iOS version. Can we build 
+an Android version?" So, we quickly were able to  
+
+338
+00:26:40,000 --> 00:26:45,320
+say, "Here's the spec. Go quick." Shopify is such 
+a different company, right? We are a pathfinding  
+
+339
+00:26:45,320 --> 00:26:50,120
+company. We are trying to find the right thing 
+to build. And so, pair programming may or may  
+
+340
+00:26:50,120 --> 00:26:54,160
+not make sense all the time. Like Pivotal 
+and Xtreme, we were doing 40 hours a week. 
+
+341
+00:26:54,160 --> 00:26:58,480
+Shopify is much more of a four to eight 
+hour a week pair programming culture,  
+
+342
+00:26:58,480 --> 00:27:02,520
+where you're gathering together on a problem 
+and saying, "Hey, let's pair for half a day,  
+
+343
+00:27:02,520 --> 00:27:08,200
+or let's pair every Wednesday." And we use that 
+tool in our arsenal to move quickly down a path.  
+
+344
+00:27:08,200 --> 00:27:12,960
+But a lot of other time is spent pathfinding and 
+trying to figure out what to build, and trying  
+
+345
+00:27:12,960 --> 00:27:15,880
+to convince field be like, "Hey, we're going 
+to go down this path. Oh, now I know exactly." 
+
+346
+00:27:15,880 --> 00:27:23,000
+And sometimes, by the way, 18 months later, we've 
+now figured out all the things and that's the time  
+
+347
+00:27:23,000 --> 00:27:27,680
+we should delete everything and start over. And, 
+that's something that we will do at that point.  
+
+348
+00:27:27,680 --> 00:27:30,880
+And so, you don't want to be pair programming 
+for 18 months. You want to be wayfinding and  
+
+349
+00:27:30,880 --> 00:27:35,760
+pathfinding. And then go, "I see the matrix. 
+Let me just delete everything and now build it."  
+
+350
+00:27:35,760 --> 00:27:39,480
+Because the learning is what you're going for. We 
+have all the learning, now let's write the code.
+
+351
+00:27:39,480 --> 00:27:43,120
+Got it. So it's basically, when 
+the code, you're pretty sure this  
+
+352
+00:27:43,120 --> 00:27:49,440
+is correct and it's really important 
+segments of the code base pair program.
+
+353
+00:27:49,440 --> 00:27:54,640
+Yeah. And then also we do a lot of pairing during 
+an incident or a way to figure out together,  
+
+354
+00:27:54,640 --> 00:27:57,720
+work with somebody and say, "Hey, I'm not 
+really sure and let's jump on a call together  
+
+355
+00:27:57,720 --> 00:28:01,800
+or jump on a tuple and go down the path." And 
+say, "Let's figure out together what's going on."
+
+356
+00:28:01,800 --> 00:28:06,320
+I can't help but ask AI, how does 
+that impact this way of working?
+
+357
+00:28:06,320 --> 00:28:11,320
+So, AI is super interesting. What's happening 
+right now with an AI copilot like GitHub Copilot  
+
+358
+00:28:11,320 --> 00:28:16,800
+is it is your pair programmer. So, you now 
+can feel like you're pairing actually without  
+
+359
+00:28:16,800 --> 00:28:20,760
+another human. You can pair with the AI. And so, 
+what's happening too is that you're seeing people  
+
+360
+00:28:20,760 --> 00:28:25,560
+use Whisper, like they're talking to Cursor, 
+and they're talking through Whisper to say,  
+
+361
+00:28:25,560 --> 00:28:29,080
+"Okay, let's build a new React component that 
+does this." And they're talking and then it's  
+
+362
+00:28:29,080 --> 00:28:31,480
+building. "Oh no, that's not what I meant. 
+I meant doing this." So you can actually  
+
+363
+00:28:31,480 --> 00:28:35,440
+not even have to type, just using voice, go 
+back and forth with your pair programmer. 
+
+364
+00:28:35,440 --> 00:28:41,520
+I would say, that's amazing. I would still contend 
+take that experience and add two humans together.  
+
+365
+00:28:41,520 --> 00:28:45,960
+So you've got an AI copilot and humans, because 
+what's happening is generating code. And the two  
+
+366
+00:28:45,960 --> 00:28:49,800
+humans can look and say, "Oh, I know what it's 
+trying to do." And, either delete the code,  
+
+367
+00:28:49,800 --> 00:28:53,000
+because you have inspiration and write it 
+yourself, or just take the suggestion and  
+
+368
+00:28:53,000 --> 00:28:58,640
+move it forward. But, I love today's world of 
+AI copilots, because you never have to code  
+
+369
+00:28:58,640 --> 00:29:02,840
+loan on your own right? You never have to code 
+alone. You can try a different language now,  
+
+370
+00:29:02,840 --> 00:29:07,760
+because the API and the syntax is much 
+easier to pull forward. And so, all of  
+
+371
+00:29:07,760 --> 00:29:14,320
+those things are a win for engineering and a win 
+for everybody who wants to build any software.
+
+372
+00:29:14,320 --> 00:29:17,320
+That makes a lot of sense. Basically, 
+everyone's going to be a pair programmer-
+
+373
+00:29:17,320 --> 00:29:17,860
+Yes, exactly.
+
+374
+00:29:17,860 --> 00:29:24,160
+... In the future. Okay, I want to come back 
+to what else you have done at Shopify to create  
+
+375
+00:29:24,160 --> 00:29:28,520
+intensity. And I think, again, it's important to 
+highlight the intensity is meant to, "How do we  
+
+376
+00:29:28,520 --> 00:29:33,200
+get more done in the time we have and then 
+go home?" Not just work all day every day,  
+
+377
+00:29:33,200 --> 00:29:34,920
+weekends kind of intensity.
+
+378
+00:29:34,920 --> 00:29:37,800
+Yeah. So we have a few things that we have going 
+for us, right? So one, we have this tool called  
+
+379
+00:29:37,800 --> 00:29:41,760
+GSD, which stands for get shit done, which you've 
+probably heard from maybe talking to other Shopify  
+
+380
+00:29:41,760 --> 00:29:47,760
+folk, which is this notion of weekly updates to 
+the whole company on what's happening. Again,  
+
+381
+00:29:47,760 --> 00:29:51,920
+Parkinson's law at scale. If you ask people 
+every week, they want to show progress every  
+
+382
+00:29:51,920 --> 00:29:55,800
+single week. So that's one way I talked about 
+pair programming as well. The other thing we do  
+
+383
+00:29:55,800 --> 00:30:01,520
+as a company is, we used to have twice a year 
+was our cadence, Black Friday, Cyber Monday,  
+
+384
+00:30:01,520 --> 00:30:08,440
+or we had an event in the summer. And now, we do 
+six-week reviews. So, teams have this notion of  
+
+385
+00:30:08,440 --> 00:30:13,680
+every six weeks actually coming together and 
+walking through the roadmap, the resourcing,  
+
+386
+00:30:13,680 --> 00:30:18,720
+and what they're working on with their 
+immediate leadership, but then also, with Toby. 
+
+387
+00:30:18,720 --> 00:30:22,720
+And so, what's cool about that, and by the way, 
+it's a huge time investment, right? We all get  
+
+388
+00:30:22,720 --> 00:30:27,960
+into a room, it's happening tomorrow. So Tuesday, 
+Wednesday, Thursday, a bunch of us will be in the  
+
+389
+00:30:27,960 --> 00:30:32,440
+office together and we're going to go through 
+every project in the company, and we're going to  
+
+390
+00:30:32,440 --> 00:30:36,600
+talk about the project, the resourcing, how it's 
+going, and we're going to make changes. And again,  
+
+391
+00:30:36,600 --> 00:30:41,560
+that creates intensity, because you want to show 
+what has been done, what have you learned since  
+
+392
+00:30:41,560 --> 00:30:47,240
+the last six-week review. And, we find six weeks 
+is a very good cadence, because it's short enough  
+
+393
+00:30:47,240 --> 00:30:51,080
+that you can remember the context and it's long 
+enough... Six weeks is long enough, especially if  
+
+394
+00:30:51,080 --> 00:30:56,040
+you have, let's say, a team of a dozen engineers, 
+you can do a lot. And not only that, you can do a  
+
+395
+00:30:56,040 --> 00:31:01,240
+lot in a day, but this is a check-in point.
+And what I've noticed too with intensity is,  
+
+396
+00:31:01,240 --> 00:31:04,920
+let's say, we get a review and there's some 
+feedback we get in that review. We don't wait  
+
+397
+00:31:04,920 --> 00:31:08,760
+until the next six-week review, right? The next 
+day we are building things, we are iterating,  
+
+398
+00:31:08,760 --> 00:31:12,640
+we are tagging people. And then, by the next 
+week's we're like, "Here's the trajectory."  
+
+399
+00:31:12,640 --> 00:31:18,440
+Right? Actually, I want to get that Elon shirt 
+made, "What have you done this week?" Because,  
+
+400
+00:31:18,440 --> 00:31:23,360
+Parkinson's law is real. It sounds funny, but I 
+keep bringing this up, but whatever time you allot  
+
+401
+00:31:23,360 --> 00:31:29,040
+to something will be the time it takes, right?
+So, if you're doing something monumental, I don't  
+
+402
+00:31:29,040 --> 00:31:33,560
+know, you're doing a reorg or something, right? 
+You can do it the slow way. "Let's sit down,  
+
+403
+00:31:33,560 --> 00:31:38,600
+and plan, and roll it out." And it's probably six 
+months in most companies. Shopify, this is a week  
+
+404
+00:31:38,600 --> 00:31:42,360
+or two. You sit down, you're like, "Hey, this is 
+the bones of it. Let's bring some more people and  
+
+405
+00:31:42,360 --> 00:31:47,200
+think." But then, it's going to start leaking. 
+So we just launch it. Right? And, we do the same  
+
+406
+00:31:47,200 --> 00:31:51,280
+thing with lots of things. We just try to move 
+more quickly and get out of the... We don't do  
+
+407
+00:31:51,280 --> 00:31:56,160
+change management, we just land it, and then go, 
+"Hey everyone, it's a volatile company. This is  
+
+408
+00:31:56,160 --> 00:32:00,840
+what's happening. But this is how we get things 
+done quickly." And then, move on with our lives.
+
+409
+00:32:00,840 --> 00:32:07,840
+Wow, there's so much there. I have been through 
+the six-month reorgs. And, I think that context  
+
+410
+00:32:07,840 --> 00:32:12,080
+you just shared of, "We're at a volatile 
+company, we're changing things. It's not going  
+
+411
+00:32:12,080 --> 00:32:17,960
+to be smooth, but we think this is for the best." 
+It's just the culture of Shopify. It sounds like,  
+
+412
+00:32:17,960 --> 00:32:21,720
+"We want to keep moving fast. We know this 
+isn't going to be the smoothest thing,  
+
+413
+00:32:21,720 --> 00:32:25,360
+but we just know this better to make 
+the change at this point versus wait."
+
+414
+00:32:25,360 --> 00:32:28,600
+It's how Toby increased the resiliency in 
+the company. He would walk around in the  
+
+415
+00:32:28,600 --> 00:32:31,760
+old days when we had a data center 
+and just unplugged machines, right?
+
+416
+00:32:32,280 --> 00:32:33,400
+Chaos monkey.
+
+417
+00:32:33,400 --> 00:32:36,840
+Yeah, chaos monkey. You're right. But that 
+actually works, because it just says, "Hey,  
+
+418
+00:32:36,840 --> 00:32:41,000
+by the way, shit's going to break. And so, let's 
+be resilient to that." And so, same thing here.  
+
+419
+00:32:41,000 --> 00:32:44,800
+"Hey, by the way, someone's going to move your 
+cheese. It's fine. We are here to create more  
+
+420
+00:32:44,800 --> 00:32:49,240
+entrepreneurs in the world. We're not here to 
+have a six-month change management roadmap. And,  
+
+421
+00:32:49,240 --> 00:32:52,640
+that will just actually hurt the speed at 
+which we can deliver value to merchants."
+
+422
+00:32:52,640 --> 00:32:56,320
+So, on all the things you shared, so 
+there's weekly updates. So the weekly  
+
+423
+00:32:56,320 --> 00:32:59,320
+updates are each person shares what they're 
+working on for the week. Is that the idea?
+
+424
+00:32:59,320 --> 00:33:01,080
+Each project.
+
+425
+00:33:01,080 --> 00:33:01,620
+Each project.
+
+426
+00:33:01,620 --> 00:33:06,760
+So, each project, it has an update, it might have 
+a video of, "Here's the experience." It'll have a  
+
+427
+00:33:06,760 --> 00:33:10,960
+obviously a bunch of writing on what's changed 
+since last time. We have a process called OK1  
+
+428
+00:33:10,960 --> 00:33:16,680
+and OK2, which is like, OK1 is typically at 
+the director level where they're like, "Okay,  
+
+429
+00:33:16,680 --> 00:33:20,360
+I'm aligned with the direction that this 
+is going at." Or, "I'm not aligned." And  
+
+430
+00:33:20,360 --> 00:33:24,600
+they can make changes. Then, when it goes to 
+OK2, it's typically the VP level of the area,  
+
+431
+00:33:24,600 --> 00:33:28,400
+who's now looking to say, "Okay. What you're 
+working on actually aligns with the overall  
+
+432
+00:33:28,400 --> 00:33:32,120
+architecture. But by the way, have you looked 
+at this context? Maybe you haven't seen this,  
+
+433
+00:33:32,120 --> 00:33:35,520
+this is happening, or the industry." And so, 
+you're trying to align at that level. And then,  
+
+434
+00:33:35,520 --> 00:33:37,600
+again, like I mentioned, every 
+six weeks we go through with Toby,  
+
+435
+00:33:37,600 --> 00:33:42,480
+and he's an intense guy himself.
+And so, a lot of it is like, "Hey,  
+
+436
+00:33:42,480 --> 00:33:49,040
+why is this taking so long? Are we overthinking 
+it? Are we not trying to move forward on this  
+
+437
+00:33:49,040 --> 00:33:53,200
+thing, because we're blocked on something? Is 
+there some piece of infra?" Actually, I'll give  
+
+438
+00:33:53,200 --> 00:33:58,400
+you a good example. In one of the reviews from 
+last time, there was an interesting AI problem  
+
+439
+00:33:58,400 --> 00:34:04,920
+we were trying to solve with LLMs that required us 
+to have a very large output context window. And,  
+
+440
+00:34:04,920 --> 00:34:11,120
+most of the LLMs today have a very small output 
+context window. But in the review, right,  
+
+441
+00:34:11,640 --> 00:34:16,200
+we have shared Slack channels with all the LLM 
+folks, right? I messaged in the open AI channel,  
+
+442
+00:34:16,200 --> 00:34:21,760
+I messaged in the Gemini channel, whatever. And, 
+within an hour we had increased the context on  
+
+443
+00:34:22,320 --> 00:34:29,040
+a bunch of major models and we were able to move 
+forward through the thing, just because I asked. 
+
+444
+00:34:29,040 --> 00:34:32,360
+And so, that's an example. It didn't take another 
+six week review, but it increased the intensity,  
+
+445
+00:34:32,360 --> 00:34:35,880
+because the team was like, "Oh, we were blocked 
+because we thought we had to now chunk up this  
+
+446
+00:34:35,880 --> 00:34:39,920
+data and do this thing because we had smaller 
+output context and we thought we could do a big  
+
+447
+00:34:39,920 --> 00:34:43,200
+input context, but we'd have to do this caching." 
+And, it was like this whole thing. I'm like,  
+
+448
+00:34:43,200 --> 00:34:45,840
+"Well, did we just ask them if we get 
+bigger?" And then, they were like, "Oh,  
+
+449
+00:34:45,840 --> 00:34:50,440
+we don't have this as undocumented, but we'll 
+just enable it right now for Shopify." And so,  
+
+450
+00:34:50,440 --> 00:34:54,120
+that created the intensity of the team to be like, 
+"Oh, we can now quickly get unblocked." So that's  
+
+451
+00:34:54,120 --> 00:34:59,040
+the example of just moving quick and trying to 
+just, again, ask a dumb question. I'm like, "This  
+
+452
+00:34:59,040 --> 00:35:02,920
+is probably not possible, but..." And then, they 
+came back and said, "Oh yeah, we can do that."
+
+453
+00:35:02,920 --> 00:35:09,480
+That's a great example. And, as you're describing 
+the ways that you create intensity and velocity  
+
+454
+00:35:09,480 --> 00:35:14,960
+within Shopify, it's interesting that what you're 
+listing is a bunch of meetings and check ins,  
+
+455
+00:35:14,960 --> 00:35:18,680
+which to most people would feel like, "Why 
+do we need so many..." There's all this like,  
+
+456
+00:35:18,680 --> 00:35:23,000
+"Less meetings." And I know you guys famously 
+cancel all your meetings and that's a whole  
+
+457
+00:35:23,000 --> 00:35:27,800
+thing we can talk about. But, it's 
+interesting that more check ins and  
+
+458
+00:35:27,800 --> 00:35:31,520
+regular check ins allow you to move 
+faster. I imagine it's partly because  
+
+459
+00:35:31,520 --> 00:35:34,360
+it just makes sure you're not working on 
+things that are unnecessary, and dumb,  
+
+460
+00:35:34,360 --> 00:35:38,480
+and not going to be used. And it's just continue 
+to refine, these are actually the most important.
+
+461
+00:35:38,480 --> 00:35:43,160
+I mean, it's a combination of trust but verify, 
+right? Because don't forget, the goal of the  
+
+462
+00:35:43,160 --> 00:35:47,280
+check-in is not for you to be like, "Ha, ha, I 
+caught you not doing your work." It's not like the  
+
+463
+00:35:47,280 --> 00:35:52,680
+Dilbert boss, "Hey, did you do your thing?" Right? 
+Even when I look at the Elon text, which is like,  
+
+464
+00:35:52,680 --> 00:35:56,960
+"Hey, what did you get done this week?" It 
+wasn't to try to catch Parag in a, "You didn't  
+
+465
+00:35:56,960 --> 00:36:02,440
+do anything or you did a bunch of useless stuff." 
+It was hopefully to pair on the problem, meaning,  
+
+466
+00:36:02,440 --> 00:36:07,240
+when I ask somebody, "Hey, did we move forward 
+on this LLM project, because we now have this  
+
+467
+00:36:07,240 --> 00:36:11,600
+larger context window?" And then, they came back 
+and said, "Oh, here's what we learned." So then,  
+
+468
+00:36:11,600 --> 00:36:16,360
+I can then look at the answer and say, "Oh, 
+so now, have you thought of this? Have you  
+
+469
+00:36:16,360 --> 00:36:23,560
+tried..." It's a way to pair on the problem.
+So, we have this word, everybody talks about  
+
+470
+00:36:23,560 --> 00:36:26,520
+micromanagement as a word, and we don't 
+actually think it's a dirty word at Shopify,  
+
+471
+00:36:26,520 --> 00:36:30,560
+but the reason we don't think it's a dirty word is 
+because it's not just, again, Dilbert boss saying,  
+
+472
+00:36:30,560 --> 00:36:34,040
+"Where did you do the thing?" It's like, "Hey, 
+can I work on this problem with you? And if I  
+
+473
+00:36:34,040 --> 00:36:38,280
+work on this problem with you, I got to see where 
+you are pretty often, and then give you advice,  
+
+474
+00:36:38,280 --> 00:36:42,040
+or you're going to share context with me, 
+because I'm not in the work every day."  
+
+475
+00:36:42,040 --> 00:36:46,920
+To then come back and say, "Oh, based on what I 
+know and what you know, can we move this in this  
+
+476
+00:36:46,920 --> 00:36:51,400
+direction? Maybe that's better for merchants."
+I don't want to overuse the pairing paradigm,  
+
+477
+00:36:51,400 --> 00:36:54,960
+but it is really much like, "Can I pair with 
+you?" And I learned this actually very early  
+
+478
+00:36:54,960 --> 00:36:58,800
+in my Shopify tenure, because Toby would have 
+these one-on-ones with me and I'd be like,  
+
+479
+00:36:58,800 --> 00:37:02,320
+"Toby, you don't have to waste your time, man. 
+You hired me. I got this." Well, he goes, "Oh,  
+
+480
+00:37:02,320 --> 00:37:08,840
+you misunderstand why you're here. We are here 
+to work on problems together." And I was like,  
+
+481
+00:37:08,840 --> 00:37:13,200
+"Oh, I didn't even think..." I thought he 
+hired me to take problems away. He hired  
+
+482
+00:37:13,200 --> 00:37:17,880
+me to work on problems with me. That's 
+completely different than what I thought.
+
+483
+00:37:17,880 --> 00:37:22,320
+I love that. Okay. One thing you mentioned 
+is meeting thing. For people that don't know  
+
+484
+00:37:22,320 --> 00:37:25,600
+what you all did with meetings, I think it 
+might be worth just sharing that briefly,  
+
+485
+00:37:25,600 --> 00:37:28,320
+because it's awesome and something 
+a lot of companies can learn from.
+
+486
+00:37:28,320 --> 00:37:32,360
+Yeah, sure. Actually, the funny story 
+about the meeting Armageddon, is that,  
+
+487
+00:37:32,360 --> 00:37:36,840
+I was messaging Toby prior to me starting 
+at Shopify about meeting Armageddon. And so,  
+
+488
+00:37:36,840 --> 00:37:40,320
+I actually think I had a little hand in him 
+doing this before I got to Shopify. I was like,  
+
+489
+00:37:40,320 --> 00:37:43,000
+"Hey, have you seen..." I think it was 
+Dropbox, "Have you seen a Dropbox is doing  
+
+490
+00:37:43,000 --> 00:37:47,080
+and Meetingageddon? And so, he was like, "This 
+is super interesting." This is years before I  
+
+491
+00:37:47,080 --> 00:37:50,320
+started. So, I think it's funny that it 
+ended up being a real thing. But here's  
+
+492
+00:37:50,320 --> 00:37:57,440
+what we do. Once a year at a random time, 
+we will delete all recurring meetings that  
+
+493
+00:37:58,040 --> 00:38:03,160
+have more than two people, so not one-on- ones, 
+and are internal people only, so not interviews  
+
+494
+00:38:03,160 --> 00:38:07,440
+or external partner meetings. And then, we have 
+a two-week moratorium where you're not allowed  
+
+495
+00:38:07,440 --> 00:38:11,040
+to add a reoccurring meeting. You can have a 
+regular meeting, but not a reoccurring meeting. 
+
+496
+00:38:11,040 --> 00:38:16,360
+And the idea is that there's a lot of inertia 
+behind a recurring meeting. It just always is  
+
+497
+00:38:16,360 --> 00:38:20,040
+there, and you know it's coming up, and it's 
+hard to delete, because you're like, "Oh yeah,  
+
+498
+00:38:20,040 --> 00:38:24,920
+we talk about this thing every week." And so, 
+what we do is we just do a meeting reset. And,  
+
+499
+00:38:25,480 --> 00:38:29,720
+I think, yeah, it's just called chaos monkey and 
+the admins go in and just delete everything. Now  
+
+500
+00:38:29,720 --> 00:38:34,200
+what's cool about it is, it forces you to 
+rethink, "Do we need a recurring meeting?  
+
+501
+00:38:34,200 --> 00:38:38,080
+Or do we just need one meeting? Or do we need a 
+different cadence?" That's one thing. The other  
+
+502
+00:38:38,080 --> 00:38:44,880
+thing is it frees up so much crafter time, right?
+One of the stats I track across engineering is how  
+
+503
+00:38:44,880 --> 00:38:51,120
+many hours are individual contributors in meetings 
+per week? And we noticed that after we did... We  
+
+504
+00:38:51,120 --> 00:38:54,680
+did two things by the way. And I have a spicy 
+second one for this, but the first one was we  
+
+505
+00:38:54,680 --> 00:38:59,640
+deleted meetings. And the second thing we did 
+was we moved a lot of our Slack into Facebook  
+
+506
+00:38:59,640 --> 00:39:04,880
+workplace, which I'll talk about. Those are 
+the only two things we did. And we saw a huge  
+
+507
+00:39:04,880 --> 00:39:09,280
+decrease in the amount of time crafters were in 
+meetings. And then, we saw all kinds of other  
+
+508
+00:39:09,280 --> 00:39:12,640
+productivity enhancements, because they were 
+able to have that flow time and work on things. 
+
+509
+00:39:12,640 --> 00:39:16,560
+So, we're at something like three hours of 
+meetings per week for an individual contributor  
+
+510
+00:39:16,560 --> 00:39:20,840
+at Shopify, which is phenomenal. Three hours a 
+week is amazing. I think managers is not that  
+
+511
+00:39:20,840 --> 00:39:25,640
+bad. I think I tweeted this. I think it's six 
+or seven hours per week. That's not bad at all,  
+
+512
+00:39:25,640 --> 00:39:29,720
+in order to get aligned. And then, 
+all the rest of the time is work time.
+
+513
+00:39:29,720 --> 00:39:33,640
+And how many hours was it before 
+Meetingageddon and Workplace?
+
+514
+00:39:33,640 --> 00:39:37,360
+Yeah, you're asking me a good question. I have to 
+go look and see. But, it came down by something  
+
+515
+00:39:37,360 --> 00:39:41,440
+like 50 or 60%. It was something like five or 
+six hours for individual contributors and came  
+
+516
+00:39:41,440 --> 00:39:44,800
+down to three. And then, the managers, 
+I think it was 10 that came down to 6,  
+
+517
+00:39:44,800 --> 00:39:48,200
+something like that. But it was a huge difference. 
+And the only two things, like I mentioned,  
+
+518
+00:39:48,200 --> 00:39:53,160
+were one was the Meetingageddon, the other one was 
+like this, and I can talk about this. This is a-
+
+519
+00:39:53,160 --> 00:39:54,280
+Yes, let's talk about this.
+
+520
+00:39:54,280 --> 00:39:59,520
+... Yeah. So, I mean, I love Slack. It's the 
+IM tool. Everybody uses it. But it can for sure  
+
+521
+00:39:59,520 --> 00:40:04,320
+cause distraction. And so, what we did was 
+we moved all announcement information. So,  
+
+522
+00:40:04,320 --> 00:40:08,920
+anytime you're sending a status update or 
+large group announcement, we moved all of  
+
+523
+00:40:08,920 --> 00:40:14,000
+that to Facebook Meta Workplace, like Facebook for 
+work basically, which is now being deprecated. So,  
+
+524
+00:40:14,000 --> 00:40:20,520
+we'll have to figure that out. But, it just moved 
+all this stuff to a ML feed that you can consume  
+
+525
+00:40:20,520 --> 00:40:24,560
+differently than you would Slack, because Slack 
+is like I message you and you see an alert and  
+
+526
+00:40:24,560 --> 00:40:29,080
+all this stuff, versus Workplace is like, "Oh, I 
+want to go and consume content from the company,  
+
+527
+00:40:29,080 --> 00:40:34,240
+and get updates, and share updates." And so, that 
+reduced a lot of distraction as well. And so,  
+
+528
+00:40:34,240 --> 00:40:39,720
+I'd love to figure out what the next tool for 
+us is, but it is probably something more like  
+
+529
+00:40:39,720 --> 00:40:44,760
+a river of information that I can dip my 
+toe into, versus IM and chat everywhere.
+
+530
+00:40:44,760 --> 00:40:47,040
+That is super interesting. So, 
+specifically, things that are just  
+
+531
+00:40:47,040 --> 00:40:50,520
+updates where you don't need a discussion, 
+you almost want to discourage a discussion.
+
+532
+00:40:50,520 --> 00:40:56,400
+Yeah, I mean, it has the commenting, but 
+it's not the same tool. And, by the way,  
+
+533
+00:40:56,400 --> 00:40:59,640
+Slack is amazing, we use it. 
+It's just that for this thing,  
+
+534
+00:40:59,640 --> 00:41:02,560
+it wasn't working for us. And so, we 
+wanted to move that somewhere else.
+
+535
+00:41:02,560 --> 00:41:06,880
+I feel like, the more I dig into the 
+Shopify way of working, the more fun  
+
+536
+00:41:06,880 --> 00:41:11,600
+stuff I never expected emerges. I'm curious 
+what else is going to emerge. So we've been  
+
+537
+00:41:11,600 --> 00:41:15,800
+talking about ways that y'all, and you 
+specifically, have created intensity,  
+
+538
+00:41:15,800 --> 00:41:19,920
+especially in the engineering organization. And 
+then, you've also shared just broadly Shopify.  
+
+539
+00:41:19,920 --> 00:41:24,520
+What else is on that list? What else have you 
+found helps create more kilojoules per hour?
+
+540
+00:41:24,520 --> 00:41:27,640
+Yeah, so again, I think there's nothing, I would 
+say again, start from the beginning, there's  
+
+541
+00:41:27,640 --> 00:41:30,440
+nothing more than pair programming, because 
+literally you can't do anything else but be on  
+
+542
+00:41:30,440 --> 00:41:35,360
+your computer. So pair programming is the number 
+one. I will say, the weekly cadence helps a lot,  
+
+543
+00:41:35,360 --> 00:41:38,520
+right, which you mentioned. Again, which is 
+part of GSD, which is sharing the updates,  
+
+544
+00:41:38,520 --> 00:41:42,360
+and then the six-week reviews, that does a 
+lot. On the other side, we also have a lot  
+
+545
+00:41:42,360 --> 00:41:47,560
+of metrics and alerts that help us see when 
+potentially things might be happening in the  
+
+546
+00:41:47,560 --> 00:41:52,240
+system that can allow us to be like, "Hey, 
+wait a sec, there's too many things going on  
+
+547
+00:41:52,240 --> 00:41:56,200
+of this type. We probably have to sit back 
+and reset and figure out what's going on." 
+
+548
+00:41:56,200 --> 00:42:00,160
+So one thing that happened, for example, was 
+we started seeing that it was taking a lot of  
+
+549
+00:42:00,160 --> 00:42:04,840
+time to develop in our admin, like engineers at 
+Shopify developing in the admin. So we called,  
+
+550
+00:42:04,840 --> 00:42:09,280
+what's called, a code yellow, which is before 
+code red. But code yellow is this idea of like,  
+
+551
+00:42:09,280 --> 00:42:13,280
+"Hey, we're going to call a code yellow on the 
+admin." We want to make sure that the developer  
+
+552
+00:42:13,280 --> 00:42:18,880
+experience inside Shopify is really good. It 
+should be easy to start up the repo. It should  
+
+553
+00:42:18,880 --> 00:42:22,680
+be easy to make changes, it should be easy to see 
+the changes. And so, those are the things that,  
+
+554
+00:42:22,680 --> 00:42:27,240
+again, we can create intensity, because this code 
+yellow allows the champion to tap anyone on the  
+
+555
+00:42:27,240 --> 00:42:30,800
+shoulder and say, "Stop what you're doing 
+and come help this thing." Which is an  
+
+556
+00:42:30,800 --> 00:42:36,720
+infrastructure layer thing. And by building out 
+this infrastructure, it allows you to go fast. It  
+
+557
+00:42:36,720 --> 00:42:40,720
+takes longer to build infrastructure, but it 
+makes you go fast forever afterwards, right? 
+
+558
+00:42:40,720 --> 00:42:47,680
+I'll actually give you an example of one of these. 
+So, we in 2020, 2021, the heyday of pandemic,  
+
+559
+00:42:47,680 --> 00:42:51,720
+obviously, there was a crypto summer again 
+and crypto was going nuts. And we were sitting  
+
+560
+00:42:51,720 --> 00:42:56,360
+back and saying, "Wow, a lot of our merchants 
+are now asking for NFT gating." NFT gating,  
+
+561
+00:42:56,360 --> 00:43:01,000
+which is, "If you have the token, you can now 
+go into the storefront and see my products.  
+
+562
+00:43:01,000 --> 00:43:04,880
+You can see my prices and you can check it 
+out, but only if you have the token." And,  
+
+563
+00:43:04,880 --> 00:43:08,080
+we were getting a lot of demand from merchants 
+to be like, "We want to do this. We want to sell  
+
+564
+00:43:08,080 --> 00:43:12,640
+an NFT. And we want our buyers to have the NFT to 
+have this great experience." And we're like, "We  
+
+565
+00:43:12,640 --> 00:43:18,000
+agree. We want you to be able to do whatever you 
+want. And so, we want to build this for you too." 
+
+566
+00:43:18,000 --> 00:43:21,840
+And, sitting with Toby, he's like, "You 
+guys are thinking about it wrong." He goes,  
+
+567
+00:43:21,840 --> 00:43:25,680
+"How long would it take to build NFT gating?" I'm 
+like, "I don't know. Two, three weeks." He goes,  
+
+568
+00:43:25,680 --> 00:43:31,640
+"Now, how long would it take to build a platform 
+layer, which exposes APIs so anyone could build  
+
+569
+00:43:31,640 --> 00:43:37,600
+NFT gating in one hour?" I'm like, "I don't know. 
+Two, three months." He goes, "Do that." He goes,  
+
+570
+00:43:37,600 --> 00:43:42,200
+"Because you don't know what they're going to 
+build on top of the platform." NFT gating is  
+
+571
+00:43:42,200 --> 00:43:46,520
+one thing, one use case, but if you spend the 
+time to build out the infrastructure layer,  
+
+572
+00:43:46,520 --> 00:43:50,480
+he calls it putting gas in the tank, if you put 
+the gas in the tank, people could drive on that  
+
+573
+00:43:50,480 --> 00:43:55,120
+gas for a long time going forward. And so, he 
+goes, "I always want you to think about..."  
+
+574
+00:43:55,120 --> 00:44:00,440
+And the key part was, "What can you build so 
+anyone could build this in one hour?" Right? 
+
+575
+00:44:00,440 --> 00:44:04,720
+So, he does this thing to us all the time where 
+he goes, "Oh, this should only be..." He'll say  
+
+576
+00:44:04,720 --> 00:44:09,040
+it and people get the wrong thing. He'll say, "Oh, 
+you could write this in a day." And what he means  
+
+577
+00:44:09,040 --> 00:44:14,360
+is, "What has to be true so that you could write 
+this in a day? What infrastructure do you need?"  
+
+578
+00:44:14,360 --> 00:44:19,520
+And, he actually develops this way. He will 
+write code against an API that doesn't exist,  
+
+579
+00:44:19,520 --> 00:44:22,680
+because he's like, "You know what should 
+exist here? This API." He'll write the code,  
+
+580
+00:44:22,680 --> 00:44:27,040
+he'll go back and forth and refine the client on 
+the server, and then he'll go, "This is correct,  
+
+581
+00:44:27,560 --> 00:44:31,360
+the correct client code. Now, let 
+me go implement the server code." 
+
+582
+00:44:31,360 --> 00:44:36,040
+And this is notion of building things as 
+infrastructure that sound slower today, because  
+
+583
+00:44:36,040 --> 00:44:40,160
+it's going to take... It's two, three months, 
+instead of two or three weeks. But after that, the  
+
+584
+00:44:40,160 --> 00:44:44,840
+things that people built on top, right, were so 
+easy to build, there were so many more scenarios  
+
+585
+00:44:44,840 --> 00:44:52,000
+that were emerged. It's just a different way of 
+thinking about software. And, it's intensity in  
+
+586
+00:44:52,000 --> 00:44:55,320
+a different way, it's intensity around building 
+this infrastructure layer, which we want to build  
+
+587
+00:44:55,320 --> 00:45:00,720
+quickly, but takes two or three months, in this 
+case, but then can get everyone building on top  
+
+588
+00:45:00,720 --> 00:45:06,040
+of our infra in a much, much quicker way. And of 
+course, who knows what can flourish from there?
+
+589
+00:45:06,040 --> 00:45:09,800
+It's interesting and it makes sense that so much 
+of the way you all think is about building the  
+
+590
+00:45:09,800 --> 00:45:16,200
+best possible platform, versus the, necessarily, 
+best possible point solution for someone. And  
+
+591
+00:45:16,200 --> 00:45:20,400
+it also explains why you spend so much time in 
+crafting really great code and pair programming,  
+
+592
+00:45:20,400 --> 00:45:23,840
+because again, it's a platform for 
+other people to build stuff on. So,  
+
+593
+00:45:23,840 --> 00:45:29,480
+I think, a lot of this is very useful, 
+especially for platform businesses.
+
+594
+00:45:29,480 --> 00:45:37,000
+No, exactly. And actually, you're making me 
+think of a stat. So, last year, maybe a tangent,  
+
+595
+00:45:37,000 --> 00:45:41,400
+but I tweeted out that GitHub Copilot has written 
+over 1 million lines of code for Shopify. And  
+
+596
+00:45:41,400 --> 00:45:44,680
+people are like, "Oh my god." And it got picked 
+up. And everyone's talking about it. And I go,  
+
+597
+00:45:44,680 --> 00:45:48,360
+"I don't know why is everybody getting so crazy, 
+because what I want to see is GitHub Copilot  
+
+598
+00:45:48,360 --> 00:45:53,480
+deleting 1 million lines of code." That's when you 
+know we're actually at this point where this is  
+
+599
+00:45:53,480 --> 00:45:59,280
+close to an engineer. Right? And so, we famously 
+have deleted millions of lines of code this year,  
+
+600
+00:45:59,280 --> 00:46:03,480
+because we were trying to focus on, again, 
+the sunk cost and rebuilding things elegantly,  
+
+601
+00:46:03,480 --> 00:46:07,120
+or you don't need this anymore and rebuilding. 
+And I even tweeted out, I think someone said,  
+
+602
+00:46:07,120 --> 00:46:11,600
+"Oh, Shopify is in the top 10 Ruby code bases in 
+the world." And I said, "I never want to see us  
+
+603
+00:46:11,600 --> 00:46:17,040
+on this list again." We shouldn't be gunning for 
+number one, we should be gunning for number 100,  
+
+604
+00:46:17,040 --> 00:46:22,200
+right? We want to be not on this list. 
+Right? Someone else can take the crown.
+
+605
+00:46:22,200 --> 00:46:27,520
+This episode is brought to you by Vanta. When 
+it comes to ensuring your company has top-notch  
+
+606
+00:46:27,520 --> 00:46:34,200
+security practices, things get complicated fast. 
+Now, you can assess risk, secure the trust of  
+
+607
+00:46:34,200 --> 00:46:42,240
+your customers, and automate compliance for SOC 2, 
+ISO 7001, HIPAA and more with a single platform,  
+
+608
+00:46:42,240 --> 00:46:49,120
+Vanta. Vanta's market leading trust management 
+platform helps you monitor compliance, alongside  
+
+609
+00:46:49,120 --> 00:46:55,000
+reporting and tracking risk. Plus, you can save 
+hours by completing security questionnaires with  
+
+610
+00:46:55,000 --> 00:47:01,000
+Vanta AI. Join thousands of global companies 
+that use Vanta to automate evidence collection,  
+
+611
+00:47:01,000 --> 00:47:07,680
+unify risk management, and streamline security 
+reviews. Get $1,000 off Vanta when you go to  
+
+612
+00:47:07,680 --> 00:47:16,440
+Vanta.com/lenny. That's V-A-N-T-A.com/lenny. 
+Wait, talk about more about this. So, there's  
+
+613
+00:47:16,440 --> 00:47:21,920
+been a drive to delete code and simplify. 
+What's behind that? What's going on there?
+
+614
+00:47:21,920 --> 00:47:26,920
+Yeah, so there's a few things, right? One 
+is, the more context you can fit in your  
+
+615
+00:47:26,920 --> 00:47:29,400
+head around a code base. And you can never 
+really fit all of Shopify in your head,  
+
+616
+00:47:29,400 --> 00:47:35,360
+because it's a big complicated set of tools we 
+give to merchants. But, the more you can simplify,  
+
+617
+00:47:35,360 --> 00:47:40,440
+the much easier everything becomes, resiliency, 
+performance, reliability, maintainability, all  
+
+618
+00:47:40,440 --> 00:47:46,400
+the illities become much, much, much easier when 
+the code base is simple. Now, all you need really  
+
+619
+00:47:46,400 --> 00:47:51,200
+is the mandate of like, "Oh, well, let's look 
+at this code. And, if I could start this today,  
+
+620
+00:47:51,200 --> 00:47:55,440
+would I really build this thing? Or do I now 
+have enough domain expertise to say, 'Oh no,  
+
+621
+00:47:55,440 --> 00:48:01,200
+this is the right solution?' So can I delete 
+start over and build this more easily?" And now,  
+
+622
+00:48:01,200 --> 00:48:08,480
+everything else becomes easy to build on top of.
+And so, routinely, we have a delete code club,  
+
+623
+00:48:08,480 --> 00:48:12,800
+we have hack days, which happens two or three 
+times a year, where there's always one team  
+
+624
+00:48:12,800 --> 00:48:16,880
+that is focused on deleting code. They even have 
+a manual, "Here's how to find things to delete."  
+
+625
+00:48:16,880 --> 00:48:20,480
+And, it's amazing. We almost always delete. 
+I don't know if this is good or bad. We can  
+
+626
+00:48:20,480 --> 00:48:26,760
+always almost find a million plus lines of code 
+delete, which is insane. But, at the same time,  
+
+627
+00:48:27,480 --> 00:48:31,440
+I applaud the teams for going after the cruft and 
+the code base. And everything gets easier, right?  
+
+628
+00:48:31,440 --> 00:48:36,280
+Codelets loads faster. It's easier to understand.
+This is why when I look at GitHub stats,  
+
+629
+00:48:36,280 --> 00:48:39,280
+you shouldn't really look at... I 
+think Google put out and said, "Oh,  
+
+630
+00:48:39,280 --> 00:48:45,600
+25% of all code is now written by AI." I'm like, 
+"Where's the delete? Where is the 25% of all code  
+
+631
+00:48:45,600 --> 00:48:51,280
+is deleted by AI?" Right? This is where we have 
+to start thinking about it. Because, the right  
+
+632
+00:48:51,280 --> 00:48:56,720
+code is never the volumous lines of code metric. 
+It's always something else. It's always elegance.  
+
+633
+00:48:57,360 --> 00:48:59,720
+And that's where we have to think 
+about. So, it is something that,  
+
+634
+00:49:00,480 --> 00:49:06,000
+as part of us being long-term infrastructure 
+thinking, we really do care about that.
+
+635
+00:49:06,000 --> 00:49:09,760
+I love this, in part, because it connects to 
+the topic we're talking about, which is speed,  
+
+636
+00:49:09,760 --> 00:49:14,000
+velocity, intensity, smaller code base, 
+cleaner, better code base allows you to  
+
+637
+00:49:14,000 --> 00:49:19,040
+move faster. I used to be an engineer actually. 
+But, both my engineering brain and my PM brain,  
+
+638
+00:49:19,040 --> 00:49:24,440
+I love the idea of killing stuff that's 
+useless, fixing, making code cleaner,  
+
+639
+00:49:24,440 --> 00:49:30,160
+and better, and more durable. In reality, very 
+hard for companies to prioritize this thing.  
+
+640
+00:49:30,160 --> 00:49:33,800
+Is there anything you found that helps 
+you do that? You mentioned hack days and  
+
+641
+00:49:33,800 --> 00:49:37,400
+weeks are one part of that. Probably helps 
+that Toby's an engineer and he understands  
+
+642
+00:49:37,400 --> 00:49:41,920
+the value of this stuff. But I guess, for 
+folks that want to do this more, any advice?
+
+643
+00:49:41,920 --> 00:49:46,000
+Yeah. So actually, when we're building something, 
+we think of it in one of three buckets. We're  
+
+644
+00:49:46,000 --> 00:49:50,840
+like, "Are you building an experiment, a feature, 
+or infrastructure?" And, once you bucket things,  
+
+645
+00:49:50,840 --> 00:49:53,840
+you can say, "Oh, it's an experiment." You're 
+like, "Cool. This is not infra. This is like,  
+
+646
+00:49:53,840 --> 00:49:59,560
+we're trying something to learn." And, by the 
+way, that might turn into an experiment or infra,  
+
+647
+00:49:59,560 --> 00:50:02,880
+but it starts off as an experiment. 
+Now, if you're building a feature,  
+
+648
+00:50:02,880 --> 00:50:06,600
+a feature is basically you're taking advantage 
+of an existing piece of infra, right? So,  
+
+649
+00:50:06,600 --> 00:50:12,520
+token gating is the example I gave. If you could 
+now build that in one hour, you would probably  
+
+650
+00:50:12,520 --> 00:50:16,360
+say, "Oh, we have the right infra below it."
+But if you did what Toby does, which is, he's  
+
+651
+00:50:16,360 --> 00:50:20,480
+like, "Here's the infra I wish existed. Here's 
+the feature. The feature might be quick to build,  
+
+652
+00:50:20,480 --> 00:50:24,520
+but now I have to go and build the infra." 
+You're now slotting yourself into infra land,  
+
+653
+00:50:24,520 --> 00:50:28,760
+which is like, that could take longer, but you're 
+now enabling it for a bunch of use cases. You  
+
+654
+00:50:28,760 --> 00:50:32,320
+don't have to think about it at once, because you 
+may have people using your API in a different way. 
+
+655
+00:50:32,320 --> 00:50:37,200
+So, I think you have to slot yourself. Now, 
+how do people get into this mode? It is super,  
+
+656
+00:50:37,200 --> 00:50:42,920
+super hard. And, I would say, Toby is the secret 
+sauce here, because he pushes us to think about  
+
+657
+00:50:42,920 --> 00:50:46,840
+things as infra almost all the time. I mean, one 
+of the things that annoys me the most probably is  
+
+658
+00:50:46,840 --> 00:50:50,480
+that I'll always come to him and say, "Hey, we 
+can do A or B." And he looks at me and he goes,  
+
+659
+00:50:50,480 --> 00:50:54,080
+"You know what I'm going to say, right?" I'm like, 
+"You're going to say go back and generate more  
+
+660
+00:50:54,080 --> 00:50:58,960
+options." Because he doesn't like those. "I don't 
+like A or B. Come back when you have something  
+
+661
+00:50:58,960 --> 00:51:03,880
+else." Right? Actually, maybe I'll tell you a 
+little anecdote. He has a story where he says,  
+
+662
+00:51:03,880 --> 00:51:09,840
+"There are unlimited amount of wrong options 
+for any problem. There's probably 10,000 right  
+
+663
+00:51:09,840 --> 00:51:13,880
+options, but everybody stops at the first right 
+one, instead of what you should be spending all  
+
+664
+00:51:13,880 --> 00:51:17,600
+your time on, because the options that don't work, 
+you're not going to spend time on. But you have to  
+
+665
+00:51:17,600 --> 00:51:22,200
+figure out which of the 10,000 options is the 
+right one and spend time in what are all these  
+
+666
+00:51:22,200 --> 00:51:25,720
+right options? Don't just stop at the first one."
+And so, when I come to and say, "A or B." I'm  
+
+667
+00:51:25,720 --> 00:51:29,920
+picking two of the 10,000. And he's like, "That's 
+not what I... Go back and generate more options,  
+
+668
+00:51:29,920 --> 00:51:35,560
+because those are not the optimal ones." So, he 
+is quite the philosopher on these things. And  
+
+669
+00:51:35,560 --> 00:51:40,880
+it does really change the way the company works, 
+because he'll push you on these things. And then,  
+
+670
+00:51:40,880 --> 00:51:45,040
+we over time learn to spot the same patterns. 
+And I learned to push my team on infra,  
+
+671
+00:51:45,040 --> 00:51:49,000
+and deleting code, and making things simple, 
+because by the way, who doesn't want to get  
+
+672
+00:51:49,000 --> 00:51:54,640
+free stuff? Right? Free performance, free, easy 
+to navigate code base, free maintainability,  
+
+673
+00:51:54,640 --> 00:51:59,280
+free resiliency,, because now, we went and 
+did the hard work of deleting. It is hard. But  
+
+674
+00:51:59,280 --> 00:52:01,538
+that goes back to the beginning, right? Choose 
+the hard thing. Don't just build the feature-
+
+675
+00:52:01,538 --> 00:52:03,920
+The beginning, right? Choose the hard 
+thing. Don't just build the feature,  
+
+676
+00:52:03,920 --> 00:52:06,280
+go make the feature easy to build.
+
+677
+00:52:06,280 --> 00:52:12,240
+I feel like there's just more and more good stuff. 
+What else is there that might be helpful to folks  
+
+678
+00:52:12,240 --> 00:52:16,560
+while you're thinking about it? And interesting, 
+I was reading your tweet where you shared a lot of  
+
+679
+00:52:16,560 --> 00:52:20,840
+this advice, and you mentioned this briefly, but 
+I think it's important with pair programming, one  
+
+680
+00:52:20,840 --> 00:52:26,320
+of the benefits is there's no multitasking. You're 
+not checking Twitter, Slack while you're working  
+
+681
+00:52:26,320 --> 00:52:31,520
+because you're there being watched. And I could 
+see why that is more productive just innately.
+
+682
+00:52:31,520 --> 00:52:36,000
+Oh no, for sure. Again, like underhand 
+or free throws not only looks dumb,  
+
+683
+00:52:36,000 --> 00:52:39,840
+it feels dumb. People don't... They feel 
+like they're wasting time sitting beside  
+
+684
+00:52:39,840 --> 00:52:43,440
+somebody and being like, "Well, I could 
+be on my computer doing this thing." But  
+
+685
+00:52:43,440 --> 00:52:49,880
+together they are building a machine. 
+Do you ever read the Undoing Project,  
+
+686
+00:52:49,880 --> 00:52:54,920
+which is about Amos Tversky and Daniel 
+Kahneman, the famous philosopher.
+
+687
+00:52:54,920 --> 00:52:56,480
+By Michael Lewis, I think.
+
+688
+00:52:56,480 --> 00:53:03,320
+Behavioral economist. Michael Lewis. Exactly. And 
+he said the famous line was "Alone, we're okay,  
+
+689
+00:53:03,320 --> 00:53:08,680
+but together, we're a genius." Right? That's a 
+pair programmer. That's like two people. You're  
+
+690
+00:53:08,680 --> 00:53:12,720
+like, "Ah, we're okay. But together, we're a 
+genius." And that's exactly what pair programming  
+
+691
+00:53:12,720 --> 00:53:20,960
+is. And hopefully me plus an LLM is a genius as 
+well, but that's the genesis of that thinking.  
+
+692
+00:53:20,960 --> 00:53:26,520
+So I would say another thing that helps us create 
+intensity is demo culture. So as part of the GSD  
+
+693
+00:53:26,520 --> 00:53:31,840
+updates, hopefully we encourage people to share 
+high fidelity updates, which is not just imagery,  
+
+694
+00:53:31,840 --> 00:53:36,000
+but actually a demo. One of the things that can 
+go wrong with just their screenshots is you don't  
+
+695
+00:53:36,000 --> 00:53:39,920
+really get the full experience. You can't tell 
+how slow things are or whatever, but with a demo,  
+
+696
+00:53:39,920 --> 00:53:45,360
+so you can put a link. We have this tool called 
+Spin, which is an internal development environment  
+
+697
+00:53:45,360 --> 00:53:49,800
+like a cloud dev environment where you can say, 
+"Hey, click here to try this on Spin, and then  
+
+698
+00:53:49,800 --> 00:53:54,280
+you can try it and you can see how it works."
+Or they say, "Turn on a beta flag in your own  
+
+699
+00:53:54,280 --> 00:53:59,440
+store and then try it." And so this short circuits 
+a lot of misunderstandings, because you're like  
+
+700
+00:53:59,440 --> 00:54:03,720
+"I'm going to try it." And you're not waiting 
+until the end, especially with a beta flag.  
+
+701
+00:54:03,720 --> 00:54:07,120
+You're like, "Hey, it's in my store. I just 
+realized that I went in and now this page takes  
+
+702
+00:54:07,120 --> 00:54:10,720
+20 seconds to load. Is that what you expect?" 
+You're like, "Oh, we didn't find this use case."  
+
+703
+00:54:10,720 --> 00:54:14,960
+You're going to learn that much more quickly.
+And that creates, again, intensity on the fidelity  
+
+704
+00:54:14,960 --> 00:54:19,920
+of the feedback you're getting because famously, 
+some of our PM team will create a friction log.  
+
+705
+00:54:19,920 --> 00:54:23,880
+They'll be like, "I am walking.." They'll just 
+create a screen share, create a video and go,  
+
+706
+00:54:23,880 --> 00:54:27,040
+"I'm walking through. I turn on the beta flag, 
+I'm walking through this experience. Here's my  
+
+707
+00:54:27,040 --> 00:54:31,720
+feedback on the experience." And you're getting 
+this high fidelity throughput coming back to you  
+
+708
+00:54:31,720 --> 00:54:35,200
+that you're like, "Okay, let's fix these 
+things for next week's iteration and then  
+
+709
+00:54:35,200 --> 00:54:39,960
+share another beta flag and say, 'Okay, 
+try it now. Try it now. Try it now.'" And  
+
+710
+00:54:39,960 --> 00:54:46,160
+so you're not debating about status reports, 
+you're kind of debating about the experience.
+
+711
+00:54:46,160 --> 00:54:49,720
+So I'm trying to think broadly 
+all the things you've shared,  
+
+712
+00:54:49,720 --> 00:54:55,040
+kind of how they fit together that allow you 
+to move this fast. And I just looked up a few  
+
+713
+00:54:55,040 --> 00:55:01,080
+stats to give people a sense of just the size 
+of the company today and how successful it  
+
+714
+00:55:01,080 --> 00:55:06,120
+has been as they hear the stuff we're talking 
+about. So you guys are about 11,000 employees,  
+
+715
+00:55:06,120 --> 00:55:11,320
+something like that according to the Googles. And 
+you're hitting not necessarily all-time highs on  
+
+716
+00:55:11,320 --> 00:55:16,040
+market cap because COVID gave you guys a big 
+boost for a while, but you're kind of coming  
+
+717
+00:55:16,040 --> 00:55:22,040
+back to this insane valuation that you all 
+had during COVID. So it's essentially all-time  
+
+718
+00:55:22,040 --> 00:55:28,880
+highs at a 10,000 plus person company moving 
+really fast, shipping constantly. People love  
+
+719
+00:55:28,880 --> 00:55:34,120
+the product. And it feels like one key of what 
+you're describing is essentially this operating  
+
+720
+00:55:34,120 --> 00:55:38,840
+rhythm that creates these check-ins that keep 
+people moving and focused on the right sorts  
+
+721
+00:55:38,840 --> 00:55:42,440
+of tools and getting them quick feedback 
+if they're moving in the wrong direction.
+
+722
+00:55:42,440 --> 00:55:44,800
+And having the leaders pair with 
+those people on those problems,  
+
+723
+00:55:44,800 --> 00:55:47,560
+not just checking in, but actually pairing 
+with them on the problems that they're  
+
+724
+00:55:47,560 --> 00:55:53,200
+facing. So you get both the crafters 
+who are working on the stuff and the  
+
+725
+00:55:53,200 --> 00:55:57,240
+leaders who may have broader context 
+working together to kind of unblock.
+
+726
+00:55:57,240 --> 00:55:59,720
+And it's so interesting that it's like, 
+again, people often are often like,  
+
+727
+00:55:59,720 --> 00:56:03,320
+"We don't need meetings. Get rid of all 
+the meetings." You guys do that, but also,  
+
+728
+00:56:03,320 --> 00:56:08,480
+there's a lot of power in strategic meetings 
+and check-ins. Another kind of bucket is just  
+
+729
+00:56:08,480 --> 00:56:12,800
+the engineering environment, engineers 
+working with engineers, pair programming,  
+
+730
+00:56:13,640 --> 00:56:16,800
+things like that. There's a tool you mentioned 
+for pair programming, Tuple, I think.
+
+731
+00:56:16,800 --> 00:56:22,200
+Tuple. Yeah. It's funny because we use it 
+exclusively, but we actually have this line  
+
+732
+00:56:22,200 --> 00:56:27,480
+internally, we call it, Shopify should be a 
+crafters' paradise. It should be the place  
+
+733
+00:56:27,480 --> 00:56:31,720
+where crafters come to practice their craft 
+and get better at their craft. Obviously,  
+
+734
+00:56:31,720 --> 00:56:35,680
+resonates from a lot of the engineering crafters, 
+but it's not only engineering, it's UX and PM and  
+
+735
+00:56:36,400 --> 00:56:41,800
+ML, all the places where you'd want those 
+people to actually have a great experience.  
+
+736
+00:56:41,800 --> 00:56:45,800
+We want them to come to Shopify because we 
+believe this is the best place for that.
+
+737
+00:56:45,800 --> 00:56:51,760
+I love it. I just wrote a note down of just 
+how you set up your teams for success. Oh,  
+
+738
+00:56:51,760 --> 00:56:57,040
+just avoid distractions. So I think the pair 
+programming helps the workspace, workplace shift  
+
+739
+00:56:57,040 --> 00:57:03,640
+from Slack helps. I think you're also very firm 
+on their working hours. You basically don't let...
+
+740
+00:57:03,640 --> 00:57:03,780
+No.
+
+741
+00:57:03,780 --> 00:57:04,120
+No. Okay. [inaudible 00:57:04]
+
+742
+00:57:04,120 --> 00:57:08,000
+No, not really. Yeah. We're not super firm 
+on working hours from that perspective,  
+
+743
+00:57:08,000 --> 00:57:12,040
+but we do have a lot of people on East Coast 
+time zones. A lot of stuff happens then,  
+
+744
+00:57:12,040 --> 00:57:15,720
+but we do have people all over the world. But 
+I did mention we do have the check-ins and the  
+
+745
+00:57:15,720 --> 00:57:20,000
+six-week reviews on the cadence. So that six 
+week cycle does give you a little bit of the,  
+
+746
+00:57:20,000 --> 00:57:27,320
+what did you get done and are you blocked 
+mentality. And you can expect coming in a  
+
+747
+00:57:27,320 --> 00:57:29,600
+couple of times and being like, "Hey, we 
+didn't get a lot done being unblocked."  
+
+748
+00:57:29,600 --> 00:57:33,600
+For you to change your approach to go, "Okay, 
+I don't want to go to another review where we  
+
+749
+00:57:33,600 --> 00:57:37,360
+didn't get a lot done." So what am I doing 
+this time to make sure we unlock a lot of  
+
+750
+00:57:37,360 --> 00:57:44,080
+progress? And that check-in can give you that 
+ammo to be like, "Let's do this this time."
+
+751
+00:57:44,080 --> 00:57:45,920
+And you're also remote first as a company.
+
+752
+00:57:45,920 --> 00:57:46,160
+Yes.
+
+753
+00:57:46,160 --> 00:57:49,680
+Which I think is especially cool. Now a lot of 
+companies are going back to not remote. You guys  
+
+754
+00:57:49,680 --> 00:57:55,000
+are staying remote. Why do you guys decide to do 
+that? What have you seen as a big benefit of that?
+
+755
+00:57:55,000 --> 00:58:00,080
+Yeah, so we have this remote, so I like to 
+call it 90% remote or 95% remote because  
+
+756
+00:58:00,080 --> 00:58:06,120
+we have these intentional IRL experiences. So 
+every summer, we just started last year. Sorry,  
+
+757
+00:58:06,120 --> 00:58:10,040
+this year. We're doing this thing called Shopify 
+Summit where we bring the whole company together,  
+
+758
+00:58:10,040 --> 00:58:16,360
+get together and it's a combination of talks plus 
+hack days and it's a come together experience  
+
+759
+00:58:16,360 --> 00:58:22,400
+like food and parties and bands. And it's a 
+super fun way to re-energize and rebuild your  
+
+760
+00:58:22,400 --> 00:58:26,720
+trust battery over time. And then we have this 
+thing called bursts, which is, "Hey, you want  
+
+761
+00:58:26,720 --> 00:58:31,560
+to work on a problem? You need to prototype, 
+you need to hack." People can just say, "Hey,  
+
+762
+00:58:31,560 --> 00:58:34,560
+I'm starting a burst. We're going to have five 
+people. We're all going to go to Ottawa or Toronto  
+
+763
+00:58:34,560 --> 00:58:38,480
+or Montreal or somewhere else and we're going 
+to talk about this problem and get together." 
+
+764
+00:58:38,480 --> 00:58:43,520
+And so a combination of those two things mean 
+throughout the year, you can recharge. We have  
+
+765
+00:58:43,520 --> 00:58:48,920
+the trust battery notion, which is how much 
+trust can you have between people and it can  
+
+766
+00:58:48,920 --> 00:58:53,960
+deplete over time if you're remote. So then we 
+have offices which are like, come in if you want.  
+
+767
+00:58:53,960 --> 00:58:57,560
+Like I mentioned, I come in once a week and now 
+Toby moved to Toronto, so now I'm in three days  
+
+768
+00:58:57,560 --> 00:59:02,600
+a week. But it's like if you want to come in, you 
+don't have to, right? Today, I work from home,  
+
+769
+00:59:02,600 --> 00:59:07,040
+but tomorrow, I'm going in. And that allows you, 
+again, to have those random interactions and allow  
+
+770
+00:59:07,040 --> 00:59:12,440
+you to feel like, yeah, we're 90 plus percent 
+remote. But I would say the main reason is we  
+
+771
+00:59:12,440 --> 00:59:18,240
+want to hire the best people in the world and 
+those people can be anywhere and just happens  
+
+772
+00:59:18,240 --> 00:59:21,960
+to be that not all of them are near an office.
+But again, with the bursting, here's a good  
+
+773
+00:59:21,960 --> 00:59:25,400
+example. For Black Friday, Cyber Monday, I 
+encouraged all engineering leadership to come  
+
+774
+00:59:25,400 --> 00:59:31,440
+to Toronto. We're all going to be in the office 
+watching the graphs. And then for hack days,  
+
+775
+00:59:31,440 --> 00:59:35,720
+I try to get people to go to the ports, which 
+we have four of them, Toronto, Montreal, Ottawa,  
+
+776
+00:59:35,720 --> 00:59:40,280
+and New York, which again are come in if you 
+want, but then get that IRL. And so it's kind  
+
+777
+00:59:40,280 --> 00:59:42,800
+of a little bit of a combo. I wouldn't 
+call it hybrid though because you don't  
+
+778
+00:59:42,800 --> 00:59:47,960
+really have every Friday you come in or don't 
+come in. It's more like, come in if you want.
+
+779
+00:59:47,960 --> 00:59:51,600
+There's so many things to talk about. 
+This trust battery metaphor by the way  
+
+780
+00:59:51,600 --> 00:59:56,040
+is awesome. I've learned to use it also. 
+And again, it's just basically everyone,  
+
+781
+00:59:56,040 --> 00:59:59,000
+your trust with someone is like, think 
+of it as a battery that can deplete and  
+
+782
+00:59:59,000 --> 01:00:06,000
+grow and you should try to charge it up when 
+you can and then use that charge over time.
+
+783
+01:00:06,000 --> 01:00:10,040
+And it can be strategic by the way. I've seen 
+people use it as a... I'm pretty sure Toby says  
+
+784
+01:00:10,040 --> 01:00:13,680
+he starts everyone at 50% and then he gets 
+to know you. And then I've seen people use  
+
+785
+01:00:13,680 --> 01:00:16,400
+it as the opposite, saying, "Hey, look, this 
+team is hard charging. I'm going to start you  
+
+786
+01:00:16,400 --> 01:00:21,800
+at a hundred. Assume that you already have high 
+trust, do the things, and only if you are doing  
+
+787
+01:00:21,800 --> 01:00:25,680
+things that are off alignment, does your trust 
+battery deplete." So I've seen people use it,  
+
+788
+01:00:25,680 --> 01:00:30,320
+the terminology as a shortcut way to 
+figure out how to work with somebody.
+
+789
+01:00:30,320 --> 01:00:34,800
+I love just how first principles you all are, 
+and there are so many things are so unique to  
+
+790
+01:00:34,800 --> 01:00:39,960
+how you operate and clearly it's working. And 
+so I feel like we just keep going on and on. I  
+
+791
+01:00:39,960 --> 01:00:44,200
+want to talk about hiring. I know you have some 
+pretty unique perspectives on how to hire people  
+
+792
+01:00:44,200 --> 01:00:47,920
+that are awesome, but also, hire them quickly. 
+But before we get there, is there anything else  
+
+793
+01:00:47,920 --> 01:00:53,600
+that you think might be really valuable to share 
+in terms of intensity, velocity, moving fast?
+
+794
+01:00:53,600 --> 01:01:01,000
+I think the personality of the leadership team is 
+quite intense. We have a lot of founders on the  
+
+795
+01:01:01,000 --> 01:01:08,200
+exec team, which are impatient, intense people by 
+design. But even some of the non-founders are just  
+
+796
+01:01:08,200 --> 01:01:14,680
+accomplished people who tend to be pretty, we all 
+have this attitude of impatience, and so maybe,  
+
+797
+01:01:14,680 --> 01:01:19,800
+I don't even know if that's a learned skill you 
+can learn or if it just comes along with your  
+
+798
+01:01:19,800 --> 01:01:24,520
+personality, like genetics. But we typically, even 
+at the leadership team, for example, we try to do,  
+
+799
+01:01:25,200 --> 01:01:29,000
+here's my weekly thread of all the things that 
+are going on so that we can not only share,  
+
+800
+01:01:29,000 --> 01:01:32,640
+but also show progress on things. And 
+then someone can jump in and say, "Oh,  
+
+801
+01:01:32,640 --> 01:01:36,160
+this thing you're doing, it relates to 
+my thing that I'm doing over here." It  
+
+802
+01:01:36,160 --> 01:01:41,680
+creates this notion of, there's a lot going 
+on all the time and we want to keep the vibes,  
+
+803
+01:01:41,680 --> 01:01:44,920
+keep the energy high. So a lot 
+of high energy intense people.
+
+804
+01:01:44,920 --> 01:01:49,160
+It reminds me while I was at Airbnb, it felt 
+like no matter how well things are going,  
+
+805
+01:01:49,160 --> 01:01:55,560
+it always felt like Brian especially is just pedal 
+to the metal. No matter how well things are going,  
+
+806
+01:01:55,560 --> 01:01:59,880
+it's not going well enough. How do 
+we go faster? How do we do more?
+
+807
+01:01:59,880 --> 01:02:05,880
+Well, I would actually go further. I think if 
+you don't have two or three big projects that  
+
+808
+01:02:05,880 --> 01:02:10,400
+are on fire, you're probably not pushing hard 
+enough because you're not really trying things  
+
+809
+01:02:10,400 --> 01:02:14,640
+that are outside of your... If everything's going 
+well, are you really taking the risks you need to  
+
+810
+01:02:14,640 --> 01:02:19,280
+be taking? So I think you have to over-rotate 
+a bit and there should be a few things on fire  
+
+811
+01:02:19,280 --> 01:02:24,560
+at all times, not because you should create 
+that, but it should just happen because you're  
+
+812
+01:02:24,560 --> 01:02:28,240
+stretching into new things that potentially 
+or you're going faster than you should have,  
+
+813
+01:02:28,240 --> 01:02:33,200
+or there's a new leader you've counted on 
+early because all these things that should  
+
+814
+01:02:33,200 --> 01:02:39,960
+create this thing of it might work. And so you 
+want to have a little bit of chaos at the edge.
+
+815
+01:02:39,960 --> 01:02:44,680
+I love that. And it may sound stressful and 
+why would I want that? Why would I want to  
+
+816
+01:02:44,680 --> 01:02:50,640
+work with chaos and fires everywhere? But 
+in reality, if you don't, your business  
+
+817
+01:02:50,640 --> 01:02:55,560
+is unlikely to become incredibly successful 
+and that is even more stressful and painful.
+
+818
+01:02:55,560 --> 01:02:59,840
+Correct. Yeah, it's like the opposite, right? 
+It's like this idea of people feel like the  
+
+819
+01:02:59,840 --> 01:03:06,840
+comfort gives you stability, and really the 
+uncomfort gives you stability because now you're  
+
+820
+01:03:06,840 --> 01:03:11,320
+constantly learning and that makes you more 
+robust against things that could come across.
+
+821
+01:03:11,320 --> 01:03:15,440
+Choosing the harder path, some might say. Okay,  
+
+822
+01:03:15,440 --> 01:03:19,320
+let's talk about hiring. You have some 
+really interesting takes on hiring. One  
+
+823
+01:03:19,320 --> 01:03:23,920
+that I've heard about is that you don't 
+like the interview process. You kind  
+
+824
+01:03:23,920 --> 01:03:28,760
+of like to prefer not to interview and 
+do something instead. Talk about that.
+
+825
+01:03:28,760 --> 01:03:32,440
+Yeah. So throughout my career, what I've 
+noticed is that, and I'm sure everybody,  
+
+826
+01:03:32,440 --> 01:03:36,000
+this is a dirty little secret, right? Interviews 
+are not a good predictor of performance. We  
+
+827
+01:03:36,000 --> 01:03:38,880
+know this. We know this from studies. We know 
+this. Everybody at their company knows this,  
+
+828
+01:03:38,880 --> 01:03:43,240
+where somebody interviewed well, wasn't as good 
+in the job or the opposite, didn't interview  
+
+829
+01:03:43,240 --> 01:03:49,080
+well and then came in and was phenomenal. One 
+example I have from my startup right before we  
+
+830
+01:03:49,080 --> 01:03:56,120
+came to Shopify was I hired two people for machine 
+learning. One was a PhD, taught at the university,  
+
+831
+01:03:56,120 --> 01:03:59,040
+was like, oh my god, no brainer, was also 
+recommended by an employee. We're like,  
+
+832
+01:03:59,040 --> 01:04:02,080
+"Oh my god, this person's going to be 
+great." The other person was a dude I  
+
+833
+01:04:02,080 --> 01:04:07,120
+met at the coffee shop who had never had a 
+software job but was just so interested in  
+
+834
+01:04:07,120 --> 01:04:12,680
+machine learning and person A, we let go within 
+a few weeks because not a fit for our culture. 
+
+835
+01:04:12,680 --> 01:04:19,240
+And person B was at our startup and is still at 
+Shopify today and is a phenomenal machine learning  
+
+836
+01:04:19,240 --> 01:04:23,160
+engineer who literally at our Christmas party was 
+like, "This is my first software job." We're like,  
+
+837
+01:04:23,160 --> 01:04:28,760
+"How?" It was just so cute. And we gave them 
+both the shot. The key was I didn't use the  
+
+838
+01:04:28,760 --> 01:04:33,920
+resume in either way to bias. We brought them 
+both in. We said, "Here's the environment." It  
+
+839
+01:04:33,920 --> 01:04:39,720
+was all pair programming at my startup. And so 
+they pair program, and actually as an aside,  
+
+840
+01:04:40,880 --> 01:04:45,000
+I really believe in pair programming when 
+I made people work in pair programming with  
+
+841
+01:04:45,000 --> 01:04:50,040
+my own money. I paid for two people to be 
+on one computer. So that's how you know...
+
+842
+01:04:50,040 --> 01:04:51,040
+Less than half the code.
+
+843
+01:04:51,040 --> 01:04:57,000
+Yeah, exactly. Right. Less than half the code. But 
+anyway, so pairing. And it was pretty clear after  
+
+844
+01:04:57,000 --> 01:05:01,920
+just a few weeks, I would say let's say up to 
+three months is the amount of time I give people,  
+
+845
+01:05:02,440 --> 01:05:06,920
+that person A wasn't going to work out than 
+person B was. So what I really like to do is  
+
+846
+01:05:06,920 --> 01:05:11,960
+use this race car analogy. If I told you, "Hey, I 
+want to go hire the best race car driver," there's  
+
+847
+01:05:11,960 --> 01:05:17,600
+not really that many questions you could ask them 
+except for put them in the car. And so the same  
+
+848
+01:05:17,600 --> 01:05:22,080
+thing happens with us is that of course, we have 
+to do interviews, but we do really spend time in  
+
+849
+01:05:22,080 --> 01:05:28,440
+the 30, 60, 90 days to make sure that the thing 
+that they are bringing actually lines up with  
+
+850
+01:05:28,440 --> 01:05:33,240
+what we need at Shopify. And you should also be 
+transparent with people because if it's not a fit,  
+
+851
+01:05:33,240 --> 01:05:36,440
+it's actually good for them and you to 
+figure that out as quickly as possible  
+
+852
+01:05:36,440 --> 01:05:41,120
+because they could be amazing somewhere else.
+We mentioned the chaotic environment and fast  
+
+853
+01:05:41,120 --> 01:05:44,760
+moving environment Shopify is, that's not for 
+everyone, but that's okay, right? We're not  
+
+854
+01:05:44,760 --> 01:05:49,840
+looking for... We've talked about that we want to 
+be as the best 10,000 person company in the world.  
+
+855
+01:05:49,840 --> 01:05:54,600
+We're not looking for millions of people. We just 
+need the best 10,000. And so if it's not a fit,  
+
+856
+01:05:55,120 --> 01:05:57,680
+it's in your interest and our interest 
+to figure that out quickly so that you  
+
+857
+01:05:57,680 --> 01:06:01,640
+can go somewhere where you will be amazing and 
+for us to have the people who will be amazing  
+
+858
+01:06:01,640 --> 01:06:08,000
+at Shopify. And so job trials, I'm a huge 
+fan of, which leads me to intern programs,  
+
+859
+01:06:08,000 --> 01:06:12,520
+what a great interview process because you now 
+have real work product from somebody for four  
+
+860
+01:06:12,520 --> 01:06:16,280
+months. They get to see what it's like to be 
+at Shopify for four months. We get to see what  
+
+861
+01:06:16,280 --> 01:06:21,760
+it's like for them to be at Shopify for four 
+months, and that can turn into a full-time gig. 
+
+862
+01:06:21,760 --> 01:06:25,920
+And that's a great interview process because 
+you literally know exactly. You don't have to...  
+
+863
+01:06:25,920 --> 01:06:29,240
+I'll give you a funny example. I think I've 
+heard a company where, "Oh, we have an intern  
+
+864
+01:06:29,240 --> 01:06:33,840
+process and then afterwards, we interview them for 
+full-time." I'm like, "What are you going to learn  
+
+865
+01:06:33,840 --> 01:06:37,880
+from let's say even eight hours of interviews that 
+you're not going to have learned from four months  
+
+866
+01:06:37,880 --> 01:06:42,320
+of real work experience?" And so there's just 
+things like that. You just got to look at the  
+
+867
+01:06:42,320 --> 01:06:46,960
+work product. And so I'm a big fan of job trials, 
+and in my previous companies, like you mentioned,  
+
+868
+01:06:46,960 --> 01:06:52,160
+I almost didn't interview anybody. I almost just 
+said, "Come in and work." And it allowed us... We  
+
+869
+01:06:52,160 --> 01:06:56,960
+had a much higher in the first 90 days, like 
+20% attrition before 90 days because it just  
+
+870
+01:06:56,960 --> 01:07:01,840
+didn't work out. But those after 90 days, we 
+had less than 1% attrition because they knew  
+
+871
+01:07:01,840 --> 01:07:04,600
+exactly what they're getting into and we 
+knew exactly how they were going to fit.
+
+872
+01:07:04,600 --> 01:07:08,680
+So in terms of the hiring process, you're 
+still at Shopify. You're interviewing people,  
+
+873
+01:07:08,680 --> 01:07:12,600
+they're doing technical evaluations, things 
+like that. But it sounds like there's a very  
+
+874
+01:07:12,600 --> 01:07:19,560
+strong setting of expectations. "We will 
+hire you, but we'll actually clarify if  
+
+875
+01:07:19,560 --> 01:07:24,120
+this is a good fit in the first 30, 60, 90 
+days and we're going to do... We may let you  
+
+876
+01:07:24,120 --> 01:07:27,200
+go and there's a good chance we may let you 
+go." Is that just the way you set things up?
+
+877
+01:07:27,200 --> 01:07:31,920
+Yeah, I think the way to think about, it's more 
+like we want to make the interview process as  
+
+878
+01:07:31,920 --> 01:07:37,600
+close to the real job as possible because 
+by doing that, we can likely assess the  
+
+879
+01:07:37,600 --> 01:07:42,480
+skills that you have in your interview closer to 
+what's happening in the job. So that's one. Two,  
+
+880
+01:07:42,480 --> 01:07:49,120
+we have this interview step called the life 
+story where we try to figure out if, are all  
+
+881
+01:07:49,120 --> 01:07:55,720
+the experiences you've had up until now actually 
+going to be... Does it show that you are a curious  
+
+882
+01:07:55,720 --> 01:08:01,280
+person with range? Because if it does, that's 
+likely more of someone who's going to be a fit. I  
+
+883
+01:08:01,280 --> 01:08:04,600
+had this famous line from somebody who said, "You 
+know what I don't like about resumes?" I'm like,  
+
+884
+01:08:04,600 --> 01:08:09,800
+"What?" They go, "It tells you what you did, but 
+it doesn't tell you why you did those things." 
+
+885
+01:08:09,800 --> 01:08:14,680
+And it's such an interesting insight. 
+Your resume should be a why, like why  
+
+886
+01:08:14,680 --> 01:08:18,040
+did you go from this company to this? That's 
+the interesting part. Not that you are a PM  
+
+887
+01:08:18,040 --> 01:08:23,320
+at Microsoft and a PM at Stripe. It's like, why 
+did you switch from Stripe to Microsoft? There's  
+
+888
+01:08:23,320 --> 01:08:26,840
+something interesting there. And so the life 
+story is trying to pull that out. It's like,  
+
+889
+01:08:26,840 --> 01:08:32,360
+why did you make the decisions? What did you do in 
+your past that was interesting? Are you curious?  
+
+890
+01:08:33,800 --> 01:08:38,360
+I always thought... I read this great book, Range 
+by David Epstein. That book was maybe one of the  
+
+891
+01:08:38,360 --> 01:08:42,360
+hardest books for me to read in my life because 
+every page I was like, "I don't believe it." I  
+
+892
+01:08:42,360 --> 01:08:45,720
+kept thinking I was a specialist. I kept turning 
+the page going, "I don't like this data that keeps  
+
+893
+01:08:45,720 --> 01:08:49,400
+showing that generalists are better." And then 
+by the end, I realized that I'm a generalist.  
+
+894
+01:08:49,400 --> 01:08:54,320
+It took me so long to realize, and funny for me 
+because I ended up redesigning the compensation  
+
+895
+01:08:54,320 --> 01:08:58,520
+system for Shopify, even though I'm an engineer.
+So I still thought of myself as an engineer  
+
+896
+01:08:58,520 --> 01:09:01,560
+through and through, even though I work 
+on recruiting and HR and all these other  
+
+897
+01:09:01,560 --> 01:09:05,760
+things. But I think that that's what 
+we're trying to tease. And then yes,  
+
+898
+01:09:05,760 --> 01:09:10,920
+in that first period, we actually have a 
+survey that goes over Slack that says, "Hey,  
+
+899
+01:09:10,920 --> 01:09:16,320
+how happy are you with the person that you hired?" 
+And that should, in conversation with the person,  
+
+900
+01:09:16,320 --> 01:09:19,600
+you should give them the feedback to figure out, 
+"Hey, are there things you need to adjust to  
+
+901
+01:09:19,600 --> 01:09:24,280
+better fit in and make sure the expectations are 
+set up?" But then also, together with the person,  
+
+902
+01:09:24,280 --> 01:09:28,920
+figure out, "Hey, if you're not feeling this, 
+let's find you either a different role in the  
+
+903
+01:09:28,920 --> 01:09:33,080
+company or somewhere else because we want the 
+people here to have high impact." But that  
+
+904
+01:09:33,080 --> 01:09:36,640
+person should have high impact somewhere, could 
+be at Shopify, could be in the same role, could  
+
+905
+01:09:36,640 --> 01:09:41,520
+be in a different role, could be at a different 
+company. But that's a good thing for everybody.
+
+906
+01:09:41,520 --> 01:09:44,240
+And then do you actually do work 
+trials with new engineering hires,  
+
+907
+01:09:44,240 --> 01:09:46,840
+or is that something you aspire to do?
+
+908
+01:09:46,840 --> 01:09:50,560
+Yeah, I would love to do it. It's hard to do 
+with the volume resumes we get, but we do do it  
+
+909
+01:09:50,560 --> 01:09:55,320
+at scale with the internship program. So like 
+2025, we're going to hire a thousand interns,  
+
+910
+01:09:56,040 --> 01:09:58,720
+and that is going to give me a thousand job  
+
+911
+01:09:58,720 --> 01:10:03,640
+trials to pick the top X percent of 
+those to come to Shopify full time.
+
+912
+01:10:03,640 --> 01:10:07,200
+So just to double-click on that, so 
+you're hiring a thousand interns over  
+
+913
+01:10:07,200 --> 01:10:13,040
+the course of the year. That's a lot. And 
+the idea there is these folks are actually  
+
+914
+01:10:13,040 --> 01:10:17,360
+useful building useful things, and it's 
+an interview process for the internship.
+
+915
+01:10:17,360 --> 01:10:21,400
+Yeah, I think it's two things. One is 
+some people look at an internship program  
+
+916
+01:10:21,400 --> 01:10:25,360
+as community service. Let's give back to the 
+community. Let's hire early talent. And I'm like,  
+
+917
+01:10:25,360 --> 01:10:31,120
+"Hold on a sec. Are you telling me I could hire 
+a thousand people over the year?" And they will  
+
+918
+01:10:31,120 --> 01:10:35,960
+come to work with an LLM and a brain because 
+they're growing up in the age of AI. They will  
+
+919
+01:10:35,960 --> 01:10:40,360
+be useful to us because they come from a different 
+generation and they have, in our case in commerce,  
+
+920
+01:10:40,360 --> 01:10:45,600
+they have a different experience about shopping 
+and AI and bots and chat and voice and all these  
+
+921
+01:10:45,600 --> 01:10:50,800
+things. They'll be useful to us. We'll 
+teach them some stuff as well. And then  
+
+922
+01:10:50,800 --> 01:10:55,440
+together we can decide if they might end up going 
+somewhere else, in which case, we have the Shopify  
+
+923
+01:10:55,440 --> 01:10:59,800
+imprint on them going to whatever other company, 
+which is I think a positive, or they might stay  
+
+924
+01:10:59,800 --> 01:11:03,920
+at Shopify and be useful over a longer period.
+It seems like win, win, win. The other thing  
+
+925
+01:11:03,920 --> 01:11:08,480
+that was cool is after I did that tweet, a 
+bunch of other CTOs messaged me and said,  
+
+926
+01:11:08,480 --> 01:11:14,160
+"Hey, we're going to hire 1,001 interns to beat 
+you guys." And I'm like, "Great." Just from  
+
+927
+01:11:14,160 --> 01:11:20,200
+that one tweet, if I can get the early talent 
+ecosystem restarted here after a really tough  
+
+928
+01:11:20,200 --> 01:11:25,240
+last few years and layoffs, it's great for 
+everybody because now they're realizing that  
+
+929
+01:11:25,800 --> 01:11:29,680
+they also realize that these people are super 
+valuable and they bring together a completely  
+
+930
+01:11:29,680 --> 01:11:33,760
+different set of skills. And by the way, here's 
+a secret in pair programming, interns will always  
+
+931
+01:11:33,760 --> 01:11:39,960
+be more intense than the full-time. And so that 
+also helps the flywheel of intensity go for it.
+
+932
+01:11:39,960 --> 01:11:44,360
+It all just keeps coming back. Did the 
+internship program emerge out of this  
+
+933
+01:11:44,360 --> 01:11:48,960
+co-op system that Canadian schools have 
+and a Waterloo has a big co-op program?
+
+934
+01:11:48,960 --> 01:11:56,000
+Yeah, I went to Waterloo. And so yeah, hint, 
+hint. So I went to Waterloo and I did co-op and  
+
+935
+01:11:56,000 --> 01:12:00,040
+I did intern programs there. It was amazing. What 
+a great experience, because what ends up happening  
+
+936
+01:12:00,040 --> 01:12:05,400
+is you leave Waterloo with your degree, but also 
+with two years of experience because I did six  
+
+937
+01:12:05,400 --> 01:12:10,080
+four-month work terms, 24 months, and you end 
+up walking. I think one of the big parts of it  
+
+938
+01:12:10,080 --> 01:12:16,360
+is just interview skills because I interviewed for 
+10 plus jobs every four months, and I did that six  
+
+939
+01:12:16,360 --> 01:12:19,760
+times. And so you come out having done lots... You 
+have a lot of interview experience, but you also  
+
+940
+01:12:19,760 --> 01:12:25,520
+have work experience. And so just taking that to 
+the next level, Shopify has always had interns.  
+
+941
+01:12:25,520 --> 01:12:31,640
+And what I felt like we needed to do was, 
+again, restart this notion of early talent  
+
+942
+01:12:31,640 --> 01:12:36,040
+in the ecosystem. I would say one or two 
+big differences with our intern program. 
+
+943
+01:12:36,040 --> 01:12:42,080
+One is we're making them come in three days a week 
+versus full remote. And the reason for that is,  
+
+944
+01:12:42,080 --> 01:12:44,200
+and we're doing it just in three 
+offices right now in Montreal,  
+
+945
+01:12:44,200 --> 01:12:49,040
+Toronto and Ottawa. And the reason for that is 
+because we want them to have a cohort because  
+
+946
+01:12:49,040 --> 01:12:53,640
+early talent is different than you and I who've 
+been in the industry. We worked in office, we  
+
+947
+01:12:53,640 --> 01:12:58,040
+worked out of office. We're more comfortable with 
+navigating partnership discussions and talking to  
+
+948
+01:12:58,040 --> 01:13:02,200
+people in different companies. But these people 
+have not. They may have never worked anywhere. 
+
+949
+01:13:02,200 --> 01:13:08,080
+And so to not have the IRL component would do 
+them a disservice. And so we specifically made  
+
+950
+01:13:08,080 --> 01:13:11,840
+it in those ports and the people are traveling 
+by the way, they're moving to Montreal to do the  
+
+951
+01:13:11,840 --> 01:13:16,720
+internship. It's great. And then if you're 
+a mentor or manager for one of the interns,  
+
+952
+01:13:16,720 --> 01:13:20,160
+you have to at least see them like IRL 
+once a month. So we're kind of making  
+
+953
+01:13:20,160 --> 01:13:23,800
+these experiences. And of course, they'll have a 
+cohort of dozens of people that will be with them  
+
+954
+01:13:23,800 --> 01:13:27,400
+along the way. And so we think that'll just 
+make their experience better. And of course,  
+
+955
+01:13:27,400 --> 01:13:30,960
+nothing like tapping someone on the shoulder and 
+be like, "Have you seen this era before?" And so  
+
+956
+01:13:30,960 --> 01:13:35,160
+it's easier in an early talent situation. And then 
+of course over time, if they become full-time,  
+
+957
+01:13:35,160 --> 01:13:39,480
+they can still come to the office. It's come 
+if you want, but they can also go full remote.
+
+958
+01:13:39,480 --> 01:13:43,720
+That is amazing. For folks that don't know 
+anything about these co-op programs briefly,  
+
+959
+01:13:43,720 --> 01:13:46,600
+it's just basically while you're 
+in school, before you graduated,  
+
+960
+01:13:46,600 --> 01:13:48,760
+during the summer, you go work at a company.
+
+961
+01:13:48,760 --> 01:13:48,880
+No.
+
+962
+01:13:48,880 --> 01:13:49,800
+Oh, during the year. Okay.
+
+963
+01:13:49,800 --> 01:13:53,440
+Yeah, it's during the year. So what happens at 
+Waterloo is, what I did was I did eight months of  
+
+964
+01:13:53,440 --> 01:13:58,400
+school at the beginning. So two terms. My first 
+co-op term was summer, but then it was work,  
+
+965
+01:13:58,400 --> 01:14:01,960
+school, work, school, alternating for 
+the whole rest of my time at Waterloo.
+
+966
+01:14:01,960 --> 01:14:03,640
+It's like semesters alternating.
+
+967
+01:14:03,640 --> 01:14:07,720
+Exactly. So every four months I did either school 
+term or work time. So I was doing work in January  
+
+968
+01:14:07,720 --> 01:14:12,040
+sometimes and September sometimes. And it was 
+super good because again, it also allowed me  
+
+969
+01:14:12,040 --> 01:14:15,600
+to be super intense at school for four months 
+and then go to super intense work experience  
+
+970
+01:14:15,600 --> 01:14:20,880
+for four months. But yeah, it's a model that... 
+I was just at Waterloo this week doing a talk,  
+
+971
+01:14:20,880 --> 01:14:27,040
+so I love that symbiotic relationship between 
+Waterloo and the employers, by the way, not just  
+
+972
+01:14:27,040 --> 01:14:32,480
+Waterloo. Lots of schools do a summer program, 
+UFT and others, lots of schools in the states.
+
+973
+01:14:32,480 --> 01:14:37,520
+Fun fact. So total tangent, I had a startup 
+called Local Mine, started it in Montreal of  
+
+974
+01:14:37,520 --> 01:14:42,520
+all places. I'm not Canadian, but moved there 
+for various reasons. It was awesome. And our  
+
+975
+01:14:42,520 --> 01:14:46,640
+first hire was actually from the co-op 
+program. I don't know if it was Waterloo,  
+
+976
+01:14:46,640 --> 01:14:50,760
+his name is Nick Adams. And he applied. 
+Just he saw our job posting, I think,  
+
+977
+01:14:50,760 --> 01:14:55,120
+and were like, "What is a co-op?" And 
+he came to work and then he went back to  
+
+978
+01:14:55,120 --> 01:14:59,000
+school, and then we hired him, and then 
+he ended up at Airbnb when we got a card.
+
+979
+01:14:59,000 --> 01:15:06,960
+There you go. So for us, actually, when I did 
+my startup Helpful, I had one or two engineers,  
+
+980
+01:15:06,960 --> 01:15:14,400
+and then I actually literally just hired four 
+interns because you hired them in February for  
+
+981
+01:15:14,400 --> 01:15:19,000
+May. And because I was doing pair programming, I 
+had to make sure I had four full times by then.  
+
+982
+01:15:19,000 --> 01:15:23,520
+So I hired the interns in anticipation of 
+having the full times. And I literally had,  
+
+983
+01:15:23,520 --> 01:15:27,920
+I think I was off by one week, so one intern had 
+no pair for a week, but then after that in May,  
+
+984
+01:15:27,920 --> 01:15:31,360
+I had four full times, four interns, 
+and then they paired the whole time.
+
+985
+01:15:31,360 --> 01:15:36,520
+What a journey. I want to talk about just 
+one other topic real quick and then we'll  
+
+986
+01:15:36,520 --> 01:15:41,640
+wrap this up. And it's around XtremeLabs. So 
+there's a bunch of stuff here. It feels like  
+
+987
+01:15:41,640 --> 01:15:46,520
+it's just like this tech mafia of Canada that 
+a lot of incredible people emerged out of,  
+
+988
+01:15:46,520 --> 01:15:50,480
+and there's a whole bunch of stuff we can 
+talk about. One fact I heard while you were  
+
+989
+01:15:50,480 --> 01:15:56,240
+there is you had a hundred reports, 
+direct reports that reported to you.
+
+990
+01:15:56,240 --> 01:15:57,560
+A 120.
+
+991
+01:15:57,560 --> 01:16:01,840
+120 direct reports feels like 
+a complete nightmare to me.  
+
+992
+01:16:01,840 --> 01:16:05,880
+Tell me why you decided to do that, if 
+you'd recommend that for other people.
+
+993
+01:16:05,880 --> 01:16:10,720
+Yeah, so what ended up happening there was we 
+started off small. It was 10 people. When I got to  
+
+994
+01:16:10,720 --> 01:16:15,960
+XtremeLabs, I wasn't the founder, but I was very 
+early on and I just had everyone report to me. And  
+
+995
+01:16:15,960 --> 01:16:20,760
+then as we grew, I just kept having those people 
+report to me and I was trying to figure out,  
+
+996
+01:16:20,760 --> 01:16:26,360
+we talked about crafters and crafters paradise, 
+this idea of people don't really... Their managers  
+
+997
+01:16:26,360 --> 01:16:30,560
+are useful, but I was trying to figure out 
+could I solve the problems that they needed  
+
+998
+01:16:30,560 --> 01:16:35,440
+their manager for in other ways? So for example, 
+what should I be working on? I was like, "Okay,  
+
+999
+01:16:35,440 --> 01:16:41,320
+well, we have product backlogs" or "I'm blocked 
+on something," or "I need feedback on the product  
+
+1000
+01:16:41,320 --> 01:16:45,880
+I'm building," or "I'm stuck on this technical 
+problem." I tried to figure out ways to not  
+
+1001
+01:16:45,880 --> 01:16:50,240
+have managers be the answers to those questions.
+I'm like, "There should be another answer." And so  
+
+1002
+01:16:50,240 --> 01:16:54,000
+pair programming really helps you get unblocked 
+quickly because you have another person that  
+
+1003
+01:16:54,000 --> 01:16:57,960
+you can bounce technical ideas off of. Having a 
+product backlog can tell you what to work on. We  
+
+1004
+01:16:57,960 --> 01:17:02,280
+had demos every week, demos internally, and then 
+we had demos with the clients every week because  
+
+1005
+01:17:02,280 --> 01:17:06,040
+we were a contract manufacturing for mobile. That 
+gave them feedback on whether they were going in  
+
+1006
+01:17:06,040 --> 01:17:10,560
+the right direction. We had set working hours, 
+which made things super intense in the office.  
+
+1007
+01:17:10,560 --> 01:17:15,760
+This is again like 2009 to 2013. So all these 
+things didn't really need a manager. And what  
+
+1008
+01:17:15,760 --> 01:17:20,400
+I realized was what the unblocking thing needed a 
+manager. I'm blocked on this. Well, I said, okay,  
+
+1009
+01:17:20,400 --> 01:17:24,320
+if... I had all these directors. I did two things 
+famously. One, I had a lot of direct reports,  
+
+1010
+01:17:24,320 --> 01:17:28,760
+and two, I did not do any scheduled one-on-ones 
+because you can't have 120 direct reports and  
+
+1011
+01:17:28,760 --> 01:17:31,640
+do a scheduled one-on-ones because you're 
+never doing anything but one-on-ones. 
+
+1012
+01:17:31,640 --> 01:17:35,640
+So I said, "I'm going to be around a lot 
+because I don't have a lot of one-on-ones.  
+
+1013
+01:17:35,640 --> 01:17:40,040
+So we can do unscheduled one-on-ones." 
+And what that means is if you are blocked,  
+
+1014
+01:17:40,040 --> 01:17:43,840
+actually there's a famous picture where I had 
+this weird cube desk where it was like a circle  
+
+1015
+01:17:43,840 --> 01:17:48,080
+almost in the middle of the whole floor of 
+engineers. And I was always there because I  
+
+1016
+01:17:48,080 --> 01:17:52,800
+wasn't in a lot of meetings and people that were 
+blocked, they could just come up to me. Actually,  
+
+1017
+01:17:52,800 --> 01:17:57,040
+one cool thing about pair programming IRL is you 
+can look across and just see if it's working or  
+
+1018
+01:17:57,040 --> 01:18:00,520
+not. Because if two people are intensely on 
+the computer, you know it's working. If one  
+
+1019
+01:18:00,520 --> 01:18:01,715
+person is laying back or you're like, "It's 
+not working," so you can just walk up to-
+
+1020
+01:18:01,715 --> 01:18:03,480
+It's working if one person is laying back or 
+you're like, it's not working. So you could just  
+
+1021
+01:18:03,480 --> 01:18:07,920
+walk up to them and be like, "What's happening?" 
+But they would come and ask me questions and I  
+
+1022
+01:18:07,920 --> 01:18:10,480
+can unlock them. Like, hey, we're blocked on 
+this. We don't have this API. We need money  
+
+1023
+01:18:10,480 --> 01:18:16,720
+for this machine, whatever. And so the unscheduled 
+one-on-ones ended up being a real clarifying thing  
+
+1024
+01:18:16,720 --> 01:18:20,760
+for me. Because I did scheduled one-on-ones 
+my whole career and I realized after leaving  
+
+1025
+01:18:20,760 --> 01:18:24,560
+Microsoft for three years, I'm like, where are 
+all those one-on-ones useful once a week for three  
+
+1026
+01:18:24,560 --> 01:18:28,400
+years, right? A hundred and fifty one-on-ones.
+So the unscheduled ones were, though. I was like,  
+
+1027
+01:18:28,400 --> 01:18:32,760
+when I knocked on my manager's door and said, 
+"I have this problem, those were important."  
+
+1028
+01:18:32,760 --> 01:18:37,200
+So that's what I created at Xtreme. And the 120 
+directors, it just grew over time. I just didn't  
+
+1029
+01:18:37,200 --> 01:18:41,080
+think I needed managers. So I was like, let me 
+unblock these people on another way. And we came  
+
+1030
+01:18:41,080 --> 01:18:47,400
+up with other things to systems to unblock them 
+that didn't require a manager. And I just also  
+
+1031
+01:18:47,400 --> 01:18:51,000
+had a good memory. I knew exactly everyone's 
+skills and compensation. I knew all that off  
+
+1032
+01:18:51,000 --> 01:18:56,800
+the top of my head, so that helps.
+The thing that I broke was actually,  
+
+1033
+01:18:56,800 --> 01:19:02,480
+this is Chamath. He came in and became our 
+biggest investors. He's obviously is a smart guy,  
+
+1034
+01:19:02,480 --> 01:19:05,320
+but he said the right thing, which is not, 
+this can never work, because then I would  
+
+1035
+01:19:05,320 --> 01:19:09,640
+go into defense mode and explain to him why it 
+would work. He just said to me, I'm not going  
+
+1036
+01:19:09,640 --> 01:19:14,040
+to debate with you whether this works or not, 
+but will it work at 400 people? And I said,  
+
+1037
+01:19:14,040 --> 01:19:19,000
+probably not. He said, okay, so let's change it.
+And so we did then ended up putting a little bit  
+
+1038
+01:19:19,000 --> 01:19:25,240
+more of a structure, but I made a few people 
+directors and I forced them to have 40 direct  
+
+1039
+01:19:25,240 --> 01:19:30,400
+reports each. I said, we're just going to make 
+it still pretty flat. And then that did end up  
+
+1040
+01:19:30,400 --> 01:19:36,200
+working, because it still allowed them to use 
+the system to unblock people versus having to  
+
+1041
+01:19:36,200 --> 01:19:41,480
+do a one-on-one every week, or having 
+to talk about things that potentially a  
+
+1042
+01:19:41,480 --> 01:19:44,960
+system could unblock. And so I tried to 
+figure out ways to systematize things.
+
+1043
+01:19:44,960 --> 01:19:49,440
+I love it. Just another example of doing 
+things differently, not necessarily just,  
+
+1044
+01:19:49,440 --> 01:19:51,720
+here's how it's done and I'm going 
+to do it that way and experimenting  
+
+1045
+01:19:51,720 --> 01:19:54,240
+with it. Even if you knew, okay, 
+maybe long term this isn't the way  
+
+1046
+01:19:54,240 --> 01:19:58,600
+it's going to operate. I imagine at 
+Shopify you don't have 120 reports.
+
+1047
+01:19:58,600 --> 01:20:04,880
+No, we have fourteen or something. We do have 
+these guardrails where I think we say, Hey,  
+
+1048
+01:20:04,880 --> 01:20:08,640
+in engineering you should have between eight 
+and 20. There are definitely people who have  
+
+1049
+01:20:08,640 --> 01:20:13,120
+more and people who have less. But we do try 
+to keep things as flat as possible, because  
+
+1050
+01:20:13,120 --> 01:20:17,720
+we do believe that it doesn't make sense to have 
+three people reporting to and then to somebody,  
+
+1051
+01:20:17,720 --> 01:20:22,320
+and then they only have three people. You just 
+make a very deep hierarchy. We actually do see,  
+
+1052
+01:20:22,320 --> 01:20:29,440
+by the way, the farther you are from Toby, we can 
+see things in the survey results. The alignment  
+
+1053
+01:20:29,440 --> 01:20:33,600
+gets out of whack, and so you do actually see 
+that you want to be closer, you want to have a  
+
+1054
+01:20:33,600 --> 01:20:39,800
+flatter org in general, and that can be achieved 
+by just having more direct reports per level.
+
+1055
+01:20:39,800 --> 01:20:44,880
+Makes sense. Okay, final question before we get 
+to our very exciting lightning round. We have  
+
+1056
+01:20:44,880 --> 01:20:51,720
+this recurring segments that I call Fail Corner 
+where generally people come on these podcasts,  
+
+1057
+01:20:51,720 --> 01:20:54,120
+they share all their successes. 
+Here's all the things that I've done,  
+
+1058
+01:20:54,120 --> 01:20:57,320
+right. Here's all the big wins. 
+And everyone feels like, oh man,  
+
+1059
+01:20:57,320 --> 01:21:02,120
+I wish I was always successful people. When 
+in reality, everyone that comes on has failed  
+
+1060
+01:21:02,120 --> 01:21:06,400
+many times. Is there a story of a failure in 
+your career that you could share that helps  
+
+1061
+01:21:06,400 --> 01:21:10,720
+people see that even folks like you fail, and 
+maybe what you learned from that experience?
+
+1062
+01:21:10,720 --> 01:21:14,600
+I have a few. I'll say one thing by the way, 
+because I think I read this in Tim Ferriss's  
+
+1063
+01:21:14,600 --> 01:21:18,080
+book or in the podcast where he said, create a 
+failure resume and write everything down. And  
+
+1064
+01:21:18,080 --> 01:21:21,800
+I would not recommend doing this because I did 
+this and I got super... I'm like a high energy  
+
+1065
+01:21:21,800 --> 01:21:26,440
+happy guy. I wrote down, I have a note on my 
+phone called Failure Resume, and I wrote down  
+
+1066
+01:21:26,440 --> 01:21:30,560
+all the times I failed and it is depressing. 
+So I would not encourage people to do that,  
+
+1067
+01:21:30,560 --> 01:21:34,920
+but I'm happy to tell you about a few instances.
+So well, one is actually I've been laid off  
+
+1068
+01:21:34,920 --> 01:21:40,320
+twice and people would not expect like, oh, 
+I'm doing this thing and I've been laid off  
+
+1069
+01:21:40,320 --> 01:21:44,680
+twice. And I think in both times it was 
+the right thing, it was the right thing  
+
+1070
+01:21:44,680 --> 01:21:48,800
+for the company, the right thing for me.
+And I kind of used that experience as a way  
+
+1071
+01:21:48,800 --> 01:21:51,880
+to reevaluate and eventually came out with 
+my framework of how I want to spend time.  
+
+1072
+01:21:51,880 --> 01:21:55,400
+But that's maybe a different story.
+I'll tell you about one at Shopify,  
+
+1073
+01:21:55,400 --> 01:22:02,440
+the first week that I started, 2019, we were 
+rebuilding our point of sale system, which now  
+
+1074
+01:22:02,440 --> 01:22:06,000
+does billions of dollars of GMB. But back then we 
+were like, well, let's rebuild it with a new UX  
+
+1075
+01:22:06,000 --> 01:22:10,080
+and a new technology platform. And it was my first 
+week and I'm the mobile guy, coming from Extreme  
+
+1076
+01:22:10,080 --> 01:22:15,800
+Labs. They're like, should we build this in React 
+Native, or should we build this natively on the  
+
+1077
+01:22:15,800 --> 01:22:20,600
+mobile platforms? And so I went through this 
+evaluation, spent a lot of time, blah, blah, blah,  
+
+1078
+01:22:20,600 --> 01:22:28,280
+and I came back with a hedged solution, which is 
+kind of dumb. I said, let's do iOS and Swift and  
+
+1079
+01:22:28,280 --> 01:22:32,280
+let's do Android in React Native. And the reason I 
+said that was I said, I want to learn about React  
+
+1080
+01:22:32,280 --> 01:22:36,680
+Native and I think Android's the harder platform, 
+so let's build that in React Native, but iOS on  
+
+1081
+01:22:36,680 --> 01:22:41,920
+Swift because that guarantees us a product in 
+market. And we didn't have any React Native apps  
+
+1082
+01:22:41,920 --> 01:22:51,120
+in market at the time. A year later we launched 
+the iOS version and it was a huge success. And we  
+
+1083
+01:22:51,120 --> 01:22:54,800
+then spent another six months building the React 
+Native version for Android and everything else.  
+
+1084
+01:22:54,800 --> 01:22:58,760
+And we realized pretty quickly that React Native 
+was the platform for the future. We were like,  
+
+1085
+01:22:58,760 --> 01:23:03,240
+oh my God, this will allow us to have one 
+platform. You could run it on the web as well, and  
+
+1086
+01:23:03,240 --> 01:23:08,800
+we could use the React engineers from the web to 
+work on it. It was a clear winner. By then, we had  
+
+1087
+01:23:08,800 --> 01:23:13,560
+also launched a shop app, which is React Native.
+And so we learned a lot about this. And I went  
+
+1088
+01:23:13,560 --> 01:23:17,280
+back and I said, hey everybody, I made a huge 
+mistake. We just spent a year building this  
+
+1089
+01:23:17,280 --> 01:23:20,920
+thing. It's in market, but we're going to have to 
+rewrite. We're going to have to rebase back onto  
+
+1090
+01:23:20,920 --> 01:23:27,560
+this iOS version. And I think I burned 18 months 
+of time with a hundred engineers, literally from  
+
+1091
+01:23:27,560 --> 01:23:33,040
+the decision I made in the first week of joining 
+Shopify, and Toby, when I went to Toby and I told  
+
+1092
+01:23:33,040 --> 01:23:35,800
+him, I go, hey man, I think I made this mistake 
+and we have to do this and it's going to cost  
+
+1093
+01:23:35,800 --> 01:23:40,320
+us a hundred engineers, another six, whatever. 
+And he looked at me and he goes, you should tell  
+
+1094
+01:23:40,320 --> 01:23:46,120
+everyone this story. That's all he said. Not like, 
+hey, bad, good. He goes, did you learn something?  
+
+1095
+01:23:47,480 --> 01:23:51,520
+It was an epiphany for me, but he was like, this 
+is a learning org, and I totally failed and I told  
+
+1096
+01:23:51,520 --> 01:23:55,080
+everyone I failed and my mistake and everything 
+else, but he goes, just tell everyone because  
+
+1097
+01:23:55,080 --> 01:23:58,560
+he goes, do you know what mistake you made?
+And first I was like, I don't think, like,  
+
+1098
+01:23:58,560 --> 01:24:03,600
+what mistake. He's like, you didn't take. He goes, 
+I will always come down harshly on people who do  
+
+1099
+01:24:03,600 --> 01:24:09,640
+not take risks, and you did not take a risk in 
+this case. But if you take a risk and it doesn't  
+
+1100
+01:24:09,640 --> 01:24:13,600
+work out, you'll never get in trouble, because you 
+took the risk and it was the right risk to take,  
+
+1101
+01:24:13,600 --> 01:24:17,720
+but he goes, but you didn't take the risk.
+And so what I should have done, and by the way,  
+
+1102
+01:24:17,720 --> 01:24:22,480
+even now thinking back it would be super hard 
+to do, first week at Shopify, right, is take a  
+
+1103
+01:24:22,480 --> 01:24:27,720
+risk on a platform that we have not launched in 
+production app on, but he was correct in that we  
+
+1104
+01:24:27,720 --> 01:24:34,400
+should have, because we would've saved ourselves 
+so much more time. So yeah, total failure, sorry.  
+
+1105
+01:24:34,400 --> 01:24:39,040
+The product is super successful now and we're all 
+on React Native and even the Shop Green app is on  
+
+1106
+01:24:39,040 --> 01:24:42,920
+React Native. Everything's React Native, and we're 
+core contributors. It's all good. But I literally  
+
+1107
+01:24:42,920 --> 01:24:48,000
+burned I think 18 months of time for a hundred 
+engineers as my first decision in the company.
+
+1108
+01:24:48,000 --> 01:24:51,200
+This might be the best example of 
+failure coordinator we've had yet.  
+
+1109
+01:24:51,200 --> 01:24:54,560
+This is a great example. Both 
+of them actually are, although  
+
+1110
+01:24:54,560 --> 01:24:58,560
+I'm wondering, okay, that felt like a 
+really good decision to me and it's-
+
+1111
+01:24:58,560 --> 01:25:01,880
+It sounds like it, right? But 
+It wouldn't have been his.
+
+1112
+01:25:01,880 --> 01:25:08,880
+But it's, obviously you don't want to just take 
+risks. There's a limit of a risk but informed,  
+
+1113
+01:25:08,880 --> 01:25:11,840
+I guess. Is there anything you missed 
+there that would told you this was the  
+
+1114
+01:25:11,840 --> 01:25:16,040
+right path? Because in hindsight, of course 
+we should have done this, but looking back,  
+
+1115
+01:25:16,040 --> 01:25:19,480
+what do you think you should have done other 
+than we should have done the risky path?
+
+1116
+01:25:19,480 --> 01:25:22,640
+Yeah, I mean one thing about my career 
+as well is I don't really do anything  
+
+1117
+01:25:22,640 --> 01:25:26,760
+halfway. And when I started looking into React 
+Native, it was never just that I'm going, oh,  
+
+1118
+01:25:26,760 --> 01:25:31,400
+let me look at the docs and read and build a 
+thing. It's like I flew to Meta and met with  
+
+1119
+01:25:31,400 --> 01:25:35,680
+the React team. I became a core contributor. 
+I ran the React Native working group,  
+
+1120
+01:25:35,680 --> 01:25:39,880
+like we became release captains for React Native. 
+I knew that I was going to do all the things,  
+
+1121
+01:25:39,880 --> 01:25:43,640
+so I'm like, and of course in React Native 
+you can also drop down to native and do things  
+
+1122
+01:25:43,640 --> 01:25:49,040
+there that are not possible. So I think I hedged 
+incorrectly. I knew I was going to do all these  
+
+1123
+01:25:49,040 --> 01:25:54,240
+things and I should have looked at my own thought 
+process, say, if I do all the things, can I fail?  
+
+1124
+01:25:55,840 --> 01:25:58,640
+And I didn't take that into account 
+because again, I did five or six. 
+
+1125
+01:25:58,640 --> 01:26:01,280
+I literally, I put everyone together. I 
+was running the group, I was like release  
+
+1126
+01:26:01,280 --> 01:26:05,800
+captain. I would hang out with the React team and 
+Meta, we're doing all the things. We became core  
+
+1127
+01:26:05,800 --> 01:26:10,200
+contributors at React Native before we became core 
+contributors and react because of all the things I  
+
+1128
+01:26:10,200 --> 01:26:16,760
+was doing. And so I think just knowing that I was 
+going to go all out, I should have said, you know  
+
+1129
+01:26:16,760 --> 01:26:23,880
+what? This is not going to fail. And I didn't 
+have the confidence in that path, so I hedged,  
+
+1130
+01:26:23,880 --> 01:26:28,440
+right? Hedging is the worst. And I remember the 
+CTO at the time said, I'm wondering if I should  
+
+1131
+01:26:28,440 --> 01:26:33,840
+force you to go React Native. He literally said 
+that. And I said, I will do if you say that, I  
+
+1132
+01:26:33,840 --> 01:26:37,880
+will do it, but it would've been his decision. And 
+so he didn't do it. He didn't tell me to do it.
+
+1133
+01:26:37,880 --> 01:26:40,120
+Okay, that makes a lot more sense. It's so  
+
+1134
+01:26:40,120 --> 01:26:44,360
+funny that Facebook had a similar 
+mistake early on in their career-
+
+1135
+01:26:44,360 --> 01:26:45,120
+HTML5.
+
+1136
+01:26:45,120 --> 01:26:49,280
+Yeah, exactly. I know. I don't know if you 
+were at Zuck's interview at the Chase center  
+
+1137
+01:26:49,280 --> 01:26:53,440
+that the Acquired podcast did, and he talked 
+about this where their market cap dropped  
+
+1138
+01:26:53,440 --> 01:26:57,200
+80%. They were about to go public. They 
+went with this app. No one thought they  
+
+1139
+01:26:57,200 --> 01:27:02,720
+could do mobile ads. And he's like, that 
+set us back a year and a half. He's like,  
+
+1140
+01:27:02,720 --> 01:27:08,040
+but based on all the pain he's gone through back 
+since then, he's like, that was not too bad.
+
+1141
+01:27:08,040 --> 01:27:14,640
+Yeah, it's true actually, maybe what people 
+don't know is, I was at Facebook, XtremeLabs,  
+
+1142
+01:27:14,640 --> 01:27:19,800
+worked on the Facebook app and we worked on that 
+app. I was in the office when we submitted the iOS  
+
+1143
+01:27:19,800 --> 01:27:26,720
+app every single day that week, because it kept 
+crashing. And we had obviously direct access to  
+
+1144
+01:27:26,720 --> 01:27:30,800
+people at Apple, but we'd ship a new app on Monday 
+and it crashed ship an app on... Not just us,  
+
+1145
+01:27:30,800 --> 01:27:36,200
+but us, Facebook together. And so I remember 
+that whole HTML five fiasco from the inside.
+
+1146
+01:27:36,200 --> 01:27:41,680
+I thought you would say you also told Facebook to 
+decide on the HTML5 app to set them back a year.
+
+1147
+01:27:41,680 --> 01:27:45,840
+I did not. We happened to be there 
+when they were doing it. Yeah.
+
+1148
+01:27:45,840 --> 01:27:50,520
+That's so funny. Amazing. Thank you for sharing 
+that. Before we get to a very exciting lightning  
+
+1149
+01:27:50,520 --> 01:27:54,520
+round, is there anything else that you 
+think would be valuable to leave listeners  
+
+1150
+01:27:54,520 --> 01:27:57,760
+with, either touch on something you've mentioned,  
+
+1151
+01:27:57,760 --> 01:28:01,480
+a last piece of nugget of wisdom, 
+or we just go straight to the round?
+
+1152
+01:28:01,480 --> 01:28:07,480
+Yeah, I'll say something maybe embarrassing for 
+you. I've been using your performance management  
+
+1153
+01:28:07,480 --> 01:28:13,720
+framework from your first round review article, 
+not knowing by the way that it was you. I actually  
+
+1154
+01:28:13,720 --> 01:28:20,880
+found it, you being the famous Lenny podcaster, 
+but the old days, maybe the Lenny, the PM. And I  
+
+1155
+01:28:20,880 --> 01:28:26,400
+remember reading this a long time ago and just 
+copying, there's a Google link in there to a  
+
+1156
+01:28:26,400 --> 01:28:32,080
+Google Doc link with a template for a performance 
+review framework that I've been using for years. 
+
+1157
+01:28:32,080 --> 01:28:36,960
+Literally every review I've done at Shopify 
+uses that framework. And I was writing a  
+
+1158
+01:28:36,960 --> 01:28:43,360
+post to my admin about how we can use LLMs to 
+make it easier for me to write these reviews,  
+
+1159
+01:28:43,360 --> 01:28:46,440
+even though obviously you have to read it all and 
+go through it, but I was like, how can I generate  
+
+1160
+01:28:46,440 --> 01:28:50,560
+some of this with an LLM? And so I wanted to 
+send her the original article. So I went back  
+
+1161
+01:28:50,560 --> 01:28:54,720
+to the first round review, I found the article 
+and said, oh my God, it's Lenny, the same guy. 
+
+1162
+01:28:54,720 --> 01:28:59,720
+So I will say one thing that's interesting 
+about that framework is, I've used it now for,  
+
+1163
+01:28:59,720 --> 01:29:03,560
+like I said, six years here, is that, and I 
+don't think it's me. I think it's actually  
+
+1164
+01:29:03,560 --> 01:29:08,320
+the framework pulls out good information. I've had 
+multiple people in a review process tell me that,  
+
+1165
+01:29:09,080 --> 01:29:13,960
+when I deliver the feedback in, of 
+course the format, they would say,  
+
+1166
+01:29:13,960 --> 01:29:16,920
+wow, I've been in industry a long time. This 
+is the best performance review I've ever  
+
+1167
+01:29:16,920 --> 01:29:21,280
+had. And it's because the framework pulls 
+out good information. So congrats to you. 
+
+1168
+01:29:21,280 --> 01:29:24,240
+But I think it was funny that randomly I 
+was coming on this podcast and I just wrote  
+
+1169
+01:29:24,240 --> 01:29:29,440
+that doc to my admin two, three weeks 
+ago and realized it's the same person.
+
+1170
+01:29:29,440 --> 01:29:34,000
+Well, how about that? I love that. I'll 
+also give credit to a four board guest  
+
+1171
+01:29:34,000 --> 01:29:37,800
+on this podcast, Vlad Loktev, 
+who was my manager at Airbnb,  
+
+1172
+01:29:37,800 --> 01:29:41,180
+and that's where I was inspired 
+to write about that framework.
+
+1173
+01:29:41,180 --> 01:29:41,680
+Amazing.
+
+1174
+01:29:41,680 --> 01:29:45,160
+So it trickles down to him and I 
+don't know where he boarded this,  
+
+1175
+01:29:45,160 --> 01:29:50,600
+he probably invented it. So credit to Vlad also 
+for that. Another fun fact along these lines,  
+
+1176
+01:29:50,600 --> 01:29:55,040
+I have another first round of repost about the 
+W framework, which is a framework for planning.  
+
+1177
+01:29:55,040 --> 01:29:59,240
+They do annual planning. And that's 
+one that I've slowly discovered many,  
+
+1178
+01:29:59,240 --> 01:30:02,120
+many companies use and they don't know 
+where it came from. They just call it,  
+
+1179
+01:30:02,120 --> 01:30:05,960
+oh, we have this W framework. Someone 
+flipped it and call the M framework.  
+
+1180
+01:30:05,960 --> 01:30:10,360
+But that's another one that has trickled into 
+the ether of tech companies, which is awesome.
+
+1181
+01:30:10,360 --> 01:30:11,880
+Amazing.
+
+1182
+01:30:11,880 --> 01:30:17,280
+With that, Farhan, we have reached our very 
+exciting lightning round. Are you ready?
+
+1183
+01:30:17,280 --> 01:30:18,080
+I'm ready.
+
+1184
+01:30:18,080 --> 01:30:23,560
+Let's do this. What are two or three books 
+that you have recommended most to other people?
+
+1185
+01:30:23,560 --> 01:30:28,920
+There's one. So Toby has an annoyingly long set 
+of books that he recommends, and they're all,  
+
+1186
+01:30:28,920 --> 01:30:33,280
+not all, they're usually good, depends because 
+we're not totally in sync on fiction, for example.  
+
+1187
+01:30:33,280 --> 01:30:39,000
+But he recommended one to me that I think everyone 
+should read right now called Manna, M-A-N-N-A,  
+
+1188
+01:30:39,000 --> 01:30:46,680
+from Marshall Brain. It is a book, it's a book 
+about AI. And I think the most interesting thing  
+
+1189
+01:30:46,680 --> 01:30:54,200
+about it though is about a future in which the 
+AI tells the humans what to do. So it's this idea  
+
+1190
+01:30:54,200 --> 01:30:57,640
+of, imagine in the future you came into work 
+and the AI would tell you what emails to pay  
+
+1191
+01:30:57,640 --> 01:31:01,240
+attention to or what dashboard to look at because 
+something weird is going on. It takes that to  
+
+1192
+01:31:01,240 --> 01:31:04,920
+an interesting level. So I would recommend 
+reading that book. It's not long. That's fun. 
+
+1193
+01:31:04,920 --> 01:31:08,240
+I think another book that I recommend to 
+people, and it's a weird one to recommend,  
+
+1194
+01:31:08,240 --> 01:31:12,440
+but it's Business Adventures from John Brooks, the 
+famous, if you ask, I think it's Bill Gates, what  
+
+1195
+01:31:12,440 --> 01:31:17,840
+his famous book of all time is, it's this book.
+And the cool thing about the book is that it is  
+
+1196
+01:31:17,840 --> 01:31:26,240
+not easy to digest for anyone with focus problems. 
+Paul Graham wrote the post How to Do Great Work,  
+
+1197
+01:31:26,240 --> 01:31:31,160
+and it's super long. The best part about 
+that post is that you have to be able to  
+
+1198
+01:31:31,160 --> 01:31:35,440
+read the whole thing. And so the same thing with 
+Business Adventures. I think each chapter is,  
+
+1199
+01:31:35,440 --> 01:31:41,200
+it's 12 chapters, 12 stories, no breaks in 
+between. It's just each one is super long. But  
+
+1200
+01:31:41,200 --> 01:31:45,800
+it just goes into a problem at such depth that 
+if you can maintain your focus to get through  
+
+1201
+01:31:45,800 --> 01:31:51,040
+the depths of each problem, you will just learn 
+something, just like that post by Paul Graham. 
+
+1202
+01:31:51,040 --> 01:31:53,920
+I loved that it was so long because 
+I sent it to people and I said,  
+
+1203
+01:31:53,920 --> 01:32:00,400
+the test here is can you read it? Can you just 
+get to the end? And not in a pejorative way,  
+
+1204
+01:32:00,400 --> 01:32:05,000
+like in a... If you can get to the end, you 
+will extract the alpha from this post if you  
+
+1205
+01:32:05,000 --> 01:32:11,640
+can read it all. So those are... Manna is like 
+the opposite. It's very easy and easy read.
+
+1206
+01:32:11,640 --> 01:32:14,200
+I'm excited to read these. Next question. Do you  
+
+1207
+01:32:14,200 --> 01:32:17,880
+have a favorite recent movie 
+or TV show you really enjoyed?
+
+1208
+01:32:17,880 --> 01:32:24,000
+A recent one was Challengers, the tennis 
+movie, with Zendaya just randomly I was at home  
+
+1209
+01:32:24,000 --> 01:32:28,360
+and I put it on and the cool thing about it 
+was more the cinematography and music. They  
+
+1210
+01:32:28,360 --> 01:32:34,640
+had this weird style, art house style, where they 
+would be talking and music would get super loud.  
+
+1211
+01:32:34,640 --> 01:32:39,880
+It was very strange, but a very, very good 
+movie. And then you saw, you said movies and-
+
+1212
+01:32:39,880 --> 01:32:42,200
+Or TV show. Oh, TV show, anything like that.
+
+1213
+01:32:42,200 --> 01:32:44,000
+Yeah, one of my all time favorites is probably  
+
+1214
+01:32:44,000 --> 01:32:47,120
+Halt and Catch Fire. I don't 
+know if you've watched that.
+
+1215
+01:32:47,120 --> 01:32:48,320
+About the early tech industry.
+
+1216
+01:32:48,320 --> 01:32:51,440
+Early tech. And I think there 
+was an Andreessen podcast where  
+
+1217
+01:32:51,440 --> 01:32:54,920
+he said this is the closest thing 
+to what a real startup looks like.  
+
+1218
+01:32:54,920 --> 01:32:58,780
+So Halt and Catch Fire like an all time 
+recommend, everybody has to watch it.
+
+1219
+01:32:58,780 --> 01:33:02,960
+Do you have a favorite product that you 
+recently discovered that you really love?
+
+1220
+01:33:02,960 --> 01:33:08,720
+I don't know if I want to be in the zeitgeist 
+right now, but the Meta Ray-Bans are amazing. And  
+
+1221
+01:33:08,720 --> 01:33:12,160
+the biggest thing about the Meta Ray-Bans was just 
+that I think I never got into it and I saw people  
+
+1222
+01:33:12,160 --> 01:33:15,240
+around me wearing it, but I only got into it 
+when somebody said I'd never take my AirPods with  
+
+1223
+01:33:15,240 --> 01:33:20,400
+me anymore. And I was like, oh, I can swap two 
+devices for one device. I always have sunglasses  
+
+1224
+01:33:20,400 --> 01:33:25,760
+and AirPods because I'll go for a walk or listen 
+to a podcast and now I can just have one device. 
+
+1225
+01:33:25,760 --> 01:33:29,840
+And this happened to me. I was in the summer, I 
+was at a pool party and someone called me and I  
+
+1226
+01:33:29,840 --> 01:33:32,720
+just took it from my sunglasses and people 
+were confused as where I was taking this  
+
+1227
+01:33:32,720 --> 01:33:37,960
+call from. But they are the right amount of 
+tech. They're in unintrusive, you can't tell,  
+
+1228
+01:33:37,960 --> 01:33:41,200
+they don't look like any tech. And then also I 
+was playing soccer with my kids. I have three  
+
+1229
+01:33:41,200 --> 01:33:44,800
+kids. I just turned the video on and I was 
+the goalie and they were taking shots and I  
+
+1230
+01:33:44,800 --> 01:33:48,440
+was watching them. They had no idea that I was 
+just recording. And it was such a cool moment  
+
+1231
+01:33:48,440 --> 01:33:53,280
+because I was in playing soccer with them. 
+I wasn't with my phone and I got to get this  
+
+1232
+01:33:53,280 --> 01:33:58,040
+amazing set of video that I would never would've 
+gotten. So I really liked the Meta Ray-Bans.
+
+1233
+01:33:58,040 --> 01:34:03,800
+We had Boz on the podcast who leads a lot of 
+that work and he's got a to teach us. And I  
+
+1234
+01:34:03,800 --> 01:34:08,600
+put on Ray-Bans while we were doing the interview 
+just for fun. You could see my setup. Okay, cool.  
+
+1235
+01:34:09,520 --> 01:34:15,320
+Two more questions. Do you have a favorite life 
+motto that you find useful in work or in life?
+
+1236
+01:34:15,320 --> 01:34:23,840
+Okay, I do. And it's on a lot of my profile 
+bios, and it is, everything you know is  
+
+1237
+01:34:23,840 --> 01:34:28,240
+wrong. And the reason I like that one, and 
+people always like, what would you put on  
+
+1238
+01:34:28,240 --> 01:34:32,400
+a billboard? And people always come back to me 
+and say, that's like they know that as my motto. 
+
+1239
+01:34:32,400 --> 01:34:38,840
+And the reason for that is it's this notion of 
+if all the knowledge you knew was incorrect,  
+
+1240
+01:34:38,840 --> 01:34:43,800
+could you from first principles build up a 
+view of the world? And that's kind of how I  
+
+1241
+01:34:43,800 --> 01:34:48,800
+like to think of things is that, anything could be 
+incorrect. Even things that you think are correct,  
+
+1242
+01:34:48,800 --> 01:34:51,800
+which is why, again, back to the, I like 
+to experiment. I like to look stupid,  
+
+1243
+01:34:51,800 --> 01:34:55,840
+because I'm always trying shit because I'm 
+like, I don't know if even though you say this  
+
+1244
+01:34:55,840 --> 01:35:00,160
+is correct, that this is going to work, right.
+Actually, one example, my wife hates this is I  
+
+1245
+01:35:00,160 --> 01:35:07,000
+have a Tesla and I routinely will switch gears 
+without fully stopping the car, which you cannot  
+
+1246
+01:35:07,000 --> 01:35:11,960
+do in a regular car, but I'll be in drive and then 
+I'll slow down to drive back up into my driveway  
+
+1247
+01:35:11,960 --> 01:35:16,440
+and while it's moving I switch it into reverse.
+And you never would know that that's possible  
+
+1248
+01:35:16,440 --> 01:35:18,440
+except for trying. And sometimes it 
+goes beep beep because you're going  
+
+1249
+01:35:18,440 --> 01:35:24,960
+too fast. And she hates it. But I'm always 
+trying weird things and so that's why I  
+
+1250
+01:35:24,960 --> 01:35:29,040
+say everything you know is wrong. Who knows 
+what's possible, just try different things.
+
+1251
+01:35:29,040 --> 01:35:32,040
+I do the same thing with my Tesla. 
+I used to do it with a non-electric  
+
+1252
+01:35:32,040 --> 01:35:34,840
+car and my wife is always like, 
+don't do that. Screwing it up.
+
+1253
+01:35:34,840 --> 01:35:35,600
+Yes, exactly.
+
+1254
+01:35:35,600 --> 01:35:39,720
+I love that on an electric car, there's no 
+gear you're breaking, it's just software.
+
+1255
+01:35:39,720 --> 01:35:41,120
+Exactly.
+
+1256
+01:35:41,680 --> 01:35:45,840
+This quote reminds me of that you shared of 
+everything you know is wrong. The founders of  
+
+1257
+01:35:45,840 --> 01:35:50,200
+Airbnb always talked about just this point that 
+everything around you was designed somebody,  
+
+1258
+01:35:50,200 --> 01:35:54,080
+another human. There's not necessarily 
+that much smarter or insightful.  
+
+1259
+01:35:54,080 --> 01:35:57,720
+It doesn't mean what they did was correct. 
+Somebody else find some better potentially...
+
+1260
+01:35:57,720 --> 01:35:59,520
+I think Steve Jobs had a similar thing like, hey,  
+
+1261
+01:35:59,520 --> 01:36:03,000
+you can design anything. Everything's 
+designed by people. I love that one too.
+
+1262
+01:36:03,000 --> 01:36:09,040
+Yeah. Final question. So you told me the story 
+of this PhD you hired versus just a guy you  
+
+1263
+01:36:09,040 --> 01:36:14,240
+met in a college, sorry, in a coffee shop. I read 
+another similar story where you hired a waitress.
+
+1264
+01:36:14,240 --> 01:36:14,640
+Yes.
+
+1265
+01:36:14,640 --> 01:36:17,200
+Is that real? Okay, tell that story.
+
+1266
+01:36:17,200 --> 01:36:21,760
+Yeah, so again, this is another long list of 
+reasons my wife is in annoyed with me, but this  
+
+1267
+01:36:21,760 --> 01:36:29,960
+is another one of them. Whenever we are out, I'm 
+always scanning and I'm always scanning people and  
+
+1268
+01:36:30,640 --> 01:36:34,640
+one, do I know anybody around, whatever. I like 
+to scan for people and I have a good memory for  
+
+1269
+01:36:34,640 --> 01:36:39,680
+faces. But in this case we were at a restaurant 
+and I saw a waitress doing a very, very good job,  
+
+1270
+01:36:39,680 --> 01:36:45,480
+an extremely, like she was running between 
+different tables, she was smiling her face,  
+
+1271
+01:36:45,480 --> 01:36:49,760
+taking everyone's order, making sure that there 
+was a thing happening in the kitchen. She was kind  
+
+1272
+01:36:49,760 --> 01:36:54,720
+of doing a phenomenal job of organizing the entire 
+crazy busy restaurant. And so in talking to her,  
+
+1273
+01:36:54,720 --> 01:36:57,680
+I said, what do you do outside of this because 
+you look like you're super. She's like, what do  
+
+1274
+01:36:57,680 --> 01:37:01,600
+you mean? I'm just the waitress.
+And I said, well, would you like to,  
+
+1275
+01:37:01,600 --> 01:37:04,720
+this is XtremeLabs. I Said, would you like to 
+work at XtremeLabs? She's like, what's that? So  
+
+1276
+01:37:04,720 --> 01:37:09,400
+I explained it to her and I got her contact info. 
+She came into the office and she first started  
+
+1277
+01:37:09,400 --> 01:37:14,480
+off as our receptionist, so she moved from the 
+retail world into the office world, and then I  
+
+1278
+01:37:14,480 --> 01:37:18,000
+brought her on as my admin and she became one of 
+my recruiters. And I taught her how to recruit  
+
+1279
+01:37:18,000 --> 01:37:21,800
+and talked to people and she came in with me 
+to info sessions. And over time we actually  
+
+1280
+01:37:21,800 --> 01:37:26,200
+hired many more people from the restaurant that 
+were really, really good at their job. And what  
+
+1281
+01:37:26,200 --> 01:37:31,000
+was amazing was, one, she was organized but 
+not reorganized. I had to teach her at Google  
+
+1282
+01:37:31,000 --> 01:37:35,360
+Docs and G Suite and everything else, but she was 
+super smart but just never had the opportunity. 
+
+1283
+01:37:35,360 --> 01:37:40,320
+The coolest thing about this is that she ended 
+up being, she ended up taking over one of the HR  
+
+1284
+01:37:40,320 --> 01:37:46,840
+functions for us. And she had a college degree 
+and because of the work she had done with us,  
+
+1285
+01:37:46,840 --> 01:37:50,680
+she was able to parlay that into finishing, 
+doing one more year and getting a university  
+
+1286
+01:37:50,680 --> 01:37:56,200
+degree. And now she's a director of HR at 
+a company, which is amazing from, like,  
+
+1287
+01:37:56,200 --> 01:38:01,480
+she went from that environment to this environment 
+and a lot of her people, she pulled the smart and  
+
+1288
+01:38:01,480 --> 01:38:06,320
+intense people she pulled from that environment 
+also ended up on these amazing career paths. If  
+
+1289
+01:38:06,320 --> 01:38:12,440
+I see someone doing a good job, I'm like, what 
+do they do? How can I work with them? This is  
+
+1290
+01:38:12,440 --> 01:38:16,080
+one example of pulling somebody out of that 
+environment. I have lots of other ones where I  
+
+1291
+01:38:16,080 --> 01:38:22,080
+overhear someone in their designer or an engineer 
+and I try to hire them into my company as well.
+
+1292
+01:38:22,080 --> 01:38:26,480
+Wow. That is such a good story. 
+I love that. Maybe restaurants  
+
+1293
+01:38:26,480 --> 01:38:31,120
+are the new feeder system for tech 
+companies. Did not think about that.
+
+1294
+01:38:31,120 --> 01:38:34,000
+Yeah, I mean, everyone's smart at 
+something, so I was trying to figure out,  
+
+1295
+01:38:34,000 --> 01:38:36,560
+she was really good at this thing. 
+She'd be so good at something else.
+
+1296
+01:38:36,560 --> 01:38:41,560
+Amazing. I feel like there's so many stories, more 
+stories to tell, but we're going to wrap it up and  
+
+1297
+01:38:41,560 --> 01:38:45,280
+let you go, farhan. Two final questions. Where can 
+folks find you a line if they want to reach out,  
+
+1298
+01:38:45,280 --> 01:38:49,960
+learn more, maybe apply to work at Shopify 
+and how can listeners be useful to you?
+
+1299
+01:38:49,960 --> 01:38:53,880
+Sure, so Twitter's probably the 
+place I try to hang out the most,  
+
+1300
+01:38:53,880 --> 01:39:00,760
+X at FNThawar, and maybe I'll put that in the 
+show notes. And then listeners for me. I mean,  
+
+1301
+01:39:00,760 --> 01:39:03,760
+I love to be challenged. I'm sure that there 
+are people who are like, they heard something  
+
+1302
+01:39:03,760 --> 01:39:07,560
+that I said and they're like, oh, that's super 
+dumb. We do this instead. Or here's research  
+
+1303
+01:39:07,560 --> 01:39:11,440
+that says that that won't work. I would love to 
+hear more about these because I'm just again, on  
+
+1304
+01:39:11,440 --> 01:39:16,560
+a learning journey and if I did something stupid, 
+very likely I would like to learn a better way to  
+
+1305
+01:39:16,560 --> 01:39:20,880
+do things. So I would love for people to comment 
+and say, hey, this is dumb. You should try this,  
+
+1306
+01:39:20,880 --> 01:39:24,800
+or, that doesn't make any sense. I would love 
+to learn more. So that's what I'm looking for.
+
+1307
+01:39:24,800 --> 01:39:31,040
+All right, well leave a comment in YouTube or 
+on the Substack post with what Farhan got wrong.
+
+1308
+01:39:31,040 --> 01:39:32,160
+Amazing.
+
+1309
+01:39:33,280 --> 01:39:38,440
+Thank you so much for being here. 
+Thanks for having me. Bye everyone. 
+
+1310
+01:39:38,440 --> 01:39:42,680
+Thank you so much for listening. If you found this 
+valuable, you can subscribe to the show on Apple  
+
+1311
+01:39:42,680 --> 01:39:48,320
+Podcasts, Spotify, or your favorite podcast 
+app. Also, please consider giving us a rating  
+
+1312
+01:39:48,320 --> 01:39:53,640
+or leaving a review, as that really helps other 
+listeners find the podcast. You can find all past  
+
+1313
+01:39:53,640 --> 01:40:02,680
+episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

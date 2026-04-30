@@ -1,0 +1,3835 @@
+1
+00:00:00,080 --> 00:00:03,120
+You guys have a billion monthly active users.
+
+2
+00:00:03,120 --> 00:00:08,240
+Why is it so freaking hard to build a durable, lasting, social consumer product?
+
+3
+00:00:08,240 --> 00:00:12,160
+So much of consumer technology focuses on do I have product market fit?
+
+4
+00:00:12,160 --> 00:00:16,240
+People don't spend nearly enough time thinking about distribution and figuring out distribution.
+
+5
+00:00:16,240 --> 00:00:22,080
+>> I feel like Snap has always been punching above its weight in terms of just how much new stuff comes out of your team.
+
+6
+00:00:22,080 --> 00:00:24,960
+Stories, AR glasses, swipe based navigation.
+
+7
+00:00:24,960 --> 00:00:29,920
+We have a very very small design team that is constantly innovating and and creating new things.
+
+8
+00:00:29,920 --> 00:00:32,399
+Your first day that you join the design team, you present work.
+
+9
+00:00:32,399 --> 00:00:33,120
+You're making things.
+
+10
+00:00:33,120 --> 00:00:35,280
+If you want to have a good idea, you have to have lots of ideas.
+
+11
+00:00:35,280 --> 00:00:36,800
+People copy you as a human.
+
+12
+00:00:36,800 --> 00:00:38,960
+How does it feel just to see this consistently happen?
+
+13
+00:00:38,960 --> 00:00:44,879
+>> 15 years ago, we essentially learned that software is not a moat, which is something that everyone is discovering today with AI.
+
+14
+00:00:44,879 --> 00:00:47,280
+>> You describe this coming year as the crucible moment.
+
+15
+00:00:47,280 --> 00:00:48,480
+>> It's a real turning point.
+
+16
+00:00:48,480 --> 00:00:52,800
+We're in an industry where so much of the conversation is focused on technology.
+
+17
+00:00:52,800 --> 00:00:59,120
+Humanity is far more important because humanity dictates how technology is adopted.
+
+18
+00:00:59,120 --> 00:01:03,920
+Technology leaders think that folks will just blindly adopt new technology as it comes out.
+
+19
+00:01:03,920 --> 00:01:10,640
+There's going to be a huge amount of societal push back on a lot of the changes that are coming with AI.
+
+20
+00:01:10,640 --> 00:01:14,400
+Today my guest is Evan Spiegel, CEO and co-founder of Snap.
+
+21
+00:01:14,400 --> 00:01:21,759
+Evan is one of the very few humans in the world who has successfully built and scaled a lasting consumer social app.
+
+22
+00:01:21,759 --> 00:01:28,960
+In the 15 years since Snapchat launched, there are essentially zero social consumer apps that have launched and stuck around.
+
+23
+00:01:28,960 --> 00:01:35,360
+Snapchat has over 1 billion monthly active users, is generating over 6 billion a year in revenue.
+
+24
+00:01:35,360 --> 00:01:40,560
+People post over 8 billion AR lens photos a day on Snapchat.
+
+25
+00:01:40,560 --> 00:01:45,119
+And over the years, Evan and his team have invented the concept of stories.
+
+26
+00:01:45,119 --> 00:01:47,840
+They had the first AR glasses product in the market.
+
+27
+00:01:47,840 --> 00:01:52,880
+They invented swipe face navigation, the camera being primary, and also back in the day,
+
+28
+00:01:52,880 --> 00:01:58,560
+face swapping, making people look older, and so many of the things that are just copied throughout the entire industry.
+
+29
+00:01:58,560 --> 00:02:04,240
+If this is truly the golden age of consumer products, like many people say, AI is going to enable,
+
+30
+00:02:04,240 --> 00:02:10,319
+there's a lot that we can learn about how Evan and his team think and operate and are able to continue innovating.
+
+31
+00:02:10,319 --> 00:02:14,000
+This is a rare podcast interview with Evan, and we cover a lot of ground.
+
+32
+00:02:14,000 --> 00:02:23,599
+Before we get into it, don't forget to check out Lenny's product.com for a year free of the hottest and most well-crafted AI products in the world,
+
+33
+00:02:23,599 --> 00:02:26,879
+available exclusively to Lenny's newsletter subscribers.
+
+34
+00:02:26,879 --> 00:02:31,480
+With that, I bring you Evan Spiegel.
+
+35
+00:02:32,319 --> 00:02:34,319
+Evan, thank you so much for being here.
+
+36
+00:02:34,319 --> 00:02:35,920
+Welcome to the podcast.
+
+37
+00:02:35,920 --> 00:02:36,720
+>> Thank you so much.
+
+38
+00:02:36,720 --> 00:02:37,360
+Thanks for having me.
+
+39
+00:02:37,360 --> 00:02:38,560
+I'm looking forward to it.
+
+40
+00:02:38,560 --> 00:02:50,239
+>> I want to start with just trying to understand and help people understand why is it so freaking hard to build a durable lasting consumer product and in particular a social consumer product.
+
+41
+00:02:50,239 --> 00:02:55,760
+And just to give people this context, I don't think people realize this, but since you launched 15 years ago,
+
+42
+00:02:55,760 --> 00:03:00,560
+there's basically uh Tik Tok, which is not really social, it's more of like a media platform,
+
+43
+00:03:00,560 --> 00:03:05,680
+I'd say, and then maybe threads, which I think is cheating because it just sits on top of Instagram.
+
+44
+00:03:05,680 --> 00:03:10,560
+Basically, nothing else has worked other than Snapchat 15 years ago.
+
+45
+00:03:10,560 --> 00:03:15,280
+And in spite of everyone just like everyone innately just wants to build a consumer product,
+
+46
+00:03:15,280 --> 00:03:18,080
+social app, it's just like where everyone first goes, everybody fails.
+
+47
+00:03:18,080 --> 00:03:19,519
+Nothing works.
+
+48
+00:03:19,519 --> 00:03:20,319
+Why is it so hard?
+
+49
+00:03:20,319 --> 00:03:21,440
+What do you think people don't get?
+
+50
+00:03:21,440 --> 00:03:24,879
+Well, >> I think it's really interesting, you know, in terms of the examples that you just shared,
+
+51
+00:03:24,879 --> 00:03:31,120
+right, of of Tik Tok and and threads because you you just shared two examples of people who figured out distribution.
+
+52
+00:03:31,120 --> 00:03:35,440
+And I think that that's actually one of the hardest things to figure out in consumer technology today.
+
+53
+00:03:35,440 --> 00:03:41,440
+We were so fortunate when we created Snapchat, the mobile phone, you know, and the app store were just getting started.
+
+54
+00:03:41,440 --> 00:03:44,159
+So, people were downloading lots of new apps all the time.
+
+55
+00:03:44,159 --> 00:03:46,959
+They were really excited about trying new uh services.
+
+56
+00:03:46,959 --> 00:03:50,400
+is, you know, Instagram, I think, had started a year before Snapchat or something like that.
+
+57
+00:03:50,400 --> 00:03:55,920
+So, there was a real appetite to try new apps and new services and and that's not the case today.
+
+58
+00:03:55,920 --> 00:03:59,840
+It's a lot harder to get distribution for new ideas and new services.
+
+59
+00:03:59,840 --> 00:04:02,879
+People aren't downloading as many apps now as they used to.
+
+60
+00:04:02,879 --> 00:04:09,120
+And both Tik Tok and threads figured out distribution, which is why I think they're more recent examples of success.
+
+61
+00:04:09,120 --> 00:04:12,560
+Tik Tok did it with money, uh, which I actually thought was really innovative.
+
+62
+00:04:12,560 --> 00:04:16,959
+uh they spent billions of dollars subsidizing both sides of their video marketplace,
+
+63
+00:04:16,959 --> 00:04:17,199
+right?
+
+64
+00:04:17,199 --> 00:04:21,199
+Acquiring customers to watch videos and then paying creators to make videos.
+
+65
+00:04:21,199 --> 00:04:25,360
+And so they were able to bootstrap uh you know their their ecosystem.
+
+66
+00:04:25,360 --> 00:04:31,600
+And I think with threads obviously they were able to leverage the amazing distribution uh that Meta has across all their other products.
+
+67
+00:04:31,600 --> 00:04:36,800
+So I I think so much of consumer technology focuses on you know am I building the right product?
+
+68
+00:04:36,800 --> 00:04:38,400
+Do I have product market fit?
+
+69
+00:04:38,400 --> 00:04:43,360
+have I, you know, built something that's really going to resonate uh with customers that they're really going to want to use all the time.
+
+70
+00:04:43,360 --> 00:04:48,320
+And I think people don't spend nearly enough time thinking about, you know, distribution and figuring out distribution.
+
+71
+00:04:48,320 --> 00:04:51,680
+And that seems to me uh to be a huge differentiator.
+
+72
+00:04:51,680 --> 00:04:58,479
+So I, you know, as I reflect on the early days of building Snapchat, the thing that we figured out in terms of distribution,
+
+73
+00:04:58,479 --> 00:05:08,240
+especially when it comes to social, was that, you know, back then people believed that uh there was there were network effects in social networks that meant that the more
+
+74
+00:05:08,240 --> 00:05:12,160
+people you had using the service, the stickier that it is, right?
+
+75
+00:05:12,160 --> 00:05:17,280
+And so there was no way to beat the biggest networks because those were the most valuable.
+
+76
+00:05:17,280 --> 00:05:25,280
+And what Snapchat figured out that was, I think, different was that, you know, despite the fact that there were much bigger networks that connected more people,
+
+77
+00:05:25,280 --> 00:05:28,320
+what really mattered was connecting you to the right people.
+
+78
+00:05:28,320 --> 00:05:32,400
+And so if you could just connect someone not to all their friends, but to their best friend,
+
+79
+00:05:32,400 --> 00:05:36,400
+to their partner, to their spouse, the people that they cared most about in the world,
+
+80
+00:05:36,400 --> 00:05:40,080
+that that that's where the majority of the value is in the network.
+
+81
+00:05:40,080 --> 00:05:43,199
+And so that's what really allowed us to grow in those early days.
+
+82
+00:05:43,199 --> 00:05:47,919
+you know, we we had the benefit of the app store and mobile distribution, but we also had a different way of growing our service,
+
+83
+00:05:47,919 --> 00:05:49,840
+which wasn't about having the most friends.
+
+84
+00:05:49,840 --> 00:05:51,759
+It was about having your close friends.
+
+85
+00:05:51,759 --> 00:05:52,639
+>> That is so interesting.
+
+86
+00:05:52,639 --> 00:05:57,440
+It's something that I've been thinking a lot about actually, this idea of distribution because of AI.
+
+87
+00:05:57,440 --> 00:06:04,000
+If you think about just where AI has come into the market, it's it started originally just like helping people autocomplete code.
+
+88
+00:06:04,000 --> 00:06:05,600
+That's something I've been talking about a lot on this podcast.
+
+89
+00:06:05,600 --> 00:06:08,240
+So, it's like, okay, autocomplete code, okay, now it's writing all our code.
+
+90
+00:06:08,240 --> 00:06:12,880
+Okay, now it's reviewing our code and now it's testing itself and now it's going to help us come up with ideas.
+
+91
+00:06:12,880 --> 00:06:23,759
+So, it's like starting in the middle of the product development process and expanding out and I feel like it will be very good at coming up with great ideas and developing strategy like it's going up the I don't know the funnel or the
+
+92
+00:06:23,759 --> 00:06:33,520
+timeline of building a product and I feel like distribution is where it ends up being what ends up being the new moat and the new biggest challenge uh because AI is not going to really help you there.
+
+93
+00:06:33,520 --> 00:06:37,680
+So, that's it's really interesting that that's even more so true for consumer products.
+
+94
+00:06:37,680 --> 00:06:40,960
+I I think that's absolutely the case and and the only thing I would say is, you know,
+
+95
+00:06:40,960 --> 00:06:47,840
+the most exciting times in technology are when there are new platforms that get created and that tends to be where a lot of the value comes from.
+
+96
+00:06:47,840 --> 00:06:52,560
+You think about, you know, a lot of the big consumer technology companies today, they were really born out of mobile,
+
+97
+00:06:52,560 --> 00:06:52,800
+right?
+
+98
+00:06:52,800 --> 00:06:59,199
+Whether it you know, it's Uber, uh, you know, Snapchat, some of those early generation companies that that really,
+
+99
+00:06:59,199 --> 00:07:01,360
+you know, got distribution and built themselves on mobile.
+
+100
+00:07:01,360 --> 00:07:04,880
+So I think as we look forward to, you know, sort of these next generation form factors,
+
+101
+00:07:04,880 --> 00:07:14,319
+things like glasses, there's going to be a whole new set of opportunities and a whole new surface for people to build generational consumer companies and I'm really excited about that especially if they have distribution already.
+
+102
+00:07:14,319 --> 00:07:16,639
+It feels like that's going to be like I'm just worried for startups.
+
+103
+00:07:16,639 --> 00:07:22,160
+It's going to be very hard to get distribution just like it's there's so much launching every day.
+
+104
+00:07:22,160 --> 00:07:30,400
+There's so much to pay attention to and it just feels very hard for a startup to get any attention with existing you know against existing incumbents.
+
+105
+00:07:30,400 --> 00:07:35,120
+This episode is brought to you by our season's presenting sponsor, WorkOS.
+
+106
+00:07:35,120 --> 00:07:42,960
+What do OpenAI, Anthropic, Cursor, Versell, Replet, Sierra, Clay, and hundreds of other winning companies all have in common?
+
+107
+00:07:42,960 --> 00:07:45,280
+They are all powered by work OS.
+
+108
+00:07:45,280 --> 00:07:49,919
+If you're building a product for the enterprise, you've felt the pain of integrating single signon,
+
+109
+00:07:49,919 --> 00:07:54,720
+skim, arbback, audit, logs, and other features required by large companies.
+
+110
+00:07:54,720 --> 00:08:02,319
+work OS turns those deal blockers into drop-in APIs with a modern developer platform built specifically for B2B SAS.
+
+111
+00:08:02,319 --> 00:08:08,400
+Literally every startup that I'm an investor in that starts to expand up market ends up working with Work OS.
+
+112
+00:08:08,400 --> 00:08:10,319
+And that's because they are the best.
+
+113
+00:08:10,319 --> 00:08:15,840
+Whether you are seedstage startup trying to land your first enterprise customer or a unicorn expanding globally,
+
+114
+00:08:15,840 --> 00:08:20,639
+work OS is the fastest path to becoming enterprise ready and unblocking growth.
+
+115
+00:08:20,639 --> 00:08:23,280
+It's essentially Stripe for enterprise features.
+
+116
+00:08:23,280 --> 00:08:29,919
+Visit works.com to get started or just hit up their Slack where they have actual engineers waiting to answer your questions.
+
+117
+00:08:29,919 --> 00:08:36,399
+Workos allows you to build faster with delightful APIs, comprehensive docs, and a smooth developer experience.
+
+118
+00:08:36,399 --> 00:08:40,399
+Go to work os.com to make your app enterprise ready today.
+
+119
+00:08:40,399 --> 00:08:46,959
+Something that has always been really interesting to me about Snapchat is it feels like you guys have just innovated so much over the years.
+
+120
+00:08:46,959 --> 00:08:49,680
+You guys basically just invent all the things.
+
+121
+00:08:49,680 --> 00:09:00,080
+uh people copy you benefit greatly from it and it's just kind of uh wild to watch and just like a few examples that come to mind uh stories you guys created uh
+
+122
+00:09:00,080 --> 00:09:11,680
+you were very early on AR glasses you guys launched spectacles before Meta got into this stuff uh swipe based navigation I think you guys started the idea of holding to do a video versus a
+
+123
+00:09:11,680 --> 00:09:20,959
+photo there's probably a bunch uh first of all what's the next thing someone's going to steal do you think >> oh gosh well I just uh I I just saw Instagram plus launch.
+
+124
+00:09:20,959 --> 00:09:31,839
+So I think that's the latest rip uh you know >> which is a subscription plus >> yeah I think you know we just hit 25 million subscribers on Snapchat plus more than a billion revenue run rate so
+
+125
+00:09:31,839 --> 00:09:40,800
+was I think probably enough to get Meta's attention that it's a good time to to copy >> and the plus he's just even taking the plus as the name.
+
+126
+00:09:40,800 --> 00:09:41,920
+Oh my god.
+
+127
+00:09:41,920 --> 00:09:48,160
+Let me just ask you like as a as a human how does it what does it how does it feel just to see this consistently happen to you?
+
+128
+00:09:48,160 --> 00:09:52,800
+you guys come up with something awesome, someone rips it off, benefits hugely from it,
+
+129
+00:09:52,800 --> 00:09:54,800
+and you just have to keep doing that again and again.
+
+130
+00:09:54,800 --> 00:09:58,880
+>> You know, it it's certainly better than making stuff that people don't want to copy.
+
+131
+00:09:58,880 --> 00:10:03,680
+So, I think uh you know, in many ways, it's a blessing that we've been able to continue to innovate,
+
+132
+00:10:03,680 --> 00:10:08,480
+to make new things that really resonate with jokes and that ultimately people want to end up uh you know,
+
+133
+00:10:08,480 --> 00:10:10,399
+copying uh from from Snap.
+
+134
+00:10:10,399 --> 00:10:17,519
+So, I I think it certainly beats the the alternative, but it does uh you know, mean that we have to be really thoughtful about our strategy.
+
+135
+00:10:17,519 --> 00:10:29,279
+And so I think you know one of the things it's it's been it's been an interesting time for me to reflect a lot on you know our strategy over the last 15 years because you know 15 years ago we essentially learned that software is not a moat right which is something that everyone
+
+136
+00:10:29,279 --> 00:10:39,519
+is discovering today with AI right but 15 years ago because all the software features uh that we could create were so easily cloned by our competitors we started to think about how to build a
+
+137
+00:10:39,519 --> 00:10:44,399
+more durable business how to build a business uh you know that had bigger and more effective modes.
+
+138
+00:10:44,399 --> 00:10:48,480
+One of the first things we did was focus a lot on on building ecosystems, right?
+
+139
+00:10:48,480 --> 00:10:55,120
+Whether those are, you know, the relationships between creators and Snapchatters, whether that's the platform we built around augmented reality where,
+
+140
+00:10:55,120 --> 00:10:57,920
+you know, developers have built millions of these lenses.
+
+141
+00:10:57,920 --> 00:11:07,519
+Uh, so it's it's very easy to copy hard or you know, software features, it's very hard uh to to copy or to to replicate a full ecosystem or a platform.
+
+142
+00:11:07,519 --> 00:11:13,040
+Um, and so, you know, we we realized that the the more that we could build a platform around our business,
+
+143
+00:11:13,040 --> 00:11:18,399
+the more that we could build an ecosystem with creators and developers, the harder it would be for folks uh to to just copy that.
+
+144
+00:11:18,399 --> 00:11:23,760
+And then it also informed a lot of our thinking about investing in other places that are really hard to copy,
+
+145
+00:11:23,760 --> 00:11:31,279
+including hardware, uh, where it's really really challenging, um, you know, to copy our our fully vertically integrated stack around augmented reality.
+
+146
+00:11:31,279 --> 00:11:35,120
+So I'm certain certain there's a lot more to talk about uh there.
+
+147
+00:11:35,120 --> 00:11:40,240
+But I think you know we learned early on that software is easy to copy and so it's really important to build more durable modes.
+
+148
+00:11:40,240 --> 00:11:44,720
+>> That's really interesting hearing hearing this from you and I was going to get to this later but we can talk about this now.
+
+149
+00:11:44,720 --> 00:11:49,839
+This big investment you've been putting into hardware like you would think network effects would be the moat.
+
+150
+00:11:49,839 --> 00:11:56,000
+That's what everybody's always trying to uh get to because that's uh classically a great moat.
+
+151
+00:11:56,000 --> 00:12:02,399
+Are you saying that that's maybe not even as great a moat or that's just not enough and then you need something more like say hardware?
+
+152
+00:12:02,399 --> 00:12:06,880
+>> I I don't I think network effects are certainly an important piece of the puzzle for sure.
+
+153
+00:12:06,880 --> 00:12:12,480
+Um but I don't think they're enough when it comes to these sorts of software uh you know software cloning.
+
+154
+00:12:12,480 --> 00:12:22,480
+And so you know despite the fact that we've got a ton of patents and we protected all these ideas the way that it works in in software is that it's quite easy uh you know for folks to copy or iterate on top of these ideas.
+
+155
+00:12:22,480 --> 00:12:27,040
+And so I think in addition to network effects, it's really important uh to try to build,
+
+156
+00:12:27,040 --> 00:12:32,959
+you know, businesses that are more defensible by by truly building out a platform that can support relationships between creators,
+
+157
+00:12:32,959 --> 00:12:38,160
+developers, and the community because that that in of itself we found is incredibly difficult to copy.
+
+158
+00:12:38,160 --> 00:12:42,320
+>> It's so interesting like if you think about it, you're working on two of the hardest types of businesses,
+
+159
+00:12:42,320 --> 00:12:46,000
+a consumer social platform and hardware.
+
+160
+00:12:46,000 --> 00:12:47,680
+Uh and I love that you're doing that.
+
+161
+00:12:47,680 --> 00:12:50,560
+Uh and this hardware investment, you've been at it for a long time there.
+
+162
+00:12:50,560 --> 00:12:52,000
+You had spectacles, you had drones.
+
+163
+00:12:52,000 --> 00:12:55,120
+I don't think people remember yet this drone that could take photos of you.
+
+164
+00:12:55,120 --> 00:12:56,399
+And then you have Specs coming out.
+
+165
+00:12:56,399 --> 00:12:59,279
+Is it Specs or Spectacle is the name of what's coming out today, by the way.
+
+166
+00:12:59,279 --> 00:13:00,800
+>> Uh Specs is coming out this year.
+
+167
+00:13:00,800 --> 00:13:01,279
+>> Specs.
+
+168
+00:13:01,279 --> 00:13:01,680
+Okay, cool.
+
+169
+00:13:01,680 --> 00:13:06,959
+We're going to talk about it, but just uh maybe you've already answered it why this is something you're so passionate about,
+
+170
+00:13:06,959 --> 00:13:10,480
+but why why this kind of ongoing investment in in hardware?
+
+171
+00:13:10,480 --> 00:13:16,399
+>> Well, I think to like take a huge step back, um I love computers.
+
+172
+00:13:16,399 --> 00:13:19,120
+I grew up uh using computers all the time.
+
+173
+00:13:19,120 --> 00:13:22,160
+I built my own computer when I was in middle school.
+
+174
+00:13:22,160 --> 00:13:28,959
+Uh, you know, I fell in love with graphic design and would spend like every lunch period in the computer lab.
+
+175
+00:13:28,959 --> 00:13:35,040
+And I think one of the things that I noticed about computers and I think today with mobile phones,
+
+176
+00:13:35,040 --> 00:13:38,240
+uh, is that in many ways they isolate us from one another, right?
+
+177
+00:13:38,240 --> 00:13:40,639
+They actually take us out of our social interactions.
+
+178
+00:13:40,639 --> 00:13:46,320
+they took me off the, you know, playground to recess and, you know, left, you know, put me into the the computer lab or,
+
+179
+00:13:46,320 --> 00:13:49,040
+you know, if I look at our 15-year-old today and his friends, right?
+
+180
+00:13:49,040 --> 00:13:53,360
+You know, sometimes when they're hanging out, they're all looking down at their phones even though they're all together.
+
+181
+00:13:53,360 --> 00:13:59,040
+And so, I think there's just such a big opportunity to build technology that actually brings us together,
+
+182
+00:13:59,040 --> 00:14:03,760
+that keeps us grounded in the real world rather than, you know, removing us from it.
+
+183
+00:14:03,760 --> 00:14:06,480
+And that's something that we realized early on with Snapchat, right?
+
+184
+00:14:06,480 --> 00:14:13,839
+We were innovating, building, you know, lenses and augmented reality, but ultimately we saw that people were using AR on these tiny little phone screens,
+
+185
+00:14:13,839 --> 00:14:14,079
+right?
+
+186
+00:14:14,079 --> 00:14:16,880
+That required you you to use your thumbs to interact.
+
+187
+00:14:16,880 --> 00:14:21,120
+Uh, and so, you know, it was almost like interacting with the world through like a keyhole,
+
+188
+00:14:21,120 --> 00:14:25,600
+you know, rather than actually staying grounded and being able to interact uh together with friends.
+
+189
+00:14:25,600 --> 00:14:30,639
+So it just seems so obvious that like as computers play a bigger and bigger role in our lives,
+
+190
+00:14:30,639 --> 00:14:40,800
+you know, I think today people spend seven or eight hours a day on average on screens that like something has got to change to to make this technology fit better into our lives,
+
+191
+00:14:40,800 --> 00:14:40,959
+right?
+
+192
+00:14:40,959 --> 00:14:48,639
+We get enormous value from computers, but at the same time, I think the cost is is quite meaningful and and I think um you know,
+
+193
+00:14:48,639 --> 00:14:49,600
+they need to evolve.
+
+194
+00:14:49,600 --> 00:14:55,279
+So, you know, with the early with the early version of of Spectacles, I guess that was back in 2014 or something like that,
+
+195
+00:14:55,279 --> 00:15:00,240
+you know, the initial idea was just to get the camera off the phone, right, out of your pocket and,
+
+196
+00:15:00,240 --> 00:15:04,160
+you know, allow you to more easily, you know, take snaps out in the world.
+
+197
+00:15:04,160 --> 00:15:09,360
+Um, but we then sort of built a road map from there, right, where we added a second camera to get depth.
+
+198
+00:15:09,360 --> 00:15:14,480
+We added a display to be able to overlay, you know, digital objects into the world and help you interact with them.
+
+199
+00:15:14,480 --> 00:15:24,720
+And then with the last generation in 2024, we released the the our operating system which now allows uh developers to build fullfeatured software uh inside of uh specs,
+
+200
+00:15:24,720 --> 00:15:28,240
+you know, in preparation for the the consumer uh launch.
+
+201
+00:15:28,240 --> 00:15:28,880
+So, I don't know.
+
+202
+00:15:28,880 --> 00:15:32,240
+I think the time is right for a new a new type of computer.
+
+203
+00:15:32,240 --> 00:15:37,440
+I think people are frustrated um you know, with the cost of using phones and computers today.
+
+204
+00:15:37,440 --> 00:15:39,680
+They're kind of all hunched over like gremlins.
+
+205
+00:15:39,680 --> 00:15:42,639
+And you know, we can build uh a a new computer.
+
+206
+00:15:42,639 --> 00:15:53,360
+We have built a new computer that brings people outside that helps them connect together with their friends that frees them up to actually use their hands uh to interact with the world and and uh you know that to me is really exciting.
+
+207
+00:15:53,360 --> 00:16:00,800
+I think it's it's a whole new chapter and gosh I mean what it's been 20 years or something since the the iPhone so it's it's about time for something new I think.
+
+208
+00:16:00,800 --> 00:16:05,040
+>> So I I got an early preview of the specs and it's extremely cool.
+
+209
+00:16:05,040 --> 00:16:08,000
+Uh I learned how to be an air bender.
+
+210
+00:16:08,000 --> 00:16:10,000
+I put uh plants all over my house.
+
+211
+00:16:10,000 --> 00:16:15,279
+Uh drawing all over the place and it's and there's multiplayer features which is very cool which I think is part of the idea,
+
+212
+00:16:15,279 --> 00:16:15,440
+right?
+
+213
+00:16:15,440 --> 00:16:19,839
+Is you're connecting with people versus sitting in like a VR environment on on your own.
+
+214
+00:16:19,839 --> 00:16:22,000
+Like I worry about the being connected all the time.
+
+215
+00:16:22,000 --> 00:16:24,240
+So I imagine that's like a new thing we have to figure out.
+
+216
+00:16:24,240 --> 00:16:28,880
+How do we not just get hooked on just watching things on the side instead of looking at someone we're with?
+
+217
+00:16:28,880 --> 00:16:30,639
+Uh do you have any thoughts there?
+
+218
+00:16:30,639 --> 00:16:33,759
+Just like is there a solution to that other than just like social norms?
+
+219
+00:16:33,759 --> 00:16:41,759
+I I do think social norms will play a a big role, but I also think one of the things people experience with AR,
+
+220
+00:16:41,759 --> 00:16:47,360
+you know, specs, unlike, you know, these heads up display glasses, they don't just put an annoying like,
+
+221
+00:16:47,360 --> 00:16:51,519
+you know, little screen that's stuck to your face uh on the glasses.
+
+222
+00:16:51,519 --> 00:16:54,160
+They actually like anchor content in the world.
+
+223
+00:16:54,160 --> 00:16:55,839
+Um, which is really different, right?
+
+224
+00:16:55,839 --> 00:17:05,760
+they they um you know put put that content directly in your field of view rather than requiring you to like look down at some little screen or like get some text alert or notification.
+
+225
+00:17:05,760 --> 00:17:10,400
+So I I think you know frankly I don't think those use cases are very compelling.
+
+226
+00:17:10,400 --> 00:17:18,319
+Like I don't think receiving phone notifications on your face is like you know a a valuable you know proposition for most folks.
+
+227
+00:17:18,319 --> 00:17:21,679
+So I don't think we necessarily have to worry about that because I think most people don't want that.
+
+228
+00:17:21,679 --> 00:17:30,880
+I think like what is going to be really important with specs is showing people all the incredible new ways they can hang out and connect together with their friends wearing wearing specs.
+
+229
+00:17:30,880 --> 00:17:35,520
+Um, but I I don't think it'll be, you know, disruptive or notification based or something like that.
+
+230
+00:17:35,520 --> 00:17:40,559
+One of the things that I really dislike about the heads-up display glasses is when you're looking at the little,
+
+231
+00:17:40,559 --> 00:17:44,160
+you know, heads-up display in the corner, you're actually looking at like your friend's crotch,
+
+232
+00:17:44,160 --> 00:17:46,880
+you know, while you're talking to them if you check the heads-up display.
+
+233
+00:17:46,880 --> 00:17:48,960
+So, the position is just very strange.
+
+234
+00:17:48,960 --> 00:17:52,720
+And I I don't think that that's something that really is resonating uh with customers,
+
+235
+00:17:52,720 --> 00:17:56,400
+nor do I think that's something that's going to become like a widespread, you know, behavior.
+
+236
+00:17:56,400 --> 00:18:00,400
+>> I want to go back to this idea of how um how to innovate.
+
+237
+00:18:00,400 --> 00:18:07,120
+I feel like Snap has always been punching above its weight in terms of just how much new stuff comes out of your team,
+
+238
+00:18:07,120 --> 00:18:13,360
+how many like inventions happen considering the size of it of the company and the and the history.
+
+239
+00:18:13,360 --> 00:18:16,640
+What do you find is needs to be true for innovation to happen?
+
+240
+00:18:16,640 --> 00:18:20,000
+What what do you what do you do to allow for all these great ideas to emerge?
+
+241
+00:18:20,000 --> 00:18:28,640
+>> The the best sort of like academic overview or summary I think comes from a guy Safi Belell who wrote a book called Loonshots.
+
+242
+00:18:28,640 --> 00:18:29,679
+It's really worth reading.
+
+243
+00:18:29,679 --> 00:18:38,000
+It's all about the innovation process and actually when I read it I was like oh my gosh that kind of explains a lot of how we think about innovation at at Snap.
+
+244
+00:18:38,000 --> 00:18:43,120
+And I think to summarize the academic version, we can talk about like what we've developed and built at Snap,
+
+245
+00:18:43,120 --> 00:18:51,520
+but like to summarize, you know, essentially his findings are that you know basically if you want to deliver a product at scale,
+
+246
+00:18:51,520 --> 00:18:53,520
+you usually need quite a large organization.
+
+247
+00:18:53,520 --> 00:18:58,640
+A large organization needs hierarchy and structure, a lot of operational rigor.
+
+248
+00:18:58,640 --> 00:19:02,880
+Uh and as soon as you have an organization that's very large and very structured like that,
+
+249
+00:19:02,880 --> 00:19:06,559
+uh people become very focused on getting a promotion, right?
+
+250
+00:19:06,559 --> 00:19:09,440
+getting, you know, into the next step of the hierarchy.
+
+251
+00:19:09,440 --> 00:19:13,679
+And that means that all of a sudden, uh, they become a lot more riskaverse.
+
+252
+00:19:13,679 --> 00:19:16,240
+They're not really as willing to try new things.
+
+253
+00:19:16,240 --> 00:19:22,640
+They're very focused on, you know, achieving the the goals that have sort of been set for them in this operational hierarchy.
+
+254
+00:19:22,640 --> 00:19:26,559
+And that is that makes it very very challenging to innovate.
+
+255
+00:19:26,559 --> 00:19:31,919
+Now, on the flip side, you know, structures that are are really healthy and constructive for innovation,
+
+256
+00:19:31,919 --> 00:19:34,240
+you know, typically are very very flat, right?
+
+257
+00:19:34,240 --> 00:19:39,520
+Uh that's the same for our design team for example where there's no one that has a fancier title or a role.
+
+258
+00:19:39,520 --> 00:19:51,360
+Uh there's a lot of flexibility in terms of the ability to try new things and fail quickly and put up you know crazy ideas and and you know what what he basically finds is that the companies that are very successful
+
+259
+00:19:51,360 --> 00:20:02,160
+actually have both types of organizations inside their company and that the leaders of the organization are the ones who are responsible for creating a healthy functioning relationship between the two types of
+
+260
+00:20:02,160 --> 00:20:03,039
+organizations.
+
+261
+00:20:03,039 --> 00:20:09,520
+Because what ends up happening in a lot of companies is that, you know, the small innovative team becomes critical of the large,
+
+262
+00:20:09,520 --> 00:20:10,480
+you know, organization.
+
+263
+00:20:10,480 --> 00:20:12,400
+Oh, they're so bureaucratic and slow.
+
+264
+00:20:12,400 --> 00:20:14,320
+They don't innovate, you know, things like that.
+
+265
+00:20:14,320 --> 00:20:18,640
+And then the, you know, the the larger organization is like, oh, you know, what are these jokers doing?
+
+266
+00:20:18,640 --> 00:20:19,760
+You know, just innovating.
+
+267
+00:20:19,760 --> 00:20:21,120
+They're not really driving the business.
+
+268
+00:20:21,120 --> 00:20:22,480
+They're not supporting our customers.
+
+269
+00:20:22,480 --> 00:20:26,720
+And so, a lot of tension actually arises from the different organizational structures.
+
+270
+00:20:26,720 --> 00:20:38,400
+And so the leadership responsibility and I think you know Safi does a really good job looking throughout history what leaders have cultivated really constructive and powerful relationships between you know
+
+271
+00:20:38,400 --> 00:20:46,559
+the more in you know innovative or flat parts of the organization and the more structural you know structured and and hierarchical parts of the organization.
+
+272
+00:20:46,559 --> 00:20:51,919
+You know how you create that mutual respect how you create that dialogue between those parts of the organization is so important.
+
+273
+00:20:51,919 --> 00:20:56,960
+And so, you know, when I read that, I was like, "Wow, that that actually sounds quite similar to what we have at at Snap."
+
+274
+00:20:56,960 --> 00:21:00,640
+You know, we have to run a large public company, serve almost a billion customers.
+
+275
+00:21:00,640 --> 00:21:03,440
+That means, you know, our service needs to be really reliable.
+
+276
+00:21:03,440 --> 00:21:08,000
+It need it means that we need to operate, you know, really really effectively uh to serve our customers.
+
+277
+00:21:08,000 --> 00:21:17,840
+And at the same time, we have a very very small, you know, it sort of oscillates between like nine and 12 people design team um that is constantly innovating and and creating new things.
+
+278
+00:21:17,840 --> 00:21:26,240
+And I think, you know, the beauty of what I love about Snap is that the dialogue between those two teams is where a lot of that innovation happens because a lot of our engineers,
+
+279
+00:21:26,240 --> 00:21:33,520
+you know, working to serve our customers or working on reliability have a bunch of great ideas and so do our designers and as long as they're in dialogue,
+
+280
+00:21:33,520 --> 00:21:35,440
+um, you know, really great things can happen.
+
+281
+00:21:35,440 --> 00:21:42,559
+There's someone, I forget who who this was, but they described this approach as the fast thinking and slow thinking part of the organization.
+
+282
+00:21:42,559 --> 00:21:46,320
+Kind of like Henman's system one system two approach.
+
+283
+00:21:46,320 --> 00:21:57,919
+It's interesting the fastm moving let's say what do you what do you kind of call this this innovation team or what do you have a label for this like let's come up with the new ideas part of the or >> well I I think it's really important to acknowledge that like new ideas come
+
+284
+00:21:57,919 --> 00:22:08,880
+from everywhere and we want that but I think the design team in particular it's really important and we call it the design team like it's really important that they have a flat non- hierarchical structure you know where new ideas can
+
+285
+00:22:08,880 --> 00:22:19,440
+can come from anywhere I mean I think that that that is absolutely critical >> so in terms of how you operationalize this is that the key to the innovation you've seen as this like specific small
+
+286
+00:22:19,440 --> 00:22:26,240
+design team who uh can work like talk about just how you actually operationalize this sort of way of working.
+
+287
+00:22:26,240 --> 00:22:32,720
+Yeah, I mean I think it's an important part of it, but a lot of how we built Snap was modeled actually on mine and Bobby's original relationship,
+
+288
+00:22:32,720 --> 00:22:33,039
+right?
+
+289
+00:22:33,039 --> 00:22:39,600
+Where like Bobby, you know, has a computer science, you know, heavy duty computer science and stats background,
+
+290
+00:22:39,600 --> 00:22:45,520
+you know, mathematical and computational science, but he really likes design and likes thinking about uh,
+
+291
+00:22:45,520 --> 00:22:48,320
+you know, building things for customers and empathizing with them.
+
+292
+00:22:48,320 --> 00:22:49,840
+I have a design background, right?
+
+293
+00:22:49,840 --> 00:22:55,919
+I was in, you know, in the product design program at back at school, which actually was like part of the mechanical engineering department at the time.
+
+294
+00:22:55,919 --> 00:22:58,159
+I took some computer science classes.
+
+295
+00:22:58,159 --> 00:23:04,240
+Um, so I, you know, sort of kind of unders, you know, uh, you know, knew what I was talking about when it came to computer science.
+
+296
+00:23:04,240 --> 00:23:10,559
+So we both like had mutual respect for each other and our skill sets and our backgrounds and both enjoyed talking,
+
+297
+00:23:10,559 --> 00:23:15,280
+uh, together about the the the types of products we wanted to create and that dialogue created,
+
+298
+00:23:15,280 --> 00:23:16,320
+you know, a lot of innovation.
+
+299
+00:23:16,320 --> 00:23:27,840
+And so a lot of how we've thought about growing the company over time is like strengthening that dialogue between engineers and designers and creating you know an environment where uh you know folks feel comfortable throwing out uh
+
+300
+00:23:27,840 --> 00:23:28,960
+really crazy ideas.
+
+301
+00:23:28,960 --> 00:23:36,320
+But I think you know for the design team in particular the thing that is probably most important is the velocity of design work.
+
+302
+00:23:36,320 --> 00:23:41,440
+So I typically meet with our designers for a couple hours every week and we just look at work.
+
+303
+00:23:41,440 --> 00:23:47,679
+I mean, new work every week, you know, hundreds of ideas, I would guess, you know, on a on a weekly basis that,
+
+304
+00:23:47,679 --> 00:23:54,559
+you know, to me, you know, if if I think about um where I learned how to to design and and build things,
+
+305
+00:23:54,559 --> 00:23:59,679
+I have sort of an interesting combination because, you know, I I went to to Stanford for the product design program,
+
+306
+00:23:59,679 --> 00:24:06,159
+which is really focused on empathy, right, in this iterative uh process of understanding what people want and building prototypes and and iterating,
+
+307
+00:24:06,159 --> 00:24:08,159
+but really centered on on empathy, right?
+
+308
+00:24:08,159 --> 00:24:09,600
+Human- centered design.
+
+309
+00:24:09,600 --> 00:24:11,679
+And then at the same time, I had also been to art school.
+
+310
+00:24:11,679 --> 00:24:13,120
+So I had studied at Art Center.
+
+311
+00:24:13,120 --> 00:24:15,840
+I'd studied at Otis here uh in Los Angeles.
+
+312
+00:24:15,840 --> 00:24:17,840
+It's both, you know, great art schools.
+
+313
+00:24:17,840 --> 00:24:28,240
+And so I was used to this like grinding, you know, expectation that you were making new work all the time and then just an absolutely brutal critique process,
+
+314
+00:24:28,240 --> 00:24:29,760
+you know, on a regular basis.
+
+315
+00:24:29,760 --> 00:24:35,360
+And so, you know, for me, as I thought about, you know, the the parts of my education that I really liked,
+
+316
+00:24:35,360 --> 00:24:39,200
+it was this combination of really developing empathy with people and what, you know,
+
+317
+00:24:39,200 --> 00:24:44,480
+the types of products that they want in their lives, but at the same time having this really high velocity,
+
+318
+00:24:44,480 --> 00:24:48,880
+uh, you know, work ethic where you're not just like thinking, you know, all the time about,
+
+319
+00:24:48,880 --> 00:24:50,640
+uh, you know, new new products.
+
+320
+00:24:50,640 --> 00:24:55,200
+You're actually making stuff every week all the time and then you're talking about it as a team.
+
+321
+00:24:55,200 --> 00:24:58,960
+Uh, because that critique process is where so much of the learning uh, sort of happens.
+
+322
+00:24:58,960 --> 00:25:04,720
+So, you know, I would say that the the velocity of work, uh, you know, is really important because our favorite saying is,
+
+323
+00:25:04,720 --> 00:25:07,200
+you know, if you want to have a good idea, you have to have lots of ideas.
+
+324
+00:25:07,200 --> 00:25:09,039
+That that's really really important.
+
+325
+00:25:09,039 --> 00:25:11,200
+>> I just had Keith Raoy on the podcast.
+
+326
+00:25:11,200 --> 00:25:14,640
+I don't know if you know this about his he has many contrary takes.
+
+327
+00:25:14,640 --> 00:25:18,720
+Uh, one is if you're building a consumer product, do not talk to customers.
+
+328
+00:25:18,720 --> 00:25:27,200
+Like, not only is it not useful, his advice is it's harmful because it can infiltrate your subconscious and it just doesn't lead to great things.
+
+329
+00:25:27,200 --> 00:25:28,720
+What's your perspective on that?
+
+330
+00:25:28,720 --> 00:25:30,320
+>> Wow, that that's really interesting.
+
+331
+00:25:30,320 --> 00:25:34,240
+Um, I would say uh you have to talk to customers, you have to share your idea.
+
+332
+00:25:34,240 --> 00:25:38,000
+You should share your idea as quickly as possible, as frequently as possible.
+
+333
+00:25:38,000 --> 00:25:41,840
+Uh, it doesn't mean you need to take people's advice or feedback, but it's really important,
+
+334
+00:25:41,840 --> 00:25:42,640
+I think, to listen.
+
+335
+00:25:42,640 --> 00:25:47,200
+And, and I think for me, you know, it's, you know, it's not like the survey model of listening.
+
+336
+00:25:47,200 --> 00:25:48,480
+I don't think that's particularly helpful.
+
+337
+00:25:48,480 --> 00:25:53,279
+But I think going deep and talking with someone for an hour, two hours about how do they use technology,
+
+338
+00:25:53,279 --> 00:25:56,799
+how does it fit in their lives, how do they feel about, you know, the products they're using,
+
+339
+00:25:56,799 --> 00:25:57,919
+you can learn so much.
+
+340
+00:25:57,919 --> 00:26:04,400
+And I think, you know, customers are an endless source of inspiration um when it comes to building products.
+
+341
+00:26:04,400 --> 00:26:14,559
+>> So pro pro talking to to users because I feel like you've been really good at just like here's what it'll be and here's how it should be and even though people may not understand this is what it should be,
+
+342
+00:26:14,559 --> 00:26:16,320
+I trust me it'll work really well.
+
+343
+00:26:16,320 --> 00:26:20,640
+What's that balance of just like here's how how what I'll pay attention to, here's what I won't.
+
+344
+00:26:20,640 --> 00:26:23,520
+>> Well, let let's use stories as an example, right?
+
+345
+00:26:23,520 --> 00:26:27,039
+So, you know, back then we were hearing from customers all the time.
+
+346
+00:26:27,039 --> 00:26:28,159
+I want a send all button.
+
+347
+00:26:28,159 --> 00:26:29,840
+I want to send all button.
+
+348
+00:26:29,840 --> 00:26:33,679
+You know, it's so annoying to select everybody on my list of friends and Snapchat.
+
+349
+00:26:33,679 --> 00:26:39,039
+If you just give me a send all button, then I can blast snaps to everybody all day long and that would be really great.
+
+350
+00:26:39,039 --> 00:26:42,720
+And at the same time, we were talking to people about their use of social media, right?
+
+351
+00:26:42,720 --> 00:26:45,360
+And they're like, "Oh gosh, social media, I feel all this pressure, right?
+
+352
+00:26:45,360 --> 00:26:47,840
+everything I put up there is permanent all the time.
+
+353
+00:26:47,840 --> 00:26:50,799
+Uh, you know, it's got all these likes and comments, so there's all this judgment.
+
+354
+00:26:50,799 --> 00:26:54,400
+So, I only feel like I can put like pretty and perfect things up there.
+
+355
+00:26:54,400 --> 00:26:57,520
+Uh, you know, and and I I I just don't like that pressure.
+
+356
+00:26:57,520 --> 00:26:58,480
+That doesn't feel good.
+
+357
+00:26:58,480 --> 00:27:07,039
+I actually love the way that Snapchat allows me to just express myself and and share with my friends um without that that sort of judgment and and pressure.
+
+358
+00:27:07,039 --> 00:27:08,799
+And so, we we thought that was really interesting.
+
+359
+00:27:08,799 --> 00:27:11,919
+And so, you know, we dug deeper into the, you know, how people were using social media.
+
+360
+00:27:11,919 --> 00:27:17,520
+We found that one of the things they thought was really weird was that it everything was in reverse chronological order in the feed.
+
+361
+00:27:17,520 --> 00:27:29,200
+So the feed back in the day the timeline right uh like you know when people posted photos you know they would always find that like the end of the birthday party appeared first in the feed right and then the middle and then the you know the beginning of the party.
+
+362
+00:27:29,200 --> 00:27:36,480
+So everything was was sort of you know just like played in reverse in the feed which was was really strange uh to folks.
+
+363
+00:27:36,480 --> 00:27:40,799
+So, we listened to all of that, right, and heard all all of that.
+
+364
+00:27:40,799 --> 00:27:44,480
+But then we came up with something totally new and different, uh, which were stories,
+
+365
+00:27:44,480 --> 00:27:46,559
+right, that were responsive to the feedback, right?
+
+366
+00:27:46,559 --> 00:27:52,159
+They didn't, you know, create a send to all button, but they did create a way to easily share with all of your friends without spamming them all day long.
+
+367
+00:27:52,159 --> 00:27:54,720
+They removed, you know, public metrics.
+
+368
+00:27:54,720 --> 00:27:58,559
+They didn't have, you know, likes and comments and things like that to to reduce pressure.
+
+369
+00:27:58,559 --> 00:28:03,039
+They disappeared after 24 hours so that everyone could start the day fresh again, you know,
+
+370
+00:28:03,039 --> 00:28:03,919
+the the next day.
+
+371
+00:28:03,919 --> 00:28:09,039
+and they, you know, maybe most importantly were in chronological order, which is the way that people have told stories,
+
+372
+00:28:09,039 --> 00:28:10,880
+uh, you know, since the since the beginning of time.
+
+373
+00:28:10,880 --> 00:28:14,880
+So, I think that's an example where like listening is incredibly valuable.
+
+374
+00:28:14,880 --> 00:28:20,880
+All of those insights that we, you know, received just from listening to folks made a huge difference in the product design process,
+
+375
+00:28:20,880 --> 00:28:22,960
+but we didn't build exactly what they asked for.
+
+376
+00:28:22,960 --> 00:28:25,760
+We we empathized and then, you know, came up with something new.
+
+377
+00:28:25,760 --> 00:28:26,799
+>> That is such a great story.
+
+378
+00:28:26,799 --> 00:28:30,640
+I love hearing these stories of features that everyone's using now and how they came to be.
+
+379
+00:28:30,640 --> 00:28:37,279
+Was there was there like a moment of just like this is the way this the story concept that you remember or was it kind of this very gradual evolution?
+
+380
+00:28:37,279 --> 00:28:43,279
+>> It was iterative because in a lot of ways some of the early ideas, you know, started more around like a status update.
+
+381
+00:28:43,279 --> 00:28:49,679
+You know, that that was sort of like, you know, how could you know what your friends on Snapchat were up to even if you weren't sending snaps back and forth.
+
+382
+00:28:49,679 --> 00:28:54,880
+And so, you know, it sort of started there and then, you know, again, through talking to people and iterating,
+
+383
+00:28:54,880 --> 00:29:00,240
+understanding uh what folks were really looking for, we ended up, you know, ended up with stories and some of the gestures,
+
+384
+00:29:00,240 --> 00:29:05,279
+you know, that people maybe take for granted today, being able to tap forward through stories and backwards through stories,
+
+385
+00:29:05,279 --> 00:29:06,240
+full screen, right?
+
+386
+00:29:06,240 --> 00:29:07,919
+Vertical uh content.
+
+387
+00:29:07,919 --> 00:29:10,320
+Uh those were all really new things at the time.
+
+388
+00:29:10,320 --> 00:29:15,840
+Is there another story of something that you all built that uh just like was interesting and of how it came to be?
+
+389
+00:29:15,840 --> 00:29:18,880
+These stories are so interesting and people don't know these histories.
+
+390
+00:29:18,880 --> 00:29:27,919
+>> You know, one of my favorite stories was around uh screenshot detection actually in the early days because when we first built uh Snapchat and we,
+
+391
+00:29:27,919 --> 00:29:30,159
+you know, shared with people, oh, you could send photos that disappear.
+
+392
+00:29:30,159 --> 00:29:31,760
+Everyone said,"No, you can't.
+
+393
+00:29:31,760 --> 00:29:33,279
+You can always take a screenshot.
+
+394
+00:29:33,279 --> 00:29:34,880
+What do you mean you can send things that disappear?
+
+395
+00:29:34,880 --> 00:29:36,000
+That makes no sense."
+
+396
+00:29:36,000 --> 00:29:38,480
+And so, you know, we we thought a lot.
+
+397
+00:29:38,480 --> 00:29:40,960
+I remember that summer, you know, after school, we went home.
+
+398
+00:29:40,960 --> 00:29:44,399
+when we were working out of my dad's house and Bobby and I were just going back and forth and we were like,
+
+399
+00:29:44,399 --> 00:29:47,360
+you know, we we were having fun using the product.
+
+400
+00:29:47,360 --> 00:29:50,240
+We were sending, you know, photos back and forth, but people would just keep saying,
+
+401
+00:29:50,240 --> 00:29:54,000
+"Well, this like this just it's not about disappearing photos because you can just save them.
+
+402
+00:29:54,000 --> 00:29:55,279
+Like, I I don't get it."
+
+403
+00:29:55,279 --> 00:30:05,360
+And and one of the things we invented at at the time, we figured out a way uh we realized that if you were pressing and holding to open a snap and left your finger on the screen
+
+404
+00:30:05,360 --> 00:30:16,159
+and you took a screenshot, it would basically trigger uh you know an event on the phone essentially that made the phone would essentially report that your
+
+405
+00:30:16,159 --> 00:30:18,559
+finger had lost contact with the screen, right?
+
+406
+00:30:18,559 --> 00:30:20,159
+That's that's what the screenshot mechanism did.
+
+407
+00:30:20,159 --> 00:30:24,399
+So even though Apple didn't provide an API at the time to let you know that a screenshot had been taken,
+
+408
+00:30:24,399 --> 00:30:34,399
+uh there was a way for us to essentially detect this touch event to learn that a screenshot had happened and then we would just send a notification back uh to the sender that oh you know the recipient had had taken a
+
+409
+00:30:34,399 --> 00:30:35,200
+screenshot.
+
+410
+00:30:35,200 --> 00:30:42,880
+And that for us in the early days uh you know really resonated with our community because they didn't mind if somebody you know saved one of their snaps.
+
+411
+00:30:42,880 --> 00:30:44,240
+they just wanted to know.
+
+412
+00:30:44,240 --> 00:30:55,919
+And I think that that uh you know that early invention uh was one of the first things that really got a lot of traction in the early days and I think you know helped Snapchat spread as a new way of of
+
+413
+00:30:55,919 --> 00:30:57,840
+communicating and that is that is really cool.
+
+414
+00:30:57,840 --> 00:31:01,200
+I can't imagine Snapchat existing without you figuring that out.
+
+415
+00:31:01,200 --> 00:31:04,080
+That feels like such a core mechanic.
+
+416
+00:31:04,080 --> 00:31:12,320
+Um something that is also really I I'd say famous in the PM community about Snap is you guys waited a long time to hire product managers.
+
+417
+00:31:12,320 --> 00:31:21,760
+I've done all these research reports on just like how long it took the top companies to hire their PMs and the number I saw is you had 200 employees before you hired your first
+
+418
+00:31:21,760 --> 00:31:22,960
+PM.
+
+419
+00:31:22,960 --> 00:31:31,279
+I'm curious if you think that was a mistake waiting that long and just your current thoughts on product managers just like how they fit into Snap.
+
+420
+00:31:31,279 --> 00:31:34,640
+A lot of people listening to this are PMs and so I'm just curious how you feel.
+
+421
+00:31:34,640 --> 00:31:43,279
+A lot of my view of product management was actually driven by my view of of designers and the role that designers should play.
+
+422
+00:31:43,279 --> 00:31:46,799
+And one of the things that I, you know, was concerned about in the tech community, you know,
+
+423
+00:31:46,799 --> 00:31:52,159
+if you look at the traditional tech or org structure, you know, designers really are producing visuals.
+
+424
+00:31:52,159 --> 00:31:57,360
+They're not really producing the product direction or the strategy or the vision or,
+
+425
+00:31:57,360 --> 00:32:01,120
+you know, net new uh net new innovation, right?
+
+426
+00:32:01,120 --> 00:32:12,880
+They're really responsive actually I think in many cases to the PM saying this is what we're building now go make me some visuals and I absolutely did not want that type of culture to take root because again as I mentioned we modeled
+
+427
+00:32:12,880 --> 00:32:24,480
+a lot of the you know way that we develop products here at Snap on that early relationship between myself and Bobby really this you know this harmonious relationship between design and engineering and and how important
+
+428
+00:32:24,480 --> 00:32:32,399
+that is that dialogue is to to building great things and great great products and so you know I think in the early days my view was not that we don't need PMs.
+
+429
+00:32:32,399 --> 00:32:34,640
+My view is that designers should do that work.
+
+430
+00:32:34,640 --> 00:32:42,240
+So that's essentially uh you know what we would say to our designers which was like you know uh hey if you need PM support why don't you just do it yourself?
+
+431
+00:32:42,240 --> 00:32:43,519
+What's what's the big deal?
+
+432
+00:32:43,519 --> 00:32:49,360
+Uh and I think that that really helped uh frankly designers play a more active role in the product development process.
+
+433
+00:32:49,360 --> 00:33:00,640
+Now today you know at a company operating at our scale you know if you look at the legal requirements the our approach to trust and safety um you know it it really does take a village to get
+
+434
+00:33:00,640 --> 00:33:11,600
+a new product off the ground and product managers play a really important coordination role in all that in addition to synthesizing for example data science uh analysis and bringing
+
+435
+00:33:11,600 --> 00:33:15,360
+together the working group to try to solve problems or innovate or make the product better.
+
+436
+00:33:15,360 --> 00:33:26,720
+So I think you know as the organization grows and there becomes you know all of these different capabilities that the company didn't have in the early days you know whether it's data science uh you know you name it product managers play a really
+
+437
+00:33:26,720 --> 00:33:33,200
+important role in bringing all those folks to the table and and making sure we deliver you know the right thing at at the right time.
+
+438
+00:33:33,200 --> 00:33:37,679
+>> I am so excited to tell you about this season's supporting sponsor Vanta.
+
+439
+00:33:37,679 --> 00:33:47,679
+Vanta helps over 15,000 companies like Cursor, Ramp, Dualingo, Snowflake, and Atlassian earn and prove trust with their customers.
+
+440
+00:33:47,679 --> 00:33:51,279
+Teams are building and shipping products faster than ever thanks to AI.
+
+441
+00:33:51,279 --> 00:33:57,679
+But as a result, the amount of risk being introduced into your product and your business is higher than it's ever been.
+
+442
+00:33:57,679 --> 00:34:03,760
+Every security leader that I talk to is feeling the increasing weight of protecting their organization,
+
+443
+00:34:03,760 --> 00:34:06,720
+their business, and not to mention their customer data.
+
+444
+00:34:06,720 --> 00:34:11,760
+Because things are moving so fast, they are constantly reacting, having to guess at priorities,
+
+445
+00:34:11,760 --> 00:34:14,399
+and having to make do with outdated solutions.
+
+446
+00:34:14,399 --> 00:34:20,320
+Vanta automates compliance and risk management with over 35 security and privacy frameworks,
+
+447
+00:34:20,320 --> 00:34:24,159
+including SOCK 2, ISO 27,0001, and HIPPA.
+
+448
+00:34:24,159 --> 00:34:29,040
+This helps companies get compliant fast and stay compliant more than ever before.
+
+449
+00:34:29,040 --> 00:34:32,000
+Trust has the power to make or break your business.
+
+450
+00:34:32,000 --> 00:34:34,800
+Learn more at vanta.com/lenny.
+
+451
+00:34:34,800 --> 00:34:38,720
+And as a listener of this podcast, you get $1,000 off Vanta.
+
+452
+00:34:38,720 --> 00:34:41,760
+That's vanta.com/lenny.
+
+453
+00:34:41,760 --> 00:34:45,040
+There's uh this interesting question that everyone's asking right now.
+
+454
+00:34:45,040 --> 00:34:47,359
+Mark Andre put it really well when he was on the pod.
+
+455
+00:34:47,359 --> 00:34:56,800
+There's this kind of like three-way standoff right now between PMs, designers, engineers where they each think they are the future and you don't need the other with AI and everyone's wondering who's going to
+
+456
+00:34:56,800 --> 00:34:59,119
+what's the more important core skill.
+
+457
+00:34:59,119 --> 00:35:05,359
+I imagine your sense is now AI makes designers even more powerful and so this is even more the way to approach.
+
+458
+00:35:05,359 --> 00:35:10,800
+Talk about just like how you think this shifts these this triad with AI enabling people.
+
+459
+00:35:10,800 --> 00:35:13,920
+>> Well, it sounds highly dysfunctional if folks are having that standoff.
+
+460
+00:35:13,920 --> 00:35:15,440
+That is not not a good thing.
+
+461
+00:35:15,440 --> 00:35:20,720
+Um but I do like uh I do like that people are thinking about doing work really differently.
+
+462
+00:35:20,720 --> 00:35:22,800
+I think that's imperative at this moment of time.
+
+463
+00:35:22,800 --> 00:35:25,200
+The rate of change is uh extraordinary.
+
+464
+00:35:25,200 --> 00:35:29,520
+I look I I I do think designers feel vindicated in a lot of ways right?
+
+465
+00:35:29,520 --> 00:35:33,200
+You know a lot of designers had parents who were saying why aren't you studying computer science?
+
+466
+00:35:33,200 --> 00:35:36,079
+You know what are you going to do with this skill set uh drawing things?
+
+467
+00:35:36,079 --> 00:35:37,599
+You know this doesn't make any sense.
+
+468
+00:35:37,599 --> 00:35:42,320
+And I think today, you know, a lot of our designers are now shipping code, which is extraordinary,
+
+469
+00:35:42,320 --> 00:35:42,560
+right?
+
+470
+00:35:42,560 --> 00:35:50,320
+And that's a really big and really meaningful change uh in terms of the way uh that that design works here at Snap and the way the creative process works.
+
+471
+00:35:50,320 --> 00:36:02,000
+And so I think removing friction from the creative process and being able to go from idea to you know impact at you know the scale of almost a billion uh people using Snapchat is really empowering and
+
+472
+00:36:02,000 --> 00:36:10,640
+exciting uh for for designers who feel like these tools um you know uh maybe level the playing field to some extent for for creative people.
+
+473
+00:36:10,640 --> 00:36:10,880
+>> Yeah.
+
+474
+00:36:10,880 --> 00:36:15,760
+But what I feel like, I don't see this happening yet, but I feel like because now it's so much easier to build,
+
+475
+00:36:15,760 --> 00:36:17,839
+people are shipping all these okay things.
+
+476
+00:36:17,839 --> 00:36:23,760
+And it feels like design should have its moment in of glory right now as a differentiator of like,
+
+477
+00:36:23,760 --> 00:36:25,599
+okay, this is actually awesome.
+
+478
+00:36:25,599 --> 00:36:29,680
+I haven't felt that yet and I'm curious if that's what will begin to happen.
+
+479
+00:36:29,680 --> 00:36:33,839
+Well, I think for us, design actually has always operated as like a bottleneck at the company,
+
+480
+00:36:33,839 --> 00:36:35,520
+which is incredibly important, right?
+
+481
+00:36:35,520 --> 00:36:44,320
+it's intentional uh that things need to be approved by design to ship and sometimes that really annoys people uh you know and it does slow down the shipping process.
+
+482
+00:36:44,320 --> 00:36:54,480
+Sometimes it means that if you don't know how to work well with design or get your ideas in front of design that like some really innovative or cool new thing developed by you know a PM or developed by an engineer maybe doesn't get shipped as
+
+483
+00:36:54,480 --> 00:36:55,520
+fast as it should.
+
+484
+00:36:55,520 --> 00:37:01,520
+But that bottleneck is really really important because that's what results in a cohesive customer experience.
+
+485
+00:37:01,520 --> 00:37:11,440
+And I think you know I think you can see when an app has been built by you know teams who are responsible for different you know pages of the app right or different parts of the experience but there isn't really
+
+486
+00:37:11,440 --> 00:37:22,079
+like a cohesive through line and I think uh you know for us at at Snap you know having design really actually be that bottleneck in terms of helping to you know manage what we're shipping and you
+
+487
+00:37:22,079 --> 00:37:25,359
+know what it looks like and how it all works together I think is really important.
+
+488
+00:37:25,359 --> 00:37:32,160
+That's a good segue to something I wanted to ask you about, which is you're famously uh very in the weeds on everything that is going on,
+
+489
+00:37:32,160 --> 00:37:33,599
+all the things that are shipping.
+
+490
+00:37:33,599 --> 00:37:35,680
+You're very close to the pixels.
+
+491
+00:37:35,680 --> 00:37:37,680
+I'm curious how that's evolved for you over time.
+
+492
+00:37:37,680 --> 00:37:41,040
+Like, are you still in there looking at everything that's about to ship?
+
+493
+00:37:41,040 --> 00:37:48,160
+And what's your just philosophy on founders having to be involved in the let's say the pixels and the details of the product?
+
+494
+00:37:48,160 --> 00:37:50,720
+First and foremost, like yeah, this is what I love to do.
+
+495
+00:37:50,720 --> 00:37:52,720
+Like I I love building things.
+
+496
+00:37:52,720 --> 00:37:56,320
+I love uh you know making new products, services for our community.
+
+497
+00:37:56,320 --> 00:37:58,880
+That that that is like what drives me.
+
+498
+00:37:58,880 --> 00:38:00,960
+I really really enjoy that part of the process.
+
+499
+00:38:00,960 --> 00:38:02,960
+So you know it's it's not work to me.
+
+500
+00:38:02,960 --> 00:38:06,000
+It's something that I really just love doing and love doing together with our team.
+
+501
+00:38:06,000 --> 00:38:10,720
+And so I think for me like that, you know, in addition to all the great people I get to work with here at Snap,
+
+502
+00:38:10,720 --> 00:38:14,160
+like the thing that, you know, wakes me up, you know, with a smile on my face every morning,
+
+503
+00:38:14,160 --> 00:38:20,880
+the reason why I'm skipping to work is because I, you know, I am in the weeds on on what we're building and shipping to our uh our community.
+
+504
+00:38:20,880 --> 00:38:25,920
+That being said, there are always uh smarter, better, more talented experts uh you know,
+
+505
+00:38:25,920 --> 00:38:28,640
+working on all the different uh things that we have going on.
+
+506
+00:38:28,640 --> 00:38:32,000
+But I really do like staying close to to what we're what we're creating.
+
+507
+00:38:32,000 --> 00:38:35,040
+I I I don't think it's relevant just to founders.
+
+508
+00:38:35,040 --> 00:38:41,599
+I think no matter what type of company you're running or your role in the company, staying close to your customer,
+
+509
+00:38:41,599 --> 00:38:48,640
+staying close to the product and the way that it's serving your customer is the fundamentally most important thing you could possibly do.
+
+510
+00:38:48,640 --> 00:38:53,680
+I think like I'm I I absolutely subscribe to like the old school like walk the floors,
+
+511
+00:38:53,680 --> 00:38:58,880
+talk to your customers, get out there and stay in touch with what's actually happening uh with your service,
+
+512
+00:38:58,880 --> 00:39:00,800
+with your community, uh with your team.
+
+513
+00:39:00,800 --> 00:39:05,839
+And and I think that's probably the most important job that any leader can do in any company is stay close to their customer,
+
+514
+00:39:05,839 --> 00:39:07,119
+stay close to their team.
+
+515
+00:39:07,119 --> 00:39:16,560
+Do you feel like especially for a consumer and consumer social product, this is extra important to just be like extremely in the weeds on everything that is shipping
+
+516
+00:39:16,560 --> 00:39:20,240
+and say having design your design team have to approve everything?
+
+517
+00:39:20,240 --> 00:39:22,480
+Do you feel like that's especially important for consumer?
+
+518
+00:39:22,480 --> 00:39:24,400
+>> I I don't think it's especially important for consumer.
+
+519
+00:39:24,400 --> 00:39:28,640
+I think it's especially important for any company that wants to deliver great products to their community,
+
+520
+00:39:28,640 --> 00:39:29,200
+right?
+
+521
+00:39:29,200 --> 00:39:33,280
+lot companies have different points of strength, right, and differentiation, but if you want to,
+
+522
+00:39:33,280 --> 00:39:39,200
+you know, differentiate on the product experience, I think it's really important that leaders stay stay very close to that.
+
+523
+00:39:39,200 --> 00:39:47,760
+>> Is there anything special you look for in the designers you hire, knowing that they're basically running the show and just approving everything and just kind of like the right hand to Evan?
+
+524
+00:39:47,760 --> 00:39:52,000
+Is there anything in particular you look for to when you're hiring these designers?
+
+525
+00:39:52,000 --> 00:39:53,920
+>> Yeah, there's a couple really important things.
+
+526
+00:39:53,920 --> 00:39:59,040
+Uh, first of all, we make all of our, you know, hiring decisions just based off portfolio.
+
+527
+00:39:59,040 --> 00:40:00,880
+So, like that's really all we want to see.
+
+528
+00:40:00,880 --> 00:40:03,760
+Like, I really don't care where you've worked or your level of experience.
+
+529
+00:40:03,760 --> 00:40:06,560
+In fact, most people join our design team right out of school.
+
+530
+00:40:06,560 --> 00:40:09,839
+Uh, you know, not from a big tech company or or something like that.
+
+531
+00:40:09,839 --> 00:40:12,640
+And really what I'm focused on is understanding the portfolio.
+
+532
+00:40:12,640 --> 00:40:15,839
+And and I want to see two things from the portfolio.
+
+533
+00:40:15,839 --> 00:40:19,280
+The first is a really wide range.
+
+534
+00:40:19,280 --> 00:40:22,000
+And that is the difference between art and design.
+
+535
+00:40:22,000 --> 00:40:25,359
+So there are lots of people who have a very distinct style, right?
+
+536
+00:40:25,359 --> 00:40:28,240
+They have a very distinct way of building things and creating things.
+
+537
+00:40:28,240 --> 00:40:29,520
+That really is art, right?
+
+538
+00:40:29,520 --> 00:40:32,720
+They're expressing themselves and their own personal point of view on the world.
+
+539
+00:40:32,720 --> 00:40:35,440
+And it can be very beautiful, but it is not design.
+
+540
+00:40:35,440 --> 00:40:40,560
+Design is really about, you know, empathizing with your customer, empathizing with your audience,
+
+541
+00:40:40,560 --> 00:40:44,240
+your viewer, whoever it is, and then building something that will really resonates with them.
+
+542
+00:40:44,240 --> 00:40:47,680
+And and that means you need to have a an extraordinary amount of range.
+
+543
+00:40:47,680 --> 00:40:51,280
+You've got to be able to to build and create things that look totally different.
+
+544
+00:40:51,280 --> 00:40:54,880
+So, when I'm going through a portfolio, you know, the first thing I'm looking for is like,
+
+545
+00:40:54,880 --> 00:40:57,200
+are they building stuff that all looks the same?
+
+546
+00:40:57,200 --> 00:41:00,240
+Uh, or are they building things that look really different, right?
+
+547
+00:41:00,240 --> 00:41:05,119
+That uh, you know, um, that have been responsive to different sets of of needs.
+
+548
+00:41:05,119 --> 00:41:08,720
+And that's how I know that they're a designer and and not just an artist.
+
+549
+00:41:08,720 --> 00:41:12,319
+And then, you know, the the the other thing I want to understand and, you know, typically,
+
+550
+00:41:12,319 --> 00:41:19,839
+you know, I interview every designer that joins our our team and what I want to understand is why and the story behind the work that they they created.
+
+551
+00:41:19,839 --> 00:41:31,599
+So typically what I'll do is just say hey you know pick something in your portfolio anything you feel strongly about you know you could love it hate it I don't care you just have to feel strongly about it and just tell me the story of why you made it and what you learned uh through that through that
+
+552
+00:41:31,599 --> 00:41:42,720
+process and I think you know pretty quickly you can understand you know someone's uh someone's process in terms of you know building something or inventing something how do they go about it and I'm really trying to make sure
+
+553
+00:41:42,720 --> 00:41:52,880
+that we have people who have different ways of doing that on our team one of the strengths of our design team has been that people come from lots of different backgrounds right they might come from 3D animation or they might come from electrical engineering and
+
+554
+00:41:52,880 --> 00:41:58,720
+like that's a real strength uh to have folks who see the world differently and have you know totally different sets of skills.
+
+555
+00:41:58,720 --> 00:42:06,240
+>> So as I was preparing for this chat I talked to a bunch of people that worked at Snap over the years and I've I've integrated their ideas throughout already.
+
+556
+00:42:06,240 --> 00:42:14,079
+U but one that came up that I thought was interesting is I hear you spend a lot of time developing young design talent and that's a big focus of yours.
+
+557
+00:42:14,079 --> 00:42:17,839
+Can you just talk about how you develop young design talent?
+
+558
+00:42:17,839 --> 00:42:26,720
+Well, I think the number one way to develop uh young design talent is just help them make lots of stuff and get a lot of feedback from,
+
+559
+00:42:26,720 --> 00:42:31,599
+you know, whether it's our customers or, you know, their teammates or, you know, myself,
+
+560
+00:42:31,599 --> 00:42:32,319
+uh, directly.
+
+561
+00:42:32,319 --> 00:42:36,720
+And so, one of the things that we do that's different at Snap is, you know, your first day that you join the design team,
+
+562
+00:42:36,720 --> 00:42:37,839
+you present work.
+
+563
+00:42:37,839 --> 00:42:42,319
+And it's really, really important that, you know, the first day that you show up on the team,
+
+564
+00:42:42,319 --> 00:42:42,960
+you're making things.
+
+565
+00:42:42,960 --> 00:42:51,040
+And that just sets the tone for the rest of your, you know, experience on the design team and growth on the on the design team because really that's what we're all about.
+
+566
+00:42:51,040 --> 00:42:55,440
+Uh, and so I think folks who can get comfortable very quickly in that velocity of making things,
+
+567
+00:42:55,440 --> 00:43:00,720
+that's where, you know, the ego sort of melts away because, you know, when you're creating a thousand new ideas,
+
+568
+00:43:00,720 --> 00:43:02,720
+who cares that most of them are not great ideas?
+
+569
+00:43:02,720 --> 00:43:04,000
+That's totally fine, right?
+
+570
+00:43:04,000 --> 00:43:09,119
+What we want to get rid of is that sense of, you know, preciousness that people have around ideas where they feel like,
+
+571
+00:43:09,119 --> 00:43:14,079
+oh, I've got this one really perfect great idea and if people don't love it, that means that I'm not a great designer.
+
+572
+00:43:14,079 --> 00:43:15,520
+It's like, no, that's that's ridiculous.
+
+573
+00:43:15,520 --> 00:43:21,119
+We we all uh, you know, need to just create as many ideas as possible that will lead us to,
+
+574
+00:43:21,119 --> 00:43:23,200
+you know, some really great ideas hopefully over time.
+
+575
+00:43:23,200 --> 00:43:29,359
+And so, I think for young designers that establishing that velocity of of ideiation very early on,
+
+576
+00:43:29,359 --> 00:43:30,480
+uh, is really really important.
+
+577
+00:43:30,480 --> 00:43:33,760
+And then the other thing we do that I I think is different, although I don't know.
+
+578
+00:43:33,760 --> 00:43:44,480
+I've never really worked anywhere else, uh, you know, is is um we don't allow designers get to get stuck on specific products or verticals for very long.
+
+579
+00:43:44,480 --> 00:43:52,079
+We like to make sure people are rotating through different parts of the product uh to bring new ideas and fresh perspectives and also to avoid getting bored.
+
+580
+00:43:52,079 --> 00:43:56,880
+Like if you're a great designer and you're stuck, you know, designing the chat experience for three years,
+
+581
+00:43:56,880 --> 00:43:58,640
+like I mean, how boring is that?
+
+582
+00:43:58,640 --> 00:43:59,520
+It's really exciting.
+
+583
+00:43:59,520 --> 00:44:04,480
+I think at Snap to be able to work across all of these, you know, highly engaged product services.
+
+584
+00:44:04,480 --> 00:44:06,160
+We have one of the largest maps in the world.
+
+585
+00:44:06,160 --> 00:44:08,880
+We have this huge, you know, the biggest augmented reality platform.
+
+586
+00:44:08,880 --> 00:44:13,839
+Like these are really exciting opportunities for designers and it's important that we're rotating them across,
+
+587
+00:44:13,839 --> 00:44:17,280
+you know, all all of these different uh products so they're not getting stuck.
+
+588
+00:44:17,280 --> 00:44:19,119
+>> I had uh Jenny Wen on the podcast.
+
+589
+00:44:19,119 --> 00:44:29,920
+She's the she was head of design for Claude and co-work and she was a like a director at Figma and then she came to Anthropic and moved to just IC design again and I asked her what's the hardest
+
+590
+00:44:29,920 --> 00:44:37,839
+part of that move and she said it's just all the crits that she has to deal with now just so much criticism and constant feedback and it's she forgot about that part of it.
+
+591
+00:44:37,839 --> 00:44:43,280
+So it's interesting that's such a core part of the way you like the thing that people have to learn essentially and get good at.
+
+592
+00:44:43,280 --> 00:44:47,520
+Well, and one of the things that's so important, right, about our design team and our design culture,
+
+593
+00:44:47,520 --> 00:44:52,800
+one of the things that we try to do is there is no gate to showing me work every week.
+
+594
+00:44:52,800 --> 00:44:57,599
+So there is no you don't like any idea it doesn't matter, you know, how good people think it is,
+
+595
+00:44:57,599 --> 00:45:03,440
+how bad it is, you can bring it to that design meeting, get it on the on the list and share your work and your idea.
+
+596
+00:45:03,440 --> 00:45:10,960
+And that is so important because I think to your point, you know, sometimes people overrely on this critique process and great ideas get filtered out.
+
+597
+00:45:10,960 --> 00:45:20,560
+And so I think creating this culture on the team where like you can bring anything to the design meeting there's no you know filtering process I I think is just so important.
+
+598
+00:45:20,560 --> 00:45:23,359
+>> You mentioned AI how designers are shipping code.
+
+599
+00:45:23,359 --> 00:45:33,119
+I have a friend who works at um a big tech company and he just said all the design team they're required to ship like I don't know 10 PRs a month or something like that or a
+
+600
+00:45:33,119 --> 00:45:36,000
+quarter which is such a new world.
+
+601
+00:45:36,000 --> 00:45:39,359
+I guess one is just like how do you think about designers shipping code?
+
+602
+00:45:39,359 --> 00:45:42,319
+Is that like just do it if you can or is there like a requirement sort of thing?
+
+603
+00:45:42,319 --> 00:45:47,280
+And broadly, I'm just curious how AI is changing the way your team operates.
+
+604
+00:45:47,280 --> 00:45:52,560
+What are just like a few things you've that have been impactful in how your team operates that are AIdriven?
+
+605
+00:45:52,560 --> 00:45:56,560
+Taking a step back, uh it's definitely not a requirement to ship code on the design team,
+
+606
+00:45:56,560 --> 00:46:00,560
+but I think people are so passionate and curious about learning new things.
+
+607
+00:46:00,560 --> 00:46:04,640
+I mean, one of the things, you know, we've always tried to do on the design team is just figure it out,
+
+608
+00:46:04,640 --> 00:46:04,880
+right?
+
+609
+00:46:04,880 --> 00:46:08,800
+I remember in the early days of some of the 3D graphics stuff that we were trying to do,
+
+610
+00:46:08,800 --> 00:46:13,760
+one of our team members had never done 3D graphics before and they're like, "Okay, let's just figure it out,
+
+611
+00:46:13,760 --> 00:46:13,920
+right?"
+
+612
+00:46:13,920 --> 00:46:17,440
+So, they took some online tutorials and like, you know, boom, like we're off to the races.
+
+613
+00:46:17,440 --> 00:46:21,520
+So, I think the design team has always been really flexible in terms of, you know, their curiosity,
+
+614
+00:46:21,520 --> 00:46:22,240
+learning new things.
+
+615
+00:46:22,240 --> 00:46:29,200
+And so, I I don't think you have to like push people or create a requirement or something like that uh for folks to want to adopt new tools and and want to,
+
+616
+00:46:29,200 --> 00:46:30,079
+you know, want to ship code.
+
+617
+00:46:30,079 --> 00:46:40,800
+I think you know the big question now that everyone and anyone uh thinks they can you know submit a PR is like how we don't break things at a at a billion you know near nearly a billion user scale right that that's really
+
+618
+00:46:40,800 --> 00:46:52,480
+important so I think uh what we've really tried to do is also develop AI tools and guard rails to make it easier for more people to you know participate and submit code but also reduce the likelihood uh that you know we're going
+
+619
+00:46:52,480 --> 00:47:02,880
+to have some sort of bug you know we've got automated code review now we've I think automatically detected like close to 10,000 bugs at this point probably you know we've we've got a we have a
+
+620
+00:47:02,880 --> 00:47:12,800
+system at snap where you know on the the internal version of the app you can shake to report uh you know your problem and agents now uh you know debug exactly what happened what went wrong and you
+
+621
+00:47:12,800 --> 00:47:24,240
+know it can actually like s suggest a fix and I think you know in pretty short order it'll be implementing the fix as well which is pretty crazy so I think you know taking a step back there's so much excitement around the way that AI
+
+622
+00:47:24,240 --> 00:47:33,119
+is is going to change the way that companies work obviously software companies in particular like ours I think are on cutting edge of of the way that AI is changing how things get built
+
+623
+00:47:33,119 --> 00:47:35,040
+and and and what gets done.
+
+624
+00:47:35,040 --> 00:47:38,800
+Um we really wanted to bring some like order to that chaos.
+
+625
+00:47:38,800 --> 00:47:46,000
+And so the way that we did that was really by starting with the jobs to be done for our community and our advertisers.
+
+626
+00:47:46,000 --> 00:47:53,040
+So getting really really basic and you know straightforward on okay you know for Snapchatters right are jobs to be done.
+
+627
+00:47:53,040 --> 00:47:55,839
+And it's as simple as like get people to download the app, right?
+
+628
+00:47:55,839 --> 00:48:00,880
+Get them to add their close friends, you know, get them to, you know, I don't know, use lenses,
+
+629
+00:48:00,880 --> 00:48:01,280
+something like that.
+
+630
+00:48:01,280 --> 00:48:02,640
+On the advertiser front, right?
+
+631
+00:48:02,640 --> 00:48:07,599
+It could be, you know, getting bringing people into the ad platform, configuring their campaign,
+
+632
+00:48:07,599 --> 00:48:08,160
+etc.
+
+633
+00:48:08,160 --> 00:48:14,880
+And so by listing out all these jobs to be done, you know, really for the for the community journey and for advertisers as well,
+
+634
+00:48:14,880 --> 00:48:26,480
+it became very clear where we could use agents where we needed to be very focused in terms of building cross functional teams around those jobs supported by AI tools and it's also given us I think a really
+
+635
+00:48:26,480 --> 00:48:32,000
+helpful mechanism to track our progress against the business outcomes uh for each of those those jobs.
+
+636
+00:48:32,000 --> 00:48:43,920
+So I think you know for us trying to you know while while I think at in this moment of time you certainly want to like you know have a thousand flowers bloom and people are building agents and experimenting I think at the same time making sure that
+
+637
+00:48:43,920 --> 00:48:50,960
+that we stay focused on what matters to our community what matters to advertisers is really really uh important.
+
+638
+00:48:50,960 --> 00:48:55,040
+>> Okay I want to take a step back and think about just kind of reflect back.
+
+639
+00:48:55,040 --> 00:48:57,839
+It's been 15 years since you've been working on Snap.
+
+640
+00:48:57,839 --> 00:48:59,520
+You launched about 15 years ago.
+
+641
+00:48:59,520 --> 00:49:06,319
+I'm curious just what are some of the maybe biggest lessons, maybe the hardest lessons you've learned over the past 15 years,
+
+642
+00:49:06,319 --> 00:49:09,760
+things that you're like, "Oh, I didn't realize this as I was starting this company."
+
+643
+00:49:09,760 --> 00:49:15,920
+You know, I I think it's hard to comprehend how much the job changes over time.
+
+644
+00:49:15,920 --> 00:49:22,000
+I mean, it's really quite extraordinary to go from, you know, my job, you know, in the in the early days with Bobby and I,
+
+645
+00:49:22,000 --> 00:49:26,559
+I was, you know, helping design the product, but I was also answering customer support emails.
+
+646
+00:49:26,559 --> 00:49:29,200
+I was, you know, trying to get our legal filings sorted out.
+
+647
+00:49:29,200 --> 00:49:31,440
+I was trying to raise money, right?
+
+648
+00:49:31,440 --> 00:49:37,119
+As you know, the company grows and things evolve, like so much more of the job is about leadership,
+
+649
+00:49:37,119 --> 00:49:37,440
+right?
+
+650
+00:49:37,440 --> 00:49:42,559
+About making sure you're really developing people, selecting the right people to be on the team,
+
+651
+00:49:42,559 --> 00:49:48,800
+developing the culture, uh, doing that really really seriously and and you know, in some ways creating a structure that can enforce that,
+
+652
+00:49:48,800 --> 00:49:53,440
+you know, to have a cohesive culture and and a vision uh around the company.
+
+653
+00:49:53,440 --> 00:50:04,319
+um you know it it becomes about strategy right uh managing through you know enormous change like uh what we're seeing with with artificial intelligence uh today but also you know
+
+654
+00:50:04,319 --> 00:50:15,520
+several years ago managing through the pandemic or managing through rebuilding our advertising platform as the landscape uh you know changed so the job has just changed so dramatically and I
+
+655
+00:50:15,520 --> 00:50:26,559
+think that that's part of what's so energizing about it what I enjoy so much about it but it's also something I like never in a million years could have anticipated when we were first uh first getting started.
+
+656
+00:50:26,559 --> 00:50:30,640
+>> How how have you most changed and and I guess evolved over that course?
+
+657
+00:50:30,640 --> 00:50:32,960
+What's like a big area that you've improved in?
+
+658
+00:50:32,960 --> 00:50:38,079
+>> You know, one of one of the big focus areas for me was learning how to communicate more effectively.
+
+659
+00:50:38,079 --> 00:50:43,599
+Uh you know, both both to our team, but also you know you know here on a podcast or with the world.
+
+660
+00:50:43,599 --> 00:50:46,720
+I mean so much of the job is about becoming a great communicator.
+
+661
+00:50:46,720 --> 00:50:58,319
+I remember I I had the opportunity to meet uh President Clinton at one point in the early days of the company and he was like you know it's very interesting you know being president is really like being explainer and chief and your job is actually to
+
+662
+00:50:58,319 --> 00:51:03,520
+just explain stuff to people uh and help them make sense of the world and the company and their role in it.
+
+663
+00:51:03,520 --> 00:51:06,720
+And I I always thought that was really interesting and I go back to that a lot.
+
+664
+00:51:06,720 --> 00:51:17,680
+So much of my job is to like is to explain things uh to our company and and you know to our shareholders to the world uh in ways that that really make sense and and can inspire folks and and
+
+665
+00:51:17,680 --> 00:51:19,839
+help us to all move in the in the right direction.
+
+666
+00:51:19,839 --> 00:51:31,119
+So I think uh communication just becomes such a core skill and I think in the early days I I was you know unnecessarily dismissive uh of of the really important role of communication
+
+667
+00:51:31,119 --> 00:51:34,559
+>> for founders that are hearing this and are like okay I'm going to work on this.
+
+668
+00:51:34,559 --> 00:51:37,440
+What most helped you level up in in this space?
+
+669
+00:51:37,440 --> 00:51:38,400
+Is it like coaches?
+
+670
+00:51:38,400 --> 00:51:39,359
+Is it people around you?
+
+671
+00:51:39,359 --> 00:51:40,720
+Is it just doing it?
+
+672
+00:51:40,720 --> 00:51:43,520
+>> You know, just doing it is really the only way.
+
+673
+00:51:43,520 --> 00:51:48,559
+Uh, you know, and I remember that was really the advice like one of our board members gave to me because I was so reluctant.
+
+674
+00:51:48,559 --> 00:51:49,839
+I didn't want to do an all hands.
+
+675
+00:51:49,839 --> 00:51:51,520
+I didn't want to do Q&A.
+
+676
+00:51:51,520 --> 00:51:54,000
+Uh, you know, in the early days of the company, I was like, what?
+
+677
+00:51:54,000 --> 00:51:55,520
+You know, I'll just send an email.
+
+678
+00:51:55,520 --> 00:51:56,960
+And he's like, what are you doing?
+
+679
+00:51:56,960 --> 00:51:58,400
+Like, he's like, too bad, Evan.
+
+680
+00:51:58,400 --> 00:51:59,839
+Like, this is your job.
+
+681
+00:51:59,839 --> 00:52:02,000
+Uh, and I think that was really, really good advice.
+
+682
+00:52:02,000 --> 00:52:04,400
+Uh, and so literally I was like,"Okay, fine.
+
+683
+00:52:04,400 --> 00:52:07,280
+You know, this is a core part of my job and what I need to learn how to do.
+
+684
+00:52:07,280 --> 00:52:08,800
+I'm gonna I'm gonna learn to love it.
+
+685
+00:52:08,800 --> 00:52:09,520
+I want to love it.
+
+686
+00:52:09,520 --> 00:52:13,280
+I want to get up there and, you know, get in front of our company and really enjoy, you know,
+
+687
+00:52:13,280 --> 00:52:17,040
+answering all these really tough questions and, you know, digging into the business with our team."
+
+688
+00:52:17,040 --> 00:52:18,480
+And now I I really do.
+
+689
+00:52:18,480 --> 00:52:22,319
+Um, you know, I've learned to learn to really enjoy that that dialogue with our team.
+
+690
+00:52:22,319 --> 00:52:24,960
+And I learned so much from the questions that folks ask.
+
+691
+00:52:24,960 --> 00:52:26,319
+And I love that openness.
+
+692
+00:52:26,319 --> 00:52:28,880
+I think it's just such an important part of our company and who we are.
+
+693
+00:52:28,880 --> 00:52:35,920
+I had Rahul Vor on the podcast a while back, the founder of Superhum, and he went through a similar I don't know if this is what you went through,
+
+694
+00:52:35,920 --> 00:52:41,839
+but he went through a transition where he loved what he was doing and then ended up being pushed by VCs and leaders to like,
+
+695
+00:52:41,839 --> 00:52:53,200
+okay, you got to do these other things and then like, okay, I I really don't like this and I'm going to find a way to do the thing I really enjoy because that's going to reflect in so many ways across the business and help us succeed.
+
+696
+00:52:53,200 --> 00:52:57,200
+Is that is that something you went through or just like, okay, I just want to get back to the the product and building,
+
+697
+00:52:57,200 --> 00:52:57,520
+>> you know?
+
+698
+00:52:57,520 --> 00:53:02,160
+I think that's only partly true if you want to stay in the CEO job.
+
+699
+00:53:02,160 --> 00:53:08,160
+Like I think the CEO job has a lot of requirements that are not necessarily things, you know,
+
+700
+00:53:08,160 --> 00:53:10,400
+that that you love to do in the morning.
+
+701
+00:53:10,400 --> 00:53:15,839
+It it there's a huge amount of responsibility that comes along with being uh CEO.
+
+702
+00:53:15,839 --> 00:53:20,559
+There's a lot of operational rigor uh that I think needs to be developed.
+
+703
+00:53:20,559 --> 00:53:24,240
+I think not every part of the the CEO job is is glamorous.
+
+704
+00:53:24,240 --> 00:53:28,960
+So I think if you know if I if I just wanted to to work on product I would pick a different job at Snap.
+
+705
+00:53:28,960 --> 00:53:40,640
+But I think because I really like leading our company and leading the direction and strategy for the business and because I see a huge opportunity in transforming the way that people use you know computing in the in the future uh you
+
+706
+00:53:40,640 --> 00:53:44,000
+know both through Snapchat but also uh with with specs.
+
+707
+00:53:44,000 --> 00:53:47,200
+I think this is the right role for me uh right now.
+
+708
+00:53:47,200 --> 00:53:59,119
+I mean certainly I would spend more time with my family and uh probably have uh more fun on some days if I was in a different role or you know um more focused on design but I think the opportunity for a
+
+709
+00:53:59,119 --> 00:54:01,599
+business like ours at the scale you know that we have.
+
+710
+00:54:01,599 --> 00:54:09,280
+It's it's a you know it's a once in a-lifetime opportunity for me and and I you know I you know despite its challenges I I do like the CEO job.
+
+711
+00:54:09,280 --> 00:54:12,720
+So, kind of along those lines, you put out this letter, I think it was the end of last year,
+
+712
+00:54:12,720 --> 00:54:17,119
+where you described this coming year as the crucible moment for Snap.
+
+713
+00:54:17,119 --> 00:54:21,920
+Uh, it's so interesting, just like you guys have a billion monthly active users.
+
+714
+00:54:21,920 --> 00:54:23,680
+That's just absurd.
+
+715
+00:54:23,680 --> 00:54:25,520
+I don't think people realize this.
+
+716
+00:54:25,520 --> 00:54:29,440
+You're making six billion a year in revenue, something like that.
+
+717
+00:54:29,440 --> 00:54:36,079
+One of the very few social networks that lasts, that is durable, with like a very uh valuable,
+
+718
+00:54:36,079 --> 00:54:38,240
+interesting audience.
+
+719
+00:54:38,240 --> 00:54:40,880
+On the flip side, the stock hasn't been killing it.
+
+720
+00:54:40,880 --> 00:54:45,520
+There's like these investors coming at you trying to tell you to change all these things.
+
+721
+00:54:45,520 --> 00:54:51,359
+Uh I guess just thoughts, reflections, and what do you think people are are missing about where this might go?
+
+722
+00:54:51,359 --> 00:54:55,920
+Well, that that's really one of the reasons why I called this year a crucible moment.
+
+723
+00:54:55,920 --> 00:55:00,559
+I mean, the company's almost at the scale of entering the Fortune 500, which is really exciting.
+
+724
+00:55:00,559 --> 00:55:04,800
+It's almost at a billion uh monthly active users.
+
+725
+00:55:04,800 --> 00:55:15,200
+uh it's about to launch specs after you know 12 years of investment uh in this future computing platform you know but at the same time it's it's still not net income
+
+726
+00:55:15,200 --> 00:55:26,000
+profitable for example uh because we've been investing so heavily uh in the future and make making the choice uh to do that and so I think this is the year that we have to prove that Snapchat you
+
+727
+00:55:26,000 --> 00:55:36,559
+know can be a really strong profitable business that it continues uh you know to grow in ter both in terms of the reach of our audience and and their engagement uh you know with with new
+
+728
+00:55:36,559 --> 00:55:48,079
+products whether it's you know topic chats or spotlight or you know we I think we've got 200 million people playing games every month on Snapchat now so gaming is becoming a big part of of um you know the engagement driver you
+
+729
+00:55:48,079 --> 00:55:58,720
+know engagement drivers on Snapchat and the reason why that's so important is that it's going to be very hard for us to win long-term in specs without a really solid foundation um and so I think we need to demonstrate that you
+
+730
+00:55:58,720 --> 00:56:09,440
+know after a couple years of rebuilding our ad platform rebuilding our go to market efforts really accelerating the growth of the the small medium customer part of our business which has grown really rapidly uh for us that like this
+
+731
+00:56:09,440 --> 00:56:14,480
+year we have a really solid foundation to launch the next chapter uh in the company's uh history.
+
+732
+00:56:14,480 --> 00:56:22,559
+So it's a real it's a real turning point uh for Snap that's really exciting but it's definitely an all hands-on deck uh moment for the company.
+
+733
+00:56:22,559 --> 00:56:25,040
+>> You had a really interesting way of describing Snap in the market.
+
+734
+00:56:25,040 --> 00:56:27,760
+You called Snap the middle child.
+
+735
+00:56:27,760 --> 00:56:29,839
+Talk about just what what that means.
+
+736
+00:56:29,839 --> 00:56:37,359
+Yeah, I think one of the things that's so uh funny about our service is that while we're very very large in terms of the scale of our audience,
+
+737
+00:56:37,359 --> 00:56:42,640
+in terms of the scale of our business, you know, we're much larger than a a Pinterest or Reddit for example,
+
+738
+00:56:42,640 --> 00:56:44,799
+we're also way smaller than Meta and Google.
+
+739
+00:56:44,799 --> 00:56:49,599
+And so we occupy this very interesting uh sort of middle position in the in the market.
+
+740
+00:56:49,599 --> 00:56:55,119
+And I think, you know, that comes with a lot of benefits because we're big enough, we have enough scale to do really interesting things.
+
+741
+00:56:55,119 --> 00:57:06,799
+But it also comes uh with the challenges of you know being overshadowed in some cases by our older brothers and maybe you know sometimes the the younger uh the younger kids are are getting more uh attention and so I
+
+742
+00:57:06,799 --> 00:57:17,040
+think again as in this crucible moment it's part of defining who we are as a company uh and and who we are as a business and and you know I think one of the things that will play an important role in that is getting specs out and
+
+743
+00:57:17,040 --> 00:57:23,440
+you know uh to to consumers because I think right now we've talked so long about the role that specs will play in the world.
+
+744
+00:57:23,440 --> 00:57:28,480
+we've, you know, worked on developing the platform for so long, but without something that you can really,
+
+745
+00:57:28,480 --> 00:57:33,520
+uh, you know, play with and hang on to and and use yourself, it's hard to really understand,
+
+746
+00:57:33,520 --> 00:57:36,640
+you know, the next chapter of of, uh, Snap's Snap's journey.
+
+747
+00:57:36,640 --> 00:57:41,920
+So, I think, you know, one of the the biggest challenges that middle children face is defining themselves,
+
+748
+00:57:41,920 --> 00:57:42,240
+right?
+
+749
+00:57:42,240 --> 00:57:45,359
+Standing out uh from their older siblings and and younger siblings.
+
+750
+00:57:45,359 --> 00:57:50,400
+And so, I think this is a this is a moment and a year when SNAP is really going to define itself.
+
+751
+00:57:50,400 --> 00:57:52,400
+Uh, and I'm really excited about that.
+
+752
+00:57:52,400 --> 00:57:59,200
+Speaking of middle child, you have a number of children and I'm curious, there's a whole going a whole different direction.
+
+753
+00:57:59,200 --> 00:58:04,480
+What's your just pol like policy on screens and devices, you know, having built Snapchat,
+
+754
+00:58:04,480 --> 00:58:08,880
+uh, and then also specs, just how do you how do you think about devices and your kids?
+
+755
+00:58:08,880 --> 00:58:10,640
+>> Well, we've got a a real range.
+
+756
+00:58:10,640 --> 00:58:15,599
+Uh, we've got four boys, uh, two, six, uh, seven, and 15.
+
+757
+00:58:15,599 --> 00:58:19,680
+So, we approach it very differently, uh, for all the kids at different ages.
+
+758
+00:58:19,680 --> 00:58:22,960
+for the 2-year-old, uh, it's like zero screen time.
+
+759
+00:58:22,960 --> 00:58:28,559
+Uh, we really, uh, just, you know, want to, you know, essentially read with him and play,
+
+760
+00:58:28,559 --> 00:58:38,160
+uh, you know, explore outside and and those sorts of things, but but not really focus on on screens unless he is getting a haircut because he really struggles,
+
+761
+00:58:38,160 --> 00:58:39,359
+uh, with getting his haircut.
+
+762
+00:58:39,359 --> 00:58:46,640
+So, when when he gets a haircut, he he really loves uh bobcat tractors, you know, the those four-wheel uh sort of bobcat tractors,
+
+763
+00:58:46,640 --> 00:58:50,720
+and he loves to watch YouTube videos of people driving Bobcat tractors around.
+
+764
+00:58:50,720 --> 00:58:55,520
+So, when he gets his haircut, he can watch people drive uh bobcat tractors, but other than that,
+
+765
+00:58:55,520 --> 00:58:56,720
+uh no no screen time.
+
+766
+00:58:56,720 --> 00:59:02,720
+For for the six and sevenyear-olds, uh you know, they they are, I would say, infrequent uh movie watchers,
+
+767
+00:59:02,720 --> 00:59:07,040
+but other than that, uh again, you know, we don't give them phones or anything like that.
+
+768
+00:59:07,040 --> 00:59:16,079
+In fact, it was really fun for uh you know over over the holidays for Christmas, I gave them that new I think Palmer Lucky has a startup where they are sort of remaking.
+
+769
+00:59:16,079 --> 00:59:17,760
+Uh >> I have one of those.
+
+770
+00:59:17,760 --> 00:59:18,559
+>> Yeah, it's really fun.
+
+771
+00:59:18,559 --> 00:59:19,119
+Yeah.
+
+772
+00:59:19,119 --> 00:59:19,920
+>> Mod Retro.
+
+773
+00:59:19,920 --> 00:59:20,160
+>> Yeah.
+
+774
+00:59:20,160 --> 00:59:20,880
+Mod Retro.
+
+775
+00:59:20,880 --> 00:59:25,599
+So the the TBPN guys gave me two of them for our uh for our kids for for Christmas.
+
+776
+00:59:25,599 --> 00:59:29,920
+And so um they they get to spend a little time on those in addition to watching movies every now and then.
+
+777
+00:59:29,920 --> 00:59:35,280
+And then, you know, with the 15-year-old, it's he he he we we he is uh all in on on technology,
+
+778
+00:59:35,280 --> 00:59:38,960
+whether he's using it for school or whether he's using it to talk with his friends or using Snapchat.
+
+779
+00:59:38,960 --> 00:59:44,720
+So, you know, it really depends on on kids and where they're at developmentally, but I think for us like that that's been our approach.
+
+780
+00:59:44,720 --> 00:59:46,640
+>> Is there anything you're doing with AI in your kids?
+
+781
+00:59:46,640 --> 00:59:51,760
+Like maybe even the older one, just like AI education sort of tools, Jad GBT.
+
+782
+00:59:51,760 --> 00:59:52,559
+>> Yeah, it's so funny.
+
+783
+00:59:52,559 --> 00:59:58,000
+At the at the breakfast table the other morning, actually, I was just asking them a lot about like how are their teachers talking about AI at school?
+
+784
+00:59:58,000 --> 01:00:00,079
+how are they thinking about integrating in the curriculum?
+
+785
+01:00:00,079 --> 01:00:02,480
+Are you guys, you know, using AI all the time?
+
+786
+01:00:02,480 --> 01:00:05,280
+Um, and and I think the answer so far has been not really.
+
+787
+01:00:05,280 --> 01:00:09,920
+Uh, you know, which I think is is interesting, but certainly, you know, our kids play around with it,
+
+788
+01:00:09,920 --> 01:00:11,119
+um, at home there.
+
+789
+01:00:11,119 --> 01:00:14,319
+They, you know, are beta testers for specs, which is really fun.
+
+790
+01:00:14,319 --> 01:00:18,960
+I really love, uh, you know, using the glasses together with them and and some of the really cool,
+
+791
+01:00:18,960 --> 01:00:20,640
+uh, experiences there.
+
+792
+01:00:20,640 --> 01:00:25,040
+And, you know, Flynn, who's the eldest, is probably most fluent, um, in using AI tools.
+
+793
+01:00:25,040 --> 01:00:29,599
+But what I think is so fun, you know, as a kid, I think all of us as as kids, right,
+
+794
+01:00:29,599 --> 01:00:31,040
+are incredibly imaginative, right?
+
+795
+01:00:31,040 --> 01:00:32,079
+We're all born creative.
+
+796
+01:00:32,079 --> 01:00:33,920
+We have all these amazing ideas to share.
+
+797
+01:00:33,920 --> 01:00:40,319
+And I think what's so cool about AI is how, you know, in an in nearly an instant, you can take any idea you have and and make something.
+
+798
+01:00:40,319 --> 01:00:45,839
+And so, I think that's so empowering for for young people, it's certainly experience I want our uh our kids to have.
+
+799
+01:00:45,839 --> 01:00:50,079
+And I think it's gonna be so important to deeply integrate into the way that, you know,
+
+800
+01:00:50,079 --> 01:00:51,359
+education works today.
+
+801
+01:00:51,359 --> 01:00:52,240
+>> Yeah, it's interesting.
+
+802
+01:00:52,240 --> 01:00:56,400
+Snapchat has always been really good at allowing you to create and make feel like a superstar.
+
+803
+01:00:56,400 --> 01:01:07,599
+Just create all these really crazy lenses and filters and all these things and it's interesting AI just like vibe coding just unleashes so much creativity and kids are so imaginative already.
+
+804
+01:01:07,599 --> 01:01:08,160
+>> Absolutely.
+
+805
+01:01:08,160 --> 01:01:09,200
+>> So interesting.
+
+806
+01:01:09,200 --> 01:01:09,520
+Okay.
+
+807
+01:01:09,520 --> 01:01:14,880
+Well, to close out our conversation, I've got a couple I'm going to take us to a couple corners recurring corners on the podcast.
+
+808
+01:01:14,880 --> 01:01:16,640
+One is AI corner.
+
+809
+01:01:16,640 --> 01:01:26,720
+So the question is what's what's a way you use AI in your let's say work that allow that is just interesting that might be interesting for other people to to learn from.
+
+810
+01:01:26,720 --> 01:01:35,280
+Uh well, one of the things that I really love about AI, you know, in uh at Snap, I've got access to all of our dashboards and documents and data.
+
+811
+01:01:35,280 --> 01:01:40,240
+And so, you know, I've built we we have Glean that integrates uh you know, all this data for me.
+
+812
+01:01:40,240 --> 01:01:45,200
+And I've built just an agent that will go and comb through everything that's happening in the company uh and let me know what's up,
+
+813
+01:01:45,200 --> 01:01:46,960
+what I need to focus on, what I need to catch.
+
+814
+01:01:46,960 --> 01:01:52,799
+And every now and then it really catches something that I, you know, hadn't hadn't realized or need to focus a bit more on.
+
+815
+01:01:52,799 --> 01:01:56,319
+And so, I think we're just so fortunate to have so much structured data in our company.
+
+816
+01:01:56,319 --> 01:02:01,920
+I mean, you know, for our leaders, they also send me, you know, every week kind of the the three things from the week and three things looking ahead.
+
+817
+01:02:01,920 --> 01:02:06,319
+And so I can like very very easily get a sense for, you know, the hotspots in the company,
+
+818
+01:02:06,319 --> 01:02:11,920
+the priority areas, and combined with all of our dashboards and and metrics about the way that people are using our service,
+
+819
+01:02:11,920 --> 01:02:16,319
+I feel like I have a a really good sense um for for what's happening in in the company.
+
+820
+01:02:16,319 --> 01:02:27,680
+So I think you know what's been most exciting for me in in terms of AI uh is is that it's enabling I think the type of leadership structure that I've always wanted which is you know very flat uh you know very fastm moving um
+
+821
+01:02:27,680 --> 01:02:38,640
+and I think you know having an AI co-pilot to to help me do that it's been been a big deal >> and that agent was uh you built it in Glean is that where it lives >> yeah that I mean that that I've done uh
+
+822
+01:02:38,640 --> 01:02:46,160
+in Glean which is is great obviously can build all sorts of stuff in in cloud but Glean for us is the most secure way to access all of our different documents and dashboards.
+
+823
+01:02:46,160 --> 01:02:46,880
+and things like that.
+
+824
+01:02:46,880 --> 01:02:49,200
+>> Is there anything interesting in your AI stack?
+
+825
+01:02:49,200 --> 01:02:51,440
+There's um sounds like lean claude.
+
+826
+01:02:51,440 --> 01:02:55,599
+Is there anything else that's interesting maybe some people may not think about?
+
+827
+01:02:55,599 --> 01:03:02,319
+>> I think one of the things that we're thinking a lot about is just taking the entire workflow um and enabling it with an agent.
+
+828
+01:03:02,319 --> 01:03:14,240
+So for example uh you know taking a product idea and with our gotomarket agent taking that product idea writing the spec making identifying the relevant uh folks who need to be
+
+829
+01:03:14,240 --> 01:03:25,280
+involved in signoffs and understanding it right actually helping to do the an the risk analysis on the product right from a legal trust and safety perspective writing the go-to market materials like the blog etc.
+
+830
+01:03:25,280 --> 01:03:32,400
+We're working now on on actually building the visuals as well, but doing that in one shot uh you know is is really wild.
+
+831
+01:03:32,400 --> 01:03:42,640
+So I think there's all sorts of examples like that across the company uh in terms of the way that agents can play a really massive um role in changing the way that we work and that that's connected to,
+
+832
+01:03:42,640 --> 01:03:44,720
+you know, how we think about those jobs to be done, right?
+
+833
+01:03:44,720 --> 01:03:49,680
+So if we can uh define a job to be done clearly enough that we can build an agent to do it,
+
+834
+01:03:49,680 --> 01:03:53,039
+uh that that can really create a lot of a lot of lift.
+
+835
+01:03:53,039 --> 01:03:54,720
+>> What do you where do you build this agent?
+
+836
+01:03:54,720 --> 01:03:56,640
+What's the what platform to use?
+
+837
+01:03:56,640 --> 01:04:01,599
+>> Uh we've been using Claude to do a lot of the the work um you know across Snap.
+
+838
+01:04:01,599 --> 01:04:02,079
+Yeah.
+
+839
+01:04:02,079 --> 01:04:02,880
+>> Sweet.
+
+840
+01:04:02,880 --> 01:04:03,359
+Okay.
+
+841
+01:04:03,359 --> 01:04:06,079
+Uh I'll take us to another recurring corner on the podcast.
+
+842
+01:04:06,079 --> 01:04:07,599
+Contrarian corner.
+
+843
+01:04:07,599 --> 01:04:10,559
+What's something that you believe that a lot of other people don't believe?
+
+844
+01:04:10,559 --> 01:04:14,720
+What's kind of a contrarian take about anything that comes to mind?
+
+845
+01:04:14,720 --> 01:04:24,160
+Well, I I think for me like we're we're in an industry where so much of the conversation is focused on uh technology and I think maybe my contrarian point of view or my
+
+846
+01:04:24,160 --> 01:04:34,480
+contrarian angle is like humanity is far more important uh you know than than the technological developments largely because humanity dictates how technology
+
+847
+01:04:34,480 --> 01:04:46,400
+is adopted right I think for example right now people are massively underestimating the role that human adoption and human comfort uh you know with advanc advances in artificial intelligence will determine its
+
+848
+01:04:46,400 --> 01:04:46,960
+deployment.
+
+849
+01:04:46,960 --> 01:04:47,119
+Right?
+
+850
+01:04:47,119 --> 01:04:52,799
+I think technology leaders think that folks will just blindly adopt uh new technology as it comes out.
+
+851
+01:04:52,799 --> 01:04:59,359
+And I think we're going to enter a period of time where there's going to be a huge amount of societal push back on a lot of the changes that are coming uh with AI.
+
+852
+01:04:59,359 --> 01:05:04,880
+And so I think a lot of our focus as an industry but more broadly in the world needs to be putting humanity first,
+
+853
+01:05:04,880 --> 01:05:05,119
+right?
+
+854
+01:05:05,119 --> 01:05:12,799
+Making sure that the tools uh we're developing are advancing humanity's goals um you know in addition to uh business goals.
+
+855
+01:05:12,799 --> 01:05:16,240
+And you know, I think in our industry at least that that's a bit contrarian.
+
+856
+01:05:16,240 --> 01:05:16,559
+>> Yeah.
+
+857
+01:05:16,559 --> 01:05:21,039
+Just so we don't need to go too down this path, but I it's so hard for the AI labs, I think,
+
+858
+01:05:21,039 --> 01:05:29,520
+to on the one hand be like, okay, this is really dangerous if it gets much smarter and we need people to know this because this is happening and moving quickly.
+
+859
+01:05:29,520 --> 01:05:34,000
+On the other hand, how do you not just freak everyone out and make everyone so afraid of where things are going?
+
+860
+01:05:34,000 --> 01:05:35,200
+It's like, how do what do you do?
+
+861
+01:05:35,200 --> 01:05:36,559
+What's the right thing for them to do?
+
+862
+01:05:36,559 --> 01:05:41,520
+And and because of all that of that doom and gloom, it's like I'm sure you've seen these surveys.
+
+863
+01:05:41,520 --> 01:05:47,520
+AI is like below ice in terms of popularity and and like below like Iran.
+
+864
+01:05:47,520 --> 01:05:49,839
+It's like and this isn't going great.
+
+865
+01:05:49,839 --> 01:05:50,240
+I don't know.
+
+866
+01:05:50,240 --> 01:05:52,000
+I don't know what I would do if I were laugh.
+
+867
+01:05:52,000 --> 01:06:03,920
+And I love I guess that's like a benefit of Snapchat is it makes like you guys have been in AI from for a very long time and it shows you the playfulness of it all and it you know it doesn't have to be that serious.
+
+868
+01:06:03,920 --> 01:06:08,480
+Anyway, with that, Evan, we reached our very exciting lightning round.
+
+869
+01:06:08,480 --> 01:06:09,839
+I've got five questions for you.
+
+870
+01:06:09,839 --> 01:06:11,280
+Are you ready?
+
+871
+01:06:11,280 --> 01:06:12,960
+>> Let's give it a shot.
+
+872
+01:06:12,960 --> 01:06:14,400
+Okay.
+
+873
+01:06:14,400 --> 01:06:18,400
+What are two or three books that you find yourself recommending most to other people?
+
+874
+01:06:18,400 --> 01:06:18,720
+Gosh.
+
+875
+01:06:18,720 --> 01:06:23,680
+Well, you know what I just finished was The First 50 Years of Apple, uh, by David Pogue.
+
+876
+01:06:23,680 --> 01:06:24,559
+I thought it was great.
+
+877
+01:06:24,559 --> 01:06:34,079
+I would recommend the first half uh because you know he interviews like 150 early Apple team members and it the stories are just great and there's a lot of learnings in there.
+
+878
+01:06:34,079 --> 01:06:36,720
+Um so I really enjoyed I really enjoyed that.
+
+879
+01:06:36,720 --> 01:06:39,599
+I think uh what else have I read recently?
+
+880
+01:06:39,599 --> 01:06:45,440
+Uh there's a a great book maybe relevant for this particular moment called the end of the world is just the beginning.
+
+881
+01:06:45,440 --> 01:06:50,559
+Um which actually touches a lot on the vulnerability of global shipping.
+
+882
+01:06:50,559 --> 01:06:53,359
+Like the global economy is built on global shipping.
+
+883
+01:06:53,359 --> 01:07:01,359
+Um and it sort of predicts a world where the US is going to have a much harder time securing the global waterways.
+
+884
+01:07:01,359 --> 01:07:05,839
+Uh and what does that mean for uh the way that we build things and organize ourselves as a society?
+
+885
+01:07:05,839 --> 01:07:07,920
+So >> that sounds quite familiar these days.
+
+886
+01:07:07,920 --> 01:07:10,319
+>> Quite relevant for the given moments.
+
+887
+01:07:10,319 --> 01:07:11,599
+>> Yeah.
+
+888
+01:07:11,599 --> 01:07:12,319
+>> Awesome.
+
+889
+01:07:12,319 --> 01:07:15,359
+Is there a recent movie or TV show you have really enjoyed?
+
+890
+01:07:15,359 --> 01:07:19,200
+>> I mean I feel like this is so typical but like I I loved Marty Supreme.
+
+891
+01:07:19,200 --> 01:07:21,680
+I thought that movie was off the charts.
+
+892
+01:07:21,680 --> 01:07:24,640
+Uh, and I I was like I I don't know.
+
+893
+01:07:24,640 --> 01:07:27,280
+I'm I'm not used to watching stuff that extreme, you know?
+
+894
+01:07:27,280 --> 01:07:29,599
+I mean, I I could I was like on the edge of my seat the whole time.
+
+895
+01:07:29,599 --> 01:07:32,319
+It's like a full throttle movie experience.
+
+896
+01:07:32,319 --> 01:07:33,599
+Highly recommend.
+
+897
+01:07:33,599 --> 01:07:34,480
+>> I've not seen it yet.
+
+898
+01:07:34,480 --> 01:07:35,760
+I keep hearing amazing things.
+
+899
+01:07:35,760 --> 01:07:37,119
+>> It's It's very intense.
+
+900
+01:07:37,119 --> 01:07:37,520
+Yeah.
+
+901
+01:07:37,520 --> 01:07:37,839
+>> Okay.
+
+902
+01:07:37,839 --> 01:07:39,359
+I'm ready for that.
+
+903
+01:07:39,359 --> 01:07:39,839
+>> Next question.
+
+904
+01:07:39,839 --> 01:07:43,520
+Do you have a Is there a product you recently discovered that you really love?
+
+905
+01:07:43,520 --> 01:07:47,200
+Could be an app, could be clothing, a gadget, anything.
+
+906
+01:07:47,200 --> 01:07:53,599
+Well, I think through our kids right now, I'm just rediscovering uh Pokemon, which is so fun.
+
+907
+01:07:53,599 --> 01:07:54,480
+It's so great.
+
+908
+01:07:54,480 --> 01:08:03,839
+And I think uh you know, there's so much art to it and personality and character and uh what an amazing brand and franchise.
+
+909
+01:08:03,839 --> 01:08:13,839
+And I think like I you know, my general view is like there's just so so much they could do to grow uh you know that that IP and and franchise if at least if our kids are
+
+910
+01:08:13,839 --> 01:08:14,720
+any indication.
+
+911
+01:08:14,720 --> 01:08:18,159
+first mention a Pokemon in the lightning round.
+
+912
+01:08:18,159 --> 01:08:18,719
+Next question.
+
+913
+01:08:18,719 --> 01:08:23,679
+Do you have a favorite life motto that you often come back to in work or in life?
+
+914
+01:08:23,679 --> 01:08:25,520
+>> You have two ears and one mouth.
+
+915
+01:08:25,520 --> 01:08:27,279
+Use them in that proportion.
+
+916
+01:08:27,279 --> 01:08:28,319
+>> Nice.
+
+917
+01:08:28,319 --> 01:08:29,199
+Final question.
+
+918
+01:08:29,199 --> 01:08:32,480
+Uh you guys have created many lenses over the years.
+
+919
+01:08:32,480 --> 01:08:37,920
+I'm curious if you have just like a favorite lens, like all-time favorite and then all-time least favorite,
+
+920
+01:08:37,920 --> 01:08:39,040
+the worst.
+
+921
+01:08:39,040 --> 01:08:44,000
+Uh, I mean, all-time favorite is probably The Vomiting Rainbow.
+
+922
+01:08:44,000 --> 01:08:49,040
+I think like that just brought so much joy uh to so many people, which is great.
+
+923
+01:08:49,040 --> 01:08:52,400
+Least favorite probably like the old lens.
+
+924
+01:08:52,400 --> 01:08:52,880
+I don't know.
+
+925
+01:08:52,880 --> 01:08:54,000
+Or face swap.
+
+926
+01:08:54,000 --> 01:08:55,279
+I just just Right.
+
+927
+01:08:55,279 --> 01:08:56,640
+>> Those are those are intense.
+
+928
+01:08:56,640 --> 01:08:57,040
+Yeah.
+
+929
+01:08:57,040 --> 01:08:57,279
+>> Wow.
+
+930
+01:08:57,279 --> 01:08:57,839
+Flashback.
+
+931
+01:08:57,839 --> 01:08:59,839
+And you guys were the first to do that, right?
+
+932
+01:08:59,839 --> 01:09:00,159
+>> Yeah.
+
+933
+01:09:00,159 --> 01:09:05,520
+I mean, and that was all that that was all early days real time machine learning transformation on the device.
+
+934
+01:09:05,520 --> 01:09:12,560
+So, like that was like pretty cutting edge at the I mean, I don't think people realize like Bobby created our Gen AI lab like 10 years ago,
+
+935
+01:09:12,560 --> 01:09:14,000
+a decade ago or something like that.
+
+936
+01:09:14,000 --> 01:09:14,880
+>> What a time.
+
+937
+01:09:14,880 --> 01:09:20,400
+The face swapping era, the early use of generative AI in action.
+
+938
+01:09:20,400 --> 01:09:20,640
+>> Wow.
+
+939
+01:09:20,640 --> 01:09:22,080
+I forgot that was another innovation.
+
+940
+01:09:22,080 --> 01:09:29,440
+And then there's like businesses and apps that just sat built that as a whole business and then all all went away as far as I can tell.
+
+941
+01:09:29,440 --> 01:09:30,560
+Wow.
+
+942
+01:09:30,560 --> 01:09:32,080
+That was a good time.
+
+943
+01:09:32,080 --> 01:09:32,560
+All right.
+
+944
+01:09:32,560 --> 01:09:34,880
+Well, Evan, uh, is there anything else you wanted to share?
+
+945
+01:09:34,880 --> 01:09:38,239
+Anything else you want to leave listeners with before we before I let you go?
+
+946
+01:09:38,239 --> 01:09:40,560
+>> I think it's such an it's such an exciting time.
+
+947
+01:09:40,560 --> 01:09:45,679
+Obviously, I think there's a lot of concern about the way that artificial intelligence is going to change our society,
+
+948
+01:09:45,679 --> 01:09:53,120
+but I think there's so much to be optimistic about in terms of the way that computing can become more human and that's really what we're focused on.
+
+949
+01:09:53,120 --> 01:09:56,800
+So, really excited to share more about all the stuff we've been working on later this year.
+
+950
+01:09:56,800 --> 01:09:58,719
+>> Evan, thank you so much for being here.
+
+951
+01:09:58,719 --> 01:09:59,440
+>> My pleasure.
+
+952
+01:09:59,440 --> 01:10:00,080
+Thanks, Lenny.
+
+953
+01:10:00,080 --> 01:10:01,840
+>> Bye, everyone.
+
+954
+01:10:01,840 --> 01:10:03,199
+Thank you so much for listening.
+
+955
+01:10:03,199 --> 01:10:07,520
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+956
+01:10:07,520 --> 01:10:09,679
+or your favorite podcast app.
+
+957
+01:10:09,679 --> 01:10:15,840
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+958
+01:10:15,840 --> 01:10:21,280
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+959
+01:10:21,280 --> 01:10:25,000
+See you in the next episode.

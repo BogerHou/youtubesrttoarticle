@@ -1,0 +1,2739 @@
+1
+00:00:04,980 --> 00:00:12,000
+[Music] All right.
+
+2
+00:00:12,000 --> 00:00:15,320
+Hey, bud.
+
+3
+00:00:15,540 --> 00:00:26,480
+[Music] If you're new here, this is the 100K
+
+4
+00:00:26,480 --> 00:00:33,040
+build challenge, day three, where I will try to make $100,000 using only AI tools.
+
+5
+00:00:33,040 --> 00:00:37,360
+I have no idea how I'm going to get there, but I'm starting with one project and seeing what happens.
+
+6
+00:00:37,360 --> 00:00:41,280
+This is how far along I am in the journey, and we're just getting started.
+
+7
+00:00:41,280 --> 00:00:46,960
+Okay, now that we got that out of the way, again, the response to this has been insane.
+
+8
+00:00:46,960 --> 00:00:49,440
+The first video got over a 100,000 views.
+
+9
+00:00:49,440 --> 00:00:52,239
+The second video got over 40,000 views.
+
+10
+00:00:52,239 --> 00:00:54,640
+And I'm making day three right now.
+
+11
+00:00:54,640 --> 00:00:56,239
+And Bernie's excited, too.
+
+12
+00:00:56,239 --> 00:01:00,320
+But reminder, guys, I don't really know what I'm doing.
+
+13
+00:01:00,320 --> 00:01:01,359
+This might take a while.
+
+14
+00:01:01,359 --> 00:01:09,360
+So, I appreciate you guys following along with me and watching these and commenting and hanging out and also doing the challenge yourself.
+
+15
+00:01:09,360 --> 00:01:14,080
+Only thing I can promise you is that I'm not going to stop and I'm going to keep documenting.
+
+16
+00:01:14,080 --> 00:01:21,200
+So, to remind you, the rules for the 100K build challenge are rule number one is I will document everything on this channel.
+
+17
+00:01:21,200 --> 00:01:25,200
+Rule number two is that I can only use AI tools.
+
+18
+00:01:25,200 --> 00:01:30,080
+And rule number three is I cannot stop until I make $100,000.
+
+19
+00:01:30,080 --> 00:01:38,479
+This episode is about a huge problem with the app that I built and how I'm going to navigate around that and how I'm not going to quit.
+
+20
+00:01:38,479 --> 00:01:41,200
+You're also going to see me build different features.
+
+21
+00:01:41,200 --> 00:01:44,880
+You're going to see how features change as you build.
+
+22
+00:01:44,880 --> 00:01:51,520
+In this episode, we're also going to go over bugs, bugs, bugs, bugs, debugging, and especially with AI.
+
+23
+00:01:51,520 --> 00:01:53,200
+You're going to run into lots of bugs.
+
+24
+00:01:53,200 --> 00:01:55,280
+Most people quit when they hit these bugs.
+
+25
+00:01:55,280 --> 00:01:57,520
+I'm going to show you how I debug these.
+
+26
+00:01:57,520 --> 00:02:04,240
+You're going to learn how to use the console of a web browser, and you're going to learn about my special tactic called emergency mode.
+
+27
+00:02:04,240 --> 00:02:08,720
+When things really start going haywire, this is what you can do to save your app.
+
+28
+00:02:08,720 --> 00:02:09,360
+All right, guys.
+
+29
+00:02:09,360 --> 00:02:11,200
+This video was super fun to put together.
+
+30
+00:02:11,200 --> 00:02:13,920
+This is day three, the 100k build challenge.
+
+31
+00:02:13,920 --> 00:02:22,680
+Let's [Music]
+
+32
+00:02:22,680 --> 00:02:23,680
+go.
+
+33
+00:02:23,680 --> 00:02:24,480
+All right, guys.
+
+34
+00:02:24,480 --> 00:02:34,720
+I screwed up big time and I'm feeling really shitty right now because I didn't do my research and I decided to start building without
+
+35
+00:02:34,720 --> 00:02:37,280
+knowing if it was possible to actually build this thing.
+
+36
+00:02:37,280 --> 00:02:44,319
+Basically, I started a build session recently that totally went to because I realized that my idea,
+
+37
+00:02:44,319 --> 00:02:51,519
+which I I'll pull this up right here, was YouTube thumbnail generator, which can generate a thumbnail based on drawing,
+
+38
+00:02:51,519 --> 00:02:53,040
+some upload images, and some text.
+
+39
+00:02:53,040 --> 00:02:58,800
+While this is possible, I wanted it to be at this level, which is this tweet that I saw.
+
+40
+00:02:58,800 --> 00:03:08,239
+If you go back and watch the first day, this tweet right here, which is what's possible to do when you use this new GPT40 model,
+
+41
+00:03:08,239 --> 00:03:11,760
+but I did a lot of research and I tested a lot of the APIs.
+
+42
+00:03:11,760 --> 00:03:16,879
+Well, first I realized that we'll go to this GPT40 image API.
+
+43
+00:03:16,879 --> 00:03:18,480
+Yeah, here it is right here.
+
+44
+00:03:18,480 --> 00:03:24,720
+I started doing my research on it and I realized that you cannot actually access this via API.
+
+45
+00:03:24,720 --> 00:03:30,959
+Developers will soon be able to generate images with GPT40 via the API with access rolling out in the next four weeks.
+
+46
+00:03:30,959 --> 00:03:32,879
+This is 12 days ago.
+
+47
+00:03:32,879 --> 00:03:37,120
+And unfortunately, this is a timing issue.
+
+48
+00:03:37,120 --> 00:03:40,640
+I know that this could be big, but it's too early, right?
+
+49
+00:03:40,640 --> 00:03:42,400
+So, I think we have a couple options, guys.
+
+50
+00:03:42,400 --> 00:03:44,720
+And I and I checked out some of the other models.
+
+51
+00:03:44,720 --> 00:03:47,440
+It's just really not possible yet.
+
+52
+00:03:47,440 --> 00:03:54,720
+and the results that you'll get, even if we were to hack this together with other frameworks or do some sort of crazy stuff,
+
+53
+00:03:54,720 --> 00:03:56,799
+the results just won't be good enough.
+
+54
+00:03:56,799 --> 00:04:04,560
+And this reminds me of this famous line that all I think startup founders can relate to.
+
+55
+00:04:04,560 --> 00:04:08,480
+We do this not because it is easy, but because we thought it would be easy.
+
+56
+00:04:08,480 --> 00:04:10,959
+And this was the mistake that I made.
+
+57
+00:04:10,959 --> 00:04:19,600
+But I still think it's important that I add the I guess almost the hubris to go into it thinking that I could do it and then figuring out along the way that I couldn't do it.
+
+58
+00:04:19,600 --> 00:04:24,800
+I think it's still better that I went through that because now I got to get creative and find a solution.
+
+59
+00:04:24,800 --> 00:04:28,160
+So I think we have a couple options and I thought about my options for a little bit.
+
+60
+00:04:28,160 --> 00:04:33,199
+The first option is to go and hack this thing together with all these models and do something that's suboptimal.
+
+61
+00:04:33,199 --> 00:04:39,840
+Or we do all the functional functionality we possibly can in our app, which is in our,
+
+62
+00:04:39,840 --> 00:04:50,080
+you know, we do all the functionality we can in here and then we ask the user to go to chat GBT to actually input it in.
+
+63
+00:04:50,080 --> 00:04:51,360
+They get a great result.
+
+64
+00:04:51,360 --> 00:04:58,639
+It's not the most ideal scenario, but they get the result that they want, which is a great thumbnail.
+
+65
+00:04:58,639 --> 00:05:00,479
+And that's what I think people would pay for, right?
+
+66
+00:05:00,479 --> 00:05:03,440
+If you're giving crappy thumbnails, it's not good enough.
+
+67
+00:05:03,440 --> 00:05:05,440
+And then what we do is we just wait it out.
+
+68
+00:05:05,440 --> 00:05:06,160
+It's a waiting game.
+
+69
+00:05:06,160 --> 00:05:13,919
+We've got everything ready to go so that the moment it releases the API for GPT, we'll be able to do that in here.
+
+70
+00:05:13,919 --> 00:05:17,520
+So that's what I think we're going to do and that's what we're going to build today.
+
+71
+00:05:17,520 --> 00:05:28,320
+So today we are going to build all the functionality to generate a thumb or to create a reference or a sketch for a thumbnail that you can then put into our own I think we'll use we'll
+
+72
+00:05:28,320 --> 00:05:34,320
+use a custom GPT or you can use in your own GPT and then it spits out a really good thumbnail for you.
+
+73
+00:05:34,320 --> 00:05:38,160
+So that's what we're going to build today and we're going to do this with cursor and let's go.
+
+74
+00:05:38,160 --> 00:05:38,800
+All right.
+
+75
+00:05:38,800 --> 00:05:43,759
+So I'm going to switch up my to-do list here to be a little bit different but I I told you how I messed up.
+
+76
+00:05:43,759 --> 00:05:44,560
+So we got that.
+
+77
+00:05:44,560 --> 00:05:54,000
+We are now not going to get it working with API and we are not going to do uh upload a reference shot and we may not even do a prompt at all.
+
+78
+00:05:54,000 --> 00:05:58,639
+So what I want to actually change this up to do is we have the drawing of the thumbnail.
+
+79
+00:05:58,639 --> 00:06:05,600
+But what I want to do instead is I want to I want to do a couple things that I because I think it will actually make it better and actually useful.
+
+80
+00:06:05,600 --> 00:06:05,840
+Right?
+
+81
+00:06:05,840 --> 00:06:09,440
+If we go and look at that that Twitter well it was is it this one?
+
+82
+00:06:09,440 --> 00:06:10,080
+Yeah.
+
+83
+00:06:10,080 --> 00:06:13,360
+If we go look at that tweet there what is he actually doing?
+
+84
+00:06:13,360 --> 00:06:18,080
+He's putting a reference in here with text and drawings.
+
+85
+00:06:18,080 --> 00:06:22,639
+So, I don't think it's enough to just have drawings if we really want to try to replicate this.
+
+86
+00:06:22,639 --> 00:06:27,520
+And I'm trying to think of what my team would actually use, what actual YouTubers would use,
+
+87
+00:06:27,520 --> 00:06:30,960
+and what would make it easy for them to do this without having to take a photo.
+
+88
+00:06:30,960 --> 00:06:33,840
+So, let's change up how this is going to work.
+
+89
+00:06:33,840 --> 00:06:35,680
+And, you know, cursor is going to allow us to do this.
+
+90
+00:06:35,680 --> 00:06:36,639
+It's going to be really cool.
+
+91
+00:06:36,639 --> 00:06:38,560
+You should be able to do this pretty easily in cursor.
+
+92
+00:06:38,560 --> 00:06:46,319
+So, I'm going to say allow the user to upload a photo that we can then sketch on.
+
+93
+00:06:46,319 --> 00:06:48,319
+That's what that's the next piece that we're going to do.
+
+94
+00:06:48,319 --> 00:06:53,280
+And we're going to say also we're going to say allow for typing into the photo as well.
+
+95
+00:06:53,280 --> 00:06:54,560
+Let's see if we can get that in there.
+
+96
+00:06:54,560 --> 00:06:55,520
+That would be pretty cool.
+
+97
+00:06:55,520 --> 00:07:02,319
+And then ability to export that and open up a chat GPT window and let's build that.
+
+98
+00:07:02,319 --> 00:07:04,000
+So guys, this is getting a little hacky.
+
+99
+00:07:04,000 --> 00:07:08,800
+I wish we had access to the GPT API, but we don't and we got to work with what we have.
+
+100
+00:07:08,800 --> 00:07:11,440
+So now I'm a little bit less confident about this idea.
+
+101
+00:07:11,440 --> 00:07:13,599
+But I thought about it a lot and I don't want it to stop me.
+
+102
+00:07:13,599 --> 00:07:19,680
+I want to show what it's actually like to hit a snag because a lot of people hit snags and they give up.
+
+103
+00:07:19,680 --> 00:07:22,960
+And there is no easy business idea, right?
+
+104
+00:07:22,960 --> 00:07:24,400
+It will never ever be easy.
+
+105
+00:07:24,400 --> 00:07:32,319
+I'm going to run into way more stuff like this and I want to document the actual problems that I went through so that you guys can see that this is what happens,
+
+106
+00:07:32,319 --> 00:07:32,800
+right?
+
+107
+00:07:32,800 --> 00:07:34,960
+things do not go to plan and that's okay.
+
+108
+00:07:34,960 --> 00:07:35,680
+So, let's do it.
+
+109
+00:07:35,680 --> 00:07:36,319
+All right.
+
+110
+00:07:36,319 --> 00:07:38,800
+So, right now we have this is what our thing does, right?
+
+111
+00:07:38,800 --> 00:07:41,199
+We can draw on it and this is my guy.
+
+112
+00:07:41,199 --> 00:07:46,880
+This is the most advanced AI thumbnail generator in the world which is a complete live but this is what we have so far.
+
+113
+00:07:46,880 --> 00:07:48,080
+So, it exports that.
+
+114
+00:07:48,080 --> 00:07:52,639
+So, the next thing I want to change is I want to give the ability to upload a thumbnail.
+
+115
+00:07:52,639 --> 00:07:53,440
+So, let's do that.
+
+116
+00:07:53,440 --> 00:07:54,960
+Okay, we're all loaded up here.
+
+117
+00:07:54,960 --> 00:08:00,160
+I'm going to go to Well, first thing I like to do is as you guys know, actually I think I showed in the last one,
+
+118
+00:08:00,160 --> 00:08:01,840
+where the hell are we in our codebase?
+
+119
+00:08:01,840 --> 00:08:08,319
+I'm going to search generate thumbnail and do commandshift F and I will search generate thumbnail.
+
+120
+00:08:08,319 --> 00:08:10,639
+I don't know why it's doing all that, but here.
+
+121
+00:08:10,639 --> 00:08:15,759
+Okay, so now I know I'm in here and this is where I want to start talking to my cursor and saying,
+
+122
+00:08:15,759 --> 00:08:17,199
+"Hey, let's let's do something in here."
+
+123
+00:08:17,199 --> 00:08:18,720
+And I'm going do command L.
+
+124
+00:08:18,720 --> 00:08:26,400
+And then I'm gonna say, "Hey, so I love the drawing element, but I need to take
+
+125
+00:08:26,400 --> 00:08:36,240
+it a step further and allow the user to upload a reference shot how it will work."
+
+126
+00:08:36,240 --> 00:08:40,479
+So I'm just I'm talking to it like a like a product manager, right?
+
+127
+00:08:40,479 --> 00:08:44,640
+So upload button where you upload a file.
+
+128
+00:08:44,640 --> 00:08:49,360
+Then that photo is present on the page.
+
+129
+00:08:49,360 --> 00:08:55,360
+I can draw on that photo and I can export with the drawings on top.
+
+130
+00:08:55,360 --> 00:08:58,399
+I'm going to turn on agent mode and let's see what we get.
+
+131
+00:08:58,399 --> 00:09:01,360
+I'll help you modify drawing canvas to support image uploads and draw them on top of them.
+
+132
+00:09:01,360 --> 00:09:03,519
+Okay, it's nice to be back coding, baby.
+
+133
+00:09:03,519 --> 00:09:04,720
+Look at all this it's doing.
+
+134
+00:09:04,720 --> 00:09:07,360
+Who knows if it's going to work, but isn't it just amazing?
+
+135
+00:09:07,360 --> 00:09:13,279
+And this is my shameless plug for the AI build accelerator which I will happily pull up here.
+
+136
+00:09:13,279 --> 00:09:23,040
+This is the AI build accelerator and it's part of our new product starter story build which is all about building things with AI which I think is going to change the world.
+
+137
+00:09:23,040 --> 00:09:24,560
+This shows how early it still is.
+
+138
+00:09:24,560 --> 00:09:26,320
+The APIs don't even work right.
+
+139
+00:09:26,320 --> 00:09:28,240
+The image models don't even work right.
+
+140
+00:09:28,240 --> 00:09:28,880
+This is early.
+
+141
+00:09:28,880 --> 00:09:33,440
+You learn these skills now your life will be completely changed and turned upside down.
+
+142
+00:09:33,440 --> 00:09:35,680
+I just saw we'll get into that in a second.
+
+143
+00:09:35,680 --> 00:09:36,800
+Okay.
+
+144
+00:09:36,800 --> 00:09:39,440
+Okay, so I'm on my Bernie break right now.
+
+145
+00:09:39,440 --> 00:09:48,720
+And building this app reminds me of some of the huge problems with platform risk, which is basically clearly OpenAI has this available.
+
+146
+00:09:48,720 --> 00:09:50,320
+They have it in chat GBT.
+
+147
+00:09:50,320 --> 00:09:57,040
+It can be used, but they choose not to open it up because well, all these big tech companies,
+
+148
+00:09:57,040 --> 00:10:00,160
+they aren't looking out for you.
+
+149
+00:10:00,160 --> 00:10:03,600
+At the end of the day, they will kick you off their APIs.
+
+150
+00:10:03,600 --> 00:10:09,760
+kind of kicks me in the ass to know that I got to build this quickly and I gotta try to make as much money as possible.
+
+151
+00:10:09,760 --> 00:10:12,240
+Try to make 100k through vibe coding this.
+
+152
+00:10:12,240 --> 00:10:15,120
+It's not going to last forever, but you can build fast.
+
+153
+00:10:15,120 --> 00:10:20,560
+You can ride this wave of, you know, these these AI tools and let's do this.
+
+154
+00:10:20,560 --> 00:10:22,160
+Let's build this no matter what.
+
+155
+00:10:22,160 --> 00:10:22,800
+We're not going to give up.
+
+156
+00:10:22,800 --> 00:10:23,519
+We're going to do this.
+
+157
+00:10:23,519 --> 00:10:23,920
+All right, guys.
+
+158
+00:10:23,920 --> 00:10:27,120
+Let's get back to building.
+
+159
+00:10:27,120 --> 00:10:28,880
+Let's go, Bernie.
+
+160
+00:10:28,880 --> 00:10:32,320
+I'm going to accept that and let's see if it worked.
+
+161
+00:10:32,320 --> 00:10:33,600
+Upload a reference image.
+
+162
+00:10:33,600 --> 00:10:34,560
+Okay, it's working.
+
+163
+00:10:34,560 --> 00:10:36,240
+It doesn't look too pretty, but okay.
+
+164
+00:10:36,240 --> 00:10:42,959
+Let me just get one that I like, which is going to be photo of a normal guy.
+
+165
+00:10:42,959 --> 00:10:44,000
+White background.
+
+166
+00:10:44,000 --> 00:10:44,880
+See if this comes up.
+
+167
+00:10:44,880 --> 00:10:45,600
+Okay, cool.
+
+168
+00:10:45,600 --> 00:10:46,480
+This is our guy.
+
+169
+00:10:46,480 --> 00:10:47,600
+What a loser.
+
+170
+00:10:47,600 --> 00:10:48,480
+Just kidding.
+
+171
+00:10:48,480 --> 00:10:50,399
+Okay, I'll save this.
+
+172
+00:10:50,399 --> 00:10:51,839
+Make sure it works.
+
+173
+00:10:51,839 --> 00:10:53,839
+I guess maybe.png.
+
+174
+00:10:53,839 --> 00:10:55,839
+So, let's upload normal guy.
+
+175
+00:10:55,839 --> 00:10:56,800
+Let's see what happens.
+
+176
+00:10:56,800 --> 00:10:57,519
+Nothing happened.
+
+177
+00:10:57,519 --> 00:10:58,640
+Let's see if it aired.
+
+178
+00:10:58,640 --> 00:11:00,399
+No, I wanted to actually put it on the page.
+
+179
+00:11:00,399 --> 00:11:01,680
+So, maybe that wasn't clear.
+
+180
+00:11:01,680 --> 00:11:02,959
+No, you idiot.
+
+181
+00:11:02,959 --> 00:11:03,600
+Just kidding.
+
+182
+00:11:03,600 --> 00:11:09,040
+So, I say when the page loads, you shouldn't see the sketch pad.
+
+183
+00:11:09,040 --> 00:11:12,880
+It should just be a photo to upload.
+
+184
+00:11:12,880 --> 00:11:18,800
+And then you can draw on top of that photo once uploaded.
+
+185
+00:11:18,800 --> 00:11:19,120
+Okay.
+
+186
+00:11:19,120 --> 00:11:20,800
+I don't know what it's doing, but let's see.
+
+187
+00:11:20,800 --> 00:11:22,240
+It's so cool that you can just do this.
+
+188
+00:11:22,240 --> 00:11:22,800
+Okay, here we go.
+
+189
+00:11:22,800 --> 00:11:23,920
+It's saying upload image.
+
+190
+00:11:23,920 --> 00:11:24,320
+Start drawing.
+
+191
+00:11:24,320 --> 00:11:26,000
+So, now we're going to actually upload the image.
+
+192
+00:11:26,000 --> 00:11:26,800
+Still didn't work.
+
+193
+00:11:26,800 --> 00:11:27,600
+So, let's tell it.
+
+194
+00:11:27,600 --> 00:11:29,600
+I'm not seeing an error here.
+
+195
+00:11:29,600 --> 00:11:31,279
+So, I'm looking for errors usually here.
+
+196
+00:11:31,279 --> 00:11:34,880
+When I upload, it just stays white.
+
+197
+00:11:34,880 --> 00:11:35,920
+And I might even send it.
+
+198
+00:11:35,920 --> 00:11:37,440
+Let's send it a screenshot.
+
+199
+00:11:37,440 --> 00:11:38,240
+Plug it in there.
+
+200
+00:11:38,240 --> 00:11:39,839
+It just stays white.
+
+201
+00:11:39,839 --> 00:11:43,279
+Maybe it's not uploading the photo.
+
+202
+00:11:43,279 --> 00:11:45,040
+Actually, can you fix?
+
+203
+00:11:45,040 --> 00:11:45,839
+Let's try it now.
+
+204
+00:11:45,839 --> 00:11:47,120
+I don't see the guy still.
+
+205
+00:11:47,120 --> 00:11:48,240
+See what happens if I do that.
+
+206
+00:11:48,240 --> 00:11:48,560
+Interesting.
+
+207
+00:11:48,560 --> 00:11:49,920
+It's not a white background anymore.
+
+208
+00:11:49,920 --> 00:11:50,880
+It still doesn't work.
+
+209
+00:11:50,880 --> 00:11:51,200
+Okay.
+
+210
+00:11:51,200 --> 00:11:51,600
+Save.
+
+211
+00:11:51,600 --> 00:11:52,720
+That didn't work.
+
+212
+00:11:52,720 --> 00:11:55,519
+Here is what I need you to do.
+
+213
+00:11:55,519 --> 00:12:01,040
+take the uploaded photo and put it on the page so I can draw on it.
+
+214
+00:12:01,040 --> 00:12:03,519
+Please get this to work.
+
+215
+00:12:03,519 --> 00:12:05,600
+I mean, I feel like this shouldn't be super hard to do.
+
+216
+00:12:05,600 --> 00:12:08,320
+So, maybe it needs to Yeah, rethink how it's doing it.
+
+217
+00:12:08,320 --> 00:12:12,959
+You know, part of this challenge is me not having to go in and actually look through the code,
+
+218
+00:12:12,959 --> 00:12:18,560
+which I don't know if that's going to be totally possible, but I'm going to try and when we run into issues where things don't work.
+
+219
+00:12:18,560 --> 00:12:19,279
+Upload an image.
+
+220
+00:12:19,279 --> 00:12:21,279
+It will appear on the canvas immediately.
+
+221
+00:12:21,279 --> 00:12:24,380
+Draw on top of the image.
+
+222
+00:12:24,380 --> 00:12:28,000
+[Music] There he is.
+
+223
+00:12:28,000 --> 00:12:29,360
+There's our loser guy.
+
+224
+00:12:29,360 --> 00:12:30,240
+Just kidding.
+
+225
+00:12:30,240 --> 00:12:32,480
+Okay, now I can draw on him.
+
+226
+00:12:32,480 --> 00:12:33,680
+Yeah, baby.
+
+227
+00:12:33,680 --> 00:12:35,760
+I don't know what we did exactly, but it worked.
+
+228
+00:12:35,760 --> 00:12:38,560
+Let's Let's see what happens if we generate the thumbnail.
+
+229
+00:12:38,560 --> 00:12:39,519
+That works.
+
+230
+00:12:39,519 --> 00:12:42,320
+Wow, that is kind of like half of what we need to do.
+
+231
+00:12:42,320 --> 00:12:43,120
+That is too cool.
+
+232
+00:12:43,120 --> 00:12:44,800
+Okay, how long have we been recording now?
+
+233
+00:12:44,800 --> 00:12:45,839
+About 15 minutes.
+
+234
+00:12:45,839 --> 00:12:46,720
+Not bad.
+
+235
+00:12:46,720 --> 00:12:48,720
+Okay, so we got that.
+
+236
+00:12:48,720 --> 00:12:52,000
+Wonder if I wanted to make it white, what that look like.
+
+237
+00:12:52,000 --> 00:12:52,959
+Oh, that works, too.
+
+238
+00:12:52,959 --> 00:12:54,240
+It just works.
+
+239
+00:12:54,240 --> 00:12:55,920
+I can change the brush size.
+
+240
+00:12:55,920 --> 00:12:57,760
+This is too cool.
+
+241
+00:12:57,760 --> 00:12:59,120
+Okay, this worked.
+
+242
+00:12:59,120 --> 00:13:00,639
+So, what do we want to do now?
+
+243
+00:13:00,639 --> 00:13:01,519
+So, that works.
+
+244
+00:13:01,519 --> 00:13:06,079
+The next one is let's allow for typing onto the photo as well.
+
+245
+00:13:06,079 --> 00:13:07,920
+So, this one's going to be maybe a little more complicated.
+
+246
+00:13:07,920 --> 00:13:08,399
+Let's see.
+
+247
+00:13:08,399 --> 00:13:15,279
+Okay, so the next thing I need you to do is to allow
+
+248
+00:13:15,279 --> 00:13:21,519
+for adding text to specific portions of the photo.
+
+249
+00:13:21,519 --> 00:13:30,000
+I should be able to click a button like a T and then select where I
+
+250
+00:13:30,000 --> 00:13:38,639
+want that text to be on the page and then type out what text goes on there.
+
+251
+00:13:38,639 --> 00:13:42,240
+If possible, we talked about this I think in day one or day two.
+
+252
+00:13:42,240 --> 00:13:43,120
+Use a library.
+
+253
+00:13:43,120 --> 00:13:53,040
+If possible, use a library that makes this easy because I could see it getting complicated.
+
+254
+00:13:53,040 --> 00:13:56,000
+Okay, let's see if it works cuz there's a lot of libraries out there that do this.
+
+255
+00:13:56,000 --> 00:14:01,199
+Fabricjs, which is powerful campus library makes it easy to handle interactive text objects along with features like dragging,
+
+256
+00:14:01,199 --> 00:14:02,639
+resizing, and editing the text.
+
+257
+00:14:02,639 --> 00:14:03,120
+Beautiful.
+
+258
+00:14:03,120 --> 00:14:09,040
+You know that lots of developers have been working on fabric.js and it's probably 10 times better than doing it all yourself.
+
+259
+00:14:09,040 --> 00:14:12,399
+And you don't have to do anything because AI coding will just use the library.
+
+260
+00:14:12,399 --> 00:14:16,880
+So, while that's running, so yeah, while we're waiting, you know, as we build it, things change,
+
+261
+00:14:16,880 --> 00:14:17,199
+right?
+
+262
+00:14:17,199 --> 00:14:23,839
+This is the thing about building is that you're going to run into issues or you might even realize that that wasn't the right way to build it in the first place.
+
+263
+00:14:23,839 --> 00:14:24,399
+And that's okay.
+
+264
+00:14:24,399 --> 00:14:26,320
+You don't need to know how to do everything.
+
+265
+00:14:26,320 --> 00:14:32,320
+Knowing how to make these changes, imagine if you gave this out to a developer, they don't know the product side of things.
+
+266
+00:14:32,320 --> 00:14:36,320
+They would give this back to you and it would be actually it wouldn't even if it worked,
+
+267
+00:14:36,320 --> 00:14:38,320
+it wouldn't be what the customer needed.
+
+268
+00:14:38,320 --> 00:14:41,199
+So, or it wouldn't be, you know, the right solution.
+
+269
+00:14:41,199 --> 00:14:45,600
+So, I think that's the power of being able to code, but also being able to vibe code,
+
+270
+00:14:45,600 --> 00:14:45,760
+right?
+
+271
+00:14:45,760 --> 00:14:49,279
+If you can't code, learning how to vibe code, you can make these changes yourself, which is cool.
+
+272
+00:14:49,279 --> 00:14:51,040
+All right, so I said it did a bunch of things.
+
+273
+00:14:51,040 --> 00:14:54,800
+Text mode button, text controls, fonts.
+
+274
+00:14:54,800 --> 00:14:56,480
+I doubt this is going to work, but let's try it.
+
+275
+00:14:56,480 --> 00:15:00,079
+So, I click accept, save all my files, which I think it already does that.
+
+276
+00:15:00,079 --> 00:15:01,120
+And let's see.
+
+277
+00:15:01,120 --> 00:15:04,959
+Okay, cool.
+
+278
+00:15:04,959 --> 00:15:05,560
+Whoa.
+
+279
+00:15:05,560 --> 00:15:07,519
+Okay, that's not working.
+
+280
+00:15:07,519 --> 00:15:08,800
+But that's not actually working.
+
+281
+00:15:08,800 --> 00:15:10,480
+But maybe we need to upload the file first.
+
+282
+00:15:10,480 --> 00:15:11,199
+So, let's try that.
+
+283
+00:15:11,199 --> 00:15:12,800
+And our file upload doesn't work.
+
+284
+00:15:12,800 --> 00:15:14,639
+Let's reload just in case.
+
+285
+00:15:14,639 --> 00:15:16,480
+So, I think you got to take them one by one.
+
+286
+00:15:16,480 --> 00:15:19,360
+So, I'm just telling it the file upload no longer works.
+
+287
+00:15:19,360 --> 00:15:23,440
+But let's see.
+
+288
+00:15:23,440 --> 00:15:24,720
+And that did not work.
+
+289
+00:15:24,720 --> 00:15:25,920
+That did not work.
+
+290
+00:15:25,920 --> 00:15:27,120
+Can you upload?
+
+291
+00:15:27,120 --> 00:15:35,199
+When I upload the file, it should put the image onto the canvas and I can add text to it.
+
+292
+00:15:35,199 --> 00:15:37,279
+Can you make sure that works?
+
+293
+00:15:37,279 --> 00:15:40,560
+If you need to rethink the setup, go for it.
+
+294
+00:15:40,560 --> 00:15:45,600
+Which I think that's important, too, to simplify the approach because we started with just a simple image upload,
+
+295
+00:15:45,600 --> 00:15:48,079
+but we didn't know that we needed to add text until later.
+
+296
+00:15:48,079 --> 00:15:54,560
+So, now we're making it go and add text, but sometimes you need to go and simplify and redo how you did the original thing.
+
+297
+00:15:54,560 --> 00:16:06,320
+And that is coding software engineering not 101 but that's what you have to do in software engineering is if you sometimes when you need to do something more complicated you have to go and fix the baseline of it which will save you more time in the
+
+298
+00:16:06,320 --> 00:16:08,800
+long run and have less bugs.
+
+299
+00:16:08,800 --> 00:16:13,920
+So let's see now they're changing how we handle the uploaded image which is kind of what we needed.
+
+300
+00:16:13,920 --> 00:16:17,199
+So I think that's probably going to be the issue and let's hope it's solved.
+
+301
+00:16:17,199 --> 00:16:18,079
+Still doesn't work.
+
+302
+00:16:18,079 --> 00:16:22,160
+Uploading of the image still does not work.
+
+303
+00:16:22,160 --> 00:16:24,639
+Can you troubleshoot?
+
+304
+00:16:24,639 --> 00:16:26,240
+Now we're going into troubleshoot mode.
+
+305
+00:16:26,240 --> 00:16:27,680
+Let's try to figure out what's going on.
+
+306
+00:16:27,680 --> 00:16:28,000
+Okay.
+
+307
+00:16:28,000 --> 00:16:32,399
+Basically, what it's doing is it's adding console logs to see if things are actually working.
+
+308
+00:16:32,399 --> 00:16:33,360
+So, that's good.
+
+309
+00:16:33,360 --> 00:16:34,800
+So, let's just see if it worked.
+
+310
+00:16:34,800 --> 00:16:37,839
+I don't think it will cuz it's just going to give us error logging for it.
+
+311
+00:16:37,839 --> 00:16:38,560
+That didn't work.
+
+312
+00:16:38,560 --> 00:16:41,360
+So, what we want to do is we want to rightclick and inspect.
+
+313
+00:16:41,360 --> 00:16:43,519
+And now we can see what's happening.
+
+314
+00:16:43,519 --> 00:16:46,639
+So, this is what you have to do if you're doing anything in the web.
+
+315
+00:16:46,639 --> 00:16:50,800
+So, go and upload this file and let's see what it does.
+
+316
+00:16:50,800 --> 00:16:52,639
+It's done all this here.
+
+317
+00:16:52,639 --> 00:16:53,920
+Image added to canvas.
+
+318
+00:16:53,920 --> 00:16:56,160
+And let's take that and let's paste it into here.
+
+319
+00:16:56,160 --> 00:17:00,639
+Okay, this is what it's saying in the console.
+
+320
+00:17:00,639 --> 00:17:03,279
+Let's try a different approach to loading and displaying the image.
+
+321
+00:17:03,279 --> 00:17:04,240
+Okay, let's try it.
+
+322
+00:17:04,240 --> 00:17:04,880
+Accept.
+
+323
+00:17:04,880 --> 00:17:06,400
+All right, still doesn't work.
+
+324
+00:17:06,400 --> 00:17:12,319
+Okay, now we're going to go into, I don't know, emergency mode to try and fix this and do this the right way.
+
+325
+00:17:12,319 --> 00:17:15,679
+So, I'm gonna go to ask and I'm gonna ask.
+
+326
+00:17:15,679 --> 00:17:18,720
+I'm gonna say, okay, this clearly isn't working.
+
+327
+00:17:18,720 --> 00:17:21,839
+If you were to start from scratch, how would you implement this?
+
+328
+00:17:21,839 --> 00:17:29,760
+It should first take an image upload, then take that image and put it on the
+
+329
+00:17:29,760 --> 00:17:39,600
+page, then allow for drawing and adding text and doing all sorts of things with
+
+330
+00:17:39,600 --> 00:17:40,720
+the image.
+
+331
+00:17:40,720 --> 00:17:47,200
+Maybe use best practice libraries because and not try to hack it all together.
+
+332
+00:17:47,200 --> 00:17:54,720
+So, and we are asking it instead of doing it in agent mode because I want to see if it's Here we go.
+
+333
+00:17:54,720 --> 00:18:01,679
+Let me suggest a fresh approach using conv.js which is a more robust library specifically designed for this kind of image manipulation.
+
+334
+00:18:01,679 --> 00:18:04,960
+It's widely used and has better support for image handling, drawing, blah blah blah blah blah.
+
+335
+00:18:04,960 --> 00:18:06,320
+Here's how I'd rebuild it.
+
+336
+00:18:06,320 --> 00:18:07,120
+But this is what it's doing.
+
+337
+00:18:07,120 --> 00:18:09,120
+It's using conv.js.
+
+338
+00:18:09,120 --> 00:18:12,559
+Has a cleaner workflow, provides better features, has a more organized UI.
+
+339
+00:18:12,559 --> 00:18:13,760
+So, I'm going to switch it to age mode.
+
+340
+00:18:13,760 --> 00:18:15,919
+I'm going to say that sounds great.
+
+341
+00:18:15,919 --> 00:18:18,080
+Can you implement that?
+
+342
+00:18:18,080 --> 00:18:20,000
+How amazing is this?
+
+343
+00:18:20,000 --> 00:18:24,559
+Like I think you know you can look at this and be like, "Wow, this is actually really hard."
+
+344
+00:18:24,559 --> 00:18:29,919
+But you or if if you're watching this and you're not you haven't been a software engineer for many years,
+
+345
+00:18:29,919 --> 00:18:38,640
+you know that this sort of stuff is like you could spend days if not weeks working on some of this stuff and it's just doing it all for you.
+
+346
+00:18:38,640 --> 00:18:43,679
+And like, yeah, it's not going to be perfect and it's still super super early, but man,
+
+347
+00:18:43,679 --> 00:18:47,440
+it just kind of blows my mind that you can do this with these tools.
+
+348
+00:18:47,440 --> 00:18:48,559
+And it's taking some time.
+
+349
+00:18:48,559 --> 00:18:49,440
+Let's see what happens.
+
+350
+00:18:49,440 --> 00:18:50,400
+Well, that's loading.
+
+351
+00:18:50,400 --> 00:18:52,559
+What's cool is also is Oh, here we go.
+
+352
+00:18:52,559 --> 00:18:54,160
+Accept all files.
+
+353
+00:18:54,160 --> 00:18:55,679
+Let's go reload and see what happens.
+
+354
+00:18:55,679 --> 00:18:58,000
+I doubt this is going to work, but let's try it.
+
+355
+00:18:58,000 --> 00:18:59,760
+Oh my god, that actually worked.
+
+356
+00:18:59,760 --> 00:19:00,480
+There.
+
+357
+00:19:00,480 --> 00:19:01,679
+Now, I want to draw.
+
+358
+00:19:01,679 --> 00:19:04,799
+Oh my god, look at this.
+
+359
+00:19:04,799 --> 00:19:09,039
+Okay, there's definitely some things we want to fix, but Okay, let's see if it actually the generate work.
+
+360
+00:19:09,039 --> 00:19:10,640
+I doubt this will work, but let's try it.
+
+361
+00:19:10,640 --> 00:19:12,320
+You're kidding me.
+
+362
+00:19:12,320 --> 00:19:13,520
+It works.
+
+363
+00:19:13,520 --> 00:19:14,559
+It works, guys.
+
+364
+00:19:14,559 --> 00:19:19,440
+I I just learned something here, which is tell cursor to start over sometimes.
+
+365
+00:19:19,440 --> 00:19:21,520
+Yo, bro, start over.
+
+366
+00:19:21,520 --> 00:19:26,480
+Take a chill pill and relax and start over because my guess is that was even less code.
+
+367
+00:19:26,480 --> 00:19:30,559
+I mean, let's go to this is all the code here and it's really not that bad.
+
+368
+00:19:30,559 --> 00:19:31,520
+300 lines of code.
+
+369
+00:19:31,520 --> 00:19:34,720
+It's not great, but it's just a lot of JavaScript that is running here.
+
+370
+00:19:34,720 --> 00:19:36,320
+So, wow, guys.
+
+371
+00:19:36,320 --> 00:19:39,840
+Okay, there's a few things that I want to fix, but this is pretty good.
+
+372
+00:19:39,840 --> 00:19:40,640
+What does this do?
+
+373
+00:19:40,640 --> 00:19:41,039
+Select.
+
+374
+00:19:41,039 --> 00:19:43,919
+Oh, and you can move stuff around.
+
+375
+00:19:43,919 --> 00:19:45,520
+Oh my lordy, dude.
+
+376
+00:19:45,520 --> 00:19:46,559
+This is basically done.
+
+377
+00:19:46,559 --> 00:19:47,840
+Exporting works.
+
+378
+00:19:47,840 --> 00:19:49,840
+Now, we just need to put this into chat GBT.
+
+379
+00:19:49,840 --> 00:19:54,960
+Okay, let's actually use our product how we would use it if I was trying to do a thumbnail.
+
+380
+00:19:54,960 --> 00:19:55,760
+So, let's reload.
+
+381
+00:19:55,760 --> 00:19:58,080
+We're going to choose the file, our normal guy.
+
+382
+00:19:58,080 --> 00:19:59,200
+And what do we want to do?
+
+383
+00:19:59,200 --> 00:20:01,760
+What I want him to do is let's make it in the mountains.
+
+384
+00:20:01,760 --> 00:20:03,360
+Let's make him a backpacker in the mountains.
+
+385
+00:20:03,360 --> 00:20:04,480
+So, we're going to draw.
+
+386
+00:20:04,480 --> 00:20:05,039
+Okay.
+
+387
+00:20:05,039 --> 00:20:06,720
+Then we're going to add some text.
+
+388
+00:20:06,720 --> 00:20:08,720
+This is what you do when you're like working on thumbnails.
+
+389
+00:20:08,720 --> 00:20:12,640
+It's like, okay, I'm going to say he should have a backpack.
+
+390
+00:20:12,640 --> 00:20:15,200
+Guys, I'm getting excited about this business idea now.
+
+391
+00:20:15,200 --> 00:20:16,799
+He should have a backpack on.
+
+392
+00:20:16,799 --> 00:20:17,200
+Whoops.
+
+393
+00:20:17,200 --> 00:20:19,280
+It's not great, but that doesn't work very well.
+
+394
+00:20:19,280 --> 00:20:20,720
+He should have a backpack on.
+
+395
+00:20:20,720 --> 00:20:22,640
+And I'm going to put that in two different lines.
+
+396
+00:20:22,640 --> 00:20:23,520
+That works, too.
+
+397
+00:20:23,520 --> 00:20:23,840
+Okay.
+
+398
+00:20:23,840 --> 00:20:25,280
+He should have a backpack on.
+
+399
+00:20:25,280 --> 00:20:28,720
+And I'm going to draw Oh my god, that doesn't Okay, just put this over here.
+
+400
+00:20:28,720 --> 00:20:29,440
+draw.
+
+401
+00:20:29,440 --> 00:20:31,039
+This actually kind of works.
+
+402
+00:20:31,039 --> 00:20:34,240
+Put a campfire right here.
+
+403
+00:20:34,240 --> 00:20:35,840
+Yeah, I can't like edit each one.
+
+404
+00:20:35,840 --> 00:20:38,720
+That's fine as long as I draw this here.
+
+405
+00:20:38,720 --> 00:20:40,960
+Okay, I'm going to say put a UFO right here.
+
+406
+00:20:40,960 --> 00:20:42,880
+Okay, let's try text.
+
+407
+00:20:42,880 --> 00:20:44,799
+Okay, we're going to go in chat GPT now.
+
+408
+00:20:44,799 --> 00:20:47,039
+And we're going to give it a prompt.
+
+409
+00:20:47,039 --> 00:20:51,120
+And let's try our downloads of prompts, which is this one, which is here.
+
+410
+00:20:51,120 --> 00:20:59,840
+And this is going to be I want you to generate a YouTube thumbnail based on this sketch and reference.
+
+411
+00:20:59,840 --> 00:21:04,880
+Please review the text and create a compelling thumbnail.
+
+412
+00:21:04,880 --> 00:21:07,600
+Maybe I I'll give it some details cuz that wasn't necessarily there.
+
+413
+00:21:07,600 --> 00:21:14,159
+This guy is a backpacker who went backpacking in the mountains for a year.
+
+414
+00:21:14,159 --> 00:21:15,120
+Let's see what I can do.
+
+415
+00:21:15,120 --> 00:21:21,760
+If you want to build dope it's very important to take breaks and reset.
+
+416
+00:21:21,760 --> 00:21:33,400
+So, I'm going to head out and go see my [Music]
+
+417
+00:21:33,400 --> 00:21:34,400
+therapist.
+
+418
+00:21:34,400 --> 00:21:36,720
+So, I just finished playing uh some tennis here.
+
+419
+00:21:36,720 --> 00:21:39,840
+As you can see, I got the rackets sweating like crazy.
+
+420
+00:21:39,840 --> 00:21:46,559
+But, it just got me thinking, you know, about the challenge and the obstacle that I ran into today.
+
+421
+00:21:46,559 --> 00:21:51,760
+I guess in previous businesses that I've started, there's been times where I ran into these sort of challenges and I just gave up.
+
+422
+00:21:51,760 --> 00:21:57,760
+And there have also been other businesses I've started in where I ran into these challenges and it kept going.
+
+423
+00:21:57,760 --> 00:22:02,880
+And I think there is no business that you can start where you won't run into these this sort of challenge.
+
+424
+00:22:02,880 --> 00:22:07,440
+And there's a lot of people online that try to sell you, hey, you can start this business and it's easy.
+
+425
+00:22:07,440 --> 00:22:15,039
+But guarantee you that anybody who starts a business goes through some sort of obstacle,
+
+426
+00:22:15,039 --> 00:22:17,600
+probably a hundred obstacles like this.
+
+427
+00:22:17,600 --> 00:22:24,240
+And your job and what you have to do is you have to come up with creative, often suboptimal solutions.
+
+428
+00:22:24,240 --> 00:22:25,039
+Right?
+
+429
+00:22:25,039 --> 00:22:33,520
+The solution that I'm coming up with now is so ridiculous that people watching this right now might probably think that I shouldn't even be building it anymore.
+
+430
+00:22:33,520 --> 00:22:34,480
+right now.
+
+431
+00:22:34,480 --> 00:22:45,679
+Basically, I have to either have the user go to chat GBT with my prompt or do some smokec screen on the back end where I have a freelancer or even myself do the prompts myself,
+
+432
+00:22:45,679 --> 00:22:46,159
+right?
+
+433
+00:22:46,159 --> 00:22:51,840
+It's obviously not optimal, but at least the focus is still on the end product, right?
+
+434
+00:22:51,840 --> 00:22:58,720
+If I can make a good thumbnail for people who are actually creating YouTube videos and that can help them increase their views or whatever it is,
+
+435
+00:22:58,720 --> 00:22:59,760
+then I can win.
+
+436
+00:22:59,760 --> 00:23:06,880
+And it's just a matter of time before OpenAI opens up their API for that and then I can hot swap it out,
+
+437
+00:23:06,880 --> 00:23:07,200
+right?
+
+438
+00:23:07,200 --> 00:23:12,159
+I have to go through the pain of that solution and basically wait it out.
+
+439
+00:23:12,159 --> 00:23:16,080
+There's a lot of people who are probably starting something similar that aren't willing to wait it out.
+
+440
+00:23:16,080 --> 00:23:18,880
+And what I love about this challenge is I'm forced to do it.
+
+441
+00:23:18,880 --> 00:23:24,159
+If I didn't have this challenge right now, I you guys weren't watching me and I wasn't documenting all this.
+
+442
+00:23:24,159 --> 00:23:29,679
+Then I would probably give up on this idea because the solution is almost embarrassing.
+
+443
+00:23:29,679 --> 00:23:31,679
+Be I'm going have to live with people being like, "What the?"
+
+444
+00:23:31,679 --> 00:23:33,039
+But that is the obstacle.
+
+445
+00:23:33,039 --> 00:23:35,039
+This is my solution and I have to live with it.
+
+446
+00:23:35,039 --> 00:23:37,039
+It was it was nice coming out here playing some tennis.
+
+447
+00:23:37,039 --> 00:23:46,480
+I was thinking about that a lot and now I'm ready to get back and go build a little bit [Music] more.
+
+448
+00:23:46,480 --> 00:23:47,840
+But the prompt is important.
+
+449
+00:23:47,840 --> 00:23:51,280
+I mean, obviously you could go and just do this in like Canva or something like that,
+
+450
+00:23:51,280 --> 00:24:00,960
+but I think where we're going to win, and there's potential here is we're going to have custom prompts that will make better YouTube thumbnails probably.
+
+451
+00:24:00,960 --> 00:24:05,919
+It's obviously just easy to use because you just get in there, do it, and then export it.
+
+452
+00:24:05,919 --> 00:24:09,760
+Maybe we'll have some like examples that people can use, too.
+
+453
+00:24:09,760 --> 00:24:12,480
+So, yeah, let's just see if this works.
+
+454
+00:24:12,480 --> 00:24:16,320
+Then once it does, what I want to do is Interesting.
+
+455
+00:24:16,320 --> 00:24:18,400
+So, there's a few things that it didn't do.
+
+456
+00:24:18,400 --> 00:24:22,159
+It's interesting that it kept it's not perfect, but it's pretty good, right?
+
+457
+00:24:22,159 --> 00:24:27,919
+Like, I think with the prompt, we can fix a lot of these things, but it added the backpack to him.
+
+458
+00:24:27,919 --> 00:24:33,039
+It's got the campfire, but we probably need to say that, hey, you this should look hyper realistic,
+
+459
+00:24:33,039 --> 00:24:33,360
+right?
+
+460
+00:24:33,360 --> 00:24:36,400
+I just need to be more specific about the thumbnail stuff.
+
+461
+00:24:36,400 --> 00:24:38,159
+But I think that's pretty cool.
+
+462
+00:24:38,159 --> 00:24:41,039
+I mean, the backpack is probably the coolest part for me.
+
+463
+00:24:41,039 --> 00:24:42,640
+The that thing needs to be fixed.
+
+464
+00:24:42,640 --> 00:24:45,200
+And obviously, like, why is it keeping the drawing there?
+
+465
+00:24:45,200 --> 00:24:46,159
+wise adding the text.
+
+466
+00:24:46,159 --> 00:24:48,240
+We didn't say to keep the text.
+
+467
+00:24:48,240 --> 00:24:50,720
+We can fix all the prompting stuff and all that stuff.
+
+468
+00:24:50,720 --> 00:24:53,120
+But let's try to create let's create the custom GBT too.
+
+469
+00:24:53,120 --> 00:24:54,480
+I want to make sure that we do this.
+
+470
+00:24:54,480 --> 00:24:57,919
+So explore GBTs create.
+
+471
+00:24:57,919 --> 00:25:04,559
+You should use this is what you got what you have to use until open AI opens up their API.
+
+472
+00:25:04,559 --> 00:25:05,120
+Okay.
+
+473
+00:25:05,120 --> 00:25:06,559
+Here's instructions.
+
+474
+00:25:06,559 --> 00:25:07,679
+What's how does it behave?
+
+475
+00:25:07,679 --> 00:25:07,919
+Okay.
+
+476
+00:25:07,919 --> 00:25:08,480
+Generate.
+
+477
+00:25:08,480 --> 00:25:10,400
+Your job is to generate thumbnails.
+
+478
+00:25:10,400 --> 00:25:21,760
+You will be handed a reference thumbnail which has a real photo with sketches on top of the things
+
+479
+00:25:21,760 --> 00:25:24,480
+you should add or change.
+
+480
+00:25:24,480 --> 00:25:32,000
+I'm going to say do not add text to the thumbnail unless instructed to do so.
+
+481
+00:25:32,000 --> 00:25:36,720
+Your thumbnails should be hyper realistic.
+
+482
+00:25:36,720 --> 00:25:39,200
+Convert sketches to real.
+
+483
+00:25:39,200 --> 00:25:44,400
+This photo contains I'll say this reference photo contains drawings.
+
+484
+00:25:44,400 --> 00:25:50,000
+So be sure to convert those to a real looking photo and a prompt.
+
+485
+00:25:50,000 --> 00:25:53,600
+You be handed you will also get a prompt with more details.
+
+486
+00:25:53,600 --> 00:25:54,480
+Okay, let's try that.
+
+487
+00:25:54,480 --> 00:25:57,360
+Dolly image generation code blah blah blah blah blah.
+
+488
+00:25:57,360 --> 00:25:58,080
+Seems good to me.
+
+489
+00:25:58,080 --> 00:25:59,039
+Authentication.
+
+490
+00:25:59,039 --> 00:26:00,080
+I don't know what that is.
+
+491
+00:26:00,080 --> 00:26:00,960
+Create only me.
+
+492
+00:26:00,960 --> 00:26:01,840
+Anyone with the link.
+
+493
+00:26:01,840 --> 00:26:02,720
+Okay, we're going to do that.
+
+494
+00:26:02,720 --> 00:26:04,240
+Okay, this is our GPT now.
+
+495
+00:26:04,240 --> 00:26:06,400
+Okay, let's try that same thing that we did here.
+
+496
+00:26:06,400 --> 00:26:08,400
+The prompt that we had the last time.
+
+497
+00:26:08,400 --> 00:26:09,600
+Let's see what it does now.
+
+498
+00:26:09,600 --> 00:26:09,840
+Okay.
+
+499
+00:26:09,840 --> 00:26:13,679
+And while that's going, let's let's go and edit more of what we want this to do.
+
+500
+00:26:13,679 --> 00:26:18,240
+So, what does this currently do now that we need to change?
+
+501
+00:26:18,240 --> 00:26:22,320
+Yeah, we just tell it once the thumbnail is generated.
+
+502
+00:26:22,320 --> 00:26:30,159
+Technically, once the user clicks generate thumbnail, then you should pull up instructions.
+
+503
+00:26:30,159 --> 00:26:41,520
+These instructions should one let the user know we are waiting on chat open AAI to update their APIs and doing things this way will
+
+504
+00:26:41,520 --> 00:26:44,960
+allow for the best thumbnail possible.
+
+505
+00:26:44,960 --> 00:26:48,880
+Number two, write down the actual instructions.
+
+506
+00:26:48,880 --> 00:26:54,080
+And one another thing that I want to look up in a second, which is to copy the image and copy the prompt,
+
+507
+00:26:54,080 --> 00:27:05,360
+and then open this link in a new tab to our custom GBT, which has been trained on YouTube thumbnails,
+
+508
+00:27:05,360 --> 00:27:08,720
+which it is technically very, very light right now, but we'll add more to that.
+
+509
+00:27:08,720 --> 00:27:10,080
+So, okay, let's have it do that.
+
+510
+00:27:10,080 --> 00:27:12,720
+All right, going back to our GPT.
+
+511
+00:27:12,720 --> 00:27:16,240
+Okay, it's not bad, but it's not really what we wanted.
+
+512
+00:27:16,240 --> 00:27:17,440
+So, why is it giving us?
+
+513
+00:27:17,440 --> 00:27:20,640
+Here's a breakdown of the changes I'll incorporate in your thumbnail reference summary.
+
+514
+00:27:20,640 --> 00:27:23,760
+The base image is made in blue shirt following sketch annotations modes in the background.
+
+515
+00:27:23,760 --> 00:27:26,159
+UFO in the sky made with the old version.
+
+516
+00:27:26,159 --> 00:27:28,159
+New images coming soon.
+
+517
+00:27:28,159 --> 00:27:29,440
+So, it doesn't even let you.
+
+518
+00:27:29,440 --> 00:27:35,279
+God, this opening thing is so annoying because they really want people to use their thing until,
+
+519
+00:27:35,279 --> 00:27:39,520
+you know, they could open it to the API, but they don't want I think they just they want to wait.
+
+520
+00:27:39,520 --> 00:27:40,000
+Yeah.
+
+521
+00:27:40,000 --> 00:27:44,320
+So, unfortunately, we're going to have to just give people a prompt for them to use.
+
+522
+00:27:44,320 --> 00:27:46,480
+So, we'll see what this did, but let's see here.
+
+523
+00:27:46,480 --> 00:27:48,960
+Basically, what I want to get to a point is where we just have good thumbnails.
+
+524
+00:27:48,960 --> 00:27:52,159
+If we have good thumbnails, I think people could still potentially pay for this.
+
+525
+00:27:52,159 --> 00:27:53,760
+But again, this is just getting hacky.
+
+526
+00:27:53,760 --> 00:27:55,360
+Don't love this, but let's try it.
+
+527
+00:27:55,360 --> 00:27:56,960
+So, we got that.
+
+528
+00:27:56,960 --> 00:27:58,559
+Again, let's copy Whoops.
+
+529
+00:27:58,559 --> 00:27:59,840
+Copy this image.
+
+530
+00:27:59,840 --> 00:28:05,279
+And let's go back to our GPT and copy that prompt cuz I want to make sure that that prompt Yeah,
+
+531
+00:28:05,279 --> 00:28:06,559
+I want to add one more thing.
+
+532
+00:28:06,559 --> 00:28:10,080
+And I'll say when the instructions Oh, they did a modal.
+
+533
+00:28:10,080 --> 00:28:12,480
+So, let's just go and take a look at it because I think that's cool.
+
+534
+00:28:12,480 --> 00:28:14,640
+They actually did something smart that I didn't even ask for.
+
+535
+00:28:14,640 --> 00:28:15,840
+This is here.
+
+536
+00:28:15,840 --> 00:28:18,080
+And I'm going to add a little sun right here.
+
+537
+00:28:18,080 --> 00:28:21,039
+Let's draw a little sun just to show that it works.
+
+538
+00:28:21,039 --> 00:28:22,000
+Okay, here we go.
+
+539
+00:28:22,000 --> 00:28:23,039
+Next steps for your thumbnail.
+
+540
+00:28:23,039 --> 00:28:25,760
+We're currently waiting on OpenAI to update their APIs.
+
+541
+00:28:25,760 --> 00:28:26,320
+This is good.
+
+542
+00:28:26,320 --> 00:28:27,360
+Copy your edit image.
+
+543
+00:28:27,360 --> 00:28:27,919
+Rightclick.
+
+544
+00:28:27,919 --> 00:28:28,720
+Copy image.
+
+545
+00:28:28,720 --> 00:28:29,760
+Copy your thumbnail.
+
+546
+00:28:29,760 --> 00:28:31,440
+Copy this thumbnail prompt.
+
+547
+00:28:31,440 --> 00:28:35,279
+Click here to open our custom GPT.
+
+548
+00:28:35,279 --> 00:28:36,720
+Paste your image and prompt in the chat.
+
+549
+00:28:36,720 --> 00:28:39,600
+Our will analyze your image and provide the perfect thumbnail.
+
+550
+00:28:39,600 --> 00:28:42,799
+Okay, this is actually pretty good, but we're have to change a couple things.
+
+551
+00:28:42,799 --> 00:28:44,320
+So, this is what we're going to change.
+
+552
+00:28:44,320 --> 00:28:51,520
+We're going to say, okay, I love that instructions manual, but need to change a couple things.
+
+553
+00:28:51,520 --> 00:29:00,480
+The first one is, please add the downloaded image to the modal so it can be easily copied.
+
+554
+00:29:00,480 --> 00:29:01,200
+It's not doing that.
+
+555
+00:29:01,200 --> 00:29:02,480
+I don't know why it didn't do that, but yeah.
+
+556
+00:29:02,480 --> 00:29:13,120
+Then add the prompt which should be pulled from a file that I can update regularly because I want the prompt to
+
+557
+00:29:13,120 --> 00:29:13,840
+be epic.
+
+558
+00:29:13,840 --> 00:29:24,480
+Going to say change the language to be from custom GPT because that's not going to work and instead talk about how epic our prompt is.
+
+559
+00:29:24,480 --> 00:29:26,799
+Okay, we're going to get a thumbnail prompt.
+
+560
+00:29:26,799 --> 00:29:32,799
+Okay, it just did the prompt for us anyways, but I'm going to have it do one thing, which is to put the prompt in in a file.
+
+561
+00:29:32,799 --> 00:29:34,559
+I guess it already did that, so let's just try it.
+
+562
+00:29:34,559 --> 00:29:36,399
+Okay, I made I took all the changes in there.
+
+563
+00:29:36,399 --> 00:29:39,360
+Let's upload again and try it.
+
+564
+00:29:39,360 --> 00:29:40,080
+Nice.
+
+565
+00:29:40,080 --> 00:29:41,039
+That looks pretty good.
+
+566
+00:29:41,039 --> 00:29:42,000
+Instructions.
+
+567
+00:29:42,000 --> 00:29:46,240
+Rightclick image and we can copy the image as well.
+
+568
+00:29:46,240 --> 00:29:50,399
+Okay, let's go plug that into chat GPT, not new project.
+
+569
+00:29:50,399 --> 00:29:52,960
+We're gonna copy it, which we did.
+
+570
+00:29:52,960 --> 00:29:57,440
+And we are going to to copy the prompt with a click.
+
+571
+00:29:57,440 --> 00:29:58,799
+Have that go while I'm going.
+
+572
+00:29:58,799 --> 00:30:00,559
+It's cool how it can do it in the background, right?
+
+573
+00:30:00,559 --> 00:30:00,880
+Okay.
+
+574
+00:30:00,880 --> 00:30:06,880
+This isn't actually the prompt I want, but it is like I will update this prompt to be better as I test it out with a bunch of things.
+
+575
+00:30:06,880 --> 00:30:07,360
+Okay, cool.
+
+576
+00:30:07,360 --> 00:30:08,320
+So, that's working.
+
+577
+00:30:08,320 --> 00:30:09,200
+Let's go back.
+
+578
+00:30:09,200 --> 00:30:09,840
+It takes a while.
+
+579
+00:30:09,840 --> 00:30:13,039
+So, we're going to go back and add the other thing.
+
+580
+00:30:13,039 --> 00:30:24,960
+Can you add the prompt to a markdown file that I can easily edit and then pull from that down
+
+581
+00:30:24,960 --> 00:30:25,600
+file?
+
+582
+00:30:25,600 --> 00:30:27,919
+Oh, and oh, I wanted to do one more thing, too.
+
+583
+00:30:27,919 --> 00:30:32,480
+But let's do this first because there's also going to be custom stuff that you want the thing to do as well.
+
+584
+00:30:32,480 --> 00:30:40,080
+Like if you have a YouTube thumbnail and you want his shirt to be green or something like that or something that you didn't write in the thing,
+
+585
+00:30:40,080 --> 00:30:41,679
+you can also add that as well.
+
+586
+00:30:41,679 --> 00:30:42,320
+That's working.
+
+587
+00:30:42,320 --> 00:30:43,039
+That's pretty cool.
+
+588
+00:30:43,039 --> 00:30:43,760
+It does that.
+
+589
+00:30:43,760 --> 00:30:46,240
+I mean, it's not what I want, but it's getting closer.
+
+590
+00:30:46,240 --> 00:30:47,760
+Okay, I made the following changes.
+
+591
+00:30:47,760 --> 00:30:49,200
+Thumbnailprompt MD.
+
+592
+00:30:49,200 --> 00:30:50,960
+So, now I have thumbnail prompt.
+
+593
+00:30:50,960 --> 00:30:52,559
+MD, and I can make those changes to here.
+
+594
+00:30:52,559 --> 00:30:58,080
+So, anytime I want to like improve that, I can make them there and then it'll go into the actual app.
+
+595
+00:30:58,080 --> 00:31:02,399
+Okay, the other thing that I wanted to do is, okay, new feature I want you to add.
+
+596
+00:31:02,399 --> 00:31:07,679
+And guys, I'm going to update this prompt later, maybe in a future video, because that would be boring.
+
+597
+00:31:07,679 --> 00:31:09,919
+But basically, that's just going to require a lot of testing.
+
+598
+00:31:09,919 --> 00:31:14,320
+I'm going to keep testing, testing, testing, testing with my own actual thumbnails and see if I can do it.
+
+599
+00:31:14,320 --> 00:31:19,360
+But I do want to add one more thing, which is an additional details prompt.
+
+600
+00:31:19,360 --> 00:31:23,360
+So on the page, I want there to be a a text box that says like additional details.
+
+601
+00:31:23,360 --> 00:31:32,159
+That's going to get pasted into the prompt where the user can write a few more details about the thumbnail and what they need.
+
+602
+00:31:32,159 --> 00:31:37,919
+These details should be pulled into the prompt for pasting.
+
+603
+00:31:37,919 --> 00:31:40,720
+We are getting to the point where this is basically going to work.
+
+604
+00:31:40,720 --> 00:31:42,480
+I have to do a bunch of testing on this.
+
+605
+00:31:42,480 --> 00:31:46,640
+I'm going to test it with my own thumbnails and try things and continue to update this prompt.
+
+606
+00:31:46,640 --> 00:31:52,320
+You know, there's some things I don't like about this where it's like it's putting text on the page when I wouldn't want that.
+
+607
+00:31:52,320 --> 00:31:56,559
+So, I'll maybe add things to the prompt that says don't do that.
+
+608
+00:31:56,559 --> 00:31:58,000
+But, we'll do that later.
+
+609
+00:31:58,000 --> 00:31:59,200
+So, I made these changes.
+
+610
+00:31:59,200 --> 00:32:01,039
+Let's accept those changes and let's see what happens.
+
+611
+00:32:01,039 --> 00:32:08,880
+Okay, we're going to choose our file, upload our cool guy there, and maybe add text here that says put a raccoon here.
+
+612
+00:32:08,880 --> 00:32:11,440
+Just I don't know why I thought about that, but let's try it.
+
+613
+00:32:11,440 --> 00:32:12,640
+Let's take this off the page.
+
+614
+00:32:12,640 --> 00:32:13,919
+All right, additional details.
+
+615
+00:32:13,919 --> 00:32:18,080
+I would like this to be actually shorter, and those are small things that I'll do, but copy your edited image.
+
+616
+00:32:18,080 --> 00:32:19,760
+Right click and select copy image.
+
+617
+00:32:19,760 --> 00:32:21,360
+So, copy image.
+
+618
+00:32:21,360 --> 00:32:23,360
+Click here to open chat GPT.
+
+619
+00:32:23,360 --> 00:32:24,240
+And I'll paste it in.
+
+620
+00:32:24,240 --> 00:32:24,880
+Let's try this.
+
+621
+00:32:24,880 --> 00:32:27,840
+And this is where we're going to stop, guys, once we do this.
+
+622
+00:32:27,840 --> 00:32:29,919
+It's not ideal, but it's something.
+
+623
+00:32:29,919 --> 00:32:39,600
+And if this can help people create better thumbnails, we can hopefully go and actually once open AAI comes out with our model through the API,
+
+624
+00:32:39,600 --> 00:32:42,080
+we can easily do this because we already have the prompts.
+
+625
+00:32:42,080 --> 00:32:44,799
+We already have everything ready to go and then we just do a hot swap, right?
+
+626
+00:32:44,799 --> 00:32:48,960
+We just swap it right out and now the user doesn't have to go and paste it in.
+
+627
+00:32:48,960 --> 00:32:50,640
+But this is still like huge.
+
+628
+00:32:50,640 --> 00:32:51,039
+Okay.
+
+629
+00:32:51,039 --> 00:32:53,120
+So, while that's loading, but the raccoon.
+
+630
+00:32:53,120 --> 00:32:53,840
+Oh my gosh.
+
+631
+00:32:53,840 --> 00:33:01,120
+Wouldn't it be cool if also you could like train it on your existing thumbnails so that it would copy your style that you already have,
+
+632
+00:33:01,120 --> 00:33:05,279
+but that would be maybe more useful for Okay, we put it put him in a red shirt.
+
+633
+00:33:05,279 --> 00:33:06,880
+It put a raccoon there.
+
+634
+00:33:06,880 --> 00:33:09,120
+Must see the little YouTube logo.
+
+635
+00:33:09,120 --> 00:33:11,039
+I don't know why it puts the YouTube logo there twice.
+
+636
+00:33:11,039 --> 00:33:12,399
+Maybe it's asking for that.
+
+637
+00:33:12,399 --> 00:33:16,080
+Yeah, it asks for large readable text, so I get it.
+
+638
+00:33:16,080 --> 00:33:17,519
+Okay, that's it, guys.
+
+639
+00:33:17,519 --> 00:33:17,840
+Look, man.
+
+640
+00:33:17,840 --> 00:33:20,880
+And I don't know if this is going to make money, but this is we're getting closer.
+
+641
+00:33:20,880 --> 00:33:28,320
+So, what we're going to do next time is we are going to well, let's actually push this up to our thing,
+
+642
+00:33:28,320 --> 00:33:30,399
+which is I'm going to ask it, right?
+
+643
+00:33:30,399 --> 00:33:36,559
+Can you commit this to get and push it up to server?
+
+644
+00:33:36,559 --> 00:33:38,000
+Okay, cuz I'm not going to write any code.
+
+645
+00:33:38,000 --> 00:33:40,799
+Okay, I'm just doing whatever it wants me to do.
+
+646
+00:33:40,799 --> 00:33:43,200
+Okay, it's deploying it up to our server.
+
+647
+00:33:43,200 --> 00:33:46,799
+So, in about 1 minute, we're going to be able to see this on our server.
+
+648
+00:33:46,799 --> 00:33:48,320
+And let's wait for that to finish.
+
+649
+00:33:48,320 --> 00:33:50,640
+And it should be on this link right here.
+
+650
+00:33:50,640 --> 00:33:52,000
+Doing that annoying thing here.
+
+651
+00:33:52,000 --> 00:33:53,760
+But let's just copy this.
+
+652
+00:33:53,760 --> 00:33:55,120
+Okay, this theoretically works.
+
+653
+00:33:55,120 --> 00:33:59,840
+Let's try it with our guy and draw some things on here and generate the thumbnail.
+
+654
+00:33:59,840 --> 00:34:00,480
+This is live.
+
+655
+00:34:00,480 --> 00:34:04,000
+You know, we'll put a domain on this thumbnailsmaker.com.
+
+656
+00:34:04,000 --> 00:34:05,120
+But we're getting closer, right?
+
+657
+00:34:05,120 --> 00:34:07,120
+This is the MVP, right guys?
+
+658
+00:34:07,120 --> 00:34:09,919
+If people like this, then maybe there's more.
+
+659
+00:34:09,919 --> 00:34:12,960
+We wait for Chad GBT to add their API.
+
+660
+00:34:12,960 --> 00:34:15,599
+And if people don't like it, then we just move on.
+
+661
+00:34:15,599 --> 00:34:16,879
+We're going to find another way to make money.
+
+662
+00:34:16,879 --> 00:34:18,320
+Five coding tools and cursor.
+
+663
+00:34:18,320 --> 00:34:24,079
+So, what we're going to do tomorrow, hopefully I'll have a few changes to the prompt so things are actually working.
+
+664
+00:34:24,079 --> 00:34:27,040
+And then we are going to set up our domain.
+
+665
+00:34:27,040 --> 00:34:32,320
+We're going to set up payments and I think it'll be pretty much ready to go at that point.
+
+666
+00:34:32,320 --> 00:34:40,480
+We'll probably do some light design stuff and get things working, do some testing and make sure we're lined up on security and and that sort of thing.
+
+667
+00:34:40,480 --> 00:34:41,760
+But that's pretty much it.
+
+668
+00:34:41,760 --> 00:34:42,480
+Thank you for watching.
+
+669
+00:34:42,480 --> 00:34:44,159
+This has been day three of vibe coding.
+
+670
+00:34:44,159 --> 00:34:48,560
+We are going through the the ringer to figure out how to make money through vi coding.
+
+671
+00:34:48,560 --> 00:34:50,000
+I hope you guys are enjoying this.
+
+672
+00:34:50,000 --> 00:34:54,720
+I know I got a little bit in the weeds today, but uh stay tuned and we're going to find something.
+
+673
+00:34:54,720 --> 00:34:55,359
+I promise.
+
+674
+00:34:55,359 --> 00:34:57,599
+I promise to document everything on here.
+
+675
+00:34:57,599 --> 00:35:00,800
+And please check out the AI build accelerator, the lovable boot camp.
+
+676
+00:35:00,800 --> 00:35:01,920
+I think you guys will love that.
+
+677
+00:35:01,920 --> 00:35:06,400
+If you want to do something similar, you want to build an app from scratch just like I'm doing right here,
+
+678
+00:35:06,400 --> 00:35:08,079
+I'll put the link in the description there.
+
+679
+00:35:08,079 --> 00:35:09,680
+Otherwise, I'll see you in the next one.
+
+680
+00:35:09,680 --> 00:35:11,320
+Day four.
+
+681
+00:35:11,320 --> 00:35:12,320
+Peace.
+
+682
+00:35:12,320 --> 00:35:13,200
+Wait, what?
+
+683
+00:35:13,200 --> 00:35:15,440
+Your bachelor party is this weekend.
+
+684
+00:35:15,440 --> 00:35:20,280
+How the hell am I going to finish and launch this app?
+
+685
+00:35:24,160 --> 00:35:29,400
+Why don't I make a bet with you?

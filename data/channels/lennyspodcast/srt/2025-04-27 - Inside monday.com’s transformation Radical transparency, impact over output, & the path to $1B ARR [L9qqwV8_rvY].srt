@@ -1,0 +1,3667 @@
+1
+00:00:00,000 --> 00:00:08,559
+A great PM basically for me is someone that is relentless until he gets this impact until he validates that this impact is in place.
+
+2
+00:00:08,559 --> 00:00:12,880
+In some cases doing the biggest impact is not developing another feature.
+
+3
+00:00:12,880 --> 00:00:15,679
+It's about making the current value more accessible.
+
+4
+00:00:15,679 --> 00:00:17,279
+You've been at this for 8 years.
+
+5
+00:00:17,279 --> 00:00:20,320
+You said there's 250,000 customers at this point.
+
+6
+00:00:20,320 --> 00:00:25,680
+What would you say is the most counterintuitive thing you've learned through this journey of building Monday?
+
+7
+00:00:25,680 --> 00:00:32,480
+We really have an approach of very radical transparency about everything before we went public.
+
+8
+00:00:32,480 --> 00:00:36,719
+We actually shared every bit of information with our employees.
+
+9
+00:00:36,719 --> 00:00:41,920
+Instead of demoralizing people, I think that this is something that gives them a sense of deep partnership.
+
+10
+00:00:41,920 --> 00:00:48,399
+We really want everyone's brains in the challenge and not just one centralized brain and a lot of working hands.
+
+11
+00:00:48,399 --> 00:00:54,399
+You basically realized that your competitors were shipping a lot faster than you were.
+
+12
+00:00:54,399 --> 00:00:57,680
+that made you shift the way you think about product and the way you operate.
+
+13
+00:00:57,680 --> 00:01:01,120
+Some of our competitors did something that we can only imagine.
+
+14
+00:01:01,120 --> 00:01:03,199
+We said, "Okay, we need to treat it differently."
+
+15
+00:01:03,199 --> 00:01:05,439
+We received a gift from our competitors.
+
+16
+00:01:05,439 --> 00:01:07,520
+They showed us that it's possible.
+
+17
+00:01:07,520 --> 00:01:14,799
+Use your competition, know it, and take it and set ambitious goals and believe in yourself and you can do amazing things.
+
+18
+00:01:14,799 --> 00:01:16,960
+Today, my guest is Daniel Ara.
+
+19
+00:01:16,960 --> 00:01:20,640
+Daniel's currently chief product and technology officer at monday.com.
+
+20
+00:01:20,640 --> 00:01:23,360
+He joined when they were just around 40 employees.
+
+21
+00:01:23,360 --> 00:01:32,159
+And a few years in, Daniel and the Exec team realized that their competitors were able to move a lot faster than they were and ship a lot more often than they were.
+
+22
+00:01:32,159 --> 00:01:36,479
+And that spurred a transformation in how they build and operate their teams.
+
+23
+00:01:36,479 --> 00:01:41,680
+Very few companies are able to transform like this, and even fewer recognize that something is wrong.
+
+24
+00:01:41,680 --> 00:01:50,560
+In our conversation, Daniel shares a bunch of very specific insights and suggestions into how to go about making change or even recognizing that something is wrong.
+
+25
+00:01:50,560 --> 00:01:59,280
+Daniel shares moments when it felt like everything was going to crumble, why it's important to know that the skills that got you to where you are today aren't the skills that are going to take you to the next level,
+
+26
+00:01:59,280 --> 00:02:03,920
+why it's so important to orient all your teams around impact, and so much more.
+
+27
+00:02:03,920 --> 00:02:08,319
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+28
+00:02:08,319 --> 00:02:14,319
+Also, if you become an annual subscriber of my newsletter, you get a year free of paid accounts at Superhum,
+
+29
+00:02:14,319 --> 00:02:18,160
+Linear, Notion, Granola, and Perplexity Pro.
+
+30
+00:02:18,160 --> 00:02:21,120
+Check it out at lennisnewsletter.com and click bundle.
+
+31
+00:02:21,120 --> 00:02:24,160
+With that, I bring you Daniel Ara.
+
+32
+00:02:24,160 --> 00:02:26,480
+This episode is brought to you by Interpret.
+
+33
+00:02:26,480 --> 00:02:34,800
+Interpret unifies all your customer interactions from Gong Calls to Zenesk tickets to Twitter threads to app store reviews and makes it available for analysis.
+
+34
+00:02:34,800 --> 00:02:44,480
+It's trusted by leading product orgs like Canva, Notion, Loom, Linear, Monday.com, and Straa to bring the voice of the customer into the product development process,
+
+35
+00:02:44,480 --> 00:02:47,120
+helping you build best-in-class products faster.
+
+36
+00:02:47,120 --> 00:02:55,360
+What makes Interpret special is its ability to build and update customer specific AI models that provide the most granular and accurate insights into your business.
+
+37
+00:02:55,360 --> 00:03:07,280
+Connect customer insights to revenue and operational data in your CRM or data warehouse to map the business impact of each customer need and prioritize confidently and empower your entire team to easily take action on use
+
+38
+00:03:07,280 --> 00:03:15,440
+cases like win- loss analysis, critical bug detection, and identifying drivers of churn with interprets AI assistant wisdom.
+
+39
+00:03:15,440 --> 00:03:19,920
+Looking to automate your feedback loops and prioritize your roadmap with confidence like notion,
+
+40
+00:03:19,920 --> 00:03:21,280
+Canva, and linear?
+
+41
+00:03:21,280 --> 00:03:29,760
+Visit enterp.com/lenny to connect with the team and get two free months when you sign up for an annual plan.
+
+42
+00:03:29,760 --> 00:03:31,200
+This is a limited time offer.
+
+43
+00:03:31,200 --> 00:03:34,319
+That's interpret.com/lenny.
+
+44
+00:03:34,319 --> 00:03:42,159
+This episode is brought to you by Air Table Product Central, the unified system that brings your entire product or together in one place.
+
+45
+00:03:42,159 --> 00:03:43,680
+No more scattered tools.
+
+46
+00:03:43,680 --> 00:03:45,440
+No more misaligned teams.
+
+47
+00:03:45,440 --> 00:03:50,319
+If you're like most product leaders, you're tired of constant context switching between tools.
+
+48
+00:03:50,319 --> 00:03:56,000
+That's why Air Table built Product Central after decades of working with worldclass product companies.
+
+49
+00:03:56,000 --> 00:03:59,519
+Think of it as mission control for your entire product organization.
+
+50
+00:03:59,519 --> 00:04:08,080
+Unlike rigid point solutions, Product Central powers everything from resourcing to voice of customer to road mapping to launch execution.
+
+51
+00:04:08,080 --> 00:04:14,799
+And because it's built on Air Table's no code platform, you can customize every workflow to match exactly how your team works.
+
+52
+00:04:14,799 --> 00:04:17,440
+No limitations, no compromises.
+
+53
+00:04:17,440 --> 00:04:18,799
+Ready to see it in action?
+
+54
+00:04:18,799 --> 00:04:22,400
+Head to airtable.com/lenny to book a demo.
+
+55
+00:04:22,400 --> 00:04:28,320
+That's airtable.com/lenny.
+
+56
+00:04:28,320 --> 00:04:32,800
+Daniel, thank you so much for being here and welcome to the podcast.
+
+57
+00:04:32,800 --> 00:04:34,560
+Thank you so much for having me.
+
+58
+00:04:34,560 --> 00:04:37,199
+We're gonna get into the story of Monday.
+
+59
+00:04:37,199 --> 00:04:42,560
+We're going to talk about your journey over the last 8 years building and scaling this company and all things you've learned along the way.
+
+60
+00:04:42,560 --> 00:04:53,600
+But I want to start with a very specific moment that you shared with me where you basically realized that your competitors were shipping a lot faster than you were
+
+61
+00:04:53,600 --> 00:04:57,840
+able to get stuff out a lot more quickly and more often than you guys.
+
+62
+00:04:57,840 --> 00:05:01,840
+And that made you shift the way you think about product and the way you operate.
+
+63
+00:05:01,840 --> 00:05:06,400
+Can you talk about that moment and that in that lesson and and what you took away from that?
+
+64
+00:05:06,400 --> 00:05:06,800
+Yeah.
+
+65
+00:05:06,800 --> 00:05:07,360
+Wow.
+
+66
+00:05:07,360 --> 00:05:14,240
+You you take me a while back, you know, h I think it was when we were relatively a small team.
+
+67
+00:05:14,240 --> 00:05:22,000
+I think we were something around like 30 people and uh you know, including engineers and product and everyone.
+
+68
+00:05:22,000 --> 00:05:30,000
+It's actually that back in the days we did so many things and actually we had an amazing amazing execution.
+
+69
+00:05:30,000 --> 00:05:38,080
+We had a, you know, a weekly update where we would share everything that we did with the company and it was al always,
+
+70
+00:05:38,080 --> 00:05:42,240
+you know, super long and super like with so many different things.
+
+71
+00:05:42,240 --> 00:05:49,199
+H, and we really felt good about ourselves at that point to be honest about the the execution.
+
+72
+00:05:49,199 --> 00:06:00,320
+And then I remember one day you know coming to the office and just looking on one of our competitors and we at Monday we have like one of the main things that we have
+
+73
+00:06:00,320 --> 00:06:01,759
+in the product is our boards.
+
+74
+00:06:01,759 --> 00:06:12,240
+It's like the the heart and soul of the product and it's you can think about it as a table and it has different column types data types that you can capture within
+
+75
+00:06:12,240 --> 00:06:21,759
+the board and work with and you know back then we had five of these and I was actually coding the sixth one to be
+
+76
+00:06:21,759 --> 00:06:31,600
+honest and each and every one of these like took us like four months to develop you know together with defining the product and everything and at This
+
+77
+00:06:31,600 --> 00:06:39,440
+morning we actually saw that one of our main competitors back then has actually launched 30 new columns.
+
+78
+00:06:39,440 --> 00:06:40,520
+30?
+
+79
+00:06:40,520 --> 00:06:41,520
+Yeah.
+
+80
+00:06:41,520 --> 00:06:51,280
+And you know we said okay at first we we didn't really know what to do and you know we thought about
+
+81
+00:06:51,280 --> 00:06:59,360
+it and I remember that even we said okay we're going to take even some time out of the office.
+
+82
+00:06:59,360 --> 00:07:09,520
+So back then Roy and Ian which are the founders and also together with me and Tal which is uh was one of the main tech leads in
+
+83
+00:07:09,520 --> 00:07:19,520
+Monday for a long time and few others we went outside the office and we said listen we need to do things differently
+
+84
+00:07:19,520 --> 00:07:30,400
+something doesn't make sense and you know I remember back then that for me this realization of like understanding that we are doing so much but suddenly
+
+85
+00:07:30,400 --> 00:07:38,479
+some of our competitors did something that we can only imagine and actually transformed the product because it's a different type of platform if you'll
+
+86
+00:07:38,479 --> 00:07:40,199
+think about it.
+
+87
+00:07:40,199 --> 00:07:52,080
+Uh it it was really hard personally first of all admitting that although you worked like crazy you didn't do something that really transformed the product because I
+
+88
+00:07:52,080 --> 00:08:02,080
+remember back then when we did a conversation we said okay we're doing so much what is the most meaningful thing that we did over the last 3 months and
+
+89
+00:08:02,080 --> 00:08:12,639
+you know suddenly the answer was you know there's so many things but it wasn't something specific And after like you know acknowledging
+
+90
+00:08:12,639 --> 00:08:21,520
+that and you know it's a very hard thing personally especially when you work so hard and you put your entire heart in in what you do.
+
+91
+00:08:21,520 --> 00:08:26,800
+H we said okay now we need to treat it differently.
+
+92
+00:08:26,800 --> 00:08:30,080
+We received a gift from our competitors.
+
+93
+00:08:30,080 --> 00:08:32,800
+They showed us that it's possible.
+
+94
+00:08:32,800 --> 00:08:34,719
+Now we we need to think how.
+
+95
+00:08:34,719 --> 00:08:39,360
+And in order to do that, we need to think differently because remember like we said,
+
+96
+00:08:39,360 --> 00:08:46,160
+okay, if we're going to add 25 more, multiply it by four months, we're small team.
+
+97
+00:08:46,160 --> 00:08:47,200
+We we're lost.
+
+98
+00:08:47,200 --> 00:08:49,000
+Okay, we can't make it.
+
+99
+00:08:49,000 --> 00:08:57,040
+So we said, okay, we need to take upon ourselves an ambitious goal like 25 columns in one month.
+
+100
+00:08:57,040 --> 00:08:59,760
+And this is the goal that we took upon ourselves.
+
+101
+00:08:59,760 --> 00:09:09,040
+And you know I think that the fact that our competitors did it give us like didn't give us the excuse of saying it's not possible.
+
+102
+00:09:09,040 --> 00:09:19,920
+So in a way it was the biggest favor that we can ask for and you know long story short month and a half afterwards we had 30 columns in
+
+103
+00:09:19,920 --> 00:09:27,279
+Monday and we did it you know by thinking totally different and by the way afterwards you know we did it over and over again.
+
+104
+00:09:27,279 --> 00:09:32,240
+And so if you think about Monday, it's basically a platform for work and you have different building blocks.
+
+105
+00:09:32,240 --> 00:09:33,839
+Columns is one of them.
+
+106
+00:09:33,839 --> 00:09:41,040
+But we did the same drill exactly with H dashboards and widgets and then with automations and so on.
+
+107
+00:09:41,040 --> 00:09:50,480
+So I think this was so transformative because a we understood that you need to constantly think especially at these phases.
+
+108
+00:09:50,480 --> 00:09:55,040
+How would you how would you transform completely the product in the next 3 months?
+
+109
+00:09:55,040 --> 00:10:06,680
+And if you can't answer that and you say listen I'm doing so much thing but you can't point this exact thing you have a focus problem in my eyes and second that is that you
+
+110
+00:10:06,680 --> 00:10:17,440
+know put ambitious goals it will make you think differently and you know we really love now to do it even with when we don't know it's possible and it
+
+111
+00:10:17,440 --> 00:10:25,320
+actually like works for us time after time and let's think about it you know the team that was there suddenly became
+
+112
+00:10:25,320 --> 00:10:33,920
+invincible because you know it's such an amazing amazing experience that you have a goal that you don't know how you're
+
+113
+00:10:33,920 --> 00:10:40,320
+going to do it and you succeed and then it makes you feel that everything is possible.
+
+114
+00:10:40,320 --> 00:10:43,680
+There's so much here and uh I have so many threads I want to follow on.
+
+115
+00:10:43,680 --> 00:10:51,920
+One is just there's the kind of there's this metaphor of the 4-minute mile where no one thought it was possible and then someone did it and then everyone started beating that record.
+
+116
+00:10:51,920 --> 00:10:59,680
+So, I like that this is highlighting there's just so much power in seeing somebody else accomplish something you thought was impossible and that unlocks the way you think.
+
+117
+00:10:59,680 --> 00:11:02,000
+And uh I love that you saw it as a gift.
+
+118
+00:11:02,000 --> 00:11:03,680
+A lot of people a lot of companies do this.
+
+119
+00:11:03,680 --> 00:11:05,360
+They're in this place and they're like no way.
+
+120
+00:11:05,360 --> 00:11:08,079
+It's like when the iPhone launched like no no one no one needs that.
+
+121
+00:11:08,079 --> 00:11:09,760
+That's not there's no keyboard.
+
+122
+00:11:09,760 --> 00:11:15,440
+And a lot of people like are uh like deny that it's a a thing they should be paying attention to.
+
+123
+00:11:15,440 --> 00:11:19,600
+I love that you saw it as like okay we need to we need to move that things have changed.
+
+124
+00:11:19,600 --> 00:11:23,279
+we're not doing things uh we're not going to be competitive long term.
+
+125
+00:11:23,279 --> 00:11:33,200
+I think it's also very much about focus and I think that you know it's very hard to get to very good execution but it doesn't guarantee that you are working in the right way
+
+126
+00:11:33,200 --> 00:11:44,079
+and many times in my eyes you know simple questions can provide the most and the deepest insights about your work and I think that for us the fact that we
+
+127
+00:11:44,079 --> 00:11:53,440
+managed to leverage it as you said and see it as a gift is one of the most important things use your competition know it use it to your advantage
+
+128
+00:11:53,440 --> 00:11:59,880
+and you know take it and set ambitious goals and believe in yourself and and you can do amazing things.
+
+129
+00:11:59,880 --> 00:12:09,120
+Another I think uh piece a lot of people are probably resonating with here is uh starting a company that's small growing things are going great and then all of a
+
+130
+00:12:09,120 --> 00:12:20,680
+sudden things start to slow down and in some cases you don't realize that they've slowed down and that's what it happened in your case sounds like in a lot of cases the founders like what the hell's going on why is it taking three to four weeks to ship one type of new
+
+131
+00:12:20,680 --> 00:12:28,839
+column and so is there anything by the way what was the scale of the company at this point it's a good question
+
+132
+00:12:28,839 --> 00:12:40,240
+h if I'm not mistaken it was around uh 2018 uh back then how it's safe to assume like 150 200
+
+133
+00:12:40,240 --> 00:12:51,279
+people in the company but we we were relatively small I recently had Brian Singer on the podcast who created the shape up method from base camp and that's kind of his uh piece of advice too is around like 50 to 100 people
+
+134
+00:12:51,279 --> 00:12:57,200
+things start to really change and slow down and that's where a lot of companies start to go sideways so that reate Right.
+
+135
+00:12:57,200 --> 00:12:58,160
+So that's really interesting.
+
+136
+00:12:58,160 --> 00:13:06,959
+And by the way, this these columns you're describing, just to make it clear, this is like a new type of like data like new format of column like it's a new data format that you're building.
+
+137
+00:13:06,959 --> 00:13:10,160
+It's not like just add another column to some database.
+
+138
+00:13:10,160 --> 00:13:10,399
+Yeah.
+
+139
+00:13:10,399 --> 00:13:16,639
+So so actually like exactly it's a new type of column but it's a whole product around it.
+
+140
+00:13:16,639 --> 00:13:20,000
+Like if you think about it for instance you have a column that captures dates.
+
+141
+00:13:20,000 --> 00:13:28,320
+So it's pretty straightforward but you can also have like formula column which is like more complicated and has like more complex product around it.
+
+142
+00:13:28,320 --> 00:13:38,320
+I think one of the best benefits for us as platform is that suddenly when we will like when we set the goal of adding so many
+
+143
+00:13:38,320 --> 00:13:47,360
+different columns, we actually stopped for the first time and say what is a column like and we also like organized all the product architecture around it.
+
+144
+00:13:47,360 --> 00:13:57,120
+And you know these kind of things like sounds really trivial in retrospect but you know we really defined okay each column need to have like specific
+
+145
+00:13:57,120 --> 00:13:57,839
+capabilities.
+
+146
+00:13:57,839 --> 00:14:00,560
+It should be able to export it to Excel.
+
+147
+00:14:00,560 --> 00:14:05,199
+It's it should be able to be filtered and sorted and so many different other things.
+
+148
+00:14:05,199 --> 00:14:16,320
+But basically we defined what is it and then create an infrastructure for all these shared things making the work of adding a new column just thinking about the
+
+149
+00:14:16,320 --> 00:14:19,600
+specific product that you want to provide with each one of these columns.
+
+150
+00:14:19,600 --> 00:14:22,360
+And the story about it is actually even more interesting.
+
+151
+00:14:22,360 --> 00:14:32,480
+We the way we actually achieved it is that we said okay in two weeks we're going to have an acathaton in which each one of our developers is
+
+152
+00:14:32,480 --> 00:14:41,079
+going to take one column and implement it in one day and you know if you think about it from four months to one
+
+153
+00:14:41,079 --> 00:14:51,519
+day it's like mindblowing and back then I remember people said how can it be but then tal that I told you about build an
+
+154
+00:14:51,519 --> 00:14:52,399
+infrastruure structure.
+
+155
+00:14:52,399 --> 00:14:53,519
+He sent it to me.
+
+156
+00:14:53,519 --> 00:14:59,320
+I did a column at night, you know, just to to see the how the how it works.
+
+157
+00:14:59,320 --> 00:15:04,399
+And on the day that we did the columns, like everyone knew what they are going to do,
+
+158
+00:15:04,399 --> 00:15:05,839
+what they are trying to solve.
+
+159
+00:15:05,839 --> 00:15:06,800
+And we just did it.
+
+160
+00:15:06,800 --> 00:15:11,440
+And two weeks afterwards, it was in production, which was amazing.
+
+161
+00:15:11,440 --> 00:15:17,519
+What we want to do here is help people avoid these moments where they're almost like too late and realizing that things have slowed down.
+
+162
+00:15:17,519 --> 00:15:23,440
+So I think a really another important lesson here is the power of ambition and thinking crazily big.
+
+163
+00:15:23,440 --> 00:15:34,560
+A lot of people think that when you ask your team we need to build 25 columns in a month or whatever it was people would be like I burned out or feeling super depressed but really people get excited there's
+
+164
+00:15:34,560 --> 00:15:37,120
+all this opportunity to think really differently.
+
+165
+00:15:37,120 --> 00:15:48,959
+It reminds me at our B&B Brian Jesy was very famous for you give him a goal here's our goal for the year and he's like what it would take to 10x this goal just like what would it take to do that and he's always pushing you
+
+166
+00:15:48,959 --> 00:16:00,399
+to think a lot bigger when you're like because your first reaction is like what no no why would you leave us alone but then you realize if you really think big it changes everything about how you
+
+167
+00:16:00,399 --> 00:16:10,079
+approach the problem as you described where it's like instead of like in a day what would it take to build this in a day yeah and and I think by the way this is something which is really important
+
+168
+00:16:10,079 --> 00:16:12,000
+about setting ambitious goals.
+
+169
+00:16:12,000 --> 00:16:17,040
+If you set a like a different goal I want to reduce it from 4 months to 3 months.
+
+170
+00:16:17,040 --> 00:16:22,000
+So many times this translates in people heads to I want you to work harder.
+
+171
+00:16:22,000 --> 00:16:24,399
+I want to you to work longer hours.
+
+172
+00:16:24,399 --> 00:16:26,079
+And this is not the message here.
+
+173
+00:16:26,079 --> 00:16:27,440
+It's about working smarter.
+
+174
+00:16:27,440 --> 00:16:33,759
+And I think that many times when we talk about speed of execution, you know, there's fake speed,
+
+175
+00:16:33,759 --> 00:16:39,920
+which means trying to do the same work by skipping stages or not doing the high quality that you want.
+
+176
+00:16:39,920 --> 00:16:46,720
+But there's the real speed and speed like organizations and speed of execution.
+
+177
+00:16:46,720 --> 00:16:48,880
+Many times it's about doing things right.
+
+178
+00:16:48,880 --> 00:16:55,360
+It's about understanding a what is going to move the needle and work only on that.
+
+179
+00:16:55,360 --> 00:17:04,959
+not working in a lot of things that you tend to invent when you're trying to solve a problem and B is like you know about
+
+180
+00:17:04,959 --> 00:17:14,240
+like thinking as you said like uh thinking differently and I think that for the goals this is why we really wanted the goal that you really
+
+181
+00:17:14,240 --> 00:17:25,039
+understand from the first minute that if you work the same way you cannot achieve it even if you'll sleep in the office so you need to change dramatically
+
+182
+00:17:25,039 --> 00:17:36,480
+how you think and you know the advanced phase of it is that today we're doing it on things that we didn't see others doing and you know we have the confidence because we have the
+
+183
+00:17:36,480 --> 00:17:47,280
+experience of like trusting ourselves that this is an exercise for us that will make us actually think about different solutions I know another element of this that is really important
+
+184
+00:17:47,280 --> 00:17:57,760
+to you that you has shifted the way you all operate is focusing on impact there's a lot of focus on just building a lot of stuff and you realize there's a lot of power in thinking from perspective of how do we have the most
+
+185
+00:17:57,760 --> 00:18:07,200
+impact talk about that this is the core and the main thing that we also measure like our teams and this is how I see a
+
+186
+00:18:07,200 --> 00:18:18,480
+great PM so a great PM basically for me is someone that is relentless until he gets this impact and I until he validates that this impact is in place
+
+187
+00:18:18,480 --> 00:18:25,360
+and you know for us it really changed how we think about things it really changed how we set goals for our teams.
+
+188
+00:18:25,360 --> 00:18:35,280
+So in many ways PM in MAD first and foremost is responsible for creating the shared understanding on what would be impactful for our customers.
+
+189
+00:18:35,280 --> 00:18:39,280
+Okay, it's not about uh the solution and what we are going to build.
+
+190
+00:18:39,280 --> 00:18:45,760
+It's about what's the problem, what's the opportunity and second how we will know that we move the needle.
+
+191
+00:18:45,760 --> 00:18:53,640
+And without these two things you can build so many different things and you know it's like songs for the draw like I built.
+
+192
+00:18:53,640 --> 00:19:02,080
+So you know such huge part of what I build was never used by users the way I thought it was going to use.
+
+193
+00:19:02,080 --> 00:19:13,600
+So I think that for me having the this understanding of what we want uh to change for our customers and also how we know we did it is a huge huge part of
+
+194
+00:19:13,600 --> 00:19:25,440
+the the PM role and for us you know uh it means that we pay a lot of time in setting goals in making sure that we really understand both again the
+
+195
+00:19:25,440 --> 00:19:31,919
+opportunity but not only that but how we'll see and we'll know for sure that we move the needle in many ways.
+
+196
+00:19:31,919 --> 00:19:34,240
+is you know it changes the the conversation.
+
+197
+00:19:34,240 --> 00:19:42,320
+So PMs you know and their teams many times like are spending a lot of time at the problem area before they think about the solution.
+
+198
+00:19:42,320 --> 00:19:44,080
+The solution is not the case anymore.
+
+199
+00:19:44,080 --> 00:19:47,120
+It's not like there are so many different solutions.
+
+200
+00:19:47,120 --> 00:19:58,240
+And once you do that and you have these goals suddenly it reduces also a lot of the discussions that you have about the different solutions because everyone knows that
+
+201
+00:19:58,240 --> 00:20:01,520
+everything is going to be tested on real life.
+
+202
+00:20:01,520 --> 00:20:11,440
+So they make make it everyone treat it differently and also in that way you know it makes you think much more holistically which I also think is
+
+203
+00:20:11,440 --> 00:20:21,360
+something that is very special at Monday is that we give our teams like real life goals as much as we can and then you
+
+204
+00:20:21,360 --> 00:20:32,159
+know in some cases doing the biggest impact is not developing another feature it's about making the current value more accessible It's about connecting better
+
+205
+00:20:32,159 --> 00:20:34,400
+to the go to market motion that you have.
+
+206
+00:20:34,400 --> 00:20:40,559
+It's about understanding how your customers are going to learn what you built and use it.
+
+207
+00:20:40,559 --> 00:20:49,360
+And you know this realization is something that we try very hard to stay on it.
+
+208
+00:20:49,360 --> 00:20:54,640
+And it's hard because like people tend to build things like we all love to build things,
+
+209
+00:20:54,640 --> 00:20:55,039
+right?
+
+210
+00:20:55,039 --> 00:21:04,320
+And when you start to build things, you get excited and suddenly you lose track of why why you're doing it and what do you need to change.
+
+211
+00:21:04,320 --> 00:21:11,280
+And I think that in that sense, this is the most important part about like uh this point of impact.
+
+212
+00:21:11,280 --> 00:21:13,760
+And you know this is also how we measure ourselves.
+
+213
+00:21:13,760 --> 00:21:16,400
+So we can work extremely hard.
+
+214
+00:21:16,400 --> 00:21:18,000
+It doesn't mean that we are successful.
+
+215
+00:21:18,000 --> 00:21:20,840
+It doesn't mean that we are doing our work right.
+
+216
+00:21:20,840 --> 00:21:21,840
+Okay.
+
+217
+00:21:21,840 --> 00:21:24,240
+And it's not only for the PMs.
+
+218
+00:21:24,240 --> 00:21:25,360
+It's for the entire team.
+
+219
+00:21:25,360 --> 00:21:30,400
+So the entire team succeeds or fail together based on the value that we bring to our customers.
+
+220
+00:21:30,400 --> 00:21:37,679
+And we have a lot of like different ways in order to make sure that we stay honest to this principle.
+
+221
+00:21:37,679 --> 00:21:45,120
+There's a lot of people listening to this that work at say modern tech companies, very high growth tech companies that are just like duh,
+
+222
+00:21:45,120 --> 00:21:46,480
+this is how you should work.
+
+223
+00:21:46,480 --> 00:21:50,799
+A lot of people hearing this are like I don't really understand what like how like what am I doing wrong?
+
+224
+00:21:50,799 --> 00:21:51,520
+What am I missing?
+
+225
+00:21:51,520 --> 00:21:56,480
+maybe uh what's a sign that you're not oriented around impact?
+
+226
+00:21:56,480 --> 00:22:08,320
+I think the the most obvious sign for me is that you are building something without the aim or without the initial aim of
+
+227
+00:22:08,320 --> 00:22:12,320
+what it should change for your users and how you are going to to measure it.
+
+228
+00:22:12,320 --> 00:22:22,240
+So in my eyes it's many times the fact that you don't have a goal or the goal is is like many times you know for me smell for that is that I hear people use the
+
+229
+00:22:22,240 --> 00:22:33,600
+word we're going to enhance we're going to augment we are going to extend value and this and this and no it's not enough what is it going to change for users and
+
+230
+00:22:33,600 --> 00:22:45,200
+how you are going to see it that it actually happened and then you start asking yourself all the questions right because once you have a goal that you are committed to suddenly you think about the target audience because you
+
+231
+00:22:45,200 --> 00:22:55,679
+need enough like like bigger big enough target audience for instance in order to to get to your uh you know uh to your goals you need to make sure that what
+
+232
+00:22:55,679 --> 00:23:05,840
+you build actually going to touch all of these people and and I can share just a recent example you know and and you know these things sound trivial and maybe an example would you know like uh help
+
+233
+00:23:05,840 --> 00:23:15,919
+resonate with that because I know many people are thinking like that and you know we we have a very like uh uh interesting offering that we just
+
+234
+00:23:15,919 --> 00:23:17,120
+introduced with AI.
+
+235
+00:23:17,120 --> 00:23:19,200
+It's called AI blocks.
+
+236
+00:23:19,200 --> 00:23:19,679
+Okay.
+
+237
+00:23:19,679 --> 00:23:30,000
+And basically it means that with no code you can integrate blocks which contain AI actions within your existing workflows and you know 70%
+
+238
+00:23:30,000 --> 00:23:41,600
+of Monday's customers are non- tech and for them this makes AI accessible for them and has a huge huge value and we started building these blocks and we released it to customers and we measured
+
+239
+00:23:41,600 --> 00:23:51,520
+you know discoverability and adoption and retention and so on and something that we do in order to to stay connected to the numbers.
+
+240
+00:23:51,520 --> 00:23:56,720
+So each team at Monday has like what we call the daily numbers update.
+
+241
+00:23:56,720 --> 00:24:06,640
+So we have a think about it like a a message that the team is building with all the numbers that care that they care about because we really want people
+
+242
+00:24:06,640 --> 00:24:07,760
+to leave these numbers.
+
+243
+00:24:07,760 --> 00:24:11,760
+So for AI for instance for the AI blocks it was the AI actions.
+
+244
+00:24:11,760 --> 00:24:19,279
+So we had AI actions how many accounts like are using these AI actions and so on and so on.
+
+245
+00:24:19,279 --> 00:24:23,600
+And you know we got amazing responses from our customers.
+
+246
+00:24:23,600 --> 00:24:28,640
+We see great success of them getting value from their actions.
+
+247
+00:24:28,640 --> 00:24:39,520
+But you know one day like in this like it's a we we use a slack channel in which uh one of our internal systems big brain is sending us this messages every day and then we have
+
+248
+00:24:39,520 --> 00:24:40,880
+conversations about it.
+
+249
+00:24:40,880 --> 00:24:41,760
+Okay.
+
+250
+00:24:41,760 --> 00:24:51,840
+And you know one day we saw we noticed that the amount of accounts that are using AI is super super low comparing to the entire
+
+251
+00:24:51,840 --> 00:25:02,120
+population that we have and you know we have 250,000 paying companies that use Monday and we saw only like few thousands
+
+252
+00:25:02,120 --> 00:25:11,919
+there and you know until this point everyone will like in a very good feeling that we're making an amazing product we get really good feedback we're building great value.
+
+253
+00:25:11,919 --> 00:25:22,559
+We're adding value but we sat down and say okay why it's only like this and this then someone say yeah you know since AI is
+
+254
+00:25:22,559 --> 00:25:33,919
+new we need to do change of uh the terms of service for for customers before we are opening it to them and this is planned you know for like in the next
+
+255
+00:25:33,919 --> 00:25:43,840
+quarter or something like that and said what no we need to do it now you know we need to now open it for everyone because
+
+256
+00:25:43,840 --> 00:25:54,080
+this is actually what would be the most impactful thing to do and then like you know the team went and set with legal and sent with everyone and with two
+
+257
+00:25:54,080 --> 00:26:03,760
+weeks time it was open to 98% of Monday customers you know and I think in that sense you know this is a very good example because we could have continue
+
+258
+00:26:03,760 --> 00:26:13,679
+building value and it's great but the impact wouldn't be the impact that we were we're aiming for and this is a very
+
+259
+00:26:13,679 --> 00:26:24,320
+important point and you know we I think in that sense staying really connected to your teams to your numbers sorry this is something that I really feel strongly
+
+260
+00:26:24,320 --> 00:26:34,159
+about I feel that you need to get your numbers in push you need to live by them and you know for me it's like so exciting to see a conversation that says
+
+261
+00:26:34,159 --> 00:26:43,760
+oh wow today there were a lot of new accounts that are using what I'm let's see why it happens and you know these kind of things that I see the
+
+262
+00:26:43,760 --> 00:26:54,400
+conversation about it's amazing and also you know for in this case seeing the AI actions go it's like you want to drive it and push it forward and in many ways
+
+263
+00:26:54,400 --> 00:27:05,840
+I feel that this is a very good example on where you can actually build a lot of value you can work really fast you can deliver a lot of features but the problem lays in other place in order to
+
+264
+00:27:05,840 --> 00:27:11,360
+get the impact that you want yeah there's so much joy and watching watching her number go up.
+
+265
+00:27:11,360 --> 00:27:21,200
+Uh so just to close the loop here to help people see if they're impact driven working from a perspective of how do we drive the most impact is one simple way of thinking
+
+266
+00:27:21,200 --> 00:27:28,400
+about it is uh you're working backwards from a goal that is going to drive business growth and revenue basically in the end.
+
+267
+00:27:28,400 --> 00:27:39,039
+If you're working backwards from a number and a metric and a goal and then thinking through what are the levers that will most move this metric that's a sign you're thinking impact
+
+268
+00:27:39,039 --> 00:27:43,200
+through by impact versus let's just keep shipping features that the sales team wants.
+
+269
+00:27:43,200 --> 00:27:43,440
+Yeah.
+
+270
+00:27:43,440 --> 00:27:54,399
+And I think another thing for me like it's an exercise that I really you know I really encourage everyone to do for me it was like after the columns hackathon and
+
+271
+00:27:54,399 --> 00:28:03,880
+everything that we talked about I said okay each quarter and this is when we were much smaller but it can be each month it can be each two weeks
+
+272
+00:28:03,880 --> 00:28:13,919
+but how do I imagine the company and the product is going to be different and better for our customers in a quarter
+
+273
+00:28:13,919 --> 00:28:25,440
+from now and from that you know work it backwards but if you if you are just saying we'll have better security we'll have better performance we'll have less bugs we'll have more like enhancements
+
+274
+00:28:25,440 --> 00:28:37,360
+to the I don't know this and this feature it's not enough you need to constantly build value which is pivotal to your customers and if you don't do it and if it's hard for you to answer about
+
+275
+00:28:37,360 --> 00:28:49,120
+this question h it's a it's a very good sign that you are not input driven and you know I love to do it also with teams and individuals like what are the things that you are most proud of that you did
+
+276
+00:28:49,120 --> 00:28:58,159
+in the last three months and if it's like takes you a lot of time to think you're not very focused and you're definitely not maximizing the impact
+
+277
+00:28:58,159 --> 00:29:08,240
+that you want due to that in my eyes I like that exercise as a kind of a like versus waiting for your competitors to do something and then realizing we're way behind it's forcing yourself every
+
+278
+00:29:08,240 --> 00:29:15,360
+quarter to think about this so do you do this as like you have a meeting or or someone in your calendar or how do you how do you actually operationalize this?
+
+279
+00:29:15,360 --> 00:29:26,480
+So it's actually very you know today we are like under the builders organization which is the engineering product management product design we are 700 people uh so we have a lot of different
+
+280
+00:29:26,480 --> 00:29:36,880
+like uh ways and methodologies to do it in different levels but I'll give you an example from the company level and from the team level maybe because these are the most interesting ones.
+
+281
+00:29:36,880 --> 00:29:40,720
+So we just recently had our early kickoff.
+
+282
+00:29:40,720 --> 00:29:52,399
+Each each and every year we do a yearly kickoff for our company and one of the most you know exciting sessions obviously is what we are going to do with our product as a product company
+
+283
+00:29:52,399 --> 00:30:02,320
+and I really to like to have a slide in which I like write and I just share it when I'm going to stand here in a year
+
+284
+00:30:02,320 --> 00:30:12,399
+from now what is going to be different for our customers and you know this is on the company level and I have one slide and it talks about like our offering and it talks about the value
+
+285
+00:30:12,399 --> 00:30:22,960
+that they are getting in a way that next year I want to you know each year to start my my presentation with the slide
+
+286
+00:30:22,960 --> 00:30:33,200
+from last year and see where we are and you know in in this level it can be something like our CRM continues with a very strong momentum and becomes a
+
+287
+00:30:33,200 --> 00:30:36,480
+product suite when we give much more robust value to our customers.
+
+288
+00:30:36,480 --> 00:30:47,200
+This can be an example okay with an additional product of CRM marketing I would just say but uh on a team level what we did and maybe I'll take an example from the
+
+289
+00:30:47,200 --> 00:30:59,039
+early days you know we really did uh we really love to do each each and every two weeks I told you we would write like a an update for the entire company about
+
+290
+00:30:59,039 --> 00:31:10,240
+what we did and the way we did it is that each and every one of our team members actually for write wrote uh his highlights and then we would share it
+
+291
+00:31:10,240 --> 00:31:11,840
+with the the company.
+
+292
+00:31:11,840 --> 00:31:22,799
+And this exercise really made us sit every two weeks and think on an individual level but also on a team level and you know every one of
+
+293
+00:31:22,799 --> 00:31:34,640
+our team members used to write to to read these updates and say then we had a good two weeks or we had a bad two weeks we did a lot of impact or we did not not
+
+294
+00:31:34,640 --> 00:31:35,120
+enough impact.
+
+295
+00:31:35,120 --> 00:31:45,120
+So I really encourage to create these points in time where you sit down and you force yourself to understand whether what you did is what you thought you're going to achieve or
+
+296
+00:31:45,120 --> 00:31:46,000
+not.
+
+297
+00:31:46,000 --> 00:31:46,480
+That's great.
+
+298
+00:31:46,480 --> 00:31:48,000
+I really like the the slide idea.
+
+299
+00:31:48,000 --> 00:31:52,880
+It's basically there's all this power in just working backwards from something in the future.
+
+300
+00:31:52,880 --> 00:31:54,720
+Uh however you come up with it.
+
+301
+00:31:54,720 --> 00:31:58,000
+So it's just like in a year we're going to have there's just like working backwards from a goal,
+
+302
+00:31:58,000 --> 00:32:00,159
+working backwards from a big vision.
+
+303
+00:32:00,159 --> 00:32:02,000
+Those are such good exercises.
+
+304
+00:32:02,000 --> 00:32:04,159
+You know, obviously Amazon's famous for working backwards.
+
+305
+00:32:04,159 --> 00:32:07,600
+There's a whole book called Working Backward from their PR approach.
+
+306
+00:32:07,600 --> 00:32:08,799
+Uh, okay.
+
+307
+00:32:08,799 --> 00:32:10,559
+I want to go in a slightly different direction.
+
+308
+00:32:10,559 --> 00:32:12,720
+I want to zoom out a little bit.
+
+309
+00:32:12,720 --> 00:32:16,080
+So, you've been at this for eight years building Monday.
+
+310
+00:32:16,080 --> 00:32:18,799
+You said there's 250,000 customers at this point.
+
+311
+00:32:18,799 --> 00:32:20,320
+What's like the revenue scale?
+
+312
+00:32:20,320 --> 00:32:24,320
+Give people a couple stats to give them a sense of just how large this company has gotten.
+
+313
+00:32:24,320 --> 00:32:30,559
+We recently announced that we crossed the the $1 billion in ARR.
+
+314
+00:32:30,559 --> 00:32:40,799
+Um, we are serving as I said 250,000 customers across the globe from virtually any industry that you can think about like more than 200 different
+
+315
+00:32:40,799 --> 00:32:41,840
+business verticals.
+
+316
+00:32:41,840 --> 00:32:46,080
+It could be both tech and non techsavvy customers.
+
+317
+00:32:46,080 --> 00:32:56,919
+The vast majority of our customers are non tech and you know from like a customer that is building airplanes and cruise ships all the way to real estate,
+
+318
+00:32:56,919 --> 00:33:06,720
+construction, finance, tech and everything you can basically think of and if I like just for reference and seeing our growth base.
+
+319
+00:33:06,720 --> 00:33:15,519
+So when I joined Monday 8 and a half years ago where we back then we were called the pulse uh we
+
+320
+00:33:15,519 --> 00:33:25,840
+had around 4 million in AR and we you know scaled from the from there to 1 billion and from like around 30 40
+
+321
+00:33:25,840 --> 00:33:29,600
+people at the company to 2500 right now.
+
+322
+00:33:29,600 --> 00:33:30,320
+Awesome.
+
+323
+00:33:30,320 --> 00:33:41,039
+when you talk about the product you're building to a lot of people it's like oh it's like project management software all this like column like what's the big deal but I had Drew Hston on the podcast and he made this really interesting point when he talks to
+
+324
+00:33:41,039 --> 00:33:52,720
+people working at SpaceX who are like launching rockets to Mars and he talked about people building ships like if you really boil down what are they doing dayto-day they're sitting in tools like Monday putting together tasks and doing
+
+325
+00:33:52,720 --> 00:34:00,559
+to-dos and sharing documents like this is kind of what the world runs on so it's important to have that perspective With that,
+
+326
+00:34:00,559 --> 00:34:07,919
+putting that aside for a second, I think very few people have seen what you've seen having a seeing a company scale this way.
+
+327
+00:34:07,919 --> 00:34:14,079
+Also, the transformation you just shared of just like almost ship shipping too much and being slow to like,
+
+328
+00:34:14,079 --> 00:34:19,280
+okay, let's rework things to shipping 25 columns in a month and all these things like very few people have seen this.
+
+329
+00:34:19,280 --> 00:34:21,679
+So, there's a lot to learn from this journey that you've been on.
+
+330
+00:34:21,679 --> 00:34:27,760
+So, I have a bunch of questions and a different bunch of different ways of approaching some of your biggest lessons from this journey.
+
+331
+00:34:27,760 --> 00:34:30,320
+The first is let me just ask you this question.
+
+332
+00:34:30,320 --> 00:34:39,679
+What would you say is the most counterintuitive thing you've learned about building product and leading teams through this journey of building Monday?
+
+333
+00:34:39,679 --> 00:34:46,800
+Maybe first of all is about like something that we really care about which is transparency.
+
+334
+00:34:46,800 --> 00:34:57,920
+I I'm like let me tell you a story like I I uh sat down for dinner at my family and many many different members of my family are like entrepreneurs or like
+
+335
+00:34:57,920 --> 00:35:05,760
+working as an executive in tech companies and so on and you know back in the days we as Monday before we went
+
+336
+00:35:05,760 --> 00:35:16,960
+public h we actually shared every bit of information with our employees you would get into our office and you You'd see a dashboard
+
+337
+00:35:16,960 --> 00:35:24,560
+with how many paying accounts do you have, how many people have churned today, how many signups do we have and so many different things.
+
+338
+00:35:24,560 --> 00:35:27,520
+Even if you came for an interview, you would see these numbers.
+
+339
+00:35:27,520 --> 00:35:33,280
+And I remember sitting in this dinner and everyone would tell me, listen, you are making a mistake.
+
+340
+00:35:33,280 --> 00:35:33,920
+How can you do it?
+
+341
+00:35:33,920 --> 00:35:40,800
+When thing goes south, you know, you'll demoralize the team and people like uh, you know,
+
+342
+00:35:40,800 --> 00:35:42,800
+will get upset about it.
+
+343
+00:35:42,800 --> 00:35:51,920
+And I think this is you know for me one of the most important things when you hire and you have such a
+
+344
+00:35:51,920 --> 00:36:03,520
+talented team you want to share them you want to share with them everything and the reason for that is that then you are working on every challenge together and
+
+345
+00:36:03,520 --> 00:36:12,880
+instead of demoralizing people I think that for the right people and the people that like you know are working at Monday this is something that gives them.
+
+346
+00:36:12,880 --> 00:36:22,800
+So like you know a sense of deep partnership and as a leader you know there were many situations in my professional life that I knew some bit
+
+347
+00:36:22,800 --> 00:36:29,119
+of information and I felt you know all the weight on my shoulders and I love to call it the dark side of the moon.
+
+348
+00:36:29,119 --> 00:36:30,320
+you are there alone, right?
+
+349
+00:36:30,320 --> 00:36:41,280
+like you are coming to the office there's nothing you know like more demoralizing as or like depressing as a as a leader that you feel awful because something that you
+
+350
+00:36:41,280 --> 00:36:51,240
+know and you're coming to the office and everything is great and everyone are like happy and I think in Monday we we really wanted to do it differently and
+
+351
+00:36:51,240 --> 00:37:03,200
+we really have an approach of like very radical transparency about everything and this actually makes everyone parts of what we are doing and in a way we
+
+352
+00:37:03,200 --> 00:37:13,359
+like to say we really want everyone's brains in the challenge and not just one centralized brain and a lot of working hands and I can share examples you know
+
+353
+00:37:13,359 --> 00:37:25,200
+when for instance suddenly people would come up to the office we have dashboards across everywhere in the office like each team has its own dashboards we have our company dashboards with metrics and
+
+354
+00:37:25,200 --> 00:37:31,359
+so on and I remember cases in which someone said listen what happened to the conversion.
+
+355
+00:37:31,359 --> 00:37:41,200
+And you know, think how powerful it is when you have everyone at a company looking at these things and many of the things that we discovered,
+
+356
+00:37:41,200 --> 00:37:48,720
+many of the things that we saw as challenges and problems is things that people saw due to this transparency.
+
+357
+00:37:48,720 --> 00:37:57,760
+So I think that's maybe the you know counterintuitive part is that don't be afraid to share the information.
+
+358
+00:37:57,760 --> 00:38:07,280
+And it's exactly the other way around and I can probably share share that you know even today as a public company we really share everything that
+
+359
+00:38:07,280 --> 00:38:18,200
+we can you know and also like if you are product manager at Monday you are signing like a 10b5 program for selling your stocks meaning
+
+360
+00:38:18,200 --> 00:38:28,480
+that we found a way to make everyone still see the data because we think this is the most important part and I think this is one thing that I really believe
+
+361
+00:38:28,480 --> 00:38:40,240
+in and really changed how we work and also how people are feeling about being partners in building Monday and not just working at a company is that thing they sign that's just like autoell stock so
+
+362
+00:38:40,240 --> 00:38:44,480
+they're not selling based on information based on announcements that's coming.
+
+363
+00:38:44,480 --> 00:38:45,040
+Okay, got it.
+
+364
+00:38:45,040 --> 00:38:51,760
+So every PM basically has to automatically uh can't like decide I'm going to sell my stock tomorrow because this number's tanking.
+
+365
+00:38:51,760 --> 00:38:51,920
+Yeah.
+
+366
+00:38:51,920 --> 00:39:02,960
+So, so you know like uh we want to give people the choice but like usually we really feel that in most cases you really need to know this information in order to do your work and that's so
+
+367
+00:39:02,960 --> 00:39:11,359
+interesting and I I I think people even prefer just like dollar cost average sell you know it's like it makes life easier not having to try to time all these things.
+
+368
+00:39:11,359 --> 00:39:12,800
+I definitely think so.
+
+369
+00:39:12,800 --> 00:39:15,200
+Yeah, that's really interesting.
+
+370
+00:39:15,200 --> 00:39:18,800
+Uh and that's and that's just product managers or how far does that all go?
+
+371
+00:39:18,800 --> 00:39:30,480
+No, so basically when we became public, you know, I remember still like one of the conversations that we had with uh like uh the bankers and the lawyers about
+
+372
+00:39:30,480 --> 00:39:34,079
+like uh listen guys, things would need to change.
+
+373
+00:39:34,079 --> 00:39:39,040
+You cannot have a dashboard with all your financials at the entrance of the the building.
+
+374
+00:39:39,040 --> 00:39:42,160
+Uh it doesn't make sense as a public company.
+
+375
+00:39:42,160 --> 00:39:52,480
+and we understood it but we didn't want to let go of what we cared about because we really believe this is one of the main drivers to the business having this transparency and having this like shared
+
+376
+00:39:52,480 --> 00:40:02,000
+brains uh you know mode so we tried to think about ways in order to do it so uh
+
+377
+00:40:02,000 --> 00:40:12,079
+now if I'll like fast forward you know we're almost four years public uh and we have an internal app called Monday morning and in Monday morning You have
+
+378
+00:40:12,079 --> 00:40:12,720
+two parts.
+
+379
+00:40:12,720 --> 00:40:14,079
+Part A and part B.
+
+380
+00:40:14,079 --> 00:40:24,720
+Part A is for the every company employee contains a lot about engagement and a lot of data that can be shared with everyone and part B
+
+381
+00:40:24,720 --> 00:40:26,640
+is confidential and it's by role.
+
+382
+00:40:26,640 --> 00:40:26,960
+Okay.
+
+383
+00:40:26,960 --> 00:40:28,480
+So it's the company management.
+
+384
+00:40:28,480 --> 00:40:35,920
+But I think the important point is that we see product management as something that got to have these numbers.
+
+385
+00:40:35,920 --> 00:40:44,960
+So we thought about it really hard and you know it's a it's a lot of logistics to do like so many plans 105 plans but I think it's worth it.
+
+386
+00:40:44,960 --> 00:40:45,680
+Yeah.
+
+387
+00:40:45,680 --> 00:40:46,480
+This is so interesting.
+
+388
+00:40:46,480 --> 00:40:56,880
+Like a lot of companies talk about transparency and you guys are I think radical transparency is a good way to describe this because I've never heard of a company doing this where you have to sign this.
+
+389
+00:40:56,880 --> 00:41:05,119
+They didn't hear about it as well apparently and yeah it was it took time to you know to get to these solutions.
+
+390
+00:41:05,119 --> 00:41:05,839
+That's so funny.
+
+391
+00:41:05,839 --> 00:41:09,200
+So for people that are listening to this are like, "Hey, maybe we should explore this."
+
+392
+00:41:09,200 --> 00:41:14,079
+What's like one thing you'd suggest they that they could do to start moving down this road?
+
+393
+00:41:14,079 --> 00:41:20,560
+And the benefit again is you I guess maybe again remind people of the benefits of doing this because it sounds like a lot of work and risk.
+
+394
+00:41:20,560 --> 00:41:27,440
+So I think that as a young startup, it's actually not such a hard work.
+
+395
+00:41:27,440 --> 00:41:33,200
+When we were very small, you know, back in the days, we had like like the daily numbers concept that we now have for the teams.
+
+396
+00:41:33,200 --> 00:41:37,520
+We had the daily numbers for the company, how much paying accounts, how many upgraded,
+
+397
+00:41:37,520 --> 00:41:39,200
+downgraded and so on daily.
+
+398
+00:41:39,200 --> 00:41:42,240
+And you saw people reacting to it like on a daily basis.
+
+399
+00:41:42,240 --> 00:41:51,200
+So this is something that you can do in virtually one hour and it like changes how people see you know their role within the company.
+
+400
+00:41:51,200 --> 00:41:56,560
+It focus everyone to the company's KPIs because everyone understand what you care about and so on.
+
+401
+00:41:56,560 --> 00:42:05,599
+So this is one thing that you can do extremely fast and I don't see any disadvantage aside from the fact that people are afraid many time you are
+
+402
+00:42:05,599 --> 00:42:16,800
+afraid and I can share like it's so much like it's even like a big relief that you don't need to think can I share it can I don't share it like can I like you
+
+403
+00:42:16,800 --> 00:42:27,440
+just let it go and everything would be okay and I can share from my experience that we shared everything and the second thing which is really practical you know it's the office dashboards.
+
+404
+00:42:27,440 --> 00:42:28,960
+We really believe in it.
+
+405
+00:42:28,960 --> 00:42:35,920
+So, you know, you buy a TV, you put it on the wall, you start a conversation due to it.
+
+406
+00:42:35,920 --> 00:42:37,839
+What do we want to show on this TV?
+
+407
+00:42:37,839 --> 00:42:49,599
+And you know, when we was like a smaller startup and we set allin-one office space, we had our company goals dashboard and it also had like a
+
+408
+00:42:49,599 --> 00:42:52,880
+we programmed it to have sounds on meaningful events.
+
+409
+00:42:52,880 --> 00:43:02,720
+So when you add like for instance new paying account you had the Omar Simpson saying like the the saying with the $1 million I'll become a millionaire or something like that uh
+
+410
+00:43:02,720 --> 00:43:06,319
+for you know new signup you add the tick and so on.
+
+411
+00:43:06,319 --> 00:43:11,920
+So suddenly everyone are living it you know it becomes part of the cadence of the company.
+
+412
+00:43:11,920 --> 00:43:17,760
+So these are just two ideas to make it super easy and the change happens immediately.
+
+413
+00:43:17,760 --> 00:43:22,720
+I love how that connects back to the whole point about impact people all aligning around here is what we're trying to drive.
+
+414
+00:43:22,720 --> 00:43:30,560
+Like if the Simpson sound is going off, all that's a sign that this matters and this something we should be driving up and it creates such a partnership.
+
+415
+00:43:30,560 --> 00:43:36,960
+You know, I remember like reaching to the first time where we had $1 million collection in one month,
+
+416
+00:43:36,960 --> 00:43:40,079
+breaking the record of like new paying accounts for one day.
+
+417
+00:43:40,079 --> 00:43:41,599
+Everyone are living.
+
+418
+00:43:41,599 --> 00:43:45,280
+But in many companies, you know, only the management or the founders are like filling.
+
+419
+00:43:45,280 --> 00:43:57,040
+And I think that in that sense you already feel that you have a great power because everyone are around the same things and it makes conversations different because everyone understands what matters to you at that
+
+420
+00:43:57,040 --> 00:43:57,680
+point.
+
+421
+00:43:57,680 --> 00:43:58,400
+This is awesome.
+
+422
+00:43:58,400 --> 00:44:00,160
+Uh really cool counterintuitive lesson.
+
+423
+00:44:00,160 --> 00:44:03,359
+I feel like a whole podcast could be done on like how to do this effectively.
+
+424
+00:44:03,359 --> 00:44:07,040
+I want to move on but I guess if people want to start implementing this at the company,
+
+425
+00:44:07,040 --> 00:44:10,240
+let's just say they should come talk to you and you could give them a bunch of advice.
+
+426
+00:44:10,240 --> 00:44:11,359
+I would love to.
+
+427
+00:44:11,359 --> 00:44:16,319
+This episode is brought to you by Vanta and I am very excited to have Christina Casiopo,
+
+428
+00:44:16,319 --> 00:44:20,400
+CEO and co-founder of Vanta joining me for this very short conversation.
+
+429
+00:44:20,400 --> 00:44:21,200
+Great to be here.
+
+430
+00:44:21,200 --> 00:44:23,200
+Big fan of the podcast in the newsletter.
+
+431
+00:44:23,200 --> 00:44:30,480
+Vanta is a longtime sponsor of the show, but for some of our newer listeners, what does Vanta do and who is it for?
+
+432
+00:44:30,480 --> 00:44:30,960
+Sure.
+
+433
+00:44:30,960 --> 00:44:40,640
+So we started Vanta in 2018 focused on founders helping them start to build out their security programs and get credit for all of that hard security work with compliance
+
+434
+00:44:40,640 --> 00:44:44,480
+certifications like SOCK 2 or ISO 2701.
+
+435
+00:44:44,480 --> 00:44:54,960
+Today we currently help over 9,000 companies including some startup household names like Atlassian Ramp and Ling Chain start and scale their security programs and ultimately build
+
+436
+00:44:54,960 --> 00:45:01,040
+trust by automating compliance, centralizing GRC and accelerating security reviews.
+
+437
+00:45:01,040 --> 00:45:01,839
+That is awesome.
+
+438
+00:45:01,839 --> 00:45:08,560
+I know from experience that these things take a lot of time and a lot of resources and nobody wants to spend time doing this.
+
+439
+00:45:08,560 --> 00:45:12,720
+That is very much our experience both before the company and to some extent during it.
+
+440
+00:45:12,720 --> 00:45:21,119
+But the idea is with automation, with AI, with software, we are helping customers build trust with prospects and customers in an efficient way.
+
+441
+00:45:21,119 --> 00:45:24,880
+And you know our joke, we started this compliance company so you don't have to.
+
+442
+00:45:24,880 --> 00:45:26,319
+We appreciate you for doing that.
+
+443
+00:45:26,319 --> 00:45:28,319
+And you have a special discount for listeners.
+
+444
+00:45:28,319 --> 00:45:32,800
+They can get $1,000 off Vanta at vanta.com/lenny.
+
+445
+00:45:32,800 --> 00:45:37,839
+That's venta.com/lenny for $1,000 off.
+
+446
+00:45:37,839 --> 00:45:39,280
+Thanks for that, Christina.
+
+447
+00:45:39,280 --> 00:45:40,880
+Thank you.
+
+448
+00:45:40,880 --> 00:45:45,760
+any other big counterintuitive lessons from the journey that you think would be fun to share?
+
+449
+00:45:45,760 --> 00:45:53,119
+One thing I really love about what we do in Monday is that we really love to take risks,
+
+450
+00:45:53,119 --> 00:45:58,240
+not for the sake of it, but we are not afraid to do bold moves.
+
+451
+00:45:58,240 --> 00:46:08,079
+And many times when you want to do bold moves, you have a lot of concerns, especially when you start to be successful because you you're afraid that you are going to break everything that you built till now.
+
+452
+00:46:08,079 --> 00:46:14,720
+And for me, you know, one of the most pivotal moments in the company life is when we decided that,
+
+453
+00:46:14,720 --> 00:46:20,960
+you know, back in the days, as you said, we we were a platform, but we had a go to market of a project management tool.
+
+454
+00:46:20,960 --> 00:46:25,119
+And we said, listen, people are doing so many different things on top of Monday.
+
+455
+00:46:25,119 --> 00:46:33,200
+They are building a CRM with Monday, and they are building a software for managing their dev cycles and they are building so many different things.
+
+456
+00:46:33,200 --> 00:46:41,880
+And we took a decision, strategic deci decision to become like a a multi-product company which is built on top of this platform.
+
+457
+00:46:41,880 --> 00:46:45,680
+And we actually did something which is really counterintuitive.
+
+458
+00:46:45,680 --> 00:46:57,280
+You know the the first thought that comes to mind at least for me is why maybe not just launch a new product do it relatively on the side gradually understand if it's successful
+
+459
+00:46:57,280 --> 00:47:01,119
+and if it would be successful double click on it.
+
+460
+00:47:01,119 --> 00:47:04,560
+But we actually did it in a very different way.
+
+461
+00:47:04,560 --> 00:47:11,839
+We actually announced five different new products simultaneously on the same time.
+
+462
+00:47:11,839 --> 00:47:22,240
+And you know we had so many like I can't stress enough how you know how hard it is to think about it because like I remember when we
+
+463
+00:47:22,240 --> 00:47:33,839
+talked about and doing it people say what but we are going to confuse our current users and it's going to help conversion and how are we going to do the marketing now when we have so many different goto markets and the sales
+
+464
+00:47:33,839 --> 00:47:42,800
+they don't know how to navigate people to different and what about pricing so many different concerns but we decided to do it because
+
+465
+00:47:42,800 --> 00:47:52,319
+we really want to create a pivotal lip and I think that in that sense you know fast forward to to this day like part of
+
+466
+00:47:52,319 --> 00:48:01,920
+these products were really successful for instance Monday sell CRM is like like going faster than Monday back in the days like you know and it's amazing
+
+467
+00:48:01,920 --> 00:48:11,680
+to see it and some of them we understood that they don't need to be separate products and we collapse them back to the main product but the point is is
+
+468
+00:48:11,680 --> 00:48:21,040
+that we managed to learn and to change both internally at the company how the perception of everyone around what we are building but also externally like
+
+469
+00:48:21,040 --> 00:48:31,359
+this move changed dramatically the competitive landscape that we live in and you know I think there was a lot of friction many people at the company were
+
+470
+00:48:31,359 --> 00:48:41,520
+like having a lot of friction with it it was really really really hard but looking back it's such I'm so happy with this move and the fact that we did it
+
+471
+00:48:41,520 --> 00:48:52,480
+like that because just imagine what would happen if we would choose one of them and it wasn't the successful products and our conclusion can be that multi product won't work for us.
+
+472
+00:48:52,480 --> 00:49:04,400
+we really managed to transform the company in a very short amount of time and also to create new reality you know and I think that people need to remember that and I'm constantly
+
+473
+00:49:04,400 --> 00:49:13,280
+reminding it to myself and I think this is something that we are constantly working you know uh with each other in order to make sure that we we remember
+
+474
+00:49:13,280 --> 00:49:23,760
+it that not taking bold risks not making bold moves it's a risk for itself okay And many times like you know people want
+
+475
+00:49:23,760 --> 00:49:35,359
+the inertion, people want just the incremental value but if you want to do lips many times you need to let go of things that were successful for you in the past and this is very counterintuitive and we did a lot of you
+
+476
+00:49:35,359 --> 00:49:38,640
+know a lot of mental models to help us cope with it.
+
+477
+00:49:38,640 --> 00:49:44,559
+So I remember that when we were small and we had for instance like 20,000 paying customers.
+
+478
+00:49:44,559 --> 00:49:49,520
+So we said listen but most of Monday's customers are not customers of Monday yet.
+
+479
+00:49:49,520 --> 00:49:58,640
+So we need to think about them as well, you know, and this is something that really helps you because many times you need to do things that affect like the current
+
+480
+00:49:58,640 --> 00:50:00,319
+success that you have.
+
+481
+00:50:00,319 --> 00:50:07,040
+H but I think it's this is another very very important thing that I'm constantly reminding to myself.
+
+482
+00:50:07,040 --> 00:50:13,680
+There's kind of this other recurring theme that I'm noticing of just like thinking big and taking leaps.
+
+483
+00:50:13,680 --> 00:50:17,359
+And I love this point you made of not doing that is actually a big risk.
+
+484
+00:50:17,359 --> 00:50:18,720
+Not taking risk is a big risk.
+
+485
+00:50:18,720 --> 00:50:22,640
+That's a really powerful point and it's innately scary to do something risky.
+
+486
+00:50:22,640 --> 00:50:33,119
+And so I love the push here of just like take more risks because it's so easy and this comes back again to the beginning of the conversation where you we're just like building things the way they've always
+
+487
+00:50:33,119 --> 00:50:36,319
+been built and looking back and like what have we even done?
+
+488
+00:50:36,319 --> 00:50:39,599
+What have we done over this year of hard work and tons of features?
+
+489
+00:50:39,599 --> 00:50:50,480
+I think a lot of companies get in that place where they're just like what are we like at Airbnb I had this exact Brian is constant like what are we even shipping all these billions of experiments that are moving the numbers like what are we even doing like I don't know anything
+
+490
+00:50:50,480 --> 00:50:58,480
+that we ship that's really exciting and so I think this is a really good reminder and push to just like think bigger and take and you need to take big
+
+491
+00:50:58,480 --> 00:51:08,800
+leaps um so love that is there uh any other big counterintuitive lessons before we move in a different direction I really believe that many time like uh
+
+492
+00:51:08,800 --> 00:51:15,680
+spending spending more time on working on something will not yield to better results or to better products.
+
+493
+00:51:15,680 --> 00:51:25,440
+And you know, I think that many times like we as people that are building products for others h get to a point where the
+
+494
+00:51:25,440 --> 00:51:32,960
+feedback that we we want to get in the bottom of our heart, you know, is like,"Wow, what an amazing product you have built."
+
+495
+00:51:32,960 --> 00:51:43,040
+And I think this is a very bad feedback to get for initial things that you are doing because it means that you know I I
+
+496
+00:51:43,040 --> 00:51:53,440
+feel that in many ways the the point in which you make real people use your product is really scary because you you suddenly you know put your work out
+
+497
+00:51:53,440 --> 00:52:00,800
+there and then in order to to like actually and you afraid that they will say listen it's a lousy product.
+
+498
+00:52:00,800 --> 00:52:02,160
+It's not a good product.
+
+499
+00:52:02,160 --> 00:52:11,280
+But actually we really encourage people to get really fast to production to put preps for themselves that is cop by time and not
+
+500
+00:52:11,280 --> 00:52:12,680
+by effort.
+
+501
+00:52:12,680 --> 00:52:19,200
+And you know many times I saw that more time creates more questions.
+
+502
+00:52:19,200 --> 00:52:20,960
+It creates more complications.
+
+503
+00:52:20,960 --> 00:52:32,079
+It creates more assumptions that we put for ourselves in thinking what our users need and we invent things you know and we we do it all from good reasons.
+
+504
+00:52:32,079 --> 00:52:33,920
+We want people to like what we build.
+
+505
+00:52:33,920 --> 00:52:35,680
+We want them to get value.
+
+506
+00:52:35,680 --> 00:52:46,079
+But for me like this is a very important point that many time many times using like the setting traps mechanism
+
+507
+00:52:46,079 --> 00:52:55,680
+of saying listen we have three weeks let's think about it and scope it by time it makes you extremely focused and
+
+508
+00:52:55,680 --> 00:53:06,960
+you know this is very important because you know uh we really want to get feedback from customers that say yeah listen this is on the direction I'm still missing this
+
+509
+00:53:06,960 --> 00:53:17,920
+and this and this and also we really love the fact of this is not a good product and I can give you a recent example you know even when now we you know we work with big customers and of course like there are different ways to
+
+510
+00:53:17,920 --> 00:53:28,800
+implement what I said h then you are a small startup but we are building like a new offering of enterprise work management think about it like a way of managing projects at a huge huge scale
+
+511
+00:53:28,800 --> 00:53:38,079
+you know thousands of projects like tens of thousands of employees and so on so I really love using the deadline prep and it makes you focused.
+
+512
+00:53:38,079 --> 00:53:44,960
+It makes you sharper and thinking and we just had a recent example with the offering I was telling you about of like enterprise work management,
+
+513
+00:53:44,960 --> 00:53:48,559
+managing projects at scale and you know this is an enterprise product.
+
+514
+00:53:48,559 --> 00:53:52,960
+So you have all the reasons in the world to say no I can't release it yet.
+
+515
+00:53:52,960 --> 00:53:53,760
+I need more time.
+
+516
+00:53:53,760 --> 00:53:54,880
+I need to do more things.
+
+517
+00:53:54,880 --> 00:53:55,760
+They won't use it.
+
+518
+00:53:55,760 --> 00:53:58,079
+They need this and this and this.
+
+519
+00:53:58,079 --> 00:54:08,559
+And I think that we actually released the first like alpha version to them and we got a feedback of listen guys this is premature we need more like more
+
+520
+00:54:08,559 --> 00:54:19,920
+comprehensive value but we got exactly the feedback of what and this is priceless and and my response to the teams is well done like I think you did an amazing job in like releasing it and
+
+521
+00:54:19,920 --> 00:54:28,240
+making sure because you know many times being so afraid of releasing it and like uh thinking if I just have one,
+
+522
+00:54:28,240 --> 00:54:32,079
+two, three more weeks, I will build a better product.
+
+523
+00:54:32,079 --> 00:54:34,720
+I think it's not it's not true.
+
+524
+00:54:34,720 --> 00:54:35,760
+This is such good advice.
+
+525
+00:54:35,760 --> 00:54:38,640
+It resonates so much with recent other conversations I've had.
+
+526
+00:54:38,640 --> 00:54:41,920
+So, just to clarify what you're saying, basically you have a time box.
+
+527
+00:54:41,920 --> 00:54:44,480
+When you say traps, it's basically a a set amount of time.
+
+528
+00:54:44,480 --> 00:54:49,359
+We're going to spend three weeks on this feature and if it doesn't if it we don't hit the three weeks,
+
+529
+00:54:49,359 --> 00:54:50,720
+we just cut scope essentially.
+
+530
+00:54:50,720 --> 00:54:51,760
+Is that the idea?
+
+531
+00:54:51,760 --> 00:54:55,359
+I think yeah, it's it's like this is the basic version of it.
+
+532
+00:54:55,359 --> 00:55:00,960
+But now for us and we really love doing it as an exercise for ourselves.
+
+533
+00:55:00,960 --> 00:55:09,920
+For instance, let's say now as a public company we say listen we are working on something we want to announce it on the next earning and put a trap for ourselves.
+
+534
+00:55:09,920 --> 00:55:10,400
+Why?
+
+535
+00:55:10,400 --> 00:55:13,599
+Because again it makes you sharp.
+
+536
+00:55:13,599 --> 00:55:23,440
+It makes you super focused about things and you know I think that in many ways this results in a much better product because you are not
+
+537
+00:55:23,440 --> 00:55:25,760
+building things that you invented.
+
+538
+00:55:25,760 --> 00:55:37,680
+You are staying really true to what your users needs the real you know core of the value and it's really funny to see the dynamics of teams you know when they are planning you know from the bottom
+
+539
+00:55:37,680 --> 00:55:38,079
+up.
+
+540
+00:55:38,079 --> 00:55:48,160
+So it starts like you know with something that uh like let's say you done everything great okay you have the opportunity you understand you have the KPIs everything is in place but now
+
+541
+00:55:48,160 --> 00:56:00,079
+you're starting to plan it and suddenly people are raising you know concerns and issues and it becomes a sport to say what can go wrong and like being fear
+
+542
+00:56:00,079 --> 00:56:10,960
+driven and then you tend to you know protect yourself and adding more content and more content and then when you see what happens It's actually like it's going to be shipped in two years.
+
+543
+00:56:10,960 --> 00:56:22,000
+Let me say okay no okay we have earnings in 2 months what can we ship to this earnings and let's put a trap and then you suddenly see the conversation changes.
+
+544
+00:56:22,000 --> 00:56:30,799
+First of all, it makes everyone really focused on what's the core of the value and it removes all the theoretical discussions that people have and things
+
+545
+00:56:30,799 --> 00:56:42,240
+like that and you know the results are amazing and you need to remember when you do it you need to continue afterwards if you like according to feedbacks and and not let it go just but
+
+546
+00:56:42,240 --> 00:56:52,240
+what you did in the first version but in many ways I really love the fact that you know the first version get a feedback which is not everything is perfect because if this is the the
+
+547
+00:56:52,240 --> 00:56:52,880
+feedback.
+
+548
+00:56:52,880 --> 00:57:02,640
+It means that we built too much and probably it's not focused product enough and when you build a lot of features this can be like you know
+
+549
+00:57:02,640 --> 00:57:11,359
+the death by thousand cuts because in each corner of the product you add more than you need like yeah there's so much here that that connects the other conversation we just had.
+
+550
+00:57:11,359 --> 00:57:22,319
+We had Garav Mistra from he's co of captions and he made this point that if people aren't complaining about your product like you you want to see people complaining because that means they care like there's something there that they care
+
+551
+00:57:22,319 --> 00:57:22,559
+about.
+
+552
+00:57:22,559 --> 00:57:27,280
+If they're if you're not hearing any complaints they could care less about what you're building and that's not that's a bad sign.
+
+553
+00:57:27,280 --> 00:57:28,480
+I really loved it.
+
+554
+00:57:28,480 --> 00:57:29,280
+Yeah.
+
+555
+00:57:29,280 --> 00:57:31,839
+Their company actually goes to the extreme of what you're describing.
+
+556
+00:57:31,839 --> 00:57:36,000
+Every engineer ships a feature a marketable feature every week.
+
+557
+00:57:36,000 --> 00:57:37,760
+That's their pace.
+
+558
+00:57:37,760 --> 00:57:38,799
+I really connected to it.
+
+559
+00:57:38,799 --> 00:57:49,599
+And by the way about user feedback I think you know uh it's really it's really nice because like uh many times you know people associate like uh they
+
+560
+00:57:49,599 --> 00:58:00,240
+they only measure themselves by user feedback the specific point and I think this is also maybe you know something that is uh counterintuitive.
+
+561
+00:58:00,240 --> 00:58:06,880
+Not every customer feedback is the feedback that will drive you to the you know to the end result of the best product out there.
+
+562
+00:58:06,880 --> 00:58:08,640
+uh there are many aspects to it.
+
+563
+00:58:08,640 --> 00:58:11,920
+I can share you know just one example about us.
+
+564
+00:58:11,920 --> 00:58:23,119
+We as a you know in the beginning of the company we for instance uh didn't want to have a free trial and part of it is that we really wanted to
+
+565
+00:58:23,119 --> 00:58:29,680
+hear feedback about our product only from people that the product means something to them.
+
+566
+00:58:29,680 --> 00:58:40,000
+the the best proxy for that is that they are paying because it means they get real value and you know in that sense it helps us it helped us at the beginning to be to stay super
+
+567
+00:58:40,000 --> 00:58:51,839
+focused about like you know separating the wheat from the shaft in the with the the customer's feedback so I think uh it's a super important point and we need to take customer feedback in context the
+
+568
+00:58:51,839 --> 00:59:02,319
+other really interesting point here that you're making is this idea of we had uh I think I mentioned this already Ryan Singer he's the creator of this method shape which is very centered around appetites over deadlines.
+
+569
+00:59:02,319 --> 00:59:10,480
+There's so much like so many everyone listening to this has probably gone through an exercise where like let's redo our landing page and it's like yeah it'll probably have some impact.
+
+570
+00:59:10,480 --> 00:59:11,599
+Let's spend some time on this.
+
+571
+00:59:11,599 --> 00:59:21,200
+It ends up taking like six months and everyone's like why did we spend six months redoing this freaking landing page like I would have given it three weeks and then moved on.
+
+572
+00:59:21,200 --> 00:59:23,680
+And the way to do that is you just commit up front.
+
+573
+00:59:23,680 --> 00:59:24,960
+We will spend three weeks on this.
+
+574
+00:59:24,960 --> 00:59:28,960
+We'll to get as much done as we can in three weeks and then we'll move on.
+
+575
+00:59:28,960 --> 00:59:30,720
+People talk about this very hard to actually do.
+
+576
+00:59:30,720 --> 00:59:34,079
+So I love that's how you actually approach some of these bigger features you work on.
+
+577
+00:59:34,079 --> 00:59:38,240
+Do you guys practice shape up by any chance or this is just like a thing you do?
+
+578
+00:59:38,240 --> 00:59:42,319
+Uh no actually I wasn't familiar with it but I definitely going to check it out.
+
+579
+00:59:42,319 --> 00:59:42,559
+Yeah.
+
+580
+00:59:42,559 --> 00:59:43,119
+Okay cool.
+
+581
+00:59:43,119 --> 00:59:44,720
+Yeah it's a it's a whole method.
+
+582
+00:59:44,720 --> 00:59:47,760
+Uh and we'll have I think the episode right before this is actually that episode.
+
+583
+00:59:47,760 --> 00:59:48,079
+Okay.
+
+584
+00:59:48,079 --> 00:59:53,839
+Let me go in a different direction and kind of keep extracting lessons from this journey because that was a really fruitful place to go.
+
+585
+00:59:53,839 --> 00:59:55,520
+So let me ask you this question.
+
+586
+00:59:55,520 --> 01:00:00,640
+What's one thing that you wish you'd known before stepping into the role that you're in today?
+
+587
+01:00:00,640 --> 01:00:02,000
+This is an interesting question.
+
+588
+01:00:02,000 --> 01:00:09,119
+I think you know there are many aspects to it and maybe if I'll take the the personal aspect.
+
+589
+01:00:09,119 --> 01:00:15,839
+So you know I've been in charge of like the the product and technology from from like since I joined the company.
+
+590
+01:00:15,839 --> 01:00:20,640
+But with that my role has changed I think like dozens of times.
+
+591
+01:00:20,640 --> 01:00:28,000
+Like I I feel I'm very fortunate to work in one company but actually work in dozens of different companies.
+
+592
+01:00:28,000 --> 01:00:39,920
+think about the scale that we talked about like each point is a different uh it's actually a different company and a different role and different challenge and I think that you know something that
+
+593
+01:00:39,920 --> 01:00:49,839
+maybe is counterintuitive personally for me was that in many of the phases that we undergo with I felt that what got me
+
+594
+01:00:49,839 --> 01:01:00,240
+to this phase is is not necessarily what's going to make me successful in the next phase and if I want to be even more blunt you know there will like
+
+595
+01:01:00,240 --> 01:01:10,000
+personally times when suddenly I saw how my biggest you know strength uh for instance like mastering all the details and
+
+596
+01:01:10,000 --> 01:01:20,319
+having everything in my head knowing exactly what's happening on every corner of what we do this is was probably something that gave a lot of value when
+
+597
+01:01:20,319 --> 01:01:31,640
+we were small but as we got bigger I think like it suddenly created you know even a damage you know continuing to do the same thing
+
+598
+01:01:31,640 --> 01:01:41,440
+and in many ways it takes time to do this realization and I think that a good advice that I would love to have is that
+
+599
+01:01:41,440 --> 01:01:52,160
+don't be afraid again to to let go of things that you think are superpowers many times your superpowers that brought you to this point and made you successful many times you think that if
+
+600
+01:01:52,160 --> 01:02:02,040
+you let it go you won't be successful and it's frightening but I really feel that you need to constantly evaluate what your current
+
+601
+01:02:02,040 --> 01:02:13,359
+role is actually is actually what what is the role like and what is needed in order to be successful in it and not continue with the inertion and this is
+
+602
+01:02:13,359 --> 01:02:25,040
+something that I wish someone has told me yeah it took me time in many cases you know many I did it too late is there anything that helped you realize this or get good at this is it like coaching is
+
+603
+01:02:25,040 --> 01:02:30,000
+it just doing it and surviving driving and failing and be like, "Oh, I see."
+
+604
+01:02:30,000 --> 01:02:32,319
+I think all of the above.
+
+605
+01:02:32,319 --> 01:02:42,000
+I think that one sign for that for me was that in many cases I felt uh I'm
+
+606
+01:02:42,000 --> 01:02:51,119
+doing a very good job but then people like uh it can be like I I'll give you an example okay like uh for instance
+
+607
+01:02:51,119 --> 01:03:03,000
+doing a company like leadership QBRS okay quarterly business reviews so when we just started it with it very early you know I would actually tell about
+
+608
+01:03:03,000 --> 01:03:13,119
+everything and you know I remember one meeting that I went out of the meeting and I say wow I really managed to you know convey everything and explain
+
+609
+01:03:13,119 --> 01:03:21,799
+everything and very like in a very articulated way and like one of my colleagues in the core leadership team
+
+610
+01:03:21,799 --> 01:03:31,240
+said I didn't understand anything like what is the bottom line of all of this and you know it was like uh
+
+611
+01:03:31,240 --> 01:03:40,559
+uh you suddenly realize that what you thought is is good is not necessarily what the other people needs from you at
+
+612
+01:03:40,559 --> 01:03:51,039
+this point and you know like uh after understanding that I I went and asked like what would be beneficial for you he said listen I want to keep in my head like the three most meaningful things
+
+613
+01:03:51,039 --> 01:04:01,839
+that you are currently facing with I don't want to hear everything and you know like it's hard But uh but this was
+
+614
+01:04:01,839 --> 01:04:12,480
+a point for me that I realized that I need to change and I need to change something and the the like the requirements are different and like at the beginning you know I tried to say
+
+615
+01:04:12,480 --> 01:04:22,480
+but listen it's very it's important that you know like you you're sticking to it right but uh we need to let it go sometimes and think like from the beginning.
+
+616
+01:04:22,480 --> 01:04:27,839
+There's this phrase that someone shared on this podcast once where in as you rise in your career,
+
+617
+01:04:27,839 --> 01:04:33,359
+you often go from the person that is pitching leaders on something to the person being pitched.
+
+618
+01:04:33,359 --> 01:04:38,440
+And that's a really weird place to move from, you know, having to learn how to be give great feedback,
+
+619
+01:04:38,440 --> 01:04:40,960
+delegate, let go of things.
+
+620
+01:04:40,960 --> 01:04:44,400
+And I love that this this is a good example of that.
+
+621
+01:04:44,400 --> 01:04:44,720
+Yeah.
+
+622
+01:04:44,720 --> 01:04:49,520
+Since we're getting a little vulnerable and open about stuff, I want to try this question.
+
+623
+01:04:49,520 --> 01:04:52,880
+you haven't you've done a lot of podcasts, you've done a lot of interviews, you've been all over the place.
+
+624
+01:04:52,880 --> 01:04:58,720
+Is there anything you haven't shared anywhere else that might be helpful to share here about the the journey you've been on?
+
+625
+01:04:58,720 --> 01:04:59,039
+Yeah.
+
+626
+01:04:59,039 --> 01:05:10,400
+So maybe continuing with the same point you know like uh it's a crazy journey and it's crazy personal journey if you think about it like uh I remember Roy once
+
+627
+01:05:10,400 --> 01:05:22,079
+said if someone would have interviewed me to a public company worth you know like I would say 10 billion dollars in market cap and managing 2500
+
+628
+01:05:22,079 --> 01:05:23,039
+employees.
+
+629
+01:05:23,039 --> 01:05:32,440
+I'm not sure that I would interviewed myself and get myself to the job and I can you know for me there were a lot of moments and it's constantly
+
+630
+01:05:32,440 --> 01:05:43,440
+happening h you know when things you know are going sideways and things doesn't work and you see so many things are breaking down and you know you can
+
+631
+01:05:43,440 --> 01:05:51,680
+be on the same day super happy and suddenly on the lowest point there is and I can share you know many times I
+
+632
+01:05:51,680 --> 01:06:02,960
+I've asked myself like uh whether I'm the right person to lead it, whether we need like someone that is coming with all the experience to this phase and I
+
+633
+01:06:02,960 --> 01:06:13,960
+remember like talk that I had with he tell me he told me something listen first of all as the one who built it no one would be able to do it like
+
+634
+01:06:13,960 --> 01:06:24,920
+you and I think it's an important you know thing to remember when times are tough I really believe that you know if you have the passion and if you have the
+
+635
+01:06:24,920 --> 01:06:36,079
+will and and if you are willing to do the hard work in order to constantly adjust and evolve and you know to be vulnerable and also you know to say
+
+636
+01:06:36,079 --> 01:06:46,160
+about yourself like I didn't understand something now I need to learn it and I need to do things differently you know it's a very important point if you want to do this
+
+637
+01:06:46,160 --> 01:06:58,079
+kind of a of a journey and it's hard and something I can share you know I can reassure everyone that are listening to us you know if you're feeling it you're
+
+638
+01:06:58,079 --> 01:07:08,400
+not the only one everyone are feeling it from once in a while be confident about yourself be vulnerable in order to learn and to evolve and I really love to do
+
+639
+01:07:08,400 --> 01:07:19,359
+like a a mental you know mental exercise of like saying like we we said about the product so let's say I'm I'm Daniel of
+
+640
+01:07:19,359 --> 01:07:28,960
+like next six months, how do I want to look back on these six months and what do I want to say about myself that I learned that I evolved and this helped
+
+641
+01:07:28,960 --> 01:07:37,720
+you get out from the state of like everything is okay I'm good and it makes you like want to learn and want to
+
+642
+01:07:37,720 --> 01:07:49,280
+evolve and also like stay in doing mode like I don't believe in like I think the one one thing that really characterized
+
+643
+01:07:49,280 --> 01:07:57,559
+me is that I can be like very you know it can be very difficult and very challenging time but on the next day I'm
+
+644
+01:07:57,559 --> 01:08:08,400
+already bouncing back with energy and in order like to come and do things and win it and you know there are a lot of things that we as leaders needs to do in
+
+645
+01:08:08,400 --> 01:08:18,480
+order to to help ourselves to keep like this mental you know state so I like to run I like to do things that are unrelated to work in order to get back
+
+646
+01:08:18,480 --> 01:08:28,719
+to my center but then quickly bounce back and to really believe in myself in the team around me.
+
+647
+01:08:28,719 --> 01:08:37,199
+So this is yeah this is something maybe very personal but uh I'm pretty sure I'm not the only one you know feeling it.
+
+648
+01:08:37,199 --> 01:08:39,120
+I appreciate you sharing that.
+
+649
+01:08:39,120 --> 01:08:50,560
+There's a a post that I did a long time ago with a coach and she it was about imposttor syndrome and she made this really powerful point that uh like you are actually an imposttor in
+
+650
+01:08:50,560 --> 01:08:51,279
+the role you're in.
+
+651
+01:08:51,279 --> 01:08:53,679
+You've never done this before.
+
+652
+01:08:53,679 --> 01:08:55,839
+Like most people are imposters in their role.
+
+653
+01:08:55,839 --> 01:08:59,120
+They've never been as chief product officer in a lot of cases.
+
+654
+01:08:59,120 --> 01:09:01,440
+They've never led teams this large.
+
+655
+01:09:01,440 --> 01:09:04,880
+And first of all, just realize that you actually are.
+
+656
+01:09:04,880 --> 01:09:06,799
+And second of all, that's okay.
+
+657
+01:09:06,799 --> 01:09:08,560
+And most people are like you said.
+
+658
+01:09:08,560 --> 01:09:12,319
+And then third of all, this advice you shared about how to work through that is really powerful.
+
+659
+01:09:12,319 --> 01:09:17,279
+Just like know many people feel this way, uh work hard, I think is a really important part of this.
+
+660
+01:09:17,279 --> 01:09:21,359
+Just like know there's another day and that you can bounce back.
+
+661
+01:09:21,359 --> 01:09:24,319
+Remember that everyone are people.
+
+662
+01:09:24,319 --> 01:09:28,719
+No one is born to be like in the world that he's currently at.
+
+663
+01:09:28,719 --> 01:09:32,159
+And you know another thing that you know in Monday we are scaling so fast.
+
+664
+01:09:32,159 --> 01:09:43,120
+So even people that are coming with experience and I had you know the chance to see it over and over again because we are going so fast each one of us will get to a point which is
+
+665
+01:09:43,120 --> 01:09:47,359
+the first time he's doing it sooner or later.
+
+666
+01:09:47,359 --> 01:09:58,320
+So experience matters and we have like a a lot of people that are coming and bringing experience from from the outside but also remember that and remember that everyone are people and
+
+667
+01:09:58,320 --> 01:10:02,719
+like no one was born in a position.
+
+668
+01:10:02,719 --> 01:10:02,960
+Yeah.
+
+669
+01:10:02,960 --> 01:10:09,120
+And and a company's like like yours it's people have described it as like every six months you have a new job.
+
+670
+01:10:09,120 --> 01:10:09,920
+Exactly.
+
+671
+01:10:09,920 --> 01:10:11,120
+Exactly.
+
+672
+01:10:11,120 --> 01:10:15,520
+We had Cheryl Sandberg once did a talk that I was at where people are complaining.
+
+673
+01:10:15,520 --> 01:10:17,679
+We're we're just like so much is changing.
+
+674
+01:10:17,679 --> 01:10:18,320
+We're growing.
+
+675
+01:10:18,320 --> 01:10:22,960
+Every the culture is not as strong as it was and there's just like things not working.
+
+676
+01:10:22,960 --> 01:10:26,000
+Our processes are no was hiring as hard.
+
+677
+01:10:26,000 --> 01:10:35,920
+And she's just like this is the problems you want because you're growing very fast and that's very good versus if you were not growing it'd be much more painful and
+
+678
+01:10:35,920 --> 01:10:36,320
+hard.
+
+679
+01:10:36,320 --> 01:10:39,440
+So be thankful to see the problems you're facing.
+
+680
+01:10:39,440 --> 01:10:42,560
+I couldn't agree more.
+
+681
+01:10:42,560 --> 01:10:45,840
+You talked about things breaking along the way and things you had to deal with.
+
+682
+01:10:45,840 --> 01:10:47,040
+Is there an example of something?
+
+683
+01:10:47,040 --> 01:10:52,480
+I love these stories of just like maybe a moment of crisis along the journey where you thought like okay things are going to fall apart.
+
+684
+01:10:52,480 --> 01:10:53,360
+This is over.
+
+685
+01:10:53,360 --> 01:10:54,880
+See you everyone.
+
+686
+01:10:54,880 --> 01:11:03,679
+Yeah to be honest we have so many like uh but again this is the problems uh that you are lucky to have.
+
+687
+01:11:03,679 --> 01:11:13,040
+Uh but uh yeah may maybe I'll give you an example like uh you know I remember this day that uh someone from our customer success team has approached me
+
+688
+01:11:13,040 --> 01:11:24,239
+and say listen Daniel we have a spike in performance issues with in the board and you know again like our boards is this table of like think about it like of
+
+689
+01:11:24,239 --> 01:11:32,080
+data and on each time where we add new functionality and we make the platform more mature people are taking it to the extreme.
+
+690
+01:11:32,080 --> 01:11:39,840
+So if you look back 8 years ago, so these kind of tables usually had like let's say five columns and 100 rows.
+
+691
+01:11:39,840 --> 01:11:50,880
+And if you look about it today, it's like hundreds of columns, you know, tens of thousands of rows and like so performance was always a challenge and struggle like in making sure that
+
+692
+01:11:50,880 --> 01:11:54,800
+everything works uh smoothly and this is also a value to us.
+
+693
+01:11:54,800 --> 01:12:01,360
+We really believe that performance is the number one feature uh that makes people use your system.
+
+694
+01:12:01,360 --> 01:12:12,840
+So you know he came to me and I remember that like suddenly seeing the spike in the tickets you know it's super hard right like you say wow it's something super
+
+695
+01:12:12,840 --> 01:12:24,520
+hard you don't necessarily have a magic wand of like fixing it immediately and what we did we actually again connected everyone to it the first thing I did was
+
+696
+01:12:24,520 --> 01:12:36,239
+like taking this graph to everyone in the team and showing in thinking together what we can do And we did a lot of things and we worked really hard and we managed to to make this situation
+
+697
+01:12:36,239 --> 01:12:36,800
+better.
+
+698
+01:12:36,800 --> 01:12:45,560
+And uh you know and then time passed by and you are like continuing and then it happened again.
+
+699
+01:12:45,560 --> 01:12:54,159
+H and I can share that on the first on the third time I said okay we had enough like uh
+
+700
+01:12:54,159 --> 01:12:58,320
+we need to think totally different in a different way.
+
+701
+01:12:58,320 --> 01:13:07,520
+And uh back in the days this is where I think like many of our core like long-term projects have born.
+
+702
+01:13:07,520 --> 01:13:10,000
+The signature one would be Monday DB.
+
+703
+01:13:10,000 --> 01:13:18,880
+It's like a it's an a name we use for like an underlying data infrastructure that we've been building in the last 3 years or so.
+
+704
+01:13:18,880 --> 01:13:23,280
+So think about a very small team and a very small startup.
+
+705
+01:13:23,280 --> 01:13:34,480
+I remember the day that we said listen we need few of our most talented people they are now not going to contribute features anymore we are
+
+706
+01:13:34,480 --> 01:13:46,239
+putting them on like a separate like uh place and let's think and solve this problem while thinking about 100x and
+
+707
+01:13:46,239 --> 01:13:56,880
+you know it really like in many ways so different from what we talked about in so many other of the examples And I think now we said listen instead
+
+708
+01:13:56,880 --> 01:14:01,600
+of being like fixing an issue we want this to be our competitive edge.
+
+709
+01:14:01,600 --> 01:14:11,520
+We have a very unique uh product architecture where everyone can build their own schemas of the table and you know it's like a crazy thing in terms of technology behind that.
+
+710
+01:14:11,520 --> 01:14:18,320
+We want to do something that will not only solve the problem but also will serve us as a competitive edge.
+
+711
+01:14:18,320 --> 01:14:25,920
+And we took a huge risk because you know we took a lot of people and put them aside for that or like not a lot of people but the very
+
+712
+01:14:25,920 --> 01:14:27,880
+talented people.
+
+713
+01:14:27,880 --> 01:14:39,120
+And I think in retrospect by the way we released Monday DB I think one and a half years ago like the the first version it did a huge huge change to customers and in many ways
+
+714
+01:14:39,120 --> 01:14:45,040
+this is what like actually makes us today a platform which is enterprise grade.
+
+715
+01:14:45,040 --> 01:14:53,840
+So my lesson from that is that if you feel about something it is strategic, you need to not only solve
+
+716
+01:14:53,840 --> 01:15:03,840
+problems but be super proactive and also again like uh this contradicts the fact of like what are the goals,
+
+717
+01:15:03,840 --> 01:15:08,239
+what are we going to achieve because you need to lean on like something which is strategic.
+
+718
+01:15:08,239 --> 01:15:16,400
+So with the everything that we said at the beginning of the conversation, there is also things that you need to do because this is the company you want to build.
+
+719
+01:15:16,400 --> 01:15:27,120
+This is the product that you want to build and you don't necessarily get the you know uh lookus of getting conviction from things that happened in the past or
+
+720
+01:15:27,120 --> 01:15:27,840
+from data.
+
+721
+01:15:27,840 --> 01:15:32,159
+You need to just go with your intuition and take this risk.
+
+722
+01:15:32,159 --> 01:15:33,760
+And I'm super happy that we did it.
+
+723
+01:15:33,760 --> 01:15:33,920
+Yeah.
+
+724
+01:15:33,920 --> 01:15:39,440
+But this is an example where things really broke, you know, and uh what we did with it.
+
+725
+01:15:39,440 --> 01:15:49,520
+There's a couple other stories of crisis I'm thinking back to and they're all seem to be a database started reaching capacity and we were about to fall apart because this growth was too fast.
+
+726
+01:15:49,520 --> 01:16:00,640
+So that's an interesting lesson for people to hear just like try to anticipate this a little more and uh sounds like that's what you realize is like let's think 100x from now not just like a couple years from now.
+
+727
+01:16:00,640 --> 01:16:11,199
+There's reminds me of so Brian Johnson he's this uh dude that's trying to live forever or as long as he can and he makes this really interesting point that I promise connects to what you're talking about
+
+728
+01:16:11,199 --> 01:16:22,600
+which is he's like okay what is what is your goal he asked everyone what's your life goal and so they're like I want to do this and this and that okay to accomplish that the base goal you're not even thinking about is you need to not
+
+729
+01:16:22,600 --> 01:16:32,080
+die and that's actually the number one goal everyone should have don't die and I feel like that's infrastructure in companies It's like you have all these metrics and goals,
+
+730
+01:16:32,080 --> 01:16:35,520
+but really the goal underneath that is your infrastructure needs to scale.
+
+731
+01:16:35,520 --> 01:16:44,800
+So it makes sense why this is outside of like okay we have all these metrics and goals like not necessarily treating it as a as a tax or as a risk but rather like you know for
+
+732
+01:16:44,800 --> 01:16:50,719
+for our offering like as a platform this is like actually now one of our core advantages.
+
+733
+01:16:50,719 --> 01:16:51,199
+Mhm.
+
+734
+01:16:51,199 --> 01:17:02,320
+So it's super important as well that value to customers comes in different ways, shapes and forms and you need to to think about the experience and not only about like uh you know and
+
+735
+01:17:02,320 --> 01:17:12,000
+many times the general experience start with things that are reliable performant that you can count on them and suddenly you even use them differently because they are fast.
+
+736
+01:17:12,000 --> 01:17:16,159
+So I think this is another important uh like aspect to it.
+
+737
+01:17:16,159 --> 01:17:16,960
+That's such a good point.
+
+738
+01:17:16,960 --> 01:17:20,320
+when you have a problem, something that's slowing you down or might crumble the company,
+
+739
+01:17:20,320 --> 01:17:23,280
+just not flipping it from how do we just put the band-aid here.
+
+740
+01:17:23,280 --> 01:17:27,120
+It's how do we turn this into a strategic advantage if we really invest the time.
+
+741
+01:17:27,120 --> 01:17:29,040
+I I I like that a lot.
+
+742
+01:17:29,040 --> 01:17:38,320
+Okay, to start to close out our conversation, I'm going to take us to AI corner, which is a recurring segment I tried to get to more and more with this podcast.
+
+743
+01:17:38,320 --> 01:17:49,440
+And the question is, how have you what's an example of you using AI tools in your day-to-day work to do better work to do faster work that you think might be helpful to other folks?
+
+744
+01:17:49,440 --> 01:18:01,320
+H maybe I start with a personal one, you know, like uh I'm not it's not about work, but I think it really shows that for me it was like a moment of
+
+745
+01:18:01,320 --> 01:18:06,640
+like really saying this this has so much potential in it.
+
+746
+01:18:06,640 --> 01:18:14,159
+Uh, so I actually prepared myself for a marathon and unfortunately I got injured in my knee.
+
+747
+01:18:14,159 --> 01:18:23,520
+So yeah, so I went to do an MRI scan and I finished the scan and they gave me this disc with the results and then they said,
+
+748
+01:18:23,520 --> 01:18:26,880
+"Listen, uh, you need to schedule a doctor appointment.
+
+749
+01:18:26,880 --> 01:18:29,040
+It's 5 days from now."
+
+750
+01:18:29,040 --> 01:18:29,280
+Okay.
+
+751
+01:18:29,280 --> 01:18:40,719
+I said I took it put it in charge and asked for like the results an explanation of line by line what what does it mean and then I of course went to the doctor and said these are the
+
+752
+01:18:40,719 --> 01:18:51,360
+results but I think like for me you know this is this is something that I was really happy about using it and it also opens my mind a lot because I think that
+
+753
+01:18:51,360 --> 01:18:58,800
+if you think about it from the product perspective and this is how we think about AI in Monday the technology is amazing.
+
+754
+01:18:58,800 --> 01:19:08,719
+Yeah, you you can do so much with it, but you know there's still the part of like productizing it because every person that I talked with him
+
+755
+01:19:08,719 --> 01:19:20,640
+about this example like with enthusiasm he said how did you think about putting your MRI there and I said I don't know like I just did but this is all like creating products that actually allow
+
+756
+01:19:20,640 --> 01:19:32,440
+people to leverage this technology and more on the work side you know I use it a lot I think like for Like one recent example I would say is like we
+
+757
+01:19:32,440 --> 01:19:42,280
+really worked hard towards like determining the the pricing for AI offering that I was mentioning earlier
+
+758
+01:19:42,280 --> 01:19:51,560
+and just in like two hours I was manag I managed to get a full perspective on what everyone else are doing you know
+
+759
+01:19:51,560 --> 01:20:02,480
+and we have analysts and we have product managers and but the fact that I was independent and managed to get like you know the initial thoughts and like all the information in just a bit.
+
+760
+01:20:02,480 --> 01:20:03,760
+It was mind-blowing.
+
+761
+01:20:03,760 --> 01:20:11,280
+So I use it a lot in order to understand things that are like very extensive like what the competitors are doing.
+
+762
+01:20:11,280 --> 01:20:16,719
+What is the history of this and that and I think it helped me a lot in that sense.
+
+763
+01:20:16,719 --> 01:20:18,159
+These are awesome examples.
+
+764
+01:20:18,159 --> 01:20:19,760
+And is this all chat JPT?
+
+765
+01:20:19,760 --> 01:20:22,239
+Is that the tool of choice?
+
+766
+01:20:22,239 --> 01:20:23,199
+You know it's hard.
+
+767
+01:20:23,199 --> 01:20:25,440
+I have like my own periods right now.
+
+768
+01:20:25,440 --> 01:20:28,239
+It's changing from one week to another.
+
+769
+01:20:28,239 --> 01:20:32,080
+H this do actually were with chipdia.
+
+770
+01:20:32,080 --> 01:20:32,800
+Very cool.
+
+771
+01:20:32,800 --> 01:20:34,719
+The first example my wife does all the time.
+
+772
+01:20:34,719 --> 01:20:40,000
+My mother-in-law was in the hospital and we're waiting for the doctor to show up and she just put the chart in Chad GPT.
+
+773
+01:20:40,000 --> 01:20:41,840
+It's like what's what's the problem?
+
+774
+01:20:41,840 --> 01:20:44,480
+And it's exactly what he told us.
+
+775
+01:20:44,480 --> 01:20:54,320
+And it feels like like it feels like we're in a world now where an engineer without say cursor or one of these tools is just not like that's not that's not possible anymore.
+
+776
+01:20:54,320 --> 01:21:01,520
+And it feels like now with going to doctors is like if you don't do this and see what it says like you're missing out on a big gap.
+
+777
+01:21:01,520 --> 01:21:10,600
+There's this New York Times story I don't know if you've seen where they actually compared a doctor's analysis versus a doctor plus JGPT plus just
+
+778
+01:21:10,600 --> 01:21:17,679
+JPT and uh guess guess what was the the the best most accurate uh diagnosis.
+
+779
+01:21:17,679 --> 01:21:22,159
+Yeah I want to say chaptt you know but that's exactly what it was.
+
+780
+01:21:22,159 --> 01:21:32,960
+not even a doctor with chachi PT you know I'll tell you I'll tell you a story about it so in the MRI you know I I did it because I I wanted to to go skiing and I didn't know
+
+781
+01:21:32,960 --> 01:21:42,880
+if I can do it or not so I asked Shaj and he said like uh all the recommendations and what I need to do and so on and then when I was at the doctor I said I asked him the same
+
+782
+01:21:42,880 --> 01:21:54,000
+question can I do ski he said I don't know I never ski you know so it's not only about like getting the information straight away and getting accuracy It's the fact that you can continue and deep
+
+783
+01:21:54,000 --> 01:21:54,880
+dive with it.
+
+784
+01:21:54,880 --> 01:21:59,760
+And this is something that also like when I was in the pricing, you know, it's not only the bit of information,
+
+785
+01:21:59,760 --> 01:22:02,159
+but the fact that you can continue and continue and continue.
+
+786
+01:22:02,159 --> 01:22:07,120
+It's like it's definitely super super impressive and it doesn't get annoyed.
+
+787
+01:22:07,120 --> 01:22:07,920
+It doesn't get bored.
+
+788
+01:22:07,920 --> 01:22:08,960
+It's and it's very supportive.
+
+789
+01:22:08,960 --> 01:22:12,719
+Yeah, it's always good intense or not, but yeah.
+
+790
+01:22:12,719 --> 01:22:14,239
+So kind.
+
+791
+01:22:14,239 --> 01:22:14,880
+Amazing.
+
+792
+01:22:14,880 --> 01:22:15,199
+Okay.
+
+793
+01:22:15,199 --> 01:22:17,199
+Well, Daniel, we've we've covered a lot of ground.
+
+794
+01:22:17,199 --> 01:22:18,159
+This was extremely fun.
+
+795
+01:22:18,159 --> 01:22:22,800
+Before we get to our very exciting lightning round, is there anything else that you wanted to share?
+
+796
+01:22:22,800 --> 01:22:25,440
+Any other nuggets of wisdom you want to leave listeners with?
+
+797
+01:22:25,440 --> 01:22:34,080
+I think that in many ways like the the things that we managed to achieve in Monday is due to the great people and culture that we
+
+798
+01:22:34,080 --> 01:22:45,760
+have and you know in early days we used to take it for granted in a way that uh not the people but the culture the fact that everyone understand it the fact that everyone are practicing it and then
+
+799
+01:22:45,760 --> 01:22:55,360
+you say okay culture is like something that you can't put your fingers on but now as we scale like I really see how
+
+800
+01:22:55,360 --> 01:22:59,199
+this is what actually drives everything forward.
+
+801
+01:22:59,199 --> 01:23:09,040
+Uh so maybe just to say like on a personal note that a huge part of how I see my role is about like the people
+
+802
+01:23:09,040 --> 01:23:20,400
+and also about how we work together and what kind of an environment we want to build to ourselves and we talked a lot about it during the the episode but you know I really feel that I can't
+
+803
+01:23:20,400 --> 01:23:30,639
+underestimate on how meaningful it is and how like grateful I am that I'm working with such talented people and doing what I That's awesome.
+
+804
+01:23:30,639 --> 01:23:34,960
+Uh, I bet we could do a whole other episode on just culture and what you've learned building a culture,
+
+805
+01:23:34,960 --> 01:23:36,400
+what the culture is like at Monday.
+
+806
+01:23:36,400 --> 01:23:40,159
+But, uh, we got to we got to get to our very exciting lightning round.
+
+807
+01:23:40,159 --> 01:23:41,360
+Daniel, are you ready?
+
+808
+01:23:41,360 --> 01:23:42,719
+I'm ready.
+
+809
+01:23:42,719 --> 01:23:43,199
+All right.
+
+810
+01:23:43,199 --> 01:23:44,800
+So, I've got five questions for you.
+
+811
+01:23:44,800 --> 01:23:49,600
+First question is, what are two or three books that you find yourself recommending most to other people?
+
+812
+01:23:49,600 --> 01:23:56,800
+The first one I would say is like uh is the No Rules rules book by Netflix.
+
+813
+01:23:56,800 --> 01:24:08,360
+uh back in the days we we used even the the slides uh but I think we took a lot of inspiration out of it and I think that although we have different cultures many of the things around like you know
+
+814
+01:24:08,360 --> 01:24:16,960
+execution like uh excellent people and so on are things that like I can really resonate with and this is something that
+
+815
+01:24:16,960 --> 01:24:28,719
+we really like uh to give people away after talking about our culture and so on to get inspiration also from other cultures uh And another maybe on a on a
+
+816
+01:24:28,719 --> 01:24:38,000
+different way you know aspect is a book that actually our our co is giving to me
+
+817
+01:24:38,000 --> 01:24:47,520
+h it its name is nonviolent communication and it's about effective ways of communication and understanding
+
+818
+01:24:47,520 --> 01:24:57,760
+the people and their needs and how to communicate in a way that actually promotes you know an effective communication And what I liked about
+
+819
+01:24:57,760 --> 01:25:07,679
+this book is uh you know me and Roy we love to to talk a lot and like after we both read the book like our way of talking like change so it's very
+
+820
+01:25:07,679 --> 01:25:16,400
+practical so I also like like to give it away to our leadership and people within the team because I think it has like real value in it.
+
+821
+01:25:16,400 --> 01:25:26,800
+Uh, I'm trying to remember the framework of nonviolent communication is like I observed you speaking too much in this meeting and that made me feel like I wasn't listened to.
+
+822
+01:25:26,800 --> 01:25:27,600
+Something like that, right?
+
+823
+01:25:27,600 --> 01:25:28,560
+I forget exactly.
+
+824
+01:25:28,560 --> 01:25:29,920
+You shouldn't be judgmental.
+
+825
+01:25:29,920 --> 01:25:35,199
+You just need to say facts and talk about how you feel like in so yeah.
+
+826
+01:25:35,199 --> 01:25:35,360
+Yeah.
+
+827
+01:25:35,360 --> 01:25:37,760
+And I know I'm kind of joking about it, but it's actually really powerful.
+
+828
+01:25:37,760 --> 01:25:47,040
+And we had we had uh Carol Robin on the podcast who created this program at Stanford called Tetify which is similar to this whole process this whole approach to talking.
+
+829
+01:25:47,040 --> 01:25:52,800
+And by the way, I love the combination of Israeli uh directness and nonviolent communication.
+
+830
+01:25:52,800 --> 01:25:55,360
+I want to see that in action.
+
+831
+01:25:55,360 --> 01:25:58,639
+Yeah, definitely.
+
+832
+01:25:58,639 --> 01:25:59,600
+Okay, next question.
+
+833
+01:25:59,600 --> 01:26:03,520
+Do you have a favorite recent movie or TV show that you really enjoyed?
+
+834
+01:26:03,520 --> 01:26:06,639
+So to be honest, I I don't watch TV so much.
+
+835
+01:26:06,639 --> 01:26:14,719
+like I get bored really fast and uh going back to other things but uh but like uh when I do
+
+836
+01:26:14,719 --> 01:26:24,960
+watch TV so many times it's like u in order to clear my head so it's not that kind of exciting things maybe a different thing that I'm doing is like
+
+837
+01:26:24,960 --> 01:26:36,800
+playing on the PlayStation with my son you know FIFA just to vent out yeah and in terms of serious maybe like one thing that pops up is like the
+
+838
+01:26:36,800 --> 01:26:37,360
+formula.
+
+839
+01:26:37,360 --> 01:26:38,800
+I really liked it.
+
+840
+01:26:38,800 --> 01:26:40,960
+Formula 1 in Netflix.
+
+841
+01:26:40,960 --> 01:26:42,159
+Drive to Survive.
+
+842
+01:26:42,159 --> 01:26:43,120
+Drive to Survive.
+
+843
+01:26:43,120 --> 01:26:43,440
+Exactly.
+
+844
+01:26:43,440 --> 01:26:43,679
+Yeah.
+
+845
+01:26:43,679 --> 01:26:50,000
+I I really loved seeing the dynamics and everything behinds, you know, it looks like something simple of like driving cars,
+
+846
+01:26:50,000 --> 01:26:52,880
+but you see that there's so much into it.
+
+847
+01:26:52,880 --> 01:26:59,920
+Uh so it's also something that uh like really interesting and like opens your mind to watch.
+
+848
+01:26:59,920 --> 01:27:00,159
+Yeah.
+
+849
+01:27:00,159 --> 01:27:01,760
+I haven't I haven't started the new season yet.
+
+850
+01:27:01,760 --> 01:27:02,800
+I wonder if it's great.
+
+851
+01:27:02,800 --> 01:27:03,679
+Yeah.
+
+852
+01:27:03,679 --> 01:27:04,239
+Likewise.
+
+853
+01:27:04,239 --> 01:27:06,080
+Yeah.
+
+854
+01:27:06,080 --> 01:27:07,040
+Okay, next question.
+
+855
+01:27:07,040 --> 01:27:10,320
+Do you have a favorite product you've recently discovered that you really love?
+
+856
+01:27:10,320 --> 01:27:17,280
+So, you know, I don't want to like to to fall into the all the trap, you know, in terms of product.
+
+857
+01:27:17,280 --> 01:27:28,960
+So, maybe I I'll say something which is not so recent, but product that I love and I I really like to take pictures and one product that I really
+
+858
+01:27:28,960 --> 01:27:30,639
+love is Google Photos.
+
+859
+01:27:30,639 --> 01:27:40,800
+H I think that you know they managed to create something which takes like the technology edge but to a place where myself as a human like really can
+
+860
+01:27:40,800 --> 01:27:43,600
+connect to it and and get a lot of value from it.
+
+861
+01:27:43,600 --> 01:27:47,120
+So I'm like a really heavy user of that.
+
+862
+01:27:47,120 --> 01:27:47,520
+Yeah.
+
+863
+01:27:47,520 --> 01:27:47,760
+Yeah.
+
+864
+01:27:47,760 --> 01:27:51,360
+That is a magical product that I think people under underappreciate.
+
+865
+01:27:51,360 --> 01:27:52,560
+Yeah.
+
+866
+01:27:52,560 --> 01:27:53,120
+Next question.
+
+867
+01:27:53,120 --> 01:27:58,480
+Do you have a favorite life motto that you often come back to find useful and work here in light?
+
+868
+01:27:58,480 --> 01:27:59,679
+Stay positive.
+
+869
+01:27:59,679 --> 01:28:10,320
+Like I think uh being positive, saying uh saying like the good things is a huge huge power and it's a huge driver and it
+
+870
+01:28:10,320 --> 01:28:15,840
+allows you to to give energy to the people around you and it's contagious.
+
+871
+01:28:15,840 --> 01:28:27,520
+So I really love you know staying positive making sure that we keep being optimistic and it doesn't mean that you need to you know uh let go of the
+
+872
+01:28:27,520 --> 01:28:39,280
+problems and don't uh like uh see the problems but also think about always look forward and always think how you can take the current situation make it better and I learned with the way that
+
+873
+01:28:39,280 --> 01:28:44,480
+uh it's really more fun and actually brings better results this way.
+
+874
+01:28:44,480 --> 01:28:46,880
+I'm 1,000% aligned with that.
+
+875
+01:28:46,880 --> 01:28:47,679
+Final question.
+
+876
+01:28:47,679 --> 01:28:50,400
+I know you were in the army at one point in your life.
+
+877
+01:28:50,400 --> 01:28:55,199
+Is there anything that you learned from that experience that helps you build better products?
+
+878
+01:28:55,199 --> 01:29:06,880
+The funny thing is is that I think that like many things that I did in army, I was actually commanding of like a very big group of
+
+879
+01:29:06,880 --> 01:29:08,560
+people in in the army.
+
+880
+01:29:08,560 --> 01:29:19,239
+And I think uh it's not about building products but more about building teams and being building building like uh this sense of purpose sense of shared like
+
+881
+01:29:19,239 --> 01:29:29,040
+belonging and I think that in that way many things are quite similar to be it's it might be like counterintuitive but
+
+882
+01:29:29,040 --> 01:29:38,840
+many things are quite similar and from that many many of the things of like being together although it's like a hierarchal
+
+883
+01:29:38,840 --> 01:29:45,760
+environment is something that I take with me and a lot of like practical ways to lead the big organization.
+
+884
+01:29:45,760 --> 01:29:48,080
+I would say Daniel, this was awesome.
+
+885
+01:29:48,080 --> 01:29:49,040
+You're awesome.
+
+886
+01:29:49,040 --> 01:29:52,000
+Uh so much stuff that we went through, so many golden nuggets.
+
+887
+01:29:52,000 --> 01:29:56,239
+I think we're going to help a lot of people with building products, building teams, scaling,
+
+888
+01:29:56,239 --> 01:30:00,400
+surviving all these scaling challenges that keep coming up in these conversations.
+
+889
+01:30:00,400 --> 01:30:01,440
+Two final questions.
+
+890
+01:30:01,440 --> 01:30:03,520
+Where can folks find you online if they want to reach out?
+
+891
+01:30:03,520 --> 01:30:05,520
+Maybe talk about being more transparent.
+
+892
+01:30:05,520 --> 01:30:08,080
+And then how can listeners be useful to you?
+
+893
+01:30:08,080 --> 01:30:17,000
+Uh so online like I think that two main ways is like by LinkedIn I would say and second is
+
+894
+01:30:17,000 --> 01:30:25,360
+podcasts like I'm guessing in a lot of podcast and I think that this is like a cool way to share things through stories
+
+895
+01:30:25,360 --> 01:30:32,080
+and through like practical examples and you know in terms of listeners being useful to me.
+
+896
+01:30:32,080 --> 01:30:36,480
+So first of all they in many ways they already are useful to me.
+
+897
+01:30:36,480 --> 01:30:44,239
+I I really love your podcast and like uh I'm ging a lot of you know insights from others and this is something I I really love.
+
+898
+01:30:44,239 --> 01:30:49,679
+Uh so many of people that probably listening were also contributing to that.
+
+899
+01:30:49,679 --> 01:31:01,040
+So thank you for that and I really hope with that that this episode would also be meaningful to people and that they will take value out of it and if they are it would be amazing to hear
+
+900
+01:31:01,040 --> 01:31:01,520
+about it.
+
+901
+01:31:01,520 --> 01:31:11,679
+Like I remember, you know, someone that sent me a picture of his new dashboard in the office and what he he do with that and add like additional
+
+902
+01:31:11,679 --> 01:31:16,400
+ideas of what what he can do that we we actually took also here in Monday.
+
+903
+01:31:16,400 --> 01:31:21,040
+So if you do something even if it's small, let me know.
+
+904
+01:31:21,040 --> 01:31:23,920
+It's super fun to hear and also interesting.
+
+905
+01:31:23,920 --> 01:31:25,280
+All right, there's the call to action.
+
+906
+01:31:25,280 --> 01:31:31,280
+If you implement some of Daniel's advice, especially put up new dashboards or monitors in your office,
+
+907
+01:31:31,280 --> 01:31:35,120
+please send photos over LinkedIn, it sounds like, is the best medium.
+
+908
+01:31:35,120 --> 01:31:37,360
+Daniel, thank you so much for being here.
+
+909
+01:31:37,360 --> 01:31:38,400
+Thank you very much, Lenny.
+
+910
+01:31:38,400 --> 01:31:40,000
+It was a pleasure.
+
+911
+01:31:40,000 --> 01:31:42,000
+Bye, everyone.
+
+912
+01:31:42,000 --> 01:31:43,360
+Thank you so much for listening.
+
+913
+01:31:43,360 --> 01:31:47,679
+If you found this valuable, you can subscribe to the show on Apple Podcast, Spotify,
+
+914
+01:31:47,679 --> 01:31:49,840
+or your favorite podcast app.
+
+915
+01:31:49,840 --> 01:31:56,159
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+916
+01:31:56,159 --> 01:32:01,600
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+917
+01:32:01,600 --> 01:32:05,320
+See you in the next episode.

@@ -1,0 +1,4087 @@
+1
+00:00:00,000 --> 00:00:08,160
+We worked on a guest post together had this really key insight that building AI products is very different from building nonAI products.
+
+2
+00:00:08,160 --> 00:00:10,400
+>> Most people tend to ignore the non-determinism.
+
+3
+00:00:10,400 --> 00:00:15,839
+You don't know how the user might behave with your product and you also don't know how the LLM might respond to that.
+
+4
+00:00:15,839 --> 00:00:18,880
+The second difference is the agency control trade-off.
+
+5
+00:00:18,880 --> 00:00:26,000
+Every time you hand over decision-m capabilities to agentic systems, you're kind of relinquishing some amount of control on your end.
+
+6
+00:00:26,000 --> 00:00:28,000
+>> This significantly changes the way you should be building product.
+
+7
+00:00:28,000 --> 00:00:29,760
+So we recommend building step by step.
+
+8
+00:00:29,760 --> 00:00:34,640
+When you start small, it forces you to think about what is the problem that I'm going to solve.
+
+9
+00:00:34,640 --> 00:00:42,640
+In all this advancements of the AI, one easy slippery slope is to keep thinking about complexities of the solution and forget the problem that you're trying to solve.
+
+10
+00:00:42,640 --> 00:00:46,480
+>> It's not about being the first company to have an agent among your competitors.
+
+11
+00:00:46,480 --> 00:00:50,160
+It's about have you built the right fly wheels in place so that you can improve over time.
+
+12
+00:00:50,160 --> 00:00:55,120
+>> What kind of ways of working do you see in companies that build AI products successfully?
+
+13
+00:00:55,120 --> 00:00:58,320
+I used to work with the CEO of now Rackspace.
+
+14
+00:00:58,320 --> 00:01:03,920
+He would have this block every day in the morning which would say catching up with AI 4 to 6:00 a.m.
+
+15
+00:01:03,920 --> 00:01:06,640
+Leaders have to get back to being hands-on.
+
+16
+00:01:06,640 --> 00:01:13,760
+You must be comfortable with the fact that your intuions might not be right and you probably are the dumbest person in the room and you want to learn from everyone.
+
+17
+00:01:13,760 --> 00:01:16,560
+>> What do you think the next year of AI is going to look like?
+
+18
+00:01:16,560 --> 00:01:18,479
+>> Persistence is extremely valuable.
+
+19
+00:01:18,479 --> 00:01:21,200
+Successful companies right now building in any new area.
+
+20
+00:01:21,200 --> 00:01:26,640
+They are going through the pain of learning this, implementing this and understanding what works and what doesn't work.
+
+21
+00:01:26,640 --> 00:01:29,759
+Pain is the new mode.
+
+22
+00:01:29,759 --> 00:01:33,040
+Today my guests are Aishwaria Raanti and Kiti Bottom.
+
+23
+00:01:33,040 --> 00:01:40,320
+Kiti works on codecs at OpenAI and has spent the last decade building AI and ML infrastructure at Google and at Kumo.
+
+24
+00:01:40,320 --> 00:01:46,320
+Ash was an early AI researcher at Alexa and Microsoft and has published over 35 research papers.
+
+25
+00:01:46,320 --> 00:01:52,399
+Together, they've led and supported over 50 AI product deployments across companies like Amazon,
+
+26
+00:01:52,399 --> 00:01:56,240
+Data Bricks, OpenAI, Google, and both startups and large enterprises.
+
+27
+00:01:56,240 --> 00:02:05,119
+Together, they also teach the number one rated AI course on Maven, where they teach product leaders all of the key lessons they've learned about building successful AI products.
+
+28
+00:02:05,119 --> 00:02:13,200
+The goal of this episode is to save you and your team a lot of pain and suffering and wasted time trying to build your AI product.
+
+29
+00:02:13,200 --> 00:02:17,760
+Whether you are already struggling to make your product work or want to avoid that struggle,
+
+30
+00:02:17,760 --> 00:02:19,120
+this episode is for you.
+
+31
+00:02:19,120 --> 00:02:22,959
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+32
+00:02:22,959 --> 00:02:24,480
+It helps tremendously.
+
+33
+00:02:24,480 --> 00:02:30,879
+And if you become an annual subscriber of my newsletter, you get a year free of a ton of incredible products,
+
+34
+00:02:30,879 --> 00:02:35,840
+including a year free of lovable, replet, bold, gamma, nad linear, Devon, Postto, Superhum,
+
+35
+00:02:35,840 --> 00:02:39,440
+Dcript, Whisper Flow, Perplexity, Warp, Granola, Magic Pattern, Dracast, Chapter D, Mobit,
+
+36
+00:02:39,440 --> 00:02:40,319
+and Stripe Atlas.
+
+37
+00:02:40,319 --> 00:02:43,519
+Head on over to lenny'snewsletter.com and click product pass.
+
+38
+00:02:43,519 --> 00:02:49,920
+With that, I bring you Awaria Oranti and Kiti bottom after a short word from our sponsors.
+
+39
+00:02:49,920 --> 00:02:52,319
+This episode is brought to you by Merge.
+
+40
+00:02:52,319 --> 00:02:55,120
+Product leaders hate building integrations.
+
+41
+00:02:55,120 --> 00:02:55,920
+They're messy.
+
+42
+00:02:55,920 --> 00:02:56,959
+They're slow to build.
+
+43
+00:02:56,959 --> 00:03:02,400
+They're a huge drain on your road map, and they're definitely not why you got into product in the first place.
+
+44
+00:03:02,400 --> 00:03:05,760
+Lucky for you, Merge is obsessed with integrations.
+
+45
+00:03:05,760 --> 00:03:13,760
+With a single API, B2B SAS companies embed Merge into their product and ship 220 plus customerf facing integrations in weeks,
+
+46
+00:03:13,760 --> 00:03:14,879
+not quarters.
+
+47
+00:03:14,879 --> 00:03:18,480
+Think of merge like Plaid, but for everything B2B SAS.
+
+48
+00:03:18,480 --> 00:03:24,239
+Companies like Merall AI, ramp, and use Merge to connect their customers as accounting,
+
+49
+00:03:24,239 --> 00:03:31,519
+HR, ticketing, CRM, and file storage systems to power everything from automatic onboarding to AI ready data pipelines.
+
+50
+00:03:31,519 --> 00:03:40,640
+Even better, Merge now supports the secure deployment of connectors to AI agents with a new product so that you can safely power AI workflows with real customer data.
+
+51
+00:03:40,640 --> 00:03:47,280
+If your product needs customer data from dozens of systems, Merge is the fastest, safest way to get it.
+
+52
+00:03:47,280 --> 00:03:53,040
+Book and attend a meeting at merge.dev/lenny and they'll send you a $50 Amazon gift card.
+
+53
+00:03:53,040 --> 00:03:56,239
+That's merge.dev/lenny.
+
+54
+00:03:56,239 --> 00:04:01,760
+This episode is brought to you by Stella, the customer research platform built for the AI era.
+
+55
+00:04:01,760 --> 00:04:04,000
+Here's the truth about user research.
+
+56
+00:04:04,000 --> 00:04:07,120
+It's never been more important or more painful.
+
+57
+00:04:07,120 --> 00:04:09,840
+Teams want to understand why customers do what they do.
+
+58
+00:04:09,840 --> 00:04:14,159
+But recruiting users, running interviews, and analyzing insights takes weeks.
+
+59
+00:04:14,159 --> 00:04:17,919
+By the time the results are in, the moment to act has passed.
+
+60
+00:04:17,919 --> 00:04:19,359
+Strella changes that.
+
+61
+00:04:19,359 --> 00:04:24,320
+It's the first platform that uses AI to run and analyze in-depth interviews automatically,
+
+62
+00:04:24,320 --> 00:04:28,160
+bringing fast and continuous user research to every team.
+
+63
+00:04:28,160 --> 00:04:33,360
+Strella's AI moderator asks real follow-up questions, probing deeper when answers are vague,
+
+64
+00:04:33,360 --> 00:04:38,720
+and services patterns across hundreds of conversations, all in a few hours, not weeks.
+
+65
+00:04:38,720 --> 00:04:45,759
+Product design and research teams at companies like Amazon and Dualingo are already using Stella for Figma prototype testing,
+
+66
+00:04:45,759 --> 00:04:51,919
+concept validation, and customer journey research, getting insights overnight instead of waiting for the next sprint.
+
+67
+00:04:51,919 --> 00:04:57,040
+If your team wants to understand customers at the speed you ship products, try Strella.
+
+68
+00:04:57,040 --> 00:05:00,479
+Run your next study at strea.io/lenny.
+
+69
+00:05:00,479 --> 00:05:04,759
+That's s t re l.io/lenny.
+
+70
+00:05:07,840 --> 00:05:13,680
+Ash and Kiti, thank you so much for being here and welcome to the podcast.
+
+71
+00:05:13,680 --> 00:05:14,240
+>> Thank you.
+
+72
+00:05:14,240 --> 00:05:15,280
+Thank you for having us.
+
+73
+00:05:15,280 --> 00:05:16,560
+Super excited for this.
+
+74
+00:05:16,560 --> 00:05:20,160
+>> Let me set the stage for the conversation that we're going to have today.
+
+75
+00:05:20,160 --> 00:05:23,759
+So, you two have built a bunch of AI products yourself.
+
+76
+00:05:23,759 --> 00:05:30,080
+You've gone deep with a lot of companies who uh have built AI products, have struggled to build AI products,
+
+77
+00:05:30,080 --> 00:05:31,440
+build AI agents.
+
+78
+00:05:31,440 --> 00:05:43,280
+You also teach a course on building AI products successfully that and you're kind of like on this mission to just reduce pain and suffering and failure uh that you constantly see people go through when they're building AI
+
+79
+00:05:43,280 --> 00:05:44,240
+products.
+
+80
+00:05:44,240 --> 00:05:52,880
+So to set a little just foundation for the conversation we're going to have, what are you seeing on the ground within companies trying to build AI products?
+
+81
+00:05:52,880 --> 00:05:53,680
+What's going well?
+
+82
+00:05:53,680 --> 00:05:54,720
+What's not going well?
+
+83
+00:05:54,720 --> 00:05:59,680
+>> I think 2025 has been significantly different than 2024.
+
+84
+00:05:59,680 --> 00:06:03,039
+one, the skepticism has significantly reduced.
+
+85
+00:06:03,039 --> 00:06:14,800
+Um, there were tons of leaders last year who probably thought this would be yet another crypto wave and kind of skeptical to get started and a lot of the use cases that I saw last year were more of Snapchat on your data,
+
+86
+00:06:14,800 --> 00:06:14,960
+right?
+
+87
+00:06:14,960 --> 00:06:18,560
+and that was, you know, um calling themselves an AI product.
+
+88
+00:06:18,560 --> 00:06:29,039
+And this year, a ton of companies are really rethinking their user experiences and their workflows and all of that and really understanding that you need to deconstruct and reconstruct your
+
+89
+00:06:29,039 --> 00:06:33,600
+processes in order to have a in order to build successful AI products, right?
+
+90
+00:06:33,600 --> 00:06:35,520
+And that's that's the good stuff.
+
+91
+00:06:35,520 --> 00:06:38,960
+The bad stuff is the execution is still all over the place.
+
+92
+00:06:38,960 --> 00:06:40,400
+Um, think of it, right?
+
+93
+00:06:40,400 --> 00:06:42,479
+This is a three-year-old field.
+
+94
+00:06:42,479 --> 00:06:44,000
+There are no play playbooks.
+
+95
+00:06:44,000 --> 00:06:45,440
+there are no textbooks.
+
+96
+00:06:45,440 --> 00:06:54,400
+Um so you really need to figure out as you go and the AI life cycle both pre-eployment and post- deployment is very different as compared to a
+
+97
+00:06:54,400 --> 00:06:56,240
+traditional software life cycle.
+
+98
+00:06:56,240 --> 00:07:06,479
+Um and so so a lot of old contracts and handoffs between traditional roles like say PMs and engineers and data folks has now been broken.
+
+99
+00:07:06,479 --> 00:07:17,520
+It's and people are really getting adapted to this new way of working together and kind of owning the same feedback loop in a way because previously I feel like PMs and engineers
+
+100
+00:07:17,520 --> 00:07:23,120
+and all of these folks had their own feedback loops to optimize and now you need to be probably sitting in the same room.
+
+101
+00:07:23,120 --> 00:07:28,160
+You're probably looking at agent traces together and deciding how your uh product should behave.
+
+102
+00:07:28,160 --> 00:07:30,800
+So it's a tighter form of collaboration.
+
+103
+00:07:30,800 --> 00:07:33,120
+So companies are still kind of figuring that out.
+
+104
+00:07:33,120 --> 00:07:37,520
+That's kind of what I see um in my consulting practice this year.
+
+105
+00:07:37,520 --> 00:07:38,720
+>> So, let me follow that thread.
+
+106
+00:07:38,720 --> 00:07:41,919
+We worked on a guest post together that came out a few months ago.
+
+107
+00:07:41,919 --> 00:07:52,479
+And the thing that stood out to me most that stuck with me most after working on that post is you had this really uh key insight that building AI products is very different from
+
+108
+00:07:52,479 --> 00:07:54,080
+building non-AI products.
+
+109
+00:07:54,080 --> 00:07:59,039
+And the thing that you're big on getting across is there's two very big differences.
+
+110
+00:07:59,039 --> 00:08:01,199
+Talk about those two differences.
+
+111
+00:08:01,199 --> 00:08:01,520
+>> Yes.
+
+112
+00:08:01,520 --> 00:08:06,400
+Um and again I I want to make sure that we drive home the right point.
+
+113
+00:08:06,400 --> 00:08:12,160
+Um there are tons of uh similarities of building AI systems and software systems as well.
+
+114
+00:08:12,160 --> 00:08:18,879
+But then there are some things that kind of fundamentally change the way you build software systems um versus AI systems,
+
+115
+00:08:18,879 --> 00:08:19,120
+right?
+
+116
+00:08:19,120 --> 00:08:23,039
+And one of them that most people tend to ignore is the non-determinism.
+
+117
+00:08:23,039 --> 00:08:29,520
+Uh you're pretty much working with a non-deterministic API as compared to traditional software.
+
+118
+00:08:29,520 --> 00:08:39,120
+What does that mean and why does that have to affect us is in traditional software you pretty much have a very well-mapped decision engine or workflow.
+
+119
+00:08:39,120 --> 00:08:47,120
+Think of something like booking.com right you um you have an intention that uh you want to make a booking in San Francisco for two nights etc.
+
+120
+00:08:47,120 --> 00:08:55,680
+uh the product has kind of been built uh so that your intention can be converted into a particular action and you kind of are clicking through a bunch of buttons,
+
+121
+00:08:55,680 --> 00:08:59,200
+options, forms and all of that and you finally achieve your intention.
+
+122
+00:08:59,200 --> 00:09:09,519
+But now that layer in AI products has completely been replaced by a very fluid um interface which is mostly natural language which
+
+123
+00:09:09,519 --> 00:09:15,440
+means you the user can literally come up with ton of ways of saying uh or communicating their intentions,
+
+124
+00:09:15,440 --> 00:09:15,680
+right?
+
+125
+00:09:15,680 --> 00:09:20,480
+And that kind of changes a lot of things because now you don't know how your user is going to behave.
+
+126
+00:09:20,480 --> 00:09:21,839
+That's on the input side.
+
+127
+00:09:21,839 --> 00:09:28,720
+And the output is also that you're working with a non-deterministic probabilistic API which is your LLM.
+
+128
+00:09:28,720 --> 00:09:34,240
+And LLMs are pretty sensitive to prompt phrasings and they're pretty much black boxes.
+
+129
+00:09:34,240 --> 00:09:36,959
+So you don't even know how the output surface will look like, right?
+
+130
+00:09:36,959 --> 00:09:43,600
+So this um you don't know how the user might behave with your product and you also don't know how the LLM might respond to that.
+
+131
+00:09:43,600 --> 00:09:47,839
+So you're now working with an input, output, and a proc process.
+
+132
+00:09:47,839 --> 00:09:49,839
+And you don't understand all the three very well.
+
+133
+00:09:49,839 --> 00:09:53,200
+You're trying to kind of anticipate behavior and build for it.
+
+134
+00:09:53,200 --> 00:09:56,640
+And with agentic systems, this kind of gets even harder.
+
+135
+00:09:56,640 --> 00:10:01,120
+And that's where we talk about the second difference, which is the agency control trade-off.
+
+136
+00:10:01,120 --> 00:10:01,920
+Right?
+
+137
+00:10:01,920 --> 00:10:05,279
+What we mean by that, and I'm kind of shocked.
+
+138
+00:10:05,279 --> 00:10:07,279
+So many people don't talk about this.
+
+139
+00:10:07,279 --> 00:10:12,240
+They're extremely obsessed with building autonomous systems, agents can that can do work for you.
+
+140
+00:10:12,240 --> 00:10:17,839
+But every time you hand over decision-m capabilities or autonomy to agentic systems,
+
+141
+00:10:17,839 --> 00:10:20,959
+you're kind of relinquishing some amount of control on your end, right?
+
+142
+00:10:20,959 --> 00:10:29,279
+And when you do that, you want to make sure that your agent has um caning your trust or it is reliable enough that you can allow it to make decisions.
+
+143
+00:10:29,279 --> 00:10:38,880
+And that's where we talk about this agency control trade-off which is if you give your AI agent or your AI system whatever it is more agency which is the ability to make
+
+144
+00:10:38,880 --> 00:10:49,920
+decisions you're also um losing some control and you want to make sure that the agent or the AI system has earned um that ability or has built up trust over time.
+
+145
+00:10:49,920 --> 00:10:57,600
+>> So just to summarize what you're sharing here essentially people have been building product software products for a long time.
+
+146
+00:10:57,600 --> 00:11:08,560
+We're now in a world where the software you're building is one non-deterministic can just do things differently like you know as you said you go to booking.com you find a hotel it's going to be the same experience every time you'll see different hotels
+
+147
+00:11:08,560 --> 00:11:20,480
+but it's a predictable experience with AI you can't predict that it's going to be the exact same thing the thing that you uh plan it to be every time and then the other is there's this trade-off between agency and control how much will
+
+148
+00:11:20,480 --> 00:11:31,600
+the AI do for you versus how much should the person still be in charge and the what I'm hearing is the big point here is significantly changes the way you should be building product and we're going to talk about the impact on how
+
+149
+00:11:31,600 --> 00:11:35,680
+the product development life cycle should change as a result.
+
+150
+00:11:35,680 --> 00:11:39,440
+Is there anything else you want to add there before we get into into that?
+
+151
+00:11:39,440 --> 00:11:47,120
+Yeah, it's definitely like one of the key points that uh this kind of distinction needs to exist in your mind like when you're starting to build.
+
+152
+00:11:47,120 --> 00:11:52,320
+For example, think about if your like objective is to hike uh half term inity, right?
+
+153
+00:11:52,320 --> 00:12:00,959
+You don't start hiking it every day, but you start you know training yourself for like you know in in minor parts and then you slowly improve and then like you go to the end goal,
+
+154
+00:12:00,959 --> 00:12:01,200
+right?
+
+155
+00:12:01,200 --> 00:12:12,000
+I feel like that's extremely similar to what you want to build AI products in the sense that when you don't start with like agents with all the tools and all the context that you have in the company in day one and
+
+156
+00:12:12,000 --> 00:12:15,120
+expect it to work or like you don't even tinker at that level.
+
+157
+00:12:15,120 --> 00:12:25,519
+You need to be deliberately starting in places where there is minimal impact and more human control so that you have like a good grip of what are the current capabilities and what can I do with them
+
+158
+00:12:25,519 --> 00:12:29,680
+and then slowly you know like lean into the more agency and lesser control.
+
+159
+00:12:29,680 --> 00:12:40,880
+So this gives you that confidence that okay I can know that okay this is the particular problem that I'm facing and the AI can solve this extent of it and then like let me next think through what
+
+160
+00:12:40,880 --> 00:12:51,440
+context I need to bring in what kind of tools I need to add to this to improve the uh experience right so I feel like it's also uh it's a good and a bad thing in sense that it's good that you don't
+
+161
+00:12:51,440 --> 00:13:02,800
+have to see the complexity of the outside world of like you know all of this fancy AI agents force and feel like I cannot do that it's always everyone is starting from very uh minimalistic
+
+162
+00:13:02,800 --> 00:13:04,240
+structures and then evolving.
+
+163
+00:13:04,240 --> 00:13:15,040
+And the second part is like it's also good the the bad thing is that as you are like you know trying to build this oneclick agents into your company you don't have to be overwhelmed with this complexity
+
+164
+00:13:15,040 --> 00:13:16,480
+you can like slowly graduate.
+
+165
+00:13:16,480 --> 00:13:20,639
+So that's extremely important and we see this as a repeating pattern over and over.
+
+166
+00:13:20,639 --> 00:13:20,720
+>> Okay.
+
+167
+00:13:20,720 --> 00:13:20,959
+All right.
+
+168
+00:13:20,959 --> 00:13:22,160
+So, let's actually follow that, right?
+
+169
+00:13:22,160 --> 00:13:26,560
+Cuz that's a really important component of how you recommend people build AI stuff.
+
+170
+00:13:26,560 --> 00:13:29,519
+AI stuff, AI products, AI agents, all the AI things.
+
+171
+00:13:29,519 --> 00:13:32,560
+Um, so give us an example what you're talking about here.
+
+172
+00:13:32,560 --> 00:13:38,880
+This idea of starting uh slow with agency and control and then moving kind of up this rung.
+
+173
+00:13:38,880 --> 00:13:39,200
+>> Yeah.
+
+174
+00:13:39,200 --> 00:13:45,519
+For example, a very important or like very prevalent uh application of AI agents is like customer support,
+
+175
+00:13:45,519 --> 00:13:45,920
+right?
+
+176
+00:13:45,920 --> 00:13:57,279
+Uh imagine like you are a company who has like a lot of customer support tickets and why even imagine like OpenAF faced the exact same thing when we were launching products and there was like a
+
+177
+00:13:57,279 --> 00:14:07,519
+huge spike of uh support volume as like you know we launch successful products like image and or uh you know like GPD5 and things like that the kind of questions you get is different the kind
+
+178
+00:14:07,519 --> 00:14:11,680
+of like you know u problems that the customers bring to you is different.
+
+179
+00:14:11,680 --> 00:14:18,079
+So it's not about just like dumping all the uh list of help center articles that you have into the AI agent.
+
+180
+00:14:18,079 --> 00:14:28,480
+you kind of understand what are the things that you can build and so initially the first step of it would be something like uh you have your support agents the human support agents but you will be
+
+181
+00:14:28,480 --> 00:14:39,839
+suggesting uh in terms of okay this is what the AI thinks that is the right thing to do and then you get that feedback loop from the humans that okay this is actually a good suggestion for me in this particular case and this is a
+
+182
+00:14:39,839 --> 00:14:48,959
+bad suggestion and then you can go back and understand okay uh this is what the drawbacks are or this is where the blind spots are and then how do I fix that?
+
+183
+00:14:48,959 --> 00:14:59,360
+And once you get that you can increase the autonomy to say that okay I don't need to suggest to the human I'll actually show the uh show the answer directly to the customers to the
+
+184
+00:14:59,360 --> 00:15:10,079
+customer and then we can actually add more complexity in terms of okay uh I was only answering questions based on health center articles but now let me add new functionality like I can
+
+185
+00:15:10,079 --> 00:15:15,360
+actually issue refunds to the customers I can actually raise feature requests with the engineering team and all of these things.
+
+186
+00:15:15,360 --> 00:15:19,760
+So if you start all with all of this on day one, it's incredibly hard to control the complexity.
+
+187
+00:15:19,760 --> 00:15:23,519
+So we recommend like you know building step by step and then increasing it.
+
+188
+00:15:23,519 --> 00:15:23,920
+>> Awesome.
+
+189
+00:15:23,920 --> 00:15:27,920
+And you have a visual actually that we'll share of what this looks like.
+
+190
+00:15:27,920 --> 00:15:32,480
+But just to kind of mirror back what you're describing this idea of start with high control,
+
+191
+00:15:32,480 --> 00:15:40,160
+low agency in your the example you gave is the support agent is just kind of giving suggestions is not able to do anything.
+
+192
+00:15:40,160 --> 00:15:42,880
+the user is in charge.
+
+193
+00:15:42,880 --> 00:15:48,639
+And then as that becomes useful and you are confident it's doing the right sort of work,
+
+194
+00:15:48,639 --> 00:15:54,000
+you give it a little more agency and you kind of pull back on the control the user has.
+
+195
+00:15:54,000 --> 00:16:01,199
+And then if that's starting to go well, then you give it more agency and the user needs less control to control it.
+
+196
+00:16:01,199 --> 00:16:02,000
+>> Awesome.
+
+197
+00:16:02,000 --> 00:16:09,839
+>> I I think the higher level idea here is with AI systems, it's all about behavior calibration.
+
+198
+00:16:09,839 --> 00:16:14,800
+It's incredibly impossible to predict up front how your system behaves.
+
+199
+00:16:14,800 --> 00:16:16,399
+Now what do you do about it?
+
+200
+00:16:16,399 --> 00:16:22,399
+You make sure that you don't ruin your customer experience or your end user experience.
+
+201
+00:16:22,399 --> 00:16:31,120
+Um you keep that as is but then remove the amount of control that the human has and there is no single right way of doing it.
+
+202
+00:16:31,120 --> 00:16:34,079
+You can decide how to constrain that autonomy.
+
+203
+00:16:34,079 --> 00:16:34,399
+Right?
+
+204
+00:16:34,399 --> 00:16:41,920
+Um, a very I mean a different example of how you could constrain autonomy is pre-authorization use cases.
+
+205
+00:16:41,920 --> 00:16:52,399
+Insurance pre-authorization is a very ripe use case for AI because uh clinicians spend a lot of time um pre-authorizing uh things like blood tests,
+
+206
+00:16:52,399 --> 00:16:54,399
+MRIs and things like that, right?
+
+207
+00:16:54,399 --> 00:16:57,600
+And there are some cases which are more of lowhanging fruits.
+
+208
+00:16:57,600 --> 00:17:02,399
+for instance, MRIs and blood tests because um as soon as you know patients information,
+
+209
+00:17:02,399 --> 00:17:08,319
+it's easier to approve that and AI could do that versus something like an invasive surgery,
+
+210
+00:17:08,319 --> 00:17:08,640
+etc.
+
+211
+00:17:08,640 --> 00:17:09,600
+is more high-risk.
+
+212
+00:17:09,600 --> 00:17:11,839
+You don't want to be doing that autonomously.
+
+213
+00:17:11,839 --> 00:17:20,079
+So, you can kind of determine which of these use cases should go through that human and the loop layer versus which of the use cases AI can conveniently handle.
+
+214
+00:17:20,079 --> 00:17:24,319
+And then all through this process, you're also logging what the human is doing, right?
+
+215
+00:17:24,319 --> 00:17:30,240
+because you want to build a flywheel um that you could use in order to improve your system.
+
+216
+00:17:30,240 --> 00:17:41,760
+Um so you're essentially um not ruining the user experience, not eroding trust at the same time logging what humans would otherwise do so that you can continuously improve your system.
+
+217
+00:17:41,760 --> 00:17:45,440
+>> So let me let me give you a few more examples of this kind of progression that you recommend.
+
+218
+00:17:45,440 --> 00:17:53,679
+And this the reason I'm spending so much time here is this is a really key part of your recommendation to help people build more successful AI products.
+
+219
+00:17:53,679 --> 00:18:01,760
+this idea of start slow with high control and low agency and then build up over time once you've built confidence that it's doing the right sort of work.
+
+220
+00:18:01,760 --> 00:18:04,480
+So a few more examples that you shared in your post that I'll just read.
+
+221
+00:18:04,480 --> 00:18:06,720
+So say you're building a coding assistant.
+
+222
+00:18:06,720 --> 00:18:10,640
+V1 would be just suggest inline completion and boilerplate snippets.
+
+223
+00:18:10,640 --> 00:18:15,120
+V2 would be generate larger blocks like tests or refactors for humans to review.
+
+224
+00:18:15,120 --> 00:18:20,000
+And then V3 is just apply the changes and open PRs autonomously.
+
+225
+00:18:20,000 --> 00:18:22,000
+And then another example is a marketing assistant.
+
+226
+00:18:22,000 --> 00:18:26,240
+So V1 would be draft emails or social copy just like here's what I would do.
+
+227
+00:18:26,240 --> 00:18:36,480
+V2 is build a multi-step campaign and run the campaign and then launch and V3 is just launch it AB test it autooptimize campaigns across channels.
+
+228
+00:18:36,480 --> 00:18:36,880
+>> Awesome.
+
+229
+00:18:36,880 --> 00:18:38,080
+>> Yeah.
+
+230
+00:18:38,080 --> 00:18:43,520
+>> And and again just to summarize where we're at just to give people the the advice we've shared so far.
+
+231
+00:18:43,520 --> 00:18:47,679
+Uh one is just important to understand AI products are different.
+
+232
+00:18:47,679 --> 00:18:48,640
+They're non-deterministic.
+
+233
+00:18:48,640 --> 00:19:00,480
+And he pointed out and I forgot to actually mirror back this point both on the in on the input and the output the user experience is nondeterministic like people will see different things different outputs different chat conversations different
+
+234
+00:19:00,480 --> 00:19:10,000
+maybe UI if it's designing the UI for you and also the output obviously is going to be nondeterministic so that's a problem and a challenge and then uh >> I mean if you think of it it's also the
+
+235
+00:19:10,000 --> 00:19:18,799
+most beautiful part of AI which is I mean we're all much more comfortable talking than following a bunch of buttons and all of that right?
+
+236
+00:19:18,799 --> 00:19:25,200
+So the bar to using AI products is much lower because you can be as natural as you would be with humans.
+
+237
+00:19:25,200 --> 00:19:29,679
+But that's also the problem which is there are tons of ways we communicate.
+
+238
+00:19:29,679 --> 00:19:40,960
+Um and it's you want to make sure that that intent is rightly communicated and the right actions are taken because most of your systems are deterministic and you want to achieve a deterministic outcome uh
+
+239
+00:19:40,960 --> 00:19:44,799
+but with non-deterministic technology and that's where it gets a little messy.
+
+240
+00:19:44,799 --> 00:19:45,200
+>> Awesome.
+
+241
+00:19:45,200 --> 00:19:45,520
+Okay.
+
+242
+00:19:45,520 --> 00:19:50,960
+That's a I love I love the the optimistic version of the why this is good.
+
+243
+00:19:50,960 --> 00:19:51,200
+Okay.
+
+244
+00:19:51,200 --> 00:19:56,080
+And then the other piece is this idea of this trade-off of autonomy versus control when you're designing a thing.
+
+245
+00:19:56,080 --> 00:20:03,440
+And what I imagine what you're seeing is people try to jump to the ideal like the V3 immediately and that's when they get into trouble both.
+
+246
+00:20:03,440 --> 00:20:07,600
+It's probably a lot harder to build that and it's just doesn't work and then they're just like okay this is a failure.
+
+247
+00:20:07,600 --> 00:20:08,720
+What are we even doing?
+
+248
+00:20:08,720 --> 00:20:09,120
+>> Exactly.
+
+249
+00:20:09,120 --> 00:20:20,000
+I feel there's like a bunch of things that you actually have to uh get confidence in before you get to V3 and it's it's easy to get overwhelmed that oh my AI agent is like doing these
+
+250
+00:20:20,000 --> 00:20:30,559
+things wrong in like 100 different ways and you're not going to actually tabulate all of them and fix it right even though you've learned like you know how do you deal with the uh evaluation practices and stuff like that.
+
+251
+00:20:30,559 --> 00:20:35,840
+If you're starting on the wrong spot you are actually going to have a hard time like you know correcting things from there.
+
+252
+00:20:35,840 --> 00:20:44,480
+And when you start uh small and when you start with building like a very minimalistic version with high human control and low agency,
+
+253
+00:20:44,480 --> 00:20:48,960
+it also forces you to think about what is the problem that I'm going to solve.
+
+254
+00:20:48,960 --> 00:20:58,880
+uh we we use this term called problem first and uh to me it was like obvious in the sense that yeah I I do need to think about the problem but it's incredible how well it
+
+255
+00:20:58,880 --> 00:21:09,840
+resonates with the people that in all this advancements of the AI that we are seeing one easy slippery slope is to just keep thinking about uh complexities of the solution and not and forget the
+
+256
+00:21:09,840 --> 00:21:11,120
+problem that you're trying to solve.
+
+257
+00:21:11,120 --> 00:21:22,240
+So when you're trying to start at like a small at a smaller scale of autonomy, you start to really think about what is the problem that I'm trying to solve and how do I break it down into like levels
+
+258
+00:21:22,240 --> 00:21:24,240
+of autonomy that I can build later.
+
+259
+00:21:24,240 --> 00:21:31,200
+So that is incredibly useful when like and we keep repeating this pattern over and over with everyone we talk to.
+
+260
+00:21:31,200 --> 00:21:42,000
+And there's so many other benefits to uh limiting autonomy because there there's just danger also of the thing doing too much for you and just messing up your I don't know your database sending out all
+
+261
+00:21:42,000 --> 00:21:43,440
+these emails you never expected.
+
+262
+00:21:43,440 --> 00:21:45,360
+There's like so many reasons this is a good idea.
+
+263
+00:21:45,360 --> 00:21:45,679
+>> Yep.
+
+264
+00:21:45,679 --> 00:21:50,720
+I I recently read this paper from a bunch of folks at UC Berkeley.
+
+265
+00:21:50,720 --> 00:22:00,799
+um basically mate Zahara Stoker and the folks at data bricks and it said about 74 or 75% of the enterprises that they
+
+266
+00:22:00,799 --> 00:22:12,559
+had spoken to um their biggest problem was reliability and that's also why they weren't uh comfortable um deploying products to their end users or building customerf facing products because they
+
+267
+00:22:12,559 --> 00:22:19,760
+just weren't sure or they just weren't um comfortable doing that and exposing their users to a bunch of these risks,
+
+268
+00:22:19,760 --> 00:22:20,320
+right?
+
+269
+00:22:20,320 --> 00:22:30,960
+And that's also why they think a lot of AI products today have to do with productivity because it's much low autonomy versus you know end to end agents that would replace workflows.
+
+270
+00:22:30,960 --> 00:22:38,799
+Um and yeah I love their work otherwise as well but I think that's very in line with what um at least we're seeing at my startup as well.
+
+271
+00:22:38,799 --> 00:22:39,919
+>> Okay very interesting.
+
+272
+00:22:39,919 --> 00:22:51,039
+There's an episode that'll come out before this conversation where we go deep into another problem that this avoids which is around uh prompt injection and jailbreaking and just how big of a
+
+273
+00:22:51,039 --> 00:22:56,880
+>> uh ex risk that is for AI products where it's essentially an unsolved and unsolvable problem potentially.
+
+274
+00:22:56,880 --> 00:23:02,559
+I'm not going to go down that track, but that's uh it's a pretty scary conversation we had that it'll be out before this conversation.
+
+275
+00:23:02,559 --> 00:23:06,320
+>> I think that will be a huge problem once systems go mainstream.
+
+276
+00:23:06,320 --> 00:23:17,440
+We're still so busy building AI products that we're not worried about security, but it it will be um such a huge problem to kind of u especially with this non-deterministic
+
+277
+00:23:17,440 --> 00:23:18,640
+API again, right?
+
+278
+00:23:18,640 --> 00:23:26,720
+So, you're kind of stuck because um there are tons of instructions that you could inject within your prompt and then yeah,
+
+279
+00:23:26,720 --> 00:23:28,400
+it's it's going to be bad.
+
+280
+00:23:28,400 --> 00:23:39,760
+Okay, I let's actually spend a little time here because it's actually really interesting to me and no one's talking about this stuff which is like the conversation we had is just it's pretty easy to get AI to trick to do stuff it shouldn't do and
+
+281
+00:23:39,760 --> 00:23:51,600
+there's all these guardrail systems people put in place but turns out these guardrails aren't actually very good and you can always get around them and to your point as agents become more autonomous and robots uh it gets pretty
+
+282
+00:23:51,600 --> 00:23:54,559
+scary that you could get AI to do things you shouldn't do.
+
+283
+00:23:54,559 --> 00:23:56,720
+I think this is definitely a problem.
+
+284
+00:23:56,720 --> 00:24:07,760
+But I feel in the current spectrum of like customers adopting AI, the the extent to which like you know companies can actually get advantage of AI or like improve their
+
+285
+00:24:07,760 --> 00:24:12,240
+processes or like you know streamline the existing processes that they have.
+
+286
+00:24:12,240 --> 00:24:20,480
+I feel it's in still in the very early stage like 2025 has been an extremely busy year for AI agents and customers trying to adopt AI.
+
+287
+00:24:20,480 --> 00:24:25,760
+But I feel the penetration is still not as much as you would actually get advantage out of it.
+
+288
+00:24:25,760 --> 00:24:37,600
+So with the right sort of you know human in the loop uh points in here I feel we can actually avoid a bunch of these things and focus more towards like streamlining the processes and I I am
+
+289
+00:24:37,600 --> 00:24:47,679
+more on the optimist side in the sense that like you need to try and adopt this before actually like trying to be only highlighting the negative aspects of like what could go wrong.
+
+290
+00:24:47,679 --> 00:24:52,080
+So I I feel like strongly u that companies has to adopt this.
+
+291
+00:24:52,080 --> 00:25:00,159
+They definitely like no company uh at openi we talked to is has never had been the case that oh AI cannot help me in this case.
+
+292
+00:25:00,159 --> 00:25:06,720
+It has always been that oh there is this like set of things that it can uh optimize for me and then let me see how I can adopt it.
+
+293
+00:25:06,720 --> 00:25:07,120
+Sweet.
+
+294
+00:25:07,120 --> 00:25:09,200
+I always like the optimistic perspective.
+
+295
+00:25:09,200 --> 00:25:14,640
+I'm excited to for you to listen to this and see what you think because it's really interesting and uh and to your point there's a lot of things to focus on.
+
+296
+00:25:14,640 --> 00:25:18,080
+It's one of one of many things to worry about and think about.
+
+297
+00:25:18,080 --> 00:25:19,840
+Okay, let's get back on track here.
+
+298
+00:25:19,840 --> 00:25:23,279
+So, we've shared a bunch of pro tips and important piece of advice.
+
+299
+00:25:23,279 --> 00:25:33,760
+Let me ask, what other patterns and kind of ways of working do you see in companies that do this well and teams that build AI products successfully?
+
+300
+00:25:33,760 --> 00:25:36,720
+And then just what are the most common pitfalls people fall into?
+
+301
+00:25:36,720 --> 00:25:43,279
+So, we could just maybe start with what are other ways that companies do this well, build AI products successfully?
+
+302
+00:25:43,279 --> 00:25:49,200
+I almost think of it as like a success triangle with three dimensions.
+
+303
+00:25:49,200 --> 00:25:51,279
+It's never always technical.
+
+304
+00:25:51,279 --> 00:25:54,240
+Every technology problem is a people problem first.
+
+305
+00:25:54,240 --> 00:25:58,320
+And with companies that we have worked with, it's these three dimensions, right?
+
+306
+00:25:58,320 --> 00:26:02,880
+Like great leaders, good culture and technical progress.
+
+307
+00:26:02,880 --> 00:26:08,640
+Um with leaders itself, we work with a lot of companies uh for their AI transformation,
+
+308
+00:26:08,640 --> 00:26:11,200
+training, strategy and stuff like that.
+
+309
+00:26:11,200 --> 00:26:21,440
+And I feel like um a lot of companies the leaders have built intuitions over 10 or 15 years and they are kind of highly regarded for those intuions but now with
+
+310
+00:26:21,440 --> 00:26:28,000
+AI in the picture those intuions will have to be relearned and leaders have to be vulnerable to do that right.
+
+311
+00:26:28,000 --> 00:26:32,640
+Um I used to work with the CEO of now Rackspace Gajen.
+
+312
+00:26:32,640 --> 00:26:40,159
+So he would um have this block every day in the morning which would say catching up with AI 4 to 6:00 a.m.
+
+313
+00:26:40,159 --> 00:26:51,520
+and he would not have any meetings or anything like that and that was just his time to pick up on the latest AI um you know podcast or information and all of that and he would have um weekend white coding sessions
+
+314
+00:26:51,520 --> 00:26:52,799
+and stuff like that.
+
+315
+00:26:52,799 --> 00:27:04,000
+So I think leaders have to get back to being hands-on and that's not because they have to be implementing these things but more of uh rebuilding their intuitions because you must be comfortable with the fact that
+
+316
+00:27:04,000 --> 00:27:05,840
+your intuitions might not be right.
+
+317
+00:27:05,840 --> 00:27:10,880
+Um and you you probably are the dumbest person in the room and you want to learn from everyone.
+
+318
+00:27:10,880 --> 00:27:20,799
+Um and that I've seen that being a very um distinguishing factor of companies that build products um which are successful because you're kind of bringing in that top down
+
+319
+00:27:20,799 --> 00:27:21,679
+approach.
+
+320
+00:27:21,679 --> 00:27:25,520
+It's almost always impossible for it to be bottom up.
+
+321
+00:27:25,520 --> 00:27:34,400
+You can't have a bunch of engineers go and get buyin from the leader if they just don't trust in the technology or if they have misaligned expectations about the technology.
+
+322
+00:27:34,400 --> 00:27:34,640
+Right?
+
+323
+00:27:34,640 --> 00:27:46,480
+I've heard from so many folks who are building that our leaders just don't understand the extent to which AI can solve a particular problem or they just white code something and assume it's easy to take it to production and you really need to
+
+324
+00:27:46,480 --> 00:27:51,600
+understand the range of what AI can solve today so that you can guide decisions within the company.
+
+325
+00:27:51,600 --> 00:27:53,840
+The second one is the culture itself, right?
+
+326
+00:27:53,840 --> 00:28:05,679
+And again, I work with enterprises where AI is not their main thing and they have um they need to bring in AI into their processes just because a competitor is doing it and just because it does make
+
+327
+00:28:05,679 --> 00:28:08,640
+sense because there are use cases that are very ripe.
+
+328
+00:28:08,640 --> 00:28:16,880
+Then along the way, I feel a lot of companies have this culture of FOMO and you will be replaced and those kind of things and people get really afraid.
+
+329
+00:28:16,880 --> 00:28:27,360
+um subject matter experts are such a huge part of building AI products that work because you really need to consult them to understand how your AI is behaving or what the ideal behavior should be.
+
+330
+00:28:27,360 --> 00:28:35,520
+But then I have spoken to a bunch of companies where the subject matter experts just don't want to talk to you because they think their job is being replaced.
+
+331
+00:28:35,520 --> 00:28:38,399
+So as I mean again this comes from the leader itself.
+
+332
+00:28:38,399 --> 00:28:48,399
+want to build a culture of empowerment of um augmenting AI into your own workflows so that you know you can 10x what you're doing instead of saying that
+
+333
+00:28:48,399 --> 00:28:52,399
+you know probably uh you'll be replaced if you don't adopt AI and stuff like that.
+
+334
+00:28:52,399 --> 00:29:03,039
+So that kind of an empowering culture always helps you want to make um your entire organization be in it together and make AI work for you instead of trying to you know guard
+
+335
+00:29:03,039 --> 00:29:04,720
+their own jobs etc.
+
+336
+00:29:04,720 --> 00:29:09,360
+And with AI, it's also true that it opens up a lot more opportunities than before.
+
+337
+00:29:09,360 --> 00:29:14,960
+So you could have your employees doing a lot more things than before and 10x their productivity.
+
+338
+00:29:14,960 --> 00:29:18,320
+Um, and the third one is the technical part which we talk about, right?
+
+339
+00:29:18,320 --> 00:29:30,159
+I think folks that are successful are incredibly obsessed about understanding their workflows very well and augmenting parts um that could be um
+
+340
+00:29:30,159 --> 00:29:35,919
+um that could be ripe for AI versus the ones that might need human in the loop somewhere etc.
+
+341
+00:29:35,919 --> 00:29:46,559
+Whenever you're uh trying to automate some part of a workflow, it's never the case that you could you could use an AI agent and that will kind of solve your uh problems,
+
+342
+00:29:46,559 --> 00:29:46,799
+right?
+
+343
+00:29:46,799 --> 00:29:51,840
+It's always you probably have a machine learning uh model that's going to do some part of the job.
+
+344
+00:29:51,840 --> 00:29:54,159
+You have deterministic code doing some part of the job.
+
+345
+00:29:54,159 --> 00:30:02,559
+So you really need to be obsessed with understanding that workflow so you can choose the right tool for the problem instead of being obsessed with the technology itself.
+
+346
+00:30:02,559 --> 00:30:12,720
+And um another pattern I see is also folks really understand this idea of working with a non-deterministic API which is your LLM.
+
+347
+00:30:12,720 --> 00:30:23,600
+And what that means is they also understand the development life cycle looks very different and they iterate pretty quickly which is can I um can I build something iterate uh quickly
+
+348
+00:30:23,600 --> 00:30:34,240
+in a way that it doesn't ruin my customer experience at the same time gives me enough amount of data so that I can estimate behavior right so they build that flywheel very quickly as of
+
+349
+00:30:34,240 --> 00:30:44,320
+today it's not about being the first company to have an agent among your competitors it's about have you built the right flywheels in place so that you can improve over time When someone comes up to me and says,
+
+350
+00:30:44,320 --> 00:30:45,840
+"We have this one-click agent.
+
+351
+00:30:45,840 --> 00:30:54,480
+It's going to be deployed in your system and then in two or three days it'll start showing you significant gains," I would almost be skeptical because it's just not possible.
+
+352
+00:30:54,480 --> 00:31:04,880
+And that's not because the models aren't there, but because enterprise data and infrastructure is very messy and you need a bit to even the agent needs a bit to understand um
+
+353
+00:31:04,880 --> 00:31:06,799
+how these systems work.
+
+354
+00:31:06,799 --> 00:31:09,600
+There are very messy taxonomies everywhere.
+
+355
+00:31:09,600 --> 00:31:20,559
+um people tend to do things like get customer data wi1 get customer data w2 and these kind of things and all those functions exist and um they are being called and there's
+
+356
+00:31:20,559 --> 00:31:23,600
+basically there's a lot of tech debt that you need to deal with.
+
+357
+00:31:23,600 --> 00:31:34,640
+So most of the times if you're obsessed with the problem itself and you understand your workflows very well you will know how to improve your agents over time instead of just slapping an agent and assuming that
+
+358
+00:31:34,640 --> 00:31:36,080
+it'll work from day one.
+
+359
+00:31:36,080 --> 00:31:41,200
+I probably will go as far to say that if someone's selling you one click agents, it's it's pure marketing.
+
+360
+00:31:41,200 --> 00:31:42,640
+You don't want to buy into that.
+
+361
+00:31:42,640 --> 00:31:53,600
+I would rather go with a company that says we're going to build this pipeline for you and that that will learn over time and kind of build a flywheel to improve than something that's going to work out of the box to
+
+362
+00:31:53,600 --> 00:32:01,440
+replace any critical workflow or to um build something that can give you significant ROI easily takes four to six months of work.
+
+363
+00:32:01,440 --> 00:32:04,960
+Even if you have the best data layer and infrastructure layer.
+
+364
+00:32:04,960 --> 00:32:05,760
+Amazing.
+
+365
+00:32:05,760 --> 00:32:10,000
+There's a lot there that resonates so deeply with other conversations I've been having on this podcast.
+
+366
+00:32:10,000 --> 00:32:18,240
+One is just for a company to be successful at seeing a lot of impact from AI, the founder CEO has to be deep into it.
+
+367
+00:32:18,240 --> 00:32:27,200
+Uh I had Dan Shipper on the podcast and they work with a bunch of companies helping them adopt AI and he said that's the number one predictor of success is the CEO chatting with Chad
+
+368
+00:32:27,200 --> 00:32:31,200
+GPT, Claude, whatever uh many times a day.
+
+369
+00:32:31,200 --> 00:32:36,159
+I love this example you gave the Rackspace as like catch up on AI news in the morning every day.
+
+370
+00:32:36,159 --> 00:32:42,080
+I was imagining he'd be like chatting with like the chatbot versus uh like reading news.
+
+371
+00:32:42,080 --> 00:32:51,440
+>> With the kind of information you have as of today, you could just um I mean you want to choose the right um channels as well because everybody has an opinion.
+
+372
+00:32:51,440 --> 00:32:53,600
+So whose opinion do you want to bank on?
+
+373
+00:32:53,600 --> 00:32:59,519
+I feel like having that good quality set of people that you're listening to really makes sense.
+
+374
+00:32:59,519 --> 00:33:09,840
+So he just has a list of two or three sources that he always looks at and and then he comes back with a bunch of questions and bounces it around with a bunch of AI experts to see what they think about it.
+
+375
+00:33:09,840 --> 00:33:14,559
+And I was part of that group so I kind of know um >> I love that >> about the questions that he comes up with.
+
+376
+00:33:14,559 --> 00:33:15,200
+So that's cool.
+
+377
+00:33:15,200 --> 00:33:15,840
+>> It's pretty cool.
+
+378
+00:33:15,840 --> 00:33:17,760
+I was like why are you doing so much?
+
+379
+00:33:17,760 --> 00:33:21,360
+And then he says it trickles down into a bunch of decisions that we take.
+
+380
+00:33:21,360 --> 00:33:25,279
+>> Okay, let me talk about another topic that's very it's been a hot topic on this podcast.
+
+381
+00:33:25,279 --> 00:33:27,279
+It was a hot topic on Twitter for a while.
+
+382
+00:33:27,279 --> 00:33:29,279
+Evals.
+
+383
+00:33:29,279 --> 00:33:34,799
+A lot of people are obsessed with evals, think they're the solution to a lot of problems in AI.
+
+384
+00:33:34,799 --> 00:33:38,000
+A lot of people think they're overrated, that well, you don't need evals.
+
+385
+00:33:38,000 --> 00:33:41,519
+You can just feel the vibes and you'll you'll be all right.
+
+386
+00:33:41,519 --> 00:33:43,360
+What's your take on evals?
+
+387
+00:33:43,360 --> 00:33:50,159
+How far does that take people in solving a lot of the problems that you talk about in terms of like what is going on in the community?
+
+388
+00:33:50,159 --> 00:34:02,000
+I I feel there's this false dichotomy of like there's either eval is going to solve everything or online monitoring or production monitoring is going to solve everything and I find no reason to trust
+
+389
+00:34:02,000 --> 00:34:11,760
+like one of the extremes in the sense that I will entirely bank my application on this and or like that to solve the uh thing right so if you take a step back
+
+390
+00:34:11,760 --> 00:34:22,800
+uh think of what are eval are basically your uh trusted product thinking or like your knowledge about the product that is going into this uh set of data sets that
+
+391
+00:34:22,800 --> 00:34:33,040
+you're going to build in the sense that this is what matters to me like this is the kind of problems that my agent should not do and let me build a list of data sets so that I'm going to do well
+
+392
+00:34:33,040 --> 00:34:44,079
+on those and in terms of production monitoring what you're doing doing there is uh you're deploying your application and then you're having this some sort of key metrics that actually communicate
+
+393
+00:34:44,079 --> 00:34:52,879
+back to you on how customers are using your product like you could be deploying uh any agent And like if the C customer is giving a thumbs up for your interaction,
+
+394
+00:34:52,879 --> 00:34:54,320
+you better want to know that.
+
+395
+00:34:54,320 --> 00:34:56,639
+So that is what production monitoring is going to do, right?
+
+396
+00:34:56,639 --> 00:35:02,800
+And this production monitoring has existed for products like for a long time just that now with AI agents,
+
+397
+00:35:02,800 --> 00:35:06,640
+you need to be monitoring like a lot more granularity.
+
+398
+00:35:06,640 --> 00:35:12,400
+It's not just the customer always giving you explicit feedback, but there is many implicit feedback that you can get.
+
+399
+00:35:12,400 --> 00:35:14,079
+Uh for example, in chat GPD, right?
+
+400
+00:35:14,079 --> 00:35:23,280
+Like if you are uh liking the answer you can actually give a thumbs up or if you don't like the answer sometimes customers don't give you thumbs down but actually re regenerate the answer.
+
+401
+00:35:23,280 --> 00:35:30,560
+So that is an clear indication that the initial answer that you generated is not matting uh meeting the customer's expectation.
+
+402
+00:35:30,560 --> 00:35:31,119
+Right.
+
+403
+00:35:31,119 --> 00:35:38,800
+So these are the kind of implicit signals you always need to think about and that spectrum has been increasing in terms of production monitoring.
+
+404
+00:35:38,800 --> 00:35:44,000
+Now let's come back to the initial topic of like okay is it eval or is it production monitoring?
+
+405
+00:35:44,000 --> 00:35:45,280
+What does it matter?
+
+406
+00:35:45,280 --> 00:35:56,480
+So I feel again we go back to this problem first approach of what is your what is it that you're trying to build like you're trying to build a reliable application for your customers that's not going to do a bad thing like
+
+407
+00:35:56,480 --> 00:36:08,240
+it's always going to do the right thing or if it is doing a wrong thing you are uh you're basically alerted like very quickly right so the I break this down into two parts like one is you like
+
+408
+00:36:08,240 --> 00:36:19,040
+nobody goes into uh deploying an application without actually like you know just testing that this testing could be wipes or this testing could be okay I have this like 10 questions that
+
+409
+00:36:19,040 --> 00:36:30,560
+it should not go wrong any no matter what changes I make and let me build this and let's call this an evaluation data set now let's say you built this you deployed this and then you figured uh okay now I need to understand whether
+
+410
+00:36:30,560 --> 00:36:42,079
+it's doing the right thing or not so if you're a high uh high uh throughput or like a high transaction customer you cannot practically sit and evaluate all the traces right you need some
+
+411
+00:36:42,079 --> 00:36:52,960
+indication to understand what are the things that I should look at and this is where production monitoring comes into the picture that you cannot predict your uh the base in which your agent could be doing wrong but all of these other
+
+412
+00:36:52,960 --> 00:37:02,960
+implicit signals and explicit signals those are going to communicate back to you what uh what are the traces that you need to look at and that is where production monitoring helps and once you
+
+413
+00:37:02,960 --> 00:37:13,280
+get this kind of traces you need to examine what are the failure patterns that you're seeing in these uh different types of interactions and is there something that I really care about that
+
+414
+00:37:13,280 --> 00:37:23,280
+should not happen and if that kind of failure modes are happening then I need to think about building an evaluation data set for it and okay let's say I built an evaluation data set for my
+
+415
+00:37:23,280 --> 00:37:34,480
+agent trying to offer refunds where explicitly I have configured it not to so I built this evaluation data set and then like I made my changes in tools or
+
+416
+00:37:34,480 --> 00:37:46,320
+prompts or whatever and then I deployed the second version of the product right now uh there is no guarantee that this is the only problem that you're going to see you still need production monitoring to actually have like you know catch
+
+417
+00:37:46,320 --> 00:37:48,560
+different kinds of problems that you might encounter.
+
+418
+00:37:48,560 --> 00:37:58,560
+So I feel eval are important, production monitoring is important but this notion of only one of them is going to solve things for you that is uh completely dismissible in my opinion.
+
+419
+00:37:58,560 --> 00:38:03,359
+>> All right, a very reasonable answer and the point here isn't uh it's not just as simple as do both.
+
+420
+00:38:03,359 --> 00:38:11,440
+It's more that there are different things to catch and one approach won't catch all the things you need to be paying attention to.
+
+421
+00:38:11,440 --> 00:38:12,160
+>> Exactly.
+
+422
+00:38:12,160 --> 00:38:13,040
+Awesome.
+
+423
+00:38:13,040 --> 00:38:20,800
+>> I want to take two steps back and kind of talk about how much weight the term evals has had to take in the second,
+
+424
+00:38:20,800 --> 00:38:28,320
+you know, half of 2025 because you go meet a data labeling company and they tell you our experts are writing evals.
+
+425
+00:38:28,320 --> 00:38:32,800
+And then uh you have all of these uh folks saying that PMS should be writing evals.
+
+426
+00:38:32,800 --> 00:38:34,400
+They're the new PRDS.
+
+427
+00:38:34,400 --> 00:38:41,680
+And then you have folks saying that um eval is pretty much everything which is the feedback loop you're supposed to be building to improve your products.
+
+428
+00:38:41,680 --> 00:38:45,520
+Now step back as a beginner and kind of think like what are evals?
+
+429
+00:38:45,520 --> 00:38:46,800
+Why is everyone saying eval?
+
+430
+00:38:46,800 --> 00:38:56,800
+And these are actually different parts of the process and nobody's wrong in the sense that yes these are eval but when a data labeling company is telling you that our um experts are writing evals they're
+
+431
+00:38:56,800 --> 00:39:02,640
+actually referring to error analysis or you know experts just leading notes on what should be right.
+
+432
+00:39:02,640 --> 00:39:09,119
+Lawyers and doctors write evals that doesn't mean they're building LLM judges or they're building this entire feedback loop.
+
+433
+00:39:09,119 --> 00:39:16,079
+And when you say that a PM should be writing evals doesn't mean they have to write an LLM judge that's good enough for production.
+
+434
+00:39:16,079 --> 00:39:27,040
+I think there's there are also very prescriptive ways of doing this and plus one to KD which is you cannot predict up front if you need to be building an LLM judge versus you need
+
+435
+00:39:27,040 --> 00:39:31,280
+to be using um implicit signals from production monitoring etc.
+
+436
+00:39:31,280 --> 00:39:37,599
+I think Martin Fowler at some point had this term called semantic diffusion back in the 2000s.
+
+437
+00:39:37,599 --> 00:39:46,160
+Um um which kind of means that someone comes up with a term everybody starts butchering it with their own definitions and then you kind of lose the actual definition of it.
+
+438
+00:39:46,160 --> 00:39:50,800
+That is kind of what is happening to eval of today.
+
+439
+00:39:50,800 --> 00:39:53,599
+Everybody kind of sees a different side to it I guess.
+
+440
+00:39:53,599 --> 00:40:02,880
+Um but if you make a bunch of practitioners sit together and ask them is it important to build a actionable feedback loop for AI products I think all of them will agree.
+
+441
+00:40:02,880 --> 00:40:13,599
+Now how you do that really depends on your application itself when you go to complex use cases it's incredibly hard to build LM judges because you see a lot of emerging patterns.
+
+442
+00:40:13,599 --> 00:40:18,560
+If you built a judge that would um you know test for verbosity or something like that,
+
+443
+00:40:18,560 --> 00:40:30,240
+you turns out that you're seeing newer patterns that your LM judge is not able to catch and then you're just um you just end up building too many evals and at that point it just makes sense to you know look at your user signals,
+
+444
+00:40:30,240 --> 00:40:34,640
+fix them, check if you've regressed and move on instead of actually building these judges.
+
+445
+00:40:34,640 --> 00:40:36,079
+Um so it all depends.
+
+446
+00:40:36,079 --> 00:40:42,480
+I think one statement that every ML practitioner will tell you is it really depends on the context.
+
+447
+00:40:42,480 --> 00:40:44,160
+Don't be obsessed with prescriptions.
+
+448
+00:40:44,160 --> 00:40:45,280
+They're going to change.
+
+449
+00:40:45,280 --> 00:40:46,560
+>> Uh that's such an important point.
+
+450
+00:40:46,560 --> 00:40:50,800
+This idea that especially that eval just means many things to different people now.
+
+451
+00:40:50,800 --> 00:40:53,040
+It's just like a term for so many things.
+
+452
+00:40:53,040 --> 00:41:00,079
+And uh it it's complicated to just talk about evals when you're think when you see it as the stuff data labeling companies are giving you and things are right.
+
+453
+00:41:00,079 --> 00:41:01,200
+And there's also benchmarks.
+
+454
+00:41:01,200 --> 00:41:02,800
+People call benchmarks a little bit eval.
+
+455
+00:41:02,800 --> 00:41:08,880
+It's like >> I I recently spoke to a client who told me we do eval >> and I was like okay can you show me your data set?
+
+456
+00:41:08,880 --> 00:41:12,240
+and said, "No, we just checked LM arena and artificial analysis.
+
+457
+00:41:12,240 --> 00:41:17,839
+These are, you know, independent benchmarks and we know that this model is the right one for our use case."
+
+458
+00:41:17,839 --> 00:41:19,280
+And I'm like,"You're not doing eval.
+
+459
+00:41:19,280 --> 00:41:20,079
+That's not eval.
+
+460
+00:41:20,079 --> 00:41:20,880
+Those are model."
+
+461
+00:41:20,880 --> 00:41:21,280
+>> That makes sense.
+
+462
+00:41:21,280 --> 00:41:23,599
+Like the word, you know, like could be used in that context.
+
+463
+00:41:23,599 --> 00:41:26,720
+I get why people think that, but yeah, now it's just confusing it even more.
+
+464
+00:41:26,720 --> 00:41:27,200
+>> Yep.
+
+465
+00:41:27,200 --> 00:41:33,839
+>> Just like one more line of questioning here that I think uh that's on my mind is the reason this became kind of a big debate is cloud code,
+
+466
+00:41:33,839 --> 00:41:37,440
+the head of cloud code, Boris, was like, "Nah, we don't do evalance on cloud code.
+
+467
+00:41:37,440 --> 00:41:38,960
+It's all vibes.
+
+468
+00:41:38,960 --> 00:41:43,200
+What can you share kiti on codex and the codeex team of how you approach evals?
+
+469
+00:41:43,200 --> 00:41:54,000
+So CEX we have like this balanced approach of like you know you need to have eval and you need to definitely listen to your customers and I think Alex has been on your podcast recently
+
+470
+00:41:54,000 --> 00:42:04,240
+and he's been talking about how we extremely focused on building the right product right and a part of a big part of it is basically listening to your customers and coding agents are
+
+471
+00:42:04,240 --> 00:42:12,560
+extremely unique compared to agents for other domains in the sense that these are actually built for customizability and these are built for engineers.
+
+472
+00:42:12,560 --> 00:42:22,560
+So coding agent is not a product which is going to solve like these top five workflows or like top six workflows or whatever right it's meant to be customizable in multi different ways and
+
+473
+00:42:22,560 --> 00:42:31,359
+the implication of that is that your product is going to be used in different integrations and different kinds of tools and different kinds of things.
+
+474
+00:42:31,359 --> 00:42:38,800
+So it gets really hard to build an evaluation data set for all kinds of interactions that your customers are going to use your product for.
+
+475
+00:42:38,800 --> 00:42:39,280
+Right?
+
+476
+00:42:39,280 --> 00:42:43,359
+But that said, you also need to understand that okay, if I'm going to make a change,
+
+477
+00:42:43,359 --> 00:42:47,520
+it's at least not going to like damage something that is really core to the product.
+
+478
+00:42:47,520 --> 00:42:50,800
+So we have like evaluations uh for doing that.
+
+479
+00:42:50,800 --> 00:42:56,000
+At the same time, we have we take like extreme care on like understanding how the customers are using it.
+
+480
+00:42:56,000 --> 00:43:07,119
+For example, uh we built this code review product recently and uh it has been gaining like extreme amount of traction and uh I feel like many many bugs in OpenAI as well as
+
+481
+00:43:07,119 --> 00:43:09,680
+like even external customers are getting caught with this.
+
+482
+00:43:09,680 --> 00:43:20,160
+And now let's say if I'm making a model change to the course review or like a different kinds of uh RL mechanism that I trained with it and now if I'm going to deploy it I
+
+483
+00:43:20,160 --> 00:43:31,520
+definitely do want to AP test and identify whether it's actually finding the right uh mistakes and are users how are users reacting to it and sometimes like if users do get annoyed by your
+
+484
+00:43:31,520 --> 00:43:42,960
+like you know uh incorrect code riggers they go to the extent of just switching off the product right so those are the signals that you want to look at and make sure that your new changes are doing the right thing and it's extremely
+
+485
+00:43:42,960 --> 00:43:49,359
+hard for us to you know uh think of these kind of scenarios beforehand and uh develop evaluation data sets for it.
+
+486
+00:43:49,359 --> 00:44:00,400
+So I feel like there's a bit of both like there's a lot of wipes and there's a lot of like customer feedback and we are super active on like the social media to understand if anybody's having certain types of problems and quickly
+
+487
+00:44:00,400 --> 00:44:01,280
+fix that.
+
+488
+00:44:01,280 --> 00:44:05,760
+So I feel it's a it's a um how do I put this?
+
+489
+00:44:05,760 --> 00:44:08,079
+It's like a domain of things that you do here.
+
+490
+00:44:08,079 --> 00:44:09,440
+That makes so much sense.
+
+491
+00:44:09,440 --> 00:44:12,720
+Okay, what I'm hearing Codex Pro evals, but it's not enough.
+
+492
+00:44:12,720 --> 00:44:13,760
+You need to Yes.
+
+493
+00:44:13,760 --> 00:44:19,599
+But also, uh, just watch customer behavior and feedback and also there's some vibes just like is this feeling good?
+
+494
+00:44:19,599 --> 00:44:24,480
+Is this as I'm using it generating great code that I'm excited about that I think is great.
+
+495
+00:44:24,480 --> 00:44:35,440
+>> I I don't think like if anybody's coming and saying that like my I have this concrete set of evas that I can like bet my life on and then I don't need to think about anything else like it it's not going to work.
+
+496
+00:44:35,440 --> 00:44:45,599
+And every new model that we're going to launch, we uh get together as a team and like you know test different things each each person is like concentrating on something else and like we have this list of hard
+
+497
+00:44:45,599 --> 00:44:50,000
+problems that we have and we throw that to the model and see how well they are progressing.
+
+498
+00:44:50,000 --> 00:44:58,400
+So it's like uh custom evals for each engineer you would say and just like understand what the uh product is doing in this new model.
+
+499
+00:44:58,400 --> 00:45:02,560
+If you're a founder, the hardest part of starting a company isn't having the idea.
+
+500
+00:45:02,560 --> 00:45:06,240
+It's scaling the business without getting buried in back office work.
+
+501
+00:45:06,240 --> 00:45:07,839
+That's where Brex comes in.
+
+502
+00:45:07,839 --> 00:45:11,280
+Brex is the intelligent finance platform for founders.
+
+503
+00:45:11,280 --> 00:45:20,480
+With Brex, you get high limit corporate cards, easy banking, high yield treasury, plus a team of AI agents that handle manual finance tasks for you.
+
+504
+00:45:20,480 --> 00:45:26,640
+They'll do all the stuff that you don't want to do, like file your expenses, scour transactions for waste,
+
+505
+00:45:26,640 --> 00:45:29,839
+and run reports, all according to your rules.
+
+506
+00:45:29,839 --> 00:45:34,480
+With Brex AI agents, you can move faster while staying in full control.
+
+507
+00:45:34,480 --> 00:45:39,040
+One in three startups in the United States already runs on Brex.
+
+508
+00:45:39,040 --> 00:45:43,119
+You can, too, at brex.com.
+
+509
+00:45:43,119 --> 00:45:54,960
+We've been talking for almost an hour already and we haven't even covered your extremely powerful software development workflow for building AI products that you two developed that you teach in your course that you basically combines all
+
+510
+00:45:54,960 --> 00:46:00,880
+the stuff we've been talking about into a step-by-step approach to building AI products.
+
+511
+00:46:00,880 --> 00:46:05,839
+You call it the continuous calibration, continuous development framework.
+
+512
+00:46:05,839 --> 00:46:10,480
+Let's pull up a visual to show people what the heck we're talking about and then just walk us through what this is,
+
+513
+00:46:10,480 --> 00:46:18,160
+how this works, how teams can shift the way they build their AI products to this approach to help them avoid a lot of pain and suffering.
+
+514
+00:46:18,160 --> 00:46:29,359
+>> Before we go about explaining um the life cycle, a quick story on why Kita and I came up with this is because um there are tons of u uh companies that we
+
+515
+00:46:29,359 --> 00:46:34,160
+keep talking to that have the pressure from their competitors because they're all building agents.
+
+516
+00:46:34,160 --> 00:46:36,880
+we should be building agents that are entirely autonomous.
+
+517
+00:46:36,880 --> 00:46:42,400
+And we I did end up working with a few customers where we built these end-to-end agents.
+
+518
+00:46:42,400 --> 00:46:52,160
+And turns out that because you start off at a place where you don't know how the user might interact with your system and what kind of responses or actions the AI might
+
+519
+00:46:52,160 --> 00:46:59,040
+come up with, it's really hard to fix problems when you have this really huge workflow which is taking four or five steps,
+
+520
+00:46:59,040 --> 00:47:00,240
+making tons of decisions.
+
+521
+00:47:00,240 --> 00:47:11,760
+you're you just you just end up debugging so much and then kind of hot fixing to the point where at at a time we were building for a customer support um use case which is what which is the example
+
+522
+00:47:11,760 --> 00:47:21,920
+that we give in the newsletter as well and we to shut down the product because we were doing so many hot fixes and there was no way we could um count all the emerging or emerging problems that
+
+523
+00:47:21,920 --> 00:47:33,040
+were coming up right and there's also quite some news online um recently I think Air Canada had this thing where um one of their agents predicted or
+
+524
+00:47:33,040 --> 00:47:41,839
+hallucinated a policy um for a refund which was not part of their original playbook and they had to go by it because legal stuff and there have been
+
+525
+00:47:41,839 --> 00:47:52,480
+a ton of really uh scary incidents and that's where the idea comes from right how can you build so that um you don't lose customer trust and you don't end up
+
+526
+00:47:52,480 --> 00:48:03,520
+or your agent or um AI system doesn't end up making decisions that are super dangerous to the company itself at the same time build a flywheel so that you can improve your product as you go right
+
+527
+00:48:03,520 --> 00:48:08,079
+and that's why we came up with this idea of continuous calibration continuous development.
+
+528
+00:48:08,079 --> 00:48:19,599
+The idea is pretty simple which is um we have this right side of the loop which is continuous development uh where you scope capability and curate data essentially get a data set of what
+
+529
+00:48:19,599 --> 00:48:24,720
+your expected inputs are and what um your expected outputs should be looking at.
+
+530
+00:48:24,720 --> 00:48:36,400
+This is a very good exercise before you start building any AI product because many times you figure out that a lot of the folks within the team are just not aligned on how the product should behave and that's where your PMS
+
+531
+00:48:36,400 --> 00:48:40,160
+can really give in a lot more information and your subject matter experts as well.
+
+532
+00:48:40,160 --> 00:48:45,200
+So you have this data set that you know um your AI product should be doing really well on.
+
+533
+00:48:45,200 --> 00:48:56,000
+It's it's not comprehensive but it lets you get started and then you set up the application and then design the right kind of evaluation metrics and I intentionally use the term evaluation
+
+534
+00:48:56,000 --> 00:49:06,079
+metrics although we say eval because I just want to be very specific on what it is because evaluation is a process evaluation metrics are dimensions that you want to focus on um during the
+
+535
+00:49:06,079 --> 00:49:16,800
+process right and then you go about deploying um run your evaluation metrics um and the second part is the continuous calibration which is the part where you
+
+536
+00:49:16,800 --> 00:49:22,240
+understand what um behavior you hadn't expected in the beginning, right?
+
+537
+00:49:22,240 --> 00:49:28,480
+Because when you start the development process, you have this data set that you're optimizing for,
+
+538
+00:49:28,480 --> 00:49:33,280
+but more often than not, you realize that that data set is not comprehensive enough.
+
+539
+00:49:33,280 --> 00:49:37,440
+Um because users start behaving with your systems in ways that you did not predict.
+
+540
+00:49:37,440 --> 00:49:39,760
+And that's where you want to do the calibration piece.
+
+541
+00:49:39,760 --> 00:49:40,319
+Right?
+
+542
+00:49:40,319 --> 00:49:41,839
+I've deployed my system.
+
+543
+00:49:41,839 --> 00:49:49,680
+Now I see that there are patterns that I did not really expect and your evaluation metrics should give you some insight into that into those patterns.
+
+544
+00:49:49,680 --> 00:49:57,599
+But sometimes you figure out that those metrics were also not enough and you probably have new error patterns that you've not thought about and that's where you analyze your behavior,
+
+545
+00:49:57,599 --> 00:49:59,200
+spot error patterns.
+
+546
+00:49:59,200 --> 00:50:04,240
+You apply fixes for issues that you see but you also design newer evaluation metrics.
+
+547
+00:50:04,240 --> 00:50:07,040
+to figure out that they are emerging patterns.
+
+548
+00:50:07,040 --> 00:50:11,599
+And that doesn't mean you should always design evaluation metrics.
+
+549
+00:50:11,599 --> 00:50:16,800
+There are some errors that you can just fix and not really come back to uh because they're very spot errors.
+
+550
+00:50:16,800 --> 00:50:22,800
+For instance, there's a there's a a tool calling error just because your tool wasn't defined well and stuff like that.
+
+551
+00:50:22,800 --> 00:50:24,880
+You can just fix it and move on, right?
+
+552
+00:50:24,880 --> 00:50:29,280
+And this is pretty much how an AI product life cycle would look like.
+
+553
+00:50:29,280 --> 00:50:34,559
+But what we specifically also mention is while you're going through these iterations,
+
+554
+00:50:34,559 --> 00:50:41,440
+try to think of lower agency iterations in the beginning um and higher control iterations.
+
+555
+00:50:41,440 --> 00:50:51,760
+What that means is constrain the number of decisions your AI systems can make and um make sure that they're humans in the loop and then increase that over time because you're kind of
+
+556
+00:50:51,760 --> 00:51:01,760
+building a flywheel of behavior and uh you're understanding what kind of use cases are coming in or how your users are using the system right and one example I think we give in the
+
+557
+00:51:01,760 --> 00:51:13,119
+newsletter itself is um the customer support this is a nice image that kind of shows how you can think of agency and control as two dimensions and each of your versions keep on increasing the
+
+558
+00:51:13,119 --> 00:51:18,960
+agency or the ability of your AI system to make decisions and lower the control as you go.
+
+559
+00:51:18,960 --> 00:51:26,640
+And one example that we give is that of the u customer support agent where you can break it down into three versions.
+
+560
+00:51:26,640 --> 00:51:34,640
+The first version is just routing which is is your agent able to classify and route a particular ticket to the right department.
+
+561
+00:51:34,640 --> 00:51:39,359
+And sometimes when you read this you probably think is it so hard to just do routing?
+
+562
+00:51:39,359 --> 00:51:41,440
+Why can't an agent easily do that?
+
+563
+00:51:41,440 --> 00:51:46,880
+And when you go to enterprises, routing itself can be a super complex problem.
+
+564
+00:51:46,880 --> 00:51:52,640
+Any retail company, any popular retail company that you can think of has hierarchical taxonomies.
+
+565
+00:51:52,640 --> 00:51:55,359
+Most of the times the taxonomies are incredibly messy.
+
+566
+00:51:55,359 --> 00:52:05,839
+I have worked in you know use cases where you probably have taxonomy that says um you know some tax um some kind of hierarchy and then that says shoes and then
+
+567
+00:52:05,839 --> 00:52:17,760
+women's shoes and men's shoes all at the same layer where idea you should be having shoes and then women's shoes and men's shoes should be sub uh you know classes right and then you're like okay fine I could just merge that and you go
+
+568
+00:52:17,760 --> 00:52:26,480
+further and you see that there's also another section under shoes that says for women and for men and it's just not aggregated it's not uh fixed for some reason.
+
+569
+00:52:26,480 --> 00:52:30,079
+So if an agent kind of sees this kind of a taxonomy, what is it supposed to do?
+
+570
+00:52:30,079 --> 00:52:37,920
+Where is it supposed to route and a lot of the times we are not aware of these problems until you actually go about building something and understanding it,
+
+571
+00:52:37,920 --> 00:52:38,319
+right?
+
+572
+00:52:38,319 --> 00:52:44,400
+So um and when these kind of problems um real human agents see these kind of problems,
+
+573
+00:52:44,400 --> 00:52:46,000
+they know what to check next.
+
+574
+00:52:46,000 --> 00:52:56,559
+U maybe they realize that the the node that says for women and for men that's under shoes was last updated in 2019 which means that it's just a dead node that's lying there and not being used.
+
+575
+00:52:56,559 --> 00:53:00,640
+So they kind of know that okay we're supposed to be looking at a different node and stuff like that.
+
+576
+00:53:00,640 --> 00:53:05,040
+And I'm not saying agents cannot understand this or models are not capable enough to understand this,
+
+577
+00:53:05,040 --> 00:53:16,160
+but there are really weird rules within enterprises that are not documented anywhere and you want to um make sure that the agents have all of that context instead of just throwing the problem at
+
+578
+00:53:16,160 --> 00:53:17,040
+them, right?
+
+579
+00:53:17,040 --> 00:53:17,680
+Um yeah.
+
+580
+00:53:17,680 --> 00:53:26,160
+Uh coming back to the versions we had, routing was one where you have really high control because even if your agent routes to the wrong department,
+
+581
+00:53:26,160 --> 00:53:30,319
+humans can take control and you know undo uh those actions.
+
+582
+00:53:30,319 --> 00:53:41,359
+Um and along the way you also figure out that you probably are dealing with a ton of data issues that you need to fix and you know um um u make sure that your data layer is good enough for the agent to function.
+
+583
+00:53:41,359 --> 00:53:50,400
+uh we do is what we said of a co-pilot which is now that you've figured out routing works fine after a few iterations and you fixed all of your data issues,
+
+584
+00:53:50,400 --> 00:54:00,000
+you could go to the next step which is can my agent provide suggestions uh based on some standard operating procedures that we have for the customer support agent,
+
+585
+00:54:00,000 --> 00:54:00,240
+right?
+
+586
+00:54:00,240 --> 00:54:04,720
+And it could just generate a draft that the human can make changes to.
+
+587
+00:54:04,720 --> 00:54:13,760
+And when you do this, you're also logging human behavior, which means that how much of this draft was used by the customer support agent or what was omitted.
+
+588
+00:54:13,760 --> 00:54:22,720
+So you're actually getting error analysis for free when you do this because you're literally logging everything that the user is doing that you could then build back into your flywheel.
+
+589
+00:54:22,720 --> 00:54:29,839
+And then we say post that once you figured out that those drafts look good and most of the times maybe humans are not making too many changes.
+
+590
+00:54:29,839 --> 00:54:31,839
+They're using these drafts as is.
+
+591
+00:54:31,839 --> 00:54:41,119
+That's when you want to go to your end toend resolution assistant that could you know um draft a resolution that could sort the ticket as well right
+
+592
+00:54:41,119 --> 00:54:46,640
+and those are the stages of agency where you start with low agency and then you go up high,
+
+593
+00:54:46,640 --> 00:54:47,200
+right?
+
+594
+00:54:47,200 --> 00:54:58,319
+Um, we also have this really nice table that we put together which is what do you do at each version and what you learn that can enable you to go to the next step and what
+
+595
+00:54:58,319 --> 00:55:00,640
+information do you get that you can feed into the loop.
+
+596
+00:55:00,640 --> 00:55:01,040
+Right?
+
+597
+00:55:01,040 --> 00:55:05,040
+When you're just doing your routing, you have better quality routing data.
+
+598
+00:55:05,040 --> 00:55:09,440
+You also know what kind of prompts you need to be building to improve the routing system.
+
+599
+00:55:09,440 --> 00:55:15,839
+Essentially, you're figuring out your structure for context engineering and um building that flywheel that you want,
+
+600
+00:55:15,839 --> 00:55:16,000
+right?
+
+601
+00:55:16,000 --> 00:55:21,440
+And while I go through this, I want to also be very clear that two things.
+
+602
+00:55:21,440 --> 00:55:27,599
+One is when you build with CCCD in mind, it doesn't mean that you fix the problem all for once.
+
+603
+00:55:27,599 --> 00:55:34,000
+It's possible that you probably gone through V3 and you see a new distribution of data that you never previously imagined.
+
+604
+00:55:34,000 --> 00:55:45,040
+But um this is just one way to lower your risk which is you get enough information about how users behave with your system before going to a point of complete um
+
+605
+00:55:45,040 --> 00:55:46,240
+autonomy.
+
+606
+00:55:46,240 --> 00:55:55,680
+And the second thing is um you're also kind of um building this um you know implicit logging system.
+
+607
+00:55:55,680 --> 00:56:01,200
+Uh a lot of people come and tell us that oh wait there are eval right why do you need something like this?
+
+608
+00:56:01,200 --> 00:56:12,559
+The issue with just building a bunch of evaluation metrics and then having um them in production is evaluation metrics catch only the errors that you're already aware already aware of.
+
+609
+00:56:12,559 --> 00:56:17,680
+But there can be a lot of emerging patterns that you understand only after you put things in production.
+
+610
+00:56:17,680 --> 00:56:17,920
+Right?
+
+611
+00:56:17,920 --> 00:56:28,880
+So for those emerging patterns, you're kind of creating um um you know a low-risk uh kind of a framework so that you could understand user behavior and not really be in a
+
+612
+00:56:28,880 --> 00:56:32,640
+position where there are tons of errors and you're trying to fix all of them at once.
+
+613
+00:56:32,640 --> 00:56:34,640
+And this is not the only way to do it.
+
+614
+00:56:34,640 --> 00:56:36,079
+There are tons of different ways.
+
+615
+00:56:36,079 --> 00:56:39,280
+You want to decide how you constrain your autonomy.
+
+616
+00:56:39,280 --> 00:56:44,559
+It could be based on the number of actions that the agent is taking, which is what we do in this example.
+
+617
+00:56:44,559 --> 00:56:45,839
+It could be based on topic.
+
+618
+00:56:45,839 --> 00:56:55,920
+there just some um domains where it's uh pretty high risk to make a system completely autonomous for um certain decisions but for some other topics it's
+
+619
+00:56:55,920 --> 00:57:06,480
+okay to make them completely autonomous and depending on the complexity of the problem and that's where you really want your product managers your you know um engineers and subject matter experts to
+
+620
+00:57:06,480 --> 00:57:10,480
+align on how to build the system and continuously improve it.
+
+621
+00:57:10,480 --> 00:57:16,799
+The idea is just behavior calibration and not losing user trust as you do that behavior calibration.
+
+622
+00:57:16,799 --> 00:57:19,839
+I guess >> we'll link folks to this actual post if they want to go really deep.
+
+623
+00:57:19,839 --> 00:57:23,599
+You basically go through all of these steps by step a bunch of examples.
+
+624
+00:57:23,599 --> 00:57:34,880
+And the idea here is as you said that like the reason everything about what you're describing here is about making it uh continuous and iterative and kind of moving along this progression of higher
+
+625
+00:57:34,880 --> 00:57:36,480
+autonomy, less control.
+
+626
+00:57:36,480 --> 00:57:42,480
+And this idea of even calling continuous calibration continuous development is communicating it's this kind of iterative process.
+
+627
+00:57:42,480 --> 00:57:50,000
+And just to be clear, this this naming is kind of a owed to uh CI CICD, continuous integration,
+
+628
+00:57:50,000 --> 00:57:52,079
+continuous deployment >> suite.
+
+629
+00:57:52,079 --> 00:57:58,640
+And the idea here is like that this is the version of that for AI where instead of just like integrating into unit tests and deploying constantly,
+
+630
+00:57:58,640 --> 00:58:04,400
+it's >> uh running evals, looking at results, iterating on on the metrics you're watching,
+
+631
+00:58:04,400 --> 00:58:07,680
+figuring out where it's breaking, and iterating on that.
+
+632
+00:58:07,680 --> 00:58:08,480
+Awesome.
+
+633
+00:58:08,480 --> 00:58:11,599
+Okay, so again, we'll point people to this post if they want to go deeper.
+
+634
+00:58:11,599 --> 00:58:12,880
+That was a great overview.
+
+635
+00:58:12,880 --> 00:58:18,799
+Is there anything else before I go in a different topic around this framework specifically that you think is important for people to know?
+
+636
+00:58:18,799 --> 00:58:26,880
+>> I think one of the most common questions we get is how do I know if I need to go to the next stage or if this is calibrated enough,
+
+637
+00:58:26,880 --> 00:58:27,680
+right?
+
+638
+00:58:27,680 --> 00:58:32,000
+There's not really a rule book you can follow, but it's all about minimizing surprise,
+
+639
+00:58:32,000 --> 00:58:35,920
+which means let's say you're calibrating every one or two days.
+
+640
+00:58:35,920 --> 00:58:39,280
+Um, and you figure out that you're not seeing new data distribution patterns.
+
+641
+00:58:39,280 --> 00:58:50,559
+your users have been pretty consistent with how they're behaving with the system, then the amount of information you gain is kind of very low and that's when you know you can actually go to the next um
+
+642
+00:58:50,559 --> 00:58:51,280
+stage, right?
+
+643
+00:58:51,280 --> 00:58:53,520
+And it's all about the wipes at that point.
+
+644
+00:58:53,520 --> 00:58:55,200
+Like do you know you're ready?
+
+645
+00:58:55,200 --> 00:58:58,480
+Um you're not receiving any new information.
+
+646
+00:58:58,480 --> 00:59:08,640
+But also it really helps to understand that sometimes there are events that could completely uh you know mess up the calibration of your
+
+647
+00:59:08,640 --> 00:59:09,280
+system.
+
+648
+00:59:09,280 --> 00:59:16,240
+An example is um GPD 40 doesn't exist anymore or it's going to be deprecated in APIs as well.
+
+649
+00:59:16,240 --> 00:59:21,920
+So most companies that were using 40 should switch to five and five has very different properties.
+
+650
+00:59:21,920 --> 00:59:24,079
+So that's where your calibration's off again.
+
+651
+00:59:24,079 --> 00:59:26,559
+You want to go back and do this process again.
+
+652
+00:59:26,559 --> 00:59:37,680
+Sometimes users start users start behaving with systems also differently over time or user behavior evolves even with consumer products right you don't talk to chat GPT the same way you were
+
+653
+00:59:37,680 --> 00:59:48,319
+talking say two years ago just because you know the capabilities have increased so much and and also just people get excited when um you know these systems can solve one task they want to try it
+
+654
+00:59:48,319 --> 00:59:50,319
+out on other tasks as well.
+
+655
+00:59:50,319 --> 00:59:55,359
+Uh we built this system um for underwriters at some point, right?
+
+656
+00:59:55,359 --> 00:59:56,960
+Underwriting is a painful task.
+
+657
+00:59:56,960 --> 01:00:03,359
+There are agreements that are like you know uh you know loan uh applications that are like 30 or 40 pages.
+
+658
+01:00:03,359 --> 01:00:12,880
+And the idea for this bank was to build a system that could help underwriters pick policies and you know um um information about the bank so that
+
+659
+01:00:12,880 --> 01:00:14,960
+they could approve loans, right?
+
+660
+01:00:14,960 --> 01:00:18,640
+And for a good three or four months, everybody was pretty impressed with the system.
+
+661
+01:00:18,640 --> 01:00:24,319
+We had underwriters actually report gains in terms of how much time they were spending etc.
+
+662
+01:00:24,319 --> 01:00:31,200
+And post 3 months we realized that they were so excited with the product that they started asking very deep questions that we never anticipated.
+
+663
+01:00:31,200 --> 01:00:42,079
+They would just throw the entire application document at the system and go like for a case that looks like this what did previous underwriters do and for a user that just seems like a
+
+664
+01:00:42,079 --> 01:00:47,200
+natural extension of what they were doing but the building behind it should significantly change.
+
+665
+01:00:47,200 --> 01:00:52,720
+Now you need to understand what does for a case like this mean in the context of the loan itself.
+
+666
+01:00:52,720 --> 01:01:04,640
+Is it referring to people of a particular you know income range or is it referring to people in a particular geo and stuff like that and then you need to pick up historical documents analyze those documents and then tell them um okay this is what it looks like
+
+667
+01:01:04,640 --> 01:01:11,359
+versus just saying that there's a policy X Y and Z and you want to um you know look up that policy.
+
+668
+01:01:11,359 --> 01:01:22,640
+Um so something that might seem very natural to a end user might be very hard to build as a product builder and you see that user behavior also evolves over time and that's when you know you you know that
+
+669
+01:01:22,640 --> 01:01:24,400
+you want to go back and recalibrate.
+
+670
+01:01:24,400 --> 01:01:32,640
+>> What do you think is uh overhyped in the AI space right now and even more importantly what do you think is is underhyped?
+
+671
+01:01:32,640 --> 01:01:37,200
+>> I am as I said like super optimistic in different things that are going in AI.
+
+672
+01:01:37,200 --> 01:01:44,079
+So I wouldn't say overhyped but I feel kind of misunderstood is the concept of multi- aents.
+
+673
+01:01:44,079 --> 01:01:48,720
+Uh people have this notion of like uh I have this incredibly complex problem.
+
+674
+01:01:48,720 --> 01:01:52,640
+Now I'm going to break it down into hey you are this agent take care of this.
+
+675
+01:01:52,640 --> 01:01:54,240
+You're this agent take care of this.
+
+676
+01:01:54,240 --> 01:01:58,960
+And now if I somehow connect all of these agents they think they're the agent utopia.
+
+677
+01:01:58,960 --> 01:02:06,000
+And it's never the case that there are incredibly successful multi-agent systems that are built right like there's no doubt about that.
+
+678
+01:02:06,000 --> 01:02:17,200
+But I feel a lot of it comes in terms of how are you limiting the uh ways in which the system can go off tracks and for example like if you're building a supervisor agent and there
+
+679
+01:02:17,200 --> 01:02:28,400
+are like sub agents that actually do the work for the super agent supervisor agent that is a very uh successful pattern but coming with this notion of I'm going to divide the responsibilities
+
+680
+01:02:28,400 --> 01:02:36,000
+based on functionality and somehow uh expect all of that to work together in some sort of like gossip protocol.
+
+681
+01:02:36,000 --> 01:02:41,200
+uh that is like extremely uh misunderstood that you could do that.
+
+682
+01:02:41,200 --> 01:02:49,599
+I don't think like current uh ways of building and current like uh model capabilities are like right there in terms of like uh building those kind of applications.
+
+683
+01:02:49,599 --> 01:02:53,839
+I feel that is kind of misunderstood than overrated.
+
+684
+01:02:53,839 --> 01:02:54,880
+uh underrated.
+
+685
+01:02:54,880 --> 01:03:04,799
+I feel it's hard to probably believe but I still feel coding agents are underrated in the sense that I feel like you can go on Twitter and you can go on Reddit and you see a lot of
+
+686
+01:03:04,799 --> 01:03:16,160
+chatter about coding agents but talking to an engineer in like any random company uh especially outside of Bay Area you you can see like the amount of impact this coding agents can create and
+
+687
+01:03:16,160 --> 01:03:17,920
+the penetration is very low.
+
+688
+01:03:17,920 --> 01:03:28,880
+So I feel like 2025 uh and 2026 is going to be like an incredible year for optimizing all of these processes and I feel that is going to be creating a lot of value with AI.
+
+689
+01:03:28,880 --> 01:03:30,480
+That's really interesting on that first point.
+
+690
+01:03:30,480 --> 01:03:40,400
+So the idea there is uh you'll probably be more successful building and using uh an agent that is able to do its own sub agent splitting of work versus
+
+691
+01:03:40,400 --> 01:03:44,799
+like a bunch of say codeex agents where you do this task, you do that task.
+
+692
+01:03:44,799 --> 01:03:52,480
+You can have agents to do these things and you as a human can orchestrate it or you can have like one uh larger agent that is going to orchestrate all of these things.
+
+693
+01:03:52,480 --> 01:04:02,960
+But letting the agents communicate in terms of peer-to-peer kind of protocol and then especially uh doing this in say a customer support kind of use case is incredibly hard to
+
+694
+01:04:02,960 --> 01:04:08,880
+control what kind of agent is replying to your customer because you need to shift your guardrails everywhere and things like that.
+
+695
+01:04:08,880 --> 01:04:09,200
+>> Yeah.
+
+696
+01:04:09,200 --> 01:04:09,599
+Okay.
+
+697
+01:04:09,599 --> 01:04:10,640
+Uh great picks.
+
+698
+01:04:10,640 --> 01:04:12,480
+Okay, Ash, what do you got?
+
+699
+01:04:12,480 --> 01:04:13,599
+>> Can I say emails?
+
+700
+01:04:13,599 --> 01:04:14,720
+Will I be cancelled?
+
+701
+01:04:14,720 --> 01:04:16,079
+>> On which in which category?
+
+702
+01:04:16,079 --> 01:04:17,520
+Which which bucket do they go?
+
+703
+01:04:17,520 --> 01:04:18,400
+>> Overrated.
+
+704
+01:04:18,400 --> 01:04:19,039
+>> Overrated.
+
+705
+01:04:19,039 --> 01:04:20,000
+Okay, go go go for it.
+
+706
+01:04:20,000 --> 01:04:22,480
+You we won't let you get cancelled.
+
+707
+01:04:22,480 --> 01:04:23,200
+>> Uh just kidding.
+
+708
+01:04:23,200 --> 01:04:24,720
+I think EVAs are misunderstood.
+
+709
+01:04:24,720 --> 01:04:25,839
+They are important folks.
+
+710
+01:04:25,839 --> 01:04:28,000
+I'm not saying they're not important.
+
+711
+01:04:28,000 --> 01:04:36,960
+But I think just um this um I'm going to keep um jumping across tools and going to pick up and learn a new tool is
+
+712
+01:04:36,960 --> 01:04:38,319
+overrated.
+
+713
+01:04:38,319 --> 01:04:44,480
+I I still am old school and feel like you would need really need to be obsessed with the business problem you're trying to solve.
+
+714
+01:04:44,480 --> 01:04:46,160
+AI is only a tool.
+
+715
+01:04:46,160 --> 01:04:48,079
+Try to think of it that way.
+
+716
+01:04:48,079 --> 01:04:53,760
+Of course, you need to be learning about the latest and greatest, but don't be so obsessed with just building so quickly.
+
+717
+01:04:53,760 --> 01:04:55,119
+Building is really cheap today.
+
+718
+01:04:55,119 --> 01:04:57,119
+Um design is more expensive.
+
+719
+01:04:57,119 --> 01:05:07,760
+really thinking about your product, what you're going to build, is it going to really solve a pain point is is what is way more valuable today and it will only become uh more true in the near future,
+
+720
+01:05:07,760 --> 01:05:08,079
+right?
+
+721
+01:05:08,079 --> 01:05:15,920
+So really obsessing about your problem and design is underrated and just wrote building is overrated I guess.
+
+722
+01:05:15,920 --> 01:05:16,880
+>> Awesome.
+
+723
+01:05:16,880 --> 01:05:17,440
+Okay.
+
+724
+01:05:17,440 --> 01:05:22,480
+Uh similar sort of question from a a product point of view.
+
+725
+01:05:22,480 --> 01:05:25,599
+What do you think the next year of AI is going to look like?
+
+726
+01:05:25,599 --> 01:05:30,000
+give us a vision of where you think things are going to go by say by the end of 2026.
+
+727
+01:05:30,000 --> 01:05:40,319
+>> Yeah, I feel uh there's a lot of promise in terms of uh this background agents or proactive agents who is like they're going to like basically understand your
+
+728
+01:05:40,319 --> 01:05:41,680
+workflow even more.
+
+729
+01:05:41,680 --> 01:05:49,039
+Uh if you think if you think of like where is AI failing to create value today, it's mainly about not understanding the context.
+
+730
+01:05:49,039 --> 01:05:54,559
+And the reason that it's not understanding the context is it's not plugged into the right places where actual work is happening.
+
+731
+01:05:54,559 --> 01:05:55,119
+Right?
+
+732
+01:05:55,119 --> 01:06:06,079
+And as you do more of this, you can give the agent mode of context and then it start to see the world around you and understand what is the what are the set of metrics that you're optimizing for or what are the
+
+733
+01:06:06,079 --> 01:06:08,079
+kind of activities that you're trying to do.
+
+734
+01:06:08,079 --> 01:06:14,720
+It is a very easy extension from there to actually gain more out of it and then let the agent prompt you back.
+
+735
+01:06:14,720 --> 01:06:25,680
+uh we already do this in terms of charge GPT pulse which kind of gives you this daily update of things you might care about and it's it's very nice to actually have that like jog your brain up in terms of oh this is something that
+
+736
+01:06:25,680 --> 01:06:36,240
+I haven't thought about maybe this is good and now when you extend this to more complex tasks like a coding agent which says that like okay I have fixed five of your linear tickets and here are the patches just review them at the
+
+737
+01:06:36,240 --> 01:06:44,880
+start of your day so I feel that is going to be like extremely useful and I see that as like a strong direction in which like products are going to build in 2026 That is so cool.
+
+738
+01:06:44,880 --> 01:06:55,119
+So essentially agents kind of anticipating what you want to do and getting going getting ahead of you and here's I've solved these problems for you or I think this is going to crash your site.
+
+739
+01:06:55,119 --> 01:07:00,960
+Maybe you should fix this thing right here or I see the spike here and let's refactor our database.
+
+740
+01:07:00,960 --> 01:07:01,680
+Amazing.
+
+741
+01:07:01,680 --> 01:07:02,559
+What a world.
+
+742
+01:07:02,559 --> 01:07:04,319
+Okay, Ash, what do you got?
+
+743
+01:07:04,319 --> 01:07:07,680
+>> I am all in for multimodal experiences in 2026.
+
+744
+01:07:07,680 --> 01:07:17,200
+I think we have done quite some progress in 2025 and um not just in terms of generation but also understanding um until now I think LLMs
+
+745
+01:07:17,200 --> 01:07:28,799
+have been our most commonly used models but as humans we are multimodal creatures I would say like um language is probably one of our last forms of evolution as the three of us are talking
+
+746
+01:07:28,799 --> 01:07:40,400
+I think we're constantly getting so many signals I'm like oh Lenny is nodding his head so probably I would go in this direction or Lenny's bored so let me stop stop stop talking So there's a chain of thought be behind your chain of
+
+747
+01:07:40,400 --> 01:07:46,480
+thought and you're constantly altering it with language that dimension of expression is not explored as well.
+
+748
+01:07:46,480 --> 01:07:55,760
+So if you we could build better multimodal experiences that would get us closer to um humanlike um conversation richness
+
+749
+01:07:55,760 --> 01:08:05,440
+and um yeah I think um and just you will also just given the kind of models there's a bunch of boring tasks as well which are ripe for AI if multimodal
+
+750
+01:08:05,440 --> 01:08:15,359
+understanding gets better there are so many handwritten documents and really messy uh PDFs that cannot be passed even by the best of the models as of today
+
+751
+01:08:15,359 --> 01:08:16,799
+and if It's possible.
+
+752
+01:08:16,799 --> 01:08:21,199
+There's there'll be so much um um data that we can tap into.
+
+753
+01:08:21,199 --> 01:08:21,520
+>> Awesome.
+
+754
+01:08:21,520 --> 01:08:29,520
+I just saw Demis from Deep Mind AI, Google, whatever they call the whole or uh talking about this where he's thinks that's going to be a big part of where they're going,
+
+755
+01:08:29,520 --> 01:08:36,960
+combining the image model work, the LLM, and also their world model stuff, Genie, I think is what it's called.
+
+756
+01:08:36,960 --> 01:08:39,520
+>> So, that's going to be a wild wild time.
+
+757
+01:08:39,520 --> 01:08:40,080
+Okay.
+
+758
+01:08:40,080 --> 01:08:42,000
+Uh last question.
+
+759
+01:08:42,000 --> 01:08:52,640
+If someone wants to just get better at building AI products, what's just maybe one skill or maybe two skills that you think they should lean into and develop?
+
+760
+01:08:52,640 --> 01:08:57,199
+>> I think we did cover a bunch of best practices for AI products, which is start small,
+
+761
+01:08:57,199 --> 01:09:02,799
+try to get your iteration going well and build a flywheel and all of that.
+
+762
+01:09:02,799 --> 01:09:08,159
+But again, if you kind of look at it at a 10,000 ft level for anybody building today,
+
+763
+01:09:08,159 --> 01:09:13,359
+like I was saying, implementation is going to be ridiculously cheap in the next few years.
+
+764
+01:09:13,359 --> 01:09:18,159
+So really nail down your design, your judgment, your taste and all of that.
+
+765
+01:09:18,159 --> 01:09:29,839
+Um and in general if you're building a career as well I feel for the past few years your your former years say the first two three years of uh
+
+766
+01:09:29,839 --> 01:09:41,040
+building your career is always focused on execution mechanics and all of that and now we have AI that could help you ramp pretty quickly and post that I mean after a few years I think everybody
+
+767
+01:09:41,040 --> 01:09:49,839
+everybody's job becomes about your taste your judgment and kind of um uh you know what is uniquely you.
+
+768
+01:09:49,839 --> 01:09:56,080
+I think nail down on that part and try to figure out how you can bring in um that kind of a perspective.
+
+769
+01:09:56,080 --> 01:10:02,159
+Um and it doesn't have to mean that you should be significantly older, have ex um years of experience.
+
+770
+01:10:02,159 --> 01:10:08,480
+We recently hired someone and we use this very popular app uh for tracking our tasks,
+
+771
+01:10:08,480 --> 01:10:08,640
+right?
+
+772
+01:10:08,640 --> 01:10:13,040
+And we've been using it for years and we pay a high subscription fee for it.
+
+773
+01:10:13,040 --> 01:10:16,480
+And this guy just came with his own white coded app to the meeting.
+
+774
+01:10:16,480 --> 01:10:28,159
+he onboarded us um to all of it and he's like okay let's start using this and I think that kind of agency and that kind of ownership to really rethink experiences is what uh will set people apart and I'm not being
+
+775
+01:10:28,159 --> 01:10:38,239
+blind to the fact that wipe coded apps have high maintenance costs and maybe as we scale as a company we have to replace it or we have to think of better approaches but given that we're a smalls
+
+776
+01:10:38,239 --> 01:10:50,159
+size company now and just I I was really shocked because I never thought of it um um if you've been used to working in a certain way you associate a cost with building and I feel like folks who grew
+
+777
+01:10:50,159 --> 01:11:02,080
+up in this age u have a much lower cost associated in their mind they just don't mind building something and going ahead with it and that's they're also very um enthusiastic to try out new tools um
+
+778
+01:11:02,080 --> 01:11:13,760
+that's also probably why AI products have this retention problem because everybody's so excited about trying out these new tools and all of that but essentially um having the agency and ownership and I think it's also the end
+
+779
+01:11:13,760 --> 01:11:17,040
+going to be the end of the busy work era, right?
+
+780
+01:11:17,040 --> 01:11:21,199
+You can't be sitting in a corner doing something that doesn't move the needle for a company.
+
+781
+01:11:21,199 --> 01:11:26,000
+You really need to be thinking about, you know, end to-end workflows, how you can bring in more impact.
+
+782
+01:11:26,000 --> 01:11:28,400
+I think all of that will be super important.
+
+783
+01:11:28,400 --> 01:11:30,719
+>> That reminds me, I just had Jason Lumpkit on the podcast.
+
+784
+01:11:30,719 --> 01:11:37,760
+He's um uh very smart on sales, go to market, run Zaster, and he replaced his whole sales team with agents.
+
+785
+01:11:37,760 --> 01:11:41,360
+He had 10 sales people, now he has 1.2 and 20 agents.
+
+786
+01:11:41,360 --> 01:11:50,239
+And one of the agents, it was just tracking everyone's updates to Salesforce and kind of uh updating it automatically for them based on their calls.
+
+787
+01:11:50,239 --> 01:11:54,000
+And one of the salespeople uh is like, "Okay, I'm I I quit."
+
+788
+01:11:54,000 --> 01:11:56,560
+And it turns out he wasn't really doing anything.
+
+789
+01:11:56,560 --> 01:11:59,760
+>> He was just sitting around >> and he's like, "Okay, this will catch me.
+
+790
+01:11:59,760 --> 01:12:01,679
+I got to get out of here."
+
+791
+01:12:01,679 --> 01:12:01,920
+>> Yes.
+
+792
+01:12:01,920 --> 01:12:05,280
+>> So to your point about you can't it'll be harder to sit around and to your thumbs.
+
+793
+01:12:05,280 --> 01:12:07,679
+Uh I think is really right.
+
+794
+01:12:07,679 --> 01:12:08,000
+>> Yeah.
+
+795
+01:12:08,000 --> 01:12:18,320
+I think to add on to that like feel like persistence is also something that is extremely valuable especially given that anybody who wants to build something is the information is like at
+
+796
+01:12:18,320 --> 01:12:28,480
+your fingertips even more than like the past decade right you can learn anything overnight and become that sort of like iron man kind of approach so I feel like
+
+797
+01:12:28,480 --> 01:12:38,640
+having that persistence and like going through the pain of like learning this implementing this and like understanding what works and what doesn't work and as you are going through this like pain of
+
+798
+01:12:38,640 --> 01:12:42,400
+like developing multiple approaches and then solving the problem.
+
+799
+01:12:42,400 --> 01:12:52,239
+I feel that is like going to be the real boat as an individual like I I I like to call it like pain is the new mode but uh I feel that is exactly super useful to actually
+
+800
+01:12:52,239 --> 01:12:56,239
+have this in especially in like you know you're building these AI products.
+
+801
+01:12:56,239 --> 01:12:57,199
+>> Say more about this.
+
+802
+01:12:57,199 --> 01:12:58,159
+I love this concept.
+
+803
+01:12:58,159 --> 01:12:59,360
+Pain is the new moat.
+
+804
+01:12:59,360 --> 01:13:00,560
+Is there more there?
+
+805
+01:13:00,560 --> 01:13:11,199
+Yeah, I feel as a company I mean like successful companies right now building in any new area they are successful not because they're first to the market or like they have this fancy feature that more customers are liking
+
+806
+01:13:11,199 --> 01:13:11,520
+it.
+
+807
+01:13:11,520 --> 01:13:22,320
+They went through the pain of understanding what are the set of non-negotiable things and trade them off exactly with like what are the features or like what are the model capabilities
+
+808
+01:13:22,320 --> 01:13:24,480
+that I can use to solve that problem.
+
+809
+01:13:24,480 --> 01:13:26,560
+it it this is not a straightforward process, right?
+
+810
+01:13:26,560 --> 01:13:32,800
+There's no textbook to do this or like there's no straightforward way or like a known threaded path to be here.
+
+811
+01:13:32,800 --> 01:13:42,880
+So a lot of this pain I was talking about is just like going through this iteration of like okay let's try this and if this doesn't work let's try this and that kind of knowledge that you built across
+
+812
+01:13:42,880 --> 01:13:52,800
+the organization or across like your own experience lived experiences I feel that the that pain is what uh translates into the mode of the company right this could
+
+813
+01:13:52,800 --> 01:14:01,840
+be like a product of eval or like something that you built and I feel that is going to be the game changer >> that is awesome it's like uh turning a
+
+814
+01:14:01,840 --> 01:14:03,280
+coal into diamond Diamond.
+
+815
+01:14:03,280 --> 01:14:04,400
+Yes.
+
+816
+01:14:04,400 --> 01:14:05,040
+Okay.
+
+817
+01:14:05,040 --> 01:14:14,480
+Uh I feel like we've done a great job helping people avoid some of the biggest issues people consistently run into building AI products.
+
+818
+01:14:14,480 --> 01:14:19,520
+We've covered so many of the pitfalls and the ways to actually do it correctly.
+
+819
+01:14:19,520 --> 01:14:23,360
+Before we get to our very exciting lightning round, is there anything else that you wanted to share?
+
+820
+01:14:23,360 --> 01:14:25,199
+Anything else you want to leave listeners with?
+
+821
+01:14:25,199 --> 01:14:26,719
+>> Be obsessed with your customers.
+
+822
+01:14:26,719 --> 01:14:28,239
+Be obsessed with the problem.
+
+823
+01:14:28,239 --> 01:14:34,560
+Um AI is just a tool and um try to make sure that you're really understanding your workflows.
+
+824
+01:14:34,560 --> 01:14:40,960
+80% of so-called AI engineers, AIPM spend their time actually understanding their workflows very well.
+
+825
+01:14:40,960 --> 01:14:48,400
+They're not building the fanciest and the you know most uh cool models or um workflows around it.
+
+826
+01:14:48,400 --> 01:14:52,400
+They're actually in the wheats understanding their customers behavior and data.
+
+827
+01:14:52,400 --> 01:14:59,440
+Um, and whenever a software engineer who's never done AI before hears the term, look at your data,
+
+828
+01:14:59,440 --> 01:15:02,960
+I think it's a huge revelation to them, but it's always been the case.
+
+829
+01:15:02,960 --> 01:15:03,840
+You need to go there.
+
+830
+01:15:03,840 --> 01:15:09,040
+Look at your data, understand your users, and that's going to be a huge differentiator.
+
+831
+01:15:09,040 --> 01:15:10,159
+>> It's a great way to close it.
+
+832
+01:15:10,159 --> 01:15:12,320
+It's not the AI isn't the answer.
+
+833
+01:15:12,320 --> 01:15:15,440
+It's it's a tool to solve the problem.
+
+834
+01:15:15,440 --> 01:15:19,120
+With that, we have reached our very exciting lightning round.
+
+835
+01:15:19,120 --> 01:15:20,880
+I've got five questions for both of you.
+
+836
+01:15:20,880 --> 01:15:22,159
+Are you ready?
+
+837
+01:15:22,159 --> 01:15:22,880
+Yay.
+
+838
+01:15:22,880 --> 01:15:23,679
+Yes.
+
+839
+01:15:23,679 --> 01:15:24,000
+>> All right.
+
+840
+01:15:24,000 --> 01:15:25,120
+So, you can both answer them.
+
+841
+01:15:25,120 --> 01:15:26,400
+You can pick one which you want to answer.
+
+842
+01:15:26,400 --> 01:15:28,000
+Either way, up to you.
+
+843
+01:15:28,000 --> 01:15:32,159
+What are two or three books you find yourself recommending most to other people?
+
+844
+01:15:32,159 --> 01:15:35,520
+>> For me, it's this book called When Breath Becomes Air, Lenny.
+
+845
+01:15:35,520 --> 01:15:37,120
+It was written by Paul Kalaniti.
+
+846
+01:15:37,120 --> 01:15:48,960
+I think he was um um an Indian origin neurosurgeon who was diagnosed with lung cancer at 31 or 32 and the whole book is his memoir and just is written after he was diagnosed
+
+847
+01:15:48,960 --> 01:15:56,880
+and it's it's really beautiful especially because I read it during co and all we ever wanted to do during co is stay alive.
+
+848
+01:15:56,880 --> 01:16:08,719
+Um there are a bunch of really nice quotes within the book as well, but I remember one of them he was kind of arguing against a very popular quote by Socrates which is the
+
+849
+01:16:08,719 --> 01:16:13,040
+unexamined life is not worth living or something like that.
+
+850
+01:16:13,040 --> 01:16:16,159
+And which means you really need to be thinking about your choices.
+
+851
+01:16:16,159 --> 01:16:19,920
+You need to you know understand your values, your mission and all of that.
+
+852
+01:16:19,920 --> 01:16:26,880
+And um Paul says, "If the unexamined life is not worth living, was the unlived life worth examining?"
+
+853
+01:16:26,880 --> 01:16:32,640
+Which means are you spending so much time just understanding your mission and purpose that you've forgotten to live?
+
+854
+01:16:32,640 --> 01:16:43,199
+And I think it everybody who's uh staying in the AI era and building and continuously going through this phase of reinventing themselves need to take a pause and live for a bit.
+
+855
+01:16:43,199 --> 01:16:45,920
+I guess they need to stop evaling life too much.
+
+856
+01:16:45,920 --> 01:16:48,640
+What really >> I was going to say that that's where my mind went.
+
+857
+01:16:48,640 --> 01:16:50,560
+generate some emails for your life.
+
+858
+01:16:50,560 --> 01:16:52,560
+Oh my god, we've gone too far.
+
+859
+01:16:52,560 --> 01:16:52,960
+>> Yep.
+
+860
+01:16:52,960 --> 01:16:53,199
+Yeah.
+
+861
+01:16:53,199 --> 01:16:53,520
+Yeah.
+
+862
+01:16:53,520 --> 01:16:55,120
+That's that's my favorite book.
+
+863
+01:16:55,120 --> 01:16:57,280
+>> I I like more of science fiction books.
+
+864
+01:16:57,280 --> 01:17:01,440
+So, I uh really like this three body problem series.
+
+865
+01:17:01,440 --> 01:17:03,040
+Uh it's like a three book series.
+
+866
+01:17:03,040 --> 01:17:14,480
+It's it's like has it has elements of like grander than science fiction uh life outside earth and how it impacts like human decision-m process and it also has like elements of
+
+867
+01:17:14,480 --> 01:17:25,600
+geopolitics and how how much important or like valuable abstract science is to human progress and then that gets when that gets stopped it's it's not noticeable in everyday life but it it
+
+868
+01:17:25,600 --> 01:17:27,520
+can cause like devastating effects.
+
+869
+01:17:27,520 --> 01:17:35,600
+So I feel like AI helping in these areas for example is going to be like extremely crucial and that book is like a nice example of what could happen otherwise.
+
+870
+01:17:35,600 --> 01:17:42,400
+Completely agree absolutely love might be my favorite sci-fi book except or series even and it's three I have to read them all three by the way.
+
+871
+01:17:42,400 --> 01:17:45,679
+I find that it only got really good about one and a half books in.
+
+872
+01:17:45,679 --> 01:17:52,640
+So if anyone's tried it and like what the heck is going on here just keep reading and get to the middle of the second one and then gets mindblowing.
+
+873
+01:17:52,640 --> 01:17:53,040
+>> Yes.
+
+874
+01:17:53,040 --> 01:18:01,440
+Uh, if you love sci-fi and you're an AI, you got to read this book called A Fire Upon the Deep by uh,
+
+875
+01:18:01,440 --> 01:18:03,520
+Vernon Vege.
+
+876
+01:18:03,520 --> 01:18:04,320
+>> Mhm.
+
+877
+01:18:04,320 --> 01:18:05,120
+>> Check it out.
+
+878
+01:18:05,120 --> 01:18:06,400
+It's incredible.
+
+879
+01:18:06,400 --> 01:18:11,520
+Uh, I saw Noah Smith on his newsletter recommend this book and there's like a whole there's like sequels to it,
+
+880
+01:18:11,520 --> 01:18:12,320
+but this is the one.
+
+881
+01:18:12,320 --> 01:18:19,840
+It's so incredible and it's actually turns out it's about AGI and super intelligence and all these things and it's just like so epic and no one's heard of it.
+
+882
+01:18:19,840 --> 01:18:20,480
+>> Thank you.
+
+883
+01:18:20,480 --> 01:18:20,880
+>> There you go.
+
+884
+01:18:20,880 --> 01:18:21,920
+I'm giving you one back.
+
+885
+01:18:21,920 --> 01:18:23,199
+Okay, next question.
+
+886
+01:18:23,199 --> 01:18:26,480
+What's a favorite recent movie or TV show that you've really enjoyed?
+
+887
+01:18:26,480 --> 01:18:30,000
+>> I started re-watching Silicon Valley, and I think it's so true.
+
+888
+01:18:30,000 --> 01:18:31,120
+It's so timeless.
+
+889
+01:18:31,120 --> 01:18:33,120
+Everything is repeating all over again.
+
+890
+01:18:33,120 --> 01:18:41,600
+Anybody who's watched it a few years ago should start re-watching it, and you'll see that it's eerily similar to everything that's happening right now with the AI wave.
+
+891
+01:18:41,600 --> 01:18:43,199
+>> That's That's a good idea to rewatch it.
+
+892
+01:18:43,199 --> 01:18:47,040
+I love that their whole business was like an algorithm to compress, like a compression algorithm.
+
+893
+01:18:47,040 --> 01:18:50,640
+It's like maybe a precursor to LM in some small way.
+
+894
+01:18:50,640 --> 01:18:51,600
+Very good.
+
+895
+01:18:51,600 --> 01:18:53,440
+All right, GT, what you got?
+
+896
+01:18:53,440 --> 01:19:00,560
+>> Uh, I'm going to digress and say not a movie or a TV show, but there's this game I picked up recently called Expedition 33.
+
+897
+01:19:00,560 --> 01:19:08,719
+Uh, it has nothing to do with AI, but it's an incredibly incredibly well-made game in terms of the game play or like the movie and the story and the music.
+
+898
+01:19:08,719 --> 01:19:10,320
+Uh, it it's been amazing.
+
+899
+01:19:10,320 --> 01:19:11,600
+>> I love that you have time to play games.
+
+900
+01:19:11,600 --> 01:19:12,320
+That's a great sign.
+
+901
+01:19:12,320 --> 01:19:13,280
+I love that.
+
+902
+01:19:13,280 --> 01:19:14,000
+So, an open eye.
+
+903
+01:19:14,000 --> 01:19:19,600
+I'm just imagining you're there's nothing else going on except just coding and and >> yeah,
+
+904
+01:19:19,600 --> 01:19:22,640
+it has been incredibly hard to find time for that.
+
+905
+01:19:22,640 --> 01:19:23,120
+>> That's good.
+
+906
+01:19:23,120 --> 01:19:23,760
+That's a good sign.
+
+907
+01:19:23,760 --> 01:19:24,800
+I'm happy to hear this.
+
+908
+01:19:24,800 --> 01:19:25,040
+Okay.
+
+909
+01:19:25,040 --> 01:19:28,000
+What's a favorite product that you've recently discovered that you really love?
+
+910
+01:19:28,000 --> 01:19:29,199
+>> For me, it's Whisper Flow.
+
+911
+01:19:29,199 --> 01:19:34,159
+I think I've been using it quite a bit and I didn't know I needed it so much.
+
+912
+01:19:34,159 --> 01:19:45,679
+Um the best part is it's a conceptual transcription tool which means if you go to you know codeex and start using whisfl it starts identifying variables and all of that
+
+913
+01:19:45,679 --> 01:19:57,280
+and it's so seamless in terms of transcription to instruction you could say something like I'm so excited today add three exclamation marks and it seamlessly switches it adds those three exclamation marks instead of you know
+
+914
+01:19:57,280 --> 01:20:04,480
+writing add three exclamation marks and I think it's pretty cool um um if you're not using it you should try it I'll do a plug.
+
+915
+01:20:04,480 --> 01:20:12,800
+Get Whisper Flow for free for an entire year >> for a year for free by becoming an annual subscriber of my newsletter.
+
+916
+01:20:12,800 --> 01:20:14,400
+>> And that's how I got access to it.
+
+917
+01:20:14,400 --> 01:20:15,600
+Lenny, >> there we go.
+
+918
+01:20:15,600 --> 01:20:17,920
+It's like I think I I pitched this deal.
+
+919
+01:20:17,920 --> 01:20:20,800
+I think people don't truly understand how incredible this is.
+
+920
+01:20:20,800 --> 01:20:21,440
+They're like, "No way.
+
+921
+01:20:21,440 --> 01:20:22,000
+This is real."
+
+922
+01:20:22,000 --> 01:20:22,480
+It's real.
+
+923
+01:20:22,480 --> 01:20:23,760
+And 18 other products.
+
+924
+01:20:23,760 --> 01:20:25,040
+Lenny's productbass.com.
+
+925
+01:20:25,040 --> 01:20:26,400
+Check it out.
+
+926
+01:20:26,400 --> 01:20:27,360
+Moving on.
+
+927
+01:20:27,360 --> 01:20:28,239
+K.
+
+928
+01:20:28,239 --> 01:20:28,719
+>> Awesome.
+
+929
+01:20:28,719 --> 01:20:32,400
+Uh I actually am a stickler for productivity.
+
+930
+01:20:32,400 --> 01:20:37,520
+I keep experimenting new CLI tools and like things which can uh make me faster.
+
+931
+01:20:37,520 --> 01:20:40,159
+Uh so I feel like a recast has been amazing.
+
+932
+01:20:40,159 --> 01:20:44,159
+Uh I've discovered all this like new shortcuts that you can use to open different things,
+
+933
+01:20:44,159 --> 01:20:46,560
+type in shortcut commands and things like that.
+
+934
+01:20:46,560 --> 01:20:50,719
+And caffeinate is another thing that I've recently discovered from my teammates.
+
+935
+01:20:50,719 --> 01:20:53,600
+It helps you like prevent Mac from sleeping.
+
+936
+01:20:53,600 --> 01:20:57,760
+So you can run this really long codeex task for like four or five hours locally.
+
+937
+01:20:57,760 --> 01:21:00,880
+Let it build the thing and then you can wake up and be like okay this is good.
+
+938
+01:21:00,880 --> 01:21:02,000
+I like this.
+
+939
+01:21:02,000 --> 01:21:02,719
+>> That's hilarious.
+
+940
+01:21:02,719 --> 01:21:06,000
+That combo codeex and caffeinate.
+
+941
+01:21:06,000 --> 01:21:07,600
+You guys, you guys need to use it.
+
+942
+01:21:07,600 --> 01:21:08,640
+Like build that yourself.
+
+943
+01:21:08,640 --> 01:21:12,560
+An open air version of that or the codeex agent should just keep your Mac from sleeping.
+
+944
+01:21:12,560 --> 01:21:13,280
+That's so funny.
+
+945
+01:21:13,280 --> 01:21:16,320
+Uh, by the way, Raycast also part of Lenny's product pass.
+
+946
+01:21:16,320 --> 01:21:18,560
+One year free of Raycast.
+
+947
+01:21:18,560 --> 01:21:22,800
+>> We wen Lenny didn't tell us these folks.
+
+948
+01:21:22,800 --> 01:21:24,320
+These are actually our favorite.
+
+949
+01:21:24,320 --> 01:21:26,159
+>> These are just two of 19 products.
+
+950
+01:21:26,159 --> 01:21:27,040
+No caffeinate though.
+
+951
+01:21:27,040 --> 01:21:28,560
+I don't know if that's even paid.
+
+952
+01:21:28,560 --> 01:21:30,000
+Okay, let's keep going.
+
+953
+01:21:30,000 --> 01:21:35,679
+Do you have a favorite life motto that you find yourself coming back to in work or in life?
+
+954
+01:21:35,679 --> 01:21:39,760
+>> For me, I think this is what my dad told me when I was a kid and it's always stuck,
+
+955
+01:21:39,760 --> 01:21:46,080
+which is um um they told it couldn't be done, but the fool didn't know it, so he did it anyway.
+
+956
+01:21:46,080 --> 01:21:51,280
+I think be foolish enough to believe that you can do anything if you put your heart to it.
+
+957
+01:21:51,280 --> 01:21:59,360
+Especially now because you have so much data at your hand that could be pointing towards the fact that you probably will be unsuccessful.
+
+958
+01:21:59,360 --> 01:22:10,719
+with how many podcasts made it to more than a thousand subscribers or how many companies hit more than 1 million y and there's always data to show you that you won't be successful but sometimes just be foolish
+
+959
+01:22:10,719 --> 01:22:22,400
+and go ahead with it >> that's great yeah for me I uh am more of an overinker so I really like this quote from Steve Jobs that you can only connect the dots looking backwards so
+
+960
+01:22:22,400 --> 01:22:31,280
+it's a lot of the times there are like numerous choices and you don't really know the optimal one to pick but life's life works in ways that you can actually see back and be like,
+
+961
+01:22:31,280 --> 01:22:34,800
+"Oh, these are actually beautiful in terms of how I I would transition."
+
+962
+01:22:34,800 --> 01:22:39,760
+So, I feel like that is extremely useful in like, you know, keep moving forward, keep experimenting.
+
+963
+01:22:39,760 --> 01:22:40,960
+>> Final question.
+
+964
+01:22:40,960 --> 01:22:45,360
+Whenever I have two guests on the podcast at once, I like to ask this question.
+
+965
+01:22:45,360 --> 01:22:48,560
+What's something that you admire about the other person?
+
+966
+01:22:48,560 --> 01:22:56,800
+>> I think with Kir, um, it's about he's he's pretty calm and, uh, very grounded.
+
+967
+01:22:56,800 --> 01:22:59,280
+Um, and he's always been my sounding board.
+
+968
+01:22:59,280 --> 01:23:06,639
+I can throw a ton of ideas at him and he always comes up with he's able to anticipate the kind of issues that might um,
+
+969
+01:23:06,639 --> 01:23:14,560
+run into and he's extremely um, kind and lets his work speak instead of actually doing a lot of talking,
+
+970
+01:23:14,560 --> 01:23:15,600
+I guess.
+
+971
+01:23:15,600 --> 01:23:19,440
+But if I had to pick one, I think uh, he's the most incredible husband.
+
+972
+01:23:19,440 --> 01:23:24,719
+So >> reveal little people know.
+
+973
+01:23:24,719 --> 01:23:25,679
+>> Yeah.
+
+974
+01:23:25,679 --> 01:23:30,000
+We've been married for four years and been the most beautiful four years of my life.
+
+975
+01:23:30,000 --> 01:23:31,920
+>> Oh wow.
+
+976
+01:23:31,920 --> 01:23:32,639
+Okay.
+
+977
+01:23:32,639 --> 01:23:34,400
+How do you follow that?
+
+978
+01:23:34,400 --> 01:23:36,320
+>> Yeah, it's super hard to follow that.
+
+979
+01:23:36,320 --> 01:23:44,400
+I would say I am extremely privileged in terms of working with like really smart people in great companies in the Silicon Valley.
+
+980
+01:23:44,400 --> 01:23:55,679
+And I feel the unique thing that stands with Ashwaryia across like any other uh smart folks I've worked on is like she has this really amazing knack of teaching and like explaining
+
+981
+01:23:55,679 --> 01:24:06,800
+something uh in a very understandable and easy to comprehend way and that combined with persistence is like super useful especially in this uh fastmoving AI world that we are in in the sense
+
+982
+01:24:06,800 --> 01:24:15,120
+that there's so many new things coming up it feels overwhelming but when I hear her talk about like this is how you make sense of this entire thing this is where it plugs in.
+
+983
+01:24:15,120 --> 01:24:17,840
+I feel like oh that is so simple like I can also do that.
+
+984
+01:24:17,840 --> 01:24:25,199
+So she empowers a lot of people by simplifying things and you know like uh explaining things in the most understandable way.
+
+985
+01:24:25,199 --> 01:24:28,080
+So I feel that is like an incredible quality.
+
+986
+01:24:28,080 --> 01:24:28,719
+>> Amazing.
+
+987
+01:24:28,719 --> 01:24:29,280
+How sweet.
+
+988
+01:24:29,280 --> 01:24:30,560
+I got to do this all the time.
+
+989
+01:24:30,560 --> 01:24:33,360
+I need more more yes to that was that was great.
+
+990
+01:24:33,360 --> 01:24:33,840
+Okay.
+
+991
+01:24:33,840 --> 01:24:34,960
+Uh final questions.
+
+992
+01:24:34,960 --> 01:24:36,639
+Where can folks find stuff that you're working on?
+
+993
+01:24:36,639 --> 01:24:37,440
+Find you online.
+
+994
+01:24:37,440 --> 01:24:41,679
+Talk about share your course link and then just how can listeners be useful to you?
+
+995
+01:24:41,679 --> 01:24:43,600
+>> I write a lot on LinkedIn.
+
+996
+01:24:43,600 --> 01:24:52,000
+Um um so if you if you want to listen to pragmatists who've been in the weeds working on AI products and um what they're seeing,
+
+997
+01:24:52,000 --> 01:24:53,679
+you can uh follow my work.
+
+998
+01:24:53,679 --> 01:25:00,800
+We also have a GitHub repository with about 20K stars and that repository is all about good resources for learning AI.
+
+999
+01:25:00,800 --> 01:25:06,320
+It's completely free and if you um like what we spoke today, we also run a super popular course.
+
+1000
+01:25:06,320 --> 01:25:09,520
+We'll leave a link to it on building enterprise AI products.
+
+1001
+01:25:09,520 --> 01:25:18,880
+And the course is a lot about unlearning mindsets and following like a problem first approach uh instead of a tool first or a hype first approach.
+
+1002
+01:25:18,880 --> 01:25:20,639
+Um so you can check that out as well.
+
+1003
+01:25:20,639 --> 01:25:22,880
+And if you don't want to do the course, we write a lot.
+
+1004
+01:25:22,880 --> 01:25:24,719
+We give out a lot of free resources.
+
+1005
+01:25:24,719 --> 01:25:25,840
+We have free sessions.
+
+1006
+01:25:25,840 --> 01:25:27,679
+So make sure you follow our work.
+
+1007
+01:25:27,679 --> 01:25:30,800
+>> Yeah, I would also add that I you can also find me on LinkedIn.
+
+1008
+01:25:30,800 --> 01:25:41,120
+uh I don't like write a lot I guess but I'm super all excited to just talk to any complex product that you're building and if you have thoughts on like how you can uh use
+
+1009
+01:25:41,120 --> 01:25:47,920
+coding agents to make your life better or how what are the problems that you're seeing um always my DMs are open and like we can have a great discuss.
+
+1010
+01:25:47,920 --> 01:25:48,880
+>> Awesome.
+
+1011
+01:25:48,880 --> 01:25:52,400
+Well, Kiriti and Ash, thank you so much for being here.
+
+1012
+01:25:52,400 --> 01:25:53,040
+>> Thank you so much.
+
+1013
+01:25:53,040 --> 01:25:53,679
+>> Thank you Lenny.
+
+1014
+01:25:53,679 --> 01:25:54,800
+This was so much fun.
+
+1015
+01:25:54,800 --> 01:25:55,760
+>> So much fun.
+
+1016
+01:25:55,760 --> 01:25:58,000
+Bye everyone.
+
+1017
+01:25:58,000 --> 01:25:59,280
+>> Thank you so much for listening.
+
+1018
+01:25:59,280 --> 01:26:03,600
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+1019
+01:26:03,600 --> 01:26:05,760
+or your favorite podcast app.
+
+1020
+01:26:05,760 --> 01:26:12,080
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast.
+
+1021
+01:26:12,080 --> 01:26:17,520
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1022
+01:26:17,520 --> 01:26:21,239
+See you in the next episode.

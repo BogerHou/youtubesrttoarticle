@@ -1,0 +1,4945 @@
+1
+00:00:00,080 --> 00:00:03,120
+You're CTO of Meta. You 
+are a co-CEO of Salesforce,  
+
+2
+00:00:03,120 --> 00:00:07,200
+you're chairman of the board at OpenAI. How do 
+you think the AI market is going to play out?
+
+3
+00:00:07,200 --> 00:00:10,560
+The whole market is going to go towards agents. 
+I think the whole market is going to go towards  
+
+4
+00:00:10,560 --> 00:00:15,840
+outcomes-based pricing. It's just so obviously 
+the correct way to build and sell software.
+
+5
+00:00:15,840 --> 00:00:18,160
+This makes me think about, I had 
+Marc Benioff on the podcast. You  
+
+6
+00:00:18,160 --> 00:00:20,960
+guys were co-CEOs. He was extremely agent-pilled.
+
+7
+00:00:20,960 --> 00:00:24,480
+It's so hard to sell productivity 
+software, which I learned the hard way.
+
+8
+00:00:24,480 --> 00:00:27,760
+What's a story that comes to mind when 
+you think about your biggest mistake?
+
+9
+00:00:27,760 --> 00:00:29,680
+I was the product manager 
+for, it was called Google  
+
+10
+00:00:29,680 --> 00:00:32,880
+Local had a pretty tough product 
+review with Marissa and Larry,  
+
+11
+00:00:32,880 --> 00:00:37,120
+and to not do that well with a link from 
+the Google homepage is embarrassing.
+
+12
+00:00:37,120 --> 00:00:38,880
+I think it's really empowering for people to hear  
+
+13
+00:00:38,880 --> 00:00:41,840
+it's possible to succeed in spite 
+of a massive failure like this.
+
+14
+00:00:41,840 --> 00:00:46,240
+They gave me another shot to do the V2 
+of it that resulted in Google Maps. We  
+
+15
+00:00:46,240 --> 00:00:48,400
+got about 10 million people 
+using it on the first day.
+
+16
+00:00:48,400 --> 00:00:52,000
+What mindset contributed to you being 
+successful in such a variety of roles?
+
+17
+00:00:52,000 --> 00:00:56,560
+Waking up every morning, what is the 
+most impactful thing I could do today?
+
+18
+00:00:56,560 --> 00:01:01,600
+Today, my guest is Bret Taylor. Bret is an 
+absolute legendary builder and founder. He  
+
+19
+00:01:01,600 --> 00:01:07,040
+co-created Google Maps at Google. He co-founded 
+the social network, FriendFeed invented the like  
+
+20
+00:01:07,040 --> 00:01:12,240
+button and the real-time newsfeed, which he sold 
+to Facebook. He then became CTO at Facebook. He  
+
+21
+00:01:12,240 --> 00:01:18,400
+then started a productivity company called Quip, 
+which he sold to Salesforce for $750 million. He  
+
+22
+00:01:18,400 --> 00:01:24,160
+then became co-CEO of Salesforce. He's also 
+currently chairman of the board at OpenAI.  
+
+23
+00:01:24,160 --> 00:01:28,080
+At one point he was chairman of the board 
+at Twitter. Today, co-founder and CEO of  
+
+24
+00:01:28,080 --> 00:01:32,720
+Sierra an AI started building agent to help 
+companies with customer service sales and more. 
+
+25
+00:01:32,720 --> 00:01:37,040
+In our conversation, we cover so much ground, 
+including what skills and mindsets have most  
+
+26
+00:01:37,040 --> 00:01:41,920
+helped Bret be so successful in so many roles, 
+why we're all still sleeping on the impact that  
+
+27
+00:01:41,920 --> 00:01:46,240
+agents are going to have on the business world. 
+How coding is going to change in the coming years,  
+
+28
+00:01:46,240 --> 00:01:49,920
+where the biggest opportunities remain 
+for startups, lessons on pricing and  
+
+29
+00:01:49,920 --> 00:01:55,280
+go-to-market in AI, the story behind the like 
+button and so much more. This is a truly epic  
+
+30
+00:01:55,280 --> 00:01:58,960
+conversation with a legendary builder.
+If you enjoy this podcast, don't forget  
+
+31
+00:01:58,960 --> 00:02:02,800
+to subscribe and follow it in your favorite 
+podcasting app or YouTube. Also, if you become  
+
+32
+00:02:02,800 --> 00:02:07,440
+an annual subscriber of my newsletter, you get 
+a year free of a bunch of incredible products,  
+
+33
+00:02:07,440 --> 00:02:12,880
+including Replit, Lovable, Bolt, n8n, Linear, 
+Superhuman, Descript, Wispr Flow, Gamma,  
+
+34
+00:02:12,880 --> 00:02:17,040
+Perplexity, Warp, Granola, Magic Patterns, 
+Raycast, ChatPRD, Mobbin and more. Check  
+
+35
+00:02:17,040 --> 00:02:22,880
+it out at Lenny'snewsletter.com and click 
+bundle. With that, I bring you Bret Taylor. 
+
+36
+00:02:22,880 --> 00:02:28,320
+This episode is brought to you by CodeRabbit, 
+the AI code review platform transforming how  
+
+37
+00:02:28,320 --> 00:02:33,760
+engineering teams ship faster with AI without 
+sacrificing code quality. Code reviews are  
+
+38
+00:02:33,760 --> 00:02:39,200
+critical, but time-consuming CodeRabbit acts 
+as your AI co-pilot providing instant code  
+
+39
+00:02:39,200 --> 00:02:44,400
+review comments and potential impacts of every 
+pull request. Beyond just flagging issues,  
+
+40
+00:02:44,400 --> 00:02:50,240
+CodeRabbit provides one click fix suggestions and 
+lets you define custom code quality rules using  
+
+41
+00:02:50,240 --> 00:02:55,520
+AST GREP patterns, catching subtle issues that 
+traditional static analysis tools might miss. 
+
+42
+00:02:55,520 --> 00:03:01,200
+Coderabbit also provides free AI code reviews 
+directly in the IDE. It's available in VS. Code,  
+
+43
+00:03:01,200 --> 00:03:06,800
+Cursor and Windsurf. CodeRabbit has so far 
+reviewed more than 10 million PRs installed  
+
+44
+00:03:06,800 --> 00:03:12,960
+on 1 million repositories and is used by over 
+70,000 open source projects. Get CodeRabbit for  
+
+45
+00:03:12,960 --> 00:03:20,320
+free for an entire year at CodeRabbit.ai 
+using code, Lenny. That's CodeRabbit.ai. 
+
+46
+00:03:20,320 --> 00:03:25,120
+This episode is brought to you by Basecamp. 
+Basecamp is the famously straightforward  
+
+47
+00:03:25,120 --> 00:03:29,920
+project management system from 37signals. 
+Most project management systems are either  
+
+48
+00:03:29,920 --> 00:03:36,400
+inadequate or frustratingly complex, but Basecamp 
+is refreshingly clear. It's simple to get started,  
+
+49
+00:03:36,400 --> 00:03:40,960
+easy to organize and Basecamp's visual tools 
+help you see exactly what everyone is working  
+
+50
+00:03:40,960 --> 00:03:46,560
+on and how all work is progressing. Keep all your 
+files and conversations about projects directly  
+
+51
+00:03:46,560 --> 00:03:51,040
+connected to the projects themselves so that 
+you always know where stuff is and you're not  
+
+52
+00:03:51,040 --> 00:03:56,880
+constantly switching contexts. Running a business 
+is hard. Managing your project should be easy.  
+
+53
+00:03:56,880 --> 00:04:01,040
+I've been a long time fan of what 37signals has 
+been up to and I'm really excited to be sharing  
+
+54
+00:04:01,040 --> 00:04:10,480
+this with you. Sign up for a free account at 
+basecamp.com/Lenny. Get somewhere with Basecamp. 
+
+55
+00:04:10,480 --> 00:04:14,000
+Bret, thank you so much for being 
+here and welcome to the podcast.
+
+56
+00:04:14,000 --> 00:04:15,200
+Thanks for having me.
+
+57
+00:04:15,200 --> 00:04:19,120
+My pleasure. There's so much that I want to 
+talk about. You've done so many incredible  
+
+58
+00:04:19,120 --> 00:04:22,320
+things over the course of your career. Just 
+boggles the mind, the things that you've done,  
+
+59
+00:04:22,320 --> 00:04:26,080
+and we're going to talk about a lot of that 
+sort of stuff, but I want to actually start  
+
+60
+00:04:26,080 --> 00:04:30,000
+with the opposite. I want to talk about a time 
+that you messed up, a time that you screwed up  
+
+61
+00:04:30,000 --> 00:04:33,920
+in a big way. We have this recurring segment 
+on the podcast called Fail Corner, and so, I  
+
+62
+00:04:33,920 --> 00:04:38,080
+thought it'd be fun to just start there before we 
+get into all the great stuff you've done. What's  
+
+63
+00:04:38,080 --> 00:04:43,280
+a story that comes to mind when you think about 
+maybe your biggest mistake in building a product?
+
+64
+00:04:43,280 --> 00:04:49,360
+It may not be the biggest, but it was my first 
+prominent mistake as a product manager at  
+
+65
+00:04:49,360 --> 00:04:57,520
+Google. So for me, it feels big because it was 
+very formative for me as a product designer.  
+
+66
+00:04:57,520 --> 00:05:07,040
+So I joined Google in late 2002, early 2003, and I 
+was one of the earliest associate product managers  
+
+67
+00:05:07,040 --> 00:05:12,640
+at the company and first, was working on the 
+search system, essentially expanding our index  
+
+68
+00:05:12,640 --> 00:05:20,720
+from 1 billion webpages to 10 billion, which was a 
+big deal at the time. It seems quaint now. Then I  
+
+69
+00:05:20,720 --> 00:05:26,160
+did a decent job and so my boss, Marissa Meyer, 
+gave me the opportunity to lead a new product  
+
+70
+00:05:26,160 --> 00:05:30,800
+initiative, which was a big bet on me and it was 
+both an opportunity to do something for Google,  
+
+71
+00:05:30,800 --> 00:05:37,920
+but I was also being pretty scrutinized just 
+as a young new product manager and the premise  
+
+72
+00:05:37,920 --> 00:05:42,880
+given to me was work on local search.
+At the time, the Yellow Pages was still  
+
+73
+00:05:42,880 --> 00:05:47,760
+dominant and well, Google was really good at 
+searching the web. It wasn't really good for  
+
+74
+00:05:47,760 --> 00:05:52,800
+finding a plumber or a restaurant just because it 
+wasn't really a huge part of the internet at the  
+
+75
+00:05:52,800 --> 00:05:59,600
+time. So this content wasn't necessarily on the 
+internet and even if it was, you didn't really  
+
+76
+00:05:59,600 --> 00:06:03,920
+want to find plumbers in Manhattan, you wanted 
+to find plumbers in San Francisco, if you're  
+
+77
+00:06:03,920 --> 00:06:10,320
+me. And so it was both a technical problem 
+and a product problem and a content problem. 
+
+78
+00:06:11,120 --> 00:06:16,720
+We launched the first version of that product 
+that I was the product manager for, was called  
+
+79
+00:06:16,720 --> 00:06:22,720
+Google Local and it was, I'll be a little bit more 
+critical now than I might've been at the time, but  
+
+80
+00:06:22,720 --> 00:06:32,240
+it was a little bit of a me too version of Yahoo 
+Yellow Pages, essentially grafting on Yellow Pages  
+
+81
+00:06:32,240 --> 00:06:37,200
+search on top of Google Search and with a properly 
+crafted query you could see those listings at the  
+
+82
+00:06:37,200 --> 00:06:44,240
+top of your search results but a standalone 
+site at local.google.com. Actually, it was an  
+
+83
+00:06:44,240 --> 00:06:50,080
+important enough initiative that actually, there 
+was on the Google homepage, it had Web, Images and  
+
+84
+00:06:50,080 --> 00:06:56,000
+Local was up there as well, so it's got top bill.
+I mean you could put almost any link on the Google  
+
+85
+00:06:56,000 --> 00:07:01,200
+homepage and get a lot of traffic to it. And 
+despite that, it didn't do that well and to not  
+
+86
+00:07:01,200 --> 00:07:11,840
+do that well with a link from the Google homepage 
+is embarrassing. There's not much one can do more  
+
+87
+00:07:11,840 --> 00:07:16,080
+than giving you that kind of traffic to give 
+you an add that as a product leader or a product  
+
+88
+00:07:16,080 --> 00:07:24,880
+manager. And the product was fine, it worked, but 
+it really wasn't differentiated. And in many ways,  
+
+89
+00:07:24,880 --> 00:07:29,760
+I think, again, I think I've had these reflections 
+more sense than at the time, that I had some of  
+
+90
+00:07:29,760 --> 00:07:34,880
+the time, but why use this instead of Yahoo Yellow 
+Pages? But more than anything else, why use this  
+
+91
+00:07:34,880 --> 00:07:40,400
+instead of the Yellow Pages? It was a digital 
+version of something that had come before. Had a  
+
+92
+00:07:40,400 --> 00:07:44,800
+pretty tough product review with Marissa and Larry 
+and others and it was fine. I wasn't about to get  
+
+93
+00:07:44,800 --> 00:07:52,800
+fired or something, but it was, I don't know, the 
+shine on my reputation was waning a little bit. 
+
+94
+00:07:52,800 --> 00:08:01,280
+And they gave me another shot to do a V2 of it and 
+I got the impression it wasn't like my last shot,  
+
+95
+00:08:01,280 --> 00:08:10,560
+but I certainly was feeling a little dejected from 
+going from a hot shot, new PM to a new thing. So,  
+
+96
+00:08:10,560 --> 00:08:16,480
+we spent a lot of time thinking about how can you 
+make something that's just much more compelling  
+
+97
+00:08:16,480 --> 00:08:23,280
+and not just a digital version of the Yellow 
+Pages and not just so similar to some of the  
+
+98
+00:08:23,280 --> 00:08:28,880
+other products out there. And that ended up being 
+the thread that we pulled that resulted in Google  
+
+99
+00:08:28,880 --> 00:08:37,040
+Maps. We had licensed from MapQuest, the ability 
+to put this little map next to the search results,  
+
+100
+00:08:37,040 --> 00:08:42,720
+it was always the ugliest part of the product 
+and we always made these backhanded comments  
+
+101
+00:08:42,720 --> 00:08:47,200
+about it internally and we spent a lot 
+of time saying, what if we inverted the  
+
+102
+00:08:47,200 --> 00:08:52,960
+hierarchy here and made the map the canvas?
+We ended up finding Lars and Jens Rasmussen  
+
+103
+00:08:52,960 --> 00:08:59,120
+who had been working on this Windows mapping 
+product and we got them into the company and  
+
+104
+00:08:59,120 --> 00:09:06,000
+started exploring this space and it ended up 
+where, through that exploration we ended up  
+
+105
+00:09:06,000 --> 00:09:10,080
+integrating a lot of different products. We 
+ended up integrating mapping local search,  
+
+106
+00:09:10,080 --> 00:09:14,880
+driving directions, like all of these products at 
+the time were actually separate product categories  
+
+107
+00:09:14,880 --> 00:09:22,160
+and ended up with something that redefined the 
+industry and certainly my career. But it took,  
+
+108
+00:09:23,600 --> 00:09:26,880
+I think for me as a product leader, it 
+changed the way I think about product just  
+
+109
+00:09:26,880 --> 00:09:30,880
+because there's feature and functionality and 
+then there's like why should I use this thing  
+
+110
+00:09:30,880 --> 00:09:34,640
+in the first place? And it was notable, 
+there was a couple of interesting moments. 
+
+111
+00:09:34,640 --> 00:09:38,160
+When we launched Google Maps we got about 
+10 million people using it on the first day,  
+
+112
+00:09:38,160 --> 00:09:45,840
+which at that scale of the internet at the 
+time was huge. And then in August of 2005,  
+
+113
+00:09:45,840 --> 00:09:50,560
+we integrated satellite imagery from a recent 
+acquisition called Keyhole, which became Google  
+
+114
+00:09:50,560 --> 00:09:55,200
+Earth and we got 90 million people using it on 
+the same day. Everyone wanted to look at the  
+
+115
+00:09:55,200 --> 00:09:59,920
+top of their house when the imagery came out. 
+And it was really interesting because there's  
+
+116
+00:09:59,920 --> 00:10:06,160
+so many subtle product lessons in there. First 
+is, I think as you have these new technologies,  
+
+117
+00:10:06,160 --> 00:10:11,280
+rather than literally digitizing what came before, 
+if you can create an entirely new experience,  
+
+118
+00:10:11,280 --> 00:10:18,080
+it answers the question for a new customer, 
+why should I give this the time of day? And so,  
+
+119
+00:10:18,080 --> 00:10:23,760
+really disassembling the Lego set and reassembling 
+into something new rather than just digitizing  
+
+120
+00:10:23,760 --> 00:10:27,920
+what was there before. Certainly, that 
+was the lesson I think in Google Maps,  
+
+121
+00:10:27,920 --> 00:10:31,920
+really was native to the platform in 
+a way that a paper map couldn't be and  
+
+122
+00:10:31,920 --> 00:10:37,600
+that was a really meaningful breakthrough.
+And then with satellite imagery, it honestly  
+
+123
+00:10:37,600 --> 00:10:43,360
+wasn't the most important part of Google Maps, 
+but it was the sizzle to the steak and it created,  
+
+124
+00:10:44,080 --> 00:10:47,600
+I don't think the term viral was a thing 
+people said back then, but it created a  
+
+125
+00:10:47,600 --> 00:10:51,520
+viral moment. We were on Saturday Night Live, 
+which is the coolest thing. Andy Samberg in,  
+
+126
+00:10:51,520 --> 00:10:56,480
+I think it was called Lazy Sunday rapped about 
+Google Maps and Lars and I were texting each  
+
+127
+00:10:56,480 --> 00:11:02,160
+other. We did it. We're on Saturday Live. 
+Mission accomplished. And it was also showing  
+
+128
+00:11:02,160 --> 00:11:08,960
+that as you're there thinking about products, 
+there's the why you decide to use a product and  
+
+129
+00:11:08,960 --> 00:11:14,000
+then what is the enduring value. And those are 
+deeply related but not all the same thing. And  
+
+130
+00:11:14,000 --> 00:11:19,120
+I just learned so many lessons that I took with 
+me for every subsequent product that I worked on.
+
+131
+00:11:19,120 --> 00:11:22,800
+That is an awesome story. One I think 
+it's really empowering for people to hear,  
+
+132
+00:11:22,800 --> 00:11:25,840
+even you Bret, who I'm going to 
+share all the successes you've had,  
+
+133
+00:11:25,840 --> 00:11:31,520
+have had a massive failure with the CEO of 
+Google [inaudible 00:11:30] just like Bret,  
+
+134
+00:11:31,520 --> 00:11:38,160
+you screwed up. And it was such a big bet. So 
+one, just it's possible to succeed as you have  
+
+135
+00:11:38,160 --> 00:11:42,320
+succeeded in spite of a massive failure like this. 
+And then some of the product lessons you shared,  
+
+136
+00:11:42,320 --> 00:11:46,000
+just to highlight a few of these things 
+because I think this is great, is just  
+
+137
+00:11:46,000 --> 00:11:52,240
+you will often not win if you just make something 
+that's a better copy of something else, what you  
+
+138
+00:11:52,240 --> 00:11:55,760
+want to look for is something that is an entirely 
+new experience, something that's differentiated,  
+
+139
+00:11:55,760 --> 00:12:00,160
+something that's a lot more compelling. Let's 
+flip to talk about what you've learned from  
+
+140
+00:12:00,160 --> 00:12:05,280
+actually being very successful at a lot of things.
+So I was looking at your resume and you basically  
+
+141
+00:12:05,280 --> 00:12:11,120
+have been very successful at every level of 
+the career ladder and in such a huge variety  
+
+142
+00:12:11,120 --> 00:12:15,440
+of roles. So let me just read a few of these 
+things for folks that aren't super familiar  
+
+143
+00:12:15,440 --> 00:12:21,120
+with your background. You were CTO of Meta, you 
+were co-CEO of Salesforce, you're also CPO and  
+
+144
+00:12:21,120 --> 00:12:26,640
+COO at Salesforce. At Google, you joined as an 
+associate product manager where you famously,  
+
+145
+00:12:26,640 --> 00:12:29,840
+you didn't mention this but you rebuilt Google 
+Maps on weekend. We're not going to talk about  
+
+146
+00:12:29,840 --> 00:12:35,440
+that. You're chairman of the board at OpenAI. You 
+were chairman of the board at Twitter. You've also  
+
+147
+00:12:35,440 --> 00:12:40,800
+founded three different companies, one social 
+network, one productivity docs company called  
+
+148
+00:12:40,800 --> 00:12:46,320
+Quip, and now, Sierra. Fun fact, at FriendFeed 
+you invented the like button and I don't know if  
+
+149
+00:12:46,320 --> 00:12:50,240
+people know that and also just the newsfeed, I'll 
+just throw that out there to give you some credit. 
+
+150
+00:12:50,240 --> 00:12:56,880
+So you're basically an associate product manager, 
+an IC product manager, an engineer, CPO, COO, CTO,  
+
+151
+00:12:56,880 --> 00:13:01,840
+CEO of three different companies including 
+a public company. Very rare that somebody  
+
+152
+00:13:01,840 --> 00:13:06,640
+is successful at all these types of roles and 
+all these levels. So, let me just ask you this  
+
+153
+00:13:06,640 --> 00:13:14,080
+question. What mindsets or habits or just ways of 
+working have you worked on building in yourself  
+
+154
+00:13:14,080 --> 00:13:19,200
+that you think have most contributed to you being 
+successful in such a variety of roles and levels?
+
+155
+00:13:19,200 --> 00:13:23,440
+Yeah. It's actually something I am proud of. 
+I like the fact I've worn different hats. It's  
+
+156
+00:13:23,440 --> 00:13:28,560
+actually amusing when I meet colleagues that I've 
+known from one of those jobs, they'll often think  
+
+157
+00:13:28,560 --> 00:13:35,920
+of me through the lens of that job. And so, I'll 
+go to meet folks from Facebook and they think of  
+
+158
+00:13:35,920 --> 00:13:42,720
+me largely as an engineer. I'll meet folks from 
+Google, they think me largely as a product person.  
+
+159
+00:13:42,720 --> 00:13:48,960
+At Salesforce, a lot of the folks there interacted 
+with me as like a, lack of a better word, a suit,  
+
+160
+00:13:49,840 --> 00:13:54,800
+the boss. And I'm not sure they think of me as an 
+engineer at all, even though I was still probably  
+
+161
+00:13:54,800 --> 00:14:00,560
+coding on the weekends for fun. And one of 
+the things that is a principle for me is to  
+
+162
+00:14:00,560 --> 00:14:09,200
+have a really flexible view of my own identity. I 
+probably would self-describe as an engineer, but  
+
+163
+00:14:09,200 --> 00:14:15,200
+more broadly I think of myself as a builder and I 
+like to build products and I think companies are  
+
+164
+00:14:15,200 --> 00:14:19,920
+one of the most effective ways to build products.
+There's also things like open source, but I think  
+
+165
+00:14:19,920 --> 00:14:25,120
+I'm a huge believer in the confluence 
+of technology and capitalism to produce  
+
+166
+00:14:25,120 --> 00:14:30,560
+just incredible outcomes for customers. 
+And as a consequence, I think to really  
+
+167
+00:14:30,560 --> 00:14:37,600
+build something of significance, I think to be 
+a great founder, you really need to be able to  
+
+168
+00:14:38,320 --> 00:14:43,600
+not have such a ossified view of your identity 
+that you can't transform into what the company  
+
+169
+00:14:43,600 --> 00:14:48,480
+needs you to be at that point. And every founder 
+you'll talk to, one day, I think selling is a  
+
+170
+00:14:48,480 --> 00:14:53,200
+big part of being a founder. You have to sell 
+investors on wanting to invest in your company.  
+
+171
+00:14:53,200 --> 00:14:56,560
+You have to sell candidates on wanting to work 
+at your company. You have to sell customers  
+
+172
+00:14:56,560 --> 00:15:02,800
+to want to use the product that your customer 
+produces. You have to have good design taste,  
+
+173
+00:15:02,800 --> 00:15:09,760
+not just for your product but for your marketing 
+and essentially, soliciting your customers. 
+
+174
+00:15:09,760 --> 00:15:14,800
+You have to have good engineering. If you're 
+building a technology company, the technology  
+
+175
+00:15:14,800 --> 00:15:21,360
+comes first. It's why this industry is so 
+transformative. I probably credit, and I've told  
+
+176
+00:15:21,360 --> 00:15:27,040
+this story before, but I'm very grateful for her, 
+but I probably credit Sheryl Sandberg for really  
+
+177
+00:15:27,040 --> 00:15:34,080
+changing the way I approach new jobs. The story, 
+and I might be embellishment a little bit, but I  
+
+178
+00:15:34,080 --> 00:15:41,680
+think it's broadly accurate. So I had just become 
+the chief technology officer of Facebook and when  
+
+179
+00:15:41,680 --> 00:15:48,640
+I first got the job, it was the flavor of CTO or 
+that relatively small group reporting into me,  
+
+180
+00:15:48,640 --> 00:15:57,360
+but contributed almost as a very senior architect 
+on a number of projects. And then at some point,  
+
+181
+00:15:57,360 --> 00:16:01,280
+Mark Zuckerberg reorganized the company and 
+split it into a bunch of different groups.  
+
+182
+00:16:01,280 --> 00:16:06,160
+I ended up with a very large group, 100 under 
+me and I was essentially running our platform  
+
+183
+00:16:06,160 --> 00:16:12,320
+and mobile groups, products, design engineering.
+So I went from a handful of reports to, I don't  
+
+184
+00:16:12,320 --> 00:16:17,840
+know, over 1,000 or something. It was a big group. 
+And it was the largest management job. I had  
+
+185
+00:16:17,840 --> 00:16:26,000
+become a manager at Google, but a modest team. And 
+so, I was doing okay but not great. And I had this  
+
+186
+00:16:26,000 --> 00:16:32,720
+moment where Sheryl saw me, I think I was editing 
+a presentation for a partner just because the  
+
+187
+00:16:32,720 --> 00:16:37,920
+presentation I got didn't meet my quality bar and 
+I was editing it and griping about it. She pulled  
+
+188
+00:16:37,920 --> 00:16:44,800
+me into a room and gave me talking to a little bit 
+about holding my team to as high of a standard as  
+
+189
+00:16:44,800 --> 00:16:53,200
+I have. If someone wasn't meeting my expectations, 
+what was my plan to manage them out of the company  
+
+190
+00:16:53,200 --> 00:17:01,360
+or... Just giving me management one-on-one.
+And she's a remarkable mentor in the sense  
+
+191
+00:17:01,360 --> 00:17:06,400
+she can give you feedback that's very 
+direct and often, a bit uncomfortable,  
+
+192
+00:17:06,400 --> 00:17:12,400
+but you know she cares about you. And so it was 
+the type of feedback you listen to. I went home  
+
+193
+00:17:12,400 --> 00:17:17,280
+that night and I was stewing on it and not very 
+happy. I was like, you get naturally a little  
+
+194
+00:17:17,280 --> 00:17:23,040
+defensive in those moments. Is that really true? 
+Am I really fucking it up or is she overreacting?  
+
+195
+00:17:23,040 --> 00:17:30,320
+And then I woke up the next day, I was like, "No, 
+she's right." And I had realized this subconscious  
+
+196
+00:17:30,320 --> 00:17:38,000
+limiter that was limiting my success in the job, 
+which is, I was trying to conform the job to the  
+
+197
+00:17:38,000 --> 00:17:43,840
+things I thought I liked to do. So, I was spending 
+a lot of my time on some product and technology  
+
+198
+00:17:43,840 --> 00:17:50,400
+things that I was passionate about, thinking I'm 
+the boss. I should focus on what I want to focus  
+
+199
+00:17:50,400 --> 00:17:56,560
+on instead of thinking about, okay, I'm running 
+the mobile and platform teams at Facebook. What's  
+
+200
+00:17:56,560 --> 00:18:03,040
+the most important thing to do today to make 
+our mobile and developer platform successful? 
+
+201
+00:18:03,040 --> 00:18:09,920
+And when I reframed the job that way, I did 
+different things. And the thing that was the  
+
+202
+00:18:09,920 --> 00:18:16,080
+biggest pleasant surprise to me was I liked 
+it. I thought I liked engineering and product,  
+
+203
+00:18:16,080 --> 00:18:21,120
+but in fact, when I changed an organization 
+and it turned out to be more successful,  
+
+204
+00:18:21,120 --> 00:18:27,120
+I derived a great deal of joy from seeing that 
+success. Our developer platform had a lot of  
+
+205
+00:18:27,120 --> 00:18:31,120
+partners and when there was an issue there and 
+I'd spend time on partnerships and it worked  
+
+206
+00:18:31,120 --> 00:18:36,480
+and our platform became healthier, the partner 
+became more successful. I took pride in that  
+
+207
+00:18:36,480 --> 00:18:44,320
+success and then I just started being better 
+at my job and I realized that the actual act  
+
+208
+00:18:44,320 --> 00:18:48,960
+of engineering or product design or all the things 
+I thought I liked, what I really liked is impact. 
+
+209
+00:18:48,960 --> 00:18:57,600
+And so, that conversation led to my waking up 
+every morning, sometimes literally, but certainly,  
+
+210
+00:18:57,600 --> 00:19:02,480
+in the broadest sets of the words saying, "What 
+is the most impactful thing I can do today?" And  
+
+211
+00:19:02,480 --> 00:19:09,600
+really thinking almost like, if you had an 
+external board of advisors telling you what  
+
+212
+00:19:09,600 --> 00:19:14,320
+are the things where if you focus on them, you 
+can maximize the likelihood that what you're  
+
+213
+00:19:14,320 --> 00:19:20,000
+trying to achieve will happen? Sometimes, it's 
+recruiting, sometimes, it's product, sometimes,  
+
+214
+00:19:20,000 --> 00:19:25,120
+it's engineering, sometimes, it's sales. And I've 
+become much more self-reflective just about what  
+
+215
+00:19:25,120 --> 00:19:32,240
+is important to work on. And I have become much 
+more receptive to doing things that I previously  
+
+216
+00:19:32,240 --> 00:19:36,400
+would've said aren't my favorite things to do 
+because I derive so much joy from having an  
+
+217
+00:19:36,400 --> 00:19:41,760
+impact that I enjoy a lot more things now. And 
+so, I really credit Sheryl, I'm so grateful.  
+
+218
+00:19:41,760 --> 00:19:45,520
+And actually, it's interesting, I think a lot 
+about this when I give feedback to people now,  
+
+219
+00:19:45,520 --> 00:19:53,680
+just those moments that can change the trajectory 
+of your career. I give her all the credit for it.
+
+220
+00:19:53,680 --> 00:19:56,320
+There's so many people that share 
+stories of Sheryl Sandberg giving  
+
+221
+00:19:56,320 --> 00:20:01,200
+them advice and that changing 
+their life. What a mensch.
+
+222
+00:20:01,200 --> 00:20:01,520
+Yeah.
+
+223
+00:20:01,520 --> 00:20:04,880
+My biggest takeaway from this, which 
+is this question of what is the most  
+
+224
+00:20:04,880 --> 00:20:09,520
+impactful thing I could do today? Such a powerful 
+heuristic just to keep in mind. To your point,  
+
+225
+00:20:09,520 --> 00:20:14,320
+you may realize you don't want to be doing sales 
+or hiring, but if that's the most impactful thing  
+
+226
+00:20:14,320 --> 00:20:18,160
+and you end up doing it, you may realize I like 
+this and I'm good at this and have thought about-
+
+227
+00:20:18,160 --> 00:20:19,760
+Can I double click on that though for a second?
+
+228
+00:20:19,760 --> 00:20:20,240
+Absolutely.
+
+229
+00:20:20,240 --> 00:20:26,160
+I think it's really hard. One of the 
+dangers for founders and product managers,  
+
+230
+00:20:26,160 --> 00:20:32,960
+but I think particularly for founders 
+is incorrect storytelling. People don't  
+
+231
+00:20:32,960 --> 00:20:38,000
+like my product because of X. And if you tell 
+that to yourself and you tell it to your team,  
+
+232
+00:20:38,000 --> 00:20:43,040
+all of a sudden, it goes from being an intuition 
+to being a fact. Well, you better hope you're  
+
+233
+00:20:43,040 --> 00:20:50,240
+right because if you orient your strategy 
+around fixing a problem and you're wrong,  
+
+234
+00:20:50,240 --> 00:20:58,080
+your company's going to fail. So why did you lose 
+a deal? You could talk to the salesperson who is  
+
+235
+00:20:58,080 --> 00:21:03,200
+on the account or perhaps maybe a product 
+manager was involved in the conversation.  
+
+236
+00:21:03,200 --> 00:21:07,600
+It's very important to have intellectual 
+honesty in those moments because you could  
+
+237
+00:21:07,600 --> 00:21:13,040
+say something like, "Oh, they didn't buy 
+it because the platform cost too much."  
+
+238
+00:21:13,680 --> 00:21:18,960
+And that's something a salesperson might say.
+Maybe the real reason is they didn't actually  
+
+239
+00:21:18,960 --> 00:21:24,240
+see much value in your platform. So it was 
+communicated to the salesperson as it was  
+
+240
+00:21:24,240 --> 00:21:29,120
+too expensive. But in fact, the problem was 
+product differentiation. And you could end up  
+
+241
+00:21:29,120 --> 00:21:35,360
+going into a discussion on pricing when in fact, 
+there was a much deeper, much harder problem to  
+
+242
+00:21:35,360 --> 00:21:40,800
+solve there. But just like when you break up 
+with someone, you don't say, it's because I  
+
+243
+00:21:40,800 --> 00:21:45,040
+don't like you anymore. You say it's not you, 
+it's me. You say all these pleasantries because  
+
+244
+00:21:45,040 --> 00:21:51,760
+we're all social animals and you want to 
+be pleasant with the people around you.  
+
+245
+00:21:51,760 --> 00:21:58,080
+So literally taking what a customer says or what a 
+user says in a focus group or a usability study is  
+
+246
+00:21:58,080 --> 00:22:06,160
+rarely correct. It often is related to what the 
+truth is, but it's very important to get right.  
+
+247
+00:22:06,160 --> 00:22:11,440
+And so, I think one of the things I've observed 
+with first time founders in particular is you're  
+
+248
+00:22:11,440 --> 00:22:17,200
+often a single issue voter based on your skillset.
+So if you're a great engineer, the answer to  
+
+249
+00:22:17,200 --> 00:22:20,640
+almost every problem in your business is 
+engineering. If you're a product designer,  
+
+250
+00:22:20,640 --> 00:22:25,920
+the answer almost to the proverbial redesign, 
+I joke, it's like the dead cap balance of a  
+
+251
+00:22:25,920 --> 00:22:30,640
+consumer product like this next redesign will fix 
+all of our problems. I don't know if it's ever,  
+
+252
+00:22:30,640 --> 00:22:36,720
+ever worked. And then I met a lot of entrepreneurs 
+who come from a business development background,  
+
+253
+00:22:36,720 --> 00:22:41,440
+they're always thinking about partnerships and 
+oh, if we just get this partnership done for  
+
+254
+00:22:41,440 --> 00:22:46,960
+this distribution channel, everything's going to 
+change. And I think it's really important when  
+
+255
+00:22:46,960 --> 00:22:54,240
+you're a founder to be self-aware that you will 
+naturally, subconsciously pick the thing that is  
+
+256
+00:22:54,240 --> 00:22:59,840
+your strength, your superpower as a solution to 
+more problems. And in fact, if you think that's  
+
+257
+00:22:59,840 --> 00:23:03,920
+a solution to your problem, it may be right, 
+but you probably by default should question it. 
+
+258
+00:23:03,920 --> 00:23:09,280
+If you think the thing that you've been doing 
+your whole career is the way to fix your problem,  
+
+259
+00:23:09,280 --> 00:23:15,600
+it's at least 30% likely that you've chosen 
+that because of comfort and familiarity not  
+
+260
+00:23:15,600 --> 00:23:21,760
+truth. And so, I think one of the skills I think 
+is, it really goes around to do you have a good  
+
+261
+00:23:21,760 --> 00:23:27,040
+co-founder? Do you have a good leadership team? 
+If you're a product manager, you're a partner  
+
+262
+00:23:27,040 --> 00:23:32,240
+in engineering, you're a partner in marketing, 
+you really want to have very real conversations  
+
+263
+00:23:32,240 --> 00:23:36,800
+to ensure that you're actually working on the 
+actual correct thing. And I think it's easy  
+
+264
+00:23:36,800 --> 00:23:41,760
+to say what's the most impactful thing to do 
+today? My guess, if a lot of people try that,  
+
+265
+00:23:41,760 --> 00:23:45,360
+they'll lie to themselves more often than 
+not. And it's a very challenging question  
+
+266
+00:23:45,360 --> 00:23:50,400
+to answer. The question's interesting. Being able 
+to answer it accurately is actually the hard part.
+
+267
+00:23:50,400 --> 00:23:54,640
+This feels like such an important lesson 
+you've learned. Is there an example that  
+
+268
+00:23:54,640 --> 00:23:58,790
+comes to mind where you learned this the 
+hard way where you actually ended up-
+
+269
+00:23:58,790 --> 00:24:01,520
+Oh, yeah. You just want to spend this whole 
+thing on my failures, but I'm fine with that.
+
+270
+00:24:02,720 --> 00:24:04,080
+You've had too much success.
+
+271
+00:24:04,080 --> 00:24:10,320
+Frontier was my first company. At our peak we 
+had 12 employees, 12 of the best people I've ever  
+
+272
+00:24:10,320 --> 00:24:15,360
+worked with. Started the company with Jim Norris, 
+who's an engineer I've known since Stanford and  
+
+273
+00:24:15,360 --> 00:24:20,560
+Paul Buhite and Sanjeev Singh who Paul started 
+Gmail. Sanjeev was the first engineer at Gmail,  
+
+274
+00:24:20,560 --> 00:24:25,520
+so we had the Google Maps people and 
+Gmail people. It was a pretty awesome  
+
+275
+00:24:25,520 --> 00:24:33,360
+founding team. We made a social network, as you 
+said. We invented a lot of concepts that became  
+
+276
+00:24:33,360 --> 00:24:38,880
+popular in the newsfeed. We invented the like 
+button. It was really neat. It was a fun time.  
+
+277
+00:24:38,880 --> 00:24:43,200
+We were only really popular in Turkey, Italy and 
+Iran, and at one point, we were blocked in Iran,  
+
+278
+00:24:43,200 --> 00:24:47,280
+so we were only popular in Turkey and Italy 
+and Silicon Valley. To this day, actually a  
+
+279
+00:24:47,280 --> 00:24:51,280
+lot of folks in Silicon Valley are like, "I 
+love FriendFeed." I'm like, that's awesome. 
+
+280
+00:24:51,280 --> 00:24:58,480
+It wasn't really a successful business. We 
+were a follower-oriented social network,  
+
+281
+00:24:58,480 --> 00:25:02,000
+not a friendship-oriented social network, 
+which meant a lot of our content was more  
+
+282
+00:25:02,000 --> 00:25:08,000
+like X or Twitter than it is Facebook in that 
+respect. And a lot of sharing newspaper articles,  
+
+283
+00:25:08,000 --> 00:25:16,000
+interests, scientific communities, things like 
+that. And there was a period when Twitter,  
+
+284
+00:25:16,000 --> 00:25:19,200
+which was one of our competitors at the 
+time, that there was a lot more social  
+
+285
+00:25:19,200 --> 00:25:24,400
+networks at the time. I am probably screwing 
+this up a little bit. I think Obama, Ashton  
+
+286
+00:25:24,400 --> 00:25:30,240
+Kutcher and Oprah Winfrey all went on Twitter 
+in a summer and we just got our ass kicked. 
+
+287
+00:25:31,200 --> 00:25:37,440
+And it was a great example of you... I think 
+11 of those 12 people were engineers and we  
+
+288
+00:25:37,440 --> 00:25:42,400
+were just making product and I think it was 
+Biz Stone. If you talk to the Twitter folks,  
+
+289
+00:25:42,400 --> 00:25:46,560
+they could give you the history on this, but 
+I think Biz was really focused on getting  
+
+290
+00:25:46,560 --> 00:25:52,800
+celebrities and public figures onto Twitter, which 
+is totally obvious. If you have a social service  
+
+291
+00:25:52,800 --> 00:25:57,760
+that's oriented towards following people, put some 
+people on there worth following and instead, we  
+
+292
+00:25:57,760 --> 00:26:05,760
+were exclusively focused on polishing the product.
+And we actually, I think at our peak of  
+
+293
+00:26:05,760 --> 00:26:10,160
+popularity, we were very confident just, I think 
+it was a time when Twitter had the fail whale  
+
+294
+00:26:10,160 --> 00:26:15,520
+and it was down half the time and people couldn't 
+even use it. And our product, we were innovating  
+
+295
+00:26:15,520 --> 00:26:22,480
+faster, we had more features, people liked it and 
+we were up 100% of the time and we totally lost  
+
+296
+00:26:22,480 --> 00:26:29,520
+for no reason related to product at all. And it 
+was an example of, I think somewhat famously not  
+
+297
+00:26:29,520 --> 00:26:33,760
+a lot of great entrepreneurs have come out 
+of Google because Google was so successful,  
+
+298
+00:26:33,760 --> 00:26:40,240
+I think it's hard as a product manager to see 
+distribution and product design and even business  
+
+299
+00:26:40,240 --> 00:26:46,960
+model when you have AdWords and money's raining 
+from the sky. There wasn't as much scrutiny and I  
+
+300
+00:26:46,960 --> 00:26:52,480
+think folks like the PayPal Mafia I think learned 
+a lot more about entrepreneurialism than a typical  
+
+301
+00:26:52,480 --> 00:26:57,120
+PM at Google. So, we're just getting punched 
+in the face and learning this the hard way. 
+
+302
+00:26:57,120 --> 00:27:01,040
+And so, that was probably the most prominent 
+example of it and I think we probably did have  
+
+303
+00:27:01,040 --> 00:27:04,720
+a... I can tell you all the flaws of that 
+product, but I don't think that was the  
+
+304
+00:27:04,720 --> 00:27:08,960
+reason why we lost. There's a lot of reasons. I 
+think there was a lot of flaws of the product,  
+
+305
+00:27:08,960 --> 00:27:14,640
+but it was a lot of other stuff. And so, I've 
+learned, accumulated these skills over time,  
+
+306
+00:27:14,640 --> 00:27:18,880
+but I say the hard part of that question is 
+answering it correctly, is it's hard when you  
+
+307
+00:27:18,880 --> 00:27:22,800
+don't have experience in something, than to have 
+intuition in it. So I think if there's probably a  
+
+308
+00:27:22,800 --> 00:27:27,360
+structural flaw, it wasn't that... I don't know 
+if I could have figured out how to reach out to  
+
+309
+00:27:27,360 --> 00:27:33,840
+Ashton Kutcher [inaudible 00:27:28], it's 
+not he's on my Rolodex. But I probably  
+
+310
+00:27:33,840 --> 00:27:38,320
+wasn't soliciting advice from the right people.
+I think that what's great about the technology  
+
+311
+00:27:38,320 --> 00:27:44,080
+industry is there's a lot of advice. Choosing whom 
+you listen to is actually quite difficult, but  
+
+312
+00:27:44,080 --> 00:27:49,760
+I think we're somewhat myopic. We're in our own 
+little world, creating this product and we weren't  
+
+313
+00:27:49,760 --> 00:27:55,600
+asking people from the outside in to say, what 
+are you seeing that could go wrong? What are you  
+
+314
+00:27:55,600 --> 00:27:59,840
+seeing that could go right? What are you seeing in 
+the industry that we're not doing that you think  
+
+315
+00:27:59,840 --> 00:28:05,520
+we might want to do? And this is why boards are 
+important. This is why finding the right advisors,  
+
+316
+00:28:05,520 --> 00:28:10,000
+the advisors will actually tell you what you not 
+[inaudible 00:28:09] want to hear, but you need to  
+
+317
+00:28:10,000 --> 00:28:14,800
+hear. I think that was probably the missing part. 
+I'm not sure I was great at market at the time,  
+
+318
+00:28:14,800 --> 00:28:20,960
+but if I had solicited the right advice, I could 
+have learned that that was a shortcoming. And I  
+
+319
+00:28:20,960 --> 00:28:26,320
+think that was a deep lesson I took from that. I'm 
+a huge believer in boards and getting good advice.
+
+320
+00:28:26,320 --> 00:28:31,280
+Any heuristics or advice for people to 
+know whose advice to listen to? What do  
+
+321
+00:28:31,280 --> 00:28:35,120
+you pay attention to when you're like, okay, 
+ignore this person but listen to this person?
+
+322
+00:28:35,120 --> 00:28:42,800
+Yeah, that one's tough. It does come down to good 
+judgment and being judge of people's character.  
+
+323
+00:28:42,800 --> 00:28:48,720
+One thing that is particularly hard is there's 
+not a strong correlation between the confidence  
+
+324
+00:28:48,720 --> 00:28:53,120
+with which someone expresses an opinion 
+and the quality of that opinion. I don't  
+
+325
+00:28:53,120 --> 00:28:59,040
+want to say it's inversely correlated, but 
+that's funny, with all the podcasts out now,  
+
+326
+00:28:59,040 --> 00:29:04,960
+if there's topics I know a lot about, sometimes 
+the most eloquent, confident statements about  
+
+327
+00:29:04,960 --> 00:29:11,680
+things I know a lot about, are the least accurate 
+and it sounds extremely persuasive. And so,  
+
+328
+00:29:11,680 --> 00:29:17,760
+it does require very good judgment. One thing is 
+I think, not just asking for advice but asking  
+
+329
+00:29:17,760 --> 00:29:22,240
+people, who should I talk to get good advice? And 
+you'll find some common answers there and that's  
+
+330
+00:29:22,240 --> 00:29:30,000
+often a really strong signal of good judgment.
+And then one thing I found is when you ask for  
+
+331
+00:29:30,000 --> 00:29:35,360
+advice, don't just ask what to do but why. Be 
+an obnoxious two-year-old kid, why? Why? Why?  
+
+332
+00:29:35,360 --> 00:29:41,920
+Why? And really try to understand the framework 
+that someone is using to give you advice. The  
+
+333
+00:29:41,920 --> 00:29:47,600
+interesting thing about advice is people are often 
+extrapolating from relatively few experiences.  
+
+334
+00:29:47,600 --> 00:29:53,760
+So they will say, never do this or always do 
+that. And it's because they had one experience  
+
+335
+00:29:53,760 --> 00:29:59,360
+where something backfired or something could have 
+gone better if they had done it. So it's a useful  
+
+336
+00:29:59,360 --> 00:30:04,000
+anecdote, but if you don't ask why and understand 
+they had one experience and here's what happened,  
+
+337
+00:30:04,560 --> 00:30:09,520
+it can come across as a rule when in fact, 
+it's [inaudible 00:30:08] data and if you  
+
+338
+00:30:09,520 --> 00:30:14,080
+ask advice of three people and they all have 
+very similar interactions, you can create  
+
+339
+00:30:14,080 --> 00:30:19,520
+a first principles framework from which that 
+advice emerges. And when you start applying it,  
+
+340
+00:30:19,520 --> 00:30:24,560
+you're applying it with a degree of nuance that 
+you couldn't if you're just following a rule. So,  
+
+341
+00:30:24,560 --> 00:30:30,720
+I think one is, it does come down to good 
+judgment, I think. I don't know how to teach that. 
+
+342
+00:30:33,360 --> 00:30:36,480
+I'm a huge believer in good judgment. It's 
+one of the things I hire for. I just think  
+
+343
+00:30:36,480 --> 00:30:43,040
+that's something that probably comes from a 
+mix of self perfection. You really need to  
+
+344
+00:30:43,040 --> 00:30:48,160
+hold yourselves accountable as an entrepreneur, 
+as a product manager. If you made a bad decision,  
+
+345
+00:30:48,160 --> 00:30:53,760
+spend time reflecting on it, number one. And 
+really, try to understand why and try to always  
+
+346
+00:30:53,760 --> 00:30:58,480
+improve your judgment. I think at the end of the 
+day, that is why you are a good entrepreneur,  
+
+347
+00:30:58,480 --> 00:31:03,040
+a good product manager. And number two, when 
+you get advice, really understand where it's  
+
+348
+00:31:03,040 --> 00:31:09,760
+coming from and why so that you can create your 
+own independent view of where that advice came  
+
+349
+00:31:09,760 --> 00:31:14,720
+from and recognize that no one's advice is 
+statistically significant or very rarely is  
+
+350
+00:31:14,720 --> 00:31:19,280
+it. If you're getting advice on investing from 
+Warren Buffett, yeah, okay, it's statistically  
+
+351
+00:31:19,280 --> 00:31:24,800
+significant, but most advice is like something 
+happened to you once and you have regrets.
+
+352
+00:31:26,000 --> 00:31:29,040
+I love that you're like, I don't know if I 
+have a great answer then you just give us  
+
+353
+00:31:29,040 --> 00:31:32,800
+an incredible answer to this question. I want to 
+go in a different direction. You mentioned that  
+
+354
+00:31:32,800 --> 00:31:38,080
+you describe yourself as an engineer. I know I 
+heard you code to relax still. Let me just ask  
+
+355
+00:31:38,080 --> 00:31:41,600
+you this question, something a lot of people in 
+college are thinking about. Do you think it still  
+
+356
+00:31:41,600 --> 00:31:46,480
+makes sense to learn to code? Do you think this 
+will significantly change in the next few years?
+
+357
+00:31:46,480 --> 00:31:52,320
+I do still think studying computer science 
+is a different answer than learning to code,  
+
+358
+00:31:52,320 --> 00:31:58,240
+but I would say I still think it's extremely 
+valuable to study computer science. I say that  
+
+359
+00:31:58,240 --> 00:32:03,120
+because I think computer science is more than 
+coding. If you understand things like Big O  
+
+360
+00:32:03,120 --> 00:32:17,600
+notation or complexity theory or study algorithms 
+and why a randomized algorithm works and why two  
+
+361
+00:32:17,600 --> 00:32:23,200
+algorithms with the same Big O complexity, one can 
+then practice perform better than others and why a  
+
+362
+00:32:23,200 --> 00:32:28,160
+cache miss matters and just all these little... 
+There's a lot more to coding than writing the  
+
+363
+00:32:28,160 --> 00:32:35,920
+code. The reason I think that is I do think the 
+act of creating software is going to transform  
+
+364
+00:32:35,920 --> 00:32:44,000
+from typing into a terminal or typing into 
+Visual Studio code to operating a code-generating  
+
+365
+00:32:44,000 --> 00:32:49,600
+machine. I think that is the future of creating 
+software. But I think operating a code-generating  
+
+366
+00:32:49,600 --> 00:32:54,800
+machine requires systems thinking and I think that 
+computer science, there are other disciplines as  
+
+367
+00:32:54,800 --> 00:33:04,640
+well, but computer science is a wonderful major to 
+learn systems thinking and at the end of the day,  
+
+368
+00:33:04,640 --> 00:33:10,480
+AI will facilitate creating this software.
+We may do a lot more in the next few years  
+
+369
+00:33:10,480 --> 00:33:15,440
+we can't even imagine, but your job as the 
+operator of that code-generating machine is  
+
+370
+00:33:15,440 --> 00:33:19,920
+to make a product or to solve a problem and you 
+really need to have great systems thinking and  
+
+371
+00:33:19,920 --> 00:33:24,160
+you're going to be managing this machine that's 
+doing a lot of the tedious work of making the  
+
+372
+00:33:24,160 --> 00:33:30,480
+button or connecting to the network. But as you're 
+thinking of the intersection of a technology and  
+
+373
+00:33:30,480 --> 00:33:34,480
+a business problem, you're trying to affect a 
+system that will solve that problem at scale  
+
+374
+00:33:34,480 --> 00:33:40,160
+for your customers and that systems thinking is 
+always the hardest part of creating products. 
+
+375
+00:33:40,160 --> 00:33:45,840
+I'll just give you, it's this cheesy simple 
+example, but I think it's representative.  
+
+376
+00:33:45,840 --> 00:33:51,280
+At Facebook, we spent a lot of time designing 
+the newsfeed and if you ever had a really,  
+
+377
+00:33:51,280 --> 00:33:56,640
+really good designer and they showed you at the 
+time, a Photoshop mock-up of the newsfeed, it was  
+
+378
+00:33:56,640 --> 00:34:02,880
+just all as beautiful. The photos, the family was 
+happy and the photo was a perfect photo and the  
+
+379
+00:34:02,880 --> 00:34:09,680
+posts were all perfectly grammatically correct and 
+of a completely normal length and the comments and  
+
+380
+00:34:10,640 --> 00:34:16,320
+there was the like... Everything was just perfect. 
+And then you'd implement that design and you'd  
+
+381
+00:34:16,320 --> 00:34:21,120
+look at your own newsfeed and it looked like shit 
+because it turns out not everyone's photos were  
+
+382
+00:34:21,120 --> 00:34:26,080
+made by a professional photographer. The posts 
+were all these different lengths. The comments  
+
+383
+00:34:26,080 --> 00:34:31,120
+were like, you suck and... All that stuff.
+And then all of a sudden you realize that  
+
+384
+00:34:32,560 --> 00:34:39,280
+designing a newsfeed, Photoshop is the easy part. 
+You need to actually design a system that produces  
+
+385
+00:34:40,720 --> 00:34:46,400
+both in content and visual design, like a 
+delightful experience given input you don't  
+
+386
+00:34:46,400 --> 00:34:52,240
+control. And that's a system, it's sort of a 
+design and it's just, what we did practically,  
+
+387
+00:34:52,240 --> 00:35:00,160
+I am sure it's changed a lot since I left in 
+2012, but we made a system so designers had  
+
+388
+00:35:00,160 --> 00:35:05,680
+to show their newsfeed designs with real 
+newsfeed data that was messy rather than  
+
+389
+00:35:05,680 --> 00:35:10,720
+anything artificial because I think it 
+forced the process to be more realistic. 
+
+390
+00:35:10,720 --> 00:35:15,760
+But I say that because I think that whether 
+AI is writing code or doing the design or  
+
+391
+00:35:15,760 --> 00:35:20,080
+doing all these other things, you need to learn 
+how to have a system in your head. You need to  
+
+392
+00:35:20,080 --> 00:35:24,240
+understand the basics of what's hard and what's 
+easy and what's possible and what's impossible.  
+
+393
+00:35:24,240 --> 00:35:30,000
+And AI can help you do that too, by the way. But 
+I do think that's a really useful skill. I think  
+
+394
+00:35:30,000 --> 00:35:39,280
+in general, with the advent of AI agents and AI 
+approaching super intelligence in certain domains,  
+
+395
+00:35:39,280 --> 00:35:44,320
+I think the tools with which we do our job will 
+change a lot. I think it's very important to have  
+
+396
+00:35:44,320 --> 00:35:52,000
+a very loose attachment to the way we do our 
+jobs and that story that we won't talk about  
+
+397
+00:35:52,000 --> 00:35:56,880
+when I rewrote Google Maps, everyone talks 
+about that story and I think it's because of  
+
+398
+00:35:56,880 --> 00:36:01,040
+Paul [inaudible 00:35:57] who told it on some 
+podcasts and that's where it made the rounds. 
+
+399
+00:36:01,040 --> 00:36:08,240
+I think that's going to end up this vestige of the 
+past, almost like the human calculators at NASA  
+
+400
+00:36:08,240 --> 00:36:13,120
+before the computers were invented, like wow, a 
+person was a calculator? Whoa, that's fun. Tell me  
+
+401
+00:36:13,120 --> 00:36:19,680
+that story. I think just what I was good at will 
+no longer be useful in the future or certainly not  
+
+402
+00:36:19,680 --> 00:36:24,720
+valuable in the future and that's okay. So I think 
+we need to have a really loose view of it, but the  
+
+403
+00:36:24,720 --> 00:36:28,400
+idea that you shouldn't study these disciplines, 
+it's like people say, I don't want to study math  
+
+404
+00:36:28,400 --> 00:36:32,640
+because I'm not going to use it in my career for 
+X. Well, studying maths is quite important. It  
+
+405
+00:36:32,640 --> 00:36:38,560
+teaches you how to think. It teaches you how the 
+world works, physics, math, and I think computer  
+
+406
+00:36:38,560 --> 00:36:44,960
+science especially, at least the foundations of 
+it, will continue to be the foundations of how  
+
+407
+00:36:44,960 --> 00:36:49,200
+we build software and understanding that when 
+you're interacting particularly with something  
+
+408
+00:36:49,200 --> 00:36:54,160
+that's smarter than you, producing code you might 
+not completely understand how you constrain it and  
+
+409
+00:36:54,160 --> 00:36:59,040
+how you get it to produce these outcomes. I think 
+it will require a lot of sophistication actually.
+
+410
+00:36:59,040 --> 00:37:02,160
+That's such a great answer. There's 
+this always sense of this binary,  
+
+411
+00:37:02,160 --> 00:37:07,040
+should I learn to code or not? And your point 
+here is learn to understand how engineering  
+
+412
+00:37:07,040 --> 00:37:10,880
+works and how systems work and what your 
+code does and how it all interconnects,  
+
+413
+00:37:10,880 --> 00:37:15,520
+but the way you actually do the coding at your 
+desk will change significantly. This reminds me of  
+
+414
+00:37:15,520 --> 00:37:18,800
+something you mentioned on a podcast recently. 
+This idea that you think there's going to,  
+
+415
+00:37:18,800 --> 00:37:23,440
+or there should be a new programming language 
+that is more designed for LLMs versus humans.  
+
+416
+00:37:23,440 --> 00:37:27,120
+Can you just talk about that because I think 
+a lot of people aren't thinking about that?
+
+417
+00:37:27,120 --> 00:37:31,360
+I don't know if it's a language, I would call it a 
+programming system because I think language might  
+
+418
+00:37:31,360 --> 00:37:40,160
+be too limited. My reductive version of the 
+past, what 40 years of computers maybe more,  
+
+419
+00:37:40,160 --> 00:37:47,200
+is we created the hardware for computers, then we 
+created punch cards, which is the way in the late  
+
+420
+00:37:47,200 --> 00:37:57,040
+'70s you would tell a computer what to do or 
+maybe mid to late '70s. Then we invented early  
+
+421
+00:37:57,040 --> 00:38:05,040
+operating systems and time-sharing systems from 
+the invention of things like Unix at Bell Labs and  
+
+422
+00:38:05,600 --> 00:38:12,800
+Berkeley, you ended up with the C programming 
+language, Fortran and a lot of higher level  
+
+423
+00:38:12,800 --> 00:38:21,920
+programming languages. I think Fortran and then C.
+And we moved up the layers of abstraction. No one  
+
+424
+00:38:21,920 --> 00:38:28,000
+does punch cards anymore, obviously. Few people 
+write assembly language. Some people write C,  
+
+425
+00:38:28,000 --> 00:38:33,280
+some people write REST. But a lot of people write 
+Python and TypeScript and things like that. And as  
+
+426
+00:38:33,280 --> 00:38:39,680
+we've invented more and more abstractions, we've 
+made it easier to do high-leverage things. So,  
+
+427
+00:38:41,440 --> 00:38:46,320
+if you look at how remarkable Google was back 
+in the day or Google Maps, you could probably  
+
+428
+00:38:46,320 --> 00:38:50,480
+give a lot of react programmers the task of make 
+a draggable map now and I think a lot of people  
+
+429
+00:38:50,480 --> 00:38:57,040
+could do it. That was true RND back in the day.
+When Salesforce was created in 1998, just putting  
+
+430
+00:38:57,040 --> 00:39:03,600
+a database in the cloud was hard and that alone 
+was a technical moat that is now trivial with  
+
+431
+00:39:03,600 --> 00:39:10,640
+Amazon Web Services and that technical moat is 
+comically narrow, but the product moat is quite  
+
+432
+00:39:10,640 --> 00:39:20,080
+large. I think that if the act of writing code 
+is going from something that is very costly to  
+
+433
+00:39:20,080 --> 00:39:27,440
+the marginal cost of that going to zero, how many 
+of the abstractions that we've built are based on  
+
+434
+00:39:28,320 --> 00:39:35,040
+human program or productivity? I think a ton. 
+I always laugh that I assume Python is probably  
+
+435
+00:39:35,040 --> 00:39:39,440
+the most common generated code just because 
+of how much it's in the training data and  
+
+436
+00:39:39,440 --> 00:39:46,800
+data scientists love Python and I love Python too. 
+It's such a comically bad thing for AI to generate  
+
+437
+00:39:46,800 --> 00:39:50,960
+just because it's one of the most inefficient 
+programming languages of all time. If you know  
+
+438
+00:39:50,960 --> 00:39:55,520
+the global interpreter lock and just slow. And 
+I've written a lot of high-scale web services and  
+
+439
+00:39:55,520 --> 00:40:03,760
+it's just quite slow and it's very hard to verify.
+It's not as bad as Perl, but if you have a big  
+
+440
+00:40:03,760 --> 00:40:11,040
+Python program, how many errors will you find 
+at runtime versus before releasing it? So,  
+
+441
+00:40:11,040 --> 00:40:15,920
+Python was designed to be very ergonomic, 
+almost looked like pseudo code for humans,  
+
+442
+00:40:15,920 --> 00:40:21,680
+for me to write code in a delightful way. That's 
+why data scientists love it so much. So as we move  
+
+443
+00:40:21,680 --> 00:40:26,880
+to a world where let's just postulate, and 
+I'm not sure this will be completely true,  
+
+444
+00:40:26,880 --> 00:40:29,840
+that we're not going to write a lot of code 
+as people. We're going to be operating these  
+
+445
+00:40:29,840 --> 00:40:36,000
+code-generating machines. We probably don't care 
+how ergonomic the programming language is. What we  
+
+446
+00:40:36,000 --> 00:40:41,920
+care about is when this machine generates code, do 
+we know that it did what we wanted it to do? And  
+
+447
+00:40:41,920 --> 00:40:46,560
+if it doesn't do we want it to do, can we change 
+it easily? I think there's a lot of insights in  
+
+448
+00:40:46,560 --> 00:40:52,560
+programming languages that could serve this.
+So Rust I think, is interesting because if  
+
+449
+00:40:52,560 --> 00:40:59,040
+I asked you to look at a C program and say, 
+"Does it leak memory?" You probably couldn't  
+
+450
+00:40:59,040 --> 00:41:02,880
+do it that well just because it's really hard 
+and if it's a very, a million line C program,  
+
+451
+00:41:02,880 --> 00:41:07,840
+it's going to be very, very hard. If I asked you 
+to verify that a Rust program doesn't leak memory,  
+
+452
+00:41:07,840 --> 00:41:13,200
+you would just have to compile it. And 
+because it has compile time, memory safety,  
+
+453
+00:41:13,200 --> 00:41:17,760
+just the act of compiling successfully tells 
+you that's true. I think we need more things  
+
+454
+00:41:17,760 --> 00:41:25,440
+like that because if an AI is generating this 
+code, by definition, if you have to read every  
+
+455
+00:41:25,440 --> 00:41:30,640
+line that is going to be the limiting factor for 
+producing the code or worse, you're just not going  
+
+456
+00:41:30,640 --> 00:41:36,000
+to read every line and you're going to emit a 
+bunch of unsafe unverified code into the wild. 
+
+457
+00:41:36,000 --> 00:41:41,280
+And so, the question is how do you enable humans 
+to have as much leverage as possible? Which means  
+
+458
+00:41:41,280 --> 00:41:46,800
+using computers to do the work on your behalf. You 
+could have obviously the simplest form of this,  
+
+459
+00:41:46,800 --> 00:41:52,480
+is AI supervising AI and doing code reviews and 
+that's great. Certainly, self-reflection is a  
+
+460
+00:41:52,480 --> 00:41:58,240
+really effective way of improving the robustness 
+of an AI system. But I do think if it doesn't  
+
+461
+00:41:58,240 --> 00:42:02,800
+matter how tedious it is to write the code, 
+you could probably layer on some techniques  
+
+462
+00:42:02,800 --> 00:42:08,640
+that are out of fashion, like formal verification, 
+unit testing, other things. And if you layer all  
+
+463
+00:42:08,640 --> 00:42:13,360
+these on, I'm thinking about it as, I as a... 
+It's like the guy in the matrix with the green  
+
+464
+00:42:13,360 --> 00:42:18,960
+letters coming down, how can I make something so 
+I as a operator of the code generating machine can  
+
+465
+00:42:18,960 --> 00:42:26,240
+produce incredibly complex scale software, 
+incredibly quickly and know that it works? 
+
+466
+00:42:26,240 --> 00:42:29,920
+If you start with that as your design center, 
+I think you'd probably changed the languages,  
+
+467
+00:42:29,920 --> 00:42:32,640
+you'd probably changed the systems, you'd 
+probably change all these things and you're  
+
+468
+00:42:32,640 --> 00:42:36,160
+probably going to bring to bear a lot of things. 
+And what's really fun about it is you can loosen  
+
+469
+00:42:36,160 --> 00:42:41,200
+a lot of constraints, like coding is free. 
+Okay, so that's neat. With that in mind,  
+
+470
+00:42:41,200 --> 00:42:46,160
+what do you want to do? What would be best suited 
+for the language, the compiler for testing,  
+
+471
+00:42:46,160 --> 00:42:51,360
+for self-reflection, for supervisor models, 
+all these things. I think that's more of a  
+
+472
+00:42:51,360 --> 00:42:56,480
+programming system than a language, but I 
+think when we create something like that,  
+
+473
+00:42:56,480 --> 00:43:04,320
+it can really enable creators, builders to create 
+incredibly robust, incredibly complex systems. 
+
+474
+00:43:04,320 --> 00:43:08,400
+And I'm super excited about VibeCoding, but I 
+don't know generating a prototype has been the  
+
+475
+00:43:08,400 --> 00:43:14,560
+limiting factor in software ever. It's actually 
+building increasingly complex systems and actually  
+
+476
+00:43:14,560 --> 00:43:21,360
+changing them with agility. If you look at the 
+famous Netscape one to Netscape two rewrite,  
+
+477
+00:43:22,720 --> 00:43:26,080
+somewhat, a lot of people attribute that 
+to part of their failure against Internet  
+
+478
+00:43:26,080 --> 00:43:31,600
+Explorer. It's like making these things is not 
+hard. Maintaining them is hard and ensuring  
+
+479
+00:43:31,600 --> 00:43:36,480
+they're robust is hard. And I think we're 
+in the very early phases of defining what  
+
+480
+00:43:36,480 --> 00:43:42,160
+this new system for developing software looks 
+like and I'm very excited to see what emerges.
+
+481
+00:43:42,160 --> 00:43:46,240
+I feel like we're definitely living in the 
+future when someone like you is suggesting  
+
+482
+00:43:46,240 --> 00:43:50,640
+that we build a matrix like experience and 
+that's going to be potentially the future  
+
+483
+00:43:50,640 --> 00:43:57,120
+of coding and building. I can't wait for that. It 
+feels like a great opportunity and a fun project. 
+
+484
+00:43:57,120 --> 00:44:00,720
+This episode is brought to you by 
+Vanta and I'm very excited to have  
+
+485
+00:44:00,720 --> 00:44:06,160
+Christina Cacioppo CEO and co-founder Vanta 
+joining me for this very short conversation.
+
+486
+00:44:06,160 --> 00:44:08,960
+Great to be here. Big fan of 
+the podcast and the newsletter.
+
+487
+00:44:08,960 --> 00:44:11,840
+Vanta is a long time sponsor of the show,  
+
+488
+00:44:11,840 --> 00:44:16,240
+but for some of our newer listeners, 
+what does Vanta do and who is it for?
+
+489
+00:44:16,240 --> 00:44:21,760
+Sure. So we started Vanta in 2018 focused 
+on founders helping them start to build out  
+
+490
+00:44:21,760 --> 00:44:25,920
+their security programs and get credit 
+for all of that hard security work with  
+
+491
+00:44:25,920 --> 00:44:32,240
+compliance certifications like SOC 2 or ISO 
+2701. Today, we currently help over 9,000  
+
+492
+00:44:32,240 --> 00:44:37,520
+companies including some start-up household 
+names like Atlassian Ramp and LangChain,  
+
+493
+00:44:37,520 --> 00:44:42,400
+start and scale their security programs 
+and ultimately, build trust by automating  
+
+494
+00:44:42,400 --> 00:44:46,800
+compliance, centralizing GRC, and 
+accelerating security reviews.
+
+495
+00:44:46,800 --> 00:44:50,800
+That is awesome. I know from experience 
+that these things take a lot of time and  
+
+496
+00:44:50,800 --> 00:44:54,320
+a lot of resources and nobody 
+wants to spend time doing this.
+
+497
+00:44:54,320 --> 00:44:57,760
+That is very much our experience, but 
+before the company and to some extent,  
+
+498
+00:44:57,760 --> 00:45:00,640
+during it. But the idea is 
+with automation, with AI,  
+
+499
+00:45:00,640 --> 00:45:05,360
+with software, we are helping customers 
+build trust with prospects and customers  
+
+500
+00:45:05,360 --> 00:45:10,640
+in an efficient way. And our joke, we started 
+this compliance company so you don't have to.
+
+501
+00:45:10,640 --> 00:45:13,040
+We appreciate you for doing 
+that. And you have a special  
+
+502
+00:45:13,040 --> 00:45:18,560
+discount for listeners. They can get 
+$1,000 off Vanta at vanta.com/lenny.  
+
+503
+00:45:18,560 --> 00:45:25,040
+That's V-A-N-T-A .com/lenny for $1,000 
+off Vanta. Thanks for that, Christina.
+
+504
+00:45:25,040 --> 00:45:25,920
+Thank you.
+
+505
+00:45:26,640 --> 00:45:32,080
+Okay. One more question along these lines and then 
+I want to zoom out on just where AI is heading and  
+
+506
+00:45:32,080 --> 00:45:37,200
+something I love to ask folks like you that 
+are at the cutting edge of AI is what you're  
+
+507
+00:45:37,200 --> 00:45:41,280
+teaching your kids. I know you have kids, 
+I feel like the world is going to be very  
+
+508
+00:45:41,280 --> 00:45:46,880
+different when they grow up. What are you 
+encouraging them to learn that you think is  
+
+509
+00:45:46,880 --> 00:45:53,040
+different maybe from previous generations to help 
+them be successful in a world of AI abundance?
+
+510
+00:45:53,040 --> 00:45:55,840
+I don't know if I'm teaching them 
+differently, but I'm really trying  
+
+511
+00:45:55,840 --> 00:46:02,480
+to encourage them to make AI a part of 
+their lives. I was reflecting actually  
+
+512
+00:46:03,280 --> 00:46:13,840
+when I took the AP calculus exams in '97, '98 AB 
+and BC, I could use a graphing calculator. And  
+
+513
+00:46:14,400 --> 00:46:18,400
+I haven't done this research I was meaning to 
+plug this into ChatGPT before our conversation,  
+
+514
+00:46:18,400 --> 00:46:24,880
+but I'll do it after. Did the calculus exam change 
+before and after they allowed the calculator in  
+
+515
+00:46:24,880 --> 00:46:30,480
+the exam? I assume it did. But essentially, 
+to when you allow the calculator in the exam,  
+
+516
+00:46:30,480 --> 00:46:36,480
+you need to make sure that none of the questions 
+benefit people for having a calculator or not,  
+
+517
+00:46:36,480 --> 00:46:41,920
+which actually forces you to rethink the 
+problems to test calculus knowledge that  
+
+518
+00:46:41,920 --> 00:46:47,040
+don't benefit from like road arithmetic or the 
+other things you can do on a graphing calculator. 
+
+519
+00:46:47,600 --> 00:46:54,800
+I think that a lot of education doesn't 
+presume you have a super intelligence in  
+
+520
+00:46:54,800 --> 00:47:00,000
+your pocket. And so, if you ask someone to 
+write an essay on a book that they read,  
+
+521
+00:47:00,000 --> 00:47:06,160
+you could probably hallucinate one pretty easily 
+from one of the big providers like ChatGPT. And  
+
+522
+00:47:06,160 --> 00:47:10,400
+maybe if you are skilled enough that prompting, 
+maybe even your teacher won't know it's written  
+
+523
+00:47:10,400 --> 00:47:16,720
+by an AI. So what do you do? How do you teach kids 
+differently? It's really hard for teachers right  
+
+524
+00:47:16,720 --> 00:47:20,480
+now because I think we haven't gone through the 
+transition of adding calculators to the exams. So,  
+
+525
+00:47:20,480 --> 00:47:26,880
+I think a lot of the mechanisms we have to 
+evaluate students are broken by the existence  
+
+526
+00:47:26,880 --> 00:47:33,120
+of ChatGPT and the like. So I think we're in 
+a very awkward phase, but I think we can still  
+
+527
+00:47:33,120 --> 00:47:40,000
+both teach kids how to think and teach kids how to 
+learn. And I think our education system can catch  
+
+528
+00:47:40,000 --> 00:47:46,320
+up and I actually think these models can be one of 
+the most effective educational tools in history. 
+
+529
+00:47:46,320 --> 00:47:49,840
+I don't know if you're a visual learner or reading 
+learner. I like to read. I didn't love going to  
+
+530
+00:47:49,840 --> 00:47:57,120
+lectures. I don't learn that well from them. I 
+like to read the book and if you have a teacher  
+
+531
+00:47:57,120 --> 00:48:01,600
+who doesn't teach in your style, you can now 
+go home and ask ChatGPT to teach you in another  
+
+532
+00:48:01,600 --> 00:48:09,520
+mechanism. My kids use ChatGPT to quiz them before 
+a test. You can use audio mode or chat mode. It's  
+
+533
+00:48:09,520 --> 00:48:16,000
+better than cue cards. My daughter took home a 
+Shakespeare book, she took a picture of a page she  
+
+534
+00:48:16,000 --> 00:48:23,440
+didn't understand and ChatGPT explained it to her 
+way better than I would've as well. I think every  
+
+535
+00:48:23,440 --> 00:48:28,800
+child in this world has a personalized tutor that 
+can teach them in the way that they best learn,  
+
+536
+00:48:28,800 --> 00:48:37,360
+visually, over audio, reading. We have a 
+platform that can test you, that can quiz you.  
+
+537
+00:48:37,360 --> 00:48:44,240
+I think it's really an amplifier of agency.
+I think the kids who have agency, who have  
+
+538
+00:48:44,240 --> 00:48:50,480
+aspirations to learn something, I think you have 
+what is the best combination of every teacher  
+
+539
+00:48:50,480 --> 00:48:58,000
+you've ever had and these models and you can use 
+it. So with my kids, my oldest daughter learned  
+
+540
+00:48:58,000 --> 00:49:02,080
+how to code and she was making a website and every 
+time she had a question for me, I would just make  
+
+541
+00:49:02,080 --> 00:49:06,880
+her use ChatGPT. Not because I was trying to 
+be an obnoxious father, but I'm like she needs  
+
+542
+00:49:06,880 --> 00:49:15,920
+to learn to use this tool because it's amazing.
+So, I really am trying to have them learn how to  
+
+543
+00:49:15,920 --> 00:49:21,120
+use it constructively in their lives. But all 
+that said, I just feel a ton of empathy for  
+
+544
+00:49:21,120 --> 00:49:27,440
+public school teachers right now. It's very hard 
+because the technology is moving faster than our  
+
+545
+00:49:27,440 --> 00:49:33,200
+educational system. And I think particularly 
+as it relates to evaluation, it's just really  
+
+546
+00:49:33,200 --> 00:49:38,480
+challenging for teachers right now. And I worry 
+because these technologies amplify agency, the  
+
+547
+00:49:38,480 --> 00:49:44,880
+opposite can also be true. If you are a student 
+trying to not learn something, I think these tools  
+
+548
+00:49:44,880 --> 00:49:49,040
+probably provide a lot of mechanisms to avoid 
+it as well. And so, I think there's a challenge  
+
+549
+00:49:49,040 --> 00:49:53,600
+for parents and teachers and I think we're 
+going to end up with a handful of years here. 
+
+550
+00:49:53,600 --> 00:49:59,760
+But I brought up the calculus AP exam because 
+obviously, a graphing calculator is not ChatGPT,  
+
+551
+00:49:59,760 --> 00:50:06,160
+don't get me wrong. But I think we've been 
+able to figure out a way to conform homework  
+
+552
+00:50:06,160 --> 00:50:10,960
+and in-class learning and tests around 
+the technologies available to us fairly  
+
+553
+00:50:10,960 --> 00:50:18,080
+successfully to date. And I'm fairly confident 
+we'll figure it out and I think it's going to...  
+
+554
+00:50:18,080 --> 00:50:22,400
+And on the much more positive side, I don't 
+know, I went to public schools, I don't know  
+
+555
+00:50:22,400 --> 00:50:27,760
+if you did too. You end up with some pretty bad 
+teachers at times and now, you have an outlet.  
+
+556
+00:50:27,760 --> 00:50:34,640
+You don't need to be the rich kid who can afford 
+a tutor anymore to get tutoring. If you are a kid  
+
+557
+00:50:34,640 --> 00:50:40,560
+who excels in math and your school doesn't have 
+advanced statistics classes, well, now you do. 
+
+558
+00:50:40,560 --> 00:50:44,160
+So I think this is just an incredibly 
+democratizing force with kids who have  
+
+559
+00:50:44,160 --> 00:50:49,600
+agency and I think that's very exciting. I'm 
+hopeful that there's a 11-year-old right now  
+
+560
+00:50:49,600 --> 00:50:57,280
+who's going to start a really amazing company 
+10 years from now whose ChatGPT is going to  
+
+561
+00:50:57,280 --> 00:51:02,320
+be their primary tutor that led to that 
+outcome. And I think that's pretty cool.
+
+562
+00:51:02,320 --> 00:51:05,280
+I have a two-year-old and it feels 
+like there's a new milestone of,  
+
+563
+00:51:05,280 --> 00:51:08,800
+there's like when to give them a phone, 
+when to give them, I don't know, Snapchat,  
+
+564
+00:51:08,800 --> 00:51:11,200
+whatever kids use these days and then 
+it's like when to give them their first  
+
+565
+00:51:11,200 --> 00:51:16,240
+ChatGPT account. Well no, I wonder 
+how soon that's supposed to happen.
+
+566
+00:51:16,240 --> 00:51:22,720
+I think my personal take is, it's different than 
+the former two. I don't think mobile phones are  
+
+567
+00:51:22,720 --> 00:51:29,440
+great in school or great for kids and I personally 
+advocate for waiting a long time. But I think that  
+
+568
+00:51:29,440 --> 00:51:34,640
+ChatGPT is more like Google search and it's 
+one thing to have a device in your pocket  
+
+569
+00:51:34,640 --> 00:51:40,400
+that's addictive and has push notifications, but 
+it's another thing to use AI to learn. And so,  
+
+570
+00:51:40,400 --> 00:51:46,960
+I think the two are different. And I really think 
+of AI fundamentally as a utility. I don't think a  
+
+571
+00:51:46,960 --> 00:51:51,440
+lot of parents before ChatGPT said, "When should I 
+let my kid use Google search?" That's a different  
+
+572
+00:51:51,440 --> 00:51:55,200
+type of tool. I think thinking of it like that 
+is the way I think about these technologies.
+
+573
+00:51:55,200 --> 00:51:58,880
+Is the form factor for your kids like 
+an iPad or a laptop or something?
+
+574
+00:51:58,880 --> 00:52:00,800
+Yeah. They use the computer on the desk.
+
+575
+00:52:00,800 --> 00:52:06,000
+Got it. All right. Good tips. This is good for me 
+to learn all these things as my kid ages. Okay,  
+
+576
+00:52:06,000 --> 00:52:11,120
+I'm going to zoom out and let's talk about 
+business strategy AI. One of the biggest questions  
+
+577
+00:52:11,120 --> 00:52:16,320
+a lot of founders think about these days is just 
+where should I build? What will foundational model  
+
+578
+00:52:16,320 --> 00:52:22,240
+companies not squash and do themselves? Being 
+someone building a very successful AI business  
+
+579
+00:52:22,240 --> 00:52:27,200
+and also being on the board of OpenAI, feel like 
+you have a really unique perspective on what is  
+
+580
+00:52:27,200 --> 00:52:31,840
+probably a good idea and it's probably not a good 
+idea. How do you think the AI market is going to  
+
+581
+00:52:31,840 --> 00:52:36,000
+play out and where do you think founders 
+should focus and also just try to avoid?
+
+582
+00:52:36,000 --> 00:52:40,800
+I think there's three segments of the AI market 
+that will end up fairly meaningful markets and  
+
+583
+00:52:40,800 --> 00:52:46,800
+then I'll end with how I think it's going to 
+play out. So first is the frontier model market  
+
+584
+00:52:46,800 --> 00:52:52,320
+or foundation model market. I think this will end 
+up the small handful of hyperscalers and really  
+
+585
+00:52:52,320 --> 00:52:58,400
+big labs just like the cloud infrastructure 
+as a service market. And the reason for that  
+
+586
+00:52:58,400 --> 00:53:04,080
+is that creating a frontier model is entirely 
+a function of CapEx. And you need a company  
+
+587
+00:53:04,080 --> 00:53:09,840
+with huge amounts of CapEx capacity to build one 
+of these models. All of the companies that were  
+
+588
+00:53:09,840 --> 00:53:13,840
+startups that tried to do this have already 
+been consolidated or almost all of them,  
+
+589
+00:53:13,840 --> 00:53:19,440
+inflection, adapt, character and others. And 
+I think there doesn't appear to be a viable  
+
+590
+00:53:19,440 --> 00:53:24,640
+business model for a startup because of the 
+amount of CapEx required and there's just not  
+
+591
+00:53:24,640 --> 00:53:31,360
+enough fundraising runway to get to escape 
+velocity. And also, the models deteriorate  
+
+592
+00:53:31,360 --> 00:53:36,320
+in value fairly quickly as an asset class.
+And so, you need just a lot of scale to make  
+
+593
+00:53:36,320 --> 00:53:42,800
+a return on the investment for a model that 
+deteriorates in value so quickly. So, I think  
+
+594
+00:53:42,800 --> 00:53:47,280
+that's going to end up probably no entrepreneur 
+should build a frontier model. That's my take.
+
+595
+00:53:47,280 --> 00:53:48,640
+Unless you're Elon.
+
+596
+00:53:48,640 --> 00:53:54,880
+Yeah. Oh, yeah. He's different. And he has the 
+capacity to raise billions in capital and my  
+
+597
+00:53:54,880 --> 00:53:59,920
+guess is most of your other listeners don't, and 
+then he is the greatest of all time for reason  
+
+598
+00:53:59,920 --> 00:54:05,920
+and he's different. You don't compare yourself to 
+him. The other part of the market is the tooling,  
+
+599
+00:54:05,920 --> 00:54:11,280
+and I think there's a lot of folks selling 
+pickaxes in the Gold Rush. This is data labeling,  
+
+600
+00:54:11,280 --> 00:54:21,200
+services. This is data platforms, it's eval tools. 
+More specialized models like 11 Labs has a great  
+
+601
+00:54:21,200 --> 00:54:26,320
+set of voice models that a lot of companies use 
+that are really high quality and it's like if  
+
+602
+00:54:26,320 --> 00:54:31,280
+you're trying to be successful in AI, what are 
+the different tools and services that you need? 
+
+603
+00:54:31,280 --> 00:54:36,320
+There is some risk to the tooling market 
+because it's pretty close to the sun. So,  
+
+604
+00:54:36,320 --> 00:54:41,280
+if you look at the infrastructure as a service 
+market and the cloud tooling market like the  
+
+605
+00:54:41,280 --> 00:54:47,440
+Confluent and Databricks and Snowflake, a lot of 
+the Amazon and Azure and others have competing  
+
+606
+00:54:47,440 --> 00:54:53,680
+products in those areas because they're very 
+adjacent to the infrastructure itself and every  
+
+607
+00:54:53,680 --> 00:54:57,920
+infrastructure provider is trying to differentiate 
+by moving up the stack and you're right there. 
+
+608
+00:54:57,920 --> 00:55:02,560
+So, there's some real meaningful companies as I 
+mentioned, like Snowflake, Databricks, Confluent  
+
+609
+00:55:02,560 --> 00:55:09,600
+and others, but there's a lot of others that were 
+obviated by technology from the infrastructure  
+
+610
+00:55:09,600 --> 00:55:16,960
+providers themselves. So those companies probably 
+are the most at risk for a developer day from one  
+
+611
+00:55:16,960 --> 00:55:22,400
+of these big foundation model companies releasing 
+exactly what they do. So there's probably a lot  
+
+612
+00:55:22,400 --> 00:55:27,840
+of people who need your tool, but the question 
+will be if or when is probably the right way to  
+
+613
+00:55:27,840 --> 00:55:32,240
+think about it, one of these large infrastructure 
+providers introduces a competitor, why will people  
+
+614
+00:55:32,240 --> 00:55:39,280
+continue to choose you? So it's a good market 
+but it's a little bit close to the end as I said. 
+
+615
+00:55:39,280 --> 00:55:44,320
+Then there's the applied AI market. I think this 
+will play out for companies who build agents. I  
+
+616
+00:55:44,320 --> 00:55:50,160
+think agent is the new app. I think that's going 
+to be the product form factor. There's companies  
+
+617
+00:55:50,160 --> 00:55:54,720
+like Sierra, we help companies build agents to 
+answer the phone or answer the chat for customer  
+
+618
+00:55:54,720 --> 00:56:00,240
+experience and customer service. There's companies 
+like Harvey that make agents for both a legal,  
+
+619
+00:56:00,240 --> 00:56:07,040
+paralegal profession, anti-trust reviews, 
+reviewing contracts etc, etc. There's companies  
+
+620
+00:56:07,040 --> 00:56:13,040
+that do content marketing. There's companies that 
+do supply chain analysis. I think this is like  
+
+621
+00:56:13,040 --> 00:56:18,480
+the software as a service market. They'll probably 
+be higher margin companies because you're selling  
+
+622
+00:56:18,480 --> 00:56:22,480
+something that achieves a business outcome 
+as opposed to being a byproduct of the models  
+
+623
+00:56:22,480 --> 00:56:27,760
+themselves. They will almost certainly pay taxes 
+down to the model providers, which is why those  
+
+624
+00:56:27,760 --> 00:56:34,320
+model providers will end up extremely large scale 
+but probably slightly lower margin and I think the  
+
+625
+00:56:34,320 --> 00:56:40,240
+market for them will be probably less technical.
+If you think about the purest form of software as  
+
+626
+00:56:40,240 --> 00:56:45,040
+a service, it's not like you ask what database 
+do you use? It's really about the feature and  
+
+627
+00:56:45,040 --> 00:56:50,400
+function. I think that's where agents will go. I 
+think it's going to be more about product than it  
+
+628
+00:56:50,400 --> 00:56:57,920
+is about technology over time. Just going back to 
+my metaphor, in 1998 when Mark and Parker started  
+
+629
+00:56:57,920 --> 00:57:02,880
+Salesforce, just getting that database running 
+in the cloud was like a technical achievement.  
+
+630
+00:57:02,880 --> 00:57:09,840
+Nowadays, no one asks about that because you can 
+just spin up a database in AWS or Azure and it's  
+
+631
+00:57:09,840 --> 00:57:18,000
+like no problem. I think today, orchestrating 
+an agentic process on top of the models,  
+
+632
+00:57:18,000 --> 00:57:22,400
+sounds really fancy and it's really hard and all 
+that stuff. I'm pretty sure that's going to be  
+
+633
+00:57:22,400 --> 00:57:26,720
+easy in three or four years. It's just like 
+just as the technology improves. And so,  
+
+634
+00:57:26,720 --> 00:57:29,200
+over time you say, what is an agent 
+company? Well, it looks a little bit  
+
+635
+00:57:29,200 --> 00:57:32,480
+like [inaudible 00:57:30] as a service.
+You talk a little bit less about how you  
+
+636
+00:57:32,480 --> 00:57:37,520
+deal with the models in the same way modern 
+SaaS, few people ask what database you use,  
+
+637
+00:57:37,520 --> 00:57:42,400
+but you'll probably ask a lot about the 
+workflows and what business outcomes that  
+
+638
+00:57:42,400 --> 00:57:47,360
+you're driving. Are you generating leads for a 
+sales team? Are you minimizing your procurement  
+
+639
+00:57:47,360 --> 00:57:52,000
+spend? Whatever value you're providing, 
+it's going to slowly evolve towards that. 
+
+640
+00:57:53,280 --> 00:57:56,880
+I'm very excited. I don't think startups 
+should probably build foundation models.  
+
+641
+00:57:57,600 --> 00:58:02,480
+But you can shoot your shot if you have 
+a vision for the future, go for it. But I  
+
+642
+00:58:02,480 --> 00:58:07,200
+think it's probably a challenging market that's 
+already consolidated. I'm very excited about the  
+
+643
+00:58:07,200 --> 00:58:13,280
+other two markets. I'm particularly excited as 
+building agents becomes easier, to see a lot of  
+
+644
+00:58:14,080 --> 00:58:21,040
+long tail agent companies come out. I was looking 
+at a website for the top 50 software companies in  
+
+645
+00:58:21,040 --> 00:58:26,080
+the stock market and obviously, the top five are 
+the big, big boom ones like Microsoft, Amazon,  
+
+646
+00:58:26,080 --> 00:58:31,760
+Google, all that, but the next 50 are all SaaS 
+companies and some of them are very exciting,  
+
+647
+00:58:31,760 --> 00:58:35,680
+some of them are super boring, but this is how 
+the software market has evolved and I think we're  
+
+648
+00:58:35,680 --> 00:58:40,720
+going to see something similar with agents.
+It's not just going to be these huge markets  
+
+649
+00:58:40,720 --> 00:58:46,400
+like we're in customer service and software 
+engineering. It's going to be a lot of things  
+
+650
+00:58:46,400 --> 00:58:50,480
+where people are spending a lot of time 
+and resources that an agent can just solve,  
+
+651
+00:58:50,480 --> 00:58:56,000
+but it requires an entrepreneur who actually 
+understands that business problem, and deeply,  
+
+652
+00:58:56,000 --> 00:59:00,480
+and I think that's where a lot of the value 
+is going to be unlocked in the AI market.
+
+653
+00:59:00,480 --> 00:59:04,000
+That is incredibly helpful. This makes me 
+think about, I had Marc Benioff on the podcast,  
+
+654
+00:59:04,000 --> 00:59:09,600
+you guys were co-CEOs and he was extremely 
+agent-pilled. All he wanted to talk about  
+
+655
+00:59:09,600 --> 00:59:14,000
+was Agentforce. Clearly you're also 
+very agent-pilled. What is it that-
+
+656
+00:59:14,000 --> 00:59:15,600
+I've never heard the term 
+agent-pilled [inaudible 00:59:18].
+
+657
+00:59:18,080 --> 00:59:21,920
+Clearly you guys saw something that was 
+just like, okay, we need to go all in on  
+
+658
+00:59:21,920 --> 00:59:25,680
+agents. This is the future. What is it you 
+think people are missing about just why this  
+
+659
+00:59:25,680 --> 00:59:31,200
+is such a critical change in the way software 
+is going to work? What are people not seeing?
+
+660
+00:59:31,200 --> 00:59:35,920
+If you talk to an economist like Larry Summers 
+who, on the OpenAI board with me, they'll talk  
+
+661
+00:59:35,920 --> 00:59:40,880
+about what is the value of technology? Will 
+it help strive productivity in the economy.  
+
+662
+00:59:40,880 --> 00:59:47,280
+And if you look at one of the big jumps in 
+productivity in the economy was in the '90s,  
+
+663
+00:59:47,280 --> 00:59:52,480
+and I think a lot of folks I talked to think it 
+was actually that very first wave of computing  
+
+664
+00:59:52,480 --> 00:59:58,880
+where people made ERP systems and just put 
+accounting into computers and databases,  
+
+665
+00:59:58,880 --> 01:00:04,320
+even mainframes, we're talking like the PC 
+era. Because it was such a huge step-up,  
+
+666
+01:00:04,320 --> 01:00:11,920
+just imagine the ledgers of numbers that you'd 
+have for a large multinational company before  
+
+667
+01:00:11,920 --> 01:00:16,560
+and it truly just transformed departments.
+I'll give you a little toy example. My dad  
+
+668
+01:00:16,560 --> 01:00:20,400
+just retired. He was a mechanical engineer and 
+he was talking about when he first started his  
+
+669
+01:00:20,400 --> 01:00:24,880
+career in the late '70s and he went into a 
+mechanical engineering firm, the majority of  
+
+670
+01:00:24,880 --> 01:00:29,520
+the firm were drafts people. So basically, you 
+take an engineering design but you needed to do  
+
+671
+01:00:29,520 --> 01:00:33,680
+all the different vantage points and for all the 
+different floors and to give to the contractor to  
+
+672
+01:00:33,680 --> 01:00:41,040
+do the thing. Now, there are zero drafts people 
+at his company. You just make the design in first  
+
+673
+01:00:41,040 --> 01:00:47,360
+AutoCAD and now Revit and it's a 3D model and 
+the drafting has actually been eliminated. It's  
+
+674
+01:00:47,360 --> 01:00:52,480
+just not a thing one needs to do anymore. The 
+actual design and drafting, drafting is not a  
+
+675
+01:00:52,480 --> 01:01:00,000
+thing that exists. It's just a design. That's 
+true productivity gains, right? It's like the  
+
+676
+01:01:00,000 --> 01:01:06,640
+job of the mechanical engineering firm was to do 
+a design. The drafting was this necessary output  
+
+677
+01:01:06,640 --> 01:01:12,160
+for the contractor, but it wasn't really adding 
+value. It was just like the supply chain change. 
+
+678
+01:01:12,800 --> 01:01:19,760
+If you look at the history of the software 
+industry from the PC on, there's been meaningful  
+
+679
+01:01:19,760 --> 01:01:25,040
+productivity gains but just not nearly as 
+meaningful as that first huge jump. And I'm  
+
+680
+01:01:25,040 --> 01:01:31,360
+not smart enough to know exactly why, but it 
+is interesting, the promise of productivity  
+
+681
+01:01:31,360 --> 01:01:37,680
+gains from technology hasn't been as realized 
+I think as some people thought. I think agents  
+
+682
+01:01:37,680 --> 01:01:44,800
+will truly start to bend the curve again like we 
+did in the very early days of computing because  
+
+683
+01:01:44,800 --> 01:01:52,640
+software is going from helping an individual be 
+slightly more productive to actually accomplishing  
+
+684
+01:01:52,640 --> 01:01:57,360
+a job autonomously. And as a consequence, 
+just like you don't need drafts people in a  
+
+685
+01:01:57,360 --> 01:02:02,000
+mechanical engineering firm, you just won't need 
+someone doing that thing anymore. It means they  
+
+686
+01:02:02,000 --> 01:02:06,800
+can do something else that's higher leverage 
+and more productive and you can actually...  
+
+687
+01:02:07,920 --> 01:02:15,840
+A smaller group of people can accomplish more and 
+truly drive productivity gains in the economy. 
+
+688
+01:02:15,840 --> 01:02:21,360
+And I think if you've ever sold enterprise 
+software, you end up in these discussions as a  
+
+689
+01:02:21,360 --> 01:02:28,240
+vendor with the customer where you'll have a value 
+discussion and you'll do these somewhat convoluted  
+
+690
+01:02:28,960 --> 01:02:33,680
+things like okay, it's like you're selling a 
+sales thing. Okay, well, if every salesperson  
+
+691
+01:02:33,680 --> 01:02:43,120
+sells 5% more... And you should pay us a million 
+dollars. And it's roughly that conversation and  
+
+692
+01:02:43,120 --> 01:02:48,720
+it's so unattributable especially... And it's 
+why it's so hard to sell productivity software,  
+
+693
+01:02:48,720 --> 01:02:55,520
+which I learned the hard way, it's just hard 
+to know what's the value of making everyone 10%  
+
+694
+01:02:55,520 --> 01:03:00,560
+more productive? Did you actually make them 10% 
+more productive or did something else change? You  
+
+695
+01:03:00,560 --> 01:03:04,400
+don't really know all these things. But now 
+with an agent actually accomplishing a job,  
+
+696
+01:03:04,400 --> 01:03:10,880
+not only is it actually truly driving productivity 
+in a very real way, but it's measurable as well. 
+
+697
+01:03:10,880 --> 01:03:16,480
+So all those things combined means I think 
+this is actually a step change in how we  
+
+698
+01:03:16,480 --> 01:03:22,640
+think about software because it does a job 
+autonomously, which is more self-evident,  
+
+699
+01:03:22,640 --> 01:03:28,720
+a productivity driver. It's measurable so people 
+value it differently as well, which is why I also  
+
+700
+01:03:28,720 --> 01:03:35,360
+believe in outcomes-based pricing for software.
+And all of that combined to me, it feels like  
+
+701
+01:03:35,360 --> 01:03:40,720
+as significant as the cloud or I think more 
+technologically, but just in terms of how it  
+
+702
+01:03:40,720 --> 01:03:44,480
+transforms the business model of the software 
+industry where there's going to be a before  
+
+703
+01:03:44,480 --> 01:03:49,440
+and after. I don't know how many people still 
+sell perpetually licensed on premises software,  
+
+704
+01:03:49,440 --> 01:03:53,200
+but it's de minimis at this point. I think we're 
+going to go through a similar transition. The  
+
+705
+01:03:53,200 --> 01:03:56,720
+whole market is going to go towards agents. I 
+think the whole market is going to go towards  
+
+706
+01:03:56,720 --> 01:04:02,240
+outcomes-based pricing, not because it's the 
+only way, but the market is going to pull  
+
+707
+01:04:02,240 --> 01:04:08,080
+everyone there because it's just so obviously 
+the correct way to build and sell software.
+
+708
+01:04:08,080 --> 01:04:11,200
+Let me pull on that last thread. So we 
+had Madhavan on the podcast recently,  
+
+709
+01:04:11,200 --> 01:04:16,560
+pricing expert, legend, monetizing innovation 
+author and he talked about pricing strategy  
+
+710
+01:04:16,560 --> 01:04:23,520
+for AI companies and he was very much in your 
+camp of, if you can, you need to price your  
+
+711
+01:04:23,520 --> 01:04:28,240
+product as an outcome-based product and 
+the access uses exactly what you shared,  
+
+712
+01:04:28,240 --> 01:04:32,400
+which is, you can do that if you can attribute 
+the impact and it's autonomous, it's running on  
+
+713
+01:04:32,400 --> 01:04:38,320
+its own. And he actually used Sierra as one of 
+the shining examples of this being successful.  
+
+714
+01:04:38,320 --> 01:04:42,320
+Can you just briefly just explain a little bit 
+what is outcome-based pricing for people that  
+
+715
+01:04:42,320 --> 01:04:45,760
+haven't heard this term before and then just 
+how does it work for Sierra to give an example?
+
+716
+01:04:45,760 --> 01:04:49,600
+Yeah, I'll start with the example and 
+then I'll broaden it. So at Sierra,  
+
+717
+01:04:49,600 --> 01:04:54,560
+we help companies make customer facing AI agents 
+primarily for customer service, but more broadly,  
+
+718
+01:04:54,560 --> 01:05:00,640
+for customer experience. So if you have a problem 
+with your [inaudible 01:04:58], you'll call or  
+
+719
+01:05:00,640 --> 01:05:05,280
+chat with Harmony, who's their AI agent. If 
+you have ADT home security and your alarm  
+
+720
+01:05:05,280 --> 01:05:09,120
+doesn't work, you can chat with their AI 
+agent. Sonos speakers, a lot of different  
+
+721
+01:05:09,120 --> 01:05:17,440
+consumer brands. And if you think about running a 
+call center, there's a cost for every phone call  
+
+722
+01:05:17,440 --> 01:05:22,560
+that you take. Most of it is labor costs, 
+but if you have, let's just say a typical  
+
+723
+01:05:22,560 --> 01:05:28,640
+phone call is anywhere between 10 and $20 USD. 
+Some of it's software, some of it's telephony,  
+
+724
+01:05:28,640 --> 01:05:32,720
+but a lot of it is just like the hourly 
+wage of the person answering the phone. 
+
+725
+01:05:32,720 --> 01:05:41,680
+So if an AI agent can take that call and solve 
+it, that is in the industry often called a call  
+
+726
+01:05:41,680 --> 01:05:49,760
+deflection or a containment. And that essentially 
+means you saved, call it $15 because you didn't  
+
+727
+01:05:49,760 --> 01:05:55,680
+have to have someone pick up the phone. So in 
+our industry, basically we say, "Hey, if the  
+
+728
+01:05:55,680 --> 01:06:00,480
+AI agent solves the customer's problem, they're 
+happy with it and you didn't have to pick up the  
+
+729
+01:06:00,480 --> 01:06:06,880
+phone," there's a pre-negotiated rate for that 
+and we call it resolution based. There are other  
+
+730
+01:06:06,880 --> 01:06:12,400
+outcomes as well. We have some sales agents being 
+paid a sales commission, believe it or not. We do.  
+
+731
+01:06:12,400 --> 01:06:16,960
+We really think of our agents as truly customer 
+experience like the concierge for your brand and  
+
+732
+01:06:16,960 --> 01:06:22,640
+we want to make sure that our business model 
+is aligned with our customer's business model. 
+
+733
+01:06:22,640 --> 01:06:25,520
+As you said, these agents need to be 
+autonomous and the outcome has to be  
+
+734
+01:06:25,520 --> 01:06:30,000
+measurable. That's not always possible, but I 
+think it's broadly possible. And what's really  
+
+735
+01:06:30,000 --> 01:06:36,960
+neat about it is if you talk to any CFO or 
+head of procurement with their big vendors,  
+
+736
+01:06:36,960 --> 01:06:42,160
+they look at the bill of materials and it's 
+overwhelming and it's impossible to know if  
+
+737
+01:06:42,160 --> 01:06:48,640
+you're getting the value that you hoped from that 
+contract. I think consumption based, which was  
+
+738
+01:06:48,640 --> 01:06:53,200
+popular particularly in the infrastructure 
+space is closer to it. But I'm not sure a  
+
+739
+01:06:53,200 --> 01:06:59,760
+token is actually a good measure of value from AI 
+either. I always use the analogy, like right now,  
+
+740
+01:06:59,760 --> 01:07:05,600
+most of the coding agents are priced per token or 
+per utilization, but there's this famous story of  
+
+741
+01:07:05,600 --> 01:07:10,560
+an Apple engineer who had a bad manager who's 
+like had you report how many lines of code you  
+
+742
+01:07:10,560 --> 01:07:15,920
+wrote every day? Which every engineer in the world 
+knows is an idiotic way to measure productivity. 
+
+743
+01:07:15,920 --> 01:07:19,280
+He famously went in with a report that had a 
+negative number because I think he did a big  
+
+744
+01:07:19,280 --> 01:07:23,760
+refactoring, deleted a bunch and it was his 
+way of saying like, fuck you to the man. I  
+
+745
+01:07:23,760 --> 01:07:30,320
+think tokens are similar. Yeah, you used a lot 
+of tokens, like good for you, did it produce a  
+
+746
+01:07:30,320 --> 01:07:36,160
+pull request that was good? And I think that's 
+the whole point of all this. I think there's  
+
+747
+01:07:36,160 --> 01:07:42,400
+a huge difference between outcomes-based pricing 
+and usage based pricing because especially in AI,  
+
+748
+01:07:42,400 --> 01:07:46,480
+they're not necessarily even correlated and you 
+could have a long phone call and not solve the  
+
+749
+01:07:46,480 --> 01:07:51,920
+customer's problem and they give you a negative 
+review online and call the call center again,  
+
+750
+01:07:51,920 --> 01:07:56,480
+all that effort was for nothing. In fact, 
+you might've added negative value. And so,  
+
+751
+01:07:56,480 --> 01:08:00,000
+I am a huge believer in this.
+And what's fun about it is it  
+
+752
+01:08:00,000 --> 01:08:05,280
+really just aligns... I think every technology 
+company aspires to be a partner, not a vendor.  
+
+753
+01:08:05,280 --> 01:08:09,840
+And I think at Sierra, we are truly a partner 
+to every single one of our customers because  
+
+754
+01:08:09,840 --> 01:08:15,520
+we're all aligned on what we want to achieve. And 
+I think that is really where the software industry  
+
+755
+01:08:15,520 --> 01:08:22,320
+should go. It requires a lot of different shape 
+of a company. You have to be able to help your  
+
+756
+01:08:22,320 --> 01:08:26,000
+customers achieve those outcomes. You can't just 
+throw software at the wall because you'll never  
+
+757
+01:08:26,000 --> 01:08:34,560
+get paid if it doesn't. Your orientation becomes 
+so extremely customer-centric when you do this the  
+
+758
+01:08:34,560 --> 01:08:39,360
+right way. I think it's just a better version of 
+the software industry. So I think it's right from  
+
+759
+01:08:39,360 --> 01:08:43,200
+first principles, it's right for procurement 
+partners and I think it's right for the world.
+
+760
+01:08:43,200 --> 01:08:46,400
+We've been chatting a little 
+bit about productivity gains.  
+
+761
+01:08:46,400 --> 01:08:50,880
+There's a lot of skepticism in the headlines 
+these days of just like what is AI actually  
+
+762
+01:08:50,880 --> 01:08:54,560
+doing? Is it actually helping people be more 
+productive? There was a recent study actually,  
+
+763
+01:08:54,560 --> 01:08:57,840
+I don't know if you saw, where they 
+showed engineers were less productive  
+
+764
+01:08:57,840 --> 01:09:00,960
+with AI because it was just putting them in 
+different directions. They had to research  
+
+765
+01:09:00,960 --> 01:09:05,120
+all what's going wrong here? So I think CX is 
+a really good example where you clearly are  
+
+766
+01:09:05,120 --> 01:09:10,240
+seeing gains. Are you seeing actual gains at your 
+company or any other company you work with outside  
+
+767
+01:09:10,240 --> 01:09:15,280
+of CX in terms of productivity that is like 
+clearly yes, this is working and a huge deal?
+
+768
+01:09:15,280 --> 01:09:21,760
+I'm extremely bullish on the productivity gains 
+from AI, but I do think the tools and products  
+
+769
+01:09:21,760 --> 01:09:28,720
+right now are somewhat immature and it's quite 
+counterintuitive. So, for example, almost every  
+
+770
+01:09:28,720 --> 01:09:34,160
+software engineering firm I know uses something 
+like Cursor to help their software engineers.  
+
+771
+01:09:34,160 --> 01:09:40,160
+Most people use Cursor right now as a coding 
+autocomplete, though they have a lot of agentic  
+
+772
+01:09:40,160 --> 01:09:46,480
+solutions and there's a lot of... OpenAI has Codex 
+and Cloud has... I can't remember the Anthropic  
+
+773
+01:09:46,480 --> 01:09:51,520
+products. So there's lots of agentic agents 
+coming as well. One of the interesting things  
+
+774
+01:09:51,520 --> 01:09:58,320
+because the technology is immature, the code it 
+produces often has problems. There's a lot of  
+
+775
+01:09:58,320 --> 01:10:04,000
+people approaching this to actually realize those 
+productivity gains because as any engineer who's  
+
+776
+01:10:04,000 --> 01:10:10,560
+written a lot of code will tell you, it's pretty 
+easy to look at and edit and fix code you wrote. 
+
+777
+01:10:10,560 --> 01:10:15,920
+Reviewing other people's code or particularly 
+finding a subtle logical error in someone else's  
+
+778
+01:10:15,920 --> 01:10:22,240
+code is actually really hard. It's actually much 
+harder than editing code that you wrote yourself.  
+
+779
+01:10:22,240 --> 01:10:29,120
+So if the code produced by a coding agent is often 
+incorrect, it actually can take a lot of cognitive  
+
+780
+01:10:29,120 --> 01:10:36,320
+load and time to fix it. And in fact, if you end 
+up producing lots of issues with your customers,  
+
+781
+01:10:36,320 --> 01:10:41,600
+you could end up producing a lot of features, 
+but actually, is like mucking up the machine  
+
+782
+01:10:41,600 --> 01:10:45,600
+a little bit and having something that's not 
+ideal. There's a couple of techniques that I  
+
+783
+01:10:45,600 --> 01:10:49,760
+think are interesting. First, I think there's a 
+lot of AI starts now working on things like code  
+
+784
+01:10:49,760 --> 01:10:55,280
+reviews. I think this idea of self-reflection in 
+agents is really important. Having AI supervise  
+
+785
+01:10:55,280 --> 01:11:00,160
+the AI is actually very effective. Just think 
+about it this way, if you produce an AI agent  
+
+786
+01:11:00,160 --> 01:11:05,120
+that's right 90% of the time, that's not that 
+great, but how hard would it be to make another  
+
+787
+01:11:05,120 --> 01:11:10,160
+AI agent to find the errors the other 10% of 
+the time? That might be a tractable problem. 
+
+788
+01:11:10,160 --> 01:11:14,480
+And if that thing's right 90% of the time, just 
+for argument's sake, you can wire those things  
+
+789
+01:11:14,480 --> 01:11:19,760
+together and have something that's right 99% 
+of the time. So it's just a math problem and  
+
+790
+01:11:19,760 --> 01:11:23,280
+it turns out that you can make something 
+to generate code, you can make something  
+
+791
+01:11:23,280 --> 01:11:28,080
+to review code and you're essentially using 
+compute for cognitive capacity and you can  
+
+792
+01:11:28,080 --> 01:11:34,320
+layer on more layers of cognition and thinking 
+and reasoning and produce things increasingly  
+
+793
+01:11:34,320 --> 01:11:40,240
+robust. So I'm very excited about that. The other 
+thing though is root cause analysis. So we have an  
+
+794
+01:11:40,240 --> 01:11:48,080
+engineer at Sierra who exclusively focuses on the 
+model context protocol server serving our cursor  
+
+795
+01:11:48,080 --> 01:11:54,720
+instance. And our whole philosophy is, if cursor 
+generated something incorrect, rather than just  
+
+796
+01:11:54,720 --> 01:12:01,600
+fixing it, try to root cause it. Try to get it so 
+the next time Cursor will produce the correct code  
+
+797
+01:12:02,720 --> 01:12:08,640
+and essentially, is context engineering.
+What context did Cursor not have that would've  
+
+798
+01:12:08,640 --> 01:12:13,280
+been necessary to produce the right outcome? So 
+I think people who are trying to get productivity  
+
+799
+01:12:13,280 --> 01:12:18,800
+gains in departments like software engineering 
+need to stop waiting for the models to magically  
+
+800
+01:12:18,800 --> 01:12:23,360
+work if they want to see the gains now. And you 
+really have to create root cause analysis and  
+
+801
+01:12:23,360 --> 01:12:30,640
+systems and say, how do we go root cause every bad 
+line of code and actually give the right context  
+
+802
+01:12:30,640 --> 01:12:35,600
+and produce the right system so the models can 
+do it today? Over time that'll probably be less  
+
+803
+01:12:35,600 --> 01:12:40,640
+necessary and you'll have less context engineering 
+necessary to do it, but you really have to think  
+
+804
+01:12:40,640 --> 01:12:45,840
+of this as a system and I think people are waiting 
+for the models to just magically get better. And  
+
+805
+01:12:45,840 --> 01:12:50,800
+I'm like, well that will happen eventually, but if 
+you want the gains now you got to put in the work.  
+
+806
+01:12:50,800 --> 01:12:56,320
+That's essentially why applied AI companies exist.
+And the work is non-trivial, but you can do it.  
+
+807
+01:12:56,320 --> 01:13:01,600
+And so, for customers using platforms like Sierra, 
+yeah, AI agents aren't perfect, but we're creating  
+
+808
+01:13:01,600 --> 01:13:05,760
+a system that lets customers create a virtuous 
+cycle of improvement. If you want to go from a  
+
+809
+01:13:05,760 --> 01:13:12,640
+65% automated resolution rate to 75%, we have 
+a billion tools to let AI help you do that,  
+
+810
+01:13:12,640 --> 01:13:17,280
+identify opportunities for improvement, figure out 
+why people are frustrated, what new capabilities  
+
+811
+01:13:17,280 --> 01:13:23,920
+can we add to our agent to improve the resolution 
+rate? And you let AI put the needles at the  
+
+812
+01:13:23,920 --> 01:13:28,080
+top of the haystack on your behalf and I think 
+that's really the way to optimize these systems.
+
+813
+01:13:28,080 --> 01:13:32,320
+I've never heard of this technique of 
+improving Cursor by adding additional  
+
+814
+01:13:32,320 --> 01:13:37,440
+context. What's the actual way of doing that? 
+You build an MCP server that everything runs  
+
+815
+01:13:37,440 --> 01:13:40,960
+through or is it like you add Cursor 
+rules? What's the actual approach there?
+
+816
+01:13:40,960 --> 01:13:46,640
+I'm probably out of my depth here, but it's 
+essentially MCP because that's how you provide  
+
+817
+01:13:46,640 --> 01:13:51,680
+context to Cursor. And I think that almost always 
+when you have a model making a poor decision,  
+
+818
+01:13:51,680 --> 01:13:57,200
+if it's a good model, it's lack of context. And 
+so, you really want to find the intersection of  
+
+819
+01:13:57,200 --> 01:14:02,640
+your particular product and code base with 
+the context available to these coding agents  
+
+820
+01:14:02,640 --> 01:14:06,640
+and systems and fix it at the 
+root is the principle here.
+
+821
+01:14:06,640 --> 01:14:10,240
+Got it. That is very cool. I hadn't heard of 
+people doing that, model context protocol,  
+
+822
+01:14:10,240 --> 01:14:14,000
+makes sense. We've talked about productivity gains 
+outside TX. Just to give you a chance to share  
+
+823
+01:14:14,000 --> 01:14:18,880
+how amazing what you've built is, what are some 
+of the gains you see from people using Sierra?
+
+824
+01:14:18,880 --> 01:14:25,760
+Yeah, our customers see anywhere between 50 
+and 90% of their customer service interactions  
+
+825
+01:14:25,760 --> 01:14:31,120
+completely automated, which I think is really 
+exciting. And we serve just a really, really  
+
+826
+01:14:31,120 --> 01:14:37,600
+broad range of customers. We serve the health 
+insurance industry, the healthcare provider space,  
+
+827
+01:14:37,600 --> 01:14:43,120
+banks. You can actually refinance your home 
+using an agent. One of our customers built on  
+
+828
+01:14:43,120 --> 01:14:51,840
+our platform to the telecommunications industry, 
+DIRECTV, SiriusXM to a lot of retailers as well,  
+
+829
+01:14:51,840 --> 01:14:58,000
+which is really fun. Everyone from Wayfair to 
+clothing retailers like OluKai and Chubbies  
+
+830
+01:14:58,000 --> 01:15:02,800
+Shorts. What's really neat about it is it's 
+a pretty diverse range of use cases and it's  
+
+831
+01:15:02,800 --> 01:15:10,960
+everything from helping you sign up for... We 
+have an agent that helps with customer support in  
+
+832
+01:15:10,960 --> 01:15:19,680
+one of the big dating applications to helping you 
+upgrade or downgrade your SiriusXM plan. Actually,  
+
+833
+01:15:19,680 --> 01:15:23,440
+it's really funny, we do technical support 
+from everything from home alarm systems  
+
+834
+01:15:23,440 --> 01:15:28,320
+to sonar speakers to more recently, CAT 
+scan machines, which I think is amazing. 
+
+835
+01:15:28,320 --> 01:15:33,200
+So technicians going in and fixing the CAT 
+scan machine can chat with an AI agent to help  
+
+836
+01:15:33,200 --> 01:15:39,040
+them guide them through that process. We're the 
+leader in the space, we're trying to enable every  
+
+837
+01:15:39,040 --> 01:15:43,920
+company in the world to create their agent with 
+their brand at the top that I think will become  
+
+838
+01:15:43,920 --> 01:15:49,120
+as meaningful of a digital touch point as their 
+website or their mobile app. In the short term,  
+
+839
+01:15:49,120 --> 01:15:55,600
+it can really transform the costs of running a 
+customer service team. And what's remarkable is  
+
+840
+01:15:55,600 --> 01:16:00,640
+do so with really high customer satisfaction 
+scores. That Weight Watchers agent, I believe  
+
+841
+01:16:00,640 --> 01:16:06,640
+has a customer satisfaction score of 4.6 out 
+of five, which is pretty amazing. And what's  
+
+842
+01:16:06,640 --> 01:16:12,640
+interesting about service too, it's often people 
+having a problem. And so, when you have a clear,  
+
+843
+01:16:12,640 --> 01:16:16,400
+I don't know if you use them in the airport, I 
+think that agent has a CSAT score of 4.7 out of  
+
+844
+01:16:16,400 --> 01:16:20,000
+five people are coming in with a problem 
+and [inaudible 01:16:19] delighted. And  
+
+845
+01:16:20,000 --> 01:16:25,200
+I think that's really the opportunity here.
+And our whole vision is that we're going to  
+
+846
+01:16:25,200 --> 01:16:30,320
+move towards a world where every single one of the 
+interactions with your customers can be instant.  
+
+847
+01:16:30,320 --> 01:16:36,000
+It can be multilingual, it can be over audio, it 
+can be over chat, it can be digital, it can be  
+
+848
+01:16:36,000 --> 01:16:41,120
+over the phone and it can be very personalized. 
+And I think that's really, really exciting.  
+
+849
+01:16:41,120 --> 01:16:45,760
+And if you think about all the best moments you've 
+had with a brand, it's like that store associate  
+
+850
+01:16:45,760 --> 01:16:51,440
+who you know, and it's like for me, it's like the 
+butcher at the grocery store. I love to cook, he  
+
+851
+01:16:51,440 --> 01:16:58,800
+knows me. We talk. Can you actually produce that 
+at scale for a company with 100 million customers  
+
+852
+01:16:58,800 --> 01:17:03,520
+and can you do it in a really personal way? And I 
+think we're really on the cusp of enabling that.
+
+853
+01:17:03,520 --> 01:17:08,000
+Let me ask you one more question before we get to 
+a very exciting lighting round. There's a lot of  
+
+854
+01:17:08,960 --> 01:17:13,920
+founders struggling with go-to-market in AI with 
+their AI apps. There's so many apps these days,  
+
+855
+01:17:13,920 --> 01:17:19,600
+so many products, so many things coming 
+at buyers, at large B2B companies. Clearly  
+
+856
+01:17:19,600 --> 01:17:23,520
+you guys have figured something out. I 
+imagine your name helps, investors help,  
+
+857
+01:17:23,520 --> 01:17:30,160
+but what have you learned about just how to 
+successfully do go-to-market with an AI product,  
+
+858
+01:17:30,160 --> 01:17:35,360
+say an agent-specific product that you think would 
+be helpful for folks trying to do this better?
+
+859
+01:17:35,360 --> 01:17:41,600
+I think there's a small handful of go-to-market 
+models that have been proven to work, and I think  
+
+860
+01:17:41,600 --> 01:17:47,600
+it's important to choose the right one for the 
+product category you're going after. One category  
+
+861
+01:17:47,600 --> 01:17:54,080
+I would say is developer-led. This is somewhere 
+famously Stripe and Twilio where probably two  
+
+862
+01:17:54,080 --> 01:17:59,440
+of the original that did this exceptionally. And 
+essentially, the go-to-market motion there is to  
+
+863
+01:17:59,440 --> 01:18:06,960
+appeal to an individual engineer often within the 
+department of the CTO who have accountability and  
+
+864
+01:18:06,960 --> 01:18:16,960
+a fair amount of latitude to choose a solution. 
+This works if your product is a platform product.  
+
+865
+01:18:16,960 --> 01:18:22,000
+It doesn't work, for example, if your product 
+is trying to help a line of business because  
+
+866
+01:18:22,000 --> 01:18:27,920
+lines of business typically don't have dedicated 
+engineering teams or let alone, the latitude to  
+
+867
+01:18:27,920 --> 01:18:34,160
+just go download a new library or start using a 
+web service like that. It particularly works well  
+
+868
+01:18:34,160 --> 01:18:37,840
+if you sell to startups just because startups 
+tend to have engineering teams with quite a  
+
+869
+01:18:37,840 --> 01:18:43,920
+bit of latitude to choose services to help 
+them solve the problem given by the founder. 
+
+870
+01:18:43,920 --> 01:18:49,360
+Then there's product-led growth. It's a broad 
+term, obviously every company's product matters,  
+
+871
+01:18:49,360 --> 01:18:54,640
+but product-led growth more specifically 
+means users can sign up from the website,  
+
+872
+01:18:54,640 --> 01:18:59,280
+often get put on a trial. Often you can buy a 
+couple of seats with a credit card and those  
+
+873
+01:18:59,280 --> 01:19:04,080
+work where your user and your buyer are the 
+same person. So it works for small business  
+
+874
+01:19:04,080 --> 01:19:09,120
+software almost always because sole proprietors do 
+everything. And so you're selling small business  
+
+875
+01:19:09,120 --> 01:19:14,080
+software like Shopify in the early days and 
+there's a lot of other products like that  
+
+876
+01:19:14,080 --> 01:19:20,880
+where you're trying to sell to small merchants. 
+That's great. It doesn't work well when your  
+
+877
+01:19:20,880 --> 01:19:25,200
+buyer and the user of the software are different. 
+So I'll use the example of something like expense  
+
+878
+01:19:25,200 --> 01:19:29,120
+reporting software. The user of that software 
+is an individual employee, but the buyer is  
+
+879
+01:19:29,120 --> 01:19:34,720
+often a finance department. And so having sign 
+up and buy with your credit card doesn't make  
+
+880
+01:19:34,720 --> 01:19:39,360
+sense because the person using is not the person 
+with the credit card and it just doesn't work. 
+
+881
+01:19:39,360 --> 01:19:45,360
+And then there's direct sales. And direct sales 
+had gone, I don't want to say out of fashion,  
+
+882
+01:19:45,360 --> 01:19:50,080
+but if I think of the best direct sales companies, 
+probably there's a lot of lineage from Oracle,  
+
+883
+01:19:50,080 --> 01:19:56,400
+but you think SAP, Oracle, ServiceNow, Salesforce, 
+Adobe perhaps, and there's others as well. And  
+
+884
+01:19:56,400 --> 01:20:03,200
+these were companies that sold into large lines of 
+business in a relatively traditional sales motion.  
+
+885
+01:20:03,200 --> 01:20:08,560
+I think because product-led growth became very 
+popular. I think a lot companies use that, which  
+
+886
+01:20:08,560 --> 01:20:18,560
+is great, that motion produces great products, 
+but if PLG means that you aren't actually engaging  
+
+887
+01:20:18,560 --> 01:20:24,400
+with the buyer of your software, you're not going 
+to grow. And so, I've actually seen more recently,  
+
+888
+01:20:24,400 --> 01:20:28,320
+with a lot of AI companies, direct sales come 
+a little bit more back into fashion because I  
+
+889
+01:20:28,320 --> 01:20:35,040
+think so many of the opportunities in AI actually 
+meet that qualification where the buyer and the  
+
+890
+01:20:35,040 --> 01:20:40,480
+user are not necessarily the same person and 
+it really requires that go-to-market motion. 
+
+891
+01:20:40,480 --> 01:20:47,360
+Where I see entrepreneurs stumble is they'll 
+choose a go-to-market motion without thinking  
+
+892
+01:20:47,360 --> 01:20:54,400
+through what is the process of purchasing this 
+software? What is the process of evaluating the  
+
+893
+01:20:54,400 --> 01:20:58,880
+value of this software? And I think people 
+just need to be much more first principles  
+
+894
+01:20:58,880 --> 01:21:03,040
+about it and much more thoughtful about it. 
+And candidly, I think a lot of companies  
+
+895
+01:21:03,040 --> 01:21:08,880
+should leverage direct sales more than 
+they do. And even though because of the  
+
+896
+01:21:09,520 --> 01:21:14,400
+sometimes justified reputation of the quality of 
+products of some of these direct sales companies,  
+
+897
+01:21:14,400 --> 01:21:20,720
+it had gotten a bad name. And I think I'm thankful 
+to see it coming back in a lot of the AI market.
+
+898
+01:21:20,720 --> 01:21:24,000
+I feel like this message is something a 
+lot of founders need to hear, especially  
+
+899
+01:21:24,000 --> 01:21:28,640
+founders that aren't from a business 
+background that sales turns them off,  
+
+900
+01:21:28,640 --> 01:21:32,400
+they don't think they're going to be great at 
+sales. Just this push of this might be what you  
+
+901
+01:21:32,400 --> 01:21:36,480
+have to get really good at and this is how you win 
+and you can't just rely on product like growth.
+
+902
+01:21:36,480 --> 01:21:37,840
+Yeah.
+
+903
+01:21:37,840 --> 01:21:42,880
+Bret, is there anything else that you wanted to 
+share? Any last nugget of wisdom? Anything you  
+
+904
+01:21:42,880 --> 01:21:47,040
+want to double click on before we get 
+to our very exciting lightning round?
+
+905
+01:21:47,040 --> 01:21:48,160
+No, go ahead.
+
+906
+01:21:48,160 --> 01:21:51,840
+Okay, let's do it. Here we go. Welcome 
+to our very exciting lightning round.  
+
+907
+01:21:51,840 --> 01:21:53,680
+I've got five questions for you. Are you ready?
+
+908
+01:21:53,680 --> 01:21:54,880
+Yeah, go ahead.
+
+909
+01:21:54,880 --> 01:21:59,200
+What are two or three books that you find 
+yourself recommending most to other people?
+
+910
+01:21:59,200 --> 01:22:06,240
+I don't read a lot of nonfiction, but probably 
+if I had to pick one in the area of the topics  
+
+911
+01:22:06,240 --> 01:22:13,840
+we talked about, Competing Against Luck, which 
+was the book that produced Jobs to be Done,  
+
+912
+01:22:13,840 --> 01:22:18,160
+which is a framework I really believe in. 
+My only critique is I think most of these  
+
+913
+01:22:18,160 --> 01:22:22,000
+business books should be like an article. So 
+maybe buy the book and punch it into ChatGPT  
+
+914
+01:22:22,000 --> 01:22:27,920
+and get the summary. But buy the book 
+it's Clayton Christensen talked about it,  
+
+915
+01:22:27,920 --> 01:22:32,880
+but it's a really good framework for thinking 
+about delivering value with your products.  
+
+916
+01:22:32,880 --> 01:22:40,080
+And I think it definitely influenced me.
+Actually one book I do recommend is Endurance,  
+
+917
+01:22:40,080 --> 01:22:46,320
+which is the story of Shackleton's trip 
+to go to the South Pole. Half the book  
+
+918
+01:22:46,320 --> 01:22:52,160
+is him starving to death and eating seal meat 
+with his crew of people frozen in their boat.  
+
+919
+01:22:52,880 --> 01:22:58,480
+I've never seen a better story of grit in 
+my entire life. It's remarkable that it's a  
+
+920
+01:22:58,480 --> 01:23:03,920
+true story and if you're an entrepreneur going 
+through a hard time, read that, you'd be like,  
+
+921
+01:23:03,920 --> 01:23:08,640
+okay, it could be worse. It's a great book too. 
+It's just remarkable that it's a true story.
+
+922
+01:23:08,640 --> 01:23:10,880
+And one thing he did a great job at is setting  
+
+923
+01:23:10,880 --> 01:23:14,852
+expectations for folks that 
+joined that famous newspaper-
+
+924
+01:23:14,852 --> 01:23:16,960
+That ad. That newspaper ad. I don't know if 
+that's true. It's remarkable if that's true.
+
+925
+01:23:16,960 --> 01:23:17,840
+Oh, it might not be true.
+
+926
+01:23:17,840 --> 01:23:20,080
+I don't know. The internet. Who knows?
+
+927
+01:23:20,080 --> 01:23:24,080
+Goddam. Deep fakes even back then. Okay. Do you  
+
+928
+01:23:24,080 --> 01:23:27,120
+have a favorite recent movie or TV 
+show that you've really enjoyed?
+
+929
+01:23:27,120 --> 01:23:30,240
+I haven't gone to any new TV 
+shows recently? We just watched  
+
+930
+01:23:30,240 --> 01:23:33,600
+Inception with the kids and 
+they loved it and made me  
+
+931
+01:23:34,160 --> 01:23:40,160
+appreciate Christopher Nolan and what a cool 
+movie. It's the type of movie when you watch  
+
+932
+01:23:40,160 --> 01:23:45,840
+the film and you can a conversations for two 
+days afterwards about it. So, just a great film.
+
+933
+01:23:45,840 --> 01:23:50,160
+I saw someone using I think VO 3 to create 
+their own Inception videos where the worlds  
+
+934
+01:23:50,160 --> 01:23:53,680
+wrapping in on each other. Oh, man. 
+Okay. Do you have a favorite product  
+
+935
+01:23:53,680 --> 01:23:59,120
+that you have recently discovered that you 
+love or one you've loved for a long time?
+
+936
+01:23:59,120 --> 01:24:05,520
+I'm really a big fan of Cursor. I think 
+it's changed. I love creating software  
+
+937
+01:24:05,520 --> 01:24:10,000
+and I'm excited though for agents. I've 
+been really excited. I was very excited  
+
+938
+01:24:10,000 --> 01:24:15,440
+to see Codex from OpenAI and others. So I 
+think Cursor will be in its current form,  
+
+939
+01:24:15,440 --> 01:24:21,680
+is a transition product. And I know they're 
+working on agents as well, but I really enjoyed  
+
+940
+01:24:21,680 --> 01:24:28,880
+taking something I love and it's been my life's 
+passion and really diving into this AI tool and  
+
+941
+01:24:28,880 --> 01:24:32,880
+seeing how it transforms how I create software. 
+So I've just been spending a lot of time with  
+
+942
+01:24:32,880 --> 01:24:39,520
+the product just because it's so core to what I 
+love to do and it's a really well crafted product.
+
+943
+01:24:39,520 --> 01:24:42,320
+I think that's the first time someone's 
+actually mentioned Cursor in this answer,  
+
+944
+01:24:42,320 --> 01:24:46,240
+so might be the beginning of a trend. Michael 
+Trell was on the podcast and he actually  
+
+945
+01:24:46,240 --> 01:24:50,880
+had a very similar message as you had at the 
+beginning of this chat about the future of code,  
+
+946
+01:24:50,880 --> 01:24:55,280
+what comes after code and this concept that 
+there's going to be this additional pseudo code  
+
+947
+01:24:55,280 --> 01:25:00,320
+layer on top of code. Very aligned with 
+your thinking. Do you have a favorite  
+
+948
+01:25:00,320 --> 01:25:05,520
+life motto that you often come back 
+to and find useful in work or in life?
+
+949
+01:25:05,520 --> 01:25:11,600
+The best way to predict the future is to 
+invent it, which I think I attribute to Alan  
+
+950
+01:25:11,600 --> 01:25:19,200
+Kay of Xerox PARC. He invented a lot of the core 
+abstractions that we use in computing today. I'm  
+
+951
+01:25:21,920 --> 01:25:27,040
+an entrepreneur, it's why I love to build 
+things and it's definitely a life motto for me.
+
+952
+01:25:27,040 --> 01:25:31,280
+I feel like many people say this, I 
+feel like you've actually done this  
+
+953
+01:25:31,280 --> 01:25:37,440
+so many times. You're really living this 
+motto. Final question. We talked about you  
+
+954
+01:25:37,440 --> 01:25:43,520
+inventing the like button at FriendFeed. Were 
+there other thoughts of what they would call  
+
+955
+01:25:43,520 --> 01:25:47,600
+it other than like? Was it just obviously 
+like? Or was there other thinking there?
+
+956
+01:25:48,480 --> 01:25:58,080
+This was before emoji. So, if you read the 
+comments on FriendFeed posts, at least 70%  
+
+957
+01:25:58,080 --> 01:26:06,560
+of them are cool or wow or yeah or neat. And one 
+of the principle uses of FriendFeed was to have  
+
+958
+01:26:06,560 --> 01:26:11,280
+discussions about things. So you'd have a post 
+and then a pretty fulsome discussion underneath.  
+
+959
+01:26:11,280 --> 01:26:18,720
+And compared to Twitter and others, it was a 
+great place to have those discussions. And so,  
+
+960
+01:26:18,720 --> 01:26:24,000
+the product problem we were trying to solve is 
+get all the one word answers out so that the  
+
+961
+01:26:24,000 --> 01:26:30,880
+discussion was actually actual comments as opposed 
+to acknowledgements that you read the thing. 
+
+962
+01:26:30,880 --> 01:26:38,320
+So, the original framing was one click comment. 
+That was how we thought about it. And so,  
+
+963
+01:26:38,880 --> 01:26:46,800
+the first version that I made had a heart, and she 
+denies remembering this, but Anna Yang, now Anna  
+
+964
+01:26:46,800 --> 01:26:52,320
+Muller who has worked at the company, she hated 
+it. She said, "If I look at hearts on every post,  
+
+965
+01:26:52,320 --> 01:27:00,000
+I'm going to vomit. It's too much." And it also 
+was interesting, we were simulating, it was like  
+
+966
+01:27:00,000 --> 01:27:05,200
+an article about a tragedy or something. A heart 
+was just not the right thing. Like which actually  
+
+967
+01:27:05,200 --> 01:27:11,680
+turned out to be really hard to translate 
+was just a much more neutral sentiment,  
+
+968
+01:27:11,680 --> 01:27:17,600
+and that's why it was hard to translate because it 
+was subtle. So that's how we ended up with this. 
+
+969
+01:27:17,600 --> 01:27:21,680
+We started with a heart, and I don't know if 
+we ever heard the word love, but we definitely  
+
+970
+01:27:21,680 --> 01:27:27,200
+started off with the iconography and then like, 
+which just felt like this positive yet as neutral  
+
+971
+01:27:27,200 --> 01:27:32,800
+as possible within the realm of positive so 
+that it could work for a more complex story.  
+
+972
+01:27:32,800 --> 01:27:36,880
+But it was all because we needed a one-click 
+comment. That's where the concept came from.
+
+973
+01:27:36,880 --> 01:27:39,520
+Wow. I've never heard the story 
+before. It makes me think about  
+
+974
+01:27:39,520 --> 01:27:42,240
+LinkedIn now. They're basically trying 
+to solve that same problem. They have  
+
+975
+01:27:42,240 --> 01:27:46,229
+all these auto-reply pill tag things. I 
+don't think people like those very much.
+
+976
+01:27:46,229 --> 01:27:47,920
+Yeah. They have a lot of features.
+
+977
+01:27:48,480 --> 01:27:52,800
+So many AI features. Bret, this was incredible. 
+This was an honor. I so appreciate you coming  
+
+978
+01:27:52,800 --> 01:27:56,320
+on this podcast. Two final questions, where can 
+folks find you online if they want to reach out,  
+
+979
+01:27:56,320 --> 01:28:00,720
+maybe go see if they want to work at Sierra 
+and how can listeners be useful to you?
+
+980
+01:28:00,720 --> 01:28:03,680
+If you want an AI agent to 
+help with customer service,  
+
+981
+01:28:03,680 --> 01:28:10,640
+go to sierra.ai. If you want to 
+apply here, sierra.ai/careers where  
+
+982
+01:28:10,640 --> 01:28:15,280
+we have offices in San Francisco and New 
+York, Atlanta and London and are hiring  
+
+983
+01:28:15,280 --> 01:28:18,880
+pretty aggressively in every department. 
+So please reach out if you're interested.
+
+984
+01:28:18,880 --> 01:28:22,000
+And how can listeners be useful to you? 
+Is it tryout Sierra, anything else there?
+
+985
+01:28:22,000 --> 01:28:25,360
+Yeah, tryout Sierra. I'm a single issue voter.
+
+986
+01:28:25,360 --> 01:28:26,640
+[inaudible 01:28:26] message. I love it.
+
+987
+01:28:26,640 --> 01:28:27,280
+Yeah.
+
+988
+01:28:27,280 --> 01:28:29,120
+Bret, thank you so much for being here.
+
+989
+01:28:29,120 --> 01:28:30,560
+Yeah, thanks for having me.
+
+990
+01:28:30,560 --> 01:28:33,440
+Bye, everyone.
+Thank you so much  
+
+991
+01:28:33,440 --> 01:28:37,840
+for listening. If you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+992
+01:28:37,840 --> 01:28:42,640
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating  
+
+993
+01:28:42,640 --> 01:28:47,600
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+994
+01:28:47,600 --> 01:28:55,120
+past episodes or learn more about the show at 
+Lennyspodcast.com. See you in the next episode.
+

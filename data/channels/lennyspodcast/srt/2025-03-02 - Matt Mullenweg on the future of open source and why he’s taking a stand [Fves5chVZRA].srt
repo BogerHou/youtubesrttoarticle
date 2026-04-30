@@ -1,0 +1,2095 @@
+1
+00:00:00,040 --> 00:00:11,120
+if you're really open and open source sometimes you have to stand up the bullies and you have to fight to protect your open source ideals please put your hands together for Matt Mullen Matt Mullen wig has been making some questionable moves recently there's a
+
+2
+00:00:11,120 --> 00:00:22,039
+lot going on with Matt and WordPress these days 20 plus years of good sentiment burned in days you were like a 100% beloved hero of Open Source and internet and now you're like in this a
+
+3
+00:00:22,039 --> 00:00:33,680
+lot of people don't like you if you were kind of inside baseball with WordPress there's actually a lot of people who have been unhappy with me over the years previously like 1% of the world thought I was terrible and now I feel like it's
+
+4
+00:00:33,680 --> 00:00:44,000
+up to like four or 5% people that don't know what the hell's going on well it's just like the highle overview what's going on there's a company called WP engine by 2018 they got bought out by a private Equity Firm called Silver Lake
+
+5
+00:00:44,000 --> 00:00:54,480
+you know since 2019 WP engine has kind of changed a bit they started using the trademark they're offering something called WordPress I refer to it as like a a bastardized hacked up version of it
+
+6
+00:00:54,480 --> 00:01:04,879
+it's deluding our brand why do you think so many people are looking at you as the bad guy a li get around the world seven times before truth has time to you know get out of
+
+7
+00:01:06,080 --> 00:01:16,280
+bed today my guest is Matt mullenweg Matt is the co-creator of Wordpress which Powers 40% of websites on the internet today including white house.gov
+
+8
+00:01:16,280 --> 00:01:27,439
+he's also the CEO of automatic which has valued at over7 billion and owns products like wordpress.com Tumblr woo Commerce gravitar and pocketcasts there
+
+9
+00:01:27,439 --> 00:01:39,040
+is a lot of drama these days around Matt and WordPress and within the open source community so I thought I'd have Matton to address many of the criticisms headon that he hasn't addressed in other places and also just get the full story and
+
+10
+00:01:39,040 --> 00:01:50,360
+what's going on we also chat about what incepted him to spend over half his life at this point on open source and creating WordPress also why products like llama are what he calls fake open
+
+11
+00:01:50,360 --> 00:02:01,159
+source and his perspective on AI and open source also how AI is actually trained on open source code and what that means for the future and his approach for deciding what companies to
+
+12
+00:02:01,159 --> 00:02:12,239
+acquire within automatic if you enjoy this episode don't forget to subscribe and follow it in your favorite podcasting app or YouTube also if you become an annual subscriber of my newsletter you now get a year free of
+
+13
+00:02:12,239 --> 00:02:19,640
+notion and superhuman and perplexity Pro and linear and granola check it out at Lenny newsletter.
+
+14
+00:02:19,640 --> 00:02:30,040
+with that I bring you Matt mullenweg this episode is brought to you by work OS if you're building a Sasa at some point your customers will start
+
+15
+00:02:30,040 --> 00:02:39,599
+asking for Enterprise features like SLE authentication and skim provisioning that's where work OS comes in making it fast and painless to add Enterprise
+
+16
+00:02:39,599 --> 00:02:50,560
+features to your app their apis are easy to understand so that you can ship quickly and get back to building other features today hundreds of companies are already powered by work OS including
+
+17
+00:02:50,560 --> 00:03:01,239
+ones you probably know like versel webflow and Loom work OS also recently acquired warrant the fine grain authorization service Warren's product
+
+18
+00:03:01,239 --> 00:03:12,360
+is based on a groundbreaking authorization system called Zanzibar which was originally designed for Google to power Google Docs and YouTube this enables fast authorization checks at
+
+19
+00:03:12,360 --> 00:03:22,080
+enormous scale while maintaining a flexible model that can be adapted to even the most complex use cases if you're currently looking to build role-based access control or other
+
+20
+00:03:22,080 --> 00:03:31,480
+Enterprise features like single sign on skim or user management you should consider work OS it's a dropin replacement for zero and supports up to
+
+21
+00:03:31,480 --> 00:03:43,360
+1 million monthly active users for free check it out at work os.com to learn more that's [Music] work.com this episode is brought to you
+
+22
+00:03:43,360 --> 00:03:54,720
+by vanta and I am very excited to have Christina Copo CEO and co-founder vant joining me for this very short conversation great to be here big fan of the podcast and the newsletter vanta is
+
+23
+00:03:54,720 --> 00:04:05,120
+a longtime sponsor of the show but for some of our newer listeners what does vant do and and who is it for sure so we started V in 2018 focused on Founders
+
+24
+00:04:05,120 --> 00:04:16,440
+helping them start to build out their Security Programs and get credit for all of that hard security work with compliance certifications like sock 2 or ISO 2701 today we currently help over
+
+25
+00:04:16,440 --> 00:04:28,040
+9,000 companies including some startup household names like at lassan ramp and Lang chain start and scale their Security Programs and ultimately build trust by automating compliance
+
+26
+00:04:28,040 --> 00:04:39,240
+centralizing GRC and accelerating Security reviews that is awesome I know from experience that these things take a lot of time and a lot of resources and nobody wants to spend time doing this
+
+27
+00:04:39,240 --> 00:04:51,080
+that is very much our experience both before the company and to some extent during it but the idea is with automation with AI with software we are helping customers build trust with prospects and customers in an efficient
+
+28
+00:04:51,080 --> 00:05:02,000
+way and you know our joke we started this compliance company so you don't have to we appreciate you for doing that and you have a special discount for listeners they can get a $1,000 off vanta
+
+29
+00:05:02,000 --> 00:05:14,360
+atv.com Lenny that's v.com Lenny for $1,000 off vanta thanks for that Christina thank you Matt
+
+30
+00:05:14,360 --> 00:05:25,880
+thank you so much for being here welcome to the podcast thanks it's a you know big fan uh longtime listener so happy to be on I'm a longtime fan I've been wanting to get you on this podcast for so long and this is such an
+
+31
+00:05:25,880 --> 00:05:35,319
+interesting time to be chatting with you you're there's a lot going on with Matt and WordPress these days so it's a really interesting uh it's almost good that we waited a little bit to talk so we're going to get into a lot of that
+
+32
+00:05:35,319 --> 00:05:46,880
+stuff but I want to start with just uh what is it that you do Matt what are all the things you're involved in give people a sense of just the things you're working on so first uh when I was 19 I
+
+33
+00:05:46,880 --> 00:05:58,120
+co-founded uh open source project called WordPress uh with Mike little and uh we uh started just blogging software then became H sort of a full sight thing and
+
+34
+00:05:58,120 --> 00:06:09,560
+then became like a a platform that really tons of stuff is built on and now it's kind of transitioning into like this cool WM can be embedded anywhere run locally or make mobile apps it's
+
+35
+00:06:09,560 --> 00:06:20,080
+like really interesting seeing WordPress use as an engine for powering like things I would say don't even look like a website which is uh kind of wild to me but that's kind of the beauty of Open Source people do things with that you
+
+36
+00:06:20,080 --> 00:06:29,960
+don't expect end up dropping out of college moving to San Francisco and then um worked at CET for a year as a product manager actually that's how they are I want to talk about that but go on and
+
+37
+00:06:29,960 --> 00:06:41,639
+then um you had this Vision where you know instead of like downloading the software and setting up a database and everything we could made like a SAS version of Wordpress i p should have seen it they didn't want to do it so I was like okay I got to do this so I left
+
+38
+00:06:41,639 --> 00:06:52,440
+and started a company called automatic the idea was to create um essentially like complement the core WordPress software with some Commercial Services things that run in the cloud like a
+
+39
+00:06:52,440 --> 00:07:03,720
+kisman anti-spam which is our sort of machine learning AI I guess you call it AI now but like anti- spam system or U our jetpack which is like iCloud for WordPress you know does the backups in the real time sync and everything like
+
+40
+00:07:03,720 --> 00:07:14,919
+that so that was 19 years ago so uh that's now grown to be um you know over, 1700 people in actually 90
+
+41
+00:07:14,919 --> 00:07:25,000
+countries so we've actually been fully distributed and remote and asynchronous from the start which I think is one of our superpowers I actually wasn't the CEO in the beginning but uh in 2014 so I guess
+
+42
+00:07:25,000 --> 00:07:34,280
+11 years ago I became CEO uh the original CEO was uh well iess I guess I was in the very beginning but then I hired Tony Schneider to be CE probably four or five months
+
+43
+00:07:34,280 --> 00:07:43,840
+in and um yeah so that is a very full-time thing and automatic does a lot of products this wordpress.com woocommerce which is open source Shopify
+
+44
+00:07:43,840 --> 00:07:54,120
+which is now over half our revenue and then we have some really cool apps so like beeper uh day one simple note pocketcast uh we're trying to fill up
+
+45
+00:07:54,120 --> 00:08:06,000
+your home screen with open web open source things that uh are very privacy and user Centric so that you know running that company is is definitely like a full-time job uh I
+
+46
+00:08:06,000 --> 00:08:17,479
+still run wordpress.org and the WordPress project so I'm the lead developer there and so sort of manage all those releases and the community and the you know the directories and all the sort of things we do on wordpress.org
+
+47
+00:08:17,479 --> 00:08:28,879
+this cool thing called openverse we took over from Creative Commons which is like a a way you can find sort of open licensed uh images and audio and video so basically if you notice I through put
+
+48
+00:08:28,879 --> 00:08:39,159
+through all these it's open source on like the nights and weekends or like side a few hours a week I do some Angel Investing so I've done over 100 Angel Investments through an entity called
+
+49
+00:08:39,159 --> 00:08:50,200
+Audrey Capital which is sort of the if anything's in the sort of Wordpress space I invest in it through automatic but if anything's like a little more further a field um do through auu
+
+50
+00:08:50,200 --> 00:09:00,720
+capital and I've done uh some really exciting Investments there everything from sort of main Brands like stripe and SpaceX but also like uh it was in the seat of calm or um a lot of home
+
+51
+00:09:00,720 --> 00:09:12,079
+automation stuff like ring August smart things um yeah just check out Audrey doco it's got some fun stuff in there daylight computer which is one I'm very excited about right now and I guess
+
+52
+00:09:12,079 --> 00:09:23,440
+finally I I love San Francisco so uh you know did I have a co-owner of a cool grungy jazz club at North Beach called keys uh with Simon row and uh so if you
+
+53
+00:09:23,440 --> 00:09:35,240
+you Wednesday through Saturday night you want to see some awesome live jazs uh check out Keys wow okay he said too much I get it now uh uh jazz club I was not aware of I I got to check this out it's
+
+54
+00:09:35,240 --> 00:09:46,560
+called keys yeah Keys Jaz be okay cool it's uh yeah over on um Broadway in Columbus kind of there amazing that was new that was news to me going back to automatic I think people don't get the
+
+55
+00:09:46,560 --> 00:09:58,079
+scale of this thing so just to mirror back a few things and even add to what you said 1,700 people work there 90 different countries um also you didn't show this stat something like 43% of the
+
+56
+00:09:58,079 --> 00:10:10,000
+internet of Internet webs ites are built on WordPress run on WordPress yeah so when we started a lot of websites were built on custom cms's and there's a lot of fragmentation in the space but now
+
+57
+00:10:10,000 --> 00:10:20,360
+WordPress has grown to be yeah over 40% of all websites in the world which is 10x to number two which right now is Shopify right they're like at 4% I was I was looking at that list they're around
+
+58
+00:10:20,360 --> 00:10:30,720
+4% yeah that's unreal it used to be open source was the top three uh unfortunately ju and drup jua and Drupal have fallen behind and so now uh like uh
+
+59
+00:10:30,720 --> 00:10:42,440
+Shopify Wick Squarespace are are the top ones but WordPress is still you know because we have this flywheel of Open Source Community its movement um you know it kind of uh has this you know
+
+60
+00:10:42,440 --> 00:10:53,480
+like any open source like Linux or Apache or Wikipedia it uh has some positive flywheel effects when it takes off awesome okay and then there's a few other things you didn't mention I want to get to this later but I'll just mention now you guys own Tumblr you
+
+61
+00:10:53,480 --> 00:11:04,920
+bought Tumblr which I don't think a lot of people necessarily know sorry I forgot to mention that tum we're going to get into that yeah yeah running a social network is definitely the hardest thing I've ever attempted I thought we knew what we were
+
+62
+00:11:04,920 --> 00:11:16,519
+doing because you know WordPress you know Ran So Much the web we deal I thought every content moderation thing you could ever deal with but social networks are a whole another uh whole another ball game okay uh couple more
+
+63
+00:11:16,519 --> 00:11:27,160
+fun facts before we get into some other stuff I want to chat about fun fact number one is you super involved in the bay lights project I didn't know this for people that don't know what the baylight if you're in San Francisco you
+
+64
+00:11:27,160 --> 00:11:37,480
+definitely know what the Bight project and I'm sure you love it uh for people that don't know what this is about what is this project and how how have you been involved why why why Have You Been instrumental into making this a thing
+
+65
+00:11:37,480 --> 00:11:47,720
+baylights uh you know there's two famous bridges in um in San Francisco the Golden Gate Bridge which kind of the iconic one there's actually the Bay Bridge which is the Workhorse of San Francisco it has like the most some of
+
+66
+00:11:47,720 --> 00:11:57,480
+the busiest bridges in the country and it's really beautiful from like an engineering point of view um and so kind of a a vision between Ben Davis and
+
+67
+00:11:57,480 --> 00:12:08,079
+artist Leo villal who's amazing light artist actually how to started berning man uh was to put gosh I forget the number I think 18,000 LEDs on the S of
+
+68
+00:12:08,079 --> 00:12:17,720
+the bridge like on all the cables and um create this really beautiful gentle kind of like uh algorithmic uh light piece Light art
+
+69
+00:12:17,720 --> 00:12:28,880
+piece and um the uh yeah Ben Davis was was dating an artist friend of mine and we were over and having drink some in my patio we were looking at the Bay Bridge and I had this kind of thing where like
+
+70
+00:12:28,880 --> 00:12:38,760
+there's lights at the top of the bra bridge I was like oh wouldn't it be cool if those lights were like Christmas lights and they could do patterns or something you know it's the lights to keep planes from hitting it I was like oh you could like program that he was
+
+71
+00:12:38,760 --> 00:12:49,839
+like yeah it's almost like the The Social Network thing where like a million's cool but a billion would be really cool he was like you know that would be cool but what if we put the whole side of it and uh so that uh I was
+
+72
+00:12:49,839 --> 00:13:00,240
+like oh cool and uh sort of made an angel investment and that um that thing they hadn't raised anything or had there was I don't even think an entity at that point I was like you know to get you
+
+73
+00:13:00,240 --> 00:13:10,880
+started I forget what it was 100 150k so I gave him that first bit and then it kind of blossom into a thing and then uh sort of fast forward remember the exact
+
+74
+00:13:10,880 --> 00:13:21,639
+timeline but they were kind of at a the final bit of fundraise and they they weren't able to close that last bit and I actually mortgaged my condo and uh donated the last million million and a
+
+75
+00:13:21,639 --> 00:13:32,440
+half to uh to finish out that project the baylights were online for 10 years uh the technology degraded and so so like the the environment is very harsh so actually we just completed a fund
+
+76
+00:13:32,440 --> 00:13:44,360
+raise and are reinstalling the baylights they're calling it baylights 360 so now it'll be both sides of the bridge it'll be visible from also Oakland and the Treasure Island because the first version the city was very worried about
+
+77
+00:13:44,360 --> 00:13:54,600
+the like driver seeing the lights and it might distract them so we had to angle them that you could only see it from San Francisco which uh was a compromise we didn't love you know because like you know we love the East Bay and everything
+
+78
+00:13:54,600 --> 00:14:05,800
+else like that too so new version is uh coming online hopefully this year in the fall and uh and also that that turned into a nonprofit called illuminate which I'm on the board of run by Ben Davis who
+
+79
+00:14:05,800 --> 00:14:17,120
+I mentioned previously that does cool public art stuff around the city so they're responsible for the you know the grace lights um all the JFK Boulevard stuff where that's been has the murals and like the the beer garden and all the
+
+80
+00:14:17,120 --> 00:14:28,160
+chairs that's all illuminate so they do fun their their thing is radical public art so the thing is it's like art that needs to be free and accessible and I think that's so important for San Francisco like we have great
+
+81
+00:14:28,160 --> 00:14:40,000
+institutions you of Moma the Opera Etc that have huge budgets like 100 million a year and illuminate for you know L one tenth of that um it's created something that millions of people can enjoy you
+
+82
+00:14:40,000 --> 00:14:51,480
+know and I like to think that uh anyone along there barcadero you know you might be going through a tough time obviously we have people who are struggling like mental health and homelessness and
+
+83
+00:14:51,480 --> 00:15:02,240
+everything like that but like maybe seeing a little bit of art can help raise your soul a little bit and that's how I think about philanthropy as well like you need to work on the base issues you know the fundamentals at the bottom
+
+84
+00:15:02,240 --> 00:15:14,040
+of as those highly gr needs and then you also have to work on the things that like uh raise your soul a little bit so Arts so I like that barbell approach to philantropy Elon has a great quote along
+
+85
+00:15:14,040 --> 00:15:25,839
+those lines you can't just work on solving problems all day you need something inspiring to think about and to work towards I first of all thank you for doing this it's like if you live in SF you're like this makes the city better just having this around I didn't
+
+86
+00:15:25,839 --> 00:15:34,680
+realize you were involved in like helping come up with the idea itself I knew that you did the mortgage at your house to make it possible I can't take any credit for the idea just it was
+
+87
+00:15:34,680 --> 00:15:45,759
+exposed to I had a an adjacent idea and they had a way cooler one with a real artist and everything like that so I was just happy to be a it's like being an angel investor you know like you tell me
+
+88
+00:15:45,759 --> 00:15:56,079
+you can support the entrepreneurs and the people who uh actually really do it yeah okay and the other funny thing you said is about they were worried about the angle of the lights distracting people what's funny is when I drove drive across the bridge you can only see
+
+89
+00:15:56,079 --> 00:16:06,759
+it when you're driving towards San Francisco looking backwards so I'm like looking in my rearview mirror and the mirror turning around to look at him and that's it feels more dangerous than the lights shining in in my face you know
+
+90
+00:16:06,759 --> 00:16:18,720
+they call it impossible works of art there were like 13 agencies that had a sign off they were worried the lights would distract birds or SEALS or environmental reviews it was really uh a
+
+91
+00:16:18,720 --> 00:16:29,720
+uh a lot of like public bureaucrats and everyone had a like to make that happen there was like 20 places where someone could have said no and it never would happen so it's very inspiring to see the
+
+92
+00:16:29,720 --> 00:16:40,680
+city come together and also like as San Francisco I feel like it's entering new chapter right now like going from like the Doom Loop to the boom Loop yeah um I'm a big believer in the city so much innovation has come here from like food
+
+93
+00:16:40,680 --> 00:16:50,880
+you know like the burrito fortune cookies all these sorts of things from San Francisco to like obviously all the tech Innovation that we're all familiar with uh it's kind of the city of the future and I don't know
+
+94
+00:16:50,880 --> 00:17:02,839
+what it is in the water you know from like the 60s till now like cultural Innovations things that happened and influen the whole world Bernie man you know great dead Etc like that all starts in San Francisco so it's exciting to be
+
+95
+00:17:02,839 --> 00:17:13,880
+here I a so back as they say on Twitter okay someone very close to you told me that you're uh an excellent rapper I'm not going to ask you to rap but if you ever want to answer any
+
+96
+00:17:13,880 --> 00:17:23,839
+questions in rap form feel free oh man that that would be fun I've I've dreamed about being able to do a Q&A and rhyme but uh I don't think I'm
+
+97
+00:17:23,839 --> 00:17:34,799
+that talented yet just planting the seed I'm planting the seed Okay so uh I want to get into the all the drama that you're in Sr in right now but I want to First lay the foundation of how you got
+
+98
+00:17:34,799 --> 00:17:45,120
+into this and where this all came from so let's talk about just the origin story of you and open source you've been more than half your life you've been working on open source you've been working on WordPress specifically work
+
+99
+00:17:45,120 --> 00:17:55,200
+PR us is such a core uh Community within the open source Community was kind of the the origin story of you becoming obsessed and I don't know open source
+
+100
+00:17:55,200 --> 00:18:04,240
+pilled I was a broke kid in Houston Texas and um my passions were uh Jazz you know
+
+101
+00:18:04,240 --> 00:18:15,360
+uh Houston has actually amazing uh music programs in the public schools and so I was very fortunate to go to some of the best s of Arts programs including my high school called the high school for
+
+102
+00:18:15,360 --> 00:18:26,520
+performing Visual Arts where um Beyonce went Robert Glasper a lot of like of amazing fils went there and um so music was a big part of my life and uh and
+
+103
+00:18:26,520 --> 00:18:36,280
+actually economics so I had this fun teacher Scott Roman who um created participated in our school in the FED Federal Reserve challenge which was uh
+
+104
+00:18:36,280 --> 00:18:46,000
+run by you know the the Federal Reserve that sets the interest rates and you know backs the national banking system and everything like that has this competition for high school students um it ended up being the first academic
+
+105
+00:18:46,000 --> 00:18:57,880
+competition this art school ever won and um yeah first year we kind of didn't get that far second year we went all the way to Nationals so I got to meet Alan Greenspan Ben beraki was our judge um
+
+106
+00:18:57,880 --> 00:19:09,520
+you went to DC so that was uh very very exciting and so you know being exposed to like also having great liberal arts education you know the ideas of you know Fredick Hayek AGN Smith Alexander
+
+107
+00:19:09,520 --> 00:19:21,440
+Hamilton Ben Franklin um thus cities you know all these sorts of things that philosophy really influenced me and um you combined that with that you know music lessons were expensive so we couldn't really afford them so I I would
+
+108
+00:19:21,440 --> 00:19:33,400
+barter and trade i' build websites for local musicians and change for lessons and um so these websites I I would start to to put software on like forums or you know like different things and that kind
+
+109
+00:19:33,400 --> 00:19:45,240
+of supposed me to open source so you know my father was also a you know engineer he worked for oil companies and things but his world was all Microsoft was all proprietary and I was kind of grew up in you know early days of the
+
+110
+00:19:45,240 --> 00:19:54,600
+internet so it was uh Slash dots and you know Jeffrey zeldman talking about web standards and all these things like are really kind of the the social Maloo and
+
+111
+00:19:54,600 --> 00:20:05,400
+Ze guys that I grew up in so I um you know combining all this philosophy i'studied uh thought felt that like um open source was actually the most important idea of Our
+
+112
+00:20:05,400 --> 00:20:17,200
+Generation so if like if the founding fathers were around today I think they would be open source Advocates uh as you think about it as more and more of lives are influenced and actually controlled
+
+113
+00:20:17,200 --> 00:20:28,760
+by the software we use um if we don't have fundamental freedoms attached to that software we're not truly free so you know uh the WordPress is under
+
+114
+00:20:28,760 --> 00:20:40,240
+license called the GPL which has Four Freedoms uh the freedom to use the software for any purpose so you can use it for anything whether I agree with you or not the terms of service is you to do whatever you want with it uh the freedom
+
+115
+00:20:40,240 --> 00:20:51,799
+to see how the software works you know open up the hood see how it works see every line of code you can audit it you freedom to change it is the third freedom and then finally the freedom to redistribute those changes so you can
+
+116
+00:20:51,799 --> 00:21:02,760
+share them and the GPL has a fun little hack where if you share them you have to provide those same freedoms to who you share it with so it's What's called the viral open source license as opposed to the MIT license or some of the others
+
+117
+00:21:02,760 --> 00:21:12,679
+that aren't so um yeah I just kind of decided that this was what I was going to devote my life to and uh so that became getting involved with some early open source projects WordPress was
+
+118
+00:21:12,679 --> 00:21:24,080
+actually a fork of uh abandoned open source project called B2 so the codebase actually started with something that was already out there that I was a user and contributor to kind of volunteer on the Forum was in contributed code and then
+
+119
+00:21:24,080 --> 00:21:34,080
+when I was abandoned um and myself and Mike sort of were one of like four five different Forks that started that kind of picked it up and tried to continue it for for uh for our own use and then
+
+120
+00:21:34,080 --> 00:21:44,720
+later for a larger Community it feels like a lot of people are coming around to exactly your world view in say I was just watching a video of Jack dorsy talking about how we're just controlled
+
+121
+00:21:44,720 --> 00:21:55,039
+by algorithms so we don't know what's how we don't know how they work how and we don't we're not in control of our lives have you seen that video no but I actually love that also some people who
+
+122
+00:21:55,039 --> 00:22:06,919
+maybe made their made their first billion or whatever from software um then come back and it's so cool to see folks like Mark andreon or Bill Gurley you know be huge advocates
+
+123
+00:22:06,919 --> 00:22:18,840
+for open source um actually remember one of my early meetings with uh uh Andre or Mark andreon um I didn't realize that the time I thought it was the Tony Schneider and I were sort of fundraising
+
+124
+00:22:18,840 --> 00:22:28,159
+and uh Mark really like grilled us he's like how can you build a business on open source uh how can you be like remote and distributed like look around
+
+125
+00:22:28,159 --> 00:22:37,640
+Sil Valley Google Microsoft Oracle Sun every every great company has had an office like how are you going to build something that can change the internet with you know people all around the
+
+126
+00:22:37,640 --> 00:22:47,679
+world and and just have this long like hourlong debate and I was like we walked out that I was like wow that was the worst meeting ever they just hate everything we're
+
+127
+00:22:47,679 --> 00:22:57,080
+doing and then uh you the next day they were like Hey we're interested I was like what happened I I didn't realize that he had kind of this like idea where like he wanted to attack the ideas and
+
+128
+00:22:57,080 --> 00:23:08,080
+see how we defended it to sort of uh was how they he battle tested things I guess kind of like a Microsoft culture or whatever where you like really like Grill the idea I just wasn't familiar
+
+129
+00:23:08,080 --> 00:23:17,520
+with that but um it's so cool now that some of these folks that I've learned so much from are such b advocates for open source yeah it's so interesting I was just I just had the community notes team
+
+130
+00:23:17,520 --> 00:23:29,080
+on the podcast and uh that's an amazing example of community of sorry of Open Source meta is adopting it from Twitter SLX speaking of Open Source One of the interesting maybe most common these
+
+131
+00:23:29,080 --> 00:23:40,320
+people here about open source these days is is AI and AI models and there's a couple areas here one is you wrote this really interesting uh post where you talk about how meta talks about llama as
+
+132
+00:23:40,320 --> 00:23:49,880
+an open source project but it's you called it a false false profit uh what is what is it about llama that isn't open source what are people missing when they see llama and they're like oh met
+
+133
+00:23:49,880 --> 00:24:01,320
+is amazing open sourcing everything LL you can obviously download and run locally and all these sorts of things right you have to use their SAS service however there's a clause in it that says if you're above a
+
+134
+00:24:01,320 --> 00:24:11,200
+certain threshold of monthly active users I forget what it is like it's big it's like 750 million so it's pretty high um you need a license from them and
+
+135
+00:24:11,200 --> 00:24:22,400
+so that does not give you the freedom to use a software for any purpose right if at some point you have to ask for permission you know you're kind of at the whims of this company um who you
+
+136
+00:24:22,400 --> 00:24:32,440
+might be aligned with or you might be an enemy with you know and also how do you define that so for example like our WordPress like our products don't have
+
+137
+00:24:32,440 --> 00:24:42,880
+750 million on active registered users but we reach billions of people per month in terms of visitors so is that a you know is that Define so there's just
+
+138
+00:24:42,880 --> 00:24:54,200
+ambiguity there so I I still think what they've done is amazing and I like that they're releasing it um I was very confused for why they insist on calling it open source because they actually
+
+139
+00:24:54,200 --> 00:25:05,080
+meta has been a huge open source contributor react you know they've done incredible improvements the PHP engine which we benefit from a lot so like they're actually a big open source contributor I think Mark Zuckerberg
+
+140
+00:25:05,080 --> 00:25:15,919
+really understands and loves open source too my best guess now I don't have any inside information here but there's I think they're calling it open source because there's some European regulation
+
+141
+00:25:15,919 --> 00:25:27,320
+about open source versus proprietary AI models so I think they're I think it might be like a weird regulatory thing because clearly they understand this is an open source so when I wrote the blog post I was just kind of confused and
+
+142
+00:25:27,320 --> 00:25:38,440
+thought like oh maybe if I like you know get this message out there they'll change and um and then when they didn't I was like oh there must be something else going on I think it might be this regulatory thing we were actually a big
+
+143
+00:25:38,440 --> 00:25:48,799
+part of um actually many many years ago I think it was react that they were doing something with the licensing or like a patent restriction on and uh the WordPress Community actually got meta to
+
+144
+00:25:48,799 --> 00:25:58,440
+change that and reverse uh something they were doing to lock it down so um yeah uh I I consider
+
+145
+00:25:58,440 --> 00:26:09,880
+my role as an open source Advocate to actually be my my primary thing you know and um it's it's very much my my life mission you know I hope to work on WordPress the rest of my life but also
+
+146
+00:26:09,880 --> 00:26:19,880
+like just open source and journal so I also like you know support group and drum like anything else that's open source like I'm I'm going to be a supporter of because think when people
+
+147
+00:26:19,880 --> 00:26:30,840
+choose that versus proi software we're increasing the freedom and liberty in the world and so I I would love that every sort of like it's incumbent on us that make open source to make a better
+
+148
+00:26:30,840 --> 00:26:40,720
+user experience to make a better product so that people choose it and then you know the world becomes more free not less free it also feels it's important to you to uh I don't know open source
+
+149
+00:26:40,720 --> 00:26:52,200
+washing like avoid people using the term when it's not true and it's interesting in this case that like the thing that makes it not truly open source is the limit there's a limit where you can no longer use it the way you want is that
+
+150
+00:26:52,200 --> 00:27:02,919
+the issue yeah um so that there's a and it's actually like an open source um you know OSI there's like a formal definition for like what's make what
+
+151
+00:27:02,919 --> 00:27:13,120
+makes an open source license and there's actually many dozens of Open Source licenses and um sort of public domain licenses and other things um so uh it's also their stance that this is not an
+
+152
+00:27:13,120 --> 00:27:23,840
+open source license something else that uh I think is really interesting when it comes to Ai and open source you wrote about this and it blew my mind such a good point that the code that these
+
+153
+00:27:23,840 --> 00:27:34,080
+models were trained on was open source code because that's all they have access to they don't have like Windows code they don't have Shopify code and uh what
+
+154
+00:27:34,080 --> 00:27:45,799
+a cool uh I don't know another success story slash I don't know I guess how do you feel about that that all these AI models are trained on code you wrad and in open source Community that's beautiful it's one of the safest things to train on right because the license of
+
+155
+00:27:45,799 --> 00:27:55,360
+Open Source like very explicitly allows that you know I also like to think about you know I have some window where my creative output is useful to
+
+156
+00:27:55,360 --> 00:28:05,320
+society and if you fast forward like 50 or 100 years I do believe that the utility for prioritary software eventually approaches zero so like when
+
+157
+00:28:05,320 --> 00:28:17,159
+we're sending people to Mars the operating system of the Rockets and the devices and everything like that is not going to be built on the Windows NT kernel as amazing feed of engineering
+
+158
+00:28:17,159 --> 00:28:28,840
+that like that proprietary kernel is it's G to be built on an open source kernel you know Linux or BSD or something like that and so like if you want to be be part of something that sort of becomes the fabric of humanities
+
+159
+00:28:28,840 --> 00:28:39,880
+Foundation like things that um allows a cambering explosion of things built on top of it a Renaissance of ideas you want to be involved with open source and so I I really hope that more and more
+
+160
+00:28:39,880 --> 00:28:51,120
+people I'm a little bit of an evangelist here you know I'm a miss missionary where I I really want to encourage more and more people to consider at least making part of their time even have just a few hours a week you know contributing
+
+161
+00:28:51,120 --> 00:29:00,080
+to open source because could be part of something that has a huge impact and it's fun especially if you're like a younger developer designer or PM or
+
+162
+00:29:00,080 --> 00:29:11,279
+whatever like um you can't walk up to Facebook and change their homepage or say I'd like to change this future but you could come to an open source project you know some of which
+
+163
+00:29:11,279 --> 00:29:22,760
+have you know hundreds of millions of users you could go to Wordpress or you know uh gosh Bitcoin or you know there's all these things are open source uh uh
+
+164
+00:29:22,760 --> 00:29:33,039
+chromium Firefox like and you could actually change you know a feature or or project management things or or change the design or improve it and that's I think really really special and uh sort
+
+165
+00:29:33,039 --> 00:29:43,279
+of the thrill for me of of like knowing that code I wrote is now executing you know millions of times per second in millions of servers around the
+
+166
+00:29:43,279 --> 00:29:53,960
+world that kind of thrill that high as like kind of when I first had my first open source contribution like such a thrill and I've been sort of chasing that and enjoying that ever since say
+
+167
+00:29:53,960 --> 00:30:04,799
+someone wants to actually do this uh where do they go where the how do they do this do they just like pick a project go to wordpress.org and like here's how you contribute what's like the next step there yeah pick project that you use or
+
+168
+00:30:04,799 --> 00:30:10,679
+like I mean that's obviously a nice one um for WordPress we have this uh it's called make.
+
+169
+00:30:10,679 --> 00:30:22,039
+wordpress.org now know it's where we make WordPress and there's you know different groups there's accessibility there's design there's the core code there's
+
+170
+00:30:22,039 --> 00:30:32,600
+there's plugins there's all sorts of ways so really whatever your talent is there's people who translate there's people who do support there's people who write down documentation there is people who organize events you know that so
+
+171
+00:30:32,600 --> 00:30:43,600
+whatever you feel like your your talent in the world is either that you have or that you want to cultivate you know there's so many I mean I learned how to code while building WordPress basically
+
+172
+00:30:43,600 --> 00:30:53,840
+I didn't have as too much formal training there so uh it's a great way to to up level your skills as well and work with some of the best developers in others in the world this also made me
+
+173
+00:30:53,840 --> 00:31:03,840
+think about AI agents are coming around Devon all these AI driven B uh coding agents uh you have a prediction when most of the code contributed to the open
+
+174
+00:31:03,840 --> 00:31:15,080
+source projects will be Devon and AI agent such type projects I think Google talked about 25% of their code or characters committed are are now sort of
+
+175
+00:31:15,080 --> 00:31:24,200
+AI assisted um and they're probably on the bleeding edge um I don't know how much of wordpress's code right now is AI
+
+176
+00:31:24,200 --> 00:31:35,480
+assisted or or something like that um but I think over the next 5 years it definitely approaches maybe a majority and um I'm actually very very
+
+177
+00:31:35,480 --> 00:31:46,639
+excited so you know one of the big challenges that we have as a very open platform is we have this open plugin and theme architecture so the 60,000 plugins and themes and the way WordPress works
+
+178
+00:31:46,639 --> 00:31:58,320
+is these plugins themes can modify every single part of the code so you can really customize everything however many of these plugins and themes don't have the same sort of robust security and review process that core has so that's
+
+179
+00:31:58,320 --> 00:32:08,399
+where when you hear about security issues with WordPress it's very rarely in core anymore you know we haven't had a remote exploit in you knock on wood like I think five years six years
+
+180
+00:32:08,399 --> 00:32:18,519
+something but in the plugins it it can be somewhat more frequent and so one thing I'm very very excited about um the next year or two is actually more automated scanning because obviously
+
+181
+00:32:18,519 --> 00:32:30,240
+that code basis is so many tens of millions maybe over 100 million lines of code at this point it's impossible for humans to review that so we we kind of rely on developers to to review that and
+
+182
+00:32:30,240 --> 00:32:41,799
+manage and of course we have like bug bounties and everything to that so when things get reported we fix it quickly but I can't wait for more automated scanning there and I think that could fastly upgrade the security of Open Source the other thing that's really
+
+183
+00:32:41,799 --> 00:32:51,960
+exciting is like right now you know you see people building apps and stuff and it's just sort of custom generated code um but I think the next generation of these models or sort of the next layer
+
+184
+00:32:51,960 --> 00:33:03,880
+there is because you know as everyone knows like just writing the code is is just one part of it it's maintaining it that really becomes the the life cycle of it and Stuart Brand's new book is all
+
+185
+00:33:03,880 --> 00:33:13,279
+about maintenance right which I'm very excited about uh he's publishing I think with uh with stripe and it's actually kind of Open Source he's open sourcing the book so it's you can see it being
+
+186
+00:33:13,279 --> 00:33:25,159
+written online but anyway to go back uh I think that if and they're starting to do that is when the open source models you say like hey build me a website it actually installs WordPress and then Builds on top of that and then
+
+187
+00:33:25,159 --> 00:33:36,159
+customizes on top of that then you get for free that core engine that's always being audited and updated and getting you know P key support or whatever the the new things are sort of continuously
+
+188
+00:33:36,159 --> 00:33:47,120
+and then your custom stuff can be on top of that which I think is actually a lot more powerful than sort of building something proprietary or custom from the ground up I love this book on sub maintenance there's a my sister's
+
+189
+00:33:47,120 --> 00:33:58,399
+partner had this has this quote that I've always come back to life is maintenance you basically like everything you acquire and deal with like you get a generator for your house you have to maintain that forever now
+
+190
+00:33:58,399 --> 00:34:08,560
+you get like you know this backpack okay I have to like maintain this thing make keep a nice nice jacket like everything is maintenance everything in your life just maintenance and I wonder if that's what the book's
+
+191
+00:34:08,560 --> 00:34:19,159
+about well that's why I think technical debt is one of the most interesting Concepts you know there's so many companies as well that maybe have like big market caps but I feel like they
+
+192
+00:34:19,159 --> 00:34:29,679
+might have billions or tens of billions of dollars of technical debt you can cast see in the interface or how their products integrate with themselves or things and I think about that a lot in our own company we definitely have some
+
+193
+00:34:29,679 --> 00:34:40,839
+products Al the little bears coming on because you have have like such great product people and like we have some variable quality around some of our things right now like if you check out gravar right now I'm actually really proud of it like it's I think a really
+
+194
+00:34:40,839 --> 00:34:52,240
+great user experience very slick um but there's like parts of well I always say I'm the unhappiest WordPress user in the world so there's like parts of Wordpress and wordpress.com that a little embarrassed and ashamed of like we we
+
+195
+00:34:52,240 --> 00:35:03,520
+kind of have to we have a really large surface area that we cover with relatively few people and so there's some we haven't looked at in a little while that uh we need to get around to and it's our big Focus for us this year is actually kind of going back to basics
+
+196
+00:35:03,520 --> 00:35:14,079
+back to core and um improving you know all those kind of nooks and crannies of the the these experience and also ruthlessly editing and cutting as much as possible because we've just launched
+
+197
+00:35:14,079 --> 00:35:25,560
+a lot of stuff over the past 21 years that uh that maybe is is not as relevant today or or doesn't need to be there that sounds like excellent work for your for this AI agent of of the future that's coming
+
+198
+00:35:25,560 --> 00:35:34,359
+soon there's one other area I want to mine and that's community community building building this ecosystem that you've created around WordPress it might
+
+199
+00:35:34,359 --> 00:35:45,160
+be the most one of the most successful biggest communities on the internet uh I'm curious just what lessons you've learned about what it takes to build a
+
+200
+00:35:45,160 --> 00:35:56,200
+successful Community online especially this is probably influenced by economics and Jazz right so in economics is all about systems thinking right and and what are the incentive
+
+201
+00:35:56,200 --> 00:36:06,680
+structures of how you set something up and um and then jazz is all about collaboration right so if there's something unique I have for your
+
+202
+00:36:06,680 --> 00:36:17,920
+audience I would say it's uh don't just build a product build a movement and to the extent that we've been successful I think it's that you know we give people Something to Believe In You know a philosophy a
+
+203
+00:36:17,920 --> 00:36:28,839
+worldview um even silly things like you know we had this tagline in the footer of the wordpress.org when we started it's still there it says Cod is poetry got this idea that we're not just
+
+204
+00:36:28,839 --> 00:36:39,720
+writing code like we're trying to create something that can have uh elements we name every word press release after a jazz musician you know for the past 60 releases or so uh so those sorts of
+
+205
+00:36:39,720 --> 00:36:51,359
+things bringing like a little Art and Soul and some fun into it as well it doesn't have to be serious all the time um I think you know again give Something to Believe In and work on and aim
+
+206
+00:36:51,359 --> 00:37:02,040
+towards that's uh more than just a paycheck or more than just you know the utility the base utility of theof software um so it's not just the
+
+207
+00:37:02,040 --> 00:37:12,680
+software it's also like how are the meetups you know how are people getting together what events are you running how do people are there forums how do people contribute you know is there office
+
+208
+00:37:12,680 --> 00:37:24,400
+hours or town halls I I do a lot of Q&A so like you know what what are the things you're doing around the software that that's allowing people to get involved that's inviting contributions that's allowing people to build on top of it you I've studyed platforms quite a
+
+209
+00:37:24,400 --> 00:37:35,760
+bit like Microsoft and others you so our whole e system of plugins and themes is part of what's made WordPress so successful in the mo that we have you the core features of a CMS you can kind
+
+210
+00:37:35,760 --> 00:37:47,079
+of write with a few developers in a few weeks or something like it's it's kind of not you know it's basically correct operations um but to replicate those 60,000 plugins and themes gosh no one's
+
+211
+00:37:47,079 --> 00:37:59,000
+done it it's a huge mode and uh and propri Serv concete platforms you know Shopify has third party ecosystem and things like that but it's ever a true platform
+
+212
+00:37:59,000 --> 00:38:10,079
+and that a true platform it's when your ecosystem makes more money than the core does and so many times whether it was the Facebook you know platform I'm putting that in air quotes or the
+
+213
+00:38:10,079 --> 00:38:22,040
+Shopify platform you know companies build on it and then they get the rug pulled Al from under them because they're too successful and then the sort of thing you're building on decides oh we want that money or we want that growth and they sort of uh change the
+
+214
+00:38:22,040 --> 00:38:33,560
+API or remove your access or you know there's so many examples of this especially on like I think Facebook and Shopify and others where like people got too successful and all of a sudden they uh they knock on the door and say oh
+
+215
+00:38:33,560 --> 00:38:45,359
+that's a mighty nice app you have there we I'd love to offer you some warrants where we own a bunch of your company or we're gonna shut it off or you know those sorts of things um and again you don't have freedom unless you're
+
+216
+00:38:45,359 --> 00:38:54,119
+building on open source that's why more and more companies and people are choosing uh if they're going to build a business on top of something else if you build on open source you
+
+217
+00:38:54,119 --> 00:39:05,040
+have that guarantee even if uh you know I I grew devil horns and became evil and automatic decided to know you know whatever like WordPress would still belong just as much to you as it would
+
+218
+00:39:05,040 --> 00:39:16,720
+to me people can Fork the code they can still own it they can still build on top of it so those things I think are uh yeah really important what a segue to all of this drama that's swirling around
+
+219
+00:39:16,720 --> 00:39:27,560
+you these days I think a lot of people do feel like there's devil horns that have appeared and so I'm excited to dig into the stuff I think I find that every time you go on a podcast these days if
+
+220
+00:39:27,560 --> 00:39:37,760
+uh we don't get into this everyone's just like why are Matt not answering these questions let's get into the hard stuff so I have some I'm going to ask you some hard questions uh for people
+
+221
+00:39:37,760 --> 00:39:48,359
+that don't know what the hell's going on they're like what are you even talking about or just have a sense something is swirling with WordPress and Matt I don't know what's going on what's just like the high level overview what's going on
+
+222
+00:39:48,359 --> 00:39:57,880
+yeah so to set it um you can get WordPress from wordpress.com or you know us but also you can get WordPress from dozens of other hosts the biggest in the
+
+223
+00:39:57,880 --> 00:40:08,280
+world are like GoDaddy hosting Jer new fold um it's not the biggest but it is in the top 10 or something it has about 700,000 WordPress installs there's a company called WP
+
+224
+00:40:08,280 --> 00:40:19,680
+engine um in 2019 WP engine started as like very WordPress oriented and they contributed a lot to the community and everything like that they're very respectful about you know distinguishing
+
+225
+00:40:19,680 --> 00:40:31,599
+themselves from core so people really realized it wasn't officially Associated and everything but 2019 they got bought out by a private Equity Firm called Silver Lake and you know anyone who follows
+
+226
+00:40:31,599 --> 00:40:42,520
+business you know when private Equity buys something there's some the good ones but there's also many many stories about how they can really kind of hollow things out you know really optimize her
+
+227
+00:40:42,520 --> 00:40:53,800
+profits comus are hostile um actually recently read a story where one of the reasons there was a shortage of fire trucks these La fires was that the fir truck manufacturers have been kind of
+
+228
+00:40:53,800 --> 00:41:05,599
+rolled up by a private Equity Firm and they've been raising prices like their supply constraint and things like that so there's literally like a shortage in fire trucks right now because of private Equity of course if you look at health care or other things like there's so
+
+229
+00:41:05,599 --> 00:41:15,880
+many examples of where private Equity can really um I think be one of the darker parts of of capitalism so you know since 2019 uh WP engine has kind of
+
+230
+00:41:15,880 --> 00:41:26,640
+changed a bit and um they really stopped contributing to core and they started using the trademark um in a you know a way that was very confusing in the
+
+231
+00:41:26,640 --> 00:41:36,800
+marketplace and uh you know particularly in the past year year and a half or so we're just getting a lot I've get a lot of support for request for WP engine and you know
+
+232
+00:41:36,800 --> 00:41:47,640
+when we do surveys we'd find that you know 20 30 40% of people thought they were officially Associated because how they were presenting using our logo and presenting the brand and everything like that was very confusing to people and as
+
+233
+00:41:47,640 --> 00:41:58,599
+you know if you don't protect your trademark you you lose it and also the version of Wordpress that they were offering actually wasn't our core vision of the functionality of Wordpress so to save money they were actually turning
+
+234
+00:41:58,599 --> 00:42:10,000
+off features like revisions so a cool part about WordPress that actually one of my favorite features is every uh change to every single poster page is saved forever just like Wikipedia so if
+
+235
+00:42:10,000 --> 00:42:21,440
+you make a mistake you can always undo it and of course as you know like building a great product that sort of user safety of a undo is so critical um now obviously you have to store these revisions so it takes some more database
+
+236
+00:42:21,440 --> 00:42:33,200
+space now it's it's trivial it's megabytes so on Modern databases is not that big a deal but the save money there turned us off so they broke the undo feature in WordPress to essentially save money and so you have this thing where
+
+237
+00:42:33,200 --> 00:42:43,680
+they're offering something called WordPress it's kind of I think I referred to it as like a a bastardized hacked up version of it it's deluding our brand and um and then it's also
+
+238
+00:42:43,680 --> 00:42:55,440
+people think it's official so even close friends of mine were like oh yeah I signed up for this thing I thought I was supporting you and um so it's came to a head so past 18 months they've also you know we kind of contacted them and say
+
+239
+00:42:55,440 --> 00:43:05,359
+Hey you need a trademark license or something like if you're going to use this and or or change how you're doing things and uh you know kind of tried to
+
+240
+00:43:05,359 --> 00:43:16,599
+negotiate something and had many different term sheets over the months offered and different things and uh they just kept kind of stretching it out and I was like what's going on here I think part of what was going on is last year
+
+241
+00:43:16,599 --> 00:43:28,240
+they tried to sell the company so private Equity usually holds things for like five to seven years so they were kind of five years into this they tried to shop it around and sell it they weren't able to find a buyer they said well they don't have any IP and it feels
+
+242
+00:43:28,240 --> 00:43:39,520
+like they're using your trademark so they're going to have trouble with you they don't have a license or things like that so um while they were negotiating with us it appears they were also like preparing
+
+243
+00:43:39,520 --> 00:43:49,800
+this lawsuit against us so uh again I've been very fortunate in my business career that um you know we've invested in dozens of
+
+244
+00:43:49,800 --> 00:43:59,400
+companies we've acquired lots of things like I by and large 99% of the time um people I've dealt with in business have
+
+245
+00:43:59,400 --> 00:44:09,800
+been ethical straightforward honest um I haven't really faced any like bald-faced lying or duplic this behavior um very very rarely you know people who just you
+
+246
+00:44:09,800 --> 00:44:20,680
+know say one thing and do another or or fraudulent in their behavior but I think that was happening here and so I also just wasn't prepared for it I was think I was a little naive
+
+247
+00:44:20,680 --> 00:44:31,920
+and kind of didn't realize what was going on for a while uh so it came to a head and uh at Work Camp Us in September I was like okay well she's still not going to like even agree to
+
+248
+00:44:31,920 --> 00:44:43,680
+negotiate you know um uh I'm going to give this presentation about how I think both private Equity has messed up a lot of Open Source uh projects in the past and
+
+249
+00:44:43,680 --> 00:44:55,200
+how in particular uh Doby benjin has done some very bad or evil things and uh and they were like okay go for it so I did the presentation uh I think it was
+
+250
+00:44:55,200 --> 00:45:06,160
+on a Thursday or Friday Friday it's kind of spicy people are like oh can't believe you did that and uh and then on Monday they launched this uh with Quinn Emanuel which is kind of the baddest
+
+251
+00:45:06,160 --> 00:45:16,839
+nastiest Law Firm it's like who Elon uses when he sues people uh launched this big you know multi-million dollar lawsuit against both me personally and
+
+252
+00:45:16,839 --> 00:45:26,400
+wordpress.org so like the WordPress community and automatic and um and also you know they're spending millions of dollars a month on both lawyers and PR
+
+253
+00:45:26,400 --> 00:45:35,800
+so they're they're doing you know if you read uh gosh who's the celebrity that they were recently talking about this like the dark PR stuff where they're like
+
+254
+00:45:35,800 --> 00:45:47,640
+boost BL Lively so all that stuff is is happening so there's and I warned you know people I think in the presentation I said hey there's going to be a smear campaign against me and internally in
+
+255
+00:45:47,640 --> 00:45:57,559
+the company I was like hey they're gonna dig up everything that's ever happen uh anything bad anyone's ever said to me is going to like all of a sudden become like a news item and uh
+
+256
+00:45:57,559 --> 00:46:09,319
+and that has happened it's been true so right now uh there is a portion of the internet that does think I have devil horns and everything um fortunately this is not my first rodeo I
+
+257
+00:46:09,319 --> 00:46:20,640
+know a lot of people think like oh Matt was nice for 20 years and then got mean but you one thing if you're really open in open source sometimes you have to stand up the bullies and you have to fight to protect your open source ideals otherwise people could take advantage of
+
+258
+00:46:20,640 --> 00:46:31,160
+it in a way that ultimately can destroy uh everything you've created so this is probably the fourth time the internet has decided I'm the main character or or
+
+259
+00:46:31,160 --> 00:46:42,680
+or really evil and um the previous ones we don't remember anymore it's hot nacho or the Easter Massacre of themes or like these other things that that aren't even on my Wikipedia page anymore but um big
+
+260
+00:46:42,680 --> 00:46:54,000
+deals at the time those are your incidents those weren't like historical battles no no these are things that yeah I was involved in cool names um including some things I had screwed up like hot now to was definitely a screw up on my end very early in the WordPress
+
+261
+00:46:54,000 --> 00:47:04,160
+side but wow okay I'm not going to follow those thre but those are great names this episode is brought to you by loom loom lets you record your screen
+
+262
+00:47:04,160 --> 00:47:14,480
+your camera and your voice to share video messages easily record a loom and send it out with just a link to gather feedback at context or share an update
+
+263
+00:47:14,480 --> 00:47:26,280
+so now you can delete that novel length email that you were writing instead you can record your screen and share your message faster Loom can help you have fewer meetings and make the meetings that you do have much more productive
+
+264
+00:47:26,280 --> 00:47:35,720
+meetings start with everyone on the same page and end early problem solved time saved we know that everyone isn't a one take wonder when it comes to recording
+
+265
+00:47:35,720 --> 00:47:45,680
+videos salum comes with easy editing and AI features to help you record once and get back to the work that counts save time align your team stay connected and
+
+266
+00:47:45,680 --> 00:47:55,839
+get more done with loom now part of atlassian the makers of jira try a loom for free today at loom.com Lenny that's
+
+267
+00:47:55,839 --> 00:48:07,559
+l.com Lenny so you mentioned this talk you gave at word camp and you said at the beginning of the talk like I'm oh no afterwards you're like I I was really nervous to give this talk and I and
+
+268
+00:48:07,559 --> 00:48:18,599
+obviously you can see why just like what what finally convinced you this was time was it just to go uh as you described scorched to Earth nuclear uh was it like word Camp was
+
+269
+00:48:18,599 --> 00:48:29,400
+coming up and this is the moment to go public with this was there something else that kind of crossed the line it was a unique opportunity because we were saying that hey WB engine isn't going to
+
+270
+00:48:29,400 --> 00:48:40,839
+be allowed to sponsor word camps anymore you they're not going to be like a because we again up to that point really done everything to like bring them in and have them be part of the community um so I really had to also explain to
+
+271
+00:48:40,839 --> 00:48:52,400
+our community like hey why we're going to be excluding this company that a lot of people saw as is doing good if you go to WP engine website they have whole pages about how much they contribute to give back and how they you know they do
+
+272
+00:48:52,400 --> 00:49:01,880
+kind of green wash or open source wash a lot of what they do so um marketing branding was around this positive stuff and so I was like hey we we need to just
+
+273
+00:49:01,880 --> 00:49:12,760
+explain this case but yeah again my defaults and how we've worked with by the way every other company in the WordPress space many of which are much much larger and make sometimes billions
+
+274
+00:49:12,760 --> 00:49:22,359
+more in Revenue than WP engine um is collaborative and so like if there's a trademark violation usually it's not even lawyers get involved it's just like there's an email we have a conversation
+
+275
+00:49:22,359 --> 00:49:32,280
+we do a call we talk about it you know uh that that's how things get resolved and that's that's my uh default I'm a love run out a fighter so um and that's
+
+276
+00:49:32,280 --> 00:49:43,920
+why this thing doesn't happen very often you know I like to say that yes if if I was or WordPress Community or whatever was doing this like every year every couple months yeah you should worry about it but it kind of happens like
+
+277
+00:49:43,920 --> 00:49:55,680
+every like 10 years so so if I could mirror back the issues that you ran into and I want to go through this a little bit more this the the problems you had with WP engine in this case one is they were using the trademark both WordPress
+
+278
+00:49:55,680 --> 00:50:07,359
+and woocommerce without license and they're just abusing it confusing people a lot of people thought WP engine was actually automatic it work for us official they weren't contributing to the project they were
+
+279
+00:50:07,359 --> 00:50:18,599
+just making basically a bunch of money and not doing the work to uh off this company they bought and they're just kind of hollowing it out as you described and then they're also cutting Corners making the product worse and
+
+280
+00:50:18,599 --> 00:50:28,599
+that kind of reflects on the whole brand of Wordpress that's a great summer yeah awesome I'm curious just like which which of those three or is it something
+
+281
+00:50:28,599 --> 00:50:39,480
+even else that most bothered you about this like what's just like this is the thing that's eating me and if I had to guess it'd be like damaging the Legacy potentially of this thing you've worked
+
+282
+00:50:39,480 --> 00:50:50,960
+on for most of your life maybe it's that maybe it's just taking advantage of the community uh just like what's the thing that you think is the root of this just like ah it just this needs to stop well I guess the one thing I'd add to your
+
+283
+00:50:50,960 --> 00:51:01,000
+list was as this was happening they were pretending to good faith negotiate and in fact at one point the executive
+
+284
+00:51:01,000 --> 00:51:11,520
+you know we were talking about her joining automatic and running wordpress.org and you know kind of think when she thought thep was going to sell she was thinking about what was next so
+
+285
+00:51:11,520 --> 00:51:22,839
+yeah a lot of this stuff was um I think that duplic this Behavior also kind of forced this to an edge more than even those other things that you mentioned there's lots of companies that don't contribute back and it's it's not as big
+
+286
+00:51:22,839 --> 00:51:33,839
+a deal or so but yeah the legal issue was definitely the trademark thing um so uh what push it to the edge I think I think just the
+
+287
+00:51:33,839 --> 00:51:44,400
+magnitude of the issue you know they would refer to themselves as WordPress engine and client meetings and other things they would very Cavalier about how uh they would imply their
+
+288
+00:51:44,400 --> 00:51:55,960
+association with the with the project obviously as you can tell on socials a lot of people are just really upset and a lot of people blame you there's just like like I said every time you're on a podcast or in Twitter people are just
+
+289
+00:51:55,960 --> 00:52:05,880
+like Matt what about this why this sucks why are you doing this and I want to go through some of those things but just uh not many people go through like like I think you were like a 100% beloved hero
+
+290
+00:52:05,880 --> 00:52:16,160
+of Open Source and internet and now you're like in this a lot of people don't like you just as a human just what is that how do you how do you work through that how do you deal with that what's that been
+
+291
+00:52:16,160 --> 00:52:27,119
+like you know if you were kind of inside baseball over WordPress it's actually a lot of people who have been unhappy with me over the years and like when we introduced something like Gutenberg you know people hated it
+
+292
+00:52:27,119 --> 00:52:39,079
+actually when we introduced a visual editor people hated it these are huge controversies in in the WordPress history and when you know actually hasn't been a fork WordPress around all this latest stuff but there was when we introduced Gutenberg it's one called
+
+293
+00:52:39,079 --> 00:52:50,880
+classic press where people actually forked the software um so how I would describe it is previously like 1% of you know the world thought I was
+
+294
+00:52:50,880 --> 00:53:01,240
+terrible and now I feel like it's up to like four or 5% so it's still like not the majority but as you know something negative you feel seven times more than
+
+295
+00:53:01,240 --> 00:53:12,440
+something positive and um you when people are angry with you they're more likely to like it's kind of like restaurant reviews or whatever they're more likely to leave a bad review than a
+
+296
+00:53:12,440 --> 00:53:21,280
+good review and you know the people who you know WordPress you know 98% of all the core
+
+297
+00:53:21,280 --> 00:53:32,000
+developers have stayed and contribut and are working on the next version and are support and all these sorts of things and uh part of the reason these folks are so good is like they don't spend all
+
+298
+00:53:32,000 --> 00:53:42,400
+their time on Twitter and Reddit arguing with folks and also the arguments could be very frustrating because people don't engage in good faith they don't really change their mind when new facts are are
+
+299
+00:53:42,400 --> 00:53:51,400
+are introduced and so you kind of I've done my best actually because I you know from the open source side I'm really used to engaging with things and I think that's been one thing I've learned from
+
+300
+00:53:51,400 --> 00:54:01,960
+this is like uh in some forums like it doesn't matter how you engage and especially if you have like you know Bots or other things running there like I'd leave comments on Reddit and it'
+
+301
+00:54:01,960 --> 00:54:13,480
+immediately get like 40 down votes I'm like hey this is an article about me and I'm adding a fact to the thing like why is it getting downvoted this is very relevant to the discussion but it's literally hidden so like when you see
+
+302
+00:54:13,480 --> 00:54:25,240
+that thread you'd have to click like three or four times to see the comod had left and so it can really kind of change the uh perception and then when you read these things um I think it's just very human
+
+303
+00:54:25,240 --> 00:54:34,000
+nature even very FOC very close to me like if you read a thread and it's all like super negative it's hard to uh to not be influenced by that because we're
+
+304
+00:54:34,000 --> 00:54:43,440
+social creatures so 100% now the good news is I've had lots of you know sort of like credibility weighted um you the
+
+305
+00:54:43,440 --> 00:54:54,280
+support from you know people like Mark benof or you know other open source leaders or the core people in WordPress you know Matias Mary hubard uh all the
+
+306
+00:54:54,280 --> 00:55:04,680
+core committers the International Community actually like just in Japan like they they don't care about this stuff and so these are actually if you look by like number of commits and lines of code and everything like that the
+
+307
+00:55:04,680 --> 00:55:16,040
+folks who actually are most crucial in word breast so feel like that's been a good balance as well for me because there are days where I'm like gosh am I an idiot or you know it could be really
+
+308
+00:55:16,040 --> 00:55:28,039
+down like reading all these things so that is is part of what uh allows me to balance to get back to that sort of positive optimistic space that I think you need to be in to to do uh great software great work yeah the internet
+
+309
+00:55:28,039 --> 00:55:38,880
+can be brutal let me go through a couple specific things that people have pointed out because I think uh you've been on a lot of podcasts and people haven't asked you these questions and I think a lot of people are just like but Matt what about
+
+310
+00:55:38,880 --> 00:55:50,359
+this this is really bad so let me just ask you a couple things here one is there's just like a frustration in the community around the instability that this is just caused in the WordPress Community I'll read you a couple quotes
+
+311
+00:55:50,359 --> 00:55:59,920
+real people are receiving fewer projects in the WordPress on WordPress because Seer seeing WordPress is unstable because of this Feud and I work in Enterprise and we're very concerned about the stability of this
+
+312
+00:55:59,920 --> 00:56:11,160
+platform on our project just thoughts on that and the impact that has had on the community yeah I think this is until this gets resolved which by the way I hope it is soon you know I think it's
+
+313
+00:56:11,160 --> 00:56:22,520
+There's No Business reason for this to continue like I really hope that they you know come to a settlement or something we're ready they could end this tomorrow they wanted to w v could so um we can't we're just defending
+
+314
+00:56:22,520 --> 00:56:33,319
+right now so you know it's really incumbent on them um all of our competitors by the way are like great you know WordPress the the King on the hill all of a sudden we can
+
+315
+00:56:33,319 --> 00:56:45,240
+use this and so there's also not just from like WV engine but also from all the competitors to Wordpress and all the people who would love to capture someware users of market share you know they're they're really leaning into this
+
+316
+00:56:45,240 --> 00:56:55,720
+so I've seen white papers I've seen all sorts of things where people talk about this we actually in the next couple days going to publish something really cool on the WordPress out our blog though that shows like if you actually look at
+
+317
+00:56:55,720 --> 00:57:05,720
+the numbers like the activity number of commits plugin updates downloads installs of Wordpress since September 20th when this all started it's quite healthy and so not saying that there
+
+318
+00:57:05,720 --> 00:57:17,680
+isn't you know examples of where someone lost a project or something like that I'm sure it's happened you know it's the internet's big WordPress has you know so many millions of users and developers and everything that you're going to get
+
+319
+00:57:17,680 --> 00:57:28,359
+some samples but by the Numbers uh things are actually quite healthy and um in some ways it's not that there's no press is bad press it's raised the awareness of Wordpress
+
+320
+00:57:28,359 --> 00:57:37,599
+quite a bit so people who haven't talked about WordPress in years are now like oh let's talked about it and so a little bit of drama I think I I wouldn't do this all the time but a little bit can
+
+321
+00:57:37,599 --> 00:57:47,760
+be a good thing okay so another one of the most common frustrations I've seen on the internet people complaining is the is around the trademark I don't know all the details but my understanding is
+
+322
+00:57:47,760 --> 00:57:58,920
+there's kind of a you move the trademark to be own by the the foundation and automatic had his exclusive rights to use the trademark and I think people are like oh was it I thought it was the foundation owned it
+
+323
+00:57:58,920 --> 00:58:09,160
+but maybe Matt still owns it and then you're trying to monetize it through this agrea wmp engine is there anything you can share there that'll make people feel and see your side of the
+
+324
+00:58:09,160 --> 00:58:18,319
+story yeah this is totally fair because it's complicated um uh but people are saying like this has been private this has all been very public and documented
+
+325
+00:58:18,319 --> 00:58:29,119
+on the internet from the beginning so um wordpress.org is always been me personally and I I think because it's uh you know part of the reason we started
+
+326
+00:58:29,119 --> 00:58:38,680
+there is was not available so when we started so like that's why we started on theor and things like that but I think people also assume orc means nonprofit
+
+327
+00:58:38,680 --> 00:58:49,440
+or something and uh that's sometimes true but it's not always it's not a requirement of theor domain then when I found it automatic and when we did register the trademark that actually was
+
+328
+00:58:49,440 --> 00:58:59,039
+registered under automatic so it used to be for the first you know five years of the project or whatever that automatic just own everything outrights
+
+329
+00:58:59,039 --> 00:59:10,240
+um and again I had investors in a board and and that was uh under control of that now as automatic became more successful I was able to consolidate
+
+330
+00:59:10,240 --> 00:59:21,359
+some voting rights and other things and least later Advocate also remember I was like 21 when all this was happening so I was not like maybe the most Savvy about legal stuff or didn't always have the
+
+331
+00:59:21,359 --> 00:59:33,039
+best advice so later as I learned more I was like oh you know I want to take this out of the company and create a nonprofit and um so we ended up yeah
+
+332
+00:59:33,039 --> 00:59:43,839
+creating a nonprofit now the rules around 5013c nonprofits around the IRS are actually very strict so that's also something else people assume is like oh doesn't the nonprofit one the software
+
+333
+00:59:43,839 --> 00:59:55,400
+and we applied for that originally and it was denied by the IRS so we actually weren't able to put wordpress.org or the software itself under the nonprofit um
+
+334
+00:59:55,400 --> 01:00:05,960
+but we were a able to have sort of educational perview so what was eventually approved was sort of like running the meetups and other things forward press doing educational stuff we sponsor a lot of like learn to code or
+
+335
+01:00:05,960 --> 01:00:16,079
+uh you know running workshops in other countries we have this cool thing called do action where we'll do like you know a weekend where we take a bunch of nonprofits and build websites for them
+
+336
+01:00:16,079 --> 01:00:26,839
+and you know stuff like that so the nonprofit does a lot of exciting things there and then also negotiated with the sort of uh investors and everyone at automatic
+
+337
+01:00:26,839 --> 01:00:38,480
+to sort of actually put the trademark on the foundation now the compromise there was that you know automatic at this point he's running wordpress.com so to continue running
+
+338
+01:00:38,480 --> 01:00:48,599
+that which at the time had already tens of millions of users and everything it needed a commercial license and so kind of the compromise is that the foundation
+
+339
+01:00:48,599 --> 01:00:58,960
+would kind of uh own the trademark and licensed it out for non-commercial purposes um I had a a license to run wordpress.org you know because obviously
+
+340
+01:00:58,960 --> 01:01:09,559
+I need that and then automatic would retain the commercial license and the ability to sublicense that so to sell that to others so this is kind of the grand compromise and uh create this
+
+341
+01:01:09,559 --> 01:01:20,680
+tripartite structure you know I was very inspired by the three branches of government so there's sort of power in each of those that I think sort of checks and balances um inside of it
+
+342
+01:01:20,680 --> 01:01:31,200
+which is is on purpose wow okay I get why it's complicated I get why people would be confused this makes me think about open AI had a really strange structure and that got him in a lot of trouble and it
+
+343
+01:01:31,200 --> 01:01:42,359
+feels like when you're 21 you're like oh this makes a lot of sense what a great concept we've come up here and then all this complexity just adds to a lot of confusion around what's going on so thank you for addressing that another
+
+344
+01:01:42,359 --> 01:01:53,599
+there's a kind of a related question I've seen a couple times is just Why don't you let that.org be run by a community why not just like give that up to someone else and not just you uh thoughts there yeah and that the frame
+
+345
+01:01:53,599 --> 01:02:05,440
+of that question is is kind of interesting because it implies like I'm the only person making WordPress which is obviously not true if you look at the daily commits and activity and everything um it is run by the
+
+346
+01:02:05,440 --> 01:02:17,319
+community so it's it's hundreds of volunteers every day that are are actually doing the day-to-day work and making the data decisions everything happened so there has been a ra radical
+
+347
+01:02:17,319 --> 01:02:28,559
+delegation however there's ultimately a hierarchy and I'm kind of the the CEO so I'm like the final final decision maker and so I think what people advocate for around this governance point of view is
+
+348
+01:02:28,559 --> 01:02:38,520
+like okay well install a board on top of you that uh you know ultimately makes decisions for the product or you know
+
+349
+01:02:38,520 --> 01:02:48,200
+things like that and there are other open source projects that have this structure none of them have been successful as WordPress so you know I think your
+
+350
+01:02:48,200 --> 01:02:57,000
+audience in particular like is great software ever created by committee or does it more often reflect
+
+351
+01:02:57,000 --> 01:03:06,880
+um a vision of a leader or you know something that can allow us to and I think particularly you know WordPress not just remaining relevant but actually
+
+352
+01:03:06,880 --> 01:03:18,119
+accelerating growth over huge technological shifts over the past two decades you know when we started there was like Dynamic web apps or dhtml or JavaScript wasn't really a thing and and
+
+353
+01:03:18,119 --> 01:03:30,079
+then like Social Web and then iPhones and then all this sort of stuff that's changed over time and we've surfed a lot of these technological changes which is very very hard to do like most products do not remain relevant over multiple
+
+354
+01:03:30,079 --> 01:03:41,599
+generational changes like that and um and that's been because sometimes we've had to make very unpopular decisions like if Gutenberg is is a huge part of why WordPress is relevant today and that's actually an open source project
+
+355
+01:03:41,599 --> 01:03:52,799
+we do it's the blog editor it's actually bigger than WordPress you know because it's not just used on WordPress it's used on every WordPress site but also like Tumblr other people I would actually love if Squarespace or Wix adopted Gutenberg it's meant to be like
+
+356
+01:03:52,799 --> 01:04:04,599
+a a really open source framework but anyway if we had voted for whether we should do that or not everyone would have voted against it or the majority would have it was really h a few core
+
+357
+01:04:04,599 --> 01:04:16,079
+people of us in the community you know Mattias myself other core contributors Ella Andre Oz that that said like hey you know this is the future and it's going to take 10 years to do and it's going to be a long bet it's going to
+
+358
+01:04:16,079 --> 01:04:27,520
+suck for the first three or four years and so everyone's going to hate it in the beginning um but then later you know with iteration we've had I think now 200 releases of Gutenberg uh we do sort of a very strict every two weeks release
+
+359
+01:04:27,520 --> 01:04:38,880
+schedule since it started um it's going to get pretty good and it's it's at that point now it's actually getting pretty darn good and the next phase of it actually I'm so excited about it's going to be collaboration so all like the real-time co-editing that like Google
+
+360
+01:04:38,880 --> 01:04:49,000
+Docs and otion has is coming out to this open source thing and with the technological changes we're actually able to do it peer-to-peer so we don't need a centralized server we can use web RTC and other cool Technologies so I
+
+361
+01:04:49,000 --> 01:04:59,680
+mean I'm I'm going sidelighting but I think that um you know that's sort of more and if you look at a lot of great
+
+362
+01:04:59,680 --> 01:05:11,440
+companies like you know there's a board or whatever but like ultimately there's an executive and you know some of the most iconic companies of Our Generations are ones where the executive has you know retained some majority voting
+
+363
+01:05:11,440 --> 01:05:22,160
+control or other things like that which I've been able to do with automatic and with WordPress and um you know I definitely think about seccession planning everything like that but uh if
+
+364
+01:05:22,160 --> 01:05:33,119
+for when I'm gone I I don't want to pass it to a committee I want to pass someone else who can you know have a role similar to mine and really sort of uh try to be a steward
+
+365
+01:05:33,119 --> 01:05:44,760
+and there are ultimate lays to check and balance on that because again the community could leave they could Fork the software people could change and so you know you're in charge quote unquote
+
+366
+01:05:44,760 --> 01:05:55,279
+but you're also at surface so it's a lot more being like a mayor than a CEO uh and that you you ultimately are accountable to the folks who are contributing and your users and
+
+367
+01:05:55,279 --> 01:06:06,880
+everything like that so I do feel like uh there is a balance there some of this as well is that there's some people who aren't part of leadership who feel like they should be so if you look at like the yosta crew and things these are
+
+368
+01:06:06,880 --> 01:06:18,000
+folks who actually aren't like don't have Commit status they haven't contributed to Wordpress over the years and serve our normal hierarchy of you know the meritocracy of how you get like you know the ability to commit code or things like that they're like hey I want
+
+369
+01:06:18,000 --> 01:06:27,680
+to be I want to lead a release and so that I mean that's cool dude but like there's there's a process we have different people lead releases over the years like you know they they kind of work their way up to
+
+370
+01:06:27,680 --> 01:06:37,279
+it this makes so much sense to me it's one of the themes of the podcast just the power of a singular Visionary and leader f mode as we've all heard is
+
+371
+01:06:37,279 --> 01:06:49,000
+trending these days you made famous yeah I wouldn't say that uh it was sh yeah Brian shared it but then uh Paul Graham pointed afterwards and then I renamed the title of that episode founder mode
+
+372
+01:06:49,000 --> 01:06:59,520
+really actually kind of if I zoom out what I'm sensing here is there's like people that have this Vis uh ideal of how something like this should run uh but they've never actually worked at a
+
+373
+01:06:59,520 --> 01:07:09,440
+place like where nonprofit board runs it runs a thing and I've seen what that actually looks like and so I think there's like a big disconnect between the ideal in theory and like what how
+
+374
+01:07:09,440 --> 01:07:19,559
+does Great Stuff get built and one of the things I think we've tried to demonstrate uh with WordPress is actually there's kind of like a open source side and a nonprofit side and a
+
+375
+01:07:19,559 --> 01:07:31,319
+for-profit working in concert so and one of the things people don't necessarily appreciate as much about why WordPress has been so successful is because of automatic and things like aism doing
+
+376
+01:07:31,319 --> 01:07:42,200
+anti-spam or wordpress.com having a free version of Wordpress that has introduced you know over 100 million people to the software in a way that you could just sign up for free you don't have to pay for hosting or download it yourself or
+
+377
+01:07:42,200 --> 01:07:54,160
+things like that so that kind of for-profit nonprofit open source working in concert I think is um a really interesting model that we're starting to see a lot more companies do it's actually very exciting to me that um
+
+378
+01:07:54,160 --> 01:08:06,119
+some of the things that we're controversial when we started like open source or distributed work are Now the default for so many exciting new startups and this whole ecosystems of like really really cool like open source
+
+379
+01:08:06,119 --> 01:08:17,640
+like cal.com for open source cund or so much cool stuff out there and that I actually you know there's a whole generation of like younger entrepreneurs that I find very very inspiring because they're also bringing like modern design
+
+380
+01:08:17,640 --> 01:08:28,960
+and web development everything to to open source which is very neat I anticipated a block post one day I Told You So Guys open source remote work imagine there's a few more things
+
+381
+01:08:28,960 --> 01:08:39,400
+there there's one other thing I want to address uh I haven't seen you talk about this it comes up a bunch uh it's around this is like varying the weeds but I think it's really important to people and there's something that uh something
+
+382
+01:08:39,400 --> 01:08:49,920
+here for a lot of people um the way you guys forked Advanced custom Fields uh so I think what happen here is you guys forked an existing plugin I think somebody else's plugin and then kind of
+
+383
+01:08:49,920 --> 01:09:00,640
+push people to this plugin versus the original plugin um what can you share there yeah this is very complex but so wordpress.org has kind of like an app
+
+384
+01:09:00,640 --> 01:09:11,839
+store um you know after WP engine started suing us and you know creating millions of dollars of legal fees and things uh we blocked their access toward
+
+385
+01:09:11,839 --> 01:09:22,319
+press.org um so this plugin they had Advanced custom Fields uh wasn't able to be updated at the same time a number of security issues were found in it uh
+
+386
+01:09:22,319 --> 01:09:33,759
+including some we reported and so there had to be an update to it uh so we're like okay we'll we'll ship the update for you essentially and then
+
+387
+01:09:33,759 --> 01:09:42,920
+we're like okay I think we need to call it something different right because it actually isn't theirs anymore and they still offer Advanced custom fields on their own and people can download it
+
+388
+01:09:42,920 --> 01:09:53,960
+from them Etc um so we we made secure custom Fields uh which is originally under the same directory listing so again because we want all the users of it to to get
+
+389
+01:09:53,960 --> 01:10:04,880
+the security updates um this is controversial and actually the they actually got a preliminary injection so the judge said reverse this so this is all been reversed by the way
+
+390
+01:10:04,880 --> 01:10:15,400
+there now is a separate Fork under separate listing of secure custom fields which actually we have uh you know a team on it developers designers and we're we're creating just like WordPress
+
+391
+01:10:15,400 --> 01:10:25,640
+is a fork we've actually forked this actually wo commerce was a fork a lot of things a fork so we forked it now have a new name new everything that we're doing a lot of product Innovation and like
+
+392
+01:10:25,640 --> 01:10:36,480
+impr in so there's a separate project now that and separate directory listing for security c fit so that's kind of fast forward to today they now have access to wordpress.org again they have
+
+393
+01:10:36,480 --> 01:10:46,880
+updated the plugin everything's kind of back to how it was before and um and there's this separate thing called secure custom fields that uh the WordPress project is officially supporting so I'm hearing essentially
+
+394
+01:10:46,880 --> 01:10:57,960
+you block WP engine as a part of this we're just going to simplify WordPress reduce confusion they're being bad actors in the space so we're going to block them and in that block there's like a dependency where people couldn't
+
+395
+01:10:57,960 --> 01:11:09,400
+do a thing that they needed to do so you're like and that's and the one that exists there's a problem with it so we're going to uh make that dependence like release a version that you can actually use and fix the security issues
+
+396
+01:11:09,400 --> 01:11:19,320
+that was the intention I I think that there was a lot of perceptions around it that were different but yeah that was that was the goal okay okay great so maybe just the last question we talked about just like a lot of people see you
+
+397
+01:11:19,320 --> 01:11:29,120
+with devil horns these days they think you you're doing a lot of you're doing bad things and they don't like uh approach you're taking you talked about there's this WP engine spending a lot of
+
+398
+01:11:29,120 --> 01:11:41,000
+money on PR and hiring this agency I guess is there anything else that like why do you think so many people are looking at you as the bad guy is it mostly that you think just like where do you think it's coming from why is why
+
+399
+01:11:41,000 --> 01:11:52,000
+are like comments always so negative and we talked a bit about it but anything more there I don't know if I can say why uh I do think one thing I've learned is that a lot of these things we talked
+
+400
+01:11:52,000 --> 01:12:03,080
+about are nuanced so one essentially thing I've learned in this process is that it's hard to explain this stuff in you know 240 characters or um you know
+
+401
+01:12:03,080 --> 01:12:15,040
+the the some mediums do not lend themselves well to discussing this and so I tried you know but I I'm you know participating less than like Reddit or Twitter and trying to do more law things
+
+402
+01:12:15,040 --> 01:12:26,080
+like this where you can actually have the context and things can't be taken out of context also I think there something where you know social networks sometimes are tuned to promote outrage
+
+403
+01:12:26,080 --> 01:12:37,159
+and it was very interesting we we ran a sentiment analysis recently we're kind of like looking at different social networks analyzing other comments and and we found actually that the negative you know the the sort of devil horn
+
+404
+01:12:37,159 --> 01:12:47,880
+fraction on like uh what was it like LinkedIn Facebook Instagram was like 8% uh it's actually pretty small on Reddit it was like bigger I forget the exact
+
+405
+01:12:47,880 --> 01:12:59,480
+number but on Twitter it was 52% you're like whoa what's going on there and so there's something in that algorithm and again can't see how the algorithm works or what the incentives are but it can promote kind of the the
+
+406
+01:12:59,480 --> 01:13:11,239
+most controversial things and uh I think that's not a novel perception like there's a lot of discussion around how social media might be creating more fragmentation in society and I think this is just an example of that where
+
+407
+01:13:11,239 --> 01:13:21,760
+when you have networks when people are gting the majority of their information from social networks and those networks are not designed to provide Nuance or balance or even promote truth necessarily um you know misinformation
+
+408
+01:13:21,760 --> 01:13:31,600
+can get spread far more than um you know what's the saying like a lie gets around the world seven times before truth has time to you know get out of bed get out
+
+409
+01:13:31,600 --> 01:13:42,840
+of bed yeah there's been a lot of that so there's actually been a lot of misinformation untrue things that like go viral and then the correction you know the the untrue thing gets like 700,000 views and the correction gets
+
+410
+01:13:42,840 --> 01:13:53,320
+like 20,000 views so um there's been some of that happening and uh you know when when mainstream media has covered this um it's actually been a lot better so there's been some actually really
+
+411
+01:13:53,320 --> 01:14:03,600
+good articles and uh uh you know some business Publications and other things that that sort of look at a more nuance and balance View and I think the podcast have been pretty good
+
+412
+01:14:03,600 --> 01:14:14,639
+uh but uh definitely on Twitter like I think you can get a a version of all this that that is uh both I think not entirely true and also like pretty more
+
+413
+01:14:14,639 --> 01:14:25,320
+negative yeah I imagine people are going to be like Lenny you didn't ask him this thing here's the thing he said that that I want to learn more about I'm sure I miss some stuff but from an Outsiders
+
+414
+01:14:25,320 --> 01:14:36,520
+perspective uh this all make sense there's a company like I'm not I don't think PE companies are bad innately but their job is buy a company and make it run more efficiently and then oftentimes
+
+415
+01:14:36,520 --> 01:14:46,280
+sell it for more so it makes sense that they buy a company make it more efficient cut some Corners don't put a lot of effort into making it awesome even though sure there's awesome people working in there trying really hard to
+
+416
+01:14:46,280 --> 01:14:57,000
+make it great and like basically what I'm feeling is you just they got to a point where this is hurting the ecosystem they're feeling really um dishonest with working with you and
+
+417
+01:14:57,000 --> 01:15:07,040
+there's just there there's a stalling technique and so makes makes sense to me why you just have to stand up and fight back and and it's hard it's hard to do
+
+418
+01:15:07,040 --> 01:15:16,440
+that is there anything else along this thread before we move on to a different topic anything else you want to share before we close out this chapter well if people have more questions they can come
+
+419
+01:15:16,440 --> 01:15:26,920
+to Work Camp Asia I do G to do open Q&A there uh we do town halls in the WordPress UT work Community there's a slack people can get on and ask question question so like there there is kind of
+
+420
+01:15:26,920 --> 01:15:37,400
+like a a lot of open ways to engage and I'm definitely happy to do that uh I'm probably not going to do it on Twitter as much but like oh you know when there's longer for opportunities to to
+
+421
+01:15:37,400 --> 01:15:48,239
+have a discussion here H particularly if it's more like real time like this um yeah I'm very happy to and that's why if you look at it there's actually a big difference um W Benin has not done any
+
+422
+01:15:48,239 --> 01:15:59,400
+podcast and no press they don't respond to journalists they don't talk about this um and I've done the opposite where really trying to be out there and engage and everyone's like why don't you just let the lawyers do the talking and it's
+
+423
+01:15:59,400 --> 01:16:11,120
+like well we have community and also I feel like we're in the right so when you're when you're in the wrong you probably say only have the lawyers talk when you're in the right like you know I think you should be out there and tell the story I remember at the end of your
+
+424
+01:16:11,120 --> 01:16:22,520
+word cam talk you're like any questions after this big controversial talk and I'm curious how it felt like every all the questions initially were nothing to do with this it's what it felt like they just like oh they already had these questions they didn't even know what you
+
+425
+01:16:22,520 --> 01:16:33,440
+said maybe and I bet you're were just like wait is do anyone did anyone hear what I just said did it feel like that well also like that's really like a WordPress Community event so it's a lot of the core developers and things so
+
+426
+01:16:33,440 --> 01:16:45,120
+like they have just WordPress questions so uh that is something uh I've now done hundreds and hundreds of these town halls and QA and I really enjoy it because you never know what's going to come up yeah okay I want to talk about
+
+427
+01:16:45,120 --> 01:16:56,120
+all the companies that you're bought and have are will buy in the future uh it's kind of like you're building a little Berkshire hathway I think you've described it that way it's kind of what it's feeling like and and uh Tumblr is
+
+428
+01:16:56,120 --> 01:17:07,239
+really interesting I didn't like until I started prepping for this I didn't even know you guys own Tumblr I haven't heard the story what's just why did you guys buy Tumblr what is going on with Tumblr it was like a big deal back in the day
+
+429
+01:17:07,239 --> 01:17:17,960
+what is where is the current state of Tumblr what is the story there oh Tumbl is so interesting I mean you know at the time I think it was one of our best competitors you they created this really
+
+430
+01:17:17,960 --> 01:17:28,120
+amazing sort of hybrid of like blogging and social networking and if you kind of Zoom back a lot of things that are now standard on social networks like even the ability to embed an image with a
+
+431
+01:17:28,120 --> 01:17:39,920
+post again was not supported originally on Twitter and other things remember they used to have like was it like tweet image or like you have to like link out to other things to post an image to Twitter um it was an ative functionality
+
+432
+01:17:39,920 --> 01:17:51,040
+and Tumblr had like these multiple post types you could post like a chat an image you know they were I think one of the first to support video um so they did a lot of I think product Innovation under the leadership of uh David karp
+
+433
+01:17:51,040 --> 01:17:59,880
+who's like a really amazing uh entrepreneur and product leader funny story both David and I were at CET at the same time they had hired both an
+
+434
+01:17:59,880 --> 01:18:11,120
+alumni group whoa C they could have kept both of us probably but anyway the um Tumblr then I forget the year but they sold I think the same time that
+
+435
+01:18:11,120 --> 01:18:22,280
+Instagram dat for a similar amount $1.1 billion dollar to you or to someone else Instagram bought by Facebook right right Tumblr and Tumblr bought by Yahoo oh wow
+
+436
+01:18:22,280 --> 01:18:31,400
+who was at the time again Yahoo don't think about it now but I feel a little old but like the time Yahoo was like one of the internet Giants and had recently
+
+437
+01:18:31,400 --> 01:18:40,639
+Mera Meer who was um or mayor who was one of like the big early people at Google I think part of creating the APA program and everything like that uh was
+
+438
+01:18:40,639 --> 01:18:51,560
+the CEO of Yahoo and this was I think one of her first big Acquisitions now subsequently obviously we know how Instagram went I think you
+
+439
+01:18:51,560 --> 01:19:03,080
+know people were like I can't believe you bought this for a billion dollars and obviously now it's worth hundreds of billions so that's had a really good uh trajectory um at Yahoo I think things became more challenged so again this is
+
+440
+01:19:03,080 --> 01:19:12,960
+a little bit of history but Yahoo then had like this thing where they owned part of Alibaba which then became like more valuable than the rest of the company they activist investors I think
+
+441
+01:19:12,960 --> 01:19:24,800
+they had some CEO switches I think rer like leaves or gets fired at some point you know there's all this like turnover and I think Tumblr really languished under that their ownership and um from
+
+442
+01:19:24,800 --> 01:19:34,040
+what I can understand the team was actually held back a lot you from things they wanted to launch or ways they wanted to iterate then Yahoo merges with
+
+443
+01:19:34,040 --> 01:19:43,560
+a um which is another kind of early internet thing uh that goes for like a little while so again the Tumblers just kind of stuck underneath this stuff
+
+444
+01:19:43,560 --> 01:19:55,199
+tumbling along tumbling along and then that gets bought by Verizon okay uh so fast forward to 2019 you know
+
+445
+01:19:55,199 --> 01:20:06,920
+Verizon wants to get rid of Tumblr and so they they they kind of put up for sale and had a number of biders um automatic uh ended up buying it uh
+
+446
+01:20:06,920 --> 01:20:18,840
+for a DI minimouse three million so but obviously that represented a lot of uh value destru destruction over the years temp
+
+447
+01:20:18,840 --> 01:20:30,280
+had some tough times you they actually were banned from the App Store at one point for um not moderating things well enough and having you know kind of maybe a little too much porn obviously Twitter
+
+448
+01:20:30,280 --> 01:20:38,960
+have porn but like they might have maybe were a little too out there with it and we're doing a good job filtering it and uh and keeping it away from uh App Store
+
+449
+01:20:38,960 --> 01:20:49,480
+reviewers or whatever and um so Verizon to their credit though there were people bidding more actually I think a porn company was bidding on Tumblr uh that would paid a lot more money they really
+
+450
+01:20:49,480 --> 01:21:01,320
+were looking for an acquirer that they felt like would be a good Steward and uh from my point of view I had such incredible respect for t a product and the community um you know still despite
+
+451
+01:21:01,320 --> 01:21:11,719
+all of this sort of stuff that had happened uh I think that point still was like you know uhget the exact number but like
+
+452
+01:21:11,719 --> 01:21:21,600
+call it 15 20 million monthly active users so really sort of active core and one of the things that's so fascinating is over half of that user base was under the age of
+
+453
+01:21:21,600 --> 01:21:32,679
+25 and actually had a huge I think it was like 25 or 30% LGBT uh plus and um so you know I think a very unique place
+
+454
+01:21:32,679 --> 01:21:44,040
+on the internet where people could uh have a social network where they could be anonymous they could put on different identities they could you know be someplace their parents weren't like Facebook or Instagram like really still
+
+455
+01:21:44,040 --> 01:21:55,199
+State a special spot so uh we end up buying it um now people like oh you bought it for $3 million but we bought it sort of taking on all liabilities including I think they were under
+
+456
+01:21:55,199 --> 01:22:05,480
+investigation by the FTC there were lawsuits there's all this sort of stuff so we we it was free like a puppy not free like a like beer yeah yeah and a pretty big
+
+457
+01:22:05,480 --> 01:22:15,760
+team I think 185 people I was you know we're taking a lot of burn was burning a ton of cash um and yeah that was 2019 and so it's been I think a humbling
+
+458
+01:22:15,760 --> 01:22:26,520
+experience you know running a social network um it was very very different from all the other products that we've done and I think uh there's some incredible things about Tumblr and that
+
+459
+01:22:26,520 --> 01:22:37,199
+I'm still very excited about so where like WordPress has primarily like a a desktop and web user base Tumblr is obviously like 85% app based um has a
+
+460
+01:22:37,199 --> 01:22:49,120
+young demographic and so part of the vision that now we're we're executing on is actually we wanted to create a path from people using Tumblr to actually being powered by WordPress on the back end so Tumblr users could unlock themes
+
+461
+01:22:49,120 --> 01:23:00,040
+customization plugins Etc actually we're the process right now of migrating the half a billion sites to Wordpress probably one of the largest data migrations that makes sense that's
+
+462
+01:23:00,040 --> 01:23:11,880
+happened in a while um so we're we're kind of trying to do this in a way that's invisible to users on the front end so changing at the back end while maintaining the apis and the interface and everything so it's it's a it's a fun engineering project I kind of posted
+
+463
+01:23:11,880 --> 01:23:23,080
+this like kind of Call to Arms got a got a lot of T fun people applying for automatic and we hired a lot of great folks around this sort of like audacious project this big carry audacious goal
+
+464
+01:23:23,080 --> 01:23:34,639
+and uh so that's where it's at no uh I I've sort of ran it personally for a few years while we're doing turn around and um but there a great team there and uh
+
+465
+01:23:34,639 --> 01:23:45,920
+but still it's I still challenged you know still not U still not profitable so we're still subsidizing it from the rest of automatics businesses fortunately the rest of our business have done really well so we were able to do that uh but I definitely want to get to a place where
+
+466
+01:23:45,920 --> 01:23:56,280
+it's sustainable and one of the things we're also experimenting with is cont tumbler have not just an advertising driven model because I think ultimately the incentives of advertising social network Works can lead to the kind of
+
+467
+01:23:56,280 --> 01:24:08,040
+dynamics that you see on the more negative side of like Twitter Instagram Facebook Etc and so really trying to create a subscription model or a sort of like first-party user-driven advertising
+
+468
+01:24:08,040 --> 01:24:19,880
+where like you promote your blog post or something like that um or you promote a wo Commerce product or something where it's like not a third party ad ecosystem which I think has a lot of like weird code and malware and lots of stuff I I
+
+469
+01:24:19,880 --> 01:24:30,280
+don't love wow sounds like a a lot a lot you took on with this acquisition uh and I love that you you said you ran it initially so this is a good seg way to
+
+470
+01:24:30,280 --> 01:24:39,960
+maybe my last question I'm curious where this goes just how do you well let me zoom out there's a lot of people these days that are excited about roll up businesses I'm gonna buy a bunch of
+
+471
+01:24:39,960 --> 01:24:51,239
+companies make them better make them awesome save money and then just keep building this holding company sort of thing you guys are doing that and it's working well uh what do you look for how do you decide a company's right for
+
+472
+01:24:51,239 --> 01:25:01,760
+automatic what are kind of the the factors they're like we should buy this we can turn this around and turn it into a big success I don't know if I would do another turnaround like
+
+473
+01:25:01,760 --> 01:25:11,760
+Tumblr again or at least not for many many years you know it's definitely a different thing the vast majority of things we acquire um it's tyly something that's done well and we want to
+
+474
+01:25:11,760 --> 01:25:22,239
+accelerate it or sometimes you know Aqua hires where like we're plugging it into one of our existing projects or we're taking the team and putting them on something we're already doing so it's a really talented team um you know Tumblr
+
+475
+01:25:22,239 --> 01:25:33,560
+I think we ended up ultimately replacing like 85 90% of the team as well so that that's just very diff different and um yeah so I I do think there are you know
+
+476
+01:25:33,560 --> 01:25:43,520
+different ways of doing it but if you look at our other Acquisitions like day one Etc like Founders still here many years later we're we're accelerating like you know stuff like that we brought it to Android we're bring it brought it
+
+477
+01:25:43,520 --> 01:25:55,040
+to web like that that it's more of like taking something good making it better and uh probably our best example there is is woocommerce you know which was have a small company I think 3 40 people
+
+478
+01:25:55,040 --> 01:26:06,639
+based out of South Africa and has obviously grown to you know um again I said you know automatic makes about half a billion dollars a year now and W Commerce is majority of that speaking of
+
+479
+01:26:06,639 --> 01:26:16,760
+that actually you haven't sh the revenue number I know it's public just like give people a sense of automatics Revenue can you just share those numbers because I think it'll might blow people's minds yeah I think we say publicly it's about
+
+480
+01:26:16,760 --> 01:26:27,520
+a half a billion dollars and S AR right now incredible okay I'm gonna I have a question for you it's kind of a hot seat question as you talked uh I wonder I feel like people are thinking this uh so
+
+481
+01:26:27,520 --> 01:26:39,280
+you've been talking about PE companies being often bad you're buying Tumblr you talked about laying off a bunch of people turning it all around how's that different from a p company mats yeah and
+
+482
+01:26:39,280 --> 01:26:48,440
+and I agree with you that like PE just because it's private Equity doesn't mean it's bad and also I say something people say is like hey wait don't you have private Equity investors as well at
+
+483
+01:26:48,440 --> 01:26:59,560
+automatic um and uh we do now they own usually a small percentage uh like sometimes under 1% and they don't have control of the company so I think
+
+484
+01:26:59,560 --> 01:27:09,760
+there's a distinguish is it a minority investment or a control investment and with WP engine silver L controls the company uh now when they control the company I think there's a spectrum of
+
+485
+01:27:09,760 --> 01:27:21,560
+actions you know obviously being more efficient is great and we should all strive for that and I think every business does whether it's private Equity or you know our business or things that are founder controlled you always want to be more efficient now
+
+486
+01:27:21,560 --> 01:27:31,920
+there's some Spectrum there where you over optimize or you could have dark patterns you know right now on WP engine it's very difficult to cancel your account uh because they're they're
+
+487
+01:27:31,920 --> 01:27:42,679
+actually I think as of today 45,000 uh sites have left so they're I think down to like 600 yeah um well because their customers have realized
+
+488
+01:27:42,679 --> 01:27:53,560
+like hey this isn't WordPress this isn't or they're suing the guy who started WordPress so like maybe we should uh not support this commercially so um we have this site WordPress engent tracker.com
+
+489
+01:27:53,560 --> 01:28:03,960
+that sort of shows in real time the sites that are leaving it's kind of an exciting thing to see that number tick up um actually maybe a good example as well like even though there's a lot of negativity if you actually look at like
+
+490
+01:28:03,960 --> 01:28:15,639
+how people are voting with their wallets um they're leaving so I think you have to judge as well like just look at the track record so one of the things I'm very proud of with automatic is we are
+
+491
+01:28:15,639 --> 01:28:25,679
+an acquirer of first Resorts and we have Founders that have sold to us uh Paul May at day one is a great example that they need to sell you know could could
+
+492
+01:28:25,679 --> 01:28:34,840
+have easily wildly profitable could have run it himself for a long long time but people choose to join because they feel like we'll be good stewards of it in the future I nor only just have to look at
+
+493
+01:28:34,840 --> 01:28:45,320
+the track record um so I think you know don't judge it by what it's called judge it by the actions over time and um and I I hope to continue building that
+
+494
+01:28:45,320 --> 01:28:55,639
+reputation for a place that's a good Steward of communities and software and everything else for for many years to come Matt we covered so much everything I asked you all the hard questions and
+
+495
+01:28:55,639 --> 01:29:05,239
+more before we wrap up is there anything else that you want to leave listeners with any last thoughts comments insights stories oh um yeah follow me I'm
+
+496
+01:29:05,239 --> 01:29:16,719
+photomat p o t m a t on Tumblr Twitter Instagram everything like that uh I post a lot about other stuff I post a lot about Ai and open source and other things some WordPress things in there as
+
+497
+01:29:16,719 --> 01:29:26,560
+well you know I have these life missions to democratize publishing and commerce we added a new one last year which is messaging so it's in mode right now but relaunching in a few months it's product
+
+498
+01:29:26,560 --> 01:29:38,000
+called beeper which takes all your telegram Instagram DM signal everything brings it all into one app and you can do some really cool stuff like that uh and especially when you start to imagine
+
+499
+01:29:38,000 --> 01:29:49,480
+search for AI local AI around that so very very excited about that relaunch so I encourage people to um you check out the beta now go to b.com beta to get like the new version uh and we're going
+
+500
+01:29:49,480 --> 01:30:01,159
+to relaunch that later in the year so uh yeah I'm very excited about that it's it's kind of fun to be be working on something that's at the stage where WordPress was in like 2003 2004 so yeah WordPress quite mature at this point uh
+
+501
+01:30:01,159 --> 01:30:12,960
+woo Commerce is kind of where WordPress was in like 2010 and then you know the Beeper stuff the messaging stuff is where we were in like 2003 so it's uh one thing that keeps me excited is working at like different stages of this yeah this feels like a reason to be
+
+502
+01:30:12,960 --> 01:30:24,040
+doing your approach to Burkshire hathway is just like stay active in early stage stuff and not just optimize established things uh says beer.com by the way
+
+503
+01:30:24,040 --> 01:30:33,719
+domain name uh photomat is that what's the story photomat are you you're into photography I imagine is the story yeah it's a little B of A pun so you know
+
+504
+01:30:33,719 --> 01:30:45,159
+there's a a photo is a photo mat is also like p f o t o m a t is a is a place that you would go to like develop your photos back when you'd have film and develop things um so originally my my
+
+505
+01:30:45,159 --> 01:30:56,719
+username was sax matat because I played the sax phone um now sometimes people M hear that and also like as you know I started I stopped Trav I was started traveling so much because uh there been years I do
+
+506
+01:30:56,719 --> 01:31:08,159
+like 400,000 miles of air travel because I go around the world to like go to Wordpress events and meet the community and you know as a distributed company we do lots of meetups and so it was became hard to carry my saxophone around so my
+
+507
+01:31:08,159 --> 01:31:18,440
+uh method of artistic expression became photography and that's actually kind of how WordPress started was actually originally a site where I could share my photos you know before Flickr before Facebook and everything like that um
+
+508
+01:31:18,440 --> 01:31:27,199
+sort of use this Gallery software actually open source Gallery software PHP software to sort of share all the photos I was taking and actually now on my website I think I have over 38,000
+
+509
+01:31:27,199 --> 01:31:37,880
+photos I posted and uh yeah that's uh it's it's still one of the things I really love so it's also a username that was available everywhere and uh I still
+
+510
+01:31:37,880 --> 01:31:49,159
+do it so I'm actually going to the mahaa the big you know 300 million person gathering at the ganji river a few weeks and uh one I just decided to experience that it happens like every 12 years but
+
+511
+01:31:49,159 --> 01:32:00,400
+two I'm just really sad to like take some time to do photography uh and uh yeah I really enjoy it you forgot to mention your website uh where your blog your WordPress site itself where you
+
+512
+01:32:00,400 --> 01:32:11,800
+blog M.T is the domain which is amazing uh I will Point people to one my my favorite uh ritual you have on your blog which is uh you share what's in your bag
+
+513
+01:32:11,800 --> 01:32:22,480
+you talk about how you travel all this and I think every year you're like here's the gadgets I use most and bring with me everywhere right it's my most popular post of the Year by far not surpris and just you need you need
+
+514
+01:32:22,480 --> 01:32:34,320
+Amazon just buy everything button uh yeah because basically you're just trying to optimize for the least weight and most utility right out of all these gadgets that you're bringing with the end trips yeah actually weighing it is
+
+515
+01:32:34,320 --> 01:32:45,719
+something I just started doing this year so because my bag actually got really heavy got like 35 pounds or something and so uh yeah some friends were like hey why don't we weigh everything and just go through and poting the weights
+
+516
+01:32:45,719 --> 01:32:55,719
+oh my God okay anyway we'll point be with that Matt thank you so much for doing this this was awesome Lenny thank you so much and I really appreciate you know the ability to discuss these things in a longer form and also just your
+
+517
+01:32:55,719 --> 01:33:07,199
+audience and so oh I guess final thing I'll say is we're hiring a ton so you have one of the most incredible audiences in the world I recommend your podcast and newsletter to a lot of my colleagues and so um if you're someone who loves this kind of stuff I think
+
+518
+01:33:07,199 --> 01:33:17,600
+that's a big opportunity at automatic to uh to have an impact on these things what roles are you hiring for most and where do people find these roles automatic.com a
+
+519
+01:33:17,600 --> 01:33:28,239
+aut2 IC U there's a work forist page you can kind of see how we work we're fully distribut and Comm made to that forever you know we sort of started that another interesting thing is we actually pay the
+
+520
+01:33:28,239 --> 01:33:40,040
+same salaries globally so whether you're in California or Italy or Nigeria or wherever we pay Global salaries so um so
+
+521
+01:33:40,040 --> 01:33:51,440
+yeah a lot of opportunities and um we're hiring for kind of everything so I would say but particularly like people with great design or product skills um is probably one of the areas that uh you
+
+522
+01:33:51,440 --> 01:34:03,480
+can have the biggest impact at automatic right now all right if you this far into the podcast you should definitely un Matt thank you thank you for being here hi everyone thank you so much for listening
+
+523
+01:34:03,480 --> 01:34:14,159
+if you found this valuable you can subscribe to the show on Apple podcast Spotify or your favorite podcast app also please consider giving us a rating or leaving a review as that really helps
+
+524
+01:34:14,159 --> 01:34:25,400
+other listeners find the podcast you can find all past episodes or learn more about the show at Lenny podcast.com see you in the next episode

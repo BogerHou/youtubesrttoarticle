@@ -1,0 +1,3525 @@
+1
+00:00:00,040 --> 00:00:02,600
+I want to start with talking about your pod model,  
+
+2
+00:00:02,600 --> 00:00:06,120
+which is a really unique way of building 
+and organizing your product teams.
+
+3
+00:00:06,120 --> 00:00:10,680
+That was probably 2016, we're trying to figure 
+out how does the operating model look like for  
+
+4
+00:00:10,680 --> 00:00:14,440
+product and engineering. The first bunch 
+of people we had was essentially a pod,  
+
+5
+00:00:14,440 --> 00:00:18,400
+it was one product manager, a user experience 
+designer, backend engineers, a couple of  
+
+6
+00:00:18,400 --> 00:00:21,800
+front-end engineers, but at some stage 
+we're starting to scale, we are kind of  
+
+7
+00:00:21,800 --> 00:00:25,360
+contemplating do we go the traditional, 
+the old school of front-end engineers,  
+
+8
+00:00:25,360 --> 00:00:28,240
+backend engineers, and then we said 
+let's try to replicate what we have.
+
+9
+00:00:28,240 --> 00:00:31,560
+Let's talk about how these pods work with 
+design partners, from what I've heard,  
+
+10
+00:00:31,560 --> 00:00:34,280
+it's very unlike how any other company works.
+
+11
+00:00:34,280 --> 00:00:37,840
+We just took the pod concept to an 
+extreme, where every pod is working  
+
+12
+00:00:37,840 --> 00:00:41,320
+with sometimes a dozen design partners, 
+sometimes two dozen design partners.
+
+13
+00:00:41,320 --> 00:00:45,080
+And this feels like a cheap code of 
+how to build new product lines. What  
+
+14
+00:00:45,080 --> 00:00:49,000
+are the percentage of success 
+rate you have with new product?
+
+15
+00:00:49,000 --> 00:00:51,480
+I would say very close to 100% of the features we  
+
+16
+00:00:51,480 --> 00:00:54,280
+build end up being used by a 
+significant number of people.
+
+17
+00:00:54,280 --> 00:00:56,800
+Does it feel crazy for companies 
+not to operate this way?
+
+18
+00:00:56,800 --> 00:01:00,640
+I wouldn't go back. I hate terms such as 
+risks because that's a very ambiguous term,  
+
+19
+00:01:00,640 --> 00:01:03,880
+but just the risk of building something you're 
+not going to know if it's going to get used.
+
+20
+00:01:03,880 --> 00:01:06,280
+So, when I ask people at Gong what to ask you,  
+
+21
+00:01:06,280 --> 00:01:09,720
+the most often term that came 
+up is autonomy and trust.
+
+22
+00:01:09,720 --> 00:01:16,160
+It's a very selfish thing, it's a 
+very personal thing, I just think...
+
+23
+00:01:16,160 --> 00:01:21,760
+Today my guest is Eilon Reshef. Eilon is 
+co-founder and chief product officer at Gong, he  
+
+24
+00:01:21,760 --> 00:01:26,960
+was also a long-time chief technology officer at 
+Gong. As I share at the top of our conversation,  
+
+25
+00:01:26,960 --> 00:01:32,280
+it feels like basically every company that has 
+a sales team uses Gong, and it's really rare to  
+
+26
+00:01:32,280 --> 00:01:37,960
+build a product that is so ubiquitous and so loved 
+across the tech ecosystem. In our conversation,  
+
+27
+00:01:37,960 --> 00:01:42,640
+Eilon shares some of the secrets of what 
+makes Gong so consistently successful,  
+
+28
+00:01:42,640 --> 00:01:46,840
+including how their product teams work with 
+six to 12 design partners on every new product  
+
+29
+00:01:46,840 --> 00:01:52,240
+and feature that they invest in, how he 
+creates a culture of autonomy and trust,  
+
+30
+00:01:52,240 --> 00:01:58,280
+why and also how he optimizes for making decisions 
+quickly, even large one-way door decisions,  
+
+31
+00:01:58,280 --> 00:02:01,920
+what he and his team have learned about 
+building AI-based products, since they've  
+
+32
+00:02:01,920 --> 00:02:06,480
+been building AI-based products longer than 
+most other companies, and so much more. If  
+
+33
+00:02:06,480 --> 00:02:12,040
+you're building a B2B SaaS company or product, 
+you will learn a lot from this conversation. 
+
+34
+00:02:12,040 --> 00:02:15,160
+If you enjoy this podcast, don't forget to 
+subscribe and follow it in your favorite  
+
+35
+00:02:15,160 --> 00:02:19,360
+podcasting app or YouTube, it's the best way 
+to avoid missing feature episodes and it helps  
+
+36
+00:02:19,360 --> 00:02:26,320
+the podcast tremendously. With that, I bring 
+you Eilon Reshef. This episode is brought to  
+
+37
+00:02:26,320 --> 00:02:31,960
+you by WorkOS. If you're building a SaaS app, at 
+some point your customers will start asking for  
+
+38
+00:02:31,960 --> 00:02:38,440
+enterprise features like SAML authentication and 
+SCIM provisioning. That's where WorkOS comes in,  
+
+39
+00:02:38,440 --> 00:02:44,000
+making it fast and painless to add enterprise 
+features to your app. Their APIs are easy to  
+
+40
+00:02:44,000 --> 00:02:48,800
+understand so that you can ship quickly and get 
+back to building other features. Today, hundreds  
+
+41
+00:02:48,800 --> 00:02:54,600
+of companies are already powered by WorkOS, 
+including ones you probably know, like Vercel,  
+
+42
+00:02:54,600 --> 00:03:01,680
+Webflow and Loom. WorkOS also recently acquired 
+Warrant, the fine-grained authorization service. 
+
+43
+00:03:01,680 --> 00:03:07,160
+Warrant's product is based on a groundbreaking 
+authorization system called Zanzibar,  
+
+44
+00:03:07,160 --> 00:03:12,120
+which was originally designed for Google, to 
+power Google Docs and YouTube. This enables  
+
+45
+00:03:12,120 --> 00:03:16,560
+fast authorization checks at enormous scale 
+while maintaining a flexible model that can  
+
+46
+00:03:16,560 --> 00:03:21,480
+be adapted to even the most complex use cases. 
+If you're currently looking to build role-based  
+
+47
+00:03:21,480 --> 00:03:27,720
+access control or other enterprise features, 
+like single sign-on, SCIM, or user management,  
+
+48
+00:03:27,720 --> 00:03:32,840
+you should consider WorkOS. It's a drop-in 
+replacement for Auth0, and supports up to  
+
+49
+00:03:32,840 --> 00:03:42,760
+1 million monthly active users for free. Check it 
+out at workos.com to learn more. That's workos.com 
+
+50
+00:03:42,760 --> 00:03:46,920
+Hey, it's Lenny, if you want to boost your 
+clarity and confidence, I want to recommend a  
+
+51
+00:03:46,920 --> 00:03:52,480
+podcast called Think Fast, Talk Smart. One of the 
+most essential ingredients to success in business  
+
+52
+00:03:52,480 --> 00:03:57,720
+and in life is effective communication. Every 
+Tuesday, host and Stanford graduate school of  
+
+53
+00:03:57,720 --> 00:04:03,600
+business lecturer, Matt Abrahams sits down with 
+experts to discuss the best tips and techniques  
+
+54
+00:04:03,600 --> 00:04:08,880
+that enhance your professional development. Hone 
+your small talk, influence, presentation skills,  
+
+55
+00:04:08,880 --> 00:04:14,240
+and so much more on Think Fast, Talk Smart. So, 
+what are you waiting for? listen every Tuesday,  
+
+56
+00:04:14,240 --> 00:04:18,600
+wherever you get your podcast and find additional 
+content to level up your communication at  
+
+57
+00:04:18,600 --> 00:04:26,920
+fastersmarter.io. Eilon, thank you so much 
+for being here, welcome to the podcast.
+
+58
+00:04:26,920 --> 00:04:28,280
+Thank you for having me.
+
+59
+00:04:28,280 --> 00:04:33,520
+So, it feels like on this podcast every guest 
+that I've had mentions Gong as a product they use,  
+
+60
+00:04:33,520 --> 00:04:39,080
+it feels like it's just like in the ether of 
+tech companies these days. Also, I've heard so  
+
+61
+00:04:39,080 --> 00:04:44,880
+many times how unique it is that you all operate, 
+how you all build your product teams and operate,  
+
+62
+00:04:44,880 --> 00:04:48,960
+which is, I especially love hearing on this 
+podcast just different ways of operating,  
+
+63
+00:04:48,960 --> 00:04:53,240
+so I'm really excited to dig into this, to hear 
+about the journey and things you've learned along  
+
+64
+00:04:53,240 --> 00:04:58,040
+the way of building Gong, and essentially building 
+something that is so ubiquitous and so loved,  
+
+65
+00:04:58,040 --> 00:05:03,000
+which is very rare. I want to start 
+with talking about your pod model,  
+
+66
+00:05:03,000 --> 00:05:06,680
+which is a really unique way of building 
+and organizing your product teams,  
+
+67
+00:05:06,680 --> 00:05:09,680
+and in particular how you work with design 
+partners. But let's start with the pod model,  
+
+68
+00:05:09,680 --> 00:05:13,440
+can you just talk about what this pod model 
+is and how you organize your product teams?
+
+69
+00:05:13,440 --> 00:05:19,280
+Sure. And when we started the pod model, that 
+was probably 2016 before it became more popular,  
+
+70
+00:05:19,280 --> 00:05:23,680
+I think that might've been even before the 
+Marty Cagan set of books, I don't remember  
+
+71
+00:05:23,680 --> 00:05:29,000
+exactly. But at some stage we're starting to 
+scale, scaling is maybe from 50 people to 60  
+
+72
+00:05:29,000 --> 00:05:33,040
+people, in the whole company or whatever, 
+and we're trying to figure out how does the  
+
+73
+00:05:33,040 --> 00:05:37,920
+operating model look like for a product and 
+engineering. And the first bunch of people  
+
+74
+00:05:37,920 --> 00:05:45,080
+we had was essentially a pod, it was one product 
+manager, yours truly, a user experience designer,  
+
+75
+00:05:45,080 --> 00:05:50,240
+a couple of maybe backend engineers, a couple of 
+front-end engineers and whatnot. And we were kind  
+
+76
+00:05:50,240 --> 00:05:54,320
+of contemplating do we go the traditional, 
+the old school of front-end engineers,  
+
+77
+00:05:54,320 --> 00:05:58,960
+backend engineers or however it is? And then 
+we said let's try to replicate what we have. 
+
+78
+00:05:58,960 --> 00:06:05,120
+So, what we essentially did is really replicated 
+that. So, up until now we have this pod structure,  
+
+79
+00:06:05,120 --> 00:06:09,080
+product manager UX, fractional 
+writing, fractional analyst,  
+
+80
+00:06:09,080 --> 00:06:14,080
+and then a team leader from an engineering 
+standpoint, five to I'd say seven engineers,  
+
+81
+00:06:14,080 --> 00:06:18,840
+they get an agenda, think like we launched a 
+forecast product, that was a pod working on that,  
+
+82
+00:06:18,840 --> 00:06:23,840
+and then they get to be pretty autonomous in 
+identifying how to solve the problems, and also  
+
+83
+00:06:23,840 --> 00:06:29,280
+working with enough customers so I can go to sleep 
+knowing that they're not hallucinating is the term  
+
+84
+00:06:29,280 --> 00:06:34,400
+that everybody uses now in different contexts, 
+but going in a very reasonable direction.
+
+85
+00:06:34,400 --> 00:06:37,640
+So, I want to talk about the autonomy piece, 
+so that's a really important point, but before  
+
+86
+00:06:37,640 --> 00:06:42,200
+we get there, let's talk about how these pods 
+work with design partners. From what I've heard,  
+
+87
+00:06:42,200 --> 00:06:46,520
+it's very unlike how any other company works, 
+and I think it's something a lot of people can  
+
+88
+00:06:46,520 --> 00:06:51,400
+learn from. So, talk about the scale of 
+how these pods work with design partners.
+
+89
+00:06:51,400 --> 00:06:56,240
+So, I think we just took the pod concept 
+to an extreme, where every pod is working  
+
+90
+00:06:56,240 --> 00:07:00,760
+with sometimes a dozen design partners, sometimes 
+two dozen design partners, maybe sometimes five,  
+
+91
+00:07:00,760 --> 00:07:06,520
+if it's a very niche or fringe capability, 
+and they work with them hand in hand. So,  
+
+92
+00:07:06,520 --> 00:07:10,800
+an interesting story, the same forecast product 
+I just mentioned, the product manager comes to  
+
+93
+00:07:10,800 --> 00:07:15,120
+me one day and he's like, hey, I just going to 
+play with a design partner on the product. And  
+
+94
+00:07:15,120 --> 00:07:19,160
+I kind of know what's going on and I know it's 
+not built yet, so I asked the product manager,  
+
+95
+00:07:19,160 --> 00:07:23,600
+but we don't have that working. So, he said, 
+no, no we don't, but I showed him the half  
+
+96
+00:07:23,600 --> 00:07:28,120
+built stuff, I asked him to hit save, 
+he hit save, and got an error message. 
+
+97
+00:07:28,120 --> 00:07:31,840
+And I told him, let's meet again in a week, 
+and that save button was going to work. So,  
+
+98
+00:07:31,840 --> 00:07:36,280
+it's very extreme in terms of working hand in 
+hand with the customer. Customers appreciate it,  
+
+99
+00:07:36,280 --> 00:07:41,800
+I later got feedback that they appreciate 
+how the thing was making progress according  
+
+100
+00:07:41,800 --> 00:07:46,600
+to their feedback, not what they said, but 
+interpreting what they said, digesting it,  
+
+101
+00:07:46,600 --> 00:07:52,800
+and building something that makes sense. So, 
+every pod has this set of design partners.
+
+102
+00:07:52,800 --> 00:07:55,560
+So, these pods essentially 
+cross-functional product teams,  
+
+103
+00:07:55,560 --> 00:08:00,280
+each one has... Do you organize it around an 
+outcome? How do you describe what each pod is  
+
+104
+00:08:00,280 --> 00:08:04,800
+responsible for? Is it like move this metric, 
+or build this product, or something else?
+
+105
+00:08:04,800 --> 00:08:08,240
+We tend to be less metric-driven maybe 
+than your average, especially B2C,  
+
+106
+00:08:08,240 --> 00:08:12,560
+but even other maybe B2B companies. Usually 
+it's more around some sort of a job to be done,  
+
+107
+00:08:12,560 --> 00:08:18,280
+in our case it could be sales engagement, how 
+do you prospect? Or conversation intelligence,  
+
+108
+00:08:18,280 --> 00:08:22,760
+how do you create a summary? How do you make it 
+easier for people to remove drudgery and consume  
+
+109
+00:08:22,760 --> 00:08:29,640
+information fast? Once you get this agenda, you 
+pretty much have a lot of, you mentioned autonomy,  
+
+110
+00:08:29,640 --> 00:08:34,960
+a lot of control over how you progress. 
+Ideally design partners guide you, not me.
+
+111
+00:08:34,960 --> 00:08:39,000
+Awesome. Okay. So, it's like, here's 
+the outcome we want this pod to achieve,  
+
+112
+00:08:39,000 --> 00:08:43,760
+they have autonomy to work with design 
+partners to design this new product. So,  
+
+113
+00:08:43,760 --> 00:08:46,120
+maybe let's stay on this example 
+of this forecasting tool,  
+
+114
+00:08:46,120 --> 00:08:49,600
+can you just briefly describe what this 
+tool, what it gives you, what it does?
+
+115
+00:08:49,600 --> 00:08:53,320
+Yeah, it's a product we launched a couple of 
+years ago and it helps organization forecast where  
+
+116
+00:08:53,320 --> 00:08:58,040
+they land in terms of the sales organization. So, 
+every sales organization, B2B sales organization,  
+
+117
+00:08:58,040 --> 00:09:03,600
+has a bottoms up forecast process. People 
+submit numbers, people override that,  
+
+118
+00:09:03,600 --> 00:09:08,440
+AI helps you, in our case, AI helps you predict 
+the right number, usually there's an analytics  
+
+119
+00:09:08,440 --> 00:09:13,920
+component on top of it, it helps you assess 
+it at scale. So, that's the product itself.
+
+120
+00:09:13,920 --> 00:09:16,520
+Awesome. So, you created this pod, 
+here, build this forecast product,  
+
+121
+00:09:16,520 --> 00:09:20,480
+make it successful, how do they find 
+these design partners? Is it reach into  
+
+122
+00:09:20,480 --> 00:09:24,680
+existing customer base and figure out 
+who would be most interested in this?
+
+123
+00:09:24,680 --> 00:09:29,000
+Usually it's existing customers, very, very 
+rarely it would be a non-existing customers,  
+
+124
+00:09:29,000 --> 00:09:35,080
+but customers with some stage expressed 
+interest in this capability. Not to over  
+
+125
+00:09:36,240 --> 00:09:39,680
+give a plug to Gong, but of course we can 
+listen, all of our conversations are recorded,  
+
+126
+00:09:39,680 --> 00:09:45,180
+so I can always look up our conversation database 
+and which customers express a need for X,  
+
+127
+00:09:45,180 --> 00:09:50,640
+Y and Z, you can very easily reach out to them. 
+One of the maybe unique things we've done,  
+
+128
+00:09:50,640 --> 00:09:55,880
+at some stage it just became, I think we got like 
+25 pods right now, maybe 30, it depends what you  
+
+129
+00:09:55,880 --> 00:10:02,640
+call a pod. But it's a lot of effort, like this 
+whole management, at some stage I borrowed an  
+
+130
+00:10:02,640 --> 00:10:07,800
+idea that comes from talent acquisition, and 
+in talent acquisition recruiting there is a  
+
+131
+00:10:07,800 --> 00:10:12,680
+person called recruiting coordinator... If you 
+do that scale, which we had done over the years. 
+
+132
+00:10:12,680 --> 00:10:16,520
+And that person, all they do is just set up 
+the meetings for the recruiter, who then sets  
+
+133
+00:10:16,520 --> 00:10:21,400
+up the meeting for the hiring manager. So, in our 
+product team, there's one person who's basically  
+
+134
+00:10:21,400 --> 00:10:26,480
+a research coordinator, and she's responsible for 
+reaching out and she basically talks with the PMs,  
+
+135
+00:10:26,480 --> 00:10:30,120
+like what's your target market, ICP, 
+whatever you want to call that, give  
+
+136
+00:10:30,120 --> 00:10:35,320
+me some... What do you want to learn from them? 
+She reaches us, we have a micro CRM for that,  
+
+137
+00:10:35,320 --> 00:10:41,360
+and then sets up the meeting, and the PM comes 
+in, they have already a meeting in their calendar.
+
+138
+00:10:41,360 --> 00:10:45,720
+And these are the people at these companies 
+that are going to be their design partners?
+
+139
+00:10:45,720 --> 00:10:50,160
+Exactly. So, I might say, hey, what I want 
+to speak is with head of rev ops at midsize  
+
+140
+00:10:50,160 --> 00:10:56,040
+companies, or IC seller at an enterprise 
+company, and then she can, of course, sift  
+
+141
+00:10:56,040 --> 00:11:01,320
+through our customer base, slice and dice it, run 
+a micro email campaign, and get those to come in.
+
+142
+00:11:01,320 --> 00:11:04,800
+I love that detail, because as you said, 
+coordinating 12 companies and people at  
+
+143
+00:11:04,800 --> 00:11:10,440
+these companies and timing is really stressful and 
+complicated and could suck the PMs life up. So,  
+
+144
+00:11:10,440 --> 00:11:14,320
+that's really helpful. It's interesting, there 
+are some companies where product teams aren't  
+
+145
+00:11:14,320 --> 00:11:20,280
+even allowed to talk to customers, salespeople 
+are like, no, don't mess with these people,  
+
+146
+00:11:20,280 --> 00:11:24,080
+customer success is like no, we got this. 
+You were like the complete opposite,  
+
+147
+00:11:24,080 --> 00:11:31,680
+each pod is working directly with, say, a dozen 
+customers helping build a new product for them.
+
+148
+00:11:31,680 --> 00:11:37,120
+Exactly. And in the early days we 
+didn't even tightly coordinate with  
+
+149
+00:11:37,120 --> 00:11:40,480
+customer success. Nowadays, we do it much 
+better because there's always going to be,  
+
+150
+00:11:40,480 --> 00:11:44,720
+this customers frustrated about something, or in 
+a negotiation about something, that's probably not  
+
+151
+00:11:44,720 --> 00:11:49,600
+the right time to ask them about to be a design 
+partner. So, we double check, but it's not like  
+
+152
+00:11:49,600 --> 00:11:54,720
+a process where we have to get signed off by three 
+customer success managers to talk with a customer.
+
+153
+00:11:54,720 --> 00:11:59,560
+That makes sense. Yeah, you don't want to 
+surprise people and mess up relationships. So,  
+
+154
+00:11:59,560 --> 00:12:03,840
+is there any structure to the design 
+partner process or is it just teams  
+
+155
+00:12:03,840 --> 00:12:06,920
+have these people available and they 
+talk with them when they want? Or is  
+
+156
+00:12:06,920 --> 00:12:10,840
+there more structure to how to effectively 
+build the product with design partners?
+
+157
+00:12:10,840 --> 00:12:16,000
+It depends on the context. So, when you build 
+a new product, it's a more linear path. Ideally  
+
+158
+00:12:16,000 --> 00:12:20,400
+you want it to be launched sometime. Ideally you 
+want to measure some progress, so usually what  
+
+159
+00:12:20,400 --> 00:12:25,760
+we've done in this case is some sort of a weekly 
+meeting where we show them progress, and sometimes  
+
+160
+00:12:25,760 --> 00:12:31,640
+bi-weekly depending on our own cadence. And some 
+other capabilities that we build might be more, I  
+
+161
+00:12:31,640 --> 00:12:36,520
+want to say free form, maybe it's an enhancement, 
+maybe it's tweaked, maybe it's an extension of  
+
+162
+00:12:36,520 --> 00:12:41,800
+the... I'll give an example, one of the things we 
+do right now is we let customers ask a question  
+
+163
+00:12:41,800 --> 00:12:45,840
+about an account. So, coming to Gong, like 
+what's new with Cisco? If Cisco is a customer. 
+
+164
+00:12:45,840 --> 00:12:52,880
+And at some stage you do it, we're doing it in all 
+languages. So, you want to recruit a specific set  
+
+165
+00:12:52,880 --> 00:12:56,840
+of design partners who are non-English speakers. 
+So, that doesn't have a strict timeline, you want  
+
+166
+00:12:56,840 --> 00:13:01,000
+to get enough of them so you see the thing works, 
+gets your reasonable quality results. You're not  
+
+167
+00:13:01,000 --> 00:13:05,160
+going to get to all languages on the one hand, but 
+at the same time you don't have just Spanish. So,  
+
+168
+00:13:05,160 --> 00:13:08,600
+that might be less structures, maybe it's a couple 
+of minutes with each one and then we move on,  
+
+169
+00:13:08,600 --> 00:13:12,920
+you launch the feature, and you move 
+to the next "project or feature."
+
+170
+00:13:12,920 --> 00:13:15,760
+So, one thing that people might 
+be thinking as they hear this is,  
+
+171
+00:13:16,920 --> 00:13:20,920
+all these customers are telling you, here's 
+what I need to be to use this forecasting tool,  
+
+172
+00:13:20,920 --> 00:13:24,520
+for example, and as a PM it's always 
+this balance of doing what customers  
+
+173
+00:13:24,520 --> 00:13:28,800
+ask you to do versus, oh, we have this 
+vision and here's how we keep it simple.  
+
+174
+00:13:29,320 --> 00:13:34,360
+What guidance do you give your teams for 
+what to do with this feedback, essentially?
+
+175
+00:13:34,360 --> 00:13:40,880
+Yeah, I think this is core skill that I expect PMs 
+to have around this, this is exactly your job, try  
+
+176
+00:13:40,880 --> 00:13:46,400
+to figure out what request is must-have versus not 
+must-have. We typically, they ask the customer,  
+
+177
+00:13:46,960 --> 00:13:50,800
+what do you have right now? How happy are 
+you between zero and 10? Or whatever. So,  
+
+178
+00:13:50,800 --> 00:13:54,160
+if you're at the six, we want to get you to an 
+eight or a nine, so that's maybe a high level  
+
+179
+00:13:54,160 --> 00:13:58,480
+principle, but at the same time I expect them to 
+say, hey, this is a unique... I didn't hear it  
+
+180
+00:13:58,480 --> 00:14:02,200
+from anybody else, maybe I'm going to practically 
+reach out to more customers, but that might be a  
+
+181
+00:14:02,200 --> 00:14:08,320
+one customer thing. And we still do one customer 
+things in different context. So, if we have a,  
+
+182
+00:14:08,320 --> 00:14:12,000
+I don't know, seven or eight figure deal, that 
+they have one customization that they really,  
+
+183
+00:14:12,000 --> 00:14:17,040
+really need, and we know that they can't work 
+without it, every enterprise facing company  
+
+184
+00:14:17,040 --> 00:14:20,720
+we're going to do that. But from a design partner 
+perspective, it's the opposite, it's more like  
+
+185
+00:14:20,720 --> 00:14:25,200
+let's try to build something that works across 
+our customer base versus for a specific customer.
+
+186
+00:14:25,200 --> 00:14:29,040
+Which is why a dozen is probably 
+smarter than one or two or three.
+
+187
+00:14:29,960 --> 00:14:34,480
+Yeah, I think at some stage I guess you 
+get seven or eight or nine at some stage,  
+
+188
+00:14:34,480 --> 00:14:38,280
+based on my experience, the request starts 
+to converge. There might be one outlier,  
+
+189
+00:14:38,280 --> 00:14:40,440
+but generally you're going 
+to hear the same things.
+
+190
+00:14:40,440 --> 00:14:44,840
+I imagine this approach is rooted in how you 
+all started. We worked on a post back in the  
+
+191
+00:14:44,840 --> 00:14:49,440
+day on how you all got your first 10 customers, 
+and I remember the story was you got, I think,  
+
+192
+00:14:49,440 --> 00:14:53,880
+12 design partners when you first designed Gong, 
+and then you told them, okay, we're going to start  
+
+193
+00:14:53,880 --> 00:14:59,120
+charging now, and 11 out of 12 are like, we will 
+buy this now, please charge us, and we love it.
+
+194
+00:14:59,120 --> 00:15:02,600
+Exactly, exactly. So, in a 
+way it's replicating this,  
+
+195
+00:15:02,600 --> 00:15:07,760
+but it was successful at the time, it was 
+maybe 80% intention at a time and at some  
+
+196
+00:15:07,760 --> 00:15:10,800
+point you take the stuff that works 
+and you make it 100% the attention.
+
+197
+00:15:10,800 --> 00:15:15,800
+What are the percentage of success rate 
+you have with new products because you  
+
+198
+00:15:15,800 --> 00:15:20,280
+would think this approach is the best way 
+to consistently build products people will  
+
+199
+00:15:20,280 --> 00:15:23,560
+end up buying and using. Is it like 
+100% of the time you end up building  
+
+200
+00:15:23,560 --> 00:15:27,600
+things that people will buy and use, is 
+it something below that? What do you find?
+
+201
+00:15:27,600 --> 00:15:35,040
+I think it does increase significantly the 
+utility of the products, I would say very  
+
+202
+00:15:35,040 --> 00:15:39,520
+close to 100% of the features we build end up 
+being used by a significant number of people.  
+
+203
+00:15:39,520 --> 00:15:42,960
+We don't charge for all of them, for most of 
+them we don't charge, which doesn't mean other  
+
+204
+00:15:42,960 --> 00:15:47,720
+things couldn't happen, maybe people use it, 
+but the value is not huge. So, it's like yeah,  
+
+205
+00:15:47,720 --> 00:15:53,600
+design partner like it, but it ends up being 
+applicable to a smaller fragment or segment  
+
+206
+00:15:53,600 --> 00:15:58,520
+of our customer base than what we had hoped.
+It may be they're not as willing to pay for  
+
+207
+00:15:58,520 --> 00:16:01,960
+it, although that's a little bit of a different 
+process, like real product launch. It could  
+
+208
+00:16:01,960 --> 00:16:07,800
+be the quality is not good enough because 
+we're focusing on, is it providing value,  
+
+209
+00:16:07,800 --> 00:16:12,280
+is it understandable versus did you find a bug 
+when you used, I don't know, Safari, on this  
+
+210
+00:16:12,280 --> 00:16:16,880
+kind of computer. Because we're not building 
+the design partner program to solve for this,  
+
+211
+00:16:16,880 --> 00:16:21,840
+maybe we should, but we are not doing it right 
+now. But generally speaking, I would say better  
+
+212
+00:16:21,840 --> 00:16:28,560
+than that, more than 95% of the capabilities we 
+build are being used in a very significant way.
+
+213
+00:16:28,560 --> 00:16:33,080
+Which I think is probably higher than most 
+companies. And this feels like a cheat code of  
+
+214
+00:16:33,080 --> 00:16:40,240
+how to build new product lines, expand a product 
+expansion, TAM expansion, like ways to add new  
+
+215
+00:16:40,240 --> 00:16:44,360
+ways to charge your existing customers, and it 
+feels like a cheat code basically, just tell  
+
+216
+00:16:44,360 --> 00:16:48,120
+us what you need, we'll work with you and build 
+it and we'll sell it to you and it'll be great.
+
+217
+00:16:48,120 --> 00:16:53,440
+Yeah, respectfully, yours truly, I do believe 
+customers know much better than what they need,  
+
+218
+00:16:53,440 --> 00:16:57,200
+and then myself or my colleagues in 
+the executive team, whoever else,  
+
+219
+00:16:57,200 --> 00:17:01,520
+it's you talk to a customer and they 
+describe the pain. They might not know  
+
+220
+00:17:01,520 --> 00:17:05,960
+how to build it or what's the right way to 
+implement it, but the pain should be there.
+
+221
+00:17:05,960 --> 00:17:08,800
+Coming back to something else you 
+mentioned, this word autonomy. So,  
+
+222
+00:17:08,800 --> 00:17:14,920
+when I ask people a Gong what to ask you and what 
+stands out about you to them as a product leader,  
+
+223
+00:17:14,920 --> 00:17:20,680
+the most often term that came up is autonomy 
+and trust. How much autonomy you give teams,  
+
+224
+00:17:20,680 --> 00:17:26,520
+how much you trust teams to do the right 
+thing. Can you talk about that way of working,  
+
+225
+00:17:26,520 --> 00:17:30,320
+where that came from, and why you 
+think that is the way to operate?
+
+226
+00:17:30,320 --> 00:17:34,480
+It's very selfish thing, it's a very personal 
+thing. So, I think even beyond trust, it's just,  
+
+227
+00:17:34,480 --> 00:17:40,160
+for me, it's selfish. I'll tell you why, I just 
+think you get more from everybody if you let them  
+
+228
+00:17:40,160 --> 00:17:44,760
+be themselves, and do things in the way that they 
+believe is the right way. Of course within limits,  
+
+229
+00:17:44,760 --> 00:17:49,680
+right? They're not going to develop, I don't know 
+what it is, software in different business. But  
+
+230
+00:17:49,680 --> 00:17:56,800
+the story I always like to tell is, when my son 
+was in primary school, which was a while back,  
+
+231
+00:17:56,800 --> 00:18:01,760
+one of the parents told me... And we had this 
+picnic where all the parents and the kids were  
+
+232
+00:18:01,760 --> 00:18:06,400
+going to meet. And usually there's a list of 
+ingredients that people need to bring in, to  
+
+233
+00:18:06,400 --> 00:18:10,280
+bring on a bottle of water, whatever the thing is.
+And what's usually happened, there's even people  
+
+234
+00:18:10,280 --> 00:18:14,560
+are joking about it, is people run to the list, 
+because it's usually a physical list, and then...  
+
+235
+00:18:14,560 --> 00:18:19,120
+Or [inaudible 00:18:16] probably now it's already 
+in Google sheets always. And people run to just  
+
+236
+00:18:19,120 --> 00:18:24,480
+mark the item that is as easy to get as possible. 
+Like, a bottle of water, and then I'm done. And  
+
+237
+00:18:24,480 --> 00:18:28,040
+then, you always get the lowest common denominator 
+because everybody brings the sort of, I don't  
+
+238
+00:18:28,040 --> 00:18:33,000
+want to even say cheapest, the easiest thing that 
+you can bring to such a picnic, and this lady told  
+
+239
+00:18:33,000 --> 00:18:37,720
+me, here's a different method, just tell everybody 
+bring your own thing. I'm like, are you crazy?  
+
+240
+00:18:37,720 --> 00:18:43,160
+People are just going to not bring anything, or 
+whatever you want. Or people are going to bring  
+
+241
+00:18:43,160 --> 00:18:46,960
+the same thing. Multiple people are going to, 
+I don't know, bake some pie, or do something. 
+
+242
+00:18:48,000 --> 00:18:52,400
+And she's like, no, that's not going to happen. 
+So, I trusted her, that's maybe a trust word,  
+
+243
+00:18:52,400 --> 00:18:57,360
+but we tried it out, and what happened was really 
+kind of fascinating. People were going out to the  
+
+244
+00:18:57,360 --> 00:19:02,960
+specialty stores and bringing special cheese... 
+I'm based in Israel, so they were going to this  
+
+245
+00:19:02,960 --> 00:19:07,360
+hummus place, which is an Israeli thing. And 
+just driving 30 miles to your favorite thing,  
+
+246
+00:19:07,360 --> 00:19:12,280
+people were baking and making stuff. So, we 
+had literally a feast. And the funny thing,  
+
+247
+00:19:12,280 --> 00:19:16,160
+two things happened. Everybody was much, much 
+happier, they were happier because of course  
+
+248
+00:19:16,160 --> 00:19:21,560
+they got better food. And also, most people, just 
+their personality, they brought it to the tables,  
+
+249
+00:19:21,560 --> 00:19:25,200
+like I really like hummus, I don't like 
+whatever the other thing I would have to  
+
+250
+00:19:25,200 --> 00:19:28,720
+bring. And we did it every year afterwards 
+because we did this thing at least annually,  
+
+251
+00:19:29,360 --> 00:19:33,160
+and it will work every single time.
+So, if you take it to the software, you can't  
+
+252
+00:19:33,160 --> 00:19:38,400
+tell everybody just develop your own thing, but 
+if you can guide them towards, hey, do the thing  
+
+253
+00:19:38,400 --> 00:19:42,520
+that... Give him more autonomy, essentially, 
+bring yourself to the game, be yourself,  
+
+254
+00:19:42,520 --> 00:19:48,120
+don't try to put yourself in a box, I truly 
+believe you're going to get much better results,  
+
+255
+00:19:48,120 --> 00:19:52,400
+short, and even more importantly, long-term, 
+because it keeps people thinking, it keeps  
+
+256
+00:19:52,400 --> 00:19:57,920
+them being motivated, and they're like, how do I 
+contribute in the way I think is the right way?
+
+257
+00:19:57,920 --> 00:20:03,000
+It reminds me, I'm looking for daycares 
+for our son, he's almost 17 months now,  
+
+258
+00:20:03,000 --> 00:20:09,160
+and there's this Montessori approach to 
+teaching kids, and it's a very similar approach,  
+
+259
+00:20:09,160 --> 00:20:14,440
+which is just let them... If they're ever busy 
+with anything, don't even make eye contact, don't  
+
+260
+00:20:14,440 --> 00:20:18,720
+interrupt them, let them keep doing the thing, 
+and let them choose what they want to work on.
+
+261
+00:20:18,720 --> 00:20:23,840
+Yeah, there's many, many of these education 
+systems or principles that are along those  
+
+262
+00:20:23,840 --> 00:20:30,960
+lines. The person who told me that, I don't assume 
+she's invented it, but we all err on the side of  
+
+263
+00:20:30,960 --> 00:20:36,520
+wanting more control. But I do the same thing with 
+my kids. So I would never... I never installed  
+
+264
+00:20:36,520 --> 00:20:41,520
+any piece of software on my kids' devices. 
+So, not firewall protection, I don't know,  
+
+265
+00:20:41,520 --> 00:20:47,520
+antivirus, error tag, nothing, because I'm 
+like this is your problem, and if you want  
+
+266
+00:20:47,520 --> 00:20:54,000
+to protect yourself, it's your responsibility. 
+So, this is autonomy. And there was one time  
+
+267
+00:20:54,000 --> 00:20:57,920
+where I had negotiated with my daughter, she 
+was like, I told her I think you're using your  
+
+268
+00:20:57,920 --> 00:21:02,400
+computer too much, and we negotiated. She said, 
+maybe an hour is enough, I told her maybe more. 
+
+269
+00:21:02,400 --> 00:21:06,000
+I think we agreed on a two-hour thing, and 
+then she came to me three days in a row,  
+
+270
+00:21:06,000 --> 00:21:10,200
+could you please install the software on 
+my machine so I can... Help me control my  
+
+271
+00:21:10,200 --> 00:21:14,360
+limits. And I love it when it's the other 
+way around because now she's responsible,  
+
+272
+00:21:14,360 --> 00:21:19,200
+I'm helping her versus the other way around. So, 
+absolutely, I take it in my personal life as well.
+
+273
+00:21:19,200 --> 00:21:23,400
+So, how does this look day-to-day 
+at Gong on the product team,  
+
+274
+00:21:23,400 --> 00:21:25,760
+when someone hears, oh, you 
+give them a lot of autonomy,  
+
+275
+00:21:25,760 --> 00:21:29,800
+what does that actually look like? Help 
+people understand what that actually means.
+
+276
+00:21:29,800 --> 00:21:37,040
+It means that if you're working with design 
+partners and you get an idea from the customer,  
+
+277
+00:21:37,040 --> 00:21:41,240
+it's your responsibility to decide are you going 
+to do it? Are you going to talk to your manager,  
+
+278
+00:21:41,240 --> 00:21:46,280
+or to me? Now, I have, of course, group managers, 
+but it's your responsibility. So, we're not going  
+
+279
+00:21:46,280 --> 00:21:52,080
+to "punish you" if you decided that you kind 
+of took it an opinion from a customer and went  
+
+280
+00:21:52,080 --> 00:21:57,880
+ahead and did it, it's your responsibility to 
+decide, do I know enough? Do I need more input?  
+
+281
+00:21:58,760 --> 00:22:06,800
+How up do I go? And that requires them to 
+think, how confident am I in my decisions.
+
+282
+00:22:06,800 --> 00:22:11,880
+So, is the culture basically you give 
+them feedback and advice and the teams  
+
+283
+00:22:11,880 --> 00:22:15,800
+can operate the way they want, they can 
+build the features they think are important,  
+
+284
+00:22:15,800 --> 00:22:18,080
+work with design partners 
+that they think are important?
+
+285
+00:22:18,080 --> 00:22:22,840
+Yes, and of course you are expected to solicit 
+feedback. So, if you're going to build your own  
+
+286
+00:22:22,840 --> 00:22:26,320
+thing for six months and it's going to be... 
+Well, we're going to review it along the way,  
+
+287
+00:22:26,320 --> 00:22:32,000
+of course. But we expect you to initiate a 
+review. We have a weekly session where you  
+
+288
+00:22:32,000 --> 00:22:35,840
+can bring up your reviews, but it's not us 
+forcing you to do it. You have to bring it,  
+
+289
+00:22:35,840 --> 00:22:39,280
+you have to solicit and you 
+have to drive the process.
+
+290
+00:22:39,280 --> 00:22:44,640
+This episode is brought to you by Vanta. When 
+it comes to ensuring your company has top-notch  
+
+291
+00:22:44,640 --> 00:22:51,280
+security practices, things get complicated fast. 
+Now, you can assess risk, secure the trust of  
+
+292
+00:22:51,280 --> 00:22:58,600
+your customers, and automate compliance for SOC 
+2, ISO 20000-1, HIPAA, and more with a single  
+
+293
+00:22:58,600 --> 00:23:04,440
+platform, Vanta. Vanta's market leading trust 
+management platform helps you continuously  
+
+294
+00:23:04,440 --> 00:23:10,120
+monitor compliance alongside reporting and 
+tracking risks, plus you can save hours by  
+
+295
+00:23:10,120 --> 00:23:15,720
+completing security questionnaires with Vanta 
+AI. Join thousands of global companies that use  
+
+296
+00:23:15,720 --> 00:23:22,080
+Vanta to automate evidence collection, unify risk 
+management, and streamline security reviews. Get  
+
+297
+00:23:22,080 --> 00:23:32,080
+$1,000 off Vanta when you go to vanta.com/Lenny. 
+That's V-A-N-T-A.com/Lenny. Is there an example of  
+
+298
+00:23:32,080 --> 00:23:35,840
+a product or a really important feature that came 
+out of this way of working where a team just like,  
+
+299
+00:23:35,840 --> 00:23:39,360
+hey, you don't think this is a good 
+idea, I'm just going to do it anyway?
+
+300
+00:23:39,360 --> 00:23:45,560
+I don't think it goes up to a whole product, it's 
+kind of very hard to... Because you have resources  
+
+301
+00:23:45,560 --> 00:23:51,600
+to build a whole product. But I do think there 
+is substantial features that came out of it. Even  
+
+302
+00:23:53,680 --> 00:23:57,800
+the AI fine-tuning example I gave you before, 
+it's like something came up in a hackathon, and  
+
+303
+00:23:57,800 --> 00:24:01,560
+people were like, let's start to build it, let's 
+incubate it, and then they move forward. Of course  
+
+304
+00:24:01,560 --> 00:24:05,640
+we had to give them resources at some stage, 
+but it wasn't like a top down, let's do this,  
+
+305
+00:24:05,640 --> 00:24:09,720
+it was more like, hey, we're trying it out, hey, 
+we need a couple of more resources, we're trying  
+
+306
+00:24:09,720 --> 00:24:15,880
+out more. And at some stage we realized it's super 
+important and then we "funded it" completely.
+
+307
+00:24:15,880 --> 00:24:19,200
+So, when people listen to this, some 
+product leaders might be thinking,  
+
+308
+00:24:19,200 --> 00:24:23,040
+oh, I want to work this way, I want to 
+give my teams more freedom, more trust,  
+
+309
+00:24:23,720 --> 00:24:30,160
+what needs to be true in your org for 
+this to work well, versus it become chaos?
+
+310
+00:24:30,160 --> 00:24:36,000
+Firstly, you as a leader need to sign up to 
+let go a little bit, not control everything,  
+
+311
+00:24:36,000 --> 00:24:41,840
+willing to make some more mistakes than maybe 
+you'd make otherwise. So, that's the one thing.  
+
+312
+00:24:41,840 --> 00:24:50,000
+I think the harder thing is, at least for me, 
+is you also have to get your peers on the same  
+
+313
+00:24:50,000 --> 00:24:54,800
+boat. Because the head of sales is going to ask 
+you, hey, what's happening? How do I know what's  
+
+314
+00:24:54,800 --> 00:24:59,400
+happening? If you don't have a control over every 
+feature. And the CFO is going to ask you, hey,  
+
+315
+00:24:59,400 --> 00:25:05,200
+what's the, I don't know, the ROI of this, or 
+how do you justify those type of decisions? So,  
+
+316
+00:25:05,200 --> 00:25:10,000
+there has to be some fundamental trust 
+within you and your team, you and your  
+
+317
+00:25:10,000 --> 00:25:16,120
+colleagues, to at least experiment that way.
+And of course if you do it on an ongoing basis,  
+
+318
+00:25:16,120 --> 00:25:19,960
+you lose some visibility, and I think that's maybe 
+one thing you got to acknowledge, right? If you  
+
+319
+00:25:19,960 --> 00:25:23,400
+give people more control, by definition you're 
+going to have less visibility in what you're  
+
+320
+00:25:23,400 --> 00:25:30,120
+doing. So, give up a little bit of visibility, 
+hopefully get the benefit of higher velocity,  
+
+321
+00:25:30,120 --> 00:25:38,440
+and higher "morale" or engagement from people, 
+and that should result in better products as well.
+
+322
+00:25:38,440 --> 00:25:42,000
+I love that, that's a really good 
+example. With the sales example,  
+
+323
+00:25:42,000 --> 00:25:47,080
+which is great, do you encourage the sales 
+folks to talk directly to the pod to ask  
+
+324
+00:25:47,080 --> 00:25:51,480
+about these sorts of things, or do you 
+discourage that sort of communication?
+
+325
+00:25:51,480 --> 00:25:56,320
+Oh yeah. I think sales from my perspective 
+are part of the virtual pod. So,  
+
+326
+00:25:56,320 --> 00:25:59,800
+the core pod is as I mentioned, 
+product engineering, but part of the  
+
+327
+00:25:59,800 --> 00:26:04,600
+virtual pod is there's product marketing, 
+customer success, sales, in all fairness,  
+
+328
+00:26:04,600 --> 00:26:09,720
+salespeople are usually busy doing their work 
+versus actually sitting with us and helping us,  
+
+329
+00:26:10,640 --> 00:26:14,680
+is this going to sell? Did you hear it from 
+customers? The type of questions that product  
+
+330
+00:26:14,680 --> 00:26:20,720
+managers usually want to get, but if they're 
+happy to spend time, they'll be very involved.
+
+331
+00:26:20,720 --> 00:26:23,200
+Coming back to the design partner way of working,  
+
+332
+00:26:23,200 --> 00:26:26,480
+does it feel crazy for companies 
+not to operate this way, to not  
+
+333
+00:26:26,480 --> 00:26:31,360
+work this closely with design partners on 
+new products and features they're building?
+
+334
+00:26:31,360 --> 00:26:37,920
+I wouldn't go back. So, I think it's just like, 
+even I hate terms such as risks because that's a  
+
+335
+00:26:37,920 --> 00:26:42,480
+very, I don't know, ambiguous term, but just the 
+risk of building something you're not going to  
+
+336
+00:26:42,480 --> 00:26:48,280
+know if it's going to get used. And I was asked by 
+a very senior product manager of a very successful  
+
+337
+00:26:48,280 --> 00:26:51,720
+big SaaS companies, why do we even do this? 
+I'm like, what do you mean? It's like, hey,  
+
+338
+00:26:51,720 --> 00:26:57,480
+we launch products and then we see if people like 
+them. It's like I don't think that's a great idea  
+
+339
+00:26:57,480 --> 00:27:03,040
+because that company's successful, bigger than 
+Gong, but at the same time I just think it's  
+
+340
+00:27:03,040 --> 00:27:08,840
+leaving too much in the hands of, I would even 
+call it luck, right? Because how do you know?
+
+341
+00:27:08,840 --> 00:27:12,560
+Yeah. I was thinking it just feels like a 
+cheat code and just feels like something a  
+
+342
+00:27:12,560 --> 00:27:17,320
+lot of companies can learn from how you all 
+operate there. Something that has come up a  
+
+343
+00:27:17,320 --> 00:27:22,960
+bunch so far in our conversation is your focus on 
+speed and optimizing for velocity. Something that  
+
+344
+00:27:22,960 --> 00:27:27,000
+I've heard about you is that you're really 
+big on just making really quick decisions,  
+
+345
+00:27:27,000 --> 00:27:32,680
+even one-way door decisions that are really 
+big, your philosophy is just make it quickly  
+
+346
+00:27:32,680 --> 00:27:36,480
+before you have all the information 
+necessarily, talk about that approach.
+
+347
+00:27:36,480 --> 00:27:40,960
+That's maybe a little bit of a personal thing, but 
+I would encourage people to look up, in Google,  
+
+348
+00:27:40,960 --> 00:27:45,640
+there's... Maybe I'll do a spoiler for Isaac 
+Asimov, he's a science fiction writer I think  
+
+349
+00:27:45,640 --> 00:27:50,680
+beginning of last century, and he has this short 
+story, The Machine That Won the War, so you can  
+
+350
+00:27:50,680 --> 00:27:54,880
+look it up, it's a fun story, pretty short. But 
+it's basically the computer, the big computer at  
+
+351
+00:27:54,880 --> 00:28:00,400
+the time, supposedly won the war, but the only 
+reason it won the war is because they wanted the  
+
+352
+00:28:00,400 --> 00:28:05,760
+people to trust this superhuman machine. But what 
+they realized the machine was just giving crap,  
+
+353
+00:28:05,760 --> 00:28:10,600
+just like our LLM hallucinations. So, the head 
+person, president, whatever it is, basically ended  
+
+354
+00:28:10,600 --> 00:28:16,840
+up saying, I ended up tossing a coin. But people 
+wanted this, really believed that this is a smart  
+
+355
+00:28:16,840 --> 00:28:22,480
+machine thing is going to help us win the war.
+So, it's obviously a funny kind of story,  
+
+356
+00:28:22,480 --> 00:28:27,480
+but I think there is truth to it. So, many, many 
+decisions when it's not a close call. It's like  
+
+357
+00:28:28,520 --> 00:28:32,200
+should Gong open an office in China right 
+now? Well, probably not, there's so many  
+
+358
+00:28:32,200 --> 00:28:37,160
+reasons why not. We don't really debate it. But 
+should we develop feature A and feature B? If  
+
+359
+00:28:37,160 --> 00:28:41,600
+you look at them, they're kind of the same, I 
+don't know, call it same value or same cost,  
+
+360
+00:28:42,800 --> 00:28:48,760
+whatever kind of mental framework you have 
+for deciding, you end up being like 51/49. No  
+
+361
+00:28:48,760 --> 00:28:53,680
+decision is going to be super wrong. So, yes, 
+you can try to bring in more data and you can  
+
+362
+00:28:53,680 --> 00:28:59,240
+try to bring more people, but both decisions 
+are okay, so just go ahead with one, hopefully  
+
+363
+00:28:59,240 --> 00:29:06,440
+it's not huge mistake. I'll tell you, I had this 
+discussion with my co-founder Amit, who is the CO,  
+
+364
+00:29:06,440 --> 00:29:12,520
+and a few years ago we were considering buying 
+a company, and just pretty strategic decisions. 
+
+365
+00:29:13,640 --> 00:29:18,120
+And we're like, we don't know, there's pros and 
+cons, we're on the fence there, and we end up  
+
+366
+00:29:18,120 --> 00:29:23,720
+not buying the company. We look up Gong, and we 
+haven't bought big companies. And I asked him,  
+
+367
+00:29:23,720 --> 00:29:26,600
+maybe it was a couple of months ago, it's 
+like, what if we had bought that company,  
+
+368
+00:29:26,600 --> 00:29:32,600
+do you think we would've been in a radically 
+different position? He was like, no. So,  
+
+369
+00:29:32,600 --> 00:29:36,520
+it could have been better, it could have 
+been worse, but it would not have made a  
+
+370
+00:29:36,520 --> 00:29:43,120
+huge difference. And the reason is it was a 51/49 
+decision wasn't a 70/30 decision. So, it's hard  
+
+371
+00:29:43,120 --> 00:29:47,520
+for humans to make decision, you probably know, 
+there's like experiments that show, it's almost  
+
+372
+00:29:47,520 --> 00:29:52,840
+like running or jogging or doing something 
+that is a physical, requires your physical  
+
+373
+00:29:52,840 --> 00:29:59,120
+capacity to make decisions. So, I know it's hard 
+that you want to postpone it, but just do it.
+
+374
+00:29:59,120 --> 00:30:03,160
+It's such a freeing way of thinking about it. 
+It's interesting because there's been recent  
+
+375
+00:30:03,160 --> 00:30:08,960
+conversations on this podcast where Spotify 
+has this kind of value they call talk is cheap,  
+
+376
+00:30:08,960 --> 00:30:13,520
+and it's meant to be a virtue. Talk is cheap, 
+so let's just talk a lot before we make a  
+
+377
+00:30:13,520 --> 00:30:18,800
+decision. But it's specific to Spotify because 
+there's a lot of regulatory challenges, and if  
+
+378
+00:30:18,800 --> 00:30:23,560
+they make it a big decision, it's a long-term, 
+it's like they put a lot of effort into it. So,  
+
+379
+00:30:23,560 --> 00:30:27,160
+it's interesting, there's such different ways 
+of operating. There's like, let's just talk  
+
+380
+00:30:27,160 --> 00:30:31,720
+for months and make a decision versus we're 
+just going to make it and then it'll be fine.
+
+381
+00:30:31,720 --> 00:30:38,560
+Yeah, of course, like big, big, one door. Yeah, 
+this is of course, you're going to spend more  
+
+382
+00:30:38,560 --> 00:30:43,800
+time on, but people tend to overthink I think 
+decisions. I also found out that personally the  
+
+383
+00:30:43,800 --> 00:30:47,680
+quality of my decisions, if you sort of wake 
+me up in the middle of the night and ask me,  
+
+384
+00:30:47,680 --> 00:30:50,440
+what do you think about X? And I'm 
+going to be like, I have no idea,  
+
+385
+00:30:50,440 --> 00:30:54,120
+I'm sleeping. And then you're like, you got to 
+force me to decision, [inaudible 00:30:54] make  
+
+386
+00:30:54,120 --> 00:30:57,920
+a decision, now you're going to give 
+me two weeks to ponder over it...  
+
+387
+00:30:58,760 --> 00:31:02,360
+I don't think the quality of the decision is 
+going to be much, much higher, which is maybe  
+
+388
+00:31:02,960 --> 00:31:08,440
+could be personal, but that's at least what I 
+found over my too many years of existence, so.
+
+389
+00:31:08,440 --> 00:31:13,080
+I think something that's probably necessary 
+for that to work out well is having a deep  
+
+390
+00:31:13,080 --> 00:31:17,840
+experience in that space. You've been at this 
+for a long time, so I imagine your instinct  
+
+391
+00:31:17,840 --> 00:31:21,800
+often is trained based on your past experience 
+of the market and customers. Do you feel like  
+
+392
+00:31:21,800 --> 00:31:26,040
+that's a necessary component of trusting your 
+gut and instinct on these sorts of decisions?
+
+393
+00:31:26,040 --> 00:31:29,200
+Yeah, of course. You got at some stage know 
+what you're doing. Yeah, if I were now to  
+
+394
+00:31:29,200 --> 00:31:33,000
+make a decision around, I don't know, entering a 
+different space, there's no way I would be like,  
+
+395
+00:31:33,000 --> 00:31:38,160
+yeah, let's flip a coin, like the Asimov story, 
+and go for it. I go to a conference, learn it,  
+
+396
+00:31:38,160 --> 00:31:41,240
+whatever the thing is, and then make that 
+decision. But most of the decisions all of  
+
+397
+00:31:41,240 --> 00:31:47,040
+it make on a day-to-day basis is our domain 
+of expertise versus totally new things.
+
+398
+00:31:47,040 --> 00:31:53,920
+Awesome. Okay, let's talk about AI for a bit. You 
+guys were very early on AI, you were working on,  
+
+399
+00:31:53,920 --> 00:31:58,000
+basically AI was like, your product was built 
+on machine learning back then is what it was  
+
+400
+00:31:58,000 --> 00:32:02,040
+called before. Because it was cool and everyone 
+probably thought it was a waste of time, and no,  
+
+401
+00:32:02,040 --> 00:32:07,800
+it's never going to work. Now, everyone's building 
+AI, building AI into their product. What have  
+
+402
+00:32:07,800 --> 00:32:13,480
+you learned about working with AI over the years 
+that you think people maybe are not yet aware of,  
+
+403
+00:32:13,480 --> 00:32:18,320
+or that will likely cause them pain that 
+you can help solve and avoid for them?
+
+404
+00:32:18,320 --> 00:32:21,320
+Yeah, funny, when we launched Gong, 
+we didn't use the term AI because  
+
+405
+00:32:21,320 --> 00:32:25,560
+people thought it was a bad thing, it makes 
+wrong decisions, or they just thought it's  
+
+406
+00:32:25,560 --> 00:32:30,120
+an [inaudible 00:32:26] item, an acronym. 
+When we founded Gong, I was in sabbatical,  
+
+407
+00:32:30,120 --> 00:32:35,800
+and I actually went to this deep learning 
+course because I was bored, in all fairness,  
+
+408
+00:32:36,680 --> 00:32:42,280
+and after that course I ended up buying Nvidia 
+stock, which I wish I had kept up until now.  
+
+409
+00:32:42,280 --> 00:32:46,000
+But I did send an email saying, hey, this is the 
+next thing. So, we understood it's the next thing,  
+
+410
+00:32:46,000 --> 00:32:49,640
+of course we didn't know it's going to be 
+LLM and GPT and other acronyms that evolved  
+
+411
+00:32:49,640 --> 00:32:57,840
+over the years, and probably now that we're 
+talking end of 2024-ish, I think people should  
+
+412
+00:32:58,360 --> 00:33:04,520
+not go from one extreme, which is, hey, we need a 
+bunch of data scientists for every small project,  
+
+413
+00:33:04,520 --> 00:33:09,040
+which was the case five years ago, or three 
+years ago, to the other extreme, which is,  
+
+414
+00:33:09,040 --> 00:33:12,800
+hey, LLM is going to solve everything.
+Because LLMs don't solve everything,  
+
+415
+00:33:12,800 --> 00:33:18,640
+they have huge utility. We use LLMs all over the 
+place, most companies that developed AI stuff use  
+
+416
+00:33:18,640 --> 00:33:25,440
+LLMs, it's a great thing, but at the same time, 
+don't assume it does everything, you still need  
+
+417
+00:33:25,440 --> 00:33:32,160
+some of the core competencies of AI. So, you 
+do want to have expertise, people who actually  
+
+418
+00:33:32,160 --> 00:33:39,160
+know what they're doing, and help guide us PMs 
+around, is this something that can be built,  
+
+419
+00:33:39,160 --> 00:33:43,400
+or no? Because if you're going to spend many, 
+many hours on asking an LLM to do, I don't know,  
+
+420
+00:33:44,800 --> 00:33:51,240
+in the case of Gong, for example, tell me what the 
+good sales cycle looks like? LLMs don't do that,  
+
+421
+00:33:51,240 --> 00:33:56,680
+it's just like maybe something else does, but we 
+have a field prediction model. LLMs cannot predict  
+
+422
+00:33:56,680 --> 00:34:01,720
+fields, it's like we're very, very specialized. 
+So, I think you still need to have expertise,  
+
+423
+00:34:01,720 --> 00:34:06,360
+you still want to have some measurements.
+So, yes, version one, you can just go to an LLM  
+
+424
+00:34:06,360 --> 00:34:11,040
+and say create something, I don't know, whatever, 
+but if you don't have measurements... Like in the  
+
+425
+00:34:11,040 --> 00:34:14,840
+old machine learning, whatever metrics you use, 
+you're not going to advance, you're going to have  
+
+426
+00:34:14,840 --> 00:34:19,000
+V1 and you're going to have V2 and you have 
+no way to know if you've made a progress. So,  
+
+427
+00:34:19,000 --> 00:34:24,440
+we pay a lot of attention to, we have people who 
+are going to specialize in how you measure, we use  
+
+428
+00:34:24,440 --> 00:34:31,280
+ELO system, which is the one used chess as well, 
+and we do have experts who can help us make the  
+
+429
+00:34:31,280 --> 00:34:37,800
+right decisions. You can make a very good progress 
+without these, but I think there's a glass ceiling  
+
+430
+00:34:37,800 --> 00:34:44,280
+if you don't figure out how to create a more 
+operational rigor around this whole AI thing.
+
+431
+00:34:44,280 --> 00:34:49,080
+So, what I'm hearing is don't assume you can 
+just outsource all your AI magic model building  
+
+432
+00:34:49,080 --> 00:34:55,200
+to the foundational model companies, you need 
+to have your own AI expertise, ML expertise?
+
+433
+00:34:55,200 --> 00:34:59,160
+Yeah, or even if you end up outsourcing the 
+core work, at least you have to have the  
+
+434
+00:34:59,160 --> 00:35:03,720
+expertise to understand what is doable, what is 
+not doable, what's the right way to approach it,  
+
+435
+00:35:03,720 --> 00:35:08,920
+what's the input you get to the LLM, is this 
+going to be good quality or bad quality? Even  
+
+436
+00:35:08,920 --> 00:35:14,920
+if you just take the product management aspect, if 
+the LLM gives you something that is 90% accurate,  
+
+437
+00:35:14,920 --> 00:35:19,280
+or I don't know, people are going to think is 
+good, the product's going to look different than  
+
+438
+00:35:20,080 --> 00:35:25,240
+if it's 50% good. So, just the way you even 
+think about it, the way you... I think Figma  
+
+439
+00:35:25,240 --> 00:35:32,000
+calls their AI feature like First Draft, which is 
+a term I like because they realize it's not best,  
+
+440
+00:35:32,000 --> 00:35:36,000
+it's not great, but it's a good first draft.
+So, if you know what it is, it's easier not  
+
+441
+00:35:36,000 --> 00:35:40,920
+just to name, but how conceptualize, how to 
+build a workflow around it, and what to train  
+
+442
+00:35:40,920 --> 00:35:45,200
+users to assume for it, and I think there is 
+an expertise there that comes on top of LLMs,  
+
+443
+00:35:45,200 --> 00:35:51,800
+even if you just use LLMs, and you can't 
+afford or you don't want to go deeper.
+
+444
+00:35:51,800 --> 00:35:57,440
+For folks that want to do this at their 
+company, what are the functions that you  
+
+445
+00:35:57,440 --> 00:36:03,800
+have that help you do this/skills of people 
+you hire that you think are important?
+
+446
+00:36:03,800 --> 00:36:10,840
+So, I think you still have to have this kind of 
+"data scientist role," and data scientists could  
+
+447
+00:36:10,840 --> 00:36:15,440
+be in the company, it could be advisors as well, 
+right? Not everything has to be a full-time in  
+
+448
+00:36:15,440 --> 00:36:23,040
+the company. And the role of a data scientist is 
+help guide the company, field prediction model,  
+
+449
+00:36:23,040 --> 00:36:26,800
+is this a LLM thing? Do you need to build a 
+model? If you need, what input do you need?  
+
+450
+00:36:26,800 --> 00:36:31,000
+How long it's going to take, da, da, da. Also, in 
+our world at least data scientists are the people  
+
+451
+00:36:31,000 --> 00:36:35,120
+who know how to measure these things. Is this 
+model better or is this model better? Is this  
+
+452
+00:36:35,120 --> 00:36:38,800
+prompt better or is this prompt not better? 
+And they're not going to do the judgment,  
+
+453
+00:36:38,800 --> 00:36:45,160
+so when Gong creates an account brief, the data 
+scientist is not going to know if that brief or  
+
+454
+00:36:45,160 --> 00:36:49,840
+this brief is the right one, but they can guide 
+us through what's the right tool set you need,  
+
+455
+00:36:49,840 --> 00:36:54,000
+to put it in front of customers and 
+how do you measure this and whatnot. 
+
+456
+00:36:54,000 --> 00:36:57,800
+And then, I think at the end of the day, you also 
+need this [inaudible 00:36:56], now it's becoming  
+
+457
+00:36:57,800 --> 00:37:02,280
+a common, the prompt engineer, the person who's 
+actually working with the LLMs and guiding them,  
+
+458
+00:37:02,280 --> 00:37:07,600
+that is, it's a bit of a technical skill, but 
+you got to have it. And it doesn't have to be  
+
+459
+00:37:07,600 --> 00:37:12,560
+a full-time person, but there needs to be 
+that expertise of somebody who's actually  
+
+460
+00:37:12,560 --> 00:37:18,120
+optimizing things. Many, many customers tell 
+us that Gong AI is, well, it's more accurate  
+
+461
+00:37:18,120 --> 00:37:22,920
+than others, yes, there is some combination 
+of models we build from scratch, fine-tune,  
+
+462
+00:37:22,920 --> 00:37:27,760
+because we have AI expertise, but some of it 
+is also how we, the prompt we give to the LLMs,  
+
+463
+00:37:27,760 --> 00:37:32,960
+how much rigor we put into optimizing them and 
+kind of finding the edge cases and ranking them  
+
+464
+00:37:32,960 --> 00:37:38,960
+and improving them over time. If you want to 
+get really good AI, you have to invest in it.
+
+465
+00:37:39,640 --> 00:37:44,360
+As you're talking, I'm thinking about 
+how your pod model matches really well  
+
+466
+00:37:44,360 --> 00:37:48,960
+with the world of things moving so quickly, 
+AI changing constantly, just giving teams  
+
+467
+00:37:48,960 --> 00:37:54,240
+autonomy feels like a huge advantage in this 
+world where things are just changing weekly.
+
+468
+00:37:54,240 --> 00:37:57,720
+So, we have a couple of, maybe now it's 
+three different pods, we have an embedded  
+
+469
+00:37:57,720 --> 00:38:04,640
+AI specialist team, either a specialist or 
+a team, or I don't know, a couple of people,  
+
+470
+00:38:04,640 --> 00:38:10,720
+and then they can iterate very, very quickly 
+on using LLMs or using non-LLMs, SLMs,  
+
+471
+00:38:10,720 --> 00:38:15,200
+people now say small language models, but whatever 
+the thing is, they can iterate very, very quickly.
+
+472
+00:38:15,200 --> 00:38:20,280
+Awesome. Okay, a couple more things I want 
+to touch on. One is the spiral model. So,  
+
+473
+00:38:20,280 --> 00:38:24,440
+you mentioned that you just went to learn deep 
+learning on your own, you went off to the side,  
+
+474
+00:38:24,440 --> 00:38:28,840
+I'm going to understand this new thing that 
+everyone's talking about, deep learning,  
+
+475
+00:38:28,840 --> 00:38:32,600
+and you got really smart in machine 
+learning, basically, really quickly,  
+
+476
+00:38:32,600 --> 00:38:37,960
+and you have this thing you call the spiral model 
+or the spiral method for how to learn something  
+
+477
+00:38:37,960 --> 00:38:43,800
+complex quickly. You wrote a Medium post about 
+this, or blog post. What is the spiral method,  
+
+478
+00:38:43,800 --> 00:38:47,640
+how does it work, how do people learn things 
+really quickly that are really complicated?
+
+479
+00:38:47,640 --> 00:38:53,200
+Yeah. I think it's even beyond just the speed, 
+but also how do you even know that you actually  
+
+480
+00:38:53,200 --> 00:39:00,920
+learned it. So, there is a mathematical, or not... 
+Physical concept called annealing, which is how  
+
+481
+00:39:00,920 --> 00:39:06,000
+certain material becomes the way it is, and it's 
+sort of the temperature goes slightly down and  
+
+482
+00:39:06,000 --> 00:39:10,920
+eventually become crystal or whatnot. There is an 
+element to this I think in learning as well, which  
+
+483
+00:39:10,920 --> 00:39:16,000
+is, you want to know what deep learning is, you 
+know nothing, you go find the person next to you  
+
+484
+00:39:16,000 --> 00:39:19,160
+and you're like, what is deep learning? They tell 
+you something, of course you don't know anything,  
+
+485
+00:39:19,160 --> 00:39:22,680
+you just heard it from one person, and the next 
+question you should ask, who else should I be  
+
+486
+00:39:22,680 --> 00:39:27,920
+speaking with? They give you three other names... 
+I think in tech we all tend to be, have this very,  
+
+487
+00:39:27,920 --> 00:39:33,960
+very kind cool ecosystem, people who are willing 
+to help as long as you don't ask too much of them. 
+
+488
+00:39:33,960 --> 00:39:36,800
+So, then you speak with three other people, 
+and then they give you other names and you  
+
+489
+00:39:36,800 --> 00:39:41,960
+sort of go around. And ideally at some stage 
+you feel like the first person you have no  
+
+490
+00:39:41,960 --> 00:39:44,880
+idea what they're talking about, you probably 
+didn't even understand what they're saying,  
+
+491
+00:39:44,880 --> 00:39:50,040
+the fifth person you might understand 50%, or 50% 
+is new, at some stage you're going to feel like,  
+
+492
+00:39:50,040 --> 00:39:57,480
+well new stuff is 10%, or 5%, or 0%... I call it 
+the spiral because it's going in circles around  
+
+493
+00:39:57,480 --> 00:40:00,680
+the target, and eventually you feel like, well, 
+I'm hearing the same thing again and again,  
+
+494
+00:40:00,680 --> 00:40:03,800
+and you're like, well, if I heard it from 
+three people, I didn't learn anything new,  
+
+495
+00:40:03,800 --> 00:40:09,160
+I'm at the bullseye. Of course, at the level 
+I am, so I'm never going to be a deep learning  
+
+496
+00:40:09,160 --> 00:40:14,160
+specialist in the same way that true data 
+scientists are, but as a product manager,  
+
+497
+00:40:14,160 --> 00:40:17,640
+I know it probably as well as I can, 
+given that everybody I'd spoken with  
+
+498
+00:40:17,640 --> 00:40:22,600
+at the time was not giving anything new at 
+the level that I had desired at this time.
+
+499
+00:40:22,600 --> 00:40:26,440
+I love that. Is there anything you've been 
+studying recently that you've either used  
+
+500
+00:40:26,440 --> 00:40:32,840
+this method for or something else you're excited 
+about learning that's new or on the cutting edge?
+
+501
+00:40:32,840 --> 00:40:41,320
+Usually I do this for use cases within our 
+customer base. For example, if I wanted to,  
+
+502
+00:40:41,320 --> 00:40:46,600
+wanted to go after a certain persona, or 
+a certain use case for the product. So,  
+
+503
+00:40:46,600 --> 00:40:51,880
+we had this notion of can we do a better job 
+for a specific persona within sales people who  
+
+504
+00:40:51,880 --> 00:40:56,640
+are account managers? So, I would use a similar 
+method, like, hey, talk to one account manager,  
+
+505
+00:40:56,640 --> 00:41:00,560
+talk to an analyst, or whatever the thing is, and 
+eventually when you start hearing the same things,  
+
+506
+00:41:00,560 --> 00:41:03,720
+like what do they care about that's different 
+than [inaudible 00:41:03] people, like selling  
+
+507
+00:41:03,720 --> 00:41:09,200
+new business or different than contact center 
+sellers. When you start hearing the same thing,  
+
+508
+00:41:09,200 --> 00:41:14,160
+you're like, okay, I kind of got to where 
+I need to be, now I can make decisions,  
+
+509
+00:41:14,160 --> 00:41:17,880
+I can always do another spiral and get one 
+level deeper, which is, I don't know, do  
+
+510
+00:41:17,880 --> 00:41:24,440
+some user research, go all in, but at least at the 
+conversation level, I've got where I need to be.
+
+511
+00:41:24,440 --> 00:41:28,040
+I love how simple this is, is you just start 
+talking. Just find somebody to talk to,  
+
+512
+00:41:28,040 --> 00:41:32,280
+ask about this, no pressure, and then just, 
+okay, who else should I talk to? You just  
+
+513
+00:41:32,280 --> 00:41:38,000
+keep having conversations, spiraling deeper 
+and deeper into knowledge and wisdom. Okay,  
+
+514
+00:41:38,000 --> 00:41:42,200
+one thing I wanted to touch on, which has 
+always stuck with me about your approach  
+
+515
+00:41:42,200 --> 00:41:49,000
+initially when you were starting Gong, is how you 
+found your initial ICP, who to go after. And it's  
+
+516
+00:41:49,000 --> 00:41:55,520
+really funny how narrow you got when you all 
+decided here's who we're focusing on for our  
+
+517
+00:41:55,520 --> 00:42:02,040
+first dozen customers. So, I have the list here. 
+So, when you decided here's who we're targeting,  
+
+518
+00:42:02,040 --> 00:42:08,080
+here's the list of constraints, we're going to 
+target people selling their product in the US,  
+
+519
+00:42:08,080 --> 00:42:13,800
+in English, over video conference, using 
+WebEx, which was the big one at the time,  
+
+520
+00:42:13,800 --> 00:42:23,720
+selling software that is worth 1000 to $100,000, 
+and there was only 5,000 companies in this bucket. 
+
+521
+00:42:23,720 --> 00:42:27,840
+Can you just talk about why you found 
+it was so important to get so narrow,  
+
+522
+00:42:27,840 --> 00:42:32,240
+and just the power of getting really narrow, 
+which is very counterintuitive to a lot of people,  
+
+523
+00:42:32,240 --> 00:42:35,080
+where they're like, oh, we're just going 
+to be for everyone, it's a huge market?
+
+524
+00:42:35,080 --> 00:42:37,200
+I think it's sort of the traditional,  
+
+525
+00:42:38,920 --> 00:42:42,600
+I call it the bowling alley, or 
+however you want to form the-
+
+526
+00:42:42,600 --> 00:42:43,480
+Crossing the chasm.
+
+527
+00:42:43,480 --> 00:42:48,400
+Yeah, the crossing the chasm kind of methodology, 
+which you want to start narrow, you want to create  
+
+528
+00:42:48,400 --> 00:42:53,160
+this kind of small pond, where people talk 
+about each other, and you can light the fire  
+
+529
+00:42:53,160 --> 00:42:59,680
+in there. In my previous company, by the way, I 
+did read Crossing the Chasm, and I told myself,  
+
+530
+00:42:59,680 --> 00:43:04,840
+nah, I can do way better than that. So, we 
+had one customer in, I think it was L'Oreal,  
+
+531
+00:43:04,840 --> 00:43:09,200
+or one of the cosmetics companies, and American 
+Express, and Cisco, different industries,  
+
+532
+00:43:09,200 --> 00:43:13,800
+and there was no way we could scale it 
+because everybody had their own lingo,  
+
+533
+00:43:13,800 --> 00:43:19,320
+the way they thought about the technology and 
+whatnot. So, by having a smaller set of customers,  
+
+534
+00:43:19,320 --> 00:43:25,200
+or I see, definition of customers, you can 
+develop much more focused, and then it's easier  
+
+535
+00:43:25,200 --> 00:43:28,880
+to light the fire, because people move right?
+At some stage, I think it was year one into  
+
+536
+00:43:28,880 --> 00:43:32,520
+the business, we heard from a company 
+that they interviewed a salesperson,  
+
+537
+00:43:32,520 --> 00:43:37,080
+and the salesperson asked, "Are you using Gong?" 
+And they said, "We are thinking about using Gong,  
+
+538
+00:43:37,080 --> 00:43:41,200
+but we're not." He's like, "Well, I'm only 
+going to work for companies that use Gong."  
+
+539
+00:43:41,200 --> 00:43:47,000
+And that's sort of the power of a small pond 
+with companies that are like each other,  
+
+540
+00:43:47,000 --> 00:43:50,400
+because you get this viral effect that 
+is not common in B2B, but it's as close  
+
+541
+00:43:50,400 --> 00:43:54,280
+as you can because of those conversations. 
+That other customer became a Gong customer,  
+
+542
+00:43:54,280 --> 00:43:57,160
+literally because they interviewed a person 
+who told him he's not going to come unless  
+
+543
+00:43:57,160 --> 00:44:01,440
+they bought Gong. You can't do this if you have 
+a wide market, where people don't even talk to  
+
+544
+00:44:01,440 --> 00:44:05,880
+each other, and there is an assumption that 
+you're not burying yourself in this market.
+
+545
+00:44:05,880 --> 00:44:09,320
+I love... Because today, like I said at the 
+very top of this conversation, you're just so  
+
+546
+00:44:09,320 --> 00:44:13,640
+ubiquitous, everybody seems to be using Gong. 
+And I love that you started with something,  
+
+547
+00:44:13,640 --> 00:44:18,800
+where there was seven, I don't know, different 
+constraints to narrow down who you're going after,  
+
+548
+00:44:18,800 --> 00:44:23,440
+and it's such a good example of the power of 
+starting very focused and then expanding from  
+
+549
+00:44:23,440 --> 00:44:27,480
+that, which is what you've done. Okay, last 
+question before we get to a very exciting  
+
+550
+00:44:27,480 --> 00:44:33,320
+lightning ground, we have a segment on this 
+podcast called Fail Corner, where so many of  
+
+551
+00:44:33,320 --> 00:44:37,000
+these podcast conversations, everyone's always 
+sharing all the successes, everything's always  
+
+552
+00:44:37,000 --> 00:44:43,960
+going great, nothing ever goes wrong, when 
+in reality it does, things often go wrong.  
+
+553
+00:44:43,960 --> 00:44:48,880
+Can you share a story from your career or just 
+the journey of Gong when things didn't go well,  
+
+554
+00:44:48,880 --> 00:44:54,120
+when there was maybe a failure, and if you learned 
+something from that time, what you learned?
+
+555
+00:44:54,120 --> 00:44:59,160
+Yeah, I always joke that in my previous company 
+we had done so many mistakes, that if life limited  
+
+556
+00:44:59,160 --> 00:45:03,160
+you to a certain number of mistakes, I wouldn't 
+have any left I think. I still do mistakes,  
+
+557
+00:45:03,160 --> 00:45:08,640
+but just so many. So, every one of them probably 
+done twice, and then it's like at some stages,  
+
+558
+00:45:09,760 --> 00:45:14,200
+third time's a charm. So, the one I 
+just gave you is probably the worst,  
+
+559
+00:45:14,200 --> 00:45:20,120
+is crossing the chasm, you start a company, you 
+have this technology, I was thinking let's go  
+
+560
+00:45:20,120 --> 00:45:24,520
+horizontal. And that technology was whatever, 
+web integration, something, eventually ended  
+
+561
+00:45:24,520 --> 00:45:29,480
+up being an e-commerce content syndication, or 
+[inaudible 00:45:28] management SaaS software,  
+
+562
+00:45:29,480 --> 00:45:33,280
+which is the right way to go because you want to 
+specialize in a certain market. But initially,  
+
+563
+00:45:33,280 --> 00:45:40,320
+just going on in was just ridiculously 
+not smart, and the other thing we did  
+
+564
+00:45:40,320 --> 00:45:45,640
+together was that was, the previous company 
+started year 2000, so that was the bubble,  
+
+565
+00:45:45,640 --> 00:45:50,280
+one of those very, very nice bubbles.
+So, we're like, you know what? We actually  
+
+566
+00:45:50,280 --> 00:45:55,240
+got three customers, admittedly in totally three 
+different segments, now let's go and scale. Now,  
+
+567
+00:45:55,240 --> 00:46:00,200
+we all knew we need one salesperson, one SE and 
+[inaudible 00:45:59] what's now called product  
+
+568
+00:46:00,200 --> 00:46:04,600
+market fit, I don't know that the term even 
+existed there, and we're like, nah, you know what,  
+
+569
+00:46:04,600 --> 00:46:08,560
+investors told us you got to hire more people. 
+So, we hired, I don't know, 20 salespeople, all of  
+
+570
+00:46:08,560 --> 00:46:14,040
+them failing miserably, because A, we didn't have 
+a true product market fit, but even what's worse,  
+
+571
+00:46:14,040 --> 00:46:20,080
+we didn't have a true focused ICP with a 
+very, very repeatable product market fit. So,  
+
+572
+00:46:20,080 --> 00:46:26,000
+if you sort of hear me talk about how we started 
+Gong, Amit is the CEO, and he drove a lot of that  
+
+573
+00:46:26,000 --> 00:46:31,040
+business strategy, but me being sort of a co-pilot 
+there, it definitely bringing the same, I'm not  
+
+574
+00:46:31,040 --> 00:46:36,680
+going to make that mistake again, I might do new 
+and fun ones, but not that same mistake again.
+
+575
+00:46:36,680 --> 00:46:38,760
+Awesome. Thank you for sharing that. With that,  
+
+576
+00:46:38,760 --> 00:46:42,360
+we reached our very exciting 
+lightning round, are you ready?
+
+577
+00:46:42,360 --> 00:46:43,480
+Sure.
+
+578
+00:46:43,480 --> 00:46:46,920
+Let's do it. First question, what 
+are two or three books that you  
+
+579
+00:46:46,920 --> 00:46:49,920
+find yourself recommending most to other people?
+
+580
+00:46:49,920 --> 00:46:56,160
+There is a set of books, I think one that is the 
+starter one is, I think it's called, right now,  
+
+581
+00:46:56,160 --> 00:47:00,840
+the Ideal Executive. People don't really 
+know it, it's sort of a management book,  
+
+582
+00:47:00,840 --> 00:47:05,080
+how to run a team and whatnot. I think the 
+original version is, funnily enough, I think  
+
+583
+00:47:05,080 --> 00:47:09,440
+it was called Mismanagement, but nobody wants 
+to buy a book called Mismanagement, you'd much  
+
+584
+00:47:09,440 --> 00:47:13,120
+rather buy a book that's called Ideal Executive. 
+Because you, of course, are not mismanaging,  
+
+585
+00:47:13,120 --> 00:47:19,240
+you're the ideal executive altogether, so you're 
+just reinforcing your self. But jokes aside,  
+
+586
+00:47:19,240 --> 00:47:26,480
+it basically gives you the... It tried 
+to define people by four characteristics,  
+
+587
+00:47:26,480 --> 00:47:33,360
+I think misnamed, but are you an administrator? 
+Are you, he calls it a producer, basically get  
+
+588
+00:47:33,360 --> 00:47:39,360
+the job done? Integrator, which brings people 
+together, and the fourth one, it's basically  
+
+589
+00:47:39,360 --> 00:47:45,920
+change agent, do a lot of mess and change stuff.
+Usually entrepreneurs kind of include that part,  
+
+590
+00:47:45,920 --> 00:47:50,920
+of course. And basically, his claim is that nobody 
+does the whole four, maybe you're good at one,  
+
+591
+00:47:50,920 --> 00:47:56,240
+maybe okay at the other, and personally 
+I'm horrible in administration. I obviously  
+
+592
+00:47:56,240 --> 00:48:00,560
+acknowledge that, and I try to sort of compliment 
+myself. So, I think there's two things in it,  
+
+593
+00:48:00,560 --> 00:48:06,240
+firstly, just those, I thought there was 
+the four good ways of looking at people,  
+
+594
+00:48:06,240 --> 00:48:12,600
+as a manager, as a leader, of course, that's one, 
+but I think even if you disagree with those four,  
+
+595
+00:48:12,600 --> 00:48:17,120
+just understanding that you want to 
+look at the people in the organization,  
+
+596
+00:48:17,120 --> 00:48:21,840
+yourself included [inaudible 00:48:20] 
+key characteristics, and you can select  
+
+597
+00:48:21,840 --> 00:48:27,440
+the different framework, helps you a lot with 
+creating high-velocity discussions with others. 
+
+598
+00:48:27,440 --> 00:48:31,200
+Because I can talk with somebody and say, 
+hey, you're a P. He's going be like, well,  
+
+599
+00:48:31,200 --> 00:48:36,720
+I'm not P, an I, whatever the thing is, and that 
+makes a discussion that is much, much faster,  
+
+600
+00:48:36,720 --> 00:48:42,160
+and more comprehensive than just trying to explain 
+this from scratch. Like, hey, you tend to do this,  
+
+601
+00:48:42,160 --> 00:48:46,720
+and you might want to do this, and you might 
+want to strengthen that. So, I'd recommend  
+
+602
+00:48:46,720 --> 00:48:51,080
+starting from this, but there's probably other 
+methodologies you can pick, and maybe some of  
+
+603
+00:48:51,080 --> 00:48:57,040
+the listeners here have already had one, but 
+that's one I like because I found it useful.
+
+604
+00:48:57,040 --> 00:48:59,480
+And it's called the Ideal Executive?
+
+605
+00:48:59,480 --> 00:49:01,160
+I think so, I'm pretty sure. Yeah.
+
+606
+00:49:01,160 --> 00:49:04,960
+Great. Any of other books before we move on?
+
+607
+00:49:04,960 --> 00:49:06,440
+That one's probably-
+
+608
+00:49:06,440 --> 00:49:07,020
+That's the one.
+
+609
+00:49:07,020 --> 00:49:10,200
+I like Crucial Conversation, that's going 
+to, in the beating path, it's like how to  
+
+610
+00:49:10,200 --> 00:49:14,240
+conduct conversations with people in your 
+organization. I think it's never bad to-
+
+611
+00:49:15,320 --> 00:49:15,876
+[inaudible 00:49:16].
+
+612
+00:49:15,876 --> 00:49:19,560
+... reimmerse yourself into how to 
+speak properly with other people.
+
+613
+00:49:20,360 --> 00:49:22,200
+We have an episode coming up where we're going to  
+
+614
+00:49:22,200 --> 00:49:26,720
+share scripts and phrases to use 
+to have better hard conversations.
+
+615
+00:49:27,480 --> 00:49:28,800
+Ah, it's good.
+
+616
+00:49:28,800 --> 00:49:31,160
+Yeah, I'm excited for that/scared. Okay,  
+
+617
+00:49:31,160 --> 00:49:35,160
+next question, do you have a recent 
+movie or TV show you've really enjoyed?
+
+618
+00:49:35,160 --> 00:49:38,760
+I didn't have TV, like broadcast TV for many, 
+many years, so nowadays there's Netflix so you  
+
+619
+00:49:38,760 --> 00:49:47,480
+can find stuff. But my taste in TV and movie 
+tend to be pretty esoteric, French. So, I've  
+
+620
+00:49:47,480 --> 00:49:55,240
+recently watched this British TV series called 
+Slow Horses, with Gary Oldman, and it's a really  
+
+621
+00:49:55,240 --> 00:50:01,360
+kind of fun sort of funny spy thing, which I found 
+amusing and intelligent at the same time. So,  
+
+622
+00:50:01,360 --> 00:50:08,280
+some kind of comedies tend to be pretty lowest 
+common denominator, that one seems still fun and  
+
+623
+00:50:08,280 --> 00:50:14,280
+witty at the same time. So, that's my latest that 
+I really enjoyed watching even this third seasons.
+
+624
+00:50:14,280 --> 00:50:18,800
+I love Slow Horses, it's like... 
+I don't think it's that obscure,  
+
+625
+00:50:18,800 --> 00:50:22,880
+I think it's one of the ones Apple 
+promotes often. I will say this,  
+
+626
+00:50:22,880 --> 00:50:25,920
+last season was not my favorite, 
+but the other two were awesome.
+
+627
+00:50:25,920 --> 00:50:29,560
+Yeah, I 100% agree, which I said, 
+even the third season was okay,  
+
+628
+00:50:29,560 --> 00:50:31,589
+but the first two were really, really good and-
+
+629
+00:50:31,589 --> 00:50:32,331
+Yeah. It's super fun.
+
+630
+00:50:32,331 --> 00:50:33,240
+... [inaudible 00:50:32] the fourth.
+
+631
+00:50:33,240 --> 00:50:35,760
+It took me like three tries to 
+actually get into the show initially,  
+
+632
+00:50:35,760 --> 00:50:38,560
+because people kept telling me it's so good, 
+and I started watching, and it's just like,  
+
+633
+00:50:38,560 --> 00:50:43,880
+who's this old messed up guy, just complaining 
+endlessly? But you got to keep watching. Okay.  
+
+634
+00:50:43,880 --> 00:50:47,480
+Do you have a favorite product you've 
+recently discovered that you really like?
+
+635
+00:50:47,480 --> 00:50:53,480
+I assume you have a silverware 
+caddy in your dishwasher, right?
+
+636
+00:50:53,480 --> 00:50:55,160
+Oh yeah, to put forks and knives. Yeah.
+
+637
+00:50:55,160 --> 00:51:02,000
+The cutlery... So that's my favorite product as of 
+lately, and I'll tell you why. It's a funny story,  
+
+638
+00:51:02,000 --> 00:51:07,200
+I lost mine, and you can ask yourself, how can 
+you freaking lose one of those baskets? And it  
+
+639
+00:51:07,200 --> 00:51:11,080
+was in the dishwasher, of course, and for 
+some reason I couldn't find it, that's like  
+
+640
+00:51:11,080 --> 00:51:16,280
+you have to be really out of your mind to not 
+find. Anyway. So, I go to some Amazon or eBay,  
+
+641
+00:51:16,280 --> 00:51:19,960
+wherever, I just buy a new one, and then of 
+course a day later I find it's [inaudible  
+
+642
+00:51:19,960 --> 00:51:25,280
+00:51:20] somewhere within the dishwasher. Now 
+I have two. So, this is my latest invention,  
+
+643
+00:51:25,280 --> 00:51:30,080
+if you have two of those baskets, you can put one 
+of them in the sink and you can just continuously  
+
+644
+00:51:30,080 --> 00:51:35,640
+load your cutlery or silverware while the 
+thing is working, or you haven't vacated it. 
+
+645
+00:51:35,640 --> 00:51:39,240
+So, it kind of changed how we organize our 
+kitchen with something that probably costs  
+
+646
+00:51:39,240 --> 00:51:44,880
+$10. No product manager has ever thought about 
+offering two of those with your dishwasher,  
+
+647
+00:51:44,880 --> 00:51:49,360
+I don't think it even tried to upsell any of that. 
+And I told it to some people and they actually  
+
+648
+00:51:49,360 --> 00:51:53,720
+ended up buying a second one, and said it was 
+successful, which is the most ridiculous thing,  
+
+649
+00:51:53,720 --> 00:51:59,760
+it's like spend $10, $15, get something organized 
+in a completely obscure and unintentional way.
+
+650
+00:51:59,760 --> 00:52:07,040
+I'll give you an even crazier idea that a previous 
+guest suggests, Rory Sutherland has this pitch  
+
+651
+00:52:07,040 --> 00:52:10,080
+that you should have two dishwashers, 
+everyone should have two dishwashers,  
+
+652
+00:52:10,080 --> 00:52:16,920
+because one is your clean and one is dirty. And 
+you just take your plates and things out of the  
+
+653
+00:52:16,920 --> 00:52:22,000
+clean one, use it and put it straight into the 
+dirty dishwasher. And why are we just putting  
+
+654
+00:52:22,000 --> 00:52:27,320
+things away constantly, just like go from one to 
+the other and one to the other? So, there you go.
+
+655
+00:52:27,320 --> 00:52:28,280
+Similar idea.
+
+656
+00:52:28,280 --> 00:52:29,587
+Similar idea, next level.
+
+657
+00:52:29,587 --> 00:52:31,360
+Mine is like $15 though, a 
+little bit, maybe cheaper.
+
+658
+00:52:31,360 --> 00:52:36,720
+Yeah, exactly. Houses are not designed for 
+two dishwashers. Okay, two more questions,  
+
+659
+00:52:36,720 --> 00:52:42,060
+do you have a favorite life motto that you often 
+come back to, find useful in work or in life?
+
+660
+00:52:42,060 --> 00:52:45,960
+One that I use, it's going to sound funny, 
+but it's actually real and I use it,  
+
+661
+00:52:45,960 --> 00:52:49,760
+and I actually believe in it. It's, I'm 
+not sure if you know for philosophy,  
+
+662
+00:52:49,760 --> 00:52:52,880
+there's like razors, like Occam's 
+razor, which is basically-
+
+663
+00:52:52,880 --> 00:52:54,240
+Oh, there's other razors.
+
+664
+00:52:54,240 --> 00:53:00,600
+Yeah, there's so many razors, and there's one that 
+I think came in in some Murphy book or whatnot,  
+
+665
+00:53:00,600 --> 00:53:06,400
+and it's called Hanlon's razor, you can look it 
+up, Wikipedia or wherever. And it basically says,  
+
+666
+00:53:06,400 --> 00:53:14,000
+it goes like, "Never attribute to malice, that 
+which is adequately explained by stupidity." So,  
+
+667
+00:53:14,000 --> 00:53:18,440
+it obviously sounds funny, and it's trying 
+to be funny, but it's so helpful because  
+
+668
+00:53:18,440 --> 00:53:24,360
+so often do we attribute people's behavior, 
+think in a company, customer, I don't know,  
+
+669
+00:53:24,360 --> 00:53:29,800
+personal life sometimes, to malice like, oh, 
+this person's not returning my calls because X,  
+
+670
+00:53:29,800 --> 00:53:33,880
+or this person hasn't given me feedback 
+or has given me feedback because of X. 
+
+671
+00:53:33,880 --> 00:53:37,800
+And it's sort of like we all, I think there's 
+a saying, it's like always assume well,  
+
+672
+00:53:37,800 --> 00:53:42,840
+or good intent, or whatever, and this is sort 
+of the more funny way to sort of say that, yes,  
+
+673
+00:53:42,840 --> 00:53:47,440
+the person is... And again, stupidity is obviously 
+a funny way to do it, maybe inappropriate. But  
+
+674
+00:53:47,440 --> 00:53:50,480
+it's basically, yes, they just didn't know, 
+they didn't care, they didn't think about it,  
+
+675
+00:53:50,480 --> 00:53:54,920
+they weren't trained, whatever the thing is, and 
+if you take this model on your day-to-day life,  
+
+676
+00:53:54,920 --> 00:54:02,520
+at least I find that it's so true, and so 
+often true, that is funny, but inspiring.
+
+677
+00:54:02,520 --> 00:54:06,760
+I really love that quote. I think of it often 
+when somebody's doing something that's annoying  
+
+678
+00:54:06,760 --> 00:54:12,560
+me. Final question, you mentioned that 
+you are from Israel, you live in Israel,  
+
+679
+00:54:12,560 --> 00:54:16,640
+you mentioned delicious food, hummus is 
+one example. Is there another Israeli food  
+
+680
+00:54:16,640 --> 00:54:21,040
+that you think people are sleeping on, that you 
+think people should try when they have a chance?
+
+681
+00:54:21,040 --> 00:54:26,360
+Israeli food has become a little bit to be in 
+fashion lately, so people coming from the US  
+
+682
+00:54:26,360 --> 00:54:30,240
+to visit us in the office are like, oh, Israeli 
+food is so good, and I'm like, what do you mean?  
+
+683
+00:54:30,240 --> 00:54:34,880
+It's the same food we've had for 20 or 30 years. 
+I think the taste change because you kind of eat  
+
+684
+00:54:34,880 --> 00:54:39,320
+more healthy and less oil these days. Most 
+of Israeli food is sort of Arabic in nature,  
+
+685
+00:54:39,320 --> 00:54:46,480
+or Turkish, so there's great falafel, great 
+hummus, pita bread, Turkish delights of sort,  
+
+686
+00:54:46,480 --> 00:54:52,000
+so a lot of those. And some very, very obscure, 
+and if you come to Israel, I'll show you around  
+
+687
+00:54:52,000 --> 00:54:57,560
+some very less known food that only special 
+guests get to taste. I can't say here because-
+
+688
+00:54:57,560 --> 00:54:59,360
+What's one... Yeah, say it 
+here, [inaudible 00:55:00].
+
+689
+00:55:01,800 --> 00:55:07,400
+There is a thing called Sabich, for example, 
+nobody knows of it. People claim it came from  
+
+690
+00:55:07,400 --> 00:55:11,800
+the people who came from Iraq, but my 
+wife's father came from Iraq, he's like,  
+
+691
+00:55:11,800 --> 00:55:16,953
+we've never seen this before. It's sort of pita 
+bread filled with hummus and eggplant and eggs.
+
+692
+00:55:16,953 --> 00:55:16,960
+Oh wow.
+
+693
+00:55:16,960 --> 00:55:21,600
+And maybe something else, I have no idea. 
+Tahini, maybe. I don't know. It tastes good,  
+
+694
+00:55:21,600 --> 00:55:26,560
+but it's such a weird combination, and it's become 
+a little bit of a thing, and nobody knows what the  
+
+695
+00:55:26,560 --> 00:55:31,960
+origin is. I think somebody made a mistake and 
+gave you the name, and now it's like ubiquitous.
+
+696
+00:55:31,960 --> 00:55:36,480
+You are making me hungry. Eilon, this 
+was amazing. Two final questions,  
+
+697
+00:55:36,480 --> 00:55:39,360
+where can folks find you if they 
+want to reach out and learn more,  
+
+698
+00:55:39,360 --> 00:55:43,400
+maybe ask some follow-up questions, 
+and how can listeners be useful to you?
+
+699
+00:55:43,400 --> 00:55:47,600
+I'm pretty available, and LinkedIn is 
+probably the best way. I tend to read  
+
+700
+00:55:47,600 --> 00:55:53,040
+my inbox in LinkedIn and respond 
+when I can. And then useful to me,  
+
+701
+00:55:53,040 --> 00:55:56,240
+if you want to come work for Gong, 
+check out our careers page, of course.  
+
+702
+00:55:57,120 --> 00:56:02,040
+The product team is mostly based in Tel Aviv and 
+Dublin, Ireland, so maybe a little bit remote for  
+
+703
+00:56:02,040 --> 00:56:06,600
+most people, but there's sometimes folks in 
+the US and sometimes non-product, of course,  
+
+704
+00:56:06,600 --> 00:56:11,760
+roles. We're hiring quite a few people these 
+days, so we'd love to at least give us a chance.
+
+705
+00:56:11,760 --> 00:56:14,800
+Awesome. Eilon, thank you so much for being here.
+
+706
+00:56:14,800 --> 00:56:16,360
+Thanks for inviting me.
+
+707
+00:56:16,360 --> 00:56:19,600
+Bye everyone.
+Thank you so much  
+
+708
+00:56:19,600 --> 00:56:24,000
+for listening, if you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+709
+00:56:24,000 --> 00:56:28,880
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating  
+
+710
+00:56:28,880 --> 00:56:33,800
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+711
+00:56:33,800 --> 00:56:42,040
+past episodes or learn more about the show at 
+Lenny'sPodcast.com. See you in the next episode.
+

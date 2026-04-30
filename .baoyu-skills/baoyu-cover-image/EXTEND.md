@@ -1,0 +1,19 @@
+---
+version: 3
+watermark:
+  enabled: false
+  content: ""
+  position: bottom-right
+  opacity: 0.7
+preferred_type: null
+preferred_palette: null
+preferred_rendering: null
+preferred_text: title-only
+preferred_mood: balanced
+default_aspect: "2.35:1"
+default_output_dir: independent
+language: zh
+quick_mode: true
+preferred_image_backend: auto
+custom_palettes: []
+---

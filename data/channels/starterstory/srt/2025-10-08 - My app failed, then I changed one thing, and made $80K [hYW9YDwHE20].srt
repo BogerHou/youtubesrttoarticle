@@ -1,0 +1,687 @@
+1
+00:00:00,000 --> 00:00:05,480
+After launching my app and seeing no success, I rebuilt it and it made $80,000 in 6 months.
+
+2
+00:00:05,480 --> 00:00:11,720
+Meet Praneeth, a builder from India who quit his software engineering job to go all in on building apps.
+
+3
+00:00:11,720 --> 00:00:16,560
+But, after launching the first version of his app, he saw pretty much no success.
+
+4
+00:00:16,560 --> 00:00:20,360
+So, he decided to make a simple pivot that changed everything.
+
+5
+00:00:20,360 --> 00:00:24,080
+>> making 250k a year, but always knew I wanted to build my own thing.
+
+6
+00:00:24,080 --> 00:00:29,120
+In this video, Praneeth will share what most builders get wrong about their first idea,
+
+7
+00:00:29,120 --> 00:00:37,240
+the pricing change that made him $80,000 in 6 months, and specifically how you can price your first product so you can make money on day one.
+
+8
+00:00:37,240 --> 00:00:40,880
+>> I would not recommend starting with a subscription model if you're bootstrapping.
+
+9
+00:00:40,880 --> 00:00:42,600
+This one is going to be fun.
+
+10
+00:00:42,600 --> 00:00:45,640
+I'm Pat Walls, and this is Starter Story.
+
+11
+00:00:45,640 --> 00:00:47,080
+Praneeth, welcome to the channel.
+
+12
+00:00:47,080 --> 00:00:49,760
+Tell me about who you are, what you built, and what's your story?
+
+13
+00:00:49,760 --> 00:00:55,520
+My name is Praneeth, and I quit my $250,000 job last year and went all in on building my own apps.
+
+14
+00:00:55,520 --> 00:01:01,200
+I built an app called Canvas Mode, which was formerly known as Rabbit Holes AI, but when I built the first version of it,
+
+15
+00:01:01,200 --> 00:01:02,400
+it didn't get any traction.
+
+16
+00:01:02,400 --> 00:01:07,080
+But then, I changed the pricing model and my app made $80,000 in the last 6 months.
+
+17
+00:01:07,080 --> 00:01:10,880
+Okay, well, before we get into that pricing change, which I'm really excited to talk about,
+
+18
+00:01:10,880 --> 00:01:14,040
+I do want to understand what is your business, what is Rabbit Holes?
+
+19
+00:01:14,040 --> 00:01:19,320
+>> Rabbit Holes AI is an app which is basically a canvas-first way to interact with AI models.
+
+20
+00:01:19,320 --> 00:01:24,840
+If you've ever chatted with ChatGPT for a really long time, it tends to kind of forget or loses place in the conversation.
+
+21
+00:01:24,840 --> 00:01:29,760
+So, it's really hard to have any meaningful long conversations with a linear app like ChatGPT.
+
+22
+00:01:29,760 --> 00:01:38,000
+So, what happens in a canvas app like this is as soon as you see something is kind of getting interesting and you want to branch off or create a different kind of fork in that conversation,
+
+23
+00:01:38,000 --> 00:01:39,880
+you can do that by creating a new node.
+
+24
+00:01:39,880 --> 00:01:46,040
+So, Rabbit Holes AI is built for power AI users to get more out of the AI, unlike linear conversation apps.
+
+25
+00:01:46,040 --> 00:01:49,520
+Okay, let's talk about how you came up with the idea for this.
+
+26
+00:01:49,520 --> 00:01:51,640
+Obviously, this app is huge, has lots of users.
+
+27
+00:01:51,640 --> 00:01:53,880
+How did you find the idea to build this?
+
+28
+00:01:53,880 --> 00:01:59,320
+>> I was initially trying to work on build on one of my old ideas, and I was using ChatGPT,
+
+29
+00:01:59,320 --> 00:02:03,080
+and I was using Perplexity, and I was using Claude to do that to teach myself.
+
+30
+00:02:03,080 --> 00:02:06,800
+I soon I found myself like distributed across a bunch of different tabs.
+
+31
+00:02:06,800 --> 00:02:09,000
+Each one of those had different kind of expertise.
+
+32
+00:02:09,000 --> 00:02:13,960
+Claude was much better for coding, and GPT was much better for high-level architectural kind of things,
+
+33
+00:02:13,960 --> 00:02:17,240
+and uh Perplexity was much better for real-time information.
+
+34
+00:02:17,240 --> 00:02:22,280
+So, the UX designer in me thought, "Okay, this is a frictionless experience, and this is kind of broken,
+
+35
+00:02:22,280 --> 00:02:25,520
+and I feel it's it's going to be much better if I can do it all in one tab."
+
+36
+00:02:25,520 --> 00:02:28,120
+And it kind of evolved as a design from there.
+
+37
+00:02:28,120 --> 00:02:36,600
+Okay, so, you have this idea, you start building it, but you sort of make almost a mistake when you start building it in terms of the pricing model.
+
+38
+00:02:36,600 --> 00:02:40,560
+Can you tell me about when you started building it, what your plan was for how to price this thing,
+
+39
+00:02:40,560 --> 00:02:42,400
+and kind of how that whole process started?
+
+40
+00:02:42,400 --> 00:02:49,200
+>> The default mode of how I operated with bad building products was the typical subscription model or the freemium model.
+
+41
+00:02:49,200 --> 00:02:55,040
+So, that's where I went with initially and launched a web app with free trial where you get like a few questions for free,
+
+42
+00:02:55,040 --> 00:02:59,600
+and then you have to pay after a little bit of usage, but that didn't get much traction,
+
+43
+00:02:59,600 --> 00:03:01,800
+and I feel like there is multiple reasons to that.
+
+44
+00:03:01,800 --> 00:03:10,440
+The top ones are that I did not have a huge personal brand trying to do the building public thing where I was talking on Twitter or kind of posting everywhere where I got a chance.
+
+45
+00:03:10,440 --> 00:03:14,520
+I got some interest, but never really turned into any real dollars.
+
+46
+00:03:14,520 --> 00:03:20,480
+And on top of it, I kind of decided that my ideal customer profile, ICP, is a power AI user.
+
+47
+00:03:20,480 --> 00:03:27,120
+So, at that point, my ICP would already be saturated with bunch of different subscriptions they are paying for these multiple AI models.
+
+48
+00:03:27,120 --> 00:03:34,760
+So, that's when I had to change the product a little bit by moving away from web app into a and making it a one-time purchase.
+
+49
+00:03:34,760 --> 00:03:38,960
+>> Okay, so, you have this app, it's sort of working, you've got some users, you got free trials,
+
+50
+00:03:38,960 --> 00:03:42,200
+but you feel like there's maybe something missing, and you make a change.
+
+51
+00:03:42,200 --> 00:03:45,960
+Tell me about what that change was and what happened after you made that change.
+
+52
+00:03:45,960 --> 00:03:52,320
+>> To balance all the things that were peculiar to my situation, I wanted to start with the one-time purchase,
+
+53
+00:03:52,320 --> 00:04:01,640
+and I had to convert the app into a one-time purchase, which means that I cannot incur any AI cost because AI usage cost me money,
+
+54
+00:04:01,640 --> 00:04:04,320
+and I wanted to offload that to the users.
+
+55
+00:04:04,320 --> 00:04:07,320
+So, that was step one to make it bring your own keys.
+
+56
+00:04:07,320 --> 00:04:10,480
+And the second step was to not even incur any server cost.
+
+57
+00:04:10,480 --> 00:04:16,560
+If I were to like just build it once and sell it many times, I had to offload my server cost to the users as well.
+
+58
+00:04:16,560 --> 00:04:22,560
+And the easiest way to do that was to just use the users'computers, and to do that, I had to build a desktop app.
+
+59
+00:04:22,560 --> 00:04:27,400
+This allows me to like ship and forget about my business cost, and everything ran on the users.
+
+60
+00:04:27,400 --> 00:04:28,680
+They paid for the AI.
+
+61
+00:04:28,680 --> 00:04:31,880
+As soon as they changed it, a lot of people actually started paying.
+
+62
+00:04:31,880 --> 00:04:34,760
+They were more serious in terms of giving feedback.
+
+63
+00:04:34,760 --> 00:04:42,880
+It felt much more refreshing in the sense that people were not only more serious, but they were also more helpful in kind of like believing in this early-stage product.
+
+64
+00:04:42,880 --> 00:04:48,960
+So, after we moved to a one-time purchase model, that change led to about $80,000 in the last 6 months.
+
+65
+00:04:48,960 --> 00:04:55,080
+Okay, so, for anyone watching this, I do want to reiterate that a lifetime deal doesn't make sense for all businesses.
+
+66
+00:04:55,080 --> 00:04:59,400
+So, I'd like to hear from you, when does a lifetime deal make sense?
+
+67
+00:04:59,400 --> 00:05:02,120
+What type of business and what type of founder is this for?
+
+68
+00:05:02,120 --> 00:05:05,480
+I think every bootstrap business should do an LTD model.
+
+69
+00:05:05,480 --> 00:05:12,800
+The pricing and how they do it should obviously vary according to their unique product use cases and the costs that they incur,
+
+70
+00:05:12,800 --> 00:05:17,560
+but I think a VC style of doing freemium would not work for a bootstrap model.
+
+71
+00:05:17,560 --> 00:05:22,880
+Having venture capital would actually mean that you can offset your truth-seeking in essence,
+
+72
+00:05:22,880 --> 00:05:28,000
+like you can kind of delay your product market fit, so you can kind of hope that people would come on board,
+
+73
+00:05:28,000 --> 00:05:31,440
+but that's not a luxury that bootstrap businesses would have.
+
+74
+00:05:31,440 --> 00:05:36,120
+So, almost every bootstrap business should do a lifetime deal along with whatever they are doing.
+
+75
+00:05:36,120 --> 00:05:39,680
+If you already have like a subscription model, have a lifetime deal.
+
+76
+00:05:39,680 --> 00:05:45,880
+Even if it's a limited thing, have it because it kind of gives you this boost in morale with this chunk of cash coming in,
+
+77
+00:05:45,880 --> 00:05:53,840
+and you have a much more validated idea, and you have a good sizable user base who are willing to actively give feedback and be involved,
+
+78
+00:05:53,840 --> 00:06:01,960
+and it's hugely, hugely beneficial if you're a solo founder or like a founder with like a small team trying to figure out what to build because usually what happens,
+
+79
+00:06:01,960 --> 00:06:08,000
+which happened with me in the past as well, was that you kind of get into your own head and trying to think what to build and what not to build.
+
+80
+00:06:08,000 --> 00:06:12,400
+All right, before we get into how Praneeth successfully pivoted and relaunched his business,
+
+81
+00:06:12,400 --> 00:06:13,880
+I do need to point something out.
+
+82
+00:06:13,880 --> 00:06:17,640
+Making money online isn't as complicated as most people think.
+
+83
+00:06:17,640 --> 00:06:22,840
+At its core, it's as simple as creating something valuable and putting a Stripe payment link on it.
+
+84
+00:06:22,840 --> 00:06:26,880
+No, it won't always work, but you'll never know unless you ship it.
+
+85
+00:06:26,880 --> 00:06:28,880
+And that's the beauty of the internet today.
+
+86
+00:06:28,880 --> 00:06:33,840
+There are almost no barriers to try, and this is why we created a Starter Story Build.
+
+87
+00:06:33,840 --> 00:06:38,720
+It's our action-oriented bootcamp where in just a couple of weeks, you'll come up with an idea,
+
+88
+00:06:38,720 --> 00:06:42,560
+you'll build it with AI tools, and you'll actually launch it to the real world.
+
+89
+00:06:42,560 --> 00:06:48,600
+Even if you have no coding experience or you're still working a full-time job, there has never been a better time to just try.
+
+90
+00:06:48,600 --> 00:06:53,560
+So, if you're ready to take action, click the first link in the description to learn more about Starter Story Build.
+
+91
+00:06:53,560 --> 00:06:55,480
+All right, now back to Praneeth's story.
+
+92
+00:06:55,480 --> 00:06:59,560
+The next question I have is more specific and tactical is the pricing of lifetime deal.
+
+93
+00:06:59,560 --> 00:07:05,480
+How did you price your lifetime deal, and how would you recommend anybody who's got similar products to price a lifetime deal?
+
+94
+00:07:05,480 --> 00:07:11,520
+If you are building an AI product, I think it's absolutely worth it to have a bring-your-own-keys model.
+
+95
+00:07:11,520 --> 00:07:17,040
+That offsets a lot of costs, and it kind of offloads it from you to the users, so everybody should do that.
+
+96
+00:07:17,040 --> 00:07:23,240
+The way I've done that for Rabbit Holes is that the pricing of the actual product actually started with something really small.
+
+97
+00:07:23,240 --> 00:07:26,760
+I started off with $29 when I was under 100 users.
+
+98
+00:07:26,760 --> 00:07:36,920
+Once it crossed 100, I bumped it to like 49, and we are going to be bumping the lifetime deal much higher and kind of moving on to a recurring model now that we are about uh 1,200 users right now.
+
+99
+00:07:36,920 --> 00:07:43,400
+So, the initial offering was much lower, and the early users who bought in got a much better deal.
+
+100
+00:07:43,400 --> 00:07:48,040
+And it also gave me feedback of like it that the market is wanting to buy something like this.
+
+101
+00:07:48,040 --> 00:07:50,880
+On that tactical note, I do also want to talk about growth.
+
+102
+00:07:50,880 --> 00:07:55,520
+Yes, you can create a lifetime deal, and you can set your pricing, but you still need to drive users to the page,
+
+103
+00:07:55,520 --> 00:07:57,360
+you still need to get it in front of people.
+
+104
+00:07:57,360 --> 00:08:01,360
+How did you grow Rabbit Holes, and what was your growth strategies?
+
+105
+00:08:01,360 --> 00:08:05,560
+One of the first things I would still want people to do is to get their landing page right.
+
+106
+00:08:05,560 --> 00:08:10,040
+Um to get that right, I need think this is something that I've done in my past experiments,
+
+107
+00:08:10,040 --> 00:08:13,360
+but this time I've done it right, which is to get my ICP correct.
+
+108
+00:08:13,360 --> 00:08:15,360
+In my case, it was power AI users.
+
+109
+00:08:15,360 --> 00:08:19,240
+So, my landing page copy was like completely tailored to power AI users.
+
+110
+00:08:19,240 --> 00:08:24,840
+I call them out in my H1, and I call them out in multiple places on my website, and this is very important,
+
+111
+00:08:24,840 --> 00:08:28,440
+and there's like tons of places where you can find how to structure your website.
+
+112
+00:08:28,440 --> 00:08:39,240
+And after I've done that, I started like talking more about it on Twitter, and and I kind of like replied to conversations that were in relation to AI interactions and the new age of AI,
+
+113
+00:08:39,240 --> 00:08:45,480
+and it was not just directly talking about my product in a sense, like, you know, buy my product or I'm building this and that sense,
+
+114
+00:08:45,480 --> 00:08:48,520
+but I was just hinting towards something related to my product.
+
+115
+00:08:48,520 --> 00:08:51,720
+>> On that note, I'd love to hear just some of the numbers of the business today.
+
+116
+00:08:51,720 --> 00:08:54,760
+What is the business look like, revenue, profit, users?
+
+117
+00:08:54,760 --> 00:08:55,560
+What can you share?
+
+118
+00:08:55,560 --> 00:09:03,320
+It's like around 80k-ish in gross revenue as we speak, and about 75 around uh profits,
+
+119
+00:09:03,320 --> 00:09:05,720
+and minus the refunds and everything.
+
+120
+00:09:05,720 --> 00:09:16,160
+We are about like 1,200 paying users, and 60% of them are lifetime users, and about 40% are like people who bought it out of one-time purchase where they would have to renew
+
+121
+00:09:16,160 --> 00:09:18,680
+it after a year to get more updates.
+
+122
+00:09:18,680 --> 00:09:23,920
+And uh overall, we have about like 38,000 unique visitors to the site so far.
+
+123
+00:09:23,920 --> 00:09:24,960
+Well, thanks for sharing that.
+
+124
+00:09:24,960 --> 00:09:26,920
+On that same note, tell me about tech stack.
+
+125
+00:09:26,920 --> 00:09:28,200
+How did you actually build this?
+
+126
+00:09:28,200 --> 00:09:35,280
+I was saying in the beginning, I used AI as my co-founder in essence, and I used Cursor for coding.
+
+127
+00:09:35,280 --> 00:09:37,320
+The landing page is built on Next.js.
+
+128
+00:09:37,320 --> 00:09:43,600
+The actual app is an Electron app, and it's uh uses React underneath and um TypeScript to do it.
+
+129
+00:09:43,600 --> 00:09:46,680
+And do you host the apps on Cloudflare, but that's not a huge deal.
+
+130
+00:09:46,680 --> 00:09:52,960
+But another big thing I have to talk about or touch on is the AI SDK that is built by people at Vercel,
+
+131
+00:09:52,960 --> 00:10:04,720
+and it's a huge accelerant in me being able to build this product because it allowed me to build a product with great abstraction where I could just focus on the front end and have almost nothing to
+
+132
+00:10:04,720 --> 00:10:08,560
+worry about integrating with these multiple different kind of AI providers.
+
+133
+00:10:08,560 --> 00:10:11,480
+AI SDK gives you the best abstraction in that sense.
+
+134
+00:10:11,480 --> 00:10:17,480
+You use it and you're automatically capable of logging into all the top providers and then some.
+
+135
+00:10:17,480 --> 00:10:26,240
+On a similar note, what I think is cool is you have this BYOK, bring your own keys, which basically means you don't have to pay for API LLM costs.
+
+136
+00:10:26,240 --> 00:10:30,440
+So, I'm curious, what are the costs and margins for a business like this?
+
+137
+00:10:30,440 --> 00:10:35,320
+You really don't have big server costs and you don't have API costs, so what does it cost to run day-to-day?
+
+138
+00:10:35,320 --> 00:10:36,880
+It's almost nothing.
+
+139
+00:10:36,880 --> 00:10:43,560
+I only have to pay for my landing page hosting and almost I can bring it to zero, but because I'm like a Next.js spoiled person,
+
+140
+00:10:43,560 --> 00:10:52,520
+I host it on Vercel and I have some fancy things going on there, so it cost me about $50 a month and I have a Cursor subscription about $200 a month.
+
+141
+00:10:52,520 --> 00:10:57,160
+But, that is something that I have to only spend because I have to keep working on new features,
+
+142
+00:10:57,160 --> 00:10:59,280
+not to maintain the existing product.
+
+143
+00:10:59,280 --> 00:10:59,720
+Cool.
+
+144
+00:10:59,720 --> 00:11:03,400
+Well, last question that I have for you, a question that we ask all founders to come on to the channel.
+
+145
+00:11:03,400 --> 00:11:10,839
+If you could stand on Praneeth's shoulder when you were just starting out before you had product market fit in this awesome product that's made a bunch of revenue,
+
+146
+00:11:10,839 --> 00:11:11,880
+what would be your advice?
+
+147
+00:11:11,880 --> 00:11:18,360
+I've been trying building different products since the last 6-7 years and for the good chunk of last 5 years,
+
+148
+00:11:18,360 --> 00:11:20,839
+I was operating as a skills man.
+
+149
+00:11:20,839 --> 00:11:29,240
+As an entrepreneur, your goal is to find product market fit as soon as possible and your goal is to build something that makes people's lives better,
+
+150
+00:11:29,240 --> 00:11:39,760
+but what I was doing was appealing to my peers, which is totally not the mindset that I need to have as an entrepreneur because your whole purpose should be about finding a product market fit,
+
+151
+00:11:39,760 --> 00:11:49,520
+finding something that you're going to put out in the market and they're going to give you money and reward you in return as a thank you for making their lives better and that should be your only goal.
+
+152
+00:11:49,520 --> 00:11:50,560
+That's really good advice.
+
+153
+00:11:50,560 --> 00:11:51,800
+Thanks for sharing that, Praneeth.
+
+154
+00:11:51,800 --> 00:11:52,440
+That was awesome.
+
+155
+00:11:52,440 --> 00:11:53,680
+Thanks for coming on to the channel.
+
+156
+00:11:53,680 --> 00:11:55,200
+What you built is awesome.
+
+157
+00:11:55,200 --> 00:11:58,240
+I'm excited to see what you continue to do and continue to build.
+
+158
+00:11:58,240 --> 00:11:58,920
+Thanks for coming on.
+
+159
+00:11:58,920 --> 00:12:00,080
+And thanks for having me.
+
+160
+00:12:00,080 --> 00:12:01,280
+It's a great pleasure.
+
+161
+00:12:01,280 --> 00:12:03,360
+All right, thank you Praneeth for coming on to the channel.
+
+162
+00:12:03,360 --> 00:12:06,080
+Hopefully, you guys got a bunch of value from this video.
+
+163
+00:12:06,080 --> 00:12:11,240
+I find it super inspiring about how Praneeth left his full-time job, decided to go build stuff,
+
+164
+00:12:11,240 --> 00:12:15,440
+and especially how he didn't give up after the initial version of his app failed.
+
+165
+00:12:15,440 --> 00:12:20,440
+If you're looking to do something similar and ship your own app, then definitely check out Starter Story Build.
+
+166
+00:12:20,440 --> 00:12:24,520
+It's our program where in just a few weeks, we'll help you find an idea, build it with AI,
+
+167
+00:12:24,520 --> 00:12:27,240
+and launch it to the real world with real users.
+
+168
+00:12:27,240 --> 00:12:33,160
+If this sounds interesting to you, just head to the first link in the description to learn more about what Starter Story Build is about.
+
+169
+00:12:33,160 --> 00:12:35,080
+All right, that's it for this episode.
+
+170
+00:12:35,080 --> 00:12:36,200
+Thank you guys for watching.
+
+171
+00:12:36,200 --> 00:12:37,440
+We'll see you in the next one.
+
+172
+00:12:37,440 --> 00:12:39,880
+Peace.

@@ -1,0 +1,5826 @@
+1
+00:00:00,160 --> 00:00:02,960
+30% of PMs that leave Palantir start a company.  
+
+2
+00:00:02,960 --> 00:00:04,960
+Just give us a picture of 
+what the people are like.
+
+3
+00:00:04,960 --> 00:00:08,560
+I feel like they screened really hard 
+for a few traits in particular. One  
+
+4
+00:00:08,560 --> 00:00:11,280
+is like very independent-minded people who weren't  
+
+5
+00:00:11,280 --> 00:00:14,960
+afraid to push back. Two is people 
+with broader intellectual interests.
+
+6
+00:00:14,960 --> 00:00:18,800
+What's the difference between, say, a 
+PM at Palantir versus a traditional PM?
+
+7
+00:00:18,800 --> 00:00:26,480
+They were extremely careful about only making 
+people PMs who had first proven themselves out  
+
+8
+00:00:26,480 --> 00:00:31,120
+as forward deployed engineers. You basically 
+could not become a PM any other way. There's  
+
+9
+00:00:31,120 --> 00:00:36,400
+two types of engineer at Palantir. So, there's 
+one that works on the core product and they're  
+
+10
+00:00:36,400 --> 00:00:40,240
+a traditional software engineer. There was 
+a different type of engineer which you sent  
+
+11
+00:00:40,240 --> 00:00:45,040
+into the field. You would spend maybe Monday 
+to Thursday and you would actually go into the  
+
+12
+00:00:45,040 --> 00:00:48,640
+building where the customer worked and you would 
+work alongside them. You would literally get a  
+
+13
+00:00:48,640 --> 00:00:51,760
+desk there and so, that engineer became 
+known as a forward deployed engineer.
+
+14
+00:00:51,760 --> 00:00:54,320
+What's something that you believe 
+that most other people don't?
+
+15
+00:00:54,320 --> 00:00:58,480
+I think this is a somewhat 
+contrarian view within tech.
+
+16
+00:00:58,480 --> 00:01:04,080
+Today, my guest is Nabeel Qureshi. Nabeel is a 
+founder, a writer, a researcher, and an engineer.  
+
+17
+00:01:04,080 --> 00:01:09,120
+He was recently a visiting scholar researching 
+AI policy at the Mercatus Center alongside Tyler  
+
+18
+00:01:09,120 --> 00:01:13,360
+Cowen. At one point, he worked with the National 
+Institute of Health and major clinical centers  
+
+19
+00:01:13,360 --> 00:01:17,520
+to create the largest medical data set in the 
+world. He worked at the Bank of England for a  
+
+20
+00:01:17,520 --> 00:01:21,600
+bit. He was founding member and VP of Business 
+Development at GoCardless, one of Europe's  
+
+21
+00:01:21,600 --> 00:01:25,680
+biggest financial technology unicorns.
+And most related to the topic of this  
+
+22
+00:01:25,680 --> 00:01:30,400
+conversation, Nabeel spent almost eight years 
+at Palantir as a forward deployed engineer  
+
+23
+00:01:30,400 --> 00:01:35,040
+working on public health projects with US federal 
+agencies, including public health services during  
+
+24
+00:01:35,040 --> 00:01:40,720
+the COVID-19 response and applied AI in drug 
+discovery. Whether you are a fan of Palantir  
+
+25
+00:01:40,720 --> 00:01:45,360
+or hate everything that they do, they are an 
+important and fast-growing company that is  
+
+26
+00:01:45,360 --> 00:01:50,000
+pumping out incredible product leaders, as you'll 
+hear more than any other company in the world. So,  
+
+27
+00:01:50,000 --> 00:01:53,840
+it is worth studying and understanding.
+I've never heard an in-depth conversation  
+
+28
+00:01:53,840 --> 00:01:58,880
+digging into how they operate, build product, 
+hire, and were able to scale from a primarily  
+
+29
+00:01:58,880 --> 00:02:02,640
+services business to a software business. 
+So, I am very excited to bring you this  
+
+30
+00:02:02,640 --> 00:02:07,280
+inside look. In our conversation, we go deep 
+into what the heck does Palantir even do,  
+
+31
+00:02:07,280 --> 00:02:13,120
+why getting good at managing lots of data is 
+an underappreciated secret to their success, a  
+
+32
+00:02:13,120 --> 00:02:17,600
+look at the unique forward deployed engineer role 
+that they innovated, and what other companies can  
+
+33
+00:02:17,600 --> 00:02:22,400
+borrow from their insights here. Also, how they 
+hire and how they build amazing product leaders,  
+
+34
+00:02:22,400 --> 00:02:26,400
+plus a ton of advice on talking to customers, 
+building products, and starting companies. 
+
+35
+00:02:26,400 --> 00:02:29,440
+If you enjoy this podcast, don't forget to 
+subscribe and follow it in your favorite  
+
+36
+00:02:29,440 --> 00:02:33,600
+podcasting app or YouTube. Also, if you 
+become an annual subscriber of my newsletter,  
+
+37
+00:02:33,600 --> 00:02:38,560
+you get a bunch of amazing products for free 
+for a year, including Superhuman, Notion,  
+
+38
+00:02:38,560 --> 00:02:43,840
+Linear, Perplexity, Granola and more. Check it 
+out at lennysnewsletter.com and click Bundle. 
+
+39
+00:02:43,840 --> 00:02:50,640
+With that, I bring you Nabeel Qureshi.
+This episode is brought to you by WorkOS.  
+
+40
+00:02:50,640 --> 00:02:55,040
+If you're building a SaaS app, at some point, 
+your customers will start asking for enterprise  
+
+41
+00:02:55,040 --> 00:03:01,280
+features like SAML authentication and SCIM 
+provisioning. That's where WorkOS comes in, making  
+
+42
+00:03:01,280 --> 00:03:06,960
+it fast and painless to add enterprise features 
+to your app. Their APIs are easy to understand so  
+
+43
+00:03:06,960 --> 00:03:12,160
+that you can ship quickly and get back to building 
+other features. Today, hundreds of companies are  
+
+44
+00:03:12,160 --> 00:03:18,880
+already powered by WorkOS, including ones you 
+probably know like Vercel, Webflow and Loom. 
+
+45
+00:03:18,880 --> 00:03:24,800
+WorkOS also recently acquired Warrant, the 
+fine-grained authorization service. Warrant's  
+
+46
+00:03:24,800 --> 00:03:29,600
+product is based on a groundbreaking 
+authorization system called Zanzibar,  
+
+47
+00:03:29,600 --> 00:03:34,560
+which was originally designed for Google to 
+power Google Docs and YouTube. This enables  
+
+48
+00:03:34,560 --> 00:03:39,120
+fast authorization checks at enormous scale 
+while maintaining a flexible model that can  
+
+49
+00:03:39,120 --> 00:03:44,320
+be adapted to even the most complex use cases.
+If you're currently looking to build role-based  
+
+50
+00:03:44,320 --> 00:03:50,480
+access control or other enterprise features like 
+single sign-on, SCIM or user management, you  
+
+51
+00:03:50,480 --> 00:03:56,320
+should consider WorkOS. It's a drop-in replacement 
+for auth zero and supports up to one million  
+
+52
+00:03:56,320 --> 00:04:05,440
+monthly active users for free. Check it out at 
+WorkOS.com to learn more. That's WorkOS.com. 
+
+53
+00:04:05,440 --> 00:04:11,840
+This episode is brought to you by Attio, the AI 
+native CRM. Attio is built to scale with your  
+
+54
+00:04:11,840 --> 00:04:17,520
+business from day one. Connect your email and 
+calendar and Attio instantly builds a CRM that  
+
+55
+00:04:17,520 --> 00:04:22,080
+matches your business model with all of your 
+company's contacts and interactions enriched  
+
+56
+00:04:22,080 --> 00:04:27,920
+with actionable insights. Sync in your product 
+usage, billing info, or any other data sources  
+
+57
+00:04:27,920 --> 00:04:33,520
+and Attio's flexible data model will handle it 
+all without any rigid templates or workarounds. 
+
+58
+00:04:33,520 --> 00:04:39,280
+With Attio, AI isn't just a feature, it's the 
+foundation. You can do things like instantly  
+
+59
+00:04:39,280 --> 00:04:44,080
+prospect and route leads with research 
+agents, get real-time insights from AI  
+
+60
+00:04:44,080 --> 00:04:49,840
+using customer conversations, and build powerful 
+AI automations for your most complex workflows.  
+
+61
+00:04:49,840 --> 00:04:54,800
+Industry leaders like Flatfile, Replicate 
+and Modal are already experiencing what's  
+
+62
+00:04:54,800 --> 00:05:08,400
+next for CRM. Go to attio.com/lenny to get 15% 
+off your first year. That's attio.com/lenny. 
+
+63
+00:05:08,400 --> 00:05:12,400
+Nabeel, thank you so much for 
+being here. Welcome to the podcast.
+
+64
+00:05:12,400 --> 00:05:14,160
+Thanks, Lenny. Glad to be here.
+
+65
+00:05:14,160 --> 00:05:18,720
+In our chat today, I want to zero in on a post 
+that you recently wrote where you shared your  
+
+66
+00:05:18,720 --> 00:05:25,280
+reflections on your time at Palantir. You spent 
+something, maybe just under eight years there.  
+
+67
+00:05:25,280 --> 00:05:28,400
+The reason I'm really interested in Palantir 
+is I've been doing a bunch of research recently  
+
+68
+00:05:28,400 --> 00:05:33,280
+looking into which companies hire the best product 
+managers and create the best product managers,  
+
+69
+00:05:33,280 --> 00:05:37,040
+and Palantir just keeps coming up over 
+and over in the work that I'm doing. 
+
+70
+00:05:37,040 --> 00:05:43,120
+So, I'll share a few stats real quick. I looked 
+at which companies produce the most founders,  
+
+71
+00:05:43,120 --> 00:05:48,000
+especially out of their PM team, and Palantir 
+is, by far, number one. 30% of PMs that leave  
+
+72
+00:05:48,000 --> 00:05:54,400
+Palantir start a company. And number two 
+is 18% and that's Intercom. So, that stat,  
+
+73
+00:05:54,400 --> 00:05:59,440
+I looked at which companies PMs that leave get 
+immediately promoted in their next role, Palantir  
+
+74
+00:05:59,440 --> 00:06:05,440
+is number one of all companies in the world.
+I looked at which companies' PMs become the  
+
+75
+00:06:05,440 --> 00:06:12,240
+first PM at another startup that they join, 
+Palantir is number two in the world. And then  
+
+76
+00:06:12,240 --> 00:06:17,440
+I looked at which companies alumni PMs become 
+heads of Product down later in their career,  
+
+77
+00:06:17,440 --> 00:06:22,640
+Palantir is number three in the world. Also, just 
+the company is doing extremely well. It's worth,  
+
+78
+00:06:22,640 --> 00:06:27,280
+I think, something like $200 billion these 
+days. So, there's a lot to learn from Palantir. 
+
+79
+00:06:27,280 --> 00:06:32,960
+I actually want to start a question that I imagine 
+every employee at Palantir constantly gets that,  
+
+80
+00:06:32,960 --> 00:06:38,560
+and I still don't think people totally have an 
+answer in their head. What does Palantir do?
+
+81
+00:06:38,560 --> 00:06:44,400
+That's a great question. You started off 
+with an easy one, Lenny. So, Palantir is,  
+
+82
+00:06:44,400 --> 00:06:50,240
+the way I describe it, is they achieve outcomes 
+for their customers very tactically. The way  
+
+83
+00:06:50,240 --> 00:06:56,240
+they do that tends to be through a data platform. 
+So, they have what I consider to be the world's  
+
+84
+00:06:56,240 --> 00:07:01,360
+best data platform, and I can go into what 
+that means in a second. And then there's a  
+
+85
+00:07:01,360 --> 00:07:06,160
+couple of different versions of this. So, there's 
+one that's optimized for intelligence and defense  
+
+86
+00:07:06,160 --> 00:07:10,640
+use cases that one is called Gotham. And then 
+there's one that's more optimized for commercial  
+
+87
+00:07:10,640 --> 00:07:15,680
+use cases and that one's called Foundry.
+And that's the classic explanation of what they  
+
+88
+00:07:15,680 --> 00:07:20,240
+do. So, they sell a data platform. They typically 
+work with very large customers is the other thing.  
+
+89
+00:07:20,240 --> 00:07:25,520
+So, it's going to be Fortune 50. It's going to 
+be governments around the world. It's going to be  
+
+90
+00:07:25,520 --> 00:07:31,920
+those kinds of customers. So, that's the capsule 
+answer, but there's lots to unpack in there.
+
+91
+00:07:31,920 --> 00:07:35,760
+Awesome. Okay, and we're going to touch on a lot 
+of this stuff, including the data piece. I want to  
+
+92
+00:07:35,760 --> 00:07:40,400
+start with talking about just the people and the 
+culture of Palantir. You shared a bunch of really  
+
+93
+00:07:40,400 --> 00:07:45,040
+funny stories of what it's like to come to work 
+and even interview at Palantir. There's a story  
+
+94
+00:07:45,040 --> 00:07:49,280
+you shared where because maybe the co-founder, 
+you're walking by and he's chewing ice,  
+
+95
+00:07:49,280 --> 00:07:54,240
+and that's some benefits to cognition. Just 
+give us a picture of what the people are like,  
+
+96
+00:07:54,240 --> 00:07:58,880
+especially early days Palantir and the 
+culture and how unique it might seem.
+
+97
+00:07:58,880 --> 00:08:04,000
+Yeah, it's definitely, it's an add-a-one 
+company. I don't know how else you would  
+
+98
+00:08:04,000 --> 00:08:10,320
+start this company if you were not somebody like 
+Peter Thiel. And so far as, it seems like there  
+
+99
+00:08:10,320 --> 00:08:15,760
+was a point at which they owned a silly fraction 
+of the office space in Palo Alto. So, you'd walk  
+
+100
+00:08:15,760 --> 00:08:20,320
+around Palo Alto and there would just be Palantir 
+hoodies, Palantir buildings everywhere and so on. 
+
+101
+00:08:20,880 --> 00:08:27,360
+And so, I feel like what happened at some point 
+is they raised a lot of money and they resorted  
+
+102
+00:08:27,360 --> 00:08:32,000
+to all these really interesting ways of just 
+getting top talent out of places like Stanford  
+
+103
+00:08:32,000 --> 00:08:37,680
+and other top schools and just people who knew 
+the founders who tended to be very interesting  
+
+104
+00:08:37,680 --> 00:08:44,640
+intellectual people. And I feel like they screened 
+really hard for a few traits in particular. So,  
+
+105
+00:08:44,640 --> 00:08:49,680
+I would say one is very independent-minded 
+people, people who weren't afraid to push back,  
+
+106
+00:08:49,680 --> 00:08:55,120
+who questioned the frame of everything and 
+thought for themselves and had strong convictions. 
+
+107
+00:08:55,680 --> 00:09:02,480
+Two is just people with broader intellectual 
+interests. Karp just released a new book and  
+
+108
+00:09:02,480 --> 00:09:06,480
+he's quoting Habermas and all these European 
+intellectuals and just things you don't typically  
+
+109
+00:09:06,480 --> 00:09:11,600
+see a tech CEO do. And so, I think there's that 
+intellectual strand in the company. And then yeah,  
+
+110
+00:09:11,600 --> 00:09:18,000
+I think three is just people who are very 
+intensely competitive. There's a sort of win  
+
+111
+00:09:18,000 --> 00:09:26,000
+at all costs mentality to the company. And so, I 
+think those were the set of traits that were this  
+
+112
+00:09:26,000 --> 00:09:30,480
+gravity while in California at a certain time. 
+And so, you just had a lot of really fascinating  
+
+113
+00:09:30,480 --> 00:09:34,560
+people joining the company at that time.
+The way they screened for this was interesting  
+
+114
+00:09:34,560 --> 00:09:39,840
+too. So, for the longest time, they had... 
+Everyone does this now, I think, but at the time,  
+
+115
+00:09:39,840 --> 00:09:43,920
+it was a little bit rarer, is a founder had to 
+interview you in order for you to receive an  
+
+116
+00:09:43,920 --> 00:09:49,280
+offer. And so, a founder, it could have been 
+Alex Karp, it could have been Stephen Cohen.  
+
+117
+00:09:49,280 --> 00:09:53,920
+Earlier on, it might have been somebody like Joe 
+Lonsdale, but it was always one of these people. 
+
+118
+00:09:53,920 --> 00:10:01,120
+And the interviews were pretty strange. With 
+Stephen, it would be, you'd be chatting about  
+
+119
+00:10:01,120 --> 00:10:05,760
+philosophy for an hour and a half and it would 
+very much just be like he would pick a topic out  
+
+120
+00:10:05,760 --> 00:10:10,320
+of thin air. It was impossible to prepare for, 
+and then he would just go very, very deep and  
+
+121
+00:10:10,320 --> 00:10:14,480
+try and test the limits of your understanding. 
+But it would really just be a fun conversation  
+
+122
+00:10:14,480 --> 00:10:20,000
+and then if you pass the vibe check, you'd be in. 
+And so, there was that strong selection mechanism. 
+
+123
+00:10:20,000 --> 00:10:24,880
+There was also the question of, I think it might 
+have been Thiel who mentioned this, but he thinks  
+
+124
+00:10:24,880 --> 00:10:30,960
+that a lot of the best recruiters in the world 
+or the companies that attract talent, they put  
+
+125
+00:10:30,960 --> 00:10:36,640
+out this distinctive bad signal and it has to 
+turn some people off. That's the key of a good,  
+
+126
+00:10:36,640 --> 00:10:42,080
+bad signal. So, I think in the present day, OpenAI 
+and Anthropic, they're both sucking up some of the  
+
+127
+00:10:42,080 --> 00:10:46,480
+best talent that you and I know. And I think one 
+way they do do that, and they are sincere in this,  
+
+128
+00:10:46,480 --> 00:10:51,360
+but they do really attract people who are almost 
+messianic about the potential of artificial super  
+
+129
+00:10:51,360 --> 00:10:55,120
+intelligence and who really believe this 
+is the only thing that matters and it is  
+
+130
+00:10:55,120 --> 00:11:00,000
+going to be the biggest thing in the world.
+I think Palantir's version of that was that  
+
+131
+00:11:00,000 --> 00:11:06,000
+they were quite focused on things like preserving 
+the West. There was a slogan of Save the Shire,  
+
+132
+00:11:06,000 --> 00:11:10,080
+right? So, they were talking about military 
+and defense and intelligence and the importance  
+
+133
+00:11:10,080 --> 00:11:15,120
+of that well before everybody else. And bear in 
+mind, this was during the era when it was social,  
+
+134
+00:11:15,120 --> 00:11:20,960
+mobile, local apps. You had, social media was 
+on the rise. You had, the hot companies were  
+
+135
+00:11:20,960 --> 00:11:26,640
+Facebook and Pinterest and things like that. And 
+so, this was, at the time, a very strange thing. 
+
+136
+00:11:26,640 --> 00:11:31,040
+And so, I think to be drawn to that, you 
+had to look at the other options and say,  
+
+137
+00:11:31,040 --> 00:11:35,040
+"Well, this is fine, but what am I really 
+doing in life?" Whereas you had this other  
+
+138
+00:11:35,040 --> 00:11:38,480
+place that was like, "Hey, come solve the 
+hardest, messiest problems in the world  
+
+139
+00:11:38,480 --> 00:11:43,280
+with us." And I think just at that time, 
+that really drew some really good people.
+
+140
+00:11:43,280 --> 00:11:47,840
+We're going to talk about the reasons people don't 
+necessarily like Palantir and the moral question  
+
+141
+00:11:47,840 --> 00:11:53,760
+of what they do, but when people look at a company 
+that is like... I guess OpenAI, to your point,  
+
+142
+00:11:53,760 --> 00:11:58,480
+is a good example where they're just so turned 
+off by maybe their approach. What you're missing  
+
+143
+00:11:58,480 --> 00:12:03,120
+is that's potentially intentional because it 
+actually draws in the people they really want. 
+
+144
+00:12:03,120 --> 00:12:07,920
+It makes me think about, I was involved in 
+creating the core values at Airbnb and something  
+
+145
+00:12:07,920 --> 00:12:12,560
+that we learned at going through that process is, 
+when you define the values for your company, it's  
+
+146
+00:12:12,560 --> 00:12:18,240
+really important to clarify who this is not for, 
+exactly as you described, which feels unnatural.  
+
+147
+00:12:18,240 --> 00:12:22,160
+Like, "Oh, we want to be inclusive, we don't want 
+to make people feel like they don't belong." But  
+
+148
+00:12:22,160 --> 00:12:26,480
+the whole idea is to be clear on here's who 
+will thrive here and here's who's aligned with  
+
+149
+00:12:26,480 --> 00:12:31,040
+our mission. And what I'm hearing is Palantir 
+and these companies take it to the extreme.
+
+150
+00:12:31,040 --> 00:12:35,680
+A hundred percent, yeah. On my team at Palantir, 
+one process that we followed, I could talk about  
+
+151
+00:12:35,680 --> 00:12:40,960
+this more if it's interesting, is when you started 
+a new project, you basically had to organize what  
+
+152
+00:12:40,960 --> 00:12:45,520
+they called a murder board for it. I think this 
+is originally an army type. So, the idea is,  
+
+153
+00:12:45,520 --> 00:12:51,200
+basically, you write up a two-page plan for 
+the project. You invite three or four smart  
+
+154
+00:12:51,200 --> 00:12:56,480
+folks who don't know anything about the project 
+and their job is just to tear apart your plan. 
+
+155
+00:12:56,480 --> 00:13:01,600
+And so, you have to write, here's the vision for 
+this, here are the goals, here are the tactics  
+
+156
+00:13:01,600 --> 00:13:05,840
+over the next three months. And one section 
+was principles that you're following for this  
+
+157
+00:13:05,840 --> 00:13:10,640
+project. And I remember giving this advice 
+a lot was just like when people joined,  
+
+158
+00:13:10,640 --> 00:13:16,480
+they would write principles such as move fast 
+and I would always be, "Everyone likes to move  
+
+159
+00:13:16,480 --> 00:13:21,280
+fast." It is not a good principle actually because 
+nobody can really disagree with this reasonably.  
+
+160
+00:13:21,280 --> 00:13:25,760
+You need something that actually a lot of 
+people are going to go, "Why are you taking  
+
+161
+00:13:25,760 --> 00:13:29,200
+this principle? This seems wrong to me." So, you 
+need something that people can disagree with.
+
+162
+00:13:29,200 --> 00:13:32,800
+I want to come back to the beginning of 
+what you described of what they look for,  
+
+163
+00:13:32,800 --> 00:13:37,680
+what Palantir looks for in people. You talked 
+about independent-minded, a lot of interests,  
+
+164
+00:13:37,680 --> 00:13:41,600
+broad interests, and competitive. First of 
+all, I think a lot of people hearing that,  
+
+165
+00:13:41,600 --> 00:13:45,120
+especially the last part, be like, "I don't want 
+to work there." Why does this work? Because this  
+
+166
+00:13:45,120 --> 00:13:52,080
+isn't naturally what you would think of as how 
+you build the most amazing, productive team.
+
+167
+00:13:52,080 --> 00:13:57,840
+I think it just draws people who want to win. 
+I think that's what was really important.  
+
+168
+00:13:58,720 --> 00:14:04,960
+The other piece of it, I think, is that there's 
+actually, and this was much truer 10 years ago,  
+
+169
+00:14:04,960 --> 00:14:09,440
+is there was a lot of talent that was a 
+little bit outside of the tech ecosystem  
+
+170
+00:14:09,440 --> 00:14:14,560
+but could easily have been very successful 
+within it. So, people who got out of the  
+
+171
+00:14:14,560 --> 00:14:20,080
+military or one of the intelligence agencies and 
+they were doing, let's say, an MBA somewhere to  
+
+172
+00:14:20,080 --> 00:14:25,520
+transition into the corporate world. And I think, 
+typically, they would have taken a position at a  
+
+173
+00:14:25,520 --> 00:14:29,920
+classic Fortune 500 corporation. And actually, 
+Palantir managed to get a bunch of that talent.  
+
+174
+00:14:29,920 --> 00:14:36,000
+And at the time, that was very undervalued.
+The people who succeed the most in the Marines  
+
+175
+00:14:36,000 --> 00:14:40,560
+or the Special Forces or whatever it is, tend 
+to be pretty smart people. They tend to have  
+
+176
+00:14:40,560 --> 00:14:46,000
+accomplished very difficult goals in very hostile 
+environments. And it turns out that when you're  
+
+177
+00:14:46,000 --> 00:14:50,240
+starting a somewhat chaotic tech company, that's 
+actually a very useful skill to have. Again,  
+
+178
+00:14:50,240 --> 00:14:55,120
+I think more companies are doing this now, 
+so Scale AI and et cetera. But at the time,  
+
+179
+00:14:55,120 --> 00:15:00,160
+that was a very differentiated talent pool.
+And so, I think having those values as opposed  
+
+180
+00:15:00,160 --> 00:15:05,840
+to maybe the values that were more in fashion 
+then, so talking about how inclusive you are,  
+
+181
+00:15:05,840 --> 00:15:12,080
+or the sushi that you serve at lunch, or whatever 
+it is, it just drew a very different crowd. And  
+
+182
+00:15:12,080 --> 00:15:17,120
+I think the game that was being played there 
+was, one, it's mission alignment. You're doing  
+
+183
+00:15:17,120 --> 00:15:21,600
+a defense company, that's the kind of person 
+you want to attract. But I think there's also,  
+
+184
+00:15:21,600 --> 00:15:26,080
+two, which is just what is the talent that 
+maybe is a little bit undervalued now and how  
+
+185
+00:15:26,080 --> 00:15:31,280
+do you actually draw those people to you? 
+And I think that game is always shifting.
+
+186
+00:15:31,280 --> 00:15:36,160
+This is definitely starting to explain why so 
+many Palantir alumni go on to start companies  
+
+187
+00:15:36,160 --> 00:15:40,960
+and become leaders at other companies. These 
+are leaders that you're hiring. So, it feels  
+
+188
+00:15:40,960 --> 00:15:45,360
+like a lot of it is just the talent you 
+hire are people that are naturally leaders.
+
+189
+00:15:45,360 --> 00:15:50,480
+I think you're right, and we can get more 
+into it, but I think there was also a very  
+
+190
+00:15:50,480 --> 00:15:54,720
+concrete set of ways where that place 
+was a training ground for founders. I  
+
+191
+00:15:54,720 --> 00:15:58,480
+even think it turned a lot of people who 
+might not have become founders into good  
+
+192
+00:15:58,480 --> 00:16:02,320
+founders because of the way it works. So, 
+I think there was a selection effect there,  
+
+193
+00:16:02,320 --> 00:16:08,000
+but there is also some training effect too, 
+but it's unique to the way the company works.
+
+194
+00:16:08,000 --> 00:16:11,680
+And is that along the lines of the forward 
+deployed engineer stuff or is that something else?
+
+195
+00:16:11,680 --> 00:16:12,320
+It is that, yes.
+
+196
+00:16:12,320 --> 00:16:15,760
+Okay, cool. We're going to get to that. I 
+love it. Okay, amazing. Before we do that,  
+
+197
+00:16:15,760 --> 00:16:19,680
+one last thing is something I've seen is 
+that you guys at Palantir don't really  
+
+198
+00:16:19,680 --> 00:16:24,160
+have titles. Everyone's the same level 
+and just generic titles for everyone.  
+
+199
+00:16:24,160 --> 00:16:27,360
+Talk about that. Why do you think that 
+was important? Why was that useful?
+
+200
+00:16:27,360 --> 00:16:32,320
+I don't know this for sure, but I do know that 
+Thiel writes about this in Zero to One and his  
+
+201
+00:16:32,320 --> 00:16:36,800
+take is just that as soon as we have these title, 
+you have a thing that people are competing for and  
+
+202
+00:16:36,800 --> 00:16:42,400
+then you get these very unproductive conflicts. 
+You get people optimizing to game the system.  
+
+203
+00:16:42,400 --> 00:16:46,800
+You get Goodhart's law everywhere. So, 
+it's like you have a metric and then  
+
+204
+00:16:46,800 --> 00:16:51,200
+people basically manage to the metrics.
+I don't want to pick on any one company,  
+
+205
+00:16:51,200 --> 00:16:55,600
+but if you take Google, for example, there's 
+a lot of interesting posts by people who left  
+
+206
+00:16:55,600 --> 00:16:58,640
+Google and they cite this as a reason 
+why they got a little bit disgruntled,  
+
+207
+00:16:58,640 --> 00:17:03,840
+is that there's a way to get promoted. Rather 
+than, let's say, improving an existing product,  
+
+208
+00:17:03,840 --> 00:17:07,440
+what you do is you start a completely new product 
+and that has your name attached to it. And then  
+
+209
+00:17:07,440 --> 00:17:11,200
+when it comes to promotion season, you could 
+say, "Hey, I did this new thing." And then boom,  
+
+210
+00:17:11,200 --> 00:17:15,360
+you have a new Google product, but 
+it's maybe confusing to the end user. 
+
+211
+00:17:15,360 --> 00:17:20,480
+So, I think they wanted to avoid all these 
+kinds of dynamics. And so, the way that they  
+
+212
+00:17:20,480 --> 00:17:25,200
+did that was they said, "Well, titles are not 
+going to be this memetic totem that everybody  
+
+213
+00:17:25,200 --> 00:17:29,360
+competes for. Instead, everyone is just going 
+to have the same slightly meaningless title,  
+
+214
+00:17:29,360 --> 00:17:33,920
+which is forward deployed engineer." And the 
+only people who did have titles were the CEO  
+
+215
+00:17:33,920 --> 00:17:39,360
+and then there were six directors and that was it. 
+And now, I think it's a little bit more nuanced.  
+
+216
+00:17:39,360 --> 00:17:45,120
+There are different teams. There are some people 
+with titles, but honestly, it was almost like... 
+
+217
+00:17:45,680 --> 00:17:50,160
+We used to joke about it. It's like people would 
+leave the company and then you'd see them update  
+
+218
+00:17:50,160 --> 00:17:55,680
+their LinkedIn and they would be like, "Oh yeah, 
+I was totally the SVP of XYZ." And it's like,  
+
+219
+00:17:55,680 --> 00:18:00,160
+"No, you weren't. You're just..." But then it's 
+like I totally understand it too because when  
+
+220
+00:18:00,160 --> 00:18:04,960
+you leave the company, you have to make your 
+experience legible to the next person. And so,  
+
+221
+00:18:04,960 --> 00:18:11,040
+guess what? Things like SVP actually do matter.
+And so, yeah, I think they wanted to avoid this  
+
+222
+00:18:11,040 --> 00:18:17,760
+intel competition. There are downsides to 
+doing this. So, maybe the competition isn't  
+
+223
+00:18:17,760 --> 00:18:23,120
+as explicit around a specific title, but 
+instead, what it becomes about is there's  
+
+224
+00:18:23,120 --> 00:18:27,200
+a particular exact or something and you want to 
+gain that favor. And so, it becomes more about  
+
+225
+00:18:27,200 --> 00:18:32,080
+who can get in the inner circle of this person 
+or whatever. And there were those dynamics too. 
+
+226
+00:18:32,080 --> 00:18:37,280
+I actually am a big fan of this philosophy 
+though, the no titles one. I think what it  
+
+227
+00:18:37,280 --> 00:18:43,520
+did do is that it basically said if you are in, 
+let's say you're in a role of you're leading  
+
+228
+00:18:43,520 --> 00:18:49,280
+a very important project, which could happen, 
+what it said was... This is always fluid. So,  
+
+229
+00:18:49,280 --> 00:18:55,760
+you are in this role because you're very good and 
+so, it's a meritocratic thing. But if you start  
+
+230
+00:18:55,760 --> 00:19:00,880
+performing well, it's actually very easy to shift 
+that because there is no explicit " I am the GM  
+
+231
+00:19:00,880 --> 00:19:07,600
+of this project title." And so, you always had to 
+earn your place in the company. You always had to  
+
+232
+00:19:07,600 --> 00:19:11,840
+earn the right to work on what you were working 
+on, and I think that was a good side effect.
+
+233
+00:19:11,840 --> 00:19:17,360
+Let's start talking about forward deployed 
+engineers. What is a forward deployed engineer?
+
+234
+00:19:17,360 --> 00:19:23,120
+So, the way this originated was, basically, 
+you can think of it as there's two types of  
+
+235
+00:19:23,120 --> 00:19:27,520
+engineer at Palantir. So, there's one 
+that works on the core products. So,  
+
+236
+00:19:27,520 --> 00:19:31,760
+they don't necessarily leave the building 
+in Palo Alto or New York or the offices.  
+
+237
+00:19:31,760 --> 00:19:35,360
+They're very much working on the core products 
+and they're a traditional software engineer. 
+
+238
+00:19:35,360 --> 00:19:38,560
+Because of the way the company works where 
+you had these very large engagements with  
+
+239
+00:19:38,560 --> 00:19:43,760
+these large entities, there was a different type 
+of engineer which you sent into the field. So,  
+
+240
+00:19:43,760 --> 00:19:47,600
+what that meant was you would spend maybe 
+Monday to Thursday and you would actually  
+
+241
+00:19:47,600 --> 00:19:51,280
+go into the building where the customer worked 
+and you would work alongside them. You would  
+
+242
+00:19:51,280 --> 00:19:55,440
+literally get a desk there. And so, that engineer 
+became known as a forward deployed engineer. 
+
+243
+00:19:55,440 --> 00:19:58,960
+So, within the company, that function is 
+known as business development or BD. And  
+
+244
+00:19:58,960 --> 00:20:03,360
+then PD is product development. So, it's where 
+the product is made. And so, within BD, you had  
+
+245
+00:20:03,360 --> 00:20:09,040
+forward deployed engineers. There are actually two 
+types. So, there is one that it's a more technical  
+
+246
+00:20:09,040 --> 00:20:13,360
+software engineer. So, you have to pass a software 
+engineering interview and prove your chops there  
+
+247
+00:20:13,360 --> 00:20:17,440
+and you would typically have a CS degree, but 
+there was actually a type of forward deployed  
+
+248
+00:20:17,440 --> 00:20:23,200
+engineer that didn't have that. So, you would 
+still get a technical interview, but it would be  
+
+249
+00:20:23,200 --> 00:20:28,080
+less about, do you know the specifics of this C++ 
+algorithm? And it would be more about just like  
+
+250
+00:20:28,080 --> 00:20:35,760
+can you reason about data? We didn't have that 
+division originally, but it turns out that there's  
+
+251
+00:20:35,760 --> 00:20:43,360
+a lot of people who are technical adjacent, 
+shall we say, who you really need in the room  
+
+252
+00:20:43,360 --> 00:20:48,640
+when you're working with these large organizations 
+or these large companies, because translating what  
+
+253
+00:20:48,640 --> 00:20:54,320
+you're doing into language that would resonate 
+with an executive or being able to navigate  
+
+254
+00:20:54,320 --> 00:20:59,760
+the social dynamics in a room, all these are very 
+valuable skills. And so, the hiring criteria there  
+
+255
+00:20:59,760 --> 00:21:05,520
+were a little different. It was a bit more about, 
+are you savvy as a human? But all of that was  
+
+256
+00:21:05,520 --> 00:21:09,840
+given the title of forward deployed engineer, and 
+it's just an engineer who works with customers.
+
+257
+00:21:09,840 --> 00:21:14,000
+Okay, so just to make this crystal clear for 
+people, a lot of people hear this idea of  
+
+258
+00:21:14,000 --> 00:21:17,680
+Palantir having forward deployed engineers. 
+A few other companies have done this.  
+
+259
+00:21:17,680 --> 00:21:22,560
+It's pretty radical. So, as you described, 
+you basically have a desk at a company. So,  
+
+260
+00:21:22,560 --> 00:21:25,760
+you worked with Airbus and we'll talk about 
+that. So, let's just make it real. So,  
+
+261
+00:21:25,760 --> 00:21:31,360
+you have a desk and a computer and login access 
+and all these things at Airbus. You go to their  
+
+262
+00:21:31,360 --> 00:21:36,800
+office four times a week. You're sitting there 
+with their employees working side by side,  
+
+263
+00:21:36,800 --> 00:21:41,520
+building a product for them, versus what 
+most people do where "they just talk to  
+
+264
+00:21:41,520 --> 00:21:46,800
+customers," where they do an interview once 
+in a while, they do a Zoom, they share mocks,  
+
+265
+00:21:46,800 --> 00:21:51,760
+things like that. This is like that on steroids. 
+Is that roughly the way to think about it?
+
+266
+00:21:51,760 --> 00:21:58,240
+It is, yeah. And so, we would really be there 
+a lot of the time. And so, the side effect of  
+
+267
+00:21:58,240 --> 00:22:04,080
+that was, one, you learn to live and breathe the 
+customer's problems and you learn to speak their  
+
+268
+00:22:04,080 --> 00:22:09,520
+language. And eventually, they saw you as one of 
+them and so, you develop these really close bonds  
+
+269
+00:22:09,520 --> 00:22:16,240
+with the customers. So, at Airbus, I would be at 
+the factory where the planes were produced, or I'd  
+
+270
+00:22:16,240 --> 00:22:22,480
+be sitting next to people diagnosing issues with 
+aircraft or whatever it was. Similarly, later on,  
+
+271
+00:22:22,480 --> 00:22:26,080
+I worked with the NIH, which was part of the US 
+government, and I actually had a badge there and  
+
+272
+00:22:26,080 --> 00:22:31,600
+I would work with civil servants and biologists 
+and clinicians and people who were working there. 
+
+273
+00:22:31,600 --> 00:22:37,680
+And so, it's this pretty radical thing as you 
+suggest. I think the key thing there from a  
+
+274
+00:22:37,680 --> 00:22:42,720
+business point of view is the average deal 
+that Palantir had was very large in the many,  
+
+275
+00:22:42,720 --> 00:22:46,640
+many millions of dollars, which means that 
+you could pay for this as part of the thing  
+
+276
+00:22:46,640 --> 00:22:52,160
+that the customer got. And then it was priced 
+according to the value that the customer got. 
+
+277
+00:22:52,160 --> 00:22:58,160
+So, as a simple example, if you're Airbus and 
+let's say that you have an issue with one of  
+
+278
+00:22:58,160 --> 00:23:04,320
+your planes and you need to fix it, and fixing 
+that is worth a $100 million or something to you,  
+
+279
+00:23:04,320 --> 00:23:08,880
+that's how it would be priced. It would 
+not be priced as, "Hey, you're buying data  
+
+280
+00:23:08,880 --> 00:23:12,720
+infrastructure and it's similar to Snowflake 
+or Databricks or one of these other providers.  
+
+281
+00:23:12,720 --> 00:23:18,320
+It's much more anchored to, here is the outcome.
+But then the job of the forward deployed engineer  
+
+282
+00:23:18,320 --> 00:23:22,560
+is not just to deploy software. It is not just 
+to sell software. It is to actually solve the  
+
+283
+00:23:22,560 --> 00:23:27,040
+problem. And so, you would have to be there. 
+You would have to meet the key stakeholders  
+
+284
+00:23:27,040 --> 00:23:31,680
+who are actually in charge of reporting to the CEO 
+about the specific issue. You would have to become  
+
+285
+00:23:31,680 --> 00:23:36,400
+their friend. You would have to gain their 
+trust. And you would have to, in some cases,  
+
+286
+00:23:36,400 --> 00:23:41,360
+create new software such that it could actually 
+solve the novel problem that was in front of you. 
+
+287
+00:23:41,360 --> 00:23:47,280
+So, I would have friends who worked with one 
+of our energy company customers and they would  
+
+288
+00:23:47,280 --> 00:23:52,160
+have to learn the ins and outs of how oil wells 
+work. And then out of that, it turns out that  
+
+289
+00:23:52,800 --> 00:23:56,720
+having streaming data is actually very valuable 
+for this use case. And so, boom, suddenly,  
+
+290
+00:23:56,720 --> 00:24:00,560
+there's a product that can handle streaming data 
+that becomes part of the core platform. But that  
+
+291
+00:24:00,560 --> 00:24:04,080
+would be the motion, is you learn about the 
+problem. You figure out what software would  
+
+292
+00:24:04,080 --> 00:24:10,160
+best address it. You build that software. You use 
+it to accomplish the goal. And then eventually,  
+
+293
+00:24:10,160 --> 00:24:15,120
+that gets folded into the broader product suite.
+And so, you can start to see why this would be a  
+
+294
+00:24:15,120 --> 00:24:20,400
+good forge for founders. And this was actually 
+part of my thesis going in and joining,  
+
+295
+00:24:20,400 --> 00:24:27,120
+was I said, "Well, say, I got five reps of this," 
+which I got more than that. But say, you got five  
+
+296
+00:24:27,120 --> 00:24:32,240
+reps of doing this in five disparate contexts, 
+you actually become very good at this cycle of,  
+
+297
+00:24:32,240 --> 00:24:36,560
+okay, go into the building, gain the trust 
+of the person, meet the people that are going  
+
+298
+00:24:36,560 --> 00:24:40,080
+to become your users, talk to them about their 
+problems, make sure you're building something that  
+
+299
+00:24:40,080 --> 00:24:46,720
+actually solves them, and it's just a boondoggle.
+Get really fast feedback and iteration loops. So,  
+
+300
+00:24:46,720 --> 00:24:52,640
+every week, you would have a cadence where it's 
+like Monday, you go in. You do your meetings.  
+
+301
+00:24:52,640 --> 00:24:56,320
+Monday night, you build something. Tuesday, 
+you show it to somebody. Tuesday, you get the  
+
+302
+00:24:56,320 --> 00:24:59,840
+feedback. Tuesday night, you iterate on it. 
+Wednesday, you show it to somebody. Wednesday  
+
+303
+00:24:59,840 --> 00:25:01,120
+night, you iterate on it. So, you get four of 
+these, five of these cycles every single week.
+
+304
+00:25:01,120 --> 00:25:04,640
+It already got it. So you get four of these, 
+five of these cycles every single week,  
+
+305
+00:25:04,640 --> 00:25:09,200
+and you're moving incredibly fast. So 
+6 weeks in, you've suddenly gotten to,  
+
+306
+00:25:09,200 --> 00:25:13,680
+wow, this is really valuable, and somebody's 
+willing to pay you whatever, $20 million for it,  
+
+307
+00:25:13,680 --> 00:25:20,080
+and boom. I think this is why you get so many 
+founders coming out of this same process.
+
+308
+00:25:20,080 --> 00:25:25,520
+It's becoming very clear why so many 
+founders emerged out of Ballinger. Okay. So  
+
+309
+00:25:25,520 --> 00:25:30,120
+an important element of this as you described, 
+is that the idea here is build this as a one-  
+
+310
+00:25:30,120 --> 00:25:35,440
+off solution to solve a real problem at say 
+Airbus or some government organization. And  
+
+311
+00:25:35,440 --> 00:25:41,200
+then the idea as you create something out of that, 
+that then Ballinger can sell to other companies.  
+
+312
+00:25:41,200 --> 00:25:46,240
+What's extra cool about that is they pay you 
+to solve this problem for them and then that is  
+
+313
+00:25:46,240 --> 00:25:51,040
+funding this other product that Ballinger can 
+now sell to everyone. What a cool business. 
+
+314
+00:25:51,040 --> 00:25:55,413
+However, early days Ballinger, everyone 
+thought it was just this services business  
+
+315
+00:25:55,413 --> 00:25:59,760
+or just consultants building software for 
+companies like Airbus, there's no way they  
+
+316
+00:25:59,760 --> 00:26:04,800
+can make this a platform that works for a lot 
+of people. Clearly, that's what's happening  
+
+317
+00:26:04,800 --> 00:26:09,760
+and it worked out. This is like the holy grail. 
+Solve one customer's problem and then sell it  
+
+318
+00:26:09,760 --> 00:26:15,600
+to everyone else. Every SaaS business basically 
+would love to do this. What do you think allowed  
+
+319
+00:26:15,600 --> 00:26:21,840
+them to actually achieve this and be good at 
+this? What are some principles that worked?
+
+320
+00:26:21,840 --> 00:26:26,960
+Yeah. That's a great question and 
+it's true. I think that from when  
+
+321
+00:26:26,960 --> 00:26:32,640
+I joined until maybe until IPO and a 
+little bit after, I was told, "Hey,  
+
+322
+00:26:32,640 --> 00:26:38,160
+isn't this basically a sparkling extension? Isn't 
+it a consulting business lopping as a product  
+
+323
+00:26:38,160 --> 00:26:43,280
+company?" And eventually it became undeniable. 
+One, because I always laugh when people are like,  
+
+324
+00:26:43,280 --> 00:26:46,560
+"What does Palantir do?" It's like you can 
+go onto YouTube and just search Palantir  
+
+325
+00:26:46,560 --> 00:26:50,640
+demo and you'll get plenty of demos of how the 
+software looks. Not many people know about this,  
+
+326
+00:26:50,640 --> 00:26:53,680
+but you can go and sign up with a credit 
+card right now and start using it.
+
+327
+00:26:53,680 --> 00:26:55,360
+I can have a Palantir account?
+
+328
+00:26:55,360 --> 00:26:56,080
+You actually can. Yeah.
+
+329
+00:26:56,080 --> 00:26:57,360
+I did not know that. That's cool.
+
+330
+00:26:57,360 --> 00:27:03,280
+Yeah. I think it's called AIP now. So it's not 
+actually that mystical and there is a product,  
+
+331
+00:27:03,280 --> 00:27:08,160
+and if you look at the margins, they 
+show that. So they have 80% plus margins,  
+
+332
+00:27:08,160 --> 00:27:11,200
+which is not really what you would get if you 
+were actually a consulting company. It would  
+
+333
+00:27:11,200 --> 00:27:15,760
+be closer to 20 or 30%. So then your question 
+was, well, how did they actually achieve this?  
+
+334
+00:27:15,760 --> 00:27:24,080
+I think there was just incredible talent in the 
+product development organization, really top tier,  
+
+335
+00:27:24,080 --> 00:27:32,160
+incredible talent. And it took some really, really 
+smart people to take the set of internal tools  
+
+336
+00:27:32,160 --> 00:27:38,640
+that we were using at the time to create value 
+of customers and then go, what is the unified  
+
+337
+00:27:38,640 --> 00:27:45,680
+version of this? Would this look like if this were 
+a product? And out of that process that I saw came  
+
+338
+00:27:45,680 --> 00:27:50,880
+Foundry assume there was a similar process with 
+Gotham a while back. But basically it's like,  
+
+339
+00:27:50,880 --> 00:27:56,080
+the motion was that you would go in and early on 
+you were basically armed with Jupyter Notebooks  
+
+340
+00:27:56,080 --> 00:28:02,880
+and some data integration stuff, but it was very 
+primitive and you had to create value that way. 
+
+341
+00:28:02,880 --> 00:28:07,600
+But we kept building tooling that was useful for 
+forward deployed engineers. So we were our own  
+
+342
+00:28:07,600 --> 00:28:14,480
+first customers and at some point there was this 
+concept of, "Wait, what if we take our internal  
+
+343
+00:28:14,480 --> 00:28:19,440
+tools and we let our customers use them?" And I 
+remember at the time, this is a really radical  
+
+344
+00:28:19,440 --> 00:28:27,600
+idea. And then Shyam Sankar, I think he's the CTO, 
+maybe he's the president now, he just mandated  
+
+345
+00:28:27,600 --> 00:28:32,800
+like, "Okay. Every customer deployment you have 
+to have a customer using this within three months  
+
+346
+00:28:32,800 --> 00:28:38,240
+or whatever." So it was horrible at the time 
+because these had been built for these nerdy  
+
+347
+00:28:38,240 --> 00:28:42,080
+Silicon Valley engineers, and so they weren't 
+particularly usable. They would crash all the  
+
+348
+00:28:42,080 --> 00:28:49,200
+time. You'd have to debug spark errors or whatever 
+it was. But basically that process brought a lot  
+
+349
+00:28:49,200 --> 00:28:55,440
+more rigor to our thinking about the product.
+And out of that kind of, I would say three or  
+
+350
+00:28:55,440 --> 00:29:00,320
+four year process came the Foundry product. 
+And then there was a lot of focus around  
+
+351
+00:29:00,320 --> 00:29:06,480
+things like performance and reliability and 
+so on. That was all really painful. So yeah,  
+
+352
+00:29:06,480 --> 00:29:11,760
+I think the answer was just talent. And then 
+there was this recognition that we do. We do  
+
+353
+00:29:11,760 --> 00:29:19,360
+know things that most people do not know about how 
+data works in large organizations. That was the  
+
+354
+00:29:19,360 --> 00:29:25,680
+other thing. We discovered a lot of "secrets" in 
+this process of living with customers for so long. 
+
+355
+00:29:25,680 --> 00:29:30,560
+The basic one was just data integration 
+is massively painful inside organizations.  
+
+356
+00:29:30,560 --> 00:29:33,360
+This is very hard to understand unless 
+you've worked in a large organization,  
+
+357
+00:29:33,360 --> 00:29:37,840
+but it's actually impossible to even now to get 
+access to a lot of your own internal data that  
+
+358
+00:29:37,840 --> 00:29:43,280
+you need to do your job. So you'll hear stories 
+of people being like, "I'm trying to calculate  
+
+359
+00:29:43,280 --> 00:29:48,240
+our sales this quarter, and I had to wait six 
+weeks for some other analytics team to get me  
+
+360
+00:29:48,240 --> 00:29:56,000
+this deliverable." So just knowing problems like 
+that and being able to focus our product efforts  
+
+361
+00:29:56,000 --> 00:30:00,240
+around those problems, meant that we were 
+able to build something generalizable there.
+
+362
+00:30:00,240 --> 00:30:03,280
+Okay. There's a lot here. First 
+of all, you talk about Gotham and  
+
+363
+00:30:03,280 --> 00:30:06,400
+Foundry. I know that we'll link to 
+videos of people checking these out,  
+
+364
+00:30:06,400 --> 00:30:10,560
+but just what's the simplest way to 
+understand what these two products do?
+
+365
+00:30:10,560 --> 00:30:15,920
+So Gotham is optimized for military and defense 
+use cases and intel as well. I would say they both  
+
+366
+00:30:15,920 --> 00:30:22,720
+have some things in common. So they both have, 
+I would describe this almost as a pyramid where  
+
+367
+00:30:22,720 --> 00:30:26,960
+the bottom layer is data ingestion, the middle 
+layer is data mapping, and then the top layer is  
+
+368
+00:30:26,960 --> 00:30:32,080
+anything that's user facing. So any UI component. 
+And then if you think of Foundry for a second,  
+
+369
+00:30:33,200 --> 00:30:37,280
+there's different tools that allow you to 
+ingest data to it. There's different tools  
+
+370
+00:30:37,280 --> 00:30:42,320
+that allow you to easily build data pipelines 
+and clean up data, which everybody has to do.  
+
+371
+00:30:42,320 --> 00:30:46,880
+And then there's a bunch of tooling that 
+allows you to build compelling UIs on top,  
+
+372
+00:30:46,880 --> 00:30:53,120
+do point and click analytics, do notebook style 
+workflows, however technical you are. So that's,  
+
+373
+00:30:53,120 --> 00:30:59,200
+I mean, when it's a platform, it's a suite 
+of things that has a common data backing but  
+
+374
+00:30:59,200 --> 00:31:04,000
+contains a bunch of different applications.So I 
+think that is somewhat true of Gotham as well. But  
+
+375
+00:31:04,560 --> 00:31:09,920
+when you log in, you see this unified interface.
+So what is the actual difference then? I would  
+
+376
+00:31:09,920 --> 00:31:15,600
+say with Gotham, you're looking much more at 
+workflows like that involve maps, for example.  
+
+377
+00:31:15,600 --> 00:31:19,840
+So when you're doing a military operation, a lot 
+of the time you are going to be looking at a map  
+
+378
+00:31:19,840 --> 00:31:26,640
+and you are going to be monitoring the movement 
+of troops or tanks or whatever it is. Another big  
+
+379
+00:31:26,640 --> 00:31:36,160
+difference is the idea of graph-based analysis. So 
+Gotham, one of the use cases was finding combing  
+
+380
+00:31:36,160 --> 00:31:41,600
+through networks of terrorists and basically 
+finding the bad guys. So being able to do  
+
+381
+00:31:42,160 --> 00:31:47,200
+queries that are graph-based was important. So 
+it's like, "Who is everybody that Lenny called  
+
+382
+00:31:47,200 --> 00:31:51,680
+in the last week?" Imagine all the nodes fanning 
+out from there. And then it's like, "Okay. Well,  
+
+383
+00:31:51,680 --> 00:31:55,680
+this one looks interesting. Let's zoom in 
+on that. What is this person's location?" 
+
+384
+00:31:56,320 --> 00:32:01,520
+So it's this very graph-based way of thinking that 
+also applies to things like fraud. So Gotham has  
+
+385
+00:32:01,520 --> 00:32:06,480
+been deployed against fraud, but if you look 
+at Foundry, it doesn't actually emphasize that  
+
+386
+00:32:06,480 --> 00:32:11,120
+component so much because it turns out, let's 
+say you're a B2B SaaS company, you're probably  
+
+387
+00:32:11,120 --> 00:32:15,200
+not doing that much graph-based analysis. 
+You're doing things that look a lot more like  
+
+388
+00:32:15,200 --> 00:32:20,720
+classic SQL queries, tables, that kind of stuff. 
+So Foundry is a lot more traditional in that way.
+
+389
+00:32:20,720 --> 00:32:25,120
+That was an amazing explanation. For the first 
+time, I am starting to understand what these  
+
+390
+00:32:25,120 --> 00:32:29,920
+products do. Basically, it's just sucks in a 
+bunch of data, cleans it up so you can actually  
+
+391
+00:32:29,920 --> 00:32:35,920
+trust it and then helps you interact with it 
+in various use cases, maps, graphs, tables.
+
+392
+00:32:35,920 --> 00:32:36,320
+Yes.
+
+393
+00:32:36,320 --> 00:32:40,560
+Okay. Amazing. The example you gave 
+of what you worked on at Airbus,  
+
+394
+00:32:40,560 --> 00:32:44,720
+you described it as basically a sauna 
+for making planes. Is that right?
+
+395
+00:32:44,720 --> 00:32:45,120
+Yes.
+
+396
+00:32:45,760 --> 00:32:50,320
+So how much of that does becomes a part of 
+this core product versus stays this one-off  
+
+397
+00:32:50,320 --> 00:32:55,680
+thing? Is it elements, that's a cool innovation, 
+let's put that into Foundry. How does that work?
+
+398
+00:32:55,680 --> 00:33:01,680
+This was a really interesting story actually. So 
+the initial problem that we came into with Airbus  
+
+399
+00:33:01,680 --> 00:33:06,160
+was that they had a new aircraft called 
+the A350 beautiful aircraft. By the way,  
+
+400
+00:33:06,160 --> 00:33:11,440
+if you get to, I think if you fly New York 
+to Singapore, it's often in that A350. Really  
+
+401
+00:33:11,440 --> 00:33:16,400
+nice. So it was a relatively new aircraft 
+at the time, and their mandate to us was,  
+
+402
+00:33:16,400 --> 00:33:19,600
+"Okay. We need to ramp up production 
+of this really fast," much faster than  
+
+403
+00:33:19,600 --> 00:33:23,520
+we've ever done it before. So it's like the 
+numbers are very approximate, but it's like,  
+
+404
+00:33:23,520 --> 00:33:27,600
+"Okay. We're producing 4 this month, we need 
+to do 8 the next month, 16 the month after,  
+
+405
+00:33:27,600 --> 00:33:31,280
+and so forth, and you are going to help us do 
+it." So this goes back to what I was saying  
+
+406
+00:33:31,280 --> 00:33:35,360
+earlier is the mandate wasn't like, "Hey, we need 
+to upgrade our data infrastructure. We thought you  
+
+407
+00:33:35,360 --> 00:33:39,920
+guys would be met the list of requirements." 
+It was much more just like, "Please help us  
+
+408
+00:33:39,920 --> 00:33:46,400
+accomplish this mission. This is the big thing."
+So we went in, scoped out the problem. There  
+
+409
+00:33:46,400 --> 00:33:50,240
+were a bunch of different things that we 
+could build that helped accelerate this,  
+
+410
+00:33:50,240 --> 00:33:54,960
+but one of the basic problems that we figured out 
+was that without getting too much into the weeds,  
+
+411
+00:33:54,960 --> 00:33:59,680
+the way the factory would work, is that there's a 
+bunch of stations and you can think of the plane  
+
+412
+00:33:59,680 --> 00:34:03,920
+as literally moving between each station and 
+then each station would do a certain set of  
+
+413
+00:34:03,920 --> 00:34:09,520
+work on it. So initially, it's literally a big 
+fuselage and the fuselage is sitting there and  
+
+414
+00:34:09,520 --> 00:34:13,760
+then people are doing a bunch of work orders 
+against it. They need parts in order to do  
+
+415
+00:34:13,760 --> 00:34:18,640
+that work. And then at some point they say, 
+"Okay. This is ready to move to Station 31,  
+
+416
+00:34:18,640 --> 00:34:23,200
+and the plane is physically moved to the next 
+station and then Station 31 does its next thing." 
+
+417
+00:34:23,200 --> 00:34:27,280
+So in order for the next station to do its work 
+properly, they need to know, one, what work was  
+
+418
+00:34:27,280 --> 00:34:30,960
+done at the previous station and what work is 
+remaining? Two is just like, if you think about  
+
+419
+00:34:30,960 --> 00:34:38,720
+this problem, not all work is going to get done 
+on time. So things carry over to the next team,  
+
+420
+00:34:38,720 --> 00:34:44,960
+and the next team then has to... So when I'm 
+describing this problem to you can start to  
+
+421
+00:34:44,960 --> 00:34:50,080
+visualize, okay, maybe I need some Gantt chart to 
+this, and I need the ability to click in and say,  
+
+422
+00:34:50,080 --> 00:34:55,600
+"Okay. What did Station 30 do and what work 
+orders remained undone?" And then it's like,  
+
+423
+00:34:55,600 --> 00:34:58,960
+"Okay. For those work orders, what parts do 
+I need and where in the factory might they  
+
+424
+00:34:59,520 --> 00:35:06,160
+be?" So this was very, very hard to do as it is. 
+A lot of it was just relying on people going and  
+
+425
+00:35:06,160 --> 00:35:11,360
+having conversations with other people on the 
+factory floor, and coming from tech where it's  
+
+426
+00:35:11,360 --> 00:35:15,120
+maybe not as complicated as building aircraft, 
+that is a phenomenally complicated process,  
+
+427
+00:35:15,120 --> 00:35:18,960
+but it is easy to see, okay, you can 
+actually improve this problem with software. 
+
+428
+00:35:20,960 --> 00:35:26,800
+All that data was stored in SAP and SAP is like 
+established software. It's good at what it does,  
+
+429
+00:35:26,800 --> 00:35:31,120
+but it's not the most user-friendly necessarily, 
+especially if you're not an expert in how it  
+
+430
+00:35:31,120 --> 00:35:36,080
+stores data. The table names are very hard to 
+understand and read. So one of the things we  
+
+431
+00:35:36,080 --> 00:35:40,480
+figured out was just if you can pull in 
+these tables that may as well be written  
+
+432
+00:35:40,480 --> 00:35:46,400
+in completely alien language, the table name 
+would just be like S3, F1_Z or something like  
+
+433
+00:35:46,400 --> 00:35:51,280
+that. And you'd have to know, okay, this is the 
+table where the part ID is stored or something. 
+
+434
+00:35:51,280 --> 00:35:55,920
+If you could pull in those tables and join them 
+in the right ways, and then just map them to human  
+
+435
+00:35:55,920 --> 00:36:01,920
+concepts that humans can understand, so things 
+like a part a work order, an aircraft, et cetera,  
+
+436
+00:36:01,920 --> 00:36:06,960
+and basically build a hierarchy or mapping between 
+them, then what you can do is, a user can just  
+
+437
+00:36:06,960 --> 00:36:11,920
+log in and say, "Okay. Aircraft 79, where is 
+that? Okay. It's at Station 31. All right.  
+
+438
+00:36:11,920 --> 00:36:16,400
+These are the work orders, et cetera." So you've 
+translated it into a more human-legible thing. 
+
+439
+00:36:16,400 --> 00:36:22,400
+So the thing we built, I slightly flippantly 
+described it as Asana. It's a little different.  
+
+440
+00:36:22,400 --> 00:36:26,240
+But basically that's what it did, was it gave 
+you a unified view of, okay, this is what's  
+
+441
+00:36:26,240 --> 00:36:30,000
+going on inside the factory. This is the work 
+that needs to be done on this particular plane.  
+
+442
+00:36:30,000 --> 00:36:36,560
+And then me today going to my job at Station 31, 
+what work orders do I need to fulfill and where  
+
+443
+00:36:36,560 --> 00:36:42,560
+are the parts that I need to do that? So did this 
+directly become a part of Foundry? Not exactly,  
+
+444
+00:36:42,560 --> 00:36:48,080
+because the way that other companies work is 
+not going to be using this same set of concepts,  
+
+445
+00:36:48,080 --> 00:36:55,680
+but the overall idea of taking a bunch 
+of tables, and then mapping them to human  
+
+446
+00:36:55,680 --> 00:37:00,720
+understandable concepts was a very powerful one.
+So this actually resulted in a big piece of  
+
+447
+00:37:00,720 --> 00:37:05,920
+Foundry now, which they call Ontology. You've 
+probably heard this term as you've seen... If you  
+
+448
+00:37:05,920 --> 00:37:10,160
+see Palantir presentations, they always talk about 
+Ontology. This is what they actually mean by that,  
+
+449
+00:37:10,160 --> 00:37:15,520
+is it is a set of concepts that is understandable 
+to you as a human and you are not having to go and  
+
+450
+00:37:15,520 --> 00:37:21,920
+dig around and do. You're just able to say, "Where 
+is the aircraft now and where is it going next?"  
+
+451
+00:37:22,640 --> 00:37:29,280
+So the ontology became a huge piece of Foundry. 
+It was directly informed by the learnings that we  
+
+452
+00:37:29,280 --> 00:37:34,640
+had from building that application inside that 
+factory. And I would say it's still a very big  
+
+453
+00:37:34,640 --> 00:37:41,360
+differentiator today. I don't think too many 
+other companies ship this kind of stuff yet.
+
+454
+00:37:41,360 --> 00:37:45,600
+Wow. I love how excited you still are about 
+this. I could see it being so fulfilling to  
+
+455
+00:37:45,600 --> 00:37:52,000
+solve this big problem. I saw a stat that I think, 
+4X their productivity. What was the number there?
+
+456
+00:37:52,000 --> 00:37:55,920
+Yeah. I don't recall the exact 
+stat, but we did ramp up production,  
+
+457
+00:37:55,920 --> 00:37:59,040
+I think at least 4X that 1 
+year, which I mean obviously,  
+
+458
+00:37:59,040 --> 00:38:04,400
+they did this and we just helped with it. But 
+that CEO said that we played a critical part.
+
+459
+00:38:05,040 --> 00:38:06,800
+Also, you moved to France, I think for this. That  
+
+460
+00:38:06,800 --> 00:38:09,840
+was how forward deployed you were. 
+You lived in France for how long?
+
+461
+00:38:09,840 --> 00:38:15,600
+Yeah. I lived in France for about a year and 
+a half. The way they built their planes is  
+
+462
+00:38:15,600 --> 00:38:19,760
+they manufacture different components 
+around Europe. So they build the tail  
+
+463
+00:38:19,760 --> 00:38:26,480
+in Spain and the fuselage in part of the UK 
+and Germany and so forth. So they basically  
+
+464
+00:38:26,480 --> 00:38:30,640
+ship everything to France to be assembled 
+at the end, which you can imagine this is  
+
+465
+00:38:30,640 --> 00:38:34,720
+a very messy process. So I was mostly in 
+France, but there would be weeks where I'd  
+
+466
+00:38:34,720 --> 00:38:38,720
+have to fly between all these countries 
+just to figure out where things were.
+
+467
+00:38:38,720 --> 00:38:41,600
+In your post you wrote about how just 
+the life of forward deployed engineers  
+
+468
+00:38:41,600 --> 00:38:45,040
+is pretty crazy. You just get a call 
+sometimes like, "Hey, you're flying to  
+
+469
+00:38:45,040 --> 00:38:50,640
+this random country tomorrow. Get ready." Is 
+that just life as a forward deployed engineer?
+
+470
+00:38:50,640 --> 00:38:54,480
+It is. Yeah. The company had a very, I would say,  
+
+471
+00:38:54,480 --> 00:38:58,640
+aggressive attitude towards travel in the sense 
+of when you join, you were basically told, "Look,  
+
+472
+00:38:58,640 --> 00:39:02,640
+you have to be okay with travel. Are 
+you okay with that?" And the attitude,  
+
+473
+00:39:02,640 --> 00:39:07,600
+which again I think is a very founder friendly 
+one is you need to be willing to just jump on  
+
+474
+00:39:07,600 --> 00:39:12,000
+a plane that night if that's the best thing to 
+do for this customer and if it's going to get us  
+
+475
+00:39:12,000 --> 00:39:18,560
+to where it needs to be to win. So there were 
+many times when it would be like, "I need to  
+
+476
+00:39:18,560 --> 00:39:26,560
+take this cross continental flight tomorrow for 
+this particular thing because it will be useful." 
+
+477
+00:39:26,560 --> 00:39:33,760
+So I think that's one of the takeaways for me 
+was just being in person is so valuable when you  
+
+478
+00:39:33,760 --> 00:39:39,360
+are working with some external party, just going 
+there for a few days and spending time with them,  
+
+479
+00:39:39,360 --> 00:39:44,000
+maybe going out for dinner. You build so much more 
+trust than if you're trying to close a customer  
+
+480
+00:39:44,000 --> 00:39:49,200
+over Zoom or do an engagement over Zoom. It's 
+just the vibe is completely different. So yeah,  
+
+481
+00:39:49,200 --> 00:39:53,280
+getting on a plane was a really cool part of 
+our job for a very long time. This obviously  
+
+482
+00:39:53,280 --> 00:39:57,840
+changed around 2020 because COVID happened, the 
+company IPO, and so there needed to be a bit more  
+
+483
+00:39:57,840 --> 00:40:03,440
+internal controls around this. But I would say 
+pre-2020, this was a very big part of the culture.
+
+484
+00:40:03,440 --> 00:40:08,080
+I'm excited to have Andrew Luo joining 
+us today. Andrew is CEO of OneSchema,  
+
+485
+00:40:08,080 --> 00:40:11,120
+one of our longtime podcast 
+sponsors. Welcome, Andrew.
+
+486
+00:40:11,120 --> 00:40:13,200
+Thanks for having me, Lenny. Great to be here.
+
+487
+00:40:13,200 --> 00:40:17,920
+So what is new with OneSchema? I know that you 
+work with some of my favorite companies like Ramp  
+
+488
+00:40:17,920 --> 00:40:23,120
+and Vanta and Watershed. I heard you guys launched 
+a new data intake product that automates the hours  
+
+489
+00:40:23,120 --> 00:40:28,400
+of manual work that teams spent importing and 
+mapping and integrating CSV and Excel files?
+
+490
+00:40:28,400 --> 00:40:33,760
+Yes. So we just launched the 2.0 of OneSchema 
+FileFeeds. We have rebuilt it from the ground  
+
+491
+00:40:33,760 --> 00:40:39,040
+up with AI. We saw so many customers coming 
+to us with teams of data engineers that  
+
+492
+00:40:39,040 --> 00:40:44,000
+struggled with the manual work required 
+to clean messy spreadsheets. FileFeeds 2.0  
+
+493
+00:40:44,000 --> 00:40:49,440
+allows non-technical teams to automate the process 
+of transforming CSV and Excel files with just a  
+
+494
+00:40:49,440 --> 00:40:55,200
+simple prompt. We support all of the trickiest 
+file integrations, SFTP, S3, and even email.
+
+495
+00:40:55,200 --> 00:40:59,120
+I can tell you that if my team had to 
+build integrations like this, how nice  
+
+496
+00:40:59,120 --> 00:41:03,280
+would it be to take this off our roadmap 
+and instead use something like OneSchema?
+
+497
+00:41:03,280 --> 00:41:07,520
+Absolutely, Lenny. We've heard so many horror 
+stories of outages from even just a single  
+
+498
+00:41:07,520 --> 00:41:12,080
+bad record in transactions, employee 
+files, purchase orders, you name it.  
+
+499
+00:41:12,080 --> 00:41:16,320
+Debugging these issues is often finding 
+a needle in a haystack. OneSchema stops  
+
+500
+00:41:16,320 --> 00:41:20,160
+any bad data from entering your system 
+and automatically validates your files,  
+
+501
+00:41:20,160 --> 00:41:23,760
+generating error reports with the 
+exact issues in all bad files.
+
+502
+00:41:23,760 --> 00:41:27,760
+I know that importing incorrect data can cause 
+all kinds of pain for your customers and quickly  
+
+503
+00:41:27,760 --> 00:41:31,520
+lose their trust. Andrew, thank you so much 
+for joining me. If you want to learn more,  
+
+504
+00:41:31,520 --> 00:41:36,960
+head on over to oneschema.co. That's oneschema.co. 
+
+505
+00:41:37,520 --> 00:41:42,640
+There's a lot of founders listening to this and 
+a question that I'm thinking and they're probably  
+
+506
+00:41:42,640 --> 00:41:48,960
+thinking, and there's two questions here. One 
+is how hardcore to go potentially with their own  
+
+507
+00:41:48,960 --> 00:41:55,440
+forward deployed operation. And then two is just 
+how and a company I know is actually doing this,  
+
+508
+00:41:55,440 --> 00:42:00,400
+how far to go with one company's problem 
+and invest in just like we are going to  
+
+509
+00:42:00,400 --> 00:42:04,560
+nail solving this one customer's problem 
+with the hope that this is something we  
+
+510
+00:42:04,560 --> 00:42:10,160
+can abstract and sell as a big platform. So let 
+me start there. And you're building a company,  
+
+511
+00:42:10,160 --> 00:42:15,920
+any I guess insights or advice on just how far to 
+go down this road of we'll solve customer one's  
+
+512
+00:42:15,920 --> 00:42:20,400
+problem and we bet that this is going to be a 
+big opportunity for a lot of other companies?
+
+513
+00:42:20,400 --> 00:42:26,560
+So I would say on the forward deployed piece, 
+my friend Barry McCardel, the CEO of Hex,  
+
+514
+00:42:26,560 --> 00:42:30,800
+the analytics company, he wrote a really good post 
+about this actually, and his take was just like,  
+
+515
+00:42:30,800 --> 00:42:34,720
+"You probably don't need forward deployed 
+engineers." It's very specific. But I think  
+
+516
+00:42:34,720 --> 00:42:40,720
+basically the thing there is you have to be 
+willing to be quite almost wasteful. You have  
+
+517
+00:42:40,720 --> 00:42:48,000
+to be willing to invest a lot in finding the 
+thing. And for that you just need a certain  
+
+518
+00:42:48,000 --> 00:42:53,280
+ticket size. So you need each customer's revenue 
+to be probably in the billions of dollars. If  
+
+519
+00:42:53,280 --> 00:42:57,280
+it's below that, you're probably not looking 
+at a traditional forward deployed engineer  
+
+520
+00:42:57,280 --> 00:43:03,280
+motion. It's something a little bit different.
+So I think one thesis that a lot of people left  
+
+521
+00:43:03,280 --> 00:43:08,320
+Palantir with and started companies around was 
+there's a lot of customers that Palantir won't  
+
+522
+00:43:08,320 --> 00:43:14,560
+serve because maybe they're too small a ticket 
+size. So actually you could go and do something  
+
+523
+00:43:14,560 --> 00:43:20,400
+like Palantir for those companies, but instead 
+of charging them $5 million, you're charging them  
+
+524
+00:43:20,400 --> 00:43:26,080
+250K. So in a scenario like that, you might still 
+have forward deployed engineers, but they're not  
+
+525
+00:43:26,080 --> 00:43:30,320
+going to France and spending five days a week in a 
+factory. It's more like you'll have one person and  
+
+526
+00:43:30,320 --> 00:43:34,480
+they're looking after five different customer 
+accounts. It's more of that ratio in order to  
+
+527
+00:43:34,480 --> 00:43:43,200
+make the numbers work. So I think a lot of the 
+principles can be abstracted from that experience,  
+
+528
+00:43:43,200 --> 00:43:48,800
+but it is a really specific sales motion that 
+depends on a specific way of doing business. 
+
+529
+00:43:48,800 --> 00:43:55,920
+I think to your other question, yeah, I think it's 
+obviously something that is very hard to give a  
+
+530
+00:43:55,920 --> 00:44:02,000
+general answer to. My main thing here is just that 
+you can definitely tell when you are just doing  
+
+531
+00:44:02,000 --> 00:44:09,040
+consulting and when you are closer to building a 
+product. And I think the error that people make  
+
+532
+00:44:09,040 --> 00:44:15,040
+more often than not is they are actually too 
+stuck on their own product vision. That's the  
+
+533
+00:44:15,040 --> 00:44:25,120
+mistake I've seen a little bit more actually than 
+the other way around. If you go to an enterprise  
+
+534
+00:44:25,120 --> 00:44:29,040
+customer, and let's say you think you're doing 
+analytics software and it turns out they don't  
+
+535
+00:44:29,040 --> 00:44:33,040
+actually care about internal analytics this much, 
+they actually have this other massive burning  
+
+536
+00:44:33,040 --> 00:44:36,560
+problem and they don't have a good solution to 
+it yet. I think a lot of people are unwilling  
+
+537
+00:44:36,560 --> 00:44:41,200
+to go and pivot to the big problem because they're 
+like, "Well, we're analytics software and so maybe  
+
+538
+00:44:41,200 --> 00:44:45,440
+this customer is a fit for our thing," and maybe 
+that's the right call. In some scenarios, that is  
+
+539
+00:44:45,440 --> 00:44:48,720
+the right call. You should go find a different 
+customer where your thing resonates more. 
+
+540
+00:44:48,720 --> 00:44:54,000
+In other scenarios, it's actually the right 
+call to pivot and just put everything on that  
+
+541
+00:44:54,000 --> 00:44:57,920
+big problem instead and then go and find 
+other customers for that thing. There's no  
+
+542
+00:44:57,920 --> 00:45:02,240
+hard and fast rule. I remember reading a really 
+interesting post by, I think it was David Hsu  
+
+543
+00:45:02,240 --> 00:45:09,440
+from Retool who had this exact thing. I think 
+he worked at Palantir for a while too. He said  
+
+544
+00:45:09,440 --> 00:45:15,520
+that they had the Retool product and it wasn't 
+getting any traction at all. And then he tried  
+
+545
+00:45:15,520 --> 00:45:21,120
+an outbound email campaign where he literally just 
+changed the subject line to build internal tools  
+
+546
+00:45:21,120 --> 00:45:26,320
+easily. And then suddenly they started getting 
+all these replies from CTOs who were just like,  
+
+547
+00:45:26,320 --> 00:45:30,800
+"Yeah. This is actually a huge pain point for me."
+But the exact same solution, they were previously  
+
+548
+00:45:30,800 --> 00:45:36,640
+framing it as, I think it was supercharged Excel 
+or something like that, and nobody was biting.  
+
+549
+00:45:37,440 --> 00:45:41,920
+So they just changed the way they framed it and 
+found a different set of buyers and succeeded  
+
+550
+00:45:41,920 --> 00:45:47,280
+that way. So yeah, no hard and fast rule, but I 
+think it's always you need to have this matrix of  
+
+551
+00:45:47,280 --> 00:45:53,040
+options in your mind and be very deliberate 
+about which one you are going with and why.
+
+552
+00:45:53,040 --> 00:45:58,240
+I think your piece of advice is really important 
+there. Usually in your experience, you're saying  
+
+553
+00:45:58,240 --> 00:46:04,720
+people index too far too? Like now, what they're 
+asking me to do is not what I think they need or  
+
+554
+00:46:04,720 --> 00:46:09,040
+what customers will need. You're saying it's 
+actually more likely they're right, and that's  
+
+555
+00:46:09,040 --> 00:46:14,240
+maybe where you should be focusing more versus 
+this abstract vision and original idea you had?
+
+556
+00:46:14,240 --> 00:46:19,600
+I think so, yeah. I think it's very hard to 
+not be anchored to your own experience and  
+
+557
+00:46:19,600 --> 00:46:24,640
+your conceptions as a problem. And one thing 
+I've seen in really strong founders is they're  
+
+558
+00:46:24,640 --> 00:46:29,360
+able to drop a bunch of those assumptions 
+and almost treat a new opportunity as a  
+
+559
+00:46:29,360 --> 00:46:33,440
+completely blank slate. And then just 
+figure out how to reshape things so that  
+
+560
+00:46:33,440 --> 00:46:37,680
+you're taking advantage of that, and that's 
+how you don't get stuck at a local maximum.
+
+561
+00:46:37,680 --> 00:46:40,560
+Your other piece of advice is also really 
+great. So people hear this and they're like,  
+
+562
+00:46:40,560 --> 00:46:45,520
+"We don't afford an engineer to sit at one 
+customer prospects office and build stuff  
+
+563
+00:46:45,520 --> 00:46:49,600
+for them." But your point is you can have 
+one for five different customers. They're  
+
+564
+00:46:49,600 --> 00:46:53,840
+not there full time. They bounce around, but 
+they're... It's almost like sales engineering,  
+
+565
+00:46:53,840 --> 00:46:58,800
+just like what you call it sparkling sales 
+where they help make it successful. I know  
+
+566
+00:46:58,800 --> 00:47:02,720
+Looker is a famous example. They think they 
+called them forward deployed engineers. Do  
+
+567
+00:47:02,720 --> 00:47:07,120
+you know any other companies by the way, that 
+some version of forward deployed engineers?
+
+568
+00:47:07,120 --> 00:47:11,520
+There's a lot. I mean, I know that the AR-Labs 
+are hiring forward deployed engineers now,  
+
+569
+00:47:11,520 --> 00:47:16,640
+they're building forward deployed engineering 
+teams and they could make it work,  
+
+570
+00:47:16,640 --> 00:47:23,040
+but I think there's going to be key 
+differences. I don't see Anthropic  
+
+571
+00:47:23,040 --> 00:47:26,880
+going into an enterprise customer and building 
+some entirely from scratch solution for them.  
+
+572
+00:47:26,880 --> 00:47:30,720
+It's going to be something that leverages 
+the Anthropic set of products. So there's  
+
+573
+00:47:30,720 --> 00:47:35,200
+a lot of companies that have this label now, 
+but I think what's really confusing about,  
+
+574
+00:47:35,200 --> 00:47:41,200
+it's just that it means a few different things. 
+There's another post by Ted Mabrey who's I think  
+
+575
+00:47:41,200 --> 00:47:45,920
+the head of commercial at Palantir, and that's 
+a very good one too, to point with those too.
+
+576
+00:47:45,920 --> 00:47:50,880
+So say someone was, "I want to try this 
+sort of thing in my company," what would  
+
+577
+00:47:50,880 --> 00:47:56,080
+be a few bullet points if things they should 
+get right? You're describing the spectrum of  
+
+578
+00:47:56,080 --> 00:47:59,840
+what people describe as forward deployed 
+engineers, if they were to try to do this,  
+
+579
+00:47:59,840 --> 00:48:04,480
+what do you think they need to most 
+do correctly for it to be successful?
+
+580
+00:48:04,480 --> 00:48:11,600
+The key things that made our model work well, one, 
+they were actually real engineers who could build  
+
+581
+00:48:11,600 --> 00:48:17,440
+product themselves. That's a very big difference. 
+I think a lot of the time companies will say,  
+
+582
+00:48:17,440 --> 00:48:21,760
+"This person's a forward deployed engineer," but 
+actually they're mostly there to be more of a  
+
+583
+00:48:21,760 --> 00:48:25,600
+solutions architect, or they're not necessarily 
+building anything to know, but they're just  
+
+584
+00:48:25,600 --> 00:48:32,720
+listening and trying to find a way of deploying 
+the existing product. They're not empowered to do  
+
+585
+00:48:32,720 --> 00:48:39,600
+new product. So the really radical thing Palantir 
+said was, "No. Go in and if you need a completely  
+
+586
+00:48:39,600 --> 00:48:44,720
+new product to do this, you can go ahead and build 
+it." And I think that's really the key difference. 
+
+587
+00:48:44,720 --> 00:48:49,600
+The other stuff I've already mentioned, the value 
+of being in person, and I think building close  
+
+588
+00:48:49,600 --> 00:48:54,640
+personal bonds with your customers. I do think 
+the better founders do this anyway. They're on  
+
+589
+00:48:54,640 --> 00:48:59,360
+texting terms with their buyers, they become 
+friends with them outside of work, and they  
+
+590
+00:48:59,360 --> 00:49:03,360
+see them as humans who they're trying to help. I 
+think this is very motivating, gaining a really  
+
+591
+00:49:03,360 --> 00:49:10,400
+deep understanding of the business that your 
+customers are in and knowing how those dynamics  
+
+592
+00:49:10,400 --> 00:49:22,080
+work. So a simple example might be, say hospitals 
+in America. It's very counterintuitive to think  
+
+593
+00:49:22,080 --> 00:49:27,440
+of a hospital as a business. People think of it 
+as it's a place where you get healthcare, but  
+
+594
+00:49:27,440 --> 00:49:33,600
+actually if you view it the way a COO or CMO views 
+it, it's going to look very, very different too. 
+
+595
+00:49:34,240 --> 00:49:40,400
+As a very simple example, sorry, this is a little 
+bit dark, but how restaurants want to turn over  
+
+596
+00:49:40,400 --> 00:49:45,200
+tables as fast as possible in order to maximize 
+for the day? Hospitals actually want to do the  
+
+597
+00:49:45,200 --> 00:49:48,800
+same with patients. They would like to treat 
+you and then get you out of a bed so they can  
+
+598
+00:49:48,800 --> 00:49:54,800
+free up the bed to get a new person in there. So 
+that's not super intuitive, unless you think hard  
+
+599
+00:49:54,800 --> 00:49:59,440
+about how the revenue for that hospital works. 
+But then once you think about it, you're like,  
+
+600
+00:49:59,440 --> 00:50:01,496
+"This has a bunch of problems associated with it." 
+And you start to go into really interesting...
+
+601
+00:50:01,496 --> 00:50:04,560
+... problems associated with it, and you 
+start to go in really interesting directions.
+
+602
+00:50:05,280 --> 00:50:10,080
+There's just like the words and memes, and take 
+you a long way working and understanding it.
+
+603
+00:50:10,080 --> 00:50:10,240
+Yes.
+
+604
+00:50:10,240 --> 00:50:13,520
+Okay, so essentially the things you want 
+to get right, make sure it's in person,  
+
+605
+00:50:13,520 --> 00:50:16,800
+make sure the person is technical, make sure 
+they have a deep understanding of the business  
+
+606
+00:50:16,800 --> 00:50:20,480
+and the problems they're having. The technical 
+piece is interesting with AI tools these days,  
+
+607
+00:50:20,480 --> 00:50:24,320
+making everyone technical in some sense. 
+You could argue this is going to become  
+
+608
+00:50:24,320 --> 00:50:30,080
+more common, people can just open up Cursor, 
+Windsurf and just start adding features.
+
+609
+00:50:30,080 --> 00:50:33,040
+I think this is a really interesting 
+thesis you've just hit on,  
+
+610
+00:50:33,040 --> 00:50:38,400
+and I expect to see a lot more startups 
+that take advantage of that insight.
+
+611
+00:50:38,400 --> 00:50:40,720
+Basically it makes forward 
+deploying engineers cheaper.
+
+612
+00:50:40,720 --> 00:50:42,320
+Exactly.
+
+613
+00:50:42,320 --> 00:50:46,240
+What is the current state of forward deploying 
+engineers at Palantir? How much has it changed  
+
+614
+00:50:46,240 --> 00:50:49,440
+over the past few years? If you join 
+now, is this still something you can do?
+
+615
+00:50:49,440 --> 00:50:54,560
+Yeah, of course. I should obviously emphasize 
+that one, I left the company in 2023, and so  
+
+616
+00:50:54,560 --> 00:50:59,360
+this is just my personal view, I don't speak 
+for them. I think that if you think about it,  
+
+617
+00:51:01,200 --> 00:51:06,400
+one of the metrics that the company had 
+to measure its own success was essentially  
+
+618
+00:51:06,400 --> 00:51:14,480
+revenue per engineer, and so the more "product 
+leverage" you had, the higher that number was.  
+
+619
+00:51:14,480 --> 00:51:18,960
+So if you had to throw a lot of people at every 
+marginal problem, then you weren't doing so well  
+
+620
+00:51:18,960 --> 00:51:23,520
+at that because you're basically building a new 
+thing every single time, and you are in effect a  
+
+621
+00:51:23,520 --> 00:51:27,760
+consulting business. If on the other hand, every 
+time you encounter a new customer, the product  
+
+622
+00:51:27,760 --> 00:51:32,480
+turns out to be relevant to them, then great, 
+and so this product leverage metric was actually  
+
+623
+00:51:32,480 --> 00:51:37,200
+a very unique thing and kind of a North Star 
+for the company for the whole time I was there. 
+
+624
+00:51:37,200 --> 00:51:41,200
+If you reason that out, what that means 
+is that in the early stage of the company,  
+
+625
+00:51:41,200 --> 00:51:47,680
+you will have a customer and then you might have 
+five to 10 engineers working at that customer. And  
+
+626
+00:51:47,680 --> 00:51:53,280
+so over time you want that ratio to change. So you 
+want it to be each customer, because the product  
+
+627
+00:51:53,280 --> 00:51:58,000
+is so powerful, maybe AI coding's gotten a lot 
+better, each customer you only need two people,  
+
+628
+00:51:58,000 --> 00:52:02,400
+and then maybe you actually get to a point where 
+you can have one person looking after multiple  
+
+629
+00:52:02,400 --> 00:52:08,400
+customers. And I think that's how the job has 
+changed, is now it's a little bit more about  
+
+630
+00:52:08,400 --> 00:52:13,600
+you have multiple customers, maybe you're spending 
+less deep time with each individual one of them,  
+
+631
+00:52:13,600 --> 00:52:17,920
+but it's a lot clearer what problem 
+you're solving across multiple customers  
+
+632
+00:52:17,920 --> 00:52:24,240
+and you have more of a kind of defined offering.
+And so I do think that has been a bit of a change,  
+
+633
+00:52:24,240 --> 00:52:30,400
+but the company remains a very interesting and 
+dynamic place to be. In some sense the story's  
+
+634
+00:52:30,400 --> 00:52:35,440
+only starting, because one lens through 
+which you can view this company is they  
+
+635
+00:52:35,440 --> 00:52:41,760
+spent 20 years basically building the mother 
+of all data foundations for every important  
+
+636
+00:52:41,760 --> 00:52:48,160
+institution in the world, and I guess what's 
+very valuable now that AI models are out is  
+
+637
+00:52:48,160 --> 00:52:52,960
+proprietary data that isn't public. Suddenly 
+you have access to that and you are in a very  
+
+638
+00:52:52,960 --> 00:52:57,920
+privileged position to help your customers 
+deploy AI in a way that makes them successful,  
+
+639
+00:52:57,920 --> 00:53:02,160
+and that solves real business problems. That 
+is essentially the bull thesis for this company  
+
+640
+00:53:02,160 --> 00:53:08,960
+and why it's probably going to 100X again. And so 
+it's still a really interesting time to join but  
+
+641
+00:53:08,960 --> 00:53:16,080
+I do think the nature of the ratio of people to a 
+customer, for example, is one big difference now.
+
+642
+00:53:16,080 --> 00:53:21,280
+Not investment advice, but it might 100X. 
+I totally understand why that might happen.  
+
+643
+00:53:21,280 --> 00:53:26,560
+So let's talk about the data piece, you said that 
+this was one of the secrets of Palantir's success,  
+
+644
+00:53:26,560 --> 00:53:31,120
+this early insight into the power 
+of ingesting data, cleaning data,  
+
+645
+00:53:31,120 --> 00:53:36,560
+being able to analyze and work with it. What a 
+marketing share there, just what they figured  
+
+646
+00:53:36,560 --> 00:53:40,640
+out about why this is so valuable, why 
+it's so hard and how they achieved it?
+
+647
+00:53:40,640 --> 00:53:45,200
+I think it's just very obvious as soon as you 
+step into a corporation and spend a couple of days  
+
+648
+00:53:45,200 --> 00:53:50,560
+there really, is you're like, all right, let's 
+suppose your job is to increase sales, so the  
+
+649
+00:53:50,560 --> 00:53:54,800
+first thing you want to do is get a clear picture 
+of what's going on. All right, so let me go and  
+
+650
+00:53:54,800 --> 00:54:00,000
+query the sales database. Oh wait, where's the 
+sales database? I can't get access to this. Okay,  
+
+651
+00:54:00,000 --> 00:54:05,280
+I need to file an access ticket. All right, now I 
+have to wait one week. And so everywhere we went,  
+
+652
+00:54:05,280 --> 00:54:10,560
+this was the big pain point, was we have to 
+wait six to eight weeks just to get data access,  
+
+653
+00:54:10,560 --> 00:54:16,240
+and then when you do get data access, it's not 
+like the data's in an easily queryable format,  
+
+654
+00:54:16,240 --> 00:54:20,000
+you actually really have to know what you're 
+doing in order to get the right metrics out,  
+
+655
+00:54:20,000 --> 00:54:22,560
+and so on and so forth.
+And so it turned out like,  
+
+656
+00:54:22,560 --> 00:54:30,000
+okay, it's this iceberg analogy where the actual 
+analysis is actually just the tip of the iceberg,  
+
+657
+00:54:30,000 --> 00:54:36,160
+it's kind of the last five or 10%, and the 95% 
+before that is, I am gaining access to the data,  
+
+658
+00:54:36,160 --> 00:54:40,320
+I am cleaning the data, I'm joining the data, 
+I'm normalizing it, putting it all in the same  
+
+659
+00:54:40,320 --> 00:54:46,480
+format. And so once we spotted that, then it's 
+like, okay, there's actually a lot of product to  
+
+660
+00:54:46,480 --> 00:54:53,200
+be built there just to make that process easier. 
+People don't think of Palantir as this place where  
+
+661
+00:54:53,200 --> 00:54:58,160
+innovative new product and UX ideas come out, 
+but I actually think it's been one of the most  
+
+662
+00:54:58,160 --> 00:55:03,040
+generative companies for that specifically in the 
+last 20 years, it's just that most of that didn't  
+
+663
+00:55:03,040 --> 00:55:08,720
+see the light of day and so people don't know. 
+But if you look at the product primitives that  
+
+664
+00:55:08,720 --> 00:55:15,600
+they developed in order to make the things I just 
+mentioned a lot easier, they're actually really  
+
+665
+00:55:15,600 --> 00:55:21,520
+valuable and interesting and could probably form 
+the basis of independent companies themselves. 
+
+666
+00:55:21,520 --> 00:55:27,280
+And so, yeah, it just took every single 
+step of that process became much,  
+
+667
+00:55:27,280 --> 00:55:32,560
+much easier once there was a software solution 
+around it. So if you talk about data ingestion,  
+
+668
+00:55:32,560 --> 00:55:37,840
+there's essentially a universal data adapter 
+that's part of Foundry. It can read anything,  
+
+669
+00:55:37,840 --> 00:55:45,200
+so JDBC, S3 buckets, whatever you want. 
+It allows us to look into the data,  
+
+670
+00:55:45,200 --> 00:55:50,000
+maybe preview the first 20 rows, and then it 
+allows you when you're ready to set up a schedule  
+
+671
+00:55:50,000 --> 00:55:55,680
+and just pull it in on some cadence. That process 
+alone for an engineer used to take a long time,  
+
+672
+00:55:55,680 --> 00:56:02,080
+especially pre-Vibe coding, and managing all those 
+cron jobs and doing this analytics, VM somewhere  
+
+673
+00:56:02,080 --> 00:56:07,520
+inside the customer's tenant was a huge pain.
+And so you productize that piece, then it's like,  
+
+674
+00:56:07,520 --> 00:56:11,920
+okay, once you have the data, it's like how do you 
+actually join it? What if you're non-technical? Is  
+
+675
+00:56:11,920 --> 00:56:17,440
+there a way for a non-technical user to be able 
+to join tables and see what the result is? And  
+
+676
+00:56:17,440 --> 00:56:23,280
+so there's all these very fascinating business 
+problems that, because I think the access was  
+
+677
+00:56:23,280 --> 00:56:29,120
+very difficult to get, and people hadn't really 
+solved before, and so there was a lot of white  
+
+678
+00:56:29,120 --> 00:56:34,320
+space to do some product innovation. So now I 
+would say Foundry's definitely the best data  
+
+679
+00:56:34,320 --> 00:56:38,960
+platform in the world just because it has all 
+these different applications within it that solve  
+
+680
+00:56:38,960 --> 00:56:44,800
+these discrete parts. And it came out of this, 
+years of painful experience, watching people have  
+
+681
+00:56:44,800 --> 00:56:50,080
+to clean data and join it and figure out what 
+this table name meant and so on and so forth.
+
+682
+00:56:50,080 --> 00:56:53,520
+You shared in your post this kind of 
+evocative story of some people's jobs  
+
+683
+00:56:53,520 --> 00:56:59,360
+is just to gate keep the data. They're there 
+to give you access to this very valuable data  
+
+684
+00:56:59,360 --> 00:57:03,760
+within the organization, and how hard it 
+is to get. That was a lot of this work,  
+
+685
+00:57:03,760 --> 00:57:08,320
+is just breaking through those political 
+battles of like, "Okay, we need this data  
+
+686
+00:57:08,320 --> 00:57:12,080
+for the good of the company and took a lot of 
+work." I guess anything there you want to add?
+
+687
+00:57:12,080 --> 00:57:16,960
+It is, yeah. It's a huge pain, and there 
+are good reasons for it. It's not like  
+
+688
+00:57:16,960 --> 00:57:22,000
+folks are malicious here. If you're IT 
+or if you're an InfoSec type person,  
+
+689
+00:57:22,000 --> 00:57:26,480
+then your goal is to prevent data breaches and 
+to make sure that sensitive information doesn't  
+
+690
+00:57:26,480 --> 00:57:30,320
+spread too wide. And so what's the easiest 
+way to do that? It's to lock the data down,  
+
+691
+00:57:31,760 --> 00:57:37,360
+basically be a gatekeeper for access. I think 
+where it got a little bit more interesting was  
+
+692
+00:57:38,160 --> 00:57:43,680
+where your skills are valuable and depend 
+on you being the gatekeeper. So what I mean  
+
+693
+00:57:43,680 --> 00:57:50,720
+by that is let's say I'm the only guy who 
+understands the way the sales calculation  
+
+694
+00:57:50,720 --> 00:57:55,920
+pipeline works and I write the SQL for it. All 
+the requests from business SMEs come to me,  
+
+695
+00:57:55,920 --> 00:58:01,280
+I have a big queue of them, it takes me weeks 
+to get through this queue. I have a great job, I  
+
+696
+00:58:01,280 --> 00:58:07,120
+have great job security, and people depend on me.
+And so now along comes this company and they're  
+
+697
+00:58:07,120 --> 00:58:10,320
+like, "Hey, actually we want to make sales data 
+available to everyone and we want to make it  
+
+698
+00:58:10,320 --> 00:58:16,880
+point and click." Suddenly you're like, "Hey, hang 
+on, what am I going to do?" And so that's where I  
+
+699
+00:58:16,880 --> 00:58:23,280
+think there was a lot of difficulty and I always 
+say people are like, what accounts as competitors?  
+
+700
+00:58:23,280 --> 00:58:27,440
+I don't think it's the ones that you would think 
+of necessarily. Palantir's biggest competitor is  
+
+701
+00:58:27,440 --> 00:58:36,000
+a company rolling its own solution, and so the 
+biggest difference would just be a CIO saying,  
+
+702
+00:58:36,000 --> 00:58:40,000
+"I'm going to build my own data infrastructure, 
+I'm going to own it, it's going to be on top of  
+
+703
+00:58:40,000 --> 00:58:44,800
+one of the hyperscalers, and we're all just 
+going to do our own analytics ourselves."  
+
+704
+00:58:44,800 --> 00:58:48,320
+And what we came along with, which was quite 
+disruptive to this model, was saying, "No,  
+
+705
+00:58:48,320 --> 00:58:52,080
+actually all your data is going to get ingested 
+into this one platform and everybody in your  
+
+706
+00:58:52,080 --> 00:58:55,520
+company is going to use it." The trade-off 
+is it's going to be really, really easy for  
+
+707
+00:58:55,520 --> 00:59:00,320
+everyone to do things. But as you can imagine, 
+some people weren't a huge fan of that model.
+
+708
+00:59:00,320 --> 00:59:02,640
+It feels like Glean is the biggest competitor  
+
+709
+00:59:02,640 --> 00:59:05,840
+to Palantir after I hear this, 
+do you know about that company?
+
+710
+00:59:05,840 --> 00:59:12,080
+I do, yeah, Glean looks amazing from 
+the outside. So many differences there,  
+
+711
+00:59:12,080 --> 00:59:15,280
+I can totally see why you would say this, but-
+
+712
+00:59:15,280 --> 00:59:19,200
+Clearly a different use case but it feels like 
+the reason they've been successful is they figured  
+
+713
+00:59:19,200 --> 00:59:24,160
+out a lot of this data ingestion, permissions, 
+search stuff. I never thought of it that way.
+
+714
+00:59:24,160 --> 00:59:24,720
+Yeah.
+
+715
+00:59:24,720 --> 00:59:27,680
+Interesting. Okay, I want to talk about hiring,  
+
+716
+00:59:27,680 --> 00:59:32,880
+you talked a bit about this. You're starting a 
+company again, what are some of the key lessons  
+
+717
+00:59:32,880 --> 00:59:38,640
+you've learned from your time at Palantir when 
+you are hiring people for your company? I don't  
+
+718
+00:59:38,640 --> 00:59:42,320
+know if you're actually hiring people 
+yet, maybe when you may start hiring.
+
+719
+00:59:42,320 --> 00:59:50,880
+Yeah, we have six people at the moment, so a 
+really reasonably small team. I think with hiring,  
+
+720
+00:59:50,880 --> 00:59:54,640
+it's funny, man, there's so much hiring advice 
+online and you read it and you're like, "Yeah,  
+
+721
+00:59:54,640 --> 00:59:58,880
+this is super obvious." And then when you live it, 
+you're suddenly like, "Aah, this is why people say  
+
+722
+00:59:58,880 --> 01:00:04,800
+this." So a few simple examples are I think the 
+thing that is really hard to find is somebody who  
+
+723
+01:00:04,800 --> 01:00:13,280
+really, really has a lot about doing the thing and 
+will go that kind of extra 20%. I think when you  
+
+724
+01:00:13,280 --> 01:00:17,520
+hire out, especially not to pick on them, but I 
+think if you hired a [inaudible 01:00:17] right,  
+
+725
+01:00:17,520 --> 01:00:24,480
+it's like people want a 400K a year job, they 
+would like to work a certain number of hours,  
+
+726
+01:00:24,480 --> 01:00:27,760
+they would like to ship some code and then 
+go home, that's basically the model that  
+
+727
+01:00:27,760 --> 01:00:31,280
+you get accustomed to even if you don't 
+intend to when you work at a big company. 
+
+728
+01:00:31,280 --> 01:00:37,440
+And so if you hire out of that for a really small 
+startup, it can be really challenging because  
+
+729
+01:00:37,440 --> 01:00:43,040
+a lot of your success as a startup depends 
+on each individual person being like, "No,  
+
+730
+01:00:43,040 --> 01:00:47,120
+I'm really going to, I'm work this evening if 
+that's what it takes to get this thing working,  
+
+731
+01:00:47,120 --> 01:00:51,600
+and I'm not just going to check my boxes, I'm 
+actually going to look towards what is the real  
+
+732
+01:00:51,600 --> 01:00:56,080
+outcome that this business is trying to achieve." 
+And everything I'm saying feels kind of obvious,  
+
+733
+01:00:56,080 --> 01:00:59,520
+but when you actually feel that difference 
+between somebody who's just checking the boxes  
+
+734
+01:00:59,520 --> 01:01:03,840
+and somebody who's kind of an animal in this way, 
+they'll actually go and pursue and accomplish the  
+
+735
+01:01:03,840 --> 01:01:08,800
+end outcome, that difference is very, very 
+big and it matters so much for your first 20  
+
+736
+01:01:08,800 --> 01:01:14,000
+people. And there's no science to finding these 
+people. It's not like you can just put somebody  
+
+737
+01:01:14,000 --> 01:01:17,920
+who cares about outcomes in your JD and then 
+suddenly you'll get all these people applying. 
+
+738
+01:01:18,640 --> 01:01:22,720
+So then it's like, okay, well how do you 
+screen for that and how do you find those  
+
+739
+01:01:22,720 --> 01:01:27,760
+types of people? And so that's where it gets 
+really interesting. I think that's where the  
+
+740
+01:01:27,760 --> 01:01:33,840
+mission alignment comes in, and so you do have 
+to find people who, for what you are doing,  
+
+741
+01:01:33,840 --> 01:01:40,880
+have this extra maybe private reason to care about 
+it a little bit more than the average person.  
+
+742
+01:01:40,880 --> 01:01:45,760
+So I think for Palantir, they did hire a 
+lot of vets, for example, or maybe people  
+
+743
+01:01:45,760 --> 01:01:50,640
+who were a little bit more patriotic or 
+pro-America than the average tech employee,  
+
+744
+01:01:50,640 --> 01:01:56,880
+and those people had an extra reason to Palantir 
+and an extra reason to try that little bit harder.  
+
+745
+01:01:56,880 --> 01:02:03,760
+And so what I'm doing is a little bit more in the 
+kind of medical and health space, and so I think  
+
+746
+01:02:03,760 --> 01:02:10,080
+people who have themselves had experiences 
+with this system have maybe had relatives  
+
+747
+01:02:10,880 --> 01:02:15,600
+go through difficult experiences with things 
+like cancer or whatever it is. They're just  
+
+748
+01:02:15,600 --> 01:02:20,160
+that extra bit motivated to really care about 
+the thing you're trying to do and then work that  
+
+749
+01:02:20,160 --> 01:02:25,200
+little bit harder, and so I think aggressively 
+filtering early on to things like mission fit,  
+
+750
+01:02:25,200 --> 01:02:28,480
+how much have you cared about stuff 
+in the past, and what's an example. 
+
+751
+01:02:28,480 --> 01:02:32,800
+You ask questions like, what's the hardest you've 
+ever worked to get something done and why? And  
+
+752
+01:02:32,800 --> 01:02:38,080
+that does differentiate a lot of people, a lot of 
+people don't actually have a great answer to that.  
+
+753
+01:02:38,080 --> 01:02:43,120
+So I would say that's been a really big learning, 
+is it's less about testing for the right skills,  
+
+754
+01:02:43,120 --> 01:02:47,680
+yes, that's important, two it's much 
+more about just who has that extra 20%.
+
+755
+01:02:47,680 --> 01:02:52,560
+That is really interesting, everything you've 
+shared is essentially around motivation, and  
+
+756
+01:02:52,560 --> 01:02:59,760
+drive, and passion, and kind of just commitment 
+to working on this intently, and it's almost like  
+
+757
+01:02:59,760 --> 01:03:04,400
+a second thought of just like, oh, also they're 
+really smart and skilled at stuff. It feels like  
+
+758
+01:03:04,400 --> 01:03:08,080
+that's just table stakes and this is actually 
+what makes the difference in your experience.
+
+759
+01:03:08,080 --> 01:03:12,000
+Yeah, I totally agree, and I think it's different 
+for every business. So I think if you're in a  
+
+760
+01:03:12,000 --> 01:03:16,400
+space like B2B SaaS where maybe it's a little 
+harder to tell the story of like, oh, this is  
+
+761
+01:03:16,400 --> 01:03:21,360
+so mission-critical, whatever, there are other 
+ways of getting at this thing. So for example, I  
+
+762
+01:03:21,360 --> 01:03:25,680
+know a lot of people, again, it's a little played 
+out now, but I know a lot of people who for sales  
+
+763
+01:03:25,680 --> 01:03:31,360
+teams, they will explicitly go for people who were 
+professional athletes or played sports in college,  
+
+764
+01:03:31,360 --> 01:03:34,560
+and it's like, okay, what does that test for? 
+It's like you are very, very disciplined,  
+
+765
+01:03:34,560 --> 01:03:38,320
+you're very, very goals and numbers oriented 
+and you're willing to just work really,  
+
+766
+01:03:38,320 --> 01:03:43,120
+really hard. And so there's all these kind 
+of lateral ways of getting at these qualities  
+
+767
+01:03:43,120 --> 01:03:49,520
+that I think you just have to be intentional 
+about as a founder. As a personal example,  
+
+768
+01:03:49,520 --> 01:03:55,120
+I'm a runner and so I actually love meeting fellow 
+runners and I kind of joke like, "Oh, maybe I'll  
+
+769
+01:03:55,120 --> 01:04:00,720
+go higher from run clubs or something like that."
+But it's just same with I play a lot of chess,  
+
+770
+01:04:00,720 --> 01:04:04,640
+I love meeting chess players. I'm not necessarily 
+saying that's the right kind of hire for me,  
+
+771
+01:04:04,640 --> 01:04:11,200
+but I think having this thing of here 
+are some traits that seem uncorrelated,  
+
+772
+01:04:11,200 --> 01:04:16,640
+but which actually give you good signal to this 
+person's personality, those are actually really  
+
+773
+01:04:16,640 --> 01:04:22,160
+important. The last thing I'll say just as a 
+funny illustration of that concept is I think Max  
+
+774
+01:04:22,160 --> 01:04:27,360
+Levchin tells the story of somebody interviewing 
+at PayPal early on and he passed all the skill  
+
+775
+01:04:27,360 --> 01:04:32,080
+interviews and then it just got to the final round 
+and he said something about liking to shoot hoops,  
+
+776
+01:04:32,080 --> 01:04:40,160
+like he liked to play basketball, and they 
+were like instant reject. The vibe here was  
+
+777
+01:04:40,160 --> 01:04:46,560
+like if you're not a mega Linux nerd, hardcore 
+computer person, then we don't want you here,  
+
+778
+01:04:46,560 --> 01:04:49,680
+even if you actually passed all the tests just 
+because you like to shoot hoops. Now whether that  
+
+779
+01:04:49,680 --> 01:04:54,480
+was the right call or the wrong call, don't know, 
+but that's an example of what I'm talking about.
+
+780
+01:04:54,480 --> 01:05:00,640
+I think that's a great echo back. People hearing 
+this may be like, "What the hell? How dare they  
+
+781
+01:05:00,640 --> 01:05:06,480
+do that?" But this is exactly what you said at 
+the beginning of our conversation, that like an  
+
+782
+01:05:06,480 --> 01:05:11,280
+approach to building a generational business is 
+to be very clear about who this is not for, and  
+
+783
+01:05:11,280 --> 01:05:15,520
+that's okay, it's your company, not everyone needs 
+to work there. And it's almost saving them time  
+
+784
+01:05:15,520 --> 01:05:20,720
+because they might realize this isn't for me, this 
+isn't the people I want to be around necessarily.  
+
+785
+01:05:20,720 --> 01:05:25,600
+So I think it's important to see that side of 
+it, is it's your business, it's important to  
+
+786
+01:05:25,600 --> 01:05:31,680
+be clear about who is a good fit for the company 
+and who's not. Speaking of that, let's talk about  
+
+787
+01:05:31,680 --> 01:05:39,200
+product management for a bit. I know Palantir 
+PMs are not traditional product managers. I  
+
+788
+01:05:39,200 --> 01:05:45,760
+imagine people have the title, Product Manager at 
+Palantir, okay, so if so, as far as you understand  
+
+789
+01:05:45,760 --> 01:05:50,720
+what's the difference between say a PM at Palantir 
+versus a traditional PM say at a FANG company?
+
+790
+01:05:50,720 --> 01:05:55,360
+Palantir was, as far as I remember, quite 
+anti-PM for a while and eventually we did  
+
+791
+01:05:55,360 --> 01:05:57,840
+need them because we just got more 
+serious about product testing.
+
+792
+01:05:57,840 --> 01:05:59,600
+Classic story, classic story.
+
+793
+01:05:59,600 --> 01:06:00,240
+A classic story.
+
+794
+01:06:00,240 --> 01:06:01,520
+In many companies,
+
+795
+01:06:01,520 --> 01:06:07,040
+The big difference or one big difference I 
+noticed was that they were extremely careful  
+
+796
+01:06:07,040 --> 01:06:14,720
+about only making people PMs who had first proven 
+themselves out as forward deploying engineers. You  
+
+797
+01:06:14,720 --> 01:06:22,800
+basically could not become a PM any other way. 
+So as an example, when I mentioned earlier the  
+
+798
+01:06:22,800 --> 01:06:26,800
+thing that we built for the plane factory, 
+the person who was managing that deployment,  
+
+799
+01:06:26,800 --> 01:06:31,920
+she later became the PM for ontology, and it 
+was just because she'd kind of proven her method  
+
+800
+01:06:31,920 --> 01:06:37,120
+in the field. And the reason for that's pretty 
+simple, it's going to be someone who understand  
+
+801
+01:06:37,120 --> 01:06:42,560
+how customers work and has that customer empathy, 
+and it's going to be someone who has this drive  
+
+802
+01:06:42,560 --> 01:06:47,520
+to get things done because that's what BD selected 
+for. I think the failure mode that they were very,  
+
+803
+01:06:47,520 --> 01:06:54,560
+very averse to in traditional PMs was this 
+kind of Google Docs syndrome of like, okay,  
+
+804
+01:06:54,560 --> 01:06:58,560
+I'm going to write my product requirement 
+documents, and I'm going to manage it in  
+
+805
+01:06:58,560 --> 01:07:03,920
+this very sort of sane, rational way I think, 
+so the company was really rigorous about that. 
+
+806
+01:07:03,920 --> 01:07:09,200
+And so basically PMs were almost always 
+internal promotions and they always came from  
+
+807
+01:07:09,920 --> 01:07:15,440
+BD. I am not aware of a single case where we took 
+somebody who was a PM at a place like Google,  
+
+808
+01:07:15,440 --> 01:07:19,520
+which produces many excellent PMs and hired 
+them successfully into Palantir, it's just  
+
+809
+01:07:19,520 --> 01:07:25,440
+a very different vibe. So I think that was one 
+thing. This is maybe more of a classic PM trait,  
+
+810
+01:07:25,440 --> 01:07:30,960
+but you just had to be either an engineer yourself 
+or extremely good at working with engineers, and  
+
+811
+01:07:30,960 --> 01:07:37,520
+the ones I saw who succeeded the most were just 
+best friends with their engineering team. And the  
+
+812
+01:07:37,520 --> 01:07:42,160
+team would always just be like one, it was called 
+the group pm and then it would be a lot of very,  
+
+813
+01:07:42,160 --> 01:07:47,600
+very good engineers. And basically the success 
+or failure mode was just do the engineers and  
+
+814
+01:07:47,600 --> 01:07:54,000
+trust you? I mentioned before Palantir how is 
+very almost disagreeable personalities, and so  
+
+815
+01:07:54,000 --> 01:07:58,640
+if you didn't gain the trust of engineering 
+team pretty fast, you didn't last very long.
+
+816
+01:07:58,640 --> 01:08:04,080
+I think we've cracked the question of why are 
+Palantir PM's so successful? First of all,  
+
+817
+01:08:04,080 --> 01:08:09,600
+the hiring bar is just basically hiring for 
+leaders in a lot of different ways, to this,  
+
+818
+01:08:09,600 --> 01:08:14,400
+I don't know, forge for founders where they're 
+working with a company solving a real problem,  
+
+819
+01:08:14,400 --> 01:08:18,640
+building a real product that makes money, and 
+then those are the people that become the PMs  
+
+820
+01:08:18,640 --> 01:08:23,440
+at Palantir and then they go on to leave and 
+that's why 30% of them end up starting companies,  
+
+821
+01:08:23,440 --> 01:08:28,880
+I'm surprised it's not higher, or become first 
+PMs at other companies or heads of product.
+
+822
+01:08:28,880 --> 01:08:33,760
+Yeah, absolutely, it's crazy. I was part 
+of a pretty small team within Palantir,  
+
+823
+01:08:33,760 --> 01:08:39,680
+I think it was 20 to 25 people when I joined, 
+and I think at least six of them now are either  
+
+824
+01:08:39,680 --> 01:08:45,520
+unicorn or just pre-unicorn founders from that 
+group of 25 people, which is actually a crazy  
+
+825
+01:08:45,520 --> 01:08:49,360
+ratio. And then a bunch more have become 
+founders recently at an earlier stage,  
+
+826
+01:08:49,360 --> 01:08:54,480
+so yeah, there's all these little pockets of 
+excellence and it's been really interesting to  
+
+827
+01:08:54,480 --> 01:08:59,120
+see. I think the other thing that's driving that 
+a little bit is when you leave, it's just such  
+
+828
+01:08:59,120 --> 01:09:03,920
+an interesting company to work at that I think 
+the retention numbers were actually very high  
+
+829
+01:09:03,920 --> 01:09:10,800
+for that company. People would often stay a lot 
+longer than maybe the average Valley tenure. And  
+
+830
+01:09:10,800 --> 01:09:16,560
+so when you left, it was really this decision of 
+just something very specific is pulling you and  
+
+831
+01:09:16,560 --> 01:09:21,360
+you want to kind of play the next level of the 
+game, and so it was very unusual for someone to  
+
+832
+01:09:21,360 --> 01:09:26,480
+leave and then join maybe a more traditional tech 
+company. It's sort of like you're either going to  
+
+833
+01:09:26,480 --> 01:09:30,480
+go become a founder or why would you leave when 
+there's so many interesting different things to  
+
+834
+01:09:30,480 --> 01:09:35,040
+work on? And I know that sounds a little 
+culty, but that's what everyone thinks.
+
+835
+01:09:35,040 --> 01:09:38,640
+I could totally see that. A lot of people 
+that left Airbnb have never found something  
+
+836
+01:09:38,640 --> 01:09:43,360
+more meaningful, it's just hard, especially if 
+you're early. There's a stat that I didn't share  
+
+837
+01:09:43,360 --> 01:09:48,000
+that I think is really interesting, and when you 
+look at YC founders and where they've come from,  
+
+838
+01:09:48,000 --> 01:09:53,520
+I think you maybe shared in your post that 
+there's more YC ex-Palantir founders than  
+
+839
+01:09:53,520 --> 01:10:00,480
+there are ex-Google founders in spite of Google 
+being something like 50 times bigger sample size.
+
+840
+01:10:00,480 --> 01:10:02,160
+Yeah, yeah.
+
+841
+01:10:02,160 --> 01:10:07,840
+Let's talk about the moral question of Palantir. 
+A lot of people probably seeing the title of  
+
+842
+01:10:07,840 --> 01:10:13,840
+this episode, hearing this, will not be excited 
+about Palantir being highlighted and promoted,  
+
+843
+01:10:13,840 --> 01:10:17,440
+a lot of people kind of disagree with 
+what Palantir's doing. Builds products  
+
+844
+01:10:17,440 --> 01:10:21,680
+that kill people in some ways, they work 
+with governments they don't agree with. I  
+
+845
+01:10:21,680 --> 01:10:26,640
+know you wrote a really insightful way 
+of how you approach this question when  
+
+846
+01:10:26,640 --> 01:10:29,840
+you decided to work at Palantir and how 
+you see people tackle with this, can you  
+
+847
+01:10:29,840 --> 01:10:34,160
+just talk about the framework that you landed 
+on and how you thought about this yourself?
+
+848
+01:10:34,160 --> 01:10:38,960
+Yeah, it's a really interesting topic, it's 
+definitely very nuanced. I think what I was  
+
+849
+01:10:38,960 --> 01:10:45,600
+trying to say in that post was a couple of things. 
+One was that there was a lot of upside there. So  
+
+850
+01:10:45,600 --> 01:10:53,840
+I worked on the US Covid response, I have friends 
+who worked on Operation Warp Speed, and these are  
+
+851
+01:10:53,840 --> 01:10:59,200
+all things that I think saved a lot of lives, and 
+I was pretty focused while I was working at NIH on  
+
+852
+01:10:59,200 --> 01:11:03,280
+cancer research. And so to me, these were just 
+obviously good things and you couldn't do them  
+
+853
+01:11:03,280 --> 01:11:09,520
+anywhere else, and so that was alone a reason 
+to stay. The question I had in that post was,  
+
+854
+01:11:09,520 --> 01:11:13,120
+well, okay, there are definitely going to 
+be other pieces of this that people object  
+
+855
+01:11:13,120 --> 01:11:20,320
+to. So during the 2016 to 2020 era, it became a 
+pretty common thing to go into work in New York  
+
+856
+01:11:20,320 --> 01:11:26,880
+and you'd have people protesting outside your 
+office or doing all kinds of things. And so  
+
+857
+01:11:26,880 --> 01:11:30,880
+there was this question of, well, is this okay? 
+And I think the point I was trying to make was  
+
+858
+01:11:31,920 --> 01:11:38,000
+it's rare that disengagement is the correct 
+answer, and I think it's more recognized now,  
+
+859
+01:11:38,000 --> 01:11:44,400
+but especially then it went a bit too far.
+So the famous example here is Google kind  
+
+860
+01:11:44,400 --> 01:11:50,880
+of disengaging with a Pentagon AI project just 
+because some people felt that working with the  
+
+861
+01:11:50,880 --> 01:11:56,880
+Pentagon was itself morally bad. I think that's 
+a way to sort of the left of what the median  
+
+862
+01:11:56,880 --> 01:12:01,520
+American would say, I think the median American 
+would say it's fine to work on defense stuff  
+
+863
+01:12:02,080 --> 01:12:07,680
+within reason and assuming you're doing largely 
+good things, and so there was just this kind of  
+
+864
+01:12:07,680 --> 01:12:12,560
+almost arbitrage there at some point of just hang 
+on, it's not like working on defense is inherently  
+
+865
+01:12:12,560 --> 01:12:17,920
+evil, it's actually a pretty interesting thing. 
+And then there's this question of, well, would  
+
+866
+01:12:17,920 --> 01:12:25,040
+you rather be in the room and making this better 
+or not? And so I'm struggling with how much I can  
+
+867
+01:12:25,040 --> 01:12:30,160
+share here, but as a simple example, if you're 
+doing even a workflow, which I think many people  
+
+868
+01:12:30,160 --> 01:12:36,400
+would not be super comfortable with, let's say 
+you're targeting somebody for some kind of strike.  
+
+869
+01:12:36,400 --> 01:12:40,960
+If you compare the way it's done now to maybe 
+the way it was done in 2010, it's going to be  
+
+870
+01:12:40,960 --> 01:12:44,800
+a lot more targeted, it's going to be a lot more 
+accurate, and so you've actually improved that  
+
+871
+01:12:44,800 --> 01:12:49,840
+process and reduced the chance of error. Maybe 
+you should feel good about that, right? Now, that  
+
+872
+01:12:49,840 --> 01:12:55,040
+is a bullet many people are not willing to bite.
+I didn't work on the defense side of the company  
+
+873
+01:12:55,040 --> 01:13:01,520
+myself, but I think you have to be okay with 
+these kinds of grade zones and actually actively  
+
+874
+01:13:01,520 --> 01:13:07,280
+thinking about what you are doing. And that 
+doesn't mean that it's always the right thing  
+
+875
+01:13:07,280 --> 01:13:13,760
+to do to work in a defense company. Maybe we 
+go into a very dark future and we start being  
+
+876
+01:13:13,760 --> 01:13:19,280
+the bad guys in some ways, and then it's probably 
+not a great idea to work at a defense company. So  
+
+877
+01:13:19,280 --> 01:13:25,600
+it's a shifting landscape but I kind of felt 
+pretty strongly that a lot of people in tech  
+
+878
+01:13:25,600 --> 01:13:33,120
+just didn't want to think about this at all.
+So you have engineers now who are working on  
+
+879
+01:13:33,120 --> 01:13:38,160
+optimizing short form videos for higher 
+engagement, and you sort of want to say  
+
+880
+01:13:38,160 --> 01:13:42,400
+to them like, "Hey, are you thinking about what 
+this is doing to the brains of young children?"  
+
+881
+01:13:42,400 --> 01:13:46,880
+Or "Have you seen an 11-year-old kind of scrolling 
+something for five hours and do you think this is  
+
+882
+01:13:46,880 --> 01:13:50,560
+a good thing?" And I think people don't want to 
+think about this stuff too much. I'm not saying  
+
+883
+01:13:50,560 --> 01:13:57,600
+I know the answer, but there was almost this 
+refusal to look at what tech was doing from a  
+
+884
+01:13:57,600 --> 01:14:03,520
+political lens for a very long time. It was just 
+like, "Hey, let us play with our toys, let us sit  
+
+885
+01:14:03,520 --> 01:14:08,400
+in our little park, and don't bother us, and we're 
+just going to build cool stuff and launch it." 
+
+886
+01:14:08,400 --> 01:14:15,280
+And 2025, we're in a very, very different state 
+of the world, tech is involved in politics now,  
+
+887
+01:14:15,280 --> 01:14:20,320
+and politics basically came to tech. There's this 
+famous image of Mark Zuckerberg, he's sitting in  
+
+888
+01:14:20,320 --> 01:14:25,680
+Congress and he kind of looks very pale, and he's 
+like, "Why have they dragged me in here again?"  
+
+889
+01:14:25,680 --> 01:14:31,680
+But I think tech went through this journey of, 
+oh, we're suddenly becoming important now, oh,  
+
+890
+01:14:31,680 --> 01:14:36,240
+we're really, really important now, oh, we better 
+stop playing this game of politics. And so I think  
+
+891
+01:14:36,240 --> 01:14:40,240
+what I'm saying now is a lot more consensus 
+than it was 10 years ago, but at the time,  
+
+892
+01:14:40,240 --> 01:14:44,480
+the feeling was just like, "Look what we are doing 
+is political, so you better engage with that."
+
+893
+01:14:44,480 --> 01:14:48,880
+I think when this became really real for 
+a lot of people is with the Ukraine War,  
+
+894
+01:14:48,880 --> 01:14:55,040
+the government's running out of certain vehicles 
+and ammunition, we're just not able to produce it,  
+
+895
+01:14:55,040 --> 01:14:58,800
+and then we're like, "Oh, thank God for a company 
+like Anduril and all these other tech companies  
+
+896
+01:14:58,800 --> 01:15:01,276
+that are actually ahead and keeping us ahead." I 
+think the only reason the US is ahead of that...
+
+897
+01:15:01,276 --> 01:15:04,800
+And keeping us ahead. I think the only reason 
+the US is ahead of China and the space race  
+
+898
+01:15:04,800 --> 01:15:08,240
+is because SpaceX just is one company 
+that just has been doing this for a long  
+
+899
+01:15:08,240 --> 01:15:13,040
+time. So I think a lot of people have kind of 
+realized, okay, maybe we need these things.
+
+900
+01:15:13,040 --> 01:15:18,480
+Right. And I would make this argument as well, 
+it's like people are like, well, how can you feel  
+
+901
+01:15:18,480 --> 01:15:22,240
+good about working in defense? And it's like, 
+well, you're not going to feel great if China  
+
+902
+01:15:22,240 --> 01:15:26,000
+invades Taiwan, actually, you're not going 
+to. I think you are probably also not going  
+
+903
+01:15:26,000 --> 01:15:31,680
+to like that outcome. So we do just live in this 
+world where you do need to build up deterrents to  
+
+904
+01:15:31,680 --> 01:15:37,120
+these things and they better be good. So to me, 
+it didn't feel that difficult of a question. I  
+
+905
+01:15:37,120 --> 01:15:41,440
+think when you zoom into particular things, they 
+can be very difficult questions and there have  
+
+906
+01:15:41,440 --> 01:15:46,640
+been a bunch of those in the last couple of years. 
+But yeah, again, disengagement isn't the answer.
+
+907
+01:15:46,640 --> 01:15:50,640
+Yeah. And again, it's not for everyone. I think 
+that's an important kind of theme through this  
+
+908
+01:15:50,640 --> 01:15:55,440
+conversation is some companies ... like, to 
+build ... sometimes to build a generational,  
+
+909
+01:15:55,440 --> 01:16:00,480
+really successful company, you need to turn 
+some people off because that's what brings  
+
+910
+01:16:00,480 --> 01:16:04,480
+in the best talent oftentimes.
+Okay. Just a few more questions.  
+
+911
+01:16:05,360 --> 01:16:10,880
+Kind of like stepping back a little bit. You're 
+building a company again. What are a few core  
+
+912
+01:16:10,880 --> 01:16:16,960
+pieces of advice that you're bringing to your 
+new startup that will inform how you build this  
+
+913
+01:16:16,960 --> 01:16:20,640
+company, from your experience at Palantir? We 
+talked about a lot of stuff. Is there anything,  
+
+914
+01:16:20,640 --> 01:16:22,720
+I don't know if there are three 
+things that you think are like,  
+
+915
+01:16:22,720 --> 01:16:26,960
+"I'm definitely going to do these things this 
+way because it worked really well at Palantir."
+
+916
+01:16:26,960 --> 01:16:31,440
+One thing is probably just 
+really fast iteration cycles.  
+
+917
+01:16:31,440 --> 01:16:37,040
+So placing a lot of bets and then being 
+really rigorous about just going through  
+
+918
+01:16:37,040 --> 01:16:41,280
+that cycle very soon. I have this [inaudible 
+01:16:40]principles, and one of the things  
+
+919
+01:16:41,280 --> 01:16:47,440
+on there is basically saying EOP successes 
+goes up the more bets you make, and it's sort  
+
+920
+01:16:47,440 --> 01:16:51,440
+of a function of how many bets you make and the 
+probability of success of those individual bets,  
+
+921
+01:16:51,440 --> 01:16:56,160
+right? And so one easy way to almost guarantee 
+that you'll hit something is just to make a lot  
+
+922
+01:16:56,160 --> 01:17:02,880
+of bets and then just kind of cycle through them 
+very quickly. Now, obviously this is difficult,  
+
+923
+01:17:02,880 --> 01:17:08,240
+often this question of, well, is this bet actually 
+failing or are we quitting too soon, kind of  
+
+924
+01:17:08,240 --> 01:17:15,120
+thing. But that's kind of one principle I take, 
+is just test this thing very early. You know,  
+
+925
+01:17:15,120 --> 01:17:20,320
+like the classic "why feed, why see" thing is just 
+when you take something to a customer, ask them to  
+
+926
+01:17:20,320 --> 01:17:25,600
+pay you a lot of money and [inaudible 01:17:22] 
+then find a new problem. Don't wait three weeks,  
+
+927
+01:17:25,600 --> 01:17:29,200
+which is what every founding team typically 
+does because you don't have that kind of time. 
+
+928
+01:17:29,200 --> 01:17:37,120
+I do think the importance of just having a 
+really tight, distinctive internal culture and  
+
+929
+01:17:37,760 --> 01:17:45,040
+building a strong feeling of trust within a 
+team is really important. And kind of like you  
+
+930
+01:17:45,040 --> 01:17:50,720
+mentioned with Airbnb, and people definitely felt 
+this at Palantir, there was this feeling of like,  
+
+931
+01:17:50,720 --> 01:17:55,360
+well, you worked here, you must be good. I 
+trust you, and all of that. And I think it's  
+
+932
+01:17:55,360 --> 01:18:00,560
+so important to create that and you kind of know 
+that feeling. That's what ... like, people ask me,  
+
+933
+01:18:01,840 --> 01:18:05,040
+should I go work at place X or should I just 
+go be a founder straightaway? I don't know  
+
+934
+01:18:05,040 --> 01:18:09,040
+the answer for everyone, but I will say one of 
+the benefits of working at a place like that is  
+
+935
+01:18:09,040 --> 01:18:13,840
+you just have all these internal benchmarks now 
+for, okay, this is what this should feel like,  
+
+936
+01:18:13,840 --> 01:18:18,560
+and if it doesn't feel like that, we're off. And 
+I can't imagine not having those benchmarks and  
+
+937
+01:18:18,560 --> 01:18:23,040
+just kind of having to figure it all out.
+So yeah, I think that thing, too, is just  
+
+938
+01:18:23,040 --> 01:18:29,120
+distinctive, internal, strong team culture. 
+And then I think for me, think three is just  
+
+939
+01:18:30,160 --> 01:18:37,200
+working with a really messy part of the real 
+world. So I kind of joked when I left, like,  
+
+940
+01:18:38,720 --> 01:18:41,840
+I am excited to just do pure software. I'm 
+excited to, I don't know, I want to build  
+
+941
+01:18:41,840 --> 01:18:48,400
+an ID or something and just not have a support 
+email even and all of that. But it turned out,  
+
+942
+01:18:48,400 --> 01:18:53,600
+look, my comparative advantage in a lot of ways 
+was the networks I'd built and the experience  
+
+943
+01:18:53,600 --> 01:19:00,480
+I'd had in engaging with the messy parts of the 
+world. And they do need technology a lot, right? 
+
+944
+01:19:02,080 --> 01:19:06,560
+There's this horrifying thought I have sometimes 
+of just like, maybe we'll get ATI in the next two  
+
+945
+01:19:06,560 --> 01:19:10,720
+years and the healthcare sector will still 
+be broken and it will still be impossible to  
+
+946
+01:19:10,720 --> 01:19:15,840
+afford rent in New York City and build houses 
+and all these things. And that may well become  
+
+947
+01:19:15,840 --> 01:19:21,200
+true. And so I think it's important to engage with 
+those parts of the world too, even though they're  
+
+948
+01:19:21,200 --> 01:19:27,360
+really, really challenging. And I think the really 
+nice thing about LLMs is that actually, there's so  
+
+949
+01:19:27,360 --> 01:19:32,720
+many workflows now that are accessible to you as 
+a tech founder and people are somehow more open to  
+
+950
+01:19:32,720 --> 01:19:36,800
+working with tech companies than they ever were 
+before. Selling into the sectors of the economy  
+
+951
+01:19:36,800 --> 01:19:44,720
+in 2015, incredibly hard. I think now post the 
+ChatGPT moment, people are willing to give chances  
+
+952
+01:19:44,720 --> 01:19:50,800
+to small startups that they weren't willing to do 
+previously. As you mentioned earlier, the cost of  
+
+953
+01:19:50,800 --> 01:19:56,160
+doing things like forward-deployed engineering 
+has fallen by maybe five to 10 x now at least.  
+
+954
+01:19:56,160 --> 01:20:01,440
+And so there's a lot of new possibilities 
+and I'm excited to engage with the best.
+
+955
+01:20:01,440 --> 01:20:04,080
+Wow, that is some alpha right there 
+that you're finding, that some of these  
+
+956
+01:20:04,080 --> 01:20:08,960
+very large organizations are more open to 
+working with startups, because classically,  
+
+957
+01:20:08,960 --> 01:20:13,200
+investors don't want to invest in companies 
+that are going after healthcare companies and  
+
+958
+01:20:13,200 --> 01:20:16,400
+governments and things like that. So it 
+is really interesting actually to hear. 
+
+959
+01:20:17,040 --> 01:20:21,360
+I'm going to mirror back the tips you just shared, 
+and there's actually a secondary tip that I think  
+
+960
+01:20:21,360 --> 01:20:25,040
+is the more interesting piece. So the first 
+thing you're taking away is iterate quickly,  
+
+961
+01:20:25,040 --> 01:20:29,920
+but I love your tip of ask for lots of 
+money quickly, early, to see if it's  
+
+962
+01:20:29,920 --> 01:20:35,120
+an actual idea that people will pay lots of 
+money for. And if not, move on. I love that. 
+
+963
+01:20:35,120 --> 01:20:41,280
+The other is build a very distinct culture, but 
+the piece you share there that I love even more is  
+
+964
+01:20:41,280 --> 01:20:47,200
+this idea of knowing what a high bar looks like, 
+knowing what awesome A plus people look like,  
+
+965
+01:20:47,200 --> 01:20:53,200
+and you need to work at a company like Palantir 
+to actually see that. So the advice there I  
+
+966
+01:20:53,200 --> 01:20:58,400
+feel is just work at a company that is amazing, 
+first, with the best talent, to understand what  
+
+967
+01:20:58,400 --> 01:21:02,800
+that should look like, plus you build a network of 
+those folks. So I think that's really interesting. 
+
+968
+01:21:02,800 --> 01:21:06,640
+And then the other pieces of advice you're 
+pulling away is work on really hard,  
+
+969
+01:21:06,640 --> 01:21:10,000
+messy problems because that's where the biggest 
+opportunities are, and it's sounding like this  
+
+970
+01:21:10,000 --> 01:21:16,240
+is the easiest time to actually do that. Amazing.
+Okay. I'm going to take us to a recurring theme on  
+
+971
+01:21:16,240 --> 01:21:23,600
+this podcast called AI Corner. And what we do in 
+AI Corner is we share some way that .. and this  
+
+972
+01:21:23,600 --> 01:21:30,880
+is you sharing ... some way that you've found 
+AI to be useful in your day- to-day, either in  
+
+973
+01:21:30,880 --> 01:21:38,000
+life or in work. Is there any way you found some 
+tool ... some AI tool useful that you can share?
+
+974
+01:21:38,000 --> 01:21:43,200
+Oh my gosh, there are so many. I'll give you a 
+few examples. So I use Wispr Flow quite a bit.  
+
+975
+01:21:43,200 --> 01:21:51,520
+So this is the talk to your keyboard and it 
+will transcribe for you app. Very good. It's  
+
+976
+01:21:51,520 --> 01:21:56,560
+just great when you are iterating very quickly 
+with an LLM and sometimes you have to do these  
+
+977
+01:21:56,560 --> 01:22:01,360
+paragraph-long prompts and it's just easier 
+to speak into them. So Wispr Flow, I like.
+
+978
+01:22:01,360 --> 01:22:04,960
+Just to double down on that, you 
+press a button and you start talking-
+
+979
+01:22:04,960 --> 01:22:05,080
+Yeah.
+
+980
+01:22:05,080 --> 01:22:11,360
+And it's writing out what you're saying. Cool. And 
+there have been these products for a long time,  
+
+981
+01:22:11,360 --> 01:22:15,360
+Dragon Dictate and all these guys. Is 
+the difference now these are just very,  
+
+982
+01:22:15,360 --> 01:22:17,920
+very good now at actually 
+transcribing what you're saying?
+
+983
+01:22:17,920 --> 01:22:21,840
+I think that's right. Yeah, they use 
+a really good model and so it rarely  
+
+984
+01:22:21,840 --> 01:22:24,640
+makes mistakes even when I think 
+it's quite challenging. And then,  
+
+985
+01:22:24,640 --> 01:22:27,440
+yeah, the UX I think they just 
+nailed. So that's really good one. 
+
+986
+01:22:27,440 --> 01:22:31,440
+I love Claude Code for developing. Even 
+though I have my complaints about it,  
+
+987
+01:22:31,440 --> 01:22:35,280
+there's something just very addictive about 
+just telling it what to do. And it's basically  
+
+988
+01:22:35,280 --> 01:22:39,520
+something that you run within the terminal of 
+your computer, and so you just type Claude,  
+
+989
+01:22:39,520 --> 01:22:44,000
+it opens up the Claude interface. It's very 
+cute, it's very beautifully designed, and you  
+
+990
+01:22:44,000 --> 01:22:47,760
+just tell it what to do. And it actually operates 
+on the file system directly. So if you're like,  
+
+991
+01:22:47,760 --> 01:22:51,680
+"Hey, create a bunch of these files," that'll 
+just do it and you don't need to go and muck  
+
+992
+01:22:51,680 --> 01:22:57,680
+around inside Finder yourself. And then it'll do 
+these really complicated pull requests and it'll  
+
+993
+01:22:57,680 --> 01:23:03,600
+basically execute them quite well. So to me, this 
+is a very exciting kind of preview of AI agents.
+
+994
+01:23:03,600 --> 01:23:06,640
+That's what I was going to ask. 
+So this is essentially an AI agent  
+
+995
+01:23:06,640 --> 01:23:10,880
+engineer. I didn't know that's 
+what Claude Code did. Very cool.
+
+996
+01:23:10,880 --> 01:23:16,640
+Yeah. It's sort of a guided agent, but yeah, 
+it is really sweet. And then yeah, I'm just  
+
+997
+01:23:16,640 --> 01:23:22,560
+enjoying ... you know, every week there's a new, 
+wonderful new thing to play with. Last seven days,  
+
+998
+01:23:22,560 --> 01:23:29,120
+I've been testing Gemini Pro 2.5. Excellent 
+model. I don't love Google's UX sometimes,  
+
+999
+01:23:29,120 --> 01:23:34,080
+but I was playing with that. And I use LLMs 
+every day for all kinds of things. The other  
+
+1000
+01:23:34,080 --> 01:23:39,120
+day I was doing taxes and I needed to classify 
+a bunch of transactions based on some metadata,  
+
+1001
+01:23:39,120 --> 01:23:43,440
+and so I just wrote a script up 
+really quickly and it did that. So.
+
+1002
+01:23:43,440 --> 01:23:48,240
+I love just the smile on your face as you're 
+describing all these AI tools. I think a lot  
+
+1003
+01:23:48,240 --> 01:23:52,160
+of people are just like, holy shit, I'm just 
+overwhelmed with all the things I need to be  
+
+1004
+01:23:52,160 --> 01:23:55,040
+paying attention to. All these things I'm 
+hearing, all these tools I got to try.  
+
+1005
+01:23:55,040 --> 01:24:01,600
+And I love just this vibe of just like, this 
+is incredible and so fun. We need more of that. 
+
+1006
+01:24:01,600 --> 01:24:04,160
+Okay. I'm going to take us to 
+another recurring segment on the  
+
+1007
+01:24:04,160 --> 01:24:08,640
+podcast. You're going to get a double 
+whammy. Contrarian Corner. So here's  
+
+1008
+01:24:08,640 --> 01:24:12,320
+the question. What's something that you 
+believe that most other people don't?
+
+1009
+01:24:12,320 --> 01:24:17,040
+I think going to college is great. I think 
+this is a somewhat contrarian view within tech,  
+
+1010
+01:24:17,040 --> 01:24:22,560
+maybe not in the broader economy, but I often see 
+people saying just like, oh, if you can just drop  
+
+1011
+01:24:22,560 --> 01:24:26,160
+out when you're 18 and just start working, why 
+would you go to college? And I think this is  
+
+1012
+01:24:26,160 --> 01:24:31,360
+completely wrong, but maybe it's good advice for 
+5% of the population who probably would've been to  
+
+1013
+01:24:31,360 --> 01:24:37,840
+your fellows anyway. But college is one of the few 
+times when you can just make really, really deep  
+
+1014
+01:24:37,840 --> 01:24:45,440
+friendships. You are in typically a nice campus. 
+If you're in North America, you get to spend all  
+
+1015
+01:24:45,440 --> 01:24:49,600
+of your time just thinking and writing papers and 
+reading books and hanging out with your friends. 
+
+1016
+01:24:49,600 --> 01:24:54,960
+And it's actually very precious and it's very 
+hard to find that kind of time after you turn  
+
+1017
+01:24:54,960 --> 01:24:59,760
+21 because you got to pay your rent, you've got 
+to work, you've got to do all this stuff. Let's  
+
+1018
+01:24:59,760 --> 01:25:04,000
+say you make a bunch of money, you take a career 
+break, it's still ... all your friends are working  
+
+1019
+01:25:04,000 --> 01:25:09,200
+and you always feel like there's a ticking 
+time or on top of your head or something. 
+
+1020
+01:25:09,200 --> 01:25:15,760
+So just taking those three or four years at the 
+very beginning and going really deep on lots  
+
+1021
+01:25:15,760 --> 01:25:20,800
+of different intellectual topics and being able 
+to try different things and discover more about  
+
+1022
+01:25:20,800 --> 01:25:26,000
+yourself. I'm a big college fan. I can't comment 
+on the ROI or whatever. I personally think the  
+
+1023
+01:25:26,000 --> 01:25:30,240
+ROI is great, even though the fees are kind of 
+high in the U.S., but that's probably my kind  
+
+1024
+01:25:30,240 --> 01:25:35,280
+of contrarian within tech view is don't drop out 
+of college unless you have a really good reason.
+
+1025
+01:25:35,280 --> 01:25:39,200
+It's so funny that that is contrarian 
+and it does sound contrarian. I had a  
+
+1026
+01:25:39,200 --> 01:25:43,680
+great time in college here. Here. Okay. Is 
+there anything else, Nabeel, that you wanted  
+
+1027
+01:25:43,680 --> 01:25:47,920
+to share or leave listeners with before we 
+get to our very exciting lightning round?
+
+1028
+01:25:47,920 --> 01:25:53,840
+No, I think it's a really exciting time in 
+the world. I think AI can be exhausting,  
+
+1029
+01:25:53,840 --> 01:25:58,240
+but it does really just open up the possibility 
+of building a better world in all these ways.  
+
+1030
+01:25:58,240 --> 01:26:05,520
+And so I think just reassess what you're doing 
+every couple of months and make sure that it's  
+
+1031
+01:26:05,520 --> 01:26:13,200
+aligned with where I think AI is going and make 
+sure that you are working on something that you  
+
+1032
+01:26:13,200 --> 01:26:18,240
+feel has very high potential if it succeeds. 
+And I think that's more important than ever now  
+
+1033
+01:26:18,240 --> 01:26:22,800
+just because the amount of leverage we have with 
+technology is at the highest point in history.
+
+1034
+01:26:22,800 --> 01:26:26,960
+Let me double click on that real quick. So for 
+people that want to do what you're describing,  
+
+1035
+01:26:26,960 --> 01:26:31,760
+what helps you understand where AI is 
+heading and just kind of align with it,  
+
+1036
+01:26:31,760 --> 01:26:34,800
+are there places of information and news you find  
+
+1037
+01:26:34,800 --> 01:26:39,440
+useful? Is it just play with it kind 
+of thing? What would you recommend?
+
+1038
+01:26:39,440 --> 01:26:44,320
+This is the big question. I use X a lot to keep 
+on top of AI, so I would just recommend finding  
+
+1039
+01:26:44,320 --> 01:26:49,440
+a good Twitter list and maybe following people off 
+of that. There's some good newsletters. I really  
+
+1040
+01:26:49,440 --> 01:26:55,760
+like Latent Space, I know his X handle, it's 
+Swyx, S-W-Y-X. I can't remember his actual name,  
+
+1041
+01:26:55,760 --> 01:27:00,320
+but that one is very good and it's pretty 
+technical. I would recommend trying to stick  
+
+1042
+01:27:00,320 --> 01:27:06,480
+to the more technical newsletters if possible. I 
+think there's a lot of philosophy about AI or AI  
+
+1043
+01:27:06,480 --> 01:27:11,760
+policy type stuff, and I think that's good if 
+that's your area, but it's an area where it's  
+
+1044
+01:27:11,760 --> 01:27:15,680
+very easy to have a lot of takes on it. You're 
+not necessarily learning a lot by reading those. 
+
+1045
+01:27:16,640 --> 01:27:23,520
+But I think it's just important to know what's 
+going on and make sure you are revisiting your  
+
+1046
+01:27:23,520 --> 01:27:28,240
+own workflows as often as possible. And just 
+making sure that the people who went here are  
+
+1047
+01:27:28,240 --> 01:27:34,880
+going to be the kind of hybrid cyborgs who fuse 
+with the AIs. This actually played out in chess,  
+
+1048
+01:27:34,880 --> 01:27:41,280
+if I can take a slight detour, is the chess 
+players who succeeded the most in the mid 2010s  
+
+1049
+01:27:41,280 --> 01:27:46,640
+especially were the ones who were really early 
+adopters of neural network based chess engines.  
+
+1050
+01:27:47,200 --> 01:27:52,560
+So when DeepMind did that thing, there was very 
+quickly an open source version of it called Leela,  
+
+1051
+01:27:52,560 --> 01:27:57,280
+and you find basically the very top 
+players like Magnus Carlson, Fabiano,  
+
+1052
+01:27:57,280 --> 01:28:02,640
+they were the ones who kind of mind melded the 
+most with Leela and learned how it played and  
+
+1053
+01:28:02,640 --> 01:28:07,200
+then kind of started copying its moves.
+And so I think just becoming a cyborg to  
+
+1054
+01:28:07,200 --> 01:28:11,840
+the extent that you can. And then I 
+think there's this barbell thing of,  
+
+1055
+01:28:11,840 --> 01:28:18,480
+it's also important to just leave everything at 
+go touch grass just for your own mental sanity.
+
+1056
+01:28:18,480 --> 01:28:20,800
+Excellent advice. And with that, Nabeel,  
+
+1057
+01:28:20,800 --> 01:28:24,000
+we've reached our very exciting 
+lightning round. Are you ready?
+
+1058
+01:28:24,000 --> 01:28:24,880
+Yes.
+
+1059
+01:28:24,880 --> 01:28:29,360
+Here we go. What are two or three books that you 
+find yourself recommending most to other people?
+
+1060
+01:28:29,360 --> 01:28:34,080
+The first one that comes to mind is Impro by 
+Keith Johnstone. This is actually ... I wrote  
+
+1061
+01:28:34,080 --> 01:28:37,600
+about it in that essay. It's one of the books 
+that [inaudible 01:28:36] used to send to people.  
+
+1062
+01:28:37,600 --> 01:28:42,240
+I just think it's a really interesting book. So 
+nominally speaking, it's about improvisational  
+
+1063
+01:28:42,240 --> 01:28:49,040
+theater, which I believe this guy was a pioneer 
+of. He was a British guy, Keith Johnstone,  
+
+1064
+01:28:49,040 --> 01:28:54,080
+active between the '60s and the 80s I think. 
+And Impro is just this really interesting book  
+
+1065
+01:28:54,080 --> 01:29:01,680
+about creativity and how social behavior works and 
+basically just what he taught his improv students.  
+
+1066
+01:29:01,680 --> 01:29:07,280
+It's a very weird book. It's full of these 
+unbelievably strange ideas. There's a lot of very  
+
+1067
+01:29:07,280 --> 01:29:12,640
+tactical things he tells you to do in the first 
+chapter, for example, just to break out of your  
+
+1068
+01:29:12,640 --> 01:29:19,600
+own mental frameworks, really just wild stuff.
+He'll tell you to walk backwards while counting  
+
+1069
+01:29:19,600 --> 01:29:23,760
+down from a hundred and think about some problem 
+that you're struggling with and there's all these  
+
+1070
+01:29:23,760 --> 01:29:30,880
+kind of odd things. But the number of ideas per 
+page I've found on that book is extremely high.  
+
+1071
+01:29:30,880 --> 01:29:36,720
+The concepts about how social interaction works 
+and how things like status and so on play into  
+
+1072
+01:29:36,720 --> 01:29:41,760
+your social behavior are super important. And they 
+made every kind of fully deployed engineer read  
+
+1073
+01:29:41,760 --> 01:29:45,760
+that for the simple reason that I think it just 
+helps you kind of read people better and interact  
+
+1074
+01:29:45,760 --> 01:29:51,040
+with them better and become more conscious of 
+how you are coming across and just modulate that.
+
+1075
+01:29:51,600 --> 01:29:52,800
+What is the title again?
+
+1076
+01:29:52,800 --> 01:29:53,600
+Impro.
+
+1077
+01:29:53,600 --> 01:29:56,800
+Impro. Okay, cool. We'll link 
+into it in the show notes.
+
+1078
+01:29:56,800 --> 01:30:02,560
+Yeah, so Impro is number one. I think 
+just to go a little more highbrow,  
+
+1079
+01:30:02,560 --> 01:30:09,200
+maybe Shakespeare's history plays, there's a set 
+of them called the Henriad, so like Henry IV,  
+
+1080
+01:30:09,200 --> 01:30:13,520
+Henry V, Henry VI. I find most people don't 
+read these, so they'll read Hamlet or Macbeth  
+
+1081
+01:30:13,520 --> 01:30:17,520
+or whatever, but the Henry one is absolutely 
+incredible. You don't have to be interested  
+
+1082
+01:30:17,520 --> 01:30:21,520
+in British monarchy or British history in 
+order to enjoy them. They're actually some  
+
+1083
+01:30:21,520 --> 01:30:26,000
+of the most interesting and insightful books 
+I've read about power and how power works and  
+
+1084
+01:30:26,000 --> 01:30:32,800
+politics and what the sacrifices that you might 
+have to make if you want to be a successful  
+
+1085
+01:30:32,800 --> 01:30:39,360
+king in that case. But it transfers over.
+I think it is worth thinking really hard about,  
+
+1086
+01:30:39,360 --> 01:30:43,920
+I think especially in a world where everything 
+is kind of organized around these prominent  
+
+1087
+01:30:43,920 --> 01:30:47,840
+figures and personalities now. When you 
+think about the current administration,  
+
+1088
+01:30:47,840 --> 01:30:51,680
+you think Trump, Elon, or when you think 
+about AI, you think of Sam Dario, right?  
+
+1089
+01:30:51,680 --> 01:30:59,760
+And so I think it's important to understand, how 
+do you think about these personalities and yeah,  
+
+1090
+01:30:59,760 --> 01:31:03,280
+the kind of game that they're playing. 
+And Henry is actually ... the Henriad is  
+
+1091
+01:31:03,280 --> 01:31:08,400
+an incredible kind of set of books around that.
+They're also easy to read, which sounds hilarious  
+
+1092
+01:31:08,400 --> 01:31:12,800
+when I say it, but you can read a Shakespeare 
+play in a day. They're sort of ... I don't know,  
+
+1093
+01:31:12,800 --> 01:31:16,960
+they're like 50 pages long. It's not that 
+bad. You have to get used to the language.  
+
+1094
+01:31:16,960 --> 01:31:23,600
+Yes. But I would recommend that for sure. 
+I guess you asked for two to three. I love  
+
+1095
+01:31:24,160 --> 01:31:29,360
+High Output Management by Andy Grove. I just 
+think that's a great business book, and people  
+
+1096
+01:31:29,360 --> 01:31:33,520
+tend to read summaries of it on the internet more 
+than they actually read the book. But the actual  
+
+1097
+01:31:33,520 --> 01:31:40,080
+book has a lot of really interesting stories and 
+explanations about ... I think the most powerful  
+
+1098
+01:31:40,080 --> 01:31:44,560
+thing about that book is actually how Andy Grove 
+thinks, and less any of the specific tactics  
+
+1099
+01:31:44,560 --> 01:31:48,640
+there. And I think you don't get that unless 
+you read how he came up with all these things.
+
+1100
+01:31:48,640 --> 01:31:53,280
+Your first two books were extremely out there 
+versus what other people have recommended,  
+
+1101
+01:31:53,280 --> 01:31:56,400
+and the third book was the most 
+recommended book on this podcast.  
+
+1102
+01:31:56,400 --> 01:32:00,560
+So I love that spectrum that we just 
+went on. Perfect. Okay, next question.  
+
+1103
+01:32:00,560 --> 01:32:04,720
+Do you have a favorite recent movie or 
+TV show that you've just really enjoyed?
+
+1104
+01:32:04,720 --> 01:32:10,240
+The last movie I really loved was a Decision to 
+Leave. It's a Korean movie. It's by the Director  
+
+1105
+01:32:10,240 --> 01:32:16,160
+of Old Boy, which maybe some people have heard 
+of. It's a great movie. I think it was released  
+
+1106
+01:32:16,160 --> 01:32:22,080
+a couple years ago and the basic premise is, 
+there's a detective who is investigating a  
+
+1107
+01:32:22,080 --> 01:32:26,080
+woman who's accused of killing her husband, 
+and he gradually starts falling for her,  
+
+1108
+01:32:26,080 --> 01:32:31,120
+which starts to affect his judgment in all 
+these ways. Just a really fascinating kind of  
+
+1109
+01:32:31,120 --> 01:32:36,960
+psychological thriller with a sort of romantic 
+element to it. Visually, very beautiful. Yeah,  
+
+1110
+01:32:36,960 --> 01:32:41,680
+I think a lot of the most interesting movies 
+nowadays come from abroad actually. So East Asia,  
+
+1111
+01:32:41,680 --> 01:32:47,680
+South Asia, places like that. TV, I don't 
+watch so much yet. It's been a while.
+
+1112
+01:32:47,680 --> 01:32:51,200
+Totally understandable for a founder. 
+Okay, next question. Do you have a  
+
+1113
+01:32:51,200 --> 01:32:54,800
+favorite product that you've recently 
+discovered that you just really love?  
+
+1114
+01:32:54,800 --> 01:32:58,480
+It could be an app, it could be something 
+physical, it could be a water bottle.
+
+1115
+01:32:58,480 --> 01:33:01,440
+I don't have a good answer to that 
+one. I guess I don't buy enough stuff.
+
+1116
+01:33:01,440 --> 01:33:05,920
+Fully acceptable. There's no wrong 
+answers in the lightning round. Moving on,  
+
+1117
+01:33:05,920 --> 01:33:10,080
+do you have a favorite life motto that 
+you often find useful in work or in  
+
+1118
+01:33:10,080 --> 01:33:15,520
+life that you come back to, that 
+you share with friends or family?
+
+1119
+01:33:15,520 --> 01:33:19,440
+So there's this architect called Christopher 
+Alexander who wrote these beautiful books  
+
+1120
+01:33:19,440 --> 01:33:26,000
+that are about beauty and kind of more than 
+architecture. And he was a teacher at UC,  
+
+1121
+01:33:26,000 --> 01:33:29,760
+Berkeley, and he got really frustrated with 
+the students because he just felt like they  
+
+1122
+01:33:29,760 --> 01:33:34,400
+were always turning in kind of average work. 
+And so he would always tell them every week,  
+
+1123
+01:33:35,120 --> 01:33:40,960
+imagine there's a gothic cathedral in France 
+called Charge. And he would say, you have to  
+
+1124
+01:33:40,960 --> 01:33:46,640
+aim for Charge. You have to make something that 
+is better than that. That should be your goal,  
+
+1125
+01:33:46,640 --> 01:33:52,240
+not to just turn in something that's what you 
+feel is good enough. You actually have to try  
+
+1126
+01:33:52,240 --> 01:33:57,280
+and be better than the very, very best that ever 
+did it. And I find myself just repeating this a  
+
+1127
+01:33:57,280 --> 01:34:02,800
+lot to myself. It's just aim for that, really 
+try and do that. Otherwise, it's very easy  
+
+1128
+01:34:02,800 --> 01:34:08,960
+to anchor on something right in the middle. 
+And you do this unconsciously all the time.
+
+1129
+01:34:08,960 --> 01:34:12,080
+So is that the motto, just aim for Charge?
+
+1130
+01:34:12,080 --> 01:34:13,600
+Yeah, yeah, yeah.
+
+1131
+01:34:13,600 --> 01:34:18,800
+I love that. Most people have no idea what that 
+would be, but with the context is quite powerful.  
+
+1132
+01:34:18,800 --> 01:34:26,400
+Final question, what's a classic novel that `you 
+think would be most valuable for product builders?
+
+1133
+01:34:26,960 --> 01:34:32,800
+My favorite novel is Anna Karenina, and I 
+would recommend that everyone read Erica.
+
+1134
+01:34:32,800 --> 01:34:35,200
+I'm reading that right now. 
+I've never read it before.
+
+1135
+01:34:35,200 --> 01:34:42,720
+No way. And yeah, so it's by Leo Tolstoy. It's 
+this epic 19th century Russian novel that follows  
+
+1136
+01:34:42,720 --> 01:34:50,480
+a set of characters across society. And I think 
+it's just extraordinary because what's amazing  
+
+1137
+01:34:50,480 --> 01:34:56,800
+about him is he's just able to imagine himself 
+into the brain of anybody. And so even ... he  
+
+1138
+01:34:56,800 --> 01:35:00,960
+will briefly just go into the consciousness of, 
+I don't know, the servant who's bringing the meal  
+
+1139
+01:35:00,960 --> 01:35:04,560
+to the table or something like that. And he'll 
+just tell you a page of what they were thinking,  
+
+1140
+01:35:04,560 --> 01:35:08,400
+and then he'll just flip back into his 
+main character's head. And I think that  
+
+1141
+01:35:08,400 --> 01:35:12,400
+is the most impressive demonstration 
+of this kind of skill I've ever seen. 
+
+1142
+01:35:12,400 --> 01:35:16,400
+And I think, to connect it to your question, 
+this is what you have to do if you're going to  
+
+1143
+01:35:16,400 --> 01:35:20,560
+be really good at product, is you have to really 
+think yourself into the other person's head,  
+
+1144
+01:35:20,560 --> 01:35:25,760
+and you have to be really seeing it the way 
+that they do. And it's so hard, especially as  
+
+1145
+01:35:25,760 --> 01:35:30,080
+a founder or product person, not to just get 
+stuck on your own way of seeing the problem,  
+
+1146
+01:35:30,080 --> 01:35:35,200
+right? You wrote up this doc, you made these 
+marks. You're like, this is going to be great.  
+
+1147
+01:35:35,200 --> 01:35:39,440
+And then you take it to somebody, they don't 
+care that much. You really have to exercise  
+
+1148
+01:35:39,440 --> 01:35:43,680
+your empathy and understand why they see it 
+that way and what they actually care about.
+
+1149
+01:35:43,680 --> 01:35:47,680
+What a beautiful way to bring it all together. 
+Let me also add, while I'm reading the book,  
+
+1150
+01:35:47,680 --> 01:35:52,240
+something ... a tip here is, people talk about 
+having Chat GPT voice mode, just kind of sitting  
+
+1151
+01:35:52,240 --> 01:35:56,080
+there next to you. I found that extremely helpful 
+with this book where I just ask what the hell does  
+
+1152
+01:35:56,080 --> 01:36:00,640
+this thing mean? There's all these Russian 
+dances and balls and etiquette. You just ask  
+
+1153
+01:36:00,640 --> 01:36:04,240
+and you're like, I'm reading Anna Karenina, 
+what does this mean? And it just tells you.
+
+1154
+01:36:04,240 --> 01:36:04,560
+Yes.
+
+1155
+01:36:04,560 --> 01:36:07,680
+So there's another cool tip for 
+AI. Okay. With that, Nabeel,  
+
+1156
+01:36:07,680 --> 01:36:11,280
+this was incredible. Two final questions 
+in case people want to look you up. Where  
+
+1157
+01:36:11,280 --> 01:36:16,320
+can they find you online and how 
+can listeners be useful to you?
+
+1158
+01:36:16,320 --> 01:36:25,920
+Find me online, my website is nabeelqu.co and my 
+X handle is Nabeel QU, I'm probably most active on  
+
+1159
+01:36:25,920 --> 01:36:29,680
+that, but yeah, my website has 
+all the links and a bunch of  
+
+1160
+01:36:29,680 --> 01:36:34,560
+essays and interesting stuff. How can you 
+help me? I would say send me an email. My  
+
+1161
+01:36:34,560 --> 01:36:39,600
+email is on my website. Introduce yourself, 
+say hi. I love meeting people. I don't always  
+
+1162
+01:36:39,600 --> 01:36:43,200
+have time for coffees nowadays or things 
+like that, but I genuinely do get a lot  
+
+1163
+01:36:43,200 --> 01:36:48,560
+of energy from just receiving emails from 
+interesting people, so please do reach out.
+
+1164
+01:36:48,560 --> 01:36:53,200
+Awesome. Definitely check out Nabeel's 
+Principles. Is that the name of that post?
+
+1165
+01:36:53,200 --> 01:36:53,760
+Yeah.
+
+1166
+01:36:53,760 --> 01:36:56,880
+Great. Okay. That's one to start with, and 
+then also there's the Palantir Post that we  
+
+1167
+01:36:56,880 --> 01:37:00,160
+just talked through. Okay. Nabeel, 
+thank you so much for being here.
+
+1168
+01:37:00,160 --> 01:37:01,760
+Thank you. Appreciate it, Lenny.
+
+1169
+01:37:01,760 --> 01:37:07,760
+Bye everyone. Thank you so much for listening. If 
+you found this valuable, you can subscribe to the  
+
+1170
+01:37:07,760 --> 01:37:13,760
+show on Apple Podcasts, Spotify, or your favorite 
+podcast app. Also, please consider giving us a  
+
+1171
+01:37:13,760 --> 01:37:18,880
+rating or leaving a review as that really helps 
+other listeners find the podcast. You can find  
+
+1172
+01:37:18,880 --> 01:37:26,560
+all past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

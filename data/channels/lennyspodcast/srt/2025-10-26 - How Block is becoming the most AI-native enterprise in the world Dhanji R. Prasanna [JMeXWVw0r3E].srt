@@ -1,0 +1,4207 @@
+1
+00:00:00,080 --> 00:00:02,800
+There's a lot of talk about productivity gains through AI.
+
+2
+00:00:02,800 --> 00:00:04,880
+There's this camp of people are like so overhyped.
+
+3
+00:00:04,880 --> 00:00:05,680
+Nothing's working.
+
+4
+00:00:05,680 --> 00:00:07,359
+Nobody's actually adopting this at scale.
+
+5
+00:00:07,359 --> 00:00:09,440
+>> We see a significant amount of games.
+
+6
+00:00:09,440 --> 00:00:16,320
+We find engineering teams that are very very AI forward are reporting about 8 to 10 hours saved per week.
+
+7
+00:00:16,320 --> 00:00:20,960
+>> Whenever I hear a stat like this, I think an important element is this is the worst it will ever be.
+
+8
+00:00:20,960 --> 00:00:22,320
+This is now the baseline.
+
+9
+00:00:22,320 --> 00:00:24,880
+The truth is the value is changing every day.
+
+10
+00:00:24,880 --> 00:00:27,439
+So you need to ride that wave along with it.
+
+11
+00:00:27,439 --> 00:00:31,519
+There's a story I heard you share on a different podcast where there's an engineer who has goose watch him.
+
+12
+00:00:31,519 --> 00:00:41,680
+He'll be talking to a colleague on Slack or an email and they'll be discussing some feature that they think is useful to implement and a few hours later he'll find that goose has already tried to [music] build that
+
+13
+00:00:41,680 --> 00:00:44,000
+feature and open a PR for it on Git.
+
+14
+00:00:44,000 --> 00:00:47,520
+What level of engineer is most benefiting from these tools?
+
+15
+00:00:47,520 --> 00:00:50,399
+What's been surprising and really amazing?
+
+16
+00:00:50,399 --> 00:00:56,879
+The non-technical people using AI agents and programming tools to build things.
+
+17
+00:00:56,879 --> 00:01:07,760
+The people that are able to embrace it to optimize for their particular workday and their particular set of tasks are really showing the most impact from these tools.
+
+18
+00:01:07,760 --> 00:01:12,640
+How do you think things will look in a couple years in terms [music] of how engineers work that's different from today?
+
+19
+00:01:12,640 --> 00:01:19,119
+All these LLMs are sitting idle overnight and on weekends while humans aren't there like there's no need for that.
+
+20
+00:01:19,119 --> 00:01:20,880
+They should be working all the time.
+
+21
+00:01:20,880 --> 00:01:24,640
+They should be trying to build in anticipation of what we want.
+
+22
+00:01:24,640 --> 00:01:29,280
+What's maybe the most counterintuitive lesson you've learned about building products or building teams?
+
+23
+00:01:29,280 --> 00:01:33,840
+>> A lot of engineers think that code quality is important to building a successful product.
+
+24
+00:01:33,840 --> 00:01:37,200
+The two have nothing to do with each other.
+
+25
+00:01:37,200 --> 00:01:44,640
+Today, my guest is Dani Prasana, Dan's chief technology officer at Block, where he oversees a team of over 3,500 people.
+
+26
+00:01:44,640 --> 00:01:55,280
+With Dan's leadership, Block has become one of the most AI native large companies in the world and has basically achieved what many and product leaders are trying [music] to achieve within their companies.
+
+27
+00:01:55,280 --> 00:02:06,479
+In our conversation, we chat about their internal open-source agent called Goose that by their measure is saving employees on average 8 to 10 hours a week of work time and that
+
+28
+00:02:06,479 --> 00:02:07,920
+number is going up.
+
+29
+00:02:07,920 --> 00:02:12,640
+How AI specifically making their teams more productive and the teams that are benefiting most?
+
+30
+00:02:12,640 --> 00:02:15,040
+Interestingly, it's not the engineering team.
+
+31
+00:02:15,040 --> 00:02:24,640
+What it took to shift the culture to be very AI oriented, the very boring change they made internally that boosted productivity even more than any AI tool.
+
+32
+00:02:24,640 --> 00:02:31,040
+Also, lessons from building Google Wave and Plus and Cash App and so much more.
+
+33
+00:02:31,040 --> 00:02:39,200
+This episode is for anyone curious to see what a highly AI forward, technologydriven large company looks like and [music] can act like.
+
+34
+00:02:39,200 --> 00:02:44,000
+If you enjoy this podcast, don't forget to subscribe and follow it in your favorite podcasting app or YouTube.
+
+35
+00:02:44,000 --> 00:02:45,760
+It helps tremendously.
+
+36
+00:02:45,760 --> 00:02:53,920
+Also, if you become an annual subscriber of my newsletter, you get a year free of 16 incredible products including Devon,
+
+37
+00:02:53,920 --> 00:02:59,360
+Replet, Lovable, Bolt, NAN, Linear, Superhum, Dcript, Whisper Flow, Gamma, Perplexity,
+
+38
+00:02:59,360 --> 00:03:02,720
+Warp, Granola, Magic Patterns, Raycast, Chapardd, and Mobin.
+
+39
+00:03:02,720 --> 00:03:06,640
+Head on over to lennisnewsletter.com and click product pass.
+
+40
+00:03:06,640 --> 00:03:12,800
+With that, I bring you Dani Persona after a short word from our sponsors.
+
+41
+00:03:12,800 --> 00:03:17,599
+This episode is brought to you by Cinch, the customer communications cloud.
+
+42
+00:03:17,599 --> 00:03:20,239
+Here's the thing about digital customer communications.
+
+43
+00:03:20,239 --> 00:03:26,720
+Whether you're sending marketing campaigns, verification codes, or account alerts, you need them to reach users reliably.
+
+44
+00:03:26,720 --> 00:03:28,400
+That's where Cinch comes in.
+
+45
+00:03:28,400 --> 00:03:34,239
+Over 150,000 businesses, including eight of the top 10 largest tech companies globally,
+
+46
+00:03:34,239 --> 00:03:38,799
+use Cinch's API to build messaging, [music] email, and calling into their products.
+
+47
+00:03:38,799 --> 00:03:42,720
+And there's something big happening in messaging that product teams need to know about.
+
+48
+00:03:42,720 --> 00:03:46,159
+Rich communication services, or RCS.
+
+49
+00:03:46,159 --> 00:03:48,640
+Think of RCS as SMS 2.0.
+
+50
+00:03:48,640 --> 00:03:55,840
+Instead of getting texts from a random number, your users will see your verified company name and logo without needing to download anything new.
+
+51
+00:03:55,840 --> 00:03:58,640
+It's a more secure and branded experience.
+
+52
+00:03:58,640 --> 00:04:02,560
+Plus, you get features like interactive carousels and suggested replies.
+
+53
+00:04:02,560 --> 00:04:04,000
+And here's why this matters.
+
+54
+00:04:04,000 --> 00:04:07,120
+US carriers are starting to adopt RCS.
+
+55
+00:04:07,120 --> 00:04:10,867
+Cinch is already helping major brands send RCS messages around the world.
+
+56
+00:04:10,867 --> 00:04:16,479
+[music] And they're helping Lenny's podcast listeners get registered first before the rush hits the US market.
+
+57
+00:04:16,479 --> 00:04:20,560
+Learn more and get started at cinch.com/lenny.
+
+58
+00:04:20,560 --> 00:04:23,959
+That's s.com/lenny.
+
+59
+00:04:24,960 --> 00:04:28,960
+This episode is brought to you by Figma, makers of Figma make.
+
+60
+00:04:28,960 --> 00:04:35,360
+When I was a PM at Airbnb, I still remember when Figma came out and how much it improved how we operated as a team.
+
+61
+00:04:35,360 --> 00:04:40,800
+Suddenly, I could involve my whole team in the design process, give feedback on design concepts really quickly,
+
+62
+00:04:40,800 --> 00:04:44,160
+and it just made the whole product development process so much more fun.
+
+63
+00:04:44,160 --> 00:04:46,238
+But Figma never felt like it was for me.
+
+64
+00:04:46,238 --> 00:04:51,520
+[music] It was great for giving feedback and designs, but as a builder, I wanted to make stuff.
+
+65
+00:04:51,520 --> 00:04:53,840
+That's why Figma built Figma Make.
+
+66
+00:04:53,840 --> 00:05:02,800
+With just a few prompts, you can make any idea [music] or design into a fully functional prototype or app that anyone can iterate on and validate with customers.
+
+67
+00:05:02,800 --> 00:05:05,759
+Figma Make is a different kind of vibe coding tool.
+
+68
+00:05:05,759 --> 00:05:16,080
+Because it's all in Figma, you can use your team's existing design building blocks, making it easy to create outputs [music] that look good and feel real and are connected to how your team builds.
+
+69
+00:05:16,080 --> 00:05:21,039
+Stop spending so much time telling people about your product vision [music] and instead show it to them.
+
+70
+00:05:21,039 --> 00:05:24,880
+Make codeback prototypes and apps fast with Figma.
+
+71
+00:05:24,880 --> 00:05:28,440
+Check it out at figma.com/lenny.
+
+72
+00:05:30,479 --> 00:05:34,240
+Doni, thank you so much for being here and welcome to the podcast.
+
+73
+00:05:34,240 --> 00:05:35,120
+Thank you, Lenny.
+
+74
+00:05:35,120 --> 00:05:37,120
+Uh, it's a great pleasure to be here.
+
+75
+00:05:37,120 --> 00:05:48,320
+>> I want to start with a letter that I hear you wrote to Jack Dorsey to convince him that he and that block needed to take AI a lot more seriously.
+
+76
+00:05:48,320 --> 00:05:52,240
+I think you called it your AI manifesto and it seems like it really worked.
+
+77
+00:05:52,240 --> 00:05:54,960
+We're going to talk a lot about changes that came as a result of that.
+
+78
+00:05:54,960 --> 00:06:00,639
+So, let me just ask what did you what did you say in this letter and what happened right after you sent that letter to him?
+
+79
+00:06:00,639 --> 00:06:08,319
+>> So, about two and a half years ago or so, uh Jack really felt like things needed to change.
+
+80
+00:06:08,319 --> 00:06:12,639
+I think he had a sense that the industry was going in a different direction.
+
+81
+00:06:12,639 --> 00:06:22,319
+So he got about 40 of the company's top executives into a room on a weekly basis and they all used to sort of talk everything through that
+
+82
+00:06:22,319 --> 00:06:25,919
+was going on and he added me to that group.
+
+83
+00:06:25,919 --> 00:06:35,840
+Uh so at some point I observed that we were talking about lots of deep things, lots of relevant things but no one was really paying attention to AI.
+
+84
+00:06:35,840 --> 00:06:38,639
+And so that's when I wrote that letter.
+
+85
+00:06:38,639 --> 00:06:42,560
+And to be honest, it's I think taken on a life of its own.
+
+86
+00:06:42,560 --> 00:06:46,800
+But there wasn't much to the letter other than I think we should do this.
+
+87
+00:06:46,800 --> 00:06:48,560
+I think we should do it centrally.
+
+88
+00:06:48,560 --> 00:06:55,759
+And it's important for us to uh be ahead of the game and be an AI native company because that's where the industry is heading.
+
+89
+00:06:55,759 --> 00:06:58,080
+>> Let me just say it's important to note you were not CTO at this point.
+
+90
+00:06:58,080 --> 00:07:00,400
+You were just like a senior engineer kind of person.
+
+91
+00:07:00,400 --> 00:07:09,599
+I was uh just in fact I was part-time at the time because I had just had a kid and I was you know coming back in and I was helping out one of the engineering teams.
+
+92
+00:07:09,599 --> 00:07:17,120
+Uh, and then Jack came over to Sydney and spent two days with me and, you know, both of us like long walks,
+
+93
+00:07:17,120 --> 00:07:22,960
+so we we walked all around Sydney and talked it through up and down and then um yeah,
+
+94
+00:07:22,960 --> 00:07:29,039
+he he offered me the job and I thought it was a great opportunity once in a lifetime,
+
+95
+00:07:29,039 --> 00:07:30,400
+so I took it.
+
+96
+00:07:30,400 --> 00:07:33,265
+>> It's like a be careful what you're good at sort of situation.
+
+97
+00:07:33,265 --> 00:07:34,319
+[laughter] Okay.
+
+98
+00:07:34,319 --> 00:07:45,759
+So what what were some of the bigger changes that you made after Jack is on board and block execs are on board of cool this is completely right we need to go much bigger and think much more deeply about how AI is changing how we
+
+99
+00:07:45,759 --> 00:07:46,880
+build and how we should build.
+
+100
+00:07:46,880 --> 00:07:53,759
+What were some of the bigger changes that you made from a perspective of other companies listening to this trying to think about what they should be doing?
+
+101
+00:07:53,759 --> 00:08:00,879
+At the start, my main focus was to get Block to think like a technology company.
+
+102
+00:08:00,879 --> 00:08:06,960
+And it for a long time, we had had a little bit of I want to call it identity drift.
+
+103
+00:08:06,960 --> 00:08:13,039
+Maybe we were talking about ourselves as a financial services company.
+
+104
+00:08:13,039 --> 00:08:16,800
+Some people called us fintech, all of this stuff.
+
+105
+00:08:16,800 --> 00:08:25,840
+But when I started working at what was then known as Square, we were always thought of as a technology company just like Google or Facebook or any of the others.
+
+106
+00:08:25,840 --> 00:08:28,240
+And so I wanted to get us back to that.
+
+107
+00:08:28,240 --> 00:08:35,360
+And so the first thing I did was to try and institute a number of programs that focused on that.
+
+108
+00:08:35,360 --> 00:08:44,959
+So everything from getting the top IC's in the company together uh to talk to each other to starting a whole bunch of special projects.
+
+109
+00:08:44,959 --> 00:08:48,959
+So we got about two to five engineers per project.
+
+110
+00:08:48,959 --> 00:08:52,160
+There were about eight or nine different projects.
+
+111
+00:08:52,160 --> 00:08:55,680
+And we had reinstituted the companywide hack week.
+
+112
+00:08:55,680 --> 00:09:00,880
+And so all of this just kind of created a little bit of a spark of like, hey, we're building technology again.
+
+113
+00:09:00,880 --> 00:09:03,040
+We're trying to push the frontier again.
+
+114
+00:09:03,040 --> 00:09:04,640
+And that's how it started.
+
+115
+00:09:04,640 --> 00:09:15,519
+And then there were a whole number of steps after that where we went from a GM structure to a functional org structure which was I think the key to making our
+
+116
+00:09:15,519 --> 00:09:19,360
+transformation into being more of an AI native company.
+
+117
+00:09:19,360 --> 00:09:20,320
+>> Okay, talk more about that.
+
+118
+00:09:20,320 --> 00:09:20,800
+What does that mean?
+
+119
+00:09:20,800 --> 00:09:21,760
+What does that look like?
+
+120
+00:09:21,760 --> 00:09:23,440
+Why is that so important?
+
+121
+00:09:23,440 --> 00:09:24,240
+>> Absolutely.
+
+122
+00:09:24,240 --> 00:09:35,519
+So when we were in our sort of mature phase, so when Square was working quite well, it was a very large business and then we had started Cash
+
+123
+00:09:35,519 --> 00:09:43,440
+App and that also followed suit, we had spun them out almost as a uh what we call a GM structure.
+
+124
+00:09:43,440 --> 00:09:52,480
+So they were effectively run as a portfolio of independent companies and they had their own CEOs who all reported to Jack and it
+
+125
+00:09:52,480 --> 00:09:58,240
+was still one single executive team but they had separate engineering practices.
+
+126
+00:09:58,240 --> 00:10:00,080
+They had separate design teams.
+
+127
+00:10:00,080 --> 00:10:09,839
+They they were kind of separate in almost every way except for some shared resources like our foundational resources like legal and some platforms
+
+128
+00:10:09,839 --> 00:10:11,279
+and things like that.
+
+129
+00:10:11,279 --> 00:10:16,959
+So I think that that was very useful for us for the stage of company that we were in.
+
+130
+00:10:16,959 --> 00:10:25,519
+But when you really want to go deep in technology, when you really want to connect with these things that are sort of industry changing events that are
+
+131
+00:10:25,519 --> 00:10:32,320
+happening, you need a singular focus and uh we we changed the organization.
+
+132
+00:10:32,320 --> 00:10:35,200
+So all engineers report into one single team.
+
+133
+00:10:35,200 --> 00:10:41,120
+Now all designers report in one single team and there's single head of engineering, single head of design etc.
+
+134
+00:10:41,120 --> 00:10:47,440
+And so that was the big transformation that we made and that meant we could really drive forward AI,
+
+135
+00:10:47,440 --> 00:10:54,959
+we could drive forward platform and just technical depth generally for companies that are struggling with this potentially or trying to figure out how to do this.
+
+136
+00:10:54,959 --> 00:10:59,279
+Two things I'm hearing here is uh start to see yourself as a technology company.
+
+137
+00:10:59,279 --> 00:11:03,839
+It doesn't necessarily apply to every company, but seems like an important element is like we're building technology.
+
+138
+00:11:03,839 --> 00:11:05,680
+We're not a financial company.
+
+139
+00:11:05,680 --> 00:11:06,959
+We're not a real estate company.
+
+140
+00:11:06,959 --> 00:11:07,760
+We're not mortgage company.
+
+141
+00:11:07,760 --> 00:11:09,279
+We're technology company.
+
+142
+00:11:09,279 --> 00:11:19,839
+And then two is organize the team such that say engineers report up to an engineering leader versus a GM who maybe doesn't understand engineering as well or doesn't take it as seriously as they should.
+
+143
+00:11:19,839 --> 00:11:22,480
+>> Yeah, I think that's that's pretty much what we did.
+
+144
+00:11:22,480 --> 00:11:28,160
+And you know, not to lean too heavily on this, but this is what Jobs did when he came back to Apple as well.
+
+145
+00:11:28,160 --> 00:11:31,200
+He reorganized Apple to be functional.
+
+146
+00:11:31,200 --> 00:11:34,000
+And it wasn't like we were following a playbook.
+
+147
+00:11:34,000 --> 00:11:44,480
+We we discovered this as we were investigating what it's going to take to make these teams more tech focused and to bring our DNA back
+
+148
+00:11:44,480 --> 00:11:53,120
+to uh back to our roots which was really was putting engineering and design first which is what technology first means to me.
+
+149
+00:11:53,120 --> 00:12:00,720
+So yeah, I would say to companies, you know, find your DNA and like really try to optimize for what that is in a very simple and clear way.
+
+150
+00:12:00,720 --> 00:12:00,959
+>> Okay.
+
+151
+00:12:00,959 --> 00:12:01,920
+So you made a bunch of changes.
+
+152
+00:12:01,920 --> 00:12:02,959
+You had this manifesto.
+
+153
+00:12:02,959 --> 00:12:03,600
+Everyone's on board.
+
+154
+00:12:03,600 --> 00:12:04,560
+You made a bunch of changes.
+
+155
+00:12:04,560 --> 00:12:06,320
+Functional technology first.
+
+156
+00:12:06,320 --> 00:12:12,079
+Comparing the way that your say engineering team works today versus two or three years ago.
+
+157
+00:12:12,079 --> 00:12:13,440
+What is most different?
+
+158
+00:12:13,440 --> 00:12:15,360
+>> Not everyone was on board.
+
+159
+00:12:15,360 --> 00:12:19,519
+I'll tell you that it was quite a painful transformation.
+
+160
+00:12:19,519 --> 00:12:28,320
+I think that one of the things that I learned the most throughout this process is that uh Conway's law can be really really powerful.
+
+161
+00:12:28,320 --> 00:12:33,279
+So it's the law that basically says you know you ship your org structure.
+
+162
+00:12:33,279 --> 00:12:44,240
+So what you're organized as in terms of teams in terms of collaborating groups and and your operating model matters a lot to what
+
+163
+00:12:44,240 --> 00:12:45,680
+you build.
+
+164
+00:12:45,680 --> 00:12:55,279
+And so I think that that was essentially the biggest change is we had a lot of momentum in each of these silos.
+
+165
+00:12:55,279 --> 00:13:02,639
+Be it Cash App, be it Afterpay, be it Square or even Title, our music streaming service.
+
+166
+00:13:02,639 --> 00:13:05,040
+And no one was really talking to each other.
+
+167
+00:13:05,040 --> 00:13:15,200
+No one was really aligned on technical strategy on what we even wanted to be five years from now as a collective team.
+
+168
+00:13:15,200 --> 00:13:17,279
+And so all those things are different now.
+
+169
+00:13:17,279 --> 00:13:18,800
+Uh I'm not saying it's perfect.
+
+170
+00:13:18,800 --> 00:13:24,160
+There's still a long road ahead of us, but we at least speak the same language.
+
+171
+00:13:24,160 --> 00:13:27,760
+We're all uh have access to the same tools.
+
+172
+00:13:27,760 --> 00:13:29,680
+We share the same policies.
+
+173
+00:13:29,680 --> 00:13:35,760
+So like a certain level of senior engineer means the same thing across the whole company.
+
+174
+00:13:35,760 --> 00:13:40,399
+Uh people can move from one team to another into an area of need.
+
+175
+00:13:40,399 --> 00:13:42,639
+All of these things are are very different.
+
+176
+00:13:42,639 --> 00:13:54,399
+But to sum it up, I would say we're technically focused and we're focused on advancing technical excellence as a goal and that just really wasn't that true two to three
+
+177
+00:13:54,399 --> 00:13:55,279
+years ago.
+
+178
+00:13:55,279 --> 00:13:58,480
+I mean, there were other things we were optimizing for then.
+
+179
+00:13:58,480 --> 00:14:01,920
+Maybe going one level deeper in terms of how people actually work dayto day.
+
+180
+00:14:01,920 --> 00:14:09,120
+So if you're looking at an engineering team, say the average engineering team and maybe also like the top most optimal engineering team,
+
+181
+00:14:09,120 --> 00:14:18,720
+how is the way they work today different from a couple years ago in the small certain teams that are very very AI native?
+
+182
+00:14:18,720 --> 00:14:29,600
+or teams that are building AI first everywhere are working much differently than before because they're using Vibe code tools and
+
+183
+00:14:29,600 --> 00:14:35,519
+they're essentially building without writing lines of code by hand.
+
+184
+00:14:35,519 --> 00:14:38,079
+Uh and that just wasn't true two to three years ago.
+
+185
+00:14:38,079 --> 00:14:40,480
+I don't think it was true anywhere in the world.
+
+186
+00:14:40,480 --> 00:14:47,519
+So that's dramatically different in teams that are still working with very heavy legacy code bases.
+
+187
+00:14:47,519 --> 00:14:54,800
+it's less true, but they're also encountering these sort of background AI processes.
+
+188
+00:14:54,800 --> 00:15:03,199
+So, we have these tools that run 247 or run in the CI pipeline and they're analyzing vulnerabilities.
+
+189
+00:15:03,199 --> 00:15:11,199
+They're looking at even bugs filed on tickets and trying to build patches while engineers are asleep.
+
+190
+00:15:11,199 --> 00:15:14,320
+So, they come in and the next day and and look at it.
+
+191
+00:15:14,320 --> 00:15:25,360
+So it I would say there a number of ways in which they're different but different teams have um adapted in different ways depending on how close they are to the tools.
+
+192
+00:15:25,360 --> 00:15:25,600
+>> Okay.
+
+193
+00:15:25,600 --> 00:15:30,079
+So let me lean into that AI piece which is I think where you guys are most ahead of a lot of other companies.
+
+194
+00:15:30,079 --> 00:15:35,279
+You guys built your own >> uh agent I think is what is how you describe goose.
+
+195
+00:15:35,279 --> 00:15:39,199
+So there's a lot of talk about productivity gains through AI.
+
+196
+00:15:39,199 --> 00:15:44,320
+There's this camp of people are like, you don't understand how much productivity there is to gain from AI.
+
+197
+00:15:44,320 --> 00:15:44,959
+It's the future.
+
+198
+00:15:44,959 --> 00:15:46,079
+This is the way it's all going to work.
+
+199
+00:15:46,079 --> 00:15:47,600
+We're all accelerating 10x.
+
+200
+00:15:47,600 --> 00:15:50,079
+There's also this camp of people are like, it's so overhyped.
+
+201
+00:15:50,079 --> 00:15:50,880
+Nothing's working.
+
+202
+00:15:50,880 --> 00:15:52,000
+People talk about it.
+
+203
+00:15:52,000 --> 00:15:53,279
+All these pilots are failing.
+
+204
+00:15:53,279 --> 00:15:55,519
+Nobody's actually adopting this at scale.
+
+205
+00:15:55,519 --> 00:15:57,839
+Feel like you're probably in that first camp.
+
+206
+00:15:57,839 --> 00:16:02,720
+What sort of gains have you seen practically from AI tools on your teams?
+
+207
+00:16:02,720 --> 00:16:14,079
+Our number one priority is to automate block which means getting AI and getting uh AI forms of automation through our entire company
+
+208
+00:16:14,079 --> 00:16:26,000
+and we feel that that's just at the beginning of where the utility is with all these large language models and I think we're going to continue to see
+
+209
+00:16:26,000 --> 00:16:37,040
+that improve but even now we find engineering teams that are very very AI forward that are using deuce every day are reporting about 8 to 10 hours saved
+
+210
+00:16:37,040 --> 00:16:38,560
+per week.
+
+211
+00:16:38,560 --> 00:16:45,279
+Uh and this is self-reported and then we also have a number of check metrics to try and validate that.
+
+212
+00:16:45,279 --> 00:16:55,519
+So we look at PRs, we look at throughput of features, we look at a whole bunch of things and we have our data scientists come up with a complicated formula that tries to distill it all into something
+
+213
+00:16:55,519 --> 00:16:56,959
+meaningful.
+
+214
+00:16:56,959 --> 00:17:06,400
+And uh we feel across the whole company we're probably trending towards 20 to 25% of manual hours saved.
+
+215
+00:17:06,400 --> 00:17:10,240
+Uh and I think that's just the start of of all of this.
+
+216
+00:17:10,240 --> 00:17:17,360
+I do feel that the more AI native companies are doing a better job of realizing this.
+
+217
+00:17:17,360 --> 00:17:22,400
+So companies that started just with AI startups mostly.
+
+218
+00:17:22,400 --> 00:17:30,160
+But there is some truth to this notion that AI isn't a panacea and it's growing as well,
+
+219
+00:17:30,160 --> 00:17:31,360
+right, in capability.
+
+220
+00:17:31,360 --> 00:17:34,160
+So you need to ride that wave along with it.
+
+221
+00:17:34,160 --> 00:17:37,120
+And I think a lot of the companies aren't realizing this.
+
+222
+00:17:37,120 --> 00:17:39,520
+They're like, well, where's the value?
+
+223
+00:17:39,520 --> 00:17:42,880
+And the the truth is the value is changing every day.
+
+224
+00:17:42,880 --> 00:17:49,679
+And so you need to be adaptable and look at what the value is today and plan for what the value will be tomorrow.
+
+225
+00:17:49,679 --> 00:17:54,400
+and then slowly expand to the areas where it's more most efficacious.
+
+226
+00:17:54,400 --> 00:17:56,720
+Like I'll give you an example.
+
+227
+00:17:56,720 --> 00:18:06,080
+One area in which we find that it's really good is for non-technical teams to be able to build little software tools for themselves.
+
+228
+00:18:06,080 --> 00:18:15,280
+So this has been one of the most surprising and energizing uses of goose within block is we'll have our enterprise risk
+
+229
+00:18:15,280 --> 00:18:26,320
+management team build a whole system for self-serviceing enterprise risk and this is compressing like weeks of work into hours
+
+230
+00:18:26,320 --> 00:18:35,679
+and or ordinarily they would be waiting for an internal apps team or something to go and build that and they would put that on their Q2 road map and everyone
+
+231
+00:18:35,679 --> 00:18:42,160
+would be uh twiddling their thumbs until it all clicked into place, but now you can just go and do it.
+
+232
+00:18:42,160 --> 00:18:50,720
+And so a lot of these kinds of use cases we're seeing an enormous amount of um productivity gain in.
+
+233
+00:18:50,720 --> 00:18:58,880
+The other area which I'm really excited about is we have this other tool called Gling which is a goose for mobile effectively.
+
+234
+00:18:58,880 --> 00:19:09,280
+So it operates your Android uh OS at a native level using the accessibility API and we use that for automating UI tests.
+
+235
+00:19:09,280 --> 00:19:19,840
+So before you would have to hire an army of contractors or uh QAS who would go and click through every screen but now we can just bake those into uh automated
+
+236
+00:19:19,840 --> 00:19:22,960
+tests and then give you like a report at the end.
+
+237
+00:19:22,960 --> 00:19:26,799
+So, we're seeing a lot of advantages in those types of areas.
+
+238
+00:19:26,799 --> 00:19:35,440
+But where you have a lot of depth and a lot of like really strong people come together is where AI,
+
+239
+00:19:35,440 --> 00:19:39,440
+I think, still underperforms humans.
+
+240
+00:19:39,440 --> 00:19:45,919
+And that's something that's probably going to get better over time, but it's also something where we should lean into as humans.
+
+241
+00:19:45,919 --> 00:19:54,559
+So when you have some very senior engineers and they're thinking about things like architecture and design and race conditions,
+
+242
+00:19:54,559 --> 00:20:00,160
+orchestration, things like this, that's still an area where AI isn't quite there.
+
+243
+00:20:00,160 --> 00:20:10,640
+And so I think the companies that aren't feeling the success in AI are trying to just throw these tools at their giant code bases and hoping good things will happen.
+
+244
+00:20:10,640 --> 00:20:12,880
+And that's not how it's playing out.
+
+245
+00:20:12,880 --> 00:20:18,720
+Eventually, I do think it'll get there, but uh right now we're still in the early utility phase.
+
+246
+00:20:18,720 --> 00:20:21,520
+>> Holy moly, there's so much there in what you just shared.
+
+247
+00:20:21,520 --> 00:20:23,280
+There's like five things I want to follow up on.
+
+248
+00:20:23,280 --> 00:20:28,880
+Okay, so one is this metric you kind of alluded to, which is how you measure the impact of AI in your team.
+
+249
+00:20:28,880 --> 00:20:34,559
+So, it was manual hours of of humans, human manual hours saved.
+
+250
+00:20:34,559 --> 00:20:35,919
+Is that how you describe it?
+
+251
+00:20:35,919 --> 00:20:36,480
+>> Okay.
+
+252
+00:20:36,480 --> 00:20:43,679
+And it's roughly a fourth of an engineer's time currently is being saved by AI tooling.
+
+253
+00:20:43,679 --> 00:20:45,440
+>> That metric is across all teams.
+
+254
+00:20:45,440 --> 00:20:51,760
+So that would be like our support teams, our legal teams, our risk teams, all of them together.
+
+255
+00:20:51,760 --> 00:20:52,080
+>> Wow.
+
+256
+00:20:52,080 --> 00:21:01,679
+>> And then on the engineering side, it's very variable because like I said before, it matters how big and how complex the code base is.
+
+257
+00:21:01,679 --> 00:21:09,280
+And so if you're building a totally new green fields codebase or you're building a app for a new platform then we we're seeing
+
+258
+00:21:09,280 --> 00:21:18,880
+those pretty aggressive gains but in you know very complex code bases that already exist those gains are not quite there yet.
+
+259
+00:21:18,880 --> 00:21:19,600
+That's amazing.
+
+260
+00:21:19,600 --> 00:21:27,440
+And whenever I hear a stat like this I think an important element that people need to think about is this is the worst it will ever be.
+
+261
+00:21:27,440 --> 00:21:28,880
+>> This is the lowest.
+
+262
+00:21:28,880 --> 00:21:30,240
+This is now the baseline.
+
+263
+00:21:30,240 --> 00:21:30,720
+Right.
+
+264
+00:21:30,720 --> 00:21:31,280
+>> Yeah.
+
+265
+00:21:31,280 --> 00:21:38,480
+And so uh and so it may not sound that may not sound that crazy yet but it's going to get crazy.
+
+266
+00:21:38,480 --> 00:21:39,280
+Okay.
+
+267
+00:21:39,280 --> 00:21:41,440
+The other thing that you talked about is goose.
+
+268
+00:21:41,440 --> 00:21:42,720
+You haven't explained what goose is.
+
+269
+00:21:42,720 --> 00:21:45,200
+This is a huge deal.
+
+270
+00:21:45,200 --> 00:21:49,280
+>> Explain what goose is and how important this has become to you guys.
+
+271
+00:21:49,280 --> 00:21:54,640
+>> So goose is a general purpose AI agent.
+
+272
+00:21:54,640 --> 00:22:04,960
+Uh so you can think of it as a desktop tool or a uh a program that you can download and install on your computer and then it has a UI.
+
+273
+00:22:04,960 --> 00:22:15,120
+You can talk to it just like a chatbot and you can say anything from hey goose organize my photos by category and it has the
+
+274
+00:22:15,120 --> 00:22:26,799
+ability to look within your photos and you know if there are a lot of trees it'll organize them as nature photos and if there a lot of people it'll organize them as portraiture all of this sort of
+
+275
+00:22:26,799 --> 00:22:30,000
+stuff to writing software for you.
+
+276
+00:22:30,000 --> 00:22:41,039
+So it can do all of these tasks and the way we've been able to do this is through something called the model context protocol which or the MCP which a lot of
+
+277
+00:22:41,039 --> 00:22:50,880
+your listeners might have heard and this is something that anthropic came up with that we were a very early contributor to and the model context protocol is very
+
+278
+00:22:50,880 --> 00:22:58,720
+simply just a set of formalized wrappers around existing tools or existing capabilities.
+
+279
+00:22:58,720 --> 00:23:06,880
+So if you have tools that you use in the enterprise, be it Salesforce or be it Snowflake or SQL,
+
+280
+00:23:06,880 --> 00:23:15,840
+any any of these things, you can wrap them in the MCP and then that it exposes them to your LLM to be able to
+
+281
+00:23:15,840 --> 00:23:16,880
+manipulate.
+
+282
+00:23:16,880 --> 00:23:28,799
+So until that point the uh LLMs were not really able to do much other than chat but goose gives these brains arms and legs to go out and act
+
+283
+00:23:28,799 --> 00:23:39,200
+in our digital world and and that's where we find it's had most impact and it's built on this fairly open protocol that anyone can implement.
+
+284
+00:23:39,200 --> 00:23:41,840
+There have been an explosion of MCPs.
+
+285
+00:23:41,840 --> 00:23:43,679
+Goose is entirely open source by the way.
+
+286
+00:23:43,679 --> 00:23:48,880
+So any of you can download it and extend it, write your own MCPS.
+
+287
+00:23:48,880 --> 00:23:54,880
+Uh and that's that's been our core successes through goose.
+
+288
+00:23:54,880 --> 00:23:55,200
+>> Okay.
+
+289
+00:23:55,200 --> 00:24:05,440
+So this essentially like cloud code with a UI desktop app sort of thing built on top of uh cloud and open AAI chat GBT and a bunch of open source models.
+
+290
+00:24:05,440 --> 00:24:06,720
+Is that right?
+
+291
+00:24:06,720 --> 00:24:08,880
+>> Yeah, it can use any model.
+
+292
+00:24:08,880 --> 00:24:20,640
+So we have a pluggable provider system and you can either bring your own API keys and use uh the cloud family of models or open
+
+293
+00:24:20,640 --> 00:24:30,960
+AI's family of models or you can use open source models and you can download them and uh use them directly or via Olama and other there are several tools
+
+294
+00:24:30,960 --> 00:24:41,760
+that help you do that but essentially it's taking the capability of these models to generate text and to interpret ate text and applying them to real world
+
+295
+00:24:41,760 --> 00:24:42,640
+situations.
+
+296
+00:24:42,640 --> 00:24:53,840
+So one example that I really like is you can ask Goose to go and build you a marketing report and it has MCPs to connect to Snowflake and Tableau
+
+297
+00:24:53,840 --> 00:24:54,799
+and Looker.
+
+298
+00:24:54,799 --> 00:24:58,240
+So it'll write SQL to pull out data from there.
+
+299
+00:24:58,240 --> 00:25:04,960
+It'll do some analysis and CSV so it can write Python code on your desktop to do all that.
+
+300
+00:25:04,960 --> 00:25:15,520
+It will generate some graphs using some JavaScript charting library that it knows about and then finally it'll put this all into a PDF or Google Doc or
+
+301
+00:25:15,520 --> 00:25:18,720
+whatever and it can even email it for you or upload it somewhere.
+
+302
+00:25:18,720 --> 00:25:20,640
+And it's doing all of this on its own by the way.
+
+303
+00:25:20,640 --> 00:25:23,200
+It's no one's sitting here telling it that.
+
+304
+00:25:23,200 --> 00:25:25,039
+You're just saying, "Hey, I want this report.
+
+305
+00:25:25,039 --> 00:25:26,320
+I want this emailed here.
+
+306
+00:25:26,320 --> 00:25:28,159
+I want these pretty charts."
+
+307
+00:25:28,159 --> 00:25:31,360
+Um, and it's orchestrating across all these systems.
+
+308
+00:25:31,360 --> 00:25:40,000
+So essentially ad block instead of using claude or chat directly or even cursor and all these apps they use goose.
+
+309
+00:25:40,000 --> 00:25:48,320
+Yeah we allow our engineers and our general employee population to use any tools that they want.
+
+310
+00:25:48,320 --> 00:25:58,559
+Goose is the one that's most well integrated into all of our systems because it's built on the MCP and it's so easy to create an MCP for an
+
+311
+00:25:58,559 --> 00:26:00,159
+existing system.
+
+312
+00:26:00,159 --> 00:26:10,799
+So for example, if you're using a issue tracking tool and you want some AI automation added to it
+
+313
+00:26:10,799 --> 00:26:21,679
+before goose, our teams would have to wait for the vendor to build that AI capability in there or maybe there's some way in which OpenAI or Anthropic or
+
+314
+00:26:21,679 --> 00:26:26,960
+Google would provide that general purpose capability where we could plug those in.
+
+315
+00:26:26,960 --> 00:26:34,480
+But with Goose, that's no longer necessary with a few lines of code that an MCP represents.
+
+316
+00:26:34,480 --> 00:26:38,880
+All these systems are orchestrable with AI basically overnight.
+
+317
+00:26:38,880 --> 00:26:40,799
+And Goose can write its own MCP.
+
+318
+00:26:40,799 --> 00:26:43,600
+So it's pretty uh bootstrappable as well.
+
+319
+00:26:43,600 --> 00:26:44,880
+>> And this is open source.
+
+320
+00:26:44,880 --> 00:26:47,840
+And basically you've spent all its time building this thing.
+
+321
+00:26:47,840 --> 00:26:51,200
+Any other company can now implement it and and build on all the work you've done.
+
+322
+00:26:51,200 --> 00:26:51,440
+>> Yeah.
+
+323
+00:26:51,440 --> 00:26:56,000
+And we have a lot of companies using goose pretty actively.
+
+324
+00:26:56,000 --> 00:27:02,400
+I don't want to name too many names, but from our competitors to our sort of close partners,
+
+325
+00:27:02,400 --> 00:27:06,480
+a lot of them are using goose pretty regularly on their teams.
+
+326
+00:27:06,480 --> 00:27:15,760
+I know data bricks talks about it a lot, but they're, you know, everyone you can you can think of in this midte tier is using goose in some form.
+
+327
+00:27:15,760 --> 00:27:16,240
+>> That's insane.
+
+328
+00:27:16,240 --> 00:27:18,400
+This feels like it could have been a massive business of its own.
+
+329
+00:27:18,400 --> 00:27:23,679
+Like uh some of the fastest growing companies in the world basically this is their product and you've built it and given it away.
+
+330
+00:27:23,679 --> 00:27:35,440
+Yeah, we believe in the power of open source and you know our our core one of our core missions is to increase openness and that means contributing to open protocols and
+
+331
+00:27:35,440 --> 00:27:41,919
+contributing to open source and you know as a tech company we're built on a lot of open-source software.
+
+332
+00:27:41,919 --> 00:27:51,760
+I think pretty much every tech company is whether you're talking about Linux or Java or MySQL or any of these essential components.
+
+333
+00:27:51,760 --> 00:27:57,039
+And so we feel like we have a strong imperative to give back.
+
+334
+00:27:57,039 --> 00:28:04,480
+We want to build things that not only are good for us and our customers, but that outlast block and outgrow block.
+
+335
+00:28:04,480 --> 00:28:08,399
+That's certainly a core value for us and has been from the beginning.
+
+336
+00:28:08,399 --> 00:28:11,760
+Uh even long before this whole AI phase.
+
+337
+00:28:11,760 --> 00:28:18,240
+So yeah, Goose follows in that proud tradition and yeah, we're very excited that it's had the success it's had.
+
+338
+00:28:18,240 --> 00:28:19,760
+What's the story with the name Goose, by the way?
+
+339
+00:28:19,760 --> 00:28:21,440
+I can't help but ask.
+
+340
+00:28:21,440 --> 00:28:24,000
+Goose is a Top Gun reference.
+
+341
+00:28:24,000 --> 00:28:24,320
+Okay.
+
+342
+00:28:24,320 --> 00:28:30,320
+>> Um, so what our engineer that came up with it, >> uh, he also looks exactly like Goose,
+
+343
+00:28:30,320 --> 00:28:33,039
+so it's kind of crazy if you put them side to side.
+
+344
+00:28:33,039 --> 00:28:38,159
+>> He's going to be really embarrassed with my sharing this, but um, that's the reason why I call it Goose.
+
+345
+00:28:38,159 --> 00:28:41,600
+And then we went lent into the whole bird theme after that.
+
+346
+00:28:41,600 --> 00:28:42,559
+>> That's incredible.
+
+347
+00:28:42,559 --> 00:28:48,399
+There's a story I heard you share on a different podcast where there's an engineer who takes this to the extreme and has goose watch him.
+
+348
+00:28:48,399 --> 00:28:49,279
+Talk talk about that.
+
+349
+00:28:49,279 --> 00:28:50,480
+Share that story.
+
+350
+00:28:50,480 --> 00:28:52,159
+Yeah, absolutely.
+
+351
+00:28:52,159 --> 00:29:03,440
+So, he is very very AI focused and he's trying to extract all these crazy ideas from Goose and Goose can do all of the things that I
+
+352
+00:29:03,440 --> 00:29:09,120
+described through specific interactions with tools, but it can also just watch your screen.
+
+353
+00:29:09,120 --> 00:29:16,080
+So, like it understands how to process images and process uh the things that it's looking at through screenshots.
+
+354
+00:29:16,080 --> 00:29:27,360
+And so he built this system where it's essentially just watching everything he does all the time and he'll be talking to a colleague on Slack or an email and they'll be discussing
+
+355
+00:29:27,360 --> 00:29:39,120
+some feature that they think is useful to implement and then a few hours later he'll find that Goose has already tried to build that feature and open a PR for it on on Git and uh and all sorts of
+
+356
+00:29:39,120 --> 00:29:40,880
+other wacky things like that.
+
+357
+00:29:40,880 --> 00:29:48,480
+So, it'll it'll try to nudge him out of a workflow if he's running over on a meeting and he's late for something else.
+
+358
+00:29:48,480 --> 00:29:55,600
+Uh, it it sort of comes up with these creative things that he didn't program or he didn't write prompts for,
+
+359
+00:29:55,600 --> 00:30:01,279
+but that it thinks will help him improve his productivity or improve his workday.
+
+360
+00:30:01,279 --> 00:30:02,799
+So, yeah, it's pretty crazy.
+
+361
+00:30:02,799 --> 00:30:10,240
+you have to have the stomach forehead to to be that um level of tied in to your working tools,
+
+362
+00:30:10,240 --> 00:30:13,919
+but it kind of shows you what's possible with tools like this.
+
+363
+00:30:13,919 --> 00:30:17,520
+Clearly, this is where things are going once this gets good enough.
+
+364
+00:30:17,520 --> 00:30:19,440
+I love this guy is just trying it.
+
+365
+00:30:19,440 --> 00:30:26,880
+So, it's basically watching him work and anticipating what he should be doing and does the work for him as a first draft so that he's like,
+
+366
+00:30:26,880 --> 00:30:30,799
+"Oh, the PR is already done on this thing we were just talking about at this meeting."
+
+367
+00:30:30,799 --> 00:30:31,600
+>> That's incredible.
+
+368
+00:30:31,600 --> 00:30:32,480
+Exactly.
+
+369
+00:30:32,480 --> 00:30:33,520
+>> How uh how good is it?
+
+370
+00:30:33,520 --> 00:30:41,360
+Like where's it at if you had to go zero to 100 of like okay it's gonna all you have to do is now think and talk and it'll just do your job.
+
+371
+00:30:41,360 --> 00:30:41,679
+>> Yeah.
+
+372
+00:30:41,679 --> 00:30:43,520
+So voice is the other big part of it.
+
+373
+00:30:43,520 --> 00:30:45,840
+So it has voice processing capability.
+
+374
+00:30:45,840 --> 00:30:51,520
+So it's always listening to what he's saying as well and and trying to interpret that.
+
+375
+00:30:51,520 --> 00:30:56,159
+>> I would say that >> this is mostly an experiment.
+
+376
+00:30:56,159 --> 00:30:59,760
+You know given that he he's on our core goose team and he contributes to goo.
+
+377
+00:30:59,760 --> 00:31:01,039
+So he has a day job.
+
+378
+00:31:01,039 --> 00:31:04,399
+This is a kind of thing on the side that he was developing.
+
+379
+00:31:04,399 --> 00:31:15,200
+So once this evolves into more more of a native feature of Goose itself or other tools that we use in the enterprise,
+
+380
+00:31:15,200 --> 00:31:19,279
+I think it can have a lot of lags, but it's already pretty good.
+
+381
+00:31:19,279 --> 00:31:25,520
+I mean, it's probably cutting down enormous amounts of busy work that he has to do.
+
+382
+00:31:25,520 --> 00:31:29,919
+So, for example, one thing he'll do is he'll say, "Oh, I have a meeting conflict.
+
+383
+00:31:29,919 --> 00:31:30,640
+I can't make it."
+
+384
+00:31:30,640 --> 00:31:40,480
+that time or I have to go pick up my kid and Goose will automatically reschedule that meeting without him ever sort of sitting in front of his calendar and clicking through 10 times.
+
+385
+00:31:40,480 --> 00:31:40,799
+>> Yeah.
+
+386
+00:31:40,799 --> 00:31:48,559
+So, these are things that I think we were waiting for the calendar vendor to build as features into calendar,
+
+387
+00:31:48,559 --> 00:31:53,200
+but we don't need to do that anymore because AI is able to orchestrate this for us.
+
+388
+00:31:53,200 --> 00:31:59,200
+>> This isn't that guy that had like four jobs at four different startups that was able to [laughter] paralyze all his work in >> No,
+
+389
+00:31:59,200 --> 00:31:59,600
+it's not.
+
+390
+00:31:59,600 --> 00:32:10,640
+He's he's uh he's someone that I've worked with for a long time and uh he's been at Block for a long time and he's he's just loves experimenting and he embodies that
+
+391
+00:32:10,640 --> 00:32:16,799
+culture of experimentation just like um our creator of Goose uh who who did the same thing.
+
+392
+00:32:16,799 --> 00:32:19,200
+So let me pull that thread a little bit.
+
+393
+00:32:19,200 --> 00:32:21,760
+You're you're kind of seeing a glimpse of where things are going.
+
+394
+00:32:21,760 --> 00:32:25,600
+You're very uh ahead of the curve in a lot of ways at Block.
+
+395
+00:32:25,600 --> 00:32:30,080
+where how do you think things will look in a couple years in terms of how engineers work,
+
+396
+00:32:30,080 --> 00:32:32,480
+how product teams work that's different from today?
+
+397
+00:32:32,480 --> 00:32:43,200
+I think a lot of it is dependent on the improvement of LLM performance, but I can tell you the way I'm trying to change how I work and how I'm trying to
+
+398
+00:32:43,200 --> 00:32:47,200
+change our immediate team's way of working.
+
+399
+00:32:47,200 --> 00:32:57,760
+So I think vibe coding has been an interesting exciting thing which is you talk to a chatbot essentially and it goes and builds software for you.
+
+400
+00:32:57,760 --> 00:32:59,519
+But I think this is highly limiting.
+
+401
+00:32:59,519 --> 00:33:11,200
+It's very pingpong like you do something you wait for three or four minutes and it comes back with something sort of halfbaked and you have to nudge it and guide it and massage it to get where it needs to
+
+402
+00:33:11,200 --> 00:33:12,880
+be.
+
+403
+00:33:12,880 --> 00:33:15,919
+I think that we're going to see much more autonomy.
+
+404
+00:33:15,919 --> 00:33:27,440
+So, we're working on a couple of experiments with Goose with the next version of Goose where we're really trying to push it to work not just for two or three or five minutes at
+
+405
+00:33:27,440 --> 00:33:28,000
+a time.
+
+406
+00:33:28,000 --> 00:33:36,000
+Our average, our median session length is five minutes and on average seven, but we're trying to push it to hours.
+
+407
+00:33:36,000 --> 00:33:43,679
+You know, we're trying to say, hey, all these LLMs are are sitting idle overnight and on weekends while humans aren't there.
+
+408
+00:33:43,679 --> 00:33:45,360
+Like, there's no need for that.
+
+409
+00:33:45,360 --> 00:33:47,120
+that they should be working all the time.
+
+410
+00:33:47,120 --> 00:33:51,760
+They should be trying to build in anticipation of what we want.
+
+411
+00:33:51,760 --> 00:34:03,039
+If we go back to uh the earlier part of the conversation, but also I think that they should be able to build in ways that were never
+
+412
+00:34:03,039 --> 00:34:04,640
+possible before.
+
+413
+00:34:04,640 --> 00:34:11,839
+Before we as humans, we had limited resources, limited bandwidth, and a lot of coordination overhead.
+
+414
+00:34:11,839 --> 00:34:16,879
+So we would have to choose the best path to try in an experiment.
+
+415
+00:34:16,879 --> 00:34:18,720
+And I don't think we need that anymore.
+
+416
+00:34:18,720 --> 00:34:26,480
+We need instead to be able to describe multiple different experiments in a great amount of detail.
+
+417
+00:34:26,480 --> 00:34:34,639
+And then maybe we go to sleep and then in the morning all those experiments are built and we can sort of throw away five or six of them.
+
+418
+00:34:34,639 --> 00:34:44,079
+So, one of the things that I do regularly, so I write code every day, but one of the things that I do regularly is just throw away huge huge amounts of code.
+
+419
+00:34:44,079 --> 00:34:48,159
+And it's kind of hard for me because I'm never I've never done that before.
+
+420
+00:34:48,159 --> 00:34:50,879
+I mean, obviously engineers love deleting code, but this is different.
+
+421
+00:34:50,879 --> 00:34:57,359
+This is you build a whole new system or a whole new feature and you're like, ah, it doesn't feel exactly right.
+
+422
+00:34:57,359 --> 00:35:00,720
+I'm just going to delete and start start over.
+
+423
+00:35:00,720 --> 00:35:04,079
+So, I think you're going to see a lot more of that way of working.
+
+424
+00:35:04,079 --> 00:35:14,960
+And I think that you're going to see instead of us, for example, refactoring a an app to have a different UI or to
+
+425
+00:35:14,960 --> 00:35:17,839
+evolve into its new version.
+
+426
+00:35:17,839 --> 00:35:20,800
+We're just going to rewrite that app from scratch.
+
+427
+00:35:20,800 --> 00:35:31,200
+And one of the things I'm really pushing our teams to think about is what would our world look like if every single release we RM minus RF like deleted the
+
+428
+00:35:31,200 --> 00:35:34,400
+entire app and rebuilt it from scratch.
+
+429
+00:35:34,400 --> 00:35:36,800
+And so we can't really do that today.
+
+430
+00:35:36,800 --> 00:35:42,480
+But I think this shows you some of the direction of what's possible and where these tools are taking us.
+
+431
+00:35:42,480 --> 00:35:48,160
+What's interesting about that is that there's kind of this um common rule in software engineering and just product.
+
+432
+00:35:48,160 --> 00:35:49,440
+Don't ever just rewrite.
+
+433
+00:35:49,440 --> 00:36:00,880
+Don't try to rewrite your thing because you're gonna forget all of the small improvements and tweaks and bug fixes people have made over the years and you think it's going to be this simple straightforward thing and ends up being now it's like a year or
+
+434
+00:36:00,880 --> 00:36:09,680
+more of just getting you back to where it was and it's so interesting that AI now can make that possible and what you're saying is that's actually maybe the way you should be working.
+
+435
+00:36:09,680 --> 00:36:10,480
+>> I think so.
+
+436
+00:36:10,480 --> 00:36:18,400
+And I think that the trick is getting the AI to respect all of those incremental improvements.
+
+437
+00:36:18,400 --> 00:36:18,640
+>> Yeah.
+
+438
+00:36:18,640 --> 00:36:24,320
+and sort of like bake those in as um >> as a part of the specification if you will.
+
+439
+00:36:24,320 --> 00:36:24,880
+>> Yeah.
+
+440
+00:36:24,880 --> 00:36:28,400
+>> Also, the point you made about this agent just kind of you give it a [snorts] bunch of ideas,
+
+441
+00:36:28,400 --> 00:36:35,839
+it builds them overnight and then you could see I imagine it it goes even further up the stack and comes up with the ideas and then starts building them and then you're like,
+
+442
+00:36:35,839 --> 00:36:37,040
+"Okay, oh, that was a great idea.
+
+443
+00:36:37,040 --> 00:36:39,760
+Now I can see it immediately in the same same workflow."
+
+444
+00:36:39,760 --> 00:36:40,960
+>> Yeah, that's that's true.
+
+445
+00:36:40,960 --> 00:36:46,079
+I was actually literally trying what you're saying just uh last week.
+
+446
+00:36:46,079 --> 00:36:55,119
+And so I have this new version of Goose that we're working on and I was asking it to come up with ideas to improve itself and implement it overnight.
+
+447
+00:36:55,119 --> 00:36:58,800
+And [snorts] >> sometimes problem.
+
+448
+00:36:58,800 --> 00:36:59,599
+>> Yeah.
+
+449
+00:36:59,599 --> 00:37:06,720
+>> Sometimes it kind of goes off off the script entirely and uh you have to sort of pull it back a bit.
+
+450
+00:37:06,720 --> 00:37:14,880
+So I think we're we're not quite at that era where it's completely self-improving and um completely autonomous.
+
+451
+00:37:14,880 --> 00:37:22,480
+But I do think we're in a in a transition phase where we can give it that nudge and say,
+
+452
+00:37:22,480 --> 00:37:26,640
+"Hey, here's my like wish list of 10 things that I wish you could do.
+
+453
+00:37:26,640 --> 00:37:29,760
+Go and figure out the best way to do them."
+
+454
+00:37:29,760 --> 00:37:38,160
+And it's successful, I would say, on like 60% of those things if the features are well enough described.
+
+455
+00:37:38,160 --> 00:37:42,880
+And it struggles on the remaining 40 where you have to kind of intervene and and massage it.
+
+456
+00:37:42,880 --> 00:37:43,359
+Yeah.
+
+457
+00:37:43,359 --> 00:37:49,119
+Oh man, I'm just imagining this future where you give it the goal of drive revenue and growth and then it's just like,
+
+458
+00:37:49,119 --> 00:37:50,560
+okay, everyone's fired.
+
+459
+00:37:50,560 --> 00:37:52,400
+Here's pay here's your paychecks.
+
+460
+00:37:52,400 --> 00:37:54,000
+Uh, I'll take it from here.
+
+461
+00:37:54,000 --> 00:37:56,480
+It's just >> I don't think we're going to be there.
+
+462
+00:37:56,480 --> 00:38:05,920
+I I do think we're going to need a lot of human taste to anchor these AIs so they don't go off script to be honest.
+
+463
+00:38:05,920 --> 00:38:14,960
+And that's really where um our our design lead and our design teams are pushing us to think and and that's a differentiator
+
+464
+00:38:14,960 --> 00:38:21,520
+that I think will push us beyond this era of AI slop that everyone's talking about.
+
+465
+00:38:21,520 --> 00:38:30,480
+So yeah, it's very much like anchoring it into a thing that matters to people and the thing that's tasteful and useful and has value.
+
+466
+00:38:30,480 --> 00:38:41,119
+To make that even more concrete, is is there an example of something maybe AI was trying to do or a team was trying to pitch where you had to just like know this is where humans are going to step in and
+
+467
+00:38:41,119 --> 00:38:43,680
+keep things keep things on track.
+
+468
+00:38:43,680 --> 00:38:54,720
+I'd say it was more around things like process automation or you know a lot of times I'll get this
+
+469
+00:38:54,720 --> 00:39:03,119
+sort of request where a team will say we need to buy this new tool from this vendor because our current tool isn't
+
+470
+00:39:03,119 --> 00:39:14,079
+doing X Y and Z and another team will say no no no we can just use goose to build an app that will you know do the same thing for us in half the time or
+
+471
+00:39:14,079 --> 00:39:24,320
+bless and then as a human you're sitting there thinking is any of this necessary like if we just
+
+472
+00:39:24,320 --> 00:39:34,079
+change the process do we even need to think about building tools and this is the thing that AI isn't good at it's not a able to have this sort of portfolio
+
+473
+00:39:34,079 --> 00:39:43,760
+judgment or judgment across a global sense of what's important and what matters so a lot of times I tell teams
+
+474
+00:39:43,760 --> 00:39:55,119
+just question like the base assumption particularly our infosc teams because they'll they'll twist themselves into knots sometimes trying to secure something and you'll be like well just ask the team that's building it to do it
+
+475
+00:39:55,119 --> 00:40:04,079
+differently or to not build that at all if it doesn't matter and then you won't have to increase your surface area of securing securing it so I think those
+
+476
+00:40:04,079 --> 00:40:13,200
+are the areas where uh it's better for a human to use judgment and AI has not done a great job >> you make this point about building your own software,
+
+477
+00:40:13,200 --> 00:40:14,640
+your own tools instead of buying stuff.
+
+478
+00:40:14,640 --> 00:40:15,920
+This is a big question with AI.
+
+479
+00:40:15,920 --> 00:40:19,359
+Is it going to replace all these SAS apps to Salesforce over?
+
+480
+00:40:19,359 --> 00:40:29,440
+How is there a sense of just either how much money you guys have maybe saved building your own stuff or have you built a newound respect for the existing SAS software that everyone's using and and
+
+481
+00:40:29,440 --> 00:40:31,040
+pays lots of money for?
+
+482
+00:40:31,040 --> 00:40:41,200
+I think there's a trap in getting away from your core purpose as a company and our core purpose is economic empowerment.
+
+483
+00:40:41,200 --> 00:40:52,880
+So, getting customers or merchants or artists the ability to make a sale or pay their rent or upload their latest
+
+484
+00:40:52,880 --> 00:40:55,920
+creation to title.
+
+485
+00:40:55,920 --> 00:41:04,880
+And I think that anything that serves that purpose, we should encourage and we should invest in.
+
+486
+00:41:04,880 --> 00:41:11,920
+But if we're just purely looking at dollars versus dollars, then that's like pulling us off that purpose,
+
+487
+00:41:11,920 --> 00:41:22,880
+like the savings and cost that there might be in replacing a vendor tool by something you build in house is probably not worth it in the mental bandwidth that you've lost
+
+488
+00:41:22,880 --> 00:41:29,359
+and the amount of the team's sort of technical focus that's being taken away.
+
+489
+00:41:29,359 --> 00:41:37,040
+So yeah, I would say it's just keep coming back to the thing that matters to you as a company and then the rest is,
+
+490
+00:41:37,040 --> 00:41:38,800
+you know, will follow from that.
+
+491
+00:41:38,800 --> 00:41:42,319
+>> Yeah, I think people forget just how much maintenance it takes to keep something you've built.
+
+492
+00:41:42,319 --> 00:41:43,040
+Like, okay, cool.
+
+493
+00:41:43,040 --> 00:41:49,839
+We built it in a weekend and now it's years of endless maintenance and requests and support and and also to your point,
+
+494
+00:41:49,839 --> 00:41:57,440
+it's like it feels like it comes back to the uh always motto of just focus on your core competencies and then buy everything else.
+
+495
+00:41:57,440 --> 00:42:05,040
+Yeah, it's the classic 8020 problem and we have that enough with our with the apps that we build for our customers,
+
+496
+00:42:05,040 --> 00:42:14,400
+you know, like we'll build some great experiments that that really resonate and then we have to spend a lot of time ironing out the long tale of problems.
+
+497
+00:42:14,400 --> 00:42:23,920
+So in cash card for example, we we built the entire functionality of cash card I would say pretty much in a weekend or maybe a week
+
+498
+00:42:23,920 --> 00:42:33,359
+of sort of integration and work and then it took a really long time to iron out all these edge cases where you know someone would tip twice the value of the
+
+499
+00:42:33,359 --> 00:42:43,280
+bill and then it would completely break uh something in the back end or you know people would use it as a gas station and they have a different way of um billing
+
+500
+00:42:43,280 --> 00:42:44,800
+your hard.
+
+501
+00:42:44,800 --> 00:42:52,800
+So, yeah, it's very much that and and to your point, I would go always come back to like what is the reason we're doing this?
+
+502
+00:42:52,800 --> 00:42:56,079
+Why does it matter to us and to our customers?
+
+503
+00:42:56,079 --> 00:43:04,079
+And if it doesn't clearly satisfy that, um, I would just push it off as a not interesting thing.
+
+504
+00:43:04,079 --> 00:43:10,560
+This episode is brought to you by Persona, the verified identity platform helping organizations onboard users,
+
+505
+00:43:10,560 --> 00:43:12,480
+fight fraud, and build trust.
+
+506
+00:43:12,480 --> 00:43:18,160
+We talk a lot on this podcast about the amazing advances in AI, but this can be a double-edged sword.
+
+507
+00:43:18,160 --> 00:43:23,920
+For every wow moment, there are fraudsters using the same tech to wreak havoc, laundering money,
+
+508
+00:43:23,920 --> 00:43:27,040
+taking over employee identities, and impersonating businesses.
+
+509
+00:43:27,040 --> 00:43:32,160
+Persona helps combat these threats with automated user, business, and employee verification.
+
+510
+00:43:32,160 --> 00:43:37,599
+Whether you're looking to catch candidate fraud, meet age restrictions, or keep your platform safe,
+
+511
+00:43:37,599 --> 00:43:41,839
+Persona helps you verify users in a way that's tailored to your specific needs.
+
+512
+00:43:41,839 --> 00:43:47,200
+Best of all, Persona makes it easy to know who you're dealing with without adding friction for good users.
+
+513
+00:43:47,200 --> 00:43:54,000
+This is why leading platforms like Etsy, LinkedIn, Square, and Lyft trust Persona to secure their platform.
+
+514
+00:43:54,000 --> 00:43:59,359
+Persona is also offering my listeners 500 free services per month for one full year.
+
+515
+00:43:59,359 --> 00:44:04,079
+Just head to withpersona.com/lenny to get started.
+
+516
+00:44:04,079 --> 00:44:06,640
+That's withpersona.com/lenny.
+
+517
+00:44:06,640 --> 00:44:09,680
+Thanks again to Persona for sponsoring this episode.
+
+518
+00:44:09,680 --> 00:44:15,839
+One of the biggest parts of the conversation around AI is head is hiring jobs things like that.
+
+519
+00:44:15,839 --> 00:44:18,240
+So there I have two kind of this two-part question.
+
+520
+00:44:18,240 --> 00:44:28,880
+One is just how has the rise of all these AI tools this increased productivity impacted the way you plan headcounts and uh hire and then what do
+
+521
+00:44:28,880 --> 00:44:34,240
+you look for that's different in people you're hiring now that AI is such a big part of the way you guys work?
+
+522
+00:44:34,240 --> 00:44:45,520
+I don't think that things have progressed far enough that it's really impacted in a fundamental way how you would how many
+
+523
+00:44:45,520 --> 00:44:57,119
+people you would need to sort of build an app of the scale of cash app for example I think what's changed for us is much different and it has nothing to do with AI it's that what we talked about
+
+524
+00:44:57,119 --> 00:45:08,880
+earlier is moving from our GM structure to a functional structure and in our GM structure our incentives were always to think of engineering headcount as a
+
+525
+00:45:08,880 --> 00:45:09,760
+commodity.
+
+526
+00:45:09,760 --> 00:45:13,359
+And so we would just add more engineers if we wanted to build more features.
+
+527
+00:45:13,359 --> 00:45:20,960
+And the classic um mythical man person month trap or whatever it's called.
+
+528
+00:45:20,960 --> 00:45:24,960
+And I think that moving to a functional structure completely changes that.
+
+529
+00:45:24,960 --> 00:45:31,200
+And you're like, well, we can leverage common platforms, common modules.
+
+530
+00:45:31,200 --> 00:45:38,800
+we can bring in experts from across the company to advise us on how better to do this.
+
+531
+00:45:38,800 --> 00:45:43,119
+And so those kinds of things I think have made it much different in how we hire.
+
+532
+00:45:43,119 --> 00:45:50,640
+And we no longer see engineers as a commodity to to just sort of add 100 people to go and build,
+
+533
+00:45:50,640 --> 00:45:54,079
+you know, the next uh product and cash app.
+
+534
+00:45:54,079 --> 00:46:03,760
+But on the AI side, we're very much looking for people that are embracing these tools
+
+535
+00:46:03,760 --> 00:46:08,400
+and that are eager to try and learn from it.
+
+536
+00:46:08,400 --> 00:46:14,880
+We're not looking for people who are amazing AI practitioners on the get-go.
+
+537
+00:46:14,880 --> 00:46:20,400
+I think we have those people and we're interested in those people if they're ever want to work with us,
+
+538
+00:46:20,400 --> 00:46:30,480
+but I'm much more keen on looking for that college grad who just really is eager to learn about these tools and like open to it or
+
+539
+00:46:30,480 --> 00:46:35,119
+even the veteran who has embraced these tools and figured it out.
+
+540
+00:46:35,119 --> 00:46:44,400
+And that's kind of where we're optimizing for uh who we look for rather than rather than sort of a specific set of skills.
+
+541
+00:46:44,400 --> 00:46:48,400
+>> So essentially the biggest change is just looking for people that are embracing AI,
+
+542
+00:46:48,400 --> 00:46:51,599
+not being like, "No, I'm I'm a I don't need this stuff.
+
+543
+00:46:51,599 --> 00:46:52,800
+I'm I'm an amazing engineer.
+
+544
+00:46:52,800 --> 00:46:55,920
+I don't need to use cursor or goose or all these things."
+
+545
+00:46:55,920 --> 00:46:56,240
+>> Yeah.
+
+546
+00:46:56,240 --> 00:46:58,480
+A learning mindset is how I would put it.
+
+547
+00:46:58,480 --> 00:47:01,839
+This is something that Jack, our CEO, talks about a lot.
+
+548
+00:47:01,839 --> 00:47:05,520
+um is he wants us to be a learning first company.
+
+549
+00:47:05,520 --> 00:47:12,079
+So everything we do, every experiment that we ship, what can we learn from it?
+
+550
+00:47:12,079 --> 00:47:15,680
+And did we feel that we gave it our best shot?
+
+551
+00:47:15,680 --> 00:47:24,960
+And I think that that's more important to him than even sort of coming up with the right business uh answer every time.
+
+552
+00:47:24,960 --> 00:47:26,240
+What about when you're interviewing?
+
+553
+00:47:26,240 --> 00:47:31,200
+Are you encouraging engineers to use AI tools as they're doing exercises?
+
+554
+00:47:31,200 --> 00:47:33,440
+How does that how did that change over the past year or two?
+
+555
+00:47:33,440 --> 00:47:35,920
+>> Yeah, we're starting to do that now.
+
+556
+00:47:35,920 --> 00:47:47,119
+So, traditionally we would just use um like coderpad or something like that to whiteboards through a problem or and even like program it uh in pseudo code
+
+557
+00:47:47,119 --> 00:47:49,200
+or near pseudo code.
+
+558
+00:47:49,200 --> 00:47:54,480
+But now we're we're looking at can you use vibe code to build something?
+
+559
+00:47:54,480 --> 00:48:04,480
+Can you how are you how comfortable are you with these tools or how are you thinking about evolving uh with them as well?
+
+560
+00:48:04,480 --> 00:48:05,839
+But it's early days yet.
+
+561
+00:48:05,839 --> 00:48:13,920
+I would say that it's not clear to me that necessarily how someone knows how to use,
+
+562
+00:48:13,920 --> 00:48:20,480
+you know, be it goose or cursor or any of these other tools matters that much to whether they're a good engineer.
+
+563
+00:48:20,480 --> 00:48:32,319
+I still think the things that we interviewed for in the past, a critical mindset, the ability to really understand deeply the technical nature of a problem is still much more
+
+564
+00:48:32,319 --> 00:48:36,880
+important than um whether you're a fully AI native programmer or not.
+
+565
+00:48:36,880 --> 00:48:43,680
+Another question that I've always been thinking about, a lot of people wonder is what level of engineer is most benefiting from these tools?
+
+566
+00:48:43,680 --> 00:48:46,800
+You could argue it's the junior engineers now they could just get all this work done.
+
+567
+00:48:46,800 --> 00:48:53,280
+You could argue it's senior engineers because they know so much more about how things work and how they could just orchestrate thousands of agents doing their bidding.
+
+568
+00:48:53,280 --> 00:48:56,160
+What have you seen in terms of which level is benefiting most?
+
+569
+00:48:56,160 --> 00:48:56,400
+Yeah.
+
+570
+00:48:56,400 --> 00:48:58,240
+So, two answers to that.
+
+571
+00:48:58,240 --> 00:49:08,720
+One is you're definitely right that the more senior and the more junior they are, the more comfortable or the more eager they are to adopt these AI tools.
+
+572
+00:49:08,720 --> 00:49:13,359
+And and I think that's for a variety of reasons, including some of them that you named.
+
+573
+00:49:13,359 --> 00:49:18,240
+Like I think the senior people really understand in great depth how everything works.
+
+574
+00:49:18,240 --> 00:49:26,559
+And so they're almost relieved that this tool exists that can go and do all these things that they've done a million times before and couldn't
+
+575
+00:49:26,559 --> 00:49:28,000
+be bothered.
+
+576
+00:49:28,000 --> 00:49:35,119
+And then the junior people are like uh my niece and nephew on a Blackberry or something.
+
+577
+00:49:35,119 --> 00:49:37,119
+They're just blitzing through things.
+
+578
+00:49:37,119 --> 00:49:39,920
+um not Blackberry in the early days in iPhones.
+
+579
+00:49:39,920 --> 00:49:48,079
+Now they're blitzing through uh a text message when I'm still sort of seeking destroying uh through my keyboard.
+
+580
+00:49:48,079 --> 00:49:50,319
+Shows you how old I am.
+
+581
+00:49:50,319 --> 00:49:51,760
+So I think there's that.
+
+582
+00:49:51,760 --> 00:50:02,400
+But I think the non-technical people using AI agents and programming tools to build things is really what's been surprising
+
+583
+00:50:02,400 --> 00:50:04,400
+and really amazing.
+
+584
+00:50:04,400 --> 00:50:09,760
+And I think that speaks to how these roles are going to evolve in the future.
+
+585
+00:50:09,760 --> 00:50:18,079
+The lines are going to be blurred between whether you're in legal or in risk or in engineering and design even.
+
+586
+00:50:18,079 --> 00:50:28,240
+And so I think that the people that are able to embrace it to optimize for their particular workday and their particular
+
+587
+00:50:28,240 --> 00:50:36,079
+set of tasks are really who are showing showing the most um most uh impact in from these tools.
+
+588
+00:50:36,079 --> 00:50:45,119
+>> It's interesting no one talks about that element of engineering productivity which is the reduction of asks from all the other parts of the company to build random one-off things.
+
+589
+00:50:45,119 --> 00:50:47,760
+That feels like a huge productivity gain for engineers.
+
+590
+00:50:47,760 --> 00:50:49,040
+It is massive.
+
+591
+00:50:49,040 --> 00:50:55,680
+Although I think that it's a little bit like the analogy of if you build a bigger highway,
+
+592
+00:50:55,680 --> 00:50:58,160
+you'll just get more cars on the road.
+
+593
+00:50:58,160 --> 00:51:04,240
+So I think the fact that everyone's building software means that there's more software to be built,
+
+594
+00:51:04,240 --> 00:51:12,720
+more coordination to happen, and everyone's more eager to ship things faster and and um with greater results.
+
+595
+00:51:12,720 --> 00:51:22,079
+And so we're just seeing an overall uptick in velocity and the ask for more features if that makes sense.
+
+596
+00:51:22,079 --> 00:51:23,599
+Yeah, [clears throat] absolutely.
+
+597
+00:51:23,599 --> 00:51:26,800
+And it connects to your point about you're not slowing hiring.
+
+598
+00:51:26,800 --> 00:51:33,599
+What I'm hearing is just headcount hiring uh desires for more engineers, more product people is not slowing at all.
+
+599
+00:51:33,599 --> 00:51:37,040
+You're basically it's as if AI wasn't really there.
+
+600
+00:51:37,040 --> 00:51:38,960
+>> We're being more thoughtful about it.
+
+601
+00:51:38,960 --> 00:51:46,160
+So like I said, we were looking at as a commodity in the GM era >> and now that we're functional,
+
+602
+00:51:46,160 --> 00:51:53,280
+it's much less about how many engineers we need as a function of the number of features we have in square or cache app.
+
+603
+00:51:53,280 --> 00:52:01,760
+And in the functional org structure, we think of it much more as what are the areas of optimization,
+
+604
+00:52:01,760 --> 00:52:08,640
+where can we build depth and what really accelerates our priorities through things like modularization,
+
+605
+00:52:08,640 --> 00:52:11,920
+reuse, and uh going deep into platforms.
+
+606
+00:52:11,920 --> 00:52:18,796
+>> I love this hot take of uh if you're trying to be more productive, forget AI, just reorg into a functional structure.
+
+607
+00:52:18,796 --> 00:52:24,160
+[laughter] It's not wrong in some ways.
+
+608
+00:52:24,160 --> 00:52:34,079
+So, here's another really interesting example where we are trying to improve our build times and we're using we're using goose
+
+609
+00:52:34,079 --> 00:52:40,160
+and a lot of other tools to help us with this too and they've done remarkable things.
+
+610
+00:52:40,160 --> 00:52:50,240
+So we have this really cool tool that analyzes our test suites and selects the right test to run for changes that were made.
+
+611
+00:52:50,240 --> 00:53:02,079
+So we cut down basically 50% of test runs this way, which is pretty great and like we're not warming the planet as much with all these unnecessary CPU cycles being
+
+612
+00:53:02,079 --> 00:53:03,839
+wasted on tests.
+
+613
+00:53:03,839 --> 00:53:13,440
+But then things like offloading tests to the cloud or simply just deleting tests that don't make sense anymore probably save you two to
+
+614
+00:53:13,440 --> 00:53:14,400
+three times that.
+
+615
+00:53:14,400 --> 00:53:19,760
+So there is still a portfolio approach that you need to take for lack of a better term.
+
+616
+00:53:19,760 --> 00:53:25,280
+It's like that example I told you earlier about should we buy a vendor tool or should we build this inhouse?
+
+617
+00:53:25,280 --> 00:53:28,559
+It's like well do we even need to do this process at all?
+
+618
+00:53:28,559 --> 00:53:34,640
+So in some ways structure matters more than the efficacy of the tools you have.
+
+619
+00:53:34,640 --> 00:53:46,000
+>> Wise words makes me think about Elon has this whole process for how to optimize stuff and one of the steps is like do we even need this thing before we start optimizing and automating it.
+
+620
+00:53:46,000 --> 00:53:51,839
+Before I zoom out and ask about just general lessons that you've learned over the course of your career,
+
+621
+00:53:51,839 --> 00:54:02,559
+is there anything else that you think might be really valuable or useful to folks that are trying to lean in further into AI or just help their teams think a little bit
+
+622
+00:54:02,559 --> 00:54:04,480
+more forward thinking?
+
+623
+00:54:04,480 --> 00:54:09,599
+I would say really try and use these tools yourself.
+
+624
+00:54:09,599 --> 00:54:18,000
+So the way in which I think we've been able to drive most of the adoption is Jack uses goose,
+
+625
+00:54:18,000 --> 00:54:28,319
+I use goose, our executive team all have used goose um and use it regularly and use other uh other AI programming tools and
+
+626
+00:54:28,319 --> 00:54:39,520
+assistants as well and we do it every single day and so we learn a lot about how our own workflow can change and that's going to tell you so much more
+
+627
+00:54:39,520 --> 00:54:49,760
+about how are you going to change your organization's workflow than if you're reading a bunch of think pieces on LinkedIn or Harvard Business Review or whatever it is and then trying to get
+
+628
+00:54:49,760 --> 00:54:52,160
+your teams to follow suit.
+
+629
+00:54:52,160 --> 00:54:54,800
+So I think we do this with everything.
+
+630
+00:54:54,800 --> 00:55:05,040
+It's feel it like use the product yourself, feel it, understand its strengths and weaknesses and its ergonomics and then figure out how to apply it to
+
+631
+00:55:05,040 --> 00:55:06,160
+your teams.
+
+632
+00:55:06,160 --> 00:55:10,800
+Something I found helpful in doing that, which I completely agree with, which is like stop reading about it.
+
+633
+00:55:10,800 --> 00:55:13,200
+Stop listening to us talking about it, just like build some stuff.
+
+634
+00:55:13,200 --> 00:55:21,920
+The thing the the thing that I found really helpful there is have a specific task or problem you want to solve for yourself >> because that really motivates you and makes it very real.
+
+635
+00:55:21,920 --> 00:55:25,599
+For example, just the other day I was trying to pull images out of a Google doc.
+
+636
+00:55:25,599 --> 00:55:28,800
+You know, like Google Doc, it's like I think of his Hotel California.
+
+637
+00:55:28,800 --> 00:55:33,920
+You put images in there, but there's no way to get them back out unless you [laughter] do some crazy stuff.
+
+638
+00:55:33,920 --> 00:55:35,440
+So, I just went to Lovable.
+
+639
+00:55:35,440 --> 00:55:40,240
+like build an app where I can give you a Google doc URL and let me download the images really easily and bam.
+
+640
+00:55:40,240 --> 00:55:41,920
+Yeah, perfect.
+
+641
+00:55:41,920 --> 00:55:43,040
+>> Yeah, great example.
+
+642
+00:55:43,040 --> 00:55:49,440
+I did something like this uh a couple months ago as well where my son has a whole bunch of therapies.
+
+643
+00:55:49,440 --> 00:55:51,520
+he has additional needs.
+
+644
+00:55:51,520 --> 00:56:00,400
+And so I was trying to gather all the receipts for all these therapies and um share them with my wife and she she will like claim it from our insurer.
+
+645
+00:56:00,400 --> 00:56:05,119
+And I was really struggling to do this cuz they they're in various forms.
+
+646
+00:56:05,119 --> 00:56:06,400
+They're screenshots in some cases.
+
+647
+00:56:06,400 --> 00:56:07,839
+They're PDFs or whatever.
+
+648
+00:56:07,839 --> 00:56:18,160
+So, I asked Goose to do this and it was all sitting on my laptop and Goose figured out that it could put all of these receipts into
+
+649
+00:56:18,160 --> 00:56:22,000
+my Apple Notes app into a single note.
+
+650
+00:56:22,000 --> 00:56:30,640
+It converted it to HTML so it would sync seamlessly to my phone and then I could email it or share it with her from there.
+
+651
+00:56:30,640 --> 00:56:32,960
+And that's just something I just never would have thought of.
+
+652
+00:56:32,960 --> 00:56:35,040
+And it did this using Apple Script.
+
+653
+00:56:35,040 --> 00:56:38,720
+So it just controlled my computer for me in the background.
+
+654
+00:56:38,720 --> 00:56:42,400
+And yeah, so these are like surprising ways in which these tools help us.
+
+655
+00:56:42,400 --> 00:56:51,200
+And the more you use them to solve real problems to your point, the more you understand what their strengths are and where to where you can deploy them.
+
+656
+00:56:51,200 --> 00:56:52,240
+>> I love this example.
+
+657
+00:56:52,240 --> 00:56:55,040
+How did So did you just go to goose and be like here's the problem I have.
+
+658
+00:56:55,040 --> 00:56:56,480
+How would it how would you solve it?
+
+659
+00:56:56,480 --> 00:56:57,200
+>> Yeah, pretty much.
+
+660
+00:56:57,200 --> 00:57:01,040
+I said I have all these receipts there in Google Drive.
+
+661
+00:57:01,040 --> 00:57:09,520
+So we have similar origin problem there and I need to get them into a single form and I need to like collate the totals and do all this.
+
+662
+00:57:09,520 --> 00:57:12,160
+So it tried a few approaches first.
+
+663
+00:57:12,160 --> 00:57:17,680
+It tried to download them and it tried to read them using a PDF reader and this and that.
+
+664
+00:57:17,680 --> 00:57:26,640
+And then the thing about Goose that I think a lot of the other AI agents learn from us as well is if it tries a few things and fails,
+
+665
+00:57:26,640 --> 00:57:33,440
+it'll back up and it'll try a different route and it'll just keep going until it makes some prog uh some progress.
+
+666
+00:57:33,440 --> 00:57:34,559
+And that's what it did.
+
+667
+00:57:34,559 --> 00:57:41,920
+And then it it picked Apple script as a way to do it because it had the MCP extension to control my computer.
+
+668
+00:57:41,920 --> 00:57:48,720
+And this is the same thing that our um our engineer we were talking about the other day uses to watch his screen and things like that.
+
+669
+00:57:48,720 --> 00:57:51,839
+But this was a very focused problem and it and it managed to do that.
+
+670
+00:57:51,839 --> 00:58:02,240
+So yeah, it's it's surprising what these tools can do and allowing them the kind of flexibility to do that is a big part of learning how to use them.
+
+671
+00:58:02,240 --> 00:58:03,040
+>> That is cool.
+
+672
+00:58:03,040 --> 00:58:06,160
+Uh I love the By the way, can you run Goose like as a regular person?
+
+673
+00:58:06,160 --> 00:58:09,760
+Can you just download Goose and use that instead of >> Absolutely.
+
+674
+00:58:09,760 --> 00:58:10,079
+Yeah.
+
+675
+00:58:10,079 --> 00:58:13,680
+Yeah, you can just download it from uh our our URL.
+
+676
+00:58:13,680 --> 00:58:16,319
+We can share it in the show notes for you.
+
+677
+00:58:16,319 --> 00:58:18,240
+>> Um and yeah, you can install it.
+
+678
+00:58:18,240 --> 00:58:21,520
+It it comes for Mac and Windows and Linux.
+
+679
+00:58:21,520 --> 00:58:24,240
+I believe it's an Electron app, so it'll work on all of them.
+
+680
+00:58:24,240 --> 00:58:32,240
+It also has a command line, so for people who are more comfortable uh using that, we have that um UI as well.
+
+681
+00:58:32,240 --> 00:58:38,880
+Wow, you really are competing with these massive foundational model companies building is what's the simplest way to compare Goose to something else?
+
+682
+00:58:38,880 --> 00:58:43,119
+Is it like is cloud code the simplest comparison or is something else?
+
+683
+00:58:43,119 --> 00:58:51,599
+>> I think it's a bit different than cloud code because at its core goose is a platform that implements MCPs and so
+
+684
+00:58:51,599 --> 00:58:56,799
+MCPs give it this dynamically extensible nature.
+
+685
+00:58:56,799 --> 00:59:06,480
+So, it can do all of these things for you, whether it's automating things like we were talking about with Google Docs and notes and things like that,
+
+686
+00:59:06,480 --> 00:59:14,240
+or it can do straight up programming tasks for you using other MCPs like so it can index code and do it that way.
+
+687
+00:59:14,240 --> 00:59:18,400
+So, it's really more of like an extensible platform.
+
+688
+00:59:18,400 --> 00:59:24,799
+So, I would say it sits somewhere between your classic AI assistant where you just ask it,
+
+689
+00:59:24,799 --> 00:59:27,200
+you know, what's the weather today?
+
+690
+00:59:27,200 --> 00:59:38,319
+Can you calculate how many months it's been since this date or whatever it is to um the more focused cursors and cloud codes
+
+691
+00:59:38,319 --> 00:59:39,440
+of the world.
+
+692
+00:59:39,440 --> 00:59:41,200
+>> Basically, it's everything combined.
+
+693
+00:59:41,200 --> 00:59:41,680
+Holy.
+
+694
+00:59:41,680 --> 00:59:42,559
+And free.
+
+695
+00:59:42,559 --> 00:59:46,319
+Uh you pay for the LM tokens, but uh but yeah.
+
+696
+00:59:46,319 --> 00:59:47,599
+>> Yeah.
+
+697
+00:59:47,599 --> 00:59:57,040
+open source models which >> oh my god this is crazy what a cool team to be on building goose that's at block must having you must be having so much fun
+
+698
+00:59:57,040 --> 01:00:08,960
+>> oh man okay let me zoom out a little bit so you've been CTO I'm looking at LinkedIn right now for just about two years what's something that you wish you knew before you stepped in this role if you could go back a couple years and
+
+699
+01:00:08,960 --> 01:00:17,200
+just whisper a few tips and tricks or lessons in and see your ear what would they be >> I think maybe two different things.
+
+700
+01:00:17,200 --> 01:00:20,400
+One is just the power of Conway's law.
+
+701
+01:00:20,400 --> 01:00:31,359
+Like we talked about before, it's like how difficult it is to change outcomes without changing the structure of relationships between
+
+702
+01:00:31,359 --> 01:00:34,480
+people in an organization.
+
+703
+01:00:34,480 --> 01:00:40,720
+And I think I always kind of knew that at some level, but really appreciating it in a visceral way is big.
+
+704
+01:00:40,720 --> 01:00:49,200
+The other thing that I really learned the hard way maybe is you only hear about it when things are going wrong.
+
+705
+01:00:49,200 --> 01:00:54,640
+So when things are going well, you kind of have this eerie silence and you're like, well,
+
+706
+01:00:54,640 --> 01:00:56,880
+am I doing the right things here?
+
+707
+01:00:56,880 --> 01:00:59,760
+Am I focusing on the right problems?
+
+708
+01:00:59,760 --> 01:01:06,799
+Uh so having a bit of judgment, having a bit of time to step back and look at things holistically,
+
+709
+01:01:06,799 --> 01:01:09,680
+those are things that you really need to make time for.
+
+710
+01:01:09,680 --> 01:01:15,200
+and and uh do on a regular basis, which I wish I had known when I took up the role.
+
+711
+01:01:15,200 --> 01:01:20,720
+Looking back at your time at Block, I keep trying to I almost say Square because I'm so used to that over the year,
+
+712
+01:01:20,720 --> 01:01:27,280
+but I know Block is is the name of the broader company and Square is just one is that just so people understand Square is one business unit,
+
+713
+01:01:27,280 --> 01:01:28,880
+one product within Block.
+
+714
+01:01:28,880 --> 01:01:29,280
+>> Correct.
+
+715
+01:01:29,280 --> 01:01:35,760
+Yeah, we have uh Square, Afterpay, Cash App, and Title are are uh four major brands.
+
+716
+01:01:35,760 --> 01:01:44,559
+And then we also have Bit Key and Proto that are focused on Bitcoin for us and they uh we ship hardware uh in those two brands.
+
+717
+01:01:44,559 --> 01:01:45,200
+>> Okay, great.
+
+718
+01:01:45,200 --> 01:01:47,920
+I think that some people are like, "What are you even what are you guys talking about?"
+
+719
+01:01:47,920 --> 01:01:48,720
+Okay, cool.
+
+720
+01:01:48,720 --> 01:02:00,240
+So, reflecting back on your time at Block, what's maybe the most counterintuitive lesson you've learned about building products or building teams that goes against what most people believe,
+
+721
+01:02:00,240 --> 01:02:01,920
+say, common startup wisdom?
+
+722
+01:02:01,920 --> 01:02:06,319
+I think code quality is one like being an engineer.
+
+723
+01:02:06,319 --> 01:02:12,640
+I learned this kind of very early on and it it keeps coming true over and over and over again.
+
+724
+01:02:12,640 --> 01:02:17,839
+A lot of engineers think that code quality is important to building a successful product.
+
+725
+01:02:17,839 --> 01:02:20,880
+The two have nothing to do with each other.
+
+726
+01:02:20,880 --> 01:02:22,799
+My favorite example is YouTube.
+
+727
+01:02:22,799 --> 01:02:32,480
+Uh, I was working at Google around the time YouTube was acquired and I just remember there was this whole wash of angst about
+
+728
+01:02:32,480 --> 01:02:41,920
+how horrible the YouTube codebases and how terrible their architecture is and they're storing videos as blobs in my SQL and whatnot.
+
+729
+01:02:41,920 --> 01:02:49,359
+And you know, you could argue that YouTube is the most successful product at Google by a long way,
+
+730
+01:02:49,359 --> 01:02:49,680
+right?
+
+731
+01:02:49,680 --> 01:02:53,119
+like maybe more successful than many of their others combined.
+
+732
+01:02:53,119 --> 01:03:00,720
+And so it really has very little to do with how well it was architected because the flip side of that,
+
+733
+01:03:00,720 --> 01:03:07,200
+Google Video, which is a product that I don't know if people remember, it existed before YouTube,
+
+734
+01:03:07,200 --> 01:03:09,440
+it supported more formats.
+
+735
+01:03:09,440 --> 01:03:11,680
+It supported higher resolution.
+
+736
+01:03:11,680 --> 01:03:15,920
+You could upload, you know, hour-long videos.
+
+737
+01:03:15,920 --> 01:03:17,039
+YouTube had none of this.
+
+738
+01:03:17,039 --> 01:03:26,160
+it just had the like one or two minute quick video thing and it's far and away uh blown away its competition and so I
+
+739
+01:03:26,160 --> 01:03:36,319
+think just keeping that front and center is why are we building these tools or these apps or these products they're for
+
+740
+01:03:36,319 --> 01:03:38,880
+people to solve a specific problem.
+
+741
+01:03:38,880 --> 01:03:48,000
+So in our case, it's for a Square merchant to make a sale to sell coffee to you or to sell something they've made.
+
+742
+01:03:48,000 --> 01:03:49,440
+And that's really what's important.
+
+743
+01:03:49,440 --> 01:03:59,440
+It's not really important uh how well our Android platform performs uh unless it's serving that need.
+
+744
+01:03:59,440 --> 01:04:03,440
+And so I think that's been a really hard one for me over my career.
+
+745
+01:04:03,440 --> 01:04:08,559
+And I continually encounter engineers who think we need to refactor.
+
+746
+01:04:08,559 --> 01:04:10,000
+We need to do this in a better way.
+
+747
+01:04:10,000 --> 01:04:13,520
+We need and then I'm like no this all this code could be thrown away tomorrow.
+
+748
+01:04:13,520 --> 01:04:19,440
+So just focus on what we're trying to build and whom we're trying to build for.
+
+749
+01:04:19,440 --> 01:04:21,039
+That is an incredible insight and lesson.
+
+750
+01:04:21,039 --> 01:04:25,760
+And this YouTube story is so fun uh and such a good example.
+
+751
+01:04:25,760 --> 01:04:34,480
+you were saying they were storing the video like uh content in a in a my SQL set like row and column as a blob data.
+
+752
+01:04:34,480 --> 01:04:44,640
+Yeah, this is this is what uh I mean I didn't actually look at the code so I I couldn't verify it but this this was the sort of common wisdom and then they had a an entirely
+
+753
+01:04:44,640 --> 01:04:54,640
+Python stack that was incredibly slow compared to the state-of-the-art sort of C++ and Java servers that we had hyper
+
+754
+01:04:54,640 --> 01:04:57,039
+optimized at Google back in those days.
+
+755
+01:04:57,039 --> 01:04:58,480
+That is hilarious.
+
+756
+01:04:58,480 --> 01:05:03,920
+Makes me think about also companies like when you look inside a company, if you work at a company,
+
+757
+01:05:03,920 --> 01:05:05,839
+you're just like this is just pure chaos.
+
+758
+01:05:05,839 --> 01:05:07,039
+No one knows what's going on.
+
+759
+01:05:07,039 --> 01:05:10,000
+This is just about to all fall apart.
+
+760
+01:05:10,000 --> 01:05:14,240
+And if that's basically what it's like at every successful hyperrowth company.
+
+761
+01:05:14,240 --> 01:05:16,079
+>> Yeah, there's some truth to that for sure.
+
+762
+01:05:16,079 --> 01:05:17,200
+Yeah.
+
+763
+01:05:17,200 --> 01:05:23,119
+>> And so I think again it's just there's so much more that is more important to the success of a business.
+
+764
+01:05:23,119 --> 01:05:25,520
+And it's what you said is are you solving a real problem for people?
+
+765
+01:05:25,520 --> 01:05:26,880
+Can you get in their hands?
+
+766
+01:05:26,880 --> 01:05:28,559
+Can you continue solving real problems for them?
+
+767
+01:05:28,559 --> 01:05:29,839
+It's not about the quality of the code.
+
+768
+01:05:29,839 --> 01:05:32,319
+It's not how well you operate internally.
+
+769
+01:05:32,319 --> 01:05:33,280
+>> Absolutely.
+
+770
+01:05:33,280 --> 01:05:35,920
+I I think on Cash App, we had that as well.
+
+771
+01:05:35,920 --> 01:05:43,920
+So, uh in the early days of Cash App, I was head of engineering from when we were about 10 engineers to,
+
+772
+01:05:43,920 --> 01:05:51,359
+you know, 200 plus and took us to about 10 plus or um 20 million users thereabouts.
+
+773
+01:05:51,359 --> 01:05:54,720
+And there was a very similar thing there.
+
+774
+01:05:54,720 --> 01:05:58,160
+It's like from the outside it looked like everything was really chaotic.
+
+775
+01:05:58,160 --> 01:06:09,920
+It's like people would build random experiments and ship them and it just didn't look like we were following strict policies on things like software
+
+776
+01:06:09,920 --> 01:06:11,599
+life cycle and stuff like that.
+
+777
+01:06:11,599 --> 01:06:13,200
+And it was kind of true.
+
+778
+01:06:13,200 --> 01:06:24,319
+And my philosophy was always we have all these brilliant engineers and I'm going to do more harm than good by trying to harness them into
+
+779
+01:06:24,319 --> 01:06:33,760
+very strict sort of blinkered areas if they want to spin their wheels building something that is a complete waste of
+
+780
+01:06:33,760 --> 01:06:36,480
+time for a little bit.
+
+781
+01:06:36,480 --> 01:06:43,119
+But at the same time, if they're delivering these amazing things on the flip side, then I'll almost allow that.
+
+782
+01:06:43,119 --> 01:06:44,720
+Like I'll I'll be okay with that.
+
+783
+01:06:44,720 --> 01:06:53,440
+And um you know, it's a fine balance because engineers can really go off in into rabbit holes if you let them.
+
+784
+01:06:53,440 --> 01:07:03,200
+But yeah, there's a certain amount of creativity that chaos breeds and you have to know how to build controlled chaos in some ways.
+
+785
+01:07:03,200 --> 01:07:13,039
+So you have to create a foundation that isn't, you know, liable to rupture or like you have major reliability problems or something like that or you're going to lose money in our case.
+
+786
+01:07:13,039 --> 01:07:23,440
+And so as long as those things are bedded down and you allow your engineers to have the freedom to experiment and iterate and do the things that energizes them,
+
+787
+01:07:23,440 --> 01:07:25,760
+like that's the ideal.
+
+788
+01:07:25,760 --> 01:07:37,039
+Uh uh speaking of controlled chaos, your uh one of your titles during your time at Block at I guess this was while you were actually at Square was mad scientist for four four and a half
+
+789
+01:07:37,039 --> 01:07:38,880
+years.
+
+790
+01:07:38,880 --> 01:07:48,319
+Yeah, that was uh that was a time when I was working part-time mostly because I had very young kids with lots of
+
+791
+01:07:48,319 --> 01:07:59,599
+additional needs and I was a consultant on various different projects and I was trying to help sort of some wacky things get off the ground
+
+792
+01:07:59,599 --> 01:08:08,079
+and uh yeah I just I'm really grateful to Block that they afforded me the freedom to have that role in my career as well.
+
+793
+01:08:08,079 --> 01:08:13,200
+Maybe one more question before I take us to uh to fail corner which I'll explain.
+
+794
+01:08:13,200 --> 01:08:16,640
+So you've shared a few lessons of things you've learned over the course of your career.
+
+795
+01:08:16,640 --> 01:08:25,920
+Are there any other just let's say core leadership lessons that you've learned that have you think have been important to you being successful at the work that you've done?
+
+796
+01:08:25,920 --> 01:08:28,480
+I think start small with everything.
+
+797
+01:08:28,480 --> 01:08:37,759
+Like if you try to boil the ocean to make a cup of tea, I don't know who said that, but it's a really a useful phrase that I keep coming back
+
+798
+01:08:37,759 --> 01:08:38,960
+to.
+
+799
+01:08:38,960 --> 01:08:41,199
+Uh you'll you'll never get there.
+
+800
+01:08:41,199 --> 01:08:44,159
+So if you're making a cup of tea, just make the cup of tea.
+
+801
+01:08:44,159 --> 01:08:47,040
+You don't need to boil all the water that there is.
+
+802
+01:08:47,040 --> 01:08:49,120
+That sounds like really a not delicious tea.
+
+803
+01:08:49,120 --> 01:08:51,759
+Ocean ocean water.
+
+804
+01:08:51,759 --> 01:09:01,440
+Uh yeah, I think uh there's another one of like um I think Carl Sean said uh if you want to make an apple pie from scratch,
+
+805
+01:09:01,440 --> 01:09:03,520
+you have to first invent the universe.
+
+806
+01:09:03,520 --> 01:09:10,480
+So it's like narrow your scope to the thing that's in front of you and that's achievable.
+
+807
+01:09:10,480 --> 01:09:18,480
+And so that that I think is really important and that's one of our core tenets and always has been even when we were just square in the early days.
+
+808
+01:09:18,480 --> 01:09:19,759
+Start small.
+
+809
+01:09:19,759 --> 01:09:23,759
+Is there an example that that maybe worked really well or maybe didn't work?
+
+810
+01:09:23,759 --> 01:09:25,600
+>> Yeah, I mean, Goose started small.
+
+811
+01:09:25,600 --> 01:09:34,640
+It was just an engineer working on their own time trying to build something that was useful and that satisfied a thesis
+
+812
+01:09:34,640 --> 01:09:35,359
+that they had.
+
+813
+01:09:35,359 --> 01:09:46,080
+So, uh, Brad, our creator of Goose, um, believed very early on, I think long before we heard the buzzword going around that agents would be how we
+
+814
+01:09:46,080 --> 01:09:53,440
+unlock value from LLMs and he built a proof of concept and he shared it with a bunch of people.
+
+815
+01:09:53,440 --> 01:10:02,000
+he shared with data bricks and anthropic got them excited and you know learned a lot from them and so it just sort of built momentum from there and even
+
+816
+01:10:02,000 --> 01:10:07,520
+internally it was um quite a quite a similar thing.
+
+817
+01:10:07,520 --> 01:10:16,560
+Cash app itself was like that and cash app started more or less as a hack week sort of idea and grew into a bigger and bigger and bigger
+
+818
+01:10:16,560 --> 01:10:17,360
+thing.
+
+819
+01:10:17,360 --> 01:10:25,199
+So a lot of our projects start with these small experiments that we try to then build on top of.
+
+820
+01:10:25,199 --> 01:10:34,960
+Um we became the very first co company that was a public company to launch a Bitcoin product and that was again a hack week
+
+821
+01:10:34,960 --> 01:10:40,320
+idea that um actually Jack and me and another engineer worked on.
+
+822
+01:10:40,320 --> 01:10:41,679
+Uh >> that was the hackathon team.
+
+823
+01:10:41,679 --> 01:10:43,794
+You and Jack Dorsey and an engineer.
+
+824
+01:10:43,794 --> 01:10:45,840
+[laughter] Yeah, it was the three of us.
+
+825
+01:10:45,840 --> 01:10:46,480
+>> Unreal.
+
+826
+01:10:46,480 --> 01:10:49,280
+>> And um yeah, and and it was great.
+
+827
+01:10:49,280 --> 01:10:57,760
+It was we we went and bought a cup of coffee at Blue Bottle >> and it was bought using Bitcoin over Cash Card.
+
+828
+01:10:57,760 --> 01:11:02,000
+And I'll tell you that was in in hindsight probably the most expensive cup of coffee.
+
+829
+01:11:02,000 --> 01:11:02,880
+>> What was Bitcoin at?
+
+830
+01:11:02,880 --> 01:11:06,800
+Like 20,000 six or 7,000 back then.
+
+831
+01:11:06,800 --> 01:11:07,120
+>> Yeah.
+
+832
+01:11:07,120 --> 01:11:07,840
+>> Oh no.
+
+833
+01:11:07,840 --> 01:11:09,840
+It's like 120,000 now.
+
+834
+01:11:09,840 --> 01:11:10,239
+Great.
+
+835
+01:11:10,239 --> 01:11:11,280
+>> Yeah.
+
+836
+01:11:11,280 --> 01:11:11,600
+>> Inflation.
+
+837
+01:11:11,600 --> 01:11:22,800
+Um, but yeah, it's an example of how, you know, you you get to a working useful product to people if you focus on a small thing first and then build.
+
+838
+01:11:22,800 --> 01:11:29,280
+>> And just to double down on this, this counter to okay, we have a big idea, we're just going to put a bunch of resources on it and go big immediately.
+
+839
+01:11:29,280 --> 01:11:30,080
+>> Yeah, absolutely.
+
+840
+01:11:30,080 --> 01:11:32,719
+And I've been part of teams like that, too.
+
+841
+01:11:32,719 --> 01:11:43,840
+So uh in my career I worked at Google on this product called Google Wave which was trying to be everything to everyone and you know
+
+842
+01:11:43,840 --> 01:11:51,199
+we were 70 80 engineers building this thing before it even really had any users outside Google.
+
+843
+01:11:51,199 --> 01:12:01,760
+And so I think that's an example of something that started big, tried to go big on day one and probably lacked some of that meeting
+
+844
+01:12:01,760 --> 01:12:08,080
+the earth um where where reality lies and and and adapting accordingly.
+
+845
+01:12:08,080 --> 01:12:09,120
+>> I remember Google Wave.
+
+846
+01:12:09,120 --> 01:12:09,840
+Uh absolutely.
+
+847
+01:12:09,840 --> 01:12:10,880
+It was beautiful.
+
+848
+01:12:10,880 --> 01:12:11,679
+A lot of hype.
+
+849
+01:12:11,679 --> 01:12:15,840
+I don't remember what it was for specifically, but it it looked really nice.
+
+850
+01:12:15,840 --> 01:12:16,080
+>> Yeah.
+
+851
+01:12:16,080 --> 01:12:18,159
+I mean a lot of learnings from that one for me.
+
+852
+01:12:18,159 --> 01:12:19,040
+Yep.
+
+853
+01:12:19,040 --> 01:12:19,520
+>> What else?
+
+854
+01:12:19,520 --> 01:12:20,960
+Any other big lessons?
+
+855
+01:12:20,960 --> 01:12:22,239
+Those two are the big ones.
+
+856
+01:12:22,239 --> 01:12:27,280
+But I would also say like questionbased assumptions on everything.
+
+857
+01:12:27,280 --> 01:12:38,480
+You know, sometimes we get into traps where we are as professionals hyperfocused on what we're building that
+
+858
+01:12:38,480 --> 01:12:40,480
+day, that week, that month.
+
+859
+01:12:40,480 --> 01:12:44,159
+And we don't stop to think, should we even build this at all?
+
+860
+01:12:44,159 --> 01:12:46,480
+Or what's the purpose of building this?
+
+861
+01:12:46,480 --> 01:12:54,080
+could rebuild something completely different that would matter more to our core reason for being.
+
+862
+01:12:54,080 --> 01:12:57,360
+So I would say yeah question the sort of base assumptions.
+
+863
+01:12:57,360 --> 01:13:03,280
+It's somewhat of a cliche but you really need to remind yourself to apply it over and over and over again.
+
+864
+01:13:03,280 --> 01:13:08,560
+>> I had a colleague of yours on the podcast back in the day IO who worked with you on Cash App.
+
+865
+01:13:08,560 --> 01:13:09,040
+>> Yeah.
+
+866
+01:13:09,040 --> 01:13:09,760
+>> He's a friend of mine.
+
+867
+01:13:09,760 --> 01:13:11,199
+He's uh amazing.
+
+868
+01:13:11,199 --> 01:13:17,600
+He had met a quote along those lines of just like I forget exactly what it was, but it was just like get to the bare metal of the thing that you're working on.
+
+869
+01:13:17,600 --> 01:13:22,960
+Just like touch the thing that you're building and go to the the base of it to really understand what's going on.
+
+870
+01:13:22,960 --> 01:13:26,880
+And I imagine that was really important with building Cash App and Cash Guard.
+
+871
+01:13:26,880 --> 01:13:32,480
+>> Yeah, IO's uh one of the best product people I've ever worked with and um you know,
+
+872
+01:13:32,480 --> 01:13:34,239
+one of my closest friends actually.
+
+873
+01:13:34,239 --> 01:13:38,159
+So, absolutely with him on and you on that one.
+
+874
+01:13:38,159 --> 01:13:38,800
+Yeah.
+
+875
+01:13:38,800 --> 01:13:39,120
+Okay.
+
+876
+01:13:39,120 --> 01:13:41,600
+I'm going to take us to a a recurring segment on the podcast.
+
+877
+01:13:41,600 --> 01:13:42,719
+I call fail corner.
+
+878
+01:13:42,719 --> 01:13:46,080
+You already shared one example of a product that failed that you worked on.
+
+879
+01:13:46,080 --> 01:13:57,040
+I'm curious if there's another and the question is just what's a product you worked on that did not work out because people listening to this have all hear all these amazing successful people come on the podcast share all these stories
+
+880
+01:13:57,040 --> 01:14:03,040
+of success, endless success, but they don't hear the stories of when things don't work out.
+
+881
+01:14:03,040 --> 01:14:07,920
+And so the question is just what's a product you're working on that didn't work out and what did that teach you?
+
+882
+01:14:07,920 --> 01:14:09,600
+It's a very valuable point.
+
+883
+01:14:09,600 --> 01:14:15,520
+I mean, my career has basically been a string of failed product on top of failed product.
+
+884
+01:14:15,520 --> 01:14:18,880
+And I think that yeah, the Google Wave example is there.
+
+885
+01:14:18,880 --> 01:14:23,120
+I worked for hot minute on Google+ which was another epic failure.
+
+886
+01:14:23,120 --> 01:14:23,600
+>> Good one.
+
+887
+01:14:23,600 --> 01:14:32,719
+>> I worked at this social networking startup called Secret, which um you know, burned hot for a bright minute and then blew up.
+
+888
+01:14:32,719 --> 01:14:40,400
+And then there was uh an email startup that we did and that was again very promising.
+
+889
+01:14:40,400 --> 01:14:42,640
+Uh and then that sort of fizzled.
+
+890
+01:14:42,640 --> 01:14:46,159
+So the the co-founder of Canva and I worked on that one.
+
+891
+01:14:46,159 --> 01:14:49,440
+So there's been a whole string of failures.
+
+892
+01:14:49,440 --> 01:14:58,800
+But at each point I think I learned something and I learned that you know I need to never make that class of
+
+893
+01:14:58,800 --> 01:15:01,280
+failures or errors again.
+
+894
+01:15:01,280 --> 01:15:11,120
+And so Cash App was probably like the big success for me, that a product that I worked on that was very early on and grew to be um this sort of giant business and and
+
+895
+01:15:11,120 --> 01:15:13,360
+product that people love.
+
+896
+01:15:13,360 --> 01:15:21,679
+And so yeah, that that's been my career is essentially taking the learnings from all these failures,
+
+897
+01:15:21,679 --> 01:15:27,600
+getting some humility out of it in the process too, coming into things.
+
+898
+01:15:27,600 --> 01:15:36,000
+Um, willing to listen to other people's points of view, critical points of view, and not just kind of thinking that I have all the answers.
+
+899
+01:15:36,000 --> 01:15:36,719
+Yeah.
+
+900
+01:15:36,719 --> 01:15:39,600
+>> And I I bet all these products that fail had really beautiful code.
+
+901
+01:15:39,600 --> 01:15:43,132
+A lot of really good architecture decisions were made.
+
+902
+01:15:43,132 --> 01:15:48,800
+[laughter] Some of them Some of them were awful in every way.
+
+903
+01:15:48,800 --> 01:15:50,880
+So many reasons for it to fail.
+
+904
+01:15:50,880 --> 01:15:51,760
+Incredible.
+
+905
+01:15:51,760 --> 01:15:59,520
+Uh Dandre, is there anything else that you wanted to share or I don't know, double down on before we get to our very exciting lightning round?
+
+906
+01:15:59,520 --> 01:16:09,280
+Uh, I would say, you know, I think that we're in this era of a lot of change and people are scared or reticent or
+
+907
+01:16:09,280 --> 01:16:12,320
+uncertain about where things are going.
+
+908
+01:16:12,320 --> 01:16:17,840
+And I think that look at the things that matter to you.
+
+909
+01:16:17,840 --> 01:16:25,120
+You know, for us, it's open source, open protocols, improving access for everyone.
+
+910
+01:16:25,120 --> 01:16:32,880
+You know, I've been very lucky in my career to only work on products that are either free or almost free to anyone,
+
+911
+01:16:32,880 --> 01:16:39,600
+you know, or they have a free tier and then you kind of pay for some premium services and that are usable by everyone.
+
+912
+01:16:39,600 --> 01:16:50,800
+So, like anyone can become a Square seller, you know, I I remember even in the early days people used it to pay each other as a a peer-to-peer money transfer system.
+
+913
+01:16:50,800 --> 01:16:55,920
+And that's why we built cash app and that was really successful on the back of that.
+
+914
+01:16:55,920 --> 01:17:04,880
+So I think it's really look at the things that are important to you um and optimize for them.
+
+915
+01:17:04,880 --> 01:17:16,800
+It's not really that important that the technology trends are going in a certain way because technology is here to serve us and if we have an important reason for being and
+
+916
+01:17:16,800 --> 01:17:26,960
+an important purpose then we can make that technology serve us and that's much more important than uh being deep with the technology or being at the forefront of every trend.
+
+917
+01:17:26,960 --> 01:17:31,840
+>> Uh such great advice when there's so much to pay attention to and so much happening.
+
+918
+01:17:31,840 --> 01:17:35,360
+so stressful to feel like I'm just not aware of all the things.
+
+919
+01:17:35,360 --> 01:17:39,600
+I'm not as good as all these people I'm seeing on social media about what's happening with AI.
+
+920
+01:17:39,600 --> 01:17:41,040
+I'm just like so behind.
+
+921
+01:17:41,040 --> 01:17:45,360
+Uh what I'm hearing from you is just like what is actually important to you and just do that.
+
+922
+01:17:45,360 --> 01:17:51,040
+Don't feel like you need to be the best at everything that's happening and on top of all the latest AI news.
+
+923
+01:17:51,040 --> 01:17:52,000
+>> Yeah, exactly.
+
+924
+01:17:52,000 --> 01:17:57,408
+And like if it's not meaningful and fun, then you shouldn't be doing it probably.
+
+925
+01:17:57,408 --> 01:18:01,280
+[laughter] >> With that, Dan, we've reached our very exciting lightning round.
+
+926
+01:18:01,280 --> 01:18:02,560
+And I've got five questions for you.
+
+927
+01:18:02,560 --> 01:18:03,440
+Are you ready?
+
+928
+01:18:03,440 --> 01:18:04,480
+>> Okay, shoot.
+
+929
+01:18:04,480 --> 01:18:07,040
+>> Uh, I see so many books behind you, so I love this first question.
+
+930
+01:18:07,040 --> 01:18:08,640
+I'm excited to see what you pick.
+
+931
+01:18:08,640 --> 01:18:12,239
+What are two or three books that you find yourself recommending most to other people?
+
+932
+01:18:12,239 --> 01:18:12,560
+Yeah.
+
+933
+01:18:12,560 --> 01:18:22,560
+So, I'm very uh much of the opinion that you shouldn't read books that are about like your daily work or your
+
+934
+01:18:22,560 --> 01:18:24,080
+professional life.
+
+935
+01:18:24,080 --> 01:18:25,920
+I I read fiction.
+
+936
+01:18:25,920 --> 01:18:26,960
+I read classics.
+
+937
+01:18:26,960 --> 01:18:29,840
+I I read poetry, philosophy, history.
+
+938
+01:18:29,840 --> 01:18:40,640
+These are the books I really enjoy and I think it expands your mind and gives you creative ideas and helps you question things about the human condition and that's much more
+
+939
+01:18:40,640 --> 01:18:46,560
+valuable than like some self-help book on or some get good at being an engineering manager book.
+
+940
+01:18:46,560 --> 01:18:53,840
+So uh yeah having said that the master and margarita by Mika Bulgakov is one that I really love.
+
+941
+01:18:53,840 --> 01:18:58,080
+It's a masterpiece of Russian literature.
+
+942
+01:18:58,080 --> 01:19:08,640
+And then um I've always been drawn to Tennyson's poetry and I find that um on in the times when I'm most uncertain and
+
+943
+01:19:08,640 --> 01:19:16,960
+or grieving uh Tennyson's poetry has always kind of resonated with me and and and helped me find a center.
+
+944
+01:19:16,960 --> 01:19:17,440
+>> Wow.
+
+945
+01:19:17,440 --> 01:19:20,000
+>> Those two never heard these recommendations before.
+
+946
+01:19:20,000 --> 01:19:21,760
+I'm really excited to check these out.
+
+947
+01:19:21,760 --> 01:19:26,320
+Very cool for a CTO of of a big tech company.
+
+948
+01:19:26,320 --> 01:19:30,159
+What is a favorite recent movie or TV show you really enjoyed?
+
+949
+01:19:30,159 --> 01:19:33,520
+Alien Earth I think is pretty awesome.
+
+950
+01:19:33,520 --> 01:19:43,920
+It's by Noah Holly who did the Fargo TV series and so it's a kind of, you know, it's someone with like all of these incredible skills
+
+951
+01:19:43,920 --> 01:19:55,520
+in high art film making who's doing like a pulp sci-fi show and it just looks stunning and it feels stunning and it captures all of that essential alien
+
+952
+01:19:55,520 --> 01:19:58,800
+uh pulpiness that makes it so interesting and fun.
+
+953
+01:19:58,800 --> 01:20:00,159
+So, I really like that.
+
+954
+01:20:00,159 --> 01:20:04,640
+And I'm also watching Slow Horses, which I think is one of the better shows on TV.
+
+955
+01:20:04,640 --> 01:20:05,600
+>> Love Slow Horses.
+
+956
+01:20:05,600 --> 01:20:07,120
+The new season's out.
+
+957
+01:20:07,120 --> 01:20:09,679
+I think the fifth episode just dropped the day we're recording this.
+
+958
+01:20:09,679 --> 01:20:11,120
+So, um, I love that show.
+
+959
+01:20:11,120 --> 01:20:12,880
+Alien Earth, also just watched it.
+
+960
+01:20:12,880 --> 01:20:16,480
+So creepy and just like all these slimy, gooey little creatures just crawling around.
+
+961
+01:20:16,480 --> 01:20:18,320
+It's disturbing.
+
+962
+01:20:18,320 --> 01:20:24,080
+>> I just love the aesthetic and they captured something essential about like the original alien.
+
+963
+01:20:24,080 --> 01:20:32,159
+And yeah, and they do it like every scene in Alien Earth feels like you're watching a painting or something or you know,
+
+964
+01:20:32,159 --> 01:20:33,600
+someone's reading a novel to you.
+
+965
+01:20:33,600 --> 01:20:36,480
+It's like really unfolds very thoughtfully.
+
+966
+01:20:36,480 --> 01:20:40,800
+I've never watched any alien content in the in my life and I really enjoyed Alien Earth.
+
+967
+01:20:40,800 --> 01:20:43,840
+I will say the ending I was just like like it felt like it kind of slowed down a bit.
+
+968
+01:20:43,840 --> 01:20:46,080
+I'm just like, "All right, I guess I see where it's going now."
+
+969
+01:20:46,080 --> 01:20:48,320
+But it was really fun to watch.
+
+970
+01:20:48,320 --> 01:20:49,440
+Okay, next question.
+
+971
+01:20:49,440 --> 01:20:51,679
+Do you have a favorite product you really enjoyed?
+
+972
+01:20:51,679 --> 01:20:52,000
+Sorry.
+
+973
+01:20:52,000 --> 01:20:54,960
+Your favorite product you recently discovered that you really enjoy.
+
+974
+01:20:54,960 --> 01:20:58,400
+Could be an app, could be a gadget, could be some kitchen thing.
+
+975
+01:20:58,400 --> 01:21:00,159
+>> Uh, well, I'm a gamer.
+
+976
+01:21:00,159 --> 01:21:01,199
+I love playing games.
+
+977
+01:21:01,199 --> 01:21:05,600
+So, for me, it's the Steam Deck, the Steam Deck OLED, which is their latest version.
+
+978
+01:21:05,600 --> 01:21:10,800
+It's like this gorgeous piece of hardware that lets you play, you know, the best games out there,
+
+979
+01:21:10,800 --> 01:21:15,120
+but it's totally extensible and customizable.
+
+980
+01:21:15,120 --> 01:21:21,199
+And in this era where like we're constantly told by big tech companies that we need to lock everything down.
+
+981
+01:21:21,199 --> 01:21:27,840
+We need to lock down the user experience and customizability in order to have things work for people.
+
+982
+01:21:27,840 --> 01:21:31,360
+I think Valve showed that's totally unnecessary and totally wrong.
+
+983
+01:21:31,360 --> 01:21:38,480
+And you can build, you know, the Steam Deck, you can install competing app stores, you can install Windows on it,
+
+984
+01:21:38,480 --> 01:21:44,080
+you can treat it like a computer, write programs, which I have done, um to run on it.
+
+985
+01:21:44,080 --> 01:21:48,239
+Uh, so yeah, I think it's an incredible thing and it looks beautiful and it works great.
+
+986
+01:21:48,239 --> 01:21:50,640
+So yeah, big fan.
+
+987
+01:21:50,640 --> 01:21:55,360
+>> Do you have a favorite life motto that you find yourself coming back to often in work or in life?
+
+988
+01:21:55,360 --> 01:22:04,239
+If you're not waking up in the morning feeling energized about what you're going to do that day in your professional life,
+
+989
+01:22:04,239 --> 01:22:14,239
+then change something like quit if that's what it comes down to or find a new way of doing what you're doing,
+
+990
+01:22:14,239 --> 01:22:14,639
+you know?
+
+991
+01:22:14,639 --> 01:22:18,159
+Just don't accept what's meed out to you.
+
+992
+01:22:18,159 --> 01:22:18,480
+Yeah.
+
+993
+01:22:18,480 --> 01:22:22,719
+So, that's that's how I've tried to do things and sometimes it works, sometimes not.
+
+994
+01:22:22,719 --> 01:22:25,440
+But yeah, it's a good thing to ask yourself.
+
+995
+01:22:25,440 --> 01:22:26,880
+>> I I really love this advice.
+
+996
+01:22:26,880 --> 01:22:29,679
+It's really hard to do that for a lot of people.
+
+997
+01:22:29,679 --> 01:22:34,159
+Is there anything that has helped you get over that fear of just like, "Oh man, I'm going to quit this thing.
+
+998
+01:22:34,159 --> 01:22:36,000
+I don't know where I'm going to go next."
+
+999
+01:22:36,000 --> 01:22:45,120
+The main thing is telling yourself that a year from now, you're going to look back on what looks
+
+1000
+01:22:45,120 --> 01:22:52,080
+like a monumental problem, a life-changing thing, and you're going to be like, "Oh, that was so trivial."
+
+1001
+01:22:52,080 --> 01:23:00,159
+You know, like a lot of times we get into these traps where we're overthinking something or really nervous about making
+
+1002
+01:23:00,159 --> 01:23:05,760
+a change, but in hindsight, those don't seem that big.
+
+1003
+01:23:05,760 --> 01:23:12,800
+And you know, all the time that's passed since and all the events that have happened teach you that there's more to the world.
+
+1004
+01:23:12,800 --> 01:23:19,760
+And you know, it's never too late to do something useful or never too late to do something that's for yourself and improving yourself.
+
+1005
+01:23:19,760 --> 01:23:30,639
+So yeah, I think just kind of remembering that like things are not as big or bleak or decisive as they seem in the moment is always important.
+
+1006
+01:23:30,639 --> 01:23:32,000
+>> Final question.
+
+1007
+01:23:32,000 --> 01:23:35,840
+So you were a mad scientist at Square for many years.
+
+1008
+01:23:35,840 --> 01:23:41,280
+Do you have a another favorite mad scientist from pop culture or real life?
+
+1009
+01:23:41,280 --> 01:23:42,239
+>> That's an interesting one.
+
+1010
+01:23:42,239 --> 01:23:49,760
+I think the image that always comes to my mind is uh Doc Brown from Back to the Future.
+
+1011
+01:23:49,760 --> 01:23:56,080
+I feel like he's the canonical mad scientist of my generation anyway.
+
+1012
+01:23:56,080 --> 01:24:01,360
+Uh but there have been a lot in like video games and stuff too, but he was the one that was like,
+
+1013
+01:24:01,360 --> 01:24:07,920
+I'm just going to do this crazy thing because I almost have this burning desire need to do it and whether I want to or not,
+
+1014
+01:24:07,920 --> 01:24:09,679
+I must build this time machine.
+
+1015
+01:24:09,679 --> 01:24:15,679
+And he spends the entire movie um trying to fix the problems that it creates.
+
+1016
+01:24:15,679 --> 01:24:20,800
+But yeah, that he's always been uh like a really fun character for me.
+
+1017
+01:24:20,800 --> 01:24:24,000
+You know what I think about I think about Pinky from Pinky in the Brain.
+
+1018
+01:24:24,000 --> 01:24:24,560
+I don't know.
+
+1019
+01:24:24,560 --> 01:24:25,920
+That's a good one.
+
+1020
+01:24:25,920 --> 01:24:26,483
+>> Yeah.
+
+1021
+01:24:26,483 --> 01:24:29,600
+[laughter] >> Oh man, Danie, this was awesome.
+
+1022
+01:24:29,600 --> 01:24:30,639
+You are wonderful.
+
+1023
+01:24:30,639 --> 01:24:31,920
+Thank you so much for being here.
+
+1024
+01:24:31,920 --> 01:24:34,480
+Two final questions before we actually wrap up.
+
+1025
+01:24:34,480 --> 01:24:41,199
+Where can folks find you online if they want to reach out, learn more about, say, Goose or anything else going on at Block?
+
+1026
+01:24:41,199 --> 01:24:43,120
+And how can listeners be useful to you?
+
+1027
+01:24:43,120 --> 01:24:50,719
+I mean, check out our GitHub pages uh for Goose and all of the other open source projects we have at Block.
+
+1028
+01:24:50,719 --> 01:24:53,760
+So, there's a lot that's useful there.
+
+1029
+01:24:53,760 --> 01:24:58,639
+Um, we do a lot on Android open source as well, so check that stuff out.
+
+1030
+01:24:58,639 --> 01:25:02,080
+You can always find me on LinkedIn, so feel free to connect.
+
+1031
+01:25:02,080 --> 01:25:12,560
+um I'm very happy to be contacted and I would say the way people can be useful is you know again going back to
+
+1032
+01:25:12,560 --> 01:25:23,040
+this era we're in of a lot of change and uncertainty I think people that demand more of their companies of their employers of their
+
+1033
+01:25:23,040 --> 01:25:33,199
+teams you know demand something better like at block we always ask can we default to making this open source can we build this for people that are not
+
+1034
+01:25:33,199 --> 01:25:35,360
+just us or our customers.
+
+1035
+01:25:35,360 --> 01:25:37,360
+Can everyone benefit?
+
+1036
+01:25:37,360 --> 01:25:48,400
+And I think that's particularly important in this era of AI where everyone's kind of locking themselves in walled gardens and trying to capture parts of the platform that are emerging.
+
+1037
+01:25:48,400 --> 01:25:58,719
+So yeah, just demand more of of people, you know, like the the internet was created as a promise for open sharing of information
+
+1038
+01:25:58,719 --> 01:26:00,320
+and to the benefit of all.
+
+1039
+01:26:00,320 --> 01:26:07,840
+And I think that AI should realize that for us and so yeah, just demand that of people.
+
+1040
+01:26:07,840 --> 01:26:09,280
+>> A really beautiful way to end it.
+
+1041
+01:26:09,280 --> 01:26:11,520
+Doni, thank you so much for being here.
+
+1042
+01:26:11,520 --> 01:26:12,239
+>> Thank you, Lenny.
+
+1043
+01:26:12,239 --> 01:26:13,440
+I really appreciated it.
+
+1044
+01:26:13,440 --> 01:26:14,080
+Thank you.
+
+1045
+01:26:14,080 --> 01:26:15,280
+>> I appreciate you.
+
+1046
+01:26:15,280 --> 01:26:17,120
+Bye, everyone.
+
+1047
+01:26:17,120 --> 01:26:18,480
+>> Thank you so much for listening.
+
+1048
+01:26:18,480 --> 01:26:22,880
+If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify,
+
+1049
+01:26:22,880 --> 01:26:24,960
+or your favorite podcast app.
+
+1050
+01:26:24,960 --> 01:26:31,280
+Also, please consider giving us a rating or leaving a review as that really helps other listeners find the [music] podcast.
+
+1051
+01:26:31,280 --> 01:26:36,719
+You can find all past episodes or learn more about the show at lennispodcast.com.
+
+1052
+01:26:36,719 --> 01:26:40,520
+See you in the next episode.

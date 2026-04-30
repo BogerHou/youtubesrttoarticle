@@ -1,0 +1,951 @@
+1
+00:00:00,080 --> 00:00:02,960
+I built a simple website that makes 40K a month.
+
+2
+00:00:02,960 --> 00:00:04,240
+This is Angus Chang.
+
+3
+00:00:04,240 --> 00:00:08,080
+He lives in Hong Kong and he built the simplest website I've ever seen.
+
+4
+00:00:08,080 --> 00:00:10,719
+>> I built a website that literally does one thing.
+
+5
+00:00:10,719 --> 00:00:15,360
+>> And what's even crazier is that he operates this business entirely as a solopreneur.
+
+6
+00:00:15,360 --> 00:00:19,279
+Solo founder, zero employees, 100% bootstrapped.
+
+7
+00:00:19,279 --> 00:00:21,680
+>> I bootstrapped this entire business by myself.
+
+8
+00:00:21,680 --> 00:00:28,320
+>> I brought Angus onto the channel and he broke down how he found a silly idea that thousands of people also happen to need.
+
+9
+00:00:28,320 --> 00:00:34,640
+why spending money on ads actually hurt his business and why having a big strategy is for losers.
+
+10
+00:00:34,640 --> 00:00:35,840
+All right, let's dive in.
+
+11
+00:00:35,840 --> 00:00:41,239
+I'm Pat Walls and this is Starter Story.
+
+12
+00:00:41,680 --> 00:00:43,360
+All right, welcome Angus to the channel.
+
+13
+00:00:43,360 --> 00:00:44,239
+Thank you for coming on.
+
+14
+00:00:44,239 --> 00:00:47,120
+Tell me about who you are, what you built, and what's your story.
+
+15
+00:00:47,120 --> 00:00:48,160
+>> My name is Angus Chang.
+
+16
+00:00:48,160 --> 00:00:50,160
+I built a business that does just one thing.
+
+17
+00:00:50,160 --> 00:00:55,840
+I launched it in 2021 and today it makes $40,000 a month and I run it entirely by myself.
+
+18
+00:00:55,840 --> 00:01:02,399
+All right, before we get into the numbers of this amazing business that you built, I want to hear how did you come up with the idea for Bank Statement Converter?
+
+19
+00:01:02,399 --> 00:01:05,360
+>> I had just quit my job and I knew I was going to build some sort of product.
+
+20
+00:01:05,360 --> 00:01:06,960
+I actually had planned to build something else.
+
+21
+00:01:06,960 --> 00:01:09,920
+But on the side, I was thinking, you know, I've got X amount of money in the bank.
+
+22
+00:01:09,920 --> 00:01:13,200
+I want to know how long I can continue living the way I'm living.
+
+23
+00:01:13,200 --> 00:01:15,680
+And to do that, I wanted multiple years of bank data.
+
+24
+00:01:15,680 --> 00:01:20,479
+I wanted it all in a nice Excel spreadsheet so I can kind of figure out, okay, it looks like I'm spending this much a month.
+
+25
+00:01:20,479 --> 00:01:25,040
+And that was a lot harder than I thought it would be because my bank only provided PDF bank statements.
+
+26
+00:01:25,040 --> 00:01:29,840
+So, I wrote some code to get the transaction data out of the bank statements and that was also really hard.
+
+27
+00:01:29,840 --> 00:01:31,600
+So, I figured it must be a real problem.
+
+28
+00:01:31,600 --> 00:01:32,560
+>> Okay, you found the idea.
+
+29
+00:01:32,560 --> 00:01:33,920
+Lots of people have ideas all the time.
+
+30
+00:01:33,920 --> 00:01:35,759
+How did you know that this could be a business?
+
+31
+00:01:35,759 --> 00:01:41,280
+>> Often I like to just make an MVP as quickly as possible, get it into production and then get it in front of real users.
+
+32
+00:01:41,280 --> 00:01:42,240
+And that's kind of what I did.
+
+33
+00:01:42,240 --> 00:01:44,400
+So, me and a friend worked on it for about a week.
+
+34
+00:01:44,400 --> 00:01:49,520
+We got a domain, we launched it, and then we bought Google ads to get people to start clicking into the domain.
+
+35
+00:01:49,520 --> 00:01:53,920
+And immediately people started uploading bank statements, which kind of validated the problem.
+
+36
+00:01:53,920 --> 00:01:57,360
+You know, >> I think a lot of people watching this will be looking for how do I find a simple idea?
+
+37
+00:01:57,360 --> 00:01:59,520
+How do I find this kind of app that can do one thing?
+
+38
+00:01:59,520 --> 00:02:01,840
+I can build it myself and it can become a business.
+
+39
+00:02:01,840 --> 00:02:04,719
+Do you have any sort of framework or strategy around finding these ideas?
+
+40
+00:02:04,719 --> 00:02:08,800
+>> I think a good way is if you encounter the problem yourself or a painoint yourself.
+
+41
+00:02:08,800 --> 00:02:12,080
+Another way is your colleagues or friends complain about stuff at work.
+
+42
+00:02:12,080 --> 00:02:16,720
+But sometimes I just get ideas and I just think of the smallest possible way to implement that idea.
+
+43
+00:02:16,720 --> 00:02:19,360
+You know, get it out there and see if people will use it.
+
+44
+00:02:19,360 --> 00:02:24,319
+You can try to validate before launching, but if it takes you like one or two weeks to make an MVP,
+
+45
+00:02:24,319 --> 00:02:25,840
+it's not that much of a risk anyway.
+
+46
+00:02:25,840 --> 00:02:27,440
+So, you might as well just build it.
+
+47
+00:02:27,440 --> 00:02:27,599
+>> Okay.
+
+48
+00:02:27,599 --> 00:02:31,840
+So, we talked about finding the idea, but I want to hear more about how you actually built this thing.
+
+49
+00:02:31,840 --> 00:02:34,800
+How did you go from idea to real live website?
+
+50
+00:02:34,800 --> 00:02:38,080
+>> When I proved this out, I had a local version that would work for my own bank.
+
+51
+00:02:38,080 --> 00:02:39,120
+I wrote this in Cotlin.
+
+52
+00:02:39,120 --> 00:02:40,720
+It was basically a console application.
+
+53
+00:02:40,720 --> 00:02:43,840
+And then I generalized it a bit so that it would work with other bank statements.
+
+54
+00:02:43,840 --> 00:02:55,200
+Like obviously I don't know if it works for every bank statement but I tried it out with some of my other banks and some of my friends banks and then I convinced a friend to help me build the UI for this and he did this in Nex.js and then we got the two things deployed.
+
+55
+00:02:55,200 --> 00:02:56,959
+I got the front end on Netifi.
+
+56
+00:02:56,959 --> 00:03:01,440
+I deployed the back end to uh EC2 on AWS and that's kind of how we did it.
+
+57
+00:03:01,440 --> 00:03:01,840
+>> Cool.
+
+58
+00:03:01,840 --> 00:03:05,519
+You probably build a bunch of other apps and you learned a lot in the process of what works and what doesn't.
+
+59
+00:03:05,519 --> 00:03:07,280
+What's your kind of framework for building?
+
+60
+00:03:07,280 --> 00:03:08,560
+What's the Angus method?
+
+61
+00:03:08,560 --> 00:03:10,560
+>> It's kind of like a lean startup approach.
+
+62
+00:03:10,560 --> 00:03:13,360
+you know, you make an MVP, launch it as quickly as possible.
+
+63
+00:03:13,360 --> 00:03:16,000
+Try to get it in front of your target audience, whoever they are.
+
+64
+00:03:16,000 --> 00:03:21,040
+Don't show it to your friends and family, you know, they will just lie to you and they're probably not going to buy your product anyway.
+
+65
+00:03:21,040 --> 00:03:24,000
+And then you build your features based on real user feedback.
+
+66
+00:03:24,000 --> 00:03:26,640
+So maybe somebody emails you or maybe like analytics.
+
+67
+00:03:26,640 --> 00:03:30,000
+So if you notice that people are dropping off on this page, maybe you need to do something there.
+
+68
+00:03:30,000 --> 00:03:33,840
+If people are not using a certain feature, maybe don't continue working on it.
+
+69
+00:03:33,840 --> 00:03:34,080
+>> All right.
+
+70
+00:03:34,080 --> 00:03:36,239
+Well, let's get into some of the numbers of this.
+
+71
+00:03:36,239 --> 00:03:39,760
+Can you give me a timeline of the growth of bank statement converter?
+
+72
+00:03:39,760 --> 00:03:42,239
+So 2021 we launched bank statement converter.
+
+73
+00:03:42,239 --> 00:03:45,280
+2022 we hit 6,000 USD MRR.
+
+74
+00:03:45,280 --> 00:03:47,120
+2023 14,000.
+
+75
+00:03:47,120 --> 00:03:48,879
+2024 27,000.
+
+76
+00:03:48,879 --> 00:03:51,360
+And today it's at 40,000 USD MR.
+
+77
+00:03:51,360 --> 00:03:53,200
+>> Total number of users 75,000.
+
+78
+00:03:53,200 --> 00:03:57,680
+Paying customers about a,000 and traffic per month about 40,000.
+
+79
+00:03:57,680 --> 00:03:58,000
+>> All right.
+
+80
+00:03:58,000 --> 00:04:01,439
+So everyone watching this right now is probably wondering, okay, it's cool how you built it,
+
+81
+00:04:01,439 --> 00:04:02,879
+but how did you actually market it?
+
+82
+00:04:02,879 --> 00:04:04,000
+How did you get customers?
+
+83
+00:04:04,000 --> 00:04:07,360
+Was there a specific strategy that made this thing go up?
+
+84
+00:04:07,360 --> 00:04:09,120
+>> At first, I bought Google search ads.
+
+85
+00:04:09,120 --> 00:04:13,840
+These were good for getting the initial users, but I was never able to run an ad campaign profitably.
+
+86
+00:04:13,840 --> 00:04:19,120
+So, I would spend maybe $1,000 on ads and bring in about $300 in sales.
+
+87
+00:04:19,120 --> 00:04:22,800
+I spent a lot of time trying to optimize these ads, trying to get them more profitable,
+
+88
+00:04:22,800 --> 00:04:24,000
+but never really worked out.
+
+89
+00:04:24,000 --> 00:04:25,919
+I tried blogging and building in public.
+
+90
+00:04:25,919 --> 00:04:27,520
+That gets quite a lot of attention.
+
+91
+00:04:27,520 --> 00:04:32,800
+However, I don't think I get many users from doing that because my users don't seem to be using Twitter or reading my blog.
+
+92
+00:04:32,800 --> 00:04:38,240
+I also tried sending out cold emails and in 3 months of doing that, I got one sale and I also annoyed a lot of people.
+
+93
+00:04:38,240 --> 00:04:39,840
+I got a lot of angry messages back.
+
+94
+00:04:39,840 --> 00:04:41,120
+People don't really like cold emails.
+
+95
+00:04:41,120 --> 00:04:45,360
+After about 6 months of running Google search ads, I decided, you know, I'm just not going to do this anymore.
+
+96
+00:04:45,360 --> 00:04:46,960
+I might not even do this app anymore.
+
+97
+00:04:46,960 --> 00:04:49,680
+I cut the ads and I thought maybe go back to work.
+
+98
+00:04:49,680 --> 00:04:52,320
+And interestingly, I stopped paying for ads.
+
+99
+00:04:52,320 --> 00:04:55,360
+So, I knew everyone who was clicking on the website was an organic user.
+
+100
+00:04:55,360 --> 00:04:57,360
+And I noticed I started getting new users.
+
+101
+00:04:57,360 --> 00:04:59,680
+I'd get like two or three new signups a day.
+
+102
+00:04:59,680 --> 00:05:02,639
+From that point on, I kind of focused on improving the products.
+
+103
+00:05:02,639 --> 00:05:05,840
+When customers complained about things, I would fix them.
+
+104
+00:05:05,840 --> 00:05:09,199
+and I just basically focused on doing what the customers wanted.
+
+105
+00:05:09,199 --> 00:05:13,360
+>> All right, real quick before we get into how Angus built this $30,000 per month business,
+
+106
+00:05:13,360 --> 00:05:17,600
+let's talk about something that matters a lot once your business starts making money.
+
+107
+00:05:17,600 --> 00:05:18,160
+Banking.
+
+108
+00:05:18,160 --> 00:05:22,240
+The truth is most banks aren't built for solo founders and SAS builders.
+
+109
+00:05:22,240 --> 00:05:27,840
+They slow you down with low card limits, delayed payments, and systems that feel like they were made in 2004.
+
+110
+00:05:27,840 --> 00:05:33,360
+That's why we're partnering with Brex, the modern finance platform that's built from the ground up for startups.
+
+111
+00:05:33,360 --> 00:05:37,199
+With Brex, you can get up to 20x higher card limits.
+
+112
+00:05:37,199 --> 00:05:44,320
+Earn high yields on your cash, automate expenses, invoices, and vendor payments, and move money instantly when you need it.
+
+113
+00:05:44,320 --> 00:05:50,400
+It's fast, flexible, and made to scale with you, no matter how small or scrappy your SAS is right now.
+
+114
+00:05:50,400 --> 00:05:54,880
+We worked with them to put together a free guide called The Startup's Guide to Modern Banking.
+
+115
+00:05:54,880 --> 00:06:00,320
+It breaks down how to protect your cash, extend runway, and upgrade your finance stack without wasting time.
+
+116
+00:06:00,320 --> 00:06:03,280
+Just click the first link in the description to download it.
+
+117
+00:06:03,280 --> 00:06:05,120
+Thank you to Brex for supporting the channel.
+
+118
+00:06:05,120 --> 00:06:06,240
+Let's get back to the video.
+
+119
+00:06:06,240 --> 00:06:08,319
+All right, so you got this website making a bunch of money.
+
+120
+00:06:08,319 --> 00:06:09,199
+It's a great business.
+
+121
+00:06:09,199 --> 00:06:10,639
+You have a team working on this.
+
+122
+00:06:10,639 --> 00:06:11,440
+>> No, it's just me.
+
+123
+00:06:11,440 --> 00:06:14,639
+I started this business with a friend, but he left after a few weeks.
+
+124
+00:06:14,639 --> 00:06:18,000
+I do all the development, customer support, sales, and marketing.
+
+125
+00:06:18,000 --> 00:06:18,240
+>> All right.
+
+126
+00:06:18,240 --> 00:06:22,319
+So, you went from working a 9 toive job to being a soloreneur, running your own business.
+
+127
+00:06:22,319 --> 00:06:23,840
+What was that transition like?
+
+128
+00:06:23,840 --> 00:06:28,400
+working for a company, you kind of spend a lot of time like playing, you know, refactoring code,
+
+129
+00:06:28,400 --> 00:06:30,080
+trying out databases you think are cool.
+
+130
+00:06:30,080 --> 00:06:35,120
+But when you work for yourself, you quickly realize these things don't make any money and potentially are a waste of time.
+
+131
+00:06:35,120 --> 00:06:36,560
+So, your focus is really different.
+
+132
+00:06:36,560 --> 00:06:43,199
+You go from being like a developer who cares about writing nice code to a developer who cares about business features and more business aligned,
+
+133
+00:06:43,199 --> 00:06:43,840
+I suppose.
+
+134
+00:06:43,840 --> 00:06:44,080
+>> Yeah.
+
+135
+00:06:44,080 --> 00:06:49,120
+In your experience becoming a solarreneur, what are some of the pros and cons of the solarreneur lifestyle?
+
+136
+00:06:49,120 --> 00:06:50,639
+>> When I first started, it was a big change.
+
+137
+00:06:50,639 --> 00:06:54,000
+Most of my friends I knew, most of the people I hung out with were people from work.
+
+138
+00:06:54,000 --> 00:06:55,440
+You know, you go out for drinks or whatever.
+
+139
+00:06:55,440 --> 00:06:59,919
+And then I went to working for myself, just being at home all day, basically not socializing.
+
+140
+00:06:59,919 --> 00:07:06,560
+It's kind of a big change when you go from making maybe like $10,000 a month to 200 a month and you're basically hanging out with no one.
+
+141
+00:07:06,560 --> 00:07:08,800
+So being a soloreneur can be pretty depressing.
+
+142
+00:07:08,800 --> 00:07:12,400
+Another thing is people often don't really get what you're doing, especially when you're failing to make money.
+
+143
+00:07:12,400 --> 00:07:16,400
+I remember in the first two years people didn't understand why I did it and they would also,
+
+144
+00:07:16,400 --> 00:07:19,520
+you know, hear the revenue and they would tell me, "Oh, this is like a crappy business.
+
+145
+00:07:19,520 --> 00:07:20,400
+you shouldn't go after this.
+
+146
+00:07:20,400 --> 00:07:23,840
+And then multiple years later when it's making a lot more money, those same people will say like,
+
+147
+00:07:23,840 --> 00:07:24,960
+"Oh, it's a great business."
+
+148
+00:07:24,960 --> 00:07:26,800
+Some pros, it's good to have your own schedule.
+
+149
+00:07:26,800 --> 00:07:29,280
+Often I wake up and go hiking instead of going to work.
+
+150
+00:07:29,280 --> 00:07:31,759
+It's nice to be like on a different schedule to everyone else.
+
+151
+00:07:31,759 --> 00:07:35,840
+If you're starting up a VC back startup, you have a boss, you have investors, you got a lot of time pressure.
+
+152
+00:07:35,840 --> 00:07:37,759
+As a soloreneur, you can go a bit slower.
+
+153
+00:07:37,759 --> 00:07:41,840
+I mean, depending on how much money you have saved up, and you can also go after much smaller markets.
+
+154
+00:07:41,840 --> 00:07:45,120
+A venture capitalist wouldn't want to invest in bank statement converter.
+
+155
+00:07:45,120 --> 00:07:46,000
+It doesn't make enough money.
+
+156
+00:07:46,000 --> 00:07:46,960
+The market's not big enough.
+
+157
+00:07:46,960 --> 00:07:49,199
+But for a single person, you know, it's enough, right?
+
+158
+00:07:49,199 --> 00:07:51,360
+And you can be quite happy with that revenue.
+
+159
+00:07:51,360 --> 00:07:51,680
+>> Cool.
+
+160
+00:07:51,680 --> 00:07:52,800
+Now, you have this great business.
+
+161
+00:07:52,800 --> 00:07:53,680
+You're a solopreneur.
+
+162
+00:07:53,680 --> 00:07:54,639
+What were you doing before?
+
+163
+00:07:54,639 --> 00:07:55,520
+Were you a developer?
+
+164
+00:07:55,520 --> 00:07:57,840
+What was your kind of journey to starting your own business?
+
+165
+00:07:57,840 --> 00:07:58,960
+>> I've always been a developer.
+
+166
+00:07:58,960 --> 00:08:01,599
+In 2010, I worked for an EPS machine company.
+
+167
+00:08:01,599 --> 00:08:02,960
+2010 to 2014.
+
+168
+00:08:02,960 --> 00:08:06,960
+I worked for myself developing indie games for the Xbox Live indie game store.
+
+169
+00:08:06,960 --> 00:08:10,000
+I also developed a virtual girlfriend app for Android and iOS.
+
+170
+00:08:10,000 --> 00:08:11,120
+It's called Girlfriend Plus.
+
+171
+00:08:11,120 --> 00:08:14,319
+2017 to 2019, I worked in an investment bank in Hong Kong.
+
+172
+00:08:14,319 --> 00:08:16,400
+2020 I worked at a crypto company.
+
+173
+00:08:16,400 --> 00:08:17,759
+We're building a crypto exchange.
+
+174
+00:08:17,759 --> 00:08:20,319
+2021 I launched bank statement converter.
+
+175
+00:08:20,319 --> 00:08:20,560
+>> Okay.
+
+176
+00:08:20,560 --> 00:08:21,840
+Let's talk about tech stack.
+
+177
+00:08:21,840 --> 00:08:22,960
+I know you're a developer.
+
+178
+00:08:22,960 --> 00:08:26,639
+Can you share with me the entire stack of how you built this app?
+
+179
+00:08:26,639 --> 00:08:28,560
+The core engine is written in Cotlin.
+
+180
+00:08:28,560 --> 00:08:29,919
+It's like a JVM language.
+
+181
+00:08:29,919 --> 00:08:32,159
+Nex.js is what the front end is written in.
+
+182
+00:08:32,159 --> 00:08:34,560
+I use Brevo for transactional emails.
+
+183
+00:08:34,560 --> 00:08:37,519
+I use AWS EC2 instances to host the back end.
+
+184
+00:08:37,519 --> 00:08:39,039
+Netlefi to host the front end.
+
+185
+00:08:39,039 --> 00:08:40,719
+Stripe for payment processing.
+
+186
+00:08:40,719 --> 00:08:41,599
+And that's about it.
+
+187
+00:08:41,599 --> 00:08:42,320
+a lot of profit.
+
+188
+00:08:42,320 --> 00:08:45,440
+It's like 39 out of $40,000 is profit.
+
+189
+00:08:45,440 --> 00:08:46,480
+Yeah.
+
+190
+00:08:46,480 --> 00:08:46,720
+>> All right.
+
+191
+00:08:46,720 --> 00:08:47,920
+So, you built this awesome business.
+
+192
+00:08:47,920 --> 00:08:49,680
+You've been working on it for a number of years.
+
+193
+00:08:49,680 --> 00:08:52,080
+What have you learned in the process that surprised you?
+
+194
+00:08:52,080 --> 00:08:56,480
+>> In the first two years, I was working extremely hard on the business and making basically no money.
+
+195
+00:08:56,480 --> 00:08:58,480
+You know, I spent a lot of hours developing the app.
+
+196
+00:08:58,480 --> 00:09:00,720
+I'd reply to customer emails as soon as possible.
+
+197
+00:09:00,720 --> 00:09:04,080
+If a customer email came in at 3:00 a.m., I would deal with it right away.
+
+198
+00:09:04,080 --> 00:09:07,760
+You know, at that time, every extra customer made a big impact on MR.
+
+199
+00:09:07,760 --> 00:09:12,480
+And what I realized was that those first two years of hard work, you don't get paid much,
+
+200
+00:09:12,480 --> 00:09:17,200
+but you kind of get the money for that hard work in like years four and onwards.
+
+201
+00:09:17,200 --> 00:09:21,360
+The last question that I want to ask is what we ask everyone who comes on to Starter Story.
+
+202
+00:09:21,360 --> 00:09:25,279
+If you could stand on Angus' shoulder when you quit your job, you're building that app.
+
+203
+00:09:25,279 --> 00:09:26,959
+It was making a few dollars in revenue.
+
+204
+00:09:26,959 --> 00:09:28,399
+What advice would you give him?
+
+205
+00:09:28,399 --> 00:09:30,320
+>> SAS is an excellent business model.
+
+206
+00:09:30,320 --> 00:09:33,600
+Make sure you save enough money to survive multiple years of no income.
+
+207
+00:09:33,600 --> 00:09:37,120
+If you only have enough money for a few months of runway, you're probably not going to make it,
+
+208
+00:09:37,120 --> 00:09:37,360
+you know?
+
+209
+00:09:37,360 --> 00:09:41,839
+I mean, it took me two or three years before I could pay rent with the revenue I was getting in.
+
+210
+00:09:41,839 --> 00:09:42,800
+Ignore social media.
+
+211
+00:09:42,800 --> 00:09:46,959
+That's, you know, a lot of people think they need to build a following on social media before building a business.
+
+212
+00:09:46,959 --> 00:09:48,320
+I think it's a waste of time.
+
+213
+00:09:48,320 --> 00:09:50,160
+Building a following on social media is hard work.
+
+214
+00:09:50,160 --> 00:09:53,600
+And even if you have it, your business might still not be very good.
+
+215
+00:09:53,600 --> 00:09:54,959
+So, just focus on the business.
+
+216
+00:09:54,959 --> 00:09:55,839
+Focus on the product.
+
+217
+00:09:55,839 --> 00:09:57,120
+Get some real users.
+
+218
+00:09:57,120 --> 00:09:58,000
+Improve the product.
+
+219
+00:09:58,000 --> 00:10:01,120
+And it should be easy to get more users if your product solves their problem.
+
+220
+00:10:01,120 --> 00:10:03,760
+Don't make a Facebook, Instagram, and Twitter page for your business.
+
+221
+00:10:03,760 --> 00:10:06,240
+See a lot of people do this, and I think it's a waste of time as well.
+
+222
+00:10:06,240 --> 00:10:07,040
+That was awesome.
+
+223
+00:10:07,040 --> 00:10:08,399
+Thank you, Angus, for coming on.
+
+224
+00:10:08,399 --> 00:10:09,839
+I love the business that you built.
+
+225
+00:10:09,839 --> 00:10:10,880
+It's going to keep growing.
+
+226
+00:10:10,880 --> 00:10:11,440
+It's awesome.
+
+227
+00:10:11,440 --> 00:10:14,720
+Thanks for sharing everything with the audience and hope to see you back on soon.
+
+228
+00:10:14,720 --> 00:10:18,959
+Angus is proof that you can build simple apps that actually make money.
+
+229
+00:10:18,959 --> 00:10:24,399
+He found a tiny problem, built a solution for himself, and then turned it into a life-changing business.
+
+230
+00:10:24,399 --> 00:10:29,600
+I think anyone can take this framework and strategy and turn it into their own micro SASS.
+
+231
+00:10:29,600 --> 00:10:33,440
+If you want to learn more about how to build simple apps, check out Starter Story Build.
+
+232
+00:10:33,440 --> 00:10:38,160
+In about 2 weeks, you'll go from a simple idea to a fully operational app.
+
+233
+00:10:38,160 --> 00:10:44,560
+We'll guide you on how to use AI to build and design your app, and then we'll challenge you on how to launch it into the real world.
+
+234
+00:10:44,560 --> 00:10:48,640
+Just head to the link in the description to learn more and join Starter Story Build.
+
+235
+00:10:48,640 --> 00:10:49,200
+All right, guys.
+
+236
+00:10:49,200 --> 00:10:49,920
+Thanks for watching.
+
+237
+00:10:49,920 --> 00:10:51,200
+I'll see you in the next one.
+
+238
+00:10:51,200 --> 00:10:53,839
+Peace.

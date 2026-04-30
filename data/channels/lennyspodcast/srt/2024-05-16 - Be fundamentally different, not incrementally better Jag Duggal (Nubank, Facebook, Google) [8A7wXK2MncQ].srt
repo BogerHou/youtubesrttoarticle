@@ -1,0 +1,4196 @@
+1
+00:00:00,040 --> 00:00:07,240
+NewBank is bigger than Coinbase, Robinhood, 
+Affirm, SoFi, and Lemonade combined. 80% to 90%  
+
+2
+00:00:07,240 --> 00:00:12,120
+of NewBank's growth is through word of mouth.
+We're not trying to be incrementally better,  
+
+3
+00:00:12,120 --> 00:00:17,720
+we are trying to be fundamentally different. We 
+want our customers to love us fanatically.
+ 
+
+4
+00:00:17,720 --> 00:00:20,680
+It feels like NewBank is one of the 
+historically most successful companies  
+
+5
+00:00:20,680 --> 00:00:24,280
+that launching new business lines.
+We built a lending product, we built  
+
+6
+00:00:24,280 --> 00:00:28,240
+an investment product, we built an insurance 
+product, we built a series of small business  
+
+7
+00:00:28,240 --> 00:00:33,760
+products. We rarely scale a project until 
+we know the Sean Ellis score hit a threshold  
+
+8
+00:00:33,760 --> 00:00:36,560
+that we find really compelling.
+I want to talk about strategy.
+ 
+
+9
+00:00:36,560 --> 00:00:41,920
+Kevin Systrom in the early days of Instagram, I 
+heard him say it at a conference. We may not be  
+
+10
+00:00:41,920 --> 00:00:46,960
+right, but at least we are clear. Even if your 
+strategy isn't right, you have a very clear  
+
+11
+00:00:46,960 --> 00:00:51,200
+idea of what was supposed to be happening.
+Where do you think all this goes in the future?
+ 
+
+12
+00:00:51,200 --> 00:00:59,920
+Why not have the company that reinvents banking 
+come out of Sao Paulo, Mexico City, Bogota?
+ 
+
+13
+00:01:01,520 --> 00:01:06,560
+Today my guest is Jag Dougal. Jag is chief product 
+Officer at NewBank, which is one of the most  
+
+14
+00:01:06,560 --> 00:01:12,040
+under-the-radar monster businesses that you'll 
+ever come across with a fanatical user base, and a  
+
+15
+00:01:12,040 --> 00:01:17,040
+really unique approach to building product. Before 
+NewBank Jag was director of product management at  
+
+16
+00:01:17,040 --> 00:01:21,440
+Facebook, leading monetization of video and 
+third-party content, including news, gaming,  
+
+17
+00:01:21,440 --> 00:01:26,080
+and influencer content. Prior to Facebook, he 
+was senior vice president of product and strategy  
+
+18
+00:01:26,080 --> 00:01:32,280
+at Quantcast, and group product manager and head 
+of strategy for Display ads at Google, which was  
+
+19
+00:01:32,280 --> 00:01:37,080
+Google's second-largest business at the time.
+In our conversation, we cover how to build  
+
+20
+00:01:37,080 --> 00:01:42,760
+products that people become fanatical about, 
+how to develop a strategy, category design,  
+
+21
+00:01:42,760 --> 00:01:49,360
+product line expansion, the future of FinTech 
+and tons more. With that, I bring you Jag Dougal  
+
+22
+00:01:49,360 --> 00:01:54,120
+after a short word from our sponsors. And if you 
+enjoy this podcast, don't forget to subscribe  
+
+23
+00:01:54,120 --> 00:01:58,920
+and follow it in your favorite podcasting app or 
+YouTube. It's the best way to avoid missing future  
+
+24
+00:01:58,920 --> 00:02:06,200
+episodes, and it helps the podcast tremendously.
+This episode is brought to you by Work OS. If  
+
+25
+00:02:06,200 --> 00:02:10,400
+you're building a SaaS app, at some point your 
+customers will start asking for enterprise  
+
+26
+00:02:10,400 --> 00:02:16,400
+features like SAML authentication and skim 
+provisioning. That's where Work OS comes in,  
+
+27
+00:02:16,400 --> 00:02:21,960
+making it fast and painless to add enterprise 
+features to your app. Their APIs are easy to  
+
+28
+00:02:21,960 --> 00:02:26,360
+understand so that you can ship quickly and 
+get back to building other features. Today,  
+
+29
+00:02:26,360 --> 00:02:30,720
+hundreds of companies are already powered 
+by Work OS, including ones you probably  
+
+30
+00:02:30,720 --> 00:02:37,160
+know like Vercell, Webflow and Loom.
+Work OS also recently acquired Warrant  
+
+31
+00:02:37,160 --> 00:02:43,080
+the Fine-Grain Authorization Service. Warrant's 
+product is based on a groundbreaking authorization  
+
+32
+00:02:43,080 --> 00:02:48,480
+system called Zanzibar, which was originally 
+designed for Google to power Google Docs and  
+
+33
+00:02:48,480 --> 00:02:54,000
+YouTube. This enables fast authorization checks 
+at enormous scale, while maintaining a flexible  
+
+34
+00:02:54,000 --> 00:02:59,000
+model that can be adapted to even the most complex 
+use cases. If you're currently looking to build  
+
+35
+00:02:59,000 --> 00:03:04,840
+role-based access control or other enterprise 
+features like single sign-on, Skim or user  
+
+36
+00:03:04,840 --> 00:03:09,840
+management, you should consider Work OS.
+It's a drop-in replacement for Auth zero  
+
+37
+00:03:09,840 --> 00:03:16,400
+and supports up to 1 million monthly active 
+users for free. Check it out at workos.com to  
+
+38
+00:03:16,400 --> 00:03:23,960
+learn more. That's workos.com. This episode 
+is brought to you by Mercury. Mercury knows  
+
+39
+00:03:23,960 --> 00:03:28,640
+your financial operations are complex. It 
+doesn't have to be this way. I've been a  
+
+40
+00:03:28,640 --> 00:03:33,080
+super happy customer of Mercury for over a 
+year now, and it's honestly hard to imagine  
+
+41
+00:03:33,080 --> 00:03:38,840
+a better online banking experience can exist.
+Most founders and finance teams have to couple  
+
+42
+00:03:38,840 --> 00:03:43,720
+together a patchwork of tools to reconcile 
+transactions from different sources, work extra  
+
+43
+00:03:43,720 --> 00:03:48,600
+hard just to get a holistic view of cash flow 
+and have maps to company priorities, and struggle  
+
+44
+00:03:48,600 --> 00:03:53,320
+to get answers from platforms that all speak 
+different languages. Mercury knows that there's  
+
+45
+00:03:53,320 --> 00:03:58,960
+an art to simplifying this complex patchwork 
+with new bill pay and accounting capabilities,  
+
+46
+00:03:58,960 --> 00:04:04,480
+you can pay bills faster, stay in control of 
+company spend, and speed up reconciliation.
+ 
+
+47
+00:04:04,480 --> 00:04:09,320
+The end result is the precision control and 
+focus that startups need to transform how  
+
+48
+00:04:09,320 --> 00:04:16,200
+they operate. Apply in minutes at Mercury.com, 
+and join over 200,000 ambitious startups like  
+
+49
+00:04:16,200 --> 00:04:22,120
+mine that trust Mercury to get them to perform 
+at their best. Mercury, the art of simplified  
+
+50
+00:04:22,120 --> 00:04:26,800
+finances. Mercury is a financial technology 
+company, not a bank. Banking services provided  
+
+51
+00:04:26,800 --> 00:04:35,800
+by Choice Financial Group and Evolve Bank and 
+trust, members of FDIC. Jag, thank you so much  
+
+52
+00:04:35,800 --> 00:04:39,920
+for being here. Welcome to the podcast.
+Lenny, I'm honored to be here. I'm a big  
+
+53
+00:04:39,920 --> 00:04:44,120
+fan of the show, and look forward to the 
+conversation, so thanks for having me.
+ 
+
+54
+00:04:44,120 --> 00:04:48,760
+I'm even more honored. Thank you for being 
+here. I want to start by sharing just some  
+
+55
+00:04:48,760 --> 00:04:53,520
+facts about NewBank that I think are going to 
+blow people's minds. I think a lot of people  
+
+56
+00:04:53,520 --> 00:04:58,160
+in the US especially are sleeping on NewBank, 
+and I think this is going to help people that  
+
+57
+00:04:58,160 --> 00:05:00,720
+are listening pay even more attention 
+to the stuff we're going to talk about  
+
+58
+00:05:00,720 --> 00:05:05,920
+and the lessons we're going to share.
+So one, NewBank is bigger than Coinbase,  
+
+59
+00:05:05,920 --> 00:05:15,720
+Robinhood, Affirm, SoFi, and Lemonade combined. 
+80% to 90% of new Bank's growth is through word  
+
+60
+00:05:15,720 --> 00:05:22,920
+of mouth. Three, NewBank has more customers than 
+Bank of America, which is one of the four big  
+
+61
+00:05:22,920 --> 00:05:29,160
+banks in the US, while also only operating 
+in three countries in Latin America.
+ 
+
+62
+00:05:29,160 --> 00:05:31,440
+That's right.
+And then also, you guys  
+
+63
+00:05:31,440 --> 00:05:38,320
+held the Guinness world record for the world's 
+largest simultaneous unboxing for a credit card  
+
+64
+00:05:38,320 --> 00:05:42,640
+that you launched at some point. Although I think 
+somebody beat that record, is that accurate?
+ 
+
+65
+00:05:42,640 --> 00:05:48,760
+I believe that is correct. We've recently set 
+a new world record for the first underwater  
+
+66
+00:05:48,760 --> 00:05:54,400
+credit card transaction, so we're always 
+looking for some fun things to do there.
+ 
+
+67
+00:05:54,400 --> 00:05:57,640
+I like that that's a record no one can break 
+because it was the first one. That's a sneaky  
+
+68
+00:05:57,640 --> 00:06:05,920
+way to get a record. That's hilarious. So my sense 
+is the reason that NewBank thrived and made it is,  
+
+69
+00:06:05,920 --> 00:06:10,520
+there's this obsession with building a product 
+that customers are fanatical about. The stat  
+
+70
+00:06:10,520 --> 00:06:15,120
+that I shared of 80% to 90% of growth is word 
+of mouth. And this idea of growing through  
+
+71
+00:06:15,120 --> 00:06:20,200
+word of mouth in this way is the dream of every 
+company, whether you're consumer business, B2B,  
+
+72
+00:06:20,200 --> 00:06:24,280
+a bank especially, very unlikely that you 
+grow at this rate through word of mouth.
+ 
+
+73
+00:06:24,280 --> 00:06:28,360
+So I want to try to help people learn from what 
+you guys have figured out about how to drive  
+
+74
+00:06:28,360 --> 00:06:34,240
+such massive word of mouth growth. And maybe 
+just to start from the product perspective,  
+
+75
+00:06:34,240 --> 00:06:39,320
+how do you build a product team and a product 
+development process that enables you to build  
+
+76
+00:06:39,320 --> 00:06:43,960
+a product that people get fanatical about. And 
+just want to tell all their friends about?
+ 
+
+77
+00:06:43,960 --> 00:06:50,200
+Yeah, I think there are a few things that are 
+the fundamentals of making that happen. And  
+
+78
+00:06:50,200 --> 00:06:57,640
+to be clear, a lot of this predates my joining 
+the company a little short of five years ago,  
+
+79
+00:06:57,640 --> 00:07:04,120
+but I think is an incredible story and is part of 
+what inspired me to join. But first I would say,  
+
+80
+00:07:04,120 --> 00:07:13,640
+really think hard and tap into a very deep pain 
+point. The large incumbent Brazilian banks were  
+
+81
+00:07:13,640 --> 00:07:19,800
+amongst the most profitable in the world, they 
+were also amongst the most hated in the world.
+ 
+
+82
+00:07:19,800 --> 00:07:25,600
+And my personal experience with that is early 
+in my career, 20 years earlier in the late '90s,  
+
+83
+00:07:25,600 --> 00:07:31,280
+I had done a consulting project in Sao Paulo. 
+And I remember walking to lunch one day with  
+
+84
+00:07:31,280 --> 00:07:39,040
+the client, who's a friend of mine, and we were 
+going to Classic Churrasque Korea in Sao Paulo.  
+
+85
+00:07:39,040 --> 00:07:47,360
+And we were walking by his bank branch, and 
+we were at a stoplight, and he basically said,  
+
+86
+00:07:47,360 --> 00:07:52,160
+that's my bank and I hate them. It was 1997.
+And it always stuck in my head. It stuck in my  
+
+87
+00:07:52,160 --> 00:07:58,800
+head for 20 years later when David first reached 
+out to me. So we were tapping into a deep pain  
+
+88
+00:07:58,800 --> 00:08:05,360
+point, we can go into exactly why. But that was 
+one thing. The second thing that I would say,  
+
+89
+00:08:05,360 --> 00:08:11,480
+and this is very intentional from David, 
+and Ed, and Chris, our founders, is we have  
+
+90
+00:08:11,480 --> 00:08:18,960
+a culture at NewBank, which is the most alive in 
+our employees' minds that I've ever experienced.  
+
+91
+00:08:18,960 --> 00:08:24,280
+Having worked at Google, and Facebook, and other 
+places like that, I would bet that probably 80%  
+
+92
+00:08:24,280 --> 00:08:29,120
+to 90% of our employees could recite the five 
+values to you if you stop them in the hall.
+ 
+
+93
+00:08:29,120 --> 00:08:38,520
+It's not just on the wall somewhere. And the first 
+of those values is a very peculiar phrase, set of  
+
+94
+00:08:38,520 --> 00:08:46,240
+words strung together. We want our customers 
+to love us fanatically. And I remember when  
+
+95
+00:08:46,240 --> 00:08:51,920
+I interviewed at NewBank for the first time, and 
+actually flew down to Sao Paulo, I remember seeing  
+
+96
+00:08:51,920 --> 00:08:58,040
+that phrase and thinking, "These are my guys. 
+These guys are taking this seriously." And a lot  
+
+97
+00:08:58,040 --> 00:09:03,880
+of my interview process from my side was really 
+vetting if that was real, or if that was a sign  
+
+98
+00:09:03,880 --> 00:09:10,600
+on the wall. So you start with the intent that 
+you are going to make your customers love you.
+ 
+
+99
+00:09:10,600 --> 00:09:19,400
+And there are a million reasons, operational, 
+convenience, short-term financial viability,  
+
+100
+00:09:19,400 --> 00:09:27,480
+which is a real thing when you're a venture-funded 
+startup. Any number of reasons why you can  
+
+101
+00:09:27,480 --> 00:09:33,160
+compromise those things on the edges, and in a 
+decision day to day, minute to minute, "We can  
+
+102
+00:09:33,160 --> 00:09:39,440
+cut the edges, cut the corner here on that." And 
+look, I don't think we have been perfect on that,  
+
+103
+00:09:39,440 --> 00:09:47,200
+but we try very hard. And when there are hard 
+decisions to be made, we bias in favor of the  
+
+104
+00:09:47,200 --> 00:09:52,440
+customer. The customer's love, will they want 
+to tell their friends, and neighbors, and family  
+
+105
+00:09:52,440 --> 00:09:58,840
+about it? And so I think that's the heart of it.
+Once you get those things right, the deep pain  
+
+106
+00:09:58,840 --> 00:10:09,000
+point, and a culture that is maniacal about making 
+your customers fanatical, then you start to do the  
+
+107
+00:10:09,640 --> 00:10:16,560
+trade craft of product development. You make sure 
+that you focus on customer discovery before you  
+
+108
+00:10:16,560 --> 00:10:26,440
+start building. You make sure that that discovery 
+is focused not simply on asking the customer,  
+
+109
+00:10:26,440 --> 00:10:31,480
+but on innovating on their behalf. You make sure 
+that you take techniques from all over the place,  
+
+110
+00:10:31,480 --> 00:10:37,640
+from Procter and Gamble, to Google, to you name 
+it, of maybe you can't ask the customer to tell  
+
+111
+00:10:37,640 --> 00:10:44,960
+you what massive new innovation they would love. 
+You've got to observe them, and find their pain  
+
+112
+00:10:44,960 --> 00:10:56,760
+points even when they aren't noticing it.
+And then as you build, you commit to measuring  
+
+113
+00:10:56,760 --> 00:11:02,600
+whether they in fact love the product, not fooling 
+yourself about that. And iterating like crazy over  
+
+114
+00:11:02,600 --> 00:11:07,880
+and over and over again until you get it just 
+right. So those are some of the principles,  
+
+115
+00:11:07,880 --> 00:11:17,440
+but I think the trade craft follows the 
+focus on finding a real deeply held,  
+
+116
+00:11:17,440 --> 00:11:23,720
+emotionally held pain point, and a culture 
+that says, that's your North Star.
+ 
+
+117
+00:11:23,720 --> 00:11:27,240
+Amazing. There's so many threads there I'm going 
+to follow, first of all, I want to go back to the  
+
+118
+00:11:27,240 --> 00:11:30,920
+values. So you said there's five, you mentioned 
+one. Can you just quickly share the rest?
+ 
+
+119
+00:11:30,920 --> 00:11:37,040
+The five, I'll mention them in the order 
+that most resonate with me. First, we want  
+
+120
+00:11:37,040 --> 00:11:44,640
+our customers to love us fanatically. Second, we 
+are hungry and we challenge the status quo. Third,  
+
+121
+00:11:44,640 --> 00:11:52,720
+we build strong and diverse teams. Fourth, we 
+pursue smart efficiency. And one that is in  
+
+122
+00:11:52,720 --> 00:12:01,680
+many ways underlying all of it is, we think 
+and act like owners, not renters. We do what  
+
+123
+00:12:01,680 --> 00:12:11,120
+is right even when no one is telling us to do 
+it. And we have many instances of our employees  
+
+124
+00:12:11,120 --> 00:12:16,520
+taking that degree of extreme ownership as 
+they build products and get them launched.
+ 
+
+125
+00:12:16,520 --> 00:12:21,600
+Okay. And then going back to this idea of 
+building products people love fanatically,  
+
+126
+00:12:21,600 --> 00:12:25,600
+you talked about how there's this the number one 
+principle, and it's going to be on everyone's  
+
+127
+00:12:25,600 --> 00:12:29,600
+minds when they're building is build product 
+people love fanatically. Talked about, you index  
+
+128
+00:12:29,600 --> 00:12:33,680
+towards if you had to make a decision, we're 
+going to do something people love. Is there  
+
+129
+00:12:33,680 --> 00:12:39,120
+anything more you could share about just how you 
+operationalize this? For example, is there design  
+
+130
+00:12:39,120 --> 00:12:44,000
+reviews where just you come in, or your head of 
+design comes in like, "Is this helping customers  
+
+131
+00:12:44,000 --> 00:12:48,960
+love us fanatically?" What's in the systems and 
+processes of how you operate that allows you to  
+
+132
+00:12:48,960 --> 00:12:52,760
+build that other than just cool, everyone has to 
+remember this, this is what we're trying to do.
+ 
+
+133
+00:12:52,760 --> 00:12:58,440
+Yeah, we do a few things. And again, I don't 
+want to also overstate that we've achieved  
+
+134
+00:12:58,440 --> 00:13:08,320
+some nirvana. We honor many of these things in 
+the breach sometimes, but we have a series of  
+
+135
+00:13:08,320 --> 00:13:14,120
+techniques that we've begged, borrowed, stolen 
+from other places, some of which we've invented  
+
+136
+00:13:14,120 --> 00:13:22,320
+on our own. But some examples, we love the Amazon 
+mock press release technique. Explain to me before  
+
+137
+00:13:22,320 --> 00:13:28,600
+we've put a single engineer on the project, not 
+explain to me actually, explain to the intended  
+
+138
+00:13:28,600 --> 00:13:35,360
+customer why they should care. Because if you 
+can't tell me in two paragraphs why the customer  
+
+139
+00:13:35,360 --> 00:13:40,880
+you're building this for should care, then there's 
+still work to do. So that's one technique.
+ 
+
+140
+00:13:40,880 --> 00:13:47,440
+We do have product and design reviews several 
+times a week where we're asking ourselves that  
+
+141
+00:13:47,440 --> 00:13:54,480
+question, why is this great for the customer? Why 
+is this fundamentally different for the customer?  
+
+142
+00:13:54,480 --> 00:14:03,000
+How does this redefine the category that we are 
+thinking about on the dimensions of quality,  
+
+143
+00:14:03,000 --> 00:14:11,120
+on the dimensions of complexity, on the dimensions 
+of price, and usually on the dimensions of all  
+
+144
+00:14:11,120 --> 00:14:16,680
+three of those at the same time? And breaking 
+some of the trade-off constraints that you often  
+
+145
+00:14:16,680 --> 00:14:23,840
+wrestle with, and seeing if that's possible, 
+which isn't always possible, but we frequently  
+
+146
+00:14:23,840 --> 00:14:27,880
+reach for that and sometimes find it.
+And then there are other things you do after  
+
+147
+00:14:27,880 --> 00:14:32,760
+you've built and launched a product, whether it's 
+alpha, beta, or a later stage. The measurement  
+
+148
+00:14:32,760 --> 00:14:40,880
+stuff. And some of your previous guests have 
+talked about product market fit and how do you  
+
+149
+00:14:40,880 --> 00:14:49,680
+measure? Actually, it's strange. I was sitting 
+here in Silicon Valley for well over a decade,  
+
+150
+00:14:49,680 --> 00:14:55,800
+I landed in Sao Paulo when I first joined Newbank. 
+And the small product team at the time is telling  
+
+151
+00:14:55,800 --> 00:15:01,160
+me about this thing called Sean Ellis score. And 
+we recently had Sean visit us in Sao Paulo and  
+
+152
+00:15:01,160 --> 00:15:09,240
+talk to all of the product managers and designers. 
+But we are amongst the most fanatical followers of  
+
+153
+00:15:09,240 --> 00:15:16,560
+his methodology anywhere in the world. We rarely 
+scale a project, a product we've launched, until  
+
+154
+00:15:16,560 --> 00:15:21,960
+we know the Sean Ellis score and we know that it's 
+hit a threshold that we find really compelling.
+ 
+
+155
+00:15:21,960 --> 00:15:24,960
+Can you describe the actual 
+score and the approach?
+ 
+
+156
+00:15:24,960 --> 00:15:31,840
+Yeah, the Sean Ellis score is a really simple 
+methodology used by lots and lots of companies  
+
+157
+00:15:31,840 --> 00:15:38,400
+that a gentleman named Sean Ellis popularized 
+well over a decade ago. Which basically asks  
+
+158
+00:15:38,400 --> 00:15:42,800
+your customers at each stage, and at each 
+stage you have a small number of customers,  
+
+159
+00:15:42,800 --> 00:15:49,080
+then a larger group, and growing over time. But 
+at each stage you ask them, how disappointed would  
+
+160
+00:15:49,080 --> 00:15:57,880
+you be if this product went away? And what Sean 
+has said is that if at least 40% of your customers  
+
+161
+00:15:57,880 --> 00:16:04,280
+are not very disappointed, not just a little 
+disappointed, but very disappointed, he has  
+
+162
+00:16:04,280 --> 00:16:09,240
+essentially a three point scale. Not disappointed, 
+somewhat disappointed, very disappointed.
+ 
+
+163
+00:16:09,240 --> 00:16:14,600
+If at least 40% are not very disappointed, you 
+haven't reached product market fit. Now we've  
+
+164
+00:16:14,600 --> 00:16:21,360
+had to do some things in NewBank, Brazilians 
+are a culturally happier group than the global  
+
+165
+00:16:21,360 --> 00:16:27,080
+average. So for us, our threshold isn't 40%, we've 
+generally moved it up to 50%. I don't believe we  
+
+166
+00:16:27,080 --> 00:16:32,600
+have product market fit unless 50% of Brazilians 
+are telling us they would be very disappointed,  
+
+167
+00:16:32,600 --> 00:16:39,440
+because Brazilians are inherently polite. And 
+more polite and more optimistic than average,  
+
+168
+00:16:39,440 --> 00:16:46,840
+so we make our own little tweaks and adjustments.
+But we find that to be very helpful. As a company,  
+
+169
+00:16:46,840 --> 00:16:55,840
+this extends beyond product, we are addicted to 
+our NPS score. And we reach for world beating net  
+
+170
+00:16:55,840 --> 00:17:02,360
+promoter scores as a company, and product 
+vertical by product vertical as well. And  
+
+171
+00:17:02,360 --> 00:17:10,440
+we are maniacal about tracking how we do. And 
+again, we compensate for some cultural biases,  
+
+172
+00:17:10,440 --> 00:17:15,640
+and we make sure that we hold ourselves to a high 
+bar. But there have been, for example, in Mexico,  
+
+173
+00:17:15,640 --> 00:17:21,760
+we've recorded an NPS when we launched 
+the first couple of years of 94-95.
+ 
+
+174
+00:17:22,280 --> 00:17:26,280
+That's absurd. I've never heard of that.
+Yeah. Which is way better than we got in Brazil,  
+
+175
+00:17:26,280 --> 00:17:32,960
+but our NPS scores skew in the 70s, 80s, and 
+occasionally 90s. And when they dip down even one  
+
+176
+00:17:32,960 --> 00:17:39,080
+or two points, that's a reason for alarm. And we 
+try to figure out why and we try to make sure that  
+
+177
+00:17:39,080 --> 00:17:44,880
+we make the iterations. So those are the things 
+we build in. Those are the things we build in.
+ 
+
+178
+00:17:44,880 --> 00:17:47,760
+I'm glad you got into this, I was going to 
+get into how you measure this stuff. So what  
+
+179
+00:17:47,760 --> 00:17:55,800
+it sounds like is the Sean Ellis survey 
+is used as you iterate and launch towards  
+
+180
+00:17:55,800 --> 00:18:00,320
+launch. And then NPS is maybe post-launch 
+to see how people like the product.
+ 
+
+181
+00:18:00,320 --> 00:18:06,600
+NPS is post-launch. We also look at metrics like 
+churn to make sure that we're not building a leaky  
+
+182
+00:18:06,600 --> 00:18:12,560
+bucket, and that's part of this viral customer 
+acquisition loop that we've built. We want to  
+
+183
+00:18:12,560 --> 00:18:19,240
+make sure we're building products that are great 
+enough that our customers will tell their friends,  
+
+184
+00:18:19,240 --> 00:18:25,640
+and we don't have to invest as much in marketing 
+to drive our growth. And that only works if the  
+
+185
+00:18:25,640 --> 00:18:32,920
+customers you get you retain. I have built earlier 
+in my career products that have leaky buckets,  
+
+186
+00:18:32,920 --> 00:18:39,560
+and that's a very frustrating treadmill to be on. 
+So I am personally maniacal about making sure that  
+
+187
+00:18:39,560 --> 00:18:43,720
+the bucket doesn't have a hole in the bottom.
+So in this Sean Ellis piece, which is really  
+
+188
+00:18:43,720 --> 00:18:46,720
+interesting because I think it's something a 
+lot of people can adopt if they're trying to  
+
+189
+00:18:46,720 --> 00:18:52,480
+build products people love, and also that 
+succeed. Is this a goal for every project?  
+
+190
+00:18:52,480 --> 00:18:56,280
+And I don't know the strategy, or the one 
+pager. Or is it just implied, "Okay, we're  
+
+191
+00:18:56,280 --> 00:19:02,760
+not going to move past this gate if 50%, less 
+than 50% of people are not very disappointed."  
+
+192
+00:19:02,760 --> 00:19:06,600
+Is that how it's operationalized?
+Yeah, we basically operationalize it. We don't  
+
+193
+00:19:06,600 --> 00:19:12,400
+have it as a hard and fast rule that is in black 
+and white, but essentially that's the question  
+
+194
+00:19:12,400 --> 00:19:17,840
+people know they're going to get in any product 
+review that's a post-launch, post data product  
+
+195
+00:19:17,840 --> 00:19:23,120
+review is what's the Sean Ellis score? How do you 
+know that customers love it? Not just like it,  
+
+196
+00:19:23,120 --> 00:19:27,680
+but love it to the degree that they're going to 
+tell their friends about it. That's pretty baked  
+
+197
+00:19:27,680 --> 00:19:30,360
+in culturally at this point.
+This is an incredible insight,  
+
+198
+00:19:30,360 --> 00:19:34,800
+and I think it explains a lot of the success you 
+guys have had. Because that's a very high bar.  
+
+199
+00:19:34,800 --> 00:19:42,240
+Many people run the survey, and getting to past 
+20% is very hard. You have to be very disappointed  
+
+200
+00:19:42,240 --> 00:19:46,680
+if there's a new product they've never used goes 
+away, that's a high bar. Most people are like,  
+
+201
+00:19:46,680 --> 00:19:52,120
+"Ah, whatever. I don't need this thing." 
+And you're saying you look for 50% of  
+
+202
+00:19:52,120 --> 00:19:58,200
+people feeling very disappointed if this new 
+thing they've never used before goes away.
+ 
+
+203
+00:19:58,200 --> 00:20:03,880
+Yeah, that's right. There are several on the newer 
+side of products that we're launching now we're at  
+
+204
+00:20:03,880 --> 00:20:11,920
+borderline 50, and my push to the team is what are 
+the three, four, five things you need to build to  
+
+205
+00:20:11,920 --> 00:20:18,480
+really get decisively beyond 50? And what are the 
+segments or cohorts where it is above 50, and what  
+
+206
+00:20:18,480 --> 00:20:24,440
+is that telling us versus the cohorts where it's 
+lower than that? So we put a lot of analytical  
+
+207
+00:20:24,440 --> 00:20:31,840
+effort, and a lot of depth of thinking. We were 
+in a product review several years ago, and our  
+
+208
+00:20:31,840 --> 00:20:40,720
+lead designer, whose ex Google and ex-Facebook, we 
+were in a review together and the team was saying,  
+
+209
+00:20:40,720 --> 00:20:48,480
+"We think this is good enough for launch."
+And he used the phrase, which both Chris and Kara,  
+
+210
+00:20:48,480 --> 00:20:52,480
+one of our co-founders and I have now adopted, 
+which is, "Good enough, isn't good enough. Is it  
+
+211
+00:20:52,480 --> 00:20:56,880
+great enough?" Is it great enough? Because 
+that's the bar, particularly for some of  
+
+212
+00:20:56,880 --> 00:21:02,640
+our ten-pole products, but we try to apply it 
+largely across the board. A lot of companies,  
+
+213
+00:21:02,640 --> 00:21:09,040
+not just in Brazil or Latam, but everywhere, spend 
+a ton of money on marketing. Their VC budgets,  
+
+214
+00:21:09,040 --> 00:21:14,240
+VC funding basically goes to Google and Facebook. 
+And I've spent a lot of my career taking that  
+
+215
+00:21:14,240 --> 00:21:20,440
+money on board for Google and Facebook. But it is 
+a much better scenario if that's a small portion  
+
+216
+00:21:20,440 --> 00:21:24,480
+of what you're doing, and the main portion of what 
+you're doing is actually investing in making the  
+
+217
+00:21:24,480 --> 00:21:29,600
+product great that you don't have to do that.
+Is there an example of a project that comes to  
+
+218
+00:21:29,600 --> 00:21:33,760
+mind that was below that bar and then 
+you pushed it above where you're like,  
+
+219
+00:21:33,760 --> 00:21:36,840
+"Here's the thing we were missing."?
+Yeah, I'll give you one that we're wrestling with  
+
+220
+00:21:36,840 --> 00:21:45,200
+right now. We have a product called Assistente 
+de Pagamentos, payments assistant. It's right  
+
+221
+00:21:45,200 --> 00:21:49,880
+now only launched in Brazil, we haven't yet 
+launched it in Mexico and Colombia. Paying  
+
+222
+00:21:49,880 --> 00:22:00,640
+bills in Brazil is quite complex. There are four 
+different ways, four different payment rails that  
+
+223
+00:22:00,640 --> 00:22:06,360
+different payments use. From the mobile payment 
+system that has exploded in Brazil the last three  
+
+224
+00:22:06,360 --> 00:22:12,560
+years called PIX, that's become fairly world 
+famous in the FinTech world, to more standard  
+
+225
+00:22:12,560 --> 00:22:18,120
+and some more archaic rails as well.
+So if you're a customer, you've got to  
+
+226
+00:22:18,120 --> 00:22:22,040
+keep track of your bills like we all do. 
+You've got to keep track of which rail,  
+
+227
+00:22:22,040 --> 00:22:26,960
+you got to collect your bills, you got to make 
+sure that you pay them. And some of the rails  
+
+228
+00:22:26,960 --> 00:22:34,400
+actually aren't that reliable. So you've paid 
+it, it doesn't go through. And the consequences  
+
+229
+00:22:34,400 --> 00:22:39,120
+for not paying a bill is getting reported to 
+the credit bureau and becoming what is called  
+
+230
+00:22:39,120 --> 00:22:45,120
+negativado, having a negative mark on your credit 
+report. And that can be a big deal for the average  
+
+231
+00:22:45,120 --> 00:22:52,840
+customer. And so this was a real deep pain point.
+And as we launched the product in a Reid Hoffman  
+
+232
+00:22:52,840 --> 00:23:01,600
+style, if you are not embarrassed by V1 you've 
+waited too long. As we've done that last year,  
+
+233
+00:23:01,600 --> 00:23:10,360
+we found that a very interesting pattern. We 
+had a decent Sean Ellis score, borderline 40%,  
+
+234
+00:23:10,360 --> 00:23:16,600
+I forget the exact number, but basically in 
+that ballpark. But we found that there was a  
+
+235
+00:23:16,600 --> 00:23:25,880
+small cohort of a customer base who had more than 
+four plus commitments registered. And even more so  
+
+236
+00:23:25,880 --> 00:23:32,280
+within that small cohort an even smaller bullseye 
+cohort who had more than four commitments on at  
+
+237
+00:23:32,280 --> 00:23:43,680
+least two of the four rails. And their Sean Ellis 
+score hit 70% and we're like, "Okay, the key is  
+
+238
+00:23:43,680 --> 00:23:51,640
+we need to across these rails, not have them one 
+by one. And we need to make it easy for customers  
+
+239
+00:23:51,640 --> 00:24:00,225
+to onboard multiple bills across multiple rails." 
+And then the automation takes over and people see  
+
+240
+00:24:00,225 --> 00:24:02,560
+the real, benefit because there are ways ...
+Patient takes over and people see the real benefit  
+
+241
+00:24:02,560 --> 00:24:08,120
+because there are ways. On the surface if you 
+said to the average person anywhere, any sort  
+
+242
+00:24:08,120 --> 00:24:15,200
+of developed country, we're going to have a bill 
+auto-pay, that's on the face of it not necessarily  
+
+243
+00:24:15,200 --> 00:24:21,720
+exciting, but if you build it right, it is 
+actually a fundamentally different experience  
+
+244
+00:24:21,720 --> 00:24:28,560
+rather than incrementally better experience. And 
+that's what we've done. We've systematically made  
+
+245
+00:24:28,560 --> 00:24:37,160
+dozens of iterations on the product to allow 
+customers to in one go do multiple bills across  
+
+246
+00:24:37,160 --> 00:24:45,160
+multiple rails and make that tiny bullseye cohort 
+that we had, segment that we had a larger and  
+
+247
+00:24:45,160 --> 00:24:50,520
+larger proportion of the customers who are trying, 
+and by the way, that's a journey still underway.  
+
+248
+00:24:50,520 --> 00:24:58,080
+We have a whole road map for the next year of lots 
+of small quality adjustments that we're going to  
+
+249
+00:24:58,080 --> 00:25:02,720
+make and we're seeing some great feedback. 
+We're now over 10 million monthly actives  
+
+250
+00:25:02,720 --> 00:25:07,880
+on that product when we were struggling in the 
+hundreds of thousands about 15 months ago.
+ 
+
+251
+00:25:07,880 --> 00:25:12,960
+That is a really interesting insight there 
+of just using the score and survey to narrow  
+
+252
+00:25:12,960 --> 00:25:16,800
+in on who actually loves this the most 
+and see if there's something there. Is  
+
+253
+00:25:16,800 --> 00:25:20,760
+that something that you generally do or is that 
+just like, oh wow that came up in this exam?
+ 
+
+254
+00:25:20,760 --> 00:25:27,200
+We do that fairly frequently. When we did our, 
+we have a high income rewards credit card. It's  
+
+255
+00:25:27,200 --> 00:25:32,800
+called Ultravioleta. We went through a similar 
+process where at launch there were many different  
+
+256
+00:25:32,800 --> 00:25:39,400
+customer segments, but there was one that really 
+loved the product and it was not surprising. There  
+
+257
+00:25:39,400 --> 00:25:44,400
+were the ones where the customer spent enough 
+each month that they got the fee waiver and  
+
+258
+00:25:44,400 --> 00:25:50,200
+then all of the other benefits that we had built 
+in really resonated. Whereas if you're paying the  
+
+259
+00:25:50,200 --> 00:25:59,120
+monthly fee, those other benefits were not quite 
+as exciting or didn't quite compensate. So we've  
+
+260
+00:25:59,120 --> 00:26:04,440
+done this several times and we've started recently 
+combining it with trying to get very agile in  
+
+261
+00:26:04,440 --> 00:26:11,240
+getting that feedback from that bullseye segment. 
+So we've told many of our product managers and  
+
+262
+00:26:11,240 --> 00:26:18,400
+designers over the last two years, don't worry 
+about serving 1000 customers, taking three weeks,  
+
+263
+00:26:18,400 --> 00:26:24,080
+serving 1000 customers, getting a bunch of cross 
+tabs. Even at the end of which it's very hard to  
+
+264
+00:26:24,080 --> 00:26:30,120
+read the real fine grain customer feedback.
+So we just tell them, call 10 of them. Pick  
+
+265
+00:26:30,120 --> 00:26:36,760
+up the phone yourself. Don't ask a researcher to 
+come up with a plan to go do the research to then  
+
+266
+00:26:36,760 --> 00:26:43,320
+summarize it, to then bring it to you, which has 
+so many degrees of distance built in. You pick  
+
+267
+00:26:43,320 --> 00:26:50,440
+up the phone, call 10 of them and nine times out 
+of 10, by the time you've made your fifth call,  
+
+268
+00:26:50,440 --> 00:26:54,120
+you could predict what's customer six, seven, 
+eight, nine and 10 are going to tell you. And  
+
+269
+00:26:54,120 --> 00:27:00,320
+then you know what it is that is the gap or what 
+it is that is truly resonating that you want to  
+
+270
+00:27:00,320 --> 00:27:05,640
+double down on. So we're constantly trying to 
+iterate in small ways the ways to get really  
+
+271
+00:27:05,640 --> 00:27:11,160
+that voice of the customer straight lined in 
+to the people who are building the product.
+ 
+
+272
+00:27:11,160 --> 00:27:16,000
+I love this advice. I imagine as a PM that is 
+extremely scary to go call a customer. Most  
+
+273
+00:27:16,000 --> 00:27:20,720
+people don't do that. By the way, do you 
+actually operationally, is it actually a  
+
+274
+00:27:20,720 --> 00:27:23,560
+call or do you recommend the email? What do 
+you actually recommend they do because,-
+ 
+
+275
+00:27:23,560 --> 00:27:26,240
+We literally pick up the phone.
+Okay.
+ 
+
+276
+00:27:26,240 --> 00:27:28,200
+Pick up the phone.
+Okay. Great.
+ 
+
+277
+00:27:28,200 --> 00:27:37,880
+Because you can get tone of voice. Brazilians 
+and Mexicans are incredibly expressive. There  
+
+278
+00:27:37,880 --> 00:27:43,200
+is a degree of real fine grain sense 
+that the statistics never tell you.
+ 
+
+279
+00:27:43,200 --> 00:27:47,120
+Yeah.
+And it's very aligned with design thinking  
+
+280
+00:27:47,120 --> 00:27:53,800
+and there's a lot of literature around how this 
+works well, and I wouldn't say we're doing it  
+
+281
+00:27:53,800 --> 00:27:59,920
+especially to the best practice scientific. We're 
+just like, just make the call. Make it as simple,  
+
+282
+00:27:59,920 --> 00:28:07,400
+as unobtrusive with as little overhead as possible 
+to make sure the voice of the customer is coming  
+
+283
+00:28:07,400 --> 00:28:12,000
+directly into the teams that are building.
+Jeff Bezos had this quote on his Lex Friedman  
+
+284
+00:28:12,000 --> 00:28:17,000
+podcast where if you have data and you have 
+an anecdote, usually the anecdote is right.
+ 
+
+285
+00:28:17,000 --> 00:28:23,440
+I love that. That sounds exactly right to me.
+To make it even more tactical for the surveys you  
+
+286
+00:28:23,440 --> 00:28:26,640
+run, is there any tool you find? How do you 
+actually collect this data? Is there anything  
+
+287
+00:28:26,640 --> 00:28:30,160
+interesting that you could share of just how 
+to operationalize collecting this data?
+ 
+
+288
+00:28:30,720 --> 00:28:37,760
+We've used a series of tools, many of the main 
+survey vendor tools, we still use many of them,  
+
+289
+00:28:37,760 --> 00:28:46,440
+but we don't standardize or find one that 
+dramatically changes our life beyond the mindset  
+
+290
+00:28:46,440 --> 00:28:54,520
+of we are going to make sure that this product 
+has product market fit before we scale it. One  
+
+291
+00:28:54,520 --> 00:29:00,680
+of the things I've seen throughout my career as a 
+product manager and CPO, we live with it today at  
+
+292
+00:29:00,680 --> 00:29:08,040
+Nubank every month is the pressure on the line 
+product manager to scale the product that the  
+
+293
+00:29:08,040 --> 00:29:14,400
+entire company, the entire executive team, the 
+entire management chain has been counting on.  
+
+294
+00:29:14,400 --> 00:29:17,920
+We're launching this thing [foreign language 
+00:29:16]. We all wanted to scale. We all are  
+
+295
+00:29:17,920 --> 00:29:22,720
+very excited about it. We had the product review 
+six months ago and we thought this is going to be  
+
+296
+00:29:22,720 --> 00:29:31,680
+amazing. And the pressure on that product manager 
+to scale a product is immense and the job of the  
+
+297
+00:29:31,680 --> 00:29:37,720
+product manager in many instances is to say no.
+And one of the things I try to say frequently  
+
+298
+00:29:37,720 --> 00:29:45,040
+within the walls of Nubank is we are not going to 
+take a small problem and scale it because if we do  
+
+299
+00:29:45,040 --> 00:29:50,720
+that, we end up with a big mess. Something 
+isn't working at small scale, no problem,  
+
+300
+00:29:50,720 --> 00:29:56,040
+especially if we have a strong hypothesis and a 
+lot of ways of getting good customer feedback.  
+
+301
+00:29:56,040 --> 00:30:03,400
+We iterate, we iterate, we get it right and then 
+once we get it right, scaling if you do it right  
+
+302
+00:30:03,400 --> 00:30:08,720
+in many cases takes care of itself because the 
+customer is now excitedly telling their friends.
+ 
+
+303
+00:30:08,720 --> 00:30:14,600
+Whereas you can pour a lot of money and a lot of 
+effort and when you have a big app like Nubank or  
+
+304
+00:30:14,600 --> 00:30:19,840
+places like Google and Facebook, you can make any 
+product look great for months if not years because  
+
+305
+00:30:19,840 --> 00:30:24,360
+you have such a large customer base that you can 
+always get them to try it with all sorts of basic  
+
+306
+00:30:24,360 --> 00:30:31,840
+techniques, but you're bouncing a dead cat. And 
+then you've got a real big mess to untangle when  
+
+307
+00:30:31,840 --> 00:30:36,800
+the thing is much, much larger. So we try to be 
+pretty disciplined about that. And that's a lot  
+
+308
+00:30:36,800 --> 00:30:42,080
+of what the Sean Ellis does is it bring science to 
+some of that art of making that judgment call.
+ 
+
+309
+00:30:42,080 --> 00:30:47,400
+This point you made about it's the PMs job to 
+push back and stop bad things from happening  
+
+310
+00:30:47,400 --> 00:30:52,200
+I think is such an important one. A lot of PMs 
+are just told here, build this thing and they  
+
+311
+00:30:52,200 --> 00:30:56,600
+kind of know this is not going to work, this 
+is a bad idea, but either they don't think  
+
+312
+00:30:56,600 --> 00:31:01,880
+they should be pushing back or they are not 
+good at it. From the PMs you've worked with  
+
+313
+00:31:01,880 --> 00:31:07,400
+that are good at convincing and pushing back, 
+like we should not do this yet, do you have any  
+
+314
+00:31:07,400 --> 00:31:12,160
+tactics or ways of communicating that you found 
+effective for pushing back to, like you said,  
+
+315
+00:31:12,160 --> 00:31:18,440
+all this pressure that's coming down on them?
+One of the things I've learned relatively later in  
+
+316
+00:31:18,440 --> 00:31:25,560
+my career, I wish I'd learned it decade earlier, 
+decades earlier even is how important culture  
+
+317
+00:31:25,560 --> 00:31:31,160
+is. And we talked about the five cultural 
+tenets, but this idea of we are owners,  
+
+318
+00:31:31,160 --> 00:31:35,000
+not renters. You're an owner of that product as 
+the product manager or the lead engineer or the  
+
+319
+00:31:35,000 --> 00:31:42,160
+lead designer or in fact anyone on the team. 
+If you really don't think it's going to work,  
+
+320
+00:31:42,160 --> 00:31:49,280
+don't tell me what I want to hear. It's incumbent 
+on you, it's expected of you as an owner to tell  
+
+321
+00:31:49,280 --> 00:31:54,680
+me the bad news and tell it to me early, even when 
+it's convenient, even when there's a promotion at  
+
+322
+00:31:54,680 --> 00:32:00,680
+stake, these dynamics get very real very quickly 
+then look, I don't think it's going to work and  
+
+323
+00:32:00,680 --> 00:32:05,480
+here's why, or it's not working and here's 
+why, or we should kill it and here's why.
+ 
+
+324
+00:32:05,480 --> 00:32:15,240
+The second thing I would say is senior leaders at 
+companies that have gone, especially startups that  
+
+325
+00:32:15,240 --> 00:32:21,160
+have scaled well, you usually have people who 
+have been in that boat who have seen products  
+
+326
+00:32:21,160 --> 00:32:26,320
+that weren't working who have killed them or 
+who have pivoted them pretty dramatically. And  
+
+327
+00:32:26,320 --> 00:32:33,160
+there's a lot of respect for someone who has a 
+real clarity of thought and brings a high bar  
+
+328
+00:32:33,160 --> 00:32:40,240
+and is not simply going with the flow. So I think 
+that's the main thing, is bringing that ownership  
+
+329
+00:32:40,240 --> 00:32:49,880
+mindset. And the second is bringing clarity and 
+bringing data and understanding that most senior  
+
+330
+00:32:49,880 --> 00:32:58,040
+executives in whichever company are strong-willed 
+and bring strong opinions. That's part of the job  
+
+331
+00:32:58,040 --> 00:33:03,760
+description. That's okay. It is your job 
+whether product or design or engineering  
+
+332
+00:33:03,760 --> 00:33:11,840
+or whatever function as a leader to if you think 
+you are practicing for one of those senior jobs,  
+
+333
+00:33:11,840 --> 00:33:18,920
+it's sort of let's say a mid-level, it doesn't 
+come miraculously when you get a C-suite title,  
+
+334
+00:33:18,920 --> 00:33:25,280
+it's something that's going to be practiced. 
+And it's something that is expected and  
+
+335
+00:33:25,280 --> 00:33:29,440
+I think that's not just a Nubank thing.
+Certain cultures promote it better than others,  
+
+336
+00:33:29,440 --> 00:33:40,040
+but I think it's pretty universally important. 
+And so I would just encourage people to try it,  
+
+337
+00:33:40,040 --> 00:33:46,240
+understand the trade-offs, understand 
+the challenge, articulate the other side,  
+
+338
+00:33:46,240 --> 00:33:51,520
+but if you genuinely believe it's not yet ready 
+to scale your products, at the end of the day,  
+
+339
+00:33:51,520 --> 00:33:55,880
+the big mess is a thing you're still going to owe 
+and we're all going to forget that we told you to  
+
+340
+00:33:55,880 --> 00:34:00,960
+scale the thing. We're all going to still blame 
+you at the end of the day. So you might as well  
+
+341
+00:34:00,960 --> 00:34:09,960
+bite the bullet earlier, pivot it when it's easier 
+to do and it'll work out better in the end.
+ 
+
+342
+00:34:09,960 --> 00:34:13,320
+I want to come back to one more thread and 
+then I'm going to go in a different direction.  
+
+343
+00:34:13,320 --> 00:34:19,560
+You talked a bit about talking to customers, 
+finding innovative ideas, not just listening  
+
+344
+00:34:19,560 --> 00:34:25,560
+to what they're telling you. There's this whole 
+skill of user research and interviewing customers  
+
+345
+00:34:25,560 --> 00:34:29,400
+and finding the pain point, figuring out what 
+to build. Do you have any just, I don't know,  
+
+346
+00:34:29,400 --> 00:34:35,720
+tips or tactics or lessons you've learned about 
+just how to do this well, how to uncover the pain  
+
+347
+00:34:35,720 --> 00:34:40,000
+point and then figure out what to actually 
+build when you're interviewing customers?
+ 
+
+348
+00:34:40,000 --> 00:34:45,720
+I'll share a couple of thoughts, but I will 
+tell you as a preface that it is arguably  
+
+349
+00:34:45,720 --> 00:34:52,560
+the area right now that I still wrestle with. I 
+still think I, and we are not doing it as well.  
+
+350
+00:34:52,560 --> 00:35:00,400
+I've never seen it done quite as consistently 
+great as it could be, and I think it's an area  
+
+351
+00:35:00,400 --> 00:35:10,280
+for where design thinking and a lot of the design 
+function can help us, but it's very, very, it's  
+
+352
+00:35:10,280 --> 00:35:15,440
+one of the areas of greatest inconsistency that 
+I see in product development. Having said that,  
+
+353
+00:35:15,440 --> 00:35:21,920
+a couple of things that I see that we sometimes 
+do really well at Nubank and other times we miss  
+
+354
+00:35:21,920 --> 00:35:33,040
+on one dimension or the other. First off, per your 
+Jeff Bezos anecdote, the anecdote usually trumps  
+
+355
+00:35:33,040 --> 00:35:41,000
+the data. And there are many times when I see 
+teams that are doing very sophisticated analysis  
+
+356
+00:35:41,000 --> 00:35:46,120
+and they've sort of forgotten what the question 
+is or what the conclusion they can draw from it  
+
+357
+00:35:46,120 --> 00:35:56,360
+truly is. So never lose sight of the value of the 
+customer's words and the anecdote. That's one.
+ 
+
+358
+00:35:56,360 --> 00:36:06,000
+The second one that I believe very, very 
+strongly in is I think teams often skip the  
+
+359
+00:36:06,000 --> 00:36:13,320
+step of clearly, very, very clearly working 
+very hard to be super crisp in articulating  
+
+360
+00:36:13,320 --> 00:36:19,480
+their hypothesis. If you don't have a hypothesis, 
+you're going to spend a lot of time researching,  
+
+361
+00:36:19,480 --> 00:36:23,800
+you're going to get a lot of data back, 
+qualitative, anecdotal or quantitative  
+
+362
+00:36:23,800 --> 00:36:28,560
+and you're not going to know what to make of it 
+because it's not either validating or invalidating  
+
+363
+00:36:28,560 --> 00:36:34,400
+your hypothesis because there isn't a hypothesis. 
+So it just becomes an interesting conversation.
+ 
+
+364
+00:36:34,400 --> 00:36:41,920
+The third one is, I've got a hypothesis, I've 
+got it really crisp and now the pitfall is I've  
+
+365
+00:36:41,920 --> 00:36:47,480
+fallen in love with my hypothesis. I'm a lawyer 
+for my hypothesis. I'm not a judge of whether  
+
+366
+00:36:47,480 --> 00:36:52,400
+the hypothesis is right or not right. So I think 
+that's another common pitfall. I've fallen into  
+
+367
+00:36:52,400 --> 00:36:58,960
+that one too many times to count. And then 
+the last thing I would highlight is even  
+
+368
+00:36:58,960 --> 00:37:07,560
+when you have a strong hypothesis and you're 
+actually in the mode of doing the research,  
+
+369
+00:37:07,560 --> 00:37:16,200
+observe more than ask questions if you can, ask 
+indirect questions more than direct questions.  
+
+370
+00:37:16,200 --> 00:37:20,240
+Would you love this product? Right. Excited 
+product manager has been working for two months  
+
+371
+00:37:20,240 --> 00:37:33,920
+on a design. You're searching for the problem more 
+than the solution. You're looking indirectly and  
+
+372
+00:37:33,920 --> 00:37:40,240
+asking from multiple directions the same question 
+rather than trying to find a yes, they love the  
+
+373
+00:37:40,240 --> 00:37:45,760
+thing you've been thinking about and swaying 
+on for a long time. And if you can, observing  
+
+374
+00:37:45,760 --> 00:37:53,360
+is better than asking, although that's a tricky 
+skill. Those are the things that I look for.
+ 
+
+375
+00:37:53,360 --> 00:37:55,560
+With the hypothesis point, just 
+to make sure people understand,  
+
+376
+00:37:55,560 --> 00:38:00,600
+your suggestion there is before you start talking 
+to customers, doing your easy researches as a PM  
+
+377
+00:38:00,600 --> 00:38:05,960
+or just anyone on the team, essentially have 
+a perspective on what you think is going to be  
+
+378
+00:38:05,960 --> 00:38:11,400
+true. Is that how you think about it?
+Exactly. Have a point of view on what  
+
+379
+00:38:11,400 --> 00:38:17,200
+you think the customer will say that will 
+lead them to be really excited about your  
+
+380
+00:38:17,200 --> 00:38:24,760
+product. That way you will get very clearly 
+eh or yes, bang the table excitement and you  
+
+381
+00:38:24,760 --> 00:38:28,200
+will know when you're getting that reaction.
+Is there an example of that just to make it even  
+
+382
+00:38:28,200 --> 00:38:32,200
+more concrete? Because I imagine many PMs are kind 
+of feeling like they have to be unbiased and just  
+
+383
+00:38:32,200 --> 00:38:39,200
+like, let's see. Let's see if this is something we 
+should do and I don't want to bias anyone against  
+
+384
+00:38:39,200 --> 00:38:44,280
+it. Is there a quick example of a hypothesis?
+One of the famous examples that's somewhat  
+
+385
+00:38:44,280 --> 00:38:50,280
+hypothesis related and somewhat observation 
+related is the invention of the Swiffer from  
+
+386
+00:38:50,280 --> 00:38:59,240
+Procter & Gamble. Right. The people hate mopping 
+and they will do it and they won't even realize  
+
+387
+00:38:59,240 --> 00:39:02,200
+how painful an experience it is because 
+they've just developed the work arounds  
+
+388
+00:39:02,200 --> 00:39:08,560
+and they just deal with the burden. But if you 
+observe very granularly what the problems are,  
+
+389
+00:39:08,560 --> 00:39:16,440
+then you can see where the problems are. 
+And so if you bring a strong hypothesis to,  
+
+390
+00:39:16,440 --> 00:39:20,040
+that this is a real problem, even if customers 
+aren't telling you it's a problem because they've  
+
+391
+00:39:20,040 --> 00:39:27,680
+just sort of gotten used to it. So that's one.
+We have a hypothesis at Nubank. I'll give you one  
+
+392
+00:39:27,680 --> 00:39:34,680
+that's live. We have a hypothesis at Nubank that 
+the joint bank account, I was doing some research  
+
+393
+00:39:34,680 --> 00:39:41,520
+on this just last week. The joint bank account was 
+invented in the early, it's actually hard to say,  
+
+394
+00:39:41,520 --> 00:39:49,640
+but it was invented, depending on what source you 
+believe, in the late 19th or early 20th century.  
+
+395
+00:39:49,640 --> 00:39:55,720
+And it was basically invented coincident with the 
+social movement, sort of the women's liberation  
+
+396
+00:39:55,720 --> 00:40:02,760
+social movements before women in the US were 
+legally allowed to vote, where women were not  
+
+397
+00:40:02,760 --> 00:40:07,880
+allowed to open a bank account without their 
+husbands prior approval. That is the era from  
+
+398
+00:40:07,880 --> 00:40:17,400
+which the joint bank account that we still live 
+with today came from. It's 120 to 150 years old.
+ 
+
+399
+00:40:17,400 --> 00:40:22,720
+I don't think it's surprising. Our hypothesis 
+is it's not surprising that that artifact,  
+
+400
+00:40:22,720 --> 00:40:33,000
+that that product is not made for the modern 
+customer, that it is easier for me to share a  
+
+401
+00:40:33,000 --> 00:40:44,320
+Spotify playlist with my wife or my daughter 
+than it is for me to share a savings goal  
+
+402
+00:40:44,320 --> 00:40:51,480
+just mechanically. So we're going into a product 
+development cycle that says there is a new social  
+
+403
+00:40:51,480 --> 00:41:01,320
+banking arrangement that is not about tweeting and 
+it's not about social very broadly defined. It is  
+
+404
+00:41:01,320 --> 00:41:06,800
+about our financial lives are inherently social. 
+And it is very hard to share with my spouse,  
+
+405
+00:41:06,800 --> 00:41:13,760
+with my kids, with my parents who might be helping 
+me pay for my child's education as an example,  
+
+406
+00:41:13,760 --> 00:41:20,000
+use case. It's a very strong hypothesis.
+But when you go into the research with the  
+
+407
+00:41:20,000 --> 00:41:26,800
+customer, you don't try to sell them. You try 
+to see if they're experiencing pain points.  
+
+408
+00:41:26,800 --> 00:41:32,520
+And it becomes very hard when you're in and 
+they say even something a little bit in the  
+
+409
+00:41:32,520 --> 00:41:38,120
+direction of what you hope they would say to 
+not be like, jump in with a lot of excitement  
+
+410
+00:41:38,120 --> 00:41:46,200
+and then get into more of a sell mode with 
+them and almost try to sell against your idea,  
+
+411
+00:41:46,200 --> 00:41:52,800
+push back against your idea, make the customer 
+sell you in the interaction. And you play the  
+
+412
+00:41:52,800 --> 00:42:01,200
+devil's advocate. So those are the kinds of 
+things we search for as we build products.
+ 
+
+413
+00:42:01,200 --> 00:42:07,360
+That sounds like a great idea. I believe in 
+this hypothesis. Today's episode is brought  
+
+414
+00:42:07,360 --> 00:42:12,880
+to you by OneSchema, the embeddable CSV importer 
+for SaaS. Customers always seem to want to give  
+
+415
+00:42:12,880 --> 00:42:17,200
+you their data in the messiest possible CSV 
+file. And building a spreadsheet importer  
+
+416
+00:42:17,200 --> 00:42:21,760
+becomes a never-ending sink for your engineering 
+and support resources. You keep adding features to  
+
+417
+00:42:21,760 --> 00:42:25,720
+your spreadsheet importer, but customers keep 
+running into issues. Six months later you're  
+
+418
+00:42:25,720 --> 00:42:30,640
+fixing yet another date conversion edge case bug. 
+Most tools aren't built for handling messy data,  
+
+419
+00:42:30,640 --> 00:42:37,160
+but OneSchema is. Companies like Scale AI and Pave 
+are using OneSchema to make it fast and easy to  
+
+420
+00:42:37,160 --> 00:42:42,960
+launch delightful spreadsheet import experiences 
+from embeddable CSV import to importing CSVs from  
+
+421
+00:42:42,960 --> 00:42:47,320
+an SFTP folder on a recurring basis.
+Spreadsheet import is such an awful  
+
+422
+00:42:47,320 --> 00:42:52,640
+experience in so many products. Customers 
+get frustrated by useless messages like error  
+
+423
+00:42:52,640 --> 00:42:57,440
+online 53 and never end up getting started 
+with your product. OneSchema intelligently  
+
+424
+00:42:57,440 --> 00:43:01,440
+corrects messy data so that your customers 
+don't have to spend hours in Excel just to  
+
+425
+00:43:01,440 --> 00:43:06,800
+get started with your product. For listeners 
+of this podcast, OneSchema is offering a $1,000  
+
+426
+00:43:06,800 --> 00:43:14,920
+discount. Learn more at oneschema.co/Lenny.
+I want to talk about strategy. I know that  
+
+427
+00:43:14,920 --> 00:43:19,240
+you have a very strong perspective on how to 
+think about strategy and approach strategy.  
+
+428
+00:43:19,240 --> 00:43:23,880
+This is something that everyone always wants 
+to get better at. Every PM is always told you  
+
+429
+00:43:23,880 --> 00:43:28,680
+want to build your strategic thinking muscles 
+and this is really important to your career.  
+
+430
+00:43:28,680 --> 00:43:34,640
+I'd love to hear your take and how you approach 
+developing strategy and your advice to folks.
+ 
+
+431
+00:43:34,640 --> 00:43:39,760
+I will readily admit, I bring a bias. I spent 
+almost a decade at the beginning of my career  
+
+432
+00:43:39,760 --> 00:43:44,040
+right after college working in a strategy 
+consulting firm. Right. So I bring a bias,  
+
+433
+00:43:44,040 --> 00:43:51,440
+which is to some degree, certainly for the length 
+of time I did it, an unusual background for a  
+
+434
+00:43:51,440 --> 00:43:55,840
+product manager. When I first showed up at Google, 
+it took me a couple of years to realize my job  
+
+435
+00:43:55,840 --> 00:44:04,560
+was not to produce a nice PowerPoint, it was to 
+ship code. And I was doing a poor job of that for  
+
+436
+00:44:04,560 --> 00:44:14,000
+at least the first 12 to 18 months. But I think 
+there is almost a countervailing dogma in Silicon  
+
+437
+00:44:14,000 --> 00:44:21,360
+Valley or in tech companies more generally, that 
+strategy is easy and execution is everything. And  
+
+438
+00:44:21,360 --> 00:44:28,680
+I think that's probably because there are a small 
+number of companies that get the strategy right,  
+
+439
+00:44:28,680 --> 00:44:33,520
+but the legendary companies that we all know about 
+not only got the strategy right, but then executed  
+
+440
+00:44:33,520 --> 00:44:38,800
+it really crisply. What we don't hear about 
+are the companies that got the strategy wrong,  
+
+441
+00:44:38,800 --> 00:44:44,720
+never got even into the conversation and all of 
+their great execution was multiplied by zero.
+ 
+
+442
+00:44:44,720 --> 00:44:50,640
+Great execution multiplied by a poor strategy 
+is a waste of everyone's time. And because the  
+
+443
+00:44:50,640 --> 00:44:57,240
+strategy isn't clear, you can waste a 
+lot of time executing years and years  
+
+444
+00:44:57,240 --> 00:45:03,280
+against something that was destined never to 
+work. One of my favorite quotes from the Valley,  
+
+445
+00:45:05,200 --> 00:45:10,880
+from Kevin Systrom in the early days of 
+Instagram, I heard him say it at a conference,  
+
+446
+00:45:10,880 --> 00:45:14,560
+this is pre the Facebook acquisition. And he 
+was like, I don't know how old. He had just  
+
+447
+00:45:14,560 --> 00:45:20,320
+left Google. He was probably, I don't know, 20 
+some years old. He said, "We may not be right,  
+
+448
+00:45:20,320 --> 00:45:27,000
+but at least we are clear." And what I love 
+about that is even if your strategy isn't right,  
+
+449
+00:45:27,000 --> 00:45:33,880
+and it will never be exactly right because no 
+plan ever is, you will have a clearer read on if  
+
+450
+00:45:33,880 --> 00:45:39,960
+you are going off course because you have a very 
+clear idea of what was supposed to be happening.
+ 
+
+451
+00:45:39,960 --> 00:45:47,560
+And so I think being very clear in your strategy 
+is really important. You've had some great guests  
+
+452
+00:45:47,560 --> 00:45:54,120
+on the podcast. Richard Rumelt is one of my 
+absolute favorites. He's written a couple of  
+
+453
+00:45:54,120 --> 00:45:58,960
+books, one called Good Strategy Bad Strategy, 
+another more recent one called The Crux,  
+
+454
+00:45:58,960 --> 00:46:06,880
+where he does a great service to the world by even 
+more than describing what strategy is, focusing at  
+
+455
+00:46:06,880 --> 00:46:12,480
+the beginning about what strategy isn't. Strategy 
+isn't an ambitious goal, it's not an aspiration,  
+
+456
+00:46:12,480 --> 00:46:20,520
+it's not a set of financial outcomes. It is 
+a coherent plan for how you going to apply  
+
+457
+00:46:20,520 --> 00:46:28,800
+your strengths in a leveraged way against a 
+core important problem. And that's a very,  
+
+458
+00:46:28,800 --> 00:46:35,280
+very rough paraphrase of the way he thinks 
+about the world. And I find that we often  
+
+459
+00:46:35,280 --> 00:46:43,960
+confuse strategy with a vision, a broad idea, 
+a very, very broad, vague aspiration. Nubank  
+
+460
+00:46:43,960 --> 00:46:50,960
+strategy isn't we want to be the world's 
+largest neo bank. We do, but that's not an  
+
+461
+00:46:50,960 --> 00:47:00,080
+interesting way to dimensionalize the problem.
+In 2014, we had millennial, middle-class,  
+
+462
+00:47:00,080 --> 00:47:08,560
+urban Brazilians who hated paying credit card 
+fees and were not able to get credit in the  
+
+463
+00:47:08,560 --> 00:47:14,520
+first place because they were too young and 
+without a credit history. And we could offer  
+
+464
+00:47:14,520 --> 00:47:20,040
+them not just a lower-priced credit card, but 
+a no-fee credit card, which was an emotional  
+
+465
+00:47:20,040 --> 00:47:27,240
+thing. That fee got people angry and we could do 
+that because we were branchless and digital. Now  
+
+466
+00:47:27,240 --> 00:47:32,920
+that is a coherent description of a very specific 
+problem for a very specific set of customers with  
+
+467
+00:47:32,920 --> 00:47:38,560
+a very specific solution based on a very specific 
+advantage. By the way, all of this predated my,  
+
+468
+00:47:38,560 --> 00:47:43,600
+this has got nothing to do with me. I wasn't 
+there. But that's what I mean. Strategy is very  
+
+469
+00:47:43,600 --> 00:47:53,560
+specific, it's very detailed, it's very locked in. 
+And working backwards from that I think is really,  
+
+470
+00:47:53,560 --> 00:47:58,671
+really important. And if you get that 
+strategy right, it informs the minimal  
+
+471
+00:47:58,671 --> 00:48:01,760
+set of activities you need to do to get...
+... minimal set of activities you need to do  
+
+472
+00:48:01,760 --> 00:48:08,080
+to get traction and to win, whereas if you don't 
+have that degree of coherence, you're trying to  
+
+473
+00:48:08,080 --> 00:48:14,440
+serve all the customers. Maybe we should go to 
+Mexico prematurely. All sorts of things happen  
+
+474
+00:48:14,440 --> 00:48:20,160
+and your execution gets very diffuse, and you 
+can't even tell why you're not getting traction  
+
+475
+00:48:20,160 --> 00:48:26,760
+across the company, whereas strategy allows 
+focus and it allows a much more rapid read  
+
+476
+00:48:27,320 --> 00:48:35,200
+of whether your focused bets, your 
+concentrated bets, are actually working.
+ 
+
+477
+00:48:35,200 --> 00:48:40,560
+You've had some investors on your podcast over the 
+years, and they will tell you that concentration  
+
+478
+00:48:40,560 --> 00:48:47,160
+is what builds wealth, diversification is what 
+preserves wealth. And you're a startup. You're  
+
+479
+00:48:47,160 --> 00:48:53,560
+not trying to preserve anything. You're trying to 
+build something. It requires concentrated bets,  
+
+480
+00:48:53,560 --> 00:48:59,680
+not hedging. And because you're concentrating 
+bets, those bets are high stakes. You need to  
+
+481
+00:48:59,680 --> 00:49:04,600
+be very, very clear on what bets you're making 
+and why you think it's going to succeed.
+ 
+
+482
+00:49:04,600 --> 00:49:10,240
+When you work with PMs on your team in the past 
+that are trying to get better at this muscle  
+
+483
+00:49:10,240 --> 00:49:14,480
+and following this advice that you're sharing of 
+strategy, what do you find most helps them build  
+
+484
+00:49:14,480 --> 00:49:18,760
+this muscle? Is it just doing it over and over 
+and over and over? Is it reading good strategy,  
+
+485
+00:49:18,760 --> 00:49:23,400
+bad strategy, practicing it? What do you find is 
+most helpful in helping you build this muscle?
+ 
+
+486
+00:49:24,680 --> 00:49:28,920
+One is taking it seriously. It's a little bit like 
+what we talked about with Nubank's culture. First,  
+
+487
+00:49:28,920 --> 00:49:33,280
+you got to want the customer to love you 
+fanatically as something that you value.  
+
+488
+00:49:33,280 --> 00:49:38,480
+After that, I think frameworks really help, 
+whether it's Good Strategy, Bad Strategy,  
+
+489
+00:49:38,480 --> 00:49:43,960
+whether it's Play to Win from a relatively 
+recent guest of yours, Christopher Lochhead,  
+
+490
+00:49:43,960 --> 00:49:49,680
+who I really admire, whether it's Where 
+to Play and How to Win from Roger Martin,  
+
+491
+00:49:49,680 --> 00:49:54,480
+which is a phenomenal book about-
+He's coming on the podcast in a few weeks.
+ 
+
+492
+00:49:54,480 --> 00:50:01,880
+Is he? He's fantastic. And having those 
+frameworks, all of which in many ways,  
+
+493
+00:50:01,880 --> 00:50:08,000
+if you synthesize them, are getting at the same 
+thing around focus, around a clear understanding  
+
+494
+00:50:08,000 --> 00:50:15,320
+of the customer, around not trying to be in the 
+words that we literally have on Nubank coffee  
+
+495
+00:50:15,320 --> 00:50:19,160
+mugs, "We're not trying to be incrementally 
+better. We are trying to be fundamentally  
+
+496
+00:50:19,160 --> 00:50:25,560
+different." These are all very similar 
+ideas expressed in slightly different ways.
+ 
+
+497
+00:50:25,560 --> 00:50:30,320
+Once you understand the frameworks and you 
+distill them, then it's about practicing  
+
+498
+00:50:30,320 --> 00:50:39,520
+them and practicing them is scary. Hedging is 
+appealing. Hedging means you don't have to make  
+
+499
+00:50:39,520 --> 00:50:50,520
+choices. Hedging sounds smart. Concentrating all 
+your bets is the thing that desperate people do,  
+
+500
+00:50:50,520 --> 00:50:56,680
+and startups are desperate entities 
+because they're burning cash in almost  
+
+501
+00:50:56,680 --> 00:51:02,200
+every instance. But successful startups, the 
+ones that become profitable... I'm very wary,  
+
+502
+00:51:03,560 --> 00:51:08,560
+given the places I've worked, of the successful 
+company with one or two monster products,  
+
+503
+00:51:08,560 --> 00:51:13,520
+and Nubank is now in that fortunate 
+position, that starts to get conservative,  
+
+504
+00:51:13,520 --> 00:51:22,920
+that starts to forget that focus, concentration, 
+customer obsession are every bit as important,  
+
+505
+00:51:22,920 --> 00:51:29,080
+that even though the company won't go bankrupt 
+if products three, four, five and six don't  
+
+506
+00:51:29,080 --> 00:51:36,560
+succeed because products one and two are monster 
+cashflow drivers, that's a slow path to death.
+ 
+
+507
+00:51:36,560 --> 00:51:47,040
+And so practicing that discipline and having, 
+and I use this word very intentionally,  
+
+508
+00:51:47,040 --> 00:51:56,760
+having the courage to make those hard choices 
+and to concentrate the bets, which goes against,  
+
+509
+00:51:56,760 --> 00:52:03,080
+by the way, a lot of what's taught in business 
+school and a lot of MBAs is really important,  
+
+510
+00:52:03,080 --> 00:52:09,680
+and then it's a matter of you get better the 
+more you do it and you get more practiced and  
+
+511
+00:52:09,680 --> 00:52:15,240
+more grooved and more principled in how you 
+get to a methodology the more you do it.
+ 
+
+512
+00:52:15,240 --> 00:52:21,280
+Did you say the mugs at Nubank say, 
+"Be fundamentally different"?
+ 
+
+513
+00:52:21,280 --> 00:52:29,460
+The product team, a little over a year ago we 
+put together some schwag, which was fundamentally  
+
+514
+00:52:29,460 --> 00:52:35,160
+... I have a mantra within the company since 
+roughly the time I joined, which is, "We're in  
+
+515
+00:52:35,160 --> 00:52:40,400
+the business of being fundamentally different, 
+not incrementally better." Again, it goes back  
+
+516
+00:52:40,400 --> 00:52:44,720
+to only fundamentally different, gets customers 
+to tell their friends. Incrementally better.
+ 
+
+517
+00:52:44,720 --> 00:52:48,720
+And by the way, there are certain features ... 
+I don't want to overstate the case ... There  
+
+518
+00:52:48,720 --> 00:52:51,880
+are certain features where you're in the 
+incrementally better business. Not every  
+
+519
+00:52:51,880 --> 00:52:57,080
+single thing of the hundred things you launch in 
+a year can be fundamentally different, but we're  
+
+520
+00:52:57,080 --> 00:53:01,760
+searching for those anchors that are going to be 
+fundamentally different all the time around which  
+
+521
+00:53:01,760 --> 00:53:07,480
+you build some sustaining innovation as well, but 
+we are in the fundamentally different business,  
+
+522
+00:53:07,480 --> 00:53:11,120
+not the incrementally better business.
+I love that, and that's a great segue to  
+
+523
+00:53:11,120 --> 00:53:15,120
+where I wanted to go, which is I know you're 
+a big fan of category design. You mentioned  
+
+524
+00:53:15,120 --> 00:53:19,680
+Christopher Lochhead, former guest. This is 
+actually one of the more common debates on  
+
+525
+00:53:19,680 --> 00:53:24,960
+this podcast of do people believe in we should 
+be creating our own category or should we not?  
+
+526
+00:53:24,960 --> 00:53:29,480
+Is that a terrible idea? Is it a good idea? It 
+feels like you're in the camp of this is actually  
+
+527
+00:53:29,480 --> 00:53:34,760
+very good and important. I'd love to hear your 
+perspective and also just how Nubank did this.
+ 
+
+528
+00:53:34,760 --> 00:53:41,680
+You know Lenny, literally earlier in this 
+week, I was listening to your podcast with  
+
+529
+00:53:41,680 --> 00:53:47,040
+I believe it was Todd Jackson, ex Gmail 
+product leader and now venture capitalist,  
+
+530
+00:53:47,040 --> 00:53:54,160
+and you guys had a very interesting discussion 
+about it, and I think he took largely the other  
+
+531
+00:53:54,160 --> 00:53:58,560
+side of the argument that you go in a category 
+where customers are already spending money. And  
+
+532
+00:53:59,400 --> 00:54:04,120
+it's hard to argue with that fairly robust logic.
+I will tell you how I think about it. It forced  
+
+533
+00:54:04,120 --> 00:54:09,600
+me to think about where are the nuances in how 
+I believe. I think overall, particularly at a  
+
+534
+00:54:09,600 --> 00:54:16,080
+company level, successful companies are typically 
+in the fundamentally different business. They're  
+
+535
+00:54:16,080 --> 00:54:21,760
+in the new category business. Google was in 
+the new category business. Netflix, Airbnb,  
+
+536
+00:54:21,760 --> 00:54:29,800
+you can go down the long list, Salesforce, et 
+cetera, et cetera. That's really important.
+ 
+
+537
+00:54:29,800 --> 00:54:37,760
+In Nubank's case, we were the first, and actually, 
+it's not that important that we were the first,  
+
+538
+00:54:37,760 --> 00:54:48,080
+but we were very intentionally trying to 
+build a branchless bank based on the rise  
+
+539
+00:54:48,080 --> 00:54:54,560
+of the smartphone in Brazil and Latin America 
+at that time, the sort of rapid inflection,  
+
+540
+00:54:54,560 --> 00:55:01,280
+and a branchless bank that could bring, as David 
+likes to say, put a bank branch in your pocket,  
+
+541
+00:55:01,280 --> 00:55:09,880
+where at the time access was the big problem, and 
+that you could do that on a digital cost structure  
+
+542
+00:55:09,880 --> 00:55:19,040
+that allowed you to essentially disruptively price 
+across the board was the thing that led to the  
+
+543
+00:55:19,040 --> 00:55:26,520
+massive wave of success, multiplied by, unlike 
+almost everywhere else in the world, including  
+
+544
+00:55:26,520 --> 00:55:31,360
+in the US where the answer was, "We're going to 
+do the bank account first." Nubank's answer was,  
+
+545
+00:55:31,360 --> 00:55:36,920
+"No, we're going to do credit first and credit 
+is 10 times harder and 100 times more risky,"  
+
+546
+00:55:36,920 --> 00:55:41,400
+because you get credit wrong as a young 
+company that doesn't know how to do it yet,  
+
+547
+00:55:41,400 --> 00:55:45,800
+you've blown everything up. The money's 
+never coming back. Those two, again,  
+
+548
+00:55:45,800 --> 00:55:55,720
+concentrated bets, defining a new category, 
+were I think the key to our success.
+ 
+
+549
+00:55:55,720 --> 00:56:02,880
+Now, there are times when you're trying to go 
+into an adjacent market. We've recently gone  
+
+550
+00:56:02,880 --> 00:56:10,680
+into a market called Consignado in Brazil, which 
+is secured lending for government employees. Very  
+
+551
+00:56:10,680 --> 00:56:18,400
+stable job, easier to underwrite against their 
+salary at a much lower interest rate. That's a  
+
+552
+00:56:18,400 --> 00:56:25,080
+market that's existed for a couple of decades in 
+Brazil, and our job was to go in there, and we  
+
+553
+00:56:25,080 --> 00:56:29,280
+believe we built something that is fundamentally 
+different. It wasn't digital. It went through  
+
+554
+00:56:29,280 --> 00:56:37,240
+middlemen. We built it D to C, and we've been 
+able to undercut the pricing pretty dramatically.
+ 
+
+555
+00:56:37,240 --> 00:56:41,960
+So even within an established category, we've 
+tried to build a fundamentally different  
+
+556
+00:56:41,960 --> 00:56:47,920
+experience, but there are also times when, look, 
+it's not quite me too, but the differentiation's  
+
+557
+00:56:47,920 --> 00:56:56,480
+a bit more incremental. But at the company level, 
+I think it's absolutely imperative to be designing  
+
+558
+00:56:56,480 --> 00:57:01,360
+your own category so you can then dominate it and 
+defining your own category. And even when you're  
+
+559
+00:57:01,360 --> 00:57:06,760
+entering a place where customers are spending 
+money, I think going in with a mindset that says,  
+
+560
+00:57:06,760 --> 00:57:10,320
+"This is going to be a bit better," and I 
+think Todd would probably agree with this,  
+
+561
+00:57:10,320 --> 00:57:14,720
+given the way he described it, you should 
+try to be reinventing that category,  
+
+562
+00:57:14,720 --> 00:57:20,400
+even if you're not inventing that category.
+Amazing. I like this battle we're forming here  
+
+563
+00:57:20,400 --> 00:57:25,560
+of people on two sides of this debate, and I'm 
+excited to see where it goes over time. It feels  
+
+564
+00:57:25,560 --> 00:57:32,040
+like the do not create a category side is 
+winning so far in terms of volume, but there's  
+
+565
+00:57:32,040 --> 00:57:36,560
+a lot of passion from this other side.
+I'm happy to be on the contrarian side.
+ 
+
+566
+00:57:36,560 --> 00:57:42,360
+Okay, there's a few more things I want to touch 
+on before we wrap up. It feels like Nubank is one  
+
+567
+00:57:42,360 --> 00:57:47,080
+of the historically most successful companies 
+launching new business lines. I think you guys  
+
+568
+00:57:47,080 --> 00:57:52,120
+are maybe like 10 years old, and how many products 
+slash business lines are there at this point?
+ 
+
+569
+00:57:52,120 --> 00:58:01,040
+It depends on how you categorize it, but 
+I would say we have roughly a dozen to 20  
+
+570
+00:58:01,040 --> 00:58:03,800
+core product lines.
+Okay, that's wild.
+ 
+
+571
+00:58:03,800 --> 00:58:10,080
+Our story started as, we were a Brazilian credit 
+card monoliner in an app and all the rest of it.  
+
+572
+00:58:10,080 --> 00:58:16,120
+Around the time, slightly before, but around 
+the time I joined the phase two of the company,  
+
+573
+00:58:16,120 --> 00:58:19,480
+the mandate of what we were trying to do, which 
+has really been the story of the last five years,  
+
+574
+00:58:19,480 --> 00:58:24,200
+was we were going to go from a Brazilian 
+credit card company to a full solution  
+
+575
+00:58:24,200 --> 00:58:31,920
+Latin American bank, which meant we launched 
+five new products. We launched a bank account,  
+
+576
+00:58:31,920 --> 00:58:36,240
+which allowed us to go from being 
+a secondary banking relationship to  
+
+577
+00:58:36,240 --> 00:58:41,840
+increasingly a primary banking relationship. 
+About half of our 90 plus million customers,  
+
+578
+00:58:43,240 --> 00:58:47,800
+we are the primary relationship. We built a 
+lending product, we built an investments product,  
+
+579
+00:58:47,800 --> 00:58:52,200
+we built an insurance product, we built 
+a series of small business products.
+ 
+
+580
+00:58:52,200 --> 00:59:00,320
+While we were doing that, we were also making the 
+leap to prove, despite a lot of skepticism, that  
+
+581
+00:59:00,320 --> 00:59:05,960
+our business model was exportable and not a unique 
+Brazilian phenomenon. So we launched into Mexico  
+
+582
+00:59:05,960 --> 00:59:12,800
+and launched into Colombia and now we are starting 
+to take the full suite of products and go beyond  
+
+583
+00:59:12,800 --> 00:59:17,720
+credit card in Mexico and Colombia as well.
+So depending on how you look at that matrix,  
+
+584
+00:59:17,720 --> 00:59:24,840
+we are a dozen plus products and we're working 
+on the phase three of our products, which is  
+
+585
+00:59:24,840 --> 00:59:30,160
+moving beyond financial services. We've launched 
+an e-commerce marketplace within our app, which is  
+
+586
+00:59:30,160 --> 00:59:37,240
+perhaps a bit counterintuitive if you're coming 
+from the US. And we're also envisioning a world  
+
+587
+00:59:37,240 --> 00:59:46,840
+where banking is, again, to use the phrase that 
+we love at Nubank, fundamentally different than  
+
+588
+00:59:46,840 --> 00:59:53,280
+it has been in the last 100 years. And we believe 
+that social technology, self-driving and AI  
+
+589
+00:59:53,280 --> 01:00:01,600
+technologies can build a just completely different 
+experience, where we're not building a bank branch  
+
+590
+01:00:01,600 --> 01:00:07,560
+and putting it in your pocket. We're building 
+a personal banker, which today, I don't know,  
+
+591
+01:00:07,560 --> 01:00:11,800
+10 million people around the world have access 
+to and you got to have a lot of money to do it.
+ 
+
+592
+01:00:15,200 --> 01:00:20,280
+We believe that job can be democratized ultimately 
+to all eight billion people on the planet,  
+
+593
+01:00:20,280 --> 01:00:24,240
+and we believe it can be done better for those 
+eight billion even than the 10 million are  
+
+594
+01:00:24,240 --> 01:00:31,040
+getting today. But that's a lot of work, and 
+that's, to use Christopher Lochhead and his  
+
+595
+01:00:31,040 --> 01:00:39,920
+co-author's language, that's the new category that 
+we are trying to define over on a global basis.
+ 
+
+596
+01:00:39,920 --> 01:00:44,600
+It's going to be a tiny little banker to 
+fit in your pocket, tiny little person.
+ 
+
+597
+01:00:44,600 --> 01:00:46,640
+That's it.
+I want to follow on this thread,  
+
+598
+01:00:46,640 --> 01:00:52,160
+but before we get there, so in terms of 
+adding new product lines and business units,  
+
+599
+01:00:52,160 --> 01:00:56,360
+watching how Nubank has done this, is there 
+something you've learned about just how to do this  
+
+600
+01:00:56,360 --> 01:01:00,400
+well? I'm imagining there's a spreadsheet where, 
+"Here's all the things we're going to do in the  
+
+601
+01:01:00,400 --> 01:01:06,360
+future. Here's how we're thinking about all the 
+factors of all the new businesses we can launch."  
+
+602
+01:01:06,360 --> 01:01:11,040
+Is there anything there you've seen of just 
+like, wow, that's a really smart way of thinking  
+
+603
+01:01:11,040 --> 01:01:16,120
+about the sequencing slash where to expand next 
+that you think other folks can learn from?
+ 
+
+604
+01:01:16,120 --> 01:01:24,160
+I wish I could tell you that there was this 
+predestined master plan that was so scientific.  
+
+605
+01:01:24,160 --> 01:01:33,440
+The reality is smart people around the table with 
+a culture of robust debate and real candor about  
+
+606
+01:01:33,440 --> 01:01:41,280
+the pros and cons is how we went about it, and a 
+constant re-examination of how things are going,  
+
+607
+01:01:41,280 --> 01:01:45,960
+what's going well, what's not going well, 
+what's taking off, what's not yet taking off,  
+
+608
+01:01:45,960 --> 01:01:50,640
+what are the principles by which we're 
+making these decisions has been important.
+ 
+
+609
+01:01:50,640 --> 01:01:54,840
+Some of these things are obvious. If you're 
+running a bank, a bank account is probably a  
+
+610
+01:01:54,840 --> 01:02:03,400
+good product at some stage, but a lot of it in 
+terms of sequencing and when we invest where,  
+
+611
+01:02:03,400 --> 01:02:12,480
+some of it's obvious, what's the TAM and where's 
+the customer paying, but a lot of it is art and a  
+
+612
+01:02:12,480 --> 01:02:19,520
+lot of that resolution of the art and the debate. 
+It comes from a fairly robust debate, so I'm  
+
+613
+01:02:19,520 --> 01:02:25,240
+avoiding your question. I have no good answer.
+Just a lot of complicated decision making,  
+
+614
+01:02:25,240 --> 01:02:29,360
+but I think what's interesting is, coming 
+back to your very early lesson, is using the  
+
+615
+01:02:29,360 --> 01:02:35,320
+gate of is this hitting this 50% of people be very 
+disappointed before launching feels like a key.
+ 
+
+616
+01:02:35,320 --> 01:02:43,320
+Yeah. That's the one thing is we try not 
+to scale big problems, and so we try to  
+
+617
+01:02:43,320 --> 01:02:51,560
+solve our problems when things are small. Our 
+ultra violetta are higher income, rewards-based  
+
+618
+01:02:51,560 --> 01:02:56,960
+credit card. We launched, it happened to be, I 
+think it was July 4th, 2021 was the launch date,  
+
+619
+01:02:56,960 --> 01:03:02,720
+so it's easy for me to remember. We started 
+scaling it two to two and a half years later.
+ 
+
+620
+01:03:02,720 --> 01:03:06,760
+In the meantime, we were in the lab figuring 
+out where's the product market fit? Why is it  
+
+621
+01:03:06,760 --> 01:03:10,800
+not resonating? Oh, it's resonating with these 
+guys. What do they particularly love it? Let's  
+
+622
+01:03:10,800 --> 01:03:17,640
+iterate there. And now we're at a point in 
+the last six to nine months where we can start  
+
+623
+01:03:17,640 --> 01:03:24,600
+scaling aggressively, learning some of the credit 
+dynamics that are different and reinventing some  
+
+624
+01:03:24,600 --> 01:03:30,960
+of those methodologies, and there's a second 
+phase of scaling that will come. But yeah, one  
+
+625
+01:03:30,960 --> 01:03:36,720
+form of distraction we don't get into is fixing 
+massive problems that we've overscaled before they  
+
+626
+01:03:36,720 --> 01:03:44,880
+were ready. That's a bit of an overstatement, but 
+nothing's quite that clean, but generally true.
+ 
+
+627
+01:03:44,880 --> 01:03:51,040
+Coming back to your thoughts on the 
+future of FinTech and in LATAM especially,  
+
+628
+01:03:51,040 --> 01:03:55,840
+you talked about how the vision is essentially 
+a banker in everyone's pocket. Is there anything  
+
+629
+01:03:55,840 --> 01:04:00,960
+more there? Just where do you think all this 
+goes in the future in terms of FinTech banking  
+
+630
+01:04:00,960 --> 01:04:09,320
+for people in LATAM and then globally?
+Yeah, there are a handful of principles,  
+
+631
+01:04:09,320 --> 01:04:14,240
+call them hypotheses, that we believe, 
+and there are, I should be super clear,  
+
+632
+01:04:14,240 --> 01:04:20,320
+unproven hypotheses that will take years for us 
+to prove out, and I'm sure there will be pivots  
+
+633
+01:04:20,320 --> 01:04:26,200
+along the way as we learn that things aren't quite 
+the way we would've hoped at the beginning. But  
+
+634
+01:04:26,200 --> 01:04:34,600
+first off, the idea that banking should be 
+holistic, that we need to provide a full  
+
+635
+01:04:34,600 --> 01:04:41,200
+solution across what we call the five or 
+six financial seasons of someone's life,  
+
+636
+01:04:41,200 --> 01:04:48,480
+right? We spend, we save, we invest, we borrow, we 
+protect, et cetera. And that's a lot of what we've  
+
+637
+01:04:48,480 --> 01:04:54,320
+been working on for the last handful of years.
+So one is we want to be a full solution bank.  
+
+638
+01:04:54,320 --> 01:05:01,240
+Second, something we have started, we have 
+had some real success in on the business side,  
+
+639
+01:05:01,240 --> 01:05:06,040
+we've made some mistakes on the technical 
+side that we are iterating through is,  
+
+640
+01:05:06,040 --> 01:05:13,960
+we are trying to build, and some might argue 
+I'm overstating a bit, but just to be clear,  
+
+641
+01:05:13,960 --> 01:05:20,760
+we are trying to build what we believe is 
+the first global bank on a single code base.
+ 
+
+642
+01:05:20,760 --> 01:05:25,920
+I come from a world places like Google and 
+Facebook, Google, my first product management  
+
+643
+01:05:25,920 --> 01:05:33,080
+experience. I was not allowed to launch unless 
+my product was ready for 40 countries and 40  
+
+644
+01:05:33,080 --> 01:05:38,800
+languages. I believe language number 40 was 
+Finnish, so we were always making sure the thing  
+
+645
+01:05:38,800 --> 01:05:47,000
+worked in Finnish. And there are good reasons why 
+ADVA, global online advertising, worked that way.  
+
+646
+01:05:47,000 --> 01:05:50,840
+It was a great principle by Google.
+When you get into FinTech and into  
+
+647
+01:05:50,840 --> 01:05:55,040
+banking where the regulations are very 
+local, where the stakes are much higher,  
+
+648
+01:05:55,040 --> 01:06:03,280
+that you serve the right 300 by 250 ad, there is 
+a lot of pushback on that kind of, "We're just  
+
+649
+01:06:03,280 --> 01:06:09,880
+going to scale this everywhere," sort of mindset. 
+And so how do you marry those two things? There  
+
+650
+01:06:09,880 --> 01:06:16,000
+are global banks like Citi or Santander, a lot 
+of them have been built up through acquisition.  
+
+651
+01:06:16,000 --> 01:06:23,880
+A lot of them are on distinct code bases and 
+technology infrastructures. We believe there's  
+
+652
+01:06:23,880 --> 01:06:30,160
+a lot of leverage if you can build a global 
+bank on a single code base. That's another  
+
+653
+01:06:30,160 --> 01:06:41,760
+principle that we are trying to make real.
+The third is that social mechanics around  
+
+654
+01:06:41,760 --> 01:06:46,760
+your financial life, not in general, not 
+another WhatsApp, not another Twitter,  
+
+655
+01:06:46,760 --> 01:06:54,800
+and self-driving automation. Why do I have to 
+remember to pay this bill every month? Why do  
+
+656
+01:06:54,800 --> 01:07:00,520
+I have to remember to save for my child's 
+university education every month? Why can't  
+
+657
+01:07:00,520 --> 01:07:08,680
+I keep my life goals really well-organized? Which 
+is almost impossible to do. My wife and I open up  
+
+658
+01:07:08,680 --> 01:07:13,720
+different bank accounts at different banks just to 
+try to do that job, which is, talk about customer  
+
+659
+01:07:13,720 --> 01:07:25,520
+workarounds. How do we make the life life cycle 
+of managing your financial life exponentially  
+
+660
+01:07:26,160 --> 01:07:31,880
+easier, leveraging these technologies and 
+then using AI, which is an overhyped term  
+
+661
+01:07:31,880 --> 01:07:41,760
+right now, but AI to turbo-boost these tasks?
+We have a phrase we've started using at Nubank,  
+
+662
+01:07:41,760 --> 01:07:49,920
+which I really like. David first introduced 
+it. Customers everywhere around the world  
+
+663
+01:07:49,920 --> 01:07:56,680
+live harshly unoptimized financial lives. I 
+think that's true regardless of income level,  
+
+664
+01:07:56,680 --> 01:08:03,680
+regardless of geography, regardless of sort of 
+life stage of where people are at. If you have  
+
+665
+01:08:03,680 --> 01:08:08,080
+a young child, it is very hard to keep track of 
+all the things you should be doing. You should  
+
+666
+01:08:08,080 --> 01:08:12,120
+be opening a savings account of a specific 
+kind that stacks advantage in this way.
+ 
+
+667
+01:08:15,240 --> 01:08:20,240
+These are problems that should be solved and 
+should be solved soon and can be automated and  
+
+668
+01:08:21,440 --> 01:08:29,160
+where insights can be brought to bear for 
+customers who are not super sophisticated  
+
+669
+01:08:29,160 --> 01:08:33,600
+in their level of financial education, which by 
+the way is almost all of us. Some of the people  
+
+670
+01:08:33,600 --> 01:08:38,000
+who think they're the most sophisticated 
+are the ones who burn the most money in  
+
+671
+01:08:38,000 --> 01:08:44,320
+casinos that they call the stock market.
+And so these are some of the principles  
+
+672
+01:08:44,320 --> 01:08:50,640
+around which we are the next phase. What if 
+there were someone right next to you who could  
+
+673
+01:08:50,640 --> 01:08:55,680
+tell you what the smart move was to make today 
+at this life stage? You've just had a child,  
+
+674
+01:08:55,680 --> 01:08:59,280
+you've just gotten married, you've just 
+bought a house, you just want to remodel,  
+
+675
+01:08:59,280 --> 01:09:06,880
+whatever it might be. We think the technology is 
+there or thereabouts to be able to do that. Why  
+
+676
+01:09:06,880 --> 01:09:14,560
+not have the company that reinvents banking come 
+out of Sao Paulo, Mexico City, Bogota? Why does  
+
+677
+01:09:14,560 --> 01:09:20,680
+it have to come out of San Francisco, New York 
+or London? We see no reason why it can't be us,  
+
+678
+01:09:20,680 --> 01:09:24,360
+so we're going to give it a whirl.
+Amazing. I love all of this. I can't wait  
+
+679
+01:09:24,360 --> 01:09:28,920
+for this to be real. You mentioned AI, so I just 
+have a couple more questions. You mentioned AI. We  
+
+680
+01:09:28,920 --> 01:09:34,200
+have a recurring segment on this podcast called 
+AI Corner, so let's walk over to AI Corner.
+ 
+
+681
+01:09:34,200 --> 01:09:36,680
+All right.
+Usually I ask how you  
+
+682
+01:09:36,680 --> 01:09:40,720
+use AI in your day-to-day and your team, just 
+like what are the tools and things you find  
+
+683
+01:09:40,720 --> 01:09:44,800
+useful to help your team operate with AI and 
+tooling, but I'm also curious just how you're  
+
+684
+01:09:44,800 --> 01:09:49,000
+integrating AI into the product. You touched on 
+this a little bit, but just how AI is going to  
+
+685
+01:09:49,000 --> 01:09:55,760
+supercharge the stuff that you're building.
+We use some of the tools that everyone is  
+
+686
+01:09:55,760 --> 01:10:08,160
+using these days. Our ringfenced version of Chat 
+GPT and some of the standard tools, we're using  
+
+687
+01:10:08,160 --> 01:10:15,120
+them in some of the obvious initial wave ways. How 
+can we improve our customer experience? If you're  
+
+688
+01:10:15,120 --> 01:10:19,360
+fanatical about customers, you're fanatical about 
+customer experience, and Nubank has always been  
+
+689
+01:10:19,360 --> 01:10:24,480
+that way. How can we make it even better while 
+we're also making it more efficient? So we're  
+
+690
+01:10:24,480 --> 01:10:34,560
+doing all of those things as part of our coming up 
+the learning curve in the last 18 or so months.
+ 
+
+691
+01:10:34,560 --> 01:10:41,360
+And then we're starting to think about what 
+are the ways in which we can build AI native  
+
+692
+01:10:41,360 --> 01:10:47,760
+products. And I will not pretend to you that 
+we've cracked that code, but a former boss of  
+
+693
+01:10:47,760 --> 01:10:57,640
+mine spoke a while ago, Fidji Simo, who's now 
+the CEO of Instacart, but she was talking about  
+
+694
+01:10:57,640 --> 01:11:05,440
+the evolution when she was the product lead 
+for Facebook Ads back when the big migration  
+
+695
+01:11:05,440 --> 01:11:11,360
+from the desktop to mobile was happening, and she 
+talked about we needed to become mobile native.
+ 
+
+696
+01:11:11,360 --> 01:11:20,520
+And by analogy, companies today need to figure out 
+what does AI native mean, not how do we append AI  
+
+697
+01:11:20,520 --> 01:11:25,240
+at the corners of the product, but how do we 
+build it at the heart? What would you design  
+
+698
+01:11:26,440 --> 01:11:32,600
+if these tools existed from the start? I mean, 
+Facebook's migration to mobile is a phenomenal  
+
+699
+01:11:32,600 --> 01:11:38,440
+example of that pivot. And they like to joke, 
+and I wasn't there at Facebook at the time,  
+
+700
+01:11:38,440 --> 01:11:44,240
+but they liked to joke at Facebook, even seven, 
+eight years later when I joined, about the company  
+
+701
+01:11:44,240 --> 01:11:49,480
+had IPO'd and needed to find a business model and 
+Fidji was responsible for making that happen. And  
+
+702
+01:11:49,480 --> 01:11:55,600
+the core of it was bringing this mobile native 
+mindset. So we are trying to think through what is  
+
+703
+01:11:55,600 --> 01:11:59,036
+an AI native mindset? In financial services, what 
+would that look like? And that requires ...
+ 
+
+704
+01:11:59,036 --> 01:12:06,440
+... services. What would that look like? And 
+that requires analysis as much as analogy,  
+
+705
+01:12:06,440 --> 01:12:11,280
+and we are very much in the middle of that 
+process and we don't know all of the answers.  
+
+706
+01:12:11,280 --> 01:12:17,760
+The metaphor of a what if everyone in the 
+world, regardless of their income or wealth,  
+
+707
+01:12:17,760 --> 01:12:25,160
+had a private banker sat next to them that 
+they could turn to whenever they needed to  
+
+708
+01:12:25,960 --> 01:12:33,320
+is a good metaphor. And so we are using that 
+metaphor and seeing where it takes us.
+ 
+
+709
+01:12:33,320 --> 01:12:37,920
+Let's now move on to a different corner, failure 
+corner. This is another recurring segment on the  
+
+710
+01:12:37,920 --> 01:12:44,440
+podcast. Is there a story you could share 
+of a time in your career where you failed,  
+
+711
+01:12:44,440 --> 01:12:49,880
+where something went wrong, ideally really 
+wrong, and how that impacted and helped  
+
+712
+01:12:49,880 --> 01:12:53,720
+you in your career? Kind of a lesson 
+you learned from that experience?
+ 
+
+713
+01:12:53,720 --> 01:13:03,840
+There's a pretty seminal story from my career that 
+ultimately ended in failure and that I had to sort  
+
+714
+01:13:03,840 --> 01:13:12,800
+of rebuild from. I had done strategy consulting 
+for just shy of 10 years. I decided I was going  
+
+715
+01:13:12,800 --> 01:13:17,800
+to go to grad school. I was going to pivot my 
+career into public policy and politics. I was  
+
+716
+01:13:17,800 --> 01:13:26,760
+at the Kennedy School of Government at Harvard 
+and a year into that a friend of mine had, the  
+
+717
+01:13:26,760 --> 01:13:34,680
+startup he was working at Get acquired by Google 
+I this company was premised on the idea that you  
+
+718
+01:13:34,680 --> 01:13:43,160
+could bring AdWords/AdSense style advertising to 
+the terrestrial radio market and one of Google's,  
+
+719
+01:13:43,160 --> 01:13:50,160
+perhaps the biggest diversification bet Google was 
+working on at the time beyond search and display,  
+
+720
+01:13:50,160 --> 01:13:58,680
+which were up and running, was let's go 
+disrupt TV, radio, and print. It was 2006.
+ 
+
+721
+01:13:58,680 --> 01:14:07,320
+My friend convinced me to drop out of grad school, 
+both the Kennedy school and business school. I had  
+
+722
+01:14:07,320 --> 01:14:12,320
+done a year of the Kennedy school. I was one 
+credit short and in business school I had done  
+
+723
+01:14:12,320 --> 01:14:25,040
+a week of and move out here to California 
+and join Google. First off, the premise  
+
+724
+01:14:25,560 --> 01:14:36,880
+of the hypothesis proved to be wrong or at least 
+harder than we thought, and in the following way,  
+
+725
+01:14:36,880 --> 01:14:41,840
+terrestrial radio or for that matter, TV 
+advertising, broadcast media advertising  
+
+726
+01:14:41,840 --> 01:14:46,560
+works very differently. It serves actually a 
+different market. It serves brand advertising,  
+
+727
+01:14:46,560 --> 01:14:51,040
+top of funnel kinds of goals as opposed to the 
+bottom funnel that Google really knew well.
+ 
+
+728
+01:14:51,040 --> 01:14:55,280
+Back then.
+So that was one piece. There were all  
+
+729
+01:14:55,280 --> 01:15:01,920
+sorts of technical methodologies like reach and 
+frequency that are really important that we simply  
+
+730
+01:15:01,920 --> 01:15:08,600
+didn't know about. We were determined to run an 
+auction. We have patents to our name to this day  
+
+731
+01:15:08,600 --> 01:15:17,920
+that were how do we bring auction methodologies to 
+work in a broadcast medium? Some very interesting  
+
+732
+01:15:17,920 --> 01:15:24,000
+technology. At the end of the day, one of the 
+things that you really needed was a surplus of  
+
+733
+01:15:24,000 --> 01:15:31,560
+inventory, ad inventory, which there actually 
+isn't that much of relatively speaking compared  
+
+734
+01:15:31,560 --> 01:15:38,600
+to online. The other thing that is true is the 
+people who control that inventory are not nearly  
+
+735
+01:15:38,600 --> 01:15:47,200
+as fragmented, so when you're negotiating with 
+NBC or CBS or Clear Channel, they have much more  
+
+736
+01:15:47,200 --> 01:15:54,680
+leverage than in the online world of bloggers and 
+small websites. The fragmentation wasn't there,  
+
+737
+01:15:54,680 --> 01:16:02,840
+the methodology was different, it was going to be 
+a tougher slog. And in the meantime, Google made  
+
+738
+01:16:02,840 --> 01:16:09,480
+actually a very smart bet and this was a pivot 
+on Google's part based on a lot of learnings  
+
+739
+01:16:09,480 --> 01:16:12,880
+from the failure on the one side and some of 
+the success happening on the side of YouTube.
+ 
+
+740
+01:16:12,880 --> 01:16:18,960
+In the meantime, Google had acquired YouTube 
+and somewhere along the way, and this was over  
+
+741
+01:16:18,960 --> 01:16:27,120
+multiple years, Susan Wojcicki and the leadership 
+team of Google and Google Ads in particular came  
+
+742
+01:16:27,120 --> 01:16:33,560
+to the conclusion that rather than Google 
+chasing TV, let's have TV come to Google,  
+
+743
+01:16:33,560 --> 01:16:40,600
+I.e YouTube. And we've seen what's happened 
+in the ensuing 15 years where cord cutting  
+
+744
+01:16:40,600 --> 01:16:49,040
+and all of the rest and now the online digital ad 
+methodologies that Google is best in the world at  
+
+745
+01:16:49,040 --> 01:16:54,200
+can be applied in a much more straightforward 
+way. But I was collateral. Me and some of the  
+
+746
+01:16:54,200 --> 01:17:00,720
+teams I was a part of, we were collateral 
+damage in that evolution. There was a point  
+
+747
+01:17:00,720 --> 01:17:11,000
+where Google did a small layoff and it was largely 
+concentrated in my group of this acquisition.
+ 
+
+748
+01:17:11,000 --> 01:17:15,200
+Along the way, Google acquired YouTube, Google 
+also acquired Double Click and Double Click served  
+
+749
+01:17:15,200 --> 01:17:21,240
+all of the brand advertising online. And a couple 
+of years later... Well firstly at the time I was  
+
+750
+01:17:21,240 --> 01:17:28,240
+within weeks of being laid off, having dropped 
+out of two grad schools and moved 3000 miles west.  
+
+751
+01:17:28,240 --> 01:17:38,280
+That felt really crappy. There's a great song from 
+around that time, which is a mashup from Coldplay  
+
+752
+01:17:38,280 --> 01:17:43,520
+and Jay-Z. Lost. You should listen to the lyrics. 
+Just because I'm losing doesn't mean I've lost is  
+
+753
+01:17:43,520 --> 01:17:51,520
+literally the first line and I would have that 
+on repeat at that time within a couple of years,  
+
+754
+01:17:51,520 --> 01:17:57,200
+within a year, probably year and a half maybe that 
+was around the time I was married. So it was a lot  
+
+755
+01:17:57,200 --> 01:18:10,400
+going on. It turns out that within a year, sort 
+of post the Double Click deal, Google decided look  
+
+756
+01:18:10,400 --> 01:18:16,360
+with YouTube as an anchor asset and some other 
+things and the Double Click acquisition, there was  
+
+757
+01:18:16,360 --> 01:18:21,720
+a technology now pretty well established 15 years 
+later called Real-Time Bidding, and we were going  
+
+758
+01:18:21,720 --> 01:18:28,640
+to bring the search auction methodology across the 
+entire web for all of display advertising and we  
+
+759
+01:18:28,640 --> 01:18:35,720
+were going to use that core underlying infra 
+to be able to build not just a spot market,  
+
+760
+01:18:35,720 --> 01:18:40,520
+direct response advertising, but a futures market 
+which could apply to brand advertising and we are  
+
+761
+01:18:40,520 --> 01:18:44,920
+going to use that disruptive vector, something 
+fundamentally different, not just incrementally  
+
+762
+01:18:44,920 --> 01:18:50,960
+better, to essentially dislodge Yahoo from owning 
+brand advertising online. And I ended up getting  
+
+763
+01:18:50,960 --> 01:18:59,680
+that mandate because I had learned a lot about how 
+brand advertising worked, 12/18 months earlier.  
+
+764
+01:18:59,680 --> 01:19:08,560
+So that was a fairly spectacular failure.
+The acquisition, by the way, ended up in  
+
+765
+01:19:08,560 --> 01:19:20,040
+arbitration, big lawsuits, depositions, and it was 
+messy from all sorts of angles. We all worked our  
+
+766
+01:19:20,040 --> 01:19:25,200
+way through that and then in the end we ended 
+up building what is even still today, I believe  
+
+767
+01:19:25,200 --> 01:19:31,360
+Google's second largest business, which is the 
+display advertising business. But that transition  
+
+768
+01:19:31,360 --> 01:19:36,760
+was messy, excruciatingly difficult from a 
+strategy perspective as we talked about earlier,  
+
+769
+01:19:36,760 --> 01:19:45,080
+but from a emotional as well and figuring out 
+your way. Given I was new to product management,  
+
+770
+01:19:45,080 --> 01:19:50,920
+I was new to Silicon Valley, I was new to Google, 
+I was new to advertising and I had no idea whether  
+
+771
+01:19:50,920 --> 01:19:56,120
+I was ever going to be good at it or not.
+Do you think the lesson there is basically  
+
+772
+01:19:56,120 --> 01:19:59,080
+that song just because you're losing 
+doesn't mean you've lost or that  
+
+773
+01:19:59,080 --> 01:20:04,720
+you're a loser and just keep going?
+Yeah, bloody-mindedness is a dramatically  
+
+774
+01:20:04,720 --> 01:20:15,040
+underrated quality as we over-intellectualize from 
+strategy to execution and all the other things.  
+
+775
+01:20:16,160 --> 01:20:20,840
+Sometimes persistence is key and persistence 
+while still being clear-eyed about what the  
+
+776
+01:20:20,840 --> 01:20:25,080
+odds of success are is also key.
+Jag, we've covered everything  
+
+777
+01:20:25,080 --> 01:20:28,920
+I was hoping to cover and more. Before we 
+get to your very exciting lightning round,  
+
+778
+01:20:28,920 --> 01:20:35,120
+is there anything that you'd love to leave 
+listeners with or share as a last tidbit?
+ 
+
+779
+01:20:35,120 --> 01:20:46,200
+I would just summarize a couple of core points. 
+I think the idea of perseverance and being very  
+
+780
+01:20:46,200 --> 01:20:53,280
+clear about what you're trying to achieve and 
+how much it is worth to you and how much you're  
+
+781
+01:20:53,280 --> 01:21:02,720
+willing to fight for it, while also being very 
+open and transparent to feedback that you're  
+
+782
+01:21:02,720 --> 01:21:06,640
+getting from people, from the market about 
+whether what's working and what's not and  
+
+783
+01:21:06,640 --> 01:21:12,440
+knowing what parts to let go and what to hold 
+onto really tightly is an important lesson.
+ 
+
+784
+01:21:12,440 --> 01:21:17,880
+I think the other thing that I would just 
+emphasize again is, and this goes a little  
+
+785
+01:21:17,880 --> 01:21:26,720
+bit back to the debate you're trying to frame 
+up on new category or existing category, I think  
+
+786
+01:21:28,120 --> 01:21:32,720
+within that debate there's really a synthesis 
+that says, and I think most people would agree,  
+
+787
+01:21:32,720 --> 01:21:40,560
+if you're trying to break through as an insurgent, 
+you cannot fight on the ground that the incumbents  
+
+788
+01:21:41,720 --> 01:21:50,800
+stand firm. You have got to find a disruptive 
+vector and that means searching hard for what is  
+
+789
+01:21:50,800 --> 01:21:56,520
+fundamentally different so that it breaks through 
+the noise and the volume of the noise has just  
+
+790
+01:21:56,520 --> 01:22:04,040
+gone up so much in the last 15 years that I think 
+that's even growing in importance. Incrementally  
+
+791
+01:22:04,040 --> 01:22:10,640
+better doesn't get you there. It doesn't 
+get you there unless you have that hook.
+ 
+
+792
+01:22:10,640 --> 01:22:14,480
+I love that you summarized your key takeaways. 
+It's something I've been wanting to do and  
+
+793
+01:22:14,480 --> 01:22:19,360
+I might ask every guest to try to summarize 
+what they've shared because that is incredibly  
+
+794
+01:22:19,360 --> 01:22:24,920
+helpful. With that, we've reached our very 
+exciting lightning round. Are you ready?
+ 
+
+795
+01:22:24,920 --> 01:22:28,200
+I am ready. Let's do it.
+First question, what are two or three  
+
+796
+01:22:28,200 --> 01:22:36,160
+books that you recommend most to other people?
+The business books, one is Play to Win. I think  
+
+797
+01:22:36,160 --> 01:22:41,800
+that is a great modern strategy book that takes 
+a lot of what's happened in the digital world  
+
+798
+01:22:41,800 --> 01:22:49,840
+and summarizes it really well. Second one that 
+I would highlight, which I think is a really  
+
+799
+01:22:49,840 --> 01:22:57,360
+good non-digital world summary and really 
+distillation of the essence of strategy and  
+
+800
+01:22:57,360 --> 01:23:02,120
+as you mentioned earlier, he's coming on your 
+podcast soon from Roger Martin is Where to Play  
+
+801
+01:23:02,120 --> 01:23:09,200
+and How to Win, which I think is a classic.
+And as I mentioned, I went to study public  
+
+802
+01:23:09,200 --> 01:23:16,880
+policy and politics back 15 years ago. One of the 
+ultimate startups and one of the ultimate startup  
+
+803
+01:23:16,880 --> 01:23:24,880
+stories in my mind is the story of Singapore 
+and there's a autobiography of the founding  
+
+804
+01:23:24,880 --> 01:23:32,880
+prime minister of Singapore from 1965 till he 
+retired, he passed away a couple of years ago.  
+
+805
+01:23:32,880 --> 01:23:42,760
+Lee Kuan Yew. His book about the story of being 
+kicked out. Singapore being kicked out of Malaysia  
+
+806
+01:23:42,760 --> 01:23:51,360
+as a tiny in business terms, sub-scale, little 
+country with no natural resources is I think  
+
+807
+01:23:52,080 --> 01:23:59,000
+inspiring. His book is called From Third World 
+to First, and I think it's a great story that in  
+
+808
+01:23:59,000 --> 01:24:04,800
+many ways is a parallel to what startups try to 
+do, which is essentially go from third class to  
+
+809
+01:24:04,800 --> 01:24:14,040
+first and it's a very tricky ride and requires 
+a ruthless honesty about where you stand and  
+
+810
+01:24:14,040 --> 01:24:20,280
+what it'll take to succeed. And it usually 
+gets prettified up when told in retrospect,  
+
+811
+01:24:20,280 --> 01:24:30,440
+but it is messy every step of the way and I 
+think it's an awesome, unapologetic summary  
+
+812
+01:24:30,440 --> 01:24:37,560
+of what it takes to achieve greatness in a very 
+different sphere than we're used to talking to.
+ 
+
+813
+01:24:37,560 --> 01:24:42,000
+I love that. I definitely want to read that now. 
+Next question, do you have a favorite recent  
+
+814
+01:24:42,000 --> 01:24:47,520
+movie or TV show you've really enjoyed?
+There's the great series that my wife and I  
+
+815
+01:24:47,520 --> 01:24:56,800
+watched fairly recently on HBO called the Gilded 
+Age, which really shines a very interesting light  
+
+816
+01:24:56,800 --> 01:25:07,040
+on how technology, this is from the late 1800s, 
+19th century, how the technological changes  
+
+817
+01:25:07,040 --> 01:25:14,840
+disrupts both the economic world and the world of 
+wealth, but also the social dynamics in a society.  
+
+818
+01:25:14,840 --> 01:25:22,560
+And it's fascinating because we're living through 
+a new Gilded age right now and we're seeing a  
+
+819
+01:25:22,560 --> 01:25:31,640
+lot of those dynamics, but turbocharged on 
+social media, so extra, extra exciting.
+ 
+
+820
+01:25:31,640 --> 01:25:37,840
+Good times. Do you have a favorite product 
+that you have recently discovered that you  
+
+821
+01:25:37,840 --> 01:25:42,640
+really like? Either an app, some physical, 
+anything that's bringing you joy? I
+

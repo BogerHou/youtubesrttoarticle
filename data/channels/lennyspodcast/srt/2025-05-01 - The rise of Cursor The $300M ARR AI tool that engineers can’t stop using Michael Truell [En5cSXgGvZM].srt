@@ -1,0 +1,3996 @@
+1
+00:00:00,000 --> 00:00:03,840
+... our goal with Cursor is to 
+invent a new type of programming,  
+
+2
+00:00:03,840 --> 00:00:08,160
+a very different way to build software. So 
+a world kind of after code, I think that  
+
+3
+00:00:08,160 --> 00:00:12,720
+more and more being an engineer will start to 
+feel like being a logic designer, and really,  
+
+4
+00:00:12,720 --> 00:00:16,320
+it will be about specifying your intent for 
+how exactly you want everything to work.
+
+5
+00:00:16,320 --> 00:00:20,080
+What is the most counter-intuitive thing 
+you've learned so far about building Cursor?
+
+6
+00:00:20,080 --> 00:00:23,360
+We definitely didn't expect to be doing any of 
+our own model development. And at this point,  
+
+7
+00:00:23,360 --> 00:00:26,800
+every magic moment in Cursor 
+involves a custom model in some way.
+
+8
+00:00:26,800 --> 00:00:29,920
+What's something that you wish you 
+knew before you got into this role?
+
+9
+00:00:29,920 --> 00:00:35,360
+Many people you hear hire too fast, I think 
+we actually hired too slow to begin with.
+
+10
+00:00:35,360 --> 00:00:39,520
+You guys went from $0 to 100 
+million ARR in a year and a half,  
+
+11
+00:00:39,520 --> 00:00:43,120
+which is historic. Was there an inflection point 
+where things just started to really take off?
+
+12
+00:00:43,120 --> 00:00:46,640
+The growth has been fairly just 
+consistent on an exponential. And  
+
+13
+00:00:46,640 --> 00:00:49,440
+exponential to begin with feels fairly 
+slow when the numbers are really low,  
+
+14
+00:00:49,440 --> 00:00:51,600
+and it didn't really show off 
+to the races to begin with.
+
+15
+00:00:51,600 --> 00:00:53,280
+What do you think is the secret to your success?
+
+16
+00:00:53,280 --> 00:00:55,600
+I think it's been...
+
+17
+00:00:55,600 --> 00:01:00,640
+Today, my guest is Michael Truell. Michael 
+is co-founder and CEO of Anysphere,  
+
+18
+00:01:00,640 --> 00:01:05,120
+the company behind Cursor. If you've been 
+living under a rock and haven't heard of Cursor,  
+
+19
+00:01:05,120 --> 00:01:09,840
+it is the leading AI code editor, and is at the 
+very forefront of changing how engineers and  
+
+20
+00:01:09,840 --> 00:01:15,680
+product teams build software. It's also one of the 
+fastest growing products of all time, hitting 100  
+
+21
+00:01:15,680 --> 00:01:22,800
+million ARR just 20 months after launching, and 
+then 300 million ARR just two years since launch. 
+
+22
+00:01:22,800 --> 00:01:27,600
+Michael's been working on AI for 10 years. He 
+studied computer science and math at MIT, did  
+
+23
+00:01:27,600 --> 00:01:33,120
+AI research at MIT and Google, and is a student 
+of tech and business history. As you'll soon see,  
+
+24
+00:01:33,120 --> 00:01:36,880
+Michael thinks deeply about where things are 
+heading, and what the future of building software  
+
+25
+00:01:36,880 --> 00:01:42,560
+looks like. We chat about the origin story of 
+Cursor, his prediction of what happens after code,  
+
+26
+00:01:42,560 --> 00:01:46,400
+his biggest counter-intuitive lessons 
+from building Cursor, where he sees things  
+
+27
+00:01:46,400 --> 00:01:52,080
+going for software engineers, and so much more.
+Michael does not do many podcasts. The only other  
+
+28
+00:01:52,080 --> 00:01:57,120
+podcast he's ever done is Lex Fridman, so it was 
+a true honor to have Michael on. If you enjoy this  
+
+29
+00:01:57,120 --> 00:02:01,360
+podcast, don't forget to subscribe and follow it 
+in your favorite podcasting app or YouTube. Also,  
+
+30
+00:02:01,360 --> 00:02:06,000
+if you become an annual subscriber of my 
+newsletter, you get a year free of Perplexity,  
+
+31
+00:02:06,000 --> 00:02:11,040
+Linear, Superhuman, Notion, and Granola. Check 
+it out at lennysnewsletter.com, and click bundle.  
+
+32
+00:02:11,040 --> 00:02:17,040
+With that, I bring you Michael Truell.
+This episode is brought to you by Eppo.  
+
+33
+00:02:17,040 --> 00:02:22,720
+Eppo is a next-generation A/B testing and feature 
+management platform built by alums of Airbnb and  
+
+34
+00:02:22,720 --> 00:02:29,120
+Snowflake for modern growth teams. Companies like 
+Twitch, Miro, ClickUp, and DraftKings rely on Eppo  
+
+35
+00:02:29,120 --> 00:02:34,800
+to power their experiments. Experimentation is 
+increasingly essential for driving growth, and for  
+
+36
+00:02:34,800 --> 00:02:39,840
+understanding the performance of new features, and 
+Eppo helps you increase experimentation velocity,  
+
+37
+00:02:39,840 --> 00:02:44,480
+while unlocking rigorous deep analysis in 
+a way that no other commercial tool does. 
+
+38
+00:02:44,480 --> 00:02:48,800
+When I was at Airbnb, one of the things that 
+I loved most was our experimentation platform,  
+
+39
+00:02:48,800 --> 00:02:53,120
+where I could set up experiments easily, 
+troubleshoot issues, and analyze performance  
+
+40
+00:02:53,120 --> 00:02:57,760
+all on my own. Eppo does all that and more, 
+with advanced statistical methods that can  
+
+41
+00:02:57,760 --> 00:03:02,800
+help you shave weeks off experiment time, an 
+accessible UI for diving deeper into performance,  
+
+42
+00:03:02,800 --> 00:03:07,680
+and out-of-the-box reporting that helps you 
+avoid annoying, prolonged analytics cycles.  
+
+43
+00:03:07,680 --> 00:03:11,120
+Eppo also makes it easy for you to share 
+experiment insights with your team,  
+
+44
+00:03:11,120 --> 00:03:17,360
+sparking new ideas for the A/B testing flywheel. 
+Eppo powers experimentation across every use case,  
+
+45
+00:03:17,360 --> 00:03:22,240
+including product, growth, machine learning, 
+monetization, and email marketing. Check  
+
+46
+00:03:22,240 --> 00:03:31,920
+out Eppo at geteppo.com/lenny, and 10X your 
+experiment velocity. That's getE-P-P-O.com/lenny. 
+
+47
+00:03:31,920 --> 00:03:36,400
+This episode is brought to you by Vanta. 
+When it comes to ensuring your company  
+
+48
+00:03:36,400 --> 00:03:43,120
+has top-notch security practices, things get 
+complicated fast. Now, you can assess risk,  
+
+49
+00:03:43,120 --> 00:03:50,000
+secure the trust of your customers, and 
+automate compliance for SOC 2, ISO 27001, HIPAA,  
+
+50
+00:03:50,000 --> 00:03:56,240
+and more with a single platform, Vanta. Vanta's 
+market-leading trust management platform helps  
+
+51
+00:03:56,240 --> 00:04:02,160
+you continuously monitor compliance, alongside 
+reporting and tracking risk. Plus, you can save  
+
+52
+00:04:02,160 --> 00:04:07,920
+hours by completing security questionnaires with 
+Vanta AI. Join thousands of global companies  
+
+53
+00:04:07,920 --> 00:04:13,680
+that use Vanta to automate evidence collection, 
+unify risk management, and streamline security  
+
+54
+00:04:13,680 --> 00:04:26,640
+reviews. Get $1,000 off Vanta when you go to 
+vanta.com/lenny. That's V-A-N-T-A.com/lenny. 
+
+55
+00:04:26,640 --> 00:04:30,560
+Michael, thank you so much for 
+being here. Welcome to the podcast.
+
+56
+00:04:30,560 --> 00:04:33,040
+Thank you. It's great to be 
+here. Thank you for having me.
+
+57
+00:04:33,040 --> 00:04:35,920
+When we were chatting earlier, you 
+had this really interesting phrase,  
+
+58
+00:04:35,920 --> 00:04:41,040
+this idea of what comes after code. Talk 
+about that, just the vision you have of  
+
+59
+00:04:41,040 --> 00:04:45,600
+where you think things are going in terms 
+of moving from code to maybe something else.
+
+60
+00:04:45,600 --> 00:04:52,320
+Our goal with Cursor is to invent sort of a new 
+type of programming, a very different way to  
+
+61
+00:04:52,320 --> 00:04:58,880
+build software, that's kind of just distilled down 
+into you describing the intent to the computer for  
+
+62
+00:04:58,880 --> 00:05:04,320
+what you want in the most concise way possible, 
+and really distilled down to just defining how  
+
+63
+00:05:04,320 --> 00:05:10,400
+you think the software should work, and how you 
+think it should look. With the technology that we  
+
+64
+00:05:10,400 --> 00:05:14,320
+have today, and as it matures, we think you can 
+get to a place where you can invent a new method  
+
+65
+00:05:14,320 --> 00:05:18,720
+of building software that's [inaudible 
+00:05:16] higher level, and more productive,  
+
+66
+00:05:18,720 --> 00:05:26,000
+in some cases, more accessible too.
+And that process will be a gradual  
+
+67
+00:05:26,000 --> 00:05:35,120
+moving away from what building software looks 
+like today. I want to contrast it with maybe  
+
+68
+00:05:35,120 --> 00:05:40,800
+the vision of what software looks like in the 
+future that I think... A couple of visions that  
+
+69
+00:05:40,800 --> 00:05:46,880
+are in a popular consciousness that we at 
+least have some disagreement with. One is,  
+
+70
+00:05:46,880 --> 00:05:50,720
+there's a group of people who think that 
+software building in the future is going  
+
+71
+00:05:50,720 --> 00:05:54,720
+to look very much like it does today, which mostly 
+means text editing, formal programming languages,  
+
+72
+00:05:54,720 --> 00:05:58,560
+like TypeScript, and Go, and C, and Rust. 
+And then there's another group that kind of  
+
+73
+00:05:58,560 --> 00:06:03,600
+thinks you're just going to type into a bot, and 
+you're going to ask it to build you something,  
+
+74
+00:06:03,600 --> 00:06:06,960
+and then you're going to ask it to change 
+something about what you're building, and it's  
+
+75
+00:06:06,960 --> 00:06:10,800
+kind of like this chatbot, Slackbot style where 
+you're talking to your engineering department. 
+
+76
+00:06:10,800 --> 00:06:18,160
+And we think that there are problems with both 
+of those visions. I think that on the chatbot  
+
+77
+00:06:18,160 --> 00:06:24,320
+style end of things... And we think it's going 
+to look weirder than both. The problem with the  
+
+78
+00:06:24,320 --> 00:06:30,400
+chatbot style end of things is that lacks a 
+lot of precision. If you want humans to have  
+
+79
+00:06:31,360 --> 00:06:36,240
+complete control over what the software looks 
+like, and how it works, you need to let them  
+
+80
+00:06:36,240 --> 00:06:42,160
+gesture at what they want to be changed in 
+a form factor that's more precise than just,  
+
+81
+00:06:42,880 --> 00:06:47,600
+"Change this about my app." In a text box, 
+removed from the whole thing. And then  
+
+82
+00:06:48,320 --> 00:06:52,640
+the version of the world where nothing changes we 
+think is wrong, because we think the technology  
+
+83
+00:06:52,640 --> 00:06:59,280
+is going to get much, much, much better.
+And so a world after code, I think that it  
+
+84
+00:06:59,280 --> 00:07:04,320
+looks like a world where you have a representation 
+of the logic of your software that does look more  
+
+85
+00:07:04,320 --> 00:07:07,920
+like English, you have written down... You 
+can imagine in [inaudible 00:07:08] form,  
+
+86
+00:07:07,920 --> 00:07:11,440
+you can imagine in kind of an evolution of 
+programming language towards pseudocode. You  
+
+87
+00:07:11,440 --> 00:07:15,760
+have written down the logic of the software, 
+and you can edit that at a high level,  
+
+88
+00:07:15,760 --> 00:07:21,040
+and you can point at that. And it won't be 
+the impenetrable millions of lines of code,  
+
+89
+00:07:21,040 --> 00:07:25,120
+it'll instead be something that's much Terser, and 
+easier to understand, easier to navigate. But that  
+
+90
+00:07:25,120 --> 00:07:30,320
+world where the kind of crazy, hard to understand 
+symbols start to evolve towards something  
+
+91
+00:07:30,320 --> 00:07:36,320
+that's a little bit more human-readable, and 
+human-editable, is one that we're working towards.
+
+92
+00:07:36,320 --> 00:07:40,080
+This is a profound point. I want to make sure 
+people don't miss what you're saying here,  
+
+93
+00:07:40,080 --> 00:07:44,000
+which is that what you're envisioning in 
+the next year essentially is kind of when  
+
+94
+00:07:44,000 --> 00:07:48,320
+things start to shift, is, people 
+move away from even seeing code,  
+
+95
+00:07:48,320 --> 00:07:54,960
+having to think in code in JavaScript and Python, 
+and there's this abstraction that will appear,  
+
+96
+00:07:54,960 --> 00:07:59,440
+essentially pseudocode, describing what the 
+code should be doing more in English sentences.
+
+97
+00:07:59,440 --> 00:08:04,960
+Yep. We think it ends up looking like that, 
+and we're very opinionated that that path goes  
+
+98
+00:08:04,960 --> 00:08:10,320
+through existing professional engineers, and it 
+looks like this evolution away from code. And it  
+
+99
+00:08:10,320 --> 00:08:14,800
+definitely looks like the human still being 
+in the driver's seat, and the human having  
+
+100
+00:08:14,800 --> 00:08:20,480
+both a ton of control over all aspects of the 
+software and not giving that up. And then also  
+
+101
+00:08:20,480 --> 00:08:26,080
+the human having the ability to make changes very 
+quickly, having a fast duration loop and not just  
+
+102
+00:08:27,600 --> 00:08:33,520
+having something in the background that's super 
+slow and takes weeks, go do all your work for you.
+
+103
+00:08:33,520 --> 00:08:38,640
+This begs the question for people 
+that are currently engineers,  
+
+104
+00:08:38,640 --> 00:08:42,560
+or thinking about becoming engineers, 
+or designers, or product manager,  
+
+105
+00:08:42,560 --> 00:08:50,720
+what skills do you think will be more and more 
+valuable in this world of what comes after code?
+
+106
+00:08:50,720 --> 00:08:56,480
+I think taste will be increasingly more valuable. 
+And I think often when people think about tastes  
+
+107
+00:08:56,480 --> 00:09:03,440
+in the realm of software, they think about 
+visuals, or taste over smooth animations, and  
+
+108
+00:09:04,640 --> 00:09:11,600
+coloring things, UI, UX, et cetera on the visual 
+design of things. And the visual side of things is  
+
+109
+00:09:11,600 --> 00:09:17,040
+an important part of defining a piece of software, 
+but then, as mentioned before, I think that the  
+
+110
+00:09:17,040 --> 00:09:22,080
+other half of defining a piece of software 
+is the logic of it, and how the thing works. 
+
+111
+00:09:22,080 --> 00:09:26,640
+And we have amazing tools for specing out 
+the visuals of things, and then when you get  
+
+112
+00:09:26,640 --> 00:09:32,240
+into the logic of how a piece of software works, 
+really, the best representation we have of that is  
+
+113
+00:09:32,240 --> 00:09:36,320
+code right now. You can kind of gesture at it with 
+Figma, and you can gesture at it with writing down  
+
+114
+00:09:36,320 --> 00:09:42,480
+notes, but it's when you have an actual working 
+prototype. And so I think that more and more,  
+
+115
+00:09:42,480 --> 00:09:47,440
+being an engineer will start to feel like being 
+a logic designer, and really, it will be about  
+
+116
+00:09:47,440 --> 00:09:54,000
+specifying your intent for how exactly you want 
+everything to work. It'd be more about the whats,  
+
+117
+00:09:54,000 --> 00:09:58,240
+and a little bit less about how exactly 
+you're going to do things under the hood. 
+
+118
+00:09:59,360 --> 00:10:03,600
+I think taste will be increasingly important. 
+I think one aspect of software engineering,  
+
+119
+00:10:03,600 --> 00:10:08,400
+and we're very far from this right now, and there 
+are lots of funny memes going around the internet  
+
+120
+00:10:08,400 --> 00:10:13,120
+about some of the trials and tribulations people 
+can run into if they trust AI for too many things  
+
+121
+00:10:13,120 --> 00:10:21,280
+that comes to engineering, around building apps 
+that have glaring deficiencies, and problems,  
+
+122
+00:10:21,280 --> 00:10:28,240
+and functionality issues. But I think we 
+will get to a place where you'll be able to  
+
+123
+00:10:28,880 --> 00:10:34,000
+be less careful as a software engineer, which, 
+right now, is an incredibly, incredibly important  
+
+124
+00:10:34,000 --> 00:10:40,320
+skill. We'll move a little bit from carefulness, 
+and a little bit more towards taste.
+
+125
+00:10:40,320 --> 00:10:44,240
+This makes me think of vibe coding, is that 
+kind of what you're describing when you talk  
+
+126
+00:10:44,240 --> 00:10:48,720
+about not having to think about the details 
+as much, and just kind of going with the flow?
+
+127
+00:10:48,720 --> 00:10:55,440
+I think it's related. I think that vibe 
+coding right now describes exactly this  
+
+128
+00:10:55,440 --> 00:11:00,880
+state of creation that is pretty controversial, 
+where you're generating a lot of coding, you  
+
+129
+00:11:00,880 --> 00:11:07,760
+aren't really understanding the details. That is a 
+state of creation that then has lots of problems,  
+
+130
+00:11:07,760 --> 00:11:11,680
+you don't really... By not understanding 
+the details under the hood right now,  
+
+131
+00:11:11,680 --> 00:11:14,960
+you then very quickly get to a place where 
+you're kind of limited at a certain point,  
+
+132
+00:11:14,960 --> 00:11:19,920
+where you create something that's big enough that 
+you can't change. And so I think some of the ideas  
+
+133
+00:11:19,920 --> 00:11:26,080
+that we're interested around, how do you give 
+people continued control over all the details  
+
+134
+00:11:27,440 --> 00:11:33,200
+when they don't really understand the code? I 
+think that solutions there are very relevant  
+
+135
+00:11:33,200 --> 00:11:40,960
+to the people who are vibe coding right now. I 
+think that right now, we lack the ability to let  
+
+136
+00:11:40,960 --> 00:11:47,520
+the tastemakers actually have complete control 
+over the software. One of the issues also with  
+
+137
+00:11:47,520 --> 00:11:52,400
+vibe coding, and letting taste really shine 
+through from people is, you can create stuff,  
+
+138
+00:11:52,400 --> 00:11:56,800
+but a lot of it the AI making decisions that 
+are unwieldy and you don't have to control over.
+
+139
+00:11:56,800 --> 00:11:58,880
+One more question along these lines. You threw out  
+
+140
+00:11:58,880 --> 00:12:01,600
+this word taste. When you say 
+taste, what are you thinking?
+
+141
+00:12:01,600 --> 00:12:06,880
+I'm thinking having the right idea for what 
+should be built. It will become more and more  
+
+142
+00:12:06,880 --> 00:12:10,960
+about effortless translation of, here's 
+exactly what you want built, here's how  
+
+143
+00:12:10,960 --> 00:12:15,440
+you want everything to work, here's how you want 
+it to look. And then you'll be able to make that  
+
+144
+00:12:15,440 --> 00:12:20,320
+on a computer, and it will less be about this kind 
+of translation layer of, you and your team have a  
+
+145
+00:12:20,320 --> 00:12:26,080
+picture of what you'd want to build, and then you 
+have to really painstakingly, labor-intensive,  
+
+146
+00:12:26,080 --> 00:12:31,760
+lay out that into a format that a computer 
+can then execute and interpret. I think  
+
+147
+00:12:31,760 --> 00:12:36,000
+less than the UI side of things, maybe 
+taste is a little bit of a misnomer,  
+
+148
+00:12:36,000 --> 00:12:39,520
+but just about having the right 
+idea for what should be built.
+
+149
+00:12:39,520 --> 00:12:42,480
+Awesome. Okay. I'm going to come back to 
+these topics, but I want to actually zoom  
+
+150
+00:12:42,480 --> 00:12:49,040
+us back out to the beginnings of Cursor. 
+I have never heard the origin story,  
+
+151
+00:12:49,040 --> 00:12:52,720
+I don't think many people know how this 
+whole thing started. Basically you guys  
+
+152
+00:12:52,720 --> 00:12:56,240
+are building one of the fastest growing 
+products in the history of the world,  
+
+153
+00:12:56,240 --> 00:13:00,560
+it's changing the way people build products, 
+it's changing careers, professions, it's changing  
+
+154
+00:13:00,560 --> 00:13:05,600
+so much. How did it all begin? Any memorable 
+moments along the journey of the early days?
+
+155
+00:13:05,600 --> 00:13:13,040
+Cursor kind of started as a solution search of a 
+problem, and a little bit where it very much came  
+
+156
+00:13:13,040 --> 00:13:22,400
+from reflecting on how AI was going to get better 
+over the course of the next 10 years. There were  
+
+157
+00:13:22,400 --> 00:13:29,733
+kind of two defining moments, one was being really 
+excited by using the first beta version of Code  
+
+158
+00:13:29,733 --> 00:13:35,840
+Pilot, actually. This was the first time we had 
+used an AI product that was really, really, really  
+
+159
+00:13:35,840 --> 00:13:43,360
+useful, and was actually just useful at all, 
+and wasn't just a vaporware kind of demo thing. 
+
+160
+00:13:43,360 --> 00:13:48,080
+And in addition to being the first AI 
+product that we'd use that was useful,  
+
+161
+00:13:48,080 --> 00:13:53,600
+Code Pilot was also one of the most useful, if 
+not the most useful dev tool we'd ever adopted,  
+
+162
+00:13:54,560 --> 00:13:59,840
+and that got us really excited. Another moment 
+that got us really excited was the series of  
+
+163
+00:13:59,840 --> 00:14:03,600
+scaling on papers coming out of OpenAI and 
+other places that showed that even if we  
+
+164
+00:14:03,600 --> 00:14:07,920
+had no new ideas, AI was going to get better 
+and better just by pulling on simple levers,  
+
+165
+00:14:07,920 --> 00:14:12,560
+like scaling up the models, and also scaling 
+up the data that was going into the models. 
+
+166
+00:14:12,560 --> 00:14:17,600
+And so at the end of 2021, beginning of 2022, 
+this got us excited about how AI products were  
+
+167
+00:14:17,600 --> 00:14:23,040
+now possible, this technology was going to mature 
+into the future. And it felt like when we looked  
+
+168
+00:14:23,040 --> 00:14:30,400
+around, there were lots of people talking about 
+making models, and it felt like people weren't  
+
+169
+00:14:30,400 --> 00:14:34,480
+really picking an area of knowledge work and 
+thinking about what it was going to look like  
+
+170
+00:14:34,480 --> 00:14:41,760
+as AI got better and better. And that set us 
+on the path to an idea generation exercise,  
+
+171
+00:14:41,760 --> 00:14:46,960
+it was like, "How are these areas of knowledge 
+work going to change in the future as this tech  
+
+172
+00:14:46,960 --> 00:14:52,640
+gets more mature? What is the end state of the 
+work going to look like? How are the tools that  
+
+173
+00:14:52,640 --> 00:14:58,800
+we use to do that work going to change? How are 
+the models going to need to get better to support  
+
+174
+00:14:58,800 --> 00:15:04,080
+changes in the work? And once scaling and 
+pre-training ran out, how are you going to  
+
+175
+00:15:04,080 --> 00:15:10,800
+keep pushing for technological capabilities?"
+And the misstep at the beginning of Cursor is  
+
+176
+00:15:10,800 --> 00:15:17,520
+we actually worked on... We sort of did this 
+whole grand exercise, and we decided to work on  
+
+177
+00:15:18,160 --> 00:15:22,640
+an area of knowledge work that we thought 
+would be relatively uncompetitive, and sleepy,  
+
+178
+00:15:22,640 --> 00:15:27,840
+and boring, and no one would be looking at 
+it, because we thought, "Oh, coding's great,  
+
+179
+00:15:27,840 --> 00:15:32,720
+coding's totally going to change with this AI, 
+but people are already doing that." So there was  
+
+180
+00:15:32,720 --> 00:15:37,680
+a period of four months to begin with, where we 
+were actually working on a very different idea,  
+
+181
+00:15:37,680 --> 00:15:42,080
+which was helping to automate and 
+augment mechanical engineering,  
+
+182
+00:15:42,080 --> 00:15:46,720
+and building tools for mechanical engineers.
+There were problems from the get-go in that.  
+
+183
+00:15:48,160 --> 00:15:53,280
+Me and my co-founders, we weren't mechanical 
+engineers. We had friends who were mechanical  
+
+184
+00:15:53,280 --> 00:15:57,200
+engineers, but we were very much unfamiliar 
+with the field. So there was a little bit of  
+
+185
+00:15:57,200 --> 00:16:02,320
+a blind man and the elephant problem from 
+the get-go. There were problems around,  
+
+186
+00:16:02,320 --> 00:16:05,760
+how would you actually take the models that exist 
+to today and make them useful for mechanical  
+
+187
+00:16:05,760 --> 00:16:10,320
+engineering? The way we netted out is, you need to 
+actually develop your own models from the get-go.  
+
+188
+00:16:10,320 --> 00:16:20,480
+And the way we did that was tricky, and there's 
+not a lot of data on the internet of 3D models  
+
+189
+00:16:21,440 --> 00:16:25,920
+of different tools and parts, and the steps 
+that I expect to build up to those 3D models,  
+
+190
+00:16:25,920 --> 00:16:30,160
+and then getting them from the sources that 
+have them is also a tricky process too. 
+
+191
+00:16:30,160 --> 00:16:35,760
+But eventually what happened was, we came to our 
+senses, we realized we're not super excited about  
+
+192
+00:16:35,760 --> 00:16:40,240
+mechanical engineering, it's not the thing we want 
+to dedicate our lives to. And we looked around,  
+
+193
+00:16:40,240 --> 00:16:46,800
+and in the area of programming, it felt like 
+despite a decent amount of time ensuing,  
+
+194
+00:16:46,800 --> 00:16:50,880
+not much has changed, and it felt like 
+the people that were working on the space  
+
+195
+00:16:50,880 --> 00:16:55,440
+maybe had a disconnect with us, and it felt like 
+they weren't being sufficiently ambitious about  
+
+196
+00:16:56,160 --> 00:16:59,440
+where everything was going to go in the future, 
+and how all of software creation was going to  
+
+197
+00:16:59,440 --> 00:17:04,160
+blow through these models. And that's what 
+set us off on the path to building Cursor.
+
+198
+00:17:04,160 --> 00:17:08,560
+Okay. So interesting. Okay, so first of all, I 
+love that... This is advice that you often hear  
+
+199
+00:17:08,560 --> 00:17:13,520
+of go after a boring industry because no one's 
+going to be there, and there's opportunity. And  
+
+200
+00:17:13,520 --> 00:17:16,640
+sometimes it works, but I love that in this 
+journey, it's like, "No, actually, go after  
+
+201
+00:17:16,640 --> 00:17:23,200
+the hottest, most popular space, AI coding, app 
+building." And it worked out. And the way you  
+
+202
+00:17:23,200 --> 00:17:27,600
+phrased it just now is, you didn't see enough 
+ambition potentially, that you thought there  
+
+203
+00:17:27,600 --> 00:17:32,640
+was more to be done. So it feels like that's an 
+interesting lesson. Even if something looks like,  
+
+204
+00:17:32,640 --> 00:17:36,400
+"Okay, it's too late, there's GitHub, Code 
+Pilot's out there." Some other products. If  
+
+205
+00:17:36,400 --> 00:17:41,920
+you notice that they're just not as ambitious 
+as they could be, or as you are, or you see  
+
+206
+00:17:41,920 --> 00:17:46,480
+almost a flaw in their approach, that there's 
+still a big opportunity. Does that resonate?
+
+207
+00:17:46,480 --> 00:17:53,840
+That totally resonates. A part of it is, you 
+need there to be leapfrogs that can happen,  
+
+208
+00:17:53,840 --> 00:17:59,200
+you need there to be things that you can do. 
+And I think the exciting thing about AI is,  
+
+209
+00:17:59,200 --> 00:18:03,520
+in a bunch of places, and I think this 
+is very much still true of our space,  
+
+210
+00:18:03,520 --> 00:18:06,240
+and can talk about how we think about 
+that and how we deal with that, but  
+
+211
+00:18:07,440 --> 00:18:12,000
+I think that just the ceiling is really 
+high. And yes, if you look around,  
+
+212
+00:18:13,040 --> 00:18:18,800
+probably even if you take the best tool, any 
+of these fields, there should be a lot more  
+
+213
+00:18:18,800 --> 00:18:24,160
+that needs to be done over the next few years. 
+Having that space, having that high ceiling,  
+
+214
+00:18:24,160 --> 00:18:30,480
+I think is unique amongst areas of software, at 
+least the degree to which it is high with AI.
+
+215
+00:18:30,480 --> 00:18:33,840
+Let's come back to the IDE questions. So 
+there's a few routes you could have taken,  
+
+216
+00:18:33,840 --> 00:18:37,920
+and other companies are doing different routes. 
+So there's building an IDE for engineers to work  
+
+217
+00:18:37,920 --> 00:18:44,400
+within and adding AI magic to it, there's another 
+route of just a full AI agentic dev product,  
+
+218
+00:18:44,400 --> 00:18:48,640
+and then there's just a model that is very good 
+at coding, and focusing on building the best  
+
+219
+00:18:48,640 --> 00:18:54,400
+possible coding model. What made you decide 
+and see that the IDE path was the best route?
+
+220
+00:18:54,400 --> 00:19:03,280
+The folks who were from the get-go working 
+on just a model were working on end-to-end  
+
+221
+00:19:03,280 --> 00:19:09,760
+automation programming. I think they were trying 
+to build something very different from us,  
+
+222
+00:19:09,760 --> 00:19:16,000
+which is, we care about giving humans control 
+over all of the decisions in the end tool that  
+
+223
+00:19:16,000 --> 00:19:22,800
+they're building. And I think those folks were 
+very much thinking of a future where end-to-end,  
+
+224
+00:19:22,800 --> 00:19:27,280
+the whole thing is done by AI, and maybe the 
+AI is making all the decisions too. And so,  
+
+225
+00:19:27,280 --> 00:19:30,800
+one, there was a personal interest 
+component. Two, I think that always,  
+
+226
+00:19:30,800 --> 00:19:35,600
+we've tried to be intense realists about 
+where the technology is today, very, very,  
+
+227
+00:19:35,600 --> 00:19:42,320
+very excited about how AI is going to mature 
+over the course of many decades. But I think  
+
+228
+00:19:42,320 --> 00:19:49,360
+that sometimes people... There's an instinct 
+to see AI do magical things in one area, and  
+
+229
+00:19:49,360 --> 00:19:53,200
+then kind of anthropomorphize these models, and 
+think it's better than a smart person here, and  
+
+230
+00:19:53,200 --> 00:19:58,240
+so it must be better than a smart person there.
+But these things have massive issues, and  
+
+231
+00:19:59,440 --> 00:20:06,480
+we... From the very start, our product development 
+process was really about dogfooding, and using the  
+
+232
+00:20:06,480 --> 00:20:12,480
+tool intensely every day. And we never wanted 
+to ship anything that wasn't useful to us,  
+
+233
+00:20:12,480 --> 00:20:17,440
+and we had the benefit of doing that because 
+we were the end users part of our product. And  
+
+234
+00:20:17,440 --> 00:20:23,840
+I think that that instills a realism in you 
+around where the tech is right now, and so  
+
+235
+00:20:24,480 --> 00:20:27,920
+that definitely made us think that we need the 
+humans to be in the driver's seat, the AI cannot  
+
+236
+00:20:27,920 --> 00:20:32,640
+do everything. We're also interested in giving 
+humans that control too for personal reasons,  
+
+237
+00:20:32,640 --> 00:20:37,200
+and so that gets you away from just your model 
+company that also gets you away from just this  
+
+238
+00:20:37,200 --> 00:20:42,320
+end-end stuff without the human having control.
+And then the way you get to an IDE versus maybe  
+
+239
+00:20:42,320 --> 00:20:47,920
+a plug-in to an existing coding environment is the 
+belief that programming is going to flow through  
+
+240
+00:20:47,920 --> 00:20:52,080
+these models, and the active programming is going 
+to change a lot over the course of the next few  
+
+241
+00:20:52,080 --> 00:20:57,760
+years. And that the extensibility that existing 
+coding environments have is so, so, so limited,  
+
+242
+00:20:57,760 --> 00:21:00,880
+so if you think that the UIs may change a lot, 
+if you think that the form factor programming  
+
+243
+00:21:00,880 --> 00:21:04,240
+is going to change a lot, necessarily need 
+to have control over the entire application.
+
+244
+00:21:04,240 --> 00:21:08,960
+I know that you guys today have 
+an IDE, and that's probably the  
+
+245
+00:21:08,960 --> 00:21:11,920
+bias you have of this is maybe where the 
+future is heading, but I'm just curious,  
+
+246
+00:21:11,920 --> 00:21:16,160
+do you think a big part of the future is also 
+going to be AI engineers that are just sitting  
+
+247
+00:21:16,160 --> 00:21:20,160
+in Slack and just doing things for you? Is 
+that something that fits into Cursor one day?
+
+248
+00:21:20,160 --> 00:21:26,320
+I think you'll want the ability to move between 
+all of these things fairly effortlessly,  
+
+249
+00:21:26,320 --> 00:21:32,080
+and sometimes I think you will want to have the 
+thing kind of go spin off on its own for a while,  
+
+250
+00:21:32,080 --> 00:21:37,120
+and then I think you'll want the ability to pull 
+in the AI's work, and then work with it very,  
+
+251
+00:21:37,120 --> 00:21:43,040
+very, very quickly, and then maybe have it go 
+spin off again. And so these kind of background  
+
+252
+00:21:43,040 --> 00:21:48,480
+versus foreground form factors, I think you 
+want that all to work well in one place. And  
+
+253
+00:21:48,480 --> 00:21:53,440
+I think the background stuff, there's a segment 
+of programming that it's especially useful for,  
+
+254
+00:21:53,440 --> 00:21:59,520
+which is type of programming tasks where it's 
+very easy to specify exactly what you want  
+
+255
+00:22:01,280 --> 00:22:04,960
+without much description, and exactly what 
+correctness looks like without much description. 
+
+256
+00:22:05,920 --> 00:22:13,200
+Bug fixes are a great example of that, but it's 
+definitely not all of programming. So I think that  
+
+257
+00:22:13,200 --> 00:22:19,040
+what the IDE is will totally change over time, 
+and our approach to having our own editor was  
+
+258
+00:22:19,040 --> 00:22:23,280
+premised on, it's going to have to evolve over 
+time. And I think that that will both include,  
+
+259
+00:22:23,280 --> 00:22:26,640
+you can spin off things from different surface 
+areas like Slack, or your issue tracker, or  
+
+260
+00:22:26,640 --> 00:22:31,360
+whatever it is, and I think that will also include 
+the pane of glass that you're staring at is going  
+
+261
+00:22:31,360 --> 00:22:38,480
+to change a lot. We just mostly think of an IDE 
+as the place where you are building software.
+
+262
+00:22:38,480 --> 00:22:43,440
+I think something people don't talk enough 
+about with talking about agents and all these  
+
+263
+00:22:43,440 --> 00:22:46,960
+AI engineers that are going to be doing all this 
+stuff for you, is basically we're all becoming  
+
+264
+00:22:46,960 --> 00:22:52,960
+engineering managers, with a lot of reports 
+that are just not that smart, and you have  
+
+265
+00:22:52,960 --> 00:22:57,360
+to do a lot of reviewing, and approving, 
+and specifying. I guess thoughts on that,  
+
+266
+00:22:57,360 --> 00:23:00,640
+and is there anything you could do to make that 
+easier? Because that sounds really hard. Anyone  
+
+267
+00:23:00,640 --> 00:23:06,000
+that has had a large team, being like, "Oh my god, 
+all these junior people just checking in with me  
+
+268
+00:23:06,000 --> 00:23:11,120
+doing not high quality work over and over." It's 
+just like, "What a life. It's going to suck."
+
+269
+00:23:11,120 --> 00:23:15,120
+Yeah. Maybe you [inaudible 00:23:12] 
+one-on-ones with [inaudible 00:23:15].
+
+270
+00:23:15,120 --> 00:23:16,320
+So many one-on-ones.
+
+271
+00:23:17,360 --> 00:23:24,720
+Yeah. So the customers we've seen have most 
+success with AI I think are still fairly  
+
+272
+00:23:24,720 --> 00:23:31,280
+conservative about some of the ways in which 
+they use this stuff. And so I do think today,  
+
+273
+00:23:31,280 --> 00:23:38,320
+the most successful customers really lean on 
+things like our next edit prediction, where your  
+
+274
+00:23:38,320 --> 00:23:42,240
+coding is normal, and making the next into actions 
+you're going to do. And then they also really lean  
+
+275
+00:23:42,240 --> 00:23:49,120
+on scoping down the stuff that you're going to 
+hand off to the bot, and for a fixed percent of  
+
+276
+00:23:49,120 --> 00:23:57,200
+your time spent reviewing code, from an agent, 
+or from an AI overall, you could... There's two  
+
+277
+00:23:57,200 --> 00:24:02,880
+patterns. One is, you could spend a bunch of time 
+specifying things up front, the AI goes and works,  
+
+278
+00:24:02,880 --> 00:24:07,600
+and then you then go and review the AI's work, 
+and then you're done. That's the whole task. 
+
+279
+00:24:07,600 --> 00:24:12,560
+Or you can really chop things up. So you can 
+specify a little bit, AI writes something,  
+
+280
+00:24:12,560 --> 00:24:16,480
+review, specify a little bit, AI writes 
+something, review. Autocompletes all in  
+
+281
+00:24:16,480 --> 00:24:23,680
+the way of that spectrum. And still we see 
+often the most successful people using these  
+
+282
+00:24:23,680 --> 00:24:27,760
+tools are chopping things up right now, and 
+keeping things fairly [inaudible 00:24:28].
+
+283
+00:24:27,760 --> 00:24:32,880
+That sounds less terrible. I'm glad there's 
+a solution here. I want to go back to you  
+
+284
+00:24:32,880 --> 00:24:37,680
+guys building Cursor for the first time. What was 
+the point where you realized this is ready? What  
+
+285
+00:24:37,680 --> 00:24:41,680
+was a moment of, "Okay, I think this is time 
+to put it out there, and see what happens"?
+
+286
+00:24:41,680 --> 00:24:48,640
+So when we started building Cursor, we were 
+fairly paranoid about spinning for a while,  
+
+287
+00:24:48,640 --> 00:24:55,040
+without releasing to the world. And so to begin 
+with too, we actually... The first version of  
+
+288
+00:24:55,040 --> 00:25:04,160
+Cursor was hand-rolled. Now we use VS Code as a 
+base, like many browsers use Chromium as a base,  
+
+289
+00:25:04,160 --> 00:25:09,520
+and hit foot off of that. To begin with, we 
+didn't, and built the prototype of Cursor from  
+
+290
+00:25:09,520 --> 00:25:14,640
+scratch, and that involved a lot of work. 
+We had to build our own... There were a  
+
+291
+00:25:14,640 --> 00:25:21,280
+lot of things that go into a modern code editor, 
+including support for many different languages,  
+
+292
+00:25:21,280 --> 00:25:26,560
+and navigation support for moving amongst the 
+language, error tracking support for things.  
+
+293
+00:25:26,560 --> 00:25:31,120
+There's things like an integrated command 
+line, the ability to use remote servers,  
+
+294
+00:25:33,600 --> 00:25:37,840
+the ability to connect to remote servers to 
+view and run code. And so we kind of just  
+
+295
+00:25:37,840 --> 00:25:42,640
+went on this blitz of building things incredibly 
+quickly, building our own editor from scratch,  
+
+296
+00:25:42,640 --> 00:25:51,520
+and then also the AI components.
+It was after maybe five weeks that  
+
+297
+00:25:51,520 --> 00:25:57,040
+we were living on the editor full-time, 
+and had thrown away our previous editor,  
+
+298
+00:25:57,040 --> 00:26:02,640
+and we're using a new one. And then once it got 
+to a point where we found it a bit useful, then we  
+
+299
+00:26:02,640 --> 00:26:06,400
+put it in other people's hands, and had this very 
+short beta period. And then we launched it out to  
+
+300
+00:26:06,400 --> 00:26:11,440
+the world within a couple of months from the 
+first line of code, I think it was probably  
+
+301
+00:26:11,440 --> 00:26:17,120
+three months. And it was definitely a, "Let's 
+just get this out to people and build in public  
+
+302
+00:26:17,120 --> 00:26:20,720
+quickly." The thing that took us by surprise 
+is we thought we would be building for a couple  
+
+303
+00:26:20,720 --> 00:26:27,120
+hundred people for a long time. And from the 
+get-go, there was an immediate rush of interest,  
+
+304
+00:26:27,120 --> 00:26:32,160
+and a lot of feedback too. That was super helpful, 
+we learned from that. That's actually why we  
+
+305
+00:26:32,160 --> 00:26:37,360
+switched to being based off of VS Code instead 
+of just this hand-rolled thing. A lot of that  
+
+306
+00:26:37,360 --> 00:26:44,720
+was motivated by the initial user feedback, and 
+then had been iterating in public from there.
+
+307
+00:26:44,720 --> 00:26:52,800
+I like how you understated the traction that you 
+got. I think you guys went from $0 to 100 million  
+
+308
+00:26:52,800 --> 00:26:58,720
+ARR in a year, year and a half or something like 
+that, which is historic. What do you think was  
+
+309
+00:26:58,720 --> 00:27:03,600
+the key to success of something like this? You 
+just talked about dogfooding being a big part of  
+
+310
+00:27:03,600 --> 00:27:10,160
+it. You built it in three months, that's insane. 
+What do you think is the secret to your success?
+
+311
+00:27:12,720 --> 00:27:19,760
+The three-month version wasn't very good, and 
+so I think it's been a sustained paranoia about,  
+
+312
+00:27:19,760 --> 00:27:25,680
+there are all of these ways in which this thing 
+could get better. The end goal is really to invent  
+
+313
+00:27:25,680 --> 00:27:31,040
+a very new form of programming that involves 
+automating a lot of coding, as we know today.  
+
+314
+00:27:31,040 --> 00:27:35,760
+And no matter where we are with Cursor, it feels 
+like we're very, very far away from that end goal,  
+
+315
+00:27:36,640 --> 00:27:43,360
+there's always a lot to do. A lot of it hasn't 
+been over rotated on that initial push, but  
+
+316
+00:27:43,360 --> 00:27:47,440
+instead is the continued evolution of the tool, 
+and just making the tool consistently better.
+
+317
+00:27:47,440 --> 00:27:49,280
+Was there an inflection point after those three  
+
+318
+00:27:49,280 --> 00:27:51,600
+months where things just 
+started to really take off?
+
+319
+00:27:51,600 --> 00:27:58,560
+To be honest, it felt fairly slow to begin with, 
+and maybe it comes from some impatience on our  
+
+320
+00:27:58,560 --> 00:28:08,800
+part. I think there's the overall speed of the 
+growth which continues to take us by surprise.  
+
+321
+00:28:08,800 --> 00:28:13,440
+I think one of the things that has been most 
+surprising too is that the growth has been  
+
+322
+00:28:13,440 --> 00:28:19,680
+fairly just consistent on an exponential, of just 
+consistent month-over-month growth, accelerated at  
+
+323
+00:28:19,680 --> 00:28:27,200
+times by launches on our part and other things. 
+But an exponential to begin with feels fairly  
+
+324
+00:28:27,200 --> 00:28:32,480
+slow and the numbers are really low, and so it 
+didn't really feel off to the races to begin with.
+
+325
+00:28:32,480 --> 00:28:35,440
+To me this sounds like build it and they 
+will come actually working. You guys just  
+
+326
+00:28:35,440 --> 00:28:39,680
+built an awesome product that you loved 
+yourselves as engineers, you put it out,  
+
+327
+00:28:39,680 --> 00:28:42,480
+people just loved it, told everyone about it.
+
+328
+00:28:42,480 --> 00:28:50,080
+It being essentially all just us, the team working 
+on the product, and making the product good in  
+
+329
+00:28:50,080 --> 00:28:55,600
+lieu of other things one could spend one's time 
+on. We definitely spent time on tons of other  
+
+330
+00:28:55,600 --> 00:29:01,840
+things, for instance, building the team was 
+incredibly important, and doing things like  
+
+331
+00:29:02,720 --> 00:29:07,680
+support rotations are very important. But some of 
+the normal things that people would maybe reach  
+
+332
+00:29:07,680 --> 00:29:13,200
+for in building the company early on, we really 
+let those fires burn for a long time, especially  
+
+333
+00:29:13,200 --> 00:29:17,840
+when it came to things like sales and marketing.
+And so just working on the product, and building a  
+
+334
+00:29:17,840 --> 00:29:22,720
+product that you like first, your team likes, and 
+then also then adjusting it for some set of users,  
+
+335
+00:29:22,720 --> 00:29:28,240
+that can kind of sound simple, but then, as you 
+know, it's hard to do that well. And there are  
+
+336
+00:29:28,240 --> 00:29:31,760
+a bunch of different directions one could have 
+run in, a bunch of different product directions. 
+
+337
+00:29:35,520 --> 00:29:41,520
+I think focus, and strategically picking the right 
+things to build, and prioritizing effectively is  
+
+338
+00:29:41,520 --> 00:29:48,480
+tricky. I think another thing that's tricky about 
+this domain is, it's kind of a new form of product  
+
+339
+00:29:48,480 --> 00:29:57,760
+building, where it's very interdisciplinary 
+in that we are something in between a normal  
+
+340
+00:29:57,760 --> 00:30:05,200
+software company and then a foundation model 
+company, in that we're developing a product  
+
+341
+00:30:05,200 --> 00:30:10,320
+for millions of people, and that side of things 
+has to be excellent, but then also one important  
+
+342
+00:30:10,320 --> 00:30:14,400
+dimension of product quality is doing more and 
+more on the science, and doing more and more on  
+
+343
+00:30:14,400 --> 00:30:19,760
+the model side of things in places where it makes 
+sense. And so that element of things doing that  
+
+344
+00:30:19,760 --> 00:30:26,800
+well too has been tricky. The overall thing would 
+note is maybe some of these things sound simple  
+
+345
+00:30:26,800 --> 00:30:30,720
+to specify, but doing them well is hard, and 
+they're a lot of different way you can run in.
+
+346
+00:30:30,720 --> 00:30:35,360
+I'm excited to have Andrew Luo joining 
+us today. Andrew is CEO of OneSchema,  
+
+347
+00:30:35,360 --> 00:30:38,400
+one of our podcast sponsors. Welcome, Andrew.
+
+348
+00:30:38,400 --> 00:30:40,480
+Thanks for having me, Lenny. Great to be here.
+
+349
+00:30:40,480 --> 00:30:44,560
+So what is new with OneSchema? I know that 
+you work with some of my favorite companies,  
+
+350
+00:30:44,560 --> 00:30:48,000
+like Ramp, and [inaudible 00:30:46], and 
+Watershed. I heard you guys launched a new  
+
+351
+00:30:48,000 --> 00:30:52,720
+data intake product that automates the hours 
+of manual work that teams spent importing,  
+
+352
+00:30:52,720 --> 00:30:55,760
+and mapping, and integrating CSV in Excel files?
+
+353
+00:30:55,760 --> 00:31:01,120
+Yes. So we just launched the 2.0 of OneSchema 
+FileFeeds. We've rebuilt it from the ground  
+
+354
+00:31:01,120 --> 00:31:06,800
+up with AI. We saw so many customers coming to 
+us with teams of data engineers that struggled  
+
+355
+00:31:06,800 --> 00:31:11,600
+with the manual work required to clean 
+messy spreadsheets. FileFeeds 2.0 allows  
+
+356
+00:31:11,600 --> 00:31:16,720
+non-technical teams to automate the process of 
+transforming CSV and Excel files with just a  
+
+357
+00:31:16,720 --> 00:31:22,560
+simple prompt. We support all of the trickiest 
+file integrations, SFTP, S3, and even email.
+
+358
+00:31:22,560 --> 00:31:26,400
+I can tell you that if my team had to 
+build integrations like this, how nice  
+
+359
+00:31:26,400 --> 00:31:30,560
+would it be to take this off our roadmap 
+and instead use something like OneSchema.
+
+360
+00:31:30,560 --> 00:31:34,320
+Absolutely, Lenny. We've heard so many 
+horror stories of outages from even just  
+
+361
+00:31:34,320 --> 00:31:38,560
+a single bad record, in transactions, 
+employee files, purchase orders,  
+
+362
+00:31:38,560 --> 00:31:43,600
+you name it. Debugging these issues is often like 
+finding a needle in a haystack. OneSchema stops  
+
+363
+00:31:43,600 --> 00:31:47,440
+any bad data from entering your system, 
+and automatically validates your files,  
+
+364
+00:31:47,440 --> 00:31:51,120
+generating error reports with the 
+exact issues in all bad files.
+
+365
+00:31:51,120 --> 00:31:55,280
+I know that importing incorrect data can cause all 
+kinds of pain for your customers and quickly lose  
+
+366
+00:31:55,280 --> 00:31:58,960
+their trust. Andrew, thank you so much for 
+joining me. If you want to learn more, head  
+
+367
+00:31:58,960 --> 00:32:07,680
+on over to oneschema.co., that's oneschema.co.
+What is the most counterintuitive thing you've  
+
+368
+00:32:07,680 --> 00:32:10,960
+learned so far about building 
+Cursor, building AI products?
+
+369
+00:32:10,960 --> 00:32:15,280
+I think one thing that's been counterintuitive 
+for us, [inaudible 00:32:14] added a little bit  
+
+370
+00:32:15,280 --> 00:32:20,240
+before, but is, we definitely didn't expect 
+to be doing any of our own model development  
+
+371
+00:32:20,240 --> 00:32:25,040
+when we started. As mentioned, when we got into 
+this, there were companies that were immediately  
+
+372
+00:32:25,040 --> 00:32:31,920
+from the get-go going and just focusing on 
+training model from scratch. And we had done  
+
+373
+00:32:31,920 --> 00:32:36,720
+the calculation for what it to train before, and 
+just knew that that was not [inaudible 00:32:36]  
+
+374
+00:32:36,720 --> 00:32:42,800
+going to be able to do. And also felt a bit 
+like focusing one's attention in the wrong area,  
+
+375
+00:32:42,800 --> 00:32:46,400
+because there were lots of amazing models 
+out there, and why develop all this work  
+
+376
+00:32:46,400 --> 00:32:50,960
+to replicate what other players had done. 
+Especially on the pre-training side of things,  
+
+377
+00:32:50,960 --> 00:32:55,920
+taking a neural network that knows nothing, 
+and then teaching it the whole internet. 
+
+378
+00:32:55,920 --> 00:33:01,680
+And so we thought we weren't going to be doing 
+that at all, and it seems clear to us from the  
+
+379
+00:33:01,680 --> 00:33:06,080
+start that the existing models, there were lots 
+of things that they could be doing for us that  
+
+380
+00:33:06,080 --> 00:33:10,000
+they weren't doing, because there wasn't the 
+right tool built for them. In fact though,  
+
+381
+00:33:10,000 --> 00:33:16,240
+we do a ton of model development, and internally, 
+it's a big focus for us on the hiring front,  
+
+382
+00:33:16,240 --> 00:33:20,960
+and have assembled a fantastic team there.
+And it's also been a big win on the product  
+
+383
+00:33:20,960 --> 00:33:25,920
+quality side of things for us. And at this 
+point, every magic moment in Cursor involves  
+
+384
+00:33:25,920 --> 00:33:34,320
+a custom model in some way. So that was definitely 
+counterintuitive, and surprising, and it's been a  
+
+385
+00:33:34,320 --> 00:33:38,640
+gradual thing, where there was an initial use case 
+for training our own model, where it really didn't  
+
+386
+00:33:38,640 --> 00:33:42,160
+make sense to use any of the biggest foundation 
+models. That was incredibly successful, moved  
+
+387
+00:33:42,160 --> 00:33:50,160
+to another use case that worked really well, and 
+had been going from there. And one of the helpful  
+
+388
+00:33:50,160 --> 00:33:55,520
+things in doing this sort of model development 
+is picking your spots carefully, not trying to  
+
+389
+00:33:55,520 --> 00:34:01,600
+reinvent the wheel, not trying to focus on places, 
+and maybe where the best foundation models are  
+
+390
+00:34:01,600 --> 00:34:05,520
+excellent, but instead kind of focusing on their 
+weaknesses, and how you can complement them.
+
+391
+00:34:05,520 --> 00:34:08,000
+I think this is going to be surprising 
+to a lot of people hearing that you have  
+
+392
+00:34:08,000 --> 00:34:12,160
+your own models. When people talk about 
+Cursor and all the folks in the space,  
+
+393
+00:34:12,160 --> 00:34:17,440
+they would kind of call them GPT wrappers, they're 
+just sitting on top of ChatGPT or Sonnet. What  
+
+394
+00:34:17,440 --> 00:34:21,760
+you're saying is that you have your own models, 
+talk about just the stack behind the scenes.
+
+395
+00:34:21,760 --> 00:34:27,920
+Yeah, of course. So we definitely use the biggest 
+foundation models a bunch of different ways,  
+
+396
+00:34:27,920 --> 00:34:32,080
+they're really important components of bringing 
+the Cursor experience to people. The places where  
+
+397
+00:34:32,080 --> 00:34:38,480
+we use our own models, so sometimes it's to 
+survey a use case that a foundation model  
+
+398
+00:34:38,480 --> 00:34:44,080
+wouldn't be able to serve at all for cost or 
+speed reasons. And so one example of that is  
+
+399
+00:34:44,880 --> 00:34:50,560
+the autocomplete side of things. And so this 
+can be a little bit tricky for people who don't  
+
+400
+00:34:50,560 --> 00:34:57,920
+code to understand, but code is this weird form 
+of work, where sometimes, really, the next 5,  
+
+401
+00:34:57,920 --> 00:35:02,640
+10, 20, 30 minutes of your work is entirely 
+predictable from looking over your shoulder. 
+
+402
+00:35:02,640 --> 00:35:09,600
+And I would contrast this with writing. So 
+writing, lots of people are familiar with  
+
+403
+00:35:09,600 --> 00:35:13,680
+Gmail's autocomplete, and the different forms 
+of autocomplete that show up when you're trying  
+
+404
+00:35:13,680 --> 00:35:18,000
+to post text messages, or emails, or things like 
+that. They can only be so helpful, because often,  
+
+405
+00:35:18,000 --> 00:35:21,040
+it's just really not clear what you're going 
+to be writing just by looking at what you've  
+
+406
+00:35:21,040 --> 00:35:25,200
+written before. But in code sometimes, 
+when you edit a part of a code base,  
+
+407
+00:35:25,200 --> 00:35:28,800
+you're going to need to change things, and in 
+other parts of code base, and it's entirely  
+
+408
+00:35:28,800 --> 00:35:34,220
+clear how you're going to need to change things.
+So one core part of Cursor is this really suit  
+
+409
+00:35:34,220 --> 00:35:38,080
+to autocomplete experience, where you predict the 
+next set of that you're going to be doing across  
+
+410
+00:35:38,080 --> 00:35:44,880
+multiple files, across multiple places within a 
+file. And making models good at that use case,  
+
+411
+00:35:44,880 --> 00:35:48,560
+one, there's a speed component of, those models 
+need to be really fast, they need to give you  
+
+412
+00:35:48,560 --> 00:35:53,920
+a completion within 300 milliseconds. There's 
+also this cost component of, we're running tons,  
+
+413
+00:35:53,920 --> 00:35:58,160
+and tons, and tons of molecules, every keystroke, 
+we need to be changing our prediction for what  
+
+414
+00:35:58,160 --> 00:36:02,640
+you're going to do next. And then it's also 
+this really specialty use case of, you need  
+
+415
+00:36:02,640 --> 00:36:07,440
+models that are really good, not at completing 
+the next token, just a generic tech sequence,  
+
+416
+00:36:07,440 --> 00:36:12,240
+but are really good at autocompleting a series 
+of diffs, looking at what's changed within a code  
+
+417
+00:36:12,240 --> 00:36:16,160
+base, and then creating the next set of things 
+that are going to change, both deleted and added  
+
+418
+00:36:16,160 --> 00:36:22,960
+and all of that, and we found a ton of success 
+in training models specifically for that task. 
+
+419
+00:36:22,960 --> 00:36:26,960
+So that's a place where no foundation models 
+are involved, it's kind of our own thing. We  
+
+420
+00:36:26,960 --> 00:36:32,720
+don't have a lot of labeling or branding about 
+this in the app, power is a very core part of  
+
+421
+00:36:32,720 --> 00:36:39,200
+Cursor. And then another set of places where a 
+user own models are to help things like Sonnet,  
+
+422
+00:36:39,200 --> 00:36:44,560
+or Gemini, or GPT, and those sit both 
+on the inputs of those big models,  
+
+423
+00:36:44,560 --> 00:36:49,280
+and on the output. On the input side of things, 
+those models are searching throughout a code base,  
+
+424
+00:36:49,280 --> 00:36:54,320
+try to figure out the parts of a code base to 
+show to one of these big models. You can kind  
+
+425
+00:36:54,320 --> 00:36:59,920
+of think about this as a mini Google search that's 
+specifically built for finding the relevant parts  
+
+426
+00:36:59,920 --> 00:37:04,560
+of the code base to show one of these big models.
+And then on the output side of things,  
+
+427
+00:37:04,560 --> 00:37:09,400
+we take the sketches of the changes that these 
+models are suggesting, you make with that code  
+
+428
+00:37:09,400 --> 00:37:14,640
+base. And then we have models that then fill 
+in the details of, the high level thinking  
+
+429
+00:37:14,640 --> 00:37:18,400
+is done by the smartest models, they spend 
+a few tokens on doing that, and then these  
+
+430
+00:37:18,400 --> 00:37:24,160
+smaller specialty incredibly fast models, coupled 
+with some inference tricks, then take those high  
+
+431
+00:37:24,160 --> 00:37:29,120
+level changes and turn them actually into full 
+code diffs. And so it's been super helpful for  
+
+432
+00:37:29,120 --> 00:37:34,320
+pushing on quality in places where you need a 
+specialty task, and it's been super helpful for  
+
+433
+00:37:34,320 --> 00:37:39,600
+pushing on speed, which is such an important 
+dimension of product quality for us too.
+
+434
+00:37:39,600 --> 00:37:42,560
+This is so interesting. I just 
+had Kevin Weil on the podcast,  
+
+435
+00:37:42,560 --> 00:37:46,712
+CPO of OpenAI, and he calls this the 
+ensemble of models, that's the same way-
+
+436
+00:37:46,712 --> 00:37:46,716
+Yes.
+
+437
+00:37:46,716 --> 00:37:50,960
+... they work, to use the best feature of each 
+one, and to your point, the cost advantages  
+
+438
+00:37:50,960 --> 00:37:56,800
+of using cheaper models. These other models, 
+are they based on Llama and things like that,  
+
+439
+00:37:56,800 --> 00:38:00,240
+just open source models that 
+you guys plug into and build on?
+
+440
+00:38:00,240 --> 00:38:05,600
+Yeah. So again, we try to be very pragmatic 
+about the place that we're going to do this work,  
+
+441
+00:38:05,600 --> 00:38:11,440
+and we don't want to reinvent the wheel. And so 
+starting from the very best pre-trained models  
+
+442
+00:38:11,440 --> 00:38:18,400
+that exist out there, often open source ones, 
+sometimes in collaboration with these big model  
+
+443
+00:38:18,400 --> 00:38:22,400
+providers that don't share their weights out into 
+the world, because the thing we care about last  
+
+444
+00:38:22,400 --> 00:38:31,120
+is the ability to read line by line, the matrix of 
+weights that then go to give you a certain output.  
+
+445
+00:38:31,760 --> 00:38:38,000
+We just care about the ability to train these 
+things, to post-train them. And so by and large,  
+
+446
+00:38:38,000 --> 00:38:42,640
+yes, open source models, sometimes working with 
+the closed source providers too to tune things.
+
+447
+00:38:42,640 --> 00:38:46,880
+This leads to a discussion that a lot of AI 
+founders always think about and investors,  
+
+448
+00:38:46,880 --> 00:38:53,520
+which is moats, and defensibility in AI. 
+So it feels like one is custom models,  
+
+449
+00:38:53,520 --> 00:38:58,640
+is a moat in the space. How do you just think 
+about long-term defensibility in the space,  
+
+450
+00:38:58,640 --> 00:39:03,280
+knowing there's other folks, as you said, 
+launching constantly trying to eat your lunch?
+
+451
+00:39:03,280 --> 00:39:14,960
+I think that there are ways to build in inertia 
+and traditional moats, but I think by and large,  
+
+452
+00:39:14,960 --> 00:39:21,120
+we're in a space where it is incumbent on us 
+to continue to try to build the best thing,  
+
+453
+00:39:21,120 --> 00:39:28,400
+and everyone in this industry. And I truly 
+just think that the ceiling is so high that  
+
+454
+00:39:28,400 --> 00:39:36,960
+no matter what entrenchment you build, you can 
+be leapfrogged. And I think that this resembles  
+
+455
+00:39:36,960 --> 00:39:42,720
+markets that are maybe a little bit different from 
+normal software markets, normal enterprise markets  
+
+456
+00:39:42,720 --> 00:39:49,280
+of the past. I think one that comes to mind is the 
+market for search engines at the end of 1999, or  
+
+457
+00:39:49,280 --> 00:39:54,240
+at the end of the '90s and beginning of the 2000s. 
+I think another market that comes to mind that  
+
+458
+00:39:54,240 --> 00:39:59,760
+resembles this market in many ways, it's actually 
+just the development of the peripheral computer  
+
+459
+00:39:59,760 --> 00:40:06,800
+and many computers in the '70s, '80s, '90s.
+And I think that, yes, in each of those markets,  
+
+460
+00:40:06,800 --> 00:40:12,560
+the ceiling was incredibly high, it was possible 
+to swish. You could keep getting value for the  
+
+461
+00:40:12,560 --> 00:40:16,880
+incremental hour of a smart person's time, the 
+incremental R&D dollar for a really long time,  
+
+462
+00:40:16,880 --> 00:40:22,400
+you wouldn't run out of useful things to 
+build. And then in search in particular,  
+
+463
+00:40:22,400 --> 00:40:28,000
+not on the computer case, adding distribution was 
+helpful for making the product better too, in that  
+
+464
+00:40:28,000 --> 00:40:33,440
+you could tune the algorithms, you could tune the 
+learning based off of the data and the feedback  
+
+465
+00:40:33,440 --> 00:40:38,960
+you're getting from users. And I think that all of 
+those dynamics exist in our market too. And so I  
+
+466
+00:40:38,960 --> 00:40:45,120
+think maybe the sad truth for people like us, but 
+then the amazing truth for the world is, I think  
+
+467
+00:40:45,120 --> 00:40:50,160
+that there are many leapfrogs that exist, there's 
+more useful things to build. We're a long way away  
+
+468
+00:40:50,160 --> 00:40:55,200
+from where we can compete in 5, 10 years, and 
+it's incumbent in our state to keep that going.
+
+469
+00:40:55,200 --> 00:40:59,040
+So what I'm hearing, this sounds like a 
+lot more like a consumer sort of moat,  
+
+470
+00:40:59,040 --> 00:41:02,080
+where it's just, be the best thing 
+consistently so that people stick with  
+
+471
+00:41:02,080 --> 00:41:06,560
+you versus creating lock-in and things like 
+that, where they're just... Like Salesforce,  
+
+472
+00:41:06,560 --> 00:41:10,000
+where it's just contracts with the entire 
+company, and you have to use this product.
+
+473
+00:41:10,000 --> 00:41:12,880
+Yeah. I think the important thing to note is,  
+
+474
+00:41:13,600 --> 00:41:17,840
+if you're in a space where you run out 
+of useful things to do very quickly,  
+
+475
+00:41:17,840 --> 00:41:24,320
+then that's not a great situation to be in. But 
+if you're in a place where big investments, and  
+
+476
+00:41:26,160 --> 00:41:30,240
+having more and more great people working 
+on the right path can keep giving you value,  
+
+477
+00:41:30,240 --> 00:41:37,120
+then you can get these economies of scale of R&D, 
+and you can deeply work on the technology in the  
+
+478
+00:41:37,120 --> 00:41:43,040
+right direction, and get to a place where that is 
+defensible. But yes, it is... I think there's a  
+
+479
+00:41:43,040 --> 00:41:48,000
+consumer-like tendency to it, and I really think 
+it's just about building the best thing possible.
+
+480
+00:41:48,000 --> 00:41:50,320
+Do you think in the future there's 
+one winner in this space, or do you  
+
+481
+00:41:50,320 --> 00:41:53,680
+think it's going to be a world of 
+a number of products like this?
+
+482
+00:41:53,680 --> 00:42:02,800
+I think the market is just so very big. You asked 
+about the IDE thing early on, and one thing that  
+
+483
+00:42:02,800 --> 00:42:08,880
+I think a trip of some people that were thinking 
+about the space is, they looked at the IDE market  
+
+484
+00:42:08,880 --> 00:42:17,040
+of the past 10 years, and they said, "Who's 
+making money off of the editors?" It's this  
+
+485
+00:42:17,040 --> 00:42:21,200
+super fragmented space where everyone kind of 
+has their own thing, with their own figuration,  
+
+486
+00:42:21,200 --> 00:42:27,920
+and there's one company that actually 
+makes money off making great editors,  
+
+487
+00:42:27,920 --> 00:42:34,560
+but that company is only so big. And then the 
+conclusion was, it was going to look like that  
+
+488
+00:42:34,560 --> 00:42:39,440
+in the future. And I think that the thing 
+that people missed was that there was only  
+
+489
+00:42:39,440 --> 00:42:45,600
+so much you could do building an editor in 
+the 2010s for coders, and the company that  
+
+490
+00:42:45,600 --> 00:42:50,160
+made money off of editors was doing things like 
+making it easy to navigate around a code base,  
+
+491
+00:42:50,160 --> 00:42:56,320
+and doing some error checking and type checking 
+for things, and having good debugging tools. 
+
+492
+00:42:56,960 --> 00:43:02,320
+Which were all very useful, but I think that 
+the set of things you can build for programmers,  
+
+493
+00:43:02,320 --> 00:43:06,160
+I think the set of things you can build for 
+knowledge workers in many different areas just  
+
+494
+00:43:06,160 --> 00:43:12,960
+goes very far and very deep. The problem in front 
+of all of us is the automation of a lot of busy  
+
+495
+00:43:12,960 --> 00:43:17,280
+work and knowledge work, and really changing all 
+the areas of knowledge work in front of us to be  
+
+496
+00:43:17,280 --> 00:43:22,160
+much higher level and more productive.
+So that was a long-winded way to say,  
+
+497
+00:43:22,160 --> 00:43:25,680
+I think the market's really, really big that 
+we're in. I think it's much bigger than people  
+
+498
+00:43:25,680 --> 00:43:32,000
+have realized than the other building tools for 
+developers in the past. And I think that there  
+
+499
+00:43:32,000 --> 00:43:36,480
+will be a bunch of different solutions. I think 
+that there will be one company, to be determined  
+
+500
+00:43:36,480 --> 00:43:42,320
+if it's going to be us, but I do think that there 
+will be one company that builds the general tool  
+
+501
+00:43:42,320 --> 00:43:46,640
+that builds almost all the world's software, 
+and that will be a very, very generationally  
+
+502
+00:43:46,640 --> 00:43:51,520
+big business. But I think that there will be 
+kind of niches you can occupy in doing something  
+
+503
+00:43:51,520 --> 00:43:55,040
+for a particular segment of the market, or for a 
+very particular part of the software development  
+
+504
+00:43:55,040 --> 00:44:00,000
+life cycle. But the general programming shifts 
+from just writing formal programming languages  
+
+505
+00:44:00,000 --> 00:44:04,560
+to something way higher level. This is 
+the application you purchase and use to  
+
+506
+00:44:04,560 --> 00:44:11,040
+do that. I think that there will be generally one 
+winner there, and it will be a very big business.
+
+507
+00:44:11,040 --> 00:44:18,240
+Juicy. Along those lines, it's interesting 
+that Microsoft was actually at the center of  
+
+508
+00:44:18,240 --> 00:44:24,160
+this first, with an amazing product, amazing 
+distribution, Copilot you said was the thing  
+
+509
+00:44:24,160 --> 00:44:28,720
+that got you over the hump of, "Wow, there could 
+be something really big here." And it doesn't  
+
+510
+00:44:28,720 --> 00:44:34,160
+feel like they're winning, it feels like they're 
+falling behind. What do you think happened there?
+
+511
+00:44:34,160 --> 00:44:42,240
+I think that there are specific historical reasons 
+why Copilot might not have lived up... So far have  
+
+512
+00:44:43,280 --> 00:44:45,920
+lived up to the expectations that some 
+people have for it, and then I think that  
+
+513
+00:44:45,920 --> 00:44:51,120
+there are structural reasons. I think the 
+structural reason is... And to be clear,  
+
+514
+00:44:51,120 --> 00:44:57,760
+Microsoft, in the Copilot case, obviously a 
+big inspiration for our work, and in general,  
+
+515
+00:44:57,760 --> 00:45:02,400
+I think they do lots of awesome things, 
+and we're users of many Microsoft products,  
+
+516
+00:45:04,080 --> 00:45:10,000
+but I think that this is a market that's 
+not super friendly to incumbents, in that  
+
+517
+00:45:11,280 --> 00:45:14,960
+a market that's friendly to incumbents might 
+be one where there's only so much to do,  
+
+518
+00:45:14,960 --> 00:45:19,040
+it kind of gets commoditized fairly quickly, 
+and you can bundle that in with other products,  
+
+519
+00:45:19,040 --> 00:45:26,800
+and where the ROI between different products 
+is quite small. And in that case, perhaps it  
+
+520
+00:45:26,800 --> 00:45:29,440
+doesn't make sense to buy the innovative 
+solution, it makes sense to just kind of  
+
+521
+00:45:29,440 --> 00:45:34,400
+buy the thing that's bundled in with other stuff.
+Another market that might be particularly helpful  
+
+522
+00:45:34,400 --> 00:45:40,480
+for incumbents is one where there's... From 
+the get-go, you have your stuff in one place,  
+
+523
+00:45:40,480 --> 00:45:45,760
+and it's really, really excruciatingly hard to 
+switch, and for better or for worse. I think in  
+
+524
+00:45:45,760 --> 00:45:49,840
+our case, you can try out different tools, and you 
+can decide which product you think is better. And  
+
+525
+00:45:49,840 --> 00:45:55,040
+so that's not super friendly to incumbents, and 
+that's more friendly to whoever you think is going  
+
+526
+00:45:55,040 --> 00:46:00,080
+to have the most innovative product. And then the 
+specific historical reasons, as I understand them  
+
+527
+00:46:00,080 --> 00:46:05,360
+are the group of people that worked on the 
+first version of Copilot have, by and large,  
+
+528
+00:46:05,360 --> 00:46:10,080
+gone on to do other things at other places. I 
+think it's been a little hard to coordinate among  
+
+529
+00:46:10,080 --> 00:46:14,800
+all the different departments and parties that 
+might be involved in making something like this.
+
+530
+00:46:14,800 --> 00:46:19,600
+I want to come back to Cursor. A question I like 
+to ask everyone that's building a tool like this,  
+
+531
+00:46:19,600 --> 00:46:25,120
+if you could sit next to every new user that uses 
+Cursor for the first time, just whisper a couple  
+
+532
+00:46:25,120 --> 00:46:32,320
+tips in their ear to be more successful, most 
+successful with Cursor, what would be 1 or 2 tips?
+
+533
+00:46:32,320 --> 00:46:37,360
+I think right now, and we'd want to fix this at 
+a product level, a lot of being successful with  
+
+534
+00:46:37,360 --> 00:46:43,680
+Cursor is kind of having a taste for what 
+the models can do, both what complexity of  
+
+535
+00:46:43,680 --> 00:46:51,760
+a task they can handle, and how much you need to 
+specify things to that model, but having a taste  
+
+536
+00:46:51,760 --> 00:46:57,200
+for the quality of the model, and where its gaps 
+exist, and what it can do and what it can't. And  
+
+537
+00:46:57,200 --> 00:47:02,640
+right now, we don't do a good job in the 
+product of educating people around that,  
+
+538
+00:47:02,640 --> 00:47:06,000
+and maybe giving people some swim 
+lanes, giving people some guidelines. 
+
+539
+00:47:06,000 --> 00:47:15,520
+But to develop that taste, would give two tips. 
+So one is, as mentioned before, would bias less  
+
+540
+00:47:15,520 --> 00:47:24,160
+toward, trying in one go to tell the model, "Hey, 
+here's exactly what I want you to do." Then seeing  
+
+541
+00:47:24,160 --> 00:47:28,320
+the output, and then either being disappointed or 
+accepting the entire thing for an entire big task.  
+
+542
+00:47:28,320 --> 00:47:32,800
+Instead what I would do is I would chop things up 
+into bits, and you can spend basically the same  
+
+543
+00:47:32,800 --> 00:47:37,360
+amount of time specifying things overall, but 
+chopped up more. So you're specifying a little  
+
+544
+00:47:37,360 --> 00:47:39,440
+bit, you're getting a little bit of work, 
+you're specifying a little bit, getting a  
+
+545
+00:47:39,440 --> 00:47:44,080
+little bit of work, and not doing as much the, 
+"Let's write a giant thing telling the model  
+
+546
+00:47:44,080 --> 00:47:48,640
+exactly what to do." I think that will be a 
+little bit of a recipe for disaster right now. 
+
+547
+00:47:48,640 --> 00:47:53,440
+And so biasing toward chopping things up. 
+At the same time, and it might make sense  
+
+548
+00:47:53,440 --> 00:47:58,720
+to do this on a side project and not on your 
+professional work, I would encourage people to,  
+
+549
+00:47:58,720 --> 00:48:05,360
+especially developers who are used to 
+existing workflows for building software,  
+
+550
+00:48:05,360 --> 00:48:11,600
+I would encourage people to explicitly try to fall 
+on their face, and try to discover the limits of  
+
+551
+00:48:11,600 --> 00:48:18,720
+what these models can do by being ambitious in 
+a safe environment, like perhaps a side project,  
+
+552
+00:48:18,720 --> 00:48:24,000
+and trying to kind of go around town, use AI 
+to the fullest. Because a lot of the time,  
+
+553
+00:48:24,000 --> 00:48:31,280
+we run into people who haven't given the AI yet a 
+fair shake, and are underestimating its abilities.  
+
+554
+00:48:31,280 --> 00:48:35,440
+So generally biasing towards chopping things 
+up and making things smaller, but to discover  
+
+555
+00:48:35,440 --> 00:48:40,080
+the limits of what you can do there, explicitly 
+just try to go for broke in a safe environment,  
+
+556
+00:48:40,080 --> 00:48:45,360
+and get a taste for... You might be surprised in 
+some of the places where the model doesn't break.
+
+557
+00:48:45,360 --> 00:48:50,240
+What I'm essentially hearing is build 
+a gut feeling of what the model can do,  
+
+558
+00:48:50,240 --> 00:48:55,840
+and how far it can take an idea versus 
+just kind of guiding it along. And I  
+
+559
+00:48:55,840 --> 00:48:59,200
+bet that you need to rebuild this gut 
+every time there's a new model launch,  
+
+560
+00:48:59,200 --> 00:49:04,240
+when it's on... I don't know, 4.0 comes out, you 
+have to do this again. Is that generally right?
+
+561
+00:49:04,240 --> 00:49:12,960
+Yes. For the past few years, it hasn't been 
+as big as I think the first experience people  
+
+562
+00:49:12,960 --> 00:49:18,240
+have had with some of these big models. 
+This is also a problem we would hope to  
+
+563
+00:49:18,240 --> 00:49:22,240
+solve much better just for users, and 
+take the burden off of them. But each  
+
+564
+00:49:22,240 --> 00:49:26,240
+of these things have slightly different 
+quirks and different personalities.
+
+565
+00:49:26,240 --> 00:49:30,000
+Along these lines, something that people 
+are always debating tools like Cursor,  
+
+566
+00:49:30,000 --> 00:49:35,120
+are they more helpful to junior engineers, or 
+are they more helpful to senior engineers? Do  
+
+567
+00:49:35,120 --> 00:49:37,920
+they make senior engineers 10X better? 
+Do they make junior engineers more like  
+
+568
+00:49:37,920 --> 00:49:43,440
+senior engineers? Who do you think 
+benefits most today from Cursor?
+
+569
+00:49:43,440 --> 00:49:49,200
+I think across the board. Both of these 
+cohorts benefit in big ways. It's a little  
+
+570
+00:49:49,200 --> 00:49:54,880
+hard to say on the relative ranking. I will 
+say, they fall into different anti-patterns.  
+
+571
+00:49:55,760 --> 00:50:02,720
+The junior engineers we see going a little 
+too wholesale, relying on AI for everything,  
+
+572
+00:50:02,720 --> 00:50:08,240
+and we're not yet in a place where you can kind 
+of do that end-to-end on a professional tool,  
+
+573
+00:50:08,240 --> 00:50:13,280
+working with tens, hundreds of other people 
+within a long-lived code base. And then the  
+
+574
+00:50:13,280 --> 00:50:20,640
+senior engineers... For many folks, it's not 
+true for all, and we actually often... One of  
+
+575
+00:50:20,640 --> 00:50:24,000
+the ways these tools are adopted is, there's 
+developer experience teams within companies,  
+
+576
+00:50:24,000 --> 00:50:30,000
+often those are staffed by incredibly senior 
+people, because often, those are people who  
+
+577
+00:50:30,000 --> 00:50:33,440
+are building tools to make the rest of the 
+engineers within an organization more productive. 
+
+578
+00:50:33,440 --> 00:50:42,560
+And we've seen some very, very boundary pushing 
+kind of... We've seen people who are on the front  
+
+579
+00:50:42,560 --> 00:50:46,800
+lines of really trying to adopt the technology as 
+much as possible there. But by and large, I would  
+
+580
+00:50:46,800 --> 00:50:53,760
+say on average, as a group, the senior engineers 
+underrate what AI can do for them, and stick to  
+
+581
+00:50:53,760 --> 00:50:58,000
+their existing workflows. And so the relative 
+ranking is a little hard, I think they fall  
+
+582
+00:50:58,000 --> 00:51:04,080
+into different anti-patterns, but they both, by 
+and large, yet get big benefits with these tools.
+
+583
+00:51:04,080 --> 00:51:08,160
+That makes absolute sense. I love 
+that it's two ends of the spectrum,  
+
+584
+00:51:08,160 --> 00:51:15,520
+expect too much, don't expect enough. 
+It's like the three bears allegory.
+
+585
+00:51:15,520 --> 00:51:16,400
+Yeah.
+
+586
+00:51:16,400 --> 00:51:17,680
+Yeah. Okay.
+
+587
+00:51:18,240 --> 00:51:24,480
+Yeah. Maybe the sort of senior, 
+but not staff, right in the middle.
+
+588
+00:51:24,480 --> 00:51:30,160
+Interesting. Okay. Just a couple more questions. 
+What's something that you wish you knew before  
+
+589
+00:51:30,160 --> 00:51:34,240
+you got into this role? If you could go back 
+to Michael at the beginning of Cursor, which  
+
+590
+00:51:34,240 --> 00:51:38,400
+was not that long ago, and you could give him some 
+advice, what's something that you would tell him?
+
+591
+00:51:38,400 --> 00:51:46,560
+The tough thing with this is, it feels like so 
+much of the hard-won knowledge is tacit, and a bit  
+
+592
+00:51:46,560 --> 00:51:55,520
+hard to communicate verbally. And the sad fact of 
+life feels like for some areas of human endeavor,  
+
+593
+00:51:55,520 --> 00:52:01,120
+you kind of do need to fall on your face to... 
+Either need to fall on your face to learn the  
+
+594
+00:52:01,120 --> 00:52:06,000
+correct thing, or you need to be around someone 
+who's a great example of excellence in the thing.  
+
+595
+00:52:06,000 --> 00:52:16,800
+And one area where we have felt this is hiring. I 
+think that we actually were... So we tried to be  
+
+596
+00:52:16,800 --> 00:52:23,760
+incredibly patient on the hiring front.
+It was really important to us that,  
+
+597
+00:52:23,760 --> 00:52:28,080
+both for personal reasons and also for, I 
+think actually for the company's strategy,  
+
+598
+00:52:28,080 --> 00:52:34,560
+having a world-class group of engineers and 
+researchers to work on Cursor with us was  
+
+599
+00:52:34,560 --> 00:52:41,120
+going to be incredibly important. Also, getting 
+people who fit... A certain mix of intellectual  
+
+600
+00:52:41,120 --> 00:52:45,840
+curiosity and experimentation, because there 
+can be so many new things we need to build.  
+
+601
+00:52:45,840 --> 00:52:51,360
+And then also an intellectual honesty, and 
+maybe micro-pessimism, bluntness, because if  
+
+602
+00:52:51,360 --> 00:52:56,880
+all the noise, and... Especially as the company's 
+grown, and the business has grown, keeping a level  
+
+603
+00:52:56,880 --> 00:53:00,800
+head I think is incredibly important too.
+But getting the right group of people into  
+
+604
+00:53:00,800 --> 00:53:08,480
+the company was the thing that maybe more than 
+anything else, apart from building the product,  
+
+605
+00:53:08,480 --> 00:53:17,680
+we really, really fussed over. We actually waited 
+a long time to grow the team because of that.  
+
+606
+00:53:17,680 --> 00:53:24,720
+And I think that many people you hear hired too 
+fast, think we actually hired too slow to begin  
+
+607
+00:53:24,720 --> 00:53:28,080
+with. I think it could have been remedied, 
+I think we could have been better at it. 
+
+608
+00:53:28,080 --> 00:53:36,480
+And the method of recruiting that we ended up 
+eventually falling into and working really well  
+
+609
+00:53:36,480 --> 00:53:40,960
+for us, which isn't that novel, of going after 
+people that we think are really world-class,  
+
+610
+00:53:40,960 --> 00:53:46,800
+and recruiting them over the course of, in some 
+cases, many years, ended up working for us in  
+
+611
+00:53:46,800 --> 00:53:50,080
+the end, but I don't think we were very good at 
+it to begin with. And so I think that there were  
+
+612
+00:53:50,080 --> 00:53:56,000
+hard-won lessons around both who was the right 
+profile, who actually made sense in that team,  
+
+613
+00:53:56,000 --> 00:54:02,320
+what did greatness look like, and then how 
+to talk with someone about the opportunity,  
+
+614
+00:54:02,320 --> 00:54:07,040
+and get them excited if they really 
+weren't looking for anything. There  
+
+615
+00:54:07,040 --> 00:54:12,160
+were lots of learnings there about how to do 
+that well, and that took us a bit of time.
+
+616
+00:54:12,160 --> 00:54:15,280
+What are some of those learnings 
+for folks that are hiring right  
+
+617
+00:54:15,280 --> 00:54:17,920
+now? What's something you missed or learned?
+
+618
+00:54:17,920 --> 00:54:24,160
+I think to start with, maybe we actually 
+biased a little bit too much towards  
+
+619
+00:54:25,920 --> 00:54:30,960
+looking for people who fit the archetype 
+of well-known school, very young,  
+
+620
+00:54:30,960 --> 00:54:38,560
+had done the things that were high credential 
+in those well-known school environments. And  
+
+621
+00:54:40,080 --> 00:54:49,360
+actually, I think found... Were lucky early on 
+to find fantastic people who are willing to do  
+
+622
+00:54:49,360 --> 00:54:55,360
+this with us who were later careered. I think we 
+should kind of spent a bunch of time on maybe a  
+
+623
+00:54:55,360 --> 00:54:59,360
+little bit the wrong profile to begin with, and 
+part of that was a seniority thing. Part of that  
+
+624
+00:54:59,360 --> 00:55:04,160
+was kind of an interest and experience thing 
+too, we have hired people who are excellent,  
+
+625
+00:55:04,160 --> 00:55:08,800
+excellent, excellent and very young, but they 
+maybe look in some cases slightly different  
+
+626
+00:55:08,800 --> 00:55:15,840
+from being straight out of central casting.
+Another lesson is just, we very much evolved our  
+
+627
+00:55:15,840 --> 00:55:26,000
+interview loop, and so now, we have a hand-rolled 
+set of interview questions, and then core our...  
+
+628
+00:55:26,960 --> 00:55:31,680
+Core to how we interview too, is actually, we have 
+people onsite for two days, and do a project with  
+
+629
+00:55:31,680 --> 00:55:38,080
+us, a work test project. And that has worked 
+really well, that increasingly you're finding  
+
+630
+00:55:38,080 --> 00:55:44,080
+that. I think how to learn about what people are 
+interested in, and put our best foot forward,  
+
+631
+00:55:44,080 --> 00:55:47,520
+and letting them know about the opportunity 
+when they're really not looking for anything,  
+
+632
+00:55:47,520 --> 00:55:53,680
+and have those conversations. There's definitely 
+been... Gotten better at that over time.
+
+633
+00:55:53,680 --> 00:55:56,000
+Do you have a favorite interview 
+question that you like to ask?
+
+634
+00:55:56,000 --> 00:56:00,560
+I think this two-day work test which we 
+thought would not scale past a few people  
+
+635
+00:56:00,560 --> 00:56:05,680
+has had surprising staying power. 
+And the great thing about it is,  
+
+636
+00:56:05,680 --> 00:56:10,640
+it lets someone go end-to-end on it like 
+a real project. It's not work that we use,  
+
+637
+00:56:10,640 --> 00:56:17,760
+it's canned list of projects. But it gives you 
+two days of seeing a real work product, and  
+
+638
+00:56:18,560 --> 00:56:23,760
+it doesn't have to be incredibly time-enhancing 
+other teams from time. You can take the time you  
+
+639
+00:56:23,760 --> 00:56:27,680
+would spend in a half day or one day onsite, and 
+you kind of spread it out over those two days,  
+
+640
+00:56:27,680 --> 00:56:34,960
+and give someone a lot of time to do work on their 
+projects, and so that can actually help it scale. 
+
+641
+00:56:38,320 --> 00:56:44,640
+It helps to enforce, do you want to be around 
+this person type test, because you are around  
+
+642
+00:56:44,640 --> 00:56:52,560
+this person for two days, a bunch of meals with 
+them. We didn't expect that one to stick around,  
+
+643
+00:56:52,560 --> 00:56:56,960
+but that has been really, really important to 
+our value to process, and then also important to  
+
+644
+00:56:56,960 --> 00:57:01,280
+getting people excited at, especially the very 
+early stages of the company. Because before,  
+
+645
+00:57:01,280 --> 00:57:05,920
+people are using the product, and know about 
+it. And when the product is comparatively not  
+
+646
+00:57:05,920 --> 00:57:11,680
+very good, really, the only thing you have going 
+for you is a team of people that some people find  
+
+647
+00:57:11,680 --> 00:57:18,480
+special and want to be around. And the two days 
+would give us a chance to just have this person  
+
+648
+00:57:18,480 --> 00:57:23,600
+meet us, and in some cases, hopefully get 
+convinced that they want to throw in with us.  
+
+649
+00:57:24,400 --> 00:57:29,520
+That one was unexpected. Not exactly an interview 
+question, but kind of like a forward interview.
+
+650
+00:57:29,520 --> 00:57:33,520
+The ultimate interview question. So just to 
+be very clear about what you're describing,  
+
+651
+00:57:33,520 --> 00:57:36,720
+you give them an assignment, like, "Build 
+this feature in our actual code base,  
+
+652
+00:57:36,720 --> 00:57:40,880
+work with the team to code it and 
+ship it." Is that roughly right?
+
+653
+00:57:40,880 --> 00:57:47,920
+Yes. So we don't use the IP, not shift end-to-end, 
+but it's like a mock... Very often in our code  
+
+654
+00:57:47,920 --> 00:57:52,640
+base, "Here's a real mini two-day project. 
+You're going to do it end-to-end." Largely  
+
+655
+00:57:52,640 --> 00:57:58,160
+being left alone, there's collaboration too. 
+And then we're a pretty imprisoned company,  
+
+656
+00:57:58,880 --> 00:58:02,560
+in almost all cases, it's actually 
+just sitting in office with us too.
+
+657
+00:58:02,560 --> 00:58:07,760
+And you've been saying that this has scaled to 
+even today, so how big are you guys at this point?
+
+658
+00:58:07,760 --> 00:58:10,560
+So we are going on 60 people.
+
+659
+00:58:10,560 --> 00:58:15,920
+So small for the scale and impact. I was 
+thinking it'd be a lot larger than that.
+
+660
+00:58:15,920 --> 00:58:16,480
+Yeah.
+
+661
+00:58:16,480 --> 00:58:19,360
+And I imagine the largest percent is engineers?
+
+662
+00:58:19,360 --> 00:58:29,600
+Yeah. To be clear, a big part of the work ahead of 
+us is building a group of people that is bigger,  
+
+663
+00:58:29,600 --> 00:58:33,360
+and awesome, and can continue to make the 
+product better, and the service we give to  
+
+664
+00:58:33,360 --> 00:58:38,560
+customers better. And so you don't plan to stay 
+that small for longer, wouldn't hope so. But  
+
+665
+00:58:39,600 --> 00:58:46,080
+part of the reason that that number is small is, 
+the percentage of engineering and research and  
+
+666
+00:58:46,080 --> 00:58:51,040
+design is very high within the company, and so 
+many software companies when they have roughly  
+
+667
+00:58:51,040 --> 00:58:56,160
+40 engineers would be over 100 people, because 
+there's lots of operational work, and often,  
+
+668
+00:58:56,160 --> 00:59:00,960
+they're very, very sales-led from the get-go, 
+and that's just quite labor-intensive. And here,  
+
+669
+00:59:00,960 --> 00:59:06,480
+we started from a place of being incredibly 
+lean in product-led, and we now serve lots  
+
+670
+00:59:06,480 --> 00:59:10,480
+of our market customers, and it built that 
+out, but there's much more to do there.
+
+671
+00:59:10,480 --> 00:59:15,040
+A question I wanted to ask you, there's 
+so much happening in AI, there's things  
+
+672
+00:59:15,040 --> 00:59:19,520
+launching every... There's newsletters, many 
+newsletters, whose entire function is to  
+
+673
+00:59:19,520 --> 00:59:24,640
+tell you what is happening in AI every single 
+day. Running a company that's at the center,  
+
+674
+00:59:24,640 --> 00:59:29,680
+the white-hot center of this space, how do 
+you stay focused, and how do you help your  
+
+675
+00:59:29,680 --> 00:59:34,960
+team stay focused, and heads down, and just build 
+and not get distracted by all these shiny things?
+
+676
+00:59:34,960 --> 00:59:39,920
+I think hiring is a big part of it, and 
+if you get people with the right attitude.  
+
+677
+00:59:41,600 --> 00:59:47,760
+All of this should be asterisked in, I think 
+we're doing well there, I think that we'd  
+
+678
+00:59:47,760 --> 00:59:52,640
+probably be doing better there too, and it's 
+something that we should probably talk even  
+
+679
+00:59:52,640 --> 00:59:57,520
+more about as a company. But I think that hiring 
+people with the right disposition, people who  
+
+680
+00:59:57,520 --> 01:00:02,240
+are less focused on external validation, more 
+focused on building something really great,  
+
+681
+01:00:02,240 --> 01:00:08,080
+more focused on doing really high quality work, 
+and people who are just generally level-headed,  
+
+682
+01:00:08,080 --> 01:00:13,520
+and maybe the highs aren't very high, the lows 
+aren't very low. I think hiring can get you  
+
+683
+01:00:13,520 --> 01:00:19,040
+through a lot here, and I think that's actually 
+a learning throughout the company, is that for  
+
+684
+01:00:19,040 --> 01:00:24,160
+any... You need process, you need hierarchy, 
+you need lots of things, but for any kind of  
+
+685
+01:00:24,160 --> 01:00:30,640
+organizational tool that you're introducing into 
+a company, the result you're looking to get from  
+
+686
+01:00:30,640 --> 01:00:37,680
+that tool also... You can go pretty far on hiring 
+people with the right behaviors that you want  
+
+687
+01:00:37,680 --> 01:00:42,320
+to resolve from that for organizational thing.
+And the specific example that comes to mind is,  
+
+688
+01:00:42,320 --> 01:00:47,200
+we've been able to get away with not a ton 
+of process yet on the engineering front,  
+
+689
+01:00:47,200 --> 01:00:51,280
+and I think we need a little bit more process, 
+but for our size, not a ton of process,  
+
+690
+01:00:51,280 --> 01:00:56,400
+by hiring people who I think are really excellent. 
+One is hiring people that are level-headed. I  
+
+691
+01:00:56,400 --> 01:01:01,360
+think two is just talking about it a lot. I 
+think three is hopefully leading by example.  
+
+692
+01:01:01,360 --> 01:01:09,440
+And for us personally, we've since 2021, 2022 been 
+professionally working on this, and been working  
+
+693
+01:01:09,440 --> 01:01:15,440
+on AI, and we've just seen a sea change of the 
+comings and goings of various technologies and  
+
+694
+01:01:15,440 --> 01:01:21,200
+ideas of... If you're to transport yourself back 
+to end of 2021, beginning of 2022, this is GPT-3,  
+
+695
+01:01:21,200 --> 01:01:26,800
+Instruct GPT doesn't exist, there's no Dolly, 
+there's no stable diffusion. And then we've gone  
+
+696
+01:01:26,800 --> 01:01:34,960
+through all of those image technologies existing, 
+ChatGPT and that rise, and GPT-4, all of these  
+
+697
+01:01:34,960 --> 01:01:42,080
+new models, all these different modalities, all 
+the video stuff, and only a very small number of  
+
+698
+01:01:42,080 --> 01:01:47,600
+these things really kind of affects the business.
+So I think we've kind of just built up a little  
+
+699
+01:01:47,600 --> 01:01:52,880
+bit of an immune system, and know when an event 
+comes around that actually is really going to  
+
+700
+01:01:52,880 --> 01:01:58,960
+matter for us. This dynamic too of there 
+being lots, and lots, and lots of chatter,  
+
+701
+01:01:58,960 --> 01:02:04,720
+but then maybe only a few things that really 
+matter, I think has been mirrored in AI over the  
+
+702
+01:02:04,720 --> 01:02:13,120
+last decade, where there have been so many papers 
+on deep learning in academia, so many papers on AI  
+
+703
+01:02:13,120 --> 01:02:20,160
+in academia, then the amazing thing is there are 
+really a lot of... A lot the progress of AI can  
+
+704
+01:02:20,160 --> 01:02:25,120
+be attributed to some very simple elegant ideas 
+that have stayed around, and the vast majority of  
+
+705
+01:02:25,120 --> 01:02:29,280
+ideas that have been put out there haven't had 
+staying power, and haven't mattered a ton. And  
+
+706
+01:02:29,280 --> 01:02:33,120
+so the dynamic is a little bit mirrored in the 
+evolution of deep learning as a field overall.
+
+707
+01:02:33,120 --> 01:02:39,840
+Last question. What do you think people still 
+most misunderstand, or maybe don't fully grasp  
+
+708
+01:02:39,840 --> 01:02:46,160
+about where things are heading with AI in 
+building in the way the world will change?
+
+709
+01:02:46,160 --> 01:02:55,120
+People are still a little bit occupied too much, 
+either end of a spectrum of it's all going to  
+
+710
+01:02:55,120 --> 01:03:03,680
+happen very fast, and this is all bluster, and 
+hype, and snake well, and I think we're in the  
+
+711
+01:03:03,680 --> 01:03:08,720
+middle of a technology shift that's going to be 
+incredibly consequential. I think it's going to  
+
+712
+01:03:08,720 --> 01:03:12,320
+be more consequential than the internet, I think 
+it's going to be more consequential than any  
+
+713
+01:03:12,320 --> 01:03:17,840
+shift in tech that we've seen since the advent of 
+computers. And I think it's going to take a while,  
+
+714
+01:03:17,840 --> 01:03:21,920
+and I think it's going to be a multi-decade 
+thing, and I think many different groups will  
+
+715
+01:03:21,920 --> 01:03:27,680
+be consequential in pushing it forward.
+And to get to a world where computers can  
+
+716
+01:03:27,680 --> 01:03:32,320
+increasingly do more, and more, and more for 
+us, there's all of these independent problems  
+
+717
+01:03:32,320 --> 01:03:36,480
+that need to be knocked down, and progress needs 
+to be made on them, and some of those are on the  
+
+718
+01:03:36,480 --> 01:03:41,120
+science side of things of getting these models 
+to understand different types of data, be faster,  
+
+719
+01:03:41,120 --> 01:03:48,560
+cheaper, smarter, conform to the modalities that 
+we care about, take actions in the real world.  
+
+720
+01:03:48,560 --> 01:03:53,520
+And then some of it's on how we're going to work 
+with them, and what's the experience that a human  
+
+721
+01:03:53,520 --> 01:03:57,920
+should actually be seeing and controlling on 
+a computer, and working with these things. 
+
+722
+01:03:57,920 --> 01:04:02,720
+But I think it's going to take decades. I think 
+that there's going to be lots of amazing work to  
+
+723
+01:04:02,720 --> 01:04:09,520
+do. I think that also, one of the most... 
+A pattern of a group that I think will be  
+
+724
+01:04:09,520 --> 01:04:16,320
+especially important here, not to talk our own 
+book, but I think is the company that works on  
+
+725
+01:04:16,320 --> 01:04:21,840
+automating and augmenting a particular area 
+of knowledge work, builds both the technology  
+
+726
+01:04:22,480 --> 01:04:27,280
+under the surface for that, integrating the best 
+parts from providers, sometimes doing it in-house,  
+
+727
+01:04:27,280 --> 01:04:33,280
+and then also builds the product experience for 
+that. I think people who do that, and... We're  
+
+728
+01:04:33,280 --> 01:04:36,880
+trying to do it in software, people do that in 
+other areas, I think those folks will be really,  
+
+729
+01:04:36,880 --> 01:04:41,680
+really, really consequential. Not just for 
+the end value that users see, but then I  
+
+730
+01:04:41,680 --> 01:04:46,960
+think as they get to scale, they'll be really 
+important for pushing forward the technology,  
+
+731
+01:04:46,960 --> 01:04:50,080
+because I think they'll be able to build... The 
+most successful of them will be able to build  
+
+732
+01:04:50,080 --> 01:04:59,040
+very, very big businesses. So, excited to see the 
+rise of other companies like that in other areas.
+
+733
+01:04:59,680 --> 01:05:03,600
+I know you guys are hiring. For 
+folks that are interested in, "Hey,  
+
+734
+01:05:03,600 --> 01:05:05,760
+I want to go work here, and build this 
+sort of stuff." What kind of roles are  
+
+735
+01:05:05,760 --> 01:05:08,640
+you looking for right now? Anyone 
+specifically you're trying... Any  
+
+736
+01:05:08,640 --> 01:05:12,320
+roles you're most excited about filling ASAP? 
+What should people know if they're curious?
+
+737
+01:05:12,320 --> 01:05:17,120
+There are so many things that this group of people 
+need to do that we are not get equipped to do.  
+
+738
+01:05:20,240 --> 01:05:26,240
+Generic across the board, first of all, and so 
+if you don't think we have a role for something,  
+
+739
+01:05:26,240 --> 01:05:30,560
+maybe you should reach out, that won't actually 
+be the case. And maybe we can actually learn from  
+
+740
+01:05:30,560 --> 01:05:36,240
+you, and decide that we need something that we 
+weren't yet aware of. But by and large, I think  
+
+741
+01:05:36,240 --> 01:05:42,480
+that two of the most important things for us to do 
+this year are have the best product in the space,  
+
+742
+01:05:42,480 --> 01:05:48,960
+and then grow it. And we're kind of in this land 
+grab mode, where almost everyone in the world is  
+
+743
+01:05:48,960 --> 01:05:57,360
+either using no tool like ours, or they're using 
+one that's maybe developing less quickly. So  
+
+744
+01:05:57,360 --> 01:06:06,800
+growing Cursor too is a big goal, and I would say, 
+especially always on the hunt for folks who...  
+
+745
+01:06:06,800 --> 01:06:13,520
+Excellent engineers, designers, researchers, 
+but then folks all across the business side too.
+
+746
+01:06:13,520 --> 01:06:16,080
+I can't help but ask this question 
+now that you talk about engineers,  
+
+747
+01:06:16,080 --> 01:06:21,120
+there's this question of just, "AI's going 
+to write all our code." But everyone's  
+
+748
+01:06:21,120 --> 01:06:24,314
+still hiring engineers like crazy. All the 
+foundational models, so many open roles.
+
+749
+01:06:24,314 --> 01:06:29,200
+Yeah. We're not out there tooting the 
+horn of, people can learn to code.
+
+750
+01:06:29,200 --> 01:06:31,760
+Do you think there's going to be an 
+inflection point of engineering roles  
+
+751
+01:06:31,760 --> 01:06:34,880
+start to slow down? I know this is a big question,  
+
+752
+01:06:34,880 --> 01:06:39,920
+but just... Do you see engineers being more 
+and more needed across all these companies,  
+
+753
+01:06:39,920 --> 01:06:45,760
+or do you think at some point there's all 
+these Cursor agents running building for us?
+
+754
+01:06:45,760 --> 01:06:56,160
+Again, we have the view that there's this 
+both long messy middle of it not jumping to a,  
+
+755
+01:06:56,160 --> 01:06:58,880
+just you step back, and you ask for all 
+your stuff to be done, and you have your  
+
+756
+01:06:58,880 --> 01:07:05,680
+engineering department. And very much, you want 
+to evolve from programming as it exists today,  
+
+757
+01:07:05,680 --> 01:07:12,160
+we want humans to be in the driver's seat, and we 
+think even in the end state, that's giving folks  
+
+758
+01:07:12,160 --> 01:07:15,840
+control over everything is really important, 
+and you will need professionals to do that,  
+
+759
+01:07:15,840 --> 01:07:23,120
+and decide what the software looks like.
+So both I think that, yes, engineers are  
+
+760
+01:07:23,120 --> 01:07:26,800
+definitely needed. I think that engineers 
+will be able to do much more. I think the  
+
+761
+01:07:26,800 --> 01:07:32,320
+demand for software is very lasting, which 
+is not the most novel thing, but I think it's  
+
+762
+01:07:32,320 --> 01:07:40,080
+kind of crazy to think about how expensive and 
+labor-intensive it is to build things that are  
+
+763
+01:07:40,080 --> 01:07:46,240
+pretty simple and easy to specify, or it would 
+look like it to the outside observer, and just  
+
+764
+01:07:46,240 --> 01:07:51,120
+how hard those things are to do right now.
+All of the stuff that exists right now that's  
+
+765
+01:07:51,120 --> 01:07:55,560
+justified by the cost and demand that we have 
+now, if you could bring that down by [inaudible  
+
+766
+01:07:55,560 --> 01:07:59,040
+01:07:56], I think you would have tons, and tons, 
+and tons of more stuff that we could do in our  
+
+767
+01:07:59,040 --> 01:08:05,280
+computers, tons more tools. And I've felt this, 
+where... One of my early jobs actually was working  
+
+768
+01:08:05,280 --> 01:08:10,880
+for a biotechnology company, and it was building 
+internal tools for them, and the off-the-shelf  
+
+769
+01:08:10,880 --> 01:08:16,000
+tools that existed were horrible, and did not 
+fit their use case at all. And then the internal  
+
+770
+01:08:16,000 --> 01:08:21,280
+tools I was building, there was definitely a ton 
+of demand there for things that could be built,  
+
+771
+01:08:21,280 --> 01:08:25,520
+and that far outstripped just the things that 
+I could build in the time that I was with them. 
+
+772
+01:08:29,440 --> 01:08:34,960
+The physics of working on computers are 
+so great, you should be able to basically  
+
+773
+01:08:34,960 --> 01:08:38,640
+just move everything around, do everything that 
+you want to do. There's still so much friction,  
+
+774
+01:08:38,640 --> 01:08:43,680
+I think that there's much more demand for 
+software than what we can build today with  
+
+775
+01:08:44,400 --> 01:08:48,000
+things costing like a blockbuster movie 
+to make simple productivity software. And  
+
+776
+01:08:48,000 --> 01:08:51,520
+so I think long into the future, yes, there 
+will actually be more demand for engineers.
+
+777
+01:08:51,520 --> 01:08:55,600
+Is there anything that we didn't cover that you 
+wanted to mention? Any last nugget wisdom you  
+
+778
+01:08:55,600 --> 01:08:59,920
+wanted to leave listeners with? You could 
+also say no, because we've done a lot.
+
+779
+01:08:59,920 --> 01:09:08,880
+We think a lot about how you set up 
+a team to be able to make new stuff,  
+
+780
+01:09:08,880 --> 01:09:14,160
+in addition to continuing to improve the stuff 
+that you have right now. And I think if we were  
+
+781
+01:09:14,160 --> 01:09:16,160
+to be successful, IDE is going to have to change 
+a ton, [inaudible 01:09:18] looks like is going  
+
+782
+01:09:16,160 --> 01:09:26,640
+to have to change a ton going into the future. 
+And if you look around, the companies we respect,  
+
+783
+01:09:26,640 --> 01:09:32,400
+there are definitely examples of companies that 
+have continued to really ride the wave of many  
+
+784
+01:09:32,400 --> 01:09:40,320
+leapfrogs, and continue to actually push the 
+frontier. But they're kind of rare too, it's  
+
+785
+01:09:40,320 --> 01:09:47,040
+a hard thing to do. So part of that is just kind 
+of thinking about the thing, and trying to reflect  
+
+786
+01:09:47,040 --> 01:09:52,320
+on it in our good days, and the first principle 
+side of things, part of it's also trying to get  
+
+787
+01:09:52,320 --> 01:10:00,160
+in and study past examples of greatness here, and 
+that's something that we think about a lot too.
+
+788
+01:10:00,160 --> 01:10:05,120
+Yeah. Yeah. Before we started recording, you 
+had all these books behind you, and I was like,  
+
+789
+01:10:05,120 --> 01:10:09,680
+"What's that over there?" It's the history of 
+some old computer company that was influential  
+
+790
+01:10:09,680 --> 01:10:13,600
+in a lot of ways that I've never heard of. 
+And I think that says a lot about you of,  
+
+791
+01:10:13,600 --> 01:10:16,720
+where a lot of this innovation comes from, 
+is studying the past, and study history,  
+
+792
+01:10:16,720 --> 01:10:20,720
+and what's worked and what hasn't.
+Okay. Where can folks find you online  
+
+793
+01:10:20,720 --> 01:10:23,920
+if they want to reach out and maybe apply? 
+You said that there may be roles they may not  
+
+794
+01:10:23,920 --> 01:10:28,400
+even be aware of, where do they go find that, 
+and then how can listeners be useful to you?
+
+795
+01:10:28,400 --> 01:10:36,880
+Yeah. If folks are interested in working on this 
+stuff, would love to speak, they can find... If  
+
+796
+01:10:36,880 --> 01:10:40,720
+they go to cursor.com, they can kind of both 
+find the product and find out how to reach us.
+
+797
+01:10:41,520 --> 01:10:44,873
+Easy. Michael, thank you so much 
+for being here. This was incredible.
+
+798
+01:10:44,873 --> 01:10:46,400
+It was wonderful. Thank you.
+
+799
+01:10:46,400 --> 01:10:49,840
+Bye, everyone.
+Thank you so much  
+
+800
+01:10:49,840 --> 01:10:54,160
+for listening. If you found this valuable, you 
+can subscribe to the show on Apple Podcasts,  
+
+801
+01:10:54,160 --> 01:10:59,040
+Spotify, or your favorite podcast app. 
+Also, please consider giving us a rating,  
+
+802
+01:10:59,040 --> 01:11:04,000
+or leaving a review as that really helps other 
+listeners find the podcast. You can find all  
+
+803
+01:11:04,000 --> 01:11:11,520
+past episodes or learn more about the show at 
+lennyspodcast.com. See you in the next episode.
+

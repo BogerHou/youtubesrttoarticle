@@ -1,0 +1,5860 @@
+1
+00:00:00,120 --> 00:00:04,880
+I started noticing that there was a certain 
+mystique and aura about product strategy.  
+
+2
+00:00:04,880 --> 00:00:10,520
+There was this perception that some people were 
+intrinsically really good at strategy and others  
+
+3
+00:00:10,520 --> 00:00:16,440
+were not. It was almost as if there was a strategy 
+gene you needed to be born with to be good at it.
+
+4
+00:00:16,440 --> 00:00:19,360
+Say someone's sitting down, okay, 
+I'm going to start developing a  
+
+5
+00:00:19,360 --> 00:00:22,760
+strategy for our product. Where do you 
+begin? What does this process look like?
+
+6
+00:00:22,760 --> 00:00:27,680
+In terms of what product strategy is? There 
+is a smallest flavor of it which focuses on  
+
+7
+00:00:27,680 --> 00:00:33,120
+solving problems, they're called present forward, 
+and it typically operates in a two-year horizon.  
+
+8
+00:00:33,120 --> 00:00:38,240
+We use a five-stage process to get there and 
+it takes about eight to 12 weeks. The reason  
+
+9
+00:00:38,240 --> 00:00:43,040
+I think this process works is there is a ton 
+of alignment built in. It goes back to human  
+
+10
+00:00:43,040 --> 00:00:49,280
+psychology of just something that comes from you, 
+feels a lot more familiar and easy to accept.
+
+11
+00:00:49,280 --> 00:00:52,960
+Let's talk about big S strategy. When 
+should you approach strategy this way?
+
+12
+00:00:52,960 --> 00:00:55,920
+There's this interesting 
+quote by Elon Musk, which is-
+
+13
+00:00:55,920 --> 00:00:58,560
+"Life's got to be about more 
+than just solving problems."
+
+14
+00:00:58,560 --> 00:01:02,760
+I think this is true of every sort of 
+company. There needs to be an aspirational  
+
+15
+00:01:02,760 --> 00:01:07,520
+and cool component to strategy. What does the 
+product look like in five to 10 years? Why is  
+
+16
+00:01:07,520 --> 00:01:15,480
+the world better in 10 years? And what is 
+the most exciting version of that view?
+
+17
+00:01:15,480 --> 00:01:20,680
+Today my guest is Chandra Janakiraman. Chandra 
+is chief product officer and executive vice  
+
+18
+00:01:20,680 --> 00:01:25,720
+president at VRChat. He was a product leader 
+at Meta, chief product officer at Headspace,  
+
+19
+00:01:25,720 --> 00:01:30,600
+a GM at Zynga, and a senior PM at Amazon. And 
+the way this podcast episode happened was an  
+
+20
+00:01:30,600 --> 00:01:36,280
+avid podcast listener, Karthik Suresh, told 
+me about Chandra at a community meetup. And  
+
+21
+00:01:36,280 --> 00:01:40,160
+when I connected with Chandra, it was clear 
+that I needed to get him on the podcast. 
+
+22
+00:01:40,160 --> 00:01:45,360
+Chandra is a student of strategy and has spent 
+his career developing what he calls an operator's  
+
+23
+00:01:45,360 --> 00:01:50,520
+guide to strategy, which essentially pulls 
+together the best ideas from Good Strategy,  
+
+24
+00:01:50,520 --> 00:01:55,720
+Bad Strategy, Playing to Win, Michael 
+Porter and others to create a very clear,  
+
+25
+00:01:55,720 --> 00:02:01,160
+reliable and easy-to-follow five-step process 
+to develop a great strategy and a set of next  
+
+26
+00:02:01,160 --> 00:02:05,800
+steps for your product and company. After hearing 
+Chandra walk through this in our conversation,  
+
+27
+00:02:05,800 --> 00:02:10,160
+I'm basically going to now point everyone who 
+wants to get better at strategy to this episode  
+
+28
+00:02:10,160 --> 00:02:16,040
+and Chandra's method. Strategy is at the heart 
+of every great product and team and business,  
+
+29
+00:02:16,040 --> 00:02:21,160
+and it's also the source of so much pain if you do 
+it badly. This episode is meant to help you avoid  
+
+30
+00:02:21,160 --> 00:02:26,360
+that. A big thank you to Karthik for making 
+this connection. If you enjoy this podcast,  
+
+31
+00:02:26,360 --> 00:02:30,040
+don't forget to subscribe and follow it in 
+your favorite podcasting app or YouTube.  
+
+32
+00:02:30,040 --> 00:02:32,800
+It's the best way to avoid missing 
+feature episodes and it helps the  
+
+33
+00:02:32,800 --> 00:02:38,920
+podcast tremendously. With that, 
+I bring you Chandra Janakiraman. 
+
+34
+00:02:38,920 --> 00:02:44,680
+This episode is brought to you by Eppo. Eppo is a 
+next-generation A-B testing and feature management  
+
+35
+00:02:44,680 --> 00:02:50,640
+platform built by alums of Airbnb and Snowflake 
+for modern growth teams, companies like Twitch,  
+
+36
+00:02:50,640 --> 00:02:56,440
+Miro, ClickUp and DraftKings rely on Eppo 
+to power their experiments. Experimentation  
+
+37
+00:02:56,440 --> 00:03:01,560
+is increasingly essential for driving growth and 
+for understanding the performance of new features  
+
+38
+00:03:01,560 --> 00:03:06,440
+and Eppo helps you increase experimentation 
+velocity while unlocking rigorous deep analysis  
+
+39
+00:03:06,440 --> 00:03:10,840
+in a way that no other commercial tool does.
+When I was at Airbnb, one of the things that I  
+
+40
+00:03:10,840 --> 00:03:15,160
+loved most was our experimentation platform 
+where I could set up experiments, easily,  
+
+41
+00:03:15,160 --> 00:03:20,360
+troubleshoot issues, and analyze performance 
+all on my own. Eppo does all that and more With  
+
+42
+00:03:20,360 --> 00:03:24,800
+advanced statistical methods that can help you 
+shave weeks off experiment time and accessible  
+
+43
+00:03:24,800 --> 00:03:30,080
+UI for diving deeper into performance and out of 
+the box reporting that helps you avoid annoying  
+
+44
+00:03:30,080 --> 00:03:34,800
+prolonged analytic cycles. Eppo also makes it 
+easy for you to share experiment insights with  
+
+45
+00:03:34,800 --> 00:03:40,880
+your team, sparking new ideas for the A-B testing 
+flywheel. Eppo powers experimentation across every  
+
+46
+00:03:40,880 --> 00:03:46,480
+use case, including product growth, machine 
+learning, monetization, and email marketing.  
+
+47
+00:03:46,480 --> 00:03:57,120
+Check out Eppo at geteppo.com/lenny and 10 x your 
+experiment velocity. That's geteppo.com/lenny. 
+
+48
+00:03:57,120 --> 00:04:01,800
+This episode is brought to you by Airtable 
+ProductCentral, the unified system that brings  
+
+49
+00:04:01,800 --> 00:04:08,240
+your entire product org together in one place. No 
+more scattered tools, no more misaligned teams.  
+
+50
+00:04:08,240 --> 00:04:12,160
+If you're like most product leaders, you're 
+tired of constant context switching between  
+
+51
+00:04:12,160 --> 00:04:17,880
+tools. That's why Airtable built Product Central 
+after decades of working with world-class product  
+
+52
+00:04:17,880 --> 00:04:23,240
+companies. Think of it as mission control for your 
+entire product organization. Unlike rigid point  
+
+53
+00:04:23,240 --> 00:04:29,240
+solutions, product central powers everything from 
+resourcing to voice of customer to roadmapping  
+
+54
+00:04:29,240 --> 00:04:34,480
+to launch execution. And because it's built on 
+Airtable's no-code platform, you can customize  
+
+55
+00:04:34,480 --> 00:04:40,520
+every workflow to match exactly how your team 
+works. No limitations, no compromises. Ready to  
+
+56
+00:04:40,520 --> 00:04:51,440
+see it in action, head to airtable.com/lenny 
+to book a demo. That's airtable.com/lenny. 
+
+57
+00:04:51,440 --> 00:04:55,200
+Chandra, thank you so much for being 
+here and welcome to the podcast.
+
+58
+00:04:55,200 --> 00:04:56,840
+Pleasure to be here, Lenny.
+
+59
+00:04:56,840 --> 00:04:59,640
+I want to share actually the context 
+and how this conversation happened.  
+
+60
+00:05:00,440 --> 00:05:04,920
+I was at a meetup of my readership, of my 
+community and someone came up to me and they're  
+
+61
+00:05:04,920 --> 00:05:10,280
+like, "Lenny, you need to get this guy Chandra 
+on your podcast. He's the most amazing playbook  
+
+62
+00:05:10,280 --> 00:05:14,680
+for developing a strategy." He's gone through it 
+with you at a company he worked at with you once,  
+
+63
+00:05:14,680 --> 00:05:19,640
+and he's just like, "People need to learn 
+this because it's so good." And to me,  
+
+64
+00:05:19,640 --> 00:05:23,520
+if someone can get better at strategy, it feels 
+like it just makes so much of the way the company  
+
+65
+00:05:23,520 --> 00:05:28,680
+operates and the way that people work better. 
+So we chatted, we met, I was like, "I completely  
+
+66
+00:05:28,680 --> 00:05:32,640
+agree. We definitely need to get you on this 
+podcast to share your approach to the strategy."  
+
+67
+00:05:32,640 --> 00:05:37,520
+So we made this happen, and so we're here. So 
+again, thank you for doing this and sharing.
+
+68
+00:05:37,520 --> 00:05:39,320
+Thank you. Thank you, Lenny.
+
+69
+00:05:39,320 --> 00:05:44,480
+First of all, I wanted to ask just you're very 
+passionate about strategy and developing a way  
+
+70
+00:05:44,480 --> 00:05:50,000
+to consistently create great strategies. 
+What got you so interested in this stuff  
+
+71
+00:05:50,000 --> 00:05:53,440
+in the first place? What kind of 
+sparked your interest in this area?
+
+72
+00:05:53,440 --> 00:06:01,960
+Yeah, yeah, it's a very interesting story. It goes 
+back all the way 10 years ago, but I remember it  
+
+73
+00:06:01,960 --> 00:06:09,040
+vividly like it happened yesterday. And I was 
+a relatively new VP of product at Headspace,  
+
+74
+00:06:09,040 --> 00:06:15,960
+and we had this amazing company vision and 
+mission that the founders had laid out,  
+
+75
+00:06:15,960 --> 00:06:24,720
+and I had come in and established goals for the 
+team in terms of our key metrics, and we had a  
+
+76
+00:06:24,720 --> 00:06:33,240
+very buttoned up roadmap in my mind that fed into 
+that company mission and vision. And I was feeling  
+
+77
+00:06:33,240 --> 00:06:43,360
+pretty good about how things were shaping up.
+And on a particular Monday, the founder,  
+
+78
+00:06:43,360 --> 00:06:51,560
+CEO pulled me aside, and in his usual disarming 
+style, he sort of made a short but profound  
+
+79
+00:06:51,560 --> 00:06:59,520
+statement. He said that, "Hey, CJ, I'm hearing 
+that a lot of people don't really understand  
+
+80
+00:07:00,040 --> 00:07:06,840
+why we are working on what we are working on," and 
+that was it. That was really the extent of what he  
+
+81
+00:07:06,840 --> 00:07:14,520
+shared. And it was a little bit of a bubble 
+bursting moment for me because we obviously  
+
+82
+00:07:14,520 --> 00:07:19,880
+had spent a lot of time building the plan and 
+I was feeling relatively good about the plan. 
+
+83
+00:07:19,880 --> 00:07:26,520
+And so I spoke to a few people. I sort of 
+wanted to understand it a little bit deeper,  
+
+84
+00:07:26,520 --> 00:07:32,240
+like, "Hey, what's happening?" And he was 
+right. He was right. A lot of people didn't  
+
+85
+00:07:32,240 --> 00:07:38,160
+really understand why we were working on the 
+things we were working on, and it led to some  
+
+86
+00:07:38,160 --> 00:07:46,480
+soul-searching. And basically I was lucky because 
+there was actually a board member of Headspace  
+
+87
+00:07:46,480 --> 00:07:53,560
+who had a product background, kind of knew what 
+good looked like, and I came to the conclusion,  
+
+88
+00:07:53,560 --> 00:08:01,160
+"Hey, we needed a strategy for Headspace."
+So with extensive work with her, with the  
+
+89
+00:08:01,160 --> 00:08:12,120
+board person, we built the first written 
+product strategy for Headspace. And that,  
+
+90
+00:08:12,120 --> 00:08:19,040
+and the subsequent actions on the product led 
+to a complete re-imagination of the product. And  
+
+91
+00:08:19,040 --> 00:08:26,560
+basically we were able to create a new product, 
+we call it the Next Generation Headspace, which  
+
+92
+00:08:27,080 --> 00:08:31,800
+on one hand it could support a comprehensive 
+library of content, not just meditation,  
+
+93
+00:08:31,800 --> 00:08:38,800
+but non-meditation content as well. It had the 
+sort of home experience where everything was  
+
+94
+00:08:38,800 --> 00:08:46,120
+incredibly personalized for the individuals, 
+and there were several motivational elements  
+
+95
+00:08:46,120 --> 00:08:52,200
+built into the whole product experience. 
+And it was very transformational for the  
+
+96
+00:08:52,200 --> 00:08:58,680
+company and the product because it changed the 
+product from being a meditation app to a broader  
+
+97
+00:08:58,680 --> 00:09:03,680
+health and wellness service and really put the 
+company on a different trajectory. It led to  
+
+98
+00:09:03,680 --> 00:09:12,560
+my promotion to the first CPO at Headspace.
+And most interestingly, I had a chance to,  
+
+99
+00:09:12,560 --> 00:09:18,800
+while going through it almost in a sort of out 
+of body way, observed the process of like, okay,  
+
+100
+00:09:18,800 --> 00:09:24,800
+how did we put this thing together? And what 
+actually went into it? What really started as  
+
+101
+00:09:26,080 --> 00:09:34,440
+almost a personal crisis moment of finding this 
+need to create a strategy for a product and a  
+
+102
+00:09:34,440 --> 00:09:40,240
+company led to a bigger sort of quest for 
+me, which is I started noticing that there  
+
+103
+00:09:40,240 --> 00:09:46,120
+was a certain mystique and aura about product 
+strategy, and there was this perception that  
+
+104
+00:09:46,120 --> 00:09:53,760
+some people were intrinsically really good 
+at strategy and others were not. And it was  
+
+105
+00:09:53,760 --> 00:09:59,320
+almost as if there was a strategy gene that 
+you needed to be born with to be good at it.  
+
+106
+00:09:59,840 --> 00:10:07,960
+And that bothered me a lot, and I sort of wanted 
+to ask myself, is it possible to break that divide  
+
+107
+00:10:07,960 --> 00:10:15,640
+between the haves and the have-nots and make 
+this capability widely accessible through a  
+
+108
+00:10:15,640 --> 00:10:22,680
+procedural approach. And I have news for you. 
+The answer is yes, anybody can build product  
+
+109
+00:10:22,680 --> 00:10:29,640
+strategy through a clear understanding of what it 
+is and through a friendly and repeatable playbook.
+
+110
+00:10:29,640 --> 00:10:34,920
+Amazing. That's exactly what I want to do here. 
+The point you made about the why, I think everyone  
+
+111
+00:10:34,920 --> 00:10:39,480
+listening to this that's been in product for long 
+enough has heard that of just, "Your team doesn't  
+
+112
+00:10:39,480 --> 00:10:43,480
+understand why we're doing this." I've heard 
+that a number of times, as much as you think  
+
+113
+00:10:43,480 --> 00:10:49,440
+you're killing it, there's always that, you forget 
+sometimes to do that or you aren't doing it great.  
+
+114
+00:10:50,360 --> 00:10:54,760
+And I love that basically the solution to that 
+is the strategy solves that problem of helping  
+
+115
+00:10:54,760 --> 00:10:59,240
+people connect the dots and understand why 
+this is the roadmap, why this is the strategy.  
+
+116
+00:10:59,840 --> 00:11:04,120
+Okay, so before we get into it, just one more 
+context question, what's just the best way to  
+
+117
+00:11:04,120 --> 00:11:11,000
+think about what you're about to share and also 
+who's it for? Who needs to hear this briefly?
+
+118
+00:11:11,000 --> 00:11:17,600
+So the way to think about this, the substance 
+is that this is not a new framework or theory  
+
+119
+00:11:17,600 --> 00:11:23,760
+that I'm going to be talking about. There are 
+plenty of excellent materials on strategy from  
+
+120
+00:11:23,760 --> 00:11:31,480
+ancient texts like The Art of War from 
+Sun Tzu, all of Michael Porter's work,  
+
+121
+00:11:31,480 --> 00:11:36,440
+Good Strategy Bad Strategy by Richard 
+Rumelt, who's been on your podcast,  
+
+122
+00:11:36,440 --> 00:11:44,000
+Playing to Win Lafley and Roger Martin. So there's 
+a ton of extensively researched and well-founded  
+
+123
+00:11:44,000 --> 00:11:49,760
+materials out there. So the way I would think 
+about this is, it's more of an operator's  
+
+124
+00:11:49,760 --> 00:11:56,280
+interpretation of all the stuff that's out there 
+and are able to package it into something that's  
+
+125
+00:11:56,280 --> 00:12:01,400
+friendly and repeatable, particularly for 
+product people who think they are weak at  
+
+126
+00:12:01,400 --> 00:12:11,840
+strategy or perhaps have received such feedback.
+And just in terms of the battle-tested nature of  
+
+127
+00:12:11,840 --> 00:12:17,480
+it, I personally use this playbook about 
+five to six times tweaking and optimizing  
+
+128
+00:12:17,480 --> 00:12:23,840
+it each time based on what I thought worked, 
+what people thought worked and didn't work,  
+
+129
+00:12:23,840 --> 00:12:29,280
+including several times at Meta and 
+usually leading to strong results, both  
+
+130
+00:12:29,280 --> 00:12:36,080
+for me achieving senior leadership alignment as 
+well as driving business results for the company.
+
+131
+00:12:36,080 --> 00:12:39,760
+Okay, I'm getting more and more excited. 
+Let's get into it, let's get into this  
+
+132
+00:12:39,760 --> 00:12:44,760
+playbook. People hear this word strategy 
+a lot. They're told be more strategic,  
+
+133
+00:12:44,760 --> 00:12:49,200
+build a better strategy. What's the simplest 
+way to understand what is a strategy?
+
+134
+00:12:49,200 --> 00:12:56,120
+Yeah, let's start with some basic definitions, 
+which is as you asked, what is product strategy?  
+
+135
+00:12:57,200 --> 00:13:02,600
+And if you think back to the Headspace example, 
+this sort of comes to life as well. So product  
+
+136
+00:13:02,600 --> 00:13:09,400
+strategy, strategy sits between the mission and 
+vision and the plan. It could be at the company  
+
+137
+00:13:09,400 --> 00:13:14,600
+level or at the team level, but it's usually 
+sitting between the mission and vision and the  
+
+138
+00:13:14,600 --> 00:13:18,840
+plan. And the plan, you can call the plan the 
+roadmap, which is basically an ordered list  
+
+139
+00:13:18,840 --> 00:13:22,880
+of things that you want to get done and the 
+mission and vision is basically sort of the  
+
+140
+00:13:22,880 --> 00:13:29,520
+purpose of existence, what does it look like when 
+you achieve your purpose of existence? So it sits  
+
+141
+00:13:29,520 --> 00:13:40,480
+between the two and it forces choice to deploy 
+scarce resources to generate maximum impact. 
+
+142
+00:13:40,480 --> 00:13:47,320
+And I want to borrow an analogy from the world of 
+physics. There is this concept called resonance,  
+
+143
+00:13:47,320 --> 00:13:53,080
+and the concept of resonance is really 
+interesting, and it's actually very close to the  
+
+144
+00:13:53,080 --> 00:13:59,240
+concept of strategy. So the concept of resonance 
+works as follows, when you apply a certain  
+
+145
+00:13:59,240 --> 00:14:06,240
+frequency to an object and you get pretty close to 
+its natural frequency, you see a disproportionate  
+
+146
+00:14:06,240 --> 00:14:14,560
+increase in the amplitude of how that object 
+vibrates. And so it's very interesting, if you  
+
+147
+00:14:14,560 --> 00:14:19,440
+apply any other frequency, there's very little 
+effect on the object, but if you get close to its  
+
+148
+00:14:19,440 --> 00:14:24,760
+natural frequency, there's this exponential 
+increase in the vibration of the product.  
+
+149
+00:14:24,760 --> 00:14:29,280
+So this concept of resonance is interesting.
+So the way to think about it in the context of  
+
+150
+00:14:29,280 --> 00:14:36,240
+strategy is, it is selecting that frequency 
+to achieve resonance between the product and  
+
+151
+00:14:36,240 --> 00:14:43,000
+the market. And so when you get close to that 
+frequency, you should see tremendous impact in  
+
+152
+00:14:43,000 --> 00:14:48,640
+terms of the product landing well in the market. 
+And so that's how I would think about it. It sits  
+
+153
+00:14:48,640 --> 00:14:54,440
+between mission, vision and the plan. It 
+forces choice to deploy scarce resources  
+
+154
+00:14:54,440 --> 00:15:00,680
+to generate maximum impact, so using resonance 
+as a sort of an example, and it ideally includes  
+
+155
+00:15:00,680 --> 00:15:07,960
+three components. The first is a handful of 
+areas to focus on and I call these strategic  
+
+156
+00:15:07,960 --> 00:15:16,240
+pillars and then a whole bunch of areas that 
+are explicitly not the focus. And the third  
+
+157
+00:15:16,240 --> 00:15:24,800
+component is why. So why are the focus areas, 
+A, B and C? Why are these whole bunch of areas  
+
+158
+00:15:24,800 --> 00:15:32,080
+not the focus? And that's the three components. 
+That's really it in terms of product strategy.
+
+159
+00:15:32,080 --> 00:15:34,960
+I love it. And I love the things we 
+aren't doing as a core part of this,  
+
+160
+00:15:34,960 --> 00:15:38,200
+that comes up a lot on this podcast of 
+being clear is what we're not going to  
+
+161
+00:15:38,200 --> 00:15:42,640
+do. We know these could be things we could do, 
+but we're deciding we're not doing these things. 
+
+162
+00:15:42,640 --> 00:15:49,040
+Okay, so let's just talk through how you go 
+about developing a strategy using this method.  
+
+163
+00:15:49,040 --> 00:15:55,080
+Say someone's sitting down, "Okay, I'm going to 
+start developing a strategy for our product."  
+
+164
+00:15:55,080 --> 00:15:59,040
+Where do you begin? What does this process 
+look like? Let's start talking through it.
+
+165
+00:15:59,040 --> 00:16:05,280
+So I sort of want to first explain 
+this concept called smallest strategy,  
+
+166
+00:16:05,800 --> 00:16:11,600
+and I'll sort of talk about what that is and how 
+it's different from another kind. But the basic  
+
+167
+00:16:11,600 --> 00:16:18,520
+sort of strategic process I would say takes about 
+eight to 12 weeks long. It's something that I  
+
+168
+00:16:18,520 --> 00:16:25,360
+think people often underestimate how long it takes 
+and eventually end up taking a lot more time. But  
+
+169
+00:16:25,360 --> 00:16:28,920
+when they start off, they think, "Oh, I could 
+probably stand this up in a couple of weeks,"  
+
+170
+00:16:29,480 --> 00:16:34,920
+but usually through iteration it actually ends 
+up taking 8 to 12 weeks anyway. So it's good to  
+
+171
+00:16:34,920 --> 00:16:40,400
+start with setting clear expectations that 
+it takes about eight to 12 weeks. And the  
+
+172
+00:16:40,400 --> 00:16:46,560
+way to justify the ROI on that is typically a 
+strategy like this can be leveraged for about  
+
+173
+00:16:46,560 --> 00:16:51,680
+a couple of years. So relative to that sort 
+of payback period, I think the investment  
+
+174
+00:16:51,680 --> 00:16:58,440
+is relatively small. So it's pretty healthy 
+from that sense to manage expectations and  
+
+175
+00:16:58,440 --> 00:17:03,920
+say that that's how long it's going to take.
+So within that period, there are five phases.  
+
+176
+00:17:03,920 --> 00:17:09,080
+There's the preparation phase, there's 
+a strategy sprint, the design sprint,  
+
+177
+00:17:09,080 --> 00:17:14,520
+the document writing and the rollout. And those 
+are the five phases, which I'll explain how one  
+
+178
+00:17:14,520 --> 00:17:22,160
+would go through. And basically each of them has a 
+certain sort of time recommendation. For example,  
+
+179
+00:17:22,160 --> 00:17:29,480
+the preparation phase I would say is probably 
+about four weeks. The strategy sprint is up to  
+
+180
+00:17:29,480 --> 00:17:35,240
+about one week. The design sprint is another one 
+week, document writing maybe one to two weeks, and  
+
+181
+00:17:35,240 --> 00:17:39,880
+the rollout is maybe two to three weeks. So that's 
+how you get to that range of eight to 12 weeks.
+
+182
+00:17:39,880 --> 00:17:46,000
+Essentially it's like a quarter of work 
+to get to a final great strategy. And  
+
+183
+00:17:46,000 --> 00:17:51,000
+of these five phases, the biggest bucket 
+is preparation, which to me sounds like  
+
+184
+00:17:51,000 --> 00:17:55,640
+it's not like a full-time team thing. It's 
+starting to gather data and user research-
+
+185
+00:17:55,640 --> 00:17:56,880
+Totally.
+
+186
+00:17:56,880 --> 00:18:00,120
+As you talk through this, I'm curious just how 
+much of the team is involved in each of these  
+
+187
+00:18:00,120 --> 00:18:04,200
+steps. But I think it's an important point, 
+if you want a really good winning strategy,  
+
+188
+00:18:04,200 --> 00:18:08,760
+you need to give a time. You can't just say, "In 
+a month or a week, we need to develop a strategy,  
+
+189
+00:18:08,760 --> 00:18:13,960
+go figure it out, write this document." Great. 
+Cool. So let's talk about step one preparation.
+
+190
+00:18:13,960 --> 00:18:16,320
+That's correct, Lenny. And I think you,  
+
+191
+00:18:16,320 --> 00:18:21,160
+if I forget, remind me that sometimes there 
+is pressure. There's just business pressure,  
+
+192
+00:18:21,160 --> 00:18:29,000
+like the CEO might still want a strategy in 
+two weeks, how do you respond to that? And  
+
+193
+00:18:29,000 --> 00:18:35,920
+I think we can find some clever shortcuts 
+there, but I think to the extent possible,  
+
+194
+00:18:35,920 --> 00:18:40,520
+the leader should push for [inaudible 
+00:18:39] to make something really great.
+
+195
+00:18:40,520 --> 00:18:44,440
+And I think part of it is that as a 
+leader, you can start on this before...  
+
+196
+00:18:44,440 --> 00:18:48,480
+you know this is coming, so you should 
+get started before it's even asked for.
+
+197
+00:18:48,480 --> 00:18:49,480
+That's correct.
+
+198
+00:18:49,480 --> 00:18:51,720
+Yeah, awesome. Okay, let's get into it.
+
+199
+00:18:51,720 --> 00:18:57,600
+So I think you sort of touched on this in terms 
+of the preparation phase being the longest phase,  
+
+200
+00:18:57,600 --> 00:19:02,600
+but also not being sort of like a full-time thing. 
+So that's absolutely right. So the preparation  
+
+201
+00:19:02,600 --> 00:19:08,320
+phase is really... The way to start this, which is 
+a little different from other approaches I've seen  
+
+202
+00:19:08,920 --> 00:19:15,800
+from people is to actually form a strategy working 
+group. This is an important concept. So the  
+
+203
+00:19:15,800 --> 00:19:21,880
+strategy working group is sort of a small team. It 
+typically consists of engineering, product design  
+
+204
+00:19:21,880 --> 00:19:27,720
+and data at a minimum. And in certain cases, 
+there's a luxury to have other functions like  
+
+205
+00:19:27,720 --> 00:19:33,440
+product marketing, user research, that's also part 
+of the strategy working group. But the minimum  
+
+206
+00:19:33,440 --> 00:19:38,760
+quorum, I would recommend is engineering, product 
+design and data because design in some ways  
+
+207
+00:19:38,760 --> 00:19:44,960
+represents both sort of product design and user 
+research. So you do get the voice of the user from  
+
+208
+00:19:44,960 --> 00:19:52,120
+that perspective. And typically the PM is driving 
+the strategy working group and the process,  
+
+209
+00:19:52,120 --> 00:19:59,000
+but that working group is actually the team that's 
+going to collaboratively create the strategy doc. 
+
+210
+00:19:59,000 --> 00:20:04,840
+And so in the preparation phase, there's usually 
+a kickoff meeting where the PM pulls the team  
+
+211
+00:20:04,840 --> 00:20:10,400
+together, talks about the purpose of the process, 
+lays out the different phases, and gives everybody  
+
+212
+00:20:10,400 --> 00:20:17,440
+a feel for what's going to happen in the next 8 
+to 12 weeks. And basically then creates a list of  
+
+213
+00:20:17,440 --> 00:20:24,040
+very discrete action items and deliverables 
+for each of the stakeholders in the working  
+
+214
+00:20:24,040 --> 00:20:32,320
+group. So specifically, there's an action item 
+around aggregating all the behavioral insights  
+
+215
+00:20:32,320 --> 00:20:37,800
+that the team might have around the product. 
+And usually this is a combination of previous  
+
+216
+00:20:37,800 --> 00:20:46,160
+analysis that the team has run on the data side 
+and potentially also feature launches and how they  
+
+217
+00:20:46,160 --> 00:20:54,240
+have done. So all kind of analytical analysis.
+The ask is really to create a meta analysis of  
+
+218
+00:20:54,240 --> 00:21:02,000
+all of the analysis. So the data person on the 
+strategy working group has to scan the historical  
+
+219
+00:21:02,000 --> 00:21:10,680
+archives at the company and sort of synthesize 
+and condense that into a very sort of digestible  
+
+220
+00:21:10,680 --> 00:21:16,440
+macro themes and learnings about users. So 
+that's sort of one preparation phase item. 
+
+221
+00:21:16,440 --> 00:21:24,840
+The second is UXR insight. So again, there's 
+probably a lot of soft hard signals about users,  
+
+222
+00:21:24,840 --> 00:21:30,160
+not just based on research that's run by user 
+researchers, but also potentially from the  
+
+223
+00:21:30,160 --> 00:21:37,760
+customer service team, social channels, and 
+basically a meta analysis of all of that into  
+
+224
+00:21:37,760 --> 00:21:45,960
+one very actionable and synthesized deck on all 
+the insights on users. That's usually led by the  
+
+225
+00:21:45,960 --> 00:21:53,320
+design person and with support from their research 
+team. And that's sort of the second action item. 
+
+226
+00:21:53,320 --> 00:22:03,200
+The third action item is leadership interviews. 
+So I sort of have this fun story of the fruit  
+
+227
+00:22:03,200 --> 00:22:09,800
+with leadership strategy reviews, which I want to 
+share. So imagine, this is sort of how sometimes  
+
+228
+00:22:09,800 --> 00:22:17,440
+strategy reviews go, which is you bring a fruit 
+to the reviewer and say, "Hey, here's a mango,  
+
+229
+00:22:17,960 --> 00:22:23,840
+what do you think?" And the reviewer says, "I 
+actually don't like mangoes." And you're like,  
+
+230
+00:22:23,840 --> 00:22:29,000
+"Oh," you're sort of sad. You take it back, you 
+bring an apple and you show, "Hey, what do you  
+
+231
+00:22:29,000 --> 00:22:35,080
+think of an apple?" And then the leader says, "I 
+actually stopped eating apples last year." And so  
+
+232
+00:22:35,080 --> 00:22:41,000
+you're disappointed again. You go back, you bring 
+a banana. "I hated bananas since I was a kid." And  
+
+233
+00:22:41,000 --> 00:22:47,600
+so it's a bit of a silly caricature of reviews, 
+but there's a bit of grain of truth there,  
+
+234
+00:22:47,600 --> 00:22:55,240
+which is, imagine how frustrating that is for 
+both the reviewer and the person who's reviewing. 
+
+235
+00:22:55,240 --> 00:23:00,520
+And so it could be made so much better if you just 
+engage with your leaders before you actually build  
+
+236
+00:23:00,520 --> 00:23:08,560
+a strategy. It's amazing how few people actually 
+do that. And so the fruit story tells you, hey,  
+
+237
+00:23:08,560 --> 00:23:13,720
+imagine if you just asked the reviewer, "Do 
+you even like fruits?" How much better the  
+
+238
+00:23:13,720 --> 00:23:19,640
+experience would've been for both parties. And 
+so leadership interviews are a very important  
+
+239
+00:23:19,640 --> 00:23:26,280
+part of a strategy formulation process. So you 
+can divide and conquer, there's several leaders,  
+
+240
+00:23:26,280 --> 00:23:31,680
+like you assign different leaders to different 
+people on the strategy working group and each  
+
+241
+00:23:31,680 --> 00:23:38,800
+of them sort talks to that leader. And there are 
+a few questions that I would recommend asking,  
+
+242
+00:23:38,800 --> 00:23:46,320
+and it's basically, what does success feel like 
+for the leader? What does failure look like? What  
+
+243
+00:23:46,320 --> 00:23:51,440
+is the measure of success? What are principles 
+to keep in mind while going through this process?
+
+244
+00:23:51,440 --> 00:23:55,000
+And these are centered around the 
+product that you're working on?
+
+245
+00:23:55,000 --> 00:23:55,720
+Exactly.
+
+246
+00:23:55,720 --> 00:23:58,440
+For Headspace, it'd be like, what 
+do you think success looks like for  
+
+247
+00:23:59,160 --> 00:24:02,840
+Headspace or the specific feature 
+of Headspace? [inaudible 00:24:03].
+
+248
+00:24:02,840 --> 00:24:03,480
+Exactly.
+
+249
+00:24:03,480 --> 00:24:04,160
+Okay, cool.
+
+250
+00:24:04,160 --> 00:24:12,400
+That's right, yeah. And also I think ask 
+them for their favorite or better ideas. It's  
+
+251
+00:24:12,400 --> 00:24:16,760
+actually what I've found through this process 
+is a lot of leaders have these better ideas,  
+
+252
+00:24:17,320 --> 00:24:21,240
+they just feel shy to share it because they 
+don't want their teams to think of them as  
+
+253
+00:24:21,240 --> 00:24:27,280
+micromanage-y. They want their teams to figure out 
+the answer themselves, but then when you ask them,  
+
+254
+00:24:27,280 --> 00:24:32,720
+they actually have a pet idea always.
+And so asking them just takes the mystery  
+
+255
+00:24:32,720 --> 00:24:39,760
+out of it. And it also gives them a creative 
+avenue. So some people feel nervous about  
+
+256
+00:24:39,760 --> 00:24:45,800
+engaging senior leaders in these conversations in 
+the sense that, hey, is it a waste of their time?  
+
+257
+00:24:45,800 --> 00:24:51,320
+What I've found is the exact opposite, senior 
+leaders are, they welcome this because one,  
+
+258
+00:24:51,320 --> 00:24:55,760
+it's actually a more fun conversation for 
+them than the other meetings that they have  
+
+259
+00:24:55,760 --> 00:25:00,160
+in their day because they're getting a little bit 
+of their creative juices going, and they actually  
+
+260
+00:25:00,160 --> 00:25:05,080
+feel happy that somebody actually asked them 
+what they're feeling and thinking about. And  
+
+261
+00:25:05,080 --> 00:25:12,400
+so it's actually very, very positive energy 
+when you ask leaders just what they want. And  
+
+262
+00:25:12,400 --> 00:25:17,240
+it's also not a sign of weakness. It's actually a 
+sign of strength and humility to ask your leaders  
+
+263
+00:25:17,240 --> 00:25:23,560
+what you want. And so keeping that fruit story 
+in mind, I want to just say that this is a very,  
+
+264
+00:25:23,560 --> 00:25:29,040
+very positive thing, a very powerful thing.
+The next area is competitive analysis. So  
+
+265
+00:25:29,040 --> 00:25:32,800
+if there is a product marketing person, 
+they can do it for you. If there isn't,  
+
+266
+00:25:32,800 --> 00:25:39,440
+the PM should do it themselves. And basically 
+the idea is you try to understand who are the  
+
+267
+00:25:39,440 --> 00:25:43,920
+comparables or the competitors in the space, and 
+you sort of build a little bit of a head-to-head  
+
+268
+00:25:43,920 --> 00:25:52,280
+and sort a stack chart of where's everybody 
+going and what are of the angles of investment  
+
+269
+00:25:52,280 --> 00:25:58,240
+for different people based on the explicit 
+signals, which is what are they releasing? 
+
+270
+00:25:58,960 --> 00:26:02,800
+You don't really know what their strategies are, 
+but you can kind of tell when you look at the  
+
+271
+00:26:02,800 --> 00:26:08,360
+features they're putting out that, oh, they seem 
+to be focusing on this particular area. And so  
+
+272
+00:26:08,360 --> 00:26:14,840
+that's sort of competitive analysis. And bigger 
+companies, there's also another important input,  
+
+273
+00:26:14,840 --> 00:26:21,480
+which is adjacent roadmaps. Are the teams adjacent 
+to you and what are they investing in? Because  
+
+274
+00:26:21,480 --> 00:26:27,320
+oftentimes that can have a rub-off effect on 
+your team, and if you're not aligning with  
+
+275
+00:26:27,320 --> 00:26:32,920
+other key teams, it's going to be important. 
+So adjacent roadmaps and a summary of that. 
+
+276
+00:26:32,920 --> 00:26:38,600
+And last but not least, is what I call user 
+observation. So I like the strategy working  
+
+277
+00:26:38,600 --> 00:26:47,840
+group to actually either interview a user or 
+watch a video and report key learnings. And  
+
+278
+00:26:47,840 --> 00:26:54,320
+the idea is not to action those insights, it's 
+really to build empathy. When you get somebody  
+
+279
+00:26:54,320 --> 00:26:59,520
+in the room with a user, it just changes their 
+mind, it softens them a little bit. It gets them  
+
+280
+00:26:59,520 --> 00:27:03,714
+out of their own preconceived notions of what 
+to build, what the strategy should be and...
+
+281
+00:27:03,714 --> 00:27:04,000
+... their own preconceived notions of what 
+to build, what the strategy should be, and it  
+
+282
+00:27:04,000 --> 00:27:10,400
+humanizes the whole process. That I think 
+is the purpose, but you still give them  
+
+283
+00:27:10,400 --> 00:27:15,600
+the homework of writing down what they learned 
+because it's a little bit of a forcing function. 
+
+284
+00:27:16,400 --> 00:27:24,280
+The output of all of this is what I call 
+the comprehensive preparation readout. It  
+
+285
+00:27:24,280 --> 00:27:29,800
+is a single master deck where you sort of 
+have the behavioral insights meta analysis,  
+
+286
+00:27:29,800 --> 00:27:34,920
+you have the UXR insights meta analysis, you 
+have a download of the leadership interviews,  
+
+287
+00:27:34,920 --> 00:27:41,080
+you have the competitive stack charts, you have 
+the adjacent roadmaps, and you have a section  
+
+288
+00:27:41,080 --> 00:27:49,240
+on user observations. It's a lot of work, but 
+to your point, it can be done in parallel with  
+
+289
+00:27:49,240 --> 00:27:57,760
+your day jobs. You can multitask, and that's why 
+you take about four weeks to do that. That sort  
+
+290
+00:27:57,760 --> 00:28:03,960
+of concludes the preparation phase. You get the 
+deck, and that rolls into the strategy sprint,  
+
+291
+00:28:03,960 --> 00:28:06,920
+which is the next phase. I want to 
+pause and see if you have any questions.
+
+292
+00:28:06,920 --> 00:28:11,240
+Yeah, I have a million questions, but I'm 
+going to keep myself contained. Just to quickly  
+
+293
+00:28:11,240 --> 00:28:15,400
+summarize. Basically you kick off, we're going 
+to start developing strategy for this product,  
+
+294
+00:28:15,400 --> 00:28:19,360
+and you were going to touch on this, but it 
+may help just to talk about this right now.  
+
+295
+00:28:19,360 --> 00:28:23,480
+I know you have big S Strategy, 
+small S strategy. This process,  
+
+296
+00:28:23,480 --> 00:28:28,440
+what's an example of the level of product 
+scale that this process is for? Because I  
+
+297
+00:28:28,440 --> 00:28:33,280
+know you have another approach for a larger 
+scale of a product, basically for a company.  
+
+298
+00:28:33,280 --> 00:28:37,320
+What's the best way to think about small S 
+strategy, which is what we're going through?
+
+299
+00:28:37,320 --> 00:28:42,440
+Yeah, I think it's a good question, Lenny. 
+I would say that the process works well at  
+
+300
+00:28:42,440 --> 00:28:46,960
+sort of a growth stage company or in 
+a vertical within sort of a larger  
+
+301
+00:28:46,960 --> 00:28:53,000
+company. I think it scales pretty well. 
+The main difference between this small S  
+
+302
+00:28:53,000 --> 00:29:02,360
+and big S is the time horizon aspect and the 
+aspirational component, which we'll get to.
+
+303
+00:29:02,360 --> 00:29:07,240
+Okay, so this is a process you can use for 
+entire company strategy of not a large company,  
+
+304
+00:29:07,240 --> 00:29:10,880
+not a massively, and then also 
+just a product within a company?
+
+305
+00:29:10,880 --> 00:29:11,200
+Yeah.
+
+306
+00:29:11,200 --> 00:29:15,480
+Okay, perfect. Okay. Hey, we're kicking off 
+strategy for this thing. Let's say VR Chat  
+
+307
+00:29:15,480 --> 00:29:21,040
+2.0. You have this kickoff meeting with your 
+working group. You assign action items and  
+
+308
+00:29:21,040 --> 00:29:26,160
+there's six things you ask everyone to 
+do. Gather all the behavioral insights,  
+
+309
+00:29:26,160 --> 00:29:32,360
+all the user research insights that you've had, 
+leadership interviews, interview people, ask  
+
+310
+00:29:32,360 --> 00:29:36,960
+what they want and see what they're hoping for, 
+what success looks like, competitive analysis,  
+
+311
+00:29:36,960 --> 00:29:41,640
+adjacent roadmaps across other teams and 
+user observations, just like watch users,  
+
+312
+00:29:41,640 --> 00:29:47,160
+see what's happening. You assign each of these 
+tasks to different people in this working group.  
+
+313
+00:29:47,160 --> 00:29:52,640
+You set a deadline. We have to present this in 
+say, four weeks. People go work on it. You meet  
+
+314
+00:29:52,640 --> 00:29:58,120
+ongoing as it's coming together, and then the 
+output is a deck that you share. Do you share  
+
+315
+00:29:58,120 --> 00:30:01,520
+this deck with just that working group, or who 
+do you share this deck with and read it out to?
+
+316
+00:30:02,080 --> 00:30:06,920
+Yeah. The deck is an output of the first 
+phase, and then it flows into the second  
+
+317
+00:30:06,920 --> 00:30:10,560
+phase, which is a strategy sprint. You 
+don't share the deck with anybody yet.
+
+318
+00:30:10,560 --> 00:30:10,680
+Got it. This is our secret.
+
+319
+00:30:10,680 --> 00:30:13,360
+In the strategy sprint, 
+it's like a key thing. Yeah.
+
+320
+00:30:13,360 --> 00:30:17,600
+Awesome. Okay. I love how very concrete and 
+actionable this is with time boxes and action  
+
+321
+00:30:17,600 --> 00:30:23,320
+items and the exact output you're looking 
+for. I love this. Okay, cool. Basically  
+
+322
+00:30:23,320 --> 00:30:27,000
+what you're trying to do here is gather all 
+of the input that will inform the strategy.
+
+323
+00:30:27,000 --> 00:30:28,360
+That's correct.
+
+324
+00:30:28,360 --> 00:30:32,360
+It's giving yourself time to do 
+this, because if you think about it,  
+
+325
+00:30:32,360 --> 00:30:36,360
+the output is determined by the 
+quality of your input. I love,  
+
+326
+00:30:36,360 --> 00:30:42,000
+it feels like a core component of this method 
+is spend time creating, gathering all the input,  
+
+327
+00:30:42,000 --> 00:30:46,400
+all the best input, actually spend time 
+there. Don't just make it a half-assed last  
+
+328
+00:30:46,400 --> 00:30:52,240
+minute thing. Okay. Amazing. Okay, let's talk 
+about step two, which is the strategy sprint.
+
+329
+00:30:52,240 --> 00:30:58,360
+Yeah, so the strategy sprint is the heart of 
+the process. This is sort of where you make the  
+
+330
+00:30:58,360 --> 00:31:05,200
+decision. If you recall, the definition 
+of strategy is it forces choice to deploy  
+
+331
+00:31:05,200 --> 00:31:13,680
+resources into a few areas for maximum impact. 
+The core of strategy is really picking those  
+
+332
+00:31:13,680 --> 00:31:19,160
+areas and the areas you're not going invest 
+in. That happens in the strategy sprint,  
+
+333
+00:31:19,160 --> 00:31:24,120
+so really it's the heart of the process.
+Typically, it's like a three to five day process.  
+
+334
+00:31:24,120 --> 00:31:30,480
+The first day is the share out date. Everybody has 
+done some great work. They go in, they share what  
+
+335
+00:31:30,480 --> 00:31:36,720
+they've collected, what they've sort of learned. 
+It brings everybody in the working group to the  
+
+336
+00:31:36,720 --> 00:31:41,200
+same state of understanding, the same state 
+of consciousness on the state of the union.  
+
+337
+00:31:42,560 --> 00:31:50,000
+That's a great process where what I encourage 
+people to do is write down things that you are,  
+
+338
+00:31:50,000 --> 00:31:54,920
+as you're listening, write down things that you 
+find are problems for our users, things that  
+
+339
+00:31:54,920 --> 00:32:02,200
+are coming in the way of our growth and things 
+that are sort of suboptimal for the business. 
+
+340
+00:32:04,840 --> 00:32:08,960
+People take a lot of notes during that time 
+and the people who are presenting are sharing  
+
+341
+00:32:08,960 --> 00:32:15,080
+everything they've learned. That's really day 
+one. It's just absorbing a ton of information and  
+
+342
+00:32:15,080 --> 00:32:21,920
+writing down a ton of notes so people can kind of 
+understand where all the problems are. It's a very  
+
+343
+00:32:21,920 --> 00:32:27,640
+problems focused process, and that's an important 
+point. I'll get back to it when we talk about big  
+
+344
+00:32:28,520 --> 00:32:35,920
+S, which is different. Once people have 
+that common awareness, shared knowledge  
+
+345
+00:32:35,920 --> 00:32:42,920
+of all the problems, day two is literally 
+the most important day in the entire 8 to  
+
+346
+00:32:42,920 --> 00:32:48,840
+12 weeks because that's where you actually 
+make the choice. The way to flow through it,  
+
+347
+00:32:48,840 --> 00:32:55,480
+it's actually really important to flow through it 
+correctly. The first step is really generating a  
+
+348
+00:32:55,480 --> 00:32:59,000
+whole bunch of problems, because people 
+have been taking notes the previous day. 
+
+349
+00:32:59,000 --> 00:33:04,440
+You start the day with, "Hey, let's collect 
+everybody's thoughts on what the problems  
+
+350
+00:33:04,440 --> 00:33:10,640
+are that are holding us back." It's a free 
+flowing session. Everybody throws out their  
+
+351
+00:33:11,160 --> 00:33:16,720
+observations on what's holding us back, and you 
+just capture all of that in a Google Sheets,  
+
+352
+00:33:16,720 --> 00:33:24,520
+for example. Over even an hour, you start 
+to see these patterns emerging of like,  
+
+353
+00:33:24,520 --> 00:33:32,880
+there's these clusters of problems that are really 
+holding us back. The next step is you do a joint  
+
+354
+00:33:32,880 --> 00:33:40,440
+clustering of related problems and you create 
+these potentially, typically in my experience,  
+
+355
+00:33:40,440 --> 00:33:47,880
+I've seen about 10 to 15 clusters form of 
+very related problems. The beauty of it is  
+
+356
+00:33:47,880 --> 00:33:51,920
+each of those bigger cluster, you actually know 
+what the sub problems are within that cluster  
+
+357
+00:33:51,920 --> 00:33:57,320
+because you sort of generated it very organically.
+Then you have, let's say 10 to 15 clusters. What  
+
+358
+00:33:57,320 --> 00:34:04,360
+you then do is you, because remember, because 
+it started as a problem generation exercise,  
+
+359
+00:34:04,360 --> 00:34:11,280
+each of the clusters also has a name that 
+is a problem, and so the next step is to  
+
+360
+00:34:11,280 --> 00:34:16,600
+flip it into an opportunity framing. 
+Let me give you a couple of examples. 
+
+361
+00:34:16,600 --> 00:34:21,760
+Let's say there's a bunch of problems 
+around people don't really know where  
+
+362
+00:34:21,760 --> 00:34:26,400
+to find different things in our product, and 
+they don't really know where to go, where to  
+
+363
+00:34:26,400 --> 00:34:33,120
+find a certain feature or a certain experience. 
+There's let's say a lot of problems in that area,  
+
+364
+00:34:34,120 --> 00:34:40,320
+so difficulty finding things becomes the 
+cluster, the problem cluster and discovery  
+
+365
+00:34:40,320 --> 00:34:46,240
+becomes the opportunity sort of framing of it. 
+It's sort of the more positive framing of it. 
+
+366
+00:34:46,240 --> 00:34:52,680
+Another example could be that people get a lot 
+of content that they don't like. They see a lot  
+
+367
+00:34:52,680 --> 00:34:57,840
+of stuff that they don't like, and so they 
+disengage with the product. The opportunity  
+
+368
+00:34:57,840 --> 00:35:03,600
+framing of that would be relevance. It's 
+basically stuff that really matters to me.  
+
+369
+00:35:04,840 --> 00:35:10,480
+Maybe if it's a social product, then maybe 
+people are finding it difficult to find  
+
+370
+00:35:10,480 --> 00:35:18,840
+friends and they are lonely because of that. The 
+opportunity framing would be social connection. 
+
+371
+00:35:20,120 --> 00:35:25,760
+Flipping all of those problem clusters into 
+positive framing and opportunity framing is the  
+
+372
+00:35:25,760 --> 00:35:33,480
+next step. Then you're in a great spot because now 
+all you have to do is you have to down select from  
+
+373
+00:35:33,480 --> 00:35:41,920
+those 10 to 15 opportunity areas into ideally 
+three, maybe five, but I would recommend three  
+
+374
+00:35:41,920 --> 00:35:48,440
+because it creates more clarity and focus. The 
+way to do that is really sort of ranking them on,  
+
+375
+00:35:48,440 --> 00:35:55,880
+I would say four or five key dimensions or 
+criteria, and the first is expected impact. 
+
+376
+00:35:55,880 --> 00:36:01,880
+Let's say you actually tackle that area. What 
+is the expected impact to whatever matters to  
+
+377
+00:36:01,880 --> 00:36:08,960
+you as a company, as a business, as a product? 
+The second dimension is certainty of impact.  
+
+378
+00:36:08,960 --> 00:36:14,440
+Certainty of impact is basically how concrete is 
+the evidence that this is a problem? Sometimes  
+
+379
+00:36:14,440 --> 00:36:21,600
+you have really hard data, sometimes you have 
+more anecdotal evidence, and so the confidence  
+
+380
+00:36:21,600 --> 00:36:28,400
+really depends on how big the problem's 
+sizing and frequency is. Expected impact,  
+
+381
+00:36:28,400 --> 00:36:34,520
+certainty of impact. The third one is also 
+very important, which is clarity of levers. 
+
+382
+00:36:34,520 --> 00:36:38,680
+Do you actually have an idea of how you 
+would solve it? If you don't, it's going  
+
+383
+00:36:38,680 --> 00:36:45,400
+to be really difficult to move the needle on 
+it because you should kind of know that, okay,  
+
+384
+00:36:45,400 --> 00:36:49,880
+I can imagine these solutions could actually 
+move the needle. I can actually launch this  
+
+385
+00:36:49,880 --> 00:36:56,600
+sort of nudge system that can help people find 
+things. I can recommend people. I can recommend  
+
+386
+00:36:56,600 --> 00:37:01,600
+friends so that people can form friends quicker 
+on the platform. You should have a sense of how  
+
+387
+00:37:01,600 --> 00:37:08,160
+you would solve that particular space. Is there 
+clarity on levers? That's the third dimension. 
+
+388
+00:37:08,160 --> 00:37:16,360
+The fourth dimension is super important, which 
+is are the levers unique and differentiated to  
+
+389
+00:37:16,360 --> 00:37:24,360
+that particular team or company? Which is that 
+if another team or company could build it better  
+
+390
+00:37:24,360 --> 00:37:29,320
+than this particular team or company, then 
+it's probably not that differentiated. It's  
+
+391
+00:37:29,320 --> 00:37:35,640
+probably going to be pretty generic once you 
+launch it. It's a combination of sort of like,  
+
+392
+00:37:35,640 --> 00:37:40,560
+is there a lot of impact here? How confident 
+are we of the problem? Do we have a sense of  
+
+393
+00:37:40,560 --> 00:37:47,160
+the solutions? And basically, are we the team or 
+company that has the capabilities and the skills  
+
+394
+00:37:47,160 --> 00:37:55,960
+to uniquely build it where other teams cannot?
+Once you have that, and sometimes what happens is  
+
+395
+00:37:55,960 --> 00:38:02,320
+you don't have too much data, and so it's okay to 
+have qualitative scores on this like high, medium,  
+
+396
+00:38:02,320 --> 00:38:07,480
+low, T-shirt scores, whatever that is. The key 
+is you're doing it together as a strategy working  
+
+397
+00:38:07,480 --> 00:38:14,040
+group, and you're debating the scores and you're 
+reasoning why it should be higher versus lower.  
+
+398
+00:38:14,040 --> 00:38:18,120
+There's a ton of alignment and collision 
+that's happening when you're doing that,  
+
+399
+00:38:18,120 --> 00:38:26,400
+which is very healthy for the eventual outcome.
+Once you do that, basically you can do a simple  
+
+400
+00:38:26,400 --> 00:38:34,320
+sort of addition of the scores and a sort, and 
+what you have is basically the top three and  
+
+401
+00:38:34,320 --> 00:38:44,520
+you have the remaining 7 or 12 that are basically 
+not the focus. That's the core of the process, is  
+
+402
+00:38:44,520 --> 00:38:51,480
+getting those opportunity areas and getting to a 
+shared sense of how do we prioritize them and why?
+
+403
+00:38:51,480 --> 00:38:55,240
+Okay, and this is all done in a week. I know 
+there's more to it. There's a couple more items  
+
+404
+00:38:55,240 --> 00:39:03,120
+that help you move from what you just said to the 
+next step, but I love that this is the core of  
+
+405
+00:39:03,120 --> 00:39:09,080
+the biggest element of the process, and you do it 
+in a week and you're only able to do it in a week  
+
+406
+00:39:09,080 --> 00:39:13,440
+because of the work you did ahead of time. Again, 
+highlighting the importance of that prep step. 
+
+407
+00:39:13,440 --> 00:39:18,160
+Just to share what you've shared so far, and 
+then we'll finish the strategy sprint step.  
+
+408
+00:39:18,160 --> 00:39:22,320
+It's basically do the share out so everyone's 
+on the same page about all the information that,  
+
+409
+00:39:22,320 --> 00:39:27,480
+all the inputs essentially. Enumerate all 
+the problems, like individual small problems  
+
+410
+00:39:27,480 --> 00:39:33,000
+and then cluster them into 10 to 15 problem 
+clusters. Flip it from here's the problem to  
+
+411
+00:39:33,000 --> 00:39:39,680
+here's an opportunity we have. Rank them based 
+on, basically there's these four attributes  
+
+412
+00:39:39,680 --> 00:39:44,400
+you shared, which I'll actually, I wrote these 
+down. Impact potential, confidence that it will  
+
+413
+00:39:44,400 --> 00:39:50,280
+have the impact, clarity of levers and are 
+they differentiated unique levers? Is there  
+
+414
+00:39:50,280 --> 00:39:54,080
+something different from what other folks are 
+doing? Those are ways to rank these ideas and  
+
+415
+00:39:54,080 --> 00:39:58,840
+problem clusters. You essentially come up with, 
+here's three bets basically we potentially should  
+
+416
+00:39:58,840 --> 00:40:03,680
+take. Okay, and then I think that's 
+where you stopped. Is that right?
+
+417
+00:40:03,680 --> 00:40:05,960
+That's totally right, Lenny.
+
+418
+00:40:05,960 --> 00:40:06,640
+Okay, cool.
+
+419
+00:40:06,640 --> 00:40:11,960
+Those three that are at the top of that pile 
+are basically our strategic pillars. We've  
+
+420
+00:40:11,960 --> 00:40:16,480
+sort of gotten our strategic pillars and 
+they basically hold up the strategy. That's  
+
+421
+00:40:16,480 --> 00:40:23,480
+why they're called strategic pillars. The 
+idea is once you have the strategic pillars,  
+
+422
+00:40:23,480 --> 00:40:30,280
+we basically translate that into a few how might 
+we's? Let's say it's a relevance thing. How might  
+
+423
+00:40:30,280 --> 00:40:34,920
+we find the best content for a particular 
+user? How might we surface it in the right  
+
+424
+00:40:34,920 --> 00:40:41,000
+place? There's a few how might we's, and the how 
+might we's are basically intended to help the next  
+
+425
+00:40:41,000 --> 00:40:46,240
+phase of the process, which is the design sprint.
+You generate these areas, these strategic pillars,  
+
+426
+00:40:46,240 --> 00:40:50,080
+you generate the how might we's. How might we's 
+are typically pretty straightforward. Once you  
+
+427
+00:40:50,080 --> 00:40:54,400
+have the strategic pillars, it takes probably an 
+hour to generate some how might we's for each of  
+
+428
+00:40:54,400 --> 00:41:00,120
+them, maybe two or three for each strategic 
+pillar, and then you're done with that stage.
+
+429
+00:41:00,120 --> 00:41:04,520
+I just want to highlight real quick, this 
+phrasing is really important. I used exactly  
+
+430
+00:41:04,520 --> 00:41:09,320
+the same phrasing. I had a PM that I worked with 
+and his name was Andrew Chen, but not the Andrew  
+
+431
+00:41:09,320 --> 00:41:15,440
+Chen people know about, that's an investor, 
+who had this concept of fertile questions  
+
+432
+00:41:15,440 --> 00:41:21,280
+that create ideas and spark ideas and solutions. 
+This phrase, "How might we", is actually really  
+
+433
+00:41:21,280 --> 00:41:27,240
+powerful as a way to come up with ideas to 
+solve problems. It's just like, how might we  
+
+434
+00:41:27,880 --> 00:41:33,600
+increase discoverability in our app? How might 
+we improve relevance? There's something magical  
+
+435
+00:41:33,600 --> 00:41:38,520
+about that phrasing that it opens up your mind to, 
+how might we? Let's think about it. Versus like,  
+
+436
+00:41:38,520 --> 00:41:42,360
+how do we improve discovery? That's a 
+different, your brain works differently  
+
+437
+00:41:42,360 --> 00:41:46,920
+hearing this. That is a really powerful 
+phrasing. Just wanted to highlight that.
+
+438
+00:41:46,920 --> 00:41:52,640
+Yeah, that's awesome. It's also something 
+that designers are familiar with, Lenny,  
+
+439
+00:41:52,640 --> 00:41:56,440
+so it flows really well into 
+sort of a design sprint.
+
+440
+00:41:56,440 --> 00:42:00,840
+Okay, so you have these how might we'd. You have 
+three pillars, maybe three or four or five how  
+
+441
+00:42:00,840 --> 00:42:06,680
+might we's to solve these opportunities/problems, 
+and then what happens after that?
+
+442
+00:42:06,680 --> 00:42:13,160
+Exactly. Then the third day is it's good to 
+start fresh. The team's accomplished a lot.
+
+443
+00:42:13,160 --> 00:42:14,520
+This was all the first two days.
+
+444
+00:42:14,520 --> 00:42:15,680
+This is the first two days, yeah.
+
+445
+00:42:15,680 --> 00:42:18,280
+Wow. Okay. So much done in two days.
+
+446
+00:42:18,280 --> 00:42:21,760
+Yeah, exactly. The second day is particularly 
+intense on the team, so it's good to give them  
+
+447
+00:42:21,760 --> 00:42:27,240
+a break, because it's a lot of really mental sort 
+of wrestling, and so give the team a bit of a  
+
+448
+00:42:27,240 --> 00:42:31,280
+break. Then the third day is when people 
+are a little bit refreshed, we get to  
+
+449
+00:42:31,280 --> 00:42:36,200
+winning aspiration. Winning aspiration is super 
+interesting because it's a very creative exercise.  
+
+450
+00:42:36,960 --> 00:42:44,200
+You basically imagine in two years, because that's 
+the typical time horizon of a smaller strategy,  
+
+451
+00:42:44,200 --> 00:42:51,240
+is like 18 months to 24 months. This is what 
+I tell the team. Imagine two years there's  
+
+452
+00:42:51,240 --> 00:42:57,600
+a newspaper, there's a journalist that covers 
+this work, and there's a newspaper article that  
+
+453
+00:42:57,600 --> 00:43:04,000
+comes out. I want you to imagine the progress 
+on all these strategic pillars and what the  
+
+454
+00:43:04,000 --> 00:43:08,560
+headline of that newspaper article looks like. 
+It's called a newspaper headline approach. 
+
+455
+00:43:09,120 --> 00:43:17,080
+Basically, everybody generates a newspaper 
+headline in parallel. It's interesting because  
+
+456
+00:43:17,080 --> 00:43:22,760
+you often see there's these common themes that 
+sort of form when people generate these headlines.  
+
+457
+00:43:23,280 --> 00:43:27,920
+The forcing function with the headline is also 
+that it has to be somewhat simple and plain speak.  
+
+458
+00:43:27,920 --> 00:43:36,240
+It's not too technical. You have to get to a more 
+simple layperson's language and you have to get to  
+
+459
+00:43:36,240 --> 00:43:43,560
+the key benefit that ultimately, the impact it has 
+on the world. Those kinds of themes come up often. 
+
+460
+00:43:44,240 --> 00:43:48,720
+Then you do a little bit, you put them all into 
+a blender, you put all of those headlines from  
+
+461
+00:43:48,720 --> 00:43:55,520
+the team into a blender, and you mash them 
+together and create the winning aspiration,  
+
+462
+00:43:55,520 --> 00:44:02,440
+which is ultimately what does progress 
+on the strategy look like in a couple of  
+
+463
+00:44:02,440 --> 00:44:09,280
+years time? That comes from the working 
+group, it's not like one person writing.
+
+464
+00:44:09,280 --> 00:44:11,120
+What's an example of an aspiration that you've  
+
+465
+00:44:11,120 --> 00:44:14,200
+come up with on a project you 
+worked on, a winning aspiration?
+
+466
+00:44:14,200 --> 00:44:27,200
+We did this process for the privacy team when 
+I was at Meta. Really the strategic pillars  
+
+467
+00:44:27,200 --> 00:44:32,040
+were around a lot of features that we would 
+build, but the winning aspiration was really like,  
+
+468
+00:44:32,040 --> 00:44:39,880
+could we move consumer trust? The newspaper 
+headline is something like, "Facebook has moved  
+
+469
+00:44:39,880 --> 00:44:47,160
+the needle on consumer trust by investing in these 
+areas." That's how you create the bigger impact.
+
+470
+00:44:47,160 --> 00:44:51,920
+That's a great example. Obviously this is 
+similar to the PR Amazon method and what I  
+
+471
+00:44:51,920 --> 00:44:55,960
+love about your approach, as you said early on, 
+is you're just pulling together all of these  
+
+472
+00:44:55,960 --> 00:45:01,760
+awesome ideas from all these different methods of 
+strategy work to a very methodical step-by-step  
+
+473
+00:45:01,760 --> 00:45:06,360
+process. Taking all the best ideas into, and as 
+you described, an operator's playbook for doing  
+
+474
+00:45:06,360 --> 00:45:11,320
+this. I love that. Okay. When you say blender, 
+by the way, I was thinking as you were talking,  
+
+475
+00:45:11,320 --> 00:45:15,640
+put them into a blender, what I'm inferring 
+is you just take everyone's headlines and  
+
+476
+00:45:15,640 --> 00:45:20,320
+you come up with one that kind of covers the 
+gamut of all three pillars being successful.
+
+477
+00:45:20,320 --> 00:45:24,440
+That's exactly right. More tactically 
+what I typically do is I put them all  
+
+478
+00:45:24,440 --> 00:45:29,800
+on a slide and start, it's almost like a word 
+cloud, and then you start to see these common  
+
+479
+00:45:29,800 --> 00:45:34,480
+words. Then you converge those words as 
+the key elements of the final winning  
+
+480
+00:45:34,480 --> 00:45:41,120
+aspiration. Then you try to create a nice 
+statement out of that. It also symbolically,  
+
+481
+00:45:41,120 --> 00:45:46,200
+everybody sees their own statement on the deck, 
+and that's how you get to the final model.
+
+482
+00:45:46,200 --> 00:45:47,760
+Awesome. I feel like AI could help with that now.
+
+483
+00:45:47,760 --> 00:45:47,840
+Exactly.
+
+484
+00:45:47,840 --> 00:45:51,600
+Just put in all your headline ideas and 
+it comes up with some suggestions. Okay,  
+
+485
+00:45:51,600 --> 00:45:55,440
+cool. Is that the end of the sprint 
+or is there more to the sprint?
+
+486
+00:45:55,440 --> 00:45:56,960
+That's it for the sprint.
+
+487
+00:45:56,960 --> 00:46:00,120
+Okay. At the end of the sprint, what 
+do you have? What are the outputs?
+
+488
+00:46:00,120 --> 00:46:05,520
+Yeah, this is a great progress on strategy 
+because now we have the three strategic  
+
+489
+00:46:05,520 --> 00:46:12,200
+pillars. We have the how might we associate it 
+with the strategic pillars. You also have the  
+
+490
+00:46:12,200 --> 00:46:18,880
+why. Why did you get to those three strategic 
+pillars and what are you not focused on and  
+
+491
+00:46:18,880 --> 00:46:23,880
+what are the reasons for it? You also 
+have the winning aspiration. It's great  
+
+492
+00:46:23,880 --> 00:46:30,000
+progress. The team's done a great job. I think 
+now we sort of move on to the design sprint.
+
+493
+00:46:30,000 --> 00:46:32,920
+In your experience, how often are these 
+three the correct three that you end up  
+
+494
+00:46:32,920 --> 00:46:38,160
+going with versus you learn something over the 
+course of the rest of the sprint and adjust?
+
+495
+00:46:38,160 --> 00:46:44,720
+It's a very good question. We'll speak about 
+an example that I had in Meta where typically  
+
+496
+00:46:44,720 --> 00:46:50,240
+during the strategy sprint, you don't change 
+it once you go through the strategy sprint,  
+
+497
+00:46:50,240 --> 00:46:55,720
+but eventually there are a lot of signals you get 
+through execution where you sort of have to course  
+
+498
+00:46:55,720 --> 00:47:01,000
+correct. We'll talk about one very interesting 
+example of how that sort of changed things here.
+
+499
+00:47:01,000 --> 00:47:05,440
+Awesome. Okay. Basically, you've developed your 
+strategy at this point, and in your experience it  
+
+500
+00:47:05,440 --> 00:47:10,240
+ends up being... Until you hit the market and 
+test, you don't really know what's going on.
+
+501
+00:47:10,240 --> 00:47:10,760
+Correct.
+
+502
+00:47:10,760 --> 00:47:14,440
+But there's kind of an implication that 
+in your experience doing this, I think you  
+
+503
+00:47:14,440 --> 00:47:21,680
+said five or six times, it has been correct 
+and as good as doing it any other approach.
+
+504
+00:47:21,680 --> 00:47:28,160
+I would say it's not sort of an empirical study, 
+obviously because of the small sample size,  
+
+505
+00:47:28,160 --> 00:47:33,560
+but I would say that it's really opened 
+people's eyes and it's led to really good  
+
+506
+00:47:33,560 --> 00:47:37,680
+alignment and eventually good 
+results. Even when it has not,  
+
+507
+00:47:37,680 --> 00:47:42,720
+it has led to good organizational buy-in 
+on why and how we are approaching things.
+
+508
+00:47:42,720 --> 00:47:45,960
+This reminds me of, Tomer Cohen was on 
+the podcast, he's CPO of LinkedIn and he  
+
+509
+00:47:45,960 --> 00:47:50,880
+has this phrase that always says he says, 
+which is, "We may be wrong, but we're not  
+
+510
+00:47:50,880 --> 00:47:56,160
+confused." I love that a core part of this 
+is everyone is completely on the same page,  
+
+511
+00:47:57,160 --> 00:48:01,720
+not from the beginning, but once you start this 
+process of here's all the inputs, here's step by  
+
+512
+00:48:01,720 --> 00:48:07,520
+step we are working together on narrowing down, 
+so at least everyone understands the why. Which  
+
+513
+00:48:07,520 --> 00:48:12,520
+is what sparked your interest in this in the first 
+place, everyone understanding. I know there's a  
+
+514
+00:48:12,520 --> 00:48:16,520
+whole rollout at the end too to solve that.
+Okay, cool, so we have the sprint. We have  
+
+515
+00:48:16,520 --> 00:48:21,160
+basically the three pillars that you're going to 
+invest in, this headline of what it might look  
+
+516
+00:48:21,160 --> 00:48:26,240
+like if you're to launch and some solution 
+ideas with how might we's. What comes next?
+
+517
+00:48:26,240 --> 00:48:31,440
+Yeah. The next phase is the design sprint, 
+and the design sprint can be led by the  
+
+518
+00:48:31,440 --> 00:48:36,400
+design person who's in the strategy working 
+group. If you remember, there's engineering,  
+
+519
+00:48:36,400 --> 00:48:41,240
+product design and data, so the design person 
+can lead it and the PM can sort of take a bit  
+
+520
+00:48:41,240 --> 00:48:47,600
+of a backseat during this process. The input to 
+the design sprint is sort of the three strategic  
+
+521
+00:48:47,600 --> 00:48:53,120
+pillars and the how might we's associated with it.
+The goal of the design sprint is not to sort of  
+
+522
+00:48:53,120 --> 00:48:56,960
+come up with these are the features we 
+should build. That's not the purpose  
+
+523
+00:48:56,960 --> 00:49:02,640
+of the design sprint. The design sprint is to 
+generate a lot of illustrative concepts that  
+
+524
+00:49:02,640 --> 00:49:08,200
+bring the strategy to life because a picture is 
+worth a thousand words. Oftentimes, even though  
+
+525
+00:49:08,200 --> 00:49:12,520
+you might have the right words in your strategy 
+doc, people might still scratch their head like,  
+
+526
+00:49:12,520 --> 00:49:17,160
+"What do you exactly mean? What are you going 
+to build?" The illustrative concepts really sort  
+
+527
+00:49:17,160 --> 00:49:22,000
+of give people something to latch onto, "Oh, 
+okay, I get it. This is what you're going to  
+
+528
+00:49:22,000 --> 00:49:27,880
+build at the end of the day with this strategy."
+The more generative, the better. Then there's the  
+
+529
+00:49:27,880 --> 00:49:32,080
+ability to, sometimes if you do the Google 
+Ventures design sprint, you can even test  
+
+530
+00:49:32,080 --> 00:49:38,880
+some of it with users and get a little bit of 
+sharpening of things. The goal here is not to  
+
+531
+00:49:38,880 --> 00:49:48,000
+build feature-ready designs, it's more to generate 
+concepts. Once you have that, basically the design  
+
+532
+00:49:48,000 --> 00:49:53,760
+sprint, and there's different flavors of design 
+sprints, which I won't go into. You can lean on  
+
+533
+00:49:53,760 --> 00:49:59,520
+your design lead to decide what's the appropriate 
+way, but the input and the output is what needs  
+
+534
+00:49:59,520 --> 00:50:04,760
+to be very emphasized. The input needs to be the 
+strategic pillars. The output needs to be a ton of  
+
+535
+00:50:04,760 --> 00:50:10,040
+illustrative concepts to explain each strategic 
+pillar. You could almost have a section where  
+
+536
+00:50:10,040 --> 00:50:16,480
+you talk about each strategic pillar and insert 
+those concepts in that section. That's the idea.
+
+537
+00:50:16,480 --> 00:50:20,680
+We're going to go through a couple examples to 
+make this very real. You mentioned the design  
+
+538
+00:50:20,680 --> 00:50:24,320
+sprint method, which we had the authors on the 
+podcast. They actually didn't go through the  
+
+539
+00:50:24,320 --> 00:50:27,680
+design sprint method. They have another book 
+called Make Time that's about productivity.  
+
+540
+00:50:27,680 --> 00:50:32,880
+We also had their colleague from Google 
+Ventures that designed a bullseye sprint,  
+
+541
+00:50:32,880 --> 00:50:36,640
+which is also an interesting sprint. It's 
+a new thing that helps you figure out your  
+
+542
+00:50:36,640 --> 00:50:40,302
+ICP and who to focus your product on 
+and how that informs your product.
+
+543
+00:50:40,302 --> 00:50:40,960
+Oh, that's right. Interesting.
+
+544
+00:50:40,960 --> 00:50:46,480
+It's another type of sprint you could 
+use here. The input is here's the three  
+
+545
+00:50:46,480 --> 00:50:48,240
+things we're going to invest in, say discovery,  
+
+546
+00:50:48,240 --> 00:50:54,680
+relevance, privacy. The output is here's 
+concepts of what this could look like to  
+
+547
+00:50:54,680 --> 00:51:00,360
+get people's minds going. Is it just a bunch 
+of mocks basically in a deck at this point?
+
+548
+00:51:00,360 --> 00:51:01,120
+That's correct. Yeah.
+
+549
+00:51:01,120 --> 00:51:03,480
+Okay, cool. Okay, amazing. That's a week. That's  
+
+550
+00:51:03,480 --> 00:51:06,760
+another sprint. PM could maybe 
+take a little bit of a break.
+
+551
+00:51:06,760 --> 00:51:07,240
+Exactly.
+
+552
+00:51:07,240 --> 00:51:08,840
+And designers take the lead.
+
+553
+00:51:08,840 --> 00:51:09,720
+Exactly.
+
+554
+00:51:09,720 --> 00:51:13,640
+The engineers are kind of inputs and 
+thought partners in this, I imagine.
+
+555
+00:51:13,640 --> 00:51:14,920
+They're optional. Yeah.
+
+556
+00:51:14,920 --> 00:51:19,080
+Optional, but yeah, ideally they're involved 
+because you want all the best ideas in there.
+
+557
+00:51:19,080 --> 00:51:19,360
+Yep.
+
+558
+00:51:19,920 --> 00:51:21,560
+Okay, cool. What comes next?
+
+559
+00:51:21,560 --> 00:51:26,760
+Then the next step is the document writing. 
+This is sort of a solo activity that the PM  
+
+560
+00:51:26,760 --> 00:51:34,320
+should take on, but the great news is the PM is 
+not starting from scratch. There's so much great  
+
+561
+00:51:34,320 --> 00:51:39,640
+stuff to write. If you remember, there's a ton 
+of user insights, a ton of behavioral insights,  
+
+562
+00:51:39,640 --> 00:51:44,720
+a ton of competitive analysis. There's the 
+three strategic pillars, how might we's,  
+
+563
+00:51:44,720 --> 00:51:48,520
+winning aspiration. There's a whole 
+bunch of illustrative concepts. 
+
+564
+00:51:48,520 --> 00:51:54,560
+Oftentimes, product leads have this sort of 
+creator's block. That is solved here completely  
+
+565
+00:51:54,560 --> 00:51:59,320
+because you have a ton of great material. I have 
+to tell you, it doesn't make the job easier. You  
+
+566
+00:51:59,320 --> 00:52:06,320
+still have to weave together a good story. 
+That's why I think it takes a week or two.  
+
+567
+00:52:07,160 --> 00:52:13,400
+I think it's really about combining, connecting 
+and editing at this point and telling a cohesive  
+
+568
+00:52:13,400 --> 00:52:17,600
+story from all those components, but I think the 
+building blocks are really solid and defensible.
+
+569
+00:52:17,600 --> 00:52:21,920
+Is there a template or kind of sections you 
+like to include in your strategy doc? As someone  
+
+570
+00:52:21,920 --> 00:52:26,040
+sits down and is trying to write this out, 
+what do you want to see there as headings?
+
+571
+00:52:26,040 --> 00:52:34,160
+I think you could almost take the building blocks 
+as a little bit of a steer for the template. You  
+
+572
+00:52:34,160 --> 00:52:41,240
+start with the broader context where you talk 
+about what the leaders kind of want from this  
+
+573
+00:52:41,240 --> 00:52:47,840
+overall effort. Then you get into key insights 
+and analysis where you have user insights,  
+
+574
+00:52:47,840 --> 00:52:57,840
+behavioral insights, competitive analysis. Then 
+you get into the strategic pillars and you explain  
+
+575
+00:52:57,840 --> 00:53:03,840
+them. You also explain why. In the appendix, you 
+include the full table that you generated on day  
+
+576
+00:53:03,840 --> 00:53:08,480
+two of your strategy sprint. You include the full 
+table in the appendix, including the criteria.  
+
+577
+00:53:08,480 --> 00:53:12,200
+That's going to be really important because most 
+people are going to ask, "Why did you pick these?"  
+
+578
+00:53:13,160 --> 00:53:19,440
+That's basically sort of the defensibility.
+Then you have the winning aspiration that's very  
+
+579
+00:53:19,440 --> 00:53:26,840
+bold. It's a big part of the heart of the deck, 
+and you sort of embed the illustrative concepts  
+
+580
+00:53:26,840 --> 00:53:33,240
+into the actual each of the strategic pillars so 
+that it flows well. Then finally, you end with  
+
+581
+00:53:33,240 --> 00:53:38,360
+some kind of alignment questions like, "Hey, 
+do these feel right? Are there things we are  
+
+582
+00:53:38,360 --> 00:53:45,000
+missing?" So that it creates that framework 
+for alignment in the subsequent meetings.
+
+583
+00:53:45,000 --> 00:53:48,600
+I'm excited to chat with Christina 
+Gilbert, the founder of OneSchema,  
+
+584
+00:53:48,600 --> 00:53:52,200
+one of our longtime podcast 
+sponsors. Hi, Christina.
+
+585
+00:53:52,200 --> 00:53:54,160
+Yes. Thank you for having me on, Lenny.
+
+586
+00:53:54,160 --> 00:53:59,000
+What is the latest with OneSchema? I know you 
+now work with some of my favorite companies,  
+
+587
+00:53:59,000 --> 00:54:00,309
+like Ramp, Vanta, Scale and Watershed. I 
+heard that you just launched a new product.
+
+588
+00:54:00,309 --> 00:54:03,960
+... and to scale and watershed, I heard 
+that you just launched a new product to  
+
+589
+00:54:03,960 --> 00:54:09,680
+help product teams import CSVs from 
+especially tricky systems like ERPs.
+
+590
+00:54:09,680 --> 00:54:12,000
+Yes, so we just launched one scheme of file feeds,  
+
+591
+00:54:12,000 --> 00:54:15,760
+which allows you to build an integration 
+with any system in 15 minutes, as long as  
+
+592
+00:54:15,760 --> 00:54:19,920
+you can export a CSV to an SFTP folder.
+We see our customers all the time getting  
+
+593
+00:54:19,920 --> 00:54:23,680
+stuck with hacks and workarounds, and the 
+product teams that we work with don't have  
+
+594
+00:54:23,680 --> 00:54:26,360
+to turn down prospects because their 
+systems are too hard to integrate with.  
+
+595
+00:54:27,080 --> 00:54:31,440
+We allow our customers to offer thousands of 
+without involving their engineering team at all.
+
+596
+00:54:31,440 --> 00:54:34,840
+I can tell you that if my team had 
+to build integrations like this,  
+
+597
+00:54:34,840 --> 00:54:37,720
+how nice would it be to be able 
+to take this off my roadmap,  
+
+598
+00:54:37,720 --> 00:54:43,120
+and instead use something like OneSchema, and not 
+just to build it, but also to maintain it forever?
+
+599
+00:54:43,120 --> 00:54:46,920
+Absolutely, Lenny. We've heard so many 
+horror stories of multi-day outages from  
+
+600
+00:54:46,920 --> 00:54:50,400
+even just a handful of bad records. 
+We are laser focused on integration  
+
+601
+00:54:50,400 --> 00:54:54,840
+reliability to help teams end all of those 
+distractions that come up with integrations. 
+
+602
+00:54:54,840 --> 00:54:57,920
+We have a built-in validation layer that 
+stops any bad data from entering your  
+
+603
+00:54:57,920 --> 00:55:02,680
+system, and OneSchema will notify your team 
+immediately of any data that looks incorrect.
+
+604
+00:55:02,680 --> 00:55:07,200
+I know that importing incorrect data can cause 
+all kinds of pain for your customers and quickly  
+
+605
+00:55:07,200 --> 00:55:11,320
+lose their trust. Christina, thank you for 
+joining us, and if you want to learn more,  
+
+606
+00:55:11,320 --> 00:55:21,280
+head on over to oneschema.co. That's oneschema.co.
+I pulled up Playing to Win, which I know you also  
+
+607
+00:55:21,280 --> 00:55:25,920
+pull ideas from, and actually Roger Martin was on 
+the podcast talking about this stuff. And one way  
+
+608
+00:55:25,920 --> 00:55:29,280
+I think about it as you're describing 
+a way to break up your strategy doc,  
+
+609
+00:55:29,280 --> 00:55:32,520
+is he has these five questions that you ask.
+The first is actually what's your winning  
+
+610
+00:55:32,520 --> 00:55:36,400
+aspiration? So I love that you're pulling that 
+in. This is one approach your doc would be. What's  
+
+611
+00:55:36,400 --> 00:55:42,760
+your winning aspiration? Where will you play? What 
+market are you going after? How will you win? What  
+
+612
+00:55:42,760 --> 00:55:46,480
+capabilities must be in place for you to win? 
+And then what management systems are required? 
+
+613
+00:55:46,480 --> 00:55:51,360
+We'll link to this framework just in case people 
+want that as a crutch in their thinking strategy,  
+
+614
+00:55:51,360 --> 00:55:56,400
+but is there anything that we could link 
+folks to that describe how you like to think  
+
+615
+00:55:56,400 --> 00:56:00,480
+about this doc? And if not, it'd be cool if 
+you make a template that folks could borrow.
+
+616
+00:56:00,480 --> 00:56:05,640
+I'm happy to share of the flowchart of 
+the process and the template as well.
+
+617
+00:56:05,640 --> 00:56:10,600
+Awesome. Okay. So this is how long of a 
+process, this writing of the document?
+
+618
+00:56:10,600 --> 00:56:16,560
+It's about one to two weeks, and I think 
+it's mostly solo work and hopefully by the  
+
+619
+00:56:16,560 --> 00:56:21,040
+end of it there's a very tight doc, 
+and that's what we use to roll out.
+
+620
+00:56:21,040 --> 00:56:24,840
+And by solo work, I imagine you're looping 
+in this working team to get their feedback  
+
+621
+00:56:24,840 --> 00:56:27,720
+as you're pulling it together, or is it 
+just you sit there in a room and then...
+
+622
+00:56:27,720 --> 00:56:34,120
+I would minimize pulling them in, because they've 
+all contributed so much to the process already.  
+
+623
+00:56:34,120 --> 00:56:40,040
+So, I would say that at the end of it, obviously, 
+once you have a draft, it's good to share with  
+
+624
+00:56:40,040 --> 00:56:46,920
+them, but I wouldn't tap their cycles too much at 
+this point, because they've given a lot already.
+
+625
+00:56:46,920 --> 00:56:48,040
+I see. Okay. 
+
+626
+00:56:48,040 --> 00:56:52,240
+And how many pages do you see this doc 
+being, roughly? What's a heuristic?
+
+627
+00:56:52,240 --> 00:56:56,240
+It's not too long. I would 
+say probably three or four  
+
+628
+00:56:57,320 --> 00:57:00,880
+pages and then an appendix has 
+a lot of additional... Like,  
+
+629
+00:57:00,880 --> 00:57:04,920
+the table I spoke about and a lot of additional 
+maybe illustrative concepts. Maybe you can only  
+
+630
+00:57:04,920 --> 00:57:09,400
+use a few illustrative concepts in the main 
+section so that there could be others there. 
+
+631
+00:57:09,400 --> 00:57:19,720
+I think usually there's a desire from leaders to 
+say, "Okay, what are we building next?" And it's  
+
+632
+00:57:19,720 --> 00:57:24,600
+important not to include a roadmap as part of 
+a strategy doc, because a strategy doc is meant  
+
+633
+00:57:24,600 --> 00:57:29,960
+to be separate from the roadmap. It's meant 
+to be a companion to your roadmap. And even  
+
+634
+00:57:29,960 --> 00:57:35,200
+though there's interest, maybe sometimes you can 
+include a illustrative roadmap in the appendix,  
+
+635
+00:57:35,200 --> 00:57:40,120
+but I would try to keep it clean and try 
+to keep it focused on just the strategy.
+
+636
+00:57:40,120 --> 00:57:44,800
+So at this point you basically 
+developed your strategy, the next step,  
+
+637
+00:57:44,800 --> 00:57:47,760
+I think you call rollout, where you 
+just start actually rolling this out,  
+
+638
+00:57:47,760 --> 00:57:52,240
+so let's talk about that. But it's important 
+to note how many weeks in this is. This is like  
+
+639
+00:57:52,240 --> 00:57:56,720
+six-ish weeks of work and you've got 
+a strategy for your company/product?
+
+640
+00:57:58,080 --> 00:58:03,560
+That's exactly right. So I think you're probably 
+in the last two to three weeks of the process,  
+
+641
+00:58:03,560 --> 00:58:11,520
+and pretty important final step is the rollout, 
+and I would start with what I call gatekeepers.  
+
+642
+00:58:11,520 --> 00:58:17,880
+And these are people who are absolutely... 
+You have to get their one-on-one alignment  
+
+643
+00:58:17,880 --> 00:58:21,640
+and blessing on this before it moves 
+forward. And it's probably not too many,  
+
+644
+00:58:21,640 --> 00:58:27,800
+probably two or three people. So I would 
+pre-flight it with them and get their alignment.
+
+645
+00:58:27,800 --> 00:58:29,510
+So these are one-on-one 
+meetings with these gatekeepers?
+
+646
+00:58:29,510 --> 00:58:34,560
+These are one-on-one meetings. Exactly.
+And then there's a larger group of what  
+
+647
+00:58:34,560 --> 00:58:38,760
+I call key stakeholders, people who are 
+impacted by it, different functional leaders,  
+
+648
+00:58:38,760 --> 00:58:45,800
+et cetera. And that can be done either async or 
+through a group review. And then there's probably  
+
+649
+00:58:45,800 --> 00:58:51,240
+a rolling of list of team roadshows. There's 
+different ways to do this, but the one that I  
+
+650
+00:58:51,240 --> 00:58:58,320
+feel is most effective is the roadshow where you 
+have about eight to 10 people in each session,  
+
+651
+00:58:58,320 --> 00:59:04,680
+so people feel more comfortable to ask 
+questions and it's more conversational. 
+
+652
+00:59:05,840 --> 00:59:11,760
+So the purpose of this stage is to land it. It's 
+not to seek too much feedback, so it's a delicate  
+
+653
+00:59:11,760 --> 00:59:18,400
+balance. At the same time, you don't want to 
+appear just being too inflexible. So it's a  
+
+654
+00:59:18,400 --> 00:59:24,080
+very delicate balance. When people ask questions, 
+you can clarify it, and you can add clarifications  
+
+655
+00:59:24,080 --> 00:59:28,240
+to the doc, but I wouldn't change... The most 
+important thing, three strategic pillars, I  
+
+656
+00:59:28,240 --> 00:59:33,840
+wouldn't change that. I would defend it using the 
+framework, but if people are like, "there's really  
+
+657
+00:59:33,840 --> 00:59:40,880
+good arguments about the criteria that led to your 
+ranking," then it's okay to reconsider it. I've  
+
+658
+00:59:40,880 --> 00:59:46,920
+not seeing it happen in my five to six attempts, 
+but it's possible, theoretically possible.
+
+659
+00:59:47,520 --> 00:59:51,480
+The core of this approach it sounds like, 
+is you've done a lot of the pre-work where  
+
+660
+00:59:51,480 --> 00:59:56,440
+you land in a generally correct place.
+Okay, so this is the rollout. So what  
+
+661
+00:59:56,440 --> 01:00:00,280
+I'm thinking as you talk, say you're like a 
+PM on a team, say you're working on privacy,  
+
+662
+01:00:00,280 --> 01:00:04,600
+it's like an IC, your ICPM, working on strategy. 
+How do you think about including, say, your  
+
+663
+01:00:04,600 --> 01:00:09,480
+manager because through this process, when do you 
+start to like, "Hey, here's what we're planning,  
+
+664
+01:00:09,480 --> 01:00:14,440
+here's what we're thinking," making sure 
+they're on board? Because I could see this  
+
+665
+01:00:14,440 --> 01:00:19,680
+working team off to the side working, working, 
+working. "Okay, we're ready to roll it out."  
+
+666
+01:00:19,680 --> 01:00:23,680
+Oftentimes there's like, "No, wait. There's all 
+this other stuff happening at the company, we  
+
+667
+01:00:23,680 --> 01:00:29,200
+don't have resources." Where do you loop them in? 
+How do you think about that kind of stakeholder?
+
+668
+01:00:29,200 --> 01:00:35,480
+The the more attuned PMs who 
+understand organizational dynamics,  
+
+669
+01:00:35,480 --> 01:00:40,320
+probably keep the manager pretty in sync 
+through the process. I think, definitely,  
+
+670
+01:00:40,320 --> 01:00:45,880
+the manager becomes a person who you interview 
+as part of the leadership interviews, so you know  
+
+671
+01:00:45,880 --> 01:00:52,960
+what the manager's looking for from the effort.
+And then once you get to the strategic pillars on  
+
+672
+01:00:52,960 --> 01:00:57,520
+day two of the strategy sprint, you probably want 
+to just quickly pre-flight it with the manager and  
+
+673
+01:00:57,520 --> 01:01:02,400
+say, "Hey, look, this is how it's trending, 
+and these are the things we are probably not  
+
+674
+01:01:02,400 --> 01:01:08,800
+going to do" and any issues with that. And then 
+eventually you actually want your manager to  
+
+675
+01:01:08,800 --> 01:01:15,280
+support you in some of these bigger meetings, 
+so you enlist their help. So I would say that  
+
+676
+01:01:15,280 --> 01:01:20,360
+it's probably each individual style, but I 
+would keep them pretty aligned through the  
+
+677
+01:01:20,360 --> 01:01:24,040
+process. But you don't have to be too heavy 
+[inaudible 01:01:23], just be super light.
+
+678
+01:01:24,040 --> 01:01:26,600
+Great. Makes a lot of sense 
+to me. There's like a... 
+
+679
+01:01:26,600 --> 01:01:30,760
+We're not going to solve everyone's problems 
+with this one framework, maybe just quickly  
+
+680
+01:01:30,760 --> 01:01:34,480
+touch on resourcing. As you think about this. 
+Like a part of a strategy includes like, oh,  
+
+681
+01:01:34,480 --> 01:01:38,880
+we also need these resources. Just 
+any thoughts on how to include that?  
+
+682
+01:01:38,880 --> 01:01:42,240
+And then I want to get into some examples 
+of how you've actually implemented this.
+
+683
+01:01:42,240 --> 01:01:47,240
+So I actually don't recommend thinking about 
+resources in the strategy phase, because what  
+
+684
+01:01:47,240 --> 01:01:53,520
+you're saying is, "these are the areas of 
+focus" and the resourcing question becomes  
+
+685
+01:01:53,520 --> 01:01:57,960
+more relevant from a road mapping standpoint.
+Because then you say, "Okay, what percentage  
+
+686
+01:01:57,960 --> 01:02:04,560
+of our engineering do we put on strategic pillar 
+A, versus B, versus C? And what are the specific  
+
+687
+01:02:04,560 --> 01:02:08,680
+things we build?" So it becomes a road-mapping 
+question as opposed to a strategy question.
+
+688
+01:02:08,680 --> 01:02:12,120
+And so by the end of this, the rollout, 
+the part of the rollout is developing the  
+
+689
+01:02:12,120 --> 01:02:14,520
+actual roadmap. We're not going to get 
+deep into that. That could be part two,  
+
+690
+01:02:15,080 --> 01:02:19,680
+solve every PM's problems, teach 
+them all the steps of the process,  
+
+691
+01:02:19,680 --> 01:02:24,000
+but we're going to cut it off at, here's you have 
+a strategy that is starting to be rolled out.
+
+692
+01:02:24,000 --> 01:02:24,880
+Exactly.
+
+693
+01:02:24,880 --> 01:02:26,080
+Cool.
+Let's go through a couple  
+
+694
+01:02:26,080 --> 01:02:30,240
+examples where you actually move into this 
+to make this even more real. I know there's  
+
+695
+01:02:30,240 --> 01:02:34,280
+a couple companies you were thinking 
+about sharing, strategies you worked on.
+
+696
+01:02:35,320 --> 01:02:39,440
+I think there's just three quick notes to close  
+
+697
+01:02:39,440 --> 01:02:45,040
+off this process and I'll 
+share two examples, Lenny.
+
+698
+01:02:45,040 --> 01:02:45,500
+Perfect.
+
+699
+01:02:45,500 --> 01:02:52,200
+So the reason I think this process works, the 
+first is because there is a ton of alignment  
+
+700
+01:02:52,200 --> 01:02:58,680
+built in within team alignment and leadership 
+alignment built in. And it's not seen as,  
+
+701
+01:02:58,680 --> 01:03:04,280
+"Oh, this PM went off and wrote this 
+strategy doc and I don't agree with  
+
+702
+01:03:04,280 --> 01:03:12,440
+most of it." And part of this is actually very...
+It goes back to human psychology of just something  
+
+703
+01:03:12,440 --> 01:03:19,480
+that comes from you, feels a lot more familiar 
+and easy to accept. So this doc is actually not  
+
+704
+01:03:19,480 --> 01:03:25,880
+from the PM, the PM is facilitating it, but it's 
+actually from the strategy working group. And the  
+
+705
+01:03:25,880 --> 01:03:31,080
+strategy working group are the leads of the team. 
+And so it's actually... And the leadership inputs  
+
+706
+01:03:31,080 --> 01:03:38,280
+have been baked in, so it's actually very team 
+representative. And so hopefully there isn't too  
+
+707
+01:03:38,280 --> 01:03:42,880
+much misalignment when you roll it out. And 
+I have seen that, I've seen that work out. 
+
+708
+01:03:42,880 --> 01:03:48,760
+The second is there's just better results. You 
+get to better problem articulation, you get a  
+
+709
+01:03:48,760 --> 01:03:55,280
+better strategic pillar, because there's just more 
+minds on it than if it was just a product lead. 
+
+710
+01:03:55,280 --> 01:04:01,480
+And the third thing is you have clearly 
+defensible criteria and outputs, and if  
+
+711
+01:04:01,480 --> 01:04:06,840
+you want to change it, like I said, you have to go 
+back to the criteria and the scoring and then say,  
+
+712
+01:04:06,840 --> 01:04:10,720
+"Okay, why do we believe this has to be 
+changed?" And even a change is easy to  
+
+713
+01:04:10,720 --> 01:04:17,160
+justify once you do that. So it creates a lot 
+of benefits, but ultimately, and we'll get to  
+
+714
+01:04:17,160 --> 01:04:22,640
+this a little bit more, it has to be tested with 
+execution, and that's the most important thing.
+
+715
+01:04:22,640 --> 01:04:25,200
+I think it's important to highlight, no framework  
+
+716
+01:04:25,200 --> 01:04:29,320
+playbook [inaudible 01:04:26] method is going 
+to guarantee you have the correct strategy  
+
+717
+01:04:29,320 --> 01:04:35,520
+that will win and your company will thrive. 
+It's always just the best effort at plan. 
+
+718
+01:04:35,520 --> 01:04:40,920
+As the quote, "no good plan survives 
+first contact with the customer."
+
+719
+01:04:40,920 --> 01:04:41,840
+Exactly.
+
+720
+01:04:41,840 --> 01:04:43,920
+Cool. Let's talk through some examples.
+
+721
+01:04:45,480 --> 01:04:53,040
+so the first example I wanted to talk about is 
+at Zynga. I was at Zynga a very long time ago,  
+
+722
+01:04:53,040 --> 01:05:00,920
+and this was the heyday of social gaming 
+on Facebook. The thing that I was extremely  
+
+723
+01:05:00,920 --> 01:05:08,560
+impressed about Zynga was the strategic clarity 
+and strategic encoding at the company. And this  
+
+724
+01:05:08,560 --> 01:05:13,640
+was not attributable to me, by the way, this was 
+already there when I got there as a entry-level  
+
+725
+01:05:13,640 --> 01:05:20,360
+PM, but the kind of strategic clarity there was 
+really, really impressive and it was very evident  
+
+726
+01:05:20,360 --> 01:05:25,040
+and observable from all the games.
+So if you look at all the games,  
+
+727
+01:05:25,040 --> 01:05:31,680
+there were three elements that were very common 
+across all the games. The first was viral game  
+
+728
+01:05:31,680 --> 01:05:37,680
+loops. There's these game loops that just 
+required you to have a social and active  
+
+729
+01:05:37,680 --> 01:05:44,040
+social network to be successful and play, and it 
+was very tightly and fictionally integrated into  
+
+730
+01:05:44,040 --> 01:05:49,800
+the core of the gameplay. That was the first one.
+The second one was there was this idea of paying  
+
+731
+01:05:49,800 --> 01:05:59,040
+to complete things. So you're not paying to skip 
+a whole experience, what you're paying is just to  
+
+732
+01:05:59,040 --> 01:06:04,120
+complete it. So what happens then is different 
+people, depending on how much time they have,  
+
+733
+01:06:04,120 --> 01:06:11,480
+complete different percentages of a progression 
+task, or a part of the gameplay, and you only had  
+
+734
+01:06:11,480 --> 01:06:19,480
+to pay the rest to get through the experience. 
+And it was this interesting experience where  
+
+735
+01:06:19,480 --> 01:06:25,840
+people put a lot of investment into it, and 
+they didn't mind paying for the last 20% or 30%,  
+
+736
+01:06:25,840 --> 01:06:31,240
+which was very interesting, because it created 
+this market for different elasticity of spend,  
+
+737
+01:06:31,240 --> 01:06:36,880
+different times that people had in their lives. 
+And it was very, very clever. So that was again,  
+
+738
+01:06:36,880 --> 01:06:42,680
+very common across all the games.
+And then the third was network. So all  
+
+739
+01:06:42,680 --> 01:06:47,800
+of Zynga games had this cross-promotional 
+component at the top of the game and they  
+
+740
+01:06:47,800 --> 01:06:52,600
+would promote other games, and it's like the 
+Zynga network was the most important thing,  
+
+741
+01:06:52,600 --> 01:07:01,160
+and not an individual game. And those were the 
+three in our parlance now strategic pillars,  
+
+742
+01:07:01,160 --> 01:07:07,920
+and there were non-focus areas. It wasn't like...
+The focus wasn't on high-fidelity graphics,  
+
+743
+01:07:07,920 --> 01:07:14,480
+it wasn't on complex game mechanics, and this 
+was extremely clear and hard-coded into the  
+
+744
+01:07:14,480 --> 01:07:20,440
+company culture and operations. And it was 
+perfectly tuned to the environment at the  
+
+745
+01:07:20,440 --> 01:07:25,560
+time. Facebook platform afforded strong 
+support with social graph, and channels,  
+
+746
+01:07:25,560 --> 01:07:31,560
+and basically the game studios contributed through 
+different games in a very network accretive way. 
+
+747
+01:07:31,560 --> 01:07:37,560
+So for example, I was at Zynga San Diego, and 
+we took the company into net new game genres  
+
+748
+01:07:37,560 --> 01:07:43,440
+like action strategy, match three puzzle games, 
+but we stayed true to the strategic pillars of  
+
+749
+01:07:43,440 --> 01:07:48,720
+the company, and we had to invent new mechanics 
+so that the strategic pillars would work in the  
+
+750
+01:07:48,720 --> 01:07:55,000
+new genres that we introduced to the company. And 
+what was fascinating is the company actually had  
+
+751
+01:07:55,000 --> 01:08:00,480
+systems to reinforce these strategic pillars.
+And, for example, the data infrastructure was  
+
+752
+01:08:01,000 --> 01:08:06,680
+very incredible at the time, and really reinforced 
+these strategic pillars. There was this function  
+
+753
+01:08:06,680 --> 01:08:12,280
+called Central Product Management, which basically 
+propagated best practices, made sure that games  
+
+754
+01:08:12,280 --> 01:08:19,960
+were network accretive and all these things worked 
+in harmony to enhance those strategic pillars and  
+
+755
+01:08:19,960 --> 01:08:25,720
+reinforce it, and it worked really well. The 
+company, if I remember right, got to a billion  
+
+756
+01:08:25,720 --> 01:08:31,200
+dollars, it was the fastest to get to a billion 
+dollars in the history of companies at the time.
+
+757
+01:08:31,200 --> 01:08:32,240
+In revenue.
+
+758
+01:08:32,240 --> 01:08:35,560
+In revenue.
+And it worked really  
+
+759
+01:08:35,560 --> 01:08:42,360
+well until the environment changed and there was 
+a shift to mobile. And temporarily... Basically,  
+
+760
+01:08:42,360 --> 01:08:46,480
+if you go back to that resonance concept, 
+that deep resonance between the product  
+
+761
+01:08:46,480 --> 01:08:51,440
+and the market was temporarily lost 
+once that shift happened to mobile.
+
+762
+01:08:51,440 --> 01:08:55,000
+So there's a lot here. I think one 
+interesting note here is, as you said,  
+
+763
+01:08:55,000 --> 01:08:59,520
+the strategy work you're doing, which sounds like 
+a lot of time, eight to 12 weeks potentially,  
+
+764
+01:08:59,520 --> 01:09:04,120
+this lasted a long time for Zynga. And 
+so I think it's important to remember  
+
+765
+01:09:04,120 --> 01:09:07,400
+the work you're doing here, even though...
+On the one hand it feels like a long time,  
+
+766
+01:09:07,400 --> 01:09:12,120
+on the other hand, it feels like very little time 
+to come up with the things that will most help  
+
+767
+01:09:12,120 --> 01:09:18,440
+your business grow. In this case, these three 
+elements for Zynga. And by the way, these three  
+
+768
+01:09:18,440 --> 01:09:24,040
+pillars, they didn't emerge from this method, but 
+it helped you see the power of being very clear...
+
+769
+01:09:24,040 --> 01:09:24,880
+Clear, exactly.
+
+770
+01:09:24,880 --> 01:09:29,600
+And having everything centered around, we all 
+agree, these are the three ways we win. Okay,  
+
+771
+01:09:29,600 --> 01:09:32,720
+cool. And then I think the number three, 
+again, I just want to highlight the power  
+
+772
+01:09:32,720 --> 01:09:37,760
+of just very few bets in investments. So 
+it's always three. I've always suggested  
+
+773
+01:09:37,760 --> 01:09:42,400
+three as well. Some people are like, "three 
+to five," but I think it's... You just find,  
+
+774
+01:09:42,400 --> 01:09:46,480
+in general, three is the right number as 
+much? Try very, very hard to make it three?
+
+775
+01:09:46,480 --> 01:09:47,760
+I agree.
+
+776
+01:09:47,760 --> 01:09:48,600
+Okay, cool. 
+
+777
+01:09:48,600 --> 01:09:51,760
+And then I think there's also this element 
+of differentiation being really important.  
+
+778
+01:09:51,760 --> 01:09:55,400
+So these three elements you shared for 
+Zynga are just like they're unique and  
+
+779
+01:09:55,400 --> 01:10:03,200
+differentiated for Zynga. Network, powers of 
+apps driving other apps, paying to complete,  
+
+780
+01:10:03,200 --> 01:10:08,000
+these are things Zynga has figured out, "this is 
+how we" win versus other products in the market.
+
+781
+01:10:08,000 --> 01:10:08,480
+Totally.
+
+782
+01:10:09,640 --> 01:10:13,360
+Sweet. Anything else along those lines with Zynga?
+
+783
+01:10:13,360 --> 01:10:21,200
+That was in hindsight reflection, Lenny, I was 
+pretty naive when I was there, and I realized  
+
+784
+01:10:21,200 --> 01:10:27,680
+how... And this was, in fact, what led to my 
+blind spot when I joined Headspace from Zynga,  
+
+785
+01:10:27,680 --> 01:10:32,800
+that you even need a strategy. That's 
+the story I said at the beginning. 
+
+786
+01:10:32,800 --> 01:10:36,760
+The reason is because Zynga had it figured 
+out so well that I didn't actually have a  
+
+787
+01:10:36,760 --> 01:10:41,280
+need to exercise that muscle at Zynga, and 
+we just had to come up with new games that  
+
+788
+01:10:42,040 --> 01:10:48,720
+applied that strategy. And so it was a net new 
+muscle I had to develop when I got to Headspace.
+
+789
+01:10:48,720 --> 01:10:54,040
+It's like that parable of the fish swimming in the 
+water where the older fish swims by and he's like,  
+
+790
+01:10:54,040 --> 01:11:00,800
+"How's the water?" And they're like, "Hmm?" And 
+then he leaves and he's like, "What's water?"  
+
+791
+01:11:00,800 --> 01:11:06,000
+You just don't realize what you're in. You don't 
+realize what you're surrounded by until it's gone.
+
+792
+01:11:06,000 --> 01:11:07,240
+Exactly.
+
+793
+01:11:07,240 --> 01:11:10,160
+Maybe one other thing I just want to highlight 
+while we're on this topic is just the power of  
+
+794
+01:11:10,160 --> 01:11:17,000
+focus. In the case of Zynga, just this focus 
+on everything we do needs to get these things,  
+
+795
+01:11:17,000 --> 01:11:23,200
+these three things, everything we do, we need 
+to do in order to win. And I think that's a  
+
+796
+01:11:23,200 --> 01:11:28,400
+recurring theme in what you're talking about, is 
+just focus. The steps of the process are focus on  
+
+797
+01:11:28,400 --> 01:11:32,760
+this one part for now. So I think that's a really 
+interesting thread is just the power of focus.
+
+798
+01:11:32,760 --> 01:11:33,600
+Yeah.
+
+799
+01:11:33,600 --> 01:11:34,840
+Okay, cool. 
+
+800
+01:11:34,840 --> 01:11:38,040
+And now you have another 
+example of your time at Meta.
+
+801
+01:11:38,040 --> 01:11:46,000
+At Meta there's this fascinating example, which I 
+think illustrates a different point, which is... 
+
+802
+01:11:46,000 --> 01:11:52,920
+Basically I was standing up the product strategy 
+for a couple of product growth teams in Reality  
+
+803
+01:11:52,920 --> 01:12:00,600
+Labs, Oculus, which was coming up with the Quest 
+II at the time. This is a standalone headset,  
+
+804
+01:12:00,600 --> 01:12:05,920
+and then Portal, which was our video conferencing 
+product. And we stood up these teams to go after  
+
+805
+01:12:05,920 --> 01:12:11,480
+product growth, which is basically driving 
+hardware sales through software features. And we  
+
+806
+01:12:11,480 --> 01:12:17,400
+went through this process that I just described. 
+We stood up strategic pillars, and the strategic  
+
+807
+01:12:17,400 --> 01:12:23,640
+pillars were fairly similar for both Portal, which 
+is our video conferencing product, and Oculus.
+
+808
+01:12:23,640 --> 01:12:27,680
+I love Portal by the way. I was a big 
+fan of... Sad that it's no longer around.
+
+809
+01:12:30,800 --> 01:12:36,720
+And that led to features that are known to 
+everybody, like the Oculus Referrals Program,  
+
+810
+01:12:36,720 --> 01:12:42,320
+the Portal Memories Integration, where you see 
+one of your Facebook memories on the Portal,  
+
+811
+01:12:43,160 --> 01:12:49,280
+sponsored ad in your Facebook feed. And also 
+we had this section on the Facebook app,  
+
+812
+01:12:49,280 --> 01:12:53,280
+which is also from Facebook at the time, 
+and then eventually also from Meta,  
+
+813
+01:12:53,280 --> 01:13:00,920
+which is these other products from the Facebook 
+ecosystem. And all those came out of that effort. 
+
+814
+01:13:00,920 --> 01:13:08,960
+And about 18 months into it, they actually had 
+very different outcomes. So on one hand the  
+
+815
+01:13:08,960 --> 01:13:18,120
+Oculus effort was incredibly successful, and 
+we graduated it into the VR division at Meta,  
+
+816
+01:13:18,120 --> 01:13:24,320
+and till today it continues to be an 
+incredibly successful effort. The Portal  
+
+817
+01:13:25,160 --> 01:13:30,240
+effort actually didn't move the needle as 
+much as we wanted to, and we sunset it,  
+
+818
+01:13:30,240 --> 01:13:37,840
+and we basically redeployed that team to other 
+initiatives. And that's super interesting.  
+
+819
+01:13:37,840 --> 01:13:45,480
+Basically it was like the same strategy process. 
+We got the nearly identical strategic pillars,  
+
+820
+01:13:45,480 --> 01:13:51,920
+but eventually completely different outcomes.
+And I think that that illustrates the most  
+
+821
+01:13:51,920 --> 01:13:58,760
+important point about strategy, which is 
+intrinsically strategy has no business value.  
+
+822
+01:13:58,760 --> 01:14:08,640
+It's basically a document with a few words. And I 
+think it starts accumulating value as you generate  
+
+823
+01:14:08,640 --> 01:14:15,320
+business impact and results. And that happens 
+when you actually test strategy with execution. 
+
+824
+01:14:15,320 --> 01:14:22,320
+And so ultimately any strategy is only as 
+good as the results it produces. And so  
+
+825
+01:14:22,320 --> 01:14:27,120
+one has to have the intellectual honesty, and 
+the humility, and the courage to say when it's  
+
+826
+01:14:27,120 --> 01:14:32,000
+working and when it's not. And sometimes what 
+happens is parts of your strategy might work,  
+
+827
+01:14:32,000 --> 01:14:38,240
+parts might not, and you have to pivot away 
+from some and double down on some. But I do  
+
+828
+01:14:38,240 --> 01:14:44,400
+think there's that evaluation that's really 
+critical and testing strategy with execution.
+
+829
+01:14:44,400 --> 01:14:51,440
+Such a great point. Just a strategy sitting there 
+in a doc is worthless, where the worth comes from,  
+
+830
+01:14:51,440 --> 01:14:56,680
+is it actually having impact and being successful. 
+Makes me think about a product manager also,  
+
+831
+01:14:56,680 --> 01:15:02,120
+just a PM is not worth anything 
+until they help you drive impact. 
+
+832
+01:15:02,120 --> 01:15:07,160
+I think an important, to trickle down from 
+that point, is that you don't want to spend  
+
+833
+01:15:07,160 --> 01:15:13,160
+too long just thinking about strategy, you want 
+to spend as little time as possible to get to a  
+
+834
+01:15:13,160 --> 01:15:20,080
+strong hypothesis, basically to start learning 
+if this is the right path. And so I love that  
+
+835
+01:15:20,080 --> 01:15:24,960
+your approach is like this middle ground 
+between give it real time, but don't spend  
+
+836
+01:15:25,480 --> 01:15:30,920
+three, four or five months working on this one 
+document that just maybe one day you'll use.
+
+837
+01:15:30,920 --> 01:15:34,320
+Exactly.
+And there is room for a six-month process,  
+
+838
+01:15:34,320 --> 01:15:39,600
+which we'll get to in a moment. But for small S I 
+wouldn't recommend more than two or three months.
+
+839
+01:15:39,600 --> 01:15:42,880
+And again, small S strategy 
+is for a couple of years out,  
+
+840
+01:15:42,880 --> 01:15:46,360
+not like Exactly. It's like 
+a timeframe. Okay, cool. 
+
+841
+01:15:47,440 --> 01:15:52,960
+Okay. Anything else along those lines 
+of the examples of Meta or Zynga?
+
+842
+01:15:53,600 --> 01:15:55,760
+Those are pretty good lessons I would say.
+
+843
+01:15:55,760 --> 01:15:58,840
+Okay, sweet.
+So, let's talk about big-S  
+
+844
+01:15:58,840 --> 01:16:05,360
+strategy. When should you approach strategy 
+this way and what are just the steps of it?
+
+845
+01:16:06,680 --> 01:16:14,840
+So everything we've spoken about so far is what I 
+would call small S, and it's very problem focused.  
+
+846
+01:16:14,840 --> 01:16:18,960
+It's basically what I call present forward.
+It's like you have something, you have a product  
+
+847
+01:16:18,960 --> 01:16:24,200
+out there, it has a bunch of problems. How do we 
+make it better for... What are the areas we tackle  
+
+848
+01:16:24,200 --> 01:16:30,280
+for maximum impact? Typically led by product 
+managers. And there's this interesting quote  
+
+849
+01:16:30,280 --> 01:16:37,960
+by Elon Musk, which is, "Life has to be about 
+more than just solving problems." And he says  
+
+850
+01:16:37,960 --> 01:16:43,520
+it in the context of the aspiration to become 
+a multi-planetary species, but I think this is  
+
+851
+01:16:43,520 --> 01:16:50,760
+true of every company, big or small. And there 
+needs to be an aspirational and cool component  
+
+852
+01:16:50,760 --> 01:17:00,320
+to strategy. And I call this big-S strategy.
+I'll run through this at a higher level because  
+
+853
+01:17:00,320 --> 01:17:07,960
+I think this is a little bit more fluid in how 
+you build the big-S strategy. And it typically  
+
+854
+01:17:07,960 --> 01:17:15,160
+takes longer, potentially up to about six months. 
+The approach is a bit different from small S. And  
+
+855
+01:17:15,160 --> 01:17:21,760
+you start with the company mission and vision, and 
+there is a little bit of groundwork that is done  
+
+856
+01:17:21,760 --> 01:17:27,920
+on long-term cultural trends, social trends, 
+competitive trends, technological trends,  
+
+857
+01:17:27,920 --> 01:17:34,400
+and those are all the backdrop to trigger ideas. 
+And what you do with that backdrop is you, again,  
+
+858
+01:17:34,400 --> 01:17:41,280
+do these leadership interviews, but with a 
+different goal of generating long-term futures. 
+
+859
+01:17:41,280 --> 01:17:45,640
+And some of the questions you can ask during 
+these interviews are "What does a day in the  
+
+860
+01:17:45,640 --> 01:17:52,440
+life of a user look like in five years? What does 
+the product look like in five to 10 years? Why  
+
+861
+01:17:52,440 --> 01:17:58,440
+is the world better in 10 years? And what is 
+the most exciting version of that view?" And  
+
+862
+01:17:58,440 --> 01:18:05,360
+basically take all of that input and cluster 
+it into I would say, three cohesive holes. 
+
+863
+01:18:05,360 --> 01:18:11,720
+And what I mean by that is three, at least fairly 
+distinct, descriptions of the future. So to give  
+
+864
+01:18:11,720 --> 01:18:19,920
+you almost a very simple example, imagine you 
+doing big S for the future of travel. You could  
+
+865
+01:18:19,920 --> 01:18:27,160
+have a future that is talking all about fully 
+autonomous travel, where there's very little human  
+
+866
+01:18:27,160 --> 01:18:33,040
+involvement in going from A to B. You could talk 
+about another future where there's extreme speed,  
+
+867
+01:18:33,040 --> 01:18:37,960
+where you can get from A to B really fast across 
+the world that is really fast. You could talk  
+
+868
+01:18:37,960 --> 01:18:42,640
+about a third where there is no travel, it's 
+virtual travel, and you still have the feeling  
+
+869
+01:18:42,640 --> 01:18:47,720
+of travel, and you accomplish the same goals.
+But those are different futures, they have  
+
+870
+01:18:47,720 --> 01:18:52,920
+different properties, like different elements 
+to them. And once you generate those distinct  
+
+871
+01:18:52,920 --> 01:18:59,240
+futures, you actually generate prototypes with 
+learning goals. And think of these prototypes as  
+
+872
+01:18:59,240 --> 01:19:05,760
+concept cars. And the automobile industry uses 
+this notion of concept cars. Concept cars, the  
+
+873
+01:19:05,760 --> 01:19:13,360
+interesting thing about concept cars is they're 
+never commercialized. They're often produced for  
+
+874
+01:19:13,360 --> 01:19:20,560
+inspiration, and to potentially take some part 
+of them, like maybe a technology or a feature,  
+
+875
+01:19:20,560 --> 01:19:25,880
+and that is brought into mainstream production.
+So think of these prototypes as these concept cars  
+
+876
+01:19:25,880 --> 01:19:30,600
+that really drive inspiration and potentially 
+give you some small nuggets that you can run  
+
+877
+01:19:30,600 --> 01:19:37,360
+with. And then you start doing research with them 
+with potential users, you answer key questions,  
+
+878
+01:19:37,360 --> 01:19:41,720
+and you uncover certain elements that 
+resonate with people. So you eliminate  
+
+879
+01:19:41,720 --> 01:19:45,480
+a whole bunch of stuff, you combine a 
+whole bunch of stuff, and you establish  
+
+880
+01:19:45,480 --> 01:19:50,400
+some winning components that are interesting.
+And then what you do is you push stuff that  
+
+881
+01:19:50,400 --> 01:19:56,320
+is winning into the product, live product, 
+testing. So this is actually something that  
+
+882
+01:19:56,320 --> 01:20:01,720
+you actually want to start testing your 
+way into and understanding if it works  
+
+883
+01:20:01,720 --> 01:20:08,360
+from a scalable standpoint. And this whole 
+thing is typically led not by the PM team,  
+
+884
+01:20:08,360 --> 01:20:15,840
+but by design and UXR. And intentionally it's 
+a little bit more open-ended and green field.  
+
+885
+01:20:15,840 --> 01:20:24,080
+And it actually is a very different mind space 
+that people have when they approach big. So the  
+
+886
+01:20:24,080 --> 01:20:31,600
+roadmap is really built through a combination 
+of small-S and big-S work. And, for example,  
+
+887
+01:20:31,600 --> 01:20:37,440
+at VRChat, we are doing both small-S and big-S 
+work, Lenny. And they are run as parallel work  
+
+888
+01:20:37,440 --> 01:20:41,520
+streams. The product management team is 
+leading the charge of the small-S work,  
+
+889
+01:20:41,520 --> 01:20:45,920
+and the design team is leading the charge on the 
+big-S work. And it's really exciting stuff. What's  
+
+890
+01:20:45,920 --> 01:20:51,600
+coming out of both work streams is really exciting 
+and really different. And so we are building the  
+
+891
+01:20:51,600 --> 01:20:56,560
+bridge from both sides and both work streams 
+ultimately flow into one roadmap. It's almost  
+
+892
+01:20:56,560 --> 01:21:01,038
+like two tributaries that ultimately merge into 
+one river. That's how I would think about it.
+
+893
+01:21:01,038 --> 01:21:01,080
+There's so many things here that are so...
+
+894
+01:21:01,080 --> 01:21:02,320
+That's how I would think about it.
+
+895
+01:21:02,320 --> 01:21:06,120
+There's so many things here that are so 
+interesting. One is we've had this conversation  
+
+896
+01:21:06,120 --> 01:21:11,960
+on the podcast a couple of times, this point that 
+people think and see the world differently. Some  
+
+897
+01:21:11,960 --> 01:21:19,200
+people are very open-minded and creative, and 
+think big, blue sky people. Some people, me, just  
+
+898
+01:21:19,200 --> 01:21:23,400
+like, "What are we doing next? How do we move this 
+metric? Let's talk about concrete things that we  
+
+899
+01:21:23,400 --> 01:21:29,840
+can do?" For this big S approach, I think what 
+I'm hearing is make sure the people leading it  
+
+900
+01:21:29,840 --> 01:21:34,240
+are very open-minded, creative, blue sky type 
+people. If you're the person that's like, "How  
+
+901
+01:21:34,240 --> 01:21:40,480
+will this move our metric?" Maybe you shouldn't 
+be leading it and give someone else the reins. 
+
+902
+01:21:40,480 --> 01:21:44,920
+Cool. And then with these timelines of 
+doing both at once, it's probably hard  
+
+903
+01:21:44,920 --> 01:21:49,360
+to align them fully. So what I'm hearing is 
+it's like these are kind of ongoing sometimes.
+
+904
+01:21:49,360 --> 01:21:50,400
+Correct.
+
+905
+01:21:50,400 --> 01:21:54,600
+And they'll both inform what you're doing. You 
+don't need to have this perfect timeline of-
+
+906
+01:21:54,600 --> 01:21:56,400
+I agree to this. Yeah.
+
+907
+01:21:56,400 --> 01:22:03,520
+Sweet. And the big thinking I love, 
+because sometimes, you may experience this,  
+
+908
+01:22:03,520 --> 01:22:07,600
+designers often are like, "Oh, we just work 
+on all this boring, incremental optimization  
+
+909
+01:22:07,600 --> 01:22:12,880
+stuff. I want to think bigger." Which is 
+great, and this is a really good lever to  
+
+910
+01:22:12,880 --> 01:22:17,360
+allow for that in a contained environment. 
+Cool. Let's just go crazy. Let's think about  
+
+911
+01:22:17,360 --> 01:22:21,400
+what this could be in the future. Still, let's 
+make sure we're moving some metrics short-term,  
+
+912
+01:22:21,400 --> 01:22:25,720
+but let's give us opportunity to think big. And 
+oftentimes the biggest ideas come out of that.  
+
+913
+01:22:25,720 --> 01:22:30,640
+So I love it's giving space for both types of 
+thinking, thinking bigger and thinking long term. 
+
+914
+01:22:30,640 --> 01:22:35,240
+Anything else about these two methods that 
+might be interesting to share? Otherwise,  
+
+915
+01:22:35,240 --> 01:22:39,360
+I want to talk about AI a little bit, just how 
+that impacts things and a couple other things.
+
+916
+01:22:39,360 --> 01:22:45,200
+Yeah, yeah. I'll end on one short sort of 
+note on how this all feels when you do it,  
+
+917
+01:22:45,200 --> 01:22:47,320
+and then we can segue into AI-
+
+918
+01:22:47,320 --> 01:22:47,920
+Great, great.
+
+919
+01:22:47,920 --> 01:22:56,640
+... Lenny. So I think that whether it's 
+big S or small S, these are incredibly  
+
+920
+01:22:56,640 --> 01:23:04,120
+satisfying processes to go through in the end. 
+So once you get to the end, they're incredibly  
+
+921
+01:23:04,120 --> 01:23:11,080
+deeply satisfying. But with anything in life 
+that is very deeply satisfying at the end,  
+
+922
+01:23:11,080 --> 01:23:15,480
+they have a ton of challenge, frustration, and 
+dead ends while you go through it where you kind  
+
+923
+01:23:15,480 --> 01:23:20,000
+of get a lot of self-doubt like, "Hey, will you 
+ever reach the end?" And I just want to sort of  
+
+924
+01:23:20,000 --> 01:23:26,040
+normalize that. That's actually normal and I 
+want people to expect that as they go through  
+
+925
+01:23:26,040 --> 01:23:30,280
+it. And I think that's what makes it even 
+more rewarding when you get to that sort of  
+
+926
+01:23:30,280 --> 01:23:37,200
+point where you start to see things connecting.
+The second thing is I would say that the person  
+
+927
+01:23:37,200 --> 01:23:45,040
+who's leading the charge on these efforts has to 
+be really good at connecting diverse viewpoints  
+
+928
+01:23:45,040 --> 01:23:50,680
+and keeping them all moving forward. And it's 
+not easy, it's very hard because sometimes you  
+
+929
+01:23:50,680 --> 01:23:57,000
+have people who take you in different directions 
+and you have to keep it all hanging together. 
+
+930
+01:23:57,600 --> 01:24:02,000
+So in terms of picking people who have 
+that skill, who are good integrators,  
+
+931
+01:24:02,000 --> 01:24:07,480
+who are good connect the dots, I think it's 
+critical for these to be successful. And in  
+
+932
+01:24:07,480 --> 01:24:16,080
+some ways low ego because it's not like... They do 
+get to introduce their own ideas, but truly, it's  
+
+933
+01:24:16,080 --> 01:24:22,520
+about bringing the team together. So that's the 
+skill that you should look for for these leads. 
+
+934
+01:24:22,520 --> 01:24:26,160
+And then the third piece is I would say that 
+I would just approach these with a little bit  
+
+935
+01:24:26,160 --> 01:24:30,880
+of a lighter touch and more playful sort of 
+approach, because it's an intensive process,  
+
+936
+01:24:30,880 --> 01:24:37,160
+it's a long process. And people can get tired, 
+they can find it grindy. So just having a little  
+
+937
+01:24:37,160 --> 01:24:43,200
+bit of playfulness along the way goes a long 
+way in making it feel more tolerable for the  
+
+938
+01:24:43,200 --> 01:24:47,720
+people going through it. So those are some 
+thoughts about either of these processes.
+
+939
+01:24:47,720 --> 01:24:51,720
+That was really important context, especially 
+this will be frustrating throughout. It sounds  
+
+940
+01:24:51,720 --> 01:24:55,560
+really beautiful and great and smooth as 
+you describe it. In reality, there's a lot  
+
+941
+01:24:55,560 --> 01:25:01,080
+of pain that goes into... Because you're making 
+hard decisions. A lot of people have opinions,  
+
+942
+01:25:01,080 --> 01:25:06,360
+they have perspectives, there's data that's... 
+Rarely is there clear answer from the beginning,  
+
+943
+01:25:06,360 --> 01:25:09,400
+so I think that's really important context.
+I wanted to actually come back to your point  
+
+944
+01:25:09,400 --> 01:25:13,960
+you made about how Elon made this 
+point about life shouldn't just be  
+
+945
+01:25:13,960 --> 01:25:17,200
+about solving problems. I think part of 
+that quote is just like we should work  
+
+946
+01:25:17,200 --> 01:25:24,640
+on things that are awesome and exciting and 
+inspiring, that aren't just immediately pain  
+
+947
+01:25:24,640 --> 01:25:29,480
+solvers. And he's very good at that, 
+just inspiring people to what could be,  
+
+948
+01:25:29,480 --> 01:25:34,000
+and we should be thinking much bigger than we are.
+I was actually at an interview with Zuck where he  
+
+949
+01:25:34,000 --> 01:25:37,160
+said the same thing. He's probably inspired 
+by Elon. He's like, "I've just gotten to a  
+
+950
+01:25:37,160 --> 01:25:43,400
+point in my career where I want to work on awesome 
+stuff, stuff that is just awe inspiring, not just-
+
+951
+01:25:43,400 --> 01:25:43,760
+Exactly.
+
+952
+01:25:43,760 --> 01:25:48,280
+... another social feature." so I think that's a 
+really important point. And there's a lot of power  
+
+953
+01:25:48,280 --> 01:25:54,720
+in that. People get really excited about holy 
+moly, I did not imagine this is what Headspace  
+
+954
+01:25:54,720 --> 01:25:59,280
+could become, what VRChat could become, what 
+Meta could become. It's just really powerful,  
+
+955
+01:25:59,280 --> 01:26:03,120
+getting people really inspired. And I love 
+this process they shared of how to do that. 
+
+956
+01:26:03,120 --> 01:26:05,960
+And I didn't actually summarize it, so I have 
+it right here in front of me. I'll just share  
+
+957
+01:26:05,960 --> 01:26:10,200
+the five steps of the biggest process. So it's 
+preparation, mission, you figure [inaudible  
+
+958
+01:26:10,200 --> 01:26:14,920
+01:26:10] mission, vision, trends, interview 
+people about where they think things are going.  
+
+959
+01:26:14,920 --> 01:26:18,600
+Then you come up with three distinct futures 
+of what the future might look like if you were  
+
+960
+01:26:18,600 --> 01:26:24,760
+to do the things you're thinking. Then you build 
+prototypes of what might this look like? And then  
+
+961
+01:26:25,600 --> 01:26:30,480
+you actually test these in your product, which 
+I love, to start de-risking these ideas. That  
+
+962
+01:26:30,480 --> 01:26:36,720
+helps you converge to here's actual plan we want 
+to execute, and then you turn that into roadmap.
+
+963
+01:26:36,720 --> 01:26:40,880
+Yeah, yeah. And the first testing 
+of the prototypes is with UXR,  
+
+964
+01:26:40,880 --> 01:26:46,360
+so it's more sort of concept testing 
+or prototype testing with a handful  
+
+965
+01:26:46,360 --> 01:26:50,720
+of users. And then you use that as 
+synthesizing to a live product test.
+
+966
+01:26:50,720 --> 01:26:54,828
+Great. Basically, it's like big ideas and then 
+de-risking, validating them along the way-
+
+967
+01:26:54,828 --> 01:26:54,836
+Exactly.
+
+968
+01:26:54,836 --> 01:27:00,280
+... in various ways to like, "Okay, maybe this 
+could actually work. Let's try." Sweet. Okay,  
+
+969
+01:27:00,280 --> 01:27:03,880
+so just two more things. One is I want to 
+talk about AI briefly, of how that impacts  
+
+970
+01:27:03,880 --> 01:27:08,280
+this work. And then two, just maybe a recap of 
+the framework for people that are listening,  
+
+971
+01:27:08,280 --> 01:27:12,160
+you're like, "Oh my god, I have so much. 
+I wrote all these notes." Let's give them  
+
+972
+01:27:12,160 --> 01:27:17,680
+a summary so they could remember to use it.
+Okay, cool. So let's talk about AI briefly. How  
+
+973
+01:27:17,680 --> 01:27:24,200
+has AI tooling helped you evolve this process? 
+How can people use AI to make this easier?
+
+974
+01:27:24,200 --> 01:27:32,000
+So the first disclaimer is I'm not sort of an AI 
+futurist, but I read all the emerging stuff that's  
+
+975
+01:27:32,000 --> 01:27:37,680
+coming out, most of the emerging stuff that's 
+coming out and use some of the tools. And it's  
+
+976
+01:27:37,680 --> 01:27:46,240
+fascinating what's happening. And I think it will 
+definitely have an impact on strategy formulation.  
+
+977
+01:27:46,240 --> 01:27:52,000
+So what I'll share is what resonates for me in 
+the context of strategy formulation with AI. 
+
+978
+01:27:52,000 --> 01:28:01,960
+So right away, I think the basic idea is everybody 
+should be using assistance in the strategy  
+
+979
+01:28:01,960 --> 01:28:09,520
+formulation process with the basic tools that we 
+have. And there are two ways to get AI to assist  
+
+980
+01:28:09,520 --> 01:28:14,240
+you in the strategy formulation process. The first 
+is to support the preparation phase in terms of  
+
+981
+01:28:14,240 --> 01:28:22,200
+research. And this could be competitive analysis 
+and, for example, you could do trend analysis from  
+
+982
+01:28:22,200 --> 01:28:29,760
+a vast library of competitors' release notes. And 
+you can sort of say, "Okay, what are the themes of  
+
+983
+01:28:29,760 --> 01:28:37,000
+investment of a competitor's release notes?" Or 
+you could do a reviews analysis of a competitor  
+
+984
+01:28:37,000 --> 01:28:45,200
+product and sort of understand what's resonating 
+for users, what's not. And you could also ask a  
+
+985
+01:28:45,200 --> 01:28:51,360
+tool like ChatGPT to do a head-to-head comparison 
+between a few players on a certain dimension  
+
+986
+01:28:51,360 --> 01:28:58,800
+and really give you a heat map of how they all 
+stack up. And you could also ask an open-ended  
+
+987
+01:28:58,800 --> 01:29:02,640
+question like, "Hey, why is this new product so 
+successful? Why is it getting so many users?"  
+
+988
+01:29:02,640 --> 01:29:08,400
+And there's some good hypothesis that you usually 
+get. So really leverage in sort of the preparation  
+
+989
+01:29:08,400 --> 01:29:14,360
+phase from a competitive analysis standpoint.
+The second one is in this idea called generating  
+
+990
+01:29:14,360 --> 01:29:20,640
+mock strategies. And I know Claire 
+Rowe at your summit spoke about this,  
+
+991
+01:29:20,640 --> 01:29:25,160
+and I think this is absolutely right and should 
+be a critical input into the strategy process,  
+
+992
+01:29:25,160 --> 01:29:33,240
+which is asking these tools for a mock strategy. 
+And I call this a mock strategy because it's kind  
+
+993
+01:29:33,240 --> 01:29:38,720
+of almost the answer but not quite the answer. 
+So what I've found is that these mock strategies,  
+
+994
+01:29:38,720 --> 01:29:45,640
+like let's say I support VRChat now and I ask it 
+like, "Hey, what should VRChat do? How should we  
+
+995
+01:29:45,640 --> 01:29:52,480
+grow?" And it generates a mock strategy.
+What I've found is that it's, one,  
+
+996
+01:29:52,480 --> 01:29:58,720
+surprisingly good. It's incredibly well-informed 
+and well-articulated. I've also found that its  
+
+997
+01:29:58,720 --> 01:30:04,600
+biggest strength is also somewhat its weakness, 
+which is these mock strategies tend to be pretty  
+
+998
+01:30:04,600 --> 01:30:10,000
+comprehensive and extensive, and there's an 
+investment recommendation in a vast number of  
+
+999
+01:30:10,000 --> 01:30:17,520
+areas. So basically, if you remember, the core of 
+strategy is really to be very targeted and to be  
+
+1000
+01:30:17,520 --> 01:30:23,640
+very focused. So these mock strategies become an 
+interesting input and the burden is still on the  
+
+1001
+01:30:23,640 --> 01:30:31,760
+team to down-select into the most important areas 
+for investment. So forcing that choice still,  
+
+1002
+01:30:31,760 --> 01:30:38,920
+I think, is a human element and needs that layer 
+of additional judgment, which is very context  
+
+1003
+01:30:38,920 --> 01:30:44,520
+specific to the company. So this is sort of 
+right away, I think people should be doing this. 
+
+1004
+01:30:44,520 --> 01:30:49,920
+I think more medium term and probably not too 
+distant future and likely sooner than we all  
+
+1005
+01:30:49,920 --> 01:30:56,440
+think, there's probably going to be, sort of 
+the model that resonates with me is sort of the  
+
+1006
+01:30:56,440 --> 01:31:03,560
+multi-agent model, which is you probably have 
+different components of the strategy workflow  
+
+1007
+01:31:03,560 --> 01:31:08,840
+automated. So you probably have a strategy agent, 
+you probably have a roadmap or feature agent,  
+
+1008
+01:31:08,840 --> 01:31:15,680
+you have maybe a engineering agent, and these can 
+communicate amongst each other to cycle through  
+
+1009
+01:31:15,680 --> 01:31:24,240
+results and iterate. And I think Armand Ruiz from 
+IBM has some good definitional frameworks on some  
+
+1010
+01:31:24,240 --> 01:31:31,680
+of the stuff. He shares it often on LinkedIn.
+But let's take a simple example. I can easily  
+
+1011
+01:31:31,680 --> 01:31:37,640
+imagine something like this for a topic like 
+onboarding. So every company and product team  
+
+1012
+01:31:37,640 --> 01:31:43,360
+obsesses about their onboarding experience. 
+And today, there are advanced experimentation  
+
+1013
+01:31:43,360 --> 01:31:48,240
+frameworks. So imagine you're expecting a 
+large surge in traffic. There's these sort  
+
+1014
+01:31:48,240 --> 01:31:55,040
+of experimental frameworks like multi-armed 
+bandits that can really help you get to the  
+
+1015
+01:31:55,040 --> 01:31:59,480
+optimal sort of variation very quickly in 
+real time. And there are variations of that,  
+
+1016
+01:31:59,480 --> 01:32:03,960
+like contextual multi-armed bandits, 
+there's combinatorial bandits. 
+
+1017
+01:32:03,960 --> 01:32:10,480
+But the interesting thing is they still 
+rely on human design of the variations,  
+
+1018
+01:32:11,080 --> 01:32:15,480
+the different variations that you test. Even 
+though the experimentation framework is very  
+
+1019
+01:32:15,480 --> 01:32:22,480
+sophisticated, the variations are still human 
+generated. Now imagine if those variations could  
+
+1020
+01:32:22,480 --> 01:32:29,240
+actually be generated through generative AI and 
+could be plugged into the advanced experimentation  
+
+1021
+01:32:29,240 --> 01:32:33,880
+frameworks. The possibilities become infinite. 
+And really, you might be surprised by what  
+
+1022
+01:32:33,880 --> 01:32:39,880
+you find is the winning onboarding experience 
+that you couldn't even have humanly imagined.  
+
+1023
+01:32:39,880 --> 01:32:44,360
+And it might be different for every user, 
+different for every sort of territory, etc.
+
+1024
+01:32:44,360 --> 01:32:48,720
+That is such a cool idea, I just want to say. 
+This agent that's just running, thinking about  
+
+1025
+01:32:48,720 --> 01:32:53,440
+ways to optimize your onboarding, coming up with 
+concepts that you probably review, like, "Cool,  
+
+1026
+01:32:53,440 --> 01:33:00,720
+let's try it." And then it does it, ships an 
+experiment to run it and just is constantly  
+
+1027
+01:33:00,720 --> 01:33:06,480
+optimizing your onboarding. Holy shit, that's an 
+awesome idea. I think everyone will have this. 
+
+1028
+01:33:06,480 --> 01:33:08,720
+And then what that makes me think 
+there's going to be some company  
+
+1029
+01:33:08,720 --> 01:33:12,703
+that's built the best onboarding agent. 
+That's what you're going to be paying for.
+
+1030
+01:33:12,703 --> 01:33:12,720
+Totally. Totally.
+
+1031
+01:33:12,720 --> 01:33:16,880
+Oh my god, that's so good. 
+Okay. Great. Great idea.
+
+1032
+01:33:16,880 --> 01:33:23,440
+Yeah, yeah. So then the question becomes, hey, 
+what is our job? Our job becomes architecting  
+
+1033
+01:33:23,440 --> 01:33:28,040
+bigger and bigger pieces of the product to 
+take advantage of these agents. And there  
+
+1034
+01:33:28,040 --> 01:33:33,920
+will be a sequential increase in the complexity of 
+workloads that get automated over time. Onboarding  
+
+1035
+01:33:33,920 --> 01:33:41,560
+is probably relatively on the easier side in terms 
+of complexity of workload. And you get into deeper  
+
+1036
+01:33:41,560 --> 01:33:47,480
+experiences, eventually AI will get there.
+So funnily enough, when that happens,  
+
+1037
+01:33:47,480 --> 01:33:52,920
+some of the manual processes I describe about 
+will seem archaic. But I think the fundamentals  
+
+1038
+01:33:52,920 --> 01:33:59,240
+will still have a long shelf life, and as you 
+think about these automated frameworks as well.
+
+1039
+01:33:59,240 --> 01:34:03,880
+Man, this could be its own podcast. I have this 
+whole post about how AI, how PMs are the best  
+
+1040
+01:34:03,880 --> 01:34:09,600
+position, role in tech to thrive in a world 
+of AI, which I'll link to that makes people,  
+
+1041
+01:34:09,600 --> 01:34:14,160
+I find, feel better when they hear you talk about 
+how much might get done through agents in AI. 
+
+1042
+01:34:14,160 --> 01:34:18,960
+The other quick thought I had, and I want to 
+get to the wrap up, is I have this ongoing  
+
+1043
+01:34:18,960 --> 01:34:26,520
+debate with a friend about strategy in AI. 
+My feeling is in theory, an AI tool will be  
+
+1044
+01:34:26,520 --> 01:34:32,600
+incredibly good at coming up with your strategy 
+for you because it's just, here's all the data,  
+
+1045
+01:34:32,600 --> 01:34:38,520
+here's everything you need to know, how do we 
+win? And to me, that feels like the ultimate  
+
+1046
+01:34:38,520 --> 01:34:45,080
+way AI is good, is just here's data, here's what 
+I found as a path to a winning. But my friend's  
+
+1047
+01:34:45,080 --> 01:34:49,960
+also arguing that's the one thing that AI will be 
+least good at because that's where we need people  
+
+1048
+01:34:49,960 --> 01:34:54,640
+and context and discussion, all these things.
+I don't know, it's like one or the other.  
+
+1049
+01:34:54,640 --> 01:34:59,400
+Either AI will be incredibly good at helping 
+you figure out your strategy or the worst.
+
+1050
+01:34:59,400 --> 01:34:59,800
+Interesting.
+
+1051
+01:34:59,800 --> 01:35:05,040
+I'm curious. I'm curious, I guess, do you have 
+any quick thoughts on that? Where do you side?
+
+1052
+01:35:05,040 --> 01:35:14,000
+I think there is a crossover point where the human 
+judgment will be inferior to something that's able  
+
+1053
+01:35:14,000 --> 01:35:19,560
+to process multiple signals simultaneously. 
+There's an element of lateral thinking as well  
+
+1054
+01:35:19,560 --> 01:35:28,080
+here, and I'll sort of share a simple example.
+For those who drive Tesla cars with the fully  
+
+1055
+01:35:28,080 --> 01:35:35,560
+self-driving capabilities, when you make a turn, 
+humans have this fairly narrow field of vision.  
+
+1056
+01:35:35,560 --> 01:35:41,520
+So you have to look both ways and you have to 
+make a decision combining both those signals,  
+
+1057
+01:35:41,520 --> 01:35:48,160
+right? Whereas the car has six cameras, which 
+is simultaneously processing and it can make a  
+
+1058
+01:35:48,160 --> 01:35:55,840
+decision not in sequence, but in parallel. And 
+it moves with confidence at turnings because  
+
+1059
+01:35:55,840 --> 01:36:01,200
+of that. So there is this crossover point 
+where some of these, the ability to hold  
+
+1060
+01:36:01,200 --> 01:36:09,640
+multiple signals in the head, it's going 
+to be more... It's going to be stronger.
+
+1061
+01:36:09,640 --> 01:36:11,160
+That makes total sense. What 
+it makes me think about,  
+
+1062
+01:36:11,160 --> 01:36:15,040
+there's going to be a strategy agent just 
+sitting around always looking for ways to  
+
+1063
+01:36:15,040 --> 01:36:18,840
+improve your strategy and point you all 
+in a different direction. Oh my god,  
+
+1064
+01:36:18,840 --> 01:36:23,720
+future is wild, as I've said before.
+Okay, let's do a quick wrap up of  
+
+1065
+01:36:23,720 --> 01:36:27,080
+the process for folks that are taking notes 
+and they're like, "Cool, here's the overview."  
+
+1066
+01:36:27,080 --> 01:36:30,720
+So let's just do that and then let's go 
+to get to the exciting lightning round.
+
+1067
+01:36:31,440 --> 01:36:36,280
+I think the quick recap of everything 
+we've covered is that product strategy  
+
+1068
+01:36:36,280 --> 01:36:41,680
+definitionally sits between mission vision 
+at the top and plan at the bottom. So it  
+
+1069
+01:36:41,680 --> 01:36:47,000
+sits between those two either at the company 
+level or at the team level. What it does is it  
+
+1070
+01:36:47,000 --> 01:36:53,800
+forces choice to deploy scarce resources 
+towards maximum impact. And think about  
+
+1071
+01:36:53,800 --> 01:36:59,640
+the frequency selection and resonance as 
+an analogy, and it ideally includes three  
+
+1072
+01:36:59,640 --> 01:37:05,640
+components. A handful of areas to focus on, which 
+we call strategic pillars, and several areas that  
+
+1073
+01:37:05,640 --> 01:37:12,520
+are explicitly not the focus and why. That's 
+really it in terms of what product strategy is. 
+
+1074
+01:37:12,520 --> 01:37:19,560
+There is a smallest flavor of it which focuses 
+on solving problems. It's what I call present  
+
+1075
+01:37:19,560 --> 01:37:26,480
+forward, and it typically operates in a two-year 
+horizon. We use a five-stage process to get there,  
+
+1076
+01:37:26,480 --> 01:37:31,720
+and it takes about eight to 12 weeks. There 
+is a biggest process that focuses on an  
+
+1077
+01:37:31,720 --> 01:37:38,400
+aspirational future, is future backward and 
+typically has a three, five, 10-year horizon,  
+
+1078
+01:37:38,400 --> 01:37:43,840
+also a five-stage process, and can be 
+ongoing up to a six-month period to give  
+
+1079
+01:37:43,840 --> 01:37:49,560
+it enough space to generate something exciting.
+And the roadmap for the company or the team is  
+
+1080
+01:37:49,560 --> 01:37:55,200
+built from a combination of smallest and biggest 
+work, which is like building a bridge from both  
+
+1081
+01:37:55,200 --> 01:38:03,440
+sides of a river. And ultimately, any strategy 
+is only as good as the results it can produce. So  
+
+1082
+01:38:03,440 --> 01:38:10,360
+test and iterate through execution and double down 
+on what's working and pivot away from what's not.
+
+1083
+01:38:10,360 --> 01:38:14,640
+Incredible. I'm glad we did that. 
+Anything else that you want to share  
+
+1084
+01:38:14,640 --> 01:38:18,400
+or leave listeners with before we get 
+to our very exciting lightning round?
+
+1085
+01:38:18,400 --> 01:38:26,120
+Just all the best with strategy work and 
+ultimately individual and business success.
+
+1086
+01:38:26,120 --> 01:38:28,320
+Amazing. And when I asked you at the 
+beginning, before we started recording,  
+
+1087
+01:38:28,320 --> 01:38:31,720
+what your goal was for this conversation, 
+your answer was just to create a ripple of  
+
+1088
+01:38:31,720 --> 01:38:36,800
+success across companies and teams, 
+and I feel like we've done that.
+
+1089
+01:38:36,800 --> 01:38:37,800
+Thank you.
+
+1090
+01:38:37,800 --> 01:38:41,720
+Okay. With that, we've reached our very exciting 
+lightning ground. Chandra, are you ready?
+
+1091
+01:38:41,720 --> 01:38:42,920
+Yes.
+
+1092
+01:38:42,920 --> 01:38:45,480
+Let's do it. First question, 
+what are two or three books  
+
+1093
+01:38:45,480 --> 01:38:47,720
+that you've recommended most to other people?
+
+1094
+01:38:47,720 --> 01:38:53,760
+Yeah, I love books on creativity and innovation, 
+Lenny, and some of my classic favorites  
+
+1095
+01:38:53,760 --> 01:39:01,200
+are Walt Disney's biography. And there's several 
+out there, but I think the one that I like the  
+
+1096
+01:39:01,200 --> 01:39:08,960
+most is the Triumph of the American Imagination. 
+And what's interesting is it talks about how Walt  
+
+1097
+01:39:08,960 --> 01:39:15,160
+Disney actually loved the theme parks more 
+than the movies. And the reason for that was  
+
+1098
+01:39:15,160 --> 01:39:20,280
+he could actually tinker with the theme parks. 
+He could make changes to where the rides were,  
+
+1099
+01:39:20,280 --> 01:39:24,960
+he could change rides in and out, and then 
+he could observe real sort of changes to  
+
+1100
+01:39:24,960 --> 01:39:29,760
+reactions of people flowing into the theme 
+parks, which he couldn't do with the movies  
+
+1101
+01:39:29,760 --> 01:39:35,600
+because once it was produced, it was done, it 
+was out of his control. And it was interesting,  
+
+1102
+01:39:35,600 --> 01:39:42,120
+he was basically A-B testing long before the 
+term was coined. And it's just a fascinating look  
+
+1103
+01:39:42,120 --> 01:39:50,000
+into how his brain worked, way ahead of its time.
+The other classic is Ed Catmull's Creativity Inc,  
+
+1104
+01:39:50,000 --> 01:39:56,000
+and it talks about all the negative forces that 
+eat away at creativity in an organization. How do  
+
+1105
+01:39:56,000 --> 01:40:01,600
+you, as the leader, have to keep them at 
+bay and make sure the team can innovate? 
+
+1106
+01:40:01,600 --> 01:40:08,240
+And then there's this probably less popular 
+book, but really good one from Tom Kelly of IDEO,  
+
+1107
+01:40:08,240 --> 01:40:13,280
+which is The Ten Faces of Innovation. It talks 
+about different archetypes that you need on  
+
+1108
+01:40:13,280 --> 01:40:19,480
+the team that are essential for creating 
+something special. And you actually need,  
+
+1109
+01:40:20,160 --> 01:40:27,240
+I think there's the devil's advocate, you need the 
+researcher, you need the ethnographer, you need  
+
+1110
+01:40:27,240 --> 01:40:32,080
+the stage setter. There's all these interesting 
+personalities that you need to actually make  
+
+1111
+01:40:32,080 --> 01:40:37,120
+something successful. So I would say those are 
+some of the ones that I usually recommend, yeah.
+
+1112
+01:40:37,120 --> 01:40:41,120
+That's a really cool... That third book is 
+really interesting, I haven't heard of that. And  
+
+1113
+01:40:41,120 --> 01:40:45,800
+Creativity Inc, something I want to highlight real 
+quick is to your point, that a lot of it is how to  
+
+1114
+01:40:45,800 --> 01:40:51,240
+avoid killing good ideas. And my favorite metaphor 
+from that book is the ugly baby metaphor where  
+
+1115
+01:40:51,240 --> 01:40:56,400
+every new idea is an ugly baby that people just 
+want to get rid of. Get rid of this ugly baby,  
+
+1116
+01:40:56,400 --> 01:41:00,720
+we don't want this around here. And just every 
+new idea is ugly when it starts, and you need  
+
+1117
+01:41:00,720 --> 01:41:06,560
+to protect the ugly baby, basically. Although I 
+don't know who's hurting ugly babies, that's not-
+
+1118
+01:41:06,560 --> 01:41:08,160
+Yeah, yeah, it feels a bit... Yeah.
+
+1119
+01:41:08,160 --> 01:41:08,720
+Feels aggressive.
+
+1120
+01:41:08,720 --> 01:41:09,520
+Harsh.
+
+1121
+01:41:09,520 --> 01:41:14,440
+Yeah, harsh. Yeah. But it's memorable 
+because I've never forgotten that. 
+
+1122
+01:41:14,440 --> 01:41:19,040
+Okay, next question. Is there a favorite 
+recent movie or TV show you really enjoyed?
+
+1123
+01:41:19,040 --> 01:41:22,880
+Yeah, yeah. We watch a lot of 
+animated films with the kids.  
+
+1124
+01:41:23,400 --> 01:41:30,400
+But were a couple of good movies this 
+year. We really liked If, Imaginary Friend,  
+
+1125
+01:41:30,400 --> 01:41:36,360
+it's about growing up and forgetting 
+these memories of your younger days,  
+
+1126
+01:41:36,360 --> 01:41:43,040
+is was a really nice movie. And then of course, 
+we enjoyed Dune II as well. It was a fun watch.  
+
+1127
+01:41:45,080 --> 01:41:52,760
+But most of our time is dominated by the kids 
+sort of animated folks at home or the cinema.
+
+1128
+01:41:52,760 --> 01:41:55,480
+There's a new Dune TV show, I don't know 
+if you've been watching it. It just started  
+
+1129
+01:41:55,480 --> 01:42:01,680
+recently on HBO. It's not the best thing in 
+the world, but it gets you a little Dune fix-
+
+1130
+01:42:01,680 --> 01:42:01,980
+Interesting.
+
+1131
+01:42:01,980 --> 01:42:04,640
+... in between movies. I think 
+there's a third movie coming out.
+
+1132
+01:42:04,640 --> 01:42:06,200
+I see.
+
+1133
+01:42:06,200 --> 01:42:11,240
+Third question, do you have a favorite product 
+you recently discovered that you really love?
+
+1134
+01:42:11,240 --> 01:42:17,200
+Yeah, yeah. I've been playing this cute little 
+game for the last few days. It's called Capybara  
+
+1135
+01:42:17,200 --> 01:42:27,320
+Go! It's a tab-based strategy RPG game. It's got 
+really humorous writing and this cute capybara  
+
+1136
+01:42:27,320 --> 01:42:32,800
+that goes off on an adventure. It's very 
+well-paced and it's a very well-produced  
+
+1137
+01:42:32,800 --> 01:42:42,120
+game. It's one game I've been playing recently.
+I've also been poking around Bluesky. Bluesky is  
+
+1138
+01:42:42,120 --> 01:42:47,680
+interesting. I haven't gotten into a habit yet, 
+but it's super interesting concept of empowering  
+
+1139
+01:42:47,680 --> 01:42:55,240
+the community with these community-generated 
+feeds. It's very different experience. But it's  
+
+1140
+01:42:55,240 --> 01:42:59,640
+also interesting, there's a trade-off with the 
+simplicity of the product and what you get with  
+
+1141
+01:42:59,640 --> 01:43:05,160
+the additional complexity. It'll be interesting 
+to see how it plays out, how it scales.
+
+1142
+01:43:05,160 --> 01:43:10,360
+Do you have a favorite life motto that you often 
+come back to, find useful in work or in life?
+
+1143
+01:43:10,360 --> 01:43:18,280
+So there was this 1995 interview of Steve Jobs 
+where he talks about this idea of there's a  
+
+1144
+01:43:18,280 --> 01:43:23,560
+tremendous amount of craftsmanship between a 
+great idea and a great product, and it sort of  
+
+1145
+01:43:23,560 --> 01:43:32,240
+stuck with me over the years. And the simple way 
+to think about that is it takes a lot of effort  
+
+1146
+01:43:32,240 --> 01:43:38,920
+to make something special. And conversely, if it's 
+easy, it's probably not that special or not that  
+
+1147
+01:43:38,920 --> 01:43:46,920
+great. And it's something that I sort of think 
+about when we build product, is there sufficient  
+
+1148
+01:43:46,920 --> 01:43:53,040
+pain here where it's sort of a proxy for, are 
+we creating something great, is interesting.
+
+1149
+01:43:53,800 --> 01:43:58,480
+Wow. It makes me think about founder mode a 
+little bit. Like people talk about founder mode.  
+
+1150
+01:43:58,480 --> 01:44:03,880
+The reason founder mode I think is important is 
+the people that are most committed and passionate  
+
+1151
+01:44:03,880 --> 01:44:10,040
+and driven to go through that pain and continue 
+to make it... To take it from just an ugly baby  
+
+1152
+01:44:10,040 --> 01:44:16,800
+idea to an awesome winning product oftentimes 
+needs to be the founder. And that's why I think  
+
+1153
+01:44:16,800 --> 01:44:22,023
+it's kind of emerged as a trend is it's 
+important to have that drive, to just-
+
+1154
+01:44:22,023 --> 01:44:22,036
+Surely. Yeah.
+
+1155
+01:44:22,036 --> 01:44:27,080
+... continue to refine it and not just 
+like, "I had the idea, go build it now." 
+
+1156
+01:44:27,080 --> 01:44:30,680
+Okay, final question. You have an amazing 
+background behind you. [inaudible 01:44:31] if  
+
+1157
+01:44:30,680 --> 01:44:34,400
+people are on YouTube, it's just a beautiful 
+book background, a bunch of objects and books.  
+
+1158
+01:44:34,400 --> 01:44:39,440
+I'm curious if there's an object on there or a 
+book on there that might be fun to highlight that  
+
+1159
+01:44:39,440 --> 01:44:45,360
+you're especially into or proud of. And feel free 
+to turn around if you want to look around. Curious  
+
+1160
+01:44:45,360 --> 01:44:48,120
+if there's one thing that stands out, like, 
+"Oh, here's this thing, [inaudible 01:44:48]."
+
+1161
+01:44:48,120 --> 01:44:56,360
+Oh, well, it's the picture of my kids right in the 
+center, which is without doubt the most important  
+
+1162
+01:44:56,360 --> 01:45:02,760
+and memorable thing there. It's also caught it 
+a unique time when they were incredibly... They  
+
+1163
+01:45:02,760 --> 01:45:09,520
+were sort of super embracing each other and 
+it's a phase where they've grown out of it.  
+
+1164
+01:45:09,520 --> 01:45:18,320
+Now there's a lot more, I think rivalry and then 
+sibling tussles. But that moment is my favorite. 
+
+1165
+01:45:18,320 --> 01:45:25,840
+I also have a bunch of fun stuff, like a big sort 
+of Snoopy fan, and so it is... Also a big Beetles  
+
+1166
+01:45:25,840 --> 01:45:32,960
+fan, so that picture is actually an interesting 
+blend between Snoopy walking, crossing the road  
+
+1167
+01:45:32,960 --> 01:45:40,040
+and then the Beetles crossing the other way. And 
+then a bunch of books that are more memorable over  
+
+1168
+01:45:40,040 --> 01:45:45,000
+the years. You'll see Creativity Inc there, you'll 
+see The Ten Phases of Innovation, all of that.
+
+1169
+01:45:45,000 --> 01:45:49,160
+Amazing. Thank you for sharing... Your kids' 
+photo's blocked when you're in the center,  
+
+1170
+01:45:49,160 --> 01:45:53,240
+so it's like a little Easter egg. Thank 
+you for sharing that. Chandra, this was  
+
+1171
+01:45:53,240 --> 01:45:55,120
+incredible. It was everything I was 
+hoping it'd be. I think we're going  
+
+1172
+01:45:55,120 --> 01:45:59,080
+to create that ripple that you were hoping for.
+Two final questions. Where can folks find you  
+
+1173
+01:45:59,080 --> 01:46:02,400
+online if they want to reach out? And 
+how can listeners be useful to you?
+
+1174
+01:46:02,400 --> 01:46:11,760
+A reasonable choice would be LinkedIn to reach me, 
+and I really, like you and I discussed earlier,  
+
+1175
+01:46:11,760 --> 01:46:17,760
+I'd be really happy if this creates that kind of 
+ripple effect of successes, both for individuals  
+
+1176
+01:46:17,760 --> 01:46:24,840
+and for products. And I want everybody to think 
+of this, the stuff I shared as a bit of an open  
+
+1177
+01:46:24,840 --> 01:46:31,320
+source model. So test some of the concepts, 
+modify it, remix it, and share what worked or  
+
+1178
+01:46:31,320 --> 01:46:39,080
+did not. And ultimately, that's what makes it all 
+interesting is the community owns it ultimately,  
+
+1179
+01:46:39,080 --> 01:46:44,640
+and it doesn't belong to one individual. 
+That's what would make me super happy.
+
+1180
+01:46:44,640 --> 01:46:48,160
+Amazing. Chandra, thank 
+you so much for being here.
+
+1181
+01:46:48,160 --> 01:46:52,840
+Thank you so much for having me, Lenny, and 
+thanks for your service to the product community.
+
+1182
+01:46:52,840 --> 01:46:59,160
+Same to you. Bye everyone.
+Thank you so much for listening. If  
+
+1183
+01:46:59,160 --> 01:47:03,400
+you found this valuable, you can subscribe 
+to the show on Apple Podcasts, Spotify,  
+
+1184
+01:47:03,400 --> 01:47:08,720
+or your favorite podcast app. Also, please 
+consider giving us a rating or leaving a review,  
+
+1185
+01:47:08,720 --> 01:47:12,560
+as that really helps other listeners 
+find the podcast. You can find all  
+
+1186
+01:47:12,560 --> 01:47:21,480
+past episodes or learn more about the show at 
+LennysPodcast.com. See you in the next episode.
+
